@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" orientation="orthogonal" width="10" height="10" tilewidth="32" tileheight="32">
+<map version="1.0" orientation="orthogonal" width="16" height="21" tilewidth="32" tileheight="32">
  <tileset firstgid="1" name="map_bed_1" tilewidth="32" tileheight="32">
   <image source="../drawable/map_bed_1.png" width="512" height="256"/>
  </tileset>
@@ -120,65 +120,62 @@
  <tileset firstgid="4917" name="map_window_2" tilewidth="32" tileheight="32">
   <image source="../drawable/map_window_2.png" width="512" height="256"/>
  </tileset>
- <layer name="Ground" width="10" height="10">
+ <layer name="Ground" width="16" height="21">
   <data encoding="base64" compression="zlib">
-   eJw7ysbAcHSQ4ydUNOsEEqalultkmgcAw35PpQ==
+   eJyNkzEOwjAMRaMOldoBrsQF6RWacAPoEUrFxAADUxGCHbgCiWIL87Epw1Pa2N91vxNfOOcjGwNvxL2gi2wNWiO+Jm2IDJGTwcqI91Q76XdlZlZnzpVzy3nusxNxBPWJfZXXnvocKH6I+8dqWn+nnNRD6vNC79e43v7Qc40H8RSakUjPjfC/gRqL+rsm50kdonlkzRzRvGYP5cy1OuGH1zhzrU6gOH9X85qRdVqhH5Vc9BzroB5z2TdNP5ZvPc8G9eyb1Zc2B+s/tLni/Kz7gudJ8497HYrPHq1+0D+e8ZT3fDakf0Hxju8Ig2dD81+iedvAv6W9F4WA+1M=
   </data>
  </layer>
- <layer name="Objects" width="10" height="10">
+ <layer name="Objects" width="16" height="21">
   <data encoding="base64" compression="zlib">
-   eJxjYMAOktlxSNAYSFDRXlsm6plFLwAA6HwAyQ==
+   eJytVMsNwjAMjUKOlGYZFgC2oDPAiRMC7ggEi8AGnBAjlC7BEPSRPtUxEQWJJ0VV/fezk1VmIqzUv4bULzpsf0HZi/9PuTHn/HvfSvg/+sZc8rbWygabVw4XTmmDHj1Antey8Rf9IDYwdHH+gYv1iM/chIw/yVr+KtV7Csc6zs6Hs7fv+oMNMTVGWbDvmhW4ONi2NmCZyIP+/rUDKd+RkJWJ/J98JddrrXef4819mI/kELzNfNABQ7E7uo5tMxvakjvopz7OBf5mSgaAf9peRY6bmgs4Knw7B34xG/qjxntzKtW3rK0TrttEg3WSO94J7r/kT7830Qxr343iiftRiLgEex8ndh7cyvkWjS1jpN49KaMd7wj8Ef8JQF1ENg==
   </data>
  </layer>
- <layer name="Above" width="10" height="10">
+ <layer name="Above" width="16" height="21">
   <data encoding="base64" compression="zlib">
-   eJxjYBgFgwkAAAGQAAE=
+   eJxjYCAM3vAQoQgIZjIi2NMYcaubhSaXLsDAEC6A4M/FIz8Hi7kguTQgTkUyo5oJUx4XCEfTi00eH8ClvxPqVnx2E2M/rQCx8UoKSKfQH9jCei4R6Qqmj1BYk2IvCPQzYRdHT4f40kgtDjOIAV1Qe9DDtReHmcjuBYXbLCLTIDKgRRyig04s4TeXDLfCALnxTi6AhT8AOpsafw==
   </data>
  </layer>
- <layer name="Walkable" width="10" height="10">
+ <layer name="Walkable" width="16" height="21" visible="0">
   <data encoding="base64" compression="zlib">
-   eJxjYBi+wFVgoF1AOgAAPUQAVg==
+   eJxzFWBgcB2EGAbI0UOOXnT9+MzFZTYp+olVg6yWkL+IsYfcMBiK+kkxC58eYswgZB+xbiJWPyG3UBKu6GpJsZvYtEyJfmzmEGMHqe4gJnwBWvZJtw==
   </data>
  </layer>
- <objectgroup name="Object Layer 1" width="10" height="10">
-  <object name="debugsign" type="sign" x="192" y="96" width="32" height="32"/>
-  <object name="start" type="rest" x="96" y="64" width="32" height="32"/>
-  <object name="no_quest:10" type="key" x="32" y="128" width="32" height="32">
-   <properties>
-    <property name="phrase" value="debugrequireskey"/>
-   </properties>
-  </object>
-  <object name="debugquest:100" type="key" x="0" y="128" width="32" height="32">
-   <properties>
-    <property name="phrase" value="debugrequireskey"/>
-   </properties>
-  </object>
-  <object name="place2" type="mapchange" x="192" y="256" width="32" height="32">
+ <objectgroup name="Mapevents" width="16" height="21" visible="0">
+  <object name="exit" type="mapchange" x="224" y="64" width="32" height="32">
    <properties>
     <property name="map" value="bogsten0"/>
-    <property name="place" value="west"/>
+    <property name="place" value="cave_entrance"/>
    </properties>
   </object>
-  <object name="place1" type="mapchange" x="0" y="0" width="32" height="32">
+  <object name="south" type="mapchange" x="416" y="640" width="32" height="32">
    <properties>
-    <property name="map" value="debugmap"/>
-    <property name="place" value="place2"/>
+    <property name="map" value="bogsten3"/>
+    <property name="place" value="north"/>
    </properties>
   </object>
-  <object name="startitems" type="container" x="192" y="0" width="32" height="32"/>
  </objectgroup>
- <objectgroup name="Spawn" width="10" height="10" visible="0">
-  <object name="insect" type="spawn" x="96" y="128" width="192" height="160">
+ <objectgroup name="Spawn" width="16" height="21" visible="0">
+  <object name="weak_fungi" type="spawn" x="320" y="96" width="160" height="128">
    <properties>
-    <property name="quantity" value="2"/>
+    <property name="quantity" value="1"/>
    </properties>
   </object>
-  <object name="troll" type="spawn" x="256" y="256" width="64" height="64">
+  <object name="weak_fungi" type="spawn" x="64" y="352" width="448" height="128">
    <properties>
     <property name="quantity" value="3"/>
    </properties>
   </object>
-  <object name="debugNPC1" type="spawn" x="288" y="0" width="32" height="32"/>
-  <object name="debugNPC2" type="spawn" x="256" y="0" width="32" height="32"/>
+  <object name="mid_fungi" type="spawn" x="32" y="416" width="224" height="224">
+   <properties>
+    <property name="quantity" value="2"/>
+   </properties>
+  </object>
+  <object name="mid_fungi" type="spawn" x="320" y="544" width="160" height="96">
+   <properties>
+    <property name="quantity" value="3"/>
+   </properties>
+  </object>
  </objectgroup>
+ <objectgroup name="Keys" width="16" height="21"/>
+ <objectgroup name="Replace" width="16" height="21" visible="0"/>
 </map>
