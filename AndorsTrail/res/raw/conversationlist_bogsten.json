@@ -114,7 +114,8 @@
     ],
     "replies": [
       {
-        "text": "N"
+        "text": "N",
+        "nextPhraseID": "X"
       }
     ],
     "message": "Thank you ! I'll be waiting for you."
@@ -122,6 +123,16 @@
   {
     "id": "bogsten_start_select",
     "replies": [
+      {
+        "requires": [
+          {
+            "requireType": "questProgress",
+            "requireID": "bogsten",
+            "value": 30
+          }
+        ],
+        "nextPhraseID": "bogsten_ask_cure_second_0"
+      },
       {
         "requires": [
           {
@@ -173,9 +184,51 @@
     ],
     "replies": [
       {
-        "text": "N"
+        "text": "N",
+        "nextPhraseID": "X"
       }
     ],
     "message": "I'm sorry to have dragged you into this, boy. Take this key. It will open the way to my mushrooms cave."
+  },
+  {
+    "id": "bogsten_ask_cure_second_0",
+    "replies": [
+      {
+        "requires": [
+          {
+            "requireType": "questProgress",
+            "requireID": "bogsten",
+            "value": 40
+          }
+        ],
+        "text": "Yes. I have them with me.",
+        "nextPhraseID": "bogsten_ask_cure_second_2"
+      },
+      {
+        "text": "No, not yet.",
+        "nextPhraseID": "bogsten_ask_cure_second_1"
+      }
+    ],
+    "message": "Have you collected the spores already ?"
+  },
+  {
+    "id": "bogsten_ask_cure_second_1",
+    "replies": [
+      {
+        "text": "N",
+        "nextPhraseID": "X"
+      }
+    ],
+    "message": "Please get them for me."
+  },
+  {
+    "id": "bogsten_ask_cure_second_2",
+    "replies": [
+      {
+        "text": "N",
+        "nextPhraseID": "X"
+      }
+    ],
+    "message": "Thank you ! Please go give them to the potion merchant."
   }
 ]
