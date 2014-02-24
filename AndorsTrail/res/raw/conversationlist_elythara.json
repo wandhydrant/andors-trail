@@ -1,0 +1,1318 @@
+[
+  {
+    "id": "narael_9",
+    "message": "I'm too old to escape from this place now... But I have to keep living, I know something is going to happen and I will have a last role to play. Enjoy being young, son. Time is the enemy.",
+    "replies": [
+      {
+        "text": "I will. Goodbye.",
+        "nextPhraseID": "X"
+      },
+      {
+        "text": "I will. Shadow be with you.",
+        "nextPhraseID": "X"
+      },
+      {
+        "text": "Have you seen an oddly glowing helmet in this cave?",
+        "nextPhraseID": "elythara3_narael"
+      }
+    ]
+  },
+  {
+    "id": "elythara_mara",
+    "message": "Yes, I do have a task for you.",
+    "replies": [
+      {
+        "text": "Yes, what do you need help for?",
+        "nextPhraseID": "elythara_mara_1"
+      },
+      {
+        "text": "I brought his bread to Edwin.",
+        "nextPhraseID": "elythara_mara_5",
+        "requires": [
+          {
+            "requireType": "questProgress",
+            "requireID": "elythara1",
+            "value": 20
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "elythara_mara_1",
+    "message": "A hermit moved in the house south of our village. He pays me to bring him some bread every two days but I can't go this time as I have to watch over those drunkards. Could you do it for me?",
+    "rewards": [
+      {
+        "rewardType": "dropList",
+        "rewardID": "elythara1_bread"
+      },
+      {
+        "rewardID": "elythara1",
+        "value": 10,
+        "rewardType": "questProgress"
+      }
+    ],
+    "replies": [
+      {
+        "text": "Okay, I'm going to bring him his bread.",
+        "nextPhraseID": "elythara_mara_4"
+      },
+      {
+        "text": "Will I be paid?",
+        "nextPhraseID": "elythara_mara_2"
+      },
+      {
+        "text": "I'm on a hurry right now, I'll come back later.",
+        "nextPhraseID": "elythara_mara_3"
+      }
+    ]
+  },
+  {
+    "id": "elythara_mara_2",
+    "message": "I'll pay you five gold pieces for the run when you come back.",
+    "replies": [
+      {
+        "text": "Sounds honest.",
+        "nextPhraseID": "elythara_mara_4"
+      },
+      {
+        "text": "Five gold is not enough. Maybe another day.",
+        "nextPhraseID": "elythara_mara_3"
+      }
+    ]
+  },
+  {
+    "id": "elythara_mara_3",
+    "message": "Okay, goodbye."
+  },
+  {
+    "id": "elythara_mara_4",
+    "message": "Thank you, come back when you brought him the bread. I'll pay you five gold pieces for the run."
+  },
+  {
+    "id": "elythara_edwin",
+    "message": "Welcome, what are you doing in my humble house?",
+    "replies": [
+      {
+        "text": "I came to bring you some bread from Mara.",
+        "nextPhraseID": "elythara_edwin_1",
+        "requires": [
+          {
+            "requireType": "questProgress",
+            "requireID": "elythara1",
+            "value": 10
+          },
+          {
+            "requireType": "inventoryRemove",
+            "requireID": "elythara1_bread",
+            "value": 1
+          }
+        ]
+      },
+      {
+        "text": "I helped your friend Arcir. I had to find a book called \"Elythara's Chants\".",
+        "nextPhraseID": "elythara_edwin_12",
+        "requires": [
+          {
+            "requireType": "questProgress",
+            "requireID": "elythara2",
+            "value": 50
+          }
+        ]
+      },
+      {
+        "requires": [
+          {
+            "requireType": "questProgress",
+            "requireID": "elythara3",
+            "value": 20
+          }
+        ],
+        "text": "Edwin, now tell me what the hell is going on. There's no ring, there's no thief. I've been tested.",
+        "nextPhraseID": "elythara_edwin_19"
+      },
+      {
+        "requires": [
+          {
+            "requireType": "questProgress",
+            "requireID": "elythara3",
+            "value": 40
+          }
+        ],
+        "text": "I spoke with Elythara.",
+        "nextPhraseID": "elythara_edwin_23"
+      },
+      {
+        "requires": [
+          {
+            "requireType": "inventoryRemove",
+            "requireID": "elythara_sword",
+            "value": 1
+          }
+        ],
+        "text": "I found the Longsword! It was hidden in Luthor's tumb.",
+        "nextPhraseID": "elythara_edwin_26"
+      },
+      {
+        "requires": [
+          {
+            "requireType": "inventoryRemove",
+            "requireID": "elythara_helmet",
+            "value": 1
+          }
+        ],
+        "text": "I found the Helmet, an old man found it in a sanctuary under Flagstone.",
+        "nextPhraseID": "elythara_edwin_28"
+      },
+      {
+        "requires": [
+          {
+            "requireType": "inventoryRemove",
+            "requireID": "elythara_shield",
+            "value": 1
+          }
+        ],
+        "text": "I found the Shield! A priest of the Shadow told me about this sanctuary east of the Foaming Flask.",
+        "nextPhraseID": "elythara_edwin_29"
+      },
+      {
+        "requires": [
+          {
+            "requireType": "questProgress",
+            "requireID": "soulpart",
+            "value": 1
+          },
+          {
+            "requireType": "questProgress",
+            "requireID": "soulpart",
+            "value": 2
+          },
+          {
+            "requireType": "questProgress",
+            "requireID": "soulpart",
+            "value": 3
+          }
+        ],
+        "nextPhraseID": "elythara_edwin_32",
+        "text": "All the soulparts are yours now. What are we to do now?"
+      },
+      {
+        "requires": [
+          {
+            "requireType": "questProgress",
+            "requireID": "elythara3",
+            "value": 80
+          }
+        ],
+        "text": "Anything new?",
+        "nextPhraseID": "elythara_edwin_34"
+      }
+    ]
+  },
+  {
+    "id": "elythara_edwin_1",
+    "message": "Very well peasant. Now please leave. *I hate the stink of those lower-minded*",
+    "replies": [
+      {
+        "text": "Goodbye.",
+        "nextPhraseID": "elythara_edwin_2"
+      },
+      {
+        "text": "I'm no peasant but an adventurer!",
+        "nextPhraseID": "elythara_edwin_3"
+      }
+    ],
+    "rewards": [
+      {
+        "rewardID": "elythara1",
+        "value": 20,
+        "rewardType": "questProgress"
+      }
+    ]
+  },
+  {
+    "id": "elythara_edwin_2",
+    "message": "Yeah yeah, good bye. *finally*"
+  },
+  {
+    "id": "elythara_edwin_3",
+    "message": "An adventurer? I'm laughing.",
+    "replies": [
+      {
+        "text": "I already accomplished many quests in Crossglen, I'm a true adventurer!",
+        "nextPhraseID": "elythara_edwin_5",
+        "requires": [
+          {
+            "requireType": "questProgress",
+            "requireID": "andor",
+            "value": 30
+          }
+        ]
+      },
+      {
+        "text": "I'm not really an adventurer but I want to become one!",
+        "nextPhraseID": "elythara_edwin_4"
+      }
+    ]
+  },
+  {
+    "id": "elythara_edwin_4",
+    "message": "Very well, when you'll become an adventurer come back, I don't waste my time with peasants."
+  },
+  {
+    "id": "elythara_edwin_5",
+    "message": "Really? Let me test you. To prove me that you are really an -adventurer- you'll have to bring me a white dragon's tooth.",
+    "replies": [
+      {
+        "text": "A white dragon? I've never heard of a such dragon.",
+        "nextPhraseID": "elythara_edwin_7"
+      },
+      {
+        "text": "Alright! I'm going to look for the White Dragon's tooth.",
+        "nextPhraseID": "elythara_edwin_6"
+      }
+    ]
+  },
+  {
+    "id": "elythara_edwin_6",
+    "message": "Peasant, if you were a true adventurer you'd know that White Dragons don't exist. Now go back to your farm.",
+    "replies": [
+      {
+        "text": "X",
+        "nextPhraseID": "X"
+      }
+    ]
+  },
+  {
+    "id": "elythara_edwin_7",
+    "message": "Well, well, maybe because they don't exist. Now that you proved me you're maybe not a peasant even if you stink and look like one I'll give you a true mission to test your skills.",
+    "replies": [
+      {
+        "text": "An adventurer lives for quests. What do I have to do ? Save a young lady, kill a dragon?",
+        "nextPhraseID": "elythara_edwin_9"
+      },
+      {
+        "text": "I'm not going to help you, you're a horrible man.",
+        "nextPhraseID": "elythara_edwin_8"
+      }
+    ]
+  },
+  {
+    "id": "elythara_edwin_8",
+    "message": "Pff, I knew you were nothing more than a peasant. Leave now, go back to your farm.",
+    "replies": [
+      {
+        "text": "X",
+        "nextPhraseID": "X"
+      }
+    ]
+  },
+  {
+    "id": "elythara_edwin_9",
+    "message": "No, just help my friend Arcir who lives in Fallhaven. I heard he had some problems recently.",
+    "rewards": [
+      {
+        "rewardID": "elythara2",
+        "value": 10,
+        "rewardType": "questProgress"
+      }
+    ],
+    "replies": [
+      {
+        "text": "What would be my reward?",
+        "nextPhraseID": "elythara_edwin_10"
+      }
+    ]
+  },
+  {
+    "id": "elythara_edwin_10",
+    "message": "All my gratitude and my reconnaissance. And I usually don't give it to peasants like you.",
+    "replies": [
+      {
+        "text": "I'm not working for words but for money.",
+        "nextPhraseID": "elythara_edwin_11"
+      }
+    ]
+  },
+  {
+    "id": "elythara_edwin_11",
+    "message": "So leave now peasant, I wonít give you a coin to feed your family."
+  },
+  {
+    "id": "elythara_arcir",
+    "message": "Oh, so you're the one he was talking about. Very well, here's your task: some days ago I got burgled. The only thing I could find missing is my book Elythara's Chant. It's the last known copy and it's very important to me.",
+    "replies": [
+      {
+        "text": "Do you suspect anyone?",
+        "nextPhraseID": "elythara_arcir_1"
+      }
+    ]
+  },
+  {
+    "id": "elythara_arcir_1",
+    "message": "I do. I highly suspect Shadow's church. They never appreciated having an Elytharan worshipper in \"their\" town. You should question the priest and everyone who's related to the Church.",
+    "replies": [
+      {
+        "text": "I'll do it.",
+        "nextPhraseID": "X"
+      },
+      {
+        "text": "Why is the Shadow's Church against the cult of Elythara?",
+        "nextPhraseID": "elythara_Arcir_4"
+      }
+    ],
+    "rewards": [
+      {
+        "rewardID": "elythara2",
+        "value": 20,
+        "rewardType": "questProgress"
+      }
+    ]
+  },
+  {
+    "id": "elythara_shadowpriest",
+    "message": "Arcir has been burglared?! Impossible... Well... No, I don't see anyone who would burgle a such... nice man.",
+    "replies": [
+      {
+        "text": "Do you know what has been stolen from him?",
+        "nextPhraseID": "elythara_shadowpriest_1"
+      }
+    ]
+  },
+  {
+    "id": "elythara_shadowpriest_1",
+    "message": "Ely... No, I do not know, how could I?",
+    "replies": [
+      {
+        "text": "Elythara's Chants, it's a very important book for Arcir.",
+        "nextPhraseID": "elythara_shadowpriest_2"
+      }
+    ]
+  },
+  {
+    "id": "elythara_shadowpriest_2",
+    "message": "Oh, yes, Arcir worships this fake goddess.",
+    "replies": [
+      {
+        "text": "Can you tell me more about Elythara and her cult?",
+        "nextPhraseID": "elythara_shadowpriest_3"
+      }
+    ]
+  },
+  {
+    "id": "elythara_shadowpriest_3",
+    "message": "No. I don't want to speak about this fake cult. Never.",
+    "replies": [
+      {
+        "text": "Please?",
+        "nextPhraseID": "elythara_shadowpriest_4"
+      }
+    ]
+  },
+  {
+    "id": "elythara_shadowpriest_4",
+    "message": "No.",
+    "replies": [
+      {
+        "text": "N",
+        "nextPhraseID": "elythara_shadowpriest_5"
+      }
+    ]
+  },
+  {
+    "id": "elythara_shadowpriest_5",
+    "message": "Would you like to speak about another thing?",
+    "replies": [
+      {
+        "text": "N",
+        "nextPhraseID": "thoronir_default"
+      }
+    ]
+  },
+  {
+    "id": "elythara_athamyr",
+    "message": "Arcir had been burglared? I... I... cannot see who could... do that.",
+    "replies": [
+      {
+        "text": "Are you sure?",
+        "nextPhraseID": "elythara_athamyr_1"
+      }
+    ]
+  },
+  {
+    "id": "elythara_athamyr_1",
+    "message": "Yes... I... cannot see who would rob Arcir... He's a heretic, I meant a very sympathetic man.",
+    "replies": [
+      {
+        "text": "Okay, well I'm going to seek answers somewhere else.",
+        "nextPhraseID": "elythara_athamyr_2"
+      },
+      {
+        "text": "I think you're a liar.",
+        "nextPhraseID": "elythara_athamyr_3"
+      }
+    ]
+  },
+  {
+    "id": "elythara_athamyr_2",
+    "message": "Yes... Yes! Go ask questions somewhere else. I don't know anything about it.",
+    "replies": [
+      {
+        "text": "X",
+        "nextPhraseID": "X"
+      }
+    ]
+  },
+  {
+    "id": "elythara_athamyr_3",
+    "message": "No... A Sh-Shadow's priest never lies...",
+    "replies": [
+      {
+        "text": "I'm armed and I know how to fight. Admit it!",
+        "nextPhraseID": "elythara_athamyr_5"
+      },
+      {
+        "text": "I believe you, good bye.",
+        "nextPhraseID": "elythara_athamyr_4"
+      },
+      {
+        "text": "I don't think that the Shadow would be happy if it knew that you were lying. Confess yourself to me.",
+        "nextPhraseID": "elythara_athamyr_5"
+      }
+    ]
+  },
+  {
+    "id": "elythara_athamyr_4",
+    "message": "Goo-Goodbye..."
+  },
+  {
+    "id": "elythara_athamyr_5",
+    "message": "I payed for the burglar. I organized it all! The Shadow came to me in the night and told me to do it. I saw it!",
+    "replies": [
+      {
+        "text": "Where's the book. Tell me everything.",
+        "nextPhraseID": "elythara_athamyr_6"
+      }
+    ]
+  },
+  {
+    "id": "elythara_athamyr_6",
+    "message": "A bandit, his camp is south of Crossglen, continue south after the crossroad to Sullengard.",
+    "replies": [
+      {
+        "text": "N",
+        "nextPhraseID": "elythara_athamyr_7"
+      }
+    ]
+  },
+  {
+    "id": "elythara_athamyr_7",
+    "message": "Forgive me Shadow, I'm not tough enough for you to give me your holy quests.",
+    "rewards": [
+      {
+        "rewardID": "elythara2",
+        "value": 30,
+        "rewardType": "questProgress"
+      }
+    ],
+    "replies": [
+      {
+        "text": "I had enough of your whining. Goodbye.",
+        "nextPhraseID": "X"
+      }
+    ]
+  },
+  {
+    "id": "elythara_arcirsRobber1",
+    "message": "What are you doing here kid?",
+    "replies": [
+      {
+        "text": "I came to look for Elythara's Chants.",
+        "nextPhraseID": "elythara_arcirsRobber2",
+        "requires": [
+          {
+            "requireType": "questProgress",
+            "requireID": "elythara2",
+            "value": 30
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "elythara_arcirsRobber2",
+    "message": "Haha, you're going to die kid.",
+    "replies": [
+      {
+        "text": "Not today.",
+        "nextPhraseID": "F"
+      }
+    ]
+  },
+  {
+    "id": "elythara_arcir_2",
+    "message": "And have you found it?",
+    "replies": [
+      {
+        "text": "Yes, here it is.",
+        "nextPhraseID": "elythara_arcir_3",
+        "requires": [
+          {
+            "requireType": "inventoryRemove",
+            "requireID": "ElytharasChants",
+            "value": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "elythara_arcir_3",
+    "message": "Thank you, you should go back to Edwin and tell him you helped me.",
+    "rewards": [
+      {
+        "rewardID": "elythara2",
+        "value": 50,
+        "rewardType": "questProgress"
+      }
+    ]
+  },
+  {
+    "id": "elythara_edwin_12",
+    "replies": [
+      {
+        "text": "You knew all about it? Why did you steal your friend?",
+        "nextPhraseID": "elythara_edwin_13"
+      }
+    ],
+    "message": "I know, I know. Very well, so you killed that damned mercenary. He wasn't worth a penny anyway. Good. Now I may consider you as a true adventurer and not some kind of plants-lover."
+  },
+  {
+    "id": "elythara_edwin_13",
+    "replies": [
+      {
+        "text": "Not before you explain me why you made this up.",
+        "nextPhraseID": "elythara_edwin_15"
+      },
+      {
+        "text": "I'm not going to talk any longer with a madman like you. Goodbye Sir.",
+        "nextPhraseID": "elythara_edwin_14"
+      }
+    ],
+    "message": "Oh, he knows everything about it. I am the \"dark shade\" that spoke to the priest. What a stupid man. He should be working in a farm and not in a church. Anyway, now can we get to some serious matters. My time is worth too much to spend it speaking with random adventurers. Could you please do me a last favor?"
+  },
+  {
+    "id": "elythara_edwin_14",
+    "message": "Well, as you act like a fool my guess is you are a fool. Goodbye peasant."
+  },
+  {
+    "id": "elythara_edwin_15",
+    "replies": [
+      {
+        "text": "What is this last task?",
+        "nextPhraseID": "elythara_edwin_17"
+      }
+    ],
+    "message": "If you accomplish this last quest I'll give you you'll know why and even more. There are some secrets in this world which could be unveiled to you. Now chose, and hurry."
+  },
+  {
+    "id": "elythara_edwin_17",
+    "replies": [
+      {
+        "text": "And do you know where this thief is?",
+        "nextPhraseID": "elythara_edwin_18"
+      }
+    ],
+    "message": "Excellent. You might be one I'm looking for. Now, this quest, someone stole a ring which has a great value for me. Bring it back to me."
+  },
+  {
+    "id": "elythara3_UnarmedWoman",
+    "replies": [
+      {
+        "requires": [
+          {
+            "requireType": "questProgress",
+            "requireID": "elythara3",
+            "value": 10
+          }
+        ],
+        "text": "Where's  the ring?",
+        "nextPhraseID": "elythara3_UnarmedWoman_1"
+      },
+      {
+        "text": "I'm just hanging around. Bye.",
+        "nextPhraseID": "X"
+      }
+    ],
+    "message": "Don't hurt me please. I'm innocent."
+  },
+  {
+    "id": "elythara3_UnarmedWoman_1",
+    "replies": [
+      {
+        "text": "Give me the ring and I wont hurt you.",
+        "nextPhraseID": "elythara3_UnarmedWoman_2"
+      },
+      {
+        "text": "I'll kill you thief! For the Shadow!",
+        "nextPhraseID": "elythara3_UnarmedWoman_3"
+      }
+    ],
+    "message": "I have it, but please don't hurt me."
+  },
+  {
+    "id": "elythara3_UnarmedWoman_2",
+    "rewards": [
+      {
+        "rewardID": "elythara3",
+        "value": 20,
+        "rewardType": "questProgress"
+      }
+    ],
+    "message": "You're wise, young adventurer. There's no ring as there's no thief. You passed the last test. Go back to Edwin now and be initiated."
+  },
+  {
+    "id": "elythara3_UnarmedWoman_3",
+    "rewards": [
+      {
+        "rewardType": "actorCondition",
+        "rewardID": "elythara_touch",
+        "value": 1
+      }
+    ],
+    "message": "No you're not going to kill me, mortal. Die now, Shadow's dog."
+  },
+  {
+    "id": "elythara_edwin_19",
+    "replies": [
+      {
+        "text": "You sent people to death. And you don't even seem to care about it. Who are you?",
+        "nextPhraseID": "elythara_edwin_21"
+      }
+    ],
+    "message": "Why? It's easy, can't you understand it? We're looking for an adventurer and a true one. Not like all those that died stupidly killed by the mercenary or by the snakes."
+  },
+  {
+    "id": "elythara_edwin_21",
+    "replies": [
+      {
+        "text": "Who?",
+        "nextPhraseID": "elythara_edwin_22"
+      }
+    ],
+    "message": "Who am I? Good question. Sadly I'm not able to answer. But if you're looking for answers go downstairs. Follow the path to the shrine. There she is waiting for you.",
+    "rewards": [
+      {
+        "rewardID": "elythara3",
+        "value": 30,
+        "rewardType": "questProgress"
+      }
+    ]
+  },
+  {
+    "id": "elythara_edwin_22",
+    "message": "You'll see."
+  },
+  {
+    "id": "elythara_elythara",
+    "replies": [
+      {
+        "text": "Thank you.",
+        "nextPhraseID": "elythara_elythara_1"
+      }
+    ],
+    "message": "Hello young adventurer, it's a pleasure to see that there are still fierce and strong mortals."
+  },
+  {
+    "id": "elythara_elythara_1",
+    "replies": [
+      {
+        "text": "I don't think so. Who are you?",
+        "nextPhraseID": "elythara_elythara_2"
+      }
+    ],
+    "message": "We meet again, adventurer."
+  },
+  {
+    "id": "elythara_elythara_2",
+    "replies": [
+      {
+        "text": "This is impossible. You're a goddess, you never existed.",
+        "nextPhraseID": "elythara_elythara_4"
+      },
+      {
+        "text": "Elythara! For the Shadow I shall slay you.",
+        "nextPhraseID": "elythara_elythara_3"
+      }
+    ],
+    "message": "Who am I? The poor woman hiding in a cave filled with snakes. The Light, the Queen of the Dawn, the Brightest Star that walked this World. But mortals used to name me Elythara."
+  },
+  {
+    "id": "elythara_elythara_3",
+    "message": "No you wont. You cannot kill a goddess mortal."
+  },
+  {
+    "id": "elythara_elythara_4",
+    "replies": [
+      {
+        "text": "I'm listening to you.",
+        "nextPhraseID": "elythara_elythara_5"
+      }
+    ],
+    "message": "I can see the Shadow's work in your words. Let me tell you the true history of this world and not the lies of a fake god."
+  },
+  {
+    "id": "elythara_elythara_5",
+    "replies": [
+      {
+        "text": "N",
+        "nextPhraseID": "elythara_elythara_6"
+      }
+    ],
+    "message": "I came from another Plane called Elredin. There had been a terrible war and my world had been destroyed. I fled it and found myself here. As I opened my eyes the Sun was the first thing I saw and I loved and cherished it. Ewa, my god, talked to me then for the first and the last time. He told me he had sent me here to help the humans. \nI crossed a forest, elated by this brave new world. Then I met the humans. You're weak creatures, do you know? In my world all had what you call here godly powers. They saw me and fell on their knees. I spoke to them and they chose me as Queen.\nI taught them how to pray and told them to cherish the beauty of the sun.\nThen my kingdom expanded and my capital, called Fallhaven today became a beautiful city. From what is now Nor City to Feygard every man was under my rule and I tried to be just and moral.\nCenturies passed from the year I came to this world and my ruling came to it's apogee. Then I heard from my Southern Governor that a new sect was growing in Nor City. They believed in the Shadow and their priest called the commoners to rebel against the \"Tyranny of the Light\".\nAt that time the official religion was based on the everlasting fight of the Shadow, my brother Elythor which came to this world but didn't take any mortal appearance, and the Light, me. I learned the man to love them both and find in the day the power to act and in the night the power to think. I taught it was just. \nBut the man is a strange creature, my kingdom could have lasted for thousand of years, until the end of times but some called me a tyrant and wanted the freedom to be ruled by mere mortals. I could not accept this heresy and told the guard to destroy this sect but I acted as a fool and it just helped them to gain more followers. The Shadow became a religion of hatred. Their priest believed in nothing, they just wanted to rule the masses. Their sought for power led them to overthrow the governor and constitute the \"Free City of Nor\".\nIt was not enough for them. Their priests were sent in each city and were all speaking of rebellion and hate. I tried to stop them but I couldn't. They were like rats, hiding in the shadows. Then came the war. \nUnder my rule necromancy was strictly forbidden as it was against life and morality. But the priests started practicing it and soon formed an army of undead which plagued the regions that were still under my rule. Soon they were in Fallhaven. I was in my church when the legions came. They were led by a necromancer and five priests.\nUsing their dark magics they immobilized me and splat my soul in three parts. My three highest councilors were turned into evil demons bound to guard my soul parts and kill anyone who would try to recover them.\nNow that you know the story you might understand why we had to test you. If you accept to help us to rise again your reward will be beyond your greediest dreams."
+  },
+  {
+    "id": "elythara_elythara_6",
+    "replies": [
+      {
+        "text": "I will help you and this world will see a new dawn.",
+        "nextPhraseID": "elythara_elythara_8"
+      },
+      {
+        "text": "I won't help the enemy of the Shadow!",
+        "nextPhraseID": "X"
+      }
+    ],
+    "message": "Stand against me and you shall be blown away like the Shadow of the night when the sun rises."
+  },
+  {
+    "id": "elythara_elythara_8",
+    "message": "Thank you adventurer. You should ask Edwin about the locations of the soul parts.",
+    "rewards": [
+      {
+        "rewardID": "elythara3",
+        "value": 40,
+        "rewardType": "questProgress"
+      }
+    ]
+  },
+  {
+    "id": "elythara_edwin_23",
+    "replies": [
+      {
+        "text": "Yes, do you know where I could find her soul parts?",
+        "nextPhraseID": "elythara_edwin_24"
+      }
+    ],
+    "message": "So, are you still angry at me or can we please start working."
+  },
+  {
+    "id": "elythara_edwin_24",
+    "rewards": [
+      {
+        "rewardID": "elythara3",
+        "value": 50,
+        "rewardType": "questProgress"
+      }
+    ],
+    "replies": [
+      {
+        "text": "I'll go look for them.",
+        "nextPhraseID": "elythara_edwin_25"
+      }
+    ],
+    "message": "First, each part had been sealed into an object, there's a helmet, a sword and a shield. I don't know where the shield and the sword are but I think that the helmet should be hidden somewhere in the old sanctuary of Flagstone. A prison has been built over it by Geomyr but you should be able to sneak in. For the other parts you should talk to Arcir. He might have an idea."
+  },
+  {
+    "id": "elythara3_narael",
+    "replies": [
+      {
+        "text": "Speak.",
+        "nextPhraseID": "elythara3_narael_1"
+      }
+    ],
+    "message": "Yes, Yes! Here, or maybe there... Mmh... Yes, I do remember having found a strange looking and glowing helmet. But I will give it to you on one condition."
+  },
+  {
+    "id": "elythara3_narael_1",
+    "replies": [
+      {
+        "text": "N",
+        "nextPhraseID": "elythara3_narael_2"
+      }
+    ],
+    "message": "I'm too old and tired to be able to get back to the city I come from, Fallhaven, and my daughter and wife are somewhere there. Tell them I had a happy life and that I love them."
+  },
+  {
+    "id": "elythara3_narael_2",
+    "rewards": [
+      {
+        "rewardID": "elythara3",
+        "value": 51,
+        "rewardType": "questProgress"
+      },
+      {
+        "rewardType": "dropList",
+        "rewardID": "elythara3_ring"
+      }
+    ],
+    "message": "Oh, and please bring them this ring. Once you came back you'll have your glowing helmet."
+  },
+  {
+    "id": "elythara3_naraelswife",
+    "replies": [
+      {
+        "text": "I will do it.",
+        "nextPhraseID": "elythara3_naraelswife_1",
+        "requires": [
+          {
+            "requireType": "inventoryRemove",
+            "requireID": "naraelring1",
+            "value": 1
+          }
+        ]
+      }
+    ],
+    "message": "I haven't seen my for years. Give him my ring and please bring him this bread I baked in the morning. He always loved it."
+  },
+  {
+    "id": "elythara3_naraelswife_1",
+    "rewards": [
+      {
+        "rewardType": "dropList",
+        "rewardID": "elytharas3_bread"
+      },
+      {
+        "rewardID": "elythara3",
+        "value": 52,
+        "rewardType": "questProgress"
+      }
+    ],
+    "message": "Thank you Sir."
+  },
+  {
+    "id": "elythara_mara_5",
+    "rewards": [
+      {
+        "rewardID": "elythara1",
+        "value": 30,
+        "rewardType": "questProgress"
+      },
+      {
+        "rewardType": "dropList",
+        "rewardID": "elythara1_money"
+      }
+    ],
+    "message": "Great, thank you. Here are five coins for your trouble."
+  },
+  {
+    "id": "naraels_wife_start",
+    "replies": [
+      {
+        "text": "No I haven't sorry.",
+        "nextPhraseID": "X"
+      },
+      {
+        "requires": [
+          {
+            "requireType": "inventoryKeep",
+            "requireID": "naraelring1",
+            "value": 1
+          }
+        ],
+        "text": "I come on the behalf of your husband. He is dying and asked me to bring you this ring and tell you he loves you and your daughter.",
+        "nextPhraseID": "elythara3_naraelswife"
+      }
+    ],
+    "message": "Have you seen my husband Narael?"
+  },
+  {
+    "id": "naraels_daughter",
+    "message": "Oh I would love to see my dad again."
+  },
+  {
+    "id": "elythara_edwin_25",
+    "message": "Elythara's blessing is with you."
+  },
+  {
+    "id": "elythara_edwin_26",
+    "rewards": [
+      {
+        "rewardID": "elythara3",
+        "value": 62,
+        "rewardType": "questProgress"
+      },
+      {
+        "rewardID": "soulpart",
+        "value": 3,
+        "rewardType": "questProgress"
+      }
+    ],
+    "message": "Great! I'll keep it for you. Good luck in finding the other soul parts."
+  },
+  {
+    "id": "elythara_edwin_28",
+    "message": "You're truly an adventurer young man. I wish we had more loyal man of your kind.",
+    "rewards": [
+      {
+        "rewardID": "elythara3",
+        "value": 54,
+        "rewardType": "questProgress"
+      },
+      {
+        "rewardID": "soulpart",
+        "value": 1,
+        "rewardType": "questProgress"
+      }
+    ]
+  },
+  {
+    "id": "elythara_edwin_29",
+    "message": "Well done adventurer. Those priests are easily fooled. Soon they'll understand the true meaning of pain.",
+    "rewards": [
+      {
+        "rewardID": "elythara3",
+        "value": 76,
+        "rewardType": "questProgress"
+      },
+      {
+        "rewardID": "soulpart",
+        "value": 2,
+        "rewardType": "questProgress"
+      }
+    ]
+  },
+  {
+    "id": "elythara_edwin_32",
+    "rewards": [
+      {
+        "rewardID": "soulpart",
+        "value": 4,
+        "rewardType": "questProgress"
+      },
+      {
+        "rewardID": "elythara3",
+        "value": 80,
+        "rewardType": "questProgress"
+      },
+      {
+        "rewardType": "dropList",
+        "rewardID": "elythara3ssh"
+      }
+    ],
+    "replies": [
+      {
+        "text": "A thousand year? Who are you really Edwin?",
+        "nextPhraseID": "elythara_edwin_33"
+      },
+      {
+        "text": "I'll pray night and day for your success Edwin.",
+        "nextPhraseID": "elythara_edwin_35"
+      }
+    ],
+    "message": "Your name will be praised for centuries adventurer. Now I need to perform the ritual to bring Elythara back to life. Thank you young man. A thousand years I waited for her return and now it is close. I transferred the soulparts to a more suitable container for the ritual. You might want to keep Elythara's armour and sword."
+  },
+  {
+    "id": "elythara_edwin_33",
+    "message": "One day you'll learn. Maybe..."
+  },
+  {
+    "id": "elythara_edwin_34",
+    "replies": [
+      {
+        "text": "Good luck Edwin. I'll pray for your success.",
+        "nextPhraseID": "elythara_edwin_35"
+      }
+    ],
+    "message": "I still need more time to prepare the ritual. Reincarnating someone is a hard task. Reincarnating a goddess is nearly impossible. But with time and fortitude I'll succeed."
+  },
+  {
+    "id": "elythara_edwin_35",
+    "message": "And I for your safety and prosperity."
+  },
+  {
+    "id": "elythara_Arcir_4",
+    "replies": [
+      {
+        "text": "I'll do my best to find your book.",
+        "nextPhraseID": "X"
+      },
+      {
+        "text": "They surely have a reason...",
+        "nextPhraseID": "elythara_Arcir_5"
+      }
+    ],
+    "message": "Because centuries ago they rebelled against the Lady of the Morning. Since then they tried to kill all traces of her cult."
+  },
+  {
+    "id": "elythara_Arcir_5",
+    "message": "Hatred is their reason."
+  },
+  {
+    "id": "elythara3_ShadowP_vilegarde",
+    "replies": [
+      {
+        "text": "Have you found any?",
+        "nextPhraseID": "elythara3_ShadowP_vilegarde_1"
+      }
+    ],
+    "message": "You're a looking for ancient sanctuaries... Yes. I remember one. In my youth I wanted to be an adventurer and discover where lived the Shadow in this land. I looked for ancient temples too..."
+  },
+  {
+    "id": "elythara3_ShadowP_vilegarde_1",
+    "rewards": [
+      {
+        "rewardID": "elythara3",
+        "value": 74,
+        "rewardType": "questProgress"
+      }
+    ],
+    "replies": [
+      {
+        "text": "Have you met the Shadow finally?",
+        "nextPhraseID": "elythara3_ShadowP_vilegarde_3"
+      },
+      {
+        "text": "I'll go take a look. Thanks for the information.",
+        "nextPhraseID": "elythara3_ShadowP_vilegarde_2"
+      }
+    ],
+    "message": "Yes... yes, there's one not far away from here to the west. North of the Hunter's house."
+  },
+  {
+    "id": "elythara3_ShadowP_vilegarde_2",
+    "message": "Walk with the Shadow son."
+  },
+  {
+    "id": "elythara3_ShadowP_vilegarde_3",
+    "replies": [
+      {
+        "text": "Thank you for help.",
+        "nextPhraseID": "elythara3_ShadowP_vilegarde_4"
+      }
+    ],
+    "message": "No I never found him but in my sleep he came to me and answered my question. A year later I chose to become a priest."
+  },
+  {
+    "id": "elythara3_ShadowP_vilegarde_4",
+    "message": "Walk with the Shadow son."
+  },
+  {
+    "id": "elythara3_ShadowP_loneford",
+    "replies": [
+      {
+        "text": "N",
+        "nextPhraseID": "elythara3_ShadowP_loneford_1"
+      }
+    ],
+    "message": "You're a historian? Interesting... In my young years when I was only an apprentice my master told me the story of a sanctuary under Flagstone's Prison."
+  },
+  {
+    "id": "elythara3_ShadowP_loneford_1",
+    "rewards": [
+      {
+        "rewardID": "elythara3",
+        "value": 71,
+        "rewardType": "questProgress"
+      }
+    ],
+    "replies": [
+      {
+        "text": "Thank you for your informations. I'll go investigate.",
+        "nextPhraseID": "elythara3_ShadowP_loneford_2"
+      }
+    ],
+    "message": "He said that the young Lord Geomyr build this prison on the sanctuary to show his power."
+  },
+  {
+    "id": "elythara3_ShadowP_loneford_2",
+    "message": "Walk with the Shadow son."
+  },
+  {
+    "id": "elythara3_ShadowP_Fallhaven",
+    "replies": [
+      {
+        "text": "No. A historian Sir.",
+        "nextPhraseID": "elythara3_ShadowP_Fallhaven_1"
+      },
+      {
+        "text": "Yes, is that a problem?",
+        "nextPhraseID": "elythara3_ShadowP_Fallhaven_3"
+      }
+    ],
+    "message": "Ancient sanctuaries? Are you tumb raider?"
+  },
+  {
+    "id": "elythara3_ShadowP_Fallhaven_1",
+    "rewards": [
+      {
+        "rewardID": "elythara3",
+        "value": 72,
+        "rewardType": "questProgress"
+      }
+    ],
+    "replies": [
+      {
+        "text": "Thank you for sharing your knowledge father.",
+        "nextPhraseID": "elythara3_ShadowP_Fallhaven_2"
+      }
+    ],
+    "message": "Well, there's indeed one south of here. Athamyr went there some years ago but there is a wolfpack on the way now. If you can defeat them you might be able to access the sanctuary."
+  },
+  {
+    "id": "elythara3_ShadowP_Fallhaven_2",
+    "message": "Walk with the Shadow son."
+  },
+  {
+    "id": "elythara3_ShadowP_Fallhaven_3",
+    "message": "Your time is going to come heretic. The Shadow will avenge his sanctuaries."
+  },
+  {
+    "id": "arcir_soulpart",
+    "replies": [
+      {
+        "text": "N",
+        "nextPhraseID": "arcir_soulpart_1"
+      }
+    ],
+    "message": "Yes, I think one should be in Luthor's grave under the church.",
+    "rewards": [
+      {
+        "rewardID": "elythara3",
+        "value": 60,
+        "rewardType": "questProgress"
+      }
+    ]
+  },
+  {
+    "id": "arcir_soulpart_1",
+    "rewards": [
+      {
+        "rewardID": "elythara3",
+        "value": 70,
+        "rewardType": "questProgress"
+      }
+    ],
+    "replies": [
+      {
+        "text": "Thank you Arcir. I'll do my best to find the soul parts.",
+        "nextPhraseID": "arcir_soulpart_2"
+      }
+    ],
+    "message": "I don't know anything about the other parts but you might want to ask Shadow's priests. Tell them you're a historian and you're looking for ancient sanctuaries they are easily fooled."
+  },
+  {
+    "id": "arcir_soulpart_2",
+    "message": "Walk with the Light my friend."
+  },
+  {
+    "id": "elythara_edwin_18",
+    "rewards": [
+      {
+        "rewardID": "elythara3",
+        "value": 10,
+        "rewardType": "questProgress"
+      }
+    ],
+    "message": "If I knew I would have gone by myself, don't you think so? But yes, I know. Lucky you. She's hiding at the end of an ancient mine filled with snakes north-west of here. Oh, and do not try to spill human blood or you will regret it."
+  },
+  {
+    "id": "elythara_keyarea",
+    "message": "Some mysterious power prevents you from proceeding further."
+  },
+  {
+    "id": "naraels_wife_select",
+    "replies": [
+      {
+        "requires": [
+          {
+            "requireType": "questProgress",
+            "requireID": "elythara3",
+            "value": 53
+          }
+        ],
+        "nextPhraseID": "naraels_wife_thankful"
+      },
+      {
+        "nextPhraseID": "naraels_wife_start"
+      }
+    ]
+  },
+  {
+    "id": "naraels_wife_thankful",
+    "replies": [
+      {
+        "text": "My pleasure.",
+        "nextPhraseID": "X"
+      }
+    ],
+    "message": "Thank you so much for having found my husband."
+  },
+  {
+    "id": "elythara3_narael3",
+    "replies": [
+      {
+        "requires": [
+          {
+            "requireType": "inventoryRemove",
+            "requireID": "elytharas3_bread",
+            "value": 1
+          }
+        ],
+        "text": "I have, yes. She gave me this loaf of bread for you.",
+        "nextPhraseID": "elythara3_narael4"
+      }
+    ],
+    "message": "Have you found my wife?"
+  },
+  {
+    "id": "elythara3_narael4",
+    "rewards": [
+      {
+        "rewardType": "giveItem",
+        "rewardID": "elythara_helmet",
+        "value": 1
+      },
+      {
+        "rewardType": "questProgress",
+        "rewardID": "elythara3",
+        "value": 53
+      }
+    ],
+    "replies": [
+      {
+        "text": "Great! Thank you. Walk with the Shadow my friend.",
+        "nextPhraseID": "R"
+      },
+      {
+        "text": "Great! Thank you. Walk with the light my friend.",
+        "nextPhraseID": "elythara3_narael5"
+      }
+    ],
+    "message": "Thank you young man! I can die happily now... Here's your helmet. I found it while mining and hid from that demon. He looked like he was searching for it. Maybe losing it is what awoke him."
+  },
+  {
+    "id": "elythara3_narael5",
+    "replies": [
+      {
+        "text": "I am, indeed. Does that bother you?",
+        "nextPhraseID": "elythara3_narael6"
+      },
+      {
+        "text": "No, it was a joke. Good bye.",
+        "nextPhraseID": "R"
+      }
+    ],
+    "message": "With the light? Are you an Elytharan cultist?"
+  },
+  {
+    "id": "elythara3_narael6",
+    "replies": [
+      {
+        "text": "You're blind old man but Elythara is coming back to unveil the shadows from people's minds.",
+        "nextPhraseID": "R"
+      }
+    ],
+    "message": "You monster! I guess you need this helmet for your demonic rituals! Don't speak to me ever again. Leave now."
+  }
+]

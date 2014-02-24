@@ -528,7 +528,7 @@
     },
     {
         "id": "narael_3",
-        "message": "I was once a citizen in Nor City, and worked on the excavation of Mount Galmore.",
+        "message": "I was once a citizen in Fallhaven, and worked on the excavation of Mount Galmore.",
         "replies": [
             {
                 "text": "N",
@@ -578,7 +578,7 @@
     },
     {
         "id": "narael_8",
-        "message": "Now leave me to my fate. I do not have the strength to leave this place.",
+        "message": "Now leave me to my fate.",
         "rewards": [
             {
                 "rewardType": "questProgress",
@@ -590,20 +590,6 @@
             {
                 "text": "N",
                 "nextPhraseID": "narael_9"
-            }
-        ]
-    },
-    {
-        "id": "narael_9",
-        "message": "If you find my wife Taurum in Nor City, please tell her I'm alive and that I haven't forgotten about her.",
-        "replies": [
-            {
-                "text": "I will. Goodbye.",
-                "nextPhraseID": "X"
-            },
-            {
-                "text": "I will. Shadow be with you.",
-                "nextPhraseID": "X"
             }
         ]
     }

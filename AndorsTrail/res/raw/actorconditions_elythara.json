@@ -1,0 +1,62 @@
+[
+    {
+        "id": "elythara_touch",
+        "name": "Elythara's Touch",
+        "roundEffect": {
+            "visualEffectID": "blueSwirl",
+            "increaseCurrentHP": {
+                "min": -1000,
+                "max": -1000
+            }
+        },
+        "abilityEffect": {
+            "increaseMoveCost": 10,
+            "increaseUseItemCost": 10,
+            "increaseReequipCost": 10,
+            "increaseAttackCost": 10
+        },
+        "iconID": "actorconditions_1:44",
+        "category": "spiritual"
+    },
+    {
+        "id": "elythara_smite",
+        "name": "Smite",
+        "abilityEffect": {
+            "increaseAttackDamage": {
+                "min": -1,
+                "max": -1
+            },
+            "increaseAttackCost": 1,
+            "increaseAttackChance": -5,
+            "increaseDamageResistance": -1
+        },
+        "iconID": "actorconditions_1:45",
+        "category": "spiritual"
+    },
+    {
+        "id": "elythara_lightshield",
+        "name": "Shield of Light",
+        "isPositive": 1,
+        "abilityEffect": {
+            "increaseDamageResistance": 10,
+            "increaseBlockChance": 10
+        },
+        "iconID": "actorconditions_1:47",
+        "category": "spiritual"
+    },
+    {
+        "id": "elythara_sentence",
+        "name": "Sentence",
+        "isStacking": 1,
+        "isPositive": 1,
+        "abilityEffect": {
+            "increaseAttackDamage": {
+                "min": 5,
+                "max": 5
+            },
+            "increaseAttackChance": 5
+        },
+        "iconID": "actorconditions_1:20",
+        "category": "spiritual"
+    }
+]

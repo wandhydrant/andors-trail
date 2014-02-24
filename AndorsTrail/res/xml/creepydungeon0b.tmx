@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" orientation="orthogonal" width="15" height="30" tilewidth="32" tileheight="32">
+<map version="1.0" orientation="orthogonal" width="20" height="20" tilewidth="32" tileheight="32">
+ <properties>
+  <property name="outdoors" value="1"/>
+ </properties>
  <tileset firstgid="1" name="map_bed_1" tilewidth="32" tileheight="32">
   <image source="../drawable/map_bed_1.png" width="512" height="256"/>
  </tileset>
@@ -120,82 +123,62 @@
  <tileset firstgid="4917" name="map_window_2" tilewidth="32" tileheight="32">
   <image source="../drawable/map_window_2.png" width="512" height="256"/>
  </tileset>
- <layer name="Ground" width="15" height="30">
+ <layer name="Ground" width="20" height="20">
   <data encoding="base64" compression="zlib">
-   eJyVldENwyAMRCM+MgUrmIyQZoS0K2TYrNS/ggSSdT0b5+N91OaS43BJSctyVN6KvfIidd0vla3yqVyKs6/Buu5L197rP5dRH3jaGdJ9R9bmxLUzvfTsGrlTFIej30jGg5G1lwlmHHkn6+P5Yi5ZPRf71vnKw72gx8heUBvND7XaayF+MDetxXNDvwJetFafG/OL+2O/Lb8CXp5o0Quuk8le2VxZeVhzyeZqD+Rr/fdPYw2bLy8bK6Oo1rvPZneO91xvfr25xtkvid9j6En32TeD0XRYY98MRtNi7bvGuEntB2ME6U0=
+   eJw7ysbAcBQNX2VnYLjOjilOLh4w84BqjqFhXObdhMofZ8et/xYQX0PD2Mx7ChR/BsSn0Nx5FYt+YszD5e9BbR6O8CLVPFi8EGMWIfOQ4wWfGSeh6p4RmWYJmUtu2r+Kw03PqWAeNfLjUyq4aRQPbQwA2H5Frg==
   </data>
  </layer>
- <layer name="Objects" width="15" height="30">
+ <layer name="Objects" width="20" height="20">
   <data encoding="base64" compression="zlib">
-   eJxjYCAOZLDilpvOCKG7GLHLVbCiqoMBHSYGBjMWBF+bCSIGwiy8DAxpQFwGxA1AvIMHIk8O8BVAtSdcAL96aag9sjjsQxEHmptKwDxc4D4Ppp2UAFD4o4cxDOhgMR+bnehhjKyPkBuRwxiXnfjkscUvNjsJmYtLHwyA0hZMDXocw+Tw2UlqXKGHC6UAm//xxRsywOU/XADdr8j8NiLNIia+QAA5XkgBhMxHDhv0vI8tbogxj5L0gA0QshPd3fjsJFWO1DSB7iZq+H+gAQAlcRJo
+   eJyNVM1Kw0AQ3uB1A+2j1Feo1571CXwDCwpC7UFQ6EkQitc+g68i2AYFD0KtieCtmsYZMmO+THbFD5b9m/nyzc+m6DlX0Sho7GggVt65YdrsM1/PS+86KMWfuVzfuYTGo9hdJW3bXM6PiftA+DdytvWNfz+tdTHni9xf0DxPmrXiS9YD8tkHzRY70MeoxG8NXKH4FGtzlxPfe6/RGcOJaLol7Wdkdx6w5RxUwIU1mYLOidFwTTYzsTvyTX4Zlusy7cZXmtq/RerGQH17kGfOv/oVkfzNgW+WhPWVsp8aDubGvGm/HPq2Dfaf1gbrreA6aN5uREuoLqgPZ8X2j17BujC+fTtGG/sS3oVC+8b23Ur2r9B/yK35eQa/3HB80P40bd+hnpEM7I8MOBaBNd4/+W6+9F7f/YOpzwb8xxC7agrpGwm/7WOMHf9jqimHb+v/Y2jyYX0+5XyifOKv38YaMO7I/t63OWytbG/99q2r1xxHzLY0PtF+FZ1qm/m4zX/PmecHWf/IKQ==
   </data>
  </layer>
- <layer name="Above" width="15" height="30">
+ <layer name="Above" width="20" height="20">
   <data encoding="base64" compression="zlib">
-   eJxjYICAdAEGrACXOLJ8Gg41uMRhIJyAPK30yjKRr5caAF+YEpLDF6b4woRQeOGSJ2QnPnl8dg5Gv+DTi89McvSiu4UYNbjUYtNLrFuI1YvNLcTqJUaMWL9iEyMl7NDzPrF2IpuLT45WaRpfmTVSy1FqAgBlxhwv
+   eJxjYGBg+CDAwPARiMkF6PrfIbELebCzKTGfGuCtAKo7qQVINdODjDChldtJBSA3kOoWdyz+RY9fSuMb5i5kPrXBYAh/EMDlDmziU3iws3GBHTwQjAyOCxAXP+jpApt7iE07b3GkDZj70N2Iz2xsZRUutTBx9LSELI7P/ehqSQHEhDEuNdjE0d2JzT243InP/QCWp0ku
   </data>
  </layer>
- <layer name="Walkable" width="15" height="30">
+ <layer name="Walkable" width="20" height="20">
   <data encoding="base64" compression="zlib">
-   eJzNk8sJADEIRC1hm0r/LYU97CUwP1khgodoHjNKsp6qNZxvqP555zsjNo2EV97OOtNR8yYc8t1lnTkdj3+wiR+1h1QvZdHbnmDZfjqsOruaqOayTHeylnphcyhO9RLW+SuIU7tQLMsOcyO7AX3yZEc=
+   eJzVlMENACAIAx2Bpdh/Jb8GwbaEjyS8TOsVI25r+dHdcrub0by8om/UZHp090TWym/Cs5ojyl2dMe+isDN5lTlkfCrPpB/L1y2Gb2J+rLbDl+mRF8OPWBGbsnc6uyr7jwoTyvBjb+/2Oxs=
   </data>
  </layer>
- <objectgroup name="Mapevents" width="15" height="30">
-  <object name="south" type="mapchange" x="320" y="928" width="32" height="32">
+ <objectgroup name="Mapevents" width="20" height="20">
+  <object name="north1" type="mapchange" x="160" y="0" width="64" height="32">
    <properties>
-    <property name="map" value="snakecave2"/>
-    <property name="place" value="north"/>
+    <property name="map" value="creepydungeon0a"/>
+    <property name="place" value="south1"/>
    </properties>
   </object>
-  <object name="north" type="mapchange" x="320" y="32" width="32" height="32">
+  <object name="east" type="mapchange" x="608" y="64" width="32" height="288">
    <properties>
-    <property name="map" value="snakecave4"/>
-    <property name="place" value="south"/>
+    <property name="map" value="creepydungeon1"/>
+    <property name="place" value="west"/>
    </properties>
   </object>
-  <object name="sign_snakecave3_grave" type="sign" x="384" y="96" width="32" height="32"/>
+  <object name="north2" type="mapchange" x="256" y="0" width="288" height="32">
+   <properties>
+    <property name="map" value="creepydungeon0a"/>
+    <property name="place" value="south2"/>
+   </properties>
+  </object>
  </objectgroup>
- <objectgroup name="Spawn" width="15" height="30">
-  <object name="cavesnake2" type="spawn" x="288" y="640" width="160" height="224">
+ <objectgroup name="Spawn" width="20" height="20">
+  <object name="skeleton2" type="spawn" x="96" y="64" width="480" height="416">
    <properties>
-    <property name="quantity" value="2"/>
+    <property name="quantity" value="4"/>
    </properties>
   </object>
-  <object name="cavesnake2_boss" type="spawn" x="352" y="416" width="96" height="224">
-   <properties>
-    <property name="quantity" value="1"/>
-   </properties>
-  </object>
-  <object name="cavesnake3" type="spawn" x="288" y="256" width="160" height="128">
-   <properties>
-    <property name="quantity" value="1"/>
-   </properties>
-  </object>
-  <object name="cavesnake3" type="spawn" x="160" y="416" width="160" height="320">
+  <object name="skeleton3" type="spawn" x="64" y="384" width="320" height="192">
    <properties>
     <property name="quantity" value="3"/>
    </properties>
   </object>
-  <object name="cavesnake3" type="spawn" x="32" y="384" width="128" height="448">
+  <object name="skeleton3" type="spawn" x="320" y="64" width="256" height="512">
    <properties>
     <property name="quantity" value="3"/>
    </properties>
   </object>
-  <object name="cavesnake3_boss" type="spawn" x="32" y="64" width="256" height="224"/>
-  <object name="cavesnake3" type="spawn" x="96" y="96" width="192" height="192">
-   <properties>
-    <property name="quantity" value="2"/>
-   </properties>
-  </object>
  </objectgroup>
- <objectgroup name="Keys" width="15" height="30">
-  <object name="elythara3:10" type="key" x="320" y="64" width="32" height="32">
-   <properties>
-    <property name="phrase" value="elythara_keyarea"/>
-    <property name="requireType" value="questProgress"/>
-    <property name="requireId" value="elythara3"/>
-    <property name="requireValue" value="10"/>
-   </properties>
-  </object>
- </objectgroup>
+ <objectgroup name="Keys" width="20" height="20"/>
 </map>

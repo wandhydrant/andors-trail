@@ -1,0 +1,399 @@
+[
+  {
+    "id": "Elytharas1_ArcirsRobber",
+    "iconID": "monsters_men:8",
+    "name": "Arcir's Robber",
+    "spawnGroup": "Elytharas1_ArcirsRobber",
+    "unique": 1,
+    "maxHP": 60,
+    "moveCost": 5,
+    "attackCost": 5,
+    "attackChance": 120,
+    "criticalSkill": 15,
+    "criticalMultiplier": 2,
+    "blockChance": 80,
+    "droplistID": "Elytharas1_ArcirsRobber",
+    "phraseID": "elythara_arcirsRobber1",
+    "attackDamage": {
+      "min": 6,
+      "max": 12
+    }
+  },
+  {
+    "id": "edwin",
+    "iconID": "monsters_men2:3",
+    "name": "Edwin",
+    "spawnGroup": "edwin",
+    "moveCost": 5,
+    "attackCost": 5,
+    "phraseID": "elythara_edwin"
+  },
+  {
+    "id": "elythara1",
+    "iconID": "monsters_rltiles1:89",
+    "name": "Unarmed Woman",
+    "spawnGroup": "elythara1",
+    "maxHP": 1000,
+    "moveCost": 5,
+    "attackCost": 1,
+    "attackChance": 100,
+    "damageResistance": 100,
+    "attackDamage": {
+      "min": 1000,
+      "max": 1000
+    },
+    "phraseID": "elythara3_UnarmedWoman"
+  },
+  {
+    "id": "elythara2",
+    "iconID": "monsters_rltiles1:71",
+    "name": "Woman in trance",
+    "spawnGroup": "elythara2",
+    "moveCost": 5,
+    "attackCost": 5,
+    "phraseID": "elythara_elythara"
+  },
+  {
+    "id": "elythara_naraelswife",
+    "name": "Lonely woman",
+    "iconID": "monsters_karvis2:0",
+    "spawnGroup": "naraelswife",
+    "phraseID": "naraels_wife_select"
+  },
+  {
+    "id": "elythara_naraelsdaughter",
+    "name": "Narael's daughter",
+    "iconID": "monsters_karvis2:6",
+    "spawnGroup": "narael_daughter",
+    "phraseID": "naraels_daughter"
+  },
+  {
+    "id": "sk_crdun1",
+    "name": "Skeleton Apprentice",
+    "maxHP": 47,
+    "monsterClass": "undead",
+    "attackDamage": {
+      "min": 1,
+      "max": 4
+    },
+    "hitEffect": {
+      "conditionsTarget": [
+        {
+          "magnitude": 1,
+          "duration": 9,
+          "chance": 100,
+          "condition": "feebleness_minor"
+        },
+        {
+          "magnitude": 1,
+          "duration": 5,
+          "chance": 60,
+          "condition": "dazed"
+        }
+      ]
+    },
+    "iconID": "monsters_tometik8:47",
+    "spawnGroup": "sk_crdun1",
+    "droplistID": "sk_crdun",
+    "attackCost": 3,
+    "attackChance": 95,
+    "blockChance": 45
+  },
+  {
+    "id": "sk_crdun2",
+    "name": "Advanced Skeleton Mage",
+    "maxHP": 54,
+    "monsterClass": "undead",
+    "attackDamage": {
+      "min": 3,
+      "max": 4
+    },
+    "hitEffect": {
+      "conditionsTarget": [
+        {
+          "magnitude": 2,
+          "duration": 7,
+          "chance": 100,
+          "condition": "feebleness_minor"
+        },
+        {
+          "magnitude": 1,
+          "duration": 7,
+          "chance": 80,
+          "condition": "dazed"
+        }
+      ]
+    },
+    "iconID": "monsters_tometik8:48",
+    "spawnGroup": "sk_crdun2",
+    "droplistID": "sk_crdun",
+    "attackCost": 3,
+    "attackChance": 100,
+    "blockChance": 45
+  },
+  {
+    "id": "bat_crdun1",
+    "name": "Sanguivorous Bat",
+    "iconID": "monsters_tometik4:0",
+    "spawnGroup": "bat_crdun",
+    "maxHP": 28,
+    "monsterClass": "animal",
+    "attackDamage": {
+      "min": 2,
+      "max": 6
+    },
+    "hitEffect": {
+      "conditionsTarget": [
+        {
+          "magnitude": 2,
+          "duration": 5,
+          "chance": 65,
+          "condition": "bleeding_wound"
+        }
+      ]
+    },
+    "droplistID": "bat_crdun",
+    "attackCost": 5,
+    "attackChance": 134,
+    "criticalSkill": 20,
+    "criticalMultiplier": 3,
+    "blockChance": 26
+  },
+  {
+    "id": "bat_crdun2",
+    "name": "Aggressive Bat",
+    "maxHP": 34,
+    "monsterClass": "animal",
+    "attackDamage": {
+      "min": 4,
+      "max": 6
+    },
+    "hitEffect": {
+      "conditionsTarget": [
+        {
+          "magnitude": 3,
+          "duration": 7,
+          "chance": 75,
+          "condition": "bleeding_wound"
+        }
+      ]
+    },
+    "iconID": "monsters_tometik4:0",
+    "spawnGroup": "bat_crdun",
+    "droplistID": "bat_crdun",
+    "attackCost": 2,
+    "attackChance": 116,
+    "criticalSkill": 15,
+    "criticalMultiplier": 3,
+    "blockChance": 29
+  },
+  {
+    "id": "bat_crdun3",
+    "name": "Strong Bat",
+    "monsterClass": "animal",
+    "iconID": "monsters_tometik4:2",
+    "spawnGroup": "bat_crdun2",
+    "droplistID": "bat_crdun",
+    "maxHP": 39,
+    "attackDamage": {
+      "min": 5,
+      "max": 7
+    },
+    "hitEffect": {
+      "conditionsTarget": [
+        {
+          "magnitude": 3,
+          "duration": 9,
+          "chance": 85,
+          "condition": "bleeding_wound"
+        }
+      ]
+    },
+    "attackCost": 3,
+    "attackChance": 127,
+    "criticalSkill": 20,
+    "criticalMultiplier": 3,
+    "blockChance": 31
+  },
+  {
+    "id": "goblin1",
+    "name": "Small Goblin",
+    "maxHP": 47,
+    "attackDamage": {
+      "max": 14
+    },
+    "iconID": "monsters_tometik1:16",
+    "spawnGroup": "goblin1",
+    "droplistID": "goblin1",
+    "attackCost": 5,
+    "attackChance": 114,
+    "blockChance": 56,
+    "criticalSkill": 10,
+    "criticalMultiplier": 2
+  },
+  {
+    "id": "goblin2",
+    "name": "Agile Goblin",
+    "maxHP": 52,
+    "attackDamage": {
+      "min": 3,
+      "max": 7
+    },
+    "iconID": "monsters_tometik1:16",
+    "spawnGroup": "goblin2",
+    "droplistID": "goblin1",
+    "attackCost": 5,
+    "attackChance": 132,
+    "blockChance": 61,
+    "criticalSkill": 25,
+    "criticalMultiplier": 2
+  },
+  {
+    "id": "goblin3",
+    "name": "Ferocious Goblin",
+    "maxHP": 59,
+    "attackDamage": {
+      "min": 3,
+      "max": 9
+    },
+    "iconID": "monsters_tometik1:15",
+    "spawnGroup": "goblin3",
+    "droplistID": "goblin2",
+    "attackCost": 5,
+    "attackChance": 135,
+    "criticalSkill": 10,
+    "criticalMultiplier": 3,
+    "blockChance": 71,
+    "damageResistance": 2
+  },
+  {
+    "id": "goblin4",
+    "name": "Huge Goblin",
+    "maxHP": 64,
+    "attackDamage": {
+      "max": 16
+    },
+    "iconID": "monsters_tometik1:13",
+    "spawnGroup": "goblin4",
+    "droplistID": "goblin2",
+    "attackCost": 5,
+    "attackChance": 139,
+    "damageResistance": 2,
+    "blockChance": 76
+  },
+  {
+    "id": "elythara_robber",
+    "name": "Bandit",
+    "maxHP": 50,
+    "unique": 1,
+    "attackDamage": {
+      "min": 3,
+      "max": 7
+    },
+    "iconID": "monsters_men:8",
+    "spawnGroup": "elythara_robber",
+    "attackCost": 5,
+    "attackChance": 100,
+    "criticalSkill": 10,
+    "criticalMultiplier": 2,
+    "blockChance": 60,
+    "droplistID": "elythara_robber"
+  },
+  {
+    "id": "demon1",
+    "name": "Elder Demon",
+    "maxHP": 120,
+    "unique": 1,
+    "monsterClass": "demon",
+    "attackDamage": {
+      "min": 5,
+      "max": 7
+    },
+    "iconID": "monsters_rltiles1:16",
+    "spawnGroup": "demon1",
+    "attackCost": 3,
+    "attackChance": 150,
+    "criticalSkill": 20,
+    "criticalMultiplier": 3,
+    "blockChance": 80,
+    "damageResistance": 8,
+    "droplistID": "elythara_sword"
+  },
+  {
+    "id": "Skeleton_Master",
+    "name": "Master of the Undead",
+    "maxHP": 100,
+    "unique": 1,
+    "monsterClass": "undead",
+    "attackDamage": {
+      "min": 3,
+      "max": 30
+    },
+    "hitEffect": {
+      "increaseCurrentHP": {
+        "min": 1,
+        "max": 5
+      }
+    },
+    "iconID": "monsters_rltiles1:73",
+    "attackCost": 5,
+    "attackChance": 150,
+    "blockChance": 150,
+    "damageResistance": 5,
+    "spawnGroup": "Master_Undead"
+  },
+  {
+    "id": "Undead_Warden",
+    "name": "Undead Warden",
+    "maxHP": 60,
+    "maxAP": 12,
+    "unique": 1,
+    "monsterClass": "undead",
+    "attackDamage": {
+      "max": 20
+    },
+    "iconID": "monsters_karvis1:1",
+    "attackCost": 3,
+    "attackChance": 200,
+    "blockChance": 50,
+    "damageResistance": 5,
+    "spawnGroup": "Undead_Warden"
+  },
+  {
+    "id": "Undead_Tormentor",
+    "name": "Undead Tormentor",
+    "maxHP": 100,
+    "monsterClass": "undead",
+    "attackDamage": {
+      "min": 1,
+      "max": 10
+    },
+    "iconID": "monsters_rltiles2:39",
+    "attackCost": 2,
+    "attackChance": 100,
+    "blockChance": 100,
+    "criticalMultiplier": 2,
+    "criticalSkill": 20,
+    "unique": 1,
+    "spawnGroup": "Undead_Tormentor"
+  },
+  {
+    "id": "Demonic_Guardian",
+    "name": "Demonic Guardian",
+    "maxHP": 200,
+    "unique": 1,
+    "monsterClass": "demon",
+    "attackDamage": {
+      "min": 20,
+      "max": 40
+    },
+    "iconID": "monsters_demon1:0",
+    "attackCost": 6,
+    "attackChance": 100,
+    "blockChance": 200,
+    "damageResistance": 5,
+    "spawnGroup": "Demonic_Guardian",
+    "size": "2x2",
+    "droplistID": "elythara_shield"
+  }
+]

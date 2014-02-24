@@ -1,0 +1,146 @@
+[
+  {
+    "id": "elythara_sword",
+    "name": "Glowing Longsword",
+    "displaytype": "quest",
+    "category": "other",
+    "iconID": "items_weapons_3:0",
+    "description": "This longsword contains one of Elythara's soul part.",
+    "hasManualPrice": 1
+  },
+  {
+    "id": "ElytharasChants",
+    "iconID": "items_books:5",
+    "name": "Elythara's Chants",
+    "displaytype": "quest",
+    "hasManualPrice": 1,
+    "category": "other"
+  },
+  {
+    "id": "elythara1_bread",
+    "name": "Edwin's bread",
+    "displaytype": "quest",
+    "iconID": "items_consumables:21",
+    "hasManualPrice": 1,
+    "category": "other"
+  },
+  {
+    "id": "elytharas3_bread",
+    "name": "Narael's bread",
+    "displaytype": "quest",
+    "iconID": "items_consumables:22",
+    "hasManualPrice": 1,
+    "category": "other"
+  },
+  {
+    "id": "naraelring1",
+    "name": "Narael's ring",
+    "displaytype": "quest",
+    "iconID": "items_rings_1:17",
+    "hasManualPrice": 1,
+    "category": "other"
+  },
+  {
+    "id": "NaraelRing2",
+    "name": "Narael's wife ring",
+    "displaytype": "quest",
+    "iconID": "items_rings_1:16",
+    "hasManualPrice": 1,
+    "category": "other"
+  },
+  {
+    "id": "elythara_shield",
+    "name": "Glowing Shield",
+    "displaytype": "quest",
+    "category": "other",
+    "iconID": "items_armours_3:27",
+    "description": "This shield contains one of Elythara's soul part.",
+    "hasManualPrice": 1
+  },
+  {
+    "id": "elythara_helmet",
+    "name": "Glowing Helmet",
+    "displaytype": "quest",
+    "category": "other",
+    "iconID": "items_armours_3:32",
+    "description": "This helmet contains one of Elythara's soul part.",
+    "hasManualPrice": 1
+  },
+  {
+    "id": "elythara_sword_1",
+    "name": "Elythara's Might",
+    "displaytype": "extraordinary",
+    "category": "lsword",
+    "equipEffect": {
+      "increaseAttackDamage": {
+        "min": 1,
+        "max": 10
+      },
+      "increaseMaxHP": 10,
+      "increaseAttackCost": 4,
+      "increaseAttackChance": 20
+    },
+    "hitEffect": {
+      "conditionsTarget": [
+        {
+          "magnitude": 1,
+          "condition": "elythara_smite",
+          "chance": 30,
+          "duration": 1
+        }
+      ]
+    },
+    "baseMarketCost": 2000,
+    "iconID": "items_weapons_3:0",
+    "hasManualPrice": 1
+  },
+  {
+    "id": "elythara_shield_1",
+    "name": "Elythara's Guard",
+    "displaytype": "extraordinary",
+    "category": "shld_mtl_hv",
+    "equipEffect": {
+      "increaseMaxHP": 5,
+      "increaseBlockChance": 25,
+      "increaseDamageResistance": 1,
+      "increaseAttackChance": -10
+    },
+    "hitEffect": {
+      "conditionsSource": [
+        {
+          "magnitude": 1,
+          "condition": "elythara_lightshield",
+          "chance": 10,
+          "duration": 1
+        }
+      ]
+    },
+    "baseMarketCost": 2000,
+    "iconID": "items_armours_3:27",
+    "hasManualPrice": 1
+  },
+  {
+    "id": "elythara_helmet_1",
+    "name": "Elythara's Leniency",
+    "displaytype": "extraordinary",
+    "category": "hd_mtl_hv",
+    "equipEffect": {
+      "increaseMaxHP": 5,
+      "increaseAttackChance": 3,
+      "increaseBlockChance": 10
+    },
+    "hitEffect": {
+      "conditionsSource": [
+        {
+          "magnitude": 1,
+          "condition": "elythara_sentence",
+          "duration": 1,
+          "chance": 30
+        }
+      ]
+    },
+    "baseMarketCost": 2000,
+    "iconID": "items_armours_3:32",
+    "hasManualPrice": 1
+  }
+]

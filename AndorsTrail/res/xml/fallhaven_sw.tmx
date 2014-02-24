@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map version="1.0" orientation="orthogonal" width="30" height="20" tilewidth="32" tileheight="32">
  <properties>
-  <property name="outdoors" value="1"/>
+  <property name="outside" value="1"/>
  </properties>
  <tileset firstgid="1" name="map_bed_1" tilewidth="32" tileheight="32">
   <image source="../drawable/map_bed_1.png" width="512" height="256"/>
@@ -125,25 +125,25 @@
  </tileset>
  <layer name="Ground" width="30" height="20">
   <data encoding="base64" compression="zlib">
-   eJw7ysbAcJREzCTIwPBJgHh1xKofspgXCyYzzLCahcU8EL7Ki4nR1RAb7tjMwmYeCHsLYmJs/iXGXmxmYTMPhKMFEXg6K4Qm17/IZuEzbxSPYmx4WJdno3gU0xATUzcgtxuwqcclj0s9TA6fm9DNxKYelzp09TA3AADi+8tM
+   eJw7ysbAcJREzCTIwPBJgHh1xKofspgXCyYzzLCahcU8EL7Ki4nR1RAb7tjMwmYeCHsLYmJs/iXGXmxmYTMPhKMFEXg6K4Qm17/IZuEzbxSPYmx4WJdntMZElm/UxsSWb9TGxJZv1MaDtXwjpm5AbjdgU49LHpd6mBw+N6GbiU09LnXo6mFuAACnKMgM
   </data>
  </layer>
  <layer name="Objects" width="30" height="20">
   <data encoding="base64" compression="zlib">
-   eJydVrFOw0AMvYi0DL2gJkJsLPA3BPEBDDAxMUM/gd9jboXCULGEASmCIUPFuTm3zovvSHlS5FzO8fOznVOM2eNt7m9yYxJ3PU6NKeed5WdkGbwOWYTcr21/T657vA5L3uPYDht4n9Cin/Bfgn9jO70TZ6dW563EO5gvojiJ7zMSURfiP7ZD3jF49b26GMGbQC/agN4QpPZ3z7sqOvsy6eza++xmKALk5Vgy3sdMj1cX/bVNh/F3evOhdsmLsQg/npfn4kHwU69uA/qQh8AzR/VjXtLzPetilUfGpJkxZ6K+N27/SrnukVfR1sCMcp0lLrPOog7yq11en+76svs+a6j++BaI9y6g4xos6TpP9T4OAN+0xvvke/vs7MKveX4Xvh70jPbpDFkEZl/O3TqgV8uD39sEzjMZd+V9tnMidLWh+ga0n2a6+3/OFQLnyPMr9XPOgxxFbmN5KW/tHI8Bz3EJydvzi8wM72t+MY04EyXUTOOI5nAgODf8vkfVM+/fy7wapdcakBfzQj7iqKxR/wsOQYg3hAY4E017JCf23/KOyB3j/QJ/N2Gd
+   eJylVjFOA0EM9IkkFNmgJCA6GvgBz+AQD6CAChpqyBMQT0DiUdSJUCgimlCATlAEKWLNrRPfnHdJYKSTs7c+j8f2rkK0xFM3/OgRZf65ahHl3dLKO7YCWccsQu9PXXVPryu8HkPZk9gec/ieMUM/5T8E/8KVepvetpzNO1bfYL6I/lZ6X5CpujD/pqvzroLH0Kv9FXgz6MUsojcGrf058I76pb1tlnYSfBYzlADySiwd76Vtx5v2q2vXqMdf6O3VtWtejMX4DLwyFxeKn3t1GtGHPAyZOa6f8LKej3YZK98ganSIdlV9T/z+kfGcI6+hrYAZlTprHHRKizrYb+rzevXPm1v22cL4l7PAvGcRHcdgWddew+5jDXCmLd7r0NsbbwdhLfM7CPXgd7zPd8ggMvt67iYRvVYe8t08cp/puKPg8zMnStcsVt+I9p2O7f6Xe4UhOcr8av2Scy1HlVuK9z3EPgz31n22Xm54j2to3opfYmZk3/JLacSZyKFmiC+4L/8LyQ3Pt567O1/b9jbRg6rxJfvrWoDmwui1BeTFvCoIHGNH5v+CdRDjjaEAzszSnshJ/HOsW8pf+X0D+Bhlfg==
   </data>
  </layer>
  <layer name="Above" width="30" height="20">
   <data encoding="base64" compression="zlib">
-   eJxjYBh4cFaAemZ94sUv/xFo1wcBCE0N+7+yYhf/hkOcHLOwmSfKhl2dGFScFD/hMosU88KxyMPCGD28iQHYzMMG0siMO1z+IdU8cvxGCNzmZmC4ww1hX6Cy2dQAH7DkIVoBQukOmzvK2FD1gfhlaGkcJI8uhss8bGroAcgpl+gVL+QAQm77QGR5QYkfB1P4IKcjergL2Q5i7YOpw6Uelzw29cj+xaYWmUYH6OqxyaObj+5fegOQ3QDDzk+R
+   eJxjYBh4cFaAemZ94sUv/xFo1wcBCE0N+7+yYhf/hkOcHLOwmSfKhl2dGFScFD/hMosU88KxyMPCGD28iQHYzMMG0siMO1z+IdU8cvxGCNzmZmC4ww1hX6Cy2dQAH7DkIVoBQukOmzvK2FD1gfhlaGkcJI8uhss8bGroAcgpl+gVL+QAkNvwlZcfiCwvyPEjofKS3iBcADUd0SPekO0g1j6YOlzqccljU4/sX2xqkWl0gK4emzy6+ej+pTcA2Q0A5BVPIg==
   </data>
  </layer>
  <layer name="Walkable" width="30" height="20">
   <data encoding="base64" compression="zlib">
-   eJy1lFEKwDAIQ3uEXar3v9LYx6CMJj6tC/RjNZpYnPMaY5rzwMX/Oq/uijXmsKulYk6XaKmajqPuIl+kD8VTvrt1ydvRufrWUe+l+s30QHJJTw50zgmIP9U79ed4kbcMKv91FI9mitSqeHZ3xHtF0/GVJ5KXzanuzy4oXTrPhFft6SS3G7uduot16tHdonJoXH07LtkZGf56bq5NTrI=
+   eJy1lF0KwCAMgz3CLuX9rzT2IJSxpF87DYhof5JK7bzGmGY9cPZTa/FGRJvDVy5lc7yES+V0Puou00XqUH5K925e8na0r9551Hupeis1kFhSkwPtcwKiT9VO9Tm/TFsFnX+d2bOeIrk6mt0d0d7hdP5KE4mrxpD5SedMB4qXzhjS93/eZne9Fd51jnv0ieeTOjp/nfTR+55wk3nR8Y/rBmQ7VKw=
   </data>
  </layer>
- <objectgroup name="Mapevents" visible="0">
+ <objectgroup name="Mapevents" width="30" height="20">
   <object name="north" type="mapchange" x="256" y="0" width="32" height="32">
    <properties>
     <property name="map" value="fallhaven_nw"/>
@@ -210,19 +210,25 @@
     <property name="place" value="west4"/>
    </properties>
   </object>
+  <object name="entrance" type="mapchange" x="832" y="512" width="32" height="32">
+   <properties>
+    <property name="map" value="fallhaven_narael"/>
+    <property name="place" value="south"/>
+   </properties>
+  </object>
  </objectgroup>
- <objectgroup name="Keys" visible="0"/>
- <objectgroup name="Citizens" visible="0">
+ <objectgroup name="Keys" width="30" height="20" visible="0"/>
+ <objectgroup name="Citizens" width="30" height="20" visible="0">
   <object name="fallhaven_citizen3" type="spawn" x="320" y="64" width="576" height="256"/>
  </objectgroup>
- <objectgroup name="NPCs, Monsters">
+ <objectgroup name="NPCs, Monsters" width="30" height="20">
   <object name="fallhaven_lumberjack" type="spawn" x="416" y="256" width="32" height="32"/>
   <object name="forestant" type="spawn" x="64" y="384" width="288" height="192">
    <properties>
     <property name="quantity" value="2"/>
    </properties>
   </object>
-  <object name="forestant" type="spawn" x="640" y="416" width="256" height="192">
+  <object name="forestant" type="spawn" x="640" y="352" width="256" height="96">
    <properties>
     <property name="quantity" value="2"/>
    </properties>

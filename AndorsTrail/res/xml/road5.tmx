@@ -130,7 +130,7 @@
  </layer>
  <layer name="Objects" width="20" height="15">
   <data encoding="base64" compression="zlib">
-   eJyNU0EOAUEQ7A1OdmVsvIAf+YOzxBlXifiAh3iCN7hZBxwQ4kKyscu0maa3zaCSTo/uruqKmQUACOrwwvPs+X1WxZ4LOL8Oi7UkNDzsLVkvrgmyQ3vJuC6NPTs3hd61WuSSv4Vye29EAO2SOc9ik0cVk6cBwFbrHfW+VlT0u9O1ldVMuV+NntWbx+89x8DkS/XTQ1/5Y2B3kP+N5pejN7ejjBdCIu5BYvhlly8Ihx/a//Ynyh1dzx39o42gd0H3Mvbs+RW58v+PO1HHd3kTNdpPfvB9nHTtbus4n9k9iIz1CCfbT4U2vgOa55pyTurnDn3irpk/2rtnNfltIxLB4Vn6S8LP2recC40H9Lp6QA==
+   eJyNU0sOAUEQrQlWZqRNnIAbuYO1xBpbibiAgziCM9gZi2GBEBsSYejSXaamdOMllWr1ee9F9wAABHV443X2/D6pYs8FnE/DYi0JzR72lqwX18Syg3vJdl0cO3ZuCr5LtbhL/hbK7b0RAbRL5jyLTR5VTJ4GABvNd9B6rSjnRmx1bWU5r9yvRs/yzeNc5xCYfK4Krxp95Y+B1SD/a71TjnKOjjJeCIm4B4nhFy1fEPY/uP/tT5Q7up47+ocbQe+C7mXs0fkVmfL/j1tRx3d5EzXSJz/4Po669rB1nL9bHcSd9QhH278KbnwHNM855Zzkzxz8tJsyf6S7YzX5bSMSscOz9JeEn7VvORMcT6JNfEQ=
   </data>
  </layer>
  <layer name="Above" width="20" height="15">
@@ -138,12 +138,12 @@
    eJz7KMAABh+gND7wiRfB/iiAWw+y+Ec0NV9ZcZv/DYscSP9xPG4TZcMtJ4ZH7gKSmSD3orsTGwgnQg02gMv9aWSaN5zBBQrD5B2F+rHZ/1YA1VxkProcLjEQAKWDt0ji+NyKbD4h9+DSh898mDy6e95isRebGnQaHyDWz8QAAL+fMuA=
   </data>
  </layer>
- <layer name="Walkable" width="20" height="15" visible="0">
+ <layer name="Walkable" width="20" height="15">
   <data encoding="base64" compression="zlib">
-   eJxzFWBgcKUjBgFqmIEMqGEGsWbB1CDT2Ni4/IouRg4gZD8+sZEGKA0DSuIJm/3Y4h5b2iDGDcSma1LMJ5Rn8ZlPDwwAaA4uKA==
+   eJxzFWBgcKUjBgFqmIEMqGEGsWahq0HWh24GNvPw6cfnLnQ3YrMTl7qRDCgNA1LihRj7CcU9NvtISfeE/IDPfGLSPD7z6YEB3IMvfA==
   </data>
  </layer>
- <objectgroup name="Mapevents" visible="0">
+ <objectgroup name="Mapevents" width="20" height="15">
   <object name="west" type="mapchange" x="0" y="128" width="32" height="192">
    <properties>
     <property name="map" value="road4"/>
@@ -156,10 +156,16 @@
     <property name="place" value="entrance"/>
    </properties>
   </object>
+  <object name="east" type="mapchange" x="608" y="192" width="32" height="160">
+   <properties>
+    <property name="map" value="road6"/>
+    <property name="place" value="west"/>
+   </properties>
+  </object>
  </objectgroup>
- <objectgroup name="Spawn" visible="0">
+ <objectgroup name="Spawn" width="20" height="15">
   <object name="beetle2" type="spawn" x="64" y="288" width="288" height="160"/>
   <object name="forestboar3" type="spawn" x="288" y="320" width="288" height="128"/>
  </objectgroup>
- <objectgroup name="Keys" visible="0"/>
+ <objectgroup name="Keys" width="20" height="15" visible="0"/>
 </map>

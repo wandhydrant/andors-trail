@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" orientation="orthogonal" width="15" height="30" tilewidth="32" tileheight="32">
+<map version="1.0" orientation="orthogonal" width="20" height="30" tilewidth="32" tileheight="32">
  <tileset firstgid="1" name="map_bed_1" tilewidth="32" tileheight="32">
   <image source="../drawable/map_bed_1.png" width="512" height="256"/>
  </tileset>
@@ -120,82 +120,61 @@
  <tileset firstgid="4917" name="map_window_2" tilewidth="32" tileheight="32">
   <image source="../drawable/map_window_2.png" width="512" height="256"/>
  </tileset>
- <layer name="Ground" width="15" height="30">
+ <layer name="Ground" width="20" height="30">
   <data encoding="base64" compression="zlib">
-   eJyVldENwyAMRCM+MgUrmIyQZoS0K2TYrNS/ggSSdT0b5+N91OaS43BJSctyVN6KvfIidd0vla3yqVyKs6/Buu5L197rP5dRH3jaGdJ9R9bmxLUzvfTsGrlTFIej30jGg5G1lwlmHHkn6+P5Yi5ZPRf71vnKw72gx8heUBvND7XaayF+MDetxXNDvwJetFafG/OL+2O/Lb8CXp5o0Quuk8le2VxZeVhzyeZqD+Rr/fdPYw2bLy8bK6Oo1rvPZneO91xvfr25xtkvid9j6En32TeD0XRYY98MRtNi7bvGuEntB2ME6U0=
+   eJyllk0OgjAQhYkLTDxDr0DxBoA3AD2CV1OvwpFc2iZM8hynM1NcvJDQx9d2fkrjoWli0sgUDWneKWlhGhQu9w8w1iddk+5Ms+AlFvfP4Mu8tZWF3hFYkjf7OoOH3kVhkbw8WqvloZiEpJOTq62N58vaj4eH+cWx/Hwcm+aZ9Eo6G3NhvZTi6uXhXiXesMVgDy8KvnmLAfIuCo/XvFYzlPeb4qFatnhhqyVP3q09e9df4uE3fGxy8LQYUv9bZ4AWQ1wD9b/VM7z/O2Dx7+hss2LGeb1zP1rMSvxa4bkcKmqhJg9S7dVKqz1J1Cf/8gLzxQJX+qdac0pcaT78zyOP3xe84veCzOLvasTvBdgbe/Ruv7W2v+9q9AF0lUXU
   </data>
  </layer>
- <layer name="Objects" width="15" height="30">
+ <layer name="Objects" width="20" height="30">
   <data encoding="base64" compression="zlib">
-   eJxjYCAOZLDilpvOCKG7GLHLVbCiqoMBHSYGBjMWBF+bCSIGwiy8DAxpQFwGxA1AvIMHIk8O8BVAtSdcAL96aag9sjjsQxEHmptKwDxc4D4Ppp2UAFD4o4cxDOhgMR+bnehhjKyPkBuRwxiXnfjkscUvNjsJmYtLHwyA0hZMDXocw+Tw2UlqXKGHC6UAm//xxRsywOU/XADdr8j8NiLNIia+QAA5XkgBhMxHDhv0vI8tbogxj5L0gA0QshPd3fjsJFWO1DSB7iZq+H+gAQAlcRJo
+   eJzVVMtKw1AQTbsrbSD7Un/A/kX9hrpSukl2QjdxUUgRJBEFobioVMRlt7p246e419JPEGfoDDkd700b0IUHQtp7J2deZyYI/g7rRj37J7J/Df33XzX47sT23vFNv7l5Z+RrRM9nJwgOm34utc8lNpftijgmEXFG5dkyLG2fKY5Fo+RinwjkjMXPDXHd0jOXHAbg/024UjlT3yvh7TpibMvZe+fnnWJgfC89/biSmGKyOSDeoXB+yHtofCTAkzk4H6E2jF5FP+bQU/Znc2WenGzGYRkPYiT+xyaOM0+u05rnSae8yx36OxaNHHm+154W8l5V9EvBeipAH1yDltSl7ajlLNz0yOrQQvPomt4k8j+GHJTLNR+aM+vJpU2E9ky156vzeVjq1YJrm5iZ9NW7DnQuGJwH12ISuW1Rew+kg2uzAzCvFH6jDwT3LIWd4tonJ3R/ukeefU8PdDe8hNt7pwBO7iXuEOVineqcX+6xqxceG+6r3aUMO1NqcwG6d3FyvFhT1Yz2R2NGmww4d2EGtbFzUgda7+mOGelBz312nHPxC3pH6B5p1cyrCus9dtt/xjfzA1VN
   </data>
  </layer>
- <layer name="Above" width="15" height="30">
+ <layer name="Above" width="20" height="30">
   <data encoding="base64" compression="zlib">
-   eJxjYICAdAEGrACXOLJ8Gg41uMRhIJyAPK30yjKRr5caAF+YEpLDF6b4woRQeOGSJ2QnPnl8dg5Gv+DTi89McvSiu4UYNbjUYtNLrFuI1YvNLcTqJUaMWL9iEyMl7NDzPrF2IpuLT45WaRpfmTVSy1FqAgBlxhwv
+   eJxjYKANSBdAsHfxkqYem1waHnlS1YfjkJuGxZ24zNqGpBaXechgK1Q9Mf4gxjxcAJsfsAE3Hvx8GNiGwzx88QUCckzEuQNmFjHhQshOGMAVfuj6iQ1nXOrCBBCYFPNk0cIGljYImYcrjkCAmLAhJQ/B7MaVnrDZhy/tofsZl32kAHx+Jsc8fOmGlLDDZt45RkReQjbLFyjmhxZuIPu0mTDFkPXdY0SVX4An7NH9Ra5/YAA9Likpr7ABSszDVtcQSnvkAGLLImIBtcOQFn6mBaB2OFKSrmkBAOXvI4E=
   </data>
  </layer>
- <layer name="Walkable" width="15" height="30">
+ <layer name="Walkable" width="20" height="30">
   <data encoding="base64" compression="zlib">
-   eJzNk8sJADEIRC1hm0r/LYU97CUwP1khgodoHjNKsp6qNZxvqP555zsjNo2EV97OOtNR8yYc8t1lnTkdj3+wiR+1h1QvZdHbnmDZfjqsOruaqOayTHeylnphcyhO9RLW+SuIU7tQLMsOcyO7AX3yZEc=
+   eJzlk8ENACEIBC3hmrL/lu7lx9yyA1z8SGIiEQfQZT5jzAvXsrUn8SpWmcsdxUbWze34O4fwdibxOzzH+jpXvutV5VP1kV4Jj2rF6dPxiUYzWiJ/S2fC5c/W1uEpxike0Wc0R5k3JxpWvVLLaMFxXI3kfrXGyhtX5o1qqxJH15+sG3gvYy1+1w==
   </data>
  </layer>
- <objectgroup name="Mapevents" width="15" height="30">
-  <object name="south" type="mapchange" x="320" y="928" width="32" height="32">
+ <objectgroup name="Mapevents" width="20" height="30">
+  <object name="south" type="mapchange" x="128" y="928" width="32" height="32">
    <properties>
-    <property name="map" value="snakecave2"/>
+    <property name="map" value="soulpartdungeon0"/>
     <property name="place" value="north"/>
    </properties>
   </object>
-  <object name="north" type="mapchange" x="320" y="32" width="32" height="32">
+  <object name="down" type="mapchange" x="224" y="352" width="96" height="32">
    <properties>
-    <property name="map" value="snakecave4"/>
-    <property name="place" value="south"/>
+    <property name="map" value="soulpartdungeon2"/>
+    <property name="place" value="up"/>
    </properties>
   </object>
-  <object name="sign_snakecave3_grave" type="sign" x="384" y="96" width="32" height="32"/>
  </objectgroup>
- <objectgroup name="Spawn" width="15" height="30">
-  <object name="cavesnake2" type="spawn" x="288" y="640" width="160" height="224">
-   <properties>
-    <property name="quantity" value="2"/>
-   </properties>
-  </object>
-  <object name="cavesnake2_boss" type="spawn" x="352" y="416" width="96" height="224">
-   <properties>
-    <property name="quantity" value="1"/>
-   </properties>
-  </object>
-  <object name="cavesnake3" type="spawn" x="288" y="256" width="160" height="128">
-   <properties>
-    <property name="quantity" value="1"/>
-   </properties>
-  </object>
-  <object name="cavesnake3" type="spawn" x="160" y="416" width="160" height="320">
+ <objectgroup name="Spawn" width="20" height="30">
+  <object name="goblin1" type="spawn" x="128" y="576" width="32" height="32"/>
+  <object name="goblin2" type="spawn" x="96" y="448" width="32" height="32"/>
+  <object name="goblin2" type="spawn" x="128" y="192" width="32" height="96"/>
+  <object name="goblin1" type="spawn" x="32" y="608" width="512" height="224">
    <properties>
     <property name="quantity" value="3"/>
    </properties>
   </object>
-  <object name="cavesnake3" type="spawn" x="32" y="384" width="128" height="448">
+  <object name="goblin2" type="spawn" x="352" y="96" width="288" height="704">
    <properties>
     <property name="quantity" value="3"/>
    </properties>
   </object>
-  <object name="cavesnake3_boss" type="spawn" x="32" y="64" width="256" height="224"/>
-  <object name="cavesnake3" type="spawn" x="96" y="96" width="192" height="192">
+  <object name="cavesnake2_boss" type="spawn" x="256" y="448" width="288" height="288"/>
+  <object name="goblin1" type="spawn" x="0" y="64" width="224" height="512">
    <properties>
     <property name="quantity" value="2"/>
    </properties>
   </object>
+  <object name="goblin2" type="spawn" x="192" y="160" width="160" height="192"/>
  </objectgroup>
- <objectgroup name="Keys" width="15" height="30">
-  <object name="elythara3:10" type="key" x="320" y="64" width="32" height="32">
-   <properties>
-    <property name="phrase" value="elythara_keyarea"/>
-    <property name="requireType" value="questProgress"/>
-    <property name="requireId" value="elythara3"/>
-    <property name="requireValue" value="10"/>
-   </properties>
-  </object>
- </objectgroup>
+ <objectgroup name="Keys" width="20" height="30"/>
 </map>
