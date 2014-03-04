@@ -177,8 +177,10 @@ public final class Savegames {
 			if (fileversion == 11) fileversion = 5; // Fileversion 5 had no version identifier, but the first byte was 11.
 
 			//Temporary workaround due to release error on the blackberry port.
-			if (fileversion == 864) { /*USMAN : replace 864 by your bogus fileversion number*/
+			if (fileversion == 104) { //bogus fileversion on BB for v0.7.0 
 				this.fileversion = 39; //fileversion used for 0.7.0 : allows the parser to make the correct assumptions.
+			} else if (fileversion == 106 ){ //bogus fileversion on BB for v0.7.1
+				this.fileversion = 42;
 			} else {
 				this.fileversion = fileversion;
 			}
