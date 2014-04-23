@@ -203,22 +203,22 @@
   </data>
  </layer>
  <objectgroup name="Mapevents" width="30" height="23">
-  <object name="tp1" type="mapchange" x="832" y="288" width="32" height="32">
+  <object name="tp2" type="mapchange" x="832" y="288" width="32" height="32">
    <properties>
     <property name="map" value="shortcut_lodar0"/>
     <property name="place" value="tp1"/>
    </properties>
   </object>
-  <object name="tp3" type="mapchange" x="64" y="160" width="32" height="32">
-   <properties>
-    <property name="map" value="shortcut_lodar1"/>
-    <property name="place" value="tp2"/>
-   </properties>
-  </object>
-  <object name="tp2" type="mapchange" x="96" y="576" width="32" height="32">
+  <object name="tp4" type="mapchange" x="64" y="160" width="32" height="32">
    <properties>
     <property name="map" value="shortcut_lodar1"/>
     <property name="place" value="tp3"/>
+   </properties>
+  </object>
+  <object name="tp3" type="mapchange" x="96" y="576" width="32" height="32">
+   <properties>
+    <property name="map" value="shortcut_lodar1"/>
+    <property name="place" value="tp4"/>
    </properties>
   </object>
   <object name="west" type="mapchange" x="0" y="96" width="32" height="96">
@@ -234,7 +234,7 @@
    </properties>
   </object>
  </objectgroup>
- <objectgroup name="Spawn" width="30" height="23">
+ <objectgroup name="Spawn" width="30" height="23" visible="0">
   <object name="cavebat2" type="spawn" x="64" y="320" width="160" height="224">
    <properties>
     <property name="quantity" value="3"/>
@@ -271,7 +271,7 @@
    </properties>
   </object>
  </objectgroup>
- <objectgroup name="Keys" width="30" height="23"/>
+ <objectgroup name="Keys" width="30" height="23" visible="0"/>
  <objectgroup name="Replace" width="30" height="23">
   <object name="shortcut_lodar:40" type="replace" x="96" y="576" width="32" height="32">
    <properties>

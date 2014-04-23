@@ -217,13 +217,13 @@
   <object name="tp1" type="mapchange" x="128" y="384" width="32" height="32">
    <properties>
     <property name="map" value="shortcut_lodar1"/>
-    <property name="place" value="tp1"/>
+    <property name="place" value="tp2"/>
    </properties>
   </object>
   <object name="sign_lodar_shortcut_4" type="sign" x="192" y="320" width="32" height="64"/>
-  <object name="sign_shortcut_lodar_3" type="sign" x="224" y="288" width="32" height="64"/>
-  <object name="sign_shortcut_lodar_5" type="sign" x="96" y="352" width="96" height="96"/>
-  <object name="sign_shortcut_lodar_5" type="script" x="96" y="352" width="96" height="96">
+  <object name="sign_lodar_shortcut_3" type="sign" x="224" y="288" width="32" height="64"/>
+  <object name="sign_lodar_shortcut_5" type="sign" x="96" y="352" width="96" height="96"/>
+  <object name="sign_lodar_shortcut_5" type="script" x="96" y="352" width="96" height="96">
    <properties>
     <property name="when" value="enter"/>
    </properties>
@@ -256,7 +256,7 @@
  <objectgroup name="Keys" width="30" height="20">
   <object name="lodar2:35" type="key" x="576" y="192" width="64" height="64">
    <properties>
-    <property name="phrase" value="sign_shortcut_lodar_1"/>
+    <property name="phrase" value="sign_lodar_shortcut_1"/>
     <property name="requireId" value="lodar2"/>
     <property name="requireType" value="questProgress"/>
     <property name="requireValue" value="35"/>

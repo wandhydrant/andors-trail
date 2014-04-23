@@ -220,7 +220,7 @@
     <property name="place" value="down"/>
    </properties>
   </object>
-  <object name="sign_lodar_shortcut_1" type="sign" x="96" y="192" width="96" height="32"/>
+  <object name="sign_lodar_shortcut_1" type="sign" x="224" y="160" width="32" height="64"/>
   <object name="sign_lodar_shortcut_2" type="sign" x="352" y="672" width="32" height="32"/>
   <object name="sign_lodar_shortcut_2" type="sign" x="416" y="192" width="32" height="32"/>
  </objectgroup>
@@ -241,10 +241,10 @@
     <property name="quantity" value="2"/>
    </properties>
   </object>
-  <object name="mudfiend" type="spawn" x="224" y="160" width="96" height="64"/>
+  <object name="mudfiend" type="spawn" x="192" y="64" width="96" height="64"/>
  </objectgroup>
  <objectgroup name="Keys" width="20" height="24">
-  <object name="lodar2:35" type="key" x="96" y="224" width="96" height="128">
+  <object name="lodar2:35" type="key" x="96" y="192" width="96" height="32">
    <properties>
     <property name="phrase" value="sign_shortcut_lodar_1"/>
     <property name="requireId" value="lodar2"/>
