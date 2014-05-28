@@ -120,24 +120,39 @@
  <tileset firstgid="4917" name="map_window_2" tilewidth="32" tileheight="32">
   <image source="../drawable/map_window_2.png" width="512" height="256"/>
  </tileset>
+ <tileset firstgid="5045" name="map_transition_1" tilewidth="32" tileheight="32">
+  <image source="../drawable/map_transition_1.png" width="512" height="256"/>
+ </tileset>
+ <tileset firstgid="5173" name="map_transition_2" tilewidth="32" tileheight="32">
+  <image source="../drawable/map_transition_2.png" width="512" height="256"/>
+ </tileset>
+ <tileset firstgid="5301" name="map_transition_3" tilewidth="32" tileheight="32">
+  <image source="../drawable/map_transition_3.png" width="512" height="256"/>
+ </tileset>
+ <tileset firstgid="5429" name="map_transition_4" tilewidth="32" tileheight="32">
+  <image source="../drawable/map_transition_4.png" width="512" height="256"/>
+ </tileset>
+ <tileset firstgid="5557" name="map_transition_5" tilewidth="32" tileheight="32">
+  <image source="../drawable/map_transition_5.png" width="512" height="256"/>
+ </tileset>
  <layer name="Ground" width="30" height="30">
   <data encoding="base64" compression="zlib">
-   eJy9lk1uwjAQhYMXXXjVA+QKBG4QwqYrWhHYhgrElvYE/blMF+2+ldoT9Fi1FVs8HuMfBOriCeN48s1zJuNUqiiqgEZGw8j1mCZOPJbW8VxjVENcKFaKa52mMK4D65Bh5xZGc4iTYtmfj9s6LWE8h/gRrEOGnfu96rUVYifEkuK8vgdF8Wl0c93HDx0X10hzLN4D9CetfzfMN8e1CnGrBNdqnGBJfr/cb4yb8jzO4DH7Z9D/VoK3OpM7Vfs9/Bjk8/G9RIavmybBXapDH7lc7g9cN1JdniupB12akfIa8vwfXnO5dWBvSnU4LoU1Ia5UR3wP7HP+GubNPVTKmb1yHcXqXcq9EXoo9s+5kJe0x3XkOnMxb+7x2Nc5Z4mLa0bq+Ezic8HGvOo+zrMs1875++Vw0Vejjs8kPhcw39DZJD2jUP02gXjMw16/1XvhefFk/j8bvehwXUv1uwCu3bOZlv2u9F73+rTeIeVQkt/O3Rv9Puherbu2NrpzOfo9sP9T32r8Pebrxt5nY/06ziP56sDzGta27n+M6985/B6zfj0ztI/2GXTAYf4qwuVvMqybjY4/P58Xclih/uxrqFXHdYM+1vTcZsTiHloGfDKX/fLzwjri+VO/86UezT54j3eQg6+xU5jcs3xv68BH68ZYw/iuxfYyJa6VHfjr3PhcRk6/4LlLcv4An1SLYA==
+   eJy9VjFSwzAQdFxQqOIB+UKc/MBxGqok4zhtyIRJm/ACIJ+hgB5m4AU8C91YN95c7iwxMBQ7liWddu90OqnIs6wwMPYY9Yz3YRog29o82Vd5lGBn2Wp2q4AZtEtjHnJQX+NRg51mK/1ju33AGto12I9hHnJQ39dVi71iOxVcmh3jY5Blbx431639KPDiHK2P7d49PgeXMUD/JCfhxds8B16CxVsYmomT/ycRLks3fft4Zb/EJIFP003fQvGtTOSd5V0MXwfp/HgukYPzporwrnM9/jHI+oBjtZGXv4VWg/6aI+ar5fN/+JrKWxqxGebn7aEyx+LV8kiugXWOx1C3rKEYW62+cq1MzXdNe6XUUKyftcKtxbgU4zhf8qJuWeOxrkvNGi/OGeeXd5K8F8jm5Fo75mqAI5UXY13ll3eSvBdQr3U3aXtk5W8ldLN21EHjC9cB74sH///o8eTsvNbytwHdFMe50/29dR227me1Q9MwFPHahLXR36NrsQpjO49l0IhxiL3V5HuM84bWuSN/A8+98GsDPu/CXIxDHy+fOXyPkb9zWEeLI+3BJmhaARdrpLb1NpNvMswb1K7xsi7pJ8/VzhGe/UbkDPuLfuxgz3gfZUw1jTFe6S/uF8eN80jrP7rzfV66OK8WO0v/AXhkjh2EtoWRW1izTq7Lzxrsa7E+njXrvB6Ebi2vNJstaKC2vP+sM6+dr9R6IftitSZlLcY3yrCTTw==
   </data>
  </layer>
  <layer name="Objects" width="30" height="30">
   <data encoding="base64" compression="zlib">
-   eJzdVktOAkEQnWY/wT3BC8BNPIALP3E1OxM3sIOQGCGaiMQFBKKwwx1hwxA8hEfwCB6B2JXuyrwpu2dG0Jj4EjI109X1fd1FEPwvjFUQvIZG7mn5Vrn1RmX//qH+xdrGxLPXhwer/6yMnXWYXl/p9xfrt1IKgmrJyHX9rFn5sYDPO5XsY0Qg10ppfdJbl9Pf6Vsb4rsIk70U56F+bsKkfk/K1IP2DazumX6eixzRRzf8Wv8qrN979o5s/eoij+9g7Kjjwvob2rVroXNk19sirga8y3wqEOPxgXk2xX4X+qBzouVTeJ+DfGllzufKY7sl9BAUc8Oxr1sgzgh0Khn9oN5NBOcxFo4beboEfmBPFmCj74mRa30TGt/MFaxdJ6PGrjoxKKasXFlHguuJZxuBPYgE12gtKyYG6xDHIk9tqnBGOQ/6hjlhfIMcHuA5kTZaBTjkii8PM5X0z8dTec8VAd1pQ8/dT2AeDXN64fMdh+k1PA/zDL95oLNFM8s3z/CunAmdOMcv31dkW+Y1tTOLebeyc7EHPrA/PL/4m69OdH75TPru6rWNu6+M3djBAznTfGsuMA85JwLWdwryRwYfcF7QOc67O1xxUA2ajpptxRzs7HDeisA1V4rMsSLYAL9cPUT4+L0rIlvbrP4tc+5evM+L9vZNGV5thV3XHJa+9sG79Sd581tw+ZD/n3yc3TXX7+S1bz0R/J8DbeMs+0lff4VPxvRlXQ==
+   eJzdVr9rFEEU3rlOuCUW6Y7zH4j/iX9ACuOP6jrR5q5LCEgMGhLDFRtONOnOLqTJhdhKWptgK4hdBCHah8zHzmO/fTdvdk+w8YNhZmfem3nz5nvvbZb9X5i4LPuUl+NtP37t4nIHS7Z+4dvM7/HO0LXwNsh/cOU+Z3l9/dR/fwzn9jpZ1u+U4/u+X/Ftz+uMfdtJnIs7vXGVnmBA45VOXQdyZ0v1ecxtKPtEF3be8/257z+Hs9670h/Q2w96j3z/OJ/XF7zK5/3fp/XdvC4rugde59LV76fxtWuvAfD/TyVzHM4rgk0vlW0Pwrr2yzB8X3Xn79MjG1fvlv1I6V90K31gT60/9N9rNDfNK51neXUf4EXkzYD1MP+D7Hsa5mDzUOldu9LnTRiQTC/xHni734rzE7JF7GaenhA/+E2OaQ/tK4H4eivwRrgyJflNGmuuxvghgE2pu4qMBvyJPTm2GUPFd0C4hrVJi3wjMuDYwPBNn2JU7oE5vhPbt9/AA44Tvcd6Cw7F7Hu+XDYLR656P4unOs+1AXJaYeR+QHhUGG8hdlu2z/K6XRwP08S5wFUipyH3omZZ9Yxz5RHJPFkuWwojyhPap4ehZgnvTkNd3KYz+H3Grj5nvRHiV/JejPdiN5rURfh2rGR1TbPWYgAPkS/kTgD79zCMkSt/JWKT6wXiuCl3xOyAD0YRn92oOrj5F/HWBrG6ousYYxE7zolfswY9yKTiAIC/77TwMWrhIPg29X4nBgcLI/805ek/fv2LK3l1o2R1HRaw/6f5/Bo4cW2c+53mv4Wx5o0Fy562iJ2h/59SXLlQb826Vvy2uZdAxyLXPV3/4YuNRPzKPwfvzfstEvfQY98vmjP+FW4Bq/mEgQ==
   </data>
  </layer>
  <layer name="Above" width="30" height="30">
   <data encoding="base64" compression="zlib">
-   eJzdVUEOAiEMrN5J/IAv0vXqD/AnJn5gj8anbjgQkTBtKSyrzomEdqYtpSX6L9wO5TNnp7GXNH3i6wFPbifZI47cb3JEF4d9rsa8UtTEyOke90RPJtYA6ztwuhre4HdOYpuFOHOE3Gri0d5rUMqN433s3m/6AnlK74Q0Ai+q3cl91tgKVOsRaO1PK3r0ya/oolmZ3ms4av1a/yqKu5XXeq/x4/6kVVfaF9L/HTEzSzFIvJY9qMFavBJGzLKokWqV6oz2kFUzanhBt7cm2olrIWqO7qEtNKPuFojz4t6xT78NC1FbJrc=
+   eJzdVckNAjEMNPwj0QAVUArHlw5CJ0g0wBNRKsrDIkQZ2/Fms8C8Voo9YyfeMdF/4bKpf0txlnhNM2a5EfCUcVo84ijzjoHoFHDO2dlXjpYaJd3tmugh1JrgfQdJ18Kb8g5ZbXelzhKpt5Z6rOcW1HqTeG+r95s+QZ/aOyGNxIvuTptVK9Bdj8DU+fSix5z8ii7yyvzcwtGaZ/1Xd2D+UN1TPcB7bsnbh0/f66Gr7Yvy/y39YoRn1jxE4/XsQQvm4tUwwstYI9eq3TPaQ15N1oiKbm9NtBPnAmuOnqElNFl3CbBfXDvO6bfhBTGfJ4s=
   </data>
  </layer>
  <layer name="Walkable" width="30" height="30">
   <data encoding="base64" compression="zlib">
-   eJztVNsJwDAIzAhdKvuvVPpXxOidGgOlglCC5h6azmuM+WdbPlF9H3KnVvMOlhtaq/GTmJYGKzxMT7NWh0ZEr+xf8bM88nRFvbPqVj1RXO2bwVztoHV/1XwRr1gforjIrrNvM/KekP9ABps5R7EzejOamdlWaPb47sJl+iq99rR4HNleLaJeeb1ZDGb+FZqiHDow5fx3Y57U98X5nfBS7ksXZmfeXqvgyg==
+   eJztlEsOwCAIRD1CL+X9r9R01zQI80FXNXFjhccM2HmNMf99bD+rOx+SM7rzXmxt6N2ovi8zy5UtJAbNh/AYdsbMdEffEX51jsYztaJ6s3wKczWDWf6u/iJesT6oXGTW2bepvCfkP+CwmXOU7eh1NDO97dBc1buLy8R1el1pcf3KvNvNjRgqr+p/pcnlqj46Hq/yoXPjcCt9u7lKbtRrpn/M3CnxzryhXLcnrNaT+wbUWNgo
   </data>
  </layer>
  <objectgroup name="Mapevents" width="30" height="30">
@@ -148,19 +163,10 @@
    </properties>
   </object>
  </objectgroup>
- <objectgroup name="Spawn" width="30" height="30">
-  <object name="Master_Undead" type="spawn" x="128" y="832" width="96" height="96">
-   <properties>
-   </properties>
-  </object>
-  <object name="Undead_Warden" type="spawn" x="448" y="672" width="160" height="96">
-   <properties>
-   </properties>
-  </object>
-  <object name="Undead_Tormentor" type="spawn" x="320" y="576" width="96" height="128">
-   <properties>
-   </properties>
-  </object>
+ <objectgroup name="Spawn" width="30" height="30" visible="0">
+  <object name="Master_Undead" type="spawn" x="128" y="832" width="96" height="96"/>
+  <object name="Undead_Warden" type="spawn" x="448" y="672" width="160" height="96"/>
+  <object name="Undead_Tormentor" type="spawn" x="320" y="576" width="96" height="128"/>
   <object name="bat_crdun" type="spawn" x="96" y="320" width="32" height="32"/>
   <object name="sk_crdun2" type="spawn" x="32" y="160" width="96" height="160">
    <properties>

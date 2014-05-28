@@ -122,7 +122,7 @@
  </tileset>
  <layer name="Ground" width="7" height="8">
   <data encoding="base64" compression="zlib">
-   eJw7L8jAcB4PPgrEx9AwTO4qFgyT4+VgYMjlZGDIA+J8IObngIh/Z2NgkAWy5ZCwPAdE3FUQIScIxEJQOZB4KBDrAtl6QKwIxEpArM8BEWdiR8WGHAg2AI/wG9s=
+   eJw7L8jAcB4PPgrEx9AwTO4qFgyT4+VgYMjlZGDIA+J8IObnQMjJAtlySBgm54okJwjEQkAszwERDwViXSBbD4gVgVgJiPU5IOJM7KjYkAPBBgBzchuR
   </data>
  </layer>
  <layer name="Objects" width="7" height="8">
@@ -132,15 +132,15 @@
  </layer>
  <layer name="Above" width="7" height="8">
   <data encoding="base64" compression="zlib">
-   eJxjYMAPwgUYGPYKMTBMY2RgaAfiLkZUubNCuPWlCkD0TWPElMNnHy6QBpSL5IaYSywAAHDoCE4=
+   eJxjYMAPwgUYGPYKMTBMY2RgaAfiLkZUubNCuPWlCkD0TWPElMNnHz65SG6IucQCAG3cCD8=
   </data>
  </layer>
- <layer name="Walkable" width="7" height="8" visible="0">
+ <layer name="Walkable" width="7" height="8">
   <data encoding="base64" compression="zlib">
-   eJxzFWBgcKURRga4xNHlYWxc+nDJYVMHwgCmpg2e
+   eJxzFWBgcKURRga4xLHJIashVg6bOhAGAMUiDfM=
   </data>
  </layer>
- <objectgroup name="mapevents" width="7" height="8" visible="0">
+ <objectgroup name="Mapevents" width="7" height="8">
   <object name="entrance" type="mapchange" x="128" y="224" width="32" height="32">
    <properties>
     <property name="map" value="stoutford_sw"/>
@@ -154,6 +154,6 @@
    </properties>
   </object>
  </objectgroup>
- <objectgroup name="spawn" width="7" height="8" visible="0"/>
- <objectgroup name="keys" width="7" height="8" visible="0"/>
+ <objectgroup name="Spawn" width="7" height="8"/>
+ <objectgroup name="Keys" width="7" height="8"/>
 </map>

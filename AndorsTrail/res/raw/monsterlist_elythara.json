@@ -26,7 +26,7 @@
     "spawnGroup": "edwin",
     "moveCost": 5,
     "attackCost": 5,
-    "phraseID": "elythara_edwin"
+    "phraseID": "elythara_edwin_0"
   },
   {
     "id": "elythara1",
@@ -395,5 +395,24 @@
     "spawnGroup": "Demonic_Guardian",
     "size": "2x2",
     "droplistID": "elythara_shield"
+  },
+  {
+    "id": "elythara_robber_1",
+    "name": "Bridge Guard",
+    "maxHP": 50,
+    "unique": 1,
+    "attackDamage": {
+      "min": 3,
+      "max": 7
+    },
+    "iconID": "monsters_men:8",
+    "spawnGroup": "elythara_robber_guard",
+    "attackCost": 5,
+    "attackChance": 100,
+    "criticalSkill": 10,
+    "criticalMultiplier": 2,
+    "blockChance": 60,
+    "droplistID": "elythara_robber",
+    "phraseID": "elythara_bandit_guard"
   }
 ]

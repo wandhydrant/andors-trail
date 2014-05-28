@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" orientation="orthogonal" width="25" height="25" tilewidth="32" tileheight="32">
+<map version="1.0" orientation="orthogonal" width="22" height="24" tilewidth="32" tileheight="32">
  <tileset firstgid="1" name="map_bed_1" tilewidth="32" tileheight="32">
   <image source="../drawable/map_bed_1.png" width="512" height="256"/>
  </tileset>
@@ -120,79 +120,94 @@
  <tileset firstgid="4917" name="map_window_2" tilewidth="32" tileheight="32">
   <image source="../drawable/map_window_2.png" width="512" height="256"/>
  </tileset>
- <layer name="Ground" width="25" height="25">
+ <tileset firstgid="5045" name="map_transition_1" tilewidth="32" tileheight="32">
+  <image source="../drawable/map_transition_1.png" width="512" height="256"/>
+ </tileset>
+ <tileset firstgid="5173" name="map_transition_2" tilewidth="32" tileheight="32">
+  <image source="../drawable/map_transition_2.png" width="512" height="256"/>
+ </tileset>
+ <tileset firstgid="5301" name="map_transition_3" tilewidth="32" tileheight="32">
+  <image source="../drawable/map_transition_3.png" width="512" height="256"/>
+ </tileset>
+ <tileset firstgid="5429" name="map_transition_4" tilewidth="32" tileheight="32">
+  <image source="../drawable/map_transition_4.png" width="512" height="256"/>
+ </tileset>
+ <tileset firstgid="5557" name="map_transition_5" tilewidth="32" tileheight="32">
+  <image source="../drawable/map_transition_5.png" width="512" height="256"/>
+ </tileset>
+ <layer name="Ground" width="22" height="24">
   <data encoding="base64" compression="zlib">
-   eJy1VdsNwyAQi/jIFKyQdIQ03SBtR8iudKxSFavIuiNwpB8WUsSd72Gc2Q3DHHGJeI0/TOn7mbByXOksYSWOheKlHJ+Ye8QtnctBDw/i2CgeOcC3ppg94pnOrcDDcwLyeOQAH9eU1ybNWePQePeD+70cDC/Eajux5J+E+JIeLb3k+4Uuz+aAjqAx5rXOi+e/kcZK+gW8k/foG3rW9FuanXS/RQ813oL77Cc9HOwt2Ct7EntczRvRYrHX3JNWp/tJaw/S/llLFo4wfqHVGzr3DT2Finqtu7D6I97VUX6rP1r//d7pb/4sjlqPCRXz7+3xH/kteAM1xA30
+   eJytVcENgzAMjHjAElkhdARKN6BlBFZrV0nHaqrmVOvkAA48ThFS7mzss9M3zl0S3u0fIX33J6BW90onYyTdgTga78u5J9zyOSi5Pkh3Ig54iDFmzpIw53Miba4BIDngIQbnIfMJG7qlWMvG/Rpdhle4ssY1mkHhs49qcpY9gp/O0EX/4Q2OZakF13Mib7DXAN/ovfCGf5Ne0+b62Tn36vQ7lp7yjLIuz7JVF3MNXfSGdwDvlJKH+T500Ru5A6QHLLmuzRN7YK9ubH8o5RUregYPxR15WWpbu4Pg+7W3xappeQt9U569I7p75zsW6nkkxlY9P+l2+qk=
   </data>
  </layer>
- <layer name="Objects" width="25" height="25">
+ <layer name="Objects" width="22" height="24">
   <data encoding="base64" compression="zlib">
-   eJzdVDFOwzAUdbJ0iSXvqCcgp0A9QxnagSkrLM1QkVKpUhEVFMSAFCTYgJUNxCE4Auwt4ggIP+Vb/nWDcRALPCly7OT/Z7///IX4f8ikEItEiHsZHlNG1XMZhf07cHI/U9xcj1s1vIi5on9OAzjSuBo7lGtTz19of9cs/l2/H0U2BmfPYhvjw1AJUaj19YzFIccHaZOy9Tetb665xtLPM9P5T4ijm1jdchqXem0q7V5e9XyD8rXj6v8lW6vDtnMGfq6M1YLvhaP9jU4ct3I914zVo6DvezUeCPHjmOkziWxO1D1Lqnmnga/rYPRaJHZtSe9nclX/EdX3QVoPNOVHninFfFXHi6jiSR3vNcFNS4i7Vv03nNnUBBrn7AxNeHwcAM7Kc3dJ13kDzVyOQ0+/MF5HD/DdEQ5obDhKyn2uxydnj/ACam28Xgb0LQD9b19VD2DqCv17yvZHrOHu9PS839BTiH1MVtd2qO+DA5x94sfdMf4eObX3YVdZDt7/oDU0OXb6Cc8bWgvkAQ/2yr1vtDb3Bj4qZHheDnjf1DAnjYwvea+cBNY3BLgHuGcD5h/c8SHzxW/C9HDkP1A/0+mv4hOluVyC
+   eJzVVMtKw0AUnXSdgdlLv8B8hfgNddEu3DRb3TRCsTVSqFi0iogQQRcuXLtT3HfrJ+jeiJ8gziF3mNvJg4S48UCY5GbuuTPn3Bkh/idCKcSnL8STrJ+TeNlz65X/Hzl8bzR3qcetglrIuaM5FyW8QScbtyl/U3+/0zruWc63fj/1bA72GHZsjouxEmKi8vGQzUXeD+07YPEvrV2k+WOZ515oznPi7flWk4jGVMfm0tb/0N8bxNHtZPNTFjPYcdbK1x8ybXl9jm6BBhyPMp+/ID1Xej0T+r/foGditvcZcYEH3sWac6isr01gtEAPG6T0finX9ZySR8/S+linJnLnNM/1wuDGy7gDp2faAHszGkM/0zfwoC039gS+azr/PfJg2dCDk5KzesD6GmexTDeAa5YQ35UeX521wE/4ZfoyKakN4I45VNkDGG+gZ1/ZOwgx9HZffw8o9lChAea/+OuxXdIQvKgzoJrobdOLU+ZfEfaU5cW+hqQJtMN+z5yzzLmqtEUuuLEmV+eVb/v6mPyv4uJAbxofIqeH+H00q/CoDtCn6P0R8x1nbcy8bQtzH4LzqIEGf4lfMbxdYg==
   </data>
  </layer>
- <layer name="Above" width="25" height="25">
+ <layer name="Above" width="22" height="24">
   <data encoding="base64" compression="zlib">
-   eJxjYECAcAEGmgOYHQt4aW8HKSBdAJUmpDYNhzpc+pH1EOM+fGpwySG7CZf7cJnjxoPbLEoAsh3baRTnskwQehoF5hOTHolJG5TqpyQP4kuXyAAWXuQAaqULZEBpuBJjDjY/o6d5YgCty0iQH8KgGFkMmzpyQTgWO9DjFZaWvIH5wofEfAXTKw0Nc26ksNdGYlOSlkB+QC5PQHamopmnQ0E6h9mBDHC5l5x0hGxHJS9quFBiHjZASX4fBYMfAAB11hva
+   eJxjYICAcAEGmgCYuQt4aWMuOXpw6U0HiqfhkCNGDy41+NyKSw7ZHcS4yY0Ht35SAbK524HxlkqltCHLBKGnUTktgEA6hW7EpZ+SfIEvPcHCghxASdwiA0rC7LgobjlsfkNPn7jAUaC51/CYTQ4A+TMMimEAW7ySGh7hWMxFjxtYGvAGpnkfItI9TL00NAy5kcJSG4lNahoAuXU7kv0ge9D9q0NGmkQPxzQcab6QyPhHNreSF9XPxKYhfICSfDcKMAEAVkcdyA==
   </data>
  </layer>
- <layer name="Walkable" width="25" height="25">
+ <layer name="Walkable" width="22" height="24">
   <data encoding="base64" compression="zlib">
-   eJzVUkEOwCAI8wl+iv9/yYtLiJGtjNZsJD0YYksL1luzCV/WNTihcemo+f+eVVS+x/ag0kO8VPO842NpZL1EM1Y0nviq+UWzRO9sbkj/7Z6QP7udKTVUPpB7q4Kxd+SWWD7QYvH7jBS8zNkzebHvaNVS8H8VA6tSng0=
+   eJzNklsKQCEIRFtCm3L/W7r9BCH5mGGCK0gf4emY2hzDVp5hU5evuJv9gvm3f4hqojjvqpqOK/sG65z5ZdyMz3JRZxW3YmRcdH86c0Nm7O+z3lButJ9qrtK3syfMDNnZVf7IP0RenUC8brX+RHv2LNSReUvFvfFVTCQ/XYF53A==
   </data>
  </layer>
- <objectgroup name="Mapevents" width="25" height="25">
-  <object name="north" type="mapchange" x="96" y="0" width="96" height="32">
+ <objectgroup name="Mapevents" width="22" height="24">
+  <object name="north" type="mapchange" x="64" y="0" width="96" height="32">
    <properties>
     <property name="map" value="soulpartdungeon2"/>
     <property name="place" value="south"/>
    </properties>
   </object>
-  <object name="down" type="mapchange" x="224" y="480" width="64" height="32">
+  <object name="down" type="mapchange" x="192" y="480" width="64" height="32">
    <properties>
     <property name="map" value="soulpartdungeon4"/>
     <property name="place" value="up"/>
    </properties>
   </object>
  </objectgroup>
- <objectgroup name="Spawn" width="25" height="25">
-  <object name="goblin3" type="spawn" x="128" y="64" width="32" height="32"/>
-  <object name="goblin4" type="spawn" x="64" y="96" width="416" height="256">
+ <objectgroup name="Spawn" width="22" height="24">
+  <object name="goblin3" type="spawn" x="96" y="64" width="32" height="32"/>
+  <object name="goblin4" type="spawn" x="32" y="96" width="416" height="256">
    <properties>
     <property name="quantity" value="2"/>
    </properties>
   </object>
-  <object name="goblin3" type="spawn" x="32" y="96" width="448" height="256">
+  <object name="goblin3" type="spawn" x="0" y="96" width="448" height="256">
    <properties>
     <property name="quantity" value="3"/>
    </properties>
   </object>
-  <object name="goblin4" type="spawn" x="480" y="384" width="64" height="32"/>
-  <object name="goblin3" type="spawn" x="192" y="544" width="352" height="192">
+  <object name="goblin4" type="spawn" x="448" y="384" width="64" height="32"/>
+  <object name="goblin3" type="spawn" x="160" y="544" width="352" height="192">
    <properties>
     <property name="quantity" value="4"/>
    </properties>
   </object>
-  <object name="goblin4" type="spawn" x="512" y="288" width="160" height="320">
+  <object name="goblin4" type="spawn" x="480" y="288" width="160" height="320">
    <properties>
     <property name="quantity" value="4"/>
    </properties>
   </object>
-  <object name="goblin4" type="spawn" x="160" y="544" width="384" height="192">
+  <object name="goblin4" type="spawn" x="128" y="544" width="384" height="192">
    <properties>
     <property name="quantity" value="3"/>
    </properties>
   </object>
-  <object name="goblin3" type="spawn" x="512" y="288" width="160" height="320">
+  <object name="goblin3" type="spawn" x="480" y="288" width="160" height="320">
    <properties>
     <property name="quantity" value="2"/>
    </properties>
   </object>
-  <object name="goblin3" type="spawn" x="256" y="352" width="32" height="32"/>
-  <object name="goblin3" type="spawn" x="224" y="416" width="64" height="32">
+  <object name="goblin3" type="spawn" x="224" y="352" width="32" height="32"/>
+  <object name="goblin3" type="spawn" x="192" y="416" width="64" height="32">
    <properties>
     <property name="quantity" value="2"/>
    </properties>
   </object>
  </objectgroup>
- <objectgroup name="Keys" width="25" height="25"/>
+ <objectgroup name="Keys" width="22" height="24"/>
 </map>

@@ -177,6 +177,9 @@
  <tileset firstgid="7321" name="map_window_2" tilewidth="32" tileheight="32">
   <image source="../drawable/map_window_2.png" width="512" height="256"/>
  </tileset>
+ <tileset firstgid="7449" name="map_transition_5" tilewidth="32" tileheight="32">
+  <image source="../drawable/map_transition_5.png" width="512" height="256"/>
+ </tileset>
  <layer name="Ground" width="20" height="24">
   <data encoding="base64" compression="zlib">
    eJydlUFygzAMRT3eMQkHaHuUXi9n4AoBtqwoHKAzpVl3xT3abmoN/sOPkA3N4g+MsV4kfdmpvXP1Ab2RjuzPaQiagi7x2T/ARS7C+gz6CGroHdyjjClK4t8L566RJ++iOXKvOzWBMUchPiWL1yhGVyzaY+V4YLA4Dr3SPMub4QBPejVSP1u/rrPnqFXiv8/O/QT9nu16b5TfaHgzqVqLcnmeypVXJTy5GetzrBe8p8B5Dnop72scjdiUXzUxre/ym5LLV7Go3/GfPc7NBXiScxuZr0YM+5zjQPCCc8SMaB4ze7/laC+6uA9n3JptnrfGb1miQe3DTOr7YVD51QaP47Uq4wxb5+FC622Cpc8d5lr3CXMP7qB48AX7rDvBmkHmalZH+7h/qbuAuVZu0rfKb72t/fotN9vM+89/SJXhp/J5hJ/b8wfXBWTE
@@ -184,22 +187,22 @@
  </layer>
  <layer name="Objects" width="20" height="24">
   <data encoding="base64" compression="zlib">
-   eJzFlDtLA0EQgNcDi1jl7nBDrvAnWFpqpXYaC2vF9Aqm8FEoJIqPPkR/gAH9GbkiaUWIooWXQjGxsgmmc4adZSebXB4oODDssjv77czs7AjxP1Jw1Hjq/A2vyDiznhCrY3K3mX3Zmt+AbozAy4LNpFTzI8ecb3i9tte+4g6SHOxPS8V4dIWowfwdtCmNTQvYi8C6Bb3z41nICIFRd80a8tqgHcYLYb4EnKshvj25vWs12bvGZQu4WdBMDDvwu0fN+/JMrl7Z2V3K4SZoGnSH5VyLR6xnFmeJ9iMaMad4Pg+2BdAT4h7TfsjiChhPSwLsiimlmLdPqdj8ne4hhgn2PujDtzSKvuGdEcWiz2hbfP+W9fau9d5rfnd9ZJJCzCdNnMjT7Jxncox/p9TnTUJWHxgXsg7gjkPf+Fa1YuQ18DCkHlAugHWJ+U4prdJdLzBW+tRYnPD/vwJ+7gFz3zf+tSnPKJiD8oD6rlj/YQF4Z8A6t/5Fg+oSWcUYXtPKge57H1IpSpnVIV+3Be10DfDeETiGi5KgOsA6xH+q+8+M5WPeU7WrmZHTzZ2ieZryqHvHMvUiu0eE9I/qtI/3rsPZOfInYHlH3psXnzdbsAY7FAf2J7tvVeXorH6C9Z+g//QbzrjyAy/8hf8=
+   eJzFlDtLA0EQgNcDi1jl7nBDrvAnWFpqpaXGQiwV0yuYwkehkCg++hD9AQb0Z+SKpJVAFC1MGjGxsgmmc4adZec2uTxQcGDYZXf225nZ2RHif6TgqPHc+RtekXHmPSHWJuTuMvuyNb8D3RqDlwWbaanmJ4453/L6bW99xR0mOdiflYrx5ApRg/k7aFsamw6wl4F1D/rgx7OQEQKj4Zo15HVBe4wXwnwFODcjfHt2+9dqsn+Nyw5ws6CZGHbgR0fN+/JMrt7Y2X3K4TZoGnSP5VyLR6wXFmeJ9ps0Yk7xfB5sC6BnxD2l/ZDFFTCelgTYFVNKMW+fUrH5Oz1CDFPsfdCHb2kUfcM7mxSLPqNt8f071tu71nuv+9H6yCSFWEyaOJGn2TnP5Bj/TmnAm4SsPjAuZB3BHce+8a1qxchroD6iHlCugHWN+U4prdJdrzBWBtRYnPD/vwp+HgDz0Df+dSnPKJiD8pD6rlj/YQl4F8C6tP5Fi+oSWcUYXtvKge57H1IpSpnVIV+3Be10DfDeETiGi5KgOsA6xH+q+8+c5WPeU7WrmU0nyp2heZryqHvHJvUiu0eE9I8atI/3bsDZBfInYHlHHtZLXN5swRrsURzYn+y+VZXjswYJ1n+C/tNvOJPKDzBshfs=
   </data>
  </layer>
  <layer name="Objects_replace" width="20" height="24">
   <data encoding="base64" compression="zlib">
-   eJxjYBgFo4C2wEyYOHUXhRgYLglBaHzAjUjzQOASAbNIBYTcNgpGwSigH3gIzI8vh3CeBACvnwcC
+   eJxjYBgFo4C2wEyYOHUXhRgYLglBaHzAjUjzQOASAbNIBYTcNgpGwXAH7oID7QIEeAjMjy+HcJ4EACG9B1o=
   </data>
  </layer>
  <layer name="Above" width="20" height="24">
   <data encoding="base64" compression="zlib">
-   eJxjYBj64LIYdjYp4DCSvkti2MWJMSOYCdMMEFgOFF/JhGreLGHcZoH8gW4GIfMIuQ0duGCxv5WJePO4oPphdAgW80D+gMUJjE4RxlQD8ysTnjCB2QtTC2IXA9WXQPWwMyHEYYALybxmLH4jJq6nExEm2NIdvvgDAUc8fgW5Zak4YXsJuSETaEeWMMQtU8Xxq0UH2Pw9DWhGmTjCrKVoYT4VSc9UbPqZEOaC6BagOa1QszKQwoNQ2MHALqAZu5HsQfcXLM6JLRfuAdUvQzIPV34gxn0gOw9BMTpoxeNmXABb+sSml5IyAZu/sIktxRIu+PIJNvWkAGLy4FAEAPeEQWc=
+   eJxjYBj64LIYdjYp4DCSvkti2MWJMSOYCdMMEFgOFF/JhGreLGHcZoH8gW4GIfMIuQ0duGCxv5WJePO4oPphdAgW80D+gMUJjE4RxlQD8ysTnjCB2QtTC2IXA9WXQPWwMyHEYYALybxmLH4jJq6nExEm2NIdvvgDAUc8fgW5Zak4YXsJuSETaEeWMMQtU8Xxq0UH2Pw9DWhGmTjCrKVoYT4VSc9UbPqZEOaC6BagOa1QszKQwgM9LnC5dxfQjN1MuNU1Y0kTIIArbu4B1S9DMg9XfiAUtzC3eMlCMDpoxeNmXABb+sSml5IyAZu/sIktxRIu+PIJNvWkAGLy4FAEAKW7Qjc=
   </data>
  </layer>
  <layer name="Walkable" width="20" height="24">
   <data encoding="base64" compression="zlib">
-   eJzbKMbAsHEU0xQjA3L0opuBDZDqDnz6iTGPXDcQ8icpbiDGfehsYuymlnmEzCUl/EhVR600SYp5pMbLUFZHTrqhRpyQE7+41BOjhlS1uAAl4UJMOJFr1kBjAIvXK1c=
+   eJzbKMbAsHEU0xQjA3L0opuBDZDqDnz6iTGPXDcQ8icpbiDGfehsYuymlnmEzCUl/EhVR600SYp5pMbLUFZHTrqhRpyQE7+41BOjhlS1uAC56YXYcKLEvIHEAFXsLB4=
   </data>
  </layer>
  <layer name="Walkable_replace" width="20" height="24">
@@ -220,11 +223,17 @@
     <property name="place" value="down"/>
    </properties>
   </object>
-  <object name="sign_lodar_shortcut_1" type="sign" x="224" y="160" width="32" height="64"/>
   <object name="sign_lodar_shortcut_2" type="sign" x="352" y="672" width="32" height="32"/>
   <object name="sign_lodar_shortcut_2" type="sign" x="416" y="192" width="32" height="32"/>
+  <object name="sign_lodar_shortcut_3" type="sign" x="416" y="288" width="32" height="32"/>
+  <object name="sign_lodar_shortcut_3" type="sign" x="448" y="640" width="32" height="32"/>
+  <object name="sign_lodar_shortcut_5" type="script" x="512" y="544" width="32" height="96">
+   <properties>
+    <property name="when" value="enter"/>
+   </properties>
+  </object>
  </objectgroup>
- <objectgroup name="Spawn" width="20" height="24">
+ <objectgroup name="Spawn" width="20" height="24" visible="0">
   <object name="mudfiend" type="spawn" x="128" y="384" width="64" height="192">
    <properties>
     <property name="quantity" value="2"/>
@@ -244,32 +253,50 @@
   <object name="mudfiend" type="spawn" x="192" y="64" width="96" height="64"/>
  </objectgroup>
  <objectgroup name="Keys" width="20" height="24">
-  <object name="lodar2:35" type="key" x="96" y="192" width="96" height="32">
+  <object name="lodar2:50" type="key" x="64" y="224" width="160" height="160">
    <properties>
     <property name="phrase" value="sign_shortcut_lodar_1"/>
     <property name="requireId" value="lodar2"/>
     <property name="requireType" value="questProgress"/>
-    <property name="requireValue" value="35"/>
+    <property name="requireValue" value="50"/>
    </properties>
   </object>
  </objectgroup>
  <objectgroup name="Replace" width="20" height="24">
-  <object name="lodar2:35" type="replace" x="96" y="224" width="96" height="128">
+  <object name="lodar2:50" type="replace" x="96" y="224" width="96" height="128">
    <properties>
     <property name="Above" value="Objects_replace"/>
     <property name="Objects" value="Objects_replace"/>
    </properties>
   </object>
-  <object name="lodar2:35" type="replace" x="384" y="672" width="64" height="32">
+  <object name="lodar2:50" type="replace" x="384" y="672" width="64" height="32">
    <properties>
     <property name="Objects" value="Objects_replace"/>
     <property name="Walkable" value="Walkable_replace"/>
    </properties>
   </object>
-  <object name="lodar2:35" type="replace" x="416" y="224" width="32" height="64">
+  <object name="lodar2:50" type="replace" x="416" y="224" width="32" height="64">
    <properties>
     <property name="Objects" value="Objects_replace"/>
     <property name="Walkable" value="Walkable_replace"/>
+   </properties>
+  </object>
+  <object name="shortcut_lodar:40" type="replace" x="544" y="608" width="32" height="32">
+   <properties>
+    <property name="Objects" value="Objects_replace"/>
+   </properties>
+  </object>
+  <object name="sign_lodar_shortcut_4a" type="script" x="480" y="544" width="32" height="96">
+   <properties>
+    <property name="when" value="enter"/>
+   </properties>
+  </object>
+  <object name="shortcut_lodar:40" type="key" x="480" y="544" width="32" height="96">
+   <properties>
+    <property name="phrase" value="sign_lodar_shortcut_4b"/>
+    <property name="requireId" value="shortcut_lodar"/>
+    <property name="requireType" value="questProgress"/>
+    <property name="requireValue" value="40"/>
    </properties>
   </object>
  </objectgroup>

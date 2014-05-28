@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" orientation="orthogonal" width="8" height="8" tilewidth="32" tileheight="32">
+<map version="1.0" orientation="orthogonal" width="7" height="8" tilewidth="32" tileheight="32">
  <tileset firstgid="1" name="map_bed_1" tilewidth="32" tileheight="32">
   <image source="../drawable/map_bed_1.png" width="512" height="256"/>
  </tileset>
@@ -120,27 +120,27 @@
  <tileset firstgid="4917" name="map_window_2" tilewidth="32" tileheight="32">
   <image source="../drawable/map_window_2.png" width="512" height="256"/>
  </tileset>
- <layer name="Ground" width="8" height="8">
+ <layer name="Ground" width="7" height="8">
   <data encoding="base64" compression="zlib">
-   eJw7L8jAcJ4APgrEx7BgmPwVIL6KBcPkXTkZGNyQ8FIgXsaJkA8FssPQcDhU3hWPPFgOiFOB7DQkDJJP54TIMbFDMEgMxkbGAP94JBk=
+   eJw7L8jAcB4PPgrEx9AwTO4qFgyT8+VkYPBDwv6cCLlYIHsSBwPDZCCeAsTxUDlXqNwioNhiIF4ClQOJhwJxLpC9CSi2GYi3AHE+J0SciR2C4zgRbBgGAEXbIiY=
   </data>
  </layer>
- <layer name="Objects" width="8" height="8">
+ <layer name="Objects" width="7" height="8">
   <data encoding="base64" compression="zlib">
-   eJxjYMAOZFkR7F5GBoa9QhD2TChbF0k+l4WB4SxU3gPKtkWSr2WB0ElAOoIFh4VI4DAjKl+DBWJvNjOEfxlN/htUfBqU3spM2A4YAACrAgwx
+   eJxjYEAAWVYGrGCvEAODLiuE/s2FEE9lYWA4CxSzZYXQ35HkSlkQ7N3MDAzG2I0GA2csYg4CmGLezKj8r8yYatABAEMTCaU=
   </data>
  </layer>
- <layer name="Above" width="8" height="8">
+ <layer name="Above" width="7" height="8">
   <data encoding="base64" compression="zlib">
-   eJxjYCAMwgWIkw9iwS2fimRGqgCmPKn2qxOQN8dvJBwAACgOBAk=
+   eJxjYMAPwgXIl0vFIU+JmaQCAGNXAuA=
   </data>
  </layer>
- <layer name="Walkable" width="8" height="8">
+ <layer name="Walkable" width="7" height="8" visible="0">
   <data encoding="base64" compression="zlib">
-   eJxzFWBgcKUDBgFkNjY+OsCmH5scujwh+5ExANwsEEY=
+   eJxzFWBgcKURhgFc4tjksQFc8tjMRRcDAL6ODZ4=
   </data>
  </layer>
- <objectgroup name="Mapevents" width="8" height="8">
+ <objectgroup name="Mapevents" width="7" height="8">
   <object name="entrance" type="mapchange" x="64" y="224" width="32" height="32">
    <properties>
     <property name="map" value="stoutford_se"/>
@@ -148,12 +148,12 @@
    </properties>
   </object>
  </objectgroup>
- <objectgroup name="Spawn" width="8" height="8" visible="0">
-  <object name="stoutford_farmer2" type="spawn" x="64" y="96" width="128" height="96">
+ <objectgroup name="Spawn" width="7" height="8">
+  <object name="stoutford_cottager" type="spawn" x="32" y="96" width="160" height="96">
    <properties>
     <property name="respawn" value="false"/>
    </properties>
   </object>
  </objectgroup>
- <objectgroup name="Keys" width="8" height="8"/>
+ <objectgroup name="Keys" width="7" height="8"/>
 </map>

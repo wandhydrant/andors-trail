@@ -13,86 +13,85 @@
       },
       {
         "text": "Have you seen an oddly glowing helmet in this cave?",
-        "nextPhraseID": "elythara3_narael"
+        "nextPhraseID": "elythara3_narael",
+        "requires": [
+          {
+            "requireType": "questProgress",
+            "requireID": "elythara3",
+            "value": 50
+          }
+        ]
+      },
+      {
+        "requires": [
+          {
+            "requireType": "questProgress",
+            "requireID": "elythara3",
+            "value": 52
+          }
+        ],
+        "text": "Hello again. I've brought your ring to your wife. She is so sad about your destiny. Additionally she gave me some of your favorite bread and her ring.",
+        "nextPhraseID": "narael_10"
       }
     ]
   },
   {
-    "id": "elythara_mara",
-    "message": "Yes, I do have a task for you.",
+    "id": "elythara_edwin_0",
     "replies": [
       {
-        "text": "Yes, what do you need help for?",
-        "nextPhraseID": "elythara_mara_1"
+        "nextPhraseID": "elythara_edwin"
       },
       {
-        "text": "I brought his bread to Edwin.",
-        "nextPhraseID": "elythara_mara_5",
         "requires": [
           {
             "requireType": "questProgress",
+            "requireID": "bucus",
+            "value": 100
+          },
+          {
+            "requireType": "questProgress",
+            "requireID": "jan",
+            "value": 100
+          },
+          {
+            "requireType": "questProgress",
+            "requireID": "odair",
+            "value": 100
+          }
+        ],
+        "nextPhraseID": "elythara_edwin_20"
+      },
+      {
+        "requires": [
+          {
+            "requireType": "questProgress",
+            "negate": true,
             "requireID": "elythara1",
-            "value": 20
+            "value": 100
+          }
+        ],
+        "nextPhraseID": "elythara_edwin_27"
+      },
+      {
+        "nextPhraseID": "elythara_edwin_30",
+        "requires": [
+          {
+            "requireType": "questProgress",
+            "requireID": "elythara3",
+            "value": 80
           }
         ]
       }
     ]
   },
   {
-    "id": "elythara_mara_1",
-    "message": "A hermit moved in the house south of our village. He pays me to bring him some bread every two days but I can't go this time as I have to watch over those drunkards. Could you do it for me?",
-    "rewards": [
-      {
-        "rewardType": "dropList",
-        "rewardID": "elythara1_bread"
-      },
-      {
-        "rewardID": "elythara1",
-        "value": 10,
-        "rewardType": "questProgress"
-      }
-    ],
-    "replies": [
-      {
-        "text": "Okay, I'm going to bring him his bread.",
-        "nextPhraseID": "elythara_mara_4"
-      },
-      {
-        "text": "Will I be paid?",
-        "nextPhraseID": "elythara_mara_2"
-      },
-      {
-        "text": "I'm on a hurry right now, I'll come back later.",
-        "nextPhraseID": "elythara_mara_3"
-      }
-    ]
-  },
-  {
-    "id": "elythara_mara_2",
-    "message": "I'll pay you five gold pieces for the run when you come back.",
-    "replies": [
-      {
-        "text": "Sounds honest.",
-        "nextPhraseID": "elythara_mara_4"
-      },
-      {
-        "text": "Five gold is not enough. Maybe another day.",
-        "nextPhraseID": "elythara_mara_3"
-      }
-    ]
-  },
-  {
-    "id": "elythara_mara_3",
-    "message": "Okay, goodbye."
-  },
-  {
-    "id": "elythara_mara_4",
-    "message": "Thank you, come back when you brought him the bread. I'll pay you five gold pieces for the run."
-  },
-  {
     "id": "elythara_edwin",
     "message": "Welcome, what are you doing in my humble house?",
     "replies": [
+      {
+        "text": "Oh just strolling around.",
+        "nextPhraseID": "elythara_edwin_16"
+      },
       {
         "text": "I came to bring you some bread from Mara.",
         "nextPhraseID": "elythara_edwin_1",
@@ -108,93 +107,6 @@
             "value": 1
           }
         ]
-      },
-      {
-        "text": "I helped your friend Arcir. I had to find a book called \"Elythara's Chants\".",
-        "nextPhraseID": "elythara_edwin_12",
-        "requires": [
-          {
-            "requireType": "questProgress",
-            "requireID": "elythara2",
-            "value": 50
-          }
-        ]
-      },
-      {
-        "requires": [
-          {
-            "requireType": "questProgress",
-            "requireID": "elythara3",
-            "value": 20
-          }
-        ],
-        "text": "Edwin, now tell me what the hell is going on. There's no ring, there's no thief. I've been tested.",
-        "nextPhraseID": "elythara_edwin_19"
-      },
-      {
-        "requires": [
-          {
-            "requireType": "questProgress",
-            "requireID": "elythara3",
-            "value": 40
-          }
-        ],
-        "text": "I spoke with Elythara.",
-        "nextPhraseID": "elythara_edwin_23"
-      },
-      {
-        "requires": [
-          {
-            "requireType": "inventoryRemove",
-            "requireID": "elythara_sword",
-            "value": 1
-          }
-        ],
-        "text": "I found the Longsword! It was hidden in Luthor's tumb.",
-        "nextPhraseID": "elythara_edwin_26"
-      },
-      {
-        "requires": [
-          {
-            "requireType": "inventoryRemove",
-            "requireID": "elythara_helmet",
-            "value": 1
-          }
-        ],
-        "text": "I found the Helmet, an old man found it in a sanctuary under Flagstone.",
-        "nextPhraseID": "elythara_edwin_28"
-      },
-      {
-        "requires": [
-          {
-            "requireType": "inventoryRemove",
-            "requireID": "elythara_shield",
-            "value": 1
-          }
-        ],
-        "text": "I found the Shield! A priest of the Shadow told me about this sanctuary east of the Foaming Flask.",
-        "nextPhraseID": "elythara_edwin_29"
-      },
-      {
-        "requires": [
-          {
-            "requireType": "questProgress",
-            "requireID": "soulpart",
-            "value": 1
-          },
-          {
-            "requireType": "questProgress",
-            "requireID": "soulpart",
-            "value": 2
-          },
-          {
-            "requireType": "questProgress",
-            "requireID": "soulpart",
-            "value": 3
-          }
-        ],
-        "nextPhraseID": "elythara_edwin_32",
-        "text": "All the soulparts are yours now. What are we to do now?"
       },
       {
         "requires": [
@@ -214,7 +126,7 @@
     "message": "Very well peasant. Now please leave. *I hate the stink of those lower-minded*",
     "replies": [
       {
-        "text": "Goodbye.",
+        "text": "Hey what about being grateful for bringing you your bread?",
         "nextPhraseID": "elythara_edwin_2"
       },
       {
@@ -232,7 +144,7 @@
   },
   {
     "id": "elythara_edwin_2",
-    "message": "Yeah yeah, good bye. *finally*"
+    "message": "Wwhat?! Being grateful? A peasant like you has never  talked to me like that! Leave or I'll show you my great power!"
   },
   {
     "id": "elythara_edwin_3",
@@ -244,8 +156,13 @@
         "requires": [
           {
             "requireType": "questProgress",
-            "requireID": "andor",
-            "value": 30
+            "requireID": "odair",
+            "value": 100
+          },
+          {
+            "requireType": "questProgress",
+            "requireID": "leta",
+            "value": 100
           }
         ]
       },
@@ -278,7 +195,6 @@
     "message": "Peasant, if you were a true adventurer you'd know that White Dragons don't exist. Now go back to your farm.",
     "replies": [
       {
-        "text": "X",
         "nextPhraseID": "X"
       }
     ]
@@ -290,10 +206,6 @@
       {
         "text": "An adventurer lives for quests. What do I have to do ? Save a young lady, kill a dragon?",
         "nextPhraseID": "elythara_edwin_9"
-      },
-      {
-        "text": "I'm not going to help you, you're a horrible man.",
-        "nextPhraseID": "elythara_edwin_8"
       }
     ]
   },
@@ -309,7 +221,7 @@
   },
   {
     "id": "elythara_edwin_9",
-    "message": "No, just help my friend Arcir who lives in Fallhaven. I heard he had some problems recently.",
+    "message": "You just have to help my friend Arcir who lives in Fallhaven. I heard he had some problems recently.",
     "rewards": [
       {
         "rewardID": "elythara2",
@@ -336,7 +248,7 @@
   },
   {
     "id": "elythara_edwin_11",
-    "message": "So leave now peasant, I wonít give you a coin to feed your family."
+    "message": "So leave now peasant, I won't give you a coin to feed your family."
   },
   {
     "id": "elythara_arcir",
@@ -888,7 +800,12 @@
         "rewardType": "questProgress"
       }
     ],
-    "message": "Thank you Sir."
+    "message": "Thank you Sir.",
+    "replies": [
+      {
+        "nextPhraseID": "X"
+      }
+    ]
   },
   {
     "id": "elythara_mara_5",
@@ -918,6 +835,11 @@
             "requireType": "inventoryKeep",
             "requireID": "naraelring1",
             "value": 1
+          },
+          {
+            "requireType": "questProgress",
+            "requireID": "elythara3",
+            "value": 51
           }
         ],
         "text": "I come on the behalf of your husband. He is dying and asked me to bring you this ring and tell you he loves you and your daughter.",
@@ -1028,7 +950,12 @@
   },
   {
     "id": "elythara_edwin_35",
-    "message": "And I for your safety and prosperity."
+    "message": "And I for your safety and prosperity.",
+    "replies": [
+      {
+        "nextPhraseID": "X"
+      }
+    ]
   },
   {
     "id": "elythara_Arcir_4",
@@ -1314,5 +1241,188 @@
       }
     ],
     "message": "You monster! I guess you need this helmet for your demonic rituals! Don't speak to me ever again. Leave now."
+  },
+  {
+    "id": "elythara_bandit_guard",
+    "replies": [
+      {
+        "requires": [
+          {
+            "requireType": "questProgress",
+            "requireID": "elythara2",
+            "value": 30
+          }
+        ],
+        "nextPhraseID": "elythara_bandit_guard_1",
+        "text": "I'm looking for a valuable book, Elythara's chants. I know you bandits stole it!"
+      },
+      {
+        "text": "Um, just strolling around. *Player slowly goes back.*",
+        "nextPhraseID": "X"
+      }
+    ],
+    "message": "What are you doing here?! Get lost kid!"
+  },
+  {
+    "id": "elythara_bandit_guard_1",
+    "message": "Then you're going to die, kid! You will never get this book!",
+    "replies": [
+      {
+        "nextPhraseID": "F"
+      }
+    ]
+  },
+  {
+    "id": "edwin_key",
+    "message": "Edwin shouts: Go away there: What's down here is none of your business!"
+  },
+  {
+    "id": "snakecave_key",
+    "message": "A powerful magical force like you have never encountered before pushes you back when you try passing the cave entrance."
+  },
+  {
+    "id": "elythara_edwin_12"
+  },
+  {
+    "id": "elythara_edwin_16",
+    "replies": [
+      {
+        "nextPhraseID": "X"
+      }
+    ],
+    "message": "Very well peasant. Leave now and don't disturb me during my experiments!"
+  },
+  {
+    "id": "elythara_edwin_20",
+    "replies": [
+      {
+        "text": "What kind of task is this?",
+        "nextPhraseID": "elythara_edwin_9"
+      }
+    ],
+    "message": "Welcome! You look like an adventurer to me. Maybe you could be helpful. Do you want to do a small task for me?"
+  },
+  {
+    "id": "elythara_edwin_27",
+    "message": "Hello again adventurer! Have you advanced with your task?",
+    "replies": [
+      {
+        "text": "No sorry. No news so far.",
+        "nextPhraseID": "X"
+      },
+      {
+        "text": "I helped your friend Arcir. I had to find a book called \"Elythara's Chants\".",
+        "requires": [
+          {
+            "requireType": "questProgress",
+            "requireID": "elythara2",
+            "value": 50
+          }
+        ],
+        "nextPhraseID": "elythara_edwin_12"
+      },
+      {
+        "requires": [
+          {
+            "requireType": "questProgress",
+            "requireID": "elythara3",
+            "value": 20
+          }
+        ],
+        "text": "Edwin, now tell me what the hell is going on. There's no ring, there's no thief. I've been tested.",
+        "nextPhraseID": "elythara_edwin_19"
+      },
+      {
+        "requires": [
+          {
+            "requireType": "questProgress",
+            "requireID": "elythara3",
+            "value": 40
+          }
+        ],
+        "text": "I spoke with Elythara.",
+        "nextPhraseID": "elythara_edwin_23"
+      },
+      {
+        "requires": [
+          {
+            "requireType": "inventoryRemove",
+            "requireID": "elythara_sword",
+            "value": 1
+          }
+        ],
+        "text": "I found the Longsword! It was hidden in Luthor's tomb.",
+        "nextPhraseID": "elythara_edwin_26"
+      },
+      {
+        "requires": [
+          {
+            "requireType": "inventoryRemove",
+            "requireID": "elythara_helmet",
+            "value": 1
+          }
+        ],
+        "text": "I found the Helmet, an old man found it in a sanctuary under Flagstone.",
+        "nextPhraseID": "elythara_edwin_28"
+      },
+      {
+        "requires": [
+          {
+            "requireType": "inventoryRemove",
+            "requireID": "elythara_shield",
+            "value": 1
+          }
+        ],
+        "text": "I found the Shield! A priest of the Shadow told me about this sanctuary east of the Foaming Flask.",
+        "nextPhraseID": "elythara_edwin_29"
+      },
+      {
+        "requires": [
+          {
+            "requireType": "questProgress",
+            "requireID": "soulpart",
+            "value": 1
+          },
+          {
+            "requireType": "questProgress",
+            "requireID": "soulpart",
+            "value": 2
+          },
+          {
+            "requireType": "questProgress",
+            "requireID": "soulpart",
+            "value": 3
+          }
+        ],
+        "text": "All the soulparts are yours now. What are we to do now?",
+        "nextPhraseID": "elythara_edwin_32"
+      }
+    ]
+  },
+  {
+    "id": "elythara_edwin_30",
+    "replies": [
+      {
+        "text": "And with you as well! Anything new?",
+        "nextPhraseID": "elythara_edwin_34"
+      }
+    ],
+    "message": "Greetings, my friend! May the light be forever be with you!"
+  },
+  {
+    "id": "narael_10",
+    "rewards": [
+      {
+        "rewardType": "dropList",
+        "rewardID": "elythara_helmet"
+      }
+    ],
+    "replies": [
+      {
+        "text": "I'm so sorry old man. *You see Narael getting weaker and weaker until he closes his eyes and does his last breath.*",
+        "nextPhraseID": "X"
+      }
+    ],
+    "message": "Oh thanks you so much! Now I can die in peace! Here's the helmet. And shadow be with you!"
   }
 ]

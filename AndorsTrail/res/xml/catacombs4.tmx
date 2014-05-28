@@ -137,7 +137,12 @@
  </layer>
  <layer name="Walkable" width="20" height="15">
   <data encoding="base64" compression="zlib">
-   eJxzFWBgcKUAgwAl+gfSPBgg1l5k9fjsQgfYxAjZi00vunpc8tjMxGY3LvPwqcflF1IBueYR4z50eXLdjC/uqWUeuYBQGqWGWfj8Ts38SooZANu9NnU=
+   eJxzFWBgcB1EGAToZR4MEGsvsnp8dqEDbGKE7MWmF109LnlsZmKzG5d5+NTj8gupgFzziHEfujy5bsYX99Qyj1xAKI1Swyx8fqdmfiXFDABU+zbK
+  </data>
+ </layer>
+ <layer name="Walkable_replace" width="20" height="15">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFo2AUjIKhAQAEsAAB
   </data>
  </layer>
  <objectgroup name="Mapevents" width="20" height="15">
@@ -155,6 +160,11 @@
    </properties>
   </object>
   <object name="sign_catacombs4_grave2" type="sign" x="320" y="128" width="32" height="32"/>
+  <object name="catacombs_trigger" type="script" x="512" y="32" width="32" height="32">
+   <properties>
+    <property name="when" value="enter"/>
+   </properties>
+  </object>
  </objectgroup>
  <objectgroup name="Spawn" width="20" height="15">
   <object name="catacombguard3" type="spawn" x="96" y="256" width="480" height="160">
@@ -164,13 +174,11 @@
   </object>
   <object name="Luthor" type="spawn" x="288" y="224" width="32" height="32"/>
  </objectgroup>
- <objectgroup name="Keys" width="20" height="15">
-  <object name="elythara3:60" type="key" x="512" y="64" width="32" height="32">
+ <objectgroup name="Keys" width="20" height="15"/>
+ <objectgroup name="Replace" width="20" height="15">
+  <object name="elythara3:60" type="replace" x="512" y="0" width="32" height="32">
    <properties>
-    <property name="phrase" value="elythara_keyarea"/>
-    <property name="requireType" value="questProgress"/>
-    <property name="requireId" value="elythara3"/>
-    <property name="requireValue" value="60"/>
+    <property name="Walkable" value="Walkable_replace"/>
    </properties>
   </object>
  </objectgroup>

@@ -132,6 +132,11 @@
  </layer>
  <layer name="Above" width="15" height="30">
   <data encoding="base64" compression="zlib">
+   eJxjYICAdAEGrACXOLJ8Gg41MPEqVuzy4QTMBoFKCvTiArJM5OulBsAXpoTkcIU1COALE0LhhUuekJ345PHZORj9gk8vPjPJ0YvuFmLU4FKLTS+xbiFWLza3EKuXGDFi/YpNjJSwQ8/7xNqJbC4+OVqlaXxlFiVl4VAuR6kJANiiHSw=
+  </data>
+ </layer>
+ <layer name="Above_replace" width="15" height="30">
+  <data encoding="base64" compression="zlib">
    eJxjYICAdAEGrACXOLJ8Gg41uMRhIJyAPK30yjKRr5caAF+YEpLDF6b4woRQeOGSJ2QnPnl8dg5Gv+DTi89McvSiu4UYNbjUYtNLrFuI1YvNLcTqJUaMWL9iEyMl7NDzPrF2IpuLT45WaRpfmTVSy1FqAgBlxhwv
   </data>
  </layer>
@@ -191,10 +196,17 @@
  <objectgroup name="Keys" width="15" height="30">
   <object name="elythara3:10" type="key" x="320" y="64" width="32" height="32">
    <properties>
-    <property name="phrase" value="elythara_keyarea"/>
-    <property name="requireType" value="questProgress"/>
+    <property name="phrase" value="snakecave_key"/>
     <property name="requireId" value="elythara3"/>
+    <property name="requireType" value="questProgress"/>
     <property name="requireValue" value="10"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup name="Replace" width="15" height="30" visible="0">
+  <object name="elythara3:10" type="replace" x="320" y="32" width="32" height="64">
+   <properties>
+    <property name="Above" value="Above_replace"/>
    </properties>
   </object>
  </objectgroup>

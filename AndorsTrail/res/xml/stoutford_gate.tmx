@@ -125,22 +125,22 @@
  </tileset>
  <layer name="Ground" width="20" height="20">
   <data encoding="base64" compression="zlib">
-   eJw7ysbAcHQUj2IS8Qki8HEkjKzXiB2BR6p5lGBC5j3nxY9JNe87L35MqnkC7LixAhY9pJqngMYnxzx0M8IEyTcPG34KVPsch3p6pxdKzAMAqmEaeg==
+   eJw7ysbAcHQUj2IS8Qki8HEkjKzXiB2BR6p5lGBC5j3nxY9JNe87L35MqnkC7LixAhY9pJqngMYnxzx0M8IEyTeP2vE7mMwDAHXPGjY=
   </data>
  </layer>
  <layer name="Objects" width="20" height="20">
   <data encoding="base64" compression="zlib">
-   eJylkztOAzEQhgexMZFYC0SUgiYdV8ghAiEoLeQBoqCBrJBoEBAqChTaSNyEI3AGtOICkJImEMQ/2NY6u84+YKRfY894P3lmPRVJNPWJttfp1158mrM75GfIfUOhr/JmH/ehlTM8tpM1old/Pp/X7wqillC8plD7/4iZNc1jX/Q+rpr7Iqq3xr1cVnG2qdXP0FqbPtsxPnsI1jnUBa9RUDuO2DFYl/BXBXWt/yHfp22JefuIn0GjFA2gj9WotgPN4+83ZSTD43wgKWEXOsZnyCPqYN+V+Xhxhm18ZsWPlMW7yejXsADvPqN3Lj2k8JplvG2oVU7OL9vjUjJmZt7F64CzB/WYKRczTNy84TReX/N6iI3wzdMG0Vh7tkZFia3k5edNMGvv4DxrjvFBCW8QekOu6qk75uHNwPuyah3r9S1YQ+gT+y1P9dnF49k9BSeABlAdsapDxnhdl4vrzTv3tux4nNcWf9ORcN/vB/GaqXY=
+   eJyllM9OAjEQxscAKwndaCQcvHDzFXgIFDFcFVCjiYl/2Gi4GBVPHgxeSXwNTz6B8Qk4KDHcRW5eVIjf2G7aXZtl0Um+zHam/WU6bTfrEn0IouV5+rEnIf1Q+SvkR8iNoZ6QeX8c9j0j5/PY9uaIXkQw73u2vjF+FjrGtuoQlR3JKzly/B91wTlRPPbhevpG3WxjEazPtue84rHPcy8TRHcJuZ57O1CMntBc7uNQBGM8dwuMY6iG+cUptWKJ7YB1Cn82pc7VGXI9FUPMW0f8CGpHqAG9Z/TeNhSP1y+6Wj6P855Lv6ypYjyHkkRVjGtuPF6YYRrPmRVak3gXE/rVisFrKt71hN7ZdBNRXymNuw2V0/r9mnY7Exw/4Fx2I3hVcNagOjNdO8NkdzP6H8Lr+b6HeZuKV0esjTX3C0Qd5dmKWSm2FM6Z3Oj6fN4b3tkAnEfF8b2Xwh2EXpHLJeU7i8Mbgfdl7LWjvi/BakGfGC8lZZ9tPH67h+B4UAMqIJazyL+j/F1QPbbx4r79fejA8j8I8yrO37Tt2Ov7BkWlqh4=
   </data>
  </layer>
  <layer name="Above" width="20" height="20">
   <data encoding="base64" compression="zlib">
-   eJx7K8DA8A6IcYG3UHliaRD4x8rA8J8VQlMKQGbysUHYIJpU92Bz3yigH/DlZWDw46WeeakjLA5b+AirkeJF4K/APGdEQM83AvlSihdBi7IRtl+MgBpk80BAmQ8/DicQx+jmYQOBrBAMAtQwDxmkYTHvNzf55mED3Dzk68UHqF1uAgAkNDp7
+   eJx7K8DA8A6IcYG3UPm3SOouoPFhYrQAx4Dm/mNlYPjPCqHR3YPNXmT3YXM/HxsqDQLBzJhmDCVAbfc+oJJ5vrwMDH681DELBFKR0iA1AbX8OxBAiheBv7ISVv+NgBopXgQtyoZfLQiIEVCDbB4IKPPhx+EE4gLdPGwgkBWCQYAa5iGDNCzm/eYm3zxsgJuHfL34AK5ykRCNCwAAS4019Q==
   </data>
  </layer>
  <layer name="Walkable" width="20" height="20">
   <data encoding="base64" compression="zlib">
-   eJxzFWAgCFwFIBidj46xqcVlFqmYEr30No8SQA0z0M2jVD82v5KqF5d78MlRah613Udv83DZgctOYtM1MeYRYw6tzCMUfgNhHjb1tDSPWmUAofRCThmHDAC6Cz9s
+   eJxzFWDAC1wFyMO0MI9cvaSaR46bkdXh8jcxgFD4kQrINQtfGJFiBroedP345Cg1jxT3IfuXGuZRw3247MBlJyn5hJB5xJpDyH/k5t/BZh429bQ0j1plAKH0QmoYopsHAMAZQMA=
   </data>
  </layer>
  <objectgroup name="Mapevents" width="20" height="20">
@@ -189,7 +189,7 @@
   </object>
  </objectgroup>
  <objectgroup name="Spawn" width="20" height="20">
-  <object name="stoutford_gateguard" type="spawn" x="96" y="128" width="32" height="32">
+  <object name="stoutford_gateguard" type="spawn" x="160" y="128" width="32" height="32">
    <properties>
     <property name="respawn" value="false"/>
    </properties>

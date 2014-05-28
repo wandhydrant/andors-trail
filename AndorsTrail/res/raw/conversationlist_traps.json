@@ -1,0 +1,32 @@
+[
+  {
+    "id": "trap_burn0",
+    "rewards": [
+      {
+        "rewardType": "actorCondition",
+        "rewardID": "fire",
+        "value": 3
+      }
+    ]
+  },
+  {
+    "id": "trap_ambush0",
+    "rewards": [
+      {
+        "rewardType": "spawnAll",
+        "mapName": "soulpartdungeon4",
+        "rewardID": "sk_crdun2"
+      }
+    ]
+  },
+  {
+    "id": "trap_ambush1",
+    "rewards": [
+      {
+        "rewardType": "spawnAll",
+        "mapName": "soulpartdungeon4",
+        "rewardID": "bat_crdun2"
+      }
+    ]
+  }
+]

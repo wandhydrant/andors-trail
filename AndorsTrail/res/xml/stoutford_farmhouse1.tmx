@@ -122,25 +122,25 @@
  </tileset>
  <layer name="Ground" width="8" height="8">
   <data encoding="base64" compression="zlib">
-   eJw7L8jAcJ4APgrEx7BgmPwVIL6KBcPkXTkZGJYC8TIgXg7EbkDszgmR+87GwBAKZIeh4XBOiJyrIEKeVYCBgV0AIQ+WA+JUIDsNCYPk0zkhckzsmBgkD2MDACafJCM=
+   eJw7L8jAcJ4APgrEx7BgmPwVIL6KBcPkXTkZGJYC8TIgXg7EbkDszomQDwWyw9BwOFTeFUmeVYCBgV0AIQ+WA+JUIDsNCYPk0zkhckzsmBgkD2MDAAy1I+k=
   </data>
  </layer>
  <layer name="Objects" width="8" height="8">
   <data encoding="base64" compression="zlib">
-   eJxjYEAAWVYGrGAaIwPDXiEGBl2g/G8uBoZ2RgiGgQIWBoazQHlbqH4Q+zkzQr4BKP+VG8LmAbK/AeW+I8mDwEyoedFQ8a9I8oYM2NXCgCNUn6oAA4O6AESMjwW7X9ABAMiHDo0=
+   eJxjYCAMpjEyMOwVYmDQYmVg+M0FYbczIuQLWBgYzgLFrFghfBD7OTNCvgEo/5UbwuYBsr8B5QpZUO2YCTUvGqqvEUnekAG7WhhwhOpTFWBgUBeAiPGhmY8LAABmrQ20
   </data>
  </layer>
  <layer name="Above" width="8" height="8">
   <data encoding="base64" compression="zlib">
-   eJxjYCAMwgUol0/Fo4ZY832YGRhcuRkY0tHUpxHg4wMABfwEew==
+   eJxjYCAMwgUol0/Fo4ZY832YGRhcuRkY0gWwy8NAGgHzkAEAAngEbA==
   </data>
  </layer>
- <layer name="Walkable" width="8" height="8" visible="0">
+ <layer name="Walkable" width="8" height="8">
   <data encoding="base64" compression="zlib">
    eJxzFWBgcKUTBgFc4ugAn15satDliXUHAGODEUU=
   </data>
  </layer>
- <objectgroup name="mapevents" width="8" height="8">
+ <objectgroup name="Mapevents" width="8" height="8">
   <object name="entrance" type="mapchange" x="160" y="224" width="32" height="32">
    <properties>
     <property name="map" value="stoutford_ne"/>
@@ -148,12 +148,12 @@
    </properties>
   </object>
  </objectgroup>
- <objectgroup name="spawn" width="8" height="8">
+ <objectgroup name="Spawn" width="8" height="8">
   <object name="stoutford_farmer1" type="spawn" x="32" y="96" width="192" height="128">
    <properties>
     <property name="respawn" value="false"/>
    </properties>
   </object>
  </objectgroup>
- <objectgroup name="keys" width="8" height="8"/>
+ <objectgroup name="Keys" width="8" height="8"/>
 </map>

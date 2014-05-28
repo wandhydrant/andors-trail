@@ -122,25 +122,25 @@
  </tileset>
  <layer name="Ground" width="10" height="8">
   <data encoding="base64" compression="zlib">
-   eJw7L8jAcJ5IfBSIj+HAx5HUXQHiqzjwNSR1rpwMDG5IeCkQLwPi5UDszglR852NgSEUyA7DgcM5IWpcBQmrA6sB4lQgOw2Kw5DYIJzOCVHDxI6KQerQxUAYAMfdLPs=
+   eJw7L8jAcJ5IfBSIj+HAx5HUXQHiqzjwNSR1rpwMDG5IeCkQLwPi5UDszolQFwpkh+HA4VB1rkSoA6sB4lQgOw2Kw5DYIJzOCVHDxI6KQerQxUAYAKebLME=
   </data>
  </layer>
  <layer name="Objects" width="10" height="8">
   <data encoding="base64" compression="zlib">
-   eJxjYMAOZFkxxZZxMzDsFWJgWA+k13JDaF1WiNgKboQ6TxYGhrNAMXcg7csCEbNlhYi1siDURULZ4UA6FkkcBKai8WFgGiMqfxszgl0HdEMlENdA3cKDZIY6HnN8mRF8c+zW4gQAuK0Pdw==
+   eJxjYMAOZFkxxZZxMzDsFWJgWA+k13JDaF1WiNgKboQ6TxYGhlYgdgdibxaImC1Q3Vmgum4WhLpIIHsqEIcDcSwLql1T0fgwMI0Rwe4EsrcxI/h1QDdUAnENEKcKMDDcAPlBAMJWx2POLaA6X6g55titxQkA6UwSVw==
   </data>
  </layer>
  <layer name="Above" width="10" height="8">
   <data encoding="base64" compression="zlib">
-   eJxjYCAehAtQX10qktpUHPqINS+NG0Knc0PM+saKQx2aeWJsxJmPDQAAJOgFbA==
+   eJxjYCAehAtQX10qktpUHPqINS+NG0KncxO2l1oAAIhcA9E=
   </data>
  </layer>
- <layer name="Walkable" width="10" height="8" visible="0">
+ <layer name="Walkable" width="10" height="8">
   <data encoding="base64" compression="zlib">
-   eJxzFWBgcB1ADALIbBhAV4MLEDKXGPNwqcPlTmQMAKXzE5g=
+   eJxzFWBgcB0kGBngEkcH+MzCxsZmHrIYMeYhYwAFghRC
   </data>
  </layer>
- <objectgroup name="mapevents" width="10" height="8" visible="0">
+ <objectgroup name="Mapevents" width="10" height="8">
   <object name="entrance" type="mapchange" x="128" y="224" width="32" height="32">
    <properties>
     <property name="map" value="stoutford_sw"/>
@@ -148,12 +148,12 @@
    </properties>
   </object>
  </objectgroup>
- <objectgroup name="keys" width="10" height="8" visible="0"/>
- <objectgroup name="spawn" width="10" height="8" visible="0">
+ <objectgroup name="Spawn" width="10" height="8">
   <object name="stoutford_alchemist" type="spawn" x="32" y="96" width="128" height="64">
    <properties>
     <property name="respawn" value="false"/>
    </properties>
   </object>
  </objectgroup>
+ <objectgroup name="Keys" width="10" height="8"/>
 </map>

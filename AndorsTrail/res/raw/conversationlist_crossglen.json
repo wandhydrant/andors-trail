@@ -1,148 +1,270 @@
 [
-    {
-        "id": "audir1",
-        "message": "Welcome to my shop!\n\nPlease browse my selection of fine wares.",
-        "replies": [
-            {
-                "text": "Please show me your wares.",
-                "nextPhraseID": "S"
-            }
+  {
+    "id": "audir1",
+    "message": "Welcome to my shop!\n\nPlease browse my selection of fine wares.",
+    "replies": [
+      {
+        "text": "Please show me your wares.",
+        "nextPhraseID": "S"
+      }
+    ]
+  },
+  {
+    "id": "arambold1",
+    "message": "Oh my, will I ever get any sleep with those drunkards singing like that?\n\nSomeone should do something about them.",
+    "replies": [
+      {
+        "text": "Can I rest here?",
+        "nextPhraseID": "arambold2"
+      },
+      {
+        "text": "Do you have anything to trade?",
+        "nextPhraseID": "S"
+      }
+    ]
+  },
+  {
+    "id": "arambold2",
+    "message": "Sure kid, you may rest here.\n\nPick any bed you want.",
+    "replies": [
+      {
+        "text": "Thanks, bye",
+        "nextPhraseID": "X"
+      }
+    ]
+  },
+  {
+    "id": "drunk1",
+    "message": "Drink drink drink, drink some more.\nDrink drink drink 'til you're on the floor.\n\nHey kid, wanna join us in our drinking game?",
+    "replies": [
+      {
+        "text": "No thanks.",
+        "nextPhraseID": "X"
+      },
+      {
+        "text": "Maybe some other time.",
+        "nextPhraseID": "X"
+      }
+    ]
+  },
+  {
+    "id": "mara_default",
+    "message": "Never mind those drunken fellas, they're always causing trouble.\n\nWant something to eat?",
+    "replies": [
+      {
+        "text": "Do you have anything to trade?",
+        "nextPhraseID": "S"
+      },
+      {
+        "text": "Have you got some task or mission for me?",
+        "nextPhraseID": "elythara_mara_5"
+      },
+      {
+        "requires": [
+          {
+            "requireType": "questProgress",
+            "requireID": "elythara1",
+            "value": 20
+          }
+        ],
+        "text": "I have brought the bread to Edwin.",
+        "nextPhraseID": "elythara_mara_reward"
+      }
+    ]
+  },
+  {
+    "id": "mara1",
+    "replies": [
+      {
+        "nextPhraseID": "mara_thanks",
+        "requires": [
+          {
+            "requireType": "questProgress",
+            "requireID": "odair",
+            "value": 100
+          }
         ]
-    },
-    {
-        "id": "arambold1",
-        "message": "Oh my, will I ever get any sleep with those drunkards singing like that?\n\nSomeone should do something about them.",
-        "replies": [
-            {
-                "text": "Can I rest here?",
-                "nextPhraseID": "arambold2"
-            },
-            {
-                "text": "Do you have anything to trade?",
-                "nextPhraseID": "S"
-            }
-        ]
-    },
-    {
-        "id": "arambold2",
-        "message": "Sure kid, you may rest here.\n\nPick any bed you want.",
-        "replies": [
-            {
-                "text": "Thanks, bye",
-                "nextPhraseID": "X"
-            }
-        ]
-    },
-    {
-        "id": "drunk1",
-        "message": "Drink drink drink, drink some more.\nDrink drink drink 'til you're on the floor.\n\nHey kid, wanna join us in our drinking game?",
-        "replies": [
-            {
-                "text": "No thanks.",
-                "nextPhraseID": "X"
-            },
-            {
-                "text": "Maybe some other time.",
-                "nextPhraseID": "X"
-            }
-        ]
-    },
-    {
-        "id": "mara_default",
-        "message": "Never mind those drunken fellas, they're always causing trouble.\n\nWant something to eat?",
-        "replies": [
-            {
-                "text": "Do you have anything to trade?",
-                "nextPhraseID": "S"
-            },
-            {
-                "text": "Have you got some task or mission for me?",
-                "nextPhraseID": "elythara_mara"
-            }
-        ]
-    },
-    {
-        "id": "mara1",
-        "replies": [
-            {
-                "nextPhraseID": "mara_thanks",
-                "requires": [
-                    {
-                        "requireType": "questProgress",
-                        "requireID": "odair",
-                        "value": "100"
-                    }
-                ]
-            },
-            {
-                "nextPhraseID": "mara_default"
-            }
-        ]
-    },
-    {
-        "id": "mara_thanks",
-        "message": "I heard you helped Odair clean out that old supply cave. Thanks a lot, we'll start using it soon.",
-        "replies": [
-            {
-                "text": "It was my pleasure.",
-                "nextPhraseID": "mara_default"
-            }
-        ]
-    },
-    {
-        "id": "farm1",
-        "message": "Please do not disturb me, I have work to do.",
-        "replies": [
-            {
-                "text": "Have you seen my brother Andor?",
-                "nextPhraseID": "farm_andor"
-            }
-        ]
-    },
-    {
-        "id": "farm2",
-        "message": "What?! Can't you see I'm busy? Go bother someone else.",
-        "replies": [
-            {
-                "text": "Have you seen my brother Andor?",
-                "nextPhraseID": "farm_andor"
-            }
-        ]
-    },
-    {
-        "id": "farm_andor",
-        "message": "Andor? No, I haven't seen him around lately."
-    },
-    {
-        "id": "snakemaster",
-        "message": "Well well, what have we here? A visitor, how nice. I'm impressed you got this far through all my minions.\n\nNow prepare to die, puny creature.",
-        "replies": [
-            {
-                "text": "Great, I have been waiting for a fight!",
-                "nextPhraseID": "F"
-            },
-            {
-                "text": "Let's see who dies here.",
-                "nextPhraseID": "F"
-            },
-            {
-                "text": "Please don't hurt me!",
-                "nextPhraseID": "F"
-            }
-        ]
-    },
-    {
-        "id": "haunt",
-        "message": "Oh mortal, free me from this cursed world!",
-        "replies": [
-            {
-                "text": "Oh, I'll free you from it alright.",
-                "nextPhraseID": "F"
-            },
-            {
-                "text": "You mean, by killing you?",
-                "nextPhraseID": "F"
-            }
-        ]
-    }
+      },
+      {
+        "nextPhraseID": "mara_default"
+      }
+    ]
+  },
+  {
+    "id": "mara_thanks",
+    "message": "I heard you helped Odair clean out that old supply cave. Thanks a lot, we'll start using it soon.",
+    "replies": [
+      {
+        "text": "It was my pleasure.",
+        "nextPhraseID": "mara_default"
+      }
+    ]
+  },
+  {
+    "id": "farm1",
+    "message": "Please do not disturb me, I have work to do.",
+    "replies": [
+      {
+        "text": "Have you seen my brother Andor?",
+        "nextPhraseID": "farm_andor"
+      }
+    ]
+  },
+  {
+    "id": "farm2",
+    "message": "What?! Can't you see I'm busy? Go bother someone else.",
+    "replies": [
+      {
+        "text": "Have you seen my brother Andor?",
+        "nextPhraseID": "farm_andor"
+      }
+    ]
+  },
+  {
+    "id": "farm_andor",
+    "message": "Andor? No, I haven't seen him around lately."
+  },
+  {
+    "id": "snakemaster",
+    "message": "Well well, what have we here? A visitor, how nice. I'm impressed you got this far through all my minions.\n\nNow prepare to die, puny creature.",
+    "replies": [
+      {
+        "text": "Great, I have been waiting for a fight!",
+        "nextPhraseID": "F"
+      },
+      {
+        "text": "Let's see who dies here.",
+        "nextPhraseID": "F"
+      },
+      {
+        "text": "Please don't hurt me!",
+        "nextPhraseID": "F"
+      }
+    ]
+  },
+  {
+    "id": "haunt",
+    "message": "Oh mortal, free me from this cursed world!",
+    "replies": [
+      {
+        "text": "Oh, I'll free you from it alright.",
+        "nextPhraseID": "F"
+      },
+      {
+        "text": "You mean, by killing you?",
+        "nextPhraseID": "F"
+      }
+    ]
+  },
+  {
+    "id": "elythara_mara_1",
+    "message": "Yes I do have a task for you. A hermit moved in the house south of our village. He pays me to bring him some bread every two days but I can't go this time as I have to watch over those drunkards. Could you do it for me?",
+    "replies": [
+      {
+        "text": "Okay, I'm going to bring him his bread.",
+        "nextPhraseID": "elythara_mara_4"
+      },
+      {
+        "text": "Will I be paid?",
+        "nextPhraseID": "elythara_mara_2"
+      },
+      {
+        "text": "I'm on a hurry right now, I'll come back later.",
+        "nextPhraseID": "elythara_mara_3"
+      }
+    ]
+  },
+  {
+    "id": "elythara_mara_2",
+    "message": "I'll pay you five gold pieces for the run when you come back.",
+    "replies": [
+      {
+        "text": "Sounds honest.",
+        "nextPhraseID": "elythara_mara_4"
+      },
+      {
+        "text": "Five gold is not enough. Maybe another day.",
+        "nextPhraseID": "elythara_mara_3"
+      }
+    ]
+  },
+  {
+    "id": "elythara_mara_3",
+    "message": "Okay, goodbye."
+  },
+  {
+    "id": "elythara_mara_4",
+    "message": "Thank you, come back when you brought him the bread. I'll pay you five gold pieces for the run.",
+    "rewards": [
+      {
+        "rewardType": "dropList",
+        "rewardID": "elythara1_bread"
+      },
+      {
+        "rewardType": "questProgress",
+        "rewardID": "elythara1",
+        "value": 10
+      }
+    ]
+  },
+  {
+    "id": "elythara_mara_reward",
+    "rewards": [
+      {
+        "rewardType": "dropList",
+        "rewardID": "elythara1_money"
+      },
+      {
+        "rewardType": "questProgress",
+        "rewardID": "elythara1",
+        "value": 30
+      }
+    ],
+    "message": "Oh great! Thanks for doing this!\nHere's your gold!"
+  },
+  {
+    "id": "elythara_mara_1",
+    "message": "Yes I do have a task for you. A hermit moved in the house south of our village. He pays me to bring him some bread every two days but I can't go this time as I have to watch over those drunkards. Could you do it for me?",
+    "replies": [
+      {
+        "text": "Okay, I'm going to bring him his bread.",
+        "nextPhraseID": "elythara_mara_4"
+      },
+      {
+        "text": "Will I be paid?",
+        "nextPhraseID": "elythara_mara_2"
+      },
+      {
+        "text": "I'm on a hurry right now, I'll come back later.",
+        "nextPhraseID": "elythara_mara_3"
+      }
+    ]
+  },
+  {
+    "id": "elythara_mara_5",
+    "replies": [
+      {
+        "nextPhraseID": "elythara_mara_1"
+      },
+      {
+        "requires": [
+          {
+            "requireType": "questProgress",
+            "requireID": "elythara1",
+            "value": 10
+          }
+        ],
+        "nextPhraseID": "elythara_mara_6"
+      }
+    ]
+  },
+  {
+    "id": "elythara_mara_6",
+    "replies": [
+      {
+        "nextPhraseID": "X"
+      }
+    ],
+    "message": "I'm sorry but I've already given you the bread. Have you lost it?"
+  }
 ]
