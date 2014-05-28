@@ -57,7 +57,7 @@ public final class TileManager {
 
 
 	public final TileCache tileCache = new TileCache();
-	public final TileCollection preloadedTiles = new TileCollection(98);
+	public final TileCollection preloadedTiles = new TileCollection(100);
 	public TileCollection currentMapTiles;
 	public TileCollection adjacentMapTiles;
 	private final HashSet<Integer> preloadedTileIDs = new HashSet<Integer>();
