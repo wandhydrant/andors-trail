@@ -263,6 +263,7 @@ public final class ResourceLoader {
 		loader.prepareTileset(R.drawable.items_rings_1, "items_rings_1", new Size(10, 3), defaultTileSize);
 
 		loader.prepareTileset(R.drawable.monsters_armor1, "monsters_armor1", src_sz1x1, defaultTileSize);
+		loader.prepareTileset(R.drawable.monsters_arulirs, "monsters_arulirs", new Size(4, 1), defaultTileSize);
 		loader.prepareTileset(R.drawable.monsters_cyclops, "monsters_cyclops", src_sz1x1, dst_sz2x3);
 		loader.prepareTileset(R.drawable.monsters_demon1, "monsters_demon1", src_sz1x1, dst_sz2x2);
 		loader.prepareTileset(R.drawable.monsters_demon2, "monsters_demon2", src_sz1x1, dst_sz2x2);
@@ -373,5 +374,5 @@ public final class ResourceLoader {
 		loader.prepareTileset(R.drawable.effect_blood4, "effect_blood4", new Size(7, 2), defaultTileSize);
 		loader.prepareTileset(R.drawable.effect_heal2, "effect_heal2", new Size(8, 2), defaultTileSize);
 		loader.prepareTileset(R.drawable.effect_poison1, "effect_poison1", new Size(8, 2), defaultTileSize);
-	}
+		}
 }

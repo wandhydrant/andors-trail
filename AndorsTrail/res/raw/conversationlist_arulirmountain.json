@@ -623,5 +623,132 @@
       }
     ],
     "message": "The ground is very slippery. You stumble and fall into the water."
+  },
+  {
+    "id": "arulirmountain_bosstrap_r",
+    "replies": [
+      {
+        "requires": [
+          {
+            "requireType": "inventoryRemove",
+            "requireID": "lava_rock_hot",
+            "value": 1
+          }
+        ],
+        "nextPhraseID": "arulirmountain_bosstrap_ry"
+      },
+      {
+        "nextPhraseID": "arulirmountain_bosstrap_rn"
+      }
+    ]
+  },
+  {
+    "id": "arulirmountain_bosstrap_ry",
+    "rewards": [
+      {
+        "rewardType": "giveItem",
+        "rewardID": "lava_rock_cold",
+        "value": 1
+      }
+    ],
+    "replies": [
+      {
+        "text": "N",
+        "nextPhraseID": "arulirmountain_bosstrap_rs"
+      }
+    ]
+  },
+  {
+    "id": "arulirmountain_bosstrap_rn",
+    "rewards": [
+      {
+        "rewardType": "giveItem",
+        "rewardID": "lava_rock_hot",
+        "value": 1
+      },
+      {
+        "rewardType": "actorCondition",
+        "rewardID": "fire",
+        "value": 1
+      }
+    ],
+    "replies": [
+      {
+        "text": "That's hot!",
+        "nextPhraseID": "X"
+      }
+    ],
+    "message": "The lava is bubbling and glowing flakes scorching through your clothes."
+  },
+  {
+    "id": "arulirmountain_bosstrap_rs",
+    "replies": [
+      {
+        "requires": [
+          {
+            "requireType": "inventoryRemove",
+            "requireID": "lava_rock_hot",
+            "value": 1
+          }
+        ],
+        "nextPhraseID": "arulirmountain_bosstrap_ry"
+      },
+      {
+        "nextPhraseID": "X"
+      }
+    ]
+  },
+  {
+    "id": "arulirmountain_bosstrap",
+    "replies": [
+      {
+        "requires": [
+          {
+            "requireType": "inventoryRemove",
+            "requireID": "lava_rock_hot",
+            "value": 1
+          }
+        ],
+        "nextPhraseID": "arulirmountain_bosstrap_b"
+      },
+      {
+        "nextPhraseID": "arulirmountain_bosstrap_nr"
+      }
+    ]
+  },
+  {
+    "id": "arulirmountain_bosstrap_b",
+    "rewards": [
+      {
+        "rewardType": "actorCondition",
+        "rewardID": "fire",
+        "value": 2
+      },
+      {
+        "rewardType": "giveItem",
+        "rewardID": "lava_rock_cold",
+        "value": 1
+      }
+    ],
+    "replies": [
+      {
+        "nextPhraseID": "X"
+      }
+    ]
+  },
+  {
+    "id": "arulirmountain_bosstrap_nr",
+    "rewards": [
+      {
+        "rewardType": "giveItem",
+        "rewardID": "lava_rock_hot",
+        "value": 1
+      }
+    ],
+    "replies": [
+      {
+        "nextPhraseID": "X"
+      }
+    ]
   }
 ]

@@ -1,69 +1,7 @@
 [
   {
-    "id": "arulir_1",
-    "iconID": "monsters_rltiles1:13",
-    "name": "Arulir",
-    "spawnGroup": "arulir_1",
-    "monsterClass": "giant",
-    "maxHP": 325,
-    "maxAP": 5,
-    "moveCost": 5,
-    "attackCost": 5,
-    "attackChance": 70,
-    "criticalSkill": 30,
-    "criticalMultiplier": 3,
-    "blockChance": 20,
-    "damageResistance": 8,
-    "droplistID": "arulir",
-    "attackDamage": {
-      "min": 1,
-      "max": 20
-    },
-    "hitEffect": {
-      "conditionsTarget": [
-        {
-          "condition": "stunned",
-          "magnitude": 1,
-          "duration": 3,
-          "chance": 20
-        }
-      ]
-    }
-  },
-  {
-    "id": "arulir_2",
-    "iconID": "monsters_rltiles1:13",
-    "name": "Giant Arulir",
-    "spawnGroup": "arulir_1",
-    "monsterClass": "giant",
-    "maxHP": 330,
-    "maxAP": 5,
-    "moveCost": 5,
-    "attackCost": 5,
-    "attackChance": 70,
-    "criticalSkill": 30,
-    "criticalMultiplier": 3,
-    "blockChance": 20,
-    "damageResistance": 8,
-    "droplistID": "arulir",
-    "attackDamage": {
-      "min": 1,
-      "max": 20
-    },
-    "hitEffect": {
-      "conditionsTarget": [
-        {
-          "condition": "stunned",
-          "magnitude": 1,
-          "duration": 3,
-          "chance": 20
-        }
-      ]
-    }
-  },
-  {
     "id": "arulir_3",
-    "iconID": "monsters_rltiles1:13",
+    "iconID": "monsters_arulirs:0",
     "name": "Cave Arulir",
     "spawnGroup": "arulir_2",
     "monsterClass": "giant",
@@ -87,14 +25,14 @@
           "condition": "stunned",
           "magnitude": 1,
           "duration": 4,
-          "chance": 20
+          "chance": 23
         }
       ]
     }
   },
   {
     "id": "arulir_4",
-    "iconID": "monsters_rltiles1:13",
+    "iconID": "monsters_arulirs:1",
     "name": "Giant Cave Arulir",
     "spawnGroup": "arulir_2",
     "monsterClass": "giant",
@@ -106,7 +44,7 @@
     "criticalSkill": 44,
     "criticalMultiplier": 3,
     "blockChance": 28,
-    "damageResistance": 8,
+    "damageResistance": 10,
     "droplistID": "arulir",
     "attackDamage": {
       "min": 3,
@@ -118,15 +56,15 @@
           "condition": "stunned",
           "magnitude": 1,
           "duration": 4,
-          "chance": 20
+          "chance": 26
         }
       ]
     }
   },
   {
     "id": "arulir_5",
-    "iconID": "monsters_rltiles1:32",
-    "name": "Demonic Arulir",
+    "iconID": "monsters_arulirs:2",
+    "name": "Cryptic Arulir",
     "spawnGroup": "arulir_3",
     "monsterClass": "giant",
     "maxHP": 403,
@@ -134,10 +72,10 @@
     "moveCost": 5,
     "attackCost": 5,
     "attackChance": 110,
-    "criticalSkill": 51,
-    "criticalMultiplier": 2,
+    "criticalSkill": 50,
+    "criticalMultiplier": 3,
     "blockChance": 28,
-    "damageResistance": 9,
+    "damageResistance": 12,
     "droplistID": "arulir",
     "attackDamage": {
       "min": 4,
@@ -244,12 +182,12 @@
   {
     "id": "arulir_leader",
     "name": "Arulir Pack Leader",
-    "iconID": "monsters_tometik3:8",
+    "iconID": "monsters_arulirs:3",
     "maxHP": 1000,
     "monsterClass": "giant",
     "attackDamage": {
-      "min": 4,
-      "max": 25
+      "min": 10,
+      "max": 20
     },
     "hitEffect": {
       "conditionsSource": [
@@ -264,7 +202,7 @@
         {
           "magnitude": 1,
           "duration": 4,
-          "chance": 20,
+          "chance": 35,
           "condition": "stunned"
         }
       ]
@@ -272,10 +210,10 @@
     "spawnGroup": "arulir_leader",
     "droplistID": "arulir_leader",
     "attackCost": 5,
-    "attackChance": 110,
-    "criticalSkill": 50,
-    "criticalMultiplier": 2,
+    "attackChance": 125,
+    "criticalSkill": 55,
+    "criticalMultiplier": 3,
     "blockChance": 30,
-    "damageResistance": 12
+    "damageResistance": 14
   }
 ]
