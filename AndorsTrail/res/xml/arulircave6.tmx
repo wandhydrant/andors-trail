@@ -179,7 +179,7 @@
  </tileset>
  <layer name="Ground" width="15" height="15">
   <data encoding="base64" compression="zlib">
-   eJyVktkNgCAQRD2aszehBLQDj8QChcjEcVw8Pl7WBZ67HK6tKhcZCPcA1ow5T3EhQsHjdWvE5zg1J3PMe8Nb87cnlz3AricP+dYcEWNPrvaQXN0TXD6b0fASOufyWWEc56JegufA3N7HvXhWzyW05lfXqvnV7eor+NffupyX3iuDvQbpQ+/R2hcT5G3wPb65zA59cYnR
+   eJyVklsSgyAMRVE2170JS6CsoFpnXGDJNHfmmgaqH2ciIYdHJMUQUuNJpAGoqTqW+CZKx+O6vZE1rnMIL41bi4vj7fqdyZV6C7uZPIyP+RuRG7n2DOLaO8Hl3lTHE+xc0l4hj75YT+A5sMXffDaed+Yeds+rrrfnVfcxncFad/flce+9Mrhrib7LNSOKeRv8H/+5zAfVuYqF
   </data>
  </layer>
  <layer name="Ground_replace" width="15" height="15" visible="0">
@@ -189,7 +189,7 @@
  </layer>
  <layer name="Objects" width="15" height="15">
   <data encoding="base64" compression="zlib">
-   eJxjYKAOYBIjXu0LIQT7EDMC4wPoag4D2axMDAxKUHsP4tB/mBmTvUKcgaECiB8JYdcDUzsdqGamOJo40L7lUP0V4tj1ijFB1KwUR7UfBkByK3DoxeZuGEB3z1Oo+0HhAlMPo9+gycHc48wECSuYOCgM8YGHUHM4geqCgfiPEKY7YHZWAulqKLsKSG+E6pVkguiZAcQdQNyJJ9yQwSEhiP2w8FoB9QMIeDJC4gJkZxgjdvN2Q+13RjKXE4t/Qf5KxCKOnDYPMaOGMyy9gdxxCU/af4MjjR1EMgsAC2I6fA==
+   eJxjYKAOYBIjXu0LIQR7DjMDgxBQ72xm/HoOMUMwDBwGslmZGBiUoPYexKH/MDMme4U4A0MFED8Swq4HpnY6UM1McTRxoH3LoforxLHrFWOCqFkpjmo/DIDkVuDQi83dMIDunqdQ94PCBaYeRr9Bk4O5x5kJElYwcVAY4gMPoeZwAtUFA/EfIUx3wOysBNLVUHYVkN4I1SvJBNEzA4g7gLgTSe9jIQgGATE0txwSgtgPC68VUD+AgCcjJC5AdoYxIsxABruhYs5I5nKi2QHSF4wjDGBpDhnD/IorvaGDNzjS2EEkswDvjTvR
   </data>
  </layer>
  <layer name="Objects_replace" width="15" height="15" visible="0">
@@ -199,7 +199,7 @@
  </layer>
  <layer name="Above" width="15" height="15">
   <data encoding="base64" compression="zlib">
-   eJxjYKAcHBYjTt1lMUz+JSAWAmEm7HqcmRDqngrhtvO5EAMGgOlDt58Y98LUXAWa+1gIYU41M6q6SjQ+uvnY/IzPPpg96OquCaH6BRlg8+NjaHhswhIuyGZeRNKLbv4hPHqRAS4/gcIKn/1swvjNQg9rELgBdbMYUG84IwR/g9qBHq/Y9MMAul8fY3EnzDxuYUx1yOpBbsClV1oYNYyRzYGZAQB7jTC1
+   eJxjYKAcHBYjTt1lMUz+JaiYEBN2Pc5MCHVPhXDb+VyIAQMgm49sPzHuham5CjT3sRDCnGpmVHWVaHx087H5GZ99MHvQ1V0TQvULMsDmx8fQ8NiEJVyQzbyIpBfd/EN49CIDXH4ChRU++9mE8ZuFHtYgcAPqZjGg3nBGCP4GtQM9XrHphwF0v2JLEzAxbiR3wsL1MZK/sMULTK+0MGoYI5sDMwMAGfoxAQ==
   </data>
  </layer>
  <layer name="Walkable" width="15" height="15" visible="0">
@@ -212,7 +212,7 @@
    eJxjYBj6YKMYBA+0XnLNGap6RwF1AACEQwfH
   </data>
  </layer>
- <objectgroup name="Mapevents" width="15" height="15" visible="0">
+ <objectgroup name="Mapevents" width="15" height="15">
   <object name="upstairs" type="mapchange" x="96" y="64" width="32" height="32">
    <properties>
     <property name="map" value="arulircave5"/>
@@ -229,8 +229,18 @@
     <property name="when" value="enter"/>
    </properties>
   </object>
+  <object name="arulirmountain_bosstrap" type="script" x="352" y="320" width="96" height="128">
+   <properties>
+    <property name="when" value="round"/>
+   </properties>
+  </object>
+  <object name="arulirmountain_bosstrap_r" type="script" x="320" y="320" width="32" height="32">
+   <properties>
+    <property name="when" value="enter"/>
+   </properties>
+  </object>
  </objectgroup>
- <objectgroup name="Spawn" width="15" height="15">
+ <objectgroup name="Spawn" width="15" height="15" visible="0">
   <object name="gornaud_4" type="spawn" x="352" y="96" width="96" height="96"/>
   <object name="gornaud_4" type="spawn" x="96" y="160" width="128" height="224">
    <properties>
@@ -242,8 +252,8 @@
     <property name="quantity" value="2"/>
    </properties>
   </object>
-  <object name="arulir_leader" type="spawn" x="352" y="320" width="96" height="128"/>
-  <object name="arulir_3" type="spawn" x="320" y="320" width="32" height="32"/>
+  <object name="arulir_leader" type="spawn" x="384" y="320" width="64" height="128"/>
+  <object name="arulir_3" type="spawn" x="160" y="384" width="32" height="32"/>
   <object name="arulir_3" type="spawn" x="192" y="256" width="96" height="160">
    <properties>
     <property name="quantity" value="2"/>
