@@ -25,6 +25,28 @@
                         "value": "100"
                     }
                 ]
+            },
+            {
+                "text": "Do you know anything about Arcir being burglared?",
+                "nextPhraseID": "elythara_shadowpriest",
+                "requires": [
+                    {
+                        "requireType": "questProgress",
+                        "requireID": "elythara2",
+                        "value": "20"
+                    }
+                ]
+            },
+            {
+                "requires": [
+                    {
+                        "requireType": "questProgress",
+                        "requireID": "elythara3",
+                        "value": "70"
+                    }
+                ],
+                "text": "Do you know any ancient sanctuaries of our religion?",
+                "nextPhraseID": "elythara3_ShadowP_Fallhaven"
             }
         ]
     },

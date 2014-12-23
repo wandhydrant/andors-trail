@@ -1,0 +1,148 @@
+[
+    {
+        "id":"elythara1",
+        "name":"A Peasant's Story",
+        "showInLog":1,
+        "stages":[
+            {
+                "progress":10,
+                "logText":"Mara asked me to bring some bread to a hermit which lives south of Loneford. She warned me he was not a very pleasant man."
+            },
+            {
+                "progress":20,
+                "logText":"I brought the bread to Edwin. I should get back to Mara to receive my reward."
+            },
+            {
+                "progress":30,
+                "rewardExperience":10,
+                "finishesQuest":1,
+                "logText":"Mara paid me five gold for the delivery."
+            }
+        ]
+    },
+    {
+        "id":"elythara2",
+        "name":"Stolen Knowledge",
+        "showInLog":1,
+        "stages":[
+            {
+                "progress":10,
+                "logText":"Edwin told me his friend Arcir needed help. I should speak with him."
+            },
+            {
+                "progress":20,
+                "logText":"Arcir told me he had been robbed a unique book: Elythara's Chants. He suspects the Shadow's Church."
+            },
+            {
+                "progress":30,
+                "logText":"Athamyr admitted he organized the burglary. The bandit is south of the crossroad to Stoutford. I should bring the book back to Arcir once I killed the bandit."
+            },
+            {
+                "progress":50,
+                "rewardExperience":200,
+                "finishesQuest":1,
+                "logText":"I brought the book back to Arcir. He told me to go see Edwin and tell him I helped him."
+            }
+        ]
+    },
+    {
+        "id":"elythara3",
+        "name":"A New Dawn",
+        "showInLog":1,
+        "stages":[
+            {
+                "progress":10,
+                "logText":"Edwin organized it all. He gave me a last task before explaining me why I had been tested. I have to find a thief that stole his ring. He should be located at the end of Elren's Mine south of Crossglen."
+            },
+            {
+                "progress":20,
+                "logText":"This was a test too. The woman had no ring and sent me back to Edwin."
+            },
+            {
+                "progress":30,
+                "logText":"Edwin told me to go downstairs to understand why I was tested two times."
+            },
+            {
+                "progress":40,
+                "logText":"I've met Elythara herself and she told me her story. I agreed to help her recovering her soul so she can rise again."
+            },
+            {
+                "progress":50,
+                "logText":"Edwin suspects that one of the soul part, the helmet, is in a sanctuary under Flagstone Prison."
+            },
+            {
+                "progress":51,
+                "logText":"The old man asked me to bring his ring to his wife which lives in Fallhaven. When I'll come back he'll give me the helmet."
+            },
+            {
+                "progress":52,
+                "logText":"I found his wife and she gave a loaf of bread and her ring to give him."
+            },
+            {
+                "progress":53,
+                "logText":"The old man died happily after receiving his wife's ring and bread. Now I have the helmet. I should bring it to Edwin."
+            },
+            {
+                "progress":54,
+                "logText":"I brought the helmet to Edwin. He'll keep the soul parts for me."
+            },
+            {
+                "progress":60,
+                "logText":"Arcir thinks that one of the soul parts should be in the tomb under Fallhaven's Church."
+            },
+            {
+                "progress":62,
+                "logText":"I brought the sword to Edwin. He'll keep the soul parts for me."
+            },
+            {
+                "progress":70,
+                "logText":"I asked Arcir if he had any ideas where the last soul part could be. He said I should ask the Shadow's Priests if they knew anything about old Shadow's sanctuaries faking I'm a historian writing a book about the cult of the Shadow."
+            },
+            {
+                "progress":71,
+                "logText":"The priest of Loneford only knew about the Flagstone's sanctuary."
+            },
+            {
+                "progress":72,
+                "logText":"The priest of Fallhaven spoke to me about a sanctuary somewhere south of Fallhaven."
+            },
+            {
+                "progress":74,
+                "logText":"The priest of Vilegard talked about a sanctuary on the Duleain Road north of the huntsman's house. I should go investigate there."
+            },
+            {
+                "progress":76,
+                "logText":"I brought the shield back to Edwin. He'll keep the soul parts for me."
+            },
+            {
+                "progress":80,
+                "rewardExperience":1000,
+                "finishesQuest":1,
+                "logText":"Edwin now has all the soul parts now. He has to prepare the ritual to give her soul back to Elythara."
+            }
+        ]
+    },
+    {
+        "id":"soulpart",
+        "name":"SoulParts",
+        "stages":[
+            {
+                "progress":1,
+                "logText":"Helmet"
+            },
+            {
+                "progress":2,
+                "logText":"Shield"
+            },
+            {
+                "progress":3,
+                "logText":"Sword"
+            },
+            {
+                "progress":4,
+                "finishesQuest":1,
+                "logText":"All of them."
+            }
+        ]
+    }
+]

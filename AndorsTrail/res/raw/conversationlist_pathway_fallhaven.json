@@ -1,0 +1,213 @@
+[
+  {
+    "id": "guard_pathway",
+    "replies": [
+      {
+        "requires": [
+          {
+            "requireType": "questProgress",
+            "value": 50,
+            "requireID": "pathway_fallhaven"
+          }
+        ],
+        "nextPhraseID": "guard_pathway_5"
+      },
+      {
+        "requires": [
+          {
+            "requireType": "questProgress",
+            "requireID": "pathway_fallhaven",
+            "value": 10
+          }
+        ],
+        "nextPhraseID": "guard_pathway_6"
+      },
+      {
+        "nextPhraseID": "guard_pathway_0"
+      }
+    ]
+  },
+  {
+    "id": "guard_pathway_0",
+    "replies": [
+      {
+        "text": "Why can't I pass this way?",
+        "nextPhraseID": "guard_pathway_1",
+        "requires": [
+          {
+            "requireType": "questProgress",
+            "requireID": "pathway_fallhaven",
+            "value": 10,
+            "negate": true
+          }
+        ]
+      },
+      {
+        "text": "Never mind. Shadow be with you.",
+        "nextPhraseID": "X"
+      },
+      {
+        "text": "Never mind. Goodbye.",
+        "nextPhraseID": "X"
+      }
+    ],
+    "message": "Halt! No one is allowed to pass the old pathway to the Duleian Road!"
+  },
+  {
+    "id": "guard_pathway_1",
+    "replies": [
+      {
+        "text": "But why doesn't he want to do this work?",
+        "nextPhraseID": "guard_pathway_2"
+      }
+    ],
+    "message": "Because a storm recently knocked over some trees which now block the passage. A villager even got hurt. And now the responsible woodcutter doesn't want to cut the fallen trees away."
+  },
+  {
+    "id": "guard_pathway_2",
+    "replies": [
+      {
+        "text": "Maybe I could help?",
+        "nextPhraseID": "guard_pathway_3"
+      },
+      {
+        "text": "Well this is your problem. Goodbye.",
+        "nextPhraseID": "X"
+      }
+    ],
+    "message": "You're really curious boy... Well our superior the warden only wants to pay the woodcutter when he did his work."
+  },
+  {
+    "id": "guard_pathway_3",
+    "replies": [
+      {
+        "text": "Yes I'm a kid but I really want to help and otherwise the passage may be never be opened again.",
+        "nextPhraseID": "guard_pathway_4"
+      }
+    ],
+    "message": "You?! You're a kid!"
+  },
+  {
+    "id": "guard_pathway_4",
+    "replies": [
+      {
+        "text": "Okay thanks for your advise. I'm gonna do that!",
+        "nextPhraseID": "X"
+      },
+      {
+        "text": "Pff, easy. I'm gonna do that.",
+        "nextPhraseID": "X"
+      }
+    ],
+    "message": "Hmm, you actually could help. Talk to the warden and maybe you can convince him of paying the woodcutter. But I have to warn you: He is a stubborn beast.",
+    "rewards": [
+      {
+        "rewardType": "questProgress",
+        "rewardID": "pathway_fallhaven",
+        "value": 10
+      }
+    ]
+  },
+  {
+    "id": "sign_pathway_fallhaven",
+    "message": "North: Feygard\nWest: Fallhaven\nSouth: Nor City"
+  },
+  {
+    "id": "guard_pathway_5",
+    "rewards": [
+      {
+        "rewardType": "questProgress",
+        "rewardID": "pathway_fallhaven",
+        "value": 60
+      }
+    ],
+    "replies": [
+      {
+        "text": "You're welcome. I'm just happy to have a shortcut!",
+        "nextPhraseID": "X"
+      }
+    ],
+    "message": "Hello again. It seems like you have sorted out things. Now the passage isn't blocked anymore. You have all my gratitude for doing that."
+  },
+  {
+    "id": "key_wolf_pack_jakrar",
+    "message": "You see the horrifying wolf leader and stumble back."
+  },
+  {
+    "id": "sign_wolf_pack_jakrar",
+    "replies": [
+      {
+        "requires": [
+          {
+            "requireType": "killedMonster",
+            "requireID": "wolf_leader",
+            "value": 1
+          }
+        ],
+        "nextPhraseID": "sign_wolf_pack_jakrar_1"
+      }
+    ]
+  },
+  {
+    "id": "sign_wolf_pack_jakrar_1",
+    "rewards": [
+      {
+        "rewardType": "questProgress",
+        "rewardID": "pathway_fallhaven",
+        "value": 40
+      }
+    ]
+  },
+  {
+    "id": "guard_pathway_6",
+    "replies": [
+      {
+        "text": "Unfortunately not.",
+        "nextPhraseID": "X"
+      },
+      {
+        "requires": [
+          {
+            "requireType": "questLatestProgress",
+            "requireID": "pathway_fallhaven",
+            "value": 20
+          }
+        ],
+        "text": "I wasn't able to convince the warden but I'm gonna talk to the woodcutter now.",
+        "nextPhraseID": "guard_pathway_7"
+      },
+      {
+        "requires": [
+          {
+            "requireType": "questLatestProgress",
+            "requireID": "pathway_fallhaven",
+            "value": 30
+          }
+        ],
+        "text": "The woodcutter is gonna help me if I retrieve his axe!",
+        "nextPhraseID": "guard_pathway_8"
+      }
+    ],
+    "message": "Hello kid. Did you make any progress on your task?"
+  },
+  {
+    "id": "guard_pathway_7",
+    "replies": [
+      {
+        "text": "I hope so.",
+        "nextPhraseID": "X"
+      }
+    ],
+    "message": "Well good luck with that. Maybe you can convince him."
+  },
+  {
+    "id": "guard_pathway_8",
+    "replies": [
+      {
+        "text": "Goodbye.",
+        "nextPhraseID": "X"
+      }
+    ],
+    "message": "That sounds great! Good luck!"
+  }
+]

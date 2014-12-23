@@ -130,20 +130,20 @@
  </layer>
  <layer name="Objects" width="20" height="15">
   <data encoding="base64" compression="zlib">
-   eJyFVEsKwjAQTUB3CTToRXThCVz1KAXP4RHEy1kX7pR24U6oNWMzZvqa1Adlksm8+VOlPJxS2g2SwXeSaxt133PQP82Uo8VdSd8ejYm6WYi4tRn7YNyCL2encerwdjfRvgE/8m0OD7D7xfO4FrE3mPsFeC+4E1eC6ymL9HcI9lVCh/gXm5HrQZXJoYR4XEPrZV/kJaIT+rd4p952gptCzjfxyFedqKktxnEkMF+y437RbJGLcY/LQe5WSp11zKMDHteV0qHPk45n3D+si7G341o5/kLsZ2reTvB6yAPzyu1RrkftzE7Qv4NmlXvf+Ly2djqbDw8icAU=
+   eJx9VEsKwjAQTUB3CaTUi+jCE7jqUQqewyOIl7Mu3Cntwp3Q1ozNkOlr0gdlksm8+VOlPAqldDFJBt9J7mzU/c9B/zFLjhZ3JX17tCbqViHiNmbug/EMvgq7jNOEt5eJ9i34kW9reIMdxXu4KQZJ7g3mfgfeF+7ERQ6hcunvHOzrhA5RQk4Ym5HrQZ3JoYJ4XEPn5ejyEtEL/SDeqbe94KaQ8028wcXZI2fI+MN8yY77RbNFLsa9bCd5LJW66ZhHDzyuK6VDn1cdz7h/WBfjZOe1cvyN2IXUvAvBGyEPzCu3R7kedSs7Qf8OmlXufe/zOtjlbH66CnBJ
   </data>
  </layer>
  <layer name="Above" width="20" height="15">
   <data encoding="base64" compression="zlib">
-   eJz7KMBAEHwgQg26+o9E6CGkhlhziAUXsJhFrB3Y9A41APPDWyD9TgA3jQ6QxdHl3xIRLrjMxmYXDHxlxS7+jRXVTmzuQRaDqRVlw26eGA5xbO7FZy8MhFOQTrCZmYbDvLdY4oOYuICpw6cPFl/Y3IUtzWBzFyGATS8x8gCTXDs+
+   eJz7KMBAEHwgQg26+o9E6CGkhlhzCIELAqg0OXYg66WWu+gNYH54C6TfCeCm0QGyOLr8WyLCAZfZ2OyCga+s2MW/saLaic09yGIwtaJs2M0TwyGOzb347IWBcArSBTYz03CY9xZLfBATFzB1+PTB4gubu7ClGWzuIgSw6SVGHgDduj4f
   </data>
  </layer>
  <layer name="Walkable" width="20" height="15">
   <data encoding="base64" compression="zlib">
-   eJxzFWBgcKUBhgF0Pi4xbPK4zMSnB8YmpIYagBy/Iasb6gA5vIlJC8j6cMUVpekMn33UMJPWZhHyC7bwx+dXYgGxeRefXlxuoCYGAJIMLyc=
+   eJxzFWBgcKUBhgF0Pi4xbPK4zMSnB8YmpIYSgM9dxNpBKIwodR89AHJ4E5MWkPXhiitK0xk++6hhJq3NIuQXbOGPz6/EAmLzLj69uNxATQwA7fsw0A==
   </data>
  </layer>
- <objectgroup name="Mapevents" visible="0">
+ <objectgroup name="Mapevents" width="0" height="0">
   <object name="west" type="mapchange" x="0" y="160" width="32" height="96">
    <properties>
     <property name="map" value="wild14"/>
@@ -163,7 +163,7 @@
    </properties>
   </object>
  </objectgroup>
- <objectgroup name="Spawn" visible="0">
+ <objectgroup name="Spawn" width="0" height="0">
   <object name="beetle2" type="spawn" x="64" y="96" width="96" height="352">
    <properties>
     <property name="quantity" value="2"/>
@@ -174,6 +174,7 @@
     <property name="quantity" value="2"/>
    </properties>
   </object>
+  <object name="caveboar1" type="spawn" x="544" y="192" width="32" height="32"/>
  </objectgroup>
- <objectgroup name="Keys" visible="0"/>
+ <objectgroup name="Keys" width="0" height="0"/>
 </map>

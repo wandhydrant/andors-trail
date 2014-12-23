@@ -1,609 +1,642 @@
 [
     {
-        "id": "zombie1",
-        "message": "Fresh flesh!",
-        "replies": [
+        "message":"Fresh flesh!",
+        "id":"zombie1",
+        "replies":[
             {
-                "text": "By the Shadow, I will slay you.",
-                "nextPhraseID": "F"
+                "nextPhraseID":"F",
+                "text":"By the Shadow, I will slay you."
             },
             {
-                "text": "Yuck, what are you? And what is that smell?",
-                "nextPhraseID": "F"
+                "nextPhraseID":"F",
+                "text":"Yuck, what are you? And what is that smell?"
             }
         ]
     },
     {
-        "id": "prisoner1",
-        "message": "Nooo, I will not be imprisoned again!",
-        "replies": [
+        "message":"Nooo, I will not be imprisoned again!",
+        "id":"prisoner1",
+        "replies":[
             {
-                "text": "But I am not...",
-                "nextPhraseID": "F"
+                "nextPhraseID":"F",
+                "text":"But I am not..."
             }
         ]
     },
     {
-        "id": "prisoner2",
-        "message": "Aaaa! Who's there? I will not be enslaved again!",
-        "replies": [
+        "message":"Aaaa! Who's there? I will not be enslaved again!",
+        "id":"prisoner2",
+        "replies":[
             {
-                "text": "Calm down, I was just...",
-                "nextPhraseID": "F"
+                "nextPhraseID":"F",
+                "text":"Calm down, I was just..."
             }
         ]
     },
     {
-        "id": "flagstone_guard0",
-        "message": "Ah, another mortal. Prepare to become part of my undead army!",
-        "rewards": [
+        "message":"Ah, another mortal. Prepare to become part of my undead army!",
+        "id":"flagstone_guard0",
+        "replies":[
             {
-                "rewardType": "questProgress",
-                "rewardID": "flagstone",
-                "value": 31
+                "nextPhraseID":"F",
+                "text":"Shadow take you."
+            },
+            {
+                "nextPhraseID":"F",
+                "text":"Prepare to die once more."
             }
         ],
-        "replies": [
+        "rewards":[
             {
-                "text": "Shadow take you.",
-                "nextPhraseID": "F"
-            },
-            {
-                "text": "Prepare to die once more.",
-                "nextPhraseID": "F"
+                "value":31,
+                "rewardID":"flagstone",
+                "rewardType":"questProgress"
             }
         ]
     },
     {
-        "id": "flagstone_guard1",
-        "message": "Die mortal!",
-        "replies": [
+        "message":"Die mortal!",
+        "id":"flagstone_guard1",
+        "replies":[
             {
-                "text": "Shadow take you.",
-                "nextPhraseID": "F"
+                "nextPhraseID":"F",
+                "text":"Shadow take you."
             },
             {
-                "text": "Prepare to meet my blade.",
-                "nextPhraseID": "F"
+                "nextPhraseID":"F",
+                "text":"Prepare to meet my blade."
             }
         ]
     },
     {
-        "id": "flagstone_guard2",
-        "message": "What, a mortal in here that is not marked by my touch?",
-        "rewards": [
+        "message":"What, a mortal in here that is not marked by my touch?",
+        "id":"flagstone_guard2",
+        "replies":[
             {
-                "rewardType": "questProgress",
-                "rewardID": "flagstone",
-                "value": 50
+                "nextPhraseID":"flagstone_guard2_2",
+                "text":"N"
             }
         ],
-        "replies": [
+        "rewards":[
             {
-                "text": "N",
-                "nextPhraseID": "flagstone_guard2_2"
+                "value":50,
+                "rewardID":"flagstone",
+                "rewardType":"questProgress"
             }
         ]
     },
     {
-        "id": "flagstone_guard2_2",
-        "message": "You seem delicious and soft, will you be part of the feast?",
-        "replies": [
+        "message":"You seem delicious and soft, will you be part of the feast?",
+        "id":"flagstone_guard2_2",
+        "replies":[
             {
-                "text": "N",
-                "nextPhraseID": "flagstone_guard2_3"
+                "nextPhraseID":"flagstone_guard2_3",
+                "text":"N"
             }
         ]
     },
     {
-        "id": "flagstone_guard2_3",
-        "message": "Yes, I think you will. My undead army will spread far outside of Flagstone once I am done with you.",
-        "replies": [
+        "message":"Yes, I think you will. My undead army will spread far outside of Flagstone once I am done with you.",
+        "id":"flagstone_guard2_3",
+        "replies":[
             {
-                "text": "By the Shadow, you must be stopped!",
-                "nextPhraseID": "F"
+                "nextPhraseID":"F",
+                "text":"By the Shadow, you must be stopped!"
             },
             {
-                "text": "No! This land must be protected from the undead!",
-                "nextPhraseID": "F"
+                "nextPhraseID":"F",
+                "text":"No! This land must be protected from the undead!"
             }
         ]
     },
     {
-        "id": "flagstone_sentry",
-        "replies": [
+        "id":"flagstone_sentry",
+        "replies":[
             {
-                "nextPhraseID": "flagstone_sentry_return4",
-                "requires": [
+                "nextPhraseID":"flagstone_sentry_return4",
+                "requires":[
                     {
-                        "requireType": "questProgress",
-                        "requireID": "flagstone",
-                        "value": "60"
+                        "requireType":"questProgress",
+                        "value":60,
+                        "requireID":"flagstone"
                     }
                 ]
             },
             {
-                "nextPhraseID": "flagstone_sentry_return3",
-                "requires": [
+                "nextPhraseID":"flagstone_sentry_return3",
+                "requires":[
                     {
-                        "requireType": "questProgress",
-                        "requireID": "flagstone",
-                        "value": "40"
+                        "requireType":"questProgress",
+                        "value":40,
+                        "requireID":"flagstone"
                     }
                 ]
             },
             {
-                "nextPhraseID": "flagstone_sentry_select0"
+                "nextPhraseID":"flagstone_sentry_select0"
             }
         ]
     },
     {
-        "id": "flagstone_sentry_select0",
-        "replies": [
+        "id":"flagstone_sentry_select0",
+        "replies":[
             {
-                "nextPhraseID": "flagstone_sentry_return2",
-                "requires": [
+                "nextPhraseID":"flagstone_sentry_return2",
+                "requires":[
                     {
-                        "requireType": "questProgress",
-                        "requireID": "flagstone",
-                        "value": "30"
+                        "requireType":"questProgress",
+                        "value":30,
+                        "requireID":"flagstone"
                     }
                 ]
             },
             {
-                "nextPhraseID": "flagstone_sentry_return1",
-                "requires": [
+                "nextPhraseID":"flagstone_sentry_return1",
+                "requires":[
                     {
-                        "requireType": "questProgress",
-                        "requireID": "flagstone",
-                        "value": "10"
+                        "requireType":"questProgress",
+                        "value":10,
+                        "requireID":"flagstone"
                     }
                 ]
             },
             {
-                "nextPhraseID": "flagstone_sentry_1"
+                "nextPhraseID":"flagstone_sentry_1"
             }
         ]
     },
     {
-        "id": "flagstone_sentry_1",
-        "message": "Halt! Who's there? No one is allowed to approach Flagstone.",
-        "replies": [
+        "message":"Halt! Who's there? No one is allowed to approach Flagstone.",
+        "id":"flagstone_sentry_1",
+        "replies":[
             {
-                "text": "N",
-                "nextPhraseID": "flagstone_sentry_2"
+                "nextPhraseID":"flagstone_sentry_2",
+                "text":"N"
             }
         ]
     },
     {
-        "id": "flagstone_sentry_2",
-        "message": "You should turn back while you still can.",
-        "replies": [
+        "message":"You should turn back while you still can.",
+        "id":"flagstone_sentry_2",
+        "replies":[
             {
-                "text": "N",
-                "nextPhraseID": "flagstone_sentry_3"
+                "nextPhraseID":"flagstone_sentry_3",
+                "text":"N"
             }
         ]
     },
     {
-        "id": "flagstone_sentry_3",
-        "message": "Flagstone has been overrun by undead, and I'm standing guard here to make sure no undead escape.",
-        "replies": [
+        "message":"Flagstone has been overrun by undead, and I'm standing guard here to make sure no undead escape.",
+        "id":"flagstone_sentry_3",
+        "replies":[
             {
-                "text": "Can you tell me the story about Flagstone?",
-                "nextPhraseID": "flagstone_sentry_4"
+                "nextPhraseID":"flagstone_sentry_4",
+                "text":"Can you tell me the story about Flagstone?"
             }
         ]
     },
     {
-        "id": "flagstone_sentry_4",
-        "message": "Flagstone used to be a prison camp for runaway workers from when Mount Galmore was dug out.",
-        "replies": [
+        "message":"Flagstone used to be a prison camp for runaway workers from when Mount Galmore was dug out.",
+        "id":"flagstone_sentry_4",
+        "replies":[
             {
-                "text": "N",
-                "nextPhraseID": "flagstone_sentry_5"
+                "nextPhraseID":"flagstone_sentry_5",
+                "text":"N"
             }
         ]
     },
     {
-        "id": "flagstone_sentry_5",
-        "message": "But once the digging in Mount Galmore stopped, the prison camp lost its purpose.",
-        "replies": [
+        "message":"But once the digging in Mount Galmore stopped, the prison camp lost its purpose.",
+        "id":"flagstone_sentry_5",
+        "replies":[
             {
-                "text": "N",
-                "nextPhraseID": "flagstone_sentry_6"
+                "nextPhraseID":"flagstone_sentry_6",
+                "text":"N"
             }
         ]
     },
     {
-        "id": "flagstone_sentry_6",
-        "message": "The lord at the time did not care much for the prisoners that were already in Flagstone, so he left them there.",
-        "replies": [
+        "message":"The lord at the time did not care much for the prisoners that were already in Flagstone, so he left them there.",
+        "id":"flagstone_sentry_6",
+        "replies":[
             {
-                "text": "N",
-                "nextPhraseID": "flagstone_sentry_7"
+                "nextPhraseID":"flagstone_sentry_7",
+                "text":"N"
             }
         ]
     },
     {
-        "id": "flagstone_sentry_7",
-        "message": "The warden that ran Flagstone on the other hand took his duty very seriously, and kept on running the prison just like it was when Mount Galmore was being dug out.",
-        "replies": [
+        "message":"The warden that ran Flagstone on the other hand took his duty very seriously, and kept on running the prison just like it was when Mount Galmore was being dug out.",
+        "id":"flagstone_sentry_7",
+        "replies":[
             {
-                "text": "N",
-                "nextPhraseID": "flagstone_sentry_8"
+                "nextPhraseID":"flagstone_sentry_8",
+                "text":"N"
             }
         ]
     },
     {
-        "id": "flagstone_sentry_8",
-        "message": "For years, no one took notice of Flagstone. Except for the occasional reports from travelers of terrible screams coming from the camp.",
-        "replies": [
+        "message":"For years, no one took notice of Flagstone. Except for the occasional reports from travelers of terrible screams coming from the camp.",
+        "id":"flagstone_sentry_8",
+        "replies":[
             {
-                "text": "N",
-                "nextPhraseID": "flagstone_sentry_9"
+                "nextPhraseID":"flagstone_sentry_9",
+                "text":"N"
             }
         ]
     },
     {
-        "id": "flagstone_sentry_9",
-        "message": "There was a change recently, now the undead pour out in great numbers.",
-        "replies": [
+        "message":"There was a change recently, now the undead pour out in great numbers.",
+        "id":"flagstone_sentry_9",
+        "replies":[
             {
-                "text": "N",
-                "nextPhraseID": "flagstone_sentry_10"
+                "nextPhraseID":"flagstone_sentry_10",
+                "text":"N"
             }
         ]
     },
     {
-        "id": "flagstone_sentry_10",
-        "message": "So, here we are. I have to guard the road from undead, so that they do not spread farther than Flagstone.",
-        "replies": [
+        "message":"So, here we are. I have to guard the road from undead, so that they do not spread farther than Flagstone.",
+        "id":"flagstone_sentry_10",
+        "replies":[
             {
-                "text": "N",
-                "nextPhraseID": "flagstone_sentry_11"
+                "nextPhraseID":"flagstone_sentry_11",
+                "text":"N"
             }
         ]
     },
     {
-        "id": "flagstone_sentry_11",
-        "message": "So, I would advise you to leave unless you want to be overrun by undead.",
-        "replies": [
+        "message":"So, I would advise you to leave unless you want to be overrun by undead.",
+        "id":"flagstone_sentry_11",
+        "replies":[
             {
-                "text": "Can I investigate the Flagstone ruins?",
-                "nextPhraseID": "flagstone_sentry_12"
+                "nextPhraseID":"flagstone_sentry_12",
+                "text":"Can I investigate the Flagstone ruins?"
             },
             {
-                "text": "Yes, I should leave.",
-                "nextPhraseID": "X"
+                "nextPhraseID":"X",
+                "text":"Yes, I should leave."
             }
         ]
     },
     {
-        "id": "flagstone_sentry_12",
-        "message": "Are you really sure you want to head in there? Well, ok, fine by me.",
-        "replies": [
+        "message":"Are you really sure you want to head in there? Well, ok, fine by me.",
+        "id":"flagstone_sentry_12",
+        "replies":[
             {
-                "text": "N",
-                "nextPhraseID": "flagstone_sentry_13"
+                "nextPhraseID":"flagstone_sentry_13",
+                "text":"N"
             }
         ]
     },
     {
-        "id": "flagstone_sentry_13",
-        "message": "I won't stop you, and I won't mourn you if you never return.",
-        "replies": [
+        "message":"I won't stop you, and I won't mourn you if you never return.",
+        "id":"flagstone_sentry_13",
+        "replies":[
             {
-                "text": "N",
-                "nextPhraseID": "flagstone_sentry_14"
+                "nextPhraseID":"flagstone_sentry_14",
+                "text":"N"
             }
         ]
     },
     {
-        "id": "flagstone_sentry_14",
-        "message": "Go ahead. Let me know if there's anything I can tell you that would help.",
-        "replies": [
+        "message":"Go ahead. Let me know if there's anything I can tell you that would help.",
+        "id":"flagstone_sentry_14",
+        "replies":[
             {
-                "text": "N",
-                "nextPhraseID": "flagstone_sentry_15"
+                "nextPhraseID":"flagstone_sentry_15",
+                "text":"N"
             }
         ]
     },
     {
-        "id": "flagstone_sentry_15",
-        "message": "Return here if you need my advice.",
-        "rewards": [
+        "message":"Return here if you need my advice.",
+        "id":"flagstone_sentry_15",
+        "replies":[
             {
-                "rewardType": "questProgress",
-                "rewardID": "flagstone",
-                "value": 10
+                "nextPhraseID":"X",
+                "text":"Ok. I will return to you if there is anything I need help with."
             }
         ],
-        "replies": [
+        "rewards":[
             {
-                "text": "Ok. I will return to you if there is anything I need help with.",
-                "nextPhraseID": "X"
+                "value":10,
+                "rewardID":"flagstone",
+                "rewardType":"questProgress"
             }
         ]
     },
     {
-        "id": "flagstone_sentry_return1",
-        "message": "Hello again. Did you enter Flagstone? I am surprised you actually returned.",
-        "replies": [
+        "message":"Hello again. Did you enter Flagstone? I am surprised you actually returned.",
+        "id":"flagstone_sentry_return1",
+        "replies":[
             {
-                "text": "Can you tell me the story again?",
-                "nextPhraseID": "flagstone_sentry_4"
+                "nextPhraseID":"flagstone_sentry_4",
+                "text":"Can you tell me the story again?"
             },
             {
-                "text": "There is a guardian in the lower levels of Flagstone that cannot be approached.",
-                "nextPhraseID": "flagstone_sentry_20",
-                "requires": [
+                "nextPhraseID":"flagstone_sentry_20",
+                "text":"There is a guardian in the lower levels of Flagstone that cannot be approached.",
+                "requires":[
                     {
-                        "requireType": "questProgress",
-                        "requireID": "flagstone",
-                        "value": "20"
+                        "requireType":"questProgress",
+                        "value":20,
+                        "requireID":"flagstone"
                     }
                 ]
             }
         ]
     },
     {
-        "id": "flagstone_sentry_20",
-        "message": "A guardian you say? This is troubling news, since it means there is some larger force behind all this.",
-        "replies": [
+        "message":"A guardian you say? This is troubling news, since it means there is some larger force behind all this.",
+        "id":"flagstone_sentry_20",
+        "replies":[
             {
-                "text": "N",
-                "nextPhraseID": "flagstone_sentry_21"
+                "nextPhraseID":"flagstone_sentry_21",
+                "text":"N"
             }
         ]
     },
     {
-        "id": "flagstone_sentry_21",
-        "message": "Have you found the former warden of Flagstone? The warden used to have a necklace with him at all times.",
-        "replies": [
+        "message":"Have you found the former warden of Flagstone? The warden used to have a necklace with him at all times.",
+        "id":"flagstone_sentry_21",
+        "replies":[
             {
-                "text": "N",
-                "nextPhraseID": "flagstone_sentry_22"
+                "nextPhraseID":"flagstone_sentry_22",
+                "text":"N"
             }
         ]
     },
     {
-        "id": "flagstone_sentry_22",
-        "message": "He was very protective of it. Maybe the necklace was some sort of key.",
-        "replies": [
+        "message":"He was very protective of it. Maybe the necklace was some sort of key.",
+        "id":"flagstone_sentry_22",
+        "replies":[
             {
-                "text": "N",
-                "nextPhraseID": "flagstone_sentry_23"
+                "nextPhraseID":"flagstone_sentry_23",
+                "text":"N"
             }
         ]
     },
     {
-        "id": "flagstone_sentry_23",
-        "message": "If you find the warden and retrieve the necklace, then please return here and I will help you decipher any message that we might find on it.",
-        "rewards": [
+        "message":"If you find the warden and retrieve the necklace, then please return here and I will help you decipher any message that we might find on it.",
+        "id":"flagstone_sentry_23",
+        "replies":[
             {
-                "rewardType": "questProgress",
-                "rewardID": "flagstone",
-                "value": 30
-            }
-        ],
-        "replies": [
-            {
-                "text": "I have found it, here.",
-                "nextPhraseID": "flagstone_sentry_40",
-                "requires": [
+                "nextPhraseID":"flagstone_sentry_40",
+                "text":"I have found it, here.",
+                "requires":[
                     {
-                        "requireType": "inventoryRemove",
-                        "requireID": "necklace_flagstone",
-                        "value": 1
+                        "requireType":"inventoryRemove",
+                        "value":1,
+                        "requireID":"necklace_flagstone"
                     }
                 ]
             },
             {
-                "text": "What was that about the guardian again?",
-                "nextPhraseID": "flagstone_sentry_20"
+                "nextPhraseID":"flagstone_sentry_20",
+                "text":"What was that about the guardian again?"
             },
             {
-                "text": "Ok, I will go look for the former warden.",
-                "nextPhraseID": "X"
-            }
-        ]
-    },
-    {
-        "id": "flagstone_sentry_return2",
-        "message": "Hello again. Have you found the former warden in Flagstone yet?",
-        "replies": [
-            {
-                "text": "About the former warden...",
-                "nextPhraseID": "flagstone_sentry_23"
-            },
-            {
-                "text": "Can you tell me the story again?",
-                "nextPhraseID": "flagstone_sentry_3"
-            }
-        ]
-    },
-    {
-        "id": "flagstone_sentry_40",
-        "message": "You found the necklace? Good. Here, give it to me.",
-        "rewards": [
-            {
-                "rewardType": "questProgress",
-                "rewardID": "flagstone",
-                "value": 40
+                "nextPhraseID":"X",
+                "text":"Ok, I will go look for the former warden."
             }
         ],
-        "replies": [
+        "rewards":[
             {
-                "text": "N",
-                "nextPhraseID": "flagstone_sentry_41"
+                "value":30,
+                "rewardID":"flagstone",
+                "rewardType":"questProgress"
             }
         ]
     },
     {
-        "id": "flagstone_sentry_41",
-        "message": "Now, let's see here. Ah yes, it is as I thought. The necklace contains a password.",
-        "replies": [
+        "message":"Hello again. Have you found the former warden in Flagstone yet?",
+        "id":"flagstone_sentry_return2",
+        "replies":[
             {
-                "text": "N",
-                "nextPhraseID": "flagstone_sentry_42"
+                "nextPhraseID":"flagstone_sentry_23",
+                "text":"About the former warden..."
+            },
+            {
+                "nextPhraseID":"flagstone_sentry_3",
+                "text":"Can you tell me the story again?"
             }
         ]
     },
     {
-        "id": "flagstone_sentry_42",
-        "message": "'Daylight Shadow'. That must be it. You should try to approach the guardian with this password.",
-        "replies": [
+        "message":"You found the necklace? Good. Here, give it to me.",
+        "id":"flagstone_sentry_40",
+        "replies":[
             {
-                "text": "Thanks, bye.",
-                "nextPhraseID": "X"
+                "nextPhraseID":"flagstone_sentry_41",
+                "text":"N"
+            }
+        ],
+        "rewards":[
+            {
+                "value":40,
+                "rewardID":"flagstone",
+                "rewardType":"questProgress"
             }
         ]
     },
     {
-        "id": "flagstone_sentry_return3",
-        "message": "Hello again. How is the investigation of the undead in Flagstone going?",
-        "replies": [
+        "message":"Now, let's see here. Ah yes, it is as I thought. The necklace contains a password.",
+        "id":"flagstone_sentry_41",
+        "replies":[
             {
-                "text": "No progress yet.",
-                "nextPhraseID": "flagstone_sentry_43"
+                "nextPhraseID":"flagstone_sentry_42",
+                "text":"N"
             }
         ]
     },
     {
-        "id": "flagstone_sentry_43",
-        "message": "Well, keep looking. Return to me if you need my advice."
-    },
-    {
-        "id": "flagstone_sentry_return4",
-        "message": "Hello again. It seems something happened inside Flagstone that made the undead weaker. I'm sure we have you to thank for it."
-    },
-    {
-        "id": "narael",
-        "message": "Thank you, thank you for freeing me from that monster.",
-        "replies": [
+        "message":"'Daylight Shadow'. That must be it. You should try to approach the guardian with this password.",
+        "id":"flagstone_sentry_42",
+        "replies":[
             {
-                "text": "N",
-                "nextPhraseID": "narael_select"
+                "nextPhraseID":"X",
+                "text":"Thanks, bye."
             }
         ]
     },
     {
-        "id": "narael_select",
-        "replies": [
+        "message":"Hello again. How is the investigation of the undead in Flagstone going?",
+        "id":"flagstone_sentry_return3",
+        "replies":[
             {
-                "nextPhraseID": "narael_9",
-                "requires": [
+                "nextPhraseID":"flagstone_sentry_43",
+                "text":"No progress yet."
+            }
+        ]
+    },
+    {
+        "message":"Well, keep looking. Return to me if you need my advice.",
+        "id":"flagstone_sentry_43"
+    },
+    {
+        "message":"Hello again. It seems something happened inside Flagstone that made the undead weaker. I'm sure we have you to thank for it.",
+        "id":"flagstone_sentry_return4"
+    },
+    {
+        "message":"Thank you, thank you for freeing me from that monster.",
+        "id":"narael",
+        "replies":[
+            {
+                "nextPhraseID":"narael_select",
+                "text":"N"
+            }
+        ]
+    },
+    {
+        "id":"narael_select",
+        "replies":[
+            {
+                "nextPhraseID":"narael_9",
+                "requires":[
                     {
-                        "requireType": "questProgress",
-                        "requireID": "flagstone",
-                        "value": "60"
+                        "requireType":"questProgress",
+                        "value":60,
+                        "requireID":"flagstone"
                     }
                 ]
             },
             {
-                "nextPhraseID": "narael_1"
+                "nextPhraseID":"narael_1"
             }
         ]
     },
     {
-        "id": "narael_1",
-        "message": "I have been a captive here for what seems to be an eternity.",
-        "replies": [
+        "message":"I have been a captive here for what seems to be an eternity.",
+        "id":"narael_1",
+        "replies":[
             {
-                "text": "N",
-                "nextPhraseID": "narael_2"
+                "nextPhraseID":"narael_2",
+                "text":"N"
             }
         ]
     },
     {
-        "id": "narael_2",
-        "message": "Oh, the things they did to me. Thank you so much for freeing me.",
-        "replies": [
+        "message":"Oh, the things they did to me. Thank you so much for freeing me.",
+        "id":"narael_2",
+        "replies":[
             {
-                "text": "N",
-                "nextPhraseID": "narael_3"
+                "nextPhraseID":"narael_3",
+                "text":"N"
             }
         ]
     },
     {
-        "id": "narael_3",
-        "message": "I was once a citizen in Nor City, and worked on the excavation of Mount Galmore.",
-        "replies": [
+        "message":"I was once a citizen in Fallhaven, and worked on the excavation of Mount Galmore.",
+        "id":"narael_3",
+        "replies":[
             {
-                "text": "N",
-                "nextPhraseID": "narael_4"
+                "nextPhraseID":"narael_4",
+                "text":"N"
             }
         ]
     },
     {
-        "id": "narael_4",
-        "message": "After a while, the day came when I wanted to quit the assignment and return to my wife.",
-        "replies": [
+        "message":"After a while, the day came when I wanted to quit the assignment and return to my wife.",
+        "id":"narael_4",
+        "replies":[
             {
-                "text": "N",
-                "nextPhraseID": "narael_5"
+                "nextPhraseID":"narael_5",
+                "text":"N"
             }
         ]
     },
     {
-        "id": "narael_5",
-        "message": "The officer in charge would not let me, and I was sent to Flagstone as a prisoner for disobeying orders.",
-        "replies": [
+        "message":"The officer in charge would not let me, and I was sent to Flagstone as a prisoner for disobeying orders.",
+        "id":"narael_5",
+        "replies":[
             {
-                "text": "N",
-                "nextPhraseID": "narael_6"
+                "nextPhraseID":"narael_6",
+                "text":"N"
             }
         ]
     },
     {
-        "id": "narael_6",
-        "message": "If only I could see my wife once more. I have hardly any life left in me, and I don't even have enough strength to leave this place.",
-        "replies": [
+        "message":"If only I could see my wife once more. I have hardly any life left in me, and I don't even have enough strength to leave this place.",
+        "id":"narael_6",
+        "replies":[
             {
-                "text": "N",
-                "nextPhraseID": "narael_7"
+                "nextPhraseID":"narael_7",
+                "text":"N"
             }
         ]
     },
     {
-        "id": "narael_7",
-        "message": "I guess my fate is to perish here, but now as a free man at least.",
-        "replies": [
+        "message":"I guess my fate is to perish here, but now as a free man at least.",
+        "id":"narael_7",
+        "replies":[
             {
-                "text": "N",
-                "nextPhraseID": "narael_8"
+                "nextPhraseID":"narael_8",
+                "text":"N"
             }
         ]
     },
     {
-        "id": "narael_8",
-        "message": "Now leave me to my fate. I do not have the strength to leave this place.",
-        "rewards": [
+        "message":"Now leave me to my fate. I do not have the strength to leave this place.",
+        "id":"narael_8",
+        "replies":[
             {
-                "rewardType": "questProgress",
-                "rewardID": "flagstone",
-                "value": 60
+                "nextPhraseID":"narael_9",
+                "text":"N"
             }
         ],
-        "replies": [
+        "rewards":[
             {
-                "text": "N",
-                "nextPhraseID": "narael_9"
+                "value":60,
+                "rewardID":"flagstone",
+                "rewardType":"questProgress"
             }
         ]
     },
     {
-        "id": "narael_9",
-        "message": "If you find my wife Taurum in Nor City, please tell her I'm alive and that I haven't forgotten about her.",
-        "replies": [
+        "message":"I'm too old to escape from this place now... But I have to keep living, I know something is going to happen and I will have a last role to play. Enjoy being young, son. Time is the enemy.",
+        "id":"narael_9",
+        "replies":[
             {
-                "text": "I will. Goodbye.",
-                "nextPhraseID": "X"
+                "nextPhraseID":"X",
+                "text":"I will. Goodbye."
             },
             {
-                "text": "I will. Shadow be with you.",
-                "nextPhraseID": "X"
+                "nextPhraseID":"X",
+                "text":"I will. Shadow be with you."
+            },
+            {
+                "nextPhraseID":"elythara3_narael",
+                "text":"Have you seen an oddly glowing helmet in this cave?",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "value":50,
+                        "requireID":"elythara3"
+                    },
+                    {
+                        "negate":true,
+                        "requireType":"questProgress",
+                        "value":51,
+                        "requireID":"elythara3"
+                    }
+                ]
+            },
+            {
+                "nextPhraseID":"narael_10",
+                "text":"Hello again. I've brought your ring to your wife. She is so sad about your destiny. Additionally she gave me some of your favorite bread and her ring.",
+                "requires":[
+                    {
+                        "requireType":"inventoryRemove",
+                        "value":1,
+                        "requireID":"elytharas3_bread"
+                    },
+                    {
+                        "requireType":"inventoryRemove",
+                        "value":1,
+                        "requireID":"NaraelRing2"
+                    }
+                ]
             }
         ]
     }

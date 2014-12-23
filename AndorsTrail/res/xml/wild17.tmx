@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" orientation="orthogonal" width="20" height="20" tilewidth="32" tileheight="32">
+<map version="1.0" orientation="orthogonal" width="20" height="27" tilewidth="32" tileheight="32">
  <properties>
   <property name="outdoors" value="1"/>
  </properties>
@@ -123,61 +123,91 @@
  <tileset firstgid="4917" name="map_window_2" tilewidth="32" tileheight="32">
   <image source="../drawable/map_window_2.png" width="512" height="256"/>
  </tileset>
- <layer name="Ground" width="20" height="20">
+ <layer name="Ground" width="20" height="27">
   <data encoding="base64" compression="zlib">
-   eJw7ysbAcHQUj+JRPIpH8SgmEQMA5289QA==
+   eJw7ysbAcJRMrMvEwKCHhsk1ixbm2QP1O6BhSswLBOpPgWIQO4hC80A4hQkVU2reKB7Fo3gUj+JRPBgxAJ9en8E=
   </data>
  </layer>
- <layer name="Objects" width="20" height="20">
+ <layer name="Objects" width="20" height="27">
   <data encoding="base64" compression="zlib">
-   eJx9VEEKwjAQ9OAxQt8l+AL7goJ4F/QBgh+0Bz1XMP2AqVnM0Om6m4GQpN1OZ2eT/TSrVcrjk8eUR6S99xx7mQHs7+G3T2HmGMIc9yTuR3muOXnelX90ed6WcaD/WuiDrxt4kab1Zl5Dm44Zw/Kd5BcrfkD3SBw1gOdd4QSS8g3Q8aw3Kj8kt1Oez4rfqn8yYix9+7xum1+NmUvQGz5Ep+b4RvguRSN0CDfy51zghXWGgWteH4nT8kXrs/IXyNmVc605a1wTnXldH4bmrPkvfnjeojY96WzLsyH8c+n/vCoxcq73xOfF8Zp7gnUfReOtWXrDveLt3AcB9xUA54Tvt45lfVoTamX56/Uj+X40eqCG5zv3nM64YwyrhlMz52d95/XZSXmg33EuPa2/vzvwMA==
+   eJyNVUtOwzAUtBDKKhW+Bys4BhInaE9QCbGmEhygEnvgAByKLIhYNqLNBZrgJ/zUyfQ9tyNZTmJ7PO+bEELYxRDGOJ2HNASbOkxwNQvhJo3bNH7z2lP1P1ZVmYsxpPP7vC5cnzO4J72vq2OuEbi+QVtDOn/yvrfE8Z7Hh6FP71c7O+I5hZK+luzm9+uLYz7Lf8wtWvl74+gvcZ1zF0P9taf4lr4zZwvvX1kv5gLmXAvcGm/mxPk+37FM810eD44tiqb2dSvQr5eQp6qN9/T1dG3IMbP8IVDd/Zn5pzzbAqdiIL8peD/q5foV21ZpfiZ+K/4D2eLl1Tw9L+KhLrBXcD3reqm/CN9L1qg6hHuop/wdxNvKYcU6PT8Cp+UX1sccCsldyWvmLHGNcdrjPG7m9Lh22R+ebzU2Dehc5G8bI5batxWds0cguTAHPm8fPmNPsOpRNL7GqW+wV2ydehBgX1FonmB9817Ux5o0VpZ/vX4k53ujBzK8vMOeszRqDGHFcIwH+6xzp/4PXi9GW7AX/gG52UFt
   </data>
  </layer>
- <layer name="Above" width="20" height="20">
+ <layer name="Above" width="20" height="27">
   <data encoding="base64" compression="zlib">
-   eJy1VEEOwCAI8wn7/6v4iPxgybYDiSGUgma9UovS4hg55Mrr+tYn4fyJr7c2+hu/ey7SiZBp+p7VOzCO98DzmT/mMeNN4HV0P+MJeO9uZlb/TpFpRDXm1w1qqxbaJ6TtNSvvzrLAtKKMVtD1w+ZQyb+AfJ/uMALKc/XfYHU/Kynorr3ZHunmrFj/CA/WiE6H
+   eJy9lEEOhDAIRV3M1mSuMQfzSp7LeI/2BpOoURJCoJ+vjX9j2uKDAqV8B0plt6/XP/N4fn8fjuFpvZhTIp5KxpxlLYZr1wxT5+mQrO0+I83wfPaWMBcibpSzKP63xOa/R92E46nFjHoICdnYGlh7VB+pMbIrRK8W1Wt6ryZ9tWLo1XMthneG6vUPzjQrek8R2zIz9271AmJ5PZoRWw/JQ3YGeXd6+oYjRf2cnRvo3OYqM4+1b/SO6s1cIf+eNmmtZiA=
   </data>
  </layer>
- <layer name="Walkable" width="20" height="20">
+ <layer name="Walkable" width="20" height="27" visible="0">
   <data encoding="base64" compression="zlib">
-   eJytk8ENACAIAx3Bpdh/Jb/GgF6LJH60HhRCzDHi49njdre/UZ4SLq/SZQzCpx6cHlT1/GAqc6o8u7nU/rtes3+vnKfHDkupj+ZR2BmL+iI6sjNKXcRvx3NWqxp0xu6O3zTOLOmOV7oFrWZCvg==
+   eJylk8kNACEMAylhm6L/lvjuw058ROKBZAbnut85lxwUSMPebyzG25h/jcpN/SVM5g/dU59pfduaNDw0L4g9/bd5SCPlMZ060+hd41eZhe2eMJ0+sZybWZ60KN90hiat21eX5fhT/3HYiKXmpeiUnXF8Kfk2OSOvbqg9Tnd80iS9VHec6R6yJV+h
   </data>
  </layer>
- <objectgroup name="Mapevents">
-  <object name="west" type="mapchange" x="0" y="32" width="32" height="96">
+ <objectgroup name="Mapevents" width="20" height="27">
+  <object name="west" type="mapchange" x="0" y="256" width="32" height="96">
    <properties>
     <property name="map" value="blackwater_mountain1"/>
     <property name="place" value="east"/>
    </properties>
   </object>
-  <object name="east" type="mapchange" x="608" y="512" width="32" height="96">
+  <object name="east" type="mapchange" x="608" y="736" width="32" height="96">
    <properties>
     <property name="map" value="blackwater_mountain0"/>
     <property name="place" value="west"/>
    </properties>
   </object>
+  <object name="northeast" type="mapchange" x="608" y="160" width="32" height="64">
+   <properties>
+    <property name="map" value="westriver4"/>
+    <property name="place" value="west"/>
+   </properties>
+  </object>
+  <object name="north" type="mapchange" x="224" y="0" width="160" height="32">
+   <properties>
+    <property name="map" value="westriver5"/>
+    <property name="place" value="southeast"/>
+   </properties>
+  </object>
+  <object name="northhigh" type="mapchange" x="512" y="0" width="32" height="32">
+   <properties>
+    <property name="map" value="westriver5"/>
+    <property name="place" value="southhigh"/>
+   </properties>
+  </object>
+  <object name="south" type="mapchange" x="224" y="832" width="32" height="32">
+   <properties>
+    <property name="map" value="stoutford_nw"/>
+    <property name="place" value="north"/>
+   </properties>
+  </object>
  </objectgroup>
- <objectgroup name="Spawn">
-  <object name="forestboar4" type="spawn" x="352" y="384" width="224" height="192">
+ <objectgroup name="Spawn" width="20" height="27">
+  <object name="forestboar4" type="spawn" x="352" y="608" width="224" height="192">
    <properties>
     <property name="quantity" value="2"/>
    </properties>
   </object>
-  <object name="forestwolf2" type="spawn" x="384" y="96" width="224" height="224">
+  <object name="forestwolf2" type="spawn" x="256" y="256" width="352" height="320">
    <properties>
     <property name="quantity" value="1"/>
    </properties>
   </object>
-  <object name="forestwolf1" type="spawn" x="32" y="320" width="288" height="256">
+  <object name="forestwolf1" type="spawn" x="32" y="384" width="288" height="256">
    <properties>
     <property name="quantity" value="2"/>
    </properties>
   </object>
-  <object name="forestbeetle" type="spawn" x="64" y="64" width="288" height="256">
+  <object name="forestbeetle" type="spawn" x="64" y="256" width="352" height="288">
    <properties>
     <property name="quantity" value="3"/>
    </properties>
   </object>
+  <object name="sakul_2" type="spawn" x="160" y="64" width="416" height="160"/>
+  <object name="sakul_2" type="spawn" x="512" y="32" width="64" height="32">
+   <properties>
+    <property name="respawn" value="false"/>
+   </properties>
+  </object>
  </objectgroup>
- <objectgroup name="Keys"/>
+ <objectgroup name="Keys" width="20" height="27"/>
 </map>

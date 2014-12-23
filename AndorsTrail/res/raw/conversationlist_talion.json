@@ -1,148 +1,159 @@
 [
     {
-        "id": "talion",
-        "replies": [
+        "id":"talion",
+        "replies":[
             {
-                "nextPhraseID": "talion_0",
-                "requires": [
+                "nextPhraseID":"talion_0",
+                "requires":[
                     {
-                        "requireType": "questProgress",
-                        "requireID": "maggots",
-                        "value": "51"
+                        "requireType":"questProgress",
+                        "value":51,
+                        "requireID":"maggots"
                     }
                 ]
             },
             {
-                "nextPhraseID": "talion_cured_1",
-                "requires": [
+                "nextPhraseID":"talion_cured_1",
+                "requires":[
                     {
-                        "requireType": "questProgress",
-                        "requireID": "maggots",
-                        "value": "50"
+                        "requireType":"questProgress",
+                        "value":50,
+                        "requireID":"maggots"
                     }
                 ]
             },
             {
-                "nextPhraseID": "talion_cure_5",
-                "requires": [
+                "nextPhraseID":"talion_cure_5",
+                "requires":[
                     {
-                        "requireType": "questProgress",
-                        "requireID": "maggots",
-                        "value": "45"
+                        "requireType":"questProgress",
+                        "value":45,
+                        "requireID":"maggots"
                     }
                 ]
             },
             {
-                "nextPhraseID": "talion_infect_30",
-                "requires": [
+                "nextPhraseID":"talion_infect_30",
+                "requires":[
                     {
-                        "requireType": "questProgress",
-                        "requireID": "maggots",
-                        "value": "30"
+                        "requireType":"questProgress",
+                        "value":30,
+                        "requireID":"maggots"
                     }
                 ]
             },
             {
-                "nextPhraseID": "talion_infect_1",
-                "requires": [
+                "nextPhraseID":"talion_infect_1",
+                "requires":[
                     {
-                        "requireType": "questProgress",
-                        "requireID": "maggots",
-                        "value": "10"
+                        "requireType":"questProgress",
+                        "value":10,
+                        "requireID":"maggots"
                     }
                 ]
             },
             {
-                "nextPhraseID": "talion_0"
+                "nextPhraseID":"talion_0"
             }
         ]
     },
     {
-        "id": "talion_0",
-        "message": "Shadow be with you.",
-        "replies": [
+        "message":"Shadow be with you.",
+        "id":"talion_0",
+        "replies":[
             {
-                "text": "Do you know anything about the illness here in Loneford?",
-                "nextPhraseID": "talion_1",
-                "requires": [
+                "nextPhraseID":"talion_1",
+                "text":"Do you know anything about the illness here in Loneford?",
+                "requires":[
                     {
-                        "requireType": "questProgress",
-                        "requireID": "loneford",
-                        "value": "11"
+                        "requireType":"questProgress",
+                        "value":11,
+                        "requireID":"loneford"
                     }
                 ]
             },
             {
-                "text": "Do you have anything to trade?",
-                "nextPhraseID": "S"
+                "nextPhraseID":"S",
+                "text":"Do you have anything to trade?"
             },
             {
-                "text": "What blessings can you provide?",
-                "nextPhraseID": "talion_bless_1",
-                "requires": [
+                "nextPhraseID":"talion_bless_1",
+                "text":"What blessings can you provide?",
+                "requires":[
                     {
-                        "requireType": "questProgress",
-                        "requireID": "maggots",
-                        "value": "51"
+                        "requireType":"questProgress",
+                        "value":51,
+                        "requireID":"maggots"
+                    }
+                ]
+            },
+            {
+                "nextPhraseID":"elythara3_ShadowP_loneford",
+                "text":"Do you know any ancient sanctuaries of our religion?",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "value":70,
+                        "requireID":"elythara3"
                     }
                 ]
             }
         ]
     },
     {
-        "id": "talion_1",
-        "message": "The people of Loneford are very keen on following the will of Feygard, whatever it may be.",
-        "replies": [
+        "message":"The people of Loneford are very keen on following the will of Feygard, whatever it may be.",
+        "id":"talion_1",
+        "replies":[
             {
-                "text": "N",
-                "nextPhraseID": "talion_2"
+                "nextPhraseID":"talion_2",
+                "text":"N"
             }
         ]
     },
     {
-        "id": "talion_2",
-        "message": "Normally, this would not be a problem. But Lord Geomyr seems to have something against the Shadow. He will do almost anything to oppose all actions that in some way extend the reach of the Shadow.",
-        "replies": [
+        "message":"Normally, this would not be a problem. But Lord Geomyr seems to have something against the Shadow. He will do almost anything to oppose all actions that in some way extend the reach of the Shadow.",
+        "id":"talion_2",
+        "replies":[
             {
-                "text": "N",
-                "nextPhraseID": "talion_3"
+                "nextPhraseID":"talion_3",
+                "text":"N"
             }
         ]
     },
     {
-        "id": "talion_3",
-        "message": "Because of this, the people of Loneford are now actively abolishing the thought of the Shadow guiding them through their lives.",
-        "replies": [
+        "message":"Because of this, the people of Loneford are now actively abolishing the thought of the Shadow guiding them through their lives.",
+        "id":"talion_3",
+        "replies":[
             {
-                "text": "N",
-                "nextPhraseID": "talion_4"
+                "nextPhraseID":"talion_4",
+                "text":"N"
             }
         ]
     },
     {
-        "id": "talion_4",
-        "message": "People around here would rather follow the law of Feygard than follow the old ways.",
-        "replies": [
+        "message":"People around here would rather follow the law of Feygard than follow the old ways.",
+        "id":"talion_4",
+        "replies":[
             {
-                "text": "N",
-                "nextPhraseID": "talion_5"
+                "nextPhraseID":"talion_5",
+                "text":"N"
             }
         ]
     },
     {
-        "id": "talion_5",
-        "message": "My feeling is that this illness is caused by the Shadow, as punishment to all of us here in Loneford.",
-        "rewards": [
+        "message":"My feeling is that this illness is caused by the Shadow, as punishment to all of us here in Loneford.",
+        "id":"talion_5",
+        "replies":[
             {
-                "rewardType": "questProgress",
-                "rewardID": "loneford",
-                "value": 23
+                "nextPhraseID":"loneford_ill_c_1",
+                "text":"N"
             }
         ],
-        "replies": [
+        "rewards":[
             {
-                "text": "N",
-                "nextPhraseID": "loneford_ill_c_1"
+                "value":23,
+                "rewardID":"loneford",
+                "rewardType":"questProgress"
             }
         ]
     }

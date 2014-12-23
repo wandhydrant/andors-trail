@@ -1,0 +1,135 @@
+[
+    {
+        "id":"elythara_sword",
+        "category":"other",
+        "hasManualPrice":1,
+        "description":"This longsword contains one of Elythara's soul part.",
+        "name":"Glowing Longsword",
+        "iconID":"items_weapons_3:0"
+    },
+    {
+        "id":"ElytharasChants",
+        "category":"other",
+        "hasManualPrice":1,
+        "name":"Elythara's Chants",
+        "iconID":"items_books:5"
+    },
+    {
+        "id":"elythara1_bread",
+        "category":"other",
+        "hasManualPrice":1,
+        "name":"Edwin's bread",
+        "iconID":"items_consumables:21"
+    },
+    {
+        "id":"elytharas3_bread",
+        "category":"other",
+        "hasManualPrice":1,
+        "name":"Narael's bread",
+        "iconID":"items_consumables:22"
+    },
+    {
+        "id":"naraelring1",
+        "category":"other",
+        "hasManualPrice":1,
+        "name":"Narael's ring",
+        "iconID":"items_rings_1:17"
+    },
+    {
+        "id":"NaraelRing2",
+        "category":"other",
+        "hasManualPrice":1,
+        "name":"Narael's wife ring",
+        "iconID":"items_rings_1:16"
+    },
+    {
+        "id":"elythara_shield",
+        "category":"other",
+        "hasManualPrice":1,
+        "description":"This shield contains one of Elythara's soul part.",
+        "name":"Glowing Shield",
+        "iconID":"items_armours_3:27"
+    },
+    {
+        "id":"elythara_helmet",
+        "category":"other",
+        "hasManualPrice":1,
+        "description":"This helmet contains one of Elythara's soul part.",
+        "name":"Glowing Helmet",
+        "iconID":"items_armours_3:32"
+    },
+    {
+        "id":"elythara_sword_1",
+        "hitEffect":{
+            "conditionsTarget":[
+                {
+                    "duration":1,
+                    "condition":"elythara_smite",
+                    "magnitude":1,
+                    "chance":"30"
+                }
+            ]
+        },
+        "category":"lsword",
+        "hasManualPrice":1,
+        "baseMarketCost":2000,
+        "name":"Elythara's Might",
+        "equipEffect":{
+            "increaseAttackCost":4,
+            "increaseAttackDamage":{
+                "min":1,
+                "max":10
+            },
+            "increaseAttackChance":20,
+            "increaseMaxHP":10
+        },
+        "iconID":"items_weapons_3:0"
+    },
+    {
+        "id":"elythara_shield_1",
+        "hitEffect":{
+            "conditionsSource":[
+                {
+                    "duration":1,
+                    "condition":"elythara_lightshield",
+                    "magnitude":1,
+                    "chance":"10"
+                }
+            ]
+        },
+        "category":"shld_mtl_hv",
+        "hasManualPrice":1,
+        "baseMarketCost":2000,
+        "name":"Elythara's Guard",
+        "equipEffect":{
+            "increaseDamageResistance":1,
+            "increaseBlockChance":25,
+            "increaseAttackChance":-10,
+            "increaseMaxHP":5
+        },
+        "iconID":"items_armours_3:27"
+    },
+    {
+        "id":"elythara_helmet_1",
+        "hitEffect":{
+            "conditionsSource":[
+                {
+                    "duration":1,
+                    "condition":"elythara_sentence",
+                    "magnitude":1,
+                    "chance":"30"
+                }
+            ]
+        },
+        "category":"hd_mtl_hv",
+        "hasManualPrice":1,
+        "baseMarketCost":2000,
+        "name":"Elythara's Leniency",
+        "equipEffect":{
+            "increaseBlockChance":10,
+            "increaseAttackChance":3,
+            "increaseMaxHP":5
+        },
+        "iconID":"items_armours_3:32"
+    }
+]

@@ -17,6 +17,39 @@
             {
                 "text": "You really seem to like your books.",
                 "nextPhraseID": "arcir_books_1"
+            },
+            {
+                "requires": [
+                    {
+                        "requireType": "questProgress",
+                        "requireID": "elythara2",
+                        "value": "10"
+                    }
+                ],
+                "text": "Edwin sent me to help you.",
+                "nextPhraseID": "elythara_arcir"
+            },
+            {
+                "requires": [
+                    {
+                        "requireType": "questProgress",
+                        "requireID": "elythara3",
+                        "value": "50"
+                    }
+                ],
+                "text": "Do you know where I could find the Soul parts?",
+                "nextPhraseID": "arcir_soulpart"
+            },
+            {
+                "requires": [
+                    {
+                        "requireType": "inventoryKeep",
+                        "requireID": "ElytharasChants",
+                        "value": 1
+                    }
+                ],
+                "text": "You wanted me to find your book, Elythara's Chant.",
+                "nextPhraseID": "elythara_arcir_2"
             }
         ]
     },

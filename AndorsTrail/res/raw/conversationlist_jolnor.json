@@ -1,641 +1,674 @@
 [
     {
-        "id": "jolnor_select_1",
-        "replies": [
+        "id":"jolnor_select_1",
+        "replies":[
             {
-                "nextPhraseID": "jolnor_default_3",
-                "requires": [
+                "nextPhraseID":"jolnor_default_3",
+                "requires":[
                     {
-                        "requireType": "questProgress",
-                        "requireID": "vilegard",
-                        "value": "30"
+                        "requireType":"questProgress",
+                        "value":30,
+                        "requireID":"vilegard"
                     }
                 ]
             },
             {
-                "nextPhraseID": "jolnor_default_2",
-                "requires": [
+                "nextPhraseID":"jolnor_default_2",
+                "requires":[
                     {
-                        "requireType": "questProgress",
-                        "requireID": "vilegard",
-                        "value": "20"
+                        "requireType":"questProgress",
+                        "value":20,
+                        "requireID":"vilegard"
                     }
                 ]
             },
             {
-                "nextPhraseID": "jolnor_default"
+                "nextPhraseID":"jolnor_default"
             }
         ]
     },
     {
-        "id": "jolnor_default",
-        "message": "Walk with the Shadow my child.",
-        "replies": [
+        "message":"Walk with the Shadow my child.",
+        "id":"jolnor_default",
+        "replies":[
             {
-                "text": "What is this place?",
-                "nextPhraseID": "jolnor_chapel_1"
+                "nextPhraseID":"jolnor_chapel_1",
+                "text":"What is this place?"
             },
             {
-                "text": "I was told to talk to you about why everyone in Vilegard is suspicious of outsiders.",
-                "nextPhraseID": "jolnor_suspicious_1",
-                "requires": [
+                "nextPhraseID":"jolnor_suspicious_1",
+                "text":"I was told to talk to you about why everyone in Vilegard is suspicious of outsiders.",
+                "requires":[
                     {
-                        "requireType": "questProgress",
-                        "requireID": "vilegard",
-                        "value": "10"
+                        "requireType":"questProgress",
+                        "value":10,
+                        "requireID":"vilegard"
+                    }
+                ]
+            },
+            {
+                "nextPhraseID":"elythara3_ShadowP_vilegarde",
+                "text":"Do you know any ancient sanctuaries of our religion?",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "value":70,
+                        "requireID":"elythara3"
                     }
                 ]
             }
         ]
     },
     {
-        "id": "jolnor_default_2",
-        "message": "Walk with the Shadow my child.",
-        "replies": [
+        "message":"Walk with the Shadow my child.",
+        "id":"jolnor_default_2",
+        "replies":[
             {
-                "text": "Can you tell me again what this place is?",
-                "nextPhraseID": "jolnor_chapel_1"
+                "nextPhraseID":"jolnor_chapel_1",
+                "text":"Can you tell me again what this place is?"
             },
             {
-                "text": "Let's talk about those missions for gaining trust that you talked about earlier.",
-                "nextPhraseID": "jolnor_quests_1"
+                "nextPhraseID":"jolnor_quests_1",
+                "text":"Let's talk about those missions for gaining trust that you talked about earlier."
             },
             {
-                "text": "I require healing. Can I see what items you have available?",
-                "nextPhraseID": "jolnor_shop_1"
-            }
-        ]
-    },
-    {
-        "id": "jolnor_default_3",
-        "message": "Walk with the Shadow my friend.",
-        "replies": [
-            {
-                "text": "Can you tell me again what this place is?",
-                "nextPhraseID": "jolnor_chapel_1"
+                "nextPhraseID":"jolnor_shop_1",
+                "text":"I require healing. Can I see what items you have available?"
             },
             {
-                "text": "I require healing. Can I see what items you have available?",
-                "nextPhraseID": "jolnor_shop_1"
-            }
-        ]
-    },
-    {
-        "id": "jolnor_chapel_1",
-        "message": "This is Vilegard's place of worship for the Shadow. We praise the Shadow in all its might and glory.",
-        "replies": [
-            {
-                "text": "Can you tell me more about the Shadow?",
-                "nextPhraseID": "jolnor_shadow_1"
-            },
-            {
-                "text": "I require healing. Can I see what items you have available?",
-                "nextPhraseID": "jolnor_shop_1"
-            },
-            {
-                "text": "Whatever. Just show me your goods.",
-                "nextPhraseID": "jolnor_shop_1"
-            }
-        ]
-    },
-    {
-        "id": "jolnor_shadow_1",
-        "message": "The Shadow protects us from the dangers of the night. It keeps us safe and comforts us when we sleep.",
-        "replies": [
-            {
-                "text": "N",
-                "nextPhraseID": "jolnor_select_1"
-            }
-        ]
-    },
-    {
-        "id": "jolnor_shop_1",
-        "replies": [
-            {
-                "nextPhraseID": "S",
-                "requires": [
+                "nextPhraseID":"elythara3_ShadowP_vilegarde",
+                "text":"Do you know any ancient sanctuaries of our religion?",
+                "requires":[
                     {
-                        "requireType": "questProgress",
-                        "requireID": "vilegard",
-                        "value": "30"
+                        "requireType":"questProgress",
+                        "value":70,
+                        "requireID":"elythara3"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "message":"Walk with the Shadow my friend.",
+        "id":"jolnor_default_3",
+        "replies":[
+            {
+                "nextPhraseID":"jolnor_chapel_1",
+                "text":"Can you tell me again what this place is?"
+            },
+            {
+                "nextPhraseID":"jolnor_shop_1",
+                "text":"I require healing. Can I see what items you have available?"
+            },
+            {
+                "nextPhraseID":"elythara3_ShadowP_vilegarde",
+                "text":"Do you know any ancient sanctuaries of our religion?",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "value":70,
+                        "requireID":"elythara3"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "message":"This is Vilegard's place of worship for the Shadow. We praise the Shadow in all its might and glory.",
+        "id":"jolnor_chapel_1",
+        "replies":[
+            {
+                "nextPhraseID":"jolnor_shadow_1",
+                "text":"Can you tell me more about the Shadow?"
+            },
+            {
+                "nextPhraseID":"jolnor_shop_1",
+                "text":"I require healing. Can I see what items you have available?"
+            },
+            {
+                "nextPhraseID":"jolnor_shop_1",
+                "text":"Whatever. Just show me your goods."
+            }
+        ]
+    },
+    {
+        "message":"The Shadow protects us from the dangers of the night. It keeps us safe and comforts us when we sleep.",
+        "id":"jolnor_shadow_1",
+        "replies":[
+            {
+                "nextPhraseID":"jolnor_select_1",
+                "text":"N"
+            }
+        ]
+    },
+    {
+        "id":"jolnor_shop_1",
+        "replies":[
+            {
+                "nextPhraseID":"S",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "value":30,
+                        "requireID":"vilegard"
                     }
                 ]
             },
             {
-                "nextPhraseID": "jolnor_shop_2"
+                "nextPhraseID":"jolnor_shop_2"
             }
         ]
     },
     {
-        "id": "jolnor_shop_2",
-        "message": "I don't trust you enough yet to feel comfortable trading with you.",
-        "replies": [
+        "message":"I don't trust you enough yet to feel comfortable trading with you.",
+        "id":"jolnor_shop_2",
+        "replies":[
             {
-                "text": "Why are you that suspicious?",
-                "nextPhraseID": "jolnor_suspicious_1"
+                "nextPhraseID":"jolnor_suspicious_1",
+                "text":"Why are you that suspicious?"
             },
             {
-                "text": "Very well.",
-                "nextPhraseID": "jolnor_select_1"
+                "nextPhraseID":"jolnor_select_1",
+                "text":"Very well."
             }
         ]
     },
     {
-        "id": "jolnor_suspicious_1",
-        "message": "Suspicious? No, I wouldn't call it suspicion. I would rather call it that we are careful nowadays.",
-        "replies": [
+        "message":"Suspicious? No, I wouldn't call it suspicion. I would rather call it that we are careful nowadays.",
+        "id":"jolnor_suspicious_1",
+        "replies":[
             {
-                "text": "N",
-                "nextPhraseID": "jolnor_suspicious_2"
+                "nextPhraseID":"jolnor_suspicious_2",
+                "text":"N"
             }
         ]
     },
     {
-        "id": "jolnor_suspicious_2",
-        "message": "In order to gain the trust of the village, an outsider must prove that they are not here to cause trouble.",
-        "replies": [
+        "message":"In order to gain the trust of the village, an outsider must prove that they are not here to cause trouble.",
+        "id":"jolnor_suspicious_2",
+        "replies":[
             {
-                "text": "Sounds like a good idea. There are a lot of selfish people out there.",
-                "nextPhraseID": "jolnor_suspicious_3"
+                "nextPhraseID":"jolnor_suspicious_3",
+                "text":"Sounds like a good idea. There are a lot of selfish people out there."
             },
             {
-                "text": "That sounds really unnecessary. Why not trust people in the first place?",
-                "nextPhraseID": "jolnor_suspicious_4"
+                "nextPhraseID":"jolnor_suspicious_4",
+                "text":"That sounds really unnecessary. Why not trust people in the first place?"
             }
         ]
     },
     {
-        "id": "jolnor_suspicious_3",
-        "message": "Yes, right. You seem to understand us well, I like that.",
-        "replies": [
+        "message":"Yes, right. You seem to understand us well, I like that.",
+        "id":"jolnor_suspicious_3",
+        "replies":[
             {
-                "text": "Is there anything I can do to gain your trust?",
-                "nextPhraseID": "jolnor_gaintrust_select"
+                "nextPhraseID":"jolnor_gaintrust_select",
+                "text":"Is there anything I can do to gain your trust?"
             }
         ]
     },
     {
-        "id": "jolnor_suspicious_4",
-        "message": "We have learned from history not to trust outsiders, and you are an outsider. Why should we trust you?",
-        "replies": [
+        "message":"We have learned from history not to trust outsiders, and you are an outsider. Why should we trust you?",
+        "id":"jolnor_suspicious_4",
+        "replies":[
             {
-                "text": "What can I do to gain your trust?",
-                "nextPhraseID": "jolnor_gaintrust_select"
+                "nextPhraseID":"jolnor_gaintrust_select",
+                "text":"What can I do to gain your trust?"
             },
             {
-                "text": "You are right. You probably should not trust me.",
-                "nextPhraseID": "X"
+                "nextPhraseID":"X",
+                "text":"You are right. You probably should not trust me."
             }
         ]
     },
     {
-        "id": "jolnor_gaintrust_select",
-        "replies": [
+        "id":"jolnor_gaintrust_select",
+        "replies":[
             {
-                "nextPhraseID": "jolnor_gaintrust_return_2",
-                "requires": [
+                "nextPhraseID":"jolnor_gaintrust_return_2",
+                "requires":[
                     {
-                        "requireType": "questProgress",
-                        "requireID": "vilegard",
-                        "value": "30"
+                        "requireType":"questProgress",
+                        "value":30,
+                        "requireID":"vilegard"
                     }
                 ]
             },
             {
-                "nextPhraseID": "jolnor_gaintrust_return",
-                "requires": [
+                "nextPhraseID":"jolnor_gaintrust_return",
+                "requires":[
                     {
-                        "requireType": "questProgress",
-                        "requireID": "vilegard",
-                        "value": "20"
+                        "requireType":"questProgress",
+                        "value":20,
+                        "requireID":"vilegard"
                     }
                 ]
             },
             {
-                "nextPhraseID": "jolnor_gaintrust_1"
+                "nextPhraseID":"jolnor_gaintrust_1"
             }
         ]
     },
     {
-        "id": "jolnor_gaintrust_return_2",
-        "message": "With your help earlier, you have already gained our trust.",
-        "replies": [
+        "message":"With your help earlier, you have already gained our trust.",
+        "id":"jolnor_gaintrust_return_2",
+        "replies":[
             {
-                "text": "N",
-                "nextPhraseID": "jolnor_default_3"
+                "nextPhraseID":"jolnor_default_3",
+                "text":"N"
             }
         ]
     },
     {
-        "id": "jolnor_gaintrust_return",
-        "message": "As I said before, you have to help some people here in Vilegard to gain our trust.",
-        "replies": [
+        "message":"As I said before, you have to help some people here in Vilegard to gain our trust.",
+        "id":"jolnor_gaintrust_return",
+        "replies":[
             {
-                "text": "N",
-                "nextPhraseID": "jolnor_quests_1"
+                "nextPhraseID":"jolnor_quests_1",
+                "text":"N"
             }
         ]
     },
     {
-        "id": "jolnor_gaintrust_1",
-        "message": "If you do us a favor, we might consider trusting you. There are three people I can think of that are influential here in Vilegard, that you should try to help.",
-        "replies": [
+        "message":"If you do us a favor, we might consider trusting you. There are three people I can think of that are influential here in Vilegard, that you should try to help.",
+        "id":"jolnor_gaintrust_1",
+        "replies":[
             {
-                "text": "N",
-                "nextPhraseID": "jolnor_gaintrust_2"
+                "nextPhraseID":"jolnor_gaintrust_2",
+                "text":"N"
             }
         ]
     },
     {
-        "id": "jolnor_gaintrust_2",
-        "message": "First, there is Kaori. She lives up in the northern part of Vilegard. Ask her if she wants help with anything.",
-        "rewards": [
+        "message":"First, there is Kaori. She lives up in the northern part of Vilegard. Ask her if she wants help with anything.",
+        "id":"jolnor_gaintrust_2",
+        "replies":[
             {
-                "rewardType": "questProgress",
-                "rewardID": "kaori",
-                "value": 5
+                "nextPhraseID":"jolnor_gaintrust_3",
+                "text":"Ok. Talk to Kaori. Got it."
             }
         ],
-        "replies": [
+        "rewards":[
             {
-                "text": "Ok. Talk to Kaori. Got it.",
-                "nextPhraseID": "jolnor_gaintrust_3"
+                "value":5,
+                "rewardID":"kaori",
+                "rewardType":"questProgress"
             }
         ]
     },
     {
-        "id": "jolnor_gaintrust_3",
-        "message": "Then there is Wrye. Wrye also lives up in the northern part of Vilegard. Many people here in Vilegard seek her advice on various things.",
-        "replies": [
+        "message":"Then there is Wrye. Wrye also lives up in the northern part of Vilegard. Many people here in Vilegard seek her advice on various things.",
+        "id":"jolnor_gaintrust_3",
+        "replies":[
             {
-                "text": "N",
-                "nextPhraseID": "jolnor_gaintrust_4"
+                "nextPhraseID":"jolnor_gaintrust_4",
+                "text":"N"
             }
         ]
     },
     {
-        "id": "jolnor_gaintrust_4",
-        "message": "She recently lost her son in a tragic way. If you can gain her trust, you will have a strong ally here.",
-        "rewards": [
+        "message":"She recently lost her son in a tragic way. If you can gain her trust, you will have a strong ally here.",
+        "id":"jolnor_gaintrust_4",
+        "replies":[
             {
-                "rewardType": "questProgress",
-                "rewardID": "wrye",
-                "value": 10
+                "nextPhraseID":"jolnor_gaintrust_5",
+                "text":"Talk to Wrye. Got it."
             }
         ],
-        "replies": [
+        "rewards":[
             {
-                "text": "Talk to Wrye. Got it.",
-                "nextPhraseID": "jolnor_gaintrust_5"
+                "value":10,
+                "rewardID":"wrye",
+                "rewardType":"questProgress"
             }
         ]
     },
     {
-        "id": "jolnor_gaintrust_5",
-        "message": "And last but not least, I have a favor to ask of you as well.",
-        "replies": [
+        "message":"And last but not least, I have a favor to ask of you as well.",
+        "id":"jolnor_gaintrust_5",
+        "replies":[
             {
-                "text": "What favor is that?",
-                "nextPhraseID": "jolnor_gaintrust_6"
+                "nextPhraseID":"jolnor_gaintrust_6",
+                "text":"What favor is that?"
             }
         ]
     },
     {
-        "id": "jolnor_gaintrust_6",
-        "message": "North of Vilegard is a tavern called the Foaming Flask. In my opinion, this tavern is a guard station in guise for Feygard.",
-        "replies": [
+        "message":"North of Vilegard is a tavern called the Foaming Flask. In my opinion, this tavern is a guard station in guise for Feygard.",
+        "id":"jolnor_gaintrust_6",
+        "replies":[
             {
-                "text": "N",
-                "nextPhraseID": "jolnor_gaintrust_7"
+                "nextPhraseID":"jolnor_gaintrust_7",
+                "text":"N"
             }
         ]
     },
     {
-        "id": "jolnor_gaintrust_7",
-        "message": "The tavern is almost always visited by the Feygard royal guard of Lord Geomyr.",
-        "replies": [
+        "message":"The tavern is almost always visited by the Feygard royal guard of Lord Geomyr.",
+        "id":"jolnor_gaintrust_7",
+        "replies":[
             {
-                "text": "N",
-                "nextPhraseID": "jolnor_gaintrust_8"
+                "nextPhraseID":"jolnor_gaintrust_8",
+                "text":"N"
             }
         ]
     },
     {
-        "id": "jolnor_gaintrust_8",
-        "message": "They are probably here to spy on us, since we are followers of the Shadow. Lord Geomyr's forces always try to make life difficult for us and the Shadow.",
-        "replies": [
+        "message":"They are probably here to spy on us, since we are followers of the Shadow. Lord Geomyr's forces always try to make life difficult for us and the Shadow.",
+        "id":"jolnor_gaintrust_8",
+        "replies":[
             {
-                "text": "Yes, they seem like troublemakers all around.",
-                "nextPhraseID": "jolnor_gaintrust_9"
+                "nextPhraseID":"jolnor_gaintrust_9",
+                "text":"Yes, they seem like troublemakers all around."
             },
             {
-                "text": "I am sure they have their reasons for doing what they do.",
-                "nextPhraseID": "jolnor_gaintrust_10"
+                "nextPhraseID":"jolnor_gaintrust_10",
+                "text":"I am sure they have their reasons for doing what they do."
             }
         ]
     },
     {
-        "id": "jolnor_gaintrust_9",
-        "message": "Right. Troublemakers indeed.",
-        "replies": [
+        "message":"Right. Troublemakers indeed.",
+        "id":"jolnor_gaintrust_9",
+        "replies":[
             {
-                "text": "What do you want me to do?",
-                "nextPhraseID": "jolnor_gaintrust_11"
+                "nextPhraseID":"jolnor_gaintrust_11",
+                "text":"What do you want me to do?"
             }
         ]
     },
     {
-        "id": "jolnor_gaintrust_10",
-        "message": "Yes, their reason is to make life miserable for us, I am sure.",
-        "replies": [
+        "message":"Yes, their reason is to make life miserable for us, I am sure.",
+        "id":"jolnor_gaintrust_10",
+        "replies":[
             {
-                "text": "What do you want me to do?",
-                "nextPhraseID": "jolnor_gaintrust_11"
+                "nextPhraseID":"jolnor_gaintrust_11",
+                "text":"What do you want me to do?"
             }
         ]
     },
     {
-        "id": "jolnor_gaintrust_11",
-        "message": "My reports say that there is a guard stationed outside the tavern, to keep an eye on potential dangers.",
-        "replies": [
+        "message":"My reports say that there is a guard stationed outside the tavern, to keep an eye on potential dangers.",
+        "id":"jolnor_gaintrust_11",
+        "replies":[
             {
-                "text": "N",
-                "nextPhraseID": "jolnor_gaintrust_12"
+                "nextPhraseID":"jolnor_gaintrust_12",
+                "text":"N"
             }
         ]
     },
     {
-        "id": "jolnor_gaintrust_12",
-        "message": "I want you to make sure the guard disappears somehow. How you do that is purely up to you.",
-        "rewards": [
+        "message":"I want you to make sure the guard disappears somehow. How you do that is purely up to you.",
+        "id":"jolnor_gaintrust_12",
+        "replies":[
             {
-                "rewardType": "questProgress",
-                "rewardID": "jolnor",
-                "value": 10
+                "nextPhraseID":"jolnor_gaintrust_13",
+                "text":"I am not sure I should upset the Feygard patrol guards. This could really get me into trouble."
+            },
+            {
+                "nextPhraseID":"jolnor_gaintrust_14",
+                "text":"For the Shadow, I will do as you ask."
+            },
+            {
+                "nextPhraseID":"jolnor_gaintrust_14",
+                "text":"Ok, I hope this leads to some treasure in the end."
             }
         ],
-        "replies": [
+        "rewards":[
             {
-                "text": "I am not sure I should upset the Feygard patrol guards. This could really get me into trouble.",
-                "nextPhraseID": "jolnor_gaintrust_13"
-            },
-            {
-                "text": "For the Shadow, I will do as you ask.",
-                "nextPhraseID": "jolnor_gaintrust_14"
-            },
-            {
-                "text": "Ok, I hope this leads to some treasure in the end.",
-                "nextPhraseID": "jolnor_gaintrust_14"
+                "value":10,
+                "rewardID":"jolnor",
+                "rewardType":"questProgress"
             }
         ]
     },
     {
-        "id": "jolnor_gaintrust_13",
-        "message": "It's your choice. You can at least go check out the tavern and see if you find anything suspicious.",
-        "replies": [
+        "message":"It's your choice. You can at least go check out the tavern and see if you find anything suspicious.",
+        "id":"jolnor_gaintrust_13",
+        "replies":[
             {
-                "text": "Maybe.",
-                "nextPhraseID": "jolnor_gaintrust_15"
+                "nextPhraseID":"jolnor_gaintrust_15",
+                "text":"Maybe."
             }
         ]
     },
     {
-        "id": "jolnor_gaintrust_14",
-        "message": "Good. Report back to me when you are done.",
-        "replies": [
+        "message":"Good. Report back to me when you are done.",
+        "id":"jolnor_gaintrust_14",
+        "replies":[
             {
-                "text": "N",
-                "nextPhraseID": "jolnor_gaintrust_15"
+                "nextPhraseID":"jolnor_gaintrust_15",
+                "text":"N"
             }
         ]
     },
     {
-        "id": "jolnor_gaintrust_15",
-        "message": "So, in order to gain our trust here in Vilegard, I would suggest you help Kaori, Wrye and me.",
-        "rewards": [
+        "message":"So, in order to gain our trust here in Vilegard, I would suggest you help Kaori, Wrye and me.",
+        "id":"jolnor_gaintrust_15",
+        "replies":[
             {
-                "rewardType": "questProgress",
-                "rewardID": "vilegard",
-                "value": 20
+                "nextPhraseID":"X",
+                "text":"Thank you for the information. I will be back when I have something to report."
             }
         ],
-        "replies": [
+        "rewards":[
             {
-                "text": "Thank you for the information. I will be back when I have something to report.",
-                "nextPhraseID": "X"
+                "value":20,
+                "rewardID":"vilegard",
+                "rewardType":"questProgress"
             }
         ]
     },
     {
-        "id": "jolnor_quests_1",
-        "message": "I would suggest you help Kaori, Wrye and me to gain our trust.",
-        "replies": [
+        "message":"I would suggest you help Kaori, Wrye and me to gain our trust.",
+        "id":"jolnor_quests_1",
+        "replies":[
             {
-                "text": "About that guard outside the Foaming Flask tavern...",
-                "nextPhraseID": "jolnor_guard_select"
+                "nextPhraseID":"jolnor_guard_select",
+                "text":"About that guard outside the Foaming Flask tavern..."
             },
             {
-                "text": "About those tasks...",
-                "nextPhraseID": "jolnor_quests_2"
+                "nextPhraseID":"jolnor_quests_2",
+                "text":"About those tasks..."
             },
             {
-                "text": "Never mind, let's get back to those other topics.",
-                "nextPhraseID": "jolnor_select_1"
+                "nextPhraseID":"jolnor_select_1",
+                "text":"Never mind, let's get back to those other topics."
             }
         ]
     },
     {
-        "id": "jolnor_quests_2",
-        "message": "Yes, what about them?",
-        "replies": [
+        "message":"Yes, what about them?",
+        "id":"jolnor_quests_2",
+        "replies":[
             {
-                "text": "What was I supposed to do again?",
-                "nextPhraseID": "jolnor_suspicious_2"
+                "nextPhraseID":"jolnor_suspicious_2",
+                "text":"What was I supposed to do again?"
             },
             {
-                "text": "I have done all the tasks you asked me to do.",
-                "nextPhraseID": "jolnor_quests_select_1",
-                "requires": [
+                "nextPhraseID":"jolnor_quests_select_1",
+                "text":"I have done all the tasks you asked me to do.",
+                "requires":[
                     {
-                        "requireType": "questProgress",
-                        "requireID": "jolnor",
-                        "value": "30"
+                        "requireType":"questProgress",
+                        "value":30,
+                        "requireID":"jolnor"
                     }
                 ]
             },
             {
-                "text": "Never mind, let's get back to those other topics.",
-                "nextPhraseID": "jolnor_select_1"
+                "nextPhraseID":"jolnor_select_1",
+                "text":"Never mind, let's get back to those other topics."
             }
         ]
     },
     {
-        "id": "jolnor_guard_select",
-        "replies": [
+        "id":"jolnor_guard_select",
+        "replies":[
             {
-                "nextPhraseID": "jolnor_guard_completed",
-                "requires": [
+                "nextPhraseID":"jolnor_guard_completed",
+                "requires":[
                     {
-                        "requireType": "questProgress",
-                        "requireID": "jolnor",
-                        "value": "30"
+                        "requireType":"questProgress",
+                        "value":30,
+                        "requireID":"jolnor"
                     }
                 ]
             },
             {
-                "nextPhraseID": "jolnor_guard_1"
+                "nextPhraseID":"jolnor_guard_1"
             }
         ]
     },
     {
-        "id": "jolnor_guard_1",
-        "message": "Yes, what about him. Have you removed him yet?",
-        "replies": [
+        "message":"Yes, what about him. Have you removed him yet?",
+        "id":"jolnor_guard_1",
+        "replies":[
             {
-                "text": "Yes, he will leave his post as soon as this shift is over.",
-                "nextPhraseID": "jolnor_guard_2",
-                "requires": [
+                "nextPhraseID":"jolnor_guard_2",
+                "text":"Yes, he will leave his post as soon as this shift is over.",
+                "requires":[
                     {
-                        "requireType": "questProgress",
-                        "requireID": "jolnor",
-                        "value": "20"
+                        "requireType":"questProgress",
+                        "value":20,
+                        "requireID":"jolnor"
                     }
                 ]
             },
             {
-                "text": "Yes, he is removed.",
-                "nextPhraseID": "jolnor_guard_2",
-                "requires": [
+                "nextPhraseID":"jolnor_guard_2",
+                "text":"Yes, he is removed.",
+                "requires":[
                     {
-                        "requireType": "inventoryRemove",
-                        "requireID": "ffguard_qitem",
-                        "value": 1
+                        "requireType":"inventoryRemove",
+                        "value":1,
+                        "requireID":"ffguard_qitem"
                     }
                 ]
             },
             {
-                "text": "No, but I am working on it.",
-                "nextPhraseID": "jolnor_gaintrust_14"
+                "nextPhraseID":"jolnor_gaintrust_14",
+                "text":"No, but I am working on it."
             }
         ]
     },
     {
-        "id": "jolnor_guard_completed",
-        "message": "Yes, you dealt with him earlier. Thank you for your help.",
-        "replies": [
+        "message":"Yes, you dealt with him earlier. Thank you for your help.",
+        "id":"jolnor_guard_completed",
+        "replies":[
             {
-                "text": "N",
-                "nextPhraseID": "jolnor_quests_1"
+                "nextPhraseID":"jolnor_quests_1",
+                "text":"N"
             }
         ]
     },
     {
-        "id": "jolnor_guard_2",
-        "message": "Very good. Thank you for your help.",
-        "rewards": [
+        "message":"Very good. Thank you for your help.",
+        "id":"jolnor_guard_2",
+        "replies":[
             {
-                "rewardType": "questProgress",
-                "rewardID": "jolnor",
-                "value": 30
+                "nextPhraseID":"jolnor_quests_2",
+                "text":"No problem. Let's get back to those other tasks we talked about."
             }
         ],
-        "replies": [
+        "rewards":[
             {
-                "text": "No problem. Let's get back to those other tasks we talked about.",
-                "nextPhraseID": "jolnor_quests_2"
+                "value":30,
+                "rewardID":"jolnor",
+                "rewardType":"questProgress"
             }
         ]
     },
     {
-        "id": "jolnor_quests_select_1",
-        "replies": [
+        "id":"jolnor_quests_select_1",
+        "replies":[
             {
-                "nextPhraseID": "jolnor_quests_select_2",
-                "requires": [
+                "nextPhraseID":"jolnor_quests_select_2",
+                "requires":[
                     {
-                        "requireType": "questProgress",
-                        "requireID": "kaori",
-                        "value": "20"
+                        "requireType":"questProgress",
+                        "value":20,
+                        "requireID":"kaori"
                     }
                 ]
             },
             {
-                "nextPhraseID": "jolnor_quests_kaori_1"
+                "nextPhraseID":"jolnor_quests_kaori_1"
             }
         ]
     },
     {
-        "id": "jolnor_quests_kaori_1",
-        "message": "You still need to help Kaori with her task.",
-        "replies": [
+        "message":"You still need to help Kaori with her task.",
+        "id":"jolnor_quests_kaori_1",
+        "replies":[
             {
-                "text": "N",
-                "nextPhraseID": "jolnor_select_1"
+                "nextPhraseID":"jolnor_select_1",
+                "text":"N"
             }
         ]
     },
     {
-        "id": "jolnor_quests_select_2",
-        "replies": [
+        "id":"jolnor_quests_select_2",
+        "replies":[
             {
-                "nextPhraseID": "jolnor_quests_completed",
-                "requires": [
+                "nextPhraseID":"jolnor_quests_completed",
+                "requires":[
                     {
-                        "requireType": "questProgress",
-                        "requireID": "wrye",
-                        "value": "90"
+                        "requireType":"questProgress",
+                        "value":90,
+                        "requireID":"wrye"
                     }
                 ]
             },
             {
-                "nextPhraseID": "jolnor_quests_wrye_1"
+                "nextPhraseID":"jolnor_quests_wrye_1"
             }
         ]
     },
     {
-        "id": "jolnor_quests_wrye_1",
-        "message": "You still need to help Wrye with her task.",
-        "replies": [
+        "message":"You still need to help Wrye with her task.",
+        "id":"jolnor_quests_wrye_1",
+        "replies":[
             {
-                "text": "N",
-                "nextPhraseID": "jolnor_select_1"
+                "nextPhraseID":"jolnor_select_1",
+                "text":"N"
             }
         ]
     },
     {
-        "id": "jolnor_quests_completed",
-        "message": "Good. You helped all three of us.",
-        "rewards": [
+        "message":"Good. You helped all three of us.",
+        "id":"jolnor_quests_completed",
+        "replies":[
             {
-                "rewardType": "questProgress",
-                "rewardID": "vilegard",
-                "value": 30
+                "nextPhraseID":"jolnor_quests_completed_2",
+                "text":"N"
             }
         ],
-        "replies": [
+        "rewards":[
             {
-                "text": "N",
-                "nextPhraseID": "jolnor_quests_completed_2"
+                "value":30,
+                "rewardID":"vilegard",
+                "rewardType":"questProgress"
             }
         ]
     },
     {
-        "id": "jolnor_quests_completed_2",
-        "message": "I suppose that shows some dedication, and that we are ready to trust you now.",
-        "replies": [
+        "message":"I suppose that shows some dedication, and that we are ready to trust you now.",
+        "id":"jolnor_quests_completed_2",
+        "replies":[
             {
-                "text": "N",
-                "nextPhraseID": "jolnor_quests_completed_3"
+                "nextPhraseID":"jolnor_quests_completed_3",
+                "text":"N"
             }
         ]
     },
     {
-        "id": "jolnor_quests_completed_3",
-        "message": "You have our thanks, friend. You will always find shelter here in Vilegard. We welcome you into our village.",
-        "replies": [
+        "message":"You have our thanks, friend. You will always find shelter here in Vilegard. We welcome you into our village.",
+        "id":"jolnor_quests_completed_3",
+        "replies":[
             {
-                "text": "N",
-                "nextPhraseID": "jolnor_select_1"
+                "nextPhraseID":"jolnor_select_1",
+                "text":"N"
             }
         ]
     }

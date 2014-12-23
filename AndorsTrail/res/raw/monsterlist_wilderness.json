@@ -1,513 +1,513 @@
 [
     {
-        "id": "wild_fox",
-        "iconID": "monsters_dogs:3",
-        "name": "Wild Fox",
-        "spawnGroup": "fox2",
-        "monsterClass": "animal",
-        "maxHP": 25,
-        "attackCost": 5,
-        "attackChance": 100,
-        "blockChance": 40,
-        "droplistID": "canine",
-        "attackDamage": {
-            "min": 4,
-            "max": 5
-        }
+        "id":"wild_fox",
+        "blockChance":40,
+        "maxHP":25,
+        "droplistID":"canine",
+        "attackCost":5,
+        "attackChance":100,
+        "monsterClass":"animal",
+        "attackDamage":{
+            "min":4,
+            "max":5
+        },
+        "name":"Wild Fox",
+        "spawnGroup":"fox2",
+        "iconID":"monsters_dogs:3"
     },
     {
-        "id": "stinging_wasp",
-        "iconID": "monsters_insects:1",
-        "name": "Stinging wasp",
-        "spawnGroup": "forestwasp2",
-        "monsterClass": "insect",
-        "maxHP": 15,
-        "attackCost": 10,
-        "attackChance": 150,
-        "blockChance": 60,
-        "droplistID": "wasp",
-        "attackDamage": {
-            "min": 1,
-            "max": 2
-        }
+        "id":"stinging_wasp",
+        "blockChance":60,
+        "maxHP":15,
+        "droplistID":"wasp",
+        "attackCost":10,
+        "attackChance":150,
+        "monsterClass":"insect",
+        "attackDamage":{
+            "min":1,
+            "max":2
+        },
+        "name":"Stinging wasp",
+        "spawnGroup":"forestwasp2",
+        "iconID":"monsters_insects:1"
     },
     {
-        "id": "wild_boar",
-        "iconID": "monsters_dogs:6",
-        "name": "Wild Boar",
-        "spawnGroup": "forestboar2",
-        "monsterClass": "animal",
-        "maxHP": 20,
-        "attackCost": 5,
-        "attackChance": 110,
-        "blockChance": 30,
-        "droplistID": "canineboss",
-        "attackDamage": {
-            "min": 3,
-            "max": 3
-        }
+        "id":"wild_boar",
+        "blockChance":30,
+        "maxHP":20,
+        "droplistID":"canineboss",
+        "attackCost":5,
+        "attackChance":110,
+        "monsterClass":"animal",
+        "attackDamage":{
+            "min":3,
+            "max":3
+        },
+        "name":"Wild Boar",
+        "spawnGroup":"forestboar2",
+        "iconID":"monsters_dogs:6"
     },
     {
-        "id": "forest_beetle",
-        "iconID": "monsters_insects:4",
-        "name": "Forest Beetle",
-        "spawnGroup": "forestbeetle",
-        "monsterClass": "insect",
-        "maxHP": 14,
-        "attackCost": 10,
-        "attackChance": 150,
-        "blockChance": 60,
-        "damageResistance": 2,
-        "droplistID": "insect",
-        "attackDamage": {
-            "min": 2,
-            "max": 4
-        }
+        "id":"forest_beetle",
+        "blockChance":60,
+        "maxHP":14,
+        "droplistID":"insect",
+        "attackCost":10,
+        "damageResistance":2,
+        "attackChance":150,
+        "monsterClass":"insect",
+        "attackDamage":{
+            "min":2,
+            "max":4
+        },
+        "name":"Forest Beetle",
+        "spawnGroup":"forestbeetle",
+        "iconID":"monsters_insects:4"
     },
     {
-        "id": "wolf",
-        "iconID": "monsters_dogs:4",
-        "name": "Wolf",
-        "spawnGroup": "forestwolf1",
-        "monsterClass": "animal",
-        "maxHP": 30,
-        "maxAP": 10,
-        "moveCost": 3,
-        "attackCost": 5,
-        "attackChance": 110,
-        "blockChance": 30,
-        "droplistID": "canine",
-        "attackDamage": {
-            "min": 3,
-            "max": 6
-        }
+        "maxAP":10,
+        "blockChance":30,
+        "maxHP":30,
+        "droplistID":"canine",
+        "attackCost":5,
+        "attackChance":110,
+        "attackDamage":{
+            "min":3,
+            "max":6
+        },
+        "id":"wolf",
+        "moveCost":3,
+        "monsterClass":"animal",
+        "name":"Wolf",
+        "iconID":"monsters_dogs:4",
+        "spawnGroup":"forestwolf1"
     },
     {
-        "id": "forest_serpent",
-        "iconID": "monsters_snakes:4",
-        "name": "Forest serpent",
-        "spawnGroup": "forestserpent1",
-        "monsterClass": "reptile",
-        "maxHP": 20,
-        "maxAP": 10,
-        "moveCost": 5,
-        "attackCost": 3,
-        "attackChance": 150,
-        "criticalSkill": 30,
-        "criticalMultiplier": 2,
-        "blockChance": 60,
-        "droplistID": "snake2",
-        "attackDamage": {
-            "min": 2,
-            "max": 3
-        }
+        "blockChance":60,
+        "maxAP":10,
+        "maxHP":20,
+        "droplistID":"snake2",
+        "attackCost":3,
+        "criticalSkill":30,
+        "attackChance":150,
+        "attackDamage":{
+            "min":2,
+            "max":3
+        },
+        "id":"forest_serpent",
+        "moveCost":5,
+        "monsterClass":"reptile",
+        "name":"Forest serpent",
+        "iconID":"monsters_snakes:4",
+        "spawnGroup":"forestserpent1",
+        "criticalMultiplier":2.0
     },
     {
-        "id": "vicious_forest_serpent",
-        "iconID": "monsters_snakes:4",
-        "name": "Vicious forest serpent",
-        "spawnGroup": "forestserpent2",
-        "monsterClass": "reptile",
-        "maxHP": 27,
-        "maxAP": 10,
-        "moveCost": 5,
-        "attackCost": 3,
-        "attackChance": 150,
-        "criticalSkill": 30,
-        "criticalMultiplier": 2,
-        "blockChance": 50,
-        "droplistID": "snake2",
-        "attackDamage": {
-            "min": 3,
-            "max": 4
-        }
+        "blockChance":50,
+        "maxAP":10,
+        "maxHP":27,
+        "droplistID":"snake2",
+        "attackCost":3,
+        "criticalSkill":30,
+        "attackChance":150,
+        "attackDamage":{
+            "min":3,
+            "max":4
+        },
+        "id":"vicious_forest_serpent",
+        "moveCost":5,
+        "monsterClass":"reptile",
+        "name":"Vicious forest serpent",
+        "iconID":"monsters_snakes:4",
+        "spawnGroup":"forestserpent2",
+        "criticalMultiplier":2.0
     },
     {
-        "id": "anklebiter",
-        "iconID": "monsters_dogs:6",
-        "name": "Anklebiter",
-        "spawnGroup": "forestboar3",
-        "monsterClass": "animal",
-        "maxHP": 31,
-        "attackCost": 5,
-        "attackChance": 150,
-        "blockChance": 60,
-        "damageResistance": 3,
-        "droplistID": "canine2",
-        "attackDamage": {
-            "min": 3,
-            "max": 9
-        }
+        "id":"anklebiter",
+        "blockChance":60,
+        "maxHP":31,
+        "droplistID":"canine2",
+        "attackCost":5,
+        "damageResistance":3,
+        "attackChance":150,
+        "monsterClass":"animal",
+        "attackDamage":{
+            "min":3,
+            "max":9
+        },
+        "name":"Anklebiter",
+        "spawnGroup":"forestboar3",
+        "iconID":"monsters_dogs:6"
     },
     {
-        "id": "flagstone_sentry",
-        "iconID": "monsters_men:3",
-        "name": "Flagstone Sentry",
-        "spawnGroup": "flagstone_sentry",
-        "monsterClass": "humanoid",
-        "phraseID": "flagstone_sentry"
+        "id":"flagstone_sentry",
+        "phraseID":"flagstone_sentry",
+        "monsterClass":"humanoid",
+        "name":"Flagstone Sentry",
+        "spawnGroup":"flagstone_sentry",
+        "iconID":"monsters_men:3"
     },
     {
-        "id": "escaped_prisoner",
-        "iconID": "monsters_men:0",
-        "name": "Escaped prisoner",
-        "spawnGroup": "prisoner1",
-        "monsterClass": "humanoid",
-        "unique": 1,
-        "maxHP": 15,
-        "attackCost": 10,
-        "attackChance": 50,
-        "blockChance": 20,
-        "droplistID": "prisoner",
-        "phraseID": "prisoner1",
-        "attackDamage": {
-            "min": 3,
-            "max": 7
-        }
+        "blockChance":20,
+        "maxHP":15,
+        "unique":1,
+        "droplistID":"prisoner",
+        "attackCost":10,
+        "attackChance":50,
+        "attackDamage":{
+            "min":3,
+            "max":7
+        },
+        "id":"escaped_prisoner",
+        "phraseID":"prisoner1",
+        "monsterClass":"humanoid",
+        "name":"Escaped prisoner",
+        "iconID":"monsters_men:0",
+        "spawnGroup":"prisoner1"
     },
     {
-        "id": "starving_prisoner",
-        "iconID": "monsters_misc:11",
-        "name": "Starving prisoner",
-        "spawnGroup": "prisoner2",
-        "monsterClass": "humanoid",
-        "unique": 1,
-        "maxHP": 10,
-        "attackCost": 3,
-        "attackChance": 60,
-        "blockChance": 60,
-        "droplistID": "prisoner",
-        "phraseID": "prisoner2",
-        "attackDamage": {
-            "min": 3,
-            "max": 5
-        }
+        "blockChance":60,
+        "maxHP":10,
+        "unique":1,
+        "droplistID":"prisoner",
+        "attackCost":3,
+        "attackChance":60,
+        "attackDamage":{
+            "min":3,
+            "max":5
+        },
+        "id":"starving_prisoner",
+        "phraseID":"prisoner2",
+        "monsterClass":"humanoid",
+        "name":"Starving prisoner",
+        "iconID":"monsters_misc:11",
+        "spawnGroup":"prisoner2"
     },
     {
-        "id": "bone_warrior",
-        "iconID": "monsters_skeleton1:0",
-        "name": "Bone warrior",
-        "spawnGroup": "skeleton2",
-        "monsterClass": "construct",
-        "maxHP": 32,
-        "attackCost": 5,
-        "attackChance": 120,
-        "blockChance": 60,
-        "damageResistance": 2,
-        "droplistID": "skeleton2",
-        "attackDamage": {
-            "min": 3,
-            "max": 9
-        }
+        "id":"bone_warrior",
+        "blockChance":60,
+        "maxHP":32,
+        "droplistID":"skeleton2",
+        "attackCost":5,
+        "damageResistance":2,
+        "attackChance":120,
+        "monsterClass":"construct",
+        "attackDamage":{
+            "min":3,
+            "max":9
+        },
+        "name":"Bone warrior",
+        "spawnGroup":"skeleton2",
+        "iconID":"monsters_skeleton1:0"
     },
     {
-        "id": "bone_champion",
-        "iconID": "monsters_skeleton1:0",
-        "name": "Bone champion",
-        "spawnGroup": "skeleton3",
-        "monsterClass": "construct",
-        "maxHP": 49,
-        "attackCost": 5,
-        "attackChance": 130,
-        "blockChance": 60,
-        "damageResistance": 2,
-        "droplistID": "skeleton3",
-        "attackDamage": {
-            "min": 4,
-            "max": 9
-        }
+        "id":"bone_champion",
+        "blockChance":60,
+        "maxHP":49,
+        "droplistID":"skeleton3",
+        "attackCost":5,
+        "damageResistance":2,
+        "attackChance":130,
+        "monsterClass":"construct",
+        "attackDamage":{
+            "min":4,
+            "max":9
+        },
+        "name":"Bone champion",
+        "spawnGroup":"skeleton3",
+        "iconID":"monsters_skeleton1:0"
     },
     {
-        "id": "undead_warden",
-        "iconID": "monsters_liches:0",
-        "name": "Undead warden",
-        "spawnGroup": "flagstone_guard0",
-        "monsterClass": "undead",
-        "unique": 1,
-        "maxHP": 57,
-        "attackCost": 5,
-        "attackChance": 120,
-        "criticalSkill": 20,
-        "criticalMultiplier": 2,
-        "blockChance": 60,
-        "damageResistance": 1,
-        "droplistID": "flagstone_guard0",
-        "phraseID": "flagstone_guard0",
-        "attackDamage": {
-            "min": 4,
-            "max": 8
-        }
+        "blockChance":60,
+        "maxHP":57,
+        "unique":1,
+        "droplistID":"flagstone_guard0",
+        "attackCost":5,
+        "criticalSkill":20,
+        "damageResistance":1,
+        "attackChance":120,
+        "attackDamage":{
+            "min":4,
+            "max":8
+        },
+        "id":"undead_warden",
+        "phraseID":"flagstone_guard0",
+        "monsterClass":"undead",
+        "name":"Undead warden",
+        "iconID":"monsters_liches:0",
+        "spawnGroup":"flagstone_guard0",
+        "criticalMultiplier":2.0
     },
     {
-        "id": "cave_guardian",
-        "iconID": "monsters_rltiles1:16",
-        "name": "Cave guardian",
-        "spawnGroup": "flagstone_guard1",
-        "monsterClass": "demon",
-        "unique": 1,
-        "maxHP": 61,
-        "attackCost": 5,
-        "attackChance": 150,
-        "criticalSkill": 10,
-        "criticalMultiplier": 3,
-        "blockChance": 90,
-        "damageResistance": 2,
-        "droplistID": "flagstone_guard1",
-        "phraseID": "flagstone_guard1",
-        "attackDamage": {
-            "min": 4,
-            "max": 10
-        }
+        "blockChance":90,
+        "maxHP":61,
+        "unique":1,
+        "droplistID":"flagstone_guard1",
+        "attackCost":5,
+        "criticalSkill":10,
+        "damageResistance":2,
+        "attackChance":150,
+        "attackDamage":{
+            "min":4,
+            "max":10
+        },
+        "id":"cave_guardian",
+        "phraseID":"flagstone_guard1",
+        "monsterClass":"demon",
+        "name":"Cave guardian",
+        "iconID":"monsters_rltiles1:16",
+        "spawnGroup":"flagstone_guard1",
+        "criticalMultiplier":3.0
     },
     {
-        "id": "winged_demon",
-        "iconID": "monsters_demon1:0",
-        "name": "Winged demon",
-        "spawnGroup": "flagstone_guard2",
-        "size": "2x2",
-        "monsterClass": "demon",
-        "unique": 1,
-        "maxHP": 82,
-        "attackCost": 5,
-        "attackChance": 90,
-        "criticalSkill": 10,
-        "criticalMultiplier": 2,
-        "blockChance": 70,
-        "damageResistance": 5,
-        "droplistID": "flagstone_guard2",
-        "phraseID": "flagstone_guard2",
-        "attackDamage": {
-            "min": 4,
-            "max": 12
-        }
+        "blockChance":70,
+        "maxHP":82,
+        "unique":1,
+        "droplistID":"flagstone_guard2",
+        "attackCost":5,
+        "criticalSkill":10,
+        "damageResistance":5,
+        "attackChance":90,
+        "attackDamage":{
+            "min":4,
+            "max":12
+        },
+        "id":"winged_demon",
+        "phraseID":"flagstone_guard2",
+        "monsterClass":"demon",
+        "name":"Winged demon",
+        "iconID":"monsters_demon1:0",
+        "spawnGroup":"flagstone_guard2",
+        "criticalMultiplier":2.0
     },
     {
-        "id": "narael",
-        "iconID": "monsters_man1:0",
-        "name": "Narael",
-        "spawnGroup": "narael",
-        "monsterClass": "humanoid",
-        "phraseID": "narael"
+        "id":"narael",
+        "phraseID":"narael",
+        "unique":1,
+        "monsterClass":"humanoid",
+        "name":"Narael",
+        "spawnGroup":"narael",
+        "iconID":"monsters_man1:0"
     },
     {
-        "id": "rotting_corpse",
-        "iconID": "monsters_zombie1:0",
-        "name": "Rotting corpse",
-        "spawnGroup": "undead1",
-        "monsterClass": "undead",
-        "maxHP": 71,
-        "attackCost": 10,
-        "attackChance": 30,
-        "criticalSkill": 50,
-        "criticalMultiplier": 2,
-        "blockChance": 30,
-        "damageResistance": 2,
-        "droplistID": "undead1",
-        "phraseID": "zombie1",
-        "attackDamage": {
-            "min": 2,
-            "max": 5
-        }
+        "blockChance":30,
+        "maxHP":71,
+        "droplistID":"undead1",
+        "attackCost":10,
+        "criticalSkill":50,
+        "damageResistance":2,
+        "attackChance":30,
+        "attackDamage":{
+            "min":2,
+            "max":5
+        },
+        "id":"rotting_corpse",
+        "phraseID":"zombie1",
+        "monsterClass":"undead",
+        "name":"Rotting corpse",
+        "iconID":"monsters_zombie1:0",
+        "spawnGroup":"undead1",
+        "criticalMultiplier":2.0
     },
     {
-        "id": "walking_corpse",
-        "iconID": "monsters_zombie1:0",
-        "name": "Walking corpse",
-        "spawnGroup": "undead1",
-        "monsterClass": "undead",
-        "maxHP": 90,
-        "attackCost": 10,
-        "attackChance": 30,
-        "criticalSkill": 40,
-        "criticalMultiplier": 2,
-        "blockChance": 30,
-        "damageResistance": 2,
-        "droplistID": "undead1",
-        "attackDamage": {
-            "min": 2,
-            "max": 4
-        }
+        "blockChance":30,
+        "maxHP":90,
+        "droplistID":"undead1",
+        "attackCost":10,
+        "criticalSkill":40,
+        "damageResistance":2,
+        "attackChance":30,
+        "attackDamage":{
+            "min":2,
+            "max":4
+        },
+        "id":"walking_corpse",
+        "monsterClass":"undead",
+        "name":"Walking corpse",
+        "iconID":"monsters_zombie1:0",
+        "spawnGroup":"undead1",
+        "criticalMultiplier":2.0
     },
     {
-        "id": "gargoyle",
-        "iconID": "monsters_misc:2",
-        "name": "Gargoyle",
-        "spawnGroup": "undead1",
-        "monsterClass": "construct",
-        "maxHP": 47,
-        "attackCost": 10,
-        "attackChance": 110,
-        "criticalSkill": 10,
-        "criticalMultiplier": 2,
-        "blockChance": 70,
-        "damageResistance": 2,
-        "droplistID": "undead1",
-        "attackDamage": {
-            "min": 3,
-            "max": 7
-        }
+        "blockChance":70,
+        "maxHP":47,
+        "droplistID":"undead1",
+        "attackCost":10,
+        "criticalSkill":10,
+        "damageResistance":2,
+        "attackChance":110,
+        "attackDamage":{
+            "min":3,
+            "max":7
+        },
+        "id":"gargoyle",
+        "monsterClass":"construct",
+        "name":"Gargoyle",
+        "iconID":"monsters_misc:2",
+        "spawnGroup":"undead1",
+        "criticalMultiplier":2.0
     },
     {
-        "id": "fledgling_gargoyle",
-        "iconID": "monsters_misc:1",
-        "name": "Fledgling Gargoyle",
-        "spawnGroup": "undead1",
-        "monsterClass": "construct",
-        "maxHP": 35,
-        "attackCost": 10,
-        "attackChance": 110,
-        "blockChance": 60,
-        "damageResistance": 2,
-        "droplistID": "undead1",
-        "attackDamage": {
-            "min": 3,
-            "max": 6
-        }
+        "id":"fledgling_gargoyle",
+        "blockChance":60,
+        "maxHP":35,
+        "droplistID":"undead1",
+        "attackCost":10,
+        "damageResistance":2,
+        "attackChance":110,
+        "monsterClass":"construct",
+        "attackDamage":{
+            "min":3,
+            "max":6
+        },
+        "name":"Fledgling Gargoyle",
+        "spawnGroup":"undead1",
+        "iconID":"monsters_misc:1"
     },
     {
-        "id": "large_cave_rat",
-        "iconID": "monsters_rats:3",
-        "name": "Large cave rat",
-        "spawnGroup": "undeadrat1",
-        "monsterClass": "animal",
-        "maxHP": 21,
-        "maxAP": 10,
-        "moveCost": 10,
-        "attackCost": 3,
-        "attackChance": 60,
-        "criticalSkill": 10,
-        "criticalMultiplier": 2,
-        "blockChance": 40,
-        "droplistID": "catacombrat",
-        "attackDamage": {
-            "min": 3,
-            "max": 4
-        }
+        "blockChance":40,
+        "maxAP":10,
+        "maxHP":21,
+        "droplistID":"catacombrat",
+        "attackCost":3,
+        "criticalSkill":10,
+        "attackChance":60,
+        "attackDamage":{
+            "min":3,
+            "max":4
+        },
+        "id":"large_cave_rat",
+        "moveCost":10,
+        "monsterClass":"animal",
+        "name":"Large cave rat",
+        "iconID":"monsters_rats:3",
+        "spawnGroup":"undeadrat1",
+        "criticalMultiplier":2.0
     },
     {
-        "id": "pack_leader",
-        "iconID": "monsters_dogs:5",
-        "name": "Pack Leader",
-        "spawnGroup": "pack_boss",
-        "monsterClass": "animal",
-        "unique": 1,
-        "maxHP": 65,
-        "attackCost": 5,
-        "attackChance": 90,
-        "criticalSkill": 20,
-        "criticalMultiplier": 2,
-        "blockChance": 40,
-        "damageResistance": 4,
-        "droplistID": "pack_boss",
-        "attackDamage": {
-            "min": 2,
-            "max": 10
-        }
+        "blockChance":40,
+        "maxHP":65,
+        "unique":1,
+        "droplistID":"pack_boss",
+        "attackCost":5,
+        "criticalSkill":20,
+        "damageResistance":4,
+        "attackChance":90,
+        "attackDamage":{
+            "min":2,
+            "max":10
+        },
+        "id":"pack_leader",
+        "monsterClass":"animal",
+        "name":"Pack Leader",
+        "iconID":"monsters_dogs:5",
+        "spawnGroup":"pack_boss",
+        "criticalMultiplier":2.0
     },
     {
-        "id": "pack_hunter",
-        "iconID": "monsters_dogs:4",
-        "name": "Pack hunter",
-        "spawnGroup": "pack3",
-        "monsterClass": "animal",
-        "maxHP": 45,
-        "attackCost": 5,
-        "attackChance": 90,
-        "criticalSkill": 10,
-        "criticalMultiplier": 2,
-        "blockChance": 40,
-        "damageResistance": 3,
-        "droplistID": "pack3",
-        "attackDamage": {
-            "min": 2,
-            "max": 7
-        }
+        "blockChance":40,
+        "maxHP":45,
+        "droplistID":"pack3",
+        "attackCost":5,
+        "criticalSkill":10,
+        "damageResistance":3,
+        "attackChance":90,
+        "attackDamage":{
+            "min":2,
+            "max":7
+        },
+        "id":"pack_hunter",
+        "monsterClass":"animal",
+        "name":"Pack hunter",
+        "iconID":"monsters_dogs:4",
+        "spawnGroup":"pack3",
+        "criticalMultiplier":2.0
     },
     {
-        "id": "rabid_wolf",
-        "iconID": "monsters_dogs:4",
-        "name": "Rabid Wolf",
-        "spawnGroup": "pack2",
-        "monsterClass": "animal",
-        "maxHP": 42,
-        "attackCost": 5,
-        "attackChance": 90,
-        "blockChance": 50,
-        "damageResistance": 3,
-        "droplistID": "pack2",
-        "attackDamage": {
-            "min": 2,
-            "max": 6
-        }
+        "id":"rabid_wolf",
+        "blockChance":50,
+        "maxHP":42,
+        "droplistID":"pack2",
+        "attackCost":5,
+        "damageResistance":3,
+        "attackChance":90,
+        "monsterClass":"animal",
+        "attackDamage":{
+            "min":2,
+            "max":6
+        },
+        "name":"Rabid Wolf",
+        "spawnGroup":"pack2",
+        "iconID":"monsters_dogs:4"
     },
     {
-        "id": "fledgling_wolf",
-        "iconID": "monsters_dogs:3",
-        "name": "Fledgling wolf",
-        "spawnGroup": "pack2",
-        "monsterClass": "animal",
-        "maxHP": 42,
-        "attackCost": 3,
-        "attackChance": 70,
-        "blockChance": 50,
-        "damageResistance": 3,
-        "droplistID": "pack2",
-        "attackDamage": {
-            "min": 2,
-            "max": 5
-        }
+        "id":"fledgling_wolf",
+        "blockChance":50,
+        "maxHP":42,
+        "droplistID":"pack2",
+        "attackCost":3,
+        "damageResistance":3,
+        "attackChance":70,
+        "monsterClass":"animal",
+        "attackDamage":{
+            "min":2,
+            "max":5
+        },
+        "name":"Fledgling wolf",
+        "spawnGroup":"pack2",
+        "iconID":"monsters_dogs:3"
     },
     {
-        "id": "young_wolf",
-        "iconID": "monsters_dogs:4",
-        "name": "Young wolf",
-        "spawnGroup": "pack1",
-        "monsterClass": "animal",
-        "maxHP": 35,
-        "attackCost": 3,
-        "attackChance": 60,
-        "blockChance": 30,
-        "damageResistance": 2,
-        "droplistID": "pack1",
-        "attackDamage": {
-            "min": 2,
-            "max": 5
-        }
+        "id":"young_wolf",
+        "blockChance":30,
+        "maxHP":35,
+        "droplistID":"pack1",
+        "attackCost":3,
+        "damageResistance":2,
+        "attackChance":60,
+        "monsterClass":"animal",
+        "attackDamage":{
+            "min":2,
+            "max":5
+        },
+        "name":"Young wolf",
+        "spawnGroup":"pack1",
+        "iconID":"monsters_dogs:4"
     },
     {
-        "id": "hunting_dog",
-        "iconID": "monsters_dogs:2",
-        "name": "Hunting dog",
-        "spawnGroup": "pack1",
-        "monsterClass": "animal",
-        "maxHP": 25,
-        "attackCost": 5,
-        "attackChance": 60,
-        "blockChance": 50,
-        "droplistID": "pack1",
-        "attackDamage": {
-            "min": 2,
-            "max": 5
-        }
+        "id":"hunting_dog",
+        "blockChance":50,
+        "maxHP":25,
+        "droplistID":"pack1",
+        "attackCost":5,
+        "attackChance":60,
+        "monsterClass":"animal",
+        "attackDamage":{
+            "min":2,
+            "max":5
+        },
+        "name":"Hunting dog",
+        "spawnGroup":"pack1",
+        "iconID":"monsters_dogs:2"
     },
     {
-        "id": "highwayman",
-        "iconID": "monsters_men:8",
-        "name": "Highwayman",
-        "spawnGroup": "bandit1",
-        "monsterClass": "humanoid",
-        "maxHP": 54,
-        "attackCost": 5,
-        "attackChance": 90,
-        "criticalSkill": 50,
-        "criticalMultiplier": 2,
-        "blockChance": 30,
-        "damageResistance": 2,
-        "droplistID": "bandit1",
-        "phraseID": "bandit1",
-        "attackDamage": {
-            "min": 2,
-            "max": 4
-        }
+        "blockChance":30,
+        "maxHP":54,
+        "droplistID":"bandit1",
+        "attackCost":5,
+        "criticalSkill":50,
+        "damageResistance":2,
+        "attackChance":90,
+        "attackDamage":{
+            "min":2,
+            "max":4
+        },
+        "id":"highwayman",
+        "phraseID":"bandit1",
+        "monsterClass":"humanoid",
+        "name":"Highwayman",
+        "iconID":"monsters_men:8",
+        "spawnGroup":"bandit1",
+        "criticalMultiplier":2.0
     }
 ]

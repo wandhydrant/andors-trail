@@ -1,0 +1,73 @@
+[
+  {
+    "id": "soulpartdungeon_key",
+    "message": "Some mysterious power prevents you from proceeding further. You think you hear some very silent whispering coming out of the cave entrance like there was a ritual."
+  },
+  {
+    "id": "elythara_bandit_guard",
+    "replies": [
+      {
+        "requires": [
+          {
+            "requireType": "questProgress",
+            "requireID": "elythara2",
+            "value": 30
+          }
+        ],
+        "nextPhraseID": "elythara_bandit_guard_1",
+        "text": "I'm looking for a valuable book, Elythara's chants. I know you bandits stole it!"
+      },
+      {
+        "text": "Um, just strolling around. *Player slowly goes back.*",
+        "nextPhraseID": "X"
+      }
+    ],
+    "message": "What are you doing here?! Get lost kid!"
+  },
+  {
+    "id": "elythara_bandit_guard_1",
+    "message": "Then you're going to die, kid! You will never get this book!",
+    "replies": [
+      {
+        "nextPhraseID": "F"
+      }
+    ]
+  },
+  {
+    "id": "edwin_key",
+    "message": "Edwin shouts: Go away there: What's down here is none of your business!"
+  },
+  {
+    "id": "snakecave_key",
+    "message": "A powerful magical force that you have never encountered before pushes you back when you try to pass the cave entrance."
+  },
+  {
+    "id": "catacombs_trigger",
+    "replies": [
+      {
+        "requires": [
+          {
+            "requireType": "hasActorCondition",
+            "requireID": "enlightenment",
+            "value": 60
+          }
+        ],
+        "nextPhraseID": "catacombs_trigger_2"
+      },
+      {
+        "nextPhraseID": "catacombs_trigger_1"
+      }
+    ]
+  },
+  {
+    "id": "catacombs_trigger_1",
+    "rewards": [
+      {
+        "rewardType": "actorCondition",
+        "rewardID": "force_shadow",
+        "value": 5
+      }
+    ],
+    "message": "As you go one step further you get hurt badly by some dark magic and stumble back. This is definitely no way to pass."
+  }
+]
