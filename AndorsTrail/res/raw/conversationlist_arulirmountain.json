@@ -1,0 +1,627 @@
+[
+  {
+    "id": "arulirmountain_entrance",
+    "replies": [
+      {
+        "text": "N",
+        "nextPhraseID": "arulirmountain_entrance_1"
+      }
+    ],
+    "message": "You have a gut feeling that it would be better to not go any further unprepared."
+  },
+  {
+    "id": "arulirmountain_entrance_1",
+    "replies": [
+      {
+        "text": "Leave",
+        "nextPhraseID": "X"
+      }
+    ],
+    "message": "You need some item that would help you go through there undiscovered."
+  },
+  {
+    "id": "arulirmountain_brokenbridge",
+    "replies": [
+      {
+        "text": "Leave.",
+        "nextPhraseID": "X"
+      }
+    ],
+    "message": "The Bridge is broken. It would not hold your weight."
+  },
+  {
+    "id": "arulirmountain_trap01",
+    "rewards": [
+      {
+        "rewardType": "questProgress",
+        "rewardID": "arulirmountain_trap01",
+        "value": 10
+      },
+      {
+        "rewardType": "actorCondition",
+        "rewardID": "bleeding_wound",
+        "value": 7
+      },
+      {
+        "rewardType": "actorCondition",
+        "rewardID": "bleeding_wound",
+        "value": 7
+      },
+      {
+        "rewardType": "actorCondition",
+        "rewardID": "bleeding_wound",
+        "value": 3
+      },
+      {
+        "rewardType": "actorCondition",
+        "rewardID": "bleeding_wound",
+        "value": 3
+      }
+    ],
+    "replies": [
+      {
+        "text": "Ouch.",
+        "nextPhraseID": "X"
+      }
+    ],
+    "message": "You fell into a hole and hurt yourself."
+  },
+  {
+    "id": "arulirmountain_trap02",
+    "rewards": [
+      {
+        "rewardType": "questProgress",
+        "rewardID": "arulirmountain_trap02",
+        "value": 10
+      },
+      {
+        "rewardType": "actorCondition",
+        "rewardID": "bleeding_wound",
+        "value": 7
+      },
+      {
+        "rewardType": "actorCondition",
+        "rewardID": "bleeding_wound",
+        "value": 7
+      },
+      {
+        "rewardType": "actorCondition",
+        "rewardID": "bleeding_wound",
+        "value": 3
+      },
+      {
+        "rewardType": "actorCondition",
+        "rewardID": "bleeding_wound",
+        "value": 3
+      }
+    ],
+    "replies": [
+      {
+        "text": "Ouch.",
+        "nextPhraseID": "X"
+      }
+    ],
+    "message": "You fell into a hole and hurt yourself."
+  },
+  {
+    "id": "arulirmountain_trap03",
+    "rewards": [
+      {
+        "rewardType": "questProgress",
+        "rewardID": "arulirmountain_trap03",
+        "value": 10
+      },
+      {
+        "rewardType": "actorCondition",
+        "rewardID": "bleeding_wound",
+        "value": 7
+      },
+      {
+        "rewardType": "actorCondition",
+        "rewardID": "bleeding_wound",
+        "value": 7
+      },
+      {
+        "rewardType": "actorCondition",
+        "rewardID": "bleeding_wound",
+        "value": 3
+      },
+      {
+        "rewardType": "actorCondition",
+        "rewardID": "bleeding_wound",
+        "value": 3
+      }
+    ],
+    "replies": [
+      {
+        "text": "Ouch.",
+        "nextPhraseID": "X"
+      }
+    ],
+    "message": "You fell into a hole and hurt yourself."
+  },
+  {
+    "id": "arulirmountain_trap04",
+    "rewards": [
+      {
+        "rewardType": "questProgress",
+        "rewardID": "arulirmountain_trap04",
+        "value": 10
+      },
+      {
+        "rewardType": "actorCondition",
+        "rewardID": "bleeding_wound",
+        "value": 5
+      },
+      {
+        "rewardType": "actorCondition",
+        "rewardID": "bleeding_wound",
+        "value": 5
+      },
+      {
+        "rewardType": "actorCondition",
+        "rewardID": "crit2",
+        "value": 3
+      },
+      {
+        "rewardType": "actorCondition",
+        "rewardID": "crit2",
+        "value": 3
+      }
+    ],
+    "replies": [
+      {
+        "text": "Ouch.",
+        "nextPhraseID": "X"
+      }
+    ],
+    "message": "Some rocks above your head begin to crack.\nA moment later a pile of rocks rains down on you."
+  },
+  {
+    "id": "arulirmountain_trap05",
+    "rewards": [
+      {
+        "rewardType": "questProgress",
+        "rewardID": "arulirmountain_trap05",
+        "value": 10
+      },
+      {
+        "rewardType": "actorCondition",
+        "rewardID": "bleeding_wound",
+        "value": 5
+      },
+      {
+        "rewardType": "actorCondition",
+        "rewardID": "bleeding_wound",
+        "value": 5
+      },
+      {
+        "rewardType": "actorCondition",
+        "rewardID": "crit2",
+        "value": 3
+      },
+      {
+        "rewardType": "actorCondition",
+        "rewardID": "crit2",
+        "value": 3
+      }
+    ],
+    "replies": [
+      {
+        "text": "Ouch.",
+        "nextPhraseID": "X"
+      }
+    ],
+    "message": "Some rocks above your head begin to crack.\nA moment later a pile of rocks rains down on you."
+  },
+  {
+    "id": "arulircave_trap01",
+    "rewards": [
+      {
+        "rewardType": "questProgress",
+        "rewardID": "arulircave_trap01",
+        "value": 10
+      },
+      {
+        "rewardType": "actorCondition",
+        "rewardID": "bleeding_wound",
+        "value": 7
+      },
+      {
+        "rewardType": "actorCondition",
+        "rewardID": "bleeding_wound",
+        "value": 7
+      },
+      {
+        "rewardType": "actorCondition",
+        "rewardID": "bleeding_wound",
+        "value": 4
+      },
+      {
+        "rewardType": "actorCondition",
+        "rewardID": "bleeding_wound",
+        "value": 4
+      }
+    ],
+    "replies": [
+      {
+        "text": "Ouch.",
+        "nextPhraseID": "X"
+      }
+    ],
+    "message": "You fell into a hole and hurt yourself."
+  },
+  {
+    "id": "arulircave_trap02",
+    "rewards": [
+      {
+        "rewardType": "questProgress",
+        "rewardID": "arulircave_trap02",
+        "value": 10
+      },
+      {
+        "rewardType": "actorCondition",
+        "rewardID": "bleeding_wound",
+        "value": 6
+      },
+      {
+        "rewardType": "actorCondition",
+        "rewardID": "bleeding_wound",
+        "value": 6
+      },
+      {
+        "rewardType": "actorCondition",
+        "rewardID": "crit2",
+        "value": 4
+      },
+      {
+        "rewardType": "actorCondition",
+        "rewardID": "crit2",
+        "value": 4
+      }
+    ],
+    "replies": [
+      {
+        "text": "Ouch.",
+        "nextPhraseID": "X"
+      }
+    ],
+    "message": "Some rocks above your head begin to crack.\nA moment later a pile of rocks rains down on you."
+  },
+  {
+    "id": "arulircave_trap03",
+    "rewards": [
+      {
+        "rewardType": "questProgress",
+        "rewardID": "arulircave_trap03",
+        "value": 10
+      },
+      {
+        "rewardType": "actorCondition",
+        "rewardID": "bleeding_wound",
+        "value": 7
+      },
+      {
+        "rewardType": "actorCondition",
+        "rewardID": "bleeding_wound",
+        "value": 7
+      },
+      {
+        "rewardType": "actorCondition",
+        "rewardID": "crit2",
+        "value": 5
+      },
+      {
+        "rewardType": "actorCondition",
+        "rewardID": "crit2",
+        "value": 5
+      }
+    ],
+    "replies": [
+      {
+        "text": "Ouch.",
+        "nextPhraseID": "X"
+      }
+    ],
+    "message": "Some rocks above your head begin to crack.\nA moment later a pile of rocks rains down on you."
+  },
+  {
+    "id": "arulircave_trap04",
+    "rewards": [
+      {
+        "rewardType": "questProgress",
+        "rewardID": "arulircave_trap04",
+        "value": 10
+      },
+      {
+        "rewardType": "actorCondition",
+        "rewardID": "bleeding_wound",
+        "value": 8
+      },
+      {
+        "rewardType": "actorCondition",
+        "rewardID": "bleeding_wound",
+        "value": 8
+      },
+      {
+        "rewardType": "actorCondition",
+        "rewardID": "bleeding_wound",
+        "value": 3
+      },
+      {
+        "rewardType": "actorCondition",
+        "rewardID": "bleeding_wound",
+        "value": 3
+      }
+    ],
+    "replies": [
+      {
+        "text": "Ouch.",
+        "nextPhraseID": "X"
+      }
+    ],
+    "message": "You fell into a hole and hurt yourself."
+  },
+  {
+    "id": "arulircave_trap05",
+    "rewards": [
+      {
+        "rewardType": "questProgress",
+        "rewardID": "arulircave_trap05",
+        "value": 10
+      },
+      {
+        "rewardType": "actorCondition",
+        "rewardID": "bleeding_wound",
+        "value": 7
+      },
+      {
+        "rewardType": "actorCondition",
+        "rewardID": "bleeding_wound",
+        "value": 7
+      },
+      {
+        "rewardType": "actorCondition",
+        "rewardID": "crit2",
+        "value": 6
+      },
+      {
+        "rewardType": "actorCondition",
+        "rewardID": "crit2",
+        "value": 6
+      }
+    ],
+    "replies": [
+      {
+        "text": "Ouch.",
+        "nextPhraseID": "X"
+      }
+    ],
+    "message": "Some rocks above your head begin to crack.\nA moment later a pile of rocks rains down on you."
+  },
+  {
+    "id": "arulircave_trap06",
+    "rewards": [
+      {
+        "rewardType": "questProgress",
+        "rewardID": "arulircave_trap06",
+        "value": 10
+      },
+      {
+        "rewardType": "actorCondition",
+        "rewardID": "bleeding_wound",
+        "value": 7
+      },
+      {
+        "rewardType": "actorCondition",
+        "rewardID": "bleeding_wound",
+        "value": 7
+      },
+      {
+        "rewardType": "actorCondition",
+        "rewardID": "crit2",
+        "value": 6
+      },
+      {
+        "rewardType": "actorCondition",
+        "rewardID": "crit2",
+        "value": 6
+      }
+    ],
+    "replies": [
+      {
+        "text": "Ouch.",
+        "nextPhraseID": "X"
+      }
+    ],
+    "message": "Some rocks above your head begin to crack.\nA moment later a pile of rocks rains down on you."
+  },
+  {
+    "id": "arulircave_trap07",
+    "rewards": [
+      {
+        "rewardType": "questProgress",
+        "rewardID": "arulircave_trap07",
+        "value": 10
+      },
+      {
+        "rewardType": "actorCondition",
+        "rewardID": "bleeding_wound",
+        "value": 9
+      },
+      {
+        "rewardType": "actorCondition",
+        "rewardID": "bleeding_wound",
+        "value": 9
+      },
+      {
+        "rewardType": "actorCondition",
+        "rewardID": "bleeding_wound",
+        "value": 3
+      },
+      {
+        "rewardType": "actorCondition",
+        "rewardID": "bleeding_wound",
+        "value": 3
+      }
+    ],
+    "replies": [
+      {
+        "text": "Ouch.",
+        "nextPhraseID": "X"
+      }
+    ],
+    "message": "You fell into a hole and hurt yourself."
+  },
+  {
+    "id": "arulircave_trap08",
+    "rewards": [
+      {
+        "rewardType": "questProgress",
+        "rewardID": "arulircave_trap08",
+        "value": 10
+      },
+      {
+        "rewardType": "actorCondition",
+        "rewardID": "bleeding_wound",
+        "value": 10
+      },
+      {
+        "rewardType": "actorCondition",
+        "rewardID": "bleeding_wound",
+        "value": 10
+      },
+      {
+        "rewardType": "actorCondition",
+        "rewardID": "bleeding_wound",
+        "value": 5
+      },
+      {
+        "rewardType": "actorCondition",
+        "rewardID": "bleeding_wound",
+        "value": 5
+      }
+    ],
+    "replies": [
+      {
+        "text": "Ouch.",
+        "nextPhraseID": "X"
+      }
+    ],
+    "message": "You fell into a hole and hurt yourself."
+  },
+  {
+    "id": "arulircave_trap09",
+    "rewards": [
+      {
+        "rewardType": "questProgress",
+        "rewardID": "arulircave_trap09",
+        "value": 10
+      },
+      {
+        "rewardType": "actorCondition",
+        "rewardID": "bleeding_wound",
+        "value": 9
+      },
+      {
+        "rewardType": "actorCondition",
+        "rewardID": "bleeding_wound",
+        "value": 9
+      },
+      {
+        "rewardType": "actorCondition",
+        "rewardID": "crit2",
+        "value": 8
+      },
+      {
+        "rewardType": "actorCondition",
+        "rewardID": "crit2",
+        "value": 8
+      }
+    ],
+    "replies": [
+      {
+        "text": "Ouch.",
+        "nextPhraseID": "X"
+      }
+    ],
+    "message": "Some rocks above your head begin to crack.\nA moment later a pile of rocks rains down on you."
+  },
+  {
+    "id": "arulircave_secret_open",
+    "replies": [
+      {
+        "text": "N",
+        "nextPhraseID": "arulircave_secret_1"
+      }
+    ],
+    "message": "You stumble over some rocks. As you fall against the wall, it buckles and the whole wall begins to crumble.",
+    "rewards": [
+      {
+        "rewardType": "questProgress",
+        "rewardID": "arulircave_secret",
+        "value": 20
+      }
+    ]
+  },
+  {
+    "id": "arulircave_secret_1",
+    "replies": [
+      {
+        "text": "Nice, a secret room.",
+        "nextPhraseID": "X"
+      }
+    ],
+    "message": "When the dust clears a bit you can see a small corridor."
+  },
+  {
+    "id": "arulircave_secret",
+    "replies": [
+      {
+        "requires": [
+          {
+            "requireType": "questLatestProgress",
+            "requireID": "arulircave_secret",
+            "value": 10
+          }
+        ],
+        "nextPhraseID": "arulircave_secret_open"
+      },
+      {
+        "nextPhraseID": "X"
+      }
+    ]
+  },
+  {
+    "id": "arulircave_secret_initiate",
+    "rewards": [
+      {
+        "rewardType": "questProgress",
+        "rewardID": "arulircave_secret",
+        "value": 10
+      }
+    ],
+    "replies": [
+      {
+        "nextPhraseID": "X"
+      }
+    ]
+  },
+  {
+    "id": "arulircave_trap10",
+    "rewards": [
+      {
+        "rewardType": "questProgress",
+        "rewardID": "arulircave_trap10",
+        "value": 10
+      }
+    ],
+    "replies": [
+      {
+        "text": "Oh no...",
+        "nextPhraseID": "X"
+      }
+    ],
+    "message": "The ground is very slippery. You stumble and fall into the water."
+  }
+]

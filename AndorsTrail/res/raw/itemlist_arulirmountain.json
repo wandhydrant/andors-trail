@@ -1,0 +1,52 @@
+[
+  {
+    "id": "crystal_blue",
+    "name": "Blue Crystals",
+    "hasManualPrice": 1,
+    "iconID": "items_misc:31",
+    "category": "gem",
+    "baseMarketCost": 5,
+    "description": "Some blue shimmering crystals."
+  },
+  {
+    "id": "crystal_red",
+    "name": "Red Crystals",
+    "hasManualPrice": 1,
+    "iconID": "items_misc:34",
+    "category": "gem",
+    "baseMarketCost": 4,
+    "description": "Some red shimmering crystals."
+  },
+  {
+    "id": "hunters_sword",
+    "name": "Hunters Sword",
+    "displaytype": "extraordinary",
+    "equipEffect": {
+      "increaseAttackDamage": {
+        "min": 2,
+        "max": 8
+      },
+      "increaseAttackCost": 4,
+      "increaseAttackChance": 25
+    },
+    "hitEffect": {
+      "increaseCurrentAP": {
+        "min": 1,
+        "max": 2
+      }
+    },
+    "killEffect": {
+      "conditionsSource": [
+        {
+          "magnitude": 1,
+          "condition": "rage_minor",
+          "duration": 3,
+          "chance": 10
+        }
+      ]
+    },
+    "iconID": "items_misc_5:42",
+    "category": "lsword",
+    "description": "Be the fastest on your venery."
+  }
+]

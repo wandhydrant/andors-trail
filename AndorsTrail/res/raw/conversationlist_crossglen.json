@@ -48,30 +48,36 @@
     ]
   },
   {
-    "id": "mara_default",
-    "message": "Never mind those drunken fellas, they're always causing trouble.\n\nWant something to eat?",
-    "replies": [
-      {
-        "text": "Do you have anything to trade?",
-        "nextPhraseID": "S"
-      },
-      {
-        "text": "Have you got some task or mission for me?",
-        "nextPhraseID": "elythara_mara_5"
-      },
-      {
-        "requires": [
-          {
-            "requireType": "questProgress",
-            "requireID": "elythara1",
-            "value": 20
-          }
-        ],
-        "text": "I have brought the bread to Edwin.",
-        "nextPhraseID": "elythara_mara_reward"
-      }
+    "message":"Never mind those drunken fellas, they're always causing trouble.\n\nWant something to eat?",
+    "id":"mara_default",
+    "replies":[
+        {
+            "nextPhraseID":"S",
+            "text":"Do you have anything to trade?"
+        },
+        {
+            "nextPhraseID":"elythara_mara_5",
+            "text":"Have you got some task or mission for me?"
+        },
+        {
+            "nextPhraseID":"elythara_mara_reward",
+            "text":"I have brought the bread to Edwin.",
+            "requires":[
+                {
+                    "requireType":"questProgress",
+                    "value":20,
+                    "requireID":"elythara1"
+                },
+                {
+                    "negate":true,
+                    "requireType":"questProgress",
+                    "value":30,
+                    "requireID":"elythara1"
+                }
+            ]
+        }
     ]
-  },
+},
   {
     "id": "mara1",
     "replies": [
@@ -241,30 +247,39 @@
     ]
   },
   {
-    "id": "elythara_mara_5",
-    "replies": [
-      {
-        "nextPhraseID": "elythara_mara_1"
-      },
-      {
-        "requires": [
-          {
-            "requireType": "questProgress",
-            "requireID": "elythara1",
-            "value": 10
-          }
-        ],
-        "nextPhraseID": "elythara_mara_6"
-      }
+    "id":"elythara_mara_5",
+    "replies":[
+        {
+            "nextPhraseID":"elythara_mara_7",
+            "requires":[
+                {
+                    "requireType":"questProgress",
+                    "value":30,
+                    "requireID":"elythara1"
+                }
+            ]
+        },
+        {
+            "nextPhraseID":"elythara_mara_6",
+            "requires":[
+                {
+                    "requireType":"questProgress",
+                    "value":10,
+                    "requireID":"elythara1"
+                }
+            ]
+        },
+        {
+            "nextPhraseID":"elythara_mara_1"
+        }
     ]
   },
   {
     "id": "elythara_mara_6",
-    "replies": [
-      {
-        "nextPhraseID": "X"
-      }
-    ],
     "message": "I'm sorry but I've already given you the bread. Have you lost it?"
+  },
+  {
+    "message":"No, I don't have anything to do for you at the moment. Maybe later...",
+    "id":"elythara_mara_7"
   }
 ]
