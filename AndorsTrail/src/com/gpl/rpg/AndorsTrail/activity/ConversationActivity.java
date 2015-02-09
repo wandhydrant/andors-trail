@@ -46,6 +46,9 @@ public final class ConversationActivity
 	private static final int playerPhraseColor = 0;
 	private static final int NPCPhraseColor = 0;
 	private static final int rewardColor = Color.argb(255, 0x99, 0x99, 0x55);
+	private static final int oldPhraseColor = Color.argb(255,0x5a,0x5a, 0x5a);
+    	private static final int oldPlayerNameColor = Color.argb(255, 0x5d, 0x11, 0x11);
+    	private static final int oldNPCNameColor = Color.argb(255, 0x5d, 0x5d, 0x11);
 
 	private WorldContext world;
 	private Player player;
@@ -206,7 +209,19 @@ public final class ConversationActivity
 		return null; // No reply was found. This is probably an error.
 	}
 
+	private void greyAllConversationStatement(){
+		for(ConversationStatement conversation : this.conversationHistory ){
+			conversation.textColor = oldPhraseColor;
+			if(conversation.isPlayerActor){
+				conversation.nameColor = oldPlayerNameColor;
+			} else {
+				conversation.nameColor = oldNPCNameColor;
+			}
+		}
+	}
+
 	private void nextButtonClicked() {
+		greyAllConversationStatement();
 		RadioButton rb = getSelectedReplyButton();
 		replyGroup.removeAllViews();
 		nextButton.setEnabled(false);
