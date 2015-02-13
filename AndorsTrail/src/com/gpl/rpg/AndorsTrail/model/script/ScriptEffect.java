@@ -14,6 +14,7 @@ public final class ScriptEffect {
 		, deactivateSpawnArea
 		, activateMapChangeArea
 		, deactivateMapChangeArea
+		, removeQuestProgress
 	}
 
 	public final ScriptEffectType type;

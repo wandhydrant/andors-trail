@@ -11,6 +11,8 @@ import com.gpl.rpg.AndorsTrail.model.ability.SkillCollection;
 import com.gpl.rpg.AndorsTrail.model.item.DropListCollection;
 import com.gpl.rpg.AndorsTrail.model.item.Inventory;
 import com.gpl.rpg.AndorsTrail.model.item.Loot;
+import com.gpl.rpg.AndorsTrail.model.quest.Quest;
+import com.gpl.rpg.AndorsTrail.model.quest.QuestLogEntry;
 import com.gpl.rpg.AndorsTrail.model.quest.QuestProgress;
 import com.gpl.rpg.AndorsTrail.resource.tiles.TileManager;
 import com.gpl.rpg.AndorsTrail.savegames.LegacySavegameFormatReaderForPlayer;
@@ -21,8 +23,11 @@ import com.gpl.rpg.AndorsTrail.util.Size;
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Collection;
 import java.util.HashMap;
 import java.util.HashSet;
+import java.util.Iterator;
 import java.util.Map.Entry;
 
 public final class Player extends Actor {
@@ -152,6 +157,10 @@ public final class Player extends Actor {
 		if (!questProgress.containsKey(progress.questID)) questProgress.put(progress.questID, new HashSet<Integer>());
 		questProgress.get(progress.questID).add(progress.progress);
 		return true; //Progress was added.
+	}
+
+	public void removeQuestProgress(Quest quest, int removeProgress){
+		questProgress.get(quest.questID).remove(progress);
 	}
 
 	public void recalculateLevelExperience() {

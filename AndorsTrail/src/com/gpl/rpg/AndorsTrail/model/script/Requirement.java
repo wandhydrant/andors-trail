@@ -14,6 +14,7 @@ public final class Requirement {
 		,spentGold
 		,consumedBonemeals
 		,hasActorCondition
+		,removeQuestProgress
 	}
 
 	public final RequirementType requireType;
