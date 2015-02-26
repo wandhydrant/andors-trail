@@ -228,6 +228,7 @@ public final class ConversationActivity
 				conversation.textColor = oldRewardColor;
 			}
 		}
+		numberOfNewMessage = 0;
 	}
 
 	private void nextButtonClicked() {
