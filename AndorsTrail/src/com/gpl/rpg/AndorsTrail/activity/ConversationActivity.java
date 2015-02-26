@@ -35,6 +35,7 @@ import com.gpl.rpg.AndorsTrail.model.quest.QuestProgress;
 import com.gpl.rpg.AndorsTrail.resource.tiles.TileManager;
 
 import java.util.ArrayList;
+import java.util.ListIterator;
 
 public final class ConversationActivity
 		extends Activity
@@ -49,11 +50,13 @@ public final class ConversationActivity
 	private static final int oldPhraseColor = Color.argb(255,0x5a,0x5a, 0x5a);
     	private static final int oldPlayerNameColor = Color.argb(255, 0x5d, 0x11, 0x11);
     	private static final int oldNPCNameColor = Color.argb(255, 0x5d, 0x5d, 0x11);
+    	private static final int oldRewardColor = Color.argb(255, 0x4C, 0x4C, 0x2A);
 
 	private WorldContext world;
 	private Player player;
 	private final ArrayList<ConversationStatement> conversationHistory = new ArrayList<ConversationStatement>();
 	private ConversationController.ConversationStatemachine conversationState;
+	private int numberOfNewMessage = 0;
 
 	private StatementContainerAdapter listAdapter;
 	private Button nextButton;
@@ -210,12 +213,19 @@ public final class ConversationActivity
 	}
 
 	private void greyAllConversationStatement(){
-		for(ConversationStatement conversation : this.conversationHistory ){
-			conversation.textColor = oldPhraseColor;
-			if(conversation.isPlayerActor){
-				conversation.nameColor = oldPlayerNameColor;
-			} else {
-				conversation.nameColor = oldNPCNameColor;
+		int numberOfMessage = this.conversationHistory.size();
+		ListIterator<ConversationStatement> conversations = this.conversationHistory.listIterator(numberOfMessage-this.numberOfNewMessage);
+		while(conversations.hasNext()){
+			ConversationStatement conversation = conversations.next();
+			if(conversation.hasActor()){
+				conversation.textColor = oldPhraseColor;
+				if(conversation.isPlayerActor){
+					conversation.nameColor = oldPlayerNameColor;
+				} else {
+					conversation.nameColor = oldNPCNameColor;
+				}
+			}else{
+				conversation.textColor = oldRewardColor;
 			}
 		}
 	}
@@ -248,6 +258,7 @@ public final class ConversationActivity
 		s.textColor = textColor;
 		s.isPlayerActor = actor != null && actor == player;
 		conversationHistory.add(s);
+		numberOfNewMessage++;
 		statementList.clearFocus();
 		listAdapter.notifyDataSetChanged();
 		statementList.requestLayout();
