@@ -159,8 +159,10 @@ public final class Player extends Actor {
 		return true; //Progress was added.
 	}
 
-	public void removeQuestProgress(Quest quest, int removeProgress){
-		questProgress.get(quest.questID).remove(progress);
+	public boolean removeQuestProgress(QuestProgress progress){
+        if (!hasExactQuestProgress(progress.questID, progress.progress)) return false;
+		questProgress.get(progress.questID).remove(progress.progress);
+		return true; //Progress was removed.
 	}
 
 	public void recalculateLevelExperience() {

@@ -1,6 +1,8 @@
 package com.gpl.rpg.AndorsTrail.controller;
 
 import android.content.res.Resources;
+import android.util.Log;
+
 import com.gpl.rpg.AndorsTrail.AndorsTrailApplication;
 import com.gpl.rpg.AndorsTrail.context.ControllerContext;
 import com.gpl.rpg.AndorsTrail.context.WorldContext;
@@ -171,8 +173,8 @@ public final class ConversationController {
 	}
 
 	private void addRemoveQuestProgressReward(Player player, String questID, int questProgress) {
-		Quest currentQuest = world.quests.getQuest(questID);
-		player.removeQuestProgress(currentQuest,questProgress);
+        QuestProgress progress = new QuestProgress(questID, questProgress);
+		boolean removed = player.removeQuestProgress(progress);
 	}
 
 	private void addDropListReward(Player player, String droplistID, ScriptEffectResult result) {
