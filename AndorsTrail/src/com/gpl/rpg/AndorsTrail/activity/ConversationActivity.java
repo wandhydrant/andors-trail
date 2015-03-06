@@ -214,9 +214,8 @@ public final class ConversationActivity
 
 	private void greyAllConversationStatement(){
 		int numberOfMessage = this.conversationHistory.size();
-		ListIterator<ConversationStatement> conversations = this.conversationHistory.listIterator(numberOfMessage-this.numberOfNewMessage);
-		while(conversations.hasNext()){
-			ConversationStatement conversation = conversations.next();
+		while(numberOfNewMessage != 0){
+			ConversationStatement conversation = conversationHistory.get(numberOfMessage - numberOfNewMessage);
 			if(conversation.hasActor()){
 				conversation.textColor = oldPhraseColor;
 				if(conversation.isPlayerActor){
@@ -227,8 +226,8 @@ public final class ConversationActivity
 			}else{
 				conversation.textColor = oldRewardColor;
 			}
+			numberOfNewMessage--;
 		}
-		numberOfNewMessage = 0;
 	}
 
 	private void nextButtonClicked() {
