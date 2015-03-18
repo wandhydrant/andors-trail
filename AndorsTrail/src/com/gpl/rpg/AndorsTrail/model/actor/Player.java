@@ -1,7 +1,15 @@
 package com.gpl.rpg.AndorsTrail.model.actor;
 
+import java.io.DataInputStream;
+import java.io.DataOutputStream;
+import java.io.IOException;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Map.Entry;
+
 import android.util.FloatMath;
 import android.util.SparseIntArray;
+
 import com.gpl.rpg.AndorsTrail.AndorsTrailApplication;
 import com.gpl.rpg.AndorsTrail.context.ControllerContext;
 import com.gpl.rpg.AndorsTrail.context.WorldContext;
@@ -17,13 +25,6 @@ import com.gpl.rpg.AndorsTrail.savegames.LegacySavegameFormatReaderForPlayer;
 import com.gpl.rpg.AndorsTrail.util.Coord;
 import com.gpl.rpg.AndorsTrail.util.Range;
 import com.gpl.rpg.AndorsTrail.util.Size;
-
-import java.io.DataInputStream;
-import java.io.DataOutputStream;
-import java.io.IOException;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Map.Entry;
 
 public final class Player extends Actor {
 
@@ -152,6 +153,12 @@ public final class Player extends Actor {
 		if (!questProgress.containsKey(progress.questID)) questProgress.put(progress.questID, new HashSet<Integer>());
 		questProgress.get(progress.questID).add(progress.progress);
 		return true; //Progress was added.
+	}
+
+	public boolean removeQuestProgress(QuestProgress progress){
+        if (!hasExactQuestProgress(progress.questID, progress.progress)) return false;
+		questProgress.get(progress.questID).remove(progress.progress);
+		return true; //Progress was removed.
 	}
 
 	public void recalculateLevelExperience() {
