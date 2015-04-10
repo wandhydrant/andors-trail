@@ -228,15 +228,24 @@ public final class MovementController implements TimedMessageTask.Callback {
 		player.lastPosition.set(player.position);
 		player.position.set(newPosition);
 		controllers.combatController.setCombatSelection(null, null);
-		playerMovementListeners.onPlayerMoved(newPosition, player.lastPosition);
+		
+		controllers.effectController.startActorMoveEffect(player, player.lastPosition, newPosition, (int) (Constants.MINIMUM_INPUT_INTERVAL / 2), new VisualEffectController.VisualEffectCompletedCallback() {
+			
+			@Override
+			public void onVisualEffectCompleted(int callbackValue) {
+				playerMovementListeners.onPlayerMoved(newPosition, player.lastPosition);
 
-		controllers.mapController.handleMapEventsAfterMovement(currentMap, newPosition, player.lastPosition);
+				controllers.mapController.handleMapEventsAfterMovement(currentMap, newPosition, player.lastPosition);
 
-		if (!world.model.uiSelections.isInCombat) {
-			//currentMap can be outdated due to mapchange events processed above.
-			Loot loot = world.model.currentMap.getBagAt(newPosition);
-			if (loot != null) controllers.itemController.playerSteppedOnLootBag(loot);
-		}
+				if (!world.model.uiSelections.isInCombat) {
+					//currentMap can be outdated due to mapchange events processed above.
+					Loot loot = world.model.currentMap.getBagAt(newPosition);
+					if (loot != null) controllers.itemController.playerSteppedOnLootBag(loot);
+				}
+			}
+		}, 0);
+		
+		
 	}
 
 	public void respawnPlayer(Resources res) {

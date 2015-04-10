@@ -29,7 +29,6 @@ import com.gpl.rpg.AndorsTrail.util.Size;
 public final class Player extends Actor {
 
 	public static final int DEFAULT_PLAYER_ATTACKCOST = 4;
-	public final Coord lastPosition;
 	public final Coord nextPosition;
 
 	// TODO: Should be privates
@@ -87,7 +86,6 @@ public final class Player extends Actor {
 			, true // isPlayer
 			, false // isImmuneToCriticalHits
 		);
-		this.lastPosition = new Coord();
 		this.nextPosition = new Coord();
 		this.levelExperience = new Range();
 		this.inventory = new Inventory();

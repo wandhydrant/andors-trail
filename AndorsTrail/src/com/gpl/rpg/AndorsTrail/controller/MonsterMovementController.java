@@ -74,7 +74,7 @@ public final class MonsterMovementController implements EvaluateWalkable {
 	private void moveMonster(final Monster m, final MonsterSpawnArea area) {
 		PredefinedMap map = world.model.currentMap;
 		LayeredTileMap tileMap = world.model.currentTileMap;
-		m.nextActionTime += getMillisecondsPerMove(m);
+		m.nextActionTime = System.currentTimeMillis() + getMillisecondsPerMove(m);
 		if (m.movementDestination == null) {
 			// Monster has waited and should start to move again.
 			m.movementDestination = new Coord(m.position);
@@ -128,7 +128,7 @@ public final class MonsterMovementController implements EvaluateWalkable {
 
 	private static void cancelCurrentMonsterMovement(final Monster m) {
 		m.movementDestination = null;
-		m.nextActionTime += getMillisecondsPerMove(m) * Constants.rollValue(Constants.monsterWaitTurns);
+		m.nextActionTime = System.currentTimeMillis() + (getMillisecondsPerMove(m) * Constants.rollValue(Constants.monsterWaitTurns));
 	}
 
 	private static int getMillisecondsPerMove(Monster m) {
@@ -151,9 +151,17 @@ public final class MonsterMovementController implements EvaluateWalkable {
 		return monsterCanMoveTo(world.model.currentMap, world.model.currentTileMap, r);
 	}
 
-	public void moveMonsterToNextPosition(Monster m, PredefinedMap map) {
-		CoordRect previousPosition = new CoordRect(new Coord(m.position), m.rectPosition.size);
+	public void moveMonsterToNextPosition(final Monster m, final PredefinedMap map) {
+		final CoordRect previousPosition = new CoordRect(new Coord(m.position), m.rectPosition.size);
+		m.lastPosition.set(previousPosition.topLeft);
 		m.position.set(m.nextPosition.topLeft);
-		monsterMovementListeners.onMonsterMoved(map, m, previousPosition);
+		controllers.effectController.startActorMoveEffect(m, previousPosition.topLeft, m.position, getMillisecondsPerMove(m) / 4, new VisualEffectController.VisualEffectCompletedCallback() {
+			
+			@Override
+			public void onVisualEffectCompleted(int callbackValue) {
+
+				monsterMovementListeners.onMonsterMoved(map, m, previousPosition);
+			}
+		}, 0);
 	}
 }

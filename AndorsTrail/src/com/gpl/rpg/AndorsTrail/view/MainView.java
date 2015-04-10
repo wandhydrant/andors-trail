@@ -10,12 +10,14 @@ import android.view.KeyEvent;
 import android.view.MotionEvent;
 import android.view.SurfaceHolder;
 import android.view.SurfaceView;
+
 import com.gpl.rpg.AndorsTrail.AndorsTrailApplication;
 import com.gpl.rpg.AndorsTrail.AndorsTrailPreferences;
 import com.gpl.rpg.AndorsTrail.context.ControllerContext;
 import com.gpl.rpg.AndorsTrail.context.WorldContext;
 import com.gpl.rpg.AndorsTrail.controller.InputController;
 import com.gpl.rpg.AndorsTrail.controller.VisualEffectController.BloodSplatter;
+import com.gpl.rpg.AndorsTrail.controller.VisualEffectController.SpriteMoveAnimation;
 import com.gpl.rpg.AndorsTrail.controller.VisualEffectController.VisualEffectAnimation;
 import com.gpl.rpg.AndorsTrail.controller.listeners.*;
 import com.gpl.rpg.AndorsTrail.model.ModelContainer;
@@ -29,6 +31,7 @@ import com.gpl.rpg.AndorsTrail.resource.tiles.TileCollection;
 import com.gpl.rpg.AndorsTrail.resource.tiles.TileManager;
 import com.gpl.rpg.AndorsTrail.util.Coord;
 import com.gpl.rpg.AndorsTrail.util.CoordRect;
+import com.gpl.rpg.AndorsTrail.util.L;
 import com.gpl.rpg.AndorsTrail.util.Size;
 
 public final class MainView extends SurfaceView
@@ -49,7 +52,8 @@ public final class MainView extends SurfaceView
 	private final Coord screenOffset = new Coord(); // pixel offset where the image begins
 	private final Coord mapTopLeft = new Coord(); // Map coords of visible map
 	private CoordRect mapViewArea; // Area in mapcoordinates containing the visible map. topleft == this.topleft
-
+	private Rect redrawClip = new Rect(); //Area in screen coordinates containing the visible map.
+	
 	private final ModelContainer model;
 	private final WorldContext world;
 	private final ControllerContext controllers;
@@ -199,6 +203,7 @@ public final class MainView extends SurfaceView
 				}
 			}
 			synchronized (holder) { synchronized (tiles) {
+				c.clipRect(redrawClip);
 				c.translate(screenOffset.x, screenOffset.y);
 				c.scale(scale, scale);
 				doDrawRect(c, area);
@@ -208,6 +213,34 @@ public final class MainView extends SurfaceView
 						drawEffectText(c, area, effect, textYOffset, effect.textPaint);
 					}
 				}
+			} }
+		} finally {
+			if (c != null) holder.unlockCanvasAndPost(c);
+		}
+	}
+	
+	private void redrawMoveArea_(CoordRect area, final SpriteMoveAnimation effect) {
+		if (!hasSurface) return;
+
+		if (currentMap.isOutside(area)) return;
+		if (!mapViewArea.intersects(area)) return;
+
+		calculateRedrawRect(area);
+		Canvas c = null;
+		try {
+			c = holder.lockCanvas(redrawRect);
+			// lockCanvas sometimes changes redrawRect, when the double-buffer has not been
+			// sufficiently filled beforehand. In those cases, we need to redraw the whole scene.
+			if (area != mapViewArea) {
+				if (isRedrawRectWholeScreen(redrawRect)) {
+					area = mapViewArea;
+				}
+			}
+			synchronized (holder) { synchronized (tiles) {
+				c.clipRect(redrawClip);
+				c.translate(screenOffset.x, screenOffset.y);
+				c.scale(scale, scale);
+				doDrawRect(c, area);
 			} }
 		} finally {
 			if (c != null) holder.unlockCanvasAndPost(c);
@@ -256,10 +289,22 @@ public final class MainView extends SurfaceView
 	}
 
 	private void doDrawRect(Canvas canvas, CoordRect area) {
-
+		doDrawRect_Below(canvas, area);
+		doDrawRect_Objects(canvas, area);
+		doDrawRect_Above(canvas, area);
+		
+	}
+	
+	private void doDrawRect_Below(Canvas canvas, CoordRect area) {
 		drawMapLayer(canvas, area, currentTileMap.currentLayout.layerGround);
 		tryDrawMapLayer(canvas, area, currentTileMap.currentLayout.layerObjects);
 
+		for (BloodSplatter splatter : currentMap.splatters) {
+			drawFromMapPosition(canvas, area, splatter.position, splatter.iconID);
+		}
+	}
+	
+	private void doDrawRect_Objects(Canvas canvas, CoordRect area) {
 		for (BloodSplatter splatter : currentMap.splatters) {
 			drawFromMapPosition(canvas, area, splatter.position, splatter.iconID);
 		}
@@ -270,13 +315,31 @@ public final class MainView extends SurfaceView
 			}
 		}
 
-		drawFromMapPosition(canvas, area, playerPosition, model.player.iconID);
+		if (!model.player.hasVFXRunning) {
+			drawFromMapPosition(canvas, area, playerPosition, model.player.iconID);
+		} else if (area.contains(playerPosition)) {
+			int vfxElapsedTime = (int) (System.currentTimeMillis() - model.player.vfxStartTime);
+			if (vfxElapsedTime > model.player.vfxDuration) vfxElapsedTime = model.player.vfxDuration;
+			int x = ((model.player.position.x - mapViewArea.topLeft.x) * tileSize * vfxElapsedTime + ((model.player.lastPosition.x - mapViewArea.topLeft.x) * tileSize * (model.player.vfxDuration - vfxElapsedTime))) / model.player.vfxDuration;
+			int y = ((model.player.position.y - mapViewArea.topLeft.y) * tileSize * vfxElapsedTime + ((model.player.lastPosition.y - mapViewArea.topLeft.y) * tileSize * (model.player.vfxDuration - vfxElapsedTime))) / model.player.vfxDuration;
+			tiles.drawTile(canvas, model.player.iconID, x, y, mPaint);
+		}
 		for (MonsterSpawnArea a : currentMap.spawnAreas) {
 			for (Monster m : a.monsters) {
-				drawFromMapPosition(canvas, area, m.rectPosition, m.iconID);
+				if (!m.hasVFXRunning) {
+					drawFromMapPosition(canvas, area, m.rectPosition, m.iconID);
+				} else if (area.intersects(m.rectPosition) || area.contains(m.lastPosition)) {
+					int vfxElapsedTime = (int) (System.currentTimeMillis() - m.vfxStartTime);
+					if (vfxElapsedTime > m.vfxDuration) vfxElapsedTime = m.vfxDuration;
+					int x = ((m.position.x - mapViewArea.topLeft.x) * tileSize * vfxElapsedTime + ((m.lastPosition.x - mapViewArea.topLeft.x) * tileSize * (m.vfxDuration - vfxElapsedTime))) / m.vfxDuration;
+					int y = ((m.position.y - mapViewArea.topLeft.y) * tileSize * vfxElapsedTime + ((m.lastPosition.y - mapViewArea.topLeft.y) * tileSize * (m.vfxDuration - vfxElapsedTime))) / m.vfxDuration;
+					tiles.drawTile(canvas, m.iconID, x, y, mPaint);
+				}
 			}
 		}
-
+	}
+	
+	private void doDrawRect_Above(Canvas canvas, CoordRect area) {
 		tryDrawMapLayer(canvas, area, currentTileMap.currentLayout.layerAbove);
 
 		if (model.uiSelections.selectedPosition != null) {
@@ -342,6 +405,7 @@ public final class MainView extends SurfaceView
 					,Math.min(screenSizeTileCount.height, currentMap.size.height)
 				);
 			mapViewArea = new CoordRect(mapTopLeft, visibleNumberOfTiles);
+			updateClip();
 
 			screenOffset.set(
 					(surfaceSize.width - scaledTileSize * visibleNumberOfTiles.width) / 2
@@ -370,7 +434,12 @@ public final class MainView extends SurfaceView
 				mapTopLeft.y = Math.max(0, playerPosition.y - mapViewArea.size.height/2);
 				mapTopLeft.y = Math.min(mapTopLeft.y, currentMap.size.height - mapViewArea.size.height);
 			}
+			updateClip();
 		}
+	}
+	
+	private void updateClip() {
+		worldCoordsToScreenCords(mapViewArea, redrawClip);
 	}
 
 	@Override
@@ -491,6 +560,16 @@ public final class MainView extends SurfaceView
 	@Override
 	public void onAnimationCompleted(VisualEffectAnimation animation) {
 		redrawArea(animation.area, RedrawAreaDebugReason.EffectCompleted);
+	}
+	
+	@Override
+	public void onNewSpriteMoveFrame(SpriteMoveAnimation animation) {
+		redrawMoveArea_(CoordRect.getBoundingRect(animation.origin, animation.destination), animation);
+	}
+	
+	@Override
+	public void onSpriteMoveCompleted(SpriteMoveAnimation animation) {
+		redrawArea(CoordRect.getBoundingRect(animation.origin, animation.destination), RedrawAreaDebugReason.EffectCompleted);
 	}
 
 	@Override
