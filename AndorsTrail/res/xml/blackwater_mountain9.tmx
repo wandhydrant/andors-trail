@@ -237,15 +237,10 @@
  </objectgroup>
  <objectgroup name="Keys" width="19" height="12"/>
  <objectgroup name="Replace" width="19" height="12">
-  <object name="quest:queststage" type="replace" x="0" y="224" width="192" height="96">
+  <object name="futurequest:10" type="replace" x="0" y="192" width="192" height="128">
    <properties>
-    <property name="Walkalbe" value="Walkalbe_replace"/>
-   </properties>
-  </object>
-  <object name="quest:queststage" type="replace" x="0" y="192" width="192" height="128">
-   <properties>
-    <property name="Above" value="Walkable_replace"/>
     <property name="Objects" value="Objects_replace"/>
+    <property name="Walkable" value="Walkable_replace"/>
    </properties>
   </object>
  </objectgroup>
