@@ -3,7 +3,9 @@ package com.gpl.rpg.AndorsTrail.controller;
 import android.os.Handler;
 import android.os.Message;
 import android.util.FloatMath;
+
 import com.gpl.rpg.AndorsTrail.AndorsTrailPreferences;
+import com.gpl.rpg.AndorsTrail.R;
 import com.gpl.rpg.AndorsTrail.context.ControllerContext;
 import com.gpl.rpg.AndorsTrail.context.WorldContext;
 import com.gpl.rpg.AndorsTrail.controller.VisualEffectController.VisualEffectCompletedCallback;
@@ -375,9 +377,14 @@ public final class CombatController implements VisualEffectCompletedCallback {
 			return;
 		}
 
-		controllers.monsterMovementController.moveMonsterToNextPosition(currentActiveMonster, world.model.currentMap);
-		combatActionListeners.onMonsterMovedDuringCombat(currentActiveMonster);
-		waitForNextMonsterAction();
+		controllers.monsterMovementController.moveMonsterToNextPositionDuringCombat(currentActiveMonster, world.model.currentMap, new VisualEffectController.VisualEffectCompletedCallback(){
+			@Override
+			public void onVisualEffectCompleted(int callbackValue) {
+				combatActionListeners.onMonsterMovedDuringCombat(currentActiveMonster);
+				handleNextMonsterAction();
+			}
+		});
+		
 	}
 
 	private void attackWithCurrentMonster() {
@@ -389,13 +396,10 @@ public final class CombatController implements VisualEffectCompletedCallback {
 
 		if (attack.isHit) {
 			combatActionListeners.onMonsterAttackSuccess(currentActiveMonster, attack);
-
 			startAttackEffect(attack, world.model.player.position, this, CALLBACK_MONSTERATTACK);
 		} else {
 			combatActionListeners.onMonsterAttackMissed(currentActiveMonster, attack);
-			startMissedEffect(attack, world.model.player.position, this, CALLBACK_PLAYERATTACK);
-			
-			waitForNextMonsterAction();
+			startMissedEffect(attack, world.model.player.position, this, CALLBACK_MONSTERATTACK);
 		}
 	}
 
@@ -428,7 +432,7 @@ public final class CombatController implements VisualEffectCompletedCallback {
 		controllers.effectController.startEffect(
 				position
 				, VisualEffectCollection.VisualEffectID.redSplash
-				, attack.damage
+				, (attack.damage == 0) ? null : String.valueOf(attack.damage)
 				, callback
 				, callbackValue);
 	}
@@ -441,10 +445,11 @@ public final class CombatController implements VisualEffectCompletedCallback {
 		controllers.effectController.startEffect(
 				position
 				, VisualEffectCollection.VisualEffectID.miss
-				, attack.damage
+				, controllers.getResources().getString(R.string.combat_miss_animation_message)
 				, callback
 				, callbackValue);
 	}
+	
 	
 	private void endMonsterTurn() {
 		currentActiveMonster = null;

@@ -45,10 +45,11 @@
         "monsterClass": "insect",
         "maxHP": 10,
         "maxAP": 10,
-        "moveCost": 10,
-        "attackCost": 10,
+        "moveCost": 3,
+        "attackCost": 3,
         "attackChance": 50,
         "droplistID": "debuglist1",
+        "movementAggressionType": "helpOthers",
         "attackDamage": {
             "min": 1,
             "max": 2

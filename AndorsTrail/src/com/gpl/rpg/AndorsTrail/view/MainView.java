@@ -188,10 +188,12 @@ public final class MainView extends SurfaceView
 	private void redrawArea_(CoordRect area, final VisualEffectAnimation effect, int tileID, int textYOffset) {
 		if (!hasSurface) return;
 
-		if (currentMap.isOutside(area)) return;
+		
+		if (!currentMap.intersects(area)) return;
 		if (!mapViewArea.intersects(area)) return;
 
 		calculateRedrawRect(area);
+		redrawRect.intersect(redrawClip);
 		Canvas c = null;
 		try {
 			c = holder.lockCanvas(redrawRect);
@@ -210,7 +212,7 @@ public final class MainView extends SurfaceView
 				if (effect != null) {
 					drawFromMapPosition(c, area, effect.position, tileID);
 					if (effect.displayText != null) {
-						drawEffectText(c, area, effect, textYOffset, effect.textPaint);
+						drawEffectText(c, area, effect, textYOffset, effect.getTextPaint());
 					}
 				}
 			} }
@@ -361,8 +363,12 @@ public final class MainView extends SurfaceView
 		int px0 = (area.topLeft.x - mapViewArea.topLeft.x) * tileSize;
 		for (int y = 0; y < area.size.height; ++y, ++my, py += tileSize) {
 			int mx = area.topLeft.x;
+			if (my < 0) continue;
+			if (my >= currentMap.size.height) break;
 			int px = px0;
 			for (int x = 0; x < area.size.width; ++x, ++mx, px += tileSize) {
+				if (mx < 0) continue;
+				if (mx >= currentMap.size.width) break;
 				final int tile = layer.tiles[mx][my];
 				if (tile == 0) continue;
 				tiles.drawTile(canvas, tile, px, py, mPaint);

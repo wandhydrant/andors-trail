@@ -35,6 +35,7 @@ public final class AndorsTrailPreferences {
 	public static final int QUICKSLOTS_POSITION_HORIZONTAL_BOTTOM_LEFT = 4;
 	public static final int QUICKSLOTS_POSITION_HORIZONTAL_BOTTOM_RIGHT = 5;
 	public static final int QUICKSLOTS_POSITION_VERTICAL_BOTTOM_RIGHT = 6;
+	public static final int ATTACKSPEED_DEFAULT_MILLISECONDS = 1000;
 
 	public boolean confirmRest = true;
 	public boolean confirmAttack = true;

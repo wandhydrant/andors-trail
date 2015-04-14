@@ -3,8 +3,10 @@ package com.gpl.rpg.AndorsTrail.controller;
 import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.Paint.Align;
+import android.graphics.Rect;
 import android.os.Handler;
 
+import com.gpl.rpg.AndorsTrail.AndorsTrailPreferences;
 import com.gpl.rpg.AndorsTrail.context.ControllerContext;
 import com.gpl.rpg.AndorsTrail.context.WorldContext;
 import com.gpl.rpg.AndorsTrail.controller.listeners.VisualEffectFrameListeners;
@@ -34,7 +36,7 @@ public final class VisualEffectController {
 		this.effectTypes = world.visualEffectTypes;
 	}
 
-	public void startEffect(Coord position, VisualEffectCollection.VisualEffectID effectID, int displayValue, VisualEffectCompletedCallback callback, int callbackValue) {
+	public void startEffect(Coord position, VisualEffectCollection.VisualEffectID effectID, String displayValue, VisualEffectCompletedCallback callback, int callbackValue) {
 		++effectCount;
 		(new VisualEffectAnimation(effectTypes.getVisualEffect(effectID), position, displayValue, callback, callbackValue))
 		.start();
@@ -52,7 +54,7 @@ public final class VisualEffectController {
 	}
 	public void startEnqueuedEffect(Coord position) {
 		if (enqueuedEffectID == null) return;
-		startEffect(position, enqueuedEffectID, enqueuedEffectValue, null, 0);
+		startEffect(position, enqueuedEffectID, (enqueuedEffectValue == 0) ? null : String.valueOf(enqueuedEffectValue), null, 0);
 		enqueuedEffectID = null;
 		enqueuedEffectValue = 0;
 	}
@@ -115,9 +117,17 @@ public final class VisualEffectController {
 			actor.hasVFXRunning = true;
 			actor.vfxDuration = duration;
 			actor.vfxStartTime = System.currentTimeMillis();
-			postDelayed(this, 0);
+			if (duration == 0) onCompleted();
+			else postDelayed(this, 0);
 		}
 		
+	}
+
+	public static final Paint textPaint = new Paint();
+	static {
+		textPaint.setShadowLayer(2, 1, 1, Color.DKGRAY);
+		textPaint.setAlpha(255);
+		textPaint.setTextAlign(Align.CENTER);
 	}
 	
 	public final class VisualEffectAnimation extends Handler implements Runnable {
@@ -128,7 +138,7 @@ public final class VisualEffectController {
 			if (currentFrame == effect.lastFrame) {
 				onCompleted();
 			} else {
-				postDelayed(this, effect.millisecondPerFrame);
+				postDelayed(this, effect.millisecondPerFrame * controllers.preferences.attackspeed_milliseconds / AndorsTrailPreferences.ATTACKSPEED_DEFAULT_MILLISECONDS);
 			}
 		}
 
@@ -139,7 +149,7 @@ public final class VisualEffectController {
 			int tileID = effect.frameIconIDs[frame];
 			int textYOffset = -2 * (frame);
 			if (frame >= beginFadeAtFrame && displayText != null) {
-				this.textPaint.setAlpha(255 * (effect.lastFrame - frame) / (effect.lastFrame - beginFadeAtFrame));
+				textPaint.setAlpha(255 * (effect.lastFrame - frame) / (effect.lastFrame - beginFadeAtFrame));
 			}
 			area.topLeft.y = position.y - 1;
 			visualEffectFrameListeners.onNewAnimationFrame(this, tileID, textYOffset);
@@ -162,24 +172,28 @@ public final class VisualEffectController {
 		public final Coord position;
 		public final String displayText;
 		public final CoordRect area;
-		public final Paint textPaint = new Paint();
 		private final int beginFadeAtFrame;
 		private final VisualEffectCompletedCallback callback;
 		private final int callbackValue;
 
-		public VisualEffectAnimation(VisualEffect effect, Coord position, int displayValue, VisualEffectCompletedCallback callback, int callbackValue) {
+		public VisualEffectAnimation(VisualEffect effect, Coord position, String displayValue, VisualEffectCompletedCallback callback, int callbackValue) {
 			this.position = position;
 			this.callback = callback;
 			this.callbackValue = callbackValue;
-			this.area = new CoordRect(new Coord(position.x, position.y - 1), new Size(1, 2));
 			this.effect = effect;
-			this.displayText = (displayValue == 0) ? null : String.valueOf(displayValue);
-			this.textPaint.setColor(effect.textColor);
-			this.textPaint.setShadowLayer(2, 1, 1, Color.DKGRAY);
-			this.textPaint.setTextSize(world.tileManager.viewTileSize * 0.5f); // 32dp.
-			this.textPaint.setAlpha(255);
-			this.textPaint.setTextAlign(Align.CENTER);
+			this.displayText = displayValue;
+			textPaint.setColor(effect.textColor);
+			textPaint.setTextSize(world.tileManager.viewTileSize * 0.5f); // 32dp.
+			Rect textBounds = new Rect();
+			textPaint.getTextBounds(displayText, 0, displayText.length(), textBounds);
+			int widthNeededInTiles = 1 + (textBounds.width() / world.tileManager.viewTileSize);
+			if (widthNeededInTiles % 2 == 0) widthNeededInTiles++;
+			this.area = new CoordRect(new Coord(position.x - (widthNeededInTiles / 2), position.y - 1), new Size(widthNeededInTiles, 2));
 			this.beginFadeAtFrame = effect.lastFrame / 2;
+		}
+		
+		public Paint getTextPaint(){
+			return textPaint;
 		}
 	}
 

@@ -134,6 +134,12 @@ public final class MonsterMovementController implements EvaluateWalkable {
 	private static int getMillisecondsPerMove(Monster m) {
 		return Constants.MONSTER_MOVEMENT_TURN_DURATION_MS * m.getMoveCost() / m.getMaxAP();
 	}
+	
+
+	private int getMillisecondsPerCombatMove(Monster m) {
+		if (controllers.preferences.attackspeed_milliseconds <= 0) return 0;
+		return controllers.preferences.attackspeed_milliseconds;
+	}
 
 	private static int sgn(int i) {
 		if (i <= -1) return -1;
@@ -152,14 +158,22 @@ public final class MonsterMovementController implements EvaluateWalkable {
 	}
 
 	public void moveMonsterToNextPosition(final Monster m, final PredefinedMap map) {
+		moveMonsterToNextPositionWithCallback(m, map, getMillisecondsPerMove(m) / 4, null);
+	}
+	
+	public void moveMonsterToNextPositionDuringCombat(final Monster m, final PredefinedMap map, final VisualEffectController.VisualEffectCompletedCallback callback) {
+		moveMonsterToNextPositionWithCallback(m, map, getMillisecondsPerCombatMove(m) / 4, callback);
+	}
+	
+	private void moveMonsterToNextPositionWithCallback(final Monster m, final PredefinedMap map, int duration, final VisualEffectController.VisualEffectCompletedCallback callback) {
 		final CoordRect previousPosition = new CoordRect(new Coord(m.position), m.rectPosition.size);
 		m.lastPosition.set(previousPosition.topLeft);
 		m.position.set(m.nextPosition.topLeft);
-		controllers.effectController.startActorMoveEffect(m, previousPosition.topLeft, m.position, getMillisecondsPerMove(m) / 4, new VisualEffectController.VisualEffectCompletedCallback() {
+		controllers.effectController.startActorMoveEffect(m, previousPosition.topLeft, m.position, duration, new VisualEffectController.VisualEffectCompletedCallback() {
 			
 			@Override
 			public void onVisualEffectCompleted(int callbackValue) {
-
+				if (callback != null) callback.onVisualEffectCompleted(callbackValue);
 				monsterMovementListeners.onMonsterMoved(map, m, previousPosition);
 			}
 		}, 0);

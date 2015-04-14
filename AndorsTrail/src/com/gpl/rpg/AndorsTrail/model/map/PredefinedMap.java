@@ -67,7 +67,10 @@ public final class PredefinedMap {
 		if (area.topLeft.y + area.size.height > size.height) return true;
 		return false;
 	}
-
+	public boolean intersects(CoordRect area) {
+		return new CoordRect(new Coord(0,0), size).intersects(area);
+	}
+	
 	public MapObject findEventObject(MapObject.MapObjectType objectType, String name) {
 		for (MapObject o : eventObjects) {
 			if (o.type != objectType) continue;
