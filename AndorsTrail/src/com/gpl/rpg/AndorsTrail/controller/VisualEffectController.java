@@ -4,9 +4,11 @@ import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.Paint.Align;
 import android.os.Handler;
+
 import com.gpl.rpg.AndorsTrail.context.ControllerContext;
 import com.gpl.rpg.AndorsTrail.context.WorldContext;
 import com.gpl.rpg.AndorsTrail.controller.listeners.VisualEffectFrameListeners;
+import com.gpl.rpg.AndorsTrail.model.actor.Actor;
 import com.gpl.rpg.AndorsTrail.model.actor.Monster;
 import com.gpl.rpg.AndorsTrail.model.actor.MonsterType;
 import com.gpl.rpg.AndorsTrail.model.map.PredefinedMap;
@@ -54,7 +56,70 @@ public final class VisualEffectController {
 		enqueuedEffectID = null;
 		enqueuedEffectValue = 0;
 	}
+	
+	public void startActorMoveEffect(Actor actor, Coord origin, Coord destination, int duration, VisualEffectCompletedCallback callback, int callbackValue) {
+		++effectCount;
+		(new SpriteMoveAnimation(origin, destination, duration, actor, callback, callbackValue))
+		.start();
+	}
 
+	public final class SpriteMoveAnimation extends Handler implements Runnable {
+		
+		private static final int millisecondsPerFrame=25;
+		
+		private final VisualEffectCompletedCallback callback;
+		private final int callbackValue;
+
+		public final int duration;
+		public final Actor actor;
+		public final Coord origin;
+		public final Coord destination;
+		
+		public int timeElapsed;
+		
+		@Override
+		public void run() {
+			update();
+			if (System.currentTimeMillis() - actor.vfxStartTime >= duration) {
+				onCompleted();
+			} else {
+				postDelayed(this, millisecondsPerFrame);
+			}
+		}
+		
+		public SpriteMoveAnimation(Coord origin, Coord destination, int duration, Actor actor, VisualEffectCompletedCallback callback, int callbackValue) {
+			this.callback = callback;
+			this.callbackValue = callbackValue;
+			this.duration = duration;
+			this.actor = actor;
+			this.origin = origin;
+			this.destination = destination;
+			this.timeElapsed = 0;
+
+		}
+		
+		private void update() {
+			
+			visualEffectFrameListeners.onNewSpriteMoveFrame(this);
+		}
+
+		private void onCompleted() {
+			--effectCount;
+			actor.hasVFXRunning = false;
+			if (callback != null) callback.onVisualEffectCompleted(callbackValue);
+			visualEffectFrameListeners.onSpriteMoveCompleted(this);
+		}
+		
+
+		public void start() {
+			actor.hasVFXRunning = true;
+			actor.vfxDuration = duration;
+			actor.vfxStartTime = System.currentTimeMillis();
+			postDelayed(this, 0);
+		}
+		
+	}
+	
 	public final class VisualEffectAnimation extends Handler implements Runnable {
 
 		@Override

@@ -31,6 +31,7 @@
 				<label for="rewardType">Reward Type:</label>
 				<select class="field" id="rewardType" ng-model="reward.rewardType">
 					<option value="questProgress">Quest progress</option>
+					<option value="removeQuestProgress">Remove Quest progress</option>
 					<option value="dropList">Droplist</option>
 					<option value="skillIncrease">Skill increase</option>
 					<option value="actorCondition">Actor condition</option>
@@ -65,6 +66,16 @@
 				</div>
 			</div>
 			<div ng-show="reward.rewardType=='questProgress'">
+				<div class="fieldWithLabel">
+					<label for="rewardID">Quest ID:</label>
+					<input type="text" size="30" id="rewardID" class="field at-input-id" ng-model="reward.rewardID" />
+				</div>
+				<div class="fieldWithLabel">
+					<label for="rewardvalue">Stage:</label>
+					<input type="text" size="3" id="rewardvalue" class="field at-input-quantity" ng-model="reward.value" />
+				</div>
+			</div>
+			<div ng-show="reward.rewardType=='removeQuestProgress'">
 				<div class="fieldWithLabel">
 					<label for="rewardID">Quest ID:</label>
 					<input type="text" size="30" id="rewardID" class="field at-input-id" ng-model="reward.rewardID" />

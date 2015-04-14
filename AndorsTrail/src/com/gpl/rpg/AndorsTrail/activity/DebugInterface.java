@@ -13,7 +13,6 @@ import com.gpl.rpg.AndorsTrail.context.ControllerContext;
 import com.gpl.rpg.AndorsTrail.context.WorldContext;
 import com.gpl.rpg.AndorsTrail.model.map.PredefinedMap;
 
-@SuppressWarnings("unused")
 public final class DebugInterface {
 	private final ControllerContext controllerContext;
 	private final MainActivity mainActivity;

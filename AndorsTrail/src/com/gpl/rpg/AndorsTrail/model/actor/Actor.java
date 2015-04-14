@@ -34,6 +34,10 @@ public class Actor {
 	public int blockChance;
 	public int damageResistance;
 	public ItemTraits_OnUse[] onHitEffects;
+	public boolean hasVFXRunning = false;
+	public long vfxStartTime = 0;
+	public int vfxDuration = 0;
+	public final Coord lastPosition = new Coord();
 
 	public Actor(
 			Size tileSize
