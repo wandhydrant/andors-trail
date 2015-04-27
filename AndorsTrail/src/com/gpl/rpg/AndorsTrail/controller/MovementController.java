@@ -233,7 +233,6 @@ public final class MovementController implements TimedMessageTask.Callback {
 			
 			@Override
 			public void onVisualEffectCompleted(int callbackValue) {
-				playerMovementListeners.onPlayerMoved(newPosition, player.lastPosition);
 
 				controllers.mapController.handleMapEventsAfterMovement(currentMap, newPosition, player.lastPosition);
 
@@ -244,6 +243,7 @@ public final class MovementController implements TimedMessageTask.Callback {
 				}
 			}
 		}, 0);
+		playerMovementListeners.onPlayerMoved(newPosition, player.lastPosition);
 		
 		
 	}

@@ -1,6 +1,8 @@
 package com.gpl.rpg.AndorsTrail.view;
 
 import android.content.Context;
+import android.graphics.Bitmap;
+import android.graphics.Bitmap.Config;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
@@ -15,6 +17,7 @@ import com.gpl.rpg.AndorsTrail.AndorsTrailApplication;
 import com.gpl.rpg.AndorsTrail.AndorsTrailPreferences;
 import com.gpl.rpg.AndorsTrail.context.ControllerContext;
 import com.gpl.rpg.AndorsTrail.context.WorldContext;
+import com.gpl.rpg.AndorsTrail.controller.Constants;
 import com.gpl.rpg.AndorsTrail.controller.InputController;
 import com.gpl.rpg.AndorsTrail.controller.VisualEffectController.BloodSplatter;
 import com.gpl.rpg.AndorsTrail.controller.VisualEffectController.SpriteMoveAnimation;
@@ -68,9 +71,13 @@ public final class MainView extends SurfaceView
 	private PredefinedMap currentMap;
 	private LayeredTileMap currentTileMap;
 	private TileCollection tiles;
+	
+	private Bitmap groundBitmap, objectsBitmap, aboveBitmap;
 	private final Coord playerPosition = new Coord();
 	private Size surfaceSize;
 	private boolean redrawNextTick = false;
+	
+	
 
 	public MainView(Context context, AttributeSet attr) {
 		super(context, attr);
@@ -289,24 +296,32 @@ public final class MainView extends SurfaceView
 		destScreenRect.right = destScreenRect.left + worldArea.size.width * scaledTileSize;
 		destScreenRect.bottom = destScreenRect.top + worldArea.size.height * scaledTileSize;
 	}
+	
+//	private void worldCoordsToBitmapCoords(final CoordRect worldArea, Rect dstBitmapArea) {
+//		dstBitmapArea.left = worldArea.topLeft.x * tileSize;
+//		dstBitmapArea.top = worldArea.topLeft.y * tileSize;
+//		dstBitmapArea.right = dstBitmapArea.left + worldArea.size.width * tileSize;
+//		dstBitmapArea.bottom = dstBitmapArea.top + worldArea.size.height * tileSize;
+//		
+//	}
 
 	private void doDrawRect(Canvas canvas, CoordRect area) {
-		doDrawRect_Below(canvas, area);
+		doDrawRect_Ground(canvas, area);
 		doDrawRect_Objects(canvas, area);
 		doDrawRect_Above(canvas, area);
 		
 	}
 	
-	private void doDrawRect_Below(Canvas canvas, CoordRect area) {
-		drawMapLayer(canvas, area, currentTileMap.currentLayout.layerGround);
-		tryDrawMapLayer(canvas, area, currentTileMap.currentLayout.layerObjects);
-
-		for (BloodSplatter splatter : currentMap.splatters) {
-			drawFromMapPosition(canvas, area, splatter.position, splatter.iconID);
-		}
+	private void doDrawRect_Ground(Canvas canvas, CoordRect area) {
+		//drawMapLayer(canvas, area, currentTileMap.currentLayout.layerGround);
+		tryDrawMapBitmap(canvas, area, groundBitmap);
+		
 	}
 	
 	private void doDrawRect_Objects(Canvas canvas, CoordRect area) {
+		//tryDrawMapLayer(canvas, area, currentTileMap.currentLayout.layerObjects);
+		tryDrawMapBitmap(canvas, area, objectsBitmap);
+		
 		for (BloodSplatter splatter : currentMap.splatters) {
 			drawFromMapPosition(canvas, area, splatter.position, splatter.iconID);
 		}
@@ -342,8 +357,9 @@ public final class MainView extends SurfaceView
 	}
 	
 	private void doDrawRect_Above(Canvas canvas, CoordRect area) {
-		tryDrawMapLayer(canvas, area, currentTileMap.currentLayout.layerAbove);
-
+		//tryDrawMapLayer(canvas, area, currentTileMap.currentLayout.layerAbove);
+		tryDrawMapBitmap(canvas, area, aboveBitmap);
+		
 		if (model.uiSelections.selectedPosition != null) {
 			if (model.uiSelections.selectedMonster != null) {
 				drawFromMapPosition(canvas, area, model.uiSelections.selectedPosition, TileManager.iconID_attackselect);
@@ -353,20 +369,47 @@ public final class MainView extends SurfaceView
 		}
 	}
 
-	private void tryDrawMapLayer(Canvas canvas, final CoordRect area, final MapLayer layer) {
-		if (layer != null) drawMapLayer(canvas, area, layer);
+	private void tryDrawMapBitmap(Canvas canvas, final CoordRect area, final Bitmap bitmap) {
+		if (bitmap != null) drawMapBitmap(canvas, area, bitmap);
 	}
-
-	private void drawMapLayer(Canvas canvas, final CoordRect area, final MapLayer layer) {
-		int my = area.topLeft.y;
-		int py = (area.topLeft.y - mapViewArea.topLeft.y) * tileSize;
-		int px0 = (area.topLeft.x - mapViewArea.topLeft.x) * tileSize;
-		for (int y = 0; y < area.size.height; ++y, ++my, py += tileSize) {
-			int mx = area.topLeft.x;
+	
+	private void drawMapBitmap(Canvas canvas, final CoordRect area, final Bitmap bitmap){
+		canvas.drawBitmap(bitmap, -mapViewArea.topLeft.x * tileSize, -mapViewArea.topLeft.y * tileSize, mPaint);
+	}
+	
+//	private void tryDrawMapLayer(Canvas canvas, final CoordRect area, final MapLayer layer) {
+//		if (layer != null) drawMapLayer(canvas, area, layer);
+//	}
+//
+//	private void drawMapLayer(Canvas canvas, final CoordRect area, final MapLayer layer) {
+//		int my = area.topLeft.y;
+//		int py = (area.topLeft.y - mapViewArea.topLeft.y) * tileSize;
+//		int px0 = (area.topLeft.x - mapViewArea.topLeft.x) * tileSize;
+//		for (int y = 0; y < area.size.height; ++y, ++my, py += tileSize) {
+//			int mx = area.topLeft.x;
+//			if (my < 0) continue;
+//			if (my >= currentMap.size.height) break;
+//			int px = px0;
+//			for (int x = 0; x < area.size.width; ++x, ++mx, px += tileSize) {
+//				if (mx < 0) continue;
+//				if (mx >= currentMap.size.width) break;
+//				final int tile = layer.tiles[mx][my];
+//				if (tile == 0) continue;
+//				tiles.drawTile(canvas, tile, px, py, mPaint);
+//			}
+//		}
+//	}
+	
+	private void drawMapLayerOffscreen(Canvas canvas, final MapLayer layer) {
+		int my = 0;
+		int py = 0;
+		int px0 = 0;
+		for (int y = 0; y < currentMap.size.height; ++y, ++my, py += tileSize) {
+			int mx = 0;
 			if (my < 0) continue;
 			if (my >= currentMap.size.height) break;
 			int px = px0;
-			for (int x = 0; x < area.size.width; ++x, ++mx, px += tileSize) {
+			for (int x = 0; x < currentMap.size.width; ++x, ++mx, px += tileSize) {
 				if (mx < 0) continue;
 				if (mx >= currentMap.size.width) break;
 				final int tile = layer.tiles[mx][my];
@@ -423,6 +466,8 @@ public final class MainView extends SurfaceView
 
 		clearCanvas();
 
+		updateBitmaps();
+		
 		recalculateMapTopLeft(model.player.position);
 		redrawAll(RedrawAllDebugReason.MapChanged);
 	}
@@ -446,6 +491,34 @@ public final class MainView extends SurfaceView
 	
 	private void updateClip() {
 		worldCoordsToScreenCords(mapViewArea, redrawClip);
+	}
+	
+	private void updateBitmaps() {
+		Canvas bitmapDrawingCanvas;
+		
+		if (currentTileMap.currentLayout.layerGround == null) {
+			groundBitmap = null;
+		} else {
+			groundBitmap = Bitmap.createBitmap(currentMap.size.width * tileSize, currentMap.size.height * tileSize, Config.ARGB_8888);
+			bitmapDrawingCanvas = new Canvas(groundBitmap);
+			drawMapLayerOffscreen(bitmapDrawingCanvas, currentTileMap.currentLayout.layerGround);
+		}
+		
+		if (currentTileMap.currentLayout.layerObjects == null) {
+			objectsBitmap = null;
+		} else {
+			objectsBitmap = Bitmap.createBitmap(currentMap.size.width * tileSize, currentMap.size.height * tileSize, Config.ARGB_8888);
+			bitmapDrawingCanvas = new Canvas(objectsBitmap);
+			drawMapLayerOffscreen(bitmapDrawingCanvas, currentTileMap.currentLayout.layerObjects);
+		}
+		
+		if (currentTileMap.currentLayout.layerAbove == null) {
+			aboveBitmap = null;
+		} else {
+			aboveBitmap = Bitmap.createBitmap(currentMap.size.width * tileSize, currentMap.size.height * tileSize, Config.ARGB_8888);
+			bitmapDrawingCanvas = new Canvas(aboveBitmap);
+			drawMapLayerOffscreen(bitmapDrawingCanvas, currentTileMap.currentLayout.layerAbove);
+		}
 	}
 
 	@Override
@@ -555,6 +628,7 @@ public final class MainView extends SurfaceView
 	@Override
 	public void onMapTilesChanged(PredefinedMap map, LayeredTileMap tileMap) {
 		if (map != currentMap) return;
+		updateBitmaps();
 		redrawAll(RedrawAllDebugReason.MapChanged);
 	}
 
