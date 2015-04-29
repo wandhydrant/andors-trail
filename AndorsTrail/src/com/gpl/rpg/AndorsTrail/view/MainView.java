@@ -6,7 +6,9 @@ import android.graphics.Bitmap.Config;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
+import android.graphics.Paint.Style;
 import android.graphics.Rect;
+import android.os.Handler;
 import android.util.AttributeSet;
 import android.view.KeyEvent;
 import android.view.MotionEvent;
@@ -34,7 +36,6 @@ import com.gpl.rpg.AndorsTrail.resource.tiles.TileCollection;
 import com.gpl.rpg.AndorsTrail.resource.tiles.TileManager;
 import com.gpl.rpg.AndorsTrail.util.Coord;
 import com.gpl.rpg.AndorsTrail.util.CoordRect;
-import com.gpl.rpg.AndorsTrail.util.L;
 import com.gpl.rpg.AndorsTrail.util.Size;
 
 public final class MainView extends SurfaceView
@@ -67,16 +68,36 @@ public final class MainView extends SurfaceView
 	private final Paint mPaint = new Paint();
 	private final CoordRect p1x1 = new CoordRect(new Coord(), new Size(1,1));
 	private boolean hasSurface = false;
-
+	
+	//DEBUG
+//	private Coord touchedTile = null;
+//	private static Paint touchHighlight = new Paint();
+//	private static Paint redrawHighlight = new Paint();
+//	
+//	static {
+//		touchHighlight.setColor(Color.RED);
+//		touchHighlight.setStrokeWidth(0f);
+//		touchHighlight.setStyle(Style.STROKE);
+//		redrawHighlight.setColor(Color.CYAN);
+//		redrawHighlight.setStrokeWidth(0f);
+//		redrawHighlight.setStyle(Style.STROKE);
+//	}
+	
 	private PredefinedMap currentMap;
 	private LayeredTileMap currentTileMap;
 	private TileCollection tiles;
 	
-	private Bitmap groundBitmap, objectsBitmap, aboveBitmap;
+	private Bitmap groundBitmap = null;
+//	private Bitmap objectsBitmap = null;
+	private Bitmap aboveBitmap = null;
 	private final Coord playerPosition = new Coord();
 	private Size surfaceSize;
 	private boolean redrawNextTick = false;
 	
+	private boolean scrolling = false;
+	private Coord scrollVector;
+	private long scrollStartTime;
+	private final static long SCROLL_DURATION = Constants.MINIMUM_INPUT_INTERVAL;
 	
 
 	public MainView(Context context, AttributeSet attr) {
@@ -120,15 +141,21 @@ public final class MainView extends SurfaceView
 	public void surfaceChanged(SurfaceHolder sh, int format, int w, int h) {
 		if (w <= 0 || h <= 0) return;
 
+		
 		this.scale = world.tileManager.scale;
 		this.mPaint.setFilterBitmap(scale != 1);
 		this.scaledTileSize = world.tileManager.viewTileSize;
-		this.surfaceSize = new Size(w, h);
+//		this.surfaceSize = new Size(w, h);
+		this.surfaceSize = new Size((int) (getWidth() / scale), (int) (getHeight() / scale));
 		this.screenSizeTileCount = new Size(
-				(int) Math.floor(w / scaledTileSize)
-				,(int) Math.floor(h / scaledTileSize)
+				(int) Math.floor(getWidth() / scaledTileSize)
+				,(int) Math.floor(getHeight() / scaledTileSize)
 			);
-
+		
+		if (sh.getSurfaceFrame().right != surfaceSize.width || sh.getSurfaceFrame().bottom != surfaceSize.height) {
+			sh.setFixedSize(surfaceSize.width, surfaceSize.height);
+		}
+		
 		if (model.currentMap != null) {
 			onPlayerEnteredNewMap(model.currentMap, model.player.position);
 		} else {
@@ -153,8 +180,9 @@ public final class MainView extends SurfaceView
 		switch (event.getAction()) {
 		case MotionEvent.ACTION_DOWN:
 		case MotionEvent.ACTION_MOVE:
-			final int tile_x = (int) Math.floor(((int)event.getX() - screenOffset.x) / scaledTileSize) + mapTopLeft.x;
-			final int tile_y = (int) Math.floor(((int)event.getY() - screenOffset.y) / scaledTileSize) + mapTopLeft.y;
+			final int tile_x = (int) Math.floor(((int)event.getX() - screenOffset.x * scale) / scaledTileSize) + mapTopLeft.x;
+			final int tile_y = (int) Math.floor(((int)event.getY() - screenOffset.y * scale) / scaledTileSize) + mapTopLeft.y;
+//			touchedTile = new Coord(tile_x, tile_y);
 			if (inputController.onTouchedTile(tile_x, tile_y)) return true;
 			break;
 		case MotionEvent.ACTION_UP:
@@ -163,8 +191,15 @@ public final class MainView extends SurfaceView
 			inputController.onTouchCancel();
 			break;
 		}
+		performClick();
 		return super.onTouchEvent(event);
 	}
+	
+	@Override
+	public boolean performClick() {
+		return super.performClick();
+	}
+	
 
 	private boolean canAcceptInput() {
 		if (!model.uiSelections.isMainActivityVisible) return false;
@@ -173,7 +208,7 @@ public final class MainView extends SurfaceView
 	}
 
 	private static enum RedrawAllDebugReason {
-		SurfaceChanged, MapChanged, PlayerMoved
+		SurfaceChanged, MapChanged, PlayerMoved, MapScrolling
 	}
 	private static enum RedrawAreaDebugReason {
 		MonsterMoved, MonsterKilled, EffectCompleted
@@ -183,13 +218,16 @@ public final class MainView extends SurfaceView
 	}
 
 	private void redrawAll(RedrawAllDebugReason why) {
+		if (scrolling && why != RedrawAllDebugReason.MapScrolling) return;
 		redrawArea_(mapViewArea, null, 0, 0);
 	}
 	private void redrawTile(final Coord p, RedrawTileDebugReason why) {
+		if (scrolling) return;
 		p1x1.topLeft.set(p);
 		redrawArea_(p1x1, null, 0, 0);
 	}
 	private void redrawArea(final CoordRect area, RedrawAreaDebugReason why) {
+		if (scrolling) return;
 		redrawArea_(area, null, 0, 0);
 	}
 	private void redrawArea_(CoordRect area, final VisualEffectAnimation effect, int tileID, int textYOffset) {
@@ -199,6 +237,10 @@ public final class MainView extends SurfaceView
 		if (!currentMap.intersects(area)) return;
 		if (!mapViewArea.intersects(area)) return;
 
+		if (shouldRedrawEverything()) {
+			area = mapViewArea;
+		}
+		
 		calculateRedrawRect(area);
 		redrawRect.intersect(redrawClip);
 		Canvas c = null;
@@ -211,10 +253,27 @@ public final class MainView extends SurfaceView
 					area = mapViewArea;
 				}
 			}
+			if (area == mapViewArea) {
+				area = adaptAreaToScrolling(area);
+			}
+			
 			synchronized (holder) { synchronized (tiles) {
+				int xScroll = 0;
+				int yScroll = 0;
+				if (scrolling && scrollVector != null) {
+//					xScroll = (int) (scaledTileSize - (scaledTileSize * (System.currentTimeMillis() - scrollStartTime) / SCROLL_DURATION));
+//					xScroll = Math.max(0, Math.min(scaledTileSize, xScroll)) * scrollVector.x;
+//					yScroll = (int) (scaledTileSize - (scaledTileSize * (System.currentTimeMillis() - scrollStartTime) / SCROLL_DURATION));
+//					yScroll = Math.max(0, Math.min(scaledTileSize, yScroll)) * scrollVector.y;
+					
+					xScroll = (int) (tileSize - (tileSize * (System.currentTimeMillis() - scrollStartTime) / SCROLL_DURATION));
+					xScroll = Math.max(0, Math.min(tileSize, xScroll)) * scrollVector.x;
+					yScroll = (int) (tileSize - (tileSize * (System.currentTimeMillis() - scrollStartTime) / SCROLL_DURATION));
+					yScroll = Math.max(0, Math.min(tileSize, yScroll)) * scrollVector.y;
+				}
 				c.clipRect(redrawClip);
-				c.translate(screenOffset.x, screenOffset.y);
-				c.scale(scale, scale);
+				c.translate(screenOffset.x + xScroll, screenOffset.y + yScroll);
+//				c.scale(scale, scale);
 				doDrawRect(c, area);
 				if (effect != null) {
 					drawFromMapPosition(c, area, effect.position, tileID);
@@ -222,6 +281,19 @@ public final class MainView extends SurfaceView
 						drawEffectText(c, area, effect, textYOffset, effect.getTextPaint());
 					}
 				}
+
+//				c.drawRect(new Rect(
+//						(area.topLeft.x - mapViewArea.topLeft.x) * tileSize, 
+//						(area.topLeft.y - mapViewArea.topLeft.y) * tileSize, 
+//						(area.topLeft.x - mapViewArea.topLeft.x + area.size.width) * tileSize - 1, 
+//						(area.topLeft.y - mapViewArea.topLeft.y + area.size.height) * tileSize - 1),
+//						redrawHighlight);
+//				if (touchedTile != null) c.drawRect(new Rect(
+//						(touchedTile.x - mapViewArea.topLeft.x) * tileSize, 
+//						(touchedTile.y - mapViewArea.topLeft.y) * tileSize, 
+//						(touchedTile.x - mapViewArea.topLeft.x + 1) * tileSize - 1, 
+//						(touchedTile.y - mapViewArea.topLeft.y + 1) * tileSize - 1), 
+//						touchHighlight);
 			} }
 		} finally {
 			if (c != null) holder.unlockCanvasAndPost(c);
@@ -230,10 +302,15 @@ public final class MainView extends SurfaceView
 	
 	private void redrawMoveArea_(CoordRect area, final SpriteMoveAnimation effect) {
 		if (!hasSurface) return;
+		if (scrolling) return;
 
 		if (currentMap.isOutside(area)) return;
 		if (!mapViewArea.intersects(area)) return;
 
+		if (shouldRedrawEverything()) {
+			area = mapViewArea;
+		}
+		
 		calculateRedrawRect(area);
 		Canvas c = null;
 		try {
@@ -248,8 +325,22 @@ public final class MainView extends SurfaceView
 			synchronized (holder) { synchronized (tiles) {
 				c.clipRect(redrawClip);
 				c.translate(screenOffset.x, screenOffset.y);
-				c.scale(scale, scale);
+//				c.scale(scale, scale);
 				doDrawRect(c, area);
+				
+//				c.drawRect(new Rect(
+//						(area.topLeft.x - mapViewArea.topLeft.x) * tileSize, 
+//						(area.topLeft.y - mapViewArea.topLeft.y) * tileSize, 
+//						(area.topLeft.x - mapViewArea.topLeft.x + area.size.width) * tileSize - 1, 
+//						(area.topLeft.y - mapViewArea.topLeft.y + area.size.height) * tileSize - 1),
+//						redrawHighlight);
+//				if (touchedTile != null) c.drawRect(new Rect(
+//						(touchedTile.x - mapViewArea.topLeft.x) * tileSize, 
+//						(touchedTile.y - mapViewArea.topLeft.y) * tileSize, 
+//						(touchedTile.x - mapViewArea.topLeft.x + 1) * tileSize - 1, 
+//						(touchedTile.y - mapViewArea.topLeft.y + 1) * tileSize - 1), 
+//						touchHighlight);
+				
 			} }
 		} finally {
 			if (c != null) holder.unlockCanvasAndPost(c);
@@ -257,12 +348,15 @@ public final class MainView extends SurfaceView
 	}
 
 	private boolean isRedrawRectWholeScreen(Rect redrawRect) {
-		if (redrawRect.width() < mapViewArea.size.width * scaledTileSize) return false;
-		if (redrawRect.height() < mapViewArea.size.height * scaledTileSize) return false;
+//		if (redrawRect.width() < mapViewArea.size.width * scaledTileSize) return false;
+//		if (redrawRect.height() < mapViewArea.size.height * scaledTileSize) return false;
+		if (redrawRect.width() < mapViewArea.size.width * tileSize) return false;
+		if (redrawRect.height() < mapViewArea.size.height * tileSize) return false;
 		return true;
 	}
 
-	private boolean shouldRedrawEverythingForVisualEffect() {
+	private boolean shouldRedrawEverything() {
+		if (scrolling) return true;
 		if (preferences.optimizedDrawing) return false;
 		if (model.uiSelections.isInCombat) return false; // Discard the "optimized drawing" setting while in combat.
 		return true;
@@ -270,7 +364,7 @@ public final class MainView extends SurfaceView
 	private final Rect redrawRect = new Rect();
 	private void redrawAreaWithEffect(final VisualEffectAnimation effect, int tileID, int textYOffset) {
 		CoordRect area = effect.area;
-		if (shouldRedrawEverythingForVisualEffect()) area = mapViewArea;
+//		if (shouldRedrawEverythingForVisualEffect()) area = mapViewArea;
 		redrawArea_(area, effect, tileID, textYOffset);
 	}
 	private void clearCanvas() {
@@ -286,15 +380,43 @@ public final class MainView extends SurfaceView
 		}
 	}
 
+	private CoordRect adaptAreaToScrolling(final CoordRect area) {
+		
+		if (!scrolling || scrollVector == null) return area;
+
+		int x, y, w, h;
+		if (scrollVector.x > 0) {
+			x = area.topLeft.x - scrollVector.x;
+			w = area.size.width + scrollVector.x;
+		} else {
+			x = area.topLeft.x;
+			w = area.size.width - scrollVector.x;
+		}
+		if (scrollVector.y > 0) {
+			y = area.topLeft.y - scrollVector.y;
+			h = area.size.height + scrollVector.y;
+		} else {
+			y = area.topLeft.y;
+			h = area.size.height - scrollVector.y;
+		}
+		CoordRect result = new CoordRect(new Coord(x, y), new Size(w, h)); 
+		return result;
+	}
+	
 	private void calculateRedrawRect(final CoordRect area) {
 		worldCoordsToScreenCords(area, redrawRect);
 	}
 
 	private void worldCoordsToScreenCords(final CoordRect worldArea, Rect destScreenRect) {
-		destScreenRect.left = screenOffset.x + (worldArea.topLeft.x - mapViewArea.topLeft.x) * scaledTileSize;
-		destScreenRect.top = screenOffset.y + (worldArea.topLeft.y - mapViewArea.topLeft.y) * scaledTileSize;
-		destScreenRect.right = destScreenRect.left + worldArea.size.width * scaledTileSize;
-		destScreenRect.bottom = destScreenRect.top + worldArea.size.height * scaledTileSize;
+//		destScreenRect.left = screenOffset.x + (worldArea.topLeft.x - mapViewArea.topLeft.x) * scaledTileSize;
+//		destScreenRect.top = screenOffset.y + (worldArea.topLeft.y - mapViewArea.topLeft.y) * scaledTileSize;
+//		destScreenRect.right = destScreenRect.left + worldArea.size.width * scaledTileSize;
+//		destScreenRect.bottom = destScreenRect.top + worldArea.size.height * scaledTileSize;
+		
+		destScreenRect.left = screenOffset.x + (worldArea.topLeft.x - mapViewArea.topLeft.x) * tileSize;
+		destScreenRect.top = screenOffset.y + (worldArea.topLeft.y - mapViewArea.topLeft.y) * tileSize;
+		destScreenRect.right = destScreenRect.left + worldArea.size.width * tileSize;
+		destScreenRect.bottom = destScreenRect.top + worldArea.size.height * tileSize;
 	}
 	
 //	private void worldCoordsToBitmapCoords(final CoordRect worldArea, Rect dstBitmapArea) {
@@ -313,14 +435,17 @@ public final class MainView extends SurfaceView
 	}
 	
 	private void doDrawRect_Ground(Canvas canvas, CoordRect area) {
-		//drawMapLayer(canvas, area, currentTileMap.currentLayout.layerGround);
-		tryDrawMapBitmap(canvas, area, groundBitmap);
+		if (!tryDrawMapBitmap(canvas, area, groundBitmap)) {
+			drawMapLayer(canvas, area, currentTileMap.currentLayout.layerGround);
+			tryDrawMapLayer(canvas, area, currentTileMap.currentLayout.layerObjects);
+		}
 		
 	}
 	
 	private void doDrawRect_Objects(Canvas canvas, CoordRect area) {
-		//tryDrawMapLayer(canvas, area, currentTileMap.currentLayout.layerObjects);
-		tryDrawMapBitmap(canvas, area, objectsBitmap);
+//		if (!tryDrawMapBitmap(canvas, area, objectsBitmap)) {
+//			tryDrawMapLayer(canvas, area, currentTileMap.currentLayout.layerObjects);
+//		}
 		
 		for (BloodSplatter splatter : currentMap.splatters) {
 			drawFromMapPosition(canvas, area, splatter.position, splatter.iconID);
@@ -345,7 +470,7 @@ public final class MainView extends SurfaceView
 			for (Monster m : a.monsters) {
 				if (!m.hasVFXRunning) {
 					drawFromMapPosition(canvas, area, m.rectPosition, m.iconID);
-				} else if (area.intersects(m.rectPosition) || area.contains(m.lastPosition)) {
+				} else if (area.intersects(m.rectPosition) || area.intersects(new CoordRect(m.lastPosition,m.rectPosition.size))) {
 					int vfxElapsedTime = (int) (System.currentTimeMillis() - m.vfxStartTime);
 					if (vfxElapsedTime > m.vfxDuration) vfxElapsedTime = m.vfxDuration;
 					int x = ((m.position.x - mapViewArea.topLeft.x) * tileSize * vfxElapsedTime + ((m.lastPosition.x - mapViewArea.topLeft.x) * tileSize * (m.vfxDuration - vfxElapsedTime))) / m.vfxDuration;
@@ -357,8 +482,9 @@ public final class MainView extends SurfaceView
 	}
 	
 	private void doDrawRect_Above(Canvas canvas, CoordRect area) {
-		//tryDrawMapLayer(canvas, area, currentTileMap.currentLayout.layerAbove);
-		tryDrawMapBitmap(canvas, area, aboveBitmap);
+		if (!tryDrawMapBitmap(canvas, area, aboveBitmap)) {
+			tryDrawMapLayer(canvas, area, currentTileMap.currentLayout.layerAbove);
+		}
 		
 		if (model.uiSelections.selectedPosition != null) {
 			if (model.uiSelections.selectedMonster != null) {
@@ -369,36 +495,40 @@ public final class MainView extends SurfaceView
 		}
 	}
 
-	private void tryDrawMapBitmap(Canvas canvas, final CoordRect area, final Bitmap bitmap) {
-		if (bitmap != null) drawMapBitmap(canvas, area, bitmap);
+	private boolean tryDrawMapBitmap(Canvas canvas, final CoordRect area, final Bitmap bitmap) {
+		if (bitmap != null) {
+			drawMapBitmap(canvas, area, bitmap);
+			return true;
+		}
+		return false;
 	}
 	
 	private void drawMapBitmap(Canvas canvas, final CoordRect area, final Bitmap bitmap){
 		canvas.drawBitmap(bitmap, -mapViewArea.topLeft.x * tileSize, -mapViewArea.topLeft.y * tileSize, mPaint);
 	}
 	
-//	private void tryDrawMapLayer(Canvas canvas, final CoordRect area, final MapLayer layer) {
-//		if (layer != null) drawMapLayer(canvas, area, layer);
-//	}
-//
-//	private void drawMapLayer(Canvas canvas, final CoordRect area, final MapLayer layer) {
-//		int my = area.topLeft.y;
-//		int py = (area.topLeft.y - mapViewArea.topLeft.y) * tileSize;
-//		int px0 = (area.topLeft.x - mapViewArea.topLeft.x) * tileSize;
-//		for (int y = 0; y < area.size.height; ++y, ++my, py += tileSize) {
-//			int mx = area.topLeft.x;
-//			if (my < 0) continue;
-//			if (my >= currentMap.size.height) break;
-//			int px = px0;
-//			for (int x = 0; x < area.size.width; ++x, ++mx, px += tileSize) {
-//				if (mx < 0) continue;
-//				if (mx >= currentMap.size.width) break;
-//				final int tile = layer.tiles[mx][my];
-//				if (tile == 0) continue;
-//				tiles.drawTile(canvas, tile, px, py, mPaint);
-//			}
-//		}
-//	}
+	private void tryDrawMapLayer(Canvas canvas, final CoordRect area, final MapLayer layer) {
+		if (layer != null) drawMapLayer(canvas, area, layer);
+	}
+
+	private void drawMapLayer(Canvas canvas, final CoordRect area, final MapLayer layer) {
+		int my = area.topLeft.y;
+		int py = (area.topLeft.y - mapViewArea.topLeft.y) * tileSize;
+		int px0 = (area.topLeft.x - mapViewArea.topLeft.x) * tileSize;
+		for (int y = 0; y < area.size.height; ++y, ++my, py += tileSize) {
+			int mx = area.topLeft.x;
+			if (my < 0) continue;
+			if (my >= currentMap.size.height) break;
+			int px = px0;
+			for (int x = 0; x < area.size.width; ++x, ++mx, px += tileSize) {
+				if (mx < 0) continue;
+				if (mx >= currentMap.size.width) break;
+				final int tile = layer.tiles[mx][my];
+				if (tile == 0) continue;
+				tiles.drawTile(canvas, tile, px, py, mPaint);
+			}
+		}
+	}
 	
 	private void drawMapLayerOffscreen(Canvas canvas, final MapLayer layer) {
 		int my = 0;
@@ -430,10 +560,10 @@ public final class MainView extends SurfaceView
 	private void _drawFromMapPosition(Canvas canvas, final CoordRect area, int x, int y, final int tile) {
 		x -= mapViewArea.topLeft.x;
 		y -= mapViewArea.topLeft.y;
-		if (	   (x >= 0 && x < mapViewArea.size.width)
-				&& (y >= 0 && y < mapViewArea.size.height)) {
+//		if (	   (x >= 0 && x < mapViewArea.size.width)
+//				&& (y >= 0 && y < mapViewArea.size.height)) {
 			tiles.drawTile(canvas, tile, x * tileSize, y * tileSize, mPaint);
-		}
+//		}
 	}
 
 	private void drawEffectText(Canvas canvas, final CoordRect area, final VisualEffectAnimation e, int textYOffset, Paint textPaint) {
@@ -456,24 +586,34 @@ public final class MainView extends SurfaceView
 			mapViewArea = new CoordRect(mapTopLeft, visibleNumberOfTiles);
 			updateClip();
 
+//			screenOffset.set(
+//					(surfaceSize.width - scaledTileSize * visibleNumberOfTiles.width) / 2
+//					,(surfaceSize.height - scaledTileSize * visibleNumberOfTiles.height) / 2
+//				);
+			
+
 			screenOffset.set(
-					(surfaceSize.width - scaledTileSize * visibleNumberOfTiles.width) / 2
-					,(surfaceSize.height - scaledTileSize * visibleNumberOfTiles.height) / 2
+					(surfaceSize.width - tileSize * visibleNumberOfTiles.width) / 2
+					,(surfaceSize.height - tileSize * visibleNumberOfTiles.height) / 2
 				);
 
 			currentTileMap.setColorFilter(this.mPaint);
 		}
 
+//		touchedTile = null;
+		
 		clearCanvas();
 
 		updateBitmaps();
 		
-		recalculateMapTopLeft(model.player.position);
+		recalculateMapTopLeft(model.player.position, false);
 		redrawAll(RedrawAllDebugReason.MapChanged);
 	}
 
-	private void recalculateMapTopLeft(Coord playerPosition) {
+	private void recalculateMapTopLeft(Coord playerPosition, boolean allowScrolling) {
 		synchronized (holder) {
+			int oldX = mapTopLeft.x;
+			int oldY = mapTopLeft.y;
 			this.playerPosition.set(playerPosition);
 			mapTopLeft.set(0, 0);
 
@@ -486,6 +626,14 @@ public final class MainView extends SurfaceView
 				mapTopLeft.y = Math.min(mapTopLeft.y, currentMap.size.height - mapViewArea.size.height);
 			}
 			updateClip();
+			if (allowScrolling) {
+				if (mapTopLeft.x != oldX || mapTopLeft.y != oldY) {
+					scrollVector = new Coord(mapTopLeft.x - oldX, mapTopLeft.y - oldY);
+					new ScrollAnimationHandler().start();
+				}
+			} else {
+				scrolling = false;
+			}
 		}
 	}
 	
@@ -493,37 +641,92 @@ public final class MainView extends SurfaceView
 		worldCoordsToScreenCords(mapViewArea, redrawClip);
 	}
 	
+//	private void printMem() {
+//		Runtime r = Runtime.getRuntime();
+//		L.log("---------------------------------------");
+//		L.log("Max : "+r.maxMemory()/1024);
+//		L.log("Tot : "+r.totalMemory()/1024);
+//		L.log("Use : "+(r.totalMemory()-r.freeMemory())/1024);
+//		L.log("Fre : "+r.freeMemory()/1024);
+//	}
+	
 	private void updateBitmaps() {
 		Canvas bitmapDrawingCanvas;
-		
-		if (currentTileMap.currentLayout.layerGround == null) {
+//		
+//		printMem();
+//		
+		if (groundBitmap != null) {
+			groundBitmap.recycle();
 			groundBitmap = null;
-		} else {
+		}
+//		if (objectsBitmap != null) {
+//			objectsBitmap.recycle();
+//			objectsBitmap = null;
+//		}
+		if (aboveBitmap != null) {
+			aboveBitmap.recycle();
+			aboveBitmap = null;
+		}
+		
+		System.gc();
+		
+		long freeMemRequired = tileSize * tileSize * currentMap.size.width * currentMap.size.height * 4 /*RGBA_8888*/ * 2 /*Require twice the needed size, to leave room for others*/;
+		Runtime r = Runtime.getRuntime();
+		
+		if (currentTileMap.currentLayout.layerGround != null && r.maxMemory() - r.totalMemory() > freeMemRequired) {
 			groundBitmap = Bitmap.createBitmap(currentMap.size.width * tileSize, currentMap.size.height * tileSize, Config.ARGB_8888);
 			bitmapDrawingCanvas = new Canvas(groundBitmap);
 			drawMapLayerOffscreen(bitmapDrawingCanvas, currentTileMap.currentLayout.layerGround);
+			if (currentTileMap.currentLayout.layerObjects != null) {
+				drawMapLayerOffscreen(bitmapDrawingCanvas, currentTileMap.currentLayout.layerObjects);
+			}
 		}
 		
-		if (currentTileMap.currentLayout.layerObjects == null) {
-			objectsBitmap = null;
-		} else {
-			objectsBitmap = Bitmap.createBitmap(currentMap.size.width * tileSize, currentMap.size.height * tileSize, Config.ARGB_8888);
-			bitmapDrawingCanvas = new Canvas(objectsBitmap);
-			drawMapLayerOffscreen(bitmapDrawingCanvas, currentTileMap.currentLayout.layerObjects);
-		}
 		
-		if (currentTileMap.currentLayout.layerAbove == null) {
-			aboveBitmap = null;
-		} else {
+		if (currentTileMap.currentLayout.layerAbove != null && r.maxMemory() - r.totalMemory() > freeMemRequired) {
 			aboveBitmap = Bitmap.createBitmap(currentMap.size.width * tileSize, currentMap.size.height * tileSize, Config.ARGB_8888);
 			bitmapDrawingCanvas = new Canvas(aboveBitmap);
 			drawMapLayerOffscreen(bitmapDrawingCanvas, currentTileMap.currentLayout.layerAbove);
 		}
+//		
+//		printMem();
+//		
 	}
 
+	public final class ScrollAnimationHandler extends Handler implements Runnable {
+
+		private static final int FRAME_DURATION = 40;
+		
+		@Override
+		public void run() {
+			if (System.currentTimeMillis() - scrollStartTime >= SCROLL_DURATION) {
+				onCompleted();
+			} else {
+				postDelayed(this, FRAME_DURATION);
+			}
+			update();
+		}
+
+		private void update() {
+			redrawAll(RedrawAllDebugReason.MapScrolling);
+		}
+
+		private void onCompleted() {
+			scrolling = false;
+			scrollVector = null;
+		}
+
+		public void start() {
+			scrolling = true;
+			scrollStartTime = System.currentTimeMillis();
+			postDelayed(this, 0);
+		}
+	}
+	
+	
 	@Override
 	public void onPlayerMoved(Coord newPosition, Coord previousPosition) {
-		recalculateMapTopLeft(newPosition);
+		recalculateMapTopLeft(newPosition, true);
 		redrawAll(RedrawAllDebugReason.PlayerMoved);
 	}
 

@@ -134,11 +134,11 @@ public final class VisualEffectController {
 
 		@Override
 		public void run() {
-			update();
-			if (currentFrame == effect.lastFrame) {
+			if (currentFrame >= effect.lastFrame) {
 				onCompleted();
 			} else {
 				postDelayed(this, effect.millisecondPerFrame * controllers.preferences.attackspeed_milliseconds / AndorsTrailPreferences.ATTACKSPEED_DEFAULT_MILLISECONDS);
+				update();
 			}
 		}
 
@@ -181,12 +181,12 @@ public final class VisualEffectController {
 			this.callback = callback;
 			this.callbackValue = callbackValue;
 			this.effect = effect;
-			this.displayText = displayValue;
+			this.displayText = displayValue == null ? "" : displayValue;
 			textPaint.setColor(effect.textColor);
-			textPaint.setTextSize(world.tileManager.viewTileSize * 0.5f); // 32dp.
+			textPaint.setTextSize(world.tileManager.tileSize * 0.5f); // 32dp.
 			Rect textBounds = new Rect();
 			textPaint.getTextBounds(displayText, 0, displayText.length(), textBounds);
-			int widthNeededInTiles = 1 + (textBounds.width() / world.tileManager.viewTileSize);
+			int widthNeededInTiles = 1 + (textBounds.width() / world.tileManager.tileSize);
 			if (widthNeededInTiles % 2 == 0) widthNeededInTiles++;
 			this.area = new CoordRect(new Coord(position.x - (widthNeededInTiles / 2), position.y - 1), new Size(widthNeededInTiles, 2));
 			this.beginFadeAtFrame = effect.lastFrame / 2;

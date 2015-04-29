@@ -51,6 +51,7 @@ public final class TileManager {
 	public static final int iconID_splatter_white_1b = 19;
 
 	public int tileSize;
+	public float density;
 
 	public int viewTileSize;
 	public float scale;
@@ -115,13 +116,17 @@ public final class TileManager {
 	}
 
 	public void setDensity(Resources r) {
-		float density = r.getDisplayMetrics().density;
+		density = r.getDisplayMetrics().density;
 		tileSize = (int) (32 * density);
+//		if (density < 1) tileSize = (int) (32 * density);
+//		else tileSize = 32;
 	}
 
 	public void updatePreferences(AndorsTrailPreferences prefs) {
-		scale = prefs.scalingFactor;
-		viewTileSize = (int) (tileSize * prefs.scalingFactor);
+		float densityScaler = 1;
+//		if (density > 1) densityScaler = density;
+		scale = prefs.scalingFactor * densityScaler;
+		viewTileSize = (int) (tileSize * prefs.scalingFactor * densityScaler);
 	}
 
 

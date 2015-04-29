@@ -105,6 +105,11 @@ public final class StartScreenActivity extends Activity {
 			development_version.setText(R.string.startscreen_non_release_version);
 			development_version.setVisibility(View.VISIBLE);
 		}
+//		if (development_version.getVisibility() == View.VISIBLE) {
+//			development_version.setText(development_version.getText() +
+//					"\nMax Heap: " + Runtime.getRuntime().maxMemory() / 1024 +
+//					"\nTile size: " + (int) (32 * res.getDisplayMetrics().density));
+//		}
 
 		app.getWorldSetup().startResourceLoader(res);
 
