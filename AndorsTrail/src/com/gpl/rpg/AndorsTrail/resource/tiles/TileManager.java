@@ -117,14 +117,14 @@ public final class TileManager {
 
 	public void setDensity(Resources r) {
 		density = r.getDisplayMetrics().density;
-		tileSize = (int) (32 * density);
-//		if (density < 1) tileSize = (int) (32 * density);
-//		else tileSize = 32;
+//		tileSize = (int) (32 * density);
+		if (density < 1) tileSize = (int) (32 * density);
+		else tileSize = 32;
 	}
 
 	public void updatePreferences(AndorsTrailPreferences prefs) {
 		float densityScaler = 1;
-//		if (density > 1) densityScaler = density;
+		if (density > 1) densityScaler = density;
 		scale = prefs.scalingFactor * densityScaler;
 		viewTileSize = (int) (tileSize * prefs.scalingFactor * densityScaler);
 	}
