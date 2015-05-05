@@ -42,15 +42,15 @@ public final class ConversationActivity
 		implements OnKeyListener
 		, ConversationController.ConversationStatemachine.ConversationStateListener {
 
-	private static final int playerNameColor = Color.argb(255, 0xbb, 0x22, 0x22);
-	private static final int NPCNameColor = Color.argb(255, 0xbb, 0xbb, 0x22);
-	private static final int playerPhraseColor = 0;
-	private static final int NPCPhraseColor = 0;
-	private static final int rewardColor = Color.argb(255, 0x99, 0x99, 0x55);
-	private static final int oldPhraseColor = Color.argb(255,0x5a,0x5a, 0x5a);
-    	private static final int oldPlayerNameColor = Color.argb(255, 0x5d, 0x11, 0x11);
-    	private static final int oldNPCNameColor = Color.argb(255, 0x5d, 0x5d, 0x11);
-    	private static final int oldRewardColor = Color.argb(255, 0x4C, 0x4C, 0x2A);
+	private static final int playerNameColor = 		Color.argb(255, 0xbb, 0x22, 0x22);
+	private static final int NPCNameColor = 		Color.argb(255, 0xbb, 0xbb, 0x22);
+	private static final int playerPhraseColor = 	Color.argb(255, 0x00, 0x00, 0x00);
+	private static final int NPCPhraseColor =  		Color.argb(255, 0x00, 0x00, 0x00);
+	private static final int rewardColor = 			Color.argb(255, 0x99, 0x99, 0x55);
+	private static final int oldPhraseColor = 		Color.argb(255, 0x3a, 0x3a, 0x3a);
+	private static final int oldPlayerNameColor = 	Color.argb(255, 0x89, 0x19, 0x19);
+	private static final int oldNPCNameColor = 		Color.argb(255, 0xa2, 0xa2, 0x1d);
+	private static final int oldRewardColor = 		Color.argb(255, 0x7a, 0x7a, 0x44);
 
 	private WorldContext world;
 	private Player player;

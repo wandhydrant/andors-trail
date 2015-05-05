@@ -191,16 +191,9 @@ public final class MainView extends SurfaceView
 			inputController.onTouchCancel();
 			break;
 		}
-		performClick();
 		return super.onTouchEvent(event);
 	}
 	
-	@Override
-	public boolean performClick() {
-		return super.performClick();
-	}
-	
-
 	private boolean canAcceptInput() {
 		if (!model.uiSelections.isMainActivityVisible) return false;
 		if (!hasSurface) return false;
@@ -726,7 +719,7 @@ public final class MainView extends SurfaceView
 	
 	@Override
 	public void onPlayerMoved(Coord newPosition, Coord previousPosition) {
-		recalculateMapTopLeft(newPosition, true);
+		recalculateMapTopLeft(newPosition, preferences.enableUiAnimations);
 		redrawAll(RedrawAllDebugReason.PlayerMoved);
 	}
 

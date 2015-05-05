@@ -77,7 +77,6 @@ public final class VisualEffectController {
 		public final Coord origin;
 		public final Coord destination;
 		
-		public int timeElapsed;
 		
 		@Override
 		public void run() {
@@ -96,7 +95,6 @@ public final class VisualEffectController {
 			this.actor = actor;
 			this.origin = origin;
 			this.destination = destination;
-			this.timeElapsed = 0;
 
 		}
 		
@@ -117,7 +115,7 @@ public final class VisualEffectController {
 			actor.hasVFXRunning = true;
 			actor.vfxDuration = duration;
 			actor.vfxStartTime = System.currentTimeMillis();
-			if (duration == 0) onCompleted();
+			if (duration == 0 || !controllers.preferences.enableUiAnimations) onCompleted();
 			else postDelayed(this, 0);
 		}
 		
@@ -162,7 +160,8 @@ public final class VisualEffectController {
 		}
 
 		public void start() {
-			postDelayed(this, 0);
+			if (!controllers.preferences.enableUiAnimations) onCompleted();
+			else postDelayed(this, 0);
 		}
 
 		private int currentFrame = 0;
