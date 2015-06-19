@@ -381,7 +381,14 @@
         "replies": [
             {
                 "text": "Yes, they won't expect a thing.",
-                "nextPhraseID": "fallhaven_warden_31"
+                "nextPhraseID": "fallhaven_warden_31",
+                "requires": [
+                    {
+                        "requireType": "questProgress",
+                        "requireID": "farrik",
+                        "value": "80"
+                    }
+                ]
             },
             {
                 "text": "No, not yet. I'm working on it.",

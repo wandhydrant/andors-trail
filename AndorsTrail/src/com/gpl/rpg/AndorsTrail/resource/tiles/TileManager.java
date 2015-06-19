@@ -8,6 +8,7 @@ import android.graphics.drawable.LayerDrawable;
 import android.os.AsyncTask;
 import android.widget.ImageView;
 import android.widget.TextView;
+
 import com.gpl.rpg.AndorsTrail.AndorsTrailApplication;
 import com.gpl.rpg.AndorsTrail.AndorsTrailPreferences;
 import com.gpl.rpg.AndorsTrail.context.WorldContext;
@@ -230,7 +231,12 @@ public final class TileManager {
 					addTileIDsFor(tileIDs, mapName, res, world);
 				}
 
-				adjacentMapTiles = tileCache.loadTilesFor(tileIDs, res);
+				long freeMemRequired = tileSize * tileSize * tileIDs.size() * 4 /*RGBA_8888*/ * 2 /*Require twice the needed size, to leave room for others*/;
+				Runtime r = Runtime.getRuntime();
+				
+				if (r.maxMemory() - r.totalMemory() > freeMemRequired) {
+					adjacentMapTiles = tileCache.loadTilesFor(tileIDs, res);
+				}
 				return null;
 			}
 		}).execute();

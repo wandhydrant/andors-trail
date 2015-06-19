@@ -644,44 +644,42 @@ public final class MainView extends SurfaceView
 //	}
 	
 	private void updateBitmaps() {
-		Canvas bitmapDrawingCanvas;
+		
+		//CPU and pixel fill-rate optimization, but makes low heap-size devices throw an OutOfMemoryError... disabled for now.
+//		Canvas bitmapDrawingCanvas;
 //		
 //		printMem();
 //		
-		if (groundBitmap != null) {
-			groundBitmap.recycle();
-			groundBitmap = null;
-		}
-//		if (objectsBitmap != null) {
-//			objectsBitmap.recycle();
-//			objectsBitmap = null;
+//		if (groundBitmap != null) {
+//			groundBitmap.recycle();
+//			groundBitmap = null;
 //		}
-		if (aboveBitmap != null) {
-			aboveBitmap.recycle();
-			aboveBitmap = null;
-		}
-		
-		System.gc();
-		
-		long freeMemRequired = tileSize * tileSize * currentMap.size.width * currentMap.size.height * 4 /*RGBA_8888*/ * 2 /*Require twice the needed size, to leave room for others*/;
-		Runtime r = Runtime.getRuntime();
-		
-		if (currentTileMap.currentLayout.layerGround != null && r.maxMemory() - r.totalMemory() > freeMemRequired) {
-			groundBitmap = Bitmap.createBitmap(currentMap.size.width * tileSize, currentMap.size.height * tileSize, Config.ARGB_8888);
-			bitmapDrawingCanvas = new Canvas(groundBitmap);
-			drawMapLayerOffscreen(bitmapDrawingCanvas, currentTileMap.currentLayout.layerGround);
-			if (currentTileMap.currentLayout.layerObjects != null) {
-				drawMapLayerOffscreen(bitmapDrawingCanvas, currentTileMap.currentLayout.layerObjects);
-			}
-		}
-		
-		
-		if (currentTileMap.currentLayout.layerAbove != null && r.maxMemory() - r.totalMemory() > freeMemRequired) {
-			aboveBitmap = Bitmap.createBitmap(currentMap.size.width * tileSize, currentMap.size.height * tileSize, Config.ARGB_8888);
-			bitmapDrawingCanvas = new Canvas(aboveBitmap);
-			drawMapLayerOffscreen(bitmapDrawingCanvas, currentTileMap.currentLayout.layerAbove);
-		}
+//		if (aboveBitmap != null) {
+//			aboveBitmap.recycle();
+//			aboveBitmap = null;
+//		}
 //		
+//		System.gc();
+//		
+//		long freeMemRequired = tileSize * tileSize * currentMap.size.width * currentMap.size.height * 4 /*RGBA_8888*/ * 3 /*Require three times the needed size, to leave room for others*/;
+//		Runtime r = Runtime.getRuntime();
+//		
+//		if (currentTileMap.currentLayout.layerGround != null && r.maxMemory() - r.totalMemory() > freeMemRequired) {
+//			groundBitmap = Bitmap.createBitmap(currentMap.size.width * tileSize, currentMap.size.height * tileSize, Config.ARGB_8888);
+//			bitmapDrawingCanvas = new Canvas(groundBitmap);
+//			drawMapLayerOffscreen(bitmapDrawingCanvas, currentTileMap.currentLayout.layerGround);
+//			if (currentTileMap.currentLayout.layerObjects != null) {
+//				drawMapLayerOffscreen(bitmapDrawingCanvas, currentTileMap.currentLayout.layerObjects);
+//			}
+//		}
+//		
+//		
+//		if (currentTileMap.currentLayout.layerAbove != null && r.maxMemory() - r.totalMemory() > freeMemRequired) {
+//			aboveBitmap = Bitmap.createBitmap(currentMap.size.width * tileSize, currentMap.size.height * tileSize, Config.ARGB_8888);
+//			bitmapDrawingCanvas = new Canvas(aboveBitmap);
+//			drawMapLayerOffscreen(bitmapDrawingCanvas, currentTileMap.currentLayout.layerAbove);
+//		}
+		
 //		printMem();
 //		
 	}
