@@ -26,12 +26,13 @@ public final class StatusView extends RelativeLayout implements PlayerStatsListe
 	private final ControllerContext controllers;
 	private final WorldContext world;
 	private final Player player;
+	private final Resources res;
 
 	private final RangeBar healthBar;
 	private final RangeBar expBar;
 	private final ImageButton heroImage;
 	private boolean showingLevelup;
-	private final Drawable levelupDrawable;
+//	private final Drawable levelupDrawable;
 
 	public StatusView(final Context context, AttributeSet attr) {
 		super(context, attr);
@@ -59,11 +60,11 @@ public final class StatusView extends RelativeLayout implements PlayerStatsListe
 		expBar = (RangeBar) findViewById(R.id.statusview_exp);
 		expBar.init(R.drawable.ui_progress_exp, R.string.status_exp);
 
-		Resources res = getResources();
-		levelupDrawable = new LayerDrawable(new Drawable[] {
-				new BitmapDrawable(res, world.tileManager.preloadedTiles.getBitmap(player.iconID))
-				,new BitmapDrawable(res, world.tileManager.preloadedTiles.getBitmap(TileManager.iconID_moveselect))
-		});
+		res = getResources();
+//		levelupDrawable = new LayerDrawable(new Drawable[] {
+//				new BitmapDrawable(res, world.tileManager.preloadedTiles.getBitmap(player.iconID))
+//				,new BitmapDrawable(res, world.tileManager.preloadedTiles.getBitmap(TileManager.iconID_moveselect))
+//		});
 
 		updateStatus();
 		updateIcon(player.canLevelup());
@@ -101,9 +102,9 @@ public final class StatusView extends RelativeLayout implements PlayerStatsListe
 	private void updateIcon(boolean canLevelUp) {
 		showingLevelup = canLevelUp;
 		if (canLevelUp) {
-			heroImage.setImageDrawable(levelupDrawable);
+			world.tileManager.setImageViewTileWithOverlay(res, heroImage, TileManager.iconID_moveselect, world.tileManager.preloadedTiles.getBitmap(player.iconID), true);
 		} else {
-			world.tileManager.setImageViewTile(heroImage, player);
+			world.tileManager.setImageViewTile(res, heroImage, player);
 		}
 	}
 

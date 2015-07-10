@@ -102,7 +102,8 @@ public final class DisplayActiveActorConditionIcons implements ActorConditionLis
 		private final Animation onNewIconAnimation;
 		private final Animation onRemovedIconAnimation;
 		private final Animation onAppliedEffectAnimation;
-
+		final Resources res;
+		
 		public ActiveConditionIcon(Context context, int id) {
 			this.id = id;
 			this.image = new ImageView(context);
@@ -113,7 +114,7 @@ public final class DisplayActiveActorConditionIcons implements ActorConditionLis
 			this.onAppliedEffectAnimation = AnimationUtils.loadAnimation(context, R.anim.scalebeat);
 			this.onRemovedIconAnimation.setAnimationListener(this);
 
-			final Resources res = context.getResources();
+			res = context.getResources();
 
 			text.setTextColor(res.getColor(android.R.color.white));
 			text.setShadowLayer(1, 1, 1, res.getColor(android.R.color.black));
@@ -121,7 +122,7 @@ public final class DisplayActiveActorConditionIcons implements ActorConditionLis
 
 		private void setActiveCondition(ActorCondition condition) {
 			this.condition = condition;
-			tileManager.setImageViewTile(image, condition.conditionType);
+			tileManager.setImageViewTile(res, image, condition.conditionType);
 			image.setVisibility(View.VISIBLE);
 			setIconText();
 		}

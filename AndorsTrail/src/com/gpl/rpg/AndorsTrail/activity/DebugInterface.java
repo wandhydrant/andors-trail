@@ -162,7 +162,7 @@ public final class DebugInterface {
 		lp.addRule(RelativeLayout.ABOVE, R.id.main_statusview);
 		Button b = new Button(mainActivity);
 		b.setText(button.text);
-		b.setTextSize(res.getDimension(R.dimen.actionbar_text));
+		b.setTextSize(10);//res.getDimension(R.dimen.actionbar_text));
 		b.setId(id);
 		b.setLayoutParams(lp);
 		b.setOnClickListener(button.listener);

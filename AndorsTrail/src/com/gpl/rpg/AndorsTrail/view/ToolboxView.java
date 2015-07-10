@@ -38,6 +38,7 @@ public final class ToolboxView extends LinearLayout implements OnClickListener {
 	private boolean hideQuickslotsWhenToolboxIsClosed = false;
 	private static final int quickSlotIcon = R.drawable.ui_icon_equipment;
 	private final Drawable quickSlotIconsLockedDrawable;
+	private final Resources res;
 
 	public ToolboxView(final Context context, AttributeSet attrs) {
 		super(context, attrs);
@@ -67,7 +68,7 @@ public final class ToolboxView extends LinearLayout implements OnClickListener {
 		toolbox_combatlog = (ImageButton)findViewById(R.id.toolbox_combatlog);
 		toolbox_combatlog.setOnClickListener(this);
 
-		Resources res = getResources();
+		res = getResources();
 		quickSlotIconsLockedDrawable = new LayerDrawable(new Drawable[] {
 				res.getDrawable(quickSlotIcon)
 				,new BitmapDrawable(res, world.tileManager.preloadedTiles.getBitmap(TileManager.iconID_moveselect))
@@ -155,17 +156,17 @@ public final class ToolboxView extends LinearLayout implements OnClickListener {
 
 	private void setToolboxIcon(boolean opened) {
 		if (opened) {
-			world.tileManager.setImageViewTileForUIIcon(toggleToolboxVisibility, TileManager.iconID_boxopened);
+			world.tileManager.setImageViewTileForUIIcon(res, toggleToolboxVisibility, TileManager.iconID_boxopened);
 		} else {
-			world.tileManager.setImageViewTileForUIIcon(toggleToolboxVisibility, TileManager.iconID_boxclosed);
+			world.tileManager.setImageViewTileForUIIcon(res, toggleToolboxVisibility, TileManager.iconID_boxclosed);
 		}
 	}
 
 	private void updateToggleQuickSlotItemsIcon() {
 		if (preferences.showQuickslotsWhenToolboxIsVisible && !hideQuickslotsWhenToolboxIsClosed) {
-			toolbox_quickitems.setImageDrawable(quickSlotIconsLockedDrawable);
+			world.tileManager.setImageViewTile(toolbox_quickitems, quickSlotIconsLockedDrawable);
 			return;
 		}
-		toolbox_quickitems.setImageDrawable(getResources().getDrawable(quickSlotIcon));
+		world.tileManager.setImageViewTile(toolbox_quickitems, getResources().getDrawable(quickSlotIcon));
 	}
 }

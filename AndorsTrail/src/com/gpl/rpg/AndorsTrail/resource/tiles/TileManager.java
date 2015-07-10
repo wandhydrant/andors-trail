@@ -5,6 +5,7 @@ import android.graphics.Bitmap;
 import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
 import android.graphics.drawable.LayerDrawable;
+import android.graphics.drawable.ScaleDrawable;
 import android.os.AsyncTask;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -53,6 +54,7 @@ public final class TileManager {
 
 	public int tileSize;
 	public float density;
+	public float uiIconScale;
 
 	public int viewTileSize;
 	public float scale;
@@ -118,6 +120,7 @@ public final class TileManager {
 
 	public void setDensity(Resources r) {
 		density = r.getDisplayMetrics().density;
+		uiIconScale = 100 * density;
 //		tileSize = (int) (32 * density);
 		if (density < 1) tileSize = (int) (32 * density);
 		else tileSize = 32;
@@ -138,8 +141,23 @@ public final class TileManager {
 	public void setImageViewTileForPlayer(Resources res, TextView textView, int iconID) { setImageViewTile(res, textView, preloadedTiles.getBitmap(iconID)); }
 	public void setImageViewTile(Resources res, TextView textView, ActorConditionType conditionType) { setImageViewTile(res, textView, preloadedTiles.getBitmap(conditionType.iconID)); }
 	public void setImageViewTileForUIIcon(Resources res, TextView textView, int iconID) { setImageViewTile(res, textView, preloadedTiles.getBitmap(iconID)); }
-	private void setImageViewTile(Resources res, TextView textView, Bitmap b) { textView.setCompoundDrawablesWithIntrinsicBounds(new BitmapDrawable(res, b), null, null, null); }
-
+	private void setImageViewTile(Resources res, TextView textView, Bitmap b) { 
+		if (density > 1) {
+			setImageViewTile(textView, new BitmapDrawable(res, Bitmap.createScaledBitmap(b, (int)(tileSize*density), (int)(tileSize*density), true)));
+		} else {
+			setImageViewTile(textView, new BitmapDrawable(res, b)); 
+		}
+	}
+	private void setImageViewTile(TextView textView, Drawable d) {
+		/*if (density > 1) {
+			ScaleDrawable sd = new ScaleDrawable(d, 0, uiIconScale, uiIconScale);
+			sd.setLevel(8000);
+			d.setBounds(0, 0, (int)(tileSize * density), (int)(tileSize * density));
+			textView.setCompoundDrawables(sd, null, null, null);
+		}
+		else */textView.setCompoundDrawablesWithIntrinsicBounds(d, null, null, null);
+	}
+	
 	public void setImageViewTileForSingleItemType(Resources res, TextView textView, ItemType itemType) {
 		final Bitmap icon = tileCache.loadSingleTile(itemType.iconID, res);
 		setImageViewTile(res, textView, itemType, icon);
@@ -151,40 +169,81 @@ public final class TileManager {
 	private void setImageViewTile(Resources res, TextView textView, ItemType itemType, Bitmap icon) {
 		final int overlayIconID = itemType.getOverlayTileID();
 		if (overlayIconID != -1) {
-			textView.setCompoundDrawablesWithIntrinsicBounds(
+			
+			if (density > 1) {
+			
+			setImageViewTile(textView,
 				new LayerDrawable(new Drawable[] {
-					new BitmapDrawable(res, preloadedTiles.getBitmap(overlayIconID))
-					,new BitmapDrawable(res, icon)
-				}), null, null, null
+					new BitmapDrawable(res, Bitmap.createScaledBitmap(preloadedTiles.getBitmap(overlayIconID), (int)(tileSize*density), (int)(tileSize*density), true))
+					,new BitmapDrawable(res, Bitmap.createScaledBitmap(icon, (int)(tileSize*density), (int)(tileSize*density), true))
+				})
 			);
+			} else {
+				setImageViewTile(textView,
+						new LayerDrawable(new Drawable[] {
+							new BitmapDrawable(res, preloadedTiles.getBitmap(overlayIconID))
+							,new BitmapDrawable(res, icon)
+						})
+					);	
+			}
 		} else {
 			setImageViewTile(res, textView, icon);
 		}
 	}
 
-	public void setImageViewTile(ImageView imageView, Monster monster) { setImageViewTileForMonster(imageView, monster.iconID); }
-	public void setImageViewTile(ImageView imageView, Player player) { setImageViewTileForPlayer(imageView, player.iconID); }
-	public void setImageViewTileForMonster(ImageView imageView, int iconID) { imageView.setImageBitmap(currentMapTiles.getBitmap(iconID)); }
-	public void setImageViewTileForPlayer(ImageView imageView, int iconID) { imageView.setImageBitmap(preloadedTiles.getBitmap(iconID)); }
-	public void setImageViewTile(ImageView imageView, ActorConditionType conditionType) { imageView.setImageBitmap(preloadedTiles.getBitmap(conditionType.iconID)); }
-	public void setImageViewTileForUIIcon(ImageView imageView, int iconID) { imageView.setImageBitmap(preloadedTiles.getBitmap(iconID)); }
-
+	public void setImageViewTile(Resources res, ImageView imageView, Monster monster) { setImageViewTileForMonster(res, imageView, monster.iconID); }
+	public void setImageViewTile(Resources res, ImageView imageView, Player player) { setImageViewTileForPlayer(res, imageView, player.iconID); }
+	public void setImageViewTileForMonster(Resources res, ImageView imageView, int iconID) {  setImageViewTile(res, imageView, currentMapTiles.getBitmap(iconID)); }
+	public void setImageViewTileForPlayer(Resources res, ImageView imageView, int iconID) {  setImageViewTile(res, imageView, preloadedTiles.getBitmap(iconID)); }
+	public void setImageViewTile(Resources res, ImageView imageView, ActorConditionType conditionType) {  setImageViewTile(res, imageView, preloadedTiles.getBitmap(conditionType.iconID)); }
+	public void setImageViewTileForUIIcon(Resources res, ImageView imageView, int iconID) { setImageViewTile(res, imageView, preloadedTiles.getBitmap(iconID)); }
+	public void setImageViewTile(Resources res, ImageView imageView, Bitmap b) {
+		if (density > 1) {
+			setImageViewTile(imageView, new BitmapDrawable(res, Bitmap.createScaledBitmap(b, (int)(tileSize*density), (int)(tileSize*density), true)));
+		} else {
+			setImageViewTile(imageView, new BitmapDrawable(res, b)); 
+		}
+	}
+	public void setImageViewTile(ImageView imageView, Drawable d) {
+		imageView.setImageDrawable(d);
+	}
+	
 	public void setImageViewTile(Resources res, ImageView imageView, ItemType itemType, TileCollection itemTileCollection) {
 		final Bitmap icon = itemTileCollection.getBitmap(itemType.iconID);
 		setImageViewTile(res, imageView, itemType, icon);
 	}
+	public void setImageViewTileWithOverlay(Resources res, ImageView imageView, int overlayIconID, Bitmap icon, boolean overlayAbove) {
+		if (overlayIconID != -1) {
+			Drawable overlayDrawable, iconDrawable;
+			if (density > 1) {
+				overlayDrawable = new BitmapDrawable(res, Bitmap.createScaledBitmap(preloadedTiles.getBitmap(overlayIconID), (int)(tileSize*density), (int)(tileSize*density), true));
+				iconDrawable = new BitmapDrawable(res, Bitmap.createScaledBitmap(icon, (int)(tileSize*density), (int)(tileSize*density), true));
+			} else {
+				overlayDrawable = new BitmapDrawable(res, preloadedTiles.getBitmap(overlayIconID));
+				iconDrawable = new BitmapDrawable(res, icon);
+				}
+			if (overlayAbove) {
+				setImageViewTile(imageView,
+						new LayerDrawable(new Drawable[] {
+								iconDrawable
+								,overlayDrawable
+						})
+						);
+			} else {
+				setImageViewTile(imageView,
+						new LayerDrawable(new Drawable[] {
+								overlayDrawable
+								,iconDrawable
+						})
+						);
+			}
+		} else {
+			setImageViewTile(res, imageView, icon);
+		}
+	}
 	private void setImageViewTile(Resources res, ImageView imageView, ItemType itemType, Bitmap icon) {
 		final int overlayIconID = itemType.getOverlayTileID();
-		if (overlayIconID != -1) {
-			imageView.setImageDrawable(
-				new LayerDrawable(new Drawable[] {
-					new BitmapDrawable(res, preloadedTiles.getBitmap(overlayIconID))
-					,new BitmapDrawable(res, icon)
-				})
-			);
-		} else {
-			imageView.setImageBitmap(icon);
-		}
+		setImageViewTileWithOverlay(res, imageView, overlayIconID, icon, false);
 	}
 
 	public void loadPreloadedTiles(Resources r) {

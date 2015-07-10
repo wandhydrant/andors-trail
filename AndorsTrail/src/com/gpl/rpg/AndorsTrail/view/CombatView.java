@@ -139,7 +139,7 @@ public final class CombatView extends RelativeLayout implements CombatSelectionL
 		currentMonster = null;
 		if (selectedMonster != null) {
 			monsterBar.setVisibility(View.VISIBLE);
-			world.tileManager.setImageViewTile(monsterInfo, selectedMonster);
+			world.tileManager.setImageViewTile(res, monsterInfo, selectedMonster);
 			updateMonsterHealth(selectedMonster);
 			currentMonster = selectedMonster;
 		}
