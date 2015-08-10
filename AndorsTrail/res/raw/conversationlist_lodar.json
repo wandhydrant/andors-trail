@@ -2067,11 +2067,16 @@
             }
         ],
         "rewards":[
-            {
-                "value":1,
-                "rewardID":"vial_activation",
-                "rewardType":"giveItem"
-            }
+        	{
+            	"value":1,
+            	"rewardID":"vial_activation",
+            	"rewardType":"giveItem"
+        	},
+        	{
+        	    "value":30,
+    	        "rewardID":"shortcut_lodar",
+	            "rewardType":"questProgress"
+        	}
         ]
     },
     {
