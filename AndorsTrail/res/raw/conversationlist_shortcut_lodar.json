@@ -1,15 +1,13 @@
 [
     {
-        "message":"I see a weird stone formation in front of me. As I try approaching  the rocks, I'm are stopped by a powerful magical force.",
+        "message":"I see a weird stone formation in front of me. As I try approaching the rocks, I'm stopped by a powerful magical force.",
         "id":"sign_lodar_shortcut_1"
     },
     {
-        "message":"",
         "id":"sign_lodar_shortcut_2",
         "replies":[
             {
                 "nextPhraseID":"sign_lodar_shortcut_2a",
-                "text":"N",
                 "requires":[
                     {
                         "negate":true,
@@ -21,7 +19,6 @@
             },
             {
                 "nextPhraseID":"sign_lodar_shortcut_2b",
-                "text":"N",
                 "requires":[
                     {
                         "negate":true,
@@ -41,7 +38,7 @@
         "id":"sign_lodar_shortcut_3"
     },
     {
-        "message":"In front of my I see a torch burning in a purple glow. I can feel the force coming from this item. I better should leave it there and notify Lodar about this weird torch.",
+        "message":"In front of me, I see a torch burning in a purple glow. I can feel the force coming from this item. I better should leave it there and notify Lodar about this weird torch.",
         "id":"sign_lodar_shortcut_4b",
         "rewards":[
             {
@@ -57,7 +54,6 @@
         "replies":[
             {
                 "nextPhraseID":"sign_lodar_shortcut_5a",
-                "text":"N",
                 "requires":[
                     {
                         "negate":true,
