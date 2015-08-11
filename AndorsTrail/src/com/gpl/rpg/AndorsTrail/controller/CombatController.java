@@ -376,11 +376,12 @@ public final class CombatController implements VisualEffectCompletedCallback {
 			handleNextMonsterAction();
 			return;
 		}
-
+		
+		final Monster movingMonster = currentActiveMonster;
 		controllers.monsterMovementController.moveMonsterToNextPositionDuringCombat(currentActiveMonster, world.model.currentMap, new VisualEffectController.VisualEffectCompletedCallback(){
 			@Override
 			public void onVisualEffectCompleted(int callbackValue) {
-				combatActionListeners.onMonsterMovedDuringCombat(currentActiveMonster);
+				combatActionListeners.onMonsterMovedDuringCombat(movingMonster);
 				handleNextMonsterAction();
 			}
 		});
