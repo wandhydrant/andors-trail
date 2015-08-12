@@ -496,105 +496,129 @@
         ]
     },
     {
-        "message":"Again, thank you for your help.",
-        "id":"lodar_d1",
-        "replies":[
-            {
-                "nextPhraseID":"lodar_pots0",
-                "text":"I'd like to talk about your potions."
-            },
-            {
-                "nextPhraseID":"lodar_forest0",
-                "text":"What are you doing all by yourself out here in the forest?"
-            },
-            {
-                "nextPhraseID":"lodar_xul0",
-                "text":"On the body of the Hira'zinn, I found this peculiar sword. Do you know anything about it?",
-                "requires":[
-                    {
-                        "requireType":"inventoryKeep",
-                        "value":1,
-                        "requireID":"xulviir0"
-                    }
-                ]
-            },
-            {
-                "nextPhraseID":"lodar_hira0",
-                "text":"What was that Hira'zinn beast?"
-            },
-            {
-                "nextPhraseID":"lodar_andor0",
-                "text":"I have come to find you. I am looking for my brother Andor."
-            },
-            {
-                "nextPhraseID":"lodar_shortcut_0",
-                "text":"The way to come here is a real maze and the path is tricky to find. I think I've lost my way a hundred times. Do you know of an easier way?",
-                "requires":[
-                    {
-                        "negate":true,
-                        "requireType":"questProgress",
-                        "value":10,
-                        "requireID":"shortcut_lodar"
-                    }
-                ]
-            },
-            {
-                "nextPhraseID":"shortcut_lodar_1",
-                "text":"I found the grotto you mentioned but unfortunately I can't move on because the cave is blocked by rocks and I can't swim. I recognized a weird torch burning in a purple glow though. Do you know anything about this ?",
-                "requires":[
-                    {
-                        "requireType":"questProgress",
-                        "value":26,
-                        "requireID":"shortcut_lodar"
-                    },
-                    {
-                        "requireType":"questProgress",
-                        "value":10,
-                        "requireID":"shortcut_lodar"
-                    }
-                ]
-            },
-            {
-                "nextPhraseID":"shortcut_lodar_1",
-                "text":"I found a grotto beneath the Hira'zinn cave but unfortunately I can't move on because the cave is blocked by rocks and I can't swim. I recognized a weird torch burning in a purple glow though. Do you know anything about this ?",
-                "requires":[
-                    {
-                        "requireType":"questProgress",
-                        "value":26,
-                        "requireID":"shortcut_lodar"
-                    },
-                    {
-                        "negate":true,
-                        "requireType":"questProgress",
-                        "value":10,
-                        "requireID":"shortcut_lodar"
-                    }
-                ]
-            },
-            {
-                "nextPhraseID":"shortcut_lodar_2",
-                "text":"It worked and I didn't get injured at all! Thank you so much! Now I have got finally my shortcut!",
-                "requires":[
-                    {
-                        "requireType":"questProgress",
-                        "value":40,
-                        "requireID":"shortcut_lodar"
-                    }
-                ]
-            },
-            {
-                "nextPhraseID":"lodar_rest",
-                "text":"Can I rest here?"
-            }
-        ],
-        "rewards":[
-            {
-                "value":60,
-                "rewardID":"lodar2",
-                "rewardType":"questProgress"
-            }
-        ]
-    },
+    	"message":"Again, thank you for your help.",
+    	"id":"lodar_d1",
+    	"replies":[
+        	{
+            	"nextPhraseID":"lodar_pots0",
+	            "text":"I'd like to talk about your potions."
+        	},
+        	{
+            	"nextPhraseID":"lodar_forest0",
+	            "text":"What are you doing all by yourself out here in the forest?"
+        	},
+        	{
+            	"nextPhraseID":"lodar_xul0",
+            	"text":"On the body of the Hira'zinn, I found this peculiar sword. Do you know anything about it?",
+            	"requires":[
+                	{
+                    	"requireType":"inventoryKeep",
+                    	"value":1,
+	                    "requireID":"xulviir0"
+                	}
+	            ]
+        	},
+        	{
+            	"nextPhraseID":"lodar_hira0",
+	            "text":"What was that Hira'zinn beast?"
+        	},
+        	{
+            	"nextPhraseID":"lodar_andor0",
+	            "text":"I have come to find you. I am looking for my brother Andor."
+        	},
+        	{
+            	"nextPhraseID":"lodar_shortcut_0",
+            	"text":"The way to come here is a real maze and the path is tricky to find. I think I've lost my way a hundred times. Do you know of an easier way?",
+            	"requires":[
+                	{
+                    	"negate":true,
+                    	"requireType":"questProgress",
+                    	"value":10,
+	                    "requireID":"shortcut_lodar"
+                	},
+                	{
+                    	"negate":true,
+                    	"requireType":"questProgress",
+                    	"value":30,
+	                    "requireID":"shortcut_lodar"
+                	}
+	            ]
+        	},
+        	{
+            	"nextPhraseID":"shortcut_lodar_1",
+            	"text":"I found the cave you mentioned but unfortunately the path doesn't go anywhere. I noticed a weird torch burning in a purple glow though. Do you know anything about this ?",
+            	"requires":[
+                	{
+                    	"requireType":"questProgress",
+                    	"value":26,
+	                    "requireID":"shortcut_lodar"
+                	},
+                	{
+                    	"requireType":"questProgress",
+                    	"value":10,
+	                    "requireID":"shortcut_lodar"
+                	},
+                	{
+                    	"negate":true,
+                    	"requireType":"questProgress",
+                    	"value":30,
+	                    "requireID":"shortcut_lodar"
+                	}
+	            ]
+        	},
+        	{
+            	"nextPhraseID":"shortcut_lodar_1",
+            	"text":"I found a cave beneath the Hira'zinn tomb but unfortunately the path doesn't go anywhere. I noticed a weird torch burning in a purple glow though. Do you know anything about this ?",
+            	"requires":[
+                	{
+                    	"requireType":"questProgress",
+                    	"value":26,
+	                    "requireID":"shortcut_lodar"
+                	},
+                	{
+                    	"negate":true,
+                    	"requireType":"questProgress",
+                    	"value":10,
+	                    "requireID":"shortcut_lodar"
+                	},
+                	{	
+	                    "negate":true,
+                    	"requireType":"questProgress",
+                    	"value":30,
+	                    "requireID":"shortcut_lodar"
+                	}
+	            ]
+        	},
+        	{
+            	"nextPhraseID":"shortcut_lodar_2",
+            	"text":"It worked and I didn't get injured at all! There's now a path from the Duleian road to here that let me avoid the maze.",
+            	"requires":[
+                	{
+                    	"requireType":"questProgress",
+                    	"value":40,
+                    	"requireID":"shortcut_lodar"
+                	},
+                	{
+                    	"negate":true,
+                    	"requireType":"questProgress",
+                    	"value":50,
+                    	"requireID":"shortcut_lodar"
+                	}
+	            ]
+        	},
+        	{
+            	"nextPhraseID":"lodar_rest",
+            	"text":"Can I rest here?"
+        	}
+    	],
+    	"rewards":[
+	        {
+    	        "value":60,
+	            "rewardID":"lodar2",
+            	"rewardType":"questProgress"
+        	}
+    	]
+	},
     {
         "message":"I try to keep to myself. Not many people find their way to my cabin here.",
         "id":"lodar_forest0",
@@ -2041,7 +2065,7 @@
         "id":"lodar_andor37"
     },
     {
-        "message":"Hmm, I remember seeing a grotto under the former cave of the Hira'zinn. Don't know where it leads to but maybe you could give it a try and search for a shortcut through this grotto?",
+        "message":"Hmm, I remember seeing a cave under the former cave of the Hira'zinn. Don't know where it leads to but maybe you could give it a try and search for a shortcut through this cave?",
         "id":"lodar_shortcut_0",
         "replies":[
             {
@@ -2063,7 +2087,11 @@
         "replies":[
             {
                 "nextPhraseID":"X",
-                "text":"Thanks, maybe it'll work this way. And it doesn't matter if it's dangerous. I've experienced so many dangerous things so this small task won't be too difficult."
+                "text":"Thanks, I'll try it. Danger is my specialty."
+            },
+            {
+                "nextPhraseID":"X",
+                "text":"I hope it will be ok."
             }
         ],
         "rewards":[

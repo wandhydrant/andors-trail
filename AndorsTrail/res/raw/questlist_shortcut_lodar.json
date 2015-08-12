@@ -1,16 +1,16 @@
 [
     {
         "id":"shortcut_lodar",
-        "name":"Creating a shortcut!",
+        "name":"The way out is through",
         "showInLog":1,
         "stages":[
             {
                 "progress":10,
-                "logText":"I talked with Lodar about a possible shortcut to the outside world. He said I should check the grotto under the former cave of the Hira'zinn."
+                "logText":"I talked with Lodar about a possible shortcut to the outside world. He said I should check the cave under the former cave of the Hira'zinn."
             },
             {
                 "progress":20,
-                "logText":"I've found the grotto but the way is blocked by rocks and water. Why can't I swim?"
+                "logText":"I've found the cave but the way is blocked by rocks and water. Why can't I swim?"
             },
             {
                 "progress":22,
@@ -22,13 +22,17 @@
             },
             {
                 "progress":30,
-                "logText":"Upon telling Lodar about the purple fire he answered I should try pouring a green vial over it and see what happens."
+                "logText":"Upon telling Lodar about the purple fire he gave me a green vial, told me to pour it over the torch and see what happens."
             },
             {
                 "progress":40,
                 "finishesQuest":1,
-                "logText":"I poured the vial over the purple fire and then it turned green. When approching it I was teleported into another room of the grotto with more purple torches. I was able to activate them as well. Finally, I have got my shortcut and can travel to Lodar a lot faster!"
-            }
+                "logText":"I poured the vial over the purple fire and then it turned green. When approaching it I was teleported into another room of the cave with more purple torches. I was able to activate them as well. Finally, I have got my shortcut and can travel to Lodar a lot faster!"
+            },
+        	{
+	            "progress":50,
+        	    "logText":"I told Lodar about the new shortcut. He asked me to keep it a secret."
+        	}
         ]
     }
 ]
