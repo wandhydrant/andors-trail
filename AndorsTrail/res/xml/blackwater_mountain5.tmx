@@ -122,12 +122,12 @@
  </tileset>
  <layer name="Ground" width="15" height="15">
   <data encoding="base64" compression="zlib">
-   eJzTY2Jg0MOCHZAwNnk9HPKOQByEhHVx6IXJ20PNAOkLBuIUJGzPhN0dMPlAqBkgfSfYUHEgDncgq0nBog9ZDtkd6HqJxYFQu8nRC8KU6tUnU/9A6dUjI6xlsKQvGSRMrB5sGN0fuNIzJXoB8Ax1pQ==
+   eJzTY2Jg0MOCHZAwNnlc2BGIg5CwLgG19lA7QOxgIE5BwjA5dHfoQ9UGQu0AsU+woeJAHO5wRFKbgkUfshyyO/Rw2EMIB0LtJlUfDI80vbA4JkWPDJa0JYOEidWDDeuj6ceXnsnVCwAosXXZ
   </data>
  </layer>
  <layer name="Objects" width="15" height="15">
   <data encoding="base64" compression="zlib">
-   eJxjYKANmMbIwLCLF7+adkbs4pNwiKOD7UDzO6FqdZgYGEDMBF4IDQMZrAwM27C4QxuofiYjRB8ICDIg6GSoWAUrqh4vAQaGXAFUsTo0s29yQegyoDgHNwPDVix2+wpgisEAJzeCDXOHLBMkPGHgNQ+qObVIdsD0m7MgxNKA8m94cNv5CioHU/MaTS2MP5UZIRaFww+WLNjFNZH85S2AMLMUye3STAh2uAB2t3gj2QuSQ9aDC8gyoeolRg8ymMYL0XsfTxjiAst4Ud2MDQAAEuAd6g==
+   eJxjYKANmMbIwLCLlzy9kxiJU7cdaH4nVK0OEwMDiJnAC6FhIIOVgWEbmjtAarWBeCYjhA0CggwIOhkqVsGKaWcamll1aPybXBC6DCjOwc3AsJUXYScM+Arg9hMnN4KdjKRnGpKnXvMwMDTwIsypRXIDTL85C4T2AqrJBeI3PLjtfAWVg6l5jaYWxp/KjBCLwuEHS6i9skyo4ppI/vIWQJhZiuR2aSQ9MP3obvFGshckJ41mDzYAMwumlxg9yGAaL0TvfTxhiAss40V1MzYAAKxXHgM=
   </data>
  </layer>
  <layer name="Objects_replace" width="15" height="15">
@@ -137,7 +137,7 @@
  </layer>
  <layer name="Above" width="15" height="15">
   <data encoding="base64" compression="zlib">
-   eJxjYKA+CBcgT186UF8amXqx6bPlJs+s4QbSyQxTECA3LinVK8uEKebNy8Dgw0ueedFAfTFA3EaGflD4+QL1+ZGhFxQGsUB9cXj0AgDpkQf0
+   eJxjYKA+CBcgT186UF8akXrT0dRh02fLjV0vue7DZc8ooA/w5mVg8OElT280UF8MELeRoR+U1nyB+vzI0AtKa7FAfXF49AIAbOUH5A==
   </data>
  </layer>
  <layer name="Above_replace" width="15" height="15">
@@ -147,16 +147,16 @@
  </layer>
  <layer name="Walkable" width="15" height="15">
   <data encoding="base64" compression="zlib">
-   eJxzFWBgcB1BGAbQxZBpdHF0vfgAujpS9GIzi1z9uPxNqn50MVLsJddOUsN7qGMAZL8uKA==
+   eJxzFWBgcB3hGASQaXRxbOpxAXR5YvXhMguXPmLcQY6d+Mwnxjxq+JcU/QOddqiBAcZZLtI=
   </data>
  </layer>
- <layer name="Walkable_replace" width="15" height="15">
+ <layer name="Walkable_replace" width="15" height="15" visible="0">
   <data encoding="base64" compression="zlib">
    eJxjYBgFo2AUDCQAAAOEAAE=
   </data>
  </layer>
  <objectgroup name="Mapevents" width="0" height="0">
-  <object name="west" type="mapchange" x="0" y="128" width="32" height="96">
+  <object name="west" type="mapchange" x="0" y="224" width="32" height="96">
    <properties>
     <property name="map" value="blackwater_mountain5a"/>
     <property name="place" value="east"/>
