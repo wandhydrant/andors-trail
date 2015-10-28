@@ -202,7 +202,7 @@
    eJzt08ENwCAMA0CmYP8V2LBfVBUTO4a2Ekj5gQ+i0Gop7dTy6tdbrsPuM1C2071nRLMzdmR9zVXv85SvusrdkTlz0V6Uhd7LvpP5M6OzjBvdP3Kzc6nOwF9ch8m67FmXi+bF0Z+Vfc7Yak92uae4ugAmdqMN
   </data>
  </layer>
- <objectgroup name="Mapevents" width="0" height="0">
+ <objectgroup name="Mapevents">
   <object name="tp2" type="mapchange" x="832" y="288" width="32" height="32">
    <properties>
     <property name="map" value="shortcut_lodar0"/>
@@ -227,18 +227,8 @@
     <property name="place" value="east"/>
    </properties>
   </object>
-  <object name="shortcut_lodar:40" type="replace" x="832" y="288" width="32" height="32">
-   <properties>
-    <property name="Objects" value="Objects_replace"/>
-   </properties>
-  </object>
-  <object name="shortcut_lodar:40" type="replace" x="64" y="160" width="32" height="32">
-   <properties>
-    <property name="Objects" value="Objects_replace"/>
-   </properties>
-  </object>
  </objectgroup>
- <objectgroup name="Spawn" width="0" height="0">
+ <objectgroup name="Spawn">
   <object name="cavebat2" type="spawn" x="64" y="320" width="160" height="224">
    <properties>
     <property name="quantity" value="3"/>
@@ -275,9 +265,19 @@
    </properties>
   </object>
  </objectgroup>
- <objectgroup name="Keys" width="0" height="0"/>
- <objectgroup name="Replace" width="0" height="0">
+ <objectgroup name="Keys"/>
+ <objectgroup name="Replace">
   <object name="shortcut_lodar:40" type="replace" x="96" y="576" width="32" height="32">
+   <properties>
+    <property name="Objects" value="Objects_replace"/>
+   </properties>
+  </object>
+  <object name="shortcut_lodar:40" type="replace" x="832" y="288" width="32" height="32">
+   <properties>
+    <property name="Objects" value="Objects_replace"/>
+   </properties>
+  </object>
+  <object name="shortcut_lodar:40" type="replace" x="64" y="160" width="32" height="32">
    <properties>
     <property name="Objects" value="Objects_replace"/>
    </properties>

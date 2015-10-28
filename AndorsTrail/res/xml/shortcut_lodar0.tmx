@@ -187,9 +187,9 @@
    eJzNVM1KAlEUvs2mv0U6wpQW9AbRqjewN6g2rXqBiNoHQY8QPoFGbfMFcoSCVkFQ1ELdiBpEbUR3nY97DnMa72hmRB9cZpw5c76fe67GWFxkjLnMmD/HnW/MHPH2/fG+2/Um586N6XfhFzjDwJgr8lqmlR3SrxLYa4lqymmrtTghf0icVX90nxK/fyJe/xdmAn6Fe5Z67yfw98jzSzD47Ke+hfOOPR+rPqt076nf3cByyYKO52CwJ5D7hp7TWI14WKTrihdlXKJ8z1XG0NGndcPcWVW7NsYZ+XDUbhHPNq02vztTGgt0v5GxvEXmPEkZU/dsDvF9iaOmemFuNMCDPJrUo+Xos5mJ/B76lq/HOXQd9Tgb08yHfu3AahdfUypP5IfeYXqwD6D3HXwd/6vOmRg/zi+yWae628BqF6TVfY154QUa5mntqb1s4D8gFdWD85W5kP9SQt475KPDnmX/Cnyte5GnPu/jMnM2+RugSrz3nBU05kn3A2t5d+R04JgXgZ7zRmzmkKVoeUjwKrPi6j3sOdAKogVv6JVXc4B7mXnNKag6vCKr64RZAWTOj5ijozRoyJ4g3zf2jtyTztLjEE4gVN9UuDZ+zlwQHR2Hf+k7LGPpIWdS1l8C/KM0/ld8ArYpj0I=
   </data>
  </layer>
- <layer name="Objects_replace" width="30" height="20">
+ <layer name="Objects_replace" width="30" height="20" visible="0">
   <data encoding="base64" compression="zlib">
-   eJxjYBgFQwFcFBoYey8NgL0wvw6Un4cTeCbGwPAaiE+I0dfeb0D7fgDxTzrbO9yBu+BAu2AUjIJRQCwAACdlCeo=
+   eJxjYBgFxAJ+poGxd4sgA8NFIQaGpXS2/wbQ3ktC9LUTBC4KodKjgHzwTIyB4TUQnxCjr73fgPb9AOKfdLZ3uAN3wYF2wSgYBaOAWAAASr0MUA==
   </data>
  </layer>
  <layer name="Above" width="30" height="20">
@@ -197,17 +197,22 @@
    eJxjYICAw2IMAwLIsZcabiXVjMtA9ZeAmEuYMnunMxGvDmYnCDBRaC8IgMzbLMTAsEUIvzpY2MD8CqMvkxnuIPMI2Ylsr5Qwgn7AhAgDUgGhsNaDuglk/jSgXdMJhDHM/+SGAylgKZLbYf4nJs2C3EZt94HsX0ogLA+LkR9PpLoXljdgbiNkNjbzLxPpXkk0f+NLU6HiEJqTCTM82JmIcy8+QCicJInMKzB3EguoUd6Saieh+KEknW8RwC1HyK+40vlUIst1cu0ltt7AB7C5kRxzKfXrSAIAjZo3KA==
   </data>
  </layer>
+ <layer name="Above_replace" width="30" height="20" visible="0">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFxIJLYgPtglEwCkbBKBgFo2AUDAUAAHjTAOk=
+  </data>
+ </layer>
  <layer name="Walkable" width="30" height="20">
   <data encoding="base64" compression="zlib">
    eJzbKMbAsHEUD2oMAgNhJ73tRbZzoOxGB8Mp3An5C5ccqe4hx3x8gJR4IzVMqWEvOXGJLo5uHjHhRIq9uPSh24nPXlLjnZCdhPxCyE58gJh0RU17CYUJupsoCWNi7CXHbErT+yjGxACyMHhM
   </data>
  </layer>
- <layer name="Walkable_replace" width="30" height="20">
+ <layer name="Walkable_replace" width="30" height="20" visible="0">
   <data encoding="base64" compression="zlib">
    eJztwTEBAAAAwqD1T20JT6AAAHgaCWAAAQ==
   </data>
  </layer>
- <objectgroup name="Mapevents" width="0" height="0">
+ <objectgroup name="Mapevents">
   <object name="up" type="mapchange" x="896" y="352" width="32" height="32">
    <properties>
     <property name="map" value="lodarcave4a"/>
@@ -227,7 +232,7 @@
   </object>
   <object name="sign_lodar_shortcut_2" type="sign" x="352" y="256" width="32" height="32"/>
  </objectgroup>
- <objectgroup name="Spawn" width="0" height="0">
+ <objectgroup name="Spawn">
   <object name="mudfiend" type="spawn" x="64" y="480" width="64" height="64"/>
   <object name="hirathil2" type="spawn" x="672" y="256" width="224" height="288"/>
   <object name="hirathil1" type="spawn" x="672" y="256" width="224" height="288">
@@ -249,7 +254,7 @@
   </object>
   <object name="cavebat2" type="spawn" x="544" y="320" width="256" height="192"/>
  </objectgroup>
- <objectgroup name="Keys" width="0" height="0">
+ <objectgroup name="Keys">
   <object name="lodar2:50" type="key" x="576" y="192" width="64" height="64">
    <properties>
     <property name="phrase" value="sign_lodar_shortcut_1"/>
@@ -267,10 +272,10 @@
    </properties>
   </object>
  </objectgroup>
- <objectgroup name="Replace" width="30" height="20">
+ <objectgroup name="Replace">
   <object name="lodar2:50" type="replace" x="480" y="64" width="96" height="128">
    <properties>
-    <property name="Above" value="Objects_replace"/>
+    <property name="Above" value="Above_replace"/>
     <property name="Objects" value="Objects_replace"/>
    </properties>
   </object>

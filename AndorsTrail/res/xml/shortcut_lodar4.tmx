@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE map SYSTEM "http://mapeditor.org/dtd/1.0/map.dtd">
 <map version="1.0" orientation="orthogonal" width="20" height="24" tilewidth="32" tileheight="32">
  <tileset firstgid="1" name="map_bed_1" tilewidth="32" tileheight="32">
   <image source="../drawable/map_bed_1.png" width="512" height="256"/>
@@ -191,14 +190,19 @@
    eJzFlDtLA0EQgNcDi1jl7nBDrvAnWFpqpaXGQiwV0yuYwkehkCg++hD9AQb0Z+SKpJVAFC1MGjGxsgmmc4adZec2uTxQcGDYZXf225nZ2RHif6TgqPHc+RtekXHmPSHWJuTuMvuyNb8D3RqDlwWbaanmJ4453/L6bW99xR0mOdiflYrx5ApRg/k7aFsamw6wl4F1D/rgx7OQEQKj4Zo15HVBe4wXwnwFODcjfHt2+9dqsn+Nyw5ws6CZGHbgR0fN+/JMrt7Y2X3K4TZoGnSP5VyLR6wXFmeJ9ps0Yk7xfB5sC6BnxD2l/ZDFFTCelgTYFVNKMW+fUrH5Oz1CDFPsfdCHb2kUfcM7mxSLPqNt8f071tu71nuv+9H6yCSFWEyaOJGn2TnP5Bj/TmnAm4SsPjAuZB3BHce+8a1qxchroD6iHlCugHWN+U4prdJdrzBWBtRYnPD/vwp+HgDz0Df+dSnPKJiD8pD6rlj/YQl4F8C6tP5Fi+oSWcUYXtvKge57H1IpSpnVIV+3Be10DfDeETiGi5KgOsA6xH+q+8+c5WPeU7WrmU0nyp2heZryqHvHJvUiu0eE9I8atI/3bsDZBfInYHlHHtZLXN5swRrsURzYn+y+VZXjswYJ1n+C/tNvOJPKDzBshfs=
   </data>
  </layer>
- <layer name="Objects_replace" width="20" height="24">
+ <layer name="Objects_replace" width="20" height="24" visible="0">
   <data encoding="base64" compression="zlib">
-   eJxjYBgFo4C2wEyYOHUXhRgYLglBaHzAjUjzQOASAbNIBYTcNgpGwXAH7oID7QIEeAjMjy+HcJ4EACG9B1o=
+   eJxjYBgFo4C2wEyYOHUXhVBpXMCNSPNA4BIBs0gFhNw2CkbBcAfuggPtAgR4CMyPL4dwngQAu8QGdg==
   </data>
  </layer>
  <layer name="Above" width="20" height="24">
   <data encoding="base64" compression="zlib">
    eJxjYBj64LIYdjYp4DCSvkti2MWJMSOYCdMMEFgOFF/JhGreLGHcZoH8gW4GIfMIuQ0duGCxv5WJePO4oPphdAgW80D+gMUJjE4RxlQD8ysTnjCB2QtTC2IXA9WXQPWwMyHEYYALybxmLH4jJq6nExEm2NIdvvgDAUc8fgW5Zak4YXsJuSETaEeWMMQtU8Xxq0UH2Pw9DWhGmTjCrKVoYT4VSc9UbPqZEOaC6BagOa1QszKQwgM9LnC5dxfQjN1MuNU1Y0kTIIArbu4B1S9DMg9XfiAUtzC3eMlCMDpoxeNmXABb+sSml5IyAZu/sIktxRIu+PIJNvWkAGLy4FAEAKW7Qjc=
+  </data>
+ </layer>
+ <layer name="Above_replace" width="20" height="24" visible="0">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFo2AUjIJRMApGAb0BAAeAAAE=
   </data>
  </layer>
  <layer name="Walkable" width="20" height="24">
@@ -232,7 +236,7 @@
    </properties>
   </object>
  </objectgroup>
- <objectgroup name="Spawn" visible="0">
+ <objectgroup name="Spawn"visible="0">
   <object name="mudfiend" type="spawn" x="128" y="384" width="64" height="192">
    <properties>
     <property name="quantity" value="2"/>
@@ -264,7 +268,7 @@
  <objectgroup name="Replace">
   <object name="lodar2:50" type="replace" x="96" y="224" width="96" height="128">
    <properties>
-    <property name="Above" value="Objects_replace"/>
+    <property name="Above" value="Above_replace"/>
     <property name="Objects" value="Objects_replace"/>
    </properties>
   </object>
