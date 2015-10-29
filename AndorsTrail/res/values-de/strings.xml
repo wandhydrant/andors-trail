@@ -147,12 +147,12 @@
 	<string name="levelup_buttontext">Aufsteigen</string>
 	<string name="levelup_add_health">Lebenspunkte erhöhen (+%1$d LP)</string>
 	<string name="levelup_add_health_description">Fügt den maximalen Lebenspunkten %1$d Punkte hinzu.</string>
-	<string name="levelup_add_attackchance">Angriffschance erhöhen (+%1$d %%)</string>
-	<string name="levelup_add_attackchance_description">Fügt %1$d%% zur Basis-Angriffschance hinzu.</string>
+	<string name="levelup_add_attackchance">Angriffschance erhöhen (+%1$d)</string>
+	<string name="levelup_add_attackchance_description">Fügt %1$d zur Basis-Angriffschance hinzu.</string>
 	<string name="levelup_add_attackdamage">Angriffsschaden erhöhen (+%1$d)</string>
 	<string name="levelup_add_attackdamage_description">Fügt %1$d zum Basis-Angriffsschaden hinzu.</string>
-	<string name="levelup_add_blockchance">Abwehrchance erhöhen (+%1$d %%)</string>
-	<string name="levelup_add_blockchance_description">Fügt %1$d%% zur Basis-Abwehrchance hinzu.</string>
+	<string name="levelup_add_blockchance">Abwehrchance erhöhen (+%1$d)</string>
+	<string name="levelup_add_blockchance_description">Fügt %1$d zur Basis-Abwehrchance hinzu.</string>
 
 	<string name="dialog_rest_title">Schlafen</string>
 	<string name="dialog_rest_confirm_message">Willst du dich hier ausruhen?</string>
@@ -352,7 +352,7 @@
 	<string name="skill_longdescription_barter">Verringert bei jeder Stufe den Auf- und Abschlag von An- und Verkäufen um %1$d Prozentpunkte.</string>
 	<string name="skill_longdescription_dodge">Erhöht die Abwehrchance bei jeder Stufe um %1$d.</string>
 	<string name="skill_longdescription_barkskin">Erhöht die Schadensresistenz bei jeder Stufe um %1$d.</string>
-	<string name="skill_longdescription_more_criticals">Erhöht bei jeder Stufe die durch die Ausrüstung bestehende kritische Fähigkeit um %1$d %% (prozentualer Anteil an der bestehenden kritischen Fähigkeit, es handelt sich nicht um zusätzliche Prozentpunkte).</string>
+	<string name="skill_longdescription_more_criticals">Erhöht bei jeder Stufe die durch die Ausrüstung bestehende kritische Fähigkeit um %1$d %%.</string>
 	<string name="skill_longdescription_better_criticals">Erhöht bei jeder Stufe den durch die Ausrüstung bestehenden kritischen Faktor um %1$d %%.</string>
 	<string name="skill_longdescription_speed">Erhöht die maximalen Aktionspunkte (AP) bei jeder Stufe um %1$d.</string>
 	<string name="skill_longdescription_coinfinder">Erhöht bei jeder Stufe die Chance bei einem Gegner Goldmünzen zu finden um %1$d %%. Auch die Menge der gefundenen Goldmünzen erhöht sich jeweils um %2$d %% (bis zu der für den Gegnertyp maximalen Menge).</string>
@@ -447,9 +447,9 @@
 	<string name="iteminfo_effect_weapon_attack_cost">Angriffskosten: %1$d AP</string>
 	<string name="iteminfo_effect_increase_attack_cost">Erhöht die Angriffskosten um %1$d AP</string>
 	<string name="iteminfo_effect_decrease_attack_cost">Verringert die Angriffskosten um %1$d AP</string>
-	<string name="iteminfo_effect_weapon_attack_chance">Angriffschance: %1$d %%</string>
-	<string name="iteminfo_effect_increase_attack_chance">Erhöht die Angriffschance um %1$d %%</string>
-	<string name="iteminfo_effect_decrease_attack_chance">Reduziert die Angriffschance um %1$d %%</string>
+	<string name="iteminfo_effect_weapon_attack_chance">Angriffschance: %1$d</string>
+	<string name="iteminfo_effect_increase_attack_chance">Erhöht die Angriffschance um %1$d</string>
+	<string name="iteminfo_effect_decrease_attack_chance">Reduziert die Angriffschance um %1$d</string>
 	<string name="iteminfo_effect_weapon_attack_damage">Schaden: %1$d</string>
 	<string name="iteminfo_effect_weapon_attack_damage_minmax">Schaden: %1$d-%2$d</string>
 	<string name="iteminfo_effect_increase_attack_damage">Erhöht den Schaden um %1$d</string>
@@ -459,8 +459,8 @@
 	<string name="iteminfo_effect_increase_critical_skill">Erhöht die kritische Fähigkeit um %1$d</string>
 	<string name="iteminfo_effect_decrease_critical_skill">Reduziert die kritische Fähigkeit um %1$d</string>
 	<string name="iteminfo_effect_critical_multiplier">Ermöglicht kritische Treffer mit einem Multiplikator von x%1$.1f</string>
-	<string name="iteminfo_effect_increase_block_chance">Erhöht die Abwehrchance um %1$d %%</string>
-	<string name="iteminfo_effect_decrease_block_chance">Reduziert die Abwehrchance um %1$d %%</string>
+	<string name="iteminfo_effect_increase_block_chance">Erhöht die Abwehrchance um %1$d</string>
+	<string name="iteminfo_effect_decrease_block_chance">Reduziert die Abwehrchance um %1$d</string>
 	<string name="iteminfo_effect_increase_damage_resistance">Erhöht die Schadensresistenz um %1$d</string>
 	<string name="iteminfo_effect_decrease_damage_resistance">Reduziert die Schadensresistenz um %1$d</string>
 	<string name="iteminfo_effect_increase_use_cost">Erhöht die AP Kosten Gegenstände im Kampf zu verwenden um %1$d AP</string>
