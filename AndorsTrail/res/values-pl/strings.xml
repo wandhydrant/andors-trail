@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-
+<?xml version='1.0' encoding='utf-8'?>
 <resources>
 	<string name="app_name">Andor\'s Trail</string>
 	<string name="app_description">Quest-driven fantasy RPG</string>
@@ -7,18 +6,18 @@
 	<string name="exit_to_menu">Wyjście do menu</string>
 	<string name="menu_settings">Ustawienia gry</string>
 	<string name="menu_save">Zapisz</string>
-	<string name="menu_save_gamesaved">Gra została zapisana do slotu % %1$d</string>
-	<string name="menu_save_failed">Zapis niemożliwy! Czy karta SD jest zamontowana i zapisywalna?</string>
+	<string name="menu_save_gamesaved">Gra została zapisana do slotu %1$d</string>
+	<string name="menu_save_failed">Zapis niemożliwy! Czy karta SD jest zamontowana i istnieje na niej możliwość zapisu?</string>
 
 	<string name="loadsave_title_save">Zapisz grę</string>
 	<string name="loadsave_title_load">Wczytaj grę</string>
 	<string name="loadsave_selectslot">Wybierz slot</string>
 	<string name="savegame_currenthero_displayinfo">Poziom: %1$d, Punkty doświadczenia: %2$d, Złoto: %3$d</string>
 
-	<string name="dialog_loading_message">Wczytywanie gry...</string>
-	<string name="dialog_loading_failed_title">Wczytywanie gry nieudane</string>
-	<string name="dialog_loading_failed_message">Andor\'s Trail nie był w stanie wczytać zapisu gry.\n\n:(\n\nPlik może byc uszkodzony lub niekompletny.</string>
-	<string name="dialog_loading_failed_incorrectversion">Andor\'s Trail nie był w stanie wczytać zapisu gry.Zapis gry został stworzony w późniejszej wersji gry niż obecnie uruchomiona.</string>
+	<string name="dialog_loading_message">Wczytywanie gry…</string>
+	<string name="dialog_loading_failed_title">Wczytanie gry nieudane</string>
+	<string name="dialog_loading_failed_message">Andor\'s Trail nie był w stanie wczytać zapisu gry.\n\n:(\n\nPlik może być uszkodzony lub niekompletny.</string>
+	<string name="dialog_loading_failed_incorrectversion">Andor\'s Trail nie był w stanie wczytać pliku z zapisem gry. Został on utworzony w późniejszej wersji gry, niż obecnie uruchomiona.</string>
 
 	<string name="dialog_close">Zamknij</string>
 
@@ -48,7 +47,7 @@
 	<string name="combat_endturn">Koniec tury</string>
 	<!-- <string name="combat_endcombat">End combat</string>-->
 	<string name="combat_flee">Ucieczka</string>
-	<string name="combat_begin_flee">Możesz teraz uciec z pola walki klikając odpowiedni kierunek.</string>
+	<string name="combat_begin_flee">Możesz teraz przetrwać walkę, klikając po stronie, w którą chcesz uciec.</string>
 	<string name="combat_flee_failed">Ucieczka nieudana!</string>
 	<string name="combat_status_ap">PA: %1$d</string>
 	<string name="combat_monsterhealth">PŻ:</string>
@@ -60,13 +59,13 @@
 	<string name="combat_result_heromiss">Twój cios chybił.</string>
 	<string name="combat_result_herohit">Trafiasz- %1$s traci %2$d PŻ!</string>
 	<string name="combat_result_herohitcritical">Zadajesz cios krytyczny- %1$s traci %2$d PŻ!</string>
-	<string name="combat_result_herokillsmonster">%1$s umiera!</string>
-	<string name="combat_not_enough_ap">Zbyt mało PA zostało w tej rundzie.</string>
-	<string name="combat_hero_dies">Upadasz nieprzytomny, ale na szczęście budzisz się żywy, chociaż jesteś oszołomiony i zmęczony. Tracisz %1$d punktów doświadczenia.</string>
+	<string name="combat_result_herokillsmonster">%1$s ginie!</string>
+	<string name="combat_not_enough_ap">Pozostało zbyt mało PA do podjęcia akcji.</string>
+	<string name="combat_hero_dies">Upadasz nieprzytomny, ale na szczęście budzisz się żywy, oszołomiony i zmęczony. Tracisz %1$d punktów doświadczenia.</string>
 
-	<string name="inventory_info">Info</string>
-	<string name="inventory_equip">Użyj jako ekwipunku</string>
-	<string name="inventory_unequip">Zrezygnuj z ekwipunku</string>
+	<string name="inventory_info">Informacje</string>
+	<string name="inventory_equip">Wyekwipuj</string>
+	<string name="inventory_unequip">Zrezygnuj</string>
 	<string name="inventory_use">Użyj</string>
 	<string name="inventory_drop">Porzuć</string>
 	<string name="inventory_item_used">Użyłeś %1$s.</string>
@@ -81,7 +80,7 @@
 	<string name="dialog_groundloot_message">Znalazłeś kilka przedmiotów. </string>
 	<string name="dialog_monsterloot_title">Zwycięstwo</string>
 	<string name="dialog_monsterloot_message">Przeżyłeś potyczkę. </string>
-	<string name="dialog_monsterloot_gainedexp">Zdobyłeś %1$d punktów doświadczenia. </string>
+	<string name="dialog_monsterloot_gainedexp">"Zdobyłeś %1$d punkty/ów doświadczenia. "</string>
 
 	<string name="monster_difficulty_veryeasy">Bardzo łatwy</string>
 	<string name="monster_difficulty_easy">Łatwy</string>
@@ -112,14 +111,14 @@
 	<string name="iteminfo_category">Kategoria: </string>
 	<string name="iteminfo_action_use">Użyj</string>
 	<string name="iteminfo_action_equip">Użyj jako ekwipunku</string>
-	<string name="iteminfo_action_unequip">Zrezygnuj z ekwipunku</string>
+	<string name="iteminfo_action_unequip">Zrezygnuj</string>
 	<string name="iteminfo_action_use_ap">Użyj (%1$d PA)</string>
-	<string name="iteminfo_action_equip_ap">Użyj jako ekwipunku (%1$d PA)</string>
-	<string name="iteminfo_action_unequip_ap">Zrezygnuj z ekwipunku (%1$d PA)</string>
+	<string name="iteminfo_action_equip_ap">Wyekwipuj (%1$d PA)</string>
+	<string name="iteminfo_action_unequip_ap">Zrezygnuj (%1$d PA)</string>
 
 	<string name="startscreen_continue">Kontynuuj bieżącą grę</string>
 	<string name="startscreen_newgame">Nowa gra</string>
-	<string name="startscreen_newgame_confirm">Utracisz swoją bieżącą grę i postać, czy na pewno chcesz rozpocząć nową grę?</string>
+	<string name="startscreen_newgame_confirm">Utracisz swoją bieżącą grę i postać, czy na pewno chcesz rozpocząć przygodę od nowa?</string>
 	<string name="startscreen_about">O grze/pomoc</string>
 	<string name="startscreen_enterheroname">Wpisz imię bohatera</string>
 	<string name="startscreen_load">Wczytaj</string>
@@ -151,7 +150,7 @@
 	<string name="levelup_add_attackchance_description">Dodaje %1$d do bazowej szansy trafienia.</string>
 	<string name="levelup_add_attackdamage">Zwiększ zadawane obrażenia (+%1$d)</string>
 	<string name="levelup_add_attackdamage_description">Dodaje %1$d do bazowej wartości zadawanych obrażeń.</string>
-	<string name="levelup_add_blockchance">Zwieksz szansę bloku (+%1$d)</string>
+	<string name="levelup_add_blockchance">Zwiększ szansę bloku (+%1$d)</string>
 	<string name="levelup_add_blockchance_description">Dodaje %1$d do bazowej szansy bloku.</string>
 
 	<string name="dialog_rest_title">Odpoczynek</string>
@@ -161,17 +160,7 @@
 	<string name="about_button1">Pomoc</string>
 	<string name="about_button2">Autorzy</string>
 	<string name="about_button3">Licencja</string>
-	<string name="about_contents1">
-		Witaj w Andor\`s Trail – otwartej grze roguelike RPG na Androida.&lt;br /&gt;
-		&lt;br /&gt;
-		&lt;a href="http://andorstrail.com/"&gt;Forum gry na andorstrail.com – pytania i dyskusje o grze .&lt;/a&gt;&lt;br /&gt;
-		&lt;br /&gt;
-		&lt;a href="http://andorstrail.com/wiki"&gt;Strona wiki z  informacjami o Andor\`s Trail.&lt;/a&gt;&lt;br /&gt;
-		&lt;br /&gt;
-		&lt;a href="http://code.google.com/p/andors-trail/"&gt;Strona gry na code.google.com z materiałami dla developerów.&lt;/a&gt;&lt;br /&gt;
-		&lt;br /&gt;
-		Zachęcamy do odwiedzenia forum gry i dyskusji z innymi graczami.&lt;br /&gt;
-	</string>
+	<string name="about_contents1">" Witaj w Andors Trail – otwartej grze roguelike RPG na Androida.&lt;br /&gt; &lt;br /&gt; &lt;a href=http://andorstrail.com/&gt;Forum gry na andorstrail.com – pytania i dyskusje o grze .&lt;/a&gt;&lt;br /&gt; &lt;br /&gt; &lt;a href=http://andorstrail.com/wiki&gt;Strona wiki z informacjami o Andors Trail.&lt;/a&gt;&lt;br /&gt; &lt;br /&gt; &lt;a href=https://github.com/Zukero/andors-trail/&gt;Strona gry na code.google.com z materiałami dla developerów.&lt;/a&gt;&lt;br /&gt; &lt;br /&gt; Zachęcamy do odwiedzenia forum gry i dyskusji z innymi graczami.&lt;br /&gt; "</string>
 
 	<!--
 		This is the GNU GPL v2 text, originally from
@@ -189,7 +178,7 @@
 		W celu pobrania kodu źródłowego i opisu gry odwiedź stronę projektu: &lt;a href="http://code.google.com/p/andors-trail/"&gt;http://code.google.com/p/andors-trail/&lt;/a&gt;&lt;br /&gt;
 	</string>
 
-	<string name="dialog_newversion_title">Welcome</string>
+	<string name="dialog_newversion_title">Witaj</string>
 	<string name="dialog_newversion_message">
 		Dziękujemy za instalację Andor\`s Trail!\n\n
 		Zwracamy uwagę, iż prace nad Andor\`s Trail ciagle trwają, co oznacza, że nie wszystkie mapy są jeszcze gotowe.\n
@@ -329,9 +318,9 @@
 	<string name="skill_shortdescription_weapon_chance">Zwiększa szansę trafienia.</string>
 	<string name="skill_shortdescription_weapon_dmg">Zwiększa zadawane obrażenia.</string>
 	<string name="skill_shortdescription_barter">Lepsze ceny w sklepach.</string>
-	<string name="skill_shortdescription_dodge">Zwieksza szansę bloku.</string>
-	<string name="skill_shortdescription_barkskin">Odpornośc na obrażenia.</string>
-	<string name="skill_shortdescription_more_criticals">Zwiększa umiejętnośc ciosów krytycznych.</string>
+	<string name="skill_shortdescription_dodge">Zwiększa szansę bloku.</string>
+	<string name="skill_shortdescription_barkskin">Odporność na obrażenia.</string>
+	<string name="skill_shortdescription_more_criticals">Zwiększa umiejętność ciosów krytycznych.</string>
 	<string name="skill_shortdescription_better_criticals">Zwiększa obrażenia zadawane przez ciosy krytyczne.</string>
 	<string name="skill_shortdescription_speed">Zwiększa liczbę Punktów Akcji (PA)</string>
 	<string name="skill_shortdescription_coinfinder">Zwiększa szansę na znalezienie złota.</string>
@@ -483,7 +472,7 @@
 	<string name="heroinfo_useitem_cost">Koszt użycia przedmiotu (PA):</string>
 	<string name="combat_result_monstermoved">%1$s przemieścił się.</string>
 	<string name="combat_log_title">Dziennik walki</string>
-	<string name="localize_resources_from_mo_filename"></string>
+	<string name="localize_resources_from_mo_filename">" "</string>
 	<string name="conversation_reward_quest_finished">[Zadanie ukończone: \"%1$s\"]</string>
 	<string name="conversation_reward_quest_updated">[Zaktualizowano zadanie: \"%1$s\"]</string>
 
@@ -547,7 +536,7 @@ Każdy poziom umiejętności podnosi obrażenia zadawane każdą broń dwuręczn
 Każdy poziom umiejętności podnosi szansę trafienia broni o %1$d %% (licząc z wartości bazowej szansy trafienia danej broni). Ponadto szansa bloku używanej tarczy rośnie o %2$d %% (licząc z wartości bazowej szansy bloku danej tarczy)."</string>
 	<string name="skill_longdescription_specialization_dualwield">Oprócz korzyści dawanych przez umiejętność Styl walki: dwie bronie podnosi dodatkowo szansę trafienia obydwu używanych broni o %1$d %% (w stosunku do bazowej szansy trafienia używanych broni). Ponadto szansa bloku obydwu używanych broni wzrasta o %2$d %% (licząc z wartości bazowej szansy bloku danych broni).</string>
 	<string name="skill_longdescription_specialization_2hand">Oprócz korzyści dawanych przez umiejętność Styl walki: Broń dwuręczna podnosi dodatkowo obrażenia zadawane przez bronie dwuręczne  o %1$d %% (w stosunku do bazowej wartości zadawanych obrażeń używanej broni). Ponadto szansa trafienia używanej broni dwuręcznej wzrasta o %2$d %% (licząc z wartości bazowej szansy trafienia danej broni).</string>
-	<string name="skill_longdescription_specialization_weapon_shield">Oprócz korzyści dawanych przez umiejętność Styl walki: Broń i tarcza podnosi dodatkowo szanse trafienia oraz zadawane obrażenia używanej broni. Szansa trafienia (w stosunku do bazowej wartości szansy trafienia używanej broni) wzrasta o %1$d %% a zadawane obrażenia (w stosunku do bazowej wartości zadawanych obrażeń używanej broni) wzrastają o %2$d %%</string> 
+	<string name="skill_longdescription_specialization_weapon_shield">Oprócz korzyści dawanych przez umiejętność Styl walki: Broń i tarcza podnosi dodatkowo szanse trafienia oraz zadawane obrażenia używanej broni. Szansa trafienia (w stosunku do bazowej wartości szansy trafienia używanej broni) wzrasta o %1$d %% a zadawane obrażenia (w stosunku do bazowej wartości zadawanych obrażeń używanej broni) wzrastają o %2$d %%.</string> 
 	<string name="preferences_quickslots_placement">Umiejscowienie szybkich slotów </string>
 	<string name="preferences_quickslots_placement_summary">Wybierz gdzie mają znajdowaś się sloty ekwipunku</string>
 	<string name="preferences_quickslots_placements_horizontal_center_bottom">Środek dolnej krawędzi ekranu</string>
@@ -581,4 +570,6 @@ Każdy poziom umiejętności podnosi szansę trafienia broni o %1$d %% (licząc 
 	<string name="preferences_ui_use_localized_resources">Użyj tłumaczenia gry jesli jest dostępna (wymaga restartu gry))</string>
 	<string name="change_locale_requires_restart">Zmiany ustawień lokalnych wymagały restartu gry. Andor`s Trail został zamknięty.</string>
 
-</resources>
+<string name="combat_miss_animation_message">PUDŁO</string>
+	
+	</resources>
