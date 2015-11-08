@@ -1,2 +1,275 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<?xml version='1.0' encoding='utf-8'?>
+<resources><string name="app_name">Sendero de Andor</string>
+	<string name="app_description">Basada en la búsqueda de Fantasía RPG</string>
+
+	<string name="exit_to_menu">Salir al menú</string>
+	<string name="menu_settings">Preferencias</string>
+	<string name="menu_save">Salvar</string>
+	<string name="menu_save_gamesaved">El juego estuvo salvado a ranura %1$d</string>
+	<string name="menu_save_failed">Error al guardar partida. ¿Es la SD montada y escribir?</string>
+
+	<string name="loadsave_title_save">Salvar juego</string>
+	<string name="loadsave_title_load">Cargar juego salvado</string>
+	<string name="loadsave_selectslot">Seleccionar ranura</string>
+	<string name="savegame_currenthero_displayinfo">nivel %1$d, %2$d exp, %3$d oro</string>
+
+	<string name="dialog_loading_message">Cargando recursos…</string>
+	<string name="dialog_loading_failed_title">Error de carga</string>
+	<string name="dialog_loading_failed_message">Camino de Andor no pudo cargar el archivo de salvar juego.\n\n:(\n\nEl archivo puede estar dañado o incompleto.</string>
+	<string name="dialog_loading_failed_incorrectversion">Sendero de Andor no pudo cargar el archivo savegame. Este savegame archivo es creado con una versión más reciente de lo que se está ejecutando actualmente.</string>
+
+	<string name="dialog_close">Cerrar</string>
+
+	<string name="dialog_monsterencounter_title">Encuentro</string>
+	<string name="dialog_monsterencounter_message">¿Quieres atacar?
+\nDificultad %1$s</string>
+	<string name="dialog_monsterencounter_info">Información</string>
+
+	<string name="status_hp">HP:</string>
+	<string name="status_ap">AP:</string>
+	<string name="status_exp">Nivel:</string>
+
+	<string name="heroinfo_char">Resumen</string>
+	<string name="heroinfo_inv">Artículos</string>
+	<string name="heroinfo_skill">Habilidades</string>
+	<string name="heroinfo_levelup">Nivelar arriba</string>
+	<string name="heroinfo_level">Nivel</string>
+	<string name="heroinfo_totalexperience">Experiencia total</string>
+	<string name="heroinfo_wornequipment">Equipamiento gastado</string>
+	<string name="heroinfo_inventory">Inventario</string>
+	<string name="heroinfo_gold">Oro: %1$d</string>
+	<string name="heroinfo_actionpoints">Puntos de acción (AP):</string>
+	<string name="heroinfo_quests">Búsquedas</string>
+
+	<string name="combat_attack">Ataque (%1$d AP)</string>
+	<string name="combat_move">Movimiento (%1$d AP)</string>
+	<string name="combat_use">Artículo de uso</string>
+	<string name="combat_endturn">Vuelta de fin</string>
+	<string name="combat_flee">Huir</string>
+	<string name="combat_begin_flee">"Te Ahora puede huir combate por *clicking en la dirección  quieres movimiento."</string>
+	<string name="combat_flee_failed">Te Fallado para huir!</string>
+	<string name="combat_status_ap">AP: %1$d</string>
+	<string name="combat_monsterhealth">HP:</string>
+	<string name="combat_monsteraction">%1$s está atacando.</string>
+	<string name="combat_result_monstermiss">%1$s pierde!</string>
+	<string name="combat_result_monsterhit">%1$s golpes tú para %2$d hp!</string>
+	<string name="combat_result_monsterhitcritical">%1$s consigue un golpe crítico para %2$d hp!</string>
+	<string name="combat_result_heromiss">Vuestro ataque pierde.</string>
+	<string name="combat_result_herohit">Pegaste %1$s para %2$d hp!</string>
+	<string name="combat_result_herohitcritical">Consigues un golpe crítico encima %1$s for %2$d hp!</string>
+	<string name="combat_result_herokillsmonster">%1$s muere!</string>
+	<string name="combat_not_enough_ap">No bastante *AP dejó esta ronda.</string>
+	<string name="combat_hero_dies">"Caes *unconscious, pero afortunadamente despertar vivo, *dazed y *fatigued.  Perdiste %1$d experiencia."</string>
+	<string name="combat_miss_animation_message">PERDER</string>
+	
+	<string name="inventory_info">Información</string>
+	<string name="inventory_equip">Equipar</string>
+	<string name="inventory_unequip">Desequipamiento</string>
+	<string name="inventory_use">Uso</string>
+	<string name="inventory_drop">Gota</string>
+	<string name="inventory_item_used">Se utiliza %1$s.</string>
+	<string name="inventory_item_dropped">%1$s estuvo caído.</string>
+	<string name="inventory_item_equipped">Usted dispone de %1$s.</string>
+
+	<string name="dialog_loot_pickall">Coger todo</string>
+	<string name="dialog_loot_foundgold">"Encontraste %1$d oro. "</string>
+	<string name="dialog_loot_pickedupitem">"Cogiste un elemento. "</string>
+	<string name="dialog_loot_pickedupitems">"Cogiste %1$d elementos. "</string>
+	<string name="dialog_groundloot_title">Artículos</string>
+	<string name="dialog_groundloot_message">"Usted encontró algunos artículos. "</string>
+	<string name="dialog_monsterloot_title">Victoria</string>
+	<string name="dialog_monsterloot_message">"Sobreviviste el encuentro. "</string>
+	<string name="dialog_monsterloot_gainedexp">"Ganó a %1$d  experiencia. "</string>
+
+	<string name="monster_difficulty_veryeasy">Muy fácil</string>
+	<string name="monster_difficulty_easy">Fácil</string>
+	<string name="monster_difficulty_normal">Normal</string>
+	<string name="monster_difficulty_hard">Difícil</string>
+	<string name="monster_difficulty_veryhard">Muy Difícil</string>
+	<string name="monster_difficulty_impossible">Imposible</string>
+
+	<string name="actorinfo_class">Clase:</string>
+	<string name="actorinfo_difficulty">Dificultad:</string>
+	<string name="actorinfo_health">Salud:</string>
+	<string name="actorinfo_attack">Ataque:</string>
+	<string name="actorinfo_defense">Defensa:</string>
+	<string name="actorinfo_movecost">Costo de traslado (AP):</string>
+	<string name="actorinfo_basetraits">Base estadística de combate (sin equipo y habilidades)</string>
+	<string name="actorinfo_currenttraits">Estadísticas de combate (actual)</string>
+
+	<string name="traitsinfo_attack_cost">Costo de ataque (AP):</string>
+	<string name="traitsinfo_attack_chance">Posibilidad de ataque:</string>
+	<string name="traitsinfo_attack_damage">Daño de ataque:</string>
+	<string name="traitsinfo_criticalhit_skill">Habilidad en golpe crítico:</string>
+	<string name="traitsinfo_criticalhit_multiplier">Crítico *multiplier:</string>
+	<string name="traitsinfo_defense_chance">Posibilidad de bloque:</string>
+	<string name="traitsinfo_defense_damageresist">Resistencia al daño:</string>
+
+	<string name="iteminfo_category">"Categoría: "</string>
+	<string name="iteminfo_action_use">Uso</string>
+	<string name="iteminfo_action_equip">Equipar</string>
+	<string name="iteminfo_action_unequip">Desequipamiento</string>
+	<string name="iteminfo_action_use_ap">Uso (%1$d AP)</string>
+	<string name="iteminfo_action_equip_ap">Equipar (%1$d AP)</string>
+	<string name="iteminfo_action_unequip_ap">unequipar (%1$d AP)</string>
+
+	<string name="startscreen_continue">Continuar juego actual</string>
+	<string name="startscreen_newgame">Nuevo juego</string>
+	<string name="startscreen_newgame_confirm">"Te Perderá vuestro juego actual y vuestro carácter actual, eres seguro  quieres empezar un juego nuevo?"</string>
+	<string name="startscreen_about">Acerca/ ayuda</string>
+	<string name="startscreen_enterheroname">Introduzca nombre de héroe</string>
+	<string name="startscreen_load">Carga</string>
+
+	<string name="conversation_rewardexp">" [ Obtuviste %1$d experiencia]"</string>
+	<string name="conversation_rewardgold">" [Usted ganado %1$d oro]"</string>
+	<string name="conversation_lostgold">" [Perdiste %1$d oro]"</string>
+	<string name="conversation_rewarditem">" [Usted ganó un elemento]"</string>
+	<string name="conversation_rewarditems">" [Ganó a %1$d días artículos]"</string>
+	<string name="conversation_next">Luego</string>
+	<string name="conversation_leave">Dejar</string>
+
+	<string name="shop_buy">Comprar</string>
+	<string name="shop_sell">Venta</string>
+	<string name="shop_infoitem">Info</string>
+	<string name="shop_buyitem">Compro (%1$d oro)</string>
+	<string name="shop_sellitem">"Venta (%1$d  oro)"</string>
+	<string name="shop_yourgold">El oro: %1$d</string>
+	<string name="shop_item_bought">"%1$s  comprado."</string>
+	<string name="shop_item_sold">"%1$s  vendidos."</string>
+
+	<string name="levelup_title">Nivelar arriba</string>
+	<string name="levelup_description">¡ Bienvenido a nivel %1$d!</string>
+	<string name="levelup_buttontext">Nivelar arriba</string>
+	<string name="levelup_add_health">Aumentar salud (+%1$d HP)</string>
+	<string name="levelup_add_health_description">Suma de %1$d a tu salud máxima.</string>
+	<string name="levelup_add_attackchance">Posibilidad de ataque del aumento (+%1$d)</string>
+	<string name="levelup_add_attackchance_description">Agrega la oportunidad de ataque base %1$d.</string>
+	<string name="levelup_add_attackdamage">Aumentar el daño de ataque (+%1$d)</string>
+	<string name="levelup_add_attackdamage_description">Se agrega a su daño de ataque base %1$d.</string>
+	<string name="levelup_add_blockchance">Aumentar la posibilidad del bloque (+%1$d)</string>
+	<string name="levelup_add_blockchance_description">Agrega tu oportunidad bloque base %1$d.</string>
+
+	<string name="dialog_rest_title">Resto</string>
+	<string name="dialog_rest_confirm_message">¿Quieres descansar aquí?</string>
+	<string name="dialog_rest_message">Has descansado y recuperado su salud completa.</string>
+
+	<string name="about_button1">Ayuda</string>
+	<string name="about_button2">Autores</string>
+	<string name="about_button3">Licencia</string>
+	<string name="about_contents1">" Bienvenido a Trail de Andor, un roguelike de código abierto RPG en Android.&lt;br /&gt; &lt;br /&gt; &lt;a href=http://andorstrail.com/&gt;Los foros de juego en andorstrail.com para preguntas y discusiones de juego.&lt;/a&gt;&lt;br /&gt; &lt;br /&gt; &lt;a href=http://andorstrail.com/wiki&gt;Wiki Juego para información sobre el mundo de Trail del Andor, entre otras cosas.&lt;/a&gt;&lt;br /&gt; &lt;br /&gt; &lt;a href=https://github.com/Zukero/andors-trail/&gt;Código fuente del proyecto en github.com para los desarrolladores.&lt;/a&gt;&lt;br /&gt; &lt;br /&gt; Por favor visite los foros para discutir el juego con otros jugadores.&lt;br /&gt; "</string>
+
+	<string name="about_contents3">" Este programa es software libre; puedes redistribuirlo y / o modificarlo bajo los términos de la Licencia Pública General GNU publicada por la Fundación para el Software Libre; . ya sea la versión 2 de la Licencia, o (a su elección) cualquier versión posterior &lt;br /&gt; &lt;br /&gt; Este programa se distribuye con la esperanza de que sea útil, pero SIN NINGUNA GARANTÍA; ni siquiera la garantía implícita de COMERCIALIZACIÓN o IDONEIDAD PARA UN PROPÓSITO PARTICULAR. Vea la Licencia Pública General GNU para más detalles &lt;br /&gt; &lt;br /&gt; Usted debería haber recibido una copia de la Licencia Pública General de GNU junto con este programa.; si no, ver &lt;a href=http://www.gnu.org/licenses&gt; http://www.gnu.org/licenses &lt;/a&gt; &lt;br /&gt; &lt;br /&gt; Para las solicitudes de código fuente y de la característica, por favor visite la página del proyecto en &lt;a href=https://github.com/Zukero/andors-trail/&gt; https://github.com/Zukero/andors-trail/ &lt;/a&gt; &lt;br /&gt; "</string>
+
+	<string name="dialog_newversion_title">Bienvenido</string>
+	<string name="dialog_newversion_message">" Gracias por descargar Trail de Andor usted!\n\n  Tenga en cuenta que esta versión del Camino de Andor es un trabajo en progreso, lo que significa que todos los mapas aún no se han completado.\n  Por favor visite los foros del proyecto para discutir el juego con otros jugadores o para ayudar a hacer el juego aún mejor (véase sobre).\n
+\n  ¡Gracias por todos los comentarios! "</string>
+
+	<string name="questlog_includecompleted_prompt">Elija búsquedas para mostrar</string>
+	<string name="questlog_includecompleted_hidecompleted">Ocultar completado búsquedas</string>
+	<string name="questlog_includecompleted_includecompleted">Incluir completó búsquedas</string>
+	<string name="questlog_includecompleted_onlycompleted">Sólo completó búsquedas</string>
+	<string name="questlog_queststatus">Estado: %1$s</string>
+	<string name="questlog_queststatus_inprogress">En progreso</string>
+	<string name="questlog_queststatus_completed">Completó</string>
+
+	<string name="preferences_display_category">Mostrar</string>
+	<string name="preferences_display_fullscreen_title">Pantalla completa</string>
+	<string name="preferences_display_fullscreen">Muestra el juego en modo de pantalla completa. (Requiere reiniciar)</string>
+	<string name="preferences_dialog_category">Confirmación de diálogo</string>
+	<string name="preferences_dialog_confirmrest_title">Confirmar resto</string>
+	<string name="preferences_dialog_confirmrest">Da a una pregunta sobre si quieres descansar al entrar en una cama. De lo contrario, automáticamente usted descansará.</string>
+	<string name="preferences_dialog_confirmattack_title">Confirman ataque</string>
+	<string name="preferences_dialog_confirmattack">Activa el cuadro de diálogo \'¿desea ataque..?\' cuando atacar a un monstruo.</string>
+	<string name="preferences_dialog_monsterloot_title">Monstruo de exhibición *loot</string>
+	<string name="preferences_dialog_monsterloot">Elija cómo desea mostrar los resultados de una lucha para ser mostrado (oro, experiencia, elementos).</string>
+	<string name="preferences_combat_category">Combate</string>
+	<string name="preferences_combat_speed_title">Velocidad de combate</string>
+	<string name="preferences_combat_speed">Determina monstruos qué rápidos ataque.</string>
+
+	<string name="preferences_display_loot_dialog">Cuadro de diálogo botín Mostrar siempre</string>
+	<string name="preferences_display_loot_dialog_on_items">Mostrar cuadro de diálogo de botín al encontrar elementos</string>
+	<string name="preferences_display_loot_dialog_on_items_or_toast">Diálogo para artículos, notif. de lo contrario</string>
+	<string name="preferences_display_loot_toast">Mostrar notificación abreviado</string>
+	<string name="preferences_display_loot_toast_on_items">Mostrar sólo notificación cuando la búsqueda de artículos</string>
+	<string name="preferences_display_loot_never">No muestran</string>
+
+	<string name="preferences_attackspeed_instant">Instantánea (sin animaciones)</string>
+	<string name="preferences_attackspeed_fast">Rápido</string>
+	<string name="preferences_attackspeed_normal">Normal</string>
+	<string name="preferences_attackspeed_slow">Lento</string>
+
+	<string name="preferences_movement_category">Movimiento</string>
+	<string name="preferences_movementmethod_title">Método de movimiento</string>
+	<string name="preferences_movementmethod">Tipo de método de movimiento y manejo de los obstáculos.</string>
+	<string name="preferences_movementmethods_straight">Derecho (original)</string>
+	<string name="preferences_movementmethods_avoid">Evitando los obstáculos</string>
+
+
+	<string name="actorinfo_currentconditions">Condiciones de activadas</string> <string name="actorcondition_info_removes_all">Elimina todo el %1$s</string>
+	<string name="iteminfo_effect_chance_of">%1$s posibilidad de %2$s</string>
+	<string name="iteminfo_effect_duration">(%1$d rondas)</string>
+
+	<string name="iteminfo_effect_works_on_source">Por fuente</string>
+	<string name="iteminfo_effect_works_on_target">En blanco</string>
+	<string name="iteminfo_effect_works_when_hitting_target">Al golpear el objetivo</string>
+	<string name="iteminfo_effect_works_when_killing_target">En cada muerte</string>
+	<string name="iteminfo_effect_works_when_used">Cuándo utilizado</string>
+	<string name="iteminfo_effect_works_when_equipped">Cuándo equipado</string>
+
+	<string name="iteminfo_effect_decrease_current_hp">Drenajes %1$s HP</string>
+	<string name="iteminfo_effect_increase_current_hp">Restaura %1$s HP</string>
+	<string name="iteminfo_effect_decrease_current_ap">Drenajes %1$s AP</string>
+	<string name="iteminfo_effect_increase_current_ap">Restaura %1$s AP</string>
+
+	<string name="iteminfo_effect_increase_max_hp">Levanta max HP +%1$d</string>
+	<string name="iteminfo_effect_decrease_max_hp">Baja max HP by %1$d</string>
+	<string name="iteminfo_effect_increase_max_ap">Levanta max AP +%1$d</string>
+	<string name="iteminfo_effect_decrease_max_ap">Baja max AP de %1$d</string>
+	<string name="iteminfo_effect_increase_movecost">Mueva en pena costo +%1$d AP</string>
+	<string name="iteminfo_effect_decrease_movecost">Reduce costo Traslado %1$d AP</string>
+
+	<string name="preferences_display_scaling_factor_title">Factor de escala</string>
+	<string name="preferences_display_scaling_factor">Hace la vista juego todo lo más grande Mostrar.</string>
+	<string name="preferences_display_scaling_factor_normal">Tamaño normal</string>
+	<string name="preferences_display_scaling_factor_50_percent_larger">1,5 x tamaño</string>
+	<string name="preferences_display_scaling_factor_double">Tamaño doble</string>
+
+	<string name="inventory_assign">Asignar rápida ranura</string>
+	<string name="inventory_assign_slot1">Ranura 1</string>
+	<string name="inventory_assign_slot2">Ranura 2</string>
+	<string name="inventory_assign_slot3">Ranura 3</string>
+	<string name="inventory_unassign">Desasignar rápida ranura</string>
+
+	<string name="preferences_movement_dpad_position_title">D-pad virtual</string>
+	<string name="preferences_movement_dpad_position">Permite un pad virtual en pantalla direccional guiar el movimiento.</string>
+	<string name="preferences_movement_dpad_minimizeable_title">D-pad Minimizable</string>
+	<string name="preferences_movement_dpad_minimizeable">Si el d-pad virtual está habilitado, esta configuración permite el d-pad minimizar presionando su centro.</string>
+
+	<string name="preferences_movement_dpad_positions_disabled">Desactivado</string>
+	<string name="preferences_movement_dpad_positions_lower_right">Esquina inferior derecha</string>
+	<string name="preferences_movement_dpad_positions_lower_left">Esquina inferior izquierda</string>
+	<string name="preferences_movement_dpad_positions_center_bottom">Centro inferior</string>
+	<string name="preferences_movement_dpad_positions_center_left">Centro izquierda</string>
+	<string name="preferences_movement_dpad_positions_center_right">Centro derecha</string>
+	<string name="preferences_movement_dpad_positions_upper_left">Esquina superior izquierda</string>
+	<string name="preferences_movement_dpad_positions_upper_right">Esquina superior derecha</string>
+	<string name="preferences_movement_dpad_positions_center_top">Centrar superior</string>
+
+	<string name="actorconditioninfo_constant_effect">Efecto constante</string>
+	<string name="actorconditioninfo_effect_every_round">Cada ronda</string>
+	<string name="actorconditioninfo_effect_every_full_round">Cada completo redondo</string>
+	<string name="bulkselection_totalcost_buy">Costo total %1$d oro</string>
+	<string name="bulkselection_totalcost_sell">Costo total: %1$d oro</string>
+	<string name="bulkselection_select_all">Todos</string>
+	<string name="bulkselection_sell_confirmation_title">¿Estás seguro?</string>
+	<string name="bulkselection_sell_confirmation">¿Está seguro que desea vender %1$s? Este artículo es de %2$s y no puede recuperarlo.</string>
+
+	<string name="skill_title_weapon_chance">Exactitud de la arma</string>
+	<string name="skill_title_weapon_dmg">Golpe duro</string>
+	<string name="skill_title_barter">Mercante</string>
+	<string name="skill_title_dodge">Evadir</string>
+	<string name="skill_title_barkskin">Piel de corteza</string>
+	<string name="skill_title_more_criticals">Más críticos</string>
+	<string name="skill_title_better_criticals">Mejor Criticals</string>
+	<string name="skill_title_speed">Combatir la velocidad</string>
+	</resources>
