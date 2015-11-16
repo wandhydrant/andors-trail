@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-
+<?xml version='1.0' encoding='utf-8'?>
 <resources>
 	<string name="app_name">La Piste d\'Andor</string>
 	<string name="app_description">Jeu de rôle fantastique à base de quêtes</string>
@@ -15,7 +14,7 @@
 	<string name="loadsave_selectslot">Sélectionner un emplacement</string>
 	<string name="savegame_currenthero_displayinfo">niveau %1$d, %2$d exp, %3$d or</string>
 
-	<string name="dialog_loading_message">Chargement des ressources...</string>
+	<string name="dialog_loading_message">Chargement des ressources…</string>
 	<string name="dialog_loading_failed_title">Échec du chargement</string>
 	<string name="dialog_loading_failed_message">Impossible de charger la sauvegarde.\n\n:(\n\nLe fichier est peut-être endommagé ou incomplet.</string>
 	<string name="dialog_loading_failed_incorrectversion">Impossible de charger la sauvegarde. Cette sauvegarde a été créée avec une version plus récente du jeu.</string>
@@ -257,7 +256,7 @@
 	<string name="preferences_dialog_confirmattack_title">Confirmer les attaques</string>
 	<string name="preferences_dialog_confirmattack">Active la boîte de dialogue « Voulez-vous attaquer ? » quand vous attaquez un monstre.</string>
 	<string name="preferences_dialog_monsterloot_title">Afficher le butin des monstres</string>
-	<string name="preferences_dialog_monsterloot">Change la façon dont s\'affichent les résultats d\'un combat (or, expérience, objets)</string>
+	<string name="preferences_dialog_monsterloot">Change la façon dont s\'affichent les résultats d\'un combat (or, expérience, objets).</string>
 	<string name="preferences_combat_category">Combat</string>
 	<string name="preferences_combat_speed_title">Vitesse des combats</string>
 	<string name="preferences_combat_speed">Détermine la vitesse d\'attaque des monstres.</string>
@@ -307,7 +306,7 @@
 	<!-- La suite est ok -->
 
 	<string name="preferences_display_scaling_factor_title">Facteur de zoom</string>
-	<string name="preferences_display_scaling_factor">Permet d\'agrandir toute la zone de jeu</string>
+	<string name="preferences_display_scaling_factor">Permet d\'agrandir toute la zone de jeu.</string>
 	<string name="preferences_display_scaling_factor_normal">Taille normale</string>
 	<string name="preferences_display_scaling_factor_50_percent_larger">Zoom de 150%</string>
 	<string name="preferences_display_scaling_factor_double">Zoom de 200%</string>
@@ -323,7 +322,7 @@
 	<!-- Added in v0.6.10 -->
 
 	<string name="preferences_movement_dpad_position_title">Croix directionnelle (D-pad) virtuelle</string>
-	<string name="preferences_movement_dpad_position">Active une croix directionnelle virtuelle sur l\'écran pour guider les déplacements</string>
+	<string name="preferences_movement_dpad_position">Active une croix directionnelle virtuelle sur l\'écran pour guider les déplacements.</string>
 	<string name="preferences_movement_dpad_minimizeable_title">Minimisation de la croix directionnelle virtuelle</string>
 	<string name="preferences_movement_dpad_minimizeable">Si la croix directionnelle virtuelle est activée, ce réglage permet de la réduire en pressant son centre.</string>
 
@@ -458,19 +457,19 @@
 	<!-- Added in v0.6.12 -->
 
 	<string name="preferences_ui_category">Interface</string>
-	<string name="preferences_ui_enable_animations_title">Enable animations</string>
-	<string name="preferences_ui_enable_animations">Show animations for various interface elements, such as the combat bar.</string>
-	<string name="menu_button_worldmap">Map</string>
-	<string name="menu_button_worldmap_failed">Map cannot be displayed.</string>
-	<string name="display_worldmap_not_available">The map cannot be displayed from this location.</string>
-	<string name="display_worldmap_title">Map</string>
+	<string name="preferences_ui_enable_animations_title">Activer les animations</string>
+	<string name="preferences_ui_enable_animations">Animer différents éléments de l\'interface, comme la barre de combat.</string>
+	<string name="menu_button_worldmap">Carte</string>
+	<string name="menu_button_worldmap_failed">Impossible d\'afficher la carte.</string>
+	<string name="display_worldmap_not_available">Impossible d\'afficher la carte à partir de cet endroit.</string>
+	<string name="display_worldmap_title">Carte</string>
 
-	<string name="inventory_equip_offhand">Equip (offhand)</string>
+	<string name="inventory_equip_offhand">Equiper (main gauche)</string>
 
-	<string name="iteminfo_effect_weapon_attack_cost">Attack cost: %1$d AP</string>
-	<string name="iteminfo_effect_increase_attack_cost">Increases attack cost by %1$d AP</string>
-	<string name="iteminfo_effect_decrease_attack_cost">Lowers attack cost by %1$d AP</string>
-	<string name="iteminfo_effect_weapon_attack_chance">Attack chance: %1$d</string>
+	<string name="iteminfo_effect_weapon_attack_cost">Coût d\'attaque : %1$d AP</string>
+	<string name="iteminfo_effect_increase_attack_cost">Augmente le coût d\'attaque de %1$d AP</string>
+	<string name="iteminfo_effect_decrease_attack_cost">Diminue le coût d\'attaque de %1$d AP</string>
+	<string name="iteminfo_effect_weapon_attack_chance">Chance d\'attaque : %1$d</string>
 	<string name="iteminfo_effect_increase_attack_chance">Increases attack chance by %1$d</string>
 	<string name="iteminfo_effect_decrease_attack_chance">Lowers attack chance by %1$d</string>
 	<string name="iteminfo_effect_weapon_attack_damage">Attack damage: %1$d</string>
@@ -604,4 +603,13 @@ Every skill level increases the attack chance of weapons with %1$d %% of their o
 	<string name="preferences_ui_use_localized_resources">Utiliser une interface et un contenu traduit en francais (si disponible). Nécessite un redémarrage.</string>
 	<string name="change_locale_requires_restart">Changing locale requires restart. Andor\'s Trail has been closed.</string>
 	
-</resources>
+<string name="combat_miss_animation_message">RATE</string>
+	
+	<string name="about_button4">A propos</string>
+
+	<string name="preferences_display_loot_dialog_on_items">Afficher la boîte de dialogue uniquement quand le butin contient des objets</string>
+	<string name="preferences_display_loot_dialog_on_items_or_toast">Boîte de dialogue pour les objets, simple notification sinon</string>
+	<string name="preferences_display_loot_toast_on_items">Afficher une simple notification uniquement quand le butin contient des objets</string>
+	<string name="skill_title_crit1">Hémorragie interne</string>
+	<string name="skill_shortdescription_crit1">Chance d\'hémorragie interne</string>
+	</resources>
