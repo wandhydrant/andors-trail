@@ -3,4 +3,89 @@
 	<string name="menu_settings">Tercihler</string>
 	<string name="menu_save">Kaydet</string>
 	<string name="app_name">Andor\'un İzinde</string>
+	<string name="app_description">Quest odaklı RYO</string>
+
+	<string name="menu_save_failed">Kaydetme başarısız! SD kart yerleştirilmiş ve yazılabilir mi?</string>
+
+	<string name="loadsave_title_save">Oyunu kaydet</string>
+	<string name="loadsave_title_load">Kayıtlı oyunu yükle</string>
+	<string name="loadsave_selectslot"/>
+	<string name="savegame_currenthero_displayinfo">seviye %1$d, %2$d deneyim, %3$d altın</string>
+
+	<string name="dialog_loading_message">Kaynaklar yükleniyor…</string>
+	<string name="dialog_loading_failed_title">Yükleme Başarısız</string>
+	<string name="dialog_loading_failed_message">Andor\'un İzinde oyun kayıt dosyasını yükleyemedi.\n\n:(\n\nDosya zara görmüş veya eksik olabilir.</string>
+	<string name="dialog_loading_failed_incorrectversion">Andor\'un İzinde oyun kayıt dosyasını yükleyemedi. Bu oyun kayıt dosyası mevcut çalışandan daha yeni bir sürümle oluşturulmuş.</string>
+
+	<string name="dialog_close">Kapat</string>
+
+	<string name="dialog_monsterencounter_title">Karşılaşma</string>
+	<string name="dialog_monsterencounter_message">Saldırmak istiyor musunuz?\nZorluk: %1$s</string>
+	<string name="dialog_monsterencounter_info">Bilgi</string>
+
+	<string name="status_hp">SP:</string>
+	<string name="status_ap">AP:</string>
+	<string name="status_exp">Seviye:</string>
+
+	<string name="heroinfo_char">Genel Bakış</string>
+	<string name="heroinfo_inv">Eşyalar</string>
+	<string name="heroinfo_skill">Beceriler</string>
+	<string name="heroinfo_levelup">Seviye atla</string>
+	<string name="heroinfo_level">Seviye</string>
+	<string name="heroinfo_totalexperience">Toplam deneyim</string>
+	<string name="heroinfo_wornequipment">Giyilen ekipman</string>
+	<string name="heroinfo_inventory">Envanter</string>
+	<string name="heroinfo_gold">Altın: %1$d</string>
+	<string name="heroinfo_actionpoints">Aksiyon puanı(AP):</string>
+	<string name="heroinfo_quests"/>
+
+	<string name="combat_attack">Saldırı (%1$d AP)</string>
+	<string name="combat_move">Hareket (%1$d AP)</string>
+	<string name="combat_use">Eşyayı kullan</string>
+	<string name="combat_endturn">Sıranı savuştur</string>
+	<string name="combat_flee">Kaç</string>
+	<string name="combat_begin_flee">Şimdi hareket etmek istediğiniz yöne tıklayarak dövüşten kaçabilirsin.</string>
+	<string name="combat_flee_failed">Kaçmayı başaramadın!</string>
+	<string name="combat_status_ap">AP: %1$d</string>
+	<string name="combat_monsterhealth">SP:</string>
+	<string name="combat_monsteraction">%1$s saldırıyor.</string>
+	<string name="combat_result_monstermiss">%1$s ıskaladı!</string>
+	<string name="combat_result_monsterhit">%1$s size %2$d sp\'lik vurdu!</string>
+	<string name="combat_result_monsterhitcritical">%1$s %2$d sp\'lik kritik bir vuruş yaptı!</string>
+	<string name="combat_result_heromiss">Iskaladınız.</string>
+	<string name="combat_result_herokillsmonster">%1$s öldü!</string>
+	<string name="combat_not_enough_ap">Bu turda yeterli AP kalmadı.</string>
+	<string name="combat_hero_dies">Baygın düştün, ama neyse ki hayatta, sersemlemiş ve yorgun uyanırsın.</string>
+	<string name="combat_miss_animation_message">ISKA</string>
+	
+	<string name="inventory_info">Bilgi</string>
+	<string name="inventory_equip">Giy</string>
+	<string name="inventory_unequip">Çıkar</string>
+	<string name="inventory_use">Kullan</string>
+	<string name="inventory_drop">Düşür</string>
+	<string name="inventory_item_used">%1$s kullandın.</string>
+	<string name="inventory_item_dropped">%1$s düşürüldü.</string>
+	<string name="dialog_loot_pickall">Hepsini al</string>
+	<string name="dialog_loot_foundgold">"%1$d altın buldun. "</string>
+	<string name="dialog_loot_pickedupitem">"Bir eşya aldın. "</string>
+	<string name="dialog_loot_pickedupitems">"%1$d eşya aldın. "</string>
+	<string name="dialog_groundloot_title">Eşyalar</string>
+	<string name="dialog_groundloot_message">"Bir şeyler buldun. "</string>
+	<string name="dialog_monsterloot_title">Zafer</string>
+	<string name="dialog_monsterloot_message">"Karşılaşmadan sağ çıktın. "</string>
+	<string name="dialog_monsterloot_gainedexp">"%1$d deneyim kazandın. "</string>
+
+	<string name="monster_difficulty_veryeasy">Çok kolay</string>
+	<string name="monster_difficulty_easy">Kolay</string>
+	<string name="monster_difficulty_normal">Normal</string>
+	<string name="monster_difficulty_hard">Zor</string>
+	<string name="monster_difficulty_veryhard">Çok zor</string>
+	<string name="monster_difficulty_impossible">İmkansız</string>
+
+	<string name="actorinfo_class">Sınıfı:</string>
+	<string name="actorinfo_difficulty">Zorluk:</string>
+	<string name="actorinfo_health">Sağlık:</string>
+	<string name="actorinfo_attack">Saldırı:</string>
+	<string name="actorinfo_defense">Savunma:</string>
+	<string name="actorinfo_movecost">Hareket bedeli (AP):</string>
 	</resources>
