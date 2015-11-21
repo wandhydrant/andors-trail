@@ -71,14 +71,14 @@
 	<string name="inventory_item_equipped">Te equipas con %1$s.</string>
 
 	<string name="dialog_loot_pickall">Recoger todo</string>
-	<string name="dialog_loot_foundgold">Encontraste %1$d monedas de oro.</string>
-	<string name="dialog_loot_pickedupitem">Recogiste un objeto.</string>
-	<string name="dialog_loot_pickedupitems">Recogiste %1$d objetos.</string>
+	<string name="dialog_loot_foundgold">"Encontraste %1$d monedas de oro. "</string>
+	<string name="dialog_loot_pickedupitem">"Recogiste un objeto. "</string>
+	<string name="dialog_loot_pickedupitems">"Recogiste %1$d objetos. "</string>
 	<string name="dialog_groundloot_title">Objetos</string>
-	<string name="dialog_groundloot_message">Encontraste algunos objetos.</string>
+	<string name="dialog_groundloot_message">"Encontraste algunos objetos. "</string>
 	<string name="dialog_monsterloot_title">Victoria</string>
-	<string name="dialog_monsterloot_message">Sobreviviste al enfrentamiento.</string>
-	<string name="dialog_monsterloot_gainedexp">Ganaste %1$d puntos de experiencia.</string>
+	<string name="dialog_monsterloot_message">"Sobreviviste al enfrentamiento. "</string>
+	<string name="dialog_monsterloot_gainedexp">"Ganaste %1$d puntos de experiencia. "</string>
 
 	<string name="monster_difficulty_veryeasy">Muy fácil</string>
 	<string name="monster_difficulty_easy">Fácil</string>
@@ -137,7 +137,7 @@
 	<string name="shop_item_sold">Vendiste %1$s.</string>
 
 	<string name="levelup_title">Subir de nivel</string>
-	<string name="levelup_description">¡Bienvenido a nivel %1$d!</string>
+	<string name="levelup_description">¡Bienvenido al nivel %1$d!</string>
 	<string name="levelup_buttontext">Subir de nivel</string>
 	<string name="levelup_add_health">Aumentar salud (+%1$d PV)</string>
 	<string name="levelup_add_health_description">Añade %1$d puntos a tu salud máxima.</string>
@@ -200,7 +200,7 @@
 	<string name="preferences_combat_speed_title">Velocidad de combate</string>
 	<string name="preferences_combat_speed">Determina como de rápido atacan los monstruos.</string>
 
-	<string name="preferences_display_loot_dialog">Mostrar siempre cuadro de dialogo de botín.</string>
+	<string name="preferences_display_loot_dialog">Mostrar siempre cuadro de dialogo de botín</string>
 	<string name="preferences_display_loot_dialog_on_items">Mostrar cuadro de diálogo de botín al encontrar objetos</string>
 	<string name="preferences_display_loot_dialog_on_items_or_toast">Diálogo de botín sólo para ojetos y notificación para el resto</string>
 	<string name="preferences_display_loot_toast">Mostrar notificación corta</string>
@@ -320,4 +320,5 @@
 	<string name="skill_shortdescription_resistance_physical_capacity">Resistencia contra condiciones de capacidad física</string>
 	<string name="skill_shortdescription_resistance_blood_disorder">Resistencia contra desórdenes en la sangre</string>
 
+	<string name="skill_longdescription_weapon_chance">Incrementa la probabilidad de ataque en %1$d por cada nivel de habilidad.</string>
 	</resources>
