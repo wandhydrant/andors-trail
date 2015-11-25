@@ -9,7 +9,7 @@
 
 	<string name="loadsave_title_save">Oyunu kaydet</string>
 	<string name="loadsave_title_load">Kayıtlı oyunu yükle</string>
-	<string name="loadsave_selectslot"/>
+	<string name="loadsave_selectslot">Pozisyon seçiniz</string>
 	<string name="savegame_currenthero_displayinfo">seviye %1$d, %2$d deneyim, %3$d altın</string>
 
 	<string name="dialog_loading_message">Kaynaklar yükleniyor…</string>
@@ -198,4 +198,55 @@
 	<string name="preferences_movementmethods_avoid">Engellerden kaçınma</string>
 
 
-	<string name="actorinfo_currentconditions">Etkin koşullar</string> </resources>
+	<string name="actorinfo_currentconditions">Etkin koşullar</string> <string name="actorcondition_info_removes_all">%1$s tamamen giderici</string>
+	<string name="iteminfo_effect_duration">(%1$d tur)</string>
+
+	<string name="iteminfo_effect_works_on_source">Kaynak üzerinde</string>
+	<string name="iteminfo_effect_works_on_target">Hedef üzerinde</string>
+	<string name="iteminfo_effect_works_when_hitting_target">Hedefe vurulduğunda</string>
+	<string name="iteminfo_effect_works_when_killing_target">Her öldürmede</string>
+	<string name="iteminfo_effect_works_when_used">Kullanıldığında</string>
+	<string name="iteminfo_effect_works_when_equipped">Giyildiğinde</string>
+
+	<string name="iteminfo_effect_decrease_current_hp">%1$s SP çeker</string>
+	<string name="iteminfo_effect_increase_current_hp">%1$s SP iyileştirir</string>
+	<string name="iteminfo_effect_decrease_current_ap">%1$s AP çeker</string>
+	<string name="iteminfo_effect_increase_current_ap">%1$s AP yerine koyar</string>
+
+	<string name="iteminfo_effect_increase_max_hp">Maksimum SP\'yi +%1$d arttırır</string>
+	<string name="iteminfo_effect_decrease_max_hp">Maksimum SP\'yi %1$d azaltır</string>
+	<string name="iteminfo_effect_increase_max_ap">Maksimum AP\'yi +%1$d arttırır</string>
+	<string name="iteminfo_effect_decrease_max_ap">Maksimum AP\'yi %1$d azaltır</string>
+	<string name="iteminfo_effect_increase_movecost">Hareket bedeli cezası +%1$d AP</string>
+	<string name="iteminfo_effect_decrease_movecost">Hareket bedelini %1$d AP azaltır</string>
+
+	<string name="preferences_display_scaling_factor_title">Ölçekleme</string>
+	<string name="preferences_display_scaling_factor">Oyun görünümünün her şeyi daha büyük göstermesini sağlar.</string>
+	<string name="preferences_display_scaling_factor_normal">Normal boyut</string>
+	<string name="preferences_display_scaling_factor_50_percent_larger">1.5x boyutu</string>
+	<string name="preferences_display_scaling_factor_double">İki kat boyut</string>
+
+	<string name="inventory_assign_slot1">Pozisyon 1</string>
+	<string name="inventory_assign_slot2">Pozisyon 2</string>
+	<string name="inventory_assign_slot3">Pozisyon 3</string>
+	<string name="inventory_assign">Hızlı kullanım pozisyonu ata</string>
+	<string name="inventory_unassign">Hızlı kullanım pozisyonunu kaldır</string>
+
+	<string name="preferences_movement_dpad_position_title">Sanal yön tuşları</string>
+	<string name="menu_save_gamesaved">Oyun %1$d. pozisyona kaydedildi</string>
+	<string name="combat_result_herohit">%1$s %2$d sp hasar aldı!</string>
+	<string name="combat_result_herohitcritical">%1$s kritik bir vuruştan %2$d sp hasar aldı!</string>
+	<string name="inventory_item_equipped">%1$s giydiniz.</string>
+
+	<string name="about_contents3"/>
+	<string name="iteminfo_effect_chance_of">%1$s %2$s olasılığı</string>
+	<string name="preferences_movement_dpad_positions_lower_right">Sağ alt köşe</string>
+	<string name="preferences_movement_dpad_positions_lower_left">Sol alt köşe</string>
+	<string name="preferences_movement_dpad_positions_center_bottom">Altta ortada</string>
+	<string name="preferences_movement_dpad_positions_center_left">Solda ortada</string>
+	<string name="preferences_movement_dpad_positions_center_right">Sağda ortada</string>
+	<string name="preferences_movement_dpad_positions_upper_left">Sol üst köşe</string>
+	<string name="preferences_movement_dpad_positions_upper_right">Sağ üst köşe</string>
+	<string name="preferences_movement_dpad_positions_center_top">Üstte ortada</string>
+
+	</resources>
