@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map SYSTEM "http://mapeditor.org/dtd/1.0/map.dtd">
 <map version="1.0" orientation="orthogonal" width="30" height="30" tilewidth="32" tileheight="32">
  <properties>
   <property name="outdoors" value="1"/>
@@ -143,7 +144,7 @@
    eJzFlNERwCAIQx2hS7n/Sv3teTUJCbbc+dMKDwI4rzHmzweZ4qsyVN8urloDur9qcZKLesDioZ6hGCoX8Zluqu1yZuxUf5a38s+t2TGnLlUzheXmzOKle1Lh7u5+UW/Xu4C4rlVnAb0RLMYpbtf8n+A6Gin5d+37s7a3b8k87+Kq9SLtTuySa6znipYJM425ap4wE+3dea+y05lms9nNXLWpGvPt7GNH/7tny62/sr/uuQG+VaKz
   </data>
  </layer>
- <objectgroup name="Mapevents" width="0" height="0">
+ <objectgroup name="Mapevents">
   <object name="cave" type="mapchange" x="576" y="32" width="32" height="32">
    <properties>
     <property name="map" value="crossglen_cave"/>
@@ -187,7 +188,7 @@
    </properties>
   </object>
  </objectgroup>
- <objectgroup name="Spawn" width="0" height="0">
+ <objectgroup name="Spawn">
   <object name="crossglen_wasp" type="spawn" x="736" y="160" width="192" height="160">
    <properties>
     <property name="quantity" value="3"/>
@@ -206,8 +207,9 @@
     <property name="quantity" value="3"/>
    </properties>
   </object>
-  <object name="Odair" type="spawn" x="896" y="32" width="32" height="32"/>
-  <object name="Oromir" type="spawn" x="896" y="864" width="32" height="32"/>
+  <object name="odair" type="spawn" x="896" y="32" width="32" height="32"/>
+  <object name="oromir" type="spawn" x="896" y="864" width="32" height="32"/>
+  <object name="halvor" type="spawn" x="736" y="608" width="32" height="32"/>
  </objectgroup>
- <objectgroup name="Keys" width="0" height="0"/>
+ <objectgroup name="Keys"/>
 </map>
