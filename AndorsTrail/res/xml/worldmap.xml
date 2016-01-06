@@ -242,7 +242,7 @@
  <map id="wild14_clearing" x="316" y="458" />
  <map id="wild15" x="335" y="448" />
  <map id="wild16" x="74" y="469" />
- <map id="wild17" x="32" y="455" />
+ <map id="wild17" x="32" y="448" />
  <map id="wild2" x="152" y="386" />
  <map id="wild3" x="173" y="386" />
  <map id="wild4" x="201" y="351" />
@@ -254,10 +254,11 @@
  <map id="woodcave0" x="201" y="331" />
  <map id="woodsettlement0" x="201" y="367" />
  <map id="soulpartdungeon0" x="480" y="431"/>
- <map id="stoutford_gate" x="53" y="485"/>
- <map id="stoutford_ne" x="74" y="485"/>
- <map id="stoutford_se" x="63" y="506"/>
- <map id="stoutford_sw" x="38" y="506"/>
+ <map id="stoutford_gate" x="53" y="485" area="stoutford"/>
+ <map id="stoutford_ne" x="74" y="485" area="stoutford"/>
+ <map id="stoutford_se" x="63" y="506" area="stoutford"/>
+ <map id="stoutford_sw" x="38" y="506" area="stoutford"/>
+ <map id="stoutford_nw" x="32" y="476" area="stoutford"/>
  <map id="road6" x="476" y="457"/>
  <map id="arulirmountain1" x="817" y="94"/>
  <map id="arulirmountain2" x="848" y="96"/>
@@ -271,5 +272,6 @@
  <namedarea id="remgard" name="Remgard" type="settlement"/>
  <namedarea id="vilegard" name="Vilegard" type="settlement"/>
  <namedarea id="prim" name="Prim" type="settlement"/>
+ <namedarea id="stoutford" name="Stoutford" type="settlement"/>
 </segment>
 </worldmap>
