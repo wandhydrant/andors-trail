@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map SYSTEM "http://mapeditor.org/dtd/1.0/map.dtd">
 <map version="1.0" orientation="orthogonal" width="15" height="15" tilewidth="32" tileheight="32">
  <properties>
   <property name="outdoors" value="1"/>
@@ -143,7 +144,7 @@
    eJxzFWBgcB1kGARorZdYQK4+bGbA2Mji6OoI6cVmDjKfUDjg0ktKGJKiF5s/8PmNkDpcgBZ6iQGkpDNcagDElCwq
   </data>
  </layer>
- <objectgroup name="Mapevents" width="0" height="0">
+ <objectgroup name="Mapevents">
   <object name="south" type="mapchange" x="192" y="448" width="96" height="32">
    <properties>
     <property name="map" value="blackwater_mountain3"/>
@@ -157,7 +158,7 @@
    </properties>
   </object>
  </objectgroup>
- <objectgroup name="Spawn" width="0" height="0">
+ <objectgroup name="Spawn">
   <object name="gornaud_2" type="spawn" x="192" y="224" width="96" height="96"/>
   <object name="gornaud_2" type="spawn" x="32" y="128" width="416" height="96">
    <properties>
@@ -169,6 +170,11 @@
     <property name="quantity" value="2"/>
    </properties>
   </object>
+  <object name="halvor" type="spawn" x="416" y="288" width="32" height="32">
+   <properties>
+    <property name="active" value="false"/>
+   </properties>
+  </object>
  </objectgroup>
- <objectgroup name="Keys" width="0" height="0"/>
+ <objectgroup name="Keys"/>
 </map>

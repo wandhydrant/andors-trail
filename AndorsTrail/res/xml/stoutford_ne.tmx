@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE map SYSTEM "http://mapeditor.org/dtd/1.0/map.dtd">
 <map version="1.0" orientation="orthogonal" width="20" height="20" tilewidth="32" tileheight="32">
  <properties>
   <property name="outdoors" value="1"/>
@@ -126,61 +125,71 @@
  </tileset>
  <layer name="Ground" width="20" height="20">
   <data encoding="base64" compression="zlib">
-   eJw7ysbAcHQUj+JRPIpH8SgmEQMA5289QA==
+   eJw7ysbAcHQU0wWf58XElJh3nxcTU2LeM0EGhudI+IUgphojdgjG5SdktV+B+r8h4e9EmEepf9DNe0bAP6Sa95WAf0g1j5w0gxzOpJqHLc3cx2IeLkwozaCHM6nmoacZ9HAm1Txi42PUPPLMAwBOhx+N
   </data>
  </layer>
  <layer name="Objects" width="20" height="20">
   <data encoding="base64" compression="zlib">
-   eJx9VEEKwjAQ9OAxQt8l+AL7goJ4F/QBgh+0Bz1XMP2AqVnM0Om6m4GQpN1OZ2eT/TSrVcrjk8eUR6S99xx7mQHs7+G3T2HmGMIc9yTuR3muOXnelX90ed6WcaD/WuiDrxt4kab1Zl5Dm44Zw/Kd5BcrfkD3SBw1gOdd4QSS8g3Q8aw3Kj8kt1Oez4rfqn8yYix9+7xum1+NmUvQGz5Ep+b4RvguRSN0CDfy51zghXWGgWteH4nT8kXrs/IXyNmVc605a1wTnXldH4bmrPkvfnjeojY96WzLsyH8c+n/vCoxcq73xOfF8Zp7gnUfReOtWXrDveLt3AcB9xUA54Tvt45lfVoTamX56/Uj+X40eqCG5zv3nM64YwyrhlMz52d95/XZSXmg33EuPa2/vzvwMA==
+   eJytlc8vA0EUx6ehG6lZ1o+LI5VwJ/Hj6iChIcRJgkZ6EiSEf8DFhWulB3+OuLqg0VYaJ0EbN9G05X3z5mVnt6qVeMk3szOd/cx735nZDrtKjZAQg9Qek/Ka+zVPqTrpnfo3Ho/LWLidoPcm3eB7iKL1TsV6LnrBefdW/9OMPdL8Jed/tOkw314fcUvtneRq/V6itQsm3y9S2eMcx6JKjZOSDvslXiFQn3BlvEztgzUHkY4oNdejVIbaKWJNGx7WWmhDy6ScZk44PrqVymrmIYdVh7XthPbFqnXRjCV7lTon5iHlc0pttp95dcODV0MuK+XwbwjUInHVzbwC6YwYF6STKOf6TLy48Qw8nCubF3eDHiFKHUoliLVrat8jdZp5tq/in/COqN+l/TpQE/Kpdfj1Sv31GD2TqqSXGHsD3qvm+wAe1lz3/DpQ0yU9z3Qyb8Xxvf5J+w7fBclvjfob9N6OVRN8QSv5lXXQ30wkWO+XxTtosi72HTz4Cy+FET474OUsXjOlLB68nO9lf9Pm3AgXvKK1H8dt8Cra9zdjzs2Fxcv/kt+bDvKw/3IfRl2uDd7KnoM30KJW4SWa3MMts09PXuP5a+VfVfvfiEroe1sy9+Paa6wPetGNvHbO32zfH/dX8jHfP9Qp/wMS307fvfA=
   </data>
  </layer>
  <layer name="Above" width="20" height="20">
   <data encoding="base64" compression="zlib">
-   eJy1VEEOwCAI8wn7/6v4iPxgybYDiSGUgma9UovS4hg55Mrr+tYn4fyJr7c2+hu/ey7SiZBp+p7VOzCO98DzmT/mMeNN4HV0P+MJeO9uZlb/TpFpRDXm1w1qqxbaJ6TtNSvvzrLAtKKMVtD1w+ZQyb+AfJ/uMALKc/XfYHU/Kynorr3ZHunmrFj/CA/WiE6H
+   eJy1lLsOglAMhrvA4sLi5c1cMVHeFJ1MTniPwwaTgzShSVPbknr0SwiHS9v/p+UAAOQGYFwOgl9b60fzGfdrMquR1jr9cr6v66RokBqPFcCpsmukAv05EDsZGmZHG/cive5rPebA7vcBfU/j3bOTQ/OEfm5OTCd6xdE8cT/WvEV6iH48fVHIz8XoB9FuPJdca3tmEG9uLKyZQfA7l/wLEm9uIlDPOyXfa/ddzoHtZyX8e/+LIvUMbB2dvy0o3xv1DzkG
   </data>
  </layer>
  <layer name="Walkable" width="20" height="20">
   <data encoding="base64" compression="zlib">
-   eJytk8ENACAIAx3Bpdh/Jb/GgF6LJH60HhRCzDHi49njdre/UZ4SLq/SZQzCpx6cHlT1/GAqc6o8u7nU/rtes3+vnKfHDkupj+ZR2BmL+iI6sjNKXcRvx3NWqxp0xu6O3zTOLOmOV7oFrWZCvg==
+   eJxzFWBgcB2hGASwsUk1AxlgE0OWI9U8fIAYf5FiJ7HhRMh8dHl8fGLNIzYsSDGP3PilJO0gm0OMfyiNO3Ldh89dtDIP3Vxs9mDTS4x5uMKJWPcRUkMN8wZbfBCDAY7mVQE=
   </data>
  </layer>
- <objectgroup name="Mapevents">
-  <object name="west" type="mapchange" x="0" y="32" width="32" height="96">
+ <objectgroup name="Mapevents" width="20" height="20">
+  <object name="west" type="mapchange" x="0" y="128" width="32" height="64">
    <properties>
-    <property name="map" value="blackwater_mountain1"/>
+    <property name="map" value="stoutford_gate"/>
     <property name="place" value="east"/>
    </properties>
   </object>
-  <object name="east" type="mapchange" x="608" y="512" width="32" height="96">
+  <object name="smith" type="mapchange" x="416" y="224" width="32" height="32">
    <properties>
-    <property name="map" value="blackwater_mountain0"/>
-    <property name="place" value="west"/>
+    <property name="map" value="stoutford_smith"/>
+    <property name="place" value="entrance"/>
    </properties>
   </object>
-  <object name="south" type="mapchange" x="224" y="608" width="32" height="32">
+  <object name="farmer1" type="mapchange" x="192" y="320" width="32" height="32">
    <properties>
-    <property name="map" value="stoutford_nw"/>
-    <property name="place" value="north"/>
+    <property name="map" value="stoutford_farmhouse1"/>
+    <property name="place" value="entrance"/>
+   </properties>
+  </object>
+  <object name="armorer" type="mapchange" x="480" y="448" width="32" height="32">
+   <properties>
+    <property name="map" value="stoutford_armorer"/>
+    <property name="place" value="entrance"/>
+   </properties>
+  </object>
+  <object name="south" type="mapchange" x="288" y="608" width="32" height="32">
+   <properties>
+    <property name="map" value="stoutford_se"/>
+    <property name="place" value="northeast"/>
+   </properties>
+  </object>
+  <object name="fieldwest" type="mapchange" x="0" y="224" width="32" height="384">
+   <properties>
+    <property name="map" value="stoutford_gate"/>
+    <property name="place" value="fieldeast"/>
+   </properties>
+  </object>
+  <object name="fieldsouth" type="mapchange" x="0" y="608" width="256" height="32">
+   <properties>
+    <property name="map" value="stoutford_se"/>
+    <property name="place" value="fieldnorth2"/>
    </properties>
   </object>
  </objectgroup>
- <objectgroup name="Spawn">
-  <object name="forestboar4" type="spawn" x="352" y="384" width="224" height="192">
-   <properties>
-    <property name="quantity" value="2"/>
-   </properties>
-  </object>
-  <object name="forestwolf2" type="spawn" x="384" y="96" width="224" height="224"/>
-  <object name="forestwolf1" type="spawn" x="32" y="320" width="288" height="256">
-   <properties>
-    <property name="quantity" value="2"/>
-   </properties>
-  </object>
-  <object name="forestbeetle" type="spawn" x="64" y="64" width="288" height="256">
-   <properties>
-    <property name="quantity" value="3"/>
-   </properties>
-  </object>
+ <objectgroup name="Spawn" width="20" height="20">
+  <object name="stoutford_farmer1" type="spawn" x="64" y="416" width="160" height="160"/>
+  <object name="stoutford_commoner2" type="spawn" x="96" y="128" width="224" height="64"/>
  </objectgroup>
- <objectgroup name="Keys"/>
+ <objectgroup name="Keys" width="20" height="20"/>
 </map>
