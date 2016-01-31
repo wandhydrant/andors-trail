@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-
+<?xml version='1.0' encoding='utf-8'?>
 <resources>
 	<string name="app_name">След Эндора</string>
 	<string name="app_description">Квестово-фэнтезийная RPG</string>
@@ -478,4 +477,23 @@
 
 	<string name="localize_resources_from_mo_filename">ru.mo</string>
 
-</resources>
+<string name="preferences_display_loot_toast_on_items">Показывать уведомление только при нахождении предметов</string>
+	<string name="heroinfo_reequip_cost">Цена переодевания (ОД):</string>
+	<string name="combat_log_title">Лог боя</string>
+	<string name="conversation_reward_quest_finished">[Квест сдан: \"%1$s\"]</string>
+	<string name="conversation_reward_quest_updated">[Квест обновлён: \"%1$s\"]</string>
+
+	<string name="skill_title_fightstyle_weapon_shield">Стиль боя: оружие с щитом</string>
+	<string name="skill_title_specialization_weapon_shield">Специализация: оружие с щитом</string>
+
+	<string name="skill_shortdescription_armor_prof_shield">Улучшить использование щитов</string>
+	<string name="skill_shortdescription_armor_prof_light">Улучшить использование лёгкой брони</string>
+	<string name="skill_shortdescription_armor_prof_heavy">Улучшить использование тяжёлой брони</string>
+	<string name="skill_shortdescription_fightstyle_2hand">Улучшить использования оружия, требующего двух рук</string>
+	<string name="skill_shortdescription_fightstyle_weapon_shield">Улучшить бой с оружием и щитом</string>
+	<string name="skill_longdescription_weapon_prof_dagger">"На каждый уровень умения, увеличивает шанс атаки при использовании кинжалов и коротких мечей на %1$d %% от базового шанса атаки предмета,увеличивает шанс блока на %2$d %% от базового шанса блока предмета, и увеличивает критический навык на %3$d %%  от базового критического навыка предмета."</string>
+	<string name="skill_longdescription_weapon_prof_1hsword">"На каждый уровень умения, увеличивает шанс атаки рапир, длинных или широких мечей на %1$d %% от базового шанса атаки предмета,увеличивает шанс блока на %2$d %% от базового шанса блока предмета, и увеличивает критический навык на %3$d %%  от базового критического навыка предмета."</string>
+	<string name="skill_longdescription_weapon_prof_2hsword">"На каждый уровень умения, увеличивает шанс атаки двуручных мечей на %1$d %% от базового шанса атаки предмета,увеличивает шанс блока на %2$d %% от базового шанса блока предмета, и увеличивает критический навык на %3$d %%  от базового критического навыка предмета."</string>
+	<string name="skill_longdescription_weapon_prof_axe">"На каждый уровень умения, увеличивает шанс атаки топоров и секир на %1$d %% от базового шанса атаки предмета,увеличивает шанс блока на %2$d %% от базового шанса блока предмета, и увеличивает критический навык на %3$d %%  от базового критического навыка предмета."</string>
+	<string name="skill_longdescription_armor_prof_shield">Увеличить сопротивление урону на %1$d за уровень навыка при надетом щите.</string>
+	</resources>
