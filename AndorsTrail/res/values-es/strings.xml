@@ -1,4 +1,4 @@
-<?xml version='1.0' encoding='utf-8'?>
+<?xml version='1.0' encoding='UTF-8'?>
 <resources><string name="app_name">Sendero de Andor</string>
 	<string name="app_description">RPG de fantasía basado en búsquedas</string>
 
@@ -340,4 +340,43 @@
 	<string name="skill_longdescription_evasion">Por cada nivel de habilidad, reduce la probabilidad de fallar al huir en un %1$d %% y la probabilidad de ser atacado por un monstruo adyacente en in %2$d %%.</string>
 	<string name="skill_longdescription_regeneration">Recupera +%1$d puntos de vida (PV) cada turno por nivel de habilidad cuando no haya enemigos directamente adyacentes.</string>
 	<string name="skill_longdescription_lower_exploss">Por cada nivel de habilidad, reduce la cantidad de experiencia perdida al morir en un %1$d %% (porcentaje del valor de perdida de experiencia existente, no del valor absoluto). %2$d niveles anularán la perdida de puntos de experiencia al morir.</string>
+	<string name="skill_longdescription_magicfinder">Incrementa la posibilidad de encontrar elementos no ordinarios en un %1$d %% para cada nivel de dificultad.</string>
+	<string name="skill_longdescription_resistance_mental">Rebaja las posibilidades de estar afectado por condiciones mentales en un %1$d %% para cada nivel de dificultad, hasta un máximo de un %2$d %%. Esto incluye condiciones causadas por ataques de monstruos como Aturdimiento o Debilidad en el Armamento.</string>
+	<string name="skill_longdescription_resistance_physical_capacity">Rebaja las posibilidades de estar afectado por malas condiciones físicas en un %1$d %% para cada nivel de dificultad, hasta un máximo de un %2$d %%. Esto incluye condiciones causadas por ataques de monstruos como Fatiga.</string>
+	<string name="skill_longdescription_resistance_blood_disorder">Rebaja las posibilidades de estar afectado por desórdenes en la sangre en un %1$d %% para cada nivel de dificultad, hasta un máximo de un %2$d %%. Esto incluye condiciones causadas por ataques de monstruos como como Veneno o heridas sangrantes.</string>
+
+	<string name="skillinfo_action_levelup">Subir de nivel</string>
+	<string name="skill_current_level">Nivel actual: %1$d</string>
+	<string name="skill_current_level_with_maximum">Nivel actual: %1$d / %2$d</string>
+	<string name="iteminfo_displaytypes_legendary">Legendario</string>
+	<string name="iteminfo_displaytypes_extraordinary">Extraordinario</string>
+	<string name="iteminfo_displaytypes_rare">Raro</string>
+
+	<string name="actorcondition_categories_spiritual">Espiritual</string>
+	<string name="actorcondition_categories_mental">Mental</string>
+	<string name="actorcondition_categories_physical">Capacidad física</string>
+	<string name="actorcondition_categories_blood">Desorden en la sangre</string>
+
+	<string name="menu_save_saving_not_allowed_in_combat">No se puede guardar el juego en medio de un combate.</string>
+
+	<string name="actorinfo_immune_criticals">Inmune a golpes críticos</string>
+	<string name="skill_title_crit1">Hemorragia interna</string>
+	<string name="skill_shortdescription_crit1">Probabilidad de hemorragia interna</string>
+	<string name="skill_title_crit2">Fractura</string>
+	<string name="skill_shortdescription_crit2">Probabilidad de fractura de hueso</string>
+	<string name="skill_title_rejuvenation">Rejuvenecimiento</string>
+	<string name="about_button4">Acerca de</string>
+
+	<string name="preferences_ui_category">Interfaz</string>
+	<string name="preferences_ui_enable_animations_title">Habilitar animaciones</string>
+	<string name="preferences_ui_enable_animations">Mostrar animaciones para varios elementos de la interfaz, como la barra de combate.</string>
+	<string name="menu_button_worldmap">Mapa</string>
+	<string name="menu_button_worldmap_failed">No se puede mostrar el mapa.</string>
+	<string name="display_worldmap_not_available">No se puede mostrar el mapa desde esta ubicación.</string>
+	<string name="display_worldmap_title">Mapa</string>
+
+	<string name="preferences_display_overwrite_savegame_entries_always_confirm">Mostrar siempre diálogo de confirmación</string>
+	<string name="preferences_display_overwrite_savegame_entries_confirm_overwrite">Mostrar solamente cuando se sobrescribe el nombre de un jugador</string>
+	<string name="preferences_display_overwrite_savegame_entries_never_confirm">Nunca mostrar diálogo de confirmación</string>
+	<string name="combat_log_title">Registro de combate</string>
 	</resources>
