@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map SYSTEM "http://mapeditor.org/dtd/1.0/map.dtd">
 <map version="1.0" orientation="orthogonal" width="20" height="20" tilewidth="32" tileheight="32">
  <properties>
   <property name="outdoors" value="1"/>
@@ -196,23 +197,34 @@
   </object>
  </objectgroup>
  <objectgroup name="Spawn" visible="0">
-  <object name="Jan" type="spawn" x="192" y="416" width="32" height="32"/>
+  <object name="Jan" type="spawn" x="192" y="416" width="32" height="32">
+   <properties>
+    <property name="spawngroup" value="Jan"/>
+   </properties>
+  </object>
   <object name="forestwasp" type="spawn" x="352" y="512" width="224" height="64">
    <properties>
     <property name="quantity" value="5"/>
+    <property name="spawngroup" value="forestwasp"/>
    </properties>
   </object>
   <object name="forestdog" type="spawn" x="288" y="288" width="288" height="224">
    <properties>
     <property name="quantity" value="2"/>
+    <property name="spawngroup" value="forestdog"/>
    </properties>
   </object>
   <object name="forestant" type="spawn" x="448" y="64" width="160" height="96">
    <properties>
     <property name="quantity" value="2"/>
+    <property name="spawngroup" value="forestant"/>
    </properties>
   </object>
-  <object name="forestant" type="spawn" x="64" y="224" width="224" height="128"/>
+  <object name="forestant_1" type="spawn" x="64" y="224" width="224" height="128">
+   <properties>
+    <property name="spawngroup" value="forestant"/>
+   </properties>
+  </object>
  </objectgroup>
  <objectgroup name="Keys" visible="0"/>
 </map>

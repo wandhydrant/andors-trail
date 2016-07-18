@@ -116,7 +116,7 @@ public final class LegacySavegameFormatReaderForPlayer {
 	private static void deactivateSpawnArea(WorldContext world, ControllerContext controllers, String mapName, String monsterTypeSpawnGroup) {
 		PredefinedMap map = world.maps.findPredefinedMap(mapName);
 		for (MonsterSpawnArea area : map.spawnAreas) {
-			if (!area.monsterTypeSpawnGroup.equals(monsterTypeSpawnGroup)) continue;
+			if (!area.areaID.equals(monsterTypeSpawnGroup)) continue;
 			controllers.monsterSpawnController.deactivateSpawnArea(area, true);
 		}
 	}

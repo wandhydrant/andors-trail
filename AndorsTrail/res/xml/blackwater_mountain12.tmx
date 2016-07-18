@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map SYSTEM "http://mapeditor.org/dtd/1.0/map.dtd">
 <map version="1.0" orientation="orthogonal" width="28" height="27" tilewidth="32" tileheight="32">
  <properties>
   <property name="outdoors" value="1"/>
@@ -143,7 +144,7 @@
    eJztU1sKwCAM8wi7lPe/0tiHIGW1ebh9GSi4ok3apf1qrZ84sTkexPOcG98x5/BlyHSxfaB8M2+mQ623uovO9iu4/b3VYPNKj+hbtL9MI8OpeF7xt7oHMx+im9G1mn8FZZaVbhbOjFVkflM85Ghz9g+5g+wWWqPaX+Q+Mif0LauP6ZPpD61T6dnhe8dPzn+M+zPOCsefcQM8v6C1
   </data>
  </layer>
- <objectgroup name="Mapevents" width="0" height="0">
+ <objectgroup name="Mapevents">
   <object name="east" type="mapchange" x="864" y="544" width="32" height="96">
    <properties>
     <property name="map" value="blackwater_mountain10"/>
@@ -163,15 +164,28 @@
    </properties>
   </object>
  </objectgroup>
- <objectgroup name="Spawn" width="0" height="0">
-  <object name="restless_dead_1" type="spawn" x="352" y="704" width="128" height="96"/>
-  <object name="forestboar4" type="spawn" x="480" y="128" width="288" height="288"/>
-  <object name="forestboar4" type="spawn" x="704" y="576" width="32" height="32"/>
+ <objectgroup name="Spawn">
+  <object name="restless_dead_1" type="spawn" x="352" y="704" width="128" height="96">
+   <properties>
+    <property name="spawngroup" value="restless_dead_1"/>
+   </properties>
+  </object>
+  <object name="forestboar4" type="spawn" x="480" y="128" width="288" height="288">
+   <properties>
+    <property name="spawngroup" value="forestboar4"/>
+   </properties>
+  </object>
+  <object name="forestboar4_1" type="spawn" x="704" y="576" width="32" height="32">
+   <properties>
+    <property name="spawngroup" value="forestboar4"/>
+   </properties>
+  </object>
   <object name="primwolf1" type="spawn" x="288" y="480" width="320" height="160">
    <properties>
     <property name="quantity" value="2"/>
+    <property name="spawngroup" value="primwolf1"/>
    </properties>
   </object>
  </objectgroup>
- <objectgroup name="Keys" width="0" height="0"/>
+ <objectgroup name="Keys"/>
 </map>

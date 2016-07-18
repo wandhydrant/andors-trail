@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map SYSTEM "http://mapeditor.org/dtd/1.0/map.dtd">
 <map version="1.0" orientation="orthogonal" width="19" height="30" tilewidth="32" tileheight="32">
  <properties>
   <property name="outdoors" value="1"/>
@@ -196,58 +197,107 @@
   <object name="yjacket2" type="spawn" x="448" y="352" width="128" height="192">
    <properties>
     <property name="quantity" value="3"/>
+    <property name="spawngroup" value="yjacket2"/>
    </properties>
   </object>
-  <object name="yjacket1" type="spawn" x="480" y="544" width="64" height="32"/>
-  <object name="yjacket1" type="spawn" x="512" y="576" width="32" height="128"/>
-  <object name="erumen_f1" type="spawn" x="64" y="288" width="64" height="128"/>
-  <object name="erumen_f1" type="spawn" x="96" y="416" width="32" height="32"/>
+  <object name="yjacket1" type="spawn" x="480" y="544" width="64" height="32">
+   <properties>
+    <property name="spawngroup" value="yjacket1"/>
+   </properties>
+  </object>
+  <object name="yjacket1_1" type="spawn" x="512" y="576" width="32" height="128">
+   <properties>
+    <property name="spawngroup" value="yjacket1"/>
+   </properties>
+  </object>
+  <object name="erumen_f1" type="spawn" x="64" y="288" width="64" height="128">
+   <properties>
+    <property name="spawngroup" value="erumen_f1"/>
+   </properties>
+  </object>
+  <object name="erumen_f1_1" type="spawn" x="96" y="416" width="32" height="32">
+   <properties>
+    <property name="spawngroup" value="erumen_f1"/>
+   </properties>
+  </object>
   <object name="forestfly1" type="spawn" x="64" y="448" width="128" height="160">
    <properties>
     <property name="quantity" value="3"/>
+    <property name="spawngroup" value="forestfly1"/>
    </properties>
   </object>
-  <object name="erumen_f1" type="spawn" x="160" y="608" width="32" height="32"/>
-  <object name="erumen_f1" type="spawn" x="64" y="640" width="192" height="192">
+  <object name="erumen_f1_2" type="spawn" x="160" y="608" width="32" height="32">
+   <properties>
+    <property name="spawngroup" value="erumen_f1"/>
+   </properties>
+  </object>
+  <object name="erumen_f1_3" type="spawn" x="64" y="640" width="192" height="192">
    <properties>
     <property name="quantity" value="2"/>
+    <property name="spawngroup" value="erumen_f1"/>
    </properties>
   </object>
-  <object name="forestfly1" type="spawn" x="32" y="640" width="384" height="192">
+  <object name="forestfly1_1" type="spawn" x="32" y="640" width="384" height="192">
    <properties>
     <property name="quantity" value="2"/>
+    <property name="spawngroup" value="forestfly1"/>
    </properties>
   </object>
-  <object name="tiqui" type="spawn" x="320" y="544" width="32" height="32"/>
-  <object name="yjacket2" type="spawn" x="128" y="64" width="96" height="32">
+  <object name="tiqui" type="spawn" x="320" y="544" width="32" height="32">
+   <properties>
+    <property name="spawngroup" value="tiqui"/>
+   </properties>
+  </object>
+  <object name="yjacket2_1" type="spawn" x="128" y="64" width="96" height="32">
    <properties>
     <property name="quantity" value="2"/>
+    <property name="spawngroup" value="yjacket2"/>
    </properties>
   </object>
-  <object name="hanklbit1" type="spawn" x="192" y="96" width="64" height="32"/>
+  <object name="hanklbit1" type="spawn" x="192" y="96" width="64" height="32">
+   <properties>
+    <property name="spawngroup" value="hanklbit1"/>
+   </properties>
+  </object>
   <object name="yjacket3" type="spawn" x="192" y="160" width="160" height="192">
    <properties>
     <property name="quantity" value="3"/>
+    <property name="spawngroup" value="yjacket3"/>
    </properties>
   </object>
-  <object name="yjacket3" type="spawn" x="320" y="352" width="32" height="32"/>
-  <object name="yjacket3" type="spawn" x="384" y="384" width="32" height="32"/>
-  <object name="yjacket2" type="spawn" x="224" y="416" width="96" height="128">
+  <object name="yjacket3_1" type="spawn" x="320" y="352" width="32" height="32">
+   <properties>
+    <property name="spawngroup" value="yjacket3"/>
+   </properties>
+  </object>
+  <object name="yjacket3_2" type="spawn" x="384" y="384" width="32" height="32">
+   <properties>
+    <property name="spawngroup" value="yjacket3"/>
+   </properties>
+  </object>
+  <object name="yjacket2_2" type="spawn" x="224" y="416" width="96" height="128">
    <properties>
     <property name="quantity" value="3"/>
+    <property name="spawngroup" value="yjacket2"/>
    </properties>
   </object>
   <object name="yjacket4" type="spawn" x="352" y="736" width="192" height="160">
    <properties>
     <property name="quantity" value="2"/>
+    <property name="spawngroup" value="yjacket4"/>
    </properties>
   </object>
-  <object name="yjacket2" type="spawn" x="384" y="96" width="160" height="160">
+  <object name="yjacket2_3" type="spawn" x="384" y="96" width="160" height="160">
    <properties>
     <property name="quantity" value="3"/>
+    <property name="spawngroup" value="yjacket2"/>
    </properties>
   </object>
-  <object name="zortaks" type="spawn" x="352" y="64" width="64" height="32"/>
+  <object name="zortaks" type="spawn" x="352" y="64" width="64" height="32">
+   <properties>
+    <property name="spawngroup" value="zortaks"/>
+   </properties>
+  </object>
  </objectgroup>
  <objectgroup name="Keys" visible="0"/>
  <objectgroup name="Replace">

@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map SYSTEM "http://mapeditor.org/dtd/1.0/map.dtd">
 <map version="1.0" orientation="orthogonal" width="30" height="20" tilewidth="32" tileheight="32">
  <properties>
   <property name="outdoors" value="1"/>
@@ -213,20 +214,34 @@
  </objectgroup>
  <objectgroup name="Keys" visible="0"/>
  <objectgroup name="Citizens" visible="0">
-  <object name="fallhaven_citizen3" type="spawn" x="320" y="64" width="576" height="256"/>
+  <object name="fallhaven_citizen3" type="spawn" x="320" y="64" width="576" height="256">
+   <properties>
+    <property name="spawngroup" value="fallhaven_citizen3"/>
+   </properties>
+  </object>
  </objectgroup>
  <objectgroup name="NPCs, Monsters">
-  <object name="fallhaven_lumberjack" type="spawn" x="416" y="256" width="32" height="32"/>
+  <object name="fallhaven_lumberjack" type="spawn" x="416" y="256" width="32" height="32">
+   <properties>
+    <property name="spawngroup" value="fallhaven_lumberjack"/>
+   </properties>
+  </object>
   <object name="forestant" type="spawn" x="64" y="384" width="288" height="192">
    <properties>
     <property name="quantity" value="2"/>
+    <property name="spawngroup" value="forestant"/>
    </properties>
   </object>
-  <object name="forestant" type="spawn" x="640" y="416" width="256" height="192">
+  <object name="forestant_1" type="spawn" x="640" y="416" width="256" height="192">
    <properties>
     <property name="quantity" value="2"/>
+    <property name="spawngroup" value="forestant"/>
    </properties>
   </object>
-  <object name="vacor" type="spawn" x="128" y="128" width="32" height="32"/>
+  <object name="vacor" type="spawn" x="128" y="128" width="32" height="32">
+   <properties>
+    <property name="spawngroup" value="vacor"/>
+   </properties>
+  </object>
  </objectgroup>
 </map>

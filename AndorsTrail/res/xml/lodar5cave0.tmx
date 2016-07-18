@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map SYSTEM "http://mapeditor.org/dtd/1.0/map.dtd">
 <map version="1.0" orientation="orthogonal" width="30" height="29" tilewidth="32" tileheight="32">
  <tileset firstgid="1" name="map_bed_1" tilewidth="32" tileheight="32">
   <image source="../drawable/map_bed_1.png" width="512" height="256"/>
@@ -158,79 +159,136 @@
   <object name="cavebat1" type="spawn" x="32" y="160" width="224" height="192">
    <properties>
     <property name="quantity" value="2"/>
+    <property name="spawngroup" value="cavebat1"/>
    </properties>
   </object>
   <object name="caveburr1" type="spawn" x="320" y="128" width="32" height="64">
    <properties>
     <property name="quantity" value="2"/>
+    <property name="spawngroup" value="caveburr1"/>
    </properties>
   </object>
-  <object name="cavebat1" type="spawn" x="384" y="96" width="256" height="160">
+  <object name="cavebat1_1" type="spawn" x="384" y="96" width="256" height="160">
    <properties>
     <property name="quantity" value="2"/>
+    <property name="spawngroup" value="cavebat1"/>
    </properties>
   </object>
-  <object name="caveburr1" type="spawn" x="576" y="384" width="64" height="32">
+  <object name="caveburr1_1" type="spawn" x="576" y="384" width="64" height="32">
    <properties>
     <property name="quantity" value="2"/>
+    <property name="spawngroup" value="caveburr1"/>
    </properties>
   </object>
-  <object name="caveburr2" type="spawn" x="480" y="480" width="32" height="32"/>
-  <object name="caveburr1" type="spawn" x="352" y="480" width="32" height="32"/>
-  <object name="caveburr1" type="spawn" x="224" y="512" width="128" height="128"/>
-  <object name="caveburr1" type="spawn" x="128" y="576" width="32" height="64">
+  <object name="caveburr2" type="spawn" x="480" y="480" width="32" height="32">
+   <properties>
+    <property name="spawngroup" value="caveburr2"/>
+   </properties>
+  </object>
+  <object name="caveburr1_2" type="spawn" x="352" y="480" width="32" height="32">
+   <properties>
+    <property name="spawngroup" value="caveburr1"/>
+   </properties>
+  </object>
+  <object name="caveburr1_3" type="spawn" x="224" y="512" width="128" height="128">
+   <properties>
+    <property name="spawngroup" value="caveburr1"/>
+   </properties>
+  </object>
+  <object name="caveburr1_4" type="spawn" x="128" y="576" width="32" height="64">
    <properties>
     <property name="quantity" value="2"/>
+    <property name="spawngroup" value="caveburr1"/>
    </properties>
   </object>
-  <object name="caveburr2" type="spawn" x="32" y="544" width="96" height="128"/>
-  <object name="caveburr1" type="spawn" x="64" y="704" width="32" height="32"/>
-  <object name="caveburr1" type="spawn" x="192" y="768" width="32" height="64">
+  <object name="caveburr2_1" type="spawn" x="32" y="544" width="96" height="128">
+   <properties>
+    <property name="spawngroup" value="caveburr2"/>
+   </properties>
+  </object>
+  <object name="caveburr1_5" type="spawn" x="64" y="704" width="32" height="32">
+   <properties>
+    <property name="spawngroup" value="caveburr1"/>
+   </properties>
+  </object>
+  <object name="caveburr1_6" type="spawn" x="192" y="768" width="32" height="64">
    <properties>
     <property name="quantity" value="2"/>
+    <property name="spawngroup" value="caveburr1"/>
    </properties>
   </object>
-  <object name="cavebat1" type="spawn" x="256" y="768" width="160" height="96">
+  <object name="cavebat1_2" type="spawn" x="256" y="768" width="160" height="96">
    <properties>
     <property name="quantity" value="2"/>
+    <property name="spawngroup" value="cavebat1"/>
    </properties>
   </object>
-  <object name="caveburr1" type="spawn" x="480" y="640" width="128" height="192"/>
-  <object name="caveburr1" type="spawn" x="672" y="608" width="32" height="32"/>
-  <object name="cavebat1" type="spawn" x="704" y="512" width="128" height="192">
+  <object name="caveburr1_7" type="spawn" x="480" y="640" width="128" height="192">
+   <properties>
+    <property name="spawngroup" value="caveburr1"/>
+   </properties>
+  </object>
+  <object name="caveburr1_8" type="spawn" x="672" y="608" width="32" height="32">
+   <properties>
+    <property name="spawngroup" value="caveburr1"/>
+   </properties>
+  </object>
+  <object name="cavebat1_3" type="spawn" x="704" y="512" width="128" height="192">
    <properties>
     <property name="quantity" value="2"/>
+    <property name="spawngroup" value="cavebat1"/>
    </properties>
   </object>
-  <object name="caveburr1" type="spawn" x="704" y="96" width="32" height="224">
+  <object name="caveburr1_9" type="spawn" x="704" y="96" width="32" height="224">
    <properties>
     <property name="quantity" value="2"/>
+    <property name="spawngroup" value="caveburr1"/>
    </properties>
   </object>
-  <object name="caveburr1" type="spawn" x="736" y="352" width="32" height="160">
+  <object name="caveburr1_10" type="spawn" x="736" y="352" width="32" height="160">
    <properties>
     <property name="quantity" value="2"/>
+    <property name="spawngroup" value="caveburr1"/>
    </properties>
   </object>
-  <object name="caveburr1" type="spawn" x="736" y="96" width="160" height="32">
+  <object name="caveburr1_11" type="spawn" x="736" y="96" width="160" height="32">
    <properties>
     <property name="quantity" value="2"/>
+    <property name="spawngroup" value="caveburr1"/>
    </properties>
   </object>
-  <object name="caveburr1" type="spawn" x="896" y="160" width="32" height="192"/>
-  <object name="cavebat1" type="spawn" x="864" y="352" width="64" height="32">
+  <object name="caveburr1_12" type="spawn" x="896" y="160" width="32" height="192">
+   <properties>
+    <property name="spawngroup" value="caveburr1"/>
+   </properties>
+  </object>
+  <object name="cavebat1_4" type="spawn" x="864" y="352" width="64" height="32">
    <properties>
     <property name="quantity" value="2"/>
+    <property name="spawngroup" value="cavebat1"/>
    </properties>
   </object>
-  <object name="caveburr1" type="spawn" x="896" y="384" width="32" height="320"/>
-  <object name="cavebat1" type="spawn" x="640" y="736" width="288" height="128">
+  <object name="caveburr1_13" type="spawn" x="896" y="384" width="32" height="320">
+   <properties>
+    <property name="spawngroup" value="caveburr1"/>
+   </properties>
+  </object>
+  <object name="cavebat1_5" type="spawn" x="640" y="736" width="288" height="128">
    <properties>
     <property name="quantity" value="2"/>
+    <property name="spawngroup" value="cavebat1"/>
    </properties>
   </object>
-  <object name="cavebat1" type="spawn" x="576" y="288" width="32" height="64"/>
-  <object name="caveburr1" type="spawn" x="416" y="480" width="32" height="32"/>
+  <object name="cavebat1_6" type="spawn" x="576" y="288" width="32" height="64">
+   <properties>
+    <property name="spawngroup" value="cavebat1"/>
+   </properties>
+  </object>
+  <object name="caveburr1_14" type="spawn" x="416" y="480" width="32" height="32">
+   <properties>
+    <property name="spawngroup" value="caveburr1"/>
+   </properties>
+  </object>
  </objectgroup>
  <objectgroup name="Keys"/>
 </map>

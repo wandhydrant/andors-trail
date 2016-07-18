@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map SYSTEM "http://mapeditor.org/dtd/1.0/map.dtd">
 <map version="1.0" orientation="orthogonal" width="30" height="30" tilewidth="32" tileheight="32">
  <properties>
   <property name="outdoors" value="1"/>
@@ -158,7 +159,7 @@
    eJztlMsNhDAMRClhm6L/lva0F8sz85wlEkJYigT48+KJw/k5jvNhq7MU93sndSl/ssfqm8Q6o2ylBa1BuCRP1XD7TczuXLp6JL5qQ7ip70nchOn0U/OmeCtMl09shUe4yr+bu9qni3X16jfHJbUp1/Wr7hc9o8k5pZ6Sr8atcmtNes4THdKzy1exJDfxulzCInue5k77vprr5kHlV7/Tm8w/vSd03Y1b9VD6Ot3Vc+qX1LnCyEz+43d6dTOc7hTVP/2v3rV/fQGSTav/
   </data>
  </layer>
- <objectgroup name="Mapevents" width="0" height="0">
+ <objectgroup name="Mapevents">
   <object name="east" type="mapchange" x="928" y="96" width="32" height="64">
    <properties>
     <property name="map" value="blackwater_mountain30"/>
@@ -173,47 +174,74 @@
   </object>
   <object name="sign_blackwater32" type="sign" x="832" y="128" width="32" height="32"/>
  </objectgroup>
- <objectgroup name="Spawn" width="0" height="0">
-  <object name="wyrm_2" type="spawn" x="832" y="672" width="32" height="32"/>
-  <object name="wyrm_2" type="spawn" x="608" y="32" width="320" height="256">
+ <objectgroup name="Spawn">
+  <object name="wyrm_2" type="spawn" x="832" y="672" width="32" height="32">
+   <properties>
+    <property name="spawngroup" value="wyrm_2"/>
+   </properties>
+  </object>
+  <object name="wyrm_2_1" type="spawn" x="608" y="32" width="320" height="256">
    <properties>
     <property name="quantity" value="3"/>
+    <property name="spawngroup" value="wyrm_2"/>
    </properties>
   </object>
   <object name="wyrm_3" type="spawn" x="320" y="160" width="96" height="192">
    <properties>
     <property name="quantity" value="2"/>
+    <property name="spawngroup" value="wyrm_3"/>
    </properties>
   </object>
-  <object name="wyrm_3" type="spawn" x="96" y="512" width="352" height="160">
+  <object name="wyrm_3_1" type="spawn" x="96" y="512" width="352" height="160">
    <properties>
     <property name="quantity" value="2"/>
+    <property name="spawngroup" value="wyrm_3"/>
    </properties>
   </object>
-  <object name="wyrm_3" type="spawn" x="64" y="736" width="704" height="128">
+  <object name="wyrm_3_2" type="spawn" x="64" y="736" width="704" height="128">
    <properties>
     <property name="quantity" value="4"/>
+    <property name="spawngroup" value="wyrm_3"/>
    </properties>
   </object>
-  <object name="wyrm_3" type="spawn" x="288" y="448" width="64" height="64"/>
-  <object name="wyrm_3" type="spawn" x="480" y="224" width="320" height="224">
+  <object name="wyrm_3_3" type="spawn" x="288" y="448" width="64" height="64">
+   <properties>
+    <property name="spawngroup" value="wyrm_3"/>
+   </properties>
+  </object>
+  <object name="wyrm_3_4" type="spawn" x="480" y="224" width="320" height="224">
    <properties>
     <property name="quantity" value="3"/>
+    <property name="spawngroup" value="wyrm_3"/>
    </properties>
   </object>
-  <object name="wyrm_3" type="spawn" x="608" y="448" width="32" height="96"/>
-  <object name="wyrm_2" type="spawn" x="768" y="736" width="160" height="128"/>
-  <object name="wyrm_3" type="spawn" x="352" y="672" width="32" height="32"/>
-  <object name="wyrm_3" type="spawn" x="32" y="384" width="192" height="288">
+  <object name="wyrm_3_5" type="spawn" x="608" y="448" width="32" height="96">
+   <properties>
+    <property name="spawngroup" value="wyrm_3"/>
+   </properties>
+  </object>
+  <object name="wyrm_2_2" type="spawn" x="768" y="736" width="160" height="128">
+   <properties>
+    <property name="spawngroup" value="wyrm_2"/>
+   </properties>
+  </object>
+  <object name="wyrm_3_6" type="spawn" x="352" y="672" width="32" height="32">
+   <properties>
+    <property name="spawngroup" value="wyrm_3"/>
+   </properties>
+  </object>
+  <object name="wyrm_3_7" type="spawn" x="32" y="384" width="192" height="288">
    <properties>
     <property name="quantity" value="2"/>
+    <property name="spawngroup" value="wyrm_3"/>
    </properties>
   </object>
-  <object name="wyrm_2" type="spawn" x="480" y="512" width="416" height="160">
+  <object name="wyrm_2_3" type="spawn" x="480" y="512" width="416" height="160">
    <properties>
     <property name="quantity" value="3"/>
+    <property name="spawngroup" value="wyrm_2"/>
    </properties>
   </object>
  </objectgroup>
- <objectgroup name="Keys" width="0" height="0"/>
+ <objectgroup name="Keys"/>
 </map>

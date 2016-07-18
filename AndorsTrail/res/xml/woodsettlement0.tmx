@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map SYSTEM "http://mapeditor.org/dtd/1.0/map.dtd">
 <map version="1.0" orientation="orthogonal" width="30" height="14" tilewidth="32" tileheight="32">
  <properties>
   <property name="outdoors" value="1"/>
@@ -176,13 +177,34 @@
   <object name="pig" type="spawn" x="672" y="160" width="128" height="224">
    <properties>
     <property name="quantity" value="2"/>
+    <property name="spawngroup" value="pig"/>
    </properties>
   </object>
-  <object name="smuggler6" type="spawn" x="512" y="320" width="32" height="32"/>
-  <object name="vermin" type="spawn" x="256" y="288" width="160" height="96"/>
-  <object name="vermin" type="spawn" x="128" y="160" width="64" height="160"/>
-  <object name="vermin" type="spawn" x="416" y="160" width="64" height="160"/>
-  <object name="vermin" type="spawn" x="480" y="160" width="128" height="32"/>
+  <object name="smuggler6" type="spawn" x="512" y="320" width="32" height="32">
+   <properties>
+    <property name="spawngroup" value="smuggler6"/>
+   </properties>
+  </object>
+  <object name="vermin" type="spawn" x="256" y="288" width="160" height="96">
+   <properties>
+    <property name="spawngroup" value="vermin"/>
+   </properties>
+  </object>
+  <object name="vermin_1" type="spawn" x="128" y="160" width="64" height="160">
+   <properties>
+    <property name="spawngroup" value="vermin"/>
+   </properties>
+  </object>
+  <object name="vermin_2" type="spawn" x="416" y="160" width="64" height="160">
+   <properties>
+    <property name="spawngroup" value="vermin"/>
+   </properties>
+  </object>
+  <object name="vermin_3" type="spawn" x="480" y="160" width="128" height="32">
+   <properties>
+    <property name="spawngroup" value="vermin"/>
+   </properties>
+  </object>
  </objectgroup>
  <objectgroup name="Keys" visible="0"/>
 </map>

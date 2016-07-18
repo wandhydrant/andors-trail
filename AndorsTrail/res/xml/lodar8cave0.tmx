@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map SYSTEM "http://mapeditor.org/dtd/1.0/map.dtd">
 <map version="1.0" orientation="orthogonal" width="25" height="17" tilewidth="32" tileheight="32">
  <tileset firstgid="1" name="map_bed_1" tilewidth="32" tileheight="32">
   <image source="../drawable/map_bed_1.png" width="512" height="256"/>
@@ -155,40 +156,51 @@
   </object>
  </objectgroup>
  <objectgroup name="Spawn">
-  <object name="mudfiend" type="spawn" x="224" y="352" width="32" height="32"/>
-  <object name="mudfiend" type="spawn" x="416" y="352" width="32" height="128">
+  <object name="mudfiend" type="spawn" x="224" y="352" width="32" height="32">
    <properties>
-    <property name="quantity" value="2"/>
+    <property name="spawngroup" value="mudfiend"/>
    </properties>
   </object>
-  <object name="mudfiend" type="spawn" x="288" y="480" width="128" height="32">
+  <object name="mudfiend_1" type="spawn" x="416" y="352" width="32" height="128">
    <properties>
     <property name="quantity" value="2"/>
+    <property name="spawngroup" value="mudfiend"/>
    </properties>
   </object>
-  <object name="mudfiend" type="spawn" x="544" y="480" width="96" height="32">
+  <object name="mudfiend_2" type="spawn" x="288" y="480" width="128" height="32">
    <properties>
     <property name="quantity" value="2"/>
+    <property name="spawngroup" value="mudfiend"/>
    </properties>
   </object>
-  <object name="mudfiend" type="spawn" x="512" y="352" width="32" height="128">
+  <object name="mudfiend_3" type="spawn" x="544" y="480" width="96" height="32">
    <properties>
     <property name="quantity" value="2"/>
+    <property name="spawngroup" value="mudfiend"/>
    </properties>
   </object>
-  <object name="mudfiend" type="spawn" x="672" y="256" width="32" height="128">
+  <object name="mudfiend_4" type="spawn" x="512" y="352" width="32" height="128">
    <properties>
     <property name="quantity" value="2"/>
+    <property name="spawngroup" value="mudfiend"/>
    </properties>
   </object>
-  <object name="mudfiend" type="spawn" x="640" y="416" width="32" height="64">
+  <object name="mudfiend_5" type="spawn" x="672" y="256" width="32" height="128">
    <properties>
     <property name="quantity" value="2"/>
+    <property name="spawngroup" value="mudfiend"/>
    </properties>
   </object>
-  <object name="mudfiend" type="spawn" x="32" y="320" width="128" height="160">
+  <object name="mudfiend_6" type="spawn" x="640" y="416" width="32" height="64">
    <properties>
     <property name="quantity" value="2"/>
+    <property name="spawngroup" value="mudfiend"/>
+   </properties>
+  </object>
+  <object name="mudfiend_7" type="spawn" x="32" y="320" width="128" height="160">
+   <properties>
+    <property name="quantity" value="2"/>
+    <property name="spawngroup" value="mudfiend"/>
    </properties>
   </object>
  </objectgroup>
@@ -196,16 +208,19 @@
   <object name="cavebat1" type="spawn" x="32" y="192" width="256" height="320">
    <properties>
     <property name="quantity" value="2"/>
+    <property name="spawngroup" value="cavebat1"/>
    </properties>
   </object>
-  <object name="cavebat1" type="spawn" x="352" y="128" width="192" height="224">
+  <object name="cavebat1_1" type="spawn" x="352" y="128" width="192" height="224">
    <properties>
     <property name="quantity" value="2"/>
+    <property name="spawngroup" value="cavebat1"/>
    </properties>
   </object>
-  <object name="cavebat1" type="spawn" x="640" y="128" width="96" height="128">
+  <object name="cavebat1_2" type="spawn" x="640" y="128" width="96" height="128">
    <properties>
     <property name="quantity" value="2"/>
+    <property name="spawngroup" value="cavebat1"/>
    </properties>
   </object>
  </objectgroup>

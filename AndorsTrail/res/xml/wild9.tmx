@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map SYSTEM "http://mapeditor.org/dtd/1.0/map.dtd">
 <map version="1.0" orientation="orthogonal" width="30" height="24" tilewidth="32" tileheight="32">
  <properties>
   <property name="outdoors" value="1"/>
@@ -200,27 +201,43 @@
   </object>
  </objectgroup>
  <objectgroup name="Spawn" visible="0">
-  <object name="bandit1" type="spawn" x="64" y="512" width="832" height="96"/>
-  <object name="fallhaven_bandit" type="spawn" x="416" y="288" width="32" height="32"/>
+  <object name="bandit1" type="spawn" x="64" y="512" width="832" height="96">
+   <properties>
+    <property name="spawngroup" value="bandit1"/>
+   </properties>
+  </object>
+  <object name="fallhaven_bandit" type="spawn" x="416" y="288" width="32" height="32">
+   <properties>
+    <property name="spawngroup" value="fallhaven_bandit"/>
+   </properties>
+  </object>
   <object name="forestwasp2" type="spawn" x="160" y="352" width="736" height="352">
    <properties>
     <property name="quantity" value="3"/>
+    <property name="spawngroup" value="forestwasp2"/>
    </properties>
   </object>
   <object name="forestwolf1" type="spawn" x="128" y="320" width="736" height="352">
    <properties>
     <property name="quantity" value="3"/>
+    <property name="spawngroup" value="forestwolf1"/>
    </properties>
   </object>
-  <object name="forestwolf1" type="spawn" x="416" y="64" width="352" height="224">
+  <object name="forestwolf1_1" type="spawn" x="416" y="64" width="352" height="224">
    <properties>
     <property name="quantity" value="2"/>
+    <property name="spawngroup" value="forestwolf1"/>
    </properties>
   </object>
-  <object name="forestant" type="spawn" x="800" y="64" width="96" height="224"/>
-  <object name="forestwasp2" type="spawn" x="64" y="64" width="256" height="224">
+  <object name="forestant" type="spawn" x="800" y="64" width="96" height="224">
+   <properties>
+    <property name="spawngroup" value="forestant"/>
+   </properties>
+  </object>
+  <object name="forestwasp2_1" type="spawn" x="64" y="64" width="256" height="224">
    <properties>
     <property name="quantity" value="2"/>
+    <property name="spawngroup" value="forestwasp2"/>
    </properties>
   </object>
  </objectgroup>

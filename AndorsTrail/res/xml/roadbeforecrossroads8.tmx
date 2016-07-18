@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map SYSTEM "http://mapeditor.org/dtd/1.0/map.dtd">
 <map version="1.0" orientation="orthogonal" width="20" height="27" tilewidth="32" tileheight="32">
  <properties>
   <property name="outdoors" value="1"/>
@@ -171,28 +172,40 @@
   <object name="sign_rbfcr8" type="sign" x="448" y="544" width="32" height="32"/>
  </objectgroup>
  <objectgroup name="Spawn">
-  <object name="forestfox2" type="spawn" x="352" y="384" width="64" height="32"/>
-  <object name="forestfox2" type="spawn" x="352" y="448" width="64" height="32">
+  <object name="forestfox2" type="spawn" x="352" y="384" width="64" height="32">
+   <properties>
+    <property name="spawngroup" value="forestfox2"/>
+   </properties>
+  </object>
+  <object name="forestfox2_1" type="spawn" x="352" y="448" width="64" height="32">
    <properties>
     <property name="quantity" value="2"/>
+    <property name="spawngroup" value="forestfox2"/>
    </properties>
   </object>
   <object name="forestserpent2" type="spawn" x="96" y="640" width="128" height="160">
    <properties>
     <property name="quantity" value="2"/>
+    <property name="spawngroup" value="forestserpent2"/>
    </properties>
   </object>
   <object name="beetle2" type="spawn" x="320" y="704" width="160" height="128">
    <properties>
     <property name="quantity" value="3"/>
+    <property name="spawngroup" value="beetle2"/>
    </properties>
   </object>
-  <object name="forestserpent2" type="spawn" x="480" y="704" width="96" height="160">
+  <object name="forestserpent2_1" type="spawn" x="480" y="704" width="96" height="160">
    <properties>
     <property name="quantity" value="2"/>
+    <property name="spawngroup" value="forestserpent2"/>
    </properties>
   </object>
-  <object name="redft1" type="spawn" x="352" y="96" width="32" height="32"/>
+  <object name="redft1" type="spawn" x="352" y="96" width="32" height="32">
+   <properties>
+    <property name="spawngroup" value="redft1"/>
+   </properties>
+  </object>
  </objectgroup>
  <objectgroup name="Keys" visible="0"/>
 </map>

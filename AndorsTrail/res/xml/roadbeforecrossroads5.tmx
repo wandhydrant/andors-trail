@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map SYSTEM "http://mapeditor.org/dtd/1.0/map.dtd">
 <map version="1.0" orientation="orthogonal" width="20" height="22" tilewidth="32" tileheight="32">
  <properties>
   <property name="outdoors" value="1"/>
@@ -156,7 +157,7 @@
    eJxjYBgFo2AUjIJRMAqGHwAABuAAAQ==
   </data>
  </layer>
- <objectgroup name="Mapevents" width="0" height="0">
+ <objectgroup name="Mapevents">
   <object name="north" type="mapchange" x="288" y="0" width="224" height="32">
    <properties>
     <property name="map" value="roadbeforecrossroads4"/>
@@ -177,22 +178,32 @@
    </properties>
   </object>
  </objectgroup>
- <objectgroup name="Spawn" width="0" height="0">
+ <objectgroup name="Spawn">
   <object name="forestboar3" type="spawn" x="128" y="288" width="192" height="192">
    <properties>
     <property name="quantity" value="3"/>
+    <property name="spawngroup" value="forestboar3"/>
    </properties>
   </object>
   <object name="forestserpent2" type="spawn" x="128" y="416" width="192" height="224">
    <properties>
     <property name="quantity" value="2"/>
+    <property name="spawngroup" value="forestserpent2"/>
    </properties>
   </object>
-  <object name="forestserpent2" type="spawn" x="512" y="352" width="64" height="96"/>
-  <object name="forestboar2" type="spawn" x="352" y="544" width="64" height="96"/>
+  <object name="forestserpent2_1" type="spawn" x="512" y="352" width="64" height="96">
+   <properties>
+    <property name="spawngroup" value="forestserpent2"/>
+   </properties>
+  </object>
+  <object name="forestboar2" type="spawn" x="352" y="544" width="64" height="96">
+   <properties>
+    <property name="spawngroup" value="forestboar2"/>
+   </properties>
+  </object>
  </objectgroup>
- <objectgroup name="Keys" width="0" height="0"/>
- <objectgroup name="Replace" width="20" height="22">
+ <objectgroup name="Keys"/>
+ <objectgroup name="Replace">
   <object name="pathway_fallhaven:50" type="replace" x="0" y="160" width="192" height="160">
    <properties>
     <property name="Above" value="layer_replace"/>

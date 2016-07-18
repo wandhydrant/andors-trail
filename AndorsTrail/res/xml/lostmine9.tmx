@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map SYSTEM "http://mapeditor.org/dtd/1.0/map.dtd">
 <map version="1.0" orientation="orthogonal" width="28" height="28" tilewidth="32" tileheight="32">
  <tileset firstgid="1" name="map_bed_1" tilewidth="32" tileheight="32">
   <image source="../drawable/map_bed_1.png" width="512" height="256"/>
@@ -140,7 +141,7 @@
    eJxzFWBgcB3FJGNkMNjtI0UfNezBBvDpoSRM8Iljk6eVfbj8ORzsIxS/5NpFiVtJsYOa7iY3/GhhJ7HxNdD2wcRIcQ8xavHZR2rck+ouQmZTyz5y3USvtEcv+wiFG764oAemt50D4Ud84TwSwpxYe2mZ9gc6zNExAFjv1n8=
   </data>
  </layer>
- <objectgroup name="Mapevents" width="0" height="0">
+ <objectgroup name="Mapevents">
   <object name="up lostmine9" type="mapchange" x="800" y="800" width="32" height="32">
    <properties>
     <property name="map" value="lostmine8"/>
@@ -154,32 +155,94 @@
    </properties>
   </object>
  </objectgroup>
- <objectgroup name="Spawn" width="0" height="0">
-  <object name="fire2" type="spawn" x="640" y="832" width="128" height="32"/>
-  <object name="fire2" type="spawn" x="576" y="800" width="32" height="32"/>
-  <object name="fire3" type="spawn" x="480" y="736" width="64" height="64"/>
-  <object name="fire3" type="spawn" x="320" y="736" width="128" height="32"/>
-  <object name="fire2" type="spawn" x="192" y="640" width="96" height="128"/>
-  <object name="fire2" type="spawn" x="96" y="640" width="64" height="32"/>
-  <object name="fire3" type="spawn" x="64" y="512" width="32" height="64"/>
-  <object name="fire2" type="spawn" x="96" y="384" width="32" height="96"/>
-  <object name="fire3" type="spawn" x="128" y="320" width="192" height="64"/>
-  <object name="fire2" type="spawn" x="320" y="352" width="96" height="192"/>
-  <object name="fire2" type="spawn" x="448" y="512" width="64" height="32"/>
+ <objectgroup name="Spawn">
+  <object name="fire2" type="spawn" x="640" y="832" width="128" height="32">
+   <properties>
+    <property name="spawngroup" value="fire2"/>
+   </properties>
+  </object>
+  <object name="fire2_1" type="spawn" x="576" y="800" width="32" height="32">
+   <properties>
+    <property name="spawngroup" value="fire2"/>
+   </properties>
+  </object>
+  <object name="fire3" type="spawn" x="480" y="736" width="64" height="64">
+   <properties>
+    <property name="spawngroup" value="fire3"/>
+   </properties>
+  </object>
+  <object name="fire3_1" type="spawn" x="320" y="736" width="128" height="32">
+   <properties>
+    <property name="spawngroup" value="fire3"/>
+   </properties>
+  </object>
+  <object name="fire2_2" type="spawn" x="192" y="640" width="96" height="128">
+   <properties>
+    <property name="spawngroup" value="fire2"/>
+   </properties>
+  </object>
+  <object name="fire2_3" type="spawn" x="96" y="640" width="64" height="32">
+   <properties>
+    <property name="spawngroup" value="fire2"/>
+   </properties>
+  </object>
+  <object name="fire3_2" type="spawn" x="64" y="512" width="32" height="64">
+   <properties>
+    <property name="spawngroup" value="fire3"/>
+   </properties>
+  </object>
+  <object name="fire2_4" type="spawn" x="96" y="384" width="32" height="96">
+   <properties>
+    <property name="spawngroup" value="fire2"/>
+   </properties>
+  </object>
+  <object name="fire3_3" type="spawn" x="128" y="320" width="192" height="64">
+   <properties>
+    <property name="spawngroup" value="fire3"/>
+   </properties>
+  </object>
+  <object name="fire2_5" type="spawn" x="320" y="352" width="96" height="192">
+   <properties>
+    <property name="spawngroup" value="fire2"/>
+   </properties>
+  </object>
+  <object name="fire2_6" type="spawn" x="448" y="512" width="64" height="32">
+   <properties>
+    <property name="spawngroup" value="fire2"/>
+   </properties>
+  </object>
   <object name="ash4" type="spawn" x="544" y="448" width="288" height="192">
    <properties>
     <property name="quantity" value="2"/>
+    <property name="spawngroup" value="ash4"/>
    </properties>
   </object>
-  <object name="fire2" type="spawn" x="224" y="192" width="32" height="128"/>
-  <object name="fire2" type="spawn" x="416" y="192" width="128" height="128">
+  <object name="fire2_7" type="spawn" x="224" y="192" width="32" height="128">
+   <properties>
+    <property name="spawngroup" value="fire2"/>
+   </properties>
+  </object>
+  <object name="fire2_8" type="spawn" x="416" y="192" width="128" height="128">
    <properties>
     <property name="quantity" value="2"/>
+    <property name="spawngroup" value="fire2"/>
    </properties>
   </object>
-  <object name="fire2" type="spawn" x="544" y="288" width="96" height="32"/>
-  <object name="fire3" type="spawn" x="640" y="160" width="32" height="128"/>
-  <object name="fire3" type="spawn" x="704" y="128" width="32" height="32"/>
+  <object name="fire2_9" type="spawn" x="544" y="288" width="96" height="32">
+   <properties>
+    <property name="spawngroup" value="fire2"/>
+   </properties>
+  </object>
+  <object name="fire3_4" type="spawn" x="640" y="160" width="32" height="128">
+   <properties>
+    <property name="spawngroup" value="fire3"/>
+   </properties>
+  </object>
+  <object name="fire3_5" type="spawn" x="704" y="128" width="32" height="32">
+   <properties>
+    <property name="spawngroup" value="fire3"/>
+   </properties>
+  </object>
  </objectgroup>
- <objectgroup name="Keys" width="0" height="0"/>
+ <objectgroup name="Keys"/>
 </map>

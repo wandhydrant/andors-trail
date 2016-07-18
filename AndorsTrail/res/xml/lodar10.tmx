@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map SYSTEM "http://mapeditor.org/dtd/1.0/map.dtd">
 <map version="1.0" orientation="orthogonal" width="20" height="25" tilewidth="32" tileheight="32">
  <properties>
   <property name="outdoors" value="1"/>
@@ -161,10 +162,19 @@
   <object name="khakin1" type="spawn" x="64" y="224" width="416" height="480">
    <properties>
     <property name="quantity" value="5"/>
+    <property name="spawngroup" value="khakin1"/>
    </properties>
   </object>
-  <object name="khakin1" type="spawn" x="320" y="384" width="64" height="32"/>
-  <object name="morkins" type="spawn" x="224" y="64" width="160" height="160"/>
+  <object name="khakin1_1" type="spawn" x="320" y="384" width="64" height="32">
+   <properties>
+    <property name="spawngroup" value="khakin1"/>
+   </properties>
+  </object>
+  <object name="morkins" type="spawn" x="224" y="64" width="160" height="160">
+   <properties>
+    <property name="spawngroup" value="morkins"/>
+   </properties>
+  </object>
  </objectgroup>
  <objectgroup name="Keys"/>
 </map>

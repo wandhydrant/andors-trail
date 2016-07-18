@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map SYSTEM "http://mapeditor.org/dtd/1.0/map.dtd">
 <map version="1.0" orientation="orthogonal" width="30" height="20" tilewidth="32" tileheight="32">
  <properties>
   <property name="outdoors" value="1"/>
@@ -143,7 +144,7 @@
    eJy9klEOwCAMQj3CLuX9r7T4Z4wIrLgm/dmQV6r9aa1f7FE3/RPc5Iyq11yq30nr+iA2KsRAXKVWLTuX4CI9Ov/lfh2uOyf6n+BW3ijTVfKqns5sil7VOPOv3xSeM5+bN7VrtqvE23LzsjPurlEl8zIu2vXO32FWupq3wlXu5O/sc7+gZoQn
   </data>
  </layer>
- <objectgroup name="Mapevents" width="0" height="0">
+ <objectgroup name="Mapevents">
   <object name="west" type="mapchange" x="0" y="160" width="32" height="64">
    <properties>
     <property name="map" value="blackwater_mountain10"/>
@@ -163,24 +164,35 @@
    </properties>
   </object>
  </objectgroup>
- <objectgroup name="Spawn" width="0" height="0">
+ <objectgroup name="Spawn">
   <object name="primwolf1" type="spawn" x="96" y="64" width="192" height="384">
    <properties>
     <property name="quantity" value="2"/>
+    <property name="spawngroup" value="primwolf1"/>
    </properties>
   </object>
-  <object name="bwm_agent_3" type="spawn" x="768" y="192" width="32" height="32"/>
-  <object name="primwolf1" type="spawn" x="384" y="416" width="32" height="32"/>
+  <object name="bwm_agent_3" type="spawn" x="768" y="192" width="32" height="32">
+   <properties>
+    <property name="spawngroup" value="bwm_agent_3"/>
+   </properties>
+  </object>
+  <object name="primwolf1_1" type="spawn" x="384" y="416" width="32" height="32">
+   <properties>
+    <property name="spawngroup" value="primwolf1"/>
+   </properties>
+  </object>
   <object name="forestboar4" type="spawn" x="352" y="96" width="320" height="320">
    <properties>
     <property name="quantity" value="2"/>
+    <property name="spawngroup" value="forestboar4"/>
    </properties>
   </object>
-  <object name="primwolf1" type="spawn" x="704" y="320" width="192" height="256">
+  <object name="primwolf1_2" type="spawn" x="704" y="320" width="192" height="256">
    <properties>
     <property name="quantity" value="2"/>
+    <property name="spawngroup" value="primwolf1"/>
    </properties>
   </object>
  </objectgroup>
- <objectgroup name="Keys" width="0" height="0"/>
+ <objectgroup name="Keys"/>
 </map>

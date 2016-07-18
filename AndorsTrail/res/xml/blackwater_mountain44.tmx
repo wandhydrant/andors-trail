@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map SYSTEM "http://mapeditor.org/dtd/1.0/map.dtd">
 <map version="1.0" orientation="orthogonal" width="20" height="20" tilewidth="32" tileheight="32">
  <tileset firstgid="1" name="map_bed_1" tilewidth="32" tileheight="32">
   <image source="../drawable/map_bed_1.png" width="512" height="256"/>
@@ -140,7 +141,7 @@
    eJxzFWBgcB2BGAYIyeMDpKglxTyYmYTY2PiE/IqLTYp5w9F9hOKDlHRFK/Oole5JiRdq+pcQwGcnujixYUsr8wj5lxqAUH4hVz81MQD4nFmn
   </data>
  </layer>
- <objectgroup name="Mapevents" width="0" height="0">
+ <objectgroup name="Mapevents">
   <object name="north" type="mapchange" x="576" y="96" width="32" height="32">
    <properties>
     <property name="map" value="blackwater_mountain43"/>
@@ -161,16 +162,44 @@
   <object name="rest1" type="rest" x="32" y="128" width="32" height="32"/>
   <object name="rest3" type="rest" x="32" y="256" width="32" height="32"/>
  </objectgroup>
- <objectgroup name="Spawn" width="0" height="0">
-  <object name="blackwater_sleephall" type="spawn" x="64" y="96" width="32" height="32"/>
-  <object name="herec" type="spawn" x="160" y="288" width="32" height="32"/>
-  <object name="iducus" type="spawn" x="64" y="448" width="128" height="64"/>
-  <object name="blackwater_priest" type="spawn" x="512" y="288" width="32" height="32"/>
-  <object name="blackwater_pupil" type="spawn" x="544" y="544" width="32" height="32"/>
-  <object name="blackwater_guard1" type="spawn" x="448" y="128" width="96" height="32"/>
-  <object name="blackwater_guard1" type="spawn" x="448" y="512" width="32" height="32"/>
+ <objectgroup name="Spawn">
+  <object name="blackwater_sleephall" type="spawn" x="64" y="96" width="32" height="32">
+   <properties>
+    <property name="spawngroup" value="blackwater_sleephall"/>
+   </properties>
+  </object>
+  <object name="herec" type="spawn" x="160" y="288" width="32" height="32">
+   <properties>
+    <property name="spawngroup" value="herec"/>
+   </properties>
+  </object>
+  <object name="iducus" type="spawn" x="64" y="448" width="128" height="64">
+   <properties>
+    <property name="spawngroup" value="iducus"/>
+   </properties>
+  </object>
+  <object name="blackwater_priest" type="spawn" x="512" y="288" width="32" height="32">
+   <properties>
+    <property name="spawngroup" value="blackwater_priest"/>
+   </properties>
+  </object>
+  <object name="blackwater_pupil" type="spawn" x="544" y="544" width="32" height="32">
+   <properties>
+    <property name="spawngroup" value="blackwater_pupil"/>
+   </properties>
+  </object>
+  <object name="blackwater_guard1" type="spawn" x="448" y="128" width="96" height="32">
+   <properties>
+    <property name="spawngroup" value="blackwater_guard1"/>
+   </properties>
+  </object>
+  <object name="blackwater_guard1_1" type="spawn" x="448" y="512" width="32" height="32">
+   <properties>
+    <property name="spawngroup" value="blackwater_guard1"/>
+   </properties>
+  </object>
  </objectgroup>
- <objectgroup name="Keys" width="0" height="0">
+ <objectgroup name="Keys">
   <object name="nondisplay:16" type="key" x="224" y="160" width="32" height="160">
    <properties>
     <property name="phrase" value="bwm_sleephall_1"/>

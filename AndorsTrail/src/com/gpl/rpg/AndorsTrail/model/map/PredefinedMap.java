@@ -213,7 +213,30 @@ public final class PredefinedMap {
 						L.log("WARNING: Trying to load monsters from savegame in map " + this.name + " for spawn #" + i + ". This will totally fail.");
 					}
 				}
-				this.spawnAreas[i].readFromParcel(src, world, fileversion);
+				if(fileversion >= 43) {
+					//Spawn areas now have unique IDs. Need to check as maps can change.
+					int idLength = src.readInt();
+					byte[] idBytes = new byte[idLength];
+					src.read(idBytes);
+					String id = new String(idBytes);
+					int j = i;
+					boolean found = false;
+					do {
+						if (this.spawnAreas[j].areaID.equals(id)) {
+							this.spawnAreas[j].readFromParcel(src, world, fileversion);
+							found = true;
+							break;
+						} 
+						j = (j+1)%spawnAreas.length;
+					} while (j != i);
+					if (AndorsTrailApplication.DEVELOPMENT_VALIDATEDATA) {
+						if (!found) {
+							L.log("WARNING: Trying to load monsters from savegame in map " + this.name + " for spawn #" + id + " but this area cannot be found. This will totally fail.");
+						}
+					}
+				} else {
+					this.spawnAreas[i].readFromParcel(src, world, fileversion);
+				}
 			}
 
 			groundBags.clear();
@@ -277,6 +300,9 @@ public final class PredefinedMap {
 			dest.writeBoolean(true);
 			dest.writeInt(spawnAreas.length);
 			for(MonsterSpawnArea a : spawnAreas) {
+				byte[] idBytes = a.areaID.getBytes();
+				dest.writeInt(idBytes.length);
+				dest.write(idBytes);
 				a.writeToParcel(dest);
 			}
 			dest.writeInt(groundBags.size());

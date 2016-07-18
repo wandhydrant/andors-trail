@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map SYSTEM "http://mapeditor.org/dtd/1.0/map.dtd">
 <map version="1.0" orientation="orthogonal" width="20" height="20" tilewidth="32" tileheight="32">
  <properties>
   <property name="outdoors" value="1"/>
@@ -161,13 +162,23 @@
   <object name="forestboar4" type="spawn" x="128" y="352" width="448" height="160">
    <properties>
     <property name="quantity" value="3"/>
+    <property name="spawngroup" value="forestboar4"/>
    </properties>
   </object>
-  <object name="gornaud_1" type="spawn" x="192" y="64" width="64" height="96"/>
-  <object name="gornaud_1" type="spawn" x="352" y="64" width="96" height="32"/>
+  <object name="gornaud_1" type="spawn" x="192" y="64" width="64" height="96">
+   <properties>
+    <property name="spawngroup" value="gornaud_1"/>
+   </properties>
+  </object>
+  <object name="gornaud_1_1" type="spawn" x="352" y="64" width="96" height="32">
+   <properties>
+    <property name="spawngroup" value="gornaud_1"/>
+   </properties>
+  </object>
   <object name="forestwolf2" type="spawn" x="64" y="160" width="512" height="160">
    <properties>
     <property name="quantity" value="2"/>
+    <property name="spawngroup" value="forestwolf2"/>
    </properties>
   </object>
  </objectgroup>

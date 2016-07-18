@@ -143,7 +143,7 @@ public final class ConversationController {
 			tileMap = world.model.currentTileMap;
 		}
 		for (MonsterSpawnArea area : map.spawnAreas) {
-			if (!area.monsterTypeSpawnGroup.equals(monsterTypeSpawnGroup)) continue;
+			if (!area.areaID.equals(monsterTypeSpawnGroup)) continue;
 			controllers.monsterSpawnController.activateSpawnArea(map, tileMap, area, true);
 		}
 	}
@@ -151,7 +151,7 @@ public final class ConversationController {
 	private void deactivateSpawnArea(String mapName, String monsterTypeSpawnGroup, boolean removeAllMonsters) {
 		PredefinedMap map = findMapForScriptEffect(mapName);
 		for (MonsterSpawnArea area : map.spawnAreas) {
-			if (!area.monsterTypeSpawnGroup.equals(monsterTypeSpawnGroup)) continue;
+			if (!area.areaID.equals(monsterTypeSpawnGroup)) continue;
 			controllers.monsterSpawnController.deactivateSpawnArea(area, removeAllMonsters);
 		}
 	}

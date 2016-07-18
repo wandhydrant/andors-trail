@@ -81,9 +81,9 @@ public final class TMXMapTranslator {
 						}
 						mapObjects.add(MapObject.createMapChangeArea(position, object.name, map, place, group.name, isActiveForNewGame));
 					} else if (object.type.equalsIgnoreCase("spawn")) {
-						ArrayList<MonsterType> types = monsterTypes.getMonsterTypesFromSpawnGroup(object.name);
 						int maxQuantity = 1;
 						int spawnChance = 10;
+						String spawnGroup = object.name;
 						for (TMXProperty p : object.properties) {
 							if (AndorsTrailApplication.DEVELOPMENT_VALIDATEDATA) {
 								if (p.value.equals("")) {
@@ -97,11 +97,14 @@ public final class TMXMapTranslator {
 								spawnChance = Integer.parseInt(p.value);
 							} else if (p.name.equalsIgnoreCase("active")) {
 								isActiveForNewGame = Boolean.parseBoolean(p.value);
+							} else if (p.name.equalsIgnoreCase("spawngroup")) {
+								spawnGroup = p.value;
 							} else if (AndorsTrailApplication.DEVELOPMENT_VALIDATEDATA) {
 								L.log("OPTIMIZE: Map " + m.name + ", spawn " + object.name + "@" + topLeft.toString() + " has unrecognized property \"" + p.name + "\".");
 							}
 						}
 
+						ArrayList<MonsterType> types = monsterTypes.getMonsterTypesFromSpawnGroup(spawnGroup);
 						if (types.isEmpty()) {
 							if (AndorsTrailApplication.DEVELOPMENT_VALIDATEDATA) {
 								L.log("OPTIMIZE: Map " + m.name + " contains spawn \"" + object.name + "\"@" + topLeft.toString() + " that does not correspond to any monsters. The spawn will be removed.");

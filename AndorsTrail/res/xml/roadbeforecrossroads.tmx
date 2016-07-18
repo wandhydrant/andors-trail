@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map SYSTEM "http://mapeditor.org/dtd/1.0/map.dtd">
 <map version="1.0" orientation="orthogonal" width="21" height="21" tilewidth="32" tileheight="32">
  <properties>
   <property name="outdoors" value="1"/>
@@ -143,7 +144,7 @@
    eJxzFWBgcB3FwwLjAoPFPHq5k9rhSat4orb9xKjHF07I4qSEJ6H4JCd+SAGUpjtizccmPlQAvvilxExqhwE14hFdLQDtXFtQ
   </data>
  </layer>
- <objectgroup name="Mapevents" width="0" height="0">
+ <objectgroup name="Mapevents">
   <object name="north" type="mapchange" x="0" y="352" width="32" height="224">
    <properties>
     <property name="map" value="crossroads"/>
@@ -168,18 +169,35 @@
    </properties>
   </object>
  </objectgroup>
- <objectgroup name="Spawn" width="0" height="0">
-  <object name="fox2" type="spawn" x="224" y="384" width="192" height="64"/>
-  <object name="forestserpent1" type="spawn" x="512" y="480" width="96" height="32"/>
-  <object name="forestserpent1" type="spawn" x="64" y="576" width="192" height="64"/>
+ <objectgroup name="Spawn">
+  <object name="fox2" type="spawn" x="224" y="384" width="192" height="64">
+   <properties>
+    <property name="spawngroup" value="fox2"/>
+   </properties>
+  </object>
+  <object name="forestserpent1" type="spawn" x="512" y="480" width="96" height="32">
+   <properties>
+    <property name="spawngroup" value="forestserpent1"/>
+   </properties>
+  </object>
+  <object name="forestserpent1_1" type="spawn" x="64" y="576" width="192" height="64">
+   <properties>
+    <property name="spawngroup" value="forestserpent1"/>
+   </properties>
+  </object>
   <object name="forestwolf1" type="spawn" x="288" y="160" width="224" height="128">
    <properties>
     <property name="quantity" value="3"/>
+    <property name="spawngroup" value="forestwolf1"/>
    </properties>
   </object>
-  <object name="wolf_leader" type="spawn" x="320" y="160" width="128" height="96"/>
+  <object name="wolf_leader" type="spawn" x="320" y="160" width="128" height="96">
+   <properties>
+    <property name="spawngroup" value="wolf_leader"/>
+   </properties>
+  </object>
  </objectgroup>
- <objectgroup name="Keys" width="0" height="0">
+ <objectgroup name="Keys">
   <object name="pathway_fallhaven:30" type="key" x="352" y="320" width="64" height="32">
    <properties>
     <property name="phrase" value="key_wolf_pack_jakrar"/>

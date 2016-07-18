@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map SYSTEM "http://mapeditor.org/dtd/1.0/map.dtd">
 <map version="1.0" orientation="orthogonal" width="20" height="20" tilewidth="32" tileheight="32">
  <properties>
   <property name="outdoors" value="1"/>
@@ -166,33 +167,49 @@
   <object name="charwdg3" type="spawn" x="256" y="64" width="64" height="32">
    <properties>
     <property name="quantity" value="2"/>
+    <property name="spawngroup" value="charwdg3"/>
    </properties>
   </object>
-  <object name="mazarth2" type="spawn" x="384" y="128" width="32" height="32"/>
-  <object name="charwdg3" type="spawn" x="416" y="192" width="64" height="32">
+  <object name="mazarth2" type="spawn" x="384" y="128" width="32" height="32">
+   <properties>
+    <property name="spawngroup" value="mazarth2"/>
+   </properties>
+  </object>
+  <object name="charwdg3_1" type="spawn" x="416" y="192" width="64" height="32">
    <properties>
     <property name="quantity" value="2"/>
+    <property name="spawngroup" value="charwdg3"/>
    </properties>
   </object>
-  <object name="charwdg3" type="spawn" x="256" y="288" width="32" height="32"/>
+  <object name="charwdg3_2" type="spawn" x="256" y="288" width="32" height="32">
+   <properties>
+    <property name="spawngroup" value="charwdg3"/>
+   </properties>
+  </object>
   <object name="charwdg2" type="spawn" x="96" y="320" width="480" height="288">
    <properties>
     <property name="quantity" value="6"/>
+    <property name="spawngroup" value="charwdg2"/>
    </properties>
   </object>
-  <object name="charwdg2" type="spawn" x="96" y="96" width="288" height="96">
+  <object name="charwdg2_1" type="spawn" x="96" y="96" width="288" height="96">
    <properties>
     <property name="quantity" value="2"/>
+    <property name="spawngroup" value="charwdg2"/>
    </properties>
   </object>
-  <object name="mazarth1" type="spawn" x="128" y="320" width="384" height="256"/>
+  <object name="mazarth1" type="spawn" x="128" y="320" width="384" height="256">
+   <properties>
+    <property name="spawngroup" value="mazarth1"/>
+   </properties>
+  </object>
  </objectgroup>
  <objectgroup name="Keys" visible="0">
   <object name="charwood2:15" type="key" x="224" y="224" width="96" height="32">
    <properties>
     <property name="phrase" value="sign_lostmine0"/>
-    <property name="requireType" value="questProgress"/>
     <property name="requireId" value="charwood2"/>
+    <property name="requireType" value="questProgress"/>
     <property name="requireValue" value="15"/>
    </properties>
   </object>

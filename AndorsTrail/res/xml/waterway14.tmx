@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map SYSTEM "http://mapeditor.org/dtd/1.0/map.dtd">
 <map version="1.0" orientation="orthogonal" width="30" height="30" tilewidth="32" tileheight="32">
  <properties>
   <property name="outdoors" value="1"/>
@@ -168,21 +169,25 @@
   <object name="burrower_1" type="spawn" x="352" y="640" width="576" height="256">
    <properties>
     <property name="quantity" value="3"/>
+    <property name="spawngroup" value="burrower_1"/>
    </properties>
   </object>
   <object name="burrower_2" type="spawn" x="544" y="160" width="352" height="224">
    <properties>
     <property name="quantity" value="3"/>
+    <property name="spawngroup" value="burrower_2"/>
    </properties>
   </object>
-  <object name="burrower_1" type="spawn" x="288" y="192" width="288" height="448">
+  <object name="burrower_1_1" type="spawn" x="288" y="192" width="288" height="448">
    <properties>
     <property name="quantity" value="3"/>
+    <property name="spawngroup" value="burrower_1"/>
    </properties>
   </object>
   <object name="frog_3" type="spawn" x="64" y="224" width="352" height="672">
    <properties>
     <property name="quantity" value="3"/>
+    <property name="spawngroup" value="frog_3"/>
    </properties>
   </object>
  </objectgroup>

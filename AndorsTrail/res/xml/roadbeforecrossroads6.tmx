@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map SYSTEM "http://mapeditor.org/dtd/1.0/map.dtd">
 <map version="1.0" orientation="orthogonal" width="20" height="30" tilewidth="32" tileheight="32">
  <properties>
   <property name="outdoors" value="1"/>
@@ -169,22 +170,41 @@
   <object name="forestserpent2" type="spawn" x="352" y="256" width="128" height="288">
    <properties>
     <property name="quantity" value="2"/>
+    <property name="spawngroup" value="forestserpent2"/>
    </properties>
   </object>
   <object name="forestfox2" type="spawn" x="384" y="480" width="160" height="192">
    <properties>
     <property name="quantity" value="2"/>
+    <property name="spawngroup" value="forestfox2"/>
    </properties>
   </object>
-  <object name="forestboar3" type="spawn" x="64" y="352" width="160" height="96"/>
-  <object name="fox2" type="spawn" x="96" y="736" width="192" height="128"/>
-  <object name="agthor" type="spawn" x="128" y="128" width="32" height="32"/>
-  <object name="forestfox2" type="spawn" x="416" y="256" width="160" height="128">
+  <object name="forestboar3" type="spawn" x="64" y="352" width="160" height="96">
+   <properties>
+    <property name="spawngroup" value="forestboar3"/>
+   </properties>
+  </object>
+  <object name="fox2" type="spawn" x="96" y="736" width="192" height="128">
+   <properties>
+    <property name="spawngroup" value="fox2"/>
+   </properties>
+  </object>
+  <object name="agthor" type="spawn" x="128" y="128" width="32" height="32">
+   <properties>
+    <property name="spawngroup" value="agthor"/>
+   </properties>
+  </object>
+  <object name="forestfox2_1" type="spawn" x="416" y="256" width="160" height="128">
    <properties>
     <property name="quantity" value="2"/>
+    <property name="spawngroup" value="forestfox2"/>
    </properties>
   </object>
-  <object name="agthor_guard" type="spawn" x="224" y="128" width="32" height="32"/>
+  <object name="agthor_guard" type="spawn" x="224" y="128" width="32" height="32">
+   <properties>
+    <property name="spawngroup" value="agthor_guard"/>
+   </properties>
+  </object>
  </objectgroup>
  <objectgroup name="Keys" visible="0"/>
 </map>

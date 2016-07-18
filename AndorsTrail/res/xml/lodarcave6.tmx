@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map SYSTEM "http://mapeditor.org/dtd/1.0/map.dtd">
 <map version="1.0" orientation="orthogonal" width="20" height="23" tilewidth="32" tileheight="32">
  <tileset firstgid="1" name="map_bed_1" tilewidth="32" tileheight="32">
   <image source="../drawable/map_bed_1.png" width="512" height="256"/>
@@ -158,32 +159,53 @@
   <object name="hirathil1" type="spawn" x="416" y="64" width="128" height="160">
    <properties>
     <property name="quantity" value="2"/>
+    <property name="spawngroup" value="hirathil1"/>
    </properties>
   </object>
-  <object name="hirathil2" type="spawn" x="448" y="224" width="32" height="96"/>
-  <object name="hirathil1" type="spawn" x="320" y="320" width="224" height="384">
+  <object name="hirathil2" type="spawn" x="448" y="224" width="32" height="96">
+   <properties>
+    <property name="spawngroup" value="hirathil2"/>
+   </properties>
+  </object>
+  <object name="hirathil1_1" type="spawn" x="320" y="320" width="224" height="384">
    <properties>
     <property name="quantity" value="5"/>
+    <property name="spawngroup" value="hirathil1"/>
    </properties>
   </object>
-  <object name="hirathil2" type="spawn" x="352" y="128" width="64" height="32"/>
-  <object name="hirathil1" type="spawn" x="224" y="128" width="128" height="128"/>
-  <object name="hirathil1" type="spawn" x="32" y="256" width="256" height="256">
+  <object name="hirathil2_1" type="spawn" x="352" y="128" width="64" height="32">
+   <properties>
+    <property name="spawngroup" value="hirathil2"/>
+   </properties>
+  </object>
+  <object name="hirathil1_2" type="spawn" x="224" y="128" width="128" height="128">
+   <properties>
+    <property name="spawngroup" value="hirathil1"/>
+   </properties>
+  </object>
+  <object name="hirathil1_3" type="spawn" x="32" y="256" width="256" height="256">
    <properties>
     <property name="quantity" value="4"/>
+    <property name="spawngroup" value="hirathil1"/>
    </properties>
   </object>
-  <object name="hirathil2" type="spawn" x="544" y="544" width="32" height="32"/>
+  <object name="hirathil2_2" type="spawn" x="544" y="544" width="32" height="32">
+   <properties>
+    <property name="spawngroup" value="hirathil2"/>
+   </properties>
+  </object>
  </objectgroup>
  <objectgroup name="Spawn_bats" visible="0">
   <object name="cavebat1" type="spawn" x="32" y="128" width="288" height="384">
    <properties>
     <property name="quantity" value="3"/>
+    <property name="spawngroup" value="cavebat1"/>
    </properties>
   </object>
-  <object name="cavebat1" type="spawn" x="320" y="320" width="224" height="384">
+  <object name="cavebat1_1" type="spawn" x="320" y="320" width="224" height="384">
    <properties>
     <property name="quantity" value="3"/>
+    <property name="spawngroup" value="cavebat1"/>
    </properties>
   </object>
  </objectgroup>

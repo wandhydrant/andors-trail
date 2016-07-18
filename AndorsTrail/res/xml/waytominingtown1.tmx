@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map SYSTEM "http://mapeditor.org/dtd/1.0/map.dtd">
 <map version="1.0" orientation="orthogonal" width="30" height="30" tilewidth="32" tileheight="32">
  <properties>
   <property name="outdoors" value="1"/>
@@ -180,36 +181,43 @@
   <object name="redft2" type="spawn" x="576" y="128" width="320" height="192">
    <properties>
     <property name="quantity" value="3"/>
+    <property name="spawngroup" value="redft2"/>
    </properties>
   </object>
-  <object name="redft2" type="spawn" x="288" y="384" width="160" height="96">
+  <object name="redft2_1" type="spawn" x="288" y="384" width="160" height="96">
    <properties>
     <property name="quantity" value="2"/>
+    <property name="spawngroup" value="redft2"/>
    </properties>
   </object>
   <object name="redft1" type="spawn" x="96" y="160" width="448" height="192">
    <properties>
     <property name="quantity" value="4"/>
+    <property name="spawngroup" value="redft1"/>
    </properties>
   </object>
-  <object name="redft1" type="spawn" x="448" y="384" width="480" height="256">
+  <object name="redft1_1" type="spawn" x="448" y="384" width="480" height="256">
    <properties>
     <property name="quantity" value="4"/>
+    <property name="spawngroup" value="redft1"/>
    </properties>
   </object>
-  <object name="redft2" type="spawn" x="736" y="768" width="32" height="64">
+  <object name="redft2_2" type="spawn" x="736" y="768" width="32" height="64">
    <properties>
     <property name="quantity" value="2"/>
+    <property name="spawngroup" value="redft2"/>
    </properties>
   </object>
-  <object name="redft1" type="spawn" x="352" y="736" width="192" height="128">
+  <object name="redft1_2" type="spawn" x="352" y="736" width="192" height="128">
    <properties>
     <property name="quantity" value="2"/>
+    <property name="spawngroup" value="redft1"/>
    </properties>
   </object>
-  <object name="redft1" type="spawn" x="128" y="512" width="288" height="224">
+  <object name="redft1_3" type="spawn" x="128" y="512" width="288" height="224">
    <properties>
     <property name="quantity" value="3"/>
+    <property name="spawngroup" value="redft1"/>
    </properties>
   </object>
  </objectgroup>

@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map SYSTEM "http://mapeditor.org/dtd/1.0/map.dtd">
 <map version="1.0" orientation="orthogonal" width="30" height="25" tilewidth="32" tileheight="32">
  <properties>
   <property name="outdoors" value="1"/>
@@ -179,70 +180,99 @@
   <object name="khakin1" type="spawn" x="736" y="224" width="160" height="128">
    <properties>
     <property name="quantity" value="2"/>
+    <property name="spawngroup" value="khakin1"/>
    </properties>
   </object>
-  <object name="khakin1" type="spawn" x="704" y="416" width="96" height="128"/>
+  <object name="khakin1_1" type="spawn" x="704" y="416" width="96" height="128">
+   <properties>
+    <property name="spawngroup" value="khakin1"/>
+   </properties>
+  </object>
   <object name="khakin2" type="spawn" x="480" y="352" width="64" height="64">
    <properties>
     <property name="quantity" value="2"/>
+    <property name="spawngroup" value="khakin2"/>
    </properties>
   </object>
-  <object name="khakin2" type="spawn" x="544" y="352" width="64" height="64">
+  <object name="khakin2_1" type="spawn" x="544" y="352" width="64" height="64">
    <properties>
     <property name="quantity" value="2"/>
+    <property name="spawngroup" value="khakin2"/>
    </properties>
   </object>
   <object name="khakin3" type="spawn" x="608" y="352" width="64" height="64">
    <properties>
     <property name="quantity" value="2"/>
+    <property name="spawngroup" value="khakin3"/>
    </properties>
   </object>
-  <object name="khakin1" type="spawn" x="672" y="352" width="64" height="64">
+  <object name="khakin1_2" type="spawn" x="672" y="352" width="64" height="64">
    <properties>
     <property name="quantity" value="2"/>
+    <property name="spawngroup" value="khakin1"/>
    </properties>
   </object>
-  <object name="khakin2" type="spawn" x="160" y="224" width="288" height="160">
+  <object name="khakin2_2" type="spawn" x="160" y="224" width="288" height="160">
    <properties>
     <property name="quantity" value="3"/>
+    <property name="spawngroup" value="khakin2"/>
    </properties>
   </object>
-  <object name="khakin2" type="spawn" x="64" y="448" width="32" height="32"/>
-  <object name="khakin3" type="spawn" x="64" y="160" width="96" height="192">
+  <object name="khakin2_3" type="spawn" x="64" y="448" width="32" height="32">
+   <properties>
+    <property name="spawngroup" value="khakin2"/>
+   </properties>
+  </object>
+  <object name="khakin3_1" type="spawn" x="64" y="160" width="96" height="192">
    <properties>
     <property name="quantity" value="2"/>
+    <property name="spawngroup" value="khakin3"/>
    </properties>
   </object>
   <object name="forestfly1" type="spawn" x="64" y="672" width="32" height="64">
    <properties>
     <property name="quantity" value="2"/>
+    <property name="spawngroup" value="forestfly1"/>
    </properties>
   </object>
-  <object name="forestfly1" type="spawn" x="160" y="640" width="64" height="64">
+  <object name="forestfly1_1" type="spawn" x="160" y="640" width="64" height="64">
    <properties>
     <property name="quantity" value="2"/>
+    <property name="spawngroup" value="forestfly1"/>
    </properties>
   </object>
-  <object name="forestfly1" type="spawn" x="352" y="544" width="128" height="160">
+  <object name="forestfly1_2" type="spawn" x="352" y="544" width="128" height="160">
    <properties>
     <property name="quantity" value="3"/>
+    <property name="spawngroup" value="forestfly1"/>
    </properties>
   </object>
-  <object name="hanklbit1" type="spawn" x="224" y="640" width="32" height="32"/>
-  <object name="hanklbit1" type="spawn" x="288" y="640" width="32" height="32"/>
-  <object name="forestfly1" type="spawn" x="480" y="448" width="192" height="128">
+  <object name="hanklbit1" type="spawn" x="224" y="640" width="32" height="32">
+   <properties>
+    <property name="spawngroup" value="hanklbit1"/>
+   </properties>
+  </object>
+  <object name="hanklbit1_1" type="spawn" x="288" y="640" width="32" height="32">
+   <properties>
+    <property name="spawngroup" value="hanklbit1"/>
+   </properties>
+  </object>
+  <object name="forestfly1_3" type="spawn" x="480" y="448" width="192" height="128">
    <properties>
     <property name="quantity" value="3"/>
+    <property name="spawngroup" value="forestfly1"/>
    </properties>
   </object>
   <object name="forestfly2" type="spawn" x="416" y="704" width="64" height="32">
    <properties>
     <property name="quantity" value="2"/>
+    <property name="spawngroup" value="forestfly2"/>
    </properties>
   </object>
-  <object name="khakin2" type="spawn" x="160" y="384" width="288" height="160">
+  <object name="khakin2_4" type="spawn" x="160" y="384" width="288" height="160">
    <properties>
     <property name="quantity" value="3"/>
+    <property name="spawngroup" value="khakin2"/>
    </properties>
   </object>
  </objectgroup>
