@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map SYSTEM "http://mapeditor.org/dtd/1.0/map.dtd">
 <map version="1.0" orientation="orthogonal" width="20" height="25" tilewidth="32" tileheight="32">
  <tileset firstgid="1" name="map_bed_1" tilewidth="32" tileheight="32">
   <image source="../drawable/map_bed_1.png" width="512" height="256"/>
@@ -153,27 +154,28 @@
  <objectgroup name="Spawn">
   <object name="iqhan_4" type="spawn" x="160" y="544" width="32" height="32">
    <properties>
-    <property name="quantity" value="1"/>
+    <property name="spawngroup" value="iqhan_4"/>
    </properties>
   </object>
   <object name="iqhan_ch_1" type="spawn" x="160" y="576" width="256" height="160">
    <properties>
-    <property name="quantity" value="1"/>
+    <property name="spawngroup" value="iqhan_ch_1"/>
    </properties>
   </object>
-  <object name="iqhan_ch_1" type="spawn" x="64" y="96" width="512" height="416">
+  <object name="iqhan_ch_1_1" type="spawn" x="64" y="96" width="512" height="416">
    <properties>
     <property name="quantity" value="4"/>
+    <property name="spawngroup" value="iqhan_ch_1"/>
    </properties>
   </object>
   <object name="iqhan_chb_1" type="spawn" x="128" y="64" width="416" height="448">
    <properties>
-    <property name="quantity" value="1"/>
+    <property name="spawngroup" value="iqhan_chb_1"/>
    </properties>
   </object>
   <object name="iqhan_ch_3" type="spawn" x="160" y="64" width="320" height="448">
    <properties>
-    <property name="quantity" value="1"/>
+    <property name="spawngroup" value="iqhan_ch_3"/>
    </properties>
   </object>
  </objectgroup>

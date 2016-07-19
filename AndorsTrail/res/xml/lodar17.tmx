@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map SYSTEM "http://mapeditor.org/dtd/1.0/map.dtd">
 <map version="1.0" orientation="orthogonal" width="29" height="19" tilewidth="32" tileheight="32">
  <properties>
   <property name="outdoors" value="1"/>
@@ -164,39 +165,65 @@
   </object>
  </objectgroup>
  <objectgroup name="Spawn">
-  <object name="vscaleb2" type="spawn" x="128" y="64" width="128" height="128"/>
+  <object name="vscaleb2" type="spawn" x="128" y="64" width="128" height="128">
+   <properties>
+    <property name="spawngroup" value="vscaleb2"/>
+   </properties>
+  </object>
   <object name="vscale2" type="spawn" x="256" y="64" width="256" height="192">
    <properties>
     <property name="quantity" value="3"/>
+    <property name="spawngroup" value="vscale2"/>
    </properties>
   </object>
-  <object name="hanklbit2" type="spawn" x="704" y="64" width="160" height="128"/>
+  <object name="hanklbit2" type="spawn" x="704" y="64" width="160" height="128">
+   <properties>
+    <property name="spawngroup" value="hanklbit2"/>
+   </properties>
+  </object>
   <object name="hanklbit3" type="spawn" x="704" y="192" width="64" height="32">
    <properties>
     <property name="quantity" value="2"/>
+    <property name="spawngroup" value="hanklbit3"/>
    </properties>
   </object>
-  <object name="hanklbit3" type="spawn" x="704" y="288" width="32" height="32"/>
-  <object name="brtender1" type="spawn" x="672" y="352" width="224" height="192"/>
-  <object name="hanklbit2" type="spawn" x="704" y="384" width="160" height="128"/>
+  <object name="hanklbit3_1" type="spawn" x="704" y="288" width="32" height="32">
+   <properties>
+    <property name="spawngroup" value="hanklbit3"/>
+   </properties>
+  </object>
+  <object name="brtender1" type="spawn" x="672" y="352" width="224" height="192">
+   <properties>
+    <property name="spawngroup" value="brtender1"/>
+   </properties>
+  </object>
+  <object name="hanklbit2_1" type="spawn" x="704" y="384" width="160" height="128">
+   <properties>
+    <property name="spawngroup" value="hanklbit2"/>
+   </properties>
+  </object>
   <object name="hanklbit4" type="spawn" x="416" y="384" width="224" height="160">
    <properties>
     <property name="quantity" value="2"/>
+    <property name="spawngroup" value="hanklbit4"/>
    </properties>
   </object>
-  <object name="hanklbit4" type="spawn" x="352" y="480" width="32" height="64">
+  <object name="hanklbit4_1" type="spawn" x="352" y="480" width="32" height="64">
    <properties>
     <property name="quantity" value="2"/>
+    <property name="spawngroup" value="hanklbit4"/>
    </properties>
   </object>
-  <object name="hanklbit2" type="spawn" x="256" y="512" width="32" height="64">
+  <object name="hanklbit2_2" type="spawn" x="256" y="512" width="32" height="64">
    <properties>
     <property name="quantity" value="2"/>
+    <property name="spawngroup" value="hanklbit2"/>
    </properties>
   </object>
   <object name="hanklbit1" type="spawn" x="64" y="448" width="160" height="128">
    <properties>
     <property name="quantity" value="2"/>
+    <property name="spawngroup" value="hanklbit1"/>
    </properties>
   </object>
  </objectgroup>

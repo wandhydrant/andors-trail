@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map SYSTEM "http://mapeditor.org/dtd/1.0/map.dtd">
 <map version="1.0" orientation="orthogonal" width="25" height="20" tilewidth="32" tileheight="32">
  <tileset firstgid="1" name="map_bed_1" tilewidth="32" tileheight="32">
   <image source="../drawable/map_bed_1.png" width="512" height="256"/>
@@ -155,19 +156,41 @@
   </object>
  </objectgroup>
  <objectgroup name="Spawn">
-  <object name="kendelow" type="spawn" x="32" y="416" width="192" height="192"/>
+  <object name="kendelow" type="spawn" x="32" y="416" width="192" height="192">
+   <properties>
+    <property name="spawngroup" value="kendelow"/>
+   </properties>
+  </object>
   <object name="remgard_drunk" type="spawn" x="320" y="448" width="384" height="96">
    <properties>
     <property name="quantity" value="3"/>
+    <property name="spawngroup" value="remgard_drunk"/>
    </properties>
   </object>
-  <object name="arghes" type="spawn" x="288" y="288" width="32" height="32"/>
-  <object name="krell" type="spawn" x="640" y="256" width="32" height="32"/>
-  <object name="elythom_knight1" type="spawn" x="608" y="288" width="32" height="32"/>
-  <object name="elythom_knight2" type="spawn" x="672" y="256" width="32" height="32"/>
-  <object name="remgard_drunk" type="spawn" x="288" y="96" width="480" height="128">
+  <object name="arghes" type="spawn" x="288" y="288" width="32" height="32">
+   <properties>
+    <property name="spawngroup" value="arghes"/>
+   </properties>
+  </object>
+  <object name="krell" type="spawn" x="640" y="256" width="32" height="32">
+   <properties>
+    <property name="spawngroup" value="krell"/>
+   </properties>
+  </object>
+  <object name="elythom_knight1" type="spawn" x="608" y="288" width="32" height="32">
+   <properties>
+    <property name="spawngroup" value="elythom_knight1"/>
+   </properties>
+  </object>
+  <object name="elythom_knight2" type="spawn" x="672" y="256" width="32" height="32">
+   <properties>
+    <property name="spawngroup" value="elythom_knight2"/>
+   </properties>
+  </object>
+  <object name="remgard_drunk_1" type="spawn" x="288" y="96" width="480" height="128">
    <properties>
     <property name="quantity" value="2"/>
+    <property name="spawngroup" value="remgard_drunk"/>
    </properties>
   </object>
  </objectgroup>

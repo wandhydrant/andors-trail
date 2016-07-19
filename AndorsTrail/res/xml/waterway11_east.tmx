@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map SYSTEM "http://mapeditor.org/dtd/1.0/map.dtd">
 <map version="1.0" orientation="orthogonal" width="30" height="25" tilewidth="32" tileheight="32">
  <properties>
   <property name="outdoors" value="1"/>
@@ -161,32 +162,34 @@
  <objectgroup name="Spawn" visible="0">
   <object name="erumen_4" type="spawn" x="128" y="320" width="64" height="32">
    <properties>
-    <property name="quantity" value="1"/>
+    <property name="spawngroup" value="erumen_4"/>
    </properties>
   </object>
-  <object name="erumen_4" type="spawn" x="768" y="64" width="32" height="32">
+  <object name="erumen_4_1" type="spawn" x="768" y="64" width="32" height="32">
    <properties>
-    <property name="quantity" value="1"/>
+    <property name="spawngroup" value="erumen_4"/>
    </properties>
   </object>
   <object name="erumen_1" type="spawn" x="128" y="64" width="608" height="256">
    <properties>
     <property name="quantity" value="3"/>
+    <property name="spawngroup" value="erumen_1"/>
    </properties>
   </object>
   <object name="irdegh_1" type="spawn" x="448" y="416" width="32" height="32">
    <properties>
-    <property name="quantity" value="1"/>
+    <property name="spawngroup" value="irdegh_1"/>
    </properties>
   </object>
   <object name="irdegh_spawn" type="spawn" x="96" y="512" width="800" height="224">
    <properties>
     <property name="quantity" value="7"/>
+    <property name="spawngroup" value="irdegh_spawn"/>
    </properties>
   </object>
-  <object name="irdegh_1" type="spawn" x="640" y="448" width="224" height="160">
+  <object name="irdegh_1_1" type="spawn" x="640" y="448" width="224" height="160">
    <properties>
-    <property name="quantity" value="1"/>
+    <property name="spawngroup" value="irdegh_1"/>
    </properties>
   </object>
  </objectgroup>

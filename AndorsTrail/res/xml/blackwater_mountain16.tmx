@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map SYSTEM "http://mapeditor.org/dtd/1.0/map.dtd">
 <map version="1.0" orientation="orthogonal" width="15" height="30" tilewidth="32" tileheight="32">
  <properties>
   <property name="outdoors" value="1"/>
@@ -143,7 +144,7 @@
    eJzFk9ENACEIQx3Bpdx/JX+NaaEV7zQhkeijQGD01sYHth7n734q7G0e+RU2ixv5jFW1UK4o9+iusOu7q8tYFi+aP6Qb9S9jVV1nF26wbDZZrc5OnHAu8ypPlWW7VmUVfdarjD2psdIblKPbm79tAjViW/o=
   </data>
  </layer>
- <objectgroup name="Mapevents" width="0" height="0">
+ <objectgroup name="Mapevents">
   <object name="west" type="mapchange" x="0" y="160" width="32" height="96">
    <properties>
     <property name="map" value="blackwater_mountain15"/>
@@ -158,37 +159,62 @@
    </properties>
   </object>
  </objectgroup>
- <objectgroup name="Spawn" width="0" height="0">
+ <objectgroup name="Spawn">
   <object name="gornaud_1" type="spawn" x="192" y="672" width="96" height="32">
    <properties>
     <property name="quantity" value="2"/>
+    <property name="spawngroup" value="gornaud_1"/>
    </properties>
   </object>
-  <object name="gornaud_2" type="spawn" x="32" y="288" width="64" height="64"/>
-  <object name="gornaud_2" type="spawn" x="128" y="192" width="32" height="128"/>
-  <object name="gornaud_2" type="spawn" x="32" y="352" width="160" height="192">
+  <object name="gornaud_2" type="spawn" x="32" y="288" width="64" height="64">
+   <properties>
+    <property name="spawngroup" value="gornaud_2"/>
+   </properties>
+  </object>
+  <object name="gornaud_2_1" type="spawn" x="128" y="192" width="32" height="128">
+   <properties>
+    <property name="spawngroup" value="gornaud_2"/>
+   </properties>
+  </object>
+  <object name="gornaud_2_2" type="spawn" x="32" y="352" width="160" height="192">
    <properties>
     <property name="quantity" value="2"/>
+    <property name="spawngroup" value="gornaud_2"/>
    </properties>
   </object>
-  <object name="gornaud_1" type="spawn" x="224" y="256" width="96" height="192"/>
-  <object name="gornaud_2" type="spawn" x="224" y="448" width="96" height="96">
+  <object name="gornaud_1_1" type="spawn" x="224" y="256" width="96" height="192">
+   <properties>
+    <property name="spawngroup" value="gornaud_1"/>
+   </properties>
+  </object>
+  <object name="gornaud_2_3" type="spawn" x="224" y="448" width="96" height="96">
    <properties>
     <property name="quantity" value="2"/>
+    <property name="spawngroup" value="gornaud_2"/>
    </properties>
   </object>
-  <object name="gornaud_2" type="spawn" x="96" y="32" width="352" height="160">
+  <object name="gornaud_2_4" type="spawn" x="96" y="32" width="352" height="160">
    <properties>
     <property name="quantity" value="3"/>
+    <property name="spawngroup" value="gornaud_2"/>
    </properties>
   </object>
-  <object name="gornaud_1" type="spawn" x="320" y="160" width="128" height="352"/>
-  <object name="gornaud_1" type="spawn" x="96" y="544" width="224" height="128"/>
-  <object name="gornaud_2" type="spawn" x="64" y="768" width="160" height="128">
+  <object name="gornaud_1_2" type="spawn" x="320" y="160" width="128" height="352">
+   <properties>
+    <property name="spawngroup" value="gornaud_1"/>
+   </properties>
+  </object>
+  <object name="gornaud_1_3" type="spawn" x="96" y="544" width="224" height="128">
+   <properties>
+    <property name="spawngroup" value="gornaud_1"/>
+   </properties>
+  </object>
+  <object name="gornaud_2_5" type="spawn" x="64" y="768" width="160" height="128">
    <properties>
     <property name="quantity" value="2"/>
+    <property name="spawngroup" value="gornaud_2"/>
    </properties>
   </object>
  </objectgroup>
- <objectgroup name="Keys" width="0" height="0"/>
+ <objectgroup name="Keys"/>
 </map>

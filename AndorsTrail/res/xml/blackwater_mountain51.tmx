@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map SYSTEM "http://mapeditor.org/dtd/1.0/map.dtd">
 <map version="1.0" orientation="orthogonal" width="14" height="10" tilewidth="32" tileheight="32">
  <tileset firstgid="1" name="map_bed_1" tilewidth="32" tileheight="32">
   <image source="../drawable/map_bed_1.png" width="512" height="256"/>
@@ -170,7 +171,7 @@
    eJxjYBgFo4B4AAACMAAB
   </data>
  </layer>
- <objectgroup name="Mapevents" width="14" height="10">
+ <objectgroup name="Mapevents">
   <object name="east" type="mapchange" x="320" y="256" width="32" height="32">
    <properties>
     <property name="map" value="blackwater_mountain31"/>
@@ -184,12 +185,20 @@
    </properties>
   </object>
  </objectgroup>
- <objectgroup name="Spawn" width="14" height="10">
-  <object name="restless_dead_1" type="spawn" x="64" y="128" width="160" height="96"/>
-  <object name="restless_dead_1" type="spawn" x="256" y="128" width="160" height="96"/>
+ <objectgroup name="Spawn">
+  <object name="restless_dead_1" type="spawn" x="64" y="128" width="160" height="96">
+   <properties>
+    <property name="spawngroup" value="restless_dead_1"/>
+   </properties>
+  </object>
+  <object name="restless_dead_1_1" type="spawn" x="256" y="128" width="160" height="96">
+   <properties>
+    <property name="spawngroup" value="restless_dead_1"/>
+   </properties>
+  </object>
  </objectgroup>
- <objectgroup name="Keys" width="14" height="10"/>
- <objectgroup name="Replace" width="14" height="10">
+ <objectgroup name="Keys"/>
+ <objectgroup name="Replace">
   <object name="quest:100" type="replace" x="96" y="128" width="160" height="96">
    <properties>
     <property name="Walkable" value="Walkable_replace"/>

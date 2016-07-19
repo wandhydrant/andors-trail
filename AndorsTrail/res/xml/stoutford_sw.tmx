@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map SYSTEM "http://mapeditor.org/dtd/1.0/map.dtd">
 <map version="1.0" orientation="orthogonal" width="24" height="18" tilewidth="32" tileheight="32">
  <properties>
   <property name="outdoors" value="1"/>
@@ -158,7 +159,7 @@
    eJy1k8ENwCAMAxmhS7H/SlV/eTT2OS2ReICSi2NgX2ttuJ6guZN1kl9jUkfZaQ9V4+LrHKQvvSvF+pNfzxXD+fPGoszOS6rfeVJz1F4FfaeE02lRnjvNTlOqP/2bpJa+Mzdr0kv1dnMojYk/HXMyF81VXMW/Ab0wVas=
   </data>
  </layer>
- <objectgroup name="Mapevents" width="24" height="18">
+ <objectgroup name="Mapevents">
   <object name="east" type="mapchange" x="736" y="320" width="32" height="32">
    <properties>
     <property name="map" value="stoutford_se"/>
@@ -184,14 +185,23 @@
    </properties>
   </object>
  </objectgroup>
- <objectgroup name="Spawn" width="24" height="18">
+ <objectgroup name="Spawn">
   <object name="venomfang_1" type="spawn" x="0" y="320" width="320" height="224">
    <properties>
     <property name="quantity" value="3"/>
+    <property name="spawngroup" value="venomfang_1"/>
    </properties>
   </object>
-  <object name="goat_1" type="spawn" x="0" y="96" width="192" height="320"/>
-  <object name="goat_1" type="spawn" x="320" y="448" width="256" height="128"/>
+  <object name="goat_1" type="spawn" x="0" y="96" width="192" height="320">
+   <properties>
+    <property name="spawngroup" value="goat_1"/>
+   </properties>
+  </object>
+  <object name="goat_1_1" type="spawn" x="320" y="448" width="256" height="128">
+   <properties>
+    <property name="spawngroup" value="goat_1"/>
+   </properties>
+  </object>
  </objectgroup>
- <objectgroup name="Keys" width="24" height="18"/>
+ <objectgroup name="Keys"/>
 </map>

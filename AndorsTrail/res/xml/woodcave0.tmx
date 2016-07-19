@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map SYSTEM "http://mapeditor.org/dtd/1.0/map.dtd">
 <map version="1.0" orientation="orthogonal" width="30" height="19" tilewidth="32" tileheight="32">
  <properties>
   <property name="outdoors" value="1"/>
@@ -158,28 +159,78 @@
   </object>
  </objectgroup>
  <objectgroup name="Spawn" visible="0">
-  <object name="larva_2" type="spawn" x="64" y="192" width="64" height="32"/>
-  <object name="larva_2" type="spawn" x="128" y="160" width="32" height="32"/>
-  <object name="larva_2" type="spawn" x="160" y="160" width="32" height="32"/>
-  <object name="larva_2" type="spawn" x="128" y="128" width="32" height="32"/>
-  <object name="larva_2" type="spawn" x="128" y="288" width="96" height="256">
+  <object name="larva_2" type="spawn" x="64" y="192" width="64" height="32">
+   <properties>
+    <property name="spawngroup" value="larva_2"/>
+   </properties>
+  </object>
+  <object name="larva_2_1" type="spawn" x="128" y="160" width="32" height="32">
+   <properties>
+    <property name="spawngroup" value="larva_2"/>
+   </properties>
+  </object>
+  <object name="larva_2_2" type="spawn" x="160" y="160" width="32" height="32">
+   <properties>
+    <property name="spawngroup" value="larva_2"/>
+   </properties>
+  </object>
+  <object name="larva_2_3" type="spawn" x="128" y="128" width="32" height="32">
+   <properties>
+    <property name="spawngroup" value="larva_2"/>
+   </properties>
+  </object>
+  <object name="larva_2_4" type="spawn" x="128" y="288" width="96" height="256">
    <properties>
     <property name="quantity" value="4"/>
+    <property name="spawngroup" value="larva_2"/>
    </properties>
   </object>
   <object name="fox1" type="spawn" x="416" y="320" width="224" height="160">
    <properties>
     <property name="quantity" value="2"/>
+    <property name="spawngroup" value="fox1"/>
    </properties>
   </object>
-  <object name="larva_1" type="spawn" x="512" y="96" width="32" height="32"/>
-  <object name="larva_2" type="spawn" x="448" y="160" width="32" height="32"/>
-  <object name="larva_2" type="spawn" x="288" y="160" width="96" height="96"/>
-  <object name="fox1" type="spawn" x="608" y="128" width="256" height="128"/>
-  <object name="larva_2" type="spawn" x="256" y="512" width="128" height="32"/>
-  <object name="larva_2" type="spawn" x="416" y="512" width="96" height="32"/>
-  <object name="larva_2" type="spawn" x="544" y="512" width="96" height="32"/>
-  <object name="larva_2" type="spawn" x="768" y="512" width="64" height="32"/>
+  <object name="larva_1" type="spawn" x="512" y="96" width="32" height="32">
+   <properties>
+    <property name="spawngroup" value="larva_1"/>
+   </properties>
+  </object>
+  <object name="larva_2_5" type="spawn" x="448" y="160" width="32" height="32">
+   <properties>
+    <property name="spawngroup" value="larva_2"/>
+   </properties>
+  </object>
+  <object name="larva_2_6" type="spawn" x="288" y="160" width="96" height="96">
+   <properties>
+    <property name="spawngroup" value="larva_2"/>
+   </properties>
+  </object>
+  <object name="fox1_1" type="spawn" x="608" y="128" width="256" height="128">
+   <properties>
+    <property name="spawngroup" value="fox1"/>
+   </properties>
+  </object>
+  <object name="larva_2_7" type="spawn" x="256" y="512" width="128" height="32">
+   <properties>
+    <property name="spawngroup" value="larva_2"/>
+   </properties>
+  </object>
+  <object name="larva_2_8" type="spawn" x="416" y="512" width="96" height="32">
+   <properties>
+    <property name="spawngroup" value="larva_2"/>
+   </properties>
+  </object>
+  <object name="larva_2_9" type="spawn" x="544" y="512" width="96" height="32">
+   <properties>
+    <property name="spawngroup" value="larva_2"/>
+   </properties>
+  </object>
+  <object name="larva_2_10" type="spawn" x="768" y="512" width="64" height="32">
+   <properties>
+    <property name="spawngroup" value="larva_2"/>
+   </properties>
+  </object>
  </objectgroup>
  <objectgroup name="Keys" visible="0"/>
 </map>

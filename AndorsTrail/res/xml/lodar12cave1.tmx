@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map SYSTEM "http://mapeditor.org/dtd/1.0/map.dtd">
 <map version="1.0" orientation="orthogonal" width="20" height="25" tilewidth="32" tileheight="32">
  <tileset firstgid="1" name="map_bed_1" tilewidth="32" tileheight="32">
   <image source="../drawable/map_bed_1.png" width="512" height="256"/>
@@ -155,23 +156,53 @@
   </object>
  </objectgroup>
  <objectgroup name="Spawn">
-  <object name="cryptmist3" type="spawn" x="32" y="96" width="256" height="128"/>
-  <object name="cryptmist2" type="spawn" x="288" y="512" width="32" height="64"/>
-  <object name="cryptmist2" type="spawn" x="160" y="704" width="64" height="32"/>
-  <object name="cryptmist2" type="spawn" x="480" y="352" width="32" height="32"/>
-  <object name="cryptmist3" type="spawn" x="480" y="384" width="128" height="192"/>
+  <object name="cryptmist3" type="spawn" x="32" y="96" width="256" height="128">
+   <properties>
+    <property name="spawngroup" value="cryptmist3"/>
+   </properties>
+  </object>
+  <object name="cryptmist2" type="spawn" x="288" y="512" width="32" height="64">
+   <properties>
+    <property name="spawngroup" value="cryptmist2"/>
+   </properties>
+  </object>
+  <object name="cryptmist2_1" type="spawn" x="160" y="704" width="64" height="32">
+   <properties>
+    <property name="spawngroup" value="cryptmist2"/>
+   </properties>
+  </object>
+  <object name="cryptmist2_2" type="spawn" x="480" y="352" width="32" height="32">
+   <properties>
+    <property name="spawngroup" value="cryptmist2"/>
+   </properties>
+  </object>
+  <object name="cryptmist3_1" type="spawn" x="480" y="384" width="128" height="192">
+   <properties>
+    <property name="spawngroup" value="cryptmist3"/>
+   </properties>
+  </object>
   <object name="cryptmist1" type="spawn" x="256" y="256" width="288" height="96">
    <properties>
     <property name="quantity" value="2"/>
+    <property name="spawngroup" value="cryptmist1"/>
    </properties>
   </object>
-  <object name="cryptmist3" type="spawn" x="64" y="384" width="96" height="96"/>
-  <object name="cryptmist1" type="spawn" x="192" y="352" width="160" height="160"/>
+  <object name="cryptmist3_2" type="spawn" x="64" y="384" width="96" height="96">
+   <properties>
+    <property name="spawngroup" value="cryptmist3"/>
+   </properties>
+  </object>
+  <object name="cryptmist1_1" type="spawn" x="192" y="352" width="160" height="160">
+   <properties>
+    <property name="spawngroup" value="cryptmist1"/>
+   </properties>
+  </object>
  </objectgroup>
  <objectgroup name="Spawn_bats" visible="0">
   <object name="cavebat1" type="spawn" x="32" y="96" width="576" height="672">
    <properties>
     <property name="quantity" value="5"/>
+    <property name="spawngroup" value="cavebat1"/>
    </properties>
   </object>
  </objectgroup>

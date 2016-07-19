@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map SYSTEM "http://mapeditor.org/dtd/1.0/map.dtd">
 <map version="1.0" orientation="orthogonal" width="10" height="20" tilewidth="32" tileheight="32">
  <tileset firstgid="1" name="map_bed_1" tilewidth="32" tileheight="32">
   <image source="../drawable/map_bed_1.png" width="512" height="256"/>
@@ -140,7 +141,7 @@
    eJxzFWBgcB0gjAsQq5YSM6mtjhQ3wtQSG0a0UEdIPTF+wOZnaocfpWaS4hdsGACF1Swq
   </data>
  </layer>
- <objectgroup name="Mapevents" width="10" height="20">
+ <objectgroup name="Mapevents">
   <object name="down" type="mapchange" x="32" y="96" width="32" height="32">
    <properties>
     <property name="map" value="blackwater_mountain19"/>
@@ -154,14 +155,23 @@
    </properties>
   </object>
  </objectgroup>
- <objectgroup name="Spawn" width="10" height="20">
-  <object name="wyrm_1" type="spawn" x="96" y="96" width="160" height="192"/>
-  <object name="wyrm_1" type="spawn" x="128" y="288" width="32" height="128"/>
-  <object name="wyrm_1" type="spawn" x="64" y="448" width="224" height="160">
+ <objectgroup name="Spawn">
+  <object name="wyrm_1" type="spawn" x="96" y="96" width="160" height="192">
+   <properties>
+    <property name="spawngroup" value="wyrm_1"/>
+   </properties>
+  </object>
+  <object name="wyrm_1_1" type="spawn" x="128" y="288" width="32" height="128">
+   <properties>
+    <property name="spawngroup" value="wyrm_1"/>
+   </properties>
+  </object>
+  <object name="wyrm_1_2" type="spawn" x="64" y="448" width="224" height="160">
    <properties>
     <property name="quantity" value="2"/>
+    <property name="spawngroup" value="wyrm_1"/>
    </properties>
   </object>
  </objectgroup>
- <objectgroup name="Keys" width="10" height="20"/>
+ <objectgroup name="Keys"/>
 </map>

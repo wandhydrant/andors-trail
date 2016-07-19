@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map SYSTEM "http://mapeditor.org/dtd/1.0/map.dtd">
 <map version="1.0" orientation="orthogonal" width="16" height="8" tilewidth="32" tileheight="32">
  <tileset firstgid="1" name="map_bed_1" tilewidth="32" tileheight="32">
   <image source="../drawable/map_bed_1.png" width="512" height="256"/>
@@ -153,15 +154,25 @@
   <object name="ccentip" type="spawn" x="32" y="96" width="128" height="96">
    <properties>
     <property name="quantity" value="2"/>
+    <property name="spawngroup" value="ccentip"/>
    </properties>
   </object>
-  <object name="ccentip" type="spawn" x="192" y="96" width="96" height="128"/>
-  <object name="ccentip" type="spawn" x="320" y="128" width="160" height="64">
+  <object name="ccentip_1" type="spawn" x="192" y="96" width="96" height="128">
+   <properties>
+    <property name="spawngroup" value="ccentip"/>
+   </properties>
+  </object>
+  <object name="ccentip_2" type="spawn" x="320" y="128" width="160" height="64">
    <properties>
     <property name="quantity" value="2"/>
+    <property name="spawngroup" value="ccentip"/>
    </properties>
   </object>
-  <object name="ccentip" type="spawn" x="288" y="192" width="32" height="32"/>
+  <object name="ccentip_3" type="spawn" x="288" y="192" width="32" height="32">
+   <properties>
+    <property name="spawngroup" value="ccentip"/>
+   </properties>
+  </object>
  </objectgroup>
  <objectgroup name="Keys"/>
 </map>

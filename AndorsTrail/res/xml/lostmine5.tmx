@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map SYSTEM "http://mapeditor.org/dtd/1.0/map.dtd">
 <map version="1.0" orientation="orthogonal" width="12" height="29" tilewidth="32" tileheight="32">
  <tileset firstgid="1" name="map_bed_1" tilewidth="32" tileheight="32">
   <image source="../drawable/map_bed_1.png" width="512" height="256"/>
@@ -140,7 +141,7 @@
    eJxzFWBgcB0gDAKkqIUBYtXhUosujwvgMxddPy47kOWpaT42c4kNU3zuoDT8sfmflumBFmaTa/5gcg8xdqCnG3zqCQFi3EvILlLMp1eaobZ6ANTRVFc=
   </data>
  </layer>
- <objectgroup name="Mapevents" width="0" height="0">
+ <objectgroup name="Mapevents">
   <object name="up lostmine5" type="mapchange" x="224" y="64" width="32" height="32">
    <properties>
     <property name="map" value="lostmine4"/>
@@ -154,35 +155,52 @@
    </properties>
   </object>
  </objectgroup>
- <objectgroup name="Spawn" width="0" height="0">
+ <objectgroup name="Spawn">
   <object name="ash3" type="spawn" x="32" y="128" width="320" height="288">
    <properties>
     <property name="quantity" value="3"/>
+    <property name="spawngroup" value="ash3"/>
    </properties>
   </object>
   <object name="ash2" type="spawn" x="0" y="128" width="352" height="256">
    <properties>
     <property name="quantity" value="2"/>
+    <property name="spawngroup" value="ash2"/>
    </properties>
   </object>
-  <object name="ash2" type="spawn" x="224" y="416" width="32" height="32"/>
-  <object name="ash2" type="spawn" x="192" y="480" width="32" height="32"/>
-  <object name="ash2" type="spawn" x="192" y="544" width="64" height="32">
+  <object name="ash2_1" type="spawn" x="224" y="416" width="32" height="32">
+   <properties>
+    <property name="spawngroup" value="ash2"/>
+   </properties>
+  </object>
+  <object name="ash2_2" type="spawn" x="192" y="480" width="32" height="32">
+   <properties>
+    <property name="spawngroup" value="ash2"/>
+   </properties>
+  </object>
+  <object name="ash2_3" type="spawn" x="192" y="544" width="64" height="32">
    <properties>
     <property name="quantity" value="2"/>
+    <property name="spawngroup" value="ash2"/>
    </properties>
   </object>
-  <object name="ash2" type="spawn" x="192" y="608" width="64" height="32">
+  <object name="ash2_4" type="spawn" x="192" y="608" width="64" height="32">
    <properties>
     <property name="quantity" value="2"/>
+    <property name="spawngroup" value="ash2"/>
    </properties>
   </object>
-  <object name="ash3" type="spawn" x="64" y="672" width="288" height="128">
+  <object name="ash3_1" type="spawn" x="64" y="672" width="288" height="128">
    <properties>
     <property name="quantity" value="2"/>
+    <property name="spawngroup" value="ash3"/>
    </properties>
   </object>
-  <object name="ash4" type="spawn" x="128" y="800" width="32" height="32"/>
+  <object name="ash4" type="spawn" x="128" y="800" width="32" height="32">
+   <properties>
+    <property name="spawngroup" value="ash4"/>
+   </properties>
+  </object>
  </objectgroup>
- <objectgroup name="Keys" width="0" height="0"/>
+ <objectgroup name="Keys"/>
 </map>

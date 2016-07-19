@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map SYSTEM "http://mapeditor.org/dtd/1.0/map.dtd">
 <map version="1.0" orientation="orthogonal" width="12" height="19" tilewidth="32" tileheight="32">
  <tileset firstgid="1" name="map_bed_1" tilewidth="32" tileheight="32">
   <image source="../drawable/map_bed_1.png" width="512" height="256"/>
@@ -155,20 +156,38 @@
   </object>
  </objectgroup>
  <objectgroup name="Spawn">
-  <object name="ash3" type="spawn" x="32" y="96" width="32" height="32"/>
-  <object name="ash3" type="spawn" x="64" y="192" width="32" height="32"/>
+  <object name="ash3" type="spawn" x="32" y="96" width="32" height="32">
+   <properties>
+    <property name="spawngroup" value="ash3"/>
+   </properties>
+  </object>
+  <object name="ash3_1" type="spawn" x="64" y="192" width="32" height="32">
+   <properties>
+    <property name="spawngroup" value="ash3"/>
+   </properties>
+  </object>
   <object name="ash4" type="spawn" x="64" y="224" width="64" height="128">
    <properties>
     <property name="quantity" value="2"/>
+    <property name="spawngroup" value="ash4"/>
    </properties>
   </object>
-  <object name="fire1" type="spawn" x="96" y="352" width="32" height="160"/>
-  <object name="ash4" type="spawn" x="160" y="288" width="160" height="160">
+  <object name="fire1" type="spawn" x="96" y="352" width="32" height="160">
+   <properties>
+    <property name="spawngroup" value="fire1"/>
+   </properties>
+  </object>
+  <object name="ash4_1" type="spawn" x="160" y="288" width="160" height="160">
    <properties>
     <property name="quantity" value="3"/>
+    <property name="spawngroup" value="ash4"/>
    </properties>
   </object>
-  <object name="fire1" type="spawn" x="192" y="448" width="32" height="32"/>
+  <object name="fire1_1" type="spawn" x="192" y="448" width="32" height="32">
+   <properties>
+    <property name="spawngroup" value="fire1"/>
+   </properties>
+  </object>
  </objectgroup>
  <objectgroup name="Keys"/>
 </map>

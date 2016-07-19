@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map SYSTEM "http://mapeditor.org/dtd/1.0/map.dtd">
 <map version="1.0" orientation="orthogonal" width="12" height="8" tilewidth="32" tileheight="32">
  <tileset firstgid="1" name="map_bed_1" tilewidth="32" tileheight="32">
   <image source="../drawable/map_bed_1.png" width="512" height="256"/>
@@ -149,13 +150,22 @@
   </object>
  </objectgroup>
  <objectgroup name="Spawn">
-  <object name="charwdg2" type="spawn" x="64" y="96" width="64" height="64"/>
+  <object name="charwdg2" type="spawn" x="64" y="96" width="64" height="64">
+   <properties>
+    <property name="spawngroup" value="charwdg2"/>
+   </properties>
+  </object>
   <object name="charwdg1" type="spawn" x="160" y="128" width="96" height="64">
    <properties>
     <property name="quantity" value="2"/>
+    <property name="spawngroup" value="charwdg1"/>
    </properties>
   </object>
-  <object name="charwdg2" type="spawn" x="256" y="96" width="96" height="128"/>
+  <object name="charwdg2_1" type="spawn" x="256" y="96" width="96" height="128">
+   <properties>
+    <property name="spawngroup" value="charwdg2"/>
+   </properties>
+  </object>
  </objectgroup>
  <objectgroup name="Keys"/>
 </map>

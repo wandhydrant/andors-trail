@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map SYSTEM "http://mapeditor.org/dtd/1.0/map.dtd">
 <map version="1.0" orientation="orthogonal" width="15" height="15" tilewidth="32" tileheight="32">
  <tileset firstgid="1" name="map_bed_1" tilewidth="32" tileheight="32">
   <image source="../drawable/map_bed_1.png" width="512" height="256"/>
@@ -140,7 +141,7 @@
    eJxzFWBgcMWBQQCXHCFMa73oarABdHF0vdjUEKMXlxpCepHFifULMf4mRi8l9hIKB2z+x6VuoPXiikNi/EWMveRgACA0KC4=
   </data>
  </layer>
- <objectgroup name="Mapevents" width="0" height="0">
+ <objectgroup name="Mapevents">
   <object name="south" type="mapchange" x="416" y="128" width="32" height="32">
    <properties>
     <property name="map" value="blackwater_mountain44"/>
@@ -155,12 +156,32 @@
   </object>
   <object name="sign_blackwater45" type="sign" x="96" y="128" width="32" height="32"/>
  </objectgroup>
- <objectgroup name="Spawn" width="0" height="0">
-  <object name="blackwater_throneguard" type="spawn" x="224" y="224" width="32" height="32"/>
-  <object name="blackwater_bossguard" type="spawn" x="64" y="256" width="32" height="32"/>
-  <object name="blackwater_bossguard" type="spawn" x="64" y="384" width="32" height="32"/>
-  <object name="harlenn" type="spawn" x="64" y="320" width="32" height="32"/>
-  <object name="blackwater_guard1" type="spawn" x="256" y="352" width="192" height="96"/>
+ <objectgroup name="Spawn">
+  <object name="blackwater_throneguard" type="spawn" x="224" y="224" width="32" height="32">
+   <properties>
+    <property name="spawngroup" value="blackwater_throneguard"/>
+   </properties>
+  </object>
+  <object name="blackwater_bossguard" type="spawn" x="64" y="256" width="32" height="32">
+   <properties>
+    <property name="spawngroup" value="blackwater_bossguard"/>
+   </properties>
+  </object>
+  <object name="blackwater_bossguard_1" type="spawn" x="64" y="384" width="32" height="32">
+   <properties>
+    <property name="spawngroup" value="blackwater_bossguard"/>
+   </properties>
+  </object>
+  <object name="harlenn" type="spawn" x="64" y="320" width="32" height="32">
+   <properties>
+    <property name="spawngroup" value="harlenn"/>
+   </properties>
+  </object>
+  <object name="blackwater_guard1" type="spawn" x="256" y="352" width="192" height="96">
+   <properties>
+    <property name="spawngroup" value="blackwater_guard1"/>
+   </properties>
+  </object>
  </objectgroup>
- <objectgroup name="Keys" width="0" height="0"/>
+ <objectgroup name="Keys"/>
 </map>

@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map SYSTEM "http://mapeditor.org/dtd/1.0/map.dtd">
 <map version="1.0" orientation="orthogonal" width="20" height="20" tilewidth="32" tileheight="32">
  <tileset firstgid="1" name="map_bed_1" tilewidth="32" tileheight="32">
   <image source="../drawable/map_bed_1.png" width="512" height="256"/>
@@ -155,32 +156,49 @@
   </object>
  </objectgroup>
  <objectgroup name="Spawn">
-  <object name="jelly1" type="spawn" x="224" y="512" width="32" height="32"/>
-  <object name="jelly1" type="spawn" x="64" y="224" width="96" height="32">
+  <object name="jelly1" type="spawn" x="224" y="512" width="32" height="32">
+   <properties>
+    <property name="spawngroup" value="jelly1"/>
+   </properties>
+  </object>
+  <object name="jelly1_1" type="spawn" x="64" y="224" width="96" height="32">
    <properties>
     <property name="quantity" value="3"/>
+    <property name="spawngroup" value="jelly1"/>
    </properties>
   </object>
   <object name="jelly2" type="spawn" x="32" y="288" width="128" height="160">
    <properties>
     <property name="quantity" value="3"/>
+    <property name="spawngroup" value="jelly2"/>
    </properties>
   </object>
-  <object name="jelly1" type="spawn" x="288" y="480" width="192" height="128">
+  <object name="jelly1_2" type="spawn" x="288" y="480" width="192" height="128">
    <properties>
     <property name="quantity" value="3"/>
+    <property name="spawngroup" value="jelly1"/>
    </properties>
   </object>
-  <object name="jelly2" type="spawn" x="96" y="480" width="96" height="96"/>
-  <object name="jelly1" type="spawn" x="192" y="128" width="32" height="32"/>
-  <object name="jelly1" type="spawn" x="256" y="96" width="288" height="128">
+  <object name="jelly2_1" type="spawn" x="96" y="480" width="96" height="96">
    <properties>
-    <property name="quantity" value="3"/>
+    <property name="spawngroup" value="jelly2"/>
    </properties>
   </object>
-  <object name="jelly2" type="spawn" x="288" y="192" width="192" height="128">
+  <object name="jelly1_3" type="spawn" x="192" y="128" width="32" height="32">
+   <properties>
+    <property name="spawngroup" value="jelly1"/>
+   </properties>
+  </object>
+  <object name="jelly1_4" type="spawn" x="256" y="96" width="288" height="128">
    <properties>
     <property name="quantity" value="3"/>
+    <property name="spawngroup" value="jelly1"/>
+   </properties>
+  </object>
+  <object name="jelly2_2" type="spawn" x="288" y="192" width="192" height="128">
+   <properties>
+    <property name="quantity" value="3"/>
+    <property name="spawngroup" value="jelly2"/>
    </properties>
   </object>
  </objectgroup>

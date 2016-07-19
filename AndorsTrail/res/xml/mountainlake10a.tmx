@@ -159,20 +159,27 @@
   </object>
  </objectgroup>
  <objectgroup name="Spawn">
-  <object name="mwolf_2" type="spawn" x="544" y="64" width="32" height="32"/>
+  <object name="mwolf_2" type="spawn" x="544" y="64" width="32" height="32">
+   <properties>
+    <property name="spawngroup" value="mwolf_2"/>
+   </properties>
+  </object>
   <object name="mwolf_1" type="spawn" x="160" y="64" width="384" height="224">
    <properties>
     <property name="quantity" value="2"/>
+    <property name="spawngroup" value="mwolf_1"/>
    </properties>
   </object>
-  <object name="mwolf_1" type="spawn" x="448" y="96" width="224" height="448">
+  <object name="mwolf_1_1" type="spawn" x="448" y="96" width="224" height="448">
    <properties>
     <property name="quantity" value="3"/>
+    <property name="spawngroup" value="mwolf_1"/>
    </properties>
   </object>
   <object name="halvor" type="spawn" x="128" y="352" width="32" height="32">
    <properties>
     <property name="active" value="false"/>
+    <property name="spawngroup" value="halvor"/>
    </properties>
   </object>
  </objectgroup>

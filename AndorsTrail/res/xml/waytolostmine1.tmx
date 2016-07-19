@@ -183,47 +183,105 @@
   </object>
  </objectgroup>
  <objectgroup name="Spawn">
-  <object name="charwdg1" type="spawn" x="672" y="640" width="128" height="160"/>
-  <object name="charwdg1" type="spawn" x="672" y="576" width="64" height="32">
+  <object name="charwdg1" type="spawn" x="672" y="640" width="128" height="160">
    <properties>
-    <property name="quantity" value="2"/>
+    <property name="spawngroup" value="charwdg1"/>
    </properties>
   </object>
-  <object name="charwdg1" type="spawn" x="640" y="416" width="96" height="160">
+  <object name="charwdg1_1" type="spawn" x="672" y="576" width="64" height="32">
    <properties>
     <property name="quantity" value="2"/>
+    <property name="spawngroup" value="charwdg1"/>
    </properties>
   </object>
-  <object name="charwdg1" type="spawn" x="704" y="352" width="32" height="32"/>
-  <object name="charwdg1" type="spawn" x="512" y="352" width="128" height="96"/>
-  <object name="charwdg2" type="spawn" x="416" y="352" width="64" height="32"/>
-  <object name="charwdg1" type="spawn" x="192" y="384" width="128" height="32"/>
-  <object name="charwdg1" type="spawn" x="128" y="416" width="32" height="96"/>
-  <object name="charwdg2" type="spawn" x="544" y="256" width="32" height="32"/>
-  <object name="charwdg2" type="spawn" x="96" y="640" width="64" height="32">
+  <object name="charwdg1_2" type="spawn" x="640" y="416" width="96" height="160">
    <properties>
     <property name="quantity" value="2"/>
+    <property name="spawngroup" value="charwdg1"/>
    </properties>
   </object>
-  <object name="charwdg1" type="spawn" x="64" y="512" width="96" height="128"/>
-  <object name="charwdg1" type="spawn" x="160" y="736" width="32" height="64"/>
-  <object name="charwdg2" type="spawn" x="224" y="704" width="32" height="32"/>
-  <object name="charwdg1" type="spawn" x="224" y="608" width="160" height="96"/>
-  <object name="charwdg1" type="spawn" x="384" y="640" width="32" height="32"/>
-  <object name="charwdg2" type="spawn" x="768" y="256" width="32" height="32"/>
-  <object name="charwdg1" type="spawn" x="832" y="192" width="64" height="96">
+  <object name="charwdg1_3" type="spawn" x="704" y="352" width="32" height="32">
    <properties>
-    <property name="quantity" value="2"/>
+    <property name="spawngroup" value="charwdg1"/>
    </properties>
   </object>
-  <object name="charwdg2" type="spawn" x="352" y="192" width="160" height="32">
+  <object name="charwdg1_4" type="spawn" x="512" y="352" width="128" height="96">
+   <properties>
+    <property name="spawngroup" value="charwdg1"/>
+   </properties>
+  </object>
+  <object name="charwdg2" type="spawn" x="416" y="352" width="64" height="32">
+   <properties>
+    <property name="spawngroup" value="charwdg2"/>
+   </properties>
+  </object>
+  <object name="charwdg1_5" type="spawn" x="192" y="384" width="128" height="32">
+   <properties>
+    <property name="spawngroup" value="charwdg1"/>
+   </properties>
+  </object>
+  <object name="charwdg1_6" type="spawn" x="128" y="416" width="32" height="96">
+   <properties>
+    <property name="spawngroup" value="charwdg1"/>
+   </properties>
+  </object>
+  <object name="charwdg2_1" type="spawn" x="544" y="256" width="32" height="32">
+   <properties>
+    <property name="spawngroup" value="charwdg2"/>
+   </properties>
+  </object>
+  <object name="charwdg2_2" type="spawn" x="96" y="640" width="64" height="32">
    <properties>
     <property name="quantity" value="2"/>
+    <property name="spawngroup" value="charwdg2"/>
+   </properties>
+  </object>
+  <object name="charwdg1_7" type="spawn" x="64" y="512" width="96" height="128">
+   <properties>
+    <property name="spawngroup" value="charwdg1"/>
+   </properties>
+  </object>
+  <object name="charwdg1_8" type="spawn" x="160" y="736" width="32" height="64">
+   <properties>
+    <property name="spawngroup" value="charwdg1"/>
+   </properties>
+  </object>
+  <object name="charwdg2_3" type="spawn" x="224" y="704" width="32" height="32">
+   <properties>
+    <property name="spawngroup" value="charwdg2"/>
+   </properties>
+  </object>
+  <object name="charwdg1_9" type="spawn" x="224" y="608" width="160" height="96">
+   <properties>
+    <property name="spawngroup" value="charwdg1"/>
+   </properties>
+  </object>
+  <object name="charwdg1_10" type="spawn" x="384" y="640" width="32" height="32">
+   <properties>
+    <property name="spawngroup" value="charwdg1"/>
+   </properties>
+  </object>
+  <object name="charwdg2_4" type="spawn" x="768" y="256" width="32" height="32">
+   <properties>
+    <property name="spawngroup" value="charwdg2"/>
+   </properties>
+  </object>
+  <object name="charwdg1_11" type="spawn" x="832" y="192" width="64" height="96">
+   <properties>
+    <property name="quantity" value="2"/>
+    <property name="spawngroup" value="charwdg1"/>
+   </properties>
+  </object>
+  <object name="charwdg2_5" type="spawn" x="352" y="192" width="160" height="32">
+   <properties>
+    <property name="quantity" value="2"/>
+    <property name="spawngroup" value="charwdg2"/>
    </properties>
   </object>
   <object name="halvor" type="spawn" x="448" y="672" width="32" height="32">
    <properties>
     <property name="active" value="false"/>
+    <property name="spawngroup" value="halvor"/>
    </properties>
   </object>
  </objectgroup>

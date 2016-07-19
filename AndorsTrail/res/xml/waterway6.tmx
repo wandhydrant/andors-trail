@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map SYSTEM "http://mapeditor.org/dtd/1.0/map.dtd">
 <map version="1.0" orientation="orthogonal" width="30" height="30" tilewidth="32" tileheight="32">
  <properties>
   <property name="outdoors" value="1"/>
@@ -174,36 +175,43 @@
   <object name="izthiel_4" type="spawn" x="544" y="224" width="32" height="288">
    <properties>
     <property name="quantity" value="2"/>
+    <property name="spawngroup" value="izthiel_4"/>
    </properties>
   </object>
   <object name="izthiel_3" type="spawn" x="352" y="64" width="352" height="160">
    <properties>
     <property name="quantity" value="2"/>
+    <property name="spawngroup" value="izthiel_3"/>
    </properties>
   </object>
   <object name="burrower_2" type="spawn" x="640" y="64" width="288" height="160">
    <properties>
     <property name="quantity" value="2"/>
+    <property name="spawngroup" value="burrower_2"/>
    </properties>
   </object>
-  <object name="izthiel_3" type="spawn" x="32" y="288" width="320" height="224">
+  <object name="izthiel_3_1" type="spawn" x="32" y="288" width="320" height="224">
    <properties>
     <property name="quantity" value="2"/>
+    <property name="spawngroup" value="izthiel_3"/>
    </properties>
   </object>
   <object name="izthiel_2" type="spawn" x="224" y="448" width="320" height="160">
    <properties>
     <property name="quantity" value="2"/>
+    <property name="spawngroup" value="izthiel_2"/>
    </properties>
   </object>
-  <object name="izthiel_2" type="spawn" x="576" y="448" width="320" height="160">
+  <object name="izthiel_2_1" type="spawn" x="576" y="448" width="320" height="160">
    <properties>
     <property name="quantity" value="2"/>
+    <property name="spawngroup" value="izthiel_2"/>
    </properties>
   </object>
   <object name="erumen_1" type="spawn" x="160" y="640" width="736" height="288">
    <properties>
     <property name="quantity" value="3"/>
+    <property name="spawngroup" value="erumen_1"/>
    </properties>
   </object>
  </objectgroup>

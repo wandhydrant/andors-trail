@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map SYSTEM "http://mapeditor.org/dtd/1.0/map.dtd">
 <map version="1.0" orientation="orthogonal" width="18" height="30" tilewidth="32" tileheight="32">
  <properties>
   <property name="outdoors" value="1"/>
@@ -161,46 +162,52 @@
   <object name="erumen_f1" type="spawn" x="448" y="704" width="32" height="64">
    <properties>
     <property name="quantity" value="2"/>
+    <property name="spawngroup" value="erumen_f1"/>
    </properties>
   </object>
-  <object name="erumen_f1" type="spawn" x="320" y="640" width="32" height="32">
+  <object name="erumen_f1_1" type="spawn" x="320" y="640" width="32" height="32">
    <properties>
-    <property name="quantity" value="1"/>
+    <property name="spawngroup" value="erumen_f1"/>
    </properties>
   </object>
   <object name="erumen_f2" type="spawn" x="288" y="64" width="128" height="64">
    <properties>
-    <property name="quantity" value="1"/>
+    <property name="spawngroup" value="erumen_f2"/>
    </properties>
   </object>
-  <object name="erumen_f1" type="spawn" x="192" y="128" width="192" height="160">
+  <object name="erumen_f1_2" type="spawn" x="192" y="128" width="192" height="160">
    <properties>
     <property name="quantity" value="3"/>
+    <property name="spawngroup" value="erumen_f1"/>
    </properties>
   </object>
-  <object name="erumen_f1" type="spawn" x="160" y="288" width="128" height="160">
+  <object name="erumen_f1_3" type="spawn" x="160" y="288" width="128" height="160">
    <properties>
     <property name="quantity" value="2"/>
+    <property name="spawngroup" value="erumen_f1"/>
    </properties>
   </object>
-  <object name="erumen_f1" type="spawn" x="64" y="448" width="128" height="192">
+  <object name="erumen_f1_4" type="spawn" x="64" y="448" width="128" height="192">
    <properties>
     <property name="quantity" value="2"/>
+    <property name="spawngroup" value="erumen_f1"/>
    </properties>
   </object>
-  <object name="erumen_f1" type="spawn" x="256" y="576" width="32" height="32">
+  <object name="erumen_f1_5" type="spawn" x="256" y="576" width="32" height="32">
    <properties>
-    <property name="quantity" value="1"/>
+    <property name="spawngroup" value="erumen_f1"/>
    </properties>
   </object>
-  <object name="erumen_f1" type="spawn" x="256" y="832" width="64" height="32">
-   <properties>
-    <property name="quantity" value="2"/>
-   </properties>
-  </object>
-  <object name="erumen_f1" type="spawn" x="320" y="672" width="128" height="224">
+  <object name="erumen_f1_6" type="spawn" x="256" y="832" width="64" height="32">
    <properties>
     <property name="quantity" value="2"/>
+    <property name="spawngroup" value="erumen_f1"/>
+   </properties>
+  </object>
+  <object name="erumen_f1_7" type="spawn" x="320" y="672" width="128" height="224">
+   <properties>
+    <property name="quantity" value="2"/>
+    <property name="spawngroup" value="erumen_f1"/>
    </properties>
   </object>
  </objectgroup>

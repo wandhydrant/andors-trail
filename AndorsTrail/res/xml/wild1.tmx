@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map SYSTEM "http://mapeditor.org/dtd/1.0/map.dtd">
 <map version="1.0" orientation="orthogonal" width="21" height="21" tilewidth="32" tileheight="32">
  <properties>
   <property name="outdoors" value="1"/>
@@ -174,15 +175,33 @@
   <object name="forestdog" type="spawn" x="96" y="64" width="224" height="224">
    <properties>
     <property name="quantity" value="4"/>
+    <property name="spawngroup" value="forestdog"/>
    </properties>
   </object>
-  <object name="forestboar" type="spawn" x="64" y="64" width="128" height="160"/>
-  <object name="fox1" type="spawn" x="320" y="608" width="128" height="32"/>
-  <object name="fox1" type="spawn" x="576" y="224" width="32" height="64"/>
-  <object name="fox1" type="spawn" x="544" y="96" width="32" height="64"/>
+  <object name="forestboar" type="spawn" x="64" y="64" width="128" height="160">
+   <properties>
+    <property name="spawngroup" value="forestboar"/>
+   </properties>
+  </object>
+  <object name="fox1" type="spawn" x="320" y="608" width="128" height="32">
+   <properties>
+    <property name="spawngroup" value="fox1"/>
+   </properties>
+  </object>
+  <object name="fox1_1" type="spawn" x="576" y="224" width="32" height="64">
+   <properties>
+    <property name="spawngroup" value="fox1"/>
+   </properties>
+  </object>
+  <object name="fox1_2" type="spawn" x="544" y="96" width="32" height="64">
+   <properties>
+    <property name="spawngroup" value="fox1"/>
+   </properties>
+  </object>
   <object name="forestwasp" type="spawn" x="288" y="352" width="192" height="160">
    <properties>
     <property name="quantity" value="2"/>
+    <property name="spawngroup" value="forestwasp"/>
    </properties>
   </object>
  </objectgroup>
