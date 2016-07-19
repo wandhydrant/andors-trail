@@ -107,11 +107,11 @@ public final class ConversationController {
 			case deactivateSpawnArea:
 				deactivateSpawnArea(effect.mapName, effect.effectID, false);
 				break;
-			case activateMapChangeArea:
-				activateMapChangeArea(effect.mapName, effect.effectID);
+			case activateMapObjectGroup:
+				activateMapObjectGroup(effect.mapName, effect.effectID);
 				break;
-			case deactivateMapChangeArea:
-				deactivateMapChangeArea(effect.mapName, effect.effectID);
+			case deactivateMapObjectGroup:
+				deactivateMapObjectGroup(effect.mapName, effect.effectID);
 				break;
 			case removeQuestProgress:
 				addRemoveQuestProgressReward(player, effect.effectID, effect.value);
@@ -119,10 +119,9 @@ public final class ConversationController {
 		}
 	}
 
-	private void deactivateMapChangeArea(String mapName, String mapObjectID) {
+	private void deactivateMapObjectGroup(String mapName, String mapObjectGroupID) {
 		PredefinedMap map = findMapForScriptEffect(mapName);
-		MapObject o = map.findEventObject(MapObject.MapObjectType.newmap, mapObjectID);
-		controllers.mapController.deactivateMapObject(o);
+		controllers.mapController.deactivateMapObjectGroup(map, mapObjectGroupID);
 	}
 
 	private PredefinedMap findMapForScriptEffect(String mapName) {
@@ -130,10 +129,9 @@ public final class ConversationController {
 		return world.maps.findPredefinedMap(mapName);
 	}
 
-	private void activateMapChangeArea(String mapName, String mapObjectID) {
+	private void activateMapObjectGroup(String mapName, String mapObjectGroupID) {
 		PredefinedMap map = findMapForScriptEffect(mapName);
-		MapObject o = map.findEventObject(MapObject.MapObjectType.newmap, mapObjectID);
-		controllers.mapController.activateMapObject(map, o);
+		controllers.mapController.activateMapObjectGroup(map, mapObjectGroupID);
 	}
 
 	private void spawnAll(String mapName, String monsterTypeSpawnGroup) {

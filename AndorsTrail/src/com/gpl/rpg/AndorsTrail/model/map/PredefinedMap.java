@@ -8,6 +8,7 @@ import com.gpl.rpg.AndorsTrail.controller.VisualEffectController.BloodSplatter;
 import com.gpl.rpg.AndorsTrail.model.actor.Monster;
 import com.gpl.rpg.AndorsTrail.model.item.ItemType;
 import com.gpl.rpg.AndorsTrail.model.item.Loot;
+import com.gpl.rpg.AndorsTrail.model.map.MapObject.MapObjectType;
 import com.gpl.rpg.AndorsTrail.util.Coord;
 import com.gpl.rpg.AndorsTrail.util.CoordRect;
 import com.gpl.rpg.AndorsTrail.util.L;
@@ -17,6 +18,7 @@ import java.io.DataInputStream;
 import java.io.DataOutputStream;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
 
 public final class PredefinedMap {
@@ -27,6 +29,8 @@ public final class PredefinedMap {
 	public final Size size;
 	public final MapObject[] eventObjects;
 	public final MonsterSpawnArea[] spawnAreas;
+	public final List<String> initiallyActiveMapObjectGroups;
+	public final List<String> activeMapObjectGroups;
 	public final ArrayList<Loot> groundBags = new ArrayList<Loot>();
 	public boolean visited = false;
 	public long lastVisitTime = VISIT_RESET;
@@ -41,6 +45,7 @@ public final class PredefinedMap {
 			, Size size
 			, MapObject[] eventObjects
 			, MonsterSpawnArea[] spawnAreas
+			, List<String> initiallyActiveMapObjectGroups
 			, boolean isOutdoors
 	) {
 		this.xmlResourceId = xmlResourceId;
@@ -48,6 +53,8 @@ public final class PredefinedMap {
 		this.size = size;
 		this.eventObjects = eventObjects;
 		this.spawnAreas = spawnAreas;
+		this.initiallyActiveMapObjectGroups = initiallyActiveMapObjectGroups;
+		this.activeMapObjectGroups = new LinkedList<String>();
 		assert(size.width > 0);
 		assert(size.height > 0);
 		this.isOutdoors = isOutdoors;
@@ -84,6 +91,7 @@ public final class PredefinedMap {
 		for (MapObject o : eventObjects) {
 			if (!o.isActive) continue;
 			if (!o.position.contains(p)) continue;
+			if (!activeMapObjectGroups.contains(o.group)) continue;
 			if (result == null) result = new ArrayList<MapObject>();
 			result.add(o);
 		}
@@ -155,9 +163,9 @@ public final class PredefinedMap {
 		for (MonsterSpawnArea a : spawnAreas) {
 			a.resetForNewGame();
 		}
-		for (MapObject o : eventObjects) {
-			o.resetForNewGame();
-		}
+		activeMapObjectGroups.clear();
+		activeMapObjectGroups.addAll(initiallyActiveMapObjectGroups);
+		activateMapObjects();
 		resetTemporaryData();
 		groundBags.clear();
 		visited = false;
@@ -197,6 +205,44 @@ public final class PredefinedMap {
 	}
 
 
+	private void activateMapObjects() {
+		if (AndorsTrailApplication.DEVELOPMENT_DEBUGMESSAGES) {
+			L.log("Applying active status to all map objects in map "+name);
+		}
+		for (MapObject o : eventObjects) {
+			o.isActive = activeMapObjectGroups.contains(o.group);
+		}
+	}
+	
+	public void activateMapObjectGroup(String group) {
+		if (AndorsTrailApplication.DEVELOPMENT_DEBUGMESSAGES) {
+			L.log("Applying active status to object group "+group+" in map "+name);
+		}
+		if (!activeMapObjectGroups.contains(group)) {
+			activeMapObjectGroups.add(group);
+			for (MapObject o : eventObjects) {
+				if (o.group.equals(group)) {
+					o.isActive = true;
+					if (o.type == MapObjectType.container) createContainerLoot(o);
+				}
+			}
+		}
+	}
+	
+	public void deactivateMapObjectGroup(String group) {
+		if (AndorsTrailApplication.DEVELOPMENT_DEBUGMESSAGES) {
+			L.log("Removing active status to object group "+group+" in map"+name);
+		}
+		if (activeMapObjectGroups.contains(group)) {
+			activeMapObjectGroups.remove(group);
+			for (MapObject o : eventObjects) {
+				if (o.group.equals(group)) {
+					o.isActive = false;
+				}
+			}
+		}
+	}
+
 
 	// ====== PARCELABLE ===================================================================
 
@@ -215,10 +261,7 @@ public final class PredefinedMap {
 				}
 				if(fileversion >= 43) {
 					//Spawn areas now have unique IDs. Need to check as maps can change.
-					int idLength = src.readInt();
-					byte[] idBytes = new byte[idLength];
-					src.read(idBytes);
-					String id = new String(idBytes);
+					String id = src.readUTF();
 					int j = i;
 					boolean found = false;
 					do {
@@ -238,6 +281,18 @@ public final class PredefinedMap {
 					this.spawnAreas[i].readFromParcel(src, world, fileversion);
 				}
 			}
+			
+			activeMapObjectGroups.clear();
+			if(fileversion >= 43) {
+				int activeListLength = src.readInt();
+				for (int i = 0; i < activeListLength; i++) {
+					String activeGroupID = src.readUTF();
+					activeMapObjectGroups.add(activeGroupID);
+				}
+			} else {
+				activeMapObjectGroups.addAll(initiallyActiveMapObjectGroups);
+			}
+			activateMapObjects();
 
 			groundBags.clear();
 			if (fileversion <= 5) return;
@@ -265,6 +320,10 @@ public final class PredefinedMap {
 					/*int lastVisitVersion = */src.readInt();
 				}
 			}
+		} else {
+			activeMapObjectGroups.clear();
+			activeMapObjectGroups.addAll(initiallyActiveMapObjectGroups);
+			activateMapObjects();
 		}
 		if (fileversion >= 37) {
 			if (fileversion < 41) visited = true;
@@ -289,9 +348,8 @@ public final class PredefinedMap {
 			if (this.visited && a.isUnique) return true;
 			if (a.isSpawning != a.isSpawningForNewGame) return true;
 		}
-		for (MapObject o : eventObjects) {
-			if (o.isActive != o.isActiveForNewGame) return true;
-		}
+		if (!activeMapObjectGroups.containsAll(initiallyActiveMapObjectGroups) 
+				|| !initiallyActiveMapObjectGroups.containsAll(activeMapObjectGroups)) return true;
 		return false;
 	}
 
@@ -300,10 +358,12 @@ public final class PredefinedMap {
 			dest.writeBoolean(true);
 			dest.writeInt(spawnAreas.length);
 			for(MonsterSpawnArea a : spawnAreas) {
-				byte[] idBytes = a.areaID.getBytes();
-				dest.writeInt(idBytes.length);
-				dest.write(idBytes);
+				dest.writeUTF(a.areaID);
 				a.writeToParcel(dest);
+			}
+			dest.writeInt(activeMapObjectGroups.size());
+			for(String s : activeMapObjectGroups) {
+				dest.writeUTF(s);
 			}
 			dest.writeInt(groundBags.size());
 			for(Loot l : groundBags) {
