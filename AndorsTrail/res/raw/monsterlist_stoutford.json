@@ -1,4 +1,38 @@
 [
+   {
+        "id":"stoutford_farmer_jan",
+        "phraseID":"stoutford_farmer_jan_0",
+        "name":"Jan",
+        "iconID":"monsters_karvis2:1"
+    },
+    {
+        "id":"stoutford_farmer_jen",
+        "phraseID":"stoutford_farmer_jen_0",
+        "name":"Jen",
+        "iconID":"monsters_karvis2:1"
+    },
+    {
+        "id":"kayla",
+        "phraseID":"kayla_0",
+        "droplistID":"kayla_shoplist",
+        "unique":1,
+        "monsterClass":"humanoid",
+        "name":"Kayla",
+        "spawnGroup":"kayla",
+        "iconID":"monsters_rltiles4:29"
+    },
+    {
+        "id":"tahalendor",
+        "phraseID":"tahalendor_0",
+        "name":"Tahalendor",
+        "iconID":"monsters_ld1:3"
+    },
+    {
+        "id":"yolgen",
+        "phraseID":"yolgen_0",
+        "name":"Yolgen",
+        "iconID":"monsters_men:4"
+    },
     {
         "id":"stoutford_gateguard",
         "phraseID":"stoutford_gateguard_0",
@@ -7,7 +41,7 @@
     },
     {
         "id":"stoutford_guard1",
-        "phraseID":"stoutford_gateguard_0",
+        "phraseID":"stoutford_guard1_0",
         "name":"Stoutford Guard",
         "iconID":"monsters_tometik2:44"
     },
@@ -28,12 +62,6 @@
         "phraseID":"stoutford_commoner_0",
         "name":"Commoner",
         "iconID":"monsters_karvis2:2"
-    },
-    {
-        "id":"stoutford_farmer1",
-        "phraseID":"stoutford_builder_0",
-        "name":"Farmer",
-        "iconID":"monsters_karvis2:1"
     },
     {
         "id":"stoutford_commoner2",
@@ -77,14 +105,15 @@
     },
     {
         "id":"stoutford_innkeeper",
-        "phraseID":"stoutford_builder_0",
-        "name":"Inn Keeper",
+        "phraseID":"glasforn_0",
+        "name":"Glasforn",
         "iconID":"monsters_ld1:33"
     },
     {
         "id":"stoutford_thief",
-        "phraseID":"stoutford_gateguard_0",
-        "name":"Thief",
+        "phraseID":"stoutford_thief_0",
+        "droplistID":"stoutford_thief_shoplist",
+        "name":"Quiet Thief",
         "iconID":"monsters_rogue1:0"
     },
     {
@@ -108,21 +137,46 @@
         "iconID":"monsters_ld1:29"
     },
     {
-        "id":"stoutford_acolyte",
-        "phraseID":"chapelgoer",
-        "name":"Acolyte",
-        "iconID":"monsters_men:4"
-    },
-    {
-        "id":"stoutford_priest",
-        "phraseID":"chapelgoer",
-        "name":"Priest",
-        "iconID":"monsters_ld1:3"
-    },
-    {
         "id":"stoutford_worshiper",
         "phraseID":"chapelgoer",
         "name":"Praying woman",
         "iconID":"monsters_men:6"
+    },
+    {
+        "blockChance":90,
+        "maxAP":10,
+        "maxHP":135,
+        "unique":1,
+        "droplistID":"eliszylae_droplist",
+        "criticalSkill":40,
+        "attackCost":2,
+        "damageResistance":2,
+        "attackChance":80,
+        "attackDamage":{
+            "min":1,
+            "max":6
+        },
+        "id":"stoutford_lich",
+        "hitEffect":{
+            "increaseCurrentHP":{
+                "min":2,
+                "max":4
+            },
+            "conditionsTarget":[
+                {
+                    "duration":2,
+                    "condition":"feebleness_minor",
+                    "magnitude":2,
+                    "chance":"15"
+                }
+            ]
+        },
+        "moveCost":5,
+        "monsterClass":"undead",
+        "name":"Eliszylae",
+        "movementAggressionType":"wholeMap",
+        "iconID":"monsters_liches:0",
+        "spawnGroup":"stoutford_lich",
+        "criticalMultiplier":2.0
     }
 ]

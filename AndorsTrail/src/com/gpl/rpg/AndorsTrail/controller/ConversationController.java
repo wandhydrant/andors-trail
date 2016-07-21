@@ -146,10 +146,10 @@ public final class ConversationController {
 		}
 	}
 
-	private void deactivateSpawnArea(String mapName, String monsterTypeSpawnGroup, boolean removeAllMonsters) {
+	private void deactivateSpawnArea(String mapName, String areaID, boolean removeAllMonsters) {
 		PredefinedMap map = findMapForScriptEffect(mapName);
 		for (MonsterSpawnArea area : map.spawnAreas) {
-			if (!area.areaID.equals(monsterTypeSpawnGroup)) continue;
+			if (!area.areaID.equals(areaID)) continue;
 			controllers.monsterSpawnController.deactivateSpawnArea(area, removeAllMonsters);
 		}
 	}

@@ -160,6 +160,18 @@ public final class TMXMapTranslator {
 								L.log("OPTIMIZE: Map " + m.name + ", key " + object.name + "@" + topLeft.toString() + " has unrecognized property \"" + p.name + "\".");
 							}
 						}
+						if (requireId == null && object.name != null) {
+							String[] fields = object.name.split(":");
+							if (fields.length == 2) {
+								requireType = Requirement.RequirementType.questProgress;
+								requireValue = Integer.parseInt(fields[1]);
+								requireId = fields[0];
+							} else if (fields.length == 3) {
+								requireValue = Integer.parseInt(fields[2]);
+								requireType = Requirement.RequirementType.valueOf(fields[0]);
+								requireId = fields[1];
+							}
+						}
 						mapObjects.add(MapObject.createKeyArea(position, phraseID, new Requirement(requireType, requireId, requireValue, requireNegation), group.name));
 					} else if (object.type.equals("rest")) {
 						mapObjects.add(MapObject.createRestArea(position, object.name, group.name));

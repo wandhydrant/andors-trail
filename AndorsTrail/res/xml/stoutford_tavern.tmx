@@ -148,22 +148,48 @@
     <property name="place" value="tavern"/>
    </properties>
   </object>
-  <object name="rest" type="rest" x="32" y="128" width="32" height="32"/>
  </objectgroup>
  <objectgroup name="Spawn">
-  <object name="stoutford_thief" type="spawn" x="192" y="96" width="32" height="32"/>
-  <object name="stoutford_cook" type="spawn" x="480" y="128" width="64" height="160"/>
+  <object name="stoutford_thief" type="spawn" x="192" y="96" width="32" height="32">
+   <properties>
+    <property name="spawngroup" value="stoutford_thief"/>
+   </properties>
+  </object>
+  <object name="stoutford_cook" type="spawn" x="480" y="128" width="64" height="160">
+   <properties>
+    <property name="spawngroup" value="stoutford_cook"/>
+   </properties>
+  </object>
   <object name="stoutford_drinkers" type="spawn" x="192" y="128" width="224" height="192">
    <properties>
     <property name="quantity" value="4"/>
+    <property name="spawngroup" value="stoutford_drinkers"/>
    </properties>
   </object>
-  <object name="stoutford_innkeeper" type="spawn" x="128" y="192" width="64" height="64"/>
+  <object name="stoutford_innkeeper" type="spawn" x="128" y="192" width="64" height="64">
+   <properties>
+    <property name="spawngroup" value="stoutford_innkeeper"/>
+   </properties>
+  </object>
  </objectgroup>
  <objectgroup name="Keys">
-  <object name="nondisplay:22" type="key" x="0" y="96" width="64" height="64">
+  <object name="rumblings:30" type="key" x="0" y="96" width="64" height="64">
    <properties>
     <property name="phrase" value="stoutford_bed_locked"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup name="Inactive">
+  <properties>
+   <property name="active" value="false"/>
+  </properties>
+  <object name="rest" type="rest" x="32" y="128" width="32" height="32"/>
+ </objectgroup>
+ <objectgroup name="Active">
+  <object name="send_to_lich" type="mapchange" x="32" y="128" width="32" height="32">
+   <properties>
+    <property name="map" value="stoutford_cellar2"/>
+    <property name="place" value="prison"/>
    </properties>
   </object>
  </objectgroup>

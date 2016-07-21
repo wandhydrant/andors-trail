@@ -42,7 +42,9 @@ public final class MapController {
 				continue;
 			case whenEntering:
 				// Do not trigger event if the player already was on the same MapObject before.
-				if (mapObject.position.contains(lastPosition)) return;
+				if (mapObject.position.contains(lastPosition)) continue;
+				break;
+			case onEveryStep:
 				break;
 			}
 			handleMapEvent(mapObject, newPosition);

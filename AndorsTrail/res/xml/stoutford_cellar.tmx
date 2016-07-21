@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map SYSTEM "http://mapeditor.org/dtd/1.0/map.dtd">
 <map version="1.0" orientation="orthogonal" width="15" height="17" tilewidth="32" tileheight="32">
  <tileset firstgid="1" name="map_bed_1" tilewidth="32" tileheight="32">
   <image source="../drawable/map_bed_1.png" width="512" height="256"/>
@@ -197,7 +198,7 @@
    eJzbKMbAsHEQYhAgJI8MkPUg68VlDrJaXGahi6Hbjcu9uPThsw+f2cSGATb/E6OXkJvx+Y8YvxCjlhi/EasXW/ySmvbQ7SLGDeQAUuKUHL/gwwB2SHh+
   </data>
  </layer>
- <objectgroup name="Mapevents" width="15" height="17">
+ <objectgroup name="Mapevents">
   <object name="north" type="mapchange" x="256" y="64" width="32" height="32">
    <properties>
     <property name="map" value="stoutford_cellar2"/>
@@ -211,6 +212,12 @@
    </properties>
   </object>
  </objectgroup>
- <objectgroup name="Spawn" width="15" height="17"/>
- <objectgroup name="Keys" width="15" height="17"/>
+ <objectgroup name="Spawn"/>
+ <objectgroup name="Keys">
+  <object name="rumblings:50" type="key" x="256" y="64" width="32" height="32">
+   <properties>
+    <property name="phrase" value="stoutford_cellar_locked_key"/>
+   </properties>
+  </object>
+ </objectgroup>
 </map>

@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map SYSTEM "http://mapeditor.org/dtd/1.0/map.dtd">
 <map version="1.0" orientation="orthogonal" width="20" height="20" tilewidth="32" tileheight="32">
  <properties>
   <property name="outdoors" value="1"/>
@@ -143,7 +144,7 @@
    eJxzFWBgcB2hGASwsUk1AxlgE0OWI9U8fIAYf5FiJ7HhRMh8dHl8fGLNIzYsSDGP3PilJO0gm0OMfyiNO3Ldh89dtDIP3Vxs9mDTS4x5uMKJWPcRUkMN8wZbfBCDAY7mVQE=
   </data>
  </layer>
- <objectgroup name="Mapevents" width="20" height="20">
+ <objectgroup name="Mapevents">
   <object name="west" type="mapchange" x="0" y="128" width="32" height="64">
    <properties>
     <property name="map" value="stoutford_gate"/>
@@ -187,9 +188,9 @@
    </properties>
   </object>
  </objectgroup>
- <objectgroup name="Spawn" width="20" height="20">
-  <object name="stoutford_farmer1" type="spawn" x="64" y="416" width="160" height="160"/>
+ <objectgroup name="Spawn">
+  <object name="stoutford_farmer_jen" type="spawn" x="64" y="416" width="160" height="160"/>
   <object name="stoutford_commoner2" type="spawn" x="96" y="128" width="224" height="64"/>
  </objectgroup>
- <objectgroup name="Keys" width="20" height="20"/>
+ <objectgroup name="Keys"/>
 </map>

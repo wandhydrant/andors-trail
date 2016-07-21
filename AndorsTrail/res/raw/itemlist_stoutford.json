@@ -1,0 +1,33 @@
+[
+    {
+        "id":"eliszylae_heart",
+        "category":"other",
+        "hasManualPrice":1,
+        "baseMarketCost":0,
+        "name":"Demon heart",
+        "displaytype":"quest",
+        "iconID":"items_misc:6"
+    },
+    {
+        "id":"necklace_undead",
+        "hitEffect":{
+            "increaseCurrentHP":{
+                "min":0,
+                "max":1
+            }
+        },
+        "category":"neck",
+        "name":"Necklace of the Undead",
+        "equipEffect":{
+            
+        },
+        "displaytype":"rare",
+        "killEffect":{
+            "increaseCurrentHP":{
+                "min":0,
+                "max":3
+            }
+        },
+        "iconID":"items_necklaces_1:9"
+    }
+]
