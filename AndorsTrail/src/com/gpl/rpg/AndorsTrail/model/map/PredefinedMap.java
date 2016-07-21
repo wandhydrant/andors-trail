@@ -209,9 +209,6 @@ public final class PredefinedMap {
 	private void activateMapObjects() {
 		if (AndorsTrailApplication.DEVELOPMENT_DEBUGMESSAGES) {
 			L.log("Applying active status to all map objects in map "+name);
-			if (name.equalsIgnoreCase("home")) {
-				L.log("Home active");
-			}
 		}
 		for (MapObject o : eventObjects) {
 			o.isActive = activeMapObjectGroups.contains(o.group);
