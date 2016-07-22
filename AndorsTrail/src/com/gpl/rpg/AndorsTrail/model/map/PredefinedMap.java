@@ -56,6 +56,7 @@ public final class PredefinedMap {
 		this.initiallyActiveMapObjectGroups = initiallyActiveMapObjectGroups;
 		this.activeMapObjectGroups = new LinkedList<String>();
 		this.activeMapObjectGroups.addAll(this.initiallyActiveMapObjectGroups);
+		activateMapObjects();
 		assert(size.width > 0);
 		assert(size.height > 0);
 		this.isOutdoors = isOutdoors;
