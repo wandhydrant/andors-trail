@@ -15,6 +15,7 @@ public final class LayeredTileMap {
 	private static final ColorFilter colorFilterBlack60 = createGrayScaleColorFilter(0.4f);
 	private static final ColorFilter colorFilterBlack80 = createGrayScaleColorFilter(0.2f);
 	private static final ColorFilter colorFilterInvert = createInvertColorFilter();
+	private static final ColorFilter colorFilterBW = createBWColorFilter();
 
 	private final Size size;
 	public final MapSection currentLayout;
@@ -80,6 +81,7 @@ public final class LayeredTileMap {
 		else if (colorFilter.equals("black60")) return colorFilterBlack60;
 		else if (colorFilter.equals("black80")) return colorFilterBlack80;
 		else if (colorFilter.equals("invert")) return colorFilterInvert;
+		else if (colorFilter.equals("bw")) return colorFilterBW;
 		return null;
 	}
 
@@ -98,6 +100,15 @@ public final class LayeredTileMap {
 			-1.00f, 0.00f, 0.00f, 0.0f, 255.0f,
 			0.00f, -1.00f, 0.00f, 0.0f, 255.0f,
 			0.00f, 0.00f, -1.00f, 0.0f, 255.0f,
+			0.00f, 0.00f, 0.00f, 1.0f, 0.0f
+		});
+	}
+	
+	private static ColorMatrixColorFilter createBWColorFilter() {
+		return new ColorMatrixColorFilter(new float[] {
+			0.33f, 0.59f, 0.11f, 0.0f, 0.0f,
+			0.33f, 0.59f, 0.11f, 0.0f, 0.0f,
+			0.33f, 0.59f, 0.11f, 0.0f, 0.0f,
 			0.00f, 0.00f, 0.00f, 1.0f, 0.0f
 		});
 	}

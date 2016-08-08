@@ -55,6 +55,8 @@ public final class PredefinedMap {
 		this.spawnAreas = spawnAreas;
 		this.initiallyActiveMapObjectGroups = initiallyActiveMapObjectGroups;
 		this.activeMapObjectGroups = new LinkedList<String>();
+		this.activeMapObjectGroups.addAll(this.initiallyActiveMapObjectGroups);
+		activateMapObjects();
 		assert(size.width > 0);
 		assert(size.height > 0);
 		this.isOutdoors = isOutdoors;
@@ -91,7 +93,7 @@ public final class PredefinedMap {
 		for (MapObject o : eventObjects) {
 			if (!o.isActive) continue;
 			if (!o.position.contains(p)) continue;
-			if (!activeMapObjectGroups.contains(o.group)) continue;
+			//if (!activeMapObjectGroups.contains(o.group)) continue;
 			if (result == null) result = new ArrayList<MapObject>();
 			result.add(o);
 		}
