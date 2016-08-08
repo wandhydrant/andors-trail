@@ -10,10 +10,11 @@ import com.gpl.rpg.AndorsTrail.util.Size;
 import java.util.Collection;
 
 public final class LayeredTileMap {
-	private static final ColorFilter colorFilterBlack20 = createGrayScaleColorFilter(0.2f);
-	private static final ColorFilter colorFilterBlack40 = createGrayScaleColorFilter(0.4f);
-	private static final ColorFilter colorFilterBlack60 = createGrayScaleColorFilter(0.6f);
-	private static final ColorFilter colorFilterBlack80 = createGrayScaleColorFilter(0.8f);
+	private static final ColorFilter colorFilterBlack20 = createGrayScaleColorFilter(0.8f);
+	private static final ColorFilter colorFilterBlack40 = createGrayScaleColorFilter(0.6f);
+	private static final ColorFilter colorFilterBlack60 = createGrayScaleColorFilter(0.4f);
+	private static final ColorFilter colorFilterBlack80 = createGrayScaleColorFilter(0.2f);
+	private static final ColorFilter colorFilterInvert = createInvertColorFilter();
 
 	private final Size size;
 	public final MapSection currentLayout;
@@ -78,6 +79,7 @@ public final class LayeredTileMap {
 		else if (colorFilter.equals("black40")) return colorFilterBlack40;
 		else if (colorFilter.equals("black60")) return colorFilterBlack60;
 		else if (colorFilter.equals("black80")) return colorFilterBlack80;
+		else if (colorFilter.equals("invert")) return colorFilterInvert;
 		return null;
 	}
 
@@ -87,6 +89,15 @@ public final class LayeredTileMap {
 			f,     0.00f, 0.00f, 0.0f, 0.0f,
 			0.00f, f,     0.00f, 0.0f, 0.0f,
 			0.00f, 0.00f, f,     0.0f, 0.0f,
+			0.00f, 0.00f, 0.00f, 1.0f, 0.0f
+		});
+	}
+	
+	private static ColorMatrixColorFilter createInvertColorFilter() {
+		return new ColorMatrixColorFilter(new float[] {
+			-1.00f, 0.00f, 0.00f, 0.0f, 255.0f,
+			0.00f, -1.00f, 0.00f, 0.0f, 255.0f,
+			0.00f, 0.00f, -1.00f, 0.0f, 255.0f,
 			0.00f, 0.00f, 0.00f, 1.0f, 0.0f
 		});
 	}
