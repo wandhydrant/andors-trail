@@ -1,44 +1,4 @@
-<?xml version="1.0" ?><!DOCTYPE map  SYSTEM 'http://mapeditor.org/dtd/1.0/map.dtd'><map height="8" orientation="orthogonal" tileheight="32" tilewidth="32" version="1.0" width="8">
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
+<?xml version="1.0" ?><map height="8" orientation="orthogonal" tileheight="32" tilewidth="32" version="1.0" width="8">
  <tileset firstgid="1" name="map_bed_1" tileheight="32" tilewidth="32">
   <image height="256" source="../drawable/map_bed_1.png" width="512"/>
  </tileset><tileset firstgid="129" name="map_border_1" tileheight="32" tilewidth="32">
@@ -180,7 +140,12 @@
   </object>
  </objectgroup>
  <objectgroup name="Spawn">
-  <object height="128" name="stoutford_farmer_jan" type="spawn" width="192" x="32" y="96"/>
+  <object height="128" name="stoutford_farmer_jan" type="spawn" width="192" x="32" y="96">
+   <properties>
+    <property name="respawn" value="false"/>
+    <property name="spawngroup" value="stoutford_farmer_jan"/>
+   </properties>
+  </object>
  </objectgroup>
  <objectgroup name="Keys"/>
 </map>
