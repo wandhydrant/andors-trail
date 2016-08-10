@@ -16,6 +16,9 @@ public final class LayeredTileMap {
 	private static final ColorFilter colorFilterBlack80 = createGrayScaleColorFilter(0.2f);
 	private static final ColorFilter colorFilterInvert = createInvertColorFilter();
 	private static final ColorFilter colorFilterBW = createBWColorFilter();
+	private static final ColorFilter colorFilterRedTint = createRedTintColorFilter();
+	private static final ColorFilter colorFilterGreenTint = createGreenTintColorFilter();
+	private static final ColorFilter colorFilterBlueTint = createBlueTintColorFilter();
 
 	private final Size size;
 	public final MapSection currentLayout;
@@ -82,6 +85,9 @@ public final class LayeredTileMap {
 		else if (colorFilter.equals("black80")) return colorFilterBlack80;
 		else if (colorFilter.equals("invert")) return colorFilterInvert;
 		else if (colorFilter.equals("bw")) return colorFilterBW;
+		else if (colorFilter.equals("redtint")) return colorFilterRedTint;
+		else if (colorFilter.equals("greentint")) return colorFilterGreenTint;
+		else if (colorFilter.equals("bluetint")) return colorFilterBlueTint;
 		return null;
 	}
 
@@ -110,6 +116,33 @@ public final class LayeredTileMap {
 			0.33f, 0.59f, 0.11f, 0.0f, 0.0f,
 			0.33f, 0.59f, 0.11f, 0.0f, 0.0f,
 			0.00f, 0.00f, 0.00f, 1.0f, 0.0f
+		});
+	}
+
+	private static ColorMatrixColorFilter createRedTintColorFilter() {
+		return new ColorMatrixColorFilter(new float[] {
+				1.20f, 0.20f, 0.20f, 0.0f, 25.0f,
+				0.00f, 0.80f, 0.00f, 0.0f, 0.0f,
+				0.00f, 0.00f, 0.80f, 0.0f, 0.0f,
+				0.00f, 0.00f, 0.00f, 1.0f, 0.0f
+		});
+	}
+
+	private static ColorMatrixColorFilter createGreenTintColorFilter() {
+		return new ColorMatrixColorFilter(new float[] {
+				0.85f, 0.00f, 0.00f, 0.0f, 0.0f,
+				0.15f, 1.15f, 0.15f, 0.0f, 15.0f,
+				0.00f, 0.00f, 0.85f, 0.0f, 0.0f,
+				0.00f, 0.00f, 0.00f, 1.0f, 0.0f
+		});
+	}
+
+	private static ColorMatrixColorFilter createBlueTintColorFilter() {
+		return new ColorMatrixColorFilter(new float[] {
+				0.70f, 0.00f, 0.00f, 0.0f, 0.0f,
+				0.00f, 0.70f, 0.00f, 0.0f, 0.0f,
+				0.30f, 0.30f, 1.30f, 0.0f, 40.0f,
+				0.00f, 0.00f, 0.00f, 1.0f, 0.0f
 		});
 	}
 
