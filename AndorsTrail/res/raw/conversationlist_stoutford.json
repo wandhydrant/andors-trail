@@ -46,7 +46,6 @@
         "id":"stoutford_farmer_jen_0"
     },
     {
-        "message":"",
         "id":"kayla_0",
         "replies":[
             {
@@ -62,12 +61,39 @@
             {
                 "nextPhraseID":"kayla_2",
                 "text":"Who are you ?"
+            },
+            {
+                "nextPhraseID":"kayla_3",
+                "text":"Have you seen my brother Andor ?"
+            },
+            {
+                "nextPhraseID":"kayla_halvor_0",
+                "text":"Are you a friend of Halvor ?",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "value":180,
+                        "requireID":"halvor_surprise"
+                    },
+                    {
+                        "negate":true,
+                        "requireType":"questProgress",
+                        "value":190,
+                        "requireID":"halvor_surprise"
+                    }
+                ]
             }
         ]
     },
     {
         "message":"I'm Kayla. I love making clothes, shoes and boots.",
-        "id":"kayla_2"
+        "id":"kayla_2",
+        "replies":[
+            {
+                "nextPhraseID":"kayla_4",
+                "text":"N"
+            }
+        ]
     },
     {
         "message":"Don't cause trouble.",
@@ -1288,5 +1314,115 @@
     {
         "message":"Boohoohoo...",
         "id":"glasforn_rumblings103_1"
+    },
+    {
+        "message":"No. Sorry.",
+        "id":"kayla_3"
+    },
+    {
+        "message":"Halvor ? Yes ! He's so nice ! Do you know him ?",
+        "id":"kayla_halvor_0",
+        "replies":[
+            {
+                "nextPhraseID":"kayla_halvor_1",
+                "text":"I hate this guy. He's nothing but trouble..."
+            },
+            {
+                "nextPhraseID":"kayla_halvor_2",
+                "text":"Sure, We keep meeting around the world in the most unusual places. I even helped him gather some items."
+            }
+        ]
+    },
+    {
+        "message":"He's always been good to me. If you don't like him, I don't like you !",
+        "id":"kayla_halvor_1"
+    },
+    {
+        "message":"So that's you ! He told me about you.",
+        "id":"kayla_halvor_2",
+        "replies":[
+            {
+                "nextPhraseID":"kayla_halvor_3",
+                "text":"N"
+            }
+        ]
+    },
+    {
+        "message":"He told me you were of great help.",
+        "id":"kayla_halvor_3",
+        "replies":[
+            {
+                "nextPhraseID":"kayla_halvor_4",
+                "text":"It was a pleasure."
+            },
+            {
+                "nextPhraseID":"kayla_halvor_4",
+                "text":"I just did my part."
+            },
+            {
+                "nextPhraseID":"kayla_halvor_4",
+                "text":"Well, he paid good money."
+            }
+        ]
+    },
+    {
+        "message":"Anyway. I made these boots with the items he brought me.",
+        "id":"kayla_halvor_4",
+        "replies":[
+            {
+                "nextPhraseID":"kayla_halvor_5",
+                "text":"N"
+            }
+        ]
+    },
+    {
+        "message":"I'm really proud of the result. \nThey are light, but sturdy,thanks to the bones and insect wings. \nThey are comfortable but tough thanks to the animal hair and venomscale scales. \nThey are stiff when adjusted, thanks to the rat tails.",
+        "id":"kayla_halvor_5",
+        "replies":[
+            {
+                "nextPhraseID":"kayla_halvor_6",
+                "text":"N"
+            }
+        ]
+    },
+    {
+        "message":"Here. Take these. I've given one pair to Halvor, and I'll keep the last one for me.",
+        "id":"kayla_halvor_6",
+        "replies":[
+            {
+                "nextPhraseID":"kayla_4",
+                "text":"Thank you."
+            },
+            {
+                "nextPhraseID":"X",
+                "text":"Wow. I have to try these. Good bye."
+            }
+        ],
+        "rewards":[
+            {
+                "value":190,
+                "rewardID":"halvor_surprise",
+                "rewardType":"questProgress"
+            },
+            {
+                "value":1,
+                "rewardID":"globetrotter_boots",
+                "rewardType":"giveItem"
+            }
+        ]
+    },
+    {
+        "message":"Do you want to trade ?",
+        "id":"kayla_4",
+        "replies":[
+            {
+                "nextPhraseID":"S",
+                "text":"Sure."
+            },
+            {
+                "nextPhraseID":"X",
+                "text":"Not now."
+            }
+        ]
     }
 ]

@@ -12,22 +12,151 @@
         "id":"necklace_undead",
         "hitEffect":{
             "increaseCurrentHP":{
-                "min":0,
-                "max":1
+                "min":1,
+                "max":2
             }
         },
         "category":"neck",
+        "hasManualPrice":1,
+        "baseMarketCost":10,
+        "description":"This necklace calls for death, and yours would do.",
         "name":"Necklace of the Undead",
         "equipEffect":{
-            
+            "addedConditions":[
+                {
+                    "condition":"curse_undead",
+                    "magnitude":1
+                }
+            ],
+            "increaseMaxHP":10
         },
-        "displaytype":"rare",
+        "displaytype":"extraordinary",
         "killEffect":{
             "increaseCurrentHP":{
-                "min":0,
-                "max":3
+                "min":2,
+                "max":5
             }
         },
         "iconID":"items_necklaces_1:9"
+    },
+    {
+        "id":"globetrotter_boots",
+        "category":"feet_lthr",
+        "hasManualPrice":1,
+        "baseMarketCost":130,
+        "name":"Boots of the Globetrotter",
+        "equipEffect":{
+            "increaseDamageResistance":1,
+            "increaseBlockChance":25,
+            "increaseMoveCost":-1,
+            "increaseMaxHP":5
+        },
+        "displaytype":"extraordinary",
+        "iconID":"items_japozero:201"
+    },
+    {
+        "id":"robe_sublime",
+        "hitEffect":{
+            "conditionsTarget":[
+                {
+                    "duration":2,
+                    "condition":"confusion",
+                    "magnitude":1,
+                    "chance":"20"
+                }
+            ]
+        },
+        "category":"bdy_clth",
+        "description":"The reflection of light on this robe will confuse your enemies as you move swiftly.",
+        "name":"Robe of the Sublimate",
+        "equipEffect":{
+            "increaseUseItemCost":-1,
+            "increaseReequipCost":1,
+            "increaseCriticalSkill":10,
+            "increaseBlockChance":-5,
+            "increaseMoveCost":-1,
+            "increaseAttackChance":10
+        },
+        "displaytype":"rare",
+        "iconID":"items_tometik2:37"
+    },
+    {
+        "id":"feline_shoes",
+        "category":"feet_clth",
+        "name":"Feline shoes",
+        "equipEffect":{
+            "increaseReequipCost":-1,
+            "increaseBlockChance":10,
+            "increaseMoveCost":-1,
+            "addedConditions":[
+                {
+                    "condition":"clumsiness",
+                    "magnitude":1
+                }
+            ],
+            "increaseAttackChance":15
+        },
+        "displaytype":"rare",
+        "iconID":"items_armours:34"
+    },
+    {
+        "id":"feline_gloves",
+        "category":"hnd_cloth",
+        "name":"Feline gloves",
+        "equipEffect":{
+            "increaseUseItemCost":-1,
+            "increaseReequipCost":-1,
+            "increaseBlockChance":8,
+            "addedConditions":[
+                {
+                    "condition":"clumsiness",
+                    "magnitude":1
+                }
+            ],
+            "increaseAttackChance":17
+        },
+        "displaytype":"rare",
+        "iconID":"items_armours:41"
+    },
+    {
+        "id":"handsewn_gloves2",
+        "category":"hnd_lthr",
+        "name":"Handsewn leather gloves",
+        "equipEffect":{
+            "increaseBlockChance":5,
+            "increaseAttackChance":3
+        },
+        "iconID":"items_japozero:229"
+    },
+    {
+        "id":"handsewn_gloves4",
+        "category":"hnd_cloth",
+        "name":"Handsewn snakeskin gloves",
+        "equipEffect":{
+            "increaseBlockChance":7,
+            "increaseAttackChance":3
+        },
+        "iconID":"items_japozero:228"
+    },
+    {
+        "id":"handsewn_boots2",
+        "category":"feet_lthr",
+        "name":"Handsewn leather boots",
+        "equipEffect":{
+            "increaseBlockChance":8,
+            "increaseMoveCost":-1,
+            "increaseAttackChance":2
+        },
+        "iconID":"items_japozero:207"
+    },
+    {
+        "id":"fancy_shirt",
+        "category":"bdy_clth",
+        "name":"Fancy shirt",
+        "equipEffect":{
+            "increaseBlockChance":7,
+            "increaseMoveCost":-1
+        },
+        "iconID":"items_japozero:146"
     }
 ]
