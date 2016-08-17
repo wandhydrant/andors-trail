@@ -1,2 +1,84 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<?xml version='1.0' encoding='UTF-8'?>
+<resources><string name="app_name"/>
+	<string name="app_description">"Управляемый  фэнтезийный RPG мир"</string>
+
+	<string name="exit_to_menu">Выход к меню</string>
+	<string name="menu_settings">Предпочтения</string>
+	<string name="menu_save">Сохранить</string>
+	<string name="menu_save_gamesaved">Игра была сохранена в слот %1$d</string>
+	<string name="menu_save_failed">Не удалось сохранить игру! Установлена ли SD-карта для записи и чтения?</string>
+
+	<string name="loadsave_title_save">Сохранить игру</string>
+	<string name="loadsave_title_load">Загрузка сохраненной игры</string>
+	<string name="loadsave_selectslot">Выберите слот</string>
+	<string name="savegame_currenthero_displayinfo">Уровень %1$d, %2$d потрачено, %3$d золота</string>
+
+	<string name="dialog_loading_message">Загрузка ресурсов…</string>
+	<string name="dialog_loading_failed_title">Ошибка загрузки</string>
+	<string name="dialog_loading_failed_message">Andor\'s Trail не удалось загрузить файл сохранения игры.
+
+:(
+
+Файл может быть поврежден.</string>
+	<string name="dialog_loading_failed_incorrectversion">Andor\'s Trail не удалось загрузить файл сохранения игры. Этот файл сохранён в более новой версии игры.</string>
+
+	<string name="dialog_close">Закрыть</string>
+
+	<string name="dialog_monsterencounter_title">Обнаружен</string>
+	<string name="dialog_monsterencounter_message">Вы хотите напасть?
+Трудность: %1$s</string>
+	<string name="dialog_monsterencounter_info">Инфо</string>
+
+	<string name="status_hp"/>
+	<string name="status_ap"/>
+	<string name="status_exp">Уровень:</string>
+
+	<string name="heroinfo_char">Обзор</string>
+	<string name="heroinfo_inv">Предметы</string>
+	<string name="heroinfo_skill">Навыки</string>
+	<string name="heroinfo_levelup">Уровень повышен</string>
+	<string name="heroinfo_level">Уровень</string>
+	<string name="heroinfo_totalexperience">Общие время работы</string>
+	<string name="heroinfo_wornequipment">Износ оборудования</string>
+	<string name="heroinfo_inventory">Инвентарь</string>
+	<string name="heroinfo_gold">Золота: %1$d</string>
+	<string name="heroinfo_actionpoints">Ключевые действия (AP):</string>
+	<string name="heroinfo_quests">Задания</string>
+
+	<string name="combat_attack">Атака (%1$d AP)</string>
+	<string name="combat_move">Действий (%1$d AP)</string>
+	<string name="combat_use">Использовать товар</string>
+	<string name="combat_endturn">Конец хода</string>
+	<string name="combat_flee">Бежать</string>
+	<string name="combat_begin_flee">Теперь вы можете покинуть бой, нажмите в каком направлении вы хотите двигаться.</string>
+	<string name="combat_flee_failed">Вы не в состоянии бежать!</string>
+	<string name="combat_monsteraction">%1$s атакует.</string>
+	<string name="combat_result_monstermiss">%1$s промахов!</string>
+	<string name="combat_result_monsterhit">%1$s атакует вас на %2$d hp!</string>
+	<string name="combat_result_monsterhitcritical">%1$s наносит критический удар на %2$d hp!</string>
+	<string name="combat_result_heromiss">Ваша атака не попадает.</string>
+	<string name="combat_result_herohit">Вы попали %1$s на %2$d hp!</string>
+	<string name="combat_result_herohitcritical">Вы получаете критический удар на %1$s до %2$d hp!</string>
+	<string name="combat_result_herokillsmonster">%1$s умирает!</string>
+	<string name="combat_not_enough_ap">Не хватает AP что бы покинуть раунд.</string>
+	<string name="combat_hero_dies">Вы впадаете в бессознательном состоянии, но, к счастью просыпаетесь живым, ошеломленным и усталым. Вы потеряли %1$d опыта.</string>
+	<string name="combat_miss_animation_message">Промахи</string>
+	
+	<string name="inventory_info">Инфо</string>
+	<string name="inventory_equip">Снарядить</string>
+	<string name="inventory_unequip">Не снаряжать</string>
+	<string name="inventory_use">Использовать</string>
+	<string name="inventory_drop">Пропустить</string>
+	<string name="inventory_item_used">Вы использовали %1$s.</string>
+	<string name="inventory_item_dropped">%1$s был пропущен.</string>
+	<string name="inventory_item_equipped">Вы одели %1$s.</string>
+
+	<string name="dialog_loot_pickall">Взять всё</string>
+	<string name="dialog_loot_foundgold">"Вы получили %1$d золота. "</string>
+	<string name="dialog_loot_pickedupitem">"Вы подобрали пункт. "</string>
+	<string name="dialog_loot_pickedupitems">"Вы подобрали %1$d пунктов. "</string>
+	<string name="dialog_groundloot_title">Предметы</string>
+	<string name="dialog_groundloot_message">"Вы нашли несколько предметов. "</string>
+	<string name="dialog_monsterloot_title">Победа</string>
+	<string name="dialog_monsterloot_message">"Вы пережили столкновение. "</string>
+	</resources>
