@@ -1,2 +1,63 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<?xml version='1.0' encoding='UTF-8'?>
+<resources><string name="app_name">Andor Trail</string>
+	<string name="exit_to_menu">Keluar ke menu</string>
+	<string name="menu_settings">Pilihan</string>
+	<string name="menu_save">Simpan</string>
+	<string name="menu_save_gamesaved">Permainan telah disimpan pada slot %1$d</string>
+	<string name="menu_save_failed">Gagal untuk menyimpan permainan! Apakah kartu SD terpasang dan dapat ditulis?</string>
+
+	<string name="loadsave_title_save">Menyimpan permainan</string>
+	<string name="loadsave_title_load">Membuka permainan yang disimpan</string>
+	<string name="loadsave_selectslot">Pilih slot</string>
+	<string name="savegame_currenthero_displayinfo">tingkat %1$d, %2$d exp, %3$d emas</string>
+
+	<string name="dialog_loading_message">Memuat sumber…</string>
+	<string name="dialog_loading_failed_title">Gagal memuat</string>
+	<string name="dialog_loading_failed_message">Andor Trail tidak dapat memuat file penyimpanan permainan.
+
+:(
+
+File mungkin rusak atau tidak lengkap.</string>
+	<string name="dialog_loading_failed_incorrectversion">Andor Trail tidak dapat memuat file penyimpanan permainan. File penyimpanan permainan ini dibuat dengan versi terbaru daripada yang sedang dijalankan.</string>
+
+	<string name="dialog_close">Tutup</string>
+
+	<string name="dialog_monsterencounter_title">Pertemuan</string>
+	<string name="dialog_monsterencounter_message">Apakah kamu ingin menyerang?
+Kesulitan: %1$s</string>
+	<string name="dialog_monsterencounter_info">Informasi</string>
+
+	<string name="status_hp">HP:</string>
+	<string name="status_ap">AP:</string>
+	<string name="status_exp">Level:</string>
+
+	<string name="heroinfo_inv">Items</string>
+	<string name="heroinfo_char">Overview</string>
+	<string name="heroinfo_skill">Kemampuan</string>
+	<string name="heroinfo_levelup">Level naik</string>
+	<string name="heroinfo_level">Level</string>
+	<string name="heroinfo_totalexperience">Total exp</string>
+	<string name="heroinfo_wornequipment">Peralatan usang</string>
+	<string name="heroinfo_inventory">Inventory</string>
+	<string name="heroinfo_gold">Uang: %1$d</string>
+	<string name="heroinfo_quests">Misi</string>
+
+	<string name="combat_attack">Serang (%1$d AP)</string>
+	<string name="combat_move">Pindah (%1$d AP)</string>
+	<string name="combat_use">Gunakan barang</string>
+	<string name="combat_endturn">Akhiri giliran</string>
+	<string name="combat_flee">Kabur</string>
+	<string name="combat_begin_flee">Sekarang kamu dapat kabur dari pertarungan dengan mengeklik ke arah kamu akan pindah.</string>
+	<string name="combat_flee_failed">Kamu gagal untuk kabur!</string>
+	<string name="combat_status_ap">AP: %1$d</string>
+	<string name="combat_monsterhealth">HP:</string>
+	<string name="combat_monsteraction">%1$s menyerang.</string>
+	<string name="combat_result_monstermiss">%1$s menghindar!</string>
+	<string name="combat_result_monsterhit">%1$s menyerang kamu untuk %2$d hp!</string>
+	<string name="combat_result_monsterhitcritical">%1$s mendapatkan kritikal untuk %2$d hp!</string>
+	<string name="combat_result_heromiss">Serangan kamu meleset.</string>
+	<string name="combat_result_herohit">Kamu menyerang %1$s untuk %2$d hp!</string>
+	<string name="combat_result_herohitcritical">Kamu mendapatkan kritial pada %1$s untuk %2$d hp!</string>
+	<string name="combat_result_herokillsmonster">%1$s gugur!</string>
+	<string name="combat_not_enough_ap">Tidak ada AP yang tersisa pada ronde ini.</string>
+	</resources>
