@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<resources><string name="app_name"/>
+<resources><string name="app_name">След Эндора</string>
 	<string name="app_description">"Управляемый  фэнтезийный RPG мир"</string>
 
 	<string name="exit_to_menu">Выход к меню</string>
@@ -29,8 +29,8 @@
 Трудность: %1$s</string>
 	<string name="dialog_monsterencounter_info">Инфо</string>
 
-	<string name="status_hp"/>
-	<string name="status_ap"/>
+	<string name="status_hp">ХП:</string>
+	<string name="status_ap">ОД:</string>
 	<string name="status_exp">Уровень:</string>
 
 	<string name="heroinfo_char">Обзор</string>
@@ -81,4 +81,27 @@
 	<string name="dialog_groundloot_message">"Вы нашли несколько предметов. "</string>
 	<string name="dialog_monsterloot_title">Победа</string>
 	<string name="dialog_monsterloot_message">"Вы пережили столкновение. "</string>
+	<string name="combat_status_ap">ОД:%1$d</string>
+	<string name="combat_monsterhealth">ХП:</string>
+	<string name="dialog_monsterloot_gainedexp">"Вы получили %1$d опыта. "</string>
+
+	<string name="monster_difficulty_veryeasy">Очень легко</string>
+	<string name="monster_difficulty_easy">Легко</string>
+	<string name="monster_difficulty_normal">Средне</string>
+	<string name="monster_difficulty_hard">Тяжело</string>
+	<string name="monster_difficulty_veryhard">Очень тяжело</string>
+	<string name="monster_difficulty_impossible">Невозможно</string>
+
+	<string name="actorinfo_class">Класс:</string>
+	<string name="actorinfo_difficulty">Сложность:</string>
+	<string name="actorinfo_health">Очки здоровья:</string>
+	<string name="actorinfo_attack">Урон:</string>
+	<string name="actorinfo_defense">Защита:</string>
+	<string name="actorinfo_movecost">Очки действий(ОД):</string>
+	<string name="actorinfo_basetraits">Общие статы (без экипировки и скилов)</string>
+	<string name="actorinfo_currenttraits">Общие статы</string>
+
+	<string name="traitsinfo_attack_cost">Стоимость хода(ОД):</string>
+	<string name="traitsinfo_attack_chance">Шанс попадания:</string>
+	<string name="traitsinfo_attack_damage">Урон:</string>
 	</resources>
