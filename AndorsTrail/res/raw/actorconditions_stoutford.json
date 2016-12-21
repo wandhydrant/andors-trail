@@ -1,34 +1,34 @@
 [
     {
         "id":"confusion",
-        "abilityEffect":{
-            "increaseMaxAP":-1,
-            "increaseAttackChance":-10
-        },
-        "category":"mental",
+        "iconID":"actorconditions_japozero:5",
         "name":"Confusion",
-        "iconID":"actorconditions_japozero:5"
+        "category":"mental",
+        "abilityEffect":{
+            "increaseAttackChance":-10,
+            "increaseMaxAP":-1
+        }
     },
     {
         "id":"clumsiness",
-        "abilityEffect":{
-            "increaseBlockChance":-7,
-            "increaseAttackChance":-7
-        },
-        "category":"mental",
+        "iconID":"actorconditions_japozero:49",
         "name":"Clumsiness",
-        "iconID":"actorconditions_japozero:49"
+        "category":"mental",
+        "abilityEffect":{
+            "increaseAttackChance":-7,
+            "increaseBlockChance":-7
+        }
     },
     {
+        "id":"curse_undead",
+        "iconID":"actorconditions_1:83",
+        "name":"Curse of the Undead",
+        "category":"spiritual",
         "roundEffect":{
             "increaseCurrentHP":{
                 "min":-1,
                 "max":-2
             }
-        },
-        "id":"curse_undead",
-        "category":"spiritual",
-        "name":"Curse of the Undead",
-        "iconID":"actorconditions_1:83"
+        }
     }
 ]
