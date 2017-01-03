@@ -14,16 +14,19 @@ public final class SkillInfo {
 	public final int maxLevel;
 	public final LevelUpType levelupVisibility;
 	public final SkillLevelRequirement[] levelupRequirements;
+	public final SkillCollection.SkillCategory categoryType;
 	public SkillInfo(
 			SkillCollection.SkillID id
 			, int maxLevel
 			, LevelUpType levelupVisibility
+			, SkillCollection.SkillCategory categoryType
 			, SkillLevelRequirement[] levelupRequirements
 	) {
 		this.id = id;
 		this.maxLevel = maxLevel;
 		this.levelupVisibility = levelupVisibility;
 		this.levelupRequirements = levelupRequirements;
+		this.categoryType = categoryType;
 	}
 
 	public boolean hasMaxLevel() {
@@ -85,10 +88,10 @@ public final class SkillInfo {
 
 		private int getRequirementActualValue(Player player) {
 			switch (requirementType) {
-			case skillLevel: return player.getSkillLevel(SkillCollection.SkillID.valueOf(skillOrStatID));
-			case experienceLevel: return player.getLevel();
-			case playerStat: return player.getStatValue(Player.StatID.valueOf(skillOrStatID));
-			default: return 0;
+				case skillLevel: return player.getSkillLevel(SkillCollection.SkillID.valueOf(skillOrStatID));
+				case experienceLevel: return player.getLevel();
+				case playerStat: return player.getStatValue(Player.StatID.valueOf(skillOrStatID));
+				default: return 0;
 			}
 		}
 	}
