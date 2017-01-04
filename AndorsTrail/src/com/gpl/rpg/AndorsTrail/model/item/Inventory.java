@@ -33,12 +33,11 @@ public final class Inventory extends ItemContainer {
 	private final ItemType[] wear = new ItemType[NUM_WORN_SLOTS];
 	public final ItemType[] quickitem = new ItemType[NUM_QUICK_SLOTS];
 
-	public Inventory() {
-	}
+	public Inventory() { }
 
 	public void clear() {
-		for (int i = 0; i < NUM_WORN_SLOTS; ++i) wear[i] = null;
-		for (int i = 0; i < NUM_QUICK_SLOTS; ++i) quickitem[i] = null;
+		for(int i = 0; i < NUM_WORN_SLOTS; ++i) wear[i] = null;
+		for(int i = 0; i < NUM_QUICK_SLOTS; ++i) quickitem[i] = null;
 		gold = 0;
 		items.clear();
 	}
@@ -47,7 +46,6 @@ public final class Inventory extends ItemContainer {
 		this.gold += loot.gold;
 		this.add(loot.items);
 	}
-
 	public boolean isEmptySlot(WearSlot slot) {
 		return wear[slot.ordinal()] == null;
 	}
@@ -61,7 +59,7 @@ public final class Inventory extends ItemContainer {
 	}
 
 	public boolean isWearing(String itemTypeID) {
-		for (int i = 0; i < NUM_WORN_SLOTS; ++i) {
+		for(int i = 0; i < NUM_WORN_SLOTS; ++i) {
 			if (wear[i] == null) continue;
 			if (wear[i].id.equals(itemTypeID)) return true;
 		}
@@ -70,7 +68,7 @@ public final class Inventory extends ItemContainer {
 
 	public boolean isWearing(String itemTypeID, int minNumber) {
 		if (minNumber == 0) return isWearing(itemTypeID);
-		for (int i = 0; i < NUM_WORN_SLOTS; ++i) {
+		for(int i = 0; i < NUM_WORN_SLOTS; ++i) {
 			if (wear[i] == null) continue;
 			if (wear[i].id.equals(itemTypeID)) minNumber--;
 		}
@@ -156,21 +154,21 @@ public final class Inventory extends ItemContainer {
 
 		if (fileversion < 23) LegacySavegameFormatReaderForItemContainer.refundUpgradedItems(this);
 
-		for (int i = 0; i < NUM_WORN_SLOTS; ++i) {
+		for(int i = 0; i < NUM_WORN_SLOTS; ++i) {
 			wear[i] = null;
 		}
 		final int numWornSlots = src.readInt();
-		for (int i = 0; i < numWornSlots; ++i) {
+		for(int i = 0; i < numWornSlots; ++i) {
 			if (src.readBoolean()) {
 				wear[i] = world.itemTypes.getItemType(src.readUTF());
 			}
 		}
-		for (int i = 0; i < NUM_QUICK_SLOTS; ++i) {
+		for(int i = 0; i < NUM_QUICK_SLOTS; ++i) {
 			quickitem[i] = null;
 		}
 		if (fileversion >= 19) {
 			final int quickSlots = src.readInt();
-			for (int i = 0; i < quickSlots; ++i) {
+			for(int i = 0; i < quickSlots; ++i) {
 				if (src.readBoolean()) {
 					quickitem[i] = world.itemTypes.getItemType(src.readUTF());
 				}
@@ -183,7 +181,7 @@ public final class Inventory extends ItemContainer {
 		super.writeToParcel(dest);
 		dest.writeInt(gold);
 		dest.writeInt(NUM_WORN_SLOTS);
-		for (int i = 0; i < NUM_WORN_SLOTS; ++i) {
+		for(int i = 0; i < NUM_WORN_SLOTS; ++i) {
 			if (wear[i] != null) {
 				dest.writeBoolean(true);
 				dest.writeUTF(wear[i].id);
@@ -192,7 +190,7 @@ public final class Inventory extends ItemContainer {
 			}
 		}
 		dest.writeInt(NUM_QUICK_SLOTS);
-		for (int i = 0; i < NUM_QUICK_SLOTS; ++i) {
+		for(int i = 0; i < NUM_QUICK_SLOTS; ++i) {
 			if (quickitem[i] != null) {
 				dest.writeBoolean(true);
 				dest.writeUTF(quickitem[i].id);
