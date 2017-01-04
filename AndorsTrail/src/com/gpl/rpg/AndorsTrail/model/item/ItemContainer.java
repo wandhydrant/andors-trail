@@ -213,7 +213,7 @@ public class ItemContainer {
 		if (item.itemType.isWeapon()) {
 			if(item.itemType.isTwohandWeapon())
 				return 1;
-			if(item.itemType.isRangedWeapon())
+			if(false)//item.itemType.isRangedWeapon())
 				return 2;
 			return 3;
 		}            // Weapons

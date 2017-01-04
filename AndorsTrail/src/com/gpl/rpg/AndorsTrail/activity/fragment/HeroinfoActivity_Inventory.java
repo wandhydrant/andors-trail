@@ -10,9 +10,14 @@ import android.view.View.OnClickListener;
 import android.widget.AdapterView;
 import android.widget.AdapterView.AdapterContextMenuInfo;
 import android.widget.AdapterView.OnItemClickListener;
+import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.ListView;
+import android.widget.Spinner;
 import android.widget.TextView;
+import android.widget.Toast;
+
 import com.gpl.rpg.AndorsTrail.AndorsTrailApplication;
 import com.gpl.rpg.AndorsTrail.Dialogs;
 import com.gpl.rpg.AndorsTrail.R;
@@ -31,13 +36,31 @@ public final class HeroinfoActivity_Inventory extends Fragment {
 
 	private static final int INTENTREQUEST_ITEMINFO = 3;
 	private static final int INTENTREQUEST_BULKSELECT_DROP = 11;
+	public static final int INTENTREQUEST_PRESETLOAD = 12;
+	public static final int INTENTREQUEST_PRESETSAVE = 13;
+	public static final int INTENTREQUEST_PRESETDELETE = 14;
 
 	private WorldContext world;
 	private ControllerContext controllers;
 	private TileCollection wornTiles;
 
 	private Player player;
+	private ListView inventoryList;
+	private Spinner inventorylist_categories;
+	private Spinner inventorylist_sort;
 	private ItemContainerAdapter inventoryListAdapter;
+	private ItemContainerAdapter inventoryWeaponsListAdapter;
+	private ItemContainerAdapter inventoryArmorListAdapter;
+	private ItemContainerAdapter inventoryUsableListAdapter;
+	private ItemContainerAdapter inventoryQuestListAdapter;
+	private ItemContainerAdapter inventoryOtherListAdapter;
+
+	private Button inventory_preset_button;
+
+	private TextView preset_quickswitch_save;
+	private TextView preset_quickswitch_load;
+	private TextView preset_quickswitch_delete;
+
 
 	private TextView heroinfo_stats_gold;
 	private TextView heroinfo_stats_attack;
@@ -60,17 +83,21 @@ public final class HeroinfoActivity_Inventory extends Fragment {
 
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-		View v = inflater.inflate(R.layout.heroinfo_inventory, container, false);
+		final View v = inflater.inflate(R.layout.heroinfo_inventory, container, false);
 
-		ListView inventoryList = (ListView) v.findViewById(R.id.inventorylist_root);
+		initialiseInventorySpinners(v);
+
+		inventoryList = (ListView) v.findViewById(R.id.inventorylist_root);
 		registerForContextMenu(inventoryList);
 		inventoryList.setOnItemClickListener(new OnItemClickListener() {
 			@Override
 			public void onItemClick(AdapterView<?> parent, View v, int position, long id) {
-				ItemType itemType = inventoryListAdapter.getItem(position).itemType;
+				// Move this code to separate function? -- Done
+				ItemType itemType = getSelectedItemType(position);
 				showInventoryItemInfo(itemType.id);
 			}
 		});
+
 		ItemContainer inv = player.inventory;
 		wornTiles = world.tileManager.loadTilesFor(player.inventory, getResources());
 		inventoryListAdapter = new ItemContainerAdapter(getActivity(), world.tileManager, inv, player, wornTiles);
@@ -91,6 +118,52 @@ public final class HeroinfoActivity_Inventory extends Fragment {
 		setWearSlot(v, Inventory.WearSlot.rightring, R.id.heroinfo_worn_ringright, R.drawable.equip_ring);
 
 		return v;
+	}
+
+	private void initialiseInventorySpinners(View v) {
+		inventorylist_categories = (Spinner) v.findViewById(R.id.inventorylist_category_filters);
+		ArrayAdapter<CharSequence> categoryFilterAdapter = ArrayAdapter.createFromResource(getActivity(), R.array.inventorylist_category_filters, android.R.layout.simple_spinner_item);
+		categoryFilterAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+		inventorylist_categories.setAdapter(categoryFilterAdapter);
+		inventorylist_categories.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+			@Override
+			public void onItemSelected(AdapterView<?> arg0, View arg1, int arg2, long arg3) {
+				world.model.uiSelections.selectedInventoryCategory = inventorylist_categories.getSelectedItemPosition();
+				reloadShownCategory(world.model.uiSelections.selectedInventoryCategory);
+			}
+
+			@Override
+			public void onNothingSelected(AdapterView<?> arg0) {
+				world.model.uiSelections.selectedInventoryCategory = 0;
+			}
+		});
+		inventorylist_categories.setSelection(world.model.uiSelections.selectedInventoryCategory);
+
+
+		inventorylist_sort = (Spinner) v.findViewById(R.id.inventorylist_sort_filters);
+		ArrayAdapter<CharSequence> sortFilterAdapter = ArrayAdapter.createFromResource(getActivity(), R.array.inventorylist_sort_filters, android.R.layout.simple_spinner_item);
+		sortFilterAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+		inventorylist_sort.setAdapter(sortFilterAdapter);
+		inventorylist_sort.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+			@Override
+			public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+				world.model.uiSelections.selectedInventorySort = inventorylist_sort.getSelectedItemPosition();
+				reloadShownSort(player.inventory);
+			}
+
+			@Override
+			public void onNothingSelected(AdapterView<?> parent) {
+				// Reset to "Custom" position
+				world.model.uiSelections.selectedInventorySort = 0;
+			}
+		});
+		inventorylist_sort.setSelection(world.model.uiSelections.selectedInventorySort);
+	}
+
+	private void setHeroStatsVisiblity(int visibility) {
+		heroinfo_stats_gold.setVisibility(visibility);
+		heroinfo_stats_attack.setVisibility(visibility);
+		heroinfo_stats_defense.setVisibility(visibility);
 	}
 
 	@Override
@@ -201,7 +274,11 @@ public final class HeroinfoActivity_Inventory extends Fragment {
 	}
 
 	private void updateItemList() {
-		inventoryListAdapter.notifyDataSetChanged();
+		int currentScreen = world.model.uiSelections.selectedInventoryCategory;
+		if (currentScreen == 0)
+			inventoryListAdapter.notifyDataSetChanged();
+		else
+			reloadShownCategory(world.model.uiSelections.selectedInventoryCategory);
 	}
 
 	@Override
@@ -225,6 +302,29 @@ public final class HeroinfoActivity_Inventory extends Fragment {
 		}
 		lastSelectedItem = null;
 	}
+
+	private ItemType getSelectedItemType(int position) {
+		int v = world.model.uiSelections.selectedInventoryCategory;
+
+		if (v == 0) { //All items
+			return inventoryListAdapter.getItem(position).itemType;
+		}else if (v == 1) { //Weapon items
+			return inventoryWeaponsListAdapter.getItem(position).itemType;
+		} else if (v == 2) { //Armor items
+			return inventoryArmorListAdapter.getItem(position).itemType;
+		} else if (v == 3) { //Usable items
+			return inventoryUsableListAdapter.getItem(position).itemType;
+		} else if (v == 4) { //Quest items
+			return inventoryQuestListAdapter.getItem(position).itemType;
+		} else if (v == 5) { //Other items
+			return inventoryOtherListAdapter.getItem(position).itemType;
+		}
+
+		// Better than crashing...
+		return inventoryListAdapter.getItem(position).itemType;
+
+	}
+
 
 	private ItemType getSelectedItemType(AdapterContextMenuInfo info) {
 		return inventoryListAdapter.getItem(info.position).itemType;
@@ -340,4 +440,48 @@ public final class HeroinfoActivity_Inventory extends Fragment {
 		Intent intent = Dialogs.getIntentForItemInfo(getActivity(), itemType.id, action, text, enabled, null);
 		startActivityForResult(intent, INTENTREQUEST_ITEMINFO);
 	}
+
+	private void reloadShownCategory(int v) { // Apologies about the code duplication,
+		// just didn't seem to make sense as an array, although I did create a nice array for skill category adapters.
+
+		// Decide which category to show
+		if (v == 0) { //All items
+			inventoryList.setAdapter(inventoryListAdapter);
+			inventoryListAdapter.notifyDataSetChanged();
+		} else if (v == 1) { //Weapon items
+			inventoryWeaponsListAdapter = new ItemContainerAdapter(getActivity(), world.tileManager, player.inventory.buildWeaponItems(), player, wornTiles);
+			inventoryList.setAdapter(inventoryWeaponsListAdapter);
+			inventoryWeaponsListAdapter.notifyDataSetChanged();
+		} else if (v == 2) { //Armor items
+			inventoryArmorListAdapter = new ItemContainerAdapter(getActivity(), world.tileManager, player.inventory.buildArmorItems(), player, wornTiles);
+			inventoryList.setAdapter(inventoryArmorListAdapter);
+			inventoryArmorListAdapter.notifyDataSetChanged();
+		} else if (v == 3) { //Usable items
+			inventoryUsableListAdapter = new ItemContainerAdapter(getActivity(), world.tileManager, player.inventory.buildUsableItems(), player, wornTiles);
+			inventoryList.setAdapter(inventoryUsableListAdapter);
+			inventoryUsableListAdapter.notifyDataSetChanged();
+		} else if (v == 4) { //Quest items
+			inventoryQuestListAdapter = new ItemContainerAdapter(getActivity(), world.tileManager, player.inventory.buildQuestItems(), player, wornTiles);
+			inventoryList.setAdapter(inventoryQuestListAdapter);
+			inventoryQuestListAdapter.notifyDataSetChanged();
+		} else if (v == 5) { //Other items
+			inventoryOtherListAdapter = new ItemContainerAdapter(getActivity(), world.tileManager, player.inventory.buildOtherItems(), player, wornTiles);
+			inventoryList.setAdapter(inventoryOtherListAdapter);
+			inventoryOtherListAdapter.notifyDataSetChanged();
+		}
+		//updateItemList();
+	}
+
+	private void reloadShownSort(Inventory inv) {
+		int selected = world.model.uiSelections.selectedInventorySort;
+
+		inventoryListAdapter.reloadShownSort(selected, world.model.uiSelections.oldSortSelection, player.inventory, player);
+
+		// Currently not functional, perhaps because selection only updates when changed.
+		if (world.model.uiSelections.oldSortSelection == selected)
+			world.model.uiSelections.oldSortSelection = 0;
+		else world.model.uiSelections.oldSortSelection = selected;
+		updateItemList();
+	}
+
 }

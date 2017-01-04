@@ -57,7 +57,7 @@ public final class Inventory extends ItemContainer {
 	}
 
 	public void setItemTypeInWearSlot(WearSlot slot, ItemType type) {
-		setItemTypeInWearSlot(slot, type, wear);
+		wear[slot.ordinal()] = type;
 	}
 
 	public boolean isWearing(String itemTypeID) {
