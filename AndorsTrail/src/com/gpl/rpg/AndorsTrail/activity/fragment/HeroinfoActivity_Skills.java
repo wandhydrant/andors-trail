@@ -23,8 +23,6 @@ import com.gpl.rpg.AndorsTrail.model.actor.Player;
 import com.gpl.rpg.AndorsTrail.view.SkillListAdapter;
 
 import java.util.ArrayList;
-
-
 public final class HeroinfoActivity_Skills extends Fragment {
 
 	private static final int INTENTREQUEST_SKILLINFO = 12;
@@ -146,12 +144,12 @@ public final class HeroinfoActivity_Skills extends Fragment {
 	public void onActivityResult(int requestCode, int resultCode, Intent data) {
 		super.onActivityResult(requestCode, resultCode, data);
 		switch (requestCode) {
-			case INTENTREQUEST_SKILLINFO:
-				if (resultCode != Activity.RESULT_OK) break;
+		case INTENTREQUEST_SKILLINFO:
+			if (resultCode != Activity.RESULT_OK) break;
 
-				SkillCollection.SkillID skillID = SkillCollection.SkillID.valueOf(data.getExtras().getString("skillID"));
-				controllers.skillController.levelUpSkillManually(player, world.skills.getSkill(skillID));
-				break;
+			SkillCollection.SkillID skillID = SkillCollection.SkillID.valueOf(data.getExtras().getString("skillID"));
+			controllers.skillController.levelUpSkillManually(player, world.skills.getSkill(skillID));
+			break;
 		}
 		update();
 	}
