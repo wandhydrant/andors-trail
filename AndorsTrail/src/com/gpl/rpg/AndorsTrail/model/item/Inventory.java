@@ -1,7 +1,6 @@
 package com.gpl.rpg.AndorsTrail.model.item;
 
 import android.content.ClipData;
-
 import com.gpl.rpg.AndorsTrail.context.WorldContext;
 import com.gpl.rpg.AndorsTrail.model.actor.Player;
 import com.gpl.rpg.AndorsTrail.savegames.LegacySavegameFormatReaderForItemContainer;
@@ -19,13 +18,20 @@ import java.util.Map;
 public final class Inventory extends ItemContainer {
 
 	public static enum WearSlot {
-		weapon, shield, head, body, hand, feet, neck, leftring, rightring;
-
-	public static WearSlot fromString(String s, WearSlot default_) {
-		if (s == null) return default_;
-		return valueOf(s);
+		weapon
+		,shield
+		,head
+		,body
+		,hand
+		,feet
+		,neck
+		,leftring
+		,rightring;
+		public static WearSlot fromString(String s, WearSlot default_) {
+			if (s == null) return default_;
+			return valueOf(s);
+		}
 	}
-}
 
 	public int gold = 0;
 	private static final int NUM_WORN_SLOTS = WearSlot.values().length;
@@ -46,6 +52,7 @@ public final class Inventory extends ItemContainer {
 		this.gold += loot.gold;
 		this.add(loot.items);
 	}
+
 	public boolean isEmptySlot(WearSlot slot) {
 		return wear[slot.ordinal()] == null;
 	}
@@ -53,7 +60,6 @@ public final class Inventory extends ItemContainer {
 	public ItemType getItemTypeInWearSlot(WearSlot slot) {
 		return wear[slot.ordinal()];
 	}
-
 	public void setItemTypeInWearSlot(WearSlot slot, ItemType type) {
 		wear[slot.ordinal()] = type;
 	}
@@ -194,8 +200,9 @@ public final class Inventory extends ItemContainer {
 			if (quickitem[i] != null) {
 				dest.writeBoolean(true);
 				dest.writeUTF(quickitem[i].id);
-			} else
+			} else {
 				dest.writeBoolean(false);
+			}
 		}
 	}
 }
