@@ -4,7 +4,7 @@
 	android:layout_height="wrap_content"
 	android:gravity="center_horizontal"
 	>
-	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	<LinearLayout 
 		android:id="@+id/combatview_actionbar"
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
@@ -14,7 +14,8 @@
 
 		<Button android:id="@+id/combatview_moveattack"
 			android:layout_width="wrap_content"
-			android:layout_height="@dimen/smalltext_buttonheight"
+	   		android:layout_height="wrap_content"
+	    	android:minHeight="0dp"
 			android:textSize="@dimen/actionbar_text"
 			android:text="@string/combat_attack"
 			/>
@@ -34,14 +35,16 @@
 
 		<Button android:id="@+id/combatview_endturn"
 			android:layout_width="wrap_content"
-			android:layout_height="@dimen/smalltext_buttonheight"
+	    	android:layout_height="wrap_content"
+	    	android:minHeight="0dp"
 			android:textSize="@dimen/actionbar_text"
 			android:text="@string/combat_endturn"
 			/>
 
 		<Button android:id="@+id/combatview_flee"
 			android:layout_width="wrap_content"
-			android:layout_height="@dimen/smalltext_buttonheight"
+	   		android:layout_height="wrap_content"
+	    	android:minHeight="0dp"
 			android:textSize="@dimen/actionbar_text"
 			android:text="@string/combat_flee"
 			/>
@@ -62,7 +65,7 @@
 		android:gravity="center"
 		/>
 
-	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	<LinearLayout
 		android:id="@+id/combatview_monsterbar"
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
@@ -73,7 +76,8 @@
 
 		<ImageButton android:id="@+id/combatview_monsterinfo"
 			android:layout_width="wrap_content"
-			android:layout_height="@dimen/smalltext_buttonheight"
+	    	android:layout_height="wrap_content"
+	    	android:minHeight="0dp"
 			android:layout_marginRight="5sp"
 			android:contentDescription="@string/dialog_monsterencounter_info"
 			/>
