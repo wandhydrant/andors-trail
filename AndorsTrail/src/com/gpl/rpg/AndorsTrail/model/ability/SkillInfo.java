@@ -91,7 +91,7 @@ public final class SkillInfo {
 			case skillLevel: return player.getSkillLevel(SkillCollection.SkillID.valueOf(skillOrStatID));
 			case experienceLevel: return player.getLevel();
 			case playerStat: return player.getStatValue(Player.StatID.valueOf(skillOrStatID));
-				default: return 0;
+			default: return 0;
 			}
 		}
 	}
