@@ -96,7 +96,7 @@ public final class Inventory extends ItemContainer {
 			if (i == null) break;
 			if (i.itemType.isQuestItem())
 				questItems.items.add(i);
-		} 
+		}
 		return questItems;
 	}
 	// Move to item container?
