@@ -129,7 +129,7 @@ public final class SkillCollection {
 	private static final int MAX_LEVEL_EVASION = Math.max(
 			Constants.FLEE_FAIL_CHANCE_PERCENT / PER_SKILLPOINT_INCREASE_EVASION_FLEE_CHANCE_PERCENTAGE
 			,Constants.MONSTER_AGGRESSION_CHANCE_PERCENT / PER_SKILLPOINT_INCREASE_EVASION_MONSTER_ATTACK_CHANCE_PERCENTAGE
-	);
+			);
 	public static final int MAX_LEVEL_LOWER_EXPLOSS = 100 / PER_SKILLPOINT_INCREASE_EXPLOSS_PERCENT;
 	public static final int MAX_LEVEL_RESISTANCE = 70 / PER_SKILLPOINT_INCREASE_RESISTANCE_CHANCE_PERCENT;
 
@@ -211,25 +211,25 @@ public final class SkillCollection {
 		initializeSkill(new SkillInfo(SkillID.armorProficiencyHeavy, 4, SkillInfo.LevelUpType.firstLevelRequiresQuest, SkillCategory.proficiency, null));
 		initializeSkill(new SkillInfo(SkillID.fightstyleDualWield, 2, SkillInfo.LevelUpType.alwaysShown, SkillCategory.specialty, new SkillLevelRequirement[] {
 				SkillLevelRequirement.requireExperienceLevels(15, 0)
-		}));
+			}));
 		initializeSkill(new SkillInfo(SkillID.fightstyle2hand, 2, SkillInfo.LevelUpType.alwaysShown, SkillCategory.specialty, new SkillLevelRequirement[] {
 				SkillLevelRequirement.requireExperienceLevels(15, 0)
-		}));
+			}));
 		initializeSkill(new SkillInfo(SkillID.fightstyleWeaponShield, 2, SkillInfo.LevelUpType.alwaysShown, SkillCategory.specialty, new SkillLevelRequirement[] {
 				SkillLevelRequirement.requireExperienceLevels(15, 0)
-		}));
+			}));
 		initializeSkill(new SkillInfo(SkillID.specializationDualWield, 1, SkillInfo.LevelUpType.alwaysShown, SkillCategory.specialty, new SkillLevelRequirement[] {
 				SkillLevelRequirement.requireExperienceLevels(45, 0)
 				,SkillLevelRequirement.requireOtherSkill(SkillID.fightstyleDualWield, 2)
-		}));
+			}));
 		initializeSkill(new SkillInfo(SkillID.specialization2hand, 1, SkillInfo.LevelUpType.alwaysShown, SkillCategory.specialty, new SkillLevelRequirement[] {
 				SkillLevelRequirement.requireExperienceLevels(45, 0)
 				,SkillLevelRequirement.requireOtherSkill(SkillID.fightstyle2hand, 2)
-		}));
+			}));
 		initializeSkill(new SkillInfo(SkillID.specializationWeaponShield, 1, SkillInfo.LevelUpType.alwaysShown, SkillCategory.specialty, new SkillLevelRequirement[] {
 				SkillLevelRequirement.requireExperienceLevels(45, 0)
 				,SkillLevelRequirement.requireOtherSkill(SkillID.fightstyleWeaponShield, 2)
-		}));
+			}));
 	}
 
 	public SkillInfo getSkill(SkillID skillID) {
