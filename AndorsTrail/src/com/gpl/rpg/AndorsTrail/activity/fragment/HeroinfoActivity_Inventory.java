@@ -36,9 +36,6 @@ public final class HeroinfoActivity_Inventory extends Fragment {
 
 	private static final int INTENTREQUEST_ITEMINFO = 3;
 	private static final int INTENTREQUEST_BULKSELECT_DROP = 11;
-	public static final int INTENTREQUEST_PRESETLOAD = 12;
-	public static final int INTENTREQUEST_PRESETSAVE = 13;
-	public static final int INTENTREQUEST_PRESETDELETE = 14;
 
 	private WorldContext world;
 	private ControllerContext controllers;
@@ -54,12 +51,6 @@ public final class HeroinfoActivity_Inventory extends Fragment {
 	private ItemContainerAdapter inventoryUsableListAdapter;
 	private ItemContainerAdapter inventoryQuestListAdapter;
 	private ItemContainerAdapter inventoryOtherListAdapter;
-
-	private Button inventory_preset_button;
-
-	private TextView preset_quickswitch_save;
-	private TextView preset_quickswitch_load;
-	private TextView preset_quickswitch_delete;
 
 
 	private TextView heroinfo_stats_gold;
