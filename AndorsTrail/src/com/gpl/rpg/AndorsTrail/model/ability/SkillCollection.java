@@ -181,9 +181,9 @@ public final class SkillCollection {
 			,SkillLevelRequirement.requireOtherSkill(SkillID.betterCriticals, 3)
 		}));
 		initializeSkill(new SkillInfo(SkillID.crit2, 1, SkillInfo.LevelUpType.alwaysShown, SkillCategory.criticals, new SkillLevelRequirement[] {
-				SkillLevelRequirement.requireOtherSkill(SkillID.moreCriticals, 6)
-				,SkillLevelRequirement.requireOtherSkill(SkillID.betterCriticals, 6)
-				,SkillLevelRequirement.requireOtherSkill(SkillID.crit1, 1)
+			SkillLevelRequirement.requireOtherSkill(SkillID.moreCriticals, 6)
+			,SkillLevelRequirement.requireOtherSkill(SkillID.betterCriticals, 6)
+			,SkillLevelRequirement.requireOtherSkill(SkillID.crit1, 1)
 		}));
 		initializeSkill(new SkillInfo(SkillID.rejuvenation, 1, SkillInfo.LevelUpType.alwaysShown, SkillCategory.immunity, new SkillLevelRequirement[] {
 			SkillLevelRequirement.requireOtherSkill(SkillID.resistanceBlood, 3)
