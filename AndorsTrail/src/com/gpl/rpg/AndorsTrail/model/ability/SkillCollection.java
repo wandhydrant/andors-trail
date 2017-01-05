@@ -11,47 +11,47 @@ import java.util.Collection;
 public final class SkillCollection {
 	public static enum SkillID {
 		weaponChance
-				,weaponDmg
-				,barter
-				,dodge
-				,barkSkin
-				,moreCriticals
-				,betterCriticals
-				,speed				// Raises max ap
-				,coinfinder
-				,moreExp
-				,cleave				// +10ap on kill
-				,eater				// +1hp per kill
-				,fortitude			// +N hp per levelup
-				,evasion			// increase successful flee chance & reduce chance of monster attack
-				,regeneration		// +N hp per round
-				,lowerExploss
-				,magicfinder
-				,resistanceMental	// lowers chance to get negative active conditions by monsters (Mental like Dazed)
-				,resistancePhysical	// lowers chance to get negative active conditions by monsters (Physical Capacity like Minor fatigue)
-				,resistanceBlood	// lowers chance to get negative active conditions by monsters (Blood Disorder like Weak Poison)
-				,shadowBless
-				,crit1			// lowers atk ability
-				,crit2			// lowers def ability ,rejuvenation	// Reduces magnitudes of conditions
-				,rejuvenation	// Reduces magnitudes of conditions
-				,taunt			// Causes AP loss of attackers that miss
-				,concussion		// AC loss for monsters with (AC-BC)>N
-				,weaponProficiencyDagger
-				,weaponProficiency1hsword
-				,weaponProficiency2hsword
-				,weaponProficiencyAxe
-				,weaponProficiencyBlunt
-				,weaponProficiencyUnarmed
-				,armorProficiencyShield
-				,armorProficiencyUnarmored
-				,armorProficiencyLight
-				,armorProficiencyHeavy
-				,fightstyleDualWield
-				,fightstyle2hand
-				,fightstyleWeaponShield
-				,specializationDualWield
-				,specialization2hand
-				,specializationWeaponShield
+		,weaponDmg
+		,barter
+		,dodge
+		,barkSkin
+		,moreCriticals
+		,betterCriticals
+		,speed				// Raises max ap
+		,coinfinder
+		,moreExp
+		,cleave				// +10ap on kill
+		,eater				// +1hp per kill
+		,fortitude			// +N hp per levelup
+		,evasion			// increase successful flee chance & reduce chance of monster attack
+		,regeneration		// +N hp per round
+		,lowerExploss
+		,magicfinder
+		,resistanceMental	// lowers chance to get negative active conditions by monsters (Mental like Dazed)
+		,resistancePhysical	// lowers chance to get negative active conditions by monsters (Physical Capacity like Minor fatigue)
+		,resistanceBlood	// lowers chance to get negative active conditions by monsters (Blood Disorder like Weak Poison)
+		,shadowBless
+		,crit1			// lowers atk ability
+		,crit2			// lowers def ability ,rejuvenation	// Reduces magnitudes of conditions
+		,rejuvenation	// Reduces magnitudes of conditions
+		,taunt			// Causes AP loss of attackers that miss
+		,concussion		// AC loss for monsters with (AC-BC)>N
+		,weaponProficiencyDagger
+		,weaponProficiency1hsword
+		,weaponProficiency2hsword
+		,weaponProficiencyAxe
+		,weaponProficiencyBlunt
+		,weaponProficiencyUnarmed
+		,armorProficiencyShield
+		,armorProficiencyUnarmored
+		,armorProficiencyLight
+		,armorProficiencyHeavy
+		,fightstyleDualWield
+		,fightstyle2hand
+		,fightstyleWeaponShield
+		,specializationDualWield
+		,specialization2hand
+		,specializationWeaponShield
 	}
 
 	// should be in the same number &U order as in arrays.xml
