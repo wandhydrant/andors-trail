@@ -1,2 +1,80 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<?xml version='1.0' encoding='UTF-8'?>
+<resources><string name="app_name">Andors Stig</string>
+	<string name="exit_to_menu">Tillbaka till menyn</string>
+	<string name="menu_settings">Alternativ</string>
+	<string name="menu_save">Spara</string>
+	<string name="menu_save_gamesaved">Spelet sparades på plats %1$d</string>
+	<string name="menu_save_failed">Det misslyckades att spara spelet! Är SD-kortet monterat och tillskrivbar?</string>
+
+	<string name="loadsave_title_save">Spara spelet</string>
+	<string name="loadsave_title_load">Ladda ett sparat spel</string>
+	<string name="loadsave_selectslot">Välj en plats</string>
+	<string name="savegame_currenthero_displayinfo">nivå %1$d, %2$d exp, %3$d guld</string>
+
+	<string name="dialog_loading_message">Laddar resurser…</string>
+	<string name="dialog_loading_failed_title">Laddningen misslyckades</string>
+	<string name="dialog_loading_failed_message">Andors Stig kunde inte ladda det sparade spelet.
+
+:(
+
+Filen kunde vara skadad eller ofullständig.</string>
+	<string name="dialog_loading_failed_incorrectversion">Andors Stig kunde inte ladda det sparade spelfilen. Den sparade filen är skapad med en nyare version än den som körs för tillfället.</string>
+
+	<string name="dialog_close">Stäng</string>
+
+	<string name="dialog_monsterencounter_title">Sammandrabbning</string>
+	<string name="dialog_monsterencounter_message">Vill du attackera?
+Svårighetsgrad: %1$s</string>
+	<string name="dialog_monsterencounter_info">Information</string>
+
+	<string name="status_hp">HP:</string>
+	<string name="status_ap">AP:</string>
+	<string name="status_exp">Nivå:</string>
+
+	<string name="heroinfo_char">Överblick</string>
+	<string name="heroinfo_inv">Föremål</string>
+	<string name="heroinfo_skill">Färdigheter</string>
+	<string name="heroinfo_levelup">Nivåuppgradering</string>
+	<string name="heroinfo_level">Nivå</string>
+	<string name="heroinfo_totalexperience">Erfarenhetssumma</string>
+	<string name="heroinfo_wornequipment">Iförd utrustning</string>
+	<string name="heroinfo_inventory">Lager</string>
+	<string name="heroinfo_gold">Guld: %1$d</string>
+	<string name="app_description">Uppdragsbaserad fantasy RPG</string>
+
+	<string name="heroinfo_actionpoints">Handlingspoäng (AP):</string>
+	<string name="heroinfo_quests">Uppdrag</string>
+
+	<string name="combat_attack">Attackera (%1$d AP)</string>
+	<string name="combat_move">Flytta (%1$d AP)</string>
+	<string name="combat_use">Använd föremål</string>
+	<string name="combat_endturn">Avsluta draget</string>
+	<string name="combat_flee">Flykta</string>
+	<string name="combat_begin_flee">Nu kan du flykta från sammandrabbningen genom att klicka i riktningen du vill flytta dig.</string>
+	<string name="combat_flee_failed">Flyktförsöket misslyckades!</string>
+	<string name="combat_status_ap">AP: %1$d</string>
+	<string name="combat_monsterhealth">HP:</string>
+	<string name="combat_monsteraction">%1$s attackerar.</string>
+	<string name="combat_result_monstermiss">%1$s missar!</string>
+	<string name="combat_result_monsterhit">%1$s träffar dig för %2$d HP!</string>
+	<string name="combat_result_monsterhitcritical">%1$s träffar ett kritiskt slag för %2$d HP!</string>
+	<string name="combat_result_heromiss">Din attack misslyckas.</string>
+	<string name="combat_result_herohit">Du träffar %1$s för %2$d HP!</string>
+	<string name="combat_result_herohitcritical">Du träffar %1$s med ett kritiskt slag för %2$d HP!</string>
+	<string name="combat_result_herokillsmonster">%1$s dör!</string>
+	<string name="combat_not_enough_ap">Du har inte tillräckligt med AP kvar denna omgång.</string>
+	<string name="combat_hero_dies">Du svimmar, men lyckligtvis vaknar du, omtöcknad och utmattad men levande. Du förlorade %1$d i erfarenhet.</string>
+	<string name="combat_miss_animation_message">MISS</string>
+	
+	<string name="inventory_info">Information</string>
+	<string name="inventory_equip">Utrusta</string>
+	<string name="inventory_unequip">Ta bort rustning</string>
+	<string name="inventory_use">Använd</string>
+	<string name="inventory_drop">Lägg ner</string>
+	<string name="inventory_item_used">Du använde %1$s.</string>
+	<string name="inventory_item_dropped">%1$s lades ner.</string>
+	<string name="inventory_item_equipped">Du utrustade dig med %1$s.</string>
+
+	<string name="dialog_loot_pickall">Plocka upp allt</string>
+	<string name="dialog_loot_foundgold">"Du hittade %1$d guld. "</string>
+	</resources>
