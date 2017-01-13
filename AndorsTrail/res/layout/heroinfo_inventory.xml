@@ -3,73 +3,86 @@
 	xmlns:android="http://schemas.android.com/apk/res/android"
 	android:layout_width="match_parent"
 	android:layout_height="match_parent"
-	android:orientation="vertical"
-	android:gravity="left"
+	android:orientation="horizontal"
 	>
 
+	<LinearLayout
+		android:layout_width="wrap_content"
+		android:layout_height="match_parent"
+		android:orientation="vertical"
+		android:gravity="left"
+		>
 
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/heroinfo_wornequipment"
+			/>
 
-	<TextView
-		android:layout_width="match_parent"
-		android:layout_height="wrap_content"
-		android:text="@string/heroinfo_wornequipment"
-		/>
+		<LinearLayout
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:orientation="horizontal"
+			android:gravity="center_vertical"
+			>
+
+			<include layout="@layout/heroinfo_equipped" />
+
+			<include layout="@layout/heroinfo_statsicons" />
+
+		</LinearLayout>
+
+	</LinearLayout>
+
 
 	<LinearLayout
 		android:layout_width="match_parent"
-		android:layout_height="wrap_content"
-		android:orientation="horizontal"
-		android:gravity="center_vertical"
+		android:layout_height="match_parent"
+		android:orientation="vertical"
+		android:gravity="left"
 		>
-
-		<include layout="@layout/heroinfo_equipped" />
-
-		<include layout="@layout/heroinfo_statsicons" />
-
-	</LinearLayout>
-
-	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-		android:layout_width="match_parent"
-		android:layout_height="wrap_content"
-		android:orientation="horizontal"
-		android:gravity="right"
-		android:layout_marginTop="10dp"
-		android:layout_marginBottom="5dp"
-		>
-		<!--<ImageButton
-			android:id="@+id/inventory_preset_button"
-			style="@style/toolboxButtonTile"
-			android:src="@drawable/ui_icon_preset" />-->
-		<Spinner
-			android:id="@+id/inventorylist_category_filters"
-			android:layout_width="wrap_content"
+		<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
 			android:orientation="horizontal"
-			android:gravity="left"
-			android:prompt="@string/heroinfo_inventory_categories"
-			android:layout_marginLeft="10dp"
-			android:layout_marginRight="5dp" />
+			>
+			<Spinner
+				android:id="@+id/inventorylist_category_filters"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:gravity="left"
+				android:orientation="horizontal"
+				android:prompt="@string/heroinfo_inventory_categories"
+				android:layout_marginLeft="10dp"
+				android:layout_marginTop="10dp"
+				android:layout_marginBottom="5dp" />
 
-		<Spinner
-			android:id="@+id/inventorylist_sort_filters"
+			<Spinner
+				android:id="@+id/inventorylist_sort_filters"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal"
+				android:layout_toRightOf="@+id/inventorylist_category_filters"
+				android:prompt="@string/heroinfo_inventory_sort"
+				android:layout_margin="@dimen/dialog_margin"
+				android:layout_marginTop="10dp"
+				android:layout_marginRight="5dp"
+				android:layout_marginBottom="5dp"
+				android:layout_marginLeft="5dp" />
+		</LinearLayout>
+
+		<TextView
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
-			android:orientation="horizontal"
-			android:layout_toRightOf="@+id/inventorylist_category_filters"
-			android:prompt="@string/heroinfo_inventory_sort"
-			android:layout_marginRight="10dp"
-			android:layout_marginLeft="5dp" />
-	</LinearLayout>
-	<TextView
-		android:layout_width="match_parent"
-		android:layout_height="wrap_content"
-		android:text="@string/heroinfo_inventory"
-		/>
+			android:text="@string/heroinfo_inventory"
+			/>
 
-	<ListView
-		android:id="@+id/inventorylist_root"
-		android:layout_width="match_parent"
-		android:layout_height="wrap_content"
-		/>
+		<ListView
+			android:id="@+id/inventorylist_root"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			/>
+
+	</LinearLayout>
 
 </LinearLayout>
