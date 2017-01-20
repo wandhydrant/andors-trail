@@ -105,39 +105,7 @@ public final class MainActivity
 			new DebugInterface(controllers, world, this).addDebugButtons();
 
 		quickitemview.setVisibility(View.GONE);
-		quickButtonLongClickListener = new OnLongClickListener() {
-			@Override
-			public boolean onLongClick(View v) {
-				if (v instanceof QuickButton) {
-					final int buttonId = ((QuickButton)v).getIndex();
-					final AlertDialog dialog = new AlertDialog.Builder(v.getContext()).create();
-					View view = getLayoutInflater().inflate(R.layout.quickbuttons_usable_inventory, null);
-					ListView lv = (ListView) view.findViewById(R.id.quickbuttons_assignlist);
-					TileCollection wornTiles = world.tileManager.loadTilesFor(world.model.player.inventory, getResources());
-					final ItemContainerAdapter inventoryListAdapter = new ItemContainerAdapter(lv.getContext(), world.tileManager, world.model.player.inventory.usableItems(), world.model.player, wornTiles);
-					lv.setAdapter(inventoryListAdapter);
-					lv.setOnItemClickListener(new OnItemClickListener() {
-						@Override
-						public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-							controllers.itemController.setQuickItem(inventoryListAdapter.getItem(position).itemType, buttonId);
-							dialog.dismiss();
-						}
-					});
-					Button b = (Button) view.findViewById(R.id.quickbuttons_unassign);
-					b.setOnClickListener(new OnClickListener() {
-						@Override
-						public void onClick(View v) {
-							controllers.itemController.setQuickItem(null, buttonId);
-							dialog.dismiss();
-						}
-					});
-					dialog.setView(view);
-					dialog.setCancelable(true);
-					dialog.show();
-				}
-				return true;
-			}
-		};
+		createLongClickListener();
 		quickitemview.registerForContextMenu(this);
 
 		dpad.updateVisibility(preferences);
@@ -243,6 +211,49 @@ public final class MainActivity
 		item.setOnLongClickListener(quickButtonLongClickListener);
 	}
 
+	public void createLongClickListener() {
+		if (quickButtonLongClickListener != null) return;
+		quickButtonLongClickListener = new OnLongClickListener() {
+			@Override
+			public boolean onLongClick(View v) {
+				if (v instanceof QuickButton) {
+					
+					final int buttonId = ((QuickButton)v).getIndex();
+					
+					final AlertDialog dialog = new AlertDialog.Builder(v.getContext()).create();
+					View view = getLayoutInflater().inflate(R.layout.quickbuttons_usable_inventory, null);
+					ListView lv = (ListView) view.findViewById(R.id.quickbuttons_assignlist);
+
+					TileCollection wornTiles = world.tileManager.loadTilesFor(world.model.player.inventory, getResources());
+					final ItemContainerAdapter inventoryListAdapter = new QuickslotsItemContainerAdapter(lv.getContext(), world.tileManager, world.model.player.inventory.usableItems(), world.model.player, wornTiles);
+					lv.setAdapter(inventoryListAdapter);
+					
+					lv.setOnItemClickListener(new OnItemClickListener() {
+						@Override
+						public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+							controllers.itemController.setQuickItem(inventoryListAdapter.getItem(position).itemType, buttonId);
+							dialog.dismiss();
+						}
+					});
+					
+//					Button b = (Button) view.findViewById(R.id.quickbuttons_unassign);
+//					b.setOnClickListener(new OnClickListener() {
+//						@Override
+//						public void onClick(View v) {
+//							controllers.itemController.setQuickItem(null, buttonId);
+//							dialog.dismiss();
+//						}
+//					});
+					
+					dialog.setView(view);
+					dialog.setCancelable(true);
+					dialog.show();
+				}
+				return true;
+			}
+		};
+	}
+	
 //	@Override
 //	public void onCreateContextMenu(ContextMenu menu, View v, ContextMenuInfo menuInfo) {
 //		
