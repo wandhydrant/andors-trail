@@ -18,6 +18,13 @@ public final class ResourceParserUtils {
 		String[] parts = s.split(":");
 		return tileLoader.prepareTileID(parts[0], Integer.parseInt(parts[1]));
 	}
+	
+	public static Size parseTilesetTileSize(DynamicTileLoader tileLoader, String s, final Size defaultSize) {
+		if (s == null || s.length() <= 0) return defaultSize;
+		String[] parts = s.split(":");
+		L.log(s+"-"+tileLoader.getTilesetTileSize(parts[0]).toString());
+		return tileLoader.getTilesetTileSize(parts[0]);
+	}
 
 	private static final Size size1x1 = new Size(1, 1);
 	public static Size parseSize(String s, final Size defaultSize) {

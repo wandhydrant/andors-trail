@@ -7,16 +7,18 @@ import com.gpl.rpg.AndorsTrail.util.Size;
 public final class ResourceFileTileset {
 	public final int resourceID;
 	public final String tilesetName;
+	public final Size spriteDimensionsInTiles;
 	public final Size destinationTileSize;
 	public final Size numTiles;
 	public Size sourceTileSize;
 	public Matrix scale;
 
-	public ResourceFileTileset(int resourceID, String tilesetName, Size numTiles, Size destinationTileSize) {
+	public ResourceFileTileset(int resourceID, String tilesetName, Size gridDimensions, Size spriteDimensionsInTiles, int tileSize) {
 		this.resourceID = resourceID;
 		this.tilesetName = tilesetName;
-		this.destinationTileSize = destinationTileSize;
-		this.numTiles = numTiles;
+		this.spriteDimensionsInTiles = spriteDimensionsInTiles;
+		this.destinationTileSize = new Size(tileSize * spriteDimensionsInTiles.width, tileSize * spriteDimensionsInTiles.height);
+		this.numTiles = gridDimensions;
 	}
 
 	@Override public int hashCode() { return resourceID; }

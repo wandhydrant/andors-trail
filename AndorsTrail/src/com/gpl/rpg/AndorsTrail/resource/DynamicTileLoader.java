@@ -37,8 +37,8 @@ public final class DynamicTileLoader {
 		currentTileStoreIndex = tileCache.getMaxTileID();
 	}
 
-	public void prepareTileset(int resourceId, String tilesetName, Size numTiles, Size destinationTileSize) {
-		ResourceFileTileset b = new ResourceFileTileset(resourceId, tilesetName, numTiles, destinationTileSize);
+	public void prepareTileset(int resourceId, String tilesetName, Size gridDimensions, Size spriteDimensionsInTiles, int tileSize) {
+		ResourceFileTileset b = new ResourceFileTileset(resourceId, tilesetName, gridDimensions, spriteDimensionsInTiles, tileSize);
 		ResourceFileTilesetLoadList loadList = new ResourceFileTilesetLoadList(b);
 		preparedTilesetsByResourceId.put(resourceId, loadList);
 		preparedTilesetsByResourceName.put(tilesetName, loadList);
@@ -74,6 +74,10 @@ public final class DynamicTileLoader {
 	public Size getTilesetSize(String tilesetName) {
 		ResourceFileTilesetLoadList b = getTilesetBitmap(tilesetName);
 		return b.tileset.destinationTileSize;
+	}
+	public Size getTilesetTileSize(String tilesetName) {
+		ResourceFileTilesetLoadList b = getTilesetBitmap(tilesetName);
+		return b.tileset.spriteDimensionsInTiles;
 	}
 
 	private int prepareTileID(ResourceFileTilesetLoadList tileset, int localID) {
