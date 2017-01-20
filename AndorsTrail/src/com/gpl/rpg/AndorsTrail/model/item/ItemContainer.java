@@ -115,6 +115,16 @@ public class ItemContainer {
 		if (i < 0) return;
 		items.add(items.remove(i));
 	}
+	
+	public ItemContainer usableItems() {
+		ItemContainer usableContainer = new ItemContainer();
+		for (ItemEntry item : items) {
+			if (item.itemType.isUsable()) {
+				usableContainer.addItem(item.itemType, item.quantity);
+			}
+		}
+		return usableContainer;
+	}
 
 
 	// ====== PARCELABLE ===================================================================

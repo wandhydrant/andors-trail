@@ -1,14 +1,22 @@
 package com.gpl.rpg.AndorsTrail.activity;
 
 import android.app.Activity;
+import android.app.AlertDialog;
+import android.app.Dialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.*;
 import android.view.ContextMenu.ContextMenuInfo;
 import android.view.View.OnClickListener;
+import android.view.View.OnLongClickListener;
+import android.widget.AdapterView;
+import android.widget.AdapterView.OnItemClickListener;
+import android.widget.Button;
+import android.widget.ListView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
+
 import com.gpl.rpg.AndorsTrail.AndorsTrailApplication;
 import com.gpl.rpg.AndorsTrail.AndorsTrailPreferences;
 import com.gpl.rpg.AndorsTrail.Dialogs;
@@ -27,6 +35,7 @@ import com.gpl.rpg.AndorsTrail.model.item.ItemContainer.ItemEntry;
 import com.gpl.rpg.AndorsTrail.model.item.Loot;
 import com.gpl.rpg.AndorsTrail.model.map.MapObject;
 import com.gpl.rpg.AndorsTrail.model.map.PredefinedMap;
+import com.gpl.rpg.AndorsTrail.resource.tiles.TileCollection;
 import com.gpl.rpg.AndorsTrail.savegames.Savegames;
 import com.gpl.rpg.AndorsTrail.util.Coord;
 import com.gpl.rpg.AndorsTrail.view.*;
@@ -59,7 +68,8 @@ public final class MainActivity
 
 	private TextView statusText;
 	private WeakReference<Toast> lastToast = null;
-	private ContextMenuInfo lastSelectedMenu = null;
+	//private ContextMenuInfo lastSelectedMenu = null;
+	private OnLongClickListener quickButtonLongClickListener = null;
 
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
@@ -95,6 +105,39 @@ public final class MainActivity
 			new DebugInterface(controllers, world, this).addDebugButtons();
 
 		quickitemview.setVisibility(View.GONE);
+		quickButtonLongClickListener = new OnLongClickListener() {
+			@Override
+			public boolean onLongClick(View v) {
+				if (v instanceof QuickButton) {
+					final int buttonId = ((QuickButton)v).getIndex();
+					final AlertDialog dialog = new AlertDialog.Builder(v.getContext()).create();
+					View view = getLayoutInflater().inflate(R.layout.quickbuttons_usable_inventory, null);
+					ListView lv = (ListView) view.findViewById(R.id.quickbuttons_assignlist);
+					TileCollection wornTiles = world.tileManager.loadTilesFor(world.model.player.inventory, getResources());
+					final ItemContainerAdapter inventoryListAdapter = new ItemContainerAdapter(lv.getContext(), world.tileManager, world.model.player.inventory.usableItems(), world.model.player, wornTiles);
+					lv.setAdapter(inventoryListAdapter);
+					lv.setOnItemClickListener(new OnItemClickListener() {
+						@Override
+						public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+							controllers.itemController.setQuickItem(inventoryListAdapter.getItem(position).itemType, buttonId);
+							dialog.dismiss();
+						}
+					});
+					Button b = (Button) view.findViewById(R.id.quickbuttons_unassign);
+					b.setOnClickListener(new OnClickListener() {
+						@Override
+						public void onClick(View v) {
+							controllers.itemController.setQuickItem(null, buttonId);
+							dialog.dismiss();
+						}
+					});
+					dialog.setView(view);
+					dialog.setCancelable(true);
+					dialog.show();
+				}
+				return true;
+			}
+		};
 		quickitemview.registerForContextMenu(this);
 
 		dpad.updateVisibility(preferences);
@@ -194,48 +237,54 @@ public final class MainActivity
 		combatview.subscribe();
 		activeConditions.subscribe();
 	}
+	
 
-	@Override
-	public void onCreateContextMenu(ContextMenu menu, View v, ContextMenuInfo menuInfo) {
-		super.onCreateContextMenu(menu, v, menuInfo);
-		if(quickitemview.isQuickButtonId(v.getId())){
-			createQuickButtonMenu(menu);
-		}
-		lastSelectedMenu = null;
+	public void registerForLongClick(QuickButton item) {
+		item.setOnLongClickListener(quickButtonLongClickListener);
 	}
 
-	private void createQuickButtonMenu(ContextMenu menu){
-		menu.add(Menu.NONE, R.id.quick_menu_unassign, Menu.NONE, R.string.inventory_unassign);
-		SubMenu assignMenu = menu.addSubMenu(Menu.NONE, R.id.quick_menu_assign, Menu.NONE, R.string.inventory_assign);
-		for(int i=0; i<world.model.player.inventory.items.size(); ++i){
-			ItemEntry itemEntry = world.model.player.inventory.items.get(i);
-			if(itemEntry.itemType.isUsable())
-				assignMenu.add(R.id.quick_menu_assign_group, i, Menu.NONE, itemEntry.itemType.getName(world.model.player));
-		}
-	}
-
-	@Override
-	public boolean onContextItemSelected(MenuItem item) {
-		QuickButtonContextMenuInfo menuInfo;
-		if(item.getGroupId() == R.id.quick_menu_assign_group){
-			menuInfo = (QuickButtonContextMenuInfo) lastSelectedMenu;
-			controllers.itemController.setQuickItem(world.model.player.inventory.items.get(item.getItemId()).itemType, menuInfo.index);
-			return true;
-		}
-		switch(item.getItemId()){
-		case R.id.quick_menu_unassign:
-			menuInfo = (QuickButtonContextMenuInfo) item.getMenuInfo();
-			controllers.itemController.setQuickItem(null, menuInfo.index);
-			break;
-		case R.id.quick_menu_assign:
-			menuInfo = (QuickButtonContextMenuInfo) item.getMenuInfo();
-			lastSelectedMenu = menuInfo;
-			break;
-		default:
-			return super.onContextItemSelected(item);
-		}
-		return true;
-	}
+//	@Override
+//	public void onCreateContextMenu(ContextMenu menu, View v, ContextMenuInfo menuInfo) {
+//		
+//		super.onCreateContextMenu(menu, v, menuInfo);
+//		if(quickitemview.isQuickButtonId(v.getId())){
+//			createQuickButtonMenu(menu);
+//		}
+//		lastSelectedMenu = null;
+//	}
+//
+//	private void createQuickButtonMenu(ContextMenu menu){
+//		menu.add(Menu.NONE, R.id.quick_menu_unassign, Menu.NONE, R.string.inventory_unassign);
+//		SubMenu assignMenu = menu.addSubMenu(Menu.NONE, R.id.quick_menu_assign, Menu.NONE, R.string.inventory_assign);
+//		for(int i=0; i<world.model.player.inventory.items.size(); ++i){
+//			ItemEntry itemEntry = world.model.player.inventory.items.get(i);
+//			if(itemEntry.itemType.isUsable())
+//				assignMenu.add(R.id.quick_menu_assign_group, i, Menu.NONE, itemEntry.itemType.getName(world.model.player));
+//		}
+//	}
+//
+//	@Override
+//	public boolean onContextItemSelected(MenuItem item) {
+//		QuickButtonContextMenuInfo menuInfo;
+//		if(item.getGroupId() == R.id.quick_menu_assign_group){
+//			menuInfo = (QuickButtonContextMenuInfo) lastSelectedMenu;
+//			controllers.itemController.setQuickItem(world.model.player.inventory.items.get(item.getItemId()).itemType, menuInfo.index);
+//			return true;
+//		}
+//		switch(item.getItemId()){
+//		case R.id.quick_menu_unassign:
+//			menuInfo = (QuickButtonContextMenuInfo) item.getMenuInfo();
+//			controllers.itemController.setQuickItem(null, menuInfo.index);
+//			break;
+//		case R.id.quick_menu_assign:
+//			menuInfo = (QuickButtonContextMenuInfo) item.getMenuInfo();
+//			lastSelectedMenu = menuInfo;
+//			break;
+//		default:
+//			return super.onContextItemSelected(item);
+//		}
+//		return true;
+//	}
 
 	private void updateStatus() {
 		statusview.updateStatus();
@@ -433,4 +482,5 @@ public final class MainActivity
 	public void onPlayerDoesNotHaveEnoughAP() {
 		message(getString(R.string.combat_not_enough_ap));
 	}
+
 }
