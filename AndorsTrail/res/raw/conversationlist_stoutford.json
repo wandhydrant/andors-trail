@@ -5,22 +5,22 @@
     },
     {
         "id":"stoutford_bed_locked",
-        "message":"The owner shouts: \"Hey ! These beds aren't for strangers ! Come here !\""
+        "message":"The owner shouts: \"Hey! These beds aren't for strangers! Come here!\""
     },
     {
         "id":"stoutford_gateguard_0",
-        "message":"What do you want kid ?",
+        "message":"What do you want kid?",
         "replies":[
             {
-                "text":"What is this place ?",
+                "text":"What is this place?",
                 "nextPhraseID":"soutford_gateguard_what_0"
             },
             {
-                "text":"What are you doing here ?",
+                "text":"What are you doing here?",
                 "nextPhraseID":"soutford_gateguard_who_0"
             },
             {
-                "text":"Have you seen my brother Andor ?",
+                "text":"Have you seen my brother Andor?",
                 "nextPhraseID":"stoutford_gateguard_andor_0"
             }
         ]
@@ -39,11 +39,11 @@
     },
     {
         "id":"stoutford_farmer_jan_0",
-        "message":"Can't you see I'm busy ? Go talk to my brother Jen, he's always slacking off in the field."
+        "message":"Can't you see I'm busy? Go talk to my brother Jen, he's always slacking off in the field."
     },
     {
         "id":"stoutford_farmer_jen_0",
-        "message":"Can't you see I'm busy ? Go talk to my brother Jan, he's always slacking off in the house."
+        "message":"Can't you see I'm busy? Go talk to my brother Jan, he's always slacking off in the house."
     },
     {
         "id":"kayla_0",
@@ -59,15 +59,15 @@
         "message":"Hello.",
         "replies":[
             {
-                "text":"Who are you ?",
+                "text":"Who are you?",
                 "nextPhraseID":"kayla_2"
             },
             {
-                "text":"Have you seen my brother Andor ?",
+                "text":"Have you seen my brother Andor?",
                 "nextPhraseID":"kayla_3"
             },
             {
-                "text":"Are you a friend of Halvor ?",
+                "text":"Are you a friend of Halvor?",
                 "nextPhraseID":"kayla_halvor_0",
                 "requires":[
                     {
@@ -100,20 +100,20 @@
     },
     {
         "id":"soutford_gateguard_what_0",
-        "message":"This is Stoutford. Our small village has been the resting place of choice for many merchants on their way between Fallhaven and the Blackwater moutain.",
+        "message":"This is Stoutford. Our small village was the resting place of choice for many merchants on their way between Fallhaven and the Blackwater moutain.",
         "replies":[
             {
-                "text":"Has been ?",
+                "text":"Was?",
                 "nextPhraseID":"soutford_gateguard_what_1"
             }
         ]
     },
     {
         "id":"soutford_gateguard_what_1",
-        "message":"Yes. It seems the road is closed somehow. Maybe this is related to the monsters attacks we have been suffering from recently.",
+        "message":"Yes. It seems the road is closed for some reason. Maybe this is related to the monsters attacks we have been suffering from recently.",
         "replies":[
             {
-                "text":"Is there anything I can do to help ?",
+                "text":"Is there anything I can do to help?",
                 "nextPhraseID":"soutford_gateguard_what_2"
             },
             {
@@ -141,7 +141,7 @@
         "message":"I'm guarding the town's gate. ",
         "replies":[
             {
-                "text":"Guarding against what ?",
+                "text":"Guarding against what?",
                 "nextPhraseID":"soutford_gateguard_who_1"
             }
         ]
@@ -151,7 +151,7 @@
         "message":"In the past, troublemakers that bother the citizens or merchants. Nowadays, it's mainly the monsters, when I can handle them.",
         "replies":[
             {
-                "text":"What monsters ?",
+                "text":"What monsters?",
                 "nextPhraseID":"soutford_gateguard_who_2"
             },
             {
@@ -179,11 +179,11 @@
         "message":"I do recall some kid that looked a bit like you a while ago. He stayed here a couple of days, and never came back as far as I can tell.",
         "replies":[
             {
-                "text":"What did he do here ?",
+                "text":"What did he do here?",
                 "nextPhraseID":"stoutford_gateguard_andor_1"
             },
             {
-                "text":"Do you know where he was going ?",
+                "text":"Do you know where he was going?",
                 "nextPhraseID":"stoutford_gateguard_andor_2"
             }
         ]
@@ -193,7 +193,7 @@
         "message":"I can't really tell. No known trouble at least. He headed straight to the tavern, and I didn't see him before he left.",
         "replies":[
             {
-                "text":"Do you know where he was going ?",
+                "text":"Do you know where he was going?",
                 "nextPhraseID":"stoutford_gateguard_andor_2"
             },
             {
@@ -211,7 +211,7 @@
         "message":"No.",
         "replies":[
             {
-                "text":"What did he do here ?",
+                "text":"What did he do here?",
                 "nextPhraseID":"stoutford_gateguard_andor_1"
             },
             {
@@ -290,21 +290,21 @@
     },
     {
         "id":"tahalendor_initial_0",
-        "message":"How dare you come back here after all you've done ?",
+        "message":"How dare you come back here after all you've done?",
         "replies":[
             {
-                "text":"Wait. What ?",
+                "text":"What?",
                 "nextPhraseID":"tahalendor_initial_1"
             },
             {
-                "text":"Actually, it's the first time we meet.",
+                "text":"Actually, it's the first time we have met.",
                 "nextPhraseID":"tahalendor_initial_2"
             }
         ]
     },
     {
         "id":"tahalendor_initial_1",
-        "message":"Go away ! You're not welcome here !",
+        "message":"Go away! You're not welcome here!",
         "replies":[
             {
                 "text":"Okay...",
@@ -321,7 +321,7 @@
     },
     {
         "id":"tahalendor_initial_2",
-        "message":"Nonsense ! Go away !",
+        "message":"Nonsense! Go away!",
         "replies":[
             {
                 "text":"Okay...",
@@ -405,14 +405,14 @@
     },
     {
         "id":"yolgen_rumblings10_0",
-        "message":"Walk in the shadow kid. I have to apologize for my master Tahalendor.",
+        "message":"Walk in the shadow kid. I have to apologize for my master, Tahalendor.",
         "replies":[
             {
-                "text":"Crazy old geezer... What's wrong with him ?",
+                "text":"Crazy old geezer... What's wrong with him?",
                 "nextPhraseID":"yolgen_rumblings10_1"
             },
             {
-                "text":"Can you explain ?",
+                "text":"Can you explain?",
                 "nextPhraseID":"yolgen_rumblings10_1"
             }
         ]
@@ -422,17 +422,17 @@
         "message":"My master is wise and old, but his sight is not as sharp as it once was. He took you for someone else.",
         "replies":[
             {
-                "text":"Who ?",
+                "text":"Who?",
                 "nextPhraseID":"yolgen_rumblings10_2"
             }
         ]
     },
     {
         "id":"yolgen_rumblings10_2",
-        "message":"To his credit, I have to admit you look a bit like him. I don't know his name.",
+        "message":"To his credit, I have to admit you do look a bit like him. I don't know his name.",
         "replies":[
             {
-                "text":"That must be my brother Andor !",
+                "text":"That must be my brother Andor!",
                 "nextPhraseID":"yolgen_rumblings10_3"
             },
             {
@@ -443,7 +443,7 @@
     },
     {
         "id":"yolgen_rumblings10_3",
-        "message":"He came around here not long ago, stayed a couple of days from what I heard. Since then, we have been hearing frequent rumbles in the church, coming from the underground.",
+        "message":"He came around here not long ago, with a shady looking travelling companion. He stayed a couple of days from what I heard. Since then, we have been hearing frequent rumbles in the church, coming from underground.",
         "replies":[
             {
                 "text":"N",
@@ -453,7 +453,7 @@
     },
     {
         "id":"yolgen_rumblings10_4",
-        "message":"It can be as loud as to make the whole church shake. It even damaged the walls and the roof.",
+        "message":"It can be so loud as to make the whole church shake. It has even damaged the walls and the roof.",
         "replies":[
             {
                 "text":"N",
@@ -466,11 +466,11 @@
         "message":"This church is the refuge for all the villagers when monsters attack. We are really worried now.",
         "replies":[
             {
-                "text":"I can't believe Andor has anything to do with this. Can you tell me more ?",
+                "text":"I can't believe Andor has anything to do with this. Can you tell me more?",
                 "nextPhraseID":"yolgen_rumblings10_6"
             },
             {
-                "text":"Is there anything I can do to help ?",
+                "text":"Is there anything I can do to help?",
                 "nextPhraseID":"yolgen_rumblings10_6"
             },
             {
@@ -506,7 +506,7 @@
     },
     {
         "id":"yolgen_rumblings20_0",
-        "message":"Hello again. Have you found anything about these noises ?",
+        "message":"Hello again. Have you found anything about the noises?",
         "replies":[
             {
                 "text":"No. Not yet.",
@@ -541,7 +541,7 @@
     },
     {
         "id":"stoutford_thief_initial_1",
-        "message":"Wanna trade ?",
+        "message":"Wanna trade?",
         "replies":[
             {
                 "text":"Sure.",
@@ -558,21 +558,21 @@
         "message":"Hey kid. A \"common friend\" told me about you.",
         "replies":[
             {
-                "text":"Who ?",
+                "text":"Who?",
                 "nextPhraseID":"stoutford_thief_rumblings20_1"
             }
         ]
     },
     {
         "id":"stoutford_thief_rumblings20_1",
-        "message":"Shhh ! Quiet here. You helped the guild, so I'll help you too.",
+        "message":"Shhh! Quiet here. You helped the guild, so I'll help you too.",
         "replies":[
             {
-                "text":"Help me do what ?",
+                "text":"Help me do what?",
                 "nextPhraseID":"stoutford_thief_rumblings20_2"
             },
             {
-                "text":"Great !",
+                "text":"Great!",
                 "nextPhraseID":"stoutford_thief_rumblings20_2"
             }
         ]
@@ -603,7 +603,7 @@
                 "nextPhraseID":"stoutford_thief_rumblings20_4"
             },
             {
-                "text":"I can handle myself ! I don't fear them, or anyone else !",
+                "text":"I can handle myself! I don't fear them, or anyone else!",
                 "nextPhraseID":"stoutford_thief_rumblings20_4"
             }
         ]
@@ -630,7 +630,7 @@
     },
     {
         "id":"stoutford_cellar_locked_key",
-        "message":"An unknown force prevents you to go further."
+        "message":"An unknown force prevents you from going further."
     },
     {
         "id":"glasforn_0",
@@ -701,11 +701,11 @@
         "message":"I'm Glasforn, proud owner of this fine establishment.",
         "replies":[
             {
-                "text":"Can I use one of your beds ?",
+                "text":"Can I use one of your beds?",
                 "nextPhraseID":"glasforn_initial_bed_0"
             },
             {
-                "text":"What can you tell me about the strange noises in the church ?",
+                "text":"What can you tell me about the strange noises in the church?",
                 "nextPhraseID":"glasforn_rumblings20_0",
                 "requires":[
                     {
@@ -722,11 +722,11 @@
         "message":"Sorry, none are available today.",
         "replies":[
             {
-                "text":"Who are you ?",
+                "text":"Who are you?",
                 "nextPhraseID":"glasforn_initial_who_0"
             },
             {
-                "text":"What can you tell me about the strange noises in the church ?",
+                "text":"What can you tell me about the strange noises in the church?",
                 "nextPhraseID":"glasforn_rumblings20_0",
                 "requires":[
                     {
@@ -740,7 +740,7 @@
     },
     {
         "id":"glasforn_rumblings20_0",
-        "message":"What about them ?",
+        "message":"What about them?",
         "replies":[
             {
                 "text":"Well, I heard they may be related to my brother Andor. I'm looking for him.",
@@ -760,10 +760,10 @@
     },
     {
         "id":"glasforn_rumblings20_2",
-        "message":"Okay, I can believe that you are Andor's brother. You should have told me earlier !",
+        "message":"Okay, I can believe that you are Andor's brother. You should have told me earlier!",
         "replies":[
             {
-                "text":"Why ?",
+                "text":"Why?",
                 "nextPhraseID":"glasforn_rumblings20_3"
             }
         ]
@@ -773,15 +773,15 @@
         "message":"Hello.",
         "replies":[
             {
-                "text":"Who are you ?",
+                "text":"Who are you?",
                 "nextPhraseID":"glasforn_initial_who_0"
             },
             {
-                "text":"Can I use one of your beds ?",
+                "text":"Can I use one of your beds?",
                 "nextPhraseID":"glasforn_initial_bed_0"
             },
             {
-                "text":"What can you tell me about the strange noises in the church ?",
+                "text":"What can you tell me about the strange noises in the church?",
                 "nextPhraseID":"glasforn_rumblings20_0",
                 "requires":[
                     {
@@ -798,7 +798,7 @@
         "message":"Well, you see, I keep some beds for occasions like this one. You can use the one in the corner, near the painting, if you wish to rest.",
         "replies":[
             {
-                "text":"For free ?",
+                "text":"For free?",
                 "nextPhraseID":"glasforn_rumblings20_4"
             },
             {
@@ -840,7 +840,7 @@
     },
     {
         "id":"glasforn_rumblings20_6",
-        "message":"Our food isn't bad either. Go see our cook. He's weird but works great.",
+        "message":"Our food isn't bad either. Go see our cook. He's weird, but does great work.",
         "replies":[
             {
                 "text":"...",
@@ -850,7 +850,7 @@
     },
     {
         "id":"glasforn_rumblings30_0",
-        "message":"So kid, have you tried your bed ? Our beds are the best !",
+        "message":"So kid, have you tried your bed? Our beds are the best!",
         "replies":[
             {
                 "text":"About Andor...",
@@ -868,7 +868,7 @@
     },
     {
         "id":"glasforn_rumblings30_1",
-        "message":"You really should. You'll thank me afterwards."
+        "message":"You really should try your bed. You'll thank me afterwards."
     },
     {
         "id":"stoutford_lich_killed_0",
@@ -893,7 +893,7 @@
     },
     {
         "id":"stoutford_lich_killed_1",
-        "message":"You hear a loud rumble, then nothing. Silence. What was that monster ?",
+        "message":"You hear a loud rumble, then nothing. Silence. What was that monster?",
         "rewards":[
             {
                 "rewardType":"questProgress",
@@ -912,22 +912,22 @@
         "message":"Wha... impossible... how did you...",
         "replies":[
             {
-                "text":"I should kill you right now !",
+                "text":"I should kill you right now!",
                 "nextPhraseID":"glasforn_rumblings50_1"
             },
             {
-                "text":"What was that beast ?",
+                "text":"What was that beast?",
                 "nextPhraseID":"glasforn_rumblings50_1"
             },
             {
-                "text":"What did you do to me ?",
+                "text":"What did you do to me?",
                 "nextPhraseID":"glasforn_rumblings50_1"
             }
         ]
     },
     {
         "id":"glasforn_rumblings50_1",
-        "message":"You... you should be dead !",
+        "message":"You... you should be dead!",
         "replies":[
             {
                 "text":"And so should you.",
@@ -1006,17 +1006,17 @@
     },
     {
         "id":"glasforn_rumblings60_5",
-        "message":"When he returned, he ordered me to drug you and make you prisoner in the cellar should you come here, otherwise he would kill us all.",
+        "message":"When he returned he put this horrible necklace on me. He told me that thing in the cellar needed lives to grow stronger, and either I could give it those lives or the necklace would take mine. ",
         "replies":[
             {
                 "text":"N",
-                "nextPhraseID":"glasforn_rumblings60_6"
+                "nextPhraseID":"glasforn_rumblings60_5_1"
             }
         ]
     },
     {
         "id":"glasforn_rumblings60_6",
-        "message":"He gave me this, told me to wear it when I bring you to the cellar, and left. Take it. It scares me anyway. The monsters' attacks began shortly after.",
+        "message":"I'm sorry! How was I to know you could actually kill it? You're just a kid! Anyway, now I can remove the necklace. Please take it. I never want to see it again.",
         "replies":[
             {
                 "text":"N",
@@ -1063,7 +1063,7 @@
     },
     {
         "id":"yolgen_rumblings50_0",
-        "message":"Hello again. Have you found anything about these noises ? It seems they have stopped.",
+        "message":"Hello again. Have you found anything about the noises? It seems they have stopped.",
         "replies":[
             {
                 "text":"No. Not yet.",
@@ -1094,10 +1094,10 @@
     },
     {
         "id":"tahalendor_rumblings80_0",
-        "message":"You ! You saved us !",
+        "message":"You! You saved us!",
         "replies":[
             {
-                "text":"Not thanks to you...",
+                "text":"No thanks to you...",
                 "nextPhraseID":"tahalendor_rumblings80_1"
             },
             {
@@ -1112,7 +1112,7 @@
     },
     {
         "id":"tahalendor_rumblings80_1",
-        "message":"All my apologies for earlier. I took you for someone else. Do you know what was causing the rumbles ?",
+        "message":"My sincerest apologies for earlier. I took you for someone else. Do you know what was causing the rumbles?",
         "replies":[
             {
                 "text":"(Show Demon heart) Some monster. Here's what it left when I killed it.",
@@ -1133,10 +1133,10 @@
     },
     {
         "id":"tahalendor_rumblings80_2",
-        "message":"Oh my. It's the heart of a lich ! These are nasty creatures. ",
+        "message":"Oh my. It's the heart of a lich! These are nasty creatures. ",
         "replies":[
             {
-                "text":"These ? You mean there are others ?",
+                "text":"These? You mean there are others?",
                 "nextPhraseID":"tahalendor_rumblings80_3"
             }
         ]
@@ -1153,7 +1153,7 @@
     },
     {
         "id":"tahalendor_rumblings80_4",
-        "message":"I'm surprised such a young boy managed to survive encountering one, let alone actually kill it.",
+        "message":"I'm surprised such a young boy as you managed to survive encountering one, let alone actually kill it.",
         "replies":[
             {
                 "text":"N",
@@ -1167,7 +1167,7 @@
     },
     {
         "id":"tahalendor_rumblings80_5",
-        "message":"You know, since those monsters' attacks, we don't have much to offer, but take these. By the way, do you have any idea of who might be responsible for all this ?",
+        "message":"You know, since those monsters' attacks, we don't have much to offer, but take these. By the way, do you have any idea who might be responsible for all this?",
         "replies":[
             {
                 "text":"Not really.",
@@ -1221,7 +1221,7 @@
     },
     {
         "id":"tahalendor_rumblings103_0",
-        "message":"That fool ! We'll make him pay. Thank you for your help kid.",
+        "message":"That fool! We'll make him pay. Thank you for your help kid.",
         "rewards":[
             {
                 "rewardType":"questProgress",
@@ -1237,7 +1237,7 @@
     },
     {
         "id":"tahalendor_rumblings106_0",
-        "message":"That is troublesome. I have no idea were he went when he left Stoutford, but Kazaul has always been linked to the Undertell, south of here. Thank you for your help kid.",
+        "message":"That is troublesome. I have no idea where he went when he left Stoutford, but Kazaul has always been linked to the Undertell, south of here. Thank you for your help kid.",
         "replies":[
             {
                 "text":"N",
@@ -1261,7 +1261,7 @@
     },
     {
         "id":"tahalendor_rumblings90_0",
-        "message":"Thank you for your help. Do you have any idea of who might be responsible for all this ?",
+        "message":"Thank you for your help. Do you have any idea who might be responsible for all this?",
         "replies":[
             {
                 "text":"Not really.",
@@ -1293,7 +1293,7 @@
     },
     {
         "id":"glasforn_rumblings103_0",
-        "message":"Boohoohoo.... the whole city hates me now. Even my dear customers left.",
+        "message":"Boohoohoo.... the whole town hates me now. Even my dear customers left.",
         "replies":[
             {
                 "text":"You deserved it.",
@@ -1319,25 +1319,25 @@
     },
     {
         "id":"kayla_halvor_0",
-        "message":"Halvor ? Yes ! He's so nice ! Do you know him ?",
+        "message":"Halvor? Yes! He's so nice! Do you know him?",
         "replies":[
             {
-                "text":"I hate this guy. He's nothing but trouble...",
+                "text":"I hate the guy. He's nothing but trouble...",
                 "nextPhraseID":"kayla_halvor_1"
             },
             {
-                "text":"Sure, We keep meeting around the world in the most unusual places. I even helped him gather some items.",
+                "text":"Sure, we keep meeting around the world in the most unusual places. I even helped him gather some items.",
                 "nextPhraseID":"kayla_halvor_2"
             }
         ]
     },
     {
         "id":"kayla_halvor_1",
-        "message":"He's always been good to me. If you don't like him, I don't like you !"
+        "message":"He's always been good to me. If you don't like him, I don't like you!"
     },
     {
         "id":"kayla_halvor_2",
-        "message":"So that's you ! He told me about you.",
+        "message":"So that's you! He told me about you.",
         "replies":[
             {
                 "text":"N",
@@ -1375,7 +1375,7 @@
     },
     {
         "id":"kayla_halvor_5",
-        "message":"I'm really proud of the result. \nThey are light, but sturdy,thanks to the bones and insect wings. \nThey are comfortable but tough thanks to the animal hair and venomscale scales. \nThey are stiff when adjusted, thanks to the rat tails.",
+        "message":"I'm really proud of the result. \nThey are light, but sturdy, thanks to the bones and insect wings. \nThey are comfortable but tough thanks to the animal hair and venomscale scales. \nThey are stiff when adjusted, thanks to the rat tails.",
         "replies":[
             {
                 "text":"N",
@@ -1392,7 +1392,7 @@
                 "nextPhraseID":"kayla_4"
             },
             {
-                "text":"Wow. I have to try these. Good bye.",
+                "text":"Wow. I have to try these. Goodbye.",
                 "nextPhraseID":"X"
             }
         ],
@@ -1411,7 +1411,7 @@
     },
     {
         "id":"kayla_4",
-        "message":"Do you want to trade ?",
+        "message":"Do you want to trade?",
         "replies":[
             {
                 "text":"Sure.",

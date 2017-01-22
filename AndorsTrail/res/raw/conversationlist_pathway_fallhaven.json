@@ -29,10 +29,10 @@
     },
     {
         "id":"guard_pathway_0",
-        "message":"Halt! No one is allowed to cross the pathway to the Duleian Road!",
+        "message":"Halt! No one is allowed down the pathway to the Duleian Road!",
         "replies":[
             {
-                "text":"Why is that so?",
+                "text":"Why not?",
                 "nextPhraseID":"guard_pathway_1",
                 "requires":[
                     {
@@ -54,7 +54,7 @@
     },
     {
         "id":"guard_pathway_1",
-        "message":"Because a storm recently knocked over some trees which now block the passage. A villager even got hurt. And now the responsible woodcutter doesn't want to cut the fallen trees away.",
+        "message":"Because a storm recently knocked over some trees that now block the passage. A villager even got hurt. And now the woodcutter that should be responsible doesn't want to cut the fallen trees away.",
         "replies":[
             {
                 "text":"But why doesn't he want to do this work?",
@@ -64,14 +64,14 @@
     },
     {
         "id":"guard_pathway_2",
-        "message":"You're really curious boy... Well our superior the warden only wants to pay the woodcutter when he did his work.",
+        "message":"You're really curious boy... Well our superior, the warden, only wants to pay the woodcutter when he has done his work.",
         "replies":[
             {
                 "text":"Maybe I could help?",
                 "nextPhraseID":"guard_pathway_3"
             },
             {
-                "text":"Well this is your problem. Goodbye.",
+                "text":"Well, this is your problem. Goodbye.",
                 "nextPhraseID":"X"
             }
         ]
@@ -92,7 +92,7 @@
     },
     {
         "id":"guard_pathway_4",
-        "message":"Ok, maybe you can be of use. Talk to the warden and maybe you can convince him of paying the woodcutter. But I have to warn you: he is a stubborn beast.",
+        "message":"Ok, maybe you can be of use. Talk to the warden. Maybe you can convince him to pay the woodcutter first. But I have to warn you, he is a stubborn beast.",
         "replies":[
             {
                 "text":"Okay thanks for your advice. I'm gonna do that!",
@@ -117,7 +117,7 @@
     },
     {
         "id":"guard_pathway_5",
-        "message":"Hello again. It seems like you have sorted things out. Now the passage isn't blocked anymore. You have all my gratitude for doing that.",
+        "message":"Hello again. It seems like you have sorted things out. Now the passage isn't blocked anymore. You have my gratitude for doing that.",
         "replies":[
             {
                 "text":"You're welcome. I'm glad the way is opened again!",
