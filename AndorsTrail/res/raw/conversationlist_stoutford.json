@@ -630,7 +630,7 @@
     },
     {
         "id":"stoutford_cellar_locked_key",
-        "message":"An unknown force prevents you to go further."
+        "message":"An unknown force prevents you from going further."
     },
     {
         "id":"glasforn_0",
@@ -885,8 +885,7 @@
                     {
                         "requireType":"questProgress",
                         "requireID":"rumblings",
-                        "value":50,
-                        "negate":true
+                        "value":50
                     }
                 ]
             }
@@ -1017,7 +1016,7 @@
     },
     {
         "id":"glasforn_rumblings60_6",
-        "message":"I\u2019m sorry! How was I to know you could actually kill it? You\u2019re just a kid! Anyway, now I can remove the necklace. Please take it. I never want to see it again.",
+        "message":"I'm sorry! How was I to know you could actually kill it? You're just a kid! Anyway, now I can remove the necklace. Please take it. I never want to see it again.",
         "replies":[
             {
                 "text":"N",
