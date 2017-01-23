@@ -108,11 +108,13 @@ public final class PredefinedMap {
 		}
 		return false;
 	}
-
 	public Monster getMonsterAt(final CoordRect p) {
+		return getMonsterAt(p, null);
+	}
+	public Monster getMonsterAt(final CoordRect p, Monster exceptMe) {
 		for (MonsterSpawnArea a : spawnAreas) {
 			Monster m = a.getMonsterAt(p);
-			if (m != null) return m;
+			if (m != null && (exceptMe == null || exceptMe != m)) return m;
 		}
 		return null;
 	}
