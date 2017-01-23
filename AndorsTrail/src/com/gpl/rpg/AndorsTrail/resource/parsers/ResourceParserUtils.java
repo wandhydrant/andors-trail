@@ -22,7 +22,6 @@ public final class ResourceParserUtils {
 	public static Size parseTilesetTileSize(DynamicTileLoader tileLoader, String s, final Size defaultSize) {
 		if (s == null || s.length() <= 0) return defaultSize;
 		String[] parts = s.split(":");
-		L.log(s+"-"+tileLoader.getTilesetTileSize(parts[0]).toString());
 		return tileLoader.getTilesetTileSize(parts[0]);
 	}
 

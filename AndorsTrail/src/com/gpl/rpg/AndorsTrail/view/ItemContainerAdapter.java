@@ -13,7 +13,7 @@ import com.gpl.rpg.AndorsTrail.model.item.ItemContainer.ItemEntry;
 import com.gpl.rpg.AndorsTrail.resource.tiles.TileCollection;
 import com.gpl.rpg.AndorsTrail.resource.tiles.TileManager;
 
-public final class ItemContainerAdapter extends ArrayAdapter<ItemEntry> {
+public class ItemContainerAdapter extends ArrayAdapter<ItemEntry> {
 	private final TileManager tileManager;
 	private final TileCollection tileCollection;
 	private final Player player;
