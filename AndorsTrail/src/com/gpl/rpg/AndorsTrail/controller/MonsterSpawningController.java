@@ -64,7 +64,7 @@ public final class MonsterSpawningController {
 			p.topLeft.set(
 					area.topLeft.x + Constants.rnd.nextInt(area.size.width)
 					,area.topLeft.y + Constants.rnd.nextInt(area.size.height));
-			if (!MonsterMovementController.monsterCanMoveTo(map, tileMap, p)) continue;
+			if (!MonsterMovementController.monsterCanMoveTo(null, map, tileMap, p)) continue;
 			if (playerPosition != null && p.contains(playerPosition)) continue;
 			return p.topLeft;
 		}

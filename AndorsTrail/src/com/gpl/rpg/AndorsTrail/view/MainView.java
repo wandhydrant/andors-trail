@@ -844,12 +844,12 @@ public final class MainView extends SurfaceView
 	
 	@Override
 	public void onNewSpriteMoveFrame(SpriteMoveAnimation animation) {
-		redrawMoveArea_(CoordRect.getBoundingRect(animation.origin, animation.destination), animation);
+		redrawMoveArea_(CoordRect.getBoundingRect(animation.origin, animation.destination, animation.actor.tileSize), animation);
 	}
 	
 	@Override
 	public void onSpriteMoveCompleted(SpriteMoveAnimation animation) {
-		redrawArea(CoordRect.getBoundingRect(animation.origin, animation.destination), RedrawAreaDebugReason.EffectCompleted);
+		redrawArea(CoordRect.getBoundingRect(animation.origin, animation.destination, animation.actor.tileSize), RedrawAreaDebugReason.EffectCompleted);
 	}
 
 	@Override

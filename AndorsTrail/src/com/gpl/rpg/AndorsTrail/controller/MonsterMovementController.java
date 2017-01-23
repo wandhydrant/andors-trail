@@ -52,17 +52,17 @@ public final class MonsterMovementController implements EvaluateWalkable {
 		}
 	}
 
-	public static boolean monsterCanMoveTo(final PredefinedMap map, final LayeredTileMap tilemap, final CoordRect p) {
+	public static boolean monsterCanMoveTo(final Monster movingMonster, final PredefinedMap map, final LayeredTileMap tilemap, final CoordRect p) {
 		if (tilemap != null) {
 			if (!tilemap.isWalkable(p)) return false;
 		}
-		if (map.getMonsterAt(p) != null) return false;
+		if (map.getMonsterAt(p, movingMonster) != null) return false;
 
-		for (MapObject m : map.eventObjects) {
-			if (m == null) continue;
-			if (!m.isActive) continue;
-			if (!m.position.intersects(p)) continue;
-			switch (m.type) {
+		for (MapObject mObj : map.eventObjects) {
+			if (mObj == null) continue;
+			if (!mObj.isActive) continue;
+			if (!mObj.position.intersects(p)) continue;
+			switch (mObj.type) {
 				case newmap:
 				case keyarea:
 				case rest:
@@ -90,7 +90,7 @@ public final class MonsterMovementController implements EvaluateWalkable {
 		} else {
 			determineMonsterNextPosition(m, area, world.model.player.position);
 
-			if (!monsterCanMoveTo(map, tileMap, m.nextPosition)) {
+			if (!monsterCanMoveTo(m, map, tileMap, m.nextPosition)) {
 				cancelCurrentMonsterMovement(m);
 				return;
 			}
@@ -155,7 +155,7 @@ public final class MonsterMovementController implements EvaluateWalkable {
 
 	@Override
 	public boolean isWalkable(CoordRect r) {
-		return monsterCanMoveTo(world.model.currentMap, world.model.currentTileMap, r);
+		return monsterCanMoveTo(null, world.model.currentMap, world.model.currentTileMap, r);
 	}
 
 	public void moveMonsterToNextPosition(final Monster m, final PredefinedMap map) {

@@ -92,4 +92,24 @@ public final class CoordRect {
 		
 		return new CoordRect(new Coord(x, y), new Size(w, h));
 	}
+
+	public static CoordRect getBoundingRect(Coord c1, Coord c2, Size s) {
+		int x, y, w, h;
+		if (c2.x < c1.x) {
+			x = c2.x;
+			w = 1 + c1.x - c2.x;
+		} else {
+			x = c1.x;
+			w = 1 + c2.x - c1.x;
+		}
+		if (c2.y < c1.y) {
+			y = c2.y;
+			h = 1 + c1.y - c2.y;
+		} else {
+			y = c1.y;
+			h = 1 + c2.y - c1.y;
+		}
+		
+		return new CoordRect(new Coord(x, y), new Size(w + s.width - 1, h + s.height - 1));
+	}
 }
