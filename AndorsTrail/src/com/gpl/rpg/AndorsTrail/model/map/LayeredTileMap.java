@@ -19,26 +19,42 @@ public final class LayeredTileMap {
 	private static final ColorFilter colorFilterRedTint = createRedTintColorFilter();
 	private static final ColorFilter colorFilterGreenTint = createGreenTintColorFilter();
 	private static final ColorFilter colorFilterBlueTint = createBlueTintColorFilter();
+	
+
+	public enum ColorFilterId {
+		none,
+		black20,
+		black40,
+		black60,
+		black80,
+		invert,
+		bw,
+		redtint,
+		greentint,
+		bluetint
+	}
 
 	private final Size size;
 	public final MapSection currentLayout;
 	private String currentLayoutHash;
 	public final ReplaceableMapSection[] replacements;
-	public final String colorFilter;
+	public final ColorFilterId originalColorFilter;
+	public ColorFilterId colorFilter;
 	public final Collection<Integer> usedTileIDs;
 	public LayeredTileMap(
 			Size size
 			, MapSection layout
 			, ReplaceableMapSection[] replacements
-			, String colorFilter
+			, ColorFilterId colorFilter
 			, Collection<Integer> usedTileIDs
 	) {
 		this.size = size;
 		this.currentLayout = layout;
 		this.replacements = replacements;
-		this.colorFilter = colorFilter;
+		this.originalColorFilter = colorFilter;
+		colorFilter = originalColorFilter;
 		this.usedTileIDs = usedTileIDs;
-		this.currentLayoutHash = currentLayout.calculateHash();
+		this.currentLayoutHash = currentLayout.calculateHash(colorFilter.name());
 	}
 
 	public final boolean isWalkable(final Coord p) {
@@ -78,17 +94,30 @@ public final class LayeredTileMap {
 
 	public ColorFilter getColorFilter() {
 		if (colorFilter == null) return null;
-		else if (colorFilter.length() <= 0) return null;
-		else if (colorFilter.equals("black20")) return colorFilterBlack20;
-		else if (colorFilter.equals("black40")) return colorFilterBlack40;
-		else if (colorFilter.equals("black60")) return colorFilterBlack60;
-		else if (colorFilter.equals("black80")) return colorFilterBlack80;
-		else if (colorFilter.equals("invert")) return colorFilterInvert;
-		else if (colorFilter.equals("bw")) return colorFilterBW;
-		else if (colorFilter.equals("redtint")) return colorFilterRedTint;
-		else if (colorFilter.equals("greentint")) return colorFilterGreenTint;
-		else if (colorFilter.equals("bluetint")) return colorFilterBlueTint;
-		return null;
+		switch (colorFilter) {
+		case black20:
+			return colorFilterBlack20;
+		case black40:
+			return colorFilterBlack40;
+		case black60:
+			return colorFilterBlack60;
+		case black80:
+			return colorFilterBlack80;
+		case invert:
+			return colorFilterInvert;
+		case bw:
+			return colorFilterBW;
+		case redtint:
+			return colorFilterRedTint;
+		case greentint:
+			return colorFilterGreenTint;
+		case bluetint:
+			return colorFilterBlueTint;
+		default:
+			return null;
+		
+		}
+		
 	}
 
 	private static ColorMatrixColorFilter createGrayScaleColorFilter(float blackOpacity) {
@@ -152,6 +181,22 @@ public final class LayeredTileMap {
 
 	public void applyReplacement(ReplaceableMapSection replacement) {
 		replacement.apply(currentLayout);
-		currentLayoutHash = currentLayout.calculateHash();
+		currentLayoutHash = currentLayout.calculateHash(colorFilter.name());
+	}
+	
+	public void changeColorFilter(ColorFilterId id) {
+		if (colorFilter == id) return;
+		colorFilter = id;
+		currentLayoutHash = currentLayout.calculateHash(colorFilter.name());
+	}
+	
+
+	public void changeColorFilter(String idString) {
+		ColorFilterId id;
+		if (idString == null) id = originalColorFilter;
+		else id = ColorFilterId.valueOf(idString);
+		if (id != null) {
+			changeColorFilter(id);
+		}
 	}
 }

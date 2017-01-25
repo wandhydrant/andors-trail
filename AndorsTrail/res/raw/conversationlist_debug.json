@@ -192,7 +192,19 @@
         "replies":[
             {
                 "nextPhraseID":"npc3_1",
-                "text":"Beer !"
+                "text":"Beer!"
+            },
+            {
+                "nextPhraseID":"npc3_2",
+                "text":"Lights out!"
+            },
+           	{
+                "nextPhraseID":"npc3_3",
+                "text":"Lights on!"
+            },
+            {
+                "nextPhraseID":"npc3_4",
+                "text":"Red ligths!"
             }
         ]
     },
@@ -220,5 +232,38 @@
     {
         "message":"No beer for you !",
         "id":"signnobeer"
-    }
+    },
+    {
+    	"id":"npc3_2",
+    	"message":"Ok.",
+    	"rewards":[
+        	{
+            	"rewardType":"changeMapFilter",
+            	"rewardID":"black80",
+            	"mapName":"debugmap"
+        	}
+    	]
+	},
+    {
+    	"id":"npc3_3",
+    	"message":"Ok.",
+    	"rewards":[
+        	{
+            	"rewardType":"changeMapFilter",
+            	"rewardID":"none",
+            	"mapName":"debugmap"
+        	}
+    	]
+	},
+    {
+    	"id":"npc3_4",
+    	"message":"Ok.",
+    	"rewards":[
+        	{
+            	"rewardType":"changeMapFilter",
+            	"rewardID":"redtint",
+            	"mapName":"debugmap"
+        	}
+    	]
+	}
 ]

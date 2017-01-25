@@ -15,6 +15,7 @@ public final class ScriptEffect {
 		, activateMapObjectGroup
 		, deactivateMapObjectGroup
 		, removeQuestProgress
+		, changeMapFilter
 	}
 
 	public final ScriptEffectType type;
