@@ -41,6 +41,7 @@
         "iconID":"actorconditions_1:70",
         "name":"Focused damage",
         "category":"mental",
+	"isPositive":1,
         "abilityEffect":{
             "increaseAttackDamage":{
                 "min":3,
@@ -54,6 +55,7 @@
         "iconID":"actorconditions_1:98",
         "name":"Focused accuracy",
         "category":"mental",
+	"isPositive":1,
         "abilityEffect":{
             "increaseAttackChance":40,
             "increaseAttackCost":1
@@ -64,7 +66,7 @@
         "iconID":"actorconditions_1:60",
         "name":"Irdegh poison",
         "category":"blood",
-        "stacking":1,
+        "iStacking":1,
         "roundEffect":{
             "visualEffectID":"greenSplash",
             "increaseCurrentHP":{

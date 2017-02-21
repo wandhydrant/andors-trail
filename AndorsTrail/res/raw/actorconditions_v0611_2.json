@@ -15,6 +15,7 @@
         "iconID":"actorconditions_1:70",
         "name":"Blessing of Shadow strength",
         "category":"spiritual",
+	"isPositive":1,
         "abilityEffect":{
             "increaseAttackDamage":{
                 "min":1,
@@ -27,6 +28,7 @@
         "iconID":"actorconditions_1:35",
         "name":"Blessing of Shadow regeneration",
         "category":"spiritual",
+        "isPositive":1,
         "roundEffect":{
             "visualEffectID":"blueSwirl",
             "increaseCurrentHP":{
@@ -40,6 +42,7 @@
         "iconID":"actorconditions_1:98",
         "name":"Blessing of Shadow accuracy",
         "category":"spiritual",
+        "isPositive":1,
         "abilityEffect":{
             "increaseAttackChance":30
         }
@@ -49,6 +52,7 @@
         "iconID":"actorconditions_1:91",
         "name":"Shadow guardian blessing",
         "category":"spiritual",
+        "isPositive":1,
         "abilityEffect":{
             "increaseMaxHP":30,
             "increaseDamageResistance":1
@@ -59,7 +63,7 @@
         "iconID":"actorconditions_1:89",
         "name":"Internal bleeding",
         "category":"physical",
-        "stacking":1,
+        "iStacking":1,
         "abilityEffect":{
             "increaseAttackChance":-50,
             "increaseAttackDamage":{
@@ -74,7 +78,7 @@
         "iconID":"actorconditions_1:89",
         "name":"Fracture",
         "category":"physical",
-        "stacking":1,
+        "iStacking":1,
         "abilityEffect":{
             "increaseBlockChance":-50,
             "increaseDamageResistance":-2
@@ -85,7 +89,7 @@
         "iconID":"actorconditions_1:80",
         "name":"Concussion",
         "category":"physical",
-        "stacking":1,
+        "iStacking":1,
         "abilityEffect":{
             "increaseAttackChance":-30
         }
