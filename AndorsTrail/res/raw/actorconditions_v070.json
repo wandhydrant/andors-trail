@@ -4,7 +4,7 @@
         "iconID":"actorconditions_1:56",
         "name":"Corrosive Slime",
         "category":"physical",
-        "stacking":1,
+        "isStacking":1,
         "roundEffect":{
             "increaseCurrentHP":{
                 "min":-1,
@@ -21,6 +21,7 @@
         "iconID":"actorconditions_1:44",
         "name":"Heightened senses",
         "category":"physical",
+	"isPositive":1,
         "abilityEffect":{
             "increaseAttackChance":5,
             "increaseAttackDamage":{
@@ -35,6 +36,7 @@
         "iconID":"actorconditions_1:92",
         "name":"Courage",
         "category":"mental",
+        "isPositive":1,
         "roundEffect":{
             "visualEffectID":"blueSwirl",
             "increaseCurrentHP":{
@@ -71,6 +73,7 @@
         "iconID":"actorconditions_1:47",
         "name":"Fortified defense",
         "category":"physical",
+        "isPositive":1,
         "abilityEffect":{
             "increaseBlockChance":22
         }
@@ -80,6 +83,7 @@
         "iconID":"actorconditions_1:78",
         "name":"Vulnerability awareness",
         "category":"physical",
+        "isPositive":1,
         "abilityEffect":{
             "increaseCriticalSkill":10
         }
@@ -89,6 +93,7 @@
         "iconID":"actorconditions_1:35",
         "name":"Regeneration",
         "category":"physical",
+        "isPositive":1,
         "roundEffect":{
             "visualEffectID":"blueSwirl",
             "increaseCurrentHP":{
@@ -102,6 +107,7 @@
         "iconID":"actorconditions_1:20",
         "name":"Bark skin",
         "category":"physical",
+        "isPositive":1,
         "abilityEffect":{
             "increaseDamageResistance":1
         }
@@ -111,6 +117,7 @@
         "iconID":"actorconditions_1:101",
         "name":"Shadow's accuracy",
         "category":"spiritual",
+        "isPositive":1,
         "abilityEffect":{
             "increaseAttackChance":15
         }
@@ -120,6 +127,7 @@
         "iconID":"actorconditions_1:28",
         "name":"Shadow's protection",
         "category":"spiritual",
+        "isPositive":1,
         "roundEffect":{
             "visualEffectID":"blueSwirl",
             "increaseCurrentHP":{
@@ -137,6 +145,7 @@
         "iconID":"actorconditions_1:70",
         "name":"Shadow's strength",
         "category":"spiritual",
+        "isPositive":1,
         "abilityEffect":{
             "increaseAttackDamage":{
                 "min":0,
@@ -149,6 +158,7 @@
         "iconID":"actorconditions_1:87",
         "name":"Haste",
         "category":"physical",
+        "isPositive":1,
         "abilityEffect":{
             "increaseMaxAP":2,
             "increaseMoveCost":-1,
@@ -176,7 +186,7 @@
         "iconID":"actorconditions_1:63",
         "name":"Minor sting",
         "category":"physical",
-        "stacking":1,
+        "isStacking":1,
         "roundEffect":{
             "increaseCurrentHP":{
                 "min":-1,

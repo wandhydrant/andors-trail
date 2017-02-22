@@ -22,7 +22,6 @@ import com.gpl.rpg.AndorsTrail.model.conversation.Reply;
 import com.gpl.rpg.AndorsTrail.model.item.ItemTypeCollection;
 import com.gpl.rpg.AndorsTrail.model.item.Loot;
 import com.gpl.rpg.AndorsTrail.model.map.LayeredTileMap;
-import com.gpl.rpg.AndorsTrail.model.map.MapObject;
 import com.gpl.rpg.AndorsTrail.model.map.MonsterSpawnArea;
 import com.gpl.rpg.AndorsTrail.model.map.PredefinedMap;
 import com.gpl.rpg.AndorsTrail.model.quest.QuestLogEntry;
@@ -59,12 +58,12 @@ public final class ConversationController {
 		}
 	}
 
-	private ScriptEffectResult applyScriptEffectsForPhrase(final Player player, final Phrase phrase) {
+	private ScriptEffectResult applyScriptEffectsForPhrase(Resources res, final Player player, final Phrase phrase) {
 		if (phrase.scriptEffects == null || phrase.scriptEffects.length == 0) return null;
 
 		final ScriptEffectResult result = new ScriptEffectResult();
 		for (ScriptEffect effect : phrase.scriptEffects) {
-			applyScriptEffect(player, effect, result);
+			applyScriptEffect(res, player, effect, result);
 		}
 
 		if (result.isEmpty()) return null;
@@ -75,7 +74,7 @@ public final class ConversationController {
 		return result;
 	}
 
-	private void applyScriptEffect(Player player, ScriptEffect effect, ScriptEffectResult result) {
+	private void applyScriptEffect(Resources res, Player player, ScriptEffect effect, ScriptEffectResult result) {
 		switch (effect.type) {
 			case actorCondition:
 				addActorConditionReward(player, effect.effectID, effect.value, result);
@@ -116,9 +115,20 @@ public final class ConversationController {
 			case removeQuestProgress:
 				addRemoveQuestProgressReward(player, effect.effectID, effect.value);
 				break;
+			case changeMapFilter:
+				changeMapFilter(res, effect.mapName, effect.effectID);
+				break;
 		}
 	}
 
+	private void changeMapFilter(Resources res, String mapName, String effectID) {
+		PredefinedMap map = findMapForScriptEffect(mapName);
+		map.currentColorFilter = effectID;
+		if (world.model.currentMap == map) {
+			controllers.mapController.applyCurrentMapReplacements(res, true);
+		}
+	}
+	
 	private void deactivateMapObjectGroup(String mapName, String mapObjectGroupID) {
 		PredefinedMap map = findMapForScriptEffect(mapName);
 		controllers.mapController.deactivateMapObjectGroup(map, mapObjectGroupID);
@@ -360,7 +370,7 @@ public final class ConversationController {
 			setCurrentPhrase(res, phraseID);
 
 			if (applyScriptEffects) {
-				ScriptEffectResult scriptEffectResult = controllers.conversationController.applyScriptEffectsForPhrase(player, currentPhrase);
+				ScriptEffectResult scriptEffectResult = controllers.conversationController.applyScriptEffectsForPhrase(res, player, currentPhrase);
 				if (scriptEffectResult != null) {
 					listener.onScriptEffectsApplied(scriptEffectResult);
 				}

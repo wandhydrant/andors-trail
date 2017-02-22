@@ -829,6 +829,7 @@ public final class MainView extends SurfaceView
 	public void onMapTilesChanged(PredefinedMap map, LayeredTileMap tileMap) {
 		if (map != currentMap) return;
 		updateBitmaps();
+		currentTileMap.setColorFilter(this.mPaint);
 		redrawAll(RedrawAllDebugReason.MapChanged);
 	}
 

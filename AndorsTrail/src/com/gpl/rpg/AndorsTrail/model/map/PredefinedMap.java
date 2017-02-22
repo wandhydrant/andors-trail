@@ -1,5 +1,7 @@
 package com.gpl.rpg.AndorsTrail.model.map;
 
+import android.app.ActivityManager.RecentTaskInfo;
+
 import com.gpl.rpg.AndorsTrail.AndorsTrailApplication;
 import com.gpl.rpg.AndorsTrail.context.ControllerContext;
 import com.gpl.rpg.AndorsTrail.context.WorldContext;
@@ -36,6 +38,7 @@ public final class PredefinedMap {
 	public long lastVisitTime = VISIT_RESET;
 	public String lastSeenLayoutHash = "";
 	public final boolean isOutdoors;
+	public String currentColorFilter = null;
 
 	public final ArrayList<BloodSplatter> splatters = new ArrayList<BloodSplatter>();
 
@@ -173,6 +176,7 @@ public final class PredefinedMap {
 		resetTemporaryData();
 		groundBags.clear();
 		visited = false;
+		currentColorFilter = null;
 		lastSeenLayoutHash = "";
 	}
 
@@ -317,6 +321,15 @@ public final class PredefinedMap {
 				}
 				return;
 			}
+			
+			if (fileversion >= 43) {
+				if (src.readBoolean()) {
+					currentColorFilter = src.readUTF();
+				} else {
+					currentColorFilter = null;
+				}
+			}
+			
 			lastVisitTime = src.readLong();
 
 			if (visited) {
@@ -354,6 +367,7 @@ public final class PredefinedMap {
 		}
 		if (!activeMapObjectGroups.containsAll(initiallyActiveMapObjectGroups) 
 				|| !initiallyActiveMapObjectGroups.containsAll(activeMapObjectGroups)) return true;
+		if (currentColorFilter != null) return true;
 		return false;
 	}
 
@@ -373,6 +387,8 @@ public final class PredefinedMap {
 			for(Loot l : groundBags) {
 				l.writeToParcel(dest);
 			}
+			dest.writeBoolean(currentColorFilter != null);
+			if (currentColorFilter != null) dest.writeUTF(currentColorFilter);
 			dest.writeLong(lastVisitTime);
 		} else {
 			dest.writeBoolean(false);
