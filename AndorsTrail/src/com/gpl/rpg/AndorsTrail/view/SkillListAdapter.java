@@ -197,6 +197,10 @@ public final class SkillListAdapter extends ArrayAdapter<SkillInfo> {
 						&& item2.canLevelUpSkillTo(player, player.getSkillLevel(item2.id) +1))
 					return 1;
 				else { // Then compare by number of requirements (complexity)
+					if(item1.levelupRequirements == null)
+						return -1;
+					if(item2.levelupRequirements == null)
+						return 1;
 					if(item1.levelupRequirements.length< item2.levelupRequirements.length)
 						return -1;
 					else if(item1.levelupRequirements.length > item2.levelupRequirements.length)
