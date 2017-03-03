@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <resources>
-	<string name="app_name">La Piste d\'Andor</string>
+	<string name="app_name">Sur les traces d\'Andor</string>
 	<string name="app_description">Jeu de rôle fantastique à base de quêtes</string>
 
 	<string name="exit_to_menu">Retour au menu</string>
 	<string name="menu_settings">Préférences</string>
-	<string name="menu_save">Sauver</string>
+	<string name="menu_save">Sauvegarde</string>
 	<string name="menu_save_gamesaved">La partie a été sauvegardé dans l\'emplacement %1$d</string>
 	<string name="menu_save_failed">Échec de la sauvegarde de la partie ! La carte SD est-elle montée et inscriptible ?</string>
 
@@ -189,54 +189,54 @@
 		\n
 		Merci pour les retours d\'utilisation !
 	</string>
-	<string name="about_interface"><![CDATA[
+	<string name="about_interface">
 
-<div><b>Game Settings</b> can be found by pressing your device\'s Menu Button.</div>
+&lt;div&gt;&lt;b&gt;Game Settings&lt;/b&gt; disponible en appuyant sur le Bouton Menu de votre appareil.&lt;/div&gt;
 
-<p>________________</p>
-<h1>Interface Icons</h1>
+&lt;p&gt;________________&lt;/p&gt;
+&lt;h1&gt;Icônes d\'Interface&lt;/h1&gt;
 
-<div><b>The Chest</b><img alt="chest" src="chest.png" /></div>
-<p>Quickslots [Long press the pouches inside to assign items for instant use]</p>
+&lt;div&gt;&lt;b&gt;Le Coffre&lt;/b&gt;&lt;img alt=chest src=chest.png /&gt;&lt;/div&gt;
+&lt;p&gt;Quickslots [Long press the pouches inside to assign items for instant use]&lt;/p&gt;
 
-<div><b>The Hero</b><img alt="hero" src="char_hero.png" /></div>
-<p>Menu [Overview, Quests, Skills &amp; Inventory *]</p>
-<p>* (While in inventory, "press" an item for information &amp; "long press" for more options)</p>
+&lt;div&gt;&lt;b&gt;Le Héro&lt;/b&gt;&lt;img alt=hero src=char_hero.png /&gt;&lt;/div&gt;
+&lt;p&gt;Menu [Vue d\'ensemble, Quêtes, Compétences &amp;amp; Inventaire *]&lt;/p&gt;
+&lt;p&gt;* (Dans l\'inventaire, appuyez sur un objet pour information &amp;amp; un appui long pour plus d\'options)&lt;/p&gt;
 
-<div><b>The Enemy</b><img alt="monster" src="monster.png" /></div>
-<p>Information [Appears during Combat]</p>
-
-
-
-<p>________________</p>
-<h1>Combat</h1>
-
-<p>Actions taken during battle cost AP...</p>
-
-<div><b>Attacking</b> - [3AP] *</div>
-<img alt="attacking" src="doubleattackexample.png" />
-<p>* (Equipping Gear &amp; Using Items may alter AP &amp; usage cost)</p>
-
-<div><b>Using Items</b> - [5AP]</div>
-<div><b>Fleeing</b> - [6AP]</div>
+&lt;div&gt;&lt;b&gt;L\'Ennemi&lt;/b&gt;&lt;img alt=monster src=monster.png /&gt;&lt;/div&gt;
+&lt;p&gt;Information [Apparaît pendant le Combat]&lt;/p&gt;
 
 
 
-<p>________________</p>
-<h1>Advanced Combat</h1>
+&lt;p&gt;________________&lt;/p&gt;
+&lt;h1&gt;Combat&lt;/h1&gt;
 
-<div>During Combat, long press a tile adjacent to the Hero...</div>
+&lt;p&gt;Coût en PA des Actions pendant la bataille...&lt;/p&gt;
 
-<div><b>To Flee</b></div>
-<p>(chosen tile is highlighted - Attack Button changes to Move)</p>
-<img alt="flee" src="flee_example.png" />
-<p>[flee mode activated - Long press enemy to re-enter combat]</p>
+&lt;div&gt;&lt;b&gt;Attaquer&lt;/b&gt; - [3AP] *&lt;/div&gt;
+&lt;img alt=attacking src=doubleattackexample.png /&gt;
+&lt;p&gt;* (L\'Équipement &amp;amp; l\'usage d\'objet peuvent modifier les PA &amp;amp; le coût d\'utilisation)&lt;/p&gt;
 
-<div><b>To Change Targets</b></div>
-<p>(the red target highlight shifts between enemies)</p>
-<p>[the target has been changed]</p>
+&lt;div&gt;&lt;b&gt;Utilisation d\'Objets&lt;/b&gt; - [5AP]&lt;/div&gt;
+&lt;div&gt;&lt;b&gt;Fuite&lt;/b&gt; - [6AP]&lt;/div&gt;
 
-]]></string>
+
+
+&lt;p&gt;________________&lt;/p&gt;
+&lt;h1&gt;Combat Avancé&lt;/h1&gt;
+
+&lt;div&gt;Pendant un Combat, un appui long sur un emplacement proche du Héro...&lt;/div&gt;
+
+&lt;div&gt;&lt;b&gt;Pour Fuir&lt;/b&gt;&lt;/div&gt;
+&lt;p&gt;(l\'emplacement choisi est mit en surbrillance - le Bouton d\'Attaque change pour Déplacement)&lt;/p&gt;
+&lt;img alt=flee src=flee_example.png /&gt;
+&lt;p&gt;[flee mode activated - Long press enemy to re-enter combat]&lt;/p&gt;
+
+&lt;div&gt;&lt;b&gt;Pour Changer de Cible&lt;/b&gt;&lt;/div&gt;
+&lt;p&gt;(le halo rouge passe d\'un ennemi à l\'autre)&lt;/p&gt;
+&lt;p&gt;[la cible a été changée]&lt;/p&gt;
+
+</string>
 	
 	
 	<string name="questlog_includecompleted_prompt">Sélectionner les quêtes à afficher</string>
@@ -559,8 +559,8 @@
 	<string name="skill_longdescription_specialization_2hand">Augmente les dégâts potentiels des armes à deux mains de %1$d %% de leurs dégâts potentiels de base, en plus des avantages donnés par la compétence de style d’armes. Les chances d’attaque des armes à deux mains sont de même augmentées de %2$d %% de leurs chances d’attaque de base.</string>
 	<string name="skill_longdescription_specialization_weapon_shield">Augmente les chances d’attaque et les dégâts potentiels des armes. Les chances d’attaque sont augmentées de %1$d %% de leurs chances d’attaque de base, et les dégâts potentiels sont augmentées de %2$d %% de leurs dégâts potentiels de base.</string>
 
-	<string name="preferences_quickslots_placement">Position d’emplacement rapide</string>
-	<string name="preferences_quickslots_placement_summary">Où placer les emplacements rapides</string>
+	<string name="preferences_quickslots_placement">Position de l\'accès rapide</string>
+	<string name="preferences_quickslots_placement_summary">Où placer les accès rapides</string>
 	<string name="preferences_quickslots_placements_horizontal_center_bottom">Centre bas</string>
 	<string name="preferences_quickslots_placements_vertical_center_left">Milieu gauche</string>
 	<string name="preferences_quickslots_placements_vertical_center_right">Milieu droit</string>
@@ -568,7 +568,7 @@
 	<string name="preferences_quickslots_placements_horizontal_bottom_left">En bas à gauche, le long du bord bas</string>
 	<string name="preferences_quickslots_placements_horizontal_bottom_right">En bas à droite, le long du bord bas</string>
 	<string name="preferences_quickslots_placements_vertical_bottom_right">En bas à droite, le long du bord droit</string>
-	<string name="preferences_ui_show_quickslots_when_toolbox_is_visible_title">Afficher les emplacements rapides lorsque la boîte à outils est ouverte</string>
+	<string name="preferences_ui_show_quickslots_when_toolbox_is_visible_title">Afficher les accès rapides lorsque la boîte à outils est ouverte</string>
 	<string name="preferences_ui_show_quickslots_when_toolbox_is_visible">Afficher les boutons d’emplacement rapide dès que la boîte à outils est ouverte</string>
 	<string name="startscreen_incompatible_savegames">Ceci est une version de développement de la Piste d’Andor. Les sauvegardes de cette version sont incompatibles avec la version stable.</string>
 	<string name="startscreen_non_release_version">Ceci est une préversion de la Piste d’Andor. Les sauvegardes de cette version ne seront peut-être pas compatibles avec la version stable.</string>
