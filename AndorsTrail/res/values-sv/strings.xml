@@ -77,4 +77,141 @@ Svårighetsgrad: %1$s</string>
 
 	<string name="dialog_loot_pickall">Plocka upp allt</string>
 	<string name="dialog_loot_foundgold">"Du hittade %1$d guld. "</string>
+	<string name="dialog_loot_pickedupitem">"Du tog något upp. "</string>
+	<string name="dialog_loot_pickedupitems">"Du tog upp %1$d saker. "</string>
+	<string name="dialog_groundloot_title">Saker</string>
+	<string name="dialog_groundloot_message">"Du hittade något. "</string>
+	<string name="dialog_monsterloot_title">Seger</string>
+	<string name="dialog_monsterloot_message">"Du överlevde sammandrabbningen. "</string>
+	<string name="dialog_monsterloot_gainedexp">"Din erfarenhet ökades med %1$d "</string>
+
+	<string name="monster_difficulty_veryeasy">Väldigt enkelt</string>
+	<string name="monster_difficulty_easy">Enkelt</string>
+	<string name="monster_difficulty_normal">Normalt</string>
+	<string name="monster_difficulty_hard">Svårt</string>
+	<string name="monster_difficulty_veryhard">Väldigt svårt</string>
+	<string name="monster_difficulty_impossible">Omöjligt</string>
+
+	<string name="actorinfo_class">Grupp:</string>
+	<string name="actorinfo_difficulty">Svårighet:</string>
+	<string name="actorinfo_health">Hälsa:</string>
+	<string name="actorinfo_defense">Försvar:</string>
+	<string name="actorinfo_attack">Attack:</string>
+	<string name="actorinfo_basetraits">Bas kampstatistik (utan utrustning och färdigheter)</string>
+	<string name="actorinfo_currenttraits">Kampstatistik (gällande)</string>
+
+	<string name="iteminfo_category"><string name="key_required">En särskild nyckel krävs för att passera.</string> </string>
+	<string name="iteminfo_action_use">Använd</string>
+	<string name="iteminfo_action_equip">Utrusta</string>
+	<string name="startscreen_continue">Fortsätt spelet</string>
+	<string name="startscreen_newgame">Nytt spel</string>
+	<string name="startscreen_newgame_confirm">Du kommer att förlora ditt nuvarande spel och din nuvarande karaktär, är du säker på att du vill påbörja ett nytt spel?</string>
+	<string name="startscreen_about">Om/hjälp</string>
+	<string name="startscreen_enterheroname">Skriv hjältens namn</string>
+	<string name="startscreen_load">Ladda</string>
+
+	<string name="conversation_rewardexp">" [Din erfarenhet ökades med %1$d]"</string>
+	<string name="conversation_rewardgold">" [Du fick %1$d guld]"</string>
+	<string name="conversation_lostgold">" [Du förlorade %1$d guld]"</string>
+	<string name="conversation_rewarditem">" [Du hittade något]"</string>
+	<string name="conversation_rewarditems">" [Du hittade %1$d saker]"</string>
+	<string name="conversation_next">Nästa</string>
+	<string name="conversation_leave">Gå härifrån</string>
+
+	<string name="shop_buy">Köp</string>
+	<string name="shop_sell">Sälj</string>
+	<string name="shop_infoitem">Information</string>
+	<string name="shop_buyitem">Köp (%1$d guld)</string>
+	<string name="shop_sellitem">Sälj (%1$d guld)</string>
+	<string name="shop_yourgold">Du har: %1$d guld</string>
+	<string name="shop_item_bought">%1$s köptes.</string>
+	<string name="shop_item_sold">%1$s såldes.</string>
+
+	<string name="levelup_description">Välkommen till nivå %1$d!</string>
+	<string name="dialog_rest_title">Vila</string>
+	<string name="dialog_rest_confirm_message">Vill du vila dig här?</string>
+	<string name="about_button1">Hjälp</string>
+	<string name="about_button3">Licens</string>
+	<string name="dialog_newversion_title">Välkommen</string>
+	<string name="questlog_queststatus">Status: %1$s</string>
+	<string name="questlog_queststatus_inprogress">Påbörjad</string>
+	<string name="questlog_queststatus_completed">Slutförd</string>
+
+	<string name="preferences_display_category">Vis</string>
+	<string name="preferences_display_fullscreen_title">Helskärm</string>
+	<string name="preferences_display_fullscreen">Visar spelet i fullskärm. (Kräver omstart).</string>
+	<string name="preferences_dialog_category">Bekräftelsesdialoger</string>
+	<string name="preferences_dialog_confirmrest_title">Bekräfta vila</string>
+	<string name="preferences_dialog_confirmrest">Frågar dig om du vill vila dig när du kommer till en säng. Annars, kommer du automatiskt att vila dig.</string>
+	<string name="preferences_dialog_confirmattack_title">Bekräfta attack</string>
+	<string name="preferences_dialog_monsterloot">Välj hur du vill visa utgången av en kamp (guld, erfarenhet, byte).</string>
+	<string name="preferences_combat_category">Kamp</string>
+	<string name="preferences_combat_speed_title">Kamphastighet</string>
+	<string name="preferences_combat_speed">Bestämmer hur snabbt monstren attackerar.</string>
+
+	<string name="preferences_dialog_monsterloot_title">Vis monstrens byte</string>
+	<string name="preferences_display_loot_toast">Vis kort meddelande</string>
+	<string name="preferences_display_loot_toast_on_items">Vis meddelande bara om byte hittas</string>
+	<string name="preferences_display_loot_never">Vis inte</string>
+
+	<string name="preferences_attackspeed_instant">Omedelbar (ingen animation)</string>
+	<string name="preferences_attackspeed_fast">Snabb</string>
+	<string name="preferences_attackspeed_normal">Normal</string>
+	<string name="preferences_attackspeed_slow">Långsam</string>
+
+	<string name="preferences_movement_category">Rörelse</string>
+	<string name="preferences_display_scaling_factor">Spelet visar allting större.</string>
+	<string name="preferences_display_scaling_factor_normal">Normal storlek</string>
+	<string name="preferences_display_scaling_factor_50_percent_larger">1.5x storlek</string>
+	<string name="preferences_display_scaling_factor_double">Dubbelstorlek</string>
+
+	<string name="preferences_movement_dpad_positions_lower_right">Nere till höger</string>
+	<string name="preferences_movement_dpad_positions_lower_left">Nere till vänster</string>
+	<string name="preferences_movement_dpad_positions_center_bottom">I mitten nere</string>
+	<string name="preferences_movement_dpad_positions_center_left">I mitten till vänster</string>
+	<string name="preferences_movement_dpad_positions_center_right">I mitten till höger</string>
+	<string name="preferences_movement_dpad_positions_upper_left">Uppe till vänster</string>
+	<string name="preferences_movement_dpad_positions_upper_right">Uppe till höger</string>
+	<string name="preferences_movement_dpad_positions_center_top">I mitten uppe</string>
+
+	<string name="bulkselection_totalcost_buy">Totala kostnaden: %1$d guld</string>
+	<string name="bulkselection_totalcost_sell">Totala kostnaden: %1$d guld</string>
+	<string name="bulkselection_select_all">Allt</string>
+	<string name="bulkselection_sell_confirmation_title">Är du säker?</string>
+	<string name="bulkselection_sell_confirmation">Är du säker på att du vill sälja %1$s? Detta objekt är %2$s och det är inte säkert att du kan få det tillbaka.</string>
+
+	<string name="skill_title_weapon_chance">Vapenprecision</string>
+	<string name="skill_title_barter">Handlare</string>
+	<string name="skill_title_dodge">Vighet</string>
+	<string name="skill_title_barkskin">Barkhud</string>
+	<string name="skill_title_speed">Kamphastighet</string>
+	<string name="skill_title_coinfinder">Skattjägare</string>
+	<string name="skill_title_cleave">Klyva</string>
+	<string name="skill_title_eater">Likätare</string>
+	<string name="skill_title_evasion">Smitare</string>
+	<string name="skill_title_regeneration">Förnyelse</string>
+	<string name="skill_title_resistance_mental">Starkt Sinne</string>
+	<string name="skill_title_resistance_physical_capacity">Uthållig Kropp</string>
+	<string name="skill_title_resistance_blood_disorder">Rent Blod</string>
+
+	<string name="skill_shortdescription_coinfinder">Ökade chanser för att hitta guld</string>
+	<string name="skill_shortdescription_evasion">Ökade chanser för att flykta</string>
+	<string name="skill_shortdescription_magicfinder">Ökade chanser för att hitta magiska objekt</string>
+	<string name="skill_shortdescription_resistance_mental">Motståndskraft emot psykiska åkommor</string>
+	<string name="skill_shortdescription_resistance_physical_capacity">Motståndskraft emot fysiska åkommor</string>
+	<string name="skill_shortdescription_resistance_blood_disorder">Motståndskraft emot blodsjukdomar</string>
+
+	<string name="skill_current_level">Nuvarande nivå: %1$d</string>
+	<string name="skill_current_level_with_maximum">Nuvarande nivå: %1$d / %2$d</string>
+	<string name="skill_prerequisite_other_skill">För att öka denna färdighet, behöver du ha minst nivå %1$d i färdigheten %2$s.</string>
+	<string name="skill_prerequisite_level">För att öka denna färdighet, behöver du vara på minst nivå %1$d.</string>
+	<string name="skill_number_of_increases_one">Du får välja en färdighet att öka.</string>
+	<string name="skill_number_of_increases_several">Du får välja %1$d färdigheter att öka.</string>
+	<string name="levelup_adds_new_skillpoint">Denna nivå ger dig också en ny färdighetspoäng att använda!</string>
+
+	<string name="iteminfo_displaytypes_ordinary">Vanlig</string>
+	<string name="iteminfo_displaytypes_legendary">Legendarisk</string>
+	<string name="iteminfo_displaytypes_extraordinary">Sällsynt</string>
+	<string name="iteminfo_displaytypes_rare">Ovanlig</string>
+
 	</resources>
