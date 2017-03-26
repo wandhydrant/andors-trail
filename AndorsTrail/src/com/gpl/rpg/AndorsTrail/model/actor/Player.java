@@ -171,10 +171,8 @@ public final class Player extends Actor {
 		return v;
 	}
 	private static final int EXP_base = 55;
-	private static final int EXP_D = 400;
-	private static final int EXP_powbase = 2;
 	private static int getRequiredExperienceForNextLevel(int currentLevel) {
-		return (int) (EXP_base * Math.pow(currentLevel, EXP_powbase + currentLevel/EXP_D));
+		return (int) (EXP_base * currentLevel * currentLevel);
 	}
 
 	public boolean canLevelup() {
