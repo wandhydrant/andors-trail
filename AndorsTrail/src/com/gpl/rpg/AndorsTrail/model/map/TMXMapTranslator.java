@@ -220,13 +220,19 @@ public final class TMXMapTranslator {
 	private static final String LAYERNAME_OBJECTS = "objects";
 	private static final String LAYERNAME_ABOVE = "above";
 	private static final String LAYERNAME_WALKABLE = "walkable";
+	private static final String PROPNAME_FILTER = "colorfilter";
 	private static final SetOfLayerNames defaultLayerNames = new SetOfLayerNames(LAYERNAME_GROUND, LAYERNAME_OBJECTS, LAYERNAME_ABOVE, LAYERNAME_WALKABLE);
 
 	private static LayeredTileMap transformMap(TMXLayerMap map, TileCache tileCache) {
 		final Size mapSize = new Size(map.width, map.height);
-		String colorFilter = null;
+		LayeredTileMap.ColorFilterId colorFilter = LayeredTileMap.ColorFilterId.none;
 		for (TMXProperty prop : map.properties) {
-			if (prop.name.equalsIgnoreCase("colorfilter")) colorFilter = prop.value;
+			if (prop.name.equalsIgnoreCase(PROPNAME_FILTER)) {
+				String filterId = prop.value;
+				if (filterId != null) {
+					colorFilter = LayeredTileMap.ColorFilterId.valueOf(filterId);
+				}
+			}
 		}
 		HashSet<Integer> usedTileIDs = new HashSet<Integer>();
 		HashMap<String, TMXLayer> layersPerLayerName = new HashMap<String, TMXLayer>();
@@ -376,7 +382,7 @@ public final class TMXMapTranslator {
 		if (srcLayer.layoutHash == null) return;
 		digest.update(srcLayer.layoutHash);
 	}
-
+	
 	private static boolean getTile(final TMXLayerMap map, final int gid, final Tile dest) {
 		for(int i = map.tileSets.length - 1; i >= 0; --i) {
 			TMXTileSet ts = map.tileSets[i];

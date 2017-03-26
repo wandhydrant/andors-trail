@@ -47,7 +47,9 @@ public final class MapSection {
 		}
 	}
 
-	public String calculateHash() {
-		return ByteUtils.toHexString(layoutHash, 4);
+	public String calculateHash(String filter) {
+		byte[] hash = layoutHash.clone();
+		ByteUtils.xorArray(hash, filter.getBytes());
+		return ByteUtils.toHexString(hash, 4);
 	}
 }

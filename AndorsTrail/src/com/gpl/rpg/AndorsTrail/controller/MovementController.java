@@ -301,6 +301,7 @@ public final class MovementController implements TimedMessageTask.Callback {
 
 	private void cacheCurrentMapData(final Resources res, final PredefinedMap nextMap) {
 		LayeredTileMap mapTiles = TMXMapTranslator.readLayeredTileMap(res, world.tileManager.tileCache, nextMap);
+		mapTiles.changeColorFilter(nextMap.currentColorFilter);
 		TileCollection cachedTiles = world.tileManager.loadTilesFor(nextMap, mapTiles, world, res);
 		world.model.currentTileMap = mapTiles;
 		world.tileManager.currentMapTiles = cachedTiles;

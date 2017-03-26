@@ -188,6 +188,13 @@ public final class MapController {
 				hasUpdated = true;
 			}
 		}
+		if (map.currentColorFilter != null) {
+			LayeredTileMap.ColorFilterId filter = LayeredTileMap.ColorFilterId.valueOf(map.currentColorFilter);
+			if (filter != tileMap.colorFilter) {
+				tileMap.changeColorFilter(filter);
+				hasUpdated = true;
+			}
+		}
 		map.lastSeenLayoutHash = tileMap.getCurrentLayoutHash();
 		return hasUpdated;
 	}

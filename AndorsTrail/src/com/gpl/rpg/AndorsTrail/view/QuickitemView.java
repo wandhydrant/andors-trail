@@ -123,7 +123,7 @@ public final class QuickitemView extends LinearLayout implements OnClickListener
 
 	public void registerForContextMenu(MainActivity mainActivity) {
 		for(QuickButton item: buttons)
-			mainActivity.registerForContextMenu(item);
+			mainActivity.registerForLongClick(item);
 	}
 
 	public void setPosition(AndorsTrailPreferences preferences) {

@@ -26,6 +26,12 @@ public final class SkillListAdapter extends ArrayAdapter<SkillInfo> {
 		this.player = player;
 	}
 
+	public SkillListAdapter(Context context, Collection<SkillInfo> skills, Player player, int category) {
+		super(context, 0, filterNondisplayedSkills(skills, player, category-1));
+		this.r = context.getResources();
+		this.player = player;
+	}
+
 	private static List<SkillInfo> filterNondisplayedSkills(Collection<SkillInfo> skills, Player player) {
 		final ArrayList<SkillInfo> result = new ArrayList<SkillInfo>();
 		for (SkillInfo skill : skills) {
@@ -39,7 +45,24 @@ public final class SkillListAdapter extends ArrayAdapter<SkillInfo> {
 		});
 		return result;
 	}
-
+	private static List<SkillInfo> filterNondisplayedSkills(Collection<SkillInfo> skills, Player player, int category) {
+		final ArrayList<SkillInfo> result = new ArrayList<SkillInfo>();
+		for (SkillInfo skill : skills) {
+			if (shouldDisplaySkill(skill, player)){
+				if(category <0)
+					result.add(skill);
+				else if(skill.categoryType.equals(SkillCollection.SkillCategory.values()[category+1]))
+					result.add(skill);
+			}
+		}
+		Collections.sort(result, new Comparator<SkillInfo>() {
+			@Override
+			public int compare(SkillInfo a, SkillInfo b) {
+				return a.id.ordinal() - b.id.ordinal();
+			}
+		});
+		return result;
+	}
 	private static boolean shouldDisplaySkill(SkillInfo skill, Player player) {
 		if (player.hasSkill(skill.id)) return true;
 		if (skill.levelupVisibility == SkillInfo.LevelUpType.alwaysShown) return true;
@@ -133,5 +156,60 @@ public final class SkillListAdapter extends ArrayAdapter<SkillInfo> {
 		default:
 			return -1;
 		}
+	}
+
+	public void sortByName(){
+		Comparator<SkillInfo> comparatorName = new Comparator<SkillInfo>() {
+			@Override
+			public int compare(SkillInfo item1, SkillInfo item2) {
+				return  r.getString( SkillInfoActivity.getSkillTitleResourceID(item1.id)).compareTo(
+						r.getString( SkillInfoActivity.getSkillTitleResourceID(item2.id)));
+			}
+		};
+		this.sort(comparatorName);
+	}
+
+	public void sortByPoints(){
+		Comparator<SkillInfo> comparatorPoints = new Comparator<SkillInfo>() {
+			@Override
+			public int compare(SkillInfo item1, SkillInfo item2) {
+				if(player.getSkillLevel(item1.id) > player.getSkillLevel(item2.id))
+					return -1;
+				else if(player.getSkillLevel(item1.id) < player.getSkillLevel(item2.id))
+					return 1;
+				else
+					return  r.getString( SkillInfoActivity.getSkillTitleResourceID(item1.id)).compareTo(
+							r.getString( SkillInfoActivity.getSkillTitleResourceID(item2.id)));
+			}
+		};
+		this.sort(comparatorPoints);
+	}
+
+	public void sortByUnlocked(){
+		Comparator<SkillInfo> comparatorUnlocked = new Comparator<SkillInfo>() {
+			@Override
+			public int compare(SkillInfo item1, SkillInfo item2) {
+				// First compare by whether requirements are met
+				if(item1.canLevelUpSkillTo(player, player.getSkillLevel(item1.id) + 1)
+						&& !(item2.canLevelUpSkillTo(player, player.getSkillLevel(item2.id) +1)))
+					return -1;
+				else if(!(item1.canLevelUpSkillTo(player, player.getSkillLevel(item1.id) +1))
+						&& item2.canLevelUpSkillTo(player, player.getSkillLevel(item2.id) +1))
+					return 1;
+				else { // Then compare by number of requirements (complexity)
+					if(item1.levelupRequirements == null)
+						return -1;
+					if(item2.levelupRequirements == null)
+						return 1;
+					if(item1.levelupRequirements.length< item2.levelupRequirements.length)
+						return -1;
+					else if(item1.levelupRequirements.length > item2.levelupRequirements.length)
+						return 1;
+					return r.getString(SkillInfoActivity.getSkillTitleResourceID(item1.id)).compareTo(
+							r.getString(SkillInfoActivity.getSkillTitleResourceID(item2.id)));
+				}
+			}
+		};
+		this.sort(comparatorUnlocked);
 	}
 }

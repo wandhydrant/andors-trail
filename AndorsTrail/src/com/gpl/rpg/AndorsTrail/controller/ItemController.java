@@ -210,6 +210,7 @@ public final class ItemController {
 	public void pickupAll(Loot loot) {
 		world.model.player.inventory.add(loot.items);
 		consumeNonItemLoot(loot);
+		checkQuickslotItemLooted(loot.items);
 		loot.clear();
 	}
 	public void pickupAll(Iterable<Loot> lootBags) {
@@ -352,4 +353,18 @@ public final class ItemController {
 		world.model.player.inventory.quickitem[quickSlotId] = itemType;
 		quickSlotListeners.onQuickSlotChanged(quickSlotId);
 	}
+	
+	private void checkQuickslotItemLooted(ItemContainer items) {
+		for (ItemEntry item : items.items) {
+			if (item.itemType.isUsable()) {
+				for (int i = 0; i < world.model.player.inventory.quickitem.length; i++) {
+					if (item.itemType == world.model.player.inventory.quickitem[i]) {
+						quickSlotListeners.onQuickSlotChanged(i);
+						
+					}
+				}
+			}
+		}
+	}
+
 }
