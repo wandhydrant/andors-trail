@@ -144,15 +144,16 @@ public final class ConversationController {
 		controllers.mapController.activateMapObjectGroup(map, mapObjectGroupID);
 	}
 
-	private void spawnAll(String mapName, String monsterTypeSpawnGroup) {
+	private void spawnAll(String mapName, String areaId) {
 		PredefinedMap map = findMapForScriptEffect(mapName);
 		LayeredTileMap tileMap = null;
 		if (map == world.model.currentMap) {
 			tileMap = world.model.currentTileMap;
 		}
 		for (MonsterSpawnArea area : map.spawnAreas) {
-			if (!area.areaID.equals(monsterTypeSpawnGroup)) continue;
+			if (!area.areaID.equals(areaId)) continue;
 			controllers.monsterSpawnController.activateSpawnArea(map, tileMap, area, true);
+			controllers.effectController.asyncUpdateArea(area.area);
 		}
 	}
 
@@ -161,6 +162,7 @@ public final class ConversationController {
 		for (MonsterSpawnArea area : map.spawnAreas) {
 			if (!area.areaID.equals(areaID)) continue;
 			controllers.monsterSpawnController.deactivateSpawnArea(area, removeAllMonsters);
+			if (removeAllMonsters) controllers.effectController.asyncUpdateArea(area.area);
 		}
 	}
 

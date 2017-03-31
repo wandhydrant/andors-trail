@@ -263,6 +263,10 @@ public final class VisualEffectController {
 			return -1;
 		}
 	}
+	
+	public void asyncUpdateArea(CoordRect area) {
+		visualEffectFrameListeners.onAsyncAreaUpdate(area);
+	}
 
 	
 }

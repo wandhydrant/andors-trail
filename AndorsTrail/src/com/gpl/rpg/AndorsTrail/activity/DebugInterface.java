@@ -11,6 +11,7 @@ import com.gpl.rpg.AndorsTrail.AndorsTrailApplication;
 import com.gpl.rpg.AndorsTrail.R;
 import com.gpl.rpg.AndorsTrail.context.ControllerContext;
 import com.gpl.rpg.AndorsTrail.context.WorldContext;
+import com.gpl.rpg.AndorsTrail.model.item.ItemType;
 import com.gpl.rpg.AndorsTrail.model.map.PredefinedMap;
 
 public final class DebugInterface {
@@ -46,25 +47,16 @@ public final class DebugInterface {
 					showToast(mainActivity, "DEBUG: damagePotential=1", Toast.LENGTH_SHORT);
 				}
 			})*/
-			/*,new DebugButton("items", new OnClickListener() {
+			,new DebugButton("items", new OnClickListener() {
 				@Override
 				public void onClick(View arg0) {
-					world.model.player.inventory.addItem(world.itemTypes.getItemType("elytharan_redeemer"));
-					world.model.player.inventory.addItem(world.itemTypes.getItemType("ring_shadow0"));
-					world.model.player.inventory.addItem(world.itemTypes.getItemType("shadow_slayer"));
-					world.model.player.inventory.addItem(world.itemTypes.getItemType("pot_blind_rage"), 10);
-					world.model.player.inventory.addItem(world.itemTypes.getItemType("clouded_rage"));
-					world.model.player.inventory.addItem(world.itemTypes.getItemType("pot_fatigue_restore"), 20);
-					world.model.player.inventory.addItem(world.itemTypes.getItemType("quickdagger1"));
-					world.model.player.inventory.addItem(world.itemTypes.getItemType("bonemeal_potion"));
-					world.model.player.inventory.addItem(world.itemTypes.getItemType("calomyran_secrets"));
-					world.model.player.inventory.addItem(world.itemTypes.getItemType("tail_caverat"));
-					world.model.player.inventory.addItem(world.itemTypes.getItemType("bwm_leather_cap"));
-					world.model.player.inventory.addItem(world.itemTypes.getItemType("chaosreaper"));
-
+					for (ItemType item : world.itemTypes.UNITTEST_getAllItemTypes().values()) {
+						world.model.player.inventory.addItem(item, 10);
+					}
+					world.model.player.inventory.gold += 50000;
 					showToast(mainActivity, "DEBUG: added items", Toast.LENGTH_SHORT);
 				}
-			})*/
+			})
 			/*,new DebugButton("prim", new OnClickListener() {
 				@Override
 				public void onClick(View arg0) {

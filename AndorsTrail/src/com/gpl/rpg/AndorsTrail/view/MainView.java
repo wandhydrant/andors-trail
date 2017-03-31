@@ -210,7 +210,7 @@ public final class MainView extends SurfaceView
 		SurfaceChanged, MapChanged, PlayerMoved, MapScrolling, FilterAnimation
 	}
 	private static enum RedrawAreaDebugReason {
-		MonsterMoved, MonsterKilled, EffectCompleted
+		MonsterMoved, MonsterKilled, EffectCompleted, AsyncRequest
 	}
 	private static enum RedrawTileDebugReason {
 		SelectionRemoved, SelectionAdded, Bag
@@ -851,6 +851,11 @@ public final class MainView extends SurfaceView
 	@Override
 	public void onSpriteMoveCompleted(SpriteMoveAnimation animation) {
 		redrawArea(CoordRect.getBoundingRect(animation.origin, animation.destination, animation.actor.tileSize), RedrawAreaDebugReason.EffectCompleted);
+	}
+	
+	@Override
+	public void onAsyncAreaUpdate(CoordRect area) {
+		redrawArea(area, RedrawAreaDebugReason.AsyncRequest);
 	}
 
 	@Override
