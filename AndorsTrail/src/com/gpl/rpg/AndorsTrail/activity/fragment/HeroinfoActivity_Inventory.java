@@ -318,7 +318,7 @@ public final class HeroinfoActivity_Inventory extends Fragment {
 
 
 	private ItemType getSelectedItemType(AdapterContextMenuInfo info) {
-		return inventoryListAdapter.getItem(info.position).itemType;
+		return getSelectedItemType(info.position);
 	}
 	@Override
 	public boolean onContextItemSelected(MenuItem item) {
