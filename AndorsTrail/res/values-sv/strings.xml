@@ -139,7 +139,7 @@ Svårighetsgrad: %1$s</string>
 
 	<string name="preferences_display_category">Vis</string>
 	<string name="preferences_display_fullscreen_title">Helskärm</string>
-	<string name="preferences_display_fullscreen">Visar spelet i fullskärm. (Kräver omstart).</string>
+	<string name="preferences_display_fullscreen">Visar spelet i fullskärm. (Kräver omstart)</string>
 	<string name="preferences_dialog_category">Bekräftelsesdialoger</string>
 	<string name="preferences_dialog_confirmrest_title">Bekräfta vila</string>
 	<string name="preferences_dialog_confirmrest">Frågar dig om du vill vila dig när du kommer till en säng. Annars, kommer du automatiskt att vila dig.</string>
@@ -213,5 +213,75 @@ Svårighetsgrad: %1$s</string>
 	<string name="iteminfo_displaytypes_legendary">Legendarisk</string>
 	<string name="iteminfo_displaytypes_extraordinary">Sällsynt</string>
 	<string name="iteminfo_displaytypes_rare">Ovanlig</string>
+
+	<string name="preferences_movementmethod_title">Rörelsessätt</string>
+	<string name="preferences_movementmethod">Rörelsessätt och hur hinder hanteras.</string>
+	<string name="preferences_movementmethods_straight">Rakt (ursprunglig)</string>
+	<string name="preferences_movementmethods_avoid">Undvik hinder</string>
+
+
+	<string name="iteminfo_effect_chance_of">%1$s chans för %2$s</string>
+	<string name="iteminfo_effect_duration">(%1$d omgångar)</string>
+
+	<string name="iteminfo_effect_works_when_used">Vid användning</string>
+	<string name="actorconditioninfo_effect_every_round">Varje omgång</string>
+	<string name="skill_title_more_exp">Begåvad</string>
+	<string name="skill_title_lower_exploss">Mästare i Misslyckande</string>
+	<string name="skill_title_magicfinder">Magiupptäckare</string>
+	<string name="skill_shortdescription_barter">Bättre priser i butikerna</string>
+	<string name="actorcondition_categories_mental">Psykiskt</string>
+	<string name="actorcondition_categories_physical">Fysiskt</string>
+	<string name="actorcondition_categories_blood">Blodsjukdom</string>
+
+	<string name="menu_save_saving_not_allowed_in_combat">Spelet kan inte sparas medan kamp pågår.</string>
+
+	<string name="skill_title_shadow_bless">Skuggans mörka välsignelse</string>
+	<string name="inventory_movetop">Flytta överst</string>
+	<string name="inventory_movebottom">Flytta nederst</string>
+	<string name="skill_title_crit1">Inre blödning</string>
+	<string name="skill_shortdescription_crit1">Möjlighet för inre blödning</string>
+	<string name="skill_title_crit2">Benbrott</string>
+	<string name="skill_shortdescription_crit2">Möjlighet för benbrott</string>
+	<string name="skill_title_rejuvenation">Förnyelse</string>
+	<string name="skill_title_concussion">Hjärnskakning</string>
+	<string name="skill_shortdescription_concussion">Möjlighet för hjärnskakning</string>
+	<string name="about_button4">Om</string>
+
+	<string name="menu_button_worldmap">Karta</string>
+	<string name="menu_button_worldmap_failed">Kartan kan inte visas.</string>
+	<string name="display_worldmap_not_available">Kartan kan inte visas över detta område.</string>
+	<string name="display_worldmap_title">Karta</string>
+
+	<string name="combat_result_monstermoved">%1$s flyttar sig.</string>
+	<string name="skill_title_weapon_prof_dagger">Dolkskicklighet</string>
+	<string name="skill_title_weapon_prof_axe">Yxskicklighet</string>
+	<string name="skill_title_weapon_prof_blunt">Klubbvapenskicklighet</string>
+	<string name="skill_title_weapon_prof_unarmed">Obeväpnad kamp</string>
+	<string name="skill_title_armor_prof_shield">Sköldskicklighet</string>
+	<string name="skill_title_armor_prof_unarmored">Oväpnad kamp</string>
+	<string name="skill_title_armor_prof_light">Skicklighet i lättrustning</string>
+	<string name="skill_title_armor_prof_heavy">Skicklighet i tungrustning</string>
+	<string name="skill_title_fightstyle_weapon_shield">Kampstil: Vapen och sköld</string>
+	<string name="skill_title_specialization_weapon_shield">Specialisering: Vapen och sköld</string>
+
+	<string name="skill_shortdescription_weapon_prof_dagger">Bättre på att kämpa med dolkar</string>
+	<string name="skill_shortdescription_weapon_prof_axe">Bättre på att kämpa med yxor</string>
+	<string name="skill_shortdescription_weapon_prof_blunt">Bättre på att kämpa med klubbor och liknande vapen</string>
+	<string name="skill_shortdescription_weapon_prof_unarmed">Bättre på att kämpa utan vapen</string>
+	<string name="skill_shortdescription_armor_prof_shield">Bättre på att utnyttja sköldar</string>
+	<string name="skill_shortdescription_armor_prof_unarmored">Bättre på att kämpa utan rustning</string>
+	<string name="skill_shortdescription_armor_prof_light">Bättre på att utnyttja lätt vapenrustning</string>
+	<string name="skill_shortdescription_armor_prof_heavy">Bättre på att utnyttja tung vapenrustning</string>
+	<string name="skill_shortdescription_fightstyle_dualwield">Bär två vapen samtidigt</string>
+	<string name="skill_shortdescription_fightstyle_2hand">Bättre på att använda vapen som kräver två händer</string>
+	<string name="skill_shortdescription_fightstyle_weapon_shield">Bättre på att kämpa med vapen och sköld</string>
+	<string name="skill_shortdescription_specialization_weapon_shield">Expert på att kämpa med vapen och sköld</string>
+
+	<string name="preferences_quickslots_placements_horizontal_center_bottom">Mitten nere</string>
+	<string name="preferences_quickslots_placements_vertical_center_left">Mitten till vänster</string>
+	<string name="preferences_quickslots_placements_vertical_center_right">Mitten till höger</string>
+	<string name="heroinfo_gamestats">Spelstatistik</string>
+	<string name="heroinfo_gamestats_visited_maps">Besökta ställen</string>
+	<string name="heroinfo_gamestats_name_and_qty">%1$s (%2$d)</string>
 
 	</resources>
