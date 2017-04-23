@@ -388,4 +388,67 @@
 	<string name="skill_longdescription_crit1">При каждом критическом ударе, есть %1$d %% шанс, что он вызовет внутренние кровотечение у цели. Внутреннее кровотечение сильно снижает боевые способности, что делает цель менее способной к удачному завершению своих атак.</string>
 	<string name="skill_title_crit2">Перелом</string>
 	<string name="skill_shortdescription_crit2">Вероятность перелома костей</string>
+	<string name="skill_longdescription_crit2">При каждом критическом ударе, есть %1$d %% шанс, сломать цели несколько костей. Переломы сильно снижают возможность цели защищать себя.</string>
+	<string name="skill_title_rejuvenation">Восстановление</string>
+	<string name="skill_longdescription_rejuvenation">Каждый раунд (6 секунд), есть %1$d %% шанс, что один из негативных эффектов будет уменьшен на один шаг. Это относится ко всем временным эффектам влияющим на тело; психику, например, Ошеломление; физическим воздействиям, например, Усталость; заражения крови, например, отравление.</string>
+	<string name="skill_title_taunt">Насмешка</string>
+	<string name="skill_shortdescription_taunt">Атакующий теряет ОД при промахе</string>
+	<string name="skill_longdescription_taunt">Когда атакующий промахивается, есть %1$d %% шанс, что он потеряет %2$d очка движения (ОД). Это относится ко всем атакам ближнего боя.</string>
+	<string name="skill_title_concussion">Контузия</string>
+	<string name="skill_shortdescription_concussion">Шанс вызвать контузию</string>
+	<string name="skill_longdescription_concussion">Во время атаки цели чей шанс блока (ШБ), по крайней мере на %1$d меньше вашего шанса атаки (ША), есть %2$d %% шанс, что цель получит контузию. Контузия сильно снижает боевые способности, что делает цель менее способной к удачному завершению своих атак.</string>
+
+	<string name="about_button4">О игре</string>
+
+	<string name="preferences_ui_category">Интерфейс</string>
+	<string name="preferences_ui_enable_animations_title">Включить анимации</string>
+	<string name="preferences_ui_enable_animations">Использовать анимацию разных элементов интерфейса, например строка боя.</string>
+	<string name="menu_button_worldmap">Карта</string>
+	<string name="display_worldmap_not_available">Карта не может быть показана из этой локации.</string>
+	<string name="display_worldmap_title">Карта</string>
+
+	<string name="iteminfo_effect_weapon_attack_cost">Атака стоит: %1$d ОД</string>
+	<string name="iteminfo_effect_increase_attack_cost">Увеличивает цену атаки на %1$d ОД</string>
+	<string name="iteminfo_effect_decrease_attack_cost">Уменьшает цену атаки на %1$d ОД</string>
+	<string name="iteminfo_effect_weapon_attack_chance">Шанс атаки: %1$d</string>
+	<string name="iteminfo_effect_increase_attack_chance">Увеличивает шанс атаки на %1$d</string>
+	<string name="iteminfo_effect_decrease_attack_chance">Уменьшает шанс атаки на %1$d</string>
+	<string name="iteminfo_effect_weapon_attack_damage">Сила атаки: %1$d</string>
+	<string name="iteminfo_effect_weapon_attack_damage_minmax">Сила атаки: %1$d-%2$d</string>
+	<string name="iteminfo_effect_increase_attack_damage">Увеличивает силу атаки на %1$d</string>
+	<string name="iteminfo_effect_increase_attack_damage_minmax">Увеличивает силу атаки на %1$d-%2$d</string>
+	<string name="iteminfo_effect_decrease_attack_damage">Уменьшает силу атаки на %1$d</string>
+	<string name="iteminfo_effect_decrease_attack_damage_minmax">Уменьшает силу атаки на %1$d-%2$d</string>
+	<string name="iteminfo_effect_increase_critical_skill">Увеличивает шанс критического удара на %1$d</string>
+	<string name="iteminfo_effect_decrease_critical_skill">Уменьшает шанс критического удара на %1$d</string>
+	<string name="iteminfo_effect_critical_multiplier">Увеличивает критический множитель в %1$.1f раза</string>
+	<string name="iteminfo_effect_increase_block_chance">Увеличивает шанс блока на %1$d</string>
+	<string name="iteminfo_effect_decrease_block_chance">Уменьшает шанс блока на %1$d</string>
+	<string name="iteminfo_effect_increase_damage_resistance">Увеличивает сопротивление повреждениям на %1$d</string>
+	<string name="iteminfo_effect_decrease_damage_resistance">Уменьшает сопротивление повреждениям на %1$d</string>
+	<string name="iteminfo_effect_increase_use_cost">Увеличивает необходимое количество ОД для использования предмета в бою на %1$d ОД</string>
+	<string name="iteminfo_effect_decrease_use_cost">Уменьшает необходимое количество ОД для использования предметов в бою на %1$d ОД</string>
+	<string name="iteminfo_effect_increase_reequip_cost">Увеличивает необходимое количество ОД для одевания предметов в бою на %1$d ОД</string>
+	<string name="iteminfo_effect_decrease_reequip_cost">Уменьшает необходимое количество ОД для одевания предметов в бою на %1$d ОД</string>
+
+	<string name="loadsave_save_overwrite_confirmation_all">Вы точно хотите перезаписать это сохранение?</string>
+	<string name="loadsave_save_overwrite_confirmation_slot">(слот %1$d)</string>
+	<string name="preferences_display_overwrite_savegame_entries_always_confirm">Всегда показывать диалог подтверждения</string>
+	<string name="preferences_display_overwrite_savegame_entries_confirm_overwrite">Показывать только при перезаписи игроком с другим именем</string>
+	<string name="preferences_display_overwrite_savegame_entries_never_confirm">Не показывать диалог подтверждения</string>
+	<string name="preferences_dialog_overwrite_savegame_title">Перезаписать сохранение</string>
+	<string name="preferences_dialog_overwrite_savegame">Настройка диалога подтверждения при попытке перезаписать сохранение.</string>
+
+	<string name="heroinfo_reequip_cost">Цена переодевания (ОД):</string>
+	<string name="heroinfo_useitem_cost">Цена использования предмета (ОД):</string>
+	<string name="combat_result_monstermoved">%1$s действий.</string>
+	<string name="combat_log_title">Лог боя</string>
+	<string name="localize_resources_from_mo_filename">ru.mo</string>
+	<string name="conversation_reward_quest_finished">[Квест завершен: \\\"%1$s\\\"]</string>
+	<string name="conversation_reward_quest_updated">[Квест обновлен: \\\"%1$s\\\"]</string>
+
+	<string name="skill_title_weapon_prof_dagger">Кинжалы</string>
+	<string name="skill_title_weapon_prof_1hsword">Одноручные мечи</string>
+	<string name="skill_title_weapon_prof_2hsword">Двуручные мечи</string>
+	<string name="skill_title_weapon_prof_axe">Секиры</string>
 	</resources>
