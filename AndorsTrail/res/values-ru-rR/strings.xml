@@ -335,4 +335,15 @@
 	<string name="inventory_equip_offhand">Надеть (в левую руку)</string>
 
 	<string name="skill_longdescription_regeneration">Дает +%1$d очко здоровья (ОЗ) каждый раунд на каждый уровень навыка.</string>
+	<string name="skill_longdescription_lower_exploss">Уменьшает потери очков опыта при смерти героя на %1$d %% на каждый уровень навыка (процент существующего значения, а не процентных пунктов). После %2$d уровней навыка исчезают все потери опыта, вызванные смертью.</string>
+	<string name="skill_longdescription_magicfinder">Увеличивает шансы найти неординарные предметы на %1$d %% на каждый уровень навыка.</string>
+	<string name="skill_longdescription_resistance_mental">Снижает шансы пострадать от психических воздействий на %1$d %% на каждый уровень навыка, но не более %2$d %%. К таким воздействиям относятся, например, ошеломление или слабость.</string>
+	<string name="skill_longdescription_resistance_physical_capacity">Снижает шансы пострадать от физических воздействий на %1$d %% на каждый уровень навыка, но не более %2$d %%. К таким воздействиям относится, например, усталость.</string>
+	<string name="skill_longdescription_resistance_blood_disorder">Снижает шансы пострадать от воздействий на кровь на %1$d %% на каждый уровень навыка, но не более %2$d %%. К таким воздействиям относятся, например, яд или кровотечение.</string>
+
+	<string name="skillinfo_action_levelup">Новый уровень</string>
+	<string name="skill_current_level">Текущий уровень: %1$d</string>
+	<string name="skill_current_level_with_maximum">Текущий уровень: %1$d / %2$d</string>
+	<string name="skill_prerequisite_other_skill">Чтобы повысить уровень этого навыка вам нужно иметь уровень не менее %1$d навыка %2$s.</string>
+	<string name="skill_prerequisite_level">Чтобы повысить уровень этого навыка вам нужно иметь уровень опыта не менее %1$d.</string>
 	</resources>
