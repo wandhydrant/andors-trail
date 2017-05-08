@@ -265,7 +265,7 @@
 	<string name="bulkselection_totalcost_sell">Сумма продажи: %1$d золота</string>
 	<string name="bulkselection_select_all">Всё</string>
 	<string name="bulkselection_sell_confirmation_title">Вы уверены?</string>
-	<string name="bulkselection_sell_confirmation">Вы уверены, что хотите продать %1$s? Этот предмет %2$s вы не сможете его вернуть.</string>
+	<string name="bulkselection_sell_confirmation">Вы уверены, что хотите продать %1$s? Это %2$s предмет и возможно, вам не удастся найти его снова.</string>
 
 	<string name="skill_title_weapon_chance">Точность оружия</string>
 	<string name="about_contents1">" Добро пожаловать в След Эндора, RPG с открытым исходным кодом на Android.&lt;br /&gt; &lt;br /&gt; &lt;a href=http://andorstrail.com Форум игры andorstrail.com для вопросов и обсуждения.&lt;/a&gt;&lt;br /&gt; &lt;br /&gt; &lt;a href=http://andorstrail.com/wiki&gt;Вики по миру Andor\\\'s Trail. &lt;/a&gt;&lt;br /&gt; &lt;br /&gt; &lt;a href=https://github.com/Zukero/andors-trail/&gt;Страница проекта на github.com  для разработчиков.&lt;/a&gt;&lt;br /&gt; &lt;br /&gt;Пожалуйста, посещайте форум, чтобы обсуждать игру с другими игроками.&lt;br /&gt; "</string>
@@ -353,7 +353,7 @@
 
 	<string name="loadsave_save_to_new_slot">Создать новый слот для сохранения игры</string>
 	<string name="loadsave_save_overwrite_confirmation_title">Перезаписать сохраненную игру?</string>
-	<string name="loadsave_save_overwrite_confirmation">Эта игра содержит героя с другим именем (%1$s), не совпадающим с именем тегущего героя (%2$s). Вы уверены, что хотите перезаписать сохраненную игру?</string>
+	<string name="loadsave_save_overwrite_confirmation">Эта сохраненная игра содержит другое имя игрока (%1$s), не совпадающим с именем текущего героя (%2$s). Вы уверены, что хотите перезаписать сохраненную игру?</string>
 
 	<string name="iteminfo_displaytypes_ordinary">Обычный</string>
 	<string name="iteminfo_displaytypes_quest">Квестовый</string>
@@ -527,8 +527,8 @@
 	<string name="heroinfo_gamestats_visited_maps">Посещено локаций</string>
 	<string name="heroinfo_gamestats_fav_item">Самый используемый предмет</string>
 	<string name="heroinfo_gamestats_num_killed_monsters">Убито монстров</string>
-	<string name="heroinfo_gamestats_top_boss">Самый сильный противник</string>
-	<string name="heroinfo_gamestats_fav_monsters">Самый частый противник</string>
+	<string name="heroinfo_gamestats_top_boss">Самый сильный монстр</string>
+	<string name="heroinfo_gamestats_fav_monsters">Часто убиваемые монстры</string>
 	<string name="heroinfo_gamestats_name_and_qty">%1$s (%2$d)</string>
 
 	<string name="preferences_ui_use_localized_resources_title">Использовать перевод</string>
