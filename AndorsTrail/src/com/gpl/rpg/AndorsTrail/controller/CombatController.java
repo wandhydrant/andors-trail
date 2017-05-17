@@ -457,14 +457,14 @@ public final class CombatController implements VisualEffectCompletedCallback {
 	}
 
 	private void newPlayerTurn(boolean isFirstRound) {
-		if (canExitCombat()) {
-			exitCombat(true);
-			return;
-		}
 		controllers.actorStatsController.setActorMaxAP(world.model.player);
 		if (!isFirstRound) controllers.gameRoundController.onNewPlayerRound();
 		world.model.uiSelections.isPlayersCombatTurn = true;
 		combatTurnListeners.onNewPlayerTurn();
+		if (canExitCombat()) {
+			exitCombat(true);
+			return;
+		}
 	}
 
 	private static boolean hasCriticalAttack(Actor attacker, Actor target) {
