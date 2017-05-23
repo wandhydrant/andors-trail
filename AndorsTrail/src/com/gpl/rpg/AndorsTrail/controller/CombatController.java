@@ -55,7 +55,6 @@ public final class CombatController implements VisualEffectCompletedCallback {
 	public void exitCombat(boolean pickupLootBags) {
 		setCombatSelection(null, null);
 		world.model.uiSelections.isInCombat = false;
-		combatTurnListeners.onCombatEnded();
 		world.model.uiSelections.selectedPosition = null;
 		world.model.uiSelections.selectedMonster = null;
 		endOfCombatRound();
@@ -558,7 +557,9 @@ public final class CombatController implements VisualEffectCompletedCallback {
 	}
 
 	public void endOfCombatRound() {
+		combatTurnListeners.onCombatEnded();
 		world.model.worldData.tickWorldTime();
+		controllers.gameRoundController.resetRoundTimers();
 		controllers.actorStatsController.applyConditionsToPlayer(world.model.player, false);
 		controllers.actorStatsController.applyConditionsToMonsters(world.model.currentMap, true);
 	}
