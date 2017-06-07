@@ -4,7 +4,7 @@ msgstr ""
 "Project-Id-Version: Andors Trail\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-11-10 11:48+0000\n"
-"PO-Revision-Date: 2017-03-07 15:12+0000\n"
+"PO-Revision-Date: 2017-06-07 02:34+0000\n"
 "Last-Translator: Olivier Dragon <odragon@videotron.ca>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/andors-trail/game-"
 "content/fr/>\n"
@@ -13,7 +13,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 2.12\n"
+"X-Generator: Weblate 2.15-dev\n"
 "X-Launchpad-Export-Date: 2015-11-02 12:28+0000\n"
 
 #: [none]
@@ -5877,7 +5877,7 @@ msgid ""
 "healing substance. Some villagers argued that we should oppose Lord Geomyr's "
 "word and still use it."
 msgstr ""
-"Le seigneur Geomyr a promulgé l'interdiction de la potion d'os comme "
+"Le seigneur Geomyr a promulgué l'interdiction de la cendres d’os comme "
 "médicament. Certains villageois voulaient que nous nous opposions aux règles "
 "du seigneur Geomyr et que nous continuions à l'utiliser."
 
@@ -5928,8 +5928,8 @@ msgstr ""
 msgid ""
 "In the meantime, we've banned all use of Bonemeal as a healing substance."
 msgstr ""
-"Pour le moment, nous avons banni toute utilisation de la potion d'os comme "
-"substance de soin."
+"Pour le moment, nous avons banni toute utilisation de la cendres d’os pour "
+"prodiguer des soins."
 
 #: conversationlist_crossglen_leonid.json:leonid_crossglen9:0
 msgid ""
@@ -6150,7 +6150,7 @@ msgstr "Marche dans la lueur de l'Ombre, mon enfant."
 
 #: conversationlist_crossglen_tharal.json:tharal1:1
 msgid "What can you tell me about Bonemeal?"
-msgstr "Qu'en est-il de la potion d'os ?"
+msgstr "Qu'en est-il des cendres d’os ?"
 
 #: conversationlist_crossglen_tharal.json:tharal1:2
 #: conversationlist_fallhaven_potions.json:fallhaven_potions:1
@@ -6184,7 +6184,7 @@ msgid ""
 "Bonemeal? We shouldn't talk about that. Lord Geomyr issued a decree. It's "
 "not allowed anymore."
 msgstr ""
-"La potion d'os ? Nous ne devons pas parler de cela. Le seigneur Geomyr a "
+"Les cendres d’os ? Nous ne devons pas parler de cela. Le seigneur Geomyr a "
 "publié un décret. Ce n'est plus autorisé."
 
 #: conversationlist_crossglen_tharal.json:tharal_bonemeal1:0
@@ -6226,8 +6226,8 @@ msgid ""
 "Oh yes, bonemeal. Mixed with the right components it can be one of the most "
 "effective healing agents around."
 msgstr ""
-"Alors la potion d'os. Préparée avec les bons ingrédients, cela peut être "
-"l'un des soins les plus efficaces à notre disposition."
+"Alors les cendres d’os. Préparées avec les bons ingrédients, cela peut être "
+"l'un des médicaments les plus efficaces à notre disposition."
 
 #: conversationlist_crossglen_tharal.json:tharal_bonemeal5
 msgid ""
@@ -6251,7 +6251,7 @@ msgid ""
 "talk to Thoronir, a fellow priest in Fallhaven. Tell him my password 'Glow "
 "of the Shadow'."
 msgstr ""
-"Je connais quelqu'un qui a toujours de la potion d'os disponible si tu cela "
+"Je connais quelqu'un qui a toujours des cendres d’os disponibles si cela "
 "t'intéresse. Va parler à Thoronir, un confrère prêtre à Fallhaven. Donne-lui "
 "le mot de passe « Lueur de l'Ombre »."
 
@@ -8389,8 +8389,8 @@ msgid ""
 "Shhh, we shouldn't talk so loud about using Bonemeal. As you know, Lord "
 "Geomyr issued a ban on all use of Bonemeal."
 msgstr ""
-"Chut, il ne faut pas parler aussi fort de la potion d'os. Comme tu le sais, "
-"le seigneur Geomyr à interdit tout usage de la potion d'os."
+"Chut, il ne faut pas parler aussi fort des cendres d’os. Comme tu le sais, "
+"le seigneur Geomyr à interdit tout usage des cendres d’os."
 
 #: conversationlist_fallhaven_church.json:thoronir_tharal_3
 msgid ""
@@ -8407,8 +8407,8 @@ msgid ""
 "Bonemeal potion? The bonemeal is very potent in healing old wounds."
 msgstr ""
 "Penses-tu pouvoir me trouver 5 os de squelettes que je pourrais utiliser "
-"pour concocter à nouveau de la potion d'os ? La potion d'os est très "
-"efficace pour soigner les vieilles blessures."
+"pour concocter à nouveau de la potion d'os ? Les cendres d’os sont très "
+"efficaces pour soigner les vieilles blessures."
 
 #: conversationlist_fallhaven_church.json:thoronir_tharal_4:0
 msgid "Sure, I might be able to do that."
@@ -15044,7 +15044,7 @@ msgid ""
 "Bonemeal potions, I might consider trusting you a bit more."
 msgstr ""
 "J'aimerais bien en avoir quelques unes de plus. Si tu m'apportais 10 potions "
-"d'os moulu, je pourrais bien considérer te faire plus confiance."
+"d'os, je pourrais bien considérer te faire plus confiance."
 
 #: conversationlist_kaori.json:kaori_13:0
 msgid "Ok. I will get some potions for you."
@@ -15153,7 +15153,7 @@ msgstr "Y avait-il quelque chose dont tu voulais parler ?"
 
 #: conversationlist_kaori.json:kaori_return_1
 msgid "Hello again. Have you found those 10 Bonemeal potions I asked for?"
-msgstr "Rebonjour. As-tu trouvé ces 10 Potions d'os que je t'avais demandé ?"
+msgstr "Rebonjour. As-tu trouvé ces 10 potions d'os que je t'avais demandé ?"
 
 #: conversationlist_kaori.json:kaori_return_1:0
 msgid "No, I am still looking for them."
@@ -18245,47 +18245,49 @@ msgid ""
 "[you feel a tingling sensation in your body as the frightening figure begins "
 "to speak]"
 msgstr ""
+"[tu ressens des picotements de l'intérieur lorsque la silhouette effrayante "
+"se met à parler]"
 
 #: conversationlist_maelveon.json:maelveon_1
 msgid "Sssshadow take you."
-msgstr ""
+msgstr "Que l'Ooooombre t'emporte."
 
 #: conversationlist_maelveon.json:maelveon_2
 msgid "G.. argoyle Shadow."
-msgstr ""
+msgstr "G.. argouille de l'Ombre."
 
 #: conversationlist_maelveon.json:maelveon_3
 msgid "A.. llow the Sssshadow in you."
-msgstr ""
+msgstr "Laissssssse l'Ombre t’imprégner."
 
 #: conversationlist_maelveon.json:maelveon_3:0
 msgid "The Shadow, what do you mean?"
-msgstr ""
+msgstr "L'Ombre, que voulez-vous dire ?"
 
 #: conversationlist_maelveon.json:maelveon_3:1
 #: conversationlist_maelveon.json:maelveon_5:1
 msgid "Die, evil creature!"
-msgstr ""
+msgstr "Meurt, créature du mal !"
 
 #: conversationlist_maelveon.json:maelveon_3:2
 msgid "I will not be affected by your nonsense!"
-msgstr ""
+msgstr "Je ne serai pas affecté par vos absurdités !"
 
 #: conversationlist_maelveon.json:maelveon_4
 msgid "[the figure lifts his hand and points at you]"
-msgstr ""
+msgstr "[la silhouette soulève une main et pointe vers toi]"
 
 #: conversationlist_maelveon.json:maelveon_5
 msgid "Sssshadow be with you."
-msgstr ""
+msgstr "Que l'Ombre sssssoit avec toi."
 
 #: conversationlist_maelveon.json:maelveon_5:0
 msgid "Shadow, what?"
-msgstr ""
+msgstr "L'Ombre, quoi ?"
 
 #: conversationlist_maevalia.json:maevalia0
 msgid "You there! This is no place for children!"
-msgstr ""
+msgstr "Ohé, toi là ! C'est pas une place pour les enfants ici !"
 
 #: conversationlist_maevalia.json:maevalia1
 msgid ""
@@ -18298,7 +18300,7 @@ msgstr ""
 #: conversationlist_maevalia.json:maevalia1:1
 #: conversationlist_maevalia.json:maevalia2:0
 msgid "What has happened here?"
-msgstr ""
+msgstr "Mais que c'est-il passé ici ?"
 
 #: conversationlist_maevalia.json:maevalia10
 msgid ""
@@ -18313,57 +18315,76 @@ msgid ""
 "There are also several of us that haven't made it down the hill. Many of our "
 "friends and relatives from the mining town have not been accounted for yet."
 msgstr ""
+"Il y en a plusieurs d'entre nous qui ne se sont pas rendu au bas de la "
+"colline. Plusieurs de nos amis, fères et soeurs du village minier n'ont pas "
+"encore été retrouvés."
 
 #: conversationlist_maevalia.json:maevalia12
 msgid ""
 "I don't want to think about that. Either they've been killed by the foul "
 "monsters, or worse."
 msgstr ""
+"Je ne veux pas même y penser. Soit qu'ils ont été tués par des monstres "
+"ignobles, ou pire."
 
 #: conversationlist_maevalia.json:maevalia13
 msgid ""
 "You know, we saw one monster carrying around what looked like a net of some "
 "sort, instead of weapons like the other ones."
 msgstr ""
+"Tu sais, nous avons repéré un monstre qui trimbalait quelque chose qui "
+"ressemblait à un genre de filet, au lieu des armes comme les autres."
 
 #: conversationlist_maevalia.json:maevalia14
 msgid ""
 "He shoved the other monsters around, and they all seemed to look up to him, "
 "like he was some sort of leader."
 msgstr ""
+"Il bousculait les autres monstres, et ils semblaient tous le regarder avec "
+"admiration, comme s'il était un genre de chef."
 
 #: conversationlist_maevalia.json:maevalia15
 msgid ""
 "I don't know what that net was for though. I wonder if he was supposed to "
 "capture some of us."
 msgstr ""
+"Je ne sais pas à quoi allait servir le filet par contre. Je me demande si "
+"c'était pour nous capturer."
 
 #: conversationlist_maevalia.json:maevalia15:1
 #: conversationlist_maevalia.json:maevalia20:1
 msgid "As I said, I'll try to find out what happened to them."
-msgstr ""
+msgstr "Comme j'ai dit, j'essaierai de découvrir ce qui c'est passé."
 
 #: conversationlist_maevalia.json:maevalia16
 msgid "I sure hope that the people that we are missing are all alive at least."
 msgstr ""
+"J'espère juste que tous les personnes disparues sont encore en vie au moins."
 
 #: conversationlist_maevalia.json:maevalia17
 msgid ""
 "In particular, I'm worried about what happened to Morenavia - our leader. "
 "None of us that made it back to this cabin saw what happened to her."
 msgstr ""
+"En particulier, je suis inquiet du sort de Morenavia - notre chef. Aucuns de "
+"ceux qui se sont échappés à ce chalet ont vu ce qui lui est arrivé."
 
 #: conversationlist_maevalia.json:maevalia18
 msgid ""
 "I sure hope she's still alive. We could use some of her wisdom and "
 "leadership right now to guide us."
 msgstr ""
+"J'espère vraiment qu'elle est encore en vie. Nous aurions vraiment besoin de "
+"sa sagesse et de direction dans un moment comme celui-là."
 
 #: conversationlist_maevalia.json:maevalia19
 msgid ""
 "I'm also worried about Falothen, our weapons trainer. As I ran down the "
 "hills myself, I thought I heard him call for help."
 msgstr ""
+"Je m'inquiète aussi à propos de Falothen, notre entraîneur au combat. Alors "
+"que j'essayais de m'enfuir en descendant la colline, je crois l'avoir "
+"entendu appeler à l'aide."
 
 #: conversationlist_maevalia.json:maevalia2
 msgid ""
@@ -18380,55 +18401,66 @@ msgid ""
 "There's also Ayell, our healer, and Fayvara, our armorer. They always stayed "
 "together, those two. We don't know what happened to them or where they are."
 msgstr ""
+"Il y a aussi Ayell, notre guérisseuse, et Fayvara, notre armurière. Elles "
+"sont toujours ensemble ces deux là. Nous ne savons pas ce qui à pu leur "
+"arriver, ni où elles pourraient être."
 
 #: conversationlist_maevalia.json:maevalia20:0
 msgid "What are you going to do?"
-msgstr ""
+msgstr "Que ferez-vous ?"
 
 #: conversationlist_maevalia.json:maevalia21
 msgid ""
 "I honestly don't know. We've sent out runners to try to find help. So far, "
 "none have returned with help."
 msgstr ""
+"À vrai dire, j'en ai aucune idée. Nous avons envoyé des coureurs pour tenter "
+"de trouver de l'aide. Aucun n'es revenu jusqu'à présent."
 
 #: conversationlist_maevalia.json:maevalia21:0
 msgid "Maybe I can help?"
-msgstr ""
+msgstr "Peut-être que je peux être utile ?"
 
 #: conversationlist_maevalia.json:maevalia21:1
 msgid "Tough luck. They're probably dead. You should move on with your lives."
 msgstr ""
+"Quelle poisse. Ils sont probablement tous morts. Vous devriez laisser tous "
+"ça derrière vous."
 
 #: conversationlist_maevalia.json:maevalia21a
 msgid "With your help, we might at least get somewhere."
-msgstr ""
+msgstr "Avec ton aide, nous pourrions peut-être progresser."
 
 #: conversationlist_maevalia.json:maevalia22
 msgid "Yes, I guess so. Thank you for listening to our story."
-msgstr ""
+msgstr "Oui, je crois bien. Merci d'avoir écouté notre histoire."
 
 #: conversationlist_maevalia.json:maevalia23
 msgid ""
 "Well, I wouldn't want to be responsible for putting you into any trouble."
-msgstr ""
+msgstr "Et bien, je ne voudrais pas être responsable de vos déboires."
 
 #: conversationlist_maevalia.json:maevalia23:1
 msgid "I might be able to sneak by the monsters undetected."
 msgstr ""
+"J'arriverais peut-être à me faufiler sans me faire repérer par les monstres."
 
 #: conversationlist_maevalia.json:maevalia23:2
 msgid "A few puny monsters won't stop me!"
-msgstr ""
+msgstr "Quelques petits monstres insignifiants ne m’arrêteront pas !"
 
 #: conversationlist_maevalia.json:maevalia24
 msgid "Ok. Frankly, I don't know what else we can do. We really need the help."
 msgstr ""
+"D'accord. Pour être honnête, je ne sais plus quoi faire de plus. Nous avons "
+"vraiment besoin d'aide."
 
 #: conversationlist_maevalia.json:maevalia25
 msgid ""
 "I would be very grateful for knowing what happened to the people we are "
 "missing."
 msgstr ""
+"Je serais très reconnaissant d'apprendre ce qui est arrivé aux gens disparus."
 
 #: conversationlist_maevalia.json:maevalia26
 msgid ""
@@ -18441,10 +18473,12 @@ msgid ""
 "Please, try to be safe! If you spot any danger, or if those foul monsters "
 "are too much for you, don't hesitate to retreat back here."
 msgstr ""
+"S'il-te-plaît, prends soin de toi ! Si tu vois du danger, ou si les bêtes "
+"infâmes sont trop difficiles, n'hésites pas à rebrousser chemin."
 
 #: conversationlist_maevalia.json:maevalia27:0
 msgid "Ok, I'll try to find your missing people."
-msgstr ""
+msgstr "D'accord, j'essaierai de retrouver les personnes disparues."
 
 #: conversationlist_maevalia.json:maevalia28
 msgid "Thank you. The path up to Charwood heights is just east of here."
@@ -18455,20 +18489,23 @@ msgid ""
 "We were attacked. We didn't stand a chance, they were too many and we are no "
 "fighters."
 msgstr ""
+"Nous avons été attaqués. Nous n'aurions pas pu résister. Ils étaient trop "
+"nombreux et nous ne sommes pas des guerriers."
 
 #: conversationlist_maevalia.json:maevalia4
 msgid "They started pouring out of the mine and the surrounding hills."
-msgstr ""
+msgstr "Ils ont commencé à arriver par les collines, puis à sortir de la mine."
 
 #: conversationlist_maevalia.json:maevalia4:0
 msgid "Who were?"
-msgstr ""
+msgstr "Qui ça ?"
 
 #: conversationlist_maevalia.json:maevalia5
 msgid ""
 "The monsters. Disgusting, foul smelling monsters. Nothing like we've ever "
 "seen before."
 msgstr ""
+"Les monstres. Des monstres dégoutants, aux odeurs putrides. Du jamais vu."
 
 #: conversationlist_maevalia.json:maevalia6
 msgid ""
@@ -18735,7 +18772,7 @@ msgstr ""
 #: conversationlist_prim_merchants.json:prim_armorer_1:0
 #: conversationlist_prim_merchants.json:prim_priest_1:0
 msgid "Sure. Show me what you have."
-msgstr ""
+msgstr "Bien sûr. Montrez-moi ce que vous avez de disponible."
 
 #: conversationlist_mazeg.json:mazeg_1:1 conversationlist_mazeg.json:mazeg_2:1
 msgid "I am looking for some Lyson marrow extract, for Hjaldar in Remgard."
@@ -20822,26 +20859,32 @@ msgstr ""
 
 #: conversationlist_prim_merchants.json:guthbered_guard_1
 msgid "Talk to the boss instead."
-msgstr ""
+msgstr "Parles au patron."
 
 #: conversationlist_prim_merchants.json:guthbered_guard_2
 msgid "Please don't hurt me! I'm only doing my job here."
 msgstr ""
+"S'il-te-plaît ne me fait pas de mal ! Je ne suis ici que pour faire mon "
+"travail."
 
 #: conversationlist_prim_merchants.json:prim_acolyte
 msgid ""
 "When my training is complete, I will be one of the greatest healers around!"
 msgstr ""
+"Quand j'aurai terminé mon apprentissage, je serai un des meilleurs "
+"guérisseurs qui soit !"
 
 #: conversationlist_prim_merchants.json:prim_armorer_1
 msgid "Welcome friend! Would you like to see what equipment I have available?"
-msgstr ""
+msgstr "Bonjour mon ami ! Aimerais-tu voir mon inventaire d'équipement ?"
 
 #: conversationlist_prim_merchants.json:prim_armorer_2
 msgid ""
 "Welcome traveller. Have you come to ask for help from me and the equipment I "
 "sell?"
 msgstr ""
+"Bonjour voyageur. Es-tu venu me demander de l'aide et pour voir mon "
+"équipement à vendre ?"
 
 #: conversationlist_prim_merchants.json:prim_armorer_3
 msgid ""
@@ -20849,30 +20892,37 @@ msgid ""
 "southern mine entrance has collapsed. Far fewer traders come here to Prim "
 "now."
 msgstr ""
+"Je dois t'avertir que mon approvisionnement n'est pas ce qu'il était, "
+"maintenant que la mine au sud s'est effondrée. Très peux de marchants "
+"viennent à Prim depuis."
 
 #: conversationlist_prim_merchants.json:prim_armorer_3:0
 msgid "Ok, let me see your wares."
-msgstr ""
+msgstr "D'accord, montrez-moi votre marchandise."
 
 #: conversationlist_prim_merchants.json:prim_guard1
 msgid ""
 "What are you looking at? These weapons in the crates over here are only for "
 "us guards."
 msgstr ""
+"Qu'est-ce que tu regardes ? Ces armes dans les caisses là-bas ne sont que "
+"pour nous les gardes."
 
 #: conversationlist_prim_merchants.json:prim_guard2
 msgid "(The guard looks down on you with a condescending look)"
-msgstr ""
+msgstr "(Le garde te regarde de haut avec un air condescendant)"
 
 #: conversationlist_prim_merchants.json:prim_guard3
 msgid "Oh, I am so tired. When will we ever get to rest?"
-msgstr ""
+msgstr "Oh, comme je suis fatigué. Mais quand pourrais-je me reposer enfin ?"
 
 #: conversationlist_prim_merchants.json:prim_guard4
 msgid ""
 "Can't talk now. I'm on guard duty. If you need help, talk to someone else "
 "over there instead."
 msgstr ""
+"Je ne peux pas parler maintenant. Je monte la garde. Si tu as besoin d'aide, "
+"parle à quelqu'un d'autre là-bas."
 
 #: conversationlist_prim_merchants.json:prim_notrust
 msgid ""
@@ -20880,6 +20930,9 @@ msgid ""
 "and I don't trust you enough yet. You might be a spy from the Blackwater "
 "Mountain settlement."
 msgstr ""
+"Quoi qu'il en soit, je ne peux t'aider. Mes services sont réservés seulement "
+"aux résidents de Prim, et je ne te fais pas encore assez confiance. Tu "
+"pourrais être un espion de la colonie du mont Encreau."
 
 #: conversationlist_prim_merchants.json:prim_pupil1
 msgid ""
@@ -20898,11 +20951,11 @@ msgstr ""
 
 #: conversationlist_prim_merchants.json:prim_tailor
 msgid "Welcome traveller, what can I do for you?"
-msgstr ""
+msgstr "Bienvenue voyageur. Que puis-je faire pour toi ?"
 
 #: conversationlist_prim_merchants.json:prim_tailor:0
 msgid "Let me see what you have available to sell."
-msgstr ""
+msgstr "Montrez-moi ce que vous avez à vendre."
 
 #: conversationlist_prim_merchants.json:prim_tailor_1
 msgid ""
@@ -20910,10 +20963,13 @@ msgid ""
 "anymore, I don't get my regular shipments. So at the moment, I have nothing "
 "to trade with you unfortunately."
 msgstr ""
+"À vendre ? Je suis désolé mais mon inventaire est épuisé. Maintenant que les "
+"marchants ne viennent plus, je ne reçoit plus de cargaison régulièrement. "
+"Malheureusement, en ce moment, je n'ai rien à troquer."
 
 #: conversationlist_prim_merchants.json:prim_treasury_guard
 msgid "See these bars? They will hold for almost anything."
-msgstr ""
+msgstr "Tu vois ces barreaux ? Ils tiennent contre presque tout."
 
 #: conversationlist_prim_outside.json:moyra_1
 msgid "Stay away. This is my hiding spot."
@@ -28866,7 +28922,7 @@ msgstr "Potion de peau d'écorce"
 
 #: itemlist_v070.json:pot_bm_lodar
 msgid "Lodar's bonemeal potion"
-msgstr "Potion de cendres d'os de Lodar"
+msgstr "Potion de Lodar aux cendres d'os"
 
 #: itemlist_v070.json:pot_courage
 msgid "Liquid courage"
@@ -31565,7 +31621,7 @@ msgid ""
 "Tharal does not want to talk about bonemeal. I might be able to persuade him "
 "by bringing him 5 insect wings."
 msgstr ""
-"Tharal ne veut pas parler des potions d'os. Je pourrais peut-être le "
+"Tharal ne veut pas parler des cendres d’os. Je pourrais peut-être le "
 "persuader si je lui ramène 5 ailes d'insectes."
 
 #: questlist.json:bonemeal:30
@@ -31575,10 +31631,10 @@ msgid ""
 "Fallhaven if I want to learn more. I should tell him the password 'Glow of "
 "the Shadow'."
 msgstr ""
-"Tharal m'a dit que la potion d'os était un médicament très efficace, et il "
-"est embêté qu'elle soit désormais interdite. Je devrais aller voir Thoronir "
-"à Fallhaven si je désire en apprendre davantage. Je dois lui dire le mot de "
-"passe « lueur de l'Ombre »."
+"Tharal m'a dit que les cendres d’os étaient un médicament très efficace, et "
+"il est embêté qu'elle soit désormais interdite. Je devrais aller voir "
+"Thoronir à Fallhaven si je désire en apprendre davantage. Je dois lui dire "
+"le mot de passe « lueur de l'Ombre »."
 
 #: questlist.json:bonemeal:40
 msgid ""
@@ -32055,9 +32111,8 @@ msgid ""
 "I gave Erinith a bonemeal potion to heal his wound. He was a bit scared to "
 "use it since they are prohibited by Lord Geomyr."
 msgstr ""
-"J'ai donné à Erinith une potion de cendre d'os pour soigner sa blessure. Il "
-"a un peu hésité avant de la prendre, car elles ont été interdites par Lord "
-"Geomyr."
+"J'ai donné à Erinith une potion d'os pour soigner sa blessure. Il a un peu "
+"hésité avant de la prendre, car elles ont été interdites par Lord Geomyr."
 
 #: questlist_v0610.json:erinith:41
 msgid "I gave Erinith a potion of a major health to heal his wound."
