@@ -1,2 +1,54 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<?xml version='1.0' encoding='UTF-8'?>
+<resources><string name="app_name">Andors sti</string>
+	<string name="app_description">Oppdragsdrevet fantasirollespill</string>
+
+	<string name="exit_to_menu">Avslutt til meny</string>
+	<string name="menu_settings">Preferanser</string>
+	<string name="menu_save">Lagre</string>
+	<string name="menu_save_gamesaved">Spillet ble lagret på plass %1$d</string>
+	<string name="menu_save_failed">"Klarte ikke lagre spillet!  Er SD-kortet montert og skrivbart?"</string>
+
+	<string name="loadsave_title_save">Lagre spill</string>
+	<string name="loadsave_title_load">Les inn lagret spill</string>
+	<string name="loadsave_selectslot">Velg plass</string>
+	<string name="savegame_currenthero_displayinfo">nivå %1$d, %2$d erf., %3$d gull</string>
+
+	<string name="dialog_loading_message">Leser inn ressurser…</string>
+	<string name="dialog_loading_failed_title">Innlesingen gikk galt</string>
+	<string name="dialog_close">Lukk</string>
+
+	<string name="dialog_monsterencounter_title">Treffning</string>
+	<string name="dialog_monsterencounter_message">Vil du angripe?
+\nVanskelighetsgrad: %1$s</string>
+	<string name="dialog_monsterencounter_info">Info</string>
+
+	<string name="status_hp">Liv:</string>
+	<string name="status_ap">HP:</string>
+	<string name="status_exp">Nivå:</string>
+
+	<string name="heroinfo_char">Overblikk</string>
+	<string name="heroinfo_inv">Utstyr</string>
+	<string name="heroinfo_skill">Evner</string>
+	<string name="heroinfo_level">Nivå</string>
+	<string name="heroinfo_totalexperience">Samlet erfaring</string>
+	<string name="heroinfo_wornequipment">Slitt utstyr</string>
+	<string name="heroinfo_inventory">Utstyr</string>
+	<string name="heroinfo_gold">Gull: %1$d</string>
+	<string name="heroinfo_actionpoints">Handlingspoeng (AP):</string>
+	<string name="heroinfo_quests">Oppdrag</string>
+
+	<string name="combat_attack">Angrep (%1$d HP)</string>
+	<string name="combat_move">Flytt (%1$d AP)</string>
+	<string name="combat_use">Bruk utstyr</string>
+	<string name="combat_endturn">Avslutt runde</string>
+	<string name="combat_flee">Flykt</string>
+	<string name="combat_begin_flee">Du kan nå flykte fra kamp ved å klikke i den retningen du ønsker å flykte i.</string>
+	<string name="combat_flee_failed">Fluktforsøket feilet!</string>
+	<string name="combat_status_ap">HP: %$1d</string>
+	<string name="combat_monsterhealth">Liv:</string>
+	<string name="combat_monsteraction">%1$s angriper.</string>
+	<string name="combat_result_monstermiss">%1$s bommer!</string>
+	<string name="combat_result_monsterhit">%1$s treffer deg og skader %2$d liv!</string>
+	<string name="change_locale_requires_restart">"Endring av locale krever omstart.  Andors sti har blitt lukket."</string>
+
+</resources>
