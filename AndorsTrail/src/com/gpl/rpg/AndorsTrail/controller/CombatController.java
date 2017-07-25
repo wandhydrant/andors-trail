@@ -55,10 +55,9 @@ public final class CombatController implements VisualEffectCompletedCallback {
 	public void exitCombat(boolean pickupLootBags) {
 		setCombatSelection(null, null);
 		world.model.uiSelections.isInCombat = false;
-		combatTurnListeners.onCombatEnded();
 		world.model.uiSelections.selectedPosition = null;
 		world.model.uiSelections.selectedMonster = null;
-		controllers.gameRoundController.resetRoundTimers();
+		endOfCombatRound();
 		if (pickupLootBags && totalExpThisFight > 0) {
 			controllers.itemController.lootMonsterBags(killedMonsterBags, totalExpThisFight);
 		} else {
@@ -555,6 +554,14 @@ public final class CombatController implements VisualEffectCompletedCallback {
 		for (ItemTraits_OnUse e : onHitEffects) {
 			controllers.actorStatsController.applyUseEffect(attacker, target, e);
 		}
+	}
+
+	public void endOfCombatRound() {
+		combatTurnListeners.onCombatEnded();
+		world.model.worldData.tickWorldTime();
+		controllers.gameRoundController.resetRoundTimers();
+		controllers.actorStatsController.applyConditionsToPlayer(world.model.player, false);
+		controllers.actorStatsController.applyConditionsToMonsters(world.model.currentMap, true);
 	}
 
 	public void monsterSteppedOnPlayer(Monster m) {
