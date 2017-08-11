@@ -330,7 +330,10 @@ public final class SkillController {
 					playerTraits.criticalMultiplier = Math.max(mainHandItem.effects_equip.stats.setCriticalMultiplier, getPercentage(offHandItem.effects_equip.stats.setCriticalMultiplier, SkillCollection.DUALWIELD_EFFICIENCY_LEVEL2, 0));
 				} else if (skillLevelFightStyle == 1) {
 					percent = SkillCollection.DUALWIELD_EFFICIENCY_LEVEL1;
-					playerTraits.attackCost = attackCostMainHand + getPercentage(attackCostOffHand, SkillCollection.DUALWIELD_LEVEL1_OFFHAND_AP_COST_PERCENT, 0);
+					//Take into account the case where the worst weapon AP-wise is in the off-hand.
+					playerTraits.attackCost = Math.max(
+							attackCostMainHand + getPercentage(attackCostOffHand, SkillCollection.DUALWIELD_LEVEL1_OFFHAND_AP_COST_PERCENT, 0),
+							attackCostOffHand + getPercentage(attackCostMainHand, SkillCollection.DUALWIELD_LEVEL1_OFFHAND_AP_COST_PERCENT, 0));
 					playerTraits.criticalMultiplier = Math.max(mainHandItem.effects_equip.stats.setCriticalMultiplier, getPercentage(offHandItem.effects_equip.stats.setCriticalMultiplier, SkillCollection.DUALWIELD_EFFICIENCY_LEVEL1, 0));
 				} else {
 					percent = SkillCollection.DUALWIELD_EFFICIENCY_LEVEL0;
