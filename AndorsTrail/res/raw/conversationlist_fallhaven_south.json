@@ -3,6 +3,7 @@
         "id":"fallhaven_lumberjack",
         "replies":[
             {
+                "text":"N",
                 "nextPhraseID":"fallhaven_lumberjack_15",
                 "requires":[
                     {
@@ -13,6 +14,24 @@
                 ]
             },
             {
+                "text":"N",
+                "nextPhraseID":"fallhaven_lumberjack_16",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"pathway_fallhaven",
+                        "value":40
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"pathway_fallhaven",
+                        "value":50,
+                        "negate":true
+                    }
+                ]
+            },
+            {
+                "text":"N",
                 "nextPhraseID":"fallhaven_lumberjack_14",
                 "requires":[
                     {
@@ -23,6 +42,7 @@
                 ]
             },
             {
+                "text":"N",
                 "nextPhraseID":"fallhaven_lumberjack_1"
             }
         ]
@@ -278,6 +298,16 @@
             {
                 "text":"Never mind. I don't need your services for now.",
                 "nextPhraseID":"X"
+            }
+        ]
+    },
+    {
+        "id":"fallhaven_lumberjack_16",
+        "message":"Thank you for bringing me back my axe!",
+        "replies":[
+            {
+                "text":"So will you cut away those trees which block the old pathway?",
+                "nextPhraseID":"fallhaven_lumberjack_11"
             }
         ]
     }

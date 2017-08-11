@@ -33,14 +33,7 @@
         "replies":[
             {
                 "text":"Why is that so?",
-                "nextPhraseID":"guard_pathway_1",
-                "requires":[
-                    {
-                        "requireType":"questProgress",
-                        "requireID":"pathway_fallhaven",
-                        "value":10
-                    }
-                ]
+                "nextPhraseID":"guard_pathway_1"
             },
             {
                 "text":"Never mind. Shadow be with you.",
@@ -187,7 +180,8 @@
                     {
                         "requireType":"questLatestProgress",
                         "requireID":"pathway_fallhaven",
-                        "value":30
+                        "value":30,
+                        "negate":true
                     }
                 ]
             },
