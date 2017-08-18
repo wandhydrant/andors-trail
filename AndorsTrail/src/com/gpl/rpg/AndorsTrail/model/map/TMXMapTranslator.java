@@ -140,27 +140,18 @@ public final class TMXMapTranslator {
 						);
 						spawnAreas.add(area);
 					} else if (object.type.equalsIgnoreCase("key")) {
-						Requirement.RequirementType requireType = Requirement.RequirementType.questProgress;
-						String requireId = null;
-						int requireValue = 0;
 						String phraseID = "";
-						boolean requireNegation = false;
 						for (TMXProperty p : object.properties) {
 							if (p.name.equalsIgnoreCase("phrase")) {
 								phraseID = p.value;
-							} else if (p.name.equalsIgnoreCase("requireType")) {
-								requireType = Requirement.RequirementType.valueOf(p.value);
-							} else if (p.name.equalsIgnoreCase("requireId")) {
-								requireId = p.value;
-							} else if (p.name.equalsIgnoreCase("requireValue")) {
-								requireValue = Integer.parseInt(p.value);
-							} else if (p.name.equalsIgnoreCase("requireNegation")) {
-								requireNegation = Boolean.parseBoolean(p.value);
 							} else if (AndorsTrailApplication.DEVELOPMENT_VALIDATEDATA) {
-								L.log("OPTIMIZE: Map " + m.name + ", key " + object.name + "@" + topLeft.toString() + " has unrecognized property \"" + p.name + "\".");
+								if (!requirementPropertiesNames.contains(p.name.toLowerCase())) {
+									L.log("OPTIMIZE: Map " + m.name + ", key " + object.name + "@" + topLeft.toString() + " has unrecognized property \"" + p.name + "\".");
+								}
 							}
 						}
-						mapObjects.add(MapObject.createKeyArea(position, phraseID, new Requirement(requireType, requireId, requireValue, requireNegation), group.name));
+						Requirement req = parseRequirement(object);
+						mapObjects.add(MapObject.createKeyArea(position, phraseID, req, group.name));
 					} else if (object.type.equals("rest")) {
 						mapObjects.add(MapObject.createRestArea(position, object.name, group.name));
 					} else if (object.type.equals("container")) {
@@ -204,6 +195,35 @@ public final class TMXMapTranslator {
 		}
 
 		return result;
+	}
+	
+	private static final List<String> requirementPropertiesNames = Arrays.asList(new String[]{"requireType".toLowerCase(), "requireId".toLowerCase(), "requireValue".toLowerCase(), "requireNegation".toLowerCase()});
+	
+	private static Requirement parseRequirement(TMXObject object) {
+		Requirement.RequirementType requireType = Requirement.RequirementType.questProgress;
+		String requireId = null;
+		int requireValue = 0;
+		boolean requireNegation = false;
+		for (TMXProperty p : object.properties) {
+			if (p.name.equalsIgnoreCase("requireType")) {
+				try {
+					requireType = Requirement.RequirementType.valueOf(p.value);
+				} catch (IllegalArgumentException e) {
+					requireType = null;
+					if (AndorsTrailApplication.DEVELOPMENT_VALIDATEDATA) {
+						L.log("OPTIMIZE: Unrecognized requirement type: "+p.value);
+					}
+				}
+			} else if (p.name.equalsIgnoreCase("requireId")) {
+				requireId = p.value;
+			} else if (p.name.equalsIgnoreCase("requireValue")) {
+				requireValue = Integer.parseInt(p.value);
+			} else if (p.name.equalsIgnoreCase("requireNegation")) {
+				requireNegation = Boolean.parseBoolean(p.value);
+			}
+		}
+		if (requireType == null) return null;
+		return new Requirement(requireType, requireId, requireValue, requireNegation);
 	}
 
 	private static CoordRect getTMXObjectPosition(TMXObject object, TMXMap m) {
@@ -272,14 +292,18 @@ public final class TMXMapTranslator {
 						}
 					}
 					MapSection replacementSection = transformMapSection(map, tileCache, position, layersPerLayerName, usedTileIDs, layerNames);
-					QuestProgress requireQuestStage = QuestProgress.parseQuestProgress(obj.name);
-					if (requireQuestStage == null) {
+					Requirement req = parseRequirement(obj);
+					if (req == null || !req.isValid()) {
+						QuestProgress qp = QuestProgress.parseQuestProgress(obj.name);
+						if (qp != null) req = new Requirement(qp);
+					}
+					if (req == null || !req.isValid()) {
 						if (AndorsTrailApplication.DEVELOPMENT_VALIDATEDATA) {
-							L.log("WARNING: Map " + map.name + " contains replace area that cannot be parsed as a quest stage.");
+							L.log("WARNING: Map " + map.name + " contains replace area "+obj.name+" with unparsable requirement");
 						}
 						continue;
 					}
-					replaceableSections.add(new ReplaceableMapSection(position, replacementSection, requireQuestStage, objectGroup.name));
+					replaceableSections.add(new ReplaceableMapSection(position, replacementSection, req, objectGroup.name));
 				}
 			}
 		}
