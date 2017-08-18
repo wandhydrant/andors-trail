@@ -186,6 +186,7 @@ public final class MapController {
 			for(ReplaceableMapSection replacement : tileMap.replacements) {
 				if (replacement.isApplied) continue;
 				if (!satisfiesCondition(replacement)) continue;
+				else ConversationController.requirementFulfilled(world, replacement.requirement);
 				tileMap.applyReplacement(replacement);
 				hasUpdated = true;
 			}
@@ -202,7 +203,7 @@ public final class MapController {
 	}
 
 	public boolean satisfiesCondition(ReplaceableMapSection replacement) {
-		return world.model.player.hasExactQuestProgress(replacement.requireQuestStage);
+		return ConversationController.canFulfillRequirement(world, replacement.requirement);
 	}
 
 	private final ConversationController.ConversationStatemachine.ConversationStateListener conversationStateListener = new ConversationController.ConversationStatemachine.ConversationStateListener() {
