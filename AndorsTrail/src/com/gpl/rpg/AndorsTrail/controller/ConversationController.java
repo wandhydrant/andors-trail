@@ -277,6 +277,8 @@ public final class ConversationController {
 			case hasActorCondition:
 				result =  player.hasCondition(requirement.requireID);
 				break;
+			case factionScore:
+				result = player.getAlignment(requirement.requireID) >= requirement.value;
 			default:
 				result =  true;
 		}
