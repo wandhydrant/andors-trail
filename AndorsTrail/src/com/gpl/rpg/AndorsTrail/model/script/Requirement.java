@@ -16,6 +16,7 @@ public final class Requirement {
 		,spentGold
 		,consumedBonemeals
 		,hasActorCondition
+		,factionScore
 	}
 
 	public final RequirementType requireType;
