@@ -26,7 +26,7 @@ public final class ItemTraitsParser {
 				return new ActorConditionEffect(
 						actorConditionTypes.getActorConditionType(o.getString(JsonFieldNames.ActorConditionEffect.condition))
 						, o.optInt(JsonFieldNames.ActorConditionEffect.magnitude, ActorCondition.MAGNITUDE_REMOVE_ALL)
-						, o.optInt(JsonFieldNames.ActorConditionEffect.duration, ActorCondition.DURATION_FOREVER)
+						, o.optInt(JsonFieldNames.ActorConditionEffect.duration, ActorCondition.DURATION_NONE)
 						, ResourceParserUtils.parseChance(o.getString(JsonFieldNames.ActorConditionEffect.chance))
 				);
 			}

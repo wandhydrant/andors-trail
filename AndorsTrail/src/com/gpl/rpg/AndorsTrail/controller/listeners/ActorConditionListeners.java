@@ -21,7 +21,16 @@ public final class ActorConditionListeners extends ListOfListeners<ActorConditio
 	private final Function2<ActorConditionListener, Actor, ActorCondition> onActorConditionRoundEffectApplied = new Function2<ActorConditionListener, Actor, ActorCondition>() {
 		@Override public void call(ActorConditionListener listener, Actor actor, ActorCondition condition) { listener.onActorConditionRoundEffectApplied(actor, condition); }
 	};
-
+	private final Function2<ActorConditionListener, Actor, ActorCondition> onActorConditionImmunityAdded = new Function2<ActorConditionListener, Actor, ActorCondition>() {
+		@Override public void call(ActorConditionListener listener, Actor actor, ActorCondition condition) { listener.onActorConditionImmunityAdded(actor, condition); }
+	};
+	private final Function2<ActorConditionListener, Actor, ActorCondition> onActorConditionImmunityRemoved = new Function2<ActorConditionListener, Actor, ActorCondition>() {
+		@Override public void call(ActorConditionListener listener, Actor actor, ActorCondition condition) { listener.onActorConditionImmunityRemoved(actor, condition); }
+	};
+	private final Function2<ActorConditionListener, Actor, ActorCondition> onActorConditionImmunityDurationChanged = new Function2<ActorConditionListener, Actor, ActorCondition>() {
+		@Override public void call(ActorConditionListener listener, Actor actor, ActorCondition condition) { listener.onActorConditionImmunityDurationChanged(actor, condition); }
+	};
+	
 	@Override
 	public void onActorConditionAdded(Actor actor, ActorCondition condition) {
 		callAllListeners(this.onActorConditionAdded, actor, condition);
@@ -45,5 +54,21 @@ public final class ActorConditionListeners extends ListOfListeners<ActorConditio
 	@Override
 	public void onActorConditionRoundEffectApplied(Actor actor, ActorCondition condition) {
 		callAllListeners(this.onActorConditionRoundEffectApplied, actor, condition);
+	}
+	
+
+	@Override
+	public void onActorConditionImmunityAdded(Actor actor, ActorCondition condition) {
+		callAllListeners(this.onActorConditionImmunityAdded, actor, condition);
+	}
+
+	@Override
+	public void onActorConditionImmunityRemoved(Actor actor, ActorCondition condition) {
+		callAllListeners(this.onActorConditionImmunityRemoved, actor, condition);
+	}
+
+	@Override
+	public void onActorConditionImmunityDurationChanged(Actor actor, ActorCondition condition) {
+		callAllListeners(this.onActorConditionImmunityDurationChanged, actor, condition);
 	}
 }

@@ -1,5 +1,6 @@
 package com.gpl.rpg.AndorsTrail.resource.tiles;
 
+import android.R;
 import android.content.res.Resources;
 import android.graphics.Bitmap;
 import android.graphics.drawable.BitmapDrawable;
@@ -51,6 +52,8 @@ public final class TileManager {
 	public static final int iconID_splatter_brown_2b = 17;
 	public static final int iconID_splatter_white_1a = 18;
 	public static final int iconID_splatter_white_1b = 19;
+	
+	public static final int iconID_immunity_overlay = 20;
 
 	public int tileSize;
 	public float density;
@@ -61,7 +64,7 @@ public final class TileManager {
 
 
 	public final TileCache tileCache = new TileCache();
-	public final TileCollection preloadedTiles = new TileCollection(113);
+	public final TileCollection preloadedTiles = new TileCollection(114);
 	public TileCollection currentMapTiles;
 	public TileCollection adjacentMapTiles;
 	private final HashSet<Integer> preloadedTileIDs = new HashSet<Integer>();
@@ -140,12 +143,28 @@ public final class TileManager {
 	public void setImageViewTileForMonster(Resources res, TextView textView, int iconID) { setImageViewTile(res, textView, currentMapTiles.getBitmap(iconID)); }
 	public void setImageViewTileForPlayer(Resources res, TextView textView, int iconID) { setImageViewTile(res, textView, preloadedTiles.getBitmap(iconID)); }
 	public void setImageViewTile(Resources res, TextView textView, ActorConditionType conditionType) { setImageViewTile(res, textView, preloadedTiles.getBitmap(conditionType.iconID)); }
+	public void setImageViewTile(Resources res, TextView textView, ActorConditionType conditionType, boolean immunityOverlay) { setImageViewTile(res, textView, preloadedTiles.getBitmap(conditionType.iconID), immunityOverlay); }
 	public void setImageViewTileForUIIcon(Resources res, TextView textView, int iconID) { setImageViewTile(res, textView, preloadedTiles.getBitmap(iconID)); }
 	private void setImageViewTile(Resources res, TextView textView, Bitmap b) { 
 		if (density > 1) {
 			setImageViewTile(textView, new BitmapDrawable(res, Bitmap.createScaledBitmap(b, (int)(tileSize*density), (int)(tileSize*density), true)));
 		} else {
 			setImageViewTile(textView, new BitmapDrawable(res, b)); 
+		}
+	}
+	public void setImageViewTile(Resources res, TextView textView, Bitmap b, boolean immunityOverlay) {
+		if (!immunityOverlay) setImageViewTile(res, textView, b);
+		else {
+			Drawable[] layers = new Drawable[2];
+			if (density > 1) {
+				layers[0] = new BitmapDrawable(res, Bitmap.createScaledBitmap(b, (int)(tileSize*density), (int)(tileSize*density), true));
+				layers[1] = new BitmapDrawable(res, preloadedTiles.getBitmap(iconID_immunity_overlay));
+			} else {
+				layers[0] = new BitmapDrawable(res, b);
+				layers[1] = new BitmapDrawable(res, preloadedTiles.getBitmap(iconID_immunity_overlay));
+			}
+			LayerDrawable layered = new LayerDrawable(layers);
+			setImageViewTile(textView, layered);
 		}
 	}
 	private void setImageViewTile(TextView textView, Drawable d) {
@@ -195,13 +214,29 @@ public final class TileManager {
 	public void setImageViewTile(Resources res, ImageView imageView, Player player) { setImageViewTileForPlayer(res, imageView, player.iconID); }
 	public void setImageViewTileForMonster(Resources res, ImageView imageView, int iconID) {  setImageViewTile(res, imageView, currentMapTiles.getBitmap(iconID)); }
 	public void setImageViewTileForPlayer(Resources res, ImageView imageView, int iconID) {  setImageViewTile(res, imageView, preloadedTiles.getBitmap(iconID)); }
-	public void setImageViewTile(Resources res, ImageView imageView, ActorConditionType conditionType) {  setImageViewTile(res, imageView, preloadedTiles.getBitmap(conditionType.iconID)); }
+//	public void setImageViewTile(Resources res, ImageView imageView, ActorConditionType conditionType) {  setImageViewTile(res, imageView, preloadedTiles.getBitmap(conditionType.iconID)); }
+	public void setImageViewTile(Resources res, ImageView imageView, ActorConditionType conditionType, boolean immunityOverlay) {  setImageViewTile(res, imageView, preloadedTiles.getBitmap(conditionType.iconID), immunityOverlay); }
 	public void setImageViewTileForUIIcon(Resources res, ImageView imageView, int iconID) { setImageViewTile(res, imageView, preloadedTiles.getBitmap(iconID)); }
 	public void setImageViewTile(Resources res, ImageView imageView, Bitmap b) {
 		if (density > 1) {
 			setImageViewTile(imageView, new BitmapDrawable(res, Bitmap.createScaledBitmap(b, (int)(tileSize*density), (int)(tileSize*density), true)));
 		} else {
 			setImageViewTile(imageView, new BitmapDrawable(res, b)); 
+		}
+	}
+	public void setImageViewTile(Resources res, ImageView imageView, Bitmap b, boolean immunityOverlay) {
+		if (!immunityOverlay) setImageViewTile(res, imageView, b);
+		else {
+			Drawable[] layers = new Drawable[2];
+			if (density > 1) {
+				layers[0] = new BitmapDrawable(res, Bitmap.createScaledBitmap(b, (int)(tileSize*density), (int)(tileSize*density), true));
+				layers[1] = new BitmapDrawable(res, preloadedTiles.getBitmap(iconID_immunity_overlay));
+			} else {
+				layers[0] = new BitmapDrawable(res, b);
+				layers[1] = new BitmapDrawable(res, preloadedTiles.getBitmap(iconID_immunity_overlay));
+			}
+			LayerDrawable layered = new LayerDrawable(layers);
+			setImageViewTile(imageView, layered);
 		}
 	}
 	public void setImageViewTile(ImageView imageView, Drawable d) {

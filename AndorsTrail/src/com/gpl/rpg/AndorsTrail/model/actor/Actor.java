@@ -24,6 +24,7 @@ public class Actor {
 	public final Range ap = new Range();
 	public final Range health = new Range();
 	public final ArrayList<ActorCondition> conditions = new ArrayList<ActorCondition>();
+	public final ArrayList<ActorCondition> immunities = new ArrayList<ActorCondition>();
 	public int moveCost;
 	public int attackCost;
 	public int attackChance;

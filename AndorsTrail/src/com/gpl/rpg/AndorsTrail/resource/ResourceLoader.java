@@ -19,7 +19,7 @@ import java.util.Collection;
 
 public final class ResourceLoader {
 
-	private static final int itemCategoriesResourceId = R.array.loadresource_itemcategories;
+	private static final int itemCategoriesResourceId = AndorsTrailApplication.DEVELOPMENT_DEBUGRESOURCES ? R.array.loadresource_itemcategories_debug : R.array.loadresource_itemcategories;
 	private static final int actorConditionsResourceId = AndorsTrailApplication.DEVELOPMENT_DEBUGRESOURCES ? R.array.loadresource_actorconditions_debug : R.array.loadresource_actorconditions;
 	private static final int itemsResourceId = AndorsTrailApplication.DEVELOPMENT_DEBUGRESOURCES ? R.array.loadresource_items_debug : R.array.loadresource_items;
 	private static final int droplistsResourceId = AndorsTrailApplication.DEVELOPMENT_DEBUGRESOURCES ? R.array.loadresource_droplists_debug : R.array.loadresource_droplists;
@@ -63,6 +63,7 @@ public final class ResourceLoader {
 			loader.prepareTileID(R.drawable.ui_splatters1, i);
 			loader.prepareTileID(R.drawable.ui_splatters1, i+8);
 		}
+		loader.prepareTileID(R.drawable.ui_icon_skill, 0);
 
 
 		// ========================================================================
@@ -234,6 +235,7 @@ public final class ResourceLoader {
 		loader.prepareTileset(R.drawable.ui_quickslots, "ui_quickslots", sz2x1, sz1x1, mTileSize);
 		loader.prepareTileset(R.drawable.ui_icon_equipment, "ui_icon_equipment", sz1x1, sz1x1, mTileSize);
 		loader.prepareTileset(R.drawable.ui_splatters1, "ui_splatters1", new Size(8, 2), sz1x1, mTileSize);
+		loader.prepareTileset(R.drawable.ui_icon_skill, "ui_icon_skill", sz1x1, sz1x1, mTileSize);
 
 		loader.prepareTileset(R.drawable.actorconditions_1, "actorconditions_1", new Size(14, 8), sz1x1, mTileSize);
 		loader.prepareTileset(R.drawable.actorconditions_2, "actorconditions_2", sz3x1, sz1x1, mTileSize);
