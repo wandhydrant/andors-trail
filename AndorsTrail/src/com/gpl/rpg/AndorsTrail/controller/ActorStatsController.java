@@ -1,5 +1,8 @@
 package com.gpl.rpg.AndorsTrail.controller;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import com.gpl.rpg.AndorsTrail.context.ControllerContext;
 import com.gpl.rpg.AndorsTrail.context.WorldContext;
 import com.gpl.rpg.AndorsTrail.controller.listeners.ActorConditionListeners;
@@ -107,7 +110,8 @@ public final class ActorStatsController {
 			for (ActorConditionEffect e : equipEffects.addedConditions) {
 				if (!e.conditionType.conditionTypeID.equals(type.conditionTypeID)) continue;
 				if (!e.isImmunity()) continue;
-				// The player is wearing some other item that gives this condition. It will not be removed now.
+				if (e.duration != duration) continue;
+				// The player is wearing some other item that gives this immunity. It will not be removed now.
 				return;
 			}
 		}
@@ -119,6 +123,26 @@ public final class ActorStatsController {
 			player.immunities.remove(i);
 			actorConditionListeners.onActorConditionImmunityRemoved(player, c);
 			break;
+		}
+		//Looking for still-equipped items that would reapply this actor condition.
+		List<ActorConditionEffect> toReapply = new ArrayList<ActorConditionEffect>();
+		for (Inventory.WearSlot slot : Inventory.WearSlot.values()) {
+			ItemType t = player.inventory.getItemTypeInWearSlot(slot);
+			if (t == null) continue;
+
+			ItemTraits_OnEquip equipEffects = t.effects_equip;
+			if (equipEffects == null) continue;
+			if (equipEffects.addedConditions == null) continue;
+			for (ActorConditionEffect e : equipEffects.addedConditions) {
+				if (!e.conditionType.conditionTypeID.equals(type.conditionTypeID)) continue;
+				//There's another immunity (a temporary one for example) active. No nned to keep looking.
+				if (e.isImmunity()) return;
+				// The player is wearing some other item that gives this formerly immune actor condition
+				toReapply.add(e);
+			}
+		}
+		for (ActorConditionEffect e : toReapply) {
+			applyActorCondition(player, e, ActorCondition.DURATION_FOREVER);
 		}
 	}	
 

@@ -308,6 +308,13 @@ public final class Player extends Actor {
 			}
 		}
 
+		if (fileversion >= 43) {
+			final int numConditions = src.readInt();
+			for(int i = 0; i < numConditions; ++i) {
+				this.immunities.add(new ActorCondition(src, world, fileversion));
+			}
+		}
+
 		this.lastPosition.readFromParcel(src, fileversion);
 		this.nextPosition.readFromParcel(src, fileversion);
 		this.level = src.readInt();
@@ -378,6 +385,10 @@ public final class Player extends Actor {
 		position.writeToParcel(dest);
 		dest.writeInt(conditions.size());
 		for (ActorCondition c : conditions) {
+			c.writeToParcel(dest);
+		}
+		dest.writeInt(immunities.size());
+		for (ActorCondition c : immunities) {
 			c.writeToParcel(dest);
 		}
 		lastPosition.writeToParcel(dest);
