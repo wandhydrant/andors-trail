@@ -79,6 +79,9 @@ public final class ConversationController {
 			case actorCondition:
 				addActorConditionReward(player, effect.effectID, effect.value, result);
 				break;
+			case actorConditionImmunity:
+				addActorConditionImmunityReward(player, effect.effectID, effect.value, result);
+				break;
 			case skillIncrease:
 				addSkillReward(player, SkillCollection.SkillID.valueOf(effect.effectID), result);
 				break;
@@ -207,7 +210,20 @@ public final class ConversationController {
 		int magnitude = 1;
 		int duration = value;
 		if (value == ActorCondition.DURATION_FOREVER) duration = ActorCondition.DURATION_FOREVER;
-		else if (value == ActorCondition.MAGNITUDE_REMOVE_ALL) magnitude = ActorCondition.MAGNITUDE_REMOVE_ALL;
+		else if (value == ActorCondition.MAGNITUDE_REMOVE_ALL) {
+			duration = ActorCondition.DURATION_NONE;
+			magnitude = ActorCondition.MAGNITUDE_REMOVE_ALL;
+		}
+
+		ActorConditionType conditionType = world.actorConditionsTypes.getActorConditionType(conditionTypeID);
+		ActorConditionEffect e = new ActorConditionEffect(conditionType, magnitude, duration, always);
+		controllers.actorStatsController.applyActorCondition(player, e);
+		result.actorConditions.add(e);
+	}
+
+	private void addActorConditionImmunityReward(Player player, String conditionTypeID, int value, ScriptEffectResult result) {
+		int duration = value;
+		int magnitude = ActorCondition.MAGNITUDE_REMOVE_ALL;
 
 		ActorConditionType conditionType = world.actorConditionsTypes.getActorConditionType(conditionTypeID);
 		ActorConditionEffect e = new ActorConditionEffect(conditionType, magnitude, duration, always);
