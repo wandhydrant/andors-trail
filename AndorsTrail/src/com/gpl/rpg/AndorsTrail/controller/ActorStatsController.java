@@ -406,6 +406,32 @@ public final class ActorStatsController {
 				c.duration -= 1;
 				actorConditionListeners.onActorConditionImmunityDurationChanged(actor, c);
 			}
+			if (actor instanceof Player) {
+				Player player = (Player) actor;
+				//Looking for still-equipped items that would reapply this actor condition.
+				List<ActorConditionEffect> toReapply = new ArrayList<ActorConditionEffect>();
+				for (Inventory.WearSlot slot : Inventory.WearSlot.values()) {
+					ItemType t = player.inventory.getItemTypeInWearSlot(slot);
+					if (t == null) continue;
+
+					ItemTraits_OnEquip equipEffects = t.effects_equip;
+					if (equipEffects == null) continue;
+					if (equipEffects.addedConditions == null) continue;
+					for (ActorConditionEffect e : equipEffects.addedConditions) {
+						if (!e.conditionType.conditionTypeID.equals(c.conditionType.conditionTypeID)) continue;
+						//There's another immunity (a temporary one for example) active. No need to keep looking.
+						if (e.isImmunity()) {
+							toReapply.clear();
+							break;
+						}
+						// The player is wearing some other item that gives this formerly immune actor condition
+						toReapply.add(e);
+					}
+				}
+				for (ActorConditionEffect e : toReapply) {
+					applyActorCondition(player, e, ActorCondition.DURATION_FOREVER);
+				}
+			}
 		}
 		if (removedAnyConditions) {
 			recalculateActorCombatTraits(actor);
