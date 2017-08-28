@@ -2,7 +2,6 @@ package com.gpl.rpg.AndorsTrail.view;
 
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Collection;
 
 import android.content.Context;
 import android.content.res.Resources;
@@ -18,7 +17,7 @@ import com.gpl.rpg.AndorsTrail.model.item.ItemTraits_OnUse;
 
 public final class ItemEffectsView_OnDeath extends LinearLayout {
 	private final LinearLayout itemeffect_ondeath_ontarget_list;
-	private final ActorConditionEffectList itemeffect_onuse_conditions_source;
+	private final ActorConditionEffectList itemeffect_ondeath_conditions_source;
 	private final TextView itemeffect_ondeath_target_title;
 
 	public ItemEffectsView_OnDeath(Context context, AttributeSet attr) {
@@ -29,7 +28,7 @@ public final class ItemEffectsView_OnDeath extends LinearLayout {
 
 		itemeffect_ondeath_ontarget_list = (LinearLayout) findViewById(R.id.itemeffect_ondeath_ontarget_list);
 		itemeffect_ondeath_target_title = (TextView) findViewById(R.id.itemeffect_ondeath_target_title);
-		itemeffect_onuse_conditions_source = (ActorConditionEffectList) findViewById(R.id.itemeffect_onuse_conditions_source);
+		itemeffect_ondeath_conditions_source = (ActorConditionEffectList) findViewById(R.id.itemeffect_ondeath_conditions_source);
 	}
 
 	public void update(ItemTraits_OnUse effects) {
@@ -48,7 +47,7 @@ public final class ItemEffectsView_OnDeath extends LinearLayout {
 				if (effects.changedStats.currentAPBoost != null || effects.changedStats.currentHPBoost != null) sourceHasStatsModifiers = true;
 			}
 		}
-		itemeffect_onuse_conditions_source.update(sourceEffects);
+		itemeffect_ondeath_conditions_source.update(sourceEffects);
 		if (sourceEffects.isEmpty() && !sourceHasStatsModifiers) {
 			itemeffect_ondeath_target_title.setVisibility(View.GONE);
 		} else {

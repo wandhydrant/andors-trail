@@ -11,7 +11,6 @@ import com.gpl.rpg.AndorsTrail.R;
 import com.gpl.rpg.AndorsTrail.model.ability.ActorConditionEffect;
 import com.gpl.rpg.AndorsTrail.model.ability.traits.StatsModifierTraits;
 import com.gpl.rpg.AndorsTrail.model.item.ItemTraits_OnHitReceived;
-import com.gpl.rpg.AndorsTrail.model.item.ItemTraits_OnUse;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -20,8 +19,8 @@ import java.util.Collection;
 public final class ItemEffectsView_OnHitReceived extends LinearLayout {
 	private final LinearLayout itemeffect_onhitreceived_onsource_list;
 	private final LinearLayout itemeffect_onhitreceived_ontarget_list;
-	private final ActorConditionEffectList itemeffect_onuse_conditions_source;
-	private final ActorConditionEffectList itemeffect_onuse_conditions_target;
+	private final ActorConditionEffectList itemeffect_onhitreceived_conditions_source;
+	private final ActorConditionEffectList itemeffect_onhitreceived_conditions_target;
 	private final TextView itemeffect_onhitreceived_source_title;
 	private final TextView itemeffect_onhitreceived_target_title;
 
@@ -35,8 +34,8 @@ public final class ItemEffectsView_OnHitReceived extends LinearLayout {
 		itemeffect_onhitreceived_ontarget_list = (LinearLayout) findViewById(R.id.itemeffect_onhitreceived_ontarget_list);
 		itemeffect_onhitreceived_source_title = (TextView) findViewById(R.id.itemeffect_onhitreceived_source_title);
 		itemeffect_onhitreceived_target_title = (TextView) findViewById(R.id.itemeffect_onhitreceived_target_title);
-		itemeffect_onuse_conditions_source = (ActorConditionEffectList) findViewById(R.id.itemeffect_onuse_conditions_source);
-		itemeffect_onuse_conditions_target = (ActorConditionEffectList) findViewById(R.id.itemeffect_onuse_conditions_target);
+		itemeffect_onhitreceived_conditions_source = (ActorConditionEffectList) findViewById(R.id.itemeffect_onhitreceived_conditions_source);
+		itemeffect_onhitreceived_conditions_target = (ActorConditionEffectList) findViewById(R.id.itemeffect_onhitreceived_conditions_target);
 	}
 
 	public void update(Collection<ItemTraits_OnHitReceived> effects) {
@@ -65,8 +64,8 @@ public final class ItemEffectsView_OnHitReceived extends LinearLayout {
 				}
 			}
 		}
-		itemeffect_onuse_conditions_source.update(sourceEffects);
-		itemeffect_onuse_conditions_target.update(targetEffects);
+		itemeffect_onhitreceived_conditions_source.update(sourceEffects);
+		itemeffect_onhitreceived_conditions_target.update(targetEffects);
 		if (sourceEffects.isEmpty() && !sourceHasStatsModifiers) {
 			itemeffect_onhitreceived_source_title.setVisibility(View.GONE);
 		} else {

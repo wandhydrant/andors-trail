@@ -475,7 +475,8 @@ public final class ActorStatsController {
 		if (actor.isPlayer) chanceRollBias = SkillController.getActorConditionEffectChanceRollBias(conditionEffect, (Player) actor);
 
 		if (!Constants.rollResult(conditionEffect.chance, chanceRollBias)) return;
-		//TODO message Actor Condition
+		if (actor.isPlayer) combatActionListeners.onPlayerReceviesActorCondition(conditionEffect);
+		else combatActionListeners.onMonsterReceivesActorCondition(conditionEffect, (Monster)actor);
 		applyActorCondition(actor, conditionEffect);
 	}
 

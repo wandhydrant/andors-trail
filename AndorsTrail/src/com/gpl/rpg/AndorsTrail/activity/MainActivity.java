@@ -193,6 +193,8 @@ public final class MainActivity
 		controllers.movementController.playerMovementListeners.remove(this);
 		controllers.combatController.combatActionListeners.remove(this);
 		controllers.combatController.combatTurnListeners.remove(this);
+		controllers.actorStatsController.combatActionListeners.remove(this);
+		controllers.skillController.combatActionListeners.remove(this);
 		controllers.mapController.worldEventListeners.remove(this);
 	}
 
