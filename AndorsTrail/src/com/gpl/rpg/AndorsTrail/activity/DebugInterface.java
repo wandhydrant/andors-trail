@@ -101,6 +101,13 @@ public final class DebugInterface {
 					showToast(mainActivity, "DEBUG: hp set to max", Toast.LENGTH_SHORT);
 				}
 			})
+			,new DebugButton("skill", new OnClickListener() {
+				@Override
+				public void onClick(View arg0) {
+					world.model.player.availableSkillIncreases += 10;
+					showToast(mainActivity, "DEBUG: 10 skill points", Toast.LENGTH_SHORT);
+				}
+			})
 			/*
 			,new DebugButton("cg", new OnClickListener() {
 				@Override
