@@ -7,6 +7,7 @@ import com.gpl.rpg.AndorsTrail.context.ControllerContext;
 import com.gpl.rpg.AndorsTrail.context.WorldContext;
 import com.gpl.rpg.AndorsTrail.controller.listeners.ActorConditionListeners;
 import com.gpl.rpg.AndorsTrail.controller.listeners.ActorStatsListeners;
+import com.gpl.rpg.AndorsTrail.controller.listeners.CombatActionListeners;
 import com.gpl.rpg.AndorsTrail.controller.listeners.PlayerStatsListeners;
 import com.gpl.rpg.AndorsTrail.model.ability.ActorCondition;
 import com.gpl.rpg.AndorsTrail.model.ability.ActorConditionEffect;
@@ -19,6 +20,7 @@ import com.gpl.rpg.AndorsTrail.model.actor.Monster;
 import com.gpl.rpg.AndorsTrail.model.actor.Player;
 import com.gpl.rpg.AndorsTrail.model.item.Inventory;
 import com.gpl.rpg.AndorsTrail.model.item.ItemTraits_OnEquip;
+import com.gpl.rpg.AndorsTrail.model.item.ItemTraits_OnHitReceived;
 import com.gpl.rpg.AndorsTrail.model.item.ItemTraits_OnUse;
 import com.gpl.rpg.AndorsTrail.model.item.ItemType;
 import com.gpl.rpg.AndorsTrail.model.map.MonsterSpawnArea;
@@ -31,6 +33,7 @@ public final class ActorStatsController {
 	public final ActorConditionListeners actorConditionListeners = new ActorConditionListeners();
 	public final ActorStatsListeners actorStatsListeners = new ActorStatsListeners();
 	public final PlayerStatsListeners playerStatsListeners = new PlayerStatsListeners();
+	public final CombatActionListeners combatActionListeners = new CombatActionListeners();
 
 	public ActorStatsController(ControllerContext controllers, WorldContext world) {
 		this.controllers = controllers;
@@ -458,12 +461,21 @@ public final class ActorStatsController {
 			controllers.effectController.startEnqueuedEffect(source.position);
 		}
 	}
+	
+	public void applyHitReceivedEffect(Actor source, Actor target, ItemTraits_OnHitReceived effect) {
+		applyUseEffect(source, target, effect);
+		if (effect.changedStats_target != null) {
+			applyStatsModifierEffect(target, effect.changedStats, 1);
+			controllers.effectController.startEnqueuedEffect(target.position);
+		}
+	}
 
 	private void rollForConditionEffect(Actor actor, ActorConditionEffect conditionEffect) {
 		int chanceRollBias = 0;
 		if (actor.isPlayer) chanceRollBias = SkillController.getActorConditionEffectChanceRollBias(conditionEffect, (Player) actor);
 
 		if (!Constants.rollResult(conditionEffect.chance, chanceRollBias)) return;
+		//TODO message Actor Condition
 		applyActorCondition(actor, conditionEffect);
 	}
 
@@ -509,6 +521,13 @@ public final class ActorStatsController {
 
 			applyUseEffect(player, null, type.effects_kill);
 		}
+	}
+	
+	public void applyOnDeathEffectsToPlayer(Player player, Actor monster) {
+		ItemTraits_OnUse onDeathEffect = monster.getOnDeathEffects();
+		if (onDeathEffect == null) return;
+		
+		applyUseEffect(player, null, onDeathEffect);
 	}
 
 	public void applySkillEffectsForNewRound(Player player, PredefinedMap currentMap) {

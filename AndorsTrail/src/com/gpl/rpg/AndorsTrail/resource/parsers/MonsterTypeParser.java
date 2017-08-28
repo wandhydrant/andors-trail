@@ -7,6 +7,7 @@ import com.gpl.rpg.AndorsTrail.controller.Constants;
 import com.gpl.rpg.AndorsTrail.model.ability.ActorConditionTypeCollection;
 import com.gpl.rpg.AndorsTrail.model.actor.MonsterType;
 import com.gpl.rpg.AndorsTrail.model.item.DropListCollection;
+import com.gpl.rpg.AndorsTrail.model.item.ItemTraits_OnHitReceived;
 import com.gpl.rpg.AndorsTrail.model.item.ItemTraits_OnUse;
 import com.gpl.rpg.AndorsTrail.resource.DynamicTileLoader;
 import com.gpl.rpg.AndorsTrail.resource.TranslationLoader;
@@ -49,6 +50,8 @@ public final class MonsterTypeParser extends JsonCollectionParserFor<MonsterType
 		int blockChance = o.optInt(JsonFieldNames.Monster.blockChance, 0);
 		int damageResistance = o.optInt(JsonFieldNames.Monster.damageResistance, 0);
 		final ItemTraits_OnUse hitEffect = itemTraitsParser.parseItemTraits_OnUse(o.optJSONObject(JsonFieldNames.Monster.hitEffect));
+		final ItemTraits_OnHitReceived hitReceivedEffect = itemTraitsParser.parseItemTraits_OnHitReceived(o.optJSONObject(JsonFieldNames.Monster.hitReceivedEffect));
+		final ItemTraits_OnUse deathEffect = itemTraitsParser.parseItemTraits_OnUse(o.optJSONObject(JsonFieldNames.Monster.deathEffect));
 
 		final int exp = getExpectedMonsterExperience(attackCost, attackChance, damagePotential, criticalSkill, criticalMultiplier, blockChance, damageResistance, hitEffect, maxHP, maxAP);
 
@@ -76,6 +79,8 @@ public final class MonsterTypeParser extends JsonCollectionParserFor<MonsterType
 				, blockChance
 				, damageResistance
 				, hitEffect == null ? null : new ItemTraits_OnUse[] { hitEffect }
+				, hitReceivedEffect == null ? null : new ItemTraits_OnHitReceived[] { hitReceivedEffect }
+				, deathEffect
 		));
 	}
 
