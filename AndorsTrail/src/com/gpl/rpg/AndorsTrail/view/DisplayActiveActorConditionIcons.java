@@ -49,14 +49,14 @@ public final class DisplayActiveActorConditionIcons implements ActorConditionLis
 	public void onActorConditionAdded(Actor actor, ActorCondition condition) {
 		if (actor != world.model.player) return;
 		ActiveConditionIcon icon = getFirstFreeIcon();
-		icon.setActiveCondition(condition);
+		icon.setActiveCondition(condition, false);
 		icon.show();
 	}
 
 	@Override
 	public void onActorConditionRemoved(Actor actor, ActorCondition condition) {
 		if (actor != world.model.player) return;
-		ActiveConditionIcon icon = getIconFor(condition);
+		ActiveConditionIcon icon = getIconFor(condition, false);
 		if (icon == null) return;
 		icon.hide(true);
 	}
@@ -68,7 +68,7 @@ public final class DisplayActiveActorConditionIcons implements ActorConditionLis
 	@Override
 	public void onActorConditionMagnitudeChanged(Actor actor, ActorCondition condition) {
 		if (actor != world.model.player) return;
-		ActiveConditionIcon icon = getIconFor(condition);
+		ActiveConditionIcon icon = getIconFor(condition, false);
 		if (icon == null) return;
 		icon.setIconText();
 	}
@@ -76,11 +76,32 @@ public final class DisplayActiveActorConditionIcons implements ActorConditionLis
 	@Override
 	public void onActorConditionRoundEffectApplied(Actor actor, ActorCondition condition) {
 		if (actor != world.model.player) return;
-		ActiveConditionIcon icon = getIconFor(condition);
+		ActiveConditionIcon icon = getIconFor(condition, false);
 		if (icon == null) return;
 		icon.pulseAnimate();
 	}
 
+
+	@Override
+	public void onActorConditionImmunityAdded(Actor actor, ActorCondition condition) {
+		if (actor != world.model.player) return;
+		ActiveConditionIcon icon = getFirstFreeIcon();
+		icon.setActiveCondition(condition, true);
+		icon.show();
+	}
+
+	@Override
+	public void onActorConditionImmunityRemoved(Actor actor, ActorCondition condition) {
+		if (actor != world.model.player) return;
+		ActiveConditionIcon icon = getIconFor(condition, true);
+		if (icon == null) return;
+		icon.hide(true);
+	}
+
+	@Override
+	public void onActorConditionImmunityDurationChanged(Actor actor, ActorCondition condition) {
+	}
+	
 	public void unsubscribe() {
 		controllers.actorStatsController.actorConditionListeners.remove(this);
 		for (ActiveConditionIcon icon : currentConditionIcons) icon.condition = null;
@@ -89,13 +110,17 @@ public final class DisplayActiveActorConditionIcons implements ActorConditionLis
 	public void subscribe() {
 		for (ActiveConditionIcon icon : currentConditionIcons) icon.hide(false);
 		for (ActorCondition condition : world.model.player.conditions) {
-			getFirstFreeIcon().setActiveCondition(condition);
+			getFirstFreeIcon().setActiveCondition(condition, false);
+		}
+		for (ActorCondition condition : world.model.player.immunities) {
+			getFirstFreeIcon().setActiveCondition(condition, true);
 		}
 		controllers.actorStatsController.actorConditionListeners.add(this);
 	}
 
 	private final class ActiveConditionIcon implements AnimationListener {
 		public final int id;
+		private boolean immunity = false;
 		public ActorCondition condition;
 		public final ImageView image;
 		public final TextView text;
@@ -120,15 +145,16 @@ public final class DisplayActiveActorConditionIcons implements ActorConditionLis
 			text.setShadowLayer(1, 1, 1, res.getColor(android.R.color.black));
 		}
 
-		private void setActiveCondition(ActorCondition condition) {
+		private void setActiveCondition(ActorCondition condition, boolean immunity) {
+			this.immunity = immunity;
 			this.condition = condition;
-			tileManager.setImageViewTile(res, image, condition.conditionType);
+			tileManager.setImageViewTile(res, image, condition.conditionType, immunity);
 			image.setVisibility(View.VISIBLE);
 			setIconText();
 		}
 
 		public void setIconText() {
-			boolean showMagnitude = (condition.magnitude != 1);
+			boolean showMagnitude = (condition.magnitude != 1 && condition.magnitude != ActorCondition.MAGNITUDE_REMOVE_ALL);
 			if (showMagnitude) {
 				text.setText(Integer.toString(condition.magnitude));
 				text.setVisibility(View.VISIBLE);
@@ -186,9 +212,9 @@ public final class DisplayActiveActorConditionIcons implements ActorConditionLis
 		}
 	}
 
-	private ActiveConditionIcon getIconFor(ActorCondition condition) {
+	private ActiveConditionIcon getIconFor(ActorCondition condition, boolean immunity) {
 		for (ActiveConditionIcon icon : currentConditionIcons) {
-			if (icon.condition == condition) return icon;
+			if (icon.condition == condition && icon.immunity == immunity) return icon;
 		}
 		return null;
 	}

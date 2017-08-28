@@ -265,5 +265,116 @@
             	"mapName":"debugmap"
         	}
     	]
-	}
+	},
+    {
+        "id":"chaotic_rewarder_0",
+        "message":"What do you want ?",
+        "replies":[
+            {
+                "text":"Apply condition",
+                "nextPhraseID":"chaotic_rewarder_1"
+            },
+            {
+                "text":"Clear condition",
+                "nextPhraseID":"chaotic_rewarder_2"
+            },
+            {
+                "text":"Give 5 rounds of immunity",
+                "nextPhraseID":"chaotic_rewarder_3"
+            },
+            {
+                "text":"Infinite immunity",
+                "nextPhraseID":"chaotic_rewarder_4"
+            },
+            {
+                "text":"Apply condition forever",
+                "nextPhraseID":"chaotic_rewarder_5"
+            }
+        ]
+    },
+    {
+        "id":"chaotic_rewarder_1",
+        "message":"Applied.",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"chaotic_rewarder_0"
+            }
+        ],
+        "rewards":[
+            {
+                "rewardType":"actorCondition",
+                "rewardID":"chaotic_grip",
+                "value":5
+            }
+        ]
+    },
+    {
+        "id":"chaotic_rewarder_2",
+        "message":"Cleared.",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"chaotic_rewarder_0"
+            }
+        ],
+        "rewards":[
+            {
+                "rewardType":"actorCondition",
+                "rewardID":"chaotic_grip",
+                "value":-99
+            }
+        ]
+    },
+    {
+        "id":"chaotic_rewarder_3",
+        "message":"5 rounds immune!",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"chaotic_rewarder_0"
+            }
+        ],
+        "rewards":[
+            {
+                "rewardType":"actorConditionImmunity",
+                "rewardID":"chaotic_grip",
+                "value":5
+            }
+        ]
+    },
+    {
+        "id":"chaotic_rewarder_4",
+        "message":"Immune forever !",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"chaotic_rewarder_0"
+            }
+        ],
+        "rewards":[
+            {
+                "rewardType":"actorConditionImmunity",
+                "rewardID":"chaotic_grip",
+                "value":999
+            }
+        ]
+    },
+    {
+        "id":"chaotic_rewarder_5",
+        "message":"Punished forever !",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"chaotic_rewarder_0"
+            }
+        ],
+        "rewards":[
+            {
+                "rewardType":"actorCondition",
+                "rewardID":"chaotic_grip",
+                "value":999
+            }
+        ]
+    }
 ]

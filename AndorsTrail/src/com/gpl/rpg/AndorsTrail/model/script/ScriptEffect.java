@@ -6,6 +6,7 @@ public final class ScriptEffect {
 		, dropList
 		, skillIncrease
 		, actorCondition
+		, actorConditionImmunity
 		, alignmentChange
 		, giveItem
 		, createTimer

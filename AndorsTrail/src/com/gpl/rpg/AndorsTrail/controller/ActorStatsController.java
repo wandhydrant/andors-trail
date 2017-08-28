@@ -1,5 +1,8 @@
 package com.gpl.rpg.AndorsTrail.controller;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import com.gpl.rpg.AndorsTrail.context.ControllerContext;
 import com.gpl.rpg.AndorsTrail.context.WorldContext;
 import com.gpl.rpg.AndorsTrail.controller.listeners.ActorConditionListeners;
@@ -47,6 +50,9 @@ public final class ActorStatsController {
 		if (equipEffects == null) return;
 		if (equipEffects.addedConditions == null) return;
 		for (ActorConditionEffect e : equipEffects.addedConditions) {
+			if (e.isImmunity()) {
+				removeActorConditionImmunity(player, e.conditionType, e.magnitude, ActorCondition.DURATION_FOREVER);
+			}
 			if (e.isRemovalEffect()) continue;
 			if (e.magnitude <= 0) continue;
 			if (e.conditionType.isStacking) {
@@ -91,16 +97,75 @@ public final class ActorStatsController {
 		}
 		removeStackableActorCondition(player, type, magnitude, duration);
 	}
+	
+
+	private void removeActorConditionImmunity(Player player, ActorConditionType type, int magnitude, int duration) {
+		for (Inventory.WearSlot slot : Inventory.WearSlot.values()) {
+			ItemType t = player.inventory.getItemTypeInWearSlot(slot);
+			if (t == null) continue;
+
+			ItemTraits_OnEquip equipEffects = t.effects_equip;
+			if (equipEffects == null) continue;
+			if (equipEffects.addedConditions == null) continue;
+			for (ActorConditionEffect e : equipEffects.addedConditions) {
+				if (!e.conditionType.conditionTypeID.equals(type.conditionTypeID)) continue;
+				if (!e.isImmunity()) continue;
+				if (e.duration != duration) continue;
+				// The player is wearing some other item that gives this immunity. It will not be removed now.
+				return;
+			}
+		}
+		for(int i = player.immunities.size() - 1; i >= 0; --i) {
+			ActorCondition c = player.immunities.get(i);
+			if (!type.conditionTypeID.equals(c.conditionType.conditionTypeID)) continue;
+			if (c.duration != duration) continue;
+
+			player.immunities.remove(i);
+			actorConditionListeners.onActorConditionImmunityRemoved(player, c);
+			break;
+		}
+		//Looking for still-equipped items that would reapply this actor condition.
+		List<ActorConditionEffect> toReapply = new ArrayList<ActorConditionEffect>();
+		for (Inventory.WearSlot slot : Inventory.WearSlot.values()) {
+			ItemType t = player.inventory.getItemTypeInWearSlot(slot);
+			if (t == null) continue;
+
+			ItemTraits_OnEquip equipEffects = t.effects_equip;
+			if (equipEffects == null) continue;
+			if (equipEffects.addedConditions == null) continue;
+			for (ActorConditionEffect e : equipEffects.addedConditions) {
+				if (!e.conditionType.conditionTypeID.equals(type.conditionTypeID)) continue;
+				//There's another immunity (a temporary one for example) active. No nned to keep looking.
+				if (e.isImmunity()) return;
+				// The player is wearing some other item that gives this formerly immune actor condition
+				toReapply.add(e);
+			}
+		}
+		for (ActorConditionEffect e : toReapply) {
+			applyActorCondition(player, e, ActorCondition.DURATION_FOREVER);
+		}
+	}	
 
 	public void applyActorCondition(Actor actor, ActorConditionEffect e) { applyActorCondition(actor, e, e.duration); }
 	private void applyActorCondition(Actor actor, ActorConditionEffect e, int duration) {
-		if (e.isRemovalEffect()) {
+		if (e.isImmunity()) {
+			removeAllConditionsOfType(actor, e.conditionType.conditionTypeID);
+			addActorConditionImmunity(actor, e, duration);
+		} else if (e.isRemovalEffect()) {
 			removeAllConditionsOfType(actor, e.conditionType.conditionTypeID);
 		} else if (e.magnitude > 0) {
-			if (e.conditionType.isStacking) {
-				addStackableActorCondition(actor, e, duration);
-			} else {
-				addNonStackableActorCondition(actor, e, duration);
+			boolean immune = false;
+			for (ActorCondition immunity : actor.immunities) {
+				if (e.conditionType.conditionTypeID.equals(immunity.conditionType.conditionTypeID)) {
+					immune = true;
+				}
+			}
+			if (!immune) {
+				if (e.conditionType.isStacking) {
+					addStackableActorCondition(actor, e, duration);
+				} else {
+					addNonStackableActorCondition(actor, e, duration);
+				}
 			}
 		}
 		recalculateActorCombatTraits(actor);
@@ -142,6 +207,23 @@ public final class ActorStatsController {
 		ActorCondition c = e.createCondition(duration);
 		actor.conditions.add(c);
 		actorConditionListeners.onActorConditionAdded(actor, c);
+	}
+	
+	private void addActorConditionImmunity(Actor actor, ActorConditionEffect e, int duration) {
+		final ActorConditionType type = e.conditionType;
+
+		for(int i = actor.immunities.size() - 1; i >= 0; --i) {
+			ActorCondition c = actor.immunities.get(i);
+			if (!type.conditionTypeID.equals(c.conditionType.conditionTypeID)) continue;
+			if (c.duration >= duration) return;
+			// If the actor already has this immunity, but of a shorter duration, we replace the old immunity by the new, longer one.
+			actor.immunities.remove(i);
+			actorConditionListeners.onActorConditionRemoved(actor, c);
+		}
+
+		ActorCondition c = e.createCondition(duration);
+		actor.immunities.add(c);
+		actorConditionListeners.onActorConditionImmunityAdded(actor, c);
 	}
 
 	public void removeAllTemporaryConditions(final Actor actor) {
@@ -210,7 +292,7 @@ public final class ActorStatsController {
 	}
 
 	public void applyConditionsToPlayer(Player player, boolean isFullRound) {
-		if (player.conditions.isEmpty()) return;
+		if (player.conditions.isEmpty() && player.immunities.isEmpty()) return;
 		if (!isFullRound) removeConditionsFromSkillEffects(player);
 
 		applyStatsEffects(player, isFullRound);
@@ -311,6 +393,44 @@ public final class ActorStatsController {
 			} else {
 				c.duration -= 1;
 				actorConditionListeners.onActorConditionDurationChanged(actor, c);
+			}
+		}
+		for(int i = actor.immunities.size() - 1; i >= 0; --i) {
+			ActorCondition c = actor.immunities.get(i);
+			if (!c.isTemporaryEffect()) continue;
+			if (c.duration <= 1) {
+				actor.immunities.remove(i);
+				actorConditionListeners.onActorConditionImmunityRemoved(actor, c);
+				removedAnyConditions = true;
+			} else {
+				c.duration -= 1;
+				actorConditionListeners.onActorConditionImmunityDurationChanged(actor, c);
+			}
+			if (actor instanceof Player) {
+				Player player = (Player) actor;
+				//Looking for still-equipped items that would reapply this actor condition.
+				List<ActorConditionEffect> toReapply = new ArrayList<ActorConditionEffect>();
+				for (Inventory.WearSlot slot : Inventory.WearSlot.values()) {
+					ItemType t = player.inventory.getItemTypeInWearSlot(slot);
+					if (t == null) continue;
+
+					ItemTraits_OnEquip equipEffects = t.effects_equip;
+					if (equipEffects == null) continue;
+					if (equipEffects.addedConditions == null) continue;
+					for (ActorConditionEffect e : equipEffects.addedConditions) {
+						if (!e.conditionType.conditionTypeID.equals(c.conditionType.conditionTypeID)) continue;
+						//There's another immunity (a temporary one for example) active. No need to keep looking.
+						if (e.isImmunity()) {
+							toReapply.clear();
+							break;
+						}
+						// The player is wearing some other item that gives this formerly immune actor condition
+						toReapply.add(e);
+					}
+				}
+				for (ActorConditionEffect e : toReapply) {
+					applyActorCondition(player, e, ActorCondition.DURATION_FOREVER);
+				}
 			}
 		}
 		if (removedAnyConditions) {

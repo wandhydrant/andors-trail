@@ -35,11 +35,7 @@ public final class ActorConditionEffectList extends LinearLayout {
 		for (ActorConditionEffect e : effects) {
 			String msg;
 			final ActorConditionType conditionType = e.conditionType;
-			if (e.isRemovalEffect()) {
-				msg = res.getString(R.string.actorcondition_info_removes_all, conditionType.name);
-			} else {
-				msg = describeEffect(res, e);
-			}
+			msg = describeEffect(res, e);
 			TextView tv = new TextView(context);
 			tv.setLayoutParams(layoutParams);
 
@@ -56,23 +52,27 @@ public final class ActorConditionEffectList extends LinearLayout {
 		}
 	}
 
-	private static String describeEffect(Resources res, ActorConditionEffect effect) {
-		String msg = describeEffect(res, effect.conditionType, effect.magnitude, effect.duration);
+	public static String describeEffect(Resources res, ActorConditionEffect effect) {
+		StringBuilder sb = new StringBuilder();
+		if (effect.isImmunity()) {
+			sb.append(res.getString(R.string.actorcondition_info_immunity, effect.conditionType.name));
+		} else if (effect.isRemovalEffect()) {
+			sb.append(res.getString(R.string.actorcondition_info_removes_all, effect.conditionType.name));
+		} else {
+			sb.append(effect.conditionType.name);
+			if (effect.magnitude > 1) {
+				sb.append(" x");
+				sb.append(effect.magnitude);
+			}
+		}
+		if (ActorCondition.isTemporaryEffect(effect.duration)) {
+			sb.append(' ');
+			sb.append(res.getString(R.string.iteminfo_effect_duration, effect.duration));
+		}
+		String msg = sb.toString();
 		if (effect.chance.isMax()) return msg;
 
 		return res.getString(R.string.iteminfo_effect_chance_of, effect.chance.toPercentString(), msg);
-	}
 
-	public static String describeEffect(Resources res, ActorConditionType conditionType, int magnitude, int duration) {
-		StringBuilder sb = new StringBuilder(conditionType.name);
-		if (magnitude > 1) {
-			sb.append(" x");
-			sb.append(magnitude);
-		}
-		if (ActorCondition.isTemporaryEffect(duration)) {
-			sb.append(' ');
-			sb.append(res.getString(R.string.iteminfo_effect_duration, duration));
-		}
-		return sb.toString();
 	}
 }
