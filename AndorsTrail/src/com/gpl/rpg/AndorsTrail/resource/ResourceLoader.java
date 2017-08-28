@@ -63,7 +63,7 @@ public final class ResourceLoader {
 			loader.prepareTileID(R.drawable.ui_splatters1, i);
 			loader.prepareTileID(R.drawable.ui_splatters1, i+8);
 		}
-		loader.prepareTileID(R.drawable.ui_icon_skill, 0);
+		loader.prepareTileID(R.drawable.ui_icon_immunity, 0);
 
 
 		// ========================================================================
