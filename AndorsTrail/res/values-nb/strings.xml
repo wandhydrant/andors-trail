@@ -51,4 +51,145 @@
 	<string name="combat_result_monsterhit">%1$s treffer deg og skader %2$d liv!</string>
 	<string name="change_locale_requires_restart">"Endring av locale krever omstart.  Andors sti har blitt lukket."</string>
 
-</resources>
+<string name="dialog_loading_failed_message">Andors sti kunne ikke laste inn lagringsfilen.
+\n
+\n:(
+\n
+\nDet kan hende den er skadet eller ufullstendig.</string>
+	<string name="dialog_loading_failed_incorrectversion">Andors sti kunne ikke laste inn lagringsfilen. Den ble opprettet med en nyere versjon enn den du kjører nå.</string>
+
+	<string name="heroinfo_levelup">Nivågradering</string>
+	<string name="combat_result_monsterhitcritical">%1$s tok en kritisk smell for %2$d HP!</string>
+	<string name="combat_result_heromiss">Ditt angrep bommet.</string>
+	<string name="combat_result_herohit">Du traff %1$s for %2$s HP!</string>
+	<string name="combat_result_herohitcritical">Du fikk inn et kritisk treff på %1$s for %2$s HP!</string>
+	<string name="combat_result_herokillsmonster">%1$s dør!</string>
+	<string name="combat_not_enough_ap">Ikke not AP igjen denne runden.</string>
+	<string name="combat_hero_dies">Du besvimer, men heldigvis våkner du opp i live, omtåket og utmattet. Du har tapt %1$d erfarenhet.</string>
+	<string name="combat_miss_animation_message">BOM</string>
+	
+	<string name="inventory_info">Info.</string>
+	<string name="inventory_equip">Utrust</string>
+	<string name="inventory_unequip">Fravelg</string>
+	<string name="inventory_use">Bruk</string>
+	<string name="inventory_drop">Legg fra deg</string>
+	<string name="inventory_item_used">Du brukte %1$s.</string>
+	<string name="inventory_item_dropped">%1$s ble lagt på bakken.</string>
+	<string name="inventory_item_equipped">Du tok i bruk %1$s.</string>
+
+	<string name="dialog_loot_pickall">Plukk opp alt</string>
+	<string name="dialog_loot_foundgold">Du fant %1$d gull.</string>
+	<string name="dialog_loot_pickedupitem">Du plukket opp en gjenstand.</string>
+	<string name="dialog_loot_pickedupitems">Du plukket opp %1$d gjenstander.</string>
+	<string name="dialog_groundloot_title">Gjenstander</string>
+	<string name="dialog_groundloot_message">Du fant noen gjenstander.</string>
+	<string name="dialog_monsterloot_title">Seier</string>
+	<string name="dialog_monsterloot_message">Du overlevde dette møtet.</string>
+	<string name="dialog_monsterloot_gainedexp">Du ervervet %1$d erfaring.</string>
+
+	<string name="monster_difficulty_veryeasy">Veldig lett</string>
+	<string name="monster_difficulty_easy">Lett</string>
+	<string name="monster_difficulty_normal">Normalt</string>
+	<string name="monster_difficulty_hard">Vanskelig</string>
+	<string name="monster_difficulty_veryhard">Veldig vanskelig</string>
+	<string name="monster_difficulty_impossible">Umulig</string>
+
+	<string name="actorinfo_class">Klasse:</string>
+	<string name="actorinfo_difficulty">Vanskelighetsgrad:</string>
+	<string name="actorinfo_health">Helse:</string>
+	<string name="actorinfo_attack">Angrep:</string>
+	<string name="actorinfo_defense">Forsvar:</string>
+	<string name="actorinfo_movecost">Forflyttningskost (AP):</string>
+	<string name="actorinfo_basetraits">Grunnleggende kampstatistikk (uten gjenstander og ferdigheter)</string>
+	<string name="actorinfo_currenttraits">Kampstatistikk (nåværende)</string>
+
+	<string name="traitsinfo_attack_cost">Angrepskost (AP):</string>
+	<string name="traitsinfo_attack_chance">Angrepssjanse:</string>
+	<string name="traitsinfo_attack_damage">Angrepsskade:</string>
+	<string name="traitsinfo_criticalhit_skill">Ferdighet for kritiske treff:</string>
+	<string name="traitsinfo_criticalhit_multiplier">Kritisk faktor:</string>
+	<string name="traitsinfo_defense_chance">Blokkeringssjanse:</string>
+	<string name="traitsinfo_defense_damageresist">Skademotstandighet:</string>
+
+	<string name="iteminfo_category">Kategori:</string>
+	<string name="iteminfo_action_use">Bruk</string>
+	<string name="iteminfo_action_equip">Ta i bruk</string>
+	<string name="iteminfo_action_unequip">Fravelg</string>
+	<string name="iteminfo_action_use_ap">Bruk (%1$d AP)</string>
+	<string name="iteminfo_action_equip_ap">Ta i bruk (%1$d AP)</string>
+	<string name="iteminfo_action_unequip_ap">Fravelg (%1$d AP)</string>
+
+	<string name="startscreen_continue">Fortsett nåværende spill</string>
+	<string name="startscreen_newgame">Nytt spill</string>
+	<string name="startscreen_newgame_confirm">Du vil miste din nåværende framgang og gjeldende helt, er du sikker på at du vil starte et helt nytt spill?</string>
+	<string name="startscreen_about">Om/hjelp</string>
+	<string name="startscreen_enterheroname">Skriv inn heltenavn</string>
+	<string name="startscreen_load">Last inn</string>
+
+	<string name="conversation_rewardexp">[Du ervervet %1$d erfaring]</string>
+	<string name="conversation_rewardgold">[Du fikk %1$d gull]</string>
+	<string name="conversation_lostgold">[Du mistet %1$d gull]</string>
+	<string name="conversation_rewarditem">[Du mistet en gjenstand]</string>
+	<string name="conversation_rewarditems">[Du fikk %1$d gjenstander]</string>
+	<string name="conversation_next">Neste</string>
+	<string name="conversation_leave">Forlat</string>
+
+	<string name="shop_buy">Kjøp</string>
+	<string name="shop_sell">Selg</string>
+	<string name="shop_infoitem">Info.</string>
+	<string name="shop_buyitem">Kjør (%1$d gull)</string>
+	<string name="shop_sellitem">Selg (%1$d gull)</string>
+	<string name="shop_yourgold">Din gullbestand: %1$d</string>
+	<string name="shop_item_bought">%1$s kjøpt.</string>
+	<string name="shop_item_sold">%1$s solgt.</string>
+
+	<string name="levelup_description">Velkommen til nivået %1$d!</string>
+	<string name="levelup_add_health">Øk helse (+%1$d HP)</string>
+	<string name="levelup_add_health_description">Øker maksimal helse med %1$d</string>
+	<string name="levelup_add_attackchance">Øk angrepssjanse (+%1$d)</string>
+	<string name="levelup_add_attackchance_description">Forbedrer grunnleggende angrepssjanse med %1$d.</string>
+	<string name="levelup_add_attackdamage">Øk angrepsskade (+%1$d)</string>
+	<string name="levelup_add_attackdamage_description">Øker grunnleggende angrepsskade med %1$d.</string>
+	<string name="levelup_add_blockchance">Øk blokkeringssjanse (+%1$d)</string>
+	<string name="levelup_add_blockchance_description">Legger til %1$d til din grunnleggende blokkeringssjanse.</string>
+
+	<string name="dialog_rest_title">Hvil</string>
+	<string name="dialog_rest_confirm_message">Vil du hvile her?</string>
+	<string name="dialog_rest_message">Du har hvilt og restituert full helse.</string>
+
+	<string name="about_button1">Hjelp</string>
+	<string name="about_button2">Utviklere</string>
+	<string name="about_button3">Lisens</string>
+	<string name="dialog_newversion_title">Velkommen</string>
+	<string name="questlog_queststatus">Status: %1$s</string>
+	<string name="questlog_queststatus_inprogress">Underveis</string>
+	<string name="questlog_queststatus_completed">Fullført</string>
+
+	<string name="preferences_display_category">Vis</string>
+	<string name="preferences_display_fullscreen_title">Fullskjerm</string>
+	<string name="preferences_display_fullscreen">Viser spillet i fullskjermsmodus. (Krever omstart)</string>
+	<string name="preferences_dialog_category">Dialogvindubekreftelse</string>
+	<string name="preferences_dialog_confirmrest_title">Bekreft hvile</string>
+	<string name="preferences_dialog_confirmrest">Oppfølgingsspørsmål om hvorvidt du ønsker å hvile når du befinner deg på en seng. Ellers vil du automatisk hvile.</string>
+	<string name="preferences_dialog_confirmattack_title">Bekreft angrep</string>
+	<string name="preferences_combat_category">Kamp</string>
+	<string name="preferences_combat_speed_title">Kamphastighet</string>
+	<string name="preferences_combat_speed">Bestemmer hvor raskt monster angriper.</string>
+
+	<string name="preferences_display_loot_never">Ikke vis</string>
+
+	<string name="preferences_attackspeed_instant">Umiddelbar (ingen animasjoner)</string>
+	<string name="preferences_attackspeed_fast">Rask</string>
+	<string name="preferences_attackspeed_normal">Normal</string>
+	<string name="preferences_attackspeed_slow">Langsom</string>
+
+	<string name="preferences_movement_category">Bevegelse</string>
+	<string name="preferences_movementmethod_title">Bevegelsesmetode</string>
+	<string name="preferences_movementmethod">Bevegelsesmetodetypen og behandling av hindre.</string>
+	<string name="preferences_movementmethods_straight">Rett (opprinnelig)</string>
+	<string name="preferences_movementmethods_avoid">Unngå hinder</string>
+
+
+	<string name="iteminfo_effect_duration">(%1$d runder)</string>
+
+	</resources>
