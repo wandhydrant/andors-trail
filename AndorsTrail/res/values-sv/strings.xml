@@ -4,7 +4,7 @@
 	<string name="menu_settings">Alternativ</string>
 	<string name="menu_save">Spara</string>
 	<string name="menu_save_gamesaved">Spelet sparades på plats %1$d</string>
-	<string name="menu_save_failed">Det misslyckades att spara spelet! Är SD-kortet monterat och tillskrivbar?</string>
+	<string name="menu_save_failed">Det misslyckades att spara spelet! Är SD-kortet monterat och skrivbart?</string>
 
 	<string name="loadsave_title_save">Spara spelet</string>
 	<string name="loadsave_title_load">Ladda ett sparat spel</string>
@@ -14,11 +14,11 @@
 	<string name="dialog_loading_message">Laddar resurser…</string>
 	<string name="dialog_loading_failed_title">Laddningen misslyckades</string>
 	<string name="dialog_loading_failed_message">Andors Stig kunde inte ladda det sparade spelet.
-
-:(
-
-Filen kunde vara skadad eller ofullständig.</string>
-	<string name="dialog_loading_failed_incorrectversion">Andors Stig kunde inte ladda det sparade spelfilen. Den sparade filen är skapad med en nyare version än den som körs för tillfället.</string>
+\n
+\n:(
+\n
+\nFilen kan vara skadad eller ofullständig.</string>
+	<string name="dialog_loading_failed_incorrectversion">Andors Stig kunde inte ladda den sparade spelfilen. Den sparade filen är skapad med en nyare version än den som körs för tillfället.</string>
 
 	<string name="dialog_close">Stäng</string>
 
@@ -77,7 +77,7 @@ Svårighetsgrad: %1$s</string>
 
 	<string name="dialog_loot_pickall">Plocka upp allt</string>
 	<string name="dialog_loot_foundgold">"Du hittade %1$d guld. "</string>
-	<string name="dialog_loot_pickedupitem">"Du tog något upp. "</string>
+	<string name="dialog_loot_pickedupitem">"Du tog upp en sak. "</string>
 	<string name="dialog_loot_pickedupitems">"Du tog upp %1$d saker. "</string>
 	<string name="dialog_groundloot_title">Saker</string>
 	<string name="dialog_groundloot_message">"Du hittade något. "</string>
@@ -137,22 +137,22 @@ Svårighetsgrad: %1$s</string>
 	<string name="questlog_queststatus_inprogress">Påbörjad</string>
 	<string name="questlog_queststatus_completed">Slutförd</string>
 
-	<string name="preferences_display_category">Vis</string>
+	<string name="preferences_display_category">Visning</string>
 	<string name="preferences_display_fullscreen_title">Helskärm</string>
 	<string name="preferences_display_fullscreen">Visar spelet i fullskärm. (Kräver omstart)</string>
-	<string name="preferences_dialog_category">Bekräftelsesdialoger</string>
+	<string name="preferences_dialog_category">Bekräftelsedialoger</string>
 	<string name="preferences_dialog_confirmrest_title">Bekräfta vila</string>
-	<string name="preferences_dialog_confirmrest">Frågar dig om du vill vila dig när du kommer till en säng. Annars, kommer du automatiskt att vila dig.</string>
+	<string name="preferences_dialog_confirmrest">Frågar dig om du vill vila dig när du kommer till en säng. Annars kommer du automatiskt att vila dig.</string>
 	<string name="preferences_dialog_confirmattack_title">Bekräfta attack</string>
 	<string name="preferences_dialog_monsterloot">Välj hur du vill visa utgången av en kamp (guld, erfarenhet, byte).</string>
 	<string name="preferences_combat_category">Kamp</string>
 	<string name="preferences_combat_speed_title">Kamphastighet</string>
 	<string name="preferences_combat_speed">Bestämmer hur snabbt monstren attackerar.</string>
 
-	<string name="preferences_dialog_monsterloot_title">Vis monstrens byte</string>
-	<string name="preferences_display_loot_toast">Vis kort meddelande</string>
-	<string name="preferences_display_loot_toast_on_items">Vis meddelande bara om byte hittas</string>
-	<string name="preferences_display_loot_never">Vis inte</string>
+	<string name="preferences_dialog_monsterloot_title">Visa monstrens byte</string>
+	<string name="preferences_display_loot_toast">Visa kort meddelande</string>
+	<string name="preferences_display_loot_toast_on_items">Visa meddelande bara om byte hittas</string>
+	<string name="preferences_display_loot_never">Visa inte</string>
 
 	<string name="preferences_attackspeed_instant">Omedelbar (ingen animation)</string>
 	<string name="preferences_attackspeed_fast">Snabb</string>
@@ -190,9 +190,9 @@ Svårighetsgrad: %1$s</string>
 	<string name="skill_title_eater">Likätare</string>
 	<string name="skill_title_evasion">Smitare</string>
 	<string name="skill_title_regeneration">Förnyelse</string>
-	<string name="skill_title_resistance_mental">Starkt Sinne</string>
-	<string name="skill_title_resistance_physical_capacity">Uthållig Kropp</string>
-	<string name="skill_title_resistance_blood_disorder">Rent Blod</string>
+	<string name="skill_title_resistance_mental">Starkt sinne</string>
+	<string name="skill_title_resistance_physical_capacity">Uthållig kropp</string>
+	<string name="skill_title_resistance_blood_disorder">Rent blod</string>
 
 	<string name="skill_shortdescription_coinfinder">Ökade chanser för att hitta guld</string>
 	<string name="skill_shortdescription_evasion">Ökade chanser för att flykta</string>
@@ -203,8 +203,8 @@ Svårighetsgrad: %1$s</string>
 
 	<string name="skill_current_level">Nuvarande nivå: %1$d</string>
 	<string name="skill_current_level_with_maximum">Nuvarande nivå: %1$d / %2$d</string>
-	<string name="skill_prerequisite_other_skill">För att öka denna färdighet, behöver du ha minst nivå %1$d i färdigheten %2$s.</string>
-	<string name="skill_prerequisite_level">För att öka denna färdighet, behöver du vara på minst nivå %1$d.</string>
+	<string name="skill_prerequisite_other_skill">För att öka denna färdighet behöver du ha minst nivå %1$d i färdigheten %2$s.</string>
+	<string name="skill_prerequisite_level">För att öka denna färdighet behöver du vara på minst nivå %1$d.</string>
 	<string name="skill_number_of_increases_one">Du får välja en färdighet att öka.</string>
 	<string name="skill_number_of_increases_several">Du får välja %1$d färdigheter att öka.</string>
 	<string name="levelup_adds_new_skillpoint">Denna nivå ger dig också en ny färdighetspoäng att använda!</string>
