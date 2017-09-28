@@ -47,5 +47,5 @@ The graphics licenses and contributions can be found [here](/gfxcontrib.md).
 ## Wiki
 Here is our slightly out of date [Wiki](https://www.andorstrail.com/wiki/doku.php?id=andors_trail_wiki).
 ## Acknowledgments
-
+Additional shout-outs.
 
