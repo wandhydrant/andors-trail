@@ -34,7 +34,7 @@ Latest version of APK available from:
 *  **Ian Hasse** - *Lead Cartographer* 
 
 ### Contributors List
-Additional contributors to the project are listed [here](andors-trail-1/contributors.md).
+Additional contributors to the project are listed [here](/contributors.md).
 ## Licenses
 
 ### Code
@@ -42,7 +42,7 @@ Andor's Trail code is released under GNU GPL v2.
 ### Content
 Andor's Trail gameplay content is copyright by their respective authors and has only been licensed for use in Andor's Trail.
 ### Graphics
-The graphics licenses and contributions can be found [here](andors-trail-1/gfxcontrib.md).
+The graphics licenses and contributions can be found [here](/gfxcontrib.md).
 
 ## Wiki
 Here is our slightly out of date [Wiki](https://www.andorstrail.com/wiki/doku.php?id=andors_trail_wiki).
