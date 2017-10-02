@@ -108,7 +108,7 @@ public final class MonsterMovementController implements EvaluateWalkable {
 	}
 
 	private void determineMonsterNextPosition(Monster m, MonsterSpawnArea area, Coord playerPosition) {
-		if (m.isAgressive()) {
+//		if (m.isAgressive()) {
 			boolean searchForPath = false;
 			if (m.getMovementAggressionType() == MonsterType.AggressionType.protectSpawn) {
 				if (area.area.contains(playerPosition)) searchForPath = true;
@@ -118,7 +118,7 @@ public final class MonsterMovementController implements EvaluateWalkable {
 			if (searchForPath) {
 				if (findPathFor(m, playerPosition)) return;
 			}
-		}
+//		}
 
 		// Monster is moving in a straight line.
 		m.nextPosition.topLeft.set(
