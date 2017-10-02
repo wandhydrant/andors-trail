@@ -50,6 +50,8 @@ public final class Monster extends Actor {
 		this.blockChance = monsterType.blockChance;
 		this.damageResistance = monsterType.damageResistance;
 		this.onHitEffects = monsterType.onHitEffects;
+		this.onHitReceivedEffects = monsterType.onHitReceivedEffects;
+		this.onDeathEffects = monsterType.onDeathEffects;
 	}
 
 	public DropList getDropList() { return monsterType.dropList; }

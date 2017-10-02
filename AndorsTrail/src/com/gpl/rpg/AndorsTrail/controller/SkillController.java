@@ -2,6 +2,7 @@ package com.gpl.rpg.AndorsTrail.controller;
 
 import com.gpl.rpg.AndorsTrail.context.ControllerContext;
 import com.gpl.rpg.AndorsTrail.context.WorldContext;
+import com.gpl.rpg.AndorsTrail.controller.listeners.CombatActionListeners;
 import com.gpl.rpg.AndorsTrail.model.ability.ActorConditionEffect;
 import com.gpl.rpg.AndorsTrail.model.ability.ActorConditionType;
 import com.gpl.rpg.AndorsTrail.model.ability.SkillCollection;
@@ -20,6 +21,8 @@ import com.gpl.rpg.AndorsTrail.util.ConstRange;
 public final class SkillController {
 	private final ControllerContext controllers;
 	private final WorldContext world;
+	public final CombatActionListeners combatActionListeners = new CombatActionListeners();
+	
 
 	public SkillController(ControllerContext controllers, WorldContext world) {
 		this.controllers = controllers;
@@ -184,6 +187,7 @@ public final class SkillController {
 	public void applySkillEffectsFromMonsterAttack(AttackResult result, Monster monster) {
 		if (!result.isHit) {
 			if (rollForSkillChance(world.model.player, SkillID.taunt, SkillCollection.PER_SKILLPOINT_INCREASE_TAUNT_CHANCE)) {
+				combatActionListeners.onPlayerTauntsMonster(monster);
 				controllers.actorStatsController.changeActorAP(monster, -SkillCollection.TAUNT_AP_LOSS, false, false);
 			}
 		}

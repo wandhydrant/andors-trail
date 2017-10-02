@@ -62,6 +62,8 @@ public final class ItemInfoActivity extends Activity {
 				itemType.effects_use == null ? null : Collections.singletonList(itemType.effects_use),
 				itemType.effects_hit == null ? null : Collections.singletonList(itemType.effects_hit),
 				itemType.effects_kill == null ? null : Collections.singletonList(itemType.effects_kill),
+				itemType.effects_hitReceived == null ? null : Collections.singletonList(itemType.effects_hitReceived),
+				null,
 				itemType.isWeapon()
 			);
 

@@ -1,6 +1,7 @@
 package com.gpl.rpg.AndorsTrail.controller.listeners;
 
 import com.gpl.rpg.AndorsTrail.controller.AttackResult;
+import com.gpl.rpg.AndorsTrail.model.ability.ActorConditionEffect;
 import com.gpl.rpg.AndorsTrail.model.actor.Monster;
 import com.gpl.rpg.AndorsTrail.util.ListOfListeners;
 
@@ -40,6 +41,18 @@ public final class CombatActionListeners extends ListOfListeners<CombatActionLis
 
 	private final Function<CombatActionListener> onPlayerDoesNotHaveEnoughAP = new Function<CombatActionListener>() {
 		@Override public void call(CombatActionListener listener) { listener.onPlayerDoesNotHaveEnoughAP(); }
+	};
+	
+	private final Function1<CombatActionListener, Monster> onPlayerTauntsMonster = new Function1<CombatActionListener, Monster>() {
+		@Override public void call(CombatActionListener listener, Monster attacker) { listener.onPlayerTauntsMonster(attacker); }
+	};
+	
+	private final Function1<CombatActionListener, ActorConditionEffect> onPlayerReceviesActorCondition = new Function1<CombatActionListener, ActorConditionEffect>() {
+		@Override public void call(CombatActionListener listener, ActorConditionEffect effect) { listener.onPlayerReceviesActorCondition(effect); }
+	};
+	
+	private final Function2<CombatActionListener, ActorConditionEffect, Monster> onMonsterReceivesActorCondition = new Function2<CombatActionListener, ActorConditionEffect, Monster>() {
+		@Override public void call(CombatActionListener listener, ActorConditionEffect effect, Monster target) { listener.onMonsterReceivesActorCondition(effect, target); }
 	};
 
 	@Override
@@ -86,4 +99,20 @@ public final class CombatActionListeners extends ListOfListeners<CombatActionLis
 	public void onPlayerDoesNotHaveEnoughAP() {
 		callAllListeners(this.onPlayerDoesNotHaveEnoughAP);
 	}
+
+	@Override
+	public void onPlayerTauntsMonster(Monster attacker) {
+		callAllListeners(this.onPlayerTauntsMonster, attacker);
+	}
+
+	@Override
+	public void onPlayerReceviesActorCondition(ActorConditionEffect effect) {
+		callAllListeners(this.onPlayerReceviesActorCondition, effect);
+	}
+
+	@Override
+	public void onMonsterReceivesActorCondition(ActorConditionEffect effect, Monster target) {
+		callAllListeners(this.onMonsterReceivesActorCondition, effect, target);
+	}
+
 }

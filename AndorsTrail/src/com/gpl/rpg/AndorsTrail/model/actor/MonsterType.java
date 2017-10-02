@@ -1,6 +1,7 @@
 package com.gpl.rpg.AndorsTrail.model.actor;
 
 import com.gpl.rpg.AndorsTrail.model.item.DropList;
+import com.gpl.rpg.AndorsTrail.model.item.ItemTraits_OnHitReceived;
 import com.gpl.rpg.AndorsTrail.model.item.ItemTraits_OnUse;
 import com.gpl.rpg.AndorsTrail.util.ConstRange;
 import com.gpl.rpg.AndorsTrail.util.Size;
@@ -47,6 +48,8 @@ public final class MonsterType {
 	public final int blockChance;
 	public final int damageResistance;
 	public final ItemTraits_OnUse[] onHitEffects;
+	public final ItemTraits_OnHitReceived[] onHitReceivedEffects;
+	public final ItemTraits_OnUse onDeathEffects;
 
 	public MonsterType(
 			String id
@@ -72,6 +75,8 @@ public final class MonsterType {
 			, int blockChance
 			, int damageResistance
 			, ItemTraits_OnUse[] onHitEffects
+			, ItemTraits_OnHitReceived[] onHitReceivedEffects
+			, ItemTraits_OnUse onDeathEffects
 	) {
 		this.id = id;
 		this.name = name;
@@ -96,6 +101,8 @@ public final class MonsterType {
 		this.blockChance = blockChance;
 		this.damageResistance = damageResistance;
 		this.onHitEffects = onHitEffects;
+		this.onHitReceivedEffects = onHitReceivedEffects;
+		this.onDeathEffects = onDeathEffects;
 	}
 
 	public static enum AggressionType {

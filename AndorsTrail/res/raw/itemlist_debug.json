@@ -170,6 +170,40 @@
                 "min": 1,
                 "max": 1
             }
+        },
+        "hitReceivedEffect" : {
+        	"increaseCurrentHP": {
+                "min": 1,
+                "max": 1
+            },
+            "increaseCurrentAP": {
+                "min": 1,
+                "max": 1
+            },
+            "increaseAttackerCurrentHP": {
+                "min": 1,
+                "max": 1
+            },
+            "increaseAttackerCurrentAP": {
+                "min": 1,
+                "max": 1
+            },
+            "conditionsSource":[
+            	{
+                "condition":"chaotic_grip",
+                "magnitude": 1,
+                "duration": 5,
+                "chance":"50"
+            	}
+        	],
+            "conditionsTarget":[
+            	{
+                "condition":"chaotic_grip",
+                "magnitude": 1,
+                "duration": 5,
+                "chance":"80"
+            	}
+        	]
         }
     }
 ]

@@ -68,6 +68,14 @@
 	<string name="combat_not_enough_ap">Not enough AP left this round.</string>
 	<string name="combat_hero_dies">You fall unconscious, but fortunately wake up alive, dazed and fatigued. You lost %1$d experience.</string>
 	<string name="combat_miss_animation_message">MISS</string>
+	<string name="combat_taunt_monster">You taunt %1$s!</string>
+	<string name="combat_condition_player_apply">You are affected by %1$s.</string>
+	<string name="combat_condition_player_clear">You are cleared of %1$s.</string>
+	<string name="combat_condition_player_immune">You are now immunized against %1$s.</string>
+	<string name="combat_condition_monster_apply">%1$s is affected by %2$s.</string>
+	<string name="combat_condition_monster_clear">%1$s is cleared of %2$s.</string>
+	<string name="combat_condition_monster_immune">%1$s is now immunized against %2$s.</string>
+	
 	
 	<string name="inventory_info">Info</string>
 	<string name="inventory_equip">Equip</string>
@@ -304,11 +312,14 @@
 
 	<string name="iteminfo_effect_works_on_source">On source</string>
 	<string name="iteminfo_effect_works_on_target">On target</string>
+	<string name="iteminfo_effect_works_on_attacker">On attacker</string>
 	<string name="iteminfo_effect_works_when_hitting_target">When hitting target</string>
 	<string name="iteminfo_effect_works_when_killing_target">On every kill</string>
 	<string name="iteminfo_effect_works_when_used">When used</string>
 	<string name="iteminfo_effect_works_when_equipped">When equipped</string>
-
+	<string name="iteminfo_effect_works_when_hit_by_attacker">When hit by attacker</string>
+	<string name="iteminfo_effect_works_when_killed_by_attacker">When killed by attacker</string>
+	
 	<string name="iteminfo_effect_decrease_current_hp">Drains %1$s HP</string>
 	<string name="iteminfo_effect_increase_current_hp">Restores %1$s HP</string>
 	<string name="iteminfo_effect_decrease_current_ap">Drains %1$s AP</string>

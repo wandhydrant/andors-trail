@@ -188,6 +188,13 @@ public final class MapController {
 				if (!satisfiesCondition(replacement)) continue;
 				else ConversationController.requirementFulfilled(world, replacement.requirement);
 				tileMap.applyReplacement(replacement);
+				for (ReplaceableMapSection impactedReplacement : tileMap.replacements) {
+					if (impactedReplacement.isApplied && impactedReplacement.replacementArea.intersects(replacement.replacementArea)) {
+						//The applied replacement has overwritten changes made by a previously applied replacement.
+						//This previous replacement must now be considered as unapplied to let it be reapplied later eventually.
+						impactedReplacement.isApplied = false;
+					}
+				}
 				hasUpdated = true;
 			}
 		}

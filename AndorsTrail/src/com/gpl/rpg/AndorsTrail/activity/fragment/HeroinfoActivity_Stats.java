@@ -12,12 +12,14 @@ import android.widget.Button;
 import android.widget.TableLayout;
 import android.widget.TableRow;
 import android.widget.TextView;
+
 import com.gpl.rpg.AndorsTrail.AndorsTrailApplication;
 import com.gpl.rpg.AndorsTrail.Dialogs;
 import com.gpl.rpg.AndorsTrail.R;
 import com.gpl.rpg.AndorsTrail.context.WorldContext;
 import com.gpl.rpg.AndorsTrail.model.actor.Player;
 import com.gpl.rpg.AndorsTrail.model.item.Inventory;
+import com.gpl.rpg.AndorsTrail.model.item.ItemTraits_OnHitReceived;
 import com.gpl.rpg.AndorsTrail.model.item.ItemTraits_OnUse;
 import com.gpl.rpg.AndorsTrail.model.item.ItemType;
 import com.gpl.rpg.AndorsTrail.view.ItemEffectsView;
@@ -155,15 +157,17 @@ public final class HeroinfoActivity_Stats extends Fragment {
 
 		ArrayList<ItemTraits_OnUse> effects_hit = new ArrayList<ItemTraits_OnUse>();
 		ArrayList<ItemTraits_OnUse> effects_kill = new ArrayList<ItemTraits_OnUse>();
+		ArrayList<ItemTraits_OnHitReceived> effects_hitReceived = new ArrayList<ItemTraits_OnHitReceived>();
 		for (Inventory.WearSlot slot : Inventory.WearSlot.values()) {
 			ItemType type = player.inventory.getItemTypeInWearSlot(slot);
 			if (type == null) continue;
 			if (type.effects_hit != null) effects_hit.add(type.effects_hit);
 			if (type.effects_kill != null) effects_kill.add(type.effects_kill);
+			if (type.effects_hitReceived != null) effects_hitReceived.add(type.effects_hitReceived);
 		}
 		if (effects_hit.isEmpty()) effects_hit = null;
 		if (effects_kill.isEmpty()) effects_kill = null;
-		actorinfo_onhiteffects.update(null, null, effects_hit, effects_kill, false);
+		actorinfo_onhiteffects.update(null, null, effects_hit, effects_kill, effects_hitReceived, null, false);
 
 
 		updateStatsTableRow(world.model.statistics.getNumberOfCompletedQuests(world), R.id.heroinfo_gamestats_quests, R.id.heroinfo_gamestats_quests_row);

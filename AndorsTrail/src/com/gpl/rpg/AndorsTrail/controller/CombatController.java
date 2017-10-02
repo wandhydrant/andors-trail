@@ -18,6 +18,7 @@ import com.gpl.rpg.AndorsTrail.model.actor.Actor;
 import com.gpl.rpg.AndorsTrail.model.actor.Monster;
 import com.gpl.rpg.AndorsTrail.model.actor.MonsterType;
 import com.gpl.rpg.AndorsTrail.model.actor.Player;
+import com.gpl.rpg.AndorsTrail.model.item.ItemTraits_OnHitReceived;
 import com.gpl.rpg.AndorsTrail.model.item.ItemTraits_OnUse;
 import com.gpl.rpg.AndorsTrail.model.item.Loot;
 import com.gpl.rpg.AndorsTrail.model.map.MonsterSpawnArea;
@@ -208,6 +209,7 @@ public final class CombatController implements VisualEffectCompletedCallback {
 		totalExpThisFight += loot.exp;
 		loot.exp = 0;
 		controllers.actorStatsController.applyKillEffectsToPlayer(player);
+		controllers.actorStatsController.applyOnDeathEffectsToPlayer(player, killedMonster);
 
 		if (!loot.hasItemsOrGold()) {
 			world.model.currentMap.removeGroundLoot(loot);
@@ -554,10 +556,16 @@ public final class CombatController implements VisualEffectCompletedCallback {
 
 	private void applyAttackHitStatusEffects(Actor attacker, Actor target) {
 		ItemTraits_OnUse[] onHitEffects = attacker.getOnHitEffects();
-		if (onHitEffects == null) return;
-
-		for (ItemTraits_OnUse e : onHitEffects) {
-			controllers.actorStatsController.applyUseEffect(attacker, target, e);
+		ItemTraits_OnHitReceived[] onHitReceivedEffects = target.getOnHitReceivedEffects();
+		if (onHitEffects != null) {
+			for (ItemTraits_OnUse e : onHitEffects) {
+				controllers.actorStatsController.applyUseEffect(attacker, target, e);
+			}
+		}
+		if (onHitReceivedEffects != null) {
+			for (ItemTraits_OnHitReceived e : onHitReceivedEffects) {
+				controllers.actorStatsController.applyHitReceivedEffect(target, attacker, e);
+			}
 		}
 	}
 

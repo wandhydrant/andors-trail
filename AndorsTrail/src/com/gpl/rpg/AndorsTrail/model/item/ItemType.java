@@ -34,6 +34,7 @@ public final class ItemType {
 	public final ItemTraits_OnUse effects_use;
 	public final ItemTraits_OnUse effects_hit;
 	public final ItemTraits_OnUse effects_kill;
+	public final ItemTraits_OnHitReceived effects_hitReceived;
 
 	public ItemType(
 			String id
@@ -48,6 +49,7 @@ public final class ItemType {
 			, ItemTraits_OnUse effects_use
 			, ItemTraits_OnUse effects_hit
 			, ItemTraits_OnUse effects_kill
+			, ItemTraits_OnHitReceived effects_hitReceived
 	) {
 		this.id = id;
 		this.iconID = iconID;
@@ -62,6 +64,7 @@ public final class ItemType {
 		this.effects_use = effects_use;
 		this.effects_hit = effects_hit;
 		this.effects_kill = effects_kill;
+		this.effects_hitReceived = effects_hitReceived;
 		this.hasPersonalizedName = name.contains(Constants.PLACEHOLDER_PLAYERNAME);
 	}
 

@@ -3,6 +3,7 @@ package com.gpl.rpg.AndorsTrail.resource.parsers;
 import com.gpl.rpg.AndorsTrail.model.ability.ActorConditionTypeCollection;
 import com.gpl.rpg.AndorsTrail.model.item.ItemCategoryCollection;
 import com.gpl.rpg.AndorsTrail.model.item.ItemTraits_OnEquip;
+import com.gpl.rpg.AndorsTrail.model.item.ItemTraits_OnHitReceived;
 import com.gpl.rpg.AndorsTrail.model.item.ItemTraits_OnUse;
 import com.gpl.rpg.AndorsTrail.model.item.ItemType;
 import com.gpl.rpg.AndorsTrail.resource.DynamicTileLoader;
@@ -10,6 +11,7 @@ import com.gpl.rpg.AndorsTrail.resource.TranslationLoader;
 import com.gpl.rpg.AndorsTrail.resource.parsers.json.JsonCollectionParserFor;
 import com.gpl.rpg.AndorsTrail.resource.parsers.json.JsonFieldNames;
 import com.gpl.rpg.AndorsTrail.util.Pair;
+
 import org.json.JSONException;
 import org.json.JSONObject;
 
@@ -40,7 +42,8 @@ public final class ItemTypeParser extends JsonCollectionParserFor<ItemType> {
 		final ItemTraits_OnUse useEffect = itemTraitsParser.parseItemTraits_OnUse(o.optJSONObject(JsonFieldNames.ItemType.useEffect));
 		final ItemTraits_OnUse hitEffect = itemTraitsParser.parseItemTraits_OnUse(o.optJSONObject(JsonFieldNames.ItemType.hitEffect));
 		final ItemTraits_OnUse killEffect = itemTraitsParser.parseItemTraits_OnUse(o.optJSONObject(JsonFieldNames.ItemType.killEffect));
-
+		final ItemTraits_OnHitReceived hitReceivedEffect = itemTraitsParser.parseItemTraits_OnHitReceived(o.optJSONObject(JsonFieldNames.ItemType.hitReceivedEffect));
+		
 		final int baseMarketCost = o.optInt(JsonFieldNames.ItemType.baseMarketCost);
 		final boolean hasManualPrice = o.optInt(JsonFieldNames.ItemType.hasManualPrice, 0) > 0;
 		final ItemType itemType = new ItemType(
@@ -56,6 +59,7 @@ public final class ItemTypeParser extends JsonCollectionParserFor<ItemType> {
 				, useEffect
 				, hitEffect
 				, killEffect
+				, hitReceivedEffect
 			);
 		return new Pair<String, ItemType>(id, itemType);
 	}
