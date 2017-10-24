@@ -1,12 +1,17 @@
 package com.gpl.rpg.AndorsTrail.resource.tiles;
 
-import android.R;
+import java.util.HashMap;
+import java.util.HashSet;
+
 import android.content.res.Resources;
 import android.graphics.Bitmap;
+import android.graphics.Canvas;
+import android.graphics.ColorFilter;
+import android.graphics.Paint;
+import android.graphics.Rect;
 import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
 import android.graphics.drawable.LayerDrawable;
-import android.graphics.drawable.ScaleDrawable;
 import android.os.AsyncTask;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -21,11 +26,12 @@ import com.gpl.rpg.AndorsTrail.model.item.Inventory;
 import com.gpl.rpg.AndorsTrail.model.item.ItemContainer;
 import com.gpl.rpg.AndorsTrail.model.item.ItemContainer.ItemEntry;
 import com.gpl.rpg.AndorsTrail.model.item.ItemType;
-import com.gpl.rpg.AndorsTrail.model.map.*;
+import com.gpl.rpg.AndorsTrail.model.map.LayeredTileMap;
+import com.gpl.rpg.AndorsTrail.model.map.MapObject;
+import com.gpl.rpg.AndorsTrail.model.map.MonsterSpawnArea;
+import com.gpl.rpg.AndorsTrail.model.map.PredefinedMap;
+import com.gpl.rpg.AndorsTrail.model.map.TMXMapTranslator;
 import com.gpl.rpg.AndorsTrail.util.L;
-
-import java.util.HashMap;
-import java.util.HashSet;
 
 public final class TileManager {
 	public static final int CHAR_HERO = 1;
@@ -216,6 +222,7 @@ public final class TileManager {
 	public void setImageViewTileForPlayer(Resources res, ImageView imageView, int iconID) {  setImageViewTile(res, imageView, preloadedTiles.getBitmap(iconID)); }
 //	public void setImageViewTile(Resources res, ImageView imageView, ActorConditionType conditionType) {  setImageViewTile(res, imageView, preloadedTiles.getBitmap(conditionType.iconID)); }
 	public void setImageViewTile(Resources res, ImageView imageView, ActorConditionType conditionType, boolean immunityOverlay) {  setImageViewTile(res, imageView, preloadedTiles.getBitmap(conditionType.iconID), immunityOverlay); }
+	public void setImageViewTile(Resources res, ImageView imageView, ActorConditionType conditionType, boolean immunityOverlay, String exponent, String index) {  setImageViewTile(res, imageView, preloadedTiles.getBitmap(conditionType.iconID), immunityOverlay, exponent, index); }
 	public void setImageViewTileForUIIcon(Resources res, ImageView imageView, int iconID) { setImageViewTile(res, imageView, preloadedTiles.getBitmap(iconID)); }
 	public void setImageViewTile(Resources res, ImageView imageView, Bitmap b) {
 		if (density > 1) {
@@ -225,20 +232,41 @@ public final class TileManager {
 		}
 	}
 	public void setImageViewTile(Resources res, ImageView imageView, Bitmap b, boolean immunityOverlay) {
-		if (!immunityOverlay) setImageViewTile(res, imageView, b);
+		setImageViewTile(res, imageView, b, immunityOverlay, null, null);
+	}
+	public void setImageViewTile(Resources res, ImageView imageView, Bitmap b, boolean immunityOverlay, String exponent, String index) {
+		if (!immunityOverlay && exponent == null && index == null) setImageViewTile(res, imageView, b);
 		else {
-			Drawable[] layers = new Drawable[2];
+			Drawable[] layers = new Drawable[1+
+			                                 (immunityOverlay ? 1 : 0)+
+			                                 (exponent != null ? 1 : 0)+
+			                                 (index != null ? 1 : 0)];
+			int tileWidth;
 			if (density > 1) {
-				layers[0] = new BitmapDrawable(res, Bitmap.createScaledBitmap(b, (int)(tileSize*density), (int)(tileSize*density), true));
-				layers[1] = new BitmapDrawable(res, preloadedTiles.getBitmap(iconID_immunity_overlay));
+				tileWidth = (int)(tileSize*density);
+				layers[0] = new BitmapDrawable(res, Bitmap.createScaledBitmap(b, tileWidth, tileWidth, true));
 			} else {
+				tileWidth = tileSize;
 				layers[0] = new BitmapDrawable(res, b);
-				layers[1] = new BitmapDrawable(res, preloadedTiles.getBitmap(iconID_immunity_overlay));
+			}
+			int nextIndex = 1;
+			if (immunityOverlay) {
+				layers[nextIndex] = new BitmapDrawable(res, preloadedTiles.getBitmap(iconID_immunity_overlay));
+				nextIndex++;
+			}
+			if (exponent != null) {
+				layers[nextIndex] = new TextDrawable(res, tileWidth, tileWidth, exponent, TextDrawable.Align.TOP_RIGHT);
+				nextIndex++;
+			}
+			if (index != null) {
+				layers[nextIndex] = new TextDrawable(res, tileWidth, tileWidth, index, TextDrawable.Align.BOTTOM_RIGHT);
+				nextIndex++;
 			}
 			LayerDrawable layered = new LayerDrawable(layers);
 			setImageViewTile(imageView, layered);
 		}
 	}
+	
 	public void setImageViewTile(ImageView imageView, Drawable d) {
 		imageView.setImageDrawable(d);
 	}
@@ -257,20 +285,19 @@ public final class TileManager {
 				overlayDrawable = new BitmapDrawable(res, preloadedTiles.getBitmap(overlayIconID));
 				iconDrawable = new BitmapDrawable(res, icon);
 				}
+			
 			if (overlayAbove) {
-				setImageViewTile(imageView,
-						new LayerDrawable(new Drawable[] {
-								iconDrawable
-								,overlayDrawable
-						})
-						);
+				LayerDrawable layered = new LayerDrawable(new Drawable[] {
+						iconDrawable
+						,overlayDrawable
+				});
+				setImageViewTile(imageView, layered);
 			} else {
-				setImageViewTile(imageView,
-						new LayerDrawable(new Drawable[] {
-								overlayDrawable
-								,iconDrawable
-						})
-						);
+				LayerDrawable layered = new LayerDrawable(new Drawable[] {
+						overlayDrawable
+						,iconDrawable
+				});
+				setImageViewTile(imageView, layered);
 			}
 		} else {
 			setImageViewTile(res, imageView, icon);
@@ -334,5 +361,144 @@ public final class TileManager {
 				return null;
 			}
 		}).execute();
+	}
+	
+	private static class TextDrawable extends Drawable {
+
+		private String text;
+		private int size = 15;
+		private Align align = Align.CENTER;
+		private Paint mPaint;
+		private Rect textBounds;
+		private int cHeight;
+		private int cWidth;
+		
+		public enum Align {
+			TOP,
+			TOP_LEFT,
+			TOP_RIGHT,
+			CENTER,
+			LEFT,
+			RIGHT,
+			BOTTOM,
+			BOTTOM_LEFT,
+			BOTTOM_RIGHT
+		}
+		
+		public TextDrawable(Resources res, int cWidth, int cHeight, String text, Align align, int size) {
+			this.text= text;
+			this.align = align;
+			this.size = size;
+			this.cWidth = cWidth;
+			this.cHeight = cHeight;
+			init(res);
+		}
+
+		public TextDrawable(Resources res, int cWidth, int cHeight,  String text, Align align) {
+			this.text= text;
+			this.align = align;
+			this.cWidth = cWidth;
+			this.cHeight = cHeight;
+			init(res);
+		}
+		
+		public TextDrawable(Resources res, int cWidth, int cHeight,  String text) {
+			this.text= text;
+			this.cWidth = cWidth;
+			this.cHeight = cHeight;
+			init(res);
+		}
+		
+		public void init(Resources res) {
+			mPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
+
+			mPaint.setColor(res.getColor(android.R.color.black));
+			mPaint.setShadowLayer(1, 1, 1, res.getColor(android.R.color.white));
+			mPaint.setStyle(Paint.Style.FILL);
+			mPaint.setTextSize(size * res.getDisplayMetrics().scaledDensity);
+			textBounds = new Rect();
+			mPaint.getTextBounds(text, 0, text.length(), textBounds);
+		}
+		
+		
+		
+		@Override
+		public void draw(Canvas canvas) {
+			float x,y;
+			switch (align) {
+			case BOTTOM:
+			case BOTTOM_LEFT:
+			case BOTTOM_RIGHT:
+				y = cHeight - textBounds.bottom;
+				break;
+			case CENTER:
+			case LEFT:
+			case RIGHT:
+				y = (cHeight - textBounds.height()) / 2;
+				break;
+			case TOP:
+			case TOP_LEFT:
+			case TOP_RIGHT:
+			default:
+				y = 0 - textBounds.top;
+				break;
+			}
+			
+			switch (align) {
+			case BOTTOM:
+			case CENTER:
+			case TOP:
+				x = (cWidth - textBounds.width()) / 2;
+				break;
+			case BOTTOM_LEFT:
+			case LEFT:
+			case TOP_LEFT:
+			default:
+				x = 0 - textBounds.left;
+				break;
+			case BOTTOM_RIGHT:
+			case RIGHT:
+			case TOP_RIGHT:
+				x = cWidth - textBounds.right;
+				break;
+			
+			}
+			canvas.drawText(text, x, y, mPaint);
+		}
+
+		@Override
+		public void setAlpha(int alpha) {
+			mPaint.setAlpha(alpha);
+		}
+
+		@Override
+		public void setColorFilter(ColorFilter cf) {
+			mPaint.setColorFilter(cf);
+		}
+
+		@Override
+		public int getOpacity() {
+			return mPaint.getAlpha();
+		}
+		
+		@Override
+		public int getIntrinsicWidth() {
+			return cWidth;
+		}
+		
+		@Override
+		public int getIntrinsicHeight() {
+			return cHeight;
+		}
+		
+		@Override
+		public boolean getPadding(Rect padding) {
+			padding.bottom = 0;
+			padding.top = 0;
+			padding.left = 0;
+			padding.right = 0;
+			return false;
+		}
+		
 	}
 }

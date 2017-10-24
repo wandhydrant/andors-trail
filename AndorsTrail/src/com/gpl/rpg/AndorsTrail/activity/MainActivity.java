@@ -1,17 +1,17 @@
 package com.gpl.rpg.AndorsTrail.activity;
 
+import java.lang.ref.WeakReference;
+import java.util.Collection;
+
 import android.app.Activity;
 import android.app.AlertDialog;
-import android.app.Dialog;
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.*;
-import android.view.ContextMenu.ContextMenuInfo;
+import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.View.OnLongClickListener;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
-import android.widget.Button;
 import android.widget.ListView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
@@ -33,18 +33,22 @@ import com.gpl.rpg.AndorsTrail.model.ability.ActorCondition;
 import com.gpl.rpg.AndorsTrail.model.ability.ActorConditionEffect;
 import com.gpl.rpg.AndorsTrail.model.actor.Monster;
 import com.gpl.rpg.AndorsTrail.model.actor.Player;
-import com.gpl.rpg.AndorsTrail.model.item.ItemContainer.ItemEntry;
 import com.gpl.rpg.AndorsTrail.model.item.Loot;
 import com.gpl.rpg.AndorsTrail.model.map.MapObject;
 import com.gpl.rpg.AndorsTrail.model.map.PredefinedMap;
 import com.gpl.rpg.AndorsTrail.resource.tiles.TileCollection;
 import com.gpl.rpg.AndorsTrail.savegames.Savegames;
 import com.gpl.rpg.AndorsTrail.util.Coord;
-import com.gpl.rpg.AndorsTrail.view.*;
-import com.gpl.rpg.AndorsTrail.view.QuickButton.QuickButtonContextMenuInfo;
-
-import java.lang.ref.WeakReference;
-import java.util.Collection;
+import com.gpl.rpg.AndorsTrail.view.CombatView;
+import com.gpl.rpg.AndorsTrail.view.DisplayActiveActorConditionIcons;
+import com.gpl.rpg.AndorsTrail.view.ItemContainerAdapter;
+import com.gpl.rpg.AndorsTrail.view.MainView;
+import com.gpl.rpg.AndorsTrail.view.QuickButton;
+import com.gpl.rpg.AndorsTrail.view.QuickitemView;
+import com.gpl.rpg.AndorsTrail.view.QuickslotsItemContainerAdapter;
+import com.gpl.rpg.AndorsTrail.view.StatusView;
+import com.gpl.rpg.AndorsTrail.view.ToolboxView;
+import com.gpl.rpg.AndorsTrail.view.VirtualDpadView;
 
 public final class MainActivity
 		extends Activity
@@ -90,6 +94,7 @@ public final class MainActivity
 		combatview = (CombatView) findViewById(R.id.main_combatview);
 		quickitemview = (QuickitemView) findViewById(R.id.main_quickitemview);
 		activeConditions = new DisplayActiveActorConditionIcons(controllers, world, this, (RelativeLayout) findViewById(R.id.statusview_activeconditions));
+		activeConditions.setTarget(world.model.player);
 		VirtualDpadView dpad = (VirtualDpadView) findViewById(R.id.main_virtual_dpad);
 		toolboxview = (ToolboxView) findViewById(R.id.main_toolboxview);
 		statusview.registerToolboxViews(toolboxview, quickitemview);
