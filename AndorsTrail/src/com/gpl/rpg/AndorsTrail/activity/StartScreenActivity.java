@@ -14,7 +14,12 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
-import com.gpl.rpg.AndorsTrail.*;
+
+import com.gpl.rpg.AndorsTrail.AndorsTrailApplication;
+import com.gpl.rpg.AndorsTrail.AndorsTrailPreferences;
+import com.gpl.rpg.AndorsTrail.Dialogs;
+import com.gpl.rpg.AndorsTrail.R;
+import com.gpl.rpg.AndorsTrail.WorldSetup;
 import com.gpl.rpg.AndorsTrail.controller.Constants;
 import com.gpl.rpg.AndorsTrail.resource.tiles.TileManager;
 import com.gpl.rpg.AndorsTrail.savegames.Savegames;
@@ -96,7 +101,8 @@ public final class StartScreenActivity extends Activity {
 				Dialogs.showLoad(StartScreenActivity.this);
 			}
 		});
-
+		
+		
 		TextView development_version = (TextView) findViewById(R.id.startscreen_dev_version);
 		if (AndorsTrailApplication.DEVELOPMENT_INCOMPATIBLE_SAVEGAMES) {
 			development_version.setText(R.string.startscreen_incompatible_savegames);
