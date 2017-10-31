@@ -28,6 +28,7 @@ public final class ResourceLoader {
 	private static final int monstersResourceId = AndorsTrailApplication.DEVELOPMENT_DEBUGRESOURCES ? R.array.loadresource_monsters_debug : R.array.loadresource_monsters;
 	private static final int mapsResourceId = AndorsTrailApplication.DEVELOPMENT_DEBUGRESOURCES ? R.array.loadresource_maps_debug : R.array.loadresource_maps;
 
+	private static DynamicTileLoader loader;
 	private static long taskStart;
 	private static void timingCheckpoint(String loaderName) {
 		long now = System.currentTimeMillis();
@@ -35,22 +36,23 @@ public final class ResourceLoader {
 		L.log(loaderName + " ran for " + duration + " ms.");
 		taskStart = now;
 	}
-
-	public static void loadResources(WorldContext world, Resources r) {
+	
+	public static void loadResourcesSync(WorldContext world, Resources r) {
 		long start = System.currentTimeMillis();
 		taskStart = start;
 
 		final int mTileSize = world.tileManager.tileSize;
 
-		final TranslationLoader translationLoader = new TranslationLoader(r.getAssets(), r);
 
-		DynamicTileLoader loader = new DynamicTileLoader(world.tileManager.tileCache);
+		loader = new DynamicTileLoader(world.tileManager.tileCache);
 		prepareTilesets(loader, mTileSize);
 		if (AndorsTrailApplication.DEVELOPMENT_DEBUGMESSAGES) timingCheckpoint("prepareTilesets");
 
 		// ========================================================================
 		// Load various ui icons
-		/*TileManager.iconID_CHAR_HERO = */loader.prepareTileID(R.drawable.char_hero, 0);
+		/*TileManager.iconID_CHAR_HERO_0 = */loader.prepareTileID(R.drawable.char_hero, 0);
+		/*TileManager.iconID_CHAR_HERO_1 = */loader.prepareTileID(R.drawable.char_hero_maksiu_girl_01, 0);
+		/*TileManager.iconID_CHAR_HERO_2 = */loader.prepareTileID(R.drawable.char_hero_maksiu_boy_01, 0);
 		/*TileManager.iconID_selection_red = */loader.prepareTileID(R.drawable.ui_selections, 0);
 		/*TileManager.iconID_selection_yellow = */loader.prepareTileID(R.drawable.ui_selections, 1);
 		/*TileManager.iconID_groundbag = */loader.prepareTileID(R.drawable.ui_icon_equipment, 0);
@@ -64,8 +66,47 @@ public final class ResourceLoader {
 			loader.prepareTileID(R.drawable.ui_splatters1, i+8);
 		}
 		loader.prepareTileID(R.drawable.ui_icon_immunity, 0);
+		// ========================================================================
+		// Load preloaded tiles
+		loader.flush();
+		world.tileManager.loadPreloadedTiles(r);
+	}
 
+	public static void loadResourcesAsync(WorldContext world, Resources r) {
+		long start = System.currentTimeMillis();
+		taskStart = start;
 
+//		final int mTileSize = world.tileManager.tileSize;
+//
+//
+//		DynamicTileLoader loader = new DynamicTileLoader(world.tileManager.tileCache);
+//		prepareTilesets(loader, mTileSize);
+//		if (AndorsTrailApplication.DEVELOPMENT_DEBUGMESSAGES) timingCheckpoint("prepareTilesets");
+//
+//		// ========================================================================
+//		// Load various ui icons
+//		/*TileManager.iconID_CHAR_HERO = */loader.prepareTileID(R.drawable.char_hero, 0);
+//		/*TileManager.iconID_selection_red = */loader.prepareTileID(R.drawable.ui_selections, 0);
+//		/*TileManager.iconID_selection_yellow = */loader.prepareTileID(R.drawable.ui_selections, 1);
+//		/*TileManager.iconID_groundbag = */loader.prepareTileID(R.drawable.ui_icon_equipment, 0);
+//		/*TileManager.iconID_boxopened = */loader.prepareTileID(R.drawable.ui_quickslots, 1);
+//		/*TileManager.iconID_boxclosed = */loader.prepareTileID(R.drawable.ui_quickslots, 0);
+//		/*TileManager.iconID_selection_blue = */loader.prepareTileID(R.drawable.ui_selections, 2);
+//		/*TileManager.iconID_selection_purple = */loader.prepareTileID(R.drawable.ui_selections, 3);
+//		/*TileManager.iconID_selection_green = */loader.prepareTileID(R.drawable.ui_selections, 4);
+//		for(int i = 0; i < 5; ++i) {
+//			loader.prepareTileID(R.drawable.ui_splatters1, i);
+//			loader.prepareTileID(R.drawable.ui_splatters1, i+8);
+//		}
+//		loader.prepareTileID(R.drawable.ui_icon_immunity, 0);
+//		// ========================================================================
+//		// Load preloaded tiles
+//		loader.flush();
+//		world.tileManager.loadPreloadedTiles(r);
+		
+
+		final TranslationLoader translationLoader = new TranslationLoader(r.getAssets(), r);
+		
 		// ========================================================================
 		// Load effects
 		world.visualEffectTypes.initialize(loader);
@@ -95,12 +136,6 @@ public final class ResourceLoader {
 		}
 		conditionsToLoad.recycle();
 		if (AndorsTrailApplication.DEVELOPMENT_DEBUGMESSAGES) timingCheckpoint("ActorConditionsTypeParser");
-
-		// ========================================================================
-		// Load preloaded tiles
-		loader.flush();
-		world.tileManager.loadPreloadedTiles(r);
-
 
 		// ========================================================================
 		// Load items
@@ -230,6 +265,8 @@ public final class ResourceLoader {
 		final Size mapTileSize = new Size(16, 8);
 
 		loader.prepareTileset(R.drawable.char_hero, "char_hero", sz1x1, sz1x1, mTileSize);
+		loader.prepareTileset(R.drawable.char_hero_maksiu_girl_01, "char_hero_maksiu_girl_01", sz1x1, sz1x1, mTileSize);
+		loader.prepareTileset(R.drawable.char_hero_maksiu_boy_01, "char_hero_maksiu_boy_01", sz1x1, sz1x1, mTileSize);
 
 		loader.prepareTileset(R.drawable.ui_selections, "ui_selections", new Size(5, 1), sz1x1, mTileSize);
 		loader.prepareTileset(R.drawable.ui_quickslots, "ui_quickslots", sz2x1, sz1x1, mTileSize);

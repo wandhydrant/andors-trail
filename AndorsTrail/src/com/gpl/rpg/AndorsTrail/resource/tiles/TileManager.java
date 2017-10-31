@@ -34,32 +34,40 @@ import com.gpl.rpg.AndorsTrail.model.map.TMXMapTranslator;
 import com.gpl.rpg.AndorsTrail.util.L;
 
 public final class TileManager {
-	public static final int CHAR_HERO = 1;
-	public static final int iconID_selection_red = 2;
-	public static final int iconID_selection_yellow = 3;
+	
+	public static final int BEGIN_ID = 1;
+	
+	public static final int CHAR_HERO_0 = BEGIN_ID;
+	public static final int CHAR_HERO_1 = CHAR_HERO_0+1;
+	public static final int CHAR_HERO_2 = CHAR_HERO_1+1;
+	//Default hero
+	public static final int CHAR_HERO = CHAR_HERO_2;
+	
+	public static final int iconID_selection_red = CHAR_HERO_2+1;
+	public static final int iconID_selection_yellow = iconID_selection_red+1;
 	public static final int iconID_attackselect = iconID_selection_red;
 	public static final int iconID_moveselect = iconID_selection_yellow;
-	public static final int iconID_groundbag = 4;
-	public static final int iconID_boxopened = 5;
-	public static final int iconID_boxclosed = 6;
+	public static final int iconID_groundbag = iconID_moveselect+1;
+	public static final int iconID_boxopened = iconID_groundbag+1;
+	public static final int iconID_boxclosed = iconID_boxopened+1;
 	public static final int iconID_shop = iconID_groundbag;
 	public static final int iconID_unassigned_quickslot = iconID_groundbag;
-	public static final int iconID_selection_blue = 7;
-	public static final int iconID_selection_purple = 8;
-	public static final int iconID_selection_green = 9;
+	public static final int iconID_selection_blue = iconID_boxclosed+1;
+	public static final int iconID_selection_purple = iconID_selection_blue+1;
+	public static final int iconID_selection_green = iconID_selection_purple+1;
 
-	public static final int iconID_splatter_red_1a = 10;
-	public static final int iconID_splatter_red_1b = 11;
-	public static final int iconID_splatter_red_2a = 12;
-	public static final int iconID_splatter_red_2b = 13;
-	public static final int iconID_splatter_brown_1a = 14;
-	public static final int iconID_splatter_brown_1b = 15;
-	public static final int iconID_splatter_brown_2a = 16;
-	public static final int iconID_splatter_brown_2b = 17;
-	public static final int iconID_splatter_white_1a = 18;
-	public static final int iconID_splatter_white_1b = 19;
+	public static final int iconID_splatter_red_1a = iconID_selection_green+1;
+	public static final int iconID_splatter_red_1b = iconID_splatter_red_1a+1;
+	public static final int iconID_splatter_red_2a = iconID_splatter_red_1b+1;
+	public static final int iconID_splatter_red_2b = iconID_splatter_red_2a+1;
+	public static final int iconID_splatter_brown_1a = iconID_splatter_red_2b+1;
+	public static final int iconID_splatter_brown_1b = iconID_splatter_brown_1a+1;
+	public static final int iconID_splatter_brown_2a = iconID_splatter_brown_1b+1;
+	public static final int iconID_splatter_brown_2b = iconID_splatter_brown_2a+1;
+	public static final int iconID_splatter_white_1a = iconID_splatter_brown_2b+1;
+	public static final int iconID_splatter_white_1b = iconID_splatter_white_1a+1;
 	
-	public static final int iconID_immunity_overlay = 20;
+	public static final int iconID_immunity_overlay = iconID_splatter_white_1b+1;
 
 	public int tileSize;
 	public float density;
@@ -70,7 +78,7 @@ public final class TileManager {
 
 
 	public final TileCache tileCache = new TileCache();
-	public final TileCollection preloadedTiles = new TileCollection(114);
+	public final TileCollection preloadedTiles = new TileCollection(116);
 	public TileCollection currentMapTiles;
 	public TileCollection adjacentMapTiles;
 	private final HashSet<Integer> preloadedTileIDs = new HashSet<Integer>();
@@ -316,7 +324,7 @@ public final class TileManager {
 				throw new IndexOutOfBoundsException("ERROR: TileManager.preloadedTiles needs to be initialized with at least " + maxTileID + " slots. Application will crash now.");
 			}
 		}
-		for(int i = TileManager.CHAR_HERO; i <= maxTileID; ++i) {
+		for(int i = TileManager.BEGIN_ID; i <= maxTileID; ++i) {
 			preloadedTileIDs.add(i);
 		}
 		tileCache.loadTilesFor(preloadedTileIDs, r, preloadedTiles);

@@ -3,11 +3,13 @@ package com.gpl.rpg.AndorsTrail.savegames;
 import android.content.Context;
 import android.content.res.Resources;
 import android.os.Environment;
+
 import com.gpl.rpg.AndorsTrail.AndorsTrailApplication;
 import com.gpl.rpg.AndorsTrail.context.ControllerContext;
 import com.gpl.rpg.AndorsTrail.context.WorldContext;
 import com.gpl.rpg.AndorsTrail.controller.Constants;
 import com.gpl.rpg.AndorsTrail.model.ModelContainer;
+import com.gpl.rpg.AndorsTrail.resource.tiles.TileManager;
 import com.gpl.rpg.AndorsTrail.util.L;
 
 import java.io.*;
@@ -94,7 +96,7 @@ public final class Savegames {
 
 	public static void saveWorld(WorldContext world, OutputStream outStream, String displayInfo) throws IOException {
 		DataOutputStream dest = new DataOutputStream(outStream);
-		FileHeader.writeToParcel(dest, world.model.player.getName(), displayInfo);
+		FileHeader.writeToParcel(dest, world.model.player.getName(), displayInfo, world.model.player.iconID);
 		world.maps.writeToParcel(dest, world);
 		world.model.writeToParcel(dest);
 		dest.close();
@@ -164,7 +166,8 @@ public final class Savegames {
 		public final int fileversion;
 		public final String playerName;
 		public final String displayInfo;
-
+		public final int iconID;
+		
 		public String describe() {
 			return playerName + ", " + displayInfo;
 		}
@@ -183,12 +186,18 @@ public final class Savegames {
 				this.playerName = null;
 				this.displayInfo = null;
 			}
+			if (fileversion >= 43) {
+				this.iconID = src.readInt();
+			} else {
+				this.iconID = TileManager.CHAR_HERO;
+			}
 		}
 
-		public static void writeToParcel(DataOutputStream dest, String playerName, String displayInfo) throws IOException {
+		public static void writeToParcel(DataOutputStream dest, String playerName, String displayInfo, int iconID) throws IOException {
 			dest.writeInt(AndorsTrailApplication.CURRENT_VERSION);
 			dest.writeUTF(playerName);
 			dest.writeUTF(displayInfo);
+			dest.writeInt(iconID);
 		}
 	}
 }

@@ -26,6 +26,7 @@ public final class WorldSetup {
 	public int loadFromSlot = Savegames.SLOT_QUICKSAVE;
 	public boolean isSceneReady = false;
 	public String newHeroName;
+	public int newHeroIcon;
 	private Savegames.LoadSavegameResult loadResult;
 
 	public WorldSetup(WorldContext world, ControllerContext controllers, Context androidContext) {
@@ -53,10 +54,14 @@ public final class WorldSetup {
 			isInitializingResources = true;
 		}
 
+		//Load resources essential to the app synchroneously
+		ResourceLoader.loadResourcesSync(world, r);
+		
+		//And the rest asynchroneously
 		(new AsyncTask<Void, Void, Void>() {
 			@Override
 			protected Void doInBackground(Void... arg0) {
-				ResourceLoader.loadResources(world, r);
+				ResourceLoader.loadResourcesAsync(world, r);
 				return null;
 			}
 
@@ -144,7 +149,7 @@ public final class WorldSetup {
 	private void createNewWorld() {
 		Context ctx = androidContext.get();
 		world.model = new ModelContainer();
-		world.model.player.initializeNewPlayer(world.dropLists, newHeroName);
+		world.model.player.initializeNewPlayer(world.dropLists, newHeroName, newHeroIcon);
 
 		controllers.actorStatsController.recalculatePlayerStats(world.model.player);
 		controllers.movementController.respawnPlayer(ctx.getResources());

@@ -30,6 +30,7 @@ import com.gpl.rpg.AndorsTrail.model.item.Inventory;
 import com.gpl.rpg.AndorsTrail.model.item.ItemContainer;
 import com.gpl.rpg.AndorsTrail.model.item.ItemType;
 import com.gpl.rpg.AndorsTrail.resource.tiles.TileCollection;
+import com.gpl.rpg.AndorsTrail.resource.tiles.TileManager;
 import com.gpl.rpg.AndorsTrail.view.ItemContainerAdapter;
 
 public final class HeroinfoActivity_Inventory extends Fragment {
@@ -94,6 +95,10 @@ public final class HeroinfoActivity_Inventory extends Fragment {
 		inventoryListAdapter = new ItemContainerAdapter(getActivity(), world.tileManager, inv, player, wornTiles);
 		inventoryList.setAdapter(inventoryListAdapter);
 
+		ImageView heroicon = (ImageView) v.findViewById(R.id.heroinfo_inventory_heroicon);
+		world.tileManager.setImageViewTileForPlayer(getResources(), heroicon, player.iconID);
+		
+		
 		heroinfo_stats_gold = (TextView) v.findViewById(R.id.heroinfo_stats_gold);
 		heroinfo_stats_attack = (TextView) v.findViewById(R.id.heroinfo_stats_attack);
 		heroinfo_stats_defense = (TextView) v.findViewById(R.id.heroinfo_stats_defense);

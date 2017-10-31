@@ -90,8 +90,8 @@ public final class Player extends Actor {
 		this.inventory = new Inventory();
 	}
 
-	public void initializeNewPlayer(DropListCollection dropLists, String playerName) {
-		baseTraits.iconID = TileManager.CHAR_HERO;
+	public void initializeNewPlayer(DropListCollection dropLists, String playerName, int playerIcon) {
+		baseTraits.iconID = playerIcon;
 		baseTraits.maxAP = 10;
 		baseTraits.maxHP = 25;
 		baseTraits.moveCost = 6;

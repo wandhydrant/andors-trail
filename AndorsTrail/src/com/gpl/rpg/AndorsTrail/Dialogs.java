@@ -10,13 +10,16 @@ import android.content.Intent;
 import android.graphics.drawable.BitmapDrawable;
 import android.net.Uri;
 import android.os.Bundle;
+import android.support.v4.app.Fragment;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
+
 import com.gpl.rpg.AndorsTrail.activity.*;
+import com.gpl.rpg.AndorsTrail.activity.fragment.StartScreenActivity_MainMenu;
 import com.gpl.rpg.AndorsTrail.context.ControllerContext;
 import com.gpl.rpg.AndorsTrail.context.WorldContext;
 import com.gpl.rpg.AndorsTrail.model.ability.ActorConditionType;
@@ -288,7 +291,13 @@ public final class Dialogs {
 	public static void showLoad(final Activity currentActivity) {
 		Intent intent = new Intent(currentActivity, LoadSaveActivity.class);
 		intent.setData(Uri.parse("content://com.gpl.rpg.AndorsTrail/load"));
-		currentActivity.startActivityForResult(intent, StartScreenActivity.INTENTREQUEST_LOADGAME);
+		currentActivity.startActivityForResult(intent, StartScreenActivity_MainMenu.INTENTREQUEST_LOADGAME);
+	}
+
+	public static void showLoad(final Fragment currentFragment) {
+		Intent intent = new Intent(currentFragment.getActivity(), LoadSaveActivity.class);
+		intent.setData(Uri.parse("content://com.gpl.rpg.AndorsTrail/load"));
+		currentFragment.startActivityForResult(intent, StartScreenActivity_MainMenu.INTENTREQUEST_LOADGAME);
 	}
 
 	public static void showActorConditionInfo(final Context context, ActorConditionType conditionType) {

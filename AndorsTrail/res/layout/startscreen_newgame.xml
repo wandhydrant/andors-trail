@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="bottom"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+        android:layout_margin="@dimen/boxshape_margin"
+        android:background="@drawable/ui_boxshape"
+        android:drawablePadding="@dimen/boxshape_margin"
+        android:gravity="bottom|start"
+        android:padding="@dimen/boxshape_margin"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:text="@string/startscreen_selectherosprite" />
+        
+        <RadioGroup 
+            android:id="@+id/newgame_spritegroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            
+            <ToggleButton 
+                android:id="@+id/newgame_sprite0"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="0dp"
+                android:drawableTop="@drawable/char_hero"
+                android:checked="true"/>
+            
+             <ToggleButton 
+                android:id="@+id/newgame_sprite1"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="0dp"
+                android:drawableTop="@drawable/char_hero_maksiu_girl_01"/>
+            
+             <ToggleButton 
+                android:id="@+id/newgame_sprite2"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="0dp"
+                android:drawableTop="@drawable/char_hero_maksiu_boy_01"/>
+            
+            
+        </RadioGroup>        
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+        android:layout_margin="@dimen/boxshape_margin"
+        android:background="@drawable/ui_boxshape"
+        android:drawablePadding="@dimen/boxshape_margin"
+        android:gravity="bottom|start"
+        android:padding="@dimen/boxshape_margin"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/startscreen_currenthero"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:text="@string/startscreen_enterheroname" />
+
+        <EditText
+            android:id="@+id/startscreen_enterheroname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName" />
+        
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/startscreen_newgame_cancel"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/startscreen_newgame_cancel" />
+
+        <Button
+            android:id="@+id/startscreen_newgame_start"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/startscreen_newgame_start" />
+    </LinearLayout>
+
+</LinearLayout>
