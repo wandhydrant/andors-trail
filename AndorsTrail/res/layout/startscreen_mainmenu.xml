@@ -5,58 +5,73 @@
     android:gravity="bottom"
     android:orientation="vertical" >
 
-    <!-- <TextView
+    <!--
+         <TextView
         android:id="@+id/startscreen_currenthero"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#BB1212FF"
         android:gravity="center_horizontal"
-        android:text="@android:string/unknownName" /> -->
-    
-    <include layout="@layout/save_preview"
+        android:text="@android:string/unknownName" />
+    -->
+
+    <include
         android:id="@+id/save_preview_holder"
-    	android:visibility="gone"/>
-    
-   <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center_vertical"
-        android:orientation="horizontal" >
-
-        <Button
-            android:id="@+id/startscreen_newgame"
-            android:layout_width="0dip"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="@string/startscreen_newgame" />
-
-        <Button
-            android:id="@+id/startscreen_load"
-            android:layout_width="0dip"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="@string/startscreen_load" />
-    </LinearLayout>
+        layout="@layout/save_preview"
+        android:visibility="gone" />
 
     <LinearLayout
+        android:background="@drawable/ui_blue_stdframe"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center_vertical"
-        android:orientation="horizontal" >
+        android:gravity="bottom"
+        android:orientation="vertical" >
 
-        <Button
-            android:id="@+id/startscreen_preferences"
-            android:layout_width="0dip"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="@string/menu_settings" />
+            android:layout_marginBottom="5dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
 
-        <Button
-            android:id="@+id/startscreen_about"
-            android:layout_width="0dip"
+            <Button
+                android:id="@+id/startscreen_newgame"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/startscreen_newgame" />
+
+            <Button
+                android:id="@+id/startscreen_load"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/startscreen_load" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="@string/startscreen_about" />
+            android:layout_marginBottom="5dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/startscreen_preferences"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/menu_settings" />
+
+            <Button
+                android:id="@+id/startscreen_about"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/startscreen_about" />
+        </LinearLayout>
     </LinearLayout>
 
 </LinearLayout>

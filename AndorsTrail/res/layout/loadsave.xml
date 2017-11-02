@@ -5,6 +5,7 @@
 	android:layout_height="wrap_content"
 	android:padding="@dimen/dialog_margin"
 	android:orientation="vertical"
+	android:background="@drawable/ui_blue_stdframe"
 	>
 
 	<TextView
@@ -20,6 +21,7 @@
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
 		android:text="@string/loadsave_selectslot"
+		android:textColor="@color/ui_blue_textbutton_textcolor"
 		/>
 
 	<ScrollView

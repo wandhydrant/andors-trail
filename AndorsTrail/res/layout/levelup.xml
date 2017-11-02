@@ -4,6 +4,7 @@
 	android:layout_width="match_parent"
 	android:layout_height="wrap_content"
 	android:padding="@dimen/dialog_margin"
+	android:background="@drawable/ui_blue_stdframe"
 	>
 
 	<LinearLayout
@@ -63,7 +64,7 @@
 			/>
 
 		<!-- Workaround http://code.google.com/p/andors-trail/issues/detail?id=242 -->
-		<ListView android:layout_width="match_parent" android:layout_height="1dp" />
+		<ListView android:layout_width="match_parent" android:layout_height="1dp" android:background="@null" />
 
 	</LinearLayout>
 

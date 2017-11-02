@@ -1,9 +1,77 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
-	<style name="Theme.NoBackground" parent="android:Theme">
-		<item name="android:windowBackground">@null</item>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+	
+	<style name="AndorsTrailStyle" parent="android:Theme">
+	    <item name="android:buttonStyle">@style/AndorsTrail_Blue_TextButton</item>
+	    <item name="android:buttonStyleToggle">@style/AndorsTrail_Blue_ToggleButton</item>
+	    <item name="android:imageButtonStyle">@style/AndorsTrail_Blue_ImageButton</item>
+	    <item name="android:checkboxStyle">@style/AndorsTrail_Blue_Checkbox</item>
+	    <item name="android:radioButtonStyle">@style/AndorsTrail_Blue_RadioButton</item>
+	    <item name="android:listViewStyle">@style/AndorsTrail_Blue_List</item>
+	    <item name="android:spinnerStyle">@style/AndorsTrail_Blue_Spinner</item>
+	    <item name="android:spinnerDropDownItemStyle">@style/AndorsTrail_Blue_SpinnerDropDown</item>
 	</style>
-
+	<style name="AndorsTrailStyle.NoBackground" parent="AndorsTrailStyle">
+		<item name="android:windowBackground">@android:color/transparent</item>
+	</style>
+	<style name="AndorsTrailStyle.Dialog" parent="android:Theme.Dialog">
+	    <item name="android:buttonStyle">@style/AndorsTrail_Blue_TextButton</item>
+	    <item name="android:imageButtonStyle">@style/AndorsTrail_Blue_ImageButton</item>
+		<item name="android:windowBackground">@android:color/transparent</item>
+	    <item name="android:checkboxStyle">@style/AndorsTrail_Blue_Checkbox</item>
+	    <item name="android:radioButtonStyle">@style/AndorsTrail_Blue_RadioButton</item>
+	    <item name="android:listViewStyle">@style/AndorsTrail_Blue_List</item>
+	    <item name="android:spinnerStyle">@style/AndorsTrail_Blue_Spinner</item>
+	    <item name="android:spinnerDropDownItemStyle">@style/AndorsTrail_Blue_SpinnerDropDown</item>
+	</style>
+	
+	<style name="AndorsTrail_Blue_List" parent="@android:style/Widget.ListView">
+	    <item name="android:background">@drawable/ui_blue_richframe</item>
+	</style>
+	    
+	
+	<style name="AndorsTrail_Blue_TextButton" parent="android:style/Widget.Button">
+	    <item name="android:background">@drawable/ui_blue_textbutton</item>
+	    <item name="android:textColor">@color/ui_blue_textbutton_textcolor</item>
+	</style>
+	<style name="AndorsTrail_Blue_ImageButton" parent="android:style/Widget.ImageButton">
+	    <item name="android:background">@drawable/ui_blue_textbutton</item>
+	</style>
+	<style name="AndorsTrail_Blue_ToggleButton" parent="android:style/Widget.Button.Toggle">
+	    <item name="android:background">@drawable/ui_blue_togglebutton</item>
+	</style>
+	<style name="AndorsTrail_Blue_RadioButton" parent="android:style/Widget.CompoundButton.RadioButton">
+	    <item name="android:button">@drawable/ui_blue_radiobutton</item>
+	    <item name="android:paddingLeft">10dp</item>
+	</style>
+	<style name="AndorsTrail_Blue_Checkbox" parent="android:style/Widget.CompoundButton.CheckBox">
+	    <item name="android:button">@drawable/ui_blue_radiobutton</item>
+	</style>
+	<style name="AndorsTrail_Blue_Spinner" parent="android:style/Widget.Spinner">
+	    <item name="android:background">@drawable/ui_blue_spinner</item>
+		<item name="android:textColor">@color/ui_blue_textbutton_textcolor</item>
+	</style>
+	<style name="AndorsTrail_Blue_SpinnerDropDown" parent="android:style/Widget.DropDownItem.Spinner">
+	    <item name="android:background">@drawable/ui_blue_lightframe</item>
+		<item name="android:textColor">@color/ui_blue_textbutton_textcolor</item>
+		<item name="android:checkMark">@drawable/ui_blue_radiobutton</item>
+	</style>
+	
+	
+	
+	<style name="AndorsTrail_Blue_RichFrame">
+	    <item name="android:background">@drawable/ui_blue_richframe</item>
+	</style>
+	
+	<style name="AndorsTrail_Blue_StdFrame">
+	    <item name="android:background">@drawable/ui_blue_stdframe</item>
+	</style>
+	
+	<style name="AndorsTrail_Blue_LightFrame">
+	    <item name="android:background">@drawable/ui_blue_lightframe</item>
+	</style>
+	
+	
 	<style name="textWithIcon" parent="android:Widget.TextView">
 		<item name="android:drawablePadding">@dimen/dialog_iconpadding_right</item>
 		<item name="android:gravity">center_vertical</item>
@@ -12,6 +80,7 @@
 	<style name="titleWithIcon" parent="@style/textWithIcon">
 		<item name="android:textSize">@dimen/titletext</item>
 		<item name="android:paddingBottom">@dimen/dialog_iconpadding_bottom</item>
+		<item name="android:textColor">@color/ui_blue_textbutton_textcolor</item>
 	</style>
 
 	<style name="statsBoxStyle" parent="android:Widget.TextView">
@@ -23,7 +92,7 @@
 		<item name="android:textSize">@dimen/smalltext</item>
 	</style>
 
-	<style name="quickButton">
+	<style name="quickButton" parent="@style/AndorsTrail_Blue_TextButton">
 		<item name="android:longClickable">true</item>
 		<item name="android:textSize">@dimen/actionbar_text</item>
 		<item name="android:layout_width">wrap_content</item>
@@ -33,12 +102,12 @@
 		<item name="android:padding">5dp</item>
 	</style>
 
-	<style name="toolboxButtonTile">
+	<style name="toolboxButtonTile" parent="@style/AndorsTrail_Blue_TextButton">
 		<item name="android:layout_width">wrap_content</item>
 		<item name="android:layout_height">wrap_content</item>
 	</style>
 
-	<style name="toolboxButtonDrawable">
+	<style name="toolboxButtonDrawable" parent="@style/AndorsTrail_Blue_TextButton">
 		<item name="android:layout_width">match_parent</item>
 		<item name="android:layout_height">wrap_content</item>
 		<item name="android:padding">0dp</item>
