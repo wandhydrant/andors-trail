@@ -11,6 +11,7 @@ import android.graphics.drawable.BitmapDrawable;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.view.ContextThemeWrapper;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
@@ -201,7 +202,7 @@ public final class Dialogs {
 		});
 		itemList.setAdapter(new ItemContainerAdapter(mainActivity, world.tileManager, combinedLoot.items, world.model.player));
 
-		AlertDialog.Builder db = new AlertDialog.Builder(mainActivity)
+		AlertDialog.Builder db = new AlertDialog.Builder(new ContextThemeWrapper(mainActivity, R.style.AndorsTrailStyle))
 		.setTitle(title)
 		.setMessage(msg)
 		.setIcon(new BitmapDrawable(mainActivity.getResources(), world.tileManager.preloadedTiles.getBitmap(TileManager.iconID_groundbag)))
@@ -244,7 +245,7 @@ public final class Dialogs {
 	}
 
 	public static void showConfirmRest(final Activity currentActivity, final ControllerContext controllerContext, final MapObject area) {
-		Dialog d = new AlertDialog.Builder(currentActivity)
+		Dialog d = new AlertDialog.Builder(new ContextThemeWrapper(currentActivity, R.style.AndorsTrailStyle))
 		.setTitle(R.string.dialog_rest_title)
 		.setMessage(R.string.dialog_rest_confirm_message)
 		.setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
@@ -259,7 +260,7 @@ public final class Dialogs {
 		showDialogAndPause(d, controllerContext);
 	}
 	public static void showRested(final Activity currentActivity, final ControllerContext controllerContext) {
-		Dialog d = new AlertDialog.Builder(currentActivity)
+		Dialog d = new AlertDialog.Builder(new ContextThemeWrapper(currentActivity, R.style.AndorsTrailStyle))
 		.setTitle(R.string.dialog_rest_title)
 		.setMessage(R.string.dialog_rest_message)
 		.setNeutralButton(android.R.string.ok, null)
@@ -269,7 +270,7 @@ public final class Dialogs {
 	}
 
 	public static void showNewVersion(final Activity currentActivity) {
-		new AlertDialog.Builder(currentActivity)
+		new AlertDialog.Builder(new ContextThemeWrapper(currentActivity, R.style.AndorsTrailStyle))
 		.setTitle(R.string.dialog_newversion_title)
 		.setMessage(R.string.dialog_newversion_message)
 		.setNeutralButton(android.R.string.ok, null)
@@ -344,7 +345,7 @@ public final class Dialogs {
 		itemList.setChoiceMode(ListView.CHOICE_MODE_NONE);
 		itemList.setAdapter(new ArrayAdapter<String>(context, R.layout.combatlog_row, android.R.id.text1, combatLogMessages));
 
-		final Dialog d = new AlertDialog.Builder(context)
+		final Dialog d = new AlertDialog.Builder(new ContextThemeWrapper(context, R.style.AndorsTrailStyle))
 				.setTitle(R.string.combat_log_title)
 				.setIcon(R.drawable.ui_icon_combat)
 				.setNegativeButton(R.string.dialog_close, null)

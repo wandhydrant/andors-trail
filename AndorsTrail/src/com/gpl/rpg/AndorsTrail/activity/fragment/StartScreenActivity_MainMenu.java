@@ -8,6 +8,7 @@ import android.content.SharedPreferences;
 import android.content.SharedPreferences.Editor;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.view.ContextThemeWrapper;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -188,7 +189,7 @@ public class StartScreenActivity_MainMenu extends Fragment {
 	}
 
 	private void comfirmNewGame() {
-		new AlertDialog.Builder(getActivity())
+		new AlertDialog.Builder(new ContextThemeWrapper(getActivity(), R.style.AndorsTrailStyle_Dialog))
 		.setTitle(R.string.startscreen_newgame)
 		.setMessage(R.string.startscreen_newgame_confirm)
 		.setIcon(android.R.drawable.ic_delete)

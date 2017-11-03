@@ -15,6 +15,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center_vertical"
+            style="@style/AndorsTrail_Blue_StdFrame"
             android:orientation="horizontal" >
 
             <Button
@@ -66,6 +67,7 @@
             android:shadowDx="1"
             android:shadowDy="1"
             android:shadowRadius="1"
+            style="@style/AndorsTrail_Blue_StdFrame"
             android:text="@string/combat_monsteraction"
             android:textSize="@dimen/actionbar_text" />
 
@@ -76,6 +78,7 @@
             android:layout_below="@id/combatview_actionbar"
             android:gravity="center_vertical"
             android:orientation="horizontal"
+            style="@style/AndorsTrail_Blue_StdFrame"
             >
             <!-- android:animateLayoutChanges="true" -->
 

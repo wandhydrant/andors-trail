@@ -10,6 +10,7 @@
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
 		android:layout_weight="1"
+		style="@style/AndorsTrail_Blue_StdFrame"
 		>
 		<LinearLayout
 			android:layout_width="match_parent"
@@ -20,13 +21,14 @@
 			>
 
 			<TextView
-				android:id="@+id/monsterinfo_title"
-				android:layout_width="match_parent"
-				android:layout_height="wrap_content"
-				android:text="@string/dialog_monsterencounter_info"
-				style="@style/titleWithIcon"
-				android:drawableLeft="@drawable/char_hero"
-				/>
+			    android:id="@+id/monsterinfo_title"
+			    style="@style/titleWithIcon"
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:drawableLeft="@drawable/char_hero"
+			    android:background="@drawable/ui_blue_richframe"
+			    android:gravity="center"
+			    android:text="@string/dialog_monsterencounter_info" />
 
 			<LinearLayout
 				android:layout_width="match_parent"
@@ -90,19 +92,18 @@
 	</ScrollView>
 
 	<!-- Workaround http://code.google.com/p/andors-trail/issues/detail?id=242 -->
-	<ListView android:layout_width="match_parent" android:layout_height="wrap_content" />
+	<ListView android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@android:color/transparent"/>
 
 	<LinearLayout
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
 		android:orientation="horizontal"
-		style="@android:style/ButtonBar"
+		style="@style/AndorsTrail_Blue_StdFrame"
 		>
 		<Button
 			android:id="@+id/monsterinfo_close"
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
-			android:layout_weight="1"
 			android:text="@string/dialog_close"
 			/>
 	</LinearLayout>

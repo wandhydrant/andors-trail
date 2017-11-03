@@ -10,25 +10,40 @@
 	    <item name="android:listViewStyle">@style/AndorsTrail_Blue_List</item>
 	    <item name="android:spinnerStyle">@style/AndorsTrail_Blue_Spinner</item>
 	    <item name="android:spinnerDropDownItemStyle">@style/AndorsTrail_Blue_SpinnerDropDown</item>
+	    <item name="android:alertDialogStyle">@style/AndorsTrailStyle.Dialog.Alert</item>
 	</style>
 	<style name="AndorsTrailStyle.NoBackground" parent="AndorsTrailStyle">
-		<item name="android:windowBackground">@android:color/transparent</item>
+		<item name="android:windowBackground">@null</item>
 	</style>
 	<style name="AndorsTrailStyle.Dialog" parent="android:Theme.Dialog">
 	    <item name="android:buttonStyle">@style/AndorsTrail_Blue_TextButton</item>
 	    <item name="android:imageButtonStyle">@style/AndorsTrail_Blue_ImageButton</item>
 		<item name="android:windowBackground">@android:color/transparent</item>
-		<item name="android:background">@android:color/transparent</item>
+		<item name="android:background">@null</item>
 		<item name="android:windowIsTranslucent">true</item>
 	    <item name="android:checkboxStyle">@style/AndorsTrail_Blue_Checkbox</item>
 	    <item name="android:radioButtonStyle">@style/AndorsTrail_Blue_RadioButton</item>
 	    <item name="android:listViewStyle">@style/AndorsTrail_Blue_List</item>
 	    <item name="android:spinnerStyle">@style/AndorsTrail_Blue_Spinner</item>
 	    <item name="android:spinnerDropDownItemStyle">@style/AndorsTrail_Blue_SpinnerDropDown</item>
+	    <item name="android:alertDialogStyle">@style/AndorsTrailStyle.Dialog.Alert</item>
+	</style>
+	<style name="AndorsTrailStyle.Dialog.Alert" parent="AndorsTrailStyle.Dialog">
+		<item name="android:background">@null</item>
+		<item name="android:windowBackground">@drawable/ui_blue_stdframe</item>
+		<item name="android:windowTitleStyle">@style/AndorsTrailStyle.DialogWindowTitle</item>
+		<!-- <item name="android:dialogTitleDecorLayout">@layout/custom_dialog_title_icon</item>
+		<item name="android:dialogCustomTitleDecorLayout">@layout/custom_dialog_title_icon</item>
+		<item name="android:dialogTitleIconsDecorLayout">@layout/custom_dialog_title_icon</item> -->
 	</style>
 	
-	<style name="AndorsTrail_Blue_List" parent="@android:style/Widget.ListView">
+	<style name="AndorsTrailStyle.DialogWindowTitle" > <!-- parent="android:style/DialogWindowTitle" -->
 	    <item name="android:background">@drawable/ui_blue_richframe</item>
+	    <item name="android:textColor">@color/ui_blue_textbutton_textcolor</item>
+	</style>
+	
+	<style name="AndorsTrail_Blue_List" parent="android:style/Widget.ListView">
+	    <item name="android:background">@drawable/ui_blue_stdframe</item>
 	</style>
 	    
 	
@@ -44,7 +59,7 @@
 	</style>
 	<style name="AndorsTrail_Blue_RadioButton" parent="android:style/Widget.CompoundButton.RadioButton">
 	    <item name="android:button">@drawable/ui_blue_radiobutton</item>
-	    <item name="android:paddingLeft">10dp</item>
+	    <item name="android:paddingLeft">20dp</item>
 	</style>
 	<style name="AndorsTrail_Blue_Checkbox" parent="android:style/Widget.CompoundButton.CheckBox">
 	    <item name="android:button">@drawable/ui_blue_radiobutton</item>
@@ -52,6 +67,7 @@
 	<style name="AndorsTrail_Blue_Spinner" parent="android:style/Widget.Spinner">
 	    <item name="android:background">@drawable/ui_blue_spinner</item>
 		<item name="android:textColor">@color/ui_blue_textbutton_textcolor</item>
+		<item name="android:textAppearance">@color/ui_blue_textbutton_textcolor</item>
 	</style>
 	<style name="AndorsTrail_Blue_SpinnerDropDown" parent="android:style/Widget.DropDownItem.Spinner">
 	    <item name="android:background">@drawable/ui_blue_spinner_list_bg</item>
@@ -86,7 +102,7 @@
 	</style>
 
 	<style name="statsBoxStyle" parent="android:Widget.TextView">
-		<item name="android:background">@drawable/ui_boxshape</item>
+		<item name="android:background">@drawable/ui_blue_richframe</item>
 		<item name="android:drawablePadding">@dimen/boxshape_margin</item>
 		<item name="android:gravity">center_vertical</item>
 		<item name="android:layout_margin">@dimen/boxshape_margin</item>

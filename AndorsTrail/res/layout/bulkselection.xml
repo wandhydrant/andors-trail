@@ -11,6 +11,7 @@
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
 		android:layout_weight="1"
+		style="@style/AndorsTrail_Blue_StdFrame"
 		>
 		<LinearLayout
 			android:layout_width="match_parent"
@@ -124,22 +125,14 @@
 	</ScrollView>
 
 	<!-- Workaround http://code.google.com/p/andors-trail/issues/detail?id=242 -->
-	<ListView android:layout_width="match_parent" android:layout_height="wrap_content" />
+	<ListView android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@android:color/transparent"/>
 
 	<LinearLayout
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
 		android:orientation="horizontal"
-		style="@android:style/ButtonBar"
+		style="@style/AndorsTrail_Blue_StdFrame"
 		>
-
-		<Button
-			android:id="@+id/bulkselection_finalize_button"
-			android:layout_width="match_parent"
-			android:layout_height="wrap_content"
-			android:layout_weight="1"
-			android:text="@string/inventory_drop"
-			/>
 
 		<Button
 			android:id="@+id/bulkselection_cancel_button"
@@ -147,6 +140,14 @@
 			android:layout_height="wrap_content"
 			android:layout_weight="1"
 			android:text="@android:string/cancel"
+			/>
+		
+		<Button
+			android:id="@+id/bulkselection_finalize_button"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:text="@string/inventory_drop"
 			/>
 
 	</LinearLayout>

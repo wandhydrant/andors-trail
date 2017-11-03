@@ -10,6 +10,10 @@
 	    <item name="android:listViewStyle">@style/AndorsTrail_Blue_List</item>
 	    <item name="android:spinnerStyle">@style/AndorsTrail_Blue_Spinner</item>
 	    <item name="android:spinnerDropDownItemStyle">@style/AndorsTrail_Blue_SpinnerDropDown</item>
+	    <item name="android:dialogTheme">@style/AndorsTrailStyle.Dialog</item>
+	    <item name="android:alertDialogTheme">@style/AndorsTrailStyle.Dialog</item>
+	    <item name="android:alertDialogStyle">@style/AndorsTrailStyle.Dialog.Alert</item>
+	    <!-- <item name="android:toastFrameBackground">@drawable/ui_blue_richframe</item> -->
 	</style>
 	
 	<style name="AndorsTrailStyle.Dialog" parent="android:Theme.Dialog">
@@ -17,12 +21,17 @@
 	    <item name="android:buttonBarButtonStyle">@style/AndorsTrail_Blue_TextButton</item>
 	    <item name="android:imageButtonStyle">@style/AndorsTrail_Blue_ImageButton</item>
 	    <item name="android:buttonBarStyle">@style/AndorsTrail_Blue_StdFrame</item>
-		<item name="android:windowBackground">@null</item>
+		<item name="android:windowBackground">@android:color/transparent</item>
+		<item name="android:background">@null</item>
+		<item name="android:windowIsTranslucent">true</item>
 	    <item name="android:checkboxStyle">@style/AndorsTrail_Blue_Checkbox</item>
 	    <item name="android:radioButtonStyle">@style/AndorsTrail_Blue_RadioButton</item>
 	    <item name="android:listViewStyle">@style/AndorsTrail_Blue_List</item>
 	    <item name="android:spinnerStyle">@style/AndorsTrail_Blue_Spinner</item>
 	    <item name="android:spinnerDropDownItemStyle">@style/AndorsTrail_Blue_SpinnerDropDown</item>
+	    <item name="android:dialogTheme">@style/AndorsTrailStyle.Dialog</item>
+	    <item name="android:alertDialogTheme">@style/AndorsTrailStyle.Dialog.Alert</item>
+	    <item name="android:alertDialogStyle">@style/AndorsTrailStyle.Dialog.Alert</item>
 	</style>
 	
 	<style name="AndorsTrail_Blue_TextButton" parent="android:style/Widget.Button">

@@ -4,6 +4,8 @@ import android.content.res.Resources;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentTabHost;
+import android.widget.ImageView;
+
 import com.gpl.rpg.AndorsTrail.AndorsTrailApplication;
 import com.gpl.rpg.AndorsTrail.R;
 import com.gpl.rpg.AndorsTrail.activity.fragment.HeroinfoActivity_Inventory;
@@ -49,6 +51,19 @@ public final class HeroinfoActivity extends FragmentActivity {
 		if (t != null && t.length() > 0) {
 			tabHost.setCurrentTabByTag(t);
 		}
+		updateIconForPlayer();
+
+	}
+	
+	@Override
+	protected void onResume() {
+		super.onResume();
+		updateIconForPlayer();
+	}
+	
+	private void updateIconForPlayer() {
+		ImageView iv = (ImageView) tabHost.getTabWidget().getChildTabViewAt(0).findViewById(android.R.id.icon);
+		world.tileManager.setImageViewTileForPlayer(getResources(), iv, world.model.player.iconID);
 	}
 
 	@Override

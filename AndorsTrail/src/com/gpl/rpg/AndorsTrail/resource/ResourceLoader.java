@@ -66,6 +66,11 @@ public final class ResourceLoader {
 			loader.prepareTileID(R.drawable.ui_splatters1, i+8);
 		}
 		loader.prepareTileID(R.drawable.ui_icon_immunity, 0);
+	
+		// Load effects
+		world.visualEffectTypes.initialize(loader);
+		if (AndorsTrailApplication.DEVELOPMENT_DEBUGMESSAGES) timingCheckpoint("VisualEffectLoader");
+		
 		// ========================================================================
 		// Load preloaded tiles
 		loader.flush();
@@ -100,6 +105,12 @@ public final class ResourceLoader {
 //		}
 //		loader.prepareTileID(R.drawable.ui_icon_immunity, 0);
 //		// ========================================================================
+		// ========================================================================
+//
+//		// Load effects
+//		world.visualEffectTypes.initialize(loader);
+//		if (AndorsTrailApplication.DEVELOPMENT_DEBUGMESSAGES) timingCheckpoint("VisualEffectLoader");
+//		
 //		// Load preloaded tiles
 //		loader.flush();
 //		world.tileManager.loadPreloadedTiles(r);
@@ -107,11 +118,7 @@ public final class ResourceLoader {
 
 		final TranslationLoader translationLoader = new TranslationLoader(r.getAssets(), r);
 		
-		// ========================================================================
-		// Load effects
-		world.visualEffectTypes.initialize(loader);
-		if (AndorsTrailApplication.DEVELOPMENT_DEBUGMESSAGES) timingCheckpoint("VisualEffectLoader");
-
+		
 		// ========================================================================
 		// Load skills
 		world.skills.initialize();

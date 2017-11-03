@@ -96,13 +96,17 @@
             android:layout_width="0dip"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="@string/startscreen_newgame_cancel" />
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+            android:text="@android:string/cancel" />
 
         <Button
             android:id="@+id/startscreen_newgame_start"
             android:layout_width="0dip"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
             android:text="@string/startscreen_newgame_start" />
     </LinearLayout>
 

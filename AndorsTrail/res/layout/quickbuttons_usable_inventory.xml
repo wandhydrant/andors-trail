@@ -5,6 +5,7 @@
 	android:layout_height="wrap_content"
 	android:orientation="vertical"
 	android:gravity="left"
+	android:background="@drawable/ui_blue_stdframe"
 	>
 
     <TextView
@@ -15,12 +16,16 @@
 		android:drawableLeft="@drawable/ui_icon_equipment"
 		android:paddingTop="3sp"
 		style="@style/titleWithIcon"
+		android:gravity="center"
+		android:background="@drawable/ui_blue_richframe"
 		/>
     
     <TextView
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
 		android:text="@string/inventory_selectitem"
+		android:textColor="@color/ui_blue_textbutton_textcolor"
+		android:layout_marginBottom="5dp"
 		/>
     
     

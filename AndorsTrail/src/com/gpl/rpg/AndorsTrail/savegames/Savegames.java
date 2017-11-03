@@ -48,8 +48,9 @@ public final class Savegames {
 	}
 	public static LoadSavegameResult loadWorld(WorldContext world, ControllerContext controllers, Context androidContext, int slot) {
 		try {
+			FileHeader fh = quickload(androidContext, slot);
 			FileInputStream fos = getInputFile(androidContext, slot);
-			LoadSavegameResult result = loadWorld(androidContext.getResources(), world, controllers, fos);
+			LoadSavegameResult result = loadWorld(androidContext.getResources(), world, controllers, fos, fh);
 			fos.close();
 			return result;
 		} catch (IOException e) {
@@ -102,9 +103,9 @@ public final class Savegames {
 		dest.close();
 	}
 
-	public static LoadSavegameResult loadWorld(Resources res, WorldContext world, ControllerContext controllers, InputStream inState) throws IOException {
+	public static LoadSavegameResult loadWorld(Resources res, WorldContext world, ControllerContext controllers, InputStream inState, FileHeader fh) throws IOException {
 		DataInputStream src = new DataInputStream(inState);
-		final FileHeader header = new FileHeader(src);
+		final FileHeader header = new FileHeader(src, fh.skipIcon);
 		if (header.fileversion > AndorsTrailApplication.CURRENT_VERSION) return LoadSavegameResult.savegameIsFromAFutureVersion;
 
 		world.maps.readFromParcel(src, world, controllers, header.fileversion);
@@ -131,7 +132,7 @@ public final class Savegames {
 			}
 			FileInputStream fos = getInputFile(androidContext, slot);
 			DataInputStream src = new DataInputStream(fos);
-			final FileHeader header = new FileHeader(src);
+			final FileHeader header = new FileHeader(src, false);
 			src.close();
 			fos.close();
 			return header;
@@ -167,6 +168,7 @@ public final class Savegames {
 		public final String playerName;
 		public final String displayInfo;
 		public final int iconID;
+		public boolean skipIcon = false;
 		
 		public String describe() {
 			return playerName + ", " + displayInfo;
@@ -175,7 +177,7 @@ public final class Savegames {
 
 		// ====== PARCELABLE ===================================================================
 
-		public FileHeader(DataInputStream src) throws IOException {
+		public FileHeader(DataInputStream src, boolean skipIcon) throws IOException {
 			int fileversion = src.readInt();
 			if (fileversion == 11) fileversion = 5; // Fileversion 5 had no version identifier, but the first byte was 11.
 			this.fileversion = fileversion;
@@ -186,10 +188,16 @@ public final class Savegames {
 				this.playerName = null;
 				this.displayInfo = null;
 			}
-			if (fileversion >= 43) {
-				this.iconID = src.readInt();
+			if (fileversion >= 43 && !skipIcon) {
+				int id = src.readInt();
+				if (id > TileManager.LAST_HERO) {
+					this.iconID = TileManager.CHAR_HERO_0;
+					this.skipIcon = true;
+				} else {
+					this.iconID = id;
+				}
 			} else {
-				this.iconID = TileManager.CHAR_HERO;
+				this.iconID = TileManager.CHAR_HERO_0;
 			}
 		}
 

@@ -37,7 +37,7 @@ public final class DisplayWorldMapActivity extends Activity {
 		setContentView(R.layout.displayworldmap);
 
 		displayworldmap_webview = (WebView) findViewById(R.id.displayworldmap_webview);
-		displayworldmap_webview.setBackgroundColor(getResources().getColor(R.color.displayworldmap_background));
+//		displayworldmap_webview.setBackgroundColor(getResources().getColor(R.color.displayworldmap_background));
 		displayworldmap_webview.getSettings().setBuiltInZoomControls(true);
 		displayworldmap_webview.getSettings().setUseWideViewPort(true);
 		enableJavascript();

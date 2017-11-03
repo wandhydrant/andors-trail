@@ -10,7 +10,7 @@
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
 		android:layout_weight="1"
-		style="@style/AndorsTrail_Blue_RichFrame"
+		style="@style/AndorsTrail_Blue_StdFrame"
 		>
 		<LinearLayout
 			android:layout_width="match_parent"
@@ -24,6 +24,8 @@
 				android:layout_height="wrap_content"
 				android:text="@string/heroinfo_skill"
 				style="@style/titleWithIcon"
+				android:background="@drawable/ui_blue_richframe"
+			    android:gravity="center"
 				android:drawableLeft="@drawable/ui_icon_skill"
 				/>
 

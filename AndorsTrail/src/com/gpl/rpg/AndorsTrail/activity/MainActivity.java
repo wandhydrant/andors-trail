@@ -7,6 +7,7 @@ import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.ContextThemeWrapper;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.View.OnLongClickListener;
@@ -231,7 +232,7 @@ public final class MainActivity
 					
 					final int buttonId = ((QuickButton)v).getIndex();
 					
-					final AlertDialog dialog = new AlertDialog.Builder(v.getContext()).create();
+					final AlertDialog dialog = new AlertDialog.Builder(new ContextThemeWrapper(v.getContext(), R.style.AndorsTrailStyle_Dialog)).create();
 					View view = getLayoutInflater().inflate(R.layout.quickbuttons_usable_inventory, null);
 					ListView lv = (ListView) view.findViewById(R.id.quickbuttons_assignlist);
 

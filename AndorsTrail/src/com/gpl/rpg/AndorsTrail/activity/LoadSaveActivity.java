@@ -11,10 +11,12 @@ import android.view.ViewGroup;
 import android.view.ViewGroup.LayoutParams;
 import android.widget.Button;
 import android.widget.TextView;
+
 import com.gpl.rpg.AndorsTrail.AndorsTrailApplication;
 import com.gpl.rpg.AndorsTrail.AndorsTrailPreferences;
 import com.gpl.rpg.AndorsTrail.R;
 import com.gpl.rpg.AndorsTrail.model.ModelContainer;
+import com.gpl.rpg.AndorsTrail.resource.tiles.TileManager;
 import com.gpl.rpg.AndorsTrail.savegames.Savegames;
 import com.gpl.rpg.AndorsTrail.savegames.Savegames.FileHeader;
 
@@ -26,6 +28,7 @@ public final class LoadSaveActivity extends Activity implements OnClickListener 
 	private static final int SLOT_NUMBER_CREATE_NEW_SLOT = -1;
 	private static final int SLOT_NUMBER_FIRST_SLOT = 1;
 	private ModelContainer model;
+	private TileManager tileManager;
 	private AndorsTrailPreferences preferences;
 
 	@Override
@@ -36,6 +39,7 @@ public final class LoadSaveActivity extends Activity implements OnClickListener 
 		app.setWindowParameters(this);
 		this.model = app.getWorld().model;
 		this.preferences = app.getPreferences();
+		this.tileManager = app.getWorld().tileManager;
 
 		String loadsave = getIntent().getData().getLastPathSegment();
 		isLoading = (loadsave.equalsIgnoreCase("load"));
@@ -80,6 +84,7 @@ public final class LoadSaveActivity extends Activity implements OnClickListener 
 			b.setTag(slot);
 			b.setOnClickListener(this);
 			b.setText(slot + ". " + header.describe());
+			tileManager.setImageViewTileForPlayer(getResources(), b, header.iconID);
 			parent.addView(b, params);
 		}
 	}
