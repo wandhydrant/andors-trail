@@ -8,6 +8,8 @@
     <LinearLayout
         android:layout_width="match_parent"
     	android:layout_height="wrap_content"
+    	android:layout_marginLeft="5dp"
+    	android:layout_marginRight="5dp"
     	android:background="@drawable/ui_blue_stdframe"
         android:gravity="bottom|start"
         android:orientation="vertical" >
@@ -59,11 +61,10 @@
     <LinearLayout
         android:layout_width="match_parent"
     	android:layout_height="wrap_content"
-        android:layout_margin="@dimen/boxshape_margin"
-        android:background="@drawable/ui_boxshape"
-        android:drawablePadding="@dimen/boxshape_margin"
+    	android:layout_marginLeft="5dp"
+    	android:layout_marginRight="5dp"
+        android:background="@drawable/ui_blue_stdframe"
         android:gravity="bottom|start"
-        android:padding="@dimen/boxshape_margin"
         android:orientation="vertical" >
 
         <TextView
@@ -84,6 +85,9 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+    	android:layout_marginLeft="5dp"
+    	android:layout_marginRight="5dp"
+        android:background="@drawable/ui_blue_stdframe"
         android:gravity="center_vertical"
         android:orientation="horizontal" >
 
