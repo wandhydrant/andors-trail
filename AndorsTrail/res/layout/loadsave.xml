@@ -5,7 +5,6 @@
 	android:layout_height="wrap_content"
 	android:padding="@dimen/dialog_margin"
 	android:orientation="vertical"
-	android:background="@drawable/ui_blue_stdframe"
 	>
 
 	<TextView
@@ -16,7 +15,6 @@
 		style="@style/titleWithIcon"
 		android:gravity="center"
 		android:background="@drawable/ui_blue_richframe"
-		android:layout_marginBottom="5dp"
 		/>
 
 	<TextView
@@ -25,12 +23,13 @@
 		android:layout_height="wrap_content"
 		android:text="@string/loadsave_selectslot"
 		android:textColor="@color/ui_blue_textbutton_textcolor"
-		android:layout_marginBottom="5dp"
+		android:background="@drawable/ui_blue_stdframe"
 		/>
 
 	<ScrollView
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
+		style="@style/AndorsTrail_Blue_StdFrame"
 		>
 		<LinearLayout
 			android:id="@+id/loadsave_slot_list"
@@ -45,6 +44,17 @@
 				android:text="@android:string/unknownName"
 				android:layout_marginBottom="5dp"
 				/>
+		</LinearLayout>
+
+	</ScrollView>
+
+	<LinearLayout
+			android:id="@+id/loadsave_save_to_new_slot_container"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical"
+			style="@style/AndorsTrail_Blue_StdFrame"
+			>
 			<Button
 				android:id="@+id/loadsave_save_to_new_slot"
 				android:layout_width="match_parent"
@@ -52,7 +62,6 @@
 				android:text="@string/loadsave_save_to_new_slot"
 				/>
 		</LinearLayout>
-
-	</ScrollView>
-
+	
+	
 </LinearLayout>

@@ -2,10 +2,12 @@ package com.gpl.rpg.AndorsTrail.activity;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
+import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.webkit.WebView;
+import android.webkit.WebViewClient;
 import android.widget.Button;
 import android.widget.Toast;
 import com.gpl.rpg.AndorsTrail.AndorsTrailApplication;
@@ -64,6 +66,7 @@ public final class DisplayWorldMapActivity extends Activity {
 		update();
 	}
 
+	@SuppressLint("NewApi")
 	private void update() {
 		File worldmap = WorldMapController.getCombinedWorldMapFile(worldMapSegmentName);
 
@@ -85,5 +88,19 @@ public final class DisplayWorldMapActivity extends Activity {
 				+ (world.model.player.position.y + map.worldPosition.y-1) * WorldMapController.WORLDMAP_DISPLAY_TILESIZE;
 		L.log("Showing " + url);
 		displayworldmap_webview.loadUrl(url);
+		displayworldmap_webview.setBackgroundColor(getResources().getColor(android.R.color.transparent));
+		
+		if (Build.VERSION.SDK_INT >= 11) displayworldmap_webview.setLayerType(WebView.LAYER_TYPE_SOFTWARE, null);
+
+		displayworldmap_webview.setWebViewClient(new WebViewClient()
+		{
+		    @SuppressLint("NewApi")
+			@Override
+		    public void onPageFinished(WebView view, String url)
+		    {
+		    	displayworldmap_webview.setBackgroundColor(0x00000000);
+		        if (Build.VERSION.SDK_INT >= 11) displayworldmap_webview.setLayerType(WebView.LAYER_TYPE_SOFTWARE, null);
+		    }
+		});
 	}
 }

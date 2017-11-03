@@ -57,20 +57,19 @@ public final class LoadSaveActivity extends Activity implements OnClickListener 
 
 		ViewGroup slotList = (ViewGroup) findViewById(R.id.loadsave_slot_list);
 		Button slotTemplateButton = (Button) findViewById(R.id.loadsave_slot_n);
-		Button createNewSlot = (Button) findViewById(R.id.loadsave_save_to_new_slot);
 		LayoutParams params = slotTemplateButton.getLayoutParams();
 		slotList.removeView(slotTemplateButton);
-		slotList.removeView(createNewSlot);
+
+		ViewGroup newSlotContainer = (ViewGroup) findViewById(R.id.loadsave_save_to_new_slot_container);
+		Button createNewSlot = (Button) findViewById(R.id.loadsave_save_to_new_slot);
 
 		addSavegameSlotButtons(slotList, params, Savegames.getUsedSavegameSlots());
 
 		if (!isLoading) {
-			Button b = new Button(this);
-			b.setLayoutParams(params);
-			b.setTag(SLOT_NUMBER_CREATE_NEW_SLOT);
-			b.setOnClickListener(this);
-			b.setText(R.string.loadsave_save_to_new_slot);
-			slotList.addView(b, params);
+			createNewSlot.setTag(SLOT_NUMBER_CREATE_NEW_SLOT);
+			createNewSlot.setOnClickListener(this);
+		} else {
+			newSlotContainer.setVisibility(View.GONE);
 		}
 	}
 
