@@ -167,6 +167,7 @@ public final class HeroinfoActivity_Stats extends Fragment {
 		}
 		if (effects_hit.isEmpty()) effects_hit = null;
 		if (effects_kill.isEmpty()) effects_kill = null;
+		if (effects_hitReceived.isEmpty()) effects_hitReceived = null;
 		actorinfo_onhiteffects.update(null, null, effects_hit, effects_kill, effects_hitReceived, null, false);
 
 

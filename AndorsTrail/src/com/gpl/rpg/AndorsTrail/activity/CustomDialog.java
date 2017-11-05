@@ -12,6 +12,7 @@ import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.view.ViewGroup.LayoutParams;
 import android.view.Window;
+import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.TextView;
 
@@ -25,6 +26,7 @@ public class CustomDialog {
 		dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
 		dialog.setContentView(R.layout.custom_dialog_title_icon);
 		dialog.getWindow().setBackgroundDrawableResource(android.R.color.transparent);
+		dialog.getWindow().getAttributes().width=WindowManager.LayoutParams.MATCH_PARENT;
 
 		TextView titleView = (TextView) dialog.findViewById(R.id.dialog_title);
 		if (title != null || icon != null) {

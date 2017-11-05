@@ -5,7 +5,7 @@
     android:gravity="left"
     android:orientation="vertical" >
 
-    <TextView
+    <!-- <TextView
         android:id="@+id/quickslot_assign_title"
         style="@style/titleWithIcon"
         android:layout_width="match_parent"
@@ -20,12 +20,11 @@
         android:layout_height="wrap_content"
         android:background="@drawable/ui_blue_stdframe"
         android:text="@string/inventory_selectitem"
-        android:textColor="@color/ui_blue_textbutton_textcolor" />
+        android:textColor="@color/ui_blue_textbutton_textcolor" /> -->
 
     <ListView
         android:id="@+id/quickbuttons_assignlist"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@drawable/ui_blue_stdframe" />
+        android:layout_height="wrap_content" />
 
 </LinearLayout>

@@ -26,17 +26,11 @@
                 android:text="@string/combat_attack"
                 android:textSize="@dimen/actionbar_text" />
 
-            <TextView
+            <com.gpl.rpg.AndorsTrail.view.RangeBar
                 android:id="@+id/combatview_status"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:shadowColor="#000"
-                android:shadowDx="1"
-                android:shadowDy="1"
-                android:shadowRadius="1"
-                android:text="@string/status_ap"
-                android:textSize="@dimen/actionbar_text" />
+                android:layout_weight="1" />
 
             <Button
                 android:id="@+id/combatview_endturn"
@@ -59,6 +53,7 @@
             android:id="@+id/combatview_monsterismoving"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_alignTop="@id/combatview_actionbar"
             android:layout_alignBottom="@id/combatview_actionbar"
             android:gravity="center"
             android:paddingBottom="4sp"

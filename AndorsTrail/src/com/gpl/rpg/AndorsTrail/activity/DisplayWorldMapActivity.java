@@ -89,19 +89,19 @@ public final class DisplayWorldMapActivity extends Activity {
 				+ (world.model.player.position.y + map.worldPosition.y-1) * WorldMapController.WORLDMAP_DISPLAY_TILESIZE;
 		L.log("Showing " + url);
 		displayworldmap_webview.loadUrl(url);
-		displayworldmap_webview.setBackgroundColor(getResources().getColor(android.R.color.transparent));
+		displayworldmap_webview.setBackgroundColor(getResources().getColor(R.color.displayworldmap_background));
 		
-		if (Build.VERSION.SDK_INT >= 11) displayworldmap_webview.setLayerType(WebView.LAYER_TYPE_SOFTWARE, null);
+//		if (Build.VERSION.SDK_INT >= 11) displayworldmap_webview.setLayerType(WebView.LAYER_TYPE_SOFTWARE, null);
 
-		displayworldmap_webview.setWebViewClient(new WebViewClient()
-		{
-		    @SuppressLint("NewApi")
-			@Override
-		    public void onPageFinished(WebView view, String url)
-		    {
-		    	displayworldmap_webview.setBackgroundColor(0x00000000);
-		        if (Build.VERSION.SDK_INT >= 11) displayworldmap_webview.setLayerType(WebView.LAYER_TYPE_SOFTWARE, null);
-		    }
-		});
+//		displayworldmap_webview.setWebViewClient(new WebViewClient()
+//		{
+//		    @SuppressLint("NewApi")
+//			@Override
+//		    public void onPageFinished(WebView view, String url)
+//		    {
+//		    	displayworldmap_webview.setBackgroundColor(0x00000000);
+//		        if (Build.VERSION.SDK_INT >= 11) displayworldmap_webview.setLayerType(WebView.LAYER_TYPE_SOFTWARE, null);
+//		    }
+//		});
 	}
 }

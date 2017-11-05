@@ -29,53 +29,48 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical" >
+            android:orientation="vertical"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp" >
 
-            <LinearLayout
-                style="@style/AndorsTrail_Blue_StdFrame"
+            <Button
+                android:id="@+id/levelup_add_health"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical" >
+                android:text="@string/levelup_add_health" />
 
-                <Button
-                    android:id="@+id/levelup_add_health"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/levelup_add_health" />
+            <Button
+                android:id="@+id/levelup_add_attackchance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/levelup_add_attackchance" />
 
-                <Button
-                    android:id="@+id/levelup_add_attackchance"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/levelup_add_attackchance" />
+            <Button
+                android:id="@+id/levelup_add_attackdamage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/levelup_add_attackdamage" />
 
-                <Button
-                    android:id="@+id/levelup_add_attackdamage"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/levelup_add_attackdamage" />
+            <Button
+                android:id="@+id/levelup_add_blockchance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/levelup_add_blockchance" />
 
-                <Button
-                    android:id="@+id/levelup_add_blockchance"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/levelup_add_blockchance" />
+            <TextView
+                android:id="@+id/levelup_adds_new_skillpoint"
+                style="@style/textWithIcon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ui_icon_skill"
+                android:text="@string/levelup_adds_new_skillpoint" />
 
-                <TextView
-                    android:id="@+id/levelup_adds_new_skillpoint"
-                    style="@style/textWithIcon"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:drawableLeft="@drawable/ui_icon_skill"
-                    android:text="@string/levelup_adds_new_skillpoint" />
+            <!-- Workaround http://code.google.com/p/andors-trail/issues/detail?id=242 -->
 
-                <!-- Workaround http://code.google.com/p/andors-trail/issues/detail?id=242 -->
-
-                <ListView
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:background="@null" />
-            </LinearLayout>
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@null" />
         </LinearLayout>
     </ScrollView>
 

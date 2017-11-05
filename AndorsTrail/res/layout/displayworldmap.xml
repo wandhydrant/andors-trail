@@ -32,14 +32,14 @@
         android:layout_height="match_parent"
         android:background="@drawable/ui_blue_stdframe"
         android:orientation="vertical"
-        android:layerType="software" >
+        >
 
         <WebView
             android:id="@+id/displayworldmap_webview"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@android:color/transparent"
-            android:layerType="software" />
+            android:background="@color/displayworldmap_background"
+            />
     </LinearLayout>
 
 </LinearLayout>

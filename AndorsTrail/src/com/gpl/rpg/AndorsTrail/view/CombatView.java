@@ -33,7 +33,7 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 public final class CombatView extends RelativeLayout implements CombatSelectionListener, CombatTurnListener, ActorStatsListener, ActorConditionListener {
-	private final TextView statusTextView;
+	private final RangeBar playerAPBar;
 	private final Button attackMoveButton;
 	private final ImageButton monsterInfo;
 	private final RangeBar monsterHealth;
@@ -70,7 +70,7 @@ public final class CombatView extends RelativeLayout implements CombatSelectionL
 
 		setFocusable(false);
 		inflate(context, R.layout.combatview, this);
-		findViewById(R.id.combatview_fixedarea).setBackgroundResource(R.drawable.ui_gradientshape_translucent);
+//		findViewById(R.id.combatview_fixedarea).setBackgroundResource(R.drawable.ui_gradientshape_translucent);
 //		this.setBackgroundResource(R.drawable.ui_gradientshape_translucent);
 
 		final CombatController c = controllers.combatController;
@@ -97,7 +97,8 @@ public final class CombatView extends RelativeLayout implements CombatSelectionL
 			}
 		});
 
-		statusTextView = (TextView) findViewById(R.id.combatview_status);
+		playerAPBar = (RangeBar) findViewById(R.id.combatview_status);
+		playerAPBar.init(R.drawable.ui_progress_exp, R.string.status_ap);
 
 		monsterInfo = (ImageButton) findViewById(R.id.combatview_monsterinfo);
 		monsterInfo.setOnClickListener(new OnClickListener() {
@@ -125,8 +126,8 @@ public final class CombatView extends RelativeLayout implements CombatSelectionL
 		activeConditions = new DisplayActiveActorConditionIcons(controllers, world, context, activeConditionsBar);
 		
 		
-		monsterBar.setBackgroundColor(res.getColor(color.transparent));
-		actionBar.setBackgroundColor(res.getColor(color.transparent));
+//		monsterBar.setBackgroundColor(res.getColor(color.transparent));
+//		actionBar.setBackgroundColor(res.getColor(color.transparent));
 
 		displayAnimation = AnimationUtils.loadAnimation(context, R.anim.showcombatbar);
 		hideAnimation = AnimationUtils.loadAnimation(context, R.anim.hidecombatbar);
@@ -180,7 +181,7 @@ public final class CombatView extends RelativeLayout implements CombatSelectionL
 		monsterHealth.update(m.getMaxHP(), m.getCurrentHP());
 	}
 	private void updatePlayerAP() {
-		statusTextView.setText(res.getString(R.string.combat_status_ap, player.getCurrentAP()));
+		playerAPBar.update(player.getMaxAP(), player.getCurrentAP());
 		updateAttackMoveButtonText();
 	}
 	private void updateSelectedMonster(Monster selectedMonster) {

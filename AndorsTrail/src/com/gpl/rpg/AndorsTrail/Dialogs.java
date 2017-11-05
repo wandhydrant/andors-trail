@@ -35,14 +35,18 @@ import android.content.DialogInterface;
 import android.content.DialogInterface.OnDismissListener;
 import android.content.Intent;
 import android.graphics.drawable.BitmapDrawable;
+import android.graphics.drawable.ColorDrawable;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.View;
+import android.view.ViewGroup;
+import android.view.ViewGroup.LayoutParams;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.ScrollView;
 import android.widget.Toast;
 
 public final class Dialogs {
@@ -400,16 +404,21 @@ public final class Dialogs {
 	public static void showCombatLog(final Context context, final ControllerContext controllerContext, final WorldContext world) {
 		final String[] combatLogMessages = world.model.combatLog.getAllMessages();
 
-		ListView itemList = null;
+		View view = null;
 		String msg = null;
 		if (combatLogMessages.length > 0) {
+			ListView itemList = null;
 			itemList = new ListView(context);
 			itemList.setLayoutParams(new ListView.LayoutParams(ListView.LayoutParams.MATCH_PARENT, ListView.LayoutParams.WRAP_CONTENT));
-			itemList.setPadding(20, 0, 20, 20);
 			itemList.setStackFromBottom(true);
 			itemList.setTranscriptMode(ListView.TRANSCRIPT_MODE_ALWAYS_SCROLL);
 			itemList.setChoiceMode(ListView.CHOICE_MODE_NONE);
+			itemList.setBackgroundResource(R.color.ui_blue_stdframe_bg);
 			itemList.setAdapter(new ArrayAdapter<String>(context, R.layout.combatlog_row, android.R.id.text1, combatLogMessages));
+//			ScrollView sv = new ScrollView(context);
+//			sv.setLayoutParams(new LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, 0));
+//			sv.addView(itemList);
+			view = itemList;
 		} else {
 			msg = context.getResources().getString(R.string.combat_log_noentries);
 		}
@@ -425,7 +434,7 @@ public final class Dialogs {
 				context.getResources().getString(R.string.combat_log_title), 
 				context.getResources().getDrawable(R.drawable.ui_icon_combat), 
 				msg, 
-				itemList, 
+				view, 
 				true);
 		
 		

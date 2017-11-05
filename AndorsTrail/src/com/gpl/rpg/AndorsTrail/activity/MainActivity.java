@@ -239,7 +239,10 @@ public final class MainActivity
 					final ItemContainerAdapter inventoryListAdapter = new QuickslotsItemContainerAdapter(lv.getContext(), world.tileManager, world.model.player.inventory.usableItems(), world.model.player, wornTiles);
 					lv.setAdapter(inventoryListAdapter);
 
-					final Dialog d = CustomDialog.createDialog(v.getContext(), null, null, null, lv, false);
+					final Dialog d = CustomDialog.createDialog(v.getContext(), 
+							v.getResources().getString(R.string.inventory_assign), 
+							v.getResources().getDrawable(R.drawable.ui_icon_equipment), 
+							v.getResources().getString(R.string.inventory_selectitem), view, false);
 					
 					
 					lv.setOnItemClickListener(new OnItemClickListener() {

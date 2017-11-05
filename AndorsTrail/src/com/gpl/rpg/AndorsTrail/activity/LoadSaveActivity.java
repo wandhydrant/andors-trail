@@ -67,6 +67,7 @@ public final class LoadSaveActivity extends Activity implements OnClickListener 
 		if (!isLoading) {
 			createNewSlot.setTag(SLOT_NUMBER_CREATE_NEW_SLOT);
 			createNewSlot.setOnClickListener(this);
+			newSlotContainer.setVisibility(View.VISIBLE);
 		} else {
 			newSlotContainer.setVisibility(View.GONE);
 		}
