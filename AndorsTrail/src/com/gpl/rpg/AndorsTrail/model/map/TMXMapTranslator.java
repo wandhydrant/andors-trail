@@ -1,21 +1,38 @@
 package com.gpl.rpg.AndorsTrail.model.map;
 
-import android.content.res.Resources;
+import java.security.MessageDigest;
+import java.security.NoSuchAlgorithmException;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collection;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.LinkedList;
+import java.util.List;
 
 import com.gpl.rpg.AndorsTrail.AndorsTrailApplication;
 import com.gpl.rpg.AndorsTrail.model.actor.MonsterType;
 import com.gpl.rpg.AndorsTrail.model.actor.MonsterTypeCollection;
 import com.gpl.rpg.AndorsTrail.model.item.DropList;
 import com.gpl.rpg.AndorsTrail.model.item.DropListCollection;
-import com.gpl.rpg.AndorsTrail.model.map.TMXMapFileParser.*;
+import com.gpl.rpg.AndorsTrail.model.map.TMXMapFileParser.TMXLayer;
+import com.gpl.rpg.AndorsTrail.model.map.TMXMapFileParser.TMXLayerMap;
+import com.gpl.rpg.AndorsTrail.model.map.TMXMapFileParser.TMXMap;
+import com.gpl.rpg.AndorsTrail.model.map.TMXMapFileParser.TMXObject;
+import com.gpl.rpg.AndorsTrail.model.map.TMXMapFileParser.TMXObjectGroup;
+import com.gpl.rpg.AndorsTrail.model.map.TMXMapFileParser.TMXObjectMap;
+import com.gpl.rpg.AndorsTrail.model.map.TMXMapFileParser.TMXProperty;
+import com.gpl.rpg.AndorsTrail.model.map.TMXMapFileParser.TMXTileSet;
 import com.gpl.rpg.AndorsTrail.model.quest.QuestProgress;
 import com.gpl.rpg.AndorsTrail.model.script.Requirement;
 import com.gpl.rpg.AndorsTrail.resource.tiles.TileCache;
-import com.gpl.rpg.AndorsTrail.util.*;
+import com.gpl.rpg.AndorsTrail.util.Coord;
+import com.gpl.rpg.AndorsTrail.util.CoordRect;
+import com.gpl.rpg.AndorsTrail.util.L;
+import com.gpl.rpg.AndorsTrail.util.Range;
+import com.gpl.rpg.AndorsTrail.util.Size;
 
-import java.security.MessageDigest;
-import java.security.NoSuchAlgorithmException;
-import java.util.*;
+import android.content.res.Resources;
 
 public final class TMXMapTranslator {
 	private final ArrayList<TMXObjectMap> maps = new ArrayList<TMXObjectMap>();

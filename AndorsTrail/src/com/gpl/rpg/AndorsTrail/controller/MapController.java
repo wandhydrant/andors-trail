@@ -1,6 +1,7 @@
 package com.gpl.rpg.AndorsTrail.controller;
 
-import android.content.res.Resources;
+import java.util.List;
+
 import com.gpl.rpg.AndorsTrail.context.ControllerContext;
 import com.gpl.rpg.AndorsTrail.context.WorldContext;
 import com.gpl.rpg.AndorsTrail.controller.listeners.MapLayoutListeners;
@@ -16,7 +17,7 @@ import com.gpl.rpg.AndorsTrail.model.map.PredefinedMap;
 import com.gpl.rpg.AndorsTrail.model.map.ReplaceableMapSection;
 import com.gpl.rpg.AndorsTrail.util.Coord;
 
-import java.util.List;
+import android.content.res.Resources;
 
 public final class MapController {
 

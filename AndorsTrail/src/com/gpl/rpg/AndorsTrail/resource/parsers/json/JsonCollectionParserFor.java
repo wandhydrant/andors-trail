@@ -1,16 +1,17 @@
 package com.gpl.rpg.AndorsTrail.resource.parsers.json;
 
-import com.gpl.rpg.AndorsTrail.AndorsTrailApplication;
-import com.gpl.rpg.AndorsTrail.util.L;
-import com.gpl.rpg.AndorsTrail.util.Pair;
-import org.json.JSONArray;
-import org.json.JSONException;
-
 import java.io.PrintWriter;
 import java.io.StringWriter;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;
+
+import org.json.JSONArray;
+import org.json.JSONException;
+
+import com.gpl.rpg.AndorsTrail.AndorsTrailApplication;
+import com.gpl.rpg.AndorsTrail.util.L;
+import com.gpl.rpg.AndorsTrail.util.Pair;
 
 public abstract class JsonCollectionParserFor<T> extends JsonParserFor<Pair<String, T>> {
 	public HashSet<String> parseRows(String input, HashMap<String, T> dest) {

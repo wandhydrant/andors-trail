@@ -1,19 +1,19 @@
 package com.gpl.rpg.AndorsTrail.activity;
 
-import android.app.Activity;
-import android.app.AlertDialog;
-import android.app.Dialog;
-import android.app.ProgressDialog;
-import android.content.DialogInterface;
-import android.content.DialogInterface.OnDismissListener;
-import android.content.Intent;
-import android.os.Bundle;
 import com.gpl.rpg.AndorsTrail.AndorsTrailApplication;
 import com.gpl.rpg.AndorsTrail.R;
 import com.gpl.rpg.AndorsTrail.WorldSetup;
 import com.gpl.rpg.AndorsTrail.WorldSetup.OnResourcesLoadedListener;
 import com.gpl.rpg.AndorsTrail.WorldSetup.OnSceneLoadedListener;
 import com.gpl.rpg.AndorsTrail.savegames.Savegames;
+
+import android.app.Activity;
+import android.app.Dialog;
+import android.app.ProgressDialog;
+import android.content.DialogInterface;
+import android.content.DialogInterface.OnDismissListener;
+import android.content.Intent;
+import android.os.Bundle;
 
 public final class LoadingActivity extends Activity implements OnResourcesLoadedListener, OnSceneLoadedListener {
 
@@ -65,17 +65,28 @@ public final class LoadingActivity extends Activity implements OnResourcesLoaded
 	}
 
 	private void showLoadingFailedDialog(int messageResourceID) {
-		Dialog d = new AlertDialog.Builder(this)
-			.setTitle(R.string.dialog_loading_failed_title)
-			.setMessage(messageResourceID)
-			.setNeutralButton(android.R.string.ok, null)
-			.create();
-		d.setOnDismissListener(new OnDismissListener() {
+//		Dialog d = new AlertDialog.Builder(this)
+//			.setTitle(R.string.dialog_loading_failed_title)
+//			.setMessage(messageResourceID)
+//			.setNeutralButton(android.R.string.ok, null)
+//			.create();
+//		d.setOnDismissListener(new OnDismissListener() {
+//			@Override
+//			public void onDismiss(DialogInterface dialog) {
+//				LoadingActivity.this.finish();
+//			}
+//		});
+//		d.show();
+		
+		final Dialog d = CustomDialog.createDialog(this, getResources().getString(R.string.dialog_loading_failed_title), null, getResources().getString(messageResourceID), null, true);
+		CustomDialog.addDismissButton(d, android.R.string.ok);
+		CustomDialog.setDismissListener(d, new OnDismissListener() {
 			@Override
 			public void onDismiss(DialogInterface dialog) {
 				LoadingActivity.this.finish();
 			}
 		});
-		d.show();
+		CustomDialog.show(d);
+		
 	}
 }

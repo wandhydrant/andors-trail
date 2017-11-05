@@ -1,7 +1,13 @@
 package com.gpl.rpg.AndorsTrail.activity;
 
-import android.app.Activity;
-import android.app.Fragment;
+import com.gpl.rpg.AndorsTrail.AndorsTrailApplication;
+import com.gpl.rpg.AndorsTrail.R;
+import com.gpl.rpg.AndorsTrail.activity.fragment.StartScreenActivity_MainMenu;
+import com.gpl.rpg.AndorsTrail.activity.fragment.StartScreenActivity_MainMenu.OnNewGameRequestedListener;
+import com.gpl.rpg.AndorsTrail.activity.fragment.StartScreenActivity_NewGame;
+import com.gpl.rpg.AndorsTrail.activity.fragment.StartScreenActivity_NewGame.GameCreationOverListener;
+import com.gpl.rpg.AndorsTrail.resource.tiles.TileManager;
+
 import android.content.Intent;
 import android.content.res.Resources;
 import android.os.Bundle;
@@ -9,14 +15,6 @@ import android.support.v4.app.FragmentActivity;
 import android.view.KeyEvent;
 import android.view.View;
 import android.widget.TextView;
-
-import com.gpl.rpg.AndorsTrail.AndorsTrailApplication;
-import com.gpl.rpg.AndorsTrail.R;
-import com.gpl.rpg.AndorsTrail.activity.fragment.StartScreenActivity_MainMenu;
-import com.gpl.rpg.AndorsTrail.activity.fragment.StartScreenActivity_NewGame;
-import com.gpl.rpg.AndorsTrail.activity.fragment.StartScreenActivity_MainMenu.OnNewGameRequestedListener;
-import com.gpl.rpg.AndorsTrail.activity.fragment.StartScreenActivity_NewGame.GameCreationOverListener;
-import com.gpl.rpg.AndorsTrail.resource.tiles.TileManager;
 
 public final class StartScreenActivity extends FragmentActivity implements OnNewGameRequestedListener, GameCreationOverListener {
 

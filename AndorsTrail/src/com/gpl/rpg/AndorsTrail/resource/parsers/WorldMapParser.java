@@ -1,7 +1,10 @@
 package com.gpl.rpg.AndorsTrail.resource.parsers;
 
-import android.content.res.Resources;
-import android.content.res.XmlResourceParser;
+import java.io.IOException;
+import java.util.ArrayList;
+
+import org.xmlpull.v1.XmlPullParserException;
+
 import com.gpl.rpg.AndorsTrail.model.map.MapCollection;
 import com.gpl.rpg.AndorsTrail.model.map.WorldMapSegment;
 import com.gpl.rpg.AndorsTrail.model.map.WorldMapSegment.NamedWorldMapArea;
@@ -11,10 +14,9 @@ import com.gpl.rpg.AndorsTrail.util.Coord;
 import com.gpl.rpg.AndorsTrail.util.L;
 import com.gpl.rpg.AndorsTrail.util.Pair;
 import com.gpl.rpg.AndorsTrail.util.XmlResourceParserUtils;
-import org.xmlpull.v1.XmlPullParserException;
 
-import java.io.IOException;
-import java.util.ArrayList;
+import android.content.res.Resources;
+import android.content.res.XmlResourceParser;
 
 public final class WorldMapParser {
 	public static void read(Resources r, int xmlResourceId, final MapCollection maps, TranslationLoader translationLoader) {

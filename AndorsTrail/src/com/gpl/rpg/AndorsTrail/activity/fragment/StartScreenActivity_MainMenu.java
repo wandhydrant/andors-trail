@@ -1,36 +1,34 @@
 package com.gpl.rpg.AndorsTrail.activity.fragment;
 
-import android.app.Activity;
-import android.app.AlertDialog;
-import android.content.DialogInterface;
-import android.content.Intent;
-import android.content.SharedPreferences;
-import android.content.SharedPreferences.Editor;
-import android.os.Bundle;
-import android.support.v4.app.Fragment;
-import android.view.ContextThemeWrapper;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.View.OnClickListener;
-import android.view.ViewGroup;
-import android.widget.Button;
-import android.widget.EditText;
-import android.widget.ImageView;
-import android.widget.TextView;
-import android.widget.Toast;
-
 import com.gpl.rpg.AndorsTrail.AndorsTrailApplication;
 import com.gpl.rpg.AndorsTrail.AndorsTrailPreferences;
 import com.gpl.rpg.AndorsTrail.Dialogs;
 import com.gpl.rpg.AndorsTrail.R;
 import com.gpl.rpg.AndorsTrail.WorldSetup;
 import com.gpl.rpg.AndorsTrail.activity.AboutActivity;
+import com.gpl.rpg.AndorsTrail.activity.CustomDialog;
 import com.gpl.rpg.AndorsTrail.activity.LoadingActivity;
 import com.gpl.rpg.AndorsTrail.activity.Preferences;
 import com.gpl.rpg.AndorsTrail.controller.Constants;
 import com.gpl.rpg.AndorsTrail.resource.tiles.TileManager;
 import com.gpl.rpg.AndorsTrail.savegames.Savegames;
 import com.gpl.rpg.AndorsTrail.savegames.Savegames.FileHeader;
+
+import android.app.Activity;
+import android.app.Dialog;
+import android.content.Intent;
+import android.content.SharedPreferences;
+import android.content.SharedPreferences.Editor;
+import android.os.Bundle;
+import android.support.v4.app.Fragment;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.ImageView;
+import android.widget.TextView;
+import android.widget.Toast;
 
 public class StartScreenActivity_MainMenu extends Fragment {
 
@@ -189,21 +187,39 @@ public class StartScreenActivity_MainMenu extends Fragment {
 	}
 
 	private void comfirmNewGame() {
-		new AlertDialog.Builder(new ContextThemeWrapper(getActivity(), R.style.AndorsTrailStyle_Dialog))
-		.setTitle(R.string.startscreen_newgame)
-		.setMessage(R.string.startscreen_newgame_confirm)
-		.setIcon(android.R.drawable.ic_delete)
-		.setPositiveButton(android.R.string.ok, new DialogInterface.OnClickListener() {
+//		new AlertDialog.Builder(new ContextThemeWrapper(getActivity(), R.style.AndorsTrailStyle_Dialog))
+//		.setTitle(R.string.startscreen_newgame)
+//		.setMessage(R.string.startscreen_newgame_confirm)
+//		.setIcon(android.R.drawable.ic_delete)
+//		.setPositiveButton(android.R.string.ok, new DialogInterface.OnClickListener() {
+//			@Override
+//			public void onClick(DialogInterface dialog, int which) {
+//				//continueGame(true);
+////				hasExistingGame = false;
+////				setButtonState(null, null, 0);
+//				createNewGame();
+//			}
+//		})
+//		.setNegativeButton(android.R.string.cancel, null)
+//		.create().show();
+//		
+//		
+		final Dialog d = CustomDialog.createDialog(getActivity(),
+				getString(R.string.startscreen_newgame), 
+				getResources().getDrawable(android.R.drawable.ic_delete), 
+				getResources().getString(R.string.startscreen_newgame_confirm),
+				null,
+				true);
+		CustomDialog.addButton(d, android.R.string.ok, new View.OnClickListener() {
 			@Override
-			public void onClick(DialogInterface dialog, int which) {
-				//continueGame(true);
-//				hasExistingGame = false;
-//				setButtonState(null, null, 0);
+			public void onClick(View v) {
 				createNewGame();
 			}
-		})
-		.setNegativeButton(android.R.string.cancel, null)
-		.create().show();
+		});
+		CustomDialog.addDismissButton(d, android.R.string.cancel);
+		
+		CustomDialog.show(d);
+		
 	}
 	
 	private boolean isNewVersion() {

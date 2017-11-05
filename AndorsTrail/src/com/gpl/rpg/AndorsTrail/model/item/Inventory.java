@@ -1,18 +1,11 @@
 package com.gpl.rpg.AndorsTrail.model.item;
 
-import com.gpl.rpg.AndorsTrail.context.WorldContext;
-import com.gpl.rpg.AndorsTrail.model.actor.Player;
-import com.gpl.rpg.AndorsTrail.savegames.LegacySavegameFormatReaderForItemContainer;
-import com.gpl.rpg.AndorsTrail.savegames.Savegames;
-
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.LinkedHashMap;
-import java.util.Map;
+
+import com.gpl.rpg.AndorsTrail.context.WorldContext;
+import com.gpl.rpg.AndorsTrail.savegames.LegacySavegameFormatReaderForItemContainer;
 
 public final class Inventory extends ItemContainer {
 

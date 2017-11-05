@@ -1,16 +1,7 @@
 package com.gpl.rpg.AndorsTrail.activity;
 
-import android.app.Activity;
-import android.app.AlertDialog;
-import android.content.DialogInterface;
-import android.content.Intent;
-import android.os.Bundle;
-import android.view.View;
-import android.view.View.OnClickListener;
-import android.view.ViewGroup;
-import android.view.ViewGroup.LayoutParams;
-import android.widget.Button;
-import android.widget.TextView;
+import java.util.Collections;
+import java.util.List;
 
 import com.gpl.rpg.AndorsTrail.AndorsTrailApplication;
 import com.gpl.rpg.AndorsTrail.AndorsTrailPreferences;
@@ -20,8 +11,16 @@ import com.gpl.rpg.AndorsTrail.resource.tiles.TileManager;
 import com.gpl.rpg.AndorsTrail.savegames.Savegames;
 import com.gpl.rpg.AndorsTrail.savegames.Savegames.FileHeader;
 
-import java.util.Collections;
-import java.util.List;
+import android.app.Activity;
+import android.app.Dialog;
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.view.ViewGroup;
+import android.view.ViewGroup.LayoutParams;
+import android.widget.Button;
+import android.widget.TextView;
 
 public final class LoadSaveActivity extends Activity implements OnClickListener {
 	private boolean isLoading = true;
@@ -132,18 +131,34 @@ public final class LoadSaveActivity extends Activity implements OnClickListener 
 			final String title =
 				getString(R.string.loadsave_save_overwrite_confirmation_title) + ' '
 				+ getString(R.string.loadsave_save_overwrite_confirmation_slot, slot);
-			new AlertDialog.Builder(this)
-				.setIcon(android.R.drawable.ic_dialog_alert)
-				.setTitle(title)
-				.setMessage(message)
-				.setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
+//			new AlertDialog.Builder(this)
+//				.setIcon(android.R.drawable.ic_dialog_alert)
+//				.setTitle(title)
+//				.setMessage(message)
+//				.setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
+//					@Override
+//					public void onClick(DialogInterface dialog, int which) {
+//						loadsave(slot);
+//					}
+//				})
+//				.setNegativeButton(android.R.string.no, null)
+//				.show();
+			final Dialog d = CustomDialog.createDialog(this, 
+					title, 
+					getResources().getDrawable(android.R.drawable.ic_dialog_alert), 
+					message, 
+					null, 
+					true);
+			
+			CustomDialog.addButton(d, android.R.string.yes, new View.OnClickListener() {
 					@Override
-					public void onClick(DialogInterface dialog, int which) {
+					public void onClick(View v) {
 						loadsave(slot);
 					}
-				})
-				.setNegativeButton(android.R.string.no, null)
-				.show();
+				});
+			CustomDialog.addDismissButton(d, android.R.string.no);
+			
+			CustomDialog.show(d);
 		} else {
 			loadsave(slot);
 		}

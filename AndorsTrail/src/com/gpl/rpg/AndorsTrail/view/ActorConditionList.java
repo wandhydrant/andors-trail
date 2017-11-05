@@ -1,13 +1,5 @@
 package com.gpl.rpg.AndorsTrail.view;
 
-import android.content.Context;
-import android.content.res.Resources;
-import android.text.SpannableString;
-import android.text.style.UnderlineSpan;
-import android.util.AttributeSet;
-import android.view.View;
-import android.widget.LinearLayout;
-import android.widget.TextView;
 import com.gpl.rpg.AndorsTrail.AndorsTrailApplication;
 import com.gpl.rpg.AndorsTrail.Dialogs;
 import com.gpl.rpg.AndorsTrail.R;
@@ -16,6 +8,15 @@ import com.gpl.rpg.AndorsTrail.model.ability.ActorCondition;
 import com.gpl.rpg.AndorsTrail.model.ability.ActorConditionEffect;
 import com.gpl.rpg.AndorsTrail.model.ability.ActorConditionType;
 import com.gpl.rpg.AndorsTrail.util.ConstRange;
+
+import android.content.Context;
+import android.content.res.Resources;
+import android.text.SpannableString;
+import android.text.style.UnderlineSpan;
+import android.util.AttributeSet;
+import android.view.View;
+import android.widget.LinearLayout;
+import android.widget.TextView;
 
 public final class ActorConditionList extends LinearLayout {
 

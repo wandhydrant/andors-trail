@@ -1,12 +1,13 @@
 package com.gpl.rpg.AndorsTrail.view;
 
+import com.gpl.rpg.AndorsTrail.R;
+import com.gpl.rpg.AndorsTrail.util.Range;
+
 import android.content.Context;
 import android.util.AttributeSet;
 import android.widget.ProgressBar;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
-import com.gpl.rpg.AndorsTrail.R;
-import com.gpl.rpg.AndorsTrail.util.Range;
 
 public final class RangeBar extends RelativeLayout {
 	private final ProgressBar progressBar;

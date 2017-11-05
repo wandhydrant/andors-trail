@@ -1,15 +1,16 @@
 package com.gpl.rpg.AndorsTrail;
 
-import android.content.Context;
-import android.content.res.Resources;
-import android.os.AsyncTask;
+import java.lang.ref.WeakReference;
+
 import com.gpl.rpg.AndorsTrail.context.ControllerContext;
 import com.gpl.rpg.AndorsTrail.context.WorldContext;
 import com.gpl.rpg.AndorsTrail.model.ModelContainer;
 import com.gpl.rpg.AndorsTrail.resource.ResourceLoader;
 import com.gpl.rpg.AndorsTrail.savegames.Savegames;
 
-import java.lang.ref.WeakReference;
+import android.content.Context;
+import android.content.res.Resources;
+import android.os.AsyncTask;
 
 public final class WorldSetup {
 

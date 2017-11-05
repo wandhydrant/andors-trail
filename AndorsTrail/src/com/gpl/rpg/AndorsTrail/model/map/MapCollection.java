@@ -1,11 +1,5 @@
 package com.gpl.rpg.AndorsTrail.model.map;
 
-import com.gpl.rpg.AndorsTrail.AndorsTrailApplication;
-import com.gpl.rpg.AndorsTrail.context.ControllerContext;
-import com.gpl.rpg.AndorsTrail.context.WorldContext;
-import com.gpl.rpg.AndorsTrail.savegames.LegacySavegameFormatReaderForMap;
-import com.gpl.rpg.AndorsTrail.util.L;
-
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
 import java.io.IOException;
@@ -13,6 +7,12 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.HashMap;
 import java.util.List;
+
+import com.gpl.rpg.AndorsTrail.AndorsTrailApplication;
+import com.gpl.rpg.AndorsTrail.context.ControllerContext;
+import com.gpl.rpg.AndorsTrail.context.WorldContext;
+import com.gpl.rpg.AndorsTrail.savegames.LegacySavegameFormatReaderForMap;
+import com.gpl.rpg.AndorsTrail.util.L;
 
 public final class MapCollection {
 	private final HashMap<String, PredefinedMap> predefinedMaps = new HashMap<String, PredefinedMap>();

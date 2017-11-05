@@ -1,8 +1,9 @@
 package com.gpl.rpg.AndorsTrail.activity;
 
+import com.gpl.rpg.AndorsTrail.R;
+
 import android.os.Bundle;
 import android.preference.PreferenceActivity;
-import com.gpl.rpg.AndorsTrail.R;
 
 public final class Preferences extends PreferenceActivity {
 	@Override

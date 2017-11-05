@@ -1,5 +1,11 @@
 package com.gpl.rpg.AndorsTrail.view;
 
+import com.gpl.rpg.AndorsTrail.R;
+import com.gpl.rpg.AndorsTrail.context.WorldContext;
+import com.gpl.rpg.AndorsTrail.model.item.ItemType;
+import com.gpl.rpg.AndorsTrail.resource.tiles.TileCollection;
+import com.gpl.rpg.AndorsTrail.resource.tiles.TileManager;
+
 import android.content.Context;
 import android.content.res.Resources;
 import android.graphics.ColorFilter;
@@ -7,11 +13,6 @@ import android.graphics.ColorMatrixColorFilter;
 import android.util.AttributeSet;
 import android.view.ContextMenu;
 import android.widget.Button;
-import com.gpl.rpg.AndorsTrail.R;
-import com.gpl.rpg.AndorsTrail.context.WorldContext;
-import com.gpl.rpg.AndorsTrail.model.item.ItemType;
-import com.gpl.rpg.AndorsTrail.resource.tiles.TileCollection;
-import com.gpl.rpg.AndorsTrail.resource.tiles.TileManager;
 
 public final class QuickButton extends Button {
 	private final ColorFilter grayScaleFilter = new ColorMatrixColorFilter(

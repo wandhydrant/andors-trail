@@ -1,13 +1,5 @@
 package com.gpl.rpg.AndorsTrail.model.map;
 
-import android.content.res.Resources;
-import android.content.res.XmlResourceParser;
-import com.gpl.rpg.AndorsTrail.AndorsTrailApplication;
-import com.gpl.rpg.AndorsTrail.util.Base64;
-import com.gpl.rpg.AndorsTrail.util.L;
-import com.gpl.rpg.AndorsTrail.util.XmlResourceParserUtils;
-import org.xmlpull.v1.XmlPullParserException;
-
 import java.io.ByteArrayInputStream;
 import java.io.IOException;
 import java.security.MessageDigest;
@@ -15,6 +7,16 @@ import java.security.NoSuchAlgorithmException;
 import java.util.ArrayList;
 import java.util.zip.GZIPInputStream;
 import java.util.zip.InflaterInputStream;
+
+import org.xmlpull.v1.XmlPullParserException;
+
+import com.gpl.rpg.AndorsTrail.AndorsTrailApplication;
+import com.gpl.rpg.AndorsTrail.util.Base64;
+import com.gpl.rpg.AndorsTrail.util.L;
+import com.gpl.rpg.AndorsTrail.util.XmlResourceParserUtils;
+
+import android.content.res.Resources;
+import android.content.res.XmlResourceParser;
 
 public final class TMXMapFileParser {
 	private static final int TILESIZE = 32;

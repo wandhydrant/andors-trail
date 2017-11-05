@@ -1,5 +1,10 @@
 package com.gpl.rpg.AndorsTrail;
 
+import java.util.Locale;
+
+import com.gpl.rpg.AndorsTrail.context.ControllerContext;
+import com.gpl.rpg.AndorsTrail.context.WorldContext;
+
 import android.app.Activity;
 import android.app.Application;
 import android.content.Context;
@@ -7,10 +12,6 @@ import android.content.res.Configuration;
 import android.content.res.Resources;
 import android.view.Window;
 import android.view.WindowManager;
-import com.gpl.rpg.AndorsTrail.context.ControllerContext;
-import com.gpl.rpg.AndorsTrail.context.WorldContext;
-
-import java.util.Locale;
 
 public final class AndorsTrailApplication extends Application {
 

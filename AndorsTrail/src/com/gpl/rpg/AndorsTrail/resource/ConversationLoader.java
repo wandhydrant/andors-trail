@@ -1,12 +1,13 @@
 package com.gpl.rpg.AndorsTrail.resource;
 
-import android.content.res.Resources;
+import java.util.Collection;
+import java.util.HashMap;
+
 import com.gpl.rpg.AndorsTrail.model.conversation.ConversationCollection;
 import com.gpl.rpg.AndorsTrail.model.conversation.Phrase;
 import com.gpl.rpg.AndorsTrail.resource.parsers.ConversationListParser;
 
-import java.util.Collection;
-import java.util.HashMap;
+import android.content.res.Resources;
 
 public final class ConversationLoader {
 	private final HashMap<String, Integer> resourceIDsPerPhraseID = new HashMap<String, Integer>();

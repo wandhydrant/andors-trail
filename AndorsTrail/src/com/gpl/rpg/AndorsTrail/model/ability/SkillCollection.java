@@ -1,12 +1,13 @@
 package com.gpl.rpg.AndorsTrail.model.ability;
 
-import android.util.SparseArray;
+import java.util.ArrayList;
+import java.util.Collection;
+
 import com.gpl.rpg.AndorsTrail.controller.Constants;
 import com.gpl.rpg.AndorsTrail.model.ability.SkillInfo.SkillLevelRequirement;
 import com.gpl.rpg.AndorsTrail.model.actor.Player;
 
-import java.util.ArrayList;
-import java.util.Collection;
+import android.util.SparseArray;
 
 public final class SkillCollection {
 	public static enum SkillID {

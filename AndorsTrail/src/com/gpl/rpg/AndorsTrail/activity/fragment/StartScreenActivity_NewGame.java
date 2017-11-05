@@ -1,5 +1,11 @@
 package com.gpl.rpg.AndorsTrail.activity.fragment;
 
+import com.gpl.rpg.AndorsTrail.AndorsTrailApplication;
+import com.gpl.rpg.AndorsTrail.R;
+import com.gpl.rpg.AndorsTrail.WorldSetup;
+import com.gpl.rpg.AndorsTrail.activity.LoadingActivity;
+import com.gpl.rpg.AndorsTrail.resource.tiles.TileManager;
+
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -10,17 +16,10 @@ import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.RadioGroup;
-import android.widget.ToggleButton;
 import android.widget.RadioGroup.OnCheckedChangeListener;
 import android.widget.TextView;
 import android.widget.Toast;
-
-import com.gpl.rpg.AndorsTrail.AndorsTrailApplication;
-import com.gpl.rpg.AndorsTrail.R;
-import com.gpl.rpg.AndorsTrail.WorldSetup;
-import com.gpl.rpg.AndorsTrail.activity.LoadingActivity;
-import com.gpl.rpg.AndorsTrail.activity.fragment.StartScreenActivity_MainMenu.OnNewGameRequestedListener;
-import com.gpl.rpg.AndorsTrail.resource.tiles.TileManager;
+import android.widget.ToggleButton;
 
 public class StartScreenActivity_NewGame extends Fragment {
 

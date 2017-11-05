@@ -1,25 +1,20 @@
 package com.gpl.rpg.AndorsTrail;
 
-import android.app.Activity;
-import android.app.AlertDialog;
-import android.app.Dialog;
-import android.content.Context;
-import android.content.DialogInterface;
-import android.content.DialogInterface.OnDismissListener;
-import android.content.Intent;
-import android.graphics.drawable.BitmapDrawable;
-import android.net.Uri;
-import android.os.Bundle;
-import android.support.v4.app.Fragment;
-import android.view.ContextThemeWrapper;
-import android.view.View;
-import android.widget.AdapterView;
-import android.widget.AdapterView.OnItemClickListener;
-import android.widget.ArrayAdapter;
-import android.widget.ListView;
-import android.widget.Toast;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
 
-import com.gpl.rpg.AndorsTrail.activity.*;
+import com.gpl.rpg.AndorsTrail.activity.ActorConditionInfoActivity;
+import com.gpl.rpg.AndorsTrail.activity.BulkSelectionInterface;
+import com.gpl.rpg.AndorsTrail.activity.ConversationActivity;
+import com.gpl.rpg.AndorsTrail.activity.CustomDialog;
+import com.gpl.rpg.AndorsTrail.activity.ItemInfoActivity;
+import com.gpl.rpg.AndorsTrail.activity.LevelUpActivity;
+import com.gpl.rpg.AndorsTrail.activity.LoadSaveActivity;
+import com.gpl.rpg.AndorsTrail.activity.MainActivity;
+import com.gpl.rpg.AndorsTrail.activity.MonsterEncounterActivity;
+import com.gpl.rpg.AndorsTrail.activity.MonsterInfoActivity;
+import com.gpl.rpg.AndorsTrail.activity.SkillInfoActivity;
 import com.gpl.rpg.AndorsTrail.activity.fragment.StartScreenActivity_MainMenu;
 import com.gpl.rpg.AndorsTrail.context.ControllerContext;
 import com.gpl.rpg.AndorsTrail.context.WorldContext;
@@ -33,9 +28,22 @@ import com.gpl.rpg.AndorsTrail.model.map.MapObject;
 import com.gpl.rpg.AndorsTrail.resource.tiles.TileManager;
 import com.gpl.rpg.AndorsTrail.view.ItemContainerAdapter;
 
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Collections;
+import android.app.Activity;
+import android.app.Dialog;
+import android.content.Context;
+import android.content.DialogInterface;
+import android.content.DialogInterface.OnDismissListener;
+import android.content.Intent;
+import android.graphics.drawable.BitmapDrawable;
+import android.net.Uri;
+import android.os.Bundle;
+import android.support.v4.app.Fragment;
+import android.view.View;
+import android.widget.AdapterView;
+import android.widget.AdapterView.OnItemClickListener;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
+import android.widget.Toast;
 
 public final class Dialogs {
 
@@ -44,14 +52,14 @@ public final class Dialogs {
 	}
 	private static void showDialogAndPause(Dialog d, final ControllerContext context, final OnDismissListener onDismiss) {
 		context.gameRoundController.pause();
-		d.setOnDismissListener(new OnDismissListener() {
+		CustomDialog.setDismissListener(d, new OnDismissListener() {
 			@Override
 			public void onDismiss(DialogInterface arg0) {
 				if (onDismiss != null) onDismiss.onDismiss(arg0);
 				context.gameRoundController.resume();
 			}
 		});
-		d.show();
+		CustomDialog.show(d);
 	}
 
 	public static void showKeyArea(final MainActivity currentActivity, final ControllerContext context, String phraseID) {
@@ -180,7 +188,7 @@ public final class Dialogs {
 	private static void showLoot(final MainActivity mainActivity, final ControllerContext controllers, final WorldContext world, final Loot combinedLoot, final Iterable<Loot> lootBags, final int title, final String msg) {
 		final ListView itemList = new ListView(mainActivity);
 		itemList.setLayoutParams(new ListView.LayoutParams(ListView.LayoutParams.MATCH_PARENT, ListView.LayoutParams.WRAP_CONTENT));
-		itemList.setPadding(20, 0, 20, 20);
+//		itemList.setPadding(20, 0, 20, 20);
 		itemList.setOnItemClickListener(new OnItemClickListener() {
 			@Override
 			public void onItemClick(AdapterView<?> parent, View v, int position, long id) {
@@ -202,24 +210,41 @@ public final class Dialogs {
 		});
 		itemList.setAdapter(new ItemContainerAdapter(mainActivity, world.tileManager, combinedLoot.items, world.model.player));
 
-		AlertDialog.Builder db = new AlertDialog.Builder(new ContextThemeWrapper(mainActivity, R.style.AndorsTrailStyle))
-		.setTitle(title)
-		.setMessage(msg)
-		.setIcon(new BitmapDrawable(mainActivity.getResources(), world.tileManager.preloadedTiles.getBitmap(TileManager.iconID_groundbag)))
-		.setNegativeButton(R.string.dialog_close, null)
-		.setView(itemList);
+//		AlertDialog.Builder db = new AlertDialog.Builder(new ContextThemeWrapper(mainActivity, R.style.AndorsTrailStyle))
+//		.setTitle(title)
+//		.setMessage(msg)
+//		.setIcon(new BitmapDrawable(mainActivity.getResources(), world.tileManager.preloadedTiles.getBitmap(TileManager.iconID_groundbag)))
+//		.setNegativeButton(R.string.dialog_close, null)
+//		.setView(itemList);
 
-		if (!combinedLoot.items.isEmpty()) {
-			db.setPositiveButton(R.string.dialog_loot_pickall, new DialogInterface.OnClickListener() {
-				@Override
-				public void onClick(DialogInterface dialog, int which) {
-					controllers.itemController.pickupAll(lootBags);
-				}
-			});
-		}
+//		if (!combinedLoot.items.isEmpty()) {
+//			db.setPositiveButton(R.string.dialog_loot_pickall, new DialogInterface.OnClickListener() {
+//				@Override
+//				public void onClick(DialogInterface dialog, int which) {
+//					controllers.itemController.pickupAll(lootBags);
+//				}
+//			});
+//		}
+//
+//		final Dialog d = db.create();
 
-		final Dialog d = db.create();
+		final Dialog d = CustomDialog.createDialog(mainActivity, 
+				mainActivity.getResources().getString(title), 
+				new BitmapDrawable(mainActivity.getResources(), world.tileManager.preloadedTiles.getBitmap(TileManager.iconID_groundbag)), 
+				msg, 
+				combinedLoot.items.isEmpty() ? null : itemList, 
+				true);
+		
 
+		CustomDialog.addButton(d, R.string.dialog_loot_pickall, new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				controllers.itemController.pickupAll(lootBags);
+			}
+		});
+		
+		CustomDialog.addDismissButton(d, R.string.dialog_close);
+		
 		showDialogAndPause(d, controllers, new OnDismissListener() {
 			@Override
 			public void onDismiss(DialogInterface arg0) {
@@ -245,36 +270,74 @@ public final class Dialogs {
 	}
 
 	public static void showConfirmRest(final Activity currentActivity, final ControllerContext controllerContext, final MapObject area) {
-		Dialog d = new AlertDialog.Builder(new ContextThemeWrapper(currentActivity, R.style.AndorsTrailStyle))
-		.setTitle(R.string.dialog_rest_title)
-		.setMessage(R.string.dialog_rest_confirm_message)
-		.setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
+//		Dialog d = new AlertDialog.Builder(new ContextThemeWrapper(currentActivity, R.style.AndorsTrailStyle))
+//		.setTitle(R.string.dialog_rest_title)
+//		.setMessage(R.string.dialog_rest_confirm_message)
+//		.setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
+//			@Override
+//			public void onClick(DialogInterface dialog, int which) {
+//				controllerContext.mapController.rest(area);
+//			}
+//		})
+		
+//		
+//		.setNegativeButton(android.R.string.no, null)
+//		.create();
+		final Dialog d = CustomDialog.createDialog(currentActivity, 
+				currentActivity.getResources().getString(R.string.dialog_rest_title), 
+				null, 
+				currentActivity.getResources().getString(R.string.dialog_rest_confirm_message), 
+				null, 
+				true);
+		
+		CustomDialog.addButton(d, android.R.string.yes, new View.OnClickListener() {
 			@Override
-			public void onClick(DialogInterface dialog, int which) {
+			public void onClick(View v) {
 				controllerContext.mapController.rest(area);
 			}
-		})
-		.setNegativeButton(android.R.string.no, null)
-		.create();
+		});
+		
+		CustomDialog.addDismissButton(d, android.R.string.no);
 
 		showDialogAndPause(d, controllerContext);
 	}
 	public static void showRested(final Activity currentActivity, final ControllerContext controllerContext) {
-		Dialog d = new AlertDialog.Builder(new ContextThemeWrapper(currentActivity, R.style.AndorsTrailStyle))
-		.setTitle(R.string.dialog_rest_title)
-		.setMessage(R.string.dialog_rest_message)
-		.setNeutralButton(android.R.string.ok, null)
-		.create();
+//		Dialog d = new AlertDialog.Builder(new ContextThemeWrapper(currentActivity, R.style.AndorsTrailStyle))
+//		.setTitle(R.string.dialog_rest_title)
+//		.setMessage(R.string.dialog_rest_message)
+//		.setNeutralButton(android.R.string.ok, null)
+//		.create();
+		final Dialog d = CustomDialog.createDialog(currentActivity, 
+				currentActivity.getResources().getString(R.string.dialog_rest_title), 
+				null, 
+				currentActivity.getResources().getString(R.string.dialog_rest_message), 
+				null, 
+				true);
+		
+		
+		CustomDialog.addDismissButton(d, android.R.string.ok);
 
 		showDialogAndPause(d, controllerContext);
 	}
 
 	public static void showNewVersion(final Activity currentActivity) {
-		new AlertDialog.Builder(new ContextThemeWrapper(currentActivity, R.style.AndorsTrailStyle))
-		.setTitle(R.string.dialog_newversion_title)
-		.setMessage(R.string.dialog_newversion_message)
-		.setNeutralButton(android.R.string.ok, null)
-		.show();
+//		new AlertDialog.Builder(new ContextThemeWrapper(currentActivity, R.style.AndorsTrailStyle))
+//		.setTitle(R.string.dialog_newversion_title)
+//		.setMessage(R.string.dialog_newversion_message)
+//		.setNeutralButton(android.R.string.ok, null)
+//		.show();
+		
+		final Dialog d = CustomDialog.createDialog(currentActivity, 
+				currentActivity.getResources().getString(R.string.dialog_newversion_title), 
+				null, 
+				currentActivity.getResources().getString(R.string.dialog_newversion_message), 
+				null, 
+				true);
+		
+		
+		CustomDialog.addDismissButton(d, android.R.string.ok);
+
+		CustomDialog.show(d);
 	}
 
 	public static boolean showSave(final Activity mainActivity, final ControllerContext controllerContext, final WorldContext world) {
@@ -337,21 +400,37 @@ public final class Dialogs {
 	public static void showCombatLog(final Context context, final ControllerContext controllerContext, final WorldContext world) {
 		final String[] combatLogMessages = world.model.combatLog.getAllMessages();
 
-		final ListView itemList = new ListView(context);
-		itemList.setLayoutParams(new ListView.LayoutParams(ListView.LayoutParams.MATCH_PARENT, ListView.LayoutParams.WRAP_CONTENT));
-		itemList.setPadding(20, 0, 20, 20);
-		itemList.setStackFromBottom(true);
-		itemList.setTranscriptMode(ListView.TRANSCRIPT_MODE_ALWAYS_SCROLL);
-		itemList.setChoiceMode(ListView.CHOICE_MODE_NONE);
-		itemList.setAdapter(new ArrayAdapter<String>(context, R.layout.combatlog_row, android.R.id.text1, combatLogMessages));
+		ListView itemList = null;
+		String msg = null;
+		if (combatLogMessages.length > 0) {
+			itemList = new ListView(context);
+			itemList.setLayoutParams(new ListView.LayoutParams(ListView.LayoutParams.MATCH_PARENT, ListView.LayoutParams.WRAP_CONTENT));
+			itemList.setPadding(20, 0, 20, 20);
+			itemList.setStackFromBottom(true);
+			itemList.setTranscriptMode(ListView.TRANSCRIPT_MODE_ALWAYS_SCROLL);
+			itemList.setChoiceMode(ListView.CHOICE_MODE_NONE);
+			itemList.setAdapter(new ArrayAdapter<String>(context, R.layout.combatlog_row, android.R.id.text1, combatLogMessages));
+		} else {
+			msg = context.getResources().getString(R.string.combat_log_noentries);
+		}
 
-		final Dialog d = new AlertDialog.Builder(new ContextThemeWrapper(context, R.style.AndorsTrailStyle))
-				.setTitle(R.string.combat_log_title)
-				.setIcon(R.drawable.ui_icon_combat)
-				.setNegativeButton(R.string.dialog_close, null)
-				.setView(itemList)
-				.create();
+//		final Dialog d = new AlertDialog.Builder(new ContextThemeWrapper(context, R.style.AndorsTrailStyle))
+//				.setTitle(R.string.combat_log_title)
+//				.setIcon(R.drawable.ui_icon_combat)
+//				.setNegativeButton(R.string.dialog_close, null)
+//				.setView(itemList)
+//				.create();
 
+		final Dialog d = CustomDialog.createDialog(context, 
+				context.getResources().getString(R.string.combat_log_title), 
+				context.getResources().getDrawable(R.drawable.ui_icon_combat), 
+				msg, 
+				itemList, 
+				true);
+		
+		
+		CustomDialog.addDismissButton(d, R.string.dialog_close);
+		
 		showDialogAndPause(d, controllerContext);
 	}
 }

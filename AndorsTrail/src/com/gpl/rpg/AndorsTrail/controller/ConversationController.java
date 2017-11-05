@@ -2,8 +2,6 @@ package com.gpl.rpg.AndorsTrail.controller;
 
 import java.util.ArrayList;
 
-import android.content.res.Resources;
-
 import com.gpl.rpg.AndorsTrail.AndorsTrailApplication;
 import com.gpl.rpg.AndorsTrail.context.ControllerContext;
 import com.gpl.rpg.AndorsTrail.context.WorldContext;
@@ -30,6 +28,8 @@ import com.gpl.rpg.AndorsTrail.model.script.Requirement;
 import com.gpl.rpg.AndorsTrail.model.script.ScriptEffect;
 import com.gpl.rpg.AndorsTrail.util.ConstRange;
 import com.gpl.rpg.AndorsTrail.util.L;
+
+import android.content.res.Resources;
 
 public final class ConversationController {
 

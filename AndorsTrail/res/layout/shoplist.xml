@@ -3,13 +3,12 @@
 	android:layout_width="match_parent"
 	android:layout_height="match_parent"
 	android:gravity="left"
+	style="@style/AndorsTrail_Blue_TabFrame"
 	android:orientation="vertical">
 
 	<LinearLayout
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
-		android:layout_marginBottom="5dp"
-		android:layout_marginTop="10dp"
 		style="@style/AndorsTrail_Blue_StdFrame"
 		android:orientation="horizontal">
 
@@ -18,16 +17,21 @@
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
 			android:drawableLeft="@drawable/ui_icon_coins"
-			android:drawablePadding="@dimen/boxshape_margin"
 			android:gravity="center_vertical"
 			android:layout_gravity="left"
 			/>
+		
+		<LinearLayout 
+		    android:layout_width="0dp"
+		    android:layout_height="wrap_content"
+		    android:layout_weight="1"
+		    />
+		
 		<Spinner
 			android:id="@+id/shoplist_sort_filters"
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
 			android:layout_marginLeft="5dp"
-			android:layout_marginRight="10dp"
 			android:orientation="horizontal"
 			android:layout_gravity="right"
 			android:prompt="@string/shop_item_sort" />

@@ -1,10 +1,10 @@
 package com.gpl.rpg.AndorsTrail.controller.listeners;
 
+import java.util.Collection;
+
 import com.gpl.rpg.AndorsTrail.model.actor.Monster;
 import com.gpl.rpg.AndorsTrail.model.item.Loot;
 import com.gpl.rpg.AndorsTrail.model.map.MapObject;
-
-import java.util.Collection;
 
 public interface WorldEventListener {
 	void onPlayerStartedConversation(Monster m, String phraseID);

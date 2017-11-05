@@ -1,5 +1,13 @@
 package com.gpl.rpg.AndorsTrail.activity;
 
+import java.util.Collections;
+
+import com.gpl.rpg.AndorsTrail.AndorsTrailApplication;
+import com.gpl.rpg.AndorsTrail.R;
+import com.gpl.rpg.AndorsTrail.context.WorldContext;
+import com.gpl.rpg.AndorsTrail.model.item.ItemType;
+import com.gpl.rpg.AndorsTrail.view.ItemEffectsView;
+
 import android.app.Activity;
 import android.content.Intent;
 import android.content.res.Resources;
@@ -8,13 +16,6 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.TextView;
-import com.gpl.rpg.AndorsTrail.AndorsTrailApplication;
-import com.gpl.rpg.AndorsTrail.R;
-import com.gpl.rpg.AndorsTrail.context.WorldContext;
-import com.gpl.rpg.AndorsTrail.model.item.ItemType;
-import com.gpl.rpg.AndorsTrail.view.ItemEffectsView;
-
-import java.util.Collections;
 
 public final class ItemInfoActivity extends Activity {
 

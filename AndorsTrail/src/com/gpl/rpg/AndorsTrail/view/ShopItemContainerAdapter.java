@@ -1,5 +1,14 @@
 package com.gpl.rpg.AndorsTrail.view;
 
+import com.gpl.rpg.AndorsTrail.R;
+import com.gpl.rpg.AndorsTrail.controller.ItemController;
+import com.gpl.rpg.AndorsTrail.model.actor.Player;
+import com.gpl.rpg.AndorsTrail.model.item.ItemContainer;
+import com.gpl.rpg.AndorsTrail.model.item.ItemContainer.ItemEntry;
+import com.gpl.rpg.AndorsTrail.model.item.ItemType;
+import com.gpl.rpg.AndorsTrail.resource.tiles.TileCollection;
+import com.gpl.rpg.AndorsTrail.resource.tiles.TileManager;
+
 import android.content.Context;
 import android.content.res.Resources;
 import android.view.View;
@@ -9,14 +18,6 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
-import com.gpl.rpg.AndorsTrail.R;
-import com.gpl.rpg.AndorsTrail.controller.ItemController;
-import com.gpl.rpg.AndorsTrail.model.actor.Player;
-import com.gpl.rpg.AndorsTrail.model.item.ItemContainer;
-import com.gpl.rpg.AndorsTrail.model.item.ItemContainer.ItemEntry;
-import com.gpl.rpg.AndorsTrail.model.item.ItemType;
-import com.gpl.rpg.AndorsTrail.resource.tiles.TileCollection;
-import com.gpl.rpg.AndorsTrail.resource.tiles.TileManager;
 
 public final class ShopItemContainerAdapter extends ArrayAdapter<ItemEntry> {
 	private final TileManager tileManager;

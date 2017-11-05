@@ -1,5 +1,14 @@
 package com.gpl.rpg.AndorsTrail.activity;
 
+import com.gpl.rpg.AndorsTrail.AndorsTrailApplication;
+import com.gpl.rpg.AndorsTrail.R;
+import com.gpl.rpg.AndorsTrail.context.WorldContext;
+import com.gpl.rpg.AndorsTrail.controller.SkillController;
+import com.gpl.rpg.AndorsTrail.model.ability.SkillCollection;
+import com.gpl.rpg.AndorsTrail.model.ability.SkillInfo;
+import com.gpl.rpg.AndorsTrail.model.ability.SkillInfo.SkillLevelRequirement;
+import com.gpl.rpg.AndorsTrail.model.actor.Player;
+
 import android.app.Activity;
 import android.content.Intent;
 import android.content.res.Resources;
@@ -10,14 +19,6 @@ import android.view.ViewGroup;
 import android.view.ViewGroup.LayoutParams;
 import android.widget.Button;
 import android.widget.TextView;
-import com.gpl.rpg.AndorsTrail.AndorsTrailApplication;
-import com.gpl.rpg.AndorsTrail.R;
-import com.gpl.rpg.AndorsTrail.context.WorldContext;
-import com.gpl.rpg.AndorsTrail.controller.SkillController;
-import com.gpl.rpg.AndorsTrail.model.ability.SkillCollection;
-import com.gpl.rpg.AndorsTrail.model.ability.SkillInfo;
-import com.gpl.rpg.AndorsTrail.model.ability.SkillInfo.SkillLevelRequirement;
-import com.gpl.rpg.AndorsTrail.model.actor.Player;
 
 public final class SkillInfoActivity extends Activity {
 

@@ -2,9 +2,6 @@ package com.gpl.rpg.AndorsTrail.controller;
 
 import java.util.ArrayList;
 
-import android.os.Handler;
-import android.os.Message;
-
 import com.gpl.rpg.AndorsTrail.AndorsTrailPreferences;
 import com.gpl.rpg.AndorsTrail.R;
 import com.gpl.rpg.AndorsTrail.context.ControllerContext;
@@ -24,6 +21,9 @@ import com.gpl.rpg.AndorsTrail.model.item.Loot;
 import com.gpl.rpg.AndorsTrail.model.map.MonsterSpawnArea;
 import com.gpl.rpg.AndorsTrail.resource.VisualEffectCollection;
 import com.gpl.rpg.AndorsTrail.util.Coord;
+
+import android.os.Handler;
+import android.os.Message;
 
 public final class CombatController implements VisualEffectCompletedCallback {
 	private final ControllerContext controllers;

@@ -13,13 +13,11 @@
         android:background="@drawable/ui_blue_richframe"
         android:drawableLeft="@drawable/ui_icon_equipment"
         android:gravity="center"
-        android:paddingTop="3sp"
         android:text="@string/inventory_assign" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="5dp"
         android:background="@drawable/ui_blue_stdframe"
         android:text="@string/inventory_selectitem"
         android:textColor="@color/ui_blue_textbutton_textcolor" />

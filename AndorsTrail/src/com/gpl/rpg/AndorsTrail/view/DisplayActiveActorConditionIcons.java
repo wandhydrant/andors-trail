@@ -3,6 +3,15 @@ package com.gpl.rpg.AndorsTrail.view;
 import java.lang.ref.WeakReference;
 import java.util.ArrayList;
 
+import com.gpl.rpg.AndorsTrail.AndorsTrailPreferences;
+import com.gpl.rpg.AndorsTrail.R;
+import com.gpl.rpg.AndorsTrail.context.ControllerContext;
+import com.gpl.rpg.AndorsTrail.context.WorldContext;
+import com.gpl.rpg.AndorsTrail.controller.listeners.ActorConditionListener;
+import com.gpl.rpg.AndorsTrail.model.ability.ActorCondition;
+import com.gpl.rpg.AndorsTrail.model.actor.Actor;
+import com.gpl.rpg.AndorsTrail.resource.tiles.TileManager;
+
 import android.content.Context;
 import android.content.res.Resources;
 import android.graphics.Color;
@@ -16,15 +25,6 @@ import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.RelativeLayout.LayoutParams;
 import android.widget.TextView;
-
-import com.gpl.rpg.AndorsTrail.AndorsTrailPreferences;
-import com.gpl.rpg.AndorsTrail.R;
-import com.gpl.rpg.AndorsTrail.context.ControllerContext;
-import com.gpl.rpg.AndorsTrail.context.WorldContext;
-import com.gpl.rpg.AndorsTrail.controller.listeners.ActorConditionListener;
-import com.gpl.rpg.AndorsTrail.model.ability.ActorCondition;
-import com.gpl.rpg.AndorsTrail.model.actor.Actor;
-import com.gpl.rpg.AndorsTrail.resource.tiles.TileManager;
 
 public final class DisplayActiveActorConditionIcons implements ActorConditionListener {
 

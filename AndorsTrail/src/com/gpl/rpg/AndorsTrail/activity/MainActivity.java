@@ -3,21 +3,6 @@ package com.gpl.rpg.AndorsTrail.activity;
 import java.lang.ref.WeakReference;
 import java.util.Collection;
 
-import android.app.Activity;
-import android.app.AlertDialog;
-import android.content.Intent;
-import android.os.Bundle;
-import android.view.ContextThemeWrapper;
-import android.view.View;
-import android.view.View.OnClickListener;
-import android.view.View.OnLongClickListener;
-import android.widget.AdapterView;
-import android.widget.AdapterView.OnItemClickListener;
-import android.widget.ListView;
-import android.widget.RelativeLayout;
-import android.widget.TextView;
-import android.widget.Toast;
-
 import com.gpl.rpg.AndorsTrail.AndorsTrailApplication;
 import com.gpl.rpg.AndorsTrail.AndorsTrailPreferences;
 import com.gpl.rpg.AndorsTrail.Dialogs;
@@ -50,6 +35,20 @@ import com.gpl.rpg.AndorsTrail.view.QuickslotsItemContainerAdapter;
 import com.gpl.rpg.AndorsTrail.view.StatusView;
 import com.gpl.rpg.AndorsTrail.view.ToolboxView;
 import com.gpl.rpg.AndorsTrail.view.VirtualDpadView;
+
+import android.app.Activity;
+import android.app.Dialog;
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.view.View.OnLongClickListener;
+import android.widget.AdapterView;
+import android.widget.AdapterView.OnItemClickListener;
+import android.widget.ListView;
+import android.widget.RelativeLayout;
+import android.widget.TextView;
+import android.widget.Toast;
 
 public final class MainActivity
 		extends Activity
@@ -232,19 +231,22 @@ public final class MainActivity
 					
 					final int buttonId = ((QuickButton)v).getIndex();
 					
-					final AlertDialog dialog = new AlertDialog.Builder(new ContextThemeWrapper(v.getContext(), R.style.AndorsTrailStyle_Dialog)).create();
+//					final AlertDialog dialog = new AlertDialog.Builder(new ContextThemeWrapper(v.getContext(), R.style.AndorsTrailStyle_Dialog)).create();
 					View view = getLayoutInflater().inflate(R.layout.quickbuttons_usable_inventory, null);
 					ListView lv = (ListView) view.findViewById(R.id.quickbuttons_assignlist);
 
 					TileCollection wornTiles = world.tileManager.loadTilesFor(world.model.player.inventory, getResources());
 					final ItemContainerAdapter inventoryListAdapter = new QuickslotsItemContainerAdapter(lv.getContext(), world.tileManager, world.model.player.inventory.usableItems(), world.model.player, wornTiles);
 					lv.setAdapter(inventoryListAdapter);
+
+					final Dialog d = CustomDialog.createDialog(v.getContext(), null, null, null, lv, false);
+					
 					
 					lv.setOnItemClickListener(new OnItemClickListener() {
 						@Override
 						public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 							controllers.itemController.setQuickItem(inventoryListAdapter.getItem(position).itemType, buttonId);
-							dialog.dismiss();
+							d.dismiss();
 						}
 					});
 					
@@ -257,9 +259,11 @@ public final class MainActivity
 //						}
 //					});
 					
-					dialog.setView(view);
-					dialog.setCancelable(true);
-					dialog.show();
+					CustomDialog.show(d);
+//					
+//					dialog.setView(view);
+//					dialog.setCancelable(true);
+//					dialog.show();
 				}
 				return true;
 			}
