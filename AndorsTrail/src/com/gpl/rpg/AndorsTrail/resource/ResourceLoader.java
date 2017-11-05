@@ -9,6 +9,7 @@ import java.util.Collection;
 import com.gpl.rpg.AndorsTrail.AndorsTrailApplication;
 import com.gpl.rpg.AndorsTrail.R;
 import com.gpl.rpg.AndorsTrail.context.WorldContext;
+import com.gpl.rpg.AndorsTrail.model.actor.HeroCollection;
 import com.gpl.rpg.AndorsTrail.model.conversation.ConversationCollection;
 import com.gpl.rpg.AndorsTrail.model.map.TMXMapTranslator;
 import com.gpl.rpg.AndorsTrail.resource.parsers.ActorConditionsTypeParser;
@@ -59,6 +60,7 @@ public final class ResourceLoader {
 
 		// ========================================================================
 		// Load various ui icons
+//		HeroCollection.prepareHeroesTileId(loader);
 		/*TileManager.iconID_CHAR_HERO_0 = */loader.prepareTileID(R.drawable.char_hero, 0);
 		/*TileManager.iconID_CHAR_HERO_1 = */loader.prepareTileID(R.drawable.char_hero_maksiu_girl_01, 0);
 		/*TileManager.iconID_CHAR_HERO_2 = */loader.prepareTileID(R.drawable.char_hero_maksiu_boy_01, 0);

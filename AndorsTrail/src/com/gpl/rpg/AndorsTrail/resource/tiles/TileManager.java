@@ -41,7 +41,7 @@ public final class TileManager {
 	public static final int CHAR_HERO_1 = CHAR_HERO_0+1;
 	public static final int CHAR_HERO_2 = CHAR_HERO_1+1;
 	//Default hero
-	public static final int CHAR_HERO = CHAR_HERO_2;
+	public static final int CHAR_HERO = CHAR_HERO_0;
 	//Max hero icon ID in this version.
 	public static final int LAST_HERO = CHAR_HERO_2;
 	

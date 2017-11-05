@@ -12,6 +12,7 @@
         <item name="android:spinnerDropDownItemStyle">@style/AndorsTrail_Blue_SpinnerDropDown</item>
         <item name="android:alertDialogStyle">@style/AndorsTrailStyle.Dialog.Alert</item>
         <item name="android:spinnerItemStyle">@style/AndorsTrail_Blue_SpinnerCollapsed</item>
+        <!-- <item name="android:tabWidgetStyle">@style/AndorsTrail_Blue_TabWidget</item> -->
     </style>
 
     <style name="AndorsTrailStyle.NoBackground" parent="AndorsTrailStyle">
@@ -31,6 +32,7 @@
         <item name="android:spinnerDropDownItemStyle">@style/AndorsTrail_Blue_SpinnerDropDown</item>
         <item name="android:alertDialogStyle">@style/AndorsTrailStyle.Dialog.Alert</item>
         <item name="android:spinnerItemStyle">@style/AndorsTrail_Blue_SpinnerCollapsed</item>
+        <!-- <item name="android:tabWidgetStyle">@style/AndorsTrail_Blue_TabWidget</item> -->
     </style>
 
     <style name="AndorsTrailStyle.Dialog.Alert" parent="AndorsTrailStyle.Dialog">
@@ -92,6 +94,12 @@
         <item name="android:textColor">@color/ui_blue_textbutton_textcolor</item>
     </style>
 
+
+    <!-- <style name="AndorsTrail_Blue_TabWidget" parent="android:style/Widget.TabWidget">
+        <item name="android:textColor">@color/ui_blue_textbutton_textcolor</item>
+        <item name="android:background">@drawable/ui_blue_tabwidget</item>
+    </style> -->
+    
     <style name="AndorsTrail_Blue_RichFrame">
         <item name="android:background">@drawable/ui_blue_richframe</item>
     </style>

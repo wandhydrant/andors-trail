@@ -12,7 +12,10 @@ import android.content.res.Resources;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentTabHost;
+import android.view.LayoutInflater;
+import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 public final class HeroinfoActivity extends FragmentActivity {
 	private WorldContext world;
@@ -35,17 +38,36 @@ public final class HeroinfoActivity extends FragmentActivity {
 		tabHost = (FragmentTabHost) findViewById(android.R.id.tabhost);
 		tabHost.setup(this, getSupportFragmentManager(), R.id.realtabcontent);
 
+		LayoutInflater inflater = getLayoutInflater();
+		
+		ViewGroup v;
+		
+		v = (ViewGroup) inflater.inflate(R.layout.tabindicator, null);
+		((TextView)v.findViewById(R.id.tabindicator_text)).setText(res.getString(R.string.heroinfo_char));
+		((ImageView)v.findViewById(R.id.tabindicator_icon)).setImageDrawable(res.getDrawable(R.drawable.char_hero));
 		tabHost.addTab(tabHost.newTabSpec("char")
-				.setIndicator(res.getString(R.string.heroinfo_char), res.getDrawable(R.drawable.char_hero))
+				.setIndicator(v)
 				,HeroinfoActivity_Stats.class, null);
+		
+		v = (ViewGroup) inflater.inflate(R.layout.tabindicator, null);
+		((TextView)v.findViewById(R.id.tabindicator_text)).setText(res.getString(R.string.heroinfo_quests));
+		((ImageView)v.findViewById(R.id.tabindicator_icon)).setImageDrawable(res.getDrawable(R.drawable.ui_icon_quest));
 		tabHost.addTab(tabHost.newTabSpec("quests")
-				.setIndicator(res.getString(R.string.heroinfo_quests), res.getDrawable(R.drawable.ui_icon_quest))
+				.setIndicator(v)
 				,HeroinfoActivity_Quests.class, null);
+		
+		v = (ViewGroup) inflater.inflate(R.layout.tabindicator, null);
+		((TextView)v.findViewById(R.id.tabindicator_text)).setText(res.getString(R.string.heroinfo_skill));
+		((ImageView)v.findViewById(R.id.tabindicator_icon)).setImageDrawable(res.getDrawable(R.drawable.ui_icon_skill));
 		tabHost.addTab(tabHost.newTabSpec("skills")
-				.setIndicator(res.getString(R.string.heroinfo_skill), res.getDrawable(R.drawable.ui_icon_skill))
+				.setIndicator(v)
 				,HeroinfoActivity_Skills.class, null);
+		
+		v = (ViewGroup) inflater.inflate(R.layout.tabindicator, null);
+		((TextView)v.findViewById(R.id.tabindicator_text)).setText(res.getString(R.string.heroinfo_inv));
+		((ImageView)v.findViewById(R.id.tabindicator_icon)).setImageDrawable(res.getDrawable(R.drawable.ui_icon_equipment));
 		tabHost.addTab(tabHost.newTabSpec("inv")
-				.setIndicator(res.getString(R.string.heroinfo_inv), res.getDrawable(R.drawable.ui_icon_equipment))
+				.setIndicator(v)
 				,HeroinfoActivity_Inventory.class, null);
 		String t = world.model.uiSelections.selectedTabHeroInfo;
 		if (t != null && t.length() > 0) {
@@ -62,7 +84,7 @@ public final class HeroinfoActivity extends FragmentActivity {
 	}
 	
 	private void updateIconForPlayer() {
-		ImageView iv = (ImageView) tabHost.getTabWidget().getChildTabViewAt(0).findViewById(android.R.id.icon);
+		ImageView iv = (ImageView) tabHost.getTabWidget().getChildTabViewAt(0).findViewById(R.id.tabindicator_icon);
 		world.tileManager.setImageViewTileForPlayer(getResources(), iv, world.model.player.iconID);
 	}
 

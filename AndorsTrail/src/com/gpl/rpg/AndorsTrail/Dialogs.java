@@ -214,27 +214,9 @@ public final class Dialogs {
 		});
 		itemList.setAdapter(new ItemContainerAdapter(mainActivity, world.tileManager, combinedLoot.items, world.model.player));
 
-//		AlertDialog.Builder db = new AlertDialog.Builder(new ContextThemeWrapper(mainActivity, R.style.AndorsTrailStyle))
-//		.setTitle(title)
-//		.setMessage(msg)
-//		.setIcon(new BitmapDrawable(mainActivity.getResources(), world.tileManager.preloadedTiles.getBitmap(TileManager.iconID_groundbag)))
-//		.setNegativeButton(R.string.dialog_close, null)
-//		.setView(itemList);
-
-//		if (!combinedLoot.items.isEmpty()) {
-//			db.setPositiveButton(R.string.dialog_loot_pickall, new DialogInterface.OnClickListener() {
-//				@Override
-//				public void onClick(DialogInterface dialog, int which) {
-//					controllers.itemController.pickupAll(lootBags);
-//				}
-//			});
-//		}
-//
-//		final Dialog d = db.create();
-
 		final Dialog d = CustomDialog.createDialog(mainActivity, 
 				mainActivity.getResources().getString(title), 
-				new BitmapDrawable(mainActivity.getResources(), world.tileManager.preloadedTiles.getBitmap(TileManager.iconID_groundbag)), 
+				mainActivity.getResources().getDrawable(R.drawable.ui_icon_equipment), 
 				msg, 
 				combinedLoot.items.isEmpty() ? null : itemList, 
 				true);
