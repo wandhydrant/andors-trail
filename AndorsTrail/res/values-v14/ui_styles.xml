@@ -15,8 +15,7 @@
 	    <item name="android:alertDialogStyle">@style/AndorsTrailStyle.Dialog.Alert</item>
 		<item name="android:spinnerItemStyle">@style/AndorsTrail_Blue_SpinnerCollapsed</item>
         <item name="android:expandableListViewStyle">@style/AndorsTrail_Blue_ExpandableListView</item>
-        <!-- <item name="android:tabWidgetStyle">@style/AndorsTrail_Blue_TabWidget</item> -->
-	    <!-- <item name="android:toastFrameBackground">@drawable/ui_blue_richframe</item> -->
+        <item name="android:listSeparatorTextViewStyle">@style/AndorsTrail_Blue_PreferencesListHeader</item>
 	</style>
 	
 	<style name="AndorsTrailStyle.Dialog" parent="android:Theme.Dialog">
@@ -37,7 +36,7 @@
 	    <item name="android:alertDialogStyle">@style/AndorsTrailStyle.Dialog.Alert</item>
 		<item name="android:spinnerItemStyle">@style/AndorsTrail_Blue_SpinnerCollapsed</item>
         <item name="android:expandableListViewStyle">@style/AndorsTrail_Blue_ExpandableListView</item>
-        <!-- <item name="android:tabWidgetStyle">@style/AndorsTrail_Blue_TabWidget</item> -->
+        <item name="android:listSeparatorTextViewStyle">@style/AndorsTrail_Blue_PreferencesListHeader</item>
 	</style>
 	
 	<style name="AndorsTrail_Blue_TextButton" parent="android:style/Widget.Button">
@@ -50,6 +49,22 @@
         <item name="android:textColor">@color/ui_blue_textbutton_textcolor</item>
         <item name="android:textAppearanceListItem">@style/AndorsTrail_Blue_TextAppearance.ListItemTitle</item>
         <item name="android:textAppearanceSmall">@style/AndorsTrail_Blue_TextAppearance.ListItemSubtitle</item>
+    </style>
+    
+    
+    <style name="AndorsTrail_Blue_PreferencesListHeader">
+        <item name="android:background">@drawable/ui_blue_lightframe</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/ui_blue_palette_text_gray_mid</item>
+        <item name="android:textSize">16sp</item>
+		<item name="android:ellipsize">marquee</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:scrollHorizontally">true</item>
+        <item name="android:gravity">center_vertical</item>
     </style>
 	
 </resources>

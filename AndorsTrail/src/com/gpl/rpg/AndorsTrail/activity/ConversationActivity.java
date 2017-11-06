@@ -48,16 +48,6 @@ public final class ConversationActivity
 		implements OnKeyListener
 		, ConversationController.ConversationStatemachine.ConversationStateListener {
 
-	private static final int playerNameColor = 		Color.argb(255, 0xbb, 0x22, 0x22);
-	private static final int NPCNameColor = 		Color.argb(255, 0xbb, 0xbb, 0x22);
-	private static final int playerPhraseColor = 	Color.argb(255, 0xff, 0xff, 0xff);
-	private static final int NPCPhraseColor =  		Color.argb(255, 0xff, 0xff, 0xff);
-	private static final int rewardColor = 			Color.argb(255, 0x99, 0x99, 0x55);
-	private static final int oldPhraseColor = 		Color.argb(255, 0xb0, 0xb0, 0xb0);
-	private static final int oldPlayerNameColor = 	Color.argb(255, 0x89, 0x19, 0x19);
-	private static final int oldNPCNameColor = 		Color.argb(255, 0xa2, 0xa2, 0x1d);
-	private static final int oldRewardColor = 		Color.argb(255, 0x7a, 0x7a, 0x44);
-
 	private WorldContext world;
 	private Player player;
 	private final ArrayList<ConversationStatement> conversationHistory = new ArrayList<ConversationStatement>();
@@ -223,14 +213,14 @@ public final class ConversationActivity
 		while(numberOfNewMessage != 0){
 			ConversationStatement conversation = conversationHistory.get(numberOfMessage - numberOfNewMessage);
 			if(conversation.hasActor()){
-				conversation.textColor = oldPhraseColor;
+				conversation.textColor = getSpanColor(R.color.ui_blue_dialogue_dark);
 				if(conversation.isPlayerActor){
-					conversation.nameColor = oldPlayerNameColor;
+					conversation.nameColor = getSpanColor(R.color.ui_blue_playername_light);
 				} else {
-					conversation.nameColor = oldNPCNameColor;
+					conversation.nameColor = getSpanColor(R.color.ui_blue_npcname_dark);
 				}
 			}else{
-				conversation.textColor = oldRewardColor;
+				conversation.textColor = getSpanColor(R.color.ui_blue_reward_light);
 			}
 			numberOfNewMessage--;
 		}
@@ -246,7 +236,7 @@ public final class ConversationActivity
 		} else {
 			if (rb == null) return;
 			Reply r = (Reply) rb.getTag();
-			addConversationStatement(player, rb.getText().toString(), playerPhraseColor);
+			addConversationStatement(player, rb.getText().toString(), getSpanColor(R.color.ui_blue_dialogue_light));
 			conversationState.playerSelectedReply(getResources(), r);
 		}
 	}
@@ -260,7 +250,7 @@ public final class ConversationActivity
 			s.iconID = ConversationStatement.NO_ICON;
 		}
 		s.text = text;
-		s.nameColor = actor == player ? playerNameColor : NPCNameColor;
+		s.nameColor = actor == player ? getSpanColor(R.color.ui_blue_playername_light) : getSpanColor(R.color.ui_blue_npcname_light);
 		s.textColor = textColor;
 		s.isPlayerActor = actor != null && actor == player;
 		conversationHistory.add(s);
@@ -381,7 +371,7 @@ public final class ConversationActivity
 
 	@Override
 	public void onTextPhraseReached(String message, Actor actor, String phraseID) {
-		addConversationStatement(actor, message, NPCPhraseColor);
+		addConversationStatement(actor, message, getSpanColor(R.color.ui_blue_dialogue_light));
 	}
 
 	@Override
@@ -417,7 +407,7 @@ public final class ConversationActivity
 	}
 
 	private void addRewardMessage(String text) {
-		addConversationStatement(null, text, rewardColor);
+		addConversationStatement(null, text, getSpanColor(R.color.ui_blue_reward_light));
 	}
 
 	@Override
@@ -460,5 +450,9 @@ public final class ConversationActivity
 		rb.setFocusable(false);
 		rb.setFocusableInTouchMode(false);
 		replyGroup.addView(rb, layoutParams);
+	}
+	
+	private int getSpanColor(int resId) {
+		return getResources().getColor(resId);
 	}
 }
