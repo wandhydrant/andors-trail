@@ -12,6 +12,7 @@
         <item name="android:spinnerDropDownItemStyle">@style/AndorsTrail_Blue_SpinnerDropDown</item>
         <item name="android:alertDialogStyle">@style/AndorsTrailStyle.Dialog.Alert</item>
         <item name="android:spinnerItemStyle">@style/AndorsTrail_Blue_SpinnerCollapsed</item>
+        <item name="android:expandableListViewStyle">@style/AndorsTrail_Blue_ExpandableListView</item>
         <!-- <item name="android:tabWidgetStyle">@style/AndorsTrail_Blue_TabWidget</item> -->
     </style>
 
@@ -32,6 +33,7 @@
         <item name="android:spinnerDropDownItemStyle">@style/AndorsTrail_Blue_SpinnerDropDown</item>
         <item name="android:alertDialogStyle">@style/AndorsTrailStyle.Dialog.Alert</item>
         <item name="android:spinnerItemStyle">@style/AndorsTrail_Blue_SpinnerCollapsed</item>
+        <item name="android:expandableListViewStyle">@style/AndorsTrail_Blue_ExpandableListView</item>
         <!-- <item name="android:tabWidgetStyle">@style/AndorsTrail_Blue_TabWidget</item> -->
     </style>
 
@@ -53,6 +55,7 @@
 
     <style name="AndorsTrail_Blue_List" parent="android:style/Widget.ListView">
         <item name="android:background">@drawable/ui_blue_stdframe</item>
+        <item name="android:divider">@android:color/transparent</item>
     </style>
 
     <style name="AndorsTrail_Blue_TextButton" parent="android:style/Widget.Button">
@@ -66,11 +69,13 @@
 
     <style name="AndorsTrail_Blue_ToggleButton" parent="android:style/Widget.Button.Toggle">
         <item name="android:background">@drawable/ui_blue_togglebutton</item>
+        <item name="android:textOn">@null</item>
+        <item name="android:textOff">@null</item>
     </style>
 
     <style name="AndorsTrail_Blue_RadioButton" parent="android:style/Widget.CompoundButton.RadioButton">
         <item name="android:button">@drawable/ui_blue_radiobutton</item>
-        <item name="android:paddingLeft">20dp</item>
+        <item name="android:paddingLeft">22dp</item>
     </style>
 
     <style name="AndorsTrail_Blue_Checkbox" parent="android:style/Widget.CompoundButton.CheckBox">
@@ -94,6 +99,22 @@
         <item name="android:textColor">@color/ui_blue_textbutton_textcolor</item>
     </style>
 
+    <style name="AndorsTrail_Blue_ExpandableListView" parent="android:style/Widget.ExpandableListView">
+        <item name="android:textColor">@color/ui_blue_textbutton_textcolor</item>
+        <item name="android:textAppearanceLarge">@style/AndorsTrail_Blue_TextAppearance.ListItemTitle</item>
+        <item name="android:textAppearanceSmall">@style/AndorsTrail_Blue_TextAppearance.ListItemSubtitle</item>
+    </style>
+
+    
+    <style name="AndorsTrail_Blue_TextAppearance.ListItemTitle" parent="android:style/TextAppearance.Large.Inverse">
+        <item name="android:textColor">@color/ui_blue_textbutton_textcolor</item>
+        <item name="android:textSize">22sp</item>
+    </style>
+    
+    <style name="AndorsTrail_Blue_TextAppearance.ListItemSubtitle" parent="android:style/TextAppearance.Small">
+        <item name="android:textColor">@color/ui_blue_textbutton_textcolor</item>
+        <item name="android:textSize">14sp</item>
+    </style>
 
     <!-- <style name="AndorsTrail_Blue_TabWidget" parent="android:style/Widget.TabWidget">
         <item name="android:textColor">@color/ui_blue_textbutton_textcolor</item>
@@ -116,11 +137,23 @@
         <item name="android:background">@drawable/ui_blue_lightframe</item>
     </style>
 
+    <style name="textView" parent="android:Widget.TextView">
+        <item name="android:textColor">@color/ui_blue_textbutton_textcolor</item>
+    </style>
+    
     <style name="textWithIcon" parent="android:Widget.TextView">
         <item name="android:drawablePadding">@dimen/dialog_iconpadding_right</item>
         <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">@color/ui_blue_textbutton_textcolor</item>
     </style>
 
+    <style name="textWithIconInList" parent="android:Widget.TextView">
+        <item name="android:drawablePadding">@dimen/dialog_iconpadding_right</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:background">@drawable/ui_blue_spinner_list_bg</item>
+        <item name="android:textColor">@color/ui_blue_textbutton_textcolor</item>
+    </style>
+    
     <style name="titleWithIcon" parent="@style/textWithIcon">
         <item name="android:textSize">@dimen/titletext</item>
         <item name="android:paddingBottom">@dimen/dialog_iconpadding_bottom</item>
@@ -134,6 +167,7 @@
         <item name="android:layout_margin">@dimen/boxshape_margin</item>
         <item name="android:padding">@dimen/boxshape_margin</item>
         <item name="android:textSize">@dimen/smalltext</item>
+        <item name="android:textColor">@color/ui_blue_textbutton_textcolor</item>
     </style>
 
     <style name="quickButton" parent="@style/AndorsTrail_Blue_TextButton">

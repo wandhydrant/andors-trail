@@ -1,14 +1,19 @@
 package com.gpl.rpg.AndorsTrail.activity;
 
+import com.gpl.rpg.AndorsTrail.AndorsTrailApplication;
 import com.gpl.rpg.AndorsTrail.R;
 
+import android.app.Activity;
 import android.app.Dialog;
 import android.content.Context;
 import android.content.DialogInterface.OnDismissListener;
+import android.graphics.Rect;
 import android.graphics.drawable.Drawable;
 import android.view.ContextThemeWrapper;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.view.View.OnTouchListener;
 import android.view.ViewGroup;
 import android.view.ViewGroup.LayoutParams;
 import android.view.Window;
@@ -18,16 +23,33 @@ import android.widget.TextView;
 
 public class CustomDialog {
 	
-	private static final int MIN_RES_ID=0x7f040000;
-	
 	public static Dialog createDialog(final Context context, String title, Drawable icon, String desc, View content, boolean hasButtons) {
-		Dialog dialog = new Dialog(new ContextThemeWrapper(context, R.style.AndorsTrailStyle_Dialog));
+		final Dialog dialog = new Dialog(new ContextThemeWrapper(context, R.style.AndorsTrailStyle_Dialog)) {
+			@Override
+			public boolean onTouchEvent(MotionEvent event) {
+				Rect r = new Rect();
+				this.getWindow().getDecorView().findViewById(R.id.dialog_hitrect).getHitRect(r);
+				
+				if (r.contains((int)event.getX(), (int)event.getY())) {
+					return super.onTouchEvent(event);
+				} else {
+					this.dismiss();
+					return true;
+				}
+			}
+		};
 		
 		dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
 		dialog.setContentView(R.layout.custom_dialog_title_icon);
 		dialog.getWindow().setBackgroundDrawableResource(android.R.color.transparent);
 		dialog.getWindow().getAttributes().width=WindowManager.LayoutParams.MATCH_PARENT;
-
+		dialog.getWindow().getAttributes().height=WindowManager.LayoutParams.MATCH_PARENT;
+		if (((AndorsTrailApplication)context.getApplicationContext()).getPreferences().fullscreen) {
+			dialog.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
+		} else {
+			dialog.getWindow().setFlags(0, WindowManager.LayoutParams.FLAG_FULLSCREEN);
+		}
+		
 		TextView titleView = (TextView) dialog.findViewById(R.id.dialog_title);
 		if (title != null || icon != null) {
 			titleView.setText(title);
@@ -73,6 +95,7 @@ public class CustomDialog {
 		
 		Button b = new Button(dialog.getContext());
 		b.setLayoutParams(params);
+		b.setBackgroundDrawable(dialog.getContext().getResources().getDrawable(R.drawable.ui_blue_textbutton));
 		b.setText(textId);
 		b.setOnClickListener(new OnClickListener() {
 			

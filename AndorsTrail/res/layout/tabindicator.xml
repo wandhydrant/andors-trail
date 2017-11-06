@@ -17,6 +17,9 @@
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|center_horizontal"
         android:gravity="bottom|center_horizontal"
+        android:ellipsize="marquee"
+        android:singleLine="true"
+        android:scrollHorizontally="true"
         android:textColor="@color/ui_blue_textbutton_textcolor"/>
 
 </LinearLayout>

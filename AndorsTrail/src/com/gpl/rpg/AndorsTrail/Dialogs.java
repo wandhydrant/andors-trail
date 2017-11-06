@@ -4,6 +4,23 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
 
+import android.app.Activity;
+import android.app.Dialog;
+import android.content.Context;
+import android.content.DialogInterface;
+import android.content.DialogInterface.OnDismissListener;
+import android.content.Intent;
+import android.net.Uri;
+import android.os.Bundle;
+import android.support.v4.app.Fragment;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.AdapterView;
+import android.widget.AdapterView.OnItemClickListener;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
+import android.widget.Toast;
+
 import com.gpl.rpg.AndorsTrail.activity.ActorConditionInfoActivity;
 import com.gpl.rpg.AndorsTrail.activity.BulkSelectionInterface;
 import com.gpl.rpg.AndorsTrail.activity.ConversationActivity;
@@ -25,29 +42,7 @@ import com.gpl.rpg.AndorsTrail.model.item.Inventory;
 import com.gpl.rpg.AndorsTrail.model.item.ItemType;
 import com.gpl.rpg.AndorsTrail.model.item.Loot;
 import com.gpl.rpg.AndorsTrail.model.map.MapObject;
-import com.gpl.rpg.AndorsTrail.resource.tiles.TileManager;
 import com.gpl.rpg.AndorsTrail.view.ItemContainerAdapter;
-
-import android.app.Activity;
-import android.app.Dialog;
-import android.content.Context;
-import android.content.DialogInterface;
-import android.content.DialogInterface.OnDismissListener;
-import android.content.Intent;
-import android.graphics.drawable.BitmapDrawable;
-import android.graphics.drawable.ColorDrawable;
-import android.net.Uri;
-import android.os.Bundle;
-import android.support.v4.app.Fragment;
-import android.view.View;
-import android.view.ViewGroup;
-import android.view.ViewGroup.LayoutParams;
-import android.widget.AdapterView;
-import android.widget.AdapterView.OnItemClickListener;
-import android.widget.ArrayAdapter;
-import android.widget.ListView;
-import android.widget.ScrollView;
-import android.widget.Toast;
 
 public final class Dialogs {
 
@@ -193,6 +188,15 @@ public final class Dialogs {
 		final ListView itemList = new ListView(mainActivity);
 		itemList.setLayoutParams(new ListView.LayoutParams(ListView.LayoutParams.MATCH_PARENT, ListView.LayoutParams.WRAP_CONTENT));
 //		itemList.setPadding(20, 0, 20, 20);
+		itemList.setAdapter(new ItemContainerAdapter(mainActivity, world.tileManager, combinedLoot.items, world.model.player));
+
+		final Dialog d = CustomDialog.createDialog(mainActivity, 
+				mainActivity.getResources().getString(title), 
+				mainActivity.getResources().getDrawable(R.drawable.ui_icon_equipment), 
+				msg, 
+				combinedLoot.items.isEmpty() ? null : itemList, 
+				true);
+		
 		itemList.setOnItemClickListener(new OnItemClickListener() {
 			@Override
 			public void onItemClick(AdapterView<?> parent, View v, int position, long id) {
@@ -206,21 +210,18 @@ public final class Dialogs {
 						break;
 					}
 				}
-				if (removeFromCombinedLoot) combinedLoot.items.removeItem(itemTypeID);
+				if (removeFromCombinedLoot) {
+					combinedLoot.items.removeItem(itemTypeID);
+				}
+				if (((ItemContainerAdapter) parent.getAdapter()).isEmpty()) {
+					ViewGroup vg = (ViewGroup) d.findViewById(R.id.dialog_content_container);
+					vg.setVisibility(View.GONE);
+				}
 				ItemType type = world.itemTypes.getItemType(itemTypeID);
 				world.model.player.inventory.addItem(type);
 				((ItemContainerAdapter) itemList.getAdapter()).notifyDataSetChanged();
 			}
 		});
-		itemList.setAdapter(new ItemContainerAdapter(mainActivity, world.tileManager, combinedLoot.items, world.model.player));
-
-		final Dialog d = CustomDialog.createDialog(mainActivity, 
-				mainActivity.getResources().getString(title), 
-				mainActivity.getResources().getDrawable(R.drawable.ui_icon_equipment), 
-				msg, 
-				combinedLoot.items.isEmpty() ? null : itemList, 
-				true);
-		
 
 		CustomDialog.addButton(d, R.string.dialog_loot_pickall, new View.OnClickListener() {
 			@Override
@@ -397,20 +398,10 @@ public final class Dialogs {
 			itemList.setChoiceMode(ListView.CHOICE_MODE_NONE);
 			itemList.setBackgroundResource(R.color.ui_blue_stdframe_bg);
 			itemList.setAdapter(new ArrayAdapter<String>(context, R.layout.combatlog_row, android.R.id.text1, combatLogMessages));
-//			ScrollView sv = new ScrollView(context);
-//			sv.setLayoutParams(new LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, 0));
-//			sv.addView(itemList);
 			view = itemList;
 		} else {
 			msg = context.getResources().getString(R.string.combat_log_noentries);
 		}
-
-//		final Dialog d = new AlertDialog.Builder(new ContextThemeWrapper(context, R.style.AndorsTrailStyle))
-//				.setTitle(R.string.combat_log_title)
-//				.setIcon(R.drawable.ui_icon_combat)
-//				.setNegativeButton(R.string.dialog_close, null)
-//				.setView(itemList)
-//				.create();
 
 		final Dialog d = CustomDialog.createDialog(context, 
 				context.getResources().getString(R.string.combat_log_title), 

@@ -49,7 +49,7 @@ public final class ActorConditionList extends LinearLayout {
 
 	private void addConditionEffect(final Context context, final Resources res, LinearLayout.LayoutParams layoutParams,
 			ActorCondition c, boolean immunity) {
-		TextView v = (TextView) View.inflate(context, R.layout.inventoryitemview, null);
+		TextView v = (TextView) View.inflate(context, R.layout.actorconditionitemview, null);
 		world.tileManager.setImageViewTile(res, v, c.conditionType, immunity);
 		SpannableString content = new SpannableString(describeEffect(res, c));
 		content.setSpan(new UnderlineSpan(), 0, content.length(), 0);
