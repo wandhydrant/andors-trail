@@ -94,6 +94,11 @@
         <item name="android:gravity">start</item>
     </style>
 
+    <style name="AndorsTrail_Blue_SpinnerEmulator" parent="android:style/Widget.Button">
+        <item name="android:background">@drawable/ui_blue_spinner</item>
+        <item name="android:textColor">@color/ui_blue_textbutton_textcolor</item>
+    </style>
+
     <style name="AndorsTrail_Blue_SpinnerDropDown" parent="android:style/Widget.DropDownItem.Spinner">
         <item name="android:background">@drawable/ui_blue_spinner_list_bg</item>
         <item name="android:textColor">@color/ui_blue_textbutton_textcolor</item>
@@ -108,6 +113,7 @@
         <item name="android:textColor">@color/ui_blue_textbutton_textcolor</item>
         <item name="android:textAppearanceLarge">@style/AndorsTrail_Blue_TextAppearance.ListItemTitle</item>
         <item name="android:textAppearanceSmall">@style/AndorsTrail_Blue_TextAppearance.ListItemSubtitle</item>
+        <item name="android:groupIndicator">@drawable/ui_blue_radiobutton</item>
     </style>
     
     <style name="AndorsTrail_Blue_PopupMenu" parent="android:style/Widget.PopupMenu">
@@ -119,16 +125,16 @@
     </style>
     
     <style name="AndorsTrail_Blue_PopupWindow" parent="android:style/Widget.PopupWindow">
-        <item name="android:popupBackground">@drawable/ui_blue_stdframe</item>
+        <item name="android:popupBackground">@android:color/transparent</item>
         <item name="android:dropDownSelector">@drawable/ui_blue_spinner_list_bg</item>
-        <item name="android:background">@drawable/ui_blue_spinner_list_bg</item>
+        <item name="android:background">@drawable/ui_blue_stdframe</item>
         <item name="android:textColor">@color/ui_blue_textbutton_textcolor</item>
         <item name="android:checkMark">@drawable/ui_blue_radiobutton</item>
     </style>
     
     <style name="AndorsTrail_Blue_ListPopupWindow" parent="android:style/Widget.ListPopupWindow">
-        <item name="android:popupBackground">@drawable/ui_blue_stdframe</item>
-        <item name="android:background">@drawable/ui_blue_spinner_list_bg</item>
+        <item name="android:popupBackground">@android:color/transparent</item>
+        <item name="android:background">@drawable/ui_blue_stdframe</item>
         <item name="android:dropDownSelector">@drawable/ui_blue_spinner_list_bg</item>
         <item name="android:textColor">@color/ui_blue_textbutton_textcolor</item>
         <item name="android:checkMark">@drawable/ui_blue_radiobutton</item>
