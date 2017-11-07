@@ -70,6 +70,12 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5sp" />
+                
+                <com.gpl.rpg.AndorsTrail.view.RangeBar
+                    android:id="@+id/heroinfo_apbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5sp" />
             </LinearLayout>
 
             <LinearLayout
@@ -94,14 +100,14 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content" >
 
-                    <TableRow>
+<!--                     <TableRow>
 
                         <TextView
                             style="@style/traitsinfo_label"
                             android:text="@string/heroinfo_actionpoints" />
 
                         <TextView android:id="@+id/heroinfo_ap" />
-                    </TableRow>
+                    </TableRow> -->
 
                     <TableRow>
 

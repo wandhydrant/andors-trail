@@ -1,5 +1,19 @@
 package com.gpl.rpg.AndorsTrail.view;
 
+import android.annotation.SuppressLint;
+import android.content.Context;
+import android.content.res.Resources;
+import android.util.AttributeSet;
+import android.view.View;
+import android.view.ViewGroup;
+import android.view.animation.Animation;
+import android.view.animation.Animation.AnimationListener;
+import android.view.animation.AnimationUtils;
+import android.widget.Button;
+import android.widget.ImageButton;
+import android.widget.RelativeLayout;
+import android.widget.TextView;
+
 import com.gpl.rpg.AndorsTrail.AndorsTrailApplication;
 import com.gpl.rpg.AndorsTrail.AndorsTrailPreferences;
 import com.gpl.rpg.AndorsTrail.Dialogs;
@@ -16,21 +30,6 @@ import com.gpl.rpg.AndorsTrail.model.actor.Actor;
 import com.gpl.rpg.AndorsTrail.model.actor.Monster;
 import com.gpl.rpg.AndorsTrail.model.actor.Player;
 import com.gpl.rpg.AndorsTrail.util.Coord;
-
-import android.R.color;
-import android.annotation.SuppressLint;
-import android.content.Context;
-import android.content.res.Resources;
-import android.util.AttributeSet;
-import android.view.View;
-import android.view.ViewGroup;
-import android.view.animation.Animation;
-import android.view.animation.Animation.AnimationListener;
-import android.view.animation.AnimationUtils;
-import android.widget.Button;
-import android.widget.ImageButton;
-import android.widget.RelativeLayout;
-import android.widget.TextView;
 
 public final class CombatView extends RelativeLayout implements CombatSelectionListener, CombatTurnListener, ActorStatsListener, ActorConditionListener {
 	private final RangeBar playerAPBar;
@@ -98,7 +97,7 @@ public final class CombatView extends RelativeLayout implements CombatSelectionL
 		});
 
 		playerAPBar = (RangeBar) findViewById(R.id.combatview_status);
-		playerAPBar.init(R.drawable.ui_progress_exp, R.string.status_ap);
+		playerAPBar.init(R.drawable.ui_progress_ap, R.string.status_ap);
 
 		monsterInfo = (ImageButton) findViewById(R.id.combatview_monsterinfo);
 		monsterInfo.setOnClickListener(new OnClickListener() {

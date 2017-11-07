@@ -30,6 +30,16 @@ public final class RangeBar extends RelativeLayout {
 		progressBar.setProgressDrawable(getResources().getDrawable(drawableID));
 		progressBar.setProgressDrawable(getResources().getDrawable(drawableID));
 		labelText.setText(labelTextID);
+		labelText.setSelected(true);
+	}
+	
+	public void setLargeLabel(boolean large) {
+		if (large) {
+			labelText.getLayoutParams().width = getResources().getDimensionPixelSize(R.dimen.rangebar_labelwidth_large);
+		} else {
+			labelText.getLayoutParams().width = getResources().getDimensionPixelSize(R.dimen.rangebar_labelwidth_small);
+		}
+		this.postInvalidate();
 	}
 
 	public void update(final Range range) { update(range.max, range.current); }

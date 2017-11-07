@@ -63,6 +63,7 @@ public final class DisplayActiveActorConditionIcons implements ActorConditionLis
 		ActiveConditionIcon icon = getFirstFreeIcon();
 		icon.setActiveCondition(condition, false);
 		icon.show();
+		updateIconState();
 	}
 
 	@Override
@@ -71,10 +72,15 @@ public final class DisplayActiveActorConditionIcons implements ActorConditionLis
 		ActiveConditionIcon icon = getIconFor(condition, false);
 		if (icon == null) return;
 		icon.hide(true);
+		updateIconState();
 	}
 
 	@Override
-	public void onActorConditionDurationChanged(Actor actor, ActorCondition condition) {
+	public void onActorConditionDurationChanged(Actor actor, ActorCondition condition) { 
+		if (actor != target) return;
+		ActiveConditionIcon icon = getIconFor(condition, false);
+		if (icon == null) return;
+		icon.setIconAndText();
 	}
 
 	@Override
@@ -82,7 +88,7 @@ public final class DisplayActiveActorConditionIcons implements ActorConditionLis
 		if (actor != target) return;
 		ActiveConditionIcon icon = getIconFor(condition, false);
 		if (icon == null) return;
-		icon.setIconText();
+		icon.setIconAndText();
 	}
 
 	@Override
@@ -100,6 +106,7 @@ public final class DisplayActiveActorConditionIcons implements ActorConditionLis
 		ActiveConditionIcon icon = getFirstFreeIcon();
 		icon.setActiveCondition(condition, true);
 		icon.show();
+		updateIconState();
 	}
 
 	@Override
@@ -108,10 +115,15 @@ public final class DisplayActiveActorConditionIcons implements ActorConditionLis
 		ActiveConditionIcon icon = getIconFor(condition, true);
 		if (icon == null) return;
 		icon.hide(true);
+		updateIconState();
 	}
 
 	@Override
 	public void onActorConditionImmunityDurationChanged(Actor actor, ActorCondition condition) {
+		if (actor != target) return;
+		ActiveConditionIcon icon = getIconFor(condition, false);
+		if (icon == null) return;
+		icon.setIconAndText();
 	}
 	
 	public void unsubscribe() {
@@ -134,14 +146,117 @@ public final class DisplayActiveActorConditionIcons implements ActorConditionLis
 				getFirstFreeIcon().setActiveCondition(condition, true);
 			}
 		}
+		updateIconState();
+	}
+	
+	private static class ActiveConditionIconImageView extends ImageView {
+		enum Position { first, mid, last, single }
+		enum Direction { horizontal, vertical }
+		
+		private Position pos=Position.single;
+		private Direction dir=Direction.horizontal;
+		private boolean reverse=false;
+		
+		public ActiveConditionIconImageView(Context context) {
+			super(context);
+		}
+		
+		@Override
+		public int[] onCreateDrawableState(int extraSpace) {
+			int[] parentState =  super.onCreateDrawableState(extraSpace+3);
+			switch (pos) {
+			case first:
+				mergeDrawableStates(parentState, new int[]{R.attr.first});
+				break;
+			case last:
+				mergeDrawableStates(parentState, new int[]{R.attr.last});
+				break;
+			case single:
+				mergeDrawableStates(parentState, new int[]{R.attr.single});
+				break;
+			case mid:
+			default:
+				break;
+			}
+			switch (dir) {
+			case horizontal:
+				mergeDrawableStates(parentState, new int[]{R.attr.horizontal});
+				break;
+			case vertical:
+				mergeDrawableStates(parentState, new int[]{R.attr.vertical});
+				break;
+			default:
+				break;
+			}
+			if (reverse) mergeDrawableStates(parentState, new int[]{R.attr.reverse});
+			return parentState;
+		}
+		
+		public void setVertical() {
+			dir = Direction.vertical;
+			refreshDrawableState();
+		}
+		
+		public void setHorizontal() {
+			dir = Direction.horizontal;
+			refreshDrawableState();
+		}
+		
+		public void reverse() {
+			reverse = !reverse;
+			refreshDrawableState();
+		}
+		
+		public void setFirst() {
+			pos = Position.first;
+			refreshDrawableState();
+		}
+
+		public void setMid() {
+			pos = Position.mid;
+			refreshDrawableState();
+		}
+
+		public void setLast() {
+			pos = Position.last;
+			refreshDrawableState();
+		}
+
+		public void setSingle() {
+			pos = Position.single;
+			refreshDrawableState();
+		}
+		
+	}
+	
+	private void updateIconState() {
+		ActiveConditionIcon first = null;
+		ActiveConditionIcon last = null;
+		for (ActiveConditionIcon icon : currentConditionIcons) {
+			if (icon.isVisible()) {
+				if (first == null) {
+					first = icon;
+				} else {
+					icon.image.setMid();
+				}
+				last = icon;
+			}
+		}
+		if (first == null) return; 
+		if (first == last) {
+			first.image.setSingle();
+		} else if (last != null) {
+			first.image.setFirst();
+			last.image.setLast();
+		}
 	}
 
 	private final class ActiveConditionIcon implements AnimationListener {
 		public final int id;
 		private boolean immunity = false;
 		public ActorCondition condition;
-		public final ImageView image;
-		public final TextView text;
+		public final ActiveConditionIconImageView image;
+//		public final TextView text;
 		private final Animation onNewIconAnimation;
 		private final Animation onRemovedIconAnimation;
 		private final Animation onAppliedEffectAnimation;
@@ -149,12 +264,15 @@ public final class DisplayActiveActorConditionIcons implements ActorConditionLis
 		
 		public ActiveConditionIcon(Context context, int id) {
 			this.id = id;
-			this.image = new ImageView(context);
+			this.image = new ActiveConditionIconImageView(context);
 			this.image.setId(id);
-			GradientDrawable grad = new GradientDrawable(target == world.model.player ? Orientation.BOTTOM_TOP : Orientation.TOP_BOTTOM, new int[]{Color.argb(190, 68, 68, 68), Color.argb(10, 34, 34, 34)});
-			grad.setCornerRadius(3);
-			this.image.setBackgroundDrawable(grad);
-			this.text = new TextView(context);
+//			GradientDrawable grad = new GradientDrawable(target == world.model.player ? Orientation.BOTTOM_TOP : Orientation.TOP_BOTTOM, new int[]{Color.argb(190, 68, 68, 68), Color.argb(10, 34, 34, 34)});
+//			grad.setCornerRadius(3);
+//			this.image.setBackgroundDrawable(grad);
+			this.image.setBackgroundResource(R.drawable.ui_blue_buttonbar);
+			this.image.setHorizontal();
+			this.image.reverse();
+//			this.text = new TextView(context);
 			this.onNewIconAnimation = AnimationUtils.loadAnimation(context, R.anim.scaleup);
 			this.onRemovedIconAnimation = AnimationUtils.loadAnimation(context, R.anim.scaledown);
 			this.onAppliedEffectAnimation = AnimationUtils.loadAnimation(context, R.anim.scalebeat);
@@ -162,26 +280,33 @@ public final class DisplayActiveActorConditionIcons implements ActorConditionLis
 
 			res = context.getResources();
 
-			text.setTextColor(res.getColor(android.R.color.white));
-			text.setShadowLayer(1, 1, 1, res.getColor(android.R.color.black));
+//			text.setTextColor(res.getColor(R.color.ui_blue_palette_text_gray_light));
+//			text.setShadowLayer(1, 1, 1, res.getColor(android.R.color.black));
 		}
 
 		private void setActiveCondition(ActorCondition condition, boolean immunity) {
 			this.immunity = immunity;
 			this.condition = condition;
-			tileManager.setImageViewTile(res, image, condition.conditionType, immunity);
+			
+			
+			setIconAndText();
 			image.setVisibility(View.VISIBLE);
-			setIconText();
 		}
 
-		public void setIconText() {
+		public void setIconAndText() {
+			String duration = null;
+			String magnitude = null;
 			boolean showMagnitude = (condition.magnitude != 1 && condition.magnitude != ActorCondition.MAGNITUDE_REMOVE_ALL);
 			if (showMagnitude) {
-				text.setText(Integer.toString(condition.magnitude));
-				text.setVisibility(View.VISIBLE);
-			} else {
-				text.setVisibility(View.GONE);
+				magnitude = "x"+Integer.toString(condition.magnitude);
 			}
+			if (condition.duration == ActorCondition.DURATION_FOREVER || condition.duration == ActorCondition.DURATION_NONE) {
+				duration = "\u221e";
+			} else {
+				duration = Integer.toString(condition.duration);
+			}
+			tileManager.setImageViewTile(res, image, condition.conditionType, immunity, magnitude, duration);
+			
 		}
 
 		public void hide(boolean useAnimation) {
@@ -195,12 +320,12 @@ public final class DisplayActiveActorConditionIcons implements ActorConditionLis
 				image.setVisibility(View.GONE);
 				condition = null;
 			}
-			text.setVisibility(View.GONE);
+//			text.setVisibility(View.GONE);
 		}
 		public void show() {
 			if (!preferences.enableUiAnimations) return;
 			image.startAnimation(onNewIconAnimation);
-			if (text.getVisibility() == View.VISIBLE) text.startAnimation(onNewIconAnimation);
+//			if (text.getVisibility() == View.VISIBLE) text.startAnimation(onNewIconAnimation);
 		}
 
 		public void pulseAnimate() {
@@ -217,6 +342,7 @@ public final class DisplayActiveActorConditionIcons implements ActorConditionLis
 			if (animation == this.onRemovedIconAnimation) {
 				hide(false);
 				rearrangeIconsLeftOf(this);
+				updateIconState();
 			}
 		}
 
@@ -265,10 +391,10 @@ public final class DisplayActiveActorConditionIcons implements ActorConditionLis
 
 		activeConditions.addView(icon.image, getLayoutParamsForIconIndex(index));
 
-		RelativeLayout.LayoutParams layout = new RelativeLayout.LayoutParams(LayoutParams.WRAP_CONTENT, LayoutParams.WRAP_CONTENT);
-		layout.addRule(RelativeLayout.ALIGN_RIGHT, icon.id);
-		layout.addRule(RelativeLayout.ALIGN_BOTTOM, icon.id);
-		activeConditions.addView(icon.text, layout);
+//		RelativeLayout.LayoutParams layout = new RelativeLayout.LayoutParams(LayoutParams.WRAP_CONTENT, LayoutParams.WRAP_CONTENT);
+//		layout.addRule(RelativeLayout.ALIGN_RIGHT, icon.id);
+//		layout.addRule(RelativeLayout.ALIGN_BOTTOM, icon.id);
+//		activeConditions.addView(icon.text, layout);
 
 		currentConditionIcons.add(icon);
 

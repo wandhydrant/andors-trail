@@ -5,6 +5,7 @@ import java.util.HashSet;
 
 import com.gpl.rpg.AndorsTrail.AndorsTrailApplication;
 import com.gpl.rpg.AndorsTrail.AndorsTrailPreferences;
+import com.gpl.rpg.AndorsTrail.R;
 import com.gpl.rpg.AndorsTrail.context.WorldContext;
 import com.gpl.rpg.AndorsTrail.model.ability.ActorConditionType;
 import com.gpl.rpg.AndorsTrail.model.actor.Monster;
@@ -379,7 +380,8 @@ public final class TileManager {
 		private String text;
 		private int size = 15;
 		private Align align = Align.CENTER;
-		private Paint mPaint;
+		private Paint mFillPaint;
+		private Paint mStrokePaint;
 		private Rect textBounds;
 		private int cHeight;
 		private int cWidth;
@@ -421,14 +423,18 @@ public final class TileManager {
 		}
 		
 		public void init(Resources res) {
-			mPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
+			mFillPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
 
-			mPaint.setColor(res.getColor(android.R.color.black));
-			mPaint.setShadowLayer(1, 1, 1, res.getColor(android.R.color.white));
-			mPaint.setStyle(Paint.Style.FILL);
-			mPaint.setTextSize(size * res.getDisplayMetrics().scaledDensity);
+			mFillPaint.setColor(res.getColor(R.color.ui_blue_palette_text_gray_light));
+//			mFillPaint.setShadowLayer(5f * res.getDisplayMetrics().scaledDensity, 1, 1, res.getColor(android.R.color.black));
+			mFillPaint.setStyle(Paint.Style.FILL);
+			mFillPaint.setTextSize(size * res.getDisplayMetrics().scaledDensity);
 			textBounds = new Rect();
-			mPaint.getTextBounds(text, 0, text.length(), textBounds);
+			mFillPaint.getTextBounds(text, 0, text.length(), textBounds);
+			mStrokePaint=new Paint(mFillPaint);
+//			mStrokePaint.setStyle(Paint.Style.FILL);
+//			mStrokePaint.setStrokeWidth(1f * res.getDisplayMetrics().scaledDensity);
+			mStrokePaint.setColor(res.getColor(R.color.ui_blue_palette_blue_dark));
 		}
 		
 		
@@ -474,22 +480,26 @@ public final class TileManager {
 				break;
 			
 			}
-			canvas.drawText(text, x, y, mPaint);
+			canvas.drawRect(x, y - textBounds.height(), x + textBounds.width(), y, mStrokePaint);
+			canvas.drawText(text, x, y, mFillPaint);
+//			canvas.drawText(text, x, y, mStrokePaint);
 		}
 
 		@Override
 		public void setAlpha(int alpha) {
-			mPaint.setAlpha(alpha);
+			mFillPaint.setAlpha(alpha);
+//			mStrokePaint.setAlpha(alpha);
 		}
 
 		@Override
 		public void setColorFilter(ColorFilter cf) {
-			mPaint.setColorFilter(cf);
+			mFillPaint.setColorFilter(cf);
+//			mStrokePaint.setColorFilter(cf);
 		}
 
 		@Override
 		public int getOpacity() {
-			return mPaint.getAlpha();
+			return mFillPaint.getAlpha();
 		}
 		
 		@Override
