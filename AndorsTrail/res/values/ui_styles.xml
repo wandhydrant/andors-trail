@@ -14,6 +14,7 @@
         <item name="android:spinnerItemStyle">@style/AndorsTrail_Blue_SpinnerCollapsed</item>
         <item name="android:expandableListViewStyle">@style/AndorsTrail_Blue_ExpandableListView</item>
         <item name="android:listSeparatorTextViewStyle">@style/AndorsTrail_Blue_PreferencesListHeader</item>
+        <item name="android:popupWindowStyle">@style/AndorsTrail_Blue_PopupWindow</item>
         <!-- <item name="android:tabWidgetStyle">@style/AndorsTrail_Blue_TabWidget</item> -->
     </style>
 
@@ -36,6 +37,7 @@
         <item name="android:spinnerItemStyle">@style/AndorsTrail_Blue_SpinnerCollapsed</item>
         <item name="android:expandableListViewStyle">@style/AndorsTrail_Blue_ExpandableListView</item>
         <item name="android:listSeparatorTextViewStyle">@style/AndorsTrail_Blue_PreferencesListHeader</item>
+        <item name="android:popupWindowStyle">@style/AndorsTrail_Blue_PopupWindow</item>
         <!-- <item name="android:tabWidgetStyle">@style/AndorsTrail_Blue_TabWidget</item> -->
     </style>
 
@@ -58,6 +60,7 @@
     <style name="AndorsTrail_Blue_List" parent="android:style/Widget.ListView">
         <item name="android:background">@drawable/ui_blue_stdframe</item>
         <item name="android:divider">@android:color/transparent</item>
+        <item name="android:dividerHeight">1dp</item>
     </style>
 
     <style name="AndorsTrail_Blue_TextButton" parent="android:style/Widget.Button">
@@ -106,6 +109,30 @@
         <item name="android:textAppearanceLarge">@style/AndorsTrail_Blue_TextAppearance.ListItemTitle</item>
         <item name="android:textAppearanceSmall">@style/AndorsTrail_Blue_TextAppearance.ListItemSubtitle</item>
     </style>
+    
+    <style name="AndorsTrail_Blue_PopupMenu" parent="android:style/Widget.PopupMenu">
+        <item name="android:popupBackground">@drawable/ui_blue_stdframe</item>
+        <item name="android:background">@drawable/ui_blue_spinner_list_bg</item>
+        <item name="android:dropDownSelector">@drawable/ui_blue_spinner_list_bg</item>
+        <item name="android:textColor">@color/ui_blue_textbutton_textcolor</item>
+        <item name="android:checkMark">@drawable/ui_blue_radiobutton</item>
+    </style>
+    
+    <style name="AndorsTrail_Blue_PopupWindow" parent="android:style/Widget.PopupWindow">
+        <item name="android:popupBackground">@drawable/ui_blue_stdframe</item>
+        <item name="android:dropDownSelector">@drawable/ui_blue_spinner_list_bg</item>
+        <item name="android:background">@drawable/ui_blue_spinner_list_bg</item>
+        <item name="android:textColor">@color/ui_blue_textbutton_textcolor</item>
+        <item name="android:checkMark">@drawable/ui_blue_radiobutton</item>
+    </style>
+    
+    <style name="AndorsTrail_Blue_ListPopupWindow" parent="android:style/Widget.ListPopupWindow">
+        <item name="android:popupBackground">@drawable/ui_blue_stdframe</item>
+        <item name="android:background">@drawable/ui_blue_spinner_list_bg</item>
+        <item name="android:dropDownSelector">@drawable/ui_blue_spinner_list_bg</item>
+        <item name="android:textColor">@color/ui_blue_textbutton_textcolor</item>
+        <item name="android:checkMark">@drawable/ui_blue_radiobutton</item>
+    </style>
 
 
     <style name="AndorsTrail_Blue_PreferencesListHeader">
@@ -131,7 +158,7 @@
         <item name="android:textColor">@color/ui_blue_textbutton_textcolor</item>
         <item name="android:textSize">14sp</item>
     </style>
-
+    
     <!-- <style name="AndorsTrail_Blue_TabWidget" parent="android:style/Widget.TabWidget">
         <item name="android:textColor">@color/ui_blue_textbutton_textcolor</item>
         <item name="android:background">@drawable/ui_blue_tabwidget</item>
@@ -155,6 +182,14 @@
 
     <style name="textView" parent="android:Widget.TextView">
         <item name="android:textColor">@color/ui_blue_textbutton_textcolor</item>
+    </style>
+    
+	
+	<style name="autoScrollingText" parent="android:Widget.TextView">
+        <item name="android:textColor">@color/ui_blue_textbutton_textcolor</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:scrollHorizontally">true</item>
     </style>
     
     <style name="textWithIcon" parent="android:Widget.TextView">

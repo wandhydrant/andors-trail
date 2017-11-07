@@ -434,7 +434,7 @@ public final class TileManager {
 			mStrokePaint=new Paint(mFillPaint);
 //			mStrokePaint.setStyle(Paint.Style.FILL);
 //			mStrokePaint.setStrokeWidth(1f * res.getDisplayMetrics().scaledDensity);
-			mStrokePaint.setColor(res.getColor(R.color.ui_blue_palette_blue_dark));
+			mStrokePaint.setColor(res.getColor(R.color.ui_blue_palette_blue_mid));
 		}
 		
 		
