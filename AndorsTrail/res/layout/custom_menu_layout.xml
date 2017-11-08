@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+    
+    <TextView 
+        android:id="@+id/custom_menu_item_template"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ui_blue_spinner_list_bg"
+        android:textColor="@color/ui_blue_textbutton_textcolor"
+        android:visibility="gone"/>
+    
+    <TextView 
+        android:id="@+id/custom_submenu_item_template"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ui_blue_spinner_list_bg"
+        android:textColor="@color/ui_blue_textbutton_textcolor"
+        android:drawableRight="@drawable/ui_blue_submenu_indicator"
+        android:visibility="gone"/>
+
+</LinearLayout>

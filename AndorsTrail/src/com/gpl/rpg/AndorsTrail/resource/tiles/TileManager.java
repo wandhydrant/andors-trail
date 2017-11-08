@@ -1,5 +1,6 @@
 package com.gpl.rpg.AndorsTrail.resource.tiles;
 
+import java.util.Collection;
 import java.util.HashMap;
 import java.util.HashSet;
 
@@ -88,7 +89,7 @@ public final class TileManager {
 	private final HashSet<Integer> preloadedTileIDs = new HashSet<Integer>();
 
 
-	public TileCollection loadTilesFor(HashSet<Integer> tileIDs, Resources r) {
+	public TileCollection loadTilesFor(Collection<Integer> tileIDs, Resources r) {
 		return tileCache.loadTilesFor(tileIDs, r);
 	}
 
@@ -296,7 +297,7 @@ public final class TileManager {
 			} else {
 				overlayDrawable = new BitmapDrawable(res, preloadedTiles.getBitmap(overlayIconID));
 				iconDrawable = new BitmapDrawable(res, icon);
-				}
+			}
 			
 			if (overlayAbove) {
 				LayerDrawable layered = new LayerDrawable(new Drawable[] {
@@ -318,6 +319,17 @@ public final class TileManager {
 	private void setImageViewTile(Resources res, ImageView imageView, ItemType itemType, Bitmap icon) {
 		final int overlayIconID = itemType.getOverlayTileID();
 		setImageViewTileWithOverlay(res, imageView, overlayIconID, icon, false);
+	}
+	
+
+
+	public Drawable getDrawableForItem(Resources res, int iconID, TileCollection itemTileCollection) {
+		final Bitmap icon = itemTileCollection.getBitmap(iconID);
+		if (density > 1) {
+			return new BitmapDrawable(res, Bitmap.createScaledBitmap(icon, (int)(tileSize*density), (int)(tileSize*density), true));
+		} else {
+			return new BitmapDrawable(res, icon);
+			}
 	}
 
 	public void loadPreloadedTiles(Resources r) {
