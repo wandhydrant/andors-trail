@@ -10,13 +10,23 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="right"
-        android:orientation="vertical" >
+        android:orientation="horizontal" >
 
-        <Spinner
+        <Button
+            android:id="@+id/questlog_includecompleted_button"
+            style="@style/AndorsTrail_Blue_SpinnerEmulator"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="" />
+        <!--
+             <Spinner
             android:id="@+id/questlog_includecompleted"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:prompt="@string/questlog_includecompleted_prompt" />
+        -->
     </LinearLayout>
 
     <LinearLayout

@@ -33,7 +33,7 @@
                 android:layout_height="wrap_content"
                 android:text=""
                 android:textSize="0dp"
-                android:drawableTop="@drawable/char_hero"
+                android:drawableTop="@drawable/char_hero_large"
                 android:checked="true"/>
             
              <ToggleButton 
@@ -43,7 +43,7 @@
                 android:layout_height="wrap_content"
                 android:text=""
                 android:textSize="0dp"
-                android:drawableTop="@drawable/char_hero_maksiu_girl_01"/>
+                android:drawableTop="@drawable/char_hero_maksiu_girl_01_large"/>
             
              <ToggleButton 
                 android:id="@+id/newgame_sprite2"
@@ -52,7 +52,7 @@
                 android:layout_height="wrap_content"
                 android:text=""
                 android:textSize="0dp"
-                android:drawableTop="@drawable/char_hero_maksiu_boy_01"/>
+                android:drawableTop="@drawable/char_hero_maksiu_boy_01_large"/>
             
             
         </RadioGroup>        

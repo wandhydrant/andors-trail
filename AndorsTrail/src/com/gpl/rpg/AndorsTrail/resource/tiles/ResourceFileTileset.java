@@ -1,9 +1,9 @@
 package com.gpl.rpg.AndorsTrail.resource.tiles;
 
+import android.graphics.Matrix;
+
 import com.gpl.rpg.AndorsTrail.AndorsTrailApplication;
 import com.gpl.rpg.AndorsTrail.util.Size;
-
-import android.graphics.Matrix;
 
 public final class ResourceFileTileset {
 	public final int resourceID;

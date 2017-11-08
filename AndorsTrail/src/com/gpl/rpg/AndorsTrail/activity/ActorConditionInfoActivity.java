@@ -1,12 +1,5 @@
 package com.gpl.rpg.AndorsTrail.activity;
 
-import com.gpl.rpg.AndorsTrail.AndorsTrailApplication;
-import com.gpl.rpg.AndorsTrail.R;
-import com.gpl.rpg.AndorsTrail.context.WorldContext;
-import com.gpl.rpg.AndorsTrail.model.ability.ActorConditionType;
-import com.gpl.rpg.AndorsTrail.view.AbilityModifierInfoView;
-import com.gpl.rpg.AndorsTrail.view.ItemEffectsView_OnUse;
-
 import android.app.Activity;
 import android.content.res.Resources;
 import android.os.Bundle;
@@ -16,6 +9,13 @@ import android.view.Window;
 import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+
+import com.gpl.rpg.AndorsTrail.AndorsTrailApplication;
+import com.gpl.rpg.AndorsTrail.R;
+import com.gpl.rpg.AndorsTrail.context.WorldContext;
+import com.gpl.rpg.AndorsTrail.model.ability.ActorConditionType;
+import com.gpl.rpg.AndorsTrail.view.AbilityModifierInfoView;
+import com.gpl.rpg.AndorsTrail.view.ItemEffectsView_OnUse;
 
 public final class ActorConditionInfoActivity extends Activity {
 

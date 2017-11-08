@@ -1,12 +1,5 @@
 package com.gpl.rpg.AndorsTrail.activity;
 
-import com.gpl.rpg.AndorsTrail.AndorsTrailApplication;
-import com.gpl.rpg.AndorsTrail.R;
-import com.gpl.rpg.AndorsTrail.WorldSetup;
-import com.gpl.rpg.AndorsTrail.WorldSetup.OnResourcesLoadedListener;
-import com.gpl.rpg.AndorsTrail.WorldSetup.OnSceneLoadedListener;
-import com.gpl.rpg.AndorsTrail.savegames.Savegames;
-
 import android.app.Activity;
 import android.app.Dialog;
 import android.app.ProgressDialog;
@@ -14,6 +7,14 @@ import android.content.DialogInterface;
 import android.content.DialogInterface.OnDismissListener;
 import android.content.Intent;
 import android.os.Bundle;
+
+import com.gpl.rpg.AndorsTrail.AndorsTrailApplication;
+import com.gpl.rpg.AndorsTrail.R;
+import com.gpl.rpg.AndorsTrail.WorldSetup;
+import com.gpl.rpg.AndorsTrail.WorldSetup.OnResourcesLoadedListener;
+import com.gpl.rpg.AndorsTrail.WorldSetup.OnSceneLoadedListener;
+import com.gpl.rpg.AndorsTrail.savegames.Savegames;
+import com.gpl.rpg.AndorsTrail.view.CustomDialogFactory;
 
 public final class LoadingActivity extends Activity implements OnResourcesLoadedListener, OnSceneLoadedListener {
 
@@ -78,15 +79,15 @@ public final class LoadingActivity extends Activity implements OnResourcesLoaded
 //		});
 //		d.show();
 		
-		final Dialog d = CustomDialog.createDialog(this, getResources().getString(R.string.dialog_loading_failed_title), null, getResources().getString(messageResourceID), null, true);
-		CustomDialog.addDismissButton(d, android.R.string.ok);
-		CustomDialog.setDismissListener(d, new OnDismissListener() {
+		final Dialog d = CustomDialogFactory.createDialog(this, getResources().getString(R.string.dialog_loading_failed_title), null, getResources().getString(messageResourceID), null, true);
+		CustomDialogFactory.addDismissButton(d, android.R.string.ok);
+		CustomDialogFactory.setDismissListener(d, new OnDismissListener() {
 			@Override
 			public void onDismiss(DialogInterface dialog) {
 				LoadingActivity.this.finish();
 			}
 		});
-		CustomDialog.show(d);
+		CustomDialogFactory.show(d);
 		
 	}
 }

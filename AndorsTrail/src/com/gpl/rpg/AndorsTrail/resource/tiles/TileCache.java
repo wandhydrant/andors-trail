@@ -7,12 +7,12 @@ import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map.Entry;
 
-import com.gpl.rpg.AndorsTrail.util.LruCache;
-
 import android.content.res.Resources;
 import android.graphics.Bitmap;
 import android.util.SparseArray;
 import android.util.SparseIntArray;
+
+import com.gpl.rpg.AndorsTrail.util.LruCache;
 
 public final class TileCache {
 

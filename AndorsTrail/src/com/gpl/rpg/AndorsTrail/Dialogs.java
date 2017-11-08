@@ -24,7 +24,6 @@ import android.widget.Toast;
 import com.gpl.rpg.AndorsTrail.activity.ActorConditionInfoActivity;
 import com.gpl.rpg.AndorsTrail.activity.BulkSelectionInterface;
 import com.gpl.rpg.AndorsTrail.activity.ConversationActivity;
-import com.gpl.rpg.AndorsTrail.activity.CustomDialog;
 import com.gpl.rpg.AndorsTrail.activity.ItemInfoActivity;
 import com.gpl.rpg.AndorsTrail.activity.LevelUpActivity;
 import com.gpl.rpg.AndorsTrail.activity.LoadSaveActivity;
@@ -42,6 +41,7 @@ import com.gpl.rpg.AndorsTrail.model.item.Inventory;
 import com.gpl.rpg.AndorsTrail.model.item.ItemType;
 import com.gpl.rpg.AndorsTrail.model.item.Loot;
 import com.gpl.rpg.AndorsTrail.model.map.MapObject;
+import com.gpl.rpg.AndorsTrail.view.CustomDialogFactory;
 import com.gpl.rpg.AndorsTrail.view.ItemContainerAdapter;
 
 public final class Dialogs {
@@ -51,14 +51,14 @@ public final class Dialogs {
 	}
 	private static void showDialogAndPause(Dialog d, final ControllerContext context, final OnDismissListener onDismiss) {
 		context.gameRoundController.pause();
-		CustomDialog.setDismissListener(d, new OnDismissListener() {
+		CustomDialogFactory.setDismissListener(d, new OnDismissListener() {
 			@Override
 			public void onDismiss(DialogInterface arg0) {
 				if (onDismiss != null) onDismiss.onDismiss(arg0);
 				context.gameRoundController.resume();
 			}
 		});
-		CustomDialog.show(d);
+		CustomDialogFactory.show(d);
 	}
 
 	public static void showKeyArea(final MainActivity currentActivity, final ControllerContext context, String phraseID) {
@@ -190,7 +190,7 @@ public final class Dialogs {
 //		itemList.setPadding(20, 0, 20, 20);
 		itemList.setAdapter(new ItemContainerAdapter(mainActivity, world.tileManager, combinedLoot.items, world.model.player));
 
-		final Dialog d = CustomDialog.createDialog(mainActivity, 
+		final Dialog d = CustomDialogFactory.createDialog(mainActivity, 
 				mainActivity.getResources().getString(title), 
 				mainActivity.getResources().getDrawable(R.drawable.ui_icon_equipment), 
 				msg, 
@@ -223,14 +223,14 @@ public final class Dialogs {
 			}
 		});
 
-		CustomDialog.addButton(d, R.string.dialog_loot_pickall, new View.OnClickListener() {
+		CustomDialogFactory.addButton(d, R.string.dialog_loot_pickall, new View.OnClickListener() {
 			@Override
 			public void onClick(View v) {
 				controllers.itemController.pickupAll(lootBags);
 			}
 		});
 		
-		CustomDialog.addDismissButton(d, R.string.dialog_close);
+		CustomDialogFactory.addDismissButton(d, R.string.dialog_close);
 		
 		showDialogAndPause(d, controllers, new OnDismissListener() {
 			@Override
@@ -270,21 +270,21 @@ public final class Dialogs {
 //		
 //		.setNegativeButton(android.R.string.no, null)
 //		.create();
-		final Dialog d = CustomDialog.createDialog(currentActivity, 
+		final Dialog d = CustomDialogFactory.createDialog(currentActivity, 
 				currentActivity.getResources().getString(R.string.dialog_rest_title), 
 				null, 
 				currentActivity.getResources().getString(R.string.dialog_rest_confirm_message), 
 				null, 
 				true);
 		
-		CustomDialog.addButton(d, android.R.string.yes, new View.OnClickListener() {
+		CustomDialogFactory.addButton(d, android.R.string.yes, new View.OnClickListener() {
 			@Override
 			public void onClick(View v) {
 				controllerContext.mapController.rest(area);
 			}
 		});
 		
-		CustomDialog.addDismissButton(d, android.R.string.no);
+		CustomDialogFactory.addDismissButton(d, android.R.string.no);
 
 		showDialogAndPause(d, controllerContext);
 	}
@@ -294,7 +294,7 @@ public final class Dialogs {
 //		.setMessage(R.string.dialog_rest_message)
 //		.setNeutralButton(android.R.string.ok, null)
 //		.create();
-		final Dialog d = CustomDialog.createDialog(currentActivity, 
+		final Dialog d = CustomDialogFactory.createDialog(currentActivity, 
 				currentActivity.getResources().getString(R.string.dialog_rest_title), 
 				null, 
 				currentActivity.getResources().getString(R.string.dialog_rest_message), 
@@ -302,7 +302,7 @@ public final class Dialogs {
 				true);
 		
 		
-		CustomDialog.addDismissButton(d, android.R.string.ok);
+		CustomDialogFactory.addDismissButton(d, android.R.string.ok);
 
 		showDialogAndPause(d, controllerContext);
 	}
@@ -314,7 +314,7 @@ public final class Dialogs {
 //		.setNeutralButton(android.R.string.ok, null)
 //		.show();
 		
-		final Dialog d = CustomDialog.createDialog(currentActivity, 
+		final Dialog d = CustomDialogFactory.createDialog(currentActivity, 
 				currentActivity.getResources().getString(R.string.dialog_newversion_title), 
 				null, 
 				currentActivity.getResources().getString(R.string.dialog_newversion_message), 
@@ -322,9 +322,9 @@ public final class Dialogs {
 				true);
 		
 		
-		CustomDialog.addDismissButton(d, android.R.string.ok);
+		CustomDialogFactory.addDismissButton(d, android.R.string.ok);
 
-		CustomDialog.show(d);
+		CustomDialogFactory.show(d);
 	}
 
 	public static boolean showSave(final Activity mainActivity, final ControllerContext controllerContext, final WorldContext world) {
@@ -403,7 +403,7 @@ public final class Dialogs {
 			msg = context.getResources().getString(R.string.combat_log_noentries);
 		}
 
-		final Dialog d = CustomDialog.createDialog(context, 
+		final Dialog d = CustomDialogFactory.createDialog(context, 
 				context.getResources().getString(R.string.combat_log_title), 
 				context.getResources().getDrawable(R.drawable.ui_icon_combat), 
 				msg, 
@@ -411,7 +411,7 @@ public final class Dialogs {
 				true);
 		
 		
-		CustomDialog.addDismissButton(d, R.string.dialog_close);
+		CustomDialogFactory.addDismissButton(d, R.string.dialog_close);
 		
 		showDialogAndPause(d, controllerContext);
 	}

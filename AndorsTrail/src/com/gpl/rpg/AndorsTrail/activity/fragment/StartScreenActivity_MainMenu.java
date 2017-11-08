@@ -1,19 +1,5 @@
 package com.gpl.rpg.AndorsTrail.activity.fragment;
 
-import com.gpl.rpg.AndorsTrail.AndorsTrailApplication;
-import com.gpl.rpg.AndorsTrail.AndorsTrailPreferences;
-import com.gpl.rpg.AndorsTrail.Dialogs;
-import com.gpl.rpg.AndorsTrail.R;
-import com.gpl.rpg.AndorsTrail.WorldSetup;
-import com.gpl.rpg.AndorsTrail.activity.AboutActivity;
-import com.gpl.rpg.AndorsTrail.activity.CustomDialog;
-import com.gpl.rpg.AndorsTrail.activity.LoadingActivity;
-import com.gpl.rpg.AndorsTrail.activity.Preferences;
-import com.gpl.rpg.AndorsTrail.controller.Constants;
-import com.gpl.rpg.AndorsTrail.resource.tiles.TileManager;
-import com.gpl.rpg.AndorsTrail.savegames.Savegames;
-import com.gpl.rpg.AndorsTrail.savegames.Savegames.FileHeader;
-
 import android.app.Activity;
 import android.app.Dialog;
 import android.content.Intent;
@@ -29,6 +15,20 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.gpl.rpg.AndorsTrail.AndorsTrailApplication;
+import com.gpl.rpg.AndorsTrail.AndorsTrailPreferences;
+import com.gpl.rpg.AndorsTrail.Dialogs;
+import com.gpl.rpg.AndorsTrail.R;
+import com.gpl.rpg.AndorsTrail.WorldSetup;
+import com.gpl.rpg.AndorsTrail.activity.AboutActivity;
+import com.gpl.rpg.AndorsTrail.activity.LoadingActivity;
+import com.gpl.rpg.AndorsTrail.activity.Preferences;
+import com.gpl.rpg.AndorsTrail.controller.Constants;
+import com.gpl.rpg.AndorsTrail.resource.tiles.TileManager;
+import com.gpl.rpg.AndorsTrail.savegames.Savegames;
+import com.gpl.rpg.AndorsTrail.savegames.Savegames.FileHeader;
+import com.gpl.rpg.AndorsTrail.view.CustomDialogFactory;
 
 public class StartScreenActivity_MainMenu extends Fragment {
 
@@ -204,21 +204,21 @@ public class StartScreenActivity_MainMenu extends Fragment {
 //		.create().show();
 //		
 //		
-		final Dialog d = CustomDialog.createDialog(getActivity(),
+		final Dialog d = CustomDialogFactory.createDialog(getActivity(),
 				getString(R.string.startscreen_newgame), 
 				getResources().getDrawable(android.R.drawable.ic_delete), 
 				getResources().getString(R.string.startscreen_newgame_confirm),
 				null,
 				true);
-		CustomDialog.addButton(d, android.R.string.ok, new View.OnClickListener() {
+		CustomDialogFactory.addButton(d, android.R.string.ok, new View.OnClickListener() {
 			@Override
 			public void onClick(View v) {
 				createNewGame();
 			}
 		});
-		CustomDialog.addDismissButton(d, android.R.string.cancel);
+		CustomDialogFactory.addDismissButton(d, android.R.string.cancel);
 		
-		CustomDialog.show(d);
+		CustomDialogFactory.show(d);
 		
 	}
 	

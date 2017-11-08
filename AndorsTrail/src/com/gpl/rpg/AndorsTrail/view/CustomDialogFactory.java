@@ -1,9 +1,5 @@
-package com.gpl.rpg.AndorsTrail.activity;
+package com.gpl.rpg.AndorsTrail.view;
 
-import com.gpl.rpg.AndorsTrail.AndorsTrailApplication;
-import com.gpl.rpg.AndorsTrail.R;
-
-import android.app.Activity;
 import android.app.Dialog;
 import android.content.Context;
 import android.content.DialogInterface.OnDismissListener;
@@ -13,7 +9,6 @@ import android.view.ContextThemeWrapper;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.View.OnClickListener;
-import android.view.View.OnTouchListener;
 import android.view.ViewGroup;
 import android.view.ViewGroup.LayoutParams;
 import android.view.Window;
@@ -21,10 +16,20 @@ import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.TextView;
 
-public class CustomDialog {
+import com.gpl.rpg.AndorsTrail.AndorsTrailApplication;
+import com.gpl.rpg.AndorsTrail.R;
+
+public class CustomDialogFactory {
 	
-	public static Dialog createDialog(final Context context, String title, Drawable icon, String desc, View content, boolean hasButtons) {
-		final Dialog dialog = new Dialog(new ContextThemeWrapper(context, R.style.AndorsTrailStyle_Dialog)) {
+	public static class CustomDialog extends Dialog {
+		public CustomDialog(Context context) {
+			super(context);
+		}
+		
+	}
+	
+	public static CustomDialog createDialog(final Context context, String title, Drawable icon, String desc, View content, boolean hasButtons) {
+		final CustomDialog dialog = new CustomDialog(new ContextThemeWrapper(context, R.style.AndorsTrailStyle_Dialog)) {
 			@Override
 			public boolean onTouchEvent(MotionEvent event) {
 				Rect r = new Rect();
@@ -50,6 +55,23 @@ public class CustomDialog {
 			dialog.getWindow().setFlags(0, WindowManager.LayoutParams.FLAG_FULLSCREEN);
 		}
 		
+		setTitle(dialog, title, icon);
+		
+		setDesc(dialog, desc);
+		
+		setContent(dialog, content);
+		
+		ViewGroup buttonsHolder = (ViewGroup) dialog.findViewById(R.id.dialog_button_container);
+		if (hasButtons) {
+			buttonsHolder.setVisibility(View.VISIBLE);
+		} else {
+			buttonsHolder.setVisibility(View.GONE);
+		}
+		
+		return dialog;
+	}
+	
+	public static CustomDialog setTitle(final CustomDialog dialog, String title, Drawable icon) {
 		TextView titleView = (TextView) dialog.findViewById(R.id.dialog_title);
 		if (title != null || icon != null) {
 			titleView.setText(title);
@@ -58,7 +80,10 @@ public class CustomDialog {
 		} else {
 			titleView.setVisibility(View.GONE);
 		}
-		
+		return dialog;
+	}
+	
+	public static CustomDialog setDesc(final CustomDialog dialog, String desc) {
 		TextView descView = (TextView) dialog.findViewById(R.id.dialog_description);
 		ViewGroup descHolder = (ViewGroup) dialog.findViewById(R.id.dialog_description_container);
 		if (desc != null) {
@@ -68,7 +93,10 @@ public class CustomDialog {
 		} else {
 			descHolder.setVisibility(View.GONE);
 		}
-		
+		return dialog;
+	}
+	
+	public static CustomDialog setContent(final CustomDialog dialog, View content) {
 		ViewGroup contentHolder = (ViewGroup) dialog.findViewById(R.id.dialog_content_container);
 		if (content != null) {
 			contentHolder.addView(content);
@@ -76,14 +104,6 @@ public class CustomDialog {
 		} else {
 			contentHolder.setVisibility(View.GONE);
 		}
-		
-		ViewGroup buttonsHolder = (ViewGroup) dialog.findViewById(R.id.dialog_button_container);
-		if (hasButtons) {
-			buttonsHolder.setVisibility(View.VISIBLE);
-		} else {
-			buttonsHolder.setVisibility(View.GONE);
-		}
-		
 		return dialog;
 	}
 	
@@ -111,7 +131,7 @@ public class CustomDialog {
 	}
 	
 	public static Dialog addDismissButton(final Dialog dialog, int textId) {
-		return CustomDialog.addButton(dialog, textId, new OnClickListener() {
+		return CustomDialogFactory.addButton(dialog, textId, new OnClickListener() {
 			
 			@Override
 			public void onClick(View v) {

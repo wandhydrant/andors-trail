@@ -59,8 +59,8 @@
 
     <style name="AndorsTrail_Blue_List" parent="android:style/Widget.ListView">
         <item name="android:background">@drawable/ui_blue_stdframe</item>
-        <item name="android:divider">@android:color/transparent</item>
-        <item name="android:dividerHeight">1dp</item>
+        <item name="android:divider">@drawable/ui_blue_listseparator</item>
+        <!-- <item name="android:dividerHeight">1dp</item> -->
     </style>
 
     <style name="AndorsTrail_Blue_TextButton" parent="android:style/Widget.Button">
@@ -113,7 +113,7 @@
         <item name="android:textColor">@color/ui_blue_textbutton_textcolor</item>
         <item name="android:textAppearanceLarge">@style/AndorsTrail_Blue_TextAppearance.ListItemTitle</item>
         <item name="android:textAppearanceSmall">@style/AndorsTrail_Blue_TextAppearance.ListItemSubtitle</item>
-        <item name="android:groupIndicator">@drawable/ui_blue_radiobutton</item>
+        <item name="android:groupIndicator">@drawable/ui_blue_groupindicator</item>
     </style>
     
     <style name="AndorsTrail_Blue_PopupMenu" parent="android:style/Widget.PopupMenu">
@@ -207,7 +207,7 @@
     <style name="textWithIconInList" parent="android:Widget.TextView">
         <item name="android:drawablePadding">@dimen/dialog_iconpadding_right</item>
         <item name="android:gravity">center_vertical</item>
-        <item name="android:background">@drawable/ui_blue_spinner_list_bg</item>
+        <!-- <item name="android:background">@drawable/ui_blue_spinner_list_bg</item> -->
         <item name="android:textColor">@color/ui_blue_textbutton_textcolor</item>
     </style>
     

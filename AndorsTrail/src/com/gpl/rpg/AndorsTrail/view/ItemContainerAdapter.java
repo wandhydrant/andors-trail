@@ -1,5 +1,11 @@
 package com.gpl.rpg.AndorsTrail.view;
 
+import android.content.Context;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.ArrayAdapter;
+import android.widget.TextView;
+
 import com.gpl.rpg.AndorsTrail.R;
 import com.gpl.rpg.AndorsTrail.controller.ItemController;
 import com.gpl.rpg.AndorsTrail.model.actor.Player;
@@ -7,12 +13,6 @@ import com.gpl.rpg.AndorsTrail.model.item.ItemContainer;
 import com.gpl.rpg.AndorsTrail.model.item.ItemContainer.ItemEntry;
 import com.gpl.rpg.AndorsTrail.resource.tiles.TileCollection;
 import com.gpl.rpg.AndorsTrail.resource.tiles.TileManager;
-
-import android.content.Context;
-import android.view.View;
-import android.view.ViewGroup;
-import android.widget.ArrayAdapter;
-import android.widget.TextView;
 
 public class ItemContainerAdapter extends ArrayAdapter<ItemEntry> {
 	private final TileManager tileManager;

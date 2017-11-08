@@ -10,6 +10,8 @@ import java.util.HashSet;
 import java.util.LinkedList;
 import java.util.List;
 
+import android.content.res.Resources;
+
 import com.gpl.rpg.AndorsTrail.AndorsTrailApplication;
 import com.gpl.rpg.AndorsTrail.model.actor.MonsterType;
 import com.gpl.rpg.AndorsTrail.model.actor.MonsterTypeCollection;
@@ -31,8 +33,6 @@ import com.gpl.rpg.AndorsTrail.util.CoordRect;
 import com.gpl.rpg.AndorsTrail.util.L;
 import com.gpl.rpg.AndorsTrail.util.Range;
 import com.gpl.rpg.AndorsTrail.util.Size;
-
-import android.content.res.Resources;
 
 public final class TMXMapTranslator {
 	private final ArrayList<TMXObjectMap> maps = new ArrayList<TMXObjectMap>();

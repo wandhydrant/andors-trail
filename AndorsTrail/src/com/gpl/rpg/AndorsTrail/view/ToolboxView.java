@@ -1,14 +1,5 @@
 package com.gpl.rpg.AndorsTrail.view;
 
-import com.gpl.rpg.AndorsTrail.AndorsTrailApplication;
-import com.gpl.rpg.AndorsTrail.AndorsTrailPreferences;
-import com.gpl.rpg.AndorsTrail.Dialogs;
-import com.gpl.rpg.AndorsTrail.R;
-import com.gpl.rpg.AndorsTrail.context.ControllerContext;
-import com.gpl.rpg.AndorsTrail.context.WorldContext;
-import com.gpl.rpg.AndorsTrail.controller.WorldMapController;
-import com.gpl.rpg.AndorsTrail.resource.tiles.TileManager;
-
 import android.app.Activity;
 import android.content.Context;
 import android.content.res.Resources;
@@ -23,6 +14,15 @@ import android.view.animation.Animation.AnimationListener;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageButton;
 import android.widget.LinearLayout;
+
+import com.gpl.rpg.AndorsTrail.AndorsTrailApplication;
+import com.gpl.rpg.AndorsTrail.AndorsTrailPreferences;
+import com.gpl.rpg.AndorsTrail.Dialogs;
+import com.gpl.rpg.AndorsTrail.R;
+import com.gpl.rpg.AndorsTrail.context.ControllerContext;
+import com.gpl.rpg.AndorsTrail.context.WorldContext;
+import com.gpl.rpg.AndorsTrail.controller.WorldMapController;
+import com.gpl.rpg.AndorsTrail.resource.tiles.TileManager;
 
 public final class ToolboxView extends LinearLayout implements OnClickListener {
 	private final WorldContext world;

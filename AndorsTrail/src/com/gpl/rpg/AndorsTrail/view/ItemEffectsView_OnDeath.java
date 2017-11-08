@@ -3,17 +3,17 @@ package com.gpl.rpg.AndorsTrail.view;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-import com.gpl.rpg.AndorsTrail.R;
-import com.gpl.rpg.AndorsTrail.model.ability.ActorConditionEffect;
-import com.gpl.rpg.AndorsTrail.model.ability.traits.StatsModifierTraits;
-import com.gpl.rpg.AndorsTrail.model.item.ItemTraits_OnUse;
-
 import android.content.Context;
 import android.content.res.Resources;
 import android.util.AttributeSet;
 import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+
+import com.gpl.rpg.AndorsTrail.R;
+import com.gpl.rpg.AndorsTrail.model.ability.ActorConditionEffect;
+import com.gpl.rpg.AndorsTrail.model.ability.traits.StatsModifierTraits;
+import com.gpl.rpg.AndorsTrail.model.item.ItemTraits_OnUse;
 
 public final class ItemEffectsView_OnDeath extends LinearLayout {
 	private final LinearLayout itemeffect_ondeath_ontarget_list;

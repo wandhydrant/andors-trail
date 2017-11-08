@@ -5,11 +5,11 @@ import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
 
-import com.gpl.rpg.AndorsTrail.R;
-import com.gpl.rpg.AndorsTrail.util.L;
-
 import android.content.res.AssetManager;
 import android.content.res.Resources;
+
+import com.gpl.rpg.AndorsTrail.R;
+import com.gpl.rpg.AndorsTrail.util.L;
 
 public final class TranslationLoader {
 	private final BinaryMoFileParser parser;

@@ -2,19 +2,6 @@ package com.gpl.rpg.AndorsTrail.activity.fragment;
 
 import java.util.ArrayList;
 
-import com.gpl.rpg.AndorsTrail.AndorsTrailApplication;
-import com.gpl.rpg.AndorsTrail.Dialogs;
-import com.gpl.rpg.AndorsTrail.R;
-import com.gpl.rpg.AndorsTrail.context.WorldContext;
-import com.gpl.rpg.AndorsTrail.model.actor.Player;
-import com.gpl.rpg.AndorsTrail.model.item.Inventory;
-import com.gpl.rpg.AndorsTrail.model.item.ItemTraits_OnHitReceived;
-import com.gpl.rpg.AndorsTrail.model.item.ItemTraits_OnUse;
-import com.gpl.rpg.AndorsTrail.model.item.ItemType;
-import com.gpl.rpg.AndorsTrail.view.ItemEffectsView;
-import com.gpl.rpg.AndorsTrail.view.RangeBar;
-import com.gpl.rpg.AndorsTrail.view.TraitsInfoView;
-
 import android.content.Intent;
 import android.content.res.Resources;
 import android.os.Bundle;
@@ -28,6 +15,20 @@ import android.widget.TableLayout;
 import android.widget.TableRow;
 import android.widget.TextView;
 
+import com.gpl.rpg.AndorsTrail.AndorsTrailApplication;
+import com.gpl.rpg.AndorsTrail.Dialogs;
+import com.gpl.rpg.AndorsTrail.R;
+import com.gpl.rpg.AndorsTrail.context.WorldContext;
+import com.gpl.rpg.AndorsTrail.model.actor.HeroCollection;
+import com.gpl.rpg.AndorsTrail.model.actor.Player;
+import com.gpl.rpg.AndorsTrail.model.item.Inventory;
+import com.gpl.rpg.AndorsTrail.model.item.ItemTraits_OnHitReceived;
+import com.gpl.rpg.AndorsTrail.model.item.ItemTraits_OnUse;
+import com.gpl.rpg.AndorsTrail.model.item.ItemType;
+import com.gpl.rpg.AndorsTrail.view.ItemEffectsView;
+import com.gpl.rpg.AndorsTrail.view.RangeBar;
+import com.gpl.rpg.AndorsTrail.view.TraitsInfoView;
+
 public final class HeroinfoActivity_Stats extends Fragment {
 
 	private static final int INTENTREQUEST_LEVELUP = 6;
@@ -37,7 +38,6 @@ public final class HeroinfoActivity_Stats extends Fragment {
 
 	private View view;
 	private Button levelUpButton;
-//	private TextView heroinfo_ap;
 	private TextView heroinfo_reequip_cost;
 	private TextView heroinfo_useitem_cost;
 	private TextView heroinfo_level;
@@ -69,10 +69,9 @@ public final class HeroinfoActivity_Stats extends Fragment {
 
 		TextView tv = (TextView) v.findViewById(R.id.heroinfo_title);
 		tv.setText(player.getName());
-		world.tileManager.setImageViewTile(getResources(), tv, player);
+		tv.setCompoundDrawablesWithIntrinsicBounds(HeroCollection.getHeroLargeSprite(player.iconID), 0, 0, 0);
 
 		heroinfo_container = (ViewGroup) v.findViewById(R.id.heroinfo_container);
-//		heroinfo_ap = (TextView) v.findViewById(R.id.heroinfo_ap);
 		heroinfo_reequip_cost = (TextView) v.findViewById(R.id.heroinfo_reequip_cost);
 		heroinfo_useitem_cost = (TextView) v.findViewById(R.id.heroinfo_useitem_cost);
 		basetraitsinfo_max_hp = (TextView) v.findViewById(R.id.basetraitsinfo_max_hp);

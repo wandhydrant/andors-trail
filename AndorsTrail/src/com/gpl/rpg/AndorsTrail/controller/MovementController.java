@@ -1,5 +1,8 @@
 package com.gpl.rpg.AndorsTrail.controller;
 
+import android.content.res.Resources;
+import android.os.AsyncTask;
+
 import com.gpl.rpg.AndorsTrail.AndorsTrailPreferences;
 import com.gpl.rpg.AndorsTrail.context.ControllerContext;
 import com.gpl.rpg.AndorsTrail.context.WorldContext;
@@ -17,9 +20,6 @@ import com.gpl.rpg.AndorsTrail.resource.tiles.TileCollection;
 import com.gpl.rpg.AndorsTrail.util.Coord;
 import com.gpl.rpg.AndorsTrail.util.L;
 import com.gpl.rpg.AndorsTrail.util.TimedMessageTask;
-
-import android.content.res.Resources;
-import android.os.AsyncTask;
 
 public final class MovementController implements TimedMessageTask.Callback {
 	private final ControllerContext controllers;

@@ -1,14 +1,14 @@
 package com.gpl.rpg.AndorsTrail.activity;
 
-import com.gpl.rpg.AndorsTrail.AndorsTrailApplication;
-import com.gpl.rpg.AndorsTrail.R;
-import com.gpl.rpg.AndorsTrail.activity.fragment.ShopActivity_Buy;
-import com.gpl.rpg.AndorsTrail.activity.fragment.ShopActivity_Sell;
-
 import android.content.res.Resources;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentTabHost;
+
+import com.gpl.rpg.AndorsTrail.AndorsTrailApplication;
+import com.gpl.rpg.AndorsTrail.R;
+import com.gpl.rpg.AndorsTrail.activity.fragment.ShopActivity_Buy;
+import com.gpl.rpg.AndorsTrail.activity.fragment.ShopActivity_Sell;
 
 public final class ShopActivity extends FragmentActivity {
 

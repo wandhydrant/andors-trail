@@ -1,11 +1,5 @@
 package com.gpl.rpg.AndorsTrail.activity;
 
-import com.gpl.rpg.AndorsTrail.AndorsTrailApplication;
-import com.gpl.rpg.AndorsTrail.R;
-import com.gpl.rpg.AndorsTrail.context.WorldContext;
-import com.gpl.rpg.AndorsTrail.controller.ItemController;
-import com.gpl.rpg.AndorsTrail.model.item.ItemType;
-
 import android.app.Activity;
 import android.app.Dialog;
 import android.content.Intent;
@@ -22,6 +16,13 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.SeekBar;
 import android.widget.TextView;
+
+import com.gpl.rpg.AndorsTrail.AndorsTrailApplication;
+import com.gpl.rpg.AndorsTrail.R;
+import com.gpl.rpg.AndorsTrail.context.WorldContext;
+import com.gpl.rpg.AndorsTrail.controller.ItemController;
+import com.gpl.rpg.AndorsTrail.model.item.ItemType;
+import com.gpl.rpg.AndorsTrail.view.CustomDialogFactory;
 
 /**
  * @author ejwessel
@@ -204,20 +205,20 @@ public final class BulkSelectionInterface extends Activity implements TextWatche
 //									})
 //						.setNegativeButton(android.R.string.no, null)
 //						.show();
-					final Dialog d = CustomDialog.createDialog(v.getContext(),
+					final Dialog d = CustomDialogFactory.createDialog(v.getContext(),
 							v.getContext().getResources().getString(R.string.bulkselection_sell_confirmation_title),
 							v.getContext().getResources().getDrawable(android.R.drawable.ic_dialog_info),
 							message,
 							null,
 							true);
-					CustomDialog.addButton(d, android.R.string.yes,  new View.OnClickListener() {
+					CustomDialogFactory.addButton(d, android.R.string.yes,  new View.OnClickListener() {
 							@Override
 							public void onClick(View v) {
 								itemsResult(intent);
 							}
 					});
-					CustomDialog.addDismissButton(d, android.R.string.no);
-					CustomDialog.show(d);
+					CustomDialogFactory.addDismissButton(d, android.R.string.no);
+					CustomDialogFactory.show(d);
 					
 				} else {
 					itemsResult(intent);

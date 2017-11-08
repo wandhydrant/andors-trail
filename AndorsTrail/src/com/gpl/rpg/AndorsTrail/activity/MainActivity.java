@@ -3,6 +3,20 @@ package com.gpl.rpg.AndorsTrail.activity;
 import java.lang.ref.WeakReference;
 import java.util.Collection;
 
+import android.app.Activity;
+import android.app.Dialog;
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.view.View.OnLongClickListener;
+import android.widget.AdapterView;
+import android.widget.AdapterView.OnItemClickListener;
+import android.widget.ListView;
+import android.widget.RelativeLayout;
+import android.widget.TextView;
+import android.widget.Toast;
+
 import com.gpl.rpg.AndorsTrail.AndorsTrailApplication;
 import com.gpl.rpg.AndorsTrail.AndorsTrailPreferences;
 import com.gpl.rpg.AndorsTrail.Dialogs;
@@ -26,6 +40,7 @@ import com.gpl.rpg.AndorsTrail.resource.tiles.TileCollection;
 import com.gpl.rpg.AndorsTrail.savegames.Savegames;
 import com.gpl.rpg.AndorsTrail.util.Coord;
 import com.gpl.rpg.AndorsTrail.view.CombatView;
+import com.gpl.rpg.AndorsTrail.view.CustomDialogFactory;
 import com.gpl.rpg.AndorsTrail.view.DisplayActiveActorConditionIcons;
 import com.gpl.rpg.AndorsTrail.view.ItemContainerAdapter;
 import com.gpl.rpg.AndorsTrail.view.MainView;
@@ -35,20 +50,6 @@ import com.gpl.rpg.AndorsTrail.view.QuickslotsItemContainerAdapter;
 import com.gpl.rpg.AndorsTrail.view.StatusView;
 import com.gpl.rpg.AndorsTrail.view.ToolboxView;
 import com.gpl.rpg.AndorsTrail.view.VirtualDpadView;
-
-import android.app.Activity;
-import android.app.Dialog;
-import android.content.Intent;
-import android.os.Bundle;
-import android.view.View;
-import android.view.View.OnClickListener;
-import android.view.View.OnLongClickListener;
-import android.widget.AdapterView;
-import android.widget.AdapterView.OnItemClickListener;
-import android.widget.ListView;
-import android.widget.RelativeLayout;
-import android.widget.TextView;
-import android.widget.Toast;
 
 public final class MainActivity
 		extends Activity
@@ -239,7 +240,7 @@ public final class MainActivity
 					final ItemContainerAdapter inventoryListAdapter = new QuickslotsItemContainerAdapter(lv.getContext(), world.tileManager, world.model.player.inventory.usableItems(), world.model.player, wornTiles);
 					lv.setAdapter(inventoryListAdapter);
 
-					final Dialog d = CustomDialog.createDialog(v.getContext(), 
+					final Dialog d = CustomDialogFactory.createDialog(v.getContext(), 
 							v.getResources().getString(R.string.inventory_assign), 
 							v.getResources().getDrawable(R.drawable.ui_icon_equipment), 
 							v.getResources().getString(R.string.inventory_selectitem), view, false);
@@ -262,7 +263,7 @@ public final class MainActivity
 //						}
 //					});
 					
-					CustomDialog.show(d);
+					CustomDialogFactory.show(d);
 //					
 //					dialog.setView(view);
 //					dialog.setCancelable(true);

@@ -1,13 +1,13 @@
 package com.gpl.rpg.AndorsTrail.activity.fragment;
 
+import android.app.Activity;
+import android.content.Intent;
+
 import com.gpl.rpg.AndorsTrail.Dialogs;
 import com.gpl.rpg.AndorsTrail.R;
 import com.gpl.rpg.AndorsTrail.activity.ItemInfoActivity;
 import com.gpl.rpg.AndorsTrail.controller.ItemController;
 import com.gpl.rpg.AndorsTrail.model.item.ItemType;
-
-import android.app.Activity;
-import android.content.Intent;
 
 public final class ShopActivity_Sell extends ShopActivityFragment {
 

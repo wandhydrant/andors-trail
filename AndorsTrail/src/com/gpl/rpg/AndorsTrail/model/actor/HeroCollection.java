@@ -10,7 +10,7 @@ public class HeroCollection {
 
 	//Id in save is the index in the list +1
 	private static final List<HeroDesc> listOfHeroes = new LinkedList<HeroCollection.HeroDesc>();
-	public boolean isInitialized = false;
+	public static boolean isInitialized = false;
 	
 	public static class HeroDesc {
 		int tileIdInSpritesheet, tileIdInManager, smallSpriteResId, largeSpriteResId;
@@ -23,26 +23,26 @@ public class HeroCollection {
 	}
 	
 	static {
-		listOfHeroes.add(new HeroDesc(0, R.drawable.char_hero, R.drawable.char_hero));
-		listOfHeroes.add(new HeroDesc(0, R.drawable.char_hero_maksiu_girl_01, R.drawable.char_hero_maksiu_girl_01));
-		listOfHeroes.add(new HeroDesc(0, R.drawable.char_hero_maksiu_boy_01, R.drawable.char_hero_maksiu_boy_01));
+		listOfHeroes.add(new HeroDesc(0, R.drawable.char_hero, R.drawable.char_hero_large));
+		listOfHeroes.add(new HeroDesc(0, R.drawable.char_hero_maksiu_girl_01, R.drawable.char_hero_maksiu_girl_01_large));
+		listOfHeroes.add(new HeroDesc(0, R.drawable.char_hero_maksiu_boy_01, R.drawable.char_hero_maksiu_boy_01_large));
 	}
 	
-	public int getHeroTileIdForTileManage(int heroId) {
+	public static int getHeroTileIdForTileManage(int heroId) {
 		//Id in save is the index in the list +1
 		heroId--;
 		if (heroId >= listOfHeroes.size()) return -1;
 		return listOfHeroes.get(heroId).tileIdInManager;
 	}
 
-	public int getHeroSmallSpriteId(int heroId) {
+	public static int getHeroSmallSpriteId(int heroId) {
 		//Id in save is the index in the list +1
 		heroId--;
 		if (heroId >= listOfHeroes.size()) return -1;
 		return listOfHeroes.get(heroId).smallSpriteResId;
 	}
 
-	public int getHeroLargeSprite(int heroId) {
+	public static int getHeroLargeSprite(int heroId) {
 		//Id in save is the index in the list +1
 		heroId--;
 		if (heroId >= listOfHeroes.size()) return -1;

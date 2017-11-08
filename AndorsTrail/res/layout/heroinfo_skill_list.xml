@@ -27,19 +27,25 @@
 			android:gravity="right"
 			android:orientation="horizontal">
 
-			<Spinner
-				android:id="@+id/skillList_category_filters"
-				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"
-				android:layout_marginRight="5dp"
-				android:prompt="@string/heroinfo_skill_categories" />
+		    <Button
+                android:id="@+id/skillList_category_filters_button"
+                style="@style/AndorsTrail_Blue_SpinnerEmulator"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:gravity="left"
+                android:text="" />
 
-			<Spinner
-				android:id="@+id/skillList_sort_filters"
-				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"
-				android:prompt="@string/heroinfo_skill_sort" />
-
+            <Button
+                android:id="@+id/skillList_sort_filters_button"
+                style="@style/AndorsTrail_Blue_SpinnerEmulator"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="" />
+		    
 		</LinearLayout>
 	</LinearLayout>
 

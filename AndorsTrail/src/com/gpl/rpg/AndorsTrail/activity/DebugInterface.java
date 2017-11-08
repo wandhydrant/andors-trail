@@ -1,12 +1,5 @@
 package com.gpl.rpg.AndorsTrail.activity;
 
-import com.gpl.rpg.AndorsTrail.AndorsTrailApplication;
-import com.gpl.rpg.AndorsTrail.R;
-import com.gpl.rpg.AndorsTrail.context.ControllerContext;
-import com.gpl.rpg.AndorsTrail.context.WorldContext;
-import com.gpl.rpg.AndorsTrail.model.item.ItemType;
-import com.gpl.rpg.AndorsTrail.model.map.PredefinedMap;
-
 import android.content.Context;
 import android.content.res.Resources;
 import android.view.View;
@@ -14,6 +7,13 @@ import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.RelativeLayout;
 import android.widget.Toast;
+
+import com.gpl.rpg.AndorsTrail.AndorsTrailApplication;
+import com.gpl.rpg.AndorsTrail.R;
+import com.gpl.rpg.AndorsTrail.context.ControllerContext;
+import com.gpl.rpg.AndorsTrail.context.WorldContext;
+import com.gpl.rpg.AndorsTrail.model.item.ItemType;
+import com.gpl.rpg.AndorsTrail.model.map.PredefinedMap;
 
 public final class DebugInterface {
 	private final ControllerContext controllerContext;

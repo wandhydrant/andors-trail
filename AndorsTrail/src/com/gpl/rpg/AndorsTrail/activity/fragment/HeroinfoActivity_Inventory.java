@@ -1,22 +1,6 @@
 package com.gpl.rpg.AndorsTrail.activity.fragment;
 
-import com.gpl.rpg.AndorsTrail.AndorsTrailApplication;
-import com.gpl.rpg.AndorsTrail.Dialogs;
-import com.gpl.rpg.AndorsTrail.R;
-import com.gpl.rpg.AndorsTrail.activity.CustomDialog;
-import com.gpl.rpg.AndorsTrail.activity.ItemInfoActivity;
-import com.gpl.rpg.AndorsTrail.context.ControllerContext;
-import com.gpl.rpg.AndorsTrail.context.WorldContext;
-import com.gpl.rpg.AndorsTrail.controller.ItemController;
-import com.gpl.rpg.AndorsTrail.model.actor.Player;
-import com.gpl.rpg.AndorsTrail.model.item.Inventory;
-import com.gpl.rpg.AndorsTrail.model.item.ItemContainer;
-import com.gpl.rpg.AndorsTrail.model.item.ItemType;
-import com.gpl.rpg.AndorsTrail.resource.tiles.TileCollection;
-import com.gpl.rpg.AndorsTrail.view.ItemContainerAdapter;
-
 import android.app.Activity;
-import android.app.Dialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -31,12 +15,25 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.AdapterView.AdapterContextMenuInfo;
 import android.widget.AdapterView.OnItemClickListener;
-import android.widget.ArrayAdapter;
-import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.ListView;
-import android.widget.Spinner;
 import android.widget.TextView;
+
+import com.gpl.rpg.AndorsTrail.AndorsTrailApplication;
+import com.gpl.rpg.AndorsTrail.Dialogs;
+import com.gpl.rpg.AndorsTrail.R;
+import com.gpl.rpg.AndorsTrail.activity.ItemInfoActivity;
+import com.gpl.rpg.AndorsTrail.context.ControllerContext;
+import com.gpl.rpg.AndorsTrail.context.WorldContext;
+import com.gpl.rpg.AndorsTrail.controller.ItemController;
+import com.gpl.rpg.AndorsTrail.model.actor.HeroCollection;
+import com.gpl.rpg.AndorsTrail.model.actor.Player;
+import com.gpl.rpg.AndorsTrail.model.item.Inventory;
+import com.gpl.rpg.AndorsTrail.model.item.ItemContainer;
+import com.gpl.rpg.AndorsTrail.model.item.ItemType;
+import com.gpl.rpg.AndorsTrail.resource.tiles.TileCollection;
+import com.gpl.rpg.AndorsTrail.view.ItemContainerAdapter;
+import com.gpl.rpg.AndorsTrail.view.SpinnerEmulator;
 
 public final class HeroinfoActivity_Inventory extends Fragment {
 
@@ -55,14 +52,6 @@ public final class HeroinfoActivity_Inventory extends Fragment {
 	private ItemContainerAdapter inventoryUsableListAdapter;
 	private ItemContainerAdapter inventoryQuestListAdapter;
 	private ItemContainerAdapter inventoryOtherListAdapter;
-
-	private Button categoriesButton;
-	private Dialog categoriesDialog = null;
-	private ListView inventorylist_categories;
-
-	private Button sortButton;
-	private Dialog sortDialog = null;
-	private ListView inventorylist_sort;
 
 	private TextView heroinfo_stats_gold;
 	private TextView heroinfo_stats_attack;
@@ -88,6 +77,11 @@ public final class HeroinfoActivity_Inventory extends Fragment {
 		final View v = inflater.inflate(R.layout.heroinfo_inventory, container, false);
 
 		inventoryList = (ListView) v.findViewById(R.id.inventorylist_root);
+		ImageView heroicon = (ImageView) v.findViewById(R.id.heroinfo_inventory_heroicon);
+		heroinfo_stats_gold = (TextView) v.findViewById(R.id.heroinfo_stats_gold);
+		heroinfo_stats_attack = (TextView) v.findViewById(R.id.heroinfo_stats_attack);
+		heroinfo_stats_defense = (TextView) v.findViewById(R.id.heroinfo_stats_defense);
+
 		registerForContextMenu(inventoryList);
 		inventoryList.setOnItemClickListener(new OnItemClickListener() {
 			@Override
@@ -98,43 +92,42 @@ public final class HeroinfoActivity_Inventory extends Fragment {
 			}
 		});
 
-		initialiseInventorySpinners();
-
-		categoriesButton = (Button) v.findViewById(R.id.inventorylist_category_filters_button);
-		categoriesButton.setText(getResources().getStringArray(R.array.inventorylist_category_filters)[world.model.uiSelections.selectedInventoryCategory]);
-		categoriesButton.setOnClickListener(new OnClickListener() {
+		new SpinnerEmulator(v, R.id.inventorylist_category_filters_button, R.array.inventorylist_category_filters, R.string.heroinfo_inventory_categories) {
 			@Override
-			public void onClick(View v) {
-				if (categoriesDialog == null) {
-					categoriesDialog = CustomDialog.createDialog(getActivity(), getActivity().getString(R.string.heroinfo_inventory_categories), null, null, inventorylist_categories, false);
-				}
-				CustomDialog.show(categoriesDialog);
+			public void setValue(int value) {
+				world.model.uiSelections.selectedInventoryCategory = value;
 			}
-		});
-		sortButton = (Button) v.findViewById(R.id.inventorylist_sort_filters_button);
-		sortButton.setText(getResources().getStringArray(R.array.inventorylist_sort_filters)[world.model.uiSelections.selectedInventorySort]);
-		sortButton.setOnClickListener(new OnClickListener() {
 			@Override
-			public void onClick(View v) {
-				if (sortDialog == null) {
-					sortDialog = CustomDialog.createDialog(getActivity(), getActivity().getString(R.string.heroinfo_inventory_sort), null, null, inventorylist_sort, false);
-				}
-				CustomDialog.show(sortDialog);
+			public void selectionChanged(int value) {
+				reloadShownCategory(value);
 			}
-		});
+			@Override
+			public int getValue() {
+				return world.model.uiSelections.selectedInventoryCategory;
+			}
+		};
+		new SpinnerEmulator(v, R.id.inventorylist_sort_filters_button, R.array.inventorylist_sort_filters, R.string.heroinfo_inventory_sort) {
+			@Override
+			public void setValue(int value) {
+				world.model.uiSelections.selectedInventorySort = value;
+			}
+			@Override
+			public void selectionChanged(int value) {
+				reloadShownSort(player.inventory);
+			}
+			@Override
+			public int getValue() {
+				return world.model.uiSelections.selectedInventorySort;
+			}
+		};
 		
 		ItemContainer inv = player.inventory;
 		wornTiles = world.tileManager.loadTilesFor(player.inventory, getResources());
 		inventoryListAdapter = new ItemContainerAdapter(getActivity(), world.tileManager, inv, player, wornTiles);
 		inventoryList.setAdapter(inventoryListAdapter);
 
-		ImageView heroicon = (ImageView) v.findViewById(R.id.heroinfo_inventory_heroicon);
-		world.tileManager.setImageViewTileForPlayer(getResources(), heroicon, player.iconID);
 		
-		
-		heroinfo_stats_gold = (TextView) v.findViewById(R.id.heroinfo_stats_gold);
-		heroinfo_stats_attack = (TextView) v.findViewById(R.id.heroinfo_stats_attack);
-		heroinfo_stats_defense = (TextView) v.findViewById(R.id.heroinfo_stats_defense);
+		heroicon.setImageResource(HeroCollection.getHeroLargeSprite(player.iconID));
 
 		setWearSlot(v, Inventory.WearSlot.weapon, R.id.heroinfo_worn_weapon, R.drawable.equip_weapon);
 		setWearSlot(v, Inventory.WearSlot.shield, R.id.heroinfo_worn_shield, R.drawable.equip_shield);
@@ -148,51 +141,6 @@ public final class HeroinfoActivity_Inventory extends Fragment {
 
 		return v;
 	}
-
-	private void initialiseInventorySpinners() {
-		inventorylist_categories = new ListView(getActivity());//(Spinner) v.findViewById(R.id.inventorylist_category_filters);
-		ArrayAdapter<CharSequence> categoryFilterAdapter = ArrayAdapter.createFromResource(getActivity(), R.array.inventorylist_category_filters, android.R.layout.simple_list_item_1);
-//		categoryFilterAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-		inventorylist_categories.setLayoutParams(new ListView.LayoutParams(ListView.LayoutParams.MATCH_PARENT, ListView.LayoutParams.WRAP_CONTENT));
-		inventorylist_categories.setAdapter(categoryFilterAdapter);
-		inventorylist_categories.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-			
-			@Override
-			public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-				if (world.model.uiSelections.selectedInventoryCategory == position) return;
-				world.model.uiSelections.selectedInventoryCategory = position;
-				categoriesButton.setText(getResources().getStringArray(R.array.inventorylist_category_filters)[position]);
-				categoriesDialog.dismiss();
-				reloadShownCategory(position);
-			}
-		});
-		inventorylist_categories.setSelection(world.model.uiSelections.selectedInventoryCategory);
-
-
-		inventorylist_sort = new ListView(getActivity());//(Spinner) v.findViewById(R.id.inventorylist_sort_filters);
-		ArrayAdapter<CharSequence> sortFilterAdapter = ArrayAdapter.createFromResource(getActivity(), R.array.inventorylist_sort_filters, android.R.layout.simple_list_item_1);
-//		sortFilterAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-		inventorylist_sort.setLayoutParams(new ListView.LayoutParams(ListView.LayoutParams.MATCH_PARENT, ListView.LayoutParams.WRAP_CONTENT));
-		inventorylist_sort.setAdapter(sortFilterAdapter);
-		inventorylist_sort.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-			
-			@Override
-			public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-				if (world.model.uiSelections.selectedInventorySort == position) return;
-				world.model.uiSelections.selectedInventorySort = position;
-				sortButton.setText(getResources().getStringArray(R.array.inventorylist_sort_filters)[position]);
-				sortDialog.dismiss();
-				reloadShownSort(player.inventory);
-			}
-		});
-		inventorylist_sort.setSelection(world.model.uiSelections.selectedInventorySort);
-	}
-
-//	private void setHeroStatsVisiblity(int visibility) {
-//		heroinfo_stats_gold.setVisibility(visibility);
-//		heroinfo_stats_attack.setVisibility(visibility);
-//		heroinfo_stats_defense.setVisibility(visibility);
-//	}
 
 	@Override
 	public void onStart() {

@@ -1,5 +1,14 @@
 package com.gpl.rpg.AndorsTrail.activity;
 
+import android.app.Activity;
+import android.os.Bundle;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.view.ViewGroup;
+import android.view.Window;
+import android.widget.Button;
+import android.widget.TextView;
+
 import com.gpl.rpg.AndorsTrail.AndorsTrailApplication;
 import com.gpl.rpg.AndorsTrail.Dialogs;
 import com.gpl.rpg.AndorsTrail.R;
@@ -9,15 +18,6 @@ import com.gpl.rpg.AndorsTrail.model.actor.Monster;
 import com.gpl.rpg.AndorsTrail.view.ItemEffectsView;
 import com.gpl.rpg.AndorsTrail.view.RangeBar;
 import com.gpl.rpg.AndorsTrail.view.TraitsInfoView;
-
-import android.app.Activity;
-import android.os.Bundle;
-import android.view.View;
-import android.view.View.OnClickListener;
-import android.view.ViewGroup;
-import android.view.Window;
-import android.widget.Button;
-import android.widget.TextView;
 
 public final class MonsterInfoActivity extends Activity {
 

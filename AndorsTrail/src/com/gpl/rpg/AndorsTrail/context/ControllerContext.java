@@ -2,6 +2,8 @@ package com.gpl.rpg.AndorsTrail.context;
 
 import java.lang.ref.WeakReference;
 
+import android.content.res.Resources;
+
 import com.gpl.rpg.AndorsTrail.AndorsTrailApplication;
 import com.gpl.rpg.AndorsTrail.AndorsTrailPreferences;
 import com.gpl.rpg.AndorsTrail.controller.ActorStatsController;
@@ -16,8 +18,6 @@ import com.gpl.rpg.AndorsTrail.controller.MonsterSpawningController;
 import com.gpl.rpg.AndorsTrail.controller.MovementController;
 import com.gpl.rpg.AndorsTrail.controller.SkillController;
 import com.gpl.rpg.AndorsTrail.controller.VisualEffectController;
-
-import android.content.res.Resources;
 
 public final class ControllerContext {
 	//Controllers

@@ -3,14 +3,6 @@ package com.gpl.rpg.AndorsTrail.activity;
 import java.util.Collections;
 import java.util.List;
 
-import com.gpl.rpg.AndorsTrail.AndorsTrailApplication;
-import com.gpl.rpg.AndorsTrail.AndorsTrailPreferences;
-import com.gpl.rpg.AndorsTrail.R;
-import com.gpl.rpg.AndorsTrail.model.ModelContainer;
-import com.gpl.rpg.AndorsTrail.resource.tiles.TileManager;
-import com.gpl.rpg.AndorsTrail.savegames.Savegames;
-import com.gpl.rpg.AndorsTrail.savegames.Savegames.FileHeader;
-
 import android.app.Activity;
 import android.app.Dialog;
 import android.content.Intent;
@@ -21,6 +13,15 @@ import android.view.ViewGroup;
 import android.view.ViewGroup.LayoutParams;
 import android.widget.Button;
 import android.widget.TextView;
+
+import com.gpl.rpg.AndorsTrail.AndorsTrailApplication;
+import com.gpl.rpg.AndorsTrail.AndorsTrailPreferences;
+import com.gpl.rpg.AndorsTrail.R;
+import com.gpl.rpg.AndorsTrail.model.ModelContainer;
+import com.gpl.rpg.AndorsTrail.resource.tiles.TileManager;
+import com.gpl.rpg.AndorsTrail.savegames.Savegames;
+import com.gpl.rpg.AndorsTrail.savegames.Savegames.FileHeader;
+import com.gpl.rpg.AndorsTrail.view.CustomDialogFactory;
 
 public final class LoadSaveActivity extends Activity implements OnClickListener {
 	private boolean isLoading = true;
@@ -144,22 +145,22 @@ public final class LoadSaveActivity extends Activity implements OnClickListener 
 //				})
 //				.setNegativeButton(android.R.string.no, null)
 //				.show();
-			final Dialog d = CustomDialog.createDialog(this, 
+			final Dialog d = CustomDialogFactory.createDialog(this, 
 					title, 
 					getResources().getDrawable(android.R.drawable.ic_dialog_alert), 
 					message, 
 					null, 
 					true);
 			
-			CustomDialog.addButton(d, android.R.string.yes, new View.OnClickListener() {
+			CustomDialogFactory.addButton(d, android.R.string.yes, new View.OnClickListener() {
 					@Override
 					public void onClick(View v) {
 						loadsave(slot);
 					}
 				});
-			CustomDialog.addDismissButton(d, android.R.string.no);
+			CustomDialogFactory.addDismissButton(d, android.R.string.no);
 			
-			CustomDialog.show(d);
+			CustomDialogFactory.show(d);
 		} else {
 			loadsave(slot);
 		}

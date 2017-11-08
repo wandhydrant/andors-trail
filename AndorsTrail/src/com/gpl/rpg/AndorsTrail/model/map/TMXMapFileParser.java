@@ -10,13 +10,13 @@ import java.util.zip.InflaterInputStream;
 
 import org.xmlpull.v1.XmlPullParserException;
 
+import android.content.res.Resources;
+import android.content.res.XmlResourceParser;
+
 import com.gpl.rpg.AndorsTrail.AndorsTrailApplication;
 import com.gpl.rpg.AndorsTrail.util.Base64;
 import com.gpl.rpg.AndorsTrail.util.L;
 import com.gpl.rpg.AndorsTrail.util.XmlResourceParserUtils;
-
-import android.content.res.Resources;
-import android.content.res.XmlResourceParser;
 
 public final class TMXMapFileParser {
 	private static final int TILESIZE = 32;

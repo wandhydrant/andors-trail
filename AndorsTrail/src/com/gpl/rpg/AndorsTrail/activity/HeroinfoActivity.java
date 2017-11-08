@@ -1,13 +1,5 @@
 package com.gpl.rpg.AndorsTrail.activity;
 
-import com.gpl.rpg.AndorsTrail.AndorsTrailApplication;
-import com.gpl.rpg.AndorsTrail.R;
-import com.gpl.rpg.AndorsTrail.activity.fragment.HeroinfoActivity_Inventory;
-import com.gpl.rpg.AndorsTrail.activity.fragment.HeroinfoActivity_Quests;
-import com.gpl.rpg.AndorsTrail.activity.fragment.HeroinfoActivity_Skills;
-import com.gpl.rpg.AndorsTrail.activity.fragment.HeroinfoActivity_Stats;
-import com.gpl.rpg.AndorsTrail.context.WorldContext;
-
 import android.content.res.Resources;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
@@ -16,6 +8,14 @@ import android.view.LayoutInflater;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.gpl.rpg.AndorsTrail.AndorsTrailApplication;
+import com.gpl.rpg.AndorsTrail.R;
+import com.gpl.rpg.AndorsTrail.activity.fragment.HeroinfoActivity_Inventory;
+import com.gpl.rpg.AndorsTrail.activity.fragment.HeroinfoActivity_Quests;
+import com.gpl.rpg.AndorsTrail.activity.fragment.HeroinfoActivity_Skills;
+import com.gpl.rpg.AndorsTrail.activity.fragment.HeroinfoActivity_Stats;
+import com.gpl.rpg.AndorsTrail.context.WorldContext;
 
 public final class HeroinfoActivity extends FragmentActivity {
 	private WorldContext world;

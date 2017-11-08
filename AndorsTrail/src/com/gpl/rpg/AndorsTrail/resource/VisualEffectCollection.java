@@ -1,9 +1,9 @@
 package com.gpl.rpg.AndorsTrail.resource;
 
+import android.graphics.Color;
+
 import com.gpl.rpg.AndorsTrail.R;
 import com.gpl.rpg.AndorsTrail.util.ConstRange;
-
-import android.graphics.Color;
 
 public final class VisualEffectCollection {
 
