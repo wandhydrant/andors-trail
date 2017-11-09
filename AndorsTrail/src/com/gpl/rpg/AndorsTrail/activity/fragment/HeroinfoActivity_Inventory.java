@@ -179,6 +179,10 @@ public final class HeroinfoActivity_Inventory extends Fragment implements Custom
 		super.onActivityResult(requestCode, resultCode, data);
 		switch (requestCode) {
 		case INTENTREQUEST_ITEMINFO:
+			if (resultCode == ItemInfoActivity.RESULT_MORE_ACTIONS) {
+				showContextMenuForItem( world.itemTypes.getItemType(data.getExtras().getString("itemTypeID")));
+				break;
+			}
 			if (resultCode != Activity.RESULT_OK) break;
 
 			ItemType itemType = world.itemTypes.getItemType(data.getExtras().getString("itemTypeID"));

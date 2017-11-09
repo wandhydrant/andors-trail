@@ -22,6 +22,8 @@ public final class ItemInfoActivity extends Activity {
 	public static enum ItemInfoAction {
 		none, use, equip, unequip, buy, sell
 	}
+	
+	public static final int RESULT_MORE_ACTIONS = Activity.RESULT_FIRST_USER; 
 
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
@@ -73,6 +75,17 @@ public final class ItemInfoActivity extends Activity {
 			@Override
 			public void onClick(View arg0) {
 				setResult(RESULT_CANCELED);
+				ItemInfoActivity.this.finish();
+			}
+		});
+		
+		b = (Button) findViewById(R.id.iteminfo_more);
+		b.setOnClickListener(new OnClickListener() {
+			@Override
+			public void onClick(View arg0) {
+				Intent result = new Intent();
+				result.putExtras(intent);
+				setResult(RESULT_MORE_ACTIONS, intent);
 				ItemInfoActivity.this.finish();
 			}
 		});
