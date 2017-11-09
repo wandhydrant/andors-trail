@@ -210,6 +210,11 @@
         <!-- <item name="android:background">@drawable/ui_blue_spinner_list_bg</item> -->
         <item name="android:textColor">@color/ui_blue_textbutton_textcolor</item>
     </style>
+
+    <style name="contextMenuText" parent="android:Widget.TextView">
+        <item name="android:textColor">@color/ui_blue_textbutton_textcolor</item>
+        <item name="android:textSize">@dimen/titletext</item>
+    </style>
     
     <style name="titleWithIcon" parent="@style/textWithIcon">
         <item name="android:textSize">@dimen/titletext</item>

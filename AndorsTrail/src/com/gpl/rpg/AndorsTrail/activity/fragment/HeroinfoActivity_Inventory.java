@@ -20,6 +20,7 @@ import com.gpl.rpg.AndorsTrail.view.ItemContainerAdapter;
 import com.gpl.rpg.AndorsTrail.view.SpinnerEmulator;
 
 import android.app.Activity;
+import android.app.Dialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -272,19 +273,20 @@ public final class HeroinfoActivity_Inventory extends Fragment implements Custom
 //	public void onCreateContextMenu(ContextMenu menu, View v, ContextMenuInfo menuInfo) {}
 //		ItemType type = getSelectedItemType((AdapterContextMenuInfo) menuInfo);
 	
+	
 	public void showContextMenuForItem(ItemType type) {
 		MenuInflater inflater = getActivity().getMenuInflater();
 		Menu menu = CustomMenuInflater.newMenuInstance(getActivity());
-			inflater.inflate(R.menu.inventoryitem, menu);
-			if (type.isUsable()){
-				menu.findItem(R.id.inv_menu_use).setVisible(true);
-				menu.findItem(R.id.inv_menu_assign).setVisible(true);
-			}
-			if (type.isEquippable()) {
-				menu.findItem(R.id.inv_menu_equip).setVisible(true);
-				if (type.isOffhandCapableWeapon()) menu.findItem(R.id.inv_menu_equip_offhand).setVisible(true);
-				else if (type.category.inventorySlot == Inventory.WearSlot.leftring) menu.findItem(R.id.inv_menu_equip_offhand).setVisible(true);
-			}
+		inflater.inflate(R.menu.inventoryitem, menu);
+		if (type.isUsable()){
+			menu.findItem(R.id.inv_menu_use).setVisible(true);
+			menu.findItem(R.id.inv_menu_assign).setVisible(true);
+		}
+		if (type.isEquippable()) {
+			menu.findItem(R.id.inv_menu_equip).setVisible(true);
+			if (type.isOffhandCapableWeapon()) menu.findItem(R.id.inv_menu_equip_offhand).setVisible(true);
+			else if (type.category.inventorySlot == Inventory.WearSlot.leftring) menu.findItem(R.id.inv_menu_equip_offhand).setVisible(true);
+		}
 		lastSelectedItem = null;
 		CustomMenuInflater.showMenuInDialog(getActivity(), menu, world.tileManager.getDrawableForItem(getResources(), type.iconID, world.tileManager.loadTilesFor(Arrays.asList(new Integer[] { type.iconID}), getResources())), type.getName(player), type, this);
 	}

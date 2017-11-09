@@ -21,6 +21,8 @@ import android.view.SubMenu;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.ViewGroup;
+import android.widget.LinearLayout;
+import android.widget.LinearLayout.LayoutParams;
 import android.widget.TextView;
 
 public class CustomMenuInflater {
@@ -29,69 +31,89 @@ public class CustomMenuInflater {
 		public void onMenuItemSelected(MenuItem item, Object data);
 	}
 	
-	public static void showMenuInDialog(Activity activity, Menu menu, Drawable icon, String title, Object data, MenuItemSelectedListener listener ) {
-		getMenuDialog(activity, menu, icon, title, data, listener).show();
+	public static Dialog showMenuInDialog(Activity activity, Menu menu, Drawable icon, String title, Object data, MenuItemSelectedListener listener ) {
+		Dialog d = getMenuDialog(activity, menu, icon, title, data, listener);
+		d.show();
+		return d;
 	}
 	
 	public static Dialog getMenuDialog(Activity activity, Menu menu, Drawable icon, String title, Object data, MenuItemSelectedListener listener ) {
-		View v = getMenuView(activity, menu, icon, title, data, listener);
-		final CustomDialog dialog = CustomDialogFactory.createDialog(activity, title, icon, null, v, false);
+		final CustomDialog dialog = CustomDialogFactory.createDialog(activity, title, icon, null, null, false);
+		View v = getMenuView(activity, menu, icon, title, data, dialog, listener);
+		v.setLayoutParams(getItemLayoutParams());
+		CustomDialogFactory.setContent(dialog, v);
 		v.setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View v) {
 				dialog.dismiss();
 			}
 		});
-		
 		return dialog;
 	}
 
-	public static View getMenuView(Activity activity, Menu menu, Drawable icon, String title, Object data, MenuItemSelectedListener listener ) {
-		ViewGroup vg = (ViewGroup) activity.getLayoutInflater().inflate(R.layout.custom_menu_layout, null);
+	public static View getMenuView(Activity activity, Menu menu, Drawable icon, String title, Object data, Dialog dialog, MenuItemSelectedListener listener ) {
+		ViewGroup scroll = (ViewGroup) activity.getLayoutInflater().inflate(R.layout.custom_menu_layout, null);
+		ViewGroup vg = (ViewGroup) scroll.findViewById(R.id.custom_menu_items_wrapper);
 		MenuItem item;
+		boolean first =true;
 		for (int i = 0; i < menu.size(); i++) {
 			item = menu.getItem(i);
 			if (item.isVisible()) {
-				if (item.hasSubMenu()) {
-					addMenuItemView(activity, vg, item, data, listener);
+				if (first) {
+					first = false;
 				} else {
-					addSubMenuItemView(activity, vg, icon, title, item, data, listener);
+					addMenuItemSeparator(activity, vg);
+				}
+				if (item.hasSubMenu()) {
+					addSubMenuItemView(activity, vg, icon, title, item, data, dialog, listener);
+				} else {
+					addMenuItemView(activity, vg, item, data, dialog, listener);
 				}
 			}
 		}
-		return vg;
+		return scroll;
 	}
 	
-	private static void addMenuItemView(Activity activity, ViewGroup vg, final MenuItem item, final Object data, final MenuItemSelectedListener listener) {
-		ViewGroup shell = (ViewGroup) activity.getLayoutInflater().inflate(R.layout.custom_menu_item_layout, vg);
-		TextView tv = (TextView) shell.findViewById(R.id.custom_menu_item_template);
-		shell.removeView(tv);
+	private static void addMenuItemView(Activity activity, ViewGroup vg, final MenuItem item, final Object data, final Dialog dialog, final MenuItemSelectedListener listener) {
+		TextView tv = (TextView) activity.getLayoutInflater().inflate(R.layout.custom_menu_item_layout, null);
 		tv.setText(item.getTitle());
 		tv.setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View v) {
 				listener.onMenuItemSelected(item, data);
+				dialog.dismiss();
 			}
 		});
+		tv.setLayoutParams(getItemLayoutParams());
 		vg.addView(tv);
 	}
 	
 
 	
-	private static void addSubMenuItemView(final Activity activity, ViewGroup vg, final Drawable icon, final String title, final MenuItem item, final Object data, final MenuItemSelectedListener listener) {
-		ViewGroup shell = (ViewGroup) activity.getLayoutInflater().inflate(R.layout.custom_menu_submenu_layout, vg);
-		TextView tv = (TextView) shell.findViewById(R.id.custom_submenu_item_template);
-		shell.removeView(tv);
+	private static void addSubMenuItemView(final Activity activity, ViewGroup vg, final Drawable icon, final String title, final MenuItem item, final Object data, final Dialog dialog, final MenuItemSelectedListener listener) {
+		TextView tv = (TextView) activity.getLayoutInflater().inflate(R.layout.custom_menu_submenu_layout, null);
 		tv.setText(item.getTitle());
 		tv.setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View v) {
 				showMenuInDialog(activity, item.getSubMenu(), icon, title, data, listener);
+				dialog.dismiss();
 			}
 		});
+		tv.setLayoutParams(getItemLayoutParams());
 		vg.addView(tv);
 	}
 	
+	
+	private static void addMenuItemSeparator(final Activity activity, ViewGroup vg) {
+		View v = activity.getLayoutInflater().inflate(R.layout.custom_menu_item_separator_layout, null);
+		v.setLayoutParams(getItemLayoutParams());
+		vg.addView(v);
+	}
+	
+	private static LayoutParams getItemLayoutParams() {
+		return new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT);
+	}
 
 	public static Menu newMenuInstance(Context context) {
 		return new DummyMenu(context);
@@ -106,7 +128,6 @@ public class CustomMenuInflater {
 			this.context = context;
 		}
 
-		CharSequence title;
 		@Override
 		public MenuItem add(CharSequence title) {
 			MenuItem item = new DummyMenuItem(context, title, -1, null);
@@ -202,26 +223,21 @@ public class CustomMenuInflater {
 
 		@Override
 		public boolean isShortcutKey(int keyCode, KeyEvent event) {
-			// TODO Auto-generated method stub
 			return false;
 		}
 
 		@Override
 		public boolean performIdentifierAction(int id, int flags) {
-			// TODO Auto-generated method stub
 			return false;
 		}
 
 		@Override
 		public boolean performShortcut(int keyCode, KeyEvent event, int flags) {
-			// TODO Auto-generated method stub
 			return false;
 		}
 
 		@Override
 		public void removeGroup(int groupId) {
-			// TODO Auto-generated method stub
-			
 		}
 
 		@Override
@@ -237,26 +253,18 @@ public class CustomMenuInflater {
 
 		@Override
 		public void setGroupCheckable(int group, boolean checkable, boolean exclusive) {
-			// TODO Auto-generated method stub
-			
 		}
 
 		@Override
 		public void setGroupEnabled(int group, boolean enabled) {
-			// TODO Auto-generated method stub
-			
 		}
 
 		@Override
 		public void setGroupVisible(int group, boolean visible) {
-			// TODO Auto-generated method stub
-			
 		}
 
 		@Override
 		public void setQwertyMode(boolean isQwerty) {
-			// TODO Auto-generated method stub
-			
 		}
 
 		@Override
@@ -272,7 +280,7 @@ public class CustomMenuInflater {
 		CharSequence title;
 		int id;
 		DummySubMenu subMenu;
-		boolean visible;
+		boolean visible = true;
 		
 		public DummyMenuItem(Context context, CharSequence title, int id, DummySubMenu subMenu) {
 			this.context = context;
