@@ -11,6 +11,13 @@
         android:state_pressed="true"
         android:state_enabled="true"
         />
+
+    <item
+        android:drawable="@drawable/ui_blue_radiobutton_enabled_checked"
+        android:state_selected="true"
+        android:state_enabled="true"
+        />
+    
     
    <!--  <item
         android:drawable="@drawable/ui_blue_radiobutton_disabled_unchecked"

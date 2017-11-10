@@ -165,6 +165,7 @@
         <item name="android:textSize">14sp</item>
     </style>
     
+    
     <!-- <style name="AndorsTrail_Blue_TabWidget" parent="android:style/Widget.TabWidget">
         <item name="android:textColor">@color/ui_blue_textbutton_textcolor</item>
         <item name="android:background">@drawable/ui_blue_tabwidget</item>
@@ -222,6 +223,11 @@
         <item name="android:textColor">@color/ui_blue_textbutton_textcolor</item>
     </style>
 
+    <style name="checkedListItem" parent="android:style/Widget.TextView">
+        <item name="android:textColor">@color/ui_blue_textbutton_textcolor</item>
+        <item name="android:textSize">@dimen/titletext</item>
+    </style>
+    
     <style name="statsBoxStyle" parent="android:Widget.TextView">
         <item name="android:background">@drawable/ui_blue_richframe</item>
         <item name="android:drawablePadding">@dimen/boxshape_margin</item>
