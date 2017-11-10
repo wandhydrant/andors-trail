@@ -1,13 +1,16 @@
 package com.gpl.rpg.AndorsTrail.view;
 
+import android.annotation.TargetApi;
 import android.app.Dialog;
 
 import com.gpl.rpg.AndorsTrail.R;
+import com.gpl.rpg.AndorsTrail.util.L;
 import com.gpl.rpg.AndorsTrail.view.CustomDialogFactory.CustomDialog;
 
 import android.app.AlertDialog.Builder;
 import android.content.Context;
 import android.content.DialogInterface;
+import android.os.Build;
 import android.os.Bundle;
 import android.preference.ListPreference;
 import android.util.AttributeSet;
@@ -16,6 +19,7 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.TextView;
 
 public class CustomListPreference extends ListPreference {
 
@@ -27,12 +31,14 @@ public class CustomListPreference extends ListPreference {
 		super(context, attrs);
 	}
 	//	Min API 21
-	//	public CustomListPreference(Context context, AttributeSet attrs, int defStyleAttr) {
-	//		super(context, attrs, defStyleAttr);
-	//	}
-	//	public CustomListPreference(Context context, AttributeSet attrs, int defStyleAttr, int defStyleRes) {
-	//		super(context, attrs, defStyleAttr, defStyleRes);
-	//	}
+	@TargetApi(Build.VERSION_CODES.LOLLIPOP)
+	public CustomListPreference(Context context, AttributeSet attrs, int defStyleAttr) {
+		super(context, attrs, defStyleAttr);
+	}
+	@TargetApi(Build.VERSION_CODES.LOLLIPOP)
+	public CustomListPreference(Context context, AttributeSet attrs, int defStyleAttr, int defStyleRes) {
+		super(context, attrs, defStyleAttr, defStyleRes);
+	}
 
 	CustomDialog d = null;
 	int clickedEntryIndex = 0;
@@ -46,15 +52,7 @@ public class CustomListPreference extends ListPreference {
 	private void createDialog() {
 		final ListView choicesList = new ListView(getContext());
 		choicesList.setChoiceMode(ListView.CHOICE_MODE_SINGLE);
-		ArrayAdapter<CharSequence> choicesAdapter = new ArrayAdapter<CharSequence>(getContext(), R.layout.custom_checkedlistitem_layout, getEntries()) {
-			@Override
-			public View getView(int position, View convertView, ViewGroup parent) {
-				View v = super.getView(position, convertView, parent);
-//				choicesList.setItemChecked(position, getValueIndex() == position);
-				v.setSelected(getValueIndex() == position);
-				return v;
-			}
-		};
+		ArrayAdapter<CharSequence> choicesAdapter = new ArrayAdapter<CharSequence>(getContext(), R.layout.custom_checkedlistitem_layout, getEntries());
 		choicesList.setLayoutParams(new ListView.LayoutParams(ListView.LayoutParams.MATCH_PARENT, ListView.LayoutParams.WRAP_CONTENT));
 		choicesList.setAdapter(choicesAdapter);
 		choicesList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
