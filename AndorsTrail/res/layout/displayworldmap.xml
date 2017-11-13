@@ -19,6 +19,12 @@
             android:drawableLeft="@drawable/ui_icon_map"
             android:text="@string/menu_button_worldmap"
             android:textSize="@dimen/titletext" />
+        
+        <Button
+            android:id="@+id/displayworldmap_recenter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dialog_recenter" />
 
         <Button
             android:id="@+id/displayworldmap_close"

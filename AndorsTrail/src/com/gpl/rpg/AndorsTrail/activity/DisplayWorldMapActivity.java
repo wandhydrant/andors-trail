@@ -12,11 +12,13 @@ import com.gpl.rpg.AndorsTrail.util.L;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
+import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.webkit.WebView;
+import android.webkit.WebViewClient;
 import android.widget.Button;
 import android.widget.Toast;
 
@@ -49,6 +51,14 @@ public final class DisplayWorldMapActivity extends Activity {
 			@Override
 			public void onClick(View v) {
 				DisplayWorldMapActivity.this.finish();
+			}
+		});
+
+		b = (Button) findViewById(R.id.displayworldmap_recenter);
+		b.setOnClickListener(new OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				recenter();
 			}
 		});
 
@@ -89,7 +99,23 @@ public final class DisplayWorldMapActivity extends Activity {
 		L.log("Showing " + url);
 		displayworldmap_webview.loadUrl(url);
 		displayworldmap_webview.setBackgroundColor(getResources().getColor(R.color.displayworldmap_background));
-		
+		displayworldmap_webview.setWebViewClient(new WebViewClient() {
+			@SuppressLint("NewApi")
+			@Override
+			public void onPageFinished(WebView view, String url)
+			{
+				recenter();
+			}
+		});
+	}
+	
+	private void recenter() {
+		displayworldmap_webview.postDelayed(new Runnable() {
+			@Override
+			public void run() {
+				displayworldmap_webview.loadUrl("javascript:scrollToPlayer();");
+			}
+		}, 100);
 	}
 	
 	@Override
