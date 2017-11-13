@@ -67,7 +67,6 @@ public final class StartScreenActivity extends FragmentActivity implements OnNew
 	@Override
 	protected void onResume() {
 		super.onResume();
-
 		
 	}
 
