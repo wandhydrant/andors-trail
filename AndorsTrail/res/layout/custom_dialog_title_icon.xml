@@ -1,96 +1,76 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dialog_hitrect"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="horizontal"
-    android:paddingTop="20dp"
-    android:paddingBottom="20dp" >
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical" >
 
-    <LinearLayout
-        android:layout_width="0dp"
-        android:layout_height="match_parent"
-        android:layout_weight="0.1"
-        android:orientation="vertical" />
-
-    <LinearLayout
-        android:id="@+id/dialog_hitrect"
-        android:layout_width="0dp"
+    <TextView
+        android:id="@+id/dialog_title"
+        style="@style/titleWithIcon"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_weight="0.8"
-        android:gravity="center"
-        android:orientation="vertical" >
+        android:background="@drawable/ui_blue_richframe"
+        android:drawableLeft="@drawable/char_hero"
+        android:gravity="center_vertical" />
+
+    <LinearLayout
+        android:id="@+id/dialog_description_container"
+        style="@style/AndorsTrail_Blue_StdFrame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:paddingBottom="5dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="5dp" >
 
         <TextView
-            android:id="@+id/dialog_title"
-            style="@style/titleWithIcon"
+            android:id="@+id/dialog_description"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/ui_blue_richframe"
-            android:drawableLeft="@drawable/char_hero"
-            android:gravity="center_vertical" />
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
 
         <LinearLayout
-            android:id="@+id/dialog_description_container"
+            android:id="@+id/dialog_content_container"
             style="@style/AndorsTrail_Blue_StdFrame"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_weight="0.8"
             android:gravity="center_vertical"
-            android:orientation="vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="5dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="5dp" />
+
+        <LinearLayout
+            android:id="@+id/dialog_button_container"
+            style="@style/AndorsTrail_Blue_StdFrame"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
             android:paddingBottom="5dp"
             android:paddingLeft="5dp"
             android:paddingRight="5dp"
             android:paddingTop="5dp" >
 
-            <TextView
-                android:id="@+id/dialog_description"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical" >
-
-            <LinearLayout
-                android:id="@+id/dialog_content_container"
-                style="@style/AndorsTrail_Blue_StdFrame"
-                android:layout_width="match_parent"
+            <Button
+                android:id="@+id/dialog_template_button"
+                style="@style/AndorsTrail_Blue_TextButton"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="0.8"
-                android:gravity="center_vertical"
-                android:orientation="horizontal"
-                android:paddingBottom="5dp"
-                android:paddingLeft="5dp"
-                android:paddingRight="5dp"
-                android:paddingTop="5dp" />
-
-            <LinearLayout
-                android:id="@+id/dialog_button_container"
-                style="@style/AndorsTrail_Blue_StdFrame"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center_horizontal"
-                android:orientation="horizontal"
-                android:paddingBottom="5dp"
-                android:paddingLeft="5dp"
-                android:paddingRight="5dp"
-                android:paddingTop="5dp" >
-
-                <Button
-                    android:id="@+id/dialog_template_button"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1" />
-            </LinearLayout>
+                android:layout_weight="1" />
         </LinearLayout>
     </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="0dp"
-        android:layout_height="match_parent"
-        android:layout_weight="0.1"
-        android:orientation="vertical" />
 
 </LinearLayout>

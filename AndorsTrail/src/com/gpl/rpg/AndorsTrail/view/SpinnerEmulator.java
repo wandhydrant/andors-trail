@@ -34,6 +34,7 @@ public abstract class SpinnerEmulator {
 	
 	public void initializeSpinnerEmulation(final int arrayResId, final int promptResId) {
 		choicesList = new ListView(context);//(Spinner) v.findViewById(R.id.inventorylist_category_filters);
+		choicesList.setBackgroundResource(android.R.color.transparent);
 		ArrayAdapter<CharSequence> skillCategoryFilterAdapter = ArrayAdapter.createFromResource(context, arrayResId, android.R.layout.simple_list_item_1);
 		choicesList.setLayoutParams(new ListView.LayoutParams(ListView.LayoutParams.MATCH_PARENT, ListView.LayoutParams.WRAP_CONTENT));
 		choicesList.setAdapter(skillCategoryFilterAdapter);

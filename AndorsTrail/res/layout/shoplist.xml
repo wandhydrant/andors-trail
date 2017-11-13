@@ -1,47 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-	android:layout_width="match_parent"
-	android:layout_height="match_parent"
-	android:gravity="left"
-	style="@style/AndorsTrail_Blue_TabFrame"
-	android:orientation="vertical">
+    style="@style/AndorsTrail_Blue_TabFrame"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="left"
+    android:orientation="vertical" >
 
-	<LinearLayout
-		android:layout_width="match_parent"
-		android:layout_height="wrap_content"
-		style="@style/AndorsTrail_Blue_StdFrame"
-		android:orientation="horizontal">
+    <LinearLayout
+        style="@style/AndorsTrail_Blue_StdFrame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
 
-		<TextView
-			android:id="@+id/shop_gc"
-			android:layout_width="wrap_content"
-			android:layout_height="wrap_content"
-			android:drawableLeft="@drawable/ui_icon_coins"
-			android:gravity="center_vertical"
-			android:layout_gravity="left"
-			/>
-		
-		<LinearLayout 
-		    android:layout_width="0dp"
-		    android:layout_height="wrap_content"
-		    android:layout_weight="1"
-		    />
-		
-		<Spinner
-			android:id="@+id/shoplist_sort_filters"
-			android:layout_width="wrap_content"
-			android:layout_height="wrap_content"
-			android:layout_marginLeft="5dp"
-			android:orientation="horizontal"
-			android:layout_gravity="right"
-			android:prompt="@string/shop_item_sort" />
-	</LinearLayout>
+        <TextView
+            android:id="@+id/shop_gc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:drawableLeft="@drawable/ui_icon_coins"
+            android:gravity="center_vertical" />
 
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2" />
 
-	<ListView
-		android:id="@+id/shop_list"
-		android:layout_width="match_parent"
-		android:layout_height="wrap_content"
-		/>
+        <Button
+            android:id="@+id/shoplist_sort_filters"
+            style="@style/AndorsTrail_Blue_SpinnerEmulator"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:orientation="horizontal" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/shop_list"
+        style="@style/AndorsTrail_Blue_List_Frameless"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
 
 </LinearLayout>

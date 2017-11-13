@@ -52,6 +52,7 @@ public class CustomListPreference extends ListPreference {
 	private void createDialog() {
 		final ListView choicesList = new ListView(getContext());
 		choicesList.setChoiceMode(ListView.CHOICE_MODE_SINGLE);
+		choicesList.setBackgroundResource(android.R.color.transparent);
 		ArrayAdapter<CharSequence> choicesAdapter = new ArrayAdapter<CharSequence>(getContext(), R.layout.custom_checkedlistitem_layout, getEntries());
 		choicesList.setLayoutParams(new ListView.LayoutParams(ListView.LayoutParams.MATCH_PARENT, ListView.LayoutParams.WRAP_CONTENT));
 		choicesList.setAdapter(choicesAdapter);

@@ -47,8 +47,8 @@ public class CustomDialogFactory {
 		dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
 		dialog.setContentView(R.layout.custom_dialog_title_icon);
 		dialog.getWindow().setBackgroundDrawableResource(android.R.color.transparent);
-		dialog.getWindow().getAttributes().width=WindowManager.LayoutParams.MATCH_PARENT;
-		dialog.getWindow().getAttributes().height=WindowManager.LayoutParams.MATCH_PARENT;
+//		dialog.getWindow().getAttributes().width=WindowManager.LayoutParams.MATCH_PARENT;
+//		dialog.getWindow().getAttributes().height=WindowManager.LayoutParams.MATCH_PARENT;
 		if (((AndorsTrailApplication)context.getApplicationContext()).getPreferences().fullscreen) {
 			dialog.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
 		} else {
