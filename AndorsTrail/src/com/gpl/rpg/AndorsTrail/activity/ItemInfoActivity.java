@@ -41,6 +41,7 @@ public final class ItemInfoActivity extends Activity {
 
 		final String buttonText = params.getString("buttonText");
 		boolean buttonEnabled = params.getBoolean("buttonEnabled");
+		boolean moreButtonEnabled = params.getBoolean("moreActions");
 
 		setContentView(R.layout.iteminfo);
 
@@ -80,15 +81,19 @@ public final class ItemInfoActivity extends Activity {
 		});
 		
 		b = (Button) findViewById(R.id.iteminfo_more);
-		b.setOnClickListener(new OnClickListener() {
-			@Override
-			public void onClick(View arg0) {
-				Intent result = new Intent();
-				result.putExtras(intent);
-				setResult(RESULT_MORE_ACTIONS, intent);
-				ItemInfoActivity.this.finish();
-			}
-		});
+		if (!moreButtonEnabled) {
+			b.setVisibility(View.GONE);
+		} else {
+			b.setOnClickListener(new OnClickListener() {
+				@Override
+				public void onClick(View arg0) {
+					Intent result = new Intent();
+					result.putExtras(intent);
+					setResult(RESULT_MORE_ACTIONS, intent);
+					ItemInfoActivity.this.finish();
+				}
+			});
+		}
 
 		b = (Button) findViewById(R.id.iteminfo_action);
 		if (buttonText != null && buttonText.length() > 0) {
