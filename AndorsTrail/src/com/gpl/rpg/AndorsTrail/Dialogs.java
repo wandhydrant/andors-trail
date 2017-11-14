@@ -245,7 +245,7 @@ public final class Dialogs {
 		Intent intent = new Intent(ctx, ItemInfoActivity.class);
 		intent.putExtra("buttonText", buttonText);
 		intent.putExtra("buttonEnabled", buttonEnabled);
-		intent.putExtra("moreActions", (actionType != ItemInfoActivity.ItemInfoAction.buy && actionType != ItemInfoActivity.ItemInfoAction.sell));
+		intent.putExtra("moreActions", (actionType == ItemInfoActivity.ItemInfoAction.equip || actionType == ItemInfoActivity.ItemInfoAction.use));
 		intent.putExtra("itemTypeID", itemTypeID);
 		intent.putExtra("actionType", actionType.name());
 		if (inventorySlot != null) intent.putExtra("inventorySlot", inventorySlot.name());
