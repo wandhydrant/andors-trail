@@ -8,14 +8,8 @@
         <item name="android:checkboxStyle">@style/AndorsTrail_Blue_Checkbox</item>
         <item name="android:radioButtonStyle">@style/AndorsTrail_Blue_RadioButton</item>
         <item name="android:listViewStyle">@style/AndorsTrail_Blue_List</item>
-        <item name="android:spinnerStyle">@style/AndorsTrail_Blue_Spinner</item>
-        <item name="android:spinnerDropDownItemStyle">@style/AndorsTrail_Blue_SpinnerDropDown</item>
-        <item name="android:alertDialogStyle">@style/AndorsTrailStyle.Dialog.Alert</item>
-        <item name="android:spinnerItemStyle">@style/AndorsTrail_Blue_SpinnerCollapsed</item>
         <item name="android:expandableListViewStyle">@style/AndorsTrail_Blue_ExpandableListView</item>
         <item name="android:listSeparatorTextViewStyle">@style/AndorsTrail_Blue_PreferencesListHeader</item>
-        <item name="android:popupWindowStyle">@style/AndorsTrail_Blue_PopupWindow</item>
-        <!-- <item name="android:tabWidgetStyle">@style/AndorsTrail_Blue_TabWidget</item> -->
     </style>
 
     <style name="AndorsTrailStyle.NoBackground" parent="AndorsTrailStyle">
@@ -31,30 +25,8 @@
         <item name="android:checkboxStyle">@style/AndorsTrail_Blue_Checkbox</item>
         <item name="android:radioButtonStyle">@style/AndorsTrail_Blue_RadioButton</item>
         <item name="android:listViewStyle">@style/AndorsTrail_Blue_List</item>
-        <item name="android:spinnerStyle">@style/AndorsTrail_Blue_Spinner</item>
-        <item name="android:spinnerDropDownItemStyle">@style/AndorsTrail_Blue_SpinnerDropDown</item>
-        <item name="android:alertDialogStyle">@style/AndorsTrailStyle.Dialog.Alert</item>
-        <item name="android:spinnerItemStyle">@style/AndorsTrail_Blue_SpinnerCollapsed</item>
         <item name="android:expandableListViewStyle">@style/AndorsTrail_Blue_ExpandableListView</item>
         <item name="android:listSeparatorTextViewStyle">@style/AndorsTrail_Blue_PreferencesListHeader</item>
-        <item name="android:popupWindowStyle">@style/AndorsTrail_Blue_PopupWindow</item>
-        <!-- <item name="android:tabWidgetStyle">@style/AndorsTrail_Blue_TabWidget</item> -->
-    </style>
-
-    <style name="AndorsTrailStyle.Dialog.Alert" parent="AndorsTrailStyle.Dialog">
-        <item name="android:background">@null</item>
-        <item name="android:windowBackground">@drawable/ui_blue_stdframe</item>
-        <item name="android:windowTitleStyle">@style/AndorsTrailStyle.DialogWindowTitle</item>
-        <!--
-        <item name="android:dialogTitleDecorLayout">@layout/custom_dialog_title_icon</item>
-		<item name="android:dialogCustomTitleDecorLayout">@layout/custom_dialog_title_icon</item>
-		<item name="android:dialogTitleIconsDecorLayout">@layout/custom_dialog_title_icon</item>
-        -->
-    </style>
-
-    <style name="AndorsTrailStyle.DialogWindowTitle"> <!-- parent="android:style/DialogWindowTitle" -->
-        <item name="android:background">@drawable/ui_blue_richframe</item>
-        <item name="android:textColor">@color/ui_blue_textbutton_textcolor</item>
     </style>
 
     <style name="AndorsTrail_Blue_List" parent="android:style/Widget.ListView">
@@ -76,6 +48,9 @@
         <item name="android:paddingBottom">20dp</item>
         <item name="android:paddingLeft">5dp</item>
         <item name="android:paddingRight">5dp</item>
+		<item name="android:ellipsize">marquee</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:scrollHorizontally">true</item>
     </style>
 
     <style name="AndorsTrail_Blue_ImageButton" parent="android:style/Widget.ImageButton">
@@ -97,25 +72,8 @@
         <item name="android:button">@drawable/ui_blue_radiobutton</item>
     </style>
 
-    <style name="AndorsTrail_Blue_Spinner" parent="android:style/Widget.Spinner">
-        <item name="android:background">@drawable/ui_blue_spinner</item>
-        <item name="android:textColor">@color/ui_blue_textbutton_textcolor</item>
-        <item name="android:textAppearance">@color/ui_blue_textbutton_textcolor</item>
-        <item name="android:gravity">start</item>
-    </style>
-
     <style name="AndorsTrail_Blue_SpinnerEmulator" parent="android:style/Widget.Button">
         <item name="android:background">@drawable/ui_blue_spinner</item>
-        <item name="android:textColor">@color/ui_blue_textbutton_textcolor</item>
-    </style>
-
-    <style name="AndorsTrail_Blue_SpinnerDropDown" parent="android:style/Widget.DropDownItem.Spinner">
-        <item name="android:background">@drawable/ui_blue_spinner_list_bg</item>
-        <item name="android:textColor">@color/ui_blue_textbutton_textcolor</item>
-        <item name="android:checkMark">@drawable/ui_blue_radiobutton</item>
-    </style>
-
-    <style name="AndorsTrail_Blue_SpinnerCollapsed" parent="android:style/Widget.DropDownItem">
         <item name="android:textColor">@color/ui_blue_textbutton_textcolor</item>
     </style>
 
@@ -126,31 +84,6 @@
         <item name="android:groupIndicator">@drawable/ui_blue_groupindicator</item>
     </style>
     
-    <style name="AndorsTrail_Blue_PopupMenu" parent="android:style/Widget.PopupMenu">
-        <item name="android:popupBackground">@drawable/ui_blue_stdframe</item>
-        <item name="android:background">@drawable/ui_blue_spinner_list_bg</item>
-        <item name="android:dropDownSelector">@drawable/ui_blue_spinner_list_bg</item>
-        <item name="android:textColor">@color/ui_blue_textbutton_textcolor</item>
-        <item name="android:checkMark">@drawable/ui_blue_radiobutton</item>
-    </style>
-    
-    <style name="AndorsTrail_Blue_PopupWindow" parent="android:style/Widget.PopupWindow">
-        <item name="android:popupBackground">@android:color/transparent</item>
-        <item name="android:dropDownSelector">@drawable/ui_blue_spinner_list_bg</item>
-        <item name="android:background">@drawable/ui_blue_stdframe</item>
-        <item name="android:textColor">@color/ui_blue_textbutton_textcolor</item>
-        <item name="android:checkMark">@drawable/ui_blue_radiobutton</item>
-    </style>
-    
-    <style name="AndorsTrail_Blue_ListPopupWindow" parent="android:style/Widget.ListPopupWindow">
-        <item name="android:popupBackground">@android:color/transparent</item>
-        <item name="android:background">@drawable/ui_blue_stdframe</item>
-        <item name="android:dropDownSelector">@drawable/ui_blue_spinner_list_bg</item>
-        <item name="android:textColor">@color/ui_blue_textbutton_textcolor</item>
-        <item name="android:checkMark">@drawable/ui_blue_radiobutton</item>
-    </style>
-
-
     <style name="AndorsTrail_Blue_PreferencesListHeader">
         <item name="android:background">@drawable/ui_blue_lightframe</item>
         <item name="android:paddingLeft">10dp</item>
@@ -174,12 +107,6 @@
         <item name="android:textColor">@color/ui_blue_textbutton_textcolor</item>
         <item name="android:textSize">14sp</item>
     </style>
-    
-    
-    <!-- <style name="AndorsTrail_Blue_TabWidget" parent="android:style/Widget.TabWidget">
-        <item name="android:textColor">@color/ui_blue_textbutton_textcolor</item>
-        <item name="android:background">@drawable/ui_blue_tabwidget</item>
-    </style> -->
     
     <style name="AndorsTrail_Blue_RichFrame">
         <item name="android:background">@drawable/ui_blue_richframe</item>
