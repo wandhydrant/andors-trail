@@ -22,6 +22,7 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.CompoundButton;
 import android.widget.CompoundButton.OnCheckedChangeListener;
+import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
@@ -134,11 +135,16 @@ public final class ConversationActivity
 	}
 
 	private int getSelectedReplyIndex() {
+		int j = 0;
 		for (int i = 0; i < replyGroup.getChildCount(); ++i) {
 			final View v = replyGroup.getChildAt(i);
 			if (v == null) continue;
+			if (!(v instanceof RadioButton)) {
+				continue;
+			}
 			final RadioButton rb = (RadioButton) v;
-			if (rb.isChecked()) return i;
+			if (rb.isChecked()) return j;
+			j++;
 		}
 		return -1;
 	}
@@ -147,12 +153,21 @@ public final class ConversationActivity
 		int replyCount = replyGroup.getChildCount();
 		if (replyCount <= 0) return;
 		if (i < 0) i = 0;
-		else if (i >= replyCount) i = replyCount - 1;
+		else if (i >= (replyCount+1)/2) i = replyCount/2;
 
-		View v = replyGroup.getChildAt(i);
-		if (v == null) return;
-		RadioButton rb = (RadioButton) v;
-		rb.setChecked(true);
+		for (int j = 0; j < replyGroup.getChildCount(); ++j) {
+			View v = replyGroup.getChildAt(j);
+			if (v == null) continue;
+			if (!(v instanceof RadioButton)) {
+				continue;
+			}
+			i--;
+			if (i < 0) {
+				RadioButton rb = (RadioButton) v;
+				rb.setChecked(true);
+				break;
+			}
+		}
 	}
 
 	@Override
@@ -200,6 +215,9 @@ public final class ConversationActivity
 		for (int i = 0; i < replyGroup.getChildCount(); ++i) {
 			final View v = replyGroup.getChildAt(i);
 			if (v == null) continue;
+			if (!(v instanceof RadioButton)) {
+				continue;
+			}
 			final RadioButton rb = (RadioButton) v;
 			if (rb.isChecked()) {
 				return rb;
@@ -449,6 +467,14 @@ public final class ConversationActivity
 		rb.setShadowLayer(1, 1, 1, Color.BLACK);
 		rb.setFocusable(false);
 		rb.setFocusableInTouchMode(false);
+		if (replyGroup.getChildCount() > 0) { //For all but the first.
+			ImageView iv = new ImageView(this);
+			iv.setBackgroundResource(R.drawable.ui_blue_listseparator);
+			RadioGroup.LayoutParams ivLayoutParams = new RadioGroup.LayoutParams(RadioGroup.LayoutParams.MATCH_PARENT, RadioGroup.LayoutParams.WRAP_CONTENT);
+			ivLayoutParams.setMargins(0, getResources().getDimensionPixelOffset(R.dimen.conversation_replyseparator_margintop), 0, getResources().getDimensionPixelOffset(R.dimen.conversation_replyseparator_marginbottom));
+			iv.setLayoutParams(ivLayoutParams);
+			replyGroup.addView(iv, ivLayoutParams);
+		}
 		replyGroup.addView(rb, layoutParams);
 	}
 	

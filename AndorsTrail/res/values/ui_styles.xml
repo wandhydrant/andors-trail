@@ -72,6 +72,10 @@
     <style name="AndorsTrail_Blue_TextButton" parent="android:style/Widget.Button">
         <item name="android:background">@drawable/ui_blue_textbutton</item>
         <item name="android:textColor">@color/ui_blue_textbutton_textcolor</item>
+        <item name="android:paddingTop">20dp</item>
+        <item name="android:paddingBottom">20dp</item>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:paddingRight">5dp</item>
     </style>
 
     <style name="AndorsTrail_Blue_ImageButton" parent="android:style/Widget.ImageButton">

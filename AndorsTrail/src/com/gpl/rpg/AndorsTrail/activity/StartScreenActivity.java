@@ -2,10 +2,12 @@ package com.gpl.rpg.AndorsTrail.activity;
 
 import android.content.Intent;
 import android.content.res.Resources;
+import android.graphics.drawable.AnimationDrawable;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
 import android.view.KeyEvent;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.gpl.rpg.AndorsTrail.AndorsTrailApplication;
@@ -63,6 +65,12 @@ public final class StartScreenActivity extends FragmentActivity implements OnNew
 
 	}
 
+	
+	@Override
+	public void onWindowFocusChanged(boolean hasFocus) {
+		super.onWindowFocusChanged(hasFocus);
+		((AnimationDrawable)((ImageView)findViewById(R.id.title_logo)).getDrawable()).start();
+	}
 	
 	@Override
 	protected void onResume() {
