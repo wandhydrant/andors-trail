@@ -4,6 +4,11 @@
 	android:layout_width="match_parent"
 	android:layout_height="wrap_content"
 	>
+	
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
 	<TextView
 		android:id="@+id/rangebar_label"
 		android:layout_width="@dimen/rangebar_labelwidth_small"
@@ -22,12 +27,16 @@
 		
 		/>
 
+	<RelativeLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content">
+	
 	<ProgressBar android:id="@+id/rangebar_progress"
 		style="?android:attr/progressBarStyleHorizontal"
 		android:progressDrawable="@drawable/ui_progress_health"
 		android:layout_width="match_parent"
 		android:layout_height="@dimen/healthbar_height"
-		android:layout_toRightOf="@id/rangebar_label"
+		android:layout_centerInParent="true"
 		android:layout_centerVertical="true"
 		android:layout_marginRight="3sp"
 		/>
@@ -45,4 +54,8 @@
 		android:shadowColor="#222"
 		android:paddingBottom="2sp"
 		/>
+	
+	</RelativeLayout>
+	
+	</LinearLayout>
 </merge>
