@@ -153,7 +153,7 @@ public final class ConversationActivity
 		int replyCount = replyGroup.getChildCount();
 		if (replyCount <= 0) return;
 		if (i < 0) i = 0;
-		else if (i >= (replyCount+1)/2) i = replyCount/2;
+		else if (i >= (replyCount-1)) i = replyCount-1;
 
 		for (int j = 0; j < replyGroup.getChildCount(); ++j) {
 			View v = replyGroup.getChildAt(j);
@@ -459,6 +459,7 @@ public final class ConversationActivity
 	@Override
 	public void onConversationHasReply(Reply r, String message) {
 		RadioGroup.LayoutParams layoutParams = new RadioGroup.LayoutParams(RadioGroup.LayoutParams.MATCH_PARENT, RadioGroup.LayoutParams.WRAP_CONTENT);
+		layoutParams.setMargins(0, getResources().getDimensionPixelOffset(R.dimen.conversation_replyseparator_margintop), 0, getResources().getDimensionPixelOffset(R.dimen.conversation_replyseparator_marginbottom));
 		RadioButton rb = new RadioButton(this);
 		rb.setLayoutParams(layoutParams);
 		rb.setText(message);
@@ -467,7 +468,7 @@ public final class ConversationActivity
 		rb.setShadowLayer(1, 1, 1, Color.BLACK);
 		rb.setFocusable(false);
 		rb.setFocusableInTouchMode(false);
-		if (replyGroup.getChildCount() > 0) { //For all but the first.
+		if (replyGroup.getChildCount() == 0) { //Add a separator before first item
 			ImageView iv = new ImageView(this);
 			iv.setBackgroundResource(R.drawable.ui_blue_listseparator);
 			RadioGroup.LayoutParams ivLayoutParams = new RadioGroup.LayoutParams(RadioGroup.LayoutParams.MATCH_PARENT, RadioGroup.LayoutParams.WRAP_CONTENT);

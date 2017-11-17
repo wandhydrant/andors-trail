@@ -93,7 +93,7 @@
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
-                    android:background="@drawable/ui_headerbackground" />
+                    android:background="@drawable/ui_blue_listseparator" />
 
                 <TableLayout
                     android:id="@+id/actorinfo_stats_table"
@@ -156,7 +156,7 @@
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
-                    android:background="@drawable/ui_headerbackground" />
+                    android:background="@drawable/ui_blue_listseparator" />
 
                 <TableLayout
                     android:id="@+id/heroinfo_basestats_table"
@@ -212,7 +212,7 @@
                     android:id="@+id/actorinfo_currentconditions_title2"
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
-                    android:background="@drawable/ui_headerbackground" />
+                    android:background="@drawable/ui_blue_listseparator" />
 
                 <include layout="@layout/heroinfo_stats_gamestats" />
             </LinearLayout>

@@ -31,24 +31,25 @@
 	
 	<style name="AndorsTrail_Blue_TextButton" parent="android:style/Widget.Button">
 	    <item name="android:background">@drawable/ui_blue_textbutton</item>
-	    <item name="android:textColor">@color/ui_blue_textbutton_textcolor</item>
+        <item name="android:textColor">@color/ui_blue_textbutton_textcolor</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:paddingRight">5dp</item>
+		<item name="android:ellipsize">marquee</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:scrollHorizontally">true</item>
 	    <item name="android:textAllCaps">false</item>
 	</style>
 	
-    <style name="AndorsTrail_Blue_ExpandableListView" parent="android:style/Widget.ExpandableListView">
-        <item name="android:textColor">@color/ui_blue_textbutton_textcolor</item>
-        <item name="android:textAppearanceListItem">@style/AndorsTrail_Blue_TextAppearance.ListItemTitle</item>
-        <item name="android:textAppearanceSmall">@style/AndorsTrail_Blue_TextAppearance.ListItemSubtitle</item>
-        <item name="android:groupIndicator">@drawable/ui_blue_groupindicator</item>
-    </style>
-    
-    
     <style name="AndorsTrail_Blue_PreferencesListHeader">
         <item name="android:background">@drawable/ui_blue_lightframe</item>
         <item name="android:paddingLeft">10dp</item>
         <item name="android:paddingRight">10dp</item>
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:layout_marginRight">5dp</item>
         <item name="android:textStyle">bold</item>
         <item name="android:textColor">@color/ui_blue_palette_text_gray_mid</item>
         <item name="android:textSize">16sp</item>

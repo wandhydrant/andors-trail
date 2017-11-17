@@ -44,8 +44,8 @@
     <style name="AndorsTrail_Blue_TextButton" parent="android:style/Widget.Button">
         <item name="android:background">@drawable/ui_blue_textbutton</item>
         <item name="android:textColor">@color/ui_blue_textbutton_textcolor</item>
-        <item name="android:paddingTop">20dp</item>
-        <item name="android:paddingBottom">20dp</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
         <item name="android:paddingLeft">5dp</item>
         <item name="android:paddingRight">5dp</item>
 		<item name="android:ellipsize">marquee</item>
@@ -82,6 +82,8 @@
         <item name="android:textAppearanceLarge">@style/AndorsTrail_Blue_TextAppearance.ListItemTitle</item>
         <item name="android:textAppearanceSmall">@style/AndorsTrail_Blue_TextAppearance.ListItemSubtitle</item>
         <item name="android:groupIndicator">@drawable/ui_blue_groupindicator</item>
+        <item name="android:divider">@drawable/ui_blue_listseparator</item>
+        <item name="android:childDivider">@drawable/ui_blue_listseparator</item>
     </style>
     
     <style name="AndorsTrail_Blue_PreferencesListHeader">
