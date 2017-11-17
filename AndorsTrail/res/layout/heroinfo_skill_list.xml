@@ -3,12 +3,12 @@
 	android:layout_width="match_parent"
 	android:layout_height="match_parent"
 	android:orientation="vertical"
-	style="@style/AndorsTrail_Blue_TabFrame">
+	style="@style/AndorsTrail_Style_TabFrame">
 
 	<LinearLayout
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
-		android:background="@drawable/ui_blue_stdframe"
+		android:background="?attr/ui_theme_stdframe_bitmap"
 		android:orientation="vertical">
 
 		<TextView
@@ -29,7 +29,7 @@
 
 		    <Button
                 android:id="@+id/skillList_category_filters_button"
-                style="@style/AndorsTrail_Blue_SpinnerEmulator"
+                style="@style/AndorsTrail_Style_SpinnerEmulator"
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:layout_height="wrap_content"
@@ -39,7 +39,7 @@
 
             <Button
                 android:id="@+id/skillList_sort_filters_button"
-                style="@style/AndorsTrail_Blue_SpinnerEmulator"
+                style="@style/AndorsTrail_Style_SpinnerEmulator"
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:layout_height="wrap_content"

@@ -396,7 +396,7 @@ public final class Dialogs {
 		itemList.setStackFromBottom(true);
 		itemList.setTranscriptMode(ListView.TRANSCRIPT_MODE_ALWAYS_SCROLL);
 		itemList.setChoiceMode(ListView.CHOICE_MODE_NONE);
-		itemList.setBackgroundResource(R.color.ui_blue_stdframe_bg);
+		itemList.setBackgroundResource(R.color.ui_theme_stdframe_bg);
 		if (combatLogMessages.length <= 0) {
 			combatLogMessages = new String[] {context.getResources().getString(R.string.combat_log_noentries)};
 		}

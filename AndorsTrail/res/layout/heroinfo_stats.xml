@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     android:layout_gravity="center_horizontal"
     android:orientation="vertical"
-	style="@style/AndorsTrail_Blue_TabFrame" >
+	style="@style/AndorsTrail_Style_TabFrame" >
 
     <ScrollView
         android:layout_width="match_parent"
@@ -22,14 +22,14 @@
                 style="@style/titleWithIcon"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@drawable/ui_blue_stdframe"
+                android:background="?attr/ui_theme_stdframe_bitmap"
                 android:drawableLeft="@drawable/char_hero_large"
                 android:text="@android:string/unknownName" />
 
             <TableLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@drawable/ui_blue_stdframe" >
+                android:background="?attr/ui_theme_stdframe_bitmap" >
 
                 <TableRow>
 
@@ -57,7 +57,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@drawable/ui_blue_stdframe"
+                android:background="?attr/ui_theme_stdframe_bitmap"
                 android:orientation="vertical" >
 
                 <com.gpl.rpg.AndorsTrail.view.RangeBar
@@ -81,7 +81,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@drawable/ui_blue_stdframe"
+                android:background="?attr/ui_theme_stdframe_bitmap"
                 android:orientation="vertical" >
 
                 <TextView
@@ -93,7 +93,7 @@
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
-                    android:background="@drawable/ui_blue_listseparator" />
+                    android:background="?attr/ui_theme_listseparator_drawable" />
 
                 <TableLayout
                     android:id="@+id/actorinfo_stats_table"
@@ -156,7 +156,7 @@
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
-                    android:background="@drawable/ui_blue_listseparator" />
+                    android:background="?attr/ui_theme_listseparator_drawable" />
 
                 <TableLayout
                     android:id="@+id/heroinfo_basestats_table"
@@ -212,7 +212,7 @@
                     android:id="@+id/actorinfo_currentconditions_title2"
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
-                    android:background="@drawable/ui_blue_listseparator" />
+                    android:background="?attr/ui_theme_listseparator_drawable" />
 
                 <include layout="@layout/heroinfo_stats_gamestats" />
             </LinearLayout>
@@ -223,7 +223,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center_vertical"
-        android:background="@drawable/ui_blue_stdframe"
+        android:background="?attr/ui_theme_stdframe_bitmap"
         android:orientation="horizontal" >
 
         <Button

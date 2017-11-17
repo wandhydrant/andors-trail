@@ -10,7 +10,7 @@
         style="@style/titleWithIcon"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/ui_blue_richframe"
+        android:background="?attr/ui_theme_richframe_bitmap"
         android:drawableLeft="@drawable/char_hero"
         android:text="@string/levelup_title" />
 
@@ -18,11 +18,11 @@
         android:id="@+id/levelup_description"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/ui_blue_stdframe"
+        android:background="?attr/ui_theme_stdframe_bitmap"
         android:text="@string/levelup_description" />
 
     <ScrollView
-        style="@style/AndorsTrail_Blue_StdFrame"
+        style="@style/AndorsTrail_Style_StdFrame"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" >
 

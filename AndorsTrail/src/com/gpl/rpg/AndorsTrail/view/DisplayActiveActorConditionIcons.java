@@ -262,22 +262,15 @@ public final class DisplayActiveActorConditionIcons implements ActorConditionLis
 			this.id = id;
 			this.image = new ActiveConditionIconImageView(context);
 			this.image.setId(id);
-//			GradientDrawable grad = new GradientDrawable(target == world.model.player ? Orientation.BOTTOM_TOP : Orientation.TOP_BOTTOM, new int[]{Color.argb(190, 68, 68, 68), Color.argb(10, 34, 34, 34)});
-//			grad.setCornerRadius(3);
-//			this.image.setBackgroundDrawable(grad);
 			this.image.setBackgroundResource(R.drawable.ui_blue_buttonbar);
 			this.image.setHorizontal();
 			this.image.reverse();
-//			this.text = new TextView(context);
 			this.onNewIconAnimation = AnimationUtils.loadAnimation(context, R.anim.scaleup);
 			this.onRemovedIconAnimation = AnimationUtils.loadAnimation(context, R.anim.scaledown);
 			this.onAppliedEffectAnimation = AnimationUtils.loadAnimation(context, R.anim.scalebeat);
 			this.onRemovedIconAnimation.setAnimationListener(this);
 
 			res = context.getResources();
-
-//			text.setTextColor(res.getColor(R.color.ui_blue_palette_text_gray_light));
-//			text.setShadowLayer(1, 1, 1, res.getColor(android.R.color.black));
 		}
 
 		private void setActiveCondition(ActorCondition condition, boolean immunity) {

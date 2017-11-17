@@ -437,7 +437,7 @@ public final class TileManager {
 		public void init(Resources res) {
 			mFillPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
 
-			mFillPaint.setColor(res.getColor(R.color.ui_blue_palette_text_gray_light));
+			mFillPaint.setColor(res.getColor(R.color.ui_theme_dialogue_light));
 //			mFillPaint.setShadowLayer(5f * res.getDisplayMetrics().scaledDensity, 1, 1, res.getColor(android.R.color.black));
 			mFillPaint.setStyle(Paint.Style.FILL);
 			mFillPaint.setTextSize(size * res.getDisplayMetrics().scaledDensity);
@@ -446,7 +446,7 @@ public final class TileManager {
 			mStrokePaint=new Paint(mFillPaint);
 //			mStrokePaint.setStyle(Paint.Style.FILL);
 //			mStrokePaint.setStrokeWidth(1f * res.getDisplayMetrics().scaledDensity);
-			mStrokePaint.setColor(res.getColor(R.color.ui_blue_palette_blue_mid));
+			mStrokePaint.setColor(res.getColor(R.color.ui_theme_buttonbar_bg));
 		}
 		
 		

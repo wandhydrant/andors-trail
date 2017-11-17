@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    style="@style/AndorsTrail_Blue_TabFrame"
+    style="@style/AndorsTrail_Style_TabFrame"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical" >
 
     <LinearLayout
-        style="@style/AndorsTrail_Blue_StdFrame"
+        style="@style/AndorsTrail_Style_StdFrame"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="left"
@@ -32,7 +32,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/ui_blue_stdframe"
+        android:background="?attr/ui_theme_stdframe_bitmap"
         android:gravity="left"
         android:orientation="vertical" >
 
@@ -49,7 +49,7 @@
 
             <Button
                 android:id="@+id/inventorylist_category_filters_button"
-                style="@style/AndorsTrail_Blue_SpinnerEmulator"
+                style="@style/AndorsTrail_Style_SpinnerEmulator"
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:layout_height="wrap_content"
@@ -59,7 +59,7 @@
 
             <Button
                 android:id="@+id/inventorylist_sort_filters_button"
-                style="@style/AndorsTrail_Blue_SpinnerEmulator"
+                style="@style/AndorsTrail_Style_SpinnerEmulator"
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:layout_height="wrap_content"

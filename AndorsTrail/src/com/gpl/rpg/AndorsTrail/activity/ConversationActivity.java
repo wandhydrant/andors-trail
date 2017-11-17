@@ -231,14 +231,14 @@ public final class ConversationActivity
 		while(numberOfNewMessage != 0){
 			ConversationStatement conversation = conversationHistory.get(numberOfMessage - numberOfNewMessage);
 			if(conversation.hasActor()){
-				conversation.textColor = getSpanColor(R.color.ui_blue_dialogue_dark);
+				conversation.textColor = getSpanColor(R.color.ui_theme_dialogue_dark);
 				if(conversation.isPlayerActor){
-					conversation.nameColor = getSpanColor(R.color.ui_blue_playername_light);
+					conversation.nameColor = getSpanColor(R.color.ui_theme_playername_light);
 				} else {
-					conversation.nameColor = getSpanColor(R.color.ui_blue_npcname_dark);
+					conversation.nameColor = getSpanColor(R.color.ui_theme_npcname_dark);
 				}
 			}else{
-				conversation.textColor = getSpanColor(R.color.ui_blue_reward_light);
+				conversation.textColor = getSpanColor(R.color.ui_theme_reward_light);
 			}
 			numberOfNewMessage--;
 		}
@@ -254,7 +254,7 @@ public final class ConversationActivity
 		} else {
 			if (rb == null) return;
 			Reply r = (Reply) rb.getTag();
-			addConversationStatement(player, rb.getText().toString(), getSpanColor(R.color.ui_blue_dialogue_light));
+			addConversationStatement(player, rb.getText().toString(), getSpanColor(R.color.ui_theme_dialogue_light));
 			conversationState.playerSelectedReply(getResources(), r);
 		}
 	}
@@ -268,7 +268,7 @@ public final class ConversationActivity
 			s.iconID = ConversationStatement.NO_ICON;
 		}
 		s.text = text;
-		s.nameColor = actor == player ? getSpanColor(R.color.ui_blue_playername_light) : getSpanColor(R.color.ui_blue_npcname_light);
+		s.nameColor = actor == player ? getSpanColor(R.color.ui_theme_playername_light) : getSpanColor(R.color.ui_theme_npcname_light);
 		s.textColor = textColor;
 		s.isPlayerActor = actor != null && actor == player;
 		conversationHistory.add(s);
@@ -389,7 +389,7 @@ public final class ConversationActivity
 
 	@Override
 	public void onTextPhraseReached(String message, Actor actor, String phraseID) {
-		addConversationStatement(actor, message, getSpanColor(R.color.ui_blue_dialogue_light));
+		addConversationStatement(actor, message, getSpanColor(R.color.ui_theme_dialogue_light));
 	}
 
 	@Override
@@ -425,7 +425,7 @@ public final class ConversationActivity
 	}
 
 	private void addRewardMessage(String text) {
-		addConversationStatement(null, text, getSpanColor(R.color.ui_blue_reward_light));
+		addConversationStatement(null, text, getSpanColor(R.color.ui_theme_reward_light));
 	}
 
 	@Override

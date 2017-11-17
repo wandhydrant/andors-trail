@@ -14,7 +14,7 @@
 		android:text="@string/loadsave_title_save"
 		style="@style/titleWithIcon"
 		android:gravity="center"
-		android:background="@drawable/ui_blue_richframe"
+		android:background="?attr/ui_theme_richframe_bitmap"
 		/>
 
 	<TextView
@@ -22,15 +22,15 @@
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
 		android:text="@string/loadsave_selectslot"
-		android:textColor="@color/ui_blue_textbutton_textcolor"
-		android:background="@drawable/ui_blue_stdframe"
+		android:textColor="?attr/ui_theme_textbutton_textcolor_color"
+		android:background="?attr/ui_theme_stdframe_bitmap"
 		/>
 
 	<ScrollView
 		android:layout_width="match_parent"
 		android:layout_height="0dp"
 		android:layout_weight="1"
-		style="@style/AndorsTrail_Blue_StdFrame"
+		style="@style/AndorsTrail_Style_StdFrame"
 		>
 		<LinearLayout
 			android:id="@+id/loadsave_slot_list"
@@ -55,7 +55,7 @@
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
 			android:orientation="vertical"
-			style="@style/AndorsTrail_Blue_StdFrame"
+			style="@style/AndorsTrail_Style_StdFrame"
 			>
 			<Button
 				android:id="@+id/loadsave_save_to_new_slot"

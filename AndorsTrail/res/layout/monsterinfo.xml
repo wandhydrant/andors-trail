@@ -9,13 +9,13 @@
         style="@style/titleWithIcon"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/ui_blue_richframe"
+        android:background="?attr/ui_theme_richframe_bitmap"
         android:drawableLeft="@drawable/char_hero"
         android:gravity="left"
         android:text="@string/dialog_monsterencounter_info" />
 
     <ScrollView
-        style="@style/AndorsTrail_Blue_StdFrame"
+        style="@style/AndorsTrail_Style_StdFrame"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1" >
@@ -96,7 +96,7 @@
         android:background="@android:color/transparent" />
 
     <LinearLayout
-        style="@style/AndorsTrail_Blue_StdFrame"
+        style="@style/AndorsTrail_Style_StdFrame"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal" >

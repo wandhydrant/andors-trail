@@ -29,7 +29,7 @@ public class CustomDialogFactory {
 	}
 	
 	public static CustomDialog createDialog(final Context context, String title, Drawable icon, String desc, View content, boolean hasButtons) {
-		final CustomDialog dialog = new CustomDialog(new ContextThemeWrapper(context, R.style.AndorsTrailStyle_Dialog)) {
+		final CustomDialog dialog = new CustomDialog(new ContextThemeWrapper(context, R.style.AndorsTrailDialogTheme_Blue)) {
 			@Override
 			public boolean onTouchEvent(MotionEvent event) {
 				Rect r = new Rect();
@@ -47,8 +47,6 @@ public class CustomDialogFactory {
 		dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
 		dialog.setContentView(R.layout.custom_dialog_title_icon);
 		dialog.getWindow().setBackgroundDrawableResource(android.R.color.transparent);
-//		dialog.getWindow().getAttributes().width=WindowManager.LayoutParams.MATCH_PARENT;
-//		dialog.getWindow().getAttributes().height=WindowManager.LayoutParams.MATCH_PARENT;
 		if (((AndorsTrailApplication)context.getApplicationContext()).getPreferences().fullscreen) {
 			dialog.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
 		} else {
@@ -117,7 +115,7 @@ public class CustomDialogFactory {
 		b.setLayoutParams(params);
 		//Old android versions need this "reminder"
 		b.setBackgroundDrawable(dialog.getContext().getResources().getDrawable(R.drawable.ui_blue_textbutton));
-		b.setTextColor(dialog.getContext().getResources().getColor(R.color.ui_blue_palette_text_gray_light));
+		b.setTextColor(dialog.getContext().getResources().getColor(R.color.ui_theme_dialogue_light));
 		
 		b.setText(textId);
 		b.setOnClickListener(new OnClickListener() {

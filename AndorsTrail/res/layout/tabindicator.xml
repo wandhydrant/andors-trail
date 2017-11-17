@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@drawable/ui_blue_tabwidget"
+    android:background="?attr/ui_theme_tabwidget_drawable"
      >
     
     <ImageView 
@@ -20,6 +20,6 @@
         android:ellipsize="marquee"
         android:singleLine="true"
         android:scrollHorizontally="true"
-        android:textColor="@color/ui_blue_textbutton_textcolor"/>
+        android:textColor="?attr/ui_theme_textbutton_textcolor_color"/>
 
 </LinearLayout>
