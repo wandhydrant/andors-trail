@@ -61,7 +61,7 @@
                 ]
             },
             {
-                "nextPhraseID":"vilegard_shop_notrust"
+                "nextPhraseID":"vilegard_shop_notrust_smith"
             }
         ]
     },
@@ -104,6 +104,20 @@
     },
     {
         "id":"vilegard_shop_notrust",
+        "message":"You are an outsider. We don't like outsiders here in Vilegard. Please leave.",
+        "replies":[
+            {
+                "text":"Why is everyone in Vilegard so suspicious of outsiders?",
+                "nextPhraseID":"vilegard_shop_notrust_2"
+            },
+            {
+                "text":"Can I see what items you have for sale?",
+                "nextPhraseID":"vilegard_shop_notrust_2"
+            }
+        ]
+    },
+    {
+        "id":"vilegard_shop_notrust_smith",
         "message":"You are an outsider. We don't like outsiders here in Vilegard. Please leave.",
         "replies":[
             {
