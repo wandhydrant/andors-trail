@@ -206,8 +206,8 @@ public final class CombatView extends RelativeLayout implements CombatSelectionL
 			return;
 		}
 		if (currentMonster.conditions.size()+currentMonster.immunities.size() > 0) {
-			if (currentMonster.conditions.size() > 0) world.tileManager.setImageViewTile(res, monsterConditionsButton, currentMonster.conditions.get(0).conditionType, false, Integer.toString(currentMonster.conditions.size()+currentMonster.immunities.size()), null);
-			else world.tileManager.setImageViewTile(res, monsterConditionsButton, currentMonster.immunities.get(0).conditionType, true, Integer.toString(currentMonster.conditions.size()+currentMonster.immunities.size()), null);
+			if (currentMonster.conditions.size() > 0) world.tileManager.setImageViewTile(getContext(), monsterConditionsButton, currentMonster.conditions.get(0).conditionType, false, Integer.toString(currentMonster.conditions.size()+currentMonster.immunities.size()), null);
+			else world.tileManager.setImageViewTile(getContext(), monsterConditionsButton, currentMonster.immunities.get(0).conditionType, true, Integer.toString(currentMonster.conditions.size()+currentMonster.immunities.size()), null);
 			showConditionsButton();
 			if (conditionsBarToggled) showConditionsBar();
 		} else {

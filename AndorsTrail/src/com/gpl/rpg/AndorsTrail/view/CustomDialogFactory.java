@@ -18,6 +18,7 @@ import android.widget.TextView;
 
 import com.gpl.rpg.AndorsTrail.AndorsTrailApplication;
 import com.gpl.rpg.AndorsTrail.R;
+import com.gpl.rpg.AndorsTrail.util.ThemeHelper;
 
 public class CustomDialogFactory {
 	
@@ -115,7 +116,7 @@ public class CustomDialogFactory {
 		b.setLayoutParams(params);
 		//Old android versions need this "reminder"
 		b.setBackgroundDrawable(dialog.getContext().getResources().getDrawable(R.drawable.ui_blue_textbutton));
-		b.setTextColor(dialog.getContext().getResources().getColor(R.color.ui_theme_dialogue_light));
+		b.setTextColor(ThemeHelper.getThemeColor(dialog.getContext(), R.attr.ui_theme_dialogue_light_color));
 		
 		b.setText(textId);
 		b.setOnClickListener(new OnClickListener() {

@@ -4,6 +4,7 @@ import java.util.Collection;
 import java.util.HashMap;
 import java.util.HashSet;
 
+import android.content.Context;
 import android.content.res.Resources;
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
@@ -34,6 +35,7 @@ import com.gpl.rpg.AndorsTrail.model.map.MonsterSpawnArea;
 import com.gpl.rpg.AndorsTrail.model.map.PredefinedMap;
 import com.gpl.rpg.AndorsTrail.model.map.TMXMapTranslator;
 import com.gpl.rpg.AndorsTrail.util.L;
+import com.gpl.rpg.AndorsTrail.util.ThemeHelper;
 
 public final class TileManager {
 	
@@ -234,8 +236,8 @@ public final class TileManager {
 	public void setImageViewTileForMonster(Resources res, ImageView imageView, int iconID) {  setImageViewTile(res, imageView, currentMapTiles.getBitmap(iconID)); }
 	public void setImageViewTileForPlayer(Resources res, ImageView imageView, int iconID) {  setImageViewTile(res, imageView, preloadedTiles.getBitmap(iconID)); }
 //	public void setImageViewTile(Resources res, ImageView imageView, ActorConditionType conditionType) {  setImageViewTile(res, imageView, preloadedTiles.getBitmap(conditionType.iconID)); }
-	public void setImageViewTile(Resources res, ImageView imageView, ActorConditionType conditionType, boolean immunityOverlay) {  setImageViewTile(res, imageView, preloadedTiles.getBitmap(conditionType.iconID), immunityOverlay); }
-	public void setImageViewTile(Resources res, ImageView imageView, ActorConditionType conditionType, boolean immunityOverlay, String exponent, String index) {  setImageViewTile(res, imageView, preloadedTiles.getBitmap(conditionType.iconID), immunityOverlay, exponent, index); }
+	public void setImageViewTile(Context ctx, ImageView imageView, ActorConditionType conditionType, boolean immunityOverlay) {  setImageViewTile(ctx, imageView, preloadedTiles.getBitmap(conditionType.iconID), immunityOverlay); }
+	public void setImageViewTile(Context ctx, ImageView imageView, ActorConditionType conditionType, boolean immunityOverlay, String exponent, String index) {  setImageViewTile(ctx, imageView, preloadedTiles.getBitmap(conditionType.iconID), immunityOverlay, exponent, index); }
 	public void setImageViewTileForUIIcon(Resources res, ImageView imageView, int iconID) { setImageViewTile(res, imageView, preloadedTiles.getBitmap(iconID)); }
 	public void setImageViewTile(Resources res, ImageView imageView, Bitmap b) {
 		if (density > 1) {
@@ -244,11 +246,11 @@ public final class TileManager {
 			setImageViewTile(imageView, new BitmapDrawable(res, b)); 
 		}
 	}
-	public void setImageViewTile(Resources res, ImageView imageView, Bitmap b, boolean immunityOverlay) {
-		setImageViewTile(res, imageView, b, immunityOverlay, null, null);
+	public void setImageViewTile(Context ctx, ImageView imageView, Bitmap b, boolean immunityOverlay) {
+		setImageViewTile(ctx, imageView, b, immunityOverlay, null, null);
 	}
-	public void setImageViewTile(Resources res, ImageView imageView, Bitmap b, boolean immunityOverlay, String exponent, String index) {
-		if (!immunityOverlay && exponent == null && index == null) setImageViewTile(res, imageView, b);
+	public void setImageViewTile(Context ctx, ImageView imageView, Bitmap b, boolean immunityOverlay, String exponent, String index) {
+		if (!immunityOverlay && exponent == null && index == null) setImageViewTile(ctx.getResources(), imageView, b);
 		else {
 			Drawable[] layers = new Drawable[1+
 			                                 (immunityOverlay ? 1 : 0)+
@@ -257,22 +259,22 @@ public final class TileManager {
 			int tileWidth;
 			if (density > 1) {
 				tileWidth = (int)(tileSize*density);
-				layers[0] = new BitmapDrawable(res, Bitmap.createScaledBitmap(b, tileWidth, tileWidth, true));
+				layers[0] = new BitmapDrawable(ctx.getResources(), Bitmap.createScaledBitmap(b, tileWidth, tileWidth, true));
 			} else {
 				tileWidth = tileSize;
-				layers[0] = new BitmapDrawable(res, b);
+				layers[0] = new BitmapDrawable(ctx.getResources(), b);
 			}
 			int nextIndex = 1;
 			if (immunityOverlay) {
-				layers[nextIndex] = new BitmapDrawable(res, preloadedTiles.getBitmap(iconID_immunity_overlay));
+				layers[nextIndex] = new BitmapDrawable(ctx.getResources(), preloadedTiles.getBitmap(iconID_immunity_overlay));
 				nextIndex++;
 			}
 			if (exponent != null) {
-				layers[nextIndex] = new TextDrawable(res, tileWidth, tileWidth, exponent, TextDrawable.Align.TOP_RIGHT);
+				layers[nextIndex] = new TextDrawable(ctx, tileWidth, tileWidth, exponent, TextDrawable.Align.TOP_RIGHT);
 				nextIndex++;
 			}
 			if (index != null) {
-				layers[nextIndex] = new TextDrawable(res, tileWidth, tileWidth, index, TextDrawable.Align.BOTTOM_RIGHT);
+				layers[nextIndex] = new TextDrawable(ctx, tileWidth, tileWidth, index, TextDrawable.Align.BOTTOM_RIGHT);
 				nextIndex++;
 			}
 			LayerDrawable layered = new LayerDrawable(layers);
@@ -410,43 +412,43 @@ public final class TileManager {
 			BOTTOM_RIGHT
 		}
 		
-		public TextDrawable(Resources res, int cWidth, int cHeight, String text, Align align, int size) {
+		public TextDrawable(Context ctx, int cWidth, int cHeight, String text, Align align, int size) {
 			this.text= text;
 			this.align = align;
 			this.size = size;
 			this.cWidth = cWidth;
 			this.cHeight = cHeight;
-			init(res);
+			init(ctx);
 		}
 
-		public TextDrawable(Resources res, int cWidth, int cHeight,  String text, Align align) {
+		public TextDrawable(Context ctx, int cWidth, int cHeight,  String text, Align align) {
 			this.text= text;
 			this.align = align;
 			this.cWidth = cWidth;
 			this.cHeight = cHeight;
-			init(res);
+			init(ctx);
 		}
 		
-		public TextDrawable(Resources res, int cWidth, int cHeight,  String text) {
+		public TextDrawable(Context ctx, int cWidth, int cHeight,  String text) {
 			this.text= text;
 			this.cWidth = cWidth;
 			this.cHeight = cHeight;
-			init(res);
+			init(ctx);
 		}
 		
-		public void init(Resources res) {
+		public void init(Context ctx) {
 			mFillPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
 
-			mFillPaint.setColor(res.getColor(R.color.ui_theme_dialogue_light));
+			mFillPaint.setColor(ThemeHelper.getThemeColor(ctx, R.attr.ui_theme_dialogue_light_color));
 //			mFillPaint.setShadowLayer(5f * res.getDisplayMetrics().scaledDensity, 1, 1, res.getColor(android.R.color.black));
 			mFillPaint.setStyle(Paint.Style.FILL);
-			mFillPaint.setTextSize(size * res.getDisplayMetrics().scaledDensity);
+			mFillPaint.setTextSize(size * ctx.getResources().getDisplayMetrics().scaledDensity);
 			textBounds = new Rect();
 			mFillPaint.getTextBounds(text, 0, text.length(), textBounds);
 			mStrokePaint=new Paint(mFillPaint);
 //			mStrokePaint.setStyle(Paint.Style.FILL);
 //			mStrokePaint.setStrokeWidth(1f * res.getDisplayMetrics().scaledDensity);
-			mStrokePaint.setColor(res.getColor(R.color.ui_theme_buttonbar_bg));
+			mStrokePaint.setColor(ThemeHelper.getThemeColor(ctx, R.attr.ui_theme_buttonbar_bg_color));
 		}
 		
 		

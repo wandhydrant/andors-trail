@@ -9,6 +9,7 @@ import com.gpl.rpg.AndorsTrail.controller.WorldMapController;
 import com.gpl.rpg.AndorsTrail.model.map.WorldMapSegment;
 import com.gpl.rpg.AndorsTrail.model.map.WorldMapSegment.WorldMapSegmentMap;
 import com.gpl.rpg.AndorsTrail.util.L;
+import com.gpl.rpg.AndorsTrail.util.ThemeHelper;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
@@ -41,7 +42,7 @@ public final class DisplayWorldMapActivity extends Activity {
 		setContentView(R.layout.displayworldmap);
 
 		displayworldmap_webview = (WebView) findViewById(R.id.displayworldmap_webview);
-		displayworldmap_webview.setBackgroundColor(getResources().getColor(R.color.displayworldmap_background));
+		displayworldmap_webview.setBackgroundColor(ThemeHelper.getThemeColor(this, R.attr.ui_theme_displayworldmap_bg_color));
 		displayworldmap_webview.getSettings().setBuiltInZoomControls(true);
 		displayworldmap_webview.getSettings().setUseWideViewPort(true);
 		enableJavascript();
@@ -98,7 +99,7 @@ public final class DisplayWorldMapActivity extends Activity {
 				+ (world.model.player.position.y + map.worldPosition.y-1) * WorldMapController.WORLDMAP_DISPLAY_TILESIZE;
 		L.log("Showing " + url);
 		displayworldmap_webview.loadUrl(url);
-		displayworldmap_webview.setBackgroundColor(getResources().getColor(R.color.displayworldmap_background));
+		displayworldmap_webview.setBackgroundColor(ThemeHelper.getThemeColor(this, R.attr.ui_theme_displayworldmap_bg_color));
 		displayworldmap_webview.setWebViewClient(new WebViewClient() {
 			@SuppressLint("NewApi")
 			@Override

@@ -294,7 +294,7 @@ public final class DisplayActiveActorConditionIcons implements ActorConditionLis
 			} else {
 				duration = Integer.toString(condition.duration);
 			}
-			tileManager.setImageViewTile(res, image, condition.conditionType, immunity, magnitude, duration);
+			tileManager.setImageViewTile(DisplayActiveActorConditionIcons.this.androidContext.get(), image, condition.conditionType, immunity, magnitude, duration);
 			
 		}
 

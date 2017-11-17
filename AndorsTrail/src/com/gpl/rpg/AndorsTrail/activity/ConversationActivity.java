@@ -43,6 +43,7 @@ import com.gpl.rpg.AndorsTrail.model.quest.Quest;
 import com.gpl.rpg.AndorsTrail.model.quest.QuestLogEntry;
 import com.gpl.rpg.AndorsTrail.model.quest.QuestProgress;
 import com.gpl.rpg.AndorsTrail.resource.tiles.TileManager;
+import com.gpl.rpg.AndorsTrail.util.ThemeHelper;
 
 public final class ConversationActivity
 		extends Activity
@@ -231,14 +232,14 @@ public final class ConversationActivity
 		while(numberOfNewMessage != 0){
 			ConversationStatement conversation = conversationHistory.get(numberOfMessage - numberOfNewMessage);
 			if(conversation.hasActor()){
-				conversation.textColor = getSpanColor(R.color.ui_theme_dialogue_dark);
+				conversation.textColor = getSpanColor(R.attr.ui_theme_dialogue_dark_color);
 				if(conversation.isPlayerActor){
-					conversation.nameColor = getSpanColor(R.color.ui_theme_playername_light);
+					conversation.nameColor = getSpanColor(R.attr.ui_theme_playername_light_color);
 				} else {
-					conversation.nameColor = getSpanColor(R.color.ui_theme_npcname_dark);
+					conversation.nameColor = getSpanColor(R.attr.ui_theme_npcname_dark_color);
 				}
 			}else{
-				conversation.textColor = getSpanColor(R.color.ui_theme_reward_light);
+				conversation.textColor = getSpanColor(R.attr.ui_theme_reward_light_color);
 			}
 			numberOfNewMessage--;
 		}
@@ -254,7 +255,7 @@ public final class ConversationActivity
 		} else {
 			if (rb == null) return;
 			Reply r = (Reply) rb.getTag();
-			addConversationStatement(player, rb.getText().toString(), getSpanColor(R.color.ui_theme_dialogue_light));
+			addConversationStatement(player, rb.getText().toString(), getSpanColor(R.attr.ui_theme_dialogue_light_color));
 			conversationState.playerSelectedReply(getResources(), r);
 		}
 	}
@@ -268,7 +269,7 @@ public final class ConversationActivity
 			s.iconID = ConversationStatement.NO_ICON;
 		}
 		s.text = text;
-		s.nameColor = actor == player ? getSpanColor(R.color.ui_theme_playername_light) : getSpanColor(R.color.ui_theme_npcname_light);
+		s.nameColor = actor == player ? getSpanColor(R.attr.ui_theme_playername_light_color) : getSpanColor(R.attr.ui_theme_npcname_light_color);
 		s.textColor = textColor;
 		s.isPlayerActor = actor != null && actor == player;
 		conversationHistory.add(s);
@@ -389,7 +390,7 @@ public final class ConversationActivity
 
 	@Override
 	public void onTextPhraseReached(String message, Actor actor, String phraseID) {
-		addConversationStatement(actor, message, getSpanColor(R.color.ui_theme_dialogue_light));
+		addConversationStatement(actor, message, getSpanColor(R.attr.ui_theme_dialogue_light_color));
 	}
 
 	@Override
@@ -425,7 +426,7 @@ public final class ConversationActivity
 	}
 
 	private void addRewardMessage(String text) {
-		addConversationStatement(null, text, getSpanColor(R.color.ui_theme_reward_light));
+		addConversationStatement(null, text, getSpanColor(R.attr.ui_theme_reward_light_color));
 	}
 
 	@Override
@@ -480,6 +481,6 @@ public final class ConversationActivity
 	}
 	
 	private int getSpanColor(int resId) {
-		return getResources().getColor(resId);
+		return ThemeHelper.getThemeColor(this, resId);
 	}
 }

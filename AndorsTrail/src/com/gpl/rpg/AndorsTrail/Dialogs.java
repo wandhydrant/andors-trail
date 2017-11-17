@@ -41,6 +41,7 @@ import com.gpl.rpg.AndorsTrail.model.item.Inventory;
 import com.gpl.rpg.AndorsTrail.model.item.ItemType;
 import com.gpl.rpg.AndorsTrail.model.item.Loot;
 import com.gpl.rpg.AndorsTrail.model.map.MapObject;
+import com.gpl.rpg.AndorsTrail.util.ThemeHelper;
 import com.gpl.rpg.AndorsTrail.view.CustomDialogFactory;
 import com.gpl.rpg.AndorsTrail.view.ItemContainerAdapter;
 
@@ -224,12 +225,14 @@ public final class Dialogs {
 			}
 		});
 
-		CustomDialogFactory.addButton(d, R.string.dialog_loot_pickall, new View.OnClickListener() {
-			@Override
-			public void onClick(View v) {
-				controllers.itemController.pickupAll(lootBags);
-			}
-		});
+		if (!itemList.getAdapter().isEmpty()) {
+			CustomDialogFactory.addButton(d, R.string.dialog_loot_pickall, new View.OnClickListener() {
+				@Override
+				public void onClick(View v) {
+					controllers.itemController.pickupAll(lootBags);
+				}
+			});
+		}
 
 		CustomDialogFactory.addDismissButton(d, R.string.dialog_close);
 
@@ -396,7 +399,7 @@ public final class Dialogs {
 		itemList.setStackFromBottom(true);
 		itemList.setTranscriptMode(ListView.TRANSCRIPT_MODE_ALWAYS_SCROLL);
 		itemList.setChoiceMode(ListView.CHOICE_MODE_NONE);
-		itemList.setBackgroundResource(R.color.ui_theme_stdframe_bg);
+		itemList.setBackgroundColor(ThemeHelper.getThemeColor(context, R.attr.ui_theme_stdframe_bg_color));
 		if (combatLogMessages.length <= 0) {
 			combatLogMessages = new String[] {context.getResources().getString(R.string.combat_log_noentries)};
 		}

@@ -23,6 +23,13 @@
         <item name="android:scrollHorizontally">true</item>
     </style>
     
+    <style name="AndorsTrail_Style_TextButton_Quickslots" parent="android:style/Widget.Button">
+        <item name="android:background">?attr/ui_theme_textbutton_drawable</item>
+        <item name="android:textColor">?attr/ui_theme_textbutton_textcolor_color</item>
+        <item name="android:paddingTop">2dp</item>
+        <item name="android:paddingBottom">2dp</item>
+    </style>
+    
     <style name="AndorsTrail_Style_TextButton" parent="AndorsTrail_Style_TextButton_Base" />
 
     <style name="AndorsTrail_Style_ImageButton" parent="android:style/Widget.ImageButton">
