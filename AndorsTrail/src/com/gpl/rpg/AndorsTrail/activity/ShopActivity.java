@@ -9,11 +9,13 @@ import com.gpl.rpg.AndorsTrail.AndorsTrailApplication;
 import com.gpl.rpg.AndorsTrail.R;
 import com.gpl.rpg.AndorsTrail.activity.fragment.ShopActivity_Buy;
 import com.gpl.rpg.AndorsTrail.activity.fragment.ShopActivity_Sell;
+import com.gpl.rpg.AndorsTrail.util.ThemeHelper;
 
 public final class ShopActivity extends FragmentActivity {
 
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
+		setTheme(ThemeHelper.getBaseTheme());
 		super.onCreate(savedInstanceState);
 
 		AndorsTrailApplication app = AndorsTrailApplication.getApplicationFromActivity(this);

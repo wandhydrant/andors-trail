@@ -8,6 +8,13 @@
 			android:summary="@string/preferences_display_fullscreen"
 			android:key="fullscreen" />
 		<com.gpl.rpg.AndorsTrail.view.CustomListPreference
+			android:title="@string/preferences_display_theme_title"
+			android:summary="@string/preferences_display_theme"
+			android:key="selectedTheme"
+			android:defaultValue="0"
+			android:entries="@array/preferences_display_theme"
+			android:entryValues="@array/preferences_display_theme_values" />
+		<com.gpl.rpg.AndorsTrail.view.CustomListPreference
 			android:title="@string/preferences_display_scaling_factor_title"
 			android:summary="@string/preferences_display_scaling_factor"
 			android:key="scaling_factor"

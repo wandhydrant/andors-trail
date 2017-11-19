@@ -1,5 +1,7 @@
 package com.gpl.rpg.AndorsTrail;
 
+import com.gpl.rpg.AndorsTrail.util.ThemeHelper;
+
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.preference.PreferenceManager;
@@ -53,6 +55,7 @@ public final class AndorsTrailPreferences {
 	public int quickslotsPosition = QUICKSLOTS_POSITION_HORIZONTAL_CENTER_BOTTOM;
 	public boolean showQuickslotsWhenToolboxIsVisible = false;
 	public boolean useLocalizedResources = true;
+	public int selectedTheme = 0;
 
 	public void read(final Context androidContext) {
 		AndorsTrailPreferences dest = this;
@@ -73,7 +76,7 @@ public final class AndorsTrailPreferences {
 			dest.quickslotsPosition = Integer.parseInt(prefs.getString("quickslots_placement", Integer.toString(QUICKSLOTS_POSITION_HORIZONTAL_CENTER_BOTTOM)));
 			dest.showQuickslotsWhenToolboxIsVisible = prefs.getBoolean("showQuickslotsWhenToolboxIsVisible", false);
 			dest.useLocalizedResources = prefs.getBoolean("useLocalizedResources", true);
-
+			dest.selectedTheme = Integer.parseInt(prefs.getString("selectedTheme", Integer.toString(0)));
 			// This might be implemented as a skill in the future.
 			//dest.movementAggressiveness = Integer.parseInt(prefs.getString("movementaggressiveness", Integer.toString(MOVEMENTAGGRESSIVENESS_NORMAL)));
 		} catch (Exception e) {
@@ -93,6 +96,8 @@ public final class AndorsTrailPreferences {
 			dest.quickslotsPosition = QUICKSLOTS_POSITION_HORIZONTAL_CENTER_BOTTOM;
 			dest.showQuickslotsWhenToolboxIsVisible = false;
 			dest.useLocalizedResources = true;
+			dest.selectedTheme = 0;
 		}
+		ThemeHelper.changeTheme(ThemeHelper.Theme.values()[dest.selectedTheme]);
 	}
 }

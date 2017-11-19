@@ -16,6 +16,7 @@ import com.gpl.rpg.AndorsTrail.activity.fragment.HeroinfoActivity_Quests;
 import com.gpl.rpg.AndorsTrail.activity.fragment.HeroinfoActivity_Skills;
 import com.gpl.rpg.AndorsTrail.activity.fragment.HeroinfoActivity_Stats;
 import com.gpl.rpg.AndorsTrail.context.WorldContext;
+import com.gpl.rpg.AndorsTrail.util.ThemeHelper;
 
 public final class HeroinfoActivity extends FragmentActivity {
 	private WorldContext world;
@@ -24,6 +25,7 @@ public final class HeroinfoActivity extends FragmentActivity {
 
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
+		setTheme(ThemeHelper.getBaseTheme());
 		super.onCreate(savedInstanceState);
 		AndorsTrailApplication app = AndorsTrailApplication.getApplicationFromActivity(this);
 		if (!app.isInitialized()) { finish(); return; }

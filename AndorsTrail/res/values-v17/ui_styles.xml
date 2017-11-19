@@ -2,7 +2,7 @@
 <resources>
     
 	<style name="AndorsTrail_Style_RadioButton" parent="android:style/Widget.CompoundButton.RadioButton">
-	    <item name="android:button">@drawable/ui_blue_radiobutton</item>
+	    <item name="android:button">?attr/ui_theme_radiobutton_drawable</item>
 	    <item name="android:paddingStart">10dp</item>
 	</style>
 </resources>

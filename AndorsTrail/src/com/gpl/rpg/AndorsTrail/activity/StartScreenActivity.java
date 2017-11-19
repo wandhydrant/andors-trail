@@ -11,18 +11,22 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.gpl.rpg.AndorsTrail.AndorsTrailApplication;
+import com.gpl.rpg.AndorsTrail.AndorsTrailPreferences;
 import com.gpl.rpg.AndorsTrail.R;
 import com.gpl.rpg.AndorsTrail.activity.fragment.StartScreenActivity_MainMenu;
 import com.gpl.rpg.AndorsTrail.activity.fragment.StartScreenActivity_MainMenu.OnNewGameRequestedListener;
 import com.gpl.rpg.AndorsTrail.activity.fragment.StartScreenActivity_NewGame;
 import com.gpl.rpg.AndorsTrail.activity.fragment.StartScreenActivity_NewGame.GameCreationOverListener;
 import com.gpl.rpg.AndorsTrail.resource.tiles.TileManager;
+import com.gpl.rpg.AndorsTrail.util.ThemeHelper;
 
 public final class StartScreenActivity extends FragmentActivity implements OnNewGameRequestedListener, GameCreationOverListener {
 
 
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
+		initPreferences();
+		setTheme(ThemeHelper.getBaseTheme());
 		super.onCreate(savedInstanceState);
 
 		final AndorsTrailApplication app = AndorsTrailApplication.getApplicationFromActivity(this);
@@ -63,6 +67,12 @@ public final class StartScreenActivity extends FragmentActivity implements OnNew
 
 		app.getWorldSetup().startResourceLoader(res);
 
+	}
+	
+	private void initPreferences() {
+		AndorsTrailApplication app = AndorsTrailApplication.getApplicationFromActivity(this);
+		AndorsTrailPreferences preferences = app.getPreferences();
+		preferences.read(this);
 	}
 
 	

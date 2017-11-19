@@ -21,6 +21,7 @@ import com.gpl.rpg.AndorsTrail.model.ModelContainer;
 import com.gpl.rpg.AndorsTrail.resource.tiles.TileManager;
 import com.gpl.rpg.AndorsTrail.savegames.Savegames;
 import com.gpl.rpg.AndorsTrail.savegames.Savegames.FileHeader;
+import com.gpl.rpg.AndorsTrail.util.ThemeHelper;
 import com.gpl.rpg.AndorsTrail.view.CustomDialogFactory;
 
 public final class LoadSaveActivity extends Activity implements OnClickListener {
@@ -33,6 +34,7 @@ public final class LoadSaveActivity extends Activity implements OnClickListener 
 
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
+		setTheme(ThemeHelper.getDialogTheme());
 		super.onCreate(savedInstanceState);
 
 		final AndorsTrailApplication app = AndorsTrailApplication.getApplicationFromActivity(this);

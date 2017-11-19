@@ -30,7 +30,7 @@ public class CustomDialogFactory {
 	}
 	
 	public static CustomDialog createDialog(final Context context, String title, Drawable icon, String desc, View content, boolean hasButtons) {
-		final CustomDialog dialog = new CustomDialog(new ContextThemeWrapper(context, R.style.AndorsTrailDialogTheme_Blue)) {
+		final CustomDialog dialog = new CustomDialog(new ContextThemeWrapper(context, ThemeHelper.getDialogTheme())) {
 			@Override
 			public boolean onTouchEvent(MotionEvent event) {
 				Rect r = new Rect();

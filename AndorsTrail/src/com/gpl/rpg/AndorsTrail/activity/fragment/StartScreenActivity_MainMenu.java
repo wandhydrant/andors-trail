@@ -46,9 +46,9 @@ public class StartScreenActivity_MainMenu extends Fragment {
 	
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+		updatePreferences(false);
 		super.onCreateView(inflater, container, savedInstanceState);
 
-		updatePreferences(false);
 
 		if (container != null) {
 			container.removeAllViews();
@@ -261,7 +261,7 @@ public class StartScreenActivity_MainMenu extends Fragment {
 				getActivity().finish();
 				return;
 			}
-		}
+		} 
 		app.getWorld().tileManager.updatePreferences(preferences);
 	}
 
