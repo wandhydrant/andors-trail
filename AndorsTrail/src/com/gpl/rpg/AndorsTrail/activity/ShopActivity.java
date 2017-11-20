@@ -4,6 +4,11 @@ import android.content.res.Resources;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentTabHost;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 import com.gpl.rpg.AndorsTrail.AndorsTrailApplication;
 import com.gpl.rpg.AndorsTrail.R;
@@ -29,11 +34,22 @@ public final class ShopActivity extends FragmentActivity {
 		FragmentTabHost tabHost = (FragmentTabHost) findViewById(android.R.id.tabhost);
 		tabHost.setup(this, getSupportFragmentManager(), R.id.realtabcontent);
 
+		LayoutInflater inflater = getLayoutInflater();
+		
+		ViewGroup v;
+		
+		v = (ViewGroup) inflater.inflate(R.layout.tabindicator, null);
+		((TextView)v.findViewById(R.id.tabindicator_text)).setText(res.getString(R.string.shop_buy));
+		((ImageView)v.findViewById(R.id.tabindicator_icon)).setImageResource(R.drawable.ui_icon_equipment);
 		tabHost.addTab(tabHost.newTabSpec("buy")
-				.setIndicator(res.getString(R.string.shop_buy))
+				.setIndicator(v)
 				,ShopActivity_Buy.class, null);
+		
+		v = (ViewGroup) inflater.inflate(R.layout.tabindicator, null);
+		((TextView)v.findViewById(R.id.tabindicator_text)).setText(res.getString(R.string.shop_sell));
+		((ImageView)v.findViewById(R.id.tabindicator_icon)).setImageResource(R.drawable.ui_icon_coins);
 		tabHost.addTab(tabHost.newTabSpec("sell")
-				.setIndicator(res.getString(R.string.shop_sell))
+				.setIndicator(v)
 				,ShopActivity_Sell.class, null);
 	}
 }

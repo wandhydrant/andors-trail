@@ -263,7 +263,7 @@ public class StartScreenActivity_MainMenu extends Fragment {
 				return;
 			}
 		} 
-		if (ThemeHelper.changeTheme(ThemeHelper.Theme.values()[preferences.selectedTheme])) {
+		if (ThemeHelper.changeTheme(preferences.selectedTheme)) {
 			// Changing the theme requires a restart to re-create all activities.
 			Toast.makeText(getActivity(), R.string.change_theme_requires_restart, Toast.LENGTH_LONG).show();
 			getActivity().finish();

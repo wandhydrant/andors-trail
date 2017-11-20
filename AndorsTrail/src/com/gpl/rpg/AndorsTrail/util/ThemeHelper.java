@@ -69,7 +69,8 @@ public class ThemeHelper {
 	}
 	
 	//Returns true if theme has changed after startup.
-	public static boolean changeTheme(Theme t) {
+	public static boolean changeTheme(int id) {
+		Theme t = Theme.values()[id];
 		if (t == SELECTED_THEME) {
 			first = false;
 			return false;

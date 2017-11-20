@@ -73,6 +73,7 @@ public final class StartScreenActivity extends FragmentActivity implements OnNew
 		AndorsTrailApplication app = AndorsTrailApplication.getApplicationFromActivity(this);
 		AndorsTrailPreferences preferences = app.getPreferences();
 		preferences.read(this);
+		ThemeHelper.changeTheme(preferences.selectedTheme);
 	}
 
 	

@@ -31,14 +31,14 @@ public class CustomListPreference extends ListPreference {
 		super(context, attrs);
 	}
 	//	Min API 21
-	@TargetApi(Build.VERSION_CODES.LOLLIPOP)
-	public CustomListPreference(Context context, AttributeSet attrs, int defStyleAttr) {
-		super(context, attrs, defStyleAttr);
-	}
-	@TargetApi(Build.VERSION_CODES.LOLLIPOP)
-	public CustomListPreference(Context context, AttributeSet attrs, int defStyleAttr, int defStyleRes) {
-		super(context, attrs, defStyleAttr, defStyleRes);
-	}
+//	@TargetApi(Build.VERSION_CODES.LOLLIPOP)
+//	public CustomListPreference(Context context, AttributeSet attrs, int defStyleAttr) {
+//		super(context, attrs, defStyleAttr);
+//	}
+//	@TargetApi(Build.VERSION_CODES.LOLLIPOP)
+//	public CustomListPreference(Context context, AttributeSet attrs, int defStyleAttr, int defStyleRes) {
+//		super(context, attrs, defStyleAttr, defStyleRes);
+//	}
 
 	CustomDialog d = null;
 	int clickedEntryIndex = 0;
