@@ -472,7 +472,7 @@ public final class ConversationActivity
 		rb.setFocusableInTouchMode(false);
 		if (replyGroup.getChildCount() == 0) { //Add a separator before first item
 			ImageView iv = new ImageView(this);
-			iv.setBackgroundResource(R.drawable.ui_blue_listseparator);
+			iv.setBackgroundResource(ThemeHelper.getThemeResource(this, R.attr.ui_theme_listseparator_drawable));
 			RadioGroup.LayoutParams ivLayoutParams = new RadioGroup.LayoutParams(RadioGroup.LayoutParams.MATCH_PARENT, RadioGroup.LayoutParams.WRAP_CONTENT);
 			ivLayoutParams.setMargins(0, getResources().getDimensionPixelOffset(R.dimen.conversation_replyseparator_margintop), 0, getResources().getDimensionPixelOffset(R.dimen.conversation_replyseparator_marginbottom));
 			iv.setLayoutParams(ivLayoutParams);

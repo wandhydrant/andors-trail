@@ -28,6 +28,7 @@ import com.gpl.rpg.AndorsTrail.controller.Constants;
 import com.gpl.rpg.AndorsTrail.resource.tiles.TileManager;
 import com.gpl.rpg.AndorsTrail.savegames.Savegames;
 import com.gpl.rpg.AndorsTrail.savegames.Savegames.FileHeader;
+import com.gpl.rpg.AndorsTrail.util.ThemeHelper;
 import com.gpl.rpg.AndorsTrail.view.CustomDialogFactory;
 
 public class StartScreenActivity_MainMenu extends Fragment {
@@ -262,6 +263,12 @@ public class StartScreenActivity_MainMenu extends Fragment {
 				return;
 			}
 		} 
+		if (ThemeHelper.changeTheme(ThemeHelper.Theme.values()[preferences.selectedTheme])) {
+			// Changing the theme requires a restart to re-create all activities.
+			Toast.makeText(getActivity(), R.string.change_theme_requires_restart, Toast.LENGTH_LONG).show();
+			getActivity().finish();
+			return;
+		}
 		app.getWorld().tileManager.updatePreferences(preferences);
 	}
 

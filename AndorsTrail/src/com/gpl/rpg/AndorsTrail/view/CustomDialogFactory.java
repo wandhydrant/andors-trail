@@ -115,7 +115,7 @@ public class CustomDialogFactory {
 		Button b = new Button(dialog.getContext());
 		b.setLayoutParams(params);
 		//Old android versions need this "reminder"
-		b.setBackgroundDrawable(dialog.getContext().getResources().getDrawable(R.drawable.ui_blue_textbutton));
+		b.setBackgroundDrawable(ThemeHelper.getThemeDrawable(dialog.getContext(), R.attr.ui_theme_textbutton_drawable));
 		b.setTextColor(ThemeHelper.getThemeColor(dialog.getContext(), R.attr.ui_theme_dialogue_light_color));
 		
 		b.setText(textId);

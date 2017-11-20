@@ -98,6 +98,5 @@ public final class AndorsTrailPreferences {
 			dest.useLocalizedResources = true;
 			dest.selectedTheme = 0;
 		}
-		ThemeHelper.changeTheme(ThemeHelper.Theme.values()[dest.selectedTheme]);
 	}
 }

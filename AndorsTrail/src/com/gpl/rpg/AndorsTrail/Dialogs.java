@@ -248,7 +248,7 @@ public final class Dialogs {
 		Intent intent = new Intent(ctx, ItemInfoActivity.class);
 		intent.putExtra("buttonText", buttonText);
 		intent.putExtra("buttonEnabled", buttonEnabled);
-		intent.putExtra("moreActions", (actionType == ItemInfoActivity.ItemInfoAction.equip || actionType == ItemInfoActivity.ItemInfoAction.use));
+		intent.putExtra("moreActions", (actionType == ItemInfoActivity.ItemInfoAction.equip || actionType == ItemInfoActivity.ItemInfoAction.use || actionType == ItemInfoActivity.ItemInfoAction.none));
 		intent.putExtra("itemTypeID", itemTypeID);
 		intent.putExtra("actionType", actionType.name());
 		if (inventorySlot != null) intent.putExtra("inventorySlot", inventorySlot.name());
@@ -262,19 +262,6 @@ public final class Dialogs {
 	}
 
 	public static void showConfirmRest(final Activity currentActivity, final ControllerContext controllerContext, final MapObject area) {
-		//		Dialog d = new AlertDialog.Builder(new ContextThemeWrapper(currentActivity, R.style.AndorsTrailStyle))
-		//		.setTitle(R.string.dialog_rest_title)
-		//		.setMessage(R.string.dialog_rest_confirm_message)
-		//		.setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
-		//			@Override
-		//			public void onClick(DialogInterface dialog, int which) {
-		//				controllerContext.mapController.rest(area);
-		//			}
-		//		})
-
-		//		
-		//		.setNegativeButton(android.R.string.no, null)
-		//		.create();
 		final Dialog d = CustomDialogFactory.createDialog(currentActivity, 
 				currentActivity.getResources().getString(R.string.dialog_rest_title), 
 				null, 

@@ -21,6 +21,7 @@ import com.gpl.rpg.AndorsTrail.controller.listeners.ActorConditionListener;
 import com.gpl.rpg.AndorsTrail.model.ability.ActorCondition;
 import com.gpl.rpg.AndorsTrail.model.actor.Actor;
 import com.gpl.rpg.AndorsTrail.resource.tiles.TileManager;
+import com.gpl.rpg.AndorsTrail.util.ThemeHelper;
 
 public final class DisplayActiveActorConditionIcons implements ActorConditionListener {
 
@@ -262,7 +263,7 @@ public final class DisplayActiveActorConditionIcons implements ActorConditionLis
 			this.id = id;
 			this.image = new ActiveConditionIconImageView(context);
 			this.image.setId(id);
-			this.image.setBackgroundResource(R.drawable.ui_blue_buttonbar);
+			this.image.setBackgroundResource(ThemeHelper.getThemeResource(context, R.attr.ui_theme_buttonbar_drawable));
 			this.image.setHorizontal();
 			this.image.reverse();
 			this.onNewIconAnimation = AnimationUtils.loadAnimation(context, R.anim.scaleup);

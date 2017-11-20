@@ -2,25 +2,7 @@ package com.gpl.rpg.AndorsTrail.activity.fragment;
 
 import java.util.Arrays;
 
-import com.gpl.rpg.AndorsTrail.AndorsTrailApplication;
-import com.gpl.rpg.AndorsTrail.Dialogs;
-import com.gpl.rpg.AndorsTrail.R;
-import com.gpl.rpg.AndorsTrail.activity.ItemInfoActivity;
-import com.gpl.rpg.AndorsTrail.context.ControllerContext;
-import com.gpl.rpg.AndorsTrail.context.WorldContext;
-import com.gpl.rpg.AndorsTrail.controller.ItemController;
-import com.gpl.rpg.AndorsTrail.model.actor.HeroCollection;
-import com.gpl.rpg.AndorsTrail.model.actor.Player;
-import com.gpl.rpg.AndorsTrail.model.item.Inventory;
-import com.gpl.rpg.AndorsTrail.model.item.ItemContainer;
-import com.gpl.rpg.AndorsTrail.model.item.ItemType;
-import com.gpl.rpg.AndorsTrail.resource.tiles.TileCollection;
-import com.gpl.rpg.AndorsTrail.view.CustomMenuInflater;
-import com.gpl.rpg.AndorsTrail.view.ItemContainerAdapter;
-import com.gpl.rpg.AndorsTrail.view.SpinnerEmulator;
-
 import android.app.Activity;
-import android.app.Dialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -38,6 +20,23 @@ import android.widget.AdapterView.OnItemLongClickListener;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
+
+import com.gpl.rpg.AndorsTrail.AndorsTrailApplication;
+import com.gpl.rpg.AndorsTrail.Dialogs;
+import com.gpl.rpg.AndorsTrail.R;
+import com.gpl.rpg.AndorsTrail.activity.ItemInfoActivity;
+import com.gpl.rpg.AndorsTrail.context.ControllerContext;
+import com.gpl.rpg.AndorsTrail.context.WorldContext;
+import com.gpl.rpg.AndorsTrail.controller.ItemController;
+import com.gpl.rpg.AndorsTrail.model.actor.HeroCollection;
+import com.gpl.rpg.AndorsTrail.model.actor.Player;
+import com.gpl.rpg.AndorsTrail.model.item.Inventory;
+import com.gpl.rpg.AndorsTrail.model.item.ItemContainer;
+import com.gpl.rpg.AndorsTrail.model.item.ItemType;
+import com.gpl.rpg.AndorsTrail.resource.tiles.TileCollection;
+import com.gpl.rpg.AndorsTrail.view.CustomMenuInflater;
+import com.gpl.rpg.AndorsTrail.view.ItemContainerAdapter;
+import com.gpl.rpg.AndorsTrail.view.SpinnerEmulator;
 
 public final class HeroinfoActivity_Inventory extends Fragment implements CustomMenuInflater.MenuItemSelectedListener {
 

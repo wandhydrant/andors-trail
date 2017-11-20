@@ -8,14 +8,13 @@ import com.gpl.rpg.AndorsTrail.R;
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.graphics.Color;
+import android.graphics.drawable.Drawable;
 
 public class ThemeHelper {
 	
 	private static final class ThemeSet {
-		String name;
 		int baseThemeRes, noBackgroundThemeRes, dialogThemeRes;
-		public ThemeSet(String name, int baseThemeRes, int noBackgroundThemeRes, int dialogThemeRes) {
-			this.name = name;
+		public ThemeSet(int baseThemeRes, int noBackgroundThemeRes, int dialogThemeRes) {
 			this.baseThemeRes = baseThemeRes;
 			this.noBackgroundThemeRes = noBackgroundThemeRes;
 			this.dialogThemeRes = dialogThemeRes;
@@ -24,15 +23,16 @@ public class ThemeHelper {
 	
 	public static enum Theme {
 		blue,
-		red
+		gold
 	}
 	
 	private static final Map<Theme, ThemeSet> THEME_SETS = new HashMap<ThemeHelper.Theme, ThemeHelper.ThemeSet>();
 	private static Theme SELECTED_THEME = Theme.blue;
+	private static boolean first = true;
 	
 	static {
-		THEME_SETS.put(Theme.blue, new ThemeSet("Blue", R.style.AndorsTrailTheme_Blue, R.style.AndorsTrailTheme_Blue_NoBackground, R.style.AndorsTrailDialogTheme_Blue));
-		THEME_SETS.put(Theme.red, new ThemeSet("Red", R.style.AndorsTrailTheme_Red, R.style.AndorsTrailTheme_Red_NoBackground, R.style.AndorsTrailDialogTheme_Red));
+		THEME_SETS.put(Theme.blue, new ThemeSet(R.style.AndorsTrailTheme_Blue, R.style.AndorsTrailTheme_Blue_NoBackground, R.style.AndorsTrailDialogTheme_Blue));
+		THEME_SETS.put(Theme.gold, new ThemeSet(R.style.AndorsTrailTheme_Gold, R.style.AndorsTrailTheme_Gold_NoBackground, R.style.AndorsTrailDialogTheme_Gold));
 	}
 	
 	public static int getThemeColor(Context context, int attrResId) {
@@ -42,8 +42,18 @@ public class ThemeHelper {
 		return c;
 	}
 	
-	public static String getThemeName(Theme t) {
-		return THEME_SETS.get(t).name;
+	public static int getThemeResource(Context context, int attrResId) {
+		TypedArray ta = context.getTheme().obtainStyledAttributes(new int[] {attrResId});
+		int resId = ta.getResourceId(0, 0);
+		ta.recycle();
+		return resId;
+	}
+	
+	public static Drawable getThemeDrawable(Context context, int attrResId) {
+		TypedArray ta = context.getTheme().obtainStyledAttributes(new int[] {attrResId});
+		Drawable d = ta.getDrawable(0);
+		ta.recycle();
+		return d;
 	}
 	
 	public static int getBaseTheme() {
@@ -58,7 +68,17 @@ public class ThemeHelper {
 		return THEME_SETS.get(SELECTED_THEME).dialogThemeRes;
 	}
 	
-	public static void changeTheme(Theme t) {
+	//Returns true if theme has changed after startup.
+	public static boolean changeTheme(Theme t) {
+		if (t == SELECTED_THEME) {
+			first = false;
+			return false;
+		}
 		SELECTED_THEME = t;
+		if (first) {
+			first = false;
+			return false;
+		}
+		return true;
 	}
 }
