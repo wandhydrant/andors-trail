@@ -24,12 +24,19 @@ import com.gpl.rpg.AndorsTrail.util.TimedMessageTask;
 public final class MovementController implements TimedMessageTask.Callback {
 	private final ControllerContext controllers;
 	private final WorldContext world;
-	private final TimedMessageTask movementHandler;
+	//TODO restore final modifier before release
+	private TimedMessageTask movementHandler;
 	public final PlayerMovementListeners playerMovementListeners = new PlayerMovementListeners();
 
 	public MovementController(ControllerContext controllers, WorldContext world) {
 		this.controllers = controllers;
 		this.world = world;
+		this.movementHandler = new TimedMessageTask(this, Constants.MINIMUM_INPUT_INTERVAL, false);
+	}
+	
+	//TODO remove this method before release
+	public void resetMovementHandler() {
+		this.movementHandler.stop();
 		this.movementHandler = new TimedMessageTask(this, Constants.MINIMUM_INPUT_INTERVAL, false);
 	}
 

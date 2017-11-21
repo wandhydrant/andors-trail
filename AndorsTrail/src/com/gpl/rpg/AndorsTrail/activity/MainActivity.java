@@ -25,6 +25,7 @@ import com.gpl.rpg.AndorsTrail.context.ControllerContext;
 import com.gpl.rpg.AndorsTrail.context.WorldContext;
 import com.gpl.rpg.AndorsTrail.controller.AttackResult;
 import com.gpl.rpg.AndorsTrail.controller.CombatController;
+import com.gpl.rpg.AndorsTrail.controller.Constants;
 import com.gpl.rpg.AndorsTrail.controller.listeners.CombatActionListener;
 import com.gpl.rpg.AndorsTrail.controller.listeners.CombatTurnListener;
 import com.gpl.rpg.AndorsTrail.controller.listeners.PlayerMovementListener;
@@ -330,6 +331,14 @@ public final class MainActivity
 		world.model.combatLog.append(msg);
 		statusText.setText(world.model.combatLog.getLastMessages());
 		statusText.setVisibility(View.VISIBLE);
+		if (! world.model.uiSelections.isInCombat) {
+			statusText.postDelayed(new Runnable(){
+				@Override
+				public void run() {
+					clearMessages();
+				}
+			}, Constants.STATUS_TEXT_AUTOHIDE_DELAY);
+		}
 	}
 
 	private void clearMessages() {

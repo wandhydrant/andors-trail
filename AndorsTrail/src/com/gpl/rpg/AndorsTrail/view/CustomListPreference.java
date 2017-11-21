@@ -1,25 +1,18 @@
 package com.gpl.rpg.AndorsTrail.view;
 
-import android.annotation.TargetApi;
 import android.app.Dialog;
-
-import com.gpl.rpg.AndorsTrail.R;
-import com.gpl.rpg.AndorsTrail.util.L;
-import com.gpl.rpg.AndorsTrail.view.CustomDialogFactory.CustomDialog;
-
-import android.app.AlertDialog.Builder;
 import android.content.Context;
 import android.content.DialogInterface;
-import android.os.Build;
 import android.os.Bundle;
 import android.preference.ListPreference;
 import android.util.AttributeSet;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
-import android.widget.TextView;
+
+import com.gpl.rpg.AndorsTrail.R;
+import com.gpl.rpg.AndorsTrail.view.CustomDialogFactory.CustomDialog;
 
 public class CustomListPreference extends ListPreference {
 

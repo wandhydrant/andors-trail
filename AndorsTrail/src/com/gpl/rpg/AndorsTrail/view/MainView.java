@@ -101,7 +101,8 @@ public final class MainView extends SurfaceView
 	private boolean scrolling = false;
 	private Coord scrollVector;
 	private long scrollStartTime;
-	private final static long SCROLL_DURATION = Constants.MINIMUM_INPUT_INTERVAL;
+	//TODO restore private final modifiers before release
+	public static long SCROLL_DURATION = Constants.MINIMUM_INPUT_INTERVAL;
 	
 
 	public MainView(Context context, AttributeSet attr) {
