@@ -23,7 +23,7 @@ public class ThemeHelper {
 	
 	public static enum Theme {
 		blue,
-		gold
+		green
 	}
 	
 	private static final Map<Theme, ThemeSet> THEME_SETS = new HashMap<ThemeHelper.Theme, ThemeHelper.ThemeSet>();
@@ -32,7 +32,7 @@ public class ThemeHelper {
 	
 	static {
 		THEME_SETS.put(Theme.blue, new ThemeSet(R.style.AndorsTrailTheme_Blue, R.style.AndorsTrailTheme_Blue_NoBackground, R.style.AndorsTrailDialogTheme_Blue));
-		THEME_SETS.put(Theme.gold, new ThemeSet(R.style.AndorsTrailTheme_Gold, R.style.AndorsTrailTheme_Gold_NoBackground, R.style.AndorsTrailDialogTheme_Gold));
+		THEME_SETS.put(Theme.green, new ThemeSet(R.style.AndorsTrailTheme_Green, R.style.AndorsTrailTheme_Green_NoBackground, R.style.AndorsTrailDialogTheme_Green));
 	}
 	
 	public static int getThemeColor(Context context, int attrResId) {
