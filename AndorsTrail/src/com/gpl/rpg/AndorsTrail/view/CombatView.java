@@ -69,6 +69,8 @@ public final class CombatView extends RelativeLayout implements CombatSelectionL
 
 		setFocusable(false);
 		inflate(context, R.layout.combatview, this);
+		//Prevents mis-taps from registering as main area taps by going through the combat view.
+		findViewById(R.id.combatview_fixedarea).setClickable(true);
 //		findViewById(R.id.combatview_fixedarea).setBackgroundResource(R.drawable.ui_gradientshape_translucent);
 //		this.setBackgroundResource(R.drawable.ui_gradientshape_translucent);
 
