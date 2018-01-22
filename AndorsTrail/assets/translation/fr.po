@@ -4,8 +4,8 @@ msgstr ""
 "Project-Id-Version: Andors Trail\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-11-10 11:48+0000\n"
-"PO-Revision-Date: 2017-11-15 10:46+0000\n"
-"Last-Translator: Bruno Crocquevieille <bruno.crocquevieille@gmail.com>\n"
+"PO-Revision-Date: 2018-01-22 02:18+0000\n"
+"Last-Translator: Olivier Dragon <odragon@videotron.ca>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/andors-trail/game-"
 "content/fr/>\n"
 "Language: fr\n"
@@ -13,7 +13,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 2.18-dev\n"
+"X-Generator: Weblate 2.19-dev\n"
 "X-Launchpad-Export-Date: 2015-11-02 12:28+0000\n"
 
 #: [none]
@@ -14449,7 +14449,7 @@ msgid ""
 "all its might and glory."
 msgstr ""
 "C'est ici que nous vénérons l'Ombre à Vilegard. Nous louons l'Ombre dans "
-"toute sa puissance et sa gloire."
+"toute sa puissance et sa gloire.\n"
 
 #: conversationlist_jolnor.json:jolnor_chapel_1:1
 #: conversationlist_jolnor.json:jolnor_default_2:2
@@ -14667,9 +14667,8 @@ msgstr ""
 "confiance."
 
 #: conversationlist_jolnor.json:jolnor_guard_1
-#, fuzzy
 msgid "Yes, what about him. Have you removed him yet?"
-msgstr "Justement, qu'en est-il de lui. L'as-tu déjà relevé?"
+msgstr "Justement, qu'en est-il de lui. L'as-tu déjà relevé ?"
 
 #: conversationlist_jolnor.json:jolnor_guard_1:0
 msgid "Yes, he will leave his post as soon as this shift is over."
@@ -18629,31 +18628,33 @@ msgid ""
 "After helping us, you still want to deprive us of more things that we "
 "cherish?"
 msgstr ""
+"Après nous avoir aidé, tu désires maintenant nous priver de ce qui nous est "
+"précieux ?"
 
 #: conversationlist_maevalia.json:maevalia_h12
-#, fuzzy
 msgid ""
 "I guess we have no choice but to agree. Here, take these. They used to "
 "belong to my mother."
 msgstr ""
 "Je suppose que nous n’avons pas d’autre choix que d’accepter. Tiens, prends "
-"ça. Ils appartenait autrefois à ma mère."
+"ça. Elles appartenaient autrefois à ma mère."
 
 #: conversationlist_maevalia.json:maevalia_h2
 msgid "Hello again. Did you reach the lower parts of the Charwood mine?"
 msgstr ""
-"Re-bonjour. Avez vous réussi à attendre les parties profondes de la mine de "
+"Re-bonjour. Avez vous réussi à atteindre les parties profondes de la mine de "
 "Charbois ?"
 
 #: conversationlist_maevalia.json:maevalia_h2:2
 msgid ""
 "Yes. I encountered a dragon-like creature in the fiery depths of the mine."
 msgstr ""
+"Oui. J'ai croisé une créature qui ressemblait à un dragon dans les fonds "
+"ardent de la mine."
 
 #: conversationlist_maevalia.json:maevalia_h3
-#, fuzzy
 msgid "None of us ever dared to venture that deep."
-msgstr "Aucun d'entre nous n'a jamais osé s'aventurer si profondément."
+msgstr "Aucun d'entre nous n'a même osé s'aventurer si profondément."
 
 #: conversationlist_maevalia.json:maevalia_h3:0
 msgid "I haven't killed the creature yet though."
@@ -18664,35 +18665,32 @@ msgid ""
 "Whatever that thing was, it won't bother you any more now that I've killed "
 "it. Here is one of the bones from its corpse."
 msgstr ""
+"Peu importe ce qu'était cette chose, elle ne vous causera plus d'ennuis "
+"maintenant que je l'ai abattue. Voici un os de sa dépouille."
 
 #: conversationlist_maevalia.json:maevalia_h5
-#, fuzzy
 msgid "You actually killed it?"
 msgstr "Tu l'as réellement tuer ?"
 
 #: conversationlist_maevalia.json:maevalia_h6
-#, fuzzy
 msgid "You are truly a hero to us."
-msgstr "Tu est vraiment un heros pour nous"
+msgstr "Tu est vraiment un héro pour nous."
 
 #: conversationlist_maevalia.json:maevalia_h7
-#, fuzzy
 msgid ""
 "Not only did you manage to find our missing people, but you also freed us "
 "from the creature that caused all this trouble."
 msgstr ""
 "Non seulement avez-vous réussi à trouver nos personnes disparues, mais vous "
-"avez aussi libérés de la créature qui a causé tous ces ennuis."
+"nous avez aussi libérés de la créature qui a causé tous ces ennuis."
 
 #: conversationlist_maevalia.json:maevalia_h8
-#, fuzzy
 msgid "We are forever in your debt. What can we do to ever repay you?"
 msgstr ""
-"Je te suis éternellement redevable. Que pouvons-nous faire pour vous "
-"rembourser?"
+"Nous te sommes éternellement redevable. Que pouvons-nous faire pour te "
+"rembourser ?"
 
 #: conversationlist_maevalia.json:maevalia_h8:0
-#, fuzzy
 msgid "I'm just happy to help."
 msgstr "Je suis juste heureux d'aider."
 
@@ -18701,90 +18699,77 @@ msgid "How about some gold for all my troubles?"
 msgstr ""
 
 #: conversationlist_maevalia.json:maevalia_h8:2
-#, fuzzy
 msgid "I think that one of your most precious items will suffice as payment."
-msgstr "Je pense qu'un de vos plus précieux objets peut suffir de payement."
+msgstr "Je pense qu'un de vos objets les plus précieux suffira de payement."
 
 #: conversationlist_maevalia.json:maevalia_h9
-#, fuzzy
 msgid "You are truly our hero. Thank you yet again."
-msgstr "Vous êtes vraiment de notre héros. Je vous remercie encore une fois."
+msgstr "Vous êtes vraiment notre héro. Je vous remercie encore une fois."
 
 #: conversationlist_maevalia.json:maevalia_q1
 msgid "Thank you for all your help!"
 msgstr "Merci pour toute ton aide !"
 
 #: conversationlist_maevalia.json:maevalia_r0
-#, fuzzy
 msgid "You again."
 msgstr "Encore toi."
 
 #: conversationlist_maevalia.json:maevalia_r0:0
 #: conversationlist_maevalia.json:maevalia_r1:0
-#, fuzzy
 msgid "Can you tell me the story about what happened here, again?"
 msgstr ""
-"Pouvez-vous me raconter l'histoire à propos de ce qui s'est passé ici, à "
-"nouveau?"
+"Pouvez-vous me raconter à nouveau l'histoire de ce qui s'est passé ici ?"
 
 #: conversationlist_maevalia.json:maevalia_r1
-#, fuzzy
 msgid "Hello again. Did you find our missing people?"
-msgstr "Bonjour à nouveau. Avez-vous trouvé nos personnes disparus?"
+msgstr "Encore bonjour. As-tu retrouvé nos personnes disparues ?"
 
 #: conversationlist_maevalia.json:maevalia_r1:2
 msgid "Who were the people that I was supposed to look for, again?"
 msgstr ""
 
 #: conversationlist_maevalia.json:maevalia_r1:3
-#, fuzzy
 msgid "Yeah, about those people."
-msgstr "Oui, a propos de ces personnes"
+msgstr "Oui, a propos de ces personnes."
 
 #: conversationlist_maevalia.json:maevalia_r10
-#, fuzzy
 msgid ""
 "Good. We are truly grateful for the help that you have provided to us from "
 "the Charwood heights."
 msgstr ""
-"Bon. Nous sommes très reconnaissants pour l’aide que vous nous avez fournis "
-"depuis les hauteurs de Charwood."
+"Bien. Nous sommes très reconnaissants pour l’aide que vous nous avez fournis "
+"depuis les hauteurs de Charbois."
 
 #: conversationlist_maevalia.json:maevalia_r3:0
-#, fuzzy
 msgid "I'm still trying to find out what happened to all four of them."
 msgstr ""
 "Je suis encore à essayer de trouver ce qui est arrivé à tous les quatre."
 
 #: conversationlist_maevalia.json:maevalia_r3b
-#, fuzzy
 msgid "Thank you for helping us."
-msgstr "Merci de nous avoir aider."
+msgstr "Merci de nous avoir aidés."
 
 #: conversationlist_maevalia.json:maevalia_r4
-#, fuzzy
 msgid "Yes, what about them? I saw that Falothen and Fayvara have returned."
 msgstr ""
 "Oui, qu’en est-il d’eux ? J’ai vu que Falothen et Fayvara sont de retour."
 
 #: conversationlist_maevalia.json:maevalia_r4:0
-#, fuzzy
 msgid ""
 "Yes, Falothen and Fayvara were alive. Morenavia and Ayell had been killed by "
 "the monsters."
 msgstr ""
-"Oui, Falothen et Fayvara sont vivants. Morenavia et Ayell ont était tuer par "
-"les monstres"
+"Oui, Falothen et Fayvara sont vivants. Morenavia et Ayell furent tuées par "
+"les monstres."
 
 #: conversationlist_maevalia.json:maevalia_r5
-#, fuzzy
 msgid ""
 "While I am very happy to hear that Falothen and Fayvara are alive and well, "
 "it saddens me to hear that we've lost not only Ayell, but also Morenavia."
 msgstr ""
 "Eh bien je suis très heureux d'entendre que Falothen et Fayvara sont vivants "
-"et en pleine forme, c'est triste pour moi d'entendre que nous avons perdu "
-"non seulement Ayell, mais aussi Morenavia"
+"et en pleine forme. Par contre je suis triste d'apprendre que nous avons "
+"perdu non seulement Ayell, mais aussi Morenavia."
 
 #: conversationlist_maevalia.json:maevalia_r6
 msgid ""
@@ -18793,18 +18778,16 @@ msgid ""
 msgstr ""
 
 #: conversationlist_maevalia.json:maevalia_r7
-#, fuzzy
 msgid "Things will never be the same again for us."
-msgstr "Les choses ne seront jamais les mêmes dorénavant pour nous."
+msgstr "Dorénavant, nos vies ne seront plus jamais les mêmes."
 
 #: conversationlist_maevalia.json:maevalia_r8
-#, fuzzy
 msgid ""
 "It is at least some comfort to know that we still have Falothen and Fayvara "
 "with us."
 msgstr ""
-"C'est au moins un peu de confort de savoir que nous avons toujours Falothen "
-"et Fayvara avec nous."
+"C'est au moins un peu réconfortant de savoir que nous avons toujours "
+"Falothen et Fayvara avec nous."
 
 #: conversationlist_maevalia.json:maevalia_r9
 msgid ""
@@ -18817,19 +18800,17 @@ msgid "Ok, I'll go see them in the basement."
 msgstr "Ok, Je vais aller les voir au sous-sol."
 
 #: conversationlist_maevalia.json:maevalia_r9:1
-#, fuzzy
 msgid "I've spoken to them both."
-msgstr "Je leur ai parlé tous les deux."
+msgstr "Je leur ai parlé à tous les deux."
 
 #: conversationlist_mazeg.json:mazeg_1
 #: conversationlist_prim_merchants.json:prim_priest_1
-#, fuzzy
 msgid ""
 "Welcome friend! Would you like to browse my selection of fine potions and "
 "ointments?"
 msgstr ""
-"Bienvenue l'ami ! Voudriez-vous regarder ma sélection de bonnes potions et "
-"des pommades ?"
+"Bienvenue l'ami ! Voudriez-vous regarder ma sélection de potions et de "
+"baumes les plus pures ?"
 
 #: conversationlist_mazeg.json:mazeg_1:0
 #: conversationlist_prim_merchants.json:prim_armorer_1:0
@@ -18848,9 +18829,8 @@ msgid ""
 msgstr ""
 
 #: conversationlist_mazeg.json:mazeg_2:0
-#, fuzzy
 msgid "Yes. Please show me what you have."
-msgstr "Oui.  S'il vous plaît montrez-moi ce que vous avez."
+msgstr "Oui.  Montrez-moi ce que vous avez s'il-vous-plaît."
 
 #: conversationlist_mazeg.json:mazeg_d
 msgid ""
@@ -18859,40 +18839,35 @@ msgid ""
 msgstr ""
 
 #: conversationlist_mazeg.json:mazeg_e_10
-#, fuzzy
 msgid ""
 "Please give my warmest greetings to my good friend Hjaldar. Tell him that I "
 "am well."
 msgstr ""
-"S’il vous plaît donner mes salutations les plus chaleureuses à mon cher ami "
-"Hjaldar. Dit-lui que je vais bien."
+"S’il-te-plaît donnes mes salutations les plus chaleureuses à mon cher ami "
+"Hjaldar. Dis-lui que je vais bien."
 
 #: conversationlist_mazeg.json:mazeg_e_10:0
 msgid "Will do. Thanks and goodbye."
 msgstr ""
 
 #: conversationlist_mazeg.json:mazeg_e_10:1
-#, fuzzy
 msgid "Whatever. Goodbye."
 msgstr "Peu importe. Au revoir."
 
 #: conversationlist_mazeg.json:mazeg_e_2
-#, fuzzy
 msgid "Hjaldar, my old friend! Tell me, how is he these days?"
-msgstr "Hjaldar, mon vieil ami! Dites-moi, comment est-il ces jours-ci?"
+msgstr "Hjaldar, mon vieil ami! Dis-moi, comment est-il ces jours-ci ?"
 
 #: conversationlist_mazeg.json:mazeg_e_2:0
-#, fuzzy
 msgid ""
 "He asked me to relay his greetings to you, and to tell you that he is well."
 msgstr ""
-"Il m'a demandé de vous retransmettre ses salutations et vous dire qu'il va "
+"Il m'a demandé de vous transmettre ses salutations et de vous dire qu'il va "
 "bien."
 
 #: conversationlist_mazeg.json:mazeg_e_2:1
-#, fuzzy
 msgid "He is sick, and getting worse every day."
-msgstr "Il est malade et sa empire chaque jour."
+msgstr "Il est malade et ça empire chaque jour."
 
 #: conversationlist_mazeg.json:mazeg_e_3
 msgid ""
@@ -18909,7 +18884,6 @@ msgid "You asked for some Lyson marrow extract."
 msgstr ""
 
 #: conversationlist_mazeg.json:mazeg_e_5b
-#, fuzzy
 msgid "Sure, I have it."
 msgstr "Bien sûr, je l'ai."
 
@@ -18931,53 +18905,49 @@ msgstr ""
 
 #: conversationlist_mazeg.json:mazeg_e_7a:1
 #: conversationlist_mazeg.json:mazeg_e_7b:1
-#, fuzzy
 msgid "Ouch, that much?! Is there anything you can do to lower the price?"
 msgstr ""
-"Aïe, Autant?! Est-il quelque chose que vous pouvez faire pour baisser le "
-"prix?"
+"Aïe, autant ?! Y a-t-il quelque chose que vous pouvez faire pour baisser le "
+"prix ?"
 
 #: conversationlist_mazeg.json:mazeg_e_7a:2
 #: conversationlist_mazeg.json:mazeg_e_7b:2
 #: conversationlist_mazeg.json:mazeg_e_8a:1
 #: conversationlist_mazeg.json:mazeg_e_8b:1
-#, fuzzy
 msgid "I'll return when I have the gold for it."
-msgstr "Je reviendrais quand j'aurais l'or pour ça."
+msgstr "Je reviendrai quand j'aurai l'or pour ça."
 
 #: conversationlist_mazeg.json:mazeg_e_7b
-#, fuzzy
 msgid ""
 "For 800 gold, I am willing to sell you some of it for my old friend Hjaldar."
 msgstr ""
-"Pour 800 or, je suis enclin à vous vendre un peu de cela pour mon vieil ami "
-"Hjaldar."
+"Pour 800 pièces d'or, je suis enclin à vous en vendre un peu pour mon vieil "
+"ami Hjaldar."
 
 #: conversationlist_mazeg.json:mazeg_e_7b:0
 #: conversationlist_mazeg.json:mazeg_e_8b:0
-#, fuzzy
 msgid "Here is 800 gold."
-msgstr "Voici 800 or"
+msgstr "Voici 800 pièces d'or."
 
 #: conversationlist_mazeg.json:mazeg_e_8a
-#, fuzzy
 msgid ""
 "No, 400 gold it is. That's a really good price, considering how hard this "
 "stuff is to find. Besides, if it weren't for Hjaldar, I wouldn't even be "
 "selling this to you."
 msgstr ""
-"Non, c'est 400 or . C'est un vraiment bon prix, considérant comment ceci est "
-"dur à trouver. En plus, sans Hjaldar, je ne vous le vendrais même pas."
+"Non, c'est 400 pièces d'or. C'est vraiment un bon prix, considérant la "
+"difficulté à n'en trouver. D'autant plus que si ce n'était d'Hjaldar, je ne "
+"vous en vendrais même pas."
 
 #: conversationlist_mazeg.json:mazeg_e_8b
-#, fuzzy
 msgid ""
 "No, 800 gold it is. That's a really good price, considering how hard this "
 "stuff is to find. Besides, if it weren't for Hjaldar, I wouldn't even be "
 "selling this to you."
 msgstr ""
-"Non, c'est 800 or . C'est un vraiment bon prix, considérant comment ceci est "
-"dur à trouver. En plus, sans Hjaldar, je ne vous le vendrais même pas."
+"Non, c'est 800 pièces d'or . C'est vraiment un bon prix, considérant la "
+"difficulté à n'en trouver. D'autant plus que si ce n'était d'Hjaldar, je ne "
+"vous en vendrais même pas."
 
 #: conversationlist_mazeg.json:mazeg_e_9
 msgid "Thanks. Here's some of the Lyson marrow extract."
@@ -19153,32 +19123,29 @@ msgstr ""
 #: conversationlist_minarra.json:minarra_completed_1:1
 #: conversationlist_minarra.json:minarra_completing_1:1
 #: conversationlist_minarra.json:minarra_first_1:2
-#, fuzzy
 msgid ""
 "You must have a good view of the surroundings up here. Have you seen "
 "anything interesting lately?"
 msgstr ""
-"Vous devez avoir une bonne vue des environs ici. Avez-vous vu quelque chose "
-"d’intéressant ces derniers temps ?"
+"Vous devez avoir une bonne vue des environs ici. Avez-vous aperçu quelque "
+"chose d’intéressant ces derniers temps ?"
 
 #: conversationlist_minarra.json:minarra_completing_1
 msgid "Thank you for helping me investigate this matter."
 msgstr ""
 
 #: conversationlist_minarra.json:minarra_first_1:0
-#, fuzzy
 msgid ""
 "You seem to have a lot of equipment around here. Do you have anything to "
 "trade?"
 msgstr ""
 "Vous semblez avoir beaucoup d'équipement par ici. Avez-vous quoi que ce soit "
-"à vendre?"
+"à vendre ?"
 
 #: conversationlist_minarra.json:minarra_first_1:1
 #: conversationlist_minarra.json:minarra_return_1:2
-#, fuzzy
 msgid "What do you do up here?"
-msgstr "Que faites-vous là haut?"
+msgstr "Que faites-vous ici en haut ?"
 
 #: conversationlist_minarra.json:minarra_first_2
 msgid ""
@@ -19196,24 +19163,21 @@ msgid "I did see something very interesting yesterday though."
 msgstr ""
 
 #: conversationlist_minarra.json:minarra_first_4:0
-#, fuzzy
 msgid "What was that?"
 msgstr "Qu'est-ce que c'était ?"
 
 #: conversationlist_minarra.json:minarra_first_4:1
 #: conversationlist_minarra.json:minarra_first_4_1:0
-#, fuzzy
 msgid "You mentioned the Duleian road, what's that?"
-msgstr "Vous avez mentionné la route de Duleian, qu'est-ce que c'est?"
+msgstr "Vous avez mentionné la route de Duleian, qu'est-ce que c'est ?"
 
 #: conversationlist_minarra.json:minarra_first_4:2
 #: conversationlist_minarra.json:minarra_first_4_1:1
-#, fuzzy
 msgid ""
 "You mentioned some problems in Loneford, what problems were you referring to?"
 msgstr ""
-"Vous avez mentionné quelques problèmes à Loneford, à quels problèmes faites-"
-"vous allusion?"
+"Vous avez mentionné quelques problèmes à Loneford. À quels problèmes faites-"
+"vous allusion ?"
 
 #: conversationlist_minarra.json:minarra_first_4:3
 msgid "Never mind that, I wanted to ask you what your duty is up here?"
@@ -19230,7 +19194,6 @@ msgid ""
 msgstr ""
 
 #: conversationlist_minarra.json:minarra_first_5:1
-#, fuzzy
 msgid "Have you seen anything interesting lately?"
 msgstr "Avez-vous vu quoi que ce soit d'intéressant récemment ?"
 
@@ -19244,35 +19207,32 @@ msgstr ""
 
 #: conversationlist_minarra.json:minarra_first_6:0
 #: conversationlist_minarra.json:minarra_first_6_1:0
-#, fuzzy
 msgid "You mentioned some problems in Loneford, what problems are that?"
 msgstr ""
-"Vous avez mentionné quelques problèmes à Loneford, de quels problèmes il "
-"s'agit ?"
+"Vous avez mentionné quelques problèmes à Loneford, de quels problèmes s'agit-"
+"il ?"
 
 #: conversationlist_minarra.json:minarra_first_6:1
 msgid "I wanted to ask you what your duty is up here?"
 msgstr ""
 
 #: conversationlist_minarra.json:minarra_look_1
-#, fuzzy
 msgid "You return. Did you find those men that we talked about?"
 msgstr ""
-"Vous etes de retour. Avez-vous trouver ces hommes dont nous avons parlé?"
+"Vous êtes de retour. Avez-vous trouver ces hommes dont nous vous avons parlé "
+"?"
 
 #: conversationlist_minarra.json:minarra_look_1:1
-#, fuzzy
 msgid "Yes, I killed them and recovered the three pieces of the painting."
-msgstr "Oui, je les ai tués et ai récupéré les trois pièces de la peinture."
+msgstr "Oui, je les ai tués et j'ai récupéré les trois morceaux de la peinture."
 
 #: conversationlist_minarra.json:minarra_look_1:2
-#, fuzzy
 msgid ""
 "I travelled west and found a travelling group of men, but they did not match "
 "the men you described."
 msgstr ""
 "J'ai voyagé à l'ouest et j'ai trouvé un groupe d'hommes voyageurs, mais ils "
-"n'ont pas correspondu aux hommes que vous avez décrits."
+"ne correspondaient pas aux hommes que vous avez décrits."
 
 #: conversationlist_minarra.json:minarra_look_2
 msgid ""
@@ -19281,25 +19241,23 @@ msgid ""
 msgstr ""
 
 #: conversationlist_minarra.json:minarra_look_3
-#, fuzzy
 msgid "That is excellent news indeed! I knew that we could trust you."
 msgstr ""
-"C'est des nouvelles excellentes en effet! Je savais que nous pourrions avoir "
-"confiance en vous."
+"Ce sont des nouvelles excellentes en effet! Je savais que nous pourrions "
+"avoir confiance en vous."
 
 #: conversationlist_minarra.json:minarra_look_4
 msgid "Your services to Feygard will be greatly appreciated."
 msgstr "Vos services pour Feygard seront grandement appréciés."
 
 #: conversationlist_minarra.json:minarra_look_5
-#, fuzzy
 msgid ""
 "Are you sure that they were not the ones? I have a keen eyesight, that's why "
 "I am up here. I was sure that they matched the description of the men."
 msgstr ""
-"Êtes-vous sûrs que ce n'étaient pas eux ? J'ai une excellente vision, c'est "
-"pourquoi je suis ici. J'était sûr qu'ils correspondaient à la description "
-"des hommes."
+"Es-tu certain que ce n'étaient pas eux ? J'ai une excellente vision, c'est "
+"pourquoi je suis ici en haut. J'étais sûre qu'ils correspondaient à la "
+"description de ces hommes."
 
 #: conversationlist_minarra.json:minarra_look_6
 msgid "I guess I will have to take your word for it."
@@ -19310,10 +19268,9 @@ msgid "You return. Was there something else you wanted?"
 msgstr ""
 
 #: conversationlist_minarra.json:minarra_return_1:0
-#, fuzzy
 msgid "Can you tell me again about those men you saw?"
 msgstr ""
-"Pouvez-vous me dire de nouveau a propos de ces hommes que vous avez vu ?"
+"Pouvez-vous me parler de nouveau a propos de ces hommes que vous avez vus ?"
 
 #: conversationlist_minarra.json:minarra_story_1
 msgid ""
@@ -19330,12 +19287,10 @@ msgid ""
 msgstr ""
 
 #: conversationlist_minarra.json:minarra_story_10:0
-#, fuzzy
 msgid "I will be back once they are dead. Anything else?"
 msgstr "Je serai de retour une fois qu'ils sont morts. Autre chose ?"
 
 #: conversationlist_minarra.json:minarra_story_11
-#, fuzzy
 msgid ""
 "Yes, I should also tell you that they most likely will try to persuade you "
 "into believing their story."
@@ -19344,7 +19299,6 @@ msgstr ""
 "persuader de croire en leur histoire."
 
 #: conversationlist_minarra.json:minarra_story_12
-#, fuzzy
 msgid ""
 "In particular, their leader, Rogorn, is a well known villain by Feygard. "
 "Nothing he says should be trusted."
@@ -19353,7 +19307,6 @@ msgstr ""
 "Rien de ce qu'il dit ne devrait être digne de confiance."
 
 #: conversationlist_minarra.json:minarra_story_13
-#, fuzzy
 msgid ""
 "I urge you not to listen to their lies. Their crimes must be punished in "
 "order to uphold the law."
@@ -19362,18 +19315,16 @@ msgstr ""
 "doivent être punis pour faire respecter la loi."
 
 #: conversationlist_minarra.json:minarra_story_13:0
-#, fuzzy
 msgid "I will return once the task is done."
-msgstr "Je reviendrais une fois que la tâche est faite."
+msgstr "Je reviendrais une fois que la tâche est complétée."
 
 #: conversationlist_minarra.json:minarra_story_2
-#, fuzzy
 msgid ""
 "But these men matched the description of some people that are wanted by the "
 "Feygard patrol."
 msgstr ""
-"Mais ces hommes correspondait à la description de certaines personnes qui "
-"sont recherchés par la patrouille de Feygard."
+"Mais ces hommes correspondaient à la description de certaines personnes qui "
+"sont recherchées par la patrouille de Feygard."
 
 #: conversationlist_minarra.json:minarra_story_3
 msgid ""
@@ -19383,7 +19334,6 @@ msgid ""
 msgstr ""
 
 #: conversationlist_minarra.json:minarra_story_4
-#, fuzzy
 msgid ""
 "Their leader, Rogorn, is a particularly savage man according to the reports "
 "from Feygard that I have read."
@@ -19405,18 +19355,15 @@ msgid ""
 msgstr ""
 
 #: conversationlist_minarra.json:minarra_story_6:0
-#, fuzzy
 msgid "I could go look for them if you want."
-msgstr "Je pourrais aller les chercher si vous le souhaitez."
+msgstr "Je pourrais aller à leur recherche si vous le souhaitez."
 
 #: conversationlist_minarra.json:minarra_story_6:1
 #: conversationlist_ulirfendor.json:ulirfendor_17:1
-#, fuzzy
 msgid "Well, good luck with that."
 msgstr "Eh bien, bonne chance avec ça."
 
 #: conversationlist_minarra.json:minarra_story_7
-#, fuzzy
 msgid ""
 "Thank you. Good luck yourself. Now, if you will excuse me, I need to keep my "
 "eyes on the road."
@@ -19438,9 +19385,8 @@ msgid ""
 msgstr ""
 
 #: conversationlist_minarra.json:minarra_trade_2
-#, fuzzy
 msgid "Sure, take a look."
-msgstr "Bien sûr, jetez un oeil."
+msgstr "Bien sûr, jetez un œil."
 
 #: conversationlist_minarra.json:minarra_trade_rej
 msgid ""
@@ -19450,16 +19396,15 @@ msgstr ""
 
 #: conversationlist_norath.json:norath_1:0
 #: conversationlist_norath.json:norath_2:0
-#, fuzzy
 msgid "I was sent by Jhaeld to ask about your missing wife."
 msgstr "J'ai été envoyé par Jhaeld au sujet de la disparition de votre femme."
 
 #: conversationlist_norath.json:norath_2
-#, fuzzy
 msgid ""
 "Me? No, I don't have anything to sell you. Does this look like a shop to you?"
 msgstr ""
-"Moi? Non, je n'ai rien à vous vendre. Cela ressemble à un magasin pour vous?"
+"Moi ? Non, je n'ai rien à vous vendre. Vous croyez que ça ressemble à un "
+"magasin ici ?"
 
 #: conversationlist_norath.json:norath_3
 msgid ""
@@ -19468,18 +19413,16 @@ msgid ""
 msgstr ""
 
 #: conversationlist_norath.json:norath_3:0
-#, fuzzy
 msgid "Why, what's wrong?"
-msgstr "Pourquoi, quel est le problème?"
+msgstr "Pourquoi, quel est le problème ?"
 
 #: conversationlist_norath.json:norath_4
-#, fuzzy
 msgid "My wife, Bethir. She is gone, and no one seems to know where she is."
 msgstr ""
-"Ma femme, Bethir. Elle est partie, et personne ne semble savoir où elle est."
+"Ma femme, Bethir. Elle est disparue, et personne ne semble savoir où elle "
+"est."
 
 #: conversationlist_norath.json:norath_5
-#, fuzzy
 msgid ""
 "I even went so far as to ask the guards to look for her, but she is nowhere "
 "to be found."
@@ -19494,9 +19437,8 @@ msgstr ""
 
 #: conversationlist_norath.json:norath_5:1
 #: conversationlist_norath.json:norath_6:0
-#, fuzzy
 msgid "Where do you think she has gone?"
-msgstr "Où pensez-vous qu'elle est partie?"
+msgstr "Où pensez-vous qu'elle aurait pu aller ?"
 
 #: conversationlist_norath.json:norath_5:2
 #: conversationlist_norath.json:norath_6:1
@@ -19511,9 +19453,8 @@ msgid ""
 msgstr ""
 
 #: conversationlist_norath.json:norath_7
-#, fuzzy
 msgid "To be quite honest, I have no idea."
-msgstr "Pour être tout à fait honnête, je n'en ai aucune idée."
+msgstr "Pour être franc, je n'en ai aucune idée."
 
 #: conversationlist_norath.json:norath_jhaeld1
 msgid "What do you want me to say? She is missing."
@@ -19536,28 +19477,24 @@ msgid "Now, if you'll excuse me, I have things to tend to."
 msgstr ""
 
 #: conversationlist_ogam.json:ogam_1
-#, fuzzy
 msgid "Belief. Power. Struggle."
-msgstr "Croyance. Puissance. Lutte."
+msgstr "Croyance. Puissance. Résistance."
 
 #: conversationlist_ogam.json:ogam_1:1
-#, fuzzy
 msgid "I was told to see you."
-msgstr "On m’a dit de vous voir."
+msgstr "On m’a dit de venir vous voir."
 
 #: conversationlist_ogam.json:ogam_2
 msgid "Backwards is the burden high and low."
 msgstr ""
 
 #: conversationlist_ogam.json:ogam_2:2
-#, fuzzy
 msgid "Hello? Umar in the Fallhaven Thieves' Guild sent me to see you."
 msgstr ""
 "Salut ? Omar dans la Guilde des voleurs de Fallhaven m’a envoyé pour vous "
 "voir."
 
 #: conversationlist_ogam.json:ogam_3 conversationlist_ogam.json:ogam_7
-#, fuzzy
 msgid "Hiding in the Shadow."
 msgstr "Se cachant dans l'Ombre."
 
@@ -19574,18 +19511,16 @@ msgid "The lawful and the chaotic."
 msgstr ""
 
 #: conversationlist_ogam.json:ogam_5:0 conversationlist_ogam.json:ogam_7:2
-#, fuzzy
 msgid "Hello? Do you know how I can reach Lodar's hideaway?"
-msgstr "Binjour ? Savez-vous comment je peux atteindre le refuge de Lodar ?"
+msgstr "Bonjour ? Savez-vous comment je peux atteindre le refuge de Lodar ?"
 
 #: conversationlist_ogam.json:ogam_6
 msgid "Yes. The true form. Behold."
 msgstr ""
 
 #: conversationlist_ogam.json:ogam_7:0
-#, fuzzy
 msgid "The Shadow?"
-msgstr "L'Ombre?"
+msgstr "L'Ombre ?"
 
 #: conversationlist_ogam.json:ogam_7:1
 msgid "Are you even listening to what I say?"
@@ -19604,9 +19539,8 @@ msgid "Ok, halfway between two places. Some rocks?"
 msgstr ""
 
 #: conversationlist_ogam.json:ogam_lodar_2:1
-#, fuzzy
 msgid "Uh. Could you repeat that?"
-msgstr "Euh. Pourriez-vous répéter cela?"
+msgstr "Euh. Pourriez-vous répéter cela ?"
 
 #: conversationlist_ogam.json:ogam_lodar_3
 msgid "Guardian. Glow of the Shadow."
@@ -19625,19 +19559,16 @@ msgid "Turning. Twisting. Clear form."
 msgstr ""
 
 #: conversationlist_ogam.json:ogam_lodar_4:0
-#, fuzzy
 msgid "What does that mean?"
-msgstr "Qu'est-ce que cela signifie?"
+msgstr "Qu'est-ce que cela signifie ?"
 
 #: conversationlist_oluag.json:oluag_1_1
-#, fuzzy
 msgid "Hello. I am Oluag."
 msgstr "Bonjour. Je suis Oluag."
 
 #: conversationlist_oluag.json:oluag_1_1:0
-#, fuzzy
 msgid "What are you doing here around these crates?"
-msgstr "Que faites-vous ici, autour de ces caisses?"
+msgstr "Que faites-vous ici, autour de ces caisses ?"
 
 #: conversationlist_oluag.json:oluag_2
 msgid ""
@@ -19650,30 +19581,26 @@ msgid "What grave?"
 msgstr ""
 
 #: conversationlist_oluag.json:oluag_2:1
-#, fuzzy
 msgid "Nothing, really? This sounds suspicious."
 msgstr "Rien, vraiment ? Cela semble suspect."
 
 #: conversationlist_oluag.json:oluag_boxes_1
-#, fuzzy
 msgid ""
 "No no, nothing suspicious at all. It's not like they contain any contraband "
 "or anything like that, hah!"
 msgstr ""
 "Non non, rien de suspect. C'est pas comme si ils contiennent des "
-"marchandises de contrebande ou quelque chose comme ça, ah!"
+"marchandises de contrebande ou quelque chose comme ça, ah !"
 
 #: conversationlist_oluag.json:oluag_boxes_1:0
 msgid "What was that about a grave?"
 msgstr ""
 
 #: conversationlist_oluag.json:oluag_boxes_1:1
-#, fuzzy
 msgid "Ok then. I guess I didn't see anything."
 msgstr "Bon d'accord. Je suppose que je n’ai rien vu."
 
 #: conversationlist_oluag.json:oluag_goodbye
-#, fuzzy
 msgid "Right. Goodbye."
 msgstr "Bien. Au revoir."
 
@@ -27375,11 +27302,10 @@ msgid ""
 msgstr ""
 
 #: conversationlist_wrye.json:wrye_story_13
-#, fuzzy
 msgid ""
 "If you want to help me, please find out what happened to my son, Rincel."
 msgstr ""
-"Si vous voulez m'aider, s'il vous plaît trouvé ce qui est arrivé à mon fils, "
+"Si tu veux m'aider, s'il-te-plaît trouves ce qui est arrivé à mon fils, "
 "Rincel."
 
 #: conversationlist_wrye.json:wrye_story_13:0
