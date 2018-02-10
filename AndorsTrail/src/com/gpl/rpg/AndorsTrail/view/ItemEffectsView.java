@@ -5,8 +5,10 @@ import android.util.AttributeSet;
 import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+
 import com.gpl.rpg.AndorsTrail.R;
 import com.gpl.rpg.AndorsTrail.model.item.ItemTraits_OnEquip;
+import com.gpl.rpg.AndorsTrail.model.item.ItemTraits_OnHitReceived;
 import com.gpl.rpg.AndorsTrail.model.item.ItemTraits_OnUse;
 
 import java.util.Arrays;
@@ -19,9 +21,13 @@ public final class ItemEffectsView extends LinearLayout {
 	private final ItemEffectsView_OnUse itemeffect_onuse;
 	private final ItemEffectsView_OnUse itemeffect_onhit;
 	private final ItemEffectsView_OnUse itemeffect_onkill;
+	private final ItemEffectsView_OnHitReceived itemeffect_onhitreceived;
+	private final ItemEffectsView_OnDeath itemeffect_ondeath;
 	private final TextView itemeffect_onuse_title;
 	private final TextView itemeffect_onhit_title;
 	private final TextView itemeffect_onkill_title;
+	private final TextView itemeffect_onhitreceived_title;
+	private final TextView itemeffect_ondeath_title;
 
 	public ItemEffectsView(Context context, AttributeSet attr) {
 		super(context, attr);
@@ -36,9 +42,13 @@ public final class ItemEffectsView extends LinearLayout {
 		itemeffect_onuse = (ItemEffectsView_OnUse) findViewById(R.id.itemeffect_onuse);
 		itemeffect_onhit = (ItemEffectsView_OnUse) findViewById(R.id.itemeffect_onhit);
 		itemeffect_onkill = (ItemEffectsView_OnUse) findViewById(R.id.itemeffect_onkill);
+		itemeffect_onhitreceived = (ItemEffectsView_OnHitReceived) findViewById(R.id.itemeffect_onhitreceived);
+		itemeffect_ondeath = (ItemEffectsView_OnDeath) findViewById(R.id.itemeffect_ondeath);
 		itemeffect_onuse_title = (TextView) findViewById(R.id.itemeffect_onuse_title);
 		itemeffect_onhit_title = (TextView) findViewById(R.id.itemeffect_onhit_title);
 		itemeffect_onkill_title = (TextView) findViewById(R.id.itemeffect_onkill_title);
+		itemeffect_onhitreceived_title = (TextView) findViewById(R.id.itemeffect_onhitreceived_title);
+		itemeffect_ondeath_title = (TextView) findViewById(R.id.itemeffect_ondeath_title);
 	}
 
 	public void update(
@@ -46,6 +56,8 @@ public final class ItemEffectsView extends LinearLayout {
 			Collection<ItemTraits_OnUse> effects_use,
 			Collection<ItemTraits_OnUse> effects_hit,
 			Collection<ItemTraits_OnUse> effects_kill,
+			Collection<ItemTraits_OnHitReceived> effects_hitreceived,
+			ItemTraits_OnUse effects_death,
 			boolean isWeapon
 			) {
 
@@ -84,6 +96,20 @@ public final class ItemEffectsView extends LinearLayout {
 			itemeffect_onkill_title.setVisibility(View.VISIBLE);
 		} else {
 			itemeffect_onkill_title.setVisibility(View.GONE);
+		}
+
+		itemeffect_onhitreceived.update(effects_hitreceived);
+		if (effects_hitreceived != null) {
+			itemeffect_onhitreceived_title.setVisibility(View.VISIBLE);
+		} else {
+			itemeffect_onhitreceived_title.setVisibility(View.GONE);
+		}
+
+		itemeffect_ondeath.update(effects_death);
+		if (effects_death != null) {
+			itemeffect_ondeath_title.setVisibility(View.VISIBLE);
+		} else {
+			itemeffect_ondeath_title.setVisibility(View.GONE);
 		}
 	}
 }

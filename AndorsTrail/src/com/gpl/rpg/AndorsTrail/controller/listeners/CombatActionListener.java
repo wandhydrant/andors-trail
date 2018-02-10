@@ -1,6 +1,7 @@
 package com.gpl.rpg.AndorsTrail.controller.listeners;
 
 import com.gpl.rpg.AndorsTrail.controller.AttackResult;
+import com.gpl.rpg.AndorsTrail.model.ability.ActorConditionEffect;
 import com.gpl.rpg.AndorsTrail.model.actor.Monster;
 
 public interface CombatActionListener {
@@ -13,4 +14,8 @@ public interface CombatActionListener {
 	void onPlayerStartedFleeing();
 	void onPlayerFailedFleeing();
 	void onPlayerDoesNotHaveEnoughAP();
+	void onPlayerTauntsMonster(Monster attacker);
+	void onPlayerReceviesActorCondition(ActorConditionEffect conditionEffect);
+	void onMonsterReceivesActorCondition(ActorConditionEffect conditionEffect, Monster target);
+	
 }

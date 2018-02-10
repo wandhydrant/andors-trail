@@ -5,6 +5,7 @@ import java.util.Arrays;
 import java.util.List;
 
 import com.gpl.rpg.AndorsTrail.model.ability.ActorCondition;
+import com.gpl.rpg.AndorsTrail.model.item.ItemTraits_OnHitReceived;
 import com.gpl.rpg.AndorsTrail.model.item.ItemTraits_OnUse;
 import com.gpl.rpg.AndorsTrail.util.Coord;
 import com.gpl.rpg.AndorsTrail.util.CoordRect;
@@ -34,6 +35,8 @@ public class Actor {
 	public int blockChance;
 	public int damageResistance;
 	public ItemTraits_OnUse[] onHitEffects;
+	public ItemTraits_OnHitReceived[] onHitReceivedEffects;
+	public ItemTraits_OnUse onDeathEffects;
 	public boolean hasVFXRunning = false;
 	public long vfxStartTime = 0;
 	public int vfxDuration = 0;
@@ -66,7 +69,10 @@ public class Actor {
 	public int getDamageResistance() { return damageResistance; }
 	public ItemTraits_OnUse[] getOnHitEffects() { return onHitEffects; }
 	public List<ItemTraits_OnUse> getOnHitEffectsAsList() { return onHitEffects == null ? null : Arrays.asList(onHitEffects); }
-
+	public ItemTraits_OnHitReceived[] getOnHitReceivedEffects() { return onHitReceivedEffects; }
+	public List<ItemTraits_OnHitReceived> getOnHitReceivedEffectsAsList() { return onHitReceivedEffects == null ? null : Arrays.asList(onHitReceivedEffects); }
+	public ItemTraits_OnUse getOnDeathEffects() { return onDeathEffects; }
+	
 	public boolean hasCriticalSkillEffect() { return getCriticalSkill() != 0; }
 	public boolean hasCriticalMultiplierEffect() { float m = getCriticalMultiplier(); return m != 0 && m != 1; }
 	public boolean hasCriticalAttacks() { return hasCriticalSkillEffect() && hasCriticalMultiplierEffect(); }

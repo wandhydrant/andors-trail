@@ -87,6 +87,8 @@ public final class MonsterInfoActivity extends Activity {
 				null,
 				monster.getOnHitEffectsAsList(),
 				null,
+				monster.getOnHitReceivedEffectsAsList(),
+				monster.getOnDeathEffects(),
 				false);
 		hp.update(monster.getMaxHP(), monster.getCurrentHP());
 		monsterinfo_max_ap.setText(Integer.toString(monster.getMaxAP()));

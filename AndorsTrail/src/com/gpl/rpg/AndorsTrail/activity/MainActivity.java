@@ -29,6 +29,8 @@ import com.gpl.rpg.AndorsTrail.controller.listeners.CombatActionListener;
 import com.gpl.rpg.AndorsTrail.controller.listeners.CombatTurnListener;
 import com.gpl.rpg.AndorsTrail.controller.listeners.PlayerMovementListener;
 import com.gpl.rpg.AndorsTrail.controller.listeners.WorldEventListener;
+import com.gpl.rpg.AndorsTrail.model.ability.ActorCondition;
+import com.gpl.rpg.AndorsTrail.model.ability.ActorConditionEffect;
 import com.gpl.rpg.AndorsTrail.model.actor.Monster;
 import com.gpl.rpg.AndorsTrail.model.actor.Player;
 import com.gpl.rpg.AndorsTrail.model.item.ItemContainer.ItemEntry;
@@ -191,6 +193,8 @@ public final class MainActivity
 		controllers.movementController.playerMovementListeners.remove(this);
 		controllers.combatController.combatActionListeners.remove(this);
 		controllers.combatController.combatTurnListeners.remove(this);
+		controllers.actorStatsController.combatActionListeners.remove(this);
+		controllers.skillController.combatActionListeners.remove(this);
 		controllers.mapController.worldEventListeners.remove(this);
 	}
 
@@ -198,6 +202,8 @@ public final class MainActivity
 		controllers.mapController.worldEventListeners.add(this);
 		controllers.combatController.combatTurnListeners.add(this);
 		controllers.combatController.combatActionListeners.add(this);
+		controllers.actorStatsController.combatActionListeners.add(this);
+		controllers.skillController.combatActionListeners.add(this);
 		controllers.movementController.playerMovementListeners.add(this);
 		statusview.subscribe();
 		quickitemview.subscribe();
@@ -492,6 +498,69 @@ public final class MainActivity
 	@Override
 	public void onPlayerDoesNotHaveEnoughAP() {
 		message(getString(R.string.combat_not_enough_ap));
+	}
+	
+	@Override
+	public void onPlayerTauntsMonster(Monster attacker) {
+		message(getString(R.string.combat_taunt_monster, attacker.getName()));
+	}
+	
+	@Override
+	public void onPlayerReceviesActorCondition(ActorConditionEffect effect) {
+		StringBuilder sb = new StringBuilder();
+		if (effect.isImmunity()) {
+			sb.append(effect.conditionType.name);
+		} else if (effect.isRemovalEffect()) {
+			sb.append(effect.conditionType.name);
+		} else {
+			sb.append(effect.conditionType.name);
+			if (effect.magnitude > 1) {
+				sb.append(" x");
+				sb.append(effect.magnitude);
+			}
+		}
+		if (ActorCondition.isTemporaryEffect(effect.duration)) {
+			sb.append(' ');
+			sb.append(getString(R.string.iteminfo_effect_duration, effect.duration));
+		}
+		String msg = sb.toString();
+
+		if (effect.isImmunity()) {
+			message(getString(R.string.combat_condition_player_immune, msg));
+		} else if (effect.isRemovalEffect()) {
+			message(getString(R.string.combat_condition_player_clear, msg));
+		} else {
+			message(getString(R.string.combat_condition_player_apply, msg));
+		}
+	}
+	
+	@Override
+	public void onMonsterReceivesActorCondition(ActorConditionEffect effect, Monster target) {
+		StringBuilder sb = new StringBuilder();
+		if (effect.isImmunity()) {
+			sb.append(effect.conditionType.name);
+		} else if (effect.isRemovalEffect()) {
+			sb.append(effect.conditionType.name);
+		} else {
+			sb.append(effect.conditionType.name);
+			if (effect.magnitude > 1) {
+				sb.append(" x");
+				sb.append(effect.magnitude);
+			}
+		}
+		if (ActorCondition.isTemporaryEffect(effect.duration)) {
+			sb.append(' ');
+			sb.append(getString(R.string.iteminfo_effect_duration, effect.duration));
+		}
+		String msg = sb.toString();
+
+		if (effect.isImmunity()) {
+			message(getString(R.string.combat_condition_monster_immune, target.getName(), msg));
+		} else if (effect.isRemovalEffect()) {
+			message(getString(R.string.combat_condition_monster_clear, target.getName(), msg));
+		} else {
+			message(getString(R.string.combat_condition_monster_apply, target.getName(), msg));
+		}
 	}
 
 }
