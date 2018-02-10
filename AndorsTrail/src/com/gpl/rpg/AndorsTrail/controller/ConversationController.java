@@ -94,6 +94,9 @@ public final class ConversationController {
 			case alignmentChange:
 				addAlignmentReward(player, effect.effectID, effect.value);
 				break;
+			case alignmentSet:
+				setAlignmentReward(player, effect.effectID, effect.value);
+				break;
 			case giveItem:
 				addItemReward(effect.effectID, effect.value, result);
 				break;
@@ -171,6 +174,11 @@ public final class ConversationController {
 
 	private void addAlignmentReward(Player player, String faction, int delta) {
 		player.addAlignment(faction, delta);
+		MovementController.refreshMonsterAggressiveness(world.model.currentMap, world.model.player);
+	}
+
+	private void setAlignmentReward(Player player, String faction, int delta) {
+		player.setAlignment(faction, delta);
 		MovementController.refreshMonsterAggressiveness(world.model.currentMap, world.model.player);
 	}
 
@@ -295,6 +303,7 @@ public final class ConversationController {
 				break;
 			case factionScore:
 				result = player.getAlignment(requirement.requireID) >= requirement.value;
+				break;
 			default:
 				result =  true;
 		}

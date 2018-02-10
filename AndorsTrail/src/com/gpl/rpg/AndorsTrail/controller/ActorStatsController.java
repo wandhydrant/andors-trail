@@ -365,7 +365,7 @@ public final class ActorStatsController {
 			return;
 		}
 
-		decreaseDurationAndRemoveConditions(monster);
+		if (!isFullRound) decreaseDurationAndRemoveConditions(monster);
 	}
 
 	private void applyStatsEffects(Actor actor, boolean isFullRound) {

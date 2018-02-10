@@ -8,6 +8,7 @@ public final class ScriptEffect {
 		, actorCondition
 		, actorConditionImmunity
 		, alignmentChange
+		, alignmentSet
 		, giveItem
 		, createTimer
 		, spawnAll
