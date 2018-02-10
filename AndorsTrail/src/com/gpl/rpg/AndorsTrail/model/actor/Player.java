@@ -203,6 +203,9 @@ public final class Player extends Actor {
 		if (v == null) return 0;
 		return v;
 	}
+	public void setAlignment(String faction, int newValue) {
+		alignments.put(faction, newValue);
+	}
 	public void addAlignment(String faction, int delta) {
 		int newValue = getAlignment(faction) + delta;
 		alignments.put(faction, newValue);
