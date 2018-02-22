@@ -482,9 +482,8 @@ public final class MainView extends SurfaceView
 	}
 	
 	private void doDrawRect_Above(Canvas canvas, CoordRect area) {
-		if (!tryDrawMapBitmap(canvas, area, aboveBitmap)) {
-			tryDrawMapLayer(canvas, area, currentTileMap.currentLayout.layerAbove);
-		}
+		tryDrawMapLayer(canvas, area, currentTileMap.currentLayout.layerAbove);
+		tryDrawMapLayer(canvas, area, currentTileMap.currentLayout.layerTop);
 		
 		if (model.uiSelections.selectedPosition != null) {
 			if (model.uiSelections.selectedMonster != null) {

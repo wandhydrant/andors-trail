@@ -243,9 +243,10 @@ public final class TMXMapTranslator {
 	private static final String LAYERNAME_GROUND = "ground";
 	private static final String LAYERNAME_OBJECTS = "objects";
 	private static final String LAYERNAME_ABOVE = "above";
+	private static final String LAYERNAME_TOP = "top";
 	private static final String LAYERNAME_WALKABLE = "walkable";
 	private static final String PROPNAME_FILTER = "colorfilter";
-	private static final SetOfLayerNames defaultLayerNames = new SetOfLayerNames(LAYERNAME_GROUND, LAYERNAME_OBJECTS, LAYERNAME_ABOVE, LAYERNAME_WALKABLE);
+	private static final SetOfLayerNames defaultLayerNames = new SetOfLayerNames(LAYERNAME_GROUND, LAYERNAME_OBJECTS, LAYERNAME_ABOVE, LAYERNAME_TOP, LAYERNAME_WALKABLE);
 
 	private static LayeredTileMap transformMap(TMXLayerMap map, TileCache tileCache) {
 		final Size mapSize = new Size(map.width, map.height);
@@ -290,6 +291,7 @@ public final class TMXMapTranslator {
 						if (prop.name.equalsIgnoreCase(LAYERNAME_GROUND)) layerNames.groundLayerName = prop.value;
 						else if (prop.name.equalsIgnoreCase(LAYERNAME_OBJECTS)) layerNames.objectsLayerName = prop.value;
 						else if (prop.name.equalsIgnoreCase(LAYERNAME_ABOVE)) layerNames.aboveLayersName = prop.value;
+						else if (prop.name.equalsIgnoreCase(LAYERNAME_TOP)) layerNames.topLayersName = prop.value;
 						else if (prop.name.equalsIgnoreCase(LAYERNAME_WALKABLE)) layerNames.walkableLayersName = prop.value;
 						else if (AndorsTrailApplication.DEVELOPMENT_VALIDATEDATA) {
 							if (!requirementPropertiesNames.contains(prop.name))
@@ -331,9 +333,10 @@ public final class TMXMapTranslator {
 		final MapLayer layerGround = transformMapLayer(layersPerLayerName, layerNames.groundLayerName, srcMap, tileCache, area, usedTileIDs);
 		final MapLayer layerObjects = transformMapLayer(layersPerLayerName, layerNames.objectsLayerName, srcMap, tileCache, area, usedTileIDs);
 		final MapLayer layerAbove = transformMapLayer(layersPerLayerName, layerNames.aboveLayersName, srcMap, tileCache, area, usedTileIDs);
+		final MapLayer layerTop = transformMapLayer(layersPerLayerName, layerNames.topLayersName, srcMap, tileCache, area, usedTileIDs);
 		boolean[][] isWalkable = transformWalkableMapLayer(findLayer(layersPerLayerName, layerNames.walkableLayersName, srcMap.name), area);
 		byte[] layoutHash = calculateLayoutHash(srcMap, layersPerLayerName, layerNames);
-		return new MapSection(layerGround, layerObjects, layerAbove, isWalkable, layoutHash);
+		return new MapSection(layerGround, layerObjects, layerAbove, layerTop, isWalkable, layoutHash);
 	}
 
 	private static TMXLayer findLayer(HashMap<String, TMXLayer> layersPerLayerName, String layerName, String mapName) {
@@ -434,17 +437,20 @@ public final class TMXMapTranslator {
 		public String groundLayerName;
 		public String objectsLayerName;
 		public String aboveLayersName;
+		public String topLayersName;
 		public String walkableLayersName;
 		public SetOfLayerNames() {
 			this.groundLayerName = null;
 			this.objectsLayerName = null;
 			this.aboveLayersName = null;
+			this.topLayersName = null;
 			this.walkableLayersName = null;
 		}
-		public SetOfLayerNames(String groundLayerName, String objectsLayerName, String aboveLayersName, String walkableLayersName) {
+		public SetOfLayerNames(String groundLayerName, String objectsLayerName, String aboveLayersName, String topLayersName, String walkableLayersName) {
 			this.groundLayerName = groundLayerName;
 			this.objectsLayerName = objectsLayerName;
 			this.aboveLayersName = aboveLayersName;
+			this.topLayersName = topLayersName;
 			this.walkableLayersName = walkableLayersName;
 		}
 	}
