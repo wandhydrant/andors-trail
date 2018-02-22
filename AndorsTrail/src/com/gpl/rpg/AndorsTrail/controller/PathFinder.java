@@ -1,5 +1,6 @@
 package com.gpl.rpg.AndorsTrail.controller;
 
+import com.gpl.rpg.AndorsTrail.model.actor.Monster;
 import com.gpl.rpg.AndorsTrail.util.Coord;
 import com.gpl.rpg.AndorsTrail.util.CoordRect;
 
@@ -21,10 +22,10 @@ public class PathFinder {
 	}
 
 	public interface EvaluateWalkable {
-		public boolean isWalkable(CoordRect r);
+		public boolean isWalkable(CoordRect r, Monster m);
 	}
 
-	public boolean findPathBetween(final CoordRect from, final Coord to, CoordRect nextStep) {
+	public boolean findPathBetween(final CoordRect from, final Coord to, CoordRect nextStep, Monster m) {
 		int iterations = 0;
 		if (from.contains(to)) return false;
 
@@ -44,19 +45,19 @@ public class PathFinder {
 
 			if (from.isAdjacentTo(p)) return true;
 
-			p.x -= 1; visit(nextStep, measureDistanceTo);
-			p.x += 2; visit(nextStep, measureDistanceTo);
-			p.x -= 1; p.y -= 1; visit(nextStep, measureDistanceTo);
-			p.y += 2; visit(nextStep, measureDistanceTo);
-			p.x -= 1; visit(nextStep, measureDistanceTo);
-			p.x += 2; visit(nextStep, measureDistanceTo);
-			p.y -= 2; visit(nextStep, measureDistanceTo);
-			p.x -= 2; visit(nextStep, measureDistanceTo);
+			p.x -= 1; visit(nextStep, measureDistanceTo, m);
+			p.x += 2; visit(nextStep, measureDistanceTo, m);
+			p.x -= 1; p.y -= 1; visit(nextStep, measureDistanceTo, m);
+			p.y += 2; visit(nextStep, measureDistanceTo, m);
+			p.x -= 1; visit(nextStep, measureDistanceTo, m);
+			p.x += 2; visit(nextStep, measureDistanceTo, m);
+			p.y -= 2; visit(nextStep, measureDistanceTo, m);
+			p.x -= 2; visit(nextStep, measureDistanceTo, m);
 		}
 		return false;
 	}
 
-	private void visit(CoordRect r, Coord measureDistanceTo) {
+	private void visit(CoordRect r, Coord measureDistanceTo, Monster m) {
 		final int x = r.topLeft.x;
 		final int y = r.topLeft.y;
 
@@ -68,7 +69,7 @@ public class PathFinder {
 		final int i = (y * maxWidth) + x;
 		if (visited[i]) return;
 		visited[i] = true;
-		if (!map.isWalkable(r)) return;
+		if (!map.isWalkable(r, m)) return;
 
 		int dx = (measureDistanceTo.x - x);
 		int dy = (measureDistanceTo.y - y);

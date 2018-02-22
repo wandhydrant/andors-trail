@@ -92,6 +92,7 @@ public final class TMXMapTranslator {
 						mapObjects.add(MapObject.createMapChangeArea(position, object.name, map, place, group.name));
 					} else if (object.type.equalsIgnoreCase("spawn")) {
 						boolean isActiveForNewGame = true;
+						boolean ignoreAreas = false;
 						int maxQuantity = 1;
 						int spawnChance = 10;
 						String spawnGroup = object.name;
@@ -108,6 +109,8 @@ public final class TMXMapTranslator {
 								spawnChance = Integer.parseInt(p.value);
 							} else if (p.name.equalsIgnoreCase("active")) {
 								isActiveForNewGame = Boolean.parseBoolean(p.value);
+							} else if (p.name.equalsIgnoreCase("ignoreAreas")) {
+								ignoreAreas = Boolean.parseBoolean(p.value);
 							} else if (p.name.equalsIgnoreCase("spawngroup")) {
 								spawnGroup = p.value;
 							} else if (AndorsTrailApplication.DEVELOPMENT_VALIDATEDATA) {
@@ -135,6 +138,7 @@ public final class TMXMapTranslator {
 								,object.name
 								,monsterTypeIDs
 								,isUnique
+								,ignoreAreas
 								,group.name
 								,isActiveForNewGame
 						);
