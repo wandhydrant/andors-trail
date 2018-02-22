@@ -159,6 +159,12 @@ public final class WorldMapController {
 		File noMediaFile = new File(dir, ".nomedia");
 		if (!noMediaFile.exists()) noMediaFile.createNewFile();
 	}
+	public static boolean fileForMapExists(PredefinedMap map) {
+		if (map.lastSeenLayoutHash.length() > 0) {
+			return getPngFile(map.name + '.' + map.lastSeenLayoutHash).exists();
+		}
+		return getPngFile(map.name).exists();
+	}
 	private static File getFileForMap(PredefinedMap map, boolean verifyFileExists) {
 		if (map.lastSeenLayoutHash.length() > 0) {
 			File fileWithHash = getPngFile(map.name + '.' + map.lastSeenLayoutHash);
