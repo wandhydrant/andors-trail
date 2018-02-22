@@ -10,7 +10,11 @@ import com.gpl.rpg.AndorsTrail.model.ModelContainer;
 import com.gpl.rpg.AndorsTrail.model.actor.Monster;
 import com.gpl.rpg.AndorsTrail.model.actor.Player;
 import com.gpl.rpg.AndorsTrail.model.item.Loot;
-import com.gpl.rpg.AndorsTrail.model.map.*;
+import com.gpl.rpg.AndorsTrail.model.map.LayeredTileMap;
+import com.gpl.rpg.AndorsTrail.model.map.MapObject;
+import com.gpl.rpg.AndorsTrail.model.map.MonsterSpawnArea;
+import com.gpl.rpg.AndorsTrail.model.map.PredefinedMap;
+import com.gpl.rpg.AndorsTrail.model.map.TMXMapTranslator;
 import com.gpl.rpg.AndorsTrail.resource.tiles.TileCollection;
 import com.gpl.rpg.AndorsTrail.util.Coord;
 import com.gpl.rpg.AndorsTrail.util.L;
@@ -19,12 +23,19 @@ import com.gpl.rpg.AndorsTrail.util.TimedMessageTask;
 public final class MovementController implements TimedMessageTask.Callback {
 	private final ControllerContext controllers;
 	private final WorldContext world;
-	private final TimedMessageTask movementHandler;
+	//TODO restore final modifier before release
+	private TimedMessageTask movementHandler;
 	public final PlayerMovementListeners playerMovementListeners = new PlayerMovementListeners();
 
 	public MovementController(ControllerContext controllers, WorldContext world) {
 		this.controllers = controllers;
 		this.world = world;
+		this.movementHandler = new TimedMessageTask(this, Constants.MINIMUM_INPUT_INTERVAL, false);
+	}
+	
+	//TODO remove this method before release
+	public void resetMovementHandler() {
+		this.movementHandler.stop();
 		this.movementHandler = new TimedMessageTask(this, Constants.MINIMUM_INPUT_INTERVAL, false);
 	}
 
