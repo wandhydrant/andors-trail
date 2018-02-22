@@ -7,18 +7,23 @@ import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.RelativeLayout;
 import android.widget.Toast;
+
 import com.gpl.rpg.AndorsTrail.AndorsTrailApplication;
 import com.gpl.rpg.AndorsTrail.R;
 import com.gpl.rpg.AndorsTrail.context.ControllerContext;
 import com.gpl.rpg.AndorsTrail.context.WorldContext;
+import com.gpl.rpg.AndorsTrail.controller.Constants;
 import com.gpl.rpg.AndorsTrail.model.item.ItemType;
 import com.gpl.rpg.AndorsTrail.model.map.PredefinedMap;
+import com.gpl.rpg.AndorsTrail.view.MainView;
 
 public final class DebugInterface {
 	private final ControllerContext controllerContext;
 	private final MainActivity mainActivity;
 	private final Resources res;
 	private final WorldContext world;
+	
+	private DebugButton[] buttons;
 
 	public DebugInterface(ControllerContext controllers, WorldContext world, MainActivity mainActivity) {
 		this.controllerContext = controllers;
@@ -30,8 +35,18 @@ public final class DebugInterface {
 	public void addDebugButtons() {
 		if (!AndorsTrailApplication.DEVELOPMENT_DEBUGBUTTONS) return;
 
-		addDebugButtons(new DebugButton[] {
-			new DebugButton("dmg", new OnClickListener() {
+		buttons = new DebugButton[] {
+			new DebugButton("dbg", new OnClickListener() {
+				boolean hidden = false;
+					@Override
+					public void onClick(View arg0) {
+						hidden = !hidden;
+						for (int i = 1; i < buttons.length; i++) {
+							buttons[i].b.setVisibility(hidden ? View.GONE : View.VISIBLE);
+						}
+					}
+			})
+			,new DebugButton("dmg", new OnClickListener() {
 				@Override
 				public void onClick(View arg0) {
 					world.model.player.damagePotential.set(500, 500);
@@ -47,7 +62,7 @@ public final class DebugInterface {
 					showToast(mainActivity, "DEBUG: damagePotential=1", Toast.LENGTH_SHORT);
 				}
 			})*/
-			,new DebugButton("items", new OnClickListener() {
+			,new DebugButton("itm", new OnClickListener() {
 				@Override
 				public void onClick(View arg0) {
 					for (ItemType item : world.itemTypes.UNITTEST_getAllItemTypes().values()) {
@@ -57,20 +72,14 @@ public final class DebugInterface {
 					showToast(mainActivity, "DEBUG: added items", Toast.LENGTH_SHORT);
 				}
 			})
-			/*,new DebugButton("prim", new OnClickListener() {
-				@Override
-				public void onClick(View arg0) {
-					controllerContext.movementController.placePlayerAsyncAt(MapObject.MapObjectType.newmap, "blackwater_mountain29", "south", 0, 0);
-				}
-			})*/
-			/*,new DebugButton("exp+=10000", new OnClickListener() {
+			,new DebugButton("xp", new OnClickListener() {
 				@Override
 				public void onClick(View arg0) {
 					controllerContext.actorStatsController.addExperience(10000);
 					showToast(mainActivity, "DEBUG: given 10000 exp", Toast.LENGTH_SHORT);
 				}
-			})*/
-			,new DebugButton("reset", new OnClickListener() {
+			})
+			,new DebugButton("rst", new OnClickListener() {
 				@Override
 				public void onClick(View arg0) {
 					for(PredefinedMap map : world.maps.getAllMaps()) {
@@ -89,11 +98,25 @@ public final class DebugInterface {
 					showToast(mainActivity, "DEBUG: hp set to max", Toast.LENGTH_SHORT);
 				}
 			})
-			,new DebugButton("skill", new OnClickListener() {
+			,new DebugButton("skl", new OnClickListener() {
 				@Override
 				public void onClick(View arg0) {
 					world.model.player.availableSkillIncreases += 10;
 					showToast(mainActivity, "DEBUG: 10 skill points", Toast.LENGTH_SHORT);
+				}
+			})
+			,new DebugButton("spd", new OnClickListener() {
+				boolean fast = Constants.MINIMUM_INPUT_INTERVAL == Constants.MINIMUM_INPUT_INTERVAL_FAST;
+				@Override
+				public void onClick(View arg0) {
+					fast = !fast;
+					if (fast) {
+						Constants.MINIMUM_INPUT_INTERVAL = Constants.MINIMUM_INPUT_INTERVAL_FAST;
+					} else {
+						Constants.MINIMUM_INPUT_INTERVAL = Constants.MINIMUM_INPUT_INTERVAL_STD;
+					}
+					MainView.SCROLL_DURATION = Constants.MINIMUM_INPUT_INTERVAL;
+					AndorsTrailApplication.getApplicationFromActivity(mainActivity).getControllerContext().movementController.resetMovementHandler();
 				}
 			})
 			/*
@@ -127,6 +150,12 @@ public final class DebugInterface {
 					controllerContext.movementController.placePlayerAsyncAt(MapObject.MapObjectType.newmap, "fallhaven_ne", "clothes", 0, 0);
 				}
 			})
+			,new DebugButton("prim", new OnClickListener() {
+				@Override
+				public void onClick(View arg0) {
+					controllerContext.movementController.placePlayerAsyncAt(MapObject.MapObjectType.newmap, "blackwater_mountain29", "south", 0, 0);
+				}
+			})
 			,new DebugButton("rc", new OnClickListener() {
 				@Override
 				public void onClick(View arg0) {
@@ -134,7 +163,8 @@ public final class DebugInterface {
 				}
 			})
 			*/
-		});
+		};
+		addDebugButtons(buttons);
 	}
 
 	private void showToast(Context context, String msg, int duration) {
@@ -144,9 +174,17 @@ public final class DebugInterface {
 	private static class DebugButton {
 		public final String text;
 		public final OnClickListener listener;
+		public Button b = null;
 		public DebugButton(String text, OnClickListener listener) {
 			this.text = text;
 			this.listener = listener;
+		}
+		public void makeButton(Context c, int id) {
+			b = new Button(c);
+			b.setText(text);
+			b.setTextSize(10);//res.getDimension(R.dimen.actionbar_text));
+			b.setId(id);
+			b.setOnClickListener(listener);
 		}
 	}
 
@@ -159,13 +197,9 @@ public final class DebugInterface {
 		else
 			lp.addRule(RelativeLayout.RIGHT_OF, id - 1);
 		lp.addRule(RelativeLayout.ABOVE, R.id.main_statusview);
-		Button b = new Button(mainActivity);
-		b.setText(button.text);
-		b.setTextSize(10);//res.getDimension(R.dimen.actionbar_text));
-		b.setId(id);
-		b.setLayoutParams(lp);
-		b.setOnClickListener(button.listener);
-		layout.addView(b);
+		button.makeButton(mainActivity, id); 
+		button.b.setLayoutParams(lp);
+		layout.addView(button.b);
 	}
 
 	private void addDebugButtons(DebugButton[] buttons) {

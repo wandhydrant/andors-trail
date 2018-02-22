@@ -205,7 +205,10 @@ public final class MapController {
 				hasUpdated = true;
 			}
 		}
-		map.lastSeenLayoutHash = tileMap.getCurrentLayoutHash();
+		if (map.lastSeenLayoutHash != tileMap.getCurrentLayoutHash()) {
+			map.lastSeenLayoutHash = tileMap.getCurrentLayoutHash();
+			hasUpdated = true;
+		}
 		return hasUpdated;
 	}
 

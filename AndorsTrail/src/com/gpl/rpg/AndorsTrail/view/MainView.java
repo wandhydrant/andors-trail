@@ -101,7 +101,8 @@ public final class MainView extends SurfaceView
 	private boolean scrolling = false;
 	private Coord scrollVector;
 	private long scrollStartTime;
-	private final static long SCROLL_DURATION = Constants.MINIMUM_INPUT_INTERVAL;
+	//TODO restore private final modifiers before release
+	public static long SCROLL_DURATION = Constants.MINIMUM_INPUT_INTERVAL;
 	
 
 	public MainView(Context context, AttributeSet attr) {
@@ -481,9 +482,8 @@ public final class MainView extends SurfaceView
 	}
 	
 	private void doDrawRect_Above(Canvas canvas, CoordRect area) {
-		if (!tryDrawMapBitmap(canvas, area, aboveBitmap)) {
-			tryDrawMapLayer(canvas, area, currentTileMap.currentLayout.layerAbove);
-		}
+		tryDrawMapLayer(canvas, area, currentTileMap.currentLayout.layerAbove);
+		tryDrawMapLayer(canvas, area, currentTileMap.currentLayout.layerTop);
 		
 		if (model.uiSelections.selectedPosition != null) {
 			if (model.uiSelections.selectedMonster != null) {

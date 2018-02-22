@@ -223,8 +223,10 @@ public final class ConversationActivity
 				} else {
 					conversation.nameColor = oldNPCNameColor;
 				}
-			}else{
+			} else if (conversation.isReward) {
 				conversation.textColor = oldRewardColor;
+			} else {
+				conversation.textColor = oldPhraseColor;
 			}
 			numberOfNewMessage--;
 		}
@@ -240,12 +242,12 @@ public final class ConversationActivity
 		} else {
 			if (rb == null) return;
 			Reply r = (Reply) rb.getTag();
-			addConversationStatement(player, rb.getText().toString(), playerPhraseColor);
+			addConversationStatement(player, rb.getText().toString(), playerPhraseColor, false);
 			conversationState.playerSelectedReply(getResources(), r);
 		}
 	}
 
-	private void addConversationStatement(Actor actor, String text, int textColor) {
+	private void addConversationStatement(Actor actor, String text, int textColor, boolean isReward) {
 		ConversationStatement s = new ConversationStatement();
 		if (actor != null) {
 			s.iconID = actor.iconID;
@@ -257,6 +259,7 @@ public final class ConversationActivity
 		s.nameColor = actor == player ? playerNameColor : NPCNameColor;
 		s.textColor = textColor;
 		s.isPlayerActor = actor != null && actor == player;
+		s.isReward = isReward;
 		conversationHistory.add(s);
 		numberOfNewMessage++;
 		statementList.clearFocus();
@@ -280,6 +283,7 @@ public final class ConversationActivity
 		public int nameColor;
 		public int textColor;
 		public boolean isPlayerActor;
+		public boolean isReward;
 
 		public boolean hasActor() {
 			return iconID != NO_ICON;
@@ -296,6 +300,7 @@ public final class ConversationActivity
 			dest.writeInt(nameColor);
 			dest.writeInt(textColor);
 			dest.writeByte((byte) (isPlayerActor ? 1 : 0));
+			dest.writeByte((byte) (isReward ? 1 : 0));
 		}
 
 		@SuppressWarnings("unused")
@@ -309,6 +314,7 @@ public final class ConversationActivity
 				result.nameColor = in.readInt();
 				result.textColor = in.readInt();
 				result.isPlayerActor = in.readByte() == 1;
+				result.isReward = in.readByte() == 1;
 				return result;
 			}
 
@@ -375,7 +381,7 @@ public final class ConversationActivity
 
 	@Override
 	public void onTextPhraseReached(String message, Actor actor, String phraseID) {
-		addConversationStatement(actor, message, NPCPhraseColor);
+		addConversationStatement(actor, message, NPCPhraseColor, false);
 	}
 
 	@Override
@@ -411,7 +417,7 @@ public final class ConversationActivity
 	}
 
 	private void addRewardMessage(String text) {
-		addConversationStatement(null, text, rewardColor);
+		addConversationStatement(null, text, rewardColor, true);
 	}
 
 	@Override

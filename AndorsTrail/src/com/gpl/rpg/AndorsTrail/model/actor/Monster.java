@@ -6,6 +6,7 @@ import com.gpl.rpg.AndorsTrail.model.ability.SkillCollection;
 import com.gpl.rpg.AndorsTrail.model.item.DropList;
 import com.gpl.rpg.AndorsTrail.model.item.ItemContainer;
 import com.gpl.rpg.AndorsTrail.model.item.Loot;
+import com.gpl.rpg.AndorsTrail.model.map.MonsterSpawnArea;
 import com.gpl.rpg.AndorsTrail.savegames.LegacySavegameFormatReaderForMonster;
 import com.gpl.rpg.AndorsTrail.util.Coord;
 import com.gpl.rpg.AndorsTrail.util.CoordRect;
@@ -25,10 +26,12 @@ public final class Monster extends Actor {
 	private ItemContainer shopItems = null;
 
 	private final MonsterType monsterType;
+	public final MonsterSpawnArea area;
 
-	public Monster(MonsterType monsterType) {
+	public Monster(MonsterType monsterType, MonsterSpawnArea area) {
 		super(monsterType.tileSize, false, monsterType.isImmuneToCriticalHits());
 		this.monsterType = monsterType;
+		this.area = area;
 		this.iconID = monsterType.iconID;
 		this.nextPosition = new CoordRect(new Coord(), monsterType.tileSize);
 		resetStatsToBaseTraits();
@@ -95,20 +98,20 @@ public final class Monster extends Actor {
 
 	// ====== PARCELABLE ===================================================================
 
-	public static Monster newFromParcel(DataInputStream src, WorldContext world, int fileversion) throws IOException {
+	public static Monster newFromParcel(DataInputStream src, WorldContext world, int fileversion, MonsterSpawnArea area) throws IOException {
 		String monsterTypeId = src.readUTF();
 		if (fileversion < 20) {
 			monsterTypeId = monsterTypeId.replace(' ', '_').replace("\\'", "").toLowerCase();
 		}
 		MonsterType monsterType = world.monsterTypes.getMonsterType(monsterTypeId);
 
-		if (fileversion < 25) return LegacySavegameFormatReaderForMonster.newFromParcel_pre_v25(src, fileversion, monsterType);
+		if (fileversion < 25) return LegacySavegameFormatReaderForMonster.newFromParcel_pre_v25(src, fileversion, monsterType, area);
 
-		return new Monster(src, world, fileversion, monsterType);
+		return new Monster(src, world, fileversion, monsterType, area);
 	}
 
-	private Monster(DataInputStream src, WorldContext world, int fileversion, MonsterType monsterType) throws IOException {
-		this(monsterType);
+	private Monster(DataInputStream src, WorldContext world, int fileversion, MonsterType monsterType, MonsterSpawnArea area) throws IOException {
+		this(monsterType, area);
 
 		boolean readCombatTraits = true;
 		if (fileversion >= 25) readCombatTraits = src.readBoolean();
