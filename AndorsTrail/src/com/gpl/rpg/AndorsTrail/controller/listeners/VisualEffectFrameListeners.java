@@ -15,6 +15,10 @@ public final class VisualEffectFrameListeners extends ListOfListeners<VisualEffe
 		@Override public void call(VisualEffectFrameListener listener, VisualEffectAnimation animation) { listener.onAnimationCompleted(animation); }
 	};
 	
+	private final Function1<VisualEffectFrameListener, SpriteMoveAnimation> onSpriteMoveStarted = new Function1<VisualEffectFrameListener, SpriteMoveAnimation>() {
+		@Override public void call(VisualEffectFrameListener listener, SpriteMoveAnimation animation) { listener.onSpriteMoveStarted(animation); }
+	};
+	
 	private final Function1<VisualEffectFrameListener, SpriteMoveAnimation> onNewSpriteMoveFrame = new Function1<VisualEffectFrameListener, SpriteMoveAnimation>() {
 		@Override public void call(VisualEffectFrameListener listener, SpriteMoveAnimation animation) { listener.onNewSpriteMoveFrame(animation); }
 	};
@@ -35,6 +39,11 @@ public final class VisualEffectFrameListeners extends ListOfListeners<VisualEffe
 	@Override
 	public void onAnimationCompleted(VisualEffectAnimation animation) {
 		callAllListeners(this.onAnimationCompleted, animation);
+	}
+	
+	@Override
+	public void onSpriteMoveStarted(SpriteMoveAnimation animation) {
+		callAllListeners(this.onSpriteMoveStarted, animation);
 	}
 	
 	@Override
