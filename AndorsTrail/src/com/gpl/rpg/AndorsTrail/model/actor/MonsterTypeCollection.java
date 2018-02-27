@@ -24,7 +24,11 @@ public final class MonsterTypeCollection {
 		for (MonsterType t : monsterTypesById.values()) {
 			if (t.spawnGroup.equalsIgnoreCase(spawnGroup)) result.add(t);
 		}
-
+		//If the spawnGroup is empty, it should be a direct reference to a MonsterType's id.
+		if (result.isEmpty()) {
+			MonsterType t = monsterTypesById.get(spawnGroup);
+			if (t != null) result.add(t);
+		}
 		return result;
 	}
 
