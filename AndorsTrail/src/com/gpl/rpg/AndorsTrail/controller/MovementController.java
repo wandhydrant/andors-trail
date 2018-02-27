@@ -284,7 +284,7 @@ public final class MovementController implements TimedMessageTask.Callback {
 		for (MonsterSpawnArea a : map.spawnAreas) {
 			for (Monster m : a.monsters) {
 				if (tileMap.isWalkable(m.rectPosition)) continue;
-				Coord p = MonsterSpawningController.getRandomFreePosition(map, tileMap, a.area, m.tileSize, playerPosition);
+				Coord p = MonsterSpawningController.getRandomFreePosition(map, tileMap, a, m.tileSize, playerPosition);
 				if (p == null) continue;
 				m.position.set(p);
 			}

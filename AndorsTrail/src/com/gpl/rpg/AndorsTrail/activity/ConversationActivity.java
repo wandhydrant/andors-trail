@@ -239,8 +239,10 @@ public final class ConversationActivity
 				} else {
 					conversation.nameColor = getSpanColor(R.attr.ui_theme_npcname_dark_color);
 				}
-			}else{
+			} else if (conversation.isReward) {
 				conversation.textColor = getSpanColor(R.attr.ui_theme_reward_light_color);
+			} else {
+				conversation.textColor = getSpanColor(R.attr.ui_theme_dialogue_dark_color);;
 			}
 			numberOfNewMessage--;
 		}
@@ -256,12 +258,12 @@ public final class ConversationActivity
 		} else {
 			if (rb == null) return;
 			Reply r = (Reply) rb.getTag();
-			addConversationStatement(player, rb.getText().toString(), getSpanColor(R.attr.ui_theme_dialogue_light_color));
+			addConversationStatement(player, rb.getText().toString(), getSpanColor(R.attr.ui_theme_dialogue_light_color), false);
 			conversationState.playerSelectedReply(getResources(), r);
 		}
 	}
 
-	private void addConversationStatement(Actor actor, String text, int textColor) {
+	private void addConversationStatement(Actor actor, String text, int textColor, boolean isReward) {
 		ConversationStatement s = new ConversationStatement();
 		if (actor != null) {
 			s.iconID = actor.iconID;
@@ -273,6 +275,7 @@ public final class ConversationActivity
 		s.nameColor = actor == player ? getSpanColor(R.attr.ui_theme_playername_light_color) : getSpanColor(R.attr.ui_theme_npcname_light_color);
 		s.textColor = textColor;
 		s.isPlayerActor = actor != null && actor == player;
+		s.isReward = isReward;
 		conversationHistory.add(s);
 		numberOfNewMessage++;
 		statementList.clearFocus();
@@ -296,6 +299,7 @@ public final class ConversationActivity
 		public int nameColor;
 		public int textColor;
 		public boolean isPlayerActor;
+		public boolean isReward;
 
 		public boolean hasActor() {
 			return iconID != NO_ICON;
@@ -312,6 +316,7 @@ public final class ConversationActivity
 			dest.writeInt(nameColor);
 			dest.writeInt(textColor);
 			dest.writeByte((byte) (isPlayerActor ? 1 : 0));
+			dest.writeByte((byte) (isReward ? 1 : 0));
 		}
 
 		@SuppressWarnings("unused")
@@ -325,6 +330,7 @@ public final class ConversationActivity
 				result.nameColor = in.readInt();
 				result.textColor = in.readInt();
 				result.isPlayerActor = in.readByte() == 1;
+				result.isReward = in.readByte() == 1;
 				return result;
 			}
 
@@ -391,7 +397,7 @@ public final class ConversationActivity
 
 	@Override
 	public void onTextPhraseReached(String message, Actor actor, String phraseID) {
-		addConversationStatement(actor, message, getSpanColor(R.attr.ui_theme_dialogue_light_color));
+		addConversationStatement(actor, message, getSpanColor(R.attr.ui_theme_dialogue_light_color), false);
 	}
 
 	@Override
@@ -427,7 +433,7 @@ public final class ConversationActivity
 	}
 
 	private void addRewardMessage(String text) {
-		addConversationStatement(null, text, getSpanColor(R.attr.ui_theme_reward_light_color));
+		addConversationStatement(null, text, getSpanColor(R.attr.ui_theme_reward_light_color), true);
 	}
 
 	@Override

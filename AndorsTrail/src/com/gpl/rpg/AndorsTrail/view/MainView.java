@@ -1,5 +1,7 @@
 package com.gpl.rpg.AndorsTrail.view;
 
+import java.lang.ref.WeakReference;
+
 import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
@@ -40,6 +42,7 @@ import com.gpl.rpg.AndorsTrail.resource.tiles.TileCollection;
 import com.gpl.rpg.AndorsTrail.resource.tiles.TileManager;
 import com.gpl.rpg.AndorsTrail.util.Coord;
 import com.gpl.rpg.AndorsTrail.util.CoordRect;
+import com.gpl.rpg.AndorsTrail.util.L;
 import com.gpl.rpg.AndorsTrail.util.Size;
 
 public final class MainView extends SurfaceView
@@ -91,9 +94,6 @@ public final class MainView extends SurfaceView
 	private LayeredTileMap currentTileMap;
 	private TileCollection tiles;
 	
-	private Bitmap groundBitmap = null;
-//	private Bitmap objectsBitmap = null;
-	private Bitmap aboveBitmap = null;
 	private final Coord playerPosition = new Coord();
 	private Size surfaceSize;
 	private boolean redrawNextTick = false;
@@ -103,6 +103,8 @@ public final class MainView extends SurfaceView
 	private long scrollStartTime;
 	//TODO restore private final modifiers before release
 	public static long SCROLL_DURATION = Constants.MINIMUM_INPUT_INTERVAL;
+	private int movingSprites = 0;
+	private SpriteMoveAnimationHandler movingSpritesRedrawTick = new SpriteMoveAnimationHandler(this);
 	
 
 	public MainView(Context context, AttributeSet attr) {
@@ -178,6 +180,7 @@ public final class MainView extends SurfaceView
 	@Override
 	public void surfaceDestroyed(SurfaceHolder sh) {
 		hasSurface = false;
+		movingSpritesRedrawTick.stop();
 	}
 
 	@Override
@@ -208,7 +211,7 @@ public final class MainView extends SurfaceView
 	}
 
 	private static enum RedrawAllDebugReason {
-		SurfaceChanged, MapChanged, PlayerMoved, MapScrolling, FilterAnimation
+		SurfaceChanged, MapChanged, PlayerMoved, SpriteMoved, MapScrolling, FilterAnimation
 	}
 	private static enum RedrawAreaDebugReason {
 		MonsterMoved, MonsterKilled, EffectCompleted
@@ -219,6 +222,7 @@ public final class MainView extends SurfaceView
 
 	private void redrawAll(RedrawAllDebugReason why) {
 		if (scrolling && why != RedrawAllDebugReason.MapScrolling) return;
+		if (!scrolling && movingSprites > 0 && why != RedrawAllDebugReason.SpriteMoved) return;
 		redrawArea_(mapViewArea, null, 0, 0);
 	}
 	private void redrawTile(final Coord p, RedrawTileDebugReason why) {
@@ -435,11 +439,8 @@ public final class MainView extends SurfaceView
 	}
 	
 	private void doDrawRect_Ground(Canvas canvas, CoordRect area) {
-		if (!tryDrawMapBitmap(canvas, area, groundBitmap)) {
-			drawMapLayer(canvas, area, currentTileMap.currentLayout.layerGround);
-			tryDrawMapLayer(canvas, area, currentTileMap.currentLayout.layerObjects);
-		}
-		
+		drawMapLayer(canvas, area, currentTileMap.currentLayout.layerGround);
+		tryDrawMapLayer(canvas, area, currentTileMap.currentLayout.layerObjects);
 	}
 	
 	private void doDrawRect_Objects(Canvas canvas, CoordRect area) {
@@ -482,9 +483,8 @@ public final class MainView extends SurfaceView
 	}
 	
 	private void doDrawRect_Above(Canvas canvas, CoordRect area) {
-		if (!tryDrawMapBitmap(canvas, area, aboveBitmap)) {
-			tryDrawMapLayer(canvas, area, currentTileMap.currentLayout.layerAbove);
-		}
+		tryDrawMapLayer(canvas, area, currentTileMap.currentLayout.layerAbove);
+		tryDrawMapLayer(canvas, area, currentTileMap.currentLayout.layerTop);
 		
 		if (model.uiSelections.selectedPosition != null) {
 			if (model.uiSelections.selectedMonster != null) {
@@ -495,18 +495,6 @@ public final class MainView extends SurfaceView
 		}
 	}
 
-	private boolean tryDrawMapBitmap(Canvas canvas, final CoordRect area, final Bitmap bitmap) {
-		if (bitmap != null) {
-			drawMapBitmap(canvas, area, bitmap);
-			return true;
-		}
-		return false;
-	}
-	
-	private void drawMapBitmap(Canvas canvas, final CoordRect area, final Bitmap bitmap){
-		canvas.drawBitmap(bitmap, -mapViewArea.topLeft.x * tileSize, -mapViewArea.topLeft.y * tileSize, mPaint);
-	}
-	
 	private void tryDrawMapLayer(Canvas canvas, final CoordRect area, final MapLayer layer) {
 		if (layer != null) drawMapLayer(canvas, area, layer);
 	}
@@ -530,25 +518,6 @@ public final class MainView extends SurfaceView
 		}
 	}
 	
-	private void drawMapLayerOffscreen(Canvas canvas, final MapLayer layer) {
-		int my = 0;
-		int py = 0;
-		int px0 = 0;
-		for (int y = 0; y < currentMap.size.height; ++y, ++my, py += tileSize) {
-			int mx = 0;
-			if (my < 0) continue;
-			if (my >= currentMap.size.height) break;
-			int px = px0;
-			for (int x = 0; x < currentMap.size.width; ++x, ++mx, px += tileSize) {
-				if (mx < 0) continue;
-				if (mx >= currentMap.size.width) break;
-				final int tile = layer.tiles[mx][my];
-				if (tile == 0) continue;
-				tiles.drawTile(canvas, tile, px, py, mPaint);
-			}
-		}
-	}
-
 	private void drawFromMapPosition(Canvas canvas, final CoordRect area, final Coord p, final int tile) {
 		if (!area.contains(p)) return;
 		_drawFromMapPosition(canvas, area, p.x, p.y, tile);
@@ -574,11 +543,12 @@ public final class MainView extends SurfaceView
 
 	@Override
 	public void onPlayerEnteredNewMap(PredefinedMap map, Coord p) {
+		movingSpritesRedrawTick.start();
 		synchronized (holder) {
 			currentMap = map;
 			currentTileMap = model.currentTileMap;
 			tiles = world.tileManager.currentMapTiles;
-
+			movingSprites = 0;
 			Size visibleNumberOfTiles = new Size(
 					Math.min(screenSizeTileCount.width, currentMap.size.width)
 					,Math.min(screenSizeTileCount.height, currentMap.size.height)
@@ -604,8 +574,6 @@ public final class MainView extends SurfaceView
 		
 		clearCanvas();
 
-		updateBitmaps();
-		
 		recalculateMapTopLeft(model.player.position, false);
 		redrawAll(RedrawAllDebugReason.MapChanged);
 	}
@@ -629,7 +597,7 @@ public final class MainView extends SurfaceView
 			if (allowScrolling) {
 				if (mapTopLeft.x != oldX || mapTopLeft.y != oldY) {
 					scrollVector = new Coord(mapTopLeft.x - oldX, mapTopLeft.y - oldY);
-					new ScrollAnimationHandler().start();
+					new ScrollAnimationHandler(this).start();
 				}
 			} else {
 				scrolling = false;
@@ -641,63 +609,22 @@ public final class MainView extends SurfaceView
 		worldCoordsToScreenCords(mapViewArea, redrawClip);
 	}
 	
-//	private void printMem() {
-//		Runtime r = Runtime.getRuntime();
-//		L.log("---------------------------------------");
-//		L.log("Max : "+r.maxMemory()/1024);
-//		L.log("Tot : "+r.totalMemory()/1024);
-//		L.log("Use : "+(r.totalMemory()-r.freeMemory())/1024);
-//		L.log("Fre : "+r.freeMemory()/1024);
-//	}
-	
-	private void updateBitmaps() {
-		
-		//CPU and pixel fill-rate optimization, but makes low heap-size devices throw an OutOfMemoryError... disabled for now.
-//		Canvas bitmapDrawingCanvas;
-//		
-//		printMem();
-//		
-//		if (groundBitmap != null) {
-//			groundBitmap.recycle();
-//			groundBitmap = null;
-//		}
-//		if (aboveBitmap != null) {
-//			aboveBitmap.recycle();
-//			aboveBitmap = null;
-//		}
-//		
-//		System.gc();
-//		
-//		long freeMemRequired = tileSize * tileSize * currentMap.size.width * currentMap.size.height * 4 /*RGBA_8888*/ * 3 /*Require three times the needed size, to leave room for others*/;
-//		Runtime r = Runtime.getRuntime();
-//		
-//		if (currentTileMap.currentLayout.layerGround != null && r.maxMemory() - r.totalMemory() > freeMemRequired) {
-//			groundBitmap = Bitmap.createBitmap(currentMap.size.width * tileSize, currentMap.size.height * tileSize, Config.ARGB_8888);
-//			bitmapDrawingCanvas = new Canvas(groundBitmap);
-//			drawMapLayerOffscreen(bitmapDrawingCanvas, currentTileMap.currentLayout.layerGround);
-//			if (currentTileMap.currentLayout.layerObjects != null) {
-//				drawMapLayerOffscreen(bitmapDrawingCanvas, currentTileMap.currentLayout.layerObjects);
-//			}
-//		}
-//		
-//		
-//		if (currentTileMap.currentLayout.layerAbove != null && r.maxMemory() - r.totalMemory() > freeMemRequired) {
-//			aboveBitmap = Bitmap.createBitmap(currentMap.size.width * tileSize, currentMap.size.height * tileSize, Config.ARGB_8888);
-//			bitmapDrawingCanvas = new Canvas(aboveBitmap);
-//			drawMapLayerOffscreen(bitmapDrawingCanvas, currentTileMap.currentLayout.layerAbove);
-//		}
-		
-//		printMem();
-//		
-	}
 
-	public final class ScrollAnimationHandler extends Handler implements Runnable {
+	public static final class ScrollAnimationHandler extends Handler implements Runnable {
 
 		private static final int FRAME_DURATION = 40;
+
+		private final WeakReference<MainView> view;
+		
+		public ScrollAnimationHandler(MainView view) {
+			this.view = new WeakReference<MainView>(view);
+		}
 		
 		@Override
 		public void run() {
-			if (System.currentTimeMillis() - scrollStartTime >= SCROLL_DURATION) {
+			MainView v = view.get();
+			if (v == null) return;
+			if (System.currentTimeMillis() - v.scrollStartTime >= SCROLL_DURATION) {
 				onCompleted();
 			} else {
 				postDelayed(this, FRAME_DURATION);
@@ -706,20 +633,75 @@ public final class MainView extends SurfaceView
 		}
 
 		private void update() {
-			redrawAll(RedrawAllDebugReason.MapScrolling);
+			MainView v = view.get();
+			if (v == null) return;
+			v.redrawAll(RedrawAllDebugReason.MapScrolling);
 		}
 
 		private void onCompleted() {
-			scrolling = false;
-			scrollVector = null;
+			MainView v = view.get();
+			if (v == null) return;
+			v.scrolling = false;
+			v.scrollVector = null;
 		}
 
 		public void start() {
-			scrolling = true;
-			scrollStartTime = System.currentTimeMillis();
+			MainView v = view.get();
+			if (v == null) return;
+			v.scrolling = true;
+			v.scrollStartTime = System.currentTimeMillis();
 			postDelayed(this, 0);
 		}
 	}
+	
+	
+	public static final class SpriteMoveAnimationHandler extends Handler implements Runnable {
+
+		private static final int FRAME_DURATION = 40;
+		private final WeakReference<MainView> view;
+		private boolean stop = true;
+		
+		public SpriteMoveAnimationHandler(MainView view) {
+			this.view = new WeakReference<MainView>(view);
+		}
+		
+		@Override
+		public void run() {
+			if (!stop) postDelayed(this, FRAME_DURATION);
+			update();
+		}
+
+		private void update() {
+//			L.log("stop="+stop+" - scroll="+scrolling+" - moving="+movingSprites);
+			if (stop) return;
+			MainView v = view.get();
+			if (v == null) return;
+			if (!v.scrolling) {
+				if (v.movingSprites > 0) {
+					//TODO : limit redraw area when shouldRedrawEverything() returns false. 
+					//Implies keeping track of the animation bounding box in a thread-safe way... :'(
+					v.redrawAll(RedrawAllDebugReason.SpriteMoved);
+				}
+			}
+			synchronized (this) {
+				if (v.movingSprites <= 0) stop();
+			}
+		}
+
+		public void start() {
+			if (stop) {
+				stop = false;
+				MainView v = view.get();
+				if (v == null) return;
+				if (v.controllers.preferences.enableUiAnimations) postDelayed(this, 0);
+			}
+		}
+		
+		public void stop() {
+			stop = true;
+		}
+	}
+	
 	
 	
 	@Override
@@ -829,7 +811,6 @@ public final class MainView extends SurfaceView
 	@Override
 	public void onMapTilesChanged(PredefinedMap map, LayeredTileMap tileMap) {
 		if (map != currentMap) return;
-		updateBitmaps();
 		currentTileMap.setColorFilter(this.mPaint);
 		redrawAll(RedrawAllDebugReason.MapChanged);
 	}
@@ -843,14 +824,23 @@ public final class MainView extends SurfaceView
 	public void onAnimationCompleted(VisualEffectAnimation animation) {
 		redrawArea(animation.area, RedrawAreaDebugReason.EffectCompleted);
 	}
+
+	@Override
+	public void onSpriteMoveStarted(SpriteMoveAnimation animation) {
+		synchronized (movingSpritesRedrawTick) {
+			movingSprites++;
+			movingSpritesRedrawTick.start();
+		}
+	}
 	
 	@Override
 	public void onNewSpriteMoveFrame(SpriteMoveAnimation animation) {
-		redrawMoveArea_(CoordRect.getBoundingRect(animation.origin, animation.destination, animation.actor.tileSize), animation);
+		//redrawMoveArea_(CoordRect.getBoundingRect(animation.origin, animation.destination, animation.actor.tileSize), animation);
 	}
 	
 	@Override
 	public void onSpriteMoveCompleted(SpriteMoveAnimation animation) {
+		movingSprites--;
 		redrawArea(CoordRect.getBoundingRect(animation.origin, animation.destination, animation.actor.tileSize), RedrawAreaDebugReason.EffectCompleted);
 	}
 
