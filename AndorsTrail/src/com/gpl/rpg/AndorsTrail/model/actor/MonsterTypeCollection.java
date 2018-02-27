@@ -42,9 +42,4 @@ public final class MonsterTypeCollection {
 	public void initialize(MonsterTypeParser parser, String input) {
 		parser.parseRows(input, monsterTypesById);
 	}
-
-	// Unit test method. Not part of the game logic.
-	public HashMap<String, MonsterType> UNITTEST_getAllMonsterTypes() {
-		return monsterTypesById;
-	}
 }
