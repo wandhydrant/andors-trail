@@ -85,7 +85,7 @@ public final class TileManager {
 
 
 	public final TileCache tileCache = new TileCache();
-	public final TileCollection preloadedTiles = new TileCollection(116);
+	public TileCollection preloadedTiles;// = new TileCollection(116);
 	public TileCollection currentMapTiles;
 	public TileCollection adjacentMapTiles;
 	private final HashSet<Integer> preloadedTileIDs = new HashSet<Integer>();
@@ -336,12 +336,13 @@ public final class TileManager {
 
 	public void loadPreloadedTiles(Resources r) {
 		int maxTileID = tileCache.getMaxTileID();
-		if (AndorsTrailApplication.DEVELOPMENT_VALIDATEDATA) {
-			if (maxTileID > preloadedTiles.maxTileID) {
-				L.log("ERROR: TileManager.preloadedTiles needs to be initialized with at least " + maxTileID + " slots. Application will crash now.");
-				throw new IndexOutOfBoundsException("ERROR: TileManager.preloadedTiles needs to be initialized with at least " + maxTileID + " slots. Application will crash now.");
-			}
-		}
+//		if (AndorsTrailApplication.DEVELOPMENT_VALIDATEDATA) {
+//			if (maxTileID > preloadedTiles.maxTileID) {
+//				L.log("ERROR: TileManager.preloadedTiles needs to be initialized with at least " + maxTileID + " slots. Application will crash now.");
+//				throw new IndexOutOfBoundsException("ERROR: TileManager.preloadedTiles needs to be initialized with at least " + maxTileID + " slots. Application will crash now.");
+//			}
+//		}
+		preloadedTiles = new TileCollection(maxTileID);
 		for(int i = TileManager.BEGIN_ID; i <= maxTileID; ++i) {
 			preloadedTileIDs.add(i);
 		}
