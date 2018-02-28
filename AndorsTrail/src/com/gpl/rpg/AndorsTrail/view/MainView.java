@@ -222,8 +222,10 @@ public final class MainView extends SurfaceView
 	}
 
 	private void redrawAll(RedrawAllDebugReason why) {
-		if (scrolling && why != RedrawAllDebugReason.MapScrolling) return;
-		if (!scrolling && movingSprites > 0 && why != RedrawAllDebugReason.SpriteMoved) return;
+		if (preferences.enableUiAnimations) {
+			if (scrolling && why != RedrawAllDebugReason.MapScrolling) return;
+			if (!scrolling && movingSprites > 0 && why != RedrawAllDebugReason.SpriteMoved) return;
+		}
 		redrawArea_(mapViewArea, null, 0, 0);
 	}
 	private void redrawTile(final Coord p, RedrawTileDebugReason why) {
