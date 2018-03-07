@@ -11,7 +11,7 @@
         android:layout_height="0dp"
         android:layout_weight="0.4"
         android:scaleType="fitXY"
-        android:src="@drawable/sky_top" />
+        android:src="@drawable/ts_sky_top" />
 
     <ImageView
         android:id="@+id/title_bg_centerpattern"
@@ -26,6 +26,6 @@
         android:layout_height="0dp"
         android:layout_weight="0.6"
         android:scaleType="fitXY"
-        android:src="@drawable/sky_bottom" />
+        android:src="@drawable/ts_sky_bottom" />
 
 </LinearLayout>
