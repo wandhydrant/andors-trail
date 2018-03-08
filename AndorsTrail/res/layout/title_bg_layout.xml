@@ -3,8 +3,17 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent" >
 
+    
+    
     <include layout="@layout/title_bg_sky_layout"/>
 
+    <ImageView 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginRight="-100sp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ts_foreground"/>
+    
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
