@@ -28,6 +28,7 @@ public final class LoadingActivity extends Activity implements OnResourcesLoaded
 		super.onCreate(savedInstanceState);
 		AndorsTrailApplication app = AndorsTrailApplication.getApplicationFromActivity(this);
 		app.setWindowParameters(this);
+		setContentView(R.layout.startscreen);
 		this.setup = app.getWorldSetup();
 	}
 

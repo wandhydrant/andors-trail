@@ -1,24 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/title_bg"
     android:layout_width="match_parent"
     android:layout_height="match_parent" >
 
-    
-    
     <include layout="@layout/title_bg_sky_layout"/>
 
+    <com.gpl.rpg.AndorsTrail.view.CloudsAnimatorView 
+        android:id="@+id/ts_clouds_animator"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:elevation="10dp"
+        />
+    
     <ImageView 
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginRight="-100sp"
         android:scaleType="centerCrop"
+        android:elevation="20dp"
         android:src="@drawable/ts_foreground"/>
     
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_centerInParent="true"
-        android:orientation="vertical" >
+        android:orientation="vertical"
+        android:elevation="30dp" >
 
         <TextView
             android:id="@+id/title_logo_placeholder_above"

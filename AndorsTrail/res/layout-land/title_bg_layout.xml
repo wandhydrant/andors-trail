@@ -1,15 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/title_bg"
     android:layout_width="match_parent"
     android:layout_height="match_parent" >
 
     <include layout="@layout/title_bg_sky_layout"/>
 
-	<ImageView 
+	<com.gpl.rpg.AndorsTrail.view.CloudsAnimatorView 
+        android:id="@+id/ts_clouds_animator"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:elevation="10dp"
+        />
+    
+    <ImageView 
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginTop="-200sp"
         android:scaleType="centerCrop"
+        android:elevation="20dp"
         android:src="@drawable/ts_foreground"/>
     
     
@@ -17,7 +26,8 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_centerInParent="true"
-        android:orientation="horizontal" >
+        android:orientation="horizontal"
+        android:elevation="30dp" >
 
         <TextView
             android:id="@+id/title_logo_placeholder_above"
@@ -36,7 +46,7 @@
             	android:id="@+id/title_logo_placeholder_left"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
-                android:layout_weight="0.2" >
+                android:layout_weight="0" >
             </TextView>
 
             <ImageView
@@ -54,7 +64,7 @@
             	android:id="@+id/title_logo_placeholder_right"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
-                android:layout_weight="0.6" >
+                android:layout_weight="0.7" >
             </TextView>
         </LinearLayout>
 

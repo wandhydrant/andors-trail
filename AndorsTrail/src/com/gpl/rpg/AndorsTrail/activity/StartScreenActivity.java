@@ -4,7 +4,9 @@ import android.content.Intent;
 import android.content.res.Resources;
 import android.graphics.drawable.AnimationDrawable;
 import android.os.Bundle;
+import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
+import android.support.v4.app.FragmentManager.OnBackStackChangedListener;
 import android.view.KeyEvent;
 import android.view.View;
 import android.widget.ImageView;
@@ -19,10 +21,18 @@ import com.gpl.rpg.AndorsTrail.activity.fragment.StartScreenActivity_NewGame;
 import com.gpl.rpg.AndorsTrail.activity.fragment.StartScreenActivity_NewGame.GameCreationOverListener;
 import com.gpl.rpg.AndorsTrail.resource.tiles.TileManager;
 import com.gpl.rpg.AndorsTrail.util.ThemeHelper;
+import com.gpl.rpg.AndorsTrail.view.CloudsAnimatorView;
 
-public final class StartScreenActivity extends FragmentActivity implements OnNewGameRequestedListener, GameCreationOverListener {
+public final class StartScreenActivity extends FragmentActivity implements OnNewGameRequestedListener, GameCreationOverListener, OnBackStackChangedListener {
 
-
+	private TextView tv;
+	private TextView development_version;
+	private CloudsAnimatorView clouds;
+	private Fragment currentFragment;
+	
+	//Means false by default, as a toggle is initiated in onCreate.
+	boolean ui_visible = true;
+	
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		initPreferences();
@@ -43,15 +53,17 @@ public final class StartScreenActivity extends FragmentActivity implements OnNew
 			getSupportFragmentManager().beginTransaction()
 				.replace(R.id.startscreen_fragment_container, mainMenu)
 				.commit();
+			currentFragment = mainMenu;
 			
+			getSupportFragmentManager().addOnBackStackChangedListener(this);
 		}
 		
 		
 		
-		TextView tv = (TextView) findViewById(R.id.startscreen_version);
+		tv = (TextView) findViewById(R.id.startscreen_version);
 		tv.setText('v' + AndorsTrailApplication.CURRENT_VERSION_DISPLAY);
 		
-		TextView development_version = (TextView) findViewById(R.id.startscreen_dev_version);
+		development_version = (TextView) findViewById(R.id.startscreen_dev_version);
 		if (AndorsTrailApplication.DEVELOPMENT_INCOMPATIBLE_SAVEGAMES) {
 			development_version.setText(R.string.startscreen_incompatible_savegames);
 			development_version.setVisibility(View.VISIBLE);
@@ -59,14 +71,49 @@ public final class StartScreenActivity extends FragmentActivity implements OnNew
 			development_version.setText(R.string.startscreen_non_release_version);
 			development_version.setVisibility(View.VISIBLE);
 		}
+		
+		clouds = (CloudsAnimatorView) findViewById(R.id.ts_clouds_animator);
+		clouds.startAnimation();
+		
+		View background = findViewById(R.id.title_bg);
+		if (background != null) {
+			background.setOnClickListener(new View.OnClickListener() {
+			
+				@Override
+				public void onClick(View v) {
+					toggleUiVisibility();
+				}
+			});
+		}
+		
 //		if (development_version.getVisibility() == View.VISIBLE) {
 //			development_version.setText(development_version.getText() +
 //					"\nMax Heap: " + Runtime.getRuntime().maxMemory() / 1024 +
 //					"\nTile size: " + (int) (32 * res.getDisplayMetrics().density));
 //		}
 
+		toggleUiVisibility();
+		
 		app.getWorldSetup().startResourceLoader(res);
 
+	}
+	
+	private void toggleUiVisibility() {
+		ui_visible = !ui_visible; 
+		int visibility = ui_visible ? View.VISIBLE : View.GONE;
+		if (tv != null) tv.setVisibility(visibility);
+		if (development_version != null) development_version.setVisibility(visibility);
+		if (currentFragment != null) {
+			if (ui_visible) {
+				getSupportFragmentManager().beginTransaction()
+					.show(currentFragment)
+					.commit();
+			} else {
+				getSupportFragmentManager().beginTransaction()
+					.hide(currentFragment)
+					.commit();
+			}
+		}
 	}
 	
 	private void initPreferences() {
@@ -86,6 +133,7 @@ public final class StartScreenActivity extends FragmentActivity implements OnNew
 	@Override
 	protected void onResume() {
 		super.onResume();
+		clouds.startAnimation();
 		
 	}
 
@@ -110,8 +158,11 @@ public final class StartScreenActivity extends FragmentActivity implements OnNew
 	private void backPressed() {
 		if (getSupportFragmentManager().getBackStackEntryCount() > 0) {
 			getSupportFragmentManager().popBackStack();
+			currentFragment = getSupportFragmentManager().findFragmentById(R.id.startscreen_fragment_container);
 		}
 	}
+	
+	
 	
 	public void onNewGameRequested() {
 		if (findViewById(R.id.startscreen_fragment_container) != null) {
@@ -121,6 +172,8 @@ public final class StartScreenActivity extends FragmentActivity implements OnNew
 				.replace(R.id.startscreen_fragment_container, newGameFragment)
 				.addToBackStack(null)
 				.commit();
+
+			currentFragment = newGameFragment;
 			
 		}
 	}
@@ -128,6 +181,11 @@ public final class StartScreenActivity extends FragmentActivity implements OnNew
 	@Override
 	public void onGameCreationCancelled() {
 		backPressed();
+	}
+
+	@Override
+	public void onBackStackChanged() {
+		currentFragment = getSupportFragmentManager().findFragmentById(R.id.startscreen_fragment_container);
 	}
 	
 }
