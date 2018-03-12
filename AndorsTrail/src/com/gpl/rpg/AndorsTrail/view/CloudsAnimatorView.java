@@ -3,6 +3,7 @@ package com.gpl.rpg.AndorsTrail.view;
 import java.util.concurrent.ConcurrentHashMap;
 
 import android.content.Context;
+import android.content.res.Configuration;
 import android.util.AttributeSet;
 import android.view.View;
 import android.view.ViewGroup;
@@ -20,26 +21,32 @@ import com.gpl.rpg.AndorsTrail.util.L;
 public class CloudsAnimatorView extends FrameLayout {
 
 	private static final float Y_MIN = 0f;
-	private static final float Y_MAX = 0.6f;
+	private static final float Y_MAX_LANDSCAPE = 0.55f;
+	private static final float Y_MAX_PORTRAIT = 0.65f;
 	
-	private static final int DEFAULT_DURATION = 30000;
+	private static final int DEFAULT_DURATION = 50000;
 	private static final float SPEED_VARIANCE = 0.2f;
 	private static final float BELOW_SPEED_FACTOR = 0.5f;
 	private static final float CENTER_SPEED_FACTOR = 1.0f;
 	private static final float ABOVE_SPEED_FACTOR = 1.5f;
 
-	private static final int BELOW_CLOUD_COUNT = 30;
-	private static final int CENTER_CLOUD_COUNT = 20;
-	private static final int ABOVE_CLOUD_COUNT = 15;
+	private static final int BELOW_CLOUD_COUNT = 40;
+	private static final int CENTER_CLOUD_COUNT = 15;
+	private static final int ABOVE_CLOUD_COUNT = 8;
+	
 	
 	private static final int[] belowDrawablesId = new int[]{R.drawable.ts_clouds_s_01, R.drawable.ts_clouds_s_02, R.drawable.ts_clouds_s_03};
 	private static final int[] centerDrawablesId = new int[]{R.drawable.ts_clouds_m_01, R.drawable.ts_clouds_m_02};
 	private static final int[] aboveDrawablesId = new int[]{R.drawable.ts_clouds_l_01, R.drawable.ts_clouds_l_02, R.drawable.ts_clouds_l_03, R.drawable.ts_clouds_l_04};
 	
-	ViewGroup belowLayer, centerLayer, aboveLayer;
+	private int belowCount = BELOW_CLOUD_COUNT;
+	private int centerCount = CENTER_CLOUD_COUNT;
+	private int aboveCount = ABOVE_CLOUD_COUNT;
+	private ViewGroup belowLayer, centerLayer, aboveLayer;
 	private int duration = DEFAULT_DURATION;
+	private float yMax = Y_MAX_PORTRAIT;
 	
-	private final ConcurrentHashMap<ImageView, PausableTranslateAnimation> animations = new ConcurrentHashMap<ImageView, PausableTranslateAnimation>(BELOW_CLOUD_COUNT + CENTER_CLOUD_COUNT + ABOVE_CLOUD_COUNT);
+	private final ConcurrentHashMap<ImageView, PausableTranslateAnimation> animations = new ConcurrentHashMap<ImageView, PausableTranslateAnimation>(belowCount + centerCount + aboveCount);
 
 
 	public CloudsAnimatorView(Context context) {
@@ -57,13 +64,30 @@ public class CloudsAnimatorView extends FrameLayout {
 		init();
 	}
 	
-	public void init() {
+	private void init() {
 		setFocusable(false);
 		inflate(getContext(), R.layout.clouds_animator, this);
+		switch (getResources().getConfiguration().orientation) {
+		case Configuration.ORIENTATION_LANDSCAPE:
+			yMax = Y_MAX_LANDSCAPE;
+			break;
+		case Configuration.ORIENTATION_PORTRAIT:
+			yMax = Y_MAX_PORTRAIT;
+			break;
+		default:
+			yMax = Y_MAX_LANDSCAPE;
+			break;
+		}
 		
 		belowLayer = (ViewGroup) findViewById(R.id.ts_clouds_below);
 		centerLayer = (ViewGroup) findViewById(R.id.ts_clouds_center);
 		aboveLayer = (ViewGroup) findViewById(R.id.ts_clouds_above);
+	}
+	
+	public void setCloudsCount(int below, int center, int above) {
+		belowCount = below;
+		centerCount = center;
+		aboveCount = above;
 	}
 	
 	private void createCloudBelow() {
@@ -83,17 +107,18 @@ public class CloudsAnimatorView extends FrameLayout {
 		RelativeLayout.LayoutParams lp = new RelativeLayout.LayoutParams(RelativeLayout.LayoutParams.WRAP_CONTENT, RelativeLayout.LayoutParams.WRAP_CONTENT);
 		layer.addView(iv, lp);
 
-		final float y = Y_MIN + (float) (layer.getHeight() * Math.random() * (Y_MAX - Y_MIN));
+		final float y = (float) (layer.getHeight() * (Y_MIN + (Math.random() * (yMax - Y_MIN)))) - iv.getDrawable().getMinimumHeight();
 		float ratio = (float)Math.random();
-		final float x = (float) (((1-ratio) * (iv.getWidth() + layer.getWidth())) - iv.getWidth());
+		final float x = (float) (((1-ratio) * (iv.getDrawable().getMinimumWidth() + layer.getWidth())) - iv.getDrawable().getMinimumWidth());
 		final long d = (long)((ratio * duration) / (speedFactor + (Math.random() * SPEED_VARIANCE)));
 		
+		L.log("Cloud added at "+x+","+y);
 
 		prepareAnimation(iv, layer, speedFactor, x, y, d);
 	}
 	
 	private void resetCloud(final ViewGroup layer, final float speedFactor, final ImageView iv) {
-		final float y = Y_MIN + (float) (layer.getHeight() * Math.random() * (Y_MAX - Y_MIN));
+		final float y = (float) (layer.getHeight() * (Y_MIN + (Math.random() * (yMax - Y_MIN)))) - iv.getDrawable().getMinimumHeight();
 		final float x = -iv.getWidth();
 		final long d = (long)(duration / (speedFactor + (Math.random() * SPEED_VARIANCE)));
 		
@@ -128,15 +153,15 @@ public class CloudsAnimatorView extends FrameLayout {
 	}
 
 	public void startAnimation() {
-		int i = BELOW_CLOUD_COUNT;
+		int i = belowCount;
 		while (i-- > 0) {
 			createCloudBelow();
 		}
-		i = CENTER_CLOUD_COUNT;
+		i = centerCount;
 		while (i-- > 0) {
 			createCloudCenter();
 		}
-		i = ABOVE_CLOUD_COUNT;
+		i = aboveCount;
 		while (i-- > 0) {
 			createCloudAbove();
 		}

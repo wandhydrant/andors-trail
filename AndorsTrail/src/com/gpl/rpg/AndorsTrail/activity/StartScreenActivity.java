@@ -72,7 +72,12 @@ public final class StartScreenActivity extends FragmentActivity implements OnNew
 			development_version.setVisibility(View.VISIBLE);
 		}
 		
-		clouds = (CloudsAnimatorView) findViewById(R.id.ts_clouds_animator);
+		clouds = (CloudsAnimatorView) findViewById(R.id.ts_clouds_animator_back);
+		clouds.setCloudsCount(40, 0, 0);
+		clouds = (CloudsAnimatorView) findViewById(R.id.ts_clouds_animator_mid);
+		clouds.setCloudsCount(0, 15, 0);
+		clouds = (CloudsAnimatorView) findViewById(R.id.ts_clouds_animator_front);
+		clouds.setCloudsCount(0, 0, 8);
 		
 		View background = findViewById(R.id.title_bg);
 		if (background != null) {
