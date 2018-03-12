@@ -2,7 +2,6 @@ package com.gpl.rpg.AndorsTrail.activity;
 
 import android.app.Activity;
 import android.app.Dialog;
-import android.app.ProgressDialog;
 import android.content.DialogInterface;
 import android.content.DialogInterface.OnDismissListener;
 import android.content.Intent;
@@ -20,7 +19,7 @@ import com.gpl.rpg.AndorsTrail.view.CustomDialogFactory;
 public final class LoadingActivity extends Activity implements OnResourcesLoadedListener, OnSceneLoadedListener {
 
 	private WorldSetup setup;
-	private ProgressDialog progressDialog;
+	private Dialog progressDialog;
 
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
@@ -35,7 +34,10 @@ public final class LoadingActivity extends Activity implements OnResourcesLoaded
 	@Override
 	public void onResume() {
 		super.onResume();
-		progressDialog = ProgressDialog.show(this, null, getString(R.string.dialog_loading_message));
+		progressDialog = CustomDialogFactory.createDialog(this, getResources().getString(R.string.dialog_loading_message), 
+				//TODO Create custom animation for loading.
+				getResources().getDrawable(android.R.drawable.progress_indeterminate_horizontal), null, null, false, false);
+		CustomDialogFactory.show(progressDialog);
 		setup.setOnResourcesLoadedListener(this);
 	}
 

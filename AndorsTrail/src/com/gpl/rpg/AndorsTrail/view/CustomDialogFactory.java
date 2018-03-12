@@ -4,6 +4,7 @@ import android.app.Dialog;
 import android.content.Context;
 import android.content.DialogInterface.OnDismissListener;
 import android.graphics.Rect;
+import android.graphics.drawable.AnimationDrawable;
 import android.graphics.drawable.Drawable;
 import android.view.ContextThemeWrapper;
 import android.view.MotionEvent;
@@ -30,6 +31,10 @@ public class CustomDialogFactory {
 	}
 	
 	public static CustomDialog createDialog(final Context context, String title, Drawable icon, String desc, View content, boolean hasButtons) {
+		return createDialog(context, title, icon, desc, content, hasButtons, true);
+	}
+		
+	public static CustomDialog createDialog(final Context context, String title, Drawable icon, String desc, View content, boolean hasButtons, final boolean canDismiss) {
 		final CustomDialog dialog = new CustomDialog(new ContextThemeWrapper(context, ThemeHelper.getDialogTheme())) {
 			@Override
 			public boolean onTouchEvent(MotionEvent event) {
@@ -39,8 +44,22 @@ public class CustomDialogFactory {
 				if (r.contains((int)event.getX(), (int)event.getY())) {
 					return super.onTouchEvent(event);
 				} else {
-					this.dismiss();
-					return true;
+					if (canDismiss) {
+						this.dismiss();
+						return true;
+					}
+					return false;
+				}
+			}
+			
+			@Override
+			public void onWindowFocusChanged(boolean hasFocus) {
+				super.onWindowFocusChanged(hasFocus);
+				TextView title = (TextView) this.getWindow().getDecorView().findViewById(R.id.dialog_title);
+				if (title != null && title.getCompoundDrawables() != null && title.getCompoundDrawables()[0] != null) {
+					if (title.getCompoundDrawables()[0] instanceof AnimationDrawable) {
+						((AnimationDrawable)title.getCompoundDrawables()[0]).start();
+					}
 				}
 			}
 		};

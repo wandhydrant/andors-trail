@@ -1,32 +1,32 @@
 package com.gpl.rpg.AndorsTrail.view;
 
-import java.util.List;
-
-import com.gpl.rpg.AndorsTrail.R;
-import com.gpl.rpg.AndorsTrail.util.L;
+import java.util.concurrent.ConcurrentHashMap;
 
 import android.content.Context;
 import android.util.AttributeSet;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.animation.Animation;
+import android.view.animation.LinearInterpolator;
+import android.view.animation.Transformation;
 import android.view.animation.TranslateAnimation;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 
+import com.gpl.rpg.AndorsTrail.R;
+import com.gpl.rpg.AndorsTrail.util.L;
+
 public class CloudsAnimatorView extends FrameLayout {
 
-	private static final int Y_MIN = 0;
-	private static final int Y_MAX = 100;
+	private static final float Y_MIN = 0f;
+	private static final float Y_MAX = 0.6f;
 	
-	private static final int DURATION = 12000;
-	private static final int SPEED_MIN = 10;
-	private static final int SPEED_MAX = 15;
-
-	private static final float BELOW_SPEED_FACTOR = 0.8f;
+	private static final int DEFAULT_DURATION = 30000;
+	private static final float SPEED_VARIANCE = 0.2f;
+	private static final float BELOW_SPEED_FACTOR = 0.5f;
 	private static final float CENTER_SPEED_FACTOR = 1.0f;
-	private static final float ABOVE_SPEED_FACTOR = 1.2f;
+	private static final float ABOVE_SPEED_FACTOR = 1.5f;
 
 	private static final int BELOW_CLOUD_COUNT = 30;
 	private static final int CENTER_CLOUD_COUNT = 20;
@@ -37,8 +37,9 @@ public class CloudsAnimatorView extends FrameLayout {
 	private static final int[] aboveDrawablesId = new int[]{R.drawable.ts_clouds_l_01, R.drawable.ts_clouds_l_02, R.drawable.ts_clouds_l_03, R.drawable.ts_clouds_l_04};
 	
 	ViewGroup belowLayer, centerLayer, aboveLayer;
-	View belowStart, centerStart, aboveStart;
+	private int duration = DEFAULT_DURATION;
 	
+	private final ConcurrentHashMap<ImageView, PausableTranslateAnimation> animations = new ConcurrentHashMap<ImageView, PausableTranslateAnimation>(BELOW_CLOUD_COUNT + CENTER_CLOUD_COUNT + ABOVE_CLOUD_COUNT);
 
 
 	public CloudsAnimatorView(Context context) {
@@ -57,128 +58,155 @@ public class CloudsAnimatorView extends FrameLayout {
 	}
 	
 	public void init() {
-		L.log("Cloud animator created");
 		setFocusable(false);
 		inflate(getContext(), R.layout.clouds_animator, this);
 		
 		belowLayer = (ViewGroup) findViewById(R.id.ts_clouds_below);
 		centerLayer = (ViewGroup) findViewById(R.id.ts_clouds_center);
 		aboveLayer = (ViewGroup) findViewById(R.id.ts_clouds_above);
-		
-		belowStart = (ViewGroup) findViewById(R.id.ts_clouds_below_start);
-		centerStart = (ViewGroup) findViewById(R.id.ts_clouds_center_start);
-		aboveStart = (ViewGroup) findViewById(R.id.ts_clouds_above_start);
 	}
 	
-	private void addCloudBelow() {
-		if (belowLayer == null) {
-			L.log("Cloud below is null. Deferring.");
-			postDelayed(new Runnable() {
-				@Override
-				public void run() {addCloudBelow();}
-			}, (int)(DURATION * Math.random()));
-		} else {
-			addCloud(belowLayer, R.id.ts_clouds_below_start, belowDrawablesId, BELOW_SPEED_FACTOR);
-		}
-		
+	private void createCloudBelow() {
+		createCloud(belowLayer, belowDrawablesId, BELOW_SPEED_FACTOR);
 	}
-	private void addCloudCenter() {
-		if (centerLayer == null) {
-			L.log("Cloud center is null. Deferring.");
-			postDelayed(new Runnable() {
-				@Override
-				public void run() {addCloudCenter();}
-			}, (int)(DURATION * Math.random()));
-		} else {
-			addCloud(centerLayer, R.id.ts_clouds_center_start, centerDrawablesId, CENTER_SPEED_FACTOR);
-		}
+	private void createCloudCenter() {
+		createCloud(centerLayer, centerDrawablesId, CENTER_SPEED_FACTOR);
 	}
-	private void addCloudAbove() {
-		if (aboveLayer == null) {
-			L.log("Cloud above is null. Deferring.");
-			postDelayed(new Runnable() {
-				@Override
-				public void run() {addCloudAbove();}
-			}, (int)(DURATION * Math.random()));
-		} else {
-			addCloud(aboveLayer, R.id.ts_clouds_above_start, aboveDrawablesId, ABOVE_SPEED_FACTOR);
-		}
+	private void createCloudAbove() {
+		createCloud(aboveLayer, aboveDrawablesId, ABOVE_SPEED_FACTOR);
 	}
 	
 	
-	private void addCloud(final ViewGroup layer, final int startId, final int[] ids, final float speedFactor) {
+	private void createCloud(final ViewGroup layer, final int[] ids, final float speedFactor) {
 		final ImageView iv = new ImageView(getContext());
 		iv.setImageDrawable(getResources().getDrawable(ids[(int)(ids.length * Math.random())]));
 		RelativeLayout.LayoutParams lp = new RelativeLayout.LayoutParams(RelativeLayout.LayoutParams.WRAP_CONTENT, RelativeLayout.LayoutParams.WRAP_CONTENT);
-		//lp.addRule(RelativeLayout.LEFT_OF, startId);
-//		lp.addRule(RelativeLayout.ALIGN_PARENT_TOP);
-//		lp.topMargin = (int) (layer.getHeight() * Math.random());
-		final float y = (float) (layer.getHeight() * Math.random());
-		L.log("Cloud added at y="+y);
 		layer.addView(iv, lp);
-		TranslateAnimation anim = new TranslateAnimation(TranslateAnimation.RELATIVE_TO_PARENT, -1.0f, TranslateAnimation.RELATIVE_TO_PARENT, 2.0f, 
+
+		final float y = Y_MIN + (float) (layer.getHeight() * Math.random() * (Y_MAX - Y_MIN));
+		float ratio = (float)Math.random();
+		final float x = (float) (((1-ratio) * (iv.getWidth() + layer.getWidth())) - iv.getWidth());
+		final long d = (long)((ratio * duration) / (speedFactor + (Math.random() * SPEED_VARIANCE)));
+		
+
+		prepareAnimation(iv, layer, speedFactor, x, y, d);
+	}
+	
+	private void resetCloud(final ViewGroup layer, final float speedFactor, final ImageView iv) {
+		final float y = Y_MIN + (float) (layer.getHeight() * Math.random() * (Y_MAX - Y_MIN));
+		final float x = -iv.getWidth();
+		final long d = (long)(duration / (speedFactor + (Math.random() * SPEED_VARIANCE)));
+		
+		prepareAnimation(iv, layer, speedFactor, x, y, d);
+	}
+	
+	private void prepareAnimation(final ImageView iv, final ViewGroup layer, final float speedFactor, final float x, final float y, final long d) {
+		PausableTranslateAnimation anim = new PausableTranslateAnimation(
+				TranslateAnimation.ABSOLUTE, x, TranslateAnimation.ABSOLUTE, layer.getWidth(), 
 				TranslateAnimation.ABSOLUTE, y, TranslateAnimation.ABSOLUTE, y);
+		
 		anim.setAnimationListener(new Animation.AnimationListener() {
-			
 			@Override
 			public void onAnimationStart(Animation animation) {
+				iv.setVisibility(View.VISIBLE);
 			}
-			
 			@Override
-			public void onAnimationRepeat(Animation animation) {
-			}
-			
+			public void onAnimationRepeat(Animation animation) {}
 			@Override
 			public void onAnimationEnd(Animation animation) {
-				L.log("Cloud ended at y="+y);
-				layer.removeView(iv);
-				if (CloudsAnimatorView.this.getVisibility() == View.VISIBLE) {
-					postDelayed(new Runnable() {
-						@Override
-						public void run() {addCloud(layer, startId, ids, speedFactor);}
-					}, (int)(DURATION * Math.random()));
-				}
+				iv.setVisibility(View.GONE);
+				resetCloud(layer, speedFactor, iv);
 			}
 		});
-		anim.setDuration((long)(DURATION / speedFactor));
+		anim.setInterpolator(new LinearInterpolator());
+		anim.setDuration(d);
+		animations.put(iv, anim);
 		iv.startAnimation(anim);
+		if (!hasWindowFocus()) {
+			anim.pause();
+		}
 	}
 
-	/*@Override
-	protected void onVisibilityChanged(View changedView, int visibility) {
-		super.onVisibilityChanged(changedView, visibility);
-		if (changedView == this && visibility == View.VISIBLE) {
-			startAnimation();
-		} else if (changedView == this) {
-			stopAll();
-		}
-	}*/
-	
 	public void startAnimation() {
-		L.log("Cloud animator started");
 		int i = BELOW_CLOUD_COUNT;
 		while (i-- > 0) {
-			postDelayed(new Runnable() {
-				@Override
-				public void run() {addCloudBelow();}
-			}, (int)(DURATION * Math.random()));
+			createCloudBelow();
 		}
 		i = CENTER_CLOUD_COUNT;
 		while (i-- > 0) {
-			postDelayed(new Runnable() {
-				@Override
-				public void run() {addCloudCenter();}
-			}, (int)(DURATION * Math.random()));
+			createCloudCenter();
 		}
 		i = ABOVE_CLOUD_COUNT;
 		while (i-- > 0) {
-			postDelayed(new Runnable() {
-				@Override
-				public void run() {addCloudAbove();}
-			}, (int)(DURATION * Math.random()));
+			createCloudAbove();
 		}
-	}	
+	}
 	
-//	private void stopAll() {}
+	
+	boolean started = false;
+	
+	@Override
+	public void onWindowFocusChanged(boolean hasWindowFocus) {
+		super.onWindowFocusChanged(hasWindowFocus);
+		L.log("Clouds onWindowFocusChanged("+hasWindowFocus+")");
+		if (hasWindowFocus) {
+			if (!started) {
+				duration = (int) (DEFAULT_DURATION * getWidth() / (1024 * getResources().getDisplayMetrics().density)); 
+				startAnimation();
+				started = true;
+			} else {
+				resumeAnimation();
+			}
+		} else {
+			pauseAnimation();
+		}
+	}
+	
+	private void resumeAnimation() {
+		for (PausableTranslateAnimation a : animations.values()) {
+			a.resume();
+		}
+	}
+	private void pauseAnimation() {
+		for (PausableTranslateAnimation a : animations.values()) {
+			a.pause();
+		}
+	}
 
+	private static class PausableTranslateAnimation extends TranslateAnimation {
+		
+		private long elapsedAtPause = 0;
+		private boolean paused = false;
+		private boolean resume = false;
+		
+		public PausableTranslateAnimation(int fromXType, float fromXValue, int toXType, float toXValue,
+	            int fromYType, float fromYValue, int toYType, float toYValue) {
+			super(fromXType, fromXValue, toXType, toXValue, fromYType, fromYValue, toYType, toYValue);
+		}
+		
+		@Override
+		public boolean getTransformation(long currentTime, Transformation outTransformation) {
+			if (paused && elapsedAtPause == 0) {
+				elapsedAtPause = currentTime - getStartTime();
+			}
+			if (paused) {
+				setStartTime(currentTime - elapsedAtPause); 
+				if (resume) {
+					paused = false;
+					resume = false;
+				}
+			}
+			return super.getTransformation(currentTime, outTransformation);
+		}
+		
+		public void pause() {
+			elapsedAtPause = 0;
+			paused = true;
+		}
+		
+		public void resume() {
+			resume = true;
+		}
+	}
+	
 }

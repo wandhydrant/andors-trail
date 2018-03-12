@@ -73,7 +73,6 @@ public final class StartScreenActivity extends FragmentActivity implements OnNew
 		}
 		
 		clouds = (CloudsAnimatorView) findViewById(R.id.ts_clouds_animator);
-		clouds.startAnimation();
 		
 		View background = findViewById(R.id.title_bg);
 		if (background != null) {
@@ -133,8 +132,6 @@ public final class StartScreenActivity extends FragmentActivity implements OnNew
 	@Override
 	protected void onResume() {
 		super.onResume();
-		clouds.startAnimation();
-		
 	}
 
 	@Override

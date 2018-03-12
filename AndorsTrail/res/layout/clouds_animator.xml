@@ -6,34 +6,16 @@
     <RelativeLayout 
         android:id="@+id/ts_clouds_below"
         android:layout_width="match_parent"
-    	android:layout_height="match_parent">
-		<RelativeLayout 
-		    android:id="@+id/ts_clouds_below_start"
-        	android:layout_width="0dp"
-    		android:layout_height="match_parent"
-		    android:layout_alignParentLeft="true"/>    	
-    </RelativeLayout>
+    	android:layout_height="match_parent"/>  	
 	
 	<RelativeLayout 
         android:id="@+id/ts_clouds_center"
         android:layout_width="match_parent"
-    	android:layout_height="match_parent">
-		<RelativeLayout 
-		    android:id="@+id/ts_clouds_center_start"
-        	android:layout_width="0dp"
-    		android:layout_height="match_parent"
-		    android:layout_alignParentLeft="true"/>    	
-    </RelativeLayout>
+    	android:layout_height="match_parent"/>   	
     
     <RelativeLayout 
         android:id="@+id/ts_clouds_above"
         android:layout_width="match_parent"
-    	android:layout_height="match_parent">
-		<RelativeLayout 
-		    android:id="@+id/ts_clouds_above_start"
-        	android:layout_width="0dp"
-    		android:layout_height="match_parent"
-		    android:layout_alignParentLeft="true"/>    	
-    </RelativeLayout>
+    	android:layout_height="match_parent"/>  	
 
 </merge>
