@@ -112,8 +112,6 @@ public class CloudsAnimatorView extends FrameLayout {
 		final float x = (float) (((1-ratio) * (iv.getDrawable().getMinimumWidth() + layer.getWidth())) - iv.getDrawable().getMinimumWidth());
 		final long d = (long)((ratio * duration) / (speedFactor + (Math.random() * SPEED_VARIANCE)));
 		
-		L.log("Cloud added at "+x+","+y);
-
 		prepareAnimation(iv, layer, speedFactor, x, y, d);
 	}
 	
@@ -173,7 +171,6 @@ public class CloudsAnimatorView extends FrameLayout {
 	@Override
 	public void onWindowFocusChanged(boolean hasWindowFocus) {
 		super.onWindowFocusChanged(hasWindowFocus);
-		L.log("Clouds onWindowFocusChanged("+hasWindowFocus+")");
 		if (hasWindowFocus) {
 			if (!started) {
 				duration = (int) (DEFAULT_DURATION * getWidth() / (1024 * getResources().getDisplayMetrics().density)); 

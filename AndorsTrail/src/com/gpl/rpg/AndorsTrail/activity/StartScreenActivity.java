@@ -90,11 +90,11 @@ public final class StartScreenActivity extends FragmentActivity implements OnNew
 			});
 		}
 		
-//		if (development_version.getVisibility() == View.VISIBLE) {
-//			development_version.setText(development_version.getText() +
-//					"\nMax Heap: " + Runtime.getRuntime().maxMemory() / 1024 +
-//					"\nTile size: " + (int) (32 * res.getDisplayMetrics().density));
-//		}
+		if (development_version.getVisibility() == View.VISIBLE) {
+			development_version.setText(development_version.getText() +
+					"\nMax Heap: " + Runtime.getRuntime().maxMemory() / (1024 * 1024) + "MB"+
+					"\nTile size: " + (int) (32 * res.getDisplayMetrics().density));
+		}
 
 		toggleUiVisibility();
 		

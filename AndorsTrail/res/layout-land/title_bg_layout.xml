@@ -15,8 +15,8 @@
     <ImageView 
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="-200sp"
-        android:scaleType="centerCrop"
+        android:layout_marginBottom="-30sp"
+        android:scaleType="fitEnd"
         android:src="@drawable/ts_background"/>
     
     <com.gpl.rpg.AndorsTrail.view.CloudsAnimatorView 
@@ -28,8 +28,8 @@
      <ImageView 
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="-200sp"
-        android:scaleType="centerCrop"
+        android:layout_marginBottom="-30sp"
+        android:scaleType="fitEnd"
         android:src="@drawable/ts_midground"/>
      
     <com.gpl.rpg.AndorsTrail.view.CloudsAnimatorView 
@@ -41,8 +41,8 @@
      <ImageView 
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="-200sp"
-        android:scaleType="centerCrop"
+        android:layout_marginBottom="-30sp"
+        android:scaleType="fitEnd"
         android:src="@drawable/ts_foreground"/>
     
     <LinearLayout
