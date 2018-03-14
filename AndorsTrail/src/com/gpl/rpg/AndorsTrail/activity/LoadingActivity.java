@@ -35,8 +35,7 @@ public final class LoadingActivity extends Activity implements OnResourcesLoaded
 	public void onResume() {
 		super.onResume();
 		progressDialog = CustomDialogFactory.createDialog(this, getResources().getString(R.string.dialog_loading_message), 
-				//TODO Create custom animation for loading.
-				getResources().getDrawable(android.R.drawable.progress_indeterminate_horizontal), null, null, false, false);
+				getResources().getDrawable(R.drawable.loading_anim), null, null, false, false);
 		CustomDialogFactory.show(progressDialog);
 		setup.setOnResourcesLoadedListener(this);
 	}

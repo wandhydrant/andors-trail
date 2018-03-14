@@ -93,6 +93,7 @@ public final class StartScreenActivity extends FragmentActivity implements OnNew
 		if (development_version.getVisibility() == View.VISIBLE) {
 			development_version.setText(development_version.getText() +
 					"\nMax Heap: " + Runtime.getRuntime().maxMemory() / (1024 * 1024) + "MB"+
+					"\nUsed Heap: " + Runtime.getRuntime().totalMemory() / (1024 * 1024) + "MB"+
 					"\nTile size: " + (int) (32 * res.getDisplayMetrics().density));
 		}
 
@@ -109,6 +110,12 @@ public final class StartScreenActivity extends FragmentActivity implements OnNew
 		if (development_version != null) development_version.setVisibility(visibility);
 		if (currentFragment != null) {
 			if (ui_visible) {
+
+				development_version.setText(development_version.getText() +
+						"\nMax Heap: " + Runtime.getRuntime().maxMemory() / (1024 * 1024) + "MB"+
+						"\nUsed Heap: " + Runtime.getRuntime().totalMemory() / (1024 * 1024) + "MB"+
+						"\nTile size: " + (int) (32 * getResources().getDisplayMetrics().density));
+				
 				getSupportFragmentManager().beginTransaction()
 					.show(currentFragment)
 					.commit();
