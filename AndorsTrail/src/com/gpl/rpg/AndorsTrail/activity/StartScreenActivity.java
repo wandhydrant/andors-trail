@@ -20,6 +20,7 @@ import com.gpl.rpg.AndorsTrail.activity.fragment.StartScreenActivity_MainMenu.On
 import com.gpl.rpg.AndorsTrail.activity.fragment.StartScreenActivity_NewGame;
 import com.gpl.rpg.AndorsTrail.activity.fragment.StartScreenActivity_NewGame.GameCreationOverListener;
 import com.gpl.rpg.AndorsTrail.resource.tiles.TileManager;
+import com.gpl.rpg.AndorsTrail.util.L;
 import com.gpl.rpg.AndorsTrail.util.ThemeHelper;
 import com.gpl.rpg.AndorsTrail.view.CloudsAnimatorView;
 
@@ -27,7 +28,7 @@ public final class StartScreenActivity extends FragmentActivity implements OnNew
 
 	private TextView tv;
 	private TextView development_version;
-	private CloudsAnimatorView clouds;
+	private CloudsAnimatorView clouds_back, clouds_mid, clouds_front;
 	private Fragment currentFragment;
 	
 	//Means false by default, as a toggle is initiated in onCreate.
@@ -72,12 +73,12 @@ public final class StartScreenActivity extends FragmentActivity implements OnNew
 			development_version.setVisibility(View.VISIBLE);
 		}
 		
-		clouds = (CloudsAnimatorView) findViewById(R.id.ts_clouds_animator_back);
-		clouds.setCloudsCount(40, 0, 0);
-		clouds = (CloudsAnimatorView) findViewById(R.id.ts_clouds_animator_mid);
-		clouds.setCloudsCount(0, 15, 0);
-		clouds = (CloudsAnimatorView) findViewById(R.id.ts_clouds_animator_front);
-		clouds.setCloudsCount(0, 0, 8);
+		clouds_back = (CloudsAnimatorView) findViewById(R.id.ts_clouds_animator_back);
+		if (clouds_back != null) clouds_back.setCloudsCount(40, 0, 0);
+		clouds_mid = (CloudsAnimatorView) findViewById(R.id.ts_clouds_animator_mid);
+		if (clouds_mid != null) clouds_mid.setCloudsCount(0, 15, 0);
+		clouds_front = (CloudsAnimatorView) findViewById(R.id.ts_clouds_animator_front);
+		if (clouds_front != null) clouds_front.setCloudsCount(0, 0, 8);
 		
 		View background = findViewById(R.id.title_bg);
 		if (background != null) {
@@ -133,19 +134,39 @@ public final class StartScreenActivity extends FragmentActivity implements OnNew
 		preferences.read(this);
 		ThemeHelper.changeTheme(preferences.selectedTheme);
 	}
-
 	
 	@Override
 	public void onWindowFocusChanged(boolean hasFocus) {
 		super.onWindowFocusChanged(hasFocus);
-		((AnimationDrawable)((ImageView)findViewById(R.id.title_logo)).getDrawable()).start();
+		if (hasFocus) {
+			((AnimationDrawable)((ImageView)findViewById(R.id.title_logo)).getDrawable()).start();
+			ImageView iv = (ImageView) findViewById(R.id.ts_foreground);
+			int ivWidth = iv.getWidth();
+			int drawableWidth = iv.getDrawable().getIntrinsicWidth();
+			
+			float ratio = ((float)ivWidth) / ((float)drawableWidth);
+			if (clouds_back != null)clouds_back.setScalingRatio(ratio);
+			if (clouds_mid != null)clouds_mid.setScalingRatio(ratio);
+			if (clouds_front != null)clouds_front.setScalingRatio(ratio);
+		}
 	}
 	
 	@Override
 	protected void onResume() {
 		super.onResume();
+		if (clouds_back != null)clouds_back.resumeAnimation();
+		if (clouds_mid != null)clouds_mid.resumeAnimation();
+		if (clouds_front != null)clouds_front.resumeAnimation();
 	}
 
+	@Override
+	protected void onPause() {
+		super.onPause();
+		if (clouds_back != null)clouds_back.pauseAnimation();
+		if (clouds_mid != null)clouds_mid.pauseAnimation();
+		if (clouds_front != null)clouds_front.pauseAnimation();
+	}
+	
 	@Override
 	protected void onActivityResult(int requestCode, int resultCode, Intent data) {
 		super.onActivityResult(requestCode, resultCode, data);

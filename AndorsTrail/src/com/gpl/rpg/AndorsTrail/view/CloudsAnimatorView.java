@@ -45,6 +45,7 @@ public class CloudsAnimatorView extends FrameLayout {
 	private ViewGroup belowLayer, centerLayer, aboveLayer;
 	private int duration = DEFAULT_DURATION;
 	private float yMax = Y_MAX_PORTRAIT;
+	private float scalingRatio = 1.0f;
 	
 	private final ConcurrentHashMap<ImageView, PausableTranslateAnimation> animations = new ConcurrentHashMap<ImageView, PausableTranslateAnimation>(belowCount + centerCount + aboveCount);
 
@@ -65,6 +66,7 @@ public class CloudsAnimatorView extends FrameLayout {
 	}
 	
 	private void init() {
+		L.log("ANIM View Init");
 		setFocusable(false);
 		inflate(getContext(), R.layout.clouds_animator, this);
 		switch (getResources().getConfiguration().orientation) {
@@ -104,7 +106,7 @@ public class CloudsAnimatorView extends FrameLayout {
 	private void createCloud(final ViewGroup layer, final int[] ids, final float speedFactor) {
 		final ImageView iv = new ImageView(getContext());
 		iv.setImageDrawable(getResources().getDrawable(ids[(int)(ids.length * Math.random())]));
-		RelativeLayout.LayoutParams lp = new RelativeLayout.LayoutParams(RelativeLayout.LayoutParams.WRAP_CONTENT, RelativeLayout.LayoutParams.WRAP_CONTENT);
+		RelativeLayout.LayoutParams lp = new RelativeLayout.LayoutParams((int) (iv.getDrawable().getIntrinsicWidth() * scalingRatio), (int) (iv.getDrawable().getIntrinsicHeight() * scalingRatio));//RelativeLayout.LayoutParams.WRAP_CONTENT, RelativeLayout.LayoutParams.WRAP_CONTENT);
 		layer.addView(iv, lp);
 
 		final float y = (float) (layer.getHeight() * (Y_MIN + (Math.random() * (yMax - Y_MIN)))) - iv.getDrawable().getMinimumHeight();
@@ -145,12 +147,13 @@ public class CloudsAnimatorView extends FrameLayout {
 		anim.setDuration(d);
 		animations.put(iv, anim);
 		iv.startAnimation(anim);
-		if (!hasWindowFocus()) {
+		if (paused) {
 			anim.pause();
 		}
 	}
 
 	public void startAnimation() {
+		L.log("ANIM View Start");
 		int i = belowCount;
 		while (i-- > 0) {
 			createCloudBelow();
@@ -171,28 +174,48 @@ public class CloudsAnimatorView extends FrameLayout {
 	@Override
 	public void onWindowFocusChanged(boolean hasWindowFocus) {
 		super.onWindowFocusChanged(hasWindowFocus);
+		L.log("ANIM View Focus "+hasWindowFocus);
+		
 		if (hasWindowFocus) {
 			if (!started) {
 				duration = (int) (DEFAULT_DURATION * getWidth() / (1024 * getResources().getDisplayMetrics().density)); 
 				startAnimation();
 				started = true;
-			} else {
-				resumeAnimation();
-			}
+			}}
+//			} else {
+//				resumeAnimation();
+//			}
+//		} else {
+//			pauseAnimation();
+//		}
+	}
+	
+	private boolean paused = false;
+	
+	public void resumeAnimation() {
+		L.log("ANIM View Resume");
+		paused = false;
+		if (!started) {
+//			duration = (int) (DEFAULT_DURATION * getWidth() / (1024 * getResources().getDisplayMetrics().density)); 
+//			startAnimation();
+//			started = true;
 		} else {
-			pauseAnimation();
+			for (PausableTranslateAnimation a : animations.values()) {
+				a.resume();
+			}
 		}
 	}
 	
-	private void resumeAnimation() {
-		for (PausableTranslateAnimation a : animations.values()) {
-			a.resume();
-		}
-	}
-	private void pauseAnimation() {
+	public void pauseAnimation() {
+		L.log("ANIM View Pause");
+		paused = true;
 		for (PausableTranslateAnimation a : animations.values()) {
 			a.pause();
 		}
+	}
+	
+	public void setScalingRatio(float ratio) {
+		this.scalingRatio = ratio;
 	}
 
 	private static class PausableTranslateAnimation extends TranslateAnimation {
@@ -227,7 +250,7 @@ public class CloudsAnimatorView extends FrameLayout {
 		}
 		
 		public void resume() {
-			resume = true;
+			if (paused) resume = true;
 		}
 	}
 	
