@@ -4,17 +4,7 @@
     android:layout_height="match_parent">
     
     <RelativeLayout 
-        android:id="@+id/ts_clouds_below"
-        android:layout_width="match_parent"
-    	android:layout_height="match_parent"/>  	
-	
-	<RelativeLayout 
-        android:id="@+id/ts_clouds_center"
-        android:layout_width="match_parent"
-    	android:layout_height="match_parent"/>   	
-    
-    <RelativeLayout 
-        android:id="@+id/ts_clouds_above"
+        android:id="@+id/ts_clouds_layer"
         android:layout_width="match_parent"
     	android:layout_height="match_parent"/>  	
 

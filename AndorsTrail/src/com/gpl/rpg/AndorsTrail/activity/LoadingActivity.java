@@ -7,7 +7,9 @@ import android.content.DialogInterface.OnDismissListener;
 import android.content.Intent;
 import android.graphics.drawable.AnimationDrawable;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import com.gpl.rpg.AndorsTrail.AndorsTrailApplication;
 import com.gpl.rpg.AndorsTrail.R;
@@ -25,6 +27,7 @@ public final class LoadingActivity extends Activity implements OnResourcesLoaded
 	private WorldSetup setup;
 	private Dialog progressDialog;
 	private CloudsAnimatorView clouds_back, clouds_mid, clouds_front;
+	boolean loaded = false;
 
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
@@ -34,13 +37,16 @@ public final class LoadingActivity extends Activity implements OnResourcesLoaded
 		AndorsTrailApplication app = AndorsTrailApplication.getApplicationFromActivity(this);
 		app.setWindowParameters(this);
 		setContentView(R.layout.startscreen);
+
+		TextView tv = (TextView) findViewById(R.id.startscreen_version);
+		tv.setVisibility(View.GONE);
 		
 		clouds_back = (CloudsAnimatorView) findViewById(R.id.ts_clouds_animator_back);
-		if (clouds_back != null) clouds_back.setCloudsCount(40, 0, 0);
+		if (clouds_back != null) clouds_back.setCloudsCountAndLayer(40, CloudsAnimatorView.Layer.below);
 		clouds_mid = (CloudsAnimatorView) findViewById(R.id.ts_clouds_animator_mid);
-		if (clouds_mid != null) clouds_mid.setCloudsCount(0, 15, 0);
+		if (clouds_mid != null) clouds_mid.setCloudsCountAndLayer(15, CloudsAnimatorView.Layer.center);
 		clouds_front = (CloudsAnimatorView) findViewById(R.id.ts_clouds_animator_front);
-		if (clouds_front != null) clouds_front.setCloudsCount(0, 0, 8);
+		if (clouds_front != null) clouds_front.setCloudsCountAndLayer(8, CloudsAnimatorView.Layer.above);
 		
 		this.setup = app.getWorldSetup();
 	}
@@ -54,17 +60,35 @@ public final class LoadingActivity extends Activity implements OnResourcesLoaded
 			ImageView iv = (ImageView) findViewById(R.id.ts_foreground);
 			int ivWidth = iv.getWidth();
 			int drawableWidth = iv.getDrawable().getIntrinsicWidth();
-			
 			float ratio = ((float)ivWidth) / ((float)drawableWidth);
-			if (clouds_back != null)clouds_back.setScalingRatio(ratio);
-			if (clouds_mid != null)clouds_mid.setScalingRatio(ratio);
-			if (clouds_front != null)clouds_front.setScalingRatio(ratio);
+			
+			int ivY = iv.getTop();
+			int screenHeight = getResources().getDisplayMetrics().heightPixels;
+			int occupied = screenHeight - ivY;
+			float maxY = 1.0f - ( ( ((float)occupied)/2.0f ) / ((float)screenHeight) );
+			
+			if (clouds_back != null) {
+				clouds_back.setScalingRatio(ratio);
+				clouds_back.setYMax(maxY);
+			}
+			if (clouds_mid != null) {
+				clouds_mid.setScalingRatio(ratio);
+				clouds_mid.setYMax(maxY);
+			}
+			if (clouds_front != null) {
+				clouds_front.setScalingRatio(ratio);
+				clouds_front.setYMax(maxY);
+			}
 			
 			if (progressDialog == null) {
 				progressDialog = CustomDialogFactory.createDialog(this, getResources().getString(R.string.dialog_loading_message), 
 						getResources().getDrawable(R.drawable.loading_anim), null, null, false, false);
-				progressDialog.setOwnerActivity(this);
-				CustomDialogFactory.show(progressDialog);
+				synchronized (progressDialog) {
+					if (!loaded) {
+						progressDialog.setOwnerActivity(this);
+						CustomDialogFactory.show(progressDialog);
+					}
+				}
 			}
 		}
 	}
@@ -94,19 +118,26 @@ public final class LoadingActivity extends Activity implements OnResourcesLoaded
 	
 	@Override
 	public void onResourcesLoaded() {
+		loaded = false;
 		setup.startCharacterSetup(this);
 	}
 
 	@Override
 	public void onSceneLoaded() {
-		if (progressDialog != null) progressDialog.dismiss();
+		synchronized (progressDialog) {
+			if (progressDialog != null) progressDialog.dismiss();
+			loaded =true;
+		}
 		startActivity(new Intent(this, MainActivity.class));
 		this.finish();
 	}
 
 	@Override
 	public void onSceneLoadFailed(Savegames.LoadSavegameResult loadResult) {
-		if (progressDialog != null) progressDialog.dismiss();
+		synchronized (progressDialog) {
+			if (progressDialog != null) progressDialog.dismiss();
+			loaded =true;
+		}
 		if (loadResult == Savegames.LoadSavegameResult.savegameIsFromAFutureVersion) {
 			showLoadingFailedDialog(R.string.dialog_loading_failed_incorrectversion);
 		} else {
@@ -115,19 +146,6 @@ public final class LoadingActivity extends Activity implements OnResourcesLoaded
 	}
 
 	private void showLoadingFailedDialog(int messageResourceID) {
-//		Dialog d = new AlertDialog.Builder(this)
-//			.setTitle(R.string.dialog_loading_failed_title)
-//			.setMessage(messageResourceID)
-//			.setNeutralButton(android.R.string.ok, null)
-//			.create();
-//		d.setOnDismissListener(new OnDismissListener() {
-//			@Override
-//			public void onDismiss(DialogInterface dialog) {
-//				LoadingActivity.this.finish();
-//			}
-//		});
-//		d.show();
-		
 		final Dialog d = CustomDialogFactory.createDialog(this, getResources().getString(R.string.dialog_loading_failed_title), null, getResources().getString(messageResourceID), null, true);
 		CustomDialogFactory.addDismissButton(d, android.R.string.ok);
 		CustomDialogFactory.setDismissListener(d, new OnDismissListener() {

@@ -257,68 +257,13 @@ public final class MainActivity
 						}
 					});
 					
-//					Button b = (Button) view.findViewById(R.id.quickbuttons_unassign);
-//					b.setOnClickListener(new OnClickListener() {
-//						@Override
-//						public void onClick(View v) {
-//							controllers.itemController.setQuickItem(null, buttonId);
-//							dialog.dismiss();
-//						}
-//					});
-					
 					CustomDialogFactory.show(d);
-//					
-//					dialog.setView(view);
-//					dialog.setCancelable(true);
-//					dialog.show();
 				}
 				return true;
 			}
 		};
 	}
 	
-//	@Override
-//	public void onCreateContextMenu(ContextMenu menu, View v, ContextMenuInfo menuInfo) {
-//		
-//		super.onCreateContextMenu(menu, v, menuInfo);
-//		if(quickitemview.isQuickButtonId(v.getId())){
-//			createQuickButtonMenu(menu);
-//		}
-//		lastSelectedMenu = null;
-//	}
-//
-//	private void createQuickButtonMenu(ContextMenu menu){
-//		menu.add(Menu.NONE, R.id.quick_menu_unassign, Menu.NONE, R.string.inventory_unassign);
-//		SubMenu assignMenu = menu.addSubMenu(Menu.NONE, R.id.quick_menu_assign, Menu.NONE, R.string.inventory_assign);
-//		for(int i=0; i<world.model.player.inventory.items.size(); ++i){
-//			ItemEntry itemEntry = world.model.player.inventory.items.get(i);
-//			if(itemEntry.itemType.isUsable())
-//				assignMenu.add(R.id.quick_menu_assign_group, i, Menu.NONE, itemEntry.itemType.getName(world.model.player));
-//		}
-//	}
-//
-//	@Override
-//	public boolean onContextItemSelected(MenuItem item) {
-//		QuickButtonContextMenuInfo menuInfo;
-//		if(item.getGroupId() == R.id.quick_menu_assign_group){
-//			menuInfo = (QuickButtonContextMenuInfo) lastSelectedMenu;
-//			controllers.itemController.setQuickItem(world.model.player.inventory.items.get(item.getItemId()).itemType, menuInfo.index);
-//			return true;
-//		}
-//		switch(item.getItemId()){
-//		case R.id.quick_menu_unassign:
-//			menuInfo = (QuickButtonContextMenuInfo) item.getMenuInfo();
-//			controllers.itemController.setQuickItem(null, menuInfo.index);
-//			break;
-//		case R.id.quick_menu_assign:
-//			menuInfo = (QuickButtonContextMenuInfo) item.getMenuInfo();
-//			lastSelectedMenu = menuInfo;
-//			break;
-//		default:
-//			return super.onContextItemSelected(item);
-//		}
-//		return true;
-//	}
 
 	private void updateStatus() {
 		statusview.updateStatus();

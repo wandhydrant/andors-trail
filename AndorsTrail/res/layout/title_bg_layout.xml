@@ -18,6 +18,7 @@
         android:layout_marginLeft="-50sp"
         android:layout_marginRight="-100sp"
         android:scaleType="fitEnd"
+        android:adjustViewBounds="true"
         android:src="@drawable/ts_background"/>
     
     <com.gpl.rpg.AndorsTrail.view.CloudsAnimatorView 
@@ -32,6 +33,7 @@
         android:layout_marginLeft="-50sp"
         android:layout_marginRight="-100sp"
         android:scaleType="fitEnd"
+        android:adjustViewBounds="true"
         android:src="@drawable/ts_midground"/>
      
     <com.gpl.rpg.AndorsTrail.view.CloudsAnimatorView 
@@ -47,6 +49,7 @@
         android:layout_marginLeft="-50sp"
         android:layout_marginRight="-100sp"
         android:scaleType="fitEnd"
+        android:adjustViewBounds="true"
         android:src="@drawable/ts_foreground"/>
      
     <LinearLayout

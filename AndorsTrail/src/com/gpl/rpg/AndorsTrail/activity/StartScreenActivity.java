@@ -9,6 +9,7 @@ import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentManager.OnBackStackChangedListener;
 import android.view.KeyEvent;
 import android.view.View;
+import android.view.ViewTreeObserver;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -73,12 +74,13 @@ public final class StartScreenActivity extends FragmentActivity implements OnNew
 			development_version.setVisibility(View.VISIBLE);
 		}
 		
+
 		clouds_back = (CloudsAnimatorView) findViewById(R.id.ts_clouds_animator_back);
-		if (clouds_back != null) clouds_back.setCloudsCount(40, 0, 0);
+		if (clouds_back != null) clouds_back.setCloudsCountAndLayer(40, CloudsAnimatorView.Layer.below);
 		clouds_mid = (CloudsAnimatorView) findViewById(R.id.ts_clouds_animator_mid);
-		if (clouds_mid != null) clouds_mid.setCloudsCount(0, 15, 0);
+		if (clouds_mid != null) clouds_mid.setCloudsCountAndLayer(15, CloudsAnimatorView.Layer.center);
 		clouds_front = (CloudsAnimatorView) findViewById(R.id.ts_clouds_animator_front);
-		if (clouds_front != null) clouds_front.setCloudsCount(0, 0, 8);
+		if (clouds_front != null) clouds_front.setCloudsCountAndLayer(8, CloudsAnimatorView.Layer.above);
 		
 		View background = findViewById(R.id.title_bg);
 		if (background != null) {
@@ -92,10 +94,12 @@ public final class StartScreenActivity extends FragmentActivity implements OnNew
 		}
 		
 		if (development_version.getVisibility() == View.VISIBLE) {
-			development_version.setText(development_version.getText() +
-					"\nMax Heap: " + Runtime.getRuntime().maxMemory() / (1024 * 1024) + "MB"+
-					"\nUsed Heap: " + Runtime.getRuntime().totalMemory() / (1024 * 1024) + "MB"+
-					"\nTile size: " + (int) (32 * res.getDisplayMetrics().density));
+			development_version.setText(development_version.getText()
+//					+
+//					"\nMax Heap: " + Runtime.getRuntime().maxMemory() / (1024 * 1024) + "MB"+
+//					"\nUsed Heap: " + Runtime.getRuntime().totalMemory() / (1024 * 1024) + "MB"+
+//					"\nTile size: " + (int) (32 * res.getDisplayMetrics().density)
+					);
 		}
 
 		toggleUiVisibility();
@@ -112,10 +116,12 @@ public final class StartScreenActivity extends FragmentActivity implements OnNew
 		if (currentFragment != null) {
 			if (ui_visible) {
 
-				development_version.setText(development_version.getText() +
-						"\nMax Heap: " + Runtime.getRuntime().maxMemory() / (1024 * 1024) + "MB"+
-						"\nUsed Heap: " + Runtime.getRuntime().totalMemory() / (1024 * 1024) + "MB"+
-						"\nTile size: " + (int) (32 * getResources().getDisplayMetrics().density));
+				development_version.setText(development_version.getText()
+//						+
+//						"\nMax Heap: " + Runtime.getRuntime().maxMemory() / (1024 * 1024) + "MB"+
+//						"\nUsed Heap: " + Runtime.getRuntime().totalMemory() / (1024 * 1024) + "MB"+
+//						"\nTile size: " + (int) (32 * getResources().getDisplayMetrics().density)
+						);
 				
 				getSupportFragmentManager().beginTransaction()
 					.show(currentFragment)
@@ -143,17 +149,56 @@ public final class StartScreenActivity extends FragmentActivity implements OnNew
 			ImageView iv = (ImageView) findViewById(R.id.ts_foreground);
 			int ivWidth = iv.getWidth();
 			int drawableWidth = iv.getDrawable().getIntrinsicWidth();
-			
 			float ratio = ((float)ivWidth) / ((float)drawableWidth);
-			if (clouds_back != null)clouds_back.setScalingRatio(ratio);
-			if (clouds_mid != null)clouds_mid.setScalingRatio(ratio);
-			if (clouds_front != null)clouds_front.setScalingRatio(ratio);
+			
+			if (clouds_back != null) {
+				clouds_back.setScalingRatio(ratio);
+			}
+			if (clouds_mid != null) {
+				clouds_mid.setScalingRatio(ratio);
+			}
+			if (clouds_front != null) {
+				clouds_front.setScalingRatio(ratio);
+			}
 		}
 	}
 	
 	@Override
 	protected void onResume() {
 		super.onResume();
+		final ImageView iv = (ImageView) findViewById(R.id.ts_foreground);
+		iv.getViewTreeObserver().addOnPreDrawListener(new ViewTreeObserver.OnPreDrawListener() {
+			
+			@Override
+			public boolean onPreDraw() {
+				float[] point = new float[]{0f,0f,0f,iv.getDrawable().getIntrinsicHeight()};
+				iv.getImageMatrix().mapPoints(point);
+				int imgY = (int) (iv.getTop() + point[1]);
+				L.log("ANIM imgY" + imgY);
+				int imgHeight = (int) (point[3] - point[1]);
+				L.log("ANIM imgHeight" + imgHeight);
+				int cloudSpace = (int) (imgY + (0.25 * imgHeight));
+				L.log("ANIM cloudSpace" + cloudSpace);
+				int screenHeight = getResources().getDisplayMetrics().heightPixels;
+				L.log("ANIM screenHeight" + screenHeight);
+				float maxY = ((float)cloudSpace) / ((float)screenHeight);
+				L.log("ANIM maxY" + maxY);
+				
+				if (clouds_back != null) {
+					clouds_back.setYMax(maxY);
+				}
+				if (clouds_mid != null) {
+					clouds_mid.setYMax(maxY);
+				}
+				if (clouds_front != null) {
+					clouds_front.setYMax(maxY);
+				}
+				iv.getViewTreeObserver().removeOnPreDrawListener(this);
+				return true;
+			}
+		});
+		
+		
 		if (clouds_back != null)clouds_back.resumeAnimation();
 		if (clouds_mid != null)clouds_mid.resumeAnimation();
 		if (clouds_front != null)clouds_front.resumeAnimation();
