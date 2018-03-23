@@ -152,6 +152,7 @@ public class CloudsAnimatorView extends FrameLayout {
 		super.onWindowFocusChanged(hasWindowFocus);
 		if (hasWindowFocus) {
 			if (!started) {
+				L.log("ANIM focus start");
 				duration = (int) (DEFAULT_DURATION * getWidth() / (1024 * getResources().getDisplayMetrics().density)); 
 				startAnimation();
 				started = true;

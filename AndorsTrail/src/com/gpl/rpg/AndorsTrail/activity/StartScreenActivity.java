@@ -171,17 +171,14 @@ public final class StartScreenActivity extends FragmentActivity implements OnNew
 			
 			@Override
 			public boolean onPreDraw() {
-				float[] point = new float[]{0f,0f,0f,iv.getDrawable().getIntrinsicHeight()};
+				L.log("ANIM preDraw");
+				float[] point = new float[]{0f,0.25f * iv.getDrawable().getIntrinsicHeight()};
 				iv.getImageMatrix().mapPoints(point);
 				int imgY = (int) (iv.getTop() + point[1]);
 				L.log("ANIM imgY" + imgY);
-				int imgHeight = (int) (point[3] - point[1]);
-				L.log("ANIM imgHeight" + imgHeight);
-				int cloudSpace = (int) (imgY + (0.25 * imgHeight));
-				L.log("ANIM cloudSpace" + cloudSpace);
 				int screenHeight = getResources().getDisplayMetrics().heightPixels;
 				L.log("ANIM screenHeight" + screenHeight);
-				float maxY = ((float)cloudSpace) / ((float)screenHeight);
+				float maxY = ((float)imgY) / ((float)screenHeight);
 				L.log("ANIM maxY" + maxY);
 				
 				if (clouds_back != null) {
