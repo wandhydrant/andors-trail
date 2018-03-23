@@ -8,6 +8,7 @@ import android.content.Intent;
 import android.graphics.drawable.AnimationDrawable;
 import android.os.Bundle;
 import android.view.View;
+import android.view.ViewTreeObserver;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -53,7 +54,6 @@ public final class LoadingActivity extends Activity implements OnResourcesLoaded
 
 	@Override
 	public void onWindowFocusChanged(boolean hasFocus) {
-		L.log("ANIM Activity Focus "+hasFocus);
 		super.onWindowFocusChanged(hasFocus);
 		if (hasFocus) {
 			((AnimationDrawable)((ImageView)findViewById(R.id.title_logo)).getDrawable()).start();
@@ -62,22 +62,14 @@ public final class LoadingActivity extends Activity implements OnResourcesLoaded
 			int drawableWidth = iv.getDrawable().getIntrinsicWidth();
 			float ratio = ((float)ivWidth) / ((float)drawableWidth);
 			
-			int ivY = iv.getTop();
-			int screenHeight = getResources().getDisplayMetrics().heightPixels;
-			int occupied = screenHeight - ivY;
-			float maxY = 1.0f - ( ( ((float)occupied)/2.0f ) / ((float)screenHeight) );
-			
 			if (clouds_back != null) {
 				clouds_back.setScalingRatio(ratio);
-				clouds_back.setYMax(maxY);
 			}
 			if (clouds_mid != null) {
 				clouds_mid.setScalingRatio(ratio);
-				clouds_mid.setYMax(maxY);
 			}
 			if (clouds_front != null) {
 				clouds_front.setScalingRatio(ratio);
-				clouds_front.setYMax(maxY);
 			}
 			
 			if (progressDialog == null) {
@@ -95,10 +87,37 @@ public final class LoadingActivity extends Activity implements OnResourcesLoaded
 	
 	@Override
 	public void onResume() {
-		L.log("ANIM Activity Resume");
 		super.onResume();
 		
 		setup.setOnResourcesLoadedListener(this);
+		
+
+		final ImageView iv = (ImageView) findViewById(R.id.ts_foreground);
+		iv.getViewTreeObserver().addOnPreDrawListener(new ViewTreeObserver.OnPreDrawListener() {
+			
+			@Override
+			public boolean onPreDraw() {
+				float[] point = new float[]{0f,0.25f * iv.getDrawable().getIntrinsicHeight()};
+				iv.getImageMatrix().mapPoints(point);
+				int imgY = (int) (iv.getTop() + point[1]);
+				int screenHeight = getResources().getDisplayMetrics().heightPixels;
+				float maxY = ((float)imgY) / ((float)screenHeight);
+				
+				if (clouds_back != null) {
+					clouds_back.setYMax(maxY);
+				}
+				if (clouds_mid != null) {
+					clouds_mid.setYMax(maxY);
+				}
+				if (clouds_front != null) {
+					clouds_front.setYMax(maxY);
+				}
+				iv.getViewTreeObserver().removeOnPreDrawListener(this);
+				return true;
+			}
+		});
+		
+		
 		if (clouds_back != null)clouds_back.resumeAnimation();
 		if (clouds_mid != null)clouds_mid.resumeAnimation();
 		if (clouds_front != null)clouds_front.resumeAnimation();
@@ -106,7 +125,6 @@ public final class LoadingActivity extends Activity implements OnResourcesLoaded
 
 	@Override
 	public void onPause() {
-		L.log("ANIM Activity Pause");
 		super.onPause();
 		setup.setOnResourcesLoadedListener(null);
 		setup.removeOnSceneLoadedListener(this);
