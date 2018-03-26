@@ -3,7 +3,6 @@ package com.gpl.rpg.AndorsTrail.view;
 import java.util.concurrent.ConcurrentHashMap;
 
 import android.content.Context;
-import android.content.res.Configuration;
 import android.util.AttributeSet;
 import android.view.View;
 import android.view.ViewGroup;
@@ -16,7 +15,6 @@ import android.widget.ImageView;
 import android.widget.RelativeLayout;
 
 import com.gpl.rpg.AndorsTrail.R;
-import com.gpl.rpg.AndorsTrail.util.L;
 
 public class CloudsAnimatorView extends FrameLayout {
 
@@ -41,7 +39,7 @@ public class CloudsAnimatorView extends FrameLayout {
 	private int count = 15;
 	private ViewGroup layer;
 	private int duration = DEFAULT_DURATION;
-	private float yMax = 0.5f;
+	private int yMax = 100;
 	private float scalingRatio = 1.0f;
 	
 	private ConcurrentHashMap<ImageView, PausableTranslateAnimation> animations;
@@ -94,7 +92,7 @@ public class CloudsAnimatorView extends FrameLayout {
 		RelativeLayout.LayoutParams lp = new RelativeLayout.LayoutParams((int) (iv.getDrawable().getIntrinsicWidth() * scalingRatio), (int) (iv.getDrawable().getIntrinsicHeight() * scalingRatio));//RelativeLayout.LayoutParams.WRAP_CONTENT, RelativeLayout.LayoutParams.WRAP_CONTENT);
 		layer.addView(iv, lp);
 
-		final float y = (float) (layer.getHeight() * (Math.random() * (yMax))) - iv.getDrawable().getMinimumHeight();
+		final float y = (float) (Math.random() * yMax) - (int) (iv.getDrawable().getIntrinsicHeight() * scalingRatio);
 		float ratio = (float)Math.random();
 		final float x = (float) (((1-ratio) * (iv.getDrawable().getMinimumWidth() + layer.getWidth())) - iv.getDrawable().getMinimumWidth());
 		final long d = (long)((ratio * duration) / (speedFactor + (Math.random() * SPEED_VARIANCE)));
@@ -103,7 +101,7 @@ public class CloudsAnimatorView extends FrameLayout {
 	}
 	
 	private void resetCloud(final ImageView iv) {
-		final float y = (float) (layer.getHeight() * (Math.random() * (yMax))) - iv.getDrawable().getMinimumHeight();
+		final float y = (float) (Math.random() * yMax) - (int) (iv.getDrawable().getIntrinsicHeight() * scalingRatio);
 		final float x = -iv.getWidth();
 		final long d = (long)(duration / (speedFactor + (Math.random() * SPEED_VARIANCE)));
 		
@@ -181,7 +179,7 @@ public class CloudsAnimatorView extends FrameLayout {
 		this.scalingRatio = ratio;
 	}
 	
-	public void setYMax(float yMax) {
+	public void setYMax(int yMax) {
 		this.yMax = yMax;
 	}
 

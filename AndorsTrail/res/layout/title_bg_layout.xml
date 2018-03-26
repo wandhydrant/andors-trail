@@ -75,7 +75,7 @@
             	android:id="@+id/title_logo_placeholder_left"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_weight="0.2" >
+                android:layout_weight="0.1" >
             </TextView>
 
             <ImageView
@@ -85,7 +85,7 @@
                 android:layout_marginLeft="20sp"
                 android:layout_marginRight="20sp"
                 android:layout_marginTop="20sp"
-                android:layout_weight="0.6"
+                android:layout_weight="0.8"
                 android:scaleType="fitCenter"
                 android:src="@drawable/title_logo_animated" />
 
@@ -93,7 +93,7 @@
             	android:id="@+id/title_logo_placeholder_right"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_weight="0.2" >
+                android:layout_weight="0.1" >
             </TextView>
         </LinearLayout>
 

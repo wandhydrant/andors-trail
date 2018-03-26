@@ -18,7 +18,6 @@ import com.gpl.rpg.AndorsTrail.WorldSetup;
 import com.gpl.rpg.AndorsTrail.WorldSetup.OnResourcesLoadedListener;
 import com.gpl.rpg.AndorsTrail.WorldSetup.OnSceneLoadedListener;
 import com.gpl.rpg.AndorsTrail.savegames.Savegames;
-import com.gpl.rpg.AndorsTrail.util.L;
 import com.gpl.rpg.AndorsTrail.util.ThemeHelper;
 import com.gpl.rpg.AndorsTrail.view.CloudsAnimatorView;
 import com.gpl.rpg.AndorsTrail.view.CustomDialogFactory;
@@ -32,7 +31,6 @@ public final class LoadingActivity extends Activity implements OnResourcesLoaded
 
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
-		L.log("ANIM Activity Create");
 		setTheme(ThemeHelper.getBaseTheme());
 		super.onCreate(savedInstanceState);
 		AndorsTrailApplication app = AndorsTrailApplication.getApplicationFromActivity(this);
@@ -100,17 +98,15 @@ public final class LoadingActivity extends Activity implements OnResourcesLoaded
 				float[] point = new float[]{0f,0.25f * iv.getDrawable().getIntrinsicHeight()};
 				iv.getImageMatrix().mapPoints(point);
 				int imgY = (int) (iv.getTop() + point[1]);
-				int screenHeight = getResources().getDisplayMetrics().heightPixels;
-				float maxY = ((float)imgY) / ((float)screenHeight);
-				
+
 				if (clouds_back != null) {
-					clouds_back.setYMax(maxY);
+					clouds_back.setYMax(imgY);
 				}
 				if (clouds_mid != null) {
-					clouds_mid.setYMax(maxY);
+					clouds_mid.setYMax(imgY);
 				}
 				if (clouds_front != null) {
-					clouds_front.setYMax(maxY);
+					clouds_front.setYMax(imgY);
 				}
 				iv.getViewTreeObserver().removeOnPreDrawListener(this);
 				return true;

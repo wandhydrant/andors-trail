@@ -21,7 +21,6 @@ import com.gpl.rpg.AndorsTrail.activity.fragment.StartScreenActivity_MainMenu.On
 import com.gpl.rpg.AndorsTrail.activity.fragment.StartScreenActivity_NewGame;
 import com.gpl.rpg.AndorsTrail.activity.fragment.StartScreenActivity_NewGame.GameCreationOverListener;
 import com.gpl.rpg.AndorsTrail.resource.tiles.TileManager;
-import com.gpl.rpg.AndorsTrail.util.L;
 import com.gpl.rpg.AndorsTrail.util.ThemeHelper;
 import com.gpl.rpg.AndorsTrail.view.CloudsAnimatorView;
 
@@ -116,7 +115,8 @@ public final class StartScreenActivity extends FragmentActivity implements OnNew
 		if (currentFragment != null) {
 			if (ui_visible) {
 
-				development_version.setText(development_version.getText()
+				development_version.setText(
+						development_version.getText()
 //						+
 //						"\nMax Heap: " + Runtime.getRuntime().maxMemory() / (1024 * 1024) + "MB"+
 //						"\nUsed Heap: " + Runtime.getRuntime().totalMemory() / (1024 * 1024) + "MB"+
@@ -171,24 +171,19 @@ public final class StartScreenActivity extends FragmentActivity implements OnNew
 			
 			@Override
 			public boolean onPreDraw() {
-				L.log("ANIM preDraw");
 				float[] point = new float[]{0f,0.25f * iv.getDrawable().getIntrinsicHeight()};
 				iv.getImageMatrix().mapPoints(point);
 				int imgY = (int) (iv.getTop() + point[1]);
-				L.log("ANIM imgY" + imgY);
 				int screenHeight = getResources().getDisplayMetrics().heightPixels;
-				L.log("ANIM screenHeight" + screenHeight);
-				float maxY = ((float)imgY) / ((float)screenHeight);
-				L.log("ANIM maxY" + maxY);
-				
+
 				if (clouds_back != null) {
-					clouds_back.setYMax(maxY);
+					clouds_back.setYMax(imgY);
 				}
 				if (clouds_mid != null) {
-					clouds_mid.setYMax(maxY);
+					clouds_mid.setYMax(imgY);
 				}
 				if (clouds_front != null) {
-					clouds_front.setYMax(maxY);
+					clouds_front.setYMax(imgY);
 				}
 				iv.getViewTreeObserver().removeOnPreDrawListener(this);
 				return true;
