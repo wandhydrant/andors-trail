@@ -12,6 +12,7 @@
         android:layout_marginRight="2dp"
         android:background="?attr/ui_theme_stdframe_bitmap"
         android:gravity="bottom|start"
+        android:clickable="true"
         android:orientation="vertical" >
 
         <TextView
@@ -62,6 +63,7 @@
         android:layout_marginLeft="2dp"
         android:layout_marginRight="2dp"
         android:background="?attr/ui_theme_stdframe_bitmap"
+        android:clickable="true"
         android:gravity="bottom|start"
         android:orientation="vertical" >
 
@@ -86,6 +88,7 @@
         android:layout_marginLeft="2dp"
         android:layout_marginRight="2dp"
         android:background="?attr/ui_theme_stdframe_bitmap"
+        android:clickable="true"
         android:gravity="center_vertical"
         android:orientation="horizontal" >
 

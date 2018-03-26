@@ -4,8 +4,8 @@
     android:layout_height="wrap_content"
     android:layout_gravity="bottom"
     android:background="?attr/ui_theme_stdframe_bitmap"
-    android:gravity="top|start"
-    >
+    android:clickable="true"
+    android:gravity="top|start" >
 
     <RelativeLayout
         android:id="@+id/save_preview_hero_info"

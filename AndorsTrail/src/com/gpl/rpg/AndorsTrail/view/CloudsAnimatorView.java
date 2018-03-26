@@ -150,7 +150,6 @@ public class CloudsAnimatorView extends FrameLayout {
 		super.onWindowFocusChanged(hasWindowFocus);
 		if (hasWindowFocus) {
 			if (!started) {
-				duration = (int) (DEFAULT_DURATION * getWidth() / (1024 * getResources().getDisplayMetrics().density)); 
 				startAnimation();
 				started = true;
 			}
@@ -177,6 +176,8 @@ public class CloudsAnimatorView extends FrameLayout {
 	
 	public void setScalingRatio(float ratio) {
 		this.scalingRatio = ratio;
+		duration = (int) (DEFAULT_DURATION * getWidth() / (1024 * ratio)); 
+		
 	}
 	
 	public void setYMax(int yMax) {
