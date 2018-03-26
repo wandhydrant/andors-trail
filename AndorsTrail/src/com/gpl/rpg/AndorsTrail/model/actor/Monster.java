@@ -87,8 +87,8 @@ public final class Monster extends Actor {
 		return this.rectPosition.isAdjacentTo(p.position);
 	}
 
-	public boolean isAgressive() {
-		return getPhraseID() == null || forceAggressive;
+	public boolean isAgressive(Player p) {
+		return getPhraseID() == null || forceAggressive || (p != null && getFaction() != null && p.getAlignment(getFaction()) < 0);
 	}
 
 	public void forceAggressive() {

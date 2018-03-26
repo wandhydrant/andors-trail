@@ -203,7 +203,7 @@ public final class MovementController implements TimedMessageTask.Callback {
 		if (aggressiveness == AndorsTrailPreferences.MOVEMENTAGGRESSIVENESS_NORMAL) return true;
 
 		Monster m = world.model.currentMap.getMonsterAt(player.nextPosition);
-		if (m != null && !m.isAgressive()) return true; // avoid MOVEMENTAGGRESSIVENESS settings for NPCs
+		if (m != null && !m.isAgressive(player)) return true; // avoid MOVEMENTAGGRESSIVENESS settings for NPCs
 
 		if (aggressiveness == AndorsTrailPreferences.MOVEMENTAGGRESSIVENESS_AGGRESSIVE && m == null) return false;
 		if (aggressiveness == AndorsTrailPreferences.MOVEMENTAGGRESSIVENESS_DEFENSIVE && m != null) return false;
@@ -346,13 +346,14 @@ public final class MovementController implements TimedMessageTask.Callback {
 	}
 
 	public static void refreshMonsterAggressiveness(final PredefinedMap map, final Player player) {
-		for(MonsterSpawnArea a : map.spawnAreas) {
-			for (Monster m : a.monsters) {
-				String faction = m.getFaction();
-				if (faction == null) continue;
-				if (player.getAlignment(faction) < 0) m.forceAggressive();
-			}
-		}
+//	Faction-related agressiveness now dynamic, and unrelated to "forceAgressive".
+//		for(MonsterSpawnArea a : map.spawnAreas) {
+//			for (Monster m : a.monsters) {
+//				String faction = m.getFaction();
+//				if (faction == null) continue;
+//				if (player.getAlignment(faction) < 0) m.forceAggressive();
+//			}
+//		}
 	}
 
 	public static boolean hasAdjacentAggressiveMonster(PredefinedMap map, Player player) {
@@ -361,7 +362,7 @@ public final class MovementController implements TimedMessageTask.Callback {
 	public static Monster getAdjacentAggressiveMonster(PredefinedMap map, Player player) {
 		for (MonsterSpawnArea a : map.spawnAreas) {
 			for (Monster m : a.monsters) {
-				if (!m.isAgressive()) continue;
+				if (!m.isAgressive(player)) continue;
 				if (m.isAdjacentTo(player)) return m;
 			}
 		}
