@@ -4,7 +4,7 @@ import java.lang.ref.WeakReference;
 import java.util.Collection;
 
 import android.app.Activity;
-import android.app.AlertDialog;
+import android.app.Dialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -25,6 +25,7 @@ import com.gpl.rpg.AndorsTrail.context.ControllerContext;
 import com.gpl.rpg.AndorsTrail.context.WorldContext;
 import com.gpl.rpg.AndorsTrail.controller.AttackResult;
 import com.gpl.rpg.AndorsTrail.controller.CombatController;
+import com.gpl.rpg.AndorsTrail.controller.Constants;
 import com.gpl.rpg.AndorsTrail.controller.listeners.CombatActionListener;
 import com.gpl.rpg.AndorsTrail.controller.listeners.CombatTurnListener;
 import com.gpl.rpg.AndorsTrail.controller.listeners.PlayerMovementListener;
@@ -39,7 +40,9 @@ import com.gpl.rpg.AndorsTrail.model.map.PredefinedMap;
 import com.gpl.rpg.AndorsTrail.resource.tiles.TileCollection;
 import com.gpl.rpg.AndorsTrail.savegames.Savegames;
 import com.gpl.rpg.AndorsTrail.util.Coord;
+import com.gpl.rpg.AndorsTrail.util.ThemeHelper;
 import com.gpl.rpg.AndorsTrail.view.CombatView;
+import com.gpl.rpg.AndorsTrail.view.CustomDialogFactory;
 import com.gpl.rpg.AndorsTrail.view.DisplayActiveActorConditionIcons;
 import com.gpl.rpg.AndorsTrail.view.ItemContainerAdapter;
 import com.gpl.rpg.AndorsTrail.view.MainView;
@@ -79,6 +82,7 @@ public final class MainActivity
 
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
+		setTheme(ThemeHelper.getNoBackgroundTheme());
 		super.onCreate(savedInstanceState);
 
 		AndorsTrailApplication app = AndorsTrailApplication.getApplicationFromActivity(this);
@@ -231,82 +235,35 @@ public final class MainActivity
 					
 					final int buttonId = ((QuickButton)v).getIndex();
 					
-					final AlertDialog dialog = new AlertDialog.Builder(v.getContext()).create();
+//					final AlertDialog dialog = new AlertDialog.Builder(new ContextThemeWrapper(v.getContext(), R.style.AndorsTrailStyle_Dialog)).create();
 					View view = getLayoutInflater().inflate(R.layout.quickbuttons_usable_inventory, null);
 					ListView lv = (ListView) view.findViewById(R.id.quickbuttons_assignlist);
 
 					TileCollection wornTiles = world.tileManager.loadTilesFor(world.model.player.inventory, getResources());
 					final ItemContainerAdapter inventoryListAdapter = new QuickslotsItemContainerAdapter(lv.getContext(), world.tileManager, world.model.player.inventory.usableItems(), world.model.player, wornTiles);
 					lv.setAdapter(inventoryListAdapter);
+
+					final Dialog d = CustomDialogFactory.createDialog(v.getContext(), 
+							v.getResources().getString(R.string.inventory_assign), 
+							v.getResources().getDrawable(R.drawable.ui_icon_equipment), 
+							v.getResources().getString(R.string.inventory_selectitem), view, false);
+					
 					
 					lv.setOnItemClickListener(new OnItemClickListener() {
 						@Override
 						public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 							controllers.itemController.setQuickItem(inventoryListAdapter.getItem(position).itemType, buttonId);
-							dialog.dismiss();
+							d.dismiss();
 						}
 					});
 					
-//					Button b = (Button) view.findViewById(R.id.quickbuttons_unassign);
-//					b.setOnClickListener(new OnClickListener() {
-//						@Override
-//						public void onClick(View v) {
-//							controllers.itemController.setQuickItem(null, buttonId);
-//							dialog.dismiss();
-//						}
-//					});
-					
-					dialog.setView(view);
-					dialog.setCancelable(true);
-					dialog.show();
+					CustomDialogFactory.show(d);
 				}
 				return true;
 			}
 		};
 	}
 	
-//	@Override
-//	public void onCreateContextMenu(ContextMenu menu, View v, ContextMenuInfo menuInfo) {
-//		
-//		super.onCreateContextMenu(menu, v, menuInfo);
-//		if(quickitemview.isQuickButtonId(v.getId())){
-//			createQuickButtonMenu(menu);
-//		}
-//		lastSelectedMenu = null;
-//	}
-//
-//	private void createQuickButtonMenu(ContextMenu menu){
-//		menu.add(Menu.NONE, R.id.quick_menu_unassign, Menu.NONE, R.string.inventory_unassign);
-//		SubMenu assignMenu = menu.addSubMenu(Menu.NONE, R.id.quick_menu_assign, Menu.NONE, R.string.inventory_assign);
-//		for(int i=0; i<world.model.player.inventory.items.size(); ++i){
-//			ItemEntry itemEntry = world.model.player.inventory.items.get(i);
-//			if(itemEntry.itemType.isUsable())
-//				assignMenu.add(R.id.quick_menu_assign_group, i, Menu.NONE, itemEntry.itemType.getName(world.model.player));
-//		}
-//	}
-//
-//	@Override
-//	public boolean onContextItemSelected(MenuItem item) {
-//		QuickButtonContextMenuInfo menuInfo;
-//		if(item.getGroupId() == R.id.quick_menu_assign_group){
-//			menuInfo = (QuickButtonContextMenuInfo) lastSelectedMenu;
-//			controllers.itemController.setQuickItem(world.model.player.inventory.items.get(item.getItemId()).itemType, menuInfo.index);
-//			return true;
-//		}
-//		switch(item.getItemId()){
-//		case R.id.quick_menu_unassign:
-//			menuInfo = (QuickButtonContextMenuInfo) item.getMenuInfo();
-//			controllers.itemController.setQuickItem(null, menuInfo.index);
-//			break;
-//		case R.id.quick_menu_assign:
-//			menuInfo = (QuickButtonContextMenuInfo) item.getMenuInfo();
-//			lastSelectedMenu = menuInfo;
-//			break;
-//		default:
-//			return super.onContextItemSelected(item);
-//		}
-//		return true;
-//	}
 
 	private void updateStatus() {
 		statusview.updateStatus();
@@ -319,6 +276,14 @@ public final class MainActivity
 		world.model.combatLog.append(msg);
 		statusText.setText(world.model.combatLog.getLastMessages());
 		statusText.setVisibility(View.VISIBLE);
+		if (! world.model.uiSelections.isInCombat) {
+			statusText.postDelayed(new Runnable(){
+				@Override
+				public void run() {
+					clearMessages();
+				}
+			}, Constants.STATUS_TEXT_AUTOHIDE_DELAY);
+		}
 	}
 
 	private void clearMessages() {

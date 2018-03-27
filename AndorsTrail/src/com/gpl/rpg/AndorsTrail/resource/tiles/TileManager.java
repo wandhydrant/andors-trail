@@ -1,8 +1,10 @@
 package com.gpl.rpg.AndorsTrail.resource.tiles;
 
+import java.util.Collection;
 import java.util.HashMap;
 import java.util.HashSet;
 
+import android.content.Context;
 import android.content.res.Resources;
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
@@ -18,6 +20,7 @@ import android.widget.TextView;
 
 import com.gpl.rpg.AndorsTrail.AndorsTrailApplication;
 import com.gpl.rpg.AndorsTrail.AndorsTrailPreferences;
+import com.gpl.rpg.AndorsTrail.R;
 import com.gpl.rpg.AndorsTrail.context.WorldContext;
 import com.gpl.rpg.AndorsTrail.model.ability.ActorConditionType;
 import com.gpl.rpg.AndorsTrail.model.actor.Monster;
@@ -32,34 +35,46 @@ import com.gpl.rpg.AndorsTrail.model.map.MonsterSpawnArea;
 import com.gpl.rpg.AndorsTrail.model.map.PredefinedMap;
 import com.gpl.rpg.AndorsTrail.model.map.TMXMapTranslator;
 import com.gpl.rpg.AndorsTrail.util.L;
+import com.gpl.rpg.AndorsTrail.util.ThemeHelper;
 
 public final class TileManager {
-	public static final int CHAR_HERO = 1;
-	public static final int iconID_selection_red = 2;
-	public static final int iconID_selection_yellow = 3;
+	
+	public static final int BEGIN_ID = 1;
+	
+	public static final int CHAR_HERO_0 = BEGIN_ID;
+	public static final int CHAR_HERO_1 = CHAR_HERO_0+1;
+	public static final int CHAR_HERO_2 = CHAR_HERO_1+1;
+	//Default hero
+	public static final int CHAR_HERO = CHAR_HERO_0;
+	//Max hero icon ID in this version.
+	public static final int LAST_HERO = CHAR_HERO_2;
+	
+	public static final int iconID_selection_red = CHAR_HERO_2+1;
+	public static final int iconID_selection_yellow = iconID_selection_red+1;
 	public static final int iconID_attackselect = iconID_selection_red;
 	public static final int iconID_moveselect = iconID_selection_yellow;
-	public static final int iconID_groundbag = 4;
-	public static final int iconID_boxopened = 5;
-	public static final int iconID_boxclosed = 6;
+	public static final int iconID_groundbag = iconID_moveselect+1;
+	public static final int iconID_boxopened = iconID_groundbag+1;
+	public static final int iconID_boxclosed = iconID_boxopened+1;
 	public static final int iconID_shop = iconID_groundbag;
 	public static final int iconID_unassigned_quickslot = iconID_groundbag;
-	public static final int iconID_selection_blue = 7;
-	public static final int iconID_selection_purple = 8;
-	public static final int iconID_selection_green = 9;
+	public static final int iconID_selection_blue = iconID_boxclosed+1;
+	public static final int iconID_selection_purple = iconID_selection_blue+1;
+	public static final int iconID_selection_green = iconID_selection_purple+1;
 
-	public static final int iconID_splatter_red_1a = 10;
-	public static final int iconID_splatter_red_1b = 11;
-	public static final int iconID_splatter_red_2a = 12;
-	public static final int iconID_splatter_red_2b = 13;
-	public static final int iconID_splatter_brown_1a = 14;
-	public static final int iconID_splatter_brown_1b = 15;
-	public static final int iconID_splatter_brown_2a = 16;
-	public static final int iconID_splatter_brown_2b = 17;
-	public static final int iconID_splatter_white_1a = 18;
-	public static final int iconID_splatter_white_1b = 19;
+	public static final int iconID_splatter_red_1a = iconID_selection_green+1;
+	public static final int iconID_splatter_red_1b = iconID_splatter_red_1a+1;
+	public static final int iconID_splatter_red_2a = iconID_splatter_red_1b+1;
+	public static final int iconID_splatter_red_2b = iconID_splatter_red_2a+1;
+	public static final int iconID_splatter_brown_1a = iconID_splatter_red_2b+1;
+	public static final int iconID_splatter_brown_1b = iconID_splatter_brown_1a+1;
+	public static final int iconID_splatter_brown_2a = iconID_splatter_brown_1b+1;
+	public static final int iconID_splatter_brown_2b = iconID_splatter_brown_2a+1;
+	public static final int iconID_splatter_white_1a = iconID_splatter_brown_2b+1;
+	public static final int iconID_splatter_white_1b = iconID_splatter_white_1a+1;
 	
-	public static final int iconID_immunity_overlay = 20;
+	public static final int iconID_immunity_overlay = iconID_splatter_white_1b+1;
+
 
 	public int tileSize;
 	public float density;
@@ -70,13 +85,13 @@ public final class TileManager {
 
 
 	public final TileCache tileCache = new TileCache();
-	public TileCollection preloadedTiles;// = new TileCollection(118);
+	public TileCollection preloadedTiles;// = new TileCollection(116);
 	public TileCollection currentMapTiles;
 	public TileCollection adjacentMapTiles;
 	private final HashSet<Integer> preloadedTileIDs = new HashSet<Integer>();
 
 
-	public TileCollection loadTilesFor(HashSet<Integer> tileIDs, Resources r) {
+	public TileCollection loadTilesFor(Collection<Integer> tileIDs, Resources r) {
 		return tileCache.loadTilesFor(tileIDs, r);
 	}
 
@@ -221,8 +236,8 @@ public final class TileManager {
 	public void setImageViewTileForMonster(Resources res, ImageView imageView, int iconID) {  setImageViewTile(res, imageView, currentMapTiles.getBitmap(iconID)); }
 	public void setImageViewTileForPlayer(Resources res, ImageView imageView, int iconID) {  setImageViewTile(res, imageView, preloadedTiles.getBitmap(iconID)); }
 //	public void setImageViewTile(Resources res, ImageView imageView, ActorConditionType conditionType) {  setImageViewTile(res, imageView, preloadedTiles.getBitmap(conditionType.iconID)); }
-	public void setImageViewTile(Resources res, ImageView imageView, ActorConditionType conditionType, boolean immunityOverlay) {  setImageViewTile(res, imageView, preloadedTiles.getBitmap(conditionType.iconID), immunityOverlay); }
-	public void setImageViewTile(Resources res, ImageView imageView, ActorConditionType conditionType, boolean immunityOverlay, String exponent, String index) {  setImageViewTile(res, imageView, preloadedTiles.getBitmap(conditionType.iconID), immunityOverlay, exponent, index); }
+	public void setImageViewTile(Context ctx, ImageView imageView, ActorConditionType conditionType, boolean immunityOverlay) {  setImageViewTile(ctx, imageView, preloadedTiles.getBitmap(conditionType.iconID), immunityOverlay); }
+	public void setImageViewTile(Context ctx, ImageView imageView, ActorConditionType conditionType, boolean immunityOverlay, String exponent, String index) {  setImageViewTile(ctx, imageView, preloadedTiles.getBitmap(conditionType.iconID), immunityOverlay, exponent, index); }
 	public void setImageViewTileForUIIcon(Resources res, ImageView imageView, int iconID) { setImageViewTile(res, imageView, preloadedTiles.getBitmap(iconID)); }
 	public void setImageViewTile(Resources res, ImageView imageView, Bitmap b) {
 		if (density > 1) {
@@ -231,11 +246,11 @@ public final class TileManager {
 			setImageViewTile(imageView, new BitmapDrawable(res, b)); 
 		}
 	}
-	public void setImageViewTile(Resources res, ImageView imageView, Bitmap b, boolean immunityOverlay) {
-		setImageViewTile(res, imageView, b, immunityOverlay, null, null);
+	public void setImageViewTile(Context ctx, ImageView imageView, Bitmap b, boolean immunityOverlay) {
+		setImageViewTile(ctx, imageView, b, immunityOverlay, null, null);
 	}
-	public void setImageViewTile(Resources res, ImageView imageView, Bitmap b, boolean immunityOverlay, String exponent, String index) {
-		if (!immunityOverlay && exponent == null && index == null) setImageViewTile(res, imageView, b);
+	public void setImageViewTile(Context ctx, ImageView imageView, Bitmap b, boolean immunityOverlay, String exponent, String index) {
+		if (!immunityOverlay && exponent == null && index == null) setImageViewTile(ctx.getResources(), imageView, b);
 		else {
 			Drawable[] layers = new Drawable[1+
 			                                 (immunityOverlay ? 1 : 0)+
@@ -244,22 +259,22 @@ public final class TileManager {
 			int tileWidth;
 			if (density > 1) {
 				tileWidth = (int)(tileSize*density);
-				layers[0] = new BitmapDrawable(res, Bitmap.createScaledBitmap(b, tileWidth, tileWidth, true));
+				layers[0] = new BitmapDrawable(ctx.getResources(), Bitmap.createScaledBitmap(b, tileWidth, tileWidth, true));
 			} else {
 				tileWidth = tileSize;
-				layers[0] = new BitmapDrawable(res, b);
+				layers[0] = new BitmapDrawable(ctx.getResources(), b);
 			}
 			int nextIndex = 1;
 			if (immunityOverlay) {
-				layers[nextIndex] = new BitmapDrawable(res, preloadedTiles.getBitmap(iconID_immunity_overlay));
+				layers[nextIndex] = new BitmapDrawable(ctx.getResources(), preloadedTiles.getBitmap(iconID_immunity_overlay));
 				nextIndex++;
 			}
 			if (exponent != null) {
-				layers[nextIndex] = new TextDrawable(res, tileWidth, tileWidth, exponent, TextDrawable.Align.TOP_RIGHT);
+				layers[nextIndex] = new TextDrawable(ctx, tileWidth, tileWidth, exponent, TextDrawable.Align.TOP_RIGHT);
 				nextIndex++;
 			}
 			if (index != null) {
-				layers[nextIndex] = new TextDrawable(res, tileWidth, tileWidth, index, TextDrawable.Align.BOTTOM_RIGHT);
+				layers[nextIndex] = new TextDrawable(ctx, tileWidth, tileWidth, index, TextDrawable.Align.BOTTOM_RIGHT);
 				nextIndex++;
 			}
 			LayerDrawable layered = new LayerDrawable(layers);
@@ -284,7 +299,7 @@ public final class TileManager {
 			} else {
 				overlayDrawable = new BitmapDrawable(res, preloadedTiles.getBitmap(overlayIconID));
 				iconDrawable = new BitmapDrawable(res, icon);
-				}
+			}
 			
 			if (overlayAbove) {
 				LayerDrawable layered = new LayerDrawable(new Drawable[] {
@@ -307,6 +322,17 @@ public final class TileManager {
 		final int overlayIconID = itemType.getOverlayTileID();
 		setImageViewTileWithOverlay(res, imageView, overlayIconID, icon, false);
 	}
+	
+
+
+	public Drawable getDrawableForItem(Resources res, int iconID, TileCollection itemTileCollection) {
+		final Bitmap icon = itemTileCollection.getBitmap(iconID);
+		if (density > 1) {
+			return new BitmapDrawable(res, Bitmap.createScaledBitmap(icon, (int)(tileSize*density), (int)(tileSize*density), true));
+		} else {
+			return new BitmapDrawable(res, icon);
+			}
+	}
 
 	public void loadPreloadedTiles(Resources r) {
 		int maxTileID = tileCache.getMaxTileID();
@@ -317,7 +343,7 @@ public final class TileManager {
 //			}
 //		}
 		preloadedTiles = new TileCollection(maxTileID);
-		for(int i = TileManager.CHAR_HERO; i <= maxTileID; ++i) {
+		for(int i = TileManager.BEGIN_ID; i <= maxTileID; ++i) {
 			preloadedTileIDs.add(i);
 		}
 		tileCache.loadTilesFor(preloadedTileIDs, r, preloadedTiles);
@@ -369,7 +395,8 @@ public final class TileManager {
 		private String text;
 		private int size = 15;
 		private Align align = Align.CENTER;
-		private Paint mPaint;
+		private Paint mFillPaint;
+		private Paint mStrokePaint;
 		private Rect textBounds;
 		private int cHeight;
 		private int cWidth;
@@ -386,39 +413,43 @@ public final class TileManager {
 			BOTTOM_RIGHT
 		}
 		
-		public TextDrawable(Resources res, int cWidth, int cHeight, String text, Align align, int size) {
+		public TextDrawable(Context ctx, int cWidth, int cHeight, String text, Align align, int size) {
 			this.text= text;
 			this.align = align;
 			this.size = size;
 			this.cWidth = cWidth;
 			this.cHeight = cHeight;
-			init(res);
+			init(ctx);
 		}
 
-		public TextDrawable(Resources res, int cWidth, int cHeight,  String text, Align align) {
+		public TextDrawable(Context ctx, int cWidth, int cHeight,  String text, Align align) {
 			this.text= text;
 			this.align = align;
 			this.cWidth = cWidth;
 			this.cHeight = cHeight;
-			init(res);
+			init(ctx);
 		}
 		
-		public TextDrawable(Resources res, int cWidth, int cHeight,  String text) {
+		public TextDrawable(Context ctx, int cWidth, int cHeight,  String text) {
 			this.text= text;
 			this.cWidth = cWidth;
 			this.cHeight = cHeight;
-			init(res);
+			init(ctx);
 		}
 		
-		public void init(Resources res) {
-			mPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
+		public void init(Context ctx) {
+			mFillPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
 
-			mPaint.setColor(res.getColor(android.R.color.black));
-			mPaint.setShadowLayer(1, 1, 1, res.getColor(android.R.color.white));
-			mPaint.setStyle(Paint.Style.FILL);
-			mPaint.setTextSize(size * res.getDisplayMetrics().scaledDensity);
+			mFillPaint.setColor(ThemeHelper.getThemeColor(ctx, R.attr.ui_theme_dialogue_light_color));
+//			mFillPaint.setShadowLayer(5f * res.getDisplayMetrics().scaledDensity, 1, 1, res.getColor(android.R.color.black));
+			mFillPaint.setStyle(Paint.Style.FILL);
+			mFillPaint.setTextSize(size * ctx.getResources().getDisplayMetrics().scaledDensity);
 			textBounds = new Rect();
-			mPaint.getTextBounds(text, 0, text.length(), textBounds);
+			mFillPaint.getTextBounds(text, 0, text.length(), textBounds);
+			mStrokePaint=new Paint(mFillPaint);
+//			mStrokePaint.setStyle(Paint.Style.FILL);
+//			mStrokePaint.setStrokeWidth(1f * res.getDisplayMetrics().scaledDensity);
+			mStrokePaint.setColor(ThemeHelper.getThemeColor(ctx, R.attr.ui_theme_buttonbar_bg_color));
 		}
 		
 		
@@ -464,22 +495,26 @@ public final class TileManager {
 				break;
 			
 			}
-			canvas.drawText(text, x, y, mPaint);
+			canvas.drawRect(x, y - textBounds.height(), x + textBounds.width(), y, mStrokePaint);
+			canvas.drawText(text, x, y, mFillPaint);
+//			canvas.drawText(text, x, y, mStrokePaint);
 		}
 
 		@Override
 		public void setAlpha(int alpha) {
-			mPaint.setAlpha(alpha);
+			mFillPaint.setAlpha(alpha);
+//			mStrokePaint.setAlpha(alpha);
 		}
 
 		@Override
 		public void setColorFilter(ColorFilter cf) {
-			mPaint.setColorFilter(cf);
+			mFillPaint.setColorFilter(cf);
+//			mStrokePaint.setColorFilter(cf);
 		}
 
 		@Override
 		public int getOpacity() {
-			return mPaint.getAlpha();
+			return mFillPaint.getAlpha();
 		}
 		
 		@Override

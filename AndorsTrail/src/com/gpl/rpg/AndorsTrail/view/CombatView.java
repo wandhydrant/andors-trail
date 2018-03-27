@@ -1,6 +1,5 @@
 package com.gpl.rpg.AndorsTrail.view;
 
-import android.R.color;
 import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.res.Resources;
@@ -33,7 +32,7 @@ import com.gpl.rpg.AndorsTrail.model.actor.Player;
 import com.gpl.rpg.AndorsTrail.util.Coord;
 
 public final class CombatView extends RelativeLayout implements CombatSelectionListener, CombatTurnListener, ActorStatsListener, ActorConditionListener {
-	private final TextView statusTextView;
+	private final RangeBar playerAPBar;
 	private final Button attackMoveButton;
 	private final ImageButton monsterInfo;
 	private final RangeBar monsterHealth;
@@ -70,11 +69,13 @@ public final class CombatView extends RelativeLayout implements CombatSelectionL
 
 		setFocusable(false);
 		inflate(context, R.layout.combatview, this);
-		findViewById(R.id.combatview_fixedarea).setBackgroundResource(R.drawable.ui_gradientshape_translucent);
-//		this.setBackgroundResource(R.drawable.ui_gradientshape_translucent);
+		//Prevents mis-taps from registering as main area taps by going through the combat view.
+		findViewById(R.id.combatview_fixedarea).setClickable(true);
 
 		final CombatController c = controllers.combatController;
 		attackMoveButton = (Button) findViewById(R.id.combatview_moveattack);
+		//Enable marquee if text is too long.
+		attackMoveButton.setSelected(true);
 		attackMoveButton.setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View arg0) {
@@ -83,6 +84,8 @@ public final class CombatView extends RelativeLayout implements CombatSelectionL
 		});
 
 		Button endTurnButton = (Button) findViewById(R.id.combatview_endturn);
+		//Enable marquee if text is too long.
+		endTurnButton.setSelected(true);
 		endTurnButton.setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View arg0) {
@@ -90,6 +93,8 @@ public final class CombatView extends RelativeLayout implements CombatSelectionL
 			}
 		});
 		Button fleeButton = (Button) findViewById(R.id.combatview_flee);
+		//Enable marquee if text is too long.
+		fleeButton.setSelected(true);
 		fleeButton.setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View arg0) {
@@ -97,7 +102,8 @@ public final class CombatView extends RelativeLayout implements CombatSelectionL
 			}
 		});
 
-		statusTextView = (TextView) findViewById(R.id.combatview_status);
+		playerAPBar = (RangeBar) findViewById(R.id.combatview_status);
+		playerAPBar.init(R.drawable.ui_progress_ap, R.string.status_ap);
 
 		monsterInfo = (ImageButton) findViewById(R.id.combatview_monsterinfo);
 		monsterInfo.setOnClickListener(new OnClickListener() {
@@ -125,8 +131,8 @@ public final class CombatView extends RelativeLayout implements CombatSelectionL
 		activeConditions = new DisplayActiveActorConditionIcons(controllers, world, context, activeConditionsBar);
 		
 		
-		monsterBar.setBackgroundColor(res.getColor(color.transparent));
-		actionBar.setBackgroundColor(res.getColor(color.transparent));
+//		monsterBar.setBackgroundColor(res.getColor(color.transparent));
+//		actionBar.setBackgroundColor(res.getColor(color.transparent));
 
 		displayAnimation = AnimationUtils.loadAnimation(context, R.anim.showcombatbar);
 		hideAnimation = AnimationUtils.loadAnimation(context, R.anim.hidecombatbar);
@@ -180,7 +186,7 @@ public final class CombatView extends RelativeLayout implements CombatSelectionL
 		monsterHealth.update(m.getMaxHP(), m.getCurrentHP());
 	}
 	private void updatePlayerAP() {
-		statusTextView.setText(res.getString(R.string.combat_status_ap, player.getCurrentAP()));
+		playerAPBar.update(player.getMaxAP(), player.getCurrentAP());
 		updateAttackMoveButtonText();
 	}
 	private void updateSelectedMonster(Monster selectedMonster) {
@@ -206,8 +212,8 @@ public final class CombatView extends RelativeLayout implements CombatSelectionL
 			return;
 		}
 		if (currentMonster.conditions.size()+currentMonster.immunities.size() > 0) {
-			if (currentMonster.conditions.size() > 0) world.tileManager.setImageViewTile(res, monsterConditionsButton, currentMonster.conditions.get(0).conditionType, false, Integer.toString(currentMonster.conditions.size()+currentMonster.immunities.size()), null);
-			else world.tileManager.setImageViewTile(res, monsterConditionsButton, currentMonster.immunities.get(0).conditionType, true, Integer.toString(currentMonster.conditions.size()+currentMonster.immunities.size()), null);
+			if (currentMonster.conditions.size() > 0) world.tileManager.setImageViewTile(getContext(), monsterConditionsButton, currentMonster.conditions.get(0).conditionType, false, Integer.toString(currentMonster.conditions.size()+currentMonster.immunities.size()), null);
+			else world.tileManager.setImageViewTile(getContext(), monsterConditionsButton, currentMonster.immunities.get(0).conditionType, true, Integer.toString(currentMonster.conditions.size()+currentMonster.immunities.size()), null);
 			showConditionsButton();
 			if (conditionsBarToggled) showConditionsBar();
 		} else {
@@ -240,9 +246,6 @@ public final class CombatView extends RelativeLayout implements CombatSelectionL
 		if (activeConditionsBar.getVisibility() != View.VISIBLE) {
 			activeConditionsBar.setVisibility(View.VISIBLE);
 			if (preferences.enableUiAnimations) {
-//				if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN) {
-//					monsterBar.getLayoutTransition().enableTransitionType(LayoutTransition.CHANGING);
-//				}
 				activeConditionsBar.startAnimation(displayConditionsBarAnimation);
 			}
 		}
@@ -253,9 +256,6 @@ public final class CombatView extends RelativeLayout implements CombatSelectionL
 	private void hideConditionsBar() {
 		if (activeConditionsBar.getVisibility() == View.VISIBLE) {
 			if (preferences.enableUiAnimations) {
-//				if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN) {
-//					monsterBar.getLayoutTransition().enableTransitionType(LayoutTransition.CHANGING);
-//				}
 				activeConditionsBar.startAnimation(hideConditionsBarAnimation);
 			} else {
 				activeConditionsBar.setVisibility(View.GONE);

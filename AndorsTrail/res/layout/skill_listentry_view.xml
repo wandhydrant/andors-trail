@@ -3,6 +3,7 @@
 	xmlns:android="http://schemas.android.com/apk/res/android"
 	android:layout_width="match_parent"
 	android:layout_height="wrap_content"
+	style="@style/textWithIconInList"
 	>
 	<ImageView
 		android:id="@+id/skillentry_icon"
@@ -21,6 +22,7 @@
 		android:layout_toRightOf="@id/skillentry_icon"
 		android:layout_alignParentTop="true"
 		android:text="@string/skill_title_weapon_chance"
+		style="@style/textView"
 		android:textSize="22sp"
 		/>
 
@@ -31,6 +33,7 @@
 		android:layout_toRightOf="@id/skillentry_icon"
 		android:layout_below="@id/skillentry_title"
 		android:text="@string/skill_shortdescription_weapon_chance"
+		style="@style/textView"
 		/>
 
 </RelativeLayout>

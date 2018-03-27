@@ -1,22 +1,37 @@
 package com.gpl.rpg.AndorsTrail;
 
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
+
 import android.app.Activity;
-import android.app.AlertDialog;
 import android.app.Dialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.DialogInterface.OnDismissListener;
 import android.content.Intent;
-import android.graphics.drawable.BitmapDrawable;
 import android.net.Uri;
 import android.os.Bundle;
+import android.support.v4.app.Fragment;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
-import com.gpl.rpg.AndorsTrail.activity.*;
+
+import com.gpl.rpg.AndorsTrail.activity.ActorConditionInfoActivity;
+import com.gpl.rpg.AndorsTrail.activity.BulkSelectionInterface;
+import com.gpl.rpg.AndorsTrail.activity.ConversationActivity;
+import com.gpl.rpg.AndorsTrail.activity.ItemInfoActivity;
+import com.gpl.rpg.AndorsTrail.activity.LevelUpActivity;
+import com.gpl.rpg.AndorsTrail.activity.LoadSaveActivity;
+import com.gpl.rpg.AndorsTrail.activity.MainActivity;
+import com.gpl.rpg.AndorsTrail.activity.MonsterEncounterActivity;
+import com.gpl.rpg.AndorsTrail.activity.MonsterInfoActivity;
+import com.gpl.rpg.AndorsTrail.activity.SkillInfoActivity;
+import com.gpl.rpg.AndorsTrail.activity.fragment.StartScreenActivity_MainMenu;
 import com.gpl.rpg.AndorsTrail.context.ControllerContext;
 import com.gpl.rpg.AndorsTrail.context.WorldContext;
 import com.gpl.rpg.AndorsTrail.model.ability.ActorConditionType;
@@ -26,12 +41,9 @@ import com.gpl.rpg.AndorsTrail.model.item.Inventory;
 import com.gpl.rpg.AndorsTrail.model.item.ItemType;
 import com.gpl.rpg.AndorsTrail.model.item.Loot;
 import com.gpl.rpg.AndorsTrail.model.map.MapObject;
-import com.gpl.rpg.AndorsTrail.resource.tiles.TileManager;
+import com.gpl.rpg.AndorsTrail.util.ThemeHelper;
+import com.gpl.rpg.AndorsTrail.view.CustomDialogFactory;
 import com.gpl.rpg.AndorsTrail.view.ItemContainerAdapter;
-
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Collections;
 
 public final class Dialogs {
 
@@ -40,14 +52,14 @@ public final class Dialogs {
 	}
 	private static void showDialogAndPause(Dialog d, final ControllerContext context, final OnDismissListener onDismiss) {
 		context.gameRoundController.pause();
-		d.setOnDismissListener(new OnDismissListener() {
+		CustomDialogFactory.setDismissListener(d, new OnDismissListener() {
 			@Override
 			public void onDismiss(DialogInterface arg0) {
 				if (onDismiss != null) onDismiss.onDismiss(arg0);
 				context.gameRoundController.resume();
 			}
 		});
-		d.show();
+		CustomDialogFactory.show(d);
 	}
 
 	public static void showKeyArea(final MainActivity currentActivity, final ControllerContext context, String phraseID) {
@@ -171,12 +183,22 @@ public final class Dialogs {
 
 	public static void showGroundLoot(final MainActivity mainActivity, final ControllerContext controllers, final WorldContext world, final Loot loot, final String msg) {
 		showLoot(mainActivity, controllers, world, loot, Collections.singletonList(loot), R.string.dialog_groundloot_title, msg);
- 	}
+	}
 
 	private static void showLoot(final MainActivity mainActivity, final ControllerContext controllers, final WorldContext world, final Loot combinedLoot, final Iterable<Loot> lootBags, final int title, final String msg) {
 		final ListView itemList = new ListView(mainActivity);
+		itemList.setBackgroundResource(android.R.color.transparent);
 		itemList.setLayoutParams(new ListView.LayoutParams(ListView.LayoutParams.MATCH_PARENT, ListView.LayoutParams.WRAP_CONTENT));
-		itemList.setPadding(20, 0, 20, 20);
+		//		itemList.setPadding(20, 0, 20, 20);
+		itemList.setAdapter(new ItemContainerAdapter(mainActivity, world.tileManager, combinedLoot.items, world.model.player));
+
+		final Dialog d = CustomDialogFactory.createDialog(mainActivity, 
+				mainActivity.getResources().getString(title), 
+				mainActivity.getResources().getDrawable(R.drawable.ui_icon_equipment), 
+				msg, 
+				combinedLoot.items.isEmpty() ? null : itemList, 
+						true);
+
 		itemList.setOnItemClickListener(new OnItemClickListener() {
 			@Override
 			public void onItemClick(AdapterView<?> parent, View v, int position, long id) {
@@ -190,31 +212,29 @@ public final class Dialogs {
 						break;
 					}
 				}
-				if (removeFromCombinedLoot) combinedLoot.items.removeItem(itemTypeID);
+				if (removeFromCombinedLoot) {
+					combinedLoot.items.removeItem(itemTypeID);
+				}
+				if (((ItemContainerAdapter) parent.getAdapter()).isEmpty()) {
+					ViewGroup vg = (ViewGroup) d.findViewById(R.id.dialog_content_container);
+					vg.setVisibility(View.GONE);
+				}
 				ItemType type = world.itemTypes.getItemType(itemTypeID);
 				world.model.player.inventory.addItem(type);
 				((ItemContainerAdapter) itemList.getAdapter()).notifyDataSetChanged();
 			}
 		});
-		itemList.setAdapter(new ItemContainerAdapter(mainActivity, world.tileManager, combinedLoot.items, world.model.player));
 
-		AlertDialog.Builder db = new AlertDialog.Builder(mainActivity)
-		.setTitle(title)
-		.setMessage(msg)
-		.setIcon(new BitmapDrawable(mainActivity.getResources(), world.tileManager.preloadedTiles.getBitmap(TileManager.iconID_groundbag)))
-		.setNegativeButton(R.string.dialog_close, null)
-		.setView(itemList);
-
-		if (!combinedLoot.items.isEmpty()) {
-			db.setPositiveButton(R.string.dialog_loot_pickall, new DialogInterface.OnClickListener() {
+		if (!itemList.getAdapter().isEmpty()) {
+			CustomDialogFactory.addButton(d, R.string.dialog_loot_pickall, new View.OnClickListener() {
 				@Override
-				public void onClick(DialogInterface dialog, int which) {
+				public void onClick(View v) {
 					controllers.itemController.pickupAll(lootBags);
 				}
 			});
 		}
 
-		final Dialog d = db.create();
+		CustomDialogFactory.addDismissButton(d, R.string.dialog_close);
 
 		showDialogAndPause(d, controllers, new OnDismissListener() {
 			@Override
@@ -228,6 +248,7 @@ public final class Dialogs {
 		Intent intent = new Intent(ctx, ItemInfoActivity.class);
 		intent.putExtra("buttonText", buttonText);
 		intent.putExtra("buttonEnabled", buttonEnabled);
+		intent.putExtra("moreActions", (actionType == ItemInfoActivity.ItemInfoAction.equip || actionType == ItemInfoActivity.ItemInfoAction.use || actionType == ItemInfoActivity.ItemInfoAction.none));
 		intent.putExtra("itemTypeID", itemTypeID);
 		intent.putExtra("actionType", actionType.name());
 		if (inventorySlot != null) intent.putExtra("inventorySlot", inventorySlot.name());
@@ -241,36 +262,61 @@ public final class Dialogs {
 	}
 
 	public static void showConfirmRest(final Activity currentActivity, final ControllerContext controllerContext, final MapObject area) {
-		Dialog d = new AlertDialog.Builder(currentActivity)
-		.setTitle(R.string.dialog_rest_title)
-		.setMessage(R.string.dialog_rest_confirm_message)
-		.setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
+		final Dialog d = CustomDialogFactory.createDialog(currentActivity, 
+				currentActivity.getResources().getString(R.string.dialog_rest_title), 
+				null, 
+				currentActivity.getResources().getString(R.string.dialog_rest_confirm_message), 
+				null, 
+				true);
+
+		CustomDialogFactory.addButton(d, android.R.string.yes, new View.OnClickListener() {
 			@Override
-			public void onClick(DialogInterface dialog, int which) {
+			public void onClick(View v) {
 				controllerContext.mapController.rest(area);
 			}
-		})
-		.setNegativeButton(android.R.string.no, null)
-		.create();
+		});
+
+		CustomDialogFactory.addDismissButton(d, android.R.string.no);
 
 		showDialogAndPause(d, controllerContext);
 	}
 	public static void showRested(final Activity currentActivity, final ControllerContext controllerContext) {
-		Dialog d = new AlertDialog.Builder(currentActivity)
-		.setTitle(R.string.dialog_rest_title)
-		.setMessage(R.string.dialog_rest_message)
-		.setNeutralButton(android.R.string.ok, null)
-		.create();
+		//		Dialog d = new AlertDialog.Builder(new ContextThemeWrapper(currentActivity, R.style.AndorsTrailStyle))
+		//		.setTitle(R.string.dialog_rest_title)
+		//		.setMessage(R.string.dialog_rest_message)
+		//		.setNeutralButton(android.R.string.ok, null)
+		//		.create();
+		final Dialog d = CustomDialogFactory.createDialog(currentActivity, 
+				currentActivity.getResources().getString(R.string.dialog_rest_title), 
+				null, 
+				currentActivity.getResources().getString(R.string.dialog_rest_message), 
+				null, 
+				true);
+
+
+		CustomDialogFactory.addDismissButton(d, android.R.string.ok);
 
 		showDialogAndPause(d, controllerContext);
 	}
 
 	public static void showNewVersion(final Activity currentActivity) {
-		new AlertDialog.Builder(currentActivity)
-		.setTitle(R.string.dialog_newversion_title)
-		.setMessage(R.string.dialog_newversion_message)
-		.setNeutralButton(android.R.string.ok, null)
-		.show();
+		//		new AlertDialog.Builder(new ContextThemeWrapper(currentActivity, R.style.AndorsTrailStyle))
+		//		.setTitle(R.string.dialog_newversion_title)
+		//		.setMessage(R.string.dialog_newversion_message)
+		//		.setNeutralButton(android.R.string.ok, null)
+		//		.show();
+
+		final Dialog d = CustomDialogFactory.createDialog(currentActivity, 
+				currentActivity.getResources().getString(R.string.dialog_newversion_title), 
+				null, 
+				currentActivity.getResources().getString(R.string.dialog_newversion_message), 
+				null, 
+				true);
+
+
+		CustomDialogFactory.addDismissButton(d, android.R.string.ok);
+
+		CustomDialogFactory.show(d);
 	}
 
 	public static boolean showSave(final Activity mainActivity, final ControllerContext controllerContext, final WorldContext world) {
@@ -288,7 +334,13 @@ public final class Dialogs {
 	public static void showLoad(final Activity currentActivity) {
 		Intent intent = new Intent(currentActivity, LoadSaveActivity.class);
 		intent.setData(Uri.parse("content://com.gpl.rpg.AndorsTrail/load"));
-		currentActivity.startActivityForResult(intent, StartScreenActivity.INTENTREQUEST_LOADGAME);
+		currentActivity.startActivityForResult(intent, StartScreenActivity_MainMenu.INTENTREQUEST_LOADGAME);
+	}
+
+	public static void showLoad(final Fragment currentFragment) {
+		Intent intent = new Intent(currentFragment.getActivity(), LoadSaveActivity.class);
+		intent.setData(Uri.parse("content://com.gpl.rpg.AndorsTrail/load"));
+		currentFragment.startActivityForResult(intent, StartScreenActivity_MainMenu.INTENTREQUEST_LOADGAME);
 	}
 
 	public static void showActorConditionInfo(final Context context, ActorConditionType conditionType) {
@@ -325,22 +377,31 @@ public final class Dialogs {
 	}
 
 	public static void showCombatLog(final Context context, final ControllerContext controllerContext, final WorldContext world) {
-		final String[] combatLogMessages = world.model.combatLog.getAllMessages();
+		String[] combatLogMessages = world.model.combatLog.getAllMessages();
 
-		final ListView itemList = new ListView(context);
+		View view = null;
+		ListView itemList = null;
+		itemList = new ListView(context);
 		itemList.setLayoutParams(new ListView.LayoutParams(ListView.LayoutParams.MATCH_PARENT, ListView.LayoutParams.WRAP_CONTENT));
-		itemList.setPadding(20, 0, 20, 20);
 		itemList.setStackFromBottom(true);
 		itemList.setTranscriptMode(ListView.TRANSCRIPT_MODE_ALWAYS_SCROLL);
 		itemList.setChoiceMode(ListView.CHOICE_MODE_NONE);
+		itemList.setBackgroundColor(ThemeHelper.getThemeColor(context, R.attr.ui_theme_stdframe_bg_color));
+		if (combatLogMessages.length <= 0) {
+			combatLogMessages = new String[] {context.getResources().getString(R.string.combat_log_noentries)};
+		}
 		itemList.setAdapter(new ArrayAdapter<String>(context, R.layout.combatlog_row, android.R.id.text1, combatLogMessages));
+		view = itemList;
 
-		final Dialog d = new AlertDialog.Builder(context)
-				.setTitle(R.string.combat_log_title)
-				.setIcon(R.drawable.ui_icon_combat)
-				.setNegativeButton(R.string.dialog_close, null)
-				.setView(itemList)
-				.create();
+		final Dialog d = CustomDialogFactory.createDialog(context, 
+				context.getResources().getString(R.string.combat_log_title), 
+				context.getResources().getDrawable(R.drawable.ui_icon_combat), 
+				null, 
+				view, 
+				true);
+
+
+		CustomDialogFactory.addDismissButton(d, R.string.dialog_close);
 
 		showDialogAndPause(d, controllerContext);
 	}

@@ -20,7 +20,9 @@
 	<string name="dialog_loading_failed_message">Andor\'s Trail was unable to load the savegame file.\n\n:(\n\nThe file may be damaged or incomplete.</string>
 	<string name="dialog_loading_failed_incorrectversion">Andor\'s Trail was unable to load the savegame file. This savegame file is created with a newer version than what is currently running.</string>
 
+	<string name="dialog_recenter">Recenter</string>
 	<string name="dialog_close">Close</string>
+	<string name="dialog_more">More</string>
 
 	<string name="dialog_monsterencounter_title">Encounter</string>
 	<string name="dialog_monsterencounter_message">Do you want to attack?\nDifficulty: %1$s</string>
@@ -29,7 +31,7 @@
 
 	<string name="status_hp">HP:</string>
 	<string name="status_ap">AP:</string>
-	<string name="status_exp">Level:</string>
+	<string name="status_exp">XP:</string>
 
 	<string name="heroinfo_char">Overview</string>
 	<string name="heroinfo_inv">Items</string>
@@ -44,6 +46,8 @@
 	<string name="heroinfo_inventory_categories">Category</string>
 	<string name="heroinfo_inventory_sort">Sort By</string>
 	<string name="heroinfo_gold">Gold: %1$d</string>
+	<string name="heroinfo_healthpoints">Health points (HP):</string>
+	<string name="heroinfo_experiencepoints">Experience points (XP):</string>
 	<string name="heroinfo_actionpoints">Action points (AP):</string>
 	<string name="heroinfo_quests">Quests</string>
 
@@ -133,8 +137,10 @@
 
 	<string name="startscreen_continue">Continue current game</string>
 	<string name="startscreen_newgame">New game</string>
+	<string name="startscreen_newgame_start">Start game</string>
 	<string name="startscreen_newgame_confirm">You will lose your current game and your current character, are you sure you want to start a new game?</string>
 	<string name="startscreen_about">About/help</string>
+	<string name="startscreen_selectherosprite">Choose your hero</string>
 	<string name="startscreen_enterheroname">Enter hero name</string>
 	<string name="startscreen_load">Load</string>
 
@@ -551,6 +557,7 @@
 	<string name="heroinfo_useitem_cost">Use item cost (AP):</string>
 	<string name="combat_result_monstermoved">%1$s moves.</string>
 	<string name="combat_log_title">Combat log</string>
+	<string name="combat_log_noentries">No entries yet.</string>
 	<string name="localize_resources_from_mo_filename"></string>
 	<string name="conversation_reward_quest_finished">[Quest completed: \"%1$s\"]</string>
 	<string name="conversation_reward_quest_updated">[Quest updated: \"%1$s\"]</string>
@@ -649,6 +656,9 @@ Every skill level increases the attack chance of weapons with %1$d %% of their o
 	<string name="preferences_ui_use_localized_resources">Use translation of interface and content, where available. (requires restart)</string>
 	<string name="change_locale_requires_restart">Changing locale requires restart. Andor\'s Trail has been closed.</string>
 
+	<!-- =========================================== -->
+	<!-- Added in v0.7.2 -->
+	
 	<string name="inventory_category_all">All</string>
 	<string name="inventory_category_favorites">Favorites</string>
 	<string name="inventory_category_weapons">Weapon</string>
@@ -684,4 +694,13 @@ Every skill level increases the attack chance of weapons with %1$d %% of their o
 	<string name="skill_sort_name">Name</string>
 	<string name="skill_sort_points">Points</string>
 	<string name="skill_sort_unlocked">Unlocked</string>
+	
+	<string name="preferences_display_theme_title">Theme</string>
+	<string name="preferences_display_theme">Choose the UI theme. (requires restart)</string>
+	<string name="preferences_display_theme_blue">Cobalt</string>
+	<string name="preferences_display_theme_green">Malachite</string>
+	<string name="preferences_display_theme_charcoal">Obsidian</string>
+	<string name="change_theme_requires_restart">Changing UI theme requires restart. Andor\'s Trail has been closed.</string>
+	
+	
 </resources>

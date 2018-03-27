@@ -2,6 +2,7 @@ package com.gpl.rpg.AndorsTrail.activity.fragment;
 
 import android.app.Activity;
 import android.content.Intent;
+
 import com.gpl.rpg.AndorsTrail.Dialogs;
 import com.gpl.rpg.AndorsTrail.R;
 import com.gpl.rpg.AndorsTrail.activity.ItemInfoActivity;

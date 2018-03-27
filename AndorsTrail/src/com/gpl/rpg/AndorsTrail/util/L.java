@@ -1,6 +1,7 @@
 package com.gpl.rpg.AndorsTrail.util;
 
 import android.util.Log;
+
 import com.gpl.rpg.AndorsTrail.AndorsTrailApplication;
 
 public final class L {

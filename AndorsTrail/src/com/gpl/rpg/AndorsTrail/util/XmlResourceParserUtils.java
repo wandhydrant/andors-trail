@@ -1,9 +1,10 @@
 package com.gpl.rpg.AndorsTrail.util;
 
-import android.content.res.XmlResourceParser;
+import java.io.IOException;
+
 import org.xmlpull.v1.XmlPullParserException;
 
-import java.io.IOException;
+import android.content.res.XmlResourceParser;
 
 public final class XmlResourceParserUtils {
 

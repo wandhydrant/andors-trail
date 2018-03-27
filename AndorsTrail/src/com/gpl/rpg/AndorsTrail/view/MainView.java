@@ -103,7 +103,6 @@ public final class MainView extends SurfaceView
 	private long scrollStartTime;
 	//TODO restore private final modifiers before release
 	public static long SCROLL_DURATION = Constants.MINIMUM_INPUT_INTERVAL;
-	
 	private int movingSprites = 0;
 	private SpriteMoveAnimationHandler movingSpritesRedrawTick = new SpriteMoveAnimationHandler(this);
 	

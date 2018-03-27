@@ -19,7 +19,6 @@ import com.gpl.rpg.AndorsTrail.model.item.DropListCollection;
 import com.gpl.rpg.AndorsTrail.model.item.Inventory;
 import com.gpl.rpg.AndorsTrail.model.item.Loot;
 import com.gpl.rpg.AndorsTrail.model.quest.QuestProgress;
-import com.gpl.rpg.AndorsTrail.resource.tiles.TileManager;
 import com.gpl.rpg.AndorsTrail.savegames.LegacySavegameFormatReaderForPlayer;
 import com.gpl.rpg.AndorsTrail.util.Coord;
 import com.gpl.rpg.AndorsTrail.util.Range;
@@ -90,8 +89,8 @@ public final class Player extends Actor {
 		this.inventory = new Inventory();
 	}
 
-	public void initializeNewPlayer(DropListCollection dropLists, String playerName) {
-		baseTraits.iconID = TileManager.CHAR_HERO;
+	public void initializeNewPlayer(DropListCollection dropLists, String playerName, int playerIcon) {
+		baseTraits.iconID = playerIcon;
 		baseTraits.maxAP = 10;
 		baseTraits.maxHP = 25;
 		baseTraits.moveCost = 6;
