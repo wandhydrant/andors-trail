@@ -1,8 +1,7 @@
 package com.gpl.rpg.AndorsTrail.activity;
 
 import android.app.Activity;
-import android.app.AlertDialog;
-import android.content.DialogInterface;
+import android.app.Dialog;
 import android.content.Intent;
 import android.content.res.Resources;
 import android.os.Bundle;
@@ -17,11 +16,14 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.SeekBar;
 import android.widget.TextView;
+
 import com.gpl.rpg.AndorsTrail.AndorsTrailApplication;
 import com.gpl.rpg.AndorsTrail.R;
 import com.gpl.rpg.AndorsTrail.context.WorldContext;
 import com.gpl.rpg.AndorsTrail.controller.ItemController;
 import com.gpl.rpg.AndorsTrail.model.item.ItemType;
+import com.gpl.rpg.AndorsTrail.util.ThemeHelper;
+import com.gpl.rpg.AndorsTrail.view.CustomDialogFactory;
 
 /**
  * @author ejwessel
@@ -70,6 +72,7 @@ public final class BulkSelectionInterface extends Activity implements TextWatche
 	 */
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
+		setTheme(ThemeHelper.getDialogTheme());
 		super.onCreate(savedInstanceState);
 		AndorsTrailApplication app = AndorsTrailApplication.getApplicationFromActivity(this);
 		if (!app.isInitialized()) { finish(); return; }
@@ -192,18 +195,33 @@ public final class BulkSelectionInterface extends Activity implements TextWatche
 					final String displayType = ItemInfoActivity.getDisplayTypeString(res, itemType).toLowerCase();
 					final String message = res.getString(R.string.bulkselection_sell_confirmation, itemType.getName(world.model.player), displayType);
 
-					new AlertDialog.Builder(v.getContext())
-						.setIcon(android.R.drawable.ic_dialog_info)
-						.setTitle(R.string.bulkselection_sell_confirmation_title)
-						.setMessage(message)
-						.setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
+//					new AlertDialog.Builder(v.getContext())
+//						.setIcon(android.R.drawable.ic_dialog_info)
+//						.setTitle(R.string.bulkselection_sell_confirmation_title)
+//						.setMessage(message)
+//						.setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
+//							@Override
+//							public void onClick(DialogInterface dialog, int which) {
+//								itemsResult(intent);
+//							}
+//									})
+//						.setNegativeButton(android.R.string.no, null)
+//						.show();
+					final Dialog d = CustomDialogFactory.createDialog(v.getContext(),
+							v.getContext().getResources().getString(R.string.bulkselection_sell_confirmation_title),
+							v.getContext().getResources().getDrawable(android.R.drawable.ic_dialog_info),
+							message,
+							null,
+							true);
+					CustomDialogFactory.addButton(d, android.R.string.yes,  new View.OnClickListener() {
 							@Override
-							public void onClick(DialogInterface dialog, int which) {
+							public void onClick(View v) {
 								itemsResult(intent);
 							}
-									})
-						.setNegativeButton(android.R.string.no, null)
-						.show();
+					});
+					CustomDialogFactory.addDismissButton(d, android.R.string.no);
+					CustomDialogFactory.show(d);
+					
 				} else {
 					itemsResult(intent);
 				}

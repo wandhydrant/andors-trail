@@ -103,7 +103,6 @@ public final class MainView extends SurfaceView
 	private long scrollStartTime;
 	//TODO restore private final modifiers before release
 	public static long SCROLL_DURATION = Constants.MINIMUM_INPUT_INTERVAL;
-	
 	private int movingSprites = 0;
 	private SpriteMoveAnimationHandler movingSpritesRedrawTick = new SpriteMoveAnimationHandler(this);
 	
@@ -222,8 +221,10 @@ public final class MainView extends SurfaceView
 	}
 
 	private void redrawAll(RedrawAllDebugReason why) {
-		if (scrolling && why != RedrawAllDebugReason.MapScrolling) return;
-		if (!scrolling && movingSprites > 0 && why != RedrawAllDebugReason.SpriteMoved) return;
+		if (preferences.enableUiAnimations) {
+			if (scrolling && why != RedrawAllDebugReason.MapScrolling) return;
+			if (!scrolling && movingSprites > 0 && why != RedrawAllDebugReason.SpriteMoved) return;
+		}
 		redrawArea_(mapViewArea, null, 0, 0);
 	}
 	private void redrawTile(final Coord p, RedrawTileDebugReason why) {

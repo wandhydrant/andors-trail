@@ -7,6 +7,7 @@ import android.graphics.ColorMatrixColorFilter;
 import android.util.AttributeSet;
 import android.view.ContextMenu;
 import android.widget.Button;
+
 import com.gpl.rpg.AndorsTrail.R;
 import com.gpl.rpg.AndorsTrail.context.WorldContext;
 import com.gpl.rpg.AndorsTrail.model.item.ItemType;
@@ -26,7 +27,7 @@ public final class QuickButton extends Button {
 	private final int textPadding;
 
 	public QuickButton(Context context, AttributeSet attrs) {
-		super(context, attrs);
+		super(context, attrs, R.attr.buttonQuickslotsButtonStyle);
 		menuInfo = new QuickButtonContextMenuInfo();
 		textPadding = getResources().getDimensionPixelSize(R.dimen.boxshape_margin);
 	}

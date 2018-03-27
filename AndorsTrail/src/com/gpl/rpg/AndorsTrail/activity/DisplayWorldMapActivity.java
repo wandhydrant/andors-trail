@@ -1,22 +1,29 @@
 package com.gpl.rpg.AndorsTrail.activity;
 
+import java.io.File;
+
+import android.animation.ObjectAnimator;
 import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.view.ViewGroup;
 import android.webkit.WebView;
+import android.webkit.WebViewClient;
 import android.widget.Button;
 import android.widget.Toast;
+
 import com.gpl.rpg.AndorsTrail.AndorsTrailApplication;
 import com.gpl.rpg.AndorsTrail.R;
 import com.gpl.rpg.AndorsTrail.context.WorldContext;
 import com.gpl.rpg.AndorsTrail.controller.WorldMapController;
+import com.gpl.rpg.AndorsTrail.model.map.PredefinedMap;
 import com.gpl.rpg.AndorsTrail.model.map.WorldMapSegment;
 import com.gpl.rpg.AndorsTrail.model.map.WorldMapSegment.WorldMapSegmentMap;
+import com.gpl.rpg.AndorsTrail.util.Coord;
 import com.gpl.rpg.AndorsTrail.util.L;
-
-import java.io.File;
+import com.gpl.rpg.AndorsTrail.util.ThemeHelper;
 
 public final class DisplayWorldMapActivity extends Activity {
 	private WorldContext world;
@@ -26,6 +33,7 @@ public final class DisplayWorldMapActivity extends Activity {
 
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
+		setTheme(ThemeHelper.getBaseTheme());
 		super.onCreate(savedInstanceState);
 
 		AndorsTrailApplication app = AndorsTrailApplication.getApplicationFromActivity(this);
@@ -37,9 +45,11 @@ public final class DisplayWorldMapActivity extends Activity {
 		setContentView(R.layout.displayworldmap);
 
 		displayworldmap_webview = (WebView) findViewById(R.id.displayworldmap_webview);
-		displayworldmap_webview.setBackgroundColor(getResources().getColor(R.color.displayworldmap_background));
+		displayworldmap_webview.setBackgroundColor(ThemeHelper.getThemeColor(this, R.attr.ui_theme_displayworldmap_bg_color));
 		displayworldmap_webview.getSettings().setBuiltInZoomControls(true);
 		displayworldmap_webview.getSettings().setUseWideViewPort(true);
+		displayworldmap_webview.setVerticalScrollBarEnabled(true);
+		displayworldmap_webview.setHorizontalScrollBarEnabled(true);
 		enableJavascript();
 
 		Button b = (Button) findViewById(R.id.displayworldmap_close);
@@ -47,6 +57,14 @@ public final class DisplayWorldMapActivity extends Activity {
 			@Override
 			public void onClick(View v) {
 				DisplayWorldMapActivity.this.finish();
+			}
+		});
+
+		b = (Button) findViewById(R.id.displayworldmap_recenter);
+		b.setOnClickListener(new OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				recenter();
 			}
 		});
 
@@ -64,6 +82,9 @@ public final class DisplayWorldMapActivity extends Activity {
 		update();
 	}
 
+	WorldMapSegmentMap map;
+	Coord offsetWorldmapTo;
+	@SuppressLint("NewApi")
 	private void update() {
 		File worldmap = WorldMapController.getCombinedWorldMapFile(worldMapSegmentName);
 
@@ -73,11 +94,23 @@ public final class DisplayWorldMapActivity extends Activity {
 		}
 
 		WorldMapSegment segment = world.maps.worldMapSegments.get(worldMapSegmentName);
-		WorldMapSegmentMap map = segment.maps.get(world.model.currentMap.name);
+		map = segment.maps.get(world.model.currentMap.name);
 		if (map == null) {
 			this.finish();
 			return;
 		}
+		
+		offsetWorldmapTo = new Coord(999999, 999999);
+		for (WorldMapSegmentMap map : segment.maps.values()) {
+			PredefinedMap predefinedMap = world.maps.findPredefinedMap(map.mapName);
+			if (predefinedMap == null) continue;
+			if (!predefinedMap.visited) continue;
+			if (!WorldMapController.fileForMapExists(predefinedMap)) continue;
+
+			offsetWorldmapTo.x = Math.min(offsetWorldmapTo.x, map.worldPosition.x);
+			offsetWorldmapTo.y = Math.min(offsetWorldmapTo.y, map.worldPosition.y);
+		}
+		
 
 		String url = "file://" + worldmap.getAbsolutePath() + '?'
 				+ (world.model.player.position.x + map.worldPosition.x) * WorldMapController.WORLDMAP_DISPLAY_TILESIZE
@@ -85,5 +118,52 @@ public final class DisplayWorldMapActivity extends Activity {
 				+ (world.model.player.position.y + map.worldPosition.y-1) * WorldMapController.WORLDMAP_DISPLAY_TILESIZE;
 		L.log("Showing " + url);
 		displayworldmap_webview.loadUrl(url);
+		displayworldmap_webview.setBackgroundColor(ThemeHelper.getThemeColor(this, R.attr.ui_theme_displayworldmap_bg_color));
+		displayworldmap_webview.setWebViewClient(new WebViewClient() {
+			@SuppressLint("NewApi")
+			@Override
+			public void onPageFinished(WebView view, String url)
+			{
+				recenter();
+			}
+		});
+	}
+	
+	private void recenter() {
+		displayworldmap_webview.postDelayed(new Runnable() {
+			@Override
+			public void run() {
+				if (map != null) {
+					//Local map to global worldmap
+					int x = world.model.player.position.x + map.worldPosition.x - offsetWorldmapTo.x;
+					//Tile coord to pixel coord
+					x *= WorldMapController.WORLDMAP_DISPLAY_TILESIZE;
+					x += WorldMapController.WORLDMAP_DISPLAY_TILESIZE/2;
+					//Zoom level
+					x = (int)(x * displayworldmap_webview.getScale());
+					//Center
+					x -= displayworldmap_webview.getWidth() / 2;
+					
+					//Local map to global worldmap
+					int y = world.model.player.position.y + map.worldPosition.y  - offsetWorldmapTo.y;
+					//Tile coord to pixel coord
+					y *= WorldMapController.WORLDMAP_DISPLAY_TILESIZE;
+					y += WorldMapController.WORLDMAP_DISPLAY_TILESIZE/2;
+					//Zoom level
+					y = (int)(y * displayworldmap_webview.getScale());
+					//Center
+					y -= displayworldmap_webview.getHeight() / 2;
+					
+					displayworldmap_webview.scrollTo(x, y);
+				}
+			}
+		}, 100);
+	}
+	
+	@Override
+	public void finish() {
+	    ViewGroup view = (ViewGroup) getWindow().getDecorView();
+	    view.removeAllViews();
+	    super.finish();
 	}
 }

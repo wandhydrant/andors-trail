@@ -1,8 +1,10 @@
 package com.gpl.rpg.AndorsTrail.activity;
 
+import java.util.Collections;
+import java.util.List;
+
 import android.app.Activity;
-import android.app.AlertDialog;
-import android.content.DialogInterface;
+import android.app.Dialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -11,31 +13,35 @@ import android.view.ViewGroup;
 import android.view.ViewGroup.LayoutParams;
 import android.widget.Button;
 import android.widget.TextView;
+
 import com.gpl.rpg.AndorsTrail.AndorsTrailApplication;
 import com.gpl.rpg.AndorsTrail.AndorsTrailPreferences;
 import com.gpl.rpg.AndorsTrail.R;
 import com.gpl.rpg.AndorsTrail.model.ModelContainer;
+import com.gpl.rpg.AndorsTrail.resource.tiles.TileManager;
 import com.gpl.rpg.AndorsTrail.savegames.Savegames;
 import com.gpl.rpg.AndorsTrail.savegames.Savegames.FileHeader;
-
-import java.util.Collections;
-import java.util.List;
+import com.gpl.rpg.AndorsTrail.util.ThemeHelper;
+import com.gpl.rpg.AndorsTrail.view.CustomDialogFactory;
 
 public final class LoadSaveActivity extends Activity implements OnClickListener {
 	private boolean isLoading = true;
 	private static final int SLOT_NUMBER_CREATE_NEW_SLOT = -1;
 	private static final int SLOT_NUMBER_FIRST_SLOT = 1;
 	private ModelContainer model;
+	private TileManager tileManager;
 	private AndorsTrailPreferences preferences;
 
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
+		setTheme(ThemeHelper.getDialogTheme());
 		super.onCreate(savedInstanceState);
 
 		final AndorsTrailApplication app = AndorsTrailApplication.getApplicationFromActivity(this);
 		app.setWindowParameters(this);
 		this.model = app.getWorld().model;
 		this.preferences = app.getPreferences();
+		this.tileManager = app.getWorld().tileManager;
 
 		String loadsave = getIntent().getData().getLastPathSegment();
 		isLoading = (loadsave.equalsIgnoreCase("load"));
@@ -53,20 +59,20 @@ public final class LoadSaveActivity extends Activity implements OnClickListener 
 
 		ViewGroup slotList = (ViewGroup) findViewById(R.id.loadsave_slot_list);
 		Button slotTemplateButton = (Button) findViewById(R.id.loadsave_slot_n);
-		Button createNewSlot = (Button) findViewById(R.id.loadsave_save_to_new_slot);
 		LayoutParams params = slotTemplateButton.getLayoutParams();
 		slotList.removeView(slotTemplateButton);
-		slotList.removeView(createNewSlot);
+
+		ViewGroup newSlotContainer = (ViewGroup) findViewById(R.id.loadsave_save_to_new_slot_container);
+		Button createNewSlot = (Button) findViewById(R.id.loadsave_save_to_new_slot);
 
 		addSavegameSlotButtons(slotList, params, Savegames.getUsedSavegameSlots());
 
 		if (!isLoading) {
-			Button b = new Button(this);
-			b.setLayoutParams(params);
-			b.setTag(SLOT_NUMBER_CREATE_NEW_SLOT);
-			b.setOnClickListener(this);
-			b.setText(R.string.loadsave_save_to_new_slot);
-			slotList.addView(b, params);
+			createNewSlot.setTag(SLOT_NUMBER_CREATE_NEW_SLOT);
+			createNewSlot.setOnClickListener(this);
+			newSlotContainer.setVisibility(View.VISIBLE);
+		} else {
+			newSlotContainer.setVisibility(View.GONE);
 		}
 	}
 
@@ -80,6 +86,7 @@ public final class LoadSaveActivity extends Activity implements OnClickListener 
 			b.setTag(slot);
 			b.setOnClickListener(this);
 			b.setText(slot + ". " + header.describe());
+			tileManager.setImageViewTileForPlayer(getResources(), b, header.iconID);
 			parent.addView(b, params);
 		}
 	}
@@ -128,18 +135,34 @@ public final class LoadSaveActivity extends Activity implements OnClickListener 
 			final String title =
 				getString(R.string.loadsave_save_overwrite_confirmation_title) + ' '
 				+ getString(R.string.loadsave_save_overwrite_confirmation_slot, slot);
-			new AlertDialog.Builder(this)
-				.setIcon(android.R.drawable.ic_dialog_alert)
-				.setTitle(title)
-				.setMessage(message)
-				.setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
+//			new AlertDialog.Builder(this)
+//				.setIcon(android.R.drawable.ic_dialog_alert)
+//				.setTitle(title)
+//				.setMessage(message)
+//				.setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
+//					@Override
+//					public void onClick(DialogInterface dialog, int which) {
+//						loadsave(slot);
+//					}
+//				})
+//				.setNegativeButton(android.R.string.no, null)
+//				.show();
+			final Dialog d = CustomDialogFactory.createDialog(this, 
+					title, 
+					getResources().getDrawable(android.R.drawable.ic_dialog_alert), 
+					message, 
+					null, 
+					true);
+			
+			CustomDialogFactory.addButton(d, android.R.string.yes, new View.OnClickListener() {
 					@Override
-					public void onClick(DialogInterface dialog, int which) {
+					public void onClick(View v) {
 						loadsave(slot);
 					}
-				})
-				.setNegativeButton(android.R.string.no, null)
-				.show();
+				});
+			CustomDialogFactory.addDismissButton(d, android.R.string.no);
+			
+			CustomDialogFactory.show(d);
 		} else {
 			loadsave(slot);
 		}

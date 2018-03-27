@@ -39,7 +39,7 @@ public final class MonsterMovementController implements EvaluateWalkable {
 	public void attackWithAgressiveMonsters() {
 		for (MonsterSpawnArea a : world.model.currentMap.spawnAreas) {
 			for (Monster m : a.monsters) {
-				if (!m.isAgressive()) continue;
+				if (!m.isAgressive(world.model.player)) continue;
 				if (!m.isAdjacentTo(world.model.player)) continue;
 
 				int aggressionChanceBias = world.model.player.getSkillLevel(SkillCollection.SkillID.evasion) * SkillCollection.PER_SKILLPOINT_INCREASE_EVASION_MONSTER_ATTACK_CHANCE_PERCENTAGE;
@@ -89,7 +89,7 @@ public final class MonsterMovementController implements EvaluateWalkable {
 				return;
 			}
 			if (m.nextPosition.contains(world.model.player.position)) {
-				if (!m.isAgressive()) {
+				if (!m.isAgressive(world.model.player)) {
 					cancelCurrentMonsterMovement(m);
 					return;
 				}

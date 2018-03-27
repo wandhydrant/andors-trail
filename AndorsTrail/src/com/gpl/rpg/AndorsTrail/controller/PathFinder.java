@@ -1,10 +1,10 @@
 package com.gpl.rpg.AndorsTrail.controller;
 
+import java.util.Arrays;
+
 import com.gpl.rpg.AndorsTrail.model.actor.Monster;
 import com.gpl.rpg.AndorsTrail.util.Coord;
 import com.gpl.rpg.AndorsTrail.util.CoordRect;
-
-import java.util.Arrays;
 
 public class PathFinder {
 	private final int maxWidth;

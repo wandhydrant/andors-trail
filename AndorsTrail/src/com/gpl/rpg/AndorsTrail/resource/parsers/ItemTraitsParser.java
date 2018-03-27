@@ -1,5 +1,8 @@
 package com.gpl.rpg.AndorsTrail.resource.parsers;
 
+import org.json.JSONException;
+import org.json.JSONObject;
+
 import com.gpl.rpg.AndorsTrail.AndorsTrailApplication;
 import com.gpl.rpg.AndorsTrail.model.ability.ActorCondition;
 import com.gpl.rpg.AndorsTrail.model.ability.ActorConditionEffect;
@@ -13,9 +16,6 @@ import com.gpl.rpg.AndorsTrail.resource.parsers.json.JsonArrayParserFor;
 import com.gpl.rpg.AndorsTrail.resource.parsers.json.JsonFieldNames;
 import com.gpl.rpg.AndorsTrail.util.ConstRange;
 import com.gpl.rpg.AndorsTrail.util.L;
-
-import org.json.JSONException;
-import org.json.JSONObject;
 
 public final class ItemTraitsParser {
 	private final JsonArrayParserFor<ActorConditionEffect> actorConditionEffectParser_withDuration;
