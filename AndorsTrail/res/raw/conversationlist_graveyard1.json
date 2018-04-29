@@ -2026,7 +2026,7 @@
     },
     {
         "id":"taret_3",
-        "message":"The nastiest person in town is probably my neighbor. (laughs). Be careful about walking in on her!",
+        "message":"The nastiest person in town is probably my neighbor. *laughs*. Be careful about walking in on her!",
         "replies":[
             {
                 "text":"I appreciate the warning, but unfortunately it's too late. I already met her.",
@@ -2108,7 +2108,7 @@
     },
     {
         "id":"taret_5",
-        "message":"Thanks kid. (sigh). I expect she will be around here later to complain about that. You should be more careful what you say to people.  ",
+        "message":"Thanks kid. *sigh*. I expect she will be around here later to complain about that. You should be more careful what you say to people.  ",
         "replies":[
             {
                 "text":"Sorry. You are right.",
@@ -2177,11 +2177,27 @@
         "replies":[
             {
                 "text":"You decide to take everything",
-                "nextPhraseID":"waterwatcaveloot2"
+                "nextPhraseID":"waterwatcaveloot2",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"nondisplay_2",
+                        "value":80,
+                        "negate":true
+                    }
+                ]
             },
             {
                 "text":"You decide to leave the corpse undisturbed. ",
-                "nextPhraseID":"X"
+                "nextPhraseID":"X",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"nondisplay_2",
+                        "value":80,
+                        "negate":true
+                    }
+                ]
             }
         ]
     },
@@ -2432,7 +2448,14 @@
             },
             {
                 "text":"N",
-                "nextPhraseID":"waterwaycaveloot3"
+                "nextPhraseID":"waterwaycaveloot3",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"nondisplay_2",
+                        "value":80
+                    }
+                ]
             }
         ]
     }
