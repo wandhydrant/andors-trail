@@ -335,4 +335,43 @@
 	<string name="loadsave_save_to_new_slot">Nieuw opslagslot creëren</string>
 	<string name="loadsave_save_overwrite_confirmation_title">Opgeslagen spel overschrijven?</string>
 	<string name="heroinfo_gamestats_quests">Afgeronde queesten</string>
+	<string name="loadsave_save_overwrite_confirmation">Dit opgeslagen spel bevat een andere spelersnaam (%1$s) dan je huidige spelersnaam (%2$s). Weet je zeker dat je dit spel wilt overschrijven?</string>
+
+	<string name="iteminfo_displaytypes_ordinary">Gewoon</string>
+	<string name="iteminfo_displaytypes_quest">Queeste-item</string>
+	<string name="iteminfo_displaytypes_legendary">Legendarisch</string>
+	<string name="iteminfo_displaytypes_extraordinary">Buitengewoon</string>
+	<string name="iteminfo_displaytypes_rare">Zeldzaam</string>
+
+	<string name="actorconditioninfo_category">Conditiecategorie: %1$s</string>
+	<string name="actorcondition_categories_spiritual">Spiritueel</string>
+	<string name="actorcondition_categories_mental">Mentaal</string>
+	<string name="actorcondition_categories_physical">Fysieke capaciteit</string>
+	<string name="actorcondition_categories_blood">Bloedaandoening</string>
+
+	<string name="traitsinfo_base_max_hp">Max LP:</string>
+	<string name="traitsinfo_base_max_ap">Max AP:</string>
+	<string name="menu_save_saving_not_allowed_in_combat">Het spel kan niet worden opgeslagen tijdens een gevecht.</string>
+
+	<string name="preferences_optimized_drawing_title">Geoptimaliseerd renderen</string>
+	<string name="preferences_optimized_drawing">Schakel dit uit als je grafische storingen ziet. Het inschakelen van deze optie zorgt ervoor dat het spel alleen gewijzigde delen van het scherm (per frame) opnieuw rendert.</string>
+
+	<string name="skill_title_shadow_bless">Donkere zegening van de Schaduw</string>
+	<string name="skill_shortdescription_shadow_bless">Weerstand tegen alle soorten condities</string>
+	<string name="skill_longdescription_shadow_bless">Verlaagt de kans op aandoeningen van alle soorten condities met %1$d %%. Dit is inclusief alle soorten condities veroorzaakt door monsteraanvallen, zoals Vergiftiging, Versuft of Vermoeid.</string>
+
+	<string name="inventory_movetop">Naar bovenkant verplaatsen</string>
+	<string name="inventory_movebottom">Naar onderkant verplaatsen</string>
+	<string name="actorinfo_immune_criticals">Immuun tegen kritiek raken</string>
+	<string name="traitsinfo_criticalhit_effectivechance">Effectieve kritieke kans:</string>
+
+	<string name="skill_title_crit1">Interne bloeding</string>
+	<string name="skill_shortdescription_crit1">Kans op interne bloeding</string>
+	<string name="skill_longdescription_crit1">Elke keer dat je iemand kritiek raakt, is er een kans van %1$d %% dat het interne bloedingen veroorzaakt bij het doel en dus de conditie \'Interne bloeding\' geeft aan het doel. Interne bloeding verlaagt de offensieve gevechtsvaardigheden aanzienlijk waardoor het doel een kleinere kans heeft op het succesvol uitvoeren van een aanval.</string>
+	<string name="skill_title_crit2">Botbreuk</string>
+	<string name="skill_shortdescription_crit2">Kans op botbreuk</string>
+	<string name="skill_longdescription_crit2">Elke keer dat je iemand kritiek raakt, is er een kans van %1$d %% dat het botbreuken veroorzaakt bij het doel en dus de conditie \'Botbreuk\' geeft aan het doel. Botbreuken verlagen de defensieve gevechtsvaardigheden aanzienlijk waardoor het doel zich minder goed kan verdedigen.</string>
+	<string name="skill_title_rejuvenation">Verjonging</string>
+	<string name="skill_shortdescription_rejuvenation">Kans op effectverdwijning</string>
+	<string name="skill_longdescription_rejuvenation">Elke ronde (6 seconden) is er een kans van %1$d %% dat één van de actieve, negatieve condities verlaagd worden met 1. Dit is van toepassing op alle tijdelijke effectsoorten die het lichaam beïnvloeden: mentale condities zoals Versuft, fysieke condities zoals Vermoeid en bloedaandoeningen zoals Vergiftiging.</string>
 	</resources>
