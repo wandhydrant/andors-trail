@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <worldmap>
+  <segment id="waterwayacave" x="195" y="188">
+    <map id="waterwayacave1" x="207" y="188"/>
+    <map id="waterwayacave2" x="207" y="218"/>
+    <map id="waterwayacave3" x="215" y="249"/>
+    <map id="waterwayacave4" x="195" y="280"/>
+    <map id="waterwayacavex" x="246" y="269"/>
+  </segment>
   <segment id="bwentry" x="14" y="387">
     <map id="blackwater_mountain5a" x="14" y="387"/>
     <map id="blackwater_mountain5" x="35" y="387"/>
@@ -108,7 +115,6 @@
     <map id="fields0" x="179" y="284"/>
     <map id="fields1" x="179" y="253"/>
     <map id="fields10" x="96" y="284"/>
-    <map id="fields11" x="238" y="218"/>
     <map id="fields12" x="259" y="214"/>
     <map id="fields2" x="148" y="253"/>
     <map id="fields3" x="127" y="263"/>
@@ -149,14 +155,14 @@
     <map area="loneford" id="loneford2" x="238" y="251"/>
     <map id="lostmine0" x="426" y="361"/>
     <map id="mountainlake0" x="702" y="159"/>
-    <map id="mountainlake1" x="704" y="128"/>
+    <map id="mountainlake1" x="702" y="128"/>
     <map id="mountainlake10" x="732" y="0"/>
     <map id="mountainlake10a" x="724" y="31"/>
     <map id="mountainlake11" x="701" y="4"/>
     <map id="mountainlake12" x="671" y="8"/>
     <map id="mountainlake13" x="640" y="20"/>
     <map id="mountainlake13a" x="648" y="50"/>
-    <map id="mountainlake2" x="735" y="141"/>
+    <map id="mountainlake2" x="733" y="128"/>
     <map id="mountainlake3" x="756" y="128"/>
     <map id="mountainlake4" x="761" y="111"/>
     <map id="mountainlake5" x="787" y="104"/>
@@ -177,7 +183,7 @@
     <map id="road5" x="455" y="462"/>
     <map id="roadbeforecrossroads" x="210" y="309"/>
     <map id="roadbeforecrossroads1" x="232" y="322"/>
-    <map id="roadbeforecrossroads2" x="232" y="348"/>
+    <map id="roadbeforecrossroads2" x="232" y="351"/>
     <map id="roadbeforecrossroads3" x="262" y="366"/>
     <map id="roadbeforecrossroads4" x="272" y="382"/>
     <map id="roadbeforecrossroads5" x="272" y="403"/>
@@ -256,9 +262,36 @@
     <map area="stoutford" id="stoutford_se" x="63" y="506"/>
     <map area="stoutford" id="stoutford_sw" x="38" y="506"/>
     <map area="stoutford" id="stoutford_nw" x="32" y="476"/>
-    <namedarea id="charwoodh" name="Charwood" type="settlement"/>
+    <map id="fields11a" x="238" y="218"/>
+    <map id="fields11b" x="238" y="234"/>
+    <map id="graveyard0" x="358" y="181"/>
+    <map id="graveyard1" x="358" y="197"/>
+    <map id="loneford11" x="259" y="234"/>
+    <map id="loneford12" x="241" y="291"/>
+    <map id="loneford13" x="241" y="278"/>
+    <map id="loneford14" x="269" y="275"/>
+    <map id="waterwaya1" x="331" y="202"/>
+    <map id="waterwaya2" x="341" y="197"/>
+    <map id="waterwaya3" x="341" y="228"/>
+    <map id="waterwaya5" x="364" y="228"/>
+    <map id="waterwaya6" x="310" y="202"/>
+    <map id="waterwayb1" x="302" y="237"/>
+    <map id="waterwayb2" x="279" y="237"/>
+    <map id="waterwayb3" x="279" y="223"/>
+    <map id="waterwayb4" x="310" y="219"/>
+    <map id="waytobrimhaven4" x="333" y="268"/>
+    <map id="waytobrimhaven5" x="343" y="268"/>
+    <map id="waytobrimhaven6" x="364" y="269"/>
+    <map id="waytolake6" x="678" y="190"/>
+    <map id="waytolake7" x="643" y="229"/>
+    <map id="waytolake7b" x="649" y="255"/>
+    <map id="waytolake8" x="643" y="208"/>
+    <map id="waytolake9" x="647" y="187"/>
+    <map id="waytolake10" x="647" y="156"/>
+    <map id="waytolake11" x="678" y="153"/>
     <namedarea id="crossglen" name="Crossglen" type="settlement"/>
     <namedarea id="crossroads" name="Crossroads Guardhouse" type="other"/>
+    <namedarea id="charwoodh" name="Charwood" type="settlement"/>
     <namedarea id="fallhaven" name="Fallhaven" type="settlement"/>
     <namedarea id="flagstone" name="Flagstone Prison" type="other"/>
     <namedarea id="fflask" name="Foaming Flask Tavern" type="other"/>
