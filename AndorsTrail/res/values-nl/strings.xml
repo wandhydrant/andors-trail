@@ -374,4 +374,136 @@
 	<string name="skill_title_rejuvenation">Verjonging</string>
 	<string name="skill_shortdescription_rejuvenation">Kans op effectverdwijning</string>
 	<string name="skill_longdescription_rejuvenation">Elke ronde (6 seconden) is er een kans van %1$d %% dat één van de actieve, negatieve condities verlaagd worden met 1. Dit is van toepassing op alle tijdelijke effectsoorten die het lichaam beïnvloeden: mentale condities zoals Versuft, fysieke condities zoals Vermoeid en bloedaandoeningen zoals Vergiftiging.</string>
-	</resources>
+	<string name="skill_title_taunt">Misleiden</string>
+	<string name="skill_shortdescription_taunt">Aanvaller verliest AP bij mislukte aanval</string>
+	<string name="skill_longdescription_taunt">Als een aanvaller aanvalt maar de aanval mislukt, dan is er een kans van %1$d %% dat de aanvaller %2$d actiepunten (AP) verliest. Dit is van toepassing op alle korteafstandsaanvallen.</string>
+	<string name="skill_title_concussion">Hersenschudding</string>
+	<string name="skill_shortdescription_concussion">Kans op een hersenschudding</string>
+	<string name="skill_longdescription_concussion">Als een doel wordt aangevallen en de blokkadekans (BC) minimaal %1$d lager is dan jouw aanvalskans (AC), dan is er een kans van %2$d %% dat de aanval zal leiden tot een hersenschudding voor het doel. Een hersenschudding verlaagt de offensieve aanvalsvaardigheden van het doel zodat succesvolle aanvallen een grotere kans hebben op mislukking.</string>
+
+	<string name="about_button4">Over</string>
+
+	<string name="preferences_ui_category">Uiterlijk</string>
+	<string name="preferences_ui_enable_animations_title">Animaties inschakelen</string>
+	<string name="preferences_ui_enable_animations">Animaties weergeven voor verschillende elementen, zoals bijv. de gevechtsbalk.</string>
+	<string name="menu_button_worldmap">Kaart</string>
+	<string name="menu_button_worldmap_failed">De kaart kan niet worden getoond.</string>
+	<string name="display_worldmap_not_available">De kaart kan niet worden getoond op deze locatie.</string>
+	<string name="display_worldmap_title">Kaart</string>
+
+	<string name="inventory_equip_offhand">Uitrusten (nonchalant)</string>
+
+	<string name="iteminfo_effect_weapon_attack_cost">Aanvalskosten: %1$d AP</string>
+	<string name="iteminfo_effect_increase_attack_cost">Verhoogt de aanvalskosten met %1$d AP</string>
+	<string name="iteminfo_effect_decrease_attack_cost">Verlaagt de aanvalskosten met %1$d AP</string>
+	<string name="iteminfo_effect_weapon_attack_chance">Aanvalskans: %1$d</string>
+	<string name="iteminfo_effect_increase_attack_chance">Verhoogt de aanvalskans met %1$d</string>
+	<string name="iteminfo_effect_decrease_attack_chance">Verlaagt de aanvalskans met %1$d</string>
+	<string name="iteminfo_effect_weapon_attack_damage">Aanvalsschade: %1$d</string>
+	<string name="iteminfo_effect_weapon_attack_damage_minmax">Aanvalsschade: %1$d-%2$d</string>
+	<string name="iteminfo_effect_increase_attack_damage">Verhoogt de aanvalsschade met %1$d</string>
+	<string name="iteminfo_effect_increase_attack_damage_minmax">Verhoogt de aanvalsschade met %1$d-%2$d</string>
+	<string name="iteminfo_effect_decrease_attack_damage">Verlaagt de aanvalsschade met %1$d</string>
+	<string name="iteminfo_effect_decrease_attack_damage_minmax">Verlaagt de aanvalsschade met %1$d-%2$d</string>
+	<string name="iteminfo_effect_increase_critical_skill">Verhoogt de kritieke vaardigheid met %1$d</string>
+	<string name="iteminfo_effect_decrease_critical_skill">Verlaagt de kritieke vaardigheid met %1$d</string>
+	<string name="iteminfo_effect_critical_multiplier">Zorgt voor kritieke aanvallen met een vermenigvuldiger van x%1$.1f</string>
+	<string name="iteminfo_effect_increase_block_chance">Verhoogt de blokkadekans met %1$d</string>
+	<string name="iteminfo_effect_decrease_block_chance">Verlaagt de blokkadekans met %1$d</string>
+	<string name="iteminfo_effect_increase_damage_resistance">Verhoogt de schadebestendigheid met %1$d</string>
+	<string name="iteminfo_effect_decrease_damage_resistance">Verlaagt de schadebestendigheid met %1$d</string>
+	<string name="iteminfo_effect_increase_use_cost">Verhoogt de AP-kosten voor het gebruiken van items in gevechten met %1$d AP</string>
+	<string name="iteminfo_effect_decrease_use_cost">Verlaagt de AP-kosten voor het gebruiken van items in gevechten met %1$d AP</string>
+	<string name="iteminfo_effect_increase_reequip_cost">Verhoogt de AP-kosten voor het uitrusten van items in gevechten met %1$d AP</string>
+	<string name="iteminfo_effect_decrease_reequip_cost">Verlaagt de AP-kosten voor het uitrusten van items in gevechten met %1$d AP</string>
+
+	<string name="loadsave_save_overwrite_confirmation_all">Weet je zeker dat je dit opgeslagen spel wilt overschrijven?</string>
+	<string name="loadsave_save_overwrite_confirmation_slot">(slot %1$d)</string>
+	<string name="preferences_display_overwrite_savegame_entries_always_confirm">Altijd om bevestiging vragen</string>
+	<string name="preferences_display_overwrite_savegame_entries_confirm_overwrite">Alleen als een andere spelersnaam wordt overschreven</string>
+	<string name="preferences_display_overwrite_savegame_entries_never_confirm">Nooit om bevestiging vragen</string>
+	<string name="preferences_dialog_overwrite_savegame_title">Overschrijven van opgeslagen spellen bevestigen</string>
+	<string name="preferences_dialog_overwrite_savegame">Vraagt of je een reeds opgeslagen spel in hetzelfde slot wilt overschrijven met het huidige spel.</string>
+
+	<string name="heroinfo_reequip_cost">Kosten voor heruitrusten (AP):</string>
+	<string name="heroinfo_useitem_cost">Gebruikskosten (AP):</string>
+	<string name="combat_result_monstermoved">%1$s verplaatsingen.</string>
+	<string name="combat_log_title">Gevechtslogboek</string>
+	<string name="localize_resources_from_mo_filename">ram</string>
+	<string name="conversation_reward_quest_finished">[Queeste afgerond: \"%1$s\"]</string>
+	<string name="conversation_reward_quest_updated">[Queeste bijgewerkt: \"%1$s\"]</string>
+
+	<string name="skill_title_weapon_prof_dagger">Dolk-bekwaamheid</string>
+	<string name="skill_title_weapon_prof_1hsword">Eén-handig zwaard-bekwaamheid</string>
+	<string name="skill_title_weapon_prof_2hsword">Twee-handig zwaard-bekwaamheid</string>
+	<string name="skill_title_weapon_prof_axe">Bijl-bekwaamheid</string>
+	<string name="skill_title_weapon_prof_blunt">Slagwapens-bekwaamheid</string>
+	<string name="skill_title_weapon_prof_unarmed">Wapenvrij vechten</string>
+	<string name="skill_title_armor_prof_shield">Schild-bekwaamheid</string>
+	<string name="skill_title_armor_prof_unarmored">Uitrustingsvrij vechten</string>
+	<string name="skill_title_armor_prof_light">Lichte uitrusting-bekwaamheid</string>
+	<string name="skill_title_armor_prof_heavy">Zware uitrusting-bekwaamheid</string>
+	<string name="skill_title_fightstyle_dualwield">Vechtstijl: dubbele hantering</string>
+	<string name="skill_title_fightstyle_2hand">Vechtstijl: twee-handig wapen</string>
+	<string name="skill_title_fightstyle_weapon_shield">Vechtstijl: wapen en schild</string>
+	<string name="skill_title_specialization_dualwield">Specialisatie: dubbele hantering</string>
+	<string name="skill_title_specialization_2hand">Specialisatie: twee-handig wapen</string>
+	<string name="skill_title_specialization_weapon_shield">Specialisatie: wapen en schild</string>
+
+	<string name="skill_shortdescription_weapon_prof_dagger">Beter vechten met dolken</string>
+	<string name="skill_shortdescription_weapon_prof_1hsword">Beter vechten met één-handige zwaarden</string>
+	<string name="skill_shortdescription_weapon_prof_2hsword">Beter vechten met twee-handige zwaarden</string>
+	<string name="skill_shortdescription_weapon_prof_axe">Beter vechten met bijlen</string>
+	<string name="skill_shortdescription_weapon_prof_blunt">Beter vechten met slagwapens</string>
+	<string name="skill_shortdescription_weapon_prof_unarmed">Beter vechten zonder wapens</string>
+	<string name="skill_shortdescription_armor_prof_shield">Beter gebruik van schilden</string>
+	<string name="skill_shortdescription_armor_prof_unarmored">Beter vechten zonder uitrusting</string>
+	<string name="skill_shortdescription_armor_prof_light">Beter gebruik van lichte uitrusting</string>
+	<string name="skill_shortdescription_armor_prof_heavy">Beter gebruik van zware uitrusting</string>
+	<string name="skill_shortdescription_fightstyle_dualwield">Twee wapens tegelijkertijd hanteren</string>
+	<string name="skill_shortdescription_fightstyle_2hand">Beter gebruik van wapens die twee handen vereisen</string>
+	<string name="skill_shortdescription_fightstyle_weapon_shield">Beter vechten met wapen en schild</string>
+	<string name="skill_shortdescription_specialization_dualwield">Expert in dubbele hantering</string>
+	<string name="skill_shortdescription_specialization_2hand">Expert in twee-handige wapens</string>
+	<string name="skill_shortdescription_specialization_weapon_shield">Expert in het vechten met wapen en schild</string>
+
+	<string name="skill_longdescription_weapon_prof_dagger">De aanvalskans wordt verhoogd met %1$d %% bij gebruik van dolken en korte zwaarden, de blokkadekans met %2$d %% en de kritieke vaardigheid met %3$d %% van de basisvaardigheden. Dit is van toepassing op elk vaardigheidsniveau.</string>
+	<string name="skill_longdescription_weapon_prof_1hsword">De aanvalskans wordt verhoogd met %1$d %% bij gebruik van rapiers, slagzwaarden en brede zwaarden, de blokkadekans met %2$d %% en de kritieke vaardigheid met %3$d %% van de basisvaardigheden. Dit is van toepassing op elk vaardigheidsniveau.</string>
+	<string name="skill_longdescription_weapon_prof_2hsword">De aanvalskans wordt verhoogd met %1$d %% bij gebruik van twee-handige zwaarden, de blokkadekans met %2$d %% en de kritieke vaardigheid met %3$d %% van de basisvaardigheden. Dit is van toepassing op elk vaardigheidsniveau.</string>
+	<string name="skill_longdescription_weapon_prof_axe">De aanvalskans wordt verhoogd met %1$d %% bij gebruik van (strijd)bijlen, de blokkadekans met %2$d %% en de kritieke vaardigheid met %3$d %% van de basisvaardigheden. Dit is van toepassing op elk vaardigheidsniveau.</string>
+	<string name="skill_longdescription_weapon_prof_blunt">De aanvalskans wordt verhoogd met %1$d %% bij gebruik van slagwapens, de blokkadekans met %2$d %% en de kritieke vaardigheid met %3$d %% van de basisvaardigheden. Dit omvat knuppels, kwartstaven, strijdknotsen, scepters, krijgshamer en grote hamers. Dit is van toepassing op elk vaardigheidsniveau.</string>
+	<string name="skill_longdescription_weapon_prof_unarmed">Verkrijg %1$d aanvalskans, %2$d schadekans en %3$d blokkadekans per vaardigheidsniveau bij het vechten zonder wapen en schild.</string>
+	<string name="skill_longdescription_armor_prof_shield">Verhoogt de schadebestendigheid met %1$d per vaardigheidsniveau als er een schild is uitgerust.</string>
+	<string name="skill_longdescription_armor_prof_unarmored">Verkrijg %1$d blokkadekans per vaardigheidsniveau bij het vechten zonder uitrusting. Stoffen items vallen niet onder uitrusting.</string>
+	<string name="skill_longdescription_armor_prof_light">Verhoogt de blokkadekans voor elk stuk lichte uitrusting met %1$d %% voor elk vaardigheidsniveau. Lichte uitrusting omvat leer, licht metaal en vel.</string>
+	<string name="skill_longdescription_armor_prof_heavy">Verhoogt de blokkadekans voor elk stuk zware uitrusting met %1$d %% voor elk vaardigheidsniveau. De verplaatssanctie voor zware uitrusting wordt verlaagd met %2$d %% per vaardigheidsniveau en aanvalssnelheidssacties met %3$d %% per vaardigheidsniveau. Zware uitrusting omvat metaal en maliënkolders.</string>
+	<string name="preferences_quickslots_placement">Snelslot-positie</string>
+	<string name="preferences_quickslots_placement_summary">Waar snelsloten geplaatst moeten worden</string>
+	<string name="preferences_quickslots_placements_horizontal_center_bottom">Onderaan</string>
+	<string name="preferences_quickslots_placements_vertical_center_left">Midden-links</string>
+	<string name="preferences_quickslots_placements_vertical_center_right">Midden-rechts</string>
+	<string name="preferences_quickslots_placements_vertical_bottom_left">Linksonder, langs de linkerrand</string>
+	<string name="preferences_quickslots_placements_horizontal_bottom_left">Linksonder, langs de onderrand</string>
+	<string name="preferences_quickslots_placements_horizontal_bottom_right">Rechtsonder, langs de onderrand</string>
+	<string name="preferences_quickslots_placements_vertical_bottom_right">Rechtsonder, langs de rechterrand</string>
+	<string name="preferences_ui_show_quickslots_when_toolbox_is_visible_title">Snelsloten tonen als de gereedschapskist wordt geopend</string>
+	<string name="preferences_ui_show_quickslots_when_toolbox_is_visible">Toont de snelslot-knoppen zodra de gereedschapskist wordt geopend</string>
+	<string name="startscreen_incompatible_savegames">Dit is een in ontwikkeling zijnde versie van Andor\'s Trail. Opgeslagen spellen uit deze versie zijn incompatibel met de reguliere versie.</string>
+	<string name="startscreen_non_release_version">Dit is een vroegtijdig vrijgegeven versie van Andor\'s Trail. Opgeslagen spellen uit deze versie zijn mogelijk niet compatibel met de reguliere versie.</string>
+	<string name="heroinfo_gamestats">Spelstatistieken</string>
+	<string name="heroinfo_gamestats_deaths">Aantal keer flauwgevallen</string>
+	<string name="heroinfo_gamestats_spent_gold">Uitgegeven goud in winkels</string>
+	<string name="heroinfo_gamestats_bonemeals">Aantal gebruikte bonemeal-drankjes</string>
+	<string name="heroinfo_gamestats_num_used_items">Aantal gebruikte items</string>
+	<string name="heroinfo_gamestats_visited_maps">Aantal bezochte locaties</string>
+	<string name="heroinfo_gamestats_fav_item">Meest gebruikte item</string>
+	<string name="heroinfo_gamestats_num_killed_monsters">Aantal gedode monsters</string>
+	<string name="heroinfo_gamestats_top_boss">Sterkst omgebrachte monster</string>
+	<string name="heroinfo_gamestats_fav_monsters">Vaakst gedode monsters</string>
+	<string name="heroinfo_gamestats_name_and_qty">%1$s (%2$d)</string>
+
+	<string name="preferences_ui_use_localized_resources_title">Gelokaliseerde bronnen gebruiken</string>
+	<string name="preferences_ui_use_localized_resources">Vertaling gebruiken voor de spelomgeving en -inhoud. (herstart vereist)</string>
+	<string name="change_locale_requires_restart">De taalwijziging vereist een herstart. Andor\'s Trail is afgesloten.</string>
+
+</resources>
