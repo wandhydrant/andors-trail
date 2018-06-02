@@ -458,4 +458,34 @@
 	<string name="skill_longdescription_crit1">For hvert kritiske treff du får inn, er det en %1$d %% sjanse for at treffet forårsaker intern blødning i målet, noe som bringer med seg tilstanden \"intern blødning\". Dette senker offensive kampegenskaper betydelig, noe som gjør målet mindre i stand til angrep.</string>
 	<string name="skill_longdescription_cleave">Gir +%1$d gjøremålspoeng (GP) for hvert drap per ferdighetsnivå.</string>
 	<string name="skill_longdescription_eater">Gir +%1$d helsepoeng (HP) for hvert drap per ferdighetsnivå.</string>
+	<string name="skill_longdescription_fortitude">Ved hver påfølgende nivåforhøyelse, vil maksimalt antall helsepunkter (HP) økes med %1$d per ferdighetsnivå. Dette legges ikke til retroaktivt, kun påfølgende nivåforhøyelser vil tas hensyn til.</string>
+	<string name="skill_longdescription_evasion">For hvert ferdighetsnivå, reduserer både sjansen for mislykkede fluktforsøk med %1$d %% og sjansen for at motstående monster vil angripe med %1$d %%.</string>
+	<string name="skill_longdescription_regeneration">Tilegn deg +%1$d helsepoeng (HP) ved hver runde per ferdighetsnivå når ingen monster er i direkte nærhet.</string>
+	<string name="skill_longdescription_lower_exploss">Reduserer mengden tapt erfaring for hvert ferdighetsnivå ved dødsfall med %1$d %% (prosent av eksisterende erfaringstapsverdi, ikke prosentpoeng. %2$d nivå vil fjerne alt erfaringstap forårsaket av dødsfall.</string>
+	<string name="skill_longdescription_magicfinder">Øker sjansen for å finne uvanlige ting med %1$d %% for hvert ferdighetsnivå.</string>
+	<string name="skill_longdescription_resistance_mental">Senker sjansen for å bli påvirket av mentale effekter med %1$d %% for hvert ferdighetsnivå, opptil et tak på %2$d %%. Dette inkluderer ferdigheter forårsaket av monsterangrep som søvnig og våpenvegring.</string>
+	<string name="skill_prerequisite_level">For å tilegne deg flere grader av denne ferdigheten, må du være på minst ferdighetsnivå %1$d.</string>
+	<string name="skill_prerequisite_stat">For å tilegne deg flere grader av denne ferdigheten, trenger du minst %1$d %2$s (basisenheter).</string>
+	<string name="levelup_adds_new_skillpoint">Dette nivået gir deg også et nytt ferdighetspoeng å bruke!</string>
+
+	<string name="loadsave_save_to_new_slot">Opprett ny plass for lagret spill</string>
+	<string name="actorconditioninfo_category">Effektkategori: %1$s</string>
+	<string name="skill_title_rejuvenation">Fornyelse</string>
+	<string name="preferences_ui_enable_animations">Viser animasjoner for forskjellige grensesnittselementer, som for eksempel kampindikatoren.</string>
+	<string name="inventory_equip_offhand">Bruk (avhendet)</string>
+
+	<string name="iteminfo_effect_critical_multiplier">Muliggjør kritiske treff med en multiplikator på x%1$.1f</string>
+	<string name="loadsave_save_overwrite_confirmation_all">Er du sikker på at du ønsker å overskrive dette lagrede spillet?</string>
+	<string name="preferences_display_overwrite_savegame_entries_always_confirm">Alltid vis bekreftelsesvindu</string>
+	<string name="preferences_display_overwrite_savegame_entries_confirm_overwrite">Kun vis hvis et annet spillernavn overskrives</string>
+	<string name="preferences_display_overwrite_savegame_entries_never_confirm">Aldri vis bekreftelsesvindu</string>
+	<string name="preferences_dialog_overwrite_savegame_title">Bekreft overskriving av lagrede spill</string>
+	<string name="preferences_dialog_overwrite_savegame">Stiller spørsmål om hvorvidt du ønsker å overskrive et lagret spill når du lagrer til en plass som allerede inneholder et lagret spill.</string>
+
+	<string name="preferences_quickslots_placement">Hurtigplassposisjon</string>
+	<string name="preferences_quickslots_placement_summary">Hvor hurtigplasser skal plasseres</string>
+	<string name="preferences_ui_show_quickslots_when_toolbox_is_visible_title">Vis hurtigplasser når verktøysskrin åpnes</string>
+	<string name="preferences_ui_show_quickslots_when_toolbox_is_visible">Viser hurtigplassknappene så snart verktøysskrinet åpnes</string>
+	<string name="startscreen_incompatible_savegames">Dette er en utviklingsversjon av Andors sti. Lagrede spill fra denne versjonen er ikke kompatible i utgivelsesversjonen.</string>
+	<string name="startscreen_non_release_version">Dette er en forhåndsutgave av Andors sti. Det kan hende lagrede spill fra denne versjonen er ikke kompatible med utgivelsesversjonen.</string>
 	</resources>
