@@ -1,5 +1,7 @@
 package com.gpl.rpg.AndorsTrail.activity.fragment;
 
+import java.util.ArrayList;
+
 import android.content.Intent;
 import android.content.res.Resources;
 import android.os.Bundle;
@@ -17,6 +19,7 @@ import com.gpl.rpg.AndorsTrail.AndorsTrailApplication;
 import com.gpl.rpg.AndorsTrail.Dialogs;
 import com.gpl.rpg.AndorsTrail.R;
 import com.gpl.rpg.AndorsTrail.context.WorldContext;
+import com.gpl.rpg.AndorsTrail.model.actor.HeroCollection;
 import com.gpl.rpg.AndorsTrail.model.actor.Player;
 import com.gpl.rpg.AndorsTrail.model.item.Inventory;
 import com.gpl.rpg.AndorsTrail.model.item.ItemTraits_OnHitReceived;
@@ -25,8 +28,6 @@ import com.gpl.rpg.AndorsTrail.model.item.ItemType;
 import com.gpl.rpg.AndorsTrail.view.ItemEffectsView;
 import com.gpl.rpg.AndorsTrail.view.RangeBar;
 import com.gpl.rpg.AndorsTrail.view.TraitsInfoView;
-
-import java.util.ArrayList;
 
 public final class HeroinfoActivity_Stats extends Fragment {
 
@@ -37,7 +38,6 @@ public final class HeroinfoActivity_Stats extends Fragment {
 
 	private View view;
 	private Button levelUpButton;
-	private TextView heroinfo_ap;
 	private TextView heroinfo_reequip_cost;
 	private TextView heroinfo_useitem_cost;
 	private TextView heroinfo_level;
@@ -48,6 +48,7 @@ public final class HeroinfoActivity_Stats extends Fragment {
 	private TextView heroinfo_base_useitem_cost;
 	private RangeBar rangebar_hp;
 	private RangeBar rangebar_exp;
+	private RangeBar rangebar_ap;
 	private ItemEffectsView actorinfo_onhiteffects;
 	private TableLayout heroinfo_basestats_table;
 	private ViewGroup heroinfo_container;
@@ -68,10 +69,9 @@ public final class HeroinfoActivity_Stats extends Fragment {
 
 		TextView tv = (TextView) v.findViewById(R.id.heroinfo_title);
 		tv.setText(player.getName());
-		world.tileManager.setImageViewTile(getResources(), tv, player);
+		tv.setCompoundDrawablesWithIntrinsicBounds(HeroCollection.getHeroLargeSprite(player.iconID), 0, 0, 0);
 
 		heroinfo_container = (ViewGroup) v.findViewById(R.id.heroinfo_container);
-		heroinfo_ap = (TextView) v.findViewById(R.id.heroinfo_ap);
 		heroinfo_reequip_cost = (TextView) v.findViewById(R.id.heroinfo_reequip_cost);
 		heroinfo_useitem_cost = (TextView) v.findViewById(R.id.heroinfo_useitem_cost);
 		basetraitsinfo_max_hp = (TextView) v.findViewById(R.id.basetraitsinfo_max_hp);
@@ -84,9 +84,14 @@ public final class HeroinfoActivity_Stats extends Fragment {
 		heroinfo_basestats_table = (TableLayout) v.findViewById(R.id.heroinfo_basestats_table);
 
 		rangebar_hp = (RangeBar) v.findViewById(R.id.heroinfo_healthbar);
-		rangebar_hp.init(R.drawable.ui_progress_health, R.string.status_hp);
+		rangebar_hp.init(R.drawable.ui_progress_health, R.string.heroinfo_healthpoints);
+		rangebar_hp.setLargeLabel(true);
 		rangebar_exp = (RangeBar) v.findViewById(R.id.heroinfo_expbar);
-		rangebar_exp.init(R.drawable.ui_progress_exp, R.string.status_exp);
+		rangebar_exp.init(R.drawable.ui_progress_exp, R.string.heroinfo_experiencepoints);
+		rangebar_exp.setLargeLabel(true);
+		rangebar_ap = (RangeBar) v.findViewById(R.id.heroinfo_apbar);
+		rangebar_ap.init(R.drawable.ui_progress_ap, R.string.heroinfo_actionpoints);
+		rangebar_ap.setLargeLabel(true);
 
 		levelUpButton = (Button) v.findViewById(R.id.heroinfo_levelup);
 		levelUpButton.setOnClickListener(new OnClickListener() {
@@ -131,7 +136,7 @@ public final class HeroinfoActivity_Stats extends Fragment {
 
 		heroinfo_level.setText(Integer.toString(player.getLevel()));
 		heroinfo_totalexperience.setText(Integer.toString(player.getTotalExperience()));
-		heroinfo_ap.setText(player.getMaxAP() + "/" + player.getCurrentAP());
+//		heroinfo_ap.update(player.getMaxAP() + "/" + player.getCurrentAP());
 		heroinfo_reequip_cost.setText(Integer.toString(player.getReequipCost()));
 		heroinfo_useitem_cost.setText(Integer.toString(player.getUseItemCost()));
 		basetraitsinfo_max_hp.setText(Integer.toString(player.baseTraits.maxHP));
@@ -140,6 +145,7 @@ public final class HeroinfoActivity_Stats extends Fragment {
 		heroinfo_base_useitem_cost.setText(Integer.toString(player.baseTraits.useItemCost));
 		rangebar_hp.update(player.getMaxHP(), player.getCurrentHP());
 		rangebar_exp.update(player.getMaxLevelExperience(), player.getCurrentLevelExperience());
+		rangebar_ap.update(player.getMaxAP(), player.getCurrentAP());
 
 		TraitsInfoView.update(heroinfo_container, player);
 		TraitsInfoView.updateTraitsTable(
@@ -167,6 +173,7 @@ public final class HeroinfoActivity_Stats extends Fragment {
 		}
 		if (effects_hit.isEmpty()) effects_hit = null;
 		if (effects_kill.isEmpty()) effects_kill = null;
+		if (effects_hitReceived.isEmpty()) effects_hitReceived = null;
 		actorinfo_onhiteffects.update(null, null, effects_hit, effects_kill, effects_hitReceived, null, false);
 
 

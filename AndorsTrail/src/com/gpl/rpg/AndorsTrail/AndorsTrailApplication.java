@@ -1,5 +1,7 @@
 package com.gpl.rpg.AndorsTrail;
 
+import java.util.Locale;
+
 import android.app.Activity;
 import android.app.Application;
 import android.content.Context;
@@ -7,10 +9,9 @@ import android.content.res.Configuration;
 import android.content.res.Resources;
 import android.view.Window;
 import android.view.WindowManager;
+
 import com.gpl.rpg.AndorsTrail.context.ControllerContext;
 import com.gpl.rpg.AndorsTrail.context.WorldContext;
-
-import java.util.Locale;
 
 public final class AndorsTrailApplication extends Application {
 
@@ -20,7 +21,7 @@ public final class AndorsTrailApplication extends Application {
 	public static final boolean DEVELOPMENT_DEBUGBUTTONS = true;
 	public static final boolean DEVELOPMENT_FASTSPEED = true;
 	public static final boolean DEVELOPMENT_VALIDATEDATA = true;
-	public static final boolean DEVELOPMENT_DEBUGMESSAGES = false;
+	public static final boolean DEVELOPMENT_DEBUGMESSAGES = true;
 	public static final boolean DEVELOPMENT_INCOMPATIBLE_SAVEGAMES = DEVELOPMENT_DEBUGRESOURCES || DEVELOPMENT_DEBUGBUTTONS || DEVELOPMENT_FASTSPEED;
 	public static final int CURRENT_VERSION = DEVELOPMENT_INCOMPATIBLE_SAVEGAMES ? 999 : 43;
 	public static final String CURRENT_VERSION_DISPLAY = "0.7.2dev";

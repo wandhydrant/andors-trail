@@ -84,7 +84,7 @@ public final class CombatController implements VisualEffectCompletedCallback {
 	}
 	public void setCombatSelection(Monster selectedMonster, Coord selectedPosition) {
 		if (selectedMonster != null) {
-			if (!selectedMonster.isAgressive()) return;
+			if (!selectedMonster.isAgressive(world.model.player)) return;
 		}
 		Coord previousSelection = world.model.uiSelections.selectedPosition;
 		if (previousSelection != null) {
@@ -321,12 +321,12 @@ public final class CombatController implements VisualEffectCompletedCallback {
 
 		for (MonsterSpawnArea a : world.model.currentMap.spawnAreas) {
 			for (Monster m : a.monsters) {
-				if (!m.isAgressive()) continue;
+				if (!m.isAgressive(world.model.player)) continue;
 
 				if (shouldAttackWithMonsterInCombat(m, playerPosition)) {
 					currentActiveMonster = m;
 					return MonsterAction.attack;
-				} else if (shouldMoveMonsterInCombat(m, a, playerPosition)) {
+				} else if (shouldMoveMonsterInCombat(m, a, world.model.player, playerPosition)) {
 					currentActiveMonster = m;
 					return MonsterAction.move;
 				}
@@ -340,13 +340,13 @@ public final class CombatController implements VisualEffectCompletedCallback {
 		if (!m.rectPosition.isAdjacentTo(playerPosition)) return false;
 		return true;
 	}
-	private static boolean shouldMoveMonsterInCombat(Monster m, MonsterSpawnArea a, Coord playerPosition) {
+	private static boolean shouldMoveMonsterInCombat(Monster m, MonsterSpawnArea a, Player p, Coord playerPosition) {
 		final MonsterType.AggressionType movementAggressionType = m.getMovementAggressionType();
 		if (movementAggressionType == MonsterType.AggressionType.none) return false;
 
 		if (!m.hasAPs(m.getMoveCost())) return false;
 		if (m.position.isAdjacentTo(playerPosition)) return false;
-		if (!m.isAgressive()) return false;
+		if (!m.isAgressive(p)) return false;
 
 		if (movementAggressionType == MonsterType.AggressionType.protectSpawn) {
 			if (a.area.contains(playerPosition)) return true;

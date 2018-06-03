@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:background="?attr/ui_theme_stdframe_bitmap"
+    android:clickable="true"
+    android:gravity="top|start" >
+
+    <RelativeLayout
+        android:id="@+id/save_preview_hero_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:gravity="top|start" >
+
+        <ImageView
+            android:id="@+id/save_preview_hero_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/save_preview_hero_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/save_preview_hero_icon"
+            android:gravity="top|start"
+            android:text="@android:string/unknownName" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/startscreen_continue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/save_preview_hero_info"
+        android:layout_marginTop="10dp"
+        android:text="@string/startscreen_continue" />
+
+</RelativeLayout>

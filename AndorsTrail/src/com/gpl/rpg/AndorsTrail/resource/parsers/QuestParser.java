@@ -1,5 +1,11 @@
 package com.gpl.rpg.AndorsTrail.resource.parsers;
 
+import java.util.Arrays;
+import java.util.Comparator;
+
+import org.json.JSONException;
+import org.json.JSONObject;
+
 import com.gpl.rpg.AndorsTrail.model.quest.Quest;
 import com.gpl.rpg.AndorsTrail.model.quest.QuestLogEntry;
 import com.gpl.rpg.AndorsTrail.resource.TranslationLoader;
@@ -7,11 +13,6 @@ import com.gpl.rpg.AndorsTrail.resource.parsers.json.JsonArrayParserFor;
 import com.gpl.rpg.AndorsTrail.resource.parsers.json.JsonCollectionParserFor;
 import com.gpl.rpg.AndorsTrail.resource.parsers.json.JsonFieldNames;
 import com.gpl.rpg.AndorsTrail.util.Pair;
-import org.json.JSONException;
-import org.json.JSONObject;
-
-import java.util.Arrays;
-import java.util.Comparator;
 
 public final class QuestParser extends JsonCollectionParserFor<Quest> {
 	private final TranslationLoader translationLoader;

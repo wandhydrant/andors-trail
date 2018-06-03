@@ -67,7 +67,7 @@ public final class VisualEffectController {
 
 	public final class SpriteMoveAnimation extends Handler implements Runnable {
 		
-		private static final int millisecondsPerFrame=25;
+//		private static final int millisecondsPerFrame=25;
 		
 		private final VisualEffectCompletedCallback callback;
 		private final int callbackValue;
@@ -80,12 +80,12 @@ public final class VisualEffectController {
 		
 		@Override
 		public void run() {
-			update();
-			if (System.currentTimeMillis() - actor.vfxStartTime >= duration) {
-				onCompleted();
-			} else {
-				postDelayed(this, millisecondsPerFrame);
-			}
+			onCompleted();
+//			update();
+//			if (System.currentTimeMillis() - actor.vfxStartTime >= duration) {
+//			} else {
+//				postDelayed(this, millisecondsPerFrame);
+//			}
 		}
 		
 		public SpriteMoveAnimation(Coord origin, Coord destination, int duration, Actor actor, VisualEffectCompletedCallback callback, int callbackValue) {
@@ -98,10 +98,10 @@ public final class VisualEffectController {
 
 		}
 		
-		private void update() {
-			
-			visualEffectFrameListeners.onNewSpriteMoveFrame(this);
-		}
+//		private void update() {
+//			
+//			visualEffectFrameListeners.onNewSpriteMoveFrame(this);
+//		}
 
 		private void onCompleted() {
 			--effectCount;
@@ -115,8 +115,11 @@ public final class VisualEffectController {
 			actor.hasVFXRunning = true;
 			actor.vfxDuration = duration;
 			actor.vfxStartTime = System.currentTimeMillis();
+			visualEffectFrameListeners.onSpriteMoveStarted(this);
 			if (duration == 0 || !controllers.preferences.enableUiAnimations) onCompleted();
-			else postDelayed(this, 0);
+			else {
+				postDelayed(this, duration);
+			}
 		}
 		
 		

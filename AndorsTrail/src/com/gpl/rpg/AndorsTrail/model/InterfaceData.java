@@ -1,12 +1,11 @@
 package com.gpl.rpg.AndorsTrail.model;
 
-import com.gpl.rpg.AndorsTrail.model.actor.Monster;
-import com.gpl.rpg.AndorsTrail.model.item.Inventory;
-import com.gpl.rpg.AndorsTrail.util.Coord;
-
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
 import java.io.IOException;
+
+import com.gpl.rpg.AndorsTrail.model.actor.Monster;
+import com.gpl.rpg.AndorsTrail.util.Coord;
 
 public final class InterfaceData {
 	public boolean isMainActivityVisible = false;
