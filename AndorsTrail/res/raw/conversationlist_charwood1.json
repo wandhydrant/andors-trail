@@ -172,6 +172,17 @@
                 "nextPhraseID":"khorailla2"
             },
             {
+                "text":"Please sell me some of your famous Cheddar cheese.",
+                "nextPhraseID":"khorailla_cheddar",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"guynmart_wise",
+                        "value":30
+                    }
+                ]
+            },
+            {
                 "text":"You're welcome.",
                 "nextPhraseID":"X"
             }
@@ -218,5 +229,16 @@
     {
         "id":"charwood_rest",
         "message":"Khorailla shouts to you: Hey! Get away from there!"
-    }
+    },
+    {
+        "id":"khorailla_cheddar",
+		"switchToNPC":"khorailla_cheddar",
+        "message":"Ah, you really know what's good.",
+        "replies":[
+            {
+                "nextPhraseID":"S",
+                "text":"I hope so. It was a long way to come."
+            }
+        ]
+	}
 ]
