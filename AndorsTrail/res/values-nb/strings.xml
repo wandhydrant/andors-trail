@@ -34,7 +34,7 @@
 	<string name="heroinfo_wornequipment">Slitt utstyr</string>
 	<string name="heroinfo_inventory">Utstyr</string>
 	<string name="heroinfo_gold">Gull: %1$d</string>
-	<string name="heroinfo_actionpoints">Handlingspoeng (AP):</string>
+	<string name="heroinfo_actionpoints">Aksjonspoeng (AP):</string>
 	<string name="heroinfo_quests">Oppdrag</string>
 
 	<string name="combat_attack">Angrep (%1$d HP)</string>
@@ -351,10 +351,10 @@
 	<string name="skill_shortdescription_barkskin">Skademotstand</string>
 	<string name="skill_shortdescription_more_criticals">Økt kritisk ferdighet</string>
 	<string name="skill_shortdescription_better_criticals">Økt kritisk skade</string>
-	<string name="skill_shortdescription_speed">Økt maks. actionpoeng</string>
+	<string name="skill_shortdescription_speed">Økt maks. aksjonspoeng</string>
 	<string name="skill_shortdescription_coinfinder">Høyere sjanse for å finne gull</string>
 	<string name="skill_shortdescription_more_exp">Mer erfaring fra monsterdrap</string>
-	<string name="skill_shortdescription_cleave">Regenerer actionpoeng for hvert drap</string>
+	<string name="skill_shortdescription_cleave">Regenerer aksjonspoeng for hvert drap</string>
 	<string name="skill_shortdescription_eater">Regenerer helsepoeng for hvert drap</string>
 	<string name="skill_shortdescription_fortitude">Øk helse for hver nivåoppgradering</string>
 	<string name="skill_shortdescription_evasion">Økt flyktsjanse</string>
@@ -372,7 +372,7 @@
 	<string name="skill_longdescription_barkskin">Øker skademotstandsdyktighet med %1$d for hvert ferdighetsnivå.</string>
 	<string name="skill_longdescription_more_criticals">Øker enhver kritisk ferdighet gitt av gjenstand med %1$d %% for hvert ferdighetsnivå.</string>
 	<string name="skill_longdescription_better_criticals">Øker enhver kritiske multiplikator gitt av gjenstand med %1$d %% for hvert ferdighetsnivå.</string>
-	<string name="skill_longdescription_speed">Øker maksimale actionpoeng (AP) med %1$d for hvert ferdighetsnivå.</string>
+	<string name="skill_longdescription_speed">Øker maksimale aksjonspoeng (AP) med %1$d for hvert ferdighetsnivå.</string>
 	<string name="skill_current_level_with_maximum">Nåværende nivå: %1$d / %2$d</string>
 	<string name="skill_number_of_increases_one">Du kan velge én ferdighet å forbedre.</string>
 	<string name="skill_number_of_increases_several">Du kan velge %1$d ferdigheter å øke.</string>
@@ -395,7 +395,7 @@
 	<string name="skill_title_specialization_2hand">Spesialisering: Tohåndsvåpen</string>
 	<string name="skill_title_specialization_weapon_shield">Spesialisering: Våpen og skjold</string>
 
-	<string name="skill_shortdescription_weapon_prof_dagger">Bedre på kjemping med dolk</string>
+	<string name="skill_shortdescription_weapon_prof_dagger">Bedre på kjemping med dolker</string>
 	<string name="skill_shortdescription_weapon_prof_1hsword">Bedre på kjemping med énhåndssverd</string>
 	<string name="skill_shortdescription_weapon_prof_2hsword">Bedre på kjemping med tohåndssverd</string>
 	<string name="skill_shortdescription_weapon_prof_axe">Bedre på kjemping med økser</string>
@@ -456,7 +456,7 @@
 	<string name="skill_longdescription_shadow_bless">Senker sjansen for å bli påvirket av alle typer tilstander med %1$d %%. Dette inkluderer alle typer tilstander forårsaket av monsterangrep, som gift, omtåking eller utmattelse.</string>
 
 	<string name="skill_longdescription_crit1">For hvert kritiske treff du får inn, er det en %1$d %% sjanse for at treffet forårsaker intern blødning i målet, noe som bringer med seg tilstanden \"intern blødning\". Dette senker offensive kampegenskaper betydelig, noe som gjør målet mindre i stand til angrep.</string>
-	<string name="skill_longdescription_cleave">Gir +%1$d gjøremålspoeng (GP) for hvert drap per ferdighetsnivå.</string>
+	<string name="skill_longdescription_cleave">Gir +%1$d aksjonspoeng (GP) for hvert drap per ferdighetsnivå.</string>
 	<string name="skill_longdescription_eater">Gir +%1$d helsepoeng (HP) for hvert drap per ferdighetsnivå.</string>
 	<string name="skill_longdescription_fortitude">Ved hver påfølgende nivåforhøyelse, vil maksimalt antall helsepunkter (HP) økes med %1$d per ferdighetsnivå. Dette legges ikke til retroaktivt, kun påfølgende nivåforhøyelser vil tas hensyn til.</string>
 	<string name="skill_longdescription_evasion">For hvert ferdighetsnivå, reduserer både sjansen for mislykkede fluktforsøk med %1$d %% og sjansen for at motstående monster vil angripe med %1$d %%.</string>
@@ -488,4 +488,41 @@
 	<string name="preferences_ui_show_quickslots_when_toolbox_is_visible">Viser hurtigplassknappene så snart verktøysskrinet åpnes</string>
 	<string name="startscreen_incompatible_savegames">Dette er en utviklingsversjon av Andors sti. Lagrede spill fra denne versjonen er ikke kompatible i utgivelsesversjonen.</string>
 	<string name="startscreen_non_release_version">Dette er en forhåndsutgave av Andors sti. Det kan hende lagrede spill fra denne versjonen er ikke kompatible med utgivelsesversjonen.</string>
+	<string name="skill_longdescription_resistance_physical_capacity">Senker sjansen for å bli påvirket av tilstander som har innvirkning på fysisk kapasitet med %1$d %% for hvert ferdighetsnivå, opptil et tak på %2$d %%. Dette inkluderer tilstander forårsaket av monsterangrep som utmattelse.</string>
+	<string name="skill_longdescription_resistance_blood_disorder">Senker sjansen for å bli påvirket av blodforstyrrelser med %1$d %% for hvert ferdighetsnivå, opptil et tak på %2$d %%. Dette inkluderer tilstander forårsaket av monsterangrep som gift eller blødende sår.</string>
+
+	<string name="skill_prerequisite_other_skill">For å høyne dette ferdighetsnivået, trenger du minst nivå %1$d av %2$d-ferdigheten.</string>
+	<string name="skill_longdescription_crit2">For hvert kritiske treff du får inn, er det en %1$d %% sjanse for at treffet knuser noen av målets bein, noe som effektivt forårsaker \"fraktur\"-effekt på målet. Dette vil senke dets defensive kampevner mye, noe som gjør det mindre i stand til å forsvare seg selv i påfølgende angrep.</string>
+	<string name="skill_longdescription_rejuvenation">Hver runde (seks sekunder), er det en %1$d %% sjanse for at en av de aktive negative effekter vil bli senket med en størrelsesorden. Dette har innvirkning på midlertidige effekttyper som har innvirkning på kroppen; mentale tilstander som omtåkethet, fysiske kapasitetstilstander som utmattelse og også blodforstyrrelser som gift.</string>
+	<string name="skill_longdescription_taunt">Når en angriper utfører et angrep som bommer, er det en %1$d %% sjanse for at angripere taper %2$d aksjonspoeng (AP). Dette har innvirkning på alle typer nærkampsangrep mot deg.</string>
+	<string name="iteminfo_effect_increase_use_cost">Øker AP-kost for bruk av gjenstander i kamp med %1$d AP</string>
+	<string name="iteminfo_effect_decrease_use_cost">Senker AP-kost for bruk av gjenstander i kamp med %1$d AP</string>
+	<string name="iteminfo_effect_increase_reequip_cost">Øker AP-kost for å ta i bruk gjenstander i kamp med %1$d AP</string>
+	<string name="iteminfo_effect_decrease_reequip_cost">Senker AP-kost for å ta i bruk gjenstander i kamp med %1$d AP</string>
+
+	<string name="heroinfo_reequip_cost">Gjenbrukskost (AP):</string>
+	<string name="localize_resources_from_mo_filename">ram</string>
+	<string name="conversation_reward_quest_finished">[Oppdrag fullført: \"%1$s\"]</string>
+	<string name="conversation_reward_quest_updated">[Oppdrag fullført: \"%1$s\"]</string>
+
+	<string name="skill_longdescription_weapon_prof_dagger">For hvert ferdighetsnivå, øker angrepssjansen ved bruk av dolker og kortsvert med %1$d %% av gjenstandens basisangrepssjanse, øker blokkeringssjanse med %2$d %% av gjenstandens blokkeringssjanse, og øker ferdighet for å få inn kritiske treff med %3$d %% av gjenstandens basissjanse for kritiske treff.</string>
+	<string name="skill_longdescription_weapon_prof_1hsword">For hvert ferdighetsnivå, øker angrepssjansen ved bruk av lang- og bred-sverd med %1$d %% av gjenstandens basisangrepssjanse, øker blokkeringssjanse med %2$d %% av gjenstandens blokkeringssjanse, og øker ferdighet for å få inn kritiske treff med %3$d %% av gjenstandens basissjanse for kritiske treff.</string>
+	<string name="skill_longdescription_weapon_prof_2hsword">For hvert ferdighetsnivå, øker angrepssjansen ved bruk av tohåndssverd %1$d %% av gjenstandens basisangrepssjanse, øker blokkeringssjanse med %2$d %% av gjenstandens blokkeringssjanse, og øker ferdighet for å få inn kritiske treff med %3$d %% av gjenstandens basissjanse for kritiske treff.</string>
+	<string name="skill_longdescription_weapon_prof_axe">For hvert ferdighetsnivå, øker angrepssjansen ved bruk av storøkser med %1$d %% av gjenstandens basisangrepssjanse, øker blokkeringssjanse med %2$d %% av gjenstandens blokkeringssjanse, og øker ferdighet for å få inn kritiske treff med %3$d %% av gjenstandens basissjanse for kritiske treff.</string>
+	<string name="skill_longdescription_weapon_prof_blunt">For hvert ferdighetsnivå, øker angrepssjansen ved bruk av klubbvåpen med %1$d %% av gjenstandens basisangrepssjanse, øker blokkeringssjanse med %2$d %% av gjenstandens blokkeringssjanse, og øker ferdighet for å få inn kritiske treff med %3$d %% av gjenstandens basissjanse for kritiske treff. Dette inkluderer klubber, stokker, stridsklubber, strids- og kjempe-hammmere.</string>
+	<string name="skill_longdescription_weapon_prof_unarmed">Når du sloss uten et våpen og skjold, økes angrepssjansen med %1$d, %2$d skadepotensiale og %3$d blokkeringssjanse per ferdighetsnivå.</string>
+	<string name="skill_longdescription_armor_prof_shield">Øker skademotstandsdyktighet med %1$d per ferdighetsnivå mens du bærer skjold.</string>
+	<string name="skill_longdescription_armor_prof_unarmored">Når du sloss uten å ha noen form for rustning, får du %1$d blokkeringssjanse per ferdighetsnivå. Gjenstander laget av tøy anses ikke som rustning.</string>
+	<string name="skill_longdescription_armor_prof_light">For hvert ferdighetsnivå, økes blokkeringssjansen for hver ikledd lettrustningsgjenstand med %1$d %% av deres opprinnelige blokkeringssjanser. Lett rustning inkluderer lær, lett metall og skinnfellsrustning.</string>
+	<string name="skill_longdescription_armor_prof_heavy">For hvert ferdighetsnivå, økes blokkeringssjansen for hver ikledd tungrustningsgjenstand med %1$d %% av deres opprinnelige blokkeringssjanser. Forflyttningstregheten reduseres med %2$d %% for tung rustninger per ferdighetsnivå, og deres angrepshastighetstreghet reduseres med %3$d %% per ferdighetsnivå. Tung rustning inkluderer metallrustning, brynje og platerustning.</string>
+	<string name="skill_longdescription_fightstyle_2hand">Gir fordeler ved bruk av våpen som krever to hender, som tohåndssverd, storøkser eller kjempehammere.
+\n
+\nHvert ferdighetsnivå øker skadepotensialet for tohåndsvåpen med %1$d %% av deres opprinnelige skadepotensiale.</string>
+	<string name="skill_longdescription_fightstyle_weapon_shield">Gir fordel i strid ved våpenbruk i hovedhånden, mens skjold trakteres av den andre.
+\n
+\nHvert ferdighetsnivå øker angrepssjansen for våpen med %1$d %% av deres opprinnelige agrepssjanser, og blokkeringssjansen for skjold med %2$d %% av deres opprinnelige blokkeringssjanser.</string>
+	<string name="skill_longdescription_specialization_dualwield">Øker angrepssjansen for å bruke våpen i begge hender med ytterligere %1$d %% av deres opprinnelige angrepssjanser, i tillegg til fordelene gitt av hver våpensstilsferdighet. Blokkeringssjansene fra begge trakterte våpen øker med %2$d %% av deres opprinnelige blokkeringssjanser.</string>
+	<string name="skill_longdescription_specialization_2hand">Øker skadepotensialet for tohåndsvåpen med ytterligere %1$d %% av det opprinnelige skadepotensialet, i tillegg til fordelene gitt av hver våpenstilsferdighet. Angrepssjansene for tohåndsvåpen økes også med %2$d %% av deres opprinnelige angrepssjanser.</string>
+	<string name="skill_longdescription_specialization_weapon_shield">Øker både angrepssjansene og skadepotensialet til våpen. Deres angrepssjanse øker med %1$d %% av deres opprinnelige angrepssjanse, og skadepotensialet øker med %2$d %% av det opprinnelige skadepotensialet.</string>
+
 	</resources>
