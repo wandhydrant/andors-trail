@@ -1082,6 +1082,24 @@
         }
     },
     {
+        "id":"charwood_cheddar",
+        "iconID":"items_consumables:23",
+        "name":"Charwood cheddar",
+        "hasManualPrice":1,
+        "baseMarketCost":63,
+        "category":"food",
+        "useEffect":{
+            "conditionsSource":[
+                {
+                    "condition":"food",
+                    "magnitude":2,
+                    "duration":6,
+                    "chance":"100"
+                }
+            ]
+        }
+    },
+    {
         "id":"rawperch",
         "iconID":"items_consumables:24",
         "name":"Raw perch",
