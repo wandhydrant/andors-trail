@@ -5,6 +5,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.TextView;
+
 import com.gpl.rpg.AndorsTrail.R;
 import com.gpl.rpg.AndorsTrail.controller.ItemController;
 import com.gpl.rpg.AndorsTrail.model.actor.Player;

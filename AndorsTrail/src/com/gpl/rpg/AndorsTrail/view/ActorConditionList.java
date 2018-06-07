@@ -8,6 +8,7 @@ import android.util.AttributeSet;
 import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+
 import com.gpl.rpg.AndorsTrail.AndorsTrailApplication;
 import com.gpl.rpg.AndorsTrail.Dialogs;
 import com.gpl.rpg.AndorsTrail.R;
@@ -48,7 +49,7 @@ public final class ActorConditionList extends LinearLayout {
 
 	private void addConditionEffect(final Context context, final Resources res, LinearLayout.LayoutParams layoutParams,
 			ActorCondition c, boolean immunity) {
-		TextView v = (TextView) View.inflate(context, R.layout.inventoryitemview, null);
+		TextView v = (TextView) View.inflate(context, R.layout.actorconditionitemview, null);
 		world.tileManager.setImageViewTile(res, v, c.conditionType, immunity);
 		SpannableString content = new SpannableString(describeEffect(res, c));
 		content.setSpan(new UnderlineSpan(), 0, content.length(), 0);

@@ -2,6 +2,7 @@ package com.gpl.rpg.AndorsTrail.controller;
 
 import android.content.res.Resources;
 import android.os.AsyncTask;
+
 import com.gpl.rpg.AndorsTrail.AndorsTrailPreferences;
 import com.gpl.rpg.AndorsTrail.context.ControllerContext;
 import com.gpl.rpg.AndorsTrail.context.WorldContext;
@@ -10,7 +11,11 @@ import com.gpl.rpg.AndorsTrail.model.ModelContainer;
 import com.gpl.rpg.AndorsTrail.model.actor.Monster;
 import com.gpl.rpg.AndorsTrail.model.actor.Player;
 import com.gpl.rpg.AndorsTrail.model.item.Loot;
-import com.gpl.rpg.AndorsTrail.model.map.*;
+import com.gpl.rpg.AndorsTrail.model.map.LayeredTileMap;
+import com.gpl.rpg.AndorsTrail.model.map.MapObject;
+import com.gpl.rpg.AndorsTrail.model.map.MonsterSpawnArea;
+import com.gpl.rpg.AndorsTrail.model.map.PredefinedMap;
+import com.gpl.rpg.AndorsTrail.model.map.TMXMapTranslator;
 import com.gpl.rpg.AndorsTrail.resource.tiles.TileCollection;
 import com.gpl.rpg.AndorsTrail.util.Coord;
 import com.gpl.rpg.AndorsTrail.util.L;
@@ -19,12 +24,19 @@ import com.gpl.rpg.AndorsTrail.util.TimedMessageTask;
 public final class MovementController implements TimedMessageTask.Callback {
 	private final ControllerContext controllers;
 	private final WorldContext world;
-	private final TimedMessageTask movementHandler;
+	//TODO restore final modifier before release
+	private TimedMessageTask movementHandler;
 	public final PlayerMovementListeners playerMovementListeners = new PlayerMovementListeners();
 
 	public MovementController(ControllerContext controllers, WorldContext world) {
 		this.controllers = controllers;
 		this.world = world;
+		this.movementHandler = new TimedMessageTask(this, Constants.MINIMUM_INPUT_INTERVAL, false);
+	}
+	
+	//TODO remove this method before release
+	public void resetMovementHandler() {
+		this.movementHandler.stop();
 		this.movementHandler = new TimedMessageTask(this, Constants.MINIMUM_INPUT_INTERVAL, false);
 	}
 
@@ -192,7 +204,7 @@ public final class MovementController implements TimedMessageTask.Callback {
 		if (aggressiveness == AndorsTrailPreferences.MOVEMENTAGGRESSIVENESS_NORMAL) return true;
 
 		Monster m = world.model.currentMap.getMonsterAt(player.nextPosition);
-		if (m != null && !m.isAgressive()) return true; // avoid MOVEMENTAGGRESSIVENESS settings for NPCs
+		if (m != null && !m.isAgressive(player)) return true; // avoid MOVEMENTAGGRESSIVENESS settings for NPCs
 
 		if (aggressiveness == AndorsTrailPreferences.MOVEMENTAGGRESSIVENESS_AGGRESSIVE && m == null) return false;
 		if (aggressiveness == AndorsTrailPreferences.MOVEMENTAGGRESSIVENESS_DEFENSIVE && m != null) return false;
@@ -272,7 +284,7 @@ public final class MovementController implements TimedMessageTask.Callback {
 		for (MonsterSpawnArea a : map.spawnAreas) {
 			for (Monster m : a.monsters) {
 				if (tileMap.isWalkable(m.rectPosition)) continue;
-				Coord p = MonsterSpawningController.getRandomFreePosition(map, tileMap, a.area, m.tileSize, playerPosition);
+				Coord p = MonsterSpawningController.getRandomFreePosition(map, tileMap, a, m.tileSize, playerPosition);
 				if (p == null) continue;
 				m.position.set(p);
 			}
@@ -335,13 +347,14 @@ public final class MovementController implements TimedMessageTask.Callback {
 	}
 
 	public static void refreshMonsterAggressiveness(final PredefinedMap map, final Player player) {
-		for(MonsterSpawnArea a : map.spawnAreas) {
-			for (Monster m : a.monsters) {
-				String faction = m.getFaction();
-				if (faction == null) continue;
-				if (player.getAlignment(faction) < 0) m.forceAggressive();
-			}
-		}
+//	Faction-related agressiveness now dynamic, and unrelated to "forceAgressive".
+//		for(MonsterSpawnArea a : map.spawnAreas) {
+//			for (Monster m : a.monsters) {
+//				String faction = m.getFaction();
+//				if (faction == null) continue;
+//				if (player.getAlignment(faction) < 0) m.forceAggressive();
+//			}
+//		}
 	}
 
 	public static boolean hasAdjacentAggressiveMonster(PredefinedMap map, Player player) {
@@ -350,7 +363,7 @@ public final class MovementController implements TimedMessageTask.Callback {
 	public static Monster getAdjacentAggressiveMonster(PredefinedMap map, Player player) {
 		for (MonsterSpawnArea a : map.spawnAreas) {
 			for (Monster m : a.monsters) {
-				if (!m.isAgressive()) continue;
+				if (!m.isAgressive(player)) continue;
 				if (m.isAdjacentTo(player)) return m;
 			}
 		}

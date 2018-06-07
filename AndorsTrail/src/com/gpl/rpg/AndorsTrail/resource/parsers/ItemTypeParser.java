@@ -1,5 +1,8 @@
 package com.gpl.rpg.AndorsTrail.resource.parsers;
 
+import org.json.JSONException;
+import org.json.JSONObject;
+
 import com.gpl.rpg.AndorsTrail.model.ability.ActorConditionTypeCollection;
 import com.gpl.rpg.AndorsTrail.model.item.ItemCategoryCollection;
 import com.gpl.rpg.AndorsTrail.model.item.ItemTraits_OnEquip;
@@ -11,9 +14,6 @@ import com.gpl.rpg.AndorsTrail.resource.TranslationLoader;
 import com.gpl.rpg.AndorsTrail.resource.parsers.json.JsonCollectionParserFor;
 import com.gpl.rpg.AndorsTrail.resource.parsers.json.JsonFieldNames;
 import com.gpl.rpg.AndorsTrail.util.Pair;
-
-import org.json.JSONException;
-import org.json.JSONObject;
 
 public final class ItemTypeParser extends JsonCollectionParserFor<ItemType> {
 

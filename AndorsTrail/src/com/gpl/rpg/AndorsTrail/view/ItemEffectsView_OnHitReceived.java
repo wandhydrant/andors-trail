@@ -1,5 +1,9 @@
 package com.gpl.rpg.AndorsTrail.view;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collection;
+
 import android.content.Context;
 import android.content.res.Resources;
 import android.util.AttributeSet;
@@ -11,10 +15,6 @@ import com.gpl.rpg.AndorsTrail.R;
 import com.gpl.rpg.AndorsTrail.model.ability.ActorConditionEffect;
 import com.gpl.rpg.AndorsTrail.model.ability.traits.StatsModifierTraits;
 import com.gpl.rpg.AndorsTrail.model.item.ItemTraits_OnHitReceived;
-
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collection;
 
 public final class ItemEffectsView_OnHitReceived extends LinearLayout {
 	private final LinearLayout itemeffect_onhitreceived_onsource_list;

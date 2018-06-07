@@ -1,5 +1,8 @@
 package com.gpl.rpg.AndorsTrail.view;
 
+import java.util.Arrays;
+import java.util.Collection;
+
 import android.content.Context;
 import android.util.AttributeSet;
 import android.view.View;
@@ -10,9 +13,6 @@ import com.gpl.rpg.AndorsTrail.R;
 import com.gpl.rpg.AndorsTrail.model.item.ItemTraits_OnEquip;
 import com.gpl.rpg.AndorsTrail.model.item.ItemTraits_OnHitReceived;
 import com.gpl.rpg.AndorsTrail.model.item.ItemTraits_OnUse;
-
-import java.util.Arrays;
-import java.util.Collection;
 
 public final class ItemEffectsView extends LinearLayout {
 	private final TextView itemeffect_onequip_title;

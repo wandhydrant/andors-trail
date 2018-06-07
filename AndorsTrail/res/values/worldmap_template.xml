@@ -40,7 +40,6 @@ if (params) {
 	var y = parseInt(pos[1])-{{offsety}};
 	player.style.top = y + \"px\";
 	player.style.left = x + \"px\";
-	window.scrollTo(x-100, y-100);
 } else {
 	player.style.display = \"none\";
 }
