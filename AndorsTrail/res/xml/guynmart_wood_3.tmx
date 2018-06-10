@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" tiledversion="1.0.2" orientation="orthogonal" renderorder="right-down" width="30" height="30" tilewidth="32" tileheight="32" nextobjectid="12">
+<map version="1.0" tiledversion="1.0.2" orientation="orthogonal" renderorder="right-down" width="30" height="30" tilewidth="32" tileheight="32" nextobjectid="27">
  <properties>
   <property name="outdoors" value="1"/>
  </properties>
@@ -183,83 +183,126 @@
  <tileset firstgid="7449" name="map_window_2" tilewidth="32" tileheight="32" tilecount="128" columns="16">
   <image source="../drawable/map_window_2.png" width="512" height="256"/>
  </tileset>
+ <tileset firstgid="7577" name="map_guynmart" tilewidth="32" tileheight="32" tilecount="128" columns="16">
+  <image source="../drawable/map_guynmart.png" width="512" height="256"/>
+ </tileset>
  <layer name="Ground" width="30" height="30">
   <data encoding="base64" compression="zlib">
-   eJzt1MsNgDAIBmA9OoITOa9xiU7REZxBL42P/JTKqxcPxMTEfkKBPA/DfkZmnut0BfUeRSLibaCz30ZmPMq6B3UG+geNg/LlakWZEo/LV1tHSb61nrEwEzBQP3u4tf71MKnaevQQ8tDcWrq1GaHuV2NyM+Fxr63z2MO02g8WXoS5dXRLLKMsyvdSW+tKbG19v7rSueHuzCPX1n5p8a37t9X3mpmaH7GXkB+5C4vbYwdH1Tiyn373GQf1fbJl
+   eJztljsOwyAMhqNuvb/UM9CxY5oLRCK9AmdpKmHJ/VXMwwaWDt+SID6/CHGXZXGRJ8MB9Hw7OSKv+M6fhIhn72lNYKzg2WD9KrhoD4yNCMKaXFy+0lWDFJdTuFK96gX2BHtp7eI+3hPsJY/DKjfyPa7fpGam1Yu5oS+FZj5rXb9o9WqcH1p7rPW2ztmhdOOc5WKgObaoNZ+zVAx4Ri2cJTFIZ5SzR6xiKKnrDvSoSYl3pBv9I70z3bO9o+v8p55bp++ihPX9x/fNuXq4ca/S+/c+4T/HIm+NV5PzGxBojCs=
   </data>
  </layer>
  <layer name="Objects" width="30" height="30">
   <data encoding="base64" compression="zlib">
-   eJy1VkFuwkAMzBfCIVL+/4zeA8sp59Jeo5aWK2pvxWIHJsabXS/pSFGkxfHY44lD05Thvb/ev/vH3+TsFM+nrmk+4vV1uV4v12+Xzy/PW7lTcczDXD/xWuJEjlNvn1txU4Inx6UR2ut9aNM1CCw+D4+Vc2zv/ABqkPNpJT7Grs3HbB0+WcJU+DzmKb3unuDkGeX8y5y1vVqeWIJwis9q9U15cKSZpvqu0XfJ85vN3Euyj94MXm+vz3q+xktLPgixpyH2mvKUx0taV8SLnqIrwHMNtJ94B3o4U7oO7fwOSC1S56fK7Zkpx3I/L5ZXFP+xu/N7ZopYfl7v2f8EdDka2vE7s48aSN+HFXb7jCfmE823ar570v5M381DpZe4dtZcwH4O9N0TeN5V7XXJce4eddP8Gt73Rnsd87O4NT88Bw1K35ucJphZjr8kF4PrQ82BvIKzEv61etXA3FP8Nb0C+r8R70P+zeL37EPUp/etIGR2JPOXfh8tjcfCfYg4vZtLkNr9gqB6GxNa3+Id/NAY+vEOYlj644y1L+k952POwfXwue5R4v4ABB42vQ==
+   eJyFVstOFFEQnUxcGBNNbnfCBH/ABQs26hcgCxNho4AaJTFC1L3+gX6ARtjrih9g40YlYYIJbEjGByHsxmFoF7piQ7SKrkOfqakeK+nc7tv31jlVdW5191Lj1I5ozLPyvm1z2zYe2si2MTY8pzbTjOfVNlPpczPwp/Y7i7G+j5fjgfg+lPu+Pfdk7b7hPWxWa04507pZmXvQrOd2K3jHWOzLWxLOWVbxZ16LxE39FanytW+c8G4iK3MTYf4wv7v2PGnP20GuwMHz7aXRcfxMw8+IC8Z50vcHtufExvUa/rBzlGP/vlejCTXkCXaFeLFmC9Ow8nmeNxovcsIL4u8S5mxQf/DaH6Fpby8F81U+mE+OrRB+a5THRafb0zW2/gvt69fwAA7H0pH7v6nyA1sjvbHvtluXoCGaR439+VSNfKupHfYo7jOqWSE1+DU+yN8b8ztMg2cDGu+YRtVHx9Z/tXErlfzRp4DJeWIeudN6N+C1Z3MFaZ+tQ3MfUKtseJ3XOvOILOpbGvMG7UEv2G4O8oAGloXHzazKK8enWtEaThhX31MvOPx8rPpuzDj9aj3uyLUk1+2W3Ns11yrnmP8WcUD+NSbloRwuE672gJy+OdAxDBpUzButan7K7h+5OnBvO3G9DryQB+AqXt/pDHa91RiyKYsbusG58lpTQz34LCmu4kwG63FmI1y1aZlfkH13g72st9fSq97kVT1Vm5znSJt/xOdjradc1xy+xvxE3j/NBusL37B3gvk+L+NGT1Fc7llt0irm74nf+4bvsTXmZa6j481942yNizeyOdk3b+dHteJzPm3Pqmnkq53q+yK0pri+/53YOQTXZTtPuodxr2qsjodic3/eq8FXXM3pJ1n/+T99WA21XnKYiFXzDE0zvu+vyHM3DZ8B1sYR3S8F+tX8eF3iPO4EceAcsUX/mXXmsQq7V03qP9m6+eIcvrV+tSLj6oj/h52afEVzmmf46hKmYq3YpdqeP1++O0rDPidcPi/K86UsxmeN9An7OCsxR5nmRfnAZ041Uw7Hjkdd7PjmIz41/4+J2nLvKALdeCw/Rjw8lv+HPPsvovnVZj1GhAlDv6rDxMjfg4/uv3Z3LNYr//tsBTz+AX/MUOs=
   </data>
  </layer>
  <layer name="Above" width="30" height="30">
   <data encoding="base64" compression="zlib">
-   eJxjYKAM3JVEsN8A2W8lcaulxI47aOZS0x50s2kF7uKxh15ugNmFzy3UAsh2IPsPFp+0dAO2NDMcAa688WYA/E6PeMUHqFkm7BzEaYcWZewoQAW2HAwMdkRiew7SzB6MaYuW/kUGyOWDJyMDQzgURwBxKB4api6MkTr+He6A0jKY3DQ6WjaNAnxgMJZ9owABANiDLNQ=
+   eJy1lksKwkAMhos3qIWKCxceyJXgzqVn8hzqquueQAW1op5FiwRDTDJJHH8orZ3MfHlNx6Lwq60/z924KK7jtL1md6z593TsUL/XsDDBPuoXxAjjVqYkPPdA1vb47JXVf098Wr0krao4E3ht5txoLMxL1WQ6/J3Xkj7/t3Bst1cN7oHejuwJ4HLMqB8WrQd226gfu8D3LYcqZv2emWO/4JhmSg5xH+fu36XCTe3R0+R99VqM8vmkxQhMzNaU6jdcX80WM89Gtiaur7Dm5LsH7IuQ78a4p1JcTlLMnr0c5cLVld9sD3fzst8a53C9BbFKeaa5iMQr6d957rUf8ixvnq1KnVFaP3NzH6UvT5wt9Ij33IXzD6+p+SLFzp35lv+Y2vkLLHrn/KAsiYnfH2uZwTFBUF+JaWFzMdDfjeKHlwl3a53p+BPO+cJz
+  </data>
+ </layer>
+ <layer name="Above_1" width="30" height="30" visible="0">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFo2AUjIJRQCnYLDkw9gqLDYy9yODyALnh8ADZe2mA7L0DTGN3ByidjYKhDUbTDv0AtrC+JzhwcTCdiXZm3wT655Ykgh4FQxcAALEgEJ4=
+  </data>
+ </layer>
+ <layer name="Above_2" width="30" height="30" visible="0">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFo2AUjIJRQCnYLDkw9gqLDby9l+noBmR7Dw+QvZcGyN47wDR2l07pbDCkq1F7qQfQ085w9+9A2osc1jB77wnSN/8ig+lMtDP7JtA/tyQR9CgYugAAx64Sig==
   </data>
  </layer>
  <layer name="Walkable" width="30" height="30" visible="0">
   <data encoding="base64" compression="zlib">
-   eJzl00EOgCAMRFFO4f2vwA1dkRgjOO18gcQmLkyA15ZSj1Lqj78W6jplrXLG9Zzev+uN7JFJ9/atPtJU75XuLTlr5FmUGb0v1+0FdReqp7jZWnuO4pKmWnPGpILuK+nRtX4Vzrty54gwo/bTzEZtN1aYO7hZ081jxVvd2cy+l5mumptjZvOJuE7N972z+9viBAFbf0s=
+   eJy1VdsNhDAM6xTsvwIb8oVUqviVlkjo4JLYeVAzBrb7+v6+9/NV/edeKBdxpbE7tTmcam6dulTOil89s9gZv2OsLhXH8Fy+dCeVH+V03jGFxepCmLN/vV9zlKGYBOOkVfN04+ectPZ13hWmynd2g/zurlS/ig/hOH6H26kR8SU7c85Hcv5Oap5zrlE+itk1dc6Vb0dHla9bu8ph3Mlz1xjuKW119GW332RP1czVrv+ehaNlJ6zqW/F1dEN9o1ydTXWL4SsNVrgIn/WZ9MXm79bGZuByurU6+pXmpFyV7wFLDx4g
   </data>
  </layer>
- <objectgroup name="Mapevents" visible="0">
-  <object id="1" name="south" type="mapchange" x="288" y="928" width="672" height="32">
+ <layer name="Walkable_1" width="30" height="30" visible="0">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFo2AUjIJRMFTBRrGBdgFtAch/yBiXGK3tR2ePJDBS/T0KKAcjLe3gKptoXV6hm0uITyt70eVGUtwPdQAARnQXUw==
+  </data>
+ </layer>
+ <layer name="Walkable_2" width="30" height="30" visible="0">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFo2AUjIJRMFTBRrGBdgFtAch/yBiXGL3sH+7hjQ2MVH+PAsrBSE47A11O0cN+fOaO5LgfigAAo/cabw==
+  </data>
+ </layer>
+ <objectgroup name="Mapevents">
+  <object id="26" name="hole" type="mapchange" x="224" y="160" width="32" height="32">
    <properties>
-    <property name="map" value="fields2"/>
-    <property name="place" value="north"/>
+    <property name="map" value="guynmart_wood_3_hole"/>
+    <property name="place" value="up"/>
    </properties>
   </object>
-  <object id="2" name="east" type="mapchange" x="928" y="192" width="32" height="736">
+  <object id="12" name="east" type="mapchange" x="928" y="96" width="32" height="480">
    <properties>
-    <property name="map" value="fields6"/>
+    <property name="map" value="guynmart_wood_2"/>
     <property name="place" value="west"/>
    </properties>
   </object>
-  <object id="8" name="west" type="mapchange" x="0" y="416" width="32" height="384">
+  <object id="15" name="south1" type="mapchange" x="288" y="928" width="96" height="32">
    <properties>
-    <property name="map" value="guynmart_wood_11"/>
+    <property name="map" value="guynmart_wood_5"/>
+    <property name="place" value="north2"/>
+   </properties>
+  </object>
+  <object id="16" name="west" type="mapchange" x="0" y="192" width="32" height="608">
+   <properties>
+    <property name="map" value="guynmart_wood_4"/>
     <property name="place" value="east"/>
    </properties>
   </object>
+  <object id="17" name="guynmart_s_rope_d2" type="script" x="320" y="512" width="32" height="256"/>
+  <object id="20" name="guynmart_s_rope_d1" type="script" x="256" y="512" width="32" height="256"/>
+  <object id="22" name="guynmart_s_rope_u2" type="script" x="256" y="896" width="160" height="32"/>
+  <object id="21" name="guynmart_s_rope_u1" type="script" x="256" y="416" width="96" height="32"/>
  </objectgroup>
  <objectgroup name="Spawn" visible="0">
-  <object id="3" name="fieldcritter_1" type="spawn" x="256" y="704" width="352" height="192">
-   <properties>
-    <property name="spawngroup" value="fieldcritter_1"/>
-   </properties>
-  </object>
-  <object id="4" name="fieldcritter_0" type="spawn" x="512" y="800" width="352" height="96">
-   <properties>
-    <property name="spawngroup" value="fieldcritter_0"/>
-   </properties>
-  </object>
-  <object id="5" name="fieldcritter_1_1" type="spawn" x="640" y="224" width="256" height="192">
-   <properties>
-    <property name="spawngroup" value="fieldcritter_1"/>
-   </properties>
-  </object>
-  <object id="6" name="fieldcritter_0_1" type="spawn" x="704" y="288" width="192" height="288">
-   <properties>
-    <property name="spawngroup" value="fieldcritter_0"/>
-   </properties>
-  </object>
-  <object id="9" name="guynmart_robber1" type="spawn" x="320" y="512" width="32" height="32">
-   <properties>
-    <property name="spawngroup" value="guynmart_robber1"/>
-   </properties>
-  </object>
-  <object id="10" name="guynmart_robber2" type="spawn" x="192" y="512" width="128" height="32">
-   <properties>
-    <property name="spawngroup" value="guynmart_robber2"/>
-   </properties>
-  </object>
-  <object id="11" name="frog_3" type="spawn" x="288" y="64" width="256" height="256">
+  <object id="6" name="forestboar4" type="spawn" x="512" y="192" width="384" height="224">
    <properties>
     <property name="quantity" value="2"/>
-    <property name="spawngroup" value="frog_3"/>
+   </properties>
+  </object>
+  <object id="7" name="forestwolf2" type="spawn" x="608" y="32" width="288" height="128">
+   <properties>
+    <property name="quantity" value="2"/>
+   </properties>
+  </object>
+  <object id="8" name="forestwolf1" type="spawn" x="64" y="448" width="192" height="416">
+   <properties>
+    <property name="quantity" value="3"/>
+   </properties>
+  </object>
+  <object id="9" name="forestbeetle" type="spawn" x="608" y="672" width="288" height="224">
+   <properties>
+    <property name="quantity" value="3"/>
+   </properties>
+  </object>
+  <object id="37" name="guynmart_fish2b" type="spawn" x="672" y="480" width="128" height="192">
+   <properties>
+    <property name="quantity" value="1"/>
+    <property name="spawngroup" value="guynmart_fish2"/>
+   </properties>
+  </object>
+  <object id="25" name="guynmart_fish2" type="spawn" x="608" y="448" width="160" height="128">
+   <properties>
+    <property name="quantity" value="1"/>
+    <property name="spawngroup" value="guynmart_fish2"/>
    </properties>
   </object>
  </objectgroup>
  <objectgroup name="Keys" visible="0"/>
+ <objectgroup name="Replace" visible="0">
+  <object id="18" name="guynmart_r_rope:1" type="replace" x="160" y="448" width="288" height="416">
+   <properties>
+    <property name="Above" value="Above_1"/>
+    <property name="Walkable" value="Walkable_1"/>
+   </properties>
+  </object>
+  <object id="19" name="guynmart_r_rope:2" type="replace" x="160" y="448" width="288" height="416">
+   <properties>
+    <property name="Above" value="Above_2"/>
+    <property name="Walkable" value="Walkable_2"/>
+   </properties>
+  </object>
+ </objectgroup>
 </map>
