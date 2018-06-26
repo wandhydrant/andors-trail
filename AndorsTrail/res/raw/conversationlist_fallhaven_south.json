@@ -120,7 +120,7 @@
     },
     {
         "id":"fallhaven_lumberjack_3",
-        "message":"Oh no. Not again. I won't start cutting the trees before I have received a payment beforehand. Go away!",
+        "message":"Oh no. Not again. I won't start cutting the trees before I have received a payment. Go away!",
         "replies":[
             {
                 "text":"Is there anything that would change your mind?",
@@ -144,7 +144,7 @@
     },
     {
         "id":"fallhaven_lumberjack_5",
-        "message":"Let me tell you a story: Long ago, I was cutting in the woods in the north of Fallhaven. I used to cut the trees with great speed with my favorite axe. It was made of fine steel and probably worth more than my hut.",
+        "message":"Let me tell you a story. Long ago, I was cutting in the woods to the north of Fallhaven. I used to cut the trees with great speed with my favorite axe. It was made of fine steel and probably worth more than my hut.",
         "replies":[
             {
                 "text":"N",
@@ -154,7 +154,7 @@
     },
     {
         "id":"fallhaven_lumberjack_6",
-        "message":"But then, I got attacked by a pack of wolves and I had to flee immediately to save my bare life. But during the escape I lost my precious axe.",
+        "message":"But then, I got attacked by a pack of wolves and I had to immediately flee to save my life. But during the escape I lost my precious axe.",
         "replies":[
             {
                 "text":"N",
@@ -164,7 +164,7 @@
     },
     {
         "id":"fallhaven_lumberjack_7",
-        "message":"I'm afraid of travelling to that place again because I'm not a trained fighter and the wolves, especially their leader was really powerful.",
+        "message":"I'm afraid of travelling to that place again because I'm not a trained fighter and the wolves, especially their leader, were really powerful.",
         "replies":[
             {
                 "text":"So I guess you want me to retrieve your axe?",
@@ -174,14 +174,14 @@
     },
     {
         "id":"fallhaven_lumberjack_8",
-        "message":"Yes exactly. If you would do me that favor I would gladly cut away the trees and receive the payment afterwards. Just head north to the Crossroads Guardhouse and then  head eastwards down the Duleian Road. There I lost my axe. And look out for that wolf pack!",
+        "message":"Yes exactly. If you would do me that favor I would gladly cut away the trees and receive the payment afterwards. Just head north to the Crossroads Guardhouse and then head eastwards down the Duleian Road. That's where I lost my axe. And look out for that wolf pack!",
         "replies":[
             {
                 "text":"Sounds simple enough. On my way.",
                 "nextPhraseID":"X"
             },
             {
-                "text":"No way! This is far to dangerous!",
+                "text":"No way! That is far too dangerous!",
                 "nextPhraseID":"X"
             }
         ],
@@ -199,7 +199,7 @@
     },
     {
         "id":"fallhaven_lumberjack_10",
-        "message":"Let me see... Oh yes! This is my axe! I cannot thank you enough, boy!",
+        "message":"Let me see... Oh yes! This is my axe! I cannot thank you enough!",
         "replies":[
             {
                 "text":"So will you cut away those trees which block the old pathway?",
@@ -219,7 +219,7 @@
         "message":"Sure! Already on my way! This work will be finished soon.",
         "replies":[
             {
-                "text":"That sounds great! Remember to ask this stupid warden for a decent payment.",
+                "text":"That sounds great! Remember to ask the stupid warden for a decent payment.",
                 "nextPhraseID":"fallhaven_lumberjack_12"
             }
         ],
@@ -238,19 +238,23 @@
             {
                 "text":"Shadow be with you.",
                 "nextPhraseID":"X"
+            },
+            {
+                "text":"Bye.",
+                "nextPhraseID":"X"
             }
         ]
     },
     {
         "id":"fallhaven_lumberjack_13",
-        "message":"You're welcome. But you're not the only one who is happy: There are more persons who are resting for a night in Fallhaven which raises our economy. Some even bought items at my store! By the way, I was surprised I even got paid well by the warden.",
+        "message":"You're welcome. But you're not the only one who is happy. There are more travelers that are resting for a night in Fallhaven, which boosts our economy. Some even bought items at my store! By the way, I was surprised, but I even got paid well by the warden.",
         "replies":[
             {
-                "text":"Indeed. Now everything is a lot better than it was before!",
+                "text":"Great. Now everything is much better than it was before!",
                 "nextPhraseID":"X"
             },
             {
-                "text":"I wanted to ask for something else.",
+                "text":"I wanted to ask about something else.",
                 "nextPhraseID":"fallhaven_lumberjack_15"
             }
         ]
@@ -296,7 +300,7 @@
                 "nextPhraseID":"S"
             },
             {
-                "text":"Never mind. I don't need your services for now.",
+                "text":"Nevermind. I don't need your services for now.",
                 "nextPhraseID":"X"
             }
         ]
