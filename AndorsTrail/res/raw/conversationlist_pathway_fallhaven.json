@@ -127,7 +127,7 @@
     },
     {
         "id":"key_wolf_pack_jakrar",
-        "message":"You see the horrifying wolf leader and stumble back."
+        "message":"You see a horrifying wolf leader and stumble back."
     },
     {
         "id":"sign_wolf_pack_jakrar",
@@ -181,7 +181,8 @@
                     {
                         "requireType":"questLatestProgress",
                         "requireID":"pathway_fallhaven",
-                        "value":30
+                        "value":30,
+                        "negate":true
                     }
                 ]
             },
