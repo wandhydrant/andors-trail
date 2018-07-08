@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <worldmap>
+  <segment id="lakecave" x="349" y="407">
+    <map id="lakecave0" x="349" y="438"/>
+    <map id="lakecave1" x="349" y="407"/>
+    <map id="lakecave2" x="380" y="413"/>
+  </segment>
   <segment id="waterwayacave" x="195" y="188">
     <map id="waterwayacave1" x="207" y="188"/>
     <map id="waterwayacave2" x="207" y="218"/>
@@ -8,10 +13,10 @@
     <map id="waterwayacavex" x="246" y="269"/>
   </segment>
   <segment id="bwentry" x="14" y="387">
-    <map id="blackwater_mountain5a" x="14" y="387"/>
+    <map id="blackwater_mountain4a" x="54" y="417"/>
+    <map id="blackwater_mountain6" x="66" y="389"/>
     <map id="blackwater_mountain5" x="35" y="387"/>
-    <map id="blackwater_mountain5c" x="40" y="403"/>
-    <map id="blackwater_mountain9" x="51" y="400"/>
+    <map id="blackwater_mountain9" x="53" y="361"/>
   </segment>
   <segment id="bwentry2" x="46" y="368">
     <map id="blackwater_mountain7" x="47" y="368"/>
@@ -91,21 +96,21 @@
     <map id="waytobrimhavencave3" x="442" y="270"/>
     <map id="waytobrimhavencave4" x="318" y="270"/>
   </segment>
-  <segment id="world1" x="11" y="0">
+  <segment id="world1" x="1" y="-52">
     <map id="blackwater_mountain0" x="53" y="469"/>
-    <map id="blackwater_mountain1" x="11" y="441"/>
-    <map id="blackwater_mountain2" x="11" y="430"/>
-    <map id="blackwater_mountain3" x="14" y="419"/>
-    <map id="blackwater_mountain4" x="14" y="403"/>
-    <map id="blackwater_mountain10" x="57" y="382"/>
-    <map area="prim" id="blackwater_mountain11" x="57" y="351"/>
-    <map id="blackwater_mountain12" x="28" y="372"/>
-    <map id="blackwater_mountain14" x="78" y="382"/>
-    <map id="blackwater_mountain15" x="99" y="351"/>
-    <map id="blackwater_mountain16" x="115" y="351"/>
-    <map id="blackwater_mountain30" x="95" y="426"/>
-    <map id="blackwater_mountain32" x="64" y="428"/>
-    <map id="blackwater_mountain40" x="95" y="403"/>
+    <map id="blackwater_mountain1" x="32" y="448"/>
+    <map id="blackwater_mountain2" x="32" y="437"/>
+    <map id="blackwater_mountain3" x="32" y="426"/>
+    <map id="blackwater_mountain4" x="32" y="410"/>
+    <map id="blackwater_mountain10" x="33" y="368"/>
+    <map area="prim" id="blackwater_mountain11" x="33" y="337"/>
+    <map id="blackwater_mountain12" x="4" y="358"/>
+    <map id="blackwater_mountain14" x="54" y="368"/>
+    <map id="blackwater_mountain15" x="75" y="337"/>
+    <map id="blackwater_mountain16" x="91" y="337"/>
+    <map id="blackwater_mountain30" x="114" y="407"/>
+    <map id="blackwater_mountain32" x="83" y="409"/>
+    <map id="blackwater_mountain40" x="71" y="389"/>
     <map area="crossglen" id="crossglen" x="148" y="355"/>
     <map area="crossroads" id="crossroads" x="179" y="300"/>
     <map area="fallhaven" id="fallhaven_ne" x="241" y="382"/>
@@ -115,6 +120,7 @@
     <map id="fields0" x="179" y="284"/>
     <map id="fields1" x="179" y="253"/>
     <map id="fields10" x="96" y="284"/>
+    <map id="fields11" x="238" y="218"/>
     <map id="fields12" x="259" y="214"/>
     <map id="fields2" x="148" y="253"/>
     <map id="fields3" x="127" y="263"/>
@@ -170,6 +176,7 @@
     <map id="mountainlake7" x="800" y="53"/>
     <map id="mountainlake8" x="779" y="31"/>
     <map id="mountainlake9" x="763" y="0"/>
+    <map id="lakecave1" x="695" y="-52"/>
     <map area="remgard" id="remgard0" x="642" y="76"/>
     <map area="remgard" id="remgard1" x="673" y="83"/>
     <map area="remgard" id="remgard2" x="673" y="114"/>
@@ -246,7 +253,7 @@
     <map id="wild14_clearing" x="316" y="458"/>
     <map id="wild15" x="335" y="448"/>
     <map id="wild16" x="74" y="469"/>
-    <map id="wild17" x="32" y="455"/>
+    <map id="wild17" x="32" y="469"/>
     <map id="wild2" x="152" y="386"/>
     <map id="wild3" x="173" y="386"/>
     <map id="wild4" x="201" y="351"/>
@@ -257,11 +264,19 @@
     <map id="wild9" x="186" y="434"/>
     <map id="woodcave0" x="201" y="331"/>
     <map id="woodsettlement0" x="201" y="367"/>
-    <map area="stoutford" id="stoutford_gate" x="53" y="485"/>
-    <map area="stoutford" id="stoutford_ne" x="74" y="485"/>
-    <map area="stoutford" id="stoutford_se" x="63" y="506"/>
-    <map area="stoutford" id="stoutford_sw" x="38" y="506"/>
-    <map area="stoutford" id="stoutford_nw" x="32" y="476"/>
+    <map area="stoutford" id="stoutford_gate" x="32" y="521"/>
+    <map area="stoutford" id="stoutford_ne" x="53" y="521"/>
+    <map area="stoutford" id="stoutford_se" x="41" y="542"/>
+    <map area="stoutford" id="stoutford_sw" x="16" y="542"/>
+    <map area="stoutford" id="stoutford_nw" x="11" y="521"/>
+    <map id="wild18" x="74" y="500"/>
+    <map id="wild19" x="53" y="500"/>
+    <map id="wild20" x="32" y="500"/>
+    <map id="wild21" x="11" y="500"/>
+    <map id="wild22" x="74" y="531"/>
+    <map id="wild23" x="1" y="469"/>
+    <map id="waytogalmore1" x="95" y="531"/>
+    <map id="waytogalmore0" x="95" y="500"/>
     <map id="fields11a" x="238" y="218"/>
     <map id="fields11b" x="238" y="234"/>
     <map id="graveyard0" x="358" y="181"/>
@@ -290,20 +305,20 @@
     <map id="waytolake10" x="647" y="156"/>
     <map id="waytolake11" x="678" y="153"/>
     <map area="guynmart_area" id="guynmart" x="86" y="175"/>
-    <map id="guynmart_wood_1" x="86" y="206" />
-    <map id="guynmart_wood_2" x="86" y="144" />
-    <map id="guynmart_wood_3" x="55" y="144" />
-    <map id="guynmart_wood_4" x="39" y="144" />
-    <map id="guynmart_wood_5" x="39" y="175" />
-    <map id="guynmart_wood_6" x="70" y="175" />
-    <map id="guynmart_wood_7" x="117" y="144" />
-    <map id="guynmart_wood_8" x="55" y="191" />
-    <map id="guynmart_wood_9" x="117" y="160" />
-    <map id="guynmart_wood_10" x="117" y="191" />
-    <map id="guynmart_wood_11" x="117" y="222" />
-    <map id="guynmart_wood_12" x="86" y="237" />
-    <map id="guynmart_wood_13" x="70" y="222" />
-    <map id="guynmart_wood_14" x="54" y="222" />    
+    <map id="guynmart_wood_1" x="86" y="206"/>
+    <map id="guynmart_wood_2" x="86" y="144"/>
+    <map id="guynmart_wood_3" x="55" y="144"/>
+    <map id="guynmart_wood_4" x="39" y="144"/>
+    <map id="guynmart_wood_5" x="39" y="175"/>
+    <map id="guynmart_wood_6" x="70" y="175"/>
+    <map id="guynmart_wood_7" x="117" y="144"/>
+    <map id="guynmart_wood_8" x="55" y="191"/>
+    <map id="guynmart_wood_9" x="117" y="160"/>
+    <map id="guynmart_wood_10" x="117" y="191"/>
+    <map id="guynmart_wood_11" x="117" y="222"/>
+    <map id="guynmart_wood_12" x="86" y="237"/>
+    <map id="guynmart_wood_13" x="70" y="222"/>
+    <map id="guynmart_wood_14" x="54" y="222"/>
     <namedarea id="crossglen" name="Crossglen" type="settlement"/>
     <namedarea id="crossroads" name="Crossroads Guardhouse" type="other"/>
     <namedarea id="charwoodh" name="Charwood" type="settlement"/>

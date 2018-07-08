@@ -91,7 +91,144 @@
     },
     {
         "id":"caeda",
-        "message":"So much work to do. I sure hope we will have some rain soon."
+        "replies":[
+            {
+                "nextPhraseID":"caeda_1",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"roots_love",
+                        "value":10,
+                        "negate":true
+                    }
+                ]
+            },
+            {
+                "nextPhraseID":"caeda_2",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"roots_love",
+                        "value":10
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"roots_love",
+                        "value":20,
+                        "negate":true
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"secret_garden",
+                        "value":10,
+                        "negate":true
+                    }
+                ]
+            },
+            {
+                "nextPhraseID":"caeda_3",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"roots_love",
+                        "value":20
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"secret_garden",
+                        "value":10,
+                        "negate":true
+                    }
+                ]
+            },
+            {
+                "nextPhraseID":"caeda_60",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"secret_garden",
+                        "value":60
+                    }
+                ]
+            },
+            {
+                "nextPhraseID":"caeda_50",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"secret_garden",
+                        "value":50
+                    }
+                ]
+            },
+            {
+                "nextPhraseID":"caeda_40",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"secret_garden",
+                        "value":40
+                    }
+                ]
+            },
+            {
+                "nextPhraseID":"caeda_30",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"secret_garden",
+                        "value":30
+                    }
+                ]
+            },
+            {
+                "nextPhraseID":"caeda_20",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"secret_garden",
+                        "value":20
+                    }
+                ]
+            },
+            {
+                "nextPhraseID":"caeda_10",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"secret_garden",
+                        "value":10
+                    }
+                ]
+            },
+            {
+                "nextPhraseID":"caeda_root30_1",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"secret_garden",
+                        "value":40
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"secret_garden",
+                        "value":50,
+                        "negate":true
+                    }
+                ]
+            },
+            {
+                "text":"I killed most of the trolls in the cave.",
+                "nextPhraseID":"caeda_root60_1",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"secret_garden",
+                        "value":60
+                    }
+                ]
+            }
+        ]
     },
     {
         "id":"arnal",
@@ -279,11 +416,49 @@
     },
     {
         "id":"remgard_farmer1",
-        "message":"Oh, hello. I can't talk right now, must finish planting these crops."
+        "message":"Oh, hello. I can't talk right now, must finish planting these crops.",
+        "replies":[
+            {
+                "text":"Do you know where I can find some Damerilias ?",
+                "nextPhraseID":"remgard_farmer1_root10_0",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"roots_love",
+                        "value":10
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"roots_love",
+                        "value":20,
+                        "negate":true
+                    }
+                ]
+            }
+        ]
     },
     {
         "id":"remgard_farmer2",
-        "message":"I hope the lands will be good to us this season."
+        "message":"I hope the lands will be good to us this season.",
+        "replies":[
+            {
+                "text":"Do you know where I can find some Damerilias ?",
+                "nextPhraseID":"remgard_farmer2_roots10_0",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"roots_love",
+                        "value":10
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"roots_love",
+                        "value":20,
+                        "negate":true
+                    }
+                ]
+            }
+        ]
     },
     {
         "id":"chael",

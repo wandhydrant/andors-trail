@@ -495,11 +495,13 @@
         "iconID":"monsters_men:8",
         "maxHP":54,
         "monsterClass":"humanoid",
+        "movementAggressionType":"protectSpawn",
         "attackDamage":{
             "min":2,
             "max":4
         },
         "spawnGroup":"bandit1",
+        "faction":"fct_bandit1",
         "phraseID":"bandit1",
         "droplistID":"bandit1",
         "attackCost":5,

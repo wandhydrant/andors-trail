@@ -139,7 +139,7 @@
     },
     {
         "id":"harlenn_2",
-        "message":"You must be the newcomer that traveled up the mountain side that I heard about.",
+        "message":"You must be the newcomer that I heard about that traveled up the mountainside.",
         "replies":[
             {
                 "text":"N",
@@ -764,7 +764,7 @@
     },
     {
         "id":"harlenn_talkedto_guth_8",
-        "message":"We believe they are planning to attack us any day now. But we lack any proof that we would need to do anything about it.",
+        "message":"We believe they are planning to attack us any day now. But we lack the proof that we would need to do anything about it.",
         "replies":[
             {
                 "text":"N",
@@ -985,6 +985,11 @@
                 "rewardType":"questProgress",
                 "rewardID":"prim_hunt",
                 "value":90
+            },
+            {
+                "rewardType":"alignmentSet",
+                "rewardID":"fct_bwm",
+                "value":-10
             }
         ]
     },

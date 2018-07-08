@@ -31,7 +31,10 @@
         "id":"yolgen",
         "name":"Yolgen",
         "iconID":"monsters_men:4",
-        "phraseID":"yolgen_0"
+        "monsterClass":"humanoid",
+        "spawnGroup":"yolgen",
+        "phraseID":"yolgen_0",
+        "droplistID":"yolgen"
     },
     {
         "id":"stoutford_gateguard",
@@ -53,9 +56,12 @@
     },
     {
         "id":"stoutford_widow",
-        "name":"Widow",
+        "name":"Aryfora",
         "iconID":"monsters_karvis2:0",
-        "phraseID":"stoutford_widow_0"
+        "monsterClass":"humanoid",
+        "spawnGroup":"stoutford_widow",
+        "phraseID":"stoutford_widow_select_0",
+        "droplistID":"stoutford_widow"
     },
     {
         "id":"stoutford_commoner",
@@ -77,14 +83,19 @@
     },
     {
         "id":"stoutford_alchemist",
-        "name":"Alchemist",
+        "name":"Blornvale",
         "iconID":"monsters_rltiles1:70",
-        "phraseID":"stoutford_builder_0"
+        "unique":1,
+        "monsterClass":"humanoid",
+        "spawnGroup":"stoutford_alchemist",
+        "phraseID":"blornvale_select_0",
+        "droplistID":"stoutford_alchemist"
     },
     {
         "id":"goat_1",
         "name":"Goat",
-        "iconID":"monsters_ld2:0"
+        "iconID":"monsters_ld2:0",
+        "phraseID":"goat_0"
     },
     {
         "id":"venomfang_1",
@@ -95,13 +106,17 @@
         "id":"stoutford_cottager",
         "name":"Cottager",
         "iconID":"monsters_tometik2:55",
+        "unique":1,
         "phraseID":"stoutford_commoner_0"
     },
     {
         "id":"stoutford_cook",
-        "name":"Cook",
+        "name":"Cadoren",
         "iconID":"monsters_rltiles2:81",
-        "phraseID":"stoutford_builder_0"
+        "monsterClass":"humanoid",
+        "spawnGroup":"stoutford_cook",
+        "phraseID":"cadoren_0",
+        "droplistID":"shop_cadoren"
     },
     {
         "id":"stoutford_innkeeper",
@@ -113,8 +128,10 @@
         "id":"stoutford_thief",
         "name":"Quiet Thief",
         "iconID":"monsters_rogue1:0",
+        "monsterClass":"humanoid",
+        "spawnGroup":"stoutford_thief",
         "phraseID":"stoutford_thief_0",
-        "droplistID":"stoutford_thief_shoplist"
+        "droplistID":"stoutfordthief"
     },
     {
         "id":"stoutford_drinker_1",
@@ -132,9 +149,12 @@
     },
     {
         "id":"stoutford_smith",
-        "name":"Blacksmith",
+        "name":"Cornith",
         "iconID":"monsters_ld1:29",
-        "phraseID":"stoutford_builder_0"
+        "monsterClass":"humanoid",
+        "spawnGroup":"stoutford_smith",
+        "phraseID":"cornith_0",
+        "droplistID":"shop_cornith"
     },
     {
         "id":"stoutford_worshiper",
@@ -178,5 +198,20 @@
                 }
             ]
         }
+    },
+    {
+        "id":"tahalendor2",
+        "name":"Tahalendor",
+        "iconID":"monsters_ld1:3",
+        "phraseID":"tahalendor2_0"
+    },
+    {
+        "id":"stoutford_widow2",
+        "name":"Aryfora",
+        "iconID":"monsters_karvis2:0",
+        "monsterClass":"humanoid",
+        "spawnGroup":"stoutford_widow2",
+        "phraseID":"stoutford_widow2_0",
+        "droplistID":"stoutford_widow2"
     }
 ]

@@ -31,7 +31,21 @@
     },
     {
         "id":"stoutford_widow_0",
-        "message":"Hello."
+        "message":"Please. Leave me alone. I'm mourning.",
+        "replies":[
+            {
+                "text":"Sorry for your loss.",
+                "nextPhraseID":"X"
+            },
+            {
+                "text":"Whatever.",
+                "nextPhraseID":"X"
+            },
+            {
+                "text":"Is there anything I can do to ease your pain?",
+                "nextPhraseID":"stoutford_widow_1"
+            }
+        ]
     },
     {
         "id":"stoutford_commoner_0",
@@ -100,7 +114,7 @@
     },
     {
         "id":"soutford_gateguard_what_0",
-        "message":"This is Stoutford. Our small village was the resting place of choice for many merchants on their way between Fallhaven and the Blackwater moutain.",
+        "message":"This is Stoutford. Our small town was the resting place of choice for many merchants on their way between Fallhaven and the Blackwater moutain.",
         "replies":[
             {
                 "text":"Was?",
@@ -110,7 +124,7 @@
     },
     {
         "id":"soutford_gateguard_what_1",
-        "message":"Yes. It seems the road is closed for some reason. Maybe this is related to the monsters attacks we have been suffering from recently.",
+        "message":"Yes. It seems the road is closed for some reason. Maybe this is related to the monster attacks we have been suffering from recently.",
         "replies":[
             {
                 "text":"Is there anything I can do to help?",
@@ -148,7 +162,7 @@
     },
     {
         "id":"soutford_gateguard_who_1",
-        "message":"In the past, troublemakers that bother the citizens or merchants. Nowadays, it's mainly the monsters, when I can handle them.",
+        "message":"In the past, troublemakers that bothered the citizens or merchants. Nowadays, it's mainly the monsters, when I can handle them.",
         "replies":[
             {
                 "text":"What monsters?",
@@ -190,7 +204,7 @@
     },
     {
         "id":"stoutford_gateguard_andor_1",
-        "message":"I can't really tell. No known trouble at least. He headed straight to the tavern, and I didn't see him before he left.",
+        "message":"I can't really tell. No known trouble at least. He headed straight to the tavern, and I didn't see him again before he left.",
         "replies":[
             {
                 "text":"Do you know where he was going?",
@@ -299,6 +313,29 @@
             {
                 "text":"Actually, it's the first time we have met.",
                 "nextPhraseID":"tahalendor_initial_2"
+            },
+            {
+                "text":"I need you as a witness for ...",
+                "nextPhraseID":"tahalendor_initial_1",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"thorns_vengeance",
+                        "value":50
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"thorns_vengeance",
+                        "value":65,
+                        "negate":true
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"thorns_vengeance",
+                        "value":74,
+                        "negate":true
+                    }
+                ]
             }
         ]
     },
@@ -307,7 +344,7 @@
         "message":"Go away! You're not welcome here!",
         "replies":[
             {
-                "text":"Okay...",
+                "text":"OK...",
                 "nextPhraseID":"X"
             }
         ],
@@ -324,7 +361,7 @@
         "message":"Nonsense! Go away!",
         "replies":[
             {
-                "text":"Okay...",
+                "text":"OK...",
                 "nextPhraseID":"X"
             }
         ],
@@ -400,6 +437,71 @@
             {
                 "text":"Whatever.",
                 "nextPhraseID":"X"
+            },
+            {
+                "text":"Tahalendor told me that you may have items to trade.",
+                "nextPhraseID":"S",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"nondisplay",
+                        "value":23
+                    }
+                ]
+            },
+            {
+                "text":"What can you tell me about the area around here?",
+                "nextPhraseID":"yolgen_surroundings_0"
+            },
+            {
+                "text":"I have dealt with Erwyn's army.",
+                "nextPhraseID":"yolgen_castle_1",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"stoutford_castle",
+                        "value":10
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"stoutford_castle",
+                        "value":50,
+                        "negate":true
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"stoutford_castle",
+                        "value":60,
+                        "negate":true
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"stoutford_castle",
+                        "value":70,
+                        "negate":true
+                    }
+                ]
+            },
+            {
+                "text":"I cleared Flagstone of an evil demon.",
+                "nextPhraseID":"yolgen_flagstone_10",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"flagstone",
+                        "value":70
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"flagstone",
+                        "value":100,
+                        "negate":true
+                    }
+                ]
+            },
+            {
+                "text":"Is there anything I could do to help?",
+                "nextPhraseID":"yolgen_task_0"
             }
         ]
     },
@@ -506,7 +608,7 @@
     },
     {
         "id":"yolgen_rumblings20_0",
-        "message":"Hello again. Have you found anything about the noises?",
+        "message":"Hello again. Have you found anything about what is causing the noises in the church?",
         "replies":[
             {
                 "text":"No. Not yet.",
@@ -850,7 +952,7 @@
     },
     {
         "id":"glasforn_rumblings30_0",
-        "message":"So kid, have you tried your bed? Our beds are the best!",
+        "message":"So kid, have you tried that bed? Our beds are the best!",
         "replies":[
             {
                 "text":"About Andor...",
@@ -868,7 +970,7 @@
     },
     {
         "id":"glasforn_rumblings30_1",
-        "message":"You really should try your bed. You'll thank me afterwards."
+        "message":"You really should try that bed. You'll thank me afterwards."
     },
     {
         "id":"stoutford_lich_killed_0",
@@ -942,7 +1044,7 @@
     },
     {
         "id":"glasforn_rumblings60_0",
-        "message":"Wait. Ok. I stand no chance against you. I'll tell you all I know.",
+        "message":"Wait. OK. I stand no chance against you. I'll tell you all I know.",
         "replies":[
             {
                 "text":"It'd better be worth it.",
@@ -1064,7 +1166,7 @@
     },
     {
         "id":"yolgen_rumblings50_0",
-        "message":"Hello again. Have you found anything about the noises? It seems they have stopped.",
+        "message":"Hello again. Have you found anything about what is causing the noises in the church? It seems they have stopped.",
         "replies":[
             {
                 "text":"No. Not yet.",
@@ -1108,6 +1210,29 @@
             {
                 "text":"That was the right thing to do.",
                 "nextPhraseID":"tahalendor_rumblings80_1"
+            },
+            {
+                "text":"Would you come with me to talk to Blornvale? He wants to confess something important.",
+                "nextPhraseID":"tahalendor_thorns50",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"thorns_vengeance",
+                        "value":50
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"thorns_vengeance",
+                        "value":65,
+                        "negate":true
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"thorns_vengeance",
+                        "value":74,
+                        "negate":true
+                    }
+                ]
             }
         ]
     },
@@ -1257,6 +1382,33 @@
             {
                 "text":"Whatever.",
                 "nextPhraseID":"X"
+            },
+            {
+                "text":"Would you come with me to talk to Blomvale? He wants to confess something important.",
+                "nextPhraseID":"tahalendor_thorns50",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"thorns_vengeance",
+                        "value":50
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"thorns_vengeance",
+                        "value":65,
+                        "negate":true
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"thorns_vengeance",
+                        "value":74,
+                        "negate":true
+                    }
+                ]
+            },
+            {
+                "text":"Do you have anything to trade?",
+                "nextPhraseID":"tahalendor_rumblings10x_1"
             }
         ]
     },
@@ -1294,7 +1446,7 @@
     },
     {
         "id":"glasforn_rumblings103_0",
-        "message":"Boohoohoo.... the whole town hates me now. Even my dear customers left.",
+        "message":"Boohoohoo.... the whole town hates me now. Even my dear customers left. Just the old hag who only drinks water stayed, and Lord Bourbon who never pays.",
         "replies":[
             {
                 "text":"You deserved it.",
@@ -1386,7 +1538,7 @@
     },
     {
         "id":"kayla_halvor_6",
-        "message":"Here. Take these. I've given one pair to Halvor, and I'll keep the last one for me.",
+        "message":"Here. Take these. I've given one pair to Halvor, and I'll keep the last one for myself.",
         "replies":[
             {
                 "text":"Thank you.",
@@ -1423,5 +1575,78 @@
                 "nextPhraseID":"X"
             }
         ]
+    },
+    {
+        "id":"stoutford_guard1_0b",
+        "message":"Hey. Be careful what you do."
+    },
+    {
+        "id":"stoutford_guard1_0c",
+        "message":"Kids should not walk around alone in these times."
+    },
+    {
+        "id":"glasforn_rumblings60_5_1",
+        "message":"It was terrible! I could feel the necklace draining the life out of me, and the only thing that made me feel better was giving it another victim.",
+        "replies":[
+            {
+                "text":"Why didn't you just take it off?",
+                "nextPhraseID":"glasforn_rumblings60_5_2"
+            }
+        ]
+    },
+    {
+        "id":"glasforn_rumblings60_5_2",
+        "message":"I couldn't. When I tried, and failed, he laughed. He told me it was bound to that thing in the basement, which needed me to be its servant. ",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"glasforn_rumblings60_5_3"
+            }
+        ]
+    },
+    {
+        "id":"glasforn_rumblings60_5_3",
+        "message":"Then he laughed some more, and told me that all I had to do was kill that thing, and I would able to remove the necklace. I'm no fighter though. I was too scared to even go near it.",
+        "replies":[
+            {
+                "text":"I guess you are lucky I visited, although just asking me to kill it would have been easier. And nicer.",
+                "nextPhraseID":"glasforn_rumblings60_5_4"
+            }
+        ]
+    },
+    {
+        "id":"glasforn_rumblings60_5_4",
+        "message":"I didn't dare. The evening after Andor left his companion returned briefly. He warned me you might come here, and that if you found out what I had done you would kill me. He told me that my only hope was to make you the next victim.",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"glasforn_rumblings60_6"
+            }
+        ]
+    },
+    {
+        "id":"tahalendor_thorns50",
+        "message":"If I must. Well, go ahead, I'll be there when you get there.",
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"thorns_vengeance",
+                "value":65
+            }
+        ]
+    },
+    {
+        "id":"tahalendor2_script_X",
+        "rewards":[
+            {
+                "rewardType":"removeSpawnArea",
+                "rewardID":"tahalendor2",
+                "mapName":"stoutford_potion"
+            }
+        ]
+    },
+    {
+        "id":"tahalendor2_0",
+        "message":"What now?"
     }
 ]

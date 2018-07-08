@@ -316,8 +316,13 @@
         "showInLog":1,
         "stages":[
             {
+                "progress":5,
+                "logText":"Yolgen asked me to have a look at what is wrong with Flagstone prison.",
+                "finishesQuest":0
+            },
+            {
                 "progress":10,
-                "logText":"I met a guard on sentry outside a fortress called Flagstone. The guard told me that Flagstone used to be a prison camp for runaway workers from Mount Galmore. Recently, there has been an increase in undead monsters pouring out from Flagstone. I should investigate the source of the undead monsters. The guard tells me to return to him if I need help.",
+                "logText":"I met a guard from Stoutford on sentry duty outside a fortress called Flagstone. He told me that Flagstone used to serve as a prison for house Gorland of Stoutford, but it is now abandoned. Recently, undead have started  pouring out of  Flagstone. I should investigate the source of the undead monsters. The guard tells me to return to him if I need help.",
                 "finishesQuest":0
             },
             {
@@ -327,29 +332,37 @@
             },
             {
                 "progress":30,
-                "logText":"The guard tells me that the former warden used to have a necklace that he always wore. The necklace probably has the words required to approach the demon. I should return to the guard to decipher any message on the necklace once I have found it.",
+                "logText":"The guard suggested that the former warden may have something to do with this, and I should go and look for him. If I find him I should return to the guard with any important news.",
                 "finishesQuest":0
             },
             {
                 "progress":31,
-                "logText":"I found the former warden of Flagstone on the upper level. I should return to the guard now.",
+                "logText":"I found the former warden of Flagstone on the upper level. Among his remains I found a necklace with some enscriptions. I should return to the guard now.",
                 "finishesQuest":0
             },
             {
                 "progress":40,
-                "logText":"I have learned the words required to approach the demon beneath Flagstone. 'Daylight Shadow'.",
+                "logText":"I have learned the words required to approach the demon beneath Flagstone. 'Daylight Shadow'. It seems like the warden has something to do with the monster invasion.",
                 "rewardExperience":1600,
                 "finishesQuest":0
             },
             {
                 "progress":50,
-                "logText":"Deep beneath Flagstone, I found the source of the undead infestation. A creature born from the grief of the former prisoners of Flagstone.",
+                "logText":"Deep beneath Flagstone, I found a powerful winged demon. It seems like the warden kept on running the prison and experimented with necromancy.",
                 "finishesQuest":0
             },
             {
                 "progress":60,
-                "logText":"I found one prisoner, Narael, alive deep beneath Flagstone. Narael was once a citizen of Nor City. He is too weak to walk by himself, but if I can find his wife in Nor City, I would be handsomely rewarded.",
-                "rewardExperience":2100,
+                "logText":"I found one prisoner, Narael, alive deep beneath Flagstone. Narael was once a citizen of Nor City. He is too weak to walk by himself, but if I can find his wife in Nor City, I would be handsomely rewarded."
+            },
+            {
+                "progress":70,
+                "logText":"I approached the sentry again and he was happy to hear the source of the undead is gone. I should talk to Yolgen, the priest of Stoutford, for a reward."
+            },
+            {
+                "progress":100,
+                "logText":"Yolgen rewarded me handsomely for my efforts and is happy that there is one thing less the citizens of Stoutford have to worry about.",
+                "rewardExperience":3000,
                 "finishesQuest":1
             }
         ]

@@ -7,6 +7,13 @@
                 "text":"N",
                 "nextPhraseID":"highwayman1_2"
             }
+        ],
+        "rewards":[
+            {
+                "rewardType":"alignmentSet",
+                "rewardID":"fct_highwayman1",
+                "value":-10
+            }
         ]
     },
     {
@@ -56,7 +63,20 @@
     },
     {
         "id":"highwayman1_5",
-        "message":"Thank you. Have a pleasant day. Watch out for those robbers!"
+        "message":"Thank you. Have a pleasant day. Watch out for those robbers!",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"R"
+            }
+        ],
+        "rewards":[
+            {
+                "rewardType":"alignmentSet",
+                "rewardID":"fct_highwayman1",
+                "value":11
+            }
+        ]
     },
     {
         "id":"highwayman1_6",
@@ -86,6 +106,16 @@
             {
                 "text":"How about I just kill you instead?",
                 "nextPhraseID":"highwayman1_6"
+            }
+        ]
+    },
+    {
+        "id":"fct_highwayman1",
+        "rewards":[
+            {
+                "rewardType":"alignmentSet",
+                "rewardID":"fct_highwayman1",
+                "value":0
             }
         ]
     }

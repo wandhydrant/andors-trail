@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?><resources>
     <array name="loadresource_itemcategories">
         <item>@raw/itemcategories_1</item>
+        <!--Added by ATCS v0.6.11 for project stoutford_combined-->
+        <item>@raw/itemcategories_stoutford_combined</item>
     </array>
 
-  	<array name="loadresource_actorconditions">
+    <array name="loadresource_actorconditions">
         <item>@raw/actorconditions_v069</item>
         <item>@raw/actorconditions_v069_bwm</item>
         <item>@raw/actorconditions_v0610</item>
@@ -11,12 +13,14 @@
         <item>@raw/actorconditions_v0611_2</item>
         <item>@raw/actorconditions_v0612_2</item>
         <item>@raw/actorconditions_v070</item>
-		<item>@raw/actorconditions_stoutford</item>
+        <item>@raw/actorconditions_stoutford</item>
         <!--Added by ATCS v0.6.11 for project graveyard1-->
         <item>@raw/actorconditions_graveyard1</item>
         <item>@raw/actorconditions_guynmart</item>
         <!--Added by ATCS v0.6.11 for project trader_teksin-->
         <item>@raw/actorconditions_trader_teksin</item>
+        <!--Added by ATCS v0.6.11 for project stoutford_combined-->
+        <item>@raw/actorconditions_stoutford_combined</item>
     </array>
 
     <array name="loadresource_items">
@@ -43,12 +47,14 @@
         <item>@raw/itemlist_v070_questitems</item>
         <item>@raw/itemlist_shortcut_lodar</item>
         <item>@raw/itemlist_pathway_fallhaven</item>
-		<item>@raw/itemlist_stoutford</item>
+        <item>@raw/itemlist_stoutford</item>
         <!--Added by ATCS v0.6.11 for project graveyard1-->
         <item>@raw/itemlist_graveyard1</item>
         <item>@raw/itemlist_guynmart</item>
         <!--Added by ATCS v0.6.11 for project trader_teksin-->
         <item>@raw/itemlist_trader_teksin</item>
+        <!--Added by ATCS v0.6.11 for project stoutford_combined-->
+        <item>@raw/itemlist_stoutford_combined</item>
     </array>
 
     <array name="loadresource_droplists">
@@ -70,12 +76,14 @@
         <item>@raw/droplists_v070_mobs</item>
         <item>@raw/droplists_shortcut_lodar</item>
         <item>@raw/droplists_pathway_fallhaven</item>
-		<item>@raw/droplists_stoutford</item>
+        <item>@raw/droplists_stoutford</item>
         <!--Added by ATCS v0.6.11 for project graveyard1-->
         <item>@raw/droplists_graveyard1</item>
         <item>@raw/droplists_guynmart</item>
         <!--Added by ATCS v0.6.11 for project trader_teksin-->
         <item>@raw/droplists_trader_teksin</item>
+        <!--Added by ATCS v0.6.11 for project stoutford_combined-->
+        <item>@raw/droplists_stoutford_combined</item>
     </array>
 
     <array name="loadresource_quests">
@@ -98,6 +106,8 @@
         <!--Added by ATCS v0.6.11 for project graveyard1-->
         <item>@raw/questlist_graveyard1</item>
         <item>@raw/questlist_guynmart</item>
+        <!--Added by ATCS v0.6.11 for project stoutford_combined-->
+        <item>@raw/questlist_stoutford_combined</item>
     </array>
 
     <array name="loadresource_conversationlists">
@@ -257,7 +267,7 @@
         <item>@raw/conversationlist_pathway_fallhaven</item>
         <item>@raw/conversationlist_halvor_surprise</item>
         <item>@raw/conversationlist_toszylae_fix</item>
-		<item>@raw/conversationlist_stoutford</item>
+        <item>@raw/conversationlist_stoutford</item>
         <!--Added by ATCS v0.6.11 for project graveyard1-->
         <item>@raw/conversationlist_graveyard1</item>
         <item>@raw/conversationlist_guynmart</item>
@@ -266,6 +276,8 @@
         <item>@raw/conversationlist_guynmart2_npc</item>
         <!--Added by ATCS v0.6.11 for project trader_teksin-->
         <item>@raw/conversationlist_trader_teksin</item>
+        <!--Added by ATCS v0.6.11 for project stoutford_combined-->
+        <item>@raw/conversationlist_stoutford_combined</item>
     </array>
 
     <array name="loadresource_monsters">
@@ -295,12 +307,14 @@
         <item>@raw/monsterlist_v070_npcs</item>
         <item>@raw/monsterlist_pathway_fallhaven</item>
         <item>@raw/monsterlist_halvor_surprise</item>
-		<item>@raw/monsterlist_stoutford</item>
+        <item>@raw/monsterlist_stoutford</item>
         <!--Added by ATCS v0.6.11 for project graveyard1-->
         <item>@raw/monsterlist_graveyard1</item>
         <item>@raw/monsterlist_guynmart</item>
         <!--Added by ATCS v0.6.11 for project trader_teksin-->
         <item>@raw/monsterlist_trader_teksin</item>
+        <!--Added by ATCS v0.6.11 for project stoutford_combined-->
+        <item>@raw/monsterlist_stoutford_combined</item>
     </array>
 
     <array name="loadresource_maps">
@@ -781,6 +795,38 @@
         <item>@xml/guynmart_wood_12</item>
         <item>@xml/guynmart_wood_13</item>
         <item>@xml/guynmart_wood_14</item>
+        <!--Added by ATCS v0.6.11 for project stoutford_combined-->
+        <item>@xml/blackwater_mountain4a</item>
+        <item>@xml/elm_mine0</item>
+        <item>@xml/elm_mine1</item>
+        <item>@xml/lakecave0</item>
+        <item>@xml/lakecave1</item>
+        <item>@xml/lakecave2</item>
+        <item>@xml/stoutford_castle0</item>
+        <item>@xml/stoutford_castle1</item>
+        <item>@xml/stoutford_castle2</item>
+        <item>@xml/stoutford_castle_barrack0</item>
+        <item>@xml/stoutford_castle_barrack1</item>
+        <item>@xml/stoutford_castle_barrack2</item>
+        <item>@xml/stoutford_castle_shop</item>
+        <item>@xml/stoutford_castle_stable</item>
+        <item>@xml/stoutford_castle_tower0</item>
+        <item>@xml/stoutford_castle_tower1</item>
+        <item>@xml/stoutford_tower0</item>
+        <item>@xml/stoutford_tower1</item>
+        <item>@xml/stoutford_tower2</item>
+        <item>@xml/stoutford_tower3</item>
+        <item>@xml/stoutford_tower4</item>
+        <item>@xml/waytogalmore0</item>
+        <item>@xml/waytogalmore1</item>
+        <item>@xml/wild18</item>
+        <item>@xml/wild19</item>
+        <item>@xml/wild20</item>
+        <item>@xml/wild20a</item>
+        <item>@xml/wild21</item>
+        <item>@xml/wild21a</item>
+        <item>@xml/wild22</item>
+        <item>@xml/wild23</item>
     </array>
 
     </resources>

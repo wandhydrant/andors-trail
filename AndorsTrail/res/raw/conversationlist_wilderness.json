@@ -34,6 +34,13 @@
                 "text":"N",
                 "nextPhraseID":"bandit1_2"
             }
+        ],
+        "rewards":[
+            {
+                "rewardType":"alignmentSet",
+                "rewardID":"fct_bandit1",
+                "value":-10
+            }
         ]
     },
     {
@@ -41,7 +48,7 @@
         "message":"How much is your life worth to you? Give me 100 gold and I'll let you go.",
         "replies":[
             {
-                "text":"Ok ok. Here is the gold. Please don't hurt me!",
+                "text":"OK OK. Here is the gold. Please don't hurt me!",
                 "nextPhraseID":"bandit1_3",
                 "requires":[
                     {
@@ -63,15 +70,38 @@
     },
     {
         "id":"bandit1_3",
-        "message":"About damn time. You are free to go."
+        "message":"About damn time. You are free to go.",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"R"
+            }
+        ],
+        "rewards":[
+            {
+                "rewardType":"alignmentSet",
+                "rewardID":"fct_bandit1",
+                "value":11
+            }
+        ]
     },
     {
         "id":"bandit1_4",
-        "message":"Ok then, your life it is. Let's fight. I have been looking forward to a good fight!",
+        "message":"OK then, your life it is. Let's fight. I have been looking forward to a good fight!",
         "replies":[
             {
                 "text":"Let's fight!",
                 "nextPhraseID":"F"
+            }
+        ]
+    },
+    {
+        "id":"fct_bandit1",
+        "rewards":[
+            {
+                "rewardType":"alignmentSet",
+                "rewardID":"fct_bandit1",
+                "value":0
             }
         ]
     }

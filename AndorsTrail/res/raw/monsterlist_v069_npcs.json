@@ -229,6 +229,7 @@
             "max":9
         },
         "spawnGroup":"guthbered",
+        "faction":"fct_prim",
         "phraseID":"guthbered_start",
         "droplistID":"guthbered",
         "attackCost":5,
@@ -240,49 +241,121 @@
         "id":"guthbereds_bodyguard",
         "name":"Guthbered's bodyguard",
         "iconID":"monsters_rltiles1:76",
+        "maxHP":60,
+        "maxAP":10,
+        "moveCost":5,
         "monsterClass":"humanoid",
+        "attackDamage":{
+            "min":3,
+            "max":6
+        },
         "spawnGroup":"guthbered_guard",
-        "phraseID":"guthbered_guard"
+        "faction":"fct_prim",
+        "phraseID":"guthbered_guard",
+        "attackCost":5,
+        "attackChance":60,
+        "blockChance":70,
+        "damageResistance":3
     },
     {
         "id":"prim_weapon_guard",
         "name":"Prim weapon guard",
         "iconID":"monsters_rltiles1:65",
+        "maxHP":60,
+        "maxAP":10,
+        "moveCost":5,
         "monsterClass":"humanoid",
+        "attackDamage":{
+            "min":3,
+            "max":6
+        },
         "spawnGroup":"prim_guard1",
-        "phraseID":"prim_guard1"
+        "faction":"fct_prim",
+        "phraseID":"prim_guard1",
+        "attackCost":5,
+        "attackChance":60,
+        "blockChance":70,
+        "damageResistance":3
     },
     {
         "id":"prim_sentry",
         "name":"Prim sentry",
         "iconID":"monsters_rltiles3:14",
+        "maxHP":60,
+        "maxAP":10,
+        "moveCost":5,
         "monsterClass":"humanoid",
+        "attackDamage":{
+            "min":3,
+            "max":6
+        },
         "spawnGroup":"prim_guard2",
-        "phraseID":"prim_guard2"
+        "faction":"fct_prim",
+        "phraseID":"prim_guard2",
+        "attackCost":5,
+        "attackChance":60,
+        "blockChance":70,
+        "damageResistance":3
     },
     {
         "id":"prim_guard",
         "name":"Prim guard",
         "iconID":"monsters_rltiles1:65",
+        "maxHP":60,
+        "maxAP":10,
+        "moveCost":5,
         "monsterClass":"humanoid",
+        "attackDamage":{
+            "min":3,
+            "max":6
+        },
         "spawnGroup":"prim_guard4",
-        "phraseID":"prim_guard4"
+        "faction":"fct_prim",
+        "phraseID":"prim_guard4",
+        "attackCost":5,
+        "attackChance":60,
+        "blockChance":70,
+        "damageResistance":3
     },
     {
         "id":"tired_prim_guard",
         "name":"Tired Prim guard",
         "iconID":"monsters_rltiles1:76",
+        "maxHP":60,
+        "maxAP":10,
+        "moveCost":5,
         "monsterClass":"humanoid",
+        "attackDamage":{
+            "min":3,
+            "max":6
+        },
         "spawnGroup":"prim_guard3",
-        "phraseID":"prim_guard3"
+        "faction":"fct_prim",
+        "phraseID":"prim_guard3",
+        "attackCost":5,
+        "attackChance":60,
+        "blockChance":70,
+        "damageResistance":3
     },
     {
         "id":"prim_treasury_guard",
         "name":"Prim treasury guard",
         "iconID":"monsters_rltiles1:69",
+        "maxHP":60,
+        "maxAP":10,
+        "moveCost":5,
         "monsterClass":"humanoid",
+        "attackDamage":{
+            "min":3,
+            "max":6
+        },
         "spawnGroup":"prim_treasury_guard",
-        "phraseID":"prim_treasury_guard"
+        "faction":"fct_prim",
+        "phraseID":"prim_treasury_guard",
+        "attackCost":5,
+        "attackChance":60,
+        "blockChance":70,
+        "damageResistance":3
     },
     {
         "id":"samar",
@@ -329,11 +402,21 @@
         "id":"blackwater_entrance_guard",
         "name":"Blackwater entrance guard",
         "iconID":"monsters_rltiles3:14",
-        "maxHP":30,
+        "maxHP":60,
         "maxAP":10,
+        "moveCost":5,
         "monsterClass":"humanoid",
+        "attackDamage":{
+            "min":3,
+            "max":6
+        },
         "spawnGroup":"blackwater_entranceguard",
-        "phraseID":"blackwater_entranceguard"
+        "faction":"fct_bwm",
+        "phraseID":"blackwater_entranceguard",
+        "attackCost":5,
+        "attackChance":60,
+        "blockChance":70,
+        "damageResistance":3
     },
     {
         "id":"blackwater_dinner_guest",
@@ -459,34 +542,82 @@
         "id":"blackwater_guard",
         "name":"Blackwater guard",
         "iconID":"monsters_rltiles1:76",
+        "maxHP":60,
+        "maxAP":10,
+        "moveCost":5,
         "monsterClass":"humanoid",
+        "attackDamage":{
+            "min":3,
+            "max":6
+        },
         "spawnGroup":"blackwater_guard1",
-        "phraseID":"blackwater_guard1"
+        "faction":"fct_bwm",
+        "phraseID":"blackwater_guard1",
+        "attackCost":5,
+        "attackChance":60,
+        "blockChance":70,
+        "damageResistance":3
     },
     {
         "id":"blackwater_border_patrol",
         "name":"Blackwater border patrol",
         "iconID":"monsters_rltiles1:76",
+        "maxHP":60,
+        "maxAP":10,
+        "moveCost":5,
         "monsterClass":"humanoid",
+        "attackDamage":{
+            "min":3,
+            "max":6
+        },
         "spawnGroup":"blackwater_guard2",
-        "phraseID":"blackwater_guard2"
+        "faction":"fct_bwm",
+        "phraseID":"blackwater_guard2",
+        "attackCost":5,
+        "attackChance":60,
+        "blockChance":70,
+        "damageResistance":3
     },
     {
         "id":"harlenns_bodyguard",
         "name":"Harlenn's bodyguard",
         "iconID":"monsters_rltiles1:76",
+        "maxHP":60,
+        "maxAP":10,
+        "moveCost":5,
         "monsterClass":"humanoid",
+        "attackDamage":{
+            "min":3,
+            "max":6
+        },
         "spawnGroup":"blackwater_bossguard",
-        "phraseID":"blackwater_bossguard"
+        "faction":"fct_bwm",
+        "phraseID":"blackwater_bossguard",
+        "attackCost":5,
+        "attackChance":60,
+        "blockChance":70,
+        "damageResistance":3
     },
     {
         "id":"blackwater_chamber_guard",
         "name":"Blackwater chamber guard",
         "iconID":"monsters_men:3",
+        "maxHP":60,
+        "maxAP":10,
+        "moveCost":5,
         "unique":1,
         "monsterClass":"humanoid",
+        "attackDamage":{
+            "min":3,
+            "max":6
+        },
         "spawnGroup":"blackwater_throneguard",
-        "phraseID":"blackwater_throneguard"
+        "faction":"fct_bwm",
+        "phraseID":"blackwater_throneguard",
+        "attackCost":5,
+        "attackChance":60,
+        "blockChance":70,
+        "damageResistance":3
     },
     {
         "id":"harlenn",
@@ -502,6 +633,7 @@
             "max":9
         },
         "spawnGroup":"harlenn",
+        "faction":"fct_bwm",
         "phraseID":"harlenn_start",
         "droplistID":"harlenn",
         "attackCost":5,
