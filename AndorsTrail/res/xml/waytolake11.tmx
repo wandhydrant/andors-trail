@@ -191,7 +191,7 @@
  </layer>
  <layer name="Objects" width="23" height="20">
   <data encoding="base64" compression="zlib">
-   eJytlEEOgjAQRRtu0A0JZxePIBxBXUmCGzXRKEuViCzc6s6ZWMJP7UBFfvIztNDHnwlBqeEqQ6Vq8on8dHgM7gs4mf7UtR7OXgE3c3AetHcLh5kzZ5C3ipS6R+16Esiz8jHOAsXcJJDv+8qVNzFGHXQ7u4KeryO5skqYM5+TuKg+bgFZ99qdl6sPR+JKc2iuf+HZs+3i+uZmnusbRi5fx8ZTK3eTq6t/PB9b3AlwU7Nv91kJ/WNGOyevZ6amwEaVwj/AxcV1TufmVBfkpcC2e7Z7d3Ebb8hb8g7YEqOrf5fP5Av5CmyJ4fNO9lF/7/Xl/keYO9fjcW32mFxkvwG97e7D
+   eJytlE8OwVAQxicSe28jcQxHsHAQ53EEHAFHwEoTNkgIlmj8WdiyM5O08WW8qaf6JV+m77Xv128maYnyK64S3dg79sPjIrhP4ESOqM517vKzp8CNgNOuEDW43nnvXM1nyRxB3kuN6MpuMbtZJuqU7FmFGGeBEu6gZN8PVZpXc8WojXvPbs/P32p2FcUwZzlncVHfuHvIunb+vFJDOBbXmkN6/QtPzzaLG5pbeJHnW0CuXHcT91TuNFdW/3i+q7gd4A6Tfd3nxegfM+qcsu4ndQhsVGz8A3xcXM/43IjrmD0x2Lpn3buPm3rBXrJXwLYYWf37fGAf2SdgW4yQd4q37nPvW+5/hLlnrjiuZhfJRfYLgSXwiw==
   </data>
  </layer>
  <layer name="Above" width="23" height="20">
@@ -201,7 +201,7 @@
  </layer>
  <layer name="Walkable" width="23" height="20">
   <data encoding="base64" compression="zlib">
-   eJzbKMbAsJFCjA1QaiYuc6lhNj5ATbPRxYixnxxALXNxuZeSuCBGDznm4gtvaqe9wWwuJWFHjLnU1k+JucSAwRIvo3h4YgCs1hDp
+   eJzbKMbAsJFCjA1QaiYuc6lhNi4zqW02shgx/iIXUMtcdHOoERfE6CHHXHzhTe20N5jNpSTsiDGX2vopMZcYMFjiZRQPTwwA9MESdw==
   </data>
  </layer>
  <objectgroup name="Mapevents">
@@ -213,22 +213,32 @@
   </object>
  </objectgroup>
  <objectgroup name="Spawn">
-  <object name="maonit_1" type="spawn" x="64" y="128" width="416" height="160">
+  <object name="maonit_1" type="spawn" x="64" y="128" width="512" height="160">
    <properties>
-    <property name="quantity" value="4"/>
+    <property name="quantity" value="5"/>
     <property name="spawngroup" value="maonit_1"/>
    </properties>
   </object>
   <object name="maonit_3" type="spawn" x="64" y="384" width="256" height="96">
    <properties>
-    <property name="quantity" value="2"/>
+    <property name="quantity" value="3"/>
     <property name="spawngroup" value="maonit_3"/>
    </properties>
   </object>
   <object name="mwolf_3" type="spawn" x="256" y="288" width="256" height="128">
    <properties>
-    <property name="quantity" value="2"/>
+    <property name="quantity" value="3"/>
     <property name="spawngroup" value="mwolf_3"/>
+   </properties>
+  </object>
+  <object name="horse" type="spawn" x="608" y="128" width="64" height="64">
+   <properties>
+    <property name="spawngroup" value="guynmart_horse"/>
+   </properties>
+  </object>
+  <object name="teksin" type="spawn" x="608" y="0" width="64" height="64">
+   <properties>
+    <property name="spawngroup" value="teksin"/>
    </properties>
   </object>
  </objectgroup>

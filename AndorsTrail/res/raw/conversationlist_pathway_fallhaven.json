@@ -50,7 +50,7 @@
         "message":"Because a storm recently knocked over some trees that now block the passage. A villager even got hurt. And now the woodcutter that should be responsible doesn't want to cut the fallen trees away.",
         "replies":[
             {
-                "text":"But why doesn't he want to do this work?",
+                "text":"Why doesn't he want to do this work?",
                 "nextPhraseID":"guard_pathway_2"
             }
         ]
@@ -71,10 +71,10 @@
     },
     {
         "id":"guard_pathway_3",
-        "message":"You?! You're just a kid!",
+        "message":"You? You're just a kid!",
         "replies":[
             {
-                "text":"You're right, but I'd really love to be able to go this way.",
+                "text":"You're right, but I'd really love to be able to take this path.",
                 "nextPhraseID":"guard_pathway_4"
             },
             {
@@ -88,7 +88,7 @@
         "message":"Ok, maybe you can be of use. Talk to the warden. Maybe you can convince him to pay the woodcutter first. But I have to warn you, he is a stubborn beast.",
         "replies":[
             {
-                "text":"Okay thanks for your advice. I'm gonna do that!",
+                "text":"Okay thanks for your advice. I'm going to do that!",
                 "nextPhraseID":"X"
             },
             {
@@ -127,7 +127,7 @@
     },
     {
         "id":"key_wolf_pack_jakrar",
-        "message":"You see the horrifying wolf leader and stumble back."
+        "message":"You see a horrifying wolf leader and stumble back."
     },
     {
         "id":"sign_wolf_pack_jakrar",
@@ -143,7 +143,7 @@
                     {
                         "requireType":"questProgress",
                         "requireID":"pathway_fallhaven",
-                        "value":40,
+                        "value":35,
                         "negate":true
                     }
                 ]
@@ -157,7 +157,7 @@
             {
                 "rewardType":"questProgress",
                 "rewardID":"pathway_fallhaven",
-                "value":40
+                "value":35
             }
         ]
     },
@@ -170,7 +170,7 @@
                 "nextPhraseID":"X"
             },
             {
-                "text":"I wasn't able to convince the warden but I'm gonna talk to the woodcutter now.",
+                "text":"I wasn't able to convince the warden but I'm going to talk to the woodcutter now.",
                 "nextPhraseID":"guard_pathway_7",
                 "requires":[
                     {
@@ -187,7 +187,7 @@
                 ]
             },
             {
-                "text":"The woodcutter is gonna help me if I retrieve his axe!",
+                "text":"The woodcutter is going to help me if I retrieve his axe!",
                 "nextPhraseID":"guard_pathway_8",
                 "requires":[
                     {
