@@ -334,6 +334,7 @@ public final class ResourceLoader {
 		loader.prepareTileset(R.drawable.monsters_zombie1, "monsters_zombie1", sz1x1, sz1x1, mTileSize);
 		loader.prepareTileset(R.drawable.monsters_zombie2, "monsters_zombie2", sz1x1, sz1x1, mTileSize);
 		loader.prepareTileset(R.drawable.monsters_guynmart, "monsters_guynmart", new Size(8, 2), sz1x1, mTileSize);
+		loader.prepareTileset(R.drawable.monsters_maksiu1, "monsters_maksiu1", new Size(4, 4), sz1x1, mTileSize);		
 		/*INSERT_NPCS_TILESETS_HERE*/
 		
 		loader.prepareTileset(R.drawable.map_bed_1, "map_bed_1", mapTileSize, sz1x1, mTileSize);
