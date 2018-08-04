@@ -51,6 +51,9 @@ public final class DebugInterface {
 						for (int i = 1; i < buttons.length; i++) {
 							buttons[i].b.setVisibility(hidden ? View.GONE : View.VISIBLE);
 						}
+						for (DebugButton b : tpButtons) {
+							b.b.setVisibility(View.GONE);
+						}
 					}
 			})
 			,new DebugButton("tp", new OnClickListener() {
@@ -138,7 +141,6 @@ public final class DebugInterface {
 			})
 		}));
 		
-		tpButtons = new ArrayList<DebugButton>(); 
 		tpButtons.addAll(Arrays.asList(new DebugButton[] {
 				new DebugButton("tp", new OnClickListener() {
 					@Override
