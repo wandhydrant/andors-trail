@@ -363,8 +363,8 @@ public final class MainView extends SurfaceView
 
 	private boolean shouldRedrawEverything() {
 		if (scrolling) return true;
+		if (model.uiSelections.isInCombat) return true; // Discard the "optimized drawing" setting while in combat.
 		if (preferences.optimizedDrawing) return false;
-		if (model.uiSelections.isInCombat) return false; // Discard the "optimized drawing" setting while in combat.
 		return true;
 	}
 	private final Rect redrawRect = new Rect();

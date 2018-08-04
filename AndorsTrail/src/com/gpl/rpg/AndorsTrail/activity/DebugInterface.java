@@ -1,5 +1,19 @@
 package com.gpl.rpg.AndorsTrail.activity;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+import com.gpl.rpg.AndorsTrail.AndorsTrailApplication;
+import com.gpl.rpg.AndorsTrail.R;
+import com.gpl.rpg.AndorsTrail.context.ControllerContext;
+import com.gpl.rpg.AndorsTrail.context.WorldContext;
+import com.gpl.rpg.AndorsTrail.controller.Constants;
+import com.gpl.rpg.AndorsTrail.model.item.ItemType;
+import com.gpl.rpg.AndorsTrail.model.map.MapObject;
+import com.gpl.rpg.AndorsTrail.model.map.PredefinedMap;
+import com.gpl.rpg.AndorsTrail.view.MainView;
+
 import android.content.Context;
 import android.content.res.Resources;
 import android.view.View;
@@ -8,15 +22,6 @@ import android.widget.Button;
 import android.widget.RelativeLayout;
 import android.widget.Toast;
 
-import com.gpl.rpg.AndorsTrail.AndorsTrailApplication;
-import com.gpl.rpg.AndorsTrail.R;
-import com.gpl.rpg.AndorsTrail.context.ControllerContext;
-import com.gpl.rpg.AndorsTrail.context.WorldContext;
-import com.gpl.rpg.AndorsTrail.controller.Constants;
-import com.gpl.rpg.AndorsTrail.model.item.ItemType;
-import com.gpl.rpg.AndorsTrail.model.map.PredefinedMap;
-import com.gpl.rpg.AndorsTrail.view.MainView;
-
 public final class DebugInterface {
 	private final ControllerContext controllerContext;
 	private final MainActivity mainActivity;
@@ -24,6 +29,7 @@ public final class DebugInterface {
 	private final WorldContext world;
 	
 	private DebugButton[] buttons;
+	private List<DebugButton> tpButtons = new ArrayList<DebugButton>();
 
 	public DebugInterface(ControllerContext controllers, WorldContext world, MainActivity mainActivity) {
 		this.controllerContext = controllers;
@@ -35,7 +41,8 @@ public final class DebugInterface {
 	public void addDebugButtons() {
 		if (!AndorsTrailApplication.DEVELOPMENT_DEBUGBUTTONS) return;
 
-		buttons = new DebugButton[] {
+		List<DebugButton> buttonList = new ArrayList<DebugButton>();
+		buttonList.addAll(Arrays.asList(new DebugButton[] {
 			new DebugButton("dbg", new OnClickListener() {
 				boolean hidden = false;
 					@Override
@@ -45,6 +52,16 @@ public final class DebugInterface {
 							buttons[i].b.setVisibility(hidden ? View.GONE : View.VISIBLE);
 						}
 					}
+			})
+			,new DebugButton("tp", new OnClickListener() {
+				public void onClick(View arg0) {
+					for (int i = 0; i < buttons.length; i++) {
+						buttons[i].b.setVisibility(View.GONE);
+					}
+					for (DebugButton tpButton : tpButtons) {
+						tpButton.b.setVisibility(View.VISIBLE);
+					}
+				}
 			})
 			,new DebugButton("dmg", new OnClickListener() {
 				@Override
@@ -119,52 +136,102 @@ public final class DebugInterface {
 					AndorsTrailApplication.getApplicationFromActivity(mainActivity).getControllerContext().movementController.resetMovementHandler();
 				}
 			})
-			/*
-			,new DebugButton("cg", new OnClickListener() {
-				@Override
-				public void onClick(View arg0) {
-					controllerContext.movementController.placePlayerAsyncAt(MapObject.MapObjectType.newmap, "crossglen", "hall", 0, 0);
-				}
-			})
-			,new DebugButton("vg", new OnClickListener() {
-				@Override
-				public void onClick(View arg0) {
-					controllerContext.movementController.placePlayerAsyncAt(MapObject.MapObjectType.newmap, "vilegard_s", "tavern", 0, 0);
-				}
-			})
-			,new DebugButton("cr", new OnClickListener() {
-				@Override
-				public void onClick(View arg0) {
-					controllerContext.movementController.placePlayerAsyncAt(MapObject.MapObjectType.newmap, "houseatcrossroads4", "down", 0, 0);
-				}
-			})
-			,new DebugButton("lf", new OnClickListener() {
-				@Override
-				public void onClick(View arg0) {
-					controllerContext.movementController.placePlayerAsyncAt(MapObject.MapObjectType.newmap, "loneford9", "south", 0, 0);
-				}
-			})
-			,new DebugButton("fh", new OnClickListener() {
-				@Override
-				public void onClick(View arg0) {
-					controllerContext.movementController.placePlayerAsyncAt(MapObject.MapObjectType.newmap, "fallhaven_ne", "clothes", 0, 0);
-				}
-			})
-			,new DebugButton("prim", new OnClickListener() {
-				@Override
-				public void onClick(View arg0) {
-					controllerContext.movementController.placePlayerAsyncAt(MapObject.MapObjectType.newmap, "blackwater_mountain29", "south", 0, 0);
-				}
-			})
-			,new DebugButton("rc", new OnClickListener() {
-				@Override
-				public void onClick(View arg0) {
-					controllerContext.movementController.placePlayerAsyncAt(MapObject.MapObjectType.newmap, "roadtocarntower1", "left3", 0, 0);
-				}
-			})
-			*/
-		};
+		}));
+		
+		tpButtons = new ArrayList<DebugButton>(); 
+		tpButtons.addAll(Arrays.asList(new DebugButton[] {
+				new DebugButton("tp", new OnClickListener() {
+					@Override
+					public void onClick(View arg0) {
+						for (int i = 0; i < buttons.length; i++) {
+							buttons[i].b.setVisibility(View.VISIBLE);
+						}
+						for (DebugButton tpButton : tpButtons) {
+							tpButton.b.setVisibility(View.GONE);
+						}
+					}
+				})
+				,new DebugButton("cg", new OnClickListener() {
+					@Override
+					public void onClick(View arg0) {
+						controllerContext.movementController.placePlayerAsyncAt(MapObject.MapObjectType.newmap, "crossglen", "hall", 0, 0);
+					}
+				})
+				,new DebugButton("vg", new OnClickListener() {
+					@Override
+					public void onClick(View arg0) {
+						controllerContext.movementController.placePlayerAsyncAt(MapObject.MapObjectType.newmap, "vilegard_s", "tavern", 0, 0);
+					}
+				})
+				,new DebugButton("cr", new OnClickListener() {
+					@Override
+					public void onClick(View arg0) {
+						controllerContext.movementController.placePlayerAsyncAt(MapObject.MapObjectType.newmap, "houseatcrossroads4", "down", 0, 0);
+					}
+				})
+				,new DebugButton("lf", new OnClickListener() {
+					@Override
+					public void onClick(View arg0) {
+						controllerContext.movementController.placePlayerAsyncAt(MapObject.MapObjectType.newmap, "loneford9", "south", 0, 0);
+					}
+				})
+				,new DebugButton("fh", new OnClickListener() {
+					@Override
+					public void onClick(View arg0) {
+						controllerContext.movementController.placePlayerAsyncAt(MapObject.MapObjectType.newmap, "fallhaven_ne", "clothes", 0, 0);
+					}
+				})
+				,new DebugButton("prim", new OnClickListener() {
+					@Override
+					public void onClick(View arg0) {
+						controllerContext.movementController.placePlayerAsyncAt(MapObject.MapObjectType.newmap, "blackwater_mountain29", "south", 0, 0);
+					}
+				})
+				,new DebugButton("bwm", new OnClickListener() {
+					@Override
+					public void onClick(View arg0) {
+						controllerContext.movementController.placePlayerAsyncAt(MapObject.MapObjectType.newmap, "blackwater_mountain43", "south", 0, 0);
+					}
+				})
+				,new DebugButton("rmg", new OnClickListener() {
+					@Override
+					public void onClick(View arg0) {
+						controllerContext.movementController.placePlayerAsyncAt(MapObject.MapObjectType.newmap, "remgard0", "east", 0, 0);
+					}
+				})
+				,new DebugButton("chr", new OnClickListener() {
+					@Override
+					public void onClick(View arg0) {
+						controllerContext.movementController.placePlayerAsyncAt(MapObject.MapObjectType.newmap, "waytolostmine2", "minerhouse4", 0, 0);
+					}
+				})
+				,new DebugButton("ldr", new OnClickListener() {
+					@Override
+					public void onClick(View arg0) {
+						controllerContext.movementController.placePlayerAsyncAt(MapObject.MapObjectType.newmap, "lodarhouse0", "lodarhouse", 0, 0);
+					}
+				})
+				,new DebugButton("sf", new OnClickListener() {
+					@Override
+					public void onClick(View arg0) {
+						controllerContext.movementController.placePlayerAsyncAt(MapObject.MapObjectType.newmap, "wild20", "south2", 0, 0);
+					}
+				})
+				,new DebugButton("gm", new OnClickListener() {
+					@Override
+					public void onClick(View arg0) {
+						controllerContext.movementController.placePlayerAsyncAt(MapObject.MapObjectType.newmap, "guynmart_wood_1", "farmhouse", 0, 0);
+					}
+				})
+		}));
+		buttonList.addAll(tpButtons);
+		
+		buttons = buttonList.toArray(new DebugButton[buttonList.size()]);
 		addDebugButtons(buttons);
+		
+		for (DebugButton b : tpButtons) {
+			b.b.setVisibility(View.GONE);
+		}
 	}
 
 	private void showToast(Context context, String msg, int duration) {
