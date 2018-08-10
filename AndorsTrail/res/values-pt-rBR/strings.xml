@@ -1,10 +1,9 @@
-<?xml version="1.0" encoding="utf-8"?>
-
+<?xml version='1.0' encoding='UTF-8'?>
 <resources>
 	<string name="app_name">Andor\'s Trail</string>
-	<string name="app_description">Um jogo RPG fantasioso baseado em aventuras</string>
+	<string name="app_description">Um jogo de RPG fantasioso baseado em aventuras</string>
 
-	<string name="exit_to_menu">Ir para menu</string>
+	<string name="exit_to_menu">Ir para o menu</string>
 	<string name="menu_settings">Preferências</string>
 	<string name="menu_save">Guardar</string>
 	<string name="menu_save_gamesaved">O jogo foi guardado na posição %1$d</string>
@@ -143,7 +142,7 @@
 	<string name="shop_item_sold">%1$s vendidos.</string>
 
 	<string name="levelup_title">Aumento de nível</string>
-	<string name="levelup_description">Benvindo ao nível %1$d!</string>
+	<string name="levelup_description">Bem-vindo ao nível %1$d!</string>
 	<string name="levelup_buttontext">Aumento de nível</string>
 	<string name="levelup_add_health">Aumentar a saúde (+%1$d HP)</string>
 	<string name="levelup_add_health_description">Adiciona %1$d à saúde máxima.</string>
@@ -327,7 +326,7 @@
 	<!-- Added in v0.6.10 -->
 
 	<string name="preferences_movement_dpad_position_title">D-pad virtual</string>
-	<string name="preferences_movement_dpad_position">Permite que o deslocamento seja feito através de um controle direccional (d-pad) virtual na tela</string>
+	<string name="preferences_movement_dpad_position">Permite que o deslocamento seja feito através de um controle direcional (d-pad) virtual na tela.</string>
 	<string name="preferences_movement_dpad_minimizeable_title">D-pad minimizável</string>
 	<string name="preferences_movement_dpad_minimizeable">Se o d-pad estiver ativo, esta opção permite minimizar o d-pad ao ser apertado no centro.</string>
 
@@ -483,7 +482,7 @@
 	<string name="preferences_ui_category">Interface</string>
 	<string name="preferences_ui_enable_animations_title">Ativa animações</string>
 	<string name="preferences_ui_enable_animations">Mostra animaçòes para vários elementos da interface, tais como a barra de combate.</string>
-	<string name="menu_button_worldmap">Map</string>
+	<string name="menu_button_worldmap">Mapa</string>
 	<string name="menu_button_worldmap_failed">O mapa não pode ser mostrado.</string>
 	<string name="display_worldmap_not_available">O mapa não pode ser mostrado nesse local.</string>
 	<string name="display_worldmap_title">Mapa</string>
@@ -525,6 +524,110 @@
 	<!-- =========================================== -->
 	<!-- Added in v0.7.0 -->
 
-	<string name="localize_resources_from_mo_filename">pt_BR.mo</string>
+	<string name="localize_resources_from_mo_filename">bate-estacas</string>
 
-</resources>
+<string name="preferences_display_loot_dialog_on_items">Mostrar caixa de diálogo quando encontrar itens</string>
+	<string name="preferences_display_loot_toast_on_items">Mostrar notificação somente quando encontrar itens</string>
+	<string name="heroinfo_useitem_cost">Usar item custa (AP):</string>
+	<string name="combat_log_title">Registro de combate</string>
+	<string name="heroinfo_reequip_cost">Re-equipar custa (AP):</string>
+	<string name="conversation_reward_quest_finished">[Missão concluída: \"%1$s\"]</string>
+	<string name="conversation_reward_quest_updated">[Missão atualizada: \"%1$s\"]</string>
+
+	<string name="skill_title_weapon_prof_1hsword">Competência com espadas de uma mão</string>
+	<string name="skill_title_weapon_prof_2hsword">Competência com espadas de duas mãos</string>
+	<string name="skill_title_weapon_prof_axe">Competência com machados</string>
+	<string name="skill_title_weapon_prof_dagger">Competência com adagas</string>
+	<string name="skill_title_armor_prof_shield">Competência com escudos</string>
+	<string name="skill_title_weapon_prof_unarmed">Luta desarmado</string>
+	<string name="skill_title_armor_prof_light">Competência com armaduras leves</string>
+	<string name="skill_title_armor_prof_heavy">Competência com armaduras pesadas</string>
+	<string name="skill_title_fightstyle_dualwield">Estilo de combate: manuseio duplo</string>
+	<string name="skill_title_fightstyle_2hand">Estilo de combate: arma de duas mãos</string>
+	<string name="skill_title_fightstyle_weapon_shield">Estilo de combate: arma e escudo</string>
+	<string name="skill_title_specialization_dualwield">Especialização: Manuseio duplo</string>
+	<string name="skill_title_specialization_2hand">Especialização: Arma de duas mãos</string>
+	<string name="skill_title_specialization_weapon_shield">Especialização: Arma e escudo</string>
+
+	<string name="skill_shortdescription_weapon_prof_dagger">Melhor na luta com adagas</string>
+	<string name="skill_shortdescription_weapon_prof_1hsword">Melhor na luta com espadas de uma mão</string>
+	<string name="skill_shortdescription_weapon_prof_2hsword">Melhor na luta com espadas de duas mãos</string>
+	<string name="skill_shortdescription_weapon_prof_axe">Melhor na luta com machados</string>
+	<string name="skill_shortdescription_weapon_prof_unarmed">Melhor na luta sem armas</string>
+	<string name="skill_shortdescription_armor_prof_shield">Faça um melhor uso de escudos</string>
+	<string name="skill_shortdescription_armor_prof_unarmored">Melhor na luta sem armadura</string>
+	<string name="skill_shortdescription_armor_prof_light">Faça um melhor uso de armaduras leves</string>
+	<string name="skill_shortdescription_armor_prof_heavy">Faça um melhor uso de armaduras pesadas</string>
+	<string name="skill_shortdescription_fightstyle_dualwield">Manuseie duas armas ao mesmo tempo</string>
+	<string name="skill_shortdescription_fightstyle_2hand">Faça um melhor uso de armas que requerem ambas as mãos</string>
+	<string name="skill_shortdescription_fightstyle_weapon_shield">Melhor na luta com arma e escudo</string>
+	<string name="skill_shortdescription_specialization_dualwield">Especialista em manuseio duplo</string>
+	<string name="skill_shortdescription_specialization_2hand">Especialista em armas de duas mãos</string>
+	<string name="skill_shortdescription_specialization_weapon_shield">Especialista na luta com arma e escudo</string>
+
+	<string name="change_locale_requires_restart">Ao trocar a localidade requer reinício.
+Andor\'s Trail foi fechado.</string>
+
+<string name="combat_miss_animation_message">MISS</string>
+	
+	<string name="preferences_display_loot_dialog_on_items_or_toast">Diálogo para itens, notificação para outros</string>
+	<string name="combat_result_monstermoved">%1$s movimentos.</string>
+	<string name="skill_title_armor_prof_unarmored">Luta sem armadura</string>
+	<string name="skill_shortdescription_weapon_prof_blunt">Melhor na luta com cacetetes</string>
+	<string name="skill_longdescription_weapon_prof_dagger">Para cada nível desta habilidade, aumenta sua chance de ataque utilizando adagas e espadas curtas em %1$d%% da chance de ataque base do item, aumenta sua chance de bloqueio em %2$d%% da chance de bloqueio base do item, e aumenta sua habilidade de crítico em %3$d%% da habilidade de crítico base do item.</string>
+	<string name="preferences_ui_use_localized_resources">Utilize tradução de interface e conteúdo, onde estiver disponível. (Requer reinício)</string>
+	<string name="skill_longdescription_weapon_prof_unarmed">Quando lutar sem arma e escudo, ganha %1$d de chance de ataque, %2$d de potencial de dano e %3$d de chance de bloqueio por nível da habilidade.</string>
+	<string name="skill_longdescription_armor_prof_shield">Aumenta sua resistência a danos em %1$d por nível de habilidade enquanto um escudo estiver equipado.</string>
+	<string name="skill_longdescription_armor_prof_unarmored">Enquanto lutar sem estar com nenhuma peça de armadura, ganha %1$d de chance de bloqueio por nível de habilidade. Itens feitos de tecidos não são considerados armaduras.</string>
+	<string name="skill_longdescription_armor_prof_light">Para cada nível de habilidade, aumenta a chance de bloqueio de cada peça de armadura leve que está sendo usado em %1$d%% da chance de bloqueio original. Armaduras leves, incluindo couro, metal leve e gibões.</string>
+	<string name="skill_longdescription_armor_prof_heavy">"Para cada nível de habilidade, aumenta a chance de bloqueio de cada peça de armadura pesada que está sendo usada em %1$d%% da chance de bloqueio original. Peças de armadura pesada tem sua penalidade de movimento reduzida em %2$d%%  por nível de habilidade, e sua penalidade na velocidade de ataque é reduzida em %3$d%% por nível de habilidade. Armaduras pesadas incluem armaduras metálicas, cota de malha e placa de ferro."</string>
+	<string name="preferences_quickslots_placement">Posição do acesso rápido</string>
+	<string name="preferences_quickslots_placement_summary">Onde colocar o acesso rápido</string>
+	<string name="preferences_quickslots_placements_horizontal_center_bottom">Centro inferior</string>
+	<string name="preferences_quickslots_placements_vertical_center_left">Centro esquerda</string>
+	<string name="preferences_quickslots_placements_vertical_center_right">Centro direita</string>
+	<string name="preferences_quickslots_placements_vertical_bottom_left">Inferior esquerdo, junto da borda à esquerda</string>
+	<string name="preferences_quickslots_placements_horizontal_bottom_left">Inferior esquerdo, junto da borda inferior</string>
+	<string name="preferences_quickslots_placements_horizontal_bottom_right">Inferior direito, junto da borda inferior</string>
+	<string name="preferences_quickslots_placements_vertical_bottom_right">Inferior direito, junto da borda à direita</string>
+	<string name="preferences_ui_show_quickslots_when_toolbox_is_visible_title">Mostrar acesso rápido quando a caixa de ferramentas estiver aberta</string>
+	<string name="preferences_ui_show_quickslots_when_toolbox_is_visible">Fazer com que os botões de acesso rápido sejam mostrados no mesmo instante em que a caixa de ferramentas é aberta</string>
+	<string name="startscreen_incompatible_savegames">Está é uma versão em desenvolvimento de Andor\'s Trail. Jogos salvos produzidos por esta versão são incompatíveis com a versão de lançamento.</string>
+	<string name="startscreen_non_release_version">Esta é uma versão de pré-lançamento de Andor\'s Trail. Jogos salvos produzidos nesta versão podem não ser compatíveis com a versão de lançamento.</string>
+	<string name="heroinfo_gamestats">Estatísticas do jogo</string>
+	<string name="heroinfo_gamestats_quests">Aventuras concluídas</string>
+	<string name="heroinfo_gamestats_deaths">Vezes em que ficou inconsciente</string>
+	<string name="heroinfo_gamestats_spent_gold">Ouro gasto em lojas</string>
+	<string name="heroinfo_gamestats_bonemeals">Poções de farinha óssea usadas</string>
+	<string name="heroinfo_gamestats_num_used_items">Itens usados</string>
+	<string name="heroinfo_gamestats_visited_maps">Lugares visitados</string>
+	<string name="heroinfo_gamestats_fav_item">Item mais comumente usado</string>
+	<string name="heroinfo_gamestats_num_killed_monsters">Monstros mortos</string>
+	<string name="heroinfo_gamestats_top_boss">Monstro mais poderoso morto</string>
+	<string name="heroinfo_gamestats_fav_monsters">Monstros mais comumente mortos</string>
+	<string name="heroinfo_gamestats_name_and_qty">%1$s (%2$d)</string>
+
+	<string name="preferences_ui_use_localized_resources_title">Use recursos localizados</string>
+	<string name="skill_longdescription_specialization_weapon_shield">Aumenta a chance de ataque e o potencial de dano das armas. A chance de ataque é aumentada em %1$d %% da chance de ataque original, e o potencial de dano é aumentado em %2$d %% do potencial de dano original.</string>
+
+	<string name="skill_longdescription_specialization_2hand">Aumenta o potencial das dano de armas de duas mãos num adicional de %1$d %% do potencial de dano original, em acréscimo aos benefícios dados pela habilidade estilo de arma. A chance de ataque das armas de duas mãos são, também, aumentadas em &amp;2$d %% das suas chances de ataque originais.</string>
+	<string name="skill_title_weapon_prof_blunt">Proficiência em utilização de cacetetes</string>
+	<string name="skill_longdescription_weapon_prof_1hsword">Para cada nível de habilidade, aumenta a chance de ataque de Espadas Roperas, Espadas longas e Espadas largas em %1$d %% da chance de ataque base do item, aumenta a chance de bloqueio em %2$d %% da chance de bloqueio base do item, e aumenta a habilidade de ataques críticos em %3$d %% da habilidade base de ataques críticos do item.</string>
+	<string name="skill_longdescription_weapon_prof_2hsword">Para cada nível de habilidade, aumenta a chance de ataque de Espadas de duas mãos em %1$d %% da chance de ataque base do item, aumenta a chance de bloqueio em %2$d %% da chance de bloqueio base do item, e aumenta a habilidade de ataques críticos em %3$d %% da habilidade de ataques críticos base do item.</string>
+	<string name="skill_longdescription_weapon_prof_axe">Para cada nível de habilidade, aumenta a chance de ataque de Machados e Machados Grandes em %1$d %% da chance de ataque base do item, aumenta a chance de bloqueio em %2$d %% da chance de bloqueio base do item, e aumenta a habilidade de ataques críticos em %3$d %% da habilidade de ataques críticos base do item.</string>
+	<string name="skill_longdescription_weapon_prof_blunt">Para cada nível de habilidade, aumenta a chance de ataque de Clavas em %1$d %% da chance de ataque base do item, aumenta a chance de bloqueio em %2$d %% da chance de bloqueio base do item, e aumenta a habilidade de ataques críticos em %3$d %% da habilidade de ataques críticos base do item. Isto inclui Porretes, Bastões, Clavas, Centros, Martelos de Guerra e Martelos Gigantes.</string>
+	<string name="skill_longdescription_fightstyle_dualwield">Da beneficios quando está lutando com duas armas ao mesmo tempo, uma na mão principal e na mão secundária.
+\n
+\nSem esta habilidade, apenas %1$d %% da qualidade da arma pode ser usada quando equipada na mão secundária. Isto inclui chance de ataque, habilidade crítica, potencia do dano e chance de bloqueio. Sem essa habilidade, a velocidade de ataque (Custo de AP) de fazer um ataque é a soma da velocidade de ataque da arma principal e a que está sendo usada na mão secundária.
+\n
+\nCom um nível desda habilidade, %2$d %% da qualidade da arma da mão secundária pode ser usada, e a velocidade de ataque da arma na mão principal mais %3$d %% da velocidade de ataque da arma na mão secundária.
+\n
+\nCom dois níveis desta habilidade, %4$d %% da qualidade da arma da mão secundária pode ser usada, e a velocidade de ataque é igual ao mais alto das velocidades de ataque das duas armas equipas.</string>
+	<string name="skill_longdescription_fightstyle_2hand">Da benefícios quando esta usando armas que exige ambas as mãos para manejar, tal como espadas de duas mãos, machados grandes ou martelos gigantes.
+\n
+\nCada nível de habilidade aumenta a potência do dano de armas de duas mãos com %1$d %% do potêncial do dano original.</string>
+	<string name="skill_longdescription_fightstyle_weapon_shield">Da benefícios quando esta lutando com uma arma na mão principal e tem um escudo equipado na mão secundária.
+\n
+\nCada nível de habilidade aumenta a chance de ataque da arma com %1$d %% da chance de ataque original da arma, e a chance de bloqueio de escudos em %2$d %% da chance de bloqueio original do escudo.</string>
+	<string name="skill_longdescription_specialization_dualwield">Aumenta a chance de ataque de ambas as armas empunhadas e dá um adicional %1$d %% da chance de ataque original das armas, além dos benefícios oferecidos pela habilidade do estilo da arma. A chance de bloqueio de ambas as armas também são aumentadas em %2$d %% da chance de bloqueio original das armas.</string>
+	</resources>

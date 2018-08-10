@@ -1,0 +1,228 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources><string name="menu_settings">هەڵبژاردنەکان</string>
+	<string name="menu_save">پاشەکەوتکردن</string>
+	<string name="menu_save_gamesaved"/>
+	<string name="menu_save_failed"/>
+
+	<string name="loadsave_title_save">پاشەکەوتکردنی یاری</string>
+	<string name="loadsave_title_load"/>
+	<string name="loadsave_selectslot"/>
+	<string name="savegame_currenthero_displayinfo"/>
+
+	<string name="dialog_loading_message"/>
+	<string name="dialog_loading_failed_title"/>
+	<string name="dialog_loading_failed_message"/>
+	<string name="dialog_loading_failed_incorrectversion"/>
+
+	<string name="dialog_close">داخستن</string>
+
+	<string name="dialog_monsterencounter_title"/>
+	<string name="dialog_monsterencounter_message"/>
+	<string name="dialog_monsterencounter_info">زانیاری</string>
+
+	<string name="status_hp"/>
+	<string name="status_ap"/>
+	<string name="status_exp">قۆناغ:</string>
+
+	<string name="heroinfo_char"/>
+	<string name="heroinfo_inv">بڕگە</string>
+	<string name="heroinfo_skill">کارامەیی</string>
+	<string name="heroinfo_levelup"/>
+	<string name="heroinfo_level">قۆناغ</string>
+	<string name="heroinfo_totalexperience"/>
+	<string name="heroinfo_wornequipment"/>
+	<string name="heroinfo_inventory"/>
+	<string name="heroinfo_gold">زێڕ: %1$d</string>
+	<string name="inventory_info">زانیاری</string>
+	<string name="inventory_equip"/>
+	<string name="inventory_unequip"/>
+	<string name="inventory_use">بەکارهێنان</string>
+	<string name="inventory_drop"/>
+	<string name="inventory_item_used"/>
+	<string name="inventory_item_dropped"/>
+	<string name="inventory_item_equipped"/>
+
+	<string name="dialog_loot_pickall"/>
+	<string name="dialog_loot_foundgold"/>
+	<string name="dialog_loot_pickedupitem"/>
+	<string name="dialog_loot_pickedupitems"/>
+	<string name="dialog_groundloot_title">بەڕگەکان</string>
+	<string name="dialog_groundloot_message"/>
+	<string name="dialog_monsterloot_title">سەرکەوتن</string>
+	<string name="dialog_monsterloot_message"/>
+	<string name="dialog_monsterloot_gainedexp"/>
+
+	<string name="monster_difficulty_veryeasy">زۆر ئاسان</string>
+	<string name="monster_difficulty_easy">ئاسان</string>
+	<string name="monster_difficulty_normal">ئاسایی</string>
+	<string name="monster_difficulty_hard">قورس</string>
+	<string name="monster_difficulty_veryhard">زۆر قورس</string>
+	<string name="monster_difficulty_impossible">مەحاڵ</string>
+
+	<string name="actorinfo_class">پۆل:</string>
+	<string name="actorinfo_difficulty"/>
+	<string name="actorinfo_health">تەندروستی:</string>
+	<string name="actorinfo_attack"/>
+	<string name="actorinfo_defense"/>
+	<string name="actorinfo_movecost"/>
+	<string name="actorinfo_basetraits"/>
+	<string name="actorinfo_currenttraits"/>
+
+	<string name="traitsinfo_attack_cost"/>
+	<string name="traitsinfo_attack_chance"/>
+	<string name="traitsinfo_attack_damage"/>
+	<string name="traitsinfo_criticalhit_skill"/>
+	<string name="traitsinfo_criticalhit_multiplier"/>
+	<string name="traitsinfo_defense_chance"/>
+	<string name="traitsinfo_defense_damageresist"/>
+
+	<string name="iteminfo_category">"هاوپۆل: "</string>
+	<string name="iteminfo_action_use">بەکارهێنان</string>
+	<string name="iteminfo_action_equip"/>
+	<string name="iteminfo_action_unequip"/>
+	<string name="iteminfo_action_use_ap"/>
+	<string name="iteminfo_action_equip_ap"/>
+	<string name="iteminfo_action_unequip_ap"/>
+
+	<string name="startscreen_continue"/>
+	<string name="startscreen_newgame">یاری نوێ</string>
+	<string name="startscreen_newgame_confirm"/>
+	<string name="startscreen_about">دەربارە/یارمەتی</string>
+	<string name="startscreen_enterheroname">نووسینی ناوی پاڵەوان</string>
+	<string name="startscreen_load"/>
+
+	<string name="conversation_rewardexp"/>
+	<string name="conversation_rewardgold"/>
+	<string name="conversation_lostgold"/>
+	<string name="conversation_rewarditem"/>
+	<string name="conversation_rewarditems"/>
+	<string name="conversation_next">دواتر</string>
+	<string name="conversation_leave">بەجێهێشتن</string>
+
+	<string name="shop_buy">کڕین</string>
+	<string name="shop_sell">فرۆشتن</string>
+	<string name="shop_infoitem">زانیاری</string>
+	<string name="shop_buyitem"/>
+	<string name="shop_sellitem"/>
+	<string name="shop_yourgold"/>
+	<string name="shop_item_bought"/>
+	<string name="shop_item_sold"/>
+
+	<string name="levelup_title"/>
+	<string name="levelup_description"/>
+	<string name="levelup_buttontext"/>
+	<string name="levelup_add_health"/>
+	<string name="levelup_add_health_description"/>
+	<string name="levelup_add_attackchance"/>
+	<string name="levelup_add_attackchance_description"/>
+	<string name="levelup_add_attackdamage"/>
+	<string name="levelup_add_attackdamage_description"/>
+	<string name="levelup_add_blockchance"/>
+	<string name="levelup_add_blockchance_description"/>
+
+	<string name="dialog_rest_title"/>
+	<string name="dialog_rest_confirm_message"/>
+	<string name="dialog_rest_message"/>
+
+	<string name="about_button1">یارمەتی</string>
+	<string name="about_button2"/>
+	<string name="about_button3">مۆڵەت</string>
+	<string name="about_contents1"/>
+
+	<string name="about_contents3"/>
+	<string name="about_interface"/>
+
+	<string name="dialog_newversion_title">بەخێربێت</string>
+	<string name="dialog_newversion_message"/>
+
+	<string name="questlog_includecompleted_prompt"/>
+	<string name="questlog_includecompleted_hidecompleted"/>
+	<string name="questlog_includecompleted_includecompleted"/>
+	<string name="questlog_includecompleted_onlycompleted"/>
+	<string name="questlog_queststatus"/>
+	<string name="questlog_queststatus_inprogress"/>
+	<string name="questlog_queststatus_completed">تەواو بوو</string>
+
+	<string name="preferences_display_category"/>
+	<string name="preferences_display_fullscreen_title"/>
+	<string name="preferences_display_fullscreen"/>
+	<string name="preferences_dialog_category"/>
+	<string name="preferences_dialog_confirmrest_title"/>
+	<string name="preferences_dialog_confirmrest"/>
+	<string name="preferences_dialog_confirmattack_title"/>
+	<string name="preferences_dialog_confirmattack"/>
+	<string name="preferences_dialog_monsterloot_title"/>
+	<string name="preferences_dialog_monsterloot"/>
+	<string name="preferences_combat_category"/>
+	<string name="preferences_combat_speed_title"/>
+	<string name="preferences_combat_speed"/>
+
+	<string name="preferences_display_loot_dialog"/>
+	<string name="preferences_display_loot_dialog_on_items"/>
+	<string name="preferences_display_loot_dialog_on_items_or_toast">
+</string>
+	<string name="preferences_display_loot_toast">پیشاندانی ئاگادارکردنەوە کورتەکان</string>
+	<string name="preferences_display_loot_toast_on_items"/>
+	<string name="preferences_display_loot_never"/>
+
+	<string name="preferences_attackspeed_instant"/>
+	<string name="preferences_attackspeed_fast">خێرا</string>
+	<string name="preferences_attackspeed_normal">ئاسایی</string>
+	<string name="preferences_attackspeed_slow">هێواش</string>
+
+	<string name="preferences_movement_category"/>
+	<string name="preferences_movementmethod_title"/>
+	<string name="preferences_movementmethod"/>
+	<string name="preferences_movementmethods_straight"/>
+	<string name="preferences_movementmethods_avoid"/>
+
+
+	<string name="actorinfo_currentconditions"/> <string name="actorcondition_info_removes_all"/>
+	<string name="iteminfo_effect_chance_of"/>
+	<string name="iteminfo_effect_duration"/>
+
+	<string name="iteminfo_effect_works_on_source"/>
+	<string name="iteminfo_effect_works_on_target"/>
+	<string name="iteminfo_effect_works_when_hitting_target"/>
+	<string name="iteminfo_effect_works_when_killing_target">لەگەڵ هەر کوشتنێک</string>
+	<string name="iteminfo_effect_works_when_used">کاتێک بەکارهێنرا</string>
+	<string name="iteminfo_effect_works_when_equipped"/>
+
+	<string name="iteminfo_effect_decrease_current_hp"/>
+	<string name="iteminfo_effect_increase_current_hp"/>
+	<string name="iteminfo_effect_decrease_current_ap"/>
+	<string name="iteminfo_effect_increase_current_ap"/>
+
+	<string name="iteminfo_effect_increase_max_hp"/>
+	<string name="iteminfo_effect_decrease_max_hp"/>
+	<string name="iteminfo_effect_increase_max_ap"/>
+	<string name="iteminfo_effect_decrease_max_ap"/>
+	<string name="iteminfo_effect_increase_movecost"/>
+	<string name="iteminfo_effect_decrease_movecost"/>
+
+	<string name="preferences_display_scaling_factor_title"/>
+	<string name="preferences_display_scaling_factor"/>
+	<string name="preferences_display_scaling_factor_normal">قەبارەی ئاسایی</string>
+	<string name="preferences_display_scaling_factor_50_percent_larger">قەبارەی 1.5x</string>
+	<string name="preferences_display_scaling_factor_double">قەبارەی دووهێندە</string>
+
+	<string name="inventory_assign"/>
+	<string name="inventory_assign_slot1"/>
+	<string name="inventory_assign_slot2"/>
+	<string name="heroinfo_actionpoints"/>
+	<string name="heroinfo_quests"/>
+
+	<string name="combat_attack"/>
+	<string name="combat_move"/>
+	<string name="combat_use">بەکارهێنانی بڕگە</string>
+	<string name="combat_endturn"/>
+	<string name="combat_flee"/>
+	<string name="combat_begin_flee"/>
+	<string name="combat_flee_failed"/>
+	<string name="combat_status_ap"/>
+	<string name="combat_monsterhealth"/>
+	<string name="combat_monsteraction"/>
+	<string name="combat_result_monstermiss"/>
+	<string name="combat_result_monsterhit"/>
+	<string name="combat_result_monsterhitcritical"/>
+	</resources>
