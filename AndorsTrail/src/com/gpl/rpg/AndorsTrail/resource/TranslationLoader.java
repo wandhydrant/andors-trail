@@ -44,10 +44,15 @@ public final class TranslationLoader {
 		if (parser == null) return s;
 		if (s.length() <= 1) return s;
 		try {
-			//String t = parser.translate(s);
+			String t = parser.translate(s);
 			//L.log(translations.size() + " : " + s + " -> " + t);
-			//return t;
-			return parser.translate(s);
+			if (t.startsWith("[REVIEW]")) {
+				t = t.substring(8);
+			} else if (t.startsWith("[OUTDATED]")) {
+				t = s;
+			}
+			return t;
+			//return parser.translate(s);
 		} catch (IOException e) {
 			return s;
 		}
