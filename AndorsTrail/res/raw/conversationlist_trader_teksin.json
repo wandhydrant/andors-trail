@@ -92,7 +92,7 @@
     },
     {
         "id":"teksin30",
-        "message":"I have been out in the wilds for while, and have seen nobody since I left the main road weeks ago.",
+        "message":"I have been out in the wild for while, and have seen nobody since I left the main road weeks ago.",
         "replies":[
             {
                 "text":"N",
@@ -112,7 +112,7 @@
     },
     {
         "id":"teksin50",
-        "message":"This is as close as I can get coming this way. I am an experienced traveler, and I know that Remgard is close, north across this lake, but there is no way to cross, or to go further east around the lake.",
+        "message":"This is as close as I can get coming this way. I am an experienced traveler, and I know that Remgard is close. It's north across this lake, but there is no way to cross, or to go further east around the lake.",
         "replies":[
             {
                 "text":"It sounds like you are not quite the experienced traveler you claim to be.",
@@ -218,7 +218,7 @@
     },
     {
         "id":"teksin100",
-        "message":"For you, I will offer the special price of 4999gp.",
+        "message":"For you, I will offer the special price of 4999 gold.",
         "replies":[
             {
                 "text":"I don't have that much gold. Please show me what else you have.",
@@ -227,8 +227,7 @@
                     {
                         "requireType":"inventoryKeep",
                         "requireID":"gold",
-                        "value":4999,
-                        "negate":true
+                        "value":4999
                     }
                 ]
             },

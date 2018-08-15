@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" tiledversion="1.0.2" orientation="orthogonal" renderorder="right-down" width="14" height="12" tilewidth="32" tileheight="32" nextobjectid="3">
+<map version="2017.05.26" orientation="orthogonal" renderorder="right-down" width="14" height="12" tilewidth="32" tileheight="32" nextobjectid="8">
  <tileset firstgid="1" name="map_bed_1" tilewidth="32" tileheight="32" tilecount="128" columns="16">
   <image source="../drawable/map_bed_1.png" width="512" height="256"/>
  </tileset>
@@ -192,10 +192,10 @@
  </layer>
  <layer name="Above" width="14" height="12">
   <data encoding="base64" compression="zlib">
-   eJxjYCANbBRDsA+LocopCqPy0eUJiROr7zKSvDLQzotimPJc/Jj6LhEwF12eGHdexqIGnz4lYYg92NxCyD587oABZPcUC2GK4dKHzS/IYtxYwhMEsPnlMA7/kQMAM6ge/w==
+   eJxjYCAfHBZD5SsK45cnJE6svstI8spAOy+KYcpz8WPqu0TAXHR5Ytx5GYsafPqUhCH2YHMLIfvwuQMGkN1TLIQphksfNr8gi3FjCU8QwOaXwzj8Rw4AAE6QHjg=
   </data>
  </layer>
- <layer name="Walkable" width="14" height="12">
+ <layer name="Walkable" width="14" height="12" visible="0">
   <data encoding="base64" compression="zlib">
    eJzbKMbAsJEEDAKkqKcFJtUNMPXYAD5z8QFK9eEyh1iAy358dhHSh8sv+MIfmzw1MQArFVu7
   </data>
@@ -207,17 +207,22 @@
     <property name="place" value="up"/>
    </properties>
   </object>
-  <object id="3" name="stn_gyra_m21_1b" type="script" x="192" y="128" width="32" height="32"/>
-  <object id="5" name="stn_gyra_m21_1" type="script" x="192" y="160" width="64" height="32"/>
-  <object id="6" name="stn_gyra_hlm2a" type="script" x="160" y="192" width="96" height="96"/>
-  <object id="7" name="stn_gyra_hlm2b" type="script" x="352" y="128" width="32" height="32"/>
+  <object id="2" name="stn_gyra_m21_1b" type="script" x="192" y="128" width="32" height="32"/>
+  <object id="3" name="stn_gyra_m21_1" type="script" x="192" y="160" width="64" height="32"/>
+  <object id="4" name="stn_gyra_hlm2a" type="script" x="160" y="192" width="96" height="96"/>
+  <object id="5" name="stn_gyra_hlm2b" type="script" x="352" y="128" width="32" height="32"/>
  </objectgroup>
  <objectgroup name="Spawn" visible="0">
-  <object id="2" name="erwyn_commander" type="spawn" x="32" y="96" width="192" height="160"/>
-  <object id="4" name="stn_gyra1" type="spawn" x="224" y="128" width="32" height="32" visible="0">
+  <object id="6" name="erwyn_commander" type="spawn" x="32" y="96" width="192" height="160">
+   <properties>
+    <property name="spawngroup" value="erwyn_commander"/>
+   </properties>
+  </object>
+  <object id="7" name="stn_gyra1" type="spawn" x="224" y="128" width="32" height="32">
    <properties>
     <property name="active" value="false"/>
     <property name="ignoreAreas" value="true"/>
+    <property name="spawngroup" value="stn_gyra1"/>
    </properties>
   </object>
  </objectgroup>

@@ -9,7 +9,7 @@
     },
     {
         "id":"cadoren_0",
-        "message":"Welcome to Stoutford kid. ",
+        "message":"Welcome to our wonderful Inn. How can we help you?",
         "replies":[
             {
                 "text":"Who are you?",
@@ -74,6 +74,10 @@
             {
                 "text":"Why are monster attacks increasing?",
                 "nextPhraseID":"cadoren_4a"
+            },
+            {
+                "text":"Thanks for the information. I have to leave now.",
+                "nextPhraseID":"X"
             }
         ]
     },
@@ -161,7 +165,7 @@
     },
     {
         "id":"stoutford_widow_5",
-        "message":"He told me that it is very far from here, beyond the river and the mountains.",
+        "message":"He told me that it is very far from here, to the northeast, beyond the river and the mountains.",
         "replies":[
             {
                 "text":"N",
@@ -221,7 +225,14 @@
             },
             {
                 "text":"Remgard. *sigh*. OK, I'll do it.",
-                "nextPhraseID":"stoutford_widow_10"
+                "nextPhraseID":"stoutford_widow_10",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"nondisplay_2",
+                        "value":170
+                    }
+                ]
             }
         ]
     },
@@ -284,6 +295,26 @@
                         "requireType":"questProgress",
                         "requireID":"thorns_vengeance",
                         "value":80
+                    }
+                ]
+            },
+            {
+                "nextPhraseID":"stoutford_widow_thorns74_1",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"thorns_vengeance",
+                        "value":76
+                    }
+                ]
+            },
+            {
+                "nextPhraseID":"stoutford_widow_thorns72_70",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"thorns_vengeance",
+                        "value":75
                     }
                 ]
             },
@@ -1145,7 +1176,7 @@
     },
     {
         "id":"caeda_root50_4",
-        "message":"Thank you so much! If ever you want to go to the glade, just ask me for the key.",
+        "message":"Thank you so much! I wish you safe travels back to Stoutford. If you want to go to the glade next time you are in Remgard, just ask me for the key.",
         "replies":[
             {
                 "text":"Thank you. I will leave now.",
@@ -1230,6 +1261,11 @@
                 "rewardType":"giveItem",
                 "rewardID":"glade_key",
                 "value":1
+            },
+            {
+                "rewardType":"removeSpawnArea",
+                "rewardID":"lakecave2_1",
+                "mapName":"lakecave2"
             }
         ]
     },
@@ -1553,7 +1589,7 @@
     },
     {
         "id":"stoutford_widow_roots4045_9",
-        "message":"Our priest, Talahendor, was convinced by my uncle, Blornvale, my father's own brother.",
+        "message":"Our priest, Tahalendor, was convinced by my uncle, Blornvale, my father's own brother.",
         "replies":[
             {
                 "text":"N",
@@ -1825,7 +1861,7 @@
     },
     {
         "id":"stoutford_widow_thorns40_2",
-        "message":"Best would be Talahendor himself. Yes, you must persuade the priest to be present when Blornvale tells the whole story.",
+        "message":"Best would be Tahalendor himself. Yes, you must persuade the priest to be present when Blornvale tells the whole story.",
         "replies":[
             {
                 "text":"Tahalendor? How can I do that?",
@@ -1891,6 +1927,13 @@
             {
                 "text":"I did my best.",
                 "nextPhraseID":"X"
+            }
+        ],
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"thorns_vengeance",
+                "value":76
             }
         ]
     },
@@ -2070,6 +2113,16 @@
         "id":"blornvale_select_0",
         "replies":[
             {
+                "nextPhraseID":"blornvale_thorns72_90",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"thorns_vengeance",
+                        "value":75
+                    }
+                ]
+            },
+            {
                 "nextPhraseID":"blornvale_thorns74",
                 "requires":[
                     {
@@ -2086,6 +2139,16 @@
                         "requireType":"questProgress",
                         "requireID":"thorns_vengeance",
                         "value":72
+                    }
+                ]
+            },
+            {
+                "nextPhraseID":"blornvale_thorns70_20",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"thorns_vengeance",
+                        "value":71
                     }
                 ]
             },
@@ -2230,14 +2293,14 @@
     },
     {
         "id":"blornvale_s1_3",
-        "message":"What did you expect? You are a kid after all. I must not give strong potions to you.",
+        "message":"What did you expect? You are a kid after all. I can't give you strong potions!",
         "replies":[
             {
                 "text":"You are right. Have a nice day.",
                 "nextPhraseID":"X"
             },
             {
-                "text":"It is not for me of course. My father and his men are fighting in Flagstone right now. They need urgently some useful potions, not soap!\nI think of three potions of the brave, if you happen to have. And more if it is good stuff.",
+                "text":"It is not for me of course. My father and his men are fighting in Flagstone right now. They urgently need some useful potions, not soap! I think three potions of the brave would do it, if you happen to have them. And possibly more, if it is good stuff.",
                 "nextPhraseID":"blornvale_s1_4"
             }
         ]
@@ -2247,7 +2310,7 @@
         "message":"Ah. Oh. That changes everything. Wait a second.",
         "replies":[
             {
-                "text":"Look lively now.",
+                "text":"I'm in a hurry.",
                 "nextPhraseID":"blornvale_shop2"
             }
         ],
@@ -2424,6 +2487,11 @@
                 "rewardType":"spawnAll",
                 "rewardID":"tahalendor2",
                 "mapName":"stoutford_potion"
+            },
+            {
+                "rewardType":"questProgress",
+                "rewardID":"thorns_vengeance",
+                "value":71
             }
         ]
     },
@@ -2501,18 +2569,19 @@
     },
     {
         "id":"blornvale_thorns72",
-        "message":"That was - a potion of truth! How dare you! Did you think I wouldn't recognize it?",
         "replies":[
             {
-                "text":"it was worth a try.",
-                "nextPhraseID":"X"
-            }
-        ],
-        "rewards":[
+                "nextPhraseID":"blornvale_thorns72_20",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"thorns_vengeance",
+                        "value":65
+                    }
+                ]
+            },
             {
-                "rewardType":"questProgress",
-                "rewardID":"thorns_vengeance",
-                "value":74
+                "nextPhraseID":"blornvale_thorns72_10"
             }
         ]
     },
@@ -2765,6 +2834,10 @@
             {
                 "text":"Thanks. What about the monsters?",
                 "nextPhraseID":"odirath_1_4"
+            },
+            {
+                "text":"Thanks for the information. Please show me what you have to trade.",
+                "nextPhraseID":"S"
             }
         ]
     },
@@ -2783,12 +2856,16 @@
             {
                 "text":"Thanks. I'm looking for my brother, Andor. Has anyone new been through here recently?",
                 "nextPhraseID":"odirath_1"
+            },
+            {
+                "text":"How do I get to Blackwater mountain?",
+                "nextPhraseID":"odirath_1_3"
             }
         ]
     },
     {
         "id":"odirath_2",
-        "message":"Yes, indeed. My daughter has not come home for some days. I do not know what's wrong with her.",
+        "message":"Yes, indeed. My daughter has not come home for some days. I don't know what's happened to her.",
         "replies":[
             {
                 "text":"And you have no idea where she might be?",
@@ -3581,6 +3658,18 @@
             {
                 "text":"And bonemeal is forbidden.",
                 "nextPhraseID":"yolgen_4a"
+            },
+            {
+                "text":"I will clear the castle of undead for you.",
+                "nextPhraseID":"yolgen_castle_0_1",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"stoutford_castle",
+                        "value":10,
+                        "negate":true
+                    }
+                ]
             }
         ]
     },
@@ -3591,6 +3680,18 @@
             {
                 "text":"Hmph.",
                 "nextPhraseID":"yolgen_initial_0"
+            },
+            {
+                "text":"I will clear the castle of undead for you.",
+                "nextPhraseID":"yolgen_castle_0_1",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"stoutford_castle",
+                        "value":10,
+                        "negate":true
+                    }
+                ]
             }
         ]
     },
@@ -3628,6 +3729,13 @@
                 "text":"N",
                 "nextPhraseID":"yolgen_surroundings_1a"
             }
+        ],
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"nondisplay_2",
+                "value":190
+            }
         ]
     },
     {
@@ -3635,7 +3743,7 @@
         "message":"That dreadful place has been left abandoned ever since. Recently, however, undead have started pouring out of the prison, and we had to send guards to keep them away from the road. ",
         "replies":[
             {
-                "text":"N",
+                "text":"I took care of that",
                 "nextPhraseID":"yolgen_surroundings_flagstone_4",
                 "requires":[
                     {
@@ -3652,7 +3760,19 @@
                     {
                         "requireType":"questProgress",
                         "requireID":"flagstone",
+                        "value":70,
+                        "negate":true
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"flagstone",
                         "value":5,
+                        "negate":true
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"flagstone",
+                        "value":100,
                         "negate":true
                     }
                 ]
@@ -3720,6 +3840,13 @@
             {
                 "text":"There was something else I wanted to ask you about.",
                 "nextPhraseID":"yolgen_surroundings_0"
+            }
+        ],
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"nondisplay_2",
+                "value":180
             }
         ]
     },
@@ -3848,6 +3975,18 @@
                         "requireID":"flagstone",
                         "value":5,
                         "negate":true
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"flagstone",
+                        "value":70,
+                        "negate":true
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"flagstone",
+                        "value":100,
+                        "negate":true
                     }
                 ]
             }
@@ -3859,7 +3998,26 @@
         "replies":[
             {
                 "text":"OK. I will go to the prison.",
-                "nextPhraseID":"X"
+                "nextPhraseID":"X",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"flagstone",
+                        "value":70,
+                        "negate":true
+                    }
+                ]
+            },
+            {
+                "text":"I cleared flagstone of an evil demon.",
+                "nextPhraseID":"yolgen_flagstone_10",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"flagstone",
+                        "value":70
+                    }
+                ]
             }
         ]
     },
@@ -3907,17 +4065,6 @@
         "id":"yolgen_flagstone_0",
         "message":"If you could help with Flagstone, it would take a big burden off us.",
         "replies":[
-            {
-                "text":"I already took care of Flagstone. I cleared it of an evil demon.",
-                "nextPhraseID":"yolgen_flagstone_10",
-                "requires":[
-                    {
-                        "requireType":"questProgress",
-                        "requireID":"flagstone",
-                        "value":70
-                    }
-                ]
-            },
             {
                 "text":"I have been inside Flagstone, but I will go back and find out more.",
                 "nextPhraseID":"X",
@@ -3979,11 +4126,15 @@
     },
     {
         "id":"yolgen_surroundings_flagstone_4",
-        "message":"Thanks to you my friend, we don't need to worry about the undead anymore.",
+        "message":"Yes, thanks to you my friend, we don't need to worry about the undead anymore.",
         "replies":[
             {
                 "text":"There was something else I wanted to ask you about.",
                 "nextPhraseID":"yolgen_surroundings_0"
+            },
+            {
+                "text":"Where do you think they came from?",
+                "nextPhraseID":"yolgen_1"
             }
         ]
     },
@@ -4080,7 +4231,6 @@
     {
         "id":"stoutford_castle_0",
         "message":"Ah another mortal! You shall be another servant in Lord Erwyn's army! Ha Ha!",
-        "switchToNPC":"erwyn_knight",
         "replies":[
             {
                 "text":"No thank you. Maybe another time.",
@@ -4149,7 +4299,7 @@
                 "nextPhraseID":"stoutford_castle_3b"
             },
             {
-                "text":"You are very rude and poorly educated. May I should introduce myself? $playername is my name.",
+                "text":"You are very rude and poorly educated. Maybe I should introduce myself? $playername is my name.",
                 "nextPhraseID":"stoutford_castle_3c"
             },
             {
@@ -4371,7 +4521,7 @@
                 "nextPhraseID":"yolgen_castle_2a"
             },
             {
-                "text":"Undeads are no match for me.",
+                "text":"The undead are no match for me.",
                 "nextPhraseID":"yolgen_castle_2a"
             }
         ]
@@ -4455,7 +4605,7 @@
     },
     {
         "id":"yolgen_castle_6",
-        "message":"That is it. The ring is destroyed. I just wonder where it came from. Maybe from the depths of Mt. Galmore, or some mischievous traveller put it on Lord Erwyn's remains? Anyway, my friend, I and the people of Stoutford are most grateful.",
+        "message":"That is it. The ring is destroyed. I wonder where it came from. Maybe from the depths of Mt. Galmore, or some mischievous traveller put it on Lord Erwyn's remains? Anyway, my friend, I and the people of Stoutford are most grateful.",
         "switchToNPC":"yolgen",
         "replies":[
             {
@@ -5014,7 +5164,7 @@
             },
             {
                 "rewardType":"questProgress",
-                "rewardID":"stn_gyra",
+                "rewardID":"stn_quest_gyra",
                 "value":99
             },
             {
@@ -5101,7 +5251,7 @@
         "message":"Hi kid. It is nice and warm here next to the fire. Come and make yourself comfortable.",
         "replies":[
             {
-                "text":"Ah, no thank you. I have more interesting things to do now.",
+                "text":"Ah, no thank you. I have more interesting things to do.",
                 "nextPhraseID":"stoutford_guard_camp2_10"
             }
         ]
@@ -5128,7 +5278,7 @@
     },
     {
         "id":"stoutford_guard_camp2_30",
-        "message":"We just saw another horde of undead approach the castle when we left. We hurried to this place, so that we can be back in time to be able to help.",
+        "message":"We saw another horde of undead approach the castle just as we left. We hurried here, so that we can complete our exercise and be back in time to be able to help.",
         "replies":[
             {
                 "text":"You mean, you ran away just in time, before you got involved in the fight?",
@@ -5149,7 +5299,7 @@
                 "nextPhraseID":"X"
             },
             {
-                "text":"I had better leave now. And you need not hurry with your exercise. All your comrades have already been killed by the undead.",
+                "text":"I had better leave now. You do not need to hurry with your exercise. All your comrades have already been killed by the undead.",
                 "nextPhraseID":"X",
                 "requires":[
                     {
@@ -9690,14 +9840,14 @@
         "switchToNPC":"mikhail",
         "replies":[
             {
-                "text":"Mikhail! You here?",
+                "text":"Mikhail! You are here?",
                 "nextPhraseID":"stn_colonel_131_2"
             }
         ]
     },
     {
         "id":"stn_colonel_131_2",
-        "message":"We need you at home. Andor is back since long, and we have our hands full trying to control the rat plague.",
+        "message":"We need you back home. Andor is back since a long time ago, and we have our hands full trying to control the rat plague.",
         "replies":[
             {
                 "text":"Oh dear, really?",
@@ -9710,7 +9860,7 @@
         "message":"Come with me now. And give me back my ring.",
         "replies":[
             {
-                "text":"Sure, here is your ring. It was very useful in the beginning, but now I don't need it anymore.",
+                "text":"Sure, here is your ring. It was very useful in the beginning, but I don't need it anymore.",
                 "nextPhraseID":"stn_colonel_131_4a",
                 "requires":[
                     {
@@ -9764,7 +9914,7 @@
     },
     {
         "id":"stn_colonel_131_4a",
-        "message":"[Ring taken]\nThank you, stupid.",
+        "message":"[Ring taken]\nThank you, stupid boy.",
         "replies":[
             {
                 "text":"What?",
@@ -9785,7 +9935,7 @@
     },
     {
         "id":"stn_colonel_131_4b",
-        "message":"You think yourself clever? Useless kid!",
+        "message":"You think you are clever? Useless kid!",
         "replies":[
             {
                 "text":"What?",
@@ -9820,7 +9970,7 @@
         "switchToNPC":"stn_colonel",
         "replies":[
             {
-                "text":"A Poser? What's this?",
+                "text":"A Poser? What's that?",
                 "nextPhraseID":"stn_colonel_132_10"
             }
         ],
@@ -9857,7 +10007,7 @@
     },
     {
         "id":"stn_colonel_132_20a",
-        "message":"A poser could imitate someone you have in mind lately. And if you give him some object, then he turns it into a second duplicate.",
+        "message":"A poser can imitate someone you have had in mind recently. Also, if you give him some object, then he can turn it into a second duplicate.",
         "replies":[
             {
                 "text":"Yes, but two Mikhails were a little bit too conspicuous.",
@@ -9867,7 +10017,7 @@
     },
     {
         "id":"stn_colonel_132_20b",
-        "message":"A poser could imitate one person you have in mind lately, if you don't give him anything.",
+        "message":"A poser can imitate a person you have had in mind recently, if you don't give him anything.",
         "replies":[
             {
                 "text":"So Mikhail wasn't really here and I didn't kill him. I'm relieved.",
@@ -10628,5 +10778,143 @@
                 "value":86
             }
         ]
+    },
+    {
+        "id":"been_to_remgard",
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"nondisplay_2",
+                "value":170
+            }
+        ]
+    },
+    {
+        "id":"stoutford_widow_thorns72_70",
+        "message":"Any news about the murderer?",
+        "replies":[
+            {
+                "text":"Yes, but it's not good news. Tahalendor won't believe me.",
+                "nextPhraseID":"stoutford_widow_thorns74_1"
+            }
+        ]
+    },
+    {
+        "id":"blornvale_thorns72_10",
+        "message":"That was - a potion of truth! How dare you! Did you think I wouldn't recognize it?",
+        "replies":[
+            {
+                "text":"it was worth a try.",
+                "nextPhraseID":"X"
+            }
+        ],
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"thorns_vengeance",
+                "value":74
+            }
+        ]
+    },
+    {
+        "id":"blornvale_thorns72_20",
+        "message":"You gave me a potion of truth! How dare you! Did you think I wouldn't recognize it?",
+        "replies":[
+            {
+                "text":"That will not help you. You are forced to tell the truth.",
+                "nextPhraseID":"blornvale_thorns72_30"
+            }
+        ],
+        "rewards":[
+            {
+                "rewardType":"spawnAll",
+                "rewardID":"tahalendor2",
+                "mapName":"stoutford_potion"
+            }
+        ]
+    },
+    {
+        "id":"blornvale_thorns72_30",
+        "message":"I don't think so. After all, I'm a potion maker and I have an antidote for it.",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"blornvale_thorns72_40"
+            }
+        ]
+    },
+    {
+        "id":"blornvale_thorns72_40",
+        "message":"Ah, I see, Tahalendor is here too, fine. Tahalendor, here is a stupid little kid with too much imagination. Please take it with you.",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"blornvale_thorns72_50"
+            }
+        ]
+    },
+    {
+        "id":"blornvale_thorns72_50",
+        "message":"Sorry Blornvale, first I have to ask you if you killed Aryfora's father, your own brother?",
+        "switchToNPC":"tahalendor2",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"blornvale_thorns72_60"
+            }
+        ]
+    },
+    {
+        "id":"blornvale_thorns72_60",
+        "message":"Of course not. Nobody is sadder about the loss than me.",
+        "switchToNPC":"stoutford_alchemist",
+        "replies":[
+            {
+                "text":"He lies. Can't you see?",
+                "nextPhraseID":"blornvale_thorns72_70"
+            }
+        ]
+    },
+    {
+        "id":"blornvale_thorns72_70",
+        "message":"Here, Tahalendor, I'll give you a bottle of your favorite potion. And please take this child with you when you go.",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"blornvale_thorns72_80"
+            }
+        ]
+    },
+    {
+        "id":"blornvale_thorns72_80",
+        "message":"I will, sorry for disturbing you.",
+        "switchToNPC":"tahalendor2",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"blornvale_thorns72_90"
+            }
+        ]
+    },
+    {
+        "id":"blornvale_thorns72_90",
+        "message":"And you child, go away now and tell no more fairy tales.",
+        "replies":[
+            {
+                "text":"But ...",
+                "nextPhraseID":"blornvale_thorns72_92"
+            }
+        ],
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"thorns_vengeance",
+                "value":75
+            }
+        ]
+    },
+    {
+        "id":"blornvale_thorns72_92",
+        "message":"No more words. Go now!"
     }
 ]

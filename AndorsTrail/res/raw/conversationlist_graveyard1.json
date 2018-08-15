@@ -96,7 +96,7 @@
     },
     {
         "id":"algore_10",
-        "message":"Oh yeah? What's it to you kid? BURP...If you want to know, it will cost you two bottles of Lowyna\u2019s special brew.",
+        "message":"Oh yeah? What's it to you kid? BURP... If you want to know, it will cost you two bottles of Lowyna\u2019s special brew.",
         "rewards":[
             {
                 "rewardType":"questProgress",
@@ -179,6 +179,18 @@
                         "requireID":"graveyard_quest",
                         "value":95,
                         "negate":true
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"graveyard_quest",
+                        "value":100,
+                        "negate":true
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"graveyard_quest",
+                        "value":105,
+                        "negate":true
                     }
                 ]
             },
@@ -198,12 +210,16 @@
                         "negate":true
                     }
                 ]
+            },
+            {
+                "text":"Don't breathe on me! I'm leaving!",
+                "nextPhraseID":"X"
             }
         ]
     },
     {
         "id":"algore_99",
-        "message":"You actually opened the chest? That sword looks expensive . . . could buy a lot of Lowyna's special brew . . . sorry kid, but I need that sword!",
+        "message":"You actually opened the chest? That sword must be worth a lot of money... could buy a lot of Lowyna's special brew... Sorry kid, but I need that sword!",
         "replies":[
             {
                 "text":"I went through hell to get this sword. I won't give it to you without a fight.",
@@ -217,13 +233,40 @@
                 ]
             },
             {
-                "text":"I went through a lot to get this sword . . . but you suffered more than me. I won't fight you. If you want it that badly, the sword is yours.",
+                "text":"I went through a lot to get this sword... but you suffered more than me. I won't fight you. If you want it that badly, the sword is yours.",
                 "nextPhraseID":"algore_99b",
                 "requires":[
                     {
                         "requireType":"inventoryRemove",
                         "requireID":"lifetaker",
                         "value":1
+                    }
+                ]
+            },
+            {
+                "text":"Yes, I have the sword, see here!",
+                "nextPhraseID":"algore_99c",
+                "requires":[
+                    {
+                        "requireType":"wear",
+                        "requireID":"lifetaker"
+                    }
+                ]
+            },
+            {
+                "text":"I did find the sword, but I don't have it anymore.",
+                "nextPhraseID":"algore_99d",
+                "requires":[
+                    {
+                        "requireType":"inventoryKeep",
+                        "requireID":"lifetaker",
+                        "value":1,
+                        "negate":true
+                    },
+                    {
+                        "requireType":"wear",
+                        "requireID":"lifetaker",
+                        "negate":true
                     }
                 ]
             }
@@ -606,7 +649,7 @@
     },
     {
         "id":"algore_85",
-        "message":"The ground began to tremble and darkness filled the sky. This was followed by a cracking sound, the loudest sound my ears ever heard, making a gust of cold air rush past me. Then, corpses began to claw their way to the surface. The odour . . . it was putrid.",
+        "message":"The ground began to tremble and darkness filled the sky. This was followed by a cracking sound, the loudest sound my ears ever heard, making a gust of cold air rush past me. Then, corpses began to claw their way to the surface. The odour... it was putrid.",
         "replies":[
             {
                 "text":"N",
@@ -626,7 +669,7 @@
     },
     {
         "id":"algore_87",
-        "message":"(Hagale finishes the second bottle of Lowyna\u2019s special brew) . . . Sure do. I hope you know what you\u2019re doing kid.",
+        "message":"(Hagale finishes the second bottle of Lowyna\u2019s special brew)... Sure do. I hope you know what you\u2019re doing kid.",
         "replies":[
             {
                 "text":"N",
@@ -682,7 +725,7 @@
     },
     {
         "id":"algore_86b",
-        "message":"My daughter passed away shortly after I returned. I failed my wife and my daughter. I lost everything. I buried my family in Loneford, gave up my trade, and came here. Now, I drink Lowyna\u2019s special brew all day . . . it helps me forget.",
+        "message":"My daughter passed away shortly after I returned. I failed my wife and my daughter. I lost everything. I buried my family in Loneford, gave up my trade, and came here. Now, I drink Lowyna\u2019s special brew all day... it helps me forget.",
         "replies":[
             {
                 "text":"I'm sorry for your losses. You have suffered a lot. I want to finish what you started. Do you still have that text?",
@@ -1079,6 +1122,17 @@
             },
             {
                 "text":"N",
+                "nextPhraseID":"algore_special2",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"graveyard_quest",
+                        "value":100
+                    }
+                ]
+            },
+            {
+                "text":"N",
                 "nextPhraseID":"algore_01"
             }
         ]
@@ -1123,6 +1177,29 @@
                         "requireType":"questProgress",
                         "requireID":"nondisplay_2",
                         "value":90,
+                        "negate":true
+                    }
+                ]
+            },
+            {
+                "text":"N",
+                "nextPhraseID":"cithurn_64",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"waterwayacave",
+                        "value":10
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"waterwayacave",
+                        "value":12,
+                        "negate":true
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"charwood2",
+                        "value":50,
                         "negate":true
                     }
                 ]
@@ -1457,7 +1534,7 @@
     },
     {
         "id":"algore_11",
-        "message":"Alright kid!\n\n(Hagale immediately opens one of the bottles and takes a big swig, which he loudly swallows before wiping his mouth on the sleeve of his tattered shirt)\n\nYeah, I know something about that chest . . . BURP . . . I almost opened it.",
+        "message":"Alright kid!\n\n(Hagale immediately opens one of the bottles and takes a big swig, which he loudly swallows before wiping his mouth on the sleeve of his tattered shirt)\n\nYeah, I know something about that chest... BURP... I almost opened it.",
         "replies":[
             {
                 "text":"N",
@@ -1520,7 +1597,7 @@
     },
     {
         "id":"algore_32",
-        "message":"We were only halfway there we were attacked by Plaguestriders. My daughter and I managed to escape\n. . .\n(Hagale takes another long swig from the bottle of Lowyna\u2019s special brew)\n. . . but my wife did not survive.",
+        "message":"We were only halfway there when we were attacked by Plaguestriders. My daughter and I managed to escape...\n(Hagale takes another long swig from the bottle of Lowyna\u2019s special brew)... but my wife did not survive.",
         "replies":[
             {
                 "text":"N",
@@ -1530,7 +1607,7 @@
     },
     {
         "id":"algore_33",
-        "message":"My daughter was afflicted by a nasty form of blistering skin. I rushed her back to Loneford. I thought with rest, good food, and water she could pull through . . . but although the blisters were gradually healing, my daughter's health continued to decline.",
+        "message":"My daughter was afflicted by a nasty form of blistering skin. I rushed her back to Loneford. I thought with rest, good food, and water she could pull through... but although the blisters were gradually healing, my daughter's health continued to decline.",
         "replies":[
             {
                 "text":"N",
@@ -1590,7 +1667,17 @@
     },
     {
         "id":"graveyardtraveler_60",
-        "message":" Maybe he knows more. You should give him a visit."
+        "message":" Maybe he knows more. You should give him a visit.",
+        "replies":[
+            {
+                "text":"OK, I'll do that.",
+                "nextPhraseID":"X"
+            },
+            {
+                "text":"Where is the Wood settlement?",
+                "nextPhraseID":"graveyardtraveler61"
+            }
+        ]
     },
     {
         "id":"cithurn_62",
@@ -1741,6 +1828,13 @@
             {
                 "text":"Fine. If I'm back around here sometime in the future maybe I'll offer my help again. Or maybe I won't.",
                 "nextPhraseID":"X"
+            }
+        ],
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"waterwayacave",
+                "value":12
             }
         ]
     },
@@ -2139,7 +2233,7 @@
     },
     {
         "id":"throthaus_1",
-        "message":"No. Is there anythng else?",
+        "message":"No. Is there anything else?",
         "replies":[
             {
                 "text":"What do you do?",
@@ -2456,6 +2550,107 @@
                         "value":80
                     }
                 ]
+            }
+        ]
+    },
+    {
+        "id":"graveyardtraveler61",
+        "message":"South of the Duleian road, close to Fallhaven.",
+        "replies":[
+            {
+                "text":"OK. I'll go there now.",
+                "nextPhraseID":"X"
+            }
+        ]
+    },
+    {
+        "id":"algore_99c",
+        "message":"Hey kid! Stop waving that thing at me! If you want to talk to me, put it away first!"
+    },
+    {
+        "id":"algore_99d",
+        "message":"So where is it?",
+        "replies":[
+            {
+                "text":"I dropped it somewhere.",
+                "nextPhraseID":"algore_99e"
+            },
+            {
+                "text":"I sold it.",
+                "nextPhraseID":"algore_99f"
+            }
+        ]
+    },
+    {
+        "id":"algore_99e",
+        "message":"Not too bright, are you kid? Perhaps you should go and pick it up again."
+    },
+    {
+        "id":"algore_99f",
+        "message":"I gave you the text you needed to get that sword. I think some of that gold should be mine. If you don't give me some then I'll take it from you.",
+        "replies":[
+            {
+                "text":"OK, OK. I guess it's fair that you should get a share. Here's 1000 gp.",
+                "nextPhraseID":"algore_99g",
+                "requires":[
+                    {
+                        "requireType":"inventoryRemove",
+                        "requireID":"gold",
+                        "value":1000
+                    }
+                ]
+            },
+            {
+                "text":"No way! I fought to get the sword, and the profit is mine!",
+                "nextPhraseID":"algore_99i"
+            }
+        ]
+    },
+    {
+        "id":"algore_99g",
+        "message":"Thanks kid. It's good to see you have some honor.",
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"graveyard_quest",
+                "value":100
+            }
+        ]
+    },
+    {
+        "id":"algore_99h",
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"graveyard_quest",
+                "value":100
+            }
+        ]
+    },
+    {
+        "id":"algore_special2",
+        "message":"Thanks for the gold kid. I decided that with the money I can rebuild my life. I'm going to sober up and start trading again. I'll be leaving here soon.",
+        "replies":[
+            {
+                "text":"Good luck!",
+                "nextPhraseID":"X"
+            }
+        ]
+    },
+    {
+        "id":"algore_99i",
+        "message":"We'll see about that.",
+        "replies":[
+            {
+                "text":"Yes, we will!",
+                "nextPhraseID":"F"
+            }
+        ],
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"graveyard_quest",
+                "value":105
             }
         ]
     }

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" tiledversion="1.0.2" orientation="orthogonal" renderorder="right-down" width="24" height="18" tilewidth="32" tileheight="32" nextobjectid="10">
+<map version="2017.05.26" orientation="orthogonal" renderorder="right-down" width="24" height="18" tilewidth="32" tileheight="32" nextobjectid="10">
  <properties>
   <property name="outdoors" value="1"/>
  </properties>
@@ -190,7 +190,7 @@
  </layer>
  <layer name="Objects" width="24" height="18">
   <data encoding="base64" compression="zlib">
-   eJx9VMFKAzEQHVZWsRfdoFtX+gX1op/jUTwJ+hP+g3gW8RNURC+6oLaUShFaq4L0orQIKp6sHsyQjPs2m/VBSLIzeTN5M1kion5EfzhPiC70GOoxgvlB+xzHRB8q83V93LkMYm8n+T3zuzZGatecJ3KLj+SUxsUc5D4vNn9f3oyW5wziJM7vbyCXO6uf8Dciw4exJF839khld+MYXajFo17f2/21npvafmTHaVxeK5wld65fz3K9QgyGfF+eI6oERJdWqyb4TQfGzlgJiTrafpsUuRDbs9k6DsxYDPJaJfY7rvdDo+nQqQHjISrWQrg/J828Fxr+dR3/cD5vO6sRrYbmjg0nd+xtBvcT957wT0xluQo/76tga2n+DasPo6a/PQUmb9ERsaY5Nq3/u/XpWv1nlKk7g20HYXbuqkT3BPjfwGfXiYu99N/4sZp8qXxvCgag2Xc16z3pnbZTQ+ln942xPvgfSqHG0p/1BaIlz8C4rSj/X/FhrLKYDOmnNPb7122MncBvf7Y8EdSZ0ffo5daBIbw90EC0Fj63N9neUfl4vOY6YQzMuVKSP57HGdGB+AMnF7k/v23Rku8yVEVfxJYnH4ktOozhPL57sf8CgKC8/g==
+   eJx9VM1Kw0AQHlai2IsmaGqkT1Av+jgexZOgL+E7iGcRH0FF9KIBtaVUitCqFaQXpUVQ8WT14A47YyaTjR8s+zOTb2a/mSwAwH0IfzhPAC7sGNoxEnPf+hzHAB9R5qt99FwGtreT/B75tQ2R0hrzlNzswzmlcTEHvs8L5e/LG9HyfCNxEuf3NyKXO9KP+Ruh45OxOF8deyT0xBhdUYtHu36g/bWdm9Z+ROM0Lq+VnGXufeJ6FTEQPdovzwFUDMAladUUftPG2RErAUDH2m+TIpfE9my2jo0biyavVULncr0fOE2HqgZ8B10L5v6cdPNe4PjXbfzD+bztrAawGrg7NlTusrcR2E/Ye8w/MZXlyvy4rwpby/JvkD6Imj17MnkdJdYsxyb5v1M+XdJ/JnJ1R6DtIMi+uyrRPRH8b8JnV8WVvfTf+CFNvqJ8bzIGQrPvatZ73DttVUPuZ/2PYV3lO5SKGnN/1hcAljxDxm2F+XfFh3GUxURwP6Wx379OMXaM3/5MPKHJOMug64Bg3p7QgLVmPt2baO+oMwTWScaQOVdK8tfw3UHGGqi4fH/8t1lLvMswKvpKbHny4disw1i9jwy2/wKJv7aS
   </data>
  </layer>
  <layer name="Above" width="24" height="18">
@@ -200,7 +200,7 @@
  </layer>
  <layer name="Walkable" width="24" height="18">
   <data encoding="base64" compression="zlib">
-   eJy1k8ENwCAMA5mi+6/AhlV/PBL7nLaW+CBysQPsa60N1yN6drL+5J+a1FF22kPVOL3NQfrSu1KsL/nnvmK4+VQsyuxm6fgqd6UqNxV9p4TTeVEzd56dp9R/+jdJLX1nLmvSS/V2OZTHZD4dc5KLnlVcxb8BBqfHyA==
+   eJy1k9EJwCAMRJ2i+6/ghtKPQhFz9xL1QBDUl+QS+9Nah+sVvVtZN/l/Vd5RdjaGe6O0623EITHmM8W6xXe+Zfr67QkzysXxVd0rrbyiys6S4kS5KM9dzs6nU3+B1ET/qOPv5OniRzNE+FV/TtRF786xaY8GhlfQVQ==
   </data>
  </layer>
  <objectgroup name="Mapevents" visible="0">
@@ -229,7 +229,7 @@
    </properties>
   </object>
  </objectgroup>
- <objectgroup name="Spawn" visible="0">
+ <objectgroup name="Spawn">
   <object id="5" name="venomfang_1" type="spawn" x="0" y="320" width="320" height="224">
    <properties>
     <property name="quantity" value="3"/>
