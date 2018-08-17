@@ -160,10 +160,13 @@
 	<string name="about_button3">Лицензия</string>
 	<string name="about_contents3">" Это бесплатное приложение; вы можете изменять ее и модифицировать согласно правилам GNU General Public License изданными Free Software Foundation; либо лицензии версии 2, либо (на ваше усмотрение) более поздней версией. &lt;br /&gt; &lt;br /&gt; Игра создана с надеждой что она будет интересна, но БЕЗ ВСЯКИХ ГАРАНТИЙ; даже без подразумеваемых гарантии ТОВАРНОЙ ПРИГОДНОСТИ или ПРИГОДНОСТИ ДЛЯ ОПРЕДЕЛЕННЫХ ЦЕЛЕЙ. Смотрите GNU General Public License для больших подробностей.&lt;br /&gt; &lt;br /&gt; Вы принимаете условия GNU General Public License вместе с установкой этой программы; если нет, смотрите &lt;a href=http://www.gnu.org/licenses&gt;http://www.gnu.org/licenses&lt;/a&gt;&lt;br /&gt; &lt;br /&gt; За исходным кодом и пожеланиями, пожалуйста, посетите страницу проекта на &lt;a href=https://github.com/Zukero/andors-trail/&gt;https://github.com/Zukero/andors-trail/&lt;/a&gt;&lt;br /&gt; "</string>
 	<string name="dialog_newversion_title">Приветствуем</string>
-	<string name="dialog_newversion_message">" Спасибо за загрузку игры След Эндора!
-\n Запомните, игра находится в СТАДИИ РАЗРАБОТКИ, это означает что не все карты еще закончены.
-\n Пожалуйста, посетите форум проекта, чтобы получить более подробную информацию или внести свой вклад в проект (см. Об игре).
-\n Спасибо всем за отзывы! "</string>
+	<string name="dialog_newversion_message">"Спасибо за загрузку игры След Эндора!
+\n
+\n\tЗапомните, игра находится в СТАДИИ РАЗРАБОТКИ, это означает что не все карты еще закончены.
+\n
+\n\tПожалуйста, посетите форум проекта, чтобы получить более подробную информацию или внести свой вклад в проект (см. Об игре).
+\n
+\n\tСпасибо всем за отзывы! "</string>
 
 	<string name="questlog_includecompleted_prompt">Выберите квесты для отображения</string>
 	<string name="questlog_includecompleted_hidecompleted">Скрыть завершенные квесты</string>
@@ -441,7 +444,7 @@
 	<string name="heroinfo_useitem_cost">Цена использования предмета (ОД):</string>
 	<string name="combat_result_monstermoved">%1$s действий.</string>
 	<string name="combat_log_title">Лог боя</string>
-	<string name="localize_resources_from_mo_filename">ru.mo</string>
+	<string name="localize_resources_from_mo_filename"></string>
 	<string name="conversation_reward_quest_finished">[Квест завершен: \"%1$s\"]</string>
 	<string name="conversation_reward_quest_updated">[Квест обновлен: \"%1$s\"]</string>
 
@@ -592,4 +595,21 @@
 	<string name="change_theme_requires_restart">Для изменения темы интерфейса требуется перезапуск. След Эндора закрыт.</string>
 	
 	
-</resources>
+<string name="dialog_recenter">В исходное</string>
+	<string name="dialog_more">Ещё</string>
+
+	<string name="dialog_monsterencounter_conditions">Воздействия</string>
+
+	<string name="combat_condition_monster_apply">%1$s зависим от %2$s.</string>
+	<string name="combat_condition_monster_clear">%1$s очищается от %2$s.</string>
+	<string name="combat_condition_monster_immune">%1$s теперь имеет иммунитет от %2$s.</string>
+	
+	
+	<string name="actorcondition_info_immunity">Иммунитет к %1$s</string>
+	<string name="iteminfo_effect_works_on_attacker">На атакующем</string>
+	<string name="iteminfo_effect_works_when_hit_by_attacker">При попадании атакующего</string>
+	<string name="iteminfo_effect_works_when_killed_by_attacker">При убийстве атакующего</string>
+	
+	<string name="inventory_selectitem">Выберите предмет для назначения</string>
+	<string name="combat_log_noentries">Нет записей.</string>
+	</resources>
