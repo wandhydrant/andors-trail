@@ -17,7 +17,7 @@
 	<string name="dialog_loading_failed_title">Innlesingen gikk galt</string>
 	<string name="dialog_close">Lukk</string>
 
-	<string name="dialog_monsterencounter_title">Treffning</string>
+	<string name="dialog_monsterencounter_title">Trefning</string>
 	<string name="dialog_monsterencounter_message">Vil du angripe?
 \nVanskelighetsgrad: %1$s</string>
 	<string name="dialog_monsterencounter_info">Info</string>
@@ -145,7 +145,7 @@
 
 	<string name="levelup_description">Velkommen til nivået %1$d!</string>
 	<string name="levelup_add_health">Øk helse (+%1$d HP)</string>
-	<string name="levelup_add_health_description">Øker maksimal helse med %1$d</string>
+	<string name="levelup_add_health_description">Øker maksimal helse med %1$d.</string>
 	<string name="levelup_add_attackchance">Øk angrepssjanse (+%1$d)</string>
 	<string name="levelup_add_attackchance_description">Forbedrer grunnleggende angrepssjanse med %1$d.</string>
 	<string name="levelup_add_attackdamage">Øk angrepsskade (+%1$d)</string>
@@ -552,4 +552,79 @@
 \nMed ett nivå av denne ferdigheten, kan %2$d %% av våpenets kvaliteter som bæres i sekundær hånd brukes, og angrepshastigheten er i sum den for våpenet i hovedhånden, pluss %4$d %% av angrepshastigheten for våpenet i sekundær hånd.
 \n
 \nMed to nivåer av denne ferdigheten, kan %4$d %% av våpenets kvaliteter som bæres i sekundær hånd brukes, og angrepshastigheten tilsvarer den som er høyest av angrepshastighetene for de to brukte våpnene.</string>
-	</resources>
+	<string name="dialog_recenter">Resentrer</string>
+	<string name="dialog_more">Mer</string>
+
+	<string name="dialog_monsterencounter_conditions">Effekter</string>
+
+	<string name="heroinfo_skill_categories">Kategori</string>
+	<string name="heroinfo_skill_sort">Sorter</string>
+	<string name="heroinfo_inventory_categories">Kategori</string>
+	<string name="heroinfo_inventory_sort">Sorter etter</string>
+	<string name="heroinfo_healthpoints">Helsepoeng (HP):</string>
+	<string name="heroinfo_experiencepoints">Erfaringspoeng (XP):</string>
+	<string name="combat_taunt_monster">Du egger opp %1$s!</string>
+	<string name="combat_condition_player_apply">Du er påvirket av %1$s.</string>
+	<string name="combat_condition_player_clear">Du er kurert for %1$s.</string>
+	<string name="combat_condition_player_immune">Du er nå immun mot %1$s.</string>
+	<string name="combat_condition_monster_apply">%1$s er påvirket av %2$s.</string>
+	<string name="combat_condition_monster_clear">%1$s er kurert for %2$s.</string>
+	<string name="combat_condition_monster_immune">%1$s er nå immun mot %2$s.</string>
+	
+	
+	<string name="startscreen_newgame_start">Start spill</string>
+	<string name="startscreen_selectherosprite">Velg din helt</string>
+	<string name="shop_item_sort">Sorter</string>
+
+	<string name="actorcondition_info_immunity">Immun mot %1$s</string>
+	<string name="iteminfo_effect_works_on_attacker">På angriper</string>
+	<string name="iteminfo_effect_works_when_hit_by_attacker">Når truffet av angriper</string>
+	<string name="iteminfo_effect_works_when_killed_by_attacker">Når drept av angriper</string>
+	
+	<string name="inventory_selectitem">Velg gjenstand å tildele</string>
+	<string name="combat_log_noentries">Ingen oppføringer enda.</string>
+	<string name="inventory_category_all">Alle</string>
+	<string name="inventory_category_favorites">Favoritter</string>
+	<string name="inventory_category_weapons">Våpen</string>
+	<string name="inventory_category_armor">Rustning</string>
+	<string name="inventory_category_usable">Næringsmiddel</string>
+	<string name="inventory_category_quest">Oppdragsgjenstand</string>
+	<string name="inventory_category_other">Annet</string>
+
+	<string name="inventory_sort_custom">Usortert</string>
+	<string name="inventory_sort_name">Navn</string>
+	<string name="inventory_sort_price">Pris</string>
+	<string name="inventory_sort_quantity">Mengde</string>
+	<string name="inventory_sort_rarity">Sjeldenhet</string>
+	<string name="inventory_sort_type">Type</string>
+
+	<string name="shoplist_sort_custom">Usortert</string>
+	<string name="shoplist_sort_name">Navn</string>
+	<string name="shoplist_sort_price">Pris</string>
+	<string name="shoplist_sort_quantity">Mengde</string>
+	<string name="shoplist_sort_rarity">Sjeldenhet</string>
+	<string name="shoplist_sort_type">Type</string>
+
+	<string name="skill_category_all">Alle</string>
+	<string name="skill_category_offense">Angrep</string>
+	<string name="skill_category_defense">Forsvar</string>
+	<string name="skill_category_criticals">Kritiske</string>
+	<string name="skill_category_immunity">Immunitet</string>
+	<string name="skill_category_utility">Verktøy</string>
+	<string name="skill_category_speciality">Spesialitet</string>
+	<string name="skill_category_proficiency">Ferdighetsnivå</string>
+
+	<string name="skill_sort_unsorted">Usortert</string>
+	<string name="skill_sort_name">Navn</string>
+	<string name="skill_sort_points">Poeng</string>
+	<string name="skill_sort_unlocked">Opplåst</string>
+	
+	<string name="preferences_display_theme_title">Drakt</string>
+	<string name="preferences_display_theme">Velg grensesnittdrakt. (Programomstart påkrevd)</string>
+	<string name="preferences_display_theme_blue">Kobolt</string>
+	<string name="preferences_display_theme_green">Malakitt</string>
+	<string name="preferences_display_theme_charcoal">Obsidian</string>
+	<string name="change_theme_requires_restart">Endring av programmets grensesnitt krever omstart. Andors sti har blitt lukket.</string>
+	
+	
+</resources>
