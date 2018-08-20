@@ -26,7 +26,7 @@
 
 	<string name="status_hp">HP:</string>
 	<string name="status_ap">AP:</string>
-	<string name="status_exp">Livello:</string>
+	<string name="status_exp">Punti Esperienza (XP):</string>
 
 	<string name="heroinfo_char">Panoramica</string>
 	<string name="heroinfo_inv">Inventario</string>
@@ -521,7 +521,13 @@
 	<string name="skill_longdescription_armor_prof_unarmored">Quando combatti senza una parte di armatura equipaggiata, guadagni %1$d di possibilità di Difesa per il livello di abilità. Gli oggetti di stoffa non sono considerati come armatura.</string>
 	<string name="skill_longdescription_armor_prof_light">Per ogni livello di abilità, incrementa la possibilità di Difesa di ogni parte di Armatura leggera indossata del %1$d %% della loro possibilità di Difesa originale. Armature leggere includono pelle, metallo leggero e armature nascoste.</string>
 	<string name="skill_longdescription_armor_prof_heavy">Per ogni livello di abilità, aumenta la probabilità di Difesa di ogni parte di Armatura pesante indossato del %1$d %% della loro possibilità di Difesa originale. Parti di armatura pesante hanno le loro penalità di movimento ridotte del %2$d %% per ogni livello di abilità e loro penalità di velocità d\'Attacco ridotte del %3$d %% per ogni livello di Abilità. Armature pesanti inludono armature di metallo, di cotta di maglia e di piastre.</string>
-	<string name="skill_longdescription_fightstyle_dualwield">Dà benefici quando combatti con due armi allo stesso tempo, una nella mano principale e l\'altra nella mano secondaria.\n\nSenza questa abilità, solo il %1$d %% delle qualità di un\'arma equipaggiata alla mano secondaria sarà usata. Questo include possibilità di Attacco, abilità di Colpo Critico, Danno potenziale e possibilità di Difesa. Senza questa abilità, la velocità di Attacco (costo di AP) nel compiere un attacco è la somma della velocità di Attacco dell\'arma principale e quella dell\'arma usata con la mano secondaria.\n\nCon un livello di abilità, il %2$d %% delle qualità dell\'arma della mano secondaria sarà usato e la velocità di Attacco è la velocità di Attacco dell\'arma nella mano principale più il %3$d %% della velocità di Attacco della mano nella mano secondaria.\n\nCon due livelli di abilità, il %4$d %% delle qualità dell\'arma della mano secondaria sarà usato e la velocità di Attacco eguaglia la velocità di Attacco più alta delle due armi equipaggiate.</string>
+	<string name="skill_longdescription_fightstyle_dualwield">Dà benefici quando combatti con due armi allo stesso tempo, una nella mano principale e l\'altra nella mano secondaria.
+\n
+\nSenza questa abilità, sarà usato solo il %1$d %% delle qualità di un\'arma equipaggiata nella mano secondaria. Questo include possibilità di Attacco, abilità di Colpo Critico, Danno potenziale e possibilità di Difesa. Senza questa abilità, la velocità di Attacco (costo di AP) nel compiere un attacco è la somma della velocità di Attacco dell\'arma principale e quella dell\'arma usata con la mano secondaria.
+\n
+\nCon un livello di abilità, sarà usato il %2$d %% delle qualità dell\'arma della mano secondaria sarà e la velocità di Attacco è la più altra tra qeulle delle due armi più il %3$d %% della velocità della più piccola velocità delle due armi.
+\n
+\nCon due livelli di abilità, il %4$d %% delle qualità dell\'arma della mano secondaria sarà usato e la velocità di Attacco eguaglia la velocità di Attacco più alta delle due armi equipaggiate.</string>
 	<string name="skill_longdescription_fightstyle_2hand">Dà benefici quando usi armi che richiedono entrambe le mani per essere impugnate, come Spade a due mani, Asce Grandi o Martelli Giganti.\n\nOgni livello di abilità incrementa il danno potenziale delle armi a due mani del %1$ d %% del Danno potenziale originale.</string>
 	<string name="skill_longdescription_fightstyle_weapon_shield">Dà benefici quando combatti con un arma nella mano principale e avendo un scudo equipaggiato nella mano secondaria.\n\nOgni livello di abilità aumenta la possibilità di Attacco di armi del %1$d %% delle loro possibilità di Attacco originale e la possibilità di Difesa degli scudi del %2$d %% delle loro possibilità di Difesa originali.</string>
 	<string name="skill_longdescription_specialization_dualwield">Incrementa la possibilità di Attacco di entrambe le armi impugnate di un ulteriore %1$d %% delle loro possibilità di Attacco originali, in aggiunta ai benefici dati da abilità di stile dell\'arma. Le probabilità di Difesa di entrambe le armi impugnate inoltre sono aumentate del %2$d %% delle loro possibilità di Difesa originale.</string>
@@ -558,4 +564,79 @@
 	<string name="preferences_ui_use_localized_resources">Usa traduzioni dell\'interfaccia e del contenuto, dove presenti. (richiede il riavvio)</string>
 	<string name="change_locale_requires_restart">Cambiamenti in locale richiedono il riavvio. Andor\'s Trail è stato chiuso.</string>
 
+<string name="dialog_recenter">Centraggio</string>
+	<string name="dialog_more">Altro</string>
+
+	<string name="dialog_monsterencounter_conditions">Condizioni</string>
+
+	<string name="heroinfo_skill_categories">Categoria</string>
+	<string name="heroinfo_skill_sort">ordinamento</string>
+	<string name="heroinfo_inventory_categories">Categoria</string>
+	<string name="heroinfo_inventory_sort">Ordinato per</string>
+	<string name="heroinfo_healthpoints">Punti Salute (HP):</string>
+	<string name="heroinfo_experiencepoints">Punti Esperienza (XP):</string>
+	<string name="combat_taunt_monster">Insulti %1$s!</string>
+	<string name="combat_condition_player_apply">Sei colpito da %1$s.</string>
+	<string name="combat_condition_player_clear">Sei ripulito di %1$s.</string>
+	<string name="combat_condition_player_immune">Ora sei immunizzato contro %1$s.</string>
+	<string name="combat_condition_monster_apply">%1$s è contaminato da %2$s.</string>
+	<string name="combat_condition_monster_clear">%1$s è ripulito da %2$s.</string>
+	<string name="combat_condition_monster_immune">%1$s è ora immunizzato contro %2$s.</string>
+	
+	
+	<string name="startscreen_newgame_start">Inizio Gioco</string>
+	<string name="startscreen_selectherosprite">Scegli il tuo eroe</string>
+	<string name="shop_item_sort">Ordina</string>
+
+	<string name="actorcondition_info_immunity">Immune verso %1$s</string>
+	<string name="iteminfo_effect_works_on_attacker">Sull\'attaccante</string>
+	<string name="iteminfo_effect_works_when_hit_by_attacker">Quando colpito da un attacante</string>
+	<string name="iteminfo_effect_works_when_killed_by_attacker">Quando ucciso da un attaccante</string>
+	
+	<string name="inventory_selectitem">Seleziona l\'oggetto da assegnare</string>
+	<string name="combat_log_noentries">Ancora nessun oggetto.</string>
+	<string name="inventory_category_all">Tutto</string>
+	<string name="inventory_category_favorites">Preferiti</string>
+	<string name="inventory_category_weapons">Arma</string>
+	<string name="inventory_category_armor">Armatura</string>
+	<string name="inventory_category_usable">Consumabili</string>
+	<string name="inventory_category_quest">oggetto di missione</string>
+	<string name="inventory_category_other">Altro</string>
+
+	<string name="inventory_sort_custom">Non ordinato</string>
+	<string name="inventory_sort_name">Nome</string>
+	<string name="inventory_sort_price">Prezzo</string>
+	<string name="inventory_sort_quantity">Quantità</string>
+	<string name="inventory_sort_rarity">Rarità</string>
+	<string name="inventory_sort_type">Tipo</string>
+
+	<string name="shoplist_sort_custom">Non ordinato</string>
+	<string name="shoplist_sort_name">Nome</string>
+	<string name="shoplist_sort_price">Prezzo</string>
+	<string name="shoplist_sort_quantity">Quantità</string>
+	<string name="shoplist_sort_rarity">Rarità</string>
+	<string name="shoplist_sort_type">Tipo</string>
+
+	<string name="skill_category_all">Tutto</string>
+	<string name="skill_category_offense">Offesa</string>
+	<string name="skill_category_defense">Difesa</string>
+	<string name="skill_category_criticals">Criticità</string>
+	<string name="skill_category_immunity">Immunità</string>
+	<string name="skill_category_utility">Utilità</string>
+	<string name="skill_category_speciality">Specialità</string>
+	<string name="skill_category_proficiency">Abilità</string>
+
+	<string name="skill_sort_unsorted">Non ordinato</string>
+	<string name="skill_sort_name">Nome</string>
+	<string name="skill_sort_points">Punti</string>
+	<string name="skill_sort_unlocked">Sbloccato</string>
+	
+	<string name="preferences_display_theme_title">Tema</string>
+	<string name="preferences_display_theme">Scegli il tema per l\'Interfaccia Utente (richiede riavvio)</string>
+	<string name="preferences_display_theme_blue">Cobalto</string>
+	<string name="preferences_display_theme_green">Malachite.</string>
+	<string name="preferences_display_theme_charcoal">Ossidiana</string>
+	<string name="change_theme_requires_restart">Cambiare il tema dell\'Interfaccia Utente ricihede il riavvio. Andor\'s Trail è stato chiuso.</string>
+	
+	
 </resources>
