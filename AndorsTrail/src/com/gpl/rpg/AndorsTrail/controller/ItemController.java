@@ -326,7 +326,6 @@ public final class ItemController {
 		boolean addSpace = false;
 		if (attackChance != 0) {
 			sb.append(attackChance);
-			sb.append('%');
 			addSpace = true;
 		}
 		if (minDamage != 0 || maxDamage != 0) {
@@ -354,7 +353,6 @@ public final class ItemController {
 	public static void describeBlockEffect(int blockChance, int damageResistance, StringBuilder sb) {
 		if (blockChance != 0) {
 			sb.append(blockChance);
-			sb.append('%');
 		}
 		if (damageResistance != 0) {
 			sb.append('/');
