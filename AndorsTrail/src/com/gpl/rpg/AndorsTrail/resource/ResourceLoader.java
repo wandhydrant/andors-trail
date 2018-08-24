@@ -76,7 +76,19 @@ public final class ResourceLoader {
 			loader.prepareTileID(R.drawable.ui_splatters1, i+8);
 		}
 		loader.prepareTileID(R.drawable.ui_icon_immunity, 0);
-	
+		
+		//Placeholders for dynamic map tiles
+		loader.prepareTileID(R.drawable.map_dynamic_placeholders, 0);
+		loader.prepareTileID(R.drawable.map_dynamic_placeholders, 1);
+		loader.prepareTileID(R.drawable.map_dynamic_placeholders, 2);
+		loader.prepareTileID(R.drawable.map_dynamic_placeholders, 3);
+		loader.prepareTileID(R.drawable.map_dynamic_placeholders, 4);
+		loader.prepareTileID(R.drawable.map_dynamic_placeholders, 5);
+		loader.prepareTileID(R.drawable.map_dynamic_placeholders, 6);
+		loader.prepareTileID(R.drawable.map_dynamic_placeholders, 7);
+		loader.prepareTileID(R.drawable.map_dynamic_placeholders, 8);
+		loader.prepareTileID(R.drawable.map_dynamic_placeholders, 9);
+
 		// Load effects
 		world.visualEffectTypes.initialize(loader);
 		if (AndorsTrailApplication.DEVELOPMENT_DEBUGMESSAGES) timingCheckpoint("VisualEffectLoader");
@@ -256,6 +268,7 @@ public final class ResourceLoader {
 		loader.prepareTileset(R.drawable.ui_icon_equipment, "ui_icon_equipment", sz1x1, sz1x1, mTileSize);
 		loader.prepareTileset(R.drawable.ui_splatters1, "ui_splatters1", new Size(8, 2), sz1x1, mTileSize);
 		loader.prepareTileset(R.drawable.ui_icon_immunity, "ui_icon_immunity", sz1x1, sz1x1, mTileSize);
+		loader.prepareTileset(R.drawable.map_dynamic_placeholders, "map_dynamic_placeholders", new Size(10, 2), sz1x1, mTileSize);
 
 		loader.prepareTileset(R.drawable.actorconditions_1, "actorconditions_1", new Size(14, 8), sz1x1, mTileSize);
 		loader.prepareTileset(R.drawable.actorconditions_2, "actorconditions_2", sz3x1, sz1x1, mTileSize);
