@@ -113,5 +113,23 @@
             "increaseUseItemCost":-1,
             "increaseReequipCost":-1
         }
+    },
+    {
+        "id":"bwm_gloves",
+        "iconID":"items_armours:38",
+        "name":"Blackwater gloves",
+        "displaytype":"rare",
+        "category":"hnd_lthr",
+        "equipEffect":{
+            "increaseMaxHP":2,
+            "increaseAttackChance":-5,
+            "increaseBlockChance":14,
+            "addedConditions":[
+                {
+                    "condition":"blackwater_misery",
+                    "magnitude":1
+                }
+            ]
+        }
     }
 ]

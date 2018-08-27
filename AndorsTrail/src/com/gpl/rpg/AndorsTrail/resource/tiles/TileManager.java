@@ -74,6 +74,18 @@ public final class TileManager {
 	public static final int iconID_splatter_white_1b = iconID_splatter_white_1a+1;
 	
 	public static final int iconID_immunity_overlay = iconID_splatter_white_1b+1;
+	
+	public static final int tileID_placeholder_hero = iconID_immunity_overlay+1;
+	public static final int tileID_placeholder_hat = tileID_placeholder_hero+1;
+	public static final int tileID_placeholder_armor = tileID_placeholder_hat+1;
+	public static final int tileID_placeholder_necklace = tileID_placeholder_armor+1;
+	public static final int tileID_placeholder_weapon = tileID_placeholder_necklace+1;
+	public static final int tileID_placeholder_shield = tileID_placeholder_weapon+1;
+	public static final int tileID_placeholder_lring = tileID_placeholder_shield+1;
+	public static final int tileID_placeholder_rring = tileID_placeholder_lring+1;
+	public static final int tileID_placeholder_gloves = tileID_placeholder_rring+1;
+	public static final int tileID_placeholder_boots = tileID_placeholder_gloves+1;
+	
 
 
 	public int tileSize;
@@ -122,7 +134,13 @@ public final class TileManager {
 		for(int i : preloadedTileIDs) {
 			result.setBitmap(i, preloadedTiles.getBitmap(i));
 		}
+		//TODO patch placeholders on the fly here.
+		updatePlaceholdersTiles(result, world);
 		return result;
+	}
+
+	private void updatePlaceholdersTiles(TileCollection result, WorldContext world) {
+		result.setBitmap(tileID_placeholder_hero, preloadedTiles.getBitmap(world.model.player.iconID));
 	}
 
 	public HashSet<Integer> getTileIDsFor(PredefinedMap map, LayeredTileMap tileMap, WorldContext world) {

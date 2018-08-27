@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" tiledversion="1.0.2" orientation="orthogonal" renderorder="right-down" width="30" height="30" tilewidth="32" tileheight="32" nextobjectid="39">
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="30" height="30" tilewidth="32" tileheight="32" nextobjectid="39">
  <properties>
   <property name="outdoors" value="1"/>
  </properties>
@@ -186,6 +186,9 @@
  <tileset firstgid="7577" name="map_guynmart" tilewidth="32" tileheight="32" tilecount="128" columns="16">
   <image source="../drawable/map_guynmart.png" width="512" height="256"/>
  </tileset>
+ <tileset firstgid="7705" name="map_dynamic_placeholders" tilewidth="32" tileheight="32" tilecount="20" columns="10">
+  <image source="../drawable/map_dynamic_placeholders.png" width="320" height="64"/>
+ </tileset>
  <layer name="Ground" width="30" height="30">
   <data encoding="base64" compression="zlib">
    eJzt0LENACAQw8Bv2X+SbJNx6BE1Ad7F1ZasUSUAz3Gg58NdB7pr8/du6vOu3aGrhl0AwN0maDSS5w==
@@ -196,7 +199,7 @@
    eJyVVrFu20AM1Vp4SE5OEfgrPCVAkLl/kA5G1vQDu3hvBiMa60HO1s2xY3Ux0NFA9eqj+/RMqioBQSfqjo+P5PGuKI7STIri5+R8PC6LkxxS0Suv+f9G5r2lfoxovEhd/Dexuw38MfxftDbCuCi73ybGtUlHPzy8uYM/HoDp4Z3WODZ3ra4sZV77/a218ZztVBJjxYj0kL3YhmgOLR6aA4j59j+YaterrbrVTcU35MBi9E5rgPFwfV67VQ8+c2yk1iCon534xZiod2B+uu7yZV9NYMf2x6vD9d3RwadK9MD7nDFfPvjcjIfy8fxiWYje4vNAePb88Y+w904NWO6MG+akrKuzTvkxT8WM+Hq6dTofay7NN/bh1sHE4+3dOvm5jETjux6AWwW8lqXPKQU5x3zdu+D91OLeDIyzyZZyZ7GzXEe1ZX5xvDxsiGFjrtdvzJb+S+LDKr+/U0wMX+OtfMdOPXv1wzqLAZ8LK1mjnBVD13E+Uav8XTk1jnpBnXk2mbP9j/rjOPc+7SHGcerEJ6oZcP6SeZs0wZnBMqf6Qi/8SHn/ShzL0j9rbAz8PeXGm3NI3bqDoI7uRkVxPzpi2viHc5+pA7vRmchj5Iv3OXjORkc84ALzcdTtF0P7oKfnnKOeOMebHPPm8m8MTNa5320d/srX+4f1fA429AZXcAb+I8V5RXFtJE5DYuv6RneZWY4tj69yPHTv/iu/fTrUh55JVkfIN8fZar4KamqoPyzal6fSj/ls2jh1Zu+l7Fs9v3UPsUT3kVr6/NA7rL55by+E15reuNfNJR/WsyPbqezaj/JiZ43e1yEexz6+Om+R4rUc25rqm+/VU2eOYv8Gr3Gdgg==
   </data>
  </layer>
- <layer name="Objects_hero" width="30" height="30" visible="0">
+ <layer name="Objects_hero" width="30" height="30">
   <data encoding="base64" compression="zlib">
    eJztkjEKgDAQBLeySWWISjqxsLYVf6AvkPy/0z+YIxHF/tRiB8JtqmEvAQghhBBC/omzQGVTlin3zQO713WOBpjiqW/ZWT2nIP1Wk3xtmZzBXP016aJjKYAheuc4+xecVd6tdBZC3rN2X5f3LL7mlrXf93Q//zMhX3MAXlgLlA==
   </data>
@@ -206,9 +209,9 @@
    eJzNlssNwjAMhrtCy4lVWIE7TMCAIATqkSXgUuDGQ8AOOGojVVFs/2ndqr8UFRXw50fiuJpn2ZWWU8V8ljQr9N+0JTFQZqo4Zoz3ydPtb8nGLrDjbXMx+uerA0+TxvS6EPtN62HoA8cqI++s9VP27mGAXHsNHRvCbsfX1Z8CPM8x+2PkILU/WamcUG3HZk+BOYYvlowS3Kf++779scvdzf3fgo34k3Ivp/iu+SPxwnO+on64bnrigp7LoD+m9EH0TrzRWX/SOjdnfp/XfnCS4u2T12/Qc7g8obnlauF0J9ap4R1zeS5C9xsSu5t/fH1dbTdFnX+EifqjKcbj+OjMbNHL0BnWYq9pbGSm7dv3pNpp74aM15IjsZ3+lLXoKQ==
   </data>
  </layer>
- <layer name="Above_hero" width="30" height="30" visible="0">
+ <layer name="Above_hero" width="30" height="30">
   <data encoding="base64" compression="zlib">
-   eJxjYBgFo2AUjIJRMApGwSgYBehASAiVpped1mwQthUbfe0GAXU624fuP3qHNb3tHAWjYDACAKN3Ads=
+   eJxjYBgFo2AUjIJRMApGwSgYBehASAiVpped1mwMDJJyDAxWbPS1GwTU6Wwfuv/oHdb0tnMUjILBCACXeAIS
   </data>
  </layer>
  <layer name="Walkable" width="30" height="30" visible="0">

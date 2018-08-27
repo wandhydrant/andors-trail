@@ -1,0 +1,107 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources><string name="app_name">Andor\'s Trail</string>
+	<string name="app_description">Квестово-фантастична RPG</string>
+
+	<string name="exit_to_menu">Вихід до меню</string>
+	<string name="menu_settings">Налаштування</string>
+	<string name="menu_save">Зберегти</string>
+	<string name="menu_save_gamesaved">Гра була збережена в слот %1$d</string>
+	<string name="menu_save_failed">Не вдалося зберегти гру! Картка SD встановлена та доступна для запису?</string>
+
+	<string name="loadsave_title_save">Збереження гри</string>
+	<string name="loadsave_title_load">Завантажте збережену гру</string>
+	<string name="loadsave_selectslot">Виберіть слот</string>
+	<string name="savegame_currenthero_displayinfo">рівень: %1$d, досвід: %2$d, золото: %3$d</string>
+
+	<string name="dialog_loading_message">Завантаження ресурсів…</string>
+	<string name="dialog_loading_failed_title">Помилка завантаження</string>
+	<string name="dialog_loading_failed_message">Andor\'s Trail не вдалося завантажити файл збереження гри.
+\n
+\n:(
+\n
+\nФайл може бути пошкодженим або неповним.</string>
+	<string name="dialog_loading_failed_incorrectversion">Andor\'s Trail не вдалося завантажити файл збереження гри. Цей файл збережений у новішій версії гри, ніж ця.</string>
+
+	<string name="dialog_close">Закрити</string>
+
+	<string name="dialog_monsterencounter_title">Сутичка</string>
+	<string name="dialog_monsterencounter_message">Ви хочете атакувати?
+\nСкладність: %1$s</string>
+	<string name="dialog_monsterencounter_info">Інформація</string>
+
+	<string name="status_hp">ОЗ:</string>
+	<string name="status_ap">ОД:</string>
+	<string name="status_exp">Рівень:</string>
+
+	<string name="heroinfo_char">Огляд</string>
+	<string name="heroinfo_inv">Предмети</string>
+	<string name="heroinfo_skill">Навички</string>
+	<string name="heroinfo_levelup">Новий рівень</string>
+	<string name="heroinfo_level">Рівень</string>
+	<string name="heroinfo_totalexperience">Загальний досвід</string>
+	<string name="heroinfo_wornequipment">Одіте спорядження</string>
+	<string name="heroinfo_inventory">Інвентар</string>
+	<string name="heroinfo_gold">Золото: %1$d</string>
+	<string name="heroinfo_actionpoints">Очки дії (ОД):</string>
+	<string name="heroinfo_quests">Квести</string>
+
+	<string name="combat_attack">Атака (%1$d ОД)</string>
+	<string name="combat_move">Рух (%1$d ОД)</string>
+	<string name="combat_use">Використати предмет</string>
+	<string name="combat_endturn">Кінець ходу</string>
+	<string name="combat_flee">Втекти</string>
+	<string name="combat_begin_flee">Тепер ви можете залишити бій, натисніть в якому напрямку ви хочете рухатися.</string>
+	<string name="combat_flee_failed">Ви не змогли втекти!</string>
+	<string name="combat_status_ap">ОД: %1$d</string>
+	<string name="combat_monsterhealth">ОЗ:</string>
+	<string name="combat_monsteraction">%1$s атакує.</string>
+	<string name="combat_result_monstermiss">%1$s промахнувся!</string>
+	<string name="combat_result_monsterhit">%1$s вдарив вас на %2$d ОЗ!</string>
+	<string name="combat_result_monsterhitcritical">%1$s завдає критичний удар на %2$d ОЗ!</string>
+	<string name="combat_result_heromiss">Ви промахнулися.</string>
+	<string name="combat_result_herohit">Ви атакуєте, %1$s втрачає %2$d ОЗ!</string>
+	<string name="combat_result_herohitcritical">Ви наносите критичний удар! %1$s втрачає %2$d ОЗ!</string>
+	<string name="combat_result_herokillsmonster">%1$s вмирає!</string>
+	<string name="combat_not_enough_ap">Бракує ОД в цьому раунді.</string>
+	<string name="combat_hero_dies">Ви падаєте без свідомості, але на щастя залишилися живі. Ви втратили %1$d досвіду.</string>
+	<string name="combat_miss_animation_message">ПРОМАХ</string>
+	
+	<string name="inventory_info">Інформація</string>
+	<string name="inventory_equip">Одягти</string>
+	<string name="inventory_unequip">Зняти</string>
+	<string name="inventory_use">Використати</string>
+	<string name="inventory_drop">Викинути</string>
+	<string name="inventory_item_used">Ви використали %1$s.</string>
+	<string name="inventory_item_dropped">%1$s був скинутий.</string>
+	<string name="inventory_item_equipped">Ви наділи %1$s.</string>
+
+	<string name="dialog_loot_pickall">Взяти все</string>
+	<string name="dialog_loot_foundgold">Ви знайшли %1$d золота.</string>
+	<string name="dialog_loot_pickedupitem">Ви підняли предмет.</string>
+	<string name="dialog_loot_pickedupitems">Ви підняли %1$d предметів.</string>
+	<string name="dialog_groundloot_title">Предмети</string>
+	<string name="dialog_groundloot_message">Ви знайшли кілька предметів.</string>
+	<string name="dialog_monsterloot_title">Перемога</string>
+	<string name="dialog_monsterloot_message">Ви виграли бій.</string>
+	<string name="dialog_monsterloot_gainedexp">Ви отримали %1$d досвіду.</string>
+
+	<string name="monster_difficulty_veryeasy">Дуже легко</string>
+	<string name="monster_difficulty_easy">Дуже легко</string>
+	<string name="monster_difficulty_normal">Нормально</string>
+	<string name="monster_difficulty_hard">Складно</string>
+	<string name="monster_difficulty_veryhard">Дуже складно</string>
+	<string name="monster_difficulty_impossible">Неможливо</string>
+
+	<string name="actorinfo_class">Клас:</string>
+	<string name="actorinfo_difficulty">Рівень складності:</string>
+	<string name="actorinfo_health">Здоров\'я:</string>
+	<string name="actorinfo_attack">Атакувати:</string>
+	<string name="heroinfo_gamestats">Статистика гри</string>
+	<string name="heroinfo_gamestats_quests">Завершені квести</string>
+	<string name="heroinfo_gamestats_num_killed_monsters">Вбито монстрів</string>
+	<string name="heroinfo_gamestats_top_boss">Найпотужніший монстр убитий</string>
+	<string name="heroinfo_gamestats_name_and_qty">%1$s (%2$d)</string>
+
+	<string name="actorinfo_defense">Оборона:</string>
+	<string name="localize_resources_from_mo_filename">uk.mo</string>
+	</resources>

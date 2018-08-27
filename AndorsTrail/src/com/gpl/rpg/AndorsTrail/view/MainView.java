@@ -267,11 +267,6 @@ public final class MainView extends SurfaceView
 				int xScroll = 0;
 				int yScroll = 0;
 				if (scrolling && scrollVector != null) {
-//					xScroll = (int) (scaledTileSize - (scaledTileSize * (System.currentTimeMillis() - scrollStartTime) / SCROLL_DURATION));
-//					xScroll = Math.max(0, Math.min(scaledTileSize, xScroll)) * scrollVector.x;
-//					yScroll = (int) (scaledTileSize - (scaledTileSize * (System.currentTimeMillis() - scrollStartTime) / SCROLL_DURATION));
-//					yScroll = Math.max(0, Math.min(scaledTileSize, yScroll)) * scrollVector.y;
-					
 					xScroll = (int) (tileSize - (tileSize * (System.currentTimeMillis() - scrollStartTime) / SCROLL_DURATION));
 					xScroll = Math.max(0, Math.min(tileSize, xScroll)) * scrollVector.x;
 					yScroll = (int) (tileSize - (tileSize * (System.currentTimeMillis() - scrollStartTime) / SCROLL_DURATION));
@@ -363,8 +358,8 @@ public final class MainView extends SurfaceView
 
 	private boolean shouldRedrawEverything() {
 		if (scrolling) return true;
+		if (model.uiSelections.isInCombat) return true; // Discard the "optimized drawing" setting while in combat.
 		if (preferences.optimizedDrawing) return false;
-		if (model.uiSelections.isInCombat) return false; // Discard the "optimized drawing" setting while in combat.
 		return true;
 	}
 	private final Rect redrawRect = new Rect();

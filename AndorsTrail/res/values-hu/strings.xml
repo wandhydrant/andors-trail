@@ -1,0 +1,334 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources><string name="menu_save_gamesaved">A játék elmentve a következő helyre: %1$d</string>
+	<string name="app_name">Andor nyomában</string>
+	<string name="app_description">Küldetés orientált fantasy RPG</string>
+
+	<string name="exit_to_menu">Kilépés a menübe</string>
+	<string name="menu_settings">Beállítások</string>
+	<string name="menu_save">Mentés</string>
+	<string name="menu_save_failed">A játék mentése sikertelen! Az SD kártya a helyén van és írható?</string>
+
+	<string name="loadsave_title_save">Játék mentése</string>
+	<string name="loadsave_title_load">Mentett játék betöltése</string>
+	<string name="loadsave_selectslot">Válassz helyet</string>
+	<string name="savegame_currenthero_displayinfo">%1$d. szint, %2$d TP, %3$d arany</string>
+
+	<string name="dialog_loading_message">Erőforrások betöltése…</string>
+	<string name="dialog_loading_failed_title">Betöltés sikertelen</string>
+	<string name="dialog_loading_failed_message">Az Andor nyomában nem tudta betölteni a mentett játék fájlt.
+\n
+\n:(
+\n
+\nA fájl sérült vagy helytelen lehet.</string>
+	<string name="dialog_loading_failed_incorrectversion">Az Andor nyomában nem tudta betölteni a mentést. A mentett játék fájl későbbi verzióval készült, mint amit jelenleg futtatsz.</string>
+
+	<string name="dialog_close">Bezárás</string>
+
+	<string name="dialog_monsterencounter_title">Összecsapás</string>
+	<string name="dialog_monsterencounter_message">Meg szeretnéd támadni?
+Nehézség: %1$s</string>
+	<string name="dialog_monsterencounter_info">Info</string>
+
+	<string name="status_hp">ÉP:</string>
+	<string name="status_ap">AP:</string>
+	<string name="status_exp">Szint:</string>
+
+	<string name="heroinfo_char">Áttekintés</string>
+	<string name="heroinfo_inv">Tárgyak</string>
+	<string name="heroinfo_skill">Képességek</string>
+	<string name="heroinfo_levelup">Szintlépés</string>
+	<string name="heroinfo_level">Szint</string>
+	<string name="heroinfo_totalexperience">Összes tapasztalat</string>
+	<string name="heroinfo_wornequipment">Viselt felszerelés</string>
+	<string name="heroinfo_inventory">Hátizsák</string>
+	<string name="heroinfo_gold">Arany: %1$d</string>
+	<string name="heroinfo_actionpoints">Akció pont (AP):</string>
+	<string name="heroinfo_quests">Küldetések</string>
+
+	<string name="combat_attack">Támadás (%1$d AP)</string>
+	<string name="combat_move">Mozgás (%1$d AP)</string>
+	<string name="combat_use">Tárgy használata</string>
+	<string name="combat_endturn">Kör vége</string>
+	<string name="combat_flee">Menekülés</string>
+	<string name="combat_begin_flee">Most elmenekülhetsz a csata elől, ha abba az irányba kattintasz, amerre mozogni szeretnél.</string>
+	<string name="combat_flee_failed">Nem sikerült menekülni!</string>
+	<string name="combat_status_ap">AP: %1$d</string>
+	<string name="combat_monsterhealth">ÉP:</string>
+	<string name="combat_monsteraction">%1$s támad.</string>
+	<string name="combat_result_monstermiss">%1$s nem talált el!</string>
+	<string name="combat_result_monsterhit">%1$s megütött, %2$d ÉP-t vesztettél!</string>
+	<string name="combat_result_monsterhitcritical">%1$s kritikus találatot vitt be,%2$d ÉP-t vesztettél!</string>
+	<string name="combat_result_heromiss">Nem találtad el az ellenfeled.</string>
+	<string name="combat_result_herohit">Megütötted, %1$s sebződött %2$d ÉP-t!</string>
+	<string name="combat_result_herohitcritical">Kritikus találatot vittél be, %1$s sebződött %2$d ÉP-t!</string>
+	<string name="combat_result_herokillsmonster">%1$s meghalt!</string>
+	<string name="combat_not_enough_ap">Nincs elég AP-d ehhez.</string>
+	<string name="combat_hero_dies">Elájultál, de szerencsére magadhoz térsz kábultan és elfáradva. Elvesztettél %1$d tapasztalati pontot.</string>
+	<string name="combat_miss_animation_message">MELLÉ</string>
+	
+	<string name="inventory_info">Info</string>
+	<string name="inventory_equip">Felvesz</string>
+	<string name="inventory_unequip">Levesz</string>
+	<string name="inventory_use">Használ</string>
+	<string name="inventory_drop">Eldob</string>
+	<string name="inventory_item_used">%1$s felhasználva.</string>
+	<string name="inventory_item_dropped">%1$s el lett dobva.</string>
+	<string name="inventory_item_equipped">%1$s fel lett véve.</string>
+
+	<string name="dialog_loot_pickall">Felvenni mind</string>
+	<string name="dialog_loot_foundgold">"Találtál %1$d aranyat. "</string>
+	<string name="dialog_loot_pickedupitem">"Felvettél egy tárgyat. "</string>
+	<string name="dialog_loot_pickedupitems">"Felvettél %1$d tárgyat. "</string>
+	<string name="dialog_groundloot_title">Tárgyak</string>
+	<string name="dialog_groundloot_message">"Találtál pár tárgyat. "</string>
+	<string name="dialog_monsterloot_title">Győzelem</string>
+	<string name="dialog_monsterloot_message">"Túlélted az összecsapást. "</string>
+	<string name="dialog_monsterloot_gainedexp">"Szereztél %1$d tapasztalati pontot. "</string>
+
+	<string name="monster_difficulty_veryeasy">Nagyon könnyű</string>
+	<string name="monster_difficulty_easy">Könnyű</string>
+	<string name="monster_difficulty_normal">Normál</string>
+	<string name="monster_difficulty_hard">Nehéz</string>
+	<string name="monster_difficulty_veryhard">Nagyon nehéz</string>
+	<string name="monster_difficulty_impossible">Lehetetlen</string>
+
+	<string name="actorinfo_class">Osztály:</string>
+	<string name="actorinfo_difficulty">Nehézség:</string>
+	<string name="actorinfo_health">Életerő:</string>
+	<string name="actorinfo_attack">Támadás:</string>
+	<string name="actorinfo_defense">Védekezés:</string>
+	<string name="actorinfo_movecost">Mozgás költsége (AP):</string>
+	<string name="actorinfo_basetraits">Alap ütközet statisztikák (felszerelés és képességek nélkül)</string>
+	<string name="actorinfo_currenttraits">Ütközet statisztikák (jelenlegi)</string>
+
+	<string name="traitsinfo_attack_cost">Támadási költség (AP):</string>
+	<string name="traitsinfo_attack_chance">Támadás esélye:</string>
+	<string name="traitsinfo_attack_damage">Támadás sebzése:</string>
+	<string name="traitsinfo_criticalhit_skill">Kritikus találat képesség:</string>
+	<string name="traitsinfo_criticalhit_multiplier">Kritikus szorzó:</string>
+	<string name="traitsinfo_defense_chance">Blokkolás esélye:</string>
+	<string name="traitsinfo_defense_damageresist">Sérülés ellenállása:</string>
+
+	<string name="iteminfo_category">"Kategória: "</string>
+	<string name="iteminfo_action_use">Használ</string>
+	<string name="iteminfo_action_equip">Felvesz</string>
+	<string name="iteminfo_action_unequip">Levesz</string>
+	<string name="iteminfo_action_use_ap">Használ (%1$d AP)</string>
+	<string name="iteminfo_action_equip_ap">Felvesz (%1$d AP)</string>
+	<string name="iteminfo_action_unequip_ap">Levesz (%1$d AP)</string>
+
+	<string name="startscreen_continue">Jelenlegi játék folytatása</string>
+	<string name="startscreen_newgame">Új játék</string>
+	<string name="startscreen_newgame_confirm">El fogod veszíteni a jelenlegi játékot és a jelenlegi karakteredet. Biztosan új játékot szeretnél kezdeni?</string>
+	<string name="startscreen_about">Névjegy/súgó</string>
+	<string name="startscreen_enterheroname">Add meg a hős nevét</string>
+	<string name="startscreen_load">Betöltés</string>
+
+	<string name="conversation_rewardexp">" [Szereztél %1$d tapasztalati pontot]"</string>
+	<string name="conversation_rewardgold">" [Szereztél %1$d aranyat]"</string>
+	<string name="conversation_lostgold">" [Vesztettél %1$d aranyat]"</string>
+	<string name="conversation_rewarditem">" [Szereztél egy tárgyat]"</string>
+	<string name="conversation_rewarditems">" [Szereztél %1$d tárgyat]"</string>
+	<string name="conversation_next">Következő</string>
+	<string name="conversation_leave">Kilépés</string>
+
+	<string name="shop_buy">Vásárlás</string>
+	<string name="shop_sell">Eladás</string>
+	<string name="shop_infoitem">Információ</string>
+	<string name="shop_buyitem">Vásárlás (%1$d arany)</string>
+	<string name="shop_sellitem">Eladás (%1$d arany)</string>
+	<string name="shop_yourgold">Aranyad: %1$d</string>
+	<string name="shop_item_bought">%1$s megvéve.</string>
+	<string name="shop_item_sold">%1$s eladva.</string>
+
+	<string name="levelup_title">Szintlépés</string>
+	<string name="levelup_description">Üdvözlünk a(z) %1$d. szinten!</string>
+	<string name="levelup_buttontext">Szintlépés</string>
+	<string name="levelup_add_health">Életerő növelése (+%1$d ÉP)</string>
+	<string name="levelup_add_health_description">%1$d pontot ad a maximális életerődhöz.</string>
+	<string name="levelup_add_attackchance">Támadás esélyének növelése (+%1$d)</string>
+	<string name="levelup_add_attackchance_description">%1$d pontot ad az alap támadási esélyhez.</string>
+	<string name="levelup_add_attackdamage">Támadás sebzésének növelése (+%1$d)</string>
+	<string name="levelup_add_attackdamage_description">%1$d pontot ad az alap támadási sebzéshez.</string>
+	<string name="levelup_add_blockchance">Blokkolás esélyének növelése (+%1$d)</string>
+	<string name="levelup_add_blockchance_description">%1$d pontot ad az alap blokkolási esélyhez.</string>
+
+	<string name="dialog_rest_title">Pihenés</string>
+	<string name="dialog_rest_confirm_message">Szeretnél itt megpihenni?</string>
+	<string name="dialog_rest_message">Megpihentél és visszanyerted a teljes életerőd.</string>
+
+	<string name="about_button1">Súgó</string>
+	<string name="about_button2">Szerzők</string>
+	<string name="about_button3">Licenc</string>
+	<string name="questlog_includecompleted_prompt">Válaszd ki a megjelenítendő küldetést</string>
+	<string name="questlog_includecompleted_hidecompleted">Befejezett küldetések elrejtése</string>
+	<string name="questlog_includecompleted_includecompleted">Befejezett küldetések is</string>
+	<string name="questlog_includecompleted_onlycompleted">Csak befejezett küldetések</string>
+	<string name="questlog_queststatus">Állapot: %1$s</string>
+	<string name="questlog_queststatus_inprogress">Folyamatban</string>
+	<string name="questlog_queststatus_completed">Befejezve</string>
+
+	<string name="preferences_display_category">Megjelenítés</string>
+	<string name="preferences_display_fullscreen_title">Teljes képernyő</string>
+	<string name="preferences_display_fullscreen">Teljes képernyős módban jeleníti meg a játékot (újraindítás szükséges).</string>
+	<string name="preferences_dialog_category">Párbeszéd megerősítése</string>
+	<string name="preferences_dialog_confirmrest_title">Pihenés megerősítése</string>
+	<string name="preferences_dialog_confirmrest">Megkérdezi, hogy szeretnél-e lepihenni, ha lefekszel egy ágyra. Egyébként mindig automatikusan pihenni fogsz.</string>
+	<string name="preferences_dialog_confirmattack_title">Támadás megerősítése</string>
+	<string name="preferences_dialog_confirmattack">Engedélyezi a „Szeretnél támadni…?” párbeszédablakot, ha egy szörnyet támadsz.</string>
+	<string name="preferences_dialog_monsterloot_title">Szörnyzsákmány megjelenítése</string>
+	<string name="preferences_dialog_monsterloot">Válaszd ki, hogy hogyan szeretnéd megjeleníteni egy csata eredményét (arany, tapasztalati pont, tárgyak).</string>
+	<string name="preferences_combat_category">Csata</string>
+	<string name="preferences_combat_speed_title">Csata sebessége</string>
+	<string name="preferences_combat_speed">Meghatározza, hogy a szörnyek milyen gyorsan támadjanak.</string>
+
+	<string name="preferences_display_loot_dialog">Mindig jelenítse meg a zsákmány párbeszédablakot</string>
+	<string name="preferences_display_loot_dialog_on_items">Zsákmány párbeszédablak megjelenítése, ha tárgyakat találsz</string>
+	<string name="preferences_display_loot_dialog_on_items_or_toast">Párbeszédablak a tárgyakhoz, egyébként értesítés</string>
+	<string name="preferences_display_loot_toast">Rövid értesítés megjelenítése</string>
+	<string name="preferences_display_loot_toast_on_items">Csak akkor jelenítsen meg értesítést, ha tárgyakat találsz</string>
+	<string name="preferences_display_loot_never">Ne jelenítse meg</string>
+
+	<string name="preferences_attackspeed_instant">Azonnal (animációk nélkül)</string>
+	<string name="preferences_attackspeed_fast">Gyors</string>
+	<string name="preferences_attackspeed_normal">Normál</string>
+	<string name="preferences_attackspeed_slow">Lassú</string>
+
+	<string name="preferences_movement_category">Mozgás</string>
+	<string name="preferences_movementmethod_title">Mozgás módja</string>
+	<string name="preferences_movementmethod">A mozgás módjának és az akadályok kezelésének típusa.</string>
+	<string name="preferences_movementmethods_straight">Egyenesen (eredeti)</string>
+	<string name="preferences_movementmethods_avoid">Akadályok elkerülése</string>
+
+
+	<string name="actorinfo_currentconditions">Aktív feltételek</string> <string name="actorcondition_info_removes_all">Eltávolítja az összes: %1$s</string>
+	<string name="iteminfo_effect_chance_of">%1$s esély erre: %2$s</string>
+	<string name="iteminfo_effect_duration">(%1$d kör)</string>
+
+	<string name="iteminfo_effect_works_on_source">Forráson</string>
+	<string name="iteminfo_effect_works_on_target">Célon</string>
+	<string name="iteminfo_effect_works_when_hitting_target">Célpont megütésekor</string>
+	<string name="iteminfo_effect_works_when_killing_target">Minden gyilkoláskor</string>
+	<string name="iteminfo_effect_works_when_used">Használatkor</string>
+	<string name="iteminfo_effect_works_when_equipped">Felszereléskor</string>
+
+	<string name="iteminfo_effect_decrease_current_hp">Elszív %1$s ÉP-t</string>
+	<string name="iteminfo_effect_increase_current_hp">Visszaad %1$s ÉP-t</string>
+	<string name="iteminfo_effect_decrease_current_ap">Elszív %1$s AP-t</string>
+	<string name="iteminfo_effect_increase_current_ap">Visszaad %1$s AP-t</string>
+
+	<string name="iteminfo_effect_increase_max_hp">Megnöveli a maximális ÉP-t: +%1$d</string>
+	<string name="iteminfo_effect_decrease_max_hp">Lecsökkenti a maximális ÉP-t: -%1$d</string>
+	<string name="iteminfo_effect_increase_max_ap">Megnöveli a maximális AP-t: +%1$d</string>
+	<string name="iteminfo_effect_decrease_max_ap">Lecsökkenti a maximális AP-t: -%1$d</string>
+	<string name="iteminfo_effect_increase_movecost">Mozgási költség büntetés: +%1$d AP</string>
+	<string name="iteminfo_effect_decrease_movecost">Csökkenti a mozgási költséget: -%1$d AP</string>
+
+	<string name="preferences_display_scaling_factor_title">Méretezési tényező</string>
+	<string name="preferences_display_scaling_factor">Felnagyítja a játékban megjelenített összes dolgot.</string>
+	<string name="preferences_display_scaling_factor_normal">Normál méret</string>
+	<string name="preferences_display_scaling_factor_50_percent_larger">Másfélszeres méret</string>
+	<string name="preferences_display_scaling_factor_double">Dupla méret</string>
+
+	<string name="inventory_assign">Gyors tárolóhely hozzárendelése</string>
+	<string name="inventory_assign_slot1">1. tárolóhely</string>
+	<string name="inventory_assign_slot2">2. tárolóhely</string>
+	<string name="inventory_assign_slot3">3. tárolóhely</string>
+	<string name="inventory_unassign">Gyors tárolóhely kiürítése</string>
+
+	<string name="preferences_movement_dpad_position_title">Virtuális irányítógomb</string>
+	<string name="preferences_movement_dpad_position">Egy virtuális, a képernyőn megjelenő irányítógombot engedélyez a mozgás vezérléséhez.</string>
+	<string name="preferences_movement_dpad_minimizeable_title">Minimalizálható irányítógomb</string>
+	<string name="preferences_movement_dpad_minimizeable">Ha a virtuális irányítógomb engedélyezve van, akkor ez a beállítás lehetővé teszi az irányítógomb minimalizálást a közepének megnyomásakor.</string>
+
+	<string name="preferences_movement_dpad_positions_disabled">Letiltva</string>
+	<string name="preferences_movement_dpad_positions_lower_right">Jobb alsó sarok</string>
+	<string name="preferences_movement_dpad_positions_lower_left">Bal alsó sarok</string>
+	<string name="preferences_movement_dpad_positions_center_bottom">Középen lent</string>
+	<string name="preferences_movement_dpad_positions_center_left">Középen balra</string>
+	<string name="preferences_movement_dpad_positions_center_right">Középen jobbra</string>
+	<string name="preferences_movement_dpad_positions_upper_left">Bal felső sarok</string>
+	<string name="preferences_movement_dpad_positions_upper_right">Jobb felső sarok</string>
+	<string name="preferences_movement_dpad_positions_center_top">Középen fent</string>
+
+	<string name="actorconditioninfo_constant_effect">Állandó hatás</string>
+	<string name="actorconditioninfo_effect_every_round">Minden kör</string>
+	<string name="actorconditioninfo_effect_every_full_round">Minden teljes kör</string>
+	<string name="bulkselection_totalcost_buy">Teljes költség: %1$d arany</string>
+	<string name="bulkselection_totalcost_sell">Teljes költség: %1$d arany</string>
+	<string name="bulkselection_select_all">Összes</string>
+	<string name="bulkselection_sell_confirmation_title">Biztos vagy benne?</string>
+	<string name="bulkselection_sell_confirmation">Biztosan el szeretnéd adni: %1$s? Ez a tárgy %2$s, és nem biztos, hogy vissza tudod szerezni.</string>
+
+	<string name="skill_title_weapon_chance">Fegyver pontossága</string>
+	<string name="about_contents1">"
+\n Üdvözöl az Andor nyomában, amely egy nyílt forráskódú, Rouge-szerű RPG Androidra.&lt;br /&gt;
+\n &lt;br /&gt;
+\n &lt;a href=http://andorstrail.com/&gt;A játék fóruma az andorstrail.com oldalon található a kérdésekhez és a játékmenettel kapcsolatos beszélgetésekhez.&lt;/a&gt;&lt;br /&gt;
+\n &lt;br /&gt;
+\n &lt;a href=http://andorstrail.com/wiki&gt;Az Andor nyomában világával kapcsolatos játékinformációk egyebek mellett.&lt;/a&gt;&lt;br /&gt;
+\n &lt;br /&gt;
+\n &lt;a href=https://github.com/Zukero/andors-trail/&gt;A projekt forráskódja a github.com oldalon fejlesztők számára.&lt;/a&gt;&lt;br /&gt;
+\n &lt;br /&gt;
+\n Látogasd meg a fórumot, ha beszélgetni szeretnél a játékról más játékosokkal.&lt;br /&gt;
+\n "</string>
+
+	<string name="dialog_newversion_title">Üdvözlünk</string>
+	<string name="dialog_newversion_message">"
+\n Köszönjük, hogy letöltötted az Andor nyomában játékot!
+\n
+\n
+\n Ne felejtsd el, hogy az Andor nyomában ezen verziója egy FOLYAMATBAN LÉVŐ MUNKA, amely azt jelenti, hogy nincs még minden térkép befejezve.
+\n
+\n Látogasd meg a projekt fórumát, hogy beszélgethess a játékról más játékosokkal, vagy azért, hogy segíts még jobbá tenni a játékot (lásd: névjegy).
+\n
+\n 
+\n
+\n Köszönjük minden visszajelzésed!
+\n "</string>
+
+	<string name="skill_title_weapon_dmg">Erős ütés</string>
+	<string name="skill_title_barter">Kereskedő</string>
+	<string name="skill_title_dodge">Kitérés</string>
+	<string name="skill_title_barkskin">Kérges bőr</string>
+	<string name="skill_title_more_criticals">Több kritikus</string>
+	<string name="skill_title_better_criticals">Jobb kritikus</string>
+	<string name="skill_title_speed">Csata sebessége</string>
+	<string name="skill_title_coinfinder">Kincsvadász</string>
+	<string name="skill_title_more_exp">Gyorsan tanuló</string>
+	<string name="skill_title_cleave">Hasítás</string>
+	<string name="skill_title_eater">Dögevő</string>
+	<string name="skill_title_fortitude">Megnövelt ellenállóképesség</string>
+	<string name="skill_title_evasion">Menekülés</string>
+	<string name="skill_title_regeneration">Regenerálódás</string>
+	<string name="skill_title_lower_exploss">Kudarc mestere</string>
+	<string name="skill_title_magicfinder">Mágiakereső</string>
+	<string name="skill_title_resistance_mental">Erős elme</string>
+	<string name="skill_title_resistance_physical_capacity">Erős test</string>
+	<string name="skill_title_resistance_blood_disorder">Fajtiszta</string>
+
+	<string name="skill_shortdescription_weapon_chance">Megnövelt támadási esély</string>
+	<string name="skill_shortdescription_weapon_dmg">Megnövelt támadási sebzés</string>
+	<string name="skill_shortdescription_barter">Jobb bolti árak</string>
+	<string name="skill_shortdescription_dodge">Megnövelt blokkolási esély</string>
+	<string name="skill_shortdescription_barkskin">Sebzésellenállás</string>
+	<string name="skill_shortdescription_more_criticals">Megnövelt kritikus képesség</string>
+	<string name="skill_shortdescription_better_criticals">Megnövelt kritikus sebzés</string>
+	<string name="skill_shortdescription_speed">Megnövelt maximális akciópont</string>
+	<string name="skill_shortdescription_coinfinder">Nagyobb esély arany találására</string>
+	<string name="skill_shortdescription_more_exp">Több tapasztalat a szörnyek megöléséből</string>
+	<string name="skill_shortdescription_cleave">Akciópontok visszaállítása minden gyilkoláskor</string>
+	<string name="skill_shortdescription_eater">Életpontok visszaállítása minden gyilkoláskor</string>
+	<string name="skill_shortdescription_fortitude">Életerő szerzése szintlépéskor</string>
+	<string name="skill_shortdescription_evasion">Megnövelt esély a menekülésre</string>
+	<string name="skill_shortdescription_regeneration">Életerő szerzése minden körben</string>
+	<string name="skill_shortdescription_lower_exploss">Elveszett tapasztalat mennyiségének csökkentése meghaláskor</string>
+	<string name="skill_shortdescription_magicfinder">Megnövelt esély mágikus elemek találására</string>
+	<string name="skill_shortdescription_resistance_mental">Ellenállás szellemi viszonyokkal szemben</string>
+	<string name="skill_shortdescription_resistance_physical_capacity">Ellenállás fizikai kapacitási viszonyokkal szemben</string>
+	<string name="skill_shortdescription_resistance_blood_disorder">Ellenállás vérrendellenességekkel szemben</string>
+
+	<string name="skill_longdescription_weapon_chance">Megnöveli a támadási esélyt %1$d százalékponttal minden egyes képességszintnél.</string>
+	<string name="skill_longdescription_weapon_dmg">Megnöveli a legnagyobb sebzést %1$d ponttal minden egyes képességszintnél.</string>
+	<string name="localize_resources_from_mo_filename">hu.mo</string>
+	</resources>
