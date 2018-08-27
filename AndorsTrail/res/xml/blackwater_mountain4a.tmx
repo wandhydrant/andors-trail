@@ -183,15 +183,12 @@
  <tileset firstgid="7449" name="map_window_2" tilewidth="32" tileheight="32" tilecount="128" columns="16">
   <image source="../drawable/map_window_2.png" width="512" height="256"/>
  </tileset>
- <tileset firstgid="7577" name="map_ground_1" tilewidth="32" tileheight="32" tilecount="128" columns="16">
-  <image source="../../altered/drawable/map_ground_1.png" width="512" height="256"/>
- </tileset>
- <tileset firstgid="7705" name="map_pillar_1" tilewidth="32" tileheight="32" tilecount="128" columns="16">
-  <image source="../../altered/drawable/map_pillar_1.png" width="512" height="256"/>
+ <tileset firstgid="7577" name="map_entrance_1" tilewidth="32" tileheight="32" tilecount="128" columns="16">
+  <image source="../drawable/map_entrance_1.png" width="512" height="256"/>
  </tileset>
  <layer name="Ground" width="7" height="27">
   <data encoding="base64" compression="zlib">
-   eJxbz8TAMEeWgWEtkF4HxOuR+OsHSG4/kD4AxAexyF0E0peA+DIWOXRMDbnBFC6jctSRAwDQwITK
+   eJxbz8TAsIWTgWEtkF4HxOuR+OsHSG4/kD4AxAexyF0E0peA+DIWOXRMDbnBFC6jctSRAwBfioXG
   </data>
  </layer>
  <layer name="Objects" width="7" height="27">
@@ -248,5 +245,5 @@
    </properties>
   </object>
  </objectgroup>
- <objectgroup name="Keys"/>
+ <objectgroup name="Keys" visible="0"/>
 </map>
