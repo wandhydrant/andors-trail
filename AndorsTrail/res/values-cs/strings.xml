@@ -1,4 +1,192 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <resources>
     <string name="localize_resources_from_mo_filename">cs.mo</string>
-</resources>
+<string name="app_name">Andor\'s Trail</string>
+	<string name="app_description">RPG pátrací hra s prvky fantasy</string>
+
+	<string name="exit_to_menu">Hlavní nabídka</string>
+	<string name="menu_settings">Nastavení</string>
+	<string name="menu_save">Uložit</string>
+	<string name="menu_save_gamesaved">Hra uložena na pozici %1$d</string>
+	<string name="menu_save_failed">Chyba ukládání! Je správně vložena a připojena SD karta?</string>
+
+	<string name="loadsave_title_save">Uložit hru</string>
+	<string name="loadsave_title_load">Načíst uloženou hru</string>
+	<string name="loadsave_selectslot">Vyber pozici</string>
+	<string name="savegame_currenthero_displayinfo">Úroveň: %1$d, zkušeností: %2$d, zlaťáků: %3$d</string>
+
+	<string name="dialog_loading_message">Načítám zdroje…</string>
+	<string name="dialog_loading_failed_title">Chyba při načítání pozice</string>
+	<string name="dialog_loading_failed_message">Andor\'s Trail nebyl schopen načíst uloženou hru.
+\n
+\n:(
+\n
+\nHerní soubor je možná poškozený nebo nekompletní.</string>
+	<string name="dialog_loading_failed_incorrectversion">Andor\'s Trail nebyl schopen načíst uloženou hru. Herní soubor byl vytvořen novější verzí hry než která je nyní spuštěna.</string>
+
+	<string name="dialog_recenter">Centrovat</string>
+	<string name="dialog_close">Zavřít</string>
+	<string name="dialog_more">Více</string>
+
+	<string name="dialog_monsterencounter_title">Boj</string>
+	<string name="dialog_monsterencounter_message">Chceš zaútočit?
+\nObtížnost: %1$s</string>
+	<string name="dialog_monsterencounter_info">Info</string>
+	<string name="dialog_monsterencounter_conditions">Stav</string>
+
+	<string name="status_hp">PŽ:</string>
+	<string name="status_ap">AB:</string>
+	<string name="status_exp">Zk.:</string>
+
+	<string name="heroinfo_char">Přehled</string>
+	<string name="heroinfo_inv">Inventář</string>
+	<string name="heroinfo_skill">Dovednosti</string>
+	<string name="heroinfo_skill_categories">Kategorie</string>
+	<string name="heroinfo_skill_sort">Srovnej</string>
+	<string name="heroinfo_levelup">Nová úroveň</string>
+	<string name="heroinfo_level">Úroveň</string>
+	<string name="heroinfo_totalexperience">Zkušeností celkem</string>
+	<string name="heroinfo_wornequipment">Výstroj</string>
+	<string name="heroinfo_inventory">Inventář</string>
+	<string name="heroinfo_inventory_categories">Kategorie</string>
+	<string name="heroinfo_inventory_sort">Srovnej podle</string>
+	<string name="heroinfo_gold">Zlaťáky: %1$d</string>
+	<string name="heroinfo_healthpoints">Počet životů (PŽ):</string>
+	<string name="heroinfo_experiencepoints">Zkušenosti (Zk.):</string>
+	<string name="heroinfo_actionpoints">Akční body (AB):</string>
+	<string name="heroinfo_quests">Mise</string>
+
+	<string name="combat_attack">Útok (%1$d AB)</string>
+	<string name="combat_move">Pohyb (%1$d AB)</string>
+	<string name="combat_use">Užití věci</string>
+	<string name="combat_endturn">Kolec kola</string>
+	<string name="combat_flee">Úprk</string>
+	<string name="combat_begin_flee">Nyní můžeš uprchnost z boje kliknutím ve směru, kterým chceš utéci.</string>
+	<string name="combat_flee_failed">Úprk se nezdařil!</string>
+	<string name="combat_status_ap">AB: %1$d</string>
+	<string name="combat_monsterhealth">PŽ:</string>
+	<string name="combat_monsteraction">%1$s útočí.</string>
+	<string name="combat_result_monstermiss">%1$s míjí cíl!</string>
+	<string name="combat_result_monsterhit">%1$s tě zraňuje za %2$d BŽ!</string>
+	<string name="combat_result_monsterhitcritical">%1$s tě kriticky zraňuje za %2$d BŽ!</string>
+	<string name="combat_result_heromiss">Míjíš.</string>
+	<string name="combat_result_herohit">%1$s ztrácí %2$d BŽ!</string>
+	<string name="combat_result_herohitcritical">%1$s ztrácí kritickým zásahem %2$d BŽ!</string>
+	<string name="combat_result_herokillsmonster">%1$s umírá!</string>
+	<string name="combat_not_enough_ap">V tomto kole nemáš na tuto akci dostatečný počet AB.</string>
+	<string name="combat_hero_dies">Upadáš v bezvědomí, ale naštěstí se opět probouzíš živý, omámený a unavený. Ztrácíš %1$d zkušeností.</string>
+	<string name="combat_miss_animation_message">VEDLE</string>
+	<string name="combat_taunt_monster">"Posmíváš se protivníkovi:  %1$s!"</string>
+	<string name="combat_condition_player_apply">Ovlivňuje tě: %1$s.</string>
+	<string name="combat_condition_player_clear">Zbavuješ se: %1$s.</string>
+	<string name="combat_condition_player_immune">Jsi nyní imunní vůči: %1$s.</string>
+	<string name="combat_condition_monster_apply">%2$s ovlivňuje: %1$s.</string>
+	<string name="combat_condition_monster_clear">%1$s se zbavuje: %2$s.</string>
+	<string name="combat_condition_monster_immune">%1$s je nyní imunní vůči: %2$s.</string>
+	
+	
+	<string name="inventory_info">Info</string>
+	<string name="inventory_equip">Vystroj</string>
+	<string name="inventory_unequip">Odstroj</string>
+	<string name="inventory_use">Užij</string>
+	<string name="inventory_drop">Upusť</string>
+	<string name="inventory_item_used">Používáš: %1$s.</string>
+	<string name="inventory_item_dropped">Upouštíš: %1$s.</string>
+	<string name="inventory_item_equipped">Vystrojil jsi: %1$s.</string>
+
+	<string name="dialog_loot_pickall">Vem vše</string>
+	<string name="dialog_loot_foundgold">Našel jsi zlaťáky: %1$d ks.</string>
+	<string name="dialog_loot_pickedupitem">Bereš si jeden předmět.</string>
+	<string name="dialog_loot_pickedupitems">Bereš si celkem %1$d ks předmětů.</string>
+	<string name="dialog_groundloot_title">Nález</string>
+	<string name="dialog_groundloot_message">Našel jsi nějaké věci.</string>
+	<string name="dialog_monsterloot_title">Vítěztví</string>
+	<string name="dialog_monsterloot_message">Přežil jsi boj.</string>
+	<string name="dialog_monsterloot_gainedexp">Získáváš zkušenosti: %1$d.</string>
+
+	<string name="monster_difficulty_veryeasy">Nejlehčí</string>
+	<string name="monster_difficulty_easy">Lehčí</string>
+	<string name="monster_difficulty_normal">Normální</string>
+	<string name="monster_difficulty_hard">Težší</string>
+	<string name="monster_difficulty_veryhard">Nejtežší</string>
+	<string name="monster_difficulty_impossible">Absurdní</string>
+
+	<string name="actorinfo_class">Třída:</string>
+	<string name="actorinfo_difficulty">Obtížnost:</string>
+	<string name="actorinfo_health">Počet životů:</string>
+	<string name="actorinfo_attack">Útok:</string>
+	<string name="actorinfo_defense">Obrana:</string>
+	<string name="actorinfo_movecost">Cena pohybu (AB):</string>
+	<string name="actorinfo_basetraits">Základní bojové statistiky (bez výbavy a dovedností)</string>
+	<string name="actorinfo_currenttraits">Bojové statistiky (aktuální)</string>
+
+	<string name="traitsinfo_attack_cost">Cena útoku (AB):</string>
+	<string name="traitsinfo_attack_chance">Přesnost útoku:</string>
+	<string name="traitsinfo_attack_damage">Zranění útoku:</string>
+	<string name="traitsinfo_criticalhit_skill">Úroveň kritického zásahu:</string>
+	<string name="traitsinfo_criticalhit_multiplier">Násobitel kritického zásahu:</string>
+	<string name="traitsinfo_defense_chance">Šance odvrácení útoku:</string>
+	<string name="traitsinfo_defense_damageresist">Odolnost vůči zranění:</string>
+
+	<string name="iteminfo_category">Kategorie:</string>
+	<string name="iteminfo_action_use">Užij</string>
+	<string name="iteminfo_action_equip">Vystroj</string>
+	<string name="iteminfo_action_unequip">Odstroj</string>
+	<string name="iteminfo_action_use_ap">Užij (%1$d AP)</string>
+	<string name="iteminfo_action_equip_ap">Vystroj (%1$d AB)</string>
+	<string name="iteminfo_action_unequip_ap">Odstroj (%1$d AB)</string>
+
+	<string name="startscreen_continue">Pokračuj v aktuální hře</string>
+	<string name="startscreen_newgame">Nová hra</string>
+	<string name="startscreen_newgame_start">Začni hrát</string>
+	<string name="startscreen_newgame_confirm">Aktuální hra bude přepsána. Skutečně chcete začít hrát novou hru?</string>
+	<string name="startscreen_about">O hře/Nápověda</string>
+	<string name="startscreen_selectherosprite">Vyber si hrdinu</string>
+	<string name="startscreen_enterheroname">Zadej jméno svého hrdiny</string>
+	<string name="startscreen_load">Načíst</string>
+
+	<string name="conversation_rewardexp">[Získáváš zkušenosti: %1$d]</string>
+	<string name="conversation_rewardgold">[Získáváš zlaťáky: %1$d]</string>
+	<string name="conversation_lostgold">[Ztrácíš zlaťáky: %1$d]</string>
+	<string name="conversation_rewarditem">[Získáváš předmět]</string>
+	<string name="conversation_rewarditems">[Získáváš předměty: %1$d ks]</string>
+	<string name="conversation_next">Dále</string>
+	<string name="conversation_leave">Konec</string>
+
+	<string name="shop_buy">Nákup</string>
+	<string name="shop_sell">Prodej</string>
+	<string name="shop_infoitem">Info</string>
+	<string name="shop_buyitem">Nákup (%1$d ks zlatých)</string>
+	<string name="shop_sellitem">Prodej (%1$d ks zlatých)</string>
+	<string name="shop_yourgold">Tvé zlaťáky: %1$d</string>
+	<string name="shop_item_bought">Kupuješ %1$s.</string>
+	<string name="shop_item_sold">Prodáváš %1$s.</string>
+	<string name="shop_item_sort">Srovnej</string>
+
+	<string name="levelup_title">Nová úroveň</string>
+	<string name="levelup_description">Vítej na úrovni %1$d!</string>
+	<string name="levelup_buttontext">Nová úroveň</string>
+	<string name="levelup_add_health">Zvýšit zdraví (+%1$d PŽ)</string>
+	<string name="levelup_add_health_description">Přidá %1$d ks životů k tvému celkovému počtu životů.</string>
+	<string name="levelup_add_attackchance">Zvýšit přesnost útoku (+%1$d)</string>
+	<string name="levelup_add_attackchance_description">Zvýší tvou základní přesnost útoku o %1$d.</string>
+	<string name="levelup_add_attackdamage">Zvýšit zranění útoku (+%1$d)</string>
+	<string name="levelup_add_attackdamage_description">Zvýší základní zranění tvého útoku o %1$d.</string>
+	<string name="dialog_rest_title">Odpočinek</string>
+	<string name="dialog_rest_confirm_message">Chceš si zde odpočinout?</string>
+	<string name="dialog_rest_message">Po osvěžujícím spánku se vzbouzíš s plně zdráv.</string>
+
+	<string name="about_button1">Nápověda</string>
+	<string name="about_button2">Tvůrci</string>
+	<string name="about_button3">Licence</string>
+	<string name="about_contents1">Vítej ve hře Andor\'s Trail. Jedná se o \'Open Source\' RPG hru s prvky rogue-like a fantasy pro Android&lt;br /&gt; 
+\n &lt;br /&gt; 
+\n &lt;a href=http://andorstrail.com/&gt;Fórum na andorstrail.com, kde se kladou otázky a vedou diskuze o hře.&lt;/a&gt;&lt;br /&gt; 
+\n &lt;br /&gt; 
+\n &lt;a href=http://andorstrail.com/wiki&gt;Wiki o hře Andor\'s Trail, kde lze najít podrobnější informace o světě hry Andor\'s Trail (mytologie). Poslední aktualizace z roku 2014 nic nemění na tom, že informace jsou víceméně aktuální.&lt;/a&gt;&lt;br /&gt; 
+\n &lt;br /&gt; 
+\n &lt;a href=http://github.com/Zukero/andors-trail/&gt;Projekt na github.com pro vývojáře.&lt;/a&gt;&lt;br /&gt; 
+\n &lt;br /&gt; 
+\nPokud máš otázky ke hře, prosím navštiv herní fórum.&lt;br /&gt;</string>
+
+	</resources>
