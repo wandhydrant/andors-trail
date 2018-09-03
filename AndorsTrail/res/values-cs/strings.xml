@@ -1,4 +1,469 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <resources>
     <string name="localize_resources_from_mo_filename">cs.mo</string>
-</resources>
+<string name="app_name">Andor\'s Trail</string>
+	<string name="app_description">RPG pátrací hra s prvky fantasy</string>
+
+	<string name="exit_to_menu">Hlavní nabídka</string>
+	<string name="menu_settings">Nastavení</string>
+	<string name="menu_save">Uložit</string>
+	<string name="menu_save_gamesaved">Hra uložena na pozici %1$d</string>
+	<string name="menu_save_failed">Chyba ukládání! Je správně vložena a připojena SD karta?</string>
+
+	<string name="loadsave_title_save">Uložit hru</string>
+	<string name="loadsave_title_load">Načíst uloženou hru</string>
+	<string name="loadsave_selectslot">Vyber pozici</string>
+	<string name="savegame_currenthero_displayinfo">Úroveň: %1$d, zkušeností: %2$d, zlaťáků: %3$d</string>
+
+	<string name="dialog_loading_message">Načítám zdroje…</string>
+	<string name="dialog_loading_failed_title">Chyba při načítání pozice</string>
+	<string name="dialog_loading_failed_message">Andor\'s Trail nebyl schopen načíst uloženou hru.
+\n
+\n:(
+\n
+\nHerní soubor je možná poškozený nebo nekompletní.</string>
+	<string name="dialog_loading_failed_incorrectversion">Andor\'s Trail nebyl schopen načíst uloženou hru. Herní soubor byl vytvořen novější verzí hry než která je nyní spuštěna.</string>
+
+	<string name="dialog_recenter">Centrovat</string>
+	<string name="dialog_close">Zavřít</string>
+	<string name="dialog_more">Více</string>
+
+	<string name="dialog_monsterencounter_title">Souboj</string>
+	<string name="dialog_monsterencounter_message">Chceš zaútočit?
+\nObtížnost: %1$s</string>
+	<string name="dialog_monsterencounter_info">Info</string>
+	<string name="dialog_monsterencounter_conditions">Stav</string>
+
+	<string name="status_hp">PŽ:</string>
+	<string name="status_ap">AB:</string>
+	<string name="status_exp">Zk.:</string>
+
+	<string name="heroinfo_char">Přehled</string>
+	<string name="heroinfo_inv">Inventář</string>
+	<string name="heroinfo_skill">Dovednosti</string>
+	<string name="heroinfo_skill_categories">Kategorie</string>
+	<string name="heroinfo_skill_sort">Srovnat</string>
+	<string name="heroinfo_levelup">Nová úroveň</string>
+	<string name="heroinfo_level">Úroveň</string>
+	<string name="heroinfo_totalexperience">Zkušeností celkem</string>
+	<string name="heroinfo_wornequipment">Výstroj</string>
+	<string name="heroinfo_inventory">Inventář</string>
+	<string name="heroinfo_inventory_categories">Kategorie</string>
+	<string name="heroinfo_inventory_sort">Srovnat podle</string>
+	<string name="heroinfo_gold">Zlaťáky: %1$d</string>
+	<string name="heroinfo_healthpoints">Počet životů (PŽ):</string>
+	<string name="heroinfo_experiencepoints">Zkušenosti (Zk.):</string>
+	<string name="heroinfo_actionpoints">Akční body (AB):</string>
+	<string name="heroinfo_quests">Mise</string>
+
+	<string name="combat_attack">Útok (%1$d AB)</string>
+	<string name="combat_move">Pohyb (%1$d AB)</string>
+	<string name="combat_use">Použít věc</string>
+	<string name="combat_endturn">Kolec kola</string>
+	<string name="combat_flee">Utéct</string>
+	<string name="combat_begin_flee">Nyní můžeš utéci z boje kliknutím ve směru, kterým chceš utíkat.</string>
+	<string name="combat_flee_failed">Útěk se nezdařil!</string>
+	<string name="combat_status_ap">AB: %1$d</string>
+	<string name="combat_monsterhealth">PŽ:</string>
+	<string name="combat_monsteraction">%1$s útočí.</string>
+	<string name="combat_result_monstermiss">%1$s míjí cíl!</string>
+	<string name="combat_result_monsterhit">%1$s tě zraňuje za %2$d BŽ!</string>
+	<string name="combat_result_monsterhitcritical">%1$s tě kriticky zasahuje za %2$d BŽ!</string>
+	<string name="combat_result_heromiss">Tvůj útok je neúspěšný.</string>
+	<string name="combat_result_herohit">%1$s ztrácí %2$d BŽ!</string>
+	<string name="combat_result_herohitcritical">%1$s ztrácí díky kritickému zásahu %2$d BŽ!</string>
+	<string name="combat_result_herokillsmonster">%1$s umírá!</string>
+	<string name="combat_not_enough_ap">V tomto kole nemáš na tuto akci dostatečný počet AB.</string>
+	<string name="combat_hero_dies">Upadáš v bezvědomí, ale naštěstí se opět probouzíš živý, omámený a unavený. Ztrácíš %1$d zkušeností.</string>
+	<string name="combat_miss_animation_message">VEDLE</string>
+	<string name="combat_taunt_monster">"Posmíváš se protivníkovi:  %1$s!"</string>
+	<string name="combat_condition_player_apply">Působí na tebe: %1$s.</string>
+	<string name="combat_condition_player_clear">Zbavuješ se: %1$s.</string>
+	<string name="combat_condition_player_immune">Jsi nyní imunní vůči: %1$s.</string>
+	<string name="combat_condition_monster_apply">%1$s působí na: %2$s.</string>
+	<string name="combat_condition_monster_clear">%1$s se zbavuje: %2$s.</string>
+	<string name="combat_condition_monster_immune">%1$s je nyní imunní vůči: %2$s.</string>
+	
+	
+	<string name="inventory_info">Info</string>
+	<string name="inventory_equip">Vystrojit</string>
+	<string name="inventory_unequip">Odstrojit</string>
+	<string name="inventory_use">Použít</string>
+	<string name="inventory_drop">Upustit</string>
+	<string name="inventory_item_used">Používáš: %1$s.</string>
+	<string name="inventory_item_dropped">Upouštíš: %1$s.</string>
+	<string name="inventory_item_equipped">Vystrojuješ si: %1$s.</string>
+
+	<string name="dialog_loot_pickall">Vzít vše</string>
+	<string name="dialog_loot_foundgold">Našel jsi %1$d ks zlaťáků.</string>
+	<string name="dialog_loot_pickedupitem">Sbíráš jeden předmět.</string>
+	<string name="dialog_loot_pickedupitems">Sbíráš celkem %1$d ks předmětů.</string>
+	<string name="dialog_groundloot_title">Nález</string>
+	<string name="dialog_groundloot_message">Našel jsi nějaké věci.</string>
+	<string name="dialog_monsterloot_title">Vítěztví</string>
+	<string name="dialog_monsterloot_message">Přežíváš souboj.</string>
+	<string name="dialog_monsterloot_gainedexp">Získáváš zkušenosti: %1$d.</string>
+
+	<string name="monster_difficulty_veryeasy">Nejlehčí</string>
+	<string name="monster_difficulty_easy">Lehčí</string>
+	<string name="monster_difficulty_normal">Normální</string>
+	<string name="monster_difficulty_hard">Težší</string>
+	<string name="monster_difficulty_veryhard">Nejtežší</string>
+	<string name="monster_difficulty_impossible">Absurdní</string>
+
+	<string name="actorinfo_class">Třída:</string>
+	<string name="actorinfo_difficulty">Obtížnost:</string>
+	<string name="actorinfo_health">Počet životů:</string>
+	<string name="actorinfo_attack">Útok:</string>
+	<string name="actorinfo_defense">Obrana:</string>
+	<string name="actorinfo_movecost">Cena pohybu (AB):</string>
+	<string name="actorinfo_basetraits">Základní bojové statistiky (bez výbavy a dovedností)</string>
+	<string name="actorinfo_currenttraits">Bojové statistiky (aktuální)</string>
+
+	<string name="traitsinfo_attack_cost">Cena útoku (AB):</string>
+	<string name="traitsinfo_attack_chance">Přesnost útoku:</string>
+	<string name="traitsinfo_attack_damage">Zranění způsobená útokem:</string>
+	<string name="traitsinfo_criticalhit_skill">Úroveň kritického zásahu:</string>
+	<string name="traitsinfo_criticalhit_multiplier">Násobitel kritického zásahu:</string>
+	<string name="traitsinfo_defense_chance">Šance odvrácení útoku:</string>
+	<string name="traitsinfo_defense_damageresist">Odolnost vůči zranění:</string>
+
+	<string name="iteminfo_category">Kategorie:</string>
+	<string name="iteminfo_action_use">Použít</string>
+	<string name="iteminfo_action_equip">Vystrojit</string>
+	<string name="iteminfo_action_unequip">Odstrojit</string>
+	<string name="iteminfo_action_use_ap">Použít (%1$d AP)</string>
+	<string name="iteminfo_action_equip_ap">Vystrojit (%1$d AB)</string>
+	<string name="iteminfo_action_unequip_ap">Odstrojit (%1$d AB)</string>
+
+	<string name="startscreen_continue">Pokračovat v aktuální hře</string>
+	<string name="startscreen_newgame">Nová hra</string>
+	<string name="startscreen_newgame_start">Začít hru</string>
+	<string name="startscreen_newgame_confirm">Aktuální hra bude přepsána. Skutečně chceš začít hrát novou hru?</string>
+	<string name="startscreen_about">O hře/Nápověda</string>
+	<string name="startscreen_selectherosprite">Vyber si hrdinu</string>
+	<string name="startscreen_enterheroname">Zadej jméno svého hrdiny</string>
+	<string name="startscreen_load">Načíst</string>
+
+	<string name="conversation_rewardexp">[Získáváš zkušenosti: %1$d]</string>
+	<string name="conversation_rewardgold">[Získáváš zlaťáky: %1$d]</string>
+	<string name="conversation_lostgold">[Ztrácíš zlaťáky: %1$d]</string>
+	<string name="conversation_rewarditem">[Získáváš předmět]</string>
+	<string name="conversation_rewarditems">[Získáváš předměty: %1$d ks]</string>
+	<string name="conversation_next">Dál</string>
+	<string name="conversation_leave">Konec</string>
+
+	<string name="shop_buy">Nákup</string>
+	<string name="shop_sell">Prodej</string>
+	<string name="shop_infoitem">Info</string>
+	<string name="shop_buyitem">Nákup (%1$d ks zlatých)</string>
+	<string name="shop_sellitem">Prodej (%1$d ks zlatých)</string>
+	<string name="shop_yourgold">Tvé zlaťáky: %1$d</string>
+	<string name="shop_item_bought">Kupuješ %1$s.</string>
+	<string name="shop_item_sold">Prodáváš %1$s.</string>
+	<string name="shop_item_sort">Srovnat</string>
+
+	<string name="levelup_title">Nová úroveň</string>
+	<string name="levelup_description">Vítej na úrovni %1$d!</string>
+	<string name="levelup_buttontext">Nová úroveň</string>
+	<string name="levelup_add_health">Zvýšit zdraví (+%1$d PŽ)</string>
+	<string name="levelup_add_health_description">Přidá %1$d ks životů k tvému celkovému počtu životů.</string>
+	<string name="levelup_add_attackchance">Zvýšit přesnost útoku (+%1$d)</string>
+	<string name="levelup_add_attackchance_description">Zvýší tvou základní přesnost útoku o %1$d.</string>
+	<string name="levelup_add_attackdamage">Zvýšit zranění způsobené útokem (+%1$d)</string>
+	<string name="levelup_add_attackdamage_description">Zvýší základní zranění tvého útoku o %1$d.</string>
+	<string name="dialog_rest_title">Spát</string>
+	<string name="dialog_rest_confirm_message">Chceš si zde odpočinout?</string>
+	<string name="dialog_rest_message">Po osvěžujícím spánku se vzbouzíš plně zdráv.</string>
+
+	<string name="about_button1">Nápověda</string>
+	<string name="about_button2">Tvůrci</string>
+	<string name="about_button3">Licence</string>
+	<string name="about_contents1">Vítej ve hře Andor\'s Trail. Jedná se o \'Open Source\' RPG hru s prvky rogue-like a fantasy pro Android&lt;br /&gt; 
+\n &lt;br /&gt; 
+\n &lt;a href=http://andorstrail.com/&gt;Fórum na andorstrail.com, kde se kladou otázky a vedou diskuze o hře.&lt;/a&gt;&lt;br /&gt; 
+\n &lt;br /&gt; 
+\n &lt;a href=http://andorstrail.com/wiki&gt;Wiki o hře Andor\'s Trail, kde lze najít podrobnější informace o světě hry Andor\'s Trail (mytologie). Poslední aktualizace z roku 2014 nic nemění na tom, že informace jsou víceméně aktuální.&lt;/a&gt;&lt;br /&gt; 
+\n &lt;br /&gt; 
+\n &lt;a href=http://github.com/Zukero/andors-trail/&gt;Projekt na github.com pro vývojáře.&lt;/a&gt;&lt;br /&gt; 
+\n &lt;br /&gt; 
+\nPokud máš otázky ke hře, prosím navštiv herní fórum.&lt;br /&gt;</string>
+
+	<string name="levelup_add_blockchance">Zvýšit šanci odvrácení útoku (+%1$d)</string>
+	<string name="levelup_add_blockchance_description">Zvýší šanci odvrácení útoku o %1$d.</string>
+
+	<string name="about_contents3">Tento program je svobodný. Můžeš jej za splnění podmínek licence GNU General Public License (verze 2 nebo novější) vydanou Free Software Foundation dále šířit a/nebo upravovat.&lt;br /&gt; 
+\n &lt;br /&gt; 
+\n Tento program je distribuován s nadějí, že bude k užitku, ale BEZ JAKÉKOLIV ZÁRUKY, JAKÉHOKOLI DRUHU, AŤ VÝSLOVNÉ NEBO VYPLÝVAJÍCÍ, VČETNĚ, ALE NIKOLI JEN, ZÁRUK OBCHODOVATELNOSTI A VHODNOSTI PRO URČITÝ ÚČEL. Detaily najdeš v GNU General Public License.&lt;br /&gt; 
+\n &lt;br /&gt; 
+\n Společně s touto kopií jsi obdžel/a jeden exemplář GNU General Public License. Pokud tomu tak není, navštiv:&lt;a href=http://www.gnu.org/licenses&gt;http://www.gnu.org/licenses&lt;/a&gt;&lt;br /&gt; 
+\n &lt;br /&gt; 
+\n Zdrojový kód a/nebo požadavky na vylepšení můžeš stáhnout/najít/zadat na této stránce:&lt;a href=http://github.com/Zukero/andors-trail/&gt;http://github.com/Zukero/andors-trail/&lt;/a&gt;&lt;br /&gt;</string>
+	<string name="about_interface">&lt;div&gt;&lt;b&gt;Nastavení&lt;/b&gt; je přístupné z hlavní nabídky (stiskni tlčítko zpět).&lt;/div&gt; &lt;p&gt;________________&lt;/p&gt; &lt;h1&gt;Herní ikony&lt;/h1&gt; &lt;div&gt;&lt;b&gt;Truhla&lt;/b&gt;&lt;img alt=chest src=chest.png /&gt;&lt;/div&gt; &lt;p&gt;Pozice okamžitého použití[Podržením prstu na vacích se zobrazí nabídka předmětů k okamžitému použití]&lt;/p&gt; &lt;div&gt;&lt;b&gt;Hrdina&lt;/b&gt;&lt;img alt=hero src=char_hero.png /&gt;&lt;/div&gt; &lt;p&gt;Menu [Přehled, Mise, Dovednosti &amp;amp; Inventář *]&lt;/p&gt; &lt;p&gt;* (Když v intentáři klikneš na předmět, zobrazí se informace o předmětu; podržením prstu na předmětu dostaneš více možností)&lt;/p&gt; &lt;div&gt;&lt;b&gt;Nepřítel&lt;/b&gt;&lt;img alt=monster src=monster.png /&gt;&lt;/div&gt; &lt;p&gt;Informace [Pouze během boje]&lt;/p&gt; &lt;p&gt;________________&lt;/p&gt; &lt;h1&gt;Boj&lt;/h1&gt; &lt;p&gt;Akce vykonané v boji stojí akční body (AB)...&lt;/p&gt; &lt;div&gt;&lt;b&gt;Útok&lt;/b&gt; - [3AP] *&lt;/div&gt; &lt;img alt=attacking src=doubleattackexample.png /&gt; &lt;p&gt;* (Případná výstroj a výbava může změnit časovou náročnost provedení akce - útoku, použití předmětu apod.)&lt;/p&gt; &lt;div&gt;&lt;b&gt;Použití předmětu&lt;/b&gt; - [5AP]&lt;/div&gt; &lt;div&gt;&lt;b&gt;Útěk&lt;/b&gt; - [6AP]&lt;/div&gt; &lt;p&gt;________________&lt;/p&gt; &lt;h1&gt;Souboj detailněji&lt;/h1&gt; &lt;div&gt;Během souboje podrž prst na políčku vedle hrdiny...&lt;/div&gt; &lt;div&gt;&lt;b&gt;Pro útěk&lt;/b&gt;&lt;/div&gt; &lt;p&gt;(vybrané políčko se zvýrazní - tlačítko útoku se změní na tlačítko pohybu)&lt;/p&gt; &lt;img alt=flee src=flee_example.png /&gt; &lt;p&gt;[aktivován mód útěku - podrž prst na nepříteli pro návrat k boji]&lt;/p&gt; &lt;div&gt;&lt;b&gt;Pro změnu cíle útoku&lt;/b&gt;&lt;/div&gt; &lt;p&gt;(červené zvýraznění cíle útoku se přesune na nového nepřítele)&lt;/p&gt; &lt;p&gt;[cíl útoku byl změněn]&lt;/p&gt;</string>
+
+	<string name="dialog_newversion_title">Vítej</string>
+	<string name="dialog_newversion_message">Děkujeme za stažení a instalaci hry Andor\'s Trail!
+\n
+\n Prosím uvědom si, že tato verze hry Andor\'s Trail není konečná, jedná se o stále PROBÍHAJÍCÍ PRÁCI, z čehož vyplývá, že ne všechny mapy jsou kompletní. Zatím.
+\n Prosím navštiv fórum o hře. Tam lze diskutovat s jinými hráči a vývojáři této hry, nebo dokonce můžeš pomoci tuto hru zlepšit (viz O hře).
+\n 
+\n Děkujeme za všechnu zpětnou vazbu!</string>
+
+	<string name="questlog_includecompleted_prompt">Vybrat zobrazené mise</string>
+	<string name="questlog_includecompleted_hidecompleted">Skrýt dokončené mise</string>
+	<string name="questlog_includecompleted_includecompleted">Zobrazit všechny mise</string>
+	<string name="questlog_includecompleted_onlycompleted">Jen dokončené mise</string>
+	<string name="questlog_queststatus">Stav: %1$s</string>
+	<string name="questlog_queststatus_inprogress">Otevřená</string>
+	<string name="questlog_queststatus_completed">Dokončená</string>
+
+	<string name="preferences_display_category">Vzhled</string>
+	<string name="preferences_display_fullscreen_title">Celoobrazový mód</string>
+	<string name="preferences_display_fullscreen">Hra přes celý displej. (je vyžadován restart aplikace)</string>
+	<string name="preferences_dialog_category">Potvrzování akcí</string>
+	<string name="preferences_dialog_confirmrest_title">Potvrzení spánku</string>
+	<string name="preferences_dialog_confirmrest">Je vyžadováno potvrzení spánku při vstupu na postel. Pokud není zaškrtnuto, hrdina se automaticky vyspí.</string>
+	<string name="preferences_dialog_confirmattack_title">Potvrzení útoku</string>
+	<string name="preferences_dialog_confirmattack">Útoku na nepřítele předchází otázka \'Chceš zaútočit na nepřítele..?\'.</string>
+	<string name="preferences_dialog_monsterloot_title">Zobrazení bojové kořisti</string>
+	<string name="preferences_dialog_monsterloot">Výběr způsobu zobrazení tvé bojové kořisti po vyhraném boji (zlaťáky, zkušenosti, předměty).</string>
+	<string name="preferences_combat_category">Boj</string>
+	<string name="preferences_combat_speed_title">Rychlost průběhu boje</string>
+	<string name="preferences_combat_speed">Nastavení rychlosti útoku nepřítele.</string>
+
+	<string name="preferences_display_loot_dialog">Vždy zobrazí bojovou kořist</string>
+	<string name="preferences_display_loot_dialog_on_items">Zobrazí bojovou kořist pouze pokud kořist obsahuje předměty</string>
+	<string name="preferences_display_loot_dialog_on_items_or_toast">Zobrazí předměty, ostatní do oznámení</string>
+	<string name="preferences_display_loot_toast">Zobrazí krátké oznámení</string>
+	<string name="preferences_display_loot_toast_on_items">Oznámení pouze pokud bojová kořist obsahuje předměty</string>
+	<string name="preferences_display_loot_never">Nezobrazovat</string>
+
+	<string name="preferences_attackspeed_instant">Okamžitý útok (bez animace)</string>
+	<string name="preferences_attackspeed_fast">Rychlý útok</string>
+	<string name="preferences_attackspeed_normal">Bežně rychlý útok</string>
+	<string name="preferences_attackspeed_slow">Pomalý útok</string>
+
+	<string name="preferences_movement_category">Pohyb</string>
+	<string name="preferences_movementmethod_title">Typ pohybu</string>
+	<string name="preferences_movementmethod">Typ pohybu a způsob vyhýbání se překážkám.</string>
+	<string name="preferences_movementmethods_straight">Přímý pohyb (výchozí)</string>
+	<string name="preferences_movementmethods_avoid">Vyhýbat se překážkám</string>
+
+
+	<string name="actorinfo_currentconditions">Aktuální stav</string> <string name="actorcondition_info_removes_all">Odstraní zcela: %1$s</string>
+	<string name="actorcondition_info_immunity">Imunita vůči: %1$s</string>
+	<string name="iteminfo_effect_chance_of">%1$s šance na: %2$s</string>
+	<string name="iteminfo_effect_duration">(Počet kol: %1$d)</string>
+
+	<string name="iteminfo_effect_works_on_source">Na nositele</string>
+	<string name="iteminfo_effect_works_on_target">Na cíl</string>
+	<string name="iteminfo_effect_works_on_attacker">Na útočníka</string>
+	<string name="iteminfo_effect_works_when_hitting_target">Při zásahu</string>
+	<string name="iteminfo_effect_works_when_killing_target">Při každém zabití</string>
+	<string name="iteminfo_effect_works_when_used">Při použití</string>
+	<string name="iteminfo_effect_works_when_equipped">Když je ve výstroji</string>
+	<string name="iteminfo_effect_works_when_hit_by_attacker">Při zásahu útočníkem</string>
+	<string name="iteminfo_effect_works_when_killed_by_attacker">Při zabití útočníkem</string>
+	
+	<string name="iteminfo_effect_decrease_current_hp">"Vysává PŽ: %1$s "</string>
+	<string name="iteminfo_effect_increase_current_hp">Obnovuje PŽ: %1$s</string>
+	<string name="iteminfo_effect_decrease_current_ap">Vysává AB: %1$s</string>
+	<string name="iteminfo_effect_increase_current_ap">Obnovuje AB: %1$s</string>
+
+	<string name="iteminfo_effect_increase_max_hp">Zvyšuje maximální PŽ: +%1$d</string>
+	<string name="iteminfo_effect_decrease_max_hp">Snižuje maximální PŽ: +%1$d</string>
+	<string name="iteminfo_effect_increase_max_ap">Zvyšuje maximální AB: +%1$d</string>
+	<string name="iteminfo_effect_decrease_max_ap">Snižuje maximální AB: +%1$d</string>
+	<string name="iteminfo_effect_increase_movecost">Zvyšuje cenu pohybu o +%1$d AB</string>
+	<string name="iteminfo_effect_decrease_movecost">Snižuje cenu pohybu o%1$d AB</string>
+
+	<string name="preferences_display_scaling_factor_title">Měřítko</string>
+	<string name="preferences_display_scaling_factor">Změna velikosti vykreslených objektů a textů.</string>
+	<string name="preferences_display_scaling_factor_normal">Běžná velikost</string>
+	<string name="preferences_display_scaling_factor_50_percent_larger">1,5krát větší</string>
+	<string name="preferences_display_scaling_factor_double">Dvojnábná velikost</string>
+
+	<string name="inventory_assign">Přiřazení k okamžitému použití</string>
+	<string name="inventory_selectitem">Vyber předmět pro přiřazení</string>
+	<string name="inventory_assign_slot1">Pozice 1</string>
+	<string name="inventory_assign_slot2">Pozice 2</string>
+	<string name="inventory_assign_slot3">Pozice 3</string>
+	<string name="inventory_unassign">Zrušit přiřazení pozice</string>
+
+	<string name="preferences_movement_dpad_position_title">Virtuální d-pad</string>
+	<string name="preferences_movement_dpad_position">Zobrazí virtuální d-pad s jehož pomocí se ovládá pohyb.</string>
+	<string name="preferences_movement_dpad_minimizeable_title">Minimalizovatelný d-pad</string>
+	<string name="preferences_movement_dpad_minimizeable">Zaškrtnutí tohoto nastavení dovolí - v případě zapnutého d-padu - jeho minimalizaci stisknutím cetra d-padu.</string>
+
+	<string name="preferences_movement_dpad_positions_disabled">Neaktivní</string>
+	<string name="preferences_movement_dpad_positions_lower_right">Spodní pravý roh</string>
+	<string name="preferences_movement_dpad_positions_lower_left">Spodní levý roh</string>
+	<string name="preferences_movement_dpad_positions_center_bottom">Spodní střed</string>
+	<string name="preferences_movement_dpad_positions_center_left">Vlevo uprostřed</string>
+	<string name="preferences_movement_dpad_positions_center_right">Vpravo uprostřed</string>
+	<string name="preferences_movement_dpad_positions_upper_left">Horní levý roh</string>
+	<string name="preferences_movement_dpad_positions_upper_right">Horní pravý roh</string>
+	<string name="preferences_movement_dpad_positions_center_top">Horní střed</string>
+
+	<string name="actorconditioninfo_constant_effect">Stálý efekt</string>
+	<string name="actorconditioninfo_effect_every_round">Každé kolo</string>
+	<string name="actorconditioninfo_effect_every_full_round">Každé celé kolo</string>
+	<string name="bulkselection_totalcost_buy">Celková cena: %1$d ks zlaťáků</string>
+	<string name="bulkselection_totalcost_sell">Celková cena: %1$d ks zlaťáků</string>
+	<string name="bulkselection_select_all">Vše</string>
+	<string name="bulkselection_sell_confirmation_title">Skutečně prodat?</string>
+	<string name="bulkselection_sell_confirmation">Skutečně chceš prodat tento předmět: %1$s? Jedná se o %2$s předmět a pravděpodobně jej už nikdy nezískáš.</string>
+
+	<string name="skill_title_weapon_chance">Přesnost zbraně</string>
+	<string name="skill_title_weapon_dmg">Mocný úder</string>
+	<string name="skill_title_barter">Obchodník</string>
+	<string name="skill_title_dodge">Úhyb</string>
+	<string name="skill_title_barkskin">Hroší kůže</string>
+	<string name="skill_title_more_criticals">Více kritických zásahů</string>
+	<string name="skill_title_better_criticals">Účinnější kritické zásahy</string>
+	<string name="skill_title_speed">Bojová rychlost</string>
+	<string name="skill_title_coinfinder">Lovec pokladů</string>
+	<string name="skill_title_more_exp">Rychlý učeň</string>
+	<string name="skill_title_cleave">Kosení nepřátel</string>
+	<string name="skill_title_eater">Pojídač mrtvol</string>
+	<string name="skill_title_fortitude">Zvyšující se vitalita</string>
+	<string name="skill_title_evasion">Úskok</string>
+	<string name="skill_title_regeneration">Zotavení</string>
+	<string name="skill_title_lower_exploss">Ovládnutí selhání</string>
+	<string name="skill_title_magicfinder">Lovec kouzlených pokladů</string>
+	<string name="skill_title_resistance_mental">Silná mysl</string>
+	<string name="skill_title_resistance_physical_capacity">Fyzická odolnost</string>
+	<string name="skill_title_resistance_blood_disorder">Čirá krev</string>
+
+	<string name="skill_shortdescription_weapon_chance">Zvýší přesnost útoku</string>
+	<string name="skill_shortdescription_weapon_dmg">Zvýší zranění způsobené útokem</string>
+	<string name="skill_shortdescription_barter">Lepší ceny u obchodníků</string>
+	<string name="skill_shortdescription_dodge">Zvýší šanci vykrytí útoku</string>
+	<string name="skill_shortdescription_barkskin">Odolnost vůči zranění</string>
+	<string name="skill_shortdescription_more_criticals">Zvýší úroveň kritického zásahu</string>
+	<string name="skill_shortdescription_better_criticals">Zvýší zranění způsobená kritickým zásahem</string>
+	<string name="skill_shortdescription_speed">Zvýší maximum akčních bodů</string>
+	<string name="skill_shortdescription_coinfinder">Zvýší šanci na nalezení zlaťáků</string>
+	<string name="skill_shortdescription_more_exp">Více zkušeností za zabité nepřátele</string>
+	<string name="skill_shortdescription_cleave">Za každé zabití obnoví jeden akční bod</string>
+	<string name="skill_shortdescription_eater">Za každé zabití obnoví životy</string>
+	<string name="skill_shortdescription_fortitude">Zvýší maximální počet životů za každou novou úroveň</string>
+	<string name="skill_shortdescription_evasion">Zvýší šanci na útěk</string>
+	<string name="skill_shortdescription_regeneration">Obnoví životy každé kolo</string>
+	<string name="skill_shortdescription_lower_exploss">Sniží počet ztracených zkušeností pokud hráč zemře</string>
+	<string name="skill_shortdescription_magicfinder">Zvíší šanci na nalezení kouzelných předmětů</string>
+	<string name="skill_shortdescription_resistance_mental">Odolnost vůči duševním podmínkám</string>
+	<string name="skill_shortdescription_resistance_physical_capacity">Odolnost vůči fyzickým (tělesným) podmínkám</string>
+	<string name="skill_shortdescription_resistance_blood_disorder">Odolnost vůči krevním potížím</string>
+
+	<string name="skill_longdescription_weapon_chance">Zvýší přesnost útoku o %1$d procent za každou úroveň dovednosti.</string>
+	<string name="skill_longdescription_weapon_dmg">Zvýší zranění způsobená útokem o %1$d za každou úroveň dovednosti.</string>
+	<string name="skill_longdescription_barter">Každá získaná úroveň sníží nákupní i prodejní přirážku o %1$d procentní body.</string>
+	<string name="skill_longdescription_dodge">Zvýší šanci na vykrytí útoku o %1$d procentních bodů za každou úroveň dovednosti.</string>
+	<string name="skill_longdescription_barkskin">Zvýší odolnost vůči zranění o %1$d za každou úroveň dovednosti.</string>
+	<string name="skill_longdescription_more_criticals">Zvýší stávající úroveň kritického zásahu výstroje o %1$d %% za každou úroveň dovednosti.</string>
+	<string name="skill_longdescription_better_criticals">Zvýší stávající násobitel zranění kritického zásahu výstroje o %1$d %% za každou úroveň dovednosti.</string>
+	<string name="skill_longdescription_speed">Zvýší maximální počet akčních bodů (AB) o %1$d za každou úroveň dovednosti.</string>
+	<string name="skill_longdescription_coinfinder">Zvýší šanci na nález zlaťáků po zabití nepřítele o %1$d %% a zvýší počet nalezených zlaťáků o %2$d %% za každou úroveň dovednosti (až do maximální výše, kterou nepřítel může mít).</string>
+	<string name="skill_longdescription_more_exp">Zvýší množství zkušeností získaných zabitím nepřítele o %1$d %% za každou úroveň dovednosti.</string>
+	<string name="skill_longdescription_cleave">Za každého zabitého nepřítele obnoví +%1$d akční bod (AB) za každou úroveň dovednosti.</string>
+	<string name="skill_longdescription_eater">Za každého zabitého nepřítele obnoví +%1$d život (PŽ) za každou úroveň dovednosti.</string>
+	<string name="skill_longdescription_fortitude">Při každém zvýšení úrovně zvýší maximální počet životů (PŽ) o %1$d za každou úroveň dovednosti. Toto neplatí zpětně, ale pouze pro následující nové úrovně.</string>
+	<string name="skill_longdescription_evasion">Každá úroveň dovednosti sníží jak šanci na neúspěch při útěku o %1$d %% , tak šanci, že nepřítel na sousedním políčku zaútočí o %2$d %%.</string>
+	<string name="skill_longdescription_regeneration">V případě, kdy na sousedním políčku není žádné nestvůra, obnoví každé kolo (cca 6 sekund) +%1$d život (PČ) za každou úroveň dovednosti.</string>
+	<string name="skill_longdescription_lower_exploss">"Každá úroveň dovednosti sníží množství ztracených zkušeností způsobené úmrtím o %1$d %% (procent ze současného množství ztracených zkušeností, ne procent celkově).  %2$d úrovní dovednosti zcela zruší ztrátu zkušeností způsobenou úmrtím."</string>
+	<string name="skill_longdescription_magicfinder">Zvýší šanci na nález výjimečných předmětů o %1$d %% za každou úroveň dovednosti.</string>
+	<string name="skill_longdescription_resistance_mental">Sníží šanci na postižení duševním stavem o %1$d %% za každou úroveň dovednosti. To zahrnuje stavy způsobené útoky nepřátel jako např. Omámení nebo Oslabení zbraně.</string>
+	<string name="skill_longdescription_resistance_physical_capacity">Sníží šanci na postižení stavem působícím na tvé fyzické schopnosti o %1$d %% za každou úroveň dovednosti, až do maximální výše %2$d %%. To zahrnuje stavy způsobené útoky nepřátel jako např. Únava.</string>
+	<string name="skill_longdescription_resistance_blood_disorder">Sníží šanci na postižení krve o %1$d %% za každou úroveň dovednosti, až do maximální výše %2$d %%. To zahrnuje stavy způsobené útoky nepřátel jako např. Otrava nebo Krvácející rána.</string>
+
+	<string name="skillinfo_action_levelup">Nová úroveň</string>
+	<string name="skill_current_level">Současná úroveň: %1$d</string>
+	<string name="skill_current_level_with_maximum">Současná úroveň: %1$d / %2$d</string>
+	<string name="skill_prerequisite_other_skill">Pro zvýšení úrovně této dovednosti je zapotřebí mít alespoň úroveň %1$d dovednosti %2$s.</string>
+	<string name="skill_prerequisite_level">Pro zvýšení úrovně této dovednosti je zapotřebí být alespoň na úrovni: %1$d.</string>
+	<string name="skill_prerequisite_stat">Pro zvýšení úrovně této dovednosti potřebuješ mít základní bojovou statistiku %2$s alespoň na hodnotě %1$d.</string>
+	<string name="skill_number_of_increases_one">Můžeš si zvýšit jednu úroveň dovednosti.</string>
+	<string name="skill_number_of_increases_several">Můžeš si zvýšit %1$d úrovně dovednosti.</string>
+	<string name="levelup_adds_new_skillpoint">Získáváš také možnost zvýšit si jednu úroveň dovednosti!</string>
+
+	<string name="loadsave_save_to_new_slot">Vytvořit novou pozici pro uložení hry</string>
+	<string name="loadsave_save_overwrite_confirmation_title">Přepsat uloženou hru?</string>
+	<string name="loadsave_save_overwrite_confirmation">Uložená hra obsahuje jiné jméno hrdiny (%1$s) než je současné jméno hrdiny (%2$s). Opravdu si přeješ tuto uloženou hru přepsat?</string>
+
+	<string name="iteminfo_displaytypes_ordinary">Běžný</string>
+	<string name="iteminfo_displaytypes_quest">Předmět mise</string>
+	<string name="iteminfo_displaytypes_legendary">Legendární</string>
+	<string name="iteminfo_displaytypes_extraordinary">Mimořádný</string>
+	<string name="iteminfo_displaytypes_rare">Vzácný</string>
+
+	<string name="actorconditioninfo_category">"Kategorie: "</string>
+	<string name="actorcondition_categories_spiritual">Duchovní</string>
+	<string name="actorcondition_categories_mental">Duševní</string>
+	<string name="actorcondition_categories_physical">Fyzická</string>
+	<string name="actorcondition_categories_blood">Krevní potíže</string>
+
+	<string name="traitsinfo_base_max_hp">Max PŽ:</string>
+	<string name="traitsinfo_base_max_ap">Max AB:</string>
+	<string name="menu_save_saving_not_allowed_in_combat">Během souboje nelze hru uložit.</string>
+
+	<string name="preferences_optimized_drawing_title">Optimalizované vykreslení</string>
+	<string name="preferences_optimized_drawing">Vypni toto nastavení, pokud se zobrazují chyby ve vykreslení. Pokud je tato volba vybrána, překreslují se pouze změněné části obrazovky.</string>
+
+	<string name="skill_title_shadow_bless">Tmavé požehnání Přítmí</string>
+	<string name="skill_shortdescription_shadow_bless">Odolnost vůči všem typům postižení</string>
+	<string name="skill_longdescription_shadow_bless">Sníží šanci na postižení všech druhů o %1$d %%. To zahrnuje všechny stavy způsobené útokem nepřátel jako např. Jed, Omráčení, Únava.</string>
+
+	<string name="inventory_movetop">Posunout nahoru</string>
+	<string name="inventory_movebottom">Posunout dolů</string>
+	<string name="actorinfo_immune_criticals">Imunní vůči kritickým zásahům</string>
+	<string name="traitsinfo_criticalhit_effectivechance">Skutečná šance na kritický zásah:</string>
+
+	<string name="skill_title_crit1">Vnitřní krvácení</string>
+	<string name="skill_shortdescription_crit1">Šance na vnitřní krvácení</string>
+	<string name="skill_longdescription_crit1">Každý kritický zásah má %1$d %% šanci na způsobení vnitřního krvácení, což cíli přivodí stav \'Vnitřní krvácení\'. Vnitřní krvácení významně sníží útočné statistiky cíle a to znamená, že cíl má menší šanci na úspěšný zásah.</string>
+	<string name="skill_title_crit2">Lamač kostí</string>
+	<string name="skill_shortdescription_crit2">Šance na zlomení kostí</string>
+	<string name="skill_longdescription_crit2">Každý kritický zásah má %1$d %% šanci na zlomení kostí protivníka, což cíli přivodí stav \'Zlomenina\'. To významně sníží obranné statistiky cíle a to znamená, že cíl má meší šanci na vykrytí útoku.</string>
+	<string name="skill_title_rejuvenation">Omlazení</string>
+	<string name="skill_shortdescription_rejuvenation">Šance na ukončení negativního stavu</string>
+	<string name="skill_longdescription_rejuvenation">V každém kole (6 sekund) je %1$d %% šance, že závažnost jednoho působícího negativního stavu bude snížena o jeden stupeň. To platí pro všechny dočasně působící stavy; duševní jako např. Omámení, fyzické jako např. Únava a také na krevní potíže jako např. Otravu.</string>
+	<string name="skill_title_taunt">Výsměch</string>
+	<string name="skill_shortdescription_taunt">Útočník ztácí AB při každém útoku, kterým míjí</string>
+	<string name="skill_longdescription_taunt">V případě, že útočník svým útokem míjí, existuje %1$d %% šance, že útočník ztratí %2$d akční body (AB). To platí pro všechny typy útoků vůči tobě.</string>
+	<string name="skill_title_concussion">Otřes mozku</string>
+	<string name="skill_shortdescription_concussion">Šance na způsobení otřesu mozku</string>
+	<string name="skill_longdescription_concussion">Pokud je při útoku šance cíle na vykrytí útoku (VÚ) alespoň o %1$d nižší než je tvá šance úspěšný zásah (ÚZ), je %2$d %% šance, že takový zásah způsobí cíli otřes mozku. To zásadně sníží útočné bojové statistiky cíle, především zmenší šanci na úspěšný zásah.</string>
+
+	<string name="about_button4">O hře</string>
+
+	<string name="preferences_ui_category">Rozhraní</string>
+	<string name="preferences_ui_enable_animations_title">Zapnutí animací</string>
+	<string name="preferences_ui_enable_animations">Zobrazí animace pro různé prvky herního rozhraní.</string>
+	<string name="menu_button_worldmap">Mapa</string>
+	<string name="menu_button_worldmap_failed">Mapa nemůže být zobrazena.</string>
+	<string name="display_worldmap_not_available">Na tomto místě nelze zobrazit mapu.</string>
+	<string name="display_worldmap_title">Mapa</string>
+
+	<string name="inventory_equip_offhand">Vyzbroj (do levé ruky)</string>
+
+	<string name="iteminfo_effect_weapon_attack_cost">Cena útoku: %1$d AB</string>
+	<string name="iteminfo_effect_increase_attack_cost">Zvyšuje cenu útoku o %1$d AB</string>
+	<string name="iteminfo_effect_decrease_attack_cost">Snižuje cenu útoku o %1$d AB</string>
+	<string name="iteminfo_effect_weapon_attack_chance">Šance na zásah: %1$d</string>
+	<string name="iteminfo_effect_increase_attack_chance">Zvyšuje šanci na zásah o %1$d</string>
+	<string name="iteminfo_effect_decrease_attack_chance">Snižuje šanci na zásah o %1$d</string>
+	<string name="iteminfo_effect_weapon_attack_damage">Zranění: %1$d</string>
+	<string name="iteminfo_effect_weapon_attack_damage_minmax">Zranění: %1$d-%2$d</string>
+	<string name="iteminfo_effect_increase_attack_damage">Zvyšuje zranění o %1$d</string>
+	<string name="iteminfo_effect_increase_attack_damage_minmax">Zvyšuje zranění o %1$d-%2$d</string>
+	<string name="iteminfo_effect_decrease_attack_damage">Snižuje zranění o %1$d</string>
+	<string name="iteminfo_effect_decrease_attack_damage_minmax">Snižuje zranění o %1$d-%2$d</string>
+	<string name="iteminfo_effect_increase_critical_skill">Zvyšuje úroveň kritického zásahu o %1$d</string>
+	<string name="iteminfo_effect_decrease_critical_skill">Snižuje úroveň kritického zásahu o %1$d</string>
+	<string name="iteminfo_effect_critical_multiplier">"Umožňuje kritický zásah s násobitelem  x%1$.1f"</string>
+	<string name="iteminfo_effect_increase_block_chance">Zvyšuje šanci na vykrytí útoku o %1$d</string>
+	<string name="iteminfo_effect_decrease_block_chance">Snižáje šanci na vykrytí útoku o %1$d</string>
+	<string name="iteminfo_effect_increase_damage_resistance">Zvyšuje odolnost vůči zranění o %1$d</string>
+	<string name="iteminfo_effect_decrease_damage_resistance">Snižuje odolnost vůči zranění o %1$d</string>
+	</resources>
