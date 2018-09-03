@@ -466,4 +466,141 @@
 	<string name="iteminfo_effect_decrease_block_chance">Snižáje šanci na vykrytí útoku o %1$d</string>
 	<string name="iteminfo_effect_increase_damage_resistance">Zvyšuje odolnost vůči zranění o %1$d</string>
 	<string name="iteminfo_effect_decrease_damage_resistance">Snižuje odolnost vůči zranění o %1$d</string>
-	</resources>
+	<string name="iteminfo_effect_increase_use_cost">Zvyšuje cenu používání (AB) předmětů během boje o %1$d AB</string>
+	<string name="iteminfo_effect_decrease_use_cost">Snižuje cenu používání (AB) předmětů během boje o %1$d AB</string>
+	<string name="iteminfo_effect_increase_reequip_cost">Zvyšuje cenu vystrojení (AB) předmětů během boje o %1$d AB</string>
+	<string name="iteminfo_effect_decrease_reequip_cost">Snižuje cenu vystrojení (AB) předmětů během boje o %1$d AB</string>
+
+	<string name="loadsave_save_overwrite_confirmation_all">Skutečně přepsat uloženou hru?</string>
+	<string name="loadsave_save_overwrite_confirmation_slot">(pozice %1$d)</string>
+	<string name="preferences_display_overwrite_savegame_entries_always_confirm">Vždy zobrazuj potvrzovací okno</string>
+	<string name="preferences_display_overwrite_savegame_entries_confirm_overwrite">Zobrazuj pouze v případě, že hrdina má jiné jméno</string>
+	<string name="preferences_display_overwrite_savegame_entries_never_confirm">Nezobrazuj potvrzovací okno</string>
+	<string name="preferences_dialog_overwrite_savegame_title">Potvzení při přepsání uložené hry</string>
+	<string name="preferences_dialog_overwrite_savegame">Zobrazí potvrzovací okno pokud se chystáš přepsat existující uloženou hru.</string>
+
+	<string name="heroinfo_reequip_cost">Cena změny výstroje (AB):</string>
+	<string name="heroinfo_useitem_cost">Cena užití předmětu (AB):</string>
+	<string name="combat_result_monstermoved">%1$s se pohybuje.</string>
+	<string name="combat_log_title">Záznam souboje</string>
+	<string name="combat_log_noentries">Bez záznamu.</string>
+	<string name="conversation_reward_quest_finished">[Dokončených misí: \"%1$s\"]</string>
+	<string name="conversation_reward_quest_updated">[Mise aktualizována: \"%1$s\"]</string>
+
+	<string name="skill_title_weapon_prof_dagger">Zručnost: Dýky</string>
+	<string name="skill_title_weapon_prof_1hsword">Zručnost: jednoruční meče</string>
+	<string name="skill_title_weapon_prof_2hsword">Zručnost: obouruční meče</string>
+	<string name="skill_title_weapon_prof_axe">Zručnost: sekery</string>
+	<string name="skill_title_weapon_prof_blunt">Zručnost: tupé zbraně</string>
+	<string name="skill_title_weapon_prof_unarmed">Boj beze zbraní</string>
+	<string name="skill_title_armor_prof_shield">Zručnost: štíty</string>
+	<string name="skill_title_armor_prof_unarmored">Boj be zbroje</string>
+	<string name="skill_title_armor_prof_light">Zručnost: lehká brnění</string>
+	<string name="skill_title_armor_prof_heavy">Zručnost: těžká brnění</string>
+	<string name="skill_title_fightstyle_dualwield">Bojový styl: dvě zbraně</string>
+	<string name="skill_title_fightstyle_2hand">Bojový styl: obouruční zbraně</string>
+	<string name="skill_title_fightstyle_weapon_shield">Bojový styl: zbraň a štít</string>
+	<string name="skill_title_specialization_dualwield">Specializace: Dvě zbraně</string>
+	<string name="skill_title_specialization_2hand">Specializace: Obouruční zbraně</string>
+	<string name="skill_title_specialization_weapon_shield">Specializace: Zbraň a štít</string>
+
+	<string name="skill_shortdescription_weapon_prof_dagger">Zvýší útočné statistiky pro boj s noži a dýkami</string>
+	<string name="skill_shortdescription_weapon_prof_1hsword">Zvýší útočné statistiky pro boj s jednoručními meči</string>
+	<string name="skill_shortdescription_weapon_prof_2hsword">Zvýší útočné statistiky pro boj s obouručními meči</string>
+	<string name="skill_shortdescription_weapon_prof_axe">Zvýší útočné statistiky pro boj se sekerami</string>
+	<string name="skill_shortdescription_weapon_prof_blunt">Zvýší útočné statistiky pro boj s tupými zbraněmi</string>
+	<string name="skill_shortdescription_weapon_prof_unarmed">Zvýší útočné statistiky pro boj beze zbraní</string>
+	<string name="skill_shortdescription_armor_prof_shield">Zvýší obranné statistiky při použití štítu</string>
+	<string name="skill_shortdescription_armor_prof_unarmored">Zvýší obranné statistiky při boji bez brnění</string>
+	<string name="skill_shortdescription_armor_prof_light">Zvýší obranné statistiky při použití lehkého brnění</string>
+	<string name="skill_shortdescription_armor_prof_heavy">Zvýší obranné statistiky při použití těžkého brnění</string>
+	<string name="skill_shortdescription_fightstyle_dualwield">Útok dvěma zbraněmi zároveň</string>
+	<string name="skill_shortdescription_fightstyle_2hand">Účinější útok obouručními zbraněmi</string>
+	<string name="skill_shortdescription_fightstyle_weapon_shield">Efektivnější boj za použití zbraně a štítu</string>
+	<string name="skill_shortdescription_specialization_dualwield">Expert na použití dvou zbraní současně</string>
+	<string name="skill_shortdescription_specialization_2hand">Expert na použití obouručních zbraní</string>
+	<string name="skill_shortdescription_specialization_weapon_shield">Expert na boj se zbraní a štítem</string>
+
+	<string name="skill_longdescription_weapon_prof_dagger">Při použití nože, dýky nebo krátkého meče zvýší každá úroveň dovednosti šanci na zásah o %1$d %% základní šance za zásah zbraně, zvýší šanci na vykrytí útoku o %2$d %% základní šance na vykrytí útoku zbraně a zvýší úroveň kritického zásahu o %3$d %% základní úrovně kritického zásahu zbraně.</string>
+	<string name="skill_longdescription_weapon_prof_1hsword">Při použití dlouhého meče, kordu nebo širokého meče zvýší každá úroveň dovednosti šanci na zásah o %1$d %% základní šance za zásah zbraně, zvýší šanci na vykrytí útoku o %2$d %% základní šance na vykrytí útoku zbraně a zvýší úroveň kritického zásahu o %3$d %% základní úrovně kritického zásahu zbraně.</string>
+	<string name="skill_longdescription_weapon_prof_2hsword">Při použití obouruční meče zvýší každá úroveň dovednosti šanci na zásah o %1$d %% základní šance za zásah zbraně, zvýší šanci na vykrytí útoku o %2$d %% základní šance na vykrytí útoku zbraně a zvýší úroveň kritického zásahu o %3$d %% základní úrovně kritického zásahu zbraně.</string>
+	<string name="skill_longdescription_weapon_prof_axe">Při použití sekery nebo válečné sekery zvýší každá úroveň dovednosti šanci na zásah o %1$d %% základní šance za zásah zbraně, zvýší šanci na vykrytí útoku o %2$d %% základní šance na vykrytí útoku zbraně a zvýší úroveň kritického zásahu o %3$d %% základní úrovně kritického zásahu zbraně.</string>
+	<string name="skill_longdescription_weapon_prof_blunt">Při použití tupých zbraní zvýší každá úroveň dovednosti šanci na zásah o %1$d %% základní šance za zásah zbraně, zvýší šanci na vykrytí útoku o %2$d %% základní šance na vykrytí útoku zbraně a zvýší úroveň kritického zásahu o %3$d %% základní úrovně kritického zásahu zbraně. Mezi tupé se počítají kyje, tyče, palice, žezla, válečné a obří kladiva.</string>
+	<string name="skill_longdescription_weapon_prof_unarmed">Při boji bez zbraně a štítu zvýší každá úroveň dovednosti šanci na zásah o %1$d %%, šanci na vykrytí útoku o %2$d %% a zvýší úroveň kritického zásahu o %3$d %%.</string>
+	<string name="skill_longdescription_armor_prof_shield">Zvýší redukci zranění o %1$d za každou úroveň dovednosti v případech, když je použit štít.</string>
+	<string name="skill_longdescription_armor_prof_unarmored">Zvýší šanci na vykrytí o %1$d za každou úroveň dovednosti v případech, kdy není použita zbroj. Předměty vyrobené z látky nejsou považovány za zbroj.</string>
+	<string name="skill_longdescription_armor_prof_light">Zvýší šanci na vykrytí útoku každého vystrojeného lehkého brnění o %1$d %% z jeho výchozí hodnoty za každou úroveň dovednosti. Lehké brnění zahrnuje kožená, usňová brnění a brnění z lehkých kovů.</string>
+	<string name="skill_longdescription_armor_prof_heavy">Zvýší šanci na vykrytí útoku každého vystrojeného těžkého brnění o %1$d %% z jeho výchozí hodnoty za každou úroveň dovednosti. Dále sníží postih ceny pohybu o %2$d %% za každou úroveň dovednosti a také sníží postih ceny útoku o %3$d %% za každou úroveň dovednosti. Těžké brnění zahrnuje kované, kroužkové a plátové brnění.</string>
+	<string name="preferences_quickslots_placement">Pozice položek okamžitého použití</string>
+	<string name="preferences_quickslots_placement_summary">Kde se zobrazí položky okamžitého použití</string>
+	<string name="preferences_quickslots_placements_horizontal_center_bottom">Uprostřed dole</string>
+	<string name="preferences_quickslots_placements_vertical_center_left">Uprostřed vlevo</string>
+	<string name="preferences_quickslots_placements_vertical_center_right">Uprostřed vpravo</string>
+	<string name="preferences_quickslots_placements_vertical_bottom_left">Dole vlevo, podle levého okraje</string>
+	<string name="preferences_quickslots_placements_horizontal_bottom_left">Dole vlevo, podle spodního okraje</string>
+	<string name="preferences_quickslots_placements_horizontal_bottom_right">Dole vpravo, podle spodního okraje</string>
+	<string name="preferences_quickslots_placements_vertical_bottom_right">Dole vpravo, podle pravého okraje</string>
+	<string name="preferences_ui_show_quickslots_when_toolbox_is_visible_title">Zobrazí položky rychlého použití, když je otevřený panel nástrojů</string>
+	<string name="preferences_ui_show_quickslots_when_toolbox_is_visible">Položky rychlého použití se zobrazí v okamžiku otevření panelu nástrojů</string>
+	<string name="startscreen_incompatible_savegames">Tato verze hry Andor\'s Trail je stále ve vývoji. Uložené hry vytvořené touto verzí nejsou kompatibilní s veřejně vydanou verzí hry.</string>
+	<string name="startscreen_non_release_version">Toto je testovací verze hry Andor\'s Trail. Uložené hry vytvořené touto verzí nejsou kompatibilní s veřejně vydanou verzí hry.</string>
+	<string name="heroinfo_gamestats">Herní statistika</string>
+	<string name="heroinfo_gamestats_quests">Dokončené mise</string>
+	<string name="heroinfo_gamestats_deaths">Počet upadnutí do bezvědomí</string>
+	<string name="heroinfo_gamestats_spent_gold">Zlaťáky utracené v obchodech</string>
+	<string name="heroinfo_gamestats_bonemeals">Počet vypitých lektvarů z kostního prachu</string>
+	<string name="heroinfo_gamestats_num_used_items">Použito předmětů</string>
+	<string name="heroinfo_gamestats_visited_maps">Navštívené oblasti</string>
+	<string name="heroinfo_gamestats_fav_item">Nejčastěji použitý předmět</string>
+	<string name="heroinfo_gamestats_num_killed_monsters">Zabito nepřátel</string>
+	<string name="heroinfo_gamestats_top_boss">Nejsilnější zabitý nepřítel</string>
+	<string name="heroinfo_gamestats_fav_monsters">Nejčastěji zabitý nepřítel</string>
+	<string name="heroinfo_gamestats_name_and_qty">%1$s (%2$d)</string>
+
+	<string name="preferences_ui_use_localized_resources_title">Lokalizované zdroje</string>
+	<string name="preferences_ui_use_localized_resources">Pokud je překlad k dispozici, zobrazí se (vyžadován restart)</string>
+	<string name="change_locale_requires_restart">Změna lokalizovaných zdrojů vyžeduje restart. Hra Andor\'s Trail byla zavřena.</string>
+
+	<string name="inventory_category_all">Vše</string>
+	<string name="inventory_category_favorites">Oblíbené</string>
+	<string name="inventory_category_weapons">Zbraně</string>
+	<string name="inventory_category_armor">Zbroje</string>
+	<string name="inventory_category_usable">Spotřebovatelné</string>
+	<string name="inventory_category_quest">Předměty misí</string>
+	<string name="inventory_category_other">Jiné</string>
+
+	<string name="inventory_sort_custom">Nesrovnávej</string>
+	<string name="inventory_sort_name">Jména</string>
+	<string name="inventory_sort_price">Ceny</string>
+	<string name="inventory_sort_quantity">Množství</string>
+	<string name="inventory_sort_rarity">Vzácnosti</string>
+	<string name="inventory_sort_type">Typu</string>
+
+	<string name="shoplist_sort_custom">Nejrovnávej</string>
+	<string name="shoplist_sort_name">Jména</string>
+	<string name="shoplist_sort_price">Ceny</string>
+	<string name="shoplist_sort_quantity">Množství</string>
+	<string name="shoplist_sort_rarity">Vzácnosti</string>
+	<string name="shoplist_sort_type">Typu</string>
+
+	<string name="skill_category_all">Vše</string>
+	<string name="skill_category_offense">Útočné</string>
+	<string name="skill_category_defense">Obrané</string>
+	<string name="skill_category_criticals">Kritické zásahy</string>
+	<string name="skill_category_immunity">Imunitní</string>
+	<string name="skill_category_utility">Užitné</string>
+	<string name="skill_category_speciality">Specializace</string>
+	<string name="skill_sort_unsorted">Nesrovnávej</string>
+	<string name="skill_sort_name">Jména</string>
+	<string name="skill_sort_points">Úrovně</string>
+	<string name="skill_sort_unlocked">Dostupnosti</string>
+	
+	<string name="preferences_display_theme_title">Motiv</string>
+	<string name="preferences_display_theme">Vyber motiv zobrazení (vyžeduje restart)</string>
+	<string name="preferences_display_theme_blue">Kobalt</string>
+	<string name="preferences_display_theme_green">Malachit</string>
+	<string name="preferences_display_theme_charcoal">Obsidián</string>
+	<string name="change_theme_requires_restart">Změna motivu vyžaduje restart. Hra Andor\'s Trail byla zavřena.</string>
+	
+	
+</resources>
