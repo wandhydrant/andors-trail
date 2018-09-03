@@ -27,7 +27,7 @@
 
 	<string name="status_hp">PŻ:</string>
 	<string name="status_ap">PA:</string>
-	<string name="status_exp">Poziom:</string>
+	<string name="status_exp">Dośw.:</string>
 
 	<string name="heroinfo_char">Przegląd</string>
 	<string name="heroinfo_inv">Ekwipunek</string>
@@ -65,7 +65,7 @@
 
 	<string name="inventory_info">Informacje</string>
 	<string name="inventory_equip">Wyekwipuj</string>
-	<string name="inventory_unequip">Zrezygnuj</string>
+	<string name="inventory_unequip">Zdejmij</string>
 	<string name="inventory_use">Użyj</string>
 	<string name="inventory_drop">Porzuć</string>
 	<string name="inventory_item_used">Użyłeś %1$s.</string>
@@ -345,25 +345,25 @@ W celu pobrania kodu źródłowego i opisu gry odwiedź stronę projektu: &lt;a 
 	<string name="bulkselection_sell_confirmation">Czy jesteś pewien że chcesz sprzedać %1$s? Ten przedmiot jest %2$s i możliwe jest, że już nigdy go nie odzyskasz.</string>
 
 	<string name="skill_title_weapon_chance">Celny cios</string>
-	<string name="skill_title_weapon_dmg">Potężny cios</string>
-	<string name="skill_title_barter">Kupiec</string>
+	<string name="skill_title_weapon_dmg">Silne uderzenie</string>
+	<string name="skill_title_barter">Handlarz</string>
 	<string name="skill_title_dodge">Unik</string>
 	<string name="skill_title_barkskin">Zdrewniała skóra</string>
 	<string name="skill_title_more_criticals">Częstsze ciosy krytyczne</string>
 	<string name="skill_title_better_criticals">Mocniejsze ciosy krytyczne</string>
-	<string name="skill_title_speed">Błyskawiczny cios</string>
-	<string name="skill_title_coinfinder">Poszukiwacz skarbów</string>
-	<string name="skill_title_more_exp">Dobry uczeń</string>
+	<string name="skill_title_speed">Szybkość Walki</string>
+	<string name="skill_title_coinfinder">Poszukiwacz Skarbów</string>
+	<string name="skill_title_more_exp">Dobry Uczeń</string>
 	<string name="skill_title_cleave">Rozłupanie</string>
-	<string name="skill_title_eater">Zjadacz ciał</string>
-	<string name="skill_title_fortitude">Zwiększony hart</string>
+	<string name="skill_title_eater">Zjadacz Ciał</string>
+	<string name="skill_title_fortitude">Zwiększona Wytrzymałość</string>
 	<string name="skill_title_evasion">Odskok</string>
 	<string name="skill_title_regeneration">Regeneracja</string>
-	<string name="skill_title_lower_exploss">Mistrz Upadków</string>
-	<string name="skill_title_magicfinder">Poszukiwacz artefaktów</string>
-	<string name="skill_title_resistance_mental">Silny umysł</string>
-	<string name="skill_title_resistance_physical_capacity">Wytrzymałe ciało</string>
-	<string name="skill_title_resistance_blood_disorder">Czysta krew</string>
+	<string name="skill_title_lower_exploss">Mistrzostwo w Porażkach</string>
+	<string name="skill_title_magicfinder">Poszukiwacz Artefaktów</string>
+	<string name="skill_title_resistance_mental">Silny Umysł</string>
+	<string name="skill_title_resistance_physical_capacity">Wytrzymałe Ciało</string>
+	<string name="skill_title_resistance_blood_disorder">Czysta Krew</string>
 
 	<string name="skill_shortdescription_weapon_chance">Zwiększa szansę trafienia.</string>
 	<string name="skill_shortdescription_weapon_dmg">Zwiększa zadawane obrażenia.</string>
@@ -629,4 +629,67 @@ Każdy poziom umiejętności podnosi szansę trafienia broni o %1$d %% (licząc 
 	<string name="heroinfo_experiencepoints">Punkty doświadczenia (XP):</string>
 	<string name="combat_taunt_monster">Szydzisz %1$s!</string>
 	<string name="combat_condition_player_apply">Jesteś dotknięty %1$s.</string>
-	</resources>
+	<string name="combat_condition_player_clear">Jesteś oczyszczony z %1$s.</string>
+	<string name="combat_condition_player_immune">Jesteś teraz odporny na %1$s.</string>
+	<string name="combat_condition_monster_apply">%2$s wpływa na %1$s.</string>
+	<string name="combat_condition_monster_clear">%2$s przestał wpływać na %1$s.</string>
+	<string name="combat_condition_monster_immune">%1$s jest teraz odporny na %2$s.</string>
+	
+	
+	<string name="startscreen_newgame_start">Start gry</string>
+	<string name="startscreen_selectherosprite">Wybierz swojego bohatera</string>
+	<string name="shop_item_sort">Rodzaj</string>
+
+	<string name="actorcondition_info_immunity">Odporność na %1$s</string>
+	<string name="iteminfo_effect_works_on_attacker">Na atakującego</string>
+	<string name="iteminfo_effect_works_when_hit_by_attacker">Kiedy uderzony przez atakującego</string>
+	<string name="iteminfo_effect_works_when_killed_by_attacker">Kiedy zabity przez atakującego</string>
+	
+	<string name="inventory_selectitem">Wybierz przedmiot do przydzielenia</string>
+	<string name="combat_log_noentries">Nie ma jeszcze wpisów.</string>
+	<string name="inventory_category_all">Dodane w 0.7.2</string>
+	<string name="inventory_category_favorites">Ulubione</string>
+	<string name="inventory_category_weapons">Broń</string>
+	<string name="inventory_category_armor">Zbroja</string>
+	<string name="inventory_category_usable">Jadalny</string>
+	<string name="inventory_category_quest">Przedmiot do zadania</string>
+	<string name="inventory_category_other">Inne</string>
+
+	<string name="inventory_sort_custom">Nieposortowany</string>
+	<string name="inventory_sort_name">Nazwa</string>
+	<string name="inventory_sort_price">Cena</string>
+	<string name="inventory_sort_quantity">Ilość</string>
+	<string name="inventory_sort_rarity">Rzadkość</string>
+	<string name="inventory_sort_type">Typ</string>
+
+	<string name="shoplist_sort_custom">Nieposortowany</string>
+	<string name="shoplist_sort_name">Nazwa</string>
+	<string name="shoplist_sort_price">Cena</string>
+	<string name="shoplist_sort_quantity">Ilość</string>
+	<string name="shoplist_sort_rarity">Rzadkość</string>
+	<string name="shoplist_sort_type">Typ</string>
+
+	<string name="skill_category_all">Wszystkie</string>
+	<string name="skill_category_offense">Ofensywa</string>
+	<string name="skill_category_defense">Defensywa</string>
+	<string name="skill_category_criticals">Krytyki</string>
+	<string name="skill_category_immunity">Odporność</string>
+	<string name="skill_category_utility">Użyteczność</string>
+	<string name="skill_category_speciality">Specjalizacja</string>
+	<string name="skill_category_proficiency">Wyszkolenie</string>
+
+	<string name="skill_sort_unsorted">Nieposortowane</string>
+	<string name="skill_sort_name">Nazwa</string>
+	<string name="skill_sort_points">Punkty</string>
+	<string name="skill_sort_unlocked">Odblokowany</string>
+	
+	<string name="preferences_display_theme_title">Motyw</string>
+	<string name="preferences_display_theme">Wybierz motyw UI. (Wymagane ponowne uruchomienie gry)</string>
+	<string name="preferences_display_theme_blue">Kobalt</string>
+	<string name="preferences_display_theme_green">Malachit</string>
+	<string name="preferences_display_theme_charcoal">Obsydian</string>
+	<string name="change_theme_requires_restart">Zmiana motywu UI wymaga restartu.
+\nAndor\'s Trail został zamknięty.</string>
+	
+	
+</resources>
