@@ -138,9 +138,11 @@ public final class LoadingActivity extends Activity implements OnResourcesLoaded
 
 	@Override
 	public void onSceneLoaded() {
-		synchronized (progressDialog) {
-			if (progressDialog != null) progressDialog.dismiss();
-			loaded =true;
+		if (progressDialog != null) {
+			synchronized (progressDialog) {
+				if (progressDialog != null) progressDialog.dismiss();
+				loaded =true;
+			}
 		}
 		startActivity(new Intent(this, MainActivity.class));
 		this.finish();
