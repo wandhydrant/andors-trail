@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" orientation="orthogonal" renderorder="right-down" width="8" height="17" tilewidth="32" tileheight="32" nextobjectid="9">
+<map version="1.0" tiledversion="1.1.5" orientation="orthogonal" renderorder="right-down" width="8" height="17" tilewidth="32" tileheight="32" infinite="0" nextobjectid="9">
  <properties>
   <property name="outdoors" value="1"/>
  </properties>
@@ -183,29 +183,14 @@
  <tileset firstgid="7449" name="map_window_2" tilewidth="32" tileheight="32" tilecount="128" columns="16">
   <image source="../drawable/map_window_2.png" width="512" height="256"/>
  </tileset>
- <tileset firstgid="7577" name="map_ground_1" tilewidth="32" tileheight="32" tilecount="128" columns="16">
-  <image source="../../altered/drawable/map_ground_1.png" width="512" height="256"/>
- </tileset>
- <tileset firstgid="7705" name="map_fence_2" tilewidth="32" tileheight="32" tilecount="128" columns="16">
-  <image source="../../altered/drawable/map_fence_2.png" width="512" height="256"/>
- </tileset>
- <tileset firstgid="7833" name="map_trail_1" tilewidth="32" tileheight="32" tilecount="128" columns="16">
-  <image source="../../altered/drawable/map_trail_1.png" width="512" height="256"/>
- </tileset>
- <tileset firstgid="7961" name="map_plant_1" tilewidth="32" tileheight="32" tilecount="128" columns="16">
-  <image source="../../altered/drawable/map_plant_1.png" width="512" height="256"/>
- </tileset>
- <tileset firstgid="8089" name="map_crate_1" tilewidth="32" tileheight="32" tilecount="128" columns="16">
-  <image source="../../altered/drawable/map_crate_1.png" width="512" height="256"/>
- </tileset>
  <layer name="Ground" width="8" height="17">
   <data encoding="base64" compression="zlib">
-   eJzbyMnAsBGKZblIx2xyAysvSkB+pizCf9jwQLt/oP1PSB4AbnskKA==
+   eJzbyMnAsBGKZbmGHtYlIL+REz8eaPcPtP8JYQCgByRa
   </data>
  </layer>
  <layer name="Objects" width="8" height="17">
   <data encoding="base64" compression="zlib">
-   eJwz42BgMANicyBmEoJgVii+KcjAkCWPEEeWvy4IoXHJwzA58oJMlOlHlp8nx8CwTQw3zgTqZxRCxWxIGFke5C588oT0UyIPigty9BPyv5wcJP5xYQCG3yCm
+   eJwz42BgMANicyBmEoJgVii+KYgQQ8YgueuCEBqXPAyTIy/IRJl+ZPltYvgxoxAmZkPCyOIgd+GTJ6SfEnlQXJCjn5D/zTjwYwCYpRrX
   </data>
  </layer>
  <layer name="Above" width="8" height="17">
@@ -218,7 +203,7 @@
    eJzbKMbAsBGK0QGyGDZ5WgF62kUKoJa7yDGHVmGyUQw/BgBJ6w04
   </data>
  </layer>
- <objectgroup name="Mapevents">
+ <objectgroup name="Mapevents" visible="0">
   <object id="1" name="west" type="mapchange" x="0" y="32" width="32" height="480">
    <properties>
     <property name="map" value="loneford1"/>
@@ -238,7 +223,7 @@
    </properties>
   </object>
  </objectgroup>
- <objectgroup name="Spawn"/>
- <objectgroup name="Keys"/>
- <objectgroup name="Replace"/>
+ <objectgroup name="Spawn" visible="0"/>
+ <objectgroup name="Keys" visible="0"/>
+ <objectgroup name="Replace" visible="0"/>
 </map>

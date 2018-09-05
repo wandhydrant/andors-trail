@@ -180,12 +180,6 @@
  <tileset firstgid="7449" name="map_window_2" tilewidth="32" tileheight="32" tilecount="128" columns="16">
   <image source="../drawable/map_window_2.png" width="512" height="256"/>
  </tileset>
- <tileset firstgid="7577" name="map_trail_1" tilewidth="32" tileheight="32" tilecount="128" columns="16">
-  <image source="../../altered/drawable/map_trail_1.png" width="512" height="256"/>
- </tileset>
- <tileset firstgid="7705" name="map_ground_1" tilewidth="32" tileheight="32" tilecount="128" columns="16">
-  <image source="../drawable/map_ground_1.png" width="512" height="256"/>
- </tileset>
  <layer name="Ground" width="30" height="30">
   <data encoding="base64" compression="zlib">
    eJztlcFKAzEQhsMKrrtpb1VR+gI+QH0Q8RF8ARV8lL5C22MVxLUnFQRZ9+LNg30DL3ooehAzJMP+nSZpL1qhLvxkJ5nMl5lks8NMqeG/VlK3udWqcP9CrX8772Vxf0qDZHncA221r+v+DthY546u/UPCODHuo1MBaxg5G/eXNAL/kGjePDZxx04lzK2cjblSW4G/5GGc3pz965vxi6wWz2Vb5ps0lXprhPXesPMkt5tYFrX0UEs5h+L4uKzD1rRNWmtabjep1Q+IuOttpVKjjfZ0nBD3xDCPjM5as9wQx8e9ymotwpXrDOUWyvc6sWcUuROjNLetfCZuHLkcP1ZTOcZnF+Nw7EW5hVs/5yCZPdeOYA1jD5ffSfJhn02jLaPt9uz3J7mFY+LYIMJ9SJW6gb29o+83tT54XpGLuYfyxtypxVzo/dnDfUltbBkT74xj43eaz/qhXUENuG5cw1cPl/pKsXbWhxn/zGuu9EO7cgrdZ5LL/bj2PW15ubZiLr3L9RXAjd2jIW4Je0lxdnTNZWkPd5G7O8ZlNp6lL5cjt8SlMfwuJ+7uPs/juo9wh9n0f6xweSO3DHCf8rgu53Aln9m7TsSXXLzfuoGax+rsk++sy1yp7xvsGFbI
@@ -213,7 +207,7 @@
  </layer>
  <layer name="Walkable" width="30" height="30" visible="0">
   <data encoding="base64" compression="zlib">
-   eJztVFsOgCAM8xT8eXCPwQ2NH0ayrKxssGhiE74Q+lixlm2rzZKoZf16A6eGbO4M32zmaD+ilfF74dif/Vk5tWc1Pz1kdE1q8mY9G965an4YjbOztXrr1cHyMnOUOlnf7JtasX7ePN77f/glvxpW82pnVvNGO+HNKNoJjdfSEpmNdUeroTdXT1be/CVvpE/Is7aHvmO7j3Rb3EiH5Eb3jHQEcSJeD7w9RH6QjtG32ONl+8z6tDzLO07wFczD
+   eJzdk1EOwCAIQz2F97+CN9yvIVRqFbKNxC8dj7Zs9NbGdGyNnn/ewPSqml2hm/Uc3Z/Myui197d8sj0r94Ct+b3q9e1Sc/X0MDPe9jbaW3UOlsvkaOdkdbP/VMb5E1fJ+8t6K7heZXO9b7K5p9lUe7TqEfXN4s45rbiK39G7lSbLPdknpNm7Q+/Y3UdzR2w0h2WjPjs7gpiIq5S6h0gP69vObuxk7OXJMpFm2+MBEojJJA==
   </data>
  </layer>
  <layer name="Walkable2" width="30" height="30" visible="0">
