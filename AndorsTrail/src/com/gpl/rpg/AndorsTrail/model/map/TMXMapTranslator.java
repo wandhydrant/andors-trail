@@ -418,6 +418,7 @@ public final class TMXMapTranslator {
 			digestLayer(layersPerLayerName, layerNames.groundLayerName, map, digest);
 			digestLayer(layersPerLayerName, layerNames.objectsLayerName, map, digest);
 			digestLayer(layersPerLayerName, layerNames.aboveLayersName, map, digest);
+			digestLayer(layersPerLayerName, layerNames.topLayersName, map, digest);
 			return digest.digest();
 		} catch (NoSuchAlgorithmException e) {
 			L.log("ERROR: Failed to create layout hash for map " + map.name + " : " + e.toString());

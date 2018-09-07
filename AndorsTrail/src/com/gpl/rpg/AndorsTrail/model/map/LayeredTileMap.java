@@ -182,13 +182,13 @@ public final class LayeredTileMap {
 
 	public void applyReplacement(ReplaceableMapSection replacement) {
 		replacement.apply(currentLayout);
-		currentLayoutHash = currentLayout.calculateHash(colorFilter.name());
+		currentLayoutHash = currentLayout.calculateHash(colorFilter == ColorFilterId.none ? null : colorFilter.name());
 	}
 	
 	public void changeColorFilter(ColorFilterId id) {
 		if (colorFilter == id) return;
 		colorFilter = id;
-		currentLayoutHash = currentLayout.calculateHash(colorFilter.name());
+		currentLayoutHash = currentLayout.calculateHash(colorFilter == ColorFilterId.none ? null : colorFilter.name());
 	}
 	
 
