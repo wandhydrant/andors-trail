@@ -3,8 +3,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Hungarian (Andor's Trail)\n"
 "POT-Creation-Date: 2017-08-03 19:41+0200\n"
-"PO-Revision-Date: 2018-07-26 16:59+0000\n"
-"Last-Translator: Agnes Zilinszki <zilinszkia@gmail.com>\n"
+"PO-Revision-Date: 2018-09-11 23:19+0000\n"
+"Last-Translator: Balázs Úr <urbalazs@gmail.com>\n"
 "Language-Team: Hungarian <https://hosted.weblate.org/projects/andors-trail/"
 "game-content/hu/>\n"
 "Language: hu\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.1-dev\n"
+"X-Generator: Weblate 3.2-dev\n"
 
 #: [none]
 msgid "translator-credits"
@@ -52,7 +52,7 @@ msgstr "Vérző seb"
 
 #: actorconditions_v069_bwm.json:rage_minor
 msgid "Minor berserker rage"
-msgstr "Vad düh"
+msgstr "Csekély vad düh"
 
 #: actorconditions_v069_bwm.json:blackwater_misery
 msgid "Blackwater misery"
@@ -160,7 +160,7 @@ msgstr "Megerősített védelem"
 
 #: actorconditions_v070.json:crit_aware
 msgid "Vulnerability awareness"
-msgstr "Sérülékenység kiaknázása"
+msgstr "Sérülékenység tudatosság"
 
 #: actorconditions_v070.json:regen2
 msgid "Regeneration"
@@ -196,79 +196,79 @@ msgstr "Apró csípés"
 
 #: actorconditions_stoutford.json:confusion
 msgid "Confusion"
-msgstr ""
+msgstr "Zűrzavar"
 
 #: actorconditions_stoutford.json:clumsiness
 msgid "Clumsiness"
-msgstr ""
+msgstr "Ügyetlenség"
 
 #: actorconditions_stoutford.json:curse_undead
 msgid "Curse of the Undead"
-msgstr ""
+msgstr "Az élőhalottak átka"
 
 #: actorconditions_graveyard1.json:contagion2
 msgid "Spore contagion"
-msgstr ""
+msgstr "Spórafertőzés"
 
 #: actorconditions_graveyard1.json:petrification
 msgid "Petrification"
-msgstr ""
+msgstr "Megkövesedés"
 
 #: actorconditions_graveyard1.json:vulnerability
 msgid "Vulnerability"
-msgstr ""
+msgstr "Sérülékenység"
 
 #: actorconditions_graveyard1.json:flesh_rot
 msgid "Flesh rot"
-msgstr ""
+msgstr "Hús rothadás"
 
 #: actorconditions_graveyard1.json:putrefaction
 msgid "Putrefaction"
-msgstr ""
+msgstr "Rothadás"
 
 #: actorconditions_guynmart.json:regenNeg
 msgid "Shadow Degeneration"
-msgstr ""
+msgstr "Árny elkorcsosulás"
 
 #: actorconditions_guynmart.json:bone_fracture
 msgid "Bone fracture"
-msgstr ""
+msgstr "Csonttörés"
 
 #: actorconditions_guynmart.json:shadow_awareness
 msgid "Shadow awareness"
-msgstr ""
+msgstr "Árny tudatosság"
 
 #: actorconditions_trader_teksin.json:poison_irdegh_weak
 msgid "Weak Irdegh poison"
-msgstr ""
+msgstr "Gyenge Irdegh méreg"
 
 #: actorconditions_trader_teksin.json:light_attack
 msgid "Lightning attack"
-msgstr ""
+msgstr "Villámcsapás"
 
 #: actorconditions_stoutford_combined.json:nausea
 msgid "Nausea"
-msgstr ""
+msgstr "Hányinger"
 
 #: actorconditions_stoutford_combined.json:poison_blood
 msgid "Blood poisoning"
-msgstr ""
+msgstr "Vérmérgezés"
 
 #: actorconditions_stoutford_combined.json:deftness
 msgid "Deftness"
-msgstr ""
+msgstr "Ügyesség"
 
 #: actorconditions_stoutford_combined.json:tight_grip
 msgid "Tight grip"
-msgstr ""
+msgstr "Szoros fogás"
 
 #: actorconditions_stoutford_combined.json:clairvoyance
 msgid "Clairvoyance"
-msgstr ""
+msgstr "Éleslátás"
 
 #: actorconditions_stoutford_combined.json:mind_fog
 msgid "Mind fog"
-msgstr ""
+msgstr "Lelki köd"
 
 #: conversationlist_mikhail.json:mikhail_gamestart
 msgid "Oh good, you are awake."
@@ -292,7 +292,7 @@ msgstr "Még valami, amiben segíthetek?"
 #: conversationlist_mikhail.json:mikhail_default:1
 #: conversationlist_mikhail.json:mikhail_default:2
 msgid "Do you have any more tasks for me?"
-msgstr ""
+msgstr "Van még valamilyen feladatod a számomra?"
 
 #: conversationlist_mikhail.json:mikhail_default:3
 msgid "Do you have any tasks for me?"
@@ -325,15 +325,16 @@ msgstr "Nem fontos, beszéljünk a többi dologról."
 
 #: conversationlist_mikhail.json:mikhail_bread_done
 msgid "Thanks for getting me the bread. There are still the rats."
-msgstr ""
+msgstr "Köszönöm, hogy elhoztad a kenyeret. Még mindig vannak patkányok."
 
 #: conversationlist_mikhail.json:mikhail_rats_done
 msgid "Thanks for taking care of the rats. I'd still love some bread."
-msgstr ""
+msgstr "Köszönöm, hogy elintézted a patkányokat. Még mindig szeretnék kenyeret."
 
 #: conversationlist_mikhail.json:mikhail_all_tasks_done
 msgid "Not for now. Thanks for taking care of the bread and rats."
 msgstr ""
+"Egyelőre nem. Köszönöm, hogy elintézted a patkányokat és hoztál kenyeret."
 
 #: conversationlist_mikhail.json:mikhail_andor1
 msgid "As I said, Andor went out yesterday and hasn't been back since. I'm starting to worry about him. Please go look for your brother, he said he would only be out a short while."
@@ -448,14 +449,21 @@ msgstr ""
 #: conversationlist_mikhail_foodpoison.json:mikhail_rats_start2a
 msgid "Another way to regain your strength is to eat some food.  You can buy some for yourself from Mara at the town hall. But watch out - I hear that raw meat can sometimes give you food poisoning."
 msgstr ""
+"Másik módja az erőd visszaszerzésének, ha eszel valamit. Vehetsz magadnak "
+"valamit Marától a városházán. De vigyázz – úgy hallottam, hogy a nyers hús "
+"néha ételmérgezést okozhat."
 
 #: conversationlist_mikhail_foodpoison.json:mikhail_rats_start2b
 msgid "If that happens, perhaps the town priest can do something to help you.  Otherwise, just rest until you feel better."
 msgstr ""
+"Ha ez történne, akkor talán a városi pap tehet valamit, hogy segítsen neked. "
+"Ellenkező esetben pihenj addig, amíg jobban nem érzed magad."
 
 #: conversationlist_mikhail_foodpoison.json:mikhail_rats_start2c
 msgid "Me, I can't really afford the meat, so I just stick to my bread!"
 msgstr ""
+"Én nem igazán engedhetem meg magamnak a húst, úgyhogy csak a kenyeremhez "
+"ragaszkodom!"
 
 #: conversationlist_crossglen.json:audir1
 msgid ""
@@ -781,6 +789,8 @@ msgstr "Egyrészt Geomyr uraság sok védelemmel támogatja Crossglent. *a terem
 #: conversationlist_crossglen_leonid.json:leonid_crossglen7
 msgid "But on the other hand, the tax and the recent changes of what's allowed are really taking a toll on Crossglen."
 msgstr ""
+"De másrészt az adók és a legutóbbi változtatásai annak, hogy mit szabad, "
+"valóban megfizetteti Crossglennel."
 
 #: conversationlist_crossglen_leonid.json:leonid_crossglen8
 msgid "Someone should go to Castle Geomyr and talk to the steward about our situation here in Crossglen."
@@ -830,7 +840,7 @@ msgstr ""
 #: conversationlist_crossglen_tharal.json:tharal1:2
 #: conversationlist_fallhaven_potions.json:fallhaven_potions:1
 msgid "Do you have anything to help against food-poisoning?"
-msgstr ""
+msgstr "Van valamid, ami segít ételmérgezés ellen?"
 
 #: conversationlist_crossglen_tharal.json:tharal_bonemeal1
 msgid "Bonemeal? We shouldn't talk about that. Lord Geomyr issued a decree. It's not allowed anymore."
@@ -885,15 +895,19 @@ msgstr "Tudom, hogy valakinek még mindig van csontliszt készlete, ha érdekel.
 #: conversationlist_crossglen_tharal.json:tharal_antifoodp1
 msgid "No, sorry. I hear that the potion-maker in Fallhaven can create something to help against that though."
 msgstr ""
+"Nincs, sajnálom. Úgy hallottam, hogy az italkészítő Fallhavenben tud "
+"készíteni valamit, ami mégis segít az ellen."
 
 #: conversationlist_crossglen_tharal.json:tharal_antifoodp2
 msgid "You should go see him and ask if he has anything to help against that. He can probably help you."
 msgstr ""
+"Menj, látogasd meg és kérdezd meg, hogy van-e valamije, ami segít az ellen. "
+"Valószínűleg tud segíteni neked."
 
 #: conversationlist_crossglen_tharal.json:tharal_antifoodp2:0
 #: conversationlist_fallhaven_unnmir.json:unnmir_13:0
 msgid "Thanks, I'll go see him."
-msgstr ""
+msgstr "Köszönöm, megyek és felkeresem."
 
 #: conversationlist_crossglen_leta.json:leta1
 msgid "Hey, this is my house, get out of here!"
@@ -1108,7 +1122,7 @@ msgstr "Ó, ez olyan szomorú. Igazán nem akarok erről beszélni."
 #: conversationlist_jan.json:jan_default2:0
 #: conversationlist_algangror.json:algangror_story:0
 msgid "Please do."
-msgstr "Légyszíves."
+msgstr "Légy szíves."
 
 #: conversationlist_jan.json:jan_default3
 msgid "Well, I guess it's ok to tell you. You seem to be a nice enough kid."
@@ -1223,7 +1237,7 @@ msgstr "Helló ismét, kölyök. Megtaláltad Irogotut lent a barlangban?"
 #: conversationlist_lleglaris.json:lleglaris_r1:0
 #: conversationlist_tiqui.json:tiqui_r0:1
 msgid "Can you tell me your story again?"
-msgstr ""
+msgstr "El tudnád mondani újra a történetedet?"
 
 #: conversationlist_jan.json:jan_return:2
 msgid "Yes, I have killed Irogotu."
@@ -1273,7 +1287,9 @@ msgstr "Tök mindegy. Csak a zsákmányért tettem."
 
 #: conversationlist_jan.json:irogotu
 msgid "Well hello there. Another adventurer coming to steal my bounty. This is MY CAVE. The treasure will be MINE!"
-msgstr "Na szia. Egy másik kalandor, aki a jött ellopni a pénzjutalmam. Ez az ÉN BARLANGOM. A kincs az ENYÉM lesz!"
+msgstr ""
+"Na szia. Egy másik kalandor, aki jött ellopni a pénzjutalmam. Ez az ÉN "
+"BARLANGOM. A kincs az ENYÉM lesz!"
 
 #: conversationlist_jan.json:irogotu:0
 msgid "Did you kill Gandir?"
@@ -1831,7 +1847,7 @@ msgstr "Várjunk csak, ki vagy te ismét? Te vagy az az őr?"
 #: conversationlist_stoutford_combined.json:script_lakecave1_damerilia4_1:0
 #: conversationlist_stoutford_combined.json:script_lakecave1_damerilia5_1:0
 msgid "Yes"
-msgstr ""
+msgstr "Igen"
 
 #: conversationlist_fallhaven_drunk.json:fallhaven_drunk_2:1
 #: conversationlist_fallhaven_drunk.json:fallhaven_drunk_8:1
@@ -1842,7 +1858,7 @@ msgstr ""
 #: conversationlist_stoutford_combined.json:script_lakecave1_damerilia4_1:1
 #: conversationlist_stoutford_combined.json:script_lakecave1_damerilia5_1:1
 msgid "No"
-msgstr ""
+msgstr "Nem"
 
 #: conversationlist_fallhaven_drunk.json:fallhaven_drunk_3_1
 msgid "Oh, sir. I'm not causing any trouble anymore, see? I sits outside now as you says, ok?"
@@ -2016,22 +2032,24 @@ msgstr "Folytasd a keresést. Unnmir valami fontosat tervezett neked."
 #: conversationlist_fallhaven_nocmar.json:nocmar_complete
 msgid "By the Shadow. You actually found a heartstone. I thought I wouldn't live to see the day."
 msgstr ""
+"Az Árnyra! Te tényleg találtál egy szívkövet. Azt hittem, nem élem meg azt a "
+"napot, hogy lássam."
 
 #: conversationlist_fallhaven_nocmar.json:nocmar_complete_2
 msgid "Can you see the glow? It's literally pulsating."
-msgstr ""
+msgstr "Látod a ragyogást? Ez szó szerint lüktet."
 
 #: conversationlist_fallhaven_nocmar.json:nocmar_complete_3
 msgid "Quick. Let's get these old heartsteel weapons glowing again."
-msgstr ""
+msgstr "Gyorsan. Tegyük újra ragyogóvá ezeket a régi szívacél fegyvereket."
 
 #: conversationlist_fallhaven_nocmar.json:nocmar_complete_4
 msgid "*Nocmar places the heartstone among the heartsteel weapons*"
-msgstr ""
+msgstr "*Nocmar beteszi a szívkövet a szívacél fegyverek közé*"
 
 #: conversationlist_fallhaven_nocmar.json:nocmar_complete_5
 msgid "Can you feel it? The heartsteel is glowing again."
-msgstr ""
+msgstr "Érzed? A szívacél újra ragyog."
 
 #: conversationlist_fallhaven_nocmar.json:nocmar_complete_5:0
 msgid "Let me see what items you have available."
@@ -2270,7 +2288,7 @@ msgstr "Vagy talán az egyik nagyobb városba ment északra."
 
 #: conversationlist_fallhaven_unnmir.json:unnmir_9
 msgid "Can't say I blame him for wanting to see the world."
-msgstr ""
+msgstr "Nem mondhatom, hogy azért hibáztatom őt, mert világot akart látni."
 
 #: conversationlist_fallhaven_unnmir.json:unnmir_10
 msgid "Hey, by the way, are you looking to be an adventurer?"
@@ -2287,6 +2305,7 @@ msgstr "Szép. Adok neked egy tippet, kölyök. *kuncog*. Menj, látogasd meg No
 #: conversationlist_fallhaven_unnmir.json:unnmir_12
 msgid "Smart move. Adventuring leads to a lot of scars. If you know what I mean."
 msgstr ""
+"Ügyes húzás. A kalandozás sok sebhelyhez vezet. Ha érted, hogy mire gondolok."
 
 #: conversationlist_fallhaven_unnmir.json:unnmir_13
 msgid "His house is just southwest of the tavern."
@@ -2731,7 +2750,7 @@ msgstr "Köszönöm a segítséged. Most már biztonságban vagyunk Vacor repesz
 
 #: conversationlist_fallhaven_unzel.json:unzel_40:0
 msgid "I have a message for you from Kaverin in Remgard."
-msgstr ""
+msgstr "Van egy üzenetem számodra Kaverintől Remgardból."
 
 #: conversationlist_wilderness.json:fallhaven_bandit
 msgid "Get lost kid. I don't have time for you."
@@ -2775,7 +2794,7 @@ msgstr "Mennyit ér az életed?"
 
 #: conversationlist_wilderness.json:bandit1_3
 msgid "About damn time. You are free to go."
-msgstr ""
+msgstr "Az átkozott időről. Szabadon mehetsz."
 
 #: conversationlist_wilderness.json:bandit1_4
 msgid "OK then, your life it is. Let's fight. I have been looking forward to a good fight!"
@@ -2783,11 +2802,11 @@ msgstr "Rendben, akkor az életedre. Küzdjünk meg. Alig várok egy jó kis har
 
 #: conversationlist_flagstone.json:zombie1
 msgid "Fresh flesh!"
-msgstr ""
+msgstr "Friss hús!"
 
 #: conversationlist_flagstone.json:zombie1:0
 msgid "By the Shadow, I will slay you."
-msgstr ""
+msgstr "Az Árnyra, agyon foglak ütni."
 
 #: conversationlist_flagstone.json:zombie1:1
 msgid "Yuck, what are you? And what is that smell?"
@@ -3052,7 +3071,7 @@ msgstr ""
 
 #: conversationlist_fallhaven_south.json:fallhaven_lumberjack_2:1
 msgid "Never mind. I don't need your services for now."
-msgstr ""
+msgstr "Nem fontos. Most nincs szükségem a szolgáltaidra."
 
 #: conversationlist_fallhaven_south.json:fallhaven_lumberjack_2:2
 #: conversationlist_fallhaven_south.json:fallhaven_lumberjack_15:1
@@ -3245,6 +3264,7 @@ msgstr ""
 #: conversationlist_signs_pre067.json:sign_notdone
 msgid "This map is not yet done. Please come back in a later version of the game."
 msgstr ""
+"Ez a térkép még nem készült el. Gyere vissza a játék későbbi verziójában."
 
 #: conversationlist_signs_pre067.json:sign_wild3
 msgid ""
@@ -3258,7 +3278,7 @@ msgstr ""
 
 #: conversationlist_signs_pre067.json:sign_pitcave2
 msgid "Gandir lies here, slain by the hand of his former friend Irogotu."
-msgstr ""
+msgstr "Itt nyugszik Gandir, akit korábbi barátja, Irogotu keze által halt meg."
 
 #: conversationlist_signs_pre067.json:sign_fallhaven1
 msgid "Welcome to Fallhaven. Watch out for pickpockets!"
@@ -3334,7 +3354,7 @@ msgstr "Helló, kölyök."
 
 #: conversationlist_thievesguild_1.json:thievesguild_thief_1:0
 msgid "Hello. Do you know where I can find Umar?"
-msgstr ""
+msgstr "Helló. Tudod, hogy merre találom Umart?"
 
 #: conversationlist_thievesguild_1.json:thievesguild_thief_1:1
 #: conversationlist_thievesguild_1.json:thievesguild_pickpocket_1:1
@@ -3380,7 +3400,7 @@ msgstr "Valószínűleg a szobájában van amott. *mutatja*"
 #: conversationlist_stoutford.json:glasforn_rumblings20_3:1
 #: conversationlist_stoutford_combined.json:yolgen_4:0
 msgid "Thanks."
-msgstr ""
+msgstr "Köszönöm."
 
 #: conversationlist_thievesguild_1.json:thievesguild_thief_5
 msgid "Umar is our guild leader. He decides our rules and guides us in moral decisions."
@@ -3389,7 +3409,7 @@ msgstr "Umar a céhünk vezetője. Ő dönt a szabályainkról, és iránymutat�
 #: conversationlist_thievesguild_1.json:thievesguild_thief_5:0
 #: conversationlist_prim_outside.json:prim_commoner1_3:1
 msgid "Where can I find him?"
-msgstr ""
+msgstr "Merre találom őt?"
 
 #: conversationlist_thievesguild_1.json:thievesguild_cook_1
 msgid "Hello, did you want something?"
@@ -3454,11 +3474,11 @@ msgstr "Itt vagyok. Ennek jónak kell lennie. Tessék, itt van."
 
 #: conversationlist_thievesguild_1.json:thievesguild_cook_10
 msgid "Yes, I gave you the special brew earlier."
-msgstr ""
+msgstr "Igen, korábban odaadtam neked a különleges főzetet."
 
 #: conversationlist_thievesguild_1.json:thievesguild_cook_9
 msgid "Be careful not to get any of that stuff on your fingers, it is really potent."
-msgstr ""
+msgstr "Légy óvatos, nehogy az ujjadra cseppentsd azt a dolgot, igazán erős."
 
 #: conversationlist_thievesguild_1.json:thievesguild_pickpocket_1
 #: conversationlist_prim_arghest.json:arghest_1
@@ -3744,7 +3764,7 @@ msgstr "Sok szerencsét a küldetésedben."
 #: conversationlist_lleglaris.json:lleglaris14
 #: conversationlist_lodar.json:lodar_find10a
 msgid "Good."
-msgstr ""
+msgstr "Jó."
 
 #: conversationlist_farrik.json:farrik_19
 msgid "Ok, here is the plan. The guard captain has a bit of a drinking problem."
@@ -4317,7 +4337,10 @@ msgstr "Ha valóban be akarod bizonyítani, hogy nem feygardi kém vagy, akkor �
 
 #: conversationlist_kaori.json:kaori_11
 msgid "Up until recently, we have been using special potions made of ground bones for healing. These were very potent healing potions, and were used for several purposes."
-msgstr "Egészen a közelmúltig földi csontokból készült különleges italokat használtunk gyógyításra. Ezek az italok nagyon hatékony gyógyító italok, és több célra használták őket."
+msgstr ""
+"Egészen a közelmúltig földi csontokból készült különleges italokat "
+"használtunk gyógyításra. Ezek nagyon hatékony gyógyító italok voltak, és "
+"több célra használták őket."
 
 #: conversationlist_kaori.json:kaori_12
 msgid "But now, they have been banned by Lord Geomyr, and most use of them has stopped."
@@ -4338,7 +4361,7 @@ msgstr "Nem. Ha be vannak tiltva, akkor valószínűleg jó ok van rá. Ne haszn
 
 #: conversationlist_kaori.json:kaori_13:2
 msgid "I already have some of those potions with me that you can have."
-msgstr "Már van nálam azokból az italokból néhány, amit megkaphatsz"
+msgstr "Már van nálam azokból az italokból néhány, amit megkaphatsz."
 
 #: conversationlist_kaori.json:kaori_return_1
 msgid "Hello again. Have you found those 10 Bonemeal potions I asked for?"
@@ -4459,7 +4482,7 @@ msgstr ""
 
 #: conversationlist_vilegard_villagers.json:vilegard_villager_friend:0
 msgid "Thank you. Have you seen my brother Andor around here?"
-msgstr ""
+msgstr "Köszönöm. Láttad a bátyámat, Andort errefelé?"
 
 #: conversationlist_vilegard_villagers.json:vilegard_villager_friend:1
 msgid "Thank you. See you."
@@ -4890,6 +4913,7 @@ msgstr ""
 #: conversationlist_vilegard_shops.json:vilegard_shop_notrust_smith
 msgid "You are an outsider. We don't like outsiders here in Vilegard. Please leave."
 msgstr ""
+"Te egy kívülálló vagy. Nem szeretjük a kívülállókat itt Vilegardban. Távozz."
 
 #: conversationlist_ogam.json:ogam_1
 msgid "Belief. Power. Struggle."
@@ -4904,7 +4928,7 @@ msgstr "Hit. Erő. Küzdelem."
 #: conversationlist_stoutford_combined.json:stn_colonel_131_4a:0
 #: conversationlist_stoutford_combined.json:stn_colonel_131_4b:0
 msgid "What?"
-msgstr ""
+msgstr "Micsoda?"
 
 #: conversationlist_ogam.json:ogam_1:1
 msgid "I was told to see you."
@@ -5043,7 +5067,7 @@ msgstr "Köszönöm. Te vagy itt a kocsmáros?"
 #: conversationlist_foamingflask_guards.json:ff_guard_3:2
 #: conversationlist_foamingflask_guards.json:ff_captain_1:3
 msgid "Have you seen a boy called Rincel around here recently?"
-msgstr ""
+msgstr "Láttál mostanában errefelé egy fiút, akit Rincelnek hívnak?"
 
 #: conversationlist_foamingflask.json:torilo_2
 msgid "I am Torilo, the proprietor of this establishment. Please have a seat anywhere you like."
@@ -5077,11 +5101,13 @@ msgstr "Természetesen. Széles választékunk van ételekből és italokból."
 
 #: conversationlist_foamingflask.json:torilo_rest_1
 msgid "Yes, you already rented the back room."
-msgstr ""
+msgstr "Igen, már kibérelted a hátsó szobát."
 
 #: conversationlist_foamingflask.json:torilo_rest_2
 msgid "Please feel free to use it in any way you like. I hope you can get some sleep even with these guards yelling their songs."
 msgstr ""
+"Használd nyugodtan a tetszésed szerint. Remélem, hogy tudsz kicsit aludni "
+"még az őrök mellett is, akik a dalukat ordítják."
 
 #: conversationlist_foamingflask.json:torilo_rest_3
 msgid "Oh yes. We have a very comfortable back room here in the Foaming Flask tavern."
@@ -5114,6 +5140,7 @@ msgstr "Köszönöm. A szobát mostantól te bérled."
 #: conversationlist_foamingflask.json:torilo_rincel_1
 msgid "Rincel? No, not that I can recall. Actually, we don't get many children in here. *chuckle*"
 msgstr ""
+"Rincel? Nem, nem emlékszem rá. Igazából nem sok gyerek van itt. *kuncog*"
 
 #: conversationlist_foamingflask.json:torilo_guards_1
 msgid "*Sigh* Yes. Those guards have been here for quite some time now."
@@ -5234,7 +5261,7 @@ msgstr ""
 
 #: conversationlist_foamingflask_guards.json:ff_guard_3:0
 msgid "I had better be going"
-msgstr ""
+msgstr "Jobb, ha most megyek"
 
 #: conversationlist_foamingflask_guards.json:ff_guard_3:1
 #: conversationlist_foamingflask_guards.json:ff_captain_2:0
@@ -5248,15 +5275,15 @@ msgstr "Micsoda? Még sosem hallottál Feygardról, kölyök? Csak kövesd az ut
 
 #: conversationlist_foamingflask_guards.json:ff_guard_4:0
 msgid "Thanks. Bye."
-msgstr ""
+msgstr "Köszönöm. Viszlát."
 
 #: conversationlist_foamingflask_guards.json:ff_guard_rincel_1
 msgid "A boy?! Apart from you, there have been no children in here that I have seen."
-msgstr ""
+msgstr "Egy fiút?! Rajtad kívül nem voltak itt gyerekek, akit láttam volna."
 
 #: conversationlist_foamingflask_guards.json:ff_guard_rincel_2
 msgid "Check with the captain over there. He has been around here for longer than us."
-msgstr ""
+msgstr "Kérdezd meg a kapitányt amott. Már régebb óta errefelé van mint mi."
 
 #: conversationlist_foamingflask_guards.json:ff_guard_rincel_2:0
 #: conversationlist_foamingflask_guards.json:ff_captain_4:1
@@ -5273,6 +5300,8 @@ msgstr "Köszönöm. Az Árny legyen veled."
 #: conversationlist_foamingflask_guards.json:ff_guard_shadow_1
 msgid "Don't bring that cursed Shadow in here son. We want none of that. Now leave."
 msgstr ""
+"Ne hozd ide azt az átkozott Árnyat, fiam. Nem akarunk semmi ilyet. Most "
+"távozz."
 
 #: conversationlist_foamingflask_guards.json:ff_captain_1
 msgid "Are you lost, son? This is no place for a kid like you."
@@ -5281,7 +5310,7 @@ msgstr "Elvesztél, fiam? Ez a hely nem való egy hozzád hasonló kölyöknek."
 #: conversationlist_foamingflask_guards.json:ff_captain_1:0
 #: conversationlist_foamingflask_guards.json:ff_captain_1:1
 msgid "I have a shipment of iron swords from Gandoren for you."
-msgstr ""
+msgstr "Van egy szállítmány vaskardom Gandorentől neked."
 
 #: conversationlist_foamingflask_guards.json:ff_captain_2
 msgid "I am the guard captain of this patrol. We hail from the great city of Feygard."
@@ -5345,78 +5374,88 @@ msgstr "Rendben, viszontlátásra."
 
 #: conversationlist_foamingflask_outsideguard.json:ff_outsideguard_3:1
 msgid "Why must you stay alert outside a tavern?"
-msgstr ""
+msgstr "Miért kell a kocsmán kívül készenlétben állnod?"
 
 #: conversationlist_foamingflask_outsideguard.json:ff_outsideguard_trouble_1
 msgid "Really, I cannot talk to you. I could get into trouble."
-msgstr ""
+msgstr "Tényleg nem tudok veled beszélni. Bajba kerülhetek."
 
 #: conversationlist_foamingflask_outsideguard.json:ff_outsideguard_trouble_1:0
 #: conversationlist_foamingflask_outsideguard.json:ff_outsideguard_trouble_2:0
 msgid "Ok. I won't bother you anymore. Shadow be with you."
-msgstr ""
+msgstr "Rendben. Nem foglak többé zaklatni. Az Árny legyen veled."
 
 #: conversationlist_foamingflask_outsideguard.json:ff_outsideguard_trouble_1:1
 #: conversationlist_foamingflask_outsideguard.json:ff_outsideguard_trouble_2:1
 msgid "Ok. I won't bother you anymore. Goodbye."
-msgstr ""
+msgstr "Rendben. Nem foglak többé zaklatni. Viszontlátásra."
 
 #: conversationlist_foamingflask_outsideguard.json:ff_outsideguard_trouble_1:2
 #: conversationlist_ingus.json:ingus_4a:0
 msgid "What trouble?"
-msgstr ""
+msgstr "Miféle bajba?"
 
 #: conversationlist_foamingflask_outsideguard.json:ff_outsideguard_trouble_2
 msgid "No really, the captain might see me. I must be aware on my post at all times. *sigh*"
 msgstr ""
+"Tényleg nem, a kapitány megláthat engem. Éberen kell állnom a posztomon "
+"mindenkor. *sóhajt*"
 
 #: conversationlist_foamingflask_outsideguard.json:ff_outsideguard_trouble_2:2
 msgid "Do you like your job here?"
-msgstr ""
+msgstr "Szereted a munkádat itt?"
 
 #: conversationlist_foamingflask_outsideguard.json:ff_outsideguard_trouble_3
 msgid "My job? I guess the royal guard is ok. I mean, Feygard is a really nice place to live in."
 msgstr ""
+"A munkámat? Azt hiszem, a királyi őrség rendben van. Úgy értem, hogy Feygard "
+"egy igazán szép hely, ahol élni lehet."
 
 #: conversationlist_foamingflask_outsideguard.json:ff_outsideguard_trouble_4
 msgid "Standing guard on duty out here in the middle of nowhere is not really what I signed up for."
 msgstr ""
+"Őrségben állni szolgálatban itt kint a semmi közepén nem igazán az, amire "
+"jelentkeztem."
 
 #: conversationlist_foamingflask_outsideguard.json:ff_outsideguard_trouble_4:0
 msgid "I bet. This place is really boring."
-msgstr ""
+msgstr "Lefogadom. Ez a hely valóban unalmas."
 
 #: conversationlist_foamingflask_outsideguard.json:ff_outsideguard_trouble_4:1
 msgid "You must get tired of just standing here also."
-msgstr ""
+msgstr "Biztos fáradt lehetsz, hogy csak itt állhatsz."
 
 #: conversationlist_foamingflask_outsideguard.json:ff_outsideguard_trouble_5
 msgid "Yeah I know. I would rather be inside in the tavern drinking like the senior officers and the captain. How come I have to stand out here?"
 msgstr ""
+"Igen, tudom. Szívesebben lennék a kocsmában és iszogatnék mint a magas rangú "
+"tisztek és a kapitány. Hogy lehet, hogy itt kint kell állnom?"
 
 #: conversationlist_foamingflask_outsideguard.json:ff_outsideguard_trouble_5:0
 msgid "At least the Shadow watches over you."
-msgstr ""
+msgstr "Legalább az Árny vigyáz rád."
 
 #: conversationlist_foamingflask_outsideguard.json:ff_outsideguard_trouble_5:1
 msgid "Why not just leave if it's not what you want to do?"
-msgstr ""
+msgstr "Miért nem lépsz ki, ha ez nem az, amit csinálni akarsz?"
 
 #: conversationlist_foamingflask_outsideguard.json:ff_outsideguard_trouble_5:2
 msgid "The greater cause of the royal guard, to keep the peace, is worth it in the long run."
-msgstr ""
+msgstr "A királyi őrség a nagyobb oka, a béke megőrzése megéri hosszú távon."
 
 #: conversationlist_foamingflask_outsideguard.json:ff_outsideguard_trouble_6
 msgid "Yes, you are right of course. Our duty is to Feygard and to keep the peace from all that want to disrupt it."
 msgstr ""
+"Igen, természetesen igazad van. Az a kötelességünk, hogy megvédjük Feygardot "
+"és békét tartsunk mindazokkal szemben, akik meg akarják zavarni azt."
 
 #: conversationlist_foamingflask_outsideguard.json:ff_outsideguard_trouble_6:0
 msgid "Yes. The Shadow will not look favorably upon those that disrupt the peace."
-msgstr ""
+msgstr "Igen. Az Árny nem fog kedvezően nézni azokra, akik megzavarják a békét."
 
 #: conversationlist_foamingflask_outsideguard.json:ff_outsideguard_trouble_6:1
 msgid "Yes. The troublemakers should be punished."
-msgstr ""
+msgstr "Igen. A bajkeverőket meg kell büntetni."
 
 #: conversationlist_foamingflask_outsideguard.json:ff_outsideguard_trouble_7
 msgid "No, my loyalty is to Feygard. If I would leave, I would also leave my loyalty behind."
@@ -5503,47 +5542,49 @@ msgstr ""
 
 #: conversationlist_foamingflask_outsideguard.json:ff_outsideguard_trouble_25
 msgid "Thanks a lot my friend."
-msgstr ""
+msgstr "Nagyon köszönöm, barátom."
 
 #: conversationlist_foamingflask_outsideguard.json:ff_outsideguard_shadow_1
 msgid "Shadow? How curious that you would mention that. Explain yourself!"
-msgstr ""
+msgstr "Az Árny? Milyen furcsa, hogy ezt említetted. Magyarázd meg nekem!"
 
 #: conversationlist_foamingflask_outsideguard.json:ff_outsideguard_shadow_1:0
 msgid "I did not mean a thing by it. Never mind I said anything."
-msgstr ""
+msgstr "Nem értettem semmit ezalatt. Nem fontos, nem mondtam semmit."
 
 #: conversationlist_foamingflask_outsideguard.json:ff_outsideguard_shadow_1:1
 msgid "The Shadow watches over us when we sleep."
-msgstr ""
+msgstr "Az Árny vigyáz ránk, amikor alszunk."
 
 #: conversationlist_foamingflask_outsideguard.json:ff_outsideguard_shadow_2
 msgid "Good. Now be gone before I will have to deal with you."
-msgstr ""
+msgstr "Jó. Most menj el, mielőtt elbánnék veled."
 
 #: conversationlist_foamingflask_outsideguard.json:ff_outsideguard_shadow_3
 msgid "What? Are you one of those troublemakers sent here to sabotage our mission?"
 msgstr ""
+"Micsoda? Te azon bajkeverők egyike vagy, akiket azért küldtek ide, hogy "
+"szabotálják a küldetésünket?"
 
 #: conversationlist_foamingflask_outsideguard.json:ff_outsideguard_shadow_3:0
 msgid "The Shadow protects us."
-msgstr ""
+msgstr "Az Árny védelmez minket."
 
 #: conversationlist_foamingflask_outsideguard.json:ff_outsideguard_shadow_3:1
 msgid "Fine. I better not start a fight with the royal guard."
-msgstr ""
+msgstr "Remek. Jobb, ha nem kezdek harcolni a királyi őrrel."
 
 #: conversationlist_foamingflask_outsideguard.json:ff_outsideguard_shadow_4
 msgid "That does it. You better fight or flee right now kid."
-msgstr ""
+msgstr "Ez az lesz. Jobb lesz, ha harcolsz vagy menekülj most, kölyök."
 
 #: conversationlist_foamingflask_outsideguard.json:ff_outsideguard_shadow_4:0
 msgid "Good. I have been waiting for a fight!"
-msgstr ""
+msgstr "Jó. Régóta várok egy harcra!"
 
 #: conversationlist_foamingflask_outsideguard.json:ff_outsideguard_shadow_4:2
 msgid "Never mind. I was just kidding with you."
-msgstr ""
+msgstr "Nem fontos. Csak vicceltem veled."
 
 #: conversationlist_wrye.json:wrye_return_1
 msgid "Welcome back. Have you found out anything about my son, Rincel?"
@@ -10617,7 +10658,9 @@ msgstr "*Sóhaj* Te vagy az. Mit akarsz?"
 
 #: conversationlist_ailshara.json:ailshara_1
 msgid "Psst, hey. Interested in doing some trading? I am always looking for acquiring.. well, items of others.."
-msgstr "Psszt, hé. Érdekelne egy kis kereskedés? Én mindig azután vagyok hogy beszerezzek.. hát, mások dolgait.."
+msgstr ""
+"Pszt, hé. Érdekelne egy kis kereskedés? Én mindig arra törekszem hogy "
+"megszerezzem… hát, mások dolgait…"
 
 #: conversationlist_ailshara.json:ailshara_1:0
 #: conversationlist_charwood1.json:khorailla2:0
@@ -10626,7 +10669,7 @@ msgstr "Persze, hadd lássam mid van."
 
 #: conversationlist_ailshara.json:ailshara_1:1
 msgid "Items of others?"
-msgstr "Mások árujait?"
+msgstr "Mások dolgait?"
 
 #: conversationlist_ailshara.json:ailshara_2
 msgid "Oh yes. You see, these Feygard patrol guards carry some really interesting things. They don't seem to care much if some of their shipments.. well, disappear."
@@ -11602,7 +11645,7 @@ msgstr ""
 #: conversationlist_lodarmobs.json:zortakb:0
 #: conversationlist_lodarmobs.json:lbridge:0
 msgid "Fight!"
-msgstr "Harc!"
+msgstr "Harcoljunk!"
 
 #: conversationlist_buceth.json:buceth_story_14
 msgid "Thank you, my friend."
@@ -12290,72 +12333,77 @@ msgstr "Persze, mi a gond?"
 
 #: conversationlist_algangror.json:algangror_3:1
 msgid "Maybe, it depends on what the problem is."
-msgstr "Talán, attól függ mi a probléma."
+msgstr "Talán, attól függ, hogy mi a probléma."
 
 #: conversationlist_algangror.json:algangror_3:2
 msgid "Maybe, it depends on what type of reward we are talking about."
-msgstr "Talán, attól függ miféle jutalomról van szó."
+msgstr "Talán, attól függ, hogy milyen típusú jutalomról beszélünk."
 
 #: conversationlist_algangror.json:algangror_3:3
 msgid "No way. You are acting way too creepy for me."
-msgstr "Esélytelen. Túl furán viselkedsz."
+msgstr "Esélytelen. Nagyon ijesztően viselkedsz számomra."
 
 #: conversationlist_algangror.json:algangror_3c
 msgid "Reward? No, no, I don't have anything to give you, unfortunately."
-msgstr "Jutalom? Nem, nem, nekem nincs semmim amit neked adhatnék, sajnos."
+msgstr "Jutalom? Nem, nem, nekem sajnos nincs semmim, amit neked adhatnék."
 
 #: conversationlist_algangror.json:algangror_3c:0
 msgid "I guess you won't get any help either then."
-msgstr "Gondolom akkor te sem kapsz semmi segítséget."
+msgstr "Azt hiszem, akkor te sem kapsz semmi segítséget."
 
 #: conversationlist_algangror.json:algangror_3c:1
 msgid "Fine, what's the problem you want help with?"
-msgstr "Rendben, milyen problémával szeretnél segíteni?"
+msgstr "Remek, mi a probléma, amiben segítséget szeretnél?"
 
 #: conversationlist_algangror.json:algangror_3c:2
 #: conversationlist_algangror.json:algangror_8:2
 msgid "Something feels wrong here. I better not get involved in this."
-msgstr "Valami nincs rendben. Jobb ha nincs közöm hozzá."
+msgstr "Valami rossz érzésem van itt. Jobb, ha nem keveredek bele."
 
 #: conversationlist_algangror.json:algangror_4
 msgid "You see, I have this slight problem with .. ahem .. vermin."
-msgstr "Látod, van egy kis problémám a.. ahemm.. élősködővel."
+msgstr "Látod, van egy csekély problémám a… ahem… féreggel."
 
 #: conversationlist_algangror.json:algangror_5
 msgid "Always sneaking around, always trying to cause mischief."
-msgstr "Mindig ott bújkál a közelben, mindig próbál gondot okozni."
+msgstr "Mindig a közelben bujkál, folyamatosan bajt próbál okozni."
 
 #: conversationlist_algangror.json:algangror_6
 msgid "Fortunately, I managed to capture some of them, and locked them in my basement."
-msgstr "Szerencsére sikerült elkapnom párat és a házamba zárnom."
+msgstr ""
+"Szerencsére sikerült elkapnom néhányat, és a bezárnom őket az alagsorba."
 
 #: conversationlist_algangror.json:algangror_7
 msgid "Now, I can't handle them myself because of certain .. issues."
-msgstr "Most viszont nem tudom kezelni őlet néhány .. baj miatt."
+msgstr "Most viszont nem tudom egyedül kezelni őket néhány… probléma miatt."
 
 #: conversationlist_algangror.json:algangror_8
 msgid "That's where you come in. Would you be willing to .. ahem .. handle those rodents for me?"
-msgstr "Itt jössz te. Szeretnél segíteni az.. ahem.. rágcsálók kordában tartásában?"
+msgstr ""
+"Itt jössz te a képbe. Hajlandó lennél… ahem… kordában tartani azokat a "
+"rágcsálókat?"
 
 #: conversationlist_algangror.json:algangror_8:0
 msgid "Sure, some rodents, I can handle that."
-msgstr "Persze, pár rágcsáló, menni fog."
+msgstr "Persze, néhány rágcsáló, el tudom intézni."
 
 #: conversationlist_algangror.json:algangror_8:1
 msgid "No problem, I'll be right back once I have killed them."
-msgstr "Semmi gond, visszajövök amint megöltem őket."
+msgstr "Semmi gond, azonnal visszajövök, amint megöltem őket."
 
 #: conversationlist_algangror.json:algangror_decline_1
 msgid "Ah yes. After all, you are just a child and I can understand such a task would be too much for you. He he."
-msgstr "Ó, igen. Mindezek után te csak egy gyerek vagy és megértem hogy egy ilyen feladat túl sok lenne neked. He he."
+msgstr ""
+"Ó, igen. Végül is te csak egy gyerek vagy, és meg tudom érteni, hogy egy "
+"ilyen feladat túl sok lenne neked. He he."
 
 #: conversationlist_algangror.json:algangror_9
 msgid "Splendid. Return to me with some proof that they have been dealt with."
-msgstr "Pompás. Térj vissza valamilyen bizonyítékkal hogy elbántál velük."
+msgstr "Pompás. Térj vissza valamilyen bizonyítékkal, hogy elbántál velük."
 
 #: conversationlist_algangror.json:algangror_return_1
 msgid "You return. Did you handle all those .. ahem .. rodents in my basement?"
-msgstr "Visszatértél. Elbántál az összes .. ahem .. rágcsálóval a házamban?"
+msgstr "Visszatértél. Elbántál az összes… ahem… rágcsálóval az alagsorban?"
 
 #: conversationlist_algangror.json:algangror_return_1:0
 msgid "Yes, they are all dead."
@@ -12363,83 +12411,101 @@ msgstr "Igen, mind halott."
 
 #: conversationlist_algangror.json:algangror_return_1:1
 msgid "I am still working on it. Goodbye."
-msgstr "Még dolgozok rajta. Viszlát."
+msgstr "Még dolgozom rajta. Viszlát."
 
 #: conversationlist_algangror.json:algangror_return_1:2
 msgid "I won't do your stupid task, count me out."
-msgstr "Nem hajtom végre a buta feladatot, ne is számíts rám."
+msgstr "Nem végzem el az idióta feladatot, ne számíts rám."
 
 #: conversationlist_algangror.json:algangror_return_1:3
 msgid "I have decided not to help you with your rodents."
-msgstr "Úgy döntöttem, nem segítek a rágcsálóiddal."
+msgstr "Úgy döntöttem, hogy nem segítek a rágcsálóiddal kapcsolatban."
 
 #: conversationlist_algangror.json:algangror_return_2
 msgid "He he. I bet you sure showed them. Excellent. Thank you for .. ahem .. helping me."
-msgstr "He he. Biztos vagyok benned hogy megmutattad nekik a döfit. Csodálatos. Köszönöm a .. ahem.. segítségedért."
+msgstr ""
+"He he. Le mertem fogadni, hogy megmutatod nekik. Csodálatos. Köszönöm, hogy… "
+"ahem… segítettél nekem."
 
 #: conversationlist_algangror.json:algangror_return_3
 msgid "Those rodents have really been bothering me. Good thing I managed to catch some of them. He he."
-msgstr "Azok a rágcsálók rendkívül zavaróak voltak számomra. Jó hogy sikerült elkapni néhányat közülük. He he."
+msgstr ""
+"Azok a rágcsálók rendkívül zavaróak voltak számomra. Jó, hogy sikerült "
+"elkapnom néhányat. He he."
 
 #: conversationlist_algangror.json:algangror_return_4
 msgid "Now, there was something else I wanted to talk to you about. Have you been to the city of Remgard in your travels?"
-msgstr "Most pedig van egy másik dolog amiről szerettem volna beszélni veled. Voltál már Remgard-ban utazásaid során?"
+msgstr ""
+"Most viszont van valami más, amiről szerettem volna beszélni veled. Voltál "
+"már Remgard városában az utazásaid során?"
 
 #: conversationlist_algangror.json:algangror_return_4:0
 msgid "Yes, I have been there."
-msgstr "Igen, voltam."
+msgstr "Igen, voltam már ott."
 
 #: conversationlist_algangror.json:algangror_return_4:1
 msgid "No, where is that?"
-msgstr "Nem, hol van?"
+msgstr "Nem, az hol van?"
 
 #: conversationlist_algangror.json:algangror_return_c1
 msgid "You return. Thank you for helping me with my .. ahem .. rodent problem earlier."
-msgstr "Visszatértél. Köszönöm hogy segítettél a.. ahem.. rágcsálóproblémámmal."
+msgstr ""
+"Visszatértél. Köszönöm, hogy segítettél nekem a… ahem… rágcsálóproblémámmal "
+"kapcsolatban korábban."
 
 #: conversationlist_algangror.json:algangror_return_c3
 msgid "I hope that will teach those *other* rats."
-msgstr "Remélem ez megneveli a többit is."
+msgstr "Remélem, hogy ez *megtanítja* a többi patkánynak is."
 
 #: conversationlist_algangror.json:algangror_return_c4
 msgid "Say, you seem like a resourceful person. Would you be interested in helping me with yet another .. task?"
-msgstr "Mondjuk, leleményesnek tűnsz. Érdekelne a segítségnyújtás egy másik .. feladatban?"
+msgstr ""
+"Mondjuk, leleményesnek embernek tűnsz. Volna kedved segíteni nekem egy másik…"
+" feladatban?"
 
 #: conversationlist_algangror.json:algangror_return_c4:0
 msgid "Depends on the task."
-msgstr "A feladattól függ."
+msgstr "Az a feladattól függ."
 
 #: conversationlist_algangror.json:algangror_return_c4:2
 msgid "Not right now."
-msgstr "Nem most."
+msgstr "Most nem."
 
 #: conversationlist_algangror.json:algangror_remgard_1
 msgid "Oh, it's not far from here. Doesn't matter really."
-msgstr "Ó, nincs messze innen. De nem számít."
+msgstr "Ó, nincs messze innen. De nem igazán számít."
 
 #: conversationlist_algangror.json:algangror_remgard_2
 msgid "You see, I used to live there. To make a long story short, there were some .. ahem .. misunderstandings."
-msgstr "Látod, régen itt laktam. Dióhéjban megfogalmazba volt néhány.. félreértés."
+msgstr ""
+"Látod, régebben itt laktam. Dióhéjban összegezve volt néhány… ahem… "
+"félreértés."
 
 #: conversationlist_algangror.json:algangror_remgard_3
 msgid "These days, I think they are looking for me, for some reason. Can't think of any reason why really. But I believe they are."
-msgstr "Manapság, azt hiszem, engem keresnek valami oknál fogva. Nem tudom miért, de biztos vagyok benne hogy keresnek."
+msgstr ""
+"Manapság azt hiszem, hogy engem keresnek valami oknál fogva. Nem igazán "
+"tudom, hogy mi lehet az oka. De azt hiszem, hogy keresnek."
 
 #: conversationlist_algangror.json:algangror_remgard_4
 msgid "Because of our previous .. misunderstanding, I think it's best they don't find out that I'm here."
-msgstr "Az előbbi.. félreértésünk miatt, szerintem a legjobb ha nem jönnek rá hogy itt vagyok."
+msgstr ""
+"A korábbi… félreértésünk miatt szerintem az a legjobb, ha nem jönnek rá, "
+"hogy itt vagyok."
 
 #: conversationlist_algangror.json:algangror_remgard_5
 msgid "Therefore, I ask of you not to reveal my whereabouts to them."
-msgstr "Ezért arra kérlek, ne áruld el a hollétemet nekik."
+msgstr "Ezért arra kérlek, hogy ne áruld el a hollétemet nekik."
 
 #: conversationlist_algangror.json:algangror_remgard_5:1
 msgid "(Lie) Ok"
-msgstr "(Hazugság) Rendben"
+msgstr "(Hazudik) Rendben"
 
 #: conversationlist_algangror.json:algangror_remgard_6
 msgid "Thank you. Under no circumstances should you tell them where I am. They will most likely try to persuade you into revealing my location."
-msgstr "Köszönöm. Semmilyen körülmények között ne mondd el nekik hol vagyok. Valószínűleg megpróbálnak meggyőzni hogy eláruld a hollétemet."
+msgstr ""
+"Köszönöm. Semmilyen körülmények között sem mondhatod el nekik, hogy hol "
+"vagyok. Valószínűleg megpróbálnak majd meggyőzni, hogy felfedd a hollétemet."
 
 #: conversationlist_algangror.json:algangror_remgard_7
 msgid "Under no circumstances."
@@ -12453,7 +12519,9 @@ msgstr "Ó, megint te vagy."
 
 #: conversationlist_algangror.json:algangror_return_d2
 msgid "You should probably leave before you tip something over that might .. ahem .. break. He he."
-msgstr "Most pedig jó lenne ha távoznál mielőtt valami törékeny dolgot .. megkárosítasz. He he."
+msgstr ""
+"Most talán távoznod kellene, mielőtt valamiben elesnél, ami… összetörhet. He "
+"he."
 
 #: conversationlist_algangror.json:algangror_return_d2:1
 msgid "Watch your tongue, witch."
@@ -12461,19 +12529,24 @@ msgstr "Vigyázz a szádra, boszorkány."
 
 #: conversationlist_algangror.json:algangror_return_d2:2
 msgid "You are right, I had better leave."
-msgstr "Igazad van, jobb ha távozok."
+msgstr "Igazad van, jobb lesz, ha távozok."
 
 #: conversationlist_algangror.json:algangror_fight_3
 msgid "Jhaeld, the fool. He hides behind his guards and his stone walls. Such a pitiful man he is. Yes, I made those people disappear, but they were all worth it. I will have my revenge!"
-msgstr "Jhaeld, a féleszű. Csak az őrei és falai mögött bújkál. Elég könyörületes személy. Igen, miattam tűntek el azok az emberek, de az összes megérte. Elérem a bosszúmat!"
+msgstr ""
+"Jhaeld, a féleszű. Az őrsége és kőfalai mögött bujkál. Annyira szánalmas "
+"ember. Igen, én tüntettem el azokat az embereket, de az összes megérte. "
+"Bosszút fogok állni!"
 
 #: conversationlist_algangror.json:algangror_fight_4
 msgid "And you, what are you trying to accomplish by running his errands? How fortunate that you entered my house. He he."
-msgstr "És te mit próbálsz elérni a küldetéseinek teljesítésével? Mily szerencse hogy bejöttél hozzám. He he."
+msgstr ""
+"És te mit próbálsz elérni az ügyeinek intézésével? Micsoda szerencse, hogy "
+"beléptél a házamba. He he."
 
 #: conversationlist_algangror.json:algangror_fight_5
 msgid "Do you really think you can defeat *me*? Ha ha, this will be fun!"
-msgstr "Tényleg azt gondolod hogy legyőzhetsz *engem*? Ha ha, ez jó móka lesz!"
+msgstr "Valóban azt gondolod, hogy legyőzhetsz *engem*? Ha ha, ez jó móka lesz!"
 
 #: conversationlist_algangror.json:algangror_told_2
 msgid "Say, despite my previous urging to you to keep my location a secret to the people of Remgard, I have this feeling that this trust has been broken. Please tell me it isn't so."
@@ -12481,88 +12554,104 @@ msgstr ""
 
 #: conversationlist_algangror.json:algangror_told_2:0
 msgid "Yes, I have told Jhaeld where you are."
-msgstr ""
+msgstr "Igen, elmondtam Jhaeldnek, hogy merre vagy."
 
 #: conversationlist_algangror.json:algangror_told_2:1
 msgid "(Lie) No, I have not told anyone."
-msgstr ""
+msgstr "(Hazudik) Nem, senkinek sem mondtam el."
 
 #: conversationlist_algangror.json:algangror_told_3
 msgid "I can feel it in me."
-msgstr ""
+msgstr "Érzem magamban."
 
 #: conversationlist_algangror.json:algangror_task2_d
 msgid "Very well, return to me once you are ready."
-msgstr "Nagyszerű! Gyere vissza, miután elvégezted a feladatot."
+msgstr "Nagyszerű, térj vissza hozzám, amikor készen vagy."
 
 #: conversationlist_algangror.json:algangror_task2_1
 msgid "Now, I can't tell you what task I have in mind before I am confident that you will actually help me. Granted, you have already shown some level of respect for my need of discretion."
-msgstr "Most nem tudom megmondani milyen feladatot mondjak, hogy biztos legyek a segítőkézségedben.  Az biztos hogy már most megmutattad hogy tiszteled a diszkréció iránti vágyam."
+msgstr ""
+"Most nem mondhatom el neked, hogy milyen feladatra gondoltam, mielőtt "
+"megbizonyosodnék arról, hogy tulajdonképpen segíteni fogsz nekem. Az biztos, "
+"hogy már mutattál némi tisztelet a diszkréció iránti vágyammal kapcsolatban."
 
 #: conversationlist_algangror.json:algangror_task2_2
 msgid "Nor can I describe my reasoning behind this task before you are done with it."
-msgstr "Nem is mondhatom el az érvelésemet e feladat mögött, csak miután végeztél."
+msgstr ""
+"Nem is mondhatom el a feladat mögötti érvelésemet, mielőtt végeztél volna "
+"vele."
 
 #: conversationlist_algangror.json:algangror_task2_3
 msgid "Rest assured, you will be sufficiently rewarded by helping me. In fact, you see this necklace here? It has some peculiar powers that many people seek."
-msgstr "Biztos lehetsz benne, hogy kellőképpen meg leszel jutalmazva a segítségedért. Látod ezt a nyakláncot? Rendelkezik olyan erőkkel, amikre sok ember vágyik."
+msgstr ""
+"Biztos lehetsz benne, hogy kellőképpen megjutalmazlak a segítségedért. Nos, "
+"látod itt ezt a nyakláncot? Olyan különös hatalommal rendelkezik, amikre sok "
+"ember vágyik."
 
 #: conversationlist_algangror.json:algangror_task2_4
 msgid "The world around you seems to move a bit slower when you wear it."
-msgstr "Mikor viseled, a körülötted zajló világ lelassul."
+msgstr "A körülötted lévő világ kissé lassabban mozgónak tűnik, amikor viseled."
 
 #: conversationlist_algangror.json:algangror_task2_4:0
 msgid "Ok. I will help you with your task."
-msgstr "Rendben. Segítek ebben."
+msgstr "Rendben. Segítek neked a feladatodban."
 
 #: conversationlist_algangror.json:algangror_task2_4:1
 #: conversationlist_algangror.json:algangror_task2_5:1
 msgid "Ok, I'll help. I'm always interested in new items."
-msgstr "Rendben, segítek. Mindig érdekelnek az új dolgok."
+msgstr "Rendben, segítek. Mindig is érdekeltek az új dolgok."
 
 #: conversationlist_algangror.json:algangror_task2_4:2
 msgid "It all depends on what you want me to do."
-msgstr "Attól függ, mit szeretnél, hogy tegyek."
+msgstr "Mindez attól függ, hogy mit akarsz tőlem."
 
 #: conversationlist_algangror.json:algangror_task2_4:3
 msgid "Something feels wrong here. I don't think I should help you."
-msgstr "Valami nincs rendben. Nem hiszem, hogy segítenem kéne neked."
+msgstr "Valami rossz érzésem van itt. Nem hiszem, hogy segítenem kellene neked."
 
 #: conversationlist_algangror.json:algangror_task2_5
 msgid "As I said, I cannot tell you what task I have in mind, or my reasoning behind it until you are done. I would need your total .. cooperation with this."
-msgstr "Ahogy már mondtam, nem mondhatom el, mi van az eszemben, vagy az érvelésem, mielőtt végeztél volna. Szükségem van a teljes együttműködésedre ebben."
+msgstr ""
+"Ahogy már mondtam, nem mondhatom el neked, hogy milyen feladatra gondolok "
+"vagy a mögötte lévő érvelésem, mielőtt végeztél volna. Szükségem van a "
+"teljes… együttműködésedre ebben."
 
 #: conversationlist_algangror.json:algangror_task2_5:0
 msgid "Ok. I will agree to help you with your task."
-msgstr "Rendben. Segítek a feladatodban."
+msgstr "Rendben. Beleegyezek, hogy segítsek neked a feladatodban."
 
 #: conversationlist_algangror.json:algangror_task2_5:2
 msgid "No. I will not help you unless you tell me what you want me to do."
-msgstr "Nem. Nem segítek, ha nem mondod meg, hogy mit tegyek."
+msgstr ""
+"Nem. Nem segítek neked, hacsak nem mondod el nekem, hogy mit akarsz tőlem."
 
 #: conversationlist_algangror.json:algangror_task2_5:3
 msgid "No, I would never help someone like you."
-msgstr "Nem, soha nem segítenék egy ilyennek mint te."
+msgstr "Nem, soha nem segítenék egy olyannak mint te."
 
 #: conversationlist_algangror.json:algangror_task2_n
 msgid "Ah yes. After all, you are just a child and I can understand that all of this must be too much for you. He he."
 msgstr ""
+"Ó, igen. Végül is te csak egy gyerek vagy, és meg tudom érteni, hogy mindez "
+"túl sok neked. He he."
 
 #: conversationlist_algangror.json:algangror_task2_n2
 msgid "Can I at least urge you not to disclose my location to the people of Remgard?"
 msgstr ""
+"Megkérhetlek legalább arra, hogy ne hozd nyilvánosságra a helyemet a "
+"remgardi embereknek?"
 
 #: conversationlist_algangror.json:algangror_task2_n2:0
 msgid "I will keep your location secret. Goodbye."
-msgstr ""
+msgstr "Titokban fogom tartani a helyedet. Viszontlátásra."
 
 #: conversationlist_algangror.json:algangror_task2_n2:1
 msgid "We'll see. Goodbye."
-msgstr ""
+msgstr "Meglátjuk. Viszontlátásra."
 
 #: conversationlist_algangror.json:algangror_task2_n2:2
 msgid "Don't tell me what to do! Goodbye."
-msgstr ""
+msgstr "Ne mondd meg nekem, hogy mit tegyek! Viszontlátásra."
 
 #: conversationlist_algangror.json:algangror_task2_6
 msgid "Good, good."
@@ -12570,19 +12659,29 @@ msgstr "Jó, jó."
 
 #: conversationlist_algangror.json:algangror_task2_7
 msgid "You will tell no one of this task that I am about to give you, and you must be as discreet as possible."
-msgstr "Senkinek sem beszélhetsz arról a feladatról, amit most adni fogok neked, és annyira óvatosnak kell lenned, amennyire csak lehetséges."
+msgstr ""
+"Senkinek sem beszélhetsz arról a feladatról, amit most adok neked, és olyan "
+"óvatosnak kell lenned, amennyire csak lehetséges."
 
 #: conversationlist_algangror.json:algangror_task2_8
 msgid "I have in my possession five idols. Five idols with very unique .. qualities. What I want you to do is .. deliver these idols to various people in the town of Remgard."
 msgstr ""
+"Van a birtokomban öt bálvány. Öt bálvány rendkívül egyedi… adottságokkal. "
+"Azt akarom tőled, hogy… vidd el ezeket a bálványokat különböző embereknek "
+"Remgard városában."
 
 #: conversationlist_algangror.json:algangror_task2_9
 msgid "You will place them by the beds of five particular persons, and you must hide it well so that the person does not find the idol itself."
 msgstr ""
+"El fogod helyezni őket öt konkrét személy ágya mellé, és jól el kell "
+"rejtened, hogy a személy ne találja meg magát a bálványt."
 
 #: conversationlist_algangror.json:algangror_task2_10
 msgid "Remember, it is of utmost importance that you be as discreet as possible about this. The idols must not be found once you have placed them, and no one must notice that you place the idols."
-msgstr "Jegyezd meg, a legfontosabb most hogy a lehető legdiszkrétebb legyél evvel kapcsolatban. A bálványok nem szabad hogy előkerüljenek miután elhelyezted őket, és senki nem veheti észre amint épp cselekszel."
+msgstr ""
+"Ne feledd, rendkívül fontos, hogy annyira óvatos legyél, amennyire csak "
+"lehetséges ezzel kapcsolatban. A bálványokat nem szabad megtalálni, miután "
+"elhelyezted őket, és senki sem veheti észre, hogy elhelyezted a bálványokat."
 
 #: conversationlist_algangror.json:algangror_task2_10:0
 #: conversationlist_stoutford.json:yolgen_rumblings10_2:1
@@ -12591,32 +12690,47 @@ msgstr "Gyerünk."
 
 #: conversationlist_algangror.json:algangror_task2_11
 msgid "So, the first person that I want you to visit is Jhaeld. I hear that he spends most of his time in the Remgard tavern these days."
-msgstr "Szóval, az első ember akit szeretném hogy meglátogass, az Jhaeld. Hallottam hogy a legtöbb idejét a Remgardi kocsmákban tölti mostanság."
+msgstr ""
+"Nos, Jhaeld az első ember, akit szeretném, hogy meglátogass. Azt hallottam, "
+"hogy a legtöbb idejét a remgardi kocsmában tölti manapság."
 
 #: conversationlist_algangror.json:algangror_task2_12
 msgid "Secondly, I want you to visit one of the farmers named Larni. He lives with his wife Caeda here in Remgard in one of the northern cabins."
-msgstr "Másodszor, szeretném ha meglátogatnád az egyik Larni nevű földművest. Feleségével, Caeda-val él Remgard északi kabinjaiban."
+msgstr ""
+"Másodszor, szeretném ha meglátogatnád az egyik földművest, akit Larninak "
+"hívnak. A feleségével, Caedával itt él Remgardban az északi kunyhók "
+"egyikében."
 
 #: conversationlist_algangror.json:algangror_task2_13
 #: questlist_v0611_3.json:fiveidols:33
 msgid "The third person is Arnal the weapon-smith, that lives in the northwest of Remgard."
-msgstr "A harmadik személy Arnal, a fegyverkovács, aki Remgard északnyugati részén él."
+msgstr ""
+"A harmadik személy Arnal, a fegyverkovács, aki Remgard északnyugati részén "
+"lakik."
 
 #: conversationlist_algangror.json:algangror_task2_14
 msgid "Fourth is Emerei, that can probably be found in his house to the southeast of Remgard."
-msgstr "Negyedik Emerei, aki valószínűleg a délkeleti házában található Remgardban."
+msgstr ""
+"A negyedik Emerei, akit valószínűleg a házában találsz meg Remgard délkeleti "
+"részén."
 
 #: conversationlist_algangror.json:algangror_task2_15
 msgid "The fifth person is the farmer Carthe. Carthe lives on the eastern shore of Remgard, near the tavern."
-msgstr "Ötödik személy Carthe földműves. Carthe Remgard keleti parjatin él, közel a kocsmához."
+msgstr ""
+"Az ötödik személy Carthe földműves. Carthe Remgard keleti partjain él, közel "
+"a kocsmához."
 
 #: conversationlist_algangror.json:algangror_task2_16
 msgid "Once you have placed these five idols by the beds of these five people, return to me as soon as possible."
-msgstr "Amint elhelyezted ezt az öt bálványt az ágyaik mellé, siess vissza hozzám."
+msgstr ""
+"Amint elhelyezted ezt az öt bálványt az öt ember ágya mellé, térj vissza "
+"hozzám, amilyen gyorsan csak lehetséges."
 
 #: conversationlist_algangror.json:algangror_task2_17
 msgid "Again, I cannot stress this enough - you must not tell anyone about these idols, and you must not be seen while placing them."
-msgstr "Még egyszer, nem tudom elégszer mondani - senkinek ne szólj a bálványokról, és nem láthat meg senki, miközben leteszed őlet."
+msgstr ""
+"Még egyszer, nem tudom eléggé hangsúlyozni – senkinek sem beszélhetsz "
+"ezekről a bálványokról, és nem láthat meg senki, miközben elhelyezed őket."
 
 #: conversationlist_algangror.json:algangror_task2_17:0
 #: conversationlist_stoutford_combined.json:stoutford_widow_roots4045_3:1
@@ -12633,11 +12747,11 @@ msgstr "Nemsokára visszatérek."
 
 #: conversationlist_algangror.json:algangror_task2_18:1
 msgid "This should be easy."
-msgstr "Ennek könnyűnek kéne, hogy legyen."
+msgstr "Ennek könnyűnek kell lennie."
 
 #: conversationlist_algangror.json:algangror_task2_19
 msgid "Now go, and please hurry, we might not have much time."
-msgstr "Most menj, és siess, nem lehet túl sok időnk."
+msgstr "Most menj, és siess, talán nincs sok időnk."
 
 #: conversationlist_algangror.json:algangror_task2_ret1
 msgid "Tell me, how goes the task of placing the idols?"
@@ -12685,72 +12799,105 @@ msgstr ""
 
 #: conversationlist_algangror.json:algangror_story
 msgid "Let me tell you my story."
-msgstr "Engedd hogy elmeséljem a történetem."
+msgstr "Hadd mondjam el a történetemet."
 
 #: conversationlist_algangror.json:algangror_story:1
 msgid "Can we just skip to the end?"
-msgstr "Nem tudnánk a végére ugrani?"
+msgstr "Nem ugorhatnánk a végére?"
 
 #: conversationlist_algangror.json:algangror_story1
 msgid "You see, I used to live in the city of Remgard. The times were good, and the city prospered."
-msgstr "Látod, régen Remgardban laktam. Szép idők voltak, a város jól boldogult."
+msgstr ""
+"Látod, régebben Remgard városában laktam. Szép idők voltak, és a város "
+"virágzott."
 
 #: conversationlist_algangror.json:algangror_story2
 msgid "Our crops grew well, and some people had very fortunate trading agreements with other cities, making the life for most of us living in Remgard very easy."
-msgstr "Bő termésünk volt, és néhány ember szerencsés üzleti megbeszélésekre tett szert, ezáltal megkönnyítve Remgard lakóinak életét."
+msgstr ""
+"Bő termésünk volt, és néhány ember szerencsés kereskedelmi megállapodást "
+"kötött más városokkal nagymértékben megkönnyítve a Remgardban élők "
+"legtöbbjének életét."
 
 #: conversationlist_algangror.json:algangror_story3
 msgid "I even sold some of the baskets that I used to make to a wealthy merchant that visited us from Nor City."
-msgstr "Még el is adtam néhány kosarat amiket régen készítettem egy tehetős kereskedőnek aki Nor Városából látogatott meg minket."
+msgstr ""
+"Még azokból a kosarakból is eladtam néhányat, amelyeket egy jómódú "
+"kereskedőnek készítettem, aki Nor városból látogatott meg minket."
 
 #: conversationlist_algangror.json:algangror_story4
 msgid "However, even the easy life gets boring after a while. I believe it is in our nature to strive for new and better things, to free us from the boredom of day-to-day life."
-msgstr "Azonban még a könnyű élet is unalmassá válik egy idő után. Azt hiszem, ösztönösen törekszünk az újabb és jobb dolgokért, hogy kiszabaduljunk a mindennapok egyhangúságából."
+msgstr ""
+"Azonban még az egyszerű élet is unalmas lesz egy idő után. Azt hiszem, a "
+"természetünkben van, hogy új és jobb dolgokra törekszünk, hogy "
+"kiszabaduljunk a mindennapok egyhangúságából."
 
 #: conversationlist_algangror.json:algangror_story5
 msgid "I wanted to learn more of things that I knew nothing about, and wanted to explore things I had only read of in books before."
-msgstr "Szerettem volna megtanulni több dolgot amiről fogalmam sem volt, és ki akartam próbálni dolgokat amikről előzőleg csak könyvekben olvastam."
+msgstr ""
+"Szerettem volna megtanulni több dolgot, amiről fogalmam sem volt, és olyan "
+"dolgokat akartam felfedezni, amikről ezelőtt csak könyvekben olvastam."
 
 #: conversationlist_algangror.json:algangror_story6
 msgid "So I went to Nor City myself, and visited many .. interesting people and .. dark corners."
-msgstr "Ezért elmentem Nor Városába magam, és meglátogattam néhány .. érdekes embert.. és sötét sarkot."
+msgstr ""
+"Ezért én elmentem Nor városába, és meglátogattam sok… érdekes embert és… "
+"sötét sarkot."
 
 #: conversationlist_algangror.json:algangror_story7
 msgid "Naturally, I was thrilled of the knowledge I gained from the experience, and from what I learned while there."
-msgstr "Természetesen, megborzongató az a tudás amit itt szereztem gyakorlás által, és amit az itt töltött idő alatt tanultam."
+msgstr ""
+"Természetesen megborzongtam attól a tudástól, amit a tapasztalattal "
+"szereztem, és amit az itt töltött idő alatt tanultam."
 
 #: conversationlist_algangror.json:algangror_story7:0
 #: conversationlist_algangror.json:algangror_story11:0
 msgid "What then?"
-msgstr "Akkor mi legyen?"
+msgstr "Mi lett ezután?"
 
 #: conversationlist_algangror.json:algangror_story8
 msgid "As I got back home, I wanted to continue practicing what I had observed and learned while in Nor City."
-msgstr "Amint hazaértem, szerettem volna folytatni a Nor Városban tanultak gyakorlását."
+msgstr ""
+"Amint hazaértem, szerettem volna folytatni annak gyakorlását, amit "
+"megfigyeltem és megtanultam, mialatt Nor városban voltam."
 
 #: conversationlist_algangror.json:algangror_story9
 msgid "You could say I got obsessed with learning more. I guess the others living in Remgard did not .. share my enthusiasm. Some of them even questioned the fact that I wanted to learn more."
-msgstr "Mondhatnád, megszállottja lettem a tanulásnak. Gondolom mások Remgarban nem nagyon .. értettek egyet a lelkesedésemmel. Néhányan meg is kérdőjelezték a tényt hogy szeretnék még tanulni."
+msgstr ""
+"Mondhatnád, megszállottja lettem a további tanulásnak. Azt hiszem, más "
+"Remgardban élők nem nagyon… osztották a lelkesedésemet. Néhányan meg is "
+"kérdőjelezték a tényt, hogy többet szeretnék tanulni."
 
 #: conversationlist_algangror.json:algangror_story10
 msgid "So I told myself that others would not hinder me in my curiosity to better myself."
-msgstr "Szóval azt gondoltam magamban hogy mások nem akadályoznának meg a kíváncsiságomban hogy jobb legyek."
+msgstr ""
+"Így azt mondtam magamnak, hogy mások nem akadályozhatják meg a "
+"kíváncsiságomat, hogy jobbá tegyem magam."
 
 #: conversationlist_algangror.json:algangror_story11
 msgid "Those books that I bought from the Blackmarrow residence in Nor City - I must have read them all perhaps five times over. This was something completely new to me, and at the same time very exciting."
-msgstr "Azok a könyvek amiket a Feketeforrás rezidenciáról Nor Városban - talán ötször is elolvastam mind. Ez valami teljesen új volt számomra, és ugyanakkor nagyon izgalmas."
+msgstr ""
+"Azok a könyvek, amelyeket a Nor városában lévő blackmarrowi lakóhelyről "
+"vettem – talán ötször is elolvastam mind. Ez valami teljesen új volt "
+"számomra, és ugyanakkor nagyon izgalmas is."
 
 #: conversationlist_algangror.json:algangror_story12
 msgid "For some reason, the others in Remgard started giving me strange looks, and I could hear the whispers behind my back."
-msgstr "Valami oknál fogva mások Remgardban fura tekinteteket vetettek rám és szinte hallottam a hátam mögött a susmogást."
+msgstr ""
+"Valami oknál fogva mások Remgardban fura tekinteteket vetettek rám, és "
+"szinte hallottam a hátam mögött a susmogást."
 
 #: conversationlist_algangror.json:algangror_story13
 msgid "I was even barred from the tavern. 'People come here for a good time, and we don't want people like you here ruining that' they said. What fools they are."
-msgstr "Még a kocsmától is el voltam zárva. 'Az emberek szórakozni járnak ide, és nem szeretnénk ha a hozzád hasonlóak elrontsák a mókát' - mondták. Micsoda ostobák."
+msgstr ""
+"Még a kocsmától is el voltam zárva. „Az emberek szórakozni járnak ide, és "
+"nem szeretnénk, hogy a hozzád hasonló emberek tönkretegyék” – mondták. "
+"Micsoda ostobák."
 
 #: conversationlist_algangror.json:algangror_story14
 msgid "I heard one woman whispering to her boy, 'Don't look at her, she'll turn you to stone!'. Others just turned the other way when they met me."
-msgstr "Hallottam egy nőt ahogy azt suttogja a gyerekének, 'Ne nézz rá, kővé változtat!'. Mások csak elfordították tekintetüket találkozásunkkor."
+msgstr ""
+"Hallottam egy nőt, hogy azt suttogja a fiának: „Ne nézz rá, mert kővé "
+"változtat!”. Mások csak elfordultak, amikor találkoztunk."
 
 #: conversationlist_algangror.json:algangror_story15
 msgid "What fools they are."
@@ -12766,31 +12913,47 @@ msgstr "Egy nap Jhaeld jelent meg az ajtómban egy csapat őrrel."
 
 #: conversationlist_algangror.json:algangror_story17
 msgid "The people of Remgard had decided that I could not stay there anymore, he said. The things I did were causing other people harm, he said."
-msgstr "Remgard emberei úgy döntöttek, nem maradhatok itt tovább, mondták. Amit művelek, az másoknak gondot okoz, mondták."
+msgstr ""
+"A remgardi emberek úgy döntöttek, hogy nem maradhatok itt tovább – mondta. "
+"Azok a dolgok, amiket tettem, az másoknak kárt okoz – mondta."
 
 #: conversationlist_algangror.json:algangror_story18
 msgid "What had I done, I asked myself? I had never hurt anyone, much less affected anyone with my .. experiments. Am I not allowed to do what I wish?"
-msgstr "Mit tettem, kérdeztem magamtól? Soha nem bántottam meg senkit, még kevésbbé okoztam másnak gondot a kísérleteimmel. És nem tehetem azt amit akarok?"
+msgstr ""
+"Mit tettem, kérdeztem magamtól? Soha sem bántottam senkit, sokkal kevésbé "
+"érintettek bárkit is a… kísérleteim. Nem szabad azt tennem, amit szeretnék?"
 
 #: conversationlist_algangror.json:algangror_story19
 msgid "I had little chance to argue, however. The guards led me out of the city. They did not even let me gather my things. All my books, all my notes and all my findings - gone. I lost everything."
-msgstr "Nem is volt túl sok esélyem a vitára. Az őrök kivezettek a városból. Még azt sem engedték hogy összegyűjtsem a dolgaim. Az összes könyvem, jegyzetem, a kutatásaim - elvesztek. Mindent elvesztettem."
+msgstr ""
+"Azonban nem volt sok esélyem a vitára. Az őrök kivezettek a városból. Még "
+"azt sem engedték meg nekem, hogy összegyűjtsem a dolgaim. Az összes könyvem, "
+"az összes jegyzetem és az összes kutatásom – elvesztek. Mindent elvesztettem."
 
 #: conversationlist_algangror.json:algangror_story20
 msgid "All this happened several seasons ago. I knew I had to get revenge for what they did to me."
-msgstr "Ez mind pár évszakja történt. Tudtam, bosszút kell állnom amiatt, amit tettek velem."
+msgstr ""
+"Mindez sok évvel ezelőtt történt. Tudtam, hogy bosszút kell állnom amiatt, "
+"amit velem tettek."
 
 #: conversationlist_algangror.json:algangror_story21
 msgid "Oh, how I despise them all. The people that gave me those looks, the people that whispered behind my back, and most of all that fool Jhaeld."
-msgstr "Ó, megvetem mindet. Akik úgy néztek rám, akik a hátam mögött suttogtak rólam, és legfőkébb azt a féleszű Jhaeldet."
+msgstr ""
+"Ó, hogy megvetem mindet. Az embereket, akik úgy néztek rám, az embereket, "
+"akik a hátam mögött suttogtak, és legfőképp azt a féleszű Jhaeldet."
 
 #: conversationlist_algangror.json:algangror_story22
 msgid "So, I decided to extend my .. experiments .. to larger things. To people, to living things. This is the perfect opportunity to learn even more than what is in the books."
-msgstr "Szóval, úgy döntöttem, kiszélesítem a kísérleteimet egy kicsit. Emberekre, élő dolgokra. Ez a tökéletes lehetőség hogy többet tanuljak még annál is, ami a könyvekben van."
+msgstr ""
+"Szóval úgy döntöttem, hogy kiterjesztem a… kísérleteimet… nagyobb dolgokra. "
+"Emberekre, élő dolgokra. Ez a tökéletes lehetőség, hogy többet tanuljak még "
+"annál is, ami a könyvekben van."
 
 #: conversationlist_algangror.json:algangror_story23
 msgid "To think that I could do it while at the same time get revenge on those despicable people - it's an excellent plan, if I may say so myself. He he."
-msgstr "Azt gondolva, hogy foglalkozhatok evvel, miközben bosszút állok azokon a megvetendő embereken - egy csodálatos terv, ha fogalmazhatok így. He he."
+msgstr ""
+"Arra gondolni, hogy meg tudom csinálni, miközben bosszút állok azokon a "
+"megvetendő embereken – egy kiváló terv, ha fogalmazhatok így. He he."
 
 #: conversationlist_algangror.json:algangror_story23:0
 msgid "So, what happened to all those people that have gone missing?"
@@ -12798,55 +12961,71 @@ msgstr "Szóval mi történt azokkal az emberekkel, akik eltűntek?"
 
 #: conversationlist_algangror.json:algangror_story24
 msgid "I lured them here. Once I managed to trap them, I placed a curse on them that, in theory, should have only made them unable to speak."
-msgstr "Idecsalogattam őket. Mikor sikerült csapdába ejtenem őket, mindre átkot mondtam, ami elméletileg el kellett hogy vegye a beszédképességüket."
+msgstr ""
+"Idecsalogattam őket. Mikor sikerült csapdába ejtenem őket, akkor olyan átkot "
+"tettem rájuk, amelynek elméletileg csak beszédképtelenné kellett volna "
+"tennie őket."
 
 #: conversationlist_algangror.json:algangror_story25
 msgid "Maybe I haven't understood everything correctly from the books that I have read, since instead of making them unable to speak, they were all turned into rats instead."
-msgstr "Talán nem érthettem meg mindent amit a könyvekben olvastam, ugyanis ahelyett hogy elnémítottam volna őket, mindet patkánnyá változtattam."
+msgstr ""
+"Talán nem jól értettem meg mindent, amit a könyvekből olvastam, ugyanis "
+"ahelyett, hogy beszédképtelenné tette volna őket, ehelyett mindannyian "
+"patkánnyá változtak."
 
 #: conversationlist_algangror.json:algangror_story26
 msgid "Practice makes perfect, I suppose. Ha ha."
-msgstr "Gyakorlás teszi a mestert, gondolom. Ha ha."
+msgstr "Gyakorlat teszi a mestert, gondolom. Ha ha."
 
 #: conversationlist_algangror.json:algangror_story26:0
 msgid "Wait, does this mean that those rats I killed for you were.."
-msgstr "Várj, ez azt jelenti hogy a patkányok amiket neked megöltem, azok.."
+msgstr "Várj, ez azt jelenti, hogy a patkányok, amiket megöltem neked, azok…"
 
 #: conversationlist_algangror.json:algangror_story27
 msgid "Oh yes. With your help, they are now one less problem to deal with, so to speak. He he."
-msgstr "Ó igen. A segítségeddel ők már eggyel kevesebb problémát jelentenek, mondjuk rá. He he."
+msgstr ""
+"Ó, igen. A segítségeddel ők már eggyel kevesebb problémát jelentenek, "
+"mondjuk így. He he."
 
 #: conversationlist_algangror.json:algangror_story28
 msgid "So, that's my story. Thank you for listening to it."
-msgstr "Szóval, ez a történetem. Köszönöm hogy meghallgattad."
+msgstr "Szóval ez az én történetem. Köszönöm, hogy meghallgattad."
 
 #: conversationlist_algangror.json:algangror_story28:0
 msgid "I understand, and I agree with your actions."
-msgstr "Megértem, és egyetértek a döntéseiddel."
+msgstr "Megértem, és egyetértek a tetteiddel."
 
 #: conversationlist_algangror.json:algangror_story28:1
 msgid "I do not fully agree with your actions."
-msgstr "Nem teljesen értek egyet azzal amit tettél."
+msgstr "Nem teljesen értek egyet a tetteiddel."
 
 #: conversationlist_algangror.json:algangror_story28:2
 msgid "What you did could never be justified!"
-msgstr "Soha nem fogod tudni megindokolni teljesen azt, amit műveltél!"
+msgstr "Amit tettél, azt soha nem lehetett megindokolni!"
 
 #: conversationlist_algangror.json:algangror_story29a
 msgid "Thank you. It is good to know there are more people interested in learning more."
-msgstr "Köszönöm. Jó tudni hogy vannak még emberek akiket érdekel a tanulás."
+msgstr ""
+"Köszönöm. Jó tudni, hogy vannak még emberek, akiket érdekel a további "
+"tanulás."
 
 #: conversationlist_algangror.json:algangror_story29b
 msgid "I never expected you to understand it. No one else seems to understand me either. Oh well, your loss, I guess."
-msgstr "Soha nem számítottam arra hogy megérts. Nem is tűnik úgy mintha akárki más megértene engem. Te bajod, gondolom."
+msgstr ""
+"Sosem számítottam arra, hogy megérts. Úgy tűnik, senki sem ért meg engem. "
+"Nos, ez a te bajod, gondolom."
 
 #: conversationlist_algangror.json:algangror_cmp1
 msgid "So, for helping me with the idols, I believe I promised you my enchanted necklace, 'Marrowtaint'."
-msgstr "Szóval, a segítségedért cserébe, azt hiszem odaígértem neked az elvarázsolt nyakláncomat, \"Romlásforrás\"-t."
+msgstr ""
+"Szóval a bálványokkal való segítségedért cserébe azt hiszem, hogy odaígértem "
+"neked az elvarázsolt nyakláncomat, a „Velőfertőzést”."
 
 #: conversationlist_algangror.json:algangror_cmp2
 msgid "Wear it well, my friend. Do not let others get hold of the power that Marrowtaint provides."
-msgstr "Viseld, barátom. Ne engedj mást hozzá a Romlásforrás erejéhez."
+msgstr ""
+"Viseld jól, barátom. Ne hagyd másoknak, hogy megszerezzék azt a hatalmat, "
+"amit a Velőfertőzés nyújt."
 
 #: conversationlist_algangror.json:algangror_cmp3
 #: conversationlist_talion_2.json:talion_bone_1:0
@@ -12854,11 +13033,12 @@ msgstr "Viseld, barátom. Ne engedj mást hozzá a Romlásforrás erejéhez."
 #: conversationlist_talion_2.json:talion_irdegh_1:0
 #: conversationlist_halvor_surprise.json:halvor_crossglen_7:1
 msgid "Here you go."
-msgstr "Na hajrá."
+msgstr "Tessék."
 
 #: conversationlist_algangror.json:algangror_cmp3:1
 msgid "That's all? One lousy necklace for all this trouble I went through?"
-msgstr "Ez minden? Egy vacak nyaklánc ezért a sok kínért cserébe, amin keresztülmentem?"
+msgstr ""
+"Ez minden? Egy vacak nyaklánc ezért a sok fáradozásért, amin keresztülmentem?"
 
 #: conversationlist_algangror.json:algangror_cmp4
 msgid "Do not underestimate it, my friend."
@@ -12866,7 +13046,9 @@ msgstr "Ne becsüld alá, barátom."
 
 #: conversationlist_algangror.json:algangror_cmp5
 msgid "Again, thank you for helping me. You will always be welcome here, friend."
-msgstr "Még egyszer köszönöm a segítséged. Mindig szívesen látlak, barátom."
+msgstr ""
+"Még egyszer köszönöm, hogy segítettél nekem. Mindig szívesen látlak itt, "
+"barátom."
 
 #: conversationlist_remgard_bridgeguard.json:remgardb_1
 msgid "Halt! No one is allowed to enter or exit Remgard."
@@ -17228,7 +17410,7 @@ msgstr "Bocsáss meg, de nem tudok neked segíteni. Hosszú idő óta te vagy az
 
 #: conversationlist_agthor.json:agthor_y4
 msgid "Sure thing. Here's what I've got."
-msgstr "Persze. Ezeket tudom eladni neked."
+msgstr "Biztosan. Láthatod, hogy mi mindenem van."
 
 #: conversationlist_agthor.json:agthor_guard0
 msgid "Talk to Agthor."
@@ -18426,7 +18608,7 @@ msgstr ""
 
 #: conversationlist_lleglaris.json:lleglaris2:1
 msgid "See this amulet that I'm wearing? This is Marrowtaint."
-msgstr ""
+msgstr "Látod ezt az amulettet, amit hordok? Ez a Velőfertőzés."
 
 #: conversationlist_lleglaris.json:lleglaris2:2
 msgid "See this ring that I am wearing? This is the Ring of lesser Shadow."
@@ -19438,15 +19620,15 @@ msgstr ""
 
 #: conversationlist_lodar0g.json:lodar0_g2:1
 msgid "'Giant'"
-msgstr ""
+msgstr "„Óriás”"
 
 #: conversationlist_lodar0g.json:lodar0_g2:2
 msgid "'Bones'"
-msgstr ""
+msgstr "„Csontok”"
 
 #: conversationlist_lodar0g.json:lodar0_g2:3
 msgid "[Lie] Your master has allowed me to get through without the password."
-msgstr ""
+msgstr "[Hazugság] A mestered megengedte nekem, hogy átmenjek a jelszó nélkül."
 
 #: conversationlist_lodar0g.json:lodar0_g2:4
 msgid "'By the moon and stars, the path is laid clear to me.'"
@@ -19454,19 +19636,19 @@ msgstr ""
 
 #: conversationlist_lodar0g.json:lodar0_g2:5
 msgid "'Lord Geomyr'"
-msgstr ""
+msgstr "„Geomyr uraság”"
 
 #: conversationlist_lodar0g.json:lodar0_g2:6
 msgid "'The Shadow'"
-msgstr ""
+msgstr "„Az Árny”"
 
 #: conversationlist_lodar0g.json:lodar0_g2:7
 msgid "'Glow of the Shadow'"
-msgstr ""
+msgstr "„Az Árny ragyogása”"
 
 #: conversationlist_lodar0g.json:lodar0_g2:8
 msgid "'Password'"
-msgstr ""
+msgstr "„Jelszó”"
 
 #: conversationlist_lodar0g.json:lodar0_gfail
 msgid "You not know password! Teehee."
@@ -29714,7 +29896,7 @@ msgstr "Ehető állati rész"
 
 #: itemcategories_1.json:flask
 msgid "Liquid container"
-msgstr ""
+msgstr "Folyadéktartály"
 
 #: itemcategories_1.json:money
 msgid "Money"
@@ -29726,12 +29908,12 @@ msgstr "Egyéb"
 
 #: itemcategories_stoutford_combined.json:whip
 msgid "Whip"
-msgstr ""
+msgstr "Ostor"
 
 #: itemcategories_stoutford_combined.json:scythe
 #: itemlist_stoutford_combined.json:scythe
 msgid "Scythe"
-msgstr ""
+msgstr "Kasza"
 
 #: itemlist_money.json:gold
 msgid "Gold coins"
@@ -29747,7 +29929,7 @@ msgstr ""
 
 #: itemlist_weapons.json:ironsword0
 msgid "Crude iron sword"
-msgstr ""
+msgstr "Nyers vaskard"
 
 #: itemlist_weapons.json:hammer0
 msgid "Iron hammer"
@@ -29763,7 +29945,7 @@ msgstr ""
 
 #: itemlist_weapons.json:dagger2
 msgid "Superior iron dagger"
-msgstr ""
+msgstr "Kiváló vastőr"
 
 #: itemlist_weapons.json:shortsword1
 msgid "Iron shortsword"
@@ -29771,7 +29953,7 @@ msgstr "Rövid vaskard"
 
 #: itemlist_weapons.json:ironsword1
 msgid "Iron sword"
-msgstr "Vas kard"
+msgstr "Vaskard"
 
 #: itemlist_weapons.json:ironsword2
 msgid "Iron longsword"
@@ -29923,7 +30105,7 @@ msgstr "Blokkolás kisebb gyűrűje"
 
 #: itemlist_rings.json:ring_block2
 msgid "Polished ring of block"
-msgstr "A blokkolás fényezett gyűrűje"
+msgstr "Blokkolás fényezett gyűrűje"
 
 #: itemlist_rings.json:ring_atkch1
 msgid "Ring of surehit"
@@ -30023,7 +30205,7 @@ msgstr "Retek"
 
 #: itemlist_food.json:chaotic_penalty
 msgid "Chaotic Penalty"
-msgstr ""
+msgstr "Kaotikus büntetés"
 
 #: itemlist_potions.json:vial_empty1
 msgid "Small empty vial"
@@ -30137,7 +30319,7 @@ msgstr "Calomyran titkai"
 
 #: itemlist_quest.json:heartstone
 msgid "Heartstone"
-msgstr ""
+msgstr "Szívkő"
 
 #: itemlist_quest.json:vacor_spell
 msgid "Piece of Vacor's spell"
@@ -30261,7 +30443,7 @@ msgstr "Árny átölelésének gyűrűje"
 
 #: itemlist_v069.json:bwm_dagger
 msgid "Blackwater dagger"
-msgstr ""
+msgstr "Blackwateri tőr"
 
 #: itemlist_v069.json:bwm_dagger_venom
 msgid "Blackwater poisoned dagger"
@@ -30269,7 +30451,7 @@ msgstr ""
 
 #: itemlist_v069.json:bwm_ironsword
 msgid "Blackwater iron sword"
-msgstr ""
+msgstr "Blackwateri vaskard"
 
 #: itemlist_v069.json:bwm_leather_armour
 msgid "Blackwater leather armour"
@@ -30349,7 +30531,7 @@ msgstr "Harlenn gyűrűje"
 
 #: itemlist_v069_2.json:rusted_iron_sword
 msgid "Rusted iron sword"
-msgstr ""
+msgstr "Rozsdás vaskard"
 
 #: itemlist_v069_2.json:broken_buckler
 msgid "Broken wooden buckler"
@@ -30365,7 +30547,7 @@ msgstr "Az Árny papjainak tőre"
 
 #: itemlist_v0610_1.json:sword_hard_iron
 msgid "Hardened iron sword"
-msgstr ""
+msgstr "Megerősített vaskard"
 
 #: itemlist_v0610_1.json:club_fine_wooden
 msgid "Fine wooden club"
@@ -30833,7 +31015,7 @@ msgstr "Bári verekedők csizmája"
 
 #: itemlist_v0611_1.json:marrowtaint
 msgid "Marrowtaint"
-msgstr ""
+msgstr "Velőfertőzés"
 
 #: itemlist_v0611_1.json:valugha_gown
 msgid "Silk robe of Valugha"
@@ -31210,7 +31392,7 @@ msgstr "Kisebb erősség ital"
 
 #: itemlist_v070.json:redfthair
 msgid "Redfoot beast hair"
-msgstr ""
+msgstr "Vörös lábú bestia haj"
 
 #: itemlist_v070.json:junk_necklace0
 msgid "Mundane necklace"
@@ -31404,7 +31586,7 @@ msgstr ""
 #: itemlist_trader_teksin.json:ring_dmg_resist
 #: itemlist_stoutford_combined.json:ring_dr1
 msgid "Ring of damage resistance"
-msgstr ""
+msgstr "Sebzésellenállás gyűrűje"
 
 #: itemlist_graveyard1.json:tunic_old
 msgid "Old tunic"
@@ -31416,15 +31598,15 @@ msgstr ""
 
 #: itemlist_guynmart.json:guynmart_wine
 msgid "Wine"
-msgstr ""
+msgstr "Bor"
 
 #: itemlist_guynmart.json:guynmart_herbs
 msgid "Hannah's special herbs"
-msgstr ""
+msgstr "Hannah különleges gyógynövényei"
 
 #: itemlist_guynmart.json:guynmart_lunch
 msgid "Hannah's lunch"
-msgstr ""
+msgstr "Hannah ebédje"
 
 #: itemlist_guynmart.json:ring_shadow1
 msgid "Ring of far lesser Shadow"
@@ -31436,7 +31618,7 @@ msgstr ""
 
 #: itemlist_guynmart.json:guynmart_rose
 msgid "Rose"
-msgstr ""
+msgstr "Rózsa"
 
 #: itemlist_guynmart.json:guynmart_rose:description
 msgid "Perpetual fragrance flows around this queen of flowers."
@@ -31444,7 +31626,7 @@ msgstr ""
 
 #: itemlist_guynmart.json:guynmart_flute
 msgid "Lovis' Flute"
-msgstr ""
+msgstr "Lovis furulyája"
 
 #: itemlist_guynmart.json:guynmart_bonering
 msgid "Old man's ring of bone"
@@ -31476,55 +31658,57 @@ msgstr ""
 
 #: itemlist_trader_teksin.json:bwm_boots
 msgid "Blackwater boots"
-msgstr ""
+msgstr "Blackwateri csizma"
 
 #: itemlist_trader_teksin.json:cured_ham
 msgid "Cured ham"
-msgstr ""
+msgstr "Pácolt sonka"
 
 #: itemlist_trader_teksin.json:cured_ham:description
 msgid "Tasty and long lasting!"
-msgstr ""
+msgstr "Ízletes és hosszan eltartható!"
 
 #: itemlist_trader_teksin.json:pot_light_attack
 msgid "Potion of lightning attack"
-msgstr ""
+msgstr "Villámcsapás itala"
 
 #: itemlist_trader_teksin.json:boots_combat3
 msgid "Superior combat boots"
-msgstr ""
+msgstr "Kiváló harci csizma"
 
 #: itemlist_trader_teksin.json:ring_dexterity
 msgid "Ring of dexterity"
-msgstr ""
+msgstr "Az ügyesség gyűrűje"
 
 #: itemlist_trader_teksin.json:bwm_gloves
 msgid "Blackwater gloves"
-msgstr ""
+msgstr "Blackwateri kesztyű"
 
 #: itemlist_stoutford_combined.json:ferm-garlic
 msgid "Fermented garlic"
-msgstr ""
+msgstr "Erjesztett fokhagyma"
 
 #: itemlist_stoutford_combined.json:ferm-garlic:description
 msgid "Hopefully this tastes better than it smells!"
-msgstr ""
+msgstr "Remélhetőleg jobb az íze mint a szaga!"
 
 #: itemlist_stoutford_combined.json:smoked-sausage
 msgid "Smoked sausage"
-msgstr ""
+msgstr "Füstölt kolbász"
 
 #: itemlist_stoutford_combined.json:smoked-sausage:description
 msgid "It smells... smokey."
-msgstr ""
+msgstr "Az illata… füstös."
 
 #: itemlist_stoutford_combined.json:pickled-cabbage
 msgid "Pickled cabbage"
-msgstr ""
+msgstr "Savanyú káposzta"
 
 #: itemlist_stoutford_combined.json:pickled-cabbage:description
 msgid "The label on the jar looks old and faded. When was this made?"
 msgstr ""
+"Az üvegen lévő címke réginek és elhalványultnak látszik. Mikor készítették "
+"ezt?"
 
 #: itemlist_stoutford_combined.json:shortsword2
 msgid "Steel shortsword"
@@ -31532,56 +31716,56 @@ msgstr ""
 
 #: itemlist_stoutford_combined.json:morn_bronze
 msgid "Bronze morningstar"
-msgstr ""
+msgstr "Bronz hajnalcsillag"
 
 #: itemlist_stoutford_combined.json:morn_iron
 msgid "Iron morningstar"
-msgstr ""
+msgstr "Vas hajnalcsillag"
 
 #: itemlist_stoutford_combined.json:whip_leather
 msgid "Leather whip"
-msgstr ""
+msgstr "Bőr ostor"
 
 #: itemlist_stoutford_combined.json:stiletto
 msgid "Stiletto"
-msgstr ""
+msgstr "Gyilok"
 
 #: itemlist_stoutford_combined.json:scythe:description
 #: itemlist_stoutford_combined.json:scythe_rusty:description
 msgid "This looks more suited to farming than fighting"
-msgstr ""
+msgstr "Úgy néz ki, jobban illik földműveléshez mint harcoláshoz"
 
 #: itemlist_stoutford_combined.json:scythe_rusty
 msgid "Rusty scythe"
-msgstr ""
+msgstr "Rozsdás kasza"
 
 #: itemlist_stoutford_combined.json:cheese_blue
 msgid "Blue cheese"
-msgstr ""
+msgstr "Kék sajt"
 
 #: itemlist_stoutford_combined.json:cheese_blue:description
 msgid "It looks like moldy cheese."
-msgstr ""
+msgstr "Úgy néz ki mint a penészes sajt."
 
 #: itemlist_stoutford_combined.json:flail_iron
 msgid "Iron flail"
-msgstr ""
+msgstr "Vas cséphadaró"
 
 #: itemlist_stoutford_combined.json:milk_goat
 msgid "Goat milk"
-msgstr ""
+msgstr "Kecsketej"
 
 #: itemlist_stoutford_combined.json:ring_dr2
 msgid "Polished ring of damage resistance"
-msgstr ""
+msgstr "Sebzésellenállás fényezett gyűrűje"
 
 #: itemlist_stoutford_combined.json:necklace_lifesteal
 msgid "Necklace of lifesteal"
-msgstr ""
+msgstr "Az életlopás nyaklánca"
 
 #: itemlist_stoutford_combined.json:necklace_protector2
 msgid "Superior necklace of the protector"
-msgstr ""
+msgstr "A védnök kiváló nyaklánca"
 
 #: itemlist_stoutford_combined.json:shield_leather
 msgid "Reinforced leather buckler"
@@ -31589,15 +31773,15 @@ msgstr ""
 
 #: itemlist_stoutford_combined.json:shield_iron1
 msgid "Crude iron shield"
-msgstr ""
+msgstr "Nyers vaspajzs"
 
 #: itemlist_stoutford_combined.json:shield_iron2
 msgid "Iron shield"
-msgstr ""
+msgstr "Vaspajzs"
 
 #: itemlist_stoutford_combined.json:shield_iron3
 msgid "Superior iron shield"
-msgstr ""
+msgstr "Kiváló vaspajzs"
 
 #: itemlist_stoutford_combined.json:shield_blk_defender
 msgid "Black defender"
@@ -31746,7 +31930,7 @@ msgstr ""
 
 #: itemlist_stoutford_combined.json:soap
 msgid "Soap"
-msgstr ""
+msgstr "Szappan"
 
 #: itemlist_stoutford_combined.json:erwyn_ring
 msgid "Lord Erwyn's ring"
@@ -31762,7 +31946,7 @@ msgstr ""
 
 #: itemlist_stoutford_combined.json:lutarc_medallion
 msgid "Lutarc's medallion"
-msgstr ""
+msgstr "Lutarc medálionja"
 
 #: monsterlist_crossglen_animals.json:tiny_rat
 msgid "Tiny rat"
@@ -31837,11 +32021,11 @@ msgstr "Sárkánygyík"
 
 #: monsterlist_crossglen_animals.json:snake_servant
 msgid "Snake servant"
-msgstr ""
+msgstr "Kígyószolga"
 
 #: monsterlist_crossglen_animals.json:snake_master
 msgid "Snake master"
-msgstr ""
+msgstr "Kígyómester"
 
 #: monsterlist_crossglen_animals.json:rabid_boar
 msgid "Rabid Boar"
@@ -31873,7 +32057,7 @@ msgstr "Erős minótaurosz"
 
 #: monsterlist_crossglen_animals.json:irogotu
 msgid "Irogotu"
-msgstr ""
+msgstr "Irogotu"
 
 #: monsterlist_crossglen_npcs.json:mikhail
 #: monsterlist_stoutford_combined.json:stn_colonel_mons3
@@ -33541,7 +33725,7 @@ msgstr "Erdei róka"
 
 #: monsterlist_v070_charwood.json:redft0
 msgid "Tough redfoot beast"
-msgstr ""
+msgstr "Szívós vörös lábú bestia"
 
 #: monsterlist_v070_charwood.json:redft1
 msgid "Strong redfoot beast"
@@ -33553,7 +33737,7 @@ msgstr ""
 
 #: monsterlist_v070_charwood.json:redft_cr
 msgid "Vicious redfoot beast"
-msgstr "Gonosz vöröslábú bestia"
+msgstr "Gonosz vörös lábú bestia"
 
 #: monsterlist_v070_charwood.json:ccentip0
 msgid "Carrion centipede"
@@ -36288,7 +36472,7 @@ msgstr ""
 
 #: questlist_v0611_3.json:fiveidols
 msgid "The five idols"
-msgstr ""
+msgstr "Az öt bálvány"
 
 #: questlist_v0611_3.json:fiveidols:10
 msgid "Algangror wants me to help her with a task. She cannot describe the nature of the task, or the reasoning behind it. If I help her, she has promised to give me her enchanted necklace, that apparently is worth a lot."
@@ -36324,47 +36508,56 @@ msgstr ""
 
 #: questlist_v0611_3.json:fiveidols:41
 msgid "I have placed an idol by Jhaeld's bed."
-msgstr ""
+msgstr "Elhelyeztem egy bálványt Jhaeld ágyánál."
 
 #: questlist_v0611_3.json:fiveidols:42
 msgid "I have placed an idol by Larni the farmer's bed."
-msgstr ""
+msgstr "Elhelyeztem egy bálványt Larni, a földműves ágyánál."
 
 #: questlist_v0611_3.json:fiveidols:43
 msgid "I have placed an idol by Arnal's bed."
-msgstr ""
+msgstr "Elhelyeztem egy bálványt Arnal ágyánál."
 
 #: questlist_v0611_3.json:fiveidols:44
 msgid "I have placed an idol by Emerei's bed."
-msgstr ""
+msgstr "Elhelyeztem egy bálványt Emerei ágyánál."
 
 #: questlist_v0611_3.json:fiveidols:45
 msgid "I have placed an idol by Carthe's bed."
-msgstr ""
+msgstr "Elhelyeztem egy bálványt Carthe ágyánál."
 
 #: questlist_v0611_3.json:fiveidols:50
 msgid "All the idols have been placed by the beds of the people that Algangror told me to visit. I should return to Algangror."
 msgstr ""
+"Az összes bálvány el lett helyezve azoknak az embereknek az ágyánál, akiket "
+"Algangror mondta, hogy keressek fel. Vissza kell térnem Algangrorhoz."
 
 #: questlist_v0611_3.json:fiveidols:51
 msgid "Algangror thanked me for helping her."
-msgstr ""
+msgstr "Algangror megköszönte nekem, hogy segítettem neki."
 
 #: questlist_v0611_3.json:fiveidols:60
 msgid "She told me her story, with how she used to live in the city, but was persecuted for her beliefs. According to her, the persecution was totally unjustified since she does no harm to people."
 msgstr ""
+"Elmondta nekem a történetét, hogy korábban hogyan élt a városban, de "
+"üldözték a hite miatt. Szerinte az üldözés teljesen indokolatlan volt, mivel "
+"nem okozott kárt az embereknek."
 
 #: questlist_v0611_3.json:fiveidols:61
 msgid "To take revenge on the city of Remgard, she managed to lure some people into her cabin and turn them into rats."
 msgstr ""
+"Azért, hogy bosszút álljon Remgard városán, sikerült elcsalnia néhány embert "
+"a kunyhójába, és patkánnyá változtatta őket."
 
 #: questlist_v0611_3.json:fiveidols:70
 msgid "For helping her with the tasks that she could not perform herself, Algangror gave me her enchanted necklace, 'Marrowtaint'."
 msgstr ""
+"A segítségért az olyan feladatokban, amiket ő nem tudott egyedül elvégezni, "
+"Algangror nekem adta az elvarázsolt nyakláncát, a „Velőfertőzést”."
 
 #: questlist_v0611_3.json:fiveidols:100
 msgid "I have decided not to help Algangror with her task."
-msgstr ""
+msgstr "Úgy döntöttem, hogy nem segítek Algangrornak a feladatában."
 
 #: questlist_v0611_3.json:kaverin
 msgid "Old friends?"
@@ -37737,4 +37930,3 @@ msgstr ""
 #: worldmap.xml:world1:guynmart_area
 msgid "Guynmart Castle"
 msgstr ""
-
