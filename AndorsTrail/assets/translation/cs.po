@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: andors-trail\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-11-10 11:48+0000\n"
-"PO-Revision-Date: 2018-09-06 13:15+0000\n"
+"PO-Revision-Date: 2018-09-14 05:15+0000\n"
 "Last-Translator: Jiri Zizkin Zizka <web@zizkin.com>\n"
 "Language-Team: Czech <https://hosted.weblate.org/projects/andors-trail/"
 "game-content/cs/>\n"
@@ -106,7 +106,7 @@ msgstr "Otrava Irdegem"
 
 #: actorconditions_v0611_2.json:rotworm
 msgid "Kazaul rotworms"
-msgstr "Kazaulí hnijočerv"
+msgstr "Kazaulí larvy"
 
 #: actorconditions_v0611_2.json:shadowbless_str
 msgid "Blessing of Shadow strength"
@@ -138,7 +138,7 @@ msgstr "Bezvědomí"
 
 #: actorconditions_v0612_2.json:food
 msgid "Sustenance"
-msgstr "Jídlo"
+msgstr "Výživa"
 
 #: actorconditions_v0612_2.json:foodp
 msgid "Food-poisoning"
@@ -278,7 +278,7 @@ msgstr "Zamlžení mysli"
 
 #: conversationlist_mikhail.json:mikhail_gamestart
 msgid "Oh good, you are awake."
-msgstr "Ó, jak je dobře, že jsi vzhůru."
+msgstr "Ó, to je dobře, že jsi vzhůru."
 
 #: conversationlist_mikhail.json:mikhail_visited
 msgid "I can't seem to find your brother Andor anywhere. He hasn't been back since he left yesterday."
@@ -286,13 +286,13 @@ msgstr "Nemůžu najít tvého bratra Andora. Nevíš, kde by mohl být? Včera 
 
 #: conversationlist_mikhail.json:mikhail3
 msgid "Never mind, he will probably be back soon."
-msgstr "Nu což, snad se brzy vrátí."
+msgstr "Tož nevadí, jistě se brzy vrátí."
 
 #: conversationlist_mikhail.json:mikhail_default
 #: conversationlist_crossglen_leonid.json:leonid_continue
 #: conversationlist_umar.json:umar_return_2
 msgid "Anything else I can help you with?"
-msgstr "Mohu ti s něčím pomoct?"
+msgstr "S čím ti mohu pomoct?"
 
 #: conversationlist_mikhail.json:mikhail_default:0
 #: conversationlist_mikhail.json:mikhail_default:1
@@ -306,21 +306,23 @@ msgstr "Máš pro mě nějakou práci?"
 
 #: conversationlist_mikhail.json:mikhail_default:4
 msgid "Is there anything else you can tell me about Andor?"
-msgstr "Můžeš mi říct něco víc o Andorovi?"
+msgstr "Je ještě něco dalšího, co mi o Andorovi můžeš říct?"
 
 #: conversationlist_mikhail.json:mikhail_tasks
 msgid "Oh yes, there were some things I need help with, bread and rats. Which one would you like to talk about?"
-msgstr "Ó, ano. Mám dvě věci, se kterými potřebuji pomoci, chléb a krysy. O které z nich by jsi chtěl mluvit?"
+msgstr ""
+"Ó, ano. Mám dvě věci, se kterými potřebuji pomoci: chleba a krysy. Která z "
+"nich tě zajímá?"
 
 #: conversationlist_mikhail.json:mikhail_tasks:0
 #: conversationlist_mikhail.json:mikhail_rats_done:0
 msgid "What about the bread?"
-msgstr "Co je s chlebem?"
+msgstr "Můžeš mi říct víc o tom chlebu?"
 
 #: conversationlist_mikhail.json:mikhail_tasks:1
 #: conversationlist_mikhail.json:mikhail_bread_done:0
 msgid "What about the rats?"
-msgstr "O co jde s těmi krysami?"
+msgstr "Můžeš mi říct víc o těch krysách?"
 
 #: conversationlist_mikhail.json:mikhail_tasks:2
 #: conversationlist_mikhail.json:mikhail_bread_done:1
@@ -331,31 +333,38 @@ msgstr "Raději mluvme o něčem jiném."
 
 #: conversationlist_mikhail.json:mikhail_bread_done
 msgid "Thanks for getting me the bread. There are still the rats."
-msgstr "Děkuji za přinešení chleba. Ještě tu jsou ty krysy."
+msgstr "Děkuji za ten chleba. Ještě tu jsou ty krysy."
 
 #: conversationlist_mikhail.json:mikhail_rats_done
 msgid "Thanks for taking care of the rats. I'd still love some bread."
-msgstr "Děkuji za odstranění krys. Stále bych rád ten chléb."
+msgstr "Děkuji za ty krysy. Ještě je tu ten chleba."
 
 #: conversationlist_mikhail.json:mikhail_all_tasks_done
 msgid "Not for now. Thanks for taking care of the bread and rats."
-msgstr "Nyní ne. Děkuji za přinešení chleba a zbavení se krys."
+msgstr "Zatím ne. Děkuji za ten chleba i za ty krysy."
 
 #: conversationlist_mikhail.json:mikhail_andor1
 msgid "As I said, Andor went out yesterday and hasn't been back since. I'm starting to worry about him. Please go look for your brother, he said he would only be out a short while."
-msgstr "Jak jsem řekl, Andor odešel včera a zatím se nevrátil. Začínám si o něj dělat starost. Prosím jdi a poohlídni se po svém bratrovi. Říkal, že bude venku pouze chvilku."
+msgstr ""
+"Jak jsem již řekl, Andor odešel včera a zatím se nevrátil. Začínám si o něj "
+"dělat starost. Prosím jdi a poohlídni se po něm. Říkal, že bude venku pouze "
+"chvilku."
 
 #: conversationlist_mikhail.json:mikhail_andor2
 msgid "Maybe he went into that supply cave again and got stuck. Or maybe he's in Leta's basement training with that wooden sword again. Please go look for him in town."
-msgstr "Možná šel do jeskyně se zásobami a uvízl v ní. Nebo možná opět trénoval s jeho dřevěným mečem ve sklepě u Lety. Prosím podívej se po něm ve vesnici."
+msgstr ""
+"Možná šel do jeskyně se zásobami a uvízl v ní. Nebo možná opět trénoval se "
+"svým dřevěným mečem ve sklepě u Lety. Prosím podívej se po něm ve vesnici."
 
 #: conversationlist_mikhail.json:mikhail_bread_start
 msgid "Oh, I almost forgot. If you have time, please go see Mara at the town hall and buy me some more bread."
-msgstr "Ó, málem jsem zapoměl. Pokud máš čas, prosím zajdi k Máře v obecním domě a kup chléb."
+msgstr ""
+"Ó, málem jsem zapoměl. Pokud máš čas, prosím zajdi do obecního domu za Márou "
+"a kup chléb."
 
 #: conversationlist_mikhail.json:mikhail_bread_continue
 msgid "Did you get my bread from Mara at the town hall yet?"
-msgstr "Už jsi obstaral ten chléb od Máry?"
+msgstr "Už jsi v obecním domě u Máry obstaral ten chleba?"
 
 #: conversationlist_mikhail.json:mikhail_bread_continue:0
 msgid "Yes, here you go."
@@ -384,11 +393,13 @@ msgstr "Ne, ještě ne."
 
 #: conversationlist_mikhail.json:mikhail_bread_complete
 msgid "Thanks a lot, now I can make my breakfast. Here, take these coins for your help."
-msgstr "Děkuji pěkně, konečně se mohu nasnídat. Zde, vem si tyto mince za tvou pomoc."
+msgstr ""
+"Děkuji pěkně, konečně se mohu nasnídat. Zde, vezmi si tyto mince jako odměnu "
+"za tvou pomoc."
 
 #: conversationlist_mikhail.json:mikhail_bread_complete2
 msgid "Thanks for the bread earlier."
-msgstr "Děkuji za přinešení chleba."
+msgstr "Děkuji za ten chleba."
 
 #: conversationlist_mikhail.json:mikhail_bread_complete2:0
 #: conversationlist_charwood1.json:khorailla1:2
@@ -413,19 +424,25 @@ msgstr "Dobrá, půjdu se na ty krysy do zahrady podívat."
 
 #: conversationlist_mikhail.json:mikhail_rats_start2
 msgid "If you get hurt by the rats, come back here and rest in your bed. That way you can regain your strength."
-msgstr "Pokud by tě ty krysy zranily, přijď zpět domů a odpočiň si v posteli. To ti vrátí síly."
+msgstr ""
+"Pokud by tě ty krysy zranily, přijď zpět domů a odpočiň si ve své posteli. "
+"To ti vrátí síly."
 
 #: conversationlist_mikhail.json:mikhail_rats_start3
 msgid "Also, don't forget to check your inventory. You probably still have that old ring I gave you. Make sure you wear it."
-msgstr "A také se nezapomeň podívat do svého inventáře. Nejspíš v něm najdeš ten starý prsten, který jsem ti dal. Ten by sis měl nasadit."
+msgstr ""
+"A také se nezapomeň podívat do inventáře. Nejspíš v něm najdeš ten starý "
+"prsten, který jsem ti dal. Měl by sis ho nasadit."
 
 #: conversationlist_mikhail.json:mikhail_rats_start3:0
 msgid "Ok, I understand. I can rest here if I get hurt, and I should check my inventory for useful items."
-msgstr "Dobrá, rozumím. Zde si můžu odpočinout, když bude zraněn. A také bych měl zkontrolovat svůj invetnář, zda v něm naleznu nějakou užitečnou výbavu."
+msgstr ""
+"Dobrá, rozumím. Zde si můžu odpočinout, když budu zraněn. A také bych měl "
+"zkontrolovat svůj inventář, zda v něm není nějaká užitečná výbava."
 
 #: conversationlist_mikhail.json:mikhail_rats_continue
 msgid "Did you kill those two rats in our garden?"
-msgstr "Už jsi se zbavil obou krys na naší zahradě?"
+msgstr "Už jsi se zastavil ty dvě krysy na naší zahradě?"
 
 #: conversationlist_mikhail.json:mikhail_rats_continue:0
 msgid "Yes, I have dealt with the rats now."
@@ -439,7 +456,8 @@ msgid ""
 msgstr ""
 "Skutečně? Ó, děkuji moc za tvojí pomoc!\n"
 "\n"
-"Mysli na to, že když budeš zraněný, můžeš kdykoliv nabrat nové síly v tvé posteli."
+"Mysli na to, že když budeš zraněný, můžeš kdykoliv nabrat nové síly ve své "
+"posteli."
 
 #: conversationlist_mikhail.json:mikhail_rats_complete2
 msgid ""
@@ -447,17 +465,23 @@ msgid ""
 "\n"
 "If you are hurt, use your bed over there to rest and regain your strength."
 msgstr ""
-"Děkuji moc za tvojí pomoc s krysami!\n"
+"Děkuji za tvojí pomoc s krysami!\n"
 "\n"
-"Mysli na to, že když budeš zraněný, můžeš kdykoliv nabrat nové síly v tvé posteli."
+"Mysli na to, že když budeš zraněný, můžeš kdykoliv nabrat nové síly ve své "
+"posteli."
 
 #: conversationlist_mikhail_foodpoison.json:mikhail_rats_start2a
 msgid "Another way to regain your strength is to eat some food.  You can buy some for yourself from Mara at the town hall. But watch out - I hear that raw meat can sometimes give you food poisoning."
-msgstr "Další způsob, jak se nabýt nové síly je sníst nějaké jídlo.  Nějaké jídlo si můžeš koupit u Máry v obecním domě. Ale poroz - slyšel jsem, že syrové maso ti může způsobit otravu."
+msgstr ""
+"Dalším způsobem, jak nabýt nové síly, je sníst nějaké jídlo.  To si můžeš "
+"koupit u Máry v obecním domě. Ale pozor - slyšel jsem, že syrové maso tě "
+"může otrávit."
 
 #: conversationlist_mikhail_foodpoison.json:mikhail_rats_start2b
 msgid "If that happens, perhaps the town priest can do something to help you.  Otherwise, just rest until you feel better."
-msgstr "Pokud se to stane, možná ti s tím pomůže vesnický kněz.  Nebo můžeš prostě odpočívat tak dlouho, než otrava odezní."
+msgstr ""
+"Pokud se to stane, možná ti s tím pomůže náš vesnický kněz.  Nebo můžeš "
+"prostě odpočívat tak dlouho, než otrava odezní."
 
 #: conversationlist_mikhail_foodpoison.json:mikhail_rats_start2c
 msgid "Me, I can't really afford the meat, so I just stick to my bread!"
@@ -551,7 +575,7 @@ msgstr ""
 "Pít, pít, pít až nevidíš nic.\n"
 "\n"
 "\n"
-"Ahoj, dítě! Chceš se připojit k naší pijácké hře?"
+"Nazdar, děcko! Chceš se připojit k naší pijácké hře?"
 
 #: conversationlist_crossglen.json:drunk1:0
 #: conversationlist_fallhaven_tavern.json:bela_room_1:1
@@ -572,18 +596,23 @@ msgid ""
 "\n"
 "Want something to eat?"
 msgstr ""
+"Nevšímej si těch opilců, jsou s nimi jen potíže.\n"
+"\n"
+"Chceš něco k jídlu?"
 
 #: conversationlist_crossglen.json:mara_thanks
 msgid "I heard you helped Odair clean out that old supply cave. Thanks a lot, we'll start using it soon."
 msgstr ""
+"Doneslo se mi o tvé pomoci s vyčištěním naší staré skladovací jeskyně. Mnohé "
+"díky, brzy ji začneme opět využívat."
 
 #: conversationlist_crossglen.json:mara_thanks:0
 msgid "It was my pleasure."
-msgstr ""
+msgstr "Bylo mi potěšením."
 
 #: conversationlist_crossglen.json:farm1
 msgid "Please do not disturb me, I have work to do."
-msgstr ""
+msgstr "Prosím, nevyrušuj mě, mám spoustu práce, kterou musím udělat."
 
 #: conversationlist_crossglen.json:farm1:0
 #: conversationlist_crossglen.json:farm2:0
@@ -599,15 +628,15 @@ msgstr ""
 #: conversationlist_stoutford.json:stoutford_gateguard_0:2
 #: conversationlist_stoutford.json:kayla_1:1
 msgid "Have you seen my brother Andor?"
-msgstr ""
+msgstr "Byl tu můj bratr Andor?"
 
 #: conversationlist_crossglen.json:farm2
 msgid "What?! Can't you see I'm busy? Go bother someone else."
-msgstr ""
+msgstr "Cože!? Copak nevidíš, že mám práci? Jdi otravovat někoho jiného."
 
 #: conversationlist_crossglen.json:farm_andor
 msgid "Andor? No, I haven't seen him around lately."
-msgstr ""
+msgstr "Andor? Ne, toho jsem zde poslední dobou neviděl."
 
 #: conversationlist_crossglen.json:snakemaster
 msgid ""
@@ -615,33 +644,37 @@ msgid ""
 "\n"
 "Now prepare to die, puny creature."
 msgstr ""
+"Ale ale, co to tu máme? Návštěvu, to je milé. Dělá na mě dojem, že jsi se "
+"probojovalo přes všechny mé sluhy, dítě.\n"
+"\n"
+"Teď se ale připrav na smrt, malý tvore."
 
 #: conversationlist_crossglen.json:snakemaster:0
 msgid "Great, I have been waiting for a fight!"
-msgstr ""
+msgstr "Skvělé, už dlouho jsem čekal na pořádný souboj!"
 
 #: conversationlist_crossglen.json:snakemaster:1
 msgid "Let's see who dies here."
-msgstr ""
+msgstr "Uvidíme, kdo tu dnes umře."
 
 #: conversationlist_crossglen.json:snakemaster:2
 #: conversationlist_maelveon.json:maelveon_5:2
 #: conversationlist_loneford_2.json:landa_6
 #: conversationlist_lodarfg4.json:lodar_fg4_7:1
 msgid "Please don't hurt me!"
-msgstr ""
+msgstr "Prosím, neubližuj mi!"
 
 #: conversationlist_crossglen.json:haunt
 msgid "Oh mortal, free me from this cursed world!"
-msgstr ""
+msgstr "Smrtelníku, vysvoboď mě z tohoto prokletého světa!"
 
 #: conversationlist_crossglen.json:haunt:0
 msgid "Oh, I'll free you from it alright."
-msgstr ""
+msgstr "Jasně, že tě vysvobodím."
 
 #: conversationlist_crossglen.json:haunt:1
 msgid "You mean, by killing you?"
-msgstr ""
+msgstr "Myslíš tím, že tě mám zabít?"
 
 #: conversationlist_crossglen_gruil.json:gruil1
 msgid ""
@@ -649,46 +682,58 @@ msgid ""
 "\n"
 "Wanna trade?"
 msgstr ""
+"Psst, ahoj.\n"
+"\n"
+"Chceš obchodovat?"
 
 #: conversationlist_crossglen_gruil.json:gruil1:0
 msgid "Sure, let's trade."
-msgstr ""
+msgstr "Jasně, ukaž mi co nabízíš."
 
 #: conversationlist_crossglen_gruil.json:gruil1:1
 msgid "I heard that you talked to my brother a while ago."
-msgstr ""
+msgstr "Prý jsi před nedávnem mluvil s mým bratrem."
 
 #: conversationlist_crossglen_gruil.json:gruil2
 msgid "Your brother? Oh you mean Andor? I might know something, but that information will cost you. Bring me a poison gland from one of those poisonous snakes and maybe I'll tell you."
 msgstr ""
+"S tvým bratrem? Aha, myslíš s Andorem? No, možná o něm něco vím, ale neřeknu "
+"to zadarmo. Dones mi jednu jedovou žlázu z jedovatého hada a možná tio něm "
+"něco řeknu."
 
 #: conversationlist_crossglen_gruil.json:gruil2:0
 msgid "Here, I have a poison gland for you."
-msgstr ""
+msgstr "Zde je ta jedová žláza."
 
 #: conversationlist_crossglen_gruil.json:gruil2:1
 msgid "Ok, I'll bring one."
-msgstr ""
+msgstr "Ok, jednu ti přinesu."
 
 #: conversationlist_crossglen_gruil.json:gruil_complete
 msgid "Thanks a lot kid. This will do just fine."
-msgstr ""
+msgstr "Díky, dítě. To mi stačí."
 
 #: conversationlist_crossglen_gruil.json:gruil_return
 msgid "Look kid, I already told you."
-msgstr ""
+msgstr "Podívej dítě, už jsem to řekl vše, co vím."
 
 #: conversationlist_crossglen_gruil.json:gruil_andor1
 msgid "I talked to him yesterday. He asked if I knew someone called Umar or something like that. I have no idea who he was talking about."
 msgstr ""
+"Mluvil jsem s ním včera. Ptal se mě, jestli znám někoho jménem Umar nebo tak "
+"nějak. Nemám ponětí, o kom to mluvil."
 
 #: conversationlist_crossglen_gruil.json:gruil_andor2
 msgid "He seemed really upset about something and left in a hurry. Something about the Thieves' Guild in Fallhaven."
 msgstr ""
+"Vypadal, že ho něco naštvalo a urychleně odešel. Něco o Zlodějském cechu ve "
+"Fallhavenu."
 
 #: conversationlist_crossglen_gruil.json:gruil_andor3
 msgid "That's all I know. Maybe you should ask around in Fallhaven. Look for my friend Gaela, he probably knows more."
 msgstr ""
+"To je vše, co vím. Pokud chceš, tak se poptej ve Fallhavenu. Zkus najít mého "
+"přítele Gaelu, možná bude vědět víc."
 
 #: conversationlist_crossglen_gruil.json:gruil_andor3:0
 #: conversationlist_fallhaven_tavern.json:bela_room_2:1
@@ -696,7 +741,7 @@ msgstr ""
 #: conversationlist_flagstone.json:flagstone_sentry_42:0
 #: conversationlist_vilegard_villagers.json:vilegard_villager_friend_1:0
 msgid "Thanks, bye."
-msgstr ""
+msgstr "Díky, na shledanou."
 
 #: conversationlist_crossglen_leonid.json:leonid1
 msgid ""
@@ -704,60 +749,77 @@ msgid ""
 "\n"
 "I'm Leonid, steward of Crossglen village."
 msgstr ""
+"Ahoj, robě. Ty jsi Mikhailovo dítě, že? A máš ještě bratra.\n"
+"\n"
+"Jsem Leonid, správce Crossglenu."
 
 #: conversationlist_crossglen_leonid.json:leonid1:1
 #: conversationlist_crossglen_leonid.json:leonid_continue:1
 msgid "What can you tell me about Crossglen?"
-msgstr ""
+msgstr "Co mi můžeš říct o Crossglenu?"
 
 #: conversationlist_crossglen_leonid.json:leonid1:2
 #: conversationlist_crossglen_leonid.json:leonid_continue:2
 msgid "Never mind, see you later."
-msgstr ""
+msgstr "Zapomeň na to, na viděnou."
 
 #: conversationlist_crossglen_leonid.json:leonid_andor
 msgid "Your brother? No, I haven't seen him here today. I think I saw him in here yesterday talking to Gruil. Maybe he knows more?"
 msgstr ""
+"Tvůj bratr? Ne, dnes jsem jej tu neviděl. Myslím, že jsem ho ale viděl "
+"včera, jak mluví s Gruilem. Zkus se ho zeptat, možná ti toho řekne víc?"
 
 #: conversationlist_crossglen_leonid.json:leonid_andor:0
 msgid "Thanks, I'll go talk to Gruil. There was something more I wanted to talk about."
-msgstr ""
+msgstr "Děkuji, promluvím s Gruilem. Nejdřív bych ale rád mluvil o něčem jiném."
 
 #: conversationlist_crossglen_leonid.json:leonid_andor:1
 msgid "Thanks, I'll go talk to Gruil."
-msgstr ""
+msgstr "Děkuji, promluvím s Gruilem."
 
 #: conversationlist_crossglen_leonid.json:leonid_crossglen
 msgid "As you know, this is Crossglen village. Mostly a farming community."
 msgstr ""
+"Jak už víš, tato vesnice se jmenuje Crossglen. Především jsme farmářská "
+"kolonie."
 
 #: conversationlist_crossglen_leonid.json:leonid_crossglen1
 msgid "We have Audir with his smithy to the southwest, Leta and her husband's cabin to the west, this town hall here and your father's cabin to the northwest."
 msgstr ""
+"Máme tu kováře Audira, jehož kovárna je v jihozápadní části. Na západě je "
+"chata patřící Letě a jejímu muži. Na severu má chatu tvůj otec a tato budova "
+"slouží jako Obecní úřad."
 
 #: conversationlist_crossglen_leonid.json:leonid_crossglen2
 msgid "That's pretty much it. We try to live a peaceful life."
-msgstr ""
+msgstr "A to je vše. Snažíme se žít poklidným životem."
 
 #: conversationlist_crossglen_leonid.json:leonid_crossglen2:0
 msgid "Has there been any recent activity in the village?"
-msgstr ""
+msgstr "Stalo se zde ve vesnici poslední dobou něco neobvyklého?"
 
 #: conversationlist_crossglen_leonid.json:leonid_crossglen2:1
 msgid "Let's go back to the other things we talked about."
-msgstr ""
+msgstr "Rozumím. Vraťme se k ostatním věcem."
 
 #: conversationlist_crossglen_leonid.json:leonid_crossglen3
 msgid "There were some recent disturbances some weeks ago that you may have noticed. Some villagers got into a fight over the new decree from Lord Geomyr."
 msgstr ""
+"Před pár týdny tu došlo k drobným výtržnostem, jak jsi asi zaznamenal. "
+"Někteří vesničané se pohádali kvůli novému výnosu Lorda Geomyra."
 
 #: conversationlist_crossglen_leonid.json:leonid_crossglen4
 msgid "Lord Geomyr issued a statement regarding the unlawful use of Bonemeal as healing substance. Some villagers argued that we should oppose Lord Geomyr's word and still use it."
 msgstr ""
+"Lord Geomyr vydal výnos týkající se nezákonného používání kostní moučky jako "
+"léčivé látky. Někteří vesničané tvrdí, že bychom měli odporovat tomuto "
+"výnosu a kostní moučku jako léčivou látku používat."
 
 #: conversationlist_crossglen_leonid.json:leonid_crossglen4_1
 msgid "Tharal, our priest, was particularly upset and suggested we do something about Lord Geomyr."
 msgstr ""
+"Náš kněz, Tharal, byl obzvlášť rozzlobený a navrhoval, že bychom měli něco "
+"proti Lordu Geromyrovi podniknout."
 
 #: conversationlist_crossglen_leonid.json:leonid_crossglen5
 msgid ""
@@ -765,30 +827,39 @@ msgid ""
 "\n"
 "Personally, I haven't decided what my thoughts are."
 msgstr ""
+"Ostraní vesničané tvrdili, že bychom měli dodržovat dekret Lorda Geromyra.\n"
+"\n"
+"Já osobně ještě nejsem rozhodnutý, co si o tom mám myslet."
 
 #: conversationlist_crossglen_leonid.json:leonid_crossglen6
 msgid "On one hand, Lord Geomyr supports Crossglen with a lot of protection. *points to the soldiers in the hall*"
 msgstr ""
+"Na jednu stranu chrání Lord Geromyr Crossglen. *ukazuje prstem na vojáky v "
+"obecním domě*"
 
 #: conversationlist_crossglen_leonid.json:leonid_crossglen7
 msgid "But on the other hand, the tax and the recent changes of what's allowed are really taking a toll on Crossglen."
 msgstr ""
+"Na druhé straně, daně a poslední změny toho, co je a co už není dovoleno, "
+"Crossglenu škodí."
 
 #: conversationlist_crossglen_leonid.json:leonid_crossglen8
 msgid "Someone should go to Castle Geomyr and talk to the steward about our situation here in Crossglen."
 msgstr ""
+"Někdo by se měl vypravit do hradu Geomyru a říct správci o naší situaci zde "
+"v Crossglenu."
 
 #: conversationlist_crossglen_leonid.json:leonid_crossglen9
 msgid "In the meantime, we've banned all use of Bonemeal as a healing substance."
-msgstr ""
+msgstr "Do té doby nemůžeme používat kostní moučku jako léčivou látku."
 
 #: conversationlist_crossglen_leonid.json:leonid_crossglen9:0
 msgid "Thank you for the information. There was something more I wanted to ask you."
-msgstr ""
+msgstr "Díky za informace. Ještě se chci zeptat na něco jiného."
 
 #: conversationlist_crossglen_leonid.json:leonid_crossglen9:1
 msgid "Thank you for the information. Bye."
-msgstr ""
+msgstr "Děkuji za informace. Na shledanou."
 
 #: conversationlist_crossglen_leonid.json:leonid_bye
 #: conversationlist_crossglen_leonid.json:leonid_bye:0
@@ -809,192 +880,232 @@ msgstr ""
 #: conversationlist_stoutford_combined.json:stoutford_widow_12:1
 #: conversationlist_stoutford_combined.json:stoutford_widow_roots30_2:1
 msgid "Shadow be with you."
-msgstr ""
+msgstr "Přítmí s tebou."
 
 #: conversationlist_crossglen_tharal.json:tharal1
 msgid "Walk in the glow of the Shadow, my child."
-msgstr ""
+msgstr "Buď požehnáno Svitem Přítmí, mé dítě."
 
 #: conversationlist_crossglen_tharal.json:tharal1:1
 msgid "What can you tell me about Bonemeal?"
-msgstr ""
+msgstr "Můžeš mi říct něco o kostní moučce?"
 
 #: conversationlist_crossglen_tharal.json:tharal1:2
 #: conversationlist_fallhaven_potions.json:fallhaven_potions:1
 msgid "Do you have anything to help against food-poisoning?"
-msgstr ""
+msgstr "Máš něco na otravu jídlem?"
 
 #: conversationlist_crossglen_tharal.json:tharal_bonemeal1
 msgid "Bonemeal? We shouldn't talk about that. Lord Geomyr issued a decree. It's not allowed anymore."
 msgstr ""
+"Kostní moučka? O té bychom neměli mluvit. Lord Geomyr vydal dekret. Už to "
+"není povolené."
 
 #: conversationlist_crossglen_tharal.json:tharal_bonemeal1:0
 #: conversationlist_prim_arghest.json:arghest_6:1
 #: conversationlist_prim_arghest.json:arghest_7:0
 msgid "Please?"
-msgstr ""
+msgstr "Prosím?"
 
 #: conversationlist_crossglen_tharal.json:tharal_bonemeal2_1
 msgid "No, we really shouldn't talk about that."
-msgstr ""
+msgstr "Ne, skutečně bychom o tom neměli mluvit."
 
 #: conversationlist_crossglen_tharal.json:tharal_bonemeal2_1:0
 msgid "Oh come on."
-msgstr ""
+msgstr "Ale no tak, povídej."
 
 #: conversationlist_crossglen_tharal.json:tharal_bonemeal2
 msgid "Well if you really are that persistent. Bring me 5 insect wings that I can use for making potions and maybe we can talk more."
 msgstr ""
+"Dobrá, když na tom tak trváš. Přines mi 5 hmyzích křídel, která potřebuji na "
+"přípravu lektvarů, a pohovoříme si o tom."
 
 #: conversationlist_crossglen_tharal.json:tharal_bonemeal2:0
 msgid "Here, I have the insect wings."
-msgstr ""
+msgstr "Zde jsou ta hmyzí křídla."
 
 #: conversationlist_crossglen_tharal.json:tharal_bonemeal2:1
 msgid "Ok, I'll bring them."
-msgstr ""
+msgstr "Dobře, přinesu je."
 
 #: conversationlist_crossglen_tharal.json:tharal_bonemeal3
 msgid "Thanks kid. I knew I could count on you."
-msgstr ""
+msgstr "Díky, dítě. Věděl jsem, že se na tebe mužů spolehnout."
 
 #: conversationlist_crossglen_tharal.json:tharal_bonemeal4
 msgid "Oh yes, bonemeal. Mixed with the right components it can be one of the most effective healing agents around."
 msgstr ""
+"Ach ano, kostní moučka. Je to jedna z nejlepších léčivých látek, když se "
+"smíchá se správnými přísadami."
 
 #: conversationlist_crossglen_tharal.json:tharal_bonemeal5
 msgid "We used to use it extensively before. But now that bastard Lord Geomyr has banned all use of it."
 msgstr ""
+"Dříve jsme ji používali často. Ale nyní zakázal ten bastard Lord Geomyr "
+"jakékoliv její použití."
 
 #: conversationlist_crossglen_tharal.json:tharal_bonemeal6
 msgid "How am I supposed to heal people now? Using regular healing potions? Bah, they're so ineffective."
 msgstr ""
+"Jak mám nyní uzdravovat lidi? Pomocí běžných léčivých lektvarů? Tss, ty jsou "
+"tak neúčinné."
 
 #: conversationlist_crossglen_tharal.json:tharal_bonemeal7
 msgid "I know someone that still has a supply of Bonemeal if you are interested. Go talk to Thoronir, a fellow priest in Fallhaven. Tell him my password 'Glow of the Shadow'."
 msgstr ""
+"Znám někoho, kdo má zásobu kostní moučky, pokud tě to zajímá. Zajdi do "
+"Fallhavenu a promluv s Thoronirem, knězem Přítmí. Řekni mu mé tajné heslo: "
+"'Svit Přítmí'."
 
 #: conversationlist_crossglen_tharal.json:tharal_antifoodp1
 msgid "No, sorry. I hear that the potion-maker in Fallhaven can create something to help against that though."
 msgstr ""
+"Je mi líto, nemám. Slyšel jsem ale, že alchymista ve Fallhavenu umí proti "
+"otravě jídlem připravit lektvar."
 
 #: conversationlist_crossglen_tharal.json:tharal_antifoodp2
 msgid "You should go see him and ask if he has anything to help against that. He can probably help you."
 msgstr ""
+"Zajdi se za ním podívat a zeptej se, jestli proti té otravě něco má. Asi ti "
+"bude umět pomoci."
 
 #: conversationlist_crossglen_tharal.json:tharal_antifoodp2:0
 #: conversationlist_fallhaven_unnmir.json:unnmir_13:0
 msgid "Thanks, I'll go see him."
-msgstr ""
+msgstr "Děkuji, zajdu za ním."
 
 #: conversationlist_crossglen_leta.json:leta1
 msgid "Hey, this is my house, get out of here!"
-msgstr ""
+msgstr "Hej, to je můj dům. Vypadni odsud!"
 
 #: conversationlist_crossglen_leta.json:leta1:0
 msgid "But I was just..."
-msgstr ""
+msgstr "Ale já jen..."
 
 #: conversationlist_crossglen_leta.json:leta1:1
 #: conversationlist_crossglen_leta.json:leta2:0
 msgid "What about your husband Oromir?"
-msgstr ""
+msgstr "Co je s tvým mužem Oromirem?"
 
 #: conversationlist_crossglen_leta.json:leta2
 msgid "Beat it kid, get out of my house!"
-msgstr ""
+msgstr "Zmiz, vypadni z mého domu!"
 
 #: conversationlist_crossglen_leta.json:leta_oromir1
 msgid ""
 "Do you know anything about my husband? He should be here helping me with the farm today, but he seems to be missing as usual.\n"
 "Sigh."
 msgstr ""
+"Víš něco o mém muži? Měl mi tu dnes pomáhat na statku, ale jako obvykle se "
+"někam zašil.\n"
+"[Vzdychá]."
 
 #: conversationlist_crossglen_leta.json:leta_oromir1:0
 #: conversationlist_rogorn.json:rogorn_story_6:3
 #: conversationlist_rogorn.json:rogorn_story_7:4
 msgid "I have no idea."
-msgstr ""
+msgstr "Nemám tušení."
 
 #: conversationlist_crossglen_leta.json:leta_oromir1:1
 msgid "Yes, I found him. He is hiding among some trees to the east."
-msgstr ""
+msgstr "Ano, vím kde je. Schovává se mezi stromy na východě."
 
 #: conversationlist_crossglen_leta.json:leta_oromir2
 msgid ""
 "If you see him, tell him to hurry back here and help me with the housework.\n"
 "Now get out of here!"
 msgstr ""
+"Pokud ho uvidíš, řekni mu, ať se rychle vrátí domů a pomůže mi s domácími "
+"pracemi.\n"
+"A teď už pryč odtud!"
 
 #: conversationlist_crossglen_leta.json:leta_oromir_complete
 msgid ""
 "Hiding is he? That's not surprising. I'll go let him know who's the boss around here.\n"
 "Thanks for letting me know though."
 msgstr ""
+"Schovává se? To mě nepřekvapuje. Já už mu ukážu, kdo je tady pánem.\n"
+"Dík, žes mi dalo vědět, páže."
 
 #: conversationlist_crossglen_leta.json:leta_oromir_complete2
 msgid "Thanks for telling me about Oromir earlier. I will go get him in just a minute."
-msgstr ""
+msgstr "Ještě jednou dík za zprávu o Oromirovi. Za minutu si pro něj dojdu."
 
 #: conversationlist_crossglen_leta.json:oromir1
 msgid ""
 "Oh you startled me.\n"
 "Hello."
 msgstr ""
+"Ph, co mě děsíš!\n"
+"Ahoj."
 
 #: conversationlist_crossglen_leta.json:oromir1:0
 msgid "Hello"
-msgstr ""
+msgstr "Ahoj"
 
 #: conversationlist_crossglen_leta.json:oromir2
 msgid "I'm hiding here from my wife Leta. She is always getting angry at me for not helping out on the farm. Please don't tell her that I'm here."
 msgstr ""
+"Schovávám se zde před mou ženou Letou. Pokaždé se na mě zlobí, že nepomáhám "
+"na statku. Prosím, neříkej jí, že tu jsem."
 
 #: conversationlist_crossglen_leta.json:oromir2:0
 #: conversationlist_prim_tavern.json:prim_tavern_guest1_4:1
 #: conversationlist_stoutford_combined.json:stn_colonel_122:0
 msgid "Ok."
-msgstr ""
+msgstr "Ok."
 
 #: conversationlist_crossglen_odair.json:odair1
 msgid "Oh, it's you. You with that brother of yours. Always causing trouble."
-msgstr ""
+msgstr "Aa, to jsi ty. Ty a tvůj bratr. Jen působíte samé problémy."
 
 #: conversationlist_crossglen_odair.json:odair2
 msgid "Hmm, maybe you could be of use to me. Do you think you could help me with a small task?"
 msgstr ""
+"Hmm, možná tě můžu k něčemu využít. Myslíš, že mi můžeš pomoct s jedním "
+"malým úkolem?"
 
 #: conversationlist_crossglen_odair.json:odair2:0
 msgid "Tell me more about this task."
-msgstr ""
+msgstr "Řekni mi víc o tom úkolu."
 
 #: conversationlist_crossglen_odair.json:odair2:1
 msgid "Sure, if there is anything I can gain from it."
-msgstr ""
+msgstr "Jasně, když z toho kápne nějaká odměna pro mě."
 
 #: conversationlist_crossglen_odair.json:odair3
 msgid "I recently went in to that cave over there *points west*, to check on our supplies. But apparently, the cave has been infested with rats."
 msgstr ""
+"Před chvílí jsem šel do támhleté jeskyně *ukazuje na západ*, abych "
+"zkontroloval naše zásoby. Ale očividně je ta jeskyně zamořená krysami."
 
 #: conversationlist_crossglen_odair.json:odair4
 msgid "In particular, I saw one rat that was larger than the other rats. Do you think you have what it takes to help eliminate them?"
 msgstr ""
+"Především jsem viděl jednu krysu, která byla podstatně větší než ostatní. "
+"Myslíš, že máš dostatečnou výbavu na to, ty krysy zahubit?"
 
 #: conversationlist_crossglen_odair.json:odair4:0
 msgid "Sure, I'll help you so that Crossglen can use the supply cave again."
 msgstr ""
+"Jistě, rád ti pomůžu, aby Crossglen opět mohl využívat svou skladovací "
+"jeskyni."
 
 #: conversationlist_crossglen_odair.json:odair4:1
 msgid "Sure, I'll help you. But only because there might be some gain for me in this."
-msgstr ""
+msgstr "Jistě, že ti pomůžu. Ale jen protože bych z toho něco mohl mít."
 
 #: conversationlist_crossglen_odair.json:odair4:2
 msgid "No thanks"
-msgstr ""
+msgstr "Ne, díky"
 
 #: conversationlist_crossglen_odair.json:odair5
 msgid "I need you to get into that cave and kill the large rat, that way maybe we can stop the rat infestation in the cave and start using it as our old supply cave again."
 msgstr ""
+"Potřebuji tě k následujícímu úkolu. Dojdi do té jeskyně a zabij tu velkou "
+"krysu. Tak se možná můžeme zbavit toho krysího zamoření a budeme moci "
+"využívat naší starou jeskyni jako sklad."
 
 #: conversationlist_crossglen_odair.json:odair5:0
 #: conversationlist_algangror.json:algangror_remgard_5:0
@@ -1004,11 +1115,11 @@ msgstr "Ok."
 
 #: conversationlist_crossglen_odair.json:odair5:1
 msgid "On second thought, I don't think I will help you after all."
-msgstr ""
+msgstr "Když tak o tom přemýšlím, myslím, že ti nakonec nepomůžu."
 
 #: conversationlist_crossglen_odair.json:odair_cowards
 msgid "I didn't think so either. You and that brother of yours always were cowards."
-msgstr ""
+msgstr "Nemýlil jsem se, ty a tvůj bratr jste vždy byli zbabělci."
 
 #: conversationlist_crossglen_odair.json:odair_cowards:0
 #: conversationlist_crossglen_odair.json:odair_complete2:0
@@ -1020,15 +1131,15 @@ msgstr ""
 #: conversationlist_guynmart_npc.json:guynmart_nuik_60:1
 #: conversationlist_guynmart_npc.json:guynmart_nuik_70:2
 msgid "Bye"
-msgstr ""
+msgstr "Na viděnou"
 
 #: conversationlist_crossglen_odair.json:odair_continue
 msgid "Did you kill that large rat in the cave west of here?"
-msgstr ""
+msgstr "Už jsi zabil tu velkou krysu v naší jeskyni?"
 
 #: conversationlist_crossglen_odair.json:odair_continue:0
 msgid "Yes, I have killed the large rat."
-msgstr ""
+msgstr "Ano, už jsem ji zabil."
 
 #: conversationlist_crossglen_odair.json:odair_continue:1
 #: conversationlist_fallhaven_bucus.json:bucus_thieves_continue:0
@@ -1051,60 +1162,68 @@ msgstr ""
 #: conversationlist_lodar.json:lodar_find0:0
 #: conversationlist_maevalia.json:maevalia_r1:1
 msgid "What was I supposed to do again?"
-msgstr ""
+msgstr "Můžeš mi zopakovat, co mám udělat?"
 
 #: conversationlist_crossglen_odair.json:odair_complete
 msgid "Thanks a lot for your help kid! Maybe you and that brother of yours aren't as cowardly as I thought. Here, take these coins for your help."
 msgstr ""
+"Díky za tvou pomoc, robátko. Možná že ty a tvůj bratr nejste takoví "
+"zbabělci, jak jsem si myslel. Tady máš nějaké zlaťáky za tvou pomoc."
 
 #: conversationlist_crossglen_odair.json:odair_complete:0
 #: conversationlist_loneford_4.json:arngyr_6:0
 msgid "Thanks"
-msgstr ""
+msgstr "Děkuji"
 
 #: conversationlist_crossglen_odair.json:odair_complete2
 msgid "Thanks a lot for your help earlier. Now we might start using that cave as our old supply cave again."
 msgstr ""
+"Děkuji za tvou předchozí pomoc. Nyní můžeme opět začít využívat tu jeskyni "
+"jako náš sklad."
 
 #: conversationlist_jan.json:jan_default
 msgid "Hello kid. Please leave me to my mourning."
-msgstr ""
+msgstr "Ahoj dítě. Prosím nech mě samotného s mým žalem."
 
 #: conversationlist_jan.json:jan_default:0
 msgid "What is the problem?"
-msgstr ""
+msgstr "Co se ti přihodilo?"
 
 #: conversationlist_jan.json:jan_default:1
 msgid "Do you want to talk about it?"
-msgstr ""
+msgstr "Chceš si o tom promluvit?"
 
 #: conversationlist_jan.json:jan_default:2
 #: conversationlist_jan.json:jan_default2:1
 #: conversationlist_jan.json:jan_default14:0
 #: conversationlist_fallhaven_bucus.json:bucus_umar_3:0
 msgid "Ok, bye"
-msgstr ""
+msgstr "Dobrá, na viděnou"
 
 #: conversationlist_jan.json:jan_default2
 msgid "Oh, it's so sad. I really don't want to talk about it."
-msgstr ""
+msgstr "Och, jsem z toho sklíčený. Opravdu o tom nechci mluvit."
 
 #: conversationlist_jan.json:jan_default2:0
 #: conversationlist_algangror.json:algangror_story:0
 msgid "Please do."
-msgstr "Prosím, povídej."
+msgstr "Prosím, pověz mi to."
 
 #: conversationlist_jan.json:jan_default3
 msgid "Well, I guess it's ok to tell you. You seem to be a nice enough kid."
-msgstr ""
+msgstr "Nuže dobrá, myslím, že tobě to říci mohu. Vypadáš docela přátelsky."
 
 #: conversationlist_jan.json:jan_default4
 msgid "My friend Gandir, his friend Irogotu, and I were down here digging this hole. We had heard there was a hidden treasure down here."
 msgstr ""
+"Můj přítel Gandir, jeho přítel Irogotu a já jsme vykopali tuto jámu. Slyšeli "
+"jsme, že je tu schovaný poklad."
 
 #: conversationlist_jan.json:jan_default5
 msgid "We started digging and finally broke through to the cave system below. That's when we discovered them. The critters and bugs."
 msgstr ""
+"Začali jsme kopat a konečně jsme se prokopali do celého podzemní jeskynního "
+"systému. A tehdy se poprvé objevili. Brouci a kočkodani."
 
 #: conversationlist_jan.json:jan_default6
 msgid ""
@@ -1112,10 +1231,15 @@ msgid ""
 "\n"
 "Gandir and I told Irogotu that we should stop the digging and leave while we still could."
 msgstr ""
+"Och ti kočkodani. Zubaté bestie. Skoro mě zabili.\n"
+"\n"
+"Gandir a já jsme říkali Irogotovi, že bychom s tím kopáním měli skončit a "
+"vrátit se, dokud je čas."
 
 #: conversationlist_jan.json:jan_default7
 msgid "But Irogotu wanted to continue deeper into the dungeon. He and Gandir got into an argument and started fighting."
 msgstr ""
+"Ale Irogotu chtěl jít dále do jeskyní. S Gandirem se pohádali a začal souboj."
 
 #: conversationlist_jan.json:jan_default8
 msgid ""
@@ -1125,105 +1249,126 @@ msgid ""
 "\n"
 "Oh what have we done?"
 msgstr ""
+"Pak se to stalo.\n"
+"\n"
+"*těžce polkne*\n"
+"\n"
+"Oh, co jsme to udělali?"
 
 #: conversationlist_jan.json:jan_default8:0
 #: conversationlist_ogam.json:ogam_2:1
 msgid "Please go on"
-msgstr ""
+msgstr "Pokračuj prosím"
 
 #: conversationlist_jan.json:jan_default9
 msgid "Irogotu killed Gandir with his bare hands. You could see the fire in his eyes. He almost seemed to enjoy it."
 msgstr ""
+"Irogotu zabil Gandira holýma rukama. V jeho očích byl oheň a žár. Až to "
+"vypadalo, že si to užívá."
 
 #: conversationlist_jan.json:jan_default10
 msgid "I fled and haven't dared go back down there because of the critters and Irogotu himself."
 msgstr ""
+"Utekl jsem a už se neodvažuji vrátit se zpět dolů, kvůli kočkodanům i "
+"samotnému Irogotovi."
 
 #: conversationlist_jan.json:jan_default11
 msgid "Oh that damn Irogotu. If only I could get to him. I'd show him one thing and another."
 msgstr ""
+"Och, ten proradný Irogotu. Kdyby se mi dostal pod ruce, já už bych mu ukázal."
 
 #: conversationlist_jan.json:jan_default11:0
 msgid "Do you think I could help?"
-msgstr ""
+msgstr "Myslíš, že ti můžu pomoct?"
 
 #: conversationlist_jan.json:jan_default11_1
 msgid "Do you think you could help me?"
-msgstr ""
+msgstr "Myslíš si, že mi můžeš pomoct?"
 
 #: conversationlist_jan.json:jan_default11_1:0
 msgid "Sure, there may be some treasure in this for me."
-msgstr ""
+msgstr "Jistě, možná tam na mě čeká nějaký poklad."
 
 #: conversationlist_jan.json:jan_default11_1:1
 msgid "Sure. Irogotu should pay for what he did."
-msgstr ""
+msgstr "Jistě, Irogotu si zaslouží test za to, co udělal."
 
 #: conversationlist_jan.json:jan_default11_1:2
 msgid "No thanks, I would rather not be involved in this. It sounds dangerous."
-msgstr ""
+msgstr "Ne díky, raději se do toho nebudu zaplétat. Zní to nebezpečně."
 
 #: conversationlist_jan.json:jan_default12
 msgid "Really? You think you could help? Hm, maybe you could. Beware of those bugs though, they're really tough bastards."
 msgstr ""
+"Skutečně? Ty si myslíš, že to zvládneš, mi pomoct? Hm, možná ano. Pozor na "
+"ty brouky, jsou to nebezpečné bestie."
 
 #: conversationlist_jan.json:jan_default13
 msgid "If you really want to help, go find Irogotu down in the cave, and get me back Gandir's ring."
 msgstr ""
+"Pokud mi skutečně chceš pomoct, jdi dolů do jeskyně, najdi Irogota a dones "
+"mi Gandirův prsten."
 
 #: conversationlist_jan.json:jan_default13:0
 msgid "Sure, I'll help."
-msgstr ""
+msgstr "Jasně, pomůžu ti."
 
 #: conversationlist_jan.json:jan_default13:1
 #: conversationlist_flagstone.json:flagstone_sentry_return1:0
 #: conversationlist_flagstone.json:flagstone_sentry_return2:1
 msgid "Can you tell me the story again?"
-msgstr ""
+msgstr "Mohl bys mi znovu říct, co se událo?"
 
 #: conversationlist_jan.json:jan_default13:2
 #: conversationlist_prim_tavern.json:birgil_4:1
 msgid "Never mind, goodbye."
-msgstr ""
+msgstr "No nic, na viděnou."
 
 #: conversationlist_jan.json:jan_default14
 msgid "Return to me when you are done. Bring me Gandir's ring from Irogotu down in the cave."
 msgstr ""
+"Vrať se zpět, až budeš hotov. A přines mi Gandirův prsten, který vzal "
+"Irogotu."
 
 #: conversationlist_jan.json:jan_return
 msgid "Hello again kid. Did you find Irogotu down in the cave?"
-msgstr ""
+msgstr "Vítej zpět, páže. Našel jsi v jeskyni Irogota?"
 
 #: conversationlist_jan.json:jan_return:1
 #: conversationlist_benbyr.json:benbyr_mission_1:0
 #: conversationlist_lleglaris.json:lleglaris_r1:0
 #: conversationlist_tiqui.json:tiqui_r0:1
 msgid "Can you tell me your story again?"
-msgstr ""
+msgstr "Mohl bys mi znovu říct, co se ti přihodilo?"
 
 #: conversationlist_jan.json:jan_return:2
 msgid "Yes, I have killed Irogotu."
-msgstr ""
+msgstr "Ano, zabil jsem Irogota."
 
 #: conversationlist_jan.json:jan_background
 msgid "Didn't you listen the first time I told you the story? Do I really have to tell you the story one more time?"
 msgstr ""
+"Tobě to nestačilo, když jsem to říkal poprvé? Skutečně ti to musím říct celé "
+"ještě jednou?"
 
 #: conversationlist_jan.json:jan_background:0
 msgid "Yes, please tell me the story again."
-msgstr ""
+msgstr "Ano, prosím pověz mi to znovu."
 
 #: conversationlist_jan.json:jan_background:1
 msgid "I wasn't listening that much the first time you told it. What was that about a treasure?"
 msgstr ""
+"Na poprvé mi to nestačilo, zejména ta část o tom pokladu. Co jsi o něm říkal?"
 
 #: conversationlist_jan.json:jan_background:2
 msgid "No, never mind. I remember it now."
-msgstr ""
+msgstr "Ne díky. Už si vzpomínám."
 
 #: conversationlist_jan.json:jan_complete2
 msgid "Thanks for dealing with Irogotu earlier! I am forever in debt to you."
 msgstr ""
+"Díky ještě jednou za tvou pomoc s Irogotem! Jsem navždy tvým velkým "
+"dlužníkem."
 
 #: conversationlist_jan.json:jan_complete
 msgid ""
@@ -1231,26 +1376,33 @@ msgid ""
 "\n"
 "Oh thank you so much for bringing me back Gandir's ring! Now I can have something to remember him by."
 msgstr ""
+"Počkej, cože? Jak se ti to povedlo, sejít dolů, vrátit se a celé to přežít? "
+"Páni, já jsem tam dole málem umřel.\n"
+"\n"
+"Oh, děkuji pěkně za Gandirův prsten. Teď mám na něj alespoň nějakou "
+"vzpomínku."
 
 #: conversationlist_jan.json:jan_complete:0
 msgid "Glad that I could help. Goodbye."
-msgstr ""
+msgstr "Rád jsem pomohl. Na shledanou."
 
 #: conversationlist_jan.json:jan_complete:1
 msgid "Shadow be with you. Goodbye."
-msgstr ""
+msgstr "Nechť tě Přítmí provází na tvých cestách. Na shledanou."
 
 #: conversationlist_jan.json:jan_complete:2
 msgid "Whatever. I only did it for the loot."
-msgstr ""
+msgstr "No jo, má pomoc byla motivována pouze ziskem pokladu."
 
 #: conversationlist_jan.json:irogotu
 msgid "Well hello there. Another adventurer coming to steal my bounty. This is MY CAVE. The treasure will be MINE!"
 msgstr ""
+"Koho to tu máme? Přišel další dobrodruh, jež mi chce ukrást můj poklad. "
+"Tohle je MOJE jeskyně a ten poklad zůstane MŮJ!"
 
 #: conversationlist_jan.json:irogotu:0
 msgid "Did you kill Gandir?"
-msgstr ""
+msgstr "Zabil jsi Gandira?"
 
 #: conversationlist_jan.json:irogotu1
 msgid "That whelp Gandir? He was in my way. I merely used him as a tool to dig deeper into the cave."
@@ -12718,7 +12870,7 @@ msgstr ""
 
 #: conversationlist_algangror.json:algangror_story26:0
 msgid "Wait, does this mean that those rats I killed for you were.."
-msgstr ""
+msgstr "Počkej, má to znamenat, že ty zabité krysy byli..."
 
 #: conversationlist_algangror.json:algangror_story27
 msgid "Oh yes. With your help, they are now one less problem to deal with, so to speak. He he."
@@ -31409,7 +31561,7 @@ msgstr ""
 
 #: itemlist_stoutford_combined.json:smoked-sausage:description
 msgid "It smells... smokey."
-msgstr ""
+msgstr "Je to cítit... uzením."
 
 #: itemlist_stoutford_combined.json:pickled-cabbage
 msgid "Pickled cabbage"
@@ -37619,4 +37771,3 @@ msgstr ""
 #: worldmap.xml:world1:guynmart_area
 msgid "Guynmart Castle"
 msgstr ""
-
