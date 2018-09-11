@@ -14,6 +14,11 @@
                         "requireID":"lodar2",
                         "value":50,
                         "negate":true
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"shortcut_lodar",
+                        "value":10
                     }
                 ]
             },
@@ -25,6 +30,16 @@
                         "requireID":"shortcut_lodar",
                         "value":22,
                         "negate":true
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"shortcut_lodar",
+                        "value":20
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"lodar2",
+                        "value":50
                     }
                 ]
             },

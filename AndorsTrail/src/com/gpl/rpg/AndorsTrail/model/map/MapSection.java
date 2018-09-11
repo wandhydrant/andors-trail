@@ -53,7 +53,7 @@ public final class MapSection {
 
 	public String calculateHash(String filter) {
 		byte[] hash = layoutHash.clone();
-		ByteUtils.xorArray(hash, filter.getBytes());
+		if (filter != null) ByteUtils.xorArray(hash, filter.getBytes());
 		return ByteUtils.toHexString(hash, 4);
 	}
 }

@@ -1,5 +1,7 @@
 package com.gpl.rpg.AndorsTrail;
 
+import java.io.File;
+import java.io.IOException;
 import java.util.Locale;
 
 import android.app.Activity;
@@ -7,24 +9,26 @@ import android.app.Application;
 import android.content.Context;
 import android.content.res.Configuration;
 import android.content.res.Resources;
+import android.os.Environment;
 import android.view.Window;
 import android.view.WindowManager;
 
 import com.gpl.rpg.AndorsTrail.context.ControllerContext;
 import com.gpl.rpg.AndorsTrail.context.WorldContext;
+import com.gpl.rpg.AndorsTrail.controller.Constants;
 
 public final class AndorsTrailApplication extends Application {
 
 	public static final boolean DEVELOPMENT_DEBUGRESOURCES = false;
 	public static final boolean DEVELOPMENT_FORCE_STARTNEWGAME = false;
 	public static final boolean DEVELOPMENT_FORCE_CONTINUEGAME = false;
-	public static final boolean DEVELOPMENT_DEBUGBUTTONS = true;
+	public static final boolean DEVELOPMENT_DEBUGBUTTONS = false;
 	public static final boolean DEVELOPMENT_FASTSPEED = false;
 	public static final boolean DEVELOPMENT_VALIDATEDATA = true;
 	public static final boolean DEVELOPMENT_DEBUGMESSAGES = true;
 	public static final boolean DEVELOPMENT_INCOMPATIBLE_SAVEGAMES = true; //DEVELOPMENT_DEBUGRESOURCES || DEVELOPMENT_DEBUGBUTTONS || DEVELOPMENT_FASTSPEED;
 	public static final int CURRENT_VERSION = DEVELOPMENT_INCOMPATIBLE_SAVEGAMES ? 999 : 43;
-	public static final String CURRENT_VERSION_DISPLAY = "0.7.2_alpha1";
+	public static final String CURRENT_VERSION_DISPLAY = "0.7.2_beta1";
 	public static final boolean IS_RELEASE_VERSION = !CURRENT_VERSION_DISPLAY.matches(".*[a-d].*");
 
 	private final AndorsTrailPreferences preferences = new AndorsTrailPreferences();
@@ -68,5 +72,59 @@ public final class AndorsTrailApplication extends Application {
 		res.updateConfiguration(conf, res.getDisplayMetrics());
 		this.getResources().updateConfiguration(conf, res.getDisplayMetrics());
 		return true;
+	}
+	
+	/**
+	 * Logging to text file system as found on https://stackoverflow.com/questions/19565685/saving-logcat-to-a-text-file-in-android-device
+	 */
+	
+	public void onCreate() {
+		super.onCreate();
+
+		if ( DEVELOPMENT_DEBUGMESSAGES && isExternalStorageWritable() ) {
+
+			File root = Environment.getExternalStorageDirectory();
+			File appDirectory = new File(root, Constants.FILENAME_SAVEGAME_DIRECTORY);
+			File logDirectory = new File( appDirectory, "log" );
+			File logFile = new File( logDirectory, "logcat" + System.currentTimeMillis() + ".txt" );
+
+			// create app folder
+			if ( !appDirectory.exists() ) {
+				appDirectory.mkdir();
+			}
+
+			// create log folder
+			if ( !logDirectory.exists() ) {
+				logDirectory.mkdir();
+			}
+
+			// clear the previous logcat and then write the new one to the file
+			try {
+				Process process = Runtime.getRuntime().exec("logcat -c");
+				process = Runtime.getRuntime().exec("logcat -f " + logFile+" *:W");
+			} catch ( IOException e ) {
+				e.printStackTrace();
+			}
+
+		}
+	}
+
+	/* Checks if external storage is available for read and write */
+	public boolean isExternalStorageWritable() {
+		String state = Environment.getExternalStorageState();
+		if ( Environment.MEDIA_MOUNTED.equals( state ) ) {
+			return true;
+		}
+		return false;
+	}
+
+	/* Checks if external storage is available to at least read */
+	public boolean isExternalStorageReadable() {
+		String state = Environment.getExternalStorageState();
+		if ( Environment.MEDIA_MOUNTED.equals( state ) ||
+				Environment.MEDIA_MOUNTED_READ_ONLY.equals( state ) ) {
+			return true;
+		}
+		return false;
 	}
 }
