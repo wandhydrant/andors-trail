@@ -118,11 +118,15 @@
             "increaseAttackCost":0,
             "increaseAttackChance":-6,
             "increaseBlockChance":10,
-            "increaseDamageResistance":1,
-            "addedConditions":[
+            "increaseDamageResistance":1
+        },
+        "hitReceivedEffect":{
+            "conditionsSource":[
                 {
                     "condition":"barkskin",
-                    "magnitude":3
+                    "magnitude":2,
+                    "duration":2,
+                    "chance":"20"
                 }
             ]
         }
