@@ -128,6 +128,7 @@ public final class WorldMapController {
 				drawMapLayer(canvas, mapTiles.currentLayout.layerGround);
 				tryDrawMapLayer(canvas, mapTiles.currentLayout.layerObjects);
 				tryDrawMapLayer(canvas, mapTiles.currentLayout.layerAbove);
+				tryDrawMapLayer(canvas, mapTiles.currentLayout.layerTop);
 			}
 			return image;
 		}
