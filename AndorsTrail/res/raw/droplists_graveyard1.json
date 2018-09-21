@@ -28,12 +28,28 @@
                 "chance":"30",
                 "quantity":{
                     "min":1,
+                    "max":2
+                }
+            },
+            {
+                "itemID":"gold",
+                "chance":"70",
+                "quantity":{
+                    "min":1,
+                    "max":6
+                }
+            },
+            {
+                "itemID":"club1",
+                "chance":"10",
+                "quantity":{
+                    "min":1,
                     "max":1
                 }
             },
             {
-                "itemID":"marrowtaint",
-                "chance":"1/1000",
+                "itemID":"shield_iron1",
+                "chance":"5",
                 "quantity":{
                     "min":1,
                     "max":1
