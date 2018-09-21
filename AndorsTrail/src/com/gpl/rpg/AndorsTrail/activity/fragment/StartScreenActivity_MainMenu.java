@@ -1,10 +1,12 @@
 package com.gpl.rpg.AndorsTrail.activity.fragment;
 
+import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.app.Dialog;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.SharedPreferences.Editor;
+import android.os.Build;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
@@ -28,6 +30,7 @@ import com.gpl.rpg.AndorsTrail.controller.Constants;
 import com.gpl.rpg.AndorsTrail.resource.tiles.TileManager;
 import com.gpl.rpg.AndorsTrail.savegames.Savegames;
 import com.gpl.rpg.AndorsTrail.savegames.Savegames.FileHeader;
+import com.gpl.rpg.AndorsTrail.util.L;
 import com.gpl.rpg.AndorsTrail.util.ThemeHelper;
 import com.gpl.rpg.AndorsTrail.view.CustomDialogFactory;
 
@@ -259,17 +262,24 @@ public class StartScreenActivity_MainMenu extends Fragment {
 				// Changing the locale after having loaded the game requires resources to
 				// be re-loaded. Therefore, we just exit here.
 				Toast.makeText(getActivity(), R.string.change_locale_requires_restart, Toast.LENGTH_LONG).show();
-				getActivity().finish();
+				doFinish();
 				return;
 			}
 		} 
 		if (ThemeHelper.changeTheme(preferences.selectedTheme)) {
 			// Changing the theme requires a restart to re-create all activities.
 			Toast.makeText(getActivity(), R.string.change_theme_requires_restart, Toast.LENGTH_LONG).show();
-			getActivity().finish();
+			doFinish();
 			return;
 		}
 		app.getWorld().tileManager.updatePreferences(preferences);
+	}
+	
+	@SuppressLint("NewApi")
+	private void doFinish() {
+		//For Lollipop and above
+		((AndorsTrailApplication)getActivity().getApplication()).discardWorld();
+		getActivity().finish();
 	}
 
 	

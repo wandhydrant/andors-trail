@@ -59,8 +59,10 @@ public final class TMXMapTranslator {
 			assert(m.height > 0);
 
 			boolean isOutdoors = false;
+			String colorFilter = null;
 			for (TMXProperty p : m.properties) {
 				if(p.name.equalsIgnoreCase("outdoors")) isOutdoors = (Integer.parseInt(p.value) != 0);
+				else if(p.name.equalsIgnoreCase("colorfilter")) colorFilter = p.value;
 				else if(AndorsTrailApplication.DEVELOPMENT_VALIDATEDATA) L.log("OPTIMIZE: Map " + m.name + " has unrecognized property \"" + p.name + "\".");
 			}
 
@@ -212,7 +214,7 @@ public final class TMXMapTranslator {
 			MonsterSpawnArea[] _spawnAreas = new MonsterSpawnArea[spawnAreas.size()];
 			_spawnAreas = spawnAreas.toArray(_spawnAreas);
 
-			result.add(new PredefinedMap(m.xmlResourceId, m.name, mapSize, _eventObjects, _spawnAreas, activeGroups, isOutdoors));
+			result.add(new PredefinedMap(m.xmlResourceId, m.name, mapSize, _eventObjects, _spawnAreas, activeGroups, isOutdoors, colorFilter));
 		}
 
 		return result;
@@ -347,6 +349,7 @@ public final class TMXMapTranslator {
 			HashSet<Integer> usedTileIDs,
 			SetOfLayerNames layerNames
 	) {
+
 		final MapLayer layerGround = transformMapLayer(layersPerLayerName, layerNames.groundLayerName, srcMap, tileCache, area, usedTileIDs);
 		final MapLayer layerObjects = transformMapLayer(layersPerLayerName, layerNames.objectsLayerName, srcMap, tileCache, area, usedTileIDs);
 		final MapLayer layerAbove = transformMapLayer(layersPerLayerName, layerNames.aboveLayersName, srcMap, tileCache, area, usedTileIDs);
