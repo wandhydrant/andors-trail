@@ -9,7 +9,7 @@ public final class L {
 
 	public static void log(String s) {
 		if (AndorsTrailApplication.DEVELOPMENT_DEBUGMESSAGES) {
-			Log.d(TAG, s);
+			Log.w(TAG, s);
 		}
 	}
 }

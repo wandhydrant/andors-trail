@@ -32,6 +32,7 @@ public final class PredefinedMap {
 	public final List<String> initiallyActiveMapObjectGroups;
 	public final List<String> activeMapObjectGroups;
 	public final ArrayList<Loot> groundBags = new ArrayList<Loot>();
+	public final String initialColorFilter;
 	public boolean visited = false;
 	public long lastVisitTime = VISIT_RESET;
 	public String lastSeenLayoutHash = "";
@@ -48,6 +49,7 @@ public final class PredefinedMap {
 			, MonsterSpawnArea[] spawnAreas
 			, List<String> initiallyActiveMapObjectGroups
 			, boolean isOutdoors
+			, String colorFilter
 	) {
 		this.xmlResourceId = xmlResourceId;
 		this.name = name;
@@ -61,6 +63,7 @@ public final class PredefinedMap {
 		assert(size.width > 0);
 		assert(size.height > 0);
 		this.isOutdoors = isOutdoors;
+		this.initialColorFilter = colorFilter;
 	}
 
 	public final boolean isOutside(final Coord p) { return isOutside(p.x, p.y); }
@@ -174,7 +177,7 @@ public final class PredefinedMap {
 		resetTemporaryData();
 		groundBags.clear();
 		visited = false;
-		currentColorFilter = null;
+		currentColorFilter = initialColorFilter;
 		lastSeenLayoutHash = "";
 	}
 
@@ -212,18 +215,12 @@ public final class PredefinedMap {
 
 
 	private void activateMapObjects() {
-		if (AndorsTrailApplication.DEVELOPMENT_DEBUGMESSAGES) {
-			L.log("Applying active status to all map objects in map "+name);
-		}
 		for (MapObject o : eventObjects) {
 			o.isActive = activeMapObjectGroups.contains(o.group);
 		}
 	}
 	
 	public void activateMapObjectGroup(String group) {
-		if (AndorsTrailApplication.DEVELOPMENT_DEBUGMESSAGES) {
-			L.log("Applying active status to object group "+group+" in map "+name);
-		}
 		if (!activeMapObjectGroups.contains(group)) {
 			activeMapObjectGroups.add(group);
 			for (MapObject o : eventObjects) {
@@ -236,9 +233,6 @@ public final class PredefinedMap {
 	}
 	
 	public void deactivateMapObjectGroup(String group) {
-		if (AndorsTrailApplication.DEVELOPMENT_DEBUGMESSAGES) {
-			L.log("Removing active status to object group "+group+" in map"+name);
-		}
 		if (activeMapObjectGroups.contains(group)) {
 			activeMapObjectGroups.remove(group);
 			for (MapObject o : eventObjects) {
