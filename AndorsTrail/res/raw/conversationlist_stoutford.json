@@ -1415,7 +1415,7 @@
                 "nextPhraseID":"X"
             },
             {
-                "text":"Would you come with me to talk to Blomvale? He wants to confess something important.",
+                "text":"Would you come with me to talk to Blornvale? He wants to confess something important.",
                 "nextPhraseID":"tahalendor_thorns50",
                 "requires":[
                     {
@@ -1433,6 +1433,23 @@
                         "requireType":"questProgress",
                         "requireID":"thorns_vengeance",
                         "value":74,
+                        "negate":true
+                    }
+                ]
+            },
+            {
+                "text":"Yolgen told me that you could provide me some artefact against powerful undead.",
+                "nextPhraseID":"tahalendor_erwyn_1",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"stoutford_castle",
+                        "value":12
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"stoutford_castle",
+                        "value":14,
                         "negate":true
                     }
                 ]
@@ -1472,6 +1489,109 @@
                         "value":70
                     }
                 ]
+            }
+        ]
+    },
+    {
+        "id":"tahalendor_erwyn_1",
+        "message":"What are you talking about?",
+        "replies":[
+            {
+                "text":"I met an undead lord in the castle, but every time it seems that I have destroyed him, he rises again. Do you have any advice?",
+                "nextPhraseID":"tahalendor_erwyn_2",
+                "requires":[
+                    {
+                        "requireType":"killedMonster",
+                        "requireID":"erwyn",
+                        "value":2
+                    }
+                ]
+            },
+            {
+                "text":"I want to help you clean the castle of the undead. Yolgen seems to be worried, perhaps because he believes the undead could be too strong.",
+                "nextPhraseID":"tahalendor_erwyn_2",
+                "requires":[
+                    {
+                        "requireType":"killedMonster",
+                        "requireID":"erwyn",
+                        "value":2,
+						"negate":true
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id":"tahalendor_erwyn_2",
+        "message":"Most undead can be destroyed quite easily, but there is a rare and powerful kind where it is not so easy.",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"tahalendor_erwyn_3"
+            }
+        ]
+    },
+    {
+        "id":"tahalendor_erwyn_3",
+        "message":"I think I have a solution though.",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"tahalendor_erwyn_4"
+            }
+        ]
+    },
+    {
+        "id":"tahalendor_erwyn_4",
+        "message":"First, I need two coins. Please give me 2 gold coins.",
+        "replies":[
+            {
+                "text":"Ok.",
+                "nextPhraseID":"tahalendor_erwyn_5",
+                "requires":[
+                    {
+                        "requireType":"inventoryRemove",
+                        "requireID":"gold",
+                        "value":2
+                    }
+                ]
+            },
+            {
+                "text":"No, I won't.",
+                "nextPhraseID":"X"
+            }
+        ]
+    },
+    {
+        "id":"tahalendor_erwyn_5",
+        "message":"Now I will bless them with a special enchantment ... \n* Tahalendor holds the coins over the altar and mutters something you can't hear *",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"tahalendor_erwyn_6"
+            }
+        ]
+    },
+    {
+        "id":"tahalendor_erwyn_6",
+        "message":"Here you go. As soon as the undead lord appears to be destroyed, place one coin on each eye. This will prevent him from rising again, and soon after you have placed the coins his remains should disintegrate, as he returns to his natural state.",
+        "replies":[
+            {
+                "text":"Thank you.",
+                "nextPhraseID":"X"
+
+            }
+        ],
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"stoutford_castle",
+                "value":14
+            },
+            {
+                "rewardType":"giveItem",
+                "rewardID":"erwyn_coin",
+                "value":2
             }
         ]
     },
