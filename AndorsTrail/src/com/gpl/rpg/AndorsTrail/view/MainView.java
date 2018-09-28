@@ -2,19 +2,6 @@ package com.gpl.rpg.AndorsTrail.view;
 
 import java.lang.ref.WeakReference;
 
-import android.content.Context;
-import android.graphics.Bitmap;
-import android.graphics.Canvas;
-import android.graphics.Color;
-import android.graphics.Paint;
-import android.graphics.Rect;
-import android.os.Handler;
-import android.util.AttributeSet;
-import android.view.KeyEvent;
-import android.view.MotionEvent;
-import android.view.SurfaceHolder;
-import android.view.SurfaceView;
-
 import com.gpl.rpg.AndorsTrail.AndorsTrailApplication;
 import com.gpl.rpg.AndorsTrail.AndorsTrailPreferences;
 import com.gpl.rpg.AndorsTrail.context.ControllerContext;
@@ -42,8 +29,20 @@ import com.gpl.rpg.AndorsTrail.resource.tiles.TileCollection;
 import com.gpl.rpg.AndorsTrail.resource.tiles.TileManager;
 import com.gpl.rpg.AndorsTrail.util.Coord;
 import com.gpl.rpg.AndorsTrail.util.CoordRect;
-import com.gpl.rpg.AndorsTrail.util.L;
 import com.gpl.rpg.AndorsTrail.util.Size;
+
+import android.content.Context;
+import android.graphics.Canvas;
+import android.graphics.Color;
+import android.graphics.Paint;
+import android.graphics.Paint.Style;
+import android.graphics.Rect;
+import android.os.Handler;
+import android.util.AttributeSet;
+import android.view.KeyEvent;
+import android.view.MotionEvent;
+import android.view.SurfaceHolder;
+import android.view.SurfaceView;
 
 public final class MainView extends SurfaceView
 	implements SurfaceHolder.Callback,
@@ -105,7 +104,7 @@ public final class MainView extends SurfaceView
 	public static long SCROLL_DURATION = Constants.MINIMUM_INPUT_INTERVAL;
 	private int movingSprites = 0;
 	private SpriteMoveAnimationHandler movingSpritesRedrawTick = new SpriteMoveAnimationHandler(this);
-	
+	private Paint alternateColorFilterPaint = new Paint();
 
 	public MainView(Context context, AttributeSet attr) {
 		super(context, attr);
@@ -119,6 +118,8 @@ public final class MainView extends SurfaceView
 		this.inputController = controllers.inputController;
 		this.preferences = app.getPreferences();
 
+		alternateColorFilterPaint.setStyle(Style.FILL);
+		
 		holder.addCallback(this);
 
 		setFocusable(true);
@@ -301,53 +302,6 @@ public final class MainView extends SurfaceView
 		}
 	}
 	
-	private void redrawMoveArea_(CoordRect area, final SpriteMoveAnimation effect) {
-		if (!hasSurface) return;
-		if (scrolling) return;
-
-		if (currentMap.isOutside(area)) return;
-		if (!mapViewArea.intersects(area)) return;
-
-		if (shouldRedrawEverything()) {
-			area = mapViewArea;
-		}
-		
-		calculateRedrawRect(area);
-		Canvas c = null;
-		try {
-			c = holder.lockCanvas(redrawRect);
-			// lockCanvas sometimes changes redrawRect, when the double-buffer has not been
-			// sufficiently filled beforehand. In those cases, we need to redraw the whole scene.
-			if (area != mapViewArea) {
-				if (isRedrawRectWholeScreen(redrawRect)) {
-					area = mapViewArea;
-				}
-			}
-			synchronized (holder) { synchronized (tiles) {
-				c.clipRect(redrawClip);
-				c.translate(screenOffset.x, screenOffset.y);
-//				c.scale(scale, scale);
-				doDrawRect(c, area);
-				
-//				c.drawRect(new Rect(
-//						(area.topLeft.x - mapViewArea.topLeft.x) * tileSize, 
-//						(area.topLeft.y - mapViewArea.topLeft.y) * tileSize, 
-//						(area.topLeft.x - mapViewArea.topLeft.x + area.size.width) * tileSize - 1, 
-//						(area.topLeft.y - mapViewArea.topLeft.y + area.size.height) * tileSize - 1),
-//						redrawHighlight);
-//				if (touchedTile != null) c.drawRect(new Rect(
-//						(touchedTile.x - mapViewArea.topLeft.x) * tileSize, 
-//						(touchedTile.y - mapViewArea.topLeft.y) * tileSize, 
-//						(touchedTile.x - mapViewArea.topLeft.x + 1) * tileSize - 1, 
-//						(touchedTile.y - mapViewArea.topLeft.y + 1) * tileSize - 1), 
-//						touchHighlight);
-				
-			} }
-		} finally {
-			if (c != null) holder.unlockCanvasAndPost(c);
-		}
-	}
-
 	private boolean isRedrawRectWholeScreen(Rect redrawRect) {
 //		if (redrawRect.width() < mapViewArea.size.width * scaledTileSize) return false;
 //		if (redrawRect.height() < mapViewArea.size.height * scaledTileSize) return false;
@@ -432,7 +386,9 @@ public final class MainView extends SurfaceView
 		doDrawRect_Ground(canvas, area);
 		doDrawRect_Objects(canvas, area);
 		doDrawRect_Above(canvas, area);
-		
+		if (!preferences.highQualityFilters) {
+			applyAlternateFilter(canvas, area);
+		}
 	}
 	
 	private void doDrawRect_Ground(Canvas canvas, CoordRect area) {
@@ -515,6 +471,12 @@ public final class MainView extends SurfaceView
 		}
 	}
 	
+
+	private void applyAlternateFilter(Canvas canvas, CoordRect area) {
+		canvas.drawRect(canvas.getClipBounds(), alternateColorFilterPaint);
+		
+	}
+	
 	private void drawFromMapPosition(Canvas canvas, final CoordRect area, final Coord p, final int tile) {
 		if (!area.contains(p)) return;
 		_drawFromMapPosition(canvas, area, p.x, p.y, tile);
@@ -564,7 +526,7 @@ public final class MainView extends SurfaceView
 					,(surfaceSize.height - tileSize * visibleNumberOfTiles.height) / 2
 				);
 
-			currentTileMap.setColorFilter(this.mPaint);
+			currentTileMap.setColorFilter(this.mPaint, this.alternateColorFilterPaint, preferences.highQualityFilters);
 		}
 
 //		touchedTile = null;
@@ -808,7 +770,7 @@ public final class MainView extends SurfaceView
 	@Override
 	public void onMapTilesChanged(PredefinedMap map, LayeredTileMap tileMap) {
 		if (map != currentMap) return;
-		currentTileMap.setColorFilter(this.mPaint);
+		currentTileMap.setColorFilter(this.mPaint, this.alternateColorFilterPaint, preferences.highQualityFilters);
 		redrawAll(RedrawAllDebugReason.MapChanged);
 	}
 

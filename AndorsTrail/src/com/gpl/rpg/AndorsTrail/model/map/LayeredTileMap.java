@@ -2,13 +2,13 @@ package com.gpl.rpg.AndorsTrail.model.map;
 
 import java.util.Collection;
 
-import android.graphics.ColorFilter;
-import android.graphics.ColorMatrixColorFilter;
-import android.graphics.Paint;
-
 import com.gpl.rpg.AndorsTrail.util.Coord;
 import com.gpl.rpg.AndorsTrail.util.CoordRect;
 import com.gpl.rpg.AndorsTrail.util.Size;
+
+import android.graphics.ColorFilter;
+import android.graphics.ColorMatrixColorFilter;
+import android.graphics.Paint;
 
 public final class LayeredTileMap {
 	private static final ColorFilter colorFilterBlack20 = createGrayScaleColorFilter(0.8f);
@@ -20,7 +20,6 @@ public final class LayeredTileMap {
 	private static final ColorFilter colorFilterRedTint = createRedTintColorFilter();
 	private static final ColorFilter colorFilterGreenTint = createGreenTintColorFilter();
 	private static final ColorFilter colorFilterBlueTint = createBlueTintColorFilter();
-	
 
 	public enum ColorFilterId {
 		none,
@@ -89,8 +88,9 @@ public final class LayeredTileMap {
 		return false;
 	}
 
-	public void setColorFilter(Paint mPaint) {
-		mPaint.setColorFilter(getColorFilter());
+	public void setColorFilter(Paint mPaint, Paint alternateColorFilterPaint, boolean highQuality) {
+		if (highQuality) mPaint.setColorFilter(getColorFilter());
+		else setColor(alternateColorFilterPaint);
 	}
 
 	public ColorFilter getColorFilter() {
@@ -116,6 +116,34 @@ public final class LayeredTileMap {
 			return colorFilterBlueTint;
 		default:
 			return null;
+		
+		}
+		
+	}
+	
+
+	public void setColor(Paint p) {
+		if (colorFilter == null) {
+			p.setARGB(0, 0, 0, 0);
+			return;
+		}
+		switch (colorFilter) {
+		case black20:
+			p.setARGB(51, 0, 0, 0); return;
+		case black40:
+			p.setARGB(102, 0, 0, 0); return;
+		case black60:
+			p.setARGB(153, 0, 0, 0); return;
+		case black80:
+			p.setARGB(204, 0, 0, 0); return;
+		case redtint:
+			p.setARGB(50, 200, 0, 0); return;
+		case greentint:
+			p.setARGB(50, 0, 200, 0); return;
+		case bluetint:
+			p.setARGB(50, 0, 0, 200); return;
+		default:
+			p.setARGB(0, 0, 0, 0); return;
 		
 		}
 		

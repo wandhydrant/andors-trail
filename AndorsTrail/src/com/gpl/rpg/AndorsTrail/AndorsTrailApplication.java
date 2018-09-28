@@ -3,28 +3,27 @@ package com.gpl.rpg.AndorsTrail;
 import java.io.File;
 import java.io.IOException;
 import java.util.Locale;
+
+import com.gpl.rpg.AndorsTrail.context.ControllerContext;
+import com.gpl.rpg.AndorsTrail.context.WorldContext;
+import com.gpl.rpg.AndorsTrail.controller.Constants;
+
 import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.app.Application;
 import android.content.Context;
 import android.content.res.Configuration;
 import android.content.res.Resources;
-import android.os.Build;
 import android.os.Environment;
 import android.view.Window;
 import android.view.WindowManager;
 
-import com.gpl.rpg.AndorsTrail.context.ControllerContext;
-import com.gpl.rpg.AndorsTrail.context.WorldContext;
-import com.gpl.rpg.AndorsTrail.controller.Constants;
-import com.gpl.rpg.AndorsTrail.util.L;
-
 public final class AndorsTrailApplication extends Application {
 
-	public static final boolean DEVELOPMENT_DEBUGRESOURCES = false;
+	public static final boolean DEVELOPMENT_DEBUGRESOURCES = true;
 	public static final boolean DEVELOPMENT_FORCE_STARTNEWGAME = false;
 	public static final boolean DEVELOPMENT_FORCE_CONTINUEGAME = false;
-	public static final boolean DEVELOPMENT_DEBUGBUTTONS = false;
+	public static final boolean DEVELOPMENT_DEBUGBUTTONS = true;
 	public static final boolean DEVELOPMENT_FASTSPEED = false;
 	public static final boolean DEVELOPMENT_VALIDATEDATA = true;
 	public static final boolean DEVELOPMENT_DEBUGMESSAGES = true;
