@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: Andors Trail\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-11-10 11:48+0000\n"
-"PO-Revision-Date: 2018-07-12 18:29+0000\n"
-"Last-Translator: WaldiS <admin@sto.ugu.pl>\n"
+"PO-Revision-Date: 2018-09-30 16:32+0000\n"
+"Last-Translator: Piotr Bojczewski <piotr200310@outlook.com>\n"
 "Language-Team: Polish <https://hosted.weblate.org/projects/andors-trail/"
 "game-content/pl/>\n"
 "Language: pl\n"
@@ -13,7 +13,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 3.1-dev\n"
+"X-Generator: Weblate 3.2-dev\n"
 "X-Launchpad-Export-Date: 2015-11-02 12:27+0000\n"
 
 #: [none]
@@ -204,83 +204,86 @@ msgstr "Słabe użądlenie"
 
 #: actorconditions_stoutford.json:confusion
 msgid "Confusion"
-msgstr ""
+msgstr "Zamieszanie"
 
 #: actorconditions_stoutford.json:clumsiness
 msgid "Clumsiness"
-msgstr ""
+msgstr "Nieporadność"
 
 #: actorconditions_stoutford.json:curse_undead
 msgid "Curse of the Undead"
-msgstr ""
+msgstr "Klątwa Umarłych"
 
 #: actorconditions_graveyard1.json:contagion2
+#, fuzzy
 msgid "Spore contagion"
-msgstr ""
+msgstr "Zakażenie zarodnikami"
 
 #: actorconditions_graveyard1.json:petrification
 msgid "Petrification"
-msgstr ""
+msgstr "Petryfikacja"
 
 #: actorconditions_graveyard1.json:vulnerability
 msgid "Vulnerability"
-msgstr ""
+msgstr "Wrażliwość"
 
 #: actorconditions_graveyard1.json:flesh_rot
 msgid "Flesh rot"
-msgstr ""
+msgstr "Zgniłe ciało"
 
 #: actorconditions_graveyard1.json:putrefaction
 msgid "Putrefaction"
-msgstr ""
+msgstr "Gnicie"
 
 #: actorconditions_guynmart.json:regenNeg
 msgid "Shadow Degeneration"
-msgstr ""
+msgstr "Zwyrodnienie Cienia"
 
 #: actorconditions_guynmart.json:bone_fracture
 msgid "Bone fracture"
-msgstr ""
+msgstr "Złamanie Kości"
 
 #: actorconditions_guynmart.json:shadow_awareness
 msgid "Shadow awareness"
-msgstr ""
+msgstr "Świadomość cienia"
 
 #: actorconditions_trader_teksin.json:poison_irdegh_weak
 msgid "Weak Irdegh poison"
-msgstr ""
+msgstr "Słaba mikstura Irdegh"
 
 #: actorconditions_trader_teksin.json:light_attack
 msgid "Lightning attack"
-msgstr ""
+msgstr "Atak Błyskawicy"
 
 #: actorconditions_stoutford_combined.json:nausea
 msgid "Nausea"
-msgstr ""
+msgstr "Mdłości"
 
 #: actorconditions_stoutford_combined.json:poison_blood
 msgid "Blood poisoning"
-msgstr ""
+msgstr "Zatrucie krwi"
 
 #: actorconditions_stoutford_combined.json:deftness
 msgid "Deftness"
-msgstr ""
+msgstr "Zwinność"
 
 #: actorconditions_stoutford_combined.json:tight_grip
+#, fuzzy
 msgid "Tight grip"
-msgstr ""
+msgstr "Ciasny chwyt"
 
 #: actorconditions_stoutford_combined.json:clairvoyance
 msgid "Clairvoyance"
-msgstr ""
+msgstr "Jasnowidzenie"
 
 #: actorconditions_stoutford_combined.json:mind_fog
+#, fuzzy
 msgid "Mind fog"
-msgstr ""
+msgstr "Zamglony umysł"
 
 #: conversationlist_mikhail.json:mikhail_gamestart
 msgid "Oh good, you are awake."
-msgstr "Ach,  wspaniale że już wstałeś."
+msgstr "Ach, wspaniale że już wstałeś."
 
 #: conversationlist_mikhail.json:mikhail_visited
 msgid "I can't seem to find your brother Andor anywhere. He hasn't been back since he left yesterday."
@@ -300,7 +303,7 @@ msgstr "Mogę Ci pomóc w czymś jeszcze?"
 #: conversationlist_mikhail.json:mikhail_default:1
 #: conversationlist_mikhail.json:mikhail_default:2
 msgid "Do you have any more tasks for me?"
-msgstr ""
+msgstr "Masz dla mnie jeszcze jakieś zadania?"
 
 #: conversationlist_mikhail.json:mikhail_default:3
 msgid "Do you have any tasks for me?"
@@ -332,16 +335,19 @@ msgid "Never mind, let's talk about the other things."
 msgstr "Nieważne, porozmawiajmy lepiej o czymś innym."
 
 #: conversationlist_mikhail.json:mikhail_bread_done
+#, fuzzy
 msgid "Thanks for getting me the bread. There are still the rats."
-msgstr ""
+msgstr "Dziękuję za zdobycie tego chleba, ale są jeszcze szczury."
 
 #: conversationlist_mikhail.json:mikhail_rats_done
+#, fuzzy
 msgid "Thanks for taking care of the rats. I'd still love some bread."
-msgstr ""
+msgstr "Dziękuję za zajęcie się tymi szczurami. Chciałbym jeszce trochę chleba."
 
 #: conversationlist_mikhail.json:mikhail_all_tasks_done
+#, fuzzy
 msgid "Not for now. Thanks for taking care of the bread and rats."
-msgstr ""
+msgstr "Nie teraz. Dziękuję za zajecie się szczórami oraz chlebem."
 
 #: conversationlist_mikhail.json:mikhail_andor1
 msgid "As I said, Andor went out yesterday and hasn't been back since. I'm starting to worry about him. Please go look for your brother, he said he would only be out a short while."
@@ -456,14 +462,21 @@ msgstr ""
 #: conversationlist_mikhail_foodpoison.json:mikhail_rats_start2a
 msgid "Another way to regain your strength is to eat some food.  You can buy some for yourself from Mara at the town hall. But watch out - I hear that raw meat can sometimes give you food poisoning."
 msgstr ""
+"Innym sposobem na regenrację sił jest jedzenie. Możesz je kupić od Mary w "
+"Ratuszu. Tylko uważaj na surowe mięso! Słyszałem, że czasami można się od "
+"niego zatruć."
 
 #: conversationlist_mikhail_foodpoison.json:mikhail_rats_start2b
 msgid "If that happens, perhaps the town priest can do something to help you.  Otherwise, just rest until you feel better."
 msgstr ""
+"Jeśli tak się stanie prawdopodobnie kapłan jest w stanie ci pomóc. W "
+"przeciwnym razie po prostu odpocznij. Wtedy powinieneś poczuć się już lepiej"
 
 #: conversationlist_mikhail_foodpoison.json:mikhail_rats_start2c
 msgid "Me, I can't really afford the meat, so I just stick to my bread!"
 msgstr ""
+"Ja nie jestem w stanie pozwolić sobie na mięso. Jest zbyt drogie. Więc po "
+"prostu jem chleb!"
 
 #: conversationlist_crossglen.json:audir1
 msgid ""
@@ -37804,4 +37817,3 @@ msgstr ""
 #: worldmap.xml:world1:guynmart_area
 msgid "Guynmart Castle"
 msgstr ""
-
