@@ -89,18 +89,11 @@ public final class LayeredTileMap {
 	}
 
 	public boolean setColorFilter(Paint mPaint, Paint alternateColorFilterPaint, boolean highQuality) {
-		if (highQuality) {
-			mPaint.setColorFilter(getColorFilter());
-			return false;
+		if (!highQuality) {
+			highQuality = !setColor(alternateColorFilterPaint);
 		}
-		else {
-			if (setColor(alternateColorFilterPaint)) {
-				return true;
-			} else {
-				mPaint.setColorFilter(getColorFilter());
-				return false;
-			}
-		}
+		mPaint.setColorFilter(highQuality ? getColorFilter() : null);
+		return !highQuality;
 	}
 
 	public ColorFilter getColorFilter() {
