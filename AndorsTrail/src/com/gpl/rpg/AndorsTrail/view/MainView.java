@@ -105,6 +105,7 @@ public final class MainView extends SurfaceView
 	private int movingSprites = 0;
 	private SpriteMoveAnimationHandler movingSpritesRedrawTick = new SpriteMoveAnimationHandler(this);
 	private Paint alternateColorFilterPaint = new Paint();
+	private boolean useAlternateColorFilterPaint = false;
 
 	public MainView(Context context, AttributeSet attr) {
 		super(context, attr);
@@ -386,7 +387,7 @@ public final class MainView extends SurfaceView
 		doDrawRect_Ground(canvas, area);
 		doDrawRect_Objects(canvas, area);
 		doDrawRect_Above(canvas, area);
-		if (!preferences.highQualityFilters) {
+		if (!useAlternateColorFilterPaint) {
 			applyAlternateFilter(canvas, area);
 		}
 	}
@@ -526,7 +527,7 @@ public final class MainView extends SurfaceView
 					,(surfaceSize.height - tileSize * visibleNumberOfTiles.height) / 2
 				);
 
-			currentTileMap.setColorFilter(this.mPaint, this.alternateColorFilterPaint, preferences.highQualityFilters);
+			useAlternateColorFilterPaint = currentTileMap.setColorFilter(this.mPaint, this.alternateColorFilterPaint, preferences.highQualityFilters);
 		}
 
 //		touchedTile = null;
@@ -770,7 +771,7 @@ public final class MainView extends SurfaceView
 	@Override
 	public void onMapTilesChanged(PredefinedMap map, LayeredTileMap tileMap) {
 		if (map != currentMap) return;
-		currentTileMap.setColorFilter(this.mPaint, this.alternateColorFilterPaint, preferences.highQualityFilters);
+		useAlternateColorFilterPaint = currentTileMap.setColorFilter(this.mPaint, this.alternateColorFilterPaint, preferences.highQualityFilters);
 		redrawAll(RedrawAllDebugReason.MapChanged);
 	}
 

@@ -88,9 +88,19 @@ public final class LayeredTileMap {
 		return false;
 	}
 
-	public void setColorFilter(Paint mPaint, Paint alternateColorFilterPaint, boolean highQuality) {
-		if (highQuality) mPaint.setColorFilter(getColorFilter());
-		else setColor(alternateColorFilterPaint);
+	public boolean setColorFilter(Paint mPaint, Paint alternateColorFilterPaint, boolean highQuality) {
+		if (highQuality) {
+			mPaint.setColorFilter(getColorFilter());
+			return false;
+		}
+		else {
+			if (setColor(alternateColorFilterPaint)) {
+				return true;
+			} else {
+				mPaint.setColorFilter(getColorFilter());
+				return false;
+			}
+		}
 	}
 
 	public ColorFilter getColorFilter() {
@@ -122,28 +132,31 @@ public final class LayeredTileMap {
 	}
 	
 
-	public void setColor(Paint p) {
+	public boolean setColor(Paint p) {
 		if (colorFilter == null) {
 			p.setARGB(0, 0, 0, 0);
-			return;
+			return true;
 		}
 		switch (colorFilter) {
 		case black20:
-			p.setARGB(51, 0, 0, 0); return;
+			p.setARGB(51, 0, 0, 0); return true;
 		case black40:
-			p.setARGB(102, 0, 0, 0); return;
+			p.setARGB(102, 0, 0, 0); return true;
 		case black60:
-			p.setARGB(153, 0, 0, 0); return;
+			p.setARGB(153, 0, 0, 0); return true;
 		case black80:
-			p.setARGB(204, 0, 0, 0); return;
+			p.setARGB(204, 0, 0, 0); return true;
 		case redtint:
-			p.setARGB(50, 200, 0, 0); return;
+			p.setARGB(50, 200, 0, 0); return true;
 		case greentint:
-			p.setARGB(50, 0, 200, 0); return;
+			p.setARGB(50, 0, 200, 0); return true;
 		case bluetint:
-			p.setARGB(50, 0, 0, 200); return;
+			p.setARGB(50, 0, 0, 200); return true;
+		case bw:
+		case invert:
+			return false;
 		default:
-			p.setARGB(0, 0, 0, 0); return;
+			p.setARGB(0, 0, 0, 0); return true;
 		
 		}
 		
