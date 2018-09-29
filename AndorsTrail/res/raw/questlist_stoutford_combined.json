@@ -63,8 +63,12 @@
                 "logText":"Caeda asked for my help to clear out the monsters in the caves so that she can go back there and attend to the flowers."
             },
             {
+                "progress":55,
+                "logText":"Many monsters are dead now. The rest will no longer dare to approach the statue."
+            },
+            {
                 "progress":60,
-                "logText":"I killed the monsters and told Caeda, so that she can attend to the glade.",
+                "logText":"I told Caeda, so that she can attend to the glade.",
                 "finishesQuest":1
             }
         ]
@@ -85,6 +89,12 @@
             {
                 "progress":30,
                 "logText":"I have returned with the three potions, and gave them to her."
+            },
+            {
+                "progress":32,
+                "logText":"I decided not to help Aryfola any further.",
+                "rewardExperience":500,
+                "finishesQuest":1
             },
             {
                 "progress":40,
@@ -109,7 +119,7 @@
             },
             {
                 "progress":71,
-                "logText":"Tahalendor came to hear Blonvale confession."
+                "logText":"Tahalendor came to hear Blonvale's confession."
             },
             {
                 "progress":72,
@@ -117,15 +127,15 @@
             },
             {
                 "progress":74,
-                "logText":"Blornvale now understands what you were trying to do. You will no longer be able to help Aryfora get back her shop."
+                "logText":"Blornvale now understands what I was trying to do. I will no longer be able to help Aryfora get back her shop."
             },
             {
                 "progress":75,
-                "logText":"Tahalendor wouldn't believe your story. You will no longer be able to help Aryfora get back her shop."
+                "logText":"Tahalendor wouldn't believe my story. I will no longer be able to help Aryfora get back her shop."
             },
             {
                 "progress":76,
-                "logText":"It's all your fault that Aryfora is crying now.",
+                "logText":"It's all my fault that Aryfora is crying now.",
                 "rewardExperience":5,
                 "finishesQuest":1
             },
@@ -284,6 +294,14 @@
                 "logText":"47=Castle cleared completely"
             },
             {
+                "progress":48,
+                "logText":"48=Fight with Erwyn"
+            },
+            {
+                "progress":49,
+                "logText":"49=Erwyn2 active"
+            },
+            {
                 "progress":50,
                 "logText":"50=Tea taken"
             },
@@ -404,8 +422,16 @@
                 "logText":"140=Monster4 waits"
             },
             {
+                "progress":148,
+                "logText":"148=Erwyn introduced"
+            },
+            {
                 "progress":150,
                 "logText":"150=Monster5 waits"
+            },
+            {
+                "progress":200,
+                "logText":"200=Blonvale demands to kill a wolf"
             },
             {
                 "progress":201,
@@ -605,65 +631,25 @@
         ]
     },
     {
-        "id":"stn_quest_merchant",
-        "name":"Young merchant",
-        "showInLog":1,
-        "stages":[
-            {
-                "progress":10,
-                "logText":"You met Burhczyd afgz Dtaloumiye, a likable young man, in a tavern. He wanted to see the world and followed your advice to travel as a trader from city to city.",
-                "rewardExperience":20
-            },
-            {
-                "progress":20,
-                "logText":"In another tavern you met Burhczyd again. He never got any customers, because he had named his company Burhczyd afgz Dtaloumiye Transports. You told him to find an easier name.",
-                "rewardExperience":50
-            },
-            {
-                "progress":30,
-                "logText":"You saw Burhczyd in a tavern, but he still did not have any customers. You told him that B.A.D. Transport was not a good idea either.",
-                "rewardExperience":100
-            },
-            {
-                "progress":40,
-                "logText":"Another place, another tavern, Burhczyd again sitting there. He did get a shipment from Remgard of almost fresh fish, but nobody wanted to buy it. You bought the entire cargo and disposed of it.",
-                "rewardExperience":200
-            },
-            {
-                "progress":50,
-                "logText":"What a surprise - you met Burhczyd again in a tavern. He told you that he finally sold something successfully - his cart. The fool, how will he earn money now?",
-                "rewardExperience":500
-            },
-            {
-                "progress":60,
-                "logText":"In a tavern a bard sings in a high shrill voice. It's an old acquaintance - Burhczyd. His singing is incredible. Maybe he should just play an instrument?",
-                "rewardExperience":1000
-            },
-            {
-                "progress":70,
-                "logText":"You found Burhczyd collapsed at a table in the tavern, his lute lying in front of him. The landlord forbade him to play his lovely music, because then all the guests forgot to drink.",
-                "rewardExperience":2000
-            },
-            {
-                "progress":80,
-                "logText":"8",
-                "rewardExperience":5000
-            },
-            {
-                "progress":90,
-                "logText":"9",
-                "rewardExperience":10000
-            }
-        ]
-    },
-    {
         "id":"stoutford_castle",
         "name":"Stoutford's old castle",
         "showInLog":1,
         "stages":[
             {
+                "progress":5,
+                "logText":"I tried to free this castle from the undead Lord Erwyn. But whenever I kill him, he reappears. I should seek help ..."
+            },
+            {
                 "progress":10,
                 "logText":"I talked to Yolgen, the Shadow priest of Stoutford, and he told me that the mighty Lord Erwyn used to reside here, but after a war Lord Erwyn and his army was crushed, the castle was sacked and the house extinguished. But recently Erwyn's knights have risen from the dead. Yolgen asked me to rid Stoutford of these undead once and for all."
+            },
+            {
+                "progress":12,
+                "logText":"I should ask Tahalendor for some special artefact against powerful undead."
+            },
+            {
+                "progress":14,
+                "logText":"Tahalendor gave me a pair of special coins against powerful undead."
             },
             {
                 "progress":20,

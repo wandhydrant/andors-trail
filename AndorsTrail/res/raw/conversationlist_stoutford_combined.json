@@ -369,6 +369,16 @@
                 ]
             },
             {
+                "nextPhraseID":"stoutford_widow_thorns20_5",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"thorns_vengeance",
+                        "value":32
+                    }
+                ]
+            },
+            {
                 "nextPhraseID":"stoutford_widow_thorns30_0",
                 "requires":[
                     {
@@ -712,7 +722,8 @@
         "message":"Oh, it is you again. Did you find my key?",
         "replies":[
             {
-                "text":"No, not yet."
+                "text":"No, not yet.",
+                "nextPhraseID":"X"
             }
         ]
     },
@@ -1100,7 +1111,17 @@
         "message":"With all these trolls around I don't feel safe to go through the cave and take care of the flowers in the glade.",
         "replies":[
             {
-                "text":"The scorpions are bad enough, but the trolls are really dangerous.",
+                "text":"N",
+                "nextPhraseID":"caeda_root40_1a"
+            }
+        ]
+    },
+    {
+        "id":"caeda_root40_1a",
+        "message":"The scorpions are bad enough, but the trolls are really dangerous. I know that they hate the statue, but I am scared they can reach past it.",
+        "replies":[
+            {
+                "text":"N",
                 "nextPhraseID":"caeda_root40_2"
             }
         ]
@@ -1110,7 +1131,7 @@
         "message":"Would it be too much to ask if you could get rid of the trolls?",
         "replies":[
             {
-                "text":"I could clear the caves a bit more. No problem.",
+                "text":"I can teach them to stay further away from the statue. No problem.",
                 "nextPhraseID":"X"
             }
         ],
@@ -1759,6 +1780,17 @@
             {
                 "text":"I will be right back.",
                 "nextPhraseID":"X"
+            },
+            {
+                "text":"By chance, I have just three potions of truth with me. Here, take them.",
+                "nextPhraseID":"stoutford_widow_thorns20_1",
+                "requires":[
+                    {
+                        "requireType":"inventoryRemove",
+                        "requireID":"potion_brave",
+                        "value":3
+                    }
+                ]
             }
         ],
         "rewards":[
@@ -1766,6 +1798,11 @@
                 "rewardType":"questProgress",
                 "rewardID":"thorns_vengeance",
                 "value":20
+            },
+            {
+                "rewardType":"spawnAll",
+                "rewardID":"blornvale_wolf",
+                "mapName":"stoutford_sw"
             }
         ]
     },
@@ -1780,6 +1817,17 @@
             {
                 "text":"Yes, here they are.",
                 "nextPhraseID":"stoutford_widow_thorns20_1",
+                "requires":[
+                    {
+                        "requireType":"inventoryRemove",
+                        "requireID":"potion_brave",
+                        "value":3
+                    }
+                ]
+            },
+            {
+                "text":"Yes, I have them. But I won't give them to you.",
+                "nextPhraseID":"stoutford_widow_thorns20_2",
                 "requires":[
                     {
                         "requireType":"inventoryRemove",
@@ -1806,6 +1854,46 @@
                 "value":30
             }
         ]
+    },
+    {
+        "id":"stoutford_widow_thorns20_2",
+        "message":"What? Do you betray me? We must get rid of Blornvale!",
+        "replies":[
+            {
+                "text":"I don't quit think so. He is an honest person.",
+                "nextPhraseID":"stoutford_widow_thorns20_3"
+            },
+            {
+                "text":"I'm just kidding. Here, take the three potions.",
+                "nextPhraseID":"stoutford_widow_thorns20_1"
+            }
+        ]
+    },
+    {
+        "id":"stoutford_widow_thorns20_3",
+        "message":"What? Do you betray me? We must get rid of Blornvale!",
+        "replies":[
+            {
+                "text":"I don't quit think so. He is an honest person.",
+                "nextPhraseID":"stoutford_widow_thorns20_4"
+            }
+        ]
+    },
+    {
+        "id":"stoutford_widow_thorns20_4",
+        "message":"I would not have expected that from you!",
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"thorns_vengeance",
+                "value":32
+            }
+        ]
+    },
+    {
+        "id":"stoutford_widow_thorns20_5",
+		"switchToNPC":"none",
+        "message":"Aryfola just glares at you. Her eyes are icy cold."
     },
     {
         "id":"stoutford_widow_thorns30_0",
@@ -2216,18 +2304,82 @@
     },
     {
         "id":"blornvale_shop1",
+        "replies":[
+            {
+                "nextPhraseID":"blornvale_shop1_8",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"stn_nondisplay",
+                        "value":200,
+						"negate":true
+                    }
+                ]
+            },
+            {
+                "nextPhraseID":"blornvale_shop1_2",
+                "requires":[
+                    {
+                        "requireType":"killedMonster",
+                        "requireID":"blornvale_wolf",
+                        "value":1,
+						"negate":true
+                    }
+                ]
+            },
+            {
+                "nextPhraseID":"blornvale_shop1_6"
+			}
+        ]
+    },
+    {
+        "id":"blornvale_shop1_2",
+        "message":"Did you kill this brute behind my house?",
+        "replies":[
+            {
+                "text":"Yes.",
+                "nextPhraseID":"blornvale_shop1_4"
+            },
+            {
+                "text":"No, not yet.",
+                "nextPhraseID":"X"
+            }
+        ]
+    },
+    {
+        "id":"blornvale_shop1_4",
+        "message":"You lie. You shouldn't try that on a potion maker.",
+        "replies":[
+            {
+                "text":"Oh.",
+                "nextPhraseID":"X"
+            }
+        ]
+    },
+    {
+        "id":"blornvale_shop1_6",
+        "message":"You have indeed killed this brute behind my house!",
+        "replies":[
+            {
+                "text":"Yes. Are you content now?",
+                "nextPhraseID":"blornvale_select_1"
+            }
+        ],
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"stn_nondisplay",
+                "value":202
+            }
+        ]
+    },
+    {
+        "id":"blornvale_shop1_8",
         "message":"Welcome to my shop kid.\nMy potions are not for the faint of heart. Do you want to take a look?",
         "replies":[
             {
                 "text":"Sure.",
-                "nextPhraseID":"blornvale_shop1_10",
-                "requires":[
-                    {
-                        "requireType":"questProgress",
-                        "requireID":"thorns_vengeance",
-                        "value":20
-                    }
-                ]
+                "nextPhraseID":"blornvale_shop1_10"
             },
             {
                 "text":"Not interested.",
@@ -2262,11 +2414,6 @@
                 "requires":[
                     {
                         "requireType":"questProgress",
-                        "requireID":"thorns_vengeance",
-                        "value":20
-                    },
-                    {
-                        "requireType":"questProgress",
                         "requireID":"stn_nondisplay",
                         "value":201
                     },
@@ -2274,6 +2421,12 @@
                         "requireType":"questProgress",
                         "requireID":"stn_nondisplay",
                         "value":202,
+                        "negate":true
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"stn_nondisplay",
+                        "value":200,
                         "negate":true
                     }
                 ]
@@ -2300,8 +2453,19 @@
                 "nextPhraseID":"X"
             },
             {
+                "text":"I can handle myself - shall I prove it?",
+                "nextPhraseID":"blornvale_s1_5"
+            },
+            {
                 "text":"It is not for me of course. My father and his men are fighting in Flagstone right now. They urgently need some useful potions, not soap! I think three potions of the brave would do it, if you happen to have them. And possibly more, if it is good stuff.",
-                "nextPhraseID":"blornvale_s1_4"
+                "nextPhraseID":"blornvale_s1_4",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"thorns_vengeance",
+                        "value":20
+                    }
+                ]
             }
         ]
     },
@@ -2323,13 +2487,77 @@
         ]
     },
     {
+        "id":"blornvale_s1_5",
+        "message":"Hm, yes. How could you prove it? Let me think ...",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"blornvale_s1_6"
+            }
+        ]
+    },
+    {
+        "id":"blornvale_s1_6",
+        "message":"I know - sometimes there is a great dark wolf behind the house. Kill him!",
+        "replies":[
+            {
+                "text":"Oops - I must go now. See you.",
+                "nextPhraseID":"X"
+            },
+            {
+                "text":"No problem! I'll be right back.",
+                "nextPhraseID":"X"
+            }
+        ],
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"stn_nondisplay",
+                "value":200
+            },
+            {
+                "rewardType":"spawnAll",
+                "rewardID":"blornvale_wolf",
+                "mapName":"stoutford_sw"
+            }
+        ]
+    },
+    {
         "id":"blornvale_shop2",
         "message":"Come, I will show you my special selection.",
         "switchToNPC":"stoutford_alchemist2",
         "replies":[
             {
                 "text":"OK, let's see if it's more interesting than soap.",
-                "nextPhraseID":"S"
+                "nextPhraseID":"S",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"stn_nondisplay",
+                        "value":201
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"stn_nondisplay",
+                        "value":202,
+                        "negate":true
+                    }
+                ]
+            },
+            {
+                "text":"Yes, let's have a look.",
+                "nextPhraseID":"S",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"stn_nondisplay",
+                        "value":202
+					}
+                ]
+            },
+            {
+                "text":"No, thank you.",
+                "nextPhraseID":"X"
             }
         ],
         "rewards":[
@@ -2346,7 +2574,26 @@
         "replies":[
             {
                 "text":"Your potions are unhealthy. Two of our men drank them, and now they are complaining of bad stomachache.",
-                "nextPhraseID":"blornvale_thorns50_10"
+                "nextPhraseID":"blornvale_thorns50_10",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"thorns_vengeance",
+                        "value":200,
+						"negate":true
+                    }
+                ]
+            },
+            {
+                "text":"Your potions are unhealthy. A friend of mine drank it, and now he is complaining of bad stomachache.",
+                "nextPhraseID":"blornvale_thorns50_10",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"thorns_vengeance",
+                        "value":200
+					}
+                ]
             }
         ]
     },
@@ -3026,6 +3273,75 @@
                         "negate":true
                     }
                 ]
+            }
+        ]
+    },
+    {
+        "id":"script_lakecave_cleared",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"script_lakecave_cleared_1",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"secret_garden",
+                        "value":50
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"secret_garden",
+                        "value":55,
+                        "negate":true
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"secret_garden",
+                        "value":60,
+                        "negate":true
+                    },
+                    {
+                        "requireType":"killedMonster",
+                        "requireID":"cave_troll_2",
+                        "value":7
+                    },
+                    {
+                        "requireType":"killedMonster",
+                        "requireID":"cave_troll_3",
+                        "value":15
+                    },
+                    {
+                        "requireType":"killedMonster",
+                        "requireID":"cave_troll_4",
+                        "value":7
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id":"script_lakecave_cleared_1",
+        "message":"Many of the trolls are dead now. The rest will no longer dare to approach the statue.",
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"secret_garden",
+                "value":55
+            },
+            {
+                "rewardType":"removeSpawnArea",
+                "rewardID":"lakecave0_9",
+                "mapName":"lakecave0"
+            },
+            {
+                "rewardType":"removeSpawnArea",
+                "rewardID":"lakecave0_9_1",
+                "mapName":"lakecave0"
+            },
+            {
+                "rewardType":"removeSpawnArea",
+                "rewardID":"lakecave0_9_2",
+                "mapName":"lakecave0"
             }
         ]
     },
@@ -3740,7 +4056,7 @@
     },
     {
         "id":"yolgen_surroundings_1a",
-        "message":"That dreadful place has been left abandoned ever since. Recently, however, undead have started pouring out of the prison, and we had to send guards to keep them away from the road. ",
+        "message":"That dreadful place has been left abandoned ever since. Recently, however, undead have started pouring out of the prison, and we had to send guards to keep them away from the road.",
         "replies":[
             {
                 "text":"I took care of that",
@@ -4181,8 +4497,10 @@
     },
     {
         "id":"yolgen_castle_0_1",
+        "message":"Before you leave, go to Tahalendor. He might give you something that helps against undead.",
         "replies":[
             {
+                "text":"Thank you.",
                 "nextPhraseID":"yolgen_castle_1"
             }
         ],
@@ -4191,6 +4509,11 @@
                 "rewardType":"questProgress",
                 "rewardID":"stoutford_castle",
                 "value":10
+            },
+            {
+                "rewardType":"questProgress",
+                "rewardID":"stoutford_castle",
+                "value":12
             }
         ]
     },
@@ -4280,12 +4603,89 @@
     },
     {
         "id":"stoutford_castle_3",
+        "replies":[
+            {
+                "nextPhraseID":"stoutford_castle_3_2",
+                "requires":[
+					{
+                        "requireType":"questProgress",
+                        "requireID":"stn_nondisplay",
+                        "value":148					
+					},
+					{
+                        "requireType":"questProgress",
+                        "requireID":"stn_nondisplay",
+                        "value":49					
+					}
+                ]
+            },
+            {
+                "nextPhraseID":"stoutford_castle_3a",
+                "requires":[
+					{
+                        "requireType":"questProgress",
+                        "requireID":"stn_nondisplay",
+                        "value":148					
+					}
+                ]
+            },
+            {
+                "nextPhraseID":"stoutford_castle_3_1"
+            }
+        ]
+    },
+    {
+        "id":"stoutford_castle_3_1",
         "message":"You see a heavily armed and cloaked skeleton moving towards you. This must be Lord Erwyn himself.",
         "switchToNPC":"none",
         "replies":[
             {
                 "text":"N",
+                "nextPhraseID":"stoutford_castle_3_1a"
+            }
+        ],
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"stn_nondisplay",
+                "value":148
+            }
+        ]
+    },
+    {
+        "id":"stoutford_castle_3_1a",
+        "replies":[
+            {
+                "nextPhraseID":"stoutford_castle_3_2",
+                "requires":[
+					{
+                        "requireType":"questProgress",
+                        "requireID":"stn_nondisplay",
+                        "value":49					
+					}
+				]
+            },
+            {
                 "nextPhraseID":"stoutford_castle_3a"
+            }
+        ]
+    },
+    {
+        "id":"stoutford_castle_3_2",
+        "message":"Did you come to serve me? On your knees!",
+        "switchToNPC":"erwyn2",
+        "replies":[
+            {
+                "text":"What would I gain from that?",
+                "nextPhraseID":"stoutford_castle_3b"
+            },
+            {
+                "text":"You are very rude and poorly educated. Maybe I should introduce myself? $playername is my name.",
+                "nextPhraseID":"stoutford_castle_3c"
+            },
+            {
+                "text":"I will serve you - my weapon. Attack!",
+                "nextPhraseID":"stoutford_castle_5"
             }
         ]
     },
@@ -4304,7 +4704,7 @@
             },
             {
                 "text":"I will serve you - my weapon. Attack!",
-                "nextPhraseID":"F"
+                "nextPhraseID":"stoutford_castle_5"
             }
         ]
     },
@@ -4334,11 +4734,257 @@
         "replies":[
             {
                 "text":"No, you are going to die once and for all!",
-                "nextPhraseID":"F"
+                "nextPhraseID":"stoutford_castle_5"
             },
             {
                 "text":"For the Shadow!",
+                "nextPhraseID":"stoutford_castle_5"
+            }
+        ]
+    },
+    {
+        "id":"stoutford_castle_5",
+        "replies":[
+            {
                 "nextPhraseID":"F"
+            }
+        ],
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"stn_nondisplay",
+                "value":48
+            }
+        ]
+    },
+    {
+        "id":"check_erwyn",
+        "replies":[
+            {
+                "nextPhraseID":"check_erwyn_1",
+                "requires":[
+                    {
+                        "requireType":"killedMonster",
+                        "requireID":"erwyn2",
+                        "value":1
+                    },
+					{
+                        "requireType":"questProgress",
+                        "requireID":"stn_nondisplay",
+                        "value":48
+					}
+                ]
+            },
+            {
+                "nextPhraseID":"check_erwyn",
+                "requires":[
+                    {
+                        "requireType":"killedMonster",
+                        "requireID":"erwyn2",
+                        "value":1
+                    },
+                    {
+                        "requireType":"inventoryRemove",
+                        "requireID":"erwyn_coin",
+                        "value":1
+                    }
+                ]
+            },
+            {
+                "nextPhraseID":"X",
+                "requires":[
+                    {
+                        "requireType":"killedMonster",
+                        "requireID":"erwyn2",
+                        "value":1
+                    }
+                ]
+            },
+            {
+                "nextPhraseID":"check_erwyn_2",
+                "requires":[
+                    {
+                        "requireType":"killedMonster",
+                        "requireID":"erwyn",
+                        "value":1
+                    },
+					{
+                        "requireType":"questProgress",
+                        "requireID":"stn_nondisplay",
+                        "value":48
+					},
+					{
+                        "requireType":"questProgress",
+                        "requireID":"stn_nondisplay",
+                        "value":49,
+						"negate":true
+					}
+                ]
+            },
+            {
+                "nextPhraseID":"check_erwyn_3a",
+                "requires":[
+                    {
+                        "requireType":"inventoryKeep",
+                        "requireID":"erwyn_coin",
+                        "value":2
+                    },
+					{
+                        "requireType":"questProgress",
+                        "requireID":"stn_nondisplay",
+                        "value":49,
+						"negate":true
+					}
+                ]
+            },
+            {
+                "nextPhraseID":"check_erwyn_3b",
+                "requires":[
+                    {
+                        "requireType":"inventoryKeep",
+                        "requireID":"erwyn_coin",
+                        "value":2,
+						"negate":true
+
+                    },
+					{
+                        "requireType":"questProgress",
+                        "requireID":"stn_nondisplay",
+                        "value":49					}
+                ]
+            }
+        ]
+    },
+    {
+        "id":"check_erwyn_1",
+        "message":"I followed Tahalendor's advice, and placed one coin in each eye socket. Not long after, Lord Erwyn's remains crumbled to dust. He is gone for good.",
+        "replies":[
+            {
+                "text":"N",
+				"nextPhraseID":"check_erwyn_1a"
+            }
+		],
+        "rewards":[
+            {
+                "rewardType":"removeQuestProgress",
+                "rewardID":"stn_nondisplay",
+                "value":48
+            }
+        ]
+    },
+    {
+        "id":"check_erwyn_1a",
+        "replies":[
+            {
+                "nextPhraseID":"check_erwyn_1a",
+                "requires":[
+                    {
+                        "requireType":"inventoryRemove",
+                        "requireID":"erwyn_coin",
+                        "value":1
+                    }
+                ]
+            }
+        ],
+        "rewards":[
+            {
+                "rewardType":"removeSpawnArea",
+                "rewardID":"erwyn",
+                "mapName":"stoutford_castle0"
+            }
+        ]
+    },
+    {
+        "id":"check_erwyn_2",
+        "replies":[
+            {
+                "nextPhraseID":"check_erwyn_2b",
+                "requires":[
+                    {
+                        "requireType":"killedMonster",
+                        "requireID":"erwyn",
+                        "value":2
+                    }
+                ]
+            }
+		],
+        "rewards":[
+            {
+                "rewardType":"spawnAll",
+                "rewardID":"erwyn",
+                "mapName":"stoutford_castle0"
+            },
+            {
+                "rewardType":"removeQuestProgress",
+                "rewardID":"stn_nondisplay",
+                "value":48
+            }
+        ]
+    },
+    {
+        "id":"check_erwyn_2b",
+        "message":"I'm not dead, so you can't kill me. Haha. You don't know much about the undead, do you kid? You can't destroy me!",
+        "replies":[
+            {
+                "nextPhraseID":"X",
+                "text":"There must be a way to put an end to this."
+            }
+        ],
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"stoutford_castle",
+                "value":5
+            }
+        ]
+    },
+    {
+        "id":"check_erwyn_3a",
+        "rewards":[
+            {
+                "rewardType":"removeSpawnArea",
+                "rewardID":"erwyn",
+                "mapName":"stoutford_castle0"
+            },
+            {
+                "rewardType":"spawnAll",
+                "rewardID":"erwyn2",
+                "mapName":"stoutford_castle0"
+            },
+            {
+                "rewardType":"removeQuestProgress",
+                "rewardID":"stn_nondisplay",
+                "value":48
+            },
+            {
+                "rewardType":"questProgress",
+                "rewardID":"stn_nondisplay",
+                "value":49
+            }
+        ]
+    },
+    {
+        "id":"check_erwyn_3b",
+        "rewards":[
+            {
+                "rewardType":"removeSpawnArea",
+                "rewardID":"erwyn2",
+                "mapName":"stoutford_castle0"
+            },
+            {
+                "rewardType":"spawnAll",
+                "rewardID":"erwyn",
+                "mapName":"stoutford_castle0"
+            },
+            {
+                "rewardType":"removeQuestProgress",
+                "rewardID":"stn_nondisplay",
+                "value":48
+            },
+            {
+                "rewardType":"removeQuestProgress",
+                "rewardID":"stn_nondisplay",
+                "value":49
             }
         ]
     },
@@ -4374,6 +5020,9 @@
                         "value":2
                     }
                 ]
+            },
+            {
+                "nextPhraseID":"yolgen_castle_1_1c"
             }
         ]
     },
@@ -8442,7 +9091,7 @@
     },
     {
         "id":"stn_gyra_29_130",
-        "message":"To find the helmet, we should really search all the rooms in the castle.",
+        "message":"To find the helmet, we should really search all the rooms within the castle and its walls.",
         "rewards":[
             {
                 "rewardType":"createTimer",
