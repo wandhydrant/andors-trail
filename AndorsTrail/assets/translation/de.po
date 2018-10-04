@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: Andors Trail\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-11-10 11:48+0000\n"
-"PO-Revision-Date: 2018-08-19 20:37+0000\n"
-"Last-Translator: Nut Andor <nut.andor@o2online.de>\n"
+"PO-Revision-Date: 2018-10-06 00:29+0000\n"
+"Last-Translator: Mo Ro <moritzneuemail@gmail.com>\n"
 "Language-Team: German <https://hosted.weblate.org/projects/andors-trail/"
 "game-content/de/>\n"
 "Language: de\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.2-dev\n"
+"X-Generator: Weblate 3.2\n"
 "X-Launchpad-Export-Date: 2015-11-02 12:28+0000\n"
 
 #: [none]
@@ -207,7 +207,7 @@ msgstr "Kleiner Stich"
 
 #: actorconditions_stoutford.json:confusion
 msgid "Confusion"
-msgstr ""
+msgstr "Verwirrung"
 
 #: actorconditions_stoutford.json:clumsiness
 msgid "Clumsiness"
@@ -223,11 +223,11 @@ msgstr ""
 
 #: actorconditions_graveyard1.json:petrification
 msgid "Petrification"
-msgstr ""
+msgstr "Versteinerung"
 
 #: actorconditions_graveyard1.json:vulnerability
 msgid "Vulnerability"
-msgstr ""
+msgstr "Verwundbarkeit"
 
 #: actorconditions_graveyard1.json:flesh_rot
 msgid "Flesh rot"
@@ -263,7 +263,7 @@ msgstr ""
 
 #: actorconditions_stoutford_combined.json:poison_blood
 msgid "Blood poisoning"
-msgstr ""
+msgstr "Blutvergiftung"
 
 #: actorconditions_stoutford_combined.json:deftness
 msgid "Deftness"
@@ -303,7 +303,7 @@ msgstr "Kann ich dir noch bei etwas anderem helfen?"
 #: conversationlist_mikhail.json:mikhail_default:1
 #: conversationlist_mikhail.json:mikhail_default:2
 msgid "Do you have any more tasks for me?"
-msgstr ""
+msgstr "Hast du noch weitere Aufgaben für mich?"
 
 #: conversationlist_mikhail.json:mikhail_default:3
 msgid "Do you have any tasks for me?"
@@ -336,15 +336,18 @@ msgstr "Reden wir über die anderen Dinge."
 
 #: conversationlist_mikhail.json:mikhail_bread_done
 msgid "Thanks for getting me the bread. There are still the rats."
-msgstr ""
+msgstr "Danke, dass du mit das Brot geholt hast. Da sind noch immer die Ratten."
 
 #: conversationlist_mikhail.json:mikhail_rats_done
 msgid "Thanks for taking care of the rats. I'd still love some bread."
 msgstr ""
+"Danke, dass du dich der Ratten angenommen hast. lch hätte gerne noch etwas "
+"Brot."
 
 #: conversationlist_mikhail.json:mikhail_all_tasks_done
 msgid "Not for now. Thanks for taking care of the bread and rats."
 msgstr ""
+"Jetzt nicht. Danke, dass du dich um das Brot und die Ratten gekümmert hast."
 
 #: conversationlist_mikhail.json:mikhail_andor1
 msgid "As I said, Andor went out yesterday and hasn't been back since. I'm starting to worry about him. Please go look for your brother, he said he would only be out a short while."
@@ -467,6 +470,8 @@ msgstr ""
 #: conversationlist_mikhail_foodpoison.json:mikhail_rats_start2c
 msgid "Me, I can't really afford the meat, so I just stick to my bread!"
 msgstr ""
+"Ich kann mir das Fleisch wirklich nicht leisten, also bleibe ich bei meinem "
+"Brot!"
 
 #: conversationlist_crossglen.json:audir1
 msgid ""
@@ -2940,10 +2945,13 @@ msgstr "Ein Wächter, sagst du? Das sind beunruhigende Nachrichten und bedeutet,
 #: conversationlist_flagstone.json:flagstone_sentry_21
 msgid "You should look for the former warden. Maybe he has something to do with all of this. If you find him you should return here with any important news."
 msgstr ""
+"Du solltest nach dem früheren Wächter schauen. Vielleicht hat er mit dem "
+"Ganzen etwas zu tun. Wenn du ihn findest komm mit allen wichtigen "
+"Neuigkeiten hierher zurück."
 
 #: conversationlist_flagstone.json:flagstone_sentry_21:0
 msgid "OK, I will go and look for the former warden."
-msgstr ""
+msgstr "In Ordnung, Ich werde losziehen und nach dem früheren Wächter schauen."
 
 #: conversationlist_flagstone.json:flagstone_sentry_23
 msgid "Oh this looks most interesting. Let's take a look. Hmm. It has got some weird inscriptions on it that say 'Daylight Shadow'. Maybe you could try these words on the demon? So perhaps the warden did have something to do with the demon after all?"
@@ -2951,7 +2959,7 @@ msgstr ""
 
 #: conversationlist_flagstone.json:flagstone_sentry_23:0
 msgid "That might work. Thank you."
-msgstr ""
+msgstr "Das funktioniert vielleicht. Vielen Dank."
 
 #: conversationlist_flagstone.json:flagstone_sentry_return2
 msgid "Hello again. Have you found the former warden in Flagstone yet?"
@@ -2963,7 +2971,7 @@ msgstr ""
 
 #: conversationlist_flagstone.json:flagstone_sentry_return2:2
 msgid "Not yet. I have to keep looking."
-msgstr ""
+msgstr "Noch nicht. Ich muss weiter suchen."
 
 #: conversationlist_flagstone.json:flagstone_sentry_40
 msgid "You found the necklace? Good. Here, give it to me."
@@ -3068,7 +3076,7 @@ msgstr ""
 #: conversationlist_fallhaven_south.json:fallhaven_lumberjack_2:2
 #: conversationlist_fallhaven_south.json:fallhaven_lumberjack_15:1
 msgid "What have you got for sale?"
-msgstr ""
+msgstr "Was hast du zu verkaufen?"
 
 #: conversationlist_fallhaven_south.json:alaun
 msgid "Hello. I'm Alaun. How can I help you?"
@@ -3106,7 +3114,7 @@ msgstr ""
 
 #: conversationlist_fallhaven_south.json:fallhaven_lumberjack_3:0
 msgid "Is there anything that would change your mind?"
-msgstr ""
+msgstr "Würde irgendetwas deine Meinung ändern?"
 
 #: conversationlist_fallhaven_south.json:fallhaven_lumberjack_3:1
 msgid "Seems like nobody wants to open the road again. Great."
@@ -3118,7 +3126,7 @@ msgstr ""
 
 #: conversationlist_fallhaven_south.json:fallhaven_lumberjack_4:0
 msgid "Sure! What is it?"
-msgstr ""
+msgstr "Klar! Was ist es?"
 
 #: conversationlist_fallhaven_south.json:fallhaven_lumberjack_5
 msgid "Let me tell you a story. Long ago, I was cutting in the woods to the north of Fallhaven. I used to cut the trees with great speed with my favorite axe. It was made of fine steel and probably worth more than my hut."
@@ -3127,10 +3135,15 @@ msgstr ""
 #: conversationlist_fallhaven_south.json:fallhaven_lumberjack_6
 msgid "But then, I got attacked by a pack of wolves and I had to flee immediately. I barely saved my life, but during the escape I lost my precious axe."
 msgstr ""
+"Aber dann wurde ich von einem Wolfsrudel angegriffen und musste schleunigst "
+"fliehen. Ich habe gerade so mein Leben gerettet, allerdings habe ich meine "
+"wertvolle Axt während der Flucht verloren."
 
 #: conversationlist_fallhaven_south.json:fallhaven_lumberjack_7
 msgid "I'm afraid of travelling to that place again because I'm not a trained fighter and the wolves, especially their leader, were really powerful."
 msgstr ""
+"Ich habe Angst davor nochmal zu dem Ort zu reisen, da ich kein trainierter "
+"Kämpfer bin und die Wölfe, vor allem ihr Anführer, wirklich stark waren."
 
 #: conversationlist_fallhaven_south.json:fallhaven_lumberjack_7:0
 msgid "So I guess you want me to retrieve your axe?"
@@ -3146,7 +3159,7 @@ msgstr ""
 
 #: conversationlist_fallhaven_south.json:fallhaven_lumberjack_8:1
 msgid "No way! That is far too dangerous!"
-msgstr ""
+msgstr "Auf keinen Fall! Das ist viel zu gefährlich!"
 
 #: conversationlist_fallhaven_south.json:fallhaven_lumberjack_9
 msgid "Have you made any progress in finding my axe?"
@@ -3155,22 +3168,25 @@ msgstr ""
 #: conversationlist_fallhaven_south.json:fallhaven_lumberjack_10
 msgid "Let me see... Oh yes! This is my axe! I cannot thank you enough!"
 msgstr ""
+"Lass mich sehen... Oh ja! Das ist meine Axt! Ich kann dir nicht genug danken!"
 
 #: conversationlist_fallhaven_south.json:fallhaven_lumberjack_10:0
 msgid "So will you cut away those trees that block the old pathway?"
-msgstr ""
+msgstr "Also wirst du die Bäume auf dem alten Pfad fällen?"
 
 #: conversationlist_fallhaven_south.json:fallhaven_lumberjack_11
 msgid "Sure! Already on my way! The work will be finished soon."
-msgstr ""
+msgstr "Sicher! Bin bereits auf dem Weg! Die Arbeit wird schnell erledigt sein."
 
 #: conversationlist_fallhaven_south.json:fallhaven_lumberjack_11:0
 msgid "That sounds great! Remember to ask the stupid warden for a decent payment."
 msgstr ""
+"Das hört sich großartig an! Denk daran den einfältigen Wächter nach einer "
+"angemessenen Bezahlung zu fragen."
 
 #: conversationlist_fallhaven_south.json:fallhaven_lumberjack_12
 msgid "Sure. Will do that. He he."
-msgstr ""
+msgstr "Klar. Das werde ich. He he."
 
 #: conversationlist_fallhaven_south.json:fallhaven_lumberjack_12:1
 #: conversationlist_alynndir.json:alynndir_6:0
@@ -3189,7 +3205,7 @@ msgstr ""
 
 #: conversationlist_fallhaven_south.json:fallhaven_lumberjack_13:0
 msgid "Great. Now everything is much better than it was before!"
-msgstr ""
+msgstr "Großartig. Jetzt ist alles viel besser als vorher!"
 
 #: conversationlist_fallhaven_south.json:fallhaven_lumberjack_13:1
 msgid "I wanted to ask about something else."
@@ -3205,23 +3221,25 @@ msgstr ""
 
 #: conversationlist_fallhaven_south.json:fallhaven_lumberjack_14:1
 msgid "No I haven't. But I'm working on it."
-msgstr ""
+msgstr "Nein, habe ich nicht. Aber ich arbeite daran."
 
 #: conversationlist_fallhaven_south.json:fallhaven_lumberjack_15
 msgid "Hello again my friend."
-msgstr ""
+msgstr "Hallo nochmal mein Freund."
 
 #: conversationlist_fallhaven_south.json:fallhaven_lumberjack_15:0
 msgid "I cannot thank you enough for cutting away those trees! Finally I've got a shortcut!"
 msgstr ""
+"Ich kann dir nicht genug dafür danken, dass du diese Bäume gefällt hast! "
+"Endlich haben wir eine Abkürzung!"
 
 #: conversationlist_fallhaven_south.json:fallhaven_lumberjack_15:2
 msgid "Nevermind. I don't need your services for now."
-msgstr ""
+msgstr "Vergiss es. Ich brauche deine Dienste jetzt nicht."
 
 #: conversationlist_fallhaven_south.json:fallhaven_lumberjack_16
 msgid "Thank you for bringing me back my axe!"
-msgstr ""
+msgstr "Danke, dass du mir meine Axt zurück gebracht hast!"
 
 #: conversationlist_fallhaven_south.json:fallhaven_lumberjack_16:0
 msgid "So will you cut away those trees which block the old pathway?"
@@ -3854,6 +3872,8 @@ msgstr "Die Diebe planen ihren Freund zu befreien."
 #: conversationlist_fallhaven_warden.json:fallhaven_warden_36:1
 msgid "I recently talked to the watchman who blocks the old pathway to the Duleian Road. Why don't you just pay the woodcutter?"
 msgstr ""
+"Ich habe neulich mit dem Wächter gesprochen der den alten Pfad zur Dulein "
+"Strasse blockiert. Wieso bezahlst du nicht einfach den Holzfäller?"
 
 #: conversationlist_fallhaven_warden.json:warden_prisoner_1
 msgid "That thief? He was caught in the act. Trespassing he was. Trying to get down into the catacombs of Fallhaven church."
@@ -3963,7 +3983,7 @@ msgstr "Hallo nochmal, Junge. Danke für das Getränk vorhin. Ich habe alles auf
 
 #: conversationlist_fallhaven_warden.json:fallhaven_warden_11:0
 msgid "That's great! Cheers!"
-msgstr ""
+msgstr "Das ist Großartig! Prost!"
 
 #: conversationlist_fallhaven_warden.json:fallhaven_warden_12
 msgid "Hello again, kid. Thanks for the drink earlier. I still haven't had it."
@@ -4052,7 +4072,7 @@ msgstr ""
 
 #: conversationlist_fallhaven_warden.json:fallhaven_warden_pathway_2:0
 msgid "So where can I find him?"
-msgstr ""
+msgstr "Also wo kann ich ihn finden?"
 
 #: conversationlist_fallhaven_warden.json:fallhaven_warden_pathway_3
 msgid "He is lives in his hut, immediately south of my prison. Don't you bother me again!"
@@ -4060,11 +4080,11 @@ msgstr ""
 
 #: conversationlist_fallhaven_warden.json:fallhaven_warden_pathway_3:0
 msgid "Easy. Easy. I'm already leaving."
-msgstr ""
+msgstr "Gemach. Gemach. Ich gehe ja schon."
 
 #: conversationlist_fallhaven_warden.json:fallhaven_warden_pathway_3:1
 msgid "I wanted to leave your shabby prison anyway."
-msgstr ""
+msgstr "Ich wollte dein schäbiges Gefängnis sowieso verlassen."
 
 #: conversationlist_umar.json:umar_return_1
 msgid "Hello again, my friend."
@@ -6891,7 +6911,7 @@ msgstr "Danke für dein Mitgefühl."
 #: conversationlist_stoutford.json:yolgen_initial_0:6
 #: conversationlist_stoutford.json:yolgen_rumblings10_5:1
 msgid "Is there anything I can do to help?"
-msgstr ""
+msgstr "Kann ich irgendwie helfen?"
 
 #: conversationlist_prim_inn.json:laecca_9
 msgid "Pfft, 'What beasts?'. The Gornaud beasts of course."
@@ -16278,7 +16298,7 @@ msgstr "Oh, hallo. Ich kann jetzt nicht mit dir reden, muss hier noch fertig ein
 #: conversationlist_remgard_villagers1.json:remgard_farmer1:0
 #: conversationlist_remgard_villagers1.json:remgard_farmer2:0
 msgid "Do you know where I can find some Damerilias ?"
-msgstr ""
+msgstr "Weißt du wo ich etwas Damerilias finden kann?"
 
 #: conversationlist_remgard_villagers1.json:remgard_farmer2
 msgid "I hope the lands will be good to us this season."
@@ -17610,11 +17630,11 @@ msgstr "Khorailla ruft dir zu: Hey! Geh da weg!"
 
 #: conversationlist_charwood1.json:khorailla_cheddar
 msgid "Ah, you really know what's good."
-msgstr ""
+msgstr "Ah, du weißt wirklich was gut ist."
 
 #: conversationlist_charwood1.json:khorailla_cheddar:0
 msgid "I hope so. It was a long way to come."
-msgstr ""
+msgstr "Das hoffe ich. Es war ein langer Weg hierher."
 
 #: conversationlist_charwood2.json:charwoodm
 msgid "Bow before the might of the Thukuzun!"
@@ -19456,18 +19476,26 @@ msgstr "Du hast hier eine große Tat vollbracht. Auf Wiedersehen. Pass auf Dich 
 #: conversationlist_lodar.json:lodar_shortcut_0
 msgid "Hmm, I remember seeing a cave under the former cave of the Hira'zinn. I don't know where it leads to but maybe you could give it a try and search for a shortcut through this cave?"
 msgstr ""
+"Hmm, ich erinnere mich daran eine Höhle unter der ehemaligen Hira'zinn Höhle "
+"gesehen zu haben. Ich weiß nicht wo sie hinführt aber vielleicht kannst du "
+"dein Glück versuchen und nach einer Abkürzung durch diese Höhle suchen?"
 
 #: conversationlist_lodar.json:lodar_shortcut_0:0
 msgid "Thanks for your advice! I'll check it out!"
-msgstr ""
+msgstr "Danke für deinen Rat! Ich werde es mir anschauen!"
 
 #: conversationlist_lodar.json:shortcut_lodar_1
 msgid "Hmm, this is interesting. I have heard of such artifacts being teleporters but have never seen one myself. Here, take this vial and pour it over the torch. We will see what happens. I should tell you that this may be very dangerous. The artifact could respond differently than I think and could even kill you."
 msgstr ""
+"Hmm, das ist interessant. Ich habe von solchen Artefakten zur Teleportation "
+"gehört aber nie selber eines gesehen. Hier, nimm diese Ampulle und gieße es "
+"über die Fackel. Wir werden sehen was passiert. Ich sollte dir sagen, dass "
+"es eventuell gefährlich seinkönnte. Das Artefakt könnte anders reagieren als "
+"ich denke und dich sogar töten."
 
 #: conversationlist_lodar.json:shortcut_lodar_1:0
 msgid "Thanks, I'll try it. Danger is my specialty."
-msgstr ""
+msgstr "Danke, ich werde es versuchen. Gefahr ist meine Spezialität."
 
 #: conversationlist_lodar.json:shortcut_lodar_1:1
 msgid "I hope it will be ok."
@@ -21104,7 +21132,7 @@ msgstr ""
 
 #: conversationlist_pathway_fallhaven.json:guard_pathway_0:0
 msgid "Why not?"
-msgstr ""
+msgstr "Wieso nicht?"
 
 #: conversationlist_pathway_fallhaven.json:guard_pathway_0:1
 msgid "Never mind. Shadow be with you."
@@ -21116,7 +21144,7 @@ msgstr ""
 
 #: conversationlist_pathway_fallhaven.json:guard_pathway_1:0
 msgid "Why doesn't he want to do this work?"
-msgstr ""
+msgstr "Wieso möchte er nicht arbeiten?"
 
 #: conversationlist_pathway_fallhaven.json:guard_pathway_2
 msgid "You're really curious boy... Well our superior, the warden, only wants to pay the woodcutter when he has done his work."
@@ -21124,15 +21152,15 @@ msgstr ""
 
 #: conversationlist_pathway_fallhaven.json:guard_pathway_2:0
 msgid "Maybe I could help?"
-msgstr ""
+msgstr "Vielleicht kann ich helfen?"
 
 #: conversationlist_pathway_fallhaven.json:guard_pathway_2:1
 msgid "Well, this is your problem. Goodbye."
-msgstr ""
+msgstr "Nun, das ist dein Problem. Alles Gute."
 
 #: conversationlist_pathway_fallhaven.json:guard_pathway_3
 msgid "You? You're just a kid!"
-msgstr ""
+msgstr "Du? Du bist nur ein Kind!"
 
 #: conversationlist_pathway_fallhaven.json:guard_pathway_3:0
 msgid "You're right, but I'd really love to be able to take this path."
@@ -37806,4 +37834,3 @@ msgstr ""
 #: worldmap.xml:world1:guynmart_area
 msgid "Guynmart Castle"
 msgstr ""
-
