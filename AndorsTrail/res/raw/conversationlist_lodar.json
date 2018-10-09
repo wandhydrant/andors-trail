@@ -250,7 +250,7 @@
     },
     {
         "id":"lodar_12",
-        "message":"Good. Take this stone, it will allow you to enter the tomb. Go below. Return once you're done.\n\n[Lodar hands you an odd looking stone that seems to be glowing from within]",
+        "message":"[Lodar hands you an odd looking stone that seems to be glowing from within]\nGood. Take this stone, it will allow you to enter the tomb. Go below. Return once you're done.",
         "replies":[
             {
                 "text":"You're not very good at giving directions, old man. I'll try to do what you ask.",
@@ -2116,7 +2116,7 @@
                 "nextPhraseID":"lodar_d1"
             },
             {
-                "text":"(Lie) Sure, this will be a secret between us.",
+                "text":"[Lie] Sure, this will be a secret between us.",
                 "nextPhraseID":"lodar_d1"
             }
         ]

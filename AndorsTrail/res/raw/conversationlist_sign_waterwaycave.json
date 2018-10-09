@@ -4,11 +4,11 @@
         "message":"You notice a slight draft blowing across your ankles as you stand admiring the quality of this woven coil of rope.",
         "replies":[
             {
-                "text":"Take the rope.",
+                "text":"[Take the rope]",
                 "nextPhraseID":"sign_waterwaycave2"
             },
             {
-                "text":"Leave it alone.",
+                "text":"[Leave it alone]",
                 "nextPhraseID":"X"
             }
         ]
@@ -19,10 +19,10 @@
     },
     {
         "id":"sign_bwm31",
-        "message":"(You notice some torn papers on the floor. From the looks of it, these pages seem to have been torn from a larger journal.)",
+        "message":"You notice some torn papers on the floor. From the looks of it, these pages seem to have been torn from a larger journal.",
         "replies":[
             {
-                "text":"Read the journal.",
+                "text":"[Read the journal]",
                 "nextPhraseID":"sign_bwm31_1"
             }
         ]
@@ -69,10 +69,10 @@
     },
     {
         "id":"sign_bwm31_5",
-        "message":"(The paper is full of dirt, but you still manage to read most of it)",
+        "message":"[The paper is full of dirt, but you still manage to read most of it]",
         "replies":[
             {
-                "text":"Continue reading.",
+                "text":"[Continue reading]",
                 "nextPhraseID":"sign_bwm31_6"
             }
         ]
@@ -102,7 +102,7 @@
         "message":"Getting weaker. Must rest.",
         "replies":[
             {
-                "text":"Continue reading.",
+                "text":"[Continue reading]",
                 "nextPhraseID":"sign_bwm31_9"
             }
         ]
@@ -152,7 +152,7 @@
         "message":"Maybe if I gather enough of these potions from the monsters around the cabin, I might have enough to safely make it down again.",
         "replies":[
             {
-                "text":"Continue reading.",
+                "text":"[Continue reading]",
                 "nextPhraseID":"sign_bwm31_14"
             }
         ]
@@ -189,6 +189,6 @@
     },
     {
         "id":"sign_bwm31_17",
-        "message":"(The journal has no more pages)"
+        "message":"[The journal has no more pages]"
     }
 ]
