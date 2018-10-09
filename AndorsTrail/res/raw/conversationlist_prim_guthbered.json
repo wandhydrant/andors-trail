@@ -119,10 +119,10 @@
     },
     {
         "id":"guthbered_reject",
-        "message":"You again? Leave this place and go to your friends up in the Blackwater Mountain settlement instead. We want no business with you.",
+        "message":"You again? Leave this place and go to your friends up in the Blackwater mountain settlement instead. We want no business with you.",
         "replies":[
             {
-                "text":"I am here to give you a message from the Blackwater Mountain settlement.",
+                "text":"I am here to give you a message from the Blackwater mountain settlement.",
                 "nextPhraseID":"guthbered_attacks",
                 "requires":[
                     {
@@ -139,7 +139,7 @@
         "message":"What message?",
         "replies":[
             {
-                "text":"Harlenn in the Blackwater Mountain settlement wants you to stop your attacks on their settlement.",
+                "text":"Harlenn in the Blackwater mountain settlement wants you to stop your attacks on their settlement.",
                 "nextPhraseID":"guthbered_attacks_1"
             }
         ]
@@ -157,7 +157,7 @@
     },
     {
         "id":"guthbered_return_1_1",
-        "message":"Welcome back, traveller. Did you talk to Harlenn up in the Blackwater Mountain settlement?",
+        "message":"Welcome back, traveller. Did you talk to Harlenn up in the Blackwater mountain settlement?",
         "replies":[
             {
                 "text":"Can you tell me the story about the monsters again?",
@@ -183,7 +183,7 @@
                 ]
             },
             {
-                "text":"Actually, I am here to give you a message from the Blackwater Mountain settlement.",
+                "text":"Actually, I am here to give you a message from the Blackwater mountain settlement.",
                 "nextPhraseID":"guthbered_attacks",
                 "requires":[
                     {
@@ -219,7 +219,7 @@
                 ]
             },
             {
-                "text":"Actually, I am here to give you a message from the Blackwater Mountain settlement.",
+                "text":"Actually, I am here to give you a message from the Blackwater mountain settlement.",
                 "nextPhraseID":"guthbered_attacks",
                 "requires":[
                     {
@@ -455,7 +455,7 @@
     },
     {
         "id":"guthbered_19",
-        "message":"Those evil bastards up in the Blackwater Mountain settlement probably summoned them to attack us. They would rather see us perish.",
+        "message":"Those evil bastards up in the Blackwater mountain settlement probably summoned them to attack us. They would rather see us perish.",
         "replies":[
             {
                 "text":"N",
@@ -499,7 +499,7 @@
         "message":"We used to trade with them up there, but that all changed once they got greedy.",
         "replies":[
             {
-                "text":"I met a man outside the collapsed mine saying he was from the Blackwater Mountain settlement.",
+                "text":"I met a man outside the collapsed mine saying he was from the Blackwater mountain settlement.",
                 "nextPhraseID":"guthbered_26"
             },
             {
@@ -559,7 +559,7 @@
     },
     {
         "id":"guthbered_26",
-        "message":"A man, from the Blackwater settlement, you say?",
+        "message":"A man, from the Blackwater mountain settlement, you say?",
         "replies":[
             {
                 "text":"N",
@@ -589,7 +589,7 @@
     },
     {
         "id":"guthbered_29",
-        "message":"As I said, we believe those bastards up at the Blackwater Mountain settlement are behind the monster attacks somehow.",
+        "message":"As I said, we believe those bastards up at the Blackwater mountain settlement are behind the monster attacks somehow.",
         "replies":[
             {
                 "text":"N",
@@ -602,7 +602,7 @@
         "message":"I want you to go up there to their settlement and ask their battle master, Harlenn, why they are doing this to us.",
         "replies":[
             {
-                "text":"OK, I will go ask Harlenn in the Blackwater Mountain settlement why they are attacking your village.",
+                "text":"OK, I will go ask Harlenn in the Blackwater mountain settlement why they are attacking your village.",
                 "nextPhraseID":"guthbered_31"
             }
         ],
@@ -691,7 +691,7 @@
                 "nextPhraseID":"guthbered_talkedto_harl_8"
             },
             {
-                "text":"Hmm, maybe I should help the people up in Blackwater Mountain instead.",
+                "text":"Hmm, maybe I should help the people up in Blackwater mountain instead.",
                 "nextPhraseID":"guthbered_workingforbwm_1"
             },
             {
@@ -716,7 +716,7 @@
                 "nextPhraseID":"guthbered_talkedto_harl_8"
             },
             {
-                "text":"Why would I ever want to work for your filthy village? The people in the Blackwater Mountain settlement deserve my help more than you.",
+                "text":"Why would I ever want to work for your filthy village? The people in the Blackwater mountain settlement deserve my help more than you.",
                 "nextPhraseID":"guthbered_workingforbwm_1"
             }
         ]
@@ -795,7 +795,7 @@
     },
     {
         "id":"guthbered_lookforsigns_1",
-        "message":"Hello again. Did you find anything up in the Blackwater Mountain settlement?",
+        "message":"Hello again. Did you find anything up in the Blackwater mountain settlement?",
         "replies":[
             {
                 "text":"No, I am still looking.",
@@ -926,7 +926,7 @@
     },
     {
         "id":"guthbered_workingforbwm_2",
-        "message":"My sources from inside the Blackwater Mountain settlement tell me you are working for them.",
+        "message":"My sources from inside the Blackwater mountain settlement tell me you are working for them.",
         "replies":[
             {
                 "text":"N",
@@ -947,7 +947,7 @@
     },
     {
         "id":"guthbered_completed",
-        "message":"Hello again my friend. Thank you for your help in dealing with the bandits up in Blackwater Mountain.",
+        "message":"Hello again my friend. Thank you for your help in dealing with the bandits up in Blackwater mountain.",
         "replies":[
             {
                 "text":"N",
@@ -988,11 +988,11 @@
         "message":"The glow in your eyes frightens me.",
         "replies":[
             {
-                "text":"I am sent by the Blackwater Mountain settlement to stop you.",
+                "text":"I am sent by the Blackwater mountain settlement to stop you.",
                 "nextPhraseID":"guthbered_sentbybwm_fight"
             },
             {
-                "text":"I am sent by the Blackwater Mountain settlement to stop you. However, I have decided not to kill you.",
+                "text":"I am sent by the Blackwater mountain settlement to stop you. However, I have decided not to kill you.",
                 "nextPhraseID":"guthbered_sentbybwm_3"
             }
         ]
@@ -1100,7 +1100,7 @@
     },
     {
         "id":"guthbered_killharl_1",
-        "message":"Hello again. Did you manage to remove that bastard battle master Harlenn from the Blackwater Mountain settlement?",
+        "message":"Hello again. Did you manage to remove that bastard battle master Harlenn from the Blackwater mountain settlement?",
         "replies":[
             {
                 "text":"Can you tell me again what I was supposed to do?",
@@ -1204,7 +1204,7 @@
     },
     {
         "id":"guthbered_killharl_7",
-        "message":"This is a permit that we have ... produced, which according to our sources, will allow you to enter their inner chamber in the Blackwater Mountain settlement.",
+        "message":"This is a permit that we have ... produced, which according to our sources, will allow you to enter their inner chamber in the Blackwater mountain settlement.",
         "replies":[
             {
                 "text":"N",
