@@ -97,7 +97,7 @@
         "message":"Then you better go take care of that first!",
         "replies":[
             {
-                "text":"Ok, I will be back once the lich is defeated.",
+                "text":"OK, I will be back once the lich is defeated.",
                 "nextPhraseID":"X"
             }
         ]
@@ -174,7 +174,7 @@
     },
     {
         "id":"talion_infect_12",
-        "message":"Or .. well .. actually, nine items in total, but four different types. Eh .. well, you get the idea.",
+        "message":"Or ... well ... actually, nine items in total, but four different types. Eh ... well, you get the idea.",
         "replies":[
             {
                 "text":"N",
@@ -217,7 +217,7 @@
         "message":"Now, I have not seen an Irdegh myself, but I hear they are particularly nasty creatures. Venomous like nothing I've heard of.",
         "replies":[
             {
-                "text":"Ok, one Irdegh poison gland. Where can I find one?",
+                "text":"OK, one Irdegh poison gland. Where can I find one?",
                 "nextPhraseID":"talion_infect_17"
             },
             {
@@ -248,7 +248,7 @@
     },
     {
         "id":"talion_infect_19",
-        "message":"Bring me these things and I will be able to help you with your .. condition.",
+        "message":"Bring me these things and I will be able to help you with your ... condition.",
         "replies":[
             {
                 "text":"Very well, I will be back shortly.",
@@ -666,7 +666,7 @@
     },
     {
         "id":"talion_cure_2",
-        "message":"Now, let's get this cure started. I just need to grind this .. and mix those .. and ..",
+        "message":"Now, let's get this cure started. I just need to grind this ... and mix those ... and...",
         "replies":[
             {
                 "text":"N",
@@ -774,7 +774,7 @@
                 "nextPhraseID":"talion_cured_4"
             },
             {
-                "text":"Ok, I will hold on to it.",
+                "text":"OK, I will hold on to it.",
                 "nextPhraseID":"talion_cured_7"
             },
             {
@@ -785,7 +785,7 @@
     },
     {
         "id":"talion_cured_4",
-        "message":"Well, you never know. Some people really like .. exotic things.",
+        "message":"Well, you never know. Some people really like ... exotic things.",
         "replies":[
             {
                 "text":"N",
@@ -842,7 +842,7 @@
     },
     {
         "id":"talion_cured_10",
-        "message":"Yes. Well .. for a fee of course.",
+        "message":"Yes. Well ... for a fee of course.",
         "replies":[
             {
                 "text":"What blessings can you provide?",
@@ -855,19 +855,19 @@
         "message":"I am able to bless you with either the Shadow's strength, regeneration, accuracy, or even the blessing of the Shadow guardian.",
         "replies":[
             {
-                "text":"I'm interested in the blessing of Shadow strength",
+                "text":"I'm interested in the blessing of Shadow strength.",
                 "nextPhraseID":"talion_bless_str_1"
             },
             {
-                "text":"I'm interested in the blessing of Shadow regeneration",
+                "text":"I'm interested in the blessing of Shadow regeneration.",
                 "nextPhraseID":"talion_bless_heal_1"
             },
             {
-                "text":"I'm interested in the blessing of Shadow accuracy",
+                "text":"I'm interested in the blessing of Shadow accuracy.",
                 "nextPhraseID":"talion_bless_acc_1"
             },
             {
-                "text":"I'm interested in the Shadow guardian blessing",
+                "text":"I'm interested in the Shadow guardian blessing.",
                 "nextPhraseID":"talion_bless_guard_1"
             },
             {
@@ -881,7 +881,7 @@
         "message":"The blessing of Shadow strength grants you more strength while attacking, thus increasing the amount of damage you do on each hit. I can give you the blessing for 300 gold.",
         "replies":[
             {
-                "text":"Ok, I'll take it for 300 gold.",
+                "text":"OK, I'll take it for 300 gold.",
                 "nextPhraseID":"talion_bless_str_2",
                 "requires":[
                     {
@@ -902,7 +902,7 @@
         "message":"The blessing of Shadow regeneration will slowly heal you back if you get hurt. I can give you the blessing for 250 gold.",
         "replies":[
             {
-                "text":"Ok, I'll take it for 250 gold.",
+                "text":"OK, I'll take it for 250 gold.",
                 "nextPhraseID":"talion_bless_heal_2",
                 "requires":[
                     {
@@ -923,7 +923,7 @@
         "message":"The blessing of Shadow accuracy grants you a keen sense of where best to strike your opponent, thus increasing the chance of a successful hit while fighting. I can give you the blessing for 250 gold.",
         "replies":[
             {
-                "text":"Ok, I'll take it for 250 gold.",
+                "text":"OK, I'll take it for 250 gold.",
                 "nextPhraseID":"talion_bless_acc_2",
                 "requires":[
                     {
@@ -944,7 +944,7 @@
         "message":"Ah yes, the blessing of the Shadow guardian. The Shadow protects you in dark places, and keeps you safe where others might not see. I can give you the blessing for 400 gold.",
         "replies":[
             {
-                "text":"Ok, I'll take it for 400 gold.",
+                "text":"OK, I'll take it for 400 gold.",
                 "nextPhraseID":"talion_bless_guard_2",
                 "requires":[
                     {

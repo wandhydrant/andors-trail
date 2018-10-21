@@ -170,7 +170,7 @@
         "nextPhraseID": "X"
       }
     ],
-    "message": "Okay. But only because it's you M. Coder."
+    "message": "OK. But only because it's you M. Coder."
   },
   {
     "id": "debugrequires10gold_3",
@@ -183,28 +183,56 @@
     "message": "Sorry. You already spent 100 gold..."
   },
   {
-        "message":"Hmmm.... Beer....",
+        "message":"Hmm... beer...",
         "id":"signbeer"
     },
     {
-        "message":"Do you want beer ?",
+        "message":"Do you want beer?",
         "id":"npc3_0",
         "replies":[
             {
                 "nextPhraseID":"npc3_1",
                 "text":"Beer!"
             },
-            {
-                "nextPhraseID":"npc3_2",
-                "text":"Lights out!"
-            },
            	{
                 "nextPhraseID":"npc3_3",
-                "text":"Lights on!"
+                "text":"No filter!"
+            },
+            {
+                "nextPhraseID":"npc3_5",
+                "text":"Black 20%!"
+            },
+            {
+                "nextPhraseID":"npc3_6",
+                "text":"Black 40%!"
+            },
+            {
+                "nextPhraseID":"npc3_7",
+                "text":"Black 60%!"
+            },
+            {
+                "nextPhraseID":"npc3_2",
+                "text":"Black 80%!"
             },
             {
                 "nextPhraseID":"npc3_4",
                 "text":"Red ligths!"
+            },
+            {
+                "nextPhraseID":"npc3_9",
+                "text":"Green ligths!"
+            },
+            {
+                "nextPhraseID":"npc3_10",
+                "text":"Blue ligths!"
+            },
+            {
+                "nextPhraseID":"npc3_11",
+                "text":"Black & White!"
+            },
+            {
+                "nextPhraseID":"npc3_8",
+                "text":"Invert!"
             }
         ]
     },
@@ -235,7 +263,7 @@
     },
     {
     	"id":"npc3_2",
-    	"message":"Ok.",
+    	"message":"OK.",
     	"rewards":[
         	{
             	"rewardType":"changeMapFilter",
@@ -246,7 +274,7 @@
 	},
     {
     	"id":"npc3_3",
-    	"message":"Ok.",
+    	"message":"OK.",
     	"rewards":[
         	{
             	"rewardType":"changeMapFilter",
@@ -257,11 +285,88 @@
 	},
     {
     	"id":"npc3_4",
-    	"message":"Ok.",
+    	"message":"OK.",
     	"rewards":[
         	{
             	"rewardType":"changeMapFilter",
             	"rewardID":"redtint",
+            	"mapName":"debugmap"
+        	}
+    	]
+	},
+    {
+    	"id":"npc3_5",
+    	"message":"OK.",
+    	"rewards":[
+        	{
+            	"rewardType":"changeMapFilter",
+            	"rewardID":"black20",
+            	"mapName":"debugmap"
+        	}
+    	]
+	},
+    {
+    	"id":"npc3_6",
+    	"message":"OK.",
+    	"rewards":[
+        	{
+            	"rewardType":"changeMapFilter",
+            	"rewardID":"black40",
+            	"mapName":"debugmap"
+        	}
+    	]
+	},
+    {
+    	"id":"npc3_7",
+    	"message":"OK.",
+    	"rewards":[
+        	{
+            	"rewardType":"changeMapFilter",
+            	"rewardID":"black60",
+            	"mapName":"debugmap"
+        	}
+    	]
+	},
+    {
+    	"id":"npc3_8",
+    	"message":"OK.",
+    	"rewards":[
+        	{
+            	"rewardType":"changeMapFilter",
+            	"rewardID":"invert",
+            	"mapName":"debugmap"
+        	}
+    	]
+	},
+    {
+    	"id":"npc3_9",
+    	"message":"OK.",
+    	"rewards":[
+        	{
+            	"rewardType":"changeMapFilter",
+            	"rewardID":"greentint",
+            	"mapName":"debugmap"
+        	}
+    	]
+	},
+    {
+    	"id":"npc3_10",
+    	"message":"OK.",
+    	"rewards":[
+        	{
+            	"rewardType":"changeMapFilter",
+            	"rewardID":"bluetint",
+            	"mapName":"debugmap"
+        	}
+    	]
+	},
+    {
+    	"id":"npc3_11",
+    	"message":"OK.",
+    	"rewards":[
+        	{
+            	"rewardType":"changeMapFilter",
+            	"rewardID":"bw",
             	"mapName":"debugmap"
         	}
     	]

@@ -26,6 +26,11 @@
 			android:defaultValue="false"
 			android:summary="@string/preferences_optimized_drawing"
 			android:key="optimized_drawing" />
+		<CheckBoxPreference
+			android:title="@string/preferences_high_quality_filters_title"
+			android:defaultValue="true"
+			android:summary="@string/preferences_high_quality_filters"
+			android:key="high_quality_filters" />
 	</PreferenceCategory>
 	<PreferenceCategory
 		android:title="@string/preferences_dialog_category">

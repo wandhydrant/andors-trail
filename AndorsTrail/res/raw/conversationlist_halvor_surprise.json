@@ -295,7 +295,7 @@
                 "nextPhraseID":"X"
             },
             {
-                "text":"Sounds boring... but I'll do it.",
+                "text":"Sounds boring ... but I'll do it.",
                 "nextPhraseID":"halvor_crossglen_2"
             },
             {
@@ -451,7 +451,7 @@
     },
     {
         "id":"halvor_crossglen_9",
-        "message":"Hmm... they're not as good as I hoped. Can you get me 5 more?",
+        "message":"Hmm ... they're not as good as I hoped. Can you get me 5 more?",
         "replies":[
             {
                 "text":"Not good enough for you? I'm tired of dealing with you.",
@@ -556,14 +556,14 @@
     },
     {
         "id":"halvor_crossglen_12",
-        "message":"Please... I really need 5 rat tails.",
+        "message":"Please ... I really need 5 rat tails.",
         "replies":[
             {
-                "text":"OK... but it's the last time!",
+                "text":"OK ... but it's the last time!",
                 "nextPhraseID":"halvor_crossglen_10"
             },
             {
-                "text":"No. No no no.... Leave me alone.",
+                "text":"No. No no no ... leave me alone.",
                 "nextPhraseID":"halvor_crossglen_leaving"
             }
         ]
@@ -786,7 +786,7 @@
     },
     {
         "id":"halvor_bwmine_10",
-        "message":"Hmm... this one is nice! However, the other three won't do.",
+        "message":"Hmm ... this one is nice! However, the other three won't do.",
         "replies":[
             {
                 "text":"N",
@@ -904,7 +904,7 @@
         "message":"Are you sure? Won't you help me find the softest animal hair?",
         "replies":[
             {
-                "text":"OK... If you insist...",
+                "text":"OK ... if you insist...",
                 "nextPhraseID":"halvor_bwmine_13"
             },
             {
@@ -946,7 +946,7 @@
     },
     {
         "id":"halvor_mlake_0",
-        "message":"Hey! Long time no see. I'm happy to see a familiar face. ",
+        "message":"Hey! Long time no see. I'm happy to see a familiar face.",
         "replies":[
             {
                 "text":"You seem lost...",
@@ -957,7 +957,7 @@
                 "nextPhraseID":"halvor_mlake_1"
             },
             {
-                "text":"Oh no... not you again.",
+                "text":"Oh no ... not you again.",
                 "nextPhraseID":"X"
             }
         ],
@@ -988,7 +988,7 @@
                 "nextPhraseID":"halvor_mlake_3"
             },
             {
-                "text":"Here, take this minor potion of health",
+                "text":"Here, take this minor potion of health.",
                 "nextPhraseID":"halvor_mlake_4_weak",
                 "requires":[
                     {
@@ -999,7 +999,7 @@
                 ]
             },
             {
-                "text":"Here, take this minor vial of health",
+                "text":"Here, take this minor vial of health.",
                 "nextPhraseID":"halvor_mlake_4_weak",
                 "requires":[
                     {
@@ -1010,7 +1010,7 @@
                 ]
             },
             {
-                "text":"Here, take this regular potion of health",
+                "text":"Here, take this regular potion of health.",
                 "nextPhraseID":"halvor_mlake_4_regular",
                 "requires":[
                     {
@@ -1021,7 +1021,7 @@
                 ]
             },
             {
-                "text":"Here, take this major potion of health",
+                "text":"Here, take this major potion of health.",
                 "nextPhraseID":"halvor_mlake_4_strong",
                 "requires":[
                     {
@@ -1032,7 +1032,7 @@
                 ]
             },
             {
-                "text":"Here, take this major flask of health",
+                "text":"Here, take this major flask of health.",
                 "nextPhraseID":"halvor_mlake_4_strong",
                 "requires":[
                     {
@@ -1065,7 +1065,7 @@
                 ]
             },
             {
-                "text":"Here, take this Lodar's potion of health",
+                "text":"Here, take this Lodar's potion of health.",
                 "nextPhraseID":"halvor_mlake_4_lodar",
                 "requires":[
                     {
@@ -1141,7 +1141,7 @@
     },
     {
         "id":"halvor_mlake_4_lodar",
-        "message":"I'm feeling... strange... I'm feeling... great! That was incredible. I never had such a potion. Take this hat I found on my way here.",
+        "message":"I'm feeling ... strange ... I'm feeling ... great! That was incredible. I never had such a potion. Take this hat I found on my way here.",
         "replies":[
             {
                 "text":"N",
@@ -1174,11 +1174,11 @@
                 "nextPhraseID":"halvor_mlake_6"
             },
             {
-                "text":"I'll do it... again...",
+                "text":"I'll do it ... again...",
                 "nextPhraseID":"halvor_mlake_6"
             },
             {
-                "text":"I happen to have some here. Take them",
+                "text":"I happen to have some here. Take them.",
                 "nextPhraseID":"halvor_mlake_8",
                 "requires":[
                     {
@@ -1297,7 +1297,7 @@
                 "nextPhraseID":"halvor_mlake_11"
             },
             {
-                "text":"Let me check... I do have two bones here with me. Take them.",
+                "text":"Let me check ... I do have two bones here with me. Take them.",
                 "nextPhraseID":"halvor_mlake_13",
                 "requires":[
                     {
@@ -1379,14 +1379,14 @@
                 "nextPhraseID":"halvor_mlake_11"
             },
             {
-                "text":"Yeah... Bones are too heavy to carry.",
+                "text":"Yeah ... bones are too heavy to carry.",
                 "nextPhraseID":"halvor_mlake_leaving"
             }
         ]
     },
     {
         "id":"halvor_mlake_leaving",
-        "message":"OK. Nevermind. I'll try to find long bones elsewhere.",
+        "message":"OK. Never mind. I'll try to find long bones elsewhere.",
         "replies":[
             {
                 "text":"Yeah. Go far. Very far.",

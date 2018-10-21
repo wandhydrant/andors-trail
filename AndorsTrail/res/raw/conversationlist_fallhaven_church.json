@@ -16,7 +16,7 @@
                 "nextPhraseID":"thoronir_church_1"
             },
             {
-                "text":"Are the Bonemeal potions ready yet?",
+                "text":"Are the bonemeal potions ready yet?",
                 "nextPhraseID":"thoronir_trade_bonemeal",
                 "requires":[
                     {
@@ -127,7 +127,7 @@
         "message":"No one is allowed down in the catacombs, except for Athamyr, my apprentice. He is the only one that has been down there for years.",
         "replies":[
             {
-                "text":"Ok, I might go see him.",
+                "text":"OK, I might go see him.",
                 "nextPhraseID":"thoronir_default"
             }
         ],
@@ -141,7 +141,7 @@
     },
     {
         "id":"thoronir_tharal_2",
-        "message":"Shhh, we shouldn't talk so loud about using Bonemeal. As you know, Lord Geomyr issued a ban on all use of Bonemeal.",
+        "message":"Shhh, we shouldn't talk so loud about using bonemeal. As you know, Lord Geomyr issued a ban on all use of bonemeal.",
         "replies":[
             {
                 "text":"N",
@@ -161,7 +161,7 @@
     },
     {
         "id":"thoronir_tharal_4",
-        "message":"Do you think you could find me 5 skeletal bones that I can use for mixing a Bonemeal potion? The bonemeal is very potent in healing old wounds.",
+        "message":"Do you think you could find me 5 skeletal bones that I can use for mixing a bonemeal potion? The bonemeal is very potent in healing old wounds.",
         "replies":[
             {
                 "text":"Sure, I might be able to do that.",
@@ -185,7 +185,7 @@
         "message":"Thank you, please come back soon. I heard there were some undead near an old abandoned house just north of Fallhaven. Maybe you can check for bones there?",
         "replies":[
             {
-                "text":"Ok, I'll go check there.",
+                "text":"OK, I'll go check there.",
                 "nextPhraseID":"thoronir_default"
             }
         ],
@@ -216,11 +216,11 @@
     },
     {
         "id":"thoronir_complete_2",
-        "message":"Give me some time to mix the Bonemeal potion. It is a very potent healing potion. Come back in a little while."
+        "message":"Give me some time to mix the bonemeal potion. It is a very potent healing potion. Come back in a little while."
     },
     {
         "id":"thoronir_trade_bonemeal",
-        "message":"Yes, the Bonemeal potions are ready. Please use them with care, and don't let the guards see you. We are not actually allowed to use them anymore.",
+        "message":"Yes, the bonemeal potions are ready. Please use them with care, and don't let the guards see you. We are not actually allowed to use them anymore.",
         "replies":[
             {
                 "text":"Let me see what potions you have made so far.",
@@ -255,7 +255,7 @@
         "message":"Nooo, you shall not pass!",
         "replies":[
             {
-                "text":"Ok. Let's fight.",
+                "text":"OK. Let's fight.",
                 "nextPhraseID":"F"
             }
         ]

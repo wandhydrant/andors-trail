@@ -115,7 +115,7 @@ public final class WorldMapController {
 			this.cachedTiles = cachedTiles;
 			this.tileSize = world.tileManager.tileSize;
 			this.scale = (float) WORLDMAP_SCREENSHOT_TILESIZE / world.tileManager.tileSize;
-			mapTiles.setColorFilter(mPaint);
+			mapTiles.setColorFilter(mPaint, null, true);
 		}
 
 		public Bitmap drawMap() {
