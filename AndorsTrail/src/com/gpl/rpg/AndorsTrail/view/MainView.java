@@ -387,7 +387,7 @@ public final class MainView extends SurfaceView
 		doDrawRect_Ground(canvas, area);
 		doDrawRect_Objects(canvas, area);
 		doDrawRect_Above(canvas, area);
-		if (!useAlternateColorFilterPaint) {
+		if (useAlternateColorFilterPaint) {
 			applyAlternateFilter(canvas, area);
 		}
 	}

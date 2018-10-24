@@ -888,7 +888,7 @@
         "message":"I might let you go if you remove that ghastly statue. Maybe I'll even give you two of those ugly plants for that. Agreed?",
         "replies":[
             {
-                "text":"(lie) Agreed. Bring the Damerilias first.",
+                "text":"[Lie] Agreed. Bring the Damerilias first.",
                 "nextPhraseID":"lakecave2_troll_70"
             },
             {
@@ -1897,7 +1897,7 @@
     },
     {
         "id":"stoutford_widow_thorns30_0",
-        "message":"Now I take three potions of the brave (chanting) ... add my prepared ingredients (chanting) ... shake it (chanting) ... shake it - ready.\nHere, be careful with it. Potions of truth are rare.",
+        "message":"Now I take three potions of the brave *chanting* ... add my prepared ingredients *chanting* ... shake it *chanting* ... shake it - ready.\nHere, be careful with it. Potions of truth are rare.",
         "replies":[
             {
                 "text":"Thank you. What do you have in mind now?",
@@ -2661,7 +2661,7 @@
         "message":"What ... what is this? I feel strange...",
         "replies":[
             {
-                "text":"(loud voice) Tahalendor! Come in, we can start!",
+                "text":"[Loud voice] Tahalendor! Come in, we can start!",
                 "nextPhraseID":"blornvale_thorns70_20",
                 "requires":[
                     {
@@ -5191,7 +5191,7 @@
                 ]
             },
             {
-                "text":"(lie) He had nothing of any worth on him.",
+                "text":"[Lie] He had nothing of any worth on him.",
                 "nextPhraseID":"yolgen_castle_10"
             }
         ]
@@ -5279,7 +5279,7 @@
         "message":"He was there without any of his ... special items? Did you look thoroughly?",
         "replies":[
             {
-                "text":"(lie)Yes, but I found nothing worth having.",
+                "text":"[Lie] Yes, but I found nothing worth having.",
                 "nextPhraseID":"yolgen_castle_11"
             },
             {
@@ -5400,7 +5400,7 @@
     },
     {
         "id":"stn_sign_stoutford",
-        "message":"Stoutford Castle\n\n(scribbled below) Death awaits you"
+        "message":"Stoutford Castle\n\n[Scribbled below] Death awaits you"
     },
     {
         "id":"stoutford_commoner4",
@@ -5721,7 +5721,7 @@
     },
     {
         "id":"berbane_102",
-        "message":"(loud voice) Pay attention and listen everybody! The castle is free! The trembling is over!",
+        "message":"[Loud voice] Pay attention and listen everybody! The castle is free! The trembling is over!",
         "switchToNPC":"berbane",
         "replies":[
             {
@@ -5739,7 +5739,7 @@
     },
     {
         "id":"berbane_110",
-        "message":"(loud voice) My trainee and I, we were in the castle. I demonstrated how to fight properly. Lord Erwyn himself was an especially good demonstration object.",
+        "message":"[Loud voice] My trainee and I, we were in the castle. I demonstrated how to fight properly. Lord Erwyn himself was an especially good demonstration object.",
         "replies":[
             {
                 "text":"But...",
@@ -5749,7 +5749,7 @@
     },
     {
         "id":"berbane_120",
-        "message":"(loud voice) But we will come to the details later - after the next round.",
+        "message":"[Loud voice] But we will come to the details later - after the next round.",
         "replies":[
             {
                 "text":"No, I have...",
@@ -5777,7 +5777,7 @@
     },
     {
         "id":"berbane_132",
-        "message":"(loud voice) Yes, he has carried my magical helmet for me. I will take it back now.",
+        "message":"[Loud voice] Yes, he has carried my magical helmet for me. I will take it back now.",
         "replies":[
             {
                 "text":"I give up.",
@@ -5794,7 +5794,7 @@
     },
     {
         "id":"berbane_134",
-        "message":"(loud voice) Yes, he has learned much from me. But no need to thank me now.",
+        "message":"[Loud voice] Yes, he has learned much from me. But no need to thank me now.",
         "replies":[
             {
                 "text":"I give up.",
@@ -5804,7 +5804,7 @@
     },
     {
         "id":"berbane_140",
-        "message":"(low voice) Well-behaved. \n(loud voice) And now: Mead for everyone! Let's be merry! Forget all sorrows!",
+        "message":"[Low voice] Well-behaved.\n[Loud voice] And now: Mead for everyone! Let's be merry! Forget all sorrows!",
         "rewards":[
             {
                 "rewardType":"giveItem",
@@ -9709,7 +9709,7 @@
     },
     {
         "id":"stn_colonel_36",
-        "message":"(chuckles) Very clever. You should not trust strangers nowadays.",
+        "message":"*chuckles* Very clever. You should not trust strangers nowadays.",
         "replies":[
             {
                 "text":"Who are you and how do you know my name?",
@@ -9893,7 +9893,7 @@
         "message":"Take your time.",
         "replies":[
             {
-                "text":"(drinking)",
+                "text":"[Drinking]",
                 "nextPhraseID":"stn_colonel_74"
             },
             {
@@ -9907,7 +9907,7 @@
         "message":"This is really an excellent tea, right?",
         "replies":[
             {
-                "text":"(drinking)",
+                "text":"[Drinking]",
                 "nextPhraseID":"stn_colonel_75"
             },
             {
@@ -9921,7 +9921,7 @@
         "message":"I had not noticed that the cups are so big.",
         "replies":[
             {
-                "text":"(drinking)",
+                "text":"[Drinking]",
                 "nextPhraseID":"stn_colonel_76"
             },
             {
@@ -9935,7 +9935,7 @@
         "message":"You are really a connoisseur.",
         "replies":[
             {
-                "text":"(drinking)",
+                "text":"[Drinking]",
                 "nextPhraseID":"stn_colonel_77"
             },
             {
@@ -9949,7 +9949,7 @@
         "message":"We have all the time in the world. Do not hurry.",
         "replies":[
             {
-                "text":"(drinking)",
+                "text":"[Drinking]",
                 "nextPhraseID":"stn_colonel_79"
             },
             {
@@ -9964,7 +9964,7 @@
         "switchToNPC":"none",
         "replies":[
             {
-                "text":"(drinking)",
+                "text":"[Drinking]",
                 "nextPhraseID":"stn_colonel_79"
             },
             {
@@ -10538,7 +10538,7 @@
                 ]
             },
             {
-                "text":"(Lie) I don't have it anymore, sorry.",
+                "text":"[Lie] I don't have it anymore, sorry.",
                 "nextPhraseID":"stn_colonel_131_4b",
                 "requires":[
                     {
@@ -10549,7 +10549,7 @@
                 ]
             },
             {
-                "text":"(Lie) I don't have it anymore, sorry. This ring on my finger just looks similar.",
+                "text":"[Lie] I don't have it anymore, sorry. This ring on my finger just looks similar.",
                 "nextPhraseID":"stn_colonel_131_4b",
                 "requires":[
                     {
@@ -11189,7 +11189,7 @@
     },
     {
         "id":"stn_horse_30",
-        "message":"(after drinking greedily) Neiiieieiiigh!!",
+        "message":"[After drinking greedily] Neiiieieiiigh!!",
         "replies":[
             {
                 "text":"There, now you feel better! I have to leave now.",
