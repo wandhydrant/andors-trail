@@ -25,7 +25,7 @@
     },
     {
         "id":"sienn_pet_1",
-        "message":"Pet, cute!\n(Sienn makes cuddly sounds while scratching the pet under its chin.)",
+        "message":"Pet, cute!\n[Sienn makes cuddly sounds while scratching the pet under its chin]",
         "replies":[
             {
                 "text":"Who are you?",
@@ -50,14 +50,14 @@
     },
     {
         "id":"sienn_pet",
-        "message":"*Shriek!*\n(The creature looks up at you, showing all its teeth, while making a high-pitched piercing sound.)",
+        "message":"Aaargh!\n[The creature looks up at you, showing all its teeth, while making a high-pitched piercing sound]",
         "replies":[
             {
                 "text":"There, there. Easy now.",
                 "nextPhraseID":"X"
             },
             {
-                "text":"*slowly back away*",
+                "text":"[Slowly back away]",
                 "nextPhraseID":"X"
             }
         ]

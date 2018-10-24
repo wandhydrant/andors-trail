@@ -117,7 +117,7 @@
     },
     {
         "id":"algore_30",
-        "message":"I thought nothing more of it. I was a simple trader in Loneford with a beautiful wife and daughter.\n(Hagale takes another long swig from the bottle of Lowyna's special brew)",
+        "message":"I thought nothing more of it. I was a simple trader in Loneford with a beautiful wife and daughter.\n[Hagale takes another long swig from the bottle of Lowyna's special brew]",
         "replies":[
             {
                 "text":"N",
@@ -127,7 +127,7 @@
     },
     {
         "id":"algore_40",
-        "message":"(Hagale takes another swig from the bottle of Lowyna's special brew)\nI realized that she wouldn't make it.\nI watched as she suffered in agonizing pain. I knew without treatment she would die in a matter of weeks.",
+        "message":"[Hagale takes another swig from the bottle of Lowyna's special brew]\nI realized that she wouldn't make it.\nI watched as she suffered in agonizing pain. I knew without treatment she would die in a matter of weeks.",
         "replies":[
             {
                 "text":"N",
@@ -157,7 +157,7 @@
     },
     {
         "id":"algore_00",
-        "message":"(This man smells of alcohol and some plant-like substance; he is clearly intoxicated.)",
+        "message":"[This man smells of alcohol and some plant-like substance; he is clearly intoxicated]",
         "replies":[
             {
                 "text":"I defeated the undead monster and opened the chest. I found a powerful sword inside.",
@@ -523,7 +523,7 @@
     },
     {
         "id":"graveyardking_1",
-        "message":"(You notice this undead is wearing a key around its neck.)",
+        "message":"[You notice this undead is wearing a key around its neck]",
         "replies":[
             {
                 "text":"I've come for the key.",
@@ -669,7 +669,7 @@
     },
     {
         "id":"algore_87",
-        "message":"(Hagale finishes the second bottle of Lowyna's special brew.) ... Sure do. I hope you know what you're doing kid.",
+        "message":"[Hagale finishes the second bottle of Lowyna's special brew]\nSure do. I hope you know what you're doing kid.",
         "replies":[
             {
                 "text":"N",
@@ -777,7 +777,7 @@
         "message":"I heard something similar was occurring in Charwood until a young adventurer killed a vile beast in the mine beneath the city.",
         "replies":[
             {
-                "text":"I was in Charwood recently and what you heard was true. (You describe your experiences in Charwood and the battle with Thukuzun)",
+                "text":"I was in Charwood recently and what you heard was true.\n[You describe your experiences in Charwood and the battle with Thukuzun]",
                 "nextPhraseID":"cithurn_30"
             },
             {
@@ -995,7 +995,7 @@
         "message":"Meow ... Meow.",
         "replies":[
             {
-                "text":"(You scratch the cat behind the ear.)",
+                "text":"[You scratch the cat behind the ear]",
                 "nextPhraseID":"cithurncatmeow_1",
                 "requires":[
                     {
@@ -1007,7 +1007,7 @@
                 ]
             },
             {
-                "text":"(You stroke the cat.)",
+                "text":"[You stroke the cat]",
                 "nextPhraseID":"cithurncatmeow_2",
                 "requires":[
                     {
@@ -1534,7 +1534,7 @@
     },
     {
         "id":"algore_11",
-        "message":"Alright kid!\n\n(Hagale immediately opens one of the bottles and takes a big swig, which he loudly swallows before wiping his mouth on the sleeve of his tattered shirt)\n\nYeah, I know something about that chest ... BURP ... I almost opened it.",
+        "message":"Alright kid!\n[Hagale immediately opens one of the bottles and takes a big swig, which he loudly swallows before wiping his mouth on the sleeve of his tattered shirt]\nYeah, I know something about that chest ... *burp* ... I almost opened it.",
         "replies":[
             {
                 "text":"N",
@@ -1597,7 +1597,7 @@
     },
     {
         "id":"algore_32",
-        "message":"We were only halfway there when we were attacked by Plaguestriders. My daughter and I managed to escape...\n(Hagale takes another long swig from the bottle of Lowyna's special brew.) ...but my wife did not survive.",
+        "message":"We were only halfway there when we were attacked by Plaguestriders. My daughter and I managed to escape...\n[Hagale takes another long swig from the bottle of Lowyna's special brew]\n...but my wife did not survive.",
         "replies":[
             {
                 "text":"N",
@@ -1617,7 +1617,7 @@
     },
     {
         "id":"algore_41",
-        "message":"I had to do something. I went to Fallhaven and begged Thoronir to make me a bonemeal potion. Although it would have cured my daughter completely, he refused because Lord Geomyr banned all use of bonemeal as a healing substance!\n(Hagale takes another long swig from the bottle of Lowyna's special brew and finishes it. He proceeds to open the second the bottle.)",
+        "message":"I had to do something. I went to Fallhaven and begged Thoronir to make me a bonemeal potion. Although it would have cured my daughter completely, he refused because Lord Geomyr banned all use of bonemeal as a healing substance!\n[Hagale takes another long swig from the bottle of Lowyna's special brew and finishes it. He proceeds to open the second the bottle.]",
         "replies":[
             {
                 "text":"N",
@@ -2267,7 +2267,7 @@
     },
     {
         "id":"waterwaycaveloot",
-        "message":"(You have stumbled upon the remains of an adventurer that came before you. Looking at what is left of their equipment, they were ill-prepared for a place such as this. Now they have no use for their equipment or gold. You debate whether to loot the corpse. In the past you have done worse, but...)",
+        "message":"[You have stumbled upon the remains of an adventurer that came before you. Looking at what is left of their equipment, they were ill-prepared for a place such as this. Now they have no use for their equipment or gold. You debate whether to loot the corpse. In the past you have done worse, but...]",
         "replies":[
             {
                 "text":"You decide to take everything.",
@@ -2484,11 +2484,11 @@
         "message":"You found some crates that look as though they have been here for a very long time. One of the crates has some old, tattered clothing in it.",
         "replies":[
             {
-                "text":"(Take the clothes)",
+                "text":"[Take the clothes]",
                 "nextPhraseID":"old_clothes_2"
             },
             {
-                "text":"(Leave the clothes)",
+                "text":"[Leave the clothes]",
                 "nextPhraseID":"X"
             }
         ]

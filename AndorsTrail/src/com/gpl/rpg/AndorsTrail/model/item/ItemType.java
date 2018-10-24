@@ -9,9 +9,9 @@ public final class ItemType {
 	public static enum DisplayType {
 		ordinary
 		,quest
-		,legendary
+		,rare
 		,extraordinary
-		,rare;
+		,legendary;
 
 		public static DisplayType fromString(String s, DisplayType default_) {
 			if (s == null) return default_;
