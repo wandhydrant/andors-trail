@@ -5,7 +5,7 @@
     },
     {
         "id":"stoutford_bed_locked",
-        "message":"The owner shouts: \"Hey! These beds aren't for strangers! Come here!\""
+        "message":"[The owner shouts] Hey! These beds aren't for strangers! Come here!"
     },
     {
         "id":"stoutford_gateguard_0",
@@ -1265,7 +1265,7 @@
         "message":"My sincerest apologies for earlier. I took you for someone else. Do you know what was causing the rumbles?",
         "replies":[
             {
-                "text":"(Show Demon heart) Some monster. Here's what it left when I killed it.",
+                "text":"[Show Demon heart] Some monster. Here's what it left when I killed it.",
                 "nextPhraseID":"tahalendor_rumblings80_2",
                 "requires":[
                     {
@@ -1515,7 +1515,7 @@
                         "requireType":"killedMonster",
                         "requireID":"erwyn",
                         "value":2,
-						"negate":true
+                        "negate":true
                     }
                 ]
             }
@@ -1564,7 +1564,7 @@
     },
     {
         "id":"tahalendor_erwyn_5",
-        "message":"Now I will bless them with a special enchantment...\n(Tahalendor holds the coins over the altar and mutters something you can't hear.)",
+        "message":"Now I will bless them with a special enchantment...\n[Tahalendor holds the coins over the altar and mutters something you can't hear]",
         "replies":[
             {
                 "text":"N",
@@ -1579,7 +1579,6 @@
             {
                 "text":"Thank you.",
                 "nextPhraseID":"X"
-
             }
         ],
         "rewards":[
