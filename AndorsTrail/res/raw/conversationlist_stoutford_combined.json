@@ -4279,6 +4279,11 @@
                         "requireID":"stoutford_castle",
                         "value":10,
                         "negate":true
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"nondisplay_2",
+                        "value":180
                     }
                 ]
             },
@@ -4295,7 +4300,7 @@
                     {
                         "requireType":"questProgress",
                         "requireID":"flagstone",
-                        "value":70,
+                        "value":60,
                         "negate":true
                     },
                     {
@@ -4303,8 +4308,17 @@
                         "requireID":"flagstone",
                         "value":100,
                         "negate":true
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"nondisplay_2",
+                        "value":190
                     }
                 ]
+            },
+            {
+                "text":"OK, bye.",
+                "nextPhraseID":"X"
             }
         ]
     },
@@ -4319,7 +4333,7 @@
                     {
                         "requireType":"questProgress",
                         "requireID":"flagstone",
-                        "value":70,
+                        "value":60,
                         "negate":true
                     }
                 ]
@@ -4331,7 +4345,7 @@
                     {
                         "requireType":"questProgress",
                         "requireID":"flagstone",
-                        "value":70
+                        "value":60
                     }
                 ]
             }
@@ -4393,7 +4407,7 @@
                     {
                         "requireType":"questProgress",
                         "requireID":"flagstone",
-                        "value":70,
+                        "value":60,
                         "negate":true
                     }
                 ]
@@ -4429,6 +4443,11 @@
             }
         ],
         "rewards":[
+            {
+                "rewardType":"deactivateSpawnArea",
+                "rewardID":"narael",
+                "mapName":"flagstone4"
+            },
             {
                 "rewardType":"questProgress",
                 "rewardID":"flagstone",
@@ -4501,7 +4520,11 @@
         "replies":[
             {
                 "text":"Thank you.",
-                "nextPhraseID":"yolgen_castle_1"
+                "nextPhraseID":"X"
+            },
+            {
+                "text":"There was something else I wanted to ask you about.",
+                "nextPhraseID":"yolgen_surroundings_0"
             }
         ],
         "rewards":[
@@ -4761,7 +4784,7 @@
         "id":"check_erwyn",
         "replies":[
             {
-                "nextPhraseID":"check_erwyn_1",
+                "nextPhraseID":"check_erwyn_1a",
                 "requires":[
                     {
                         "requireType":"killedMonster",
@@ -4861,7 +4884,7 @@
         "replies":[
             {
                 "text":"N",
-				"nextPhraseID":"check_erwyn_1a"
+				"nextPhraseID":"X"
             }
 		],
         "rewards":[
@@ -4869,6 +4892,16 @@
                 "rewardType":"removeQuestProgress",
                 "rewardID":"stn_nondisplay",
                 "value":48
+            },
+            {
+                "rewardType":"questProgress",
+                "rewardID":"stoutford_castle",
+                "value":16
+            },
+            {
+                "rewardType":"removeSpawnArea",
+                "rewardID":"erwyn",
+                "mapName":"stoutford_castle0"
             }
         ]
     },
@@ -4884,13 +4917,9 @@
                         "value":1
                     }
                 ]
-            }
-        ],
-        "rewards":[
+            },
             {
-                "rewardType":"removeSpawnArea",
-                "rewardID":"erwyn",
-                "mapName":"stoutford_castle0"
+                "nextPhraseID":"check_erwyn_1"
             }
         ]
     },
@@ -5124,7 +5153,7 @@
                 "requires":[
                     {
                         "requireType":"killedMonster",
-                        "requireID":"erwyn",
+                        "requireID":"erwyn2",
                         "value":1
                     }
                 ]
@@ -5141,13 +5170,6 @@
             {
                 "text":"An unfriendly guy, yes.",
                 "nextPhraseID":"yolgen_castle_2"
-            }
-        ],
-        "rewards":[
-            {
-                "rewardType":"questProgress",
-                "rewardID":"stoutford_castle",
-                "value":40
             }
         ]
     },
@@ -5624,6 +5646,11 @@
                         "requireType":"questProgress",
                         "requireID":"stn_nondisplay",
                         "value":47
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"stn_quest_gyra",
+                        "value":20
                     }
                 ]
             }
@@ -5699,6 +5726,11 @@
                         "requireType":"questProgress",
                         "requireID":"stn_nondisplay",
                         "value":47
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"stn_quest_gyra",
+                        "value":20
                     }
                 ]
             },
@@ -9560,7 +9592,7 @@
                     },
                     {
                         "requireType":"killedMonster",
-                        "requireID":"erwyn",
+                        "requireID":"erwyn2",
                         "value":1
                     }
                 ]
