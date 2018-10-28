@@ -58,6 +58,9 @@ English proofreading and testing by:
 Hebrew translation by: 
 - eitanbm
 ----------
+Hungarian translation by:
+- Balázs Úr (urbalazs)
+----------
 Portuguese(PT) translation by: 
 - mira
 ----------
