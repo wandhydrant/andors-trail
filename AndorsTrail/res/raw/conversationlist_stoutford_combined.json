@@ -3175,11 +3175,27 @@
     },
     {
         "id":"odirath_3",
-        "message":"Gyra is back and has told me everything. Many thanks again for your help.",
         "replies":[
             {
-                "text":"I was happy to do it.",
+                "nextPhraseID":"odirath_3_2",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"stn_quest_gyra",
+                        "value":99
+					}
+                ]
+            },
+            {
                 "nextPhraseID":"odirath_3_1"
+            }
+        ]
+    },
+    {
+        "id":"odirath_3_1",
+        "replies":[
+            {
+                "nextPhraseID":"odirath_3_3"
             }
         ],
         "rewards":[
@@ -3191,7 +3207,32 @@
         ]
     },
     {
-        "id":"odirath_3_1",
+        "id":"odirath_3_2",
+        "replies":[
+            {
+                "nextPhraseID":"odirath_3_3"
+            }
+        ],
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"stn_quest_gyra",
+                "value":170
+            }
+        ]
+    },
+    {
+        "id":"odirath_3_3",
+        "message":"Gyra is back and has told me everything. Many thanks again for your help.",
+        "replies":[
+            {
+                "text":"I was happy to do it.",
+                "nextPhraseID":"odirath_3_5"
+            }
+        ]
+    },
+    {
+        "id":"odirath_3_5",
         "message":"Please give the helmet to its owner Lord Bourbon - eh, Lord Berbane I mean. He will be in the tavern.",
         "replies":[
             {
@@ -3215,8 +3256,8 @@
                 "requires":[
                     {
                         "requireType":"questProgress",
-                        "requireID":"stn_quest_gyra",
-                        "value":92
+                        "requireID":"stn_nondisplay",
+                        "value":149
                     }
                 ]
             },
@@ -3955,7 +3996,7 @@
     },
     {
         "id":"yolgen_3",
-        "message":"While Erwyn and Emeric fought to capture of the central area, Lord Geomyr waited for the right moment and crushed his enemies with his great army. He has ruled the Kingdom ever since with an iron hand.",
+        "message":"While Erwyn and Emeric fought to capture the central area, Lord Geomyr waited for the right moment and crushed his enemies with his great army. He has ruled the Kingdom ever since with an iron hand.",
         "replies":[
             {
                 "text":"Why do you say iron hand?",
@@ -4279,6 +4320,11 @@
                         "requireID":"stoutford_castle",
                         "value":10,
                         "negate":true
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"nondisplay_2",
+                        "value":180
                     }
                 ]
             },
@@ -4295,7 +4341,7 @@
                     {
                         "requireType":"questProgress",
                         "requireID":"flagstone",
-                        "value":70,
+                        "value":60,
                         "negate":true
                     },
                     {
@@ -4303,8 +4349,17 @@
                         "requireID":"flagstone",
                         "value":100,
                         "negate":true
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"nondisplay_2",
+                        "value":190
                     }
                 ]
+            },
+            {
+                "text":"OK, bye.",
+                "nextPhraseID":"X"
             }
         ]
     },
@@ -4319,7 +4374,7 @@
                     {
                         "requireType":"questProgress",
                         "requireID":"flagstone",
-                        "value":70,
+                        "value":60,
                         "negate":true
                     }
                 ]
@@ -4331,7 +4386,7 @@
                     {
                         "requireType":"questProgress",
                         "requireID":"flagstone",
-                        "value":70
+                        "value":60
                     }
                 ]
             }
@@ -4393,7 +4448,7 @@
                     {
                         "requireType":"questProgress",
                         "requireID":"flagstone",
-                        "value":70,
+                        "value":60,
                         "negate":true
                     }
                 ]
@@ -4429,6 +4484,11 @@
             }
         ],
         "rewards":[
+            {
+                "rewardType":"deactivateSpawnArea",
+                "rewardID":"narael",
+                "mapName":"flagstone4"
+            },
             {
                 "rewardType":"questProgress",
                 "rewardID":"flagstone",
@@ -4501,7 +4561,11 @@
         "replies":[
             {
                 "text":"Thank you.",
-                "nextPhraseID":"yolgen_castle_1"
+                "nextPhraseID":"X"
+            },
+            {
+                "text":"There was something else I wanted to ask you about.",
+                "nextPhraseID":"yolgen_surroundings_0"
             }
         ],
         "rewards":[
@@ -4761,7 +4825,7 @@
         "id":"check_erwyn",
         "replies":[
             {
-                "nextPhraseID":"check_erwyn_1",
+                "nextPhraseID":"check_erwyn_1a",
                 "requires":[
                     {
                         "requireType":"killedMonster",
@@ -4861,7 +4925,7 @@
         "replies":[
             {
                 "text":"N",
-				"nextPhraseID":"check_erwyn_1a"
+				"nextPhraseID":"X"
             }
 		],
         "rewards":[
@@ -4869,6 +4933,16 @@
                 "rewardType":"removeQuestProgress",
                 "rewardID":"stn_nondisplay",
                 "value":48
+            },
+            {
+                "rewardType":"questProgress",
+                "rewardID":"stoutford_castle",
+                "value":16
+            },
+            {
+                "rewardType":"removeSpawnArea",
+                "rewardID":"erwyn",
+                "mapName":"stoutford_castle0"
             }
         ]
     },
@@ -4884,13 +4958,9 @@
                         "value":1
                     }
                 ]
-            }
-        ],
-        "rewards":[
+            },
             {
-                "rewardType":"removeSpawnArea",
-                "rewardID":"erwyn",
-                "mapName":"stoutford_castle0"
+                "nextPhraseID":"check_erwyn_1"
             }
         ]
     },
@@ -5124,7 +5194,7 @@
                 "requires":[
                     {
                         "requireType":"killedMonster",
-                        "requireID":"erwyn",
+                        "requireID":"erwyn2",
                         "value":1
                     }
                 ]
@@ -5141,13 +5211,6 @@
             {
                 "text":"An unfriendly guy, yes.",
                 "nextPhraseID":"yolgen_castle_2"
-            }
-        ],
-        "rewards":[
-            {
-                "rewardType":"questProgress",
-                "rewardID":"stoutford_castle",
-                "value":40
             }
         ]
     },
@@ -5624,6 +5687,11 @@
                         "requireType":"questProgress",
                         "requireID":"stn_nondisplay",
                         "value":47
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"stn_quest_gyra",
+                        "value":20
                     }
                 ]
             }
@@ -5683,6 +5751,11 @@
                 "rewardType":"questProgress",
                 "rewardID":"stn_quest_gyra",
                 "value":90
+            },
+            {
+                "rewardType":"questProgress",
+                "rewardID":"nondisplay",
+                "value":149
             }
         ]
     },
@@ -5699,6 +5772,11 @@
                         "requireType":"questProgress",
                         "requireID":"stn_nondisplay",
                         "value":47
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"stn_quest_gyra",
+                        "value":20
                     }
                 ]
             },
@@ -5789,6 +5867,11 @@
                 "rewardType":"questProgress",
                 "rewardID":"stn_quest_gyra",
                 "value":92
+            },
+            {
+                "rewardType":"questProgress",
+                "rewardID":"nondisplay",
+                "value":149
             }
         ]
     },
@@ -5804,7 +5887,21 @@
     },
     {
         "id":"berbane_140",
-        "message":"[Low voice] Well-behaved.\n[Loud voice] And now: Mead for everyone! Let's be merry! Forget all sorrows!",
+        "replies":[
+            {
+                "nextPhraseID":"berbane_144",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"stn_quest_gyra",
+                        "value":70                    
+					}
+                ]
+            },
+            {
+                "nextPhraseID":"berbane_142"
+            }
+        ],
         "rewards":[
             {
                 "rewardType":"giveItem",
@@ -5813,15 +5910,44 @@
             },
             {
                 "rewardType":"questProgress",
-                "rewardID":"stn_quest_gyra",
-                "value":99
-            },
-            {
-                "rewardType":"questProgress",
                 "rewardID":"stn_nondisplay",
                 "value":45
             }
         ]
+    },
+    {
+        "id":"berbane_142",
+        "replies":[
+            {
+                "nextPhraseID":"berbane_146"
+            }
+        ],
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"stn_quest_gyra",
+                "value":99
+            }
+        ]
+    },
+    {
+        "id":"berbane_144",
+        "replies":[
+            {
+                "nextPhraseID":"berbane_146"
+            }
+        ],
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"stn_quest_gyra",
+                "value":199
+            }
+        ]
+    },
+    {
+        "id":"berbane_146",
+        "message":"[Low voice] Well-behaved.\n[Loud voice] And now: Mead for everyone! Let's be merry! Forget all sorrows!"
     },
     {
         "id":"berbane_200",
@@ -6617,12 +6743,17 @@
             {
                 "rewardType":"removeQuestProgress",
                 "rewardID":"stn_nondisplay",
-                "value":19
+                "value":29
             },
             {
                 "rewardType":"removeSpawnArea",
                 "rewardID":"stn_gyra1",
                 "mapName":"wild19"
+            },
+            {
+                "rewardType":"actorCondition",
+                "rewardID":"fatigue_minor",
+                "value":-99
             }
         ]
     },
@@ -6643,6 +6774,11 @@
                 "rewardType":"removeQuestProgress",
                 "rewardID":"stn_nondisplay",
                 "value":29
+            },
+            {
+                "rewardType":"actorCondition",
+                "rewardID":"fatigue_minor",
+                "value":-99
             }
         ]
     },
@@ -9560,7 +9696,7 @@
                     },
                     {
                         "requireType":"killedMonster",
-                        "requireID":"erwyn",
+                        "requireID":"erwyn2",
                         "value":1
                     }
                 ]
