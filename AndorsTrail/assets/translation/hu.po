@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Hungarian (Andor's Trail)\n"
 "POT-Creation-Date: 2017-08-03 19:41+0200\n"
-"PO-Revision-Date: 2018-10-06 22:29+0000\n"
+"PO-Revision-Date: 2018-11-02 08:24+0000\n"
 "Last-Translator: Balázs Úr <urbalazs@gmail.com>\n"
 "Language-Team: Hungarian <https://hosted.weblate.org/projects/andors-trail/"
 "game-content/hu/>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.2\n"
+"X-Generator: Weblate 3.3-dev\n"
 
 #: [none]
 msgid "translator-credits"
@@ -52,7 +52,7 @@ msgstr "Vérző seb"
 
 #: actorconditions_v069_bwm.json:rage_minor
 msgid "Minor berserker rage"
-msgstr "Csekély vad düh"
+msgstr "Dühödt harcos csekély dühe"
 
 #: actorconditions_v069_bwm.json:blackwater_misery
 msgid "Blackwater misery"
@@ -64,7 +64,7 @@ msgstr "Részeg"
 
 #: actorconditions_v069_bwm.json:dazed
 msgid "Dazed"
-msgstr "Kábult"
+msgstr "Bódult"
 
 #: actorconditions_v0610.json:chaotic_grip
 msgid "Chaotic grip"
@@ -100,7 +100,7 @@ msgstr "Irdegh méreg"
 
 #: actorconditions_v0611_2.json:rotworm
 msgid "Kazaul rotworms"
-msgstr "Kazaul férgek"
+msgstr "Kazaul májmételyférgek"
 
 #: actorconditions_v0611_2.json:shadowbless_str
 msgid "Blessing of Shadow strength"
@@ -240,7 +240,7 @@ msgstr "Árny tudatosság"
 
 #: actorconditions_trader_teksin.json:poison_irdegh_weak
 msgid "Weak irdegh poison"
-msgstr "Gyenge Irdegh méreg"
+msgstr "Gyenge irdegh méreg"
 
 #: actorconditions_trader_teksin.json:light_attack
 msgid "Lightning attack"
@@ -376,7 +376,7 @@ msgstr "Igen, itt van."
 #: conversationlist_stoutford_combined.json:stoutford_widow_thorns20_0:0
 #: conversationlist_stoutford_combined.json:blornvale_shop1_2:1
 msgid "No, not yet."
-msgstr "Nem, még nem"
+msgstr "Nem, még nem."
 
 #: conversationlist_mikhail.json:mikhail_bread_complete
 msgid "Thanks a lot, now I can make my breakfast. Here, take these coins for your help."
@@ -433,9 +433,10 @@ msgid ""
 "\n"
 "If you are hurt, use your bed over there to rest and regain your strength."
 msgstr ""
-"Ó, valóban? Szuper, nagyon köszönöm a segítséged!\n"
+"Ó, valóban? Hú, nagyon köszönöm a segítséged!\n"
 "\n"
-"Ha megsérültél, akkor használd az ágyad ott, hogy kipihend magad, és visszanyerd az erődet."
+"Ha megsérültél, akkor használd az ágyad ott, hogy kipihend magad, és "
+"visszanyerd az erődet."
 
 #: conversationlist_mikhail.json:mikhail_rats_complete2
 msgid ""
@@ -539,7 +540,7 @@ msgstr ""
 #: conversationlist_flagstone.json:flagstone_sentry_42:0
 #: conversationlist_vilegard_villagers.json:vilegard_villager_friend_1:0
 msgid "Thanks, bye."
-msgstr "Köszönöm, viszlát!"
+msgstr "Köszönöm, viszlát."
 
 #: conversationlist_crossglen.json:drunk1
 msgid ""
@@ -560,7 +561,7 @@ msgstr ""
 #: conversationlist_guynmart2.json:guynmart_s_rob6b_10:1
 #: conversationlist_guynmart2_npc.json:guynmart_rob6_10:1
 msgid "No thanks."
-msgstr "Nem, köszönöm"
+msgstr "Nem, köszönöm."
 
 #: conversationlist_crossglen.json:drunk1:1
 #: conversationlist_rothses.json:rothses_c2:2
@@ -778,7 +779,9 @@ msgstr ""
 msgid ""
 "On one hand, Lord Geomyr supports Crossglen with a lot of protection.\n"
 "[Points to the soldiers in the hall]"
-msgstr "[REVIEW]Egyrészt Geomyr nagyúr sok védelemmel támogatja Crossglent. *a teremben lévő katonákra mutat*"
+msgstr ""
+"Egyrészt Geomyr nagyúr sok védelemmel támogatja Crossglent.\n"
+"[A teremben lévő katonákra mutat]"
 
 #: conversationlist_crossglen_leonid.json:leonid_crossglen7
 msgid "But on the other hand, the tax and the recent changes of what's allowed are really taking a toll on Crossglen."
@@ -905,7 +908,7 @@ msgstr "Hé, ez az én házam, menj ki innen!"
 #: conversationlist_crossglen_leta.json:leta1:0
 #: conversationlist_remgard_villagers1.json:morgisia:1
 msgid "But I was just..."
-msgstr ""
+msgstr "De én csak…"
 
 #: conversationlist_crossglen_leta.json:leta1:1
 #: conversationlist_crossglen_leta.json:leta2:0
@@ -969,7 +972,7 @@ msgstr ""
 #: conversationlist_stoutford.json:kayla_1
 #: conversationlist_stoutford.json:glasforn_initial_0
 msgid "Hello."
-msgstr "Helló"
+msgstr "Helló."
 
 #: conversationlist_crossglen_leta.json:oromir2
 msgid "I'm hiding here from my wife Leta. She is always getting angry at me for not helping out on the farm. Please don't tell her that I'm here."
@@ -1011,7 +1014,9 @@ msgstr "Persze, ha van valami, amit nyerhetek vele."
 
 #: conversationlist_crossglen_odair.json:odair3
 msgid "I recently went in to that cave over there [points west], to check on our supplies. But apparently, the cave has been infested with rats."
-msgstr "[REVIEW]Nemrég bementem abba a barlangba ott *nyugatra mutat*, hogy megnézzem az ellátmányunkat. De nyilvánvalóan a barlangot elárasztották a patkányok."
+msgstr ""
+"Nemrég bementem abba a barlangba ott [nyugatra mutat], hogy megnézzem az "
+"ellátmányunkat. De nyilvánvalóan a barlangot elárasztották a patkányok."
 
 #: conversationlist_crossglen_odair.json:odair4
 msgid "In particular, I saw one rat that was larger than the other rats. Do you think you have what it takes to help eliminate them?"
@@ -1048,7 +1053,7 @@ msgstr "Nem is gondoltam. Te és a testvéred mindig is gyávák voltatok."
 #: conversationlist_guynmart_npc.json:guynmart_nuik_70:2
 #: conversationlist_stoutford_combined.json:stoutford_widow_thorns80_2:0
 msgid "Bye."
-msgstr "Viszlát"
+msgstr "Viszlát."
 
 #: conversationlist_crossglen_odair.json:odair_continue
 msgid "Did you kill that large rat in the cave west of here?"
@@ -1094,7 +1099,7 @@ msgstr "Nagyon szépen köszönöm a segítséged, kölyök! Talán te és a tes
 #: conversationlist_stoutford.json:glasforn_rumblings20_3:1
 #: conversationlist_stoutford_combined.json:yolgen_4:0
 msgid "Thanks."
-msgstr "Köszönöm"
+msgstr "Köszönöm."
 
 #: conversationlist_crossglen_odair.json:odair_complete2
 msgid "Thanks a lot for your help earlier. Now we might start using that cave as our old supply cave again."
@@ -1158,17 +1163,12 @@ msgstr "De Irogotu mélyebbre akart menni a kazamatába. Ő és Gandir vitatkozt
 
 #: conversationlist_jan.json:jan_default8
 msgid "That's when it happened. *sob* Oh what have we done?"
-msgstr "[REVIEW]"
-"Majd ekkor történt.\n"
-"\n"
-"*zokog*\n"
-"\n"
-"Ó, mit tettünk?"
+msgstr "Majd ekkor történt. *zokog* Ó, mit tettünk?"
 
 #: conversationlist_jan.json:jan_default8:0
 #: conversationlist_ogam.json:ogam_2:1
 msgid "Please go on."
-msgstr "Kérlek, folytasd"
+msgstr "Kérlek, folytasd."
 
 #: conversationlist_jan.json:jan_default9
 msgid "Irogotu killed Gandir with his bare hands. You could see the fire in his eyes. He almost seemed to enjoy it."
@@ -1204,7 +1204,9 @@ msgstr "Nem, köszönöm. Inkább nem szeretnék ebbe belekeveredni. Veszélyesn
 
 #: conversationlist_jan.json:jan_default12
 msgid "Really? You think you could help? Hmm, maybe you could. Beware of those bugs though, they're really tough bastards."
-msgstr "Igazán? Úgy gondolod, hogy tudnál segíteni? Hm, talán tudsz. Tartsd távol magad azoktól a bogaraktól, azok valóban kemény rohadékok."
+msgstr ""
+"Igazán? Úgy gondolod, hogy tudnál segíteni? Hmm, talán tudsz. Tartsd távol "
+"magad azoktól a bogaraktól, azok valóban kemény rohadékok."
 
 #: conversationlist_jan.json:jan_default13
 msgid "If you really want to help, go find Irogotu down in the cave, and get me back Gandir's ring."
@@ -1270,9 +1272,11 @@ msgid ""
 "\n"
 "Oh thank you so much for bringing me back Gandir's ring! Now I can have something to remember him by."
 msgstr ""
-"Várj, micsoda? Valóban lementél oda, és élve tértél vissza? Ez hogyan sikerült? Wow, majdnem meghaltam, amikor bementem abba a barlangba.\n"
+"Várj, micsoda? Valóban lementél oda, és élve tértél vissza? Ez hogyan "
+"sikerült? Hú, majdnem meghaltam, amikor bementem abba a barlangba.\n"
 "\n"
-"Ó, nagyon köszönöm, hogy visszahoztad nekem Gandir gyűrűjét! Most már van valamim, ami emlékeztet rá."
+"Ó, nagyon köszönöm, hogy visszahoztad nekem Gandir gyűrűjét! Most már van "
+"valamim, ami emlékeztet rá."
 
 #: conversationlist_jan.json:jan_complete:0
 msgid "Glad that I could help. Goodbye."
@@ -1364,11 +1368,13 @@ msgstr "Nem, sajnálom. Senkit sem láttam a személyleírás szerint."
 
 #: conversationlist_fallhaven.json:fallhaven_andor_2
 msgid "Some other kid you say? Hmm, let me think."
-msgstr "Egy másik kölyök, azt mondod? Hm, hadd gondolkodjak."
+msgstr "Egy másik kölyök, azt mondod? Hmm, hadd gondolkodjak."
 
 #: conversationlist_fallhaven.json:fallhaven_andor_3
 msgid "Hmm, I might have seen someone matching that description a few days ago. Can't remember where though."
-msgstr "Hm, mintha láttam volna valakit pár nappal ezelőtt, akire illik a személyleírás. Nem emlékszem, hogy hol."
+msgstr ""
+"Hmm, mintha láttam volna valakit pár nappal ezelőtt, akire illik a "
+"személyleírás. Nem emlékszem, hogy hol."
 
 #: conversationlist_fallhaven.json:fallhaven_andor_4
 msgid "Oh yes, there was another kid from Crossglen village here a few days ago. Not sure he matched your description though."
@@ -1480,7 +1486,8 @@ msgstr "Van olyan könyved, aminek „Calomyran titkai” a címe?"
 
 #: conversationlist_fallhaven_arcir.json:arcir_calomyran_1
 msgid "'Calomyran Secrets'? Hmm, yes I think I have one of those in my basement."
-msgstr "„Calomyran titkai”? Hm, igen, azt hiszem, van belőle egy az alagsorban."
+msgstr ""
+"„Calomyran titkai”? Hmm, igen, azt hiszem, van belőle egy az alagsorban."
 
 #: conversationlist_fallhaven_arcir.json:arcir_calomyran_2
 msgid "Old man Benradas came by last week, wanting to sell me that book. Since it's not really my kind of book, I declined."
@@ -1610,7 +1617,9 @@ msgstr "Még mindig keresem. Viszlát."
 
 #: conversationlist_fallhaven_bucus.json:bucus_thieves_complete_1
 msgid "Wow, you actually got the key of Luthor? I didn't think you would make it out of there."
-msgstr "Wow, valóban megszerezted Luthor kulcsát? Nem gondoltam volna, hogy megtalálod odalent."
+msgstr ""
+"Hú, valóban megszerezted Luthor kulcsát? Nem gondoltam volna, hogy "
+"megtalálod odalent."
 
 #: conversationlist_fallhaven_bucus.json:bucus_thieves_complete_2
 msgid "Well done kid."
@@ -1797,7 +1806,7 @@ msgstr "Hogyan kaphatok engedélyt, hogy lemehessek oda?"
 
 #: conversationlist_fallhaven_athamyr.json:athamyr_3
 msgid "You want to go down in the catacombs? Hmm, maybe we can make a deal."
-msgstr "Le akarsz menni a katakombákba? Hm, talán köthetünk egy üzletet."
+msgstr "Le akarsz menni a katakombákba? Hmm, talán köthetünk egy üzletet."
 
 #: conversationlist_fallhaven_athamyr.json:athamyr_4
 msgid "Bring me some of that delicious cooked meat from the tavern and I will give you my permission to enter the catacombs of Fallhaven Church."
@@ -1911,15 +1920,16 @@ msgstr "Akkor meg kellett innom. Mit gondolsz, tudnál nekem hozni egy új mézs
 msgid ""
 "Oh sweet drinks of joy. May the sssshadow be with you kid.\n"
 "[Makes big eyes]"
-msgstr "[REVIEW]Ó, élvezet édes itala. Az áááárny legyen veled, kölyök. *nagyra nyitja a szemét*"
+msgstr ""
+"Ó, élvezet édes itala. Az áááárny legyen veled, kölyök.\n"
+"[Nagyra nyitja a szemét]"
 
 #: conversationlist_fallhaven_drunk.json:fallhaven_drunk_11
 msgid ""
 "[Takes a gulp of the mead]\n"
 "That's good stuff!"
-msgstr "[REVIEW]"
-"*belekortyol a mézsörbe*\n"
-"\n"
+msgstr ""
+"[Belekortyol a mézsörbe]\n"
 "Ez jó dolog!"
 
 #: conversationlist_fallhaven_drunk.json:fallhaven_drunk_12
@@ -2030,7 +2040,7 @@ msgstr "Gyorsan. Tegyük újra ragyogóvá ezeket a régi szívacél fegyvereket
 
 #: conversationlist_fallhaven_nocmar.json:nocmar_complete_4
 msgid "[Nocmar places the heartstone among the heartsteel weapons]"
-msgstr "[REVIEW]*Nocmar beteszi a szívkövet a szívacél fegyverek közé*"
+msgstr "[Nocmar beteszi a szívkövet a szívacél fegyverek közé]"
 
 #: conversationlist_fallhaven_nocmar.json:nocmar_complete_5
 msgid "Can you feel it? The heartsteel is glowing again."
@@ -2078,7 +2088,10 @@ msgstr "Lennél olyan szíves megkeresni a könyvemet? A címe „Calomyran titk
 msgid ""
 "I have no idea where it might be. You could go ask Arcir, he seems very fond of his books.\n"
 " [Points at the house to the south]"
-msgstr "[REVIEW]Nincs ötletem, hogy merre lehet. Menj és kérdezd meg Arcirt, ő nagyon szerette a könyveit. *a délen lévő házra mutat*"
+msgstr ""
+"Nincs ötletem, hogy merre lehet. Menj és kérdezd meg Arcirt, ő nagyon "
+"szerette a könyveit.\n"
+"[A délen lévő házra mutat]"
 
 #: conversationlist_fallhaven_oldman.json:fallhaven_oldman_6:0
 msgid "OK, I'll go ask Arcir. Goodbye."
@@ -2126,7 +2139,7 @@ msgstr "Üdvözöllek Fallhaven kocsmájában. Foglalj helyet bárhol."
 
 #: conversationlist_fallhaven_tavern.json:bela:0
 msgid "Let me see what food and drinks you have available."
-msgstr "Hadd lássam, milyen ételek és italok érhetők el nálad"
+msgstr "Hadd lássam, milyen ételek és italok érhetők el nálad."
 
 #: conversationlist_fallhaven_tavern.json:bela:1
 #: conversationlist_kendelow.json:kendelow_d:2
@@ -2139,7 +2152,7 @@ msgstr "Egy szoba neked csak 10 aranyba kerül."
 
 #: conversationlist_fallhaven_tavern.json:bela_room_1:0
 msgid "[Buy for 10 gold]"
-msgstr "[REVIEW]Kifizet [10 arany]"
+msgstr "[Megvétel 10 aranyért]"
 
 #: conversationlist_fallhaven_tavern.json:bela_room_2
 msgid "Thanks. Take the last room down at the end of the hall."
@@ -2269,7 +2282,10 @@ msgstr "A testvéremet keresem."
 msgid ""
 "Yeah yeah, I get it. Your brother has probably run off to some dungeon, trying to go adventuring.\n"
 "[Rolls eyes]"
-msgstr "[REVIEW]Igen, igen, megvan. A testvéred valószínűleg elfutott valami kazamatába szerencsét próbálni. *forgatja a szemét*"
+msgstr ""
+"Igen, igen, megvan. A testvéred valószínűleg elfutott valami kazamatába "
+"szerencsét próbálni.\n"
+"[Forgatja a szemét]"
 
 #: conversationlist_fallhaven_unnmir.json:unnmir_8
 msgid "Or maybe he has gone to one of the bigger cities to the north."
@@ -2289,7 +2305,9 @@ msgstr "Nem, nem igazán."
 
 #: conversationlist_fallhaven_unnmir.json:unnmir_11
 msgid "Nice. I'll give you a hint, kid. *snickering* Go see Nocmar over by the west side of town. Tell him I sent you."
-msgstr "Szép. Adok neked egy tippet, kölyök. *kuncog*. Menj, látogasd meg Nocmart a város nyugati oldalán. Mondd neki, hogy én küldtelek."
+msgstr ""
+"Szép Adok neked egy tippet, kölyök. *kuncog* Menj, látogasd meg Nocmart a "
+"város nyugati oldalán. Mondd neki, hogy én küldtelek."
 
 #: conversationlist_fallhaven_unnmir.json:unnmir_12
 msgid "Smart move. Adventuring leads to a lot of scars. If you know what I mean."
@@ -2341,7 +2359,7 @@ msgstr "Tekintsd ezt szívességnek cserébe, hogy segítettél Gruilnak."
 
 #: conversationlist_fallhaven_vacor.json:vacor_2
 msgid "What are you, some kind of adventurer? Hmm. Maybe you can be of use to me."
-msgstr "Mi vagy te, valamilyen kalandor? Hm. Talán hasznos lehetsz nekem."
+msgstr "Mi vagy te, valamilyen kalandor? Hmm. Talán hasznos lehetsz nekem."
 
 #: conversationlist_fallhaven_vacor.json:vacor_3
 msgid "Are you willing to help me?"
@@ -2437,7 +2455,9 @@ msgstr "Át kell kutatnod Fallhaven déli részeit a négy banditáért."
 
 #: conversationlist_fallhaven_vacor.json:vacor_21
 msgid "Please hurry! I am so eager to open up the rift ... erm, I mean finish the spell. Nothing odd with that right?"
-msgstr "Kérlek, siess! Olyan mohó vagyok, hogy felnyissam a repesztés… Erm, úgy értem, hogy befejezzem a varázslatot. Semmi különös nincs ebben, rendben?"
+msgstr ""
+"Kérlek, siess! Olyan mohó vagyok, hogy felnyissam a repesztés… erm, úgy "
+"értem, hogy befejezzem a varázslatot. Semmi különös nincs ebben, rendben?"
 
 #: conversationlist_fallhaven_vacor.json:vacor_return1
 msgid "Hello again. How is the search for my missing pieces of the rift spell going?"
@@ -2725,7 +2745,7 @@ msgstr "Megölted őt? Köszönöm neked, barátom. Most már biztonságban vagy
 #: conversationlist_stoutford_combined.json:yolgen_castle_6:0
 #: conversationlist_stoutford_combined.json:stn_colonel_64:0
 msgid "Thank you."
-msgstr ""
+msgstr "Köszönöm."
 
 #: conversationlist_fallhaven_unzel.json:unzel_40
 msgid "Thank you for your help. Now we are safe from Vacor's rift spell."
@@ -3055,7 +3075,7 @@ msgstr "Szeretnék beszélni veled Fallhaven átjárójáról a Duleian útra."
 #: conversationlist_fallhaven_south.json:fallhaven_lumberjack_2:1
 #: conversationlist_fallhaven_south.json:fallhaven_lumberjack_15:2
 msgid "Never mind. I don't need your services for now."
-msgstr ""
+msgstr "Nem fontos. Most nincs szükségem a szolgáltaidra."
 
 #: conversationlist_fallhaven_south.json:fallhaven_lumberjack_2:2
 #: conversationlist_fallhaven_south.json:fallhaven_lumberjack_15:1
@@ -3072,7 +3092,7 @@ msgstr "Láttad a testvéremet, Andort? Hasonlóan néz ki, mint én."
 
 #: conversationlist_fallhaven_south.json:alaun_2
 msgid "You are looking for your brother you say? Looks like you? Hmm."
-msgstr "A testvéredet keresed, azt mondod? Úgy néz ki, mint te? Hm."
+msgstr "A testvéredet keresed, azt mondod? Úgy néz ki, mint te? Hmm."
 
 #: conversationlist_fallhaven_south.json:alaun_3
 msgid "No, I cannot recall seeing anyone by that description. Maybe you should try in Crossglen village west of here."
@@ -3152,6 +3172,7 @@ msgstr "Hadd lássam… Ó, igen! Ez az én fejszém! Nem tudom eléggé megkös
 #: conversationlist_fallhaven_south.json:fallhaven_lumberjack_16:0
 msgid "So will you cut away those trees that block the old pathway?"
 msgstr ""
+"Szóval ki fogod vágni azokat a fákat, amelyek elzárják a régi gyalogösvényt?"
 
 #: conversationlist_fallhaven_south.json:fallhaven_lumberjack_11
 msgid "Sure! Already on my way! The work will be finished soon."
@@ -3176,7 +3197,7 @@ msgstr "Persze. Azt fogom tenni. He-he."
 #: conversationlist_guynmart_npc.json:guynmart_lovis2_151:0
 #: conversationlist_stoutford_combined.json:stoutford_widow_12:0
 msgid "Goodbye."
-msgstr ""
+msgstr "Viszontlátásra."
 
 #: conversationlist_fallhaven_south.json:fallhaven_lumberjack_13
 msgid "You're welcome. But you're not the only one who is happy. There are more people resting for a night in Fallhaven, which helps our economy. Some even bought items at my store! By the way, I was surprised, but I even got paid well by the warden."
@@ -3369,7 +3390,7 @@ msgstr "Ki az az Umar?"
 
 #: conversationlist_thievesguild_1.json:thievesguild_thief_4
 msgid "He is probably in his room over there [points]."
-msgstr "[REVIEW]Valószínűleg a szobájában van amott. *mutatja*"
+msgstr "Valószínűleg a szobájában van amott [mutatja]."
 
 #: conversationlist_thievesguild_1.json:thievesguild_thief_5
 msgid "Umar is our guild leader. He decides our rules and guides us in moral decisions."
@@ -3403,15 +3424,15 @@ msgstr "Úgy van. Valakinek etetnie kell ezeket a haramiákat."
 
 #: conversationlist_thievesguild_1.json:thievesguild_cook_2:0
 msgid "That sure smells good."
-msgstr "Ennek biztosan jó illata van"
+msgstr "Ennek biztosan jó illata van."
 
 #: conversationlist_thievesguild_1.json:thievesguild_cook_2:1
 msgid "That stew looks disgusting."
-msgstr "Az a ragu undorítónak tűnik"
+msgstr "Az a ragu undorítónak tűnik."
 
 #: conversationlist_thievesguild_1.json:thievesguild_cook_2:2
 msgid "Never mind, bye."
-msgstr "Nem fontos, viszlát"
+msgstr "Nem fontos, viszlát."
 
 #: conversationlist_thievesguild_1.json:thievesguild_cook_3
 msgid "Thanks. This stew is coming along nicely."
@@ -3570,11 +3591,11 @@ msgstr "Nem, én tényleg ismerlek."
 #: conversationlist_thievesguild_1.json:thievesguild_troublemaker_3:0
 #: conversationlist_loneford_2.json:landa_5:0
 msgid "You must have me confused with someone else."
-msgstr "[REVIEW]Biztosan összekeversz valaki mással."
+msgstr "Biztosan összekeversz valaki mással."
 
 #: conversationlist_thievesguild_1.json:thievesguild_troublemaker_3:1
 msgid "Maybe you have me confused with my brother Andor."
-msgstr "[REVIEW]Talán összekeversz engem a testvéremmel, Andorral."
+msgstr "Talán összekeversz engem a testvéremmel, Andorral."
 
 #: conversationlist_thievesguild_1.json:thievesguild_troublemaker_4
 msgid "Yes, might be."
@@ -3775,7 +3796,7 @@ msgstr "Jó. Jelentsd nekem, amikor az őrkapitány már ivott abból a különl
 #: conversationlist_farrik.json:farrik_23:0
 #: conversationlist_fallhaven_warden.json:fallhaven_warden_25:0
 msgid "Will do."
-msgstr "Azt fogom"
+msgstr "Azt fogom."
 
 #: conversationlist_farrik.json:farrik_return_1
 msgid "Hello again my friend. How goes your mission to get the guard captain drunk?"
@@ -3811,7 +3832,7 @@ msgstr "Köszönöm a korábbi segítséged az őrkapitánnyal kapcsolatban."
 
 #: conversationlist_farrik.json:farrik_26
 msgid "Oh you did? Well done. You have my thanks, friend."
-msgstr ""
+msgstr "Ó, megtetted? Szép munka. Fogadd köszönetemet, barátom."
 
 #: conversationlist_fallhaven_warden.json:fallhaven_warden
 msgid "State your business."
@@ -3935,7 +3956,10 @@ msgstr "Megyek, és megszerzem neked azt az aranyat. Viszontlátásra."
 
 #: conversationlist_fallhaven_warden.json:fallhaven_warden_9
 msgid "Wow, that much gold? I'm sure I could even get away with this without being fined. Then I could have the gold AND a nice drink of mead at the same time."
-msgstr "Wow, olyan sok arany? Biztos vagyok benne, hogy ezzel meg is úszhatom anélkül, hogy megbüntetnének. Akkor megszerezhetném az aranyat ÉS egy finom mézsör italt is egyszerre."
+msgstr ""
+"Hú, olyan sok arany? Biztos vagyok benne, hogy ezzel meg is úszhatom "
+"anélkül, hogy megbüntetnének. Akkor megszerezhetném az aranyat ÉS egy finom "
+"mézsör italt is egyszerre."
 
 #: conversationlist_fallhaven_warden.json:fallhaven_warden_10
 msgid "Thank you kid, you really are nice. Now leave me to enjoy my drink."
@@ -3959,7 +3983,7 @@ msgstr "Igazán? Volna merszük feljönni ide Fallhavenbe az őrök ellenére? V
 
 #: conversationlist_fallhaven_warden.json:fallhaven_warden_20:0
 msgid "I heard they are planning his escape tonight."
-msgstr "Azt hallottam, hogy ma estére tervezik a megszöktetését"
+msgstr "Azt hallottam, hogy ma estére tervezik a megszöktetését."
 
 #: conversationlist_fallhaven_warden.json:fallhaven_warden_20:1
 msgid "No, I was just kidding with you. Never mind."
@@ -4081,7 +4105,7 @@ msgstr "Biztosan összetévesztesz a testvéremmel, Andorral. Nagyon hasonlítun
 
 #: conversationlist_umar.json:umar_3
 msgid "Oh. I must have you confused with someone else."
-msgstr "[REVIEW]Ó. Biztosan összekevertelek valaki mással."
+msgstr "Ó. Biztosan összekeverlek valaki mással."
 
 #: conversationlist_umar.json:umar_3:0
 msgid "My brother Andor and I look very much alike."
@@ -4113,7 +4137,7 @@ msgstr "Milyen viszály?"
 
 #: conversationlist_umar.json:umar_7:1
 msgid "Tell me more about what Andor asked for."
-msgstr "Mondj nekem többet arról, hogy Andor mit kérdezett"
+msgstr "Mondj nekem többet arról, hogy Andor mit kérdezett."
 
 #: conversationlist_umar.json:umar_conflict_1
 msgid "Where have you been the last couple of years? Don't you know of the brewing conflict?"
@@ -4276,7 +4300,9 @@ msgstr "Feygard, az merre van vagy micsoda?"
 
 #: conversationlist_kaori.json:kaori_5
 msgid "Hmm. Maybe not. But then again, maybe you are. I am still not sure."
-msgstr "Hm. Talán nem. De másfelől viszont talán az vagy. Még mindig nem vagyok biztos."
+msgstr ""
+"Hmm. Talán nem. De másfelől viszont talán az vagy. Még mindig nem vagyok "
+"biztos."
 
 #: conversationlist_kaori.json:kaori_5:0
 #: conversationlist_kaori.json:kaori_trust_1:0
@@ -4365,7 +4391,7 @@ msgstr "El kellene menned beszélni Erttuval, ha a háttértörténetet szeretn�
 
 #: conversationlist_kaori.json:kaori_vilegard_1:0
 msgid "OK, I will do that."
-msgstr "Rendben, elmegyek hozzá."
+msgstr "Rendben, azt fogom tenni."
 
 #: conversationlist_kaori.json:kaori_vilegard_2
 msgid "We have a history of people coming here and causing mischief. Over time, we have learned that keeping to ourselves works best."
@@ -4508,7 +4534,9 @@ msgstr "Köszönöm az információkat. Viszontlátásra."
 
 #: conversationlist_vilegard_erttu.json:erttu_vilegard_3:2
 msgid "Wow, nothing more? I wonder what I am doing in a puny village such as this one."
-msgstr "Wow, semmi több? Azon csodálkozom, hogy mit keresek egy olyan apró faluban mint ez itt."
+msgstr ""
+"Hú, semmi több? Azon csodálkozom, hogy mit keresek egy olyan apró faluban "
+"mint ez itt."
 
 #: conversationlist_vilegard_tavern.json:dunla_default
 msgid "You look like a smart fellow. Need any supplies?"
@@ -4723,6 +4751,8 @@ msgstr "Rendben, remélem, hogy ez a végén egy kis kincshez vezet majd."
 #: conversationlist_jolnor.json:jolnor_gaintrust_13
 msgid "It's your choice. You can at least go check out the tavern and see if you find anything suspicious."
 msgstr ""
+"A te döntésed. Legalább elmehetnél megnézni a kocsmát, és láthatnád, ha "
+"valami gyanúsat találsz."
 
 #: conversationlist_jolnor.json:jolnor_gaintrust_13:0
 #: conversationlist_stoutford_combined.json:odirath_3_5:3
@@ -4851,7 +4881,7 @@ msgstr "Üdv néked. Nézz szét a finom páncélok és védőfelszerelések vá
 
 #: conversationlist_vilegard_shops.json:vilegard_armorer_1:0
 msgid "Let me see your list of wares."
-msgstr "Mutasd meg az árukészleted"
+msgstr "Mutasd meg az árukészleted."
 
 #: conversationlist_vilegard_shops.json:vilegard_smith_1
 msgid "Hello there. I heard you helped us here in Vilegard. What can I help you with?"
@@ -4872,6 +4902,8 @@ msgstr "Van egy szállítmány feygardi tárgyam neked."
 #: conversationlist_vilegard_shops.json:vilegard_shop_notrust_smith:3
 msgid "On the body of something called the Hira'zinn, I found this peculiar sword. Do you know anything about it?"
 msgstr ""
+"Valami Hira'zinn nevű testén találtam ezt a különös kardot. Tudsz valamit "
+"erről?"
 
 #: conversationlist_vilegard_shops.json:vilegard_shop_notrust
 #: conversationlist_vilegard_shops.json:vilegard_shop_notrust_smith
@@ -5200,10 +5232,7 @@ msgstr "Tök mindegy, valószínűleg még egy erdei darazsat sem élnél túl."
 
 #: conversationlist_foamingflask_guards.json:ff_guard_1
 msgid "Ha ha, you tell him Garl! *burp*"
-msgstr "[REVIEW]"
-"Ha ha, megmondtad Garlnak!\n"
-"\n"
-"*böfög*"
+msgstr "Ha ha, megmondtad Garlnak! *böfög*"
 
 #: conversationlist_foamingflask_guards.json:ff_guard_2
 msgid "Sing, drink, fight! All who oppose Feygard will fall!"
@@ -5215,7 +5244,7 @@ msgstr "Büszkén fogunk állni. Feygard, a béke városa!"
 
 #: conversationlist_foamingflask_guards.json:ff_guard_3:0
 msgid "I had better be going."
-msgstr "Jobb, ha most megyek"
+msgstr "Jobb, ha most megyek."
 
 #: conversationlist_foamingflask_guards.json:ff_guard_3:1
 #: conversationlist_foamingflask_guards.json:ff_captain_2:0
@@ -5322,7 +5351,7 @@ msgstr "Menj be a kapitányhoz, ha beszélgetni szeretnél. Éberen kell őrköd
 
 #: conversationlist_foamingflask_outsideguard.json:ff_outsideguard_3:0
 msgid "OK. Goodbye."
-msgstr "Rendben, viszontlátásra."
+msgstr "Rendben. Viszontlátásra."
 
 #: conversationlist_foamingflask_outsideguard.json:ff_outsideguard_3:1
 msgid "Why must you stay alert outside a tavern?"
@@ -6014,7 +6043,8 @@ msgstr ""
 
 #: conversationlist_maelveon.json:maelveon
 msgid "[You feel a tingling sensation in your body as the frightening figure begins to speak]"
-msgstr "[bizsergető érzést érzel a testedben, amint az ijesztő alak elkezd beszélni]"
+msgstr ""
+"[Bizsergető érzést érzel a testedben, amint az ijesztő alak elkezd beszélni]"
 
 #: conversationlist_maelveon.json:maelveon_1
 msgid "Sssshadow take you."
@@ -6091,11 +6121,13 @@ msgstr "Lesz ezért valami jutalom?"
 
 #: conversationlist_bwm_agent_1.json:bwm_agent_1_5:3
 msgid "Hmm, no. I had better not get involved in this."
-msgstr "Hm, nem. Jobban teszem, ha nem veszek részt ebben."
+msgstr "Hmm, nem. Jobban teszem, ha nem veszek részt ebben."
 
 #: conversationlist_bwm_agent_1.json:bwm_agent_1_6
 msgid "Reward? Hmm, I was hoping you would help us for other reasons than a reward. But I guess my master will reward you sufficiently if you survive."
-msgstr "Jutalom? Hm, reméltem, hogy egy jutalmon kívül más okokból is segítenél nekünk. De azt hiszem, a mesterem kellően megjutalmaz, ha túléled."
+msgstr ""
+"Jutalom? Hmm, reméltem, hogy egy jutalmon kívül más okokból is segítenél "
+"nekünk. De azt hiszem, a mesterem kellően megjutalmaz, ha túléled."
 
 #: conversationlist_bwm_agent_1.json:bwm_agent_1_6:0
 msgid "Alright, I'll do it."
@@ -6103,7 +6135,9 @@ msgstr "Rendben, megcsinálom."
 
 #: conversationlist_bwm_agent_1.json:bwm_agent_1_7
 msgid "Excellent. The Blackwater mountain settlement is some distance away. Frankly, I am amazed that I made it this far alive."
-msgstr "[REVIEW]Kitűnő. A Blackwater település kicsit messze van. Őszintén meglepődtem, hogy eddig eljutottam élve."
+msgstr ""
+"Kitűnő. A Blackwater-hegység település kicsit messze van. Őszintén "
+"meglepődtem, hogy eddig eljutottam élve."
 
 #: conversationlist_bwm_agent_1.json:bwm_agent_1_8
 msgid "I must warn you though, that there are some nasty monsters on the way."
@@ -6130,7 +6164,9 @@ msgstr "Jó. Először is át kell jutnunk ezen a bányán a másik oldalra."
 
 #: conversationlist_bwm_agent_1.json:bwm_agent_1_11
 msgid "The mine shaft over there [points] has collapsed, so I guess you won't make it through there."
-msgstr "[REVIEW]A bányaakna amott *mutatja* beomlott, úgyhogy azt hiszem, nem fogsz tudni átjutni rajta."
+msgstr ""
+"A bányaakna amott [mutatja] beomlott, úgyhogy azt hiszem, nem fogsz tudni "
+"átjutni rajta."
 
 #: conversationlist_bwm_agent_1.json:bwm_agent_1_12
 msgid "You will have to go through the abandoned mine below. Beware that the mine is pitch-black, so you will have to navigate in there without any light."
@@ -6247,7 +6283,9 @@ msgstr "Rendben, megígérem, hogy kelet felé megyek, amikor elhagyjuk a bány�
 
 #: conversationlist_bwm_agent_2.json:bwm_agent_2_11:1
 msgid "[Lie] OK, I promise to head east once we exit the mine."
-msgstr "[REVIEW](Hazugság) Rendben, megígérem, hogy kelet felé megyek, amikor elhagyjuk a bányát."
+msgstr ""
+"[Hazugság] Rendben, megígérem, hogy kelet felé megyek, amikor elhagyjuk a "
+"bányát."
 
 #: conversationlist_bwm_agent_2.json:bwm_agent_2_12
 msgid "Actually, I did tell you that it would be pitch-black down there. Good work navigating through there!"
@@ -6255,52 +6293,60 @@ msgstr "Tulajdonképpen elmondtam neked, hogy koromsötét lehet odalent. Szép 
 
 #: conversationlist_bwm_agent_3.json:bwm_agent_3_1
 msgid "Hello. You made it here, good."
-msgstr ""
+msgstr "Helló. Eljutottál ide, jól van."
 
 #: conversationlist_bwm_agent_3.json:bwm_agent_3_1:0
 msgid "I talked to some people in the village Prim. They had some interesting things to say about Blackwater mountain."
 msgstr ""
+"Beszéltem néhány emberrel Prim faluban. Mondtak néhány érdekes dolgot a "
+"Blackwater-hegységről."
 
 #: conversationlist_bwm_agent_3.json:bwm_agent_3_1:1
 msgid "I went east, as you said."
-msgstr ""
+msgstr "Kelet felé mentem, ahogy mondtad."
 
 #: conversationlist_bwm_agent_3.json:bwm_agent_3_2
 msgid "Good. Now let's get up this mountain. I will meet you halfway up there."
-msgstr ""
+msgstr "Jó. Most menjünk fel erre a hegyre. Találkozunk félúton felfelé."
 
 #: conversationlist_bwm_agent_3.json:bwm_agent_3_3
 msgid "This path leads up to the Blackwater mountain settlement. Follow this path and we will talk later."
 msgstr ""
+"Ez az ösvény vezet fel a Blackwater-hegység településre. Kövesd ezt az "
+"ösvényt, és később beszélünk."
 
 #: conversationlist_bwm_agent_3.json:bwm_agent_3_4
 msgid "Beware of the nasty monsters, they can really cause some harm!"
-msgstr ""
+msgstr "Óvakodj az utálatos szörnyektől, valóban kárt okozhatnak!"
 
 #: conversationlist_bwm_agent_3.json:bwm_agent_3_4:0
 msgid "OK, I will follow this path up the mountain."
-msgstr ""
+msgstr "Rendben, követni fogom ezt az ösvényt fel a hegyre."
 
 #: conversationlist_bwm_agent_3.json:bwm_agent_3_4:1
 msgid "Great, more monsters. Just what I needed."
-msgstr ""
+msgstr "Nagyszerű, még több szörny. Épp erre van szükségem."
 
 #: conversationlist_bwm_agent_3.json:bwm_agent_3_5
 msgid "Do not listen to their lies. They poison your thoughts and would not hesitate to stab you in the back once they get the chance."
 msgstr ""
+"Ne hallgass a hazugságaikra. Megmérgezik a gondolataidat, és nem haboznak "
+"hátba támadni, amikor esélyt kapnak rá."
 
 #: conversationlist_bwm_agent_3.json:bwm_agent_3_5:0
 #: conversationlist_blackwater_harlenn.json:harlenn_15:0
 msgid "What have they done?"
-msgstr ""
+msgstr "Mit tettek?"
 
 #: conversationlist_bwm_agent_3.json:bwm_agent_3_5:1
 msgid "Yes, they do seem a bit shady."
-msgstr ""
+msgstr "Igen, kicsit gyanúsnak tűnnek."
 
 #: conversationlist_bwm_agent_3.json:bwm_agent_3_6
 msgid "I will not talk of them now. Follow me up to the Blackwater mountain settlement and we will talk more there."
 msgstr ""
+"Most nem fogok róluk beszélni. Kövess engem egészen a Blackwater-hegység "
+"településig, és ott többet fogunk beszélni."
 
 #: conversationlist_bwm_agent_3.json:bwm_agent_3_6:0
 #: conversationlist_prim_guthbered.json:guthbered_21:0
@@ -6316,7 +6362,7 @@ msgstr "Persze."
 
 #: conversationlist_bwm_agent_3.json:bwm_agent_3_6:1
 msgid "I'm keeping my eye on you. But I'll agree to your terms for now."
-msgstr ""
+msgstr "Rajtad tartom a szemem. De most elfogadom a feltételeidet."
 
 #: conversationlist_bwm_agent_3.json:bwm_agent_3_7
 msgid "Indeed they do."
@@ -6324,40 +6370,42 @@ msgstr ""
 
 #: conversationlist_bwm_agent_4.json:bwm_agent_4_1
 msgid "Hello again. Well done defeating the gornaud beasts."
-msgstr ""
+msgstr "Helló ismét. Szép munka, hogy legyőzted a gornaud szörnyetegeket."
 
 #: conversationlist_bwm_agent_4.json:bwm_agent_4_1:0
 msgid "Their attacks really hurt. What are these things?"
-msgstr ""
+msgstr "A támadásuk valóban sebez. Mik ezek a dolgok?"
 
 #: conversationlist_bwm_agent_4.json:bwm_agent_4_1:1
 #: conversationlist_bwm_agent_4.json:bwm_agent_4_7:1
 msgid "How come they do not attack you?"
-msgstr ""
+msgstr "Hogy lehet, hogy téged nem támadnak meg?"
 
 #: conversationlist_bwm_agent_4.json:bwm_agent_4_1:2
 msgid "Yeah, no problem. Just another trail of dead bodies behind me."
-msgstr ""
+msgstr "Igen, nem probléma. Csak egy újabb holttestekkel borított sáv mögöttem."
 
 #: conversationlist_bwm_agent_4.json:bwm_agent_4_2
 msgid "Careful what you wish for, for it may come true."
-msgstr ""
+msgstr "Légy óvatos, hogy mit kívánsz, mert valóra válhat."
 
 #: conversationlist_bwm_agent_4.json:bwm_agent_4_3
 msgid "Me? There must be something about me that scares them. I have no idea what it would be, some scent perhaps?"
 msgstr ""
+"Engem? Lennie kell valaminek velem kapcsolatban, ami elriasztja őket. Nincs "
+"ötletem, hogy mi lehet az, talán valami illat?"
 
 #: conversationlist_bwm_agent_4.json:bwm_agent_4_4
 msgid "Anyway, we should get going. I'll run ahead of you up the mountain."
-msgstr ""
+msgstr "Mindenesetre tovább kell mennünk. Felfutok előtted a hegyre."
 
 #: conversationlist_bwm_agent_4.json:bwm_agent_4_5
 msgid "Meet me further up the mountain, and we will talk more."
-msgstr ""
+msgstr "Találkozunk fentebb a hegyen, és többet fogunk beszélni."
 
 #: conversationlist_bwm_agent_4.json:bwm_agent_4_5:0
 msgid "OK, see you there."
-msgstr ""
+msgstr "Rendben, ott találkozunk."
 
 #: conversationlist_bwm_agent_4.json:bwm_agent_4_6
 msgid "I do not know where they come from. All I know is that they started to appear one day, blocking the path up the mountain."
@@ -6712,7 +6760,7 @@ msgstr "Igen, azért vagyok itt, hogy segítsek a faludnak."
 
 #: conversationlist_prim_outside.json:prim_commoner1:1
 msgid "[Lie] Yes, I am here to help your village."
-msgstr "[REVIEW](Hazugság) Igen, azért vagyok itt, hogy segítsek a faludnak."
+msgstr "[Hazugság] Igen, azért vagyok itt, hogy segítsek a faludnak."
 
 #: conversationlist_prim_outside.json:prim_commoner1_2
 msgid "Thank you. We really need your help."
@@ -6770,7 +6818,7 @@ msgstr "Igen, azért jöttem, hogy segítsek a faludnak."
 
 #: conversationlist_prim_outside.json:prim_commoner4:2
 msgid "[Lie] Yes, I have come to help your village."
-msgstr "[REVIEW](Hazugság) Igen, azért jöttem, hogy segítsek a faludnak."
+msgstr "[Hazugság] Igen, azért jöttem, hogy segítsek a faludnak."
 
 #: conversationlist_prim_outside.json:prim_commoner4_1
 msgid "Your brother? Son, you should know that we do not get many visitors around here."
@@ -6860,7 +6908,7 @@ msgstr "Van valami, amivel segíthetek?"
 
 #: conversationlist_prim_inn.json:laecca_9
 msgid "Pfft, 'What beasts?'. The gornaud beasts of course."
-msgstr "Pfft, „Miféle szörnyetegek?” A gornaud szörnyetegek természetesen."
+msgstr "Pfft, „Miféle szörnyetegek?”. A gornaud szörnyetegek természetesen."
 
 #: conversationlist_prim_inn.json:laecca_10
 msgid "Scratching their claws against the bare rock at night. *shrug*"
@@ -6897,7 +6945,7 @@ msgstr "Ételek? Nincsenek, sajnálom. Nincs semmim sem, amivel kereskedjek."
 
 #: conversationlist_prim_inn.json:prim_cook_3
 msgid "Rent? Hmm. No, not at the moment."
-msgstr "Bérelni? Hm. Nem, jelenleg nem."
+msgstr "Bérelni? Hmm. Nem, jelenleg nem."
 
 #: conversationlist_prim_inn.json:prim_cook_5
 msgid "Now that you mention it, he hasn't been around here for quite some time. Maybe you could go talk to him and see if he still wants to rent it?"
@@ -6937,7 +6985,9 @@ msgstr "Beszéltél Arghesttel?"
 
 #: conversationlist_prim_inn.json:prim_cook_return_2:1
 msgid "[Lie] Yes, he told me that I could rest in the back room if I want to."
-msgstr "[REVIEW](Hazugság) Igen, azt mondta nekem, hogy lepihenhetek a hátsó szobában, ha szeretnék."
+msgstr ""
+"[Hazugság] Igen, azt mondta nekem, hogy lepihenhetek a hátsó szobában, ha "
+"szeretnék."
 
 #: conversationlist_prim_inn.json:prim_cook_return_2:2
 msgid "Yes, he gave me permission to use the back room whenever I wish."
@@ -6962,6 +7012,8 @@ msgstr "Valami többet kell tenned, hogy meggyőzz engem."
 #: conversationlist_prim_inn.json:prim_cook_return_6
 msgid "Really, he did? Well then, go ahead. I'm just glad the back room is being used."
 msgstr ""
+"Valóban, megengedte? Nos, akkor tessék. Én csak örülök, hogy a hátsó szoba "
+"újra használatban lesz."
 
 #: conversationlist_prim_inn.json:prim_cook_return_7
 msgid "You are welcome to rest in the back room any time you want. Please let me know if there is anything I can do to help."
@@ -7236,120 +7288,145 @@ msgstr "Guthbered vagyok, a falu védelmezője."
 #: conversationlist_prim_guthbered.json:guthbered_13
 msgid "A while ago, we started seeing the first of the monsters. At first, they were no problem for us to handle. Our guards could cut them down easily."
 msgstr ""
+"Egy ideje elkezdtük meglátni az első szörnyeket. Elsőre nem volt probléma "
+"számunkra a kezelésük. Az őreink könnyedén meg tudták ölni őket."
 
 #: conversationlist_prim_guthbered.json:guthbered_14
 msgid "But after a while, some of our guards got hurt, and the monsters started increasing in numbers."
 msgstr ""
+"De egy idő után néhány őrünk megsérült, és a szörnyek száma egyre csak nőtt."
 
 #: conversationlist_prim_guthbered.json:guthbered_15
 msgid "Also, the monsters almost seemed like they were getting smarter. Their attacks were getting more and more coordinated."
 msgstr ""
+"Valamint úgy tűnt, mintha a szörnyek egyre okosabbak lettek volna. A "
+"támadásaik egyre inkább összehangoltak voltak."
 
 #: conversationlist_prim_guthbered.json:guthbered_16
 msgid "Now, we can hardly hold them back. They mostly come at night."
-msgstr ""
+msgstr "Most már alig tudjuk visszatartani őket. Többnyire éjjel jönnek."
 
 #: conversationlist_prim_guthbered.json:guthbered_17
 msgid "According to lore, the monsters are called the 'gornauds'."
-msgstr ""
+msgstr "A monda szerint a szörnyeket „gornaudoknak” hívják."
 
 #: conversationlist_prim_guthbered.json:guthbered_17:0
 msgid "Any ideas where they might be coming from?"
-msgstr ""
+msgstr "Van ötleted, hogy vajon honnan jöhetnek?"
 
 #: conversationlist_prim_guthbered.json:guthbered_18
 msgid "Oh yes, we are almost certain."
-msgstr ""
+msgstr "Ó igen, majdnem biztosak vagyunk benne."
 
 #: conversationlist_prim_guthbered.json:guthbered_19
 msgid "Those evil bastards up in the Blackwater mountain settlement probably summoned them to attack us. They would rather see us perish."
 msgstr ""
+"Valószínűleg azok a gonosz gazemberek idézték meg őket fent a Blackwater-"
+"hegység településen, hogy támadjanak minket. Szívesebben látnák minket "
+"elpusztulva."
 
 #: conversationlist_prim_guthbered.json:guthbered_20
 msgid "Oh good. Did you talk to Tonis? Yes, I'm sure you met him on your way into town."
 msgstr ""
+"Ó, jól van. Beszéltél Tonisszal? Igen, biztos vagyok benne, hogy találkoztál "
+"vele a város felé vezető utadon."
 
 #: conversationlist_prim_guthbered.json:guthbered_21
 msgid "Good. Let me tell you the back-story about Prim first."
-msgstr ""
+msgstr "Jó. Először hadd mondjam el neked a Primről szóló háttértörténetet."
 
 #: conversationlist_prim_guthbered.json:guthbered_21:1
 msgid "I'd rather skip to the end directly."
-msgstr ""
+msgstr "Inkább közvetlenül a végére ugornék."
 
 #: conversationlist_prim_guthbered.json:guthbered_22
 msgid "We used to trade with them up there, but that all changed once they got greedy."
 msgstr ""
+"Régen kereskedtünk velük ott fent, de minden megváltozott, amikor kapzsiak "
+"lettek."
 
 #: conversationlist_prim_guthbered.json:guthbered_22:0
 msgid "I met a man outside the collapsed mine saying he was from the Blackwater mountain settlement."
 msgstr ""
+"Találkoztam egy férfival a beomlott bányán kívül, aki azt mondta, hogy a "
+"Blackwater-hegység településről jött."
 
 #: conversationlist_prim_guthbered.json:guthbered_22:1
 #: conversationlist_prim_guthbered.json:guthbered_28:0
 msgid "Do you need any help in dealing with those monsters?"
-msgstr ""
+msgstr "Szükséged van valamilyen segítségre, hogy elbánj azokkal a szörnyekkel?"
 
 #: conversationlist_prim_guthbered.json:guthbered_22:2
 #: conversationlist_prim_guthbered.json:guthbered_23:0
 msgid "I would be glad to help you with the monsters."
-msgstr ""
+msgstr "Boldogan segítenék a szörnyekkel kapcsolatban."
 
 #: conversationlist_prim_guthbered.json:guthbered_23
 msgid "Oh boy, do we? Yes please, you are welcome to help."
-msgstr ""
+msgstr "Ó, fiú, segítenél? Igen, megköszönném a segítségedet."
 
 #: conversationlist_prim_guthbered.json:guthbered_24
 msgid "Do you really think you have what it takes to help us?"
-msgstr ""
+msgstr "Valóban úgy gondolod, hogy rendelkezel azzal, ami segítene nekünk?"
 
 #: conversationlist_prim_guthbered.json:guthbered_24:0
 msgid "I have left a bloody trail of monsters behind me."
-msgstr ""
+msgstr "A szörnyek véres nyomát hagytam magam mögött."
 
 #: conversationlist_prim_guthbered.json:guthbered_24:1
 msgid "Sure, I can handle it."
-msgstr ""
+msgstr "Persze, el tudok bánni vele."
 
 #: conversationlist_prim_guthbered.json:guthbered_24:2
 msgid "If the monsters are anything like those around where I entered the mine, it will be a tough fight. But I can manage it."
 msgstr ""
+"Ha a szörnyek valami olyanokhoz hasonlók, mint amiket a bányába belépve "
+"láttam, akkor ez kemény harc lesz. De tudom kezelni."
 
 #: conversationlist_prim_guthbered.json:guthbered_25
 msgid "Great. I think we should go straight to the source with the problem."
 msgstr ""
+"Nagyszerű. Azt hiszem, hogy egyenesen a probléma forrásához kell mennünk."
 
 #: conversationlist_prim_guthbered.json:guthbered_26
 msgid "A man, from the Blackwater mountain settlement, you say?"
-msgstr ""
+msgstr "Egy férfival a Blackwater-hegység településről, azt mondod?"
 
 #: conversationlist_prim_guthbered.json:guthbered_27
 msgid "Did he say anything about us here in Prim?"
-msgstr ""
+msgstr "Mondott bármit is rólunk itt Primben?"
 
 #: conversationlist_prim_guthbered.json:guthbered_27:0
 msgid "No. But he insisted that I go straight east when exiting the mine, thus not reaching Prim."
 msgstr ""
+"Nem. De ragaszkodott ahhoz, hogy egyenesen keletre menjek, amikor kilépek a "
+"bányából, és így ne érjem el Primet."
 
 #: conversationlist_prim_guthbered.json:guthbered_28
 msgid "That figures. They send out their spies even now."
-msgstr ""
+msgstr "Micsoda alakok. Még most is kiküldik a kémeiket."
 
 #: conversationlist_prim_guthbered.json:guthbered_29
 msgid "As I said, we believe those bastards up at the Blackwater mountain settlement are behind the monster attacks somehow."
 msgstr ""
+"Amint mondtam, mi úgy véljük, hogy azok a Blackwater-hegység településbeli "
+"gazemberek vannak a szörnytámadások mögött valahogyan."
 
 #: conversationlist_prim_guthbered.json:guthbered_30
 msgid "I want you to go up there to their settlement and ask their battle master, Harlenn, why they are doing this to us."
 msgstr ""
+"Azt szeretném, hogy menj fel a településükre, és kérdezd meg a harci "
+"mesterüket, Harlennt, hogy miért miért teszik ezt velünk."
 
 #: conversationlist_prim_guthbered.json:guthbered_30:0
 msgid "OK, I will go ask Harlenn in the Blackwater mountain settlement why they are attacking your village."
 msgstr ""
+"Rendben, megyek és megkérdezem Harlennt a Blackwater-hegység településen, "
+"hogy miért támadják a faludat."
 
 #: conversationlist_prim_guthbered.json:guthbered_31
 msgid "Thank you friend."
-msgstr ""
+msgstr "Köszönöm, barátom."
 
 #: conversationlist_prim_guthbered.json:guthbered_talkedto_harl_1
 msgid "What did I expect? Of course he would say that. He probably even denies it to himself. Meanwhile, we here in Prim suffer from their savage raids."
@@ -7358,6 +7435,9 @@ msgstr "Mit is vártam? Természetesen ezt mondhatná. Valószínűleg még mag�
 #: conversationlist_prim_guthbered.json:guthbered_talkedto_harl_2
 msgid "I am sure they are behind these attacks. However, I do not have sufficient evidence to back up my statements in order to do anything about it."
 msgstr ""
+"Biztos vagyok benne, hogy ők állnak a támadások mögött. Azonban nincsenek "
+"elegendő bizonyítékaim, hogy alátámasszam a kijelentéseimet annak érdekében, "
+"hogy bármit is tehessek ezzel kapcsolatban."
 
 #: conversationlist_prim_guthbered.json:guthbered_talkedto_harl_3
 msgid "But I am sure they are! As false as they are, they must be. Always lying and deceiving. Causing destruction and turmoil."
@@ -7646,10 +7726,10 @@ msgid ""
 "West: Elm mine\n"
 "East: [Text is unreadable due to several scratch marks in the wood]\n"
 "South: Stoutford"
-msgstr "[REVIEW]"
+msgstr ""
 "Észak: Prim\n"
 "Nyugat: Elm bánya\n"
-"Kelet: (a szöveg olvashatatlan a fán lévő több karcolásjel miatt)\n"
+"Kelet: [A szöveg olvashatatlan a fán lévő több karcolásjel miatt]\n"
 "Dél: Stoutford"
 
 #: conversationlist_blackwater_signs.json:keyarea_bwm_agent_1
@@ -8454,7 +8534,7 @@ msgstr ""
 
 #: conversationlist_blackwater_herec.json:herec_q5:0
 msgid "Sure. Let's see what you have."
-msgstr ""
+msgstr "Persze, hadd lássam, hogy mid van."
 
 #: conversationlist_prim_bjorgur.json:bjorgur_return_1
 msgid "Hello again, friend. Thank you for your assistance with my family grave earlier."
@@ -8466,7 +8546,9 @@ msgstr "Helló ismét. Kiderítetted már, hogy történt-e valami a családi s�
 
 #: conversationlist_prim_bjorgur.json:bjorgur_return_2:1
 msgid "[Lie] I went to check on the grave. Everything seems to be normal. You must be imagining things."
-msgstr "[REVIEW](Hazugság) Elmentem megnézni a sírt. Minden normálisnak tűnik. Biztosan csak képzelődsz."
+msgstr ""
+"[Hazugság] Elmentem megnézni a sírt. Minden normálisnak tűnik. Biztosan csak "
+"képzelődsz."
 
 #: conversationlist_prim_bjorgur.json:bjorgur_return_2:3
 msgid "Yes. I killed the intruder and restored the dagger to its original place."
@@ -8611,11 +8693,15 @@ msgstr "Üdv néked. Olyan típusú személynek tűnsz, amilyet keresek."
 
 #: conversationlist_prim_fulus.json:fulus_complete_1
 msgid "Oh wow, you actually managed to get the dagger? Thank you kid. This is worth a lot. Here, take these coins as compensation for your efforts!"
-msgstr "Ó, wow, tényleg sikerült megszerezni a tőrt? Köszönöm, kölyök. Ez nagyon sokat ér. Tessék, vedd el ezeket az érméket kompenzálásként az erőfeszítéseidért!"
+msgstr ""
+"Ó, hú, tényleg sikerült megszerezni a tőrt? Köszönöm, kölyök. Ez nagyon "
+"sokat ér. Tessék, vedd el ezeket az érméket kompenzálásként az "
+"erőfeszítéseidért!"
 
 #: conversationlist_prim_fulus.json:fulus_complete_2
 msgid "Thank you again. Now, let's see ... how much should we sell this dagger for?"
-msgstr "Köszönöm még egyszer. Most lássuk csak… mennyiért tudnánk eladni ezt a tőrt…"
+msgstr ""
+"Köszönöm még egyszer. Most lássuk csak… mennyiért tudnánk eladni ezt a tőrt?"
 
 #: conversationlist_prim_fulus.json:fulus_2
 msgid "Would you be interested in hearing about a business proposal I have?"
@@ -8743,7 +8829,7 @@ msgstr "Mit nézel? Ezek a fegyverek itt a ládákban csak nekünk, őröknek va
 
 #: conversationlist_prim_merchants.json:prim_guard2
 msgid "[The guard looks down on you with a condescending look]"
-msgstr "[REVIEW](Az őr lekezelő tekintettel néz végig rajtad.)"
+msgstr "[Az őr lekezelő tekintettel néz végig rajtad]"
 
 #: conversationlist_prim_merchants.json:prim_guard3
 msgid "Oh, I am so tired. When will we ever get to rest?"
@@ -9161,7 +9247,9 @@ msgstr "Mi történt?"
 msgid ""
 "I managed to throw the book in among the trees over there during the attack.\n"
 "[Points to the trees directly to the north]"
-msgstr "[REVIEW]Sikerült eldobnom a könyvet arrafelé a fák közé a támadás közben. *a fák felé mutat közvetlenül északra*"
+msgstr ""
+"Sikerült eldobnom a könyvet arrafelé a fák közé a támadás közben.\n"
+"[A fák felé mutat közvetlenül északra]"
 
 #: conversationlist_erinith.json:erinith_story_5
 msgid "I don't think they managed to get the book. It's probably still somewhere among those trees."
@@ -9282,7 +9370,9 @@ msgstr "Köszönöm, barátom. Siess vissza."
 
 #: conversationlist_erinith.json:erinith_gavepotion_bm_1
 msgid "Bonemeal potion? But ... but ... we are not allowed to use them since they are prohibited by Lord Geomyr."
-msgstr "Csontliszt ital? De… de… Nem szabad használnunk ezeket, amióta Geomyr nagyúr megtiltotta."
+msgstr ""
+"Csontliszt ital? De… de… nem szabad használnunk ezeket, amióta Geomyr nagyúr "
+"megtiltotta."
 
 #: conversationlist_erinith.json:erinith_gavepotion_bm_1:0
 msgid "Who will find out?"
@@ -9296,23 +9386,31 @@ msgstr "Kipróbáltam magamon, és tökéletesen biztonságos a használatuk."
 msgid ""
 "Hmm, yes. I guess you have a point. Oh well, here goes.\n"
 "[Drinks potion]"
-msgstr "[REVIEW]Hm, igaz. Azt hiszem, ott a pont. Nos hát, gyerünk. *megissza az italt*"
+msgstr ""
+"Hmm, igaz. Azt hiszem, ott a pont. Nos hát, gyerünk.\n"
+"[Megissza az italt]"
 
 #: conversationlist_erinith.json:erinith_gavepotion_major_1
 msgid ""
 "Thank you for bringing me one.\n"
 "[Drinks potion]"
-msgstr "[REVIEW]Köszönöm, hogy hoztál nekem egyet. *megissza az italt*"
+msgstr ""
+"Köszönöm, hogy hoztál nekem egyet.\n"
+"[Megissza az italt]"
 
 #: conversationlist_erinith.json:erinith_gavepotion_reg_1
 msgid ""
 "Thank you for bringing them to me.\n"
 "[Drinks all four potions]"
-msgstr "[REVIEW]Köszönöm, hogy elhoztad nekem ezeket. *megissza mind a négy italt*"
+msgstr ""
+"Köszönöm, hogy elhoztad nekem ezeket.\n"
+"[Megissza mind a négy italt]"
 
 #: conversationlist_erinith.json:erinith_gavepotion_1
 msgid "Wow, I feel slightly better already. I guess this healing really works."
-msgstr "Wow, már némileg jobban érzem magam. Azt hiszem, ez a gyógyítás valóban működik."
+msgstr ""
+"Hú, már némileg jobban érzem magam. Azt hiszem, ez a gyógyítás valóban "
+"működik."
 
 #: conversationlist_erinith.json:erinith_givenpotion_1
 msgid "Thank you my friend for your help. My book is safe and my wound is healing. I hope our paths will cross again."
@@ -9320,189 +9418,235 @@ msgstr "Köszönöm a segítséget, barátom. A könyvem biztonságban van, és 
 
 #: conversationlist_hadracor.json:woodcutter_0
 msgid "Stupid wasps..."
-msgstr ""
+msgstr "Hülye darazsak…"
 
 #: conversationlist_hadracor.json:woodcutter_2
 msgid "Stay away from the road to the west, for it leads to Carn Tower. You most certainly do not want to go there."
 msgstr ""
+"Tartsd távol magad a nyugat felé vezető úttól, ami Carn Towerhez vezet. "
+"Minden bizonnyal nem akarsz odamenni."
 
 #: conversationlist_hadracor.json:woodcutter_1
 msgid "When travelling, keep to the roads. Veer off course and you might find yourself in danger."
 msgstr ""
+"Utazás közben maradj az utakon. Ha letérsz az útvonalról, akkor veszélyben "
+"találhatod magad."
 
 #: conversationlist_hadracor.json:woodcutter_3
 msgid "Maybe we shouldn't have cut down all the trees over there. Those wasps really seem upset."
 msgstr ""
+"Talán nem kellett volna kivágnunk az összes fát itt. Azok a darazsak nagyon "
+"dühösnek tűnnek."
 
 #: conversationlist_hadracor.json:woodcutter_4
 msgid "I can still feel the sting from those wasps in my legs. Good thing we are done with all the trees now."
 msgstr ""
+"Még mindig éreztem a darázscsípést a lábamon. Jó dolog, hogy most végeztünk "
+"az összes fával."
 
 #: conversationlist_hadracor.json:woodcutter_5
 msgid "Hello there, welcome to our encampment. You should talk to Hadracor over there."
 msgstr ""
+"Üdv néked, köszöntelek a táborhelyünkön. Beszélned kellene Hadracorral amott."
 
 #: conversationlist_hadracor.json:hadracor_1
 msgid "Hello there, I am Hadracor."
-msgstr ""
+msgstr "Üdv néked. Hadracor vagyok."
 
 #: conversationlist_hadracor.json:hadracor_1:1
 msgid "Have you seen my brother Andor around here? Looks somewhat like me."
-msgstr ""
+msgstr "Láttad a testvéremet, Andort errefelé? Némileg úgy néz ki, mint én."
 
 #: conversationlist_hadracor.json:hadracor_andor_1
 msgid "Looks like you eh? No, I would have remembered."
-msgstr ""
+msgstr "Úgy néz ki mint te, he? Nem, emlékeznék rá."
 
 #: conversationlist_hadracor.json:hadracor_story_1
 msgid "This is the encampment that we woodcutters set up while working on the trees here for the past few days."
 msgstr ""
+"Ez az a táborhely, amelyet mi, favágók állítottunk fel, miközben az itteni "
+"fákkal dolgoztunk az elmúlt néhány napon."
 
 #: conversationlist_hadracor.json:hadracor_story_1:0
 msgid "What have you been working on?"
-msgstr ""
+msgstr "Min dolgoztatok?"
 
 #: conversationlist_hadracor.json:hadracor_story_1:1
 msgid "I noticed a lot of tree stumps around here."
-msgstr ""
+msgstr "Egy csomó fatuskót vettem észre itt."
 
 #: conversationlist_hadracor.json:hadracor_story_2
 msgid "Our orders were to cut down all trees south of the Feygard bridge and north of this here road to Carn Tower."
 msgstr ""
+"Azt az utasítást kaptuk, hogy vágjuk ki az összes fát a feygardi hídtól "
+"délre és innen északra a Carn Towerbe vezető úttól."
 
 #: conversationlist_hadracor.json:hadracor_story_3
 msgid "I guess the nobles of Feygard have some plans for these lands."
 msgstr ""
+"Azt hiszem, hogy a feygardi nemeseknek van valami tervük erre a vidékre."
 
 #: conversationlist_hadracor.json:hadracor_story_4
 msgid "We, we just cut down them trees. No questions asked."
-msgstr ""
+msgstr "Mi, mi csak kivágtuk azokat a fákat. Nem kérdeztünk semmit."
 
 #: conversationlist_hadracor.json:hadracor_story_5
 msgid "However, this time we encountered some trouble."
-msgstr ""
+msgstr "Azonban ezúttal belefutottunk egy kis problémába."
 
 #: conversationlist_hadracor.json:hadracor_story_6
 msgid "You see, there were these really nasty wasps in that forest we cut down."
 msgstr ""
+"Látod, itt voltak ezek az igazán utálatos darazsak az erdőben, amelyet "
+"kivágtunk."
 
 #: conversationlist_hadracor.json:hadracor_story_7
 msgid "Nothing like we've seen before, and I'll tell you, we have seen a lot of wildlife in our days."
 msgstr ""
+"Semmi ilyesmit nem láttunk korábban, és mondom neked, nagyon sok vadvilágot "
+"láttunk már manapság."
 
 #: conversationlist_hadracor.json:hadracor_story_8
 msgid "They almost got the best of us, and we were almost ready to quit it. But a job is a job and we need to get paid by Feygard for this job."
 msgstr ""
+"Majdnem legyőztek minket, és már szinte készek voltunk arra, hogy kilépjünk. "
+"De a munka az munka, és szükségünk van arra, hogy Feygardnak megfizessen "
+"minket ezért a munkáért."
 
 #: conversationlist_hadracor.json:hadracor_story_9
 msgid "So we went ahead and finished all of them trees, trying to evade the wasps as much as we could."
 msgstr ""
+"Így folytattuk a munkát, és végeztünk az összes fájukkal, próbálva elkerülni "
+"a darazsakat, amennyire csak tudtuk."
 
 #: conversationlist_hadracor.json:hadracor_story_10
 msgid "However, I bet that whatever plans the nobles of Feygard have for these lands, they surely don't include these nasty wasps still being around."
 msgstr ""
+"Fogadok azonban, hogy bármit terveznek a feygardi nemesei ezekre a földekre, "
+"biztosan nem számoltak azokat az utálatos darazsakkal, amelyek még mindig "
+"itt vannak."
 
 #: conversationlist_hadracor.json:hadracor_story_11
 msgid "See this scratch here? And this abscess? Yep, those wasps."
 msgstr ""
+"Látod ezt a karmolást itt? És ezt a tályogot? Igen, azok a darazsak voltak."
 
 #: conversationlist_hadracor.json:hadracor_story_12
 msgid "I would love to get revenge on those wasps. We, we aren't good enough fighters to take on those wasps, they are really too quick for us."
 msgstr ""
+"Bosszút szeretnék állni azokon a darazsakon. Mi, mi nem vagyunk elég jó "
+"harcosok, hogy legyőzzük azokat a darazsakat, valóban túl gyorsak számunkra."
 
 #: conversationlist_hadracor.json:hadracor_story_12:0
 msgid "Tough luck, you seem like a bunch of weaklings anyway."
-msgstr ""
+msgstr "Balszerencse, egyébként úgy néztek ki mint egy csapat nyápic alak."
 
 #: conversationlist_hadracor.json:hadracor_story_12:1
 msgid "I could try to take on those wasps for you if you want."
-msgstr ""
+msgstr "Megpróbálhatnám legyőzni azokat a darazsakat, ha szeretnéd."
 
 #: conversationlist_hadracor.json:hadracor_story_12:2
 msgid "Just a couple of wasps? That's no problem for me. I'll kill them for you."
 msgstr ""
+"Csak egy pár darázs? Ez nem probléma nekem. Meg fogom ölni őket a számodra."
 
 #: conversationlist_hadracor.json:hadracor_decline_1
 msgid "I will pretend I didn't hear that."
-msgstr ""
+msgstr "Úgy teszek, mintha ezt nem hallottam volna."
 
 #: conversationlist_hadracor.json:hadracor_accept_1
 msgid "You would? Sure, you have a try."
-msgstr ""
+msgstr "Segítenél? Persze, meg kell próbálnod."
 
 #: conversationlist_hadracor.json:hadracor_accept_1_1
 msgid "I noticed that some of the wasps are larger than the other ones, and the other wasps tend to follow the larger ones around."
 msgstr ""
+"Azt vettem észre, hogy néhány darázs nagyobb a többinél, és a többi darázs "
+"igyekszik követni a nagyobbakat mindenfelé."
 
 #: conversationlist_hadracor.json:hadracor_accept_2
 msgid "If you could kill at least five of those giant ones and bring me back their wings as proof, I would be very grateful."
 msgstr ""
+"Ha meg tudnál ölni legalább ötöt azokból az óriásokból, és elhoznád nekem a "
+"szárnyaikat bizonyítékként, akkor nagyon hálás lennék érte."
 
 #: conversationlist_hadracor.json:hadracor_accept_2:0
 msgid "Sure, I will be back with those giant wasp wings for you."
-msgstr ""
+msgstr "Persze, visszajövök azokkal az óriás darázs szárnyakkal hozzád."
 
 #: conversationlist_hadracor.json:hadracor_accept_2:2
 msgid "On second thought, I better stay out of this."
-msgstr ""
+msgstr "Jobban meggondolva, jobb ha kimaradok ebből."
 
 #: conversationlist_hadracor.json:hadracor_decline_2
 msgid "Fine, I guess we can find someone else to help us get revenge on them."
 msgstr ""
+"Remek, azt hiszem, hogy találunk valaki mást, aki segít nekünk bosszút állni "
+"rajtuk."
 
 #: conversationlist_hadracor.json:hadracor_accept_3
 msgid "Good, hurry back once you are done."
-msgstr ""
+msgstr "Jó, siess vissza, amikor készen vagy."
 
 #: conversationlist_hadracor.json:hadracor_wantsitems_1
 msgid "Hello again. Did you kill those wasps for us?"
-msgstr ""
+msgstr "Helló ismét. Megölted azokat a darazsakat nekünk?"
 
 #: conversationlist_hadracor.json:hadracor_wantsitems_1:0
 msgid "Could you tell me your story again?"
-msgstr ""
+msgstr "El tudnád mondani a történeted újra?"
 
 #: conversationlist_hadracor.json:hadracor_wantsitems_1:3
 msgid "Yes, I killed six of them."
-msgstr ""
+msgstr "Igen, megöltem közülük hatot."
 
 #: conversationlist_hadracor.json:hadracor_wantsitems_1:4
 msgid "Yes, I killed five of them."
-msgstr ""
+msgstr "Igen, megöltem közülük ötöt."
 
 #: conversationlist_hadracor.json:hadracor_wantsitems_2
 msgid "Wow, you actually killed those things?"
-msgstr ""
+msgstr "Hú, te tényleg megölted azokat a dolgokat?"
 
 #: conversationlist_hadracor.json:hadracor_wantsitems_3
 msgid "Wow, you actually killed six of those things? I thought there were only five, so I guess I should be even more grateful. Here, take these gloves as thanks."
 msgstr ""
+"Hú, te tényleg megöltét hatot azok közül? Azt gondoltam, hogy csak öten "
+"vannak, úgyhogy azt hiszem, még hálásabbnak kell lennem. Tessék, fogadd el "
+"ezt a kesztyűt köszönetképpen."
 
 #: conversationlist_hadracor.json:hadracor_gaveitems_1
 msgid "Well done my friend. Thank you for getting revenge on those things."
 msgstr ""
+"Szép munka, barátom. Köszönöm, hogy segítettél bosszút állni azokon a "
+"dolgokon."
 
 #: conversationlist_hadracor.json:hadracor_complete_1
 msgid "Hello again. Thank you for your help with those wasps earlier."
 msgstr ""
+"Helló ismét. Köszönöm, hogy segítettél korábban azokkal a darazsakkal "
+"kapcsolatban."
 
 #: conversationlist_hadracor.json:hadracor_complete_2
 msgid "As a token of our appreciation, we are willing to trade some of our equipment with you if you want."
 msgstr ""
+"Nagyrabecsülésünk jeleként hajlandóak vagyunk eladni neked néhány "
+"felszerelésünket, ha szeretnéd."
 
 #: conversationlist_hadracor.json:hadracor_complete_3
 msgid "It's not much, but we do have some really sharp axes that you might be interested in."
 msgstr ""
+"Ez nem túl sok, de van néhány igazán éles fejszénk, amely talán érdekelhet."
 
 #: conversationlist_hadracor.json:hadracor_complete_3:0
 #: conversationlist_gandoren.json:gandoren_completed_2:1
 msgid "No thanks. Goodbye."
-msgstr ""
+msgstr "Nem, köszönöm. Viszontlátásra."
 
 #: conversationlist_hadracor.json:hadracor_complete_3:1
 #: conversationlist_ailshara.json:ailshara_2:0
 msgid "OK, let me see what you have."
-msgstr "Rendben, hadd lássam mid van."
+msgstr "Rendben, hadd lássam, hogy mid van."
 
 #: conversationlist_tinlyn.json:tinlyn_killedsheep_1
 msgid "You attacked my sheep! Get away from me you filthy murderer!"
@@ -9648,7 +9792,7 @@ msgstr ""
 #: conversationlist_toszylae_guard.json:toszylae_guard_8:0
 #: conversationlist_hirazinn.json:hirazinn_2:1
 msgid "[Attack]"
-msgstr ""
+msgstr "[Támadás]"
 
 #: conversationlist_tinlyn_sheep.json:tinlyn_lostsheep_placed_2
 msgid "[You place one of the bells around the neck of the sheep]"
@@ -9668,7 +9812,9 @@ msgstr "Pszt, hé. Itt, erre."
 
 #: conversationlist_benbyr.json:benbyr_story_2
 msgid "You look like an aspiring adventurer. Are you willing to do some ... [Benbyr pauses] ... adventuring? He he."
-msgstr "[REVIEW]Úgy nézel ki mint egy törekvő kalandor. Hajlandó volnál egy kis… (Benbyr szünetet tart) …kalandozásra? He-he."
+msgstr ""
+"Úgy nézel ki mint egy törekvő kalandor. Hajlandó volnál egy kis… [Benbyr "
+"szünetet tart]…kalandozásra? He-he."
 
 #: conversationlist_benbyr.json:benbyr_story_2:0
 msgid "What are we talking about here?"
@@ -9826,7 +9972,7 @@ msgstr "Igen. Megöltem őket, azt tettem. Nem futottam el előlük. Nem, megöl
 
 #: conversationlist_crossroads_1.json:fanamor_3
 msgid "*sigh*"
-msgstr "[REVIEW]*felsóhajt*"
+msgstr "*felsóhajt*"
 
 #: conversationlist_crossroads_1.json:fanamor_4
 msgid "Oh, who am I kidding. OK, I was trying to get through the forest here and got ambushed by these anklebiters."
@@ -10577,34 +10723,45 @@ msgstr "Pompás! Feygard az adósod."
 #: conversationlist_gandoren.json:gandoren_delivered_1
 msgid "I hope you managed to stay away from the savages of Nor City as much as possible while being over there."
 msgstr ""
+"Remélem, hogy sikerült távol tartanod magad a lehető legjobban Nor City "
+"vadembereitől, miközben ott voltál."
 
 #: conversationlist_gandoren.json:gandoren_delivered_2
 msgid "From what I hear, things are rough down south."
-msgstr ""
+msgstr "Értesüléseim szerint a dolgok durvák lent délen."
 
 #: conversationlist_gandoren.json:gandoren_delivered_3
 msgid "As for you, you have both my and the rest of the Feygard patrol's gratitude for helping us with this."
 msgstr ""
+"Ami téged illet, én is és a többi feygardi járőr is hálás neked, hogy "
+"segítettél nekünk ebben."
 
 #: conversationlist_gandoren.json:gandoren_completed_1
 msgid "You return. Thank you for helping with the shipment earlier."
-msgstr ""
+msgstr "Visszatértél. Köszönöm, hogy segítettél a szállítmányban korábban."
 
 #: conversationlist_gandoren.json:gandoren_completed_2
 msgid "Is there anything I can do for you?"
-msgstr ""
+msgstr "Van valami, amit tehetek érted?"
 
 #: conversationlist_gandoren.json:gandoren_tr_4
 msgid "Absolutely, as thanks for the help you provided earlier to both Minarra and me, we could agree to trade with you."
 msgstr ""
+"Teljes mértékben, köszönetképpen azért a segítségért, amelyet korábban "
+"Minarrának és nekem tettél, beleegyezhetünk, hogy kereskedünk veled."
 
 #: conversationlist_gandoren.json:gandoren_tr_5
 msgid "Go up in the lookout tower over there and talk to Minarra about equipment. She has our supply."
 msgstr ""
+"Menj fel a megfigyelőtoronyba, és beszélj Minarrával a felszerelésről. Nála "
+"van a kínálatunk."
 
 #: conversationlist_gandoren.json:gandoren_tr_6
 msgid "I hear that Minarra up in the lookout tower over there wants help with something. Why don't you go up to her and ask her about it, and we might be able to work something out after that."
 msgstr ""
+"Azt hallottam, hogy Minarra fent a megfigyelőtoronyban segítséget kér "
+"valamiben. Miért nem mész fel hozzá és kérdezed meg ezzel kapcsolatban? És "
+"talán kidolgozhatunk valamit azután."
 
 #: conversationlist_ailshara.json:ailshara_completed_y_1
 msgid "Hello again my Shadow friend. How may I help you?"
@@ -10770,38 +10927,53 @@ msgstr "A segítségedet nagyra értékelik Nor City polgárai, és szívesen l�
 #: conversationlist_vilegard_v0610.json:vilegard_smith_fg_1
 msgid "Oh, this is most unexpected but very welcome. I will not question how you acquired these items, but instead express my gratitude for bringing them to me."
 msgstr ""
+"Ó, ez a legváratlanabb, de nagyon köszönöm. Nem fogom megkérdezni, hogy "
+"hogyan szerezted ezeket a tárgyakat, hanem kifejezzem a hálámat inkább "
+"azért, hogy idehoztad nekem ezeket."
 
 #: conversationlist_vilegard_v0610.json:vilegard_smith_fg_2
 msgid "Thank you for bringing me these items, they will be most useful to us here in the southern lands, and Vilegard in particular. We rarely get our hands on Feygard items, so these are really welcome."
 msgstr ""
+"Köszönöm, hogy elhoztad nekem ezeket a tárgyakat, ezek a leghasznosabbak "
+"itt, a déli vidékeken lesznek, különösen Vilegardban. Ritkán tesszük rá a "
+"kezünket feygardi tárgyakra, így nagyon örülünk ezeknek."
 
 #: conversationlist_vilegard_v0610.json:vilegard_smith_fg_2:0
 msgid "I was sent to deliver these items to a Feygard patrol stationed in the Foaming Flask tavern."
 msgstr ""
+"Azért küldtek, hogy vigyem el ezeket a tárgyakat egy feygardi járőrnek, aki "
+"a Habzó Hordó kocsmában állomásozik."
 
 #: conversationlist_vilegard_v0610.json:vilegard_smith_fg_3
 msgid "Instead, you brought them to me. You have my thanks."
-msgstr ""
+msgstr "Ehelyett nekem hoztad el ezeket. Köszönöm szépen."
 
 #: conversationlist_vilegard_v0610.json:vilegard_smith_fg_4
 msgid "Hah, this means that we have another opportunity here. What if you were to deliver some other items to the Feygard patrol instead? Hah, this will really make my day."
 msgstr ""
+"Hah, ez azt jeleni, hogy van itt egy másik lehetőségünk. Mi lenne, ha néhány "
+"másik tárgyat vinnél inkább a feygardi járőrnek? Hah, ez valóban az én napom "
+"lesz."
 
 #: conversationlist_vilegard_v0610.json:vilegard_smith_fg_5
 msgid "I might have something that will do just fine... Let me just find them."
-msgstr ""
+msgstr "Talán van valamim, ami pont megfelel… Hadd keressem csak meg."
 
 #: conversationlist_vilegard_v0610.json:vilegard_smith_fg_6
 msgid "Here they are. Ha ha, these will do just fine for those deceiving Feygard snobs."
 msgstr ""
+"Itt is vannak. Ha ha, ezek pont megfelelnek azoknak a becsapott feygardi "
+"sznoboknak."
 
 #: conversationlist_vilegard_v0610.json:vilegard_smith_fg_7
 msgid "Take these items and deliver them to wherever you were supposed to deliver the items you gave me."
 msgstr ""
+"Fogd ezeket a tárgyakat, és vidd el őket oda, ahová el kellett volna vinned "
+"azokat a tárgyakat, amiket nekem adtál."
 
 #: conversationlist_vilegard_v0610.json:ff_captain_items_1
 msgid "Excellent, I have been waiting for these. Thank you for bringing them to me."
-msgstr ""
+msgstr "Kiváló, ezekre vártam. Köszönöm, hogy elhoztad nekem ezeket."
 
 #: conversationlist_crossroads_2.json:gallain
 msgid "Welcome to the Crossroads guardhouse. I am Gallain, the proprietor of this place."
@@ -10868,7 +11040,7 @@ msgstr "Rendben, megyek már."
 
 #: conversationlist_crossroads_2.json:celdar_4:1
 msgid "Wow, you're the friendly type aren't you?"
-msgstr "Wow, te barátságos típusú vagy, nem de?"
+msgstr "Hú, te barátságos típusú vagy, nem de?"
 
 #: conversationlist_crossroads_2.json:celdar_4:2
 msgid "I should put my sword through you for talking like that."
@@ -10953,7 +11125,7 @@ msgstr "Mi lenne, ha fizetnék neked 100 aranyat, hogy félreállj az útból?"
 
 #: conversationlist_crossroads_3.json:crossroads_backguard_4
 msgid "You would do that? Hmm, let me think."
-msgstr "Tényleg fizetnél? Hm, hadd gondolkozzak."
+msgstr "Tényleg fizetnél? Hmm, hadd gondolkozzak."
 
 #: conversationlist_crossroads_3.json:crossroads_backguard_5:1
 msgid "200 gold then?"
@@ -10973,7 +11145,9 @@ msgstr "Rendben, végső ajánlat, 800 arany? Ez egy vagyon."
 
 #: conversationlist_crossroads_3.json:crossroads_backguard_8
 msgid "Hmm, 800 gold you say? Well, why didn't you say so from the start? Sure, that could work."
-msgstr "Hm, 800 aranyat mondtál? Nos, miért nem ezt mondtad már az elején? Persze, ez működhet."
+msgstr ""
+"Hmm, 800 aranyat mondtál? Nos, miért nem ezt mondtad már az elején? Persze, "
+"ez működhet."
 
 #: conversationlist_crossroads_3.json:crossroads_backguard_9
 msgid "I should tell you however, that there is something in there that we won't dare go near. I just guard here to make sure it doesn't get out, and that no one goes in."
@@ -10995,9 +11169,9 @@ msgstr "Itt van az arany, most állj félre az útból."
 msgid ""
 "*Hssss*\n"
 "[You hear squishing sounds as the creature starts moving towards you]"
-msgstr "[REVIEW]"
-"*hssss*\n"
-"(Spriccelő hangokat hallasz, amint a lény elkezd feléd közeledni)"
+msgstr ""
+"*Hssss*\n"
+"[Spriccelő hangokat hallasz, amint a lény elkezd feléd közeledni]"
 
 #: conversationlist_crossroads_3.json:keknazar:1
 msgid "You will not survive this, you pathetic creature."
@@ -11053,9 +11227,10 @@ msgstr "Az őr rád kiált: Hé! Itt nem aludhatsz!"
 msgid ""
 "Welcome to peaceful Loneford.\n"
 "[The sign also contains a drawing of a bale of hay with what looks like a farmer sitting on top]"
-msgstr "[REVIEW]"
+msgstr ""
 "Üdvözöljük a békés Lonefordban.\n"
-"(A tábla tartalmaz egy szénabála rajzot is, amely úgy néz ki, mintha egy földműves ülne a tetején.)"
+"[A tábla tartalmaz egy szénabála rajzot is, amely úgy néz ki, mintha egy "
+"földműves ülne a tetején]"
 
 #: conversationlist_loneford_1.json:loneford_farmer0
 msgid "What have we done to deserve this?"
@@ -11175,7 +11350,7 @@ msgstr "Hallottam, hogy láttál valamit, amiről nem akarsz beszélni."
 
 #: conversationlist_loneford_2.json:landa_2
 msgid "[Landa gives you a terrified look]"
-msgstr ""
+msgstr "[Landa rémült pillantást vet rád]"
 
 #: conversationlist_loneford_2.json:landa_3
 msgid "You were there! I ssssaw you!"
@@ -11185,7 +11360,9 @@ msgstr "Te voltál itt! Én láttalak!"
 msgid ""
 "Or was it you? No, it looked like you, and I have a good memory!\n"
 "[Bites lip]"
-msgstr "[REVIEW]Vagy te voltál? Nem, úgy nézett ki mint te, és nekem jó memóriám van! *ajkába harap*"
+msgstr ""
+"Vagy te voltál? Nem, úgy nézett ki mint te, és nekem jó memóriám van!\n"
+"[Az ajkába harap]"
 
 #: conversationlist_loneford_2.json:landa_4:0
 msgid "Calm down."
@@ -11259,7 +11436,9 @@ msgstr "Nem fontos. Kérlek, ne mondd el senkinek, hogy mindezt elmondtam neked.
 msgid ""
 "Now, get out of here kid, before anyone sees you talking to me.\n"
 "[Looks around anxiously]"
-msgstr "[REVIEW]Most menj ki innen, kölyök, mielőtt bárki meglátja, hogy velem beszélsz. *Aggodalmasan körbenéz*"
+msgstr ""
+"Most menj ki innen, kölyök, mielőtt bárki meglátja, hogy velem beszélsz.\n"
+"[Aggodalmasan körbenéz]"
 
 #: conversationlist_loneford_2.json:landa_19:0
 msgid "Thank you Landa. Your secret is safe with me."
@@ -11312,7 +11491,7 @@ msgstr "Hadd kezdjem azzal, hogy elmondok neked egy történetet."
 #: conversationlist_buceth.json:buceth_4:0
 #: conversationlist_stoutford.json:glasforn_rumblings60_0:1
 msgid "Go ahead."
-msgstr ""
+msgstr "Gyerünk!"
 
 #: conversationlist_buceth.json:buceth_4:1
 msgid "Let me guess, this story is going to take forever to listen to. How about I give you some gold, and instead we can discuss what you were doing at the well."
@@ -11320,7 +11499,7 @@ msgstr "Hadd találjam ki, ez a történet egy örökkévalóságig fog tartani,
 
 #: conversationlist_buceth.json:buceth_gold_1
 msgid "Hmm, that might be an interesting proposal. How much gold are you suggesting?"
-msgstr "Hm, ez egy érdekes javaslat lehet. Mennyi aranyat ajánlasz?"
+msgstr "Hmm, ez egy érdekes javaslat lehet. Mennyi aranyat ajánlasz?"
 
 #: conversationlist_buceth.json:buceth_gold_1:0
 msgid "Here's 10 gold, take it."
@@ -11396,7 +11575,7 @@ msgstr "Most mondd meg. Támogatnád ezeket a férfiakat azáltal, hogy elfogado
 
 #: conversationlist_buceth.json:buceth_14:2
 msgid "I don't know."
-msgstr "Nem tudom"
+msgstr "Nem tudom."
 
 #: conversationlist_buceth.json:buceth_dontknow
 msgid "I am sorry to hear that. You should make up your mind and return to me once you have done so. Then we might be able to talk more."
@@ -11774,9 +11953,10 @@ msgstr "Én, Sienn. Lenni erős!"
 msgid ""
 "Pet, cute!\n"
 "[Sienn makes cuddly sounds while scratching the pet under its chin]"
-msgstr "[REVIEW]"
+msgstr ""
 "Kisállat, aranyos!\n"
-"(Sienn bájos hangon mondja, miközben megkapargatja a kisállatot az álla alatt.)"
+"[Sienn bájos hangon mondja, miközben megkapargatja a kisállatot az álla "
+"alatt]"
 
 #: conversationlist_loneford_3.json:sienn_pet_1:1
 msgid "Did you know that Taevinn thinks you caused the illness here in Loneford?"
@@ -11790,9 +11970,10 @@ msgstr "Sienn nem beteg! Sienn erős!"
 msgid ""
 "Aaargh!\n"
 "[The creature looks up at you, showing all its teeth, while making a high-pitched piercing sound]"
-msgstr "[REVIEW]"
-"*Sikítás!*\n"
-"(A lény rád néz megmutatva az összes fogát, miközben éles, fültépő hangot ad ki.)"
+msgstr ""
+"Aaargh!\n"
+"[A lény rád néz megmutatva az összes fogát, miközben éles, fültépő hangot ad "
+"ki]"
 
 #: conversationlist_loneford_3.json:sienn_pet:0
 msgid "There, there. Easy now."
@@ -11800,7 +11981,7 @@ msgstr "Nyugodj meg. Minden rendben."
 
 #: conversationlist_loneford_3.json:sienn_pet:1
 msgid "[Slowly back away]"
-msgstr "[REVIEW]*lassú visszalépés*"
+msgstr "[Lassú visszalépés]"
 
 #: conversationlist_loneford_3.json:siola
 msgid "Hello there. Have you come to browse my selection of items?"
@@ -11883,11 +12064,11 @@ msgstr "Nézd, kölyök. Én hozom a szabályokat errefelé. Ha ez az ára, akko
 
 #: conversationlist_loneford_4.json:arngyr_7:0
 msgid "Fine, here is the gold."
-msgstr ""
+msgstr "Remek, itt van az arany."
 
 #: conversationlist_loneford_4.json:arngyr_7:1
 msgid "Never mind then."
-msgstr ""
+msgstr "Akkor nem fontos."
 
 #: conversationlist_loneford_4.json:arngyr_back_1
 msgid "Hello again. I hope the bed is comfortable enough."
@@ -12419,7 +12600,9 @@ msgstr "Remélem, hogy ez *megtanítja* a többi patkánynak is."
 
 #: conversationlist_algangror.json:algangror_return_c4
 msgid "Say, you seem like a resourceful person. Would you be interested in helping me with yet another ... task?"
-msgstr "Mondjuk, leleményesnek embernek tűnsz. Volna kedved segíteni nekem egy másik… feladatban?"
+msgstr ""
+"Mondjuk, leleményes embernek tűnsz. Volna kedved segíteni nekem egy másik… "
+"feladatban?"
 
 #: conversationlist_algangror.json:algangror_return_c4:0
 msgid "Depends on the task."
@@ -12451,7 +12634,7 @@ msgstr "Ezért arra kérlek, hogy ne áruld el a hollétemet nekik."
 
 #: conversationlist_algangror.json:algangror_remgard_5:1
 msgid "[Lie] OK."
-msgstr "[REVIEW](Hazugság) Rendben"
+msgstr "[Hazugság] Rendben."
 
 #: conversationlist_algangror.json:algangror_remgard_6
 msgid "Thank you. Under no circumstances should you tell them where I am. They will most likely try to persuade you into revealing my location."
@@ -12501,7 +12684,7 @@ msgstr "Igen, elmondtam Jhaeldnek, hogy merre vagy."
 
 #: conversationlist_algangror.json:algangror_told_2:1
 msgid "[Lie] No, I have not told anyone."
-msgstr "[REVIEW](Hazugság) Nem, senkinek sem mondtam el."
+msgstr "[Hazugság] Nem, senkinek sem mondtam el."
 
 #: conversationlist_algangror.json:algangror_told_3
 msgid "I can feel it in me."
@@ -17013,7 +17196,9 @@ msgstr "Itt nyugszik Kargir, a kereskedő."
 
 #: conversationlist_v0612graves.json:sign_fallhaven_ne_grave2
 msgid "The stone is covered with a thin layer of green moss. The writing on the stone has eroded and is completely unreadable."
-msgstr "[REVIEW](A követ vékony zöld moha réteggel fedi. A felirat a kövön lekopott és teljesen olvashatatlan.)"
+msgstr ""
+"A követ vékony zöld moha réteggel fedi. A felirat a kövön lekopott és "
+"teljesen olvashatatlan."
 
 #: conversationlist_v0612graves.json:sign_fallhaven_ne_grave3
 msgid "Rest with the Shadow, one-legged Berth. She lived a full life, but in the end she could not stand up to the illness that befell her."
@@ -17090,27 +17275,37 @@ msgstr "A sírfeliraton ez olvasható: Nyugodj az Árnnyal, legkedvesebbem."
 #: conversationlist_v0612graves.json:sign_catacombs2_papers1
 #: conversationlist_v0612graves.json:sign_bwm52_papers1
 msgid "On the floor is what looks like some torn out pages from a book."
-msgstr "[REVIEW][REVIEW](A padlón olyan, mintha egy könyv néhány kitépett oldala lenne.)"
+msgstr "A padlón olyan, mintha egy könyv néhány kitépett oldala lenne."
 
 #: conversationlist_v0612graves.json:sign_catacombs2_papers2
 msgid "You find some crumpled papers on the floor, containing scribbled notes about the fine arts of pottery making. You decide to leave them be."
-msgstr "[REVIEW](Találsz néhány gyűrött papírt a földön, amely firkált jegyzetet tartalmaz a kerámiagyártás képzőművészetéről. Úgy döntesz, hogy ott hagyod őket.)"
+msgstr ""
+"Találsz néhány gyűrött papírt a földön, amely firkált jegyzetet tartalmaz a "
+"kerámiagyártás képzőművészetéről. Úgy döntesz, hogy ott hagyod őket."
 
 #: conversationlist_v0612graves.json:sign_catacombs3_grave1
 msgid "The grave reads: Here lies Sir Anarogas of house Gellir, son of Gellir the brave."
-msgstr "[REVIEW](A síron ez olvasható: Itt nyugszik Sir Anarogas a Gellir dinasztiából, Gellir, a bátor fia.)"
+msgstr ""
+"A síron ez olvasható: Itt nyugszik Sir Anarogas a Gellir dinasztiából, "
+"Gellir, a bátor fia."
 
 #: conversationlist_v0612graves.json:sign_catacombs3_grave2
 msgid "The stench coming from the grave is unbearable. Something must have disturbed the grave recently."
-msgstr "[REVIEW](A sírból áradó bűz elviselhetetlen. Valaminek mostanában kellett háborgatnia a sírt.)"
+msgstr ""
+"A sírból áradó bűz elviselhetetlen. Valaminek mostanában kellett háborgatnia "
+"a sírt."
 
 #: conversationlist_v0612graves.json:sign_catacombs4_grave1
 msgid "The cross reads: ta'Dreg lies here, advisor of the Shadow to king Luthor."
-msgstr "[REVIEW](A kereszten ez olvasható: ta'Dreg nyugszik itt, az Árny tanácsadója Luthor királynak.)"
+msgstr ""
+"A kereszten ez olvasható: ta'Dreg nyugszik itt, az Árny tanácsadója Luthor "
+"királynak."
 
 #: conversationlist_v0612graves.json:sign_catacombs4_grave2
 msgid "The grave reads: King Luthor, our savior and leader. The grave is also adorned with the golden seal of house Luthor."
-msgstr "[REVIEW](A síron ez olvasható: Luthor király, a megmentőnk és vezetőnk. A sír a Luthor dinasztia arany bélyegzőjével is díszítve van.)"
+msgstr ""
+"A síron ez olvasható: Luthor király, a megmentőnk és vezetőnk. A sír a "
+"Luthor dinasztia arany bélyegzőjével is díszítve van."
 
 #: conversationlist_v0612graves.json:sign_hh3_papers
 msgid "Perched under the statue, you find some papers with drawings of what looks like skeletons. The drawings look like they were made by a child, and you start to wonder how they could have ended up in a place such as this."
@@ -17118,15 +17313,17 @@ msgstr "A szobor alatt találsz néhány papírt olyan rajzokkal, amelyek csontv
 
 #: conversationlist_v0612graves.json:sign_hh3_grave
 msgid "Someone has written the words 'Rest' and 'Shadow' on the cross, in what looks like dried blood."
-msgstr "[REVIEW](Valaki felírta a „Nyugodj” és „Árny” szavakat a keresztre, amiben úgy néz ki, mint a kiszáradt vér.)"
+msgstr ""
+"Valaki felírta a „Nyugodj” és „Árny” szavakat a keresztre, amiben úgy néz "
+"ki, mint a kiszáradt vér."
 
 #: conversationlist_v0612graves.json:sign_bwm30_grave
 msgid "The cross reads: Rest with the Shadow, my dear."
-msgstr ""
+msgstr "A kereszten ez olvasható: Nyugodj az Árnnyal, kedvesem."
 
 #: conversationlist_v0612graves.json:sign_bwm33_grave
 msgid "The tombstone contains writing in a language that you do not understand."
-msgstr ""
+msgstr "A sírkő olyan nyelven tartalmaz írást, amelyet nem értesz."
 
 #: conversationlist_v0612graves.json:sign_bwm52_grave1
 msgid "The cross reads: Here lies Magnir the trader. Another casualty of those beasts."
@@ -17166,7 +17363,7 @@ msgstr ""
 
 #: conversationlist_v0612graves.json:sign_pwcave2a_grave
 msgid "The cross contains symbols that you cannot understand."
-msgstr "[REVIEW](A kereszt olyan szimbólumokat tartalmaz, amelyet nem tudsz megérteni.)"
+msgstr "A kereszt olyan szimbólumokat tartalmaz, amelyet nem tudsz megérteni."
 
 #: conversationlist_v0612graves.json:sign_pwcave4_grave1
 msgid "The cross contains symbols that you cannot understand. It looks like someone started digging up this grave recently, but stopped halfway."
@@ -17276,7 +17473,9 @@ msgstr "Hol szerezhetek én is olyan szép páncélt, mint amit te viselsz?"
 msgid ""
 "Agthor. Talk to him.\n"
 "[Points at Agthor]"
-msgstr "[REVIEW]Aghtor. Beszélj vele. *rámutat Aghtorra*"
+msgstr ""
+"Agthor. Beszélj vele.\n"
+"[Agthorra mutat]"
 
 #: conversationlist_aulowenn.json:aulowenn_atk0
 msgid "For Feygard!"
@@ -19449,7 +19648,7 @@ msgstr ""
 
 #: conversationlist_lodar0g.json:lodar0_g2:0
 msgid "No, I don't have the password."
-msgstr ""
+msgstr "Nem, nincs meg a jelszó."
 
 #: conversationlist_lodar0g.json:lodar0_g2:1
 msgid "'Giant'"
@@ -20008,7 +20207,7 @@ msgstr ""
 
 #: conversationlist_maevalia.json:maevalia23:2
 msgid "A few puny monsters won't stop me!"
-msgstr ""
+msgstr "Néhány vézna szörny nem fog megállítani engem!"
 
 #: conversationlist_maevalia.json:maevalia24
 msgid "OK. Frankly, I don't know what else we can do. We really need the help."
@@ -20495,7 +20694,7 @@ msgstr "Észreveszed, hogy ezek a sziklák a környezethez képest nem odaillőn
 
 #: conversationlist_v070signs1.json:sign_rbfcr1_1:0
 msgid "[Examine the stones more closely]"
-msgstr ""
+msgstr "[A kövek vizsgálata alaposabban]"
 
 #: conversationlist_v070signs1.json:sign_rbfcr1_r
 #: conversationlist_v070signs2.json:sign_lodar4_r
@@ -20561,7 +20760,7 @@ msgstr "A kereszten lévő szöveg ez írja: Itt nyugszik egy másik Nor City-i 
 
 #: conversationlist_v070signs1.json:sign_wlostmine2
 msgid "Welcome to beautiful Charwood heights!"
-msgstr ""
+msgstr "Üdvözlünk a gyönyörű Charwood magaslatain!"
 
 #: conversationlist_v070signs1.json:sign_whitecabin
 msgid "Some mysterious power prevents you from opening the door."
@@ -20782,7 +20981,7 @@ msgstr "Rendben. Itt van 500 arany."
 
 #: conversationlist_lodarmobs.json:zortakb
 msgid "The zortak will defeat you!"
-msgstr ""
+msgstr "A zortak le fog győzni!"
 
 #: conversationlist_lodarmobs.json:lbridge
 msgid "You will not pass me."
@@ -20962,7 +21161,7 @@ msgstr "Ahhoz, hogy elkészítsem az ételmérgezés elleni italt, szükségem l
 #: conversationlist_fallhaven_potions.json:fallhaven_pot_antifoodp5:0
 #: conversationlist_fallhaven_potions.json:fallhaven_pot_antifoodp8:0
 msgid "I'll be right back with those ingredients."
-msgstr "[REVIEW]Azonnal visszajövök azokkal a hozzávalókkal a számodra."
+msgstr "Azonnal visszajövök azokkal a hozzávalókkal."
 
 #: conversationlist_fallhaven_potions.json:fallhaven_pot_antifoodp5:1
 msgid "Any ideas where I can find those ingredients?"
@@ -20998,7 +21197,7 @@ msgstr "Jó. Adj egy percet, hogy előkészítsem azt az ellenmérget neked."
 
 #: conversationlist_fallhaven_potions.json:fallhaven_pot_antifp_q2
 msgid "[Mixes the ingredients]"
-msgstr "[összekeveri a hozzávalókat]"
+msgstr "[Összekeveri a hozzávalókat]"
 
 #: conversationlist_fallhaven_potions.json:fallhaven_pot_antifp_q3
 msgid "There. One potion against food-poisoning for you."
@@ -21301,7 +21500,7 @@ msgstr "Rendben… de ez az utolsó alkalom!"
 
 #: conversationlist_halvor_surprise.json:halvor_crossglen_12:1
 msgid "No. No no no ... leave me alone."
-msgstr "Nem. Nem, nem és nem… Hagy békén."
+msgstr "Nem. Nem, nem és nem… hagyj békén."
 
 #: conversationlist_halvor_surprise.json:halvor_bwmine_0
 msgid "Here we meet again. I'm surprised to see you this far from Crossglen!"
@@ -21767,7 +21966,7 @@ msgstr ""
 
 #: conversationlist_halvor_surprise.json:halvor_chwood_11:0
 msgid "Kayla?"
-msgstr ""
+msgstr "Kayla?"
 
 #: conversationlist_halvor_surprise.json:halvor_chwood_12
 msgid "Yes. She's a dear friend of mine. She lives in Stoutford."
@@ -22728,7 +22927,9 @@ msgstr ""
 
 #: conversationlist_graveyard1.json:gqtombstone_1
 msgid "Here lies Damurrela of Loneford, wife of Hagale and mother of Aradilles. Killed by Plaguestriders."
-msgstr "Itt nyugszik Damurrela Lonefordból, Hagale felesége és Aradilles anyja. A dögvészlovasok ölték meg."
+msgstr ""
+"Itt nyugszik Damurrela Lonefordból, Hagale felesége és Aradilles anyja. A "
+"dögvészpókok ölték meg."
 
 #: conversationlist_graveyard1.json:gqtombstone_2
 msgid "Here lies Aradilles of Loneford, daughter of Hagale and Damurrela. Died from blistering skin."
@@ -22744,7 +22945,7 @@ msgstr ""
 
 #: conversationlist_graveyard1.json:cithurn_00:1
 msgid "I'm looking for someone."
-msgstr ""
+msgstr "Keresek valakit."
 
 #: conversationlist_graveyard1.json:cithurn_10
 msgid "The surrounding forest is usually quiet, but for some time now it has been under a monster invasion. I am surprised you managed to reach my home."
@@ -23061,7 +23262,9 @@ msgstr "Elnézést, a testvéremet keresem, Andort. Kicsit hasonlít hozzám. L�
 
 #: conversationlist_graveyard1.json:aemens_1
 msgid "No. And little boys like you should not be wandering around on your own. I'm sure your father would not approve."
-msgstr "Nem. És az olyan kicsi fiúknak mint te, nem volna szabad magukban sétálgatni errefelé. Biztos vagyok benne, hogy az édesapád nem helyeselné. "
+msgstr ""
+"Nem. És az olyan kicsi fiúknak mint te, nem volna szabad magukban sétálgatni "
+"errefelé. Biztos vagyok benne, hogy az édesapád nem helyeselné."
 
 #: conversationlist_graveyard1.json:aemens_1:0
 msgid "My father sent me to look for my brother."
@@ -23105,7 +23308,10 @@ msgstr "Rendben. Köszönöm az idődet."
 
 #: conversationlist_graveyard1.json:taret_2
 msgid "There's not much to tell. Loneford is mostly a quiet place, although I have heard rumors that there is some criminal organization based here. Personally, I don't believe it."
-msgstr "Nincs sok mondanivalóm. Loneford többnyire csendes hely, azonban hallottam olyan pletykákat, hogy van valamilyen bűnszervezetet, amelynek itt van a központja. Személy szerint és nem hiszek ebben. "
+msgstr ""
+"Nincs sok mondanivalóm. Loneford többnyire csendes hely, azonban hallottam "
+"olyan pletykákat, hogy van valamilyen bűnszervezetet, amelynek itt van a "
+"központja. Személy szerint és nem hiszek ebben."
 
 #: conversationlist_graveyard1.json:taret_3
 msgid "The nastiest person in town is probably my neighbor. *laughs*. Be careful about walking in on her!"
@@ -23122,6 +23328,8 @@ msgstr "Köszönöm a figyelmeztetést."
 #: conversationlist_graveyard1.json:taret_3:2
 msgid "You are right. I told her you warned me that she was not always nice to strangers, but I think that just annoyed her."
 msgstr ""
+"Igazad van. Mondtam neki, hogy figyelmeztettél, hogy ő nem mindig kedves az "
+"idegenekkel, de azt hiszem, hogy ez csak felidegesítette őt."
 
 #: conversationlist_graveyard1.json:taret_4
 msgid "Is there anything else I can help you with?"
@@ -23138,6 +23346,9 @@ msgstr "Elnézést. Semmit. Távozok."
 #: conversationlist_graveyard1.json:taret_5
 msgid "Thanks kid. *sigh*. I expect she will be around here later to complain about that. You should be more careful what you say to people."
 msgstr ""
+"Köszönöm, kölyök. *sóhajt*. Arra számítok, hogy később majd itt lesz, hogy "
+"panaszkodjon miatta. Óvatosabbnak kell lenned, hogy mit mondasz az "
+"embereknek."
 
 #: conversationlist_graveyard1.json:taret_5:0
 msgid "Sorry. You are right."
@@ -23907,39 +24118,39 @@ msgstr ""
 
 #: conversationlist_guynmart_npc.json:guynmart_gguard_911
 msgid "...one..."
-msgstr ""
+msgstr "…egy…"
 
 #: conversationlist_guynmart_npc.json:guynmart_gguard_912
 msgid "...two..."
-msgstr ""
+msgstr "…kettő…"
 
 #: conversationlist_guynmart_npc.json:guynmart_gguard_913
 msgid "...three..."
-msgstr ""
+msgstr "…három…"
 
 #: conversationlist_guynmart_npc.json:guynmart_gguard_914
 msgid "...four..."
-msgstr ""
+msgstr "…négy…"
 
 #: conversationlist_guynmart_npc.json:guynmart_gguard_915
 msgid "...five..."
-msgstr ""
+msgstr "…öt…"
 
 #: conversationlist_guynmart_npc.json:guynmart_gguard_916
 msgid "...six..."
-msgstr ""
+msgstr "…hat…"
 
 #: conversationlist_guynmart_npc.json:guynmart_gguard_917
 msgid "...eh, now seven, I think..."
-msgstr ""
+msgstr "…eh, most hét, azt hiszem…"
 
 #: conversationlist_guynmart_npc.json:guynmart_gguard_918
 msgid "...eight..."
-msgstr ""
+msgstr "…nyolc…"
 
 #: conversationlist_guynmart_npc.json:guynmart_gguard_919
 msgid "...nine..."
-msgstr ""
+msgstr "…kilenc…"
 
 #: conversationlist_guynmart_npc.json:guynmart_gguard_930
 msgid "Hmm, you may have not enough money, but you have some nice things with you. I might give you a good price."
@@ -28862,23 +29073,23 @@ msgstr ""
 
 #: conversationlist_stoutford_combined.json:stn_boralla1:0
 msgid "OK. 1, 2, 3..."
-msgstr ""
+msgstr "Rendben. 1, 2, 3…"
 
 #: conversationlist_stoutford_combined.json:stn_boralla2
 msgid "Hey, you found me again! Once more?"
-msgstr ""
+msgstr "Hé, újra megtaláltál! Még egyszer?"
 
 #: conversationlist_stoutford_combined.json:stn_boralla2:0
 msgid "Why not. 1, 2..."
-msgstr ""
+msgstr "Miért ne. 1, 2…"
 
 #: conversationlist_stoutford_combined.json:stn_boralla3
 msgid "You didn't count to 10! Don't cheat. Another time!"
-msgstr ""
+msgstr "Nem számoltál el 10-ig! Ne csalj. Újra!"
 
 #: conversationlist_stoutford_combined.json:stn_boralla3:0
 msgid "OK. 1, 2, 3, 4..."
-msgstr ""
+msgstr "Rendben. 1, 2, 3, 4…"
 
 #: conversationlist_stoutford_combined.json:stn_boralla4
 msgid "Are you sure you didn't cheat this time?"
@@ -28928,7 +29139,7 @@ msgstr ""
 
 #: conversationlist_stoutford_combined.json:stn_boralla_end:0
 msgid "Yes, bye."
-msgstr ""
+msgstr "Igen, viszlát."
 
 #: conversationlist_stoutford_combined.json:base_beamto_10
 msgid "You wouldn't rest here."
@@ -29884,7 +30095,7 @@ msgstr "Kiváló vastőr"
 
 #: itemlist_weapons.json:shortsword1
 msgid "Iron shortsword"
-msgstr "Rövid vaskard"
+msgstr "Vas rövid kard"
 
 #: itemlist_weapons.json:ironsword1
 msgid "Iron sword"
@@ -29916,7 +30127,7 @@ msgstr "Vasfejsze"
 
 #: itemlist_weapons.json:quickdagger1
 msgid "Quickstrike dagger"
-msgstr ""
+msgstr "Gyorscsapó tőr"
 
 #: itemlist_armour.json:shirt1
 msgid "Cloth shirt"
@@ -30036,7 +30247,7 @@ msgstr "+6 sebzés gyűrűje"
 
 #: itemlist_rings.json:ring_block1
 msgid "Lesser ring of block"
-msgstr "Blokkolás kisebb gyűrűje"
+msgstr "A blokkolás kisebb gyűrűje"
 
 #: itemlist_rings.json:ring_block2
 msgid "Polished ring of block"
@@ -30088,7 +30299,7 @@ msgstr "Csiszolt drágakő"
 
 #: itemlist_junk.json:gem4
 msgid "Sharpened gem"
-msgstr ""
+msgstr "Élesített drágakő"
 
 #: itemlist_junk.json:gem5
 msgid "Polished sparkling gem"
@@ -30302,7 +30513,7 @@ msgstr "Rendes bőrsapka"
 
 #: itemlist_v068.json:sleepingmead
 msgid "Prepared sleepy mead"
-msgstr ""
+msgstr "Előkészített álmosító mézsör"
 
 #: itemlist_v068.json:ffguard_qitem
 msgid "Feygard patrol ring"
@@ -30342,11 +30553,11 @@ msgstr "Gonosz ütés nyaklánca"
 
 #: itemlist_v068.json:armor_stone
 msgid "Stone Cuirass"
-msgstr "Kőpáncél"
+msgstr "Kő mellvért"
 
 #: itemlist_v068.json:ring_shadow0
 msgid "Ring of lesser Shadow"
-msgstr "Kisebb Árny gyűrűje"
+msgstr "A kisebb Árny gyűrűje"
 
 #: itemlist_v068.json:ring_shadow0:description
 msgid "The glow of the Shadow guides my path. It follows me wherever I go, and aids me against the dangers that others might not see. I am Shadow, and Shadow is in me."
@@ -30358,7 +30569,7 @@ msgstr "Az életlopás vívótőre"
 
 #: itemlist_v069.json:dagger_barbed
 msgid "Barbed dagger"
-msgstr ""
+msgstr "Szálkás tőr"
 
 #: itemlist_v069.json:elytharan_redeemer
 msgid "Elytharan redeemer"
@@ -30366,11 +30577,11 @@ msgstr ""
 
 #: itemlist_v069.json:clouded_rage
 msgid "Sword of Shadow's rage"
-msgstr ""
+msgstr "Az Árny dühének kardja"
 
 #: itemlist_v069.json:shadow_slayer
 msgid "Shadow of the slayer"
-msgstr ""
+msgstr "A gyilkos árnyéka"
 
 #: itemlist_v069.json:ring_shadow_embrace
 msgid "Ring of Shadow embrace"
@@ -30414,7 +30625,7 @@ msgstr "Favágók csizmája"
 
 #: itemlist_v069.json:heavy_club
 msgid "Heavy club"
-msgstr ""
+msgstr "Nehéz ütő"
 
 #: itemlist_v069.json:pot_speed_1
 msgid "Minor potion of speed"
@@ -30446,7 +30657,7 @@ msgstr "Fehér tengeri kígyó karma"
 
 #: itemlist_v069_questitems.json:bwm_permit
 msgid "Forged papers for Blackwater"
-msgstr ""
+msgstr "Hamisított papírok Blackwaternek"
 
 #: itemlist_v069_questitems.json:bjorgur_dagger
 msgid "Bjorgur's family dagger"
@@ -30454,7 +30665,7 @@ msgstr "Bjorgur családi tőre"
 
 #: itemlist_v069_questitems.json:q_kazaul_vial
 msgid "Vial of purifying spirit"
-msgstr ""
+msgstr "A tisztító szellem fiolája"
 
 #: itemlist_v069_questitems.json:guthbered_id
 msgid "Guthbered's ring"
@@ -30506,7 +30717,7 @@ msgstr "Éles acéltőr"
 
 #: itemlist_v0610_1.json:sword_balanced_steel
 msgid "Balanced steel sword"
-msgstr ""
+msgstr "Kiegyensúlyozott acélkard"
 
 #: itemlist_v0610_1.json:broadsword_fine_steel
 msgid "Fine steel broadsword"
@@ -30514,7 +30725,7 @@ msgstr "Finom acélpallos"
 
 #: itemlist_v0610_1.json:sword_defenders
 msgid "Defender's blade"
-msgstr ""
+msgstr "Védők pengéje"
 
 #: itemlist_v0610_1.json:sword_villains
 msgid "Villain's blade"
@@ -30526,7 +30737,7 @@ msgstr "Kihívók vaskardja"
 
 #: itemlist_v0610_1.json:sword_fencing
 msgid "Fencing blade"
-msgstr ""
+msgstr "Vívás penge"
 
 #: itemlist_v0610_1.json:club_brutal
 msgid "Brutal club"
@@ -30534,11 +30745,11 @@ msgstr "Brutális ütő"
 
 #: itemlist_v0610_1.json:axe_gutsplitter
 msgid "Gutsplitter"
-msgstr ""
+msgstr "Bélrepesztő"
 
 #: itemlist_v0610_1.json:hammer_skullcrusher
 msgid "Skullcrusher"
-msgstr ""
+msgstr "Koponyazúzó"
 
 #: itemlist_v0610_1.json:shield_crude_wooden
 msgid "Crude wooden buckler"
@@ -30786,15 +30997,15 @@ msgstr "Óriás darázs szárny"
 
 #: itemlist_v0610_2.json:tinlyn_bells
 msgid "Tinlyn's sheep bell"
-msgstr ""
+msgstr "Tinlyn báránycsengője"
 
 #: itemlist_v0610_2.json:tinlyn_sheep_meat
 msgid "Meat from Tinlyn's sheep"
-msgstr ""
+msgstr "Hús Tinlyn bárányából"
 
 #: itemlist_v0610_2.json:rogorn_qitem
 msgid "Piece of painting"
-msgstr ""
+msgstr "Festménydarab"
 
 #: itemlist_v0610_2.json:fg_ironsword
 msgid "Feygard iron sword"
@@ -30806,11 +31017,11 @@ msgstr "Lerontott feygardi vaskard"
 
 #: itemlist_v0610_2.json:buceth_vial
 msgid "Buceth's vial of green liquid"
-msgstr ""
+msgstr "Buceth zöld folyadék fiolája"
 
 #: itemlist_v0610_2.json:chaosreaper
 msgid "Chaosreaper"
-msgstr ""
+msgstr "Káoszkaszás"
 
 #: itemlist_v0610_2.json:izthiel_claw
 msgid "Izthiel claw"
@@ -30822,7 +31033,7 @@ msgstr "Iqhan medál"
 
 #: itemlist_v0610_2.json:shadowfang
 msgid "Shadowfang"
-msgstr ""
+msgstr "Árnyfog"
 
 #: itemlist_v0610_2.json:gloves_life
 msgid "Gloves of life force"
@@ -30986,16 +31197,16 @@ msgstr "Furcsa kinézetű patkányfarok"
 
 #: itemlist_v0611_2.json:oegyth
 msgid "Oegyth crystal"
-msgstr ""
+msgstr "Oegyth kristály"
 
 #: itemlist_v0611_2.json:toszylae_heart
 #: itemlist_stoutford.json:eliszylae_heart
 msgid "Demon heart"
-msgstr ""
+msgstr "Démonszív"
 
 #: itemlist_v0611_2.json:potion_rotworm
 msgid "Kazaul rotworm"
-msgstr ""
+msgstr "Kazaul májmételyféreg"
 
 #: itemlist_v0611_3.json:lyson_marrow
 msgid "Vial of Lyson marrow extract"
@@ -31011,7 +31222,7 @@ msgstr "Algangror gyűrűje"
 
 #: itemlist_v0611_3.json:kaverin_message
 msgid "Kaverin's sealed message"
-msgstr ""
+msgstr "Kaverin lepecsételt üzenete"
 
 #: itemlist_v0611_3.json:vacor_map
 msgid "Map to Vacor's old hideout"
@@ -31019,7 +31230,7 @@ msgstr "Térkép Vacor régi rejtekhelyéhez"
 
 #: itemlist_v070.json:ltbdy_lthr
 msgid "Sturdy leather cuirass"
-msgstr "Erős bőrpáncél"
+msgstr "Erős bőr mellvért"
 
 #: itemlist_v070.json:ltbdy_chmail
 msgid "Lightweight chainmail"
@@ -31039,7 +31250,7 @@ msgstr "Elkopott páncéling"
 
 #: itemlist_v070.json:hvbdy_rust
 msgid "Rusty heavy cuirass"
-msgstr "Rozsdás nehéz páncél"
+msgstr "Rozsdás nehéz mellvért"
 
 #: itemlist_v070.json:spmail2
 msgid "Worn splint mail"
@@ -31091,7 +31302,7 @@ msgstr "Nehéz lemezcsizma"
 
 #: itemlist_v070.json:clmr_dl
 msgid "Dull two-handed sword"
-msgstr ""
+msgstr "Tompa kétkezes kard"
 
 #: itemlist_v070.json:clmr_rst
 msgid "Rusty claymore"
@@ -31147,7 +31358,7 @@ msgstr "Kísértet nagy skót kardja"
 
 #: itemlist_v070.json:xulviir
 msgid "Xul'viir"
-msgstr ""
+msgstr "Xul'viir"
 
 #: itemlist_v070.json:club_bld
 msgid "Spiked club of bleeding"
@@ -31171,15 +31382,15 @@ msgstr ""
 
 #: itemlist_v070.json:daggr_bloodlet
 msgid "Bloodletter"
-msgstr ""
+msgstr "Vérlevél"
 
 #: itemlist_v070.json:daggr_curv
 msgid "Curved dagger"
-msgstr ""
+msgstr "Hajlított tőr"
 
 #: itemlist_v070.json:blade_defiler
 msgid "Blade of the defiler"
-msgstr ""
+msgstr "A megbecstelenítő pengéje"
 
 #: itemlist_v070.json:axe_black1
 msgid "Black axe"
@@ -31207,7 +31418,7 @@ msgstr "Nagy csatabárd"
 
 #: itemlist_v070.json:hatchet_sharp
 msgid "Sharpened hatchet"
-msgstr ""
+msgstr "Megélezett szekerce"
 
 #: itemlist_v070.json:axe_whirl
 msgid "Axe of whirlwind"
@@ -31235,7 +31446,7 @@ msgstr "Sajt"
 
 #: itemlist_v070.json:charwood_cheddar
 msgid "Charwood cheddar"
-msgstr ""
+msgstr "Charwoodi cheddar"
 
 #: itemlist_v070.json:rawperch
 msgid "Raw perch"
@@ -31343,15 +31554,15 @@ msgstr "Denevérszárny"
 
 #: itemlist_v070.json:mudfiend
 msgid "Mudfiend goo"
-msgstr ""
+msgstr "Sárördög ragacs"
 
 #: itemlist_v070.json:venomscale
 msgid "Venomscale scales"
-msgstr ""
+msgstr "Mérgespikkelyes pikkelyek"
 
 #: itemlist_v070.json:vscale_amul
 msgid "Venomscale amulet"
-msgstr ""
+msgstr "Mérgespikkelyes amulett"
 
 #: itemlist_v070.json:khakin
 msgid "Khakin eye"
@@ -31411,7 +31622,7 @@ msgstr ""
 
 #: itemlist_shortcut_lodar.json:vial_activation
 msgid "Lodar's activation vial"
-msgstr ""
+msgstr "Lodar aktiváló fiolája"
 
 #: itemlist_pathway_fallhaven.json:jakrar_axe
 msgid "Jakrar's woodcutting axe"
@@ -31423,7 +31634,7 @@ msgstr "Az élőhalott nyaklánca"
 
 #: itemlist_stoutford.json:necklace_undead:description
 msgid "This necklace calls for death, and yours will do."
-msgstr ""
+msgstr "Ez a nyaklánc halált követel, és a tied megteszi."
 
 #: itemlist_stoutford.json:globetrotter_boots
 msgid "Boots of the Globetrotter"
@@ -31439,23 +31650,23 @@ msgstr ""
 
 #: itemlist_stoutford.json:feline_shoes
 msgid "Feline shoes"
-msgstr ""
+msgstr "Macskaszerű cipő"
 
 #: itemlist_stoutford.json:feline_gloves
 msgid "Feline gloves"
-msgstr ""
+msgstr "Macskaszerű kesztyű"
 
 #: itemlist_stoutford.json:handsewn_gloves2
 msgid "Handsewn leather gloves"
-msgstr ""
+msgstr "Kézzel varrott bőrkesztyű"
 
 #: itemlist_stoutford.json:handsewn_gloves4
 msgid "Handsewn snakeskin gloves"
-msgstr ""
+msgstr "Kézzel varrott kígyóbőr kesztyű"
 
 #: itemlist_stoutford.json:handsewn_boots2
 msgid "Handsewn leather boots"
-msgstr ""
+msgstr "Kézzel varrott bőrcsizma"
 
 #: itemlist_stoutford.json:fancy_shirt
 msgid "Fancy shirt"
@@ -31471,11 +31682,11 @@ msgstr "Egy kincsesládát nyit ki."
 
 #: itemlist_graveyard1.json:lifetaker
 msgid "LifeTaker"
-msgstr ""
+msgstr "Életlopó"
 
 #: itemlist_graveyard1.json:lifetaker:description
 msgid "A fine blade enhanced by undead forces."
-msgstr ""
+msgstr "Egy élőhalott seregek által megerősített finom penge."
 
 #: itemlist_graveyard1.json:tesrekanbone
 msgid "Tesrekan's bone"
@@ -31496,6 +31707,9 @@ msgstr "Ősi szöveg"
 #: itemlist_graveyard1.json:graveyardtext:description
 msgid "This text contains several magical incantations and claims to allow anyone holding it to enter the cemetery south of the Waterway chest."
 msgstr ""
+"Ez a szöveg több mágikus varázsigét tartalmaz, és azt állítja, hogy bárkit "
+"képes visszatartani attól, hogy belépjen a temetőbe a Waterway-i ládától "
+"délre."
 
 #: itemlist_graveyard1.json:cithurn_talisman
 msgid "Cithurn's talisman"
@@ -31519,7 +31733,7 @@ msgstr "Kő ütő"
 
 #: itemlist_graveyard1.json:tunic_old
 msgid "Old tunic"
-msgstr "Régi tunika"
+msgstr "Régi katonazubbony"
 
 #: itemlist_graveyard1.json:tunic_old:description
 msgid "This is so old and damaged it's useless."
@@ -31539,7 +31753,7 @@ msgstr "Hannah ebédje"
 
 #: itemlist_guynmart.json:ring_shadow1
 msgid "Ring of far lesser Shadow"
-msgstr ""
+msgstr "A sokkal kisebb Árny gyűrűje"
 
 #: itemlist_guynmart.json:ring_shadow1:description
 msgid "The glow of the Shadow guides my path. It follows me wherever I go, and aids the dangers against me that others might not see. I am Shadow, and Shadow is in me."
@@ -31563,19 +31777,19 @@ msgstr ""
 
 #: itemlist_guynmart.json:guynmart_bonemealbox
 msgid "Andor's bonemeal box"
-msgstr ""
+msgstr "Andor csontliszt doboza"
 
 #: itemlist_guynmart.json:guynmart_marble
 msgid "Stuephant's marble"
-msgstr ""
+msgstr "Stuephant üveggolyója"
 
 #: itemlist_guynmart.json:guynmart_shield
 msgid "Guynmart shield"
-msgstr ""
+msgstr "Guynmarti pajzs"
 
 #: itemlist_guynmart.json:guynmart_scroll
 msgid "Scroll of wisdom"
-msgstr ""
+msgstr "A bölcsesség tekercse"
 
 #: itemlist_guynmart.json:guynmart_doll
 msgid "Old Teddy Bear"
@@ -31583,7 +31797,7 @@ msgstr ""
 
 #: itemlist_trader_teksin.json:pot_irdegh_poison_elixir
 msgid "Irdegh poison elixir"
-msgstr ""
+msgstr "Irdegh méreg varázsital"
 
 #: itemlist_trader_teksin.json:bwm_boots
 msgid "Blackwater boots"
@@ -31607,7 +31821,7 @@ msgstr "Kiváló harci csizma"
 
 #: itemlist_trader_teksin.json:ring_dexterity
 msgid "Ring of dexterity"
-msgstr "Az ügyesség gyűrűje"
+msgstr "A kézügyesség gyűrűje"
 
 #: itemlist_trader_teksin.json:bwm_gloves
 msgid "Blackwater gloves"
@@ -31639,7 +31853,7 @@ msgstr "Az üvegen lévő címke réginek és elhalványultnak látszik. Mikor k
 
 #: itemlist_stoutford_combined.json:shortsword2
 msgid "Steel shortsword"
-msgstr ""
+msgstr "Acél rövid kard"
 
 #: itemlist_stoutford_combined.json:morn_bronze
 msgid "Bronze morningstar"
@@ -31700,7 +31914,7 @@ msgstr "A védnök kiváló nyaklánca"
 
 #: itemlist_stoutford_combined.json:shield_leather
 msgid "Reinforced leather buckler"
-msgstr ""
+msgstr "Megerősített kerek bőrpajzs"
 
 #: itemlist_stoutford_combined.json:shield_iron1
 msgid "Crude iron shield"
@@ -31716,15 +31930,17 @@ msgstr "Kiváló vaspajzs"
 
 #: itemlist_stoutford_combined.json:shield_blk_defender
 msgid "Black defender"
-msgstr ""
+msgstr "Fekete védelmező"
 
 #: itemlist_stoutford_combined.json:shield_spiked
 msgid "Spiked buckler"
-msgstr ""
+msgstr "Tüskés kerek pajzs"
 
 #: itemlist_stoutford_combined.json:shield_spiked:description
 msgid "This looks like a (bad) cross between a homemade shield and a homemade weapon."
 msgstr ""
+"Ez úgy néz ki mint egy (rossz) kereszt egy házi készítésű pajzs és egy házi "
+"készítésű fegyver között."
 
 #: itemlist_stoutford_combined.json:gloves_goatskin
 msgid "Goatskin gloves"
@@ -31732,19 +31948,19 @@ msgstr "Kecskebőr kesztyű"
 
 #: itemlist_stoutford_combined.json:boots_flight
 msgid "Boots of flight"
-msgstr ""
+msgstr "A menekülés csizmája"
 
 #: itemlist_stoutford_combined.json:necklace_stfrd_combat
 msgid "Stoutford combat amulet"
-msgstr ""
+msgstr "Stoutfordi harci amulett"
 
 #: itemlist_stoutford_combined.json:tunic_snakeskin
 msgid "Snakeskin tunic"
-msgstr ""
+msgstr "Kígyóbőr katonazubbony"
 
 #: itemlist_stoutford_combined.json:tunic_cloth
 msgid "Cloth tunic"
-msgstr ""
+msgstr "Szövet katonazubbony"
 
 #: itemlist_stoutford_combined.json:hat_goatskin
 msgid "Goatskin hat"
@@ -31752,59 +31968,59 @@ msgstr "Kecskebőr kalap"
 
 #: itemlist_stoutford_combined.json:tunic_chainmail
 msgid "Chainmail tunic"
-msgstr ""
+msgstr "Páncéling katonazubbony"
 
 #: itemlist_stoutford_combined.json:cuirass_steel
 msgid "Steel cuirass"
-msgstr ""
+msgstr "Acél mellvért"
 
 #: itemlist_stoutford_combined.json:helm_steel
 msgid "Steel helm"
-msgstr ""
+msgstr "Acélsisak"
 
 #: itemlist_stoutford_combined.json:cheese_goat
 msgid "Goat cheese"
-msgstr ""
+msgstr "Kecskesajt"
 
 #: itemlist_stoutford_combined.json:pot_dazed_restore
 msgid "Restore dazed"
-msgstr ""
+msgstr "Bódultság meggyógyítása"
 
 #: itemlist_stoutford_combined.json:pot_fear_restore
 msgid "Restore fear"
-msgstr ""
+msgstr "Félelem meggyógyítása"
 
 #: itemlist_stoutford_combined.json:pot_stunned_restore
 msgid "Restore stunned"
-msgstr ""
+msgstr "Kábultság meggyógyítása"
 
 #: itemlist_stoutford_combined.json:pot_feebleness_restore
 msgid "Restore weapon feebleness"
-msgstr ""
+msgstr "Fegyverforgatási gyengeség meggyógyítása"
 
 #: itemlist_stoutford_combined.json:pot_alertness
 msgid "Potion of alertness"
-msgstr ""
+msgstr "Az éberség itala"
 
 #: itemlist_stoutford_combined.json:pot_heroism
 msgid "Potion of heroism"
-msgstr ""
+msgstr "A hősiesség itala"
 
 #: itemlist_stoutford_combined.json:pot_awareness
 msgid "Potion of awareness"
-msgstr ""
+msgstr "A tudatosság itala"
 
 #: itemlist_stoutford_combined.json:pot_dexterity
 msgid "Potion of dexterity"
-msgstr ""
+msgstr "A kézügyesség itala"
 
 #: itemlist_stoutford_combined.json:pot_sound_mind
 msgid "Potion of sound mind"
-msgstr ""
+msgstr "Az épelméjűség itala"
 
 #: itemlist_stoutford_combined.json:damerilias
 msgid "Damerilias"
-msgstr ""
+msgstr "Dameriliák"
 
 #: itemlist_stoutford_combined.json:damerilias:description
 msgid "Flowers that grow only in Remgard"
@@ -31812,20 +32028,20 @@ msgstr "Virágok, amelyek csak Remgardban nőnek"
 
 #: itemlist_stoutford_combined.json:potion_truth
 msgid "Potion of truth"
-msgstr ""
+msgstr "Az igazság itala"
 
 #: itemlist_stoutford_combined.json:potion_deftness
 #: itemlist_stoutford_combined.json:potion_deftness_bad
 msgid "Potion of deftness"
-msgstr ""
+msgstr "Az ügyesség itala"
 
 #: itemlist_stoutford_combined.json:potion_brave
 msgid "Potion of the brave"
-msgstr ""
+msgstr "A bátor itala"
 
 #: itemlist_stoutford_combined.json:pot_quickdeath
 msgid "Potion of quick death"
-msgstr ""
+msgstr "A gyors halál itala"
 
 #: itemlist_stoutford_combined.json:boots_goatskin
 msgid "Goatskin boots"
@@ -31837,7 +32053,7 @@ msgstr "Szárított kecskehús"
 
 #: itemlist_stoutford_combined.json:goat_meat_dried:description
 msgid "It looks similar to boot leather."
-msgstr ""
+msgstr "Hasonlóan néz ki mint a csizmabőr."
 
 #: itemlist_stoutford_combined.json:rapier_steel
 msgid "Sharp steel rapier"
@@ -31845,19 +32061,19 @@ msgstr "Éles acél vívótőr"
 
 #: itemlist_stoutford_combined.json:sword_annihilator
 msgid "Sword of the annihilator"
-msgstr ""
+msgstr "A megsemmisítő kardja"
 
 #: itemlist_stoutford_combined.json:Helm_foreseeing
 msgid "Helm of Foreseeing"
-msgstr ""
+msgstr "Előrelátás sisakja"
 
 #: itemlist_stoutford_combined.json:scorpion_sting
 msgid "Scorpion sting"
-msgstr ""
+msgstr "Skorpiófullánk"
 
 #: itemlist_stoutford_combined.json:glade_key
 msgid "Key to the glade"
-msgstr ""
+msgstr "Kulcs a tisztáshoz"
 
 #: itemlist_stoutford_combined.json:soap
 msgid "Soap"
@@ -31865,7 +32081,7 @@ msgstr "Szappan"
 
 #: itemlist_stoutford_combined.json:erwyn_coin:description
 msgid "Special coins against powerful undead"
-msgstr ""
+msgstr "Különleges érmék erős élőhalott ellen"
 
 #: itemlist_stoutford_combined.json:erwyn_ring
 msgid "Lord Erwyn's ring"
@@ -31873,11 +32089,11 @@ msgstr "Erwyn nagyúr gyűrűje"
 
 #: itemlist_stoutford_combined.json:erwyn_ring:description
 msgid "A broad ring with wicked looking runes all around"
-msgstr ""
+msgstr "Egy terjedelmes gyűrű gonosznak látszó rúnákkal mindenfelé"
 
 #: itemlist_stoutford_combined.json:stoutford_helmet
 msgid "Stoutford chief's helmet"
-msgstr ""
+msgstr "Stoutford vezérének sisakja"
 
 #: itemlist_stoutford_combined.json:lutarc_medallion
 msgid "Lutarc's medallion"
@@ -32246,12 +32462,12 @@ msgstr "Alaun"
 #: monsterlist_fallhaven_npcs.json:busy_farmer
 #: monsterlist_stoutford_combined.json:stoutford_farmer2
 msgid "Busy farmer"
-msgstr ""
+msgstr "Elfoglalt földműves"
 
 #: monsterlist_fallhaven_npcs.json:old_farmer
 #: monsterlist_stoutford_combined.json:stoutford_farmer3
 msgid "Old farmer"
-msgstr ""
+msgstr "Öreg földműves"
 
 #: monsterlist_fallhaven_npcs.json:khorand
 msgid "Khorand"
@@ -32267,7 +32483,7 @@ msgstr "Unzel"
 
 #: monsterlist_fallhaven_npcs.json:shady_bandit
 msgid "Shady bandit"
-msgstr "Árnyas bandita"
+msgstr "Gyanús bandita"
 
 #: monsterlist_wilderness.json:wild_fox
 msgid "Wild fox"
@@ -32598,15 +32814,15 @@ msgstr "Erős gornaud"
 
 #: monsterlist_v069_monsters.json:slithering_venomfang
 msgid "Slithering venomfang"
-msgstr ""
+msgstr "Csúszó méregfogú"
 
 #: monsterlist_v069_monsters.json:scaled_venomfang
 msgid "Scaled venomfang"
-msgstr ""
+msgstr "Pikkelyes méregfogú"
 
 #: monsterlist_v069_monsters.json:tough_venomfang
 msgid "Tough venomfang"
-msgstr ""
+msgstr "Szívós méregfogú"
 
 #: monsterlist_v069_monsters.json:restless_dead
 msgid "Restless dead"
@@ -32614,7 +32830,7 @@ msgstr "Nyughatatlan halott"
 
 #: monsterlist_v069_monsters.json:grave_spawn
 msgid "Grave spawn"
-msgstr ""
+msgstr "Sír ivadék"
 
 #: monsterlist_v069_monsters.json:restless_apparition
 msgid "Restless apparition"
@@ -32626,19 +32842,19 @@ msgstr "Csontvázkaszás"
 
 #: monsterlist_v069_monsters.json:kazaul_spawn
 msgid "Kazaul spawn"
-msgstr ""
+msgstr "Kazaul ivadék"
 
 #: monsterlist_v069_monsters.json:kazaul_imp
 msgid "Kazaul imp"
-msgstr ""
+msgstr "Kazaul manó"
 
 #: monsterlist_v069_monsters.json:kazaul_guardian
 msgid "Kazaul guardian"
-msgstr ""
+msgstr "Kazaul őrző"
 
 #: monsterlist_v069_monsters.json:graverobber
 msgid "Graverobber"
-msgstr ""
+msgstr "Sírrabló"
 
 #: monsterlist_v069_npcs.json:agent1
 #: monsterlist_v069_npcs.json:agent2
@@ -32663,7 +32879,7 @@ msgstr "Moyra"
 
 #: monsterlist_v069_npcs.json:prim_citizen
 msgid "Prim citizen"
-msgstr ""
+msgstr "Primi polgár"
 
 #: monsterlist_v069_npcs.json:prim_commoner
 msgid "Prim commoner"
@@ -32675,7 +32891,7 @@ msgstr "Primi lakos"
 
 #: monsterlist_v069_npcs.json:prim_evoker
 msgid "Prim evoker"
-msgstr ""
+msgstr "Primi idéző"
 
 #: monsterlist_v069_npcs.json:laecca
 msgid "Laecca"
@@ -32699,7 +32915,7 @@ msgstr "Primi kocsmai vendég"
 
 #: monsterlist_v069_npcs.json:prim_tavern_regular
 msgid "Prim tavern regular"
-msgstr ""
+msgstr "Primi kocsmai törzsvendég"
 
 #: monsterlist_v069_npcs.json:prim_bar_guest
 msgid "Prim bar guest"
@@ -32707,7 +32923,7 @@ msgstr "Primi bár vendégek"
 
 #: monsterlist_v069_npcs.json:prim_bar_regular
 msgid "Prim bar regular"
-msgstr ""
+msgstr "Primi bár törzsvendég"
 
 #: monsterlist_v069_npcs.json:prim_armorer
 msgid "Prim armorer"
@@ -32739,7 +32955,7 @@ msgstr "Guthbered testőre"
 
 #: monsterlist_v069_npcs.json:prim_weapon_guard
 msgid "Prim weapon guard"
-msgstr ""
+msgstr "Primi fegyverőr"
 
 #: monsterlist_v069_npcs.json:prim_sentry
 msgid "Prim sentry"
@@ -32779,19 +32995,19 @@ msgstr "Primi tanítvány"
 
 #: monsterlist_v069_npcs.json:blackwater_entrance_guard
 msgid "Blackwater entrance guard"
-msgstr ""
+msgstr "Blackwateri bejárati őr"
 
 #: monsterlist_v069_npcs.json:blackwater_dinner_guest
 msgid "Blackwater dinner guest"
-msgstr ""
+msgstr "Blackwateri vacsoravendég"
 
 #: monsterlist_v069_npcs.json:blackwater_inhabitant
 msgid "Blackwater inhabitant"
-msgstr ""
+msgstr "Blackwateri lakos"
 
 #: monsterlist_v069_npcs.json:blackwater_cook
 msgid "Blackwater cook"
-msgstr ""
+msgstr "Blackwateri szakács"
 
 #: monsterlist_v069_npcs.json:keneg
 msgid "Keneg"
@@ -32807,7 +33023,7 @@ msgstr "Waeges"
 
 #: monsterlist_v069_npcs.json:blackwater_fighter
 msgid "Blackwater fighter"
-msgstr ""
+msgstr "Blackwateri harcos"
 
 #: monsterlist_v069_npcs.json:ungorm
 msgid "Ungorm"
@@ -32815,7 +33031,7 @@ msgstr "Ungorm"
 
 #: monsterlist_v069_npcs.json:blackwater_pupil
 msgid "Blackwater pupil"
-msgstr ""
+msgstr "Blackwateri tanítvány"
 
 #: monsterlist_v069_npcs.json:laede
 msgid "Laede"
@@ -32831,27 +33047,27 @@ msgstr "Iducus"
 
 #: monsterlist_v069_npcs.json:blackwater_priest
 msgid "Blackwater priest"
-msgstr ""
+msgstr "Blackwateri pap"
 
 #: monsterlist_v069_npcs.json:studying_blackwater_priest
 msgid "Studying Blackwater priest"
-msgstr ""
+msgstr "Tanuló blackwateri pap"
 
 #: monsterlist_v069_npcs.json:blackwater_guard
 msgid "Blackwater guard"
-msgstr ""
+msgstr "Blackwateri őr"
 
 #: monsterlist_v069_npcs.json:blackwater_border_patrol
 msgid "Blackwater border patrol"
-msgstr ""
+msgstr "Blackwateri határőr"
 
 #: monsterlist_v069_npcs.json:harlenns_bodyguard
 msgid "Harlenn's bodyguard"
-msgstr ""
+msgstr "Harlenn testőre"
 
 #: monsterlist_v069_npcs.json:blackwater_chamber_guard
 msgid "Blackwater chamber guard"
-msgstr ""
+msgstr "Blackwateri kamraőr"
 
 #: monsterlist_v069_npcs.json:harlenn
 msgid "Harlenn"
@@ -32863,28 +33079,28 @@ msgstr "Throdna"
 
 #: monsterlist_v069_npcs.json:throdnas_guard
 msgid "Throdna's guard"
-msgstr ""
+msgstr "Throdna őre"
 
 #: monsterlist_v069_npcs.json:blackwater_mage
 msgid "Blackwater mage"
-msgstr ""
+msgstr "Blackwateri mágus"
 
 #: monsterlist_v0610_monsters1.json:young_larval_burrower
 msgid "Young larval burrower"
-msgstr ""
+msgstr "Fiatal lárva alakú földtúró"
 
 #: monsterlist_v0610_monsters1.json:larval_burrower
 msgid "Larval burrower"
-msgstr ""
+msgstr "Lárva alakú földtúró"
 
 #: monsterlist_v0610_monsters1.json:larval_boss
 #: monsterlist_v0611_monsters1.json:burrower_3
 msgid "Strong larval burrower"
-msgstr ""
+msgstr "Erős lárva alakú földtúró"
 
 #: monsterlist_v0610_monsters1.json:rivertroll
 msgid "River troll"
-msgstr ""
+msgstr "Folyami troll"
 
 #: monsterlist_v0610_monsters1.json:grass_ant
 msgid "Grasslands ant"
@@ -33064,7 +33280,7 @@ msgstr "Minarra"
 
 #: monsterlist_v0610_npcs1.json:puny_warehouserat
 msgid "Warehouse rat"
-msgstr ""
+msgstr "Raktári patkány"
 
 #: monsterlist_v0610_npcs1.json:rolwynn
 msgid "Rolwynn"
@@ -33128,57 +33344,57 @@ msgstr "Gauward"
 
 #: monsterlist_v0610_monsters2.json:iqhan_1a
 msgid "Iqhan worker thrall"
-msgstr ""
+msgstr "Iqhan munkás rabszolga"
 
 #: monsterlist_v0610_monsters2.json:iqhan_1b
 msgid "Iqhan thrall servant"
-msgstr ""
+msgstr "Iqhan rabszolga szolga"
 
 #: monsterlist_v0610_monsters2.json:iqhan_2a
 msgid "Iqhan guard thrall"
-msgstr ""
+msgstr "Iqhan őr rabszolga"
 
 #: monsterlist_v0610_monsters2.json:iqhan_2b
 msgid "Iqhan thrall"
-msgstr ""
+msgstr "Iqhan rabszolga"
 
 #: monsterlist_v0610_monsters2.json:iqhan_3a
 msgid "Iqhan warrior thrall"
-msgstr ""
+msgstr "Iqhan harcos rabszolga"
 
 #: monsterlist_v0610_monsters2.json:iqhan_3b
 #: monsterlist_v0610_monsters2.json:iqhan_4a
 #: monsterlist_v0610_monsters2.json:iqhan_4b
 msgid "Iqhan master"
-msgstr ""
+msgstr "Iqhan mester"
 
 #: monsterlist_v0610_monsters2.json:iqhan_ch_1a
 #: monsterlist_v0610_monsters2.json:iqhan_ch_1b
 msgid "Iqhan chaos evoker"
-msgstr ""
+msgstr "Iqhan káosz idéző"
 
 #: monsterlist_v0610_monsters2.json:iqhan_ch_2a
 #: monsterlist_v0610_monsters2.json:iqhan_ch_2b
 msgid "Iqhan chaos servant"
-msgstr ""
+msgstr "Iqhan káosz szolga"
 
 #: monsterlist_v0610_monsters2.json:iqhan_ch_3a
 #: monsterlist_v0610_monsters2.json:iqhan_ch_3b
 msgid "Iqhan chaos master"
-msgstr ""
+msgstr "Iqhan káosz mester"
 
 #: monsterlist_v0610_monsters2.json:iqhan_chb_1a
 #: monsterlist_v0610_monsters2.json:iqhan_chb_1b
 msgid "Iqhan chaos beast"
-msgstr ""
+msgstr "Iqhan káosz bestia"
 
 #: monsterlist_v0610_monsters2.json:iqhan_greeter
 msgid "Rancent"
-msgstr ""
+msgstr "Rancent"
 
 #: monsterlist_v0610_monsters2.json:iqhan_boss
 msgid "Iqhan chaos enslaver"
-msgstr ""
+msgstr "Iqhan káosz leigázó"
 
 #: monsterlist_v0611_monsters1.json:cbeetle_1
 msgid "Young carrion beetle"
@@ -33206,7 +33422,7 @@ msgstr "Szívós scaradon"
 
 #: monsterlist_v0611_monsters1.json:scaradon_5
 msgid "Hardshell scaradon"
-msgstr ""
+msgstr "Kemény héjú scaradon"
 
 #: monsterlist_v0611_monsters1.json:mwolf_1
 msgid "Mountain wolf pup"
@@ -33242,161 +33458,161 @@ msgstr "Kegyetlen hegyi farkas"
 
 #: monsterlist_v0611_monsters1.json:mbrute_1
 msgid "Young mountain brute"
-msgstr "Fiatal hegyi állat"
+msgstr "Fiatal hegyi fenevad"
 
 #: monsterlist_v0611_monsters1.json:mbrute_2
 msgid "Weak mountain brute"
-msgstr "Gyenge hegyi állat"
+msgstr "Gyenge hegyi fenevad"
 
 #: monsterlist_v0611_monsters1.json:mbrute_3
 msgid "Whitefur mountain brute"
-msgstr "Fehérszőrű hegyi állat"
+msgstr "Fehérszőrű hegyi fenevad"
 
 #: monsterlist_v0611_monsters1.json:mbrute_4
 msgid "Mountain brute"
-msgstr "Hegyi állat"
+msgstr "Hegyi fenevad"
 
 #: monsterlist_v0611_monsters1.json:mbrute_5
 msgid "Large mountain brute"
-msgstr "Nagy hegyi állat"
+msgstr "Nagy hegyi fenevad"
 
 #: monsterlist_v0611_monsters1.json:mbrute_6
 msgid "Fast mountain brute"
-msgstr "Gyors hegyi állat"
+msgstr "Gyors hegyi fenevad"
 
 #: monsterlist_v0611_monsters1.json:mbrute_7
 msgid "Quick mountain brute"
-msgstr "Fürge hegyi állat"
+msgstr "Fürge hegyi fenevad"
 
 #: monsterlist_v0611_monsters1.json:mbrute_8
 msgid "Aggressive mountain brute"
-msgstr "Agresszív hegyi állat"
+msgstr "Agresszív hegyi fenevad"
 
 #: monsterlist_v0611_monsters1.json:mbrute_9
 msgid "Strong mountain brute"
-msgstr "Erős hegyi állat"
+msgstr "Erős hegyi fenevad"
 
 #: monsterlist_v0611_monsters1.json:mbrute_10
 msgid "Tough mountain brute"
-msgstr "Szívós hegyi állat"
+msgstr "Szívós hegyi fenevad"
 
 #: monsterlist_v0611_monsters1.json:mbrute_11
 msgid "Fearless mountain brute"
-msgstr "Rettenthetetlen hegyi állat"
+msgstr "Rettenthetetlen hegyi fenevad"
 
 #: monsterlist_v0611_monsters1.json:mbrute_12
 msgid "Enraged mountain brute"
-msgstr "Feldühített hegyi állat"
+msgstr "Feldühített hegyi fenevad"
 
 #: monsterlist_v0611_monsters1.json:erumen_1
 msgid "Young erumen lizard"
-msgstr ""
+msgstr "Fiatal erumen gyík"
 
 #: monsterlist_v0611_monsters1.json:erumen_2
 msgid "Spotted erumen lizard"
-msgstr ""
+msgstr "Foltos erumen gyík"
 
 #: monsterlist_v0611_monsters1.json:erumen_3
 msgid "Erumen lizard"
-msgstr ""
+msgstr "Erumen gyík"
 
 #: monsterlist_v0611_monsters1.json:erumen_4
 msgid "Strong erumen lizard"
-msgstr ""
+msgstr "Erős erumen gyík"
 
 #: monsterlist_v0611_monsters1.json:erumen_5
 msgid "Vile erumen lizard"
-msgstr ""
+msgstr "Hitvány erumen gyík"
 
 #: monsterlist_v0611_monsters1.json:erumen_6
 msgid "Tough erumen lizard"
-msgstr ""
+msgstr "Szívós erumen gyík"
 
 #: monsterlist_v0611_monsters1.json:erumen_7
 msgid "Hardened erumen lizard"
-msgstr ""
+msgstr "Edzett erumen gyík"
 
 #: monsterlist_v0611_monsters1.json:plaguesp_1
 msgid "Puny plaguecrawler"
-msgstr ""
+msgstr "Vézna dögvésztetű"
 
 #: monsterlist_v0611_monsters1.json:plaguesp_2
 msgid "Plaguecrawler"
-msgstr ""
+msgstr "Dögvésztetű"
 
 #: monsterlist_v0611_monsters1.json:plaguesp_3
 msgid "Tough plaguecrawler"
-msgstr ""
+msgstr "Szívós dögvésztetű"
 
 #: monsterlist_v0611_monsters1.json:plaguesp_4
 msgid "Black plaguecrawler"
-msgstr ""
+msgstr "Fekete dögvésztetű"
 
 #: monsterlist_v0611_monsters1.json:plaguesp_5
 msgid "Plaguestrider"
-msgstr ""
+msgstr "Dögvészpók"
 
 #: monsterlist_v0611_monsters1.json:plaguesp_6
 msgid "Hardshell plaguestrider"
-msgstr ""
+msgstr "Kemény héjú dögvészpók"
 
 #: monsterlist_v0611_monsters1.json:plaguesp_7
 msgid "Tough plaguestrider"
-msgstr ""
+msgstr "Szívós dögvészpók"
 
 #: monsterlist_v0611_monsters1.json:plaguesp_8
 msgid "Wooly plaguestrider"
-msgstr ""
+msgstr "Gyapjas dögvészpók"
 
 #: monsterlist_v0611_monsters1.json:plaguesp_9
 msgid "Tough wooly plaguestrider"
-msgstr ""
+msgstr "Szívós gyapjas dögvészpók"
 
 #: monsterlist_v0611_monsters1.json:plaguesp_10
 msgid "Vile plaguestrider"
-msgstr ""
+msgstr "Hitvány dögvészpók"
 
 #: monsterlist_v0611_monsters1.json:plaguesp_11
 msgid "Nesting plaguestrider"
-msgstr ""
+msgstr "Fészekrakó dögvészpók"
 
 #: monsterlist_v0611_monsters1.json:plaguesp_12
 msgid "Plaguestrider servant"
-msgstr ""
+msgstr "Dögvészpók szolga"
 
 #: monsterlist_v0611_monsters1.json:plaguesp_13
 #: monsterlist_v0611_npcs2.json:plaguesp_cr
 msgid "Plaguestrider master"
-msgstr ""
+msgstr "Dögvészpók mester"
 
 #: monsterlist_v0611_monsters1.json:allaceph_1
 msgid "Young allaceph"
-msgstr ""
+msgstr "Fiatal allaceph"
 
 #: monsterlist_v0611_monsters1.json:allaceph_2
 msgid "Allaceph"
-msgstr ""
+msgstr "Allaceph"
 
 #: monsterlist_v0611_monsters1.json:allaceph_3
 msgid "Strong allaceph"
-msgstr ""
+msgstr "Erős allaceph"
 
 #: monsterlist_v0611_monsters1.json:allaceph_4
 msgid "Tough allaceph"
-msgstr ""
+msgstr "Szívós allaceph"
 
 #: monsterlist_v0611_monsters1.json:allaceph_5
 msgid "Radiant allaceph"
-msgstr ""
+msgstr "Sugárzó allaceph"
 
 #: monsterlist_v0611_monsters1.json:allaceph_6
 #: monsterlist_v0611_npcs2.json:allaceph_cr
 msgid "Ancient allaceph"
-msgstr ""
+msgstr "Ősi allaceph"
 
 #: monsterlist_v0611_monsters1.json:vaeregh_1
 msgid "Vaeregh"
-msgstr ""
+msgstr "Vaeregh"
 
 #: monsterlist_v0611_monsters1.json:irdegh_sp_1
 #: monsterlist_v0611_monsters1.json:irdegh_sp_2
@@ -33409,40 +33625,40 @@ msgstr "Irdegh"
 
 #: monsterlist_v0611_monsters1.json:irdegh_2
 msgid "Venomous irdegh"
-msgstr "Mérges Irdegh"
+msgstr "Mérges irdegh"
 
 #: monsterlist_v0611_monsters1.json:irdegh_3
 msgid "Piercing irdegh"
-msgstr ""
+msgstr "Dermesztő irdegh"
 
 #: monsterlist_v0611_monsters1.json:irdegh_4
 msgid "Ancient piercing irdegh"
-msgstr ""
+msgstr "Ősi dermesztő irdegh"
 
 #: monsterlist_v0611_monsters1.json:maonit_1
 msgid "Maonit troll"
-msgstr ""
+msgstr "Maonit troll"
 
 #: monsterlist_v0611_monsters1.json:maonit_2
 msgid "Giant maonit troll"
-msgstr ""
+msgstr "Óriás maonit troll"
 
 #: monsterlist_v0611_monsters1.json:maonit_3
 msgid "Strong maonit troll"
-msgstr ""
+msgstr "Erős maonit troll"
 
 #: monsterlist_v0611_monsters1.json:maonit_4
 msgid "Maonit brute"
-msgstr ""
+msgstr "Maonit fenevad"
 
 #: monsterlist_v0611_monsters1.json:maonit_5
 msgid "Tough maonit brute"
-msgstr ""
+msgstr "Szívós maonit fenevad"
 
 #: monsterlist_v0611_monsters1.json:maonit_6
 #: monsterlist_v0611_npcs2.json:maonit_cr
 msgid "Strong maonit brute"
-msgstr ""
+msgstr "Erős maonit fenevad"
 
 #: monsterlist_v0611_monsters1.json:arulir_1
 msgid "Arulir"
@@ -33454,20 +33670,20 @@ msgstr "Óriás arulir"
 
 #: monsterlist_v0611_monsters1.json:burrower_1
 msgid "Larval cave burrower"
-msgstr ""
+msgstr "Lárva alakú barlangi földtúró"
 
 #: monsterlist_v0611_monsters1.json:burrower_2
 msgid "Cave burrower"
-msgstr ""
+msgstr "Barlangi földtúró"
 
 #: monsterlist_v0611_monsters1.json:burrower_4
 #: monsterlist_v0611_npcs2.json:burrower_cr
 msgid "Giant larval burrower"
-msgstr ""
+msgstr "Óriás lárva alakú földtúró"
 
 #: monsterlist_v0611_npcs1.json:ulirfendor
 msgid "Ulirfendor"
-msgstr ""
+msgstr "Ulirfendor"
 
 #: monsterlist_v0611_npcs1.json:gylew
 msgid "Gylew"
@@ -33483,7 +33699,7 @@ msgstr "Toszylae"
 
 #: monsterlist_v0611_npcs1.json:toszylae_guard
 msgid "Radiant guardian"
-msgstr ""
+msgstr "Sugárzó őrző"
 
 #: monsterlist_v0611_npcs1.json:thorin
 msgid "Thorin"
@@ -33499,7 +33715,7 @@ msgstr "Algangror"
 
 #: monsterlist_v0611_npcs1.json:remgard_bridge
 msgid "Bridge lookout"
-msgstr ""
+msgstr "Híd megfigyelő"
 
 #: monsterlist_v0611_npcs2.json:ingus
 msgid "Ingus"
@@ -33678,56 +33894,56 @@ msgstr "Gonosz vörös lábú bestia"
 
 #: monsterlist_v070_charwood.json:ccentip0
 msgid "Carrion centipede"
-msgstr ""
+msgstr "Dög százlábú"
 
 #: monsterlist_v070_charwood.json:ccentip1
 msgid "Ravenous carrion centipede"
-msgstr ""
+msgstr "Falánk dög százlábú"
 
 #: monsterlist_v070_charwood.json:ccentip2
 msgid "Bloated carrion centipede"
-msgstr ""
+msgstr "Dagadt dög százlábú"
 
 #: monsterlist_v070_charwood.json:charwdg1
 msgid "Puny Charwood goblin"
-msgstr ""
+msgstr "Vézna charwoodi kobold"
 
 #: monsterlist_v070_charwood.json:charwdg2
 msgid "Charwood goblin scout"
-msgstr ""
+msgstr "Charwoodi kobold felderítő"
 
 #: monsterlist_v070_charwood.json:charwdg3
 msgid "Starving Charwood goblin"
-msgstr ""
+msgstr "Éhező charwoodi kobold"
 
 #: monsterlist_v070_charwood.json:charwdg4
 #: monsterlist_v070_charwood.json:charwdgg
 msgid "Charwood goblin"
-msgstr ""
+msgstr "Charwoodi kobold"
 
 #: monsterlist_v070_charwood.json:charwdg5
 msgid "Charwood goblin fighter"
-msgstr ""
+msgstr "Charwoodi kobold harcos"
 
 #: monsterlist_v070_charwood.json:charwdg6
 msgid "Tough Charwood goblin"
-msgstr ""
+msgstr "Szívós charwoodi kobold"
 
 #: monsterlist_v070_charwood.json:charwdg7
 msgid "Aggressive Charwood goblin"
-msgstr ""
+msgstr "Agresszív charwoodi kobold"
 
 #: monsterlist_v070_charwood.json:charwdg8
 msgid "Strong Charwood goblin"
-msgstr ""
+msgstr "Erős charwoodi kobold"
 
 #: monsterlist_v070_charwood2.json:mazarth1
 msgid "Mazarth beast"
-msgstr ""
+msgstr "Mazarth bestia"
 
 #: monsterlist_v070_charwood2.json:mazarth2
 msgid "Tough mazarth beast"
-msgstr ""
+msgstr "Szívós mazarth bestia"
 
 #: monsterlist_v070_charwood2.json:ashs1
 msgid "Weeping ash spectre"
@@ -33759,83 +33975,83 @@ msgstr "Edzett hamvas vízköpő"
 
 #: monsterlist_v070_charwood2.json:ash5
 msgid "Young ash spawn"
-msgstr ""
+msgstr "Fiatal hamvas ivadék"
 
 #: monsterlist_v070_charwood2.json:ash6
 msgid "Ash spawn"
-msgstr ""
+msgstr "Hamvas ivadék"
 
 #: monsterlist_v070_charwood2.json:ash7
 msgid "Tough ash spawn"
-msgstr ""
+msgstr "Szívós hamvas ivadék"
 
 #: monsterlist_v070_charwood2.json:fire1
 msgid "Glowing abcess"
-msgstr ""
+msgstr "Izzó tályog"
 
 #: monsterlist_v070_charwood2.json:fire2
 msgid "Blazing abcess"
-msgstr ""
+msgstr "Lángoló tályog"
 
 #: monsterlist_v070_charwood2.json:fire3
 msgid "Lava spawn"
-msgstr ""
+msgstr "Láva ivadék"
 
 #: monsterlist_v070_charwood2.json:fire4
 msgid "Tough lava spawn"
-msgstr ""
+msgstr "Szívós láva ivadék"
 
 #: monsterlist_v070_charwood2.json:fire5
 msgid "Glowing flame"
-msgstr ""
+msgstr "Izzó láng"
 
 #: monsterlist_v070_charwood2.json:fire6
 msgid "Flame spawn"
-msgstr ""
+msgstr "Láng ivadék"
 
 #: monsterlist_v070_charwood2.json:fire7
 msgid "Walking flame"
-msgstr ""
+msgstr "Sétáló láng"
 
 #: monsterlist_v070_charwood2.json:fire8
 msgid "Walking inferno"
-msgstr ""
+msgstr "Sétáló pokol"
 
 #: monsterlist_v070_charwood2.json:fire9
 msgid "Ancient walking inferno"
-msgstr ""
+msgstr "Ősi sétáló pokol"
 
 #: monsterlist_v070_charwood2.json:thukuzun
 msgid "Thukuzun"
-msgstr ""
+msgstr "Thukuzun"
 
 #: monsterlist_v070_lodar1cave.json:mudfiend1
 msgid "Mudfiend"
-msgstr ""
+msgstr "Sárördög"
 
 #: monsterlist_v070_lodar1cave.json:mudfiend2
 msgid "Tough mudfiend"
-msgstr ""
+msgstr "Szívós sárördög"
 
 #: monsterlist_v070_lodar5cave.json:caveburr1
 msgid "Young poisonous cave burrower"
-msgstr ""
+msgstr "Fiatal mérges barlangi földtúró"
 
 #: monsterlist_v070_lodar5cave.json:caveburr2
 msgid "Infected larval cave burrower"
-msgstr ""
+msgstr "Fertőzött lárva alakú barlangi földtúró"
 
 #: monsterlist_v070_lodar5cave.json:caveburr3
 msgid "Poisonous cave burrower"
-msgstr ""
+msgstr "Mérges barlangi földtúró"
 
 #: monsterlist_v070_lodar5cave.json:caveburr4
 msgid "Strong poisonous cave burrower"
-msgstr ""
+msgstr "Erős mérges barlangi földtúró"
 
 #: monsterlist_v070_lodar5cave.json:caveburr5
 msgid "Giant poisonous cave burrower"
-msgstr ""
+msgstr "Óriás mérges barlangi földtúró"
 
 #: monsterlist_v070_lodar5cave.json:cavebat1
 msgid "Gray cave bat"
@@ -33863,7 +34079,7 @@ msgstr "Hirathil ivadék"
 
 #: monsterlist_v070_lodarcave.json:hirathil1
 msgid "Aggressive hirathil ghost"
-msgstr "Agresszív Hirathil szellem"
+msgstr "Agresszív hirathil szellem"
 
 #: monsterlist_v070_lodarcave.json:hirathil2
 msgid "Hirathil ghost"
@@ -33871,11 +34087,11 @@ msgstr "Hirathil szellem"
 
 #: monsterlist_v070_lodarcave.json:hirathil3
 msgid "Ferocious hirathil ghost"
-msgstr "Kegyetlen Hirathil szellem"
+msgstr "Kegyetlen hirathil szellem"
 
 #: monsterlist_v070_lodarcave.json:hirathil4
 msgid "Restless hirathil ghost"
-msgstr "Nyughatatlan Hirathil szellem"
+msgstr "Nyughatatlan hirathil szellem"
 
 #: monsterlist_v070_lodarcave.json:hirathil5
 msgid "Hirathil servant"
@@ -33887,7 +34103,7 @@ msgstr "Hirathil mester"
 
 #: monsterlist_v070_lodarcave.json:hirathil7
 msgid "Ancient hirathil ghost"
-msgstr "Ősi Hirathil szellem"
+msgstr "Ősi hirathil szellem"
 
 #: monsterlist_v070_lodarcave.json:hirazinn
 msgid "Hira'zinn"
@@ -33899,7 +34115,7 @@ msgstr "Óriás trágyalégy"
 
 #: monsterlist_v070_lodarmaze.json:dungfly2
 msgid "Aggressive dungfly"
-msgstr ""
+msgstr "Agresszív trágyalégy"
 
 #: monsterlist_v070_lodarmaze.json:dungfly3
 msgid "Vicious dungfly"
@@ -33943,159 +34159,159 @@ msgstr "Acélt rejtő szarvas bokaharapó"
 
 #: monsterlist_v070_lodarmaze.json:erumen_8
 msgid "Young erumen forest lizard"
-msgstr ""
+msgstr "Fiatal erumen erdei gyík"
 
 #: monsterlist_v070_lodarmaze.json:erumen_9
 msgid "Erumen forest lizard"
-msgstr ""
+msgstr "Erumen erdei gyík"
 
 #: monsterlist_v070_lodarmaze.json:erumen_10
 msgid "Erumen forest lizard matriarch"
-msgstr ""
+msgstr "Erumen erdei gyík matriarka"
 
 #: monsterlist_v070_lodarmaze.json:zortak1
 msgid "Zortak scout"
-msgstr ""
+msgstr "Zortak felderítő"
 
 #: monsterlist_v070_lodarmaze.json:zortak2
 msgid "Zortak fighter"
-msgstr ""
+msgstr "Zortak harcos"
 
 #: monsterlist_v070_lodarmaze.json:zortak3
 msgid "Zortak guard"
-msgstr ""
+msgstr "Zortak őr"
 
 #: monsterlist_v070_lodarmaze.json:zortak4
 msgid "Zortak barbarian"
-msgstr ""
+msgstr "Zortak barbár"
 
 #: monsterlist_v070_lodarmaze.json:zortakb
 msgid "Zortak leader"
-msgstr ""
+msgstr "Zortak vezér"
 
 #: monsterlist_v070_lodarmaze.json:yjacket1
 msgid "Puny yellowjacket"
-msgstr ""
+msgstr "Vézna kecskedarázs"
 
 #: monsterlist_v070_lodarmaze.json:yjacket2
 msgid "Small yellowjacket"
-msgstr ""
+msgstr "Kicsi kecskedarázs"
 
 #: monsterlist_v070_lodarmaze.json:yjacket3
 msgid "Swarming yellowjacket"
-msgstr ""
+msgstr "Rajzó kecskedarázs"
 
 #: monsterlist_v070_lodarmaze.json:yjacket4
 msgid "Stinging yellowjacket"
-msgstr ""
+msgstr "Fullánkos kecskedarázs"
 
 #: monsterlist_v070_lodarmaze.json:yjacket5
 msgid "Quick yellowjacket"
-msgstr ""
+msgstr "Gyors kecskedarázs"
 
 #: monsterlist_v070_lodarmaze.json:yjacket6
 msgid "Aggressive yellowjacket"
-msgstr ""
+msgstr "Agresszív kecskedarázs"
 
 #: monsterlist_v070_lodarmaze.json:yjacket7
 msgid "Enraged yellowjacket"
-msgstr ""
+msgstr "Feldühített kecskedarázs"
 
 #: monsterlist_v070_lodarmaze.json:yjacket8
 msgid "Giant yellowjacket"
-msgstr ""
+msgstr "Óriás kecskedarázs"
 
 #: monsterlist_v070_lodarmaze.json:yjacket9
 msgid "Yellowjacket queen"
-msgstr ""
+msgstr "Kecskedarázs királynő"
 
 #: monsterlist_v070_lodarmaze.json:vscale1
 msgid "Puny venomscale"
-msgstr ""
+msgstr "Vézna mérgespikkelyes"
 
 #: monsterlist_v070_lodarmaze.json:vscale2
 msgid "Young venomscale"
-msgstr ""
+msgstr "Fiatal mérgespikkelyes"
 
 #: monsterlist_v070_lodarmaze.json:vscale3
 msgid "Gray venomscale"
-msgstr ""
+msgstr "Szürke mérgespikkelyes"
 
 #: monsterlist_v070_lodarmaze.json:vscale4
 msgid "Aggressive venomscale"
-msgstr ""
+msgstr "Agresszív mérgespikkelyes"
 
 #: monsterlist_v070_lodarmaze.json:vscale5
 msgid "Quick venomscale"
-msgstr ""
+msgstr "Gyors mérgespikkelyes"
 
 #: monsterlist_v070_lodarmaze.json:vscale6
 msgid "Vicious venomscale"
-msgstr ""
+msgstr "Gonosz mérgespikkelyes"
 
 #: monsterlist_v070_lodarmaze.json:vscale7
 msgid "Strong venomscale"
-msgstr ""
+msgstr "Erős mérgespikkelyes"
 
 #: monsterlist_v070_lodarmaze.json:vscale8
 msgid "Tough venomscale"
-msgstr ""
+msgstr "Szívós mérgespikkelyes"
 
 #: monsterlist_v070_lodarmaze.json:vscaleb1
 msgid "Breeder of venomscale"
-msgstr ""
+msgstr "Mérgespikkelyes tenyésztője"
 
 #: monsterlist_v070_lodarmaze.json:vscaleb2
 msgid "Venomscale master"
-msgstr ""
+msgstr "Mérgespikkelyes mester"
 
 #: monsterlist_v070_lodarmaze.json:morkin1
 msgid "Morkin lookout"
-msgstr ""
+msgstr "Morkin megfigyelő"
 
 #: monsterlist_v070_lodarmaze.json:morkin2
 msgid "Morkin scout"
-msgstr ""
+msgstr "Morkin felderítő"
 
 #: monsterlist_v070_lodarmaze.json:morkin3
 msgid "Morkin fighter"
-msgstr ""
+msgstr "Morkin harcos"
 
 #: monsterlist_v070_lodarmaze.json:morkin4
 msgid "Morkin guard"
-msgstr ""
+msgstr "Morkin őr"
 
 #: monsterlist_v070_lodarmaze.json:morkin5
 msgid "Morkin berserker"
-msgstr ""
+msgstr "Morkin dühödt harcos"
 
 #: monsterlist_v070_lodarmaze.json:morkin6
 msgid "Morkin leader"
-msgstr ""
+msgstr "Morkin vezér"
 
 #: monsterlist_v070_lodarmaze.json:morkin_cr
 msgid "Morkin elder"
-msgstr ""
+msgstr "Morkin öreg"
 
 #: monsterlist_v070_lodarmaze.json:lbridge
 msgid "Guardian of the bridge"
-msgstr ""
+msgstr "A híd őrzője"
 
 #: monsterlist_v070_lodarmaze.json:khakin1
 msgid "Khakin spawn"
-msgstr ""
+msgstr "Khakin ivadék"
 
 #: monsterlist_v070_lodarmaze.json:khakin2
 msgid "Aggressive khakin beast"
-msgstr ""
+msgstr "Agresszív khakin bestia"
 
 #: monsterlist_v070_lodarmaze.json:khakin3
 msgid "Tough khakin beast"
-msgstr ""
+msgstr "Szívós khakin bestia"
 
 #: monsterlist_v070_lodarmaze.json:khakin4
 msgid "Strong khakin beast"
-msgstr ""
+msgstr "Erős khakin bestia"
 
 #: monsterlist_v070_lodarmaze.json:cryptmist1
 msgid "Thin mist of the crypt"
@@ -34127,7 +34343,7 @@ msgstr "Csótány"
 
 #: monsterlist_v070_lodarnpcs.json:lodar0_g
 msgid "Forest guardian"
-msgstr ""
+msgstr "Erdei őrző"
 
 #: monsterlist_v070_lodarnpcs.json:lodar_fg1
 msgid "Feygard guard"
@@ -34139,7 +34355,7 @@ msgstr "Kóborló feygardi őr"
 
 #: monsterlist_v070_lodarnpcs.json:lodar_fg3
 msgid "Afflicted Feygard guard"
-msgstr ""
+msgstr "Megszállt feygardi őr"
 
 #: monsterlist_v070_lodarnpcs.json:lodar_fg4
 msgid "Insane Feygard guard"
@@ -34147,7 +34363,7 @@ msgstr "Őrült feygardi őr"
 
 #: monsterlist_v070_oldcave.json:zombie1
 msgid "Rancid zombie"
-msgstr ""
+msgstr "Avas zombi"
 
 #: monsterlist_v070_oldcave.json:zombie2
 msgid "Rotting zombie"
@@ -34155,47 +34371,47 @@ msgstr "Rothadó zombi"
 
 #: monsterlist_v070_oldcave.json:zombie3
 msgid "Blighted zombie"
-msgstr ""
+msgstr "Kiégett zombi"
 
 #: monsterlist_v070_oldcave.json:oldcaveboss
 msgid "Dread zombie"
-msgstr ""
+msgstr "Rémült zombi"
 
 #: monsterlist_v070_oldcave.json:zombie5
 msgid "Corrupted zombie"
-msgstr ""
+msgstr "Sérült zombi"
 
 #: monsterlist_v070_oldcave.json:zombie6
 msgid "Bloodthirsty zombie"
-msgstr ""
+msgstr "Vérszomjas zombi"
 
 #: monsterlist_v070_oldcave.json:zombie7
 msgid "Tainted zombie"
-msgstr ""
+msgstr "Fertőzött zombi"
 
 #: monsterlist_v070_roadcave.json:jelly1
 msgid "Olive ooze"
-msgstr ""
+msgstr "Olíva iszap"
 
 #: monsterlist_v070_roadcave.json:jelly2
 msgid "Emerald jelly"
-msgstr ""
+msgstr "Smaragd zselé"
 
 #: monsterlist_v070_roadcave.json:jelly3
 msgid "Poisonous ooze"
-msgstr ""
+msgstr "Mérgező iszap"
 
 #: monsterlist_v070_roadcave.json:jelly4
 msgid "Ochre jelly"
-msgstr ""
+msgstr "Okker zselé"
 
 #: monsterlist_v070_roadcave.json:jelly5
 msgid "Crimson jelly"
-msgstr ""
+msgstr "Karmazsin zselé"
 
 #: monsterlist_v070_roadcave.json:jelly6
 msgid "Emerald ooze"
-msgstr ""
+msgstr "Smaragd iszap"
 
 #: monsterlist_v070_npcs.json:agthor
 msgid "Agthor"
@@ -34271,7 +34487,7 @@ msgstr "Maevalia"
 #: monsterlist_v070_npcs.json:smuggler6
 #: monsterlist_v070_npcs.json:smuggler7
 msgid "Outcast"
-msgstr ""
+msgstr "Csavargó"
 
 #: monsterlist_v070_npcs.json:tiqui
 msgid "Tiqui"
@@ -34279,11 +34495,11 @@ msgstr "Tiqui"
 
 #: monsterlist_v070_npcs.json:twoteeth
 msgid "Two-teeth"
-msgstr ""
+msgstr "Kétfogú"
 
 #: monsterlist_pathway_fallhaven.json:guard_pathway
 msgid "Watchman"
-msgstr ""
+msgstr "Őrszem"
 
 #: monsterlist_pathway_fallhaven.json:wolf_leader
 msgid "Korvan the leader of the wolves"
@@ -34328,7 +34544,7 @@ msgstr "Stoutfordi őr"
 
 #: monsterlist_stoutford.json:stoutford_builder
 msgid "Builder"
-msgstr ""
+msgstr "Építő"
 
 #: monsterlist_stoutford.json:stoutford_widow
 #: monsterlist_stoutford.json:stoutford_widow2
@@ -34346,32 +34562,32 @@ msgstr "Kecske"
 
 #: monsterlist_stoutford.json:venomfang_1
 msgid "Venomfang"
-msgstr ""
+msgstr "Méregfogú"
 
 #: monsterlist_stoutford.json:stoutford_cottager
 msgid "Cottager"
-msgstr ""
+msgstr "Kunyhólakó"
 
 #: monsterlist_stoutford.json:stoutford_cook
 msgid "Cadoren"
-msgstr ""
+msgstr "Cadoren"
 
 #: monsterlist_stoutford.json:stoutford_innkeeper
 msgid "Glasforn"
-msgstr ""
+msgstr "Glasforn"
 
 #: monsterlist_stoutford.json:stoutford_thief
 msgid "Quiet thief"
-msgstr ""
+msgstr "Csendes tolvaj"
 
 #: monsterlist_stoutford.json:stoutford_drinker_1
 #: monsterlist_stoutford.json:stoutford_drinker_2
 msgid "Customer"
-msgstr ""
+msgstr "Ügyfél"
 
 #: monsterlist_stoutford.json:stoutford_smith
 msgid "Cornith"
-msgstr ""
+msgstr "Cornith"
 
 #: monsterlist_stoutford.json:stoutford_worshiper
 msgid "Praying woman"
@@ -34379,36 +34595,36 @@ msgstr "Imádkozó nő"
 
 #: monsterlist_stoutford.json:stoutford_lich
 msgid "Eliszylae"
-msgstr ""
+msgstr "Eliszylae"
 
 #: monsterlist_graveyard1.json:graveyard_traveler
 msgid "Waterway traveler"
-msgstr ""
+msgstr "Waterway-i utazó"
 
 #: monsterlist_graveyard1.json:algore
 msgid "Hagale"
-msgstr ""
+msgstr "Hagale"
 
 #: monsterlist_graveyard1.json:graveyardking
 msgid "Graveyard king"
-msgstr ""
+msgstr "Temetői király"
 
 #: monsterlist_graveyard1.json:graveyard_corpse
 msgid "Graveyard corpse"
-msgstr ""
+msgstr "Temetői hulla"
 
 #: monsterlist_graveyard1.json:graveyard_corpse2
 #: monsterlist_graveyard1.json:graveyard_corpse3
 msgid "Angry graveyard corpse"
-msgstr ""
+msgstr "Mérges temetői hulla"
 
 #: monsterlist_graveyard1.json:waterwayamushroom
 msgid "Creeping fungus"
-msgstr ""
+msgstr "Csúszómászó tapló"
 
 #: monsterlist_graveyard1.json:waterwayacaterpillar
 msgid "Aggressive caterpillar"
-msgstr ""
+msgstr "Agresszív hernyó"
 
 #: monsterlist_graveyard1.json:waterwayhermit
 msgid "Cithurn"
@@ -34416,15 +34632,15 @@ msgstr "Cithurn"
 
 #: monsterlist_graveyard1.json:tesrekan
 msgid "Tesrekan"
-msgstr ""
+msgstr "Tesrekan"
 
 #: monsterlist_graveyard1.json:waterwaycavebeast
 msgid "Cave gargoyle"
-msgstr ""
+msgstr "Barlangi vízköpő"
 
 #: monsterlist_graveyard1.json:waterwaycaverockmonster
 msgid "Rock fiend"
-msgstr ""
+msgstr "Sziklaördög"
 
 #: monsterlist_graveyard1.json:cithurncat
 msgid "Cithurn's cat"
@@ -34432,7 +34648,7 @@ msgstr "Cithurn macskája"
 
 #: monsterlist_graveyard1.json:aemens
 msgid "Aemens"
-msgstr ""
+msgstr "Aemens"
 
 #: monsterlist_graveyard1.json:taret
 msgid "Taret"
@@ -34440,11 +34656,11 @@ msgstr "Taret"
 
 #: monsterlist_graveyard1.json:throthaus
 msgid "Throthaus"
-msgstr ""
+msgstr "Throthaus"
 
 #: monsterlist_graveyard1.json:tesrekan_guardian
 msgid "Dread guardian"
-msgstr ""
+msgstr "Rémült őrző"
 
 #: monsterlist_graveyard1.json:revenant_servant
 msgid "Revenant servant"
@@ -34468,7 +34684,7 @@ msgstr "Feygardi útőr"
 
 #: monsterlist_guynmart.json:guynmart_farmer
 msgid "Rhodita"
-msgstr ""
+msgstr "Rhodita"
 
 #: monsterlist_guynmart.json:guynmart_guard_guide
 #: monsterlist_guynmart.json:guynmart_gguard
@@ -34495,7 +34711,7 @@ msgstr "Olav"
 #: monsterlist_guynmart.json:guynmart_pguard2
 #: monsterlist_guynmart.json:guynmart_pguard3
 msgid "Guynmart elite guard"
-msgstr ""
+msgstr "Guynmarti elit őr"
 
 #: monsterlist_guynmart.json:guynmart_cguard
 #: monsterlist_guynmart.json:guynmart_cguard2
@@ -34539,7 +34755,7 @@ msgstr "Szolga"
 
 #: monsterlist_guynmart.json:guynmart_maid
 msgid "Maid"
-msgstr ""
+msgstr "Cselédlány"
 
 #: monsterlist_guynmart.json:guynmart_nuik
 msgid "Nuik"
@@ -34563,15 +34779,15 @@ msgstr "Lovis"
 #: monsterlist_guynmart.json:guynmart_mare0
 #: monsterlist_guynmart.json:guynmart_mare
 msgid "Nightmare"
-msgstr ""
+msgstr "Rémálom"
 
 #: monsterlist_guynmart.json:guynmart_tort1
 msgid "Torturer"
-msgstr ""
+msgstr "Kínzó"
 
 #: monsterlist_guynmart.json:guynmart_tort2
 msgid "Assistent torturer"
-msgstr ""
+msgstr "Helyettes kínzó"
 
 #: monsterlist_guynmart.json:guynmart
 msgid "Guynmart"
@@ -34584,27 +34800,27 @@ msgstr "Pásztor"
 
 #: monsterlist_guynmart.json:guynmart_child
 msgid "Stuephant"
-msgstr ""
+msgstr "Stuephant"
 
 #: monsterlist_guynmart.json:guynmart_marble1
 msgid "Green marble"
-msgstr ""
+msgstr "Zöld üveggolyó"
 
 #: monsterlist_guynmart.json:guynmart_marble2
 msgid "Red marble"
-msgstr ""
+msgstr "Piros üveggolyó"
 
 #: monsterlist_guynmart.json:guynmart_marble3
 msgid "Pink marble"
-msgstr ""
+msgstr "Rózsaszín üveggolyó"
 
 #: monsterlist_guynmart.json:guynmart_marble4
 msgid "Golden marble"
-msgstr ""
+msgstr "Arany üveggolyó"
 
 #: monsterlist_guynmart.json:guynmart_marble5
 msgid "Pearl white marble"
-msgstr ""
+msgstr "Gyöngyfehér üveggolyó"
 
 #: monsterlist_guynmart.json:guynmart_reward1
 msgid "Gold"
@@ -34636,7 +34852,7 @@ msgstr "Kazamata patkány"
 #: monsterlist_guynmart.json:guynmart_fish1
 #: monsterlist_guynmart.json:guynmart_fish2
 msgid "Fish"
-msgstr "hal"
+msgstr "Hal"
 
 #: monsterlist_guynmart.json:guynmart_dog_puppy
 msgid "Cute dog puppy"
@@ -34683,7 +34899,7 @@ msgstr "Barlangi troll sámán"
 
 #: monsterlist_stoutford_combined.json:cave_troll_5
 msgid "Cave troll leader"
-msgstr ""
+msgstr "Barlangi troll vezér"
 
 #: monsterlist_stoutford_combined.json:lakecave2_key
 #: monsterlist_stoutford_combined.json:lakecave2_key2
@@ -34734,7 +34950,7 @@ msgstr "Szakács"
 
 #: monsterlist_stoutford_combined.json:erwyn_commander
 msgid "Karth the Unbowed"
-msgstr ""
+msgstr "Karth, a veretlen"
 
 #: monsterlist_stoutford_combined.json:erwyn
 #: monsterlist_stoutford_combined.json:erwyn2
@@ -34755,7 +34971,7 @@ msgstr "Fiatal férfi"
 
 #: monsterlist_stoutford_combined.json:berbane
 msgid "Lord Berbane"
-msgstr ""
+msgstr "Berbane nagyúr"
 
 #: monsterlist_stoutford_combined.json:stoutford_old_woman
 msgid "Croaklear"
@@ -34792,7 +35008,7 @@ msgstr "Gyra"
 #: monsterlist_stoutford_combined.json:stn_colonel
 #: questlist_stoutford_combined.json:stn_colonel
 msgid "Colonel Lutarc"
-msgstr ""
+msgstr "Lutarc ezredes"
 
 #: monsterlist_stoutford_combined.json:stn_colonel_mons1
 #: monsterlist_stoutford_combined.json:stn_lizard
@@ -34801,7 +35017,7 @@ msgstr "Gyík"
 
 #: monsterlist_stoutford_combined.json:stn_colonel_mons4
 msgid "Giant serpent"
-msgstr ""
+msgstr "Óriáskígyó"
 
 #: monsterlist_stoutford_combined.json:stn_colonel_mons5
 msgid "Bully"
@@ -34816,11 +35032,11 @@ msgstr ""
 #: monsterlist_stoutford_combined.json:stn_boralla6
 #: monsterlist_stoutford_combined.json:stn_boralla7
 msgid "Boralla"
-msgstr ""
+msgstr "Boralla"
 
 #: monsterlist_stoutford_combined.json:blornvale_wolf
 msgid "Great dark wolf"
-msgstr ""
+msgstr "Nagy sötét farkas"
 
 #: monsterlist_stoutford_combined.json:none
 msgid "none"
@@ -34856,7 +35072,9 @@ msgstr "Bucus megengedte, hogy lemenjek a felnyitható ajtón át az elhagyatott
 
 #: questlist.json:andor:51
 msgid "Umar in the Fallhaven Thieves' Guild recognized me, but must have me confused with Andor. Apparently, Andor has been to see him."
-msgstr "Umar a fallhaveni Tolvajok Céhében felismert engem, de összekevert Andorral. Andor kétségtelenül ott volt, és őt látta."
+msgstr ""
+"Umar a fallhaveni Tolvajok Céhében felismert engem, de bizonyára összekevert "
+"Andorral. Andor kétségtelenül ott volt, és őt látta."
 
 #: questlist.json:andor:55
 msgid "Umar told me that Andor went to see a potion maker called Lodar. I should search for his hideaway."
@@ -34865,14 +35083,28 @@ msgstr "Umar azt mondta, hogy Andor elment megkeresni egy italkészítőt, akit 
 #: questlist.json:andor:61
 msgid "I heard a story in Loneford, where it seemed like Andor had been in Loneford, and that he might have had something to do with the illness that the people are suffering from there. I am not sure if it actually was Andor. If it was Andor, why would he have made the people of Loneford ill?"
 msgstr ""
+"Hallottam egy történetet Lonefordban, ahol úgy tűnt, mintha Andor "
+"Lonefordban járt volna, és talán valami köze lehetett ahhoz a betegséghez, "
+"amitől az emberek szenvednek ott. Nem vagyok biztos abban, hogy tényleg "
+"Andor volt az. Ha Andor volt, akkor miért betegítette meg a lonefordi "
+"embereket?"
 
 #: questlist.json:andor:70
 msgid "I have found the potion-maker Lodar, and heard his story about Andor. Andor went to visit Lodar in his hideaway to get a sample of something called Narwood extract. Lodar happened to notice that there was someone travelling together with Andor, that hid among the trees and did not seem to want Lodar to spot him."
 msgstr ""
+"Megtaláltam az italkészítő Lodart, és meghallgattam a történetét Andorról. "
+"Andor elment meglátogatni Lodart a rejtekhelyén, hogy szerezzen egy mintát "
+"valami narfa nevű kivonatból. Lodar véletlenül észrevette, hogy volt valaki, "
+"aki együtt utazott Andorral. A fák mögött rejtőzött, és valószínűleg nem "
+"akarta, hogy Lodar észrevegye."
 
 #: questlist.json:andor:71
 msgid "Shortly after Andor and the person he was travelling with had left, strange things started to happen in the woods around Lodar's hideaway, and Lodar himself seemed to be affected by it somehow. Lodar believes that something disturbed the tomb below his cabin, and awoke the Hira'zinn."
 msgstr ""
+"Nem sokkal azután, hogy Andor és a vele utazó személy elmentek, furcsa "
+"dolgok kezdtek történni a Lodar rejtekhelye körüli fák között, és úgy tűnt, "
+"hogy magát Lodart is érintette valahogy. Lodar azt hiszi, hogy valami "
+"háborgatta a kunyhója alatti sírt, és felébresztette a Hira'zinnt."
 
 #: questlist.json:andor:72
 msgid "Since I helped Lodar defeat the Hira'zinn, he promised to help me in return. He gave me a piece of paper that should allow me to enter the Valanyr temple of the Shadow in Nor City. He told me to seek out lady Lydalon in the temple for further assistance."
@@ -35226,23 +35458,38 @@ msgstr "Umar azt mondta, hogy el kell mennem meglátogatni valakit Vilegardban, 
 
 #: questlist_v068.json:lodar:20
 msgid "I have visited Ogam in southwest Vilegard. He was talking in what seemed like riddles. I could barely make out some details when I asked about Lodar's hideaway. 'Halfway between the Shadow and the light. Rocky formations.' and the words 'Glow of the Shadow.' were among the things he said. I am not sure what they mean."
-msgstr "Meglátogattam Ogamot Vilegard délnyugati részén. Oly módon beszélt, mintha rejtvényeket adna. Alig tudtam kivenni néhány részletet, amikor Lodar búvóhelyéről kérdeztem. „Félúton az Árny és a fény között. Sziklás képződmények.” és az „Az Árny ragyogása.” voltak azok között, amiket mondott. Nem vagyok biztos benne, hogy mit jelentenek."
+msgstr ""
+"Meglátogattam Ogamot Vilegard délnyugati részén. Oly módon beszélt, mintha "
+"rejtvényeket adna. Alig tudtam kivenni néhány részletet, amikor Lodar "
+"rejtekhelyéről kérdeztem. „Félúton az Árny és a fény között. Sziklás "
+"képződmények.” és az „Az Árny ragyogása.” voltak azok között, amiket "
+"mondott. Nem vagyok biztos benne, hogy mit jelentenek."
 
 #: questlist_v068.json:lodar:30
 msgid "I have found a formation of rocks on the Duleian Road. It does not look like they were naturally placed, but rather that they are meant to symbolize something."
 msgstr ""
+"Találtam egy sziklákból álló képződményt a Duleian úton. Nem úgy tűnt, "
+"mintha természetesen került volna oda, hanem inkább azt jelentette, hogy "
+"jelképeznek valamit."
 
 #: questlist_v068.json:lodar:31
 msgid "Could this be the 'rocky formation' that the old man Ogam mentioned? If that is the case, then this might be a clue as to where Andor went."
 msgstr ""
+"Ez lenne az a „sziklás képződmény”, amit az az öregember, Ogam említett? Ha "
+"ez az eset áll fenn, akkor ez lehet egy nyom, hogy Andor merre ment."
 
 #: questlist_v068.json:lodar:40
 msgid "In the woods close to the rocky formation, I encountered a creature blocking the way into the forest."
 msgstr ""
+"A sziklás képződményhez közeli fák között találkoztam egy lénnyel, aki "
+"elállta az erdőbe vezető utat."
 
 #: questlist_v068.json:lodar:45
 msgid "By speaking the words that Ogam had mentioned, the creature moved out of the way, and almost seemed to welcome me further into the forest."
 msgstr ""
+"Azoknak a szavaknak a kimondásával, amiket Ogam említett, a lény félreállt "
+"az útból, és szinte úgy tűnt, mintha örömmel segítene nekem bejutni az "
+"erdőbe."
 
 #: questlist_v068.json:lodar:50
 msgid "I encountered a guard from Feygard in the woods. He told me a tale of a madman that the guards from Feygard are searching for. The madman is wanted for a number of reasons that he would not disclose. He warned me both about the twisty mazes ahead, and about the madman. Apparently, several guards have gone missing after venturing forth, either by getting lost in the maze, or by something that the madman has done to them."
@@ -35398,7 +35645,9 @@ msgstr "Hallottam egy történetet Prim és a Blackwater-hegység településekr
 
 #: questlist_v069.json:bwm_agent:30
 msgid "I should follow the mountain path up the mountain to the Blackwater mountain settlement."
-msgstr "Követnem kell a hegyi ösvényt a hegység tetejére Blackwater település felé."
+msgstr ""
+"Követnem kell a hegyi ösvényt a hegység tetejére Blackwater-hegység "
+"település felé."
 
 #: questlist_v069.json:bwm_agent:40
 msgid "I met the man again on my way up to Blackwater mountain. I should proceed further up the mountain."
@@ -35743,6 +35992,12 @@ msgstr "Tönkretett vidék"
 #: questlist_v0610.json:hadracor:10
 msgid "On the road to Carn Tower, west of the Crossroads guardhouse, I met a group of woodcutters led by Hadracor. Hadracor wants me to help him get revenge on some wasps that were attacking them while they were cutting down the forest. To help them get revenge, I should look for giant wasps near their encampment and bring him at least five giant wasp wings."
 msgstr ""
+"A Carn Tower felé vezető úton a Keresztút őrháztól nyugatra találkoztam egy "
+"csoport favágóval, akiket Hadracor vezetett. Hadracor azt szeretné tőlem, "
+"hogy segítsek neki bosszút állni néhány darázson, amelyek megtámadták őket, "
+"miközben kivágták az erdőt. Hogy segítsek neki bosszút állni, meg kell "
+"keresnem az óriás darazsakat a táborhelyük közelében, és vinnem kell neki "
+"legalább öt óriás darázs szárnyat."
 
 #: questlist_v0610.json:hadracor:20
 msgid "I have brought five giant wasp wings to Hadracor."
@@ -35802,6 +36057,9 @@ msgstr "Találkoztam Benbyrrel a Keresztút őrházon kívül. Bosszút szeretne
 #: questlist_v0610.json:benbyr:20
 msgid "I have agreed to help Benbyr find Tinlyn's sheep and kill all eight of them. I should go look for them in the fields northwest of the Crossroads guardhouse."
 msgstr ""
+"Beleegyeztem, hogy segítek Benbyrnek megkeresni Tinlyn bárányát, és megölöm "
+"mind a nyolcat. El kell mennem megkeresni őket a Keresztút őrháztól "
+"északnyugatra lévő mezőkön."
 
 #: questlist_v0610.json:benbyr:21
 msgid "I have started attacking the sheep. I should return to Benbyr once I have killed all eight of them."
@@ -37837,4 +38095,3 @@ msgstr "Stoutford"
 #: worldmap.xml:world1:guynmart_area
 msgid "Guynmart Castle"
 msgstr "Guynmart kastély"
-
