@@ -6,25 +6,25 @@
 	<string name="menu_settings">Настройки</string>
 	<string name="menu_save">Сохранить</string>
 	<string name="menu_save_gamesaved">Игра сохранена в слот №%1$d</string>
-	<string name="menu_save_failed">Ошибка сохранения! SD карта на месте?</string>
+	<string name="menu_save_failed">Ошибка сохранения! SD карта lдоступна для чтения и записи\?</string>
 
-	<string name="loadsave_title_save">Сохранение игры</string>
-	<string name="loadsave_title_load">Загрузка сохраненной игры</string>
+	<string name="loadsave_title_save">Сохранить игру</string>
+	<string name="loadsave_title_load">Загрузить игру</string>
 	<string name="loadsave_selectslot">Выберите слот</string>
-	<string name="savegame_currenthero_displayinfo">уровень %1$d, %2$d опыт, %3$d золото</string>
+	<string name="savegame_currenthero_displayinfo">уровень %1$d, %2$d опыта, %3$d золота</string>
 
 	<string name="dialog_loading_message">Загрузка ресурсов…</string>
 	<string name="dialog_loading_failed_title">Ошибка загрузки</string>
-	<string name="dialog_loading_failed_message">Andor\'s Trail не удалось загрузить файл сохранения игры. 
+	<string name="dialog_loading_failed_message">Следу Эндора не удалось загрузить сохранение. 
 \n:( 
-\nФайл может быть повреждён или незавершен.</string>
-	<string name="dialog_loading_failed_incorrectversion">Andor\'s Trail не удалось загрузить файл сохранения игры. Этот файл сохранён в более новой версии игры, чем эта.</string>
+\nВозможно, сохранение повреждено.</string>
+	<string name="dialog_loading_failed_incorrectversion">Следу Эндора не удалось загрузить файл сохранения игры. Этот файл сохранён в более новой версии игры, чем эта.</string>
 
 	<string name="dialog_close">Закрыть</string>
 
 	<string name="dialog_monsterencounter_title">Схватка</string>
-	<string name="dialog_monsterencounter_message">Вы хотите напасть?
-Сложность: %1$s</string>
+	<string name="dialog_monsterencounter_message">Вы хотите напасть\?
+\nСложность: %1$s</string>
 	<string name="dialog_monsterencounter_info">Информация</string>
 
 	<string name="status_hp">ОЗ:</string>
@@ -40,12 +40,12 @@
 	<string name="heroinfo_wornequipment">Надетое снаряжение</string>
 	<string name="heroinfo_inventory">Инвентарь</string>
 	<string name="heroinfo_gold">Золото: %1$d</string>
-	<string name="heroinfo_actionpoints">Очки действия (ОД):</string>
+	<string name="heroinfo_actionpoints">Очков действий (ОД):</string>
 	<string name="heroinfo_quests">Квесты</string>
 
 	<string name="combat_attack">Атака (%1$d ОД)</string>
 	<string name="combat_move">Движение (%1$d ОД)</string>
-	<string name="combat_use">Использовать предмет</string>
+	<string name="combat_use">Применить</string>
 	<string name="combat_endturn">Конец хода</string>
 	<string name="combat_flee">Сбежать</string>
 	<string name="combat_begin_flee">Теперь вы можете покинуть бой, нажмите в каком направлении вы хотите двигаться.</string>
@@ -59,7 +59,7 @@
 	<string name="combat_result_herohitcritical">Вы наносите критический удар! %1$s теряет %2$d ОЗ!</string>
 	<string name="combat_result_herokillsmonster">%1$s убит!</string>
 	<string name="combat_not_enough_ap">Не хватает ОД в этом раунде.</string>
-	<string name="combat_hero_dies">Вы падаете без сознания, но к счастью остались живы. Вы потеряли %1$d опыта.</string>
+	<string name="combat_hero_dies">Вы падаете без сознания, но, к счастью, просыпаетесь живым, ошеломленным и усталым. Вы потеряли %1$d опыта.</string>
 	<string name="combat_miss_animation_message">ПРОМАХ</string>
 	
 	<string name="inventory_info">Инфо</string>
@@ -72,9 +72,9 @@
 	<string name="inventory_item_equipped">Вы надели %1$s.</string>
 
 	<string name="dialog_loot_pickall">Взять всё</string>
-	<string name="dialog_loot_foundgold">Вы нашли %1$d золота.</string>
+	<string name="dialog_loot_foundgold">Вы нашли %1$d золотых.</string>
 	<string name="dialog_loot_pickedupitem">Вы подобрали предмет.</string>
-	<string name="dialog_loot_pickedupitems">Вы подобрали %1$d предметов.</string>
+	<string name="dialog_loot_pickedupitems">Вы подобрали %1$d предмета.</string>
 	<string name="dialog_groundloot_title">Предметы</string>
 	<string name="dialog_groundloot_message">Вы нашли несколько предметов.</string>
 	<string name="dialog_monsterloot_title">Победа</string>
@@ -120,13 +120,13 @@
 
 	<string name="traitsinfo_criticalhit_skill">Шанс критического удара:</string>
 	<string name="traitsinfo_criticalhit_multiplier">Критический множитель:</string>
-	<string name="iteminfo_category">Категория:</string>
-	<string name="startscreen_newgame_confirm">Вы потеряете свою текущую игру и персонажа, вы уверены, что хотите начать новую игру?</string>
+	<string name="iteminfo_category">"Категория:  "</string>
+	<string name="startscreen_newgame_confirm">Вы потеряете свою текущих игру и персонажа, вы уверены, что хотите начать новую игру\?</string>
 	<string name="conversation_rewardexp">[Получено %1$d опыта]</string>
 	<string name="conversation_rewardgold">[Получено %1$d золота]</string>
 	<string name="conversation_lostgold">[Вы потеряли %1$d золота]</string>
 	<string name="conversation_rewarditem">[Получен предмет]</string>
-	<string name="conversation_rewarditems">[Получено %1$d предмета(ов)]</string>
+	<string name="conversation_rewarditems">[Получено %1$d предмета]</string>
 	<string name="shop_buy">Купить</string>
 	<string name="shop_sell">Продать</string>
 	<string name="conversation_next">Дальше</string>
@@ -140,7 +140,7 @@
 	<string name="shop_item_sold">%1$s продан.</string>
 
 	<string name="levelup_title">Новый уровень</string>
-	<string name="levelup_description">Добро пожаловать на уровень %1$d!</string>
+	<string name="levelup_description">Добро пожаловать на %1$d уровень!</string>
 	<string name="levelup_buttontext">Новый уровень</string>
 	<string name="levelup_add_health">Увеличить здоровье (+%1$d ОЗ)</string>
 	<string name="levelup_add_health_description">Добавить %1$d к максимальному здоровью.</string>
@@ -162,11 +162,11 @@
 	<string name="dialog_newversion_title">Приветствуем</string>
 	<string name="dialog_newversion_message">Спасибо за загрузку игры След Эндора! 
 \n 
-\n\tЗапомните, игра находится в СТАДИИ РАЗРАБОТКИ, это означает что не все карты еще закончены. 
+\n Запомните, игра находится в СТАДИИ РАЗРАБОТКИ, это означает что не все карты еще закончены. 
 \n 
-\n\tПожалуйста, посетите форум проекта, чтобы получить более подробную информацию или внести свой вклад в проект (см. Об игре). 
+\n Пожалуйста, посетите форум проекта, чтобы получить более подробную информацию или внести свой вклад в проект (см. Об игре). 
 \n 
-\n\tСпасибо всем за отзывы!</string>
+\n Спасибо всем за отзывы!</string>
 
 	<string name="questlog_includecompleted_prompt">Выберите квесты для отображения</string>
 	<string name="questlog_includecompleted_hidecompleted">Скрыть завершенные квесты</string>
@@ -209,7 +209,7 @@
 	<string name="preferences_movementmethods_avoid">Обходить препятствия</string>
 
 
-	<string name="actorinfo_currentconditions">Активные временные эффекты</string> <string name="actorcondition_info_removes_all">Убрать все %1$s</string>
+	<string name="actorinfo_currentconditions">Активные воздействия</string> <string name="actorcondition_info_removes_all">Убрать все %1$s</string>
 	<string name="iteminfo_effect_chance_of">%1$s шанс из %2$s</string>
 	<string name="iteminfo_effect_duration">(%1$d раундов)</string>
 
@@ -230,7 +230,7 @@
 	<string name="iteminfo_effect_increase_max_ap">Поднимает максимум ОД +%1$d</string>
 	<string name="iteminfo_effect_decrease_max_ap">Понижает максимум ОД на %1$d</string>
 	<string name="iteminfo_effect_increase_movecost">Цена движения +%1$d ОД</string>
-	<string name="iteminfo_effect_decrease_movecost">Уменьшает цену движения на %1$d ОД</string>
+	<string name="iteminfo_effect_decrease_movecost">Цена движения -%1$d ОД</string>
 
 	<string name="preferences_display_scaling_factor_title">Масштаб</string>
 	<string name="preferences_display_scaling_factor">Сделать все изображения на поле игры крупнее.</string>
@@ -538,15 +538,15 @@
 
 <string name="startscreen_incompatible_savegames">Эта версия Andor\'s Trail все еще в разработке. Сохранения, созданные этой версией, несовместимы с релизной версией.</string>
 	<string name="heroinfo_skill_categories">Категория</string>
-	<string name="heroinfo_skill_sort">Сортировать</string>
+	<string name="heroinfo_skill_sort">Сортировка</string>
 	<string name="heroinfo_inventory_categories">Категория</string>
 	<string name="heroinfo_inventory_sort">Сортировать по</string>
 	<string name="heroinfo_healthpoints">Очков здоровья (ОЗ):</string>
 	<string name="heroinfo_experiencepoints">Очков опыта (ОО):</string>
 	<string name="combat_taunt_monster">Вы подразнили %1$s!</string>
-	<string name="combat_condition_player_apply">Вы пострадали от %1$s.</string>
+	<string name="combat_condition_player_apply">На вас воздействует %1$s.</string>
 	<string name="combat_condition_player_clear">"Вы очищены от  %1$s."</string>
-	<string name="combat_condition_player_immune">У вас иммунитет от %1$s.</string>
+	<string name="combat_condition_player_immune">У вас иммунитет к %1$s.</string>
 	<string name="startscreen_newgame_start">Начать игру</string>
 	<string name="startscreen_selectherosprite">Выберите своего героя</string>
 	<string name="shop_item_sort">Сортировать</string>
@@ -595,21 +595,25 @@
 	<string name="change_theme_requires_restart">Для изменения темы интерфейса требуется перезапуск. След Эндора закрыт.</string>
 	
 	
-<string name="dialog_recenter">В исходное</string>
+<string name="dialog_recenter">К игроку</string>
 	<string name="dialog_more">Ещё</string>
 
 	<string name="dialog_monsterencounter_conditions">Воздействия</string>
 
-	<string name="combat_condition_monster_apply">%1$s зависим от %2$s.</string>
+	<string name="combat_condition_monster_apply">На %1$s воздейсвтует %2$s.</string>
 	<string name="combat_condition_monster_clear">%1$s очищается от %2$s.</string>
-	<string name="combat_condition_monster_immune">%1$s теперь имеет иммунитет от %2$s.</string>
+	<string name="combat_condition_monster_immune">%1$s теперь имеет иммунитет к %2$s.</string>
 	
 	
 	<string name="actorcondition_info_immunity">Иммунитет к %1$s</string>
-	<string name="iteminfo_effect_works_on_attacker">На атакующем</string>
+	<string name="iteminfo_effect_works_on_attacker">На атакующего</string>
 	<string name="iteminfo_effect_works_when_hit_by_attacker">При попадании атакующего</string>
 	<string name="iteminfo_effect_works_when_killed_by_attacker">При убийстве атакующего</string>
 	
 	<string name="inventory_selectitem">Выберите предмет для назначения</string>
 	<string name="combat_log_noentries">Нет записей.</string>
+	<string name="preferences_high_quality_filters_title">Высококачественные фильтры</string>
+	<string name="preferences_high_quality_filters">Отключите эту функцию, если возникают проблемы с производительностью на отфильтрованных картах (например, в темных пещерах). Включение этой опции заставит игру использовать расширенные цветовые фильтры вместо сплошных цветных наложений.</string>
+	
+
 	</resources>
