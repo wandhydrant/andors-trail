@@ -1830,7 +1830,7 @@
                 "nextPhraseID":"stoutford_widow_thorns20_2",
                 "requires":[
                     {
-                        "requireType":"inventoryRemove",
+                        "requireType":"inventoryKeep",
                         "requireID":"potion_brave",
                         "value":3
                     }
@@ -1861,21 +1861,18 @@
         "replies":[
             {
                 "text":"I don't quit think so. He is an honest person.",
-                "nextPhraseID":"stoutford_widow_thorns20_3"
+                "nextPhraseID":"stoutford_widow_thorns20_4"
             },
             {
                 "text":"I'm just kidding. Here, take the three potions.",
-                "nextPhraseID":"stoutford_widow_thorns20_1"
-            }
-        ]
-    },
-    {
-        "id":"stoutford_widow_thorns20_3",
-        "message":"What? Do you betray me? We must get rid of Blornvale!",
-        "replies":[
-            {
-                "text":"I don't quit think so. He is an honest person.",
-                "nextPhraseID":"stoutford_widow_thorns20_4"
+                "nextPhraseID":"stoutford_widow_thorns20_1",
+                "requires":[
+                    {
+                        "requireType":"inventoryRemove",
+                        "requireID":"potion_brave",
+                        "value":3
+                    }
+                ]
             }
         ]
     },
