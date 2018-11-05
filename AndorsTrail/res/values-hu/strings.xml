@@ -25,7 +25,7 @@
 	<string name="dialog_close">Bezárás</string>
 
 	<string name="dialog_monsterencounter_title">Összecsapás</string>
-	<string name="dialog_monsterencounter_message">Meg szeretnéd támadni?
+	<string name="dialog_monsterencounter_message">Meg szeretnéd támadni\?
 \nNehézség: %1$s</string>
 	<string name="dialog_monsterencounter_info">Információ</string>
 
@@ -130,7 +130,7 @@
 	<string name="conversation_rewarditem">[Szereztél egy tárgyat]</string>
 	<string name="conversation_rewarditems">[Szereztél %1$d tárgyat]</string>
 	<string name="conversation_next">Következő</string>
-	<string name="conversation_leave">Kilépés</string>
+	<string name="conversation_leave">Távozás</string>
 
 	<string name="shop_buy">Vásárlás</string>
 	<string name="shop_sell">Eladás</string>
@@ -605,4 +605,15 @@
 	<string name="change_theme_requires_restart">A felületi elemek témájának megváltoztatása újraindítást igényel. Az Andor nyomában be lesz zárva.</string>
 	
 	
-</resources>
+<string name="preferences_high_quality_filters_title">Magas minőségű szűrők</string>
+	<string name="preferences_high_quality_filters">Akkor tiltsd le ezt, ha teljesítmény-problémákat tapasztalsz a szűrt térképeken (például sötét barlangokban). Ennek a beállításnak az engedélyezésével a játék speciális színszűrőket fog használni az egyszínű rátétek helyett.</string>
+	
+
+	<string name="skill_longdescription_fightstyle_dualwield">Előnyöket ad az egyszerre két fegyverrel történő harcnál, amikor egy a fő kézben és egy a másik kézben van.
+\n
+\nEzen képesség nélkül egy fegyver adottságainak csak %1$d%%-a használható, amikor a másik kézbe van felvéve. Ebbe beletartozik a támadási esély, a kritikus képesség, a támadási lehetőség és a blokkolási esély. Ezen képesség nélkül egy támadás indításának támadási sebessége (AP költség) a fő fegyver és a másik kézben használt fegyver támadási sebességének összege.
+\n
+\nEzen képesség első szintjével a másik kézben lévő fegyver adottságának %2$d%%-a használható, és a támadási sebesség mindkét fegyver legmagasabb támadási sebessége plusz mindkét fegyver legalacsonyabb támadási sebességének %3$d%%-a.
+\n
+\nEzen képesség második szintjével a másik kézben lévő fegyver adottságának %4$d%%-a használható, és a támadási sebesség megegyezik a két felvett fegyver támadási sebességének legnagyobbikával.</string>
+	</resources>
