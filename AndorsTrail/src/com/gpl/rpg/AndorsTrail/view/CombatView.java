@@ -368,6 +368,12 @@ public final class CombatView extends RelativeLayout implements CombatSelectionL
 	}
 
 	@Override
+	public void onPlayerReequipCostChanged(Player actor, int newAttackCost) {}
+
+	@Override
+	public void onPlayerUseCostChanged(Player actor, int newMoveCost) {}
+
+	@Override
 	public void onActorConditionAdded(Actor actor, ActorCondition condition) {
 		if (actor == currentMonster) updateConditions();
 	}

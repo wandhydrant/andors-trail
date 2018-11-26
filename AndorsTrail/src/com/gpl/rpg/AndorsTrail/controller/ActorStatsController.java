@@ -261,6 +261,10 @@ public final class ActorStatsController {
 
 		addActorMoveCost(actor, effects.increaseMoveCost * multiplier);
 		addActorAttackCost(actor, effects.increaseAttackCost * multiplier);
+		if (actor.isPlayer) {
+			addPlayerReequipCost((Player)actor, effects.increaseReequipCost * multiplier);
+			addPlayerUseCost((Player)actor, effects.increaseUseItemCost * multiplier);
+		}
 		//criticalMultiplier should not be increased. It is always defined by the weapon in use.
 		actor.attackChance += effects.increaseAttackChance * multiplier;
 		actor.criticalSkill += effects.increaseCriticalSkill * multiplier;
@@ -602,6 +606,18 @@ public final class ActorStatsController {
 		actor.attackCost += amount;
 		if (actor.attackCost <= 0) actor.attackCost = 1;
 		actorStatsListeners.onActorAttackCostChanged(actor, actor.attackCost);
+	}
+	public void addPlayerReequipCost(Player player, int amount) {
+		if (amount == 0) return;
+		player.reequipCost += amount;
+		if (player.reequipCost < 0) player.reequipCost = 0;
+		actorStatsListeners.onPlayerReequipCostChanged(player, player.reequipCost);
+	}
+	public void addPlayerUseCost(Player player, int amount) {
+		if (amount == 0) return;
+		player.useItemCost += amount;
+		if (player.useItemCost < 0) player.useItemCost = 0;
+		actorStatsListeners.onPlayerUseCostChanged(player, player.useItemCost);
 	}
 
 	public void setActorMaxHealth(Actor actor) {

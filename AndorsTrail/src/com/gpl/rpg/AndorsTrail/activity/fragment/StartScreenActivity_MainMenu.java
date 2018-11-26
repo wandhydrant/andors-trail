@@ -126,7 +126,6 @@ public class StartScreenActivity_MainMenu extends Fragment {
 	
 	@Override
 	public void onResume() {
-		// TODO Auto-generated method stub
 		super.onResume();
 		
 		String playerName;
