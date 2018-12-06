@@ -1,11 +1,11 @@
 package com.gpl.rpg.AndorsTrail.model.item;
 
-import com.gpl.rpg.AndorsTrail.context.WorldContext;
-import com.gpl.rpg.AndorsTrail.savegames.LegacySavegameFormatReaderForItemContainer;
-
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
 import java.io.IOException;
+
+import com.gpl.rpg.AndorsTrail.context.WorldContext;
+import com.gpl.rpg.AndorsTrail.savegames.LegacySavegameFormatReaderForItemContainer;
 
 public final class Inventory extends ItemContainer {
 
@@ -86,6 +86,58 @@ public final class Inventory extends ItemContainer {
 		}
 	}
 
+
+	// Move to item container?
+	public Inventory buildQuestItems() {
+		Inventory questItems = new Inventory();
+		for (ItemEntry i : this.items) {
+			if (i == null) break;
+			if (i.itemType.isQuestItem())
+				questItems.items.add(i);
+		}
+		return questItems;
+	}
+	// Move to item container?
+	public Inventory buildUsableItems() {
+		Inventory usableItems = new Inventory();
+		for (ItemEntry i : this.items) {
+			if (i == null) break;
+			if (i.itemType.isUsable())
+				usableItems.items.add(i);
+		}
+		return usableItems;
+	}
+	// Move to item container?
+	public Inventory buildWeaponItems() {
+		Inventory weaponItems = new Inventory();
+		for (ItemEntry i : this.items) {
+			if (i == null) break;
+			if (i.itemType.isWeapon())
+				weaponItems.items.add(i);
+		}
+		return weaponItems;
+	}
+	// Move to item container?
+	public Inventory buildArmorItems() {
+		Inventory armorItems = new Inventory();
+		for (ItemEntry i : this.items) {
+			if (i == null) break;
+			if (i.itemType.isEquippable() && !i.itemType.isWeapon())
+				armorItems.items.add(i);
+		}
+		return armorItems;
+	}
+	// Move to item container?
+	public Inventory buildOtherItems() {
+		Inventory otherItems = new Inventory();
+		for (ItemEntry i : this.items) {
+			if (i == null) break;
+			if (i.itemType.isEquippable() || i.itemType.isUsable() || i.itemType.isQuestItem())
+				continue;
+			otherItems.items.add(i);
+		}
+		return otherItems;
+	}
 
 	// ====== PARCELABLE ===================================================================
 

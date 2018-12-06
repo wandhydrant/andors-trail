@@ -1,5 +1,10 @@
 package com.gpl.rpg.AndorsTrail.activity.fragment;
 
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
@@ -7,24 +12,25 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.*;
-import android.widget.AdapterView.OnItemSelectedListener;
+import android.widget.ExpandableListView;
+import android.widget.SimpleExpandableListAdapter;
+
 import com.gpl.rpg.AndorsTrail.AndorsTrailApplication;
 import com.gpl.rpg.AndorsTrail.R;
 import com.gpl.rpg.AndorsTrail.context.WorldContext;
 import com.gpl.rpg.AndorsTrail.model.actor.Player;
 import com.gpl.rpg.AndorsTrail.model.quest.Quest;
 import com.gpl.rpg.AndorsTrail.model.quest.QuestLogEntry;
-
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import com.gpl.rpg.AndorsTrail.view.SpinnerEmulator;
 
 public final class HeroinfoActivity_Quests extends Fragment {
 
 	private WorldContext world;
-	private Spinner questlog_includecompleted;
+
+//	private Button includeCompletedButton;
+//	private Dialog includeCompletedDialog = null;
+//	private ListView questlog_includecompleted;
+	
 	private SimpleExpandableListAdapter questlog_contents_adapter;
 
 	private Player player;
@@ -48,22 +54,24 @@ public final class HeroinfoActivity_Quests extends Fragment {
 
 		Context ctx = getActivity();
 
-		questlog_includecompleted = (Spinner) v.findViewById(R.id.questlog_includecompleted);
-		ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(ctx, R.array.questlog_includecompleted, android.R.layout.simple_spinner_item);
-		adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-		questlog_includecompleted.setAdapter(adapter);
-		questlog_includecompleted.setOnItemSelectedListener(new OnItemSelectedListener() {
+		
+		new SpinnerEmulator(v, R.id.questlog_includecompleted_button, R.array.questlog_includecompleted, R.string.questlog_includecompleted_prompt) {
 			@Override
-			public void onItemSelected(AdapterView<?> arg0, View arg1, int arg2, long arg3) {
-				world.model.uiSelections.selectedQuestFilter = questlog_includecompleted.getSelectedItemPosition();
+			public void setValue(int value) {
+				world.model.uiSelections.selectedQuestFilter = value;
+			}
+			
+			@Override
+			public void selectionChanged(int value) {
 				reloadQuests();
 			}
-
+			
 			@Override
-			public void onNothingSelected(AdapterView<?> arg0) {}
-		});
-		questlog_includecompleted.setSelection(world.model.uiSelections.selectedQuestFilter);
-
+			public int getValue() {
+				return world.model.uiSelections.selectedQuestFilter;
+			}
+		};
+		
 		ExpandableListView questlog_contents = (ExpandableListView) v.findViewById(R.id.questlog_contents);
 		questlog_contents_adapter = new SimpleExpandableListAdapter(
 				ctx
@@ -110,7 +118,7 @@ public final class HeroinfoActivity_Quests extends Fragment {
 			if (player.hasAnyQuestProgress(q.questID)) {
 				boolean isCompleted = q.isCompleted(player);
 
-				int v = questlog_includecompleted.getSelectedItemPosition();
+				int v = world.model.uiSelections.selectedQuestFilter;
 				if (v == 0) { // Hide completed quests
 					if (isCompleted) continue;
 				} else if (v == 1) { // Include completed quests

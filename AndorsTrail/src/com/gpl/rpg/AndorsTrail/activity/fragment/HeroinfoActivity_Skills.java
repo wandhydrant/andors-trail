@@ -1,5 +1,7 @@
 package com.gpl.rpg.AndorsTrail.activity.fragment;
 
+import java.util.ArrayList;
+
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -11,6 +13,7 @@ import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ListView;
 import android.widget.TextView;
+
 import com.gpl.rpg.AndorsTrail.AndorsTrailApplication;
 import com.gpl.rpg.AndorsTrail.Dialogs;
 import com.gpl.rpg.AndorsTrail.R;
@@ -19,7 +22,7 @@ import com.gpl.rpg.AndorsTrail.context.WorldContext;
 import com.gpl.rpg.AndorsTrail.model.ability.SkillCollection;
 import com.gpl.rpg.AndorsTrail.model.actor.Player;
 import com.gpl.rpg.AndorsTrail.view.SkillListAdapter;
-
+import com.gpl.rpg.AndorsTrail.view.SpinnerEmulator;
 public final class HeroinfoActivity_Skills extends Fragment {
 
 	private static final int INTENTREQUEST_SKILLINFO = 12;
@@ -28,8 +31,9 @@ public final class HeroinfoActivity_Skills extends Fragment {
 	private ControllerContext controllers;
 	private Player player;
 
-	private SkillListAdapter skillListAdapter;
 	private TextView listskills_number_of_increases;
+	ListView skillList;
+	private ArrayList<SkillListAdapter> skillListCategoryViewsAdapters = new ArrayList<SkillListAdapter>();
 
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
@@ -46,18 +50,76 @@ public final class HeroinfoActivity_Skills extends Fragment {
 		View v = inflater.inflate(R.layout.heroinfo_skill_list, container, false);
 
 		final Activity ctx = getActivity();
-		skillListAdapter = new SkillListAdapter(ctx, world.skills.getAllSkills(), player);
-		ListView skillList = (ListView) v.findViewById(R.id.heroinfo_listskills_list);
-		skillList.setAdapter(skillListAdapter);
+
+		new SpinnerEmulator(v,R.id.skillList_category_filters_button, R.array.skill_category_filters, R.string.heroinfo_skill_categories) {
+			@Override
+			public void setValue(int value) {
+				world.model.uiSelections.selectedSkillCategory = value;
+			}
+			@Override
+			public void selectionChanged(int value) {
+				reloadShownCategory();
+			}
+			@Override
+			public int getValue() {
+				return world.model.uiSelections.selectedSkillCategory;
+			}
+		};
+		new SpinnerEmulator(v,R.id.skillList_sort_filters_button, R.array.skill_sort_filters, R.string.heroinfo_skill_sort) {
+			@Override
+			public void setValue(int value) {
+				world.model.uiSelections.selectedSkillSort = value;
+			}
+			@Override
+			public void selectionChanged(int value) {
+				reloadShownSort();
+			}
+			@Override
+			public int getValue() {
+				return world.model.uiSelections.selectedSkillSort;
+			}
+		};
+		
+
+		for(int i = 0; i< SkillCollection.SkillCategory.values().length; i++){
+			// Creates a list of adapters for each category.
+			// The adapter at position 0 has all items.
+			// length + 1 in order to create an extra position for "all"
+			skillListCategoryViewsAdapters.add(
+					new SkillListAdapter(ctx, world.skills.getAllSkills(), player, i));
+		}
+		
+		skillList = (ListView) v.findViewById(R.id.heroinfo_listskills_list);
+		skillList.setAdapter(getCurrentCategoryAdapter());
 		skillList.setOnItemClickListener(new OnItemClickListener() {
 			@Override
 			public void onItemClick(AdapterView<?> parent, View v, int position, long id) {
-				Intent intent = Dialogs.getIntentForSkillInfo(ctx, skillListAdapter.getItem(position).id);
+				Intent intent = Dialogs.getIntentForSkillInfo(ctx,
+						getCurrentCategoryAdapter().getItem(position).id);
 				startActivityForResult(intent, INTENTREQUEST_SKILLINFO);
 			}
 		});
 		listskills_number_of_increases = (TextView) v.findViewById(R.id.heroinfo_listskills_number_of_increases);
 		return v;
+	}
+
+	private void reloadShownSort() {
+		int v = world.model.uiSelections.selectedSkillSort;
+		if(v ==0);
+		if(v==1) getCurrentCategoryAdapter().sortByName();
+		if(v==2) getCurrentCategoryAdapter().sortByPoints();
+		if(v==3) getCurrentCategoryAdapter().sortByUnlocked();
+
+		updateSkillList();
+	}
+
+	private void reloadShownCategory() {
+		skillList.setAdapter(getCurrentCategoryAdapter());
+		updateSkillList();
+	}
+	private SkillListAdapter getCurrentCategoryAdapter(){
+		return skillListCategoryViewsAdapters.get(
+				world.model.uiSelections.selectedSkillCategory);
 	}
 
 	@Override
@@ -96,6 +158,6 @@ public final class HeroinfoActivity_Skills extends Fragment {
 		} else {
 			listskills_number_of_increases.setVisibility(View.GONE);
 		}
-		skillListAdapter.notifyDataSetInvalidated();
+		getCurrentCategoryAdapter().notifyDataSetInvalidated();
 	}
 }

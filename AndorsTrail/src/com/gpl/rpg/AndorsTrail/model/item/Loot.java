@@ -1,12 +1,12 @@
 package com.gpl.rpg.AndorsTrail.model.item;
 
-import com.gpl.rpg.AndorsTrail.context.WorldContext;
-import com.gpl.rpg.AndorsTrail.savegames.LegacySavegameFormatReaderForItemContainer;
-import com.gpl.rpg.AndorsTrail.util.Coord;
-
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
 import java.io.IOException;
+
+import com.gpl.rpg.AndorsTrail.context.WorldContext;
+import com.gpl.rpg.AndorsTrail.savegames.LegacySavegameFormatReaderForItemContainer;
+import com.gpl.rpg.AndorsTrail.util.Coord;
 
 public final class Loot {
 	public int exp = 0;

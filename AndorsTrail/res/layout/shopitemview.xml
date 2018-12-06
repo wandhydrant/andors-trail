@@ -15,21 +15,24 @@
 	<Button
 		android:id="@+id/shopitem_shopbutton"
 		android:layout_width="wrap_content"
-		android:layout_height="@dimen/smalltext_buttonheight"
+	    android:layout_height="wrap_content"
+	    android:minHeight="0dp"
 		android:layout_alignParentRight="true"
 		android:layout_centerVertical="true"
 		android:text="@string/shop_buy"
 		android:textSize="@dimen/smalltext"
 		/>
+
 	<Button
-		android:id="@+id/shopitem_infobutton"
-		android:layout_width="wrap_content"
-		android:layout_height="@dimen/smalltext_buttonheight"
-		android:layout_toLeftOf="@id/shopitem_shopbutton"
-		android:layout_centerVertical="true"
-		android:textSize="@dimen/smalltext"
-		android:text="@string/shop_infoitem"
-		/>
+	    android:id="@+id/shopitem_infobutton"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:minHeight="0dp"
+	    android:layout_centerVertical="true"
+	    android:layout_toLeftOf="@id/shopitem_shopbutton"
+	    android:text="@string/shop_infoitem"
+	    android:textSize="@dimen/smalltext" />
+
 	<TextView
 		android:id="@+id/shopitem_text"
 		android:layout_width="match_parent"

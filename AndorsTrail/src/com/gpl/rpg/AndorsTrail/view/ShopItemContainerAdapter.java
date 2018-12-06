@@ -9,6 +9,7 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+
 import com.gpl.rpg.AndorsTrail.R;
 import com.gpl.rpg.AndorsTrail.controller.ItemController;
 import com.gpl.rpg.AndorsTrail.model.actor.Player;
@@ -81,5 +82,9 @@ public final class ShopItemContainerAdapter extends ArrayAdapter<ItemEntry> {
 	public static interface OnContainerItemClickedListener {
 		void onItemActionClicked(int position, ItemType itemType);
 		void onItemInfoClicked(int position, ItemType itemType);
+	}
+
+	public void reloadShownSort(int selection, ItemContainer container, Player p){
+		ItemContainerAdapter.reloadShownSort(selection, container, player);
 	}
 }

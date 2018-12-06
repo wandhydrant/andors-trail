@@ -3,10 +3,14 @@ package com.gpl.rpg.AndorsTrail.controller;
 import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.Paint.Align;
+import android.graphics.Rect;
 import android.os.Handler;
+
+import com.gpl.rpg.AndorsTrail.AndorsTrailPreferences;
 import com.gpl.rpg.AndorsTrail.context.ControllerContext;
 import com.gpl.rpg.AndorsTrail.context.WorldContext;
 import com.gpl.rpg.AndorsTrail.controller.listeners.VisualEffectFrameListeners;
+import com.gpl.rpg.AndorsTrail.model.actor.Actor;
 import com.gpl.rpg.AndorsTrail.model.actor.Monster;
 import com.gpl.rpg.AndorsTrail.model.actor.MonsterType;
 import com.gpl.rpg.AndorsTrail.model.map.PredefinedMap;
@@ -25,14 +29,14 @@ public final class VisualEffectController {
 	private final VisualEffectCollection effectTypes;
 
 	public final VisualEffectFrameListeners visualEffectFrameListeners = new VisualEffectFrameListeners();
-
+	
 	public VisualEffectController(ControllerContext controllers, WorldContext world) {
 		this.controllers = controllers;
 		this.world = world;
 		this.effectTypes = world.visualEffectTypes;
 	}
 
-	public void startEffect(Coord position, VisualEffectCollection.VisualEffectID effectID, int displayValue, VisualEffectCompletedCallback callback, int callbackValue) {
+	public void startEffect(Coord position, VisualEffectCollection.VisualEffectID effectID, String displayValue, VisualEffectCompletedCallback callback, int callbackValue) {
 		++effectCount;
 		(new VisualEffectAnimation(effectTypes.getVisualEffect(effectID), position, displayValue, callback, callbackValue))
 		.start();
@@ -50,20 +54,94 @@ public final class VisualEffectController {
 	}
 	public void startEnqueuedEffect(Coord position) {
 		if (enqueuedEffectID == null) return;
-		startEffect(position, enqueuedEffectID, enqueuedEffectValue, null, 0);
+		startEffect(position, enqueuedEffectID, (enqueuedEffectValue == 0) ? null : String.valueOf(enqueuedEffectValue), null, 0);
 		enqueuedEffectID = null;
 		enqueuedEffectValue = 0;
 	}
+	
+	public void startActorMoveEffect(Actor actor, Coord origin, Coord destination, int duration, VisualEffectCompletedCallback callback, int callbackValue) {
+		++effectCount;
+		(new SpriteMoveAnimation(origin, destination, duration, actor, callback, callbackValue))
+		.start();
+	}
 
+	public final class SpriteMoveAnimation extends Handler implements Runnable {
+		
+//		private static final int millisecondsPerFrame=25;
+		
+		private final VisualEffectCompletedCallback callback;
+		private final int callbackValue;
+
+		public final int duration;
+		public final Actor actor;
+		public final Coord origin;
+		public final Coord destination;
+		
+		
+		@Override
+		public void run() {
+			onCompleted();
+//			update();
+//			if (System.currentTimeMillis() - actor.vfxStartTime >= duration) {
+//			} else {
+//				postDelayed(this, millisecondsPerFrame);
+//			}
+		}
+		
+		public SpriteMoveAnimation(Coord origin, Coord destination, int duration, Actor actor, VisualEffectCompletedCallback callback, int callbackValue) {
+			this.callback = callback;
+			this.callbackValue = callbackValue;
+			this.duration = duration;
+			this.actor = actor;
+			this.origin = origin;
+			this.destination = destination;
+
+		}
+		
+//		private void update() {
+//			
+//			visualEffectFrameListeners.onNewSpriteMoveFrame(this);
+//		}
+
+		private void onCompleted() {
+			--effectCount;
+			actor.hasVFXRunning = false;
+			if (callback != null) callback.onVisualEffectCompleted(callbackValue);
+			visualEffectFrameListeners.onSpriteMoveCompleted(this);
+		}
+		
+
+		public void start() {
+			actor.hasVFXRunning = true;
+			actor.vfxDuration = duration;
+			actor.vfxStartTime = System.currentTimeMillis();
+			visualEffectFrameListeners.onSpriteMoveStarted(this);
+			if (duration == 0 || !controllers.preferences.enableUiAnimations) onCompleted();
+			else {
+				postDelayed(this, duration);
+			}
+		}
+		
+		
+		
+	}
+
+	public static final Paint textPaint = new Paint();
+	static {
+		textPaint.setShadowLayer(2, 1, 1, Color.DKGRAY);
+		textPaint.setAlpha(255);
+		textPaint.setTextAlign(Align.CENTER);
+	}
+	
 	public final class VisualEffectAnimation extends Handler implements Runnable {
 
 		@Override
 		public void run() {
-			update();
-			if (currentFrame == effect.lastFrame) {
+			if (currentFrame >= effect.lastFrame) {
 				onCompleted();
 			} else {
-				postDelayed(this, effect.millisecondPerFrame);
+				postDelayed(this, effect.millisecondPerFrame * controllers.preferences.attackspeed_milliseconds / AndorsTrailPreferences.ATTACKSPEED_DEFAULT_MILLISECONDS);
+				update();
 			}
 		}
 
@@ -74,7 +152,7 @@ public final class VisualEffectController {
 			int tileID = effect.frameIconIDs[frame];
 			int textYOffset = -2 * (frame);
 			if (frame >= beginFadeAtFrame && displayText != null) {
-				this.textPaint.setAlpha(255 * (effect.lastFrame - frame) / (effect.lastFrame - beginFadeAtFrame));
+				textPaint.setAlpha(255 * (effect.lastFrame - frame) / (effect.lastFrame - beginFadeAtFrame));
 			}
 			area.topLeft.y = position.y - 1;
 			visualEffectFrameListeners.onNewAnimationFrame(this, tileID, textYOffset);
@@ -87,7 +165,8 @@ public final class VisualEffectController {
 		}
 
 		public void start() {
-			postDelayed(this, 0);
+			if (!controllers.preferences.enableUiAnimations) onCompleted();
+			else postDelayed(this, 0);
 		}
 
 		private int currentFrame = 0;
@@ -97,24 +176,28 @@ public final class VisualEffectController {
 		public final Coord position;
 		public final String displayText;
 		public final CoordRect area;
-		public final Paint textPaint = new Paint();
 		private final int beginFadeAtFrame;
 		private final VisualEffectCompletedCallback callback;
 		private final int callbackValue;
 
-		public VisualEffectAnimation(VisualEffect effect, Coord position, int displayValue, VisualEffectCompletedCallback callback, int callbackValue) {
+		public VisualEffectAnimation(VisualEffect effect, Coord position, String displayValue, VisualEffectCompletedCallback callback, int callbackValue) {
 			this.position = position;
 			this.callback = callback;
 			this.callbackValue = callbackValue;
-			this.area = new CoordRect(new Coord(position.x, position.y - 1), new Size(1, 2));
 			this.effect = effect;
-			this.displayText = (displayValue == 0) ? null : String.valueOf(displayValue);
-			this.textPaint.setColor(effect.textColor);
-			this.textPaint.setShadowLayer(2, 1, 1, Color.DKGRAY);
-			this.textPaint.setTextSize(world.tileManager.viewTileSize * 0.5f); // 32dp.
-			this.textPaint.setAlpha(255);
-			this.textPaint.setTextAlign(Align.CENTER);
+			this.displayText = displayValue == null ? "" : displayValue;
+			textPaint.setColor(effect.textColor);
+			textPaint.setTextSize(world.tileManager.tileSize * 0.5f); // 32dp.
+			Rect textBounds = new Rect();
+			textPaint.getTextBounds(displayText, 0, displayText.length(), textBounds);
+			int widthNeededInTiles = 1 + (textBounds.width() / world.tileManager.tileSize);
+			if (widthNeededInTiles % 2 == 0) widthNeededInTiles++;
+			this.area = new CoordRect(new Coord(position.x - (widthNeededInTiles / 2), position.y - 1), new Size(widthNeededInTiles, 2));
 			this.beginFadeAtFrame = effect.lastFrame / 2;
+		}
+		
+		public Paint getTextPaint(){
+			return textPaint;
 		}
 	}
 
@@ -183,4 +266,10 @@ public final class VisualEffectController {
 			return -1;
 		}
 	}
+	
+	public void asyncUpdateArea(CoordRect area) {
+		visualEffectFrameListeners.onAsyncAreaUpdate(area);
+	}
+
+	
 }

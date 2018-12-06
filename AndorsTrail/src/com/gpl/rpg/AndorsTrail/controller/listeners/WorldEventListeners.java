@@ -1,11 +1,11 @@
 package com.gpl.rpg.AndorsTrail.controller.listeners;
 
+import java.util.Collection;
+
 import com.gpl.rpg.AndorsTrail.model.actor.Monster;
 import com.gpl.rpg.AndorsTrail.model.item.Loot;
 import com.gpl.rpg.AndorsTrail.model.map.MapObject;
 import com.gpl.rpg.AndorsTrail.util.ListOfListeners;
-
-import java.util.Collection;
 
 public final class WorldEventListeners extends ListOfListeners<WorldEventListener> implements WorldEventListener {
 

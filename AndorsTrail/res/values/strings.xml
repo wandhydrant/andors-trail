@@ -20,25 +20,34 @@
 	<string name="dialog_loading_failed_message">Andor\'s Trail was unable to load the savegame file.\n\n:(\n\nThe file may be damaged or incomplete.</string>
 	<string name="dialog_loading_failed_incorrectversion">Andor\'s Trail was unable to load the savegame file. This savegame file is created with a newer version than what is currently running.</string>
 
+	<string name="dialog_recenter">Recenter</string>
 	<string name="dialog_close">Close</string>
+	<string name="dialog_more">More</string>
 
 	<string name="dialog_monsterencounter_title">Encounter</string>
 	<string name="dialog_monsterencounter_message">Do you want to attack?\nDifficulty: %1$s</string>
 	<string name="dialog_monsterencounter_info">Info</string>
+	<string name="dialog_monsterencounter_conditions">Conditions</string>
 
 	<string name="status_hp">HP:</string>
 	<string name="status_ap">AP:</string>
-	<string name="status_exp">Level:</string>
+	<string name="status_exp">XP:</string>
 
 	<string name="heroinfo_char">Overview</string>
 	<string name="heroinfo_inv">Items</string>
 	<string name="heroinfo_skill">Skills</string>
+	<string name="heroinfo_skill_categories">Category</string>
+	<string name="heroinfo_skill_sort">Sort</string>
 	<string name="heroinfo_levelup">Level up</string>
 	<string name="heroinfo_level">Level</string>
 	<string name="heroinfo_totalexperience">Total experience</string>
 	<string name="heroinfo_wornequipment">Worn equipment</string>
 	<string name="heroinfo_inventory">Inventory</string>
+	<string name="heroinfo_inventory_categories">Category</string>
+	<string name="heroinfo_inventory_sort">Sort By</string>
 	<string name="heroinfo_gold">Gold: %1$d</string>
+	<string name="heroinfo_healthpoints">Health points (HP):</string>
+	<string name="heroinfo_experiencepoints">Experience points (XP):</string>
 	<string name="heroinfo_actionpoints">Action points (AP):</string>
 	<string name="heroinfo_quests">Quests</string>
 
@@ -63,7 +72,16 @@
 	<string name="combat_result_herokillsmonster">%1$s dies!</string>
 	<string name="combat_not_enough_ap">Not enough AP left this round.</string>
 	<string name="combat_hero_dies">You fall unconscious, but fortunately wake up alive, dazed and fatigued. You lost %1$d experience.</string>
-
+	<string name="combat_miss_animation_message">MISS</string>
+	<string name="combat_taunt_monster">You taunt %1$s!</string>
+	<string name="combat_condition_player_apply">You are affected by %1$s.</string>
+	<string name="combat_condition_player_clear">You are cleared of %1$s.</string>
+	<string name="combat_condition_player_immune">You are now immunized against %1$s.</string>
+	<string name="combat_condition_monster_apply">%1$s is affected by %2$s.</string>
+	<string name="combat_condition_monster_clear">%1$s is cleared of %2$s.</string>
+	<string name="combat_condition_monster_immune">%1$s is now immunized against %2$s.</string>
+	
+	
 	<string name="inventory_info">Info</string>
 	<string name="inventory_equip">Equip</string>
 	<string name="inventory_unequip">Unequip</string>
@@ -119,8 +137,10 @@
 
 	<string name="startscreen_continue">Continue current game</string>
 	<string name="startscreen_newgame">New game</string>
+	<string name="startscreen_newgame_start">Start game</string>
 	<string name="startscreen_newgame_confirm">You will lose your current game and your current character, are you sure you want to start a new game?</string>
 	<string name="startscreen_about">About/help</string>
+	<string name="startscreen_selectherosprite">Choose your hero</string>
 	<string name="startscreen_enterheroname">Enter hero name</string>
 	<string name="startscreen_load">Load</string>
 
@@ -141,18 +161,19 @@
 	<string name="shop_yourgold">Your gold: %1$d</string>
 	<string name="shop_item_bought">%1$s bought.</string>
 	<string name="shop_item_sold">%1$s sold.</string>
+	<string name="shop_item_sort">Sort</string>
 
 	<string name="levelup_title">Level up</string>
 	<string name="levelup_description">Welcome to level %1$d!</string>
 	<string name="levelup_buttontext">Level up</string>
 	<string name="levelup_add_health">Increase health (+%1$d HP)</string>
 	<string name="levelup_add_health_description">Adds %1$d to your maximum health.</string>
-	<string name="levelup_add_attackchance">Increase attack chance (+%1$d %%)</string>
-	<string name="levelup_add_attackchance_description">Adds %1$d%% to your base attack chance.</string>
+	<string name="levelup_add_attackchance">Increase attack chance (+%1$d)</string>
+	<string name="levelup_add_attackchance_description">Adds %1$d to your base attack chance.</string>
 	<string name="levelup_add_attackdamage">Increase attack damage (+%1$d)</string>
 	<string name="levelup_add_attackdamage_description">Adds %1$d to your base attack damage.</string>
-	<string name="levelup_add_blockchance">Increase block chance (+%1$d %%)</string>
-	<string name="levelup_add_blockchance_description">Adds %1$d%% to your base block chance.</string>
+	<string name="levelup_add_blockchance">Increase block chance (+%1$d)</string>
+	<string name="levelup_add_blockchance_description">Adds %1$d to your base block chance.</string>
 
 	<string name="dialog_rest_title">Rest</string>
 	<string name="dialog_rest_confirm_message">Do you want to rest here?</string>
@@ -168,7 +189,7 @@
 		&lt;br /&gt;
 		&lt;a href="http://andorstrail.com/wiki"&gt;Game wiki for info about the Andor\'s Trail world, among other things.&lt;/a&gt;&lt;br /&gt;
 		&lt;br /&gt;
-		&lt;a href="http://code.google.com/p/andors-trail/"&gt;Project homepage on code.google.com for developers.&lt;/a&gt;&lt;br /&gt;
+		&lt;a href="https://github.com/Zukero/andors-trail/"&gt;Project source code on github.com for developers.&lt;/a&gt;&lt;br /&gt;
 		&lt;br /&gt;
 		Please visit the forums to discuss the game with other players.&lt;br /&gt;
 	</string>
@@ -186,8 +207,56 @@
 		&lt;br /&gt;
 		You should have received a copy of the GNU General Public License along with this program; if not, see &lt;a href="http://www.gnu.org/licenses"&gt;http://www.gnu.org/licenses&lt;/a&gt;&lt;br /&gt;
 		&lt;br /&gt;
-		For source code and feature requests, please visit the project page at &lt;a href="http://code.google.com/p/andors-trail/"&gt;http://code.google.com/p/andors-trail/&lt;/a&gt;&lt;br /&gt;
+		For source code and feature requests, please visit the project page at &lt;a href="https://github.com/Zukero/andors-trail/"&gt;https://github.com/Zukero/andors-trail/&lt;/a&gt;&lt;br /&gt;
 	</string>
+	<string name="about_interface"><![CDATA[
+
+<div><b>Game Settings</b> can be found by pressing your device\'s Menu Button.</div>
+
+<p>________________</p>
+<h1>Interface Icons</h1>
+
+<div><b>The Chest</b><img alt="chest" src="chest.png" /></div>
+<p>Quickslots [Long press the pouches inside to assign items for instant use]</p>
+
+<div><b>The Hero</b><img alt="hero" src="char_hero.png" /></div>
+<p>Menu [Overview, Quests, Skills &amp; Inventory *]</p>
+<p>* (While in inventory, "press" an item for information &amp; "long press" for more options)</p>
+
+<div><b>The Enemy</b><img alt="monster" src="monster.png" /></div>
+<p>Information [Appears during Combat]</p>
+
+
+
+<p>________________</p>
+<h1>Combat</h1>
+
+<p>Actions taken during battle cost AP...</p>
+
+<div><b>Attacking</b> - [3AP] *</div>
+<img alt="attacking" src="doubleattackexample.png" />
+<p>* (Equipping Gear &amp; Using Items may alter AP &amp; usage cost)</p>
+
+<div><b>Using Items</b> - [5AP]</div>
+<div><b>Fleeing</b> - [6AP]</div>
+
+
+
+<p>________________</p>
+<h1>Advanced Combat</h1>
+
+<div>During Combat, long press a tile adjacent to the Hero...</div>
+
+<div><b>To Flee</b></div>
+<p>(chosen tile is highlighted - Attack Button changes to Move)</p>
+<img alt="flee" src="flee_example.png" />
+<p>[flee mode activated - Long press enemy to re-enter combat]</p>
+
+<div><b>To Change Targets</b></div>
+<p>(the red target highlight shifts between enemies)</p>
+<p>[the target has been changed]</p>
+
+]]></string>
 
 	<string name="dialog_newversion_title">Welcome</string>
 	<string name="dialog_newversion_message">
@@ -244,16 +313,20 @@
 
 	<string name="actorinfo_currentconditions">Active conditions</string> <!-- Translated as: affliction / statuseffect / temporary effect -->
 	<string name="actorcondition_info_removes_all">Removes all %1$s</string>
+	<string name="actorcondition_info_immunity">Immune to %1$s</string>
 	<string name="iteminfo_effect_chance_of">%1$s chance of %2$s</string>
 	<string name="iteminfo_effect_duration">(%1$d rounds)</string>
 
 	<string name="iteminfo_effect_works_on_source">On source</string>
 	<string name="iteminfo_effect_works_on_target">On target</string>
+	<string name="iteminfo_effect_works_on_attacker">On attacker</string>
 	<string name="iteminfo_effect_works_when_hitting_target">When hitting target</string>
 	<string name="iteminfo_effect_works_when_killing_target">On every kill</string>
 	<string name="iteminfo_effect_works_when_used">When used</string>
 	<string name="iteminfo_effect_works_when_equipped">When equipped</string>
-
+	<string name="iteminfo_effect_works_when_hit_by_attacker">When hit by attacker</string>
+	<string name="iteminfo_effect_works_when_killed_by_attacker">When killed by attacker</string>
+	
 	<string name="iteminfo_effect_decrease_current_hp">Drains %1$s HP</string>
 	<string name="iteminfo_effect_increase_current_hp">Restores %1$s HP</string>
 	<string name="iteminfo_effect_decrease_current_ap">Drains %1$s AP</string>
@@ -273,6 +346,7 @@
 	<string name="preferences_display_scaling_factor_double">Double size</string>
 
 	<string name="inventory_assign">Assign quick slot</string>
+	<string name="inventory_selectitem">Select item to assign</string>
 	<string name="inventory_assign_slot1">Slot 1</string>
 	<string name="inventory_assign_slot2">Slot 2</string>
 	<string name="inventory_assign_slot3">Slot 3</string>
@@ -352,7 +426,7 @@
 	<string name="skill_longdescription_barter">For every skill level, decreases the buying and selling gold penalty by %1$d percentage points.</string>
 	<string name="skill_longdescription_dodge">Increases block chance by %1$d percentage points for each skill level.</string>
 	<string name="skill_longdescription_barkskin">Increases damage resistance by %1$d for each skill level.</string>
-	<string name="skill_longdescription_more_criticals">Increases any existing critical skill given by equipment by %1$d %% for each skill level (percentage of existing critical skill value, not percentage points).</string>
+	<string name="skill_longdescription_more_criticals">Increases any existing critical skill given by equipment by %1$d %% for each skill level.</string>
 	<string name="skill_longdescription_better_criticals">Increases any existing critical multiplier given by equipment by %1$d %% for each skill level.</string>
 	<string name="skill_longdescription_speed">Increases maximum action points (AP) by %1$d for each skill level.</string>
 	<string name="skill_longdescription_coinfinder">Increases chance of finding gold in monster drops by %1$d %%, and increases amount of gold in drops by %2$d %% for each skill level (up to the maximum amount that the monster drops).</string>
@@ -401,6 +475,10 @@
 	<string name="preferences_optimized_drawing_title">Optimized drawing</string>
 	<string name="preferences_optimized_drawing">Disable this if you see graphical artifacts. Enabling this option will make the game only redraw changed parts of the screen every frame.</string>
 
+	<string name="preferences_high_quality_filters_title">High quality filters</string>
+	<string name="preferences_high_quality_filters">Disable this if you experience performance issues on filtered maps (dark caves for example). Enabling this option will make the game use advanced color filters, instead of solid color overlays.</string>
+	
+
 	<!-- =========================================== -->
 	<!-- Added in v0.6.11 -->
 
@@ -447,9 +525,9 @@
 	<string name="iteminfo_effect_weapon_attack_cost">Attack cost: %1$d AP</string>
 	<string name="iteminfo_effect_increase_attack_cost">Increases attack cost by %1$d AP</string>
 	<string name="iteminfo_effect_decrease_attack_cost">Lowers attack cost by %1$d AP</string>
-	<string name="iteminfo_effect_weapon_attack_chance">Attack chance: %1$d %%</string>
-	<string name="iteminfo_effect_increase_attack_chance">Increases attack chance by %1$d %%</string>
-	<string name="iteminfo_effect_decrease_attack_chance">Lowers attack chance by %1$d %%</string>
+	<string name="iteminfo_effect_weapon_attack_chance">Attack chance: %1$d</string>
+	<string name="iteminfo_effect_increase_attack_chance">Increases attack chance by %1$d</string>
+	<string name="iteminfo_effect_decrease_attack_chance">Lowers attack chance by %1$d</string>
 	<string name="iteminfo_effect_weapon_attack_damage">Attack damage: %1$d</string>
 	<string name="iteminfo_effect_weapon_attack_damage_minmax">Attack damage: %1$d-%2$d</string>
 	<string name="iteminfo_effect_increase_attack_damage">Increases attack damage by %1$d</string>
@@ -459,8 +537,8 @@
 	<string name="iteminfo_effect_increase_critical_skill">Increases critical skill by %1$d</string>
 	<string name="iteminfo_effect_decrease_critical_skill">Lowers critical skill by %1$d</string>
 	<string name="iteminfo_effect_critical_multiplier">Enables critical hits with a multiplier of x%1$.1f</string>
-	<string name="iteminfo_effect_increase_block_chance">Increases block chance by %1$d %%</string>
-	<string name="iteminfo_effect_decrease_block_chance">Lowers block chance by %1$d %%</string>
+	<string name="iteminfo_effect_increase_block_chance">Increases block chance by %1$d</string>
+	<string name="iteminfo_effect_decrease_block_chance">Lowers block chance by %1$d</string>
 	<string name="iteminfo_effect_increase_damage_resistance">Raises damage resistance by %1$d</string>
 	<string name="iteminfo_effect_decrease_damage_resistance">Lowers damage resistance by %1$d</string>
 	<string name="iteminfo_effect_increase_use_cost">Increases AP cost of using items in combat by %1$d AP</string>
@@ -483,6 +561,7 @@
 	<string name="heroinfo_useitem_cost">Use item cost (AP):</string>
 	<string name="combat_result_monstermoved">%1$s moves.</string>
 	<string name="combat_log_title">Combat log</string>
+	<string name="combat_log_noentries">No entries yet.</string>
 	<string name="localize_resources_from_mo_filename"></string>
 	<string name="conversation_reward_quest_finished">[Quest completed: \"%1$s\"]</string>
 	<string name="conversation_reward_quest_updated">[Quest updated: \"%1$s\"]</string>
@@ -526,16 +605,16 @@
 	<string name="skill_longdescription_weapon_prof_2hsword">For each skill level, increases attack chance of two-handed swords by %1$d %% of the item\'s base attack chance, increases block chance by %2$d %% of the item\'s base block chance, and increases critical skill by %3$d %% of the item\'s base critical skill.</string>
 	<string name="skill_longdescription_weapon_prof_axe">For each skill level, increases attack chance of axes and greataxes by %1$d %% of the item\'s base attack chance, increases block chance by %2$d %% of the item\'s base block chance, and increases critical skill by %3$d %% of the item\'s base critical skill.</string>
 	<string name="skill_longdescription_weapon_prof_blunt">For each skill level, increases attack chance of bludgeoning weapons by %1$d %% of the item\'s base attack chance, increases block chance by %2$d %% of the item\'s base block chance, and increases critical skill by %3$d %% of the item\'s base critical skill. This includes clubs, quarterstaves, maces, scepters, warhammers and giant hammers.</string>
-	<string name="skill_longdescription_weapon_prof_unarmed">When fighting without a weapon and shield, gain %1$d %% attack chance, %2$d damage potential and %3$d %% block chance per skill level.</string>
+	<string name="skill_longdescription_weapon_prof_unarmed">When fighting without a weapon and shield, gain %1$d attack chance, %2$d damage potential and %3$d block chance per skill level.</string>
 	<string name="skill_longdescription_armor_prof_shield">Increase damage resistance by %1$d per skill level while having a shield equipped.</string>
-	<string name="skill_longdescription_armor_prof_unarmored">While fighting without having any piece of armor equipped, gain %1$d %% block chance per skill level. Items made of cloth are not considered as being armor.</string>
+	<string name="skill_longdescription_armor_prof_unarmored">While fighting without having any piece of armor equipped, gain %1$d block chance per skill level. Items made of cloth are not considered as being armor.</string>
 	<string name="skill_longdescription_armor_prof_light">For every skill level, increases the block chance of every piece of light armor being worn by %1$d %% of their original block chances. Light armors include leather, light metal and hide armors.</string>
 	<string name="skill_longdescription_armor_prof_heavy">For every skill level, increases the block chance of every piece of heavy armor being worn by %1$d %% of their original block chances. Pieces of heavy armor have their movement penalties reduced by %2$d %% per skill level, and their attack speed penalties reduced by %3$d %% per skill level. Heavy armors include metal armors, chain mail and plate mail.</string>
 	<string name="skill_longdescription_fightstyle_dualwield">"Gives benefits when fighting with two weapons at the same time, one in the main hand and one in the off-hand.
 
 Without this skill, only %1$d %% of a weapon\'s qualities may be used when equipped in the off-hand. This includes attack chance, critical skill, damage potential and block chance. Without this skill, attack speed (AP cost) of making an attack is the sum of the attack speed of the main weapon and that of the weapon used in the off-hand.
 
-With one level of this skill, %2$d %% of the off-hand\'s weapon\'s qualities may be used, and the attack speed is the attack speed of the weapon in the main hand plus %3$d %% of the attack speed of the weapon in the off-hand.
+With one level of this skill, %2$d %% of the off-hand\'s weapon\'s qualities may be used, and the attack speed is the highest attack speed of both weapons plus %3$d %% of the lowest attack speed of both weapons.
 
 With two levels of this skill, %4$d %% of the off-hand\'s weapon\'s qualities may be used, and the attack speed equals the highest of the attack speeds of the two equipped weapons."</string>
 	<string name="skill_longdescription_fightstyle_2hand">"Gives benefits when using weapons that require both hands to wield, such as two-handed swords, greataxes or giant hammers.
@@ -581,4 +660,51 @@ Every skill level increases the attack chance of weapons with %1$d %% of their o
 	<string name="preferences_ui_use_localized_resources">Use translation of interface and content, where available. (requires restart)</string>
 	<string name="change_locale_requires_restart">Changing locale requires restart. Andor\'s Trail has been closed.</string>
 
+	<!-- =========================================== -->
+	<!-- Added in v0.7.2 -->
+	
+	<string name="inventory_category_all">All</string>
+	<string name="inventory_category_favorites">Favorites</string>
+	<string name="inventory_category_weapons">Weapon</string>
+	<string name="inventory_category_armor">Armor</string>
+	<string name="inventory_category_usable">Consumable</string>
+	<string name="inventory_category_quest">Quest Item</string>
+	<string name="inventory_category_other">Other</string>
+
+	<string name="inventory_sort_custom">Unsorted</string>
+	<string name="inventory_sort_name">Name</string>
+	<string name="inventory_sort_price">Price</string>
+	<string name="inventory_sort_quantity">Quantity</string>
+	<string name="inventory_sort_rarity">Rarity</string>
+	<string name="inventory_sort_type">Type</string>
+
+	<string name="shoplist_sort_custom">Unsorted</string>
+	<string name="shoplist_sort_name">Name</string>
+	<string name="shoplist_sort_price">Price</string>
+	<string name="shoplist_sort_quantity">Quantity</string>
+	<string name="shoplist_sort_rarity">Rarity</string>
+	<string name="shoplist_sort_type">Type</string>
+
+	<string name="skill_category_all">All</string>
+	<string name="skill_category_offense"> Offense</string>
+	<string name="skill_category_defense">Defense</string>
+	<string name="skill_category_criticals">Criticals</string>
+	<string name="skill_category_immunity">Immunity</string>
+	<string name="skill_category_utility">Utility</string>
+	<string name="skill_category_speciality">Speciality</string>
+	<string name="skill_category_proficiency">Proficiency</string>
+
+	<string name="skill_sort_unsorted">Unsorted</string>
+	<string name="skill_sort_name">Name</string>
+	<string name="skill_sort_points">Points</string>
+	<string name="skill_sort_unlocked">Unlocked</string>
+	
+	<string name="preferences_display_theme_title">Theme</string>
+	<string name="preferences_display_theme">Choose the UI theme. (requires restart)</string>
+	<string name="preferences_display_theme_blue">Cobalt</string>
+	<string name="preferences_display_theme_green">Malachite</string>
+	<string name="preferences_display_theme_charcoal">Obsidian</string>
+	<string name="change_theme_requires_restart">Changing UI theme requires restart. Andor\'s Trail has been closed.</string>
+	
+	
 </resources>

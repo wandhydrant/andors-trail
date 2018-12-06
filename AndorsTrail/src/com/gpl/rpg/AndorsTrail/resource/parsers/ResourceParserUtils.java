@@ -1,5 +1,8 @@
 package com.gpl.rpg.AndorsTrail.resource.parsers;
 
+import org.json.JSONException;
+import org.json.JSONObject;
+
 import com.gpl.rpg.AndorsTrail.AndorsTrailApplication;
 import com.gpl.rpg.AndorsTrail.model.ability.traits.AbilityModifierTraits;
 import com.gpl.rpg.AndorsTrail.model.ability.traits.StatsModifierTraits;
@@ -9,14 +12,18 @@ import com.gpl.rpg.AndorsTrail.resource.parsers.json.JsonFieldNames;
 import com.gpl.rpg.AndorsTrail.util.ConstRange;
 import com.gpl.rpg.AndorsTrail.util.L;
 import com.gpl.rpg.AndorsTrail.util.Size;
-import org.json.JSONException;
-import org.json.JSONObject;
 
 public final class ResourceParserUtils {
 
 	public static int parseImageID(DynamicTileLoader tileLoader, String s) {
 		String[] parts = s.split(":");
 		return tileLoader.prepareTileID(parts[0], Integer.parseInt(parts[1]));
+	}
+	
+	public static Size parseTilesetTileSize(DynamicTileLoader tileLoader, String s, final Size defaultSize) {
+		if (s == null || s.length() <= 0) return defaultSize;
+		String[] parts = s.split(":");
+		return tileLoader.getTilesetTileSize(parts[0]);
 	}
 
 	private static final Size size1x1 = new Size(1, 1);

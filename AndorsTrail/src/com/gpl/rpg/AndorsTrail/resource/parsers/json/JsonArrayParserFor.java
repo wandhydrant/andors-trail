@@ -1,10 +1,10 @@
 package com.gpl.rpg.AndorsTrail.resource.parsers.json;
 
-import org.json.JSONArray;
-import org.json.JSONException;
-
 import java.lang.reflect.Array;
 import java.util.ArrayList;
+
+import org.json.JSONArray;
+import org.json.JSONException;
 
 public abstract class JsonArrayParserFor<T> extends JsonParserFor<T> {
 	private final Class<T> classType;

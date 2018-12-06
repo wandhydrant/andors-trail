@@ -20,8 +20,12 @@ public final class ActorConditionEffect {
 		this.chance = chance;
 	}
 
+	public boolean isImmunity() {
+		return magnitude == ActorCondition.MAGNITUDE_REMOVE_ALL && duration != ActorCondition.DURATION_NONE;
+	}
+	
 	public boolean isRemovalEffect() {
-		return magnitude == ActorCondition.MAGNITUDE_REMOVE_ALL;
+		return magnitude == ActorCondition.MAGNITUDE_REMOVE_ALL && duration == ActorCondition.DURATION_NONE;
 	}
 
 	public ActorCondition createCondition() { return createCondition(duration); }

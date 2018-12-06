@@ -1,5 +1,7 @@
 package com.gpl.rpg.AndorsTrail.activity;
 
+import java.util.ArrayList;
+
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
@@ -16,9 +18,17 @@ import android.view.View.OnClickListener;
 import android.view.View.OnKeyListener;
 import android.view.ViewGroup;
 import android.view.Window;
-import android.widget.*;
+import android.widget.ArrayAdapter;
+import android.widget.Button;
+import android.widget.CompoundButton;
 import android.widget.CompoundButton.OnCheckedChangeListener;
+import android.widget.ImageView;
+import android.widget.ListView;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
+import android.widget.TextView;
 import android.widget.TextView.BufferType;
+
 import com.gpl.rpg.AndorsTrail.AndorsTrailApplication;
 import com.gpl.rpg.AndorsTrail.Dialogs;
 import com.gpl.rpg.AndorsTrail.R;
@@ -33,24 +43,18 @@ import com.gpl.rpg.AndorsTrail.model.quest.Quest;
 import com.gpl.rpg.AndorsTrail.model.quest.QuestLogEntry;
 import com.gpl.rpg.AndorsTrail.model.quest.QuestProgress;
 import com.gpl.rpg.AndorsTrail.resource.tiles.TileManager;
-
-import java.util.ArrayList;
+import com.gpl.rpg.AndorsTrail.util.ThemeHelper;
 
 public final class ConversationActivity
 		extends Activity
 		implements OnKeyListener
 		, ConversationController.ConversationStatemachine.ConversationStateListener {
 
-	private static final int playerNameColor = Color.argb(255, 0xbb, 0x22, 0x22);
-	private static final int NPCNameColor = Color.argb(255, 0xbb, 0xbb, 0x22);
-	private static final int playerPhraseColor = 0;
-	private static final int NPCPhraseColor = 0;
-	private static final int rewardColor = Color.argb(255, 0x99, 0x99, 0x55);
-
 	private WorldContext world;
 	private Player player;
 	private final ArrayList<ConversationStatement> conversationHistory = new ArrayList<ConversationStatement>();
 	private ConversationController.ConversationStatemachine conversationState;
+	private int numberOfNewMessage = 0;
 
 	private StatementContainerAdapter listAdapter;
 	private Button nextButton;
@@ -60,6 +64,7 @@ public final class ConversationActivity
 
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
+		setTheme(ThemeHelper.getDialogTheme());
 		super.onCreate(savedInstanceState);
 		AndorsTrailApplication app = AndorsTrailApplication.getApplicationFromActivity(this);
 		if (!app.isInitialized()) { finish(); return; }
@@ -132,11 +137,16 @@ public final class ConversationActivity
 	}
 
 	private int getSelectedReplyIndex() {
+		int j = 0;
 		for (int i = 0; i < replyGroup.getChildCount(); ++i) {
 			final View v = replyGroup.getChildAt(i);
 			if (v == null) continue;
+			if (!(v instanceof RadioButton)) {
+				continue;
+			}
 			final RadioButton rb = (RadioButton) v;
-			if (rb.isChecked()) return i;
+			if (rb.isChecked()) return j;
+			j++;
 		}
 		return -1;
 	}
@@ -145,12 +155,21 @@ public final class ConversationActivity
 		int replyCount = replyGroup.getChildCount();
 		if (replyCount <= 0) return;
 		if (i < 0) i = 0;
-		else if (i >= replyCount) i = replyCount - 1;
+		else if (i >= (replyCount-1)) i = replyCount-1;
 
-		View v = replyGroup.getChildAt(i);
-		if (v == null) return;
-		RadioButton rb = (RadioButton) v;
-		rb.setChecked(true);
+		for (int j = 0; j < replyGroup.getChildCount(); ++j) {
+			View v = replyGroup.getChildAt(j);
+			if (v == null) continue;
+			if (!(v instanceof RadioButton)) {
+				continue;
+			}
+			i--;
+			if (i < 0) {
+				RadioButton rb = (RadioButton) v;
+				rb.setChecked(true);
+				break;
+			}
+		}
 	}
 
 	@Override
@@ -198,6 +217,9 @@ public final class ConversationActivity
 		for (int i = 0; i < replyGroup.getChildCount(); ++i) {
 			final View v = replyGroup.getChildAt(i);
 			if (v == null) continue;
+			if (!(v instanceof RadioButton)) {
+				continue;
+			}
 			final RadioButton rb = (RadioButton) v;
 			if (rb.isChecked()) {
 				return rb;
@@ -206,7 +228,28 @@ public final class ConversationActivity
 		return null; // No reply was found. This is probably an error.
 	}
 
+	private void greyAllConversationStatement(){
+		int numberOfMessage = this.conversationHistory.size();
+		while(numberOfNewMessage != 0){
+			ConversationStatement conversation = conversationHistory.get(numberOfMessage - numberOfNewMessage);
+			if(conversation.hasActor()){
+				conversation.textColor = getSpanColor(R.attr.ui_theme_dialogue_dark_color);
+				if(conversation.isPlayerActor){
+					conversation.nameColor = getSpanColor(R.attr.ui_theme_playername_light_color);
+				} else {
+					conversation.nameColor = getSpanColor(R.attr.ui_theme_npcname_dark_color);
+				}
+			} else if (conversation.isReward) {
+				conversation.textColor = getSpanColor(R.attr.ui_theme_reward_light_color);
+			} else {
+				conversation.textColor = getSpanColor(R.attr.ui_theme_dialogue_dark_color);;
+			}
+			numberOfNewMessage--;
+		}
+	}
+
 	private void nextButtonClicked() {
+		greyAllConversationStatement();
 		RadioButton rb = getSelectedReplyButton();
 		replyGroup.removeAllViews();
 		nextButton.setEnabled(false);
@@ -215,12 +258,12 @@ public final class ConversationActivity
 		} else {
 			if (rb == null) return;
 			Reply r = (Reply) rb.getTag();
-			addConversationStatement(player, rb.getText().toString(), playerPhraseColor);
+			addConversationStatement(player, rb.getText().toString(), getSpanColor(R.attr.ui_theme_dialogue_light_color), false);
 			conversationState.playerSelectedReply(getResources(), r);
 		}
 	}
 
-	private void addConversationStatement(Actor actor, String text, int textColor) {
+	private void addConversationStatement(Actor actor, String text, int textColor, boolean isReward) {
 		ConversationStatement s = new ConversationStatement();
 		if (actor != null) {
 			s.iconID = actor.iconID;
@@ -229,10 +272,12 @@ public final class ConversationActivity
 			s.iconID = ConversationStatement.NO_ICON;
 		}
 		s.text = text;
-		s.nameColor = actor == player ? playerNameColor : NPCNameColor;
+		s.nameColor = actor == player ? getSpanColor(R.attr.ui_theme_playername_light_color) : getSpanColor(R.attr.ui_theme_npcname_light_color);
 		s.textColor = textColor;
 		s.isPlayerActor = actor != null && actor == player;
+		s.isReward = isReward;
 		conversationHistory.add(s);
+		numberOfNewMessage++;
 		statementList.clearFocus();
 		listAdapter.notifyDataSetChanged();
 		statementList.requestLayout();
@@ -254,6 +299,7 @@ public final class ConversationActivity
 		public int nameColor;
 		public int textColor;
 		public boolean isPlayerActor;
+		public boolean isReward;
 
 		public boolean hasActor() {
 			return iconID != NO_ICON;
@@ -270,6 +316,7 @@ public final class ConversationActivity
 			dest.writeInt(nameColor);
 			dest.writeInt(textColor);
 			dest.writeByte((byte) (isPlayerActor ? 1 : 0));
+			dest.writeByte((byte) (isReward ? 1 : 0));
 		}
 
 		@SuppressWarnings("unused")
@@ -283,6 +330,7 @@ public final class ConversationActivity
 				result.nameColor = in.readInt();
 				result.textColor = in.readInt();
 				result.isPlayerActor = in.readByte() == 1;
+				result.isReward = in.readByte() == 1;
 				return result;
 			}
 
@@ -349,7 +397,7 @@ public final class ConversationActivity
 
 	@Override
 	public void onTextPhraseReached(String message, Actor actor, String phraseID) {
-		addConversationStatement(actor, message, NPCPhraseColor);
+		addConversationStatement(actor, message, getSpanColor(R.attr.ui_theme_dialogue_light_color), false);
 	}
 
 	@Override
@@ -385,7 +433,7 @@ public final class ConversationActivity
 	}
 
 	private void addRewardMessage(String text) {
-		addConversationStatement(null, text, rewardColor);
+		addConversationStatement(null, text, getSpanColor(R.attr.ui_theme_reward_light_color), true);
 	}
 
 	@Override
@@ -419,6 +467,7 @@ public final class ConversationActivity
 	@Override
 	public void onConversationHasReply(Reply r, String message) {
 		RadioGroup.LayoutParams layoutParams = new RadioGroup.LayoutParams(RadioGroup.LayoutParams.MATCH_PARENT, RadioGroup.LayoutParams.WRAP_CONTENT);
+		layoutParams.setMargins(0, getResources().getDimensionPixelOffset(R.dimen.conversation_replyseparator_margintop), 0, getResources().getDimensionPixelOffset(R.dimen.conversation_replyseparator_marginbottom));
 		RadioButton rb = new RadioButton(this);
 		rb.setLayoutParams(layoutParams);
 		rb.setText(message);
@@ -427,6 +476,18 @@ public final class ConversationActivity
 		rb.setShadowLayer(1, 1, 1, Color.BLACK);
 		rb.setFocusable(false);
 		rb.setFocusableInTouchMode(false);
+		if (replyGroup.getChildCount() == 0) { //Add a separator before first item
+			ImageView iv = new ImageView(this);
+			iv.setBackgroundResource(ThemeHelper.getThemeResource(this, R.attr.ui_theme_listseparator_drawable));
+			RadioGroup.LayoutParams ivLayoutParams = new RadioGroup.LayoutParams(RadioGroup.LayoutParams.MATCH_PARENT, RadioGroup.LayoutParams.WRAP_CONTENT);
+			ivLayoutParams.setMargins(0, getResources().getDimensionPixelOffset(R.dimen.conversation_replyseparator_margintop), 0, getResources().getDimensionPixelOffset(R.dimen.conversation_replyseparator_marginbottom));
+			iv.setLayoutParams(ivLayoutParams);
+			replyGroup.addView(iv, ivLayoutParams);
+		}
 		replyGroup.addView(rb, layoutParams);
+	}
+	
+	private int getSpanColor(int resId) {
+		return ThemeHelper.getThemeColor(this, resId);
 	}
 }

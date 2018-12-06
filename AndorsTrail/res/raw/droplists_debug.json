@@ -99,7 +99,14 @@
     },
     {
         "id": "debuglist2",
-        "items": []
+        "items": [{
+                "itemID": "gold",
+                "quantity": {
+                    "min": 3,
+                    "max": 3
+                },
+                "chance": 100
+            }]
     },
     {
         "id": "startitems",

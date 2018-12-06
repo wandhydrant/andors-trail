@@ -1,14 +1,15 @@
 package com.gpl.rpg.AndorsTrail.model.ability;
 
-import com.gpl.rpg.AndorsTrail.context.WorldContext;
-
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
 import java.io.IOException;
 
+import com.gpl.rpg.AndorsTrail.context.WorldContext;
+
 public final class ActorCondition {
 	public static final int MAGNITUDE_REMOVE_ALL = -99;
 	public static final int DURATION_FOREVER = 999;
+	public static final int DURATION_NONE = 0;
 
 	public final ActorConditionType conditionType;
 	public int magnitude;

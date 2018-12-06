@@ -1,10 +1,10 @@
 package com.gpl.rpg.AndorsTrail.controller;
 
+import java.util.Random;
+
 import com.gpl.rpg.AndorsTrail.AndorsTrailApplication;
 import com.gpl.rpg.AndorsTrail.util.ConstRange;
 import com.gpl.rpg.AndorsTrail.util.Range;
-
-import java.util.Random;
 
 public final class Constants {
 	public static final int PERCENT_EXP_LOST_WHEN_DIED = 30;
@@ -19,7 +19,10 @@ public final class Constants {
 	public static final int EXP_FACTOR_DAMAGERESISTANCE = 9;
 	public static final float EXP_FACTOR_SCALING = 0.7f;
 	public static final int FLEE_FAIL_CHANCE_PERCENT = 20;
-	public static final long MINIMUM_INPUT_INTERVAL = AndorsTrailApplication.DEVELOPMENT_DEBUGBUTTONS ? 50 : 200;
+	public static final long MINIMUM_INPUT_INTERVAL_FAST = 50;
+	public static final long MINIMUM_INPUT_INTERVAL_STD = 200;
+	//TODO restore final modifier before release
+	public static long MINIMUM_INPUT_INTERVAL = AndorsTrailApplication.DEVELOPMENT_FASTSPEED ? MINIMUM_INPUT_INTERVAL_FAST : MINIMUM_INPUT_INTERVAL_STD;
 	public static final int MAX_MAP_WIDTH = 33;
 	public static final int MAX_MAP_HEIGHT = 33;
 
@@ -31,8 +34,9 @@ public final class Constants {
 	public static final int TICKS_PER_ROUND = ROUND_DURATION / TICK_DELAY;
 	public static final int TICKS_PER_FULLROUND = FULLROUND_DURATION / TICK_DELAY;
 	public static final int SPLATTER_DURATION_MS = 20000;
+	public static final int STATUS_TEXT_AUTOHIDE_DELAY = ROUND_DURATION;
 
-	public static final ConstRange monsterWaitTurns = new ConstRange(30,4);
+	public static final ConstRange monsterWaitTurns = new ConstRange(5,1);
 	public static final long MAP_UNVISITED_RESPAWN_DURATION_MS = 3 * 60 * 1000; // 3 min in milliseconds
 
 	public static final String PREFERENCE_MODEL_LASTRUNVERSION = "lastversion";

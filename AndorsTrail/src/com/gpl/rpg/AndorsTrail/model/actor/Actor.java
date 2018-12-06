@@ -1,16 +1,16 @@
 package com.gpl.rpg.AndorsTrail.model.actor;
 
-import android.util.FloatMath;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
 import com.gpl.rpg.AndorsTrail.model.ability.ActorCondition;
+import com.gpl.rpg.AndorsTrail.model.item.ItemTraits_OnHitReceived;
 import com.gpl.rpg.AndorsTrail.model.item.ItemTraits_OnUse;
 import com.gpl.rpg.AndorsTrail.util.Coord;
 import com.gpl.rpg.AndorsTrail.util.CoordRect;
 import com.gpl.rpg.AndorsTrail.util.Range;
 import com.gpl.rpg.AndorsTrail.util.Size;
-
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
 
 public class Actor {
 	public int iconID;
@@ -25,6 +25,7 @@ public class Actor {
 	public final Range ap = new Range();
 	public final Range health = new Range();
 	public final ArrayList<ActorCondition> conditions = new ArrayList<ActorCondition>();
+	public final ArrayList<ActorCondition> immunities = new ArrayList<ActorCondition>();
 	public int moveCost;
 	public int attackCost;
 	public int attackChance;
@@ -34,6 +35,12 @@ public class Actor {
 	public int blockChance;
 	public int damageResistance;
 	public ItemTraits_OnUse[] onHitEffects;
+	public ItemTraits_OnHitReceived[] onHitReceivedEffects;
+	public ItemTraits_OnUse onDeathEffects;
+	public boolean hasVFXRunning = false;
+	public long vfxStartTime = 0;
+	public int vfxDuration = 0;
+	public final Coord lastPosition = new Coord();
 
 	public Actor(
 			Size tileSize
@@ -62,7 +69,10 @@ public class Actor {
 	public int getDamageResistance() { return damageResistance; }
 	public ItemTraits_OnUse[] getOnHitEffects() { return onHitEffects; }
 	public List<ItemTraits_OnUse> getOnHitEffectsAsList() { return onHitEffects == null ? null : Arrays.asList(onHitEffects); }
-
+	public ItemTraits_OnHitReceived[] getOnHitReceivedEffects() { return onHitReceivedEffects; }
+	public List<ItemTraits_OnHitReceived> getOnHitReceivedEffectsAsList() { return onHitReceivedEffects == null ? null : Arrays.asList(onHitReceivedEffects); }
+	public ItemTraits_OnUse getOnDeathEffects() { return onDeathEffects; }
+	
 	public boolean hasCriticalSkillEffect() { return getCriticalSkill() != 0; }
 	public boolean hasCriticalMultiplierEffect() { float m = getCriticalMultiplier(); return m != 0 && m != 1; }
 	public boolean hasCriticalAttacks() { return hasCriticalSkillEffect() && hasCriticalMultiplierEffect(); }
@@ -71,7 +81,7 @@ public class Actor {
 	public int getEffectiveCriticalChance() { return getEffectiveCriticalChance(getCriticalSkill()); }
 	public static int getEffectiveCriticalChance(int criticalSkill) {
 		if (criticalSkill <= 0) return 0;
-		int v = (int) (-5 + 2 * FloatMath.sqrt(5*criticalSkill));
+		int v = (int) (-5 + 2 * Math.sqrt(5*criticalSkill));
 		if (v < 0) return 0;
 		return v;
 	}

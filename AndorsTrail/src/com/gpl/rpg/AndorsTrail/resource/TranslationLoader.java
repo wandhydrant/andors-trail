@@ -1,14 +1,15 @@
 package com.gpl.rpg.AndorsTrail.resource;
 
-import android.content.res.AssetManager;
-import android.content.res.Resources;
-import com.gpl.rpg.AndorsTrail.R;
-import com.gpl.rpg.AndorsTrail.util.L;
-
 import java.io.BufferedInputStream;
 import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
+
+import android.content.res.AssetManager;
+import android.content.res.Resources;
+
+import com.gpl.rpg.AndorsTrail.R;
+import com.gpl.rpg.AndorsTrail.util.L;
 
 public final class TranslationLoader {
 	private final BinaryMoFileParser parser;
@@ -43,10 +44,15 @@ public final class TranslationLoader {
 		if (parser == null) return s;
 		if (s.length() <= 1) return s;
 		try {
-			//String t = parser.translate(s);
+			String t = parser.translate(s);
 			//L.log(translations.size() + " : " + s + " -> " + t);
-			//return t;
-			return parser.translate(s);
+			if (t.startsWith("[REVIEW]")) {
+				t = t.substring(8);
+			} else if (t.startsWith("[OUTDATED]")) {
+				t = s;
+			}
+			return t;
+			//return parser.translate(s);
 		} catch (IOException e) {
 			return s;
 		}
@@ -68,6 +74,7 @@ public final class TranslationLoader {
 	public String translateQuestLogEntry(String s) { return tr(s); }
 	public String translateConversationPhrase(String s) { return tr(s); }
 	public String translateConversationReply(String s) { return tr(s); }
+	public String translateWorldmapLocation(String s) { return tr(s); }
 
 	private static final class BinaryMoFileParser {
 		private final InputStream is;
@@ -171,4 +178,5 @@ public final class TranslationLoader {
 			return 0;
 		}
 	}
+
 }

@@ -3,13 +3,11 @@ package com.gpl.rpg.AndorsTrail.view;
 import android.content.Context;
 import android.content.Intent;
 import android.content.res.Resources;
-import android.graphics.drawable.BitmapDrawable;
-import android.graphics.drawable.Drawable;
-import android.graphics.drawable.LayerDrawable;
 import android.util.AttributeSet;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.RelativeLayout;
+
 import com.gpl.rpg.AndorsTrail.AndorsTrailApplication;
 import com.gpl.rpg.AndorsTrail.R;
 import com.gpl.rpg.AndorsTrail.activity.HeroinfoActivity;
@@ -26,12 +24,13 @@ public final class StatusView extends RelativeLayout implements PlayerStatsListe
 	private final ControllerContext controllers;
 	private final WorldContext world;
 	private final Player player;
+	private final Resources res;
 
 	private final RangeBar healthBar;
 	private final RangeBar expBar;
 	private final ImageButton heroImage;
 	private boolean showingLevelup;
-	private final Drawable levelupDrawable;
+//	private final Drawable levelupDrawable;
 
 	public StatusView(final Context context, AttributeSet attr) {
 		super(context, attr);
@@ -59,11 +58,11 @@ public final class StatusView extends RelativeLayout implements PlayerStatsListe
 		expBar = (RangeBar) findViewById(R.id.statusview_exp);
 		expBar.init(R.drawable.ui_progress_exp, R.string.status_exp);
 
-		Resources res = getResources();
-		levelupDrawable = new LayerDrawable(new Drawable[] {
-				new BitmapDrawable(res, world.tileManager.preloadedTiles.getBitmap(player.iconID))
-				,new BitmapDrawable(res, world.tileManager.preloadedTiles.getBitmap(TileManager.iconID_moveselect))
-		});
+		res = getResources();
+//		levelupDrawable = new LayerDrawable(new Drawable[] {
+//				new BitmapDrawable(res, world.tileManager.preloadedTiles.getBitmap(player.iconID))
+//				,new BitmapDrawable(res, world.tileManager.preloadedTiles.getBitmap(TileManager.iconID_moveselect))
+//		});
 
 		updateStatus();
 		updateIcon(player.canLevelup());
@@ -101,9 +100,9 @@ public final class StatusView extends RelativeLayout implements PlayerStatsListe
 	private void updateIcon(boolean canLevelUp) {
 		showingLevelup = canLevelUp;
 		if (canLevelUp) {
-			heroImage.setImageDrawable(levelupDrawable);
+			world.tileManager.setImageViewTileWithOverlay(res, heroImage, TileManager.iconID_moveselect, world.tileManager.preloadedTiles.getBitmap(player.iconID), true);
 		} else {
-			world.tileManager.setImageViewTile(heroImage, player);
+			world.tileManager.setImageViewTile(res, heroImage, player);
 		}
 	}
 
@@ -121,6 +120,12 @@ public final class StatusView extends RelativeLayout implements PlayerStatsListe
 	@Override
 	public void onActorMoveCostChanged(Actor actor, int newMoveCost) { }
 
+	@Override
+	public void onPlayerReequipCostChanged(Player actor, int newAttackCost) {}
+
+	@Override
+	public void onPlayerUseCostChanged(Player actor, int newMoveCost) {}
+	
 	@Override
 	public void onPlayerExperienceChanged(Player p) {
 		updateExperience();

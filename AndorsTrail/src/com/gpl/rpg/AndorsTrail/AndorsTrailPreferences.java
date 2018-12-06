@@ -1,5 +1,7 @@
 package com.gpl.rpg.AndorsTrail;
 
+import com.gpl.rpg.AndorsTrail.util.ThemeHelper;
+
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.preference.PreferenceManager;
@@ -35,6 +37,7 @@ public final class AndorsTrailPreferences {
 	public static final int QUICKSLOTS_POSITION_HORIZONTAL_BOTTOM_LEFT = 4;
 	public static final int QUICKSLOTS_POSITION_HORIZONTAL_BOTTOM_RIGHT = 5;
 	public static final int QUICKSLOTS_POSITION_VERTICAL_BOTTOM_RIGHT = 6;
+	public static final int ATTACKSPEED_DEFAULT_MILLISECONDS = 1000;
 
 	public boolean confirmRest = true;
 	public boolean confirmAttack = true;
@@ -47,11 +50,13 @@ public final class AndorsTrailPreferences {
 	public int dpadPosition;
 	public boolean dpadMinimizeable = true;
 	public boolean optimizedDrawing = false;
+	public boolean highQualityFilters = true;
 	public boolean enableUiAnimations = true;
 	public int displayOverwriteSavegame = CONFIRM_OVERWRITE_SAVEGAME_ALWAYS;
 	public int quickslotsPosition = QUICKSLOTS_POSITION_HORIZONTAL_CENTER_BOTTOM;
 	public boolean showQuickslotsWhenToolboxIsVisible = false;
 	public boolean useLocalizedResources = true;
+	public int selectedTheme = 0;
 
 	public void read(final Context androidContext) {
 		AndorsTrailPreferences dest = this;
@@ -67,12 +72,13 @@ public final class AndorsTrailPreferences {
 			dest.dpadPosition = Integer.parseInt(prefs.getString("dpadposition", Integer.toString(DPAD_POSITION_DISABLED)));
 			dest.dpadMinimizeable = prefs.getBoolean("dpadMinimizeable", true);
 			dest.optimizedDrawing = prefs.getBoolean("optimized_drawing", false);
+			dest.highQualityFilters = prefs.getBoolean("high_quality_filters", true);
 			dest.enableUiAnimations = prefs.getBoolean("enableUiAnimations", true);
 			dest.displayOverwriteSavegame = Integer.parseInt(prefs.getString("display_overwrite_savegame", Integer.toString(CONFIRM_OVERWRITE_SAVEGAME_ALWAYS)));
 			dest.quickslotsPosition = Integer.parseInt(prefs.getString("quickslots_placement", Integer.toString(QUICKSLOTS_POSITION_HORIZONTAL_CENTER_BOTTOM)));
 			dest.showQuickslotsWhenToolboxIsVisible = prefs.getBoolean("showQuickslotsWhenToolboxIsVisible", false);
 			dest.useLocalizedResources = prefs.getBoolean("useLocalizedResources", true);
-
+			dest.selectedTheme = Integer.parseInt(prefs.getString("selectedTheme", Integer.toString(0)));
 			// This might be implemented as a skill in the future.
 			//dest.movementAggressiveness = Integer.parseInt(prefs.getString("movementaggressiveness", Integer.toString(MOVEMENTAGGRESSIVENESS_NORMAL)));
 		} catch (Exception e) {
@@ -87,11 +93,13 @@ public final class AndorsTrailPreferences {
 			dest.dpadPosition = DPAD_POSITION_DISABLED;
 			dest.dpadMinimizeable = true;
 			dest.optimizedDrawing = false;
+			dest.highQualityFilters = true;
 			dest.enableUiAnimations = true;
 			dest.displayOverwriteSavegame = CONFIRM_OVERWRITE_SAVEGAME_ALWAYS;
 			dest.quickslotsPosition = QUICKSLOTS_POSITION_HORIZONTAL_CENTER_BOTTOM;
 			dest.showQuickslotsWhenToolboxIsVisible = false;
 			dest.useLocalizedResources = true;
+			dest.selectedTheme = 0;
 		}
 	}
 }

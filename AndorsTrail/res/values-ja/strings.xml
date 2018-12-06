@@ -1,22 +1,17 @@
-<?xml version="1.0" encoding="utf-8"?>
-
+<?xml version='1.0' encoding='utf-8'?>
 <resources>
 	<string name="app_name">Andor\'s Trail</string>
 	<string name="app_description">Quest-driven fantasy RPG</string>
 
-	<string name="exit">終了</string>
 	<string name="exit_to_menu">メニューに戻る</string>
-	<string name="menu_pause">ポーズ</string>
 	<string name="menu_settings">設定</string>
 	<string name="menu_save">Save</string>
-	<string name="menu_load">Load</string>
 	<string name="menu_save_gamesaved">スロット %1$d にセーブされました</string>
 	<string name="menu_save_failed">セーブできません! SDカードはマウントされていて、書き込み可能ですか?</string>
 
 	<string name="loadsave_title_save">セーブ</string>
 	<string name="loadsave_title_load">ロード</string>
 	<string name="loadsave_selectslot">Select slot</string>
-	<string name="loadsave_slot_empty">(empty)</string>
 	<string name="savegame_currenthero_displayinfo">level %1$d, %2$d exp, %3$d gold</string>
 
 	<string name="dialog_loading_message">Loading resources...</string>
@@ -26,27 +21,17 @@
 
 	<string name="dialog_close">閉じる</string>
 
-	<string name="dialog_confirmexit_title">終了</string>
-	<string name="dialog_confirmexit_message">本当に終了してもよろしいですか?</string>
-
-	<string name="dialog_paused_title">Paused</string>
-	<string name="dialog_paused_message">一時停止中</string>
-	<string name="dialog_paused_resume">再開</string>
-
 	<string name="dialog_monsterencounter_title">遭遇</string>
 	<string name="dialog_monsterencounter_message">攻撃しますか?\n敵の強さ: %1$s</string>
 	<string name="dialog_monsterencounter_info">情報</string>
 
 	<string name="status_hp">HP:</string>
-	<string name="status_mp">MP:</string>
 	<string name="status_ap">AP:</string>
 	<string name="status_exp">Level:</string>
 
 	<string name="heroinfo_char">全般</string>
 	<string name="heroinfo_inv">アイテム</string>
-	<string name="heroinfo_wear">装備</string>
 	<string name="heroinfo_skill">スキル</string>
-	<string name="heroinfo_spell">呪文</string>
 	<string name="heroinfo_levelup">Level up</string>
 	<string name="heroinfo_level">Level</string>
 	<string name="heroinfo_totalexperience">総経験値(exp)</string>
@@ -59,7 +44,6 @@
 	<string name="combat_attack">攻撃 (%1$d AP)</string>
 	<string name="combat_move">移動 (%1$d AP)</string>
 	<string name="combat_use">アイテム使用</string>
-	<string name="combat_spell">呪文</string>
 	<string name="combat_endturn">ターン終了</string>
 	<!-- <string name="combat_endcombat">End combat</string>-->
 	<string name="combat_flee">逃走</string>
@@ -108,10 +92,7 @@
 	<string name="actorinfo_class">Class:</string>
 	<string name="actorinfo_difficulty">難易度:</string>
 	<string name="actorinfo_health">体力:</string>
-	<string name="actorinfo_attacksperturn">攻撃回数/ターン:</string>
-	<string name="actorinfo_movesperturn">移動回数/ターン:</string>
 	<string name="actorinfo_attack">攻撃力:</string>
-	<string name="actorinfo_criticalhit">クリティカルヒット:</string>
 	<string name="actorinfo_defense">防御力:</string>
 	<string name="actorinfo_movecost">移動コスト(AP):</string>
 	<string name="actorinfo_basetraits">基礎戦闘能力 (装備とスキルを除く)</string>
@@ -134,18 +115,6 @@
 	<string name="iteminfo_action_use_ap">使う (%1$d AP)</string>
 	<string name="iteminfo_action_equip_ap">装備 (%1$d AP)</string>
 	<string name="iteminfo_action_unequip_ap">はずす (%1$d AP)</string>
-
-	<string name="itemcategory_money">gold</string>
-	<string name="itemcategory_weapon">武器</string>
-	<string name="itemcategory_shield">防具 (盾)</string>
-	<string name="itemcategory_wearable_head">防具 (頭)</string>
-	<string name="itemcategory_wearable_body">防具 (胴)</string>
-	<string name="itemcategory_wearable_hand">防具 (手)</string>
-	<string name="itemcategory_wearable_feet">防具 (足)</string>
-	<string name="itemcategory_wearable_neck">防具 (首)</string>
-	<string name="itemcategory_wearable_ring">防具 (指輪)</string>
-	<string name="itemcategory_potion">ポーション</string>
-	<string name="itemcategory_other">その他</string>
 
 	<string name="startscreen_continue">ゲームを再開する</string>
 	<string name="startscreen_newgame">New game</string>
@@ -177,12 +146,12 @@
 	<string name="levelup_buttontext">Level up</string>
 	<string name="levelup_add_health">体力の上昇 (+%1$d HP)</string>
 	<string name="levelup_add_health_description">最大HPが %1$d だけ上昇します。</string>
-	<string name="levelup_add_attackchance">命中率の向上 (+%1$d%%)</string>
-	<string name="levelup_add_attackchance_description">基礎命中率が %1$d%% だけ上昇します。</string>
+	<string name="levelup_add_attackchance">命中率の向上 (+%1$d)</string>
+	<string name="levelup_add_attackchance_description">基礎命中率が %1$d だけ上昇します。</string>
 	<string name="levelup_add_attackdamage">ダメージの強化 (+%1$d)</string>
 	<string name="levelup_add_attackdamage_description">基礎ダメージが %1$d だけ上昇します。</string>
-	<string name="levelup_add_blockchance">回避率の向上 (+%1$d%%)</string>
-	<string name="levelup_add_blockchance_description">基礎回避率が %1$d%% だけ上昇します。</string>
+	<string name="levelup_add_blockchance">回避率の向上 (+%1$d)</string>
+	<string name="levelup_add_blockchance_description">基礎回避率が %1$d だけ上昇します。</string>
 
 	<string name="dialog_rest_title">休憩</string>
 	<string name="dialog_rest_confirm_message">ここで休みますか?</string>
@@ -234,7 +203,6 @@
 		Thanks for all the feedback!
 	</string>
 
-	<string name="questlog_title">クエスト</string>
 	<string name="questlog_includecompleted_prompt">表示するクエスト:</string>
 	<string name="questlog_includecompleted_hidecompleted">完了したクエスト以外</string>
 	<string name="questlog_includecompleted_includecompleted">完了したクエストを含める</string>
@@ -388,7 +356,7 @@
 	<string name="skill_longdescription_barter">スキル1レベルごとに、店でアイテムを買うときに割高にされる比率や、売るときに割安にされる比率を %1$d%% ずつ有利にします。</string>
 	<string name="skill_longdescription_dodge">スキル1レベルにつき、回避率を %1$d 向上させます。</string>
 	<string name="skill_longdescription_barkskin">スキル1レベルにつき、ダメージを %1$d ずつ軽減します。</string>
-	<string name="skill_longdescription_more_criticals">スキル1レベルにつき、装備によるクリティカルスキルを %1$d%% 増加させます。(クリティカルスキルの合計値に対する割合であり、この値がそのままクリティカル率に加算されるわけではありません。)</string>
+	<string name="skill_longdescription_more_criticals">スキル1レベルにつき、装備によるクリティカルスキルを %1$d%% 増加させます。</string>
 	<string name="skill_longdescription_better_criticals">スキル1レベルにつき、装備によるクリティカル倍率を %1$d%% 増加させます。</string>
 	<string name="skill_longdescription_speed">スキル1レベルにつき、行動値(AP)の最大値を %1$d ずつ増加させます。</string>
 	<string name="skill_longdescription_coinfinder">スキル1レベルにつき、モンスターがgoldを落とす確率を %1$d%%, モンスターが落とすgoldの量を %2$d%% 増加させます。(そのモンスターが落とすgoldの上限額は増加しません。)</string>
@@ -472,4 +440,35 @@
 
 	<string name="localize_resources_from_mo_filename">ja.mo</string>
 
-</resources>
+<string name="combat_miss_animation_message">欠かす</string>
+	
+	<string name="preferences_display_loot_dialog_on_items">アイテムを見つけたときに戦利品]ダイアログボックスを表示</string>
+	<string name="preferences_display_loot_dialog_on_items_or_toast">Notif 項目ダイアログ ボックス。それ以外の場合</string>
+	<string name="preferences_display_loot_toast_on_items">アイテムを見つけるときにのみ、通知を表示します。</string>
+	<string name="preferences_ui_category">インターフェイス</string>
+	<string name="preferences_ui_enable_animations_title">アニメーションを有効にします。</string>
+	<string name="preferences_ui_enable_animations">戦闘のバーなどの各種のインターフェイス要素のアニメーションを表示します。</string>
+	<string name="menu_button_worldmap">地図</string>
+	<string name="menu_button_worldmap_failed">地図を表示できません。</string>
+	<string name="display_worldmap_not_available">この場所からは、地図を表示できません。</string>
+	<string name="display_worldmap_title">地図</string>
+
+	<string name="inventory_equip_offhand">装備（ぶっきらぼう）</string>
+
+	<string name="iteminfo_effect_weapon_attack_cost">攻撃コスト: %1$d AP</string>
+	<string name="iteminfo_effect_increase_attack_cost">%1$d AP 増加攻撃コスト</string>
+	<string name="iteminfo_effect_decrease_attack_cost">削減は、%1$d AP コストを攻撃します。</string>
+	<string name="iteminfo_effect_weapon_attack_chance">攻撃チャンス: %1$d</string>
+	<string name="iteminfo_effect_increase_attack_chance">%1$d 増加攻撃チャンス</string>
+	<string name="iteminfo_effect_decrease_attack_chance">%1$d 下げる攻撃チャンス</string>
+	<string name="iteminfo_effect_weapon_attack_damage">ダメージ: %1$d</string>
+	<string name="iteminfo_effect_weapon_attack_damage_minmax">ダメージ: %1$d-%2$d</string>
+	<string name="iteminfo_effect_increase_attack_damage">増加が %1$d によって損害を攻撃します。</string>
+	<string name="iteminfo_effect_increase_attack_damage_minmax">%1$d-%2$d のによって攻撃ダメージを増加</string>
+	<string name="iteminfo_effect_decrease_attack_damage">削減は %1$d によって損傷を攻撃します。</string>
+	<string name="iteminfo_effect_decrease_attack_damage_minmax">削減は %1$d-%2$d によって損傷を攻撃します。</string>
+	<string name="iteminfo_effect_increase_critical_skill">%1$d クリティカルスキルを上げ</string>
+	<string name="iteminfo_effect_decrease_critical_skill">%1$d の重要なスキルを下げる</string>
+	<string name="iteminfo_effect_critical_multiplier">x%1$.1f の乗数でクリティカル ヒットを有効に</string>
+	<string name="iteminfo_effect_increase_block_chance">%1$d ブロック発動力をチャンス</string>
+	</resources>

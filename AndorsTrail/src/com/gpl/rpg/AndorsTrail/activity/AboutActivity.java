@@ -11,14 +11,17 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.TextView;
+
 import com.gpl.rpg.AndorsTrail.AndorsTrailApplication;
 import com.gpl.rpg.AndorsTrail.R;
+import com.gpl.rpg.AndorsTrail.util.ThemeHelper;
 
 public final class AboutActivity extends Activity implements ImageGetter {
 
 	/** Called when the activity is first created. */
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
+		setTheme(ThemeHelper.getBaseTheme());
 		super.onCreate(savedInstanceState);
 
 		AndorsTrailApplication app = AndorsTrailApplication.getApplicationFromActivity(this);

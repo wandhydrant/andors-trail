@@ -1,52 +1,37 @@
-<?xml version="1.0" encoding="utf-8"?>
-
+<?xml version='1.0' encoding='UTF-8'?>
 <resources>
 	<string name="app_name">Andor\'s Trail</string>
-	<string name="app_description">Questgetriebenes Fantasy-Rollenspiel</string>
+	<string name="app_description">Questbasiertes Fantasy-Rollenspiel</string>
 
-	<string name="exit">Beenden</string>
 	<string name="exit_to_menu">Zum Menü</string>
-	<string name="menu_pause">Pause</string>
 	<string name="menu_settings">Einstellungen</string>
 	<string name="menu_save">Speichern</string>
-	<string name="menu_load">Laden</string>
 	<string name="menu_save_gamesaved">Spielstand wurde auf Speicherplatz %1$d gesichert</string>
 	<string name="menu_save_failed">Speichern fehlgeschlagen! Ist die SD-Karte eingelegt und beschreibbar?</string>
 
 	<string name="loadsave_title_save">Spielstand speichern</string>
 	<string name="loadsave_title_load">Spielstand laden</string>
 	<string name="loadsave_selectslot">Speicherplatz wählen</string>
-	<string name="loadsave_slot_empty">(leer)</string>
 	<string name="savegame_currenthero_displayinfo">Level %1$d, %2$d Erfahrung, %3$d Goldmünzen</string>
 
-	<string name="dialog_loading_message">Lade Ressourcen...</string>
+	<string name="dialog_loading_message">Lade Ressourcen…</string>
 	<string name="dialog_loading_failed_title">Laden fehlgeschlagen</string>
 	<string name="dialog_loading_failed_message">Der Spielstand konnte nicht geladen werden.\n\n:(\n\nDie Datei könnte beschädigt oder unvollständig sein.</string>
 	<string name="dialog_loading_failed_incorrectversion">Der Spielstand konnte nicht geladen werden. Die Datei wurde mit einer neueren Programmversion erstellt.</string>
 
 	<string name="dialog_close">Schließen</string>
 
-	<string name="dialog_confirmexit_title">Beenden</string>
-	<string name="dialog_confirmexit_message">Sind sie sicher, dass sie das Programm beenden möchten?</string>
-
-	<string name="dialog_paused_title">Pausiert</string>
-	<string name="dialog_paused_message">Das Spiel wurde unterbrochen</string>
-	<string name="dialog_paused_resume">Weiterspielen</string>
-
 	<string name="dialog_monsterencounter_title">Begegnung</string>
 	<string name="dialog_monsterencounter_message">Angreifen?\nSchwierigkeit: %1$s</string>
 	<string name="dialog_monsterencounter_info">Info</string>
 
 	<string name="status_hp">LP:</string>
-	<string name="status_mp">MP:</string>
 	<string name="status_ap">AP:</string>
 	<string name="status_exp">Erf.:</string>
 
 	<string name="heroinfo_char">Übersicht</string>
 	<string name="heroinfo_inv">Inventar</string>
-	<string name="heroinfo_wear">Angelegt</string>
-	<string name="heroinfo_skill">Skills</string>
-	<string name="heroinfo_spell">Zauber</string>
+	<string name="heroinfo_skill">Fähigkeiten</string>
 	<string name="heroinfo_levelup">Aufstieg</string>
 	<string name="heroinfo_level">Level</string>
 	<string name="heroinfo_totalexperience">Erfahrung</string>
@@ -54,12 +39,11 @@
 	<string name="heroinfo_inventory">Inventar</string>
 	<string name="heroinfo_gold">Gold: %1$d</string>
 	<string name="heroinfo_actionpoints">Aktionspunkte (AP):</string>
-	<string name="heroinfo_quests">Quests</string>
+	<string name="heroinfo_quests">Queste</string>
 
 	<string name="combat_attack">Angriff (%1$d AP)</string>
 	<string name="combat_move">Bewegung (%1$d AP)</string>
 	<string name="combat_use">Benutzen</string>
-	<string name="combat_spell">Zauber</string>
 	<string name="combat_endturn">Runde beenden</string>
 	<!-- <string name="combat_endcombat">Kampf beenden</string>-->
 	<string name="combat_flee">Fliehen</string>
@@ -89,7 +73,7 @@
 	<string name="inventory_item_equipped">%1$s angelegt.</string>
 
 	<string name="dialog_loot_pickall">Alles einsammeln</string>
-	<string name="dialog_loot_foundgold">Du findest %1$d Goldmünzen. </string>
+	<string name="dialog_loot_foundgold">Du findest %1$d Goldstücke.</string>
 	<string name="dialog_loot_pickedupitem">Du hebst einen Gegenstand auf.</string>
 	<string name="dialog_loot_pickedupitems">Du hebst %1$d Gegenstände auf.</string>
 	<string name="dialog_groundloot_title">Gegenstände</string>
@@ -108,10 +92,7 @@
 	<string name="actorinfo_class">Klasse:</string>
 	<string name="actorinfo_difficulty">Schwierigkeit:</string>
 	<string name="actorinfo_health">Lebenspunkte:</string>
-	<string name="actorinfo_attacksperturn">Angriffe/Runde:</string>
-	<string name="actorinfo_movesperturn">Bewegungen/Runde:</string>
 	<string name="actorinfo_attack">Angriff:</string>
-	<string name="actorinfo_criticalhit">Krit. Treffer:</string>
 	<string name="actorinfo_defense">Abwehr:</string>
 	<string name="actorinfo_movecost">Bewegungskosten (AP):</string>
 	<string name="actorinfo_basetraits">Basiskampfeigenschaften (ohne Ausrüstung und Skills)</string>
@@ -134,18 +115,6 @@
 	<string name="iteminfo_action_use_ap">Benutzen (%1$d AP)</string>
 	<string name="iteminfo_action_equip_ap">Anlegen (%1$d AP)</string>
 	<string name="iteminfo_action_unequip_ap">Ablegen (%1$d AP)</string>
-
-	<string name="itemcategory_money">Geld</string>
-	<string name="itemcategory_weapon">Waffe</string>
-	<string name="itemcategory_shield">Schild</string>
-	<string name="itemcategory_wearable_head">Helme</string>
-	<string name="itemcategory_wearable_body">Rüstung</string>
-	<string name="itemcategory_wearable_hand">Handschuhe</string>
-	<string name="itemcategory_wearable_feet">Stiefel</string>
-	<string name="itemcategory_wearable_neck">Halsketten</string>
-	<string name="itemcategory_wearable_ring">Ringe</string>
-	<string name="itemcategory_potion">Tränke</string>
-	<string name="itemcategory_other">Sonstiges</string>
 
 	<string name="startscreen_continue">Aktuelles Spiel fortsetzen</string>
 	<string name="startscreen_newgame">Neues Spiel</string>
@@ -177,12 +146,12 @@
 	<string name="levelup_buttontext">Aufsteigen</string>
 	<string name="levelup_add_health">Lebenspunkte erhöhen (+%1$d LP)</string>
 	<string name="levelup_add_health_description">Fügt den maximalen Lebenspunkten %1$d Punkte hinzu.</string>
-	<string name="levelup_add_attackchance">Angriffschance erhöhen (+%1$d %%)</string>
-	<string name="levelup_add_attackchance_description">Fügt %1$d%% zur Basis-Angriffschance hinzu.</string>
+	<string name="levelup_add_attackchance">Angriffschance erhöhen (+%1$d)</string>
+	<string name="levelup_add_attackchance_description">Fügt %1$d zur Basis-Angriffschance hinzu.</string>
 	<string name="levelup_add_attackdamage">Angriffsschaden erhöhen (+%1$d)</string>
 	<string name="levelup_add_attackdamage_description">Fügt %1$d zum Basis-Angriffsschaden hinzu.</string>
-	<string name="levelup_add_blockchance">Abwehrchance erhöhen (+%1$d %%)</string>
-	<string name="levelup_add_blockchance_description">Fügt %1$d%% zur Basis-Abwehrchance hinzu.</string>
+	<string name="levelup_add_blockchance">Abwehrchance erhöhen (+%1$d)</string>
+	<string name="levelup_add_blockchance_description">Fügt %1$d zur Basis-Abwehrchance hinzu.</string>
 
 	<string name="dialog_rest_title">Schlafen</string>
 	<string name="dialog_rest_confirm_message">Willst du dich hier ausruhen?</string>
@@ -191,17 +160,15 @@
 	<string name="about_button1">Hilfe</string>
 	<string name="about_button2">Autoren</string>
 	<string name="about_button3">Lizenz</string>
-	<string name="about_contents1">
-		Willkommen bei Andor\'s Trail, einem roguelike Open-Source Rollenspiel für Android&lt;br /&gt;
-		&lt;br /&gt;
-		&lt;a href="http://andorstrail.com/"&gt;Forum auf andorstrail.com für Fragen und Diskussionen.&lt;/a&gt;&lt;br /&gt;
-		&lt;br /&gt;
-		&lt;a href="http://andorstrail.com/wiki"&gt;Game wiki for info about the Andor\'s Trail world, among other things.&lt;/a&gt;&lt;br /&gt;
-		&lt;br /&gt;
-		&lt;a href="http://code.google.com/p/andors-trail/"&gt;Projekt Homepage auf code.google.com für Entwickler.&lt;/a&gt;&lt;br /&gt;
-		&lt;br /&gt;
-		Bitte besuchen sie uns im Forum, um das Spiel mit anderen Spielern zu diskutieren.&lt;br /&gt;
-	</string>
+	<string name="about_contents1">Willkommen bei Andor\'s Trail, einem rogue-like Open-Source Rollenspiel für Android&lt;br /&gt; 
+\n &lt;br /&gt; 
+\n &lt;a href=http://andorstrail.com/&gt;Forum auf andorstrail.com für Fragen und Diskussionen.&lt;/a&gt;&lt;br /&gt; 
+\n &lt;br /&gt; 
+\n &lt;a href=http://andorstrail.com/wiki&gt;Game-Wiki über die Welt von Andors Pfad und weitergehende Informationen.&lt;/a&gt;&lt;br /&gt; 
+\n &lt;br /&gt; 
+\n &lt;a href=http://github.com/Zukero/andors-trail/&gt;Projekt-Homepage auf github.com für Entwickler.&lt;/a&gt;&lt;br /&gt; 
+\n &lt;br /&gt; 
+\n Bitte besuche das Forum, um das Spiel mit anderen Spielern zu diskutieren.&lt;br /&gt;</string>
 
 	<!--
 		This is the GNU GPL v2 text, originally from
@@ -209,15 +176,61 @@
 		For translation of this text, you might be able to find a version in your language here:
 			http://www.gnu.org/licenses/old-licenses/gpl-2.0-translations.html
 	-->
-	<string name="about_contents3">
-		Dieses Programm ist freie Software. Sie können es unter den Bedingungen der GNU General Public License, wie von der Free Software Foundation veröffentlicht, weitergeben und/oder modifizieren, entweder gemäß Version 2 der Lizenz oder (nach Ihrer Option) jeder späteren Version.&lt;br /&gt;
-		&lt;br /&gt;
-		Die Veröffentlichung dieses Programms erfolgt in der Hoffnung, daß es Ihnen von Nutzen sein wird, aber OHNE IRGENDEINE GARANTIE, sogar ohne die implizite Garantie der MARKTREIFE oder der VERWENDBARKEIT FÜR EINEN BESTIMMTEN ZWECK. Details finden Sie in der GNU General Public License.&lt;br /&gt;
-		&lt;br /&gt;
-		Sie sollten ein Exemplar der GNU General Public License zusammen mit diesem Programm erhalten haben. Falls nicht, siehe hier:&lt;a href="http://www.gnu.org/licenses"&gt;http://www.gnu.org/licenses&lt;/a&gt;&lt;br /&gt;
-		&lt;br /&gt;
-		Für den Quelltext und Verbesserungsanfragen, besuchen Sie bitte die Projektseite:&lt;a href="http://code.google.com/p/andors-trail/"&gt;http://code.google.com/p/andors-trail/&lt;/a&gt;&lt;br /&gt;
-	</string>
+	<string name="about_contents3">Dieses Programm ist freie Software. Sie können es unter den Bedingungen der GNU General Public License, wie von der Free Software Foundation veröffentlicht, weitergeben und/oder modifizieren, entweder gemäß Version 2 der Lizenz oder (nach Ihrer Option) jeder späteren Version.&lt;br /&gt;
+\n &lt;br /&gt;
+\n Die Veröffentlichung dieses Programms erfolgt in der Hoffnung, daß es Ihnen von Nutzen sein wird, aber OHNE IRGENDEINE GARANTIE, sogar ohne die implizite Garantie der MARKTREIFE oder der VERWENDBARKEIT FÜR EINEN BESTIMMTEN ZWECK. Details finden Sie in der GNU General Public License.&lt;br /&gt;
+\n &lt;br /&gt;
+\n Sie sollten ein Exemplar der GNU General Public License zusammen mit diesem Programm erhalten haben. Falls nicht, siehe hier:&lt;a href=http://www.gnu.org/licenses&gt;http://www.gnu.org/licenses&lt;/a&gt;&lt;br /&gt;
+\n &lt;br /&gt;
+\n Für den Quelltext und Verbesserungsanfragen, besuchen Sie bitte die Projektseite:&lt;a href=http://github.com/Zukero/andors-trail/&gt;http://github.com/Zukero/andors-trail/&lt;/a&gt;&lt;br /&gt;</string>
+	<string name="about_interface"><![CDATA[
+
+<div><b>Spiel Einstellungen</b> können über den Menüknopf deines Gerätes erreicht werden.</div>
+
+<p>________________</p>
+<h1>Symbole der Benutzeroberfläche</h1>
+
+<div><b>Die Truhe</b><img alt="chest" src="chest.png" /></div>
+<p>Quickslots [Durch einen langen Klick auf die einzelnen Slots können den Slots Gegenstände zugewiesen werden, die anschließend schneller verwendet werden können]</p>
+
+<div><b>Der Held</b><img alt="hero" src="char_hero.png" /></div>
+<p>Menü [Übersicht, Quests, Skills &amp; Inventar *]</p>
+<p>* (Im Inventar werden durch einen kurzen Klick auf den Gegenstand Informationen angezeigt; durch einen langen Klick können weitere Optionen erreicht werden)</p>
+
+<div><b>Die Gegner</b><img alt="monster" src="monster.png" /></div>
+<p>Informationen [Erscheint während dem Kampf]</p>
+
+
+
+<p>________________</p>
+<h1>Kampf</h1>
+
+<p>Aktionen die während dem Kampf ausgeführt werden kosten AP...</p>
+
+<div><b>Angreifen</b> - [3AP] *</div>
+<img alt="attacking" src="doubleattackexample.png" />
+<p>* (das Anlegen von Ausrüstung &amp; das Verwenden von Gegenständen kann die AP &amp; Kosten verändern)</p>
+
+<div><b>Gegenstände verwenden</b> - [5AP]</div>
+<div><b>Fliehen</b> - [6AP]</div>
+
+
+
+<p>________________</p>
+<h1>Erweiterter Kampf</h1>
+
+<div>Während eines Kampfes, langklicke ein Feld das an den Held angrenzt um...</div>
+
+<div><b>zu Fliehen</b></div>
+<p>(gewähltes Feld wird hervorgehoben - Angriffs Button ändert sich zu einem Bewegen Button)</p>
+<img alt="flee" src="flee_example.png" />
+<p>[bei aktivem Fluchtmodus - Langklick auf einen Gegner um dem Kampf erneut beizutreten]</p>
+
+<div><b>Ziele zu ändern</b></div>
+<p>(die rote Zielhervorhebung wechselt zwischen den Gegnern)</p>
+<p>[Das Ziel hat sich geändert]</p>
+
+]]></string>
 
 	<string name="dialog_newversion_title">Willkommen</string>
 	<string name="dialog_newversion_message">
@@ -228,8 +241,7 @@
 		Danke für alle bisherigen Rückmeldungen!
 	</string>
 
-	<string name="questlog_title">Quests</string>
-	<string name="questlog_includecompleted_prompt">Welche Quests anzeigen?</string>
+	<string name="questlog_includecompleted_prompt">Anzuzeigende Quests auswählen</string>
 	<string name="questlog_includecompleted_hidecompleted">Verstecke abgeschlossene Quests</string>
 	<string name="questlog_includecompleted_includecompleted">Zeige auch abgeschlossene Quests</string>
 	<string name="questlog_includecompleted_onlycompleted">Zeige nur abgeschlossene Quests</string>
@@ -251,9 +263,13 @@
 	<string name="preferences_combat_speed_title">Kampfgeschwindigkeit</string>
 	<string name="preferences_combat_speed">Bestimmt, wie schnell Gegner angreifen.</string>
 
-	<string name="preferences_display_loot_dialog">Beute-Dialog anzeigen</string>
+	<string name="preferences_display_loot_dialog">Beute-Dialog immer anzeigen</string>
+	<string name="preferences_display_loot_dialog_on_items">Beute-Dialog beim Fund von Gegenständen</string>
+	<string name="preferences_display_loot_dialog_on_items_or_toast">Dialog bei Gegenständen, sonst Nachricht</string>
 	<string name="preferences_display_loot_toast">Kurze Nachricht</string>
+	<string name="preferences_display_loot_toast_on_items">Benachrichtigung nur beim Fund von Gegenständen zeigen</string>
 	<string name="preferences_display_loot_never">Nicht anzeigen</string>
+
 	<string name="preferences_attackspeed_instant">Sofort (keine Animation)</string>
 	<string name="preferences_attackspeed_fast">Schnell</string>
 	<string name="preferences_attackspeed_normal">Normal</string>
@@ -342,11 +358,11 @@
 	<string name="skill_title_speed">Kampfgeschwindigkeit</string>
 	<string name="skill_title_coinfinder">Schatzjäger</string>
 	<string name="skill_title_more_exp">Guter Lehrling</string>
-	<string name="skill_title_cleave">Cleave</string>
+	<string name="skill_title_cleave">Bresche</string>
 	<string name="skill_title_eater">Leichenesser</string>
 	<string name="skill_title_fortitude">wachsende Standhaftigkeit</string>
 	<string name="skill_title_evasion">Umgehen</string>
-	<string name="skill_title_regeneration">Regeneration</string>
+	<string name="skill_title_regeneration">Erholung</string>
 	<string name="skill_title_lower_exploss">Fehlschläge meistern</string>
 	<string name="skill_title_magicfinder">Magischer Schatzsucher</string>
 	<string name="skill_title_resistance_mental">Starker Verstand</string>
@@ -375,11 +391,11 @@
 	<string name="skill_shortdescription_resistance_blood_disorder">Widerstand gegen Blutstörungen</string>
 
 	<string name="skill_longdescription_weapon_chance">Erhöht die Angriffschance bei jeder Stufe um %1$d.</string>
-	<string name="skill_longdescription_weapon_dmg">Erhöht den minimalen und maximalen Schaden bei jeder Stufe um %1$d.</string>
+	<string name="skill_longdescription_weapon_dmg">Erhöht den maximalen Schaden bei jeder Stufe um %1$d.</string>
 	<string name="skill_longdescription_barter">Verringert bei jeder Stufe den Auf- und Abschlag von An- und Verkäufen um %1$d Prozentpunkte.</string>
 	<string name="skill_longdescription_dodge">Erhöht die Abwehrchance bei jeder Stufe um %1$d.</string>
 	<string name="skill_longdescription_barkskin">Erhöht die Schadensresistenz bei jeder Stufe um %1$d.</string>
-	<string name="skill_longdescription_more_criticals">Erhöht bei jeder Stufe die durch die Ausrüstung bestehende kritische Fähigkeit um %1$d %% (prozentualer Anteil an der bestehenden kritischen Fähigkeit, es handelt sich nicht um zusätzliche Prozentpunkte).</string>
+	<string name="skill_longdescription_more_criticals">Erhöht bei jeder Stufe die durch die Ausrüstung bestehende kritische Fähigkeit um %1$d %%.</string>
 	<string name="skill_longdescription_better_criticals">Erhöht bei jeder Stufe den durch die Ausrüstung bestehenden kritischen Faktor um %1$d %%.</string>
 	<string name="skill_longdescription_speed">Erhöht die maximalen Aktionspunkte (AP) bei jeder Stufe um %1$d.</string>
 	<string name="skill_longdescription_coinfinder">Erhöht bei jeder Stufe die Chance bei einem Gegner Goldmünzen zu finden um %1$d %%. Auch die Menge der gefundenen Goldmünzen erhöht sich jeweils um %2$d %% (bis zu der für den Gegnertyp maximalen Menge).</string>
@@ -433,7 +449,7 @@
 
 	<string name="skill_title_shadow_bless">Dunkler Segen des Schattens</string>
 	<string name="skill_shortdescription_shadow_bless">Widerstand gegen Effekte aller Art</string>
-	<string name="skill_longdescription_shadow_bless">Verringert die Chance von Effekten aller Art geplagt zu werden um %1$d %%. Das beeinhaltet alle von Gegnern hinzugefügten Effekte wie beispielsweise Vergiftung, Benommen und Ermüdung.</string>
+	<string name="skill_longdescription_shadow_bless">Verringert die Chance von Effekten aller Art geplagt zu werden um %1$d %%. Das beinhaltet alle von Gegnern hinzugefügten Effekte wie beispielsweise Vergiftung, Benommen und Ermüdung.</string>
 
 	<string name="inventory_movetop">Nach ganz oben verschieben</string>
 	<string name="inventory_movebottom">Nach ganz unten verschieben</string>
@@ -474,9 +490,9 @@
 	<string name="iteminfo_effect_weapon_attack_cost">Angriffskosten: %1$d AP</string>
 	<string name="iteminfo_effect_increase_attack_cost">Erhöht die Angriffskosten um %1$d AP</string>
 	<string name="iteminfo_effect_decrease_attack_cost">Verringert die Angriffskosten um %1$d AP</string>
-	<string name="iteminfo_effect_weapon_attack_chance">Angriffschance: %1$d %%</string>
-	<string name="iteminfo_effect_increase_attack_chance">Erhöht die Angriffschance um %1$d %%</string>
-	<string name="iteminfo_effect_decrease_attack_chance">Reduziert die Angriffschance um %1$d %%</string>
+	<string name="iteminfo_effect_weapon_attack_chance">Angriffschance: %1$d</string>
+	<string name="iteminfo_effect_increase_attack_chance">Erhöht die Angriffschance um %1$d</string>
+	<string name="iteminfo_effect_decrease_attack_chance">Reduziert die Angriffschance um %1$d</string>
 	<string name="iteminfo_effect_weapon_attack_damage">Schaden: %1$d</string>
 	<string name="iteminfo_effect_weapon_attack_damage_minmax">Schaden: %1$d-%2$d</string>
 	<string name="iteminfo_effect_increase_attack_damage">Erhöht den Schaden um %1$d</string>
@@ -486,11 +502,11 @@
 	<string name="iteminfo_effect_increase_critical_skill">Erhöht die kritische Fähigkeit um %1$d</string>
 	<string name="iteminfo_effect_decrease_critical_skill">Reduziert die kritische Fähigkeit um %1$d</string>
 	<string name="iteminfo_effect_critical_multiplier">Ermöglicht kritische Treffer mit einem Multiplikator von x%1$.1f</string>
-	<string name="iteminfo_effect_increase_block_chance">Erhöht die Abwehrchance um %1$d %%</string>
-	<string name="iteminfo_effect_decrease_block_chance">Reduziert die Abwehrchance um %1$d %%</string>
+	<string name="iteminfo_effect_increase_block_chance">Erhöht die Abwehrchance um %1$d</string>
+	<string name="iteminfo_effect_decrease_block_chance">Reduziert die Abwehrchance um %1$d</string>
 	<string name="iteminfo_effect_increase_damage_resistance">Erhöht die Schadensresistenz um %1$d</string>
 	<string name="iteminfo_effect_decrease_damage_resistance">Reduziert die Schadensresistenz um %1$d</string>
-	<string name="iteminfo_effect_increase_use_cost">Erhöht die AP Kosten Gegenstände im Kampf zu verwenden um %1$d AP</string>
+	<string name="iteminfo_effect_increase_use_cost">Erhöht die AP-Kosten Gegenstände im Kampf zu verwenden um %1$d AP</string>
 	<string name="iteminfo_effect_decrease_use_cost">Reduziert die AP Kosten Gegenstände im Kampf zu verwenden um %1$d AP</string>
 	<string name="iteminfo_effect_increase_reequip_cost">Erhöht die AP Kosten Gegenstände im Kampf anzulegen um %1$d AP</string>
 	<string name="iteminfo_effect_decrease_reequip_cost">Reduziert die AP Kosten Gegenstände im Kampf anzulegen um %1$d AP</string>
@@ -507,6 +523,159 @@
 	<!-- =========================================== -->
 	<!-- Added in v0.7.0 -->
 
+	<string name="heroinfo_reequip_cost">Ausrüstungskosten (AP):</string>
+	<string name="heroinfo_useitem_cost">Benutzungskosten (AP):</string>
+	<string name="combat_result_monstermoved">%1$s bewegt sich.</string>
+	<string name="combat_log_title">Kampflogbuch</string>
 	<string name="localize_resources_from_mo_filename">de.mo</string>
+	<string name="conversation_reward_quest_finished">[Quest abgeschlossen: \"%1$s\"]</string>
+	<string name="conversation_reward_quest_updated">[Quest aktualisiert: \"%1$s\"]</string>
 
-</resources>
+	<string name="skill_title_weapon_prof_dagger">Fertigkeit: Dolch</string>
+	<string name="skill_title_weapon_prof_1hsword">Fertigkeit: Einhandschwert</string>
+	<string name="skill_title_weapon_prof_2hsword">Fertigkeit: Zweihandschwert</string>
+	<string name="skill_title_weapon_prof_axe">Fertigkeit: Axt</string>
+	<string name="skill_title_weapon_prof_blunt">Fertigkeit: Stumpfe Waffen</string>
+	<string name="skill_title_weapon_prof_unarmed">Unbewaffneter Kampf</string>
+	<string name="skill_title_armor_prof_shield">Fertigkeit: Schild</string>
+	<string name="skill_title_armor_prof_unarmored">Kampf ohne Rüstung</string>
+	<string name="skill_title_armor_prof_light">Fertigkeit: Leichte Rüstung</string>
+	<string name="skill_title_armor_prof_heavy">Fertigkeit: Schwere Rüstung</string>
+	<string name="skill_title_fightstyle_dualwield">Kampftechnik: Beidhändig</string>
+	<string name="skill_title_fightstyle_2hand">Kampftechnik: Zweihändige Waffen</string>
+	<string name="skill_title_fightstyle_weapon_shield">Kampftechnik: Waffe und Schild</string>
+	<string name="skill_title_specialization_dualwield">Spezialisierung: Beidhändig</string>
+	<string name="skill_title_specialization_2hand">Spezialisierung: Zweihändige Waffen</string>
+	<string name="skill_title_specialization_weapon_shield">Spezialisierung: Waffe und Schild</string>
+
+	<string name="skill_shortdescription_weapon_prof_dagger">Verbesserter Kampf mit Dolchen</string>
+	<string name="skill_shortdescription_weapon_prof_1hsword">Verbesserter Kampf mit Einhandschwertern</string>
+	<string name="skill_shortdescription_weapon_prof_2hsword">Verbesserter Kampf mit Zweihandschwertern</string>
+	<string name="skill_shortdescription_weapon_prof_axe">Verbesserter Kampf mit Äxten</string>
+	<string name="skill_shortdescription_weapon_prof_blunt">Verbesserter Kampf mit stumpfen Waffen</string>
+	<string name="skill_shortdescription_weapon_prof_unarmed">Verbesserter Kampf ohne Waffen</string>
+	<string name="skill_shortdescription_armor_prof_shield">Besserer Umgang mit Schilden</string>
+	<string name="skill_shortdescription_armor_prof_unarmored">Verbesserter Kampf ohne Rüstung</string>
+	<string name="skill_shortdescription_armor_prof_light">Besserer Umgang mit leichter Rüstung</string>
+	<string name="skill_shortdescription_armor_prof_heavy">Besserer Umgang mit schwerer Rüstung</string>
+	<string name="skill_shortdescription_fightstyle_dualwield">Kämpfe mit zwei Waffen gleichzeitig</string>
+	<string name="skill_shortdescription_fightstyle_2hand">Besserer Umgang mit zweihändigen Waffen</string>
+	<string name="skill_shortdescription_fightstyle_weapon_shield">Verbesserter Kampf mit Waffe und Schild</string>
+	<string name="skill_shortdescription_specialization_dualwield">Experte im Umgang mit zwei Waffen</string>
+	<string name="skill_shortdescription_specialization_2hand">Experte für zweihändige Waffen</string>
+	<string name="skill_shortdescription_specialization_weapon_shield">Experte im Kampf mit Waffe und Schild</string>
+
+	<string name="skill_longdescription_weapon_prof_dagger">Erhöht die Angriffschance von Dolchen und Kurzschwertern um %1$d %% der Basisangriffschance des Gegenstands, erhöht die Abwehrchance um %2$d %% der Basisabwehrchance des Gegensstands und erhöht die Kritische Fähigkeit um %3$d %% der ursprünglichen Kritischen Fähigkeit des Gegenstands je Level des Skills.</string>
+	<string name="skill_longdescription_weapon_prof_1hsword">Erhöht die Angriffschance von Rapieren, Lang- und Breitschwertern um %1$d %% der Basisangriffschance des Gegenstands, erhöht die Abwehrchance um %2$d %% der Basisabwehrchance des Gegensstands und erhöht die Kritische Fähigkeit um %3$d %% der ursprünglichen Kritischen Fähigkeit des Gegenstands je Level des Skills.</string>
+	<string name="skill_longdescription_weapon_prof_2hsword">Erhöht die Angriffschance von Zweihandschwertern um %1$d %% der Basisangriffschance des Gegenstands, erhöht die Abwehrchance um %2$d %% der Basisabwehrchance des Gegensstands und erhöht die Kritische Fähigkeit um %3$d %% der ursprünglichen Kritischen Fähigkeit des Gegenstands je Level des Skills.</string>
+	<string name="skill_longdescription_weapon_prof_axe">Erhöht die Angriffschance von Äxten und Großäxten um %1$d %% der Basisangriffschance des Gegenstands, erhöht die Abwehrchance um %2$d %% der Basisabwehrchance des Gegensstands und erhöht die Kritische Fähigkeit um %3$d %% der ursprünglichen Kritischen Fähigkeit des Gegenstands je Level des Skills.</string>
+	<string name="skill_longdescription_weapon_prof_blunt">Erhöht die Angriffschance stumpfen Waffen um %1$d %% der Basisangriffschance des Gegenstands, erhöht die Abwehrchance um %2$d %% der Basisabwehrchance des Gegensstands und erhöht die Kritische Fähigkeit um %3$d %% der ursprünglichen Kritischen Fähigkeit des Gegenstands je Level des Skills. Dies umfasst Keulen, Kampfstäbe, Streitkolben, Scepter, Kriegshämmer  und Riesenhämmer.</string>
+	<string name="skill_longdescription_weapon_prof_unarmed">Beim Kampf ohne Rüstung und Schild erhältst du %1$d %% Angriffschance, %2$d Schadenspotential und %3$d %% Abwehrchance je Level des Skills.</string>
+	<string name="skill_longdescription_armor_prof_shield">Erhöht die Schadensresistenz um %1$d je Level des Skills, solange du mit einem Schild ausgerüstet bist.</string>
+	<string name="skill_longdescription_armor_prof_unarmored">Beim Kampf ohne Benutzung irgendeines Rüstungsteils erhältst du %1$d %% Abwehrchance je Level des Skills. Gegenstände aus Stoff gelten nicht als Rüstung.</string>
+	<string name="skill_longdescription_armor_prof_light">Erhöht die Abwehrchance jedes getragenen Teils leichter Rüstung um %1$d %% seiner ursprünglichen Abwehrchance je Level des Skills. Leichte Rüstung umfasst Leder, leichtes Metall und Häute.</string>
+	<string name="skill_longdescription_armor_prof_heavy">Erhöht die Abwehrchance jedes getragenen Teils schwerer Rüstung um %1$d %% seiner ursprünglichen Abwehrchance je Level des Skills. Die Bewegungsstrafe für schwere Rüstungsteile reduziert sich um %2$d %% je Level des Skills und ihre Strafe bzgl. Angriffsgeschwindigkeit reduziert sich um %3$d %% je Level des Skills. Schwere Rüstung umfasst Metallrüstungen, Kettenrüstungen und Plattenpanzer.</string>
+	<string name="skill_longdescription_fightstyle_dualwield">"Bringt Vorteile, wenn mit zwei Waffen gleichzeitig gekämpft wird, einer in der Haupthand und einer in der Nebenhand.
+
+Ohne diesen Skill können nur %1$d %% des Potentials einer Waffe genutzt werden, die mit der Nebenhand geführt wird. Dies umfasst Angriffschance, Kritische Fähigkeit, Schadenspotential und Abwehrchance. Ohne diesen Skill  ergibt sich die Angriffsgeschwindigkeit (AP Kosten) für eine Attacke aus der Summe der Angriffsgeschwindigkeiten der Hauptwaffe und der Waffe in der Nebenhand.
+
+Mit einem Level dieses Skills können %2$d %% des Potentials einer Waffe in der Nebenhand genutzt werden und die  Angriffsgeschwindigkeit ergibt sich aus der Angriffsgeschwindigkeit der Waffe in der Haupthand plus %3$d %% der Angriffsgeschwindigkeit der Waffe in der Nebenhand.
+
+Mit zwei Leveln dieses Skills können %4$d %% des Potentials einer Waffe in der Nebenhand genutzt werden und die Angriffsgeschwindigkeit ergibt sich aus dem höheren der beiden Werte der getragenen Waffen."</string>
+
+	<string name="skill_longdescription_fightstyle_2hand">"Bringt Vorteile im Umgang mit Waffen, die mit beiden Händen geführt werden müssen, wie zum Beispiel Zweihandschwerter, Großäxte oder Riesenhämmer.
+
+Jeder Level des Skills erhöht das Schadenspotential von zweihändigen Waffen um %1$d %% ihres ursprünglichen Schadenspotentials."</string>
+	<string name="skill_longdescription_fightstyle_weapon_shield">"Bringt Vorteile, wenn mit einer Waffe in der Haupthand gekämpft wird und ein Schild in der Nebenhand getragen wird.
+
+Jeder Level des Skills erhöht die Angriffschance von Waffen um %1$d %% ihrer ursprünglichen Angriffschance und die Abwehrchance von Schilden um %2$d %% ihrer ursprünglichen Abwehrchance."</string>
+	<string name="skill_longdescription_specialization_dualwield">Erhöht die Angriffschance beider getragener Waffen um weitere %1$d %% ihrer ursprünglichen Angriffschancen, zusätzlich zu den Vorteilen, die durch den Kampftechnik-Skill gewährt werden. Die Abwehrchancen beider getragener Waffen werden ebenso um %2$d %% ihrer ursprünglichen Abwehrchancen erhöht.</string>
+	<string name="skill_longdescription_specialization_2hand">Erhöht das Schadenspotential zweihändiger Waffen um weitere %1$d %% ihres ursprünglichen Schadenspotentials, zusätzlich zu den Vorteilen, die durch den Kampftechnik-Skill gewährt werden. Die Angriffschancen zweihändiger Waffen werden ebenso um %2$d %% ihrer ursprünglichen Angriffschancen erhöht.</string>
+	<string name="skill_longdescription_specialization_weapon_shield">Erhöht sowohl Angriffschance als auch Schadenspotential von Waffen. Die Angriffschance erhöht sich um %1$d %% der ursprünglichen Angriffschance und das Schadenspotential erhöht sich um %2$d %% des ursprünglichen Schadenspotentials.</string>
+
+	<string name="preferences_quickslots_placement">Position der Schnellzugriffsleiste</string>
+	<string name="preferences_quickslots_placement_summary">Wo soll die Schnellzugriffsleiste positioniert werden?</string>
+	<string name="preferences_quickslots_placements_horizontal_center_bottom">Zentriert unten</string>
+	<string name="preferences_quickslots_placements_vertical_center_left">Links in der Mitte</string>
+	<string name="preferences_quickslots_placements_vertical_center_right">Rechts in der Mitte</string>
+	<string name="preferences_quickslots_placements_vertical_bottom_left">Links unten, am linken Rand</string>
+	<string name="preferences_quickslots_placements_horizontal_bottom_left">Links unten, am unteren Rand</string>
+	<string name="preferences_quickslots_placements_horizontal_bottom_right">Rechts unten, am unteren Rand</string>
+	<string name="preferences_quickslots_placements_vertical_bottom_right">Rechts unten, am rechten Rand</string>
+	<string name="preferences_ui_show_quickslots_when_toolbox_is_visible_title">Zeige Schnellzugriffsleiste wenn die Werkzeugskiste geöffnet wird</string>
+	<string name="preferences_ui_show_quickslots_when_toolbox_is_visible">Die Buttons der Schnellzugriffsleiste werden angezeigt, sobald die Werkzeugskiste geöffnet wird.</string>
+	<string name="startscreen_incompatible_savegames">Dies ist eine Entwicklungsversion von Andor\'s Trail. Gespeicherte Spielstände, die mit dieser Version angelegt werden sind inkompatibel zur Releaseversion.</string>
+	<string name="startscreen_non_release_version">Dies ist eine Vorabversion von Andor\'s Trail. Gespeicherte Spielstände, die mit dieser Version angelegt werden sind möglicherweise nicht mit der Releaseversion kompatibel.</string>
+	<string name="heroinfo_gamestats">Spielstatistiken</string>
+	<string name="heroinfo_gamestats_quests">Abgeschlossene Quests</string>
+	<string name="heroinfo_gamestats_deaths">... mal bewusstlos geworden</string>
+	<string name="heroinfo_gamestats_spent_gold">In Geschäften ausgegebenes Gold</string>
+	<string name="heroinfo_gamestats_bonemeals">Benutzte Knochenmehltränke</string>
+	<string name="heroinfo_gamestats_num_used_items">Benutzte Gegenstände</string>
+	<string name="heroinfo_gamestats_visited_maps">Besuchte Orte</string>
+	<string name="heroinfo_gamestats_fav_item">Meistbenutzer Gegenstand</string>
+	<string name="heroinfo_gamestats_num_killed_monsters">Getötete Monster</string>
+	<string name="heroinfo_gamestats_top_boss">Mächtigstes getötetes Monster</string>
+	<string name="heroinfo_gamestats_fav_monsters">Zumeist getötete Monster</string>
+	<string name="heroinfo_gamestats_name_and_qty">%1$s (%2$d)</string>
+
+	<!-- =========================================== -->
+	<!-- Added in v0.7.1 -->
+
+	<string name="preferences_ui_use_localized_resources_title">Benutze lokalisierte Ressourcen</string>
+	<string name="preferences_ui_use_localized_resources">Verwende Übersetzungen von Oberfläche und Inhalt, sofern verfügbar. (Erfordert Neustart)</string>
+	<string name="change_locale_requires_restart">Änderung der Lokalisierung erfordert Neustart. Andor\'s Trail wurde beendet.</string>
+
+<string name="combat_miss_animation_message">MISS</string>
+	
+	<string name="dialog_recenter">Zentrieren</string>
+	<string name="change_theme_requires_restart">Änderung des Benutzer Interface erfordert Neustart. Andor\'s Trail wurde beendet.</string>
+	
+	
+<string name="dialog_more">Mehr</string>
+
+	<string name="heroinfo_skill_categories">Kategorie</string>
+	<string name="heroinfo_skill_sort">Sortieren</string>
+	<string name="heroinfo_inventory_categories">Kategorie</string>
+	<string name="heroinfo_inventory_sort">Sortieren nach</string>
+	<string name="combat_condition_monster_apply">%1$s ist betroffen von %2$s.</string>
+	<string name="combat_condition_monster_immune">%1$s ist jetzt immun gegen %2$s.</string>
+	
+	
+	<string name="startscreen_newgame_start">Spiel starten</string>
+	<string name="shop_item_sort">Sortieren</string>
+
+	<string name="actorcondition_info_immunity">Immun gegen %1$s</string>
+	<string name="iteminfo_effect_works_when_hit_by_attacker">Wenn vom Angreifer getroffen</string>
+	<string name="iteminfo_effect_works_when_killed_by_attacker">Wenn von Angreifer getötet</string>
+	
+	<string name="inventory_category_all">Alles</string>
+	<string name="inventory_category_favorites">Favoriten</string>
+	<string name="inventory_category_weapons">Waffen</string>
+	<string name="inventory_category_armor">Rüstung</string>
+	<string name="inventory_category_usable">Verbrauchsgüter</string>
+	<string name="inventory_category_quest">Questgegenstände</string>
+	<string name="inventory_category_other">Andere</string>
+
+	<string name="inventory_sort_custom">Unsortiert</string>
+	<string name="inventory_sort_name">Name</string>
+	<string name="inventory_sort_price">Preis</string>
+	<string name="inventory_sort_quantity">Anzahl</string>
+	<string name="inventory_sort_rarity">Seltenheit</string>
+	<string name="inventory_sort_type">Typ</string>
+
+	<string name="shoplist_sort_custom">Unsortiert</string>
+	<string name="shoplist_sort_name">Name</string>
+	<string name="shoplist_sort_price">Preis</string>
+	<string name="shoplist_sort_quantity">Anzahl</string>
+	<string name="shoplist_sort_rarity">Seltenheit</string>
+	<string name="shoplist_sort_type">Typ</string>
+
+	<string name="skill_category_all">Alle</string>
+	<string name="skill_sort_unsorted">Unsortiert</string>
+	<string name="skill_sort_name">Name</string>
+	<string name="skill_sort_points">Punkte</string>
+	<string name="preferences_display_theme_blue">Kobalt</string>
+	<string name="preferences_display_theme_green">Malachit</string>
+	<string name="preferences_display_theme_charcoal">Obsidian</string>
+	</resources>

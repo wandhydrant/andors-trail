@@ -1,9 +1,12 @@
 package com.gpl.rpg.AndorsTrail.controller;
 
+import java.util.ArrayList;
+
 import android.os.Handler;
 import android.os.Message;
-import android.util.FloatMath;
+
 import com.gpl.rpg.AndorsTrail.AndorsTrailPreferences;
+import com.gpl.rpg.AndorsTrail.R;
 import com.gpl.rpg.AndorsTrail.context.ControllerContext;
 import com.gpl.rpg.AndorsTrail.context.WorldContext;
 import com.gpl.rpg.AndorsTrail.controller.VisualEffectController.VisualEffectCompletedCallback;
@@ -15,13 +18,12 @@ import com.gpl.rpg.AndorsTrail.model.actor.Actor;
 import com.gpl.rpg.AndorsTrail.model.actor.Monster;
 import com.gpl.rpg.AndorsTrail.model.actor.MonsterType;
 import com.gpl.rpg.AndorsTrail.model.actor.Player;
+import com.gpl.rpg.AndorsTrail.model.item.ItemTraits_OnHitReceived;
 import com.gpl.rpg.AndorsTrail.model.item.ItemTraits_OnUse;
 import com.gpl.rpg.AndorsTrail.model.item.Loot;
 import com.gpl.rpg.AndorsTrail.model.map.MonsterSpawnArea;
 import com.gpl.rpg.AndorsTrail.resource.VisualEffectCollection;
 import com.gpl.rpg.AndorsTrail.util.Coord;
-
-import java.util.ArrayList;
 
 public final class CombatController implements VisualEffectCompletedCallback {
 	private final ControllerContext controllers;
@@ -57,7 +59,11 @@ public final class CombatController implements VisualEffectCompletedCallback {
 		combatTurnListeners.onCombatEnded();
 		world.model.uiSelections.selectedPosition = null;
 		world.model.uiSelections.selectedMonster = null;
-		controllers.gameRoundController.resetRoundTimers();
+		if (world.model.player.isDead()) {
+			controllers.gameRoundController.resetRoundTimers();
+		} else {
+			endOfCombatRound();
+		}
 		if (pickupLootBags && totalExpThisFight > 0) {
 			controllers.itemController.lootMonsterBags(killedMonsterBags, totalExpThisFight);
 		} else {
@@ -78,7 +84,7 @@ public final class CombatController implements VisualEffectCompletedCallback {
 	}
 	public void setCombatSelection(Monster selectedMonster, Coord selectedPosition) {
 		if (selectedMonster != null) {
-			if (!selectedMonster.isAgressive()) return;
+			if (!selectedMonster.isAgressive(world.model.player)) return;
 		}
 		Coord previousSelection = world.model.uiSelections.selectedPosition;
 		if (previousSelection != null) {
@@ -173,7 +179,7 @@ public final class CombatController implements VisualEffectCompletedCallback {
 			startAttackEffect(attack, attackPosition, this, CALLBACK_PLAYERATTACK);
 		} else {
 			combatActionListeners.onPlayerAttackMissed(target, attack);
-			playerAttackCompleted();
+			startMissedEffect(attack, attackPosition, this, CALLBACK_PLAYERATTACK);
 		}
 	}
 
@@ -203,6 +209,7 @@ public final class CombatController implements VisualEffectCompletedCallback {
 		totalExpThisFight += loot.exp;
 		loot.exp = 0;
 		controllers.actorStatsController.applyKillEffectsToPlayer(player);
+		controllers.actorStatsController.applyOnDeathEffectsToPlayer(player, killedMonster);
 
 		if (!loot.hasItemsOrGold()) {
 			world.model.currentMap.removeGroundLoot(loot);
@@ -314,12 +321,12 @@ public final class CombatController implements VisualEffectCompletedCallback {
 
 		for (MonsterSpawnArea a : world.model.currentMap.spawnAreas) {
 			for (Monster m : a.monsters) {
-				if (!m.isAgressive()) continue;
+				if (!m.isAgressive(world.model.player)) continue;
 
 				if (shouldAttackWithMonsterInCombat(m, playerPosition)) {
 					currentActiveMonster = m;
 					return MonsterAction.attack;
-				} else if (shouldMoveMonsterInCombat(m, a, playerPosition)) {
+				} else if (shouldMoveMonsterInCombat(m, a, world.model.player, playerPosition)) {
 					currentActiveMonster = m;
 					return MonsterAction.move;
 				}
@@ -333,13 +340,13 @@ public final class CombatController implements VisualEffectCompletedCallback {
 		if (!m.rectPosition.isAdjacentTo(playerPosition)) return false;
 		return true;
 	}
-	private static boolean shouldMoveMonsterInCombat(Monster m, MonsterSpawnArea a, Coord playerPosition) {
+	private static boolean shouldMoveMonsterInCombat(Monster m, MonsterSpawnArea a, Player p, Coord playerPosition) {
 		final MonsterType.AggressionType movementAggressionType = m.getMovementAggressionType();
 		if (movementAggressionType == MonsterType.AggressionType.none) return false;
 
 		if (!m.hasAPs(m.getMoveCost())) return false;
 		if (m.position.isAdjacentTo(playerPosition)) return false;
-		if (!m.isAgressive()) return false;
+		if (!m.isAgressive(p)) return false;
 
 		if (movementAggressionType == MonsterType.AggressionType.protectSpawn) {
 			if (a.area.contains(playerPosition)) return true;
@@ -374,10 +381,16 @@ public final class CombatController implements VisualEffectCompletedCallback {
 			handleNextMonsterAction();
 			return;
 		}
-
-		controllers.monsterMovementController.moveMonsterToNextPosition(currentActiveMonster, world.model.currentMap);
-		combatActionListeners.onMonsterMovedDuringCombat(currentActiveMonster);
-		waitForNextMonsterAction();
+		
+		final Monster movingMonster = currentActiveMonster;
+		controllers.monsterMovementController.moveMonsterToNextPositionDuringCombat(currentActiveMonster, world.model.currentMap, new VisualEffectController.VisualEffectCompletedCallback(){
+			@Override
+			public void onVisualEffectCompleted(int callbackValue) {
+				combatActionListeners.onMonsterMovedDuringCombat(movingMonster);
+				handleNextMonsterAction();
+			}
+		});
+		
 	}
 
 	private void attackWithCurrentMonster() {
@@ -389,12 +402,10 @@ public final class CombatController implements VisualEffectCompletedCallback {
 
 		if (attack.isHit) {
 			combatActionListeners.onMonsterAttackSuccess(currentActiveMonster, attack);
-
 			startAttackEffect(attack, world.model.player.position, this, CALLBACK_MONSTERATTACK);
 		} else {
 			combatActionListeners.onMonsterAttackMissed(currentActiveMonster, attack);
-
-			waitForNextMonsterAction();
+			startMissedEffect(attack, world.model.player.position, this, CALLBACK_MONSTERATTACK);
 		}
 	}
 
@@ -427,10 +438,25 @@ public final class CombatController implements VisualEffectCompletedCallback {
 		controllers.effectController.startEffect(
 				position
 				, VisualEffectCollection.VisualEffectID.redSplash
-				, attack.damage
+				, (attack.damage == 0) ? null : String.valueOf(attack.damage)
 				, callback
 				, callbackValue);
 	}
+	
+	private void startMissedEffect(AttackResult attack, final Coord position, VisualEffectCompletedCallback callback, int callbackValue) {
+		if (controllers.preferences.attackspeed_milliseconds <= 0) {
+			callback.onVisualEffectCompleted(callbackValue);
+			return;
+		}
+		controllers.effectController.startEffect(
+				position
+				, VisualEffectCollection.VisualEffectID.miss
+				, controllers.getResources().getString(R.string.combat_miss_animation_message)
+				, callback
+				, callbackValue);
+	}
+	
+	
 	private void endMonsterTurn() {
 		currentActiveMonster = null;
 		newPlayerTurn(false);
@@ -472,7 +498,7 @@ public final class CombatController implements VisualEffectCompletedCallback {
 
 		float averageDamagePerTurn = getAverageDamagePerTurn(attacker, target);
 		if (averageDamagePerTurn <= 0) return 100;
-		return (int) FloatMath.ceil(target.getMaxHP() / averageDamagePerTurn);
+		return (int) Math.ceil(target.getMaxHP() / averageDamagePerTurn);
 	}
 	public int getMonsterDifficulty(Monster monster) {
 		// returns [0..100) . 100 == easy.
@@ -530,11 +556,24 @@ public final class CombatController implements VisualEffectCompletedCallback {
 
 	private void applyAttackHitStatusEffects(Actor attacker, Actor target) {
 		ItemTraits_OnUse[] onHitEffects = attacker.getOnHitEffects();
-		if (onHitEffects == null) return;
-
-		for (ItemTraits_OnUse e : onHitEffects) {
-			controllers.actorStatsController.applyUseEffect(attacker, target, e);
+		ItemTraits_OnHitReceived[] onHitReceivedEffects = target.getOnHitReceivedEffects();
+		if (onHitEffects != null) {
+			for (ItemTraits_OnUse e : onHitEffects) {
+				controllers.actorStatsController.applyUseEffect(attacker, target, e);
+			}
 		}
+		if (onHitReceivedEffects != null) {
+			for (ItemTraits_OnHitReceived e : onHitReceivedEffects) {
+				controllers.actorStatsController.applyHitReceivedEffect(target, attacker, e);
+			}
+		}
+	}
+
+	public void endOfCombatRound() {
+		world.model.worldData.tickWorldTime();
+		controllers.gameRoundController.resetRoundTimers();
+		controllers.actorStatsController.applyConditionsToPlayer(world.model.player, false);
+		controllers.actorStatsController.applyConditionsToMonsters(world.model.currentMap, true);
 	}
 
 	public void monsterSteppedOnPlayer(Monster m) {

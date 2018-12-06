@@ -5,6 +5,7 @@ import android.view.ViewGroup;
 import android.widget.TableLayout;
 import android.widget.TableRow;
 import android.widget.TextView;
+
 import com.gpl.rpg.AndorsTrail.R;
 import com.gpl.rpg.AndorsTrail.model.actor.Actor;
 import com.gpl.rpg.AndorsTrail.util.Range;
@@ -28,13 +29,13 @@ public final class TraitsInfoView {
 
 		TextView actorinfo_currentconditions_title = (TextView) group.findViewById(R.id.actorinfo_currentconditions_title);
 		ActorConditionList actorinfo_currentconditions = (ActorConditionList) group.findViewById(R.id.actorinfo_currentconditions);
-		if (actor.conditions.isEmpty()) {
+		if (actor.conditions.isEmpty() && actor.immunities.isEmpty()) {
 			actorinfo_currentconditions_title.setVisibility(View.GONE);
 			actorinfo_currentconditions.setVisibility(View.GONE);
 		} else {
 			actorinfo_currentconditions_title.setVisibility(View.VISIBLE);
 			actorinfo_currentconditions.setVisibility(View.VISIBLE);
-			actorinfo_currentconditions.update(actor.conditions);
+			actorinfo_currentconditions.update(actor.conditions, actor.immunities);
 		}
 	}
 
@@ -65,7 +66,7 @@ public final class TraitsInfoView {
 		} else {
 			row.setVisibility(View.VISIBLE);
 			tv = (TextView) group.findViewById(R.id.traitsinfo_attack_chance);
-			tv.setText(Integer.toString(attackChance) + '%');
+			tv.setText(Integer.toString(attackChance));
 		}
 
 		row = (TableRow) group.findViewById(R.id.traitsinfo_attack_damage_row);
@@ -110,7 +111,7 @@ public final class TraitsInfoView {
 		} else {
 			row.setVisibility(View.VISIBLE);
 			tv = (TextView) group.findViewById(R.id.traitsinfo_block_chance);
-			tv.setText(Integer.toString(blockChance) + '%');
+			tv.setText(Integer.toString(blockChance));
 		}
 
 		row = (TableRow) group.findViewById(R.id.traitsinfo_damageresist_row);

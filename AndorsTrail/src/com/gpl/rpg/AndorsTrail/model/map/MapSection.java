@@ -7,6 +7,7 @@ public final class MapSection {
 	public final MapLayer layerGround;
 	public final MapLayer layerObjects;
 	public final MapLayer layerAbove;
+	public final MapLayer layerTop;
 	public final boolean[][] isWalkable;
 	private final byte[] layoutHash;
 
@@ -14,12 +15,14 @@ public final class MapSection {
 			MapLayer layerGround
 			, MapLayer layerObjects
 			, MapLayer layerAbove
+			, MapLayer layerTop
 			, boolean[][] isWalkable
 			, byte[] layoutHash
 	) {
 		this.layerGround = layerGround;
 		this.layerObjects = layerObjects;
 		this.layerAbove = layerAbove;
+		this.layerTop = layerTop;
 		this.isWalkable = isWalkable;
 		this.layoutHash = layoutHash;
 	}
@@ -28,6 +31,7 @@ public final class MapSection {
 		replaceTileLayerSection(layerGround, replaceLayersWith.layerGround, replacementArea);
 		replaceTileLayerSection(layerObjects, replaceLayersWith.layerObjects, replacementArea);
 		replaceTileLayerSection(layerAbove, replaceLayersWith.layerAbove, replacementArea);
+		replaceTileLayerSection(layerTop, replaceLayersWith.layerTop, replacementArea);
 		if (replaceLayersWith.isWalkable != null) {
 			final int dy = replacementArea.topLeft.y;
 			final int height = replacementArea.size.height;
@@ -47,7 +51,9 @@ public final class MapSection {
 		}
 	}
 
-	public String calculateHash() {
-		return ByteUtils.toHexString(layoutHash, 4);
+	public String calculateHash(String filter) {
+		byte[] hash = layoutHash.clone();
+		if (filter != null) ByteUtils.xorArray(hash, filter.getBytes());
+		return ByteUtils.toHexString(hash, 4);
 	}
 }

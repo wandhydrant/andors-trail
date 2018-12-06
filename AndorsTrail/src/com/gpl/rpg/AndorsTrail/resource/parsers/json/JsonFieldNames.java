@@ -105,7 +105,6 @@ public final class JsonFieldNames {
 		public static final String iconID = "iconID";
 		public static final String name = "name";
 		public static final String spawnGroup = "spawnGroup";
-		public static final String size = "size";
 		public static final String monsterClass = "monsterClass";
 		public static final String movementAggressionType = "movementAggressionType";
 		public static final String unique = "unique";
@@ -123,11 +122,22 @@ public final class JsonFieldNames {
 		public static final String droplistID = "droplistID";
 		public static final String phraseID = "phraseID";
 		public static final String hitEffect = "hitEffect";
+		public static final String hitReceivedEffect = "hitReceivedEffect";
+		public static final String deathEffect = "deathEffect";
 	}
 
 	public static final class ItemTraits_OnUse {
 		public static final String increaseCurrentHP = "increaseCurrentHP";
 		public static final String increaseCurrentAP = "increaseCurrentAP";
+		public static final String conditionsSource = "conditionsSource";
+		public static final String conditionsTarget = "conditionsTarget";
+	}
+	
+	public static final class ItemTraits_OnHitReceived {
+		public static final String increaseCurrentHP = "increaseCurrentHP";
+		public static final String increaseCurrentAP = "increaseCurrentAP";
+		public static final String increaseAttackerCurrentHP = "increaseAttackerCurrentHP";
+		public static final String increaseAttackerCurrentAP = "increaseAttackerCurrentAP";
 		public static final String conditionsSource = "conditionsSource";
 		public static final String conditionsTarget = "conditionsTarget";
 	}
@@ -156,6 +166,7 @@ public final class JsonFieldNames {
 		public static final String useEffect = "useEffect";
 		public static final String hitEffect = "hitEffect";
 		public static final String killEffect = "killEffect";
+		public static final String hitReceivedEffect = "hitReceivedEffect";
 	}
 
 

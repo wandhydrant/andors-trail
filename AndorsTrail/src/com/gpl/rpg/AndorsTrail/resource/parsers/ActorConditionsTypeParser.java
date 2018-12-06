@@ -1,13 +1,14 @@
 package com.gpl.rpg.AndorsTrail.resource.parsers;
 
+import org.json.JSONException;
+import org.json.JSONObject;
+
 import com.gpl.rpg.AndorsTrail.model.ability.ActorConditionType;
 import com.gpl.rpg.AndorsTrail.resource.DynamicTileLoader;
 import com.gpl.rpg.AndorsTrail.resource.TranslationLoader;
 import com.gpl.rpg.AndorsTrail.resource.parsers.json.JsonCollectionParserFor;
 import com.gpl.rpg.AndorsTrail.resource.parsers.json.JsonFieldNames;
 import com.gpl.rpg.AndorsTrail.util.Pair;
-import org.json.JSONException;
-import org.json.JSONObject;
 
 public final class ActorConditionsTypeParser extends JsonCollectionParserFor<ActorConditionType> {
 

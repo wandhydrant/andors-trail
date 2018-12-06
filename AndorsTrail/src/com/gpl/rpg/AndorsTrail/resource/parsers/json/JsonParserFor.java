@@ -1,10 +1,10 @@
 package com.gpl.rpg.AndorsTrail.resource.parsers.json;
 
+import java.util.ArrayList;
+
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
-
-import java.util.ArrayList;
 
 public abstract class JsonParserFor<T> {
 	public void parseRows(JSONArray array, ArrayList<T> dest) throws JSONException {

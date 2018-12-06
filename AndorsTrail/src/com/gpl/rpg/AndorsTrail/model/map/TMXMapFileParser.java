@@ -1,13 +1,5 @@
 package com.gpl.rpg.AndorsTrail.model.map;
 
-import android.content.res.Resources;
-import android.content.res.XmlResourceParser;
-import com.gpl.rpg.AndorsTrail.AndorsTrailApplication;
-import com.gpl.rpg.AndorsTrail.util.Base64;
-import com.gpl.rpg.AndorsTrail.util.L;
-import com.gpl.rpg.AndorsTrail.util.XmlResourceParserUtils;
-import org.xmlpull.v1.XmlPullParserException;
-
 import java.io.ByteArrayInputStream;
 import java.io.IOException;
 import java.security.MessageDigest;
@@ -15,6 +7,16 @@ import java.security.NoSuchAlgorithmException;
 import java.util.ArrayList;
 import java.util.zip.GZIPInputStream;
 import java.util.zip.InflaterInputStream;
+
+import org.xmlpull.v1.XmlPullParserException;
+
+import android.content.res.Resources;
+import android.content.res.XmlResourceParser;
+
+import com.gpl.rpg.AndorsTrail.AndorsTrailApplication;
+import com.gpl.rpg.AndorsTrail.util.Base64;
+import com.gpl.rpg.AndorsTrail.util.L;
+import com.gpl.rpg.AndorsTrail.util.XmlResourceParserUtils;
 
 public final class TMXMapFileParser {
 	private static final int TILESIZE = 32;
@@ -144,6 +146,8 @@ public final class TMXMapFileParser {
 			public void handleTag(XmlResourceParser xrp, String tagName) throws XmlPullParserException, IOException {
 				if (tagName.equals("object")) {
 					group.objects.add(readTMXObject(xrp));
+				} else if (tagName.equals("property")) {
+					group.properties.add(readTMXProperty(xrp));
 				}
 			}
 		});
@@ -291,6 +295,7 @@ public final class TMXMapFileParser {
 	public static final class TMXObjectGroup {
 		public String name;
 		public final ArrayList<TMXObject> objects = new ArrayList<TMXObject>();
+		public final ArrayList<TMXProperty> properties = new ArrayList<TMXProperty>();
 	}
 	public static final class TMXObject {
 		public String name;

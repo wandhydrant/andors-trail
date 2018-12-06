@@ -3,7 +3,7 @@ package com.gpl.rpg.AndorsTrail.model.item;
 import com.gpl.rpg.AndorsTrail.model.ability.ActorConditionEffect;
 import com.gpl.rpg.AndorsTrail.model.ability.traits.StatsModifierTraits;
 
-public final class ItemTraits_OnUse {
+public class ItemTraits_OnUse {
 	public final StatsModifierTraits changedStats;
 	public final ActorConditionEffect[] addedConditions_source;
 	public final ActorConditionEffect[] addedConditions_target;

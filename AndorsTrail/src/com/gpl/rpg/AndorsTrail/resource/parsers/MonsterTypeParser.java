@@ -1,10 +1,13 @@
 package com.gpl.rpg.AndorsTrail.resource.parsers;
 
-import android.util.FloatMath;
+import org.json.JSONException;
+import org.json.JSONObject;
+
 import com.gpl.rpg.AndorsTrail.controller.Constants;
 import com.gpl.rpg.AndorsTrail.model.ability.ActorConditionTypeCollection;
 import com.gpl.rpg.AndorsTrail.model.actor.MonsterType;
 import com.gpl.rpg.AndorsTrail.model.item.DropListCollection;
+import com.gpl.rpg.AndorsTrail.model.item.ItemTraits_OnHitReceived;
 import com.gpl.rpg.AndorsTrail.model.item.ItemTraits_OnUse;
 import com.gpl.rpg.AndorsTrail.resource.DynamicTileLoader;
 import com.gpl.rpg.AndorsTrail.resource.TranslationLoader;
@@ -13,8 +16,6 @@ import com.gpl.rpg.AndorsTrail.resource.parsers.json.JsonFieldNames;
 import com.gpl.rpg.AndorsTrail.util.ConstRange;
 import com.gpl.rpg.AndorsTrail.util.Pair;
 import com.gpl.rpg.AndorsTrail.util.Size;
-import org.json.JSONException;
-import org.json.JSONObject;
 
 public final class MonsterTypeParser extends JsonCollectionParserFor<MonsterType> {
 
@@ -49,6 +50,8 @@ public final class MonsterTypeParser extends JsonCollectionParserFor<MonsterType
 		int blockChance = o.optInt(JsonFieldNames.Monster.blockChance, 0);
 		int damageResistance = o.optInt(JsonFieldNames.Monster.damageResistance, 0);
 		final ItemTraits_OnUse hitEffect = itemTraitsParser.parseItemTraits_OnUse(o.optJSONObject(JsonFieldNames.Monster.hitEffect));
+		final ItemTraits_OnHitReceived hitReceivedEffect = itemTraitsParser.parseItemTraits_OnHitReceived(o.optJSONObject(JsonFieldNames.Monster.hitReceivedEffect));
+		final ItemTraits_OnUse deathEffect = itemTraitsParser.parseItemTraits_OnUse(o.optJSONObject(JsonFieldNames.Monster.deathEffect));
 
 		final int exp = getExpectedMonsterExperience(attackCost, attackChance, damagePotential, criticalSkill, criticalMultiplier, blockChance, damageResistance, hitEffect, maxHP, maxAP);
 
@@ -63,7 +66,7 @@ public final class MonsterTypeParser extends JsonCollectionParserFor<MonsterType
 				, o.optString(JsonFieldNames.Monster.faction, null)
 				, MonsterType.MonsterClass.fromString(o.optString(JsonFieldNames.Monster.monsterClass, null), MonsterType.MonsterClass.humanoid)
 				, MonsterType.AggressionType.fromString(o.optString(JsonFieldNames.Monster.movementAggressionType, null), MonsterType.AggressionType.none)
-				, ResourceParserUtils.parseSize(o.optString(JsonFieldNames.Monster.size, null), size1x1) //TODO: This could be loaded from the tileset size instead.
+				, ResourceParserUtils.parseTilesetTileSize(tileLoader, o.optString(JsonFieldNames.Monster.iconID, null), size1x1)
 				, ResourceParserUtils.parseImageID(tileLoader, o.getString(JsonFieldNames.Monster.iconID))
 				, maxAP
 				, maxHP
@@ -76,6 +79,8 @@ public final class MonsterTypeParser extends JsonCollectionParserFor<MonsterType
 				, blockChance
 				, damageResistance
 				, hitEffect == null ? null : new ItemTraits_OnUse[] { hitEffect }
+				, hitReceivedEffect == null ? null : new ItemTraits_OnHitReceived[] { hitReceivedEffect }
+				, deathEffect
 		));
 	}
 
@@ -100,7 +105,7 @@ public final class MonsterTypeParser extends JsonCollectionParserFor<MonsterType
 		if (hitEffect != null && hitEffect.addedConditions_target != null && hitEffect.addedConditions_target.length > 0) {
 			attackConditionBonus += 50;
 		}
-		return (int) FloatMath.ceil((avgAttackHP * 3 + avgDefenseHP) * Constants.EXP_FACTOR_SCALING) + attackConditionBonus;
+		return (int) Math.ceil((avgAttackHP * 3 + avgDefenseHP) * Constants.EXP_FACTOR_SCALING) + attackConditionBonus;
 	}
 	private static int getAttacksPerTurn(int maxAP, int attackCost) {
 		return (int) Math.floor(maxAP / attackCost);

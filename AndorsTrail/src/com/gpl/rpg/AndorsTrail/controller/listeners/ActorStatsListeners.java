@@ -1,6 +1,7 @@
 package com.gpl.rpg.AndorsTrail.controller.listeners;
 
 import com.gpl.rpg.AndorsTrail.model.actor.Actor;
+import com.gpl.rpg.AndorsTrail.model.actor.Player;
 import com.gpl.rpg.AndorsTrail.util.ListOfListeners;
 
 public final class ActorStatsListeners extends ListOfListeners<ActorStatsListener> implements ActorStatsListener {
@@ -19,6 +20,14 @@ public final class ActorStatsListeners extends ListOfListeners<ActorStatsListene
 
 	private final Function2<ActorStatsListener, Actor, Integer> onActorMoveCostChanged = new Function2<ActorStatsListener, Actor, Integer>() {
 		@Override public void call(ActorStatsListener listener, Actor actor, Integer newMoveCost) { listener.onActorMoveCostChanged(actor, newMoveCost); }
+	};
+	
+	private final Function2<ActorStatsListener, Player, Integer> onPlayerReequipCostChanged = new Function2<ActorStatsListener, Player, Integer>() {
+		@Override public void call(ActorStatsListener listener, Player actor, Integer newAttackCost) { listener.onPlayerReequipCostChanged(actor, newAttackCost); }
+	};
+
+	private final Function2<ActorStatsListener, Player, Integer> onPlayerUseCostChanged = new Function2<ActorStatsListener, Player, Integer>() {
+		@Override public void call(ActorStatsListener listener, Player actor, Integer newMoveCost) { listener.onPlayerUseCostChanged(actor, newMoveCost); }
 	};
 
 	@Override
@@ -39,5 +48,16 @@ public final class ActorStatsListeners extends ListOfListeners<ActorStatsListene
 	@Override
 	public void onActorMoveCostChanged(Actor actor, int newMoveCost) {
 		callAllListeners(this.onActorMoveCostChanged, actor, newMoveCost);
+	}
+	
+
+	@Override
+	public void onPlayerReequipCostChanged(Player actor, int newAttackCost) {
+		callAllListeners(this.onPlayerReequipCostChanged, actor, newAttackCost);
+	}
+
+	@Override
+	public void onPlayerUseCostChanged(Player actor, int newMoveCost) {
+		callAllListeners(this.onPlayerUseCostChanged, actor, newMoveCost);
 	}
 }

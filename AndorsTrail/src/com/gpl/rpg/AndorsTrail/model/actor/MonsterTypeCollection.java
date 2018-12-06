@@ -1,11 +1,11 @@
 package com.gpl.rpg.AndorsTrail.model.actor;
 
+import java.util.ArrayList;
+import java.util.HashMap;
+
 import com.gpl.rpg.AndorsTrail.AndorsTrailApplication;
 import com.gpl.rpg.AndorsTrail.resource.parsers.MonsterTypeParser;
 import com.gpl.rpg.AndorsTrail.util.L;
-
-import java.util.ArrayList;
-import java.util.HashMap;
 
 public final class MonsterTypeCollection {
 	private final HashMap<String, MonsterType> monsterTypesById = new HashMap<String, MonsterType>();
@@ -24,7 +24,11 @@ public final class MonsterTypeCollection {
 		for (MonsterType t : monsterTypesById.values()) {
 			if (t.spawnGroup.equalsIgnoreCase(spawnGroup)) result.add(t);
 		}
-
+		//If the spawnGroup is empty, it should be a direct reference to a MonsterType's id.
+		if (result.isEmpty()) {
+			MonsterType t = monsterTypesById.get(spawnGroup);
+			if (t != null) result.add(t);
+		}
 		return result;
 	}
 
@@ -37,10 +41,5 @@ public final class MonsterTypeCollection {
 
 	public void initialize(MonsterTypeParser parser, String input) {
 		parser.parseRows(input, monsterTypesById);
-	}
-
-	// Unit test method. Not part of the game logic.
-	public HashMap<String, MonsterType> UNITTEST_getAllMonsterTypes() {
-		return monsterTypesById;
 	}
 }

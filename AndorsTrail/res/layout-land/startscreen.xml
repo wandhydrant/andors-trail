@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        layout="@layout/title_bg_layout" />
+
+    <TextView
+        android:id="@+id/startscreen_version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:text="@android:string/unknownName" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:baselineAligned="false"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <!-- android:background="@layout/title_bg_layout" -->
+
+        <LinearLayout
+            android:id="@+id/startcreen_centerarea"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.4"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/startscreen_dev_version"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="#FFFFFFFF"
+                android:gravity="center_horizontal"
+                android:textColor="#880000"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/startscreen_fragment_container"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.6"
+            android:gravity="bottom|center_horizontal" />
+
+            <!-- <include layout="@layout/startscreen_mainmenu" />
+        </FrameLayout> -->
+    </LinearLayout>
+
+</RelativeLayout>

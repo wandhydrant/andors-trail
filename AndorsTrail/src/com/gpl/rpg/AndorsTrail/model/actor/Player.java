@@ -1,7 +1,14 @@
 package com.gpl.rpg.AndorsTrail.model.actor;
 
-import android.util.FloatMath;
+import java.io.DataInputStream;
+import java.io.DataOutputStream;
+import java.io.IOException;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Map.Entry;
+
 import android.util.SparseIntArray;
+
 import com.gpl.rpg.AndorsTrail.AndorsTrailApplication;
 import com.gpl.rpg.AndorsTrail.context.ControllerContext;
 import com.gpl.rpg.AndorsTrail.context.WorldContext;
@@ -12,23 +19,14 @@ import com.gpl.rpg.AndorsTrail.model.item.DropListCollection;
 import com.gpl.rpg.AndorsTrail.model.item.Inventory;
 import com.gpl.rpg.AndorsTrail.model.item.Loot;
 import com.gpl.rpg.AndorsTrail.model.quest.QuestProgress;
-import com.gpl.rpg.AndorsTrail.resource.tiles.TileManager;
 import com.gpl.rpg.AndorsTrail.savegames.LegacySavegameFormatReaderForPlayer;
 import com.gpl.rpg.AndorsTrail.util.Coord;
 import com.gpl.rpg.AndorsTrail.util.Range;
 import com.gpl.rpg.AndorsTrail.util.Size;
 
-import java.io.DataInputStream;
-import java.io.DataOutputStream;
-import java.io.IOException;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Map.Entry;
-
 public final class Player extends Actor {
 
 	public static final int DEFAULT_PLAYER_ATTACKCOST = 4;
-	public final Coord lastPosition;
 	public final Coord nextPosition;
 
 	// TODO: Should be privates
@@ -86,14 +84,13 @@ public final class Player extends Actor {
 			, true // isPlayer
 			, false // isImmuneToCriticalHits
 		);
-		this.lastPosition = new Coord();
 		this.nextPosition = new Coord();
 		this.levelExperience = new Range();
 		this.inventory = new Inventory();
 	}
 
-	public void initializeNewPlayer(DropListCollection dropLists, String playerName) {
-		baseTraits.iconID = TileManager.CHAR_HERO;
+	public void initializeNewPlayer(DropListCollection dropLists, String playerName, int playerIcon) {
+		baseTraits.iconID = playerIcon;
 		baseTraits.maxAP = 10;
 		baseTraits.maxHP = 25;
 		baseTraits.moveCost = 6;
@@ -154,6 +151,12 @@ public final class Player extends Actor {
 		return true; //Progress was added.
 	}
 
+	public boolean removeQuestProgress(QuestProgress progress){
+        if (!hasExactQuestProgress(progress.questID, progress.progress)) return false;
+		questProgress.get(progress.questID).remove(progress.progress);
+		return true; //Progress was removed.
+	}
+
 	public void recalculateLevelExperience() {
 		int experienceRequiredToReachThisLevel = getRequiredExperience(level);
 		levelExperience.set(getRequiredExperienceForNextLevel(level), totalExperience - experienceRequiredToReachThisLevel);
@@ -167,10 +170,8 @@ public final class Player extends Actor {
 		return v;
 	}
 	private static final int EXP_base = 55;
-	private static final int EXP_D = 400;
-	private static final int EXP_powbase = 2;
 	private static int getRequiredExperienceForNextLevel(int currentLevel) {
-		return (int) (EXP_base * Math.pow(currentLevel, EXP_powbase + currentLevel/EXP_D));
+		return (int) (EXP_base * currentLevel * currentLevel);
 	}
 
 	public boolean canLevelup() {
@@ -200,6 +201,9 @@ public final class Player extends Actor {
 		Integer v = alignments.get(faction);
 		if (v == null) return 0;
 		return v;
+	}
+	public void setAlignment(String faction, int newValue) {
+		alignments.put(faction, newValue);
 	}
 	public void addAlignment(String faction, int delta) {
 		int newValue = getAlignment(faction) + delta;
@@ -249,7 +253,7 @@ public final class Player extends Actor {
 		case attackCost: return baseTraits.attackCost;
 		case attackChance: return baseTraits.attackChance;
 		case criticalSkill: return baseTraits.criticalSkill;
-		case criticalMultiplier: return (int) FloatMath.floor(baseTraits.criticalMultiplier);
+		case criticalMultiplier: return (int) Math.floor(baseTraits.criticalMultiplier);
 		case damagePotentialMin: return baseTraits.damagePotential.current;
 		case damagePotentialMax: return baseTraits.damagePotential.max;
 		case blockChance: return baseTraits.blockChance;
@@ -303,6 +307,13 @@ public final class Player extends Actor {
 			final int numConditions = src.readInt();
 			for(int i = 0; i < numConditions; ++i) {
 				this.conditions.add(new ActorCondition(src, world, fileversion));
+			}
+		}
+
+		if (fileversion >= 43) {
+			final int numConditions = src.readInt();
+			for(int i = 0; i < numConditions; ++i) {
+				this.immunities.add(new ActorCondition(src, world, fileversion));
 			}
 		}
 
@@ -376,6 +387,10 @@ public final class Player extends Actor {
 		position.writeToParcel(dest);
 		dest.writeInt(conditions.size());
 		for (ActorCondition c : conditions) {
+			c.writeToParcel(dest);
+		}
+		dest.writeInt(immunities.size());
+		for (ActorCondition c : immunities) {
 			c.writeToParcel(dest);
 		}
 		lastPosition.writeToParcel(dest);

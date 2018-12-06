@@ -1,11 +1,11 @@
 package com.gpl.rpg.AndorsTrail.model;
 
-import com.gpl.rpg.AndorsTrail.model.actor.Monster;
-import com.gpl.rpg.AndorsTrail.util.Coord;
-
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
 import java.io.IOException;
+
+import com.gpl.rpg.AndorsTrail.model.actor.Monster;
+import com.gpl.rpg.AndorsTrail.util.Coord;
 
 public final class InterfaceData {
 	public boolean isMainActivityVisible = false;
@@ -15,6 +15,13 @@ public final class InterfaceData {
 	public Coord selectedPosition;
 	public String selectedTabHeroInfo = "";
 	public int selectedQuestFilter = 0; // Should not be parceled
+
+	public int selectedInventoryCategory = 0; //All
+	public int selectedInventorySort = 0; //Unsorted
+	public int oldSortSelection = 0; // Later will be used for reversing ascending/descending order
+	public int selectedSkillCategory = 0; //All
+	public int selectedSkillSort = 0; //Unsorted
+	public int selectedShopSort = 0; //Unsorted
 
 	public InterfaceData() { }
 

@@ -1,5 +1,13 @@
 package com.gpl.rpg.AndorsTrail.controller;
 
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Set;
+
 import android.content.Context;
 import android.content.Intent;
 import android.content.res.Resources;
@@ -10,6 +18,7 @@ import android.graphics.Paint;
 import android.os.AsyncTask;
 import android.os.Environment;
 import android.widget.Toast;
+
 import com.gpl.rpg.AndorsTrail.AndorsTrailApplication;
 import com.gpl.rpg.AndorsTrail.R;
 import com.gpl.rpg.AndorsTrail.activity.DisplayWorldMapActivity;
@@ -25,14 +34,6 @@ import com.gpl.rpg.AndorsTrail.util.Coord;
 import com.gpl.rpg.AndorsTrail.util.CoordRect;
 import com.gpl.rpg.AndorsTrail.util.L;
 import com.gpl.rpg.AndorsTrail.util.Size;
-
-import java.io.File;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.PrintWriter;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Set;
 
 public final class WorldMapController {
 
@@ -114,7 +115,7 @@ public final class WorldMapController {
 			this.cachedTiles = cachedTiles;
 			this.tileSize = world.tileManager.tileSize;
 			this.scale = (float) WORLDMAP_SCREENSHOT_TILESIZE / world.tileManager.tileSize;
-			mapTiles.setColorFilter(mPaint);
+			mapTiles.setColorFilter(mPaint, null, true);
 		}
 
 		public Bitmap drawMap() {
@@ -127,6 +128,7 @@ public final class WorldMapController {
 				drawMapLayer(canvas, mapTiles.currentLayout.layerGround);
 				tryDrawMapLayer(canvas, mapTiles.currentLayout.layerObjects);
 				tryDrawMapLayer(canvas, mapTiles.currentLayout.layerAbove);
+				tryDrawMapLayer(canvas, mapTiles.currentLayout.layerTop);
 			}
 			return image;
 		}
@@ -157,6 +159,12 @@ public final class WorldMapController {
 
 		File noMediaFile = new File(dir, ".nomedia");
 		if (!noMediaFile.exists()) noMediaFile.createNewFile();
+	}
+	public static boolean fileForMapExists(PredefinedMap map) {
+		if (map.lastSeenLayoutHash.length() > 0) {
+			return getPngFile(map.name + '.' + map.lastSeenLayoutHash).exists();
+		}
+		return getPngFile(map.name).exists();
 	}
 	private static File getFileForMap(PredefinedMap map, boolean verifyFileExists) {
 		if (map.lastSeenLayoutHash.length() > 0) {

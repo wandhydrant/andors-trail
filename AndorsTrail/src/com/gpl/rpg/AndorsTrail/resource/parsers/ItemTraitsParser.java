@@ -1,5 +1,8 @@
 package com.gpl.rpg.AndorsTrail.resource.parsers;
 
+import org.json.JSONException;
+import org.json.JSONObject;
+
 import com.gpl.rpg.AndorsTrail.AndorsTrailApplication;
 import com.gpl.rpg.AndorsTrail.model.ability.ActorCondition;
 import com.gpl.rpg.AndorsTrail.model.ability.ActorConditionEffect;
@@ -7,13 +10,12 @@ import com.gpl.rpg.AndorsTrail.model.ability.ActorConditionTypeCollection;
 import com.gpl.rpg.AndorsTrail.model.ability.traits.AbilityModifierTraits;
 import com.gpl.rpg.AndorsTrail.model.ability.traits.StatsModifierTraits;
 import com.gpl.rpg.AndorsTrail.model.item.ItemTraits_OnEquip;
+import com.gpl.rpg.AndorsTrail.model.item.ItemTraits_OnHitReceived;
 import com.gpl.rpg.AndorsTrail.model.item.ItemTraits_OnUse;
 import com.gpl.rpg.AndorsTrail.resource.parsers.json.JsonArrayParserFor;
 import com.gpl.rpg.AndorsTrail.resource.parsers.json.JsonFieldNames;
 import com.gpl.rpg.AndorsTrail.util.ConstRange;
 import com.gpl.rpg.AndorsTrail.util.L;
-import org.json.JSONException;
-import org.json.JSONObject;
 
 public final class ItemTraitsParser {
 	private final JsonArrayParserFor<ActorConditionEffect> actorConditionEffectParser_withDuration;
@@ -26,7 +28,7 @@ public final class ItemTraitsParser {
 				return new ActorConditionEffect(
 						actorConditionTypes.getActorConditionType(o.getString(JsonFieldNames.ActorConditionEffect.condition))
 						, o.optInt(JsonFieldNames.ActorConditionEffect.magnitude, ActorCondition.MAGNITUDE_REMOVE_ALL)
-						, o.optInt(JsonFieldNames.ActorConditionEffect.duration, ActorCondition.DURATION_FOREVER)
+						, o.optInt(JsonFieldNames.ActorConditionEffect.duration, ActorCondition.DURATION_NONE)
 						, ResourceParserUtils.parseChance(o.getString(JsonFieldNames.ActorConditionEffect.chance))
 				);
 			}
@@ -66,6 +68,44 @@ public final class ItemTraitsParser {
 						null
 						,boostCurrentHP
 						,boostCurrentAP
+					)
+					,addedConditions_source
+					,addedConditions_target
+					);
+		}
+	}
+
+	public ItemTraits_OnHitReceived parseItemTraits_OnHitReceived(JSONObject o) throws JSONException {
+		if (o == null) return null;
+
+		ConstRange boostCurrentHP = ResourceParserUtils.parseConstRange(o.optJSONObject(JsonFieldNames.ItemTraits_OnHitReceived.increaseCurrentHP));
+		ConstRange boostCurrentAP = ResourceParserUtils.parseConstRange(o.optJSONObject(JsonFieldNames.ItemTraits_OnHitReceived.increaseCurrentAP));
+		ConstRange boostAttackerCurrentHP = ResourceParserUtils.parseConstRange(o.optJSONObject(JsonFieldNames.ItemTraits_OnHitReceived.increaseAttackerCurrentHP));
+		ConstRange boostAttackerCurrentAP = ResourceParserUtils.parseConstRange(o.optJSONObject(JsonFieldNames.ItemTraits_OnHitReceived.increaseAttackerCurrentAP));
+		ActorConditionEffect[] addedConditions_source = actorConditionEffectParser_withDuration.parseArray(o.optJSONArray(JsonFieldNames.ItemTraits_OnHitReceived.conditionsSource));
+		ActorConditionEffect[] addedConditions_target = actorConditionEffectParser_withDuration.parseArray(o.optJSONArray(JsonFieldNames.ItemTraits_OnHitReceived.conditionsTarget));
+		if (	   boostCurrentHP == null
+				&& boostCurrentAP == null
+				&& boostAttackerCurrentAP == null
+				&& boostCurrentAP == null
+				&& addedConditions_source == null
+				&& addedConditions_target == null
+			) {
+			if (AndorsTrailApplication.DEVELOPMENT_VALIDATEDATA) {
+				L.log("OPTIMIZE: Tried to parseItemTraits_OnHitReceived , where hasEffect=" + o.toString() + ", but all data was empty.");
+			}
+			return null;
+		} else {
+			return new ItemTraits_OnHitReceived(
+					new StatsModifierTraits(
+						null
+						,boostCurrentHP
+						,boostCurrentAP
+					)
+					, new StatsModifierTraits(
+						null
+						,boostAttackerCurrentHP
+						,boostAttackerCurrentAP
 					)
 					,addedConditions_source
 					,addedConditions_target
