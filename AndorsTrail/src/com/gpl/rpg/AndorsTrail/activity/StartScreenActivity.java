@@ -1,18 +1,5 @@
 package com.gpl.rpg.AndorsTrail.activity;
 
-import android.content.Intent;
-import android.content.res.Resources;
-import android.graphics.drawable.AnimationDrawable;
-import android.os.Bundle;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentActivity;
-import android.support.v4.app.FragmentManager.OnBackStackChangedListener;
-import android.view.KeyEvent;
-import android.view.View;
-import android.view.ViewTreeObserver;
-import android.widget.ImageView;
-import android.widget.TextView;
-
 import com.gpl.rpg.AndorsTrail.AndorsTrailApplication;
 import com.gpl.rpg.AndorsTrail.AndorsTrailPreferences;
 import com.gpl.rpg.AndorsTrail.R;
@@ -23,6 +10,24 @@ import com.gpl.rpg.AndorsTrail.activity.fragment.StartScreenActivity_NewGame.Gam
 import com.gpl.rpg.AndorsTrail.resource.tiles.TileManager;
 import com.gpl.rpg.AndorsTrail.util.ThemeHelper;
 import com.gpl.rpg.AndorsTrail.view.CloudsAnimatorView;
+
+import android.Manifest;
+import android.annotation.TargetApi;
+import android.content.Intent;
+import android.content.pm.PackageManager;
+import android.content.res.Resources;
+import android.graphics.drawable.AnimationDrawable;
+import android.os.Build;
+import android.os.Bundle;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentActivity;
+import android.support.v4.app.FragmentManager.OnBackStackChangedListener;
+import android.view.KeyEvent;
+import android.view.View;
+import android.view.ViewTreeObserver;
+import android.widget.ImageView;
+import android.widget.TextView;
+import android.widget.Toast;
 
 public final class StartScreenActivity extends FragmentActivity implements OnNewGameRequestedListener, GameCreationOverListener, OnBackStackChangedListener {
 
@@ -104,7 +109,32 @@ public final class StartScreenActivity extends FragmentActivity implements OnNew
 		toggleUiVisibility();
 		
 		app.getWorldSetup().startResourceLoader(res);
+		
+		checkAndRequestPermissions();
+	}
+	
+	private static final int READ_EXTERNAL_STORAGE_REQUEST=1;
+	private static final int WRITE_EXTERNAL_STORAGE_REQUEST=2;
+	
+	@TargetApi(23)
+	private void checkAndRequestPermissions() {
+		if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+			if (getApplicationContext().checkSelfPermission(Manifest.permission.READ_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED) {
+				this.requestPermissions(new String[] {Manifest.permission.READ_EXTERNAL_STORAGE}, READ_EXTERNAL_STORAGE_REQUEST);
+			}
+			if (getApplicationContext().checkSelfPermission(Manifest.permission.WRITE_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED) {
+				this.requestPermissions(new String[] {Manifest.permission.WRITE_EXTERNAL_STORAGE}, WRITE_EXTERNAL_STORAGE_REQUEST);
+			} 
+		}
+	}
 
+	@Override
+	public void onRequestPermissionsResult(int requestCode, String[] permissions, int[] grantResults) {
+		if (grantResults.length > 0 && grantResults[0] != PackageManager.PERMISSION_GRANTED) {
+			Toast.makeText(this, R.string.storage_permissions_mandatory, Toast.LENGTH_LONG).show();
+			((AndorsTrailApplication)getApplication()).discardWorld();
+			finish();
+		}
 	}
 	
 	private void toggleUiVisibility() {
