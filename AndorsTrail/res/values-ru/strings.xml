@@ -1,4 +1,4 @@
-<?xml version='1.0' encoding='UTF-8'?>
+<?xml version="1.0" encoding="utf-8"?>
 <resources><string name="app_name">След Эндора</string>
 	<string name="app_description">Квестово-фэнтезийная RPG</string>
 
@@ -20,7 +20,7 @@
 \n:( 
 \n
 \nВозможно, сохранение повреждено.</string>
-	<string name="dialog_loading_failed_incorrectversion">Следу Эндора не удалось загрузить файл сохранения игры. Этот файл сохранён в более новой версии игры, чем эта.</string>
+	<string name="dialog_loading_failed_incorrectversion">Следу Эндора не удалось загрузить файл сохранения игры. Это сохранение сделано в более новой версии, чем текущая.</string>
 
 	<string name="dialog_close">Закрыть</string>
 
@@ -36,7 +36,7 @@
 	<string name="heroinfo_char">Обзор</string>
 	<string name="heroinfo_inv">Предметы</string>
 	<string name="heroinfo_skill">Навыки</string>
-	<string name="heroinfo_levelup">Новый уровень</string>
+	<string name="heroinfo_levelup">Повышение уровня</string>
 	<string name="heroinfo_level">Уровень</string>
 	<string name="heroinfo_totalexperience">Всего опыта</string>
 	<string name="heroinfo_wornequipment">Надетое снаряжение</string>
@@ -76,7 +76,7 @@
 	<string name="dialog_loot_pickall">Взять всё</string>
 	<string name="dialog_loot_foundgold">Вы нашли %1$d золотых.</string>
 	<string name="dialog_loot_pickedupitem">Вы подобрали предмет.</string>
-	<string name="dialog_loot_pickedupitems">Вы подобрали %1$d предмета.</string>
+	<string name="dialog_loot_pickedupitems">Вы подобрали %1$d предмета(ов).</string>
 	<string name="dialog_groundloot_title">Предметы</string>
 	<string name="dialog_groundloot_message">Вы нашли несколько предметов.</string>
 	<string name="dialog_monsterloot_title">Победа</string>
@@ -123,12 +123,12 @@
 	<string name="traitsinfo_criticalhit_skill">Шанс критического удара:</string>
 	<string name="traitsinfo_criticalhit_multiplier">Критический множитель:</string>
 	<string name="iteminfo_category">Категория:</string>
-	<string name="startscreen_newgame_confirm">Вы потеряете свою текущие игру и персонажа, вы уверены, что хотите начать новую игру\?</string>
+	<string name="startscreen_newgame_confirm">Вы потеряете свою текущую игру и своего текущего персонажа, вы уверены, что хотите начать новую игру\?</string>
 	<string name="conversation_rewardexp">[Получено %1$d опыта]</string>
 	<string name="conversation_rewardgold">[Получено %1$d золота]</string>
 	<string name="conversation_lostgold">[Вы потеряли %1$d золота]</string>
 	<string name="conversation_rewarditem">[Вы получили предмет]</string>
-	<string name="conversation_rewarditems">[Получено %1$d предмета]</string>
+	<string name="conversation_rewarditems">[Вы получили %1$d предмета(ов)]</string>
 	<string name="shop_buy">Купить</string>
 	<string name="shop_sell">Продать</string>
 	<string name="conversation_next">Дальше</string>
