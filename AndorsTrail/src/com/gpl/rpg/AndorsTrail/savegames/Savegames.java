@@ -122,7 +122,11 @@ public final class Savegames {
 		world.maps.readFromParcel(src, world, controllers, header.fileversion);
 		world.model = new ModelContainer(src, world, controllers, header.fileversion);
 		src.close();
-
+		
+		if (header.fileversion < 45) {
+			LegacySavegamesContentAdaptations.adaptToNewContentForVersion45(world, controllers);
+		}
+		
 		onWorldLoaded(res, world, controllers);
 
 		return LoadSavegameResult.success;
