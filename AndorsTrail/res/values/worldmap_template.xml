@@ -36,8 +36,8 @@ var player = document.getElementById(\"playerPosition\");
 var params = window.location.search.substring(1);
 if (params) {
 	var pos = params.split(\",\");
-	var x = parseInt(pos[0])-{{offsetx}};
-	var y = parseInt(pos[1])-{{offsety}};
+	var x = parseInt(pos[0])-({{offsetx}});
+	var y = parseInt(pos[1])-({{offsety}});
 	player.style.top = y + \"px\";
 	player.style.left = x + \"px\";
 } else {
