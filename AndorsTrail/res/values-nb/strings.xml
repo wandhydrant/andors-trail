@@ -61,8 +61,8 @@
 	<string name="heroinfo_levelup">Nivågradering</string>
 	<string name="combat_result_monsterhitcritical">%1$s tok en kritisk smell for %2$d HP!</string>
 	<string name="combat_result_heromiss">Ditt angrep bommet.</string>
-	<string name="combat_result_herohit">Du traff %1$s for %2$s HP!</string>
-	<string name="combat_result_herohitcritical">Du fikk inn et kritisk treff på %1$s for %2$s HP!</string>
+	<string name="combat_result_herohit">Du traff %1$s for %2$d HP!</string>
+	<string name="combat_result_herohitcritical">Du fikk inn et kritisk treff på %1$s for %2$d HP!</string>
 	<string name="combat_result_herokillsmonster">%1$s dør!</string>
 	<string name="combat_not_enough_ap">Ikke not AP igjen denne runden.</string>
 	<string name="combat_hero_dies">Du besvimer, men heldigvis våkner du opp i live, omtåket og utmattet. Du har tapt %1$d erfarenhet.</string>
@@ -199,7 +199,7 @@
 
 	<string name="iteminfo_effect_decrease_current_hp">Tapper %1$s HP</string>
 	<string name="iteminfo_effect_increase_current_hp">Gjenoppretter %1$s HP</string>
-	<string name="iteminfo_effect_decrease_current_ap">Tapper %1½s AP</string>
+	<string name="iteminfo_effect_decrease_current_ap">Tapper %1$s AP</string>
 	<string name="iteminfo_effect_increase_current_ap">Gjenoppretter %1$s AP</string>
 
 	<string name="preferences_display_scaling_factor_normal">Normal størrelse</string>
@@ -459,7 +459,7 @@
 	<string name="skill_longdescription_cleave">Gir +%1$d aksjonspoeng (GP) for hvert drap per ferdighetsnivå.</string>
 	<string name="skill_longdescription_eater">Gir +%1$d helsepoeng (HP) for hvert drap per ferdighetsnivå.</string>
 	<string name="skill_longdescription_fortitude">Ved hver påfølgende nivåforhøyelse, vil maksimalt antall helsepunkter (HP) økes med %1$d per ferdighetsnivå. Dette legges ikke til retroaktivt, kun påfølgende nivåforhøyelser vil tas hensyn til.</string>
-	<string name="skill_longdescription_evasion">For hvert ferdighetsnivå, reduserer både sjansen for mislykkede fluktforsøk med %1$d %% og sjansen for at motstående monster vil angripe med %1$d %%.</string>
+	<string name="skill_longdescription_evasion">For hvert ferdighetsnivå, reduserer både sjansen for mislykkede fluktforsøk med %1$d %% og sjansen for at motstående monster vil angripe med %2$d %%.</string>
 	<string name="skill_longdescription_regeneration">Tilegn deg +%1$d helsepoeng (HP) ved hver runde per ferdighetsnivå når ingen monster er i direkte nærhet.</string>
 	<string name="skill_longdescription_lower_exploss">Reduserer mengden tapt erfaring for hvert ferdighetsnivå ved dødsfall med %1$d %% (prosent av eksisterende erfaringstapsverdi, ikke prosentpoeng. %2$d nivå vil fjerne alt erfaringstap forårsaket av dødsfall.</string>
 	<string name="skill_longdescription_magicfinder">Øker sjansen for å finne uvanlige ting med %1$d %% for hvert ferdighetsnivå.</string>
@@ -491,7 +491,7 @@
 	<string name="skill_longdescription_resistance_physical_capacity">Senker sjansen for å bli påvirket av tilstander som har innvirkning på fysisk kapasitet med %1$d %% for hvert ferdighetsnivå, opptil et tak på %2$d %%. Dette inkluderer tilstander forårsaket av monsterangrep som utmattelse.</string>
 	<string name="skill_longdescription_resistance_blood_disorder">Senker sjansen for å bli påvirket av blodforstyrrelser med %1$d %% for hvert ferdighetsnivå, opptil et tak på %2$d %%. Dette inkluderer tilstander forårsaket av monsterangrep som gift eller blødende sår.</string>
 
-	<string name="skill_prerequisite_other_skill">For å høyne dette ferdighetsnivået, trenger du minst nivå %1$d av %2$d-ferdigheten.</string>
+	<string name="skill_prerequisite_other_skill">For å høyne dette ferdighetsnivået, trenger du minst nivå %1$d av %2$s-ferdigheten.</string>
 	<string name="skill_longdescription_crit2">For hvert kritiske treff du får inn, er det en %1$d %% sjanse for at treffet knuser noen av målets bein, noe som effektivt forårsaker \"fraktur\"-effekt på målet. Dette vil senke dets defensive kampevner mye, noe som gjør det mindre i stand til å forsvare seg selv i påfølgende angrep.</string>
 	<string name="skill_longdescription_rejuvenation">Hver runde (seks sekunder), er det en %1$d %% sjanse for at en av de aktive negative effekter vil bli senket med en størrelsesorden. Dette har innvirkning på midlertidige effekttyper som har innvirkning på kroppen; mentale tilstander som omtåkethet, fysiske kapasitetstilstander som utmattelse og også blodforstyrrelser som gift.</string>
 	<string name="skill_longdescription_taunt">Når en angriper utfører et angrep som bommer, er det en %1$d %% sjanse for at angripere taper %2$d aksjonspoeng (AP). Dette har innvirkning på alle typer nærkampsangrep mot deg.</string>
@@ -549,7 +549,7 @@
 \n
 \nUten denne ferdigheten, kan bare %1$d %% av et våpens kvaliteter brukes når det brukes i sekundær hand. Dette inkluderer angrepssjanse, ferdighet for å få inn kritiske treff, skadepotensiale og blokkeringssjanse. Uten denne ferdigheten, vil angrepshastigheten (AH), for et angrep være summen av angrepshastigheten av hovedvåpenet, sammen med det for våpenet brukt i sekundær hånd.
 \n
-\nMed ett nivå av denne ferdigheten, kan %2$d %% av våpenets kvaliteter som bæres i sekundær hånd brukes, og angrepshastigheten er i sum den for våpenet i hovedhånden, pluss %4$d %% av angrepshastigheten for våpenet i sekundær hånd.
+\nMed ett nivå av denne ferdigheten, kan %2$d %% av våpenets kvaliteter som bæres i sekundær hånd brukes, og angrepshastigheten er i sum den for våpenet i hovedhånden, pluss %3$d %% av angrepshastigheten for våpenet i sekundær hånd.
 \n
 \nMed to nivåer av denne ferdigheten, kan %4$d %% av våpenets kvaliteter som bæres i sekundær hånd brukes, og angrepshastigheten tilsvarer den som er høyest av angrepshastighetene for de to brukte våpnene.</string>
 	<string name="dialog_recenter">Resentrer</string>
