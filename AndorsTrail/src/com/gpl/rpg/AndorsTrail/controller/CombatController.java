@@ -514,6 +514,7 @@ public final class CombatController implements VisualEffectCompletedCallback {
 
 	private AttackResult playerAttacks(Monster currentMonster) {
 		AttackResult result = attack(world.model.player, currentMonster);
+		controllers.skillController.applySkillEffectsFromPlayerAttack(result, currentMonster);
 		return result;
 	}
 
