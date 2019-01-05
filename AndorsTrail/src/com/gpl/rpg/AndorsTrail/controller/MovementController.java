@@ -241,7 +241,7 @@ public final class MovementController implements TimedMessageTask.Callback {
 		player.position.set(newPosition);
 		controllers.combatController.setCombatSelection(null, null);
 		
-		controllers.effectController.startActorMoveEffect(player, player.lastPosition, newPosition, (int) (Constants.MINIMUM_INPUT_INTERVAL / 2), new VisualEffectController.VisualEffectCompletedCallback() {
+		controllers.effectController.startActorMoveEffect(player, currentMap, player.lastPosition, newPosition, (int) (Constants.MINIMUM_INPUT_INTERVAL / 2), new VisualEffectController.VisualEffectCompletedCallback() {
 			
 			@Override
 			public void onVisualEffectCompleted(int callbackValue) {

@@ -59,9 +59,9 @@ public final class VisualEffectController {
 		enqueuedEffectValue = 0;
 	}
 	
-	public void startActorMoveEffect(Actor actor, Coord origin, Coord destination, int duration, VisualEffectCompletedCallback callback, int callbackValue) {
+	public void startActorMoveEffect(Actor actor, PredefinedMap map, Coord origin, Coord destination, int duration, VisualEffectCompletedCallback callback, int callbackValue) {
 		++effectCount;
-		(new SpriteMoveAnimation(origin, destination, duration, actor, callback, callbackValue))
+		(new SpriteMoveAnimation(origin, destination, duration, actor, map, callback, callbackValue))
 		.start();
 	}
 
@@ -74,6 +74,7 @@ public final class VisualEffectController {
 
 		public final int duration;
 		public final Actor actor;
+		public final PredefinedMap map;
 		public final Coord origin;
 		public final Coord destination;
 		
@@ -88,11 +89,12 @@ public final class VisualEffectController {
 //			}
 		}
 		
-		public SpriteMoveAnimation(Coord origin, Coord destination, int duration, Actor actor, VisualEffectCompletedCallback callback, int callbackValue) {
+		public SpriteMoveAnimation(Coord origin, Coord destination, int duration, Actor actor, PredefinedMap map, VisualEffectCompletedCallback callback, int callbackValue) {
 			this.callback = callback;
 			this.callbackValue = callbackValue;
 			this.duration = duration;
 			this.actor = actor;
+			this.map = map;
 			this.origin = origin;
 			this.destination = destination;
 
