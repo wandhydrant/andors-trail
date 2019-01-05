@@ -1,21 +1,25 @@
-<?xml version='1.0' encoding='UTF-8'?>
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
 	<string name="app_name">Andor\'s Trail</string>
 
-	<string name="exit_to_menu">Menu</string>
+	<string name="exit_to_menu">Esci dal menu</string>
 	<string name="menu_settings">Opzioni</string>
 	<string name="menu_save">Salva</string>
 	<string name="menu_save_gamesaved">Partita salvata sullo slot %1$d</string>
 	<string name="menu_save_failed">Impossibile salvare! La scheda SD è montata e scrivibile\?</string>
 
-	<string name="loadsave_title_save">Salva gioco</string>
+	<string name="loadsave_title_save">Salva il gioco</string>
 	<string name="loadsave_title_load">Carica salvataggio</string>
 	<string name="loadsave_selectslot">Scegli Slot</string>
 	<string name="savegame_currenthero_displayinfo">Livello %1$d, %2$d esp, %3$d oro</string>
 
-	<string name="dialog_loading_message">Carica risorse…</string>
+	<string name="dialog_loading_message">Caricamento risorse…</string>
 	<string name="dialog_loading_failed_title">Caricamento fallito</string>
-	<string name="dialog_loading_failed_message">Andor\'s Trail non ha caricato il salvataggio.\n\n:(\n\nIl file può essere incompleto o danneggiato.</string>
+	<string name="dialog_loading_failed_message">Andor\'s Trail non ha caricato il salvataggio.
+\n
+\n:(
+\n
+\nIl file può essere incompleto o danneggiato.</string>
 	<string name="dialog_loading_failed_incorrectversion">Andor\'s Trail non ha caricato il salvataggio. Il salvataggio è stato creato con una versione più recente rispetto a quella installata.</string>
 
 	<string name="dialog_close">Chiudi</string>
@@ -42,7 +46,7 @@
 
 	<string name="combat_attack">Attacco (%1$d AP)</string>
 	<string name="combat_move">Movimento (%1$d AP)</string>
-	<string name="combat_use">Usare oggetti</string>
+	<string name="combat_use">Usa oggetto</string>
 	<string name="combat_endturn">Fine turno</string>
 	<!-- <string name="combat_endcombat">End combat</string>-->
 	<string name="combat_flee">Fuggi</string>
