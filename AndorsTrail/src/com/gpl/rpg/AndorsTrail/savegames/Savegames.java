@@ -124,7 +124,7 @@ public final class Savegames {
 		src.close();
 		
 		if (header.fileversion < 45) {
-			LegacySavegamesContentAdaptations.adaptToNewContentForVersion45(world, controllers);
+			LegacySavegamesContentAdaptations.adaptToNewContentForVersion45(world, controllers, res);
 		}
 		
 		onWorldLoaded(res, world, controllers);
