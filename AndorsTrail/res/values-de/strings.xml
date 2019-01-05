@@ -1,4 +1,4 @@
-<?xml version='1.0' encoding='UTF-8'?>
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
 	<string name="app_name">Andor\'s Trail</string>
 	<string name="app_description">Questbasiertes Fantasy-Rollenspiel</string>
@@ -22,7 +22,8 @@
 	<string name="dialog_close">Schließen</string>
 
 	<string name="dialog_monsterencounter_title">Begegnung</string>
-	<string name="dialog_monsterencounter_message">Angreifen?\nSchwierigkeit: %1$s</string>
+	<string name="dialog_monsterencounter_message">Möchtest du Angreifen\?
+\nSchwierigkeit: %1$s</string>
 	<string name="dialog_monsterencounter_info">Info</string>
 
 	<string name="status_hp">LP:</string>
@@ -39,7 +40,7 @@
 	<string name="heroinfo_inventory">Inventar</string>
 	<string name="heroinfo_gold">Gold: %1$d</string>
 	<string name="heroinfo_actionpoints">Aktionspunkte (AP):</string>
-	<string name="heroinfo_quests">Queste</string>
+	<string name="heroinfo_quests">Quests</string>
 
 	<string name="combat_attack">Angriff (%1$d AP)</string>
 	<string name="combat_move">Bewegung (%1$d AP)</string>
@@ -56,7 +57,7 @@
 	<string name="combat_result_monstermiss">%1$s verfehlt!</string>
 	<string name="combat_result_monsterhit">%1$s trifft dich und nimmt dir %2$d LP!</string>
 	<string name="combat_result_monsterhitcritical">%1$s macht einen kritischen Treffer (%2$d LP)!</string>
-	<string name="combat_result_heromiss">Dein Angriff schlug fehl.</string>
+	<string name="combat_result_heromiss">Dein Angriff ging daneben.</string>
 	<string name="combat_result_herohit">Du triffst %1$s (%2$d LP)!</string>
 	<string name="combat_result_herohitcritical">Dein kritischer Treffer kostet %1$s %2$d LP!</string>
 	<string name="combat_result_herokillsmonster">%1$s ist besiegt!</string>
@@ -67,7 +68,7 @@
 	<string name="inventory_equip">Anlegen</string>
 	<string name="inventory_unequip">Ablegen</string>
 	<string name="inventory_use">Benutzen</string>
-	<string name="inventory_drop">Fallen lassen</string>
+	<string name="inventory_drop">Wegwerfen</string>
 	<string name="inventory_item_used">%1$s benutzt.</string>
 	<string name="inventory_item_dropped">%1$s weggeworfen.</string>
 	<string name="inventory_item_equipped">%1$s angelegt.</string>
@@ -77,7 +78,7 @@
 	<string name="dialog_loot_pickedupitem">Du hebst einen Gegenstand auf.</string>
 	<string name="dialog_loot_pickedupitems">Du hebst %1$d Gegenstände auf.</string>
 	<string name="dialog_groundloot_title">Gegenstände</string>
-	<string name="dialog_groundloot_message">Du hast ein paar Dinge gefunden. </string>
+	<string name="dialog_groundloot_message">Du hast ein paar Gegenstände gefunden.</string>
 	<string name="dialog_monsterloot_title">Sieg</string>
 	<string name="dialog_monsterloot_message">Du hast den Kampf überlebt. </string>
 	<string name="dialog_monsterloot_gainedexp">Du erhältst %1$d Erfahrung. </string>
@@ -311,7 +312,7 @@
 
 	<string name="preferences_display_scaling_factor_title">Skalierung</string>
 	<string name="preferences_display_scaling_factor">Vergrößert die Darstellung.</string>
-	<string name="preferences_display_scaling_factor_normal">Normalgröße</string>
+	<string name="preferences_display_scaling_factor_normal">Normale Größe</string>
 	<string name="preferences_display_scaling_factor_50_percent_larger">1,5-fache Größe</string>
 	<string name="preferences_display_scaling_factor_double">Doppelte Größe</string>
 
@@ -417,7 +418,7 @@
 	<string name="skill_prerequisite_other_skill">Um diesen Skill zu erlernen, wird mindestens die %1$d. Stufe des Skills %2$s benötigt.</string>
 	<string name="skill_prerequisite_level">Um diesen Skill zu erlernen, wird mindestens das Erfahrungslevel %1$d benötigt.</string>
 	<string name="skill_prerequisite_stat">Um diesen Skill zu erlernen, werden mindestens %1$d %2$s benötigt (Basiskampfeigenschaften).</string>
-	<string name="skill_number_of_increases_one">Du kannst einen Skillpunkt ausgeben.</string>
+	<string name="skill_number_of_increases_one">Du kannst eine Fähigkeit verbessern.</string>
 	<string name="skill_number_of_increases_several">Du kannst %1$d Skillpunkte ausgeben.</string>
 	<string name="levelup_adds_new_skillpoint">In diesem Level erhälst du einen neuen Skillpunkt!</string>
 
@@ -439,7 +440,7 @@
 
 	<string name="traitsinfo_base_max_hp">Max LP:</string>
 	<string name="traitsinfo_base_max_ap">Max AP:</string>
-	<string name="menu_save_saving_not_allowed_in_combat">Das Spiel kann während des Kampfes nicht gespeichert werden.</string>
+	<string name="menu_save_saving_not_allowed_in_combat">Das Spiel kann während eines Kampfes nicht gespeichert werden.</string>
 
 	<string name="preferences_optimized_drawing_title">Optimierter Bildschirmaufbau</string>
 	<string name="preferences_optimized_drawing">Deaktiviere diese Option wenn du Grafikfehler siehst. Wenn diese Einstellung aktiv ist, werden bei jedem Frame nur die geänderten Teile des Bildschirms neu gezeichnet.</string>
@@ -467,7 +468,7 @@
 	<string name="skill_longdescription_rejuvenation">Jede Runde (alle 6 Sekunden) gibt es eine %1$d %% Chance dass einer der aktiven negativen Effekte um eine Größenordnung verringert wird. Das gilt für alle temporären Effektarten die den Körper betreffen; mentale Effekte wie Benommen, physische Effekte wie Ermüdung und auch Blutstörungen wie Gift.</string>
 	<string name="skill_title_taunt">Verspotten</string>
 	<string name="skill_shortdescription_taunt">Angreifer verliert bei Fehlschlägen Aktionspunkte</string>
-	<string name="skill_longdescription_taunt">Wenn ein Angriff eines Gegners fehlschlägt gibt es eine %1$d %% Chance dass er dabei %2$d Aktionspunkte (AP) verliert. Das gilt für alle Nahkampfangriffe gegen dich.</string>
+	<string name="skill_longdescription_taunt">Wenn ein Angriff eines Gegners fehlschlägt, gibt es eine %1$d %% Chance, dass er dabei %2$d Aktionspunkte (AP) verliert. Das gilt für alle Nahkampfangriffe gegen dich.</string>
 	<string name="skill_title_concussion">Gehirnerschütterung</string>
 	<string name="skill_shortdescription_concussion">größere Chance eine Gehirnerschütterung zuzufügen</string>
 	<string name="skill_longdescription_concussion">Bei einem Angriff auf einen Gegner dessen Abwehrchance (BC) mindestens um %1$d tiefer als deine Angriffschance (AC) ist, gibt es eine %2$d %% Chance dass ein Treffer dem Gegner eine Gehirnerschütterung zufügt. Durch den Effekt \'Gehirnerschütterung\' werden die offensiven Kampfeigenschaften stark eingeschränkt und der Gegner wird weniger erfolgreiche Angriffe durchführen können.</string>
@@ -705,6 +706,7 @@ Jeder Level des Skills erhöht die Angriffschance von Waffen um %1$d %% ihrer ur
 	<string name="skill_sort_unlocked">Freigeschaltet</string>
 	
 	<string name="preferences_display_theme_title">Oberfläche</string>
-	<string name="preferences_display_theme">Oberflächendesign auswählen (erfordert Neustart)</string>
+	<string name="preferences_display_theme">Oberflächendesign auswählen (Neustart notwendig)</string>
 	<string name="combat_taunt_monster">Du verhöhnst %1$s!</string>
-	</resources>
+    <string name="storage_permissions_mandatory">Der fehlende Zugriff auf den Datenspeicher ist zwingend notwendig, um Spielstände zu laden und zu speichern. Andor\'s Trail wird daher geschlossen.</string>
+</resources>
