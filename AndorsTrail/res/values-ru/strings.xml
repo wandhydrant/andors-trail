@@ -1,4 +1,4 @@
-<?xml version='1.0' encoding='UTF-8'?>
+<?xml version="1.0" encoding="utf-8"?>
 <resources><string name="app_name">След Эндора</string>
 	<string name="app_description">Квестово-фэнтезийная RPG</string>
 
@@ -6,7 +6,7 @@
 	<string name="menu_settings">Настройки</string>
 	<string name="menu_save">Сохранить</string>
 	<string name="menu_save_gamesaved">Игра сохранена в слот №%1$d</string>
-	<string name="menu_save_failed">Ошибка сохранения! SD карта lдоступна для чтения и записи\?</string>
+	<string name="menu_save_failed">Ошибка сохранения! Память доступна для чтения и записи\?</string>
 
 	<string name="loadsave_title_save">Сохранить игру</string>
 	<string name="loadsave_title_load">Загрузить игру</string>
@@ -15,17 +15,19 @@
 
 	<string name="dialog_loading_message">Загрузка ресурсов…</string>
 	<string name="dialog_loading_failed_title">Ошибка загрузки</string>
-	<string name="dialog_loading_failed_message">Следу Эндора не удалось загрузить сохранение. 
+	<string name="dialog_loading_failed_message">Следу Эндора не удалось загрузить сохранение.
+\n
 \n:( 
+\n
 \nВозможно, сохранение повреждено.</string>
-	<string name="dialog_loading_failed_incorrectversion">Следу Эндора не удалось загрузить файл сохранения игры. Этот файл сохранён в более новой версии игры, чем эта.</string>
+	<string name="dialog_loading_failed_incorrectversion">Следу Эндора не удалось загрузить файл сохранения игры. Это сохранение сделано в более новой версии, чем текущая.</string>
 
 	<string name="dialog_close">Закрыть</string>
 
 	<string name="dialog_monsterencounter_title">Схватка</string>
 	<string name="dialog_monsterencounter_message">Вы хотите напасть\?
 \nСложность: %1$s</string>
-	<string name="dialog_monsterencounter_info">Информация</string>
+	<string name="dialog_monsterencounter_info">Инфо</string>
 
 	<string name="status_hp">ОЗ:</string>
 	<string name="status_ap">ОД:</string>
@@ -34,7 +36,7 @@
 	<string name="heroinfo_char">Обзор</string>
 	<string name="heroinfo_inv">Предметы</string>
 	<string name="heroinfo_skill">Навыки</string>
-	<string name="heroinfo_levelup">Новый уровень</string>
+	<string name="heroinfo_levelup">Повышение уровня</string>
 	<string name="heroinfo_level">Уровень</string>
 	<string name="heroinfo_totalexperience">Всего опыта</string>
 	<string name="heroinfo_wornequipment">Надетое снаряжение</string>
@@ -45,10 +47,10 @@
 
 	<string name="combat_attack">Атака (%1$d ОД)</string>
 	<string name="combat_move">Движение (%1$d ОД)</string>
-	<string name="combat_use">Применить</string>
+	<string name="combat_use">Использовать</string>
 	<string name="combat_endturn">Конец хода</string>
 	<string name="combat_flee">Сбежать</string>
-	<string name="combat_begin_flee">Теперь вы можете покинуть бой, нажмите в каком направлении вы хотите двигаться.</string>
+	<string name="combat_begin_flee">Теперь вы можете покинуть бой, нажмите в каком направлении вы хотите убежать.</string>
 	<string name="combat_flee_failed">Вы не смогли сбежать!</string>
 	<string name="combat_monsteraction">%1$s атакует.</string>
 	<string name="combat_result_monstermiss">%1$s промахнулся!</string>
@@ -74,11 +76,11 @@
 	<string name="dialog_loot_pickall">Взять всё</string>
 	<string name="dialog_loot_foundgold">Вы нашли %1$d золотых.</string>
 	<string name="dialog_loot_pickedupitem">Вы подобрали предмет.</string>
-	<string name="dialog_loot_pickedupitems">Вы подобрали %1$d предмета.</string>
+	<string name="dialog_loot_pickedupitems">Вы подобрали %1$d предмета(ов).</string>
 	<string name="dialog_groundloot_title">Предметы</string>
 	<string name="dialog_groundloot_message">Вы нашли несколько предметов.</string>
 	<string name="dialog_monsterloot_title">Победа</string>
-	<string name="dialog_monsterloot_message">Вы выиграли бой.</string>
+	<string name="dialog_monsterloot_message">Вы пережили эту встречу.</string>
 	<string name="combat_status_ap">ОД: %1$d</string>
 	<string name="combat_monsterhealth">ОЗ:</string>
 	<string name="dialog_monsterloot_gainedexp">Вы получили %1$d опыта.</string>
@@ -120,13 +122,13 @@
 
 	<string name="traitsinfo_criticalhit_skill">Шанс критического удара:</string>
 	<string name="traitsinfo_criticalhit_multiplier">Критический множитель:</string>
-	<string name="iteminfo_category">"Категория:  "</string>
-	<string name="startscreen_newgame_confirm">Вы потеряете свою текущих игру и персонажа, вы уверены, что хотите начать новую игру\?</string>
+	<string name="iteminfo_category">Категория:</string>
+	<string name="startscreen_newgame_confirm">Вы потеряете свою текущую игру и своего текущего персонажа, вы уверены, что хотите начать новую игру\?</string>
 	<string name="conversation_rewardexp">[Получено %1$d опыта]</string>
 	<string name="conversation_rewardgold">[Получено %1$d золота]</string>
 	<string name="conversation_lostgold">[Вы потеряли %1$d золота]</string>
-	<string name="conversation_rewarditem">[Получен предмет]</string>
-	<string name="conversation_rewarditems">[Получено %1$d предмета]</string>
+	<string name="conversation_rewarditem">[Вы получили предмет]</string>
+	<string name="conversation_rewarditems">[Вы получили %1$d предмета(ов)]</string>
 	<string name="shop_buy">Купить</string>
 	<string name="shop_sell">Продать</string>
 	<string name="conversation_next">Дальше</string>
@@ -159,12 +161,11 @@
 	<string name="about_button2">Авторы</string>
 	<string name="about_button3">Лицензия</string>
 	<string name="about_contents3">" Это бесплатное приложение; вы можете изменять ее и модифицировать согласно правилам GNU General Public License изданными Free Software Foundation; либо лицензии версии 2, либо (на ваше усмотрение) более поздней версией. &lt;br /&gt; &lt;br /&gt; Игра создана с надеждой что она будет интересна, но БЕЗ ВСЯКИХ ГАРАНТИЙ; даже без подразумеваемых гарантии ТОВАРНОЙ ПРИГОДНОСТИ или ПРИГОДНОСТИ ДЛЯ ОПРЕДЕЛЕННЫХ ЦЕЛЕЙ. Смотрите GNU General Public License для больших подробностей.&lt;br /&gt; &lt;br /&gt; Вы принимаете условия GNU General Public License вместе с установкой этой программы; если нет, смотрите &lt;a href=http://www.gnu.org/licenses&gt;http://www.gnu.org/licenses&lt;/a&gt;&lt;br /&gt; &lt;br /&gt; За исходным кодом и пожеланиями, пожалуйста, посетите страницу проекта на &lt;a href=https://github.com/Zukero/andors-trail/&gt;https://github.com/Zukero/andors-trail/&lt;/a&gt;&lt;br /&gt; "</string>
-	<string name="dialog_newversion_title">Приветствуем</string>
-	<string name="dialog_newversion_message">Спасибо за загрузку игры След Эндора! 
+	<string name="dialog_newversion_title">Привет</string>
+	<string name="dialog_newversion_message">Спасибо за загрузку игры След Эндора!
 \n 
-\n Запомните, игра находится в СТАДИИ РАЗРАБОТКИ, это означает что не все карты еще закончены. 
-\n 
-\n Пожалуйста, посетите форум проекта, чтобы получить более подробную информацию или внести свой вклад в проект (см. Об игре). 
+\n Запомните, игра находится в СТАДИИ РАЗРАБОТКИ, это означает что не все карты еще закончены.
+\n Пожалуйста, посетите форум проекта, чтобы получить более подробную информацию или внести свой вклад в проект (см. Об игре).
 \n 
 \n Спасибо всем за отзывы!</string>
 
@@ -181,30 +182,30 @@
 	<string name="preferences_display_fullscreen">Отображение игры в полноэкранном режиме. (Требуется перезапуск)</string>
 	<string name="preferences_dialog_category">Диалоги подтверждения</string>
 	<string name="preferences_dialog_confirmrest_title">Подтверждение отдыха</string>
-	<string name="preferences_dialog_confirmrest">Задавать вопрос, хотите ли вы отдыхать при попадании в кровать. Иначе вы всегда будете автоматически отдыхать.</string>
+	<string name="preferences_dialog_confirmrest">Задавать вопрос, хотите ли вы отдохнуть при попадании в кровать. Иначе, вы всегда будете автоматически отдыхать.</string>
 	<string name="preferences_dialog_confirmattack_title">Подтверждение атаки</string>
-	<string name="preferences_dialog_confirmattack">Показывать диалог \'Вы хотите напасть на ...?\' при атаке монстра.</string>
+	<string name="preferences_dialog_confirmattack">Показывать диалог \'Вы хотите напасть...\?\' при атаке монстра.</string>
 	<string name="preferences_dialog_monsterloot_title">Показ результатов победы</string>
-	<string name="preferences_dialog_monsterloot">Выберите способ показа результатов схватки с монстром (золото, опыт, предметы).</string>
+	<string name="preferences_dialog_monsterloot">Выберите способ показа результатов схватки (золото, опыт, предметы).</string>
 	<string name="preferences_combat_category">Бой</string>
 	<string name="preferences_combat_speed_title">Скорость боя</string>
 	<string name="preferences_combat_speed">Выбор скорости атаки монстров.</string>
 
-	<string name="preferences_display_loot_dialog">Показывать диалог</string>
+	<string name="preferences_display_loot_dialog">Всегда показывать диалог</string>
 	<string name="preferences_display_loot_dialog_on_items">Показывать диалог, если найдены предметы</string>
 	<string name="preferences_display_loot_dialog_on_items_or_toast">Диалог для предметов, для остального уведомление</string>
 	<string name="preferences_display_loot_toast">Показывать уведомление</string>
 	<string name="preferences_display_loot_toast_on_items">Показывать уведомление, если найдены предметы</string>
-	<string name="preferences_display_loot_never">Не показывать ничего</string>
+	<string name="preferences_display_loot_never">Ничего не показывать</string>
 
 	<string name="preferences_attackspeed_instant">Мгновенно (без анимации)</string>
 	<string name="preferences_attackspeed_fast">Быстро</string>
 	<string name="preferences_attackspeed_normal">Нормально</string>
 	<string name="preferences_attackspeed_slow">Медленно</string>
 
-	<string name="preferences_movement_category">Движение</string>
+	<string name="preferences_movement_category">Передвижение</string>
 	<string name="preferences_movementmethod_title">Способ передвижения</string>
-	<string name="preferences_movementmethod">Способ движения и обхода препятствий.</string>
+	<string name="preferences_movementmethod">Тип способа передвижения и обработки препятствий.</string>
 	<string name="preferences_movementmethods_straight">Прямо (базовый)</string>
 	<string name="preferences_movementmethods_avoid">Обходить препятствия</string>
 
@@ -245,7 +246,7 @@
 	<string name="inventory_unassign">Убрать из быстрого слота</string>
 
 	<string name="preferences_movement_dpad_position_title">Виртуальный джойстик</string>
-	<string name="preferences_movement_dpad_position">Показать на экране виртуальные кнопки для управления движением.</string>
+	<string name="preferences_movement_dpad_position">Показать на экране виртуальный джойстик для управления движением.</string>
 	<string name="preferences_movement_dpad_minimizeable_title">Минимизировать джойстик</string>
 	<string name="preferences_movement_dpad_minimizeable">Если виртуальный джойстик включен, позволить минимизировать джойстик нажатием на его центр.</string>
 
@@ -259,19 +260,19 @@
 	<string name="preferences_movement_dpad_positions_upper_right">Верхний правый угол</string>
 	<string name="preferences_movement_dpad_positions_center_top">Сверху в центре</string>
 
-	<string name="actorconditioninfo_constant_effect">Постоянный эффект</string>
+	<string name="actorconditioninfo_constant_effect">Постоянное воздействие</string>
 	<string name="actorconditioninfo_effect_every_round">Каждый раунд</string>
 	<string name="actorconditioninfo_effect_every_full_round">Каждый полный раунд</string>
 	<string name="bulkselection_totalcost_buy">Сумма покупки: %1$d золота</string>
 	<string name="bulkselection_totalcost_sell">Сумма продажи: %1$d золота</string>
-	<string name="bulkselection_select_all">Всё</string>
+	<string name="bulkselection_select_all">Все</string>
 	<string name="bulkselection_sell_confirmation_title">Вы уверены?</string>
 	<string name="bulkselection_sell_confirmation">Вы уверены, что хотите продать %1$s? Это %2$s предмет и возможно, вам не удастся найти его снова.</string>
 
 	<string name="skill_title_weapon_chance">Точность оружия</string>
-	<string name="about_contents1">"Добро пожаловать в След Эндора, RPG с открытым исходным кодом на Android.&lt;br /&gt; &lt;br /&gt; &lt;a href=http://andorstrail.com Форум игры andorstrail.com для вопросов и обсуждения.&lt;/a&gt;&lt;br /&gt; &lt;br /&gt; &lt;a href=http://andorstrail.com/wiki&gt;Вики по миру Andor\'s Trail. &lt;/a&gt;&lt;br /&gt; &lt;br /&gt; &lt;a href=https://github.com/Zukero/andors-trail/&gt;Страница проекта на github.com для разработчиков.&lt;/a&gt;&lt;br /&gt; &lt;br /&gt;Пожалуйста, посетите форум, чтобы обсудить игру с другими игроками.&lt;br /&gt; "</string>
+	<string name="about_contents1">"Добро пожаловать в След Эндора, RPG с открытым исходным кодом на Android.&lt;br /&gt; &lt;br /&gt; &lt;a href=http://andorstrail.com Форум игры andorstrail.com для вопросов и обсуждения.&lt;/a&gt;&lt;br /&gt; &lt;br /&gt; &lt;a href=http://andorstrail.com/wiki&gt;Вики по миру След Эндора и не только. &lt;/a&gt;&lt;br /&gt; &lt;br /&gt; &lt;a href=https://github.com/Zukero/andors-trail/&gt;Страница проекта на github.com для разработчиков.&lt;/a&gt;&lt;br /&gt; &lt;br /&gt;Пожалуйста, посетите форум, чтобы обсудить игру с другими игроками.&lt;br /&gt; "</string>
 
-	<string name="about_interface"> <div><b>Настройки игры</b> можно открыть нажав Кнопку Меню вашего устройства.</div> <p>________________</p> <h1>Иконки интерфейса</h1> <div><b>Сундук</b><img alt="chest" src="chest.png"/></div> <p>Быстрый слот [Чтобы назначить предмет в быстрый слот, выполните длительное нажатие на икоку мешочка и выбирете предмет в открывшемся окне инвенторя]</p> <div><b>Главный герой</b><img alt="hero" src="char_hero.png"/></div> <p>Меню [Обзор, Задания, Навыки &amp; Инвентарь *]</p> <p>* (Находясь в инвенаре, нажмите на предмет чтобы получить информацию о нем; долгое нажатие откроет дополнительные опции)</p> <div><b>Противник</b><img alt="monster" src="monster.png"/></div> <p>Информация [Появляется во время Боя]</p> <p>________________</p> <h1>Бой</h1> 
+	<string name="about_interface">&lt;div&gt;&lt;b&gt;Настройки игры&lt;/b&gt; можно открыть нажав Кнопку Меню вашего устройства.&lt;/div&gt; &lt;p&gt;________________&lt;/p&gt; &lt;h1&gt;Иконки интерфейса&lt;/h1&gt; &lt;div&gt;&lt;b&gt;Сундук&lt;/b&gt;&lt;img alt=chest src=chest.png /&gt;&lt;/div&gt; &lt;p&gt;Быстрый слот [Чтобы назначить предмет в быстрый слот, выполните длительное нажатие на иконку мешочка и выберите предмет в открывшемся окне инвентаря]&lt;/p&gt; &lt;div&gt;&lt;b&gt;Главный герой&lt;/b&gt;&lt;img alt=hero src=char_hero.png /&gt;&lt;/div&gt; &lt;p&gt;Меню [Обзор, Задания, Навыки &amp;amp; Инвентарь *]&lt;/p&gt; &lt;p&gt;* (Находясь в инвентаре, нажмите на предмет чтобы получить информацию о нем; долгое нажатие откроет дополнительные опции)&lt;/p&gt; &lt;div&gt;&lt;b&gt;Противник&lt;/b&gt;&lt;img alt=\"monster\" src=\"monster.png\" /&gt;&lt;/div&gt; &lt;p&gt;Информация [Появляется во время Боя]&lt;/p&gt; &lt;p&gt;________________&lt;/p&gt; &lt;h1&gt;Бой&lt;/h1&gt; &lt;p&gt;На действия в бою тратятся ОД...&lt;/p&gt; &lt;div&gt;&lt;b&gt;Атака&lt;/b&gt; - [3ОД] *&lt;/div&gt; &lt;img alt=attacking src=doubleattackexample.png /&gt; &lt;p&gt;* (Экипировка одежды &amp;amp; Использование предметов могут изменить как запас ОД, так и стоимость действий)&lt;/p&gt; &lt;div&gt;&lt;b&gt;Использование предметов&lt;/b&gt; - [5ОД]&lt;/div&gt; &lt;div&gt;&lt;b&gt;Бегство&lt;/b&gt; - [6ОД]&lt;/div&gt; &lt;p&gt;________________&lt;/p&gt; &lt;h1&gt;Подробности боя&lt;/h1&gt; &lt;div&gt;&lt;b&gt;Побег из Боя&lt;/b&gt;&lt;/div&gt; &lt;div&gt;Во время Боя, выполните длительное нажатие на пустом квадрате рядом с Героем чтобы Сбежать...&lt;/div&gt; &lt;p&gt;(выбранное направление будет подсвечено - кнопка Атака сменится на Движение&lt;/p&gt; &lt;img alt=flee src=flee_example.png /&gt; &lt;p&gt;[активизируется режим Бегства; длительное нажатие на противнике вернет Вас в режим Боя]&lt;/p&gt; &lt;div&gt;&lt;b&gt;Чтобы сменить цель&lt;/b&gt;&lt;/div&gt; &lt;p&gt;(Красная подсветка указывает атакуемого противника.)&lt;/p&gt; &lt;p&gt;[Длительное нажатие на противника сделает его активным.]&lt;/p&gt;<div><b>Настройки игры</b> можно открыть нажав Кнопку Меню вашего устройства.</div> <p>________________</p> <h1>Иконки интерфейса</h1> <div><b>Сундук</b><img alt="chest" src="chest.png"/></div> <p>Быстрый слот [Чтобы назначить предмет в быстрый слот, выполните длительное нажатие на икоку мешочка и выбирете предмет в открывшемся окне инвенторя]</p> <div><b>Главный герой</b><img alt="hero" src="char_hero.png"/></div> <p>Меню [Обзор, Задания, Навыки &amp; Инвентарь *]</p> <p>* (Находясь в инвенаре, нажмите на предмет чтобы получить информацию о нем; долгое нажатие откроет дополнительные опции)</p> <div><b>Противник</b><img alt="monster" src="monster.png"/></div> <p>Информация [Появляется во время Боя]</p> <p>________________</p> <h1>Бой</h1> 
 <p>На действия в бою тратятся ОД...</p> <div><b>Атака</b> - [3ОД] *</div> <img alt="attacking" src="doubleattackexample.png"/> <p>"* (Экипировка одежды и Использование предметов могут изменить как  запас ОД, так и стоимость действий)"</p> <div><b>Использование предметов</b> - [5ОД]</div> <div><b>Бегство</b> - [6ОД]</div> <p>________________</p> <h1>Подробности боя</h1> <div><b>Побег из Боя</b></div> <div>Во время Боя, выполните длительное нажатие на пустом квадрате рядом с Героем чтобы Сбежать</div> <p>(выбраное направление будет подсвечено - кнопка Атака сменится на Движение</p>"  "<img alt="flee" src="flee_example.png"/> <p>[активизируется режим Бегства; длительное нажатие на противнике вернет вар в режим Боя]</p> <div><b>Чтобы сменить цель</b></div> <p>Красная подсветка указывает атакуемого противника.</p> <p>Длительное нажатие на противника сделает его активным.</p> </string>
 
 	<string name="skill_title_weapon_dmg">Сила удара</string>
@@ -282,14 +283,14 @@
 	<string name="skill_title_better_criticals">Жестокость</string>
 	<string name="skill_title_speed">Скорость в бою</string>
 	<string name="skill_title_coinfinder">Охотник за сокровищами</string>
-	<string name="skill_title_more_exp">Способный Ученик</string>
+	<string name="skill_title_more_exp">Способный ученик</string>
 	<string name="skill_title_cleave">Рассечение</string>
 	<string name="skill_title_eater">Пожиратель трупов</string>
 	<string name="skill_title_fortitude">Выносливость</string>
 	<string name="skill_title_evasion">Трусость</string>
 	<string name="skill_title_regeneration">Регенерация</string>
 	<string name="skill_title_lower_exploss">Неудачник</string>
-	<string name="skill_title_magicfinder">Искатель магии</string>
+	<string name="skill_title_magicfinder">Искатель Магии</string>
 	<string name="skill_title_resistance_mental">Сильный разум</string>
 	<string name="skill_title_resistance_physical_capacity">Несокрушимое тело</string>
 	<string name="skill_title_resistance_blood_disorder">Чистая кровь</string>
@@ -301,12 +302,12 @@
 	<string name="skill_shortdescription_barkskin">Сопротивление урону</string>
 	<string name="skill_shortdescription_more_criticals">Увеличение шанса критического удара</string>
 	<string name="skill_shortdescription_better_criticals">Увеличение критического урона</string>
-	<string name="skill_shortdescription_speed">Увеличение максимума очков действия</string>
+	<string name="skill_shortdescription_speed">Увеличение максимума очков действий</string>
 	<string name="skill_shortdescription_coinfinder">Высокий шанс найти золото</string>
 	<string name="skill_shortdescription_more_exp">Больше опыта при убийстве монстров</string>
 	<string name="skill_title_weapon_prof_unarmed">Бой без оружия</string>
 	<string name="skill_title_armor_prof_unarmored">Бой без брони</string>
-	<string name="skill_shortdescription_cleave">Восстановление очков действия за каждое убийство</string>
+	<string name="skill_shortdescription_cleave">Восстановление очков действий за каждое убийство</string>
 	<string name="skill_shortdescription_eater">Восстановление очков здоровья за каждое убийство</string>
 	<string name="skill_shortdescription_fortitude">Увеличение здоровья при каждом повышении уровня</string>
 	<string name="skill_shortdescription_evasion">Увеличение шанса сбежать</string>
@@ -324,14 +325,14 @@
 	<string name="skill_longdescription_barkskin">Увеличивает сопротивление урону на %1$d пункт на каждый уровень навыка.</string>
 	<string name="skill_longdescription_more_criticals">Увеличивает любой существующий шанс критического удара используемой экипировки на %1$d %% на каждый уровень навыка.</string>
 	<string name="skill_longdescription_better_criticals">Увеличивает любой существующий критический множитель используемой экипировки на %1$d %% на каждый уровень навыка.</string>
-	<string name="skill_longdescription_speed">Увеличивает максимум очков действия (ОД) на %1$d пункт на каждый уровень навыка.</string>
+	<string name="skill_longdescription_speed">Увеличивает максимум очков действий (ОД) на %1$d пункт на каждый уровень навыка.</string>
 	<string name="skill_longdescription_coinfinder">Увеличивает шансы найти золото в останках монстра на %1$d %% и увеличивает количество найденного золота на %2$d %% за каждый уровень навыка (до максимального количества золота, которое падает с монстра).</string>
 	<string name="skill_longdescription_more_exp">Увеличивает количество опыта, дающегося за победу над монстром на %1$d %% на каждый уровень навыка.</string>
 	<string name="skill_longdescription_cleave">Дает +%1$d очков действия (ОД) за каждое убийство на каждый уровень навыка.</string>
 	<string name="skill_longdescription_eater">Дает +%1$d очков здоровья (ОД) за каждое убийство на каждый уровень навыка.</string>
 	<string name="skill_longdescription_fortitude">На каждом последующем уровне максимальное количество очков здоровья (ОЗ) будет повышаться на %1$d на каждый уровень навыка. Это не применяется задним числом, только к последующим уровням.</string>
 	<string name="skill_longdescription_evasion">Уменьшает шанс неудачи при попытке бежать на %1$d %% и шанс, что ближайший монстр будет атаковать, на %2$d %% на каждый уровень навыка.</string>
-	<string name="skill_shortdescription_rejuvenation">Шанс ослабить эффект</string>
+	<string name="skill_shortdescription_rejuvenation">Шанс убрать эффект</string>
 	<string name="menu_button_worldmap_failed">Карта не может быть показана.</string>
 	<string name="inventory_equip_offhand">Надеть (в левую руку)</string>
 
@@ -345,16 +346,16 @@
 	<string name="skillinfo_action_levelup">Новый уровень</string>
 	<string name="skill_current_level">Текущий уровень: %1$d</string>
 	<string name="skill_current_level_with_maximum">Текущий уровень: %1$d / %2$d</string>
-	<string name="skill_prerequisite_other_skill">Чтобы повысить уровень этого навыка вам нужно иметь уровень не менее %1$d навыка %2$s.</string>
-	<string name="skill_prerequisite_level">Чтобы повысить уровень этого навыка вам нужно иметь уровень героя не менее %1$d.</string>
-	<string name="skill_prerequisite_stat">Чтобы повысить уровень этого навыка вам нужно иметь не менее %1$d %2$s (базовая характеристика).</string>
-	<string name="skill_number_of_increases_one">Вы можете выбрать один навык для увеличения.</string>
-	<string name="skill_number_of_increases_several">Вы можете выбрать %1$d навыков для увеличения.</string>
-	<string name="levelup_adds_new_skillpoint">Этот уровень дает вам очко для увеличения навыков!</string>
+	<string name="skill_prerequisite_other_skill">Для повышения уровня навыка, вам нужен %1$d уровень навыка %2$s.</string>
+	<string name="skill_prerequisite_level">Для повышения уровня навыка, вам нужен %1$d уровень героя.</string>
+	<string name="skill_prerequisite_stat">Для повышения уровня навыка, вам потребуется %1$d %2$s (базовая характеристика).</string>
+	<string name="skill_number_of_increases_one">Вы можете повысить уровень одного навыка.</string>
+	<string name="skill_number_of_increases_several">Вы можете повысить уровень %1$d навыков.</string>
+	<string name="levelup_adds_new_skillpoint">Этот уровень также дает вам очко навыков!</string>
 
 	<string name="loadsave_save_to_new_slot">Создать новый слот для сохранения игры</string>
 	<string name="loadsave_save_overwrite_confirmation_title">Перезаписать сохраненную игру?</string>
-	<string name="loadsave_save_overwrite_confirmation">Эта сохраненная игра содержит другое имя игрока (%1$s), не совпадающим с именем текущего героя (%2$s). Вы уверены, что хотите перезаписать сохраненную игру?</string>
+	<string name="loadsave_save_overwrite_confirmation">Это сохранение содержит другое имя игрока (%1$s), не совпадающим с именем текущего героя (%2$s). Вы уверены, что хотите перезаписать сохраненную игру\?</string>
 
 	<string name="iteminfo_displaytypes_ordinary">Обычный</string>
 	<string name="iteminfo_displaytypes_quest">Квестовый</string>
@@ -373,11 +374,11 @@
 	<string name="menu_save_saving_not_allowed_in_combat">Невозможно сохранить игру во время боя.</string>
 
 	<string name="preferences_optimized_drawing_title">Оптимизация рисования</string>
-	<string name="preferences_optimized_drawing">Отключить, если вы видите графические артефакты. Включение этой опции приводит к перерисовыванию только измененных участков экрана в каждом кадре.</string>
+	<string name="preferences_optimized_drawing">Отключите, если вы видите графические артефакты. Включение этой опции приводит к перерисовыванию только измененных участков экрана в каждом кадре.</string>
 
 	<string name="skill_title_shadow_bless">Тёмное благословение Тени</string>
 	<string name="skill_shortdescription_shadow_bless">Сопротивление всем типам воздействий</string>
-	<string name="skill_longdescription_shadow_bless">Снижает шансы подцепить любую заразу на %1$d %%. Включая все вредные атаки монстров, такие как Отравления, Ошеломления и Усталость.</string>
+	<string name="skill_longdescription_shadow_bless">Снижает шансы подцепить любую заразу на %1$d %%. Включая все вредные атаки монстров, такие как отравления, ошеломления и усталость.</string>
 
 	<string name="inventory_movetop">Положить вверх</string>
 	<string name="inventory_movebottom">Положить вниз</string>
@@ -386,26 +387,26 @@
 
 	<string name="skill_title_crit1">Внутреннее кровотечение</string>
 	<string name="skill_shortdescription_crit1">Шанс вызвать внутреннее кровотечение</string>
-	<string name="skill_longdescription_crit1">При каждом критическом ударе, есть %1$d %% шанс, что он вызовет внутренние кровотечение у цели. Внутреннее кровотечение сильно снижает боевые способности, что делает цель менее способной к удачному завершению своих атак.</string>
+	<string name="skill_longdescription_crit1">При каждом критическом ударе, есть %1$d %% шанс, что он вызовет внутренние кровотечение у цели. Внутреннее кровотечение сильно снижает боевые способности, что делает цель менее способной совершать атаки.</string>
 	<string name="skill_title_crit2">Перелом</string>
 	<string name="skill_shortdescription_crit2">Вероятность сломать кости</string>
-	<string name="skill_longdescription_crit2">При каждом критическом ударе, есть %1$d %% шанс, сломать цели несколько костей. Переломы сильно снижают возможность цели защищать себя.</string>
+	<string name="skill_longdescription_crit2">При каждом критическом ударе, есть %1$d %% шанс, сломать цели несколько костей. Переломы сильно снижают возможность цели защищаться.</string>
 	<string name="skill_title_rejuvenation">Восстановление</string>
 	<string name="skill_longdescription_rejuvenation">Каждый раунд (6 секунд), есть %1$d %% шанс, что один из негативных эффектов будет уменьшен на один шаг. Это относится ко всем временным эффектам влияющим на тело; психику, например, Ошеломление; физическим воздействиям, например, Усталость; заражения крови, например, отравление.</string>
 	<string name="skill_title_taunt">Насмешка</string>
 	<string name="skill_shortdescription_taunt">Атакующий теряет ОД при промахе</string>
-	<string name="skill_longdescription_taunt">Когда атакующий промахивается, есть %1$d %% шанс, что он потеряет %2$d очка движения (ОД). Это относится ко всем атакам ближнего боя.</string>
+	<string name="skill_longdescription_taunt">Когда атакующий промахивается, есть %1$d %% шанс, что он потеряет %2$d очка действий (ОД). Это относится ко всем атакам ближнего боя.</string>
 	<string name="skill_title_concussion">Контузия</string>
 	<string name="skill_shortdescription_concussion">Шанс вызвать контузию</string>
-	<string name="skill_longdescription_concussion">Во время атаки цели чей шанс блока (ШБ), по крайней мере на %1$d меньше вашего шанса атаки (ША), есть %2$d %% шанс, что цель получит контузию. Контузия сильно снижает боевые способности, что делает цель менее способной к удачному завершению своих атак.</string>
+	<string name="skill_longdescription_concussion">Во время атаки цели чей шанс блока (ШБ), по крайней мере на %1$d меньше вашего шанса атаки (ША), есть %2$d %% шанс, что цель будет контужена. Контузия сильно снижает боевые способности, что делает цель менее способной совершать удачные атаки.</string>
 
 	<string name="about_button4">Об игре</string>
 
 	<string name="preferences_ui_category">Интерфейс</string>
 	<string name="preferences_ui_enable_animations_title">Включить анимацию</string>
-	<string name="preferences_ui_enable_animations">Использовать анимацию разных элементов интерфейса, например строка боя.</string>
+	<string name="preferences_ui_enable_animations">Использовать анимацию разных элементов интерфейса, например строки боя.</string>
 	<string name="menu_button_worldmap">Карта</string>
-	<string name="display_worldmap_not_available">Карта не может быть показана из этой локации.</string>
+	<string name="display_worldmap_not_available">Карта не может быть показана в этой локации.</string>
 	<string name="display_worldmap_title">Карта</string>
 
 	<string name="iteminfo_effect_weapon_attack_cost">Атака стоит: %1$d ОД</string>
@@ -421,29 +422,29 @@
 	<string name="iteminfo_effect_decrease_attack_damage">Уменьшает силу атаки на %1$d</string>
 	<string name="iteminfo_effect_decrease_attack_damage_minmax">Уменьшает силу атаки на %1$d-%2$d</string>
 	<string name="iteminfo_effect_increase_critical_skill">Увеличивает шанс критического удара на %1$d</string>
-	<string name="iteminfo_effect_decrease_critical_skill">Уменьшает шанс критического удара на %1$d</string>
-	<string name="iteminfo_effect_critical_multiplier">Увеличивает критический множитель в %1$.1f раз(а)</string>
+	<string name="iteminfo_effect_decrease_critical_skill">Уменьшает шанс крит. удара на %1$d</string>
+	<string name="iteminfo_effect_critical_multiplier">Увеличивает крит. множитель в %1$.1f раз(а)</string>
 	<string name="iteminfo_effect_increase_block_chance">Увеличивает шанс блока на %1$d</string>
 	<string name="iteminfo_effect_decrease_block_chance">Уменьшает шанс блока на %1$d</string>
 	<string name="iteminfo_effect_increase_damage_resistance">Увеличивает сопротивление повреждениям на %1$d</string>
 	<string name="iteminfo_effect_decrease_damage_resistance">Уменьшает сопротивление повреждениям на %1$d</string>
-	<string name="iteminfo_effect_increase_use_cost">Увеличивает необходимое количество ОД для использования предмета в бою на %1$d ОД</string>
-	<string name="iteminfo_effect_decrease_use_cost">Уменьшает необходимое количество ОД для использования предметов в бою на %1$d ОД</string>
-	<string name="iteminfo_effect_increase_reequip_cost">Увеличивает необходимое количество ОД для одевания предметов в бою на %1$d ОД</string>
-	<string name="iteminfo_effect_decrease_reequip_cost">Уменьшает необходимое количество ОД для одевания предметов в бою на %1$d ОД</string>
+	<string name="iteminfo_effect_increase_use_cost">Цена использования предмета в бою +%1$d ОД</string>
+	<string name="iteminfo_effect_decrease_use_cost">Цена использования предмета в бою -%1$d ОД</string>
+	<string name="iteminfo_effect_increase_reequip_cost">Цена надевания предмета в бою +%1$d ОД</string>
+	<string name="iteminfo_effect_decrease_reequip_cost">Цена надевания предмета в бою -%1$d ОД</string>
 
 	<string name="loadsave_save_overwrite_confirmation_all">Вы точно хотите перезаписать это сохранение?</string>
 	<string name="loadsave_save_overwrite_confirmation_slot">(слот №%1$d)</string>
 	<string name="preferences_display_overwrite_savegame_entries_always_confirm">Всегда показывать диалог подтверждения</string>
 	<string name="preferences_display_overwrite_savegame_entries_confirm_overwrite">Показывать только при перезаписи игроком с другим именем</string>
 	<string name="preferences_display_overwrite_savegame_entries_never_confirm">Не показывать диалог подтверждения</string>
-	<string name="preferences_dialog_overwrite_savegame_title">Перезаписать сохранение</string>
+	<string name="preferences_dialog_overwrite_savegame_title">Перезапись сохранения</string>
 	<string name="preferences_dialog_overwrite_savegame">Настройка диалога подтверждения при попытке перезаписать сохранение.</string>
 
 	<string name="heroinfo_reequip_cost">Цена переодевания (ОД):</string>
-	<string name="heroinfo_useitem_cost">Цена использования предмета (ОД):</string>
-	<string name="combat_result_monstermoved">%1$s действий.</string>
-	<string name="combat_log_title">Лог боя</string>
+	<string name="heroinfo_useitem_cost">Цена исп. предмета (ОД):</string>
+	<string name="combat_result_monstermoved">%1$s движется.</string>
+	<string name="combat_log_title">Боевой лог</string>
 	<string name="localize_resources_from_mo_filename">ru.mo</string>
 	<string name="conversation_reward_quest_finished">[Квест завершен: \"%1$s\"]</string>
 	<string name="conversation_reward_quest_updated">[Квест обновлен: \"%1$s\"]</string>
@@ -474,11 +475,11 @@
 	<string name="skill_shortdescription_armor_prof_light">Улучшение владения легкой броней</string>
 	<string name="skill_shortdescription_armor_prof_heavy">Улучшение владения тяжелой броней</string>
 	<string name="skill_shortdescription_fightstyle_dualwield">Бонусы при экипировке одноручного оружия в каждую руку</string>
-	<string name="skill_shortdescription_fightstyle_2hand">Бонусы при экиперовке двуручного оружия</string>
-	<string name="skill_shortdescription_fightstyle_weapon_shield">Бонусы при экиперовки оружия с щитом</string>
-	<string name="skill_shortdescription_specialization_dualwield">Вы страновитесь экспертом боя с двумя оружиями</string>
-	<string name="skill_shortdescription_specialization_2hand">Вы становитесь экспертом боя с двуручным оружием</string>
-	<string name="skill_shortdescription_specialization_weapon_shield">Вы становитесь экспертом боя с мечом и щитом</string>
+	<string name="skill_shortdescription_fightstyle_2hand">Бонусы при экипировке двуручного оружия</string>
+	<string name="skill_shortdescription_fightstyle_weapon_shield">Бонусы при экипировке оружия с щитом</string>
+	<string name="skill_shortdescription_specialization_dualwield">Эксперт по двойному владению</string>
+	<string name="skill_shortdescription_specialization_2hand">Эксперт по двуручному оружию</string>
+	<string name="skill_shortdescription_specialization_weapon_shield">Эксперт по борьбе с оружием и щитом</string>
 
 	<string name="skill_longdescription_weapon_prof_dagger">Каждый уровень этого умения при использовании кинжалов и коротких мечей увеличивает (в %% от базового): шанс атаки на %1$d %%, шанс блока на %2$d %%, шанс критического удара на %3$d %%.</string>
 	<string name="skill_longdescription_weapon_prof_1hsword">Каждый уровень этого умения при использовании рапир, длинных и полуторных мечей увеличивает (в %% от базового): шанс атаки на %1$d %%, шанс блока на %2$d %%, шанс критического удара на %3$d %%.</string>
@@ -528,12 +529,12 @@
 	<string name="heroinfo_gamestats_visited_maps">Посещено локаций</string>
 	<string name="heroinfo_gamestats_fav_item">Самый используемый предмет</string>
 	<string name="heroinfo_gamestats_num_killed_monsters">Убито монстров</string>
-	<string name="heroinfo_gamestats_top_boss">Самый сильный монстр</string>
+	<string name="heroinfo_gamestats_top_boss">Самый сильный убитый монстр</string>
 	<string name="heroinfo_gamestats_fav_monsters">Часто убиваемые монстры</string>
 	<string name="heroinfo_gamestats_name_and_qty">%1$s (%2$d)</string>
 
-	<string name="preferences_ui_use_localized_resources_title">Использовать перевод</string>
-	<string name="preferences_ui_use_localized_resources">Использовать перевод интерфейса и контента, где это возможно. (требуется перезапуск)</string>
+	<string name="preferences_ui_use_localized_resources_title">Использование локализации</string>
+	<string name="preferences_ui_use_localized_resources">Использовать перевод интерфейса и контента, где возможно. (требуется перезапуск)</string>
 	<string name="change_locale_requires_restart">Для смены языка нужен перезапуск. След Эндора закрыт.</string>
 
 <string name="startscreen_incompatible_savegames">Эта версия Andor\'s Trail все еще в разработке. Сохранения, созданные этой версией, несовместимы с релизной версией.</string>
@@ -549,24 +550,24 @@
 	<string name="combat_condition_player_immune">У вас иммунитет к %1$s.</string>
 	<string name="startscreen_newgame_start">Начать игру</string>
 	<string name="startscreen_selectherosprite">Выберите своего героя</string>
-	<string name="shop_item_sort">Сортировать</string>
+	<string name="shop_item_sort">Сортировка</string>
 
 	<string name="inventory_category_all">Все</string>
-	<string name="inventory_category_favorites">Избранное</string>
+	<string name="inventory_category_favorites">Избранные</string>
 	<string name="inventory_category_weapons">Оружие</string>
 	<string name="inventory_category_armor">Доспехи</string>
 	<string name="inventory_category_usable">Расходуемые</string>
-	<string name="inventory_category_quest">Квестовые предметы</string>
+	<string name="inventory_category_quest">Квестовые</string>
 	<string name="inventory_category_other">Прочие</string>
 
-	<string name="inventory_sort_custom">Не сортировать</string>
+	<string name="inventory_sort_custom">без сортировки</string>
 	<string name="inventory_sort_name">по имени</string>
 	<string name="inventory_sort_price">по цене</string>
 	<string name="inventory_sort_quantity">по количеству</string>
 	<string name="inventory_sort_rarity">по редкости</string>
 	<string name="inventory_sort_type">по типу</string>
 
-	<string name="shoplist_sort_custom">Не сортировать</string>
+	<string name="shoplist_sort_custom">без сортировки</string>
 	<string name="shoplist_sort_name">по имени</string>
 	<string name="shoplist_sort_price">по цене</string>
 	<string name="shoplist_sort_quantity">по количеству</string>
@@ -582,13 +583,13 @@
 	<string name="skill_category_speciality">Специальности</string>
 	<string name="skill_category_proficiency">Умения</string>
 
-	<string name="skill_sort_unsorted">Не сортировать</string>
-	<string name="skill_sort_name">по имени</string>
-	<string name="skill_sort_points">Изученные</string>
-	<string name="skill_sort_unlocked">Открытые</string>
+	<string name="skill_sort_unsorted">Без сортировки</string>
+	<string name="skill_sort_name">Название</string>
+	<string name="skill_sort_points">Уровень</string>
+	<string name="skill_sort_unlocked">Открыто</string>
 	
 	<string name="preferences_display_theme_title">Оформление</string>
-	<string name="preferences_display_theme">Выбрать тему интерфейса. (требуется перезапуск)</string>
+	<string name="preferences_display_theme">Выберите тему интерфейса. (требуется перезапуск)</string>
 	<string name="preferences_display_theme_blue">Кобальт</string>
 	<string name="preferences_display_theme_green">Малахит</string>
 	<string name="preferences_display_theme_charcoal">Обсидиан</string>
@@ -600,7 +601,7 @@
 
 	<string name="dialog_monsterencounter_conditions">Воздействия</string>
 
-	<string name="combat_condition_monster_apply">На %1$s воздейсвтует %2$s.</string>
+	<string name="combat_condition_monster_apply">На %1$s воздействует %2$s.</string>
 	<string name="combat_condition_monster_clear">%1$s очищается от %2$s.</string>
 	<string name="combat_condition_monster_immune">%1$s теперь имеет иммунитет к %2$s.</string>
 	
@@ -613,7 +614,7 @@
 	<string name="inventory_selectitem">Выберите предмет для назначения</string>
 	<string name="combat_log_noentries">Нет записей.</string>
 	<string name="preferences_high_quality_filters_title">Высококачественные фильтры</string>
-	<string name="preferences_high_quality_filters">Отключите эту функцию, если возникают проблемы с производительностью на отфильтрованных картах (например, в темных пещерах). Включение этой опции заставит игру использовать расширенные цветовые фильтры вместо сплошных цветных наложений.</string>
+	<string name="preferences_high_quality_filters">Отключите, если возникают проблемы с отображением на отфильтрованных картах (например, в темных пещерах). Включение этой опции заставит игру использовать расширенные цветовые фильтры вместо сплошных цветных наложений.</string>
 	
 
 	</resources>

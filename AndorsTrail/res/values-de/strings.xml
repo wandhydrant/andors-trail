@@ -27,12 +27,12 @@
 
 	<string name="status_hp">LP:</string>
 	<string name="status_ap">AP:</string>
-	<string name="status_exp">Erf.:</string>
+	<string name="status_exp">EP:</string>
 
 	<string name="heroinfo_char">Übersicht</string>
 	<string name="heroinfo_inv">Inventar</string>
 	<string name="heroinfo_skill">Fähigkeiten</string>
-	<string name="heroinfo_levelup">Aufstieg</string>
+	<string name="heroinfo_levelup">Level aufsteigen</string>
 	<string name="heroinfo_level">Level</string>
 	<string name="heroinfo_totalexperience">Erfahrung</string>
 	<string name="heroinfo_wornequipment">Ausrüstung</string>
@@ -629,7 +629,7 @@ Jeder Level des Skills erhöht die Angriffschance von Waffen um %1$d %% ihrer ur
 <string name="combat_miss_animation_message">MISS</string>
 	
 	<string name="dialog_recenter">Zentrieren</string>
-	<string name="change_theme_requires_restart">Änderung des Benutzer Interface erfordert Neustart. Andor\'s Trail wurde beendet.</string>
+	<string name="change_theme_requires_restart">Die Änderung des Oberflächendesigns erfordert einen Neustart. Andor\'s Trail wurde beendet.</string>
 	
 	
 <string name="dialog_more">Mehr</string>
@@ -678,4 +678,33 @@ Jeder Level des Skills erhöht die Angriffschance von Waffen um %1$d %% ihrer ur
 	<string name="preferences_display_theme_blue">Kobalt</string>
 	<string name="preferences_display_theme_green">Malachit</string>
 	<string name="preferences_display_theme_charcoal">Obsidian</string>
+	<string name="dialog_monsterencounter_conditions">Statuseffekte</string>
+
+	<string name="heroinfo_healthpoints">Lebenspunkte (LP):</string>
+	<string name="heroinfo_experiencepoints">Erfahrungspunkte (EP):</string>
+	<string name="combat_condition_player_apply">Du bist von %1$s betroffen.</string>
+	<string name="combat_condition_player_clear">Du bist von %1$s befreit.</string>
+	<string name="combat_condition_player_immune">Du bist jetzt immun gegen %1$s.</string>
+	<string name="combat_condition_monster_clear">%1$s wird von %2$s befreit.</string>
+	<string name="startscreen_selectherosprite">Wähle deinen Helden</string>
+	<string name="iteminfo_effect_works_on_attacker">Auf Angreifer</string>
+	<string name="inventory_selectitem">Zuweisendes Element auswählen</string>
+	<string name="preferences_high_quality_filters_title">Hochwertige Filter</string>
+	<string name="preferences_high_quality_filters">Deaktivieren Sie dies, wenn Sie Leistungsprobleme auf gefilterten Karten (z.B. dunkle Höhlen) feststellen. Wenn Sie diese Option aktivieren, wird das Spiel anstelle von Vollfarbüberlagerungen erweiterte Farbfilter verwenden.</string>
+	
+
+	<string name="combat_log_noentries">Noch keine Einträge.</string>
+	<string name="skill_category_offense">Angriff</string>
+	<string name="skill_category_defense">Verteidigung</string>
+	<string name="skill_category_criticals">Kritische</string>
+	<string name="skill_category_immunity">Immunität</string>
+	<string name="skill_category_utility">Werkzeug</string>
+	<string name="skill_category_speciality">Spezialität</string>
+	<string name="skill_category_proficiency">Kompetenz</string>
+
+	<string name="skill_sort_unlocked">Freigeschaltet</string>
+	
+	<string name="preferences_display_theme_title">Oberfläche</string>
+	<string name="preferences_display_theme">Oberflächendesign auswählen (erfordert Neustart)</string>
+	<string name="combat_taunt_monster">Du verhöhnst %1$s!</string>
 	</resources>

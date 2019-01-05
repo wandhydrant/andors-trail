@@ -1,4 +1,4 @@
-<?xml version='1.0' encoding='UTF-8'?>
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
 	<string name="app_name">Sur les traces d\'Andor</string>
 	<string name="app_description">Jeu de rôle fantastique à base de quêtes</string>
@@ -160,17 +160,7 @@
 	<string name="about_button1">Aide</string>
 	<string name="about_button2">Auteurs</string>
 	<string name="about_button3">Licence</string>
-	<string name="about_contents1">
-		Merci d\'utiliser La Piste d\'Andor, un jeu de rôle libre pour Android.&lt;br /&gt;
-		&lt;br /&gt;
-		&lt;a href="http://andorstrail.com/"&gt;Forum du jeu andorstrail.com pour les questions et les discussions sur la façon de jouer.&lt;/a&gt;&lt;br /&gt;
-		&lt;br /&gt;
-		&lt;a href="http://andorstrail.com/wiki"&gt;Game wiki for info about the Andor\'s Trail world, among other things.&lt;/a&gt;&lt;br /&gt;
-		&lt;br /&gt;
-		&lt;a href="https://github.com/Zukero/andors-trail/"&gt;Code source du projet sur github.com pour les développeurs.&lt;/a&gt;&lt;br /&gt;
-		&lt;br /&gt;
-		Vous pouvez visiter les forums pour discuter du jeu avec d\'autres joueurs.&lt;br /&gt;
-	</string>
+	<string name="about_contents1">Merci d\'utiliser Sur les traces d\'Andor, un jeu de rôle libre pour Android.&lt;br /&gt; &lt;br /&gt; &lt;a href=http://andorstrail.com/&gt;Forum du jeu andorstrail.com pour les questions et les discussions sur la façon de jouer.&lt;/a&gt;&lt;br /&gt; &lt;br /&gt; &lt;a href=http://andorstrail.com/wiki&gt;Wiki du jeu pour plus d\'information sur le monde de Sur les traces d\'Andor.&lt;/a&gt;&lt;br /&gt; &lt;br /&gt; &lt;a href=https://github.com/Zukero/andors-trail/&gt;Code source du projet sur github.com pour les développeurs.&lt;/a&gt;&lt;br /&gt; &lt;br /&gt; Vous pouvez visiter les forums pour discuter du jeu avec d\'autres joueurs.&lt;br /&gt;</string>
 	<string name="about_contents3">
 		Ce programme est un logiciel libre ; vous pouvez le redistribuer ou le modifier suivant les termes de la « GNU General Public License » telle que publiée par la Free Software Foundation ; soit la version 2 de cette licence, soit (à votre discrétion) une version ultérieure quelconque.&lt;br /&gt;
 		&lt;br /&gt;
@@ -182,13 +172,12 @@
 	</string>
 
 	<string name="dialog_newversion_title">Bienvenue</string>
-	<string name="dialog_newversion_message">
-		Merci à vous d\'avoir téléchargé La Piste d\'Andor !\n\n
-		Veuillez noter que cette version de La Piste d\'Andor est un TRAVAIL EN COURS, cela signifie que toutes les cartes ne sont pas encore complètes.\n
-		Vous pouvez visiter les forums du projet pour obtenir plus d\'informations ou pour contribuer au projet (voir « À propos »).\n
-		\n
-		Merci pour les retours d\'utilisation !
-	</string>
+	<string name="dialog_newversion_message">Merci à vous d\'avoir téléchargé Sur les traces d\'Andor!
+\n
+\n Veuillez noter que cette version de Sur les traces d\'Andor est un TRAVAIL EN COURS, cela signifie que toutes les cartes ne sont pas encore complètes.
+\n Vous pouvez visiter les forums du projet pour obtenir plus d\'informations ou pour contribuer au projet (voir « À propos »).
+\n 
+\n Merci pour les retours d\'utilisation !</string>
 	<string name="about_interface">&lt;div&gt;&lt;b&gt;Paramètres du jeu&lt;/b&gt; disponible en appuyant sur le Bouton Menu de votre appareil.&lt;/div&gt; &lt;p&gt;________________&lt;/p&gt; &lt;h1&gt;Icônes d\'Interface&lt;/h1&gt; &lt;div&gt;&lt;b&gt;Le Coffre&lt;/b&gt;&lt;img alt=poitrine src=chest.png /&gt;&lt;/div&gt; &lt;p&gt;Emplacements rapides [Appuyez longuement sur les pochettes à l\'intérieur pour assigner des articles pour une utilisation instantanée.]&lt;/p&gt; &lt;div&gt;&lt;b&gt;Le Héro&lt;/b&gt;&lt;img alt=héros src=char_hero.png /&gt;&lt;/div&gt; &lt;p&gt;Menu [Vue d\'ensemble, Quêtes, Compétences &amp;amp; Inventaire *]&lt;/p&gt; &lt;p&gt;* (Dans l\'inventaire, appuyez sur un objet pour information &amp;amp; un appui long pour plus d\'options)&lt;/p&gt; &lt;div&gt;&lt;b&gt;L\'Ennemi&lt;/b&gt;&lt;img alt=monstre src=monster.png /&gt;&lt;/div&gt; &lt;p&gt;Information [Apparaît pendant le Combat]&lt;/p&gt; &lt;p&gt;________________&lt;/p&gt; &lt;h1&gt;Combat&lt;/h1&gt; &lt;p&gt;Coût en PA des Actions pendant la bataille...&lt;/p&gt; &lt;div&gt;&lt;b&gt;Attaquer&lt;/b&gt; - [3AP] *&lt;/div&gt; &lt;img alt=attaquant src=doubleattackexample.png /&gt; &lt;p&gt;* (L\'Équipement &amp;amp; l\'usage d\'objet peuvent modifier les PA &amp;amp; le coût d\'utilisation)&lt;/p&gt; &lt;div&gt;&lt;b&gt;Utilisation d\'Objets&lt;/b&gt; - [5AP]&lt;/div&gt; &lt;div&gt;&lt;b&gt;Fuite&lt;/b&gt; - [6AP]&lt;/div&gt; &lt;p&gt;________________&lt;/p&gt; &lt;h1&gt;Combat Avancé&lt;/h1&gt; &lt;div&gt;Pendant un Combat, un appui long sur un emplacement proche du Héro...&lt;/div&gt; &lt;div&gt;&lt;b&gt;Pour Fuir&lt;/b&gt;&lt;/div&gt; &lt;p&gt;(l\'emplacement choisi est mit en surbrillance - le Bouton d\'Attaque change pour Déplacement)&lt;/p&gt; &lt;img alt=fuite src=flee_example.png /&gt; &lt;p&gt;[mode fuite activé - Une longue pression sur l\'ennemi pour rentrer au combat]&lt;/p&gt; &lt;div&gt;&lt;b&gt;Pour Changer de Cible&lt;/b&gt;&lt;/div&gt; &lt;p&gt;(le halo rouge passe d\'un ennemi à l\'autre)&lt;/p&gt; &lt;p&gt;[la cible a été changée]&lt;/p&gt;</string>
 	
 	
@@ -241,8 +230,8 @@
 	<string name="iteminfo_effect_works_on_target">Sur la cible</string>
 	<string name="iteminfo_effect_works_when_hitting_target">Quand la cible est frappée</string>
 	<string name="iteminfo_effect_works_when_killing_target">À chaque mort</string>
-	<string name="iteminfo_effect_works_when_used">Quand utilisé</string>
-	<string name="iteminfo_effect_works_when_equipped">Quand équipé</string>
+	<string name="iteminfo_effect_works_when_used">Lorsqu\'utilisé</string>
+	<string name="iteminfo_effect_works_when_equipped">Lorsqu\'équipé</string>
 
 	<string name="iteminfo_effect_decrease_current_hp">Draine %1$s HP</string>
 	<string name="iteminfo_effect_increase_current_hp">Restaure %1$s HP</string>
@@ -523,8 +512,8 @@
 	<string name="preferences_quickslots_placements_vertical_bottom_right">En bas à droite, le long du bord droit</string>
 	<string name="preferences_ui_show_quickslots_when_toolbox_is_visible_title">Afficher les accès rapides lorsque la boîte à outils est ouverte</string>
 	<string name="preferences_ui_show_quickslots_when_toolbox_is_visible">Afficher les boutons d’emplacement rapide dès que la boîte à outils est ouverte</string>
-	<string name="startscreen_incompatible_savegames">Ceci est une version de développement de la Piste d’Andor. Les sauvegardes de cette version sont incompatibles avec la version stable.</string>
-	<string name="startscreen_non_release_version">Ceci est une préversion de la Piste d’Andor. Les sauvegardes de cette version ne seront peut-être pas compatibles avec la version stable.</string>
+	<string name="startscreen_incompatible_savegames">Ceci est une version de développement de Sur les traces d\'Andor. Les sauvegardes de cette version sont incompatibles avec la version publiée.</string>
+	<string name="startscreen_non_release_version">Ceci est une préversion de Sur les traces d\'Andor Les sauvegardes de cette version ne seront peut-être pas compatibles avec la version publiée.</string>
 	<string name="heroinfo_gamestats">Statistiques de jeu</string>
 	<string name="heroinfo_gamestats_quests">Quêtes accomplies</string>
 	<string name="heroinfo_gamestats_deaths">Temps passé inconscient</string>
@@ -544,7 +533,7 @@
 
 	<string name="preferences_ui_use_localized_resources_title">Activer la traduction</string>
 	<string name="preferences_ui_use_localized_resources">Utiliser une traduction de l\'interface et du contenu, lorsque disponible. (nécessite un redémarrage)</string>
-	<string name="change_locale_requires_restart">Changer la localisation nécessite un redémarrae. La Piste d’Andor a été fermée.</string>
+	<string name="change_locale_requires_restart">Changer la localisation nécessite un redémarrage. Sur les traces d\'Andor a été arrêté.</string>
 	
 <string name="combat_miss_animation_message">RATE</string>
 	
@@ -569,4 +558,83 @@
 	<string name="skill_shortdescription_concussion">Risques de commotion cérébrale</string>
 	<string name="skill_longdescription_concussion">Lors d’une attaque contre une cible dont les chances de parade (CP) sont au moins de %1$d unités moins élevées que vos chances d’attaque (CA), il y a %2$d %% chances que le coup causera une commotion cérébrale à la cible. Une commotion cérébrale diminue sévèrement les capacités offensives de combat, réduisant l’aptitude de la cible à réussir ses attaques.</string>
 
-	</resources>
+	<string name="dialog_recenter">Recentrer</string>
+	<string name="dialog_more">Suite</string>
+
+	<string name="dialog_monsterencounter_conditions">Conditions</string>
+
+	<string name="heroinfo_skill_categories">Catégorie</string>
+	<string name="heroinfo_skill_sort">Trier</string>
+	<string name="heroinfo_inventory_categories">Catégorie</string>
+	<string name="heroinfo_inventory_sort">Trier par</string>
+	<string name="heroinfo_healthpoints">Points de vie (HP) :</string>
+	<string name="heroinfo_experiencepoints">Points d\'expérience (XP) :</string>
+	<string name="combat_taunt_monster">Tu te moques de %1$s !</string>
+	<string name="combat_condition_player_apply">%1$s te nuit.</string>
+	<string name="combat_condition_player_clear">L\'effet %1$s s\'estompe.</string>
+	<string name="combat_condition_player_immune">Tu es immunisé contre %1$s.</string>
+	<string name="combat_condition_monster_apply">%2$s nuit à %1$s.</string>
+	<string name="combat_condition_monster_clear">%2$s s\'estompe pour %1$s.</string>
+	<string name="combat_condition_monster_immune">%1$s est maintenant immunisé contre %2$s.</string>
+	
+	
+	<string name="startscreen_newgame_start">Début de la partie</string>
+	<string name="startscreen_selectherosprite">Choisis ton héro</string>
+	<string name="shop_item_sort">Trier</string>
+
+	<string name="actorcondition_info_immunity">Résistant à %1$s</string>
+	<string name="iteminfo_effect_works_on_attacker">Sur l\'attaquant</string>
+	<string name="iteminfo_effect_works_when_hit_by_attacker">Lorsque touché par l\'attaquant</string>
+	<string name="iteminfo_effect_works_when_killed_by_attacker">Lorsque tué par l\'attaquant</string>
+	
+	<string name="inventory_selectitem">Choisis un objet à assigner</string>
+	<string name="preferences_high_quality_filters_title">Filtres de haute qualité</string>
+	<string name="preferences_high_quality_filters">Désactivez cette option si vous remarquez des problèmes de performance dans dans les endroits avec filtres, par exemple des cavernes sombres. Laissez activer pour utiliser des filtres de couleur avancés au lieu de couches de couleur opaques.</string>
+	
+
+	<string name="combat_log_noentries">Aucune inscription encore.</string>
+	<string name="inventory_category_all">Tout</string>
+	<string name="inventory_category_favorites">Favoris</string>
+	<string name="inventory_category_weapons">Armes</string>
+	<string name="inventory_category_armor">Armure</string>
+	<string name="inventory_category_usable">Article de consommation</string>
+	<string name="inventory_category_quest">Article de quête</string>
+	<string name="inventory_category_other">Autre</string>
+
+	<string name="inventory_sort_custom">Non trié</string>
+	<string name="inventory_sort_name">Nom</string>
+	<string name="inventory_sort_price">Prix</string>
+	<string name="inventory_sort_quantity">Quantité</string>
+	<string name="inventory_sort_rarity">Rareté</string>
+	<string name="inventory_sort_type">Sorte</string>
+
+	<string name="shoplist_sort_custom">Non trié</string>
+	<string name="shoplist_sort_name">Nom</string>
+	<string name="shoplist_sort_price">Prix</string>
+	<string name="shoplist_sort_quantity">Quantité</string>
+	<string name="shoplist_sort_rarity">Rareté</string>
+	<string name="shoplist_sort_type">Sorte</string>
+
+	<string name="skill_category_all">Tout</string>
+	<string name="skill_category_offense">Offensive</string>
+	<string name="skill_category_defense">Défensive</string>
+	<string name="skill_category_criticals">Coups critiques</string>
+	<string name="skill_category_immunity">Immunité</string>
+	<string name="skill_category_utility">Utilité</string>
+	<string name="skill_category_speciality">Spécialité</string>
+	<string name="skill_category_proficiency">Compétence</string>
+
+	<string name="skill_sort_unsorted">Non trié</string>
+	<string name="skill_sort_name">Nom</string>
+	<string name="skill_sort_points">Points</string>
+	<string name="skill_sort_unlocked">Débarré</string>
+	
+	<string name="preferences_display_theme_title">Thème</string>
+	<string name="preferences_display_theme">Choisis un thème de couleurs pour l\'interface (requiert redémarrage)</string>
+	<string name="preferences_display_theme_blue">Cobalt</string>
+	<string name="preferences_display_theme_green">Malachite</string>
+	<string name="preferences_display_theme_charcoal">Obsidienne</string>
+	<string name="change_theme_requires_restart">Changer le thème de couleurs nécessite un redémarrage. Sur les traces d\'Andor a été arrêté.</string>
+	
+	
+</resources>

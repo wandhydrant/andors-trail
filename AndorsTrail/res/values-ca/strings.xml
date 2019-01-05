@@ -1,4 +1,4 @@
-<?xml version='1.0' encoding='UTF-8'?>
+<?xml version="1.0" encoding="utf-8"?>
 <resources><string name="app_name">El Camí d\'Andor</string>
 	<string name="app_description">Joc de rol fantàstic orientat a missions</string>
 
@@ -15,11 +15,7 @@
 
 	<string name="dialog_loading_message">S\'estan carregant els recursos…</string>
 	<string name="dialog_loading_failed_title">Ha fallat la carrega</string>
-	<string name="dialog_loading_failed_message">El Cami d\'Andor no ha pogut carregar l\'arxiu amb la partida desada
-
-:(
-
-L\'arxiu pot estar danyat or incomplert.</string>
+	<string name="dialog_loading_failed_message">El Cami d\'Andor no ha pogut carregar l\'arxiu amb la partida desada :( L\'arxiu pot estar danyat o incomplert.</string>
 	<string name="dialog_loading_failed_incorrectversion">El Camí d\'Andor no ha pogut carregar l\'arxiu amb la partida desada. Aquest arxiu de partida ha estat creat amb una versió més nova que la que esteu executant.</string>
 
 	<string name="dialog_close">Tancar</string>
@@ -483,4 +479,6 @@ Difilcutat: %1$s</string>
 	<string name="startscreen_selectherosprite">Escolleix el teu heroi</string>
 
 	<string name="localize_resources_from_mo_filename">ca.mo</string>
-	</resources>
+    <string name="dialog_recenter">Recentrar</string>
+    <string name="dialog_more">Més</string>
+</resources>
