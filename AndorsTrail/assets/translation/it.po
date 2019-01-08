@@ -342,8 +342,8 @@ msgid "Not for now. Thanks for taking care of the bread and rats."
 msgstr "Non per il momento. Grazie per esserti occupato dei topi e del pane."
 
 #: conversationlist_mikhail.json:mikhail_andor1
-msgid "As I said, Andor went out yesterday and hasn't been back since. I'm starting to worry about him. Please go look for your brother, he said he would only be out a short while."
-msgstr "Come ho detto, Andor è uscito ieri e non è tornato. Sto iniziando a preoccuparmi per lui. Vorrei che tu andassi a cercare tuo fratello, mi ha detto che sarebbe stato via poco."
+msgid "As I said, Andor went out and hasn't been back since. I worry about him. Please go look for your brother. He said he would only be out for a short while."
+msgstr "[REVIEW]Come ho detto, Andor è uscito ieri e non è tornato. Sto iniziando a preoccuparmi per lui. Vorrei che tu andassi a cercare tuo fratello, mi ha detto che sarebbe stato via poco."
 
 #: conversationlist_mikhail.json:mikhail_andor2
 msgid "Maybe he went into that supply cave again and got stuck. Or maybe he's in Leta's basement training with that wooden sword again. Please go look for him in town."
@@ -11964,7 +11964,7 @@ msgid "I have some izthiel claws to sell you."
 msgstr "Ho degli artigli di Izthiel da venderti."
 
 #: conversationlist_pwcave.json:gauward_1
-msgid "This place used to be a safe house for travellers between Loneford and Brimhaven, before they had finished the road between the villages."
+msgid "This place used to be a safe house for travelers between Loneford and Brimhaven, before they had finished the road between the villages."
 msgstr "Questo luogo era una casa sicura per i viaggiatori tra Loneford e Brimhaven, prima che avessero finito la strada tra i villaggi."
 
 #: conversationlist_pwcave.json:gauward_2
@@ -22815,7 +22815,7 @@ msgid "The Guardian stares at you. You feel an overwhelming sense of dread, and 
 msgstr "Il Guardiano ti guarda. Ti sente travolto dalla paura e non osi nemmeno avvicinarti a lui."
 
 #: conversationlist_graveyard1.json:waterwayacaveenter_20
-msgid "You have found the enterance to the cave Cithurn was talking about."
+msgid "You have found the entrance to the cave Cithurn was talking about."
 msgstr "Hai trovato l'ingresso alla grotta di cui parlava Cithurn."
 
 #: conversationlist_graveyard1.json:waterwayacave1_20
@@ -23073,6 +23073,7 @@ msgid "You found some gold amongst the bones!"
 msgstr "Hai trovato un po' d'oro tra le ossa!"
 
 #: conversationlist_graveyard1.json:sign_waytolake7b_2
+#: conversationlist_bugfix_0_7_4.json:lookout_down_2a
 msgid "There is nothing more to be found here."
 msgstr "Qui non c'è più niente da trovare."
 
@@ -27479,8 +27480,8 @@ msgid "I will be right back."
 msgstr "Tornerò subito."
 
 #: conversationlist_stoutford_combined.json:stoutford_widow_thorns10_2:1
-msgid "By chance, I have just three potions of truth with me. Here, take them."
-msgstr "Per combinazione, ho giusto tre pozioni di verità con me. Tieni, prendile."
+msgid "By chance, I have three potions of the brave with me. Here, take them."
+msgstr "[REVIEW]Per combinazione, ho giusto tre pozioni di verità con me. Tieni, prendile."
 
 #: conversationlist_stoutford_combined.json:stoutford_widow_thorns20_0
 msgid "Did you get the three potions of the brave from Blornvale?"
@@ -28222,7 +28223,7 @@ msgid "There is something else I wanted to know."
 msgstr "C'è qualcos'altro che volevo sapere."
 
 #: conversationlist_stoutford_combined.json:yolgen_surroundings_1
-msgid "Flagstone Prison was built four hundred years ago by house Gorland of Stoutford, and was used until the Noble Wars, when the house was vanguished by it's enemies. They mostly used it to detain people that were worshipping the \"old gods\"."
+msgid "Flagstone Prison was built four hundred years ago by house Gorland of Stoutford, and was used until the Noble Wars, when the house was vanquished by its enemies. They mostly used it to detain people that were worshipping the \"old gods\"."
 msgstr "Flagstone è stata costruito quattrocento anni fa dalla Casata Gorland di Stoutford ed è stato utilizzata fino alle Guerre Nobili, quando la Casata è stata estinta dai suoi nemici. La prigione veniva per lo più usata per imprigionare le persone che adoravano i \"vecchi dei\"."
 
 #: conversationlist_stoutford_combined.json:yolgen_surroundings_1a
@@ -28680,7 +28681,7 @@ msgid "Thank you, maybe some other time."
 msgstr "Grazie, magari un'altra volta."
 
 #: conversationlist_stoutford_combined.json:stoutford_guard4
-msgid "Hey, kid, get ouf of here immediately!"
+msgid "Hey, kid, get out of here immediately!"
 msgstr "Ehi, ragazzino: fuori di qui, immediatamente!"
 
 #: conversationlist_stoutford_combined.json:stoutford_commander
@@ -29494,8 +29495,8 @@ msgstr "[REVIEW](Lie) Non l'ho più, mi dispiace. Questo anello sul mio dito gli
 #: conversationlist_stoutford_combined.json:stn_colonel_131_4a
 msgid ""
 "[Ring taken]\n"
-"Thank you, stupid boy."
-msgstr ""
+"Thank you, stupid kid."
+msgstr "[REVIEW]"
 "[Anello preso]\n"
 "Grazie, stupido."
 
@@ -29770,6 +29771,192 @@ msgstr "E tu, bambino: ora vattene e non raccontare altre favole."
 #: conversationlist_stoutford_combined.json:blornvale_thorns72_92
 msgid "No more talk. Go now!"
 msgstr "Basta parlare. Ora vai!"
+
+#: conversationlist_bugfix_0_7_4.json:mountainlake0_sign
+msgid "You can see no way to descend the cliffs from here."
+msgstr ""
+
+#: conversationlist_bugfix_0_7_4.json:lookout_0
+msgid "Standing on the top of the mountain, you have a great view in all directions."
+msgstr ""
+
+#: conversationlist_bugfix_0_7_4.json:lookout_0:0
+msgid "Look down."
+msgstr ""
+
+#: conversationlist_bugfix_0_7_4.json:lookout_north
+msgid "You see a town across the lake, but you can see no way to cross the water to get there."
+msgstr ""
+
+#: conversationlist_bugfix_0_7_4.json:lookout_north:0
+msgid "Look closer at the town."
+msgstr ""
+
+#: conversationlist_bugfix_0_7_4.json:lookout_east
+msgid "You see the southern shore of a large lake. It looks like it might be possble to walk around the lake in that direction, but there are a number of large, dangerous looking creatures moving around."
+msgstr ""
+
+#: conversationlist_bugfix_0_7_4.json:lookout_south
+msgid "The mountain drops away below you. There is not much to see in this direction."
+msgstr ""
+
+#: conversationlist_bugfix_0_7_4.json:lookout_west
+msgid "You see more cliffs, but the view beyond that is hidden in mist. "
+msgstr ""
+
+#: conversationlist_bugfix_0_7_4.json:lookout_west:0
+msgid "Keep looking west."
+msgstr ""
+
+#: conversationlist_bugfix_0_7_4.json:lookout_west_2
+msgid "The mist briefly clears, and you can make out a town in the distance."
+msgstr ""
+
+#: conversationlist_bugfix_0_7_4.json:lookout_up_1
+msgid "You see a bird, perhaps a hawk, high in the sky."
+msgstr ""
+
+#: conversationlist_bugfix_0_7_4.json:lookout_up_1:0
+msgid "Watch the bird."
+msgstr ""
+
+#: conversationlist_bugfix_0_7_4.json:lookout_up_2
+msgid "Suddenly, the bird folds its wings and dives. You realize that it is not a hawk, but a falcon."
+msgstr ""
+
+#: conversationlist_bugfix_0_7_4.json:lookout_up_2:0
+msgid "Watch the falcon."
+msgstr ""
+
+#: conversationlist_bugfix_0_7_4.json:lookout_up_3
+msgid "The falcon hurtles towards the mountain. It is going so fast it seems that surely it must crash into the rocks. "
+msgstr ""
+
+#: conversationlist_bugfix_0_7_4.json:lookout_up_3:0
+#: conversationlist_bugfix_0_7_4.json:lookout_up_4:0
+msgid "Continue watching the falcon."
+msgstr ""
+
+#: conversationlist_bugfix_0_7_4.json:lookout_up_4
+msgid "At what seems like the last possible moment, the falcon flares its wings and lands hard on whatever unfortunate creature it spied from high above."
+msgstr ""
+
+#: conversationlist_bugfix_0_7_4.json:lookout_up_5
+msgid "The falcon soars back into the sky. It has something in its talons, but you can't make out what it is. What an amazing thing to witness!"
+msgstr ""
+
+#: conversationlist_bugfix_0_7_4.json:lookout_north_2
+msgid "You see a few houses, and what appears to be an inn, or tavern."
+msgstr ""
+
+#: conversationlist_bugfix_0_7_4.json:lookout_northeast
+msgid "You see a large lake. It is difficult to make out any details on the distant shore, but there are trees and cliffs."
+msgstr ""
+
+#: conversationlist_bugfix_0_7_4.json:lookout_southeast
+msgid "The view is blocked by mountains. You can see some creatures moving on the slopes."
+msgstr ""
+
+#: conversationlist_bugfix_0_7_4.json:lookout_southwest
+msgid "You see the river, far below. You can't believe you climbed all the way up from there!"
+msgstr ""
+
+#: conversationlist_bugfix_0_7_4.json:lookout_northwest
+msgid "You see a town across the lake, but you can see no way to cross the water to get there. You can see a few people in the town."
+msgstr ""
+
+#: conversationlist_bugfix_0_7_4.json:lookout_northwest:0
+msgid "Watch the people."
+msgstr ""
+
+#: conversationlist_bugfix_0_7_4.json:lookout_northwest_1
+msgid "You see two women that appear to be arguing."
+msgstr ""
+
+#: conversationlist_bugfix_0_7_4.json:lookout_northwest_1:0
+#: conversationlist_bugfix_0_7_4.json:lookout_northwest_1:1
+msgid "Continue to watch the women."
+msgstr ""
+
+#: conversationlist_bugfix_0_7_4.json:lookout_northwest_2
+msgid "The two women eventually separate and walk away from each other. You wonder what the argument was about."
+msgstr ""
+
+#: conversationlist_bugfix_0_7_4.json:lookout_northwest_3
+msgid "The two women eventually separate and walk away from each other. You can't make out their faces from here, but you know who they probably are."
+msgstr ""
+
+#: conversationlist_bugfix_0_7_4.json:lookout_down
+msgid "You see the montain top you are standing on."
+msgstr ""
+
+#: conversationlist_bugfix_0_7_4.json:lookout_down:0
+#: conversationlist_bugfix_0_7_4.json:lookout_down:1
+msgid "Look closer at the rocks."
+msgstr ""
+
+#: conversationlist_bugfix_0_7_4.json:lookout_down:2
+#: conversationlist_bugfix_0_7_4.json:lookout_down_2:1
+#: conversationlist_bugfix_0_7_4.json:lookout_down_3:0
+#: conversationlist_bugfix_0_7_4.json:lookout_down_2a:0
+msgid "Look in another direction."
+msgstr ""
+
+#: conversationlist_bugfix_0_7_4.json:lookout_down_2
+msgid "You see something glinting by your feet."
+msgstr ""
+
+#: conversationlist_bugfix_0_7_4.json:lookout_down_2:0
+msgid "Bend down to look closer."
+msgstr ""
+
+#: conversationlist_bugfix_0_7_4.json:lookout_down_3
+msgid "You have found a gem!"
+msgstr ""
+
+#: conversationlist_bugfix_0_7_4.json:lookout_north_0
+msgid "You look to the north."
+msgstr ""
+
+#: conversationlist_bugfix_0_7_4.json:lookout_northeast_0
+msgid "You look to the northeast."
+msgstr ""
+
+#: conversationlist_bugfix_0_7_4.json:lookout_east_0
+msgid "You look to the east."
+msgstr ""
+
+#: conversationlist_bugfix_0_7_4.json:lookout_southeast_0
+msgid "You look to the southeast."
+msgstr ""
+
+#: conversationlist_bugfix_0_7_4.json:lookout_souteast_1
+msgid "Suddenly, something in the sky catches your eye."
+msgstr ""
+
+#: conversationlist_bugfix_0_7_4.json:lookout_souteast_1:0
+msgid "Look up at the sky."
+msgstr ""
+
+#: conversationlist_bugfix_0_7_4.json:lookout_south_0
+msgid "You look to the south."
+msgstr ""
+
+#: conversationlist_bugfix_0_7_4.json:lookout_southwest_0
+msgid "You look to the southwest."
+msgstr ""
+
+#: conversationlist_bugfix_0_7_4.json:lookout_west_0
+msgid "You look to the west."
+msgstr ""
+
+#: conversationlist_bugfix_0_7_4.json:lookout_northwest_0
+msgid "You look to the northwest."
+msgstr ""
+
+#: conversationlist_bugfix_0_7_4.json:lookout_sign
+msgid "The sign is old and worn, but you can make out the words \"Lake Laeroth watchtower\"."
+msgstr ""
 
 #: itemcategories_1.json:dagger
 msgid "Dagger"
@@ -32019,6 +32206,10 @@ msgstr "Elmo del capo di Stoutford"
 #: itemlist_stoutford_combined.json:lutarc_medallion
 msgid "Lutarc's medallion"
 msgstr "Medaglione di Lutarc"
+
+#: itemlist_bugfix_0_7_4.json:gem7
+msgid "Shimmering opal"
+msgstr ""
 
 #: monsterlist_crossglen_animals.json:tiny_rat
 msgid "Tiny rat"
@@ -37104,7 +37295,7 @@ msgid "Halvor asked me to bring him 5 insect wings."
 msgstr "Halvor mi ha chiesto di portargli 5 ali d'insetto."
 
 #: questlist_halvor_surprise.json:halvor_surprise:15
-msgid "I have given Halvor the 5 insect wings he wanted."
+msgid "I gave Halvor the 5 insect wings he wanted."
 msgstr "Ho dato ad Halvor le 5 ali d'insetto che voleva."
 
 #: questlist_halvor_surprise.json:halvor_surprise:20
@@ -37112,8 +37303,8 @@ msgid "Halvor asked me to bring him 5 rat tails."
 msgstr "Halvor mi ha chiesto di portargli 5 code di ratto."
 
 #: questlist_halvor_surprise.json:halvor_surprise:25
-msgid "I have given Halvor 5 rat tails."
-msgstr "Ho dato a Halvor 5 code di ratto."
+msgid "I gave Halvor 5 rat tails."
+msgstr "[REVIEW]Ho dato a Halvor 5 code di ratto."
 
 #: questlist_halvor_surprise.json:halvor_surprise:30
 msgid "My rat tails weren't good enough for him. He needs more. How many does he really want?"
@@ -37128,36 +37319,36 @@ msgid "I met Halvor at the foot of a mountain."
 msgstr "Ho incontrato Halvor ai piedi di una montagna."
 
 #: questlist_halvor_surprise.json:halvor_surprise:60
-msgid "Halvor is still looking for 5 rat tails. I agreed to help again."
-msgstr "Halvor è ancora alla ricerca di 5 code di ratto. Ho accettato di aiutarlo ancora."
+msgid "Halvor told me he is still looking for 5 rat tails. I agreed to help again."
+msgstr "[REVIEW]Halvor è ancora alla ricerca di 5 code di ratto. Ho accettato di aiutarlo ancora."
 
 #: questlist_halvor_surprise.json:halvor_surprise:65
 msgid "The 5 rat tails I gave him were good enough this time."
 msgstr "Le 5 code di ratto che gli ho dato questa volta erano abbastanza buone."
 
 #: questlist_halvor_surprise.json:halvor_surprise:70
-msgid "Halvor has now asked for 4 handfuls of animal hair."
-msgstr "Ora Halvor ha chiesto 4 manciate di peli di animali."
+msgid "Halvor asked for 4 handfuls of animal hair."
+msgstr "[REVIEW]Ora Halvor ha chiesto 4 manciate di peli di animali."
 
 #: questlist_halvor_surprise.json:halvor_surprise:75
-msgid "I have given him 4 handfuls of animal hair."
-msgstr "Gli ho dato 4 manciate di peli di animali."
+msgid "I gave him 4 handfuls of animal hair."
+msgstr "[REVIEW]Gli ho dato 4 manciate di peli di animali."
 
 #: questlist_halvor_surprise.json:halvor_surprise:80
-msgid "Halvor liked only one of my handfuls of animal hair. He wants me to bring him 3 more."
-msgstr "Ad Halvor è piaciuta solo una delle mie manciate di peli di animali. Vuole che gliene porti altre 3."
+msgid "Halvor liked only one of my handfuls of animal hair. He asked me to bring him 3 more."
+msgstr "[REVIEW]Ad Halvor è piaciuta solo una delle mie manciate di peli di animali. Vuole che gliene porti altre 3."
 
 #: questlist_halvor_surprise.json:halvor_surprise:90
-msgid "I have given up on finding handfuls of animal hair that suit Halvor's taste. He has left."
-msgstr "Ho rinunciato a trovare peli di animali che soddisfino il gusto di Halvor. Egli se ne è andato."
+msgid "I gave up on finding handfuls of animal hair that suit Halvor's taste. He has left."
+msgstr "[REVIEW]Ho rinunciato a trovare peli di animali che soddisfino il gusto di Halvor. Egli se ne è andato."
 
 #: questlist_halvor_surprise.json:halvor_surprise:100
-msgid "I met Halvor again. He is standing by the lakeside, near an old house, in the north."
-msgstr "[REVIEW]Ho di nuovo incontrato Havlor. Se ne sta sulla riva del lago, vicino a una vecchia casa, a nord."
+msgid "I met Halvor again. He was standing by the lakeside, near an old house, in the north."
+msgstr "[REVIEW][REVIEW]Ho di nuovo incontrato Havlor. Se ne sta sulla riva del lago, vicino a una vecchia casa, a nord."
 
 #: questlist_halvor_surprise.json:halvor_surprise:110
-msgid "Halvor is in bad condition. He asked me to give him a healing potion."
-msgstr "Halvor non sta bene, mi ha chiesto una pozione di guarigione."
+msgid "Halvor was in bad shape. He asked me to give him a healing potion."
+msgstr "[REVIEW]Halvor non sta bene, mi ha chiesto una pozione di guarigione."
 
 #: questlist_halvor_surprise.json:halvor_surprise:111
 msgid "I gave Halvor a small healing potion."
@@ -37176,12 +37367,12 @@ msgid "I gave Halvor a potion made by Lodar."
 msgstr "Ho dato ad Halvor una pozione fatta da Lodar."
 
 #: questlist_halvor_surprise.json:halvor_surprise:115
-msgid "He is healed."
-msgstr "Egli è guarito."
+msgid "He was healed by the potion I gave him."
+msgstr "[REVIEW]Egli è guarito."
 
 #: questlist_halvor_surprise.json:halvor_surprise:120
-msgid "Halvor is still looking for 3 tufts of animal hair."
-msgstr "Halvor è ancora alla ricerca di 3 ciuffi di peli di animali."
+msgid "Halvor told me he is still looking for 3 tufts of animal hair."
+msgstr "[REVIEW]Halvor è ancora alla ricerca di 3 ciuffi di peli di animali."
 
 #: questlist_halvor_surprise.json:halvor_surprise:125
 msgid "This time, the handfuls of animal hair I gave him were soft enough."
@@ -37192,8 +37383,8 @@ msgid "Halvor wants to find two bones. He wants long ones. I'll try to find some
 msgstr "Halvor vuole trovare due ossa: ossa lunghe. Cercherò di trovarne un po'."
 
 #: questlist_halvor_surprise.json:halvor_surprise:135
-msgid "I have given Halvor two bones, but they weren't long enough. Should I really bring him more bones?"
-msgstr "Ho dato due ossa ad Halvor, ma non erano abbastanza lunghe. Dovrei davvero portargli più ossa?"
+msgid "I gave Halvor two bones, but they weren't long enough. Should I really bring him more bones?"
+msgstr "[REVIEW]Ho dato due ossa ad Halvor, ma non erano abbastanza lunghe. Dovrei davvero portargli più ossa?"
 
 #: questlist_halvor_surprise.json:halvor_surprise:140
 msgid "Halvor left the lakeside when I refused to get him more bones."
@@ -37212,8 +37403,8 @@ msgid "I found a bone that was long enough, and gave it to Halvor."
 msgstr "Ho trovato un osso che era abbastanza lungo e lo ha dato ad Halvor."
 
 #: questlist_halvor_surprise.json:halvor_surprise:170
-msgid "Now, Halvor wants me to find 10 scales from venomscale snakes."
-msgstr "Ora, Halvor vuole che io trovi 10 scaglie di serpenti chiamati Venomscales."
+msgid "Halvor asked me to find 10 scales from venomscale snakes."
+msgstr "[REVIEW]Ora, Halvor vuole che io trovi 10 scaglie di serpenti chiamati Venomscales."
 
 #: questlist_halvor_surprise.json:halvor_surprise:175
 msgid "I brought Halvor the 10 venomscale scales."
@@ -37368,7 +37559,7 @@ msgid "Cithurn did not remember if the forest invasion began before the events i
 msgstr "Cithurn non ricordava se l'invasione della foresta è iniziata prima o dopo gli eventi di Charwood. Tuttavia, sulla base delle mie esperienze a Charwood, Cithurn ritiene che ci sia una connessione tra le due cose."
 
 #: questlist_graveyard1.json:waterwayacave:35
-msgid "I promised Cithurn I would investigate the source of the monster invasion in the forest. I will have to pass though the forest to access an entrance to a cave northeast of Cithurn's home."
+msgid "I promised Cithurn I would investigate the source of the monster invasion in the forest. I will have to pass through the forest to access an entrance to a cave northeast of Cithurn's home."
 msgstr "Ho promesso a Cithurn di indagare sull'origine dell'invasione dei mostri nella foresta. Dovrò passare attraverso la foresta per accedere all'ingresso di una grotta a nord-est di casa di Cithurn."
 
 #: questlist_graveyard1.json:waterwayacave:40
@@ -37433,7 +37624,7 @@ msgid "The maid told me that Hannah is missing her betrothed. I should talk to H
 msgstr "La cameriera mi ha detto che Hannah sente la mancanza del fidanzato. Dovrei parlare con Hannah, che si trova sulla cima della torre. Per arrivare da lei, dovrei offrirmi al cuoco di portare ad Hannah il suo pranzo."
 
 #: questlist_guynmart.json:guynmart:60
-msgid "I overheard the Unkorh the steward talking to himself. He plans for Guynmart to die in the castle dungeon, and after ursuping the throne he would marry Lady Hannah."
+msgid "I overheard Unkorh the steward talking to himself. He plans for Guynmart to die in the castle dungeon, and after ursuping the throne he would marry Lady Hannah."
 msgstr "Ho origliato il commissario Unkorh mentre parlava con se stesso. Egli vuole che Guynmart muoia nella prigione del castello e, dopo aver ursupato il trono, sposerà Lady Hannah."
 
 #: questlist_guynmart.json:guynmart:62
@@ -37725,8 +37916,8 @@ msgid "Blornvale drank the potion."
 msgstr "Blornvale ha bevuto la pozione."
 
 #: questlist_stoutford_combined.json:thorns_vengeance:71
-msgid "Tahalendor came to hear Blonvale's confession."
-msgstr "Tahalendor è venuto ad ascoltare la confessione di Blonvale."
+msgid "Tahalendor came to hear Blornvale's confession."
+msgstr "[REVIEW]Tahalendor è venuto ad ascoltare la confessione di Blonvale."
 
 #: questlist_stoutford_combined.json:thorns_vengeance:72
 msgid "Blornvale confessed to killing Aryfora's father. Unfortunately there is no witness."
