@@ -419,7 +419,7 @@
 	<string name="skill_prerequisite_level">Um diesen Skill zu erlernen, wird mindestens das Erfahrungslevel %1$d benötigt.</string>
 	<string name="skill_prerequisite_stat">Um diesen Skill zu erlernen, werden mindestens %1$d %2$s benötigt (Basiskampfeigenschaften).</string>
 	<string name="skill_number_of_increases_one">Du kannst eine Fähigkeit verbessern.</string>
-	<string name="skill_number_of_increases_several">Du kannst %1$d Skillpunkte ausgeben.</string>
+	<string name="skill_number_of_increases_several">Du kannst %1$d Fähigkeiten verbessern.</string>
 	<string name="levelup_adds_new_skillpoint">In diesem Level erhälst du einen neuen Skillpunkt!</string>
 
 	<string name="loadsave_save_to_new_slot">Neuen Speicherplatz anlegen</string>
@@ -570,7 +570,7 @@
 	<string name="skill_longdescription_weapon_prof_1hsword">Erhöht die Angriffschance von Rapieren, Lang- und Breitschwertern um %1$d %% der Basisangriffschance des Gegenstands, erhöht die Abwehrchance um %2$d %% der Basisabwehrchance des Gegensstands und erhöht die Kritische Fähigkeit um %3$d %% der ursprünglichen Kritischen Fähigkeit des Gegenstands je Level des Skills.</string>
 	<string name="skill_longdescription_weapon_prof_2hsword">Erhöht die Angriffschance von Zweihandschwertern um %1$d %% der Basisangriffschance des Gegenstands, erhöht die Abwehrchance um %2$d %% der Basisabwehrchance des Gegensstands und erhöht die Kritische Fähigkeit um %3$d %% der ursprünglichen Kritischen Fähigkeit des Gegenstands je Level des Skills.</string>
 	<string name="skill_longdescription_weapon_prof_axe">Erhöht die Angriffschance von Äxten und Großäxten um %1$d %% der Basisangriffschance des Gegenstands, erhöht die Abwehrchance um %2$d %% der Basisabwehrchance des Gegensstands und erhöht die Kritische Fähigkeit um %3$d %% der ursprünglichen Kritischen Fähigkeit des Gegenstands je Level des Skills.</string>
-	<string name="skill_longdescription_weapon_prof_blunt">Erhöht die Angriffschance stumpfen Waffen um %1$d %% der Basisangriffschance des Gegenstands, erhöht die Abwehrchance um %2$d %% der Basisabwehrchance des Gegensstands und erhöht die Kritische Fähigkeit um %3$d %% der ursprünglichen Kritischen Fähigkeit des Gegenstands je Level des Skills. Dies umfasst Keulen, Kampfstäbe, Streitkolben, Scepter, Kriegshämmer  und Riesenhämmer.</string>
+	<string name="skill_longdescription_weapon_prof_blunt">Erhöht die Angriffschance stumpfer Waffen um %1$d %% der Basisangriffschance des Gegenstands, erhöht die Abwehrchance um %2$d %% der Basisabwehrchance des Gegensstands und erhöht die kritische Fähigkeit um %3$d %% der ursprünglichen kritischen Fähigkeit des Gegenstands je Level des Skills. Dies umfasst Keulen, Kampfstäbe, Streitkolben, Zepter, Kriegshämmer und Riesenhämmer.</string>
 	<string name="skill_longdescription_weapon_prof_unarmed">Beim Kampf ohne Rüstung und Schild erhältst du %1$d %% Angriffschance, %2$d Schadenspotential und %3$d %% Abwehrchance je Level des Skills.</string>
 	<string name="skill_longdescription_armor_prof_shield">Erhöht die Schadensresistenz um %1$d je Level des Skills, solange du mit einem Schild ausgerüstet bist.</string>
 	<string name="skill_longdescription_armor_prof_unarmored">Beim Kampf ohne Benutzung irgendeines Rüstungsteils erhältst du %1$d %% Abwehrchance je Level des Skills. Gegenstände aus Stoff gelten nicht als Rüstung.</string>
@@ -684,12 +684,12 @@ Jeder Level des Skills erhöht die Angriffschance von Waffen um %1$d %% ihrer ur
 	<string name="heroinfo_healthpoints">Lebenspunkte (LP):</string>
 	<string name="heroinfo_experiencepoints">Erfahrungspunkte (EP):</string>
 	<string name="combat_condition_player_apply">Du bist von %1$s betroffen.</string>
-	<string name="combat_condition_player_clear">Du bist von %1$s befreit.</string>
+	<string name="combat_condition_player_clear">Du bist geheilt von %1$s.</string>
 	<string name="combat_condition_player_immune">Du bist jetzt immun gegen %1$s.</string>
-	<string name="combat_condition_monster_clear">%1$s wird von %2$s befreit.</string>
+	<string name="combat_condition_monster_clear">%1$s wurde von %2$s geheilt.</string>
 	<string name="startscreen_selectherosprite">Wähle deinen Helden</string>
 	<string name="iteminfo_effect_works_on_attacker">Auf Angreifer</string>
-	<string name="inventory_selectitem">Zuweisendes Element auswählen</string>
+	<string name="inventory_selectitem">Zuzuweisenden Gegenstand auswählen</string>
 	<string name="preferences_high_quality_filters_title">Hochwertige Filter</string>
 	<string name="preferences_high_quality_filters">Deaktivieren Sie dies, wenn Sie Leistungsprobleme auf gefilterten Karten (z.B. dunkle Höhlen) feststellen. Wenn Sie diese Option aktivieren, wird das Spiel anstelle von Vollfarbüberlagerungen erweiterte Farbfilter verwenden.</string>
 	
@@ -700,7 +700,7 @@ Jeder Level des Skills erhöht die Angriffschance von Waffen um %1$d %% ihrer ur
 	<string name="skill_category_criticals">Kritische</string>
 	<string name="skill_category_immunity">Immunität</string>
 	<string name="skill_category_utility">Werkzeug</string>
-	<string name="skill_category_speciality">Spezialität</string>
+	<string name="skill_category_speciality">Spezialisierung</string>
 	<string name="skill_category_proficiency">Kompetenz</string>
 
 	<string name="skill_sort_unlocked">Freigeschaltet</string>
