@@ -572,17 +572,22 @@
         "monsterClass":"undead",
         "movementAggressionType":"helpOthers",
         "attackDamage":{
-            "min":5,
-            "max":7
+            "min":13,
+            "max":22
         },
         "spawnGroup":"erwyn",
         "phraseID":"stoutford_castle_3",
-        "attackCost":53,
+        "attackCost":5,
         "attackChance":130,
         "criticalSkill":20,
         "criticalMultiplier":3.0,
         "blockChance":80,
+        "damageResistance":5,
         "hitEffect":{
+            "increaseCurrentHP":{
+                "min":3,
+                "max":3
+            },
             "conditionsTarget":[
                 {
                     "condition":"poison_weak",
@@ -602,18 +607,23 @@
         "monsterClass":"undead",
         "movementAggressionType":"helpOthers",
         "attackDamage":{
-            "min":5,
-            "max":7
+            "min":13,
+            "max":22
         },
         "spawnGroup":"erwyn2",
         "phraseID":"stoutford_castle_3",
         "droplistID":"erwyn",
-        "attackCost":53,
+        "attackCost":5,
         "attackChance":130,
         "criticalSkill":20,
         "criticalMultiplier":3.0,
         "blockChance":80,
+        "damageResistance":5,
         "hitEffect":{
+            "increaseCurrentHP":{
+                "min":3,
+                "max":3
+            },
             "conditionsTarget":[
                 {
                     "condition":"poison_weak",

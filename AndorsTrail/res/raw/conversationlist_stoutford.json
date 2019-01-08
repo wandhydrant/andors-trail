@@ -92,7 +92,8 @@
                     {
                         "requireType":"questProgress",
                         "requireID":"halvor_surprise",
-                        "value":190
+                        "value":190,
+                        "negate":true
                     }
                 ]
             }
@@ -1515,7 +1516,7 @@
                         "requireType":"killedMonster",
                         "requireID":"erwyn",
                         "value":1,
-						"negate":true
+                        "negate":true
                     }
                 ]
             }

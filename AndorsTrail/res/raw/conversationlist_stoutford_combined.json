@@ -1782,7 +1782,7 @@
                 "nextPhraseID":"X"
             },
             {
-                "text":"By chance, I have just three potions of truth with me. Here, take them.",
+                "text":"By chance, I have three potions of the brave with me. Here, take them.",
                 "nextPhraseID":"stoutford_widow_thorns20_1",
                 "requires":[
                     {
@@ -1889,8 +1889,8 @@
     },
     {
         "id":"stoutford_widow_thorns20_5",
-		"switchToNPC":"none",
-        "message":"Aryfora just glares at you. Her eyes are icy cold."
+        "message":"Aryfora just glares at you. Her eyes are icy cold.",
+        "switchToNPC":"none"
     },
     {
         "id":"stoutford_widow_thorns30_0",
@@ -2309,7 +2309,7 @@
                         "requireType":"questProgress",
                         "requireID":"stn_nondisplay",
                         "value":200,
-						"negate":true
+                        "negate":true
                     }
                 ]
             },
@@ -2320,13 +2320,13 @@
                         "requireType":"killedMonster",
                         "requireID":"blornvale_wolf",
                         "value":1,
-						"negate":true
+                        "negate":true
                     }
                 ]
             },
             {
                 "nextPhraseID":"blornvale_shop1_6"
-			}
+            }
         ]
     },
     {
@@ -2549,7 +2549,7 @@
                         "requireType":"questProgress",
                         "requireID":"stn_nondisplay",
                         "value":202
-					}
+                    }
                 ]
             },
             {
@@ -2577,7 +2577,7 @@
                         "requireType":"questProgress",
                         "requireID":"thorns_vengeance",
                         "value":200,
-						"negate":true
+                        "negate":true
                     }
                 ]
             },
@@ -2589,7 +2589,7 @@
                         "requireType":"questProgress",
                         "requireID":"thorns_vengeance",
                         "value":200
-					}
+                    }
                 ]
             }
         ]
@@ -3180,7 +3180,7 @@
                         "requireType":"questProgress",
                         "requireID":"stn_quest_gyra",
                         "value":99
-					}
+                    }
                 ]
             },
             {
@@ -4077,7 +4077,7 @@
     },
     {
         "id":"yolgen_surroundings_1",
-        "message":"Flagstone Prison was built four hundred years ago by house Gorland of Stoutford, and was used until the Noble Wars, when the house was vanguished by it's enemies. They mostly used it to detain people that were worshipping the \"old gods\".",
+        "message":"Flagstone Prison was built four hundred years ago by house Gorland of Stoutford, and was used until the Noble Wars, when the house was vanquished by its enemies. They mostly used it to detain people that were worshipping the \"old gods\".",
         "replies":[
             {
                 "text":"N",
@@ -4668,26 +4668,26 @@
             {
                 "nextPhraseID":"stoutford_castle_3_2",
                 "requires":[
-					{
+                    {
                         "requireType":"questProgress",
                         "requireID":"stn_nondisplay",
-                        "value":148					
-					},
-					{
+                        "value":148
+                    },
+                    {
                         "requireType":"questProgress",
                         "requireID":"stn_nondisplay",
-                        "value":49					
-					}
+                        "value":49
+                    }
                 ]
             },
             {
                 "nextPhraseID":"stoutford_castle_3a",
                 "requires":[
-					{
+                    {
                         "requireType":"questProgress",
                         "requireID":"stn_nondisplay",
-                        "value":148					
-					}
+                        "value":148
+                    }
                 ]
             },
             {
@@ -4719,12 +4719,12 @@
             {
                 "nextPhraseID":"stoutford_castle_3_2",
                 "requires":[
-					{
+                    {
                         "requireType":"questProgress",
                         "requireID":"stn_nondisplay",
-                        "value":49					
-					}
-				]
+                        "value":49
+                    }
+                ]
             },
             {
                 "nextPhraseID":"stoutford_castle_3a"
@@ -4829,11 +4829,11 @@
                         "requireID":"erwyn2",
                         "value":1
                     },
-					{
+                    {
                         "requireType":"questProgress",
                         "requireID":"stn_nondisplay",
                         "value":48
-					}
+                    }
                 ]
             },
             {
@@ -4869,17 +4869,17 @@
                         "requireID":"erwyn",
                         "value":1
                     },
-					{
+                    {
                         "requireType":"questProgress",
                         "requireID":"stn_nondisplay",
                         "value":48
-					},
-					{
+                    },
+                    {
                         "requireType":"questProgress",
                         "requireID":"stn_nondisplay",
                         "value":49,
-						"negate":true
-					}
+                        "negate":true
+                    }
                 ]
             },
             {
@@ -4890,12 +4890,12 @@
                         "requireID":"erwyn_coin",
                         "value":2
                     },
-					{
+                    {
                         "requireType":"questProgress",
                         "requireID":"stn_nondisplay",
                         "value":49,
-						"negate":true
-					}
+                        "negate":true
+                    }
                 ]
             },
             {
@@ -4905,13 +4905,42 @@
                         "requireType":"inventoryKeep",
                         "requireID":"erwyn_coin",
                         "value":2,
-						"negate":true
-
+                        "negate":true
                     },
-					{
+                    {
                         "requireType":"questProgress",
                         "requireID":"stn_nondisplay",
-                        "value":49					}
+                        "value":49
+                    }
+                ]
+            },
+            {
+                "nextPhraseID":"check_erwyn_4",
+                "requires":[
+                    {
+                        "requireType":"inventoryKeep",
+                        "requireID":"erwyn_coin",
+                        "value":1,
+                        "negate":true
+                    },
+                    {
+                        "requireType":"killedMonster",
+                        "requireID":"erwyn2",
+                        "value":1,
+                        "negate":true
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"stn_nondisplay",
+                        "value":48,
+                        "negate":true
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"stn_nondisplay",
+                        "value":49,
+                        "negate":true
+                    }
                 ]
             }
         ]
@@ -4922,9 +4951,9 @@
         "replies":[
             {
                 "text":"N",
-				"nextPhraseID":"X"
+                "nextPhraseID":"X"
             }
-		],
+        ],
         "rewards":[
             {
                 "rewardType":"removeQuestProgress",
@@ -4974,7 +5003,7 @@
                     }
                 ]
             }
-		],
+        ],
         "rewards":[
             {
                 "rewardType":"spawnAll",
@@ -4993,8 +5022,8 @@
         "message":"I'm not dead, so you can't kill me. Haha. You don't know much about the undead, do you kid? You can't destroy me!",
         "replies":[
             {
-                "nextPhraseID":"X",
-                "text":"There must be a way to put an end to this."
+                "text":"There must be a way to put an end to this.",
+                "nextPhraseID":"X"
             }
         ],
         "rewards":[
@@ -5478,7 +5507,7 @@
     },
     {
         "id":"stoutford_guard4",
-        "message":"Hey, kid, get ouf of here immediately!"
+        "message":"Hey, kid, get out of here immediately!"
     },
     {
         "id":"stoutford_commander",
@@ -5891,8 +5920,8 @@
                     {
                         "requireType":"questProgress",
                         "requireID":"stn_quest_gyra",
-                        "value":70                    
-					}
+                        "value":70
+                    }
                 ]
             },
             {
@@ -10696,7 +10725,7 @@
     },
     {
         "id":"stn_colonel_131_4a",
-        "message":"[Ring taken]\nThank you, stupid boy.",
+        "message":"[Ring taken]\nThank you, stupid kid.",
         "replies":[
             {
                 "text":"What?",
@@ -11698,5 +11727,20 @@
     {
         "id":"blornvale_thorns72_92",
         "message":"No more talk. Go now!"
+    },
+    {
+        "id":"check_erwyn_4",
+        "rewards":[
+            {
+                "rewardType":"spawnAll",
+                "rewardID":"erwyn",
+                "mapName":"stoutford_castle0"
+            },
+            {
+                "rewardType":"removeQuestProgress",
+                "rewardID":"stn_nondisplay",
+                "value":48
+            }
+        ]
     }
 ]

@@ -191,7 +191,7 @@
  </layer>
  <layer name="Objects" width="30" height="20">
   <data encoding="base64" compression="zlib">
-   eJytVMtOwzAQjPwH6aE0V67wo3xDEH/QCPgBSntEHBokJKSWi3tpVcqdE141o0y23jwKI61sxbHHM7vrQ5YknyEONK5DTF3yZ6xG9prmlPHrn3ifwznzLL7GXHvSKygC9zbMd8beLux76BWuFd0BKM7QnYc9tx2hPcYdfMXHfndpf0+P41OPu1r5Ffgzc7x03fWh8ytjPoDPjet56Y5aPfFanuv8rpWPXZpHxLtxtVYJ4SxUIBeWx31xWfHiPE+8bV7HaooxtI9yqkeJlzT+X6yeh9YT5xAYqhdex7it90dqaab+B6/V/1b/An20Sy2VqobBLXnXuRLv2/rXAvcO7rahGgbgw0z5sYhwxqA1c+9MVU75rYIPCF7TnB+R+vu5SJLrSZ0r9I6n/EHnks6HDwisiXZ+p2IA53farJGbav4Q9j1mTS7rncRaSWuvLToFhWvy4mzUOHP5CO+d8uBqYgc4Na/PTs/Wb7LGffj2Nj793ge6F5m3IN6Yx/PwbUG8vwb72uM=
+   eJylVctKw1AQDfmDdBGbrVv9Ub8h4h80qD9gbUEEcdEULELr5majaN278g7NISfTO3nogSEll8yZOXPmdp9F0ZuPPT13PmZx9G9sJ/aZ5pTnl8FbdeQJ4d7nWWThM+b6pH4Fhed+978/At++JONq0GBtt1QDUNR9bzp4tA65/+ayJ7TGqMHVfKy31TsADe4Mb7BG1nwF7o/eWsX9vtTzlWc+gi9Om99lfOjVEa+luZ7vjnQUXfp6nhBvFTe9SghnoQJaWxpb0P46TZsaBY54u7QOeYoR8lLXHufkR4knqpNrDvl5qJ/QI88QGNsvtA5xW/ePeGmu9hy8hcFt7S8wpHfxUqk8DG7RRM9KtO/aXwu8O6itIg9v6P6YUwDLACfwmLTzMnh3ZmqmfFdBBwSfac5Xz/egduXnJIrOp82ssDuO5gdtV5QfOiBwJr3zPcVAv+D8Tg4c2KGLOveN/+42a3NZ9yTOSjp7DvzfgFNQxG1vIjc8zlwuwHulNDib2gFOzeuy49z6Tta49u/W6fH7IdC7yLwF8YY0Xvh3S+L9Baco6Go=
   </data>
  </layer>
  <layer name="Above" width="30" height="20">
@@ -201,7 +201,7 @@
  </layer>
  <layer name="Walkable" width="30" height="20">
   <data encoding="base64" compression="zlib">
-   eJy1k8ERACEIA63i+m/BDu/l50bOZIPM8FOWBJjPGLPINKq6f9kRhLvYTh/fd5RLdSe8HVftJeVRzR06nf6cWaneUq7rCQ21RveMd/9dbrq/VG+1Yze5J1ZSQ/WW3I57Q4qPDlfVQnfXZRMeZdJ7ucFUuN08un9JvtPgFZM=
+   eJy1k7ERACAIA53C/VdwQys7gSQQ7ugwDxjOXusE6QwnM9OKuK+e6YPpN+Oqc1eaSP70nFyGM81FNNAapDem96qG3YkaqMb0H//es9yuf9V5I485uRWro4HuVrkd9oaQPTJcdBbVuyxb4alM9V4cTIQ7zVP918kLUzsGzg==
   </data>
  </layer>
  <objectgroup name="Mapevents">
@@ -211,7 +211,7 @@
     <property name="place" value="north"/>
    </properties>
   </object>
-  <object name="north" type="mapchange" x="224" y="0" width="512" height="32">
+  <object name="north" type="mapchange" x="224" y="0" width="704" height="32">
    <properties>
     <property name="map" value="waytolake10"/>
     <property name="place" value="south"/>
@@ -221,6 +221,12 @@
    <properties>
     <property name="map" value="waytolake6"/>
     <property name="place" value="west"/>
+   </properties>
+  </object>
+  <object name="east1" type="mapchange" x="928" y="0" width="32" height="96">
+   <properties>
+    <property name="map" value="waytolake12"/>
+    <property name="place" value="west2"/>
    </properties>
   </object>
  </objectgroup>
@@ -245,19 +251,19 @@
   </object>
   <object name="mwolf_1" type="spawn" x="256" y="256" width="384" height="160">
    <properties>
-    <property name="quantity" value="3"/>
+    <property name="quantity" value="4"/>
     <property name="spawngroup" value="mwolf_1"/>
    </properties>
   </object>
-  <object name="mwolf_2" type="spawn" x="160" y="192" width="384" height="160">
+  <object name="mwolf_2" type="spawn" x="160" y="192" width="352" height="128">
    <properties>
-    <property name="quantity" value="4"/>
+    <property name="quantity" value="3"/>
     <property name="spawngroup" value="mwolf_2"/>
    </properties>
   </object>
-  <object name="maonit_1" type="spawn" x="256" y="64" width="480" height="128">
+  <object name="maonit_1" type="spawn" x="256" y="64" width="640" height="128">
    <properties>
-    <property name="quantity" value="3"/>
+    <property name="quantity" value="6"/>
     <property name="spawngroup" value="maonit_1"/>
    </properties>
   </object>
