@@ -186,22 +186,22 @@
  </tileset>
  <layer name="Ground" width="23" height="20">
   <data encoding="base64" compression="zlib">
-   eJw7wcnAcIJCvBEHppW5lJqNz1xamz2KUfE6plFz6WXuITHqmgszmxpup1e4EuIPlHuJMY9QeCPHCan2kqIPZg+5GF9cUMtsapsLMxsAdV1RPw==
+   eJw7wcnAcIJCvBEHppW5lJqNz1xamz2KUfE6plFz6WXuITHqmgszm1K3w8yaA8XU9j86pka44zOHkJnY5Nch+R1X2OLyA7Y4ITbeSIlDbGFJDsblXmqaTSt3AwCfs1BB
   </data>
  </layer>
  <layer name="Objects" width="23" height="20">
   <data encoding="base64" compression="zlib">
-   eJytlE8OwVAQxicSe28jcQxHsHAQ53EEHAFHwEoTNkgIlmj8WdiyM5O08WW8qaf6JV+m77Xv128maYnyK64S3dg79sPjIrhP4ESOqM517vKzp8CNgNOuEDW43nnvXM1nyRxB3kuN6MpuMbtZJuqU7FmFGGeBEu6gZN8PVZpXc8WojXvPbs/P32p2FcUwZzlncVHfuHvIunb+vFJDOBbXmkN6/QtPzzaLG5pbeJHnW0CuXHcT91TuNFdW/3i+q7gd4A6Tfd3nxegfM+qcsu4ndQhsVGz8A3xcXM/43IjrmD0x2Lpn3buPm3rBXrJXwLYYWf37fGAf2SdgW4yQd4q37nPvW+5/hLlnrjiuZhfJRfYLgSXwiw==
+   eJytlE1OAkEQhSsk7m0WJH0Mj+DCg3gejwAeQYh6AH9IcBLZkeAPrkQnIgu3urMq3RWelSlmHH1JpZvu6o9X1Q1E7VX2iNYcjxyfFfEf3C/gFIFoj8dpaM++AW4BnKNdon0eP3jtrdcuxHMBfleR6J3jkNkHO0T9jt+rJoG9EE2yf+EOO2l/8ofeqF+VciVQd2HTuwXnr6M/ikrwJOc8LqqOuwCvc9MH5crYhONxvT7o/Dc87K29N8tt6lt4RcV9I1fmgxzHxrf62lY/nh8Ybh+4o7xu39Cqon7rcZ7fxCnvn8W0dpL3RsBGlc47R676FP4Vc685bkM929Zsa1cufpbfhPo+jz/ZlqG5ljeLKUe9DjNLc4Q9NmzLqPMtus/fL6yH4Pfb86167m7m4n0Zk1+rCz5zKXUZ33IX2AvkoWaZ+dRN+agln3vheHV6su0/RpmicYVvlLK/AU7UArM=
   </data>
  </layer>
  <layer name="Above" width="23" height="20">
   <data encoding="base64" compression="zlib">
-   eJxjYKANOCtII4OpDG5KMjDckqSffZSGCznuhenBRRMC13C4+SYReokxH5u7KAXvsbiZUnNvUhAOxILNNEiL16HuPgw0+7IY9c2HgcNUNhvmbpCbSTX7OpH57DAZZiMDXHmDWLPR9RMb/5eQzCbar0hmY8sfKGppkE7g6VAMuzg1AC3cjWw2AAp1MAw=
+   eJxjYKANOCtII4OpDG5KMjDckqSffZSGCznuhenBRRMC13C4+SYReokxH5u7KAXvsbiZUnNvUhAOxILNNEiL16HuPgw0+7IY9c2HgcNUNhvmbpCbSTX7OpH57DAZZoPARmBYbiIQV8SYjZ63iI1/ZLOJ9isZZlMbUGL2EST3YwunS2SYjS0ecdkDMhsA9jI1XA==
   </data>
  </layer>
  <layer name="Walkable" width="23" height="20">
   <data encoding="base64" compression="zlib">
-   eJzbKMbAsJFCjA1QaiYuc6lhNi4zqW02shgx/iIXUMtcdHOoERfE6CHHXHzhTe20N5jNpSTsiDGX2vopMZcYMFjiZRQPTwwA9MESdw==
+   eJzbKMbAsJFCjA1QaiYuc6lhNi4zqW02shgx/iIXUMtcdHOoERfE6CHHXHzhTe20N5jNpSTsiDGX2vrxmUvID8QAXPpoFS+0CHtKzCYmbLDxyQ1vbG4jxt0wcVqZTY67icEAQq3iNg==
   </data>
  </layer>
  <objectgroup name="Mapevents">
@@ -209,6 +209,18 @@
    <properties>
     <property name="map" value="waytolake10"/>
     <property name="place" value="west"/>
+   </properties>
+  </object>
+  <object name="west1" type="mapchange" x="0" y="544" width="32" height="96">
+   <properties>
+    <property name="map" value="waytolake10"/>
+    <property name="place" value="east3"/>
+   </properties>
+  </object>
+  <object name="south1" type="mapchange" x="32" y="608" width="320" height="32">
+   <properties>
+    <property name="map" value="waytolake12"/>
+    <property name="place" value="north1"/>
    </properties>
   </object>
  </objectgroup>
@@ -225,7 +237,7 @@
     <property name="spawngroup" value="maonit_3"/>
    </properties>
   </object>
-  <object name="mwolf_3" type="spawn" x="256" y="288" width="256" height="128">
+  <object name="mwolf_3" type="spawn" x="256" y="288" width="256" height="96">
    <properties>
     <property name="quantity" value="3"/>
     <property name="spawngroup" value="mwolf_3"/>
@@ -239,6 +251,18 @@
   <object name="teksin" type="spawn" x="608" y="0" width="64" height="64">
    <properties>
     <property name="spawngroup" value="teksin"/>
+   </properties>
+  </object>
+  <object name="plaguespider_0" type="spawn" x="320" y="384" width="256" height="192">
+   <properties>
+    <property name="quantity" value="3"/>
+    <property name="spawngroup" value="plaguespider_3"/>
+   </properties>
+  </object>
+  <object name="mwolf_1" type="spawn" x="64" y="480" width="288" height="96">
+   <properties>
+    <property name="quantity" value="3"/>
+    <property name="spawngroup" value="mwolf_3"/>
    </properties>
   </object>
  </objectgroup>

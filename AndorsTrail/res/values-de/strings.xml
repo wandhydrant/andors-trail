@@ -1,4 +1,4 @@
-<?xml version='1.0' encoding='UTF-8'?>
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
 	<string name="app_name">Andor\'s Trail</string>
 	<string name="app_description">Questbasiertes Fantasy-Rollenspiel</string>
@@ -22,24 +22,25 @@
 	<string name="dialog_close">Schließen</string>
 
 	<string name="dialog_monsterencounter_title">Begegnung</string>
-	<string name="dialog_monsterencounter_message">Angreifen?\nSchwierigkeit: %1$s</string>
+	<string name="dialog_monsterencounter_message">Möchtest du Angreifen\?
+\nSchwierigkeit: %1$s</string>
 	<string name="dialog_monsterencounter_info">Info</string>
 
 	<string name="status_hp">LP:</string>
 	<string name="status_ap">AP:</string>
-	<string name="status_exp">Erf.:</string>
+	<string name="status_exp">EP:</string>
 
 	<string name="heroinfo_char">Übersicht</string>
 	<string name="heroinfo_inv">Inventar</string>
 	<string name="heroinfo_skill">Fähigkeiten</string>
-	<string name="heroinfo_levelup">Aufstieg</string>
+	<string name="heroinfo_levelup">Level aufsteigen</string>
 	<string name="heroinfo_level">Level</string>
 	<string name="heroinfo_totalexperience">Erfahrung</string>
 	<string name="heroinfo_wornequipment">Ausrüstung</string>
 	<string name="heroinfo_inventory">Inventar</string>
 	<string name="heroinfo_gold">Gold: %1$d</string>
 	<string name="heroinfo_actionpoints">Aktionspunkte (AP):</string>
-	<string name="heroinfo_quests">Queste</string>
+	<string name="heroinfo_quests">Quests</string>
 
 	<string name="combat_attack">Angriff (%1$d AP)</string>
 	<string name="combat_move">Bewegung (%1$d AP)</string>
@@ -56,7 +57,7 @@
 	<string name="combat_result_monstermiss">%1$s verfehlt!</string>
 	<string name="combat_result_monsterhit">%1$s trifft dich und nimmt dir %2$d LP!</string>
 	<string name="combat_result_monsterhitcritical">%1$s macht einen kritischen Treffer (%2$d LP)!</string>
-	<string name="combat_result_heromiss">Dein Angriff schlug fehl.</string>
+	<string name="combat_result_heromiss">Dein Angriff ging daneben.</string>
 	<string name="combat_result_herohit">Du triffst %1$s (%2$d LP)!</string>
 	<string name="combat_result_herohitcritical">Dein kritischer Treffer kostet %1$s %2$d LP!</string>
 	<string name="combat_result_herokillsmonster">%1$s ist besiegt!</string>
@@ -67,7 +68,7 @@
 	<string name="inventory_equip">Anlegen</string>
 	<string name="inventory_unequip">Ablegen</string>
 	<string name="inventory_use">Benutzen</string>
-	<string name="inventory_drop">Fallen lassen</string>
+	<string name="inventory_drop">Wegwerfen</string>
 	<string name="inventory_item_used">%1$s benutzt.</string>
 	<string name="inventory_item_dropped">%1$s weggeworfen.</string>
 	<string name="inventory_item_equipped">%1$s angelegt.</string>
@@ -77,7 +78,7 @@
 	<string name="dialog_loot_pickedupitem">Du hebst einen Gegenstand auf.</string>
 	<string name="dialog_loot_pickedupitems">Du hebst %1$d Gegenstände auf.</string>
 	<string name="dialog_groundloot_title">Gegenstände</string>
-	<string name="dialog_groundloot_message">Du hast ein paar Dinge gefunden. </string>
+	<string name="dialog_groundloot_message">Du hast ein paar Gegenstände gefunden.</string>
 	<string name="dialog_monsterloot_title">Sieg</string>
 	<string name="dialog_monsterloot_message">Du hast den Kampf überlebt. </string>
 	<string name="dialog_monsterloot_gainedexp">Du erhältst %1$d Erfahrung. </string>
@@ -311,7 +312,7 @@
 
 	<string name="preferences_display_scaling_factor_title">Skalierung</string>
 	<string name="preferences_display_scaling_factor">Vergrößert die Darstellung.</string>
-	<string name="preferences_display_scaling_factor_normal">Normalgröße</string>
+	<string name="preferences_display_scaling_factor_normal">Normale Größe</string>
 	<string name="preferences_display_scaling_factor_50_percent_larger">1,5-fache Größe</string>
 	<string name="preferences_display_scaling_factor_double">Doppelte Größe</string>
 
@@ -417,8 +418,8 @@
 	<string name="skill_prerequisite_other_skill">Um diesen Skill zu erlernen, wird mindestens die %1$d. Stufe des Skills %2$s benötigt.</string>
 	<string name="skill_prerequisite_level">Um diesen Skill zu erlernen, wird mindestens das Erfahrungslevel %1$d benötigt.</string>
 	<string name="skill_prerequisite_stat">Um diesen Skill zu erlernen, werden mindestens %1$d %2$s benötigt (Basiskampfeigenschaften).</string>
-	<string name="skill_number_of_increases_one">Du kannst einen Skillpunkt ausgeben.</string>
-	<string name="skill_number_of_increases_several">Du kannst %1$d Skillpunkte ausgeben.</string>
+	<string name="skill_number_of_increases_one">Du kannst eine Fähigkeit verbessern.</string>
+	<string name="skill_number_of_increases_several">Du kannst %1$d Fähigkeiten verbessern.</string>
 	<string name="levelup_adds_new_skillpoint">In diesem Level erhälst du einen neuen Skillpunkt!</string>
 
 	<string name="loadsave_save_to_new_slot">Neuen Speicherplatz anlegen</string>
@@ -439,7 +440,7 @@
 
 	<string name="traitsinfo_base_max_hp">Max LP:</string>
 	<string name="traitsinfo_base_max_ap">Max AP:</string>
-	<string name="menu_save_saving_not_allowed_in_combat">Das Spiel kann während des Kampfes nicht gespeichert werden.</string>
+	<string name="menu_save_saving_not_allowed_in_combat">Das Spiel kann während eines Kampfes nicht gespeichert werden.</string>
 
 	<string name="preferences_optimized_drawing_title">Optimierter Bildschirmaufbau</string>
 	<string name="preferences_optimized_drawing">Deaktiviere diese Option wenn du Grafikfehler siehst. Wenn diese Einstellung aktiv ist, werden bei jedem Frame nur die geänderten Teile des Bildschirms neu gezeichnet.</string>
@@ -467,7 +468,7 @@
 	<string name="skill_longdescription_rejuvenation">Jede Runde (alle 6 Sekunden) gibt es eine %1$d %% Chance dass einer der aktiven negativen Effekte um eine Größenordnung verringert wird. Das gilt für alle temporären Effektarten die den Körper betreffen; mentale Effekte wie Benommen, physische Effekte wie Ermüdung und auch Blutstörungen wie Gift.</string>
 	<string name="skill_title_taunt">Verspotten</string>
 	<string name="skill_shortdescription_taunt">Angreifer verliert bei Fehlschlägen Aktionspunkte</string>
-	<string name="skill_longdescription_taunt">Wenn ein Angriff eines Gegners fehlschlägt gibt es eine %1$d %% Chance dass er dabei %2$d Aktionspunkte (AP) verliert. Das gilt für alle Nahkampfangriffe gegen dich.</string>
+	<string name="skill_longdescription_taunt">Wenn ein Angriff eines Gegners fehlschlägt, gibt es eine %1$d %% Chance, dass er dabei %2$d Aktionspunkte (AP) verliert. Das gilt für alle Nahkampfangriffe gegen dich.</string>
 	<string name="skill_title_concussion">Gehirnerschütterung</string>
 	<string name="skill_shortdescription_concussion">größere Chance eine Gehirnerschütterung zuzufügen</string>
 	<string name="skill_longdescription_concussion">Bei einem Angriff auf einen Gegner dessen Abwehrchance (BC) mindestens um %1$d tiefer als deine Angriffschance (AC) ist, gibt es eine %2$d %% Chance dass ein Treffer dem Gegner eine Gehirnerschütterung zufügt. Durch den Effekt \'Gehirnerschütterung\' werden die offensiven Kampfeigenschaften stark eingeschränkt und der Gegner wird weniger erfolgreiche Angriffe durchführen können.</string>
@@ -569,7 +570,7 @@
 	<string name="skill_longdescription_weapon_prof_1hsword">Erhöht die Angriffschance von Rapieren, Lang- und Breitschwertern um %1$d %% der Basisangriffschance des Gegenstands, erhöht die Abwehrchance um %2$d %% der Basisabwehrchance des Gegensstands und erhöht die Kritische Fähigkeit um %3$d %% der ursprünglichen Kritischen Fähigkeit des Gegenstands je Level des Skills.</string>
 	<string name="skill_longdescription_weapon_prof_2hsword">Erhöht die Angriffschance von Zweihandschwertern um %1$d %% der Basisangriffschance des Gegenstands, erhöht die Abwehrchance um %2$d %% der Basisabwehrchance des Gegensstands und erhöht die Kritische Fähigkeit um %3$d %% der ursprünglichen Kritischen Fähigkeit des Gegenstands je Level des Skills.</string>
 	<string name="skill_longdescription_weapon_prof_axe">Erhöht die Angriffschance von Äxten und Großäxten um %1$d %% der Basisangriffschance des Gegenstands, erhöht die Abwehrchance um %2$d %% der Basisabwehrchance des Gegensstands und erhöht die Kritische Fähigkeit um %3$d %% der ursprünglichen Kritischen Fähigkeit des Gegenstands je Level des Skills.</string>
-	<string name="skill_longdescription_weapon_prof_blunt">Erhöht die Angriffschance stumpfen Waffen um %1$d %% der Basisangriffschance des Gegenstands, erhöht die Abwehrchance um %2$d %% der Basisabwehrchance des Gegensstands und erhöht die Kritische Fähigkeit um %3$d %% der ursprünglichen Kritischen Fähigkeit des Gegenstands je Level des Skills. Dies umfasst Keulen, Kampfstäbe, Streitkolben, Scepter, Kriegshämmer  und Riesenhämmer.</string>
+	<string name="skill_longdescription_weapon_prof_blunt">Erhöht die Angriffschance stumpfer Waffen um %1$d %% der Basisangriffschance des Gegenstands, erhöht die Abwehrchance um %2$d %% der Basisabwehrchance des Gegensstands und erhöht die kritische Fähigkeit um %3$d %% der ursprünglichen kritischen Fähigkeit des Gegenstands je Level des Skills. Dies umfasst Keulen, Kampfstäbe, Streitkolben, Zepter, Kriegshämmer und Riesenhämmer.</string>
 	<string name="skill_longdescription_weapon_prof_unarmed">Beim Kampf ohne Rüstung und Schild erhältst du %1$d %% Angriffschance, %2$d Schadenspotential und %3$d %% Abwehrchance je Level des Skills.</string>
 	<string name="skill_longdescription_armor_prof_shield">Erhöht die Schadensresistenz um %1$d je Level des Skills, solange du mit einem Schild ausgerüstet bist.</string>
 	<string name="skill_longdescription_armor_prof_unarmored">Beim Kampf ohne Benutzung irgendeines Rüstungsteils erhältst du %1$d %% Abwehrchance je Level des Skills. Gegenstände aus Stoff gelten nicht als Rüstung.</string>
@@ -629,7 +630,7 @@ Jeder Level des Skills erhöht die Angriffschance von Waffen um %1$d %% ihrer ur
 <string name="combat_miss_animation_message">MISS</string>
 	
 	<string name="dialog_recenter">Zentrieren</string>
-	<string name="change_theme_requires_restart">Änderung des Benutzer Interface erfordert Neustart. Andor\'s Trail wurde beendet.</string>
+	<string name="change_theme_requires_restart">Die Änderung des Oberflächendesigns erfordert einen Neustart. Andor\'s Trail wurde beendet.</string>
 	
 	
 <string name="dialog_more">Mehr</string>
@@ -678,4 +679,34 @@ Jeder Level des Skills erhöht die Angriffschance von Waffen um %1$d %% ihrer ur
 	<string name="preferences_display_theme_blue">Kobalt</string>
 	<string name="preferences_display_theme_green">Malachit</string>
 	<string name="preferences_display_theme_charcoal">Obsidian</string>
-	</resources>
+	<string name="dialog_monsterencounter_conditions">Statuseffekte</string>
+
+	<string name="heroinfo_healthpoints">Lebenspunkte (LP):</string>
+	<string name="heroinfo_experiencepoints">Erfahrungspunkte (EP):</string>
+	<string name="combat_condition_player_apply">Du bist von %1$s betroffen.</string>
+	<string name="combat_condition_player_clear">Du bist geheilt von %1$s.</string>
+	<string name="combat_condition_player_immune">Du bist jetzt immun gegen %1$s.</string>
+	<string name="combat_condition_monster_clear">%1$s wurde von %2$s geheilt.</string>
+	<string name="startscreen_selectherosprite">Wähle deinen Helden</string>
+	<string name="iteminfo_effect_works_on_attacker">Auf Angreifer</string>
+	<string name="inventory_selectitem">Zuzuweisenden Gegenstand auswählen</string>
+	<string name="preferences_high_quality_filters_title">Hochwertige Filter</string>
+	<string name="preferences_high_quality_filters">Deaktivieren Sie dies, wenn Sie Leistungsprobleme auf gefilterten Karten (z.B. dunkle Höhlen) feststellen. Wenn Sie diese Option aktivieren, wird das Spiel anstelle von Vollfarbüberlagerungen erweiterte Farbfilter verwenden.</string>
+	
+
+	<string name="combat_log_noentries">Noch keine Einträge.</string>
+	<string name="skill_category_offense">Angriff</string>
+	<string name="skill_category_defense">Verteidigung</string>
+	<string name="skill_category_criticals">Kritische</string>
+	<string name="skill_category_immunity">Immunität</string>
+	<string name="skill_category_utility">Werkzeug</string>
+	<string name="skill_category_speciality">Spezialisierung</string>
+	<string name="skill_category_proficiency">Kompetenz</string>
+
+	<string name="skill_sort_unlocked">Freigeschaltet</string>
+	
+	<string name="preferences_display_theme_title">Oberfläche</string>
+	<string name="preferences_display_theme">Oberflächendesign auswählen (Neustart notwendig)</string>
+	<string name="combat_taunt_monster">Du verhöhnst %1$s!</string>
+    <string name="storage_permissions_mandatory">Der fehlende Zugriff auf den Datenspeicher ist zwingend notwendig, um Spielstände zu laden und zu speichern. Andor\'s Trail wird daher geschlossen.</string>
+</resources>

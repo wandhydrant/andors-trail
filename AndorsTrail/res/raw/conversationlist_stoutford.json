@@ -92,7 +92,8 @@
                     {
                         "requireType":"questProgress",
                         "requireID":"halvor_surprise",
-                        "value":190
+                        "value":190,
+                        "negate":true
                     }
                 ]
             }
@@ -114,7 +115,7 @@
     },
     {
         "id":"soutford_gateguard_what_0",
-        "message":"This is Stoutford. Our small town was the resting place of choice for many merchants on their way between Fallhaven and the Blackwater moutain.",
+        "message":"This is Stoutford. Our small town was the resting place of choice for many merchants on their way between Fallhaven and the Blackwater mountain.",
         "replies":[
             {
                 "text":"Was?",
@@ -1515,7 +1516,7 @@
                         "requireType":"killedMonster",
                         "requireID":"erwyn",
                         "value":1,
-						"negate":true
+                        "negate":true
                     }
                 ]
             }

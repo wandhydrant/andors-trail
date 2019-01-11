@@ -3,7 +3,7 @@
 <resources><string name="worldmap_template">"<![CDATA[<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">
 <html xmlns=\"http://www.w3.org/1999/xhtml\">
 <head>
-	<meta http-equiv=\"Content-Type\" content=\"text/html; charset=iso-8859-1\" />
+	<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" />
 	<meta name=\"viewport\" content=\"initial-scale=1.0, minimum-scale=0.02, maximum-scale=5.0\" />
 	<title></title>
 	<style type=\"text/css\">
@@ -36,8 +36,8 @@ var player = document.getElementById(\"playerPosition\");
 var params = window.location.search.substring(1);
 if (params) {
 	var pos = params.split(\",\");
-	var x = parseInt(pos[0])-{{offsetx}};
-	var y = parseInt(pos[1])-{{offsety}};
+	var x = parseInt(pos[0])-({{offsetx}});
+	var y = parseInt(pos[1])-({{offsety}});
 	player.style.top = y + \"px\";
 	player.style.left = x + \"px\";
 } else {

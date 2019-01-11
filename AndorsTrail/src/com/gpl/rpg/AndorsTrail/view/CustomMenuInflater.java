@@ -190,10 +190,7 @@ public class CustomMenuInflater {
 		}
 
 		@Override
-		public void close() {
-			// TODO Auto-generated method stub
-			
-		}
+		public void close() {}
 
 		@Override
 		public MenuItem findItem(int id) {

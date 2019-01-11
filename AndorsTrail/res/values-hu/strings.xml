@@ -1,4 +1,4 @@
-<?xml version='1.0' encoding='UTF-8'?>
+<?xml version="1.0" encoding="utf-8"?>
 <resources><string name="menu_save_gamesaved">A játék elmentve a következő helyre: %1$d</string>
 	<string name="app_name">Andor nyomában</string>
 	<string name="app_description">Küldetésorientált fantasy RPG</string>
@@ -373,8 +373,8 @@
 	<string name="skill_prerequisite_other_skill">Ennek a képességének a fejlesztéséhez a következő képesség legalább %1$d. szintje szükséges: %2$s.</string>
 	<string name="skill_prerequisite_level">Ennek a képességének a fejlesztéséhez legalább %1$d. szintű tapasztalati szint szükséges.</string>
 	<string name="skill_prerequisite_stat">Ennek a képességének a fejlesztéséhez legalább %1$d. szintű %2$s szükséges (alap statisztikák).</string>
-	<string name="skill_number_of_increases_one">Választhatsz egy képességet a növeléséhez.</string>
-	<string name="skill_number_of_increases_several">Választhatsz %1$d képességet a növelésükhöz.</string>
+	<string name="skill_number_of_increases_one">Választhatsz egy képességet a fejlesztéshez.</string>
+	<string name="skill_number_of_increases_several">Választhatsz %1$d képességet a fejlesztésükhöz.</string>
 	<string name="levelup_adds_new_skillpoint">Ez a szint egy új elkölthető képességpontot is ad!</string>
 
 	<string name="loadsave_save_to_new_slot">Új játékmentési tárolóhely létrehozása</string>
@@ -616,4 +616,5 @@
 \nEzen képesség első szintjével a másik kézben lévő fegyver adottságának %2$d%%-a használható, és a támadási sebesség mindkét fegyver legmagasabb támadási sebessége plusz mindkét fegyver legalacsonyabb támadási sebességének %3$d%%-a.
 \n
 \nEzen képesség második szintjével a másik kézben lévő fegyver adottságának %4$d%%-a használható, és a támadási sebesség megegyezik a két felvett fegyver támadási sebességének legnagyobbikával.</string>
-	</resources>
+    <string name="storage_permissions_mandatory">A tárolóhoz való hozzáférés elengedhetetlen az Andor nyomában játék számára, hogy kezelje a mentett játékokat és a világtérképet. Az Andor nyomában bezárása.</string>
+</resources>
