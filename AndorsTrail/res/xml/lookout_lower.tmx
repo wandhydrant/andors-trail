@@ -201,7 +201,7 @@
  </layer>
  <layer name="Walkable" width="7" height="7">
   <data encoding="base64" compression="zlib">
-   eJzbKMbAsJEEDAKkyCEDXOLIctgAIXsAnikabw==
+   eJzbKMbAsJEEDAKkyCEDXOKkyGGzBwDGfxs2
   </data>
  </layer>
  <objectgroup name="Mapevents">
@@ -215,12 +215,6 @@
    <properties>
     <property name="map" value="waytolake12"/>
     <property name="place" value="tower_door"/>
-   </properties>
-  </object>
-  <object name="lookout_bed_0" type="script" x="64" y="128" width="32" height="64"/>
-  <object name="lookout_bed" type="script" x="32" y="160" width="32" height="32">
-   <properties>
-    <property name="when" value="always"/>
    </properties>
   </object>
  </objectgroup>
