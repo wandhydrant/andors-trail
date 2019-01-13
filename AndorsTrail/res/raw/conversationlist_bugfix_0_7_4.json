@@ -344,5 +344,83 @@
     {
         "id":"lookout_sign",
         "message":"The sign is old and worn, but you can make out the words \"Lake Laeroth watchtower\"."
+    },
+    {
+        "id":"lookout_bed_0",
+		"rewards": [
+			{
+				"rewardType": "alignmentSet",
+				"rewardID": "lookout_bed",
+				"value": 1
+			}
+		]
+	},
+    {
+        "id":"lookout_bed",
+		"rewards": [
+			{
+				"rewardType": "alignmentChange",
+				"rewardID": "lookout_bed",
+				"value": 1
+			}
+		],
+        "replies":[
+            {
+                "nextPhraseID":"X",
+                "requires":[
+                    {
+						"requireType": "factionScore",
+						"requireID": "lookout_bed",
+						"value": 16
+                    }
+                ]
+            },
+            {
+                "nextPhraseID":"lookout_bed_20",
+                "requires":[
+                    {
+						"requireType": "factionScore",
+						"requireID": "lookout_bed",
+						"value": 15
+                    }
+
+                ]
+            },
+            {
+                "nextPhraseID":"X",
+                "requires":[
+                    {
+						"requireType": "factionScore",
+						"requireID": "lookout_bed",
+						"value": 6
+                    }
+                ]
+            },
+            {
+                "nextPhraseID":"lookout_bed_10",
+                "requires":[
+                    {
+						"requireType": "factionScore",
+						"requireID": "lookout_bed",
+						"value": 5
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id":"lookout_bed_10",
+        "message":"You toss and turn, but sleep won't come."
+    },
+    {
+        "id":"lookout_bed_20",
+        "rewards":[
+            {
+                "rewardType":"actorCondition",
+                "rewardID":"stunned",
+                "value":7
+            }
+        ],
+        "message":"Now you have got a headache. You really should give up trying to sleep."
     }
 ]
