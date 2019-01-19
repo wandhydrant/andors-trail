@@ -3,7 +3,8 @@ package com.gpl.rpg.AndorsTrail.model.map;
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
 import java.io.IOException;
-import java.util.ArrayList;
+import java.util.List;
+import java.util.concurrent.CopyOnWriteArrayList;
 
 import com.gpl.rpg.AndorsTrail.context.WorldContext;
 import com.gpl.rpg.AndorsTrail.controller.Constants;
@@ -19,7 +20,7 @@ public final class MonsterSpawnArea {
 	private final Range spawnChance;
 	public final String areaID;
 	public final String[] monsterTypeIDs;
-	public final ArrayList<Monster> monsters = new ArrayList<Monster>();
+	public final List<Monster> monsters = new CopyOnWriteArrayList<Monster>();
 	public final boolean isUnique; // unique == non-respawnable
 	public final boolean ignoreAreas; //Can spawn on other game objects area.
 	private final String group;
