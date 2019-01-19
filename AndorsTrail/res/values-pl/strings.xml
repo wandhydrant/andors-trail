@@ -1,4 +1,4 @@
-<?xml version='1.0' encoding='UTF-8'?>
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
 	<string name="app_name">Andor\'s Trail</string>
 	<string name="app_description">Przygodowa gra fantasy RPG</string>
@@ -179,54 +179,7 @@ Niniejszy program rozpowszechniany jest z nadzieją, iż będzie on użyteczny -
  &lt;br /&gt; 
 W celu pobrania kodu źródłowego i opisu gry odwiedź stronę projektu: &lt;a href=https://github.com/Zukero/andors-trail/&gt;https://github.com/Zukero/andors-trail/&lt;/a&gt;&lt;br /&gt;
  "</string>
-	<string name="about_interface"><![CDATA[
-
-<div><b>Opcje Gry</b> uzyskasz, gdy wciśniesz klawisz menu.</div>
-
-<p>________________</p>
-<h1>Ikony interfejsu</h1>
-
-<div><b>Skrzynia</b><img alt="chest" src="chest.png" /></div>
-<p>Slot ekwpipunku [Przytrzymaj dłużej palec na slocie, aby przypisać mu przedmiot]</p>
-
-<div><b>Bohater</b><img alt="hero" src="char_hero.png" /></div>
-<p>Menu [Przegląd, Zadania, Umiejętności oraz Inwentarz *]</p>
-<p>* (Gdy jesteś w inwentarzu kliknij przedmiot, żeby otrzymać informacje lub przytrzymaj dłużej palec na przedmiocie aby uzyskać więcej opcji)</p>
-
-<div><b>Przeciwnik</b><img alt="monster" src="monster.png" /></div>
-<p>Informacja [Wyświetlana podczas walki]</p>
-
-
-
-<p>________________</p>
-<h1>Walka</h1>
-
-<p>Akcje wykonane podczas walki kosztują Punkty Akcji (PA)...</p>
-
-<div><b>Atak</b> - [3PA] *</div>
-<img alt="attacking" src="doubleattackexample.png" />
-<p>* (Ekwipunek oraz użycie przedmiotów może wpłynąć na ilość PA i(lub) koszt użycia)</p>
-
-<div><b>Użycie Przedmiotu</b> - [5PA]</div>
-<div><b>Ucieczka</b> - [6PA]</div>
-
-
-
-<p>________________</p>
-<h1>Zaawansowana Walka</h1>
-
-<div>Podczas walki przytrzymaj dłużej palec na polu sąsiadującym z Bohaterem...</div>
-
-<div><b>Aby uciec</b></div>
-<p>(Wybrana podświetlona ikona zamienia koszt ataku na koszt ruchu)</p>
-<img alt="flee" src="flee_example.png" />
-<p>[Tryb ucieczki aktywowany - Przytrzymaj dłużej palec na wrogu by powrócić do trybu walki]</p>
-
-<div><b>Aby zmienić cel</b></div>
-<p>(przełącz czerwone podświetlenie celu między poszczególnymi przeciwnikami)</p>
-<p>[Cel został zmieniony]</p>
-
-]]></string>
+	<string name="about_interface">&lt;div&gt;&lt;b&gt;Opcje Gry&lt;/b&gt; uzyskasz, gdy wciśniesz klawisz menu.&lt;/div&gt; &lt;p&gt;________________&lt;/p&gt; &lt;h1&gt;Ikony interfejsu&lt;/h1&gt; &lt;div&gt;&lt;b&gt;Skrzynia&lt;/b&gt;&lt;img alt=chest src=chest.png /&gt;&lt;/div&gt; &lt;p&gt;Slot ekwipunku [Przytrzymaj dłużej palec na slocie, aby przypisać mu przedmiot]&lt;/p&gt; &lt;div&gt;&lt;b&gt;Bohater&lt;/b&gt;&lt;img alt=hero src=char_hero.png /&gt;&lt;/div&gt; &lt;p&gt;Menu [Przegląd, Zadania, Umiejętności oraz Inwentarz *]&lt;/p&gt; &lt;p&gt;* (Gdy jesteś w inwentarzu kliknij przedmiot, żeby otrzymać informacje lub przytrzymaj dłużej palec na przedmiocie aby uzyskać więcej opcji)&lt;/p&gt; &lt;div&gt;&lt;b&gt;Przeciwnik&lt;/b&gt;&lt;img alt=monster src=monster.png /&gt;&lt;/div&gt; &lt;p&gt;Informacja [Wyświetlana podczas walki]&lt;/p&gt; &lt;p&gt;________________&lt;/p&gt; &lt;h1&gt;Walka&lt;/h1&gt; &lt;p&gt;Akcje wykonane podczas walki kosztują Punkty Akcji (PA)...&lt;/p&gt; &lt;div&gt;&lt;b&gt;Atak&lt;/b&gt; - [3PA] *&lt;/div&gt; &lt;img alt=attacking src=doubleattackexample.png /&gt; &lt;p&gt;* (Ekwipunek oraz użycie przedmiotów może wpłynąć na ilość PA i(lub) koszt użycia)&lt;/p&gt; &lt;div&gt;&lt;b&gt;Użycie Przedmiotu&lt;/b&gt; - [5PA]&lt;/div&gt; &lt;div&gt;&lt;b&gt;Ucieczka&lt;/b&gt; - [6PA]&lt;/div&gt; &lt;p&gt;________________&lt;/p&gt; &lt;h1&gt;Zaawansowana Walka&lt;/h1&gt; &lt;div&gt;Podczas walki przytrzymaj dłużej palec na polu sąsiadującym z Bohaterem...&lt;/div&gt; &lt;div&gt;&lt;b&gt;Aby uciec&lt;/b&gt;&lt;/div&gt; &lt;p&gt;(Wybrana podświetlona ikona zamienia koszt ataku na koszt ruchu)&lt;/p&gt; &lt;img alt=flee src=flee_example.png /&gt; &lt;p&gt;[Tryb ucieczki aktywowany - Przytrzymaj dłużej palec na wrogu by powrócić do trybu walki]&lt;/p&gt; &lt;div&gt;&lt;b&gt;Aby zmienić cel&lt;/b&gt;&lt;/div&gt; &lt;p&gt;(przełącz czerwone podświetlenie celu między poszczególnymi przeciwnikami)&lt;/p&gt; &lt;p&gt;[Cel został zmieniony]&lt;/p&gt;</string>
 
 	<string name="dialog_newversion_title">Witaj</string>
 	<string name="dialog_newversion_message">"Dziękujemy za instalację Andor\'s Trail!
