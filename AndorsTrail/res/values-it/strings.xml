@@ -1,22 +1,26 @@
-<?xml version='1.0' encoding='UTF-8'?>
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
 	<string name="app_name">Andor\'s Trail</string>
 
-	<string name="exit_to_menu">Menu</string>
+	<string name="exit_to_menu">Esci dal menu</string>
 	<string name="menu_settings">Opzioni</string>
 	<string name="menu_save">Salva</string>
 	<string name="menu_save_gamesaved">Partita salvata sullo slot %1$d</string>
-	<string name="menu_save_failed">Impossibile salvare! La sceda SD è caricata e scrivibile?</string>
+	<string name="menu_save_failed">Impossibile salvare! La scheda SD è montata e scrivibile\?</string>
 
-	<string name="loadsave_title_save">Salva gioco</string>
+	<string name="loadsave_title_save">Salva il gioco</string>
 	<string name="loadsave_title_load">Carica salvataggio</string>
 	<string name="loadsave_selectslot">Scegli Slot</string>
 	<string name="savegame_currenthero_displayinfo">Livello %1$d, %2$d esp, %3$d oro</string>
 
-	<string name="dialog_loading_message">Carica risorse…</string>
+	<string name="dialog_loading_message">Caricamento risorse…</string>
 	<string name="dialog_loading_failed_title">Caricamento fallito</string>
-	<string name="dialog_loading_failed_message">Andor\'s Trail non ha caricato il salvataggio.\n\n:(\n\nIl file può essere incompleto o danneggiato.</string>
-	<string name="dialog_loading_failed_incorrectversion">Andor\'s Trail non ha caricato il salvataggio. Il salvataggio è stato creato con una versione precedente di quella installata.</string>
+	<string name="dialog_loading_failed_message">Andor\'s Trail non ha caricato il salvataggio.
+\n
+\n:(
+\n
+\nIl file può essere incompleto o danneggiato.</string>
+	<string name="dialog_loading_failed_incorrectversion">Andor\'s Trail non ha caricato il salvataggio. Il salvataggio è stato creato con una versione più recente rispetto a quella installata.</string>
 
 	<string name="dialog_close">Chiudi</string>
 
@@ -42,11 +46,11 @@
 
 	<string name="combat_attack">Attacco (%1$d AP)</string>
 	<string name="combat_move">Movimento (%1$d AP)</string>
-	<string name="combat_use">Usare oggetti</string>
+	<string name="combat_use">Usa oggetto</string>
 	<string name="combat_endturn">Fine turno</string>
 	<!-- <string name="combat_endcombat">End combat</string>-->
 	<string name="combat_flee">Fuggi</string>
-	<string name="combat_begin_flee">Ora puoi fuggire dal combattimento cliccando nella direzione in cui vuoi fuggire.</string>
+	<string name="combat_begin_flee">Ora puoi fuggire dal combattimento selezionando la direzione in cui vuoi fuggire.</string>
 	<string name="combat_flee_failed">La tua fuga è fallita!</string>
 	<string name="combat_status_ap">AP: %1$d</string>
 	<string name="combat_monsterhealth">HP:</string>
@@ -59,12 +63,12 @@
 	<string name="combat_result_herohit">Hai colpito %1$s per %2$d hp!</string>
 	<string name="combat_result_herohitcritical">Sferri un colpo critico %1$s per %2$d hp!</string>
 	<string name="combat_result_herokillsmonster">%1$s muore!</string>
-	<string name="combat_not_enough_ap">Non hai abbastanza AP attendi il prossimo turno.</string>
+	<string name="combat_not_enough_ap">Non hai abbastanza AP, attendi il prossimo turno.</string>
 	<string name="combat_hero_dies">Cadi svenuto ma fortunatamente ti risvegli vivo. Hai perso %1$d esperienza.</string>
 
 	<string name="inventory_info">Info</string>
-	<string name="inventory_equip">Oggetti in uso</string>
-	<string name="inventory_unequip">Oggetti non usati</string>
+	<string name="inventory_equip">Utilizza</string>
+	<string name="inventory_unequip">Smetti di utilizzare</string>
 	<string name="inventory_use">Usa</string>
 	<string name="inventory_drop">Scarica</string>
 	<string name="inventory_item_used">Hai usato %1$s.</string>
@@ -135,7 +139,7 @@
 	<string name="shop_sellitem">Vendi (%1$d oro)</string>
 	<string name="shop_yourgold">Tuo Oro: %1$d</string>
 	<string name="shop_item_bought">%1$s Comprato.</string>
-	<string name="shop_item_sold">%1$s Venduo.</string>
+	<string name="shop_item_sold">%1$s Venduto/a.</string>
 
 	<string name="levelup_title">Nuovo Livello</string>
 	<string name="levelup_description">Benvenuto nel livello %1$d!</string>
@@ -156,37 +160,18 @@
 	<string name="about_button1">Aiuto</string>
 	<string name="about_button2">Autori</string>
 	<string name="about_button3">Licenza</string>
-	<string name="about_contents1">
-			Benvenuto in Andor\'s Trail, un gioco RPG per Android.&lt;br /&gt;
-			&lt;br /&gt;
-			&lt;a href="http://andorstrail.com/"&gt;Forum del gioco su andorstrail.com per domande e discussioni riguardo il gameplay.&lt;/a&gt;&lt;br /&gt;
-			&lt;br /&gt;
-			&lt;a href="http://andorstrail.com/wiki"&gt;Game wiki for info about the Andor\'s Trail world, among other things.&lt;/a&gt;&lt;br /&gt;
-			&lt;br /&gt;
-			&lt;a href="http://code.google.com/p/andors-trail/"&gt;Homepage del progetto su code.google.com&lt;/a&gt;&lt;br /&gt;
-			&lt;br /&gt;
-			Visita il forum per le discussioni con gli altri giocatori.&lt;br /&gt;
-	</string>
-	<string name="about_contents3">
-			Questo programma è un software libero,ed è possibile ridistribuirlo e / o modificarlo secondo i termini della GNU General Public License come pubblicata dalla Free Software Foundation, nella versione 2 della licenza o (a scelta) una versione successiva.&lt;br /&gt;
-			&lt;br /&gt;
-			Questo programma è distribuito nella speranza che possa essere utile, ma SENZA ALCUNA GARANZIA, nemmeno la garanzia implicita di COMMERCIABILITÀ o IDONEITÀ PER UN PARTICOLARE SCOPO. Vedere la GNU General Public License per ulteriori dettagli.&lt;br /&gt;
-			&lt;br /&gt;
-			Si dovrebbe aver ricevuto una copia della GNU General Public License insieme a questo programma, se no, vedere &lt;a href="http://www.gnu.org/licenses"&gt;http://www.gnu.org/licenses&lt;/a&gt;&lt;br /&gt;
-			&lt;br /&gt;
-			Per il codice sorgente e le richieste di funzionalità, visita la pagina del progetto su &lt;a href="http://code.google.com/p/andors-trail/"&gt;http://code.google.com/p/andors-trail/&lt;/a&gt;&lt;br /&gt;
-	</string>
+	<string name="about_contents1">Benvenuto in Andor\'s Trail, un gioco RPG per Android.&lt;br /&gt; &lt;br /&gt; &lt;a href=http://andorstrail.com/&gt;Forum del gioco su andorstrail.com per domande e discussioni riguardo il gameplay.&lt;/a&gt;&lt;br /&gt; &lt;br /&gt; &lt;a href=http://andorstrail.com/wiki&gt;wiki per informazioni sul mondo di Andor\'s Trail e altre cose utili da sapere.&lt;/a&gt;&lt;br /&gt; &lt;br /&gt; &lt;a href=http://code.google.com/p/andors-trail/&gt;Homepage del progetto su code.google.com&lt;/a&gt;&lt;br /&gt; &lt;br /&gt; Visita il forum per le discussioni con gli altri giocatori.&lt;br /&gt;</string>
+	<string name="about_contents3">Questo programma è un software libero, ed è possibile ridistribuirlo e/o modificarlo secondo i termini della GNU General Public License come pubblicata dalla Free Software Foundation, nella versione 2 della licenza o (a scelta) una versione successiva.&lt;br /&gt; &lt;br /&gt; Questo programma è distribuito nella speranza che possa essere utile, ma SENZA ALCUNA GARANZIA, nemmeno la garanzia implicita di COMMERCIABILITÀ o IDONEITÀ PER UN PARTICOLARE SCOPO. Vedere la GNU General Public License per ulteriori dettagli.&lt;br /&gt; &lt;br /&gt; Si dovrebbe aver ricevuto una copia della GNU General Public License insieme a questo programma, se no, vedere &lt;a href=http://www.gnu.org/licenses&gt;http://www.gnu.org/licenses&lt;/a&gt;&lt;br /&gt; &lt;br /&gt; Per il codice sorgente e le richieste di funzionalità, visita la pagina del progetto su &lt;a href=http://code.google.com/p/andors-trail/&gt;http://code.google.com/p/andors-trail/&lt;/a&gt;&lt;br /&gt;</string>
 
 	<string name="dialog_newversion_title">Benvenuto</string>
-	<string name="dialog_newversion_message">
-			Grazie per aver scaricato Andor\'s Trail!\n\n
-			Si prega di notare che questa versione di Andor\'s Trail è un WORK IN PROGRESS, il che significa che tutte le mappe non sono ancora complete.\n
-			Siete comunque liberi di esplorare villaggio Crossglen quanto vi pare.\n
-			Poiché questo è un work in progress, può contenere bug e un gameplay non correttamente bilanciato. Il presente comunicato è da intendersi come una caccia al bug prima di iniziare ad aggiungere altri contenuti.\n
-			Si prega di visitare la pagina del progetto per ottenere maggiori informazioni o per contribuire al progetto (vedi "about").\n
-			\n
-			Grazie per tutti i Feedback!
-	</string>
+	<string name="dialog_newversion_message">Grazie per aver scaricato Andor\'s Trail!
+\n
+\n Si prega di notare che questa versione di Andor\'s Trail è un \"LAVORO IN CORSO\", il che significa che tutte le mappe non sono ancora complete.
+\n Siete comunque liberi di esplorare il villaggio Crossglen quanto vi pare.
+\n Poiché questo è un programma on ancora terminato, può contenere errori e modalità di gioco non correttamente bilanciato. Il presente comunicato è da intendersi come una caccia agli \"errori del codice\" prima di iniziare ad aggiungere altri contenuti.
+\n Si prega di visitare la pagina del progetto per ottenere maggiori informazioni o per contribuire al progetto (vedi about).
+\n 
+\n Grazie per tutti i Feedback!</string>
 
 	<string name="questlog_includecompleted_prompt">Seleziona le missioni da mostrare</string>
 	<string name="questlog_includecompleted_hidecompleted">Nascondi le missioni complete</string>
@@ -208,7 +193,7 @@
 	<string name="preferences_dialog_monsterloot">Scegli se mostrare il bottino conquistato dopo un combattimento (oro, esperienza, oggetti).</string>
 	<string name="preferences_combat_category">Combattimento</string>
 	<string name="preferences_combat_speed_title">Velocità di combattimento</string>
-	<string name="preferences_combat_speed">Determina quanto la velocità di combattimento dei nemici.</string>
+	<string name="preferences_combat_speed">Determina la velocità di attacco dei nemici.</string>
 
 	<string name="preferences_display_loot_dialog">Mostra il resoconto del bottino</string>
 	<string name="preferences_display_loot_toast">Mostra notifica corta</string>
@@ -222,7 +207,7 @@
 	<string name="preferences_movementmethod_title">Tipo di movimento</string>
 	<string name="preferences_movementmethod">Tipo di movimento e manovre sugli ostacoli.</string>
 	<string name="preferences_movementmethods_straight">Diritto (originale)</string>
-	<string name="preferences_movementmethods_avoid">Direzionale</string>
+	<string name="preferences_movementmethods_avoid">Evita ostacoli</string>
 
 
 	<!-- =========================================== -->
@@ -236,7 +221,7 @@
 	<string name="iteminfo_effect_works_on_source">Sulla sorgente</string>
 	<string name="iteminfo_effect_works_on_target">Sul bersaglio</string>
 	<string name="iteminfo_effect_works_when_hitting_target">Quando colpisci il bersaglio</string>
-	<string name="iteminfo_effect_works_when_killing_target">Ogni uccisione</string>
+	<string name="iteminfo_effect_works_when_killing_target">Ad ogni uccisione</string>
 	<string name="iteminfo_effect_works_when_used">Quando usata</string>
 	<string name="iteminfo_effect_works_when_equipped">Quando equipaggiata</string>
 
@@ -330,7 +315,7 @@
 	<string name="skill_shortdescription_more_criticals">Abilità nei colpi Critici incrementata</string>
 	<string name="skill_shortdescription_better_criticals">Danno critico incrementato</string>
 	<string name="skill_shortdescription_speed">Punti di massima azione incrementati</string>
-	<string name="skill_shortdescription_coinfinder">Probabilità più alta di trovare oro</string>
+	<string name="skill_shortdescription_coinfinder">Maggiore probabilità di trovare oro</string>
 	<string name="skill_shortdescription_more_exp">Più esperienza dall\'uccisione di mostri</string>
 	<string name="skill_shortdescription_cleave">Ripristina Punti Azione ad ogni uccisione</string>
 	<string name="skill_shortdescription_eater">Ripristina Punti Vita ad ogni uccisione</string>
@@ -338,7 +323,7 @@
 	<string name="skill_shortdescription_evasion">Probabilità di fuga incrementata</string>
 	<string name="skill_shortdescription_regeneration">Guadagni Vita ogni Turno</string>
 	<string name="skill_shortdescription_lower_exploss">Diminuisce il numero di esperienza persa quando si è uccisi</string>
-	<string name="skill_shortdescription_magicfinder">Probabilità di trovare Oggetti Magici incrementata</string>
+	<string name="skill_shortdescription_magicfinder">Maggiore probabilità di trovare Oggetti Magici</string>
 	<string name="skill_shortdescription_resistance_mental">Resistenza contro Condizioni Mentali</string>
 	<string name="skill_shortdescription_resistance_physical_capacity">Resistenza contro Condizioni di capacità fisica</string>
 	<string name="skill_shortdescription_resistance_blood_disorder">Resistenza contro Malattie del Sangue</string>
@@ -352,7 +337,7 @@
 	<string name="skill_longdescription_more_criticals">Incrementa qualsiasi abilità di Colpo Critico esistente data dall\'equipaggiamento del %1$d %% per ogni livello di abilità.</string>
 	<string name="skill_longdescription_better_criticals">Incrementa qualsiasi moltiplicatore di Colpo Critico esistente dati dall\'equipaggiamento del %1$d %% per ogni livello di abilità.</string>
 	<string name="skill_longdescription_speed">Incrementa il massimo di Punti Azione (AP) del %1$d per ogni livello di abilità.</string>
-	<string name="skill_longdescription_coinfinder">Incrementa la possibilità di trovare oro nei drop dei mostri del %1$d %%, e incrementa la quantità di oro nei drop del %2$d %% per ogni livello di abilità (fino alla massima quantità che il mostro rilascia).</string>
+	<string name="skill_longdescription_coinfinder">Incrementa la possibilità di trovare oro nei bottini dai mostri del %1$d %%, e incrementa la quantità di oro nei bottini del %2$d %% per ogni livello di abilità (fino alla massima quantità che il mostro rilascia).</string>
 	<string name="skill_longdescription_more_exp">Incrementa la quantità di esperienza data sconfiggendo mostri del %1$d %% per ogni livello di abilità.</string>
 	<string name="skill_longdescription_cleave">Dà +%1$d Punti Azione (AP) per ogni uccisione ogni livello di abilità.</string>
 	<string name="skill_longdescription_eater">Dà +%1$d Punti Vita (HP) per ogni uccisione ogni livello di abilità.</string>
@@ -368,15 +353,15 @@
 	<string name="skillinfo_action_levelup">Aumento di Livello</string>
 	<string name="skill_current_level">Livello attuale: %1$d</string>
 	<string name="skill_current_level_with_maximum">Livello attuale: %1$d / %2$d</string>
-	<string name="skill_prerequisite_other_skill">Per aumentare di livello questa abilità, hai bisogno almeno il livello %1$d del %2$s dell\'abilità.</string>
+	<string name="skill_prerequisite_other_skill">Per aumentare di livello questa abilità, hai bisogno almeno il livello %1$d dell\'abilità %2$s.</string>
 	<string name="skill_prerequisite_level">Per aumentare di livello questa abilità, hai bisogno di un livello di esperienza almeno di %1$d.</string>
 	<string name="skill_prerequisite_stat">Per aumentare di livello questa abilità, hai bisogno almeno %1$d %2$s (Statistiche di base).</string>
-	<string name="skill_number_of_increases_one">Puoi scegliere un\' abilità da migliorare.</string>
+	<string name="skill_number_of_increases_one">Puoi scegliere un\'abilità da migliorare.</string>
 	<string name="skill_number_of_increases_several">Puoi scegliere %1$d abilità da migliorare.</string>
 	<string name="levelup_adds_new_skillpoint">Questo livello ti dà anche un nuovo punto abilità da spendere!</string>
 
 	<string name="loadsave_save_to_new_slot">Crea un nuovo slot di salvataggio</string>
-	<string name="loadsave_save_overwrite_confirmation_title">Sovrascrive i dati di salvataggio?</string>
+	<string name="loadsave_save_overwrite_confirmation_title">Sovrascrivere i dati di salvataggio\?</string>
 	<string name="loadsave_save_overwrite_confirmation">Questo salvataggio contiene un nome del giocatore diverso (%1$s) rispetto al tuo nome attuale (%2$s). Sei sicuro di voler sovrascrivere questo slavataggio?</string>
 
 	<string name="iteminfo_displaytypes_ordinary">Comune</string>
@@ -393,10 +378,10 @@
 
 	<string name="traitsinfo_base_max_hp">HP Massimi:</string>
 	<string name="traitsinfo_base_max_ap">AP Massimi:</string>
-	<string name="menu_save_saving_not_allowed_in_combat">Non puoi salvare il gioco durante un combattimento.</string>
+	<string name="menu_save_saving_not_allowed_in_combat">Non si può salvare il gioco durante un combattimento.</string>
 
 	<string name="preferences_optimized_drawing_title">Disegno Ottimizzato</string>
-	<string name="preferences_optimized_drawing">Disabilita se vedi bug grafici. Abilitando questa opzione farà sì che il gioco ritracci solo le parti cambiate sullo schermo ogni frame.</string>
+	<string name="preferences_optimized_drawing">Disabilita se vedi bug grafici. Abilitando questa opzione farà sì che il gioco ridisegni solo le parti cambiate sullo schermo ogni frame.</string>
 
 	<string name="skill_title_shadow_bless">Benedizione Oscura dell\'Ombra</string>
 	<string name="skill_shortdescription_shadow_bless">Resistenza contro ogni tipo di condizione</string>
@@ -409,18 +394,18 @@
 
 	<string name="skill_title_crit1">Emorragia Interna</string>
 	<string name="skill_shortdescription_crit1">Possibilità di Emorragia Interna</string>
-	<string name="skill_longdescription_crit1">Per ogni Colpo Critico a segno, c\'è un possibilità del %1$d %% che il colpo causi un\' emorragia interna nel bersaglio, causando effettivamente la condizione di \"Emorragia Interna\" nel bersaglio. Emorragia Interna diminuisce drasticamente le abilità offensive, facendo sì che il bersaglio sia meno abile nel mettere a segno gli attacchi.</string>
+	<string name="skill_longdescription_crit1">Per ogni Colpo Critico a segno, c\'è un possibilità del %1$d %% che il colpo causi un\'emorragia interna nel bersaglio, causando effettivamente la condizione di \"Emorragia Interna\" nel bersaglio. Emorragia Interna diminuisce drasticamente le abilità offensive, facendo sì che il bersaglio sia meno abile nel mettere a segno gli attacchi.</string>
 	<string name="skill_title_crit2">Frattura</string>
 	<string name="skill_shortdescription_crit2">Possibilità di frattura dell\'osso</string>
 	<string name="inventory_unassign">Dis-assegna Slot Rapido</string>
 
 	<string name="skill_longdescription_crit2">Per ogni Colpo Critico a segno, c\'è un possibilità del %1$d %% che il colpo causi una frattura in alcune ossa del bersaglio, causando effettivamente la condizione di \"Frattura\" nel bersaglio. Questo diminuisce drasticamente le abilità difensive del bersaglio, facendo sì che il bersaglio sia meno abile nel difendersi da attacchi successivi.</string>
 	<string name="skill_title_rejuvenation">Ringiovanimento</string>
-	<string name="skill_shortdescription_rejuvenation">Possibilità di rimozione di condizioni</string>
+	<string name="skill_shortdescription_rejuvenation">Possibilità di rimozione di effetti</string>
 	<string name="skill_longdescription_rejuvenation">Ogni Turno (6 secondi), c\'è una possibilità del %1$d %% che una delle condizioni negative attive diminuisca di un grado. Questo si applica a tutti i tipi di condizioni temporanee che affliggono il corpo; Condizioni Mentali come Confusione, Condizioni di Capacità Fisica come Fatica e anche Malattie del Sangue come Avvelenamento.</string>
 	<string name="skill_title_taunt">Scherno</string>
 	<string name="skill_shortdescription_taunt">L\'attaccante perde AP quando il colpo non va a segno</string>
-	<string name="skill_longdescription_taunt">Quando un attacante compie un attacco che fallisce, c\'è una possibilità del %1$d %% che l\'attaccante perda %2$d Punti Azione (AP). Questo si applica a tutti i tipi di Attacchi Fisici contro di te.</string>
+	<string name="skill_longdescription_taunt">Quando un attaccante compie un attacco che fallisce, c\'è una possibilità del %1$d %% che l\'attaccante perda %2$d Punti Azione (AP). Questo si applica a tutti i tipi di Attacchi Fisici contro di te.</string>
 	<string name="skill_title_concussion">Trauma</string>
 	<string name="skill_shortdescription_concussion">Possibilità di Trauma</string>
 	<string name="skill_longdescription_concussion">Quando compi un attacco contro un bersaglio la cui Possibilità di Difesa (BC) è almeno %1$d più bassa rispetto alla tua Possibilità di Attacco (AC), c\'è una possibilità del %2$d %% che il colpo causi un Trauma nel bersaglio. Trauma diminuisce drasticamente le abilità offensive del bersaglio, facendo sì che il bersaglio sia meno abile nel mettere a segno un attacco.</string>
@@ -471,21 +456,21 @@
 
 	<string name="heroinfo_reequip_cost">Costo di Ri-equipaggiamento (AP):</string>
 	<string name="heroinfo_useitem_cost">Costo d\'uso di un oggetto (AP):</string>
-	<string name="combat_result_monstermoved">%1$s mosse.</string>
+	<string name="combat_result_monstermoved">%1$s si muove.</string>
 	<string name="combat_log_title">Registro di Combattimento</string>
 	<string name="conversation_reward_quest_finished">[Missione Completata: \"%1$s\"]</string>
 	<string name="conversation_reward_quest_updated">[Missione Aggiornata: \"%1$s\"]</string>
 
-	<string name="skill_title_weapon_prof_dagger">Competenza col pugnale</string>
-	<string name="skill_title_weapon_prof_1hsword">Competenza con la spada a una mano</string>
-	<string name="skill_title_weapon_prof_2hsword">Competenza con la spada a due mani</string>
-	<string name="skill_title_weapon_prof_axe">Competenza con l\'ascia</string>
-	<string name="skill_title_weapon_prof_blunt">Competenza con armi a forma di mazza</string>
-	<string name="skill_title_weapon_prof_unarmed">Combattimento senza armi</string>
-	<string name="skill_title_armor_prof_shield">Competenza con lo scudo</string>
+	<string name="skill_title_weapon_prof_dagger">Abilità col pugnale</string>
+	<string name="skill_title_weapon_prof_1hsword">Abilità con la spada a una mano</string>
+	<string name="skill_title_weapon_prof_2hsword">Abilità con la spada a due mani</string>
+	<string name="skill_title_weapon_prof_axe">Abilità con l\'ascia</string>
+	<string name="skill_title_weapon_prof_blunt">Abilità con armi a forma di mazza</string>
+	<string name="skill_title_weapon_prof_unarmed">Combattimento a mani nude</string>
+	<string name="skill_title_armor_prof_shield">Abilità con lo scudo</string>
 	<string name="skill_title_armor_prof_unarmored">Combattimento senza armatura</string>
-	<string name="skill_title_armor_prof_light">Competenza con l\'armatura leggera</string>
-	<string name="skill_title_armor_prof_heavy">Competenza con l\'armatura pesante</string>
+	<string name="skill_title_armor_prof_light">Abilità con l\'armatura leggera</string>
+	<string name="skill_title_armor_prof_heavy">Abilità con l\'armatura pesante</string>
 	<string name="skill_title_fightstyle_dualwield">Stile di Combattimento: Doppia Impugnatura</string>
 	<string name="skill_title_fightstyle_2hand">Stile di Combattimento: Arma a due mani</string>
 	<string name="skill_title_fightstyle_weapon_shield">Stile di Combattimento: Arma e Scudo</string>
@@ -498,12 +483,12 @@
 	<string name="skill_shortdescription_weapon_prof_2hsword">Migliore nel combattere con spade a due mani</string>
 	<string name="skill_shortdescription_weapon_prof_axe">Migliore nel combattere con asce</string>
 	<string name="skill_shortdescription_weapon_prof_blunt">Migliore nel combattere con armi a forma di mazza</string>
-	<string name="skill_shortdescription_weapon_prof_unarmed">Migliore nel combattere senza armi</string>
+	<string name="skill_shortdescription_weapon_prof_unarmed">Migliore nel combattere a mani nude</string>
 	<string name="skill_shortdescription_armor_prof_shield">Migliore nell\'usare gli scudi</string>
 	<string name="skill_shortdescription_armor_prof_unarmored">Migliore nel combattere senza armatura</string>
 	<string name="skill_shortdescription_armor_prof_light">Migliore nell\'usare armature leggere</string>
 	<string name="skill_shortdescription_armor_prof_heavy">Migliore nell\'usare armature pesanti</string>
-	<string name="skill_shortdescription_fightstyle_dualwield">Impugni due armi allo stesso tempo</string>
+	<string name="skill_shortdescription_fightstyle_dualwield">Impugnare due armi contemporaneamente</string>
 	<string name="skill_shortdescription_fightstyle_2hand">Migliore nell\'usare armi che richiedono entrambe le mani</string>
 	<string name="skill_shortdescription_fightstyle_weapon_shield">Migliore nel combattere con arma e scudo</string>
 	<string name="skill_shortdescription_specialization_dualwield">Esperto della Doppia Impugnatura</string>
@@ -515,12 +500,12 @@
 	<string name="skill_longdescription_weapon_prof_2hsword">Per ogni livello di abilità, incrementa la possibilità d\'Attacco di Spade a due mani del %1$d %% della possibilità d\'Attacco di base dell\'oggetto, incrementa la possibilità di Difesa del %2$d %% della possibilità di Difesa di base dell\'oggetto e incrementa l\'abilità di Colpo Critico del %3$d %% dell\'abilità di Colpo Critico di base dell\'oggetto.</string>
 	<string name="skill_longdescription_weapon_prof_axe">Per ogni livello di abilità, incrementa la possibilità d\'Attacco di Asce e Asce Grandi del %1$d %% della possibilità d\'Attacco di base dell\'oggetto, incrementa la possibilità di Difesa del %2$d %% della possibilità di Difesa di base dell\'oggetto e incrementa l\'abilità di Colpo Critico del %3$d %% dell\'abilità di Colpo Critico di base dell\'oggetto.</string>
 	<string name="skill_longdescription_weapon_prof_blunt">Per ogni livello di abilità, incrementa la possibilità d\'Attacco di Armi a forma di mazza del %1$d %% della possibilità d\'Attacco di base dell\'oggetto, incrementa la possibilità di Difesa del %2$d %% della possibilità di Difesa di base dell\'oggetto e incrementa l\'abilità di Colpo Critico del %3$d %% dell\'abilità di Colpo Critico di base dell\'oggetto.</string>
-	<string name="preferences_display_loot_dialog_on_items_or_toast">Finestra di dialogo per gli oggetti, notif. in caso contrario</string>
+	<string name="preferences_display_loot_dialog_on_items_or_toast">Finestra di dialogo per gli oggetti, notifica in caso contrario</string>
 	<string name="skill_longdescription_weapon_prof_unarmed">"Quando combatti senza un\'arma e uno scudo, guadagni %1$d di possibilità di Attacco, %2$d di Danno potenziale  e %3$d di possibilità di Difesa per il livello di abilità."</string>
 	<string name="skill_longdescription_armor_prof_shield">Incrementa la resistenza al Danno di %1$d per livello di abilità mentre hai equipaggiato uno scudo.</string>
 	<string name="skill_longdescription_armor_prof_unarmored">Quando combatti senza una parte di armatura equipaggiata, guadagni %1$d di possibilità di Difesa per il livello di abilità. Gli oggetti di stoffa non sono considerati come armatura.</string>
 	<string name="skill_longdescription_armor_prof_light">Per ogni livello di abilità, incrementa la possibilità di Difesa di ogni parte di Armatura leggera indossata del %1$d %% della loro possibilità di Difesa originale. Armature leggere includono pelle, metallo leggero e armature nascoste.</string>
-	<string name="skill_longdescription_armor_prof_heavy">Per ogni livello di abilità, aumenta la probabilità di Difesa di ogni parte di Armatura pesante indossato del %1$d %% della loro possibilità di Difesa originale. Parti di armatura pesante hanno le loro penalità di movimento ridotte del %2$d %% per ogni livello di abilità e loro penalità di velocità d\'Attacco ridotte del %3$d %% per ogni livello di Abilità. Armature pesanti inludono armature di metallo, di cotta di maglia e di piastre.</string>
+	<string name="skill_longdescription_armor_prof_heavy">Per ogni livello di abilità, aumenta la probabilità di Difesa di ogni parte di Armatura pesante indossato del %1$d %% della loro possibilità di Difesa originale. Parti di armatura pesante hanno le loro penalità di movimento ridotte del %2$d %% per ogni livello di abilità e loro penalità di velocità d\'Attacco ridotte del %3$d %% per ogni livello di Abilità. Armature pesanti includono armature di metallo, di cotta di maglia e di piastre.</string>
 	<string name="skill_longdescription_fightstyle_dualwield">Dà benefici quando combatti con due armi allo stesso tempo, una nella mano principale e l\'altra nella mano secondaria.
 \n
 \nSenza questa abilità, sarà usato solo il %1$d %% delle qualità di un\'arma equipaggiata nella mano secondaria. Questo include possibilità di Attacco, abilità di Colpo Critico, Danno potenziale e possibilità di Difesa. Senza questa abilità, la velocità di Attacco (costo di AP) nel compiere un attacco è la somma della velocità di Attacco dell\'arma principale e quella dell\'arma usata con la mano secondaria.
@@ -545,7 +530,7 @@
 	<string name="preferences_quickslots_placements_vertical_bottom_right">In basso a destra, lungo il bordo destro</string>
 	<string name="preferences_ui_show_quickslots_when_toolbox_is_visible_title">Mostra gli Slot Rapidi quando il toolbox è aperto</string>
 	<string name="preferences_ui_show_quickslots_when_toolbox_is_visible">Fa sì che i tasti degli Slot Rapidi possano essere mostrati non appena il toolbox è aperto</string>
-	<string name="startscreen_incompatible_savegames">Qesta è una versione di Andor\'s Trail in sviluppo. Salvataggi ottenuti con questa versione sono incompatibili con la versione rilasciata.</string>
+	<string name="startscreen_incompatible_savegames">Questa è una versione di Andor\'s Trail in sviluppo. Salvataggi ottenuti con questa versione sono incompatibili con la versione rilasciata.</string>
 	<string name="startscreen_non_release_version">Questa è una versione pre-rilasciata di Andor\'s Trail. Salvataggi ottenuti con questa versione potrebbero non essere compatibili con la versione rilasciata.</string>
 	<string name="heroinfo_gamestats">Statistiche di gioco</string>
 	<string name="heroinfo_gamestats_quests">Missioni Completate</string>
@@ -570,7 +555,7 @@
 	<string name="dialog_monsterencounter_conditions">Condizioni</string>
 
 	<string name="heroinfo_skill_categories">Categoria</string>
-	<string name="heroinfo_skill_sort">ordinamento</string>
+	<string name="heroinfo_skill_sort">Ordinamento</string>
 	<string name="heroinfo_inventory_categories">Categoria</string>
 	<string name="heroinfo_inventory_sort">Ordinato per</string>
 	<string name="heroinfo_healthpoints">Punti Salute (HP):</string>
@@ -634,9 +619,13 @@
 	<string name="preferences_display_theme_title">Tema</string>
 	<string name="preferences_display_theme">Scegli il tema per l\'Interfaccia Utente (richiede riavvio)</string>
 	<string name="preferences_display_theme_blue">Cobalto</string>
-	<string name="preferences_display_theme_green">Malachite.</string>
+	<string name="preferences_display_theme_green">Malachite</string>
 	<string name="preferences_display_theme_charcoal">Ossidiana</string>
-	<string name="change_theme_requires_restart">Cambiare il tema dell\'Interfaccia Utente ricihede il riavvio. Andor\'s Trail è stato chiuso.</string>
+	<string name="change_theme_requires_restart">Cambiare il tema dell\'Interfaccia Utente richiede il riavvio. Andor\'s Trail è stato chiuso.</string>
 	
 	
-</resources>
+<string name="preferences_high_quality_filters_title">Filtri di alta qualità</string>
+	<string name="preferences_high_quality_filters">Disabilitare questa opzione se si verificano problemi di prestazioni su mappe filtrate (ad esempio, grotte scure). L\'attivazione di questa opzione farà sì che il gioco utilizzi filtri di colore avanzati, invece di sovrapposizioni di colore solido.</string>
+	
+
+	</resources>

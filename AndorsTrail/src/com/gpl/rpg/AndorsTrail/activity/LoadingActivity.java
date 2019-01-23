@@ -29,6 +29,8 @@ public final class LoadingActivity extends Activity implements OnResourcesLoaded
 	private CloudsAnimatorView clouds_back, clouds_mid, clouds_front;
 	boolean loaded = false;
 
+	private Object semaphore = new Object();
+	
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		setTheme(ThemeHelper.getBaseTheme());
@@ -73,7 +75,7 @@ public final class LoadingActivity extends Activity implements OnResourcesLoaded
 			if (progressDialog == null) {
 				progressDialog = CustomDialogFactory.createDialog(this, getResources().getString(R.string.dialog_loading_message), 
 						getResources().getDrawable(R.drawable.loading_anim), null, null, false, false);
-				synchronized (progressDialog) {
+				synchronized (semaphore) {
 					if (!loaded) {
 						progressDialog.setOwnerActivity(this);
 						CustomDialogFactory.show(progressDialog);
@@ -136,13 +138,13 @@ public final class LoadingActivity extends Activity implements OnResourcesLoaded
 		setup.startCharacterSetup(this);
 	}
 
+	
+	
 	@Override
 	public void onSceneLoaded() {
-		if (progressDialog != null) {
-			synchronized (progressDialog) {
-				if (progressDialog != null) progressDialog.dismiss();
-				loaded =true;
-			}
+		synchronized (semaphore) {
+			if (progressDialog != null) progressDialog.dismiss();
+			loaded =true;
 		}
 		startActivity(new Intent(this, MainActivity.class));
 		this.finish();
@@ -150,7 +152,7 @@ public final class LoadingActivity extends Activity implements OnResourcesLoaded
 
 	@Override
 	public void onSceneLoadFailed(Savegames.LoadSavegameResult loadResult) {
-		synchronized (progressDialog) {
+		synchronized (semaphore) {
 			if (progressDialog != null) progressDialog.dismiss();
 			loaded =true;
 		}

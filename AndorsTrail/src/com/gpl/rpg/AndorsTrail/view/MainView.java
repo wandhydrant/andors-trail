@@ -787,6 +787,7 @@ public final class MainView extends SurfaceView
 
 	@Override
 	public void onSpriteMoveStarted(SpriteMoveAnimation animation) {
+		if (animation.map != currentMap) return;
 		synchronized (movingSpritesRedrawTick) {
 			movingSprites++;
 			movingSpritesRedrawTick.start();
@@ -800,6 +801,7 @@ public final class MainView extends SurfaceView
 	
 	@Override
 	public void onSpriteMoveCompleted(SpriteMoveAnimation animation) {
+		if (animation.map != currentMap) return;
 		movingSprites--;
 		redrawArea(CoordRect.getBoundingRect(animation.origin, animation.destination, animation.actor.tileSize), RedrawAreaDebugReason.EffectCompleted);
 	}

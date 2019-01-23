@@ -1,4 +1,4 @@
-<?xml version='1.0' encoding='UTF-8'?>
+<?xml version="1.0" encoding="utf-8"?>
 <resources><string name="app_name">El Sendero de Andor</string>
 	<string name="app_description">RPG de fantasía basado en búsquedas</string>
 
@@ -75,7 +75,7 @@
 	<string name="dialog_loot_pickedupitem">"Recogiste un objeto. "</string>
 	<string name="dialog_loot_pickedupitems">"Recogiste %1$d objetos. "</string>
 	<string name="dialog_groundloot_title">Objetos</string>
-	<string name="dialog_groundloot_message">"Encontraste algunos objetos. "</string>
+	<string name="dialog_groundloot_message">"Has encontrado algunos objetos. "</string>
 	<string name="dialog_monsterloot_title">Victoria</string>
 	<string name="dialog_monsterloot_message">"Sobreviviste al enfrentamiento. "</string>
 	<string name="dialog_monsterloot_gainedexp">"Ganaste %1$d puntos de experiencia. "</string>
@@ -524,7 +524,7 @@
 \n
 \nCon el primer nivel de habilidad, un %2$d%% de los atributos del arma serán utilizados (en la mano secundaria) y los PA necesarios para lanzar un ataque serán los necesarios para utilizar el primer arma (en la mano principal) más un %3$d%% de los PA necesarios para atacar con la secundaria.
 \n
-\nCon el segundo nivel de habilidad,n %2$d%% de los atributos del arma serán utilizados (en la mano secundaria) y los PA necesarios para lanzar un ataque serán los necesarios para utilizar el arma con mayor coste de PA al atacar.</string>
+\nCon el segundo nivel de habilidad,n %4$d%% de los atributos del arma serán utilizados (en la mano secundaria) y los PA necesarios para lanzar un ataque serán los necesarios para utilizar el arma con mayor coste de PA al atacar.</string>
 	<string name="skill_longdescription_fightstyle_2hand">Da beneficios al usar armas de dos manos, como espadas de dos manos, hachas de guerra o martillos gigantes.
 \n
 \nCada nivel de habilidad aumenta el daño potencial del arma de dos manos un %1$d %% de su daño original.</string>
@@ -543,4 +543,8 @@
 	<string name="heroinfo_inventory_sort">Ordenar Por</string>
 	<string name="heroinfo_healthpoints">Puntos de Salud (PS):</string>
 	<string name="heroinfo_experiencepoints">Puntos de Experiencia (PE):</string>
-	</resources>
+    <string name="combat_condition_player_apply">Estás siendo afectado por %1$s.</string>
+    <string name="combat_condition_player_immune">Ahora eres inmune a %1$s.</string>
+    <string name="combat_condition_monster_apply">%1$s es afectado por %2$s.</string>
+    <string name="combat_condition_monster_immune">%1$s es ahora inmune a %2$s.</string>
+</resources>

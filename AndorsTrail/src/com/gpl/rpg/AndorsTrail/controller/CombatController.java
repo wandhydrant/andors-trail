@@ -181,6 +181,8 @@ public final class CombatController implements VisualEffectCompletedCallback {
 			combatActionListeners.onPlayerAttackMissed(target, attack);
 			startMissedEffect(attack, attackPosition, this, CALLBACK_PLAYERATTACK);
 		}
+		controllers.skillController.applySkillEffectsFromPlayerAttack(attack, target);
+		
 	}
 
 	private void playerAttackCompleted() {
@@ -407,6 +409,7 @@ public final class CombatController implements VisualEffectCompletedCallback {
 			combatActionListeners.onMonsterAttackMissed(currentActiveMonster, attack);
 			startMissedEffect(attack, world.model.player.position, this, CALLBACK_MONSTERATTACK);
 		}
+		controllers.skillController.applySkillEffectsFromMonsterAttack(attack, currentActiveMonster);
 	}
 
 	private static final int CALLBACK_MONSTERATTACK = 0;
@@ -513,13 +516,11 @@ public final class CombatController implements VisualEffectCompletedCallback {
 
 	private AttackResult playerAttacks(Monster currentMonster) {
 		AttackResult result = attack(world.model.player, currentMonster);
-		controllers.skillController.applySkillEffectsFromPlayerAttack(result, currentMonster);
 		return result;
 	}
 
 	private AttackResult monsterAttacks(Monster currentMonster) {
 		AttackResult result = attack(currentMonster, world.model.player);
-		controllers.skillController.applySkillEffectsFromMonsterAttack(result, currentMonster);
 		return result;
 	}
 

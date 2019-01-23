@@ -174,7 +174,7 @@ public final class MonsterMovementController implements EvaluateWalkable {
 		final CoordRect previousPosition = new CoordRect(new Coord(m.position), m.rectPosition.size);
 		m.lastPosition.set(previousPosition.topLeft);
 		m.position.set(m.nextPosition.topLeft);
-		controllers.effectController.startActorMoveEffect(m, previousPosition.topLeft, m.position, duration, new VisualEffectController.VisualEffectCompletedCallback() {
+		controllers.effectController.startActorMoveEffect(m, map, previousPosition.topLeft, m.position, duration, new VisualEffectController.VisualEffectCompletedCallback() {
 			
 			@Override
 			public void onVisualEffectCompleted(int callbackValue) {

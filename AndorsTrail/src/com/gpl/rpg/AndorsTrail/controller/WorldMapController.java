@@ -294,7 +294,7 @@ public final class WorldMapController {
 		return new CoordRect(topLeft, new Size(bottomRight.x - topLeft.x, bottomRight.y - topLeft.y));
 	}
 
-	private static void updateWorldMapSegment(Resources res, WorldContext world, String segmentName) throws IOException {
+	public static void updateWorldMapSegment(Resources res, WorldContext world, String segmentName) throws IOException {
 		String mapAsHtml = getWorldMapSegmentAsHtml(res, world, segmentName);
 		File outputFile = getCombinedWorldMapFile(segmentName);
 		PrintWriter pw = new PrintWriter(outputFile);

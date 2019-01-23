@@ -1,4 +1,4 @@
-<?xml version='1.0' encoding='UTF-8'?>
+<?xml version="1.0" encoding="utf-8"?>
 <resources><string name="app_name">След Эндара</string>
 	<string name="app_description">Прыгодніцка-фантазійная RPG</string>
 
@@ -55,7 +55,7 @@
 	<string name="combat_status_ap">ПД: %1$d</string>
 	<string name="combat_monsterhealth">ПЗ:</string>
 	<string name="combat_monsteraction">%1$s атакуе.</string>
-	<string name="combat_result_monstermiss">%1$d прамахнуўся!</string>
+	<string name="combat_result_monstermiss">%1$s прамахнуўся!</string>
 	<string name="combat_result_monsterhit">%1$s ударыў вас на %2$d ПЗ!</string>
 	<string name="combat_result_monsterhitcritical">%1$s наносць крытычны ўдар на %2$d ПЗ!</string>
 	<string name="combat_result_heromiss">Вы прамахнуліся.</string>
@@ -183,14 +183,14 @@
 
 	<string name="preferences_display_category">Экран</string>
 	<string name="preferences_display_fullscreen_title">Ва ўвесь экран</string>
-	<string name="preferences_display_fullscreen">Адлюстраванне гульні ва ўвесь экран. (Патрабуе перазапуск)</string>
+	<string name="preferences_display_fullscreen">Адлюстраванне гульні ва ўвесь экран (патрабуе перазапуск).</string>
 	<string name="preferences_dialog_category">Дыялогі пацверджання</string>
 	<string name="preferences_dialog_confirmrest_title">Пацверджанне адпачынку</string>
 	<string name="preferences_dialog_confirmrest">Задае пытанне аб адпачынку пры падыходзе да ложка. Інакш вы заўсёды будзеце аўтаматычна адпачываць.</string>
 	<string name="preferences_dialog_confirmattack_title">Пацверджанне атакі</string>
 	<string name="preferences_dialog_confirmattack">Уключае дыялог «Вы хочаце напасць на …?» пры сутычцы з пачварай.</string>
 	<string name="preferences_dialog_monsterloot_title">Адлюстраваць трафеі</string>
-	<string name="preferences_dialog_monsterloot">Выберыце як вы хочаце паказаць вынікі сутычкі (золата, вопыт, прадметы).</string>
+	<string name="preferences_dialog_monsterloot">Абярыце, як вы хочаце паказаць вынікі сутычкі (золата, вопыт, прадметы).</string>
 	<string name="preferences_combat_category">Бой</string>
 	<string name="preferences_combat_speed_title">Хуткасць бою</string>
 	<string name="preferences_combat_speed">Вызначае, як хутка пачвары атакуюць.</string>
@@ -342,8 +342,8 @@
 	<string name="skill_prerequisite_other_skill">Каб павысіць узровень гэтага навыку, вам неабходна мець узровень %1$d навыку «%2$s».</string>
 	<string name="skill_prerequisite_level">Каб павысіць узровень гэтага навыку, вам неабходна мець узровень вопыту %1$d.</string>
 	<string name="skill_prerequisite_stat">Каб павысіць узровень гэтага навыку, вам неабходна мець не менш %1$d %2$s (базавая характарыстыка).</string>
-	<string name="skill_number_of_increases_one">Вы можаце абраць адзін навык для павелічэння.</string>
-	<string name="skill_number_of_increases_several">Вы можаце абраць %1$d навыкаў для павелічэння.</string>
+	<string name="skill_number_of_increases_one">Вы можаце абраць адзін навык для паляпшэння.</string>
+	<string name="skill_number_of_increases_several">Вы можаце абраць %1$d навыкаў для паляпшэння.</string>
 	<string name="levelup_adds_new_skillpoint">Гэты ўзровень дае новы пункт для павелічэння навыку!</string>
 
 	<string name="loadsave_save_to_new_slot">Стварыць новы слот для захавання</string>
@@ -398,7 +398,7 @@
 
 	<string name="preferences_ui_category">Інтэрфейс</string>
 	<string name="preferences_ui_enable_animations_title">Уключыць анімацыю</string>
-	<string name="preferences_ui_enable_animations">Паказвае анімацыю розных элементаў інтэрфейса, напрыклад, радок бою.</string>
+	<string name="preferences_ui_enable_animations">Паказвае анімацыю розных элементаў інтэрфейса, напрыклад, радка бою.</string>
 	<string name="menu_button_worldmap">Мапа</string>
 	<string name="menu_button_worldmap_failed">Мапа не можа быць адлюстраваная.</string>
 	<string name="display_worldmap_not_available">Мапа не можа быць адлюстраваная з гэтай мясціны.</string>
@@ -484,7 +484,7 @@
 	<string name="skill_longdescription_weapon_prof_1hsword">Кожны ўзровень навыку павялічвае шанц атакі пры выкарыстанні рапір, доўгіх мячоў і палашай на %1$d %% ад базавага шанцу зброі, павялічвае шанц блоку на %2$d %% ад базавага шанцу прадмета і павялічвае крытычны навык на %3$d %% ад базавага крытычнага навыку прадмета.</string>
 	<string name="skill_longdescription_weapon_prof_2hsword">Кожны ўзровень навыку павялічвае шанц атакі двухручных мячоў на %1$d %% ад базавага шанцу зброі, павялічвае шанц блоку на %2$d %% ад базавага шанцу прадмета і павялічвае крытычны навык на %3$d %% ад базавага крытычнага навыку.</string>
 	<string name="skill_longdescription_weapon_prof_axe">Кожны ўзровень навыку павялічвае шанц атакі пры выкарыстанні сякер і вялікіх сякер на %1$d %% ад базавага шанцу зброі, павялічвае шанц блоку на %2$d %% ад базавага шанцу прадмета і павялічвае крытычны навык на %3$d %% ад базавага крытычнага навыку.</string>
-	<string name="skill_longdescription_weapon_prof_blunt">Кожны ўзровень навыку павялічвае шанц атакі тупой зброяй на %1$d %% ад базавага шанцу зброі, павялічвае шанц блоку на %2$d %% ад базавага шанцу зброі і павялічвае крытычны навык на %3$d %% ад базавага крытычнага навыку зброі.</string>
+	<string name="skill_longdescription_weapon_prof_blunt">Кожны ўзровень навыку павялічвае шанц атакі тупой зброяй на %1$d %% ад базавага шанцу зброі, павялічвае шанц блоку на %2$d %% ад базавага шанцу зброі і павялічвае крытычны навык на %3$d %% ад базавага крытычнага навыку зброі. Гэта ўключае ў сябе дубінкі, булавы, скіпетры, баявыя молаты і гіганцкія молаты.</string>
 	<string name="skill_longdescription_weapon_prof_unarmed">"У боі без зброі і шчыта за кожны ўзровень навыку дадае %1$d да шанцу атакі, %2$d да моцы атакі  і %3$d да шанцу блоку."</string>
 	<string name="skill_longdescription_armor_prof_shield">Павялічвае моц супраціўлення на %1$d за кожны ўровень навыку пры выкарыстанні шчыта.</string>
 	<string name="skill_longdescription_armor_prof_unarmored">У баі без апранітай брані дадае %1$d шанцу блоку за кожны ўзровнь навыку. Звычайная адзежа не лічыцца бронёй.</string>
@@ -534,8 +534,8 @@
 	<string name="heroinfo_gamestats_name_and_qty">%1$s (%2$d)</string>
 
 	<string name="preferences_ui_use_localized_resources_title">Выкарыстоўваць пераклад</string>
-	<string name="preferences_ui_use_localized_resources">Выкарыстоўваць пераклад інтэрфейсу і зместу, калі ён даступен. (Патрабуецца перазапуск)</string>
-	<string name="change_locale_requires_restart">Змяненне мовы патрабуе перазапуск. Andor\'s Trail закрытая.</string>
+	<string name="preferences_ui_use_localized_resources">Выкарыстоўваць пераклад інтэрфейсу і зместу, дзе магчыма (патрабуе перазапуск).</string>
+	<string name="change_locale_requires_restart">Змена мовы патрабуе перазапуск. Andor\'s Trail закрытая.</string>
 
 <string name="dialog_recenter">У зыходны</string>
 	<string name="dialog_more">Больш</string>
@@ -605,15 +605,14 @@
 	<string name="skill_sort_unlocked">адкрытыя</string>
 	
 	<string name="preferences_display_theme_title">Тэма</string>
-	<string name="preferences_display_theme">Абраць тэму інтэрфейсу. (патрабуецца перазапуск)</string>
+	<string name="preferences_display_theme">Абраць тэму інтэрфейсу (патрабуе перазапуск).</string>
 	<string name="preferences_display_theme_blue">Кобальт</string>
 	<string name="preferences_display_theme_green">Малахіт</string>
 	<string name="preferences_display_theme_charcoal">Абсідыян</string>
-	<string name="change_theme_requires_restart">Змяненне тэмы інтэрфейсу патрабуе перазапуск. «Andor\'s Trail» закрыты.</string>
+	<string name="change_theme_requires_restart">Змена тэмы інтэрфейсу патрабуе перазапуск. «Andor\'s Trail» закрыты.</string>
 	
 	
 <string name="preferences_high_quality_filters_title">Фільтры высокай якасці</string>
 	<string name="preferences_high_quality_filters">Адключыць гэта, калі ў вас узніклі праблемы з прадукцыйнасцю на адфільтраванах мапах (цёмныя пячоры, напрыклад). Уключэнне гэтай опцыі дазволіць гульне выкарыстоўваць пашыраныя каляровыя фільтры, замест аднатонны накладак.</string>
-	
-
-	</resources>
+    <string name="storage_permissions_mandatory">Доступ да сховішча неабходны Следу Эндора, каб захоўваць гульні і светавую мапу. Закрыццё.</string>
+</resources>
