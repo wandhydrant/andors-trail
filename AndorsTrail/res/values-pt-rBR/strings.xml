@@ -3,26 +3,31 @@
 	<string name="app_name">Trilha de Andor</string>
 	<string name="app_description">Um jogo de RPG fantasioso baseado em aventuras</string>
 
-	<string name="exit_to_menu">Sair ao Menu</string>
+	<string name="exit_to_menu">Sair para o menu</string>
 	<string name="menu_settings">Preferências</string>
 	<string name="menu_save">Salvar</string>
 	<string name="menu_save_gamesaved">O jogo foi guardado na posição %1$d</string>
-	<string name="menu_save_failed">Falha ao guardar o jogo! O cartão SD está montado e com permissões de escrita?</string>
+	<string name="menu_save_failed">Não foi possível salvar o jogo! O cartão SD está montado e pode ser escrito\?</string>
 
 	<string name="loadsave_title_save">Salvar jogo</string>
 	<string name="loadsave_title_load">Carregar jogo salvo</string>
 	<string name="loadsave_selectslot">Escolher espaço</string>
-	<string name="savegame_currenthero_displayinfo">nível %1$d, %2$d exp, %3$d moedas</string>
+	<string name="savegame_currenthero_displayinfo">nível %1$d, %2$d exp, %3$d ouro</string>
 
 	<string name="dialog_loading_message">Carregando recursos…</string>
-	<string name="dialog_loading_failed_title">Falha de Carregamento</string>
-	<string name="dialog_loading_failed_message">O Andor\'s Trail não conseguiu carregar o arquivo de armazenamento do jogo.\n\n:(\n\nO arquivo pode estar danificado ou incompleto.</string>
-	<string name="dialog_loading_failed_incorrectversion">O Andor\'s Trail não conseguiu carregar o arquivo de armazenamento do jogo. Esse arquivo foi criado com uma versão mais recente que a versão em uso.</string>
+	<string name="dialog_loading_failed_title">Erro de carregamento</string>
+	<string name="dialog_loading_failed_message">Andor\'s Trail não conseguiu carregar o arquivo do jogo salvo.
+\n
+\n:(
+\n
+\nO arquivo pode estar danificado ou incompleto.</string>
+	<string name="dialog_loading_failed_incorrectversion">Andor\'s Trail não conseguiu carregar o arquivo do jogo salvo. Este arquivo de jogo salvo é criado com uma versão mais recente do que a que está sendo executada atualmente.</string>
 
 	<string name="dialog_close">Fechar</string>
 
 	<string name="dialog_monsterencounter_title">Combate</string>
-	<string name="dialog_monsterencounter_message">Deseja atacar?\nDificuldade: %1$s</string>
+	<string name="dialog_monsterencounter_message">Você quer atacar\?
+\nDificuldade: %1$s</string>
 	<string name="dialog_monsterencounter_info">Informação</string>
 
 	<string name="status_hp">HP:</string>
@@ -37,18 +42,18 @@
 	<string name="heroinfo_totalexperience">Experiência total</string>
 	<string name="heroinfo_wornequipment">Equipamento em uso</string>
 	<string name="heroinfo_inventory">Inventário</string>
-	<string name="heroinfo_gold">Moedas: %1$d</string>
-	<string name="heroinfo_actionpoints">Ponto de ação (AP):</string>
+	<string name="heroinfo_gold">Ouro: %1$d</string>
+	<string name="heroinfo_actionpoints">Ponto de Ação (AP):</string>
 	<string name="heroinfo_quests">Aventuras</string>
 
 	<string name="combat_attack">Atacar (%1$d AP)</string>
-	<string name="combat_move">Deslocar (%1$d AP)</string>
-	<string name="combat_use">Usar objeto</string>
+	<string name="combat_move">Mover (%1$d AP)</string>
+	<string name="combat_use">Usar item</string>
 	<string name="combat_endturn">Terminar turno</string>
 	<!-- <string name="combat_endcombat">Terminar combate</string>-->
-	<string name="combat_flee">Fuga</string>
-	<string name="combat_begin_flee">Agora pode fugir do combate clicando na direcção que quer deslocar.</string>
-	<string name="combat_flee_failed">Não conseguiu fugir!</string>
+	<string name="combat_flee">Fugir</string>
+	<string name="combat_begin_flee">Agora você pode fugir do combate clicando na direção que deseja mover.</string>
+	<string name="combat_flee_failed">Você não conseguiu fugir!</string>
 	<string name="combat_status_ap">AP: %1$d</string>
 	<string name="combat_monsterhealth">HP:</string>
 	<string name="combat_monsteraction">%1$s está atacando.</string>
@@ -56,26 +61,26 @@
 	<string name="combat_result_monstermiss">%1$s falha!</string>
 	<string name="combat_result_monsterhit">%1$s acertou-lhe e perdeu %2$d hp!</string>
 	<string name="combat_result_monsterhitcritical">%1$s acertou-lhe com um golpe crítico e perdeu %2$d hp!</string>
-	<string name="combat_result_heromiss">O seu ataque falha.</string>
+	<string name="combat_result_heromiss">Seu ataque erra.</string>
 	<string name="combat_result_herohit">Acertou %1$s com %2$d hp!</string>
 	<string name="combat_result_herohitcritical">Acertou um golpe crítico em %1$s, que perde %2$d hp!</string>
 	<string name="combat_result_herokillsmonster">%1$s morre!</string>
 	<string name="combat_not_enough_ap">Não tem AP suficiente para este turno.</string>
-	<string name="combat_hero_dies">Caiu inconsciente mas, por sorte, acordou com vida. Perdeu %1$d de experiência.</string>
+	<string name="combat_hero_dies">Você cai inconsciente, mas felizmente acorda vivo, atordoado e fatigado. Perdeu %1$d de experiência.</string>
 
 	<string name="inventory_info">Informação</string>
 	<string name="inventory_equip">Equipar</string>
 	<string name="inventory_unequip">Desequipar</string>
 	<string name="inventory_use">Usar</string>
 	<string name="inventory_drop">Largar</string>
-	<string name="inventory_item_used">Usou %1$s.</string>
+	<string name="inventory_item_used">Você usou %1$s.</string>
 	<string name="inventory_item_dropped">%1$s foi largado.</string>
-	<string name="inventory_item_equipped">Equipado com %1$s.</string>
+	<string name="inventory_item_equipped">Você equipou %1$s.</string>
 
-	<string name="dialog_loot_pickall">Apanhar tudo</string>
-	<string name="dialog_loot_foundgold">Encontrou %1$d moedas. </string>
-	<string name="dialog_loot_pickedupitem">Apanhou um objeto. </string>
-	<string name="dialog_loot_pickedupitems">Apanhou %1$d objetos. </string>
+	<string name="dialog_loot_pickall">Pegue todos</string>
+	<string name="dialog_loot_foundgold">Encontrou %1$d ouro.</string>
+	<string name="dialog_loot_pickedupitem">Você pegou um item.</string>
+	<string name="dialog_loot_pickedupitems">Você pegou %1$d objetos.</string>
 	<string name="dialog_groundloot_title">Objetos</string>
 	<string name="dialog_groundloot_message">Encontrou alguns objetos. </string>
 	<string name="dialog_monsterloot_title">Vitória</string>
@@ -388,8 +393,8 @@
 	<string name="skill_prerequisite_other_skill">Para subir o nível desta habilidade tem que ter, pelo menos, o nível %1$d da habilidade %2$s.</string>
 	<string name="skill_prerequisite_level">Para subir o nível desta habilidade tem que ter, no mínimo, o nível %1$d de experiência.</string>
 	<string name="skill_prerequisite_stat">Para subir o nível desta habilidade tem que ter, pelo menos, %1$d %2$s (estatísticas base).</string>
-	<string name="skill_number_of_increases_one">Você pode selecionar uma habilidade para aumentar.</string>
-	<string name="skill_number_of_increases_several">Podes selecionar %1$d habilidades para aumentar.</string>
+	<string name="skill_number_of_increases_one">Você pode selecionar uma habilidade para melhorar.</string>
+	<string name="skill_number_of_increases_several">Você pode selecionar %1$d habilidade para melhorar.</string>
 	<string name="levelup_adds_new_skillpoint">Este nível também dá um novo ponto de habilidade para gastar!</string>
 
 	<string name="loadsave_save_to_new_slot">Criar nova posição para guardar jogo</string>
@@ -538,7 +543,7 @@
 	<string name="change_locale_requires_restart">Ao trocar a localidade requer reinício.
 Andor\'s Trail foi fechado.</string>
 
-<string name="combat_miss_animation_message">MISS</string>
+<string name="combat_miss_animation_message">ERRO</string>
 	
 	<string name="preferences_display_loot_dialog_on_items_or_toast">Diálogo para itens, notificação para outros</string>
 	<string name="combat_result_monstermoved">%1$s movimentos.</string>
@@ -600,7 +605,7 @@ Andor\'s Trail foi fechado.</string>
 \n
 \nCada nível de habilidade aumenta a chance de ataque da arma com %1$d %% da chance de ataque original da arma, e a chance de bloqueio de escudos em %2$d %% da chance de bloqueio original do escudo.</string>
 	<string name="skill_longdescription_specialization_dualwield">Aumenta a chance de ataque de ambas as armas empunhadas e dá um adicional %1$d %% da chance de ataque original das armas, além dos benefícios oferecidos pela habilidade do estilo da arma. A chance de bloqueio de ambas as armas também são aumentadas em %2$d %% da chance de bloqueio original das armas.</string>
-	<string name="dialog_recenter">Recentralizar</string>
+	<string name="dialog_recenter">Recente</string>
 	<string name="dialog_more">Mais</string>
 
 	<string name="dialog_monsterencounter_conditions">Condições</string>
@@ -612,7 +617,7 @@ Andor\'s Trail foi fechado.</string>
 	<string name="heroinfo_healthpoints">Pontos de Saúde (HP):</string>
 	<string name="heroinfo_experiencepoints">Pontos de Experiência (XP):</string>
 	<string name="combat_taunt_monster">Você provocou %1$s!</string>
-	<string name="combat_condition_player_apply">Você está afetado por %1$s.</string>
+	<string name="combat_condition_player_apply">Você é afetado por %1$s.</string>
 	<string name="combat_condition_player_clear">Você esta recuperado de %1$s.</string>
 	<string name="combat_condition_player_immune">Você está agora imunizado contra %1$s.</string>
 	<string name="combat_condition_monster_apply">%1$s está sobre efeito de %2$s.</string>
@@ -677,6 +682,5 @@ Andor\'s Trail foi fechado.</string>
 	<string name="preferences_display_theme_green">Malaquita</string>
 	<string name="preferences_display_theme_charcoal">Obsidiana</string>
 	<string name="change_theme_requires_restart">Alterar o tema da interface do usuário requer reinicialização. O jogo \'Trilha de Andor\' foi fechado.</string>
-	
-	
+    <string name="storage_permissions_mandatory">O acesso ao armazenamento é obrigatório para o jogo \"Andor\'s Trail\" lidar com salvamento de jogos e com o mapa mundial. Fechando jogo \"Andor\'s Trail\".</string>
 </resources>
