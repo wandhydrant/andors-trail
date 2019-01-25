@@ -472,7 +472,7 @@ public final class MainActivity
 	
 	@Override
 	public void onPlayerTauntsMonster(Monster attacker) {
-		message(getString(R.string.combat_taunt_monster, attacker.getName()));
+		if (attacker != null) message(getString(R.string.combat_taunt_monster, attacker.getName()));
 	}
 	
 	@Override
