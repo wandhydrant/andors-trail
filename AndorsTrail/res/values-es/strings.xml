@@ -75,7 +75,7 @@
 	<string name="dialog_loot_pickedupitem">"Recogiste un objeto. "</string>
 	<string name="dialog_loot_pickedupitems">"Recogiste %1$d objetos. "</string>
 	<string name="dialog_groundloot_title">Objetos</string>
-	<string name="dialog_groundloot_message">"Has encontrado algunos objetos. "</string>
+	<string name="dialog_groundloot_message">Has encontrado algunos objetos.</string>
 	<string name="dialog_monsterloot_title">Victoria</string>
 	<string name="dialog_monsterloot_message">"Sobreviviste al enfrentamiento. "</string>
 	<string name="dialog_monsterloot_gainedexp">"Ganaste %1$d puntos de experiencia. "</string>
@@ -399,7 +399,7 @@
 	<string name="preferences_display_overwrite_savegame_entries_never_confirm">Nunca mostrar cuadro de confirmación</string>
 	<string name="combat_log_title">Registro de combate</string>
 	<string name="skill_prerequisite_other_skill">Para subir el nivel de esta habilidad, necesitas al menos nivel %1$d de la habilidad %2$s.</string>
-	<string name="skill_number_of_increases_one">Usted puede seleccionar una habilidad para mejorar.</string>
+	<string name="skill_number_of_increases_one">Puedes seleccionar una habilidad para mejorar.</string>
 	<string name="skill_number_of_increases_several">Puedes seleccionar %1$d habilidades para mejorar.</string>
 	<string name="levelup_adds_new_skillpoint">¡Has recibido un punto de habilidad!</string>
 
@@ -421,7 +421,7 @@
 	<string name="inventory_movebottom">Movel al fondo</string>
 	<string name="skill_title_taunt">Burla</string>
 	<string name="skill_prerequisite_level">Para subir de nivel esta habilidad, necesitas al menos nivel %1$d.</string>
-	<string name="skill_prerequisite_stat">Para subir de nivel esta habilidad, necesitas al menos %1$d %2$s (Atributos básicos)</string>
+	<string name="skill_prerequisite_stat">Para subir de nivel esta habilidad, necesitas al menos %1$d %2$s (Atributos básicos).</string>
 	<string name="preferences_optimized_drawing">Desactiva esta opción si ves errores gráficos.Activar esta opción solamente redibuja las zonas modificadas de la pantalla en cada \"frame\".</string>
 
 	<string name="traitsinfo_criticalhit_effectivechance">Probabilidad de golpe crítico efectiva:</string>
@@ -511,8 +511,7 @@
 	<string name="skill_longdescription_weapon_prof_1hsword">Aumenta tu probabilidad de ataque usando estoques, espadas largas y sables en un %1$d %% de la probabilidad de ataque base del arma,por cada nivel de habilidad.A demás, aumenta la probabilidad de bloqueo (defensa), también de la base del arma en un %2$d %%.La capacidad para asestar golpes críticos aumentará en un %3$d %% sobre los puntos básicos del arma.</string>
 	<string name="skill_longdescription_weapon_prof_2hsword">Aumenta tu probabilidad de ataque usando espadas de dos manos en un %1$d %% de la probabilidad de ataque base del arma,por cada nivel de habilidad.A demás, aumenta la probabilidad de bloqueo (defensa), también de la base del arma en un %2$d %%.La capacidad para asestar golpes críticos aumentará en un %3$d %% sobre los puntos básicos del arma.</string>
 	<string name="skill_longdescription_weapon_prof_axe">Aumenta tu probabilidad de ataque usando hachas de todo tipo en un %1$d %% de la probabilidad de ataque base del arma,por cada nivel de habilidad.A demás, aumenta la probabilidad de bloqueo (defensa), también de la base del arma en un %2$d %%.La capacidad para asestar golpes críticos aumentará en un %3$d %% sobre los puntos básicos del arma.</string>
-	<string name="skill_longdescription_weapon_prof_blunt">Aumenta tu probabilidad de ataque usando armas romas en un %1$d %% de la probabilidad de ataque base del arma,por cada nivel de habilidad.A demás, aumenta la probabilidad de bloqueo (defensa), también de la base del arma en un %2$d %%.La capacidad para asestar golpes críticos aumentará en un %3$d %% sobre los puntos básicos del arma.
-\nLas armas romas son un gran grupo de armas que incluyen porras, varas, mazas, bastones, y martillos de todo tipo.</string>
+	<string name="skill_longdescription_weapon_prof_blunt">Para cada nivel de habilidad, aumenta la probabilidad de ataque de las armas romas en %1$d %% de la probabilidad de ataque base del objeto, aumenta la probabilidad de bloqueo en %2$d %% de la probabilidad de bloqueo base del objeto, y aumenta la habilidad crítica en %3$d %% de la habilidad crítica base del objeto. Esto incluye palos, palos de golf, mazas, cetro, martillos de guerra y martillos gigantes.</string>
 	<string name="skill_longdescription_weapon_prof_unarmed">Al luchar sin arma y escudo, tu probabilidad de ataque aumenta %1$d puntos, tu daño en %2$d puntos y tu defensa en %3$d puntos, por cada nivel de habilidad.</string>
 	<string name="skill_longdescription_armor_prof_shield">Aumenta la resistencia al daño en %1$d punto/s por cada nivel de habilidad,siempre y cuando haya un escudo equipado.</string>
 	<string name="skill_longdescription_armor_prof_unarmored">Luchando sin armadura, gana %1$d puntos de defensa (probabilidad de bloqueo) por cada nivel de habilidad.La ropa de tela no es considerada armadura.</string>
@@ -598,4 +597,24 @@
     <string name="preferences_display_theme_charcoal">Obsidiana</string>
     <string name="change_theme_requires_restart">Para cambiar el tema de la interfaz de usuario es necesario reiniciar. El sendero de Andor ha sido cerrado.</string>
     <string name="storage_permissions_mandatory">El acceso al almacenamiento es obligatorio para que Andor\'s Trail pueda manejar los juegos guardados y el mapa del mundo. Cerrando el sendero de Andor.</string>
+    <string name="inventory_selectitem">Seleccione el elemento para asignar</string>
+    <string name="skill_longdescription_specialization_dualwield">Aumenta las posibilidades de ataque de ambas armas en un %1$d %% de sus posibilidades de ataque originales, además de las ventajas que ofrece la habilidad de estilo de arma. Las posibilidades de bloqueo de ambas armas también aumentan en un %2$d %% de sus posibilidades de bloqueo originales.</string>
+    <string name="skill_longdescription_specialization_2hand">Aumenta el daño potencial de las armas a dos manos en un %1$d %% adicional del potencial de daño original, además de los beneficios dados por la habilidad de estilo de arma. Las posibilidades de ataque de las armas a dos manos también aumentan en un %2$d %% de sus posibilidades de ataque originales.</string>
+    <string name="skill_longdescription_specialization_weapon_shield">Aumenta tanto las posibilidades de ataque como el daño potencial de las armas. La probabilidad de ataque aumenta en %1$d %% de la probabilidad de ataque original, y el potencial de daño aumenta en %2$d %% del potencial de daño original.</string>
+    <string name="preferences_quickslots_placement_summary">Dónde colocar las ranuras rápidas</string>
+    <string name="preferences_quickslots_placements_horizontal_center_bottom">Centro inferior</string>
+    <string name="preferences_quickslots_placements_vertical_bottom_left">Abajo a la izquierda, a lo largo del borde izquierdo</string>
+    <string name="preferences_quickslots_placements_horizontal_bottom_left">Abajo a la izquierda, a lo largo del borde inferior</string>
+    <string name="preferences_quickslots_placements_horizontal_bottom_right">Abajo a la derecha, a lo largo del borde inferior</string>
+    <string name="preferences_quickslots_placements_vertical_bottom_right">Abajo a la derecha, a lo largo del borde derecho</string>
+    <string name="preferences_ui_show_quickslots_when_toolbox_is_visible_title">Mostrar las ranuras rápidas cuando se abre la caja de herramientas</string>
+    <string name="preferences_ui_show_quickslots_when_toolbox_is_visible">Hace que los botones de las ranuras rápidas se muestren tan pronto como se abre la caja de herramientas</string>
+    <string name="startscreen_incompatible_savegames">Esta es una versión de desarrollo de Andor\'s Trail. Los juegos guardados producidos por esta versión son incompatibles con la versión de lanzamiento.</string>
+    <string name="heroinfo_gamestats_quests">Misiones completadas</string>
+    <string name="heroinfo_gamestats_deaths">Veces caído inconsciente</string>
+    <string name="preferences_ui_use_localized_resources_title">Utilizar recursos localizados</string>
+    <string name="inventory_category_all">Todo</string>
+    <string name="inventory_category_quest">Objeto de misión</string>
+    <string name="inventory_category_other">Otros</string>
+    <string name="skill_category_criticals">Críticos</string>
 </resources>
