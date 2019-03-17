@@ -1,31 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="localize_resources_from_mo_filename">zh_CN.mo</string>
-<string name="app_description">任务驱动型的幻想RPG</string>
-
-	<string name="exit_to_menu">返回菜单</string>
-	<string name="menu_settings">设定</string>
-	<string name="menu_save">保存</string>
-	<string name="menu_save_gamesaved">游戏已经保存至 存档 %1$d</string>
-	<string name="menu_save_failed">游戏保存失败！确认存储卡正确安装并且可以写入？</string>
-
-	<string name="loadsave_title_save">保存游戏</string>
-	<string name="loadsave_title_load">载入游戏</string>
-	<string name="loadsave_selectslot">选择存档</string>
-	<string name="savegame_currenthero_displayinfo">等级 %1$d，%2$d 经验值，%3$d 金币</string>
-
-	<string name="dialog_loading_message">正在载入资源…</string>
-	<string name="dialog_loading_failed_title">载入失败</string>
-	<string name="dialog_loading_failed_message">Andor\'s Trail 无法载入游戏存档。 
+    <string name="app_description">任务驱动型的幻想RPG</string>
+    <string name="exit_to_menu">返回菜单</string>
+    <string name="menu_settings">设定</string>
+    <string name="menu_save">保存</string>
+    <string name="menu_save_gamesaved">游戏已经保存至 存档 %1$d</string>
+    <string name="menu_save_failed">游戏保存失败！确认存储卡正确安装并且可以写入？</string>
+    <string name="loadsave_title_save">保存游戏</string>
+    <string name="loadsave_title_load">载入游戏</string>
+    <string name="loadsave_selectslot">选择存档</string>
+    <string name="savegame_currenthero_displayinfo">等级 %1$d，%2$d 经验值，%3$d 金币</string>
+    <string name="dialog_loading_message">正在载入资源…</string>
+    <string name="dialog_loading_failed_title">载入失败</string>
+    <string name="dialog_loading_failed_message">Andor\'s Trail 无法载入游戏存档。 
 \n 
 \n:( 
 \n 
 \n存档可能出现损坏或者不完整情况。</string>
-	<string name="dialog_loading_failed_incorrectversion">Andor\'s Trail 无法载入游戏存档。 
+    <string name="dialog_loading_failed_incorrectversion">Andor\'s Trail 无法载入游戏存档。 
 \n游戏存档由一个比现运行新的版本创建。</string>
-
-	<string name="dialog_recenter">回到中心</string>
-	<string name="dialog_close">关闭</string>
-	<string name="dialog_more">更多</string>
+    <string name="dialog_recenter">回到中心</string>
+    <string name="dialog_close">关闭</string>
+    <string name="dialog_more">更多</string>
     <string name="app_name">密令追踪</string>
+    <string name="status_hp">生命(HP):</string>
+    <string name="heroinfo_char">总览</string>
+    <string name="heroinfo_skill">技能</string>
+    <string name="heroinfo_levelup">升级</string>
+    <string name="heroinfo_level">等级</string>
+    <string name="heroinfo_totalexperience">总经验</string>
 </resources>
