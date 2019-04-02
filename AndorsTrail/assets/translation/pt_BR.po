@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: Andors Trail\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-11-10 11:48+0000\n"
-"PO-Revision-Date: 2019-04-02 02:04+0000\n"
+"PO-Revision-Date: 2019-04-06 22:01+0000\n"
 "Last-Translator: Rui Mendes <xz9@protonmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/"
 "andors-trail/game-content/pt_BR/>\n"
@@ -17,16 +17,11 @@ msgstr ""
 
 #: [none]
 msgid "translator-credits"
-msgstr ""
-"Launchpad Contributions:\n"
-"  Fernando Pacífico https://launchpad.net/~nandoppi\n"
-"  Oskar Wiksten https://launchpad.net/~oskar-wiksten\n"
-"  Rodrigo Borges Freitas https://launchpad.net/~rodrigo-borges-freitas\n"
-"  yakup https://launchpad.net/~mutouk"
+msgstr "Fernando Pacífico, Oskar Wiksten, Rodrigo Borges Freitas, yakup"
 
 #: actorconditions_v069.json:bless
 msgid "Bless"
-msgstr "Benção"
+msgstr "Bênção"
 
 #: actorconditions_v069.json:poison_weak
 msgid "Weak Poison"
@@ -82,11 +77,11 @@ msgstr "Maldição caótica"
 
 #: actorconditions_v0611.json:contagion
 msgid "Insect contagion"
-msgstr "Contágio por Insetos"
+msgstr "Contágio por insetos"
 
 #: actorconditions_v0611.json:blister
 msgid "Blistering skin"
-msgstr "Febril"
+msgstr "Pele com bolhas"
 
 #: actorconditions_v0611.json:stunned
 msgid "Stunned"
@@ -4926,7 +4921,7 @@ msgstr "Eu realmente me pergunto o que existe lá em cima."
 
 #: conversationlist_vilegard_shops.json:vilegard_armorer_1
 msgid "Hello there. Please browse my selection of fine armors and protection."
-msgstr "Olá. Por favor, veja minha selecção de armaduras finas e escudos."
+msgstr "Olá. Por favor, veja minha seleção de armaduras de qualidade e escudos."
 
 #: conversationlist_vilegard_shops.json:vilegard_armorer_1:0
 msgid "Let me see your list of wares."
@@ -7754,10 +7749,11 @@ msgid ""
 "East: [Text is unreadable due to several scratch marks in the wood]\n"
 "South: Stoutford"
 msgstr ""
-"[REVIEW]Norte: Prim\n"
-"Oeste: mina Elm\n"
-"Leste: (o texto é ilegível devido a várias marcas de arranhões na madeira) \n"
-"South: Stoutford"
+"Norte (↑): Prim\n"
+"Oeste (←): Mina de Elm\n"
+"Leste (→): [O texto é ilegível devido a várias marcas de arranhões na "
+"madeira]\n"
+"Sul (↓): Stoutford"
 
 #: conversationlist_blackwater_signs.json:keyarea_bwm_agent_1
 msgid "The man shouts at you: You! Please help! You have to help us!"
@@ -7769,9 +7765,9 @@ msgid ""
 "Southwest: Stoutford\n"
 "Northwest: Blackwater mountain"
 msgstr ""
-"Leste: Fallhaven\n"
-"Sudoeste: Stoutford\n"
-"Nordeste: Montanha das Águas Negras"
+"Leste (→): Fallhaven\n"
+"Sudoeste (↙): Stoutford\n"
+"Noroeste (↖): Montanha das Águas Negras"
 
 #: conversationlist_blackwater_signs.json:sign_prim_n
 msgid "Notice to all citizens: No one is allowed to enter the mines at night! Furthermore, climbing the mountain side is strictly forbidden after the accident with Lorn."
@@ -7785,9 +7781,9 @@ msgid ""
 " - Kamelio"
 msgstr ""
 "Pessoas desaparecidas:\n"
-"- Dualan\n"
-"- Lornn\n"
-"- Kamelio"
+" - Duala\n"
+" - Lorn\n"
+" - Kamelio"
 
 #: conversationlist_blackwater_signs.json:sign_blackwater13
 msgid ""
@@ -7939,7 +7935,9 @@ msgstr "Ah, sim, temos a sorte que ele o encontrou. Como vê, nós raramente via
 
 #: conversationlist_blackwater_harlenn.json:harlenn_6
 msgid "We spend most of our time in the settlement up here on the mountain."
-msgstr "[REVIEW]Na maioria das vezes, passamos nosso tempo no assentamento ou aqui na montanha."
+msgstr ""
+"[REVIEW]Na maioria das vezes, passamos nosso tempo no assentamento aqui na "
+"montanha."
 
 #: conversationlist_blackwater_harlenn.json:harlenn_7
 msgid "However, recent events have forced us to send for help. We are lucky you found us."
@@ -8033,7 +8031,7 @@ msgstr "Eles ainda capturaram um de nossos companheiros batedores. Quem sabe o q
 
 #: conversationlist_blackwater_harlenn.json:harlenn_prim_4
 msgid "I'm telling you, they are treacherous and lying!"
-msgstr "Eu estou dizendo a você, ele são traidores e mentirosos!"
+msgstr "Eu estou dizendo a você, eles são traidores e mentirosos!"
 
 #: conversationlist_blackwater_harlenn.json:harlenn_prim_4:0
 msgid "Sure, I believe you. What do you need from me?"
@@ -8073,7 +8071,7 @@ msgstr "Ok, este é o plano. Eu quero que você vá falar com Guthbered em Prim,
 
 #: conversationlist_blackwater_harlenn.json:harlenn_21
 msgid "Either they stop their attacks, or we will have to deal with them."
-msgstr "Ou eles parar seus ataques, ou vamos ter de lidar com eles."
+msgstr "Ou eles param seus ataques, ou vamos ter de lidar com eles."
 
 #: conversationlist_blackwater_harlenn.json:harlenn_21:0
 msgid "Sure. I will go tell him your ultimatum."
@@ -8201,11 +8199,15 @@ msgstr "Bom. Tente não ser visto. Você deve ir procurar todos os indícios em 
 
 #: conversationlist_blackwater_harlenn.json:harlenn_lookforsigns_1
 msgid "Hello again. Did you find any clues in Prim that they are planning to attack us?"
-msgstr "Olá novamente. Você encontrou alguma pistas em Prim de que eles estejam planejando nos atacar?"
+msgstr ""
+"Olá novamente. Você encontrou alguma pista em Prim de que eles estejam "
+"planejando nos atacar?"
 
 #: conversationlist_blackwater_harlenn.json:harlenn_lookforsigns_1:1
 msgid "Yes. I found plans that they are recruiting mercenaries and will attack your settlement."
-msgstr "Sim. Encontrei planos que eles estão recrutando mercenários pretendem atacar seu assentamento."
+msgstr ""
+"Sim. Encontrei planos que eles estão recrutando mercenários e irão atacar "
+"seu assentamento."
 
 #: conversationlist_blackwater_harlenn.json:harlenn_lookforsigns_2
 msgid "Keep looking. I am sure they are planning something wicked."
@@ -8353,7 +8355,9 @@ msgstr "Que armas você tem para venda?"
 
 #: conversationlist_blackwater_upper.json:waeges_2
 msgid "Welcome traveller. I see you are looking at my fine selection of weapons."
-msgstr "Viajante, bem-vindo. Vejo que você está olhando para a minha boa selecção de armas."
+msgstr ""
+"Viajante, bem-vindo. Vejo que você está olhando para a minha boa seleção de "
+"armas."
 
 #: conversationlist_blackwater_upper.json:blackwater_fighter
 msgid "I have no time for you, kid. Have to practice my skills."
@@ -8389,7 +8393,9 @@ msgstr "Quais artigos você tem para venda?"
 
 #: conversationlist_blackwater_lower.json:iducus_2
 msgid "Welcome traveller. I see you are looking at my fine selection of wares."
-msgstr "Viajante, bem vindo. Vejo que você está olhando para o meu excelente selecção de produtos."
+msgstr ""
+"Viajante, bem-vindo. Vejo que você está olhando para a minha excelente "
+"seleção de produtos."
 
 #: conversationlist_blackwater_lower.json:blackwater_priest
 msgid ""
@@ -8429,7 +8435,7 @@ msgstr "Há algo ali. Você vê isso?"
 
 #: conversationlist_blackwater_lower.json:blackwater_guard2_2
 msgid "A mist? A Shadow? I'm sure I saw something moving."
-msgstr "Uma névoa? A Sombra? Tenho certeza de que viu algo se movendo."
+msgstr "Uma névoa? A Sombra? Tenho certeza de que vi algo se movendo."
 
 #: conversationlist_blackwater_lower.json:blackwater_guard2_3
 msgid "Screw this guard duty stuff. I am staying back here."
@@ -9527,7 +9533,10 @@ msgstr "Nada que já tivéssemos visto antes, e, eu vou te dizer, temos visto um
 
 #: conversationlist_hadracor.json:hadracor_story_8
 msgid "They almost got the best of us, and we were almost ready to quit it. But a job is a job and we need to get paid by Feygard for this job."
-msgstr "Elas quase obtiveram successo conosco, e nós estávamos quase prontos para abandonar tudo. Mas trabalho é trabalho e fomos pagos por Feygard para este trabalho."
+msgstr ""
+"Elas quase obtiveram sucesso conosco, e nós estávamos quase prontos para "
+"abandonar tudo. Mas trabalho é trabalho e fomos pagos por Feygard para este "
+"trabalho."
 
 #: conversationlist_hadracor.json:hadracor_story_9
 msgid "So we went ahead and finished all of them trees, trying to evade the wasps as much as we could."
@@ -16314,7 +16323,8 @@ msgstr "Você está bem?"
 
 #: conversationlist_remgard_villagers1.json:arnal_3:3
 msgid "Get away from me, I don't want to catch whatever it is you are infected with!"
-msgstr "Fique longe de mim, eu não quero pegar o que é que você esteha infectado!"
+msgstr ""
+"Fique longe de mim, eu não quero pegar o que é que você esteja infectado!"
 
 #: conversationlist_remgard_villagers1.json:arnal_4
 msgid "I don't know what ... *cough* ... happened. I started getting dizzy and nauseous. Now this cough is really irritating. It must have been something I ate. *cough*"
@@ -19364,15 +19374,15 @@ msgstr "Ele não mostrou tais sinais. Quase como se ele soubesse quem eu era e q
 
 #: conversationlist_lodar.json:lodar_andor8
 msgid "He very kindly asked for some Narwood extract."
-msgstr "Ele muito gentilmente, me pediu um pouco de extracto de Narwood."
+msgstr "Ele muito gentilmente, me pediu um pouco de extrato de Narwood."
 
 #: conversationlist_lodar.json:lodar_andor8:0
 msgid "Narwood extract, what's that?"
-msgstr "Extracto de Narwood, o que é isso?"
+msgstr "Extrato de Narwood, o que é isso?"
 
 #: conversationlist_lodar.json:lodar_andor8:1
 msgid "I recognize that name 'Narwood extract' from somewhere."
-msgstr "Eu reconheço esse nome 'Extracto de Narwood' de algum lugar."
+msgstr "Eu reconheço esse nome 'Extrato de Narwood' de algum lugar."
 
 #: conversationlist_lodar.json:lodar_andor9
 msgid "It can be used to make quite a nasty poison."
@@ -19424,7 +19434,9 @@ msgstr "Sim, então parece. Era bastante óbvio que ele não queria que eu o vis
 
 #: conversationlist_lodar.json:lodar_andor16:0
 msgid "So, Andor was here, wanted some Narwood extract, and he was travelling with someone that did not want you to spot him?"
-msgstr "Então, Andor estava aqui, queria algum extracto de Narwood, e ele estava viajando com alguém que não queria que ele o visse?"
+msgstr ""
+"Então, Andor estava aqui, queria algum extrato de Narwood, e ele estava "
+"viajando com alguém que não queria que ele o visse?"
 
 #: conversationlist_lodar.json:lodar_andor17
 msgid "Yes, that's basically it. But that's not all."
@@ -33244,7 +33256,7 @@ msgstr "Fantasma de Luthor"
 
 #: monsterlist_fallhaven_npcs.json:warden
 msgid "Warden"
-msgstr "Director"
+msgstr "Diretor"
 
 #: monsterlist_fallhaven_npcs.json:guard
 #: monsterlist_v0610_npcs1.json:crossroads_backguard
@@ -33445,7 +33457,7 @@ msgstr "Ossudo campeão"
 
 #: monsterlist_wilderness.json:undead_warden
 msgid "Undead warden"
-msgstr "Director morto-vivo"
+msgstr "Diretor morto-vivo"
 
 #: monsterlist_wilderness.json:cave_guardian
 msgid "Cave guardian"
@@ -36245,8 +36257,11 @@ msgid ""
 "A mage called Vacor in southwest Fallhaven has been trying to cast a rift spell.\n"
 "There was something not right about him, he seemed very obsessed with his spell. Something about him gaining a power from it."
 msgstr ""
-"Um mago chamado Vacor no sudoeste Fallhaven vem tentando lançar um feitiço de ruptura.\n"
-"Aparentemente, tem algo errado com ele, pois ele aparenta estar muito obsecado com seu feitiço. Está relacionado a ele ganhar um certo poder com isso."
+"Um mago chamado Vacor no sudoeste Fallhaven vem tentando lançar um feitiço "
+"de ruptura.\n"
+"Aparentemente, tem algo errado com ele, pois ele aparenta estar muito "
+"obcecado com seu feitiço. Está relacionado a ele ganhar um certo poder com "
+"isso."
 
 #: questlist.json:vacor:20
 msgid "Vacor wants me to bring him the four pieces of the rift spell that he claims was stolen from him. The four bandits should be somewhere south of Fallhaven."
@@ -37572,7 +37587,7 @@ msgstr "Em segundo lugar, eu devo colocar um ídolo ao lado da cama de Larni, o 
 
 #: questlist_v0611_3.json:fiveidols:34
 msgid "Fourth is Emerei, that can be found to the southeast of Remgard."
-msgstr "A quarta é Emerei, que pode ser encontradp a sudeste de Remgard."
+msgstr "A quarta é Emerei, que pode ser encontra a sudeste de Remgard."
 
 #: questlist_v0611_3.json:fiveidols:35
 msgid "The fifth person is Carthe. Carthe lives on the eastern shore of Remgard, near the tavern."
