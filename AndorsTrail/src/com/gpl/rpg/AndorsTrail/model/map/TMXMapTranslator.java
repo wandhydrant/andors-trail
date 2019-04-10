@@ -313,7 +313,7 @@ public final class TMXMapTranslator {
 						else if (prop.name.equalsIgnoreCase(LAYERNAME_TOP)) layerNames.topLayersName = prop.value;
 						else if (prop.name.equalsIgnoreCase(LAYERNAME_WALKABLE)) layerNames.walkableLayersName = prop.value;
 						else if (AndorsTrailApplication.DEVELOPMENT_VALIDATEDATA) {
-							if (!requirementPropertiesNames.contains(prop.name))
+							if (!requirementPropertiesNames.contains(prop.name.toLowerCase()))
 								L.log("OPTIMIZE: Map " + map.name + " contains replace area with unknown property \"" + prop.name + "\".");
 						}
 					}
