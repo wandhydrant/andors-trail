@@ -17,6 +17,7 @@ public final class Requirement {
 		,consumedBonemeals
 		,hasActorCondition
 		,factionScore
+		,random
 	}
 
 	public final RequirementType requireType;
@@ -34,8 +35,9 @@ public final class Requirement {
 		this.requireID = requireID;
 		this.value = value;
 		this.negate = negate;
+
 	}
-	
+
 	public Requirement(QuestProgress qp) {
 		this.requireType = RequirementType.questProgress;
 		this.requireID = qp.questID;
@@ -52,32 +54,34 @@ public final class Requirement {
 		buf.append(value);
 		return buf.toString();
 	}
-	
+
 	public boolean isValid() {
 		switch (this.requireType) {
-		case consumedBonemeals:
-			return value >= 0;
-		case hasActorCondition:
-			return requireID != null;
-		case inventoryKeep:
-		case inventoryRemove:
-		case usedItem:
-			return requireID != null && value >= 0;
-		case killedMonster:
-			return requireID != null && value >= 0;
-		case questLatestProgress:
-		case questProgress:
-			return requireID != null && value >= 0;
-		case skillLevel:
-			return requireID != null && value >= 0;
-		case spentGold:
-			return value >= 0;
-		case timerElapsed:
-			return requireID != null && value >= 0;
-		case wear:
-			return requireID != null;
-		default:
-			return false;
+			case consumedBonemeals:
+				return value >= 0;
+			case hasActorCondition:
+				return requireID != null;
+			case inventoryKeep:
+			case inventoryRemove:
+			case usedItem:
+				return requireID != null && value >= 0;
+			case killedMonster:
+				return requireID != null && value >= 0;
+			case questLatestProgress:
+			case questProgress:
+				return requireID != null && value >= 0;
+			case skillLevel:
+				return requireID != null && value >= 0;
+			case spentGold:
+				return value >= 0;
+			case random:
+				return requireID != null;
+			case timerElapsed:
+				return requireID != null && value >= 0;
+			case wear:
+				return requireID != null;
+			default:
+				return false;
 		}
 	}
 }
