@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: Andors Trail\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-11-10 11:48+0000\n"
-"PO-Revision-Date: 2019-04-22 03:27+0000\n"
+"PO-Revision-Date: 2019-05-06 11:59+0000\n"
 "Last-Translator: ssantos <ssantos@web.de>\n"
 "Language-Team: Portuguese <https://hosted.weblate.org/projects/andors-trail/"
 "game-content/pt/>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 3.6\n"
+"X-Generator: Weblate 3.7-dev\n"
 "X-Launchpad-Export-Date: 2015-11-02 12:27+0000\n"
 
 #: [none]
@@ -24781,7 +24781,7 @@ msgstr ""
 
 #: conversationlist_graveyard1.json:cithurn_64:0
 msgid "I'm looking for my Brother, Andor. He looks a bit like me."
-msgstr ""
+msgstr "Estou à procura do meu irmão, Andor. Ele parece-se um pouco comigo."
 
 #: conversationlist_graveyard1.json:cithurn_64:1
 #: conversationlist_graveyard1.json:cithurn_64:2
@@ -26843,7 +26843,7 @@ msgstr "Saída especial?"
 
 #: conversationlist_guynmart_npc.json:guynmart_steward4_12
 msgid "You again!"
-msgstr ""
+msgstr "Você novamente!"
 
 #: conversationlist_guynmart_npc.json:guynmart_steward4_12:0
 msgid "Yes, me. And I know what you have done! I talked to Norgothla in the woods and found Lord Guynmart and Lovis here in the dungeons."
@@ -27125,7 +27125,7 @@ msgstr ""
 #: conversationlist_guynmart_npc.json:guynmart_cook_32:0
 #: conversationlist_stoutford_combined.json:lakecave2_troll_70:1
 msgid "It was worth a try."
-msgstr ""
+msgstr "Valeu a pena tentar."
 
 #: conversationlist_guynmart_npc.json:guynmart_cook_34
 msgid "Yes, of course. Just a second."
@@ -27442,19 +27442,19 @@ msgstr "Aqui, eu deveria te dar isso."
 
 #: conversationlist_guynmart_npc.json:guynmart_lovis_30:1
 msgid "Oh dear - I forgot to bring your flute!"
-msgstr ""
+msgstr "Oh não - Esqueci de trazer sua flauta!"
 
 #: conversationlist_guynmart_npc.json:guynmart_lovis_40
 msgid "My flute! How I have missed it! I believe you now."
-msgstr ""
+msgstr "A minha flauta! Como me faltou! Acredito em si agora."
 
 #: conversationlist_guynmart_npc.json:guynmart_lovis_40:0
 msgid "This is settled then. Let us now look for an exit."
-msgstr ""
+msgstr "Então está resolvido. Vamos agora procurar uma saída."
 
 #: conversationlist_guynmart_npc.json:guynmart_lovis_102
 msgid "What a dreadful place. Time seems endless here."
-msgstr ""
+msgstr "Que lugar horrível. O tempo parece não ter fim aqui."
 
 #: conversationlist_guynmart_npc.json:guynmart_lovis_102:0
 msgid "Yes, but we must not give up hope."
@@ -27466,7 +27466,7 @@ msgstr "Vou tocar algo na minha flauta. Talvez isso nos dê alguma esperança."
 
 #: conversationlist_guynmart_npc.json:guynmart_lovis_104:0
 msgid "Please do. Maybe a tune you used to play for Lady Hannah?"
-msgstr ""
+msgstr "Por favor, faça. Talvez uma música que você tocava para Lady Hannah?"
 
 #: conversationlist_guynmart_npc.json:guynmart_lovis_104:1
 msgid "Is that a good idea? We might disturb someone."
@@ -27480,7 +27480,7 @@ msgstr ""
 
 #: conversationlist_guynmart_npc.json:guynmart_lovis_110:0
 msgid "What a lovely tune! I almost seem to understand the meaning."
-msgstr ""
+msgstr "Que melodia adorável! Eu quase pareço entender o significado."
 
 #: conversationlist_guynmart_npc.json:guynmart_lovis_110:1
 msgid "Eh, nice, thank you for trying."
@@ -27492,7 +27492,7 @@ msgstr ""
 
 #: conversationlist_guynmart_npc.json:guynmart_lovis_130:0
 msgid "...all my joy ... my delight..."
-msgstr ""
+msgstr "...toda a minha alegria ... meu prazer..."
 
 #: conversationlist_guynmart_npc.json:guynmart_lovis_190
 msgid "Hush - I hear footsteps."
@@ -27507,6 +27507,9 @@ msgstr ""
 #: conversationlist_guynmart_npc.json:guynmart_lovis_200
 msgid "Oh no! Look! The torturer! I will run around him and look for Guynmart's personal guards outside in the wood. They will help us. I hope Guynmart himself is also with them."
 msgstr ""
+"Oh, não! Olhe! O torturador! Vou correr à volta dele e procurar os guardas "
+"pessoais do Guynmart lá fora na floresta. Eles vão ajudar-nos. Espero que o "
+"próprio Guynmart também esteja com eles."
 
 #: conversationlist_guynmart_npc.json:guynmart_lovis_200:0
 msgid "OK, we will see each other later."
@@ -27579,10 +27582,15 @@ msgstr "Oh sim - Estou impressionado com a sua generosidade!"
 #: conversationlist_guynmart_npc.json:guynmart_lovis2_150
 msgid "We prepared a surprise for you. Go and look east of the castle near the sheep pasture. Farewell until we meet again!"
 msgstr ""
+"Preparámos uma surpresa para si. Vá e olhe para leste do castelo, perto do "
+"pasto de ovelhas. Adeus, até nos encontrarmos de novo!"
 
 #: conversationlist_guynmart_npc.json:guynmart_lovis2_151
+#, fuzzy
 msgid "At last we have to part. Farewell until we meet again! When you will find your brother, tell him that he is always welcome."
 msgstr ""
+"Finalmente temos de partir. Adeus até nos encontrarmos de novo! Quando "
+"encontrar o seu irmão, diga-lhe que ele é sempre bem-vindo."
 
 #: conversationlist_guynmart_npc.json:guynmart_lovis2_200
 msgid "Regrettably, we still have to sort out an unpleasant thing. Let our shepherd speak."
