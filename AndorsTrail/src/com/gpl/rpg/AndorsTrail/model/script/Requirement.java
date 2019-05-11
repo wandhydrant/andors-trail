@@ -1,6 +1,7 @@
 package com.gpl.rpg.AndorsTrail.model.script;
 
 import com.gpl.rpg.AndorsTrail.model.quest.QuestProgress;
+import com.gpl.rpg.AndorsTrail.util.ConstRange;
 
 public final class Requirement {
 	public static enum RequirementType {
@@ -24,18 +25,20 @@ public final class Requirement {
 	public final String requireID;
 	public final int value;
 	public final boolean negate;
+	public final ConstRange chance;
 
 	public Requirement(
 			RequirementType requireType
 			, String requireID
 			, int value
 			, boolean negate
+			, ConstRange chance
 	) {
 		this.requireType = requireType;
 		this.requireID = requireID;
 		this.value = value;
 		this.negate = negate;
-
+		this.chance = chance;
 	}
 
 	public Requirement(QuestProgress qp) {
@@ -43,6 +46,7 @@ public final class Requirement {
 		this.requireID = qp.questID;
 		this.value = qp.progress;
 		this.negate = false;
+		this.chance = null;
 	}
 
 	public String toString() {
@@ -75,7 +79,7 @@ public final class Requirement {
 			case spentGold:
 				return value >= 0;
 			case random:
-				return requireID != null;
+				return chance != null;
 			case timerElapsed:
 				return requireID != null && value >= 0;
 			case wear:

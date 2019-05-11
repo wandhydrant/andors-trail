@@ -28,7 +28,6 @@ import com.gpl.rpg.AndorsTrail.model.quest.QuestLogEntry;
 import com.gpl.rpg.AndorsTrail.model.quest.QuestProgress;
 import com.gpl.rpg.AndorsTrail.model.script.Requirement;
 import com.gpl.rpg.AndorsTrail.model.script.ScriptEffect;
-import com.gpl.rpg.AndorsTrail.resource.parsers.ResourceParserUtils;
 import com.gpl.rpg.AndorsTrail.util.ConstRange;
 import com.gpl.rpg.AndorsTrail.util.L;
 
@@ -297,7 +296,7 @@ public final class ConversationController {
 				result =  stats.getSpentGold() >= requirement.value;
 				break;
 			case random:
-				result = Constants.rollResult(ResourceParserUtils.parseChance(requirement.requireID));
+				result = Constants.rollResult(requirement.chance);
 				break;
 			case consumedBonemeals:
 				result =  stats.getNumberOfUsedBonemealPotions() >= requirement.value;
