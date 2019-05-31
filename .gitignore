@@ -56,7 +56,8 @@ gradle-app.setting
 # gradle/wrapper/gradle-wrapper.properties
 
 # Signing files
-.signing/
+.signing/*.keystore
+!.signing/debug.keystore
 
 # User-specific configurations
 .idea/libraries/
@@ -72,6 +73,7 @@ gradle-app.setting
 .idea/caches/build_file_checksums.ser
 .idea/caches/gradle_models.ser
 .idea/vcs.xml
+.idea/assetWizardSettings.xml
 *.iml
 
 # OS-specific files
