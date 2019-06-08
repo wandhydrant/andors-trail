@@ -18,9 +18,9 @@
 \n:( 
 \n
 \nВозможно, сохранение повреждено.</string>
-    <string name="dialog_loading_failed_incorrectversion">Следу Эндора не удалось загрузить файл сохранения игры. Это сохранение сделано в более новой версии, чем текущая.</string>
+    <string name="dialog_loading_failed_incorrectversion">Следу Эндора не удалось загрузить файл сохранения игры. Это сохранение сделано в более новой версии, чем запущенная.</string>
     <string name="dialog_close">Закрыть</string>
-    <string name="dialog_monsterencounter_title">Схватка</string>
+    <string name="dialog_monsterencounter_title">Встреча</string>
     <string name="dialog_monsterencounter_message">Вы хотите напасть\?
 \nСложность: %1$s</string>
     <string name="dialog_monsterencounter_info">Инфо</string>
@@ -28,7 +28,7 @@
     <string name="status_ap">ОД:</string>
     <string name="status_exp">ОО:</string>
     <string name="heroinfo_char">Обзор</string>
-    <string name="heroinfo_inv">Предметы</string>
+    <string name="heroinfo_inv">Вещи</string>
     <string name="heroinfo_skill">Навыки</string>
     <string name="heroinfo_levelup">Повышение уровня</string>
     <string name="heroinfo_level">Уровень</string>
@@ -65,7 +65,7 @@
     <string name="inventory_item_dropped">%1$s выброшен.</string>
     <string name="inventory_item_equipped">Вы надели %1$s.</string>
     <string name="dialog_loot_pickall">Взять всё</string>
-    <string name="dialog_loot_foundgold">Вы нашли %1$d золотых.</string>
+    <string name="dialog_loot_foundgold">Вы нашли %1$d золота.</string>
     <string name="dialog_loot_pickedupitem">Вы подобрали предмет.</string>
     <string name="dialog_loot_pickedupitems">Вы подобрали %1$d предмета(ов).</string>
     <string name="dialog_groundloot_title">Предметы</string>
@@ -94,18 +94,18 @@
     <string name="traitsinfo_attack_damage">Сила атаки:</string>
     <string name="traitsinfo_defense_chance">Шанс блока:</string>
     <string name="traitsinfo_defense_damageresist">Сопротивление урону:</string>
-    <string name="iteminfo_action_use">Использовать</string>
+    <string name="iteminfo_action_use">Применить</string>
     <string name="iteminfo_action_equip">Надеть</string>
     <string name="iteminfo_action_unequip">Снять</string>
-    <string name="iteminfo_action_use_ap">Использовать (%1$d ОД)</string>
+    <string name="iteminfo_action_use_ap">Применить(%1$d ОД)</string>
     <string name="iteminfo_action_equip_ap">Надеть (%1$d ОД)</string>
     <string name="iteminfo_action_unequip_ap">Снять (%1$d ОД)</string>
-    <string name="startscreen_continue">Продолжить текущую игру</string>
+    <string name="startscreen_continue">Продолжить игру</string>
     <string name="startscreen_newgame">Новая игра</string>
     <string name="startscreen_about">Об игре/помощь</string>
     <string name="startscreen_enterheroname">Введите имя героя</string>
     <string name="startscreen_load">Загрузить</string>
-    <string name="traitsinfo_criticalhit_skill">Шанс критического удара:</string>
+    <string name="traitsinfo_criticalhit_skill">Навык критического удара:</string>
     <string name="traitsinfo_criticalhit_multiplier">Критический множитель:</string>
     <string name="iteminfo_category">Категория:</string>
     <string name="startscreen_newgame_confirm">Вы потеряете свою текущую игру и своего текущего персонажа, вы уверены, что хотите начать новую игру\?</string>
@@ -125,7 +125,7 @@
     <string name="shop_item_bought">%1$s куплен.</string>
     <string name="shop_item_sold">%1$s продан.</string>
     <string name="levelup_title">Новый уровень</string>
-    <string name="levelup_description">Добро пожаловать на %1$d уровень!</string>
+    <string name="levelup_description">Поздравляем с %1$d уровнем!</string>
     <string name="levelup_buttontext">Новый уровень</string>
     <string name="levelup_add_health">Увеличить здоровье (+%1$d ОЗ)</string>
     <string name="levelup_add_health_description">Добавить %1$d к максимальному здоровью.</string>
@@ -142,36 +142,36 @@
     <string name="about_button2">Авторы</string>
     <string name="about_button3">Лицензия</string>
     <string name="about_contents3">" Это бесплатное приложение; вы можете изменять ее и модифицировать согласно правилам GNU General Public License изданными Free Software Foundation; либо лицензии версии 2, либо (на ваше усмотрение) более поздней версией. &lt;br /&gt; &lt;br /&gt; Игра создана с надеждой что она будет интересна, но БЕЗ ВСЯКИХ ГАРАНТИЙ; даже без подразумеваемых гарантии ТОВАРНОЙ ПРИГОДНОСТИ или ПРИГОДНОСТИ ДЛЯ ОПРЕДЕЛЕННЫХ ЦЕЛЕЙ. Смотрите GNU General Public License для больших подробностей.&lt;br /&gt; &lt;br /&gt; Вы принимаете условия GNU General Public License вместе с установкой этой программы; если нет, смотрите &lt;a href=http://www.gnu.org/licenses&gt;http://www.gnu.org/licenses&lt;/a&gt;&lt;br /&gt; &lt;br /&gt; За исходным кодом и пожеланиями, пожалуйста, посетите страницу проекта на &lt;a href=https://github.com/Zukero/andors-trail/&gt;https://github.com/Zukero/andors-trail/&lt;/a&gt;&lt;br /&gt; "</string>
-    <string name="dialog_newversion_title">Привет</string>
+    <string name="dialog_newversion_title">Здравствуйте</string>
     <string name="dialog_newversion_message">Спасибо за загрузку игры След Эндора!
 \n 
 \n Запомните, игра находится в СТАДИИ РАЗРАБОТКИ, это означает что не все карты еще закончены.
 \n Пожалуйста, посетите форум проекта, чтобы получить более подробную информацию или внести свой вклад в проект (см. Об игре).
 \n 
 \n Спасибо всем за отзывы!</string>
-    <string name="questlog_includecompleted_prompt">Выберите квесты для отображения</string>
-    <string name="questlog_includecompleted_hidecompleted">Скрыть завершенные квесты</string>
-    <string name="questlog_includecompleted_includecompleted">Включая завершенные квесты</string>
-    <string name="questlog_includecompleted_onlycompleted">Только завершенные квесты</string>
+    <string name="questlog_includecompleted_prompt">Выберите, какие задания показать</string>
+    <string name="questlog_includecompleted_hidecompleted">Скрыть выполненные задания</string>
+    <string name="questlog_includecompleted_includecompleted">Включая выполненные задания</string>
+    <string name="questlog_includecompleted_onlycompleted">Только выполненные задания</string>
     <string name="questlog_queststatus">Статус: %1$s</string>
     <string name="questlog_queststatus_inprogress">В процессе</string>
     <string name="questlog_queststatus_completed">Выполнено</string>
     <string name="preferences_display_category">Отображение</string>
     <string name="preferences_display_fullscreen_title">Во весь экран</string>
     <string name="preferences_display_fullscreen">Отображение игры в полноэкранном режиме. (Требуется перезапуск)</string>
-    <string name="preferences_dialog_category">Диалоги подтверждения</string>
+    <string name="preferences_dialog_category">Диалоговое окно подтверждения</string>
     <string name="preferences_dialog_confirmrest_title">Подтверждение отдыха</string>
-    <string name="preferences_dialog_confirmrest">Задавать вопрос, хотите ли вы отдохнуть при попадании в кровать. Иначе, вы всегда будете автоматически отдыхать.</string>
+    <string name="preferences_dialog_confirmrest">Задавать вопрос, хотите ли вы отдохнуть при посещении кровати. Иначе вы всегда будете автоматически отдыхать.</string>
     <string name="preferences_dialog_confirmattack_title">Подтверждение атаки</string>
     <string name="preferences_dialog_confirmattack">Показывать диалог \'Вы хотите напасть...\?\' при атаке монстра.</string>
     <string name="preferences_dialog_monsterloot_title">Показ результатов победы</string>
-    <string name="preferences_dialog_monsterloot">Выберите способ показа результатов схватки (золото, опыт, предметы).</string>
+    <string name="preferences_dialog_monsterloot">Выберите способ показа итогов встречи(золото, опыт, предметы).</string>
     <string name="preferences_combat_category">Бой</string>
     <string name="preferences_combat_speed_title">Скорость боя</string>
     <string name="preferences_combat_speed">Выбор скорости атаки монстров.</string>
     <string name="preferences_display_loot_dialog">Всегда показывать диалог</string>
     <string name="preferences_display_loot_dialog_on_items">Показывать диалог, если найдены предметы</string>
-    <string name="preferences_display_loot_dialog_on_items_or_toast">Диалог для предметов, для остального уведомление</string>
+    <string name="preferences_display_loot_dialog_on_items_or_toast">Диалог для предметов, уведомление иначе</string>
     <string name="preferences_display_loot_toast">Показывать уведомление</string>
     <string name="preferences_display_loot_toast_on_items">Показывать уведомление, если найдены предметы</string>
     <string name="preferences_display_loot_never">Ничего не показывать</string>
@@ -191,7 +191,7 @@
     <string name="iteminfo_effect_works_on_source">На источник</string>
     <string name="iteminfo_effect_works_on_target">На цель</string>
     <string name="iteminfo_effect_works_when_hitting_target">При ударе цели</string>
-    <string name="iteminfo_effect_works_when_killing_target">За каждое убийство</string>
+    <string name="iteminfo_effect_works_when_killing_target">При убийстве цели</string>
     <string name="iteminfo_effect_works_when_used">Когда используется</string>
     <string name="iteminfo_effect_works_when_equipped">Когда надет</string>
     <string name="iteminfo_effect_decrease_current_hp">Лишает %1$s ОЗ</string>
@@ -306,7 +306,7 @@
     <string name="skill_shortdescription_barter">Лучшие цены в магазине</string>
     <string name="skill_shortdescription_dodge">Увеличение шанса блока</string>
     <string name="skill_shortdescription_barkskin">Сопротивление урону</string>
-    <string name="skill_shortdescription_more_criticals">Увеличение шанса критического удара</string>
+    <string name="skill_shortdescription_more_criticals">Увеличение навыка критического удара</string>
     <string name="skill_shortdescription_better_criticals">Увеличение критического урона</string>
     <string name="skill_shortdescription_speed">Увеличение максимума очков действий</string>
     <string name="skill_shortdescription_coinfinder">Высокий шанс найти золото</string>
@@ -379,7 +379,7 @@
     <string name="inventory_movetop">Положить вверх</string>
     <string name="inventory_movebottom">Положить вниз</string>
     <string name="actorinfo_immune_criticals">Иммунитет к критическим ударам</string>
-    <string name="traitsinfo_criticalhit_effectivechance">Эффективный шанс критического удара:</string>
+    <string name="traitsinfo_criticalhit_effectivechance">Эффективный шанс крит. удара:</string>
     <string name="skill_title_crit1">Внутреннее кровотечение</string>
     <string name="skill_shortdescription_crit1">Шанс вызвать внутреннее кровотечение</string>
     <string name="skill_longdescription_crit1">При каждом критическом ударе, есть %1$d %% шанс, что он вызовет внутренние кровотечение у цели. Внутреннее кровотечение сильно снижает боевые способности, что делает цель менее способной совершать атаки.</string>
@@ -413,13 +413,13 @@
     <string name="iteminfo_effect_increase_attack_damage_minmax">Увеличивает силу атаки на %1$d-%2$d</string>
     <string name="iteminfo_effect_decrease_attack_damage">Уменьшает силу атаки на %1$d</string>
     <string name="iteminfo_effect_decrease_attack_damage_minmax">Уменьшает силу атаки на %1$d-%2$d</string>
-    <string name="iteminfo_effect_increase_critical_skill">Увеличивает шанс критического удара на %1$d</string>
+    <string name="iteminfo_effect_increase_critical_skill">Увеличивает шанс крит. удара на %1$d</string>
     <string name="iteminfo_effect_decrease_critical_skill">Уменьшает шанс крит. удара на %1$d</string>
     <string name="iteminfo_effect_critical_multiplier">Увеличивает крит. множитель в %1$.1f раз(а)</string>
     <string name="iteminfo_effect_increase_block_chance">Увеличивает шанс блока на %1$d</string>
     <string name="iteminfo_effect_decrease_block_chance">Уменьшает шанс блока на %1$d</string>
-    <string name="iteminfo_effect_increase_damage_resistance">Увеличивает сопротивление повреждениям на %1$d</string>
-    <string name="iteminfo_effect_decrease_damage_resistance">Уменьшает сопротивление повреждениям на %1$d</string>
+    <string name="iteminfo_effect_increase_damage_resistance">Увеличивает сопротивление урону на %1$d</string>
+    <string name="iteminfo_effect_decrease_damage_resistance">Уменьшает сопротивление урону на %1$d</string>
     <string name="iteminfo_effect_increase_use_cost">Цена использования предмета в бою +%1$d ОД</string>
     <string name="iteminfo_effect_decrease_use_cost">Цена использования предмета в бою -%1$d ОД</string>
     <string name="iteminfo_effect_increase_reequip_cost">Цена надевания предмета в бою +%1$d ОД</string>
@@ -436,16 +436,16 @@
     <string name="combat_result_monstermoved">%1$s движется.</string>
     <string name="combat_log_title">Боевой лог</string>
     <string name="localize_resources_from_mo_filename">ru.mo</string>
-    <string name="conversation_reward_quest_finished">[Квест завершен: \"%1$s\"]</string>
-    <string name="conversation_reward_quest_updated">[Квест обновлен: \"%1$s\"]</string>
-    <string name="skill_title_weapon_prof_dagger">Умение: Кинжалы</string>
-    <string name="skill_title_weapon_prof_1hsword">Умение: Одноручные мечи</string>
-    <string name="skill_title_weapon_prof_2hsword">Умение: Двуручные мечи</string>
-    <string name="skill_title_weapon_prof_axe">Умение: Топоры</string>
-    <string name="skill_title_weapon_prof_blunt">Умение: Дробящее оружие</string>
-    <string name="skill_title_armor_prof_shield">Умение: Щиты</string>
-    <string name="skill_title_armor_prof_light">Умение: Лёгкая броня</string>
-    <string name="skill_title_armor_prof_heavy">Умение: Тяжёлая броня</string>
+    <string name="conversation_reward_quest_finished">[Задание выполнено: \"%1$s\"]</string>
+    <string name="conversation_reward_quest_updated">[Задание обновлено: \"%1$s\"]</string>
+    <string name="skill_title_weapon_prof_dagger">Кинжалы</string>
+    <string name="skill_title_weapon_prof_1hsword">Одноручные мечи</string>
+    <string name="skill_title_weapon_prof_2hsword">Двуручные мечи</string>
+    <string name="skill_title_weapon_prof_axe">Топоры</string>
+    <string name="skill_title_weapon_prof_blunt">Дробящее оружие</string>
+    <string name="skill_title_armor_prof_shield">Щиты</string>
+    <string name="skill_title_armor_prof_light">Лёгкая броня</string>
+    <string name="skill_title_armor_prof_heavy">Тяжёлая броня</string>
     <string name="skill_title_fightstyle_dualwield">Боевой стиль: Парное оружие</string>
     <string name="skill_title_fightstyle_2hand">Боевой стиль: Двуручное оружие</string>
     <string name="skill_title_fightstyle_weapon_shield">Боевой стиль: Оружие и Щит</string>
@@ -507,8 +507,8 @@
     <string name="preferences_ui_show_quickslots_when_toolbox_is_visible">Быстрые слоты отображаются сразу при открытии панели инструментов</string>
     <string name="startscreen_non_release_version">Andor\'s Trail все еще находится в разработке. Сохранения, сделанные в этой версии игры могут оказаться несовместимы с релизной версией.</string>
     <string name="heroinfo_gamestats">Статистика игры</string>
-    <string name="heroinfo_gamestats_quests">Завершено квестов</string>
-    <string name="heroinfo_gamestats_deaths">Сколько раз терял сознание</string>
+    <string name="heroinfo_gamestats_quests">Выполнено заданий</string>
+    <string name="heroinfo_gamestats_deaths">Количество потерь сознания</string>
     <string name="heroinfo_gamestats_spent_gold">Потрачено золота в магазинах</string>
     <string name="heroinfo_gamestats_bonemeals">Использовано зелий из костной муки</string>
     <string name="heroinfo_gamestats_num_used_items">Использовано предметов</string>
@@ -543,24 +543,24 @@
     <string name="inventory_category_quest">Квестовые</string>
     <string name="inventory_category_other">Прочие</string>
     <string name="inventory_sort_custom">без сортировки</string>
-    <string name="inventory_sort_name">по имени</string>
-    <string name="inventory_sort_price">по цене</string>
-    <string name="inventory_sort_quantity">по количеству</string>
-    <string name="inventory_sort_rarity">по редкости</string>
-    <string name="inventory_sort_type">по типу</string>
-    <string name="shoplist_sort_custom">без сортировки</string>
-    <string name="shoplist_sort_name">по имени</string>
-    <string name="shoplist_sort_price">по цене</string>
-    <string name="shoplist_sort_quantity">по количеству</string>
-    <string name="shoplist_sort_rarity">по редкости</string>
-    <string name="shoplist_sort_type">по типу</string>
+    <string name="inventory_sort_name">Названию</string>
+    <string name="inventory_sort_price">Цене</string>
+    <string name="inventory_sort_quantity">Количеству</string>
+    <string name="inventory_sort_rarity">Редкости</string>
+    <string name="inventory_sort_type">Типу</string>
+    <string name="shoplist_sort_custom">Не сортировать</string>
+    <string name="shoplist_sort_name">Названию</string>
+    <string name="shoplist_sort_price">Цене</string>
+    <string name="shoplist_sort_quantity">Количеству</string>
+    <string name="shoplist_sort_rarity">Редкости</string>
+    <string name="shoplist_sort_type">Типу</string>
     <string name="skill_category_all">Все</string>
     <string name="skill_category_offense">Нападение</string>
     <string name="skill_category_defense">Защита</string>
-    <string name="skill_category_criticals">Критические попадания</string>
-    <string name="skill_category_immunity">Иммунитеты</string>
-    <string name="skill_category_utility">Вспомогательные</string>
-    <string name="skill_category_speciality">Специальности</string>
+    <string name="skill_category_criticals">Крит. удары</string>
+    <string name="skill_category_immunity">Иммунитет</string>
+    <string name="skill_category_utility">Вспомогательное</string>
+    <string name="skill_category_speciality">Специальность</string>
     <string name="skill_category_proficiency">Умения</string>
     <string name="skill_sort_unsorted">Без сортировки</string>
     <string name="skill_sort_name">Название</string>
@@ -573,18 +573,18 @@
     <string name="preferences_display_theme_charcoal">Обсидиан</string>
     <string name="change_theme_requires_restart">Для изменения темы интерфейса требуется перезапуск. След Эндора закрыт.</string>
     <string name="dialog_recenter">К игроку</string>
-    <string name="dialog_more">Ещё</string>
+    <string name="dialog_more">Далее</string>
     <string name="dialog_monsterencounter_conditions">Воздействия</string>
     <string name="combat_condition_monster_apply">На %1$s воздействует %2$s.</string>
     <string name="combat_condition_monster_clear">%1$s очищается от %2$s.</string>
     <string name="combat_condition_monster_immune">%1$s теперь имеет иммунитет к %2$s.</string>
     <string name="actorcondition_info_immunity">Иммунитет к %1$s</string>
     <string name="iteminfo_effect_works_on_attacker">На атакующего</string>
-    <string name="iteminfo_effect_works_when_hit_by_attacker">При попадании атакующего</string>
+    <string name="iteminfo_effect_works_when_hit_by_attacker">При ударе атакующего</string>
     <string name="iteminfo_effect_works_when_killed_by_attacker">При убийстве атакующего</string>
     <string name="inventory_selectitem">Выберите предмет для назначения</string>
     <string name="combat_log_noentries">Нет записей.</string>
     <string name="preferences_high_quality_filters_title">Высококачественные фильтры</string>
-    <string name="preferences_high_quality_filters">Отключите, если возникают проблемы с отображением на отфильтрованных картах (например, в темных пещерах). Включение этой опции заставит игру использовать расширенные цветовые фильтры вместо сплошных цветных наложений.</string>
+    <string name="preferences_high_quality_filters">Отключите, если возникают проблемы с отображением, например, в темных пещерах. Включение этой опции заставит игру использовать цветовые фильтры.</string>
     <string name="storage_permissions_mandatory">Доступ к памяти обязательно нужен для Следа Эндора для обработки сохранений игры и карты мира. След Эндора закрыт.</string>
 </resources>
