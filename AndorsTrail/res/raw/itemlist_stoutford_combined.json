@@ -261,6 +261,7 @@
                 "max":14
             },
             "increaseAttackCost":6,
+            "increaseAttackChance":8,
             "increaseCriticalSkill":10,
             "setCriticalMultiplier":2.0
         }
@@ -975,9 +976,9 @@
         "id":"erwyn_coin",
         "iconID":"items_misc:10",
         "name":"Gold coins",
+        "displaytype":"quest",
         "hasManualPrice":1,
         "baseMarketCost":1,
-        "displaytype":"quest",
         "category":"other",
         "description":"Special coins against powerful undead"
     },
