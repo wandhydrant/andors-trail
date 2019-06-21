@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: andors-trail\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-11-10 11:48+0000\n"
-"PO-Revision-Date: 2019-04-02 02:04+0000\n"
-"Last-Translator: 507GamerLab <tyfnyakut@outlook.com>\n"
+"PO-Revision-Date: 2019-06-23 10:00+0000\n"
+"Last-Translator: Gökhan Demirden <gkdemirden@gmail.com>\n"
 "Language-Team: Turkish <https://hosted.weblate.org/projects/andors-trail/"
 "game-content/tr/>\n"
 "Language: tr\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.6-dev\n"
+"X-Generator: Weblate 3.7.1-dev\n"
 "X-Launchpad-Export-Date: 2015-11-02 12:26+0000\n"
 
 #: [none]
@@ -213,7 +213,7 @@ msgstr "Sakarlık"
 
 #: actorconditions_stoutford.json:curse_undead
 msgid "Curse of the Undead"
-msgstr "Undead'in Laneti"
+msgstr "Yaşayan Ölü'nün Laneti"
 
 #: actorconditions_graveyard1.json:contagion2
 msgid "Spore contagion"
@@ -229,7 +229,7 @@ msgstr "Güvenlik açığı"
 
 #: actorconditions_graveyard1.json:flesh_rot
 msgid "Flesh rot"
-msgstr ""
+msgstr "çürük et"
 
 #: actorconditions_graveyard1.json:putrefaction
 msgid "Putrefaction"
@@ -253,19 +253,19 @@ msgstr ""
 
 #: actorconditions_trader_teksin.json:light_attack
 msgid "Lightning attack"
-msgstr ""
+msgstr "Yıldırım saldırısı"
 
 #: actorconditions_stoutford_combined.json:nausea
 msgid "Nausea"
-msgstr ""
+msgstr "Bulantı"
 
 #: actorconditions_stoutford_combined.json:poison_blood
 msgid "Blood poisoning"
-msgstr ""
+msgstr "Kan zehirlenmesi"
 
 #: actorconditions_stoutford_combined.json:deftness
 msgid "Deftness"
-msgstr ""
+msgstr "Beceri"
 
 #: actorconditions_stoutford_combined.json:tight_grip
 msgid "Tight grip"
@@ -281,15 +281,16 @@ msgstr ""
 
 #: conversationlist_mikhail.json:mikhail_gamestart
 msgid "Oh good, you are awake."
-msgstr ""
+msgstr "Oh iyi, kalkmışsın."
 
 #: conversationlist_mikhail.json:mikhail_visited
 msgid "I can't seem to find your brother Andor anywhere. He hasn't been back since he left yesterday."
 msgstr ""
+"Abim Andor'u hiçbir yerde göremiyorum. Dün ayrıldığından beri geri dönmedi."
 
 #: conversationlist_mikhail.json:mikhail3
 msgid "Never mind, he will probably be back soon."
-msgstr ""
+msgstr "Boşver, muhtemelen en yakın zamanda dönecektir."
 
 #: conversationlist_mikhail.json:mikhail_default
 #: conversationlist_crossglen_leonid.json:leonid_continue
@@ -301,68 +302,78 @@ msgstr "Başka hangi konuda yardımcı olabilirim?"
 #: conversationlist_mikhail.json:mikhail_default:1
 #: conversationlist_mikhail.json:mikhail_default:2
 msgid "Do you have any more tasks for me?"
-msgstr ""
+msgstr "Benim için daha fazla görevin var mı?"
 
 #: conversationlist_mikhail.json:mikhail_default:3
 msgid "Do you have any tasks for me?"
-msgstr ""
+msgstr "Benim için daha fazla görevin var mı?"
 
 #: conversationlist_mikhail.json:mikhail_default:4
 msgid "Is there anything else you can tell me about Andor?"
-msgstr ""
+msgstr "Bana Andor hakkında anlatacağın daha başka bir şeyin var mı?"
 
 #: conversationlist_mikhail.json:mikhail_tasks
 msgid "Oh yes, there were some things I need help with, bread and rats. Which one would you like to talk about?"
 msgstr ""
+"A evet, ekmek ve sıçanlar konusunda yardıma ihtiyacım olan bazı şeyler "
+"vardı. Hangi birinden konuşmak istersin?"
 
 #: conversationlist_mikhail.json:mikhail_tasks:0
 #: conversationlist_mikhail.json:mikhail_rats_done:0
 msgid "What about the bread?"
-msgstr ""
+msgstr "Ekmeğe ne dersin?"
 
 #: conversationlist_mikhail.json:mikhail_tasks:1
 #: conversationlist_mikhail.json:mikhail_bread_done:0
 msgid "What about the rats?"
-msgstr ""
+msgstr "Sıçanlara ne dersin?"
 
 #: conversationlist_mikhail.json:mikhail_tasks:2
 #: conversationlist_mikhail.json:mikhail_bread_done:1
 #: conversationlist_mikhail.json:mikhail_rats_done:1
 #: conversationlist_mikhail.json:mikhail_all_tasks_done:0
 msgid "Never mind, let's talk about the other things."
-msgstr ""
+msgstr "Boşver, hadi başka bir konu hakkında konuşalım."
 
 #: conversationlist_mikhail.json:mikhail_bread_done
 msgid "Thanks for getting me the bread. There are still the rats."
-msgstr ""
+msgstr "Bana ekmek getirdiğin için teşekkürler. Sıçanlar hala var."
 
 #: conversationlist_mikhail.json:mikhail_rats_done
 msgid "Thanks for taking care of the rats. I'd still love some bread."
 msgstr ""
+"Sıçanların icabına baktığın için teşekkürler. Hala biraz ekmek isterdim."
 
 #: conversationlist_mikhail.json:mikhail_all_tasks_done
 msgid "Not for now. Thanks for taking care of the bread and rats."
-msgstr ""
+msgstr "Şu anlık hayır. Ekmeği ve fareleri hallettiğin için teşekkürler."
 
 #: conversationlist_mikhail.json:mikhail_andor1
 msgid "As I said, Andor went out and hasn't been back since. I worry about him. Please go look for your brother. He said he would only be out for a short while."
 msgstr ""
+"Söylediğim gibi, Andor gitti ve ondan sonra da geri dönmedi. Onun için "
+"endişeleniyorum. Lütfen abine bakmaya git. Sadece kısa süreliğine çıktığını "
+"söyledi."
 
 #: conversationlist_mikhail.json:mikhail_andor2
 msgid "Maybe he went into that supply cave again and got stuck. Or maybe he's in Leta's basement training with that wooden sword again. Please go look for him in town."
 msgstr ""
+"Belki tekrar o mağaraya girdi ve sıkıştı. Ya da belki o tahta kılıcı ile "
+"yine Leta'nın antrenman yerindedir. Lütfen kasabada onu ara."
 
 #: conversationlist_mikhail.json:mikhail_bread_start
 msgid "Oh, I almost forgot. If you have time, please go see Mara at the town hall and buy me some more bread."
 msgstr ""
+"Ah, neredeyse unutuyordum. Eğer zamanın varsa bana ekmek almak için kasaba "
+"salonunda Mara'yı görmeye git."
 
 #: conversationlist_mikhail.json:mikhail_bread_continue
 msgid "Did you get my bread from Mara at the town hall yet?"
-msgstr ""
+msgstr "Kasaba salonundaki Mara'dan benim ekmeğimi getirdin mi?"
 
 #: conversationlist_mikhail.json:mikhail_bread_continue:0
 msgid "Yes, here you go."
-msgstr ""
+msgstr "Evet, işte burada."
 
 #: conversationlist_mikhail.json:mikhail_bread_continue:1
 #: conversationlist_mikhail.json:mikhail_rats_continue:1
@@ -385,15 +396,17 @@ msgstr ""
 #: conversationlist_stoutford_combined.json:stoutford_widow_thorns20_0:0
 #: conversationlist_stoutford_combined.json:blornvale_shop1_2:1
 msgid "No, not yet."
-msgstr ""
+msgstr "Hayır, henüz değil."
 
 #: conversationlist_mikhail.json:mikhail_bread_complete
 msgid "Thanks a lot, now I can make my breakfast. Here, take these coins for your help."
 msgstr ""
+"Çok teşekkürler, şimdi kahvaltımı yapabilirim. İşte şu altınları al, sana "
+"yardımı dokunabilir."
 
 #: conversationlist_mikhail.json:mikhail_bread_complete2
 msgid "Thanks for the bread earlier."
-msgstr ""
+msgstr "Önce ekmeği getirdiğin için teşekkürler."
 
 #: conversationlist_mikhail.json:mikhail_bread_complete2:0
 #: conversationlist_charwood1.json:khorailla1:2
@@ -407,34 +420,41 @@ msgstr "Rica ederim."
 #: conversationlist_mikhail.json:mikhail_rats_start
 msgid "I saw some rats out back in our garden earlier. Could you please go kill any rats that you see out there."
 msgstr ""
+"Bahçemizde biraz sıçan gördüm. Lütfen orada gördüğün sıçanları öldürür müsün."
 
 #: conversationlist_mikhail.json:mikhail_rats_start:0
 msgid "I have already dealt with the rats."
-msgstr ""
+msgstr "Sıçanları zaten hallettim."
 
 #: conversationlist_mikhail.json:mikhail_rats_start:1
 msgid "OK, I'll go check out in our garden."
-msgstr ""
+msgstr "Tamam, bahçemizi kontrol etmeye gidiyim."
 
 #: conversationlist_mikhail.json:mikhail_rats_start2
 msgid "If you get hurt by the rats, come back here and rest in your bed. That way you can regain your strength."
 msgstr ""
+"Eğer sıçanlar sana zarar verirse, buraya gelip yatağını kullanabilirsin. "
+"Böylece gücünü kazanabilirsin."
 
 #: conversationlist_mikhail.json:mikhail_rats_start3
 msgid "Also, don't forget to check your inventory. You probably still have that old ring I gave you. Make sure you wear it."
 msgstr ""
+"Ayrıca, eşyalarını kontrol etmeyi unutma. Sana verdiğim yüzük muhtemelen "
+"hala oradadır. Giydiğinden emin ol."
 
 #: conversationlist_mikhail.json:mikhail_rats_start3:0
 msgid "OK, I understand. I can rest here if I get hurt, and I should check my inventory for useful items."
 msgstr ""
+"Tamam, anladım. Eğer bana zarar verirlerse burada dinleneceğim ve yanımdaki "
+"kullanışlı eşyalarımı kontrol etmeliyim."
 
 #: conversationlist_mikhail.json:mikhail_rats_continue
 msgid "Did you kill those two rats in our garden?"
-msgstr ""
+msgstr "Bahçemizdeki şu iki sıçanı öldürdün mü?"
 
 #: conversationlist_mikhail.json:mikhail_rats_continue:0
 msgid "Yes, I have dealt with the rats now."
-msgstr ""
+msgstr "Evet, sıçanların icabına baktım."
 
 #: conversationlist_mikhail.json:mikhail_rats_complete
 msgid ""
@@ -442,6 +462,9 @@ msgid ""
 "\n"
 "If you are hurt, use your bed over there to rest and regain your strength."
 msgstr ""
+"Oh yaptın mı? Vay, sana çok teşekkür ederim!\n"
+"\n"
+"Eğer yaralandıysan, şurada yatağını kullan ve gücünü geri topla."
 
 #: conversationlist_mikhail.json:mikhail_rats_complete2
 msgid ""
@@ -449,18 +472,28 @@ msgid ""
 "\n"
 "If you are hurt, use your bed over there to rest and regain your strength."
 msgstr ""
+"Sıçanlar konusunda yardımın için teşekkürler.\n"
+"\n"
+"Eğer yaralandıysan, şurada yatağını kullan ve gücünü geri topla."
 
 #: conversationlist_mikhail_foodpoison.json:mikhail_rats_start2a
 msgid "Another way to regain your strength is to eat some food. You can buy some for yourself from Mara at the town hall. But watch out - I hear that raw meat can sometimes give you food poisoning."
 msgstr ""
+"Gücünü geri kazanmanın başka bir yolu yemek yemektir. Kasaba binasında "
+"Mara'dan bir şeyler alabilirsin. Ama dikkat et - Şu çiğ etlerin bazen gıda "
+"zehirlenmesine yol açtığını duydum."
 
 #: conversationlist_mikhail_foodpoison.json:mikhail_rats_start2b
 msgid "If that happens, perhaps the town priest can do something to help you.  Otherwise, just rest until you feel better."
 msgstr ""
+"Eğer bu olursa, belki kasaba rahibi sana bazen yardım eder. Aksi takdirde, "
+"sadece daha iyi hissedene kadar dinlen."
 
 #: conversationlist_mikhail_foodpoison.json:mikhail_rats_start2c
 msgid "Me, I can't really afford the meat, so I just stick to my bread!"
 msgstr ""
+"Ben mi, ben gerçekten ete para vermem, bu nedenle sadece ekmeğime bağlı "
+"kalıyorum."
 
 #: conversationlist_crossglen.json:audir1
 msgid ""
@@ -910,7 +943,7 @@ msgstr "Hey, burası benim evim, defol buradan!"
 #: conversationlist_crossglen_leta.json:leta1:0
 #: conversationlist_remgard_villagers1.json:morgisia:1
 msgid "But I was just..."
-msgstr ""
+msgstr "Ama ben sadece..."
 
 #: conversationlist_crossglen_leta.json:leta1:1
 #: conversationlist_crossglen_leta.json:leta2:0
@@ -974,7 +1007,7 @@ msgstr ""
 #: conversationlist_stoutford.json:kayla_1
 #: conversationlist_stoutford.json:glasforn_initial_0
 msgid "Hello."
-msgstr "Merhaba"
+msgstr "Merhaba."
 
 #: conversationlist_crossglen_leta.json:oromir2
 msgid "I'm hiding here from my wife Leta. She is always getting angry at me for not helping out on the farm. Please don't tell her that I'm here."
@@ -996,7 +1029,7 @@ msgstr "Burada karım Leta'dan saklanıyorum. Tarla işlerinde yardım etmiyormu
 #: conversationlist_stoutford_combined.json:odirath_3_5:0
 #: conversationlist_stoutford_combined.json:stn_colonel_122:0
 msgid "OK."
-msgstr ""
+msgstr "Tamam."
 
 #: conversationlist_crossglen_odair.json:odair1
 msgid "Oh, it's you. You with that brother of yours. Always causing trouble."
@@ -1099,7 +1132,7 @@ msgstr "Yardımların için teşekkürler evlat! Belki de abin ve sen zannettiğ
 #: conversationlist_stoutford.json:glasforn_rumblings20_3:1
 #: conversationlist_stoutford_combined.json:yolgen_4:0
 msgid "Thanks."
-msgstr "Teşekkürler"
+msgstr "Teşekkürler."
 
 #: conversationlist_crossglen_odair.json:odair_complete2
 msgid "Thanks a lot for your help earlier. Now we might start using that cave as our old supply cave again."
@@ -1107,15 +1140,15 @@ msgstr "Önceki yardımların için teşekkürler. Artık o mağarayı yeniden i
 
 #: conversationlist_jan.json:jan_default
 msgid "Hello kid. Please leave me to my mourning."
-msgstr ""
+msgstr "Merhaba çocuk. Lütfen beni yasım ile yalnız bırak."
 
 #: conversationlist_jan.json:jan_default:0
 msgid "What is the problem?"
-msgstr ""
+msgstr "Sorun ne?"
 
 #: conversationlist_jan.json:jan_default:1
 msgid "Do you want to talk about it?"
-msgstr ""
+msgstr "Anlatmak ister misin?"
 
 #: conversationlist_jan.json:jan_default:2
 #: conversationlist_jan.json:jan_default2:1
@@ -1124,11 +1157,11 @@ msgstr ""
 #: conversationlist_kaori.json:kaori_2:0
 #: conversationlist_stoutford_combined.json:yolgen_task_0_2:2
 msgid "OK, bye."
-msgstr ""
+msgstr "Tamam, güle güle."
 
 #: conversationlist_jan.json:jan_default2
 msgid "Oh, it's so sad. I really don't want to talk about it."
-msgstr ""
+msgstr "Ah, çok üzücü. Gerçekten bunun hakkında konuşmak istemiyorum."
 
 #: conversationlist_jan.json:jan_default2:0
 #: conversationlist_algangror.json:algangror_story:0
@@ -1138,10 +1171,14 @@ msgstr "Evet, lütfen."
 #: conversationlist_jan.json:jan_default3
 msgid "Well, I guess it's OK to tell you. You seem to be a nice enough kid."
 msgstr ""
+"Pekala, sanırım sana anlatmaya hazırım. Yeterince iyi bir çocuk gibi "
+"görünüyorsun."
 
 #: conversationlist_jan.json:jan_default4
 msgid "My friend Gandir, his friend Irogotu, and I were down here digging this hole. We had heard there was a hidden treasure down here."
 msgstr ""
+"Benim arkadaşım Gandir, onun arkadaşı Irogotu ve ben burada şu çukuru "
+"kazdık. Burada saklı bir hazine olduğunu duymuştuk."
 
 #: conversationlist_jan.json:jan_default5
 msgid "We started digging and finally broke through to the cave system below. That's when we discovered them. The critters and bugs."
@@ -1165,7 +1202,7 @@ msgstr ""
 #: conversationlist_jan.json:jan_default8:0
 #: conversationlist_ogam.json:ogam_2:1
 msgid "Please go on."
-msgstr ""
+msgstr "Lütfen devam et."
 
 #: conversationlist_jan.json:jan_default9
 msgid "Irogotu killed Gandir with his bare hands. You could see the fire in his eyes. He almost seemed to enjoy it."
@@ -1209,18 +1246,18 @@ msgstr ""
 
 #: conversationlist_jan.json:jan_default13:0
 msgid "Sure, I'll help."
-msgstr ""
+msgstr "Peki, yardım edeceğim."
 
 #: conversationlist_jan.json:jan_default13:1
 #: conversationlist_flagstone.json:flagstone_sentry_return1:0
 #: conversationlist_flagstone.json:flagstone_sentry_return2:1
 msgid "Can you tell me the story again?"
-msgstr ""
+msgstr "Bana hikayeni tekrar anlatır mısın?"
 
 #: conversationlist_jan.json:jan_default13:2
 #: conversationlist_prim_tavern.json:birgil_4:1
 msgid "Never mind, goodbye."
-msgstr ""
+msgstr "Boş ver, hoşça kal."
 
 #: conversationlist_jan.json:jan_default14
 msgid "Return to me when you are done. Bring me Gandir's ring from Irogotu down in the cave."
@@ -1239,7 +1276,7 @@ msgstr "Bana hikayeni tekrar anlatabilir misin?"
 
 #: conversationlist_jan.json:jan_return:2
 msgid "Yes, I have killed Irogotu."
-msgstr ""
+msgstr "Evet, Irogotu'yu öldürdüm."
 
 #: conversationlist_jan.json:jan_background
 msgid "Didn't you listen the first time I told you the story? Do I really have to tell you the story one more time?"
@@ -1330,19 +1367,19 @@ msgstr ""
 
 #: conversationlist_fallhaven.json:fallhaven_citizen1
 msgid "Hello there. Nice weather ain't it?"
-msgstr ""
+msgstr "Merhaba. Güzel hava değil mi?"
 
 #: conversationlist_fallhaven.json:fallhaven_citizen2
 msgid "Hello. Anything you want from me?"
-msgstr ""
+msgstr "Selam. Benden  başka herhangi bir şey istiyor musun?"
 
 #: conversationlist_fallhaven.json:fallhaven_citizen3
 msgid "Hi. Can I help you?"
-msgstr ""
+msgstr "Selam. Sana yardım edebilir miyim?"
 
 #: conversationlist_fallhaven.json:fallhaven_citizen4
 msgid "You're that kid from Crossglen village right?"
-msgstr ""
+msgstr "Sen şu Crossglen Köyü'nden gelen çocuksun doğru mu?"
 
 #: conversationlist_fallhaven.json:fallhaven_citizen5
 msgid "Out of the way, peasant."
@@ -1350,7 +1387,7 @@ msgstr ""
 
 #: conversationlist_fallhaven.json:fallhaven_citizen6
 msgid "Good day to you."
-msgstr ""
+msgstr "Sana iyi günler."
 
 #: conversationlist_fallhaven.json:fallhaven_andor_1
 msgid "No, sorry. I haven't seen anyone by that description."
@@ -1401,12 +1438,12 @@ msgstr ""
 
 #: conversationlist_fallhaven.json:rigmor
 msgid "Well hello there! Aren't you a cute little fellow."
-msgstr ""
+msgstr "Hey selam! Sen sevimli küçük bir adam değil misin."
 
 #: conversationlist_fallhaven.json:rigmor:1
 #: conversationlist_fallhaven.json:rigmor_1:0
 msgid "I really need to go."
-msgstr ""
+msgstr "Gerçekten gitmem gerek."
 
 #: conversationlist_fallhaven.json:rigmor_1
 msgid "Your brother, you say? His name is Andor? No. I don't recall meeting anyone like that."
@@ -1438,12 +1475,12 @@ msgstr ""
 
 #: conversationlist_fallhaven_arcir.json:arcir_start
 msgid "Hello. I'm Arcir."
-msgstr ""
+msgstr "Selam. Ben Arcir."
 
 #: conversationlist_fallhaven_arcir.json:arcir_start:0
 #: conversationlist_fallhaven_arcir.json:arcir_anythingelse:0
 msgid "I noticed your statue of Elythara downstairs."
-msgstr ""
+msgstr "Alt kattaki Elythara heykelini fark ettim."
 
 #: conversationlist_fallhaven_arcir.json:arcir_start:1
 #: conversationlist_fallhaven_arcir.json:arcir_anythingelse:1
@@ -1452,7 +1489,7 @@ msgstr ""
 
 #: conversationlist_fallhaven_arcir.json:arcir_anythingelse
 msgid "Anything else you wanted to ask?"
-msgstr ""
+msgstr "Sormak istediğin başka bir şey var mı?"
 
 #: conversationlist_fallhaven_arcir.json:arcir_elythara_1
 msgid ""
@@ -3610,11 +3647,12 @@ msgstr ""
 
 #: conversationlist_farrik.json:farrik_8:0
 msgid "What did he do?"
-msgstr ""
+msgstr "O ne yaptı?"
 
 #: conversationlist_farrik.json:farrik_9
 msgid "Oh, nothing serious. He was trying to get into the catacombs of Fallhaven church."
 msgstr ""
+"Ah, ciddi bir şey değil. O Fallhaven Kilisesi'nin mezarlığına girmeyi denedi."
 
 #: conversationlist_farrik.json:farrik_10
 msgid "But now that you have helped us with that mission, I guess we don't need to go there anymore."
@@ -4008,12 +4046,12 @@ msgstr ""
 
 #: conversationlist_umar.json:umar_return_1
 msgid "Hello again, my friend."
-msgstr ""
+msgstr "Tekrardan merhaba, benim dostum."
 
 #: conversationlist_umar.json:umar_return_1:1
 #: conversationlist_umar.json:umar_return_2:1
 msgid "Nice to meet you. Goodbye."
-msgstr ""
+msgstr "Tanıştığıma memnun oldum. Görüşürüz."
 
 #: conversationlist_umar.json:umar_return_2:0
 msgid "Can you repeat what you said about Andor?"
@@ -4464,7 +4502,7 @@ msgstr ""
 
 #: conversationlist_vilegard_erttu.json:erttu_vilegard_3:1
 msgid "Thanks for the information. Goodbye."
-msgstr ""
+msgstr "Bilgi için teşekkürler. Hoşça kal."
 
 #: conversationlist_vilegard_erttu.json:erttu_vilegard_3:2
 msgid "Wow, nothing more? I wonder what I am doing in a puny village such as this one."
@@ -14104,7 +14142,7 @@ msgstr ""
 
 #: conversationlist_talion_2.json:talion_cure_3
 msgid "Give me a minute."
-msgstr ""
+msgstr "Bana bir dakika ver."
 
 #: conversationlist_talion_2.json:talion_cure_4
 msgid "[Talion mixes the ground up ingredients together in the vial you brought, with some leaves and berries that he kept with him]"
