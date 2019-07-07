@@ -53,6 +53,7 @@ public final class SkillCollection {
 		,specializationDualWield
 		,specialization2hand
 		,specializationWeaponShield
+		,weaponProficiencyPole
 	}
 
 	// should be in the same number &U order as in arrays.xml
@@ -206,6 +207,7 @@ public final class SkillCollection {
 		initializeSkill(new SkillInfo(SkillID.weaponProficiencyAxe, 3, SkillInfo.LevelUpType.firstLevelRequiresQuest, SkillCategory.proficiency, null));
 		initializeSkill(new SkillInfo(SkillID.weaponProficiencyBlunt, 3, SkillInfo.LevelUpType.firstLevelRequiresQuest, SkillCategory.proficiency, null));
 		initializeSkill(new SkillInfo(SkillID.weaponProficiencyUnarmed, 3, SkillInfo.LevelUpType.firstLevelRequiresQuest, SkillCategory.proficiency, null));
+		initializeSkill(new SkillInfo(SkillID.weaponProficiencyPole, 3, SkillInfo.LevelUpType.firstLevelRequiresQuest, SkillCategory.proficiency, null));
 		initializeSkill(new SkillInfo(SkillID.armorProficiencyShield, 2, SkillInfo.LevelUpType.firstLevelRequiresQuest, SkillCategory.proficiency, null));
 		initializeSkill(new SkillInfo(SkillID.armorProficiencyUnarmored, 3, SkillInfo.LevelUpType.firstLevelRequiresQuest, SkillCategory.proficiency, null));
 		initializeSkill(new SkillInfo(SkillID.armorProficiencyLight, 3, SkillInfo.LevelUpType.firstLevelRequiresQuest, SkillCategory.proficiency, null));
