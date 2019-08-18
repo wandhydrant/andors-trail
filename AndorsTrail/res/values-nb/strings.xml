@@ -10,7 +10,7 @@
     <string name="loadsave_title_save">Lagre spill</string>
     <string name="loadsave_title_load">Last inn lagret spill</string>
     <string name="loadsave_selectslot">Velg plass</string>
-    <string name="savegame_currenthero_displayinfo">nivå %1$d, %2$d erf., %3$d gull</string>
+    <string name="savegame_currenthero_displayinfo">nivå %1$d, %2$d erfaring, %3$d gull</string>
     <string name="dialog_loading_message">Laster inn ressurser…</string>
     <string name="dialog_loading_failed_title">Innlasting mislyktes</string>
     <string name="dialog_close">Lukk</string>
@@ -26,8 +26,8 @@
     <string name="heroinfo_skill">Evner</string>
     <string name="heroinfo_level">Nivå</string>
     <string name="heroinfo_totalexperience">Samlet erfaring</string>
-    <string name="heroinfo_wornequipment">Slitt utstyr</string>
-    <string name="heroinfo_inventory">Utstyr</string>
+    <string name="heroinfo_wornequipment">Utstyr i bruk</string>
+    <string name="heroinfo_inventory">Gjenstandslager</string>
     <string name="heroinfo_gold">Gull: %1$d</string>
     <string name="heroinfo_actionpoints">Aksjonspoeng (AP):</string>
     <string name="heroinfo_quests">Oppdrag</string>
@@ -50,7 +50,7 @@
 \n
 \nDet kan hende den er skadet eller ufullstendig.</string>
     <string name="dialog_loading_failed_incorrectversion">Andors sti kunne ikke laste inn lagringsfilen. Den ble opprettet med en nyere versjon enn den du kjører nå.</string>
-    <string name="heroinfo_levelup">Nivågradering</string>
+    <string name="heroinfo_levelup">Nivåoppgradering</string>
     <string name="combat_result_monsterhitcritical">%1$s tok en kritisk smell for %2$d HP!</string>
     <string name="combat_result_heromiss">Ditt angrep bommet.</string>
     <string name="combat_result_herohit">Du traff %1$s for %2$d HP!</string>
@@ -96,7 +96,7 @@
     <string name="traitsinfo_criticalhit_skill">Ferdighet for kritiske treff:</string>
     <string name="traitsinfo_criticalhit_multiplier">Kritisk faktor:</string>
     <string name="traitsinfo_defense_chance">Blokkeringssjanse:</string>
-    <string name="traitsinfo_defense_damageresist">Skademotstandighet:</string>
+    <string name="traitsinfo_defense_damageresist">Skademotstand:</string>
     <string name="iteminfo_category">Kategori:</string>
     <string name="iteminfo_action_use">Bruk</string>
     <string name="iteminfo_action_equip">Ta i bruk</string>
@@ -144,7 +144,7 @@
     <string name="questlog_queststatus">Status: %1$s</string>
     <string name="questlog_queststatus_inprogress">Underveis</string>
     <string name="questlog_queststatus_completed">Fullført</string>
-    <string name="preferences_display_category">Vis</string>
+    <string name="preferences_display_category">Skjerm</string>
     <string name="preferences_display_fullscreen_title">Fullskjerm</string>
     <string name="preferences_display_fullscreen">Viser spillet i fullskjermsmodus. (Krever omstart)</string>
     <string name="preferences_dialog_category">Dialogvindubekreftelse</string>
@@ -421,8 +421,8 @@
     <string name="actorconditioninfo_category">Effektkategori: %1$s</string>
     <string name="skill_title_rejuvenation">Fornyelse</string>
     <string name="preferences_ui_enable_animations">Viser animasjoner for forskjellige grensesnittselementer, som for eksempel kampindikatoren.</string>
-    <string name="inventory_equip_offhand">Bruk (avhendet)</string>
-    <string name="iteminfo_effect_critical_multiplier">Muliggjør kritiske treff med en multiplikator på x%1$.1f</string>
+    <string name="inventory_equip_offhand">Ta i bruk (sekundærhånd)</string>
+    <string name="iteminfo_effect_critical_multiplier">Muliggjør kritiske treff med en faktor på x%1$.1f</string>
     <string name="loadsave_save_overwrite_confirmation_all">Er du sikker på at du ønsker å overskrive dette lagrede spillet?</string>
     <string name="preferences_display_overwrite_savegame_entries_always_confirm">Alltid vis bekreftelsesvindu</string>
     <string name="preferences_display_overwrite_savegame_entries_confirm_overwrite">Kun vis hvis et annet spillernavn overskrives</string>
