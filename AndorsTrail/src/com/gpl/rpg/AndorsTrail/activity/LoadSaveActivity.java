@@ -163,7 +163,7 @@ public final class LoadSaveActivity extends Activity implements OnClickListener 
 
 		if (!isLoading && slot != SLOT_NUMBER_CREATE_NEW_SLOT && AndorsTrailApplication.CURRENT_VERSION == AndorsTrailApplication.DEVELOPMENT_INCOMPATIBLE_SAVEGAME_VERSION) {
 			final FileHeader header = Savegames.quickload(this, slot);
-			if (header.fileversion != AndorsTrailApplication.DEVELOPMENT_INCOMPATIBLE_SAVEGAME_VERSION) {
+			if (header != null && header.fileversion != AndorsTrailApplication.DEVELOPMENT_INCOMPATIBLE_SAVEGAME_VERSION) {
 				final Dialog d = CustomDialogFactory.createDialog(this,
 						"Overwriting not allowed",
 						getResources().getDrawable(android.R.drawable.ic_dialog_alert),
