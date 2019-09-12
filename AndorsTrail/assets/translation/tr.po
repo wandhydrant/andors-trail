@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: andors-trail\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-11-10 11:48+0000\n"
-"PO-Revision-Date: 2019-08-01 05:11+0000\n"
+"PO-Revision-Date: 2019-09-13 21:23+0000\n"
 "Last-Translator: Gökhan Demirden <gkdemirden@gmail.com>\n"
 "Language-Team: Turkish <https://hosted.weblate.org/projects/andors-trail/"
 "game-content/tr/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.8-dev\n"
+"X-Generator: Weblate 3.9-dev\n"
 "X-Launchpad-Export-Date: 2015-11-02 12:26+0000\n"
 
 #: [none]
@@ -226,7 +226,7 @@ msgstr "Taşlaşma"
 
 #: actorconditions_graveyard1.json:vulnerability
 msgid "Vulnerability"
-msgstr "Güvenlik açığı"
+msgstr "Yaralanabilirlik"
 
 #: actorconditions_graveyard1.json:flesh_rot
 msgid "Flesh rot"
@@ -250,7 +250,7 @@ msgstr ""
 
 #: actorconditions_trader_teksin.json:poison_irdegh_weak
 msgid "Weak irdegh poison"
-msgstr ""
+msgstr "Zayıf irdegh zehri"
 
 #: actorconditions_trader_teksin.json:light_attack
 msgid "Lightning attack"
@@ -287,7 +287,7 @@ msgstr "Oh iyi, kalkmışsın."
 #: conversationlist_mikhail.json:mikhail_visited
 msgid "I can't seem to find your brother Andor anywhere. He hasn't been back since he left yesterday."
 msgstr ""
-"Abim Andor'u hiçbir yerde göremiyorum. Dün ayrıldığından beri geri dönmedi."
+"Abin Andor'u hiçbir yerde göremiyorum. Dün ayrıldığından beri geri dönmedi."
 
 #: conversationlist_mikhail.json:mikhail3
 msgid "Never mind, he will probably be back soon."
@@ -1219,11 +1219,11 @@ msgstr ""
 
 #: conversationlist_jan.json:jan_default11:0
 msgid "Do you think I could help?"
-msgstr ""
+msgstr "Yardım edebileceğimi mi düşünüyorsun?"
 
 #: conversationlist_jan.json:jan_default11_1
 msgid "Do you think you could help me?"
-msgstr ""
+msgstr "Bana yardım edebileceğini düşünüyor musun?"
 
 #: conversationlist_jan.json:jan_default11_1:0
 msgid "Sure, there may be some treasure in this for me."
@@ -1263,10 +1263,12 @@ msgstr "Boş ver, hoşça kal."
 #: conversationlist_jan.json:jan_default14
 msgid "Return to me when you are done. Bring me Gandir's ring from Irogotu down in the cave."
 msgstr ""
+"Hallettiğin zaman bana gel. Mağaranın altındaki Irogotu'dan Gandir'in "
+"yüzüğünü bana getir."
 
 #: conversationlist_jan.json:jan_return
 msgid "Hello again kid. Did you find Irogotu down in the cave?"
-msgstr ""
+msgstr "Tekrardan merhaba çocuk. Mağaranın altında Irogotu'yu buldun mu?"
 
 #: conversationlist_jan.json:jan_return:1
 #: conversationlist_benbyr.json:benbyr_mission_1:0
@@ -1285,7 +1287,7 @@ msgstr ""
 
 #: conversationlist_jan.json:jan_background:0
 msgid "Yes, please tell me the story again."
-msgstr ""
+msgstr "Evet, lütfen hikayeni tekrar anlatır mısın?"
 
 #: conversationlist_jan.json:jan_background:1
 msgid "I wasn't listening that much the first time you told it. What was that about a treasure?"
@@ -1324,7 +1326,7 @@ msgstr ""
 
 #: conversationlist_jan.json:irogotu:0
 msgid "Did you kill Gandir?"
-msgstr ""
+msgstr "Gandir'i öldürdün mü?"
 
 #: conversationlist_jan.json:irogotu1
 msgid "That whelp Gandir? He was in my way. I merely used him as a tool to dig deeper into the cave."
@@ -3207,7 +3209,7 @@ msgstr ""
 #: conversationlist_guynmart_npc.json:guynmart_lovis2_151:0
 #: conversationlist_stoutford_combined.json:stoutford_widow_12:0
 msgid "Goodbye."
-msgstr ""
+msgstr "Görüşürüz."
 
 #: conversationlist_fallhaven_south.json:fallhaven_lumberjack_13
 msgid "You're welcome. But you're not the only one who is happy. There are more people resting for a night in Fallhaven, which helps our economy. Some even bought items at my store! By the way, I was surprised, but I even got paid well by the warden."
@@ -21572,7 +21574,7 @@ msgstr ""
 #: conversationlist_halvor_surprise.json:halvor_mlake_9:0
 #: conversationlist_halvor_surprise.json:halvor_mlake_10:0
 msgid "Maybe later, OK?"
-msgstr ""
+msgstr "Belki sonra, tamam?"
 
 #: conversationlist_halvor_surprise.json:halvor_mlake_9:1
 #: conversationlist_halvor_surprise.json:halvor_mlake_10:1
@@ -25805,7 +25807,7 @@ msgstr ""
 
 #: conversationlist_guynmart2_npc.json:guynmart_robber1_30:1
 msgid "Enough!"
-msgstr ""
+msgstr "Yeter!"
 
 #: conversationlist_guynmart2_npc.json:guynmart_roadguard_10:0
 msgid "Oh? Is it the fog that is the problem?"
@@ -29099,7 +29101,7 @@ msgstr ""
 
 #: conversationlist_stoutford_combined.json:stn_colonel_40:1
 msgid "You didn't answer my question. Who are you?"
-msgstr ""
+msgstr "Soruma cevap vermedin. Sen kimsin?"
 
 #: conversationlist_stoutford_combined.json:stn_colonel_42
 msgid "No, do not worry. I have nothing to do with the undead here in the castle. I just find them interesting."
@@ -29107,11 +29109,11 @@ msgstr ""
 
 #: conversationlist_stoutford_combined.json:stn_colonel_42:0
 msgid "Interesting indeed."
-msgstr ""
+msgstr "Gerçekten ilginç."
 
 #: conversationlist_stoutford_combined.json:stn_colonel_42:1
 msgid "Do you have any idea what the undead are doing here?"
-msgstr ""
+msgstr "Yürüyen ölülerin burada ne yaptığı hakkında bir fikrin var mı?"
 
 #: conversationlist_stoutford_combined.json:stn_colonel_43
 msgid "No. I expected Lord Berbane's men to be here. But these undead are a nice change."
