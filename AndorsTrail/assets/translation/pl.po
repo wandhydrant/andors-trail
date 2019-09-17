@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: Andors Trail\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-11-10 11:48+0000\n"
-"PO-Revision-Date: 2019-07-21 18:07+0000\n"
-"Last-Translator: Mateusz Mendel <mendelm9@gmail.com>\n"
+"PO-Revision-Date: 2019-09-18 17:24+0000\n"
+"Last-Translator: Daniel Stasiak <daniels.automatyk@gmail.com>\n"
 "Language-Team: Polish <https://hosted.weblate.org/projects/andors-trail/"
 "game-content/pl/>\n"
 "Language: pl\n"
@@ -13,18 +13,23 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 3.8-dev\n"
+"X-Generator: Weblate 3.9-dev\n"
 "X-Launchpad-Export-Date: 2015-11-02 12:27+0000\n"
 
 #: [none]
 msgid "translator-credits"
 msgstr ""
 "Launchpad Contributions:\n"
-"  DanielS https://launchpad.net/~daniels-automatyk\n"
-"  Krzysztof Olek https://launchpad.net/~firble\n"
-"  Oskar Wiksten https://launchpad.net/~oskar-wiksten\n"
-"  Piotr Wieczorek https://launchpad.net/~piotrwieczor\n"
-"  Radosław Krawczyński https://launchpad.net/~radkraw5"
+" DanielS \n"
+" Krzysztof Olek \n"
+"Oskar Wiksten \n"
+"Piotr Wieczorek \n"
+"Radosław Krawczyński \n"
+"Mateusz Mendel\n"
+"Piotr Bojczewski\n"
+"KesaiSerris\n"
+"czemion\n"
+"synnysyn"
 
 #: actorconditions_v069.json:bless
 msgid "Bless"
@@ -288,7 +293,7 @@ msgstr "Nigdzie nie mogę znaleźć twojego brata. Andor wyszedł wczoraj i do t
 
 #: conversationlist_mikhail.json:mikhail3
 msgid "Never mind, he will probably be back soon."
-msgstr "Nieważne, zapewne wróci niebawem."
+msgstr "Nieważne zresztą, zapewne wróci niebawem."
 
 #: conversationlist_mikhail.json:mikhail_default
 #: conversationlist_crossglen_leonid.json:leonid_continue
@@ -312,17 +317,19 @@ msgstr "Czy jest coś jeszcze, co mógłbyś mi powiedzieć na temat Andora?"
 
 #: conversationlist_mikhail.json:mikhail_tasks
 msgid "Oh yes, there were some things I need help with, bread and rats. Which one would you like to talk about?"
-msgstr "Ach tak, jest tu parę rzeczy w których mógłbyś mi pomóc, a mianowicie chleb i szczury. O którym z tych zadań chcesz porozmawiać?"
+msgstr ""
+"Ach tak, jest tu parę rzeczy z którymi mógłbyś mi pomóc: chleb i szczury. O "
+"którym chcesz porozmawiać?"
 
 #: conversationlist_mikhail.json:mikhail_tasks:0
 #: conversationlist_mikhail.json:mikhail_rats_done:0
 msgid "What about the bread?"
-msgstr "Czy mógłbyś powiedzieć coś więcej o zadaniu z chlebem?"
+msgstr "Czy mógłbyś powiedzieć coś więcej o chlebie?"
 
 #: conversationlist_mikhail.json:mikhail_tasks:1
 #: conversationlist_mikhail.json:mikhail_bread_done:0
 msgid "What about the rats?"
-msgstr "Czy mógłbyś powiedzieć coś więcej o zadaniu ze szczurami?"
+msgstr "Czy mógłbyś powiedzieć coś więcej o szczurach?"
 
 #: conversationlist_mikhail.json:mikhail_tasks:2
 #: conversationlist_mikhail.json:mikhail_bread_done:1
@@ -333,12 +340,14 @@ msgstr "Nieważne, porozmawiajmy lepiej o czymś innym."
 
 #: conversationlist_mikhail.json:mikhail_bread_done
 msgid "Thanks for getting me the bread. There are still the rats."
-msgstr "Dziękuję za zdobycie tego chleba, ale są jeszcze szczury."
+msgstr ""
+"Dziękuję Ci za przyniesienie chleba. Wciąż jeszcze jednak trzeba rozprawić "
+"się ze szczurami."
 
 #: conversationlist_mikhail.json:mikhail_rats_done
 msgid "Thanks for taking care of the rats. I'd still love some bread."
 msgstr ""
-"Dziękuję za zajęcie się tymi szczurami. Chciałbym jeszcze trochę chleba."
+"Dzięki za rozprawienie się ze szczurami. Chciałbym jeszcze trochę chleba."
 
 #: conversationlist_mikhail.json:mikhail_all_tasks_done
 msgid "Not for now. Thanks for taking care of the bread and rats."
@@ -418,7 +427,9 @@ msgstr "W porządku. Pójdę do ogródka i sprawdzę to."
 
 #: conversationlist_mikhail.json:mikhail_rats_start2
 msgid "If you get hurt by the rats, come back here and rest in your bed. That way you can regain your strength."
-msgstr "Jeśli zostaniesz poraniony przez szczury, to wróć tu i odpocznij w swoim łóżku. Dzięki temu przywrócisz swoją wytrzymałość do dawnego poziomu."
+msgstr ""
+"Jeśli zostaniesz poraniony przez szczury, to wróć tu i odpocznij w swoim "
+"łóżku. W ten sposób możesz odzyskać siły."
 
 #: conversationlist_mikhail.json:mikhail_rats_start3
 msgid "Also, don't forget to check your inventory. You probably still have that old ring I gave you. Make sure you wear it."
@@ -9655,7 +9666,7 @@ msgstr "Jeśli dasz radę zabić co najmniej pięć z tych olbrzymich osobników
 
 #: conversationlist_hadracor.json:hadracor_accept_2:0
 msgid "Sure, I will be back with those giant wasp wings for you."
-msgstr "Jasne, wrócę tu ze skrzydłami olbrzymich  os."
+msgstr "Jasne, wrócę tu ze skrzydłami olbrzymich os."
 
 #: conversationlist_hadracor.json:hadracor_accept_2:2
 msgid "On second thought, I better stay out of this."
