@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: andors-trail\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-11-10 11:48+0000\n"
-"PO-Revision-Date: 2019-09-25 22:55+0000\n"
+"PO-Revision-Date: 2019-09-27 16:49+0000\n"
 "Last-Translator: kty919 <kty919@naver.com>\n"
 "Language-Team: Korean <https://hosted.weblate.org/projects/andors-trail/"
 "game-content/ko/>\n"
@@ -24,7 +24,9 @@ msgstr ""
 msgid "translator-credits"
 msgstr ""
 "Launchpad Contributions:\n"
-"  KimHyunSu https://launchpad.net/~naturezikimi"
+"  KimHyunSu https://launchpad.net/~naturezikimi\n"
+"Individual contributors:\n"
+"  KimTaeYang"
 
 #: actorconditions_v069.json:bless
 msgid "Bless"
@@ -128,7 +130,7 @@ msgstr ""
 
 #: actorconditions_v0611_2.json:crit1
 msgid "Internal bleeding"
-msgstr "체내 출혈"
+msgstr "내출혈"
 
 #: actorconditions_v0611_2.json:crit2
 msgid "Fracture"
@@ -136,11 +138,11 @@ msgstr "골절"
 
 #: actorconditions_v0611_2.json:concussion
 msgid "Concussion"
-msgstr "진탕"
+msgstr "뇌진탕"
 
 #: actorconditions_v0612_2.json:food
 msgid "Sustenance"
-msgstr "생명 유지"
+msgstr "자양물"
 
 #: actorconditions_v0612_2.json:foodp
 msgid "Food-poisoning"
@@ -160,11 +162,11 @@ msgstr "용기"
 
 #: actorconditions_v070.json:fear
 msgid "Fear"
-msgstr "불안"
+msgstr "공포"
 
 #: actorconditions_v070.json:def
 msgid "Fortified defense"
-msgstr "튼튼한 방어"
+msgstr "방어 강화"
 
 #: actorconditions_v070.json:crit_aware
 msgid "Vulnerability awareness"
@@ -176,7 +178,7 @@ msgstr "재생"
 
 #: actorconditions_v070.json:barkskin
 msgid "Bark skin"
-msgstr "나무 껍질 피부"
+msgstr "나무껍질 피부"
 
 #: actorconditions_v070.json:shadow_acc
 msgid "Shadow's accuracy"
@@ -196,7 +198,7 @@ msgstr "신속"
 
 #: actorconditions_v070.json:fire
 msgid "Ablaze"
-msgstr "이글이글"
+msgstr "불타오름"
 
 #: actorconditions_v070.json:sting_minor
 msgid "Minor sting"
@@ -228,7 +230,7 @@ msgstr "취약함"
 
 #: actorconditions_graveyard1.json:flesh_rot
 msgid "Flesh rot"
-msgstr "살의 부패"
+msgstr "살이 썩음"
 
 #: actorconditions_graveyard1.json:putrefaction
 msgid "Putrefaction"
@@ -240,7 +242,7 @@ msgstr ""
 
 #: actorconditions_guynmart.json:bone_fracture
 msgid "Bone fracture"
-msgstr "뼈 부러짐"
+msgstr "골절"
 
 #: actorconditions_guynmart.json:shadow_awareness
 msgid "Shadow awareness"
@@ -260,7 +262,7 @@ msgstr "메스꺼움"
 
 #: actorconditions_stoutford_combined.json:poison_blood
 msgid "Blood poisoning"
-msgstr "혈액 중독"
+msgstr "중독"
 
 #: actorconditions_stoutford_combined.json:deftness
 msgid "Deftness"
@@ -280,15 +282,15 @@ msgstr "정신 안개"
 
 #: conversationlist_mikhail.json:mikhail_gamestart
 msgid "Oh good, you are awake."
-msgstr "오 좋아, 일어났구나."
+msgstr "좋아, 일어났구나."
 
 #: conversationlist_mikhail.json:mikhail_visited
 msgid "I can't seem to find your brother Andor anywhere. He hasn't been back since he left yesterday."
-msgstr "네 형 앤더를 어디서도 찾을 수가 없구나. 어제 나간 이후로 돌아오지를 않아."
+msgstr "네 형 앤더를 못 찾겠다. 어제 나간 이후로 돌아오지를 않는구나."
 
 #: conversationlist_mikhail.json:mikhail3
 msgid "Never mind, he will probably be back soon."
-msgstr "신경 쓰지 말거라, 아마 곧 돌아올 게다."
+msgstr "괜찮다, 아마 곧 돌아오겠지."
 
 #: conversationlist_mikhail.json:mikhail_default
 #: conversationlist_crossglen_leonid.json:leonid_continue
@@ -308,21 +310,21 @@ msgstr "제가 할 일이 있을까요?"
 
 #: conversationlist_mikhail.json:mikhail_default:4
 msgid "Is there anything else you can tell me about Andor?"
-msgstr "그밖에 형에 대해 이야기해주실 수 있는 게 있나요?"
+msgstr "형에게 무슨 일이 있나요?"
 
 #: conversationlist_mikhail.json:mikhail_tasks
 msgid "Oh yes, there were some things I need help with, bread and rats. Which one would you like to talk about?"
-msgstr "오 그래, 도움이 필요한 것들이 좀 있단다. 빵이랑 쥐 문제인데, 어떤 걸로 이야기했으면 하니?"
+msgstr "오 그래, 도움이 필요했단다. 빵이랑 쥐 문제인데, 어떤 걸 듣고 싶니?"
 
 #: conversationlist_mikhail.json:mikhail_tasks:0
 #: conversationlist_mikhail.json:mikhail_rats_done:0
 msgid "What about the bread?"
-msgstr "빵 문제는 뭐에요?"
+msgstr "빵이 왜요?"
 
 #: conversationlist_mikhail.json:mikhail_tasks:1
 #: conversationlist_mikhail.json:mikhail_bread_done:0
 msgid "What about the rats?"
-msgstr "쥐 문제요?"
+msgstr "쥐가 어때서요?"
 
 #: conversationlist_mikhail.json:mikhail_tasks:2
 #: conversationlist_mikhail.json:mikhail_bread_done:1
@@ -333,21 +335,19 @@ msgstr "아니에요, 다른 이야기해요."
 
 #: conversationlist_mikhail.json:mikhail_bread_done
 msgid "Thanks for getting me the bread. There are still the rats."
-msgstr "빵을 갖다줘서 고맙구나. 아직 쥐 문제가 있단다."
+msgstr "빵을 갖다줘서 고맙지만, 아직 쥐 문제가 남아있다."
 
 #: conversationlist_mikhail.json:mikhail_rats_done
 msgid "Thanks for taking care of the rats. I'd still love some bread."
-msgstr "쥐들을 잡아 줘서 고맙다. 난 아직 빵이 먹고 싶구나."
+msgstr "쥐를 잡아 줘서 고맙지만, 빵도 먹고 싶구나."
 
 #: conversationlist_mikhail.json:mikhail_all_tasks_done
 msgid "Not for now. Thanks for taking care of the bread and rats."
-msgstr "지금은 없다. 빵과 쥐 이야기 들어 줘서 고맙구나."
+msgstr "이제는 괜찮아. 빵도 쥐 문제도 해결해줘서 고맙구나."
 
 #: conversationlist_mikhail.json:mikhail_andor1
 msgid "As I said, Andor went out and hasn't been back since. I worry about him. Please go look for your brother. He said he would only be out for a short while."
-msgstr ""
-"[다시보기]말했다시피, 앤더가 어제 나가서 아직까지 돌아오질 않아. 걔가 걱정된다. 나가서 형 좀 찾아봐라. 잠깐 동안만 나갔다 오겠다고 "
-"했거든."
+msgstr "말했지만, 앤더가 어제 잠깐 나갔다 오겠다고 해놓고 나가서 아직까지 돌아오질 않고 있다. 걱정되니 나가서 형 좀 잘 찾아봐다오."
 
 #: conversationlist_mikhail.json:mikhail_andor2
 msgid "Maybe he went into that supply cave again and got stuck. Or maybe he's in Leta's basement training with that wooden sword again. Please go look for him in town."
@@ -355,11 +355,11 @@ msgstr "보급품 동굴에 들어갔다가 길이 막혔을 거야. 아니면 �
 
 #: conversationlist_mikhail.json:mikhail_bread_start
 msgid "Oh, I almost forgot. If you have time, please go see Mara at the town hall and buy me some more bread."
-msgstr "오, 잊어버릴 뻔했네. 시간 있으면 마을 회관에 있는 마라에게 빵 좀 더 사 와 주겠니."
+msgstr "오, 잊어버릴 뻔했네. 시간 있으면 마을 회관에 있는 마라에게 빵 좀 사 와 주겠니."
 
 #: conversationlist_mikhail.json:mikhail_bread_continue
 msgid "Did you get my bread from Mara at the town hall yet?"
-msgstr "마을 회관의 마라에게 빵을 샀니?"
+msgstr "마을 회관에 있는 마라에게 빵 샀니?"
 
 #: conversationlist_mikhail.json:mikhail_bread_continue:0
 msgid "Yes, here you go."
@@ -390,7 +390,7 @@ msgstr "아뇨, 아직이요."
 
 #: conversationlist_mikhail.json:mikhail_bread_complete
 msgid "Thanks a lot, now I can make my breakfast. Here, take these coins for your help."
-msgstr "정말 고맙구나, 이제 아침 먹을 수 있겠다. 자, 이 동전을 가져가렴 도움이 될게다."
+msgstr "정말 고맙구나, 이제 아침 먹을 수 있겠다. 자, 이 동전을 가져가렴 도움이 될 게다."
 
 #: conversationlist_mikhail.json:mikhail_bread_complete2
 msgid "Thanks for the bread earlier."
@@ -407,11 +407,11 @@ msgstr "천만에요."
 
 #: conversationlist_mikhail.json:mikhail_rats_start
 msgid "I saw some rats out back in our garden earlier. Could you please go kill any rats that you see out there."
-msgstr "요전에 우리 뜰에 쥐가 여러 마리 있었단다. 밖에 나가서 쥐 좀 잡아 주겠니."
+msgstr "우리 뜰에 쥐가 벌써 나오는구나. 밖에 나가서 쥐 좀 잡아주겠니."
 
 #: conversationlist_mikhail.json:mikhail_rats_start:0
 msgid "I have already dealt with the rats."
-msgstr "쥐는 다 잡았어요."
+msgstr "쥐 다 잡았어요."
 
 #: conversationlist_mikhail.json:mikhail_rats_start:1
 msgid "OK, I'll go check out in our garden."
@@ -419,7 +419,7 @@ msgstr "그래, 뜰 좀 보고 오마."
 
 #: conversationlist_mikhail.json:mikhail_rats_start2
 msgid "If you get hurt by the rats, come back here and rest in your bed. That way you can regain your strength."
-msgstr "쥐한테 다치면, 집에 돌아와서 침대에서 쉬거라. 그러면 체력을 회복할 수 있단다."
+msgstr "쥐한테 다치면, 집에 돌아와 침대에서 쉬거라. 다시 기운이 날거란다."
 
 #: conversationlist_mikhail.json:mikhail_rats_start3
 msgid "Also, don't forget to check your inventory. You probably still have that old ring I gave you. Make sure you wear it."
@@ -427,7 +427,7 @@ msgstr "그리고 물품 목록을 확인하는 것을 잊지 말거라. 너한�
 
 #: conversationlist_mikhail.json:mikhail_rats_start3:0
 msgid "OK, I understand. I can rest here if I get hurt, and I should check my inventory for useful items."
-msgstr "네 알았어요. 다치면 여기서 쉴 수 있다는 것, 그리고 물품 목록에 쓸만한 물건이 있는지 확인하라는 것두요."
+msgstr "네 알았어요. 다치면 집에서 쉬고, 쓸만한 게 있는지 물품 목록을 확인할께요."
 
 #: conversationlist_mikhail.json:mikhail_rats_continue
 msgid "Did you kill those two rats in our garden?"
@@ -445,7 +445,7 @@ msgid ""
 msgstr ""
 "오 그렇니? 와, 정말 고맙구나!\n"
 "\n"
-"만약 다쳤으면 저기 있는 침대에서 쉬면서 체력 좀 보충해두거라."
+"다쳤으면 저기 있는 침대에서 쉬고 기운을 차리거라."
 
 #: conversationlist_mikhail.json:mikhail_rats_complete2
 msgid ""
@@ -455,11 +455,13 @@ msgid ""
 msgstr ""
 "요전에 쥐를 잡아준 것은 고맙구나.\n"
 "\n"
-"다쳤을 땐 저기 있는 침대에서 쉬면서 체력을 채우거라."
+"다쳤으면 저기 있는 침대에서 쉬고 기운을 차리거라."
 
 #: conversationlist_mikhail_foodpoison.json:mikhail_rats_start2a
 msgid "Another way to regain your strength is to eat some food. You can buy some for yourself from Mara at the town hall. But watch out - I hear that raw meat can sometimes give you food poisoning."
-msgstr "음식을 먹어도 체력을 회복할 수 있단다. 마을 회관의 마라한테서 음식을 살 수 있어. 하지만 조심하렴, 날고기를 먹다가 가끔 식중독에 걸리기도 한다더라."
+msgstr ""
+"음식을 먹어도 체력을 회복할 수 있단다. 마을 회관의 마라한테서 음식을 살 수 있어. 하지만 조심하렴, 날고기를 먹다가 가끔 식중독에 "
+"걸릴 수 있으니까."
 
 #: conversationlist_mikhail_foodpoison.json:mikhail_rats_start2b
 msgid "If that happens, perhaps the town priest can do something to help you.  Otherwise, just rest until you feel better."
@@ -467,7 +469,7 @@ msgstr "만약 식중독에 걸리면, 아마 마을의 사제 분께 뭔가 도
 
 #: conversationlist_mikhail_foodpoison.json:mikhail_rats_start2c
 msgid "Me, I can't really afford the meat, so I just stick to my bread!"
-msgstr "나, 나는 고기를 살 돈이 없어서 빵에 집착한다!"
+msgstr "나, 나는 정말 고기를 살 수 없어서, 빵만 먹는다!"
 
 #: conversationlist_crossglen.json:audir1
 msgid ""
@@ -538,7 +540,7 @@ msgid ""
 msgstr ""
 "물론이지 꼬마야, 여기서 쉴 수 있단다.\n"
 "\n"
-"아무 침대든 골라도 좋단다."
+"원하는 침대를 골라보렴."
 
 #: conversationlist_crossglen.json:arambold2:0
 #: conversationlist_crossglen_gruil.json:gruil_andor3:0
@@ -742,7 +744,7 @@ msgstr "알다시피 여긴 크로스글렌 마을이야. 주로 농사를 짓�
 
 #: conversationlist_crossglen_leonid.json:leonid_crossglen1
 msgid "We have Audir with his smithy to the southwest, Leta and her husband's cabin to the west, this town hall here and your father's cabin to the northwest."
-msgstr "아우디르의 대장간이 남서쪽에 있고, 레타와 그의 남편의 오두막은 서쪽에, 시청은 이곳이고 너의 아버지 집은 북서쪽에 있지."
+msgstr "아우디르의 대장간이 남서쪽에 있고, 레타와 그의 남편의 오두막은 서쪽에, 마을 회관은 이곳이고 너의 아버지 집은 북서쪽에 있지."
 
 #: conversationlist_crossglen_leonid.json:leonid_crossglen2
 msgid "That's pretty much it. We try to live a peaceful life."
@@ -763,12 +765,12 @@ msgstr "눈치 챘을지도 모르지만 몇 주 전에 소란이 있었지. 마
 #: conversationlist_crossglen_leonid.json:leonid_crossglen4
 msgid "Lord Geomyr issued a statement regarding the unlawful use of bonemeal as healing substance. Some villagers argued that we should oppose Lord Geomyr's word and still use it."
 msgstr ""
-"지미르 왕이 골분을 치료약으로 사용하는 건 불법이라고 성명서를 발표했다. 일부 마을 사람들은 우리가 지미르 왕의 말에 반대하고 여전히 "
-"골분을 계속 써야 한다고 주장하고 있지."
+"지미르 왕이 골분을 치료약으로 사용하는 건 불법이라고 성명서를 발표했다. 일부 마을 사람들은 우리가 왕의 말에 반대하고 여전히 골분을 "
+"계속 써야 한다고 주장하고 있지."
 
 #: conversationlist_crossglen_leonid.json:leonid_crossglen4_1
 msgid "Tharal, our priest, was particularly upset and suggested we do something about Lord Geomyr."
-msgstr "우리 사제, 싸랄은 특히 화나서 지미르 왕에게 우리가 뭐라도 해야 한다고 하더군."
+msgstr "우리 사제, 싸랄은 특히 화나서 지미르 왕에게 함께 뭐라도 해야 한다고 하더군."
 
 #: conversationlist_crossglen_leonid.json:leonid_crossglen5
 msgid ""
@@ -785,20 +787,20 @@ msgid ""
 "On one hand, Lord Geomyr supports Crossglen with a lot of protection.\n"
 "[Points to the soldiers in the hall]"
 msgstr ""
-"한편으로, 지미르 왕은 크로스글렌을 보호하기위해 많은 지원을 했어.\n"
+"한편으로 보면, 지미르 왕은 크로스글렌을 보호하기위해 많은 지원을 했어.\n"
 "[홀의 군인들을 가르키며]"
 
 #: conversationlist_crossglen_leonid.json:leonid_crossglen7
 msgid "But on the other hand, the tax and the recent changes of what's allowed are really taking a toll on Crossglen."
-msgstr "하지만 다른 면에서 보면, 세금과 최근 변화로 크로스글렌에 큰 피해를 주고 있다."
+msgstr "하지만 다른 면에서 보면, 세금과 최근 변화로 우리 마을에 큰 피해를 주고 있다."
 
 #: conversationlist_crossglen_leonid.json:leonid_crossglen8
 msgid "Someone should go to Castle Geomyr and talk to the steward about our situation here in Crossglen."
-msgstr "누군가 지미르 성에 가서 크로스글렌의 상황을 간사에게 알려야 해."
+msgstr "누군가 지미르 성에 가서 크로스글렌의 상황을 성 관리인에게 알려야 해."
 
 #: conversationlist_crossglen_leonid.json:leonid_crossglen9
 msgid "In the meantime, we've banned all use of bonemeal as a healing substance."
-msgstr "그동안, 우린 골분을 치료약으로 쓰지 않겠다."
+msgstr "그동안, 우린 골분을 치료약으로 쓰지 않고 있겠다."
 
 #: conversationlist_crossglen_leonid.json:leonid_crossglen9:0
 msgid "Thank you for the information. There was something more I wanted to ask you."
@@ -827,7 +829,7 @@ msgstr "알려주셔서 감사합니다. 안녕히 계세요."
 #: conversationlist_stoutford_combined.json:stoutford_widow_12:1
 #: conversationlist_stoutford_combined.json:stoutford_widow_roots30_2:1
 msgid "Shadow be with you."
-msgstr "섀도우가 함께하길."
+msgstr "그림자가 함께하길."
 
 #: conversationlist_crossglen_tharal.json:tharal1
 msgid "Walk in the glow of the Shadow, my child."
