@@ -39,7 +39,7 @@
 \n파일이 손상되었거나 불완전합니다.</string>
     <string name="dialog_close">닫기</string>
     <string name="dialog_more">좀 더</string>
-    <string name="dialog_monsterencounter_title">교전</string>
+    <string name="dialog_monsterencounter_title">적과의 조우</string>
     <string name="dialog_monsterencounter_info">정보</string>
     <string name="dialog_monsterencounter_conditions">상태</string>
     <string name="status_ap">AP:</string>
@@ -88,9 +88,9 @@
     <string name="dialog_loot_pickedupitem">물건을 주웠습니다.</string>
     <string name="dialog_loot_pickedupitems">%1$d을(를) 주웠습니다.</string>
     <string name="dialog_groundloot_title">물건들</string>
-    <string name="dialog_groundloot_message">물건 몇 개를 찾았다.</string>
+    <string name="dialog_groundloot_message">약간의 물건을 찾았습니다.</string>
     <string name="dialog_monsterloot_title">승리</string>
-    <string name="dialog_monsterloot_message">당신은 교전에서 살아남았다.</string>
+    <string name="dialog_monsterloot_message">적과의 조우에서 살아남았다.</string>
     <string name="dialog_monsterloot_gainedexp">%1$d의 경험을 얻었습니다.</string>
     <string name="monster_difficulty_veryeasy">매우 쉬움</string>
     <string name="monster_difficulty_easy">쉬움</string>
@@ -186,16 +186,16 @@
     <string name="preferences_dialog_confirmrest">침대로 들어갈 때 쉬고 싶은지 여부에 대한 질문을 던지도록 설정합니다. 반대의 경우, 자동적으로 쉬게 됩니다.</string>
     <string name="preferences_dialog_confirmattack_title">공격 확인</string>
     <string name="preferences_dialog_confirmattack">괴물을 공격할 때 \'공격하시겠습니까\?\'라고 묻습니다.</string>
-    <string name="preferences_dialog_monsterloot_title">전리품 표시</string>
-    <string name="preferences_dialog_monsterloot">전투 후, 전리품 표시 여부 선택합니다. (금, 경험치, 물건들).</string>
+    <string name="preferences_dialog_monsterloot_title">노획물 표시</string>
+    <string name="preferences_dialog_monsterloot">전투 후, 노획물 표시 여부를 선택합니다. (금, 경험치, 물건들).</string>
     <string name="preferences_combat_category">전투</string>
     <string name="preferences_combat_speed_title">전투 속도</string>
     <string name="preferences_combat_speed">전투의 진행 속도를 결정합니다.</string>
-    <string name="preferences_display_loot_dialog">항상 대화상자에 전리품을 표시합니다</string>
-    <string name="preferences_display_loot_dialog_on_items">발견품이 있을 때만 표시합니다</string>
-    <string name="preferences_display_loot_dialog_on_items_or_toast">물건은 표시하고, 나머지는 간단하게 알립니다</string>
-    <string name="preferences_display_loot_toast">간단하게 알립니다</string>
-    <string name="preferences_display_loot_toast_on_items">발견물이 있을 때만 간단하게 알립니다</string>
+    <string name="preferences_display_loot_dialog">항상 노획물 대화상자를 표시합니다</string>
+    <string name="preferences_display_loot_dialog_on_items">발견물이 있을 때 노획물 대화상자를 표시합니다</string>
+    <string name="preferences_display_loot_dialog_on_items_or_toast">발견물이 있을 때는 대화상자, 나머지는 알림으로 표시</string>
+    <string name="preferences_display_loot_toast">간단하게 알림으로 표시합니다</string>
+    <string name="preferences_display_loot_toast_on_items">발견물이 있을 때만 알림을 표시합니다</string>
     <string name="preferences_display_loot_never">표시하지 않습니다</string>
     <string name="preferences_attackspeed_instant">즉시 (애니메이션 없이)</string>
     <string name="preferences_attackspeed_fast">빠르게</string>
@@ -217,9 +217,9 @@
     <string name="iteminfo_effect_works_when_equipped">장비하면</string>
     <string name="iteminfo_effect_works_when_hit_by_attacker">피해를 입으면</string>
     <string name="iteminfo_effect_works_when_killed_by_attacker">사망하면</string>
-    <string name="iteminfo_effect_decrease_current_hp">%1$s HP를 빼앗습니다</string>
+    <string name="iteminfo_effect_decrease_current_hp">%1$s HP를 빼앗깁니다</string>
     <string name="iteminfo_effect_increase_current_hp">%1$s HP를 회복합니다</string>
-    <string name="iteminfo_effect_decrease_current_ap">%1$s AP를 빼앗습니다</string>
+    <string name="iteminfo_effect_decrease_current_ap">%1$s AP를 빼앗깁니다</string>
     <string name="iteminfo_effect_increase_current_ap">%1$s AP를 회복합니다</string>
     <string name="iteminfo_effect_increase_max_hp">최대 HP +%1$d</string>
     <string name="iteminfo_effect_decrease_max_hp">최대 HP -%1$d</string>
