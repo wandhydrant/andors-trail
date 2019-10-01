@@ -6,36 +6,36 @@
     <string name="menu_settings">Preferências</string>
     <string name="menu_save">Guardar</string>
     <string name="menu_save_gamesaved">O jogo foi guardado na posição %1$d</string>
-    <string name="menu_save_failed">Falha ao guardar o jogo! O cartão SD está montado e com permissões de escrita?</string>
+    <string name="menu_save_failed">Não foi possível guardar o jogo! O cartão SD está montado e é gravável\?</string>
     <string name="loadsave_title_save">Guardar jogo</string>
     <string name="loadsave_title_load">Carregar jogo guardado</string>
-    <string name="loadsave_selectslot">Escolhe a posição</string>
-    <string name="savegame_currenthero_displayinfo">nível %1$d, %2$d exp, %3$d moedas</string>
-    <string name="dialog_loading_message">A carregar recursos…</string>
+    <string name="loadsave_selectslot">Selecione a posição</string>
+    <string name="savegame_currenthero_displayinfo">nível %1$d, %2$d exp, %3$d moedas ouro</string>
+    <string name="dialog_loading_message">A carregar os recursos…</string>
     <string name="dialog_loading_failed_title">Erro ao carregar</string>
     <string name="dialog_loading_failed_message">O Andor\'s Trail não conseguiu carregar o ficheiro do jogo guardado.
 \n
 \n:-(
 \n
 \nO ficheiro pode estar danificado ou incompleto.</string>
-    <string name="dialog_loading_failed_incorrectversion">O Andor\'s Trail não conseguiu carregar o ficheiro do jogo guardado. Este ficheiro foi criado com uma versão mais recente do que a que está a ser utilizada neste momento.</string>
+    <string name="dialog_loading_failed_incorrectversion">O Andor\'s Trail não conseguiu carregar o ficheiro do jogo guardado. Este ficheiro do jogo foi criado com uma versão mais recente do que a que está a ser atualmnete usada.</string>
     <string name="dialog_close">Fechar</string>
     <string name="dialog_monsterencounter_title">Combate</string>
-    <string name="dialog_monsterencounter_message">Queres atacar\?
+    <string name="dialog_monsterencounter_message">Quer atacar\?
 \nDificuldade: %1$s</string>
     <string name="dialog_monsterencounter_info">Informação</string>
     <string name="status_hp">Vida:</string>
     <string name="status_ap">PA:</string>
     <string name="status_exp">Nível:</string>
-    <string name="heroinfo_char">Vista geral</string>
+    <string name="heroinfo_char">Sinopse</string>
     <string name="heroinfo_inv">Inventário</string>
     <string name="heroinfo_skill">Habilidades</string>
     <string name="heroinfo_levelup">Subir de nível</string>
     <string name="heroinfo_level">Nível</string>
     <string name="heroinfo_totalexperience">Experiência total</string>
-    <string name="heroinfo_wornequipment">Itens equipados</string>
+    <string name="heroinfo_wornequipment">Equipamento usado</string>
     <string name="heroinfo_inventory">Inventário</string>
-    <string name="heroinfo_gold">Moedas: %1$d</string>
+    <string name="heroinfo_gold">Moedas ouro: %1$d</string>
     <string name="heroinfo_actionpoints">Pontos de ação (PA):</string>
     <string name="heroinfo_quests">Missões</string>
     <string name="combat_attack">Atacar (%1$d PA)</string>
@@ -44,8 +44,8 @@
     <string name="combat_endturn">Terminar turno</string>
     <!-- <string name="combat_endcombat">Terminar combate</string>-->
     <string name="combat_flee">Fugir</string>
-    <string name="combat_begin_flee">Agora podes fugir do combate, clica na direção para onde queres ir.</string>
-    <string name="combat_flee_failed">Não conseguiste fugir!</string>
+    <string name="combat_begin_flee">Agora pode fugir do combate, clicando na direção para onde quer mover.</string>
+    <string name="combat_flee_failed">Não conseguiu fugir!</string>
     <string name="combat_status_ap">PA: %1$d</string>
     <string name="combat_monsterhealth">PV:</string>
     <string name="combat_monsteraction">%1$s está a atacar.</string>
