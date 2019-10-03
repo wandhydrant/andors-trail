@@ -1,7 +1,7 @@
 [
     {
         "id":"umar_guild_1",
-        "message":"I see...So you want to get involved in our Guild?",
+        "message":"I see .... So you want to get involved in our Guild?",
         "replies":[
             {
                 "text":"Yes, you seem like reasonable people.",
@@ -124,7 +124,7 @@
     },
     {
         "id":"umar_guild_5b",
-        "message":"I understand your doubts.Come back when you're prepared.",
+        "message":"I understand your doubts. Come back when you're prepared.",
         "replies":[
             {
                 "text":"Bye.",
@@ -134,7 +134,7 @@
     },
     {
         "id":"troublemaker_guild_1",
-        "message":"Argh, another annoying apprentice... I mean, sorry. I know you were the one who brought us the key.",
+        "message":"Argh, another annoying apprentice ... I mean, sorry. I know you were the one who brought us the key.",
         "replies":[
             {
                 "text":"N",
@@ -209,7 +209,7 @@
                 "nextPhraseID":"troublemaker_guild_8a"
             },
             {
-                "text":"That's not my favourite kind of job...but I will bring them.",
+                "text":"That's not my favourite kind of job, but I will bring them.",
                 "nextPhraseID":"troublemaker_guild_8a"
             },
             {
@@ -220,7 +220,7 @@
     },
     {
         "id":"troublemaker_guild_8a",
-        "message":"Good. We have three people on the job.\nThe first one is a spy in Crossglen, Leta. I believe you know her.\nOne of our veteran spies, Dunla, is disguised as a vendor in Vilegard Tavern.\nAnd finally we have Fanamor, watching what is happening around Crossroads Guardhouse.",
+        "message":"Good. We have three people on the job.\nThe first one is a spy in Crossglen, Leta. I believe you know her.\nOne of our veteran spies, Dunla, is disguised as a vendor in Vilegard Tavern.\nAnd finally we have Fanamor, watching what is happening around Crossroads Guardhouse. Search for them in this order.",
         "replies":[
             {
                 "text":"Anything else?",
@@ -262,7 +262,7 @@
     },
     {
         "id":"dunla_guild_1",
-        "message":"What? I don't know what are you talking about.",
+        "message":"What? I don't know what you are talking about.",
         "replies":[
             {
                 "text":"You are no one. No one knows you. No one has seen you.",
@@ -325,14 +325,14 @@
                 "nextPhraseID":"S"
             },
             {
-                "text":"Ok,bye.",
+                "text":"Ok, bye.",
                 "nextPhraseID":"X"
             }
         ]
     },
     {
         "id":"fanamor_guild_1",
-        "message":"Finally! I was getting tired of waiting here killing these beasts...",
+        "message":"Finally! I was getting tired of waiting here killing these beasts ...",
         "replies":[
             {
                 "text":"N",
@@ -342,7 +342,7 @@
     },
     {
         "id":"fanamor_guild_2",
-        "message":"Take this. All I've seen is written here...",
+        "message":"Take this. All I've seen is written here ...",
         "switchToNPC":"fanamor",
         "replies":[
             {
@@ -387,7 +387,7 @@
     },
     {
         "id":"feygard_scout_2",
-        "message":"Argh...Damned trash, take this! \n(His sword swings quickly, and severely wounds Fanamor)",
+        "message":"Argh ... damned trash, take this! \n(His sword swings quickly, and severely wounds Fanamor)",
         "switchToNPC":"feygard_scout",
         "replies":[
             {
@@ -424,7 +424,7 @@
     },
     {
         "id":"fanamor_guild_4",
-        "message":"Tsch...I..cannot...\nYou kid, protect the book!\n",
+        "message":"Tsch ... I ... cannot ...\nYou kid, protect the book!\n",
         "switchToNPC":"fanamor",
         "replies":[
             {
@@ -445,7 +445,7 @@
     },
     {
         "id":"leta_guild_2",
-        "message":"How do you...? Whatever, you are one of us.",
+        "message":"How do you ...? Whatever, you are one of us.",
         "replies":[
             {
                 "text":"Umar sent me to get your journal.",
@@ -576,14 +576,14 @@
     },
     {
         "id":"fanamor_guild_5",
-        "message":"Wow, you...you really got rid of him...",
+        "message":"Wow, you ... you really got rid of him ....",
         "replies":[
             {
                 "text":"Did you doubt me?",
                 "nextPhraseID":"fanamor_guild_6"
             },
             {
-                "text":"Yes, even though he was strong, as we can expect of Feygard soldiers...",
+                "text":"Yes, even though he was strong, as we can expect of Feygard soldiers ...",
                 "nextPhraseID":"fanamor_guild_6"
             }
         ]
@@ -593,14 +593,14 @@
         "message":"Watch out! Behind you!",
         "replies":[
             {
-                "text":"What...?",
+                "text":"What ...?",
                 "nextPhraseID":"X"
             }
         ]
     },
     {
         "id":"fanamor_guild_6",
-        "message":"Argh... The Feygard Scout hit me badly. I have not much time... I am bleeding very heavily.",
+        "message":"Argh ... The Feygard Scout hit me badly. I have not much time ... I am bleeding very heavily.",
         "replies":[
             {
                 "text":"I don't think so.",
@@ -652,7 +652,7 @@
         "message":"Have you brought me that bandage?",
         "replies":[
             {
-                "text":"Yes,I have it!",
+                "text":"Yes, I have it!",
                 "nextPhraseID":"fanamor_guild_9a",
                 "requires":[
                     {
@@ -675,7 +675,7 @@
     },
     {
         "id":"fanamor_guild_9b",
-        "message":"Hurry up! I do not have much time..."
+        "message":"Hurry up! I do not have much time ..."
     },
     {
         "id":"fanamor_guild_0",
@@ -714,7 +714,7 @@
         "message":"What's the matter, my child?",
         "replies":[
             {
-                "text":"Ehm...My father has cut himself with an axe, and we don't have any bandages!",
+                "text":"Ehm ... My father has cut himself with an axe, and we don't have any bandages!",
                 "nextPhraseID":"thoronir_guild_2a"
             },
             {
@@ -740,7 +740,7 @@
     },
     {
         "id":"thoronir_guild_2a",
-        "message":"Let me see...",
+        "message":"Let me see ...",
         "replies":[
             {
                 "text":"N",
@@ -776,7 +776,7 @@
     },
     {
         "id":"fanamor_guild_9a",
-        "message":"(You help Fanamor put the bandage on the wound)\n\n...I think I will be able...to move in a few minutes. See you at the Guild. Thank you kid.",
+        "message":"(You help Fanamor put the bandage on the wound)\n\n... I think I will be able ... to move in a few minutes. See you at the Guild. Thank you kid.",
         "replies":[
             {
                 "text":"I'm glad to hear that. Bye.",
@@ -825,6 +825,12 @@
                         "requireType":"questProgress",
                         "requireID":"Thieves01",
                         "value":20
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"Thieves01",
+                        "value":60,
+                        "negate":true
                     }
                 ]
             },
@@ -890,6 +896,23 @@
                 ]
             },
             {
+                "text":"I gave you the journals, so where's my reward?",
+                "nextPhraseID":"troublemaker_guild_12a",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"thieves_hidden",
+                        "value":100
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"thieves_hidden",
+                        "value":110,
+                        "negate":true
+                    }
+                ]
+            },
+            {
                 "text":"Almost done.",
                 "nextPhraseID":"troublemaker_guild_11c"
             },
@@ -908,8 +931,15 @@
                 "nextPhraseID":"troublemaker_guild_12a"
             },
             {
-                "text":"Yes...So where is my reward?",
+                "text":"Yes .... So where is my reward?",
                 "nextPhraseID":"troublemaker_guild_12a"
+            }
+        ],
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"thieves_hidden",
+                "value":100
             }
         ]
     },
@@ -920,6 +950,13 @@
             {
                 "text":"N",
                 "nextPhraseID":"troublemaker_guild_12a"
+            }
+        ],
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"thieves_hidden",
+                "value":100
             }
         ]
     },
@@ -939,7 +976,7 @@
     },
     {
         "id":"troublemaker_guild_12b",
-        "message":"You have to retrieve information from our spies.\nThe first one is Fanamor, watching around Crossroads Guardhouse.\nOne of our veteran spies, Dunla, is disguised as a vendor in Vilegard Tavern.\nAnd finally another spy in Crossglen, Leta. I believe you know her.",
+        "message":"You have to retrieve information from our spies.\nThe first one is a spy in Crossglen, Leta. I believe you know her.\nOne of our veteran spies, Dunla, is disguised as a vendor in Vilegard Tavern.\nAnd finally we have Fanamor, watching what is happening around Crossroads Guardhouse. Search for them in this order.",
         "replies":[
             {
                 "text":"N",
@@ -959,7 +996,7 @@
     },
     {
         "id":"troublemaker_guild_12a",
-        "message":"Anyway, you should talk with Umar. Maybe he has another task... one that's more in your line of work, you know.",
+        "message":"You should talk with Umar. Maybe he has another task ... one that's more in your line of work, you know.",
         "replies":[
             {
                 "text":"Sure, I will talk to him.",
@@ -980,6 +1017,11 @@
                 "rewardType":"giveItem",
                 "rewardID":"gold",
                 "value":900
+            },
+            {
+                "rewardType":"questProgress",
+                "rewardID":"thieves_hidden",
+                "value":110
             }
         ]
     },
@@ -988,7 +1030,7 @@
         "message":"Hi again, kid. What do you want?",
         "replies":[
             {
-                "text":"OK...It's done. She's alright, and probably eating some bread now.",
+                "text":"OK ... It's done. She's alright, and probably eating some bread now.",
                 "nextPhraseID":"troublemaker_guild02_9",
                 "requires":[
                     {
@@ -1039,7 +1081,7 @@
                 ]
             },
             {
-                "text":"I have to...(you look at Ambelie) find a better place for her.",
+                "text":"I have to ...(you look at Ambelie) find a better place for her.",
                 "nextPhraseID":"troublemaker_guild02_1",
                 "requires":[
                     {
@@ -1070,7 +1112,7 @@
                 "nextPhraseID":"X"
             },
             {
-                "text":"It's my job. Nice to see you survived those Anklebiters...",
+                "text":"It's my job. Nice to see you survived those anklebiters ...",
                 "nextPhraseID":"X"
             }
         ]
@@ -1084,7 +1126,7 @@
                 "nextPhraseID":"umar_guild_5a"
             },
             {
-                "text":"I'm still confused,sorry.",
+                "text":"I'm still confused, sorry.",
                 "nextPhraseID":"umar_guild_5b"
             }
         ]
@@ -1102,7 +1144,7 @@
                 "nextPhraseID":"X"
             },
             {
-                "text":"Hah, what an honor! It has been so, so difficult...",
+                "text":"Hah, what an honor! It has been so, so difficult ....",
                 "nextPhraseID":"umar_guild02_2"
             }
         ]
@@ -1112,11 +1154,11 @@
         "message":"I detect a certain sarcasm in your words.",
         "replies":[
             {
-                "text":"No, no...Never mind, see you later.",
+                "text":"No, no .... Never mind, see you later.",
                 "nextPhraseID":"X"
             },
             {
-                "text":"That's maybe because I am trying to be sarcastic...",
+                "text":"That's maybe because I am trying to be sarcastic ...",
                 "nextPhraseID":"umar_guild02_3"
             }
         ]
@@ -1217,14 +1259,14 @@
     },
     {
         "id":"umar_guild02_5z",
-        "message":"Well, before I can give you a very demanding job, I need you to do another... retrieval task.",
+        "message":"Well, before I can give you a very demanding job, I need you to do another ... retrieval task.",
         "replies":[
             {
-                "text":"Anything for the glory o...Oops, I mean OK",
+                "text":"Anything for the glory o... Oops, I mean OK",
                 "nextPhraseID":"umar_guild02_6a"
             },
             {
-                "text":"Sigh. If you insist...",
+                "text":"Sigh. If you insist ...",
                 "nextPhraseID":"umar_guild02_6a"
             },
             {
@@ -1235,7 +1277,7 @@
     },
     {
         "id":"umar_guild02_6a",
-        "message":"Excellent. I warn you that this is not an ordinary retrieval. It's more like a...kidnapping.",
+        "message":"Excellent. I warn you that this is not an ordinary retrieval. It's more like a ... kidnapping.",
         "replies":[
             {
                 "text":"Now that sounds more interesting.",
@@ -1273,7 +1315,7 @@
     },
     {
         "id":"umar_guild02_8",
-        "message":"Nothing unusual about that. But in this case we've discovered that the woman is the daughter of Hertzsen Laumwill, patriarch of the Laumwill family.\n\n(You look around, trying to remember someone ,but nothing comes to you)",
+        "message":"Nothing unusual about that. But in this case we've discovered that the woman is the daughter of Hertzsen Laumwill, patriarch of the Laumwill family.\n\n(You look around, trying to remember someone, but nothing comes to you)",
         "replies":[
             {
                 "text":"N",
@@ -1290,7 +1332,7 @@
                 "nextPhraseID":"umar_guild02_10"
             },
             {
-                "text":"I...understand. So what's my task?",
+                "text":"I ... understand. So what's my task?",
                 "nextPhraseID":"umar_guild02_10"
             }
         ]
@@ -1318,7 +1360,7 @@
     },
     {
         "id":"umar_guild02_11a",
-        "message":"Great... Before you go, I should tell you where she is.",
+        "message":"Great ... Before you go, I should tell you where she is.",
         "replies":[
             {
                 "text":"N",
@@ -1352,7 +1394,7 @@
         "message":"Good luck. Return to me when you're done.",
         "replies":[
             {
-                "text":"Wait, wait! How am I supposed to...",
+                "text":"Wait, wait! How am I supposed to ...",
                 "nextPhraseID":"umar_guild02_13"
             },
             {
@@ -1405,7 +1447,7 @@
         "message":"Why? I don't know you, commoner. Why would I be willing to trust a savage looking kid?",
         "replies":[
             {
-                "text":"But I'm not a commoner! I'm a...Feygard spy. These clothes are my disguise!",
+                "text":"But I'm not a commoner! I'm a ... Feygard spy. These clothes are my disguise!",
                 "nextPhraseID":"ambelie_guild02_2"
             },
             {
@@ -1419,7 +1461,7 @@
         "message":"Anyway, I prefer to stay in this place for now. Get away from me!",
         "replies":[
             {
-                "text":"Hmpf...Goodbye",
+                "text":"Hmpf .... Goodbye",
                 "nextPhraseID":"X"
             }
         ],
@@ -1436,7 +1478,7 @@
         "message":"What? I haven't been informed of that. Since you seem like an inexperienced kid, I don't believe you.",
         "replies":[
             {
-                "text":"Ergh...Mr Laumwill is grateful for your protection. However...Ah! He has given this reward of 1000gp for your efforts.",
+                "text":"Ergh ... Mr Laumwill is grateful for your protection. However ... Ah! He has given this reward of 1000gp for your efforts.",
                 "nextPhraseID":"ff_captain_guild02_2a",
                 "requires":[
                     {
@@ -1622,7 +1664,7 @@
         "message":"(You tap her on the back of the head with the handle of your weapon, and she falls unconsicious)",
         "replies":[
             {
-                "text":"Fine...",
+                "text":"Fine ...",
                 "nextPhraseID":"R"
             }
         ],
@@ -1679,7 +1721,7 @@
         "message":"(You put Ambelie, who is still unconsicious, in a chair next to you)\n\nOh! How how did you get here so fast? I've heard reports of a barricade blocking the way from the Duleian road to Fallhaven.",
         "replies":[
             {
-                "text":"Barricades, guards... Nothing for me.",
+                "text":"Barricades, guards ... no big thing for me.",
                 "nextPhraseID":"umar_guild02_17"
             },
             {
@@ -1721,7 +1763,7 @@
     },
     {
         "id":"umar_guild02_18b",
-        "message":"Hmm, let me think about it...",
+        "message":"Hmm, let me think about it ....",
         "replies":[
             {
                 "text":"N",
@@ -1760,7 +1802,7 @@
                 "nextPhraseID":"X"
             },
             {
-                "text":"Hmpf...Bye (You lift Ambelie up and carry her on your shoulders)",
+                "text":"Hmpf ... Bye (You lift Ambelie up and carry her on your shoulders)",
                 "nextPhraseID":"X"
             }
         ],
@@ -1777,7 +1819,7 @@
         "message":"So do you want to kill her quietly?",
         "replies":[
             {
-                "text":"No, just I want a suitable place to leave her until...",
+                "text":"No, just I want a suitable place to leave her until ...",
                 "nextPhraseID":"troublemaker_guild02_2a"
             },
             {
@@ -1856,7 +1898,7 @@
     },
     {
         "id":"troublemaker_guild02_6",
-        "message":"I almost forget. Take this key. Make sure you put it in correctly to open the hatchway.",
+        "message":"I almost forgot. Take this key. Make sure you put it in correctly to open the hatchway.",
         "replies":[
             {
                 "text":"You forget many things, right?",
@@ -1950,7 +1992,7 @@
     },
     {
         "id":"guild02_hatchlever_2a",
-        "message":"This is probably the place Troublemaker mentioned. You see a crowbar with a locked chain that surrounds the whole mechanism, stopping it from moving.The key seems to fit into the lock.",
+        "message":"This is probably the place Troublemaker mentioned. You see a crowbar with a locked chain that surrounds the whole mechanism, stopping it from moving. The key seems to fit into the lock.",
         "replies":[
             {
                 "text":"Put the key into the lock.",
@@ -2021,7 +2063,7 @@
     },
     {
         "id":"troublemaker_guild02_8",
-        "message":"Ah, yes...That captive. Take this food and make sure she is comfortable enough. We don't want her starving right?\n(Troublemaker gives you some bread)",
+        "message":"Ah, yes ... that captive. Take this food and make sure she is comfortable enough. We don't want her starving right?\n(Troublemaker gives you some bread)",
         "replies":[
             {
                 "text":"Argh. OK. What a tedious job!",
@@ -2106,7 +2148,7 @@
         "switchToNPC":"ambelie",
         "replies":[
             {
-                "text":"Hello...I have food for you.",
+                "text":"Hello! I have food for you.",
                 "nextPhraseID":"ambelie_guild02_8"
             },
             {
@@ -2117,10 +2159,10 @@
     },
     {
         "id":"ambelie_guild02_8",
-        "message":"Wh...What do you want? What you have done to me? Where in the world am I? Answer me!",
+        "message":"Wh..what do you want? What have you done to me? Where in the world am I? Answer me!",
         "replies":[
             {
-                "text":"That does not concern you.Take this food please.",
+                "text":"That does not concern you. Take this food please.",
                 "nextPhraseID":"ambelie_guild02_9a"
             },
             {
@@ -2134,7 +2176,7 @@
         "message":"Don't hurt me please! I will be quiet.",
         "replies":[
             {
-                "text":"Now take this food... Without complaining!",
+                "text":"Now take this food ... Without complaining!",
                 "nextPhraseID":"ambelie_guild02_9a"
             }
         ]
@@ -2169,7 +2211,7 @@
     },
     {
         "id":"ambelie_guild02_11",
-        "message":"S...sorry,please... Yes I'm hungry... Will you give me that? *sniffs*",
+        "message":"S..sorry, please ... Yes I'm hungry ... Will you give me that? *sniffs*",
         "replies":[
             {
                 "text":"[Give the Bread]",
@@ -2207,7 +2249,7 @@
     },
     {
         "id":"ambelie_guild02_13",
-        "message":"...Fine *sniffs*."
+        "message":"... Fine *sniffs*."
     },
     {
         "id":"ambelie_guild02_14",
@@ -2222,7 +2264,7 @@
                 "nextPhraseID":"troublemaker_guild02_9_1"
             },
             {
-                "text":"But...",
+                "text":"But ...",
                 "nextPhraseID":"troublemaker_guild02_10"
             }
         ]
@@ -2275,14 +2317,14 @@
     },
     {
         "id":"umar_guild02_22",
-        "message":"Fine...Although you look odd. What's the matter?",
+        "message":"Fine .... Although you look odd. What's the matter?",
         "replies":[
             {
-                "text":"It's OK...it's just that is not my kind of work.",
+                "text":"It's OK ... it's just that is not my kind of work.",
                 "nextPhraseID":"umar_guild02_23a"
             },
             {
-                "text":"Urgh...I just need better tasks! Do you still think I'm not yet ready?",
+                "text":"Urgh ... I just need better tasks! Do you still think I'm not yet ready?",
                 "nextPhraseID":"umar_guild02_23b"
             }
         ]
@@ -2303,7 +2345,7 @@
     },
     {
         "id":"umar_guild02_23b",
-        "message":"No, nothing of the kind! I was... Well, let's talk.",
+        "message":"No, nothing of the kind! I was .... Well, let's talk.",
         "replies":[
             {
                 "text":"N",
@@ -2313,7 +2355,7 @@
     },
     {
         "id":"umar_guild02_24a",
-        "message":"Well...Anyway, I promise we won't give you those kind of jobs for a while.",
+        "message":"Well .... Anyway, I promise we won't give you those kind of jobs for a while.",
         "replies":[
             {
                 "text":"Fine.",
@@ -2385,7 +2427,7 @@
         "message":"I prefer that you are completely rested before talking about work.",
         "replies":[
             {
-                "text":"Ugh...OK.",
+                "text":"Ugh ... OK.",
                 "nextPhraseID":"umar_guild02_27c"
             },
             {
@@ -2455,7 +2497,7 @@
             },
             {
                 "rewardType":"activateMapObjectGroup",
-                "rewardID":"Keys",
+                "rewardID":"Keys_guild",
                 "mapName":"fallhaven_nw"
             },
             {
@@ -2614,7 +2656,7 @@
                 "nextPhraseID":"umar_guild03_2"
             },
             {
-                "text":"Yes...",
+                "text":"Yes ...",
                 "nextPhraseID":"umar_guild03_2"
             }
         ]
@@ -2692,14 +2734,14 @@
         "message":"Anyway, the fact is that one of our veterans has betrayed us.",
         "replies":[
             {
-                "text":"Betrayed...us?",
+                "text":"Betrayed ... us?",
                 "nextPhraseID":"umar_guild03_8"
             }
         ]
     },
     {
         "id":"umar_guild03_8",
-        "message":"Yes. He and his former comrades were sent to Fallhaven catacombs.",
+        "message":"Yes. He and his former comrades were sent to the Fallhaven catacombs.",
         "replies":[
             {
                 "text":"I thought the work there was done since I brought the key of Luthor to you.",
@@ -2734,7 +2776,7 @@
                 "nextPhraseID":"umar_guild03_11a"
             },
             {
-                "text":"I see...",
+                "text":"I see ....",
                 "nextPhraseID":"umar_guild03_11b"
             }
         ],
@@ -2802,7 +2844,7 @@
     },
     {
         "id":"umar_guild03_13",
-        "message":"I'm pretty sure about it. The team leader is the one we call \"Crackshot\", as he is a master of murder, torture and the subjugation arts. He's really a dangerous man...",
+        "message":"I'm pretty sure about it. The team leader is the one we call \"Crackshot\", as he is a master of murder, torture and the subjugation arts. He's really a dangerous man.",
         "replies":[
             {
                 "text":"So, do you have a plan?",
@@ -2823,21 +2865,21 @@
     },
     {
         "id":"umar_guild03_14",
-        "message":"Hmm...I think we have no choice. We'll have to deal with him and his henchmen...Forever.",
+        "message":"Hmm ... I think we have no choice. We'll have to deal with him and his henchmen ... forever.",
         "replies":[
             {
                 "text":"OK, leave this to me. That's finally the kind of work I was searching for.",
                 "nextPhraseID":"umar_guild03_15a"
             },
             {
-                "text":"I...I prefer to not get involved into this. Sorry.",
+                "text":"I ... I prefer to not get involved into this. Sorry.",
                 "nextPhraseID":"umar_guild03_15b"
             }
         ]
     },
     {
         "id":"umar_guild03_15a",
-        "message":"Are you completely sure? You will be alone against trained thieves and other criminals whose sole objective is to earn more and more gold...",
+        "message":"Are you completely sure? You will be alone against trained thieves and other criminals whose sole objective is to earn more and more gold.",
         "replies":[
             {
                 "text":"I can deal with them with my bare hands!",
@@ -2851,7 +2893,7 @@
     },
     {
         "id":"umar_guild03_15b",
-        "message":"Maybe it's not the best time. We must bring him down. Think about it. There are probably many lives at risk...",
+        "message":"Maybe it's not the best time. We must bring him down. Think about it. There are probably many lives at risk ...",
         "replies":[
             {
                 "text":"I will, I promise. Bye.",
@@ -2892,7 +2934,7 @@
                 "nextPhraseID":"umar_guild03_18a"
             },
             {
-                "text":"He will show up sooner or later...",
+                "text":"He will show up sooner or later ...",
                 "nextPhraseID":"umar_guild03_18b"
             }
         ]
@@ -3026,7 +3068,7 @@
                 "nextPhraseID":"umar_guild03_24a"
             },
             {
-                "text":"Understood...",
+                "text":"Understood ...",
                 "nextPhraseID":"umar_guild03_24a"
             },
             {
@@ -3047,7 +3089,7 @@
     },
     {
         "id":"umar_guild03_24b",
-        "message":"Are you serious?\nBah, I'll repeat it for you...",
+        "message":"Are you serious?\nBah, I'll repeat it for you ...",
         "replies":[
             {
                 "text":"N",
@@ -3171,7 +3213,7 @@
     },
     {
         "id":"Feygard_BG_guild03_5",
-        "message":"Yes! Those crimin...\nWait, you don't have to know this information! Forget everything I've said!",
+        "message":"Yes! Those crimin ...\nWait, you don't have to know this information! Forget everything I've said!",
         "replies":[
             {
                 "text":"I will, bye!",
@@ -3309,7 +3351,7 @@
     },
     {
         "id":"guild03_sword_clashing",
-        "message":"ARGH!! *sword clashing*\n\nSargent! Sargent!\n...*laughter*",
+        "message":"ARGH!! *sword clashing*\n\nSergeant! Sergeant!\n... *laughter*",
         "switchToNPC":"unknown",
         "replies":[
             {
@@ -3363,7 +3405,7 @@
     },
     {
         "id":"guild03_deadpatrol_2_2",
-        "message":"Y...you kid...Argh! *spits up blood*.\nThat guy is not...Argh.",
+        "message":"Y..you kid ... Argh! *spits up blood*.\nThat guy is not ... Argh.",
         "replies":[
             {
                 "text":"What guy?",
@@ -3392,14 +3434,14 @@
     },
     {
         "id":"guild03_deadpatrol_2_3",
-        "message":"No...He's not...Agggh!\n[He has stopped breathing. I cannot do anything for him. Better to move on.]",
+        "message":"No ... he's not .... Agggh!\n[He has stopped breathing. I cannot do anything for him. Better to move on.]",
         "replies":[
             {
-                "text":"Shadow, embrace him...",
+                "text":"Shadow, embrace him ....",
                 "nextPhraseID":"R"
             },
             {
-                "text":"I'll save your sargent!",
+                "text":"I'll save your sergeant!",
                 "nextPhraseID":"R"
             }
         ],
@@ -3426,7 +3468,7 @@
     },
     {
         "id":"guild03_doorlock_1",
-        "message":"I think I should check those strange blood marks before going on..."
+        "message":"I think I should check those strange blood marks before going on ...."
     },
     {
         "id":"rebthief_guild03_1",
@@ -3447,15 +3489,15 @@
     },
     {
         "id":"FeygardSerg_guild03_1",
-        "message":"(Gives you a surprised look). How...?\nWho are you kid?",
+        "message":"(Gives you a surprised look). How ...?\nWho are you kid?",
         "switchToNPC":"g03_sergeant",
         "replies":[
             {
-                "text":"Eh...I am...",
+                "text":"Eh ... I am ...",
                 "nextPhraseID":"FeygardSerg_guild03_2"
             },
             {
-                "text":"That doesn't...",
+                "text":"That doesn't ...",
                 "nextPhraseID":"FeygardSerg_guild03_2"
             }
         ]
@@ -3473,7 +3515,7 @@
                 "nextPhraseID":"FeygardSerg_guild03_3"
             },
             {
-                "text":"I'm here because...I'm here to help you!",
+                "text":"I'm here because ... I'm here to help you!",
                 "nextPhraseID":"FeygardSerg_guild03_3"
             }
         ],
@@ -3531,7 +3573,7 @@
     },
     {
         "id":"FeygardSerg_guild03_6",
-        "message":"We reached these passages via a forest cavern, and went through the beasts without any major problem. Suddenly,the suspect appeared with a group of men, probably his allies or subordinates...",
+        "message":"We reached these passages via a forest cavern, and went through the beasts without any major problem. Suddenly, the suspect appeared with a group of men, probably his allies or subordinates ...",
         "replies":[
             {
                 "text":"N",
@@ -3551,7 +3593,7 @@
     },
     {
         "id":"FeygardSerg_guild03_8",
-        "message":"I managed to get rid of most of them, but I'm severely wounded and unable to continue...",
+        "message":"I managed to get rid of most of them, but I'm severely wounded and unable to continue ...",
         "replies":[
             {
                 "text":"N",
@@ -3733,11 +3775,11 @@
     },
     {
         "id":"guild03_crackshot_1",
-        "message":"Oh ho! Welcome to my base,kid.",
+        "message":"Oh ho! Welcome to my base, kid.",
         "switchToNPC":"g03_crackshot",
         "replies":[
             {
-                "text":"Hmm...This is not the place where I would choose to live.",
+                "text":"Hmm .... This is not the place where I would choose to live.",
                 "nextPhraseID":"guild03_crackshot_2a"
             },
             {
@@ -3838,7 +3880,7 @@
     },
     {
         "id":"guild03_hideout3_exit_1",
-        "message":"W..Wait...",
+        "message":"W..wait ....",
         "switchToNPC":"g03_crackshot_dying",
         "replies":[
             {
@@ -3859,10 +3901,10 @@
     },
     {
         "id":"guild03_hideout3_exit_3",
-        "message":"The key is cursed...She...I am... (Crackshot finally dies, emitting a soft bluish breath)\n",
+        "message":"The key is cursed .... She ... I am ... (Crackshot finally dies, emitting a soft bluish breath)\n",
         "replies":[
             {
-                "text":"Bah...Too many questions. I need to come back.",
+                "text":"Bah .... Too many questions. I need to come back.",
                 "nextPhraseID":"X"
             }
         ],
@@ -3871,11 +3913,6 @@
                 "rewardType":"questProgress",
                 "rewardID":"Thieves03",
                 "value":40
-            },
-            {
-                "rewardType":"deactivateMapObjectGroup",
-                "rewardID":"Keys2",
-                "mapName":"crackshot_hideout3"
             },
             {
                 "rewardType":"removeQuestProgress",
@@ -3899,7 +3936,7 @@
         "message":"Excellent. Did he have the key with him?",
         "replies":[
             {
-                "text":"Yes... [give key]. Why is this key so important to us?",
+                "text":"Yes ... [give key]. Why is this key so important to us?",
                 "nextPhraseID":"umar_guild03_26a",
                 "requires":[
                     {
@@ -3989,7 +4026,7 @@
         "message":"I'm sorry, but for now I can't say more.",
         "replies":[
             {
-                "text":"I see...",
+                "text":"I see ....",
                 "nextPhraseID":"umar_guild03_27a"
             },
             {
@@ -4014,7 +4051,7 @@
                 "nextPhraseID":"umar_guild03_27b"
             },
             {
-                "text":"If you say so...",
+                "text":"If you say so ...",
                 "nextPhraseID":"umar_guild03_27a"
             }
         ],
@@ -4063,11 +4100,11 @@
                 "nextPhraseID":"umar_guild03_28a"
             },
             {
-                "text":"It is true...Nobody important.",
+                "text":"It is true .... Nobody important.",
                 "nextPhraseID":"umar_guild03_28c"
             },
             {
-                "text":"Yeah. He was a Feygard officer...A Sergeant I think.",
+                "text":"Yeah. He was a Feygard officer ... a sergeant I think.",
                 "nextPhraseID":"umar_guild03_28c"
             }
         ]
@@ -4085,7 +4122,7 @@
                 "nextPhraseID":"umar_guild03_28c"
             },
             {
-                "text":"No, he died at last. He was a Feygard officer...A Sergeant I think.",
+                "text":"No, he died at last. He was a Feygard officer ... a sergeant I think.",
                 "nextPhraseID":"umar_guild03_28c"
             }
         ]
@@ -4109,7 +4146,7 @@
                 "nextPhraseID":"umar_guild03_28b"
             },
             {
-                "text":"Understood...",
+                "text":"Understood ....",
                 "nextPhraseID":"umar_guild03_27a"
             }
         ]
@@ -4140,7 +4177,7 @@
     },
     {
         "id":"umar_guild03_28c",
-        "message":"I see...",
+        "message":"I see ....",
         "replies":[
             {
                 "text":"N",
@@ -4259,7 +4296,7 @@
         "message":"No jobs today my young friend. Maybe some other day.",
         "replies":[
             {
-                "text":"I see...Bye.",
+                "text":"I see. Bye.",
                 "nextPhraseID":"X"
             },
             {
@@ -4274,7 +4311,7 @@
     },
     {
         "id":"ambelie_guild02_4c",
-        "message":"Wha...What are you referring to?",
+        "message":"Wha... what are you referring to?",
         "replies":[
             {
                 "text":"Sorry. Time to sleep! (Knock her out)",
@@ -4291,7 +4328,7 @@
         "message":"No way! Guards!",
         "replies":[
             {
-                "text":"...Yes, no way. (Knock her out)",
+                "text":"... Yes, no way. (Knock her out)",
                 "nextPhraseID":"ambelie_guild02_4b"
             },
             {
@@ -4364,7 +4401,7 @@
                 "nextPhraseID":"ambelie_guild02_19"
             },
             {
-                "text":"[Lie]I have enough gold, so if you give me something valuable...The ransom we were going to ask will be covered.",
+                "text":"[Lie]I have enough gold, so if you give me something valuable .... The ransom we were going to ask will be covered.",
                 "nextPhraseID":"ambelie_guild02_19"
             }
         ]
@@ -4431,7 +4468,7 @@
     },
     {
         "id":"umar_guild02_30",
-        "message":"I expect more of you.That was your first mission inside the guild and you failed it...\n",
+        "message":"I expect more of you.That was your first mission inside the guild and you failed it!\n",
         "replies":[
             {
                 "text":"I brought a valuable necklace from the noblewoman.",
@@ -4581,7 +4618,7 @@
     },
     {
         "id":"FeygardSerg_guild03_dead",
-        "message":"You.. Argh.. \n[The sergeant takes one final breath and then dies. You should have come earlier. Now you will never get to know what he wanted to tell you.]",
+        "message":"You ... Argh ... \n[The sergeant takes one final breath and then dies. You should have come earlier. Now you will never get to know what he wanted to tell you.]",
         "rewards":[
             {
                 "rewardType":"removeSpawnArea",
@@ -4708,11 +4745,6 @@
                 "rewardType":"questProgress",
                 "rewardID":"Thieves03",
                 "value":35
-            },
-            {
-                "rewardType":"activateMapObjectGroup",
-                "rewardID":"Keys2",
-                "mapName":"crackshot_hideout3"
             }
         ]
     },
@@ -4727,6 +4759,27 @@
             {
                 "text":"I'll do that.",
                 "nextPhraseID":"X"
+            }
+        ]
+    },
+    {
+        "id":"guild03_hideout3_exit_select",
+        "replies":[
+            {
+                "nextPhraseID":"guild03_hideout3_exit_1",
+                "requires":[
+                    {
+                        "requireType":"killedMonster",
+                        "requireID":"g03_crackshot",
+                        "value":1
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"Thieves03",
+                        "value":40,
+                        "negate":true
+                    }
+                ]
             }
         ]
     }

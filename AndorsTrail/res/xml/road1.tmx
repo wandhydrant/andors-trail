@@ -259,9 +259,6 @@
   </object>
  </objectgroup>
  <objectgroup name="Spawn">
-  <properties>
-   <property name="active" value="false"/>
-  </properties>
   <object id="9" name="ff_outsideguard" type="spawn" x="640" y="224" width="32" height="32">
    <properties>
     <property name="spawngroup" value="ff_outsideguard"/>
@@ -302,10 +299,7 @@
    </properties>
   </object>
  </objectgroup>
- <objectgroup name="Spawn Guild">
-  <properties>
-   <property name="active" value="false"/>
-  </properties>
+ <objectgroup name="Spawn_guild">
   <object id="15" name="Feygard_BG" type="spawn" x="96" y="288" width="192" height="32">
    <properties>
     <property name="active" value="false"/>

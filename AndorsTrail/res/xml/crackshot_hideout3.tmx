@@ -235,6 +235,11 @@
     <property name="when" value="step"/>
    </properties>
   </object>
+  <object name="guild03_hideout3_exit_select" type="script" x="288" y="544" width="32" height="32">
+   <properties>
+    <property name="when" value="enter"/>
+   </properties>
+  </object>  
  </objectgroup>
  <objectgroup name="Spawn">
   <object name="g03_sergeant" type="spawn" x="192" y="480" width="32" height="32">
@@ -301,16 +306,6 @@
   <object name="g03_hideout_reb5" type="spawn" x="288" y="128" width="32" height="64">
    <properties>
     <property name="spawngroup" value="g03_crackshot"/>
-   </properties>
-  </object>
- </objectgroup>
- <objectgroup name="Keys2" visible="0">
-  <properties>
-   <property name="active" value="false"/>
-  </properties>
-  <object name="guild03_hideout3_exit_1" type="script" x="288" y="544" width="32" height="32">
-   <properties>
-    <property name="when" value="enter"/>
    </properties>
   </object>
  </objectgroup>
