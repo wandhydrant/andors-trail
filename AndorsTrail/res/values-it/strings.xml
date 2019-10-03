@@ -2,8 +2,8 @@
 <resources>
 	<string name="app_name">Andor\'s Trail</string>
 
-	<string name="exit_to_menu">Esci dal menu</string>
-	<string name="menu_settings">Opzioni</string>
+	<string name="exit_to_menu">Torna al menu</string>
+	<string name="menu_settings">Preferenze</string>
 	<string name="menu_save">Salva</string>
 	<string name="menu_save_gamesaved">Partita salvata sullo slot %1$d</string>
 	<string name="menu_save_failed">Impossibile salvare! La scheda SD è montata e scrivibile\?</string>
@@ -15,22 +15,23 @@
 
 	<string name="dialog_loading_message">Caricamento risorse…</string>
 	<string name="dialog_loading_failed_title">Caricamento fallito</string>
-	<string name="dialog_loading_failed_message">Andor\'s Trail non ha caricato il salvataggio.
-\n
-\n:(
-\n
+	<string name="dialog_loading_failed_message">Andor\'s Trail non è riuscito a caricare il salvataggio. 
+\n 
+\n:( 
+\n 
 \nIl file può essere incompleto o danneggiato.</string>
 	<string name="dialog_loading_failed_incorrectversion">Andor\'s Trail non ha caricato il salvataggio. Il salvataggio è stato creato con una versione più recente rispetto a quella installata.</string>
 
 	<string name="dialog_close">Chiudi</string>
 
 	<string name="dialog_monsterencounter_title">Combattimento</string>
-	<string name="dialog_monsterencounter_message">Vuoi attaccare? Difficoltà: %1$s</string>
+	<string name="dialog_monsterencounter_message">Vuoi attaccare\?
+\nDifficoltà: %1$s</string>
 	<string name="dialog_monsterencounter_info">Info</string>
 
 	<string name="status_hp">HP:</string>
 	<string name="status_ap">AP:</string>
-	<string name="status_exp">Punti Esperienza (XP):</string>
+	<string name="status_exp">XP:</string>
 
 	<string name="heroinfo_char">Panoramica</string>
 	<string name="heroinfo_inv">Inventario</string>
@@ -56,39 +57,39 @@
 	<string name="combat_monsterhealth">HP:</string>
 	<string name="combat_monsteraction">%1$s sta attaccando.</string>
 	<!-- <string name="combat_cannotexitcombat">You cannot exit combat since there are adjacent monsters. You first have to move by longclicking a place with no adjacent monster, before you may end the combat.</string> -->
-	<string name="combat_result_monstermiss">%1$s manca il colpo!</string>
-	<string name="combat_result_monsterhit">%1$s colpisce per %2$d hp!</string>
+	<string name="combat_result_monstermiss">%1$s ti manca!</string>
+	<string name="combat_result_monsterhit">%1$s ti colpisce per %2$d hp!</string>
 	<string name="combat_result_monsterhitcritical">%1$s effettua un colpo critico per %2$d hp!</string>
 	<string name="combat_result_heromiss">Il tuo attacco è fallito.</string>
 	<string name="combat_result_herohit">Hai colpito %1$s per %2$d hp!</string>
-	<string name="combat_result_herohitcritical">Sferri un colpo critico %1$s per %2$d hp!</string>
+	<string name="combat_result_herohitcritical">Sferri un colpo critico su %1$s per %2$d hp!</string>
 	<string name="combat_result_herokillsmonster">%1$s muore!</string>
-	<string name="combat_not_enough_ap">Non hai abbastanza AP, attendi il prossimo turno.</string>
-	<string name="combat_hero_dies">Cadi svenuto ma fortunatamente ti risvegli vivo. Hai perso %1$d esperienza.</string>
+	<string name="combat_not_enough_ap">AP insufficienti rimasti in questo turno.</string>
+	<string name="combat_hero_dies">Cadi svenuto ma fortunatamente ti risvegli vivo, frastornato e affaticato. Hai perso %1$d punti esperienza.</string>
 
 	<string name="inventory_info">Info</string>
-	<string name="inventory_equip">Utilizza</string>
-	<string name="inventory_unequip">Smetti di utilizzare</string>
+	<string name="inventory_equip">Equipaggia</string>
+	<string name="inventory_unequip">Togli</string>
 	<string name="inventory_use">Usa</string>
-	<string name="inventory_drop">Scarica</string>
+	<string name="inventory_drop">Lascia</string>
 	<string name="inventory_item_used">Hai usato %1$s.</string>
-	<string name="inventory_item_dropped">%1$s è stato abbandonato.</string>
+	<string name="inventory_item_dropped">%1$s è stato lasciato.</string>
 	<string name="inventory_item_equipped">Stai usando %1$s.</string>
 
 	<string name="dialog_loot_pickall">Raccogli tutto</string>
-	<string name="dialog_loot_foundgold">Hai %1$d Oro. </string>
+	<string name="dialog_loot_foundgold">Hai trovato %1$d oro.</string>
 	<string name="dialog_loot_pickedupitems">Hai raccolto %1$d oggetti.</string>
 	<string name="dialog_groundloot_title">Oggetti</string>
 	<string name="dialog_groundloot_message">Hai trovato alcuni oggetti. </string>
 	<string name="dialog_monsterloot_title">Vittoria</string>
-	<string name="dialog_monsterloot_message">Sei sopravvissuto all\'incontro.</string>
-	<string name="dialog_monsterloot_gainedexp">Hai guadagnato %1$d di esperienza.</string>
+	<string name="dialog_monsterloot_message">Sei sopravvissuto al combattimento.</string>
+	<string name="dialog_monsterloot_gainedexp">Hai ottenuto %1$d punti esperienza.</string>
 
-	<string name="monster_difficulty_veryeasy">Facilissimo</string>
+	<string name="monster_difficulty_veryeasy">Molto facile</string>
 	<string name="monster_difficulty_easy">Facile</string>
 	<string name="monster_difficulty_normal">Normale</string>
 	<string name="monster_difficulty_hard">Difficile</string>
-	<string name="monster_difficulty_veryhard">Difficilissimo</string>
+	<string name="monster_difficulty_veryhard">Molto difficile</string>
 	<string name="monster_difficulty_impossible">Impossibile</string>
 
 	<string name="actorinfo_class">Classe:</string>
@@ -96,16 +97,16 @@
 	<string name="actorinfo_health">Salute:</string>
 	<string name="actorinfo_attack">Attacco:</string>
 	<string name="actorinfo_defense">Difesa:</string>
-	<string name="actorinfo_movecost">Costo mossa (AP):</string>
-	<string name="actorinfo_basetraits">Statistiche oggetti non indossati (base)</string>
-	<string name="actorinfo_currenttraits">Statistiche oggetti indossati (correnti)</string>
+	<string name="actorinfo_movecost">Costo movimento (AP):</string>
+	<string name="actorinfo_basetraits">Statistiche di combattimento di base (senza oggetti e abilità)</string>
+	<string name="actorinfo_currenttraits">Statistiche combattimento (attuali)</string>
 
 	<string name="traitsinfo_attack_cost">Costo attacco (AP):</string>
-	<string name="traitsinfo_attack_chance">Possibilità attacco:</string>
-	<string name="traitsinfo_attack_damage">Possibilità danni:</string>
-	<string name="traitsinfo_criticalhit_skill">colpo critico:</string>
-	<string name="traitsinfo_criticalhit_multiplier">moltiplicatore critico:</string>
-	<string name="traitsinfo_defense_chance">Possibilità difesa:</string>
+	<string name="traitsinfo_attack_chance">Probabilità d\'attacco:</string>
+	<string name="traitsinfo_attack_damage">Danni d\'attacco:</string>
+	<string name="traitsinfo_criticalhit_skill">Abilità colpo critico:</string>
+	<string name="traitsinfo_criticalhit_multiplier">Moltiplicatore critico:</string>
+	<string name="traitsinfo_defense_chance">Probabilità di difesa:</string>
 	<string name="traitsinfo_defense_damageresist">Resistenza ai danni:</string>
 
 	<!-- <string name="key_required">E\' richiesta una chiave specifica per passare.</string> -->
@@ -146,12 +147,12 @@
 	<string name="levelup_buttontext">Nuovo Livello</string>
 	<string name="levelup_add_health">Aumenta salute (+%1$d HP)</string>
 	<string name="levelup_add_health_description">Aggiunge %1$d alla salute massima.</string>
-	<string name="levelup_add_attackchance">Aumenta possibilità attacco (+%1$d)</string>
-	<string name="levelup_add_attackchance_description">Aggiunge %1$d alla tua possibilità d\'attacco di base.</string>
+	<string name="levelup_add_attackchance">Aumenta la probabilità d\'attacco (+%1$d)</string>
+	<string name="levelup_add_attackchance_description">Aggiunge %1$d alla tua probabilità d\'attacco di base.</string>
 	<string name="levelup_add_attackdamage">Aumenta danni attacco (+%1$d)</string>
 	<string name="levelup_add_attackdamage_description">Aggiunge %1$d al danno del tuo attacco base.</string>
-	<string name="levelup_add_blockchance">Aumenta possibilità difesa (+%1$d)</string>
-	<string name="levelup_add_blockchance_description">Aggiunge %1$d alla tua possibilità di difesa base.</string>
+	<string name="levelup_add_blockchance">Aumenta la probabilità di difesa (+%1$d)</string>
+	<string name="levelup_add_blockchance_description">Aggiunge %1$d alla tua probabilità di difesa base.</string>
 
 	<string name="dialog_rest_title">Riposa</string>
 	<string name="dialog_rest_confirm_message">Vuoi riposare qui?</string>
@@ -215,7 +216,7 @@
 
 	<string name="actorinfo_currentconditions">Condizioni attive</string> <!-- Translated as: affliction / statuseffect / temporary effect -->
 	<string name="actorcondition_info_removes_all">Rimuovi tutte %1$s</string>
-	<string name="iteminfo_effect_chance_of">%1$s cambio di %2$s</string>
+	<string name="iteminfo_effect_chance_of">%1$s probabilità di %2$s</string>
 	<string name="iteminfo_effect_duration">(%1$d turni)</string>
 
 	<string name="iteminfo_effect_works_on_source">Sulla sorgente</string>
@@ -323,12 +324,12 @@
 	<string name="skill_shortdescription_evasion">Probabilità di fuga incrementata</string>
 	<string name="skill_shortdescription_regeneration">Guadagni Vita ogni Turno</string>
 	<string name="skill_shortdescription_lower_exploss">Diminuisce il numero di esperienza persa quando si è uccisi</string>
-	<string name="skill_shortdescription_magicfinder">Maggiore probabilità di trovare Oggetti Magici</string>
+	<string name="skill_shortdescription_magicfinder">Maggiore probabilità di trovare oggetti magici</string>
 	<string name="skill_shortdescription_resistance_mental">Resistenza contro Condizioni Mentali</string>
 	<string name="skill_shortdescription_resistance_physical_capacity">Resistenza contro Condizioni di capacità fisica</string>
 	<string name="skill_shortdescription_resistance_blood_disorder">Resistenza contro Malattie del Sangue</string>
 
-	<string name="skill_longdescription_weapon_chance">Incrementa la probabilità d\'attacco del %1$d punti percentuali per ogni livello di Abilità.</string>
+	<string name="skill_longdescription_weapon_chance">Incrementa la probabilità d\'attacco del %1$d punti percentuali per ogni livello di abilità.</string>
 	<string name="skill_longdescription_weapon_dmg">Incrementa il danno massimo del %1$d per ogni livello di Abilità.</string>
 	<string name="skill_longdescription_barter">Per ogni livello di abilità, diminuisce la penalità d\'oro nella compravendita di %1$d punti percentuali.</string>
 	<string name="skill_longdescription_dodge">Incrementa la probabilità di difesa di %1$d punti percentuali per ogni livello di abilità.</string>
@@ -342,13 +343,13 @@
 	<string name="skill_longdescription_cleave">Dà +%1$d Punti Azione (AP) per ogni uccisione ogni livello di abilità.</string>
 	<string name="skill_longdescription_eater">Dà +%1$d Punti Vita (HP) per ogni uccisione ogni livello di abilità.</string>
 	<string name="skill_longdescription_fortitude">Per ogni aumento di livello successivo, i Punti Vita (HP) massimi aumenteranno del %1$d ogni livello di abilità. Questo non è applicabile retroattivamente, solo gli aumenti di livelli successivi saranno influenzati.</string>
-	<string name="skill_longdescription_evasion">Per ogni livello di abilità, riduce sia la possibilità di fallire una fuga del %1$d %% sia la possibilità che un mostro adiacente attacchi del %2$d %%.</string>
+	<string name="skill_longdescription_evasion">Per ogni livello di abilità, riduce sia la probabilità di fallire una fuga del %1$d %% sia la probabilità che un mostro adiacente attacchi del %2$d %%.</string>
 	<string name="skill_longdescription_regeneration">Guadagni +%1$d Punti Vita (HP) ogni Turno per ogni livello di abilità quando nessun mostro è direttamente adiacente.</string>
 	<string name="skill_longdescription_lower_exploss">Per ogni livello di abilità, riduce la quantità di esperienza persa causata da morte del %1$d %% (percentuale del valore esistente di perdita di esperienza, non punti percentuali). %2$d livelli rimuoveranno tutta l\'esperienza persa causata da morte.</string>
-	<string name="skill_longdescription_magicfinder">Incrementa la possibilità di trovare oggetti non comuni del %1$d %% per ogni livello di abilità.</string>
-	<string name="skill_longdescription_resistance_mental">Diminuisce la possibilità di essere colpiti da Condizioni Mentali del %1$d %% per ogni livello di abilità, fino al massimo di %2$d %%. Questo include condizioni causate da attacchi di mostri come Confusione o Debolezza dell\'arma.</string>
+	<string name="skill_longdescription_magicfinder">Incrementa la probabilità di trovare oggetti non comuni del %1$d %% per ogni livello di abilità.</string>
+	<string name="skill_longdescription_resistance_mental">Diminuisce la probabilità di essere afflitti da condizioni mentali del %1$d %% per ogni livello di abilità, fino al massimo di %2$d %%. Questo include condizioni causate da attacchi di mostri come Confusione o Debolezza dell\'arma.</string>
 	<string name="skill_longdescription_resistance_physical_capacity">Diminuisce la possibilità di essere colpiti da condizioni che riguardano la tua capacità fisica del %1$d %% per ogni livello di abilità, fino al massimo di %2$d %%. Questo include le condizioni causate da attacchi di mostri come Fatica.</string>
-	<string name="skill_longdescription_resistance_blood_disorder">Diminuisce la possibilità di essere colpiti da Malattie del Sangue del %1$d %% per ogni livello di abilità, fino al massimo di %2$d %%. Questo include condizioni causate da attacchi di mostri come Avvelenamento o Ferite Sanguinanti.</string>
+	<string name="skill_longdescription_resistance_blood_disorder">Diminuisce la probabilità di essere colpiti da malattie del sangue del %1$d %% per ogni livello di abilità, fino al massimo di %2$d %%. Questo include condizioni causate da attacchi di mostri come Avvelenamento o ferite sanguinanti.</string>
 
 	<string name="skillinfo_action_levelup">Aumento di Livello</string>
 	<string name="skill_current_level">Livello attuale: %1$d</string>
@@ -385,30 +386,30 @@
 
 	<string name="skill_title_shadow_bless">Benedizione Oscura dell\'Ombra</string>
 	<string name="skill_shortdescription_shadow_bless">Resistenza contro ogni tipo di condizione</string>
-	<string name="skill_longdescription_shadow_bless">Diminuisce la possibilità di essere colpiti da tutti i tipi di condizioni del %1$d %%. Questo include tutte le condizioni causate da attacchi di nemici come Avvelenamento, Confusione o Fatica.</string>
+	<string name="skill_longdescription_shadow_bless">Diminuisce la probabilità di essere colpiti da tutti i tipi di condizioni del %1$d %%. Questo include tutte le condizioni causate da attacchi di nemici come Avvelenamento, Confusione o Fatica.</string>
 
 	<string name="inventory_movetop">Sposta in alto</string>
 	<string name="inventory_movebottom">Sposta in basso</string>
 	<string name="actorinfo_immune_criticals">Immune ai Colpi Critici</string>
-	<string name="traitsinfo_criticalhit_effectivechance">Possibilità effettiva di Colpo Critico:</string>
+	<string name="traitsinfo_criticalhit_effectivechance">Probabilità effettiva di critico:</string>
 
 	<string name="skill_title_crit1">Emorragia Interna</string>
 	<string name="skill_shortdescription_crit1">Possibilità di Emorragia Interna</string>
-	<string name="skill_longdescription_crit1">Per ogni Colpo Critico a segno, c\'è un possibilità del %1$d %% che il colpo causi un\'emorragia interna nel bersaglio, causando effettivamente la condizione di \"Emorragia Interna\" nel bersaglio. Emorragia Interna diminuisce drasticamente le abilità offensive, facendo sì che il bersaglio sia meno abile nel mettere a segno gli attacchi.</string>
+	<string name="skill_longdescription_crit1">Per ogni colpo critico a segno, c\'è un probabilità del %1$d %% che il colpo causi un\'emorragia interna nel bersaglio, causando effettivamente la condizione di \"Emorragia Interna\" nel bersaglio. Emorragia Interna diminuisce drasticamente le abilità offensive, facendo sì che il bersaglio sia meno abile nel mettere a segno gli attacchi.</string>
 	<string name="skill_title_crit2">Frattura</string>
 	<string name="skill_shortdescription_crit2">Possibilità di frattura dell\'osso</string>
 	<string name="inventory_unassign">Dis-assegna Slot Rapido</string>
 
-	<string name="skill_longdescription_crit2">Per ogni Colpo Critico a segno, c\'è un possibilità del %1$d %% che il colpo causi una frattura in alcune ossa del bersaglio, causando effettivamente la condizione di \"Frattura\" nel bersaglio. Questo diminuisce drasticamente le abilità difensive del bersaglio, facendo sì che il bersaglio sia meno abile nel difendersi da attacchi successivi.</string>
+	<string name="skill_longdescription_crit2">Per ogni colpo critico a segno, c\'è un probabilità del %1$d %% che il colpo causi una frattura in alcune ossa del bersaglio, causando effettivamente la condizione di \"Frattura\" nel bersaglio. Questo diminuisce drasticamente le abilità difensive del bersaglio, facendo sì che il bersaglio sia meno abile nel difendersi da attacchi successivi.</string>
 	<string name="skill_title_rejuvenation">Ringiovanimento</string>
 	<string name="skill_shortdescription_rejuvenation">Possibilità di rimozione di effetti</string>
-	<string name="skill_longdescription_rejuvenation">Ogni Turno (6 secondi), c\'è una possibilità del %1$d %% che una delle condizioni negative attive diminuisca di un grado. Questo si applica a tutti i tipi di condizioni temporanee che affliggono il corpo; Condizioni Mentali come Confusione, Condizioni di Capacità Fisica come Fatica e anche Malattie del Sangue come Avvelenamento.</string>
+	<string name="skill_longdescription_rejuvenation">Ogni turno (6 secondi), c\'è una probabilità del %1$d %% che una delle condizioni negative attive diminuisca di un grado. Questo si applica a tutti i tipi di condizioni temporanee che affliggono il corpo; condizioni mentali come Confusione, condizioni di capacità fisica come Fatica e anche malattie del sangue come Avvelenamento.</string>
 	<string name="skill_title_taunt">Scherno</string>
 	<string name="skill_shortdescription_taunt">L\'attaccante perde AP quando il colpo non va a segno</string>
-	<string name="skill_longdescription_taunt">Quando un attaccante compie un attacco che fallisce, c\'è una possibilità del %1$d %% che l\'attaccante perda %2$d Punti Azione (AP). Questo si applica a tutti i tipi di Attacchi Fisici contro di te.</string>
+	<string name="skill_longdescription_taunt">Quando un attaccante compie un attacco che fallisce, c\'è una possibilità del %1$d %% che l\'attaccante perda %2$d punti azione (AP). Questo si applica a tutti i tipi di attacchi fisici contro di te.</string>
 	<string name="skill_title_concussion">Trauma</string>
 	<string name="skill_shortdescription_concussion">Possibilità di Trauma</string>
-	<string name="skill_longdescription_concussion">Quando compi un attacco contro un bersaglio la cui Possibilità di Difesa (BC) è almeno %1$d più bassa rispetto alla tua Possibilità di Attacco (AC), c\'è una possibilità del %2$d %% che il colpo causi un Trauma nel bersaglio. Trauma diminuisce drasticamente le abilità offensive del bersaglio, facendo sì che il bersaglio sia meno abile nel mettere a segno un attacco.</string>
+	<string name="skill_longdescription_concussion">Quando compi un attacco contro un bersaglio la cui probabilità di difesa (BC) è almeno %1$d più bassa rispetto alla tua probabilità d\'attacco (AC), c\'è una probabilità del %2$d %% che il colpo causi un trauma nel bersaglio. Il trauma diminuisce drasticamente le abilità offensive del bersaglio, facendo sì che il bersaglio sia meno abile nel mettere a segno un attacco.</string>
 
 	<string name="about_button4">Riguardo</string>
 
@@ -425,9 +426,9 @@
 	<string name="iteminfo_effect_weapon_attack_cost">Costo dell\'Attacco: %1$d AP</string>
 	<string name="iteminfo_effect_increase_attack_cost">Incrementa il costo dell\'Attacco di %1$d AP</string>
 	<string name="iteminfo_effect_decrease_attack_cost">Diminuisce il costo dell\'attacco di %1$d AP</string>
-	<string name="iteminfo_effect_weapon_attack_chance">Possibilità d\'Attacco: %1$d</string>
-	<string name="iteminfo_effect_increase_attack_chance">Incrementa la possibilità d\'Attacco di %1$d</string>
-	<string name="iteminfo_effect_decrease_attack_chance">Diminuisce la possibilità d\'Attacco di %1$d</string>
+	<string name="iteminfo_effect_weapon_attack_chance">Probabilità d\'attacco: %1$d</string>
+	<string name="iteminfo_effect_increase_attack_chance">Incrementa la probabilità d\'attacco di %1$d</string>
+	<string name="iteminfo_effect_decrease_attack_chance">Diminuisce la probabilità d\'attacco di %1$d</string>
 	<string name="iteminfo_effect_weapon_attack_damage">Danno da Attacco: %1$d</string>
 	<string name="iteminfo_effect_weapon_attack_damage_minmax">Danno da Attacco: %1$d-%2$d</string>
 	<string name="iteminfo_effect_increase_attack_damage">Incrementa il danno da Attacco di %1$d</string>
@@ -437,8 +438,8 @@
 	<string name="iteminfo_effect_increase_critical_skill">Incrementa l\'abilità di Colpo Critico di %1$d</string>
 	<string name="iteminfo_effect_decrease_critical_skill">Diminuisce l\'abilità di Colpo Critico di %1$d</string>
 	<string name="iteminfo_effect_critical_multiplier">Abilita i Colpi Critici con un moltiplicatore di x%1$.1f</string>
-	<string name="iteminfo_effect_increase_block_chance">Incrementa la possibilità di Difesa di %1$d</string>
-	<string name="iteminfo_effect_decrease_block_chance">Diminuisce la possibilità di Difesa di %1$d</string>
+	<string name="iteminfo_effect_increase_block_chance">Incrementa la probabilità di difesa di %1$d</string>
+	<string name="iteminfo_effect_decrease_block_chance">Diminuisce la probabilità di difesa di %1$d</string>
 	<string name="iteminfo_effect_increase_damage_resistance">Aumenta la resistenza al Danno di %1$d</string>
 	<string name="iteminfo_effect_decrease_damage_resistance">Diminuisce la resistenza al Danno di %1$d</string>
 	<string name="iteminfo_effect_increase_use_cost">Incrementa il costo di AP usando oggetti in combattimento di %1$d AP</string>
@@ -495,29 +496,31 @@
 	<string name="skill_shortdescription_specialization_2hand">Esperto delle Armi a due mani</string>
 	<string name="skill_shortdescription_specialization_weapon_shield">Esperto nel combattere con Arma e Scudo</string>
 
-	<string name="skill_longdescription_weapon_prof_dagger">Per ogni livello di abilità, incrementa la possibilità d\'Attacco usando Pugnali e Spade Corte del %1$d %% della possibilità d\'Attacco di base dell\'oggetto, incrementa la possibilità di Difesa del %2$d %% della possibilità di Difesa di base dell\'oggetto e incrementa l\'abilità di Colpo Critico del %3$d %% dell\'abilità di Colpo Critico di base dell\'oggetto.</string>
-	<string name="skill_longdescription_weapon_prof_1hsword">Per ogni livello di abilità, incrementa la possibilità d\'Attacco di Spadini, Spade Lunghe e Spadoni del %1$d %% della possibilità d\'Attacco di base dell\'oggetto, incrementa la possibilità di Difesa del %2$d %% della possibilità di Difesa di base dell\'oggetto e incrementa l\'abilità di Colpo Critico del %3$d %% dell\'abilità di Colpo Critico di base dell\'oggetto.</string>
-	<string name="skill_longdescription_weapon_prof_2hsword">Per ogni livello di abilità, incrementa la possibilità d\'Attacco di Spade a due mani del %1$d %% della possibilità d\'Attacco di base dell\'oggetto, incrementa la possibilità di Difesa del %2$d %% della possibilità di Difesa di base dell\'oggetto e incrementa l\'abilità di Colpo Critico del %3$d %% dell\'abilità di Colpo Critico di base dell\'oggetto.</string>
-	<string name="skill_longdescription_weapon_prof_axe">Per ogni livello di abilità, incrementa la possibilità d\'Attacco di Asce e Asce Grandi del %1$d %% della possibilità d\'Attacco di base dell\'oggetto, incrementa la possibilità di Difesa del %2$d %% della possibilità di Difesa di base dell\'oggetto e incrementa l\'abilità di Colpo Critico del %3$d %% dell\'abilità di Colpo Critico di base dell\'oggetto.</string>
-	<string name="skill_longdescription_weapon_prof_blunt">Per ogni livello di abilità, incrementa la possibilità d\'Attacco di Armi a forma di mazza del %1$d %% della possibilità d\'Attacco di base dell\'oggetto, incrementa la possibilità di Difesa del %2$d %% della possibilità di Difesa di base dell\'oggetto e incrementa l\'abilità di Colpo Critico del %3$d %% dell\'abilità di Colpo Critico di base dell\'oggetto.</string>
+	<string name="skill_longdescription_weapon_prof_dagger">Per ogni livello di abilità, incrementa la probabilità d\'attacco di pugnali e spade corte del %1$d %% della probabilità d\'attacco di base dell\'oggetto, incrementa la probabilità di difesa del %2$d %% della probabilità di difesa di base dell\'oggetto e incrementa l\'abilità di colpo critico del %3$d %% dell\'abilità di colpo critico di base dell\'oggetto.</string>
+	<string name="skill_longdescription_weapon_prof_1hsword">Per ogni livello di abilità, incrementa la probabilità d\'attacco di stocchi, spade lunghe e spadoni del %1$d %% della probabilità d\'attacco di base dell\'oggetto, incrementa la probabilità di difesa del %2$d %% della possibilità di difesa di base dell\'oggetto e incrementa l\'abilità di colpo critico del %3$d %% dell\'abilità di colpo critico di base dell\'oggetto.</string>
+	<string name="skill_longdescription_weapon_prof_2hsword">Per ogni livello di abilità, incrementa la probabilità d\'attacco di spade a due mani del %1$d %% della probabilità d\'attacco di base dell\'oggetto, incrementa la probabilità di difesa del %2$d %% della probabilità di difesa di base dell\'oggetto e incrementa l\'abilità di colpo critico del %3$d %% dell\'abilità di colpo critico di base dell\'oggetto.</string>
+	<string name="skill_longdescription_weapon_prof_axe">Per ogni livello di abilità, incrementa la probabilità d\'attacco di asce e asce grandi del %1$d %% della probabilità d\'attacco di base dell\'oggetto, incrementa la probabilità di difesa del %2$d %% della probabilità di difesa di base dell\'oggetto e incrementa l\'abilità di colpo critico del %3$d %% dell\'abilità di colpo critico di base dell\'oggetto.</string>
+	<string name="skill_longdescription_weapon_prof_blunt">Per ogni livello di abilità, incrementa la probabilità d\'attacco di armi contundenti del %1$d %% della probabilità d\'attacco base dell\'oggetto, incrementa la probabilità di difesa del %2$d %% della probabilità di difesa di base dell\'oggetto e incrementa l\'abilità di colpo critico del %3$d %% dell\'abilità di colpo critico di base dell\'oggetto.</string>
 	<string name="preferences_display_loot_dialog_on_items_or_toast">Finestra di dialogo per gli oggetti, notifica in caso contrario</string>
-	<string name="skill_longdescription_weapon_prof_unarmed">"Quando combatti senza un\'arma e uno scudo, guadagni %1$d di possibilità di Attacco, %2$d di Danno potenziale  e %3$d di possibilità di Difesa per il livello di abilità."</string>
+	<string name="skill_longdescription_weapon_prof_unarmed">"Quando combatti senza arma e scudo, guadagni %1$d di probabilità di attacco, %2$d di danno potenziale  e %3$d di probabilità di difesa per il livello di abilità."</string>
 	<string name="skill_longdescription_armor_prof_shield">Incrementa la resistenza al Danno di %1$d per livello di abilità mentre hai equipaggiato uno scudo.</string>
-	<string name="skill_longdescription_armor_prof_unarmored">Quando combatti senza una parte di armatura equipaggiata, guadagni %1$d di possibilità di Difesa per il livello di abilità. Gli oggetti di stoffa non sono considerati come armatura.</string>
-	<string name="skill_longdescription_armor_prof_light">Per ogni livello di abilità, incrementa la possibilità di Difesa di ogni parte di Armatura leggera indossata del %1$d %% della loro possibilità di Difesa originale. Armature leggere includono pelle, metallo leggero e armature nascoste.</string>
-	<string name="skill_longdescription_armor_prof_heavy">Per ogni livello di abilità, aumenta la probabilità di Difesa di ogni parte di Armatura pesante indossato del %1$d %% della loro possibilità di Difesa originale. Parti di armatura pesante hanno le loro penalità di movimento ridotte del %2$d %% per ogni livello di abilità e loro penalità di velocità d\'Attacco ridotte del %3$d %% per ogni livello di Abilità. Armature pesanti includono armature di metallo, di cotta di maglia e di piastre.</string>
-	<string name="skill_longdescription_fightstyle_dualwield">Dà benefici quando combatti con due armi allo stesso tempo, una nella mano principale e l\'altra nella mano secondaria.
-\n
-\nSenza questa abilità, sarà usato solo il %1$d %% delle qualità di un\'arma equipaggiata nella mano secondaria. Questo include possibilità di Attacco, abilità di Colpo Critico, Danno potenziale e possibilità di Difesa. Senza questa abilità, la velocità di Attacco (costo di AP) nel compiere un attacco è la somma della velocità di Attacco dell\'arma principale e quella dell\'arma usata con la mano secondaria.
-\n
-\nCon un livello di abilità, sarà usato il %2$d %% delle qualità dell\'arma della mano secondaria sarà e la velocità di Attacco è la più altra tra qeulle delle due armi più il %3$d %% della velocità della più piccola velocità delle due armi.
-\n
-\nCon due livelli di abilità, il %4$d %% delle qualità dell\'arma della mano secondaria sarà usato e la velocità di Attacco eguaglia la velocità di Attacco più alta delle due armi equipaggiate.</string>
+	<string name="skill_longdescription_armor_prof_unarmored">Quando combatti senza nessuna parte di armatura equipaggiata, guadagni %1$d di probabilità di difesa per il livello di abilità. Gli oggetti fatti di stoffa non sono considerati come armatura.</string>
+	<string name="skill_longdescription_armor_prof_light">Per ogni livello di abilità, incrementa la probabilità di difesa di ogni parte di armatura leggera indossata del %1$d %% della loro probabilità di difesa originale. Le armature leggere sono di pelle, di metallo leggero e armature mimetiche.</string>
+	<string name="skill_longdescription_armor_prof_heavy">Per ogni livello di abilità, aumenta la probabilità di difesa di ogni parte di armatura pesante indossata del %1$d %% della loro probabilità di difesa originale. Parti di armatura pesante hanno la loro penalità di movimento ridotte del %2$d %% per ogni livello di abilità e la loro penalità di velocità d\'attacco ridotte del %3$d %% per ogni livello di abilità. Armature pesanti includono armature di metallo, di cotta di maglia e di piastre.</string>
+	<string name="skill_longdescription_fightstyle_dualwield">Dà benefici quando combatti con due armi allo stesso tempo, una nella mano principale e l\'altra nella mano secondaria. 
+\n 
+\nSenza questa abilità, sarà usato solo il %1$d %% delle qualità di un\'arma equipaggiata nella mano secondaria. Questo include probabilità di attacco, abilità di colpo critico, danno potenziale e probabilità di difesa. Senza questa abilità, la velocità di attacco (costo di AP) nel compiere un attacco è la somma della velocità di attacco dell\'arma principale e quella dell\'arma usata con la mano secondaria. 
+\n 
+\nCon un livello di abilità, sarà usato il %2$d %% delle qualità dell\'arma della mano secondaria e la velocità di attacco sarà la più alta tra le due armi più il %3$d %% della seconda arma.
+\n 
+\nCon due livelli di abilità, il %4$d %% delle qualità dell\'arma della mano secondaria sarà usato e la velocità di attacco sarà la più alta tra le due armi.</string>
 	<string name="skill_longdescription_fightstyle_2hand">Dà benefici quando usi armi che richiedono entrambe le mani per essere impugnate, come Spade a due mani, Asce Grandi o Martelli Giganti.\n\nOgni livello di abilità incrementa il danno potenziale delle armi a due mani del %1$ d %% del Danno potenziale originale.</string>
-	<string name="skill_longdescription_fightstyle_weapon_shield">Dà benefici quando combatti con un arma nella mano principale e avendo un scudo equipaggiato nella mano secondaria.\n\nOgni livello di abilità aumenta la possibilità di Attacco di armi del %1$d %% delle loro possibilità di Attacco originale e la possibilità di Difesa degli scudi del %2$d %% delle loro possibilità di Difesa originali.</string>
-	<string name="skill_longdescription_specialization_dualwield">Incrementa la possibilità di Attacco di entrambe le armi impugnate di un ulteriore %1$d %% delle loro possibilità di Attacco originali, in aggiunta ai benefici dati da abilità di stile dell\'arma. Le probabilità di Difesa di entrambe le armi impugnate inoltre sono aumentate del %2$d %% delle loro possibilità di Difesa originale.</string>
-	<string name="skill_longdescription_specialization_2hand">Incrementa il Danno potenziale di armi a due mani di un ulteriore %1$d %% del Danno potenziale originale, in aggiunta ai benefici previsti da abilità di stile dell\'arma. Le possibilità di Attacco di armi a due mani sono anche aumentate del %2$d %% delle loro possibilità di Attacco originali.</string>
-	<string name="skill_longdescription_specialization_weapon_shield">Incrementa sia la possibilità di Attacco sia il Danno potenziale di armi. La possibilità di Attacco è incrementata del %1$d %% della possibilità di Attacco originale, e il Danno potenziale è incrementato del %2$d %% del Danno potenziale originale.</string>
+	<string name="skill_longdescription_fightstyle_weapon_shield">Dà benefici quando combatti con un arma nella mano principale e uno scudo nella mano secondaria.
+\n
+\nOgni livello di abilità aumenta la probabilità di attacco delle armi del %1$d %% delle loro probabilità di attacco originale e la probabilità di difesa degli scudi del %2$d %% della loro probabilità di difesa originali.</string>
+	<string name="skill_longdescription_specialization_dualwield">Incrementa la probabilità di attacco di entrambe le armi impugnate di un ulteriore %1$d %% delle loro probabilità di attacco originale, in aggiunta ai benefici dati da abilità di stile dell\'arma. Le probabilità di difesa di entrambe le armi impugnate inoltre sono aumentate del %2$d %% della loro probabilità di difesa originale.</string>
+	<string name="skill_longdescription_specialization_2hand">Incrementa il danno potenziale di armi a due mani di un ulteriore %1$d %% del danno potenziale originale, in aggiunta ai benefici previsti da abilità di stile dell\'arma. La probabilità di attacco di armi a due mani sono anche aumentate del %2$d %% della loro probabilità di attacco originali.</string>
+	<string name="skill_longdescription_specialization_weapon_shield">Incrementa sia la probabilità di attacco sia il danno potenziale di armi. La probabilità di attacco è incrementata del %1$d %% della probabilità di attacco originale, e il danno potenziale è incrementato del %2$d %% del danno potenziale originale.</string>
 
 	<string name="preferences_quickslots_placement">Posizione dello Slot Rapido</string>
 	<string name="preferences_quickslots_placement_summary">Dove posizionare gli Slot Rapidi</string>
@@ -531,10 +534,10 @@
 	<string name="preferences_ui_show_quickslots_when_toolbox_is_visible_title">Mostra gli Slot Rapidi quando il toolbox è aperto</string>
 	<string name="preferences_ui_show_quickslots_when_toolbox_is_visible">Fa sì che i tasti degli Slot Rapidi possano essere mostrati non appena il toolbox è aperto</string>
 	<string name="startscreen_incompatible_savegames">Questa è una versione di Andor\'s Trail in sviluppo. Salvataggi ottenuti con questa versione sono incompatibili con la versione rilasciata.</string>
-	<string name="startscreen_non_release_version">Questa è una versione pre-rilasciata di Andor\'s Trail. Salvataggi ottenuti con questa versione potrebbero non essere compatibili con la versione rilasciata.</string>
+	<string name="startscreen_non_release_version">Questa è una versione pre-rilascio di Andor\'s Trail. I salvataggi fatti con questa versione potrebbero non essere compatibili con la versione di rilascio.</string>
 	<string name="heroinfo_gamestats">Statistiche di gioco</string>
 	<string name="heroinfo_gamestats_quests">Missioni Completate</string>
-	<string name="heroinfo_gamestats_deaths">Numero di volte che hai perso conoscienza</string>
+	<string name="heroinfo_gamestats_deaths">Numero di volte che hai perso coscienza</string>
 	<string name="heroinfo_gamestats_spent_gold">Oro speso nei negozi</string>
 	<string name="heroinfo_gamestats_bonemeals">Pozioni usate</string>
 	<string name="heroinfo_gamestats_num_used_items">Oggetti usati</string>
@@ -549,24 +552,24 @@
 	<string name="preferences_ui_use_localized_resources">Usa traduzioni dell\'interfaccia e del contenuto, dove presenti. (richiede il riavvio)</string>
 	<string name="change_locale_requires_restart">Cambiamenti in locale richiedono il riavvio. Andor\'s Trail è stato chiuso.</string>
 
-<string name="dialog_recenter">Centraggio</string>
+<string name="dialog_recenter">Ricentra</string>
 	<string name="dialog_more">Altro</string>
 
 	<string name="dialog_monsterencounter_conditions">Condizioni</string>
 
 	<string name="heroinfo_skill_categories">Categoria</string>
-	<string name="heroinfo_skill_sort">Ordinamento</string>
+	<string name="heroinfo_skill_sort">Ordina per</string>
 	<string name="heroinfo_inventory_categories">Categoria</string>
 	<string name="heroinfo_inventory_sort">Ordinato per</string>
-	<string name="heroinfo_healthpoints">Punti Salute (HP):</string>
-	<string name="heroinfo_experiencepoints">Punti Esperienza (XP):</string>
+	<string name="heroinfo_healthpoints">Punti salute (HP):</string>
+	<string name="heroinfo_experiencepoints">Punti esperienza (XP):</string>
 	<string name="combat_taunt_monster">Insulti %1$s!</string>
 	<string name="combat_condition_player_apply">Sei colpito da %1$s.</string>
 	<string name="combat_condition_player_clear">Sei ripulito di %1$s.</string>
-	<string name="combat_condition_player_immune">Ora sei immunizzato contro %1$s.</string>
+	<string name="combat_condition_player_immune">Ora sei immune a %1$s.</string>
 	<string name="combat_condition_monster_apply">%1$s è contaminato da %2$s.</string>
 	<string name="combat_condition_monster_clear">%1$s è ripulito da %2$s.</string>
-	<string name="combat_condition_monster_immune">%1$s è ora immunizzato contro %2$s.</string>
+	<string name="combat_condition_monster_immune">%1$s è ora immune da %2$s.</string>
 	
 	
 	<string name="startscreen_newgame_start">Inizio Gioco</string>
@@ -626,6 +629,5 @@
 	
 <string name="preferences_high_quality_filters_title">Filtri di alta qualità</string>
 	<string name="preferences_high_quality_filters">Disabilitare questa opzione se si verificano problemi di prestazioni su mappe filtrate (ad esempio, grotte scure). L\'attivazione di questa opzione farà sì che il gioco utilizzi filtri di colore avanzati, invece di sovrapposizioni di colore solido.</string>
-	
-
-	</resources>
+    <string name="storage_permissions_mandatory">L\'accesso alla memoria è obbligatorio per permettere ad Andor\'s Trail di gestire i salvataggi e la mappa del mondo. Andor\'s Trail si chiuderà.</string>
+</resources>
