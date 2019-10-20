@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: andors-trail\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-11-10 11:48+0000\n"
-"PO-Revision-Date: 2018-11-05 21:43+0000\n"
-"Last-Translator: ___ <o.kravtsov@ukr.net>\n"
+"PO-Revision-Date: 2019-10-21 22:53+0000\n"
+"Last-Translator: Anatoly Chub <anatolijuschub@gmail.com>\n"
 "Language-Team: Ukrainian <https://hosted.weblate.org/projects/andors-trail/"
 "game-content/uk/>\n"
 "Language: uk\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<="
 "4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 3.3-dev\n"
+"X-Generator: Weblate 3.9.1-dev\n"
 "X-Launchpad-Export-Date: 2015-11-02 12:25+0000\n"
 
 #: [none]
@@ -214,19 +214,19 @@ msgstr "Незграбність"
 
 #: actorconditions_stoutford.json:curse_undead
 msgid "Curse of the Undead"
-msgstr ""
+msgstr "Прокляття Нежиті"
 
 #: actorconditions_graveyard1.json:contagion2
 msgid "Spore contagion"
-msgstr ""
+msgstr "Зараження спорами"
 
 #: actorconditions_graveyard1.json:petrification
 msgid "Petrification"
-msgstr ""
+msgstr "Скам'яніння"
 
 #: actorconditions_graveyard1.json:vulnerability
 msgid "Vulnerability"
-msgstr ""
+msgstr "Вразливість"
 
 #: actorconditions_graveyard1.json:flesh_rot
 msgid "Flesh rot"
@@ -238,15 +238,15 @@ msgstr ""
 
 #: actorconditions_guynmart.json:regenNeg
 msgid "Shadow Degeneration"
-msgstr ""
+msgstr "Занепад Тіні"
 
 #: actorconditions_guynmart.json:bone_fracture
 msgid "Bone fracture"
-msgstr ""
+msgstr "Перелом кісток"
 
 #: actorconditions_guynmart.json:shadow_awareness
 msgid "Shadow awareness"
-msgstr ""
+msgstr "Усвідомлення Тіні"
 
 #: actorconditions_trader_teksin.json:poison_irdegh_weak
 msgid "Weak irdegh poison"
@@ -258,15 +258,15 @@ msgstr ""
 
 #: actorconditions_stoutford_combined.json:nausea
 msgid "Nausea"
-msgstr ""
+msgstr "Нудота"
 
 #: actorconditions_stoutford_combined.json:poison_blood
 msgid "Blood poisoning"
-msgstr ""
+msgstr "Захворювання крові"
 
 #: actorconditions_stoutford_combined.json:deftness
 msgid "Deftness"
-msgstr ""
+msgstr "Спритність"
 
 #: actorconditions_stoutford_combined.json:tight_grip
 msgid "Tight grip"
@@ -274,7 +274,7 @@ msgstr ""
 
 #: actorconditions_stoutford_combined.json:clairvoyance
 msgid "Clairvoyance"
-msgstr ""
+msgstr "Ясновидіння"
 
 #: actorconditions_stoutford_combined.json:mind_fog
 msgid "Mind fog"
@@ -282,35 +282,37 @@ msgstr ""
 
 #: conversationlist_mikhail.json:mikhail_gamestart
 msgid "Oh good, you are awake."
-msgstr ""
+msgstr "Чудово, ти прокинувся."
 
 #: conversationlist_mikhail.json:mikhail_visited
 msgid "I can't seem to find your brother Andor anywhere. He hasn't been back since he left yesterday."
 msgstr ""
+"Здається, я ніде не можу знайти твого брата Ендора. Він не повертався з того "
+"моменту, як пішов учора."
 
 #: conversationlist_mikhail.json:mikhail3
 msgid "Never mind, he will probably be back soon."
-msgstr ""
+msgstr "Не звертай уваги, він, швидше за все, скоро повернеться."
 
 #: conversationlist_mikhail.json:mikhail_default
 #: conversationlist_crossglen_leonid.json:leonid_continue
 #: conversationlist_umar.json:umar_return_2
 msgid "Anything else I can help you with?"
-msgstr ""
+msgstr "Я можу ще чимось тобі допомогти?"
 
 #: conversationlist_mikhail.json:mikhail_default:0
 #: conversationlist_mikhail.json:mikhail_default:1
 #: conversationlist_mikhail.json:mikhail_default:2
 msgid "Do you have any more tasks for me?"
-msgstr ""
+msgstr "Ти маєш ще якісь завдання для мене?"
 
 #: conversationlist_mikhail.json:mikhail_default:3
 msgid "Do you have any tasks for me?"
-msgstr ""
+msgstr "Ти маєш якісь завдання для мене?"
 
 #: conversationlist_mikhail.json:mikhail_default:4
 msgid "Is there anything else you can tell me about Andor?"
-msgstr ""
+msgstr "Ти можеш розповісти ще щось про Ендора?"
 
 #: conversationlist_mikhail.json:mikhail_tasks
 msgid "Oh yes, there were some things I need help with, bread and rats. Which one would you like to talk about?"
@@ -324,46 +326,54 @@ msgstr "Що там з хлібом?"
 #: conversationlist_mikhail.json:mikhail_tasks:1
 #: conversationlist_mikhail.json:mikhail_bread_done:0
 msgid "What about the rats?"
-msgstr ""
+msgstr "Що там з щурами?"
 
 #: conversationlist_mikhail.json:mikhail_tasks:2
 #: conversationlist_mikhail.json:mikhail_bread_done:1
 #: conversationlist_mikhail.json:mikhail_rats_done:1
 #: conversationlist_mikhail.json:mikhail_all_tasks_done:0
 msgid "Never mind, let's talk about the other things."
-msgstr ""
+msgstr "Не звертай уваги. Давай поговорімо про інші речі."
 
 #: conversationlist_mikhail.json:mikhail_bread_done
 msgid "Thanks for getting me the bread. There are still the rats."
-msgstr ""
+msgstr "Дякую, що приніс мені хліба. Та пацюки все ще не зникли."
 
 #: conversationlist_mikhail.json:mikhail_rats_done
 msgid "Thanks for taking care of the rats. I'd still love some bread."
-msgstr ""
+msgstr "Дякую, що подбав про пацюків. Та мені б хотілося ще і хліба."
 
 #: conversationlist_mikhail.json:mikhail_all_tasks_done
 msgid "Not for now. Thanks for taking care of the bread and rats."
-msgstr ""
+msgstr "Не зараз. Дякую, що подбав про хліб та пацюків."
 
 #: conversationlist_mikhail.json:mikhail_andor1
 msgid "As I said, Andor went out and hasn't been back since. I worry about him. Please go look for your brother. He said he would only be out for a short while."
 msgstr ""
+"Як я вже казав, Ендор пішов учора і досі не повернувся. Я починаю "
+"хвилюватися за нього. Піди пошукай свого брата, бо ж він казав, що скоро "
+"повернеться."
 
 #: conversationlist_mikhail.json:mikhail_andor2
 msgid "Maybe he went into that supply cave again and got stuck. Or maybe he's in Leta's basement training with that wooden sword again. Please go look for him in town."
 msgstr ""
+"Може, він знов подався до тієї печери-складу і застряг у ній. Або він знов "
+"тренується з дерев'яним мечем у підвалі Лети. Будь ласка, пошукай його у "
+"місті."
 
 #: conversationlist_mikhail.json:mikhail_bread_start
 msgid "Oh, I almost forgot. If you have time, please go see Mara at the town hall and buy me some more bread."
 msgstr ""
+"О, мало не забув. Якщо маєш час, зайди, будь ласка до Мари у ратушу і "
+"придбай мені ще трохи хліба."
 
 #: conversationlist_mikhail.json:mikhail_bread_continue
 msgid "Did you get my bread from Mara at the town hall yet?"
-msgstr ""
+msgstr "Ти придбав мені хліба у Мари в ратуші?"
 
 #: conversationlist_mikhail.json:mikhail_bread_continue:0
 msgid "Yes, here you go."
-msgstr ""
+msgstr "Так, ось він. Тримай."
 
 #: conversationlist_mikhail.json:mikhail_bread_continue:1
 #: conversationlist_mikhail.json:mikhail_rats_continue:1
@@ -386,15 +396,16 @@ msgstr ""
 #: conversationlist_stoutford_combined.json:stoutford_widow_thorns20_0:0
 #: conversationlist_stoutford_combined.json:blornvale_shop1_2:1
 msgid "No, not yet."
-msgstr ""
+msgstr "Ще ні."
 
 #: conversationlist_mikhail.json:mikhail_bread_complete
 msgid "Thanks a lot, now I can make my breakfast. Here, take these coins for your help."
 msgstr ""
+"Дуже дякую, тепер я нарешті можу поснідати. Ось тобі трохи монет за допомогу."
 
 #: conversationlist_mikhail.json:mikhail_bread_complete2
 msgid "Thanks for the bread earlier."
-msgstr ""
+msgstr "Ще раз дякую за хліб."
 
 #: conversationlist_mikhail.json:mikhail_bread_complete2:0
 #: conversationlist_charwood1.json:khorailla1:2
@@ -403,7 +414,7 @@ msgstr ""
 #: conversationlist_guynmart2_npc.json:guynmart_child_90:0
 #: conversationlist_stoutford_combined.json:stoutford_widow_roots30_2:0
 msgid "You're welcome."
-msgstr ""
+msgstr "Прошу."
 
 #: conversationlist_mikhail.json:mikhail_rats_start
 msgid "I saw some rats out back in our garden earlier. Could you please go kill any rats that you see out there."
@@ -37903,4 +37914,3 @@ msgstr ""
 #: worldmap.xml:world1:guynmart_area
 msgid "Guynmart Castle"
 msgstr ""
-
