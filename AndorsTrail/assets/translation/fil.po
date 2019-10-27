@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-05-14 20:11+0200\n"
-"PO-Revision-Date: 2019-08-01 05:11+0000\n"
-"Last-Translator: Alba Kaydus <sareli1951@gmail.com>\n"
+"PO-Revision-Date: 2019-10-27 19:23+0000\n"
+"Last-Translator: John Rey Basilio <hanzogenji83@gmail.com>\n"
 "Language-Team: Filipino <https://hosted.weblate.org/projects/andors-trail/"
 "game-content/fil/>\n"
 "Language: fil\n"
@@ -13,7 +13,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1 && n != 2 && n != 3 && (n % 10 == 4 "
 "|| n % 10 == 6 || n % 10 == 9);\n"
-"X-Generator: Weblate 3.8-dev\n"
+"X-Generator: Weblate 3.9.1-dev\n"
 
 #: actorconditions_v069.json:bless
 msgid "Bless"
@@ -29,7 +29,7 @@ msgstr "Kalakasan"
 
 #: actorconditions_v069.json:regen
 msgid "Shadow Regeneration"
-msgstr "Pagre-regen ng Anino"
+msgstr "Paggamot ng Shadow"
 
 #: actorconditions_v069_bwm.json:speed_minor
 msgid "Minor speed"
@@ -41,7 +41,7 @@ msgstr "Kaunting Pagkapagod"
 
 #: actorconditions_v069_bwm.json:feebleness_minor
 msgid "Minor weapon feebleness"
-msgstr "Kaunting Paghina"
+msgstr "Kaunting Paghina Sa Paggamit ng Sandata"
 
 #: actorconditions_v069_bwm.json:bleeding_wound
 msgid "Bleeding wound"
@@ -49,11 +49,11 @@ msgstr "Dumudugong Sugat"
 
 #: actorconditions_v069_bwm.json:rage_minor
 msgid "Minor berserker rage"
-msgstr "Kaunting Galit ng Berserkee"
+msgstr "Kaunting Berserker na Galit"
 
 #: actorconditions_v069_bwm.json:blackwater_misery
 msgid "Blackwater misery"
-msgstr "Paghihirap ng Blackwater"
+msgstr "Kamalasan ng Blackwater"
 
 #: actorconditions_v069_bwm.json:intoxicated
 msgid "Intoxicated"
@@ -61,11 +61,11 @@ msgstr "Pagkalasing"
 
 #: actorconditions_v069_bwm.json:dazed
 msgid "Dazed"
-msgstr "matulalâ"
+msgstr "matulala"
 
 #: actorconditions_v0610.json:chaotic_grip
 msgid "Chaotic grip"
-msgstr "may gulo na mahigpit na pagkakahawak"
+msgstr "Matinding paghawak"
 
 #: actorconditions_v0610.json:chaotic_curse
 msgid "Chaotic curse"
@@ -73,11 +73,11 @@ msgstr "magulong sumpa"
 
 #: actorconditions_v0611.json:contagion
 msgid "Insect contagion"
-msgstr "panunaw ng insekto"
+msgstr "Pagkahawa ng lason mula sa insekto"
 
 #: actorconditions_v0611.json:blister
 msgid "Blistering skin"
-msgstr "Nagmumukhang balat"
+msgstr "Pagkasira ng balat"
 
 #: actorconditions_v0611.json:stunned
 msgid "Stunned"
@@ -85,11 +85,11 @@ msgstr "Natigilan"
 
 #: actorconditions_v0611.json:focus_dmg
 msgid "Focused damage"
-msgstr "nakatuon pinsala"
+msgstr "Nakatuong pinsala"
 
 #: actorconditions_v0611.json:focus_ac
 msgid "Focused accuracy"
-msgstr "nakatuon ang katumpakan"
+msgstr "Nakatuong katumpakan"
 
 #: actorconditions_v0611.json:poison_irdegh
 msgid "Irdegh poison"
@@ -97,7 +97,7 @@ msgstr "Lason ng Irdegh"
 
 #: actorconditions_v0611_2.json:rotworm
 msgid "Kazaul rotworms"
-msgstr "Ang mga bulbol ng Kazaul"
+msgstr "Uod ng Kazaul"
 
 #: actorconditions_v0611_2.json:shadowbless_str
 msgid "Blessing of Shadow strength"
@@ -105,11 +105,11 @@ msgstr "Pagpapala ng lakas ng anino"
 
 #: actorconditions_v0611_2.json:shadowbless_heal
 msgid "Blessing of Shadow regeneration"
-msgstr "Pagpapala ng pagbabagong-buhay ng Shadow"
+msgstr "Pagpapala ng pagpapagaling ng Anino"
 
 #: actorconditions_v0611_2.json:shadowbless_acc
 msgid "Blessing of Shadow accuracy"
-msgstr "Pagpapala ng kawastuhan ng anino"
+msgstr "Pagpapala ng katumpakan ng anino"
 
 #: actorconditions_v0611_2.json:shadowbless_guard
 msgid "Shadow guardian blessing"
@@ -125,11 +125,11 @@ msgstr "Bali"
 
 #: actorconditions_v0611_2.json:concussion
 msgid "Concussion"
-msgstr "Pag-uusap"
+msgstr "Cocussion"
 
 #: actorconditions_v0612_2.json:food
 msgid "Sustenance"
-msgstr "Pangangalaga"
+msgstr "Pagkabusog"
 
 #: actorconditions_v0612_2.json:foodp
 msgid "Food-poisoning"
@@ -141,7 +141,7 @@ msgstr "Makinis na putik"
 
 #: actorconditions_v070.json:sense_1
 msgid "Heightened senses"
-msgstr "Taas ang pakiramdam"
+msgstr "Tumaas na pakiramdam"
 
 #: actorconditions_v070.json:courage
 msgid "Courage"
@@ -157,15 +157,15 @@ msgstr "Pinatibay na pagtatanggol"
 
 #: actorconditions_v070.json:crit_aware
 msgid "Vulnerability awareness"
-msgstr "Pagkilala sa pagiging bentahe"
+msgstr "Vulnerability awareness"
 
 #: actorconditions_v070.json:regen2
 msgid "Regeneration"
-msgstr "Pagbabagong-buhay"
+msgstr "Paggaling"
 
 #: actorconditions_v070.json:barkskin
 msgid "Bark skin"
-msgstr "Balat ng balat"
+msgstr "Matibay na balat"
 
 #: actorconditions_v070.json:shadow_acc
 msgid "Shadow's accuracy"
@@ -181,15 +181,15 @@ msgstr "Ang lakas ni Shadow"
 
 #: actorconditions_v070.json:haste
 msgid "Haste"
-msgstr "Nagmamadali"
+msgstr "Haze"
 
 #: actorconditions_v070.json:fire
 msgid "Ablaze"
-msgstr "kumalas"
+msgstr "Pagkasunog"
 
 #: actorconditions_v070.json:sting_minor
 msgid "Minor sting"
-msgstr "maliit na kagat"
+msgstr "Mahinang lason"
 
 #: actorconditions_stoutford.json:confusion
 msgid "Confusion"
@@ -197,31 +197,31 @@ msgstr "Pagkalito"
 
 #: actorconditions_stoutford.json:clumsiness
 msgid "Clumsiness"
-msgstr "kaasiwaan"
+msgstr "Pagkalampa"
 
 #: actorconditions_stoutford.json:curse_undead
 msgid "Curse of the Undead"
-msgstr ""
+msgstr "Sumpa ng undead"
 
 #: actorconditions_graveyard1.json:contagion2
 msgid "Spore contagion"
-msgstr ""
+msgstr "Pagkahawa ng sakit sa spore"
 
 #: actorconditions_graveyard1.json:petrification
 msgid "Petrification"
-msgstr ""
+msgstr "Pagkabato"
 
 #: actorconditions_graveyard1.json:vulnerability
 msgid "Vulnerability"
-msgstr ""
+msgstr "Vulnerability"
 
 #: actorconditions_graveyard1.json:flesh_rot
 msgid "Flesh rot"
-msgstr ""
+msgstr "Bulok na laman"
 
 #: actorconditions_graveyard1.json:putrefaction
 msgid "Putrefaction"
-msgstr ""
+msgstr "Pagkabulok ng laman-loob"
 
 #: actorconditions_guynmart.json:regenNeg
 msgid "Shadow Degeneration"
@@ -229,7 +229,7 @@ msgstr ""
 
 #: actorconditions_guynmart.json:bone_fracture
 msgid "Bone fracture"
-msgstr ""
+msgstr "Fracture sa buto"
 
 #: actorconditions_guynmart.json:shadow_awareness
 msgid "Shadow awareness"
@@ -4488,36 +4488,42 @@ msgstr ""
 
 #: conversationlist_jolnor.json:jolnor_default_3
 msgid "Walk with the Shadow my friend."
-msgstr ""
+msgstr "Lumakad ka kasama ang anino kaibigan."
 
 #: conversationlist_jolnor.json:jolnor_chapel_1
 msgid "This is Vilegard's place of worship for the Shadow. We praise the Shadow in all its might and glory."
 msgstr ""
+"Ito ang lugar sa Vilegard para sa pagsamba sa Anino. Sinasamba nakin ang "
+"Anino sa kadakilaan nito."
 
 #: conversationlist_jolnor.json:jolnor_chapel_1:2
 msgid "Whatever. Just show me your goods."
-msgstr ""
+msgstr "Okay. Ipakita mo nalang sakin kung anong meron ka."
 
 #: conversationlist_jolnor.json:jolnor_shop_2
 msgid "I don't trust you enough yet to feel comfortable trading with you."
-msgstr ""
+msgstr "Di pa sapat ang tiwala ko para makipagpalitan sa iyo."
 
 #: conversationlist_jolnor.json:jolnor_shop_2:0
 msgid "Why are you that suspicious?"
-msgstr ""
+msgstr "Bakit ganyan ka ka-mabusisi?"
 
 #: conversationlist_jolnor.json:jolnor_shop_2:1
 #: conversationlist_graveyard1.json:graveyardking_2:0
 msgid "Very well."
-msgstr ""
+msgstr "Ah ganyan nga."
 
 #: conversationlist_jolnor.json:jolnor_suspicious_1
 msgid "Suspicious? No, I wouldn't call it suspicion. I would rather call it that we are careful nowadays."
 msgstr ""
+"Mabusisi? Hinde, hindi pambubusisj ang tawag ko doon. Mas gusto ko lang "
+"tawagin iyon na pagiging alerto sa panahon ngayon."
 
 #: conversationlist_jolnor.json:jolnor_suspicious_2
 msgid "In order to gain the trust of the village, an outsider must prove that they are not here to cause trouble."
 msgstr ""
+"Para makuha ang tiwala namin, kailangan mong patunayan na ikaw ay walang "
+"idudulot na gulo rito."
 
 #: conversationlist_jolnor.json:jolnor_suspicious_2:0
 msgid "Sounds like a good idea. There are a lot of selfish people out there."
@@ -21236,7 +21242,7 @@ msgstr ""
 
 #: conversationlist_halvor_surprise.json:halvor_bwmine_7
 msgid "Hello again. Would you agree to get me 4 handfuls of animal hair now?"
-msgstr ""
+msgstr "Kamusta ulit. Papayag ka ba na ikuha mo'ko ng 4 na buhok ng hayop?"
 
 #: conversationlist_halvor_surprise.json:halvor_bwmine_8
 msgid "Have you found the animal hair I asked for?"
@@ -25447,10 +25453,14 @@ msgid ""
 "Then you must open the gate! Go to the gatehouse and open it, so that my men can get in. Be quick.\n"
 "After that go to the farm south of here. I expect a feroucious battle."
 msgstr ""
+"Edi buksan mo ang gate! Pumunta ka sa gatehouse at buksan mo yon para "
+"makapasok mga sundalo ko. Bikisan mo...\n"
+"Pagkatapos noon ay pumunta ka sa sakahan sa timog. Inaasahan ko na "
+"magkakaroon ng matinding labanan."
 
 #: conversationlist_guynmart_npc.json:guynmart_110
 msgid "YOU AGAIN!"
-msgstr ""
+msgstr "IKAW NANAMAN BATA!?"
 
 #: conversationlist_guynmart_npc.json:guynmart_110:0
 msgid "Yikes! The steward!"
@@ -25462,7 +25472,7 @@ msgstr ""
 
 #: conversationlist_guynmart_npc.json:guynmart_210
 msgid "...then go ... to Rhodita..."
-msgstr ""
+msgstr "...at pumunta ka.... kay Rhodita..."
 
 #: conversationlist_guynmart_npc.json:guynmart_250
 msgid "[Groaning]"
@@ -25474,19 +25484,19 @@ msgstr ""
 
 #: conversationlist_guynmart_npc.json:guynmart_herold_10:0
 msgid "You don't talk too much, do you?"
-msgstr ""
+msgstr "Madaldal ka huh?"
 
 #: conversationlist_guynmart_npc.json:guynmart_s_herold_10
 msgid "$playername enters!"
-msgstr ""
+msgstr "Si $playername ay pumasok!"
 
 #: conversationlist_guynmart_npc.json:guynmart_s_herold_12
 msgid "Who may I please announce?"
-msgstr ""
+msgstr "Anong pangalan mo boi?"
 
 #: conversationlist_guynmart_npc.json:guynmart_s_herold_12:0
 msgid "$playername, please."
-msgstr ""
+msgstr "Pakiusap, $playername."
 
 #: conversationlist_guynmart_npc.json:guynmart_s_herold_20
 msgid "[Whispering] You should talk to Lovis again."
