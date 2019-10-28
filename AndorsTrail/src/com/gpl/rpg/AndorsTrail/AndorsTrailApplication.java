@@ -7,6 +7,7 @@ import java.util.Locale;
 import com.gpl.rpg.AndorsTrail.context.ControllerContext;
 import com.gpl.rpg.AndorsTrail.context.WorldContext;
 import com.gpl.rpg.AndorsTrail.controller.Constants;
+import com.gpl.rpg.AndorsTrail.util.Pair;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
@@ -66,12 +67,27 @@ public final class AndorsTrailApplication extends Application {
 	//Get default locale at startup, as somehow it seems that changing the app's 
 	//configured locale impacts the value returned by Locale.getDefault() nowadays.
 	private final Locale defaultLocale = Locale.getDefault();
-	
+
+	private Pair<String, Locale> lastLocale = null;
+
 	@SuppressLint("NewApi")
 	public boolean setLocale(Activity context) {
 		Resources res = context.getResources();
 		Configuration conf = res.getConfiguration();
-		final Locale targetLocale = preferences.useLocalizedResources ? defaultLocale : Locale.US;
+
+		Locale targetLocale;
+
+		if (lastLocale != null && lastLocale.first == preferences.language) {
+			targetLocale = lastLocale.second;
+		} else {
+			if (preferences.language.equalsIgnoreCase("default")) {
+				targetLocale = defaultLocale;
+			} else {
+				targetLocale = Locale.forLanguageTag(preferences.language);
+			}
+			lastLocale = new Pair<String, Locale>(preferences.language, targetLocale);
+		}
+
 		if (targetLocale.equals(conf.locale)) {
 			return false;
 		}
