@@ -5,6 +5,7 @@ import java.io.DataInputStream;
 import java.io.DataOutputStream;
 import java.io.File;
 import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.FilenameFilter;
 import java.io.IOException;
@@ -21,6 +22,7 @@ import java.util.regex.Pattern;
 import android.content.Context;
 import android.content.res.Resources;
 import android.os.Environment;
+import android.os.SystemClock;
 
 import com.gpl.rpg.AndorsTrail.AndorsTrailApplication;
 import com.gpl.rpg.AndorsTrail.context.ControllerContext;
@@ -33,6 +35,8 @@ import com.gpl.rpg.AndorsTrail.util.L;
 public final class Savegames {
 	public static final int SLOT_QUICKSAVE = 0;
 	public static final long DENY_LOADING_BECAUSE_GAME_IS_CURRENTLY_PLAYED = -1;
+
+	private static long lastBackup = 0;
 
 	public static enum LoadSavegameResult {
 		success
@@ -60,9 +64,14 @@ public final class Savegames {
 			fos.write(savegame);
 			fos.close();
 
-			if (slot != SLOT_QUICKSAVE && !world.model.statistics.hasUnlimitedSaves()) {
-				androidContext.deleteFile(Constants.FILENAME_SAVEGAME_QUICKSAVE);
-				writeCheatCheck(androidContext, savedVersion, id);
+			if (!world.model.statistics.hasUnlimitedSaves()) {
+				if (slot != SLOT_QUICKSAVE) {
+					androidContext.deleteFile(Constants.FILENAME_SAVEGAME_QUICKSAVE);
+					writeCheatCheck(androidContext, savedVersion, id);
+				} else if (SystemClock.uptimeMillis() > lastBackup + 20000) {
+					writeBackup(savegame, id);
+					lastBackup = SystemClock.uptimeMillis();
+				}
 			}
 
 			return true;
@@ -71,6 +80,17 @@ public final class Savegames {
 			return false;
 		}
 	}
+
+	private static void writeBackup(byte[] savegame, String playerId) throws IOException {
+		File root = Environment.getExternalStorageDirectory();
+		File cheatDetectionFolder = new File(root, Constants.CHEAT_DETECTION_FOLDER);
+		if (!cheatDetectionFolder.exists()) cheatDetectionFolder.mkdir();
+		File backupFile = new File(cheatDetectionFolder, playerId + "X");
+		FileOutputStream fileOutputStream = new FileOutputStream(backupFile);
+		fileOutputStream.write(savegame);
+		fileOutputStream.close();
+	}
+
 	public static LoadSavegameResult loadWorld(WorldContext world, ControllerContext controllers, Context androidContext, int slot) {
 		try {
 			FileHeader fh = quickload(androidContext, slot);
