@@ -319,7 +319,7 @@ public final class Savegames {
 		public final long savedVersion;
 
 		public String describe() {
-			return playerName + ", " + displayInfo;
+			return (fileversion == AndorsTrailApplication.DEVELOPMENT_INCOMPATIBLE_SAVEGAME_VERSION ? "(D) " : "") + playerName + ", " + displayInfo;
 		}
 
 
