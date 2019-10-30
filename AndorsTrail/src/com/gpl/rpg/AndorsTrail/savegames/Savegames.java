@@ -68,7 +68,7 @@ public final class Savegames {
 				if (slot != SLOT_QUICKSAVE) {
 					androidContext.deleteFile(Constants.FILENAME_SAVEGAME_QUICKSAVE);
 					writeCheatCheck(androidContext, savedVersion, id);
-				} else if (SystemClock.uptimeMillis() > lastBackup + 20000) {
+				} else if (SystemClock.uptimeMillis() > lastBackup + 120000) {
 					writeBackup(savegame, id);
 					lastBackup = SystemClock.uptimeMillis();
 				}
