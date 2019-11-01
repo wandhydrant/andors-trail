@@ -10,12 +10,12 @@
 
 	<!-- Order is hardcoded within StartScreenActivity_NewGame-->
 	<string-array name="startscreen_mode_selector">
-		<item>Unlimited saves and lives</item>
-		<item>Unlimited lives</item>
-		<item>50 lives</item>
-		<item>10 lives</item>
-		<item>3 lives</item>
-		<item>1 life (hardcore mode)</item>
+		<item>@string/startscreen_mode_unlimited_saves_and_lives</item>
+        <item>@string/startscreen_mode_unlimited_lives</item>
+        <item>@string/startscreen_mode_50_lives</item>
+        <item>@string/startscreen_mode_10_lives</item>
+        <item>@string/startscreen_mode_3_lives</item>
+        <item>@string/startscreen_mode_1_life</item>
 	</string-array>
 
 	<!-- Order is hardcoded within HeroInfoActivity_inventory-->
