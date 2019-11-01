@@ -207,7 +207,7 @@ public final class LoadSaveActivity extends Activity implements OnClickListener 
 		CustomDialogFactory.show(d);
 	}
 
-	private void showSlotGetsDeletedOnLoadWarning(int slot) {
+	private void showSlotGetsDeletedOnLoadWarning(final int slot) {
 		final Dialog d = CustomDialogFactory.createDialog(this,
 				getString(R.string.startscreen_attention_slot_gets_delete_on_load),
 				getResources().getDrawable(android.R.drawable.ic_dialog_alert),
@@ -223,7 +223,7 @@ public final class LoadSaveActivity extends Activity implements OnClickListener 
 		CustomDialogFactory.show(d);
 	}
 
-	private void showConfirmoverwriteQuestion(int slot, String message) {
+	private void showConfirmoverwriteQuestion(final int slot, String message) {
 		final String title =
 				getString(R.string.loadsave_save_overwrite_confirmation_title) + ' '
 						+ getString(R.string.loadsave_save_overwrite_confirmation_slot, slot);
