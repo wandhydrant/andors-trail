@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: andors-trail\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-11-10 11:48+0000\n"
-"PO-Revision-Date: 2019-10-05 06:56+0000\n"
-"Last-Translator: kty919 <kty919@naver.com>\n"
+"PO-Revision-Date: 2019-11-03 21:22+0000\n"
+"Last-Translator: 김승언 <ksu235@naver.com>\n"
 "Language-Team: Korean <https://hosted.weblate.org/projects/andors-trail/"
 "game-content/ko/>\n"
 "Language: ko\n"
@@ -17,16 +17,19 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 3.9-dev\n"
+"X-Generator: Weblate 3.10-dev\n"
 "X-Launchpad-Export-Date: 2015-11-02 12:26+0000\n"
 
 #: [none]
 msgid "translator-credits"
 msgstr ""
 "Launchpad Contributions:\n"
-"  KimHyunSu https://launchpad.net/~naturezikimi\n"
+" KimHyunSu\n"
+" https://launchpad.net/~naturezikimi\n"
+"\n"
 "Individual contributors:\n"
-"  KimTaeYang"
+" KimTaeYang\n"
+" KimSeungEon"
 
 #: actorconditions_v069.json:bless
 msgid "Bless"
@@ -34,7 +37,7 @@ msgstr "축복"
 
 #: actorconditions_v069.json:poison_weak
 msgid "Weak Poison"
-msgstr "약화 독"
+msgstr "약한 독"
 
 #: actorconditions_v069.json:str
 msgid "Strength"
@@ -42,19 +45,19 @@ msgstr "힘"
 
 #: actorconditions_v069.json:regen
 msgid "Shadow Regeneration"
-msgstr ""
+msgstr "섀도우의 회복"
 
 #: actorconditions_v069_bwm.json:speed_minor
 msgid "Minor speed"
-msgstr ""
+msgstr "가벼운 속도증가"
 
 #: actorconditions_v069_bwm.json:fatigue_minor
 msgid "Minor fatigue"
-msgstr ""
+msgstr "가벼운 피로"
 
 #: actorconditions_v069_bwm.json:feebleness_minor
 msgid "Minor weapon feebleness"
-msgstr ""
+msgstr "가벼운 무기 약화"
 
 #: actorconditions_v069_bwm.json:bleeding_wound
 msgid "Bleeding wound"
@@ -62,31 +65,33 @@ msgstr "출혈"
 
 #: actorconditions_v069_bwm.json:rage_minor
 msgid "Minor berserker rage"
-msgstr ""
+msgstr "가벼운 광폭화"
 
 #: actorconditions_v069_bwm.json:blackwater_misery
+#, fuzzy
 msgid "Blackwater misery"
-msgstr ""
+msgstr "블랙워터의 비극"
 
 #: actorconditions_v069_bwm.json:intoxicated
 msgid "Intoxicated"
-msgstr "도취됨"
+msgstr "술에 취함"
 
 #: actorconditions_v069_bwm.json:dazed
 msgid "Dazed"
-msgstr "현혹됨"
+msgstr "어지러움"
 
 #: actorconditions_v0610.json:chaotic_grip
 msgid "Chaotic grip"
-msgstr ""
+msgstr "혼돈의 손아귀"
 
 #: actorconditions_v0610.json:chaotic_curse
 msgid "Chaotic curse"
 msgstr "혼돈의 저주"
 
 #: actorconditions_v0611.json:contagion
+#, fuzzy
 msgid "Insect contagion"
-msgstr ""
+msgstr "해충 감염"
 
 #: actorconditions_v0611.json:blister
 msgid "Blistering skin"
@@ -97,12 +102,14 @@ msgid "Stunned"
 msgstr "기절"
 
 #: actorconditions_v0611.json:focus_dmg
+#, fuzzy
 msgid "Focused damage"
 msgstr "집중 피해"
 
 #: actorconditions_v0611.json:focus_ac
+#, fuzzy
 msgid "Focused accuracy"
-msgstr ""
+msgstr "명중 집중"
 
 #: actorconditions_v0611.json:poison_irdegh
 msgid "Irdegh poison"
@@ -110,23 +117,24 @@ msgstr "Irdegh의 독"
 
 #: actorconditions_v0611_2.json:rotworm
 msgid "Kazaul rotworms"
-msgstr "Kazaul 썩은벌레"
+msgstr "Kazaul 썩은 벌레"
 
 #: actorconditions_v0611_2.json:shadowbless_str
 msgid "Blessing of Shadow strength"
-msgstr ""
+msgstr "섀도우의 축복 - 힘"
 
 #: actorconditions_v0611_2.json:shadowbless_heal
 msgid "Blessing of Shadow regeneration"
-msgstr ""
+msgstr "섀도우의 축복 - 회복"
 
 #: actorconditions_v0611_2.json:shadowbless_acc
 msgid "Blessing of Shadow accuracy"
-msgstr ""
+msgstr "섀도우의 축복 - 명중"
 
 #: actorconditions_v0611_2.json:shadowbless_guard
+#, fuzzy
 msgid "Shadow guardian blessing"
-msgstr ""
+msgstr "섀도우 수호자의 축복"
 
 #: actorconditions_v0611_2.json:crit1
 msgid "Internal bleeding"
@@ -141,8 +149,9 @@ msgid "Concussion"
 msgstr "뇌진탕"
 
 #: actorconditions_v0612_2.json:food
+#, fuzzy
 msgid "Sustenance"
-msgstr "자양물"
+msgstr "포만감"
 
 #: actorconditions_v0612_2.json:foodp
 msgid "Food-poisoning"
@@ -150,11 +159,11 @@ msgstr "식중독"
 
 #: actorconditions_v070.json:slime
 msgid "Corrosive slime"
-msgstr "부식성 점액"
+msgstr "부식성 슬라임"
 
 #: actorconditions_v070.json:sense_1
 msgid "Heightened senses"
-msgstr "고조된 감각"
+msgstr "감각 강화"
 
 #: actorconditions_v070.json:courage
 msgid "Courage"
@@ -166,11 +175,11 @@ msgstr "공포"
 
 #: actorconditions_v070.json:def
 msgid "Fortified defense"
-msgstr "방어 강화"
+msgstr "철통같은 방어"
 
 #: actorconditions_v070.json:crit_aware
 msgid "Vulnerability awareness"
-msgstr "약점 인식"
+msgstr "약점 파악"
 
 #: actorconditions_v070.json:regen2
 msgid "Regeneration"
@@ -182,31 +191,32 @@ msgstr "나무껍질 피부"
 
 #: actorconditions_v070.json:shadow_acc
 msgid "Shadow's accuracy"
-msgstr ""
+msgstr "섀도우의 명중"
 
 #: actorconditions_v070.json:shadow_prot
 msgid "Shadow's protection"
-msgstr ""
+msgstr "섀도우의 보호"
 
 #: actorconditions_v070.json:shadow_dmg
 msgid "Shadow's strength"
-msgstr ""
+msgstr "섀도우의 힘"
 
 #: actorconditions_v070.json:haste
 msgid "Haste"
-msgstr "신속"
+msgstr "가속화"
 
 #: actorconditions_v070.json:fire
+#, fuzzy
 msgid "Ablaze"
 msgstr "불타오름"
 
 #: actorconditions_v070.json:sting_minor
 msgid "Minor sting"
-msgstr ""
+msgstr "독침"
 
 #: actorconditions_stoutford.json:confusion
 msgid "Confusion"
-msgstr "혼란"
+msgstr "혼란스러움"
 
 #: actorconditions_stoutford.json:clumsiness
 msgid "Clumsiness"
@@ -226,7 +236,7 @@ msgstr "석화"
 
 #: actorconditions_graveyard1.json:vulnerability
 msgid "Vulnerability"
-msgstr "취약함"
+msgstr "약점"
 
 #: actorconditions_graveyard1.json:flesh_rot
 msgid "Flesh rot"
@@ -237,24 +247,27 @@ msgid "Putrefaction"
 msgstr "부패"
 
 #: actorconditions_guynmart.json:regenNeg
+#, fuzzy
 msgid "Shadow Degeneration"
-msgstr ""
+msgstr "섀도우 타락"
 
 #: actorconditions_guynmart.json:bone_fracture
 msgid "Bone fracture"
 msgstr "골절"
 
 #: actorconditions_guynmart.json:shadow_awareness
+#, fuzzy
 msgid "Shadow awareness"
-msgstr ""
+msgstr "섀도우의 의식"
 
 #: actorconditions_trader_teksin.json:poison_irdegh_weak
 msgid "Weak irdegh poison"
-msgstr "Irdegh 약화 독"
+msgstr "Irdegh의 약한 독"
 
 #: actorconditions_trader_teksin.json:light_attack
+#, fuzzy
 msgid "Lightning attack"
-msgstr ""
+msgstr "감전"
 
 #: actorconditions_stoutford_combined.json:nausea
 msgid "Nausea"
@@ -262,7 +275,7 @@ msgstr "메스꺼움"
 
 #: actorconditions_stoutford_combined.json:poison_blood
 msgid "Blood poisoning"
-msgstr "중독"
+msgstr "패혈증"
 
 #: actorconditions_stoutford_combined.json:deftness
 msgid "Deftness"
@@ -286,31 +299,31 @@ msgstr "좋아, 일어났구나."
 
 #: conversationlist_mikhail.json:mikhail_visited
 msgid "I can't seem to find your brother Andor anywhere. He hasn't been back since he left yesterday."
-msgstr "네 형 앤더를 못 찾겠다. 어제 나간 이후로 돌아오지를 않는구나."
+msgstr "네 형 안도르를 못 찾겠구나. 어제 나간 뒤로 돌아오지를 않았어."
 
 #: conversationlist_mikhail.json:mikhail3
 msgid "Never mind, he will probably be back soon."
-msgstr "괜찮다, 아마 곧 돌아오겠지."
+msgstr "걱정마라, 아마 곧 돌아오겠지."
 
 #: conversationlist_mikhail.json:mikhail_default
 #: conversationlist_crossglen_leonid.json:leonid_continue
 #: conversationlist_umar.json:umar_return_2
 msgid "Anything else I can help you with?"
-msgstr "뭐 도와줄 게 있니?"
+msgstr "뭐 좀 도와주겠니?"
 
 #: conversationlist_mikhail.json:mikhail_default:0
 #: conversationlist_mikhail.json:mikhail_default:1
 #: conversationlist_mikhail.json:mikhail_default:2
 msgid "Do you have any more tasks for me?"
-msgstr "맡기실 일 더 있어요?"
+msgstr "제가 도와드릴 일이 더 있을까요?"
 
 #: conversationlist_mikhail.json:mikhail_default:3
 msgid "Do you have any tasks for me?"
-msgstr "제가 할 일이 있을까요?"
+msgstr "제게 시키실 일이 있나요?"
 
 #: conversationlist_mikhail.json:mikhail_default:4
 msgid "Is there anything else you can tell me about Andor?"
-msgstr "형에게 무슨 일이 있나요?"
+msgstr "형에 대해 아무거나 더 말해주실게 있나요?"
 
 #: conversationlist_mikhail.json:mikhail_tasks
 msgid "Oh yes, there were some things I need help with, bread and rats. Which one would you like to talk about?"
@@ -319,12 +332,12 @@ msgstr "그래, 도움이 필요했단다. 빵이랑 쥐 문제인데, 어떤 �
 #: conversationlist_mikhail.json:mikhail_tasks:0
 #: conversationlist_mikhail.json:mikhail_rats_done:0
 msgid "What about the bread?"
-msgstr "빵이 왜요?"
+msgstr "빵이 어떨까요?"
 
 #: conversationlist_mikhail.json:mikhail_tasks:1
 #: conversationlist_mikhail.json:mikhail_bread_done:0
 msgid "What about the rats?"
-msgstr "쥐가 어때서요?"
+msgstr "쥐가 어떨까요?"
 
 #: conversationlist_mikhail.json:mikhail_tasks:2
 #: conversationlist_mikhail.json:mikhail_bread_done:1
@@ -335,7 +348,7 @@ msgstr "별거 아녜요, 다른 이야기해요."
 
 #: conversationlist_mikhail.json:mikhail_bread_done
 msgid "Thanks for getting me the bread. There are still the rats."
-msgstr "빵을 갖다줘서 고맙지만, 아직 쥐 문제가 남아있다."
+msgstr "빵을 갖다줘서 고맙지만, 아직 쥐 문제가 남아있단다."
 
 #: conversationlist_mikhail.json:mikhail_rats_done
 msgid "Thanks for taking care of the rats. I'd still love some bread."
@@ -343,23 +356,27 @@ msgstr "쥐를 잡아 줘서 고맙지만, 빵도 먹고 싶구나."
 
 #: conversationlist_mikhail.json:mikhail_all_tasks_done
 msgid "Not for now. Thanks for taking care of the bread and rats."
-msgstr "이제는 괜찮아. 빵도 쥐 문제도 해결해줘서 고맙구나."
+msgstr "지금은 없단다. 빵과 쥐 문제를 해결해줘서 고맙구나."
 
 #: conversationlist_mikhail.json:mikhail_andor1
 msgid "As I said, Andor went out and hasn't been back since. I worry about him. Please go look for your brother. He said he would only be out for a short while."
-msgstr "말했지만, 앤더가 어제 잠깐 나갔다 오겠다고 해놓고 나가서 아직까지 돌아오질 않고 있다. 걱정되니 나가서 형 좀 잘 찾아봐다오."
+msgstr ""
+"아까 말한 것처럼, 안도르가 어제 나가서 지금까지도 돌아오질 않았어. 나는 네 형이 걱정되는구나. 나가서 형 좀 잘 찾아봐다오. 그애가 "
+"나갈 때 금방 돌아오겠다고 했거든..."
 
 #: conversationlist_mikhail.json:mikhail_andor2
 msgid "Maybe he went into that supply cave again and got stuck. Or maybe he's in Leta's basement training with that wooden sword again. Please go look for him in town."
-msgstr "보급품 동굴에 들어갔다가 길이 막혔을 거야. 아니면 레타 집 지하실에서 나무칼 들고 훈련하고 있을 거야. 마을로 가서 형을 좀 찾아주렴."
+msgstr ""
+"아마도 저장 동굴에 또 들어갔다가 갇혔을거야. 아니면 또 레타네 집 지하실에서 목검으로 훈련하고 있을 거야. 마을로 가서 형을 좀 "
+"찾아봐다오."
 
 #: conversationlist_mikhail.json:mikhail_bread_start
 msgid "Oh, I almost forgot. If you have time, please go see Mara at the town hall and buy me some more bread."
-msgstr "아참, 잊어버릴 뻔했네. 시간 있으면 마을 회관에 있는 마라에게 빵 좀 사 와 주겠니."
+msgstr "아참, 잊어버릴 뻔했네. 시간 있으면 마을 회관에 있는 마라에게서 빵을 좀 사 와 주겠니."
 
 #: conversationlist_mikhail.json:mikhail_bread_continue
 msgid "Did you get my bread from Mara at the town hall yet?"
-msgstr "마을 회관에 있는 마라에게 빵 샀니?"
+msgstr "마을 회관에서 마라에게 빵을 사왔니?"
 
 #: conversationlist_mikhail.json:mikhail_bread_continue:0
 msgid "Yes, here you go."
@@ -390,7 +407,7 @@ msgstr "아뇨, 아직이요."
 
 #: conversationlist_mikhail.json:mikhail_bread_complete
 msgid "Thanks a lot, now I can make my breakfast. Here, take these coins for your help."
-msgstr "정말 고맙구나, 이제 아침 먹을 수 있겠다. 자, 이 동전을 가져가렴 도움이 될 게다."
+msgstr "정말 고맙구나, 이제 아침 먹을 수 있겠다. 자, 동전을 받으렴. 심부름 값이란다."
 
 #: conversationlist_mikhail.json:mikhail_bread_complete2
 msgid "Thanks for the bread earlier."
@@ -407,7 +424,7 @@ msgstr "천만에요."
 
 #: conversationlist_mikhail.json:mikhail_rats_start
 msgid "I saw some rats out back in our garden earlier. Could you please go kill any rats that you see out there."
-msgstr "우리 뜰에 쥐가 벌써 나오는구나. 밖에 나가서 쥐 좀 잡아주겠니."
+msgstr "우리 정원에 쥐가 몇마리 나오는 걸 봤단다. 밖에 나가서 쥐 좀 잡아주겠니."
 
 #: conversationlist_mikhail.json:mikhail_rats_start:0
 msgid "I have already dealt with the rats."
@@ -423,11 +440,11 @@ msgstr "쥐한테 다치면, 집에 돌아와 침대에서 쉬거라. 다시 기
 
 #: conversationlist_mikhail.json:mikhail_rats_start3
 msgid "Also, don't forget to check your inventory. You probably still have that old ring I gave you. Make sure you wear it."
-msgstr "그리고 물품 목록을 확인하는 것을 잊지 말거라. 너한테 아마 내가 준 낡은 반지가 있을 거다. 꼭 끼렴."
+msgstr "그리고 물품 목록을 확인하는 것을 잊지 말거라. 내가 준 낡은 반지는 아마 아직 네가 갖고있을거다. 꼭 끼고 다니렴"
 
 #: conversationlist_mikhail.json:mikhail_rats_start3:0
 msgid "OK, I understand. I can rest here if I get hurt, and I should check my inventory for useful items."
-msgstr "네 알았어요. 다치면 집에서 쉬고, 쓸만한 게 있는지 물품 목록을 확인할께요."
+msgstr "네 알았어요. 다치면 집에서 쉬고, 쓸만한 게 있는지 물품 목록을 확인할게요."
 
 #: conversationlist_mikhail.json:mikhail_rats_continue
 msgid "Did you kill those two rats in our garden?"
@@ -465,7 +482,7 @@ msgstr ""
 
 #: conversationlist_mikhail_foodpoison.json:mikhail_rats_start2b
 msgid "If that happens, perhaps the town priest can do something to help you.  Otherwise, just rest until you feel better."
-msgstr "만약 식중독에 걸리면, 아마 마을의 사제 분께 뭔가 도움을 받을 수 있을 거야. ... 아니면 그냥 괜찮아질 때까지 쉬는 수밖에."
+msgstr "만약 식중독에 걸리면, 아마 마을의 사제에게 뭔가 도움을 받을 수 있을 거야. ... 아니면 그냥 괜찮아질 때까지 쉬는 수밖에."
 
 #: conversationlist_mikhail_foodpoison.json:mikhail_rats_start2c
 msgid "Me, I can't really afford the meat, so I just stick to my bread!"
@@ -560,7 +577,7 @@ msgid ""
 "\n"
 "Hey kid, wanna join us in our drinking game?"
 msgstr ""
-"마셔 마셔 마셔, 쪼오금 더 마셔\n"
+"마셔 마셔 마셔, 몇 잔 더 마셔\n"
 "마셔 마셔 마셔 ,바닥에 드러누울 때까지이~~\n"
 "\n"
 "어이 꼬맹이, 우리 술 게임에 끼고싶구나?"
@@ -591,7 +608,7 @@ msgstr ""
 
 #: conversationlist_crossglen.json:mara_thanks
 msgid "I heard you helped Odair clean out that old supply cave. Thanks a lot, we'll start using it soon."
-msgstr "오래된 보급품 동굴을 청소하는걸 도와줬다고 오데어가 말하던데. 정말 고마워. 이제 동굴을 쓸 수 있겠어."
+msgstr "오래된 저장 동굴을 청소하는걸 도와줬다고 오데어가 말하던데. 정말 고마워. 이제 동굴을 쓸 수 있겠어."
 
 #: conversationlist_crossglen.json:mara_thanks:0
 msgid "It was my pleasure."
@@ -615,7 +632,7 @@ msgstr "제발 방해하지마, 일해야 되."
 #: conversationlist_stoutford.json:stoutford_gateguard_0:2
 #: conversationlist_stoutford.json:kayla_1:1
 msgid "Have you seen my brother Andor?"
-msgstr "제 형 앤더를 보신적 있으세요?"
+msgstr "제 형 안도르를 보신적 있으세요?"
 
 #: conversationlist_crossglen.json:farm2
 msgid "What?! Can't you see I'm busy? Go bother someone else."
@@ -623,7 +640,7 @@ msgstr "뭐?! 바쁜거 안보이니? 가서 다른사람이나 귀찮게 해라
 
 #: conversationlist_crossglen.json:farm_andor
 msgid "Andor? No, I haven't seen him around lately."
-msgstr "앤더? 아니, 최근엔 못봤다."
+msgstr "안도르? 아니, 최근엔 못봤다."
 
 #: conversationlist_crossglen.json:snakemaster
 msgid ""
@@ -631,7 +648,7 @@ msgid ""
 "\n"
 "Now prepare to die, puny creature."
 msgstr ""
-"이런 이런, 이거 누구신가? 손님이군, 참 멋지기도 하셔라. 내 부하들을 다 해치고 여기 왔다는게 아주 인상적이야.\n"
+"이런 이런, 이거 누구신가? 손님이군, 참 멋지기도 하셔라. 내 부하들을 다 해치우고 여기까지오나니. 아주 인상적이야.\n"
 "\n"
 "하찮은 놈, 죽어라."
 
@@ -652,7 +669,7 @@ msgstr "제발 때리지 말아주세요!"
 
 #: conversationlist_crossglen.json:haunt
 msgid "Oh mortal, free me from this cursed world!"
-msgstr ""
+msgstr "오 필멸자여, 이 저주받은 세상에서 나를 자유롭게해다오!"
 
 #: conversationlist_crossglen.json:haunt:0
 msgid "Oh, I'll free you from it alright."
