@@ -10,9 +10,6 @@ public abstract class AndorsTrailBaseActivity extends Activity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         AndorsTrailApplication app = AndorsTrailApplication.getApplicationFromActivity(this);
-        if (!app.isInitialized()) {
-            return;
-        }
         app.setLocale(this);
     }
 

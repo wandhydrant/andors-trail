@@ -13,9 +13,6 @@ public abstract class AndorsTrailBaseFragmentActivity extends FragmentActivity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         AndorsTrailApplication app = AndorsTrailApplication.getApplicationFromActivity(this);
-        if (!app.isInitialized()) {
-            return;
-        }
         app.setLocale(this);
     }
 
