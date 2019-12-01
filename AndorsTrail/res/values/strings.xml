@@ -45,7 +45,8 @@
 	<string name="heroinfo_skill_sort">Sort</string>
 	<string name="heroinfo_levelup">Level up</string>
 	<string name="heroinfo_level">Level</string>
-	<string name="heroinfo_totalexperience">Total experience</string>
+    <string name="heroinfo_mode">Mode</string>
+    <string name="heroinfo_totalexperience">Total experience</string>
 	<string name="heroinfo_wornequipment">Worn equipment</string>
 	<string name="heroinfo_inventory">Inventory</string>
 	<string name="heroinfo_inventory_categories">Category</string>
@@ -55,13 +56,11 @@
 	<string name="heroinfo_experiencepoints">Experience points (XP):</string>
 	<string name="heroinfo_actionpoints">Action points (AP):</string>
 	<string name="heroinfo_quests">Quests</string>
-    <string name="heroinfo_unlimited_lives_and_saves">unlimited lives and saves</string>
-    <string name="heroinfo_unlimited_lives">unlimited lives</string>
-    <string name="heroinfo_hardcore_mode">1 life (hardcore mode)</string>
-    <string name="heroinfo_lives_left">%1$d/%2$d lives left</string>
-    <string name="heroinfo_unlimited_saves">, unlimited saves</string>
 
-
+    <string name="heroinfo_unlimited_lives_and_saves">Standard\n(Unlimited lives and saves)</string>
+    <string name="heroinfo_unlimited_lives">Unlimited lives, 1 save</string>
+    <string name="heroinfo_limited_lives">Limited lives (%1$d/%2$d left)</string>
+    <string name="heroinfo_one_life">Permadeath (1 life)</string>
 
 	<string name="combat_attack">Attack (%1$d AP)</string>
 	<string name="combat_move">Move (%1$d AP)</string>
@@ -162,12 +161,12 @@
 	<string name="startscreen_error_loading_empty_slot">Can\'t load from an empty slot.</string>
 	<string name="startscreen_attention_slot_gets_delete_on_load">Attention</string>
 	<string name="startscreen_attention_message_slot_gets_delete_on_load">Loading this game deletes its save slot. You will have to save again before switching to another game.</string>
-    <string name="startscreen_mode_unlimited_saves_and_lives">Unlimited saves and lives</string>
-    <string name="startscreen_mode_unlimited_lives">Unlimited lives</string>
-    <string name="startscreen_mode_50_lives">50 lives</string>
-    <string name="startscreen_mode_10_lives">10 lives</string>
-    <string name="startscreen_mode_3_lives">3 lives</string>
-    <string name="startscreen_mode_1_life">1 life (hardcore mode)</string>
+    <string name="startscreen_mode_unlimited_saves_and_lives">Standard (Unlimited lives and saves)</string>
+    <string name="startscreen_mode_unlimited_lives">Medium (Unlimited lives, 1 save)</string>
+     <string name="startscreen_mode_50_lives">Hard (50 lives, 1 save)</string>
+    <string name="startscreen_mode_10_lives">Very hard (10 lives, 1 save)</string>
+    <string name="startscreen_mode_3_lives">Extreme (3 lives, 1 save)</string>
+    <string name="startscreen_mode_1_life">Permadeath (1 life, 1 save)</string>
 
 	<!-- <string name="conversation_title">%1$s says</string> -->
 	<string name="conversation_rewardexp"> [You gained %1$d experience]</string>
