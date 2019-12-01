@@ -6,6 +6,10 @@ import android.content.Intent;
 import android.content.res.Resources;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.text.SpannableString;
+import android.text.SpannableStringBuilder;
+import android.text.Spanned;
+import android.text.style.RelativeSizeSpan;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -42,6 +46,7 @@ public final class HeroinfoActivity_Stats extends Fragment {
 	private Button levelUpButton;
 	private TextView heroinfo_reequip_cost;
 	private TextView heroinfo_useitem_cost;
+	private TextView heroinfo_mode;
 	private TextView heroinfo_level;
 	private TextView heroinfo_totalexperience;
 	private TextView basetraitsinfo_max_hp;
@@ -76,23 +81,7 @@ public final class HeroinfoActivity_Stats extends Fragment {
 		
 		TextView tv = (TextView) v.findViewById(R.id.heroinfo_title);
 		if (tv != null) {
-			String description = player.getName() + "\n";
-			final Resources res = getResources();
-			if (statistics.hasUnlimitedLives() && statistics.hasUnlimitedSaves()) {
-				description += res.getString(R.string.heroinfo_unlimited_lives_and_saves);
-			} else if (statistics.hasUnlimitedLives()) {
-				description += res.getString(R.string.heroinfo_unlimited_lives);
-			} else {
-				if (statistics.getStartLives() == 1 && !statistics.hasUnlimitedSaves()) {
-					description += res.getString(R.string.heroinfo_hardcore_mode);
-				} else {
-					description += res.getString(R.string.heroinfo_lives_left, statistics.getLivesLeft(), statistics.getStartLives());
-					if (statistics.hasUnlimitedSaves()) {
-						description += res.getString(R.string.heroinfo_unlimited_saves);
-					}
-				}
-			}
-			tv.setText(description);
+			tv.setText(player.getName());
 			tv.setCompoundDrawablesWithIntrinsicBounds(HeroCollection.getHeroLargeSprite(player.iconID), 0, 0, 0);
 		}
 		heroinfo_container = (ViewGroup) v.findViewById(R.id.heroinfo_container);
@@ -102,6 +91,7 @@ public final class HeroinfoActivity_Stats extends Fragment {
 		basetraitsinfo_max_ap = (TextView) v.findViewById(R.id.basetraitsinfo_max_ap);
 		heroinfo_base_reequip_cost = (TextView) v.findViewById(R.id.heroinfo_base_reequip_cost);
 		heroinfo_base_useitem_cost = (TextView) v.findViewById(R.id.heroinfo_base_useitem_cost);
+		heroinfo_mode = (TextView) v.findViewById(R.id.heroinfo_mode);
 		heroinfo_level = (TextView) v.findViewById(R.id.heroinfo_level);
 		heroinfo_totalexperience = (TextView) v.findViewById(R.id.heroinfo_totalexperience);
 		actorinfo_onhiteffects = (ItemEffectsView) v.findViewById(R.id.actorinfo_onhiteffects);
@@ -157,7 +147,18 @@ public final class HeroinfoActivity_Stats extends Fragment {
 
 	private void updateTraits() {
 		final Resources res = getResources();
+		String mode = "";
+		if (statistics.hasUnlimitedLives() && statistics.hasUnlimitedSaves()) {
+			mode = res.getString(R.string.heroinfo_unlimited_lives_and_saves);
+		} else if (statistics.hasUnlimitedLives()) {
+			mode = res.getString(R.string.heroinfo_unlimited_lives);
+		} else if (statistics.getStartLives() == 1) {
+			mode = res.getString(R.string.heroinfo_one_life);
+		} else {
+			mode = res.getString(R.string.heroinfo_limited_lives, statistics.getLivesLeft(), statistics.getStartLives());
+		}
 
+		heroinfo_mode.setText(mode);
 		heroinfo_level.setText(Integer.toString(player.getLevel()));
 		heroinfo_totalexperience.setText(Integer.toString(player.getTotalExperience()));
 //		heroinfo_ap.update(player.getMaxAP() + "/" + player.getCurrentAP());
