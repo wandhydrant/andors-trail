@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: andors-trail\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-11-10 11:48+0000\n"
-"PO-Revision-Date: 2018-10-06 03:23+0000\n"
-"Last-Translator: huzhanrong <480298199@qq.com>\n"
+"PO-Revision-Date: 2019-09-06 17:24+0000\n"
+"Last-Translator: shog ge <shog86@gmail.com>\n"
 "Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/"
 "andors-trail/game-content/zh_Hans/>\n"
 "Language: zh_CN\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 3.2\n"
+"X-Generator: Weblate 3.9-dev\n"
 "X-Launchpad-Export-Date: 2015-11-02 12:26+0000\n"
 
 #: [none]
@@ -214,11 +214,11 @@ msgstr "笨拙"
 
 #: actorconditions_stoutford.json:curse_undead
 msgid "Curse of the Undead"
-msgstr ""
+msgstr "亡灵的诅咒"
 
 #: actorconditions_graveyard1.json:contagion2
 msgid "Spore contagion"
-msgstr ""
+msgstr "孢子感染"
 
 #: actorconditions_graveyard1.json:petrification
 msgid "Petrification"
@@ -238,7 +238,7 @@ msgstr "腐败"
 
 #: actorconditions_guynmart.json:regenNeg
 msgid "Shadow Degeneration"
-msgstr ""
+msgstr "阴影堕落"
 
 #: actorconditions_guynmart.json:bone_fracture
 msgid "Bone fracture"
@@ -246,11 +246,11 @@ msgstr "骨折"
 
 #: actorconditions_guynmart.json:shadow_awareness
 msgid "Shadow awareness"
-msgstr ""
+msgstr "暗影意识"
 
 #: actorconditions_trader_teksin.json:poison_irdegh_weak
 msgid "Weak irdegh poison"
-msgstr ""
+msgstr "弱的 irdegh 毒药"
 
 #: actorconditions_trader_teksin.json:light_attack
 msgid "Lightning attack"
@@ -386,7 +386,7 @@ msgstr "是的, 给你。"
 #: conversationlist_stoutford_combined.json:stoutford_widow_thorns20_0:0
 #: conversationlist_stoutford_combined.json:blornvale_shop1_2:1
 msgid "No, not yet."
-msgstr ""
+msgstr "还没有。"
 
 #: conversationlist_mikhail.json:mikhail_bread_complete
 msgid "Thanks a lot, now I can make my breakfast. Here, take these coins for your help."
@@ -411,7 +411,7 @@ msgstr "我刚才在花园里看到一些老鼠。你能去杀掉你看到的老
 
 #: conversationlist_mikhail.json:mikhail_rats_start:0
 msgid "I have already dealt with the rats."
-msgstr ""
+msgstr "我已经处理过老鼠了。"
 
 #: conversationlist_mikhail.json:mikhail_rats_start:1
 msgid "OK, I'll go check out in our garden."
@@ -475,6 +475,9 @@ msgid ""
 "\n"
 "Please browse my selection of fine wares."
 msgstr ""
+"欢迎来到我的店铺！\n"
+"\n"
+"请浏览我精选的商品。"
 
 #: conversationlist_crossglen.json:audir1:0
 msgid "Please show me your wares."
@@ -543,7 +546,7 @@ msgstr ""
 #: conversationlist_flagstone.json:flagstone_sentry_42:0
 #: conversationlist_vilegard_villagers.json:vilegard_villager_friend_1:0
 msgid "Thanks, bye."
-msgstr "谢谢, 再见"
+msgstr "谢谢, 再见。"
 
 #: conversationlist_crossglen.json:drunk1
 msgid ""
@@ -730,7 +733,7 @@ msgstr "你的哥哥？不，今天我还没见到他呢。我想我看到他昨
 
 #: conversationlist_crossglen_leonid.json:leonid_andor:0
 msgid "Thanks, I'll go talk to Gruil. There was something more I wanted to talk about."
-msgstr "谢谢, 我去和 Gruil 谈谈。我还想谈点事。"
+msgstr "谢谢, 我去和格鲁尔谈谈。我还想谈点事。"
 
 #: conversationlist_crossglen_leonid.json:leonid_andor:1
 msgid "Thanks, I'll go talk to Gruil."
@@ -844,7 +847,7 @@ msgstr ""
 #: conversationlist_prim_arghest.json:arghest_6:1
 #: conversationlist_prim_arghest.json:arghest_7:0
 msgid "Please?"
-msgstr ""
+msgstr "请？"
 
 #: conversationlist_crossglen_tharal.json:tharal_bonemeal2_1
 msgid "No, we really shouldn't talk about that."
@@ -864,7 +867,7 @@ msgstr ""
 
 #: conversationlist_crossglen_tharal.json:tharal_bonemeal2:1
 msgid "OK, I'll bring them."
-msgstr ""
+msgstr "好的，我要带它们。"
 
 #: conversationlist_crossglen_tharal.json:tharal_bonemeal3
 msgid "Thanks kid. I knew I could count on you."
@@ -897,11 +900,11 @@ msgstr ""
 #: conversationlist_crossglen_tharal.json:tharal_antifoodp2:0
 #: conversationlist_fallhaven_unnmir.json:unnmir_13:0
 msgid "Thanks, I'll go see him."
-msgstr ""
+msgstr "谢谢，我要去见他。"
 
 #: conversationlist_crossglen_leta.json:leta1
 msgid "Hey, this is my house, get out of here!"
-msgstr ""
+msgstr "嘿，这是我的房子，离开吧！"
 
 #: conversationlist_crossglen_leta.json:leta1:0
 #: conversationlist_remgard_villagers1.json:morgisia:1
@@ -927,7 +930,7 @@ msgstr ""
 #: conversationlist_rogorn.json:rogorn_story_6:3
 #: conversationlist_rogorn.json:rogorn_story_7:4
 msgid "I have no idea."
-msgstr ""
+msgstr "我不知道。"
 
 #: conversationlist_crossglen_leta.json:leta_oromir1:1
 msgid "Yes, I found him. He is hiding among some trees to the east."
@@ -962,7 +965,7 @@ msgstr ""
 #: conversationlist_stoutford.json:kayla_1
 #: conversationlist_stoutford.json:glasforn_initial_0
 msgid "Hello."
-msgstr ""
+msgstr "你好。"
 
 #: conversationlist_crossglen_leta.json:oromir2
 msgid "I'm hiding here from my wife Leta. She is always getting angry at me for not helping out on the farm. Please don't tell her that I'm here."
@@ -984,7 +987,7 @@ msgstr ""
 #: conversationlist_stoutford_combined.json:odirath_3_5:0
 #: conversationlist_stoutford_combined.json:stn_colonel_122:0
 msgid "OK."
-msgstr ""
+msgstr "好的。"
 
 #: conversationlist_crossglen_odair.json:odair1
 msgid "Oh, it's you. You with that brother of yours. Always causing trouble."
@@ -1041,7 +1044,7 @@ msgstr ""
 #: conversationlist_guynmart_npc.json:guynmart_nuik_70:2
 #: conversationlist_stoutford_combined.json:stoutford_widow_thorns80_2:0
 msgid "Bye."
-msgstr ""
+msgstr "再见。"
 
 #: conversationlist_crossglen_odair.json:odair_continue
 msgid "Did you kill that large rat in the cave west of here?"
@@ -1087,7 +1090,7 @@ msgstr ""
 #: conversationlist_stoutford.json:glasforn_rumblings20_3:1
 #: conversationlist_stoutford_combined.json:yolgen_4:0
 msgid "Thanks."
-msgstr ""
+msgstr "谢谢。"
 
 #: conversationlist_crossglen_odair.json:odair_complete2
 msgid "Thanks a lot for your help earlier. Now we might start using that cave as our old supply cave again."
@@ -1099,7 +1102,7 @@ msgstr ""
 
 #: conversationlist_jan.json:jan_default:0
 msgid "What is the problem?"
-msgstr ""
+msgstr "什么是问题？"
 
 #: conversationlist_jan.json:jan_default:1
 msgid "Do you want to talk about it?"
@@ -1112,7 +1115,7 @@ msgstr ""
 #: conversationlist_kaori.json:kaori_2:0
 #: conversationlist_stoutford_combined.json:yolgen_task_0_2:2
 msgid "OK, bye."
-msgstr ""
+msgstr "好，再见。"
 
 #: conversationlist_jan.json:jan_default2
 msgid "Oh, it's so sad. I really don't want to talk about it."
@@ -1169,11 +1172,11 @@ msgstr ""
 
 #: conversationlist_jan.json:jan_default11:0
 msgid "Do you think I could help?"
-msgstr ""
+msgstr "你认为我能帮吗？"
 
 #: conversationlist_jan.json:jan_default11_1
 msgid "Do you think you could help me?"
-msgstr ""
+msgstr "你认为你能帮我吗？"
 
 #: conversationlist_jan.json:jan_default11_1:0
 msgid "Sure, there may be some treasure in this for me."
@@ -1326,7 +1329,7 @@ msgstr ""
 
 #: conversationlist_fallhaven.json:fallhaven_citizen3
 msgid "Hi. Can I help you?"
-msgstr ""
+msgstr "你好。我会帮你吗？"
 
 #: conversationlist_fallhaven.json:fallhaven_citizen4
 msgid "You're that kid from Crossglen village right?"
@@ -1394,7 +1397,7 @@ msgstr ""
 #: conversationlist_fallhaven.json:rigmor:1
 #: conversationlist_fallhaven.json:rigmor_1:0
 msgid "I really need to go."
-msgstr ""
+msgstr "我很必须离开。"
 
 #: conversationlist_fallhaven.json:rigmor_1
 msgid "Your brother, you say? His name is Andor? No. I don't recall meeting anyone like that."
@@ -1426,7 +1429,7 @@ msgstr ""
 
 #: conversationlist_fallhaven_arcir.json:arcir_start
 msgid "Hello. I'm Arcir."
-msgstr ""
+msgstr "你好。我是Arcir。"
 
 #: conversationlist_fallhaven_arcir.json:arcir_start:0
 #: conversationlist_fallhaven_arcir.json:arcir_anythingelse:0
@@ -1658,7 +1661,7 @@ msgstr ""
 
 #: conversationlist_fallhaven_church.json:thoronir_church_4:0
 msgid "OK, I might go see him."
-msgstr ""
+msgstr "好，我可能去见他。"
 
 #: conversationlist_fallhaven_church.json:thoronir_tharal_2
 msgid "Shhh, we shouldn't talk so loud about using bonemeal. As you know, Lord Geomyr issued a ban on all use of bonemeal."
@@ -1807,7 +1810,7 @@ msgstr ""
 #: conversationlist_stoutford_combined.json:script_lakecave1_damerilia4_1:0
 #: conversationlist_stoutford_combined.json:script_lakecave1_damerilia5_1:0
 msgid "Yes"
-msgstr ""
+msgstr "对"
 
 #: conversationlist_fallhaven_drunk.json:fallhaven_drunk_2:1
 #: conversationlist_fallhaven_drunk.json:fallhaven_drunk_8:1
@@ -1818,7 +1821,7 @@ msgstr ""
 #: conversationlist_stoutford_combined.json:script_lakecave1_damerilia4_1:1
 #: conversationlist_stoutford_combined.json:script_lakecave1_damerilia5_1:1
 msgid "No"
-msgstr ""
+msgstr "不"
 
 #: conversationlist_fallhaven_drunk.json:fallhaven_drunk_3_1
 msgid "Oh, sir. I'm not causing any trouble anymore, see? I sits outside now as you says, OK?"
@@ -1901,7 +1904,7 @@ msgstr ""
 
 #: conversationlist_fallhaven_nocmar.json:nocmar
 msgid "Hello. I'm Nocmar."
-msgstr ""
+msgstr "你好。我是Nocmar。"
 
 #: conversationlist_fallhaven_nocmar.json:nocmar:0
 msgid "This place looks like a smithy. Do you have anything to trade?"
@@ -2074,7 +2077,7 @@ msgstr ""
 #: conversationlist_ulirfendor.json:ulirfendor_bye
 #: conversationlist_ingus.json:ingus_t6:1
 msgid "Thank you. Goodbye."
-msgstr ""
+msgstr "谢谢。再见。"
 
 #: conversationlist_fallhaven_oldman.json:fallhaven_oldman_complete:1
 msgid "At last, some gold. Bye."
@@ -2157,7 +2160,7 @@ msgstr ""
 
 #: conversationlist_fallhaven_larcal.json:larcal_3:1
 msgid "No, you will give me that book."
-msgstr ""
+msgstr "不，你给我那本书吧。"
 
 #: conversationlist_fallhaven_larcal.json:larcal_4
 msgid "Good boy. Now run away."
@@ -2174,7 +2177,7 @@ msgstr ""
 
 #: conversationlist_fallhaven_larcal.json:larcal_5:1
 msgid "No, that book is not yours!"
-msgstr ""
+msgstr "不，那本书不是你的！"
 
 #: conversationlist_fallhaven_larcal.json:larcal_6
 msgid "You are still here? OK then, if you want the book that bad, you will have to take it from me!"
@@ -2544,7 +2547,7 @@ msgstr ""
 
 #: conversationlist_fallhaven_unzel.json:unzel_1
 msgid "Hello. I'm Unzel."
-msgstr ""
+msgstr "你好。我是Unzel。"
 
 #: conversationlist_fallhaven_unzel.json:unzel_1:0
 msgid "Is this your camp?"
@@ -2689,7 +2692,7 @@ msgstr ""
 #: conversationlist_stoutford_combined.json:yolgen_castle_6:0
 #: conversationlist_stoutford_combined.json:stn_colonel_64:0
 msgid "Thank you."
-msgstr ""
+msgstr "谢谢你。"
 
 #: conversationlist_fallhaven_unzel.json:unzel_40
 msgid "Thank you for your help. Now we are safe from Vacor's rift spell."
@@ -2765,7 +2768,7 @@ msgstr ""
 
 #: conversationlist_flagstone.json:prisoner1:0
 msgid "But I am not..."
-msgstr ""
+msgstr "可是我不……"
 
 #: conversationlist_flagstone.json:prisoner2
 msgid "Aaaa! Who's there? I will not be enslaved again!"
@@ -2858,7 +2861,7 @@ msgstr ""
 
 #: conversationlist_flagstone.json:flagstone_sentry_11:1
 msgid "Yes, I should leave."
-msgstr ""
+msgstr "是，我应该离开。"
 
 #: conversationlist_flagstone.json:flagstone_sentry_12
 msgid "Are you really sure you want to head in there? Well, OK, fine by me."
@@ -3002,11 +3005,11 @@ msgstr ""
 
 #: conversationlist_fallhaven_south.json:fallhaven_lumberjack_1
 msgid "Hi, I'm Jakrar."
-msgstr ""
+msgstr "你好，我是Jakrar。"
 
 #: conversationlist_fallhaven_south.json:fallhaven_lumberjack_1:0
 msgid "Are you a woodcutter?"
-msgstr ""
+msgstr "你是伐木工吗？"
 
 #: conversationlist_fallhaven_south.json:fallhaven_lumberjack_2
 msgid "Yes, I'm Fallhaven's woodcutter. Need anything done in the finest of woods? I have probably got it."
@@ -3024,7 +3027,7 @@ msgstr ""
 #: conversationlist_fallhaven_south.json:fallhaven_lumberjack_2:2
 #: conversationlist_fallhaven_south.json:fallhaven_lumberjack_15:1
 msgid "What have you got for sale?"
-msgstr ""
+msgstr "你卖什么？"
 
 #: conversationlist_fallhaven_south.json:alaun
 msgid "Hello. I'm Alaun. How can I help you?"
@@ -3074,7 +3077,7 @@ msgstr ""
 
 #: conversationlist_fallhaven_south.json:fallhaven_lumberjack_4:0
 msgid "Sure! What is it?"
-msgstr ""
+msgstr "是的！它是什么？"
 
 #: conversationlist_fallhaven_south.json:fallhaven_lumberjack_5
 msgid "Let me tell you a story. Long ago, I was cutting in the woods to the north of Fallhaven. I used to cut the trees with great speed with my favorite axe. It was made of fine steel and probably worth more than my hut."
@@ -3140,7 +3143,7 @@ msgstr ""
 #: conversationlist_guynmart_npc.json:guynmart_lovis2_151:0
 #: conversationlist_stoutford_combined.json:stoutford_widow_12:0
 msgid "Goodbye."
-msgstr ""
+msgstr "再见。"
 
 #: conversationlist_fallhaven_south.json:fallhaven_lumberjack_13
 msgid "You're welcome. But you're not the only one who is happy. There are more people resting for a night in Fallhaven, which helps our economy. Some even bought items at my store! By the way, I was surprised, but I even got paid well by the warden."
@@ -3200,6 +3203,9 @@ msgid ""
 "South: Fallhaven\n"
 "North: Feygard"
 msgstr ""
+"西：Crossglen\n"
+"南：Fallhaven\n"
+"北：Feygard"
 
 #: conversationlist_signs_pre067.json:sign_notdone
 msgid "This map is not yet done. Please come back in a later version of the game."
@@ -3211,6 +3217,9 @@ msgid ""
 "East: Fallhaven\n"
 "North: Feygard"
 msgstr ""
+"西：Crossglen\n"
+"东：Fallhaven\n"
+"北：Feygard"
 
 #: conversationlist_signs_pre067.json:sign_pitcave2
 msgid "Gandir lies here, slain by the hand of his former friend Irogotu."
@@ -3246,18 +3255,25 @@ msgid ""
 "East: Fallhaven\n"
 "South: Stoutford"
 msgstr ""
+"北：Crossglen\n"
+"东：Fallhaven\n"
+"南：Stoutford"
 
 #: conversationlist_signs_pre067.json:sign_wild7
 msgid ""
 "West: Stoutford\n"
 "North: Fallhaven"
 msgstr ""
+"西：Stoutford\n"
+"北：Fallhaven"
 
 #: conversationlist_signs_pre067.json:sign_wild10
 msgid ""
 "North: Fallhaven\n"
 "West: Stoutford"
 msgstr ""
+"北：Fallhaven\n"
+"西：Stoutford"
 
 #: conversationlist_signs_pre067.json:flagstone_key_demon
 msgid "The demon radiates a force that pushes you back, making it impossible for you to approach it."
@@ -3273,10 +3289,13 @@ msgid ""
 "East: Vilegard\n"
 "East: Nor City"
 msgstr ""
+"北：Fallhaven\n"
+"东：Vilegard\n"
+"东：Nor城市"
 
 #: conversationlist_thievesguild_1.json:thievesguild_thief_1
 msgid "Hello kid."
-msgstr ""
+msgstr "你好孩子。"
 
 #: conversationlist_thievesguild_1.json:thievesguild_thief_1:0
 msgid "Hello. Do you know where I can find Umar?"
@@ -3297,7 +3316,7 @@ msgstr ""
 #: conversationlist_lethenlor.json:lethenlor4:1
 #: conversationlist_stoutford.json:stoutford_gateguard_0:0
 msgid "What is this place?"
-msgstr ""
+msgstr "这个地点是什么？"
 
 #: conversationlist_thievesguild_1.json:thievesguild_thief_2
 msgid "This is our guild hall. We are safe from the guards of Fallhaven in here."
@@ -3313,7 +3332,7 @@ msgstr ""
 
 #: conversationlist_thievesguild_1.json:thievesguild_thief_3:1
 msgid "Who is Umar?"
-msgstr ""
+msgstr "奥马尔是谁？"
 
 #: conversationlist_thievesguild_1.json:thievesguild_thief_4
 msgid "He is probably in his room over there [points]."
@@ -3326,7 +3345,7 @@ msgstr ""
 #: conversationlist_thievesguild_1.json:thievesguild_thief_5:0
 #: conversationlist_prim_outside.json:prim_commoner1_3:1
 msgid "Where can I find him?"
-msgstr ""
+msgstr "他在哪儿？"
 
 #: conversationlist_thievesguild_1.json:thievesguild_cook_1
 msgid "Hello, did you want something?"
@@ -3446,7 +3465,7 @@ msgstr ""
 
 #: conversationlist_thievesguild_1.json:thievesguild_pickpocket_2:0
 msgid "Why is that?"
-msgstr ""
+msgstr "为什么？"
 
 #: conversationlist_thievesguild_1.json:thievesguild_pickpocket_3
 msgid "Well, I have a tendency to ... how shall I put this ... acquire certain things easily."
@@ -3526,7 +3545,7 @@ msgstr ""
 
 #: conversationlist_thievesguild_1.json:thievesguild_troublemaker_4
 msgid "Yes, might be."
-msgstr ""
+msgstr "可能。"
 
 #: conversationlist_thievesguild_1.json:thievesguild_troublemaker_4:0
 msgid "Have you seen my brother around here? He looks somewhat like me."
@@ -3598,7 +3617,7 @@ msgstr ""
 
 #: conversationlist_farrik.json:farrik_8:0
 msgid "What did he do?"
-msgstr ""
+msgstr "他干过什么？"
 
 #: conversationlist_farrik.json:farrik_9
 msgid "Oh, nothing serious. He was trying to get into the catacombs of Fallhaven church."
@@ -3647,7 +3666,7 @@ msgstr ""
 
 #: conversationlist_farrik.json:farrik_14
 msgid "Thank you. Now please leave me."
-msgstr ""
+msgstr "谢谢。请现在离开我吧。"
 
 #: conversationlist_farrik.json:farrik_15
 msgid "Whatever, they wouldn't believe you anyway."
@@ -3682,7 +3701,7 @@ msgstr ""
 #: conversationlist_lleglaris.json:lleglaris14
 #: conversationlist_lodar.json:lodar_find10a
 msgid "Good."
-msgstr ""
+msgstr "好。"
 
 #: conversationlist_farrik.json:farrik_19
 msgid "OK, here is the plan. The guard captain has a bit of a drinking problem."
@@ -3825,7 +3844,7 @@ msgstr ""
 #: conversationlist_buceth.json:buceth_dontknow:0
 #: conversationlist_buceth.json:buceth_24:0
 msgid "OK, goodbye."
-msgstr ""
+msgstr "好的，再见。"
 
 #: conversationlist_fallhaven_warden.json:fallhaven_warden_4
 msgid "Oh sweet drinks of joy. I really shouldn't have this while on duty though."
@@ -3843,7 +3862,7 @@ msgstr ""
 #: conversationlist_prim_arghest.json:arghest_return_1:0
 #: conversationlist_thorin.json:thorin_search_c_2:2
 msgid "You are welcome. Goodbye."
-msgstr ""
+msgstr "对不起。再见。"
 
 #: conversationlist_fallhaven_warden.json:fallhaven_warden_6:1
 msgid "What if someone would pay you the amount of the fine?"
@@ -4106,7 +4125,7 @@ msgstr ""
 
 #: conversationlist_umar.json:umar_andor_1:0
 msgid "Who is Lodar?"
-msgstr ""
+msgstr "谁是Lodar？"
 
 #: conversationlist_umar.json:umar_andor_2
 msgid "Lodar? He is one of the famous potion makers from the old days. The Thieves' Guild has requested his services many times before. He can make all sorts of strong sleeping potions, healing potions and cures."
@@ -4162,7 +4181,7 @@ msgstr ""
 
 #: conversationlist_umar.json:umar_lodar_6:0
 msgid "How do I get to Vilegard?"
-msgstr ""
+msgstr "怎么走Vilegard？"
 
 #: conversationlist_umar.json:umar_lodar_6:2
 #: conversationlist_prim_outside.json:prim_commoner2_rest1:0
@@ -4171,7 +4190,7 @@ msgstr ""
 #: conversationlist_ingus.json:ingus_t2:1
 #: conversationlist_ingus.json:ingus_s2:1
 msgid "Thank you, goodbye."
-msgstr ""
+msgstr "谢谢，再见。"
 
 #: conversationlist_umar.json:umar_vilegard_1
 msgid "You travel southeast from Fallhaven. When you reach the main road and the Foaming Flask tavern, head south. It's not very far to the southeast from here."
@@ -4297,7 +4316,7 @@ msgstr ""
 
 #: conversationlist_kaori.json:kaori_20
 msgid "Good. Give them to me."
-msgstr ""
+msgstr "好。把我给它吧。"
 
 #: conversationlist_kaori.json:kaori_21
 msgid "Yes, these will do fine. Thank you a lot kid. Maybe you are OK after all. May the Shadow watch over you."
@@ -4398,7 +4417,7 @@ msgstr ""
 
 #: conversationlist_vilegard_villagers.json:vilegard_villager_friend:1
 msgid "Thank you. See you."
-msgstr ""
+msgstr "谢谢。再见。"
 
 #: conversationlist_vilegard_villagers.json:vilegard_villager_friend_1
 msgid "Your brother? No, I haven't seen anyone that looks like you. But then again, I never take much notice to outsiders."
@@ -4642,7 +4661,7 @@ msgstr ""
 #: conversationlist_jolnor.json:jolnor_gaintrust_9:0
 #: conversationlist_jolnor.json:jolnor_gaintrust_10:0
 msgid "What do you want me to do?"
-msgstr ""
+msgstr "你想我干什么？"
 
 #: conversationlist_jolnor.json:jolnor_gaintrust_10
 msgid "Yes, their reason is to make life miserable for us, I am sure."
@@ -4676,7 +4695,7 @@ msgstr ""
 #: conversationlist_stoutford_combined.json:odirath_3_5:3
 #: conversationlist_stoutford_combined.json:yolgen_flagstone_0:2
 msgid "Maybe."
-msgstr ""
+msgstr "可能。"
 
 #: conversationlist_jolnor.json:jolnor_gaintrust_14
 msgid "Good. Report back to me when you are done."
@@ -4824,7 +4843,7 @@ msgstr ""
 #: conversationlist_vilegard_shops.json:vilegard_shop_notrust
 #: conversationlist_vilegard_shops.json:vilegard_shop_notrust_smith
 msgid "You are an outsider. We don't like outsiders here in Vilegard. Please leave."
-msgstr ""
+msgstr "你是外人。我们在Vilegard不喜欢外人。请离开吧。"
 
 #: conversationlist_ogam.json:ogam_1
 msgid "Belief. Power. Struggle."
@@ -4839,7 +4858,7 @@ msgstr ""
 #: conversationlist_stoutford_combined.json:stn_colonel_131_4a:0
 #: conversationlist_stoutford_combined.json:stn_colonel_131_4b:0
 msgid "What?"
-msgstr ""
+msgstr "什么？"
 
 #: conversationlist_ogam.json:ogam_1:1
 msgid "I was told to see you."
@@ -4883,7 +4902,7 @@ msgstr ""
 #: conversationlist_ogam.json:ogam_5:1
 #: conversationlist_duaina.json:duaina_8:1
 msgid "I don't understand."
-msgstr ""
+msgstr "我听不懂。"
 
 #: conversationlist_ogam.json:ogam_lodar_1
 msgid "Lodar? Clear, tingling, hurt."
@@ -5086,7 +5105,7 @@ msgstr ""
 
 #: conversationlist_ambelie.json:ambelie_2:2
 msgid "Where is Feygard?"
-msgstr ""
+msgstr "Feygard在哪儿？"
 
 #: conversationlist_ambelie.json:ambelie_3
 msgid "Feygard, the great city of peace. Surely you must know of it. Northwest in our great land."
@@ -5111,7 +5130,7 @@ msgstr ""
 #: conversationlist_ambelie.json:ambelie_6:0
 #: conversationlist_ambelie.json:ambelie_9:0
 msgid "Nor City, where is that?"
-msgstr ""
+msgstr "Nor城市，那在哪儿？"
 
 #: conversationlist_ambelie.json:ambelie_6:1
 msgid "If you like it so much in Feygard, why would you even leave?"
@@ -5166,7 +5185,7 @@ msgstr ""
 #: conversationlist_foamingflask_guards.json:ff_captain_2:0
 #: conversationlist_foamingflask_outsideguard.json:ff_outsideguard_2:0
 msgid "Feygard, where is that?"
-msgstr ""
+msgstr "Feygard，那在哪儿？"
 
 #: conversationlist_foamingflask_guards.json:ff_guard_4
 msgid "What, you haven't heard of Feygard, kid? Just follow the road northwest and you will see the great city of Feygard rise above the treetops."
@@ -5174,7 +5193,7 @@ msgstr ""
 
 #: conversationlist_foamingflask_guards.json:ff_guard_4:0
 msgid "Thanks. Bye."
-msgstr ""
+msgstr "谢谢。再见。"
 
 #: conversationlist_foamingflask_guards.json:ff_guard_rincel_1
 msgid "A boy?! Apart from you, there have been no children in here that I have seen."
@@ -5187,7 +5206,7 @@ msgstr ""
 #: conversationlist_foamingflask_guards.json:ff_guard_rincel_2:0
 #: conversationlist_foamingflask_guards.json:ff_captain_4:1
 msgid "Thank you, Goodbye."
-msgstr ""
+msgstr "谢谢，再见。"
 
 #: conversationlist_foamingflask_guards.json:ff_guard_rincel_2:1
 #: conversationlist_foamingflask_guards.json:ff_captain_4:0
@@ -5219,7 +5238,7 @@ msgstr ""
 
 #: conversationlist_foamingflask_guards.json:ff_captain_3:0
 msgid "You mentioned Feygard. Where is that?"
-msgstr ""
+msgstr "你说过Feygard。那在哪儿？"
 
 #: conversationlist_foamingflask_guards.json:ff_captain_4
 msgid "The great city of Feygard is the greatest sight you will ever see. Follow the road northwest."
@@ -5267,7 +5286,7 @@ msgstr ""
 
 #: conversationlist_foamingflask_outsideguard.json:ff_outsideguard_3:0
 msgid "OK. Goodbye."
-msgstr ""
+msgstr "好的。再见。"
 
 #: conversationlist_foamingflask_outsideguard.json:ff_outsideguard_3:1
 msgid "Why must you stay alert outside a tavern?"
@@ -5298,7 +5317,7 @@ msgstr ""
 
 #: conversationlist_foamingflask_outsideguard.json:ff_outsideguard_trouble_2:2
 msgid "Do you like your job here?"
-msgstr ""
+msgstr "你这里喜欢你的工作吗？"
 
 #: conversationlist_foamingflask_outsideguard.json:ff_outsideguard_trouble_3
 msgid "My job? I guess the royal guard is OK. I mean, Feygard is a really nice place to live in."
@@ -5495,11 +5514,11 @@ msgstr ""
 #: conversationlist_prim_guthbered.json:guthbered_sentbybwm_leave:0
 #: conversationlist_blackwater_harlenn.json:harlenn_sentbyprim_8:0
 msgid "You are welcome."
-msgstr ""
+msgstr "不客气。"
 
 #: conversationlist_wrye.json:wrye_mourn_1
 msgid "Shadow help me."
-msgstr ""
+msgstr "暗影帮我吧。"
 
 #: conversationlist_wrye.json:wrye_mourn_1:0
 #: conversationlist_bwm_agent_1.json:bwm_agent_1_start:0
@@ -5526,7 +5545,7 @@ msgstr ""
 
 #: conversationlist_wrye.json:wrye_mourn_3:0
 msgid "Outsider?"
-msgstr ""
+msgstr "外人？"
 
 #: conversationlist_wrye.json:wrye_mourn_4
 msgid ""
@@ -5703,7 +5722,7 @@ msgstr ""
 #: conversationlist_halvor_surprise.json:halvor_bwmine_14
 #: conversationlist_guynmart_npc.json:guynmart_wizard_50:0
 msgid "Really?"
-msgstr ""
+msgstr "真吗？"
 
 #: conversationlist_wrye.json:wrye_resolved_3:0
 msgid "But he never got far. He was attacked while camping one night."
@@ -5711,7 +5730,7 @@ msgstr ""
 
 #: conversationlist_wrye.json:wrye_resolved_4
 msgid "Attacked?"
-msgstr ""
+msgstr "攻打过？"
 
 #: conversationlist_wrye.json:wrye_resolved_4:0
 msgid "Yes, he could not stand up to the monsters, and was critically wounded."
@@ -5755,7 +5774,7 @@ msgstr ""
 
 #: conversationlist_oluag.json:oluag_1_1
 msgid "Hello. I am Oluag."
-msgstr ""
+msgstr "你好。我是Oluag。"
 
 #: conversationlist_oluag.json:oluag_1_1:0
 msgid "What are you doing here around these crates?"
@@ -5787,7 +5806,7 @@ msgstr ""
 
 #: conversationlist_oluag.json:oluag_goodbye
 msgid "Right. Goodbye."
-msgstr ""
+msgstr "对。再见。"
 
 #: conversationlist_oluag.json:oluag_grave_return
 msgid "Look, I already told you the story."
@@ -5825,7 +5844,7 @@ msgstr ""
 #: conversationlist_jhaeld.json:jhaeld_alg_11:0
 #: conversationlist_maevalia.json:maevalia6:0
 msgid "What did you do?"
-msgstr ""
+msgstr "你干了什么？"
 
 #: conversationlist_oluag.json:oluag_grave_3:2
 msgid "Do I have to beat it out of you?"
@@ -5923,6 +5942,9 @@ msgid ""
 "East: Nor City\n"
 "West: Fallhaven"
 msgstr ""
+"北：Loneford\n"
+"东：Nor城市\n"
+"西：Fallhaven"
 
 #: conversationlist_signs_v068.json:sign_road1_s
 msgid ""
@@ -5930,6 +5952,9 @@ msgid ""
 "East: Nor City\n"
 "South: Vilegard"
 msgstr ""
+"北：Loneford\n"
+"东：Nor城市\n"
+"南：Vilegard"
 
 #: conversationlist_signs_v068.json:sign_oluag
 msgid "You see a recently dug grave."
@@ -5940,6 +5965,8 @@ msgid ""
 "East: Nor City\n"
 "West: Vilegard"
 msgstr ""
+"东：Nor城市\n"
+"西：Vilegard"
 
 #: conversationlist_maelveon.json:maelveon
 msgid "[You feel a tingling sensation in your body as the frightening figure begins to speak]"
@@ -6051,7 +6078,7 @@ msgstr ""
 #: conversationlist_hadracor.json:hadracor_accept_2:1
 #: conversationlist_stoutford_combined.json:caeda_60:1
 msgid "No problem."
-msgstr ""
+msgstr "不问题。"
 
 #: conversationlist_bwm_agent_1.json:bwm_agent_1_10
 msgid "Good. First though, we must cross this mine to the other side."
@@ -6181,7 +6208,7 @@ msgstr ""
 
 #: conversationlist_bwm_agent_3.json:bwm_agent_3_1
 msgid "Hello. You made it here, good."
-msgstr ""
+msgstr "你好。好，你回来这里了。"
 
 #: conversationlist_bwm_agent_3.json:bwm_agent_3_1:0
 msgid "I talked to some people in the village Prim. They had some interesting things to say about Blackwater mountain."
@@ -6218,7 +6245,7 @@ msgstr ""
 #: conversationlist_bwm_agent_3.json:bwm_agent_3_5:0
 #: conversationlist_blackwater_harlenn.json:harlenn_15:0
 msgid "What have they done?"
-msgstr ""
+msgstr "他们干过什么？"
 
 #: conversationlist_bwm_agent_3.json:bwm_agent_3_5:1
 msgid "Yes, they do seem a bit shady."
@@ -6450,7 +6477,7 @@ msgstr ""
 
 #: conversationlist_prim_arghest.json:arghest_return_6:0
 msgid "Thanks Arghest. Goodbye."
-msgstr ""
+msgstr "谢谢Arghest。再见。"
 
 #: conversationlist_prim_arghest.json:arghest_return_6:1
 msgid "Finally, I thought I would never be able to rest here!"
@@ -6474,7 +6501,7 @@ msgstr ""
 
 #: conversationlist_prim_arghest.json:arghest_10:1
 msgid "Are you still going to use it?"
-msgstr ""
+msgstr "你正在打算用它吗？"
 
 #: conversationlist_prim_arghest.json:arghest_11
 msgid "Well, I would like to still keep the option of using it. But I guess someone else could rest there now that I'm not actively using it."
@@ -6506,7 +6533,7 @@ msgstr ""
 
 #: conversationlist_prim_arghest.json:arghest_14:1
 msgid "OK. I'll be right back."
-msgstr ""
+msgstr "好的。我马上回来。"
 
 #: conversationlist_prim_outside.json:tonis_return_1
 msgid "Hello again. Have you spoken to Guthbered in the Prim main hall yet?"
@@ -6570,7 +6597,7 @@ msgstr ""
 
 #: conversationlist_prim_outside.json:tonis_8
 msgid "Good, thanks. We really need your help!"
-msgstr ""
+msgstr "好，谢谢！我们需要你的帮助！"
 
 #: conversationlist_prim_outside.json:tonis_return_2
 msgid "The village of Prim is just north of here. You can probably see it through the trees over there."
@@ -6578,7 +6605,7 @@ msgstr ""
 
 #: conversationlist_prim_outside.json:tonis_return_2:0
 msgid "OK, I will go there right away."
-msgstr ""
+msgstr "好的。我马上去那。"
 
 #: conversationlist_prim_outside.json:tonis_return_3
 msgid "Do not listen to their lies!"
@@ -6606,7 +6633,7 @@ msgstr ""
 
 #: conversationlist_prim_outside.json:moyra_3
 msgid "Me? I am Moyra."
-msgstr ""
+msgstr "我？我是Moyra。"
 
 #: conversationlist_prim_outside.json:moyra_3:0
 msgid "Why are you hiding?"
@@ -6642,7 +6669,7 @@ msgstr ""
 
 #: conversationlist_prim_outside.json:prim_commoner1_2
 msgid "Thank you. We really need your help."
-msgstr ""
+msgstr "谢谢。我们需要你的帮助。"
 
 #: conversationlist_prim_outside.json:prim_commoner1_3
 msgid "You should speak to Guthbered if you haven't done so already."
@@ -6680,7 +6707,7 @@ msgstr ""
 
 #: conversationlist_prim_outside.json:prim_commoner3
 msgid "Hello. Welcome to Prim."
-msgstr ""
+msgstr "你好。欢迎来到Prim。"
 
 #: conversationlist_prim_outside.json:prim_commoner4
 msgid "Hello. Who are you? Are you here to help us?"
@@ -6807,7 +6834,7 @@ msgstr ""
 #: conversationlist_prim_inn.json:prim_cook_1
 #: conversationlist_lethenlor.json:lethenlor0
 msgid "Can I help you?"
-msgstr ""
+msgstr "我能帮你吗？"
 
 #: conversationlist_prim_inn.json:prim_cook_1:0
 msgid "What food do you have available for trade?"
@@ -7056,7 +7083,7 @@ msgstr ""
 
 #: conversationlist_prim_guthbered.json:guthbered_1
 msgid "Welcome to Prim, traveller."
-msgstr ""
+msgstr "欢迎旅行人来到Prim。"
 
 #: conversationlist_prim_guthbered.json:guthbered_1:0
 #: conversationlist_prim_guthbered.json:guthbered_who_1:0
@@ -7275,7 +7302,7 @@ msgstr ""
 
 #: conversationlist_prim_guthbered.json:guthbered_31
 msgid "Thank you friend."
-msgstr ""
+msgstr "谢谢朋友。"
 
 #: conversationlist_prim_guthbered.json:guthbered_talkedto_harl_1
 msgid "What did I expect? Of course he would say that. He probably even denies it to himself. Meanwhile, we here in Prim suffer from their savage raids."
@@ -7584,6 +7611,9 @@ msgid ""
 "Southwest: Stoutford\n"
 "Northwest: Blackwater mountain"
 msgstr ""
+"东：Fallhaven\n"
+"西南：Stoutford\n"
+"西北：黑水山"
 
 #: conversationlist_blackwater_signs.json:sign_prim_n
 msgid "Notice to all citizens: No one is allowed to enter the mines at night! Furthermore, climbing the mountain side is strictly forbidden after the accident with Lorn."
@@ -7705,7 +7735,7 @@ msgstr ""
 
 #: conversationlist_blackwater_harlenn.json:harlenn_1
 msgid "Welcome, traveller."
-msgstr ""
+msgstr "欢迎旅行人。"
 
 #: conversationlist_blackwater_harlenn.json:harlenn_2
 msgid "You must be the newcomer that I heard about that traveled up the mountainside."
@@ -8159,7 +8189,7 @@ msgstr ""
 
 #: conversationlist_blackwater_upper.json:blackwater_pupil
 msgid "Sorry, I can't talk right now."
-msgstr ""
+msgstr "对不起，我现在不能说。"
 
 #: conversationlist_blackwater_lower.json:laede_1
 msgid "You are welcome to rest here if you want. Pick any bed you wish."
@@ -8175,7 +8205,7 @@ msgstr ""
 
 #: conversationlist_blackwater_lower.json:iducus_1:0
 msgid "What items do you have for sale?"
-msgstr ""
+msgstr "你卖什么东西？"
 
 #: conversationlist_blackwater_lower.json:iducus_2
 msgid "Welcome traveller. I see you are looking at my fine selection of wares."
@@ -8199,7 +8229,7 @@ msgstr ""
 
 #: conversationlist_blackwater_lower.json:blackwater_priest_2:0
 msgid "What are you doing?"
-msgstr ""
+msgstr "你正在干什么？"
 
 #: conversationlist_blackwater_lower.json:blackwater_priest_3
 msgid "Oh, hello. Never mind. Nothing. Just trying to remember something. Don't concern yourself with that."
@@ -8275,7 +8305,7 @@ msgstr ""
 
 #: conversationlist_blackwater_herec.json:herec_2:1
 msgid "Why would I want to help you?"
-msgstr ""
+msgstr "我想帮你为什么？"
 
 #: conversationlist_blackwater_herec.json:herec_3
 msgid "Ah, a negotiator. I like that. If you help me, I will offer to trade the fruits of my labour with you. It should be most valuable to you."
@@ -8401,11 +8431,11 @@ msgstr ""
 #: conversationlist_prim_bjorgur.json:bjorgur_1:2
 #: conversationlist_stoutford_combined.json:stoutford_widow_roots4045_1
 msgid "No, sorry."
-msgstr ""
+msgstr "不，对不起。"
 
 #: conversationlist_prim_bjorgur.json:bjorgur_2
 msgid "You have been there?"
-msgstr ""
+msgstr "你去过那里吗？"
 
 #: conversationlist_prim_bjorgur.json:bjorgur_3
 msgid "My family grave is located in the tomb to the southwest of Prim right outside the Elm mine. I fear that something has disturbed the peace there."
@@ -8713,7 +8743,7 @@ msgstr ""
 #: conversationlist_twoteeth.json:twoteeth_4:2
 #: conversationlist_stoutford_combined.json:lakecave2_troll_14
 msgid "What do you want?"
-msgstr ""
+msgstr "你要什么？"
 
 #: conversationlist_blackwater_throdna.json:throdna_loop_1:2
 msgid "What was that you talked about when I arrived, Kazaul?"
@@ -8765,7 +8795,7 @@ msgstr ""
 
 #: conversationlist_blackwater_throdna.json:throdna_11:1
 msgid "What were you planning to do?"
-msgstr ""
+msgstr "你打算过干什么？"
 
 #: conversationlist_blackwater_throdna.json:throdna_12
 msgid "As I said, we want to learn more about the ritual itself."
@@ -8984,7 +9014,7 @@ msgstr ""
 
 #: conversationlist_blackwater_kazaul.json:kazaul_guardian_3:1
 msgid "Please don't kill me!"
-msgstr ""
+msgstr "请别杀我吧！"
 
 #: conversationlist_blackwater_kazaul.json:sign_kazaul_1
 msgid "You see the shrine of Kazaul that you poured the vial of purifying spirit on."
@@ -9032,7 +9062,7 @@ msgstr ""
 
 #: conversationlist_erinith.json:erinith_1
 msgid "Please, you have to help me!"
-msgstr ""
+msgstr "请，你必须帮我！"
 
 #: conversationlist_erinith.json:erinith_1:0
 #: conversationlist_loneford_1.json:loneford_farmer0:0
@@ -9254,7 +9284,7 @@ msgstr ""
 
 #: conversationlist_hadracor.json:hadracor_1
 msgid "Hello there, I am Hadracor."
-msgstr ""
+msgstr "你好，我是Hadracor。"
 
 #: conversationlist_hadracor.json:hadracor_1:1
 msgid "Have you seen my brother Andor around here? Looks somewhat like me."
@@ -9433,7 +9463,7 @@ msgstr ""
 
 #: conversationlist_tinlyn.json:tinlyn_story_1:0
 msgid "What's the problem?"
-msgstr ""
+msgstr "什么是问题？"
 
 #: conversationlist_tinlyn.json:tinlyn_story_2
 msgid "You see, I tend my flock of sheep here. These fields are excellent pastures for them."
@@ -9558,7 +9588,7 @@ msgstr ""
 #: conversationlist_toszylae_guard.json:toszylae_guard_8:0
 #: conversationlist_hirazinn.json:hirazinn_2:1
 msgid "[Attack]"
-msgstr ""
+msgstr "【攻打】"
 
 #: conversationlist_tinlyn_sheep.json:tinlyn_lostsheep_placed_2
 msgid "[You place one of the bells around the neck of the sheep]"
@@ -9652,7 +9682,7 @@ msgstr ""
 
 #: conversationlist_benbyr.json:benbyr_story_9:1
 msgid "What do you need me to do?"
-msgstr ""
+msgstr "你需要我干什么？"
 
 #: conversationlist_benbyr.json:benbyr_story_10
 msgid "I want to get revenge on that fool Tinlyn of course. Now, my plan is the following:"
@@ -9774,7 +9804,7 @@ msgstr ""
 #: conversationlist_guynmart_npc.json:guynmart_guard_10
 #: conversationlist_guynmart2_npc.json:guynmart_pguard2_30
 msgid "Go away, kid."
-msgstr ""
+msgstr "孩子离开吧。"
 
 #: conversationlist_crossroads_1.json:cr_loneford_st_1
 msgid "Didn't you hear? They have all gotten ill."
@@ -9821,7 +9851,7 @@ msgstr ""
 #: conversationlist_crossroads_3.json:crossroads_sleepguard_1
 #: conversationlist_norath.json:norath_1
 msgid "Hello there. Can I help you?"
-msgstr ""
+msgstr "你好。我能帮你吗？"
 
 #: conversationlist_minarra.json:minarra_first_1:0
 msgid "You seem to have a lot of equipment around here. Do you have anything to trade?"
@@ -10049,7 +10079,7 @@ msgstr ""
 
 #: conversationlist_rogorn.json:rogorn_first_2:1
 msgid "Why? What is out here?"
-msgstr ""
+msgstr "为什么？什么在这里？"
 
 #: conversationlist_rogorn.json:rogorn_first_2:2
 msgid "You are right, I better leave."
@@ -10264,7 +10294,7 @@ msgstr ""
 
 #: conversationlist_rogorn.json:rogorn_toldstory_1
 msgid "You are back."
-msgstr ""
+msgstr "你回来。"
 
 #: conversationlist_rogorn.json:rogorn_toldstory_1:0
 msgid "Can you tell me your side of the story again?"
@@ -10287,7 +10317,7 @@ msgstr ""
 #: conversationlist_hjaldar.json:hjaldar_1:0
 #: conversationlist_graveyard1.json:throthaus_0:1
 msgid "What do you do here?"
-msgstr ""
+msgstr "你这里干什么？"
 
 #: conversationlist_gandoren.json:gandoren_tr_1
 msgid "I'm sorry, we only trade with allies of Feygard."
@@ -10429,7 +10459,7 @@ msgstr ""
 #: conversationlist_gandoren.json:gandoren_17
 #: conversationlist_fallhaven_potions.json:fallhaven_pot_antifoodp6
 msgid "Excellent."
-msgstr ""
+msgstr "很好。"
 
 #: conversationlist_gandoren.json:gandoren_18
 msgid "I cannot promise you any amount on a reward."
@@ -10931,6 +10961,10 @@ msgid ""
 "East: Loneford\n"
 "South: Fallhaven"
 msgstr ""
+"东南：Nor城市\n"
+"西北：Feygard\n"
+"东：Loneford\n"
+"南：Fallhaven"
 
 #: conversationlist_fields_1.json:sign_crossroads_n
 #: conversationlist_fields_1.json:sign_fields1
@@ -10938,12 +10972,16 @@ msgid ""
 "Northwest: Feygard\n"
 "East: Loneford."
 msgstr ""
+"西北：Feygard\n"
+"东：Loneford。"
 
 #: conversationlist_fields_1.json:sign_fields6
 msgid ""
 "Northwest: Feygard\n"
 "South: Nor City."
 msgstr ""
+"西北：Feygard\n"
+"南：Nor城市。"
 
 #: conversationlist_fields_1.json:crossroads_sleep
 msgid "The guard shouts at you: Hey! You cannot sleep here!"
@@ -11115,7 +11153,7 @@ msgstr ""
 
 #: conversationlist_loneford_2.json:landa_9:0
 msgid "When was this?"
-msgstr ""
+msgstr "什么时候？"
 
 #: conversationlist_loneford_2.json:landa_10
 msgid "It was in the middle of the night, on the day before everything started. The day after, I was sleeping it off during the day, so I didn't notice all the turmoil about when they brought Hesor back."
@@ -11197,7 +11235,7 @@ msgstr ""
 
 #: conversationlist_buceth.json:buceth_3:0
 msgid "OK, what?"
-msgstr ""
+msgstr "好的，什么？"
 
 #: conversationlist_buceth.json:buceth_3:1
 msgid "How about some gold, would that make you talk?"
@@ -11294,7 +11332,7 @@ msgstr ""
 
 #: conversationlist_buceth.json:buceth_14:2
 msgid "I don't know."
-msgstr ""
+msgstr "我不知道。"
 
 #: conversationlist_buceth.json:buceth_dontknow
 msgid "I am sorry to hear that. You should make up your mind and return to me once you have done so. Then we might be able to talk more."
@@ -11515,7 +11553,7 @@ msgstr "战！"
 
 #: conversationlist_buceth.json:buceth_story_14
 msgid "Thank you, my friend."
-msgstr ""
+msgstr "谢谢，我的朋友。"
 
 #: conversationlist_buceth.json:buceth_story_15
 msgid "If you want to learn more about the Shadow, please visit the chapel custodian in Nor City. Tell them I sent you, and they will surely extend their gratitude towards you."
@@ -11557,7 +11595,7 @@ msgstr ""
 
 #: conversationlist_taevinn.json:taevinn
 msgid "Please, you must help us!"
-msgstr ""
+msgstr "请，你必须帮我们！"
 
 #: conversationlist_taevinn.json:taevinn:0
 msgid "Do you know anything about the illness?"
@@ -11621,7 +11659,7 @@ msgstr ""
 
 #: conversationlist_loneford_kuldan.json:kuldan_bc_3:0
 msgid "He is already dead."
-msgstr ""
+msgstr "他已经死。"
 
 #: conversationlist_loneford_kuldan.json:kuldan_bc_4
 msgid "Dead you say? Hmm, not quite the way we do things in Feygard, but I guess this is an exceptional case."
@@ -12064,7 +12102,7 @@ msgstr ""
 #: conversationlist_thorin.json:thorin_trade_n:0
 #: conversationlist_elythom_1.json:krell_4:0
 msgid "What's that?"
-msgstr ""
+msgstr "什么？"
 
 #: conversationlist_thorin.json:thorin_trade_y
 msgid "Oh yes. The upside of this cave is that it literally is crawling with dead bodies of those scaradon bugs."
@@ -12342,8 +12380,9 @@ msgid "Therefore, I ask of you not to reveal my whereabouts to them."
 msgstr "因此，我要求你不要向他们透露我的下落。"
 
 #: conversationlist_algangror.json:algangror_remgard_5:1
+#, fuzzy
 msgid "[Lie] OK."
-msgstr "[REVIEW]（说谎）好的"
+msgstr "[REVIEW]（说谎）好的。"
 
 #: conversationlist_algangror.json:algangror_remgard_6
 msgid "Thank you. Under no circumstances should you tell them where I am. They will most likely try to persuade you into revealing my location."
@@ -12474,7 +12513,7 @@ msgstr ""
 
 #: conversationlist_algangror.json:algangror_task2_6
 msgid "Good, good."
-msgstr ""
+msgstr "好，好。"
 
 #: conversationlist_algangror.json:algangror_task2_7
 msgid "You will tell no one of this task that I am about to give you, and you must be as discreet as possible."
@@ -12529,7 +12568,7 @@ msgstr ""
 #: conversationlist_algangror.json:algangror_task2_17:0
 #: conversationlist_stoutford_combined.json:stoutford_widow_roots4045_3:1
 msgid "I understand."
-msgstr ""
+msgstr "我听懂。"
 
 #: conversationlist_algangror.json:algangror_task2_18
 msgid "Here are the idols."
@@ -13050,7 +13089,7 @@ msgstr ""
 
 #: conversationlist_ulirfendor.json:ulirfendor_17:0
 msgid "Would you like any help with that?"
-msgstr ""
+msgstr "你想我的帮助吗？"
 
 #: conversationlist_ulirfendor.json:ulirfendor_18
 msgid "Hmm, maybe. I need to figure out what this last part should be. Hmm..."
@@ -13259,7 +13298,7 @@ msgstr ""
 
 #: conversationlist_ulirfendor.json:ulirfendor_infected_10:0
 msgid "What is?"
-msgstr ""
+msgstr "什么是？"
 
 #: conversationlist_ulirfendor.json:ulirfendor_infected_11
 msgid "You show all the signs. If this is true, then you are in great danger."
@@ -13317,7 +13356,7 @@ msgstr ""
 
 #: conversationlist_ulirfendor.json:ulirfendor_demon_2:0
 msgid "No problem. Goodbye."
-msgstr ""
+msgstr "没关系。再见。"
 
 #: conversationlist_ulirfendor.json:ulirfendor_demon_2:1
 #: conversationlist_ulirfendor.json:ulirfendor_cured_2:1
@@ -13591,7 +13630,7 @@ msgstr ""
 #: conversationlist_aulowenn.json:aulowenn_atk0:0
 #: conversationlist_tiqui.json:tiqui_atk0:0
 msgid "Attack!"
-msgstr ""
+msgstr "攻打！"
 
 #: conversationlist_ulirfendor.json:ulirfendor_dp_return1
 msgid "Hello again. Have you made up your mind about what we talked about before?"
@@ -13848,7 +13887,7 @@ msgstr ""
 
 #: conversationlist_talion_2.json:talion_infect_3:0
 msgid "Are you able to help me?"
-msgstr ""
+msgstr "你能帮我吗？"
 
 #: conversationlist_talion_2.json:talion_infect_4
 msgid "It's good that you came to see me. I might be able to help you."
@@ -13909,7 +13948,7 @@ msgstr ""
 
 #: conversationlist_talion_2.json:talion_infect_8:0
 msgid "What would you like me to do?"
-msgstr ""
+msgstr "你要我干什么？"
 
 #: conversationlist_talion_2.json:talion_infect_8:1
 msgid "Argh! The pains are getting worse! Isn't there anything you can do?"
@@ -14020,7 +14059,7 @@ msgstr ""
 #: conversationlist_talion_2.json:talion_bone_1
 #: conversationlist_talion_2.json:talion_hair_1
 msgid "Oh, good. Please, give them to me."
-msgstr ""
+msgstr "哦，好。请把我给它吧。"
 
 #: conversationlist_talion_2.json:talion_bone_1:1
 #: conversationlist_talion_2.json:talion_hair_1:1
@@ -14032,7 +14071,7 @@ msgstr ""
 #: conversationlist_talion_2.json:talion_irdegh_1
 #: conversationlist_talion_2.json:talion_vial_1
 msgid "Oh, good. Please, give it to me."
-msgstr ""
+msgstr "哦，好。请把我给它吧。"
 
 #: conversationlist_talion_2.json:talion_vial_1:0
 msgid "Here you go, one small empty vial."
@@ -14292,7 +14331,7 @@ msgstr ""
 
 #: conversationlist_ingus.json:ingus_t6:0
 msgid "Thank you, I might go visit them. Goodbye."
-msgstr ""
+msgstr "谢谢你。我可能去出访他们。再见。"
 
 #: conversationlist_ingus.json:ingus_t6:2
 msgid "Thank you. I wanted to ask you, is there a shop in town?"
@@ -14359,7 +14398,7 @@ msgstr ""
 #: conversationlist_elwyl.json:elwyl_1:2
 #: conversationlist_guynmart_npc.json:guynmart_gguard_30:1
 msgid "OK, I'll leave."
-msgstr ""
+msgstr "好的，我离开。"
 
 #: conversationlist_elwyl.json:elwyl_2
 msgid "Bah. Leave, before I call the guards over here!"
@@ -14498,7 +14537,7 @@ msgstr ""
 
 #: conversationlist_elwyl.json:elwyl_res_1
 msgid "Oh good. Give me that."
-msgstr ""
+msgstr "哦，好。给我那个吧。"
 
 #: conversationlist_elwyl.json:elwyl_res_2
 msgid "Huh, what's this? It's yellow ... I was sure that it used to be blue. Let me smell it to make sure that it's the right kind of potion."
@@ -14538,7 +14577,7 @@ msgstr ""
 
 #: conversationlist_hjaldar.json:hjaldar_1
 msgid "Hello there. I am Hjaldar."
-msgstr ""
+msgstr "你好。我是Hjaldar。"
 
 #: conversationlist_hjaldar.json:hjaldar_2
 msgid "I used to be a potion-maker. In fact, I used to be the only potion-maker here in Remgard."
@@ -14737,7 +14776,7 @@ msgstr ""
 
 #: conversationlist_hjaldar.json:hjaldar_pots_1:1
 msgid "You are welcome, goodbye."
-msgstr ""
+msgstr "不客气，再见。"
 
 #: conversationlist_mazeg.json:mazeg_1:1
 #: conversationlist_mazeg.json:mazeg_2:1
@@ -14754,7 +14793,7 @@ msgstr ""
 
 #: conversationlist_mazeg.json:mazeg_e_2
 msgid "Hjaldar, my old friend! Tell me, how is he these days?"
-msgstr ""
+msgstr "Hjaldar，我的老朋友。告诉我吧，他好吗？"
 
 #: conversationlist_mazeg.json:mazeg_e_2:0
 msgid "He asked me to relay his greetings to you, and to tell you that he is well."
@@ -14778,7 +14817,7 @@ msgstr ""
 
 #: conversationlist_mazeg.json:mazeg_e_5b
 msgid "Sure, I have it."
-msgstr ""
+msgstr "对，我有它。"
 
 #: conversationlist_mazeg.json:mazeg_e_7a
 msgid "Since you helped us up here in the Blackwater mountain settlement earlier, I am willing to give you a discount on the price for some Lyson marrow extract. For 400 gold, I am willing to sell you some of it for my old friend Hjaldar."
@@ -15138,7 +15177,7 @@ msgstr ""
 
 #: conversationlist_jhaeld.json:jhaeld_22:1
 msgid "But I thought that..."
-msgstr ""
+msgstr "可是我认为……"
 
 #: conversationlist_jhaeld.json:jhaeld_22:2
 msgid "What about the..."
@@ -15301,7 +15340,7 @@ msgstr ""
 
 #: conversationlist_jhaeld.json:jhaeld_alg_4:0
 msgid "Who is she?"
-msgstr ""
+msgstr "她是谁？"
 
 #: conversationlist_jhaeld.json:jhaeld_alg_5
 msgid "She used to live here in Remgard, during the days of prosperity. She even helped with the crops on some days."
@@ -15329,7 +15368,7 @@ msgstr ""
 
 #: conversationlist_jhaeld.json:jhaeld_alg_10:0
 msgid "Did she tell?"
-msgstr ""
+msgstr "她告诉吗？"
 
 #: conversationlist_jhaeld.json:jhaeld_alg_11
 msgid "Would you believe it, she told us that what she believed in, and what she was doing was no concern of ours. She even had the stomach to tell us that she wanted to be left alone."
@@ -15382,13 +15421,13 @@ msgstr ""
 #: conversationlist_jhaeld.json:jhaeld_alg_21n
 #: conversationlist_jhaeld.json:jhaeld_alg_21
 msgid "I ... I don't know what to do."
-msgstr ""
+msgstr "我……我不知道干。"
 
 #: conversationlist_jhaeld.json:jhaeld_alg_21:0
 #: conversationlist_jhaeld.json:jhaeld_alg_22:0
 #: conversationlist_jhaeld.json:jhaeld_alg_23:0
 msgid "I could help you if you want."
-msgstr ""
+msgstr "如果你要，我能帮你。"
 
 #: conversationlist_jhaeld.json:jhaeld_alg_21:1
 #: conversationlist_jhaeld.json:jhaeld_alg_23:1
@@ -15446,7 +15485,7 @@ msgstr ""
 
 #: conversationlist_jhaeld.json:jhaeld_killalg:2
 msgid "Algangror is dead."
-msgstr ""
+msgstr "Algangror是死。"
 
 #: conversationlist_jhaeld.json:jhaeld_killalg_1
 msgid "I find this very hard to believe. For to have killed Algangror would have been a difficult task, given her power."
@@ -15537,7 +15576,7 @@ msgstr ""
 #: conversationlist_norath.json:norath_5:1
 #: conversationlist_norath.json:norath_6:0
 msgid "Where do you think she has gone?"
-msgstr ""
+msgstr "你认为她去过哪儿？"
 
 #: conversationlist_norath.json:norath_5:2
 #: conversationlist_norath.json:norath_6:1
@@ -15702,11 +15741,11 @@ msgstr ""
 
 #: conversationlist_elythom_1.json:elythom_knight2
 msgid "Hello. *cough*"
-msgstr ""
+msgstr "你好。*咳嗽*"
 
 #: conversationlist_duaina.json:duaina_0
 msgid "You! I have seen you."
-msgstr ""
+msgstr "你！我见过你。"
 
 #: conversationlist_duaina.json:duaina_0:0
 #: conversationlist_rothses.json:rothses_1:1
@@ -16117,7 +16156,7 @@ msgstr ""
 
 #: conversationlist_remgard_villagers1.json:remgard_drunk2_4:0
 msgid "Mount Galmore, where is that?"
-msgstr ""
+msgstr "Galmore山，那在哪儿？"
 
 #: conversationlist_remgard_villagers1.json:remgard_drunk2_4:1
 msgid "I'll keep that in mind."
@@ -16163,7 +16202,7 @@ msgstr ""
 
 #: conversationlist_remgard_villagers1.json:morgisia:2
 msgid "Sorry, I thought..."
-msgstr ""
+msgstr "对不起，我认为过……"
 
 #: conversationlist_remgard_villagers1.json:morgisia_1
 msgid "Help! Guards!"
@@ -16309,7 +16348,7 @@ msgstr ""
 #: conversationlist_arghes.json:arghes_shop
 #: conversationlist_ervelyn.json:ervelyn_shop
 msgid "Certainly."
-msgstr ""
+msgstr "当然。"
 
 #: conversationlist_arghes.json:arghes_8
 msgid "No, I cannot tell you anything at this time. You are welcome to return once your path has become ... clearer."
@@ -16361,7 +16400,7 @@ msgstr ""
 
 #: conversationlist_ervelyn.json:ervelyn_1
 msgid "Hello there. Welcome to my shop."
-msgstr ""
+msgstr "你好。欢迎来到我的商店。"
 
 #: conversationlist_ervelyn.json:ervelyn_d:1
 #: conversationlist_pathway_fallhaven.json:guard_pathway_0:2
@@ -16422,7 +16461,7 @@ msgstr ""
 
 #: conversationlist_reinkarr.json:reinkarr_6:0
 msgid "I have one of those."
-msgstr ""
+msgstr "我有一个。"
 
 #: conversationlist_reinkarr.json:reinkarr_6:1
 msgid "So what made you stop looking?"
@@ -16430,7 +16469,7 @@ msgstr ""
 
 #: conversationlist_reinkarr.json:reinkarr_6:2
 msgid "What are they?"
-msgstr ""
+msgstr "它是什么？"
 
 #: conversationlist_reinkarr.json:reinkarr_7
 msgid "Actually, all I know is that they are some sort of crystal. As I said, they are supposedly very powerful. We were only looking for them so that we could sell them and become rich."
@@ -16458,7 +16497,7 @@ msgstr ""
 
 #: conversationlist_reinkarr.json:reinkarr_oeg_2:0
 msgid "What can I do with it?"
-msgstr ""
+msgstr "我能跟它干什么？"
 
 #: conversationlist_reinkarr.json:reinkarr_oeg_3
 msgid "I hear there are merchants that would do anything to get their hands on some of those crystals. You should seek out the merchants in one of the larger cities, and ask them."
@@ -16470,7 +16509,7 @@ msgstr ""
 
 #: conversationlist_remgard_idolsigns.json:jhaeld_bed_1
 msgid "You see a bed."
-msgstr ""
+msgstr "你看一张床。"
 
 #: conversationlist_remgard_idolsigns.json:jhaeld_bed_2
 msgid "You see a bed. The idol is still where you left it."
@@ -16544,22 +16583,29 @@ msgid ""
 "West: Loneford\n"
 "East: Brightport, Lake Laeroth"
 msgstr ""
+"南：Brimhaven\n"
+"西：Loneford\n"
+"东：Brightport，Laeroth湖"
 
 #: conversationlist_signs_v0611.json:sign_waterway9
 msgid ""
 "West: Loneford\n"
 "East: Brightport, Lake Laeroth"
 msgstr ""
+"西：Loneford\n"
+"东：Brightport，Laeroth湖"
 
 #: conversationlist_signs_v0611.json:sign_waterway11
 msgid ""
 "West: Loneford\n"
 "South: Brightport"
 msgstr ""
+"西：Loneford\n"
+"南：Brightport"
 
 #: conversationlist_signs_v0611.json:sign_remgard0
 msgid "Welcome to Lake Laeroth and the city of Remgard!"
-msgstr ""
+msgstr "欢迎来到Laeroth湖和城市Remgard！"
 
 #: conversationlist_signs_v0611.json:wild16_cave
 msgid "The thicket is too dense for you to get through."
@@ -16735,7 +16781,7 @@ msgstr ""
 
 #: conversationlist_vacor2.json:vacor_msg1:1
 msgid "What? ... Oh, this?"
-msgstr ""
+msgstr "什么？……哦，这个？"
 
 #: conversationlist_vacor2.json:vacor_msg_a1
 msgid "Surely, he didn't just give it to you!"
@@ -17158,10 +17204,13 @@ msgid "Where can I get some of that nice armor that you're wearing?"
 msgstr "从哪能得到你这身好装甲？"
 
 #: conversationlist_agthor.json:agthor_guard0_1
+#, fuzzy
 msgid ""
 "Agthor. Talk to him.\n"
 "[Points at Agthor]"
-msgstr "[REVIEW]Agthor。去和他讲。*指着Agthor*"
+msgstr ""
+"[REVIEW]Agthor。去和他讲。\n"
+"*指着Agthor*"
 
 #: conversationlist_aulowenn.json:aulowenn_atk0
 msgid "For Feygard!"
@@ -17296,7 +17345,7 @@ msgstr ""
 
 #: conversationlist_aulowenn.json:aulowenn20:5
 msgid "I have already killed it."
-msgstr ""
+msgstr "我已经杀它。"
 
 #: conversationlist_aulowenn.json:aulowenn21
 msgid "Good. Return here once you are done."
@@ -17425,7 +17474,7 @@ msgstr ""
 
 #: conversationlist_charwood1.json:drashad2
 msgid "Please, you have to help us!"
-msgstr ""
+msgstr "请，你必须帮助我们！"
 
 #: conversationlist_charwood1.json:khorailla1
 msgid "Thank you so much for finding our missing people!"
@@ -17551,7 +17600,7 @@ msgstr ""
 
 #: conversationlist_esfiume.json:askyl2
 msgid "The Sakul are coming."
-msgstr ""
+msgstr "Sakul正在来。"
 
 #: conversationlist_esfiume.json:esfiume0
 msgid "Hey! Whatever you saw us doing here, we're completely innocent."
@@ -17591,7 +17640,7 @@ msgstr ""
 
 #: conversationlist_esfiume.json:erethori0:0
 msgid "What people?"
-msgstr ""
+msgstr "什么人？"
 
 #: conversationlist_esfiume.json:erethori1
 msgid "I'm no one. You did not see me, or any of my friends here."
@@ -17623,7 +17672,7 @@ msgstr ""
 
 #: conversationlist_esfiume.json:erethori5:0
 msgid "Charwood, where is that?"
-msgstr ""
+msgstr "Charwood在哪儿？"
 
 #: conversationlist_esfiume.json:erethori6
 msgid "It's just north of here. Take the path west of our camp here, and head straight north. It's just around the bend there [points]."
@@ -17652,7 +17701,7 @@ msgstr ""
 #: conversationlist_falothen.json:falothen1_3:0
 #: conversationlist_fayvara.json:fayvara1_3:0
 msgid "What can you teach me?"
-msgstr ""
+msgstr "你会教我什么？"
 
 #: conversationlist_falothen.json:falothen1_4
 msgid "I can teach you how to better handle most types of weapons, so that you can get even more proficient in them."
@@ -17705,7 +17754,7 @@ msgstr ""
 #: conversationlist_fayvara.json:fayvara1_6:4
 #: conversationlist_fayvara.json:fayvara1_14:4
 msgid "I'll be right back."
-msgstr ""
+msgstr "我马上回来。"
 
 #: conversationlist_falothen.json:falothen1_7_2hs
 #: conversationlist_falothen.json:falothen1_2nd_2hs0
@@ -18160,7 +18209,7 @@ msgstr ""
 
 #: conversationlist_kantya.json:kantya7
 msgid "But they didn't listen."
-msgstr ""
+msgstr "可是他们不听过我。"
 
 #: conversationlist_kantya.json:kantya8
 msgid "Then some people started hearing strange noises coming from below the ground around those markings. Almost like there was something below - a cavern or something."
@@ -18283,7 +18332,7 @@ msgstr ""
 
 #: conversationlist_lethenlor.json:lethenlor6:0
 msgid "Charwood, where's that?"
-msgstr ""
+msgstr "Charwood在哪儿？"
 
 #: conversationlist_lethenlor.json:lethenlor7
 msgid "It's just northeast of here. Look for the Charwood cabin north of here."
@@ -18473,7 +18522,7 @@ msgstr ""
 #: conversationlist_lodar.json:lodar_r0:0
 #: conversationlist_lodarfg2.json:lodar_fg2_0:0
 msgid "I'm $playername."
-msgstr ""
+msgstr "我是$playername。"
 
 #: conversationlist_lodar.json:lodar_r0
 msgid "Oh, it's you again. Now, who were you again?"
@@ -18612,7 +18661,7 @@ msgstr ""
 
 #: conversationlist_lodar.json:lodar_find1
 msgid "Give me that. Oh, yes ... yes!"
-msgstr ""
+msgstr "给我那个吧。哦，是……是！"
 
 #: conversationlist_lodar.json:lodar_find2
 msgid "Did you really defeat the Hira'zinn? It is a formidable foe. I guess you must have, since you gave me its heart."
@@ -18754,7 +18803,7 @@ msgstr ""
 
 #: conversationlist_lodar.json:lodar_xul2:0
 msgid "Vilegard?"
-msgstr ""
+msgstr "Vilegard？"
 
 #: conversationlist_lodar.json:lodar_xul3
 msgid "Vilegard - yes, that's the place. You should go see the smith there. He might be able to guide you further."
@@ -19074,7 +19123,7 @@ msgstr ""
 
 #: conversationlist_lodar.json:lodar_andor3:0
 msgid "What was he doing here?"
-msgstr ""
+msgstr "他这里干过什么？"
 
 #: conversationlist_lodar.json:lodar_andor4
 msgid "Well, even from the first time I saw him, I knew something odd was going on."
@@ -19334,7 +19383,7 @@ msgstr ""
 
 #: conversationlist_lodar0g.json:lodar0_g2:0
 msgid "No, I don't have the password."
-msgstr ""
+msgstr "没，我没有密码。"
 
 #: conversationlist_lodar0g.json:lodar0_g2:1
 msgid "'Giant'"
@@ -19366,7 +19415,7 @@ msgstr ""
 
 #: conversationlist_lodar0g.json:lodar0_g2:8
 msgid "'Password'"
-msgstr ""
+msgstr "‘密码’"
 
 #: conversationlist_lodar0g.json:lodar0_gfail
 msgid "You not know password! Teehee."
@@ -19378,7 +19427,7 @@ msgstr ""
 
 #: conversationlist_lodar0g.json:lodar0_g3
 msgid "You know! You know!"
-msgstr ""
+msgstr "你知道！你知道！"
 
 #: conversationlist_lodar0g.json:lodar0_g4
 msgid "[The creature moves out of the way, and gestures with its hands almost like it is welcoming you further into the forest]"
@@ -19519,7 +19568,7 @@ msgstr ""
 
 #: conversationlist_lodarfg2.json:lodar_fg2_0
 msgid "What? Who are you?"
-msgstr ""
+msgstr "什么？你是谁？"
 
 #: conversationlist_lodarfg2.json:lodar_fg2_0:1
 msgid "Why would I tell you?"
@@ -19537,7 +19586,7 @@ msgstr ""
 #: conversationlist_stoutford.json:yolgen_rumblings10_1:0
 #: conversationlist_stoutford.json:stoutford_thief_rumblings20_0:0
 msgid "Who?"
-msgstr ""
+msgstr "谁？"
 
 #: conversationlist_lodarfg2.json:lodar_fg2_3
 msgid "Ha ha. Crazy!"
@@ -19553,7 +19602,7 @@ msgstr ""
 
 #: conversationlist_lodarfg2.json:lodar_fg2_5:0
 msgid "See what?"
-msgstr ""
+msgstr "看什么？"
 
 #: conversationlist_lodarfg2.json:lodar_fg2_6
 msgid "[The guard continues with his mumbling]"
@@ -19563,7 +19612,7 @@ msgstr ""
 #: conversationlist_woodcabin.json:smuggler3_0:0
 #: conversationlist_woodcabin.json:smuggler3_2:0
 msgid "Hello?"
-msgstr ""
+msgstr "你好？"
 
 #: conversationlist_lodarfg2.json:lodar_fg2_6:1
 msgid "Are you even listening to me?"
@@ -19615,7 +19664,7 @@ msgstr ""
 
 #: conversationlist_lodarfg4.json:lodar_fg4_4
 msgid "What, who are you?"
-msgstr ""
+msgstr "什么，你是谁？"
 
 #: conversationlist_lodarfg4.json:lodar_fg4_5
 msgid "Are you one of ... them?"
@@ -19763,7 +19812,7 @@ msgstr ""
 
 #: conversationlist_maevalia.json:maevalia_r0
 msgid "You again."
-msgstr ""
+msgstr "你再。"
 
 #: conversationlist_maevalia.json:maevalia1
 msgid "The Charwood area has become a dangerous place as of late. You should leave at once unless you want to get killed ... or worse."
@@ -19788,7 +19837,7 @@ msgstr ""
 
 #: conversationlist_maevalia.json:maevalia4:0
 msgid "Who were?"
-msgstr ""
+msgstr "谁？"
 
 #: conversationlist_maevalia.json:maevalia5
 msgid "The monsters. Disgusting, foul smelling monsters. Nothing like we've ever seen before."
@@ -20213,7 +20262,7 @@ msgstr ""
 
 #: conversationlist_tiqui.json:tiqui15
 msgid "You friend of Tiqui."
-msgstr ""
+msgstr "你Tiqui的朋友。"
 
 #: conversationlist_tiqui.json:tiqui_r0
 msgid "Hello, friend of Tiqui. Can Tiqui have revenge for friends?"
@@ -20237,7 +20286,7 @@ msgstr ""
 
 #: conversationlist_tiqui.json:tiqui_r3
 msgid "You good friend of Tiqui!"
-msgstr ""
+msgstr "你Tiqui的好朋友！"
 
 #: conversationlist_twoteeth.json:twoteeth_1
 msgid "Hey kid. Yeah, you!"
@@ -20400,6 +20449,8 @@ msgid ""
 "North: Feygard\n"
 "South: Nor City"
 msgstr ""
+"北：Feygard\n"
+"南：Nor城市"
 
 #: conversationlist_v070signs1.json:sign_rbfcr6
 #: conversationlist_v070signs1.json:sign_rbfcr8
@@ -20408,6 +20459,9 @@ msgid ""
 "North: Charwood\n"
 "East: Nor City"
 msgstr ""
+"西：Feygard\n"
+"北：Charwood\n"
+"东：Nor城市"
 
 #: conversationlist_v070signs1.json:sign_waytominto1
 msgid ""
@@ -20415,6 +20469,9 @@ msgid ""
 "North: Charwood\n"
 "South: Nor City"
 msgstr ""
+"西：Feygard\n"
+"北：Charwood\n"
+"南：Nor城市"
 
 #: conversationlist_v070signs1.json:sign_wdsetl0
 msgid "Visitors are not welcome here!"
@@ -20522,7 +20579,7 @@ msgstr ""
 
 #: conversationlist_woodcabin.json:smuggler3_1:0
 msgid "Can you hear me?"
-msgstr ""
+msgstr "你能听我吗？"
 
 #: conversationlist_woodcabin.json:smuggler3_2
 msgid "[Blank stare]"
@@ -20534,7 +20591,7 @@ msgstr ""
 
 #: conversationlist_woodcabin.json:smuggler3_3:0
 msgid "Can you talk?"
-msgstr ""
+msgstr "你会说吗？"
 
 #: conversationlist_woodcabin.json:smuggler4_0
 msgid "Uhh. Lowyna sure makes the best stuff!"
@@ -20542,7 +20599,7 @@ msgstr ""
 
 #: conversationlist_woodcabin.json:smuggler4_0:0
 msgid "What does she do?"
-msgstr ""
+msgstr "她做什么？"
 
 #: conversationlist_woodcabin.json:smuggler4_1
 msgid "These of course! [swings his jug, nearly spilling some of it]"
@@ -20554,7 +20611,7 @@ msgstr ""
 
 #: conversationlist_woodcabin.json:smuggler4_1:1
 msgid "I need to go."
-msgstr ""
+msgstr "我需要去。"
 
 #: conversationlist_woodcabin.json:smuggler4_2
 msgid "She's over there... No. Over there... No. Oh, she's around here somewhere."
@@ -20677,7 +20734,7 @@ msgstr ""
 
 #: conversationlist_vilegard_v070.json:vilegard_smith_xul_2:0
 msgid "What is it?"
-msgstr ""
+msgstr "它是什么？"
 
 #: conversationlist_vilegard_v070.json:vilegard_smith_xul_3
 msgid "This thing that you have stumbled upon, my friend. This is the Xul'viir. A most foul item indeed."
@@ -20927,7 +20984,7 @@ msgstr ""
 
 #: conversationlist_pathway_fallhaven.json:guard_pathway_0:0
 msgid "Why not?"
-msgstr ""
+msgstr "为什么？"
 
 #: conversationlist_pathway_fallhaven.json:guard_pathway_0:1
 msgid "Never mind. Shadow be with you."
@@ -20951,7 +21008,7 @@ msgstr ""
 
 #: conversationlist_pathway_fallhaven.json:guard_pathway_2:1
 msgid "Well, this is your problem. Goodbye."
-msgstr ""
+msgstr "这是你的问题。再见。"
 
 #: conversationlist_pathway_fallhaven.json:guard_pathway_3
 msgid "You? You're just a kid!"
@@ -20983,6 +21040,9 @@ msgid ""
 "West: Fallhaven\n"
 "South: Nor City"
 msgstr ""
+"北：Feygard\n"
+"西：Fallhaven\n"
+"南：Nor城市"
 
 #: conversationlist_pathway_fallhaven.json:guard_pathway_5
 msgid "Hello again. It seems like you have sorted things out. Now the passage isn't blocked anymore. You have my gratitude for doing that."
@@ -21022,7 +21082,7 @@ msgstr ""
 
 #: conversationlist_pathway_fallhaven.json:guard_pathway_7:0
 msgid "I hope so."
-msgstr ""
+msgstr "我希望。"
 
 #: conversationlist_pathway_fallhaven.json:guard_pathway_8
 msgid "That sounds great! Good luck!"
@@ -21034,7 +21094,7 @@ msgstr ""
 
 #: conversationlist_halvor_surprise.json:halvor_crossglen_0:0
 msgid "No. I don't have the time."
-msgstr ""
+msgstr "不。我没有时间。"
 
 #: conversationlist_halvor_surprise.json:halvor_crossglen_0:1
 msgid "Why not. What do you need?"
@@ -21064,7 +21124,7 @@ msgstr ""
 #: conversationlist_halvor_surprise.json:halvor_crossglen_2
 #: conversationlist_halvor_surprise.json:halvor_chwood_3
 msgid "Thank you. I'll wait for you here."
-msgstr ""
+msgstr "谢谢你。我这里等你。"
 
 #: conversationlist_halvor_surprise.json:halvor_crossglen_4
 msgid "Great! Here, take this gold as a reward. Now I need some rat tails. Will you find them for me?"
@@ -21080,7 +21140,7 @@ msgstr ""
 #: conversationlist_stoutford.json:tahalendor_initial_1:0
 #: conversationlist_stoutford.json:tahalendor_initial_2:0
 msgid "OK..."
-msgstr ""
+msgstr "好的……"
 
 #: conversationlist_halvor_surprise.json:halvor_crossglen_4:2
 #: conversationlist_halvor_surprise.json:halvor_crossglen_6:2
@@ -21151,7 +21211,7 @@ msgstr ""
 
 #: conversationlist_halvor_surprise.json:halvor_crossglen_7:0
 msgid "I don't have them."
-msgstr ""
+msgstr "我没有它们。"
 
 #: conversationlist_halvor_surprise.json:halvor_crossglen_leaving
 msgid "OK. I'll go look somewhere else. Goodbye."
@@ -21289,7 +21349,7 @@ msgstr ""
 
 #: conversationlist_halvor_surprise.json:halvor_bwmine_11:2
 msgid "Of course."
-msgstr ""
+msgstr "当然。"
 
 #: conversationlist_halvor_surprise.json:halvor_bwmine_12
 msgid "Here you are again."
@@ -21346,7 +21406,7 @@ msgstr ""
 
 #: conversationlist_halvor_surprise.json:halvor_mlake_0:1
 msgid "How are you doing?"
-msgstr ""
+msgstr "你好吗？"
 
 #: conversationlist_halvor_surprise.json:halvor_mlake_0:2
 msgid "Oh no ... not you again."
@@ -21438,7 +21498,7 @@ msgstr ""
 
 #: conversationlist_halvor_surprise.json:halvor_mlake_6
 msgid "Thank you. I'll wait here."
-msgstr ""
+msgstr "谢谢。我这里等。"
 
 #: conversationlist_halvor_surprise.json:halvor_mlake_7
 msgid "Have you found really soft animal hair?"
@@ -21581,7 +21641,7 @@ msgstr ""
 #: conversationlist_halvor_surprise.json:halvor_chwood_7:0
 #: conversationlist_stoutford.json:kayla_4:1
 msgid "Not now."
-msgstr ""
+msgstr "不现在。"
 
 #: conversationlist_halvor_surprise.json:halvor_chwood_4
 msgid "Have you found a long bone?"
@@ -21597,7 +21657,7 @@ msgstr ""
 
 #: conversationlist_halvor_surprise.json:halvor_chwood_6:0
 msgid "Snakes? I hate snakes..."
-msgstr ""
+msgstr "蛇？我不喜欢蛇……"
 
 #: conversationlist_halvor_surprise.json:halvor_chwood_6:1
 msgid "Go ahead..."
@@ -21629,7 +21689,7 @@ msgstr ""
 
 #: conversationlist_halvor_surprise.json:halvor_chwood_9:1
 msgid "I have these."
-msgstr ""
+msgstr "我有它。"
 
 #: conversationlist_halvor_surprise.json:halvor_chwood_10
 msgid "I can't believe it! You really found them! Take this gold. It's all I have left."
@@ -21641,11 +21701,11 @@ msgstr ""
 
 #: conversationlist_halvor_surprise.json:halvor_chwood_11:0
 msgid "Kayla?"
-msgstr ""
+msgstr "Kayla？"
 
 #: conversationlist_halvor_surprise.json:halvor_chwood_12
 msgid "Yes. She's a dear friend of mine. She lives in Stoutford."
-msgstr ""
+msgstr "对。她是我的好朋友。她住在Stoutford。"
 
 #: conversationlist_halvor_surprise.json:halvor_chwood_13
 msgid "She makes clothes and boots, and asked me to get her some of the finest items in the world for her work."
@@ -21669,7 +21729,7 @@ msgstr ""
 
 #: conversationlist_stoutford.json:sign_stoutford_gate
 msgid "Welcome to Stoutford."
-msgstr ""
+msgstr "欢迎来到Stoutford。"
 
 #: conversationlist_stoutford.json:stoutford_bed_locked
 msgid "[The owner shouts] Hey! These beds aren't for strangers! Come here!"
@@ -21677,7 +21737,7 @@ msgstr ""
 
 #: conversationlist_stoutford.json:stoutford_gateguard_0
 msgid "What do you want kid?"
-msgstr ""
+msgstr "孩子，你想什么？"
 
 #: conversationlist_stoutford.json:stoutford_builder_0
 msgid "Sorry. I have work to do."
@@ -21697,7 +21757,7 @@ msgstr ""
 
 #: conversationlist_stoutford.json:stoutford_commoner_0
 msgid "Welcome to Stoutford kid."
-msgstr ""
+msgstr "欢迎孩子来到Stoutford。"
 
 #: conversationlist_stoutford.json:stoutford_farmer_jan_0
 msgid "Can't you see I'm busy? Go talk to my brother Jen, he's always slacking off in the field."
@@ -21709,7 +21769,7 @@ msgstr ""
 
 #: conversationlist_stoutford.json:kayla_1:2
 msgid "Are you a friend of Halvor?"
-msgstr ""
+msgstr "你是不是Halvor的朋友？"
 
 #: conversationlist_stoutford.json:kayla_2
 msgid "I'm Kayla. I love making clothes, shoes and boots."
@@ -21774,12 +21834,12 @@ msgstr ""
 #: conversationlist_stoutford.json:stoutford_gateguard_andor_0:0
 #: conversationlist_stoutford.json:stoutford_gateguard_andor_2:0
 msgid "What did he do here?"
-msgstr ""
+msgstr "他这里干了什么？"
 
 #: conversationlist_stoutford.json:stoutford_gateguard_andor_0:1
 #: conversationlist_stoutford.json:stoutford_gateguard_andor_1:0
 msgid "Do you know where he was going?"
-msgstr ""
+msgstr "你知道他去哪儿？"
 
 #: conversationlist_stoutford.json:stoutford_gateguard_andor_1
 msgid "I can't really tell. No known trouble at least. He headed straight to the tavern, and I didn't see him again before he left."
@@ -21905,12 +21965,12 @@ msgstr ""
 
 #: conversationlist_stoutford.json:stoutford_thief_rumblings20_1:0
 msgid "Help me do what?"
-msgstr ""
+msgstr "帮我干什么？"
 
 #: conversationlist_stoutford.json:stoutford_thief_rumblings20_1:1
 #: conversationlist_stoutford_combined.json:stoutford_widow_10:1
 msgid "Great!"
-msgstr ""
+msgstr "很好！"
 
 #: conversationlist_stoutford.json:stoutford_thief_rumblings20_2
 msgid "A kid that looked like you was here. He apparently did some business with the owner and the regulars."
@@ -21947,7 +22007,7 @@ msgstr ""
 #: conversationlist_stoutford.json:glasforn_initial_who_0:0
 #: conversationlist_stoutford.json:glasforn_initial_0:1
 msgid "Can I use one of your beds?"
-msgstr ""
+msgstr "我可以用一张你的床马？"
 
 #: conversationlist_stoutford.json:glasforn_initial_who_0:1
 #: conversationlist_stoutford.json:glasforn_initial_bed_0:1
@@ -21977,7 +22037,7 @@ msgstr ""
 
 #: conversationlist_stoutford.json:glasforn_rumblings20_2:0
 msgid "Why?"
-msgstr ""
+msgstr "为什么？"
 
 #: conversationlist_stoutford.json:glasforn_rumblings20_3
 msgid "Well, you see, I keep some beds for occasions like this one. You can use the one in the corner, near the painting, if you wish to rest."
@@ -22007,7 +22067,7 @@ msgstr ""
 #: conversationlist_stoutford.json:glasforn_rumblings20_6:0
 #: conversationlist_guynmart2_npc.json:guynmart_wise_170
 msgid "..."
-msgstr ""
+msgstr "……"
 
 #: conversationlist_stoutford.json:glasforn_rumblings30_0
 msgid "So kid, have you tried that bed? Our beds are the best!"
@@ -22031,7 +22091,7 @@ msgstr ""
 
 #: conversationlist_stoutford.json:glasforn_rumblings50_0:0
 msgid "I should kill you right now!"
-msgstr ""
+msgstr "我现在应该杀你！"
 
 #: conversationlist_stoutford.json:glasforn_rumblings50_0:1
 msgid "What was that beast?"
@@ -22265,7 +22325,7 @@ msgstr ""
 
 #: conversationlist_stoutford.json:kayla_3
 msgid "No. Sorry."
-msgstr ""
+msgstr "不。对不起。"
 
 #: conversationlist_stoutford.json:kayla_halvor_0
 msgid "Halvor? Yes! He's so nice! Do you know him?"
@@ -22378,7 +22438,7 @@ msgstr ""
 #: conversationlist_stoutford_combined.json:blornvale_thorns74_1:0
 #: conversationlist_stoutford_combined.json:key_wild21a:0
 msgid "Yes."
-msgstr ""
+msgstr "是。"
 
 #: conversationlist_graveyard1.json:graveyardtraveler_20
 msgid "That chest is something of a local legend. Been there for generations. They say it is sealed with magic and can only be opened with a special key, which hangs on the neck of one of the undead that roam in a cemetery directly south of here."
@@ -22618,7 +22678,7 @@ msgstr ""
 
 #: conversationlist_graveyard1.json:cithurn_00:1
 msgid "I'm looking for someone."
-msgstr ""
+msgstr "我正在找人。"
 
 #: conversationlist_graveyard1.json:cithurn_10
 msgid "The surrounding forest is usually quiet, but for some time now it has been under a monster invasion. I am surprised you managed to reach my home."
@@ -22648,11 +22708,11 @@ msgstr ""
 
 #: conversationlist_graveyard1.json:cithurn_40:0
 msgid "OK, I will help you."
-msgstr ""
+msgstr "好的，我打算帮助你。"
 
 #: conversationlist_graveyard1.json:cithurn_40:1
 msgid "Sorry, I cannot help you right now."
-msgstr ""
+msgstr "对不起，我现在不能帮助你。"
 
 #: conversationlist_graveyard1.json:cithurn_40:2
 msgid "How much \"investigating\" will you be doing in this proposed partnership?"
@@ -22696,7 +22756,7 @@ msgstr ""
 
 #: conversationlist_graveyard1.json:cithurncatmeow
 msgid "Meow ... Meow."
-msgstr ""
+msgstr "喵……喵。"
 
 #: conversationlist_graveyard1.json:cithurncatmeow:0
 msgid "[You scratch the cat behind the ear]"
@@ -22817,7 +22877,7 @@ msgstr ""
 
 #: conversationlist_graveyard1.json:graveyard_corpse2:0
 msgid "Small brain??"
-msgstr ""
+msgstr "小小的脑？"
 
 #: conversationlist_graveyard1.json:graveyardwall_1b
 msgid "An unearthly force prevents you from entering the cemetery."
@@ -22847,7 +22907,7 @@ msgstr ""
 
 #: conversationlist_graveyard1.json:cithurn_65:1
 msgid "Thanks. I need to get going."
-msgstr ""
+msgstr "谢谢。我需要出发。"
 
 #: conversationlist_graveyard1.json:cithurn_66
 msgid "I don't think so. It would need an experienced fighter to help with this problem."
@@ -22928,7 +22988,7 @@ msgstr ""
 
 #: conversationlist_graveyard1.json:aemens_0:1
 msgid "Sorry. I'll leave."
-msgstr ""
+msgstr "对不起。我离开。"
 
 #: conversationlist_graveyard1.json:aemens_0:2
 msgid "Sorry. I'm looking for my brother, Andor. He looks a bit like me. Have you seen him?"
@@ -23016,7 +23076,7 @@ msgstr ""
 
 #: conversationlist_graveyard1.json:taret_5:0
 msgid "Sorry. You are right."
-msgstr ""
+msgstr "对不起。你说得对。"
 
 #: conversationlist_graveyard1.json:throthaus_0
 msgid "Is there something I can help you with?"
@@ -23028,7 +23088,7 @@ msgstr ""
 
 #: conversationlist_graveyard1.json:throthaus_1:0
 msgid "What do you do?"
-msgstr ""
+msgstr "你工作是什么？"
 
 #: conversationlist_graveyard1.json:throthaus_2
 msgid "Like many folk in Loneford, I'm a farmer."
@@ -23057,7 +23117,7 @@ msgstr ""
 
 #: conversationlist_graveyard1.json:cithurn_120
 msgid "You again? What do you want this time?"
-msgstr ""
+msgstr "你再？你这次要什么？"
 
 #: conversationlist_graveyard1.json:cithurn_120:0
 msgid "I wish to apologize. I'm $playername. I come from a small village where people tend to leave their doors open. I didn't mean to be rude."
@@ -23166,7 +23226,7 @@ msgstr ""
 
 #: conversationlist_graveyard1.json:graveyardtraveler61:0
 msgid "OK. I'll go there now."
-msgstr ""
+msgstr "好的。我现在去那里。"
 
 #: conversationlist_graveyard1.json:algore_99c
 msgid "Hey kid! Stop waving that thing at me! If you want to talk to me, put it away first!"
@@ -23174,7 +23234,7 @@ msgstr ""
 
 #: conversationlist_graveyard1.json:algore_99d
 msgid "So where is it?"
-msgstr ""
+msgstr "它哪儿？"
 
 #: conversationlist_graveyard1.json:algore_99d:0
 msgid "I dropped it somewhere."
@@ -23182,7 +23242,7 @@ msgstr ""
 
 #: conversationlist_graveyard1.json:algore_99d:1
 msgid "I sold it."
-msgstr ""
+msgstr "我卖了它。"
 
 #: conversationlist_graveyard1.json:algore_99e
 msgid "Not too bright, are you kid? Perhaps you should go and pick it up again."
@@ -23271,7 +23331,7 @@ msgstr ""
 #: conversationlist_guynmart.json:guynmart_key_tower1
 #: conversationlist_guynmart.json:guynmart_key_tower1_10
 msgid "Hey! You can't go there!"
-msgstr ""
+msgstr "嘿！你不可能去那儿！"
 
 #: conversationlist_guynmart.json:guynmart_key_tower1_10:0
 msgid "I am on a mission for Lord Guynmart."
@@ -23378,14 +23438,16 @@ msgid ""
 "REST\n"
 "Do you want to rest here?"
 msgstr ""
+"休息\n"
+"你这里要休息？"
 
 #: conversationlist_guynmart.json:guynmart_s_tower_rest:0
 msgid "OK"
-msgstr ""
+msgstr "好的"
 
 #: conversationlist_guynmart.json:guynmart_s_tower_rest:1
 msgid "Cancel"
-msgstr ""
+msgstr "取消"
 
 #: conversationlist_guynmart.json:guynmart_s_tower_rest_20
 msgid "You close your eyes and almost immediately see people starving, with rats everywhere, chewing on the faces of the dead, and demons throwing their shackled human slaves into giant cauldrons of a boiling, foul smelling brew..."
@@ -23421,7 +23483,7 @@ msgstr ""
 
 #: conversationlist_guynmart.json:guynmart_s_gate1:1
 msgid "Close"
-msgstr ""
+msgstr "关闭"
 
 #: conversationlist_guynmart.json:guynmart_s_gate1:2
 msgid "Leave it unchanged"
@@ -23494,7 +23556,7 @@ msgstr ""
 
 #: conversationlist_guynmart_npc.json:guynmart_guard_guide_40:0
 msgid "Hey!"
-msgstr ""
+msgstr "嘿！"
 
 #: conversationlist_guynmart_npc.json:guynmart_gguard_20
 #: conversationlist_guynmart_npc.json:guynmart_gguard_220
@@ -23539,7 +23601,7 @@ msgstr ""
 #: conversationlist_guynmart_npc.json:guynmart_gguard_30:0
 #: conversationlist_guynmart_npc.json:guynmart_steward_46:0
 msgid "Wait!"
-msgstr ""
+msgstr "等吧！"
 
 #: conversationlist_guynmart_npc.json:guynmart_gguard_40
 msgid "I am standing around kicking my heels and answering stupid questions."
@@ -23565,7 +23627,7 @@ msgstr ""
 
 #: conversationlist_guynmart_npc.json:guynmart_gguard_60
 msgid "Hannah is Guynmart's daughter."
-msgstr ""
+msgstr "汉娜是Guynmart的女儿。"
 
 #: conversationlist_guynmart_npc.json:guynmart_gguard_60:1
 msgid "And Guynmart is...?"
@@ -23574,7 +23636,7 @@ msgstr ""
 #: conversationlist_guynmart_npc.json:guynmart_gguard_60:2
 #: conversationlist_guynmart_npc.json:guynmart_gguard_90:0
 msgid "Guynmart has a daughter?"
-msgstr ""
+msgstr "Guynmart有女儿？"
 
 #: conversationlist_guynmart_npc.json:guynmart_gguard_70
 msgid "Hannah knows every single plant in her garden. Nobody but herself and old Nuik may touch the plants."
@@ -23608,11 +23670,11 @@ msgstr ""
 #: conversationlist_guynmart_npc.json:guynmart_gguard_100:0
 #: conversationlist_guynmart_npc.json:guynmart_gguard_904:0
 msgid "Ah."
-msgstr ""
+msgstr "啊。"
 
 #: conversationlist_guynmart_npc.json:guynmart_gguard_100:1
 msgid "And who is Lovis?"
-msgstr ""
+msgstr "谁是Lovis？"
 
 #: conversationlist_guynmart_npc.json:guynmart_gguard_100:2
 msgid "This is getting boring."
@@ -23703,7 +23765,7 @@ msgstr ""
 #: conversationlist_guynmart_npc.json:guynmart_steward_48
 #: conversationlist_guynmart2_npc.json:guynmart_wise_172:0
 msgid "Yes?"
-msgstr ""
+msgstr "是？"
 
 #: conversationlist_guynmart_npc.json:guynmart_gguard_364
 msgid "Nothing. You don't seem to have enough money. Forget it."
@@ -23714,7 +23776,7 @@ msgstr ""
 #: conversationlist_stoutford_combined.json:blornvale_shop1_4:0
 #: conversationlist_stoutford_combined.json:erwyn_child_10
 msgid "Oh."
-msgstr ""
+msgstr "哦。"
 
 #: conversationlist_guynmart_npc.json:guynmart_gguard_370
 msgid "for 100 gold..."
@@ -23782,27 +23844,27 @@ msgstr ""
 
 #: conversationlist_guynmart_npc.json:guynmart_gguard_911
 msgid "...one..."
-msgstr ""
+msgstr "……一……"
 
 #: conversationlist_guynmart_npc.json:guynmart_gguard_912
 msgid "...two..."
-msgstr ""
+msgstr "……二……"
 
 #: conversationlist_guynmart_npc.json:guynmart_gguard_913
 msgid "...three..."
-msgstr ""
+msgstr "……三……"
 
 #: conversationlist_guynmart_npc.json:guynmart_gguard_914
 msgid "...four..."
-msgstr ""
+msgstr "……四……"
 
 #: conversationlist_guynmart_npc.json:guynmart_gguard_915
 msgid "...five..."
-msgstr ""
+msgstr "……五……"
 
 #: conversationlist_guynmart_npc.json:guynmart_gguard_916
 msgid "...six..."
-msgstr ""
+msgstr "……六……"
 
 #: conversationlist_guynmart_npc.json:guynmart_gguard_917
 msgid "...eh, now seven, I think..."
@@ -23810,11 +23872,11 @@ msgstr ""
 
 #: conversationlist_guynmart_npc.json:guynmart_gguard_918
 msgid "...eight..."
-msgstr ""
+msgstr "……八……"
 
 #: conversationlist_guynmart_npc.json:guynmart_gguard_919
 msgid "...nine..."
-msgstr ""
+msgstr "……九……"
 
 #: conversationlist_guynmart_npc.json:guynmart_gguard_930
 msgid "Hmm, you may have not enough money, but you have some nice things with you. I might give you a good price."
@@ -23850,7 +23912,7 @@ msgstr ""
 
 #: conversationlist_guynmart_npc.json:guynmart_player_20:0
 msgid "Of course I have."
-msgstr ""
+msgstr "当然我有。"
 
 #: conversationlist_guynmart_npc.json:guynmart_player_20:1
 msgid "I would never play for money."
@@ -23890,16 +23952,16 @@ msgstr ""
 
 #: conversationlist_guynmart_npc.json:guynmart_player_80_2:0
 msgid "Red"
-msgstr ""
+msgstr "红色的"
 
 #: conversationlist_guynmart_npc.json:guynmart_player_80_2:1
 msgid "Black"
-msgstr ""
+msgstr "黑色的"
 
 #: conversationlist_guynmart_npc.json:guynmart_player_80_2:2
 #: conversationlist_guynmart_npc.json:guynmart_player_80_2:3
 msgid "Blue"
-msgstr ""
+msgstr "蓝色的"
 
 #: conversationlist_guynmart_npc.json:guynmart_player_82
 msgid "Oh dear. Just Red or Black. Please try to remember. *Sigh*"
@@ -23907,7 +23969,7 @@ msgstr ""
 
 #: conversationlist_guynmart_npc.json:guynmart_player_82:0
 msgid "Yes. Sorry."
-msgstr ""
+msgstr "是。对不起。"
 
 #: conversationlist_guynmart_npc.json:guynmart_player_151
 msgid ""
@@ -24020,7 +24082,7 @@ msgstr ""
 #: conversationlist_guynmart_npc.json:guynmart_steward5_12
 #: conversationlist_guynmart_npc.json:guynmart_lovis2_12
 msgid "Hello $playername."
-msgstr ""
+msgstr "你好$playername。"
 
 #: conversationlist_guynmart_npc.json:guynmart_hannah2_14
 #: conversationlist_guynmart_npc.json:guynmart_lovis2_14
@@ -24144,11 +24206,11 @@ msgstr ""
 
 #: conversationlist_guynmart_npc.json:guynmart_rob_50:2
 msgid "Where is your father?"
-msgstr ""
+msgstr "你的爸爸在哪儿？"
 
 #: conversationlist_guynmart_npc.json:guynmart_rob_50:3
 msgid "Where is Hannah?"
-msgstr ""
+msgstr "汉娜在哪儿？"
 
 #: conversationlist_guynmart_npc.json:guynmart_rob_52
 msgid "No problem, see you later."
@@ -24164,7 +24226,7 @@ msgstr ""
 
 #: conversationlist_guynmart_npc.json:guynmart_rob_60:0
 msgid "And where is Hannah?"
-msgstr ""
+msgstr "汉娜在哪儿？"
 
 #: conversationlist_guynmart_npc.json:guynmart_rob_70
 msgid "My sister is not in her room. She is probably at the top of the tower again, watching for a sign of Lovis."
@@ -24198,7 +24260,7 @@ msgstr ""
 
 #: conversationlist_guynmart_npc.json:guynmart_rob3_10
 msgid "What shall we play now?"
-msgstr ""
+msgstr "我们现在应该玩什么？"
 
 #: conversationlist_guynmart_npc.json:guynmart_rob3_10:0
 msgid "I want to go to the dungeon."
@@ -24222,7 +24284,7 @@ msgstr ""
 
 #: conversationlist_guynmart_npc.json:guynmart_rob4_10
 msgid "Quick! Downstairs!"
-msgstr ""
+msgstr "快！下楼！"
 
 #: conversationlist_guynmart_npc.json:guynmart_servant_10
 msgid "What are you doing in my lords rooms?"
@@ -24274,7 +24336,7 @@ msgstr ""
 
 #: conversationlist_guynmart_npc.json:guynmart_maid_20:0
 msgid "Oh, sorry, I had better leave."
-msgstr ""
+msgstr "哦，对不起，我应该离开。"
 
 #: conversationlist_guynmart_npc.json:guynmart_maid_20:1
 msgid "I would like to see Lady Hannah. I heard she has some problems. Maybe I could help her."
@@ -24482,7 +24544,7 @@ msgstr ""
 
 #: conversationlist_guynmart_npc.json:guynmart_wizard_56:0
 msgid "Eleven what?"
-msgstr ""
+msgstr "十一个什么？"
 
 #: conversationlist_guynmart_npc.json:guynmart_wizard_58
 msgid "Eleven bonemeal potions of course. I need these potions for, eh, my work."
@@ -24525,7 +24587,7 @@ msgstr ""
 #: conversationlist_guynmart_npc.json:guynmart_steward_48:0
 #: conversationlist_guynmart_npc.json:guynmart_steward_50:1
 msgid "I would like to buy something to eat."
-msgstr ""
+msgstr "我要买食品。"
 
 #: conversationlist_guynmart_npc.json:guynmart_steward_20:1
 #: conversationlist_guynmart_npc.json:guynmart_steward_22:1
@@ -24560,7 +24622,7 @@ msgstr ""
 
 #: conversationlist_guynmart_npc.json:guynmart_steward_32:0
 msgid "Thank you. I will go upstairs."
-msgstr ""
+msgstr "谢谢。我去上楼。"
 
 #: conversationlist_guynmart_npc.json:guynmart_steward_40
 msgid "You have a message for our Lord?"
@@ -24622,7 +24684,7 @@ msgstr ""
 #: conversationlist_stoutford_combined.json:berbane_110:0
 #: conversationlist_stoutford_combined.json:blornvale_thorns72_90:0
 msgid "But..."
-msgstr ""
+msgstr "可是……"
 
 #: conversationlist_guynmart_npc.json:guynmart_steward3_50
 msgid "Olav! Come Here!"
@@ -24638,7 +24700,7 @@ msgstr ""
 
 #: conversationlist_guynmart_npc.json:guynmart_steward4_12
 msgid "You again!"
-msgstr ""
+msgstr "你再！"
 
 #: conversationlist_guynmart_npc.json:guynmart_steward4_12:0
 msgid "Yes, me. And I know what you have done! I talked to Norgothla in the woods and found Lord Guynmart and Lovis here in the dungeons."
@@ -24886,7 +24948,7 @@ msgstr ""
 
 #: conversationlist_guynmart_npc.json:guynmart_cook_36:0
 msgid "Many thanks. Bye."
-msgstr ""
+msgstr "谢谢。再见。"
 
 #: conversationlist_guynmart_npc.json:guynmart_cook_36:2
 msgid "Could I also buy some provisions?"
@@ -25125,11 +25187,11 @@ msgstr ""
 
 #: conversationlist_guynmart_npc.json:guynmart_lovis_30:0
 msgid "Here, I should give you this."
-msgstr ""
+msgstr "我应该给你这。"
 
 #: conversationlist_guynmart_npc.json:guynmart_lovis_30:1
 msgid "Oh dear - I forgot to bring your flute!"
-msgstr ""
+msgstr "我忘记带你的长笛！"
 
 #: conversationlist_guynmart_npc.json:guynmart_lovis_40
 msgid "My flute! How I have missed it! I believe you now."
@@ -25429,7 +25491,7 @@ msgstr ""
 
 #: conversationlist_guynmart_npc.json:guynmart_12:0
 msgid "A friend."
-msgstr ""
+msgstr "一个朋友。"
 
 #: conversationlist_guynmart_npc.json:guynmart_20
 msgid "Good. At last. Go and bring Norgothla here."
@@ -25471,7 +25533,7 @@ msgstr ""
 
 #: conversationlist_guynmart_npc.json:guynmart_110
 msgid "YOU AGAIN!"
-msgstr ""
+msgstr "你再！"
 
 #: conversationlist_guynmart_npc.json:guynmart_110:0
 msgid "Yikes! The steward!"
@@ -25491,7 +25553,7 @@ msgstr ""
 
 #: conversationlist_guynmart_npc.json:guynmart_herold_10
 msgid "-"
-msgstr ""
+msgstr "-"
 
 #: conversationlist_guynmart_npc.json:guynmart_herold_10:0
 msgid "You don't talk too much, do you?"
@@ -25507,7 +25569,7 @@ msgstr ""
 
 #: conversationlist_guynmart_npc.json:guynmart_s_herold_12:0
 msgid "$playername, please."
-msgstr ""
+msgstr "$playername，请。"
 
 #: conversationlist_guynmart_npc.json:guynmart_s_herold_20
 msgid "[Whispering] You should talk to Lovis again."
@@ -25600,14 +25662,16 @@ msgid ""
 "North: Guynmart Castle\n"
 "Northwest: Feygard"
 msgstr ""
+"北：Guynmart城堡\n"
+"西北：Feygard"
 
 #: conversationlist_guynmart2.json:guynmart_s_wood1_castle
 msgid "North: Guynmart Castle"
-msgstr ""
+msgstr "北：Guynmart城堡"
 
 #: conversationlist_guynmart2.json:guynmart_s_wood5_castle
 msgid "South east: Guynmart Castle"
-msgstr ""
+msgstr "东南：Guynmart城堡"
 
 #: conversationlist_guynmart2.json:guynmart_s_lake_1
 msgid "This raft does not look very trustworthy."
@@ -25766,7 +25830,7 @@ msgstr ""
 #: conversationlist_guynmart2_npc.json:guynmart_farmer_90:0
 #: conversationlist_guynmart2_npc.json:guynmart_farmer_110:0
 msgid "Great. Thank you."
-msgstr ""
+msgstr "很好。谢谢。"
 
 #: conversationlist_guynmart2_npc.json:guynmart_farmer_100
 msgid "Hi! Any news from Guynmart castle?"
@@ -25934,7 +25998,7 @@ msgstr ""
 
 #: conversationlist_guynmart2_npc.json:guynmart_rob5_55
 msgid "This is strange!"
-msgstr ""
+msgstr "这是奇怪！"
 
 #: conversationlist_guynmart2_npc.json:guynmart_rob5_59
 msgid "Back to normal."
@@ -26032,7 +26096,7 @@ msgstr ""
 
 #: conversationlist_guynmart2_npc.json:guynmart_child_22
 msgid "Great - thank you!"
-msgstr ""
+msgstr "非常好——谢谢你！"
 
 #: conversationlist_guynmart2_npc.json:guynmart_child_22:0
 msgid "Much better. Now tell me about your marbles."
@@ -26158,7 +26222,7 @@ msgstr ""
 
 #: conversationlist_guynmart2_npc.json:guynmart_wise_118:1
 msgid "I could give you 3 eggs."
-msgstr ""
+msgstr "我能给你3个鸡蛋。"
 
 #: conversationlist_guynmart2_npc.json:guynmart_wise_118:2
 msgid "I could spare bread, some cheese and a bottle of red wine."
@@ -26182,7 +26246,7 @@ msgstr ""
 
 #: conversationlist_guynmart2_npc.json:guynmart_wise_122:0
 msgid "Sorry, I really must go now."
-msgstr ""
+msgstr "对不起，我现在必须去。"
 
 #: conversationlist_guynmart2_npc.json:guynmart_wise_122:1
 msgid "Just say what you would like. What can I do for you?"
@@ -26239,7 +26303,7 @@ msgstr ""
 
 #: conversationlist_guynmart2_npc.json:guynmart_wise_174
 msgid "now..."
-msgstr ""
+msgstr "现在……"
 
 #: conversationlist_guynmart2_npc.json:guynmart_wise_174:0
 msgid "Oh dear! Just say what is on your mind. What's up?"
@@ -26251,7 +26315,7 @@ msgstr ""
 
 #: conversationlist_guynmart2_npc.json:guynmart_wise_180:0
 msgid "Oh?"
-msgstr ""
+msgstr "哦？"
 
 #: conversationlist_guynmart2_npc.json:guynmart_wise_182
 msgid "Their Cheddar is a dream! But they sell it only when you explicitly ask for it."
@@ -26267,7 +26331,7 @@ msgstr ""
 
 #: conversationlist_guynmart2_npc.json:guynmart_wise_182:2
 msgid "Where is Charwood?"
-msgstr ""
+msgstr "Charwood在哪儿？"
 
 #: conversationlist_guynmart2_npc.json:guynmart_wise_190
 msgid "Great! I will wait for your return."
@@ -26279,7 +26343,7 @@ msgstr ""
 
 #: conversationlist_guynmart2_npc.json:guynmart_wise_202
 msgid "[Eating]"
-msgstr ""
+msgstr "【正在吃】"
 
 #: conversationlist_guynmart2_npc.json:guynmart_wise_900
 msgid "It was nice to talk to you. Come again, as often as you like!"
@@ -26297,7 +26361,7 @@ msgstr ""
 #: conversationlist_trader_teksin.json:teksin50:2
 #: conversationlist_trader_teksin.json:teksin60:0
 msgid "How do I get to Remgard?"
-msgstr ""
+msgstr "怎么走Remgard？"
 
 #: conversationlist_trader_teksin.json:teksin11:1
 msgid "What can you tell me about Remgard?"
@@ -26469,7 +26533,7 @@ msgstr ""
 
 #: conversationlist_stoutford_combined.json:cadoren_4:1
 msgid "Where is Blackwater mountain?"
-msgstr ""
+msgstr "黑水山在哪儿？"
 
 #: conversationlist_stoutford_combined.json:cadoren_4:2
 msgid "Why are monster attacks increasing?"
@@ -26481,7 +26545,7 @@ msgstr ""
 
 #: conversationlist_stoutford_combined.json:cornith_0
 msgid "Hello, welcome to my shop."
-msgstr ""
+msgstr "你好，欢迎来到我的商店。"
 
 #: conversationlist_stoutford_combined.json:cornith_0:0
 #: conversationlist_stoutford_combined.json:odirath_1:1
@@ -26507,7 +26571,7 @@ msgstr ""
 #: conversationlist_stoutford_combined.json:cornith_2:0
 #: conversationlist_stoutford_combined.json:tahalendor_rumblings10x_1:0
 msgid "OK. Thanks."
-msgstr ""
+msgstr "好的。谢谢。"
 
 #: conversationlist_stoutford_combined.json:stoutford_widow_1
 msgid "Oh. No one asked before you. I didn't even think about it."
@@ -26716,7 +26780,7 @@ msgstr ""
 
 #: conversationlist_stoutford_combined.json:caeda_root10_6a:0
 msgid "Had?"
-msgstr ""
+msgstr "有过？"
 
 #: conversationlist_stoutford_combined.json:caeda_root10_7
 msgid "Yes. Unfortunately I did not pay enough attention to where I was going when I was there last time, and took a wrong turn."
@@ -26781,7 +26845,7 @@ msgstr ""
 
 #: conversationlist_stoutford_combined.json:lakecave2_troll_14:3
 msgid "I will leave now."
-msgstr ""
+msgstr "我现在离开。"
 
 #: conversationlist_stoutford_combined.json:lakecave2_troll_20
 msgid "No. If your brother looks like you then I have never seen him, and if I had then I would have eaten him! Now go!"
@@ -26859,7 +26923,7 @@ msgstr ""
 
 #: conversationlist_stoutford_combined.json:lakecave2_troll_70:0
 msgid "Of course you are."
-msgstr ""
+msgstr "当然。"
 
 #: conversationlist_stoutford_combined.json:lakecave2_troll_90
 msgid "Outrageous! I will put you in my pantry now."
@@ -26952,7 +27016,7 @@ msgstr ""
 
 #: conversationlist_stoutford_combined.json:caeda_root50_4:0
 msgid "Thank you. I will leave now."
-msgstr ""
+msgstr "谢谢你。我现在离开。"
 
 #: conversationlist_stoutford_combined.json:caeda_60
 msgid "Oh, it is you again. Thank you for all you have done."
@@ -26988,7 +27052,7 @@ msgstr ""
 
 #: conversationlist_stoutford_combined.json:remgard_farmer2_roots10_0:1
 msgid "Caeda?"
-msgstr ""
+msgstr "Caeda？"
 
 #: conversationlist_stoutford_combined.json:remgard_farmer2_roots10_1
 msgid "I don't know where she might be at the moment. And I have work to do now, so excuse me."
@@ -27012,11 +27076,11 @@ msgstr ""
 
 #: conversationlist_stoutford_combined.json:stoutford_widow_roots4045_1:0
 msgid "Too bad."
-msgstr ""
+msgstr "太坏。"
 
 #: conversationlist_stoutford_combined.json:stoutford_widow_roots4045_1:1
 msgid "Oh. Why is that?"
-msgstr ""
+msgstr "哦。为什么？"
 
 #: conversationlist_stoutford_combined.json:stoutford_widow_roots10_2
 msgid ""
@@ -27116,11 +27180,11 @@ msgstr ""
 
 #: conversationlist_stoutford_combined.json:stoutford_widow_roots4045_8:0
 msgid "Sorry, I have to go now."
-msgstr ""
+msgstr "对不起，我现在必须离开。"
 
 #: conversationlist_stoutford_combined.json:stoutford_widow_roots4045_8:1
 msgid "Who are \"they\"?"
-msgstr ""
+msgstr "“他们”是谁？"
 
 #: conversationlist_stoutford_combined.json:stoutford_widow_roots4045_9
 msgid "Our priest, Tahalendor, was convinced by my uncle, Blornvale, my father's own brother."
@@ -27283,7 +27347,7 @@ msgstr ""
 
 #: conversationlist_stoutford_combined.json:stoutford_widow_thorns30_0:0
 msgid "Thank you. What do you have in mind now?"
-msgstr ""
+msgstr "谢谢你。你现在认为？"
 
 #: conversationlist_stoutford_combined.json:stoutford_widow_thorns30_1
 msgid "Isn't it obvious?"
@@ -27399,7 +27463,7 @@ msgstr ""
 
 #: conversationlist_stoutford_combined.json:stoutford_widow2_2:1
 msgid "I have to leave now - bye."
-msgstr ""
+msgstr "我现在需要离开－再见。"
 
 #: conversationlist_stoutford_combined.json:stoutford_widow2_3
 msgid ""
@@ -27759,7 +27823,7 @@ msgstr ""
 #: conversationlist_stoutford_combined.json:odirath_1_2:0
 #: conversationlist_stoutford_combined.json:odirath_1_4:3
 msgid "How do I get to Blackwater mountain?"
-msgstr ""
+msgstr "怎么走黑水山？"
 
 #: conversationlist_stoutford_combined.json:odirath_1_2:1
 msgid "Monsters?"
@@ -27807,7 +27871,7 @@ msgstr ""
 
 #: conversationlist_stoutford_combined.json:odirath_2_1:0
 msgid "Did you already look for her in the castle?"
-msgstr ""
+msgstr "你已经里城堡找她吗？"
 
 #: conversationlist_stoutford_combined.json:odirath_2_2
 msgid "You cannot go to the castle anymore, do not you know that? At least not if you want to continue living."
@@ -28094,7 +28158,7 @@ msgstr ""
 
 #: conversationlist_stoutford_combined.json:yolgen_surroundings_flagstone_4:1
 msgid "Where do you think they came from?"
-msgstr ""
+msgstr "你认为他们从哪里来？"
 
 #: conversationlist_stoutford_combined.json:yolgen_reinforcements_2
 msgid "Bah, why did you ask then anyway?"
@@ -28568,7 +28632,7 @@ msgstr ""
 
 #: conversationlist_stoutford_combined.json:berbane_100:0
 msgid "...?"
-msgstr ""
+msgstr "……？"
 
 #: conversationlist_stoutford_combined.json:berbane_102
 msgid "[Loud voice] Pay attention and listen everybody! The castle is free! The trembling is over!"
@@ -28576,7 +28640,7 @@ msgstr ""
 
 #: conversationlist_stoutford_combined.json:berbane_102:0
 msgid "...??"
-msgstr ""
+msgstr "……？？"
 
 #: conversationlist_stoutford_combined.json:berbane_110
 msgid "[Loud voice] My trainee and I, we were in the castle. I demonstrated how to fight properly. Lord Erwyn himself was an especially good demonstration object."
@@ -28719,7 +28783,7 @@ msgstr ""
 
 #: conversationlist_stoutford_combined.json:stn_boralla_12
 msgid "I am ready!"
-msgstr ""
+msgstr "我准备好！"
 
 #: conversationlist_stoutford_combined.json:stn_boralla_12:0
 msgid ""
@@ -28733,7 +28797,7 @@ msgstr ""
 
 #: conversationlist_stoutford_combined.json:stn_boralla1:0
 msgid "OK. 1, 2, 3..."
-msgstr ""
+msgstr "好的。一、二、三……"
 
 #: conversationlist_stoutford_combined.json:stn_boralla2
 msgid "Hey, you found me again! Once more?"
@@ -28749,7 +28813,7 @@ msgstr ""
 
 #: conversationlist_stoutford_combined.json:stn_boralla3:0
 msgid "OK. 1, 2, 3, 4..."
-msgstr ""
+msgstr "好的。一、二、三、四……"
 
 #: conversationlist_stoutford_combined.json:stn_boralla4
 msgid "Are you sure you didn't cheat this time?"
@@ -29010,7 +29074,7 @@ msgstr ""
 
 #: conversationlist_stoutford_combined.json:stn_colonel_44:0
 msgid "May I ask what you are doing here?"
-msgstr ""
+msgstr "请问你这里干什么？"
 
 #: conversationlist_stoutford_combined.json:stn_colonel_50
 msgid "Isn't that obvious? I am enjoying my tea here. It is a splendid place. I really like it here."
@@ -29117,7 +29181,7 @@ msgstr ""
 
 #: conversationlist_stoutford_combined.json:stn_colonel_82:0
 msgid "Five?"
-msgstr ""
+msgstr "五个？"
 
 #: conversationlist_stoutford_combined.json:stn_colonel_82:1
 msgid "Well, It will be interesting."
@@ -29185,7 +29249,7 @@ msgstr ""
 
 #: conversationlist_stoutford_combined.json:stn_colonel_130
 msgid "Well, get ready now."
-msgstr ""
+msgstr "现在准备吧。"
 
 #: conversationlist_stoutford_combined.json:stn_colonel_130:0
 msgid "Come on."
@@ -29197,7 +29261,7 @@ msgstr ""
 
 #: conversationlist_stoutford_combined.json:stn_colonel_131:0
 msgid "Mikhail! You are here?"
-msgstr ""
+msgstr "米哈伊尔！你在这里？"
 
 #: conversationlist_stoutford_combined.json:stn_colonel_131_2
 msgid "We need you back home. Andor is back since a long time ago, and we have our hands full trying to control the rat plague."
@@ -29279,7 +29343,7 @@ msgstr ""
 
 #: conversationlist_stoutford_combined.json:stn_colonel_140:0
 msgid "What is it this time?"
-msgstr ""
+msgstr "它这次是什么？"
 
 #: conversationlist_stoutford_combined.json:stn_colonel_141
 msgid "This one looks like a little dragon."
@@ -29343,7 +29407,7 @@ msgstr ""
 
 #: conversationlist_stoutford_combined.json:stn_colonel_220:0
 msgid "Me too."
-msgstr ""
+msgstr "我也。"
 
 #: conversationlist_stoutford_combined.json:stn_colonel_230
 msgid "I did not expect you to win against all of my fighters, but it's good to know that for sure. Thanks for trying it out."
@@ -29427,7 +29491,7 @@ msgstr ""
 
 #: conversationlist_stoutford_combined.json:key_wild21a
 msgid "Do you know the password?"
-msgstr ""
+msgstr "你知道密码吗？"
 
 #: conversationlist_stoutford_combined.json:key_wild21a_10
 msgid "OK, then you may pass."
@@ -29551,7 +29615,7 @@ msgstr ""
 
 #: conversationlist_bugfix_0_7_4.json:lookout_up_1:0
 msgid "Watch the bird."
-msgstr ""
+msgstr "看鸟。"
 
 #: conversationlist_bugfix_0_7_4.json:lookout_up_2
 msgid "Suddenly, the bird folds its wings and dives. You realize that it is not a hawk, but a falcon."
@@ -29600,7 +29664,7 @@ msgstr ""
 
 #: conversationlist_bugfix_0_7_4.json:lookout_northwest:0
 msgid "Watch the people."
-msgstr ""
+msgstr "看人。"
 
 #: conversationlist_bugfix_0_7_4.json:lookout_northwest_1
 msgid "You see two women that appear to be arguing."
@@ -29831,19 +29895,19 @@ msgstr ""
 
 #: itemcategories_1.json:hnd_cloth
 msgid "Gloves, cloth"
-msgstr ""
+msgstr "手套，布料"
 
 #: itemcategories_1.json:hnd_lthr
 msgid "Gloves, leather"
-msgstr ""
+msgstr "手套，皮革"
 
 #: itemcategories_1.json:hnd_mtl_li
 msgid "Gloves, metal (light)"
-msgstr ""
+msgstr "手套，金属（轻质）"
 
 #: itemcategories_1.json:hnd_mtl_hv
 msgid "Gloves, metal (heavy)"
-msgstr ""
+msgstr "手套，金属（重质）"
 
 #: itemcategories_1.json:feet_clth
 msgid "Footwear, cloth"
@@ -29863,11 +29927,11 @@ msgstr ""
 
 #: itemcategories_1.json:neck
 msgid "Necklace"
-msgstr ""
+msgstr "项链"
 
 #: itemcategories_1.json:ring
 msgid "Ring"
-msgstr ""
+msgstr "戒指"
 
 #: itemcategories_1.json:pot
 msgid "Potion"
@@ -29875,11 +29939,11 @@ msgstr ""
 
 #: itemcategories_1.json:food
 msgid "Food"
-msgstr ""
+msgstr "食品"
 
 #: itemcategories_1.json:drink
 msgid "Drink"
-msgstr ""
+msgstr "饮料"
 
 #: itemcategories_1.json:gem
 msgid "Gem"
@@ -29899,7 +29963,7 @@ msgstr ""
 
 #: itemcategories_1.json:money
 msgid "Money"
-msgstr ""
+msgstr "钱"
 
 #: itemcategories_1.json:other
 msgid "Other"
@@ -29985,7 +30049,7 @@ msgstr ""
 
 #: itemlist_armour.json:shirt1
 msgid "Cloth shirt"
-msgstr ""
+msgstr "布料衬衫"
 
 #: itemlist_armour.json:shirt2
 msgid "Fine shirt"
@@ -29997,7 +30061,7 @@ msgstr ""
 
 #: itemlist_armour.json:armor1
 msgid "Leather armour"
-msgstr ""
+msgstr "皮革盔甲"
 
 #: itemlist_armour.json:armor2
 msgid "Superior leather armour"
@@ -30013,7 +30077,7 @@ msgstr ""
 
 #: itemlist_armour.json:hat1
 msgid "Green hat"
-msgstr ""
+msgstr "绿色的帽子"
 
 #: itemlist_armour.json:hat2
 msgid "Fine green hat"
@@ -30025,11 +30089,11 @@ msgstr ""
 
 #: itemlist_armour.json:hat4
 msgid "Leather cap"
-msgstr ""
+msgstr "皮革帽"
 
 #: itemlist_armour.json:gloves1
 msgid "Leather gloves"
-msgstr ""
+msgstr "皮革手套"
 
 #: itemlist_armour.json:gloves2
 msgid "Fine leather gloves"
@@ -30137,7 +30201,7 @@ msgstr ""
 
 #: itemlist_junk.json:rock
 msgid "Small rock"
-msgstr ""
+msgstr "小的岩"
 
 #: itemlist_junk.json:gem1
 msgid "Glass gem"
@@ -30161,15 +30225,15 @@ msgstr ""
 
 #: itemlist_food.json:apple_green
 msgid "Green apple"
-msgstr ""
+msgstr "绿苹果"
 
 #: itemlist_food.json:apple_red
 msgid "Red apple"
-msgstr ""
+msgstr "红苹果"
 
 #: itemlist_food.json:meat
 msgid "Meat"
-msgstr ""
+msgstr "肉"
 
 #: itemlist_food.json:meat_cooked
 msgid "Cooked meat"
@@ -30177,7 +30241,7 @@ msgstr ""
 
 #: itemlist_food.json:strawberry
 msgid "Strawberry"
-msgstr ""
+msgstr "草莓"
 
 #: itemlist_food.json:carrot
 msgid "Carrot"
@@ -30185,7 +30249,7 @@ msgstr ""
 
 #: itemlist_food.json:bread
 msgid "Bread"
-msgstr ""
+msgstr "面包"
 
 #: itemlist_food.json:mushroom
 msgid "Mushroom"
@@ -30193,11 +30257,11 @@ msgstr ""
 
 #: itemlist_food.json:pear
 msgid "Pear"
-msgstr ""
+msgstr "梨"
 
 #: itemlist_food.json:eggs
 msgid "Eggs"
-msgstr ""
+msgstr "鸡蛋"
 
 #: itemlist_food.json:radish
 msgid "Radish"
@@ -30249,7 +30313,7 @@ msgstr ""
 
 #: itemlist_potions.json:milk
 msgid "Milk"
-msgstr ""
+msgstr "牛奶"
 
 #: itemlist_potions.json:bonemeal_potion
 msgid "Bonemeal potion"
@@ -30257,7 +30321,7 @@ msgstr ""
 
 #: itemlist_animal.json:hair
 msgid "Animal hair"
-msgstr ""
+msgstr "动物的头发"
 
 #: itemlist_animal.json:insectwing
 msgid "Insect wing"
@@ -30265,7 +30329,7 @@ msgstr ""
 
 #: itemlist_animal.json:bone
 msgid "Bone"
-msgstr ""
+msgstr "骨头"
 
 #: itemlist_animal.json:claws
 msgid "Claws"
@@ -30281,7 +30345,7 @@ msgstr ""
 
 #: itemlist_animal.json:rat_tail
 msgid "Rat tail"
-msgstr ""
+msgstr "老鼠的尾"
 
 #: itemlist_quest.json:tail_caverat
 msgid "Cave rat tail"
@@ -30289,19 +30353,19 @@ msgstr ""
 
 #: itemlist_quest.json:tail_trainingrat
 msgid "Small rat tail"
-msgstr ""
+msgstr "小老鼠的尾"
 
 #: itemlist_quest.json:ring_mikhail
 msgid "Mikhail's ring"
-msgstr ""
+msgstr "米哈伊尔的戒指"
 
 #: itemlist_quest.json:neck_irogotu
 msgid "Irogotu's necklace"
-msgstr ""
+msgstr "伊罗哥图的项链"
 
 #: itemlist_quest.json:ring_gandir
 msgid "Gandir's ring"
-msgstr ""
+msgstr "甘迪尔的戒指"
 
 #: itemlist_quest.json:dagger_venom
 msgid "Venomous Dagger"
@@ -30310,7 +30374,7 @@ msgstr ""
 #: itemlist_quest.json:key_luthor
 #: questlist.json:bucus
 msgid "Key of Luthor"
-msgstr ""
+msgstr "Luthor的钥匙"
 
 #: itemlist_quest.json:calomyran_secrets
 #: questlist.json:calomyran
@@ -30455,11 +30519,11 @@ msgstr ""
 
 #: itemlist_v069.json:bwm_leather_armour
 msgid "Blackwater leather armour"
-msgstr ""
+msgstr "黑水的皮盔甲"
 
 #: itemlist_v069.json:bwm_leather_cap
 msgid "Blackwater leather cap"
-msgstr ""
+msgstr "黑水的皮革帽"
 
 #: itemlist_v069.json:bwm_combat_ring
 msgid "Blackwater ring of combat"
@@ -31196,7 +31260,7 @@ msgstr ""
 
 #: itemlist_v070.json:clmr_serp
 msgid "Serpent's fang"
-msgstr ""
+msgstr "蛇的牙"
 
 #: itemlist_v070.json:clmr_wrld
 msgid "Claymore of the warlord"
@@ -31212,7 +31276,7 @@ msgstr ""
 
 #: itemlist_v070.json:xulviir
 msgid "Xul'viir"
-msgstr ""
+msgstr "Xul'viir"
 
 #: itemlist_v070.json:club_bld
 msgid "Spiked club of bleeding"
@@ -31316,7 +31380,7 @@ msgstr ""
 
 #: itemlist_v070.json:drink_applej
 msgid "Apple juice"
-msgstr ""
+msgstr "苹汁"
 
 #: itemlist_v070.json:drink_prunej
 msgid "Prune juice"
@@ -31460,7 +31524,7 @@ msgstr ""
 
 #: itemlist_v070_questitems.json:thukuzun
 msgid "Thukuzun bone"
-msgstr ""
+msgstr "图库尊的骨头"
 
 #: itemlist_v070_questitems.json:xulviir0
 msgid "Broken sword"
@@ -31600,7 +31664,7 @@ msgstr ""
 
 #: itemlist_guynmart.json:guynmart_lunch
 msgid "Hannah's lunch"
-msgstr ""
+msgstr "汉娜的午饭"
 
 #: itemlist_guynmart.json:ring_shadow1
 msgid "Ring of far lesser Shadow"
@@ -31676,7 +31740,7 @@ msgstr ""
 
 #: itemlist_trader_teksin.json:bwm_gloves
 msgid "Blackwater gloves"
-msgstr ""
+msgstr "黑水手套"
 
 #: itemlist_stoutford_combined.json:ferm-garlic
 msgid "Fermented garlic"
@@ -31954,7 +32018,7 @@ msgstr ""
 
 #: monsterlist_crossglen_animals.json:tiny_rat
 msgid "Tiny rat"
-msgstr ""
+msgstr "小小的老鼠"
 
 #: monsterlist_crossglen_animals.json:cave_rat
 #: monsterlist_v069_monsters.json:puny_caverat
@@ -32001,7 +32065,7 @@ msgstr ""
 
 #: monsterlist_crossglen_animals.json:forest_snake
 msgid "Forest snake"
-msgstr ""
+msgstr "树木蛇"
 
 #: monsterlist_crossglen_animals.json:young_cave_snake
 msgid "Young cave snake"
@@ -32061,21 +32125,21 @@ msgstr ""
 
 #: monsterlist_crossglen_animals.json:irogotu
 msgid "Irogotu"
-msgstr ""
+msgstr "伊罗哥图"
 
 #: monsterlist_crossglen_npcs.json:mikhail
 #: monsterlist_stoutford_combined.json:stn_colonel_mons3
 #: monsterlist_stoutford_combined.json:stn_colonel_mons3b
 msgid "Mikhail"
-msgstr ""
+msgstr "米哈伊尔"
 
 #: monsterlist_crossglen_npcs.json:leta
 msgid "Leta"
-msgstr ""
+msgstr "莱塔"
 
 #: monsterlist_crossglen_npcs.json:audir
 msgid "Audir"
-msgstr ""
+msgstr "奥迪"
 
 #: monsterlist_crossglen_npcs.json:arambold
 msgid "Arambold"
@@ -32083,7 +32147,7 @@ msgstr ""
 
 #: monsterlist_crossglen_npcs.json:tharal
 msgid "Tharal"
-msgstr ""
+msgstr "Tharal"
 
 #: monsterlist_crossglen_npcs.json:drunk
 msgid "Drunk"
@@ -32091,15 +32155,15 @@ msgstr ""
 
 #: monsterlist_crossglen_npcs.json:mara
 msgid "Mara"
-msgstr ""
+msgstr "玛拉"
 
 #: monsterlist_crossglen_npcs.json:gruil
 msgid "Gruil"
-msgstr ""
+msgstr "格鲁尔"
 
 #: monsterlist_crossglen_npcs.json:leonid
 msgid "Leonid"
-msgstr ""
+msgstr "狮子座的"
 
 #: monsterlist_crossglen_npcs.json:farmer
 #: monsterlist_v0610_npcs1.json:loneford_farmer0
@@ -32119,7 +32183,7 @@ msgstr ""
 
 #: monsterlist_crossglen_npcs.json:odair
 msgid "Odair"
-msgstr ""
+msgstr "欧戴尔"
 
 #: monsterlist_crossglen_npcs.json:jan
 #: monsterlist_stoutford.json:stoutford_farmer_jan
@@ -32151,7 +32215,7 @@ msgstr ""
 #: monsterlist_guynmart.json:guynmart_skeleton2
 #: monsterlist_stoutford_combined.json:stn_colonel_mons2
 msgid "Skeleton"
-msgstr ""
+msgstr "骷髅"
 
 #: monsterlist_fallhaven_animals.json:guardian_of_the_catacombs
 msgid "Guardian of the catacombs"
@@ -32246,7 +32310,7 @@ msgstr ""
 #: monsterlist_fallhaven_npcs.json:old_man
 #: monsterlist_guynmart.json:guynmart_wise
 msgid "Old man"
-msgstr ""
+msgstr "老男"
 
 #: monsterlist_fallhaven_npcs.json:nocmar
 msgid "Nocmar"
@@ -32356,7 +32420,7 @@ msgstr ""
 
 #: monsterlist_wilderness.json:wolf
 msgid "Wolf"
-msgstr ""
+msgstr "狼"
 
 #: monsterlist_wilderness.json:forest_serpent
 msgid "Forest serpent"
@@ -32477,7 +32541,7 @@ msgstr ""
 
 #: monsterlist_v068_npcs.json:umar
 msgid "Umar"
-msgstr ""
+msgstr "奥马尔"
 
 #: monsterlist_v068_npcs.json:kaori
 msgid "Kaori"
@@ -32619,7 +32683,7 @@ msgstr ""
 
 #: monsterlist_v069_monsters.json:mountain_wolf
 msgid "Mountain wolf"
-msgstr ""
+msgstr "山狼"
 
 #: monsterlist_v069_monsters.json:hatchling_white_wyrm
 msgid "Hatchling white wyrm"
@@ -32884,7 +32948,7 @@ msgstr ""
 
 #: monsterlist_v069_npcs.json:blackwater_pupil
 msgid "Blackwater pupil"
-msgstr ""
+msgstr "黑水的学生"
 
 #: monsterlist_v069_npcs.json:laede
 msgid "Laede"
@@ -32973,7 +33037,7 @@ msgstr ""
 
 #: monsterlist_v0610_monsters1.json:grass_snake
 msgid "Grasslands snake"
-msgstr ""
+msgstr "草地的蛇"
 
 #: monsterlist_v0610_monsters1.json:grass_snake2
 msgid "Tough grasslands snake"
@@ -32995,7 +33059,7 @@ msgstr ""
 #: monsterlist_v070_lodarmaze.json:vermin0
 #: monsterlist_v070_lodarmaze.json:vermin1
 msgid "Rat"
-msgstr ""
+msgstr "老鼠"
 
 #: monsterlist_v0610_monsters1.json:fieldwasp_0
 #: monsterlist_v0610_monsters1.json:fieldwasp_1
@@ -33041,7 +33105,7 @@ msgstr ""
 #: monsterlist_graveyard1.json:cithurnsheep
 #: monsterlist_guynmart.json:guynmart_sheep
 msgid "Sheep"
-msgstr ""
+msgstr "羊"
 
 #: monsterlist_v0610_npcs1.json:ailshara
 msgid "Ailshara"
@@ -33133,7 +33197,7 @@ msgstr ""
 
 #: monsterlist_v0610_npcs1.json:puny_warehouserat
 msgid "Warehouse rat"
-msgstr ""
+msgstr "仓库老鼠"
 
 #: monsterlist_v0610_npcs1.json:rolwynn
 msgid "Rolwynn"
@@ -33177,7 +33241,7 @@ msgstr ""
 #: monsterlist_v0610_npcs1.json:woodcutter_4
 #: monsterlist_v0610_npcs1.json:woodcutter_5
 msgid "Woodcutter"
-msgstr ""
+msgstr "伐木工"
 
 #: monsterlist_v0610_npcs1.json:rogorn
 msgid "Rogorn"
@@ -33560,7 +33624,7 @@ msgstr ""
 
 #: monsterlist_v0611_npcs1.json:lonelyhouse_sp
 msgid "Basement rat"
-msgstr ""
+msgstr "地下层老鼠"
 
 #: monsterlist_v0611_npcs1.json:algangror
 msgid "Algangror"
@@ -33715,7 +33779,7 @@ msgstr ""
 #: monsterlist_v0611_npcs2.json:petdog
 #: monsterlist_guynmart.json:guynmart_dog10
 msgid "Dog"
-msgstr ""
+msgstr "狗"
 
 #: monsterlist_v0611_npcs2.json:kaverin
 msgid "Kaverin"
@@ -34188,7 +34252,7 @@ msgstr ""
 
 #: monsterlist_v070_lodarmaze.json:pig
 msgid "Pig"
-msgstr ""
+msgstr "猪"
 
 #: monsterlist_v070_lodarmaze.json:vermin2
 msgid "Roach"
@@ -34622,7 +34686,7 @@ msgstr ""
 #: monsterlist_guynmart.json:guynmart_hannah2
 #: monsterlist_guynmart.json:guynmart_hannah3
 msgid "Hannah"
-msgstr ""
+msgstr "汉娜"
 
 #: monsterlist_guynmart.json:guynmart_lovis
 #: monsterlist_guynmart.json:guynmart_lovis2
@@ -34685,7 +34749,7 @@ msgstr ""
 
 #: monsterlist_guynmart.json:guynmart_reward3
 msgid "Armour"
-msgstr ""
+msgstr "盔甲"
 
 #: monsterlist_guynmart.json:guynmart_spectator1a
 #: monsterlist_guynmart.json:guynmart_spectator1b
@@ -34696,7 +34760,7 @@ msgstr ""
 #: monsterlist_guynmart.json:guynmart_horse
 #: monsterlist_stoutford_combined.json:stn_horse
 msgid "Horse"
-msgstr ""
+msgstr "马"
 
 #: monsterlist_guynmart.json:guynmart_rat
 msgid "Dungeon rat"
@@ -34705,7 +34769,7 @@ msgstr ""
 #: monsterlist_guynmart.json:guynmart_fish1
 #: monsterlist_guynmart.json:guynmart_fish2
 msgid "Fish"
-msgstr ""
+msgstr "鱼"
 
 #: monsterlist_guynmart.json:guynmart_dog_puppy
 msgid "Cute dog puppy"
@@ -34727,7 +34791,7 @@ msgstr ""
 
 #: monsterlist_stoutford_combined.json:stoutford_commoner4
 msgid "Old woman"
-msgstr ""
+msgstr "老女"
 
 #: monsterlist_stoutford_combined.json:stoutford_armorer
 msgid "Odirath"
@@ -34785,7 +34849,7 @@ msgstr ""
 
 #: monsterlist_stoutford_combined.json:honey_bee
 msgid "Honey bee"
-msgstr ""
+msgstr "蜜蜂"
 
 #: monsterlist_stoutford_combined.json:erwyn_knight
 msgid "Erwyn's knight"
@@ -34961,11 +35025,11 @@ msgstr ""
 
 #: questlist.json:mikhail_bread
 msgid "Breakfast bread"
-msgstr ""
+msgstr "早饭面包"
 
 #: questlist.json:mikhail_bread:100
 msgid "I have brought the bread to Mikhail."
-msgstr ""
+msgstr "我带了面包到米哈伊尔。"
 
 #: questlist.json:mikhail_bread:10
 msgid "Mikhail wants me to go buy a loaf of bread from Mara at the town hall."
@@ -37032,7 +37096,7 @@ msgstr ""
 
 #: questlist_halvor_surprise.json:halvor_surprise:25
 msgid "I gave Halvor 5 rat tails."
-msgstr ""
+msgstr "我给Halvor 5个老鼠的尾。"
 
 #: questlist_halvor_surprise.json:halvor_surprise:30
 msgid "My rat tails weren't good enough for him. He needs more. How many does he really want?"
@@ -37895,4 +37959,3 @@ msgstr ""
 #: worldmap.xml:world1:guynmart_area
 msgid "Guynmart Castle"
 msgstr "Guynmart 城堡"
-

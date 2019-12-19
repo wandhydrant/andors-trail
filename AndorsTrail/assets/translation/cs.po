@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: andors-trail\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-11-10 11:48+0000\n"
-"PO-Revision-Date: 2018-11-05 22:05+0000\n"
-"Last-Translator: Jiri Zizkin Zizka <web@zizkin.com>\n"
+"PO-Revision-Date: 2019-12-09 03:49+0000\n"
+"Last-Translator: Luboš Nečas <lubosnecas506@seznam.cz>\n"
 "Language-Team: Czech <https://hosted.weblate.org/projects/andors-trail/"
 "game-content/cs/>\n"
 "Language: cs\n"
@@ -17,12 +17,12 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Weblate 3.3-dev\n"
+"X-Generator: Weblate 3.10-dev\n"
 "X-Launchpad-Export-Date: 2015-11-02 12:25+0000\n"
 
 #: [none]
 msgid "translator-credits"
-msgstr "Zizkin https://andorstrail.com/memberlist.php?mode=viewprofile&u=7756"
+msgstr "Petr Valta, The Seeking Researcher, Zizkin, Mormegil"
 
 #: actorconditions_v069.json:bless
 msgid "Bless"
@@ -86,7 +86,7 @@ msgstr "Hmyzí nákaza"
 
 #: actorconditions_v0611.json:blister
 msgid "Blistering skin"
-msgstr "Sžíraná kůže"
+msgstr "Puchýřující kůže"
 
 #: actorconditions_v0611.json:stunned
 msgid "Stunned"
@@ -134,7 +134,7 @@ msgstr "Zlomenina"
 
 #: actorconditions_v0611_2.json:concussion
 msgid "Concussion"
-msgstr "Bezvědomí"
+msgstr "Otřes mozku"
 
 #: actorconditions_v0612_2.json:food
 msgid "Sustenance"
@@ -146,7 +146,7 @@ msgstr "Otrava jídlem"
 
 #: actorconditions_v070.json:slime
 msgid "Corrosive slime"
-msgstr "Sžíravé zahlenění"
+msgstr "Žíravé zahlenění"
 
 #: actorconditions_v070.json:sense_1
 msgid "Heightened senses"
@@ -174,7 +174,7 @@ msgstr "Zotavení"
 
 #: actorconditions_v070.json:barkskin
 msgid "Bark skin"
-msgstr "Ztrvdlá kůže"
+msgstr "Ztvrdlá kůže"
 
 #: actorconditions_v070.json:shadow_acc
 msgid "Shadow's accuracy"
@@ -210,7 +210,7 @@ msgstr "Nemotornost"
 
 #: actorconditions_stoutford.json:curse_undead
 msgid "Curse of the Undead"
-msgstr "Umrlcovo prokletí"
+msgstr "Prokletí nemrtvých"
 
 #: actorconditions_graveyard1.json:contagion2
 msgid "Spore contagion"
@@ -238,7 +238,7 @@ msgstr "Degenerace Přítmí"
 
 #: actorconditions_guynmart.json:bone_fracture
 msgid "Bone fracture"
-msgstr "Zlomená kost"
+msgstr "Zlomenina"
 
 #: actorconditions_guynmart.json:shadow_awareness
 msgid "Shadow awareness"
@@ -282,17 +282,18 @@ msgstr "Ó, to je dobře, že jsi vzhůru."
 
 #: conversationlist_mikhail.json:mikhail_visited
 msgid "I can't seem to find your brother Andor anywhere. He hasn't been back since he left yesterday."
-msgstr "Nemůžu najít tvého bratra Andora. Nevíš, kde by mohl být? Včera odešel a zatím se nevrátil."
+msgstr ""
+"Nikde nemůžu najít tvého bratra Andora. Včera odešel a zatím se nevrátil."
 
 #: conversationlist_mikhail.json:mikhail3
 msgid "Never mind, he will probably be back soon."
-msgstr "Tož nevadí, jistě se brzy vrátí."
+msgstr "Nevadí, jistě se brzy vrátí."
 
 #: conversationlist_mikhail.json:mikhail_default
 #: conversationlist_crossglen_leonid.json:leonid_continue
 #: conversationlist_umar.json:umar_return_2
 msgid "Anything else I can help you with?"
-msgstr "S čím ti mohu pomoct?"
+msgstr "S čím dalším ti mohu pomoct?"
 
 #: conversationlist_mikhail.json:mikhail_default:0
 #: conversationlist_mikhail.json:mikhail_default:1
@@ -343,7 +344,9 @@ msgstr "Zatím ne. Děkuji za ten chleba i za ty krysy."
 
 #: conversationlist_mikhail.json:mikhail_andor1
 msgid "As I said, Andor went out and hasn't been back since. I worry about him. Please go look for your brother. He said he would only be out for a short while."
-msgstr "[REVIEW]Jak jsem již řekl, Andor odešel včera a zatím se nevrátil. Začínám si o něj dělat starost. Prosím jdi a poohlídni se po něm. Říkal, že bude venku pouze chvilku."
+msgstr ""
+"Jak jsem již řekl, Andor odešel a zatím se nevrátil. Začínám si o něj dělat "
+"starost. Prosím jdi se o něm poohlédnout. Říkal, že bude venku jen chvíli."
 
 #: conversationlist_mikhail.json:mikhail_andor2
 msgid "Maybe he went into that supply cave again and got stuck. Or maybe he's in Leta's basement training with that wooden sword again. Please go look for him in town."
@@ -351,7 +354,9 @@ msgstr "Možná šel do jeskyně se zásobami a uvízl v ní. Nebo možná opět
 
 #: conversationlist_mikhail.json:mikhail_bread_start
 msgid "Oh, I almost forgot. If you have time, please go see Mara at the town hall and buy me some more bread."
-msgstr "Ó, málem jsem zapoměl. Pokud máš čas, prosím zajdi do obecního domu za Márou a kup chléb."
+msgstr ""
+"Ó, málem jsem zapomněl. Pokud máš čas, prosím zajdi do obecního domu za "
+"Márou a kup chléb."
 
 #: conversationlist_mikhail.json:mikhail_bread_continue
 msgid "Did you get my bread from Mara at the town hall yet?"
@@ -427,7 +432,7 @@ msgstr "Dobrá, rozumím. Zde si můžu odpočinout, když budu zraněn. A také
 
 #: conversationlist_mikhail.json:mikhail_rats_continue
 msgid "Did you kill those two rats in our garden?"
-msgstr "Už jsi se zastavil ty dvě krysy na naší zahradě?"
+msgstr "Už jsi zabil ty dvě krysy na naší zahradě?"
 
 #: conversationlist_mikhail.json:mikhail_rats_continue:0
 msgid "Yes, I have dealt with the rats now."
@@ -455,7 +460,10 @@ msgstr ""
 
 #: conversationlist_mikhail_foodpoison.json:mikhail_rats_start2a
 msgid "Another way to regain your strength is to eat some food. You can buy some for yourself from Mara at the town hall. But watch out - I hear that raw meat can sometimes give you food poisoning."
-msgstr "Dalším způsobem, jak nabýt nové síly, je sníst nějaké jídlo.  To si můžeš koupit u Máry v obecním domě. Ale pozor - slyšel jsem, že syrové maso tě může otrávit."
+msgstr ""
+"Dalším způsobem, jak nabýt nové síly, je sníst nějaké jídlo. To si můžeš "
+"koupit u Máry v obecním domě. Ale pozor – slyšel jsem, že syrové maso tě "
+"může otrávit."
 
 #: conversationlist_mikhail_foodpoison.json:mikhail_rats_start2b
 msgid "If that happens, perhaps the town priest can do something to help you.  Otherwise, just rest until you feel better."
@@ -545,7 +553,7 @@ msgstr ""
 #: conversationlist_flagstone.json:flagstone_sentry_42:0
 #: conversationlist_vilegard_villagers.json:vilegard_villager_friend_1:0
 msgid "Thanks, bye."
-msgstr "Díky a naviděnou."
+msgstr "Díky, na viděnou."
 
 #: conversationlist_crossglen.json:drunk1
 msgid ""
@@ -585,7 +593,9 @@ msgstr ""
 
 #: conversationlist_crossglen.json:mara_thanks
 msgid "I heard you helped Odair clean out that old supply cave. Thanks a lot, we'll start using it soon."
-msgstr "Doneslo se mi o tvé pomoci s vyčištěním té staré jeskyně - našeho skladu. Mnohé díky, brzy ji začneme zase využívat."
+msgstr ""
+"Doneslo se mi o tvé pomoci s vyčištěním té staré jeskyně – našeho skladu. "
+"Mnohé díky, brzy ji začneme zase využívat."
 
 #: conversationlist_crossglen.json:mara_thanks:0
 msgid "It was my pleasure."
@@ -625,13 +635,14 @@ msgid ""
 "\n"
 "Now prepare to die, puny creature."
 msgstr ""
-"Ale ale, co to tu máme? Návštěvu, to je milé. Dělá na mě dojem, že jsi se probojovalo přes všechny mé sluhy, dítě.\n"
+"Ale ale, co to tu máme? Návštěvu, to je milé. Jsem ohromen tím, že sem "
+"přicházíš přes všechny mé sluhy.\n"
 "\n"
-"Teď se ale připrav na smrt, malý tvore."
+"Teď se ale připrav na smrt, směšný tvorečku."
 
 #: conversationlist_crossglen.json:snakemaster:0
 msgid "Great, I have been waiting for a fight!"
-msgstr "Skvělé, už dlouho jsem čekal na pořádný souboj!"
+msgstr "Skvělé, už dlouho čekám na pořádný souboj!"
 
 #: conversationlist_crossglen.json:snakemaster:1
 msgid "Let's see who dies here."
@@ -776,7 +787,7 @@ msgid ""
 "\n"
 "Personally, I haven't decided what my thoughts are."
 msgstr ""
-"Ostraní vesničané tvrdili, že bychom měli dodržovat dekret Lorda Geromyra.\n"
+"Ostatní vesničané tvrdili, že bychom měli dekret Lorda Geromyra dodržovat.\n"
 "\n"
 "Já osobně ještě nejsem rozhodnutý, co si o tom mám myslet."
 
@@ -784,11 +795,15 @@ msgstr ""
 msgid ""
 "On one hand, Lord Geomyr supports Crossglen with a lot of protection.\n"
 "[Points to the soldiers in the hall]"
-msgstr "[REVIEW]Na jednu stranu chrání Lord Geromyr Crossglen. *ukazuje prstem na vojáky v obecním domě*"
+msgstr ""
+"Na jednu stranu Lord Geromyr poskytuje Crossglenu ochranu.\n"
+"[Ukazuje prstem na vojáky v sále]"
 
 #: conversationlist_crossglen_leonid.json:leonid_crossglen7
 msgid "But on the other hand, the tax and the recent changes of what's allowed are really taking a toll on Crossglen."
-msgstr "Na druhé straně, daně a poslední změny toho, co je a co už není dovoleno, Crossglenu škodí."
+msgstr ""
+"Ale na druhou stranu Crossglenu daně a nedávné změny toho, co je a co už "
+"není dovoleno, skutečně škodí."
 
 #: conversationlist_crossglen_leonid.json:leonid_crossglen8
 msgid "Someone should go to Castle Geomyr and talk to the steward about our situation here in Crossglen."
@@ -873,7 +888,7 @@ msgstr "Dobře, přinesu je."
 
 #: conversationlist_crossglen_tharal.json:tharal_bonemeal3
 msgid "Thanks kid. I knew I could count on you."
-msgstr "Díky, dítě. Věděl jsem, že se na tebe mužů spolehnout."
+msgstr "Díky, dítě. Věděl jsem, že se na tebe můžu spolehnout."
 
 #: conversationlist_crossglen_tharal.json:tharal_bonemeal4
 msgid "Oh yes, bonemeal. Mixed with the right components it can be one of the most effective healing agents around."
@@ -889,7 +904,10 @@ msgstr "Jak mám nyní uzdravovat lidi? Pomocí běžných léčivých lektvarů
 
 #: conversationlist_crossglen_tharal.json:tharal_bonemeal7
 msgid "I know someone that still has a supply of bonemeal if you are interested. Go talk to Thoronir, a fellow priest in Fallhaven. Tell him my password 'Glow of the Shadow'."
-msgstr "Znám někoho, kdo má zásobu kostní moučky, pokud tě to zajímá. Zajdi do Fallhavenu a promluv s Thoronirem, knězem Přítmí. Sděl mu tajné heslo: 'Svit Přítmí'."
+msgstr ""
+"Znám někoho, kdo má zásobu kostní moučky, pokud tě to zajímá. Zajdi do "
+"Fallhavenu a promluv s Thoronirem, knězem Přítmí. Sděl mu tajné heslo: „Svit "
+"Přítmí“."
 
 #: conversationlist_crossglen_tharal.json:tharal_antifoodp1
 msgid "No, sorry. I hear that the potion-maker in Fallhaven can create something to help against that though."
@@ -954,7 +972,7 @@ msgid ""
 "Thanks for letting me know though."
 msgstr ""
 "Schovává se? To mě nepřekvapuje. Já už mu ukážu, kdo je tady pánem.\n"
-"Dík, žes mi dalo vědět, páže."
+"Ale dík, žes mi dal vědět."
 
 #: conversationlist_crossglen_leta.json:leta_oromir_complete2
 msgid "Thanks for telling me about Oromir earlier. I will go get him in just a minute."
@@ -965,7 +983,7 @@ msgid ""
 "Oh you startled me.\n"
 "Hello."
 msgstr ""
-"Ph, co mě děsíš!\n"
+"Fuj, vylekal jsi mě!\n"
 "Ahoj."
 
 #: conversationlist_crossglen_leta.json:oromir1:0
@@ -1017,7 +1035,9 @@ msgstr "Jasně, když z toho kápne nějaká odměna pro mě."
 
 #: conversationlist_crossglen_odair.json:odair3
 msgid "I recently went in to that cave over there [points west], to check on our supplies. But apparently, the cave has been infested with rats."
-msgstr "[REVIEW]Před chvílí jsem šel do támhleté jeskyně *ukazuje na západ*, abych zkontroloval naše zásoby. Ale očividně je ta jeskyně zamořená krysami."
+msgstr ""
+"Před chvílí jsem šel do tamté jeskyně [ukazuje na západ], abych zkontroloval "
+"naše zásoby. Ale očividně je ta jeskyně zamořená krysami."
 
 #: conversationlist_crossglen_odair.json:odair4
 msgid "In particular, I saw one rat that was larger than the other rats. Do you think you have what it takes to help eliminate them?"
@@ -1146,7 +1166,9 @@ msgstr "Můj přítel Gandir, jeho přítel Irogotu a já jsme vykopali tuto já
 
 #: conversationlist_jan.json:jan_default5
 msgid "We started digging and finally broke through to the cave system below. That's when we discovered them. The critters and bugs."
-msgstr "Začali jsme kopat a najednou jsme se prokopali do celého podzemního jeskynního systému. A tehdy se poprvé objevili. Brouci a kočkodani."
+msgstr ""
+"Začali jsme kopat a najednou jsme se prokopali do celého podzemního "
+"jeskynního systému. A tehdy se poprvé objevili. Stvůry a brouci."
 
 #: conversationlist_jan.json:jan_default6
 msgid ""
@@ -1154,9 +1176,10 @@ msgid ""
 "\n"
 "Gandir and I told Irogotu that we should stop the digging and leave while we still could."
 msgstr ""
-"Och ti kočkodani. Zubaté bestie. Skoro mě zabili.\n"
+"Och ty stvůry. Zatracené bestie. Skoro mě zabili.\n"
 "\n"
-"Gandir a já jsme říkali Irogotovi, že bychom s tím kopáním měli skončit a vrátit se, dokud je čas."
+"Gandir a já jsme Irogotovi říkali, že bychom s tím kopáním měli skončit a "
+"vrátit se, dokud je čas."
 
 #: conversationlist_jan.json:jan_default7
 msgid "But Irogotu wanted to continue deeper into the dungeon. He and Gandir got into an argument and started fighting."
@@ -1164,12 +1187,7 @@ msgstr "Ale Irogotu chtěl jít dále do jeskyní. S Gandirem se pohádali a za�
 
 #: conversationlist_jan.json:jan_default8
 msgid "That's when it happened. *sob* Oh what have we done?"
-msgstr ""
-"[REVIEW]Pak se to stalo.\n"
-"\n"
-"*těžce polkne*\n"
-"\n"
-"Oh, co jsme to udělali?"
+msgstr "Pak se to stalo. *vzlyk* Oh, co jsme to udělali?"
 
 #: conversationlist_jan.json:jan_default8:0
 #: conversationlist_ogam.json:ogam_2:1
@@ -1182,11 +1200,14 @@ msgstr "Irogotu zabil Gandira holýma rukama. V jeho očích byl oheň a žár. 
 
 #: conversationlist_jan.json:jan_default10
 msgid "I fled and haven't dared go back down there because of the critters and Irogotu himself."
-msgstr "Utekl jsem a už se neodvažuji vrátit se zpět dolů, kvůli kočkodanům i samotnému Irogotovi."
+msgstr ""
+"Utekl jsem a už se neodvažuji vrátit se zpět dolů, kvůli stvůrám i samotnému "
+"Irogotovi."
 
 #: conversationlist_jan.json:jan_default11
 msgid "Oh that damn Irogotu. If only I could get to him. I'd show him one thing and another."
-msgstr "Och, ten proradný Irogotu. Kdyby se mi dostal pod ruce, já už bych mu ukázal."
+msgstr ""
+"Och, ten proradný Irogotu. Kdyby se mi dostal do rukou, já už bych mu ukázal."
 
 #: conversationlist_jan.json:jan_default11:0
 msgid "Do you think I could help?"
@@ -1306,7 +1327,7 @@ msgstr "Gandira, to kňučící stěně? Stál mi v cestě. Pouze jsem ho využi
 
 #: conversationlist_jan.json:irogotu2
 msgid "Besides, I never really liked him anyway."
-msgstr "Navíc, nikdy jsem ho stejně neměl rád."
+msgstr "Stejně jsem ho nikdy neměl rád."
 
 #: conversationlist_jan.json:irogotu2:0
 msgid "I guess he deserved to die. Did he have a ring on him?"
@@ -1330,7 +1351,9 @@ msgstr "Dej mi ten prsten a možná zůstaneme oba na živu."
 
 #: conversationlist_jan.json:irogotu4
 msgid "No. If you want it you will have to take it from me by force, and I should tell you that my powers are great. Besides, you probably wouldn't dare fight me anyway."
-msgstr "Ne. Pokud ho chceš, musíš si ho ode mne vzít násilím. Říkám to ale, že mé síly jsou velké. Stejně si netroufneš se mnou bojovat."
+msgstr ""
+"Ne. Pokud ho chceš, musíš si ho ode mne vzít násilím. Měl bych ti ale říct, "
+"že mé síly jsou velké. Stejně si netroufneš se mnou bojovat."
 
 #: conversationlist_jan.json:irogotu4:0
 msgid "Very well, let's see who dies here."
@@ -1400,7 +1423,8 @@ msgstr "Může mi říct víc o Přítmí?"
 
 #: conversationlist_fallhaven.json:priest_shadow_1
 msgid "The Shadow protects us. It keeps us safe and comforts us when we sleep."
-msgstr "Přítmí nás ochraňuje. Drží nad námi ochranou ruku a utěšuje nás, když spíme."
+msgstr ""
+"Přítmí nás ochraňuje. Drží nad námi ochrannou ruku a utěšuje nás, když spíme."
 
 #: conversationlist_fallhaven.json:priest_shadow_2
 msgid "It follows us wherever we go. Go with the Shadow my child."
@@ -1478,15 +1502,17 @@ msgstr ""
 
 #: conversationlist_fallhaven_arcir.json:arcir_books_1
 msgid "I find great pleasure in my books. They contain the accumulated knowledge of past generations."
-msgstr "Mě knihy dělají velkou radost. Jsou v nich zaznamenány znalosti předchozích generací."
+msgstr ""
+"Knihy mi dělají velkou radost. Jsou v nich zaznamenány znalosti předchozích "
+"generací."
 
 #: conversationlist_fallhaven_arcir.json:arcir_books_1:0
 msgid "Do you have a book called 'Calomyran Secrets'?"
-msgstr "Máš knihu 'Calomyranská tajemství'?"
+msgstr "Máš knihu „Calomyranská tajemství“?"
 
 #: conversationlist_fallhaven_arcir.json:arcir_calomyran_1
 msgid "'Calomyran Secrets'? Hmm, yes I think I have one of those in my basement."
-msgstr "'Calomyranská tajemství'? Hm, ano. Myslím, že jednu mám dole ve svém sklepě."
+msgstr "„Calomyranská tajemství“? Hm, ano. Myslím, že jednu mám dole ve sklepě."
 
 #: conversationlist_fallhaven_arcir.json:arcir_calomyran_2
 msgid "Old man Benradas came by last week, wanting to sell me that book. Since it's not really my kind of book, I declined."
@@ -1494,7 +1520,9 @@ msgstr "Starý pán Benradas mi chtěl tuto knížku prodat minulý týden. Vzhl
 
 #: conversationlist_fallhaven_arcir.json:arcir_calomyran_3
 msgid "He seemed upset that I didn't like his book, and threw it at me while storming out of the house."
-msgstr "Vypadal naštvaně, že se mi jeho kniha nelíbí a tak ji po mě hodil zatímco se urychleně pakoval z mého domu."
+msgstr ""
+"Vypadal naštvaně, že se mi jeho kniha nelíbí, a tak ji po mě hodil, zatímco "
+"se urychleně pakoval z mého domu."
 
 #: conversationlist_fallhaven_arcir.json:arcir_calomyran_4
 msgid "Poor old man Benradas, he probably forgot that he left it here. He tends to forget things."
@@ -1506,7 +1534,9 @@ msgstr "Říkáš, že dole ta kniha není, jenom jakýsi vzkaz? Myslím, že n�
 
 #: conversationlist_fallhaven_arcir.json:arcir_calomyran_complete
 msgid "I heard you found it and gave it back to old man Benradas. Thank you. He tends to forget things."
-msgstr "Slyšel jsem, že kniha je - díky tobě - nalezena a vrácena starému Benradasovi. Díky, má sklony zapomínat věci."
+msgstr ""
+"Slyšel jsem, že jsi knihu nalezl a vrátil starému Benradasovi. Díky, má "
+"sklony zapomínat věci."
 
 #: conversationlist_fallhaven_arcir.json:arcir_calomyran_6
 msgid ""
@@ -1520,7 +1550,8 @@ msgstr ""
 
 #: conversationlist_fallhaven_bucus.json:bucus_welcome
 msgid "Hi again, welcome back to the ... Oh wait, I thought you were someone else."
-msgstr "Ahoj, vítej zpět v .. Och, počkej, spletl jsem si tě s nějakou jinou osobou."
+msgstr ""
+"Ahoj, vítej zpět v ... Och, počkej, spletl jsem si tě s nějakou jinou osobou."
 
 #: conversationlist_fallhaven_bucus.json:bucus_welcome:1
 msgid "What do you know about the Thieves' Guild?"
@@ -1657,7 +1688,7 @@ msgstr "Přítmí nás chrání před nebezpečenstvím noci, brání nás a kon
 
 #: conversationlist_fallhaven_church.json:thoronir_shadow_1:0
 msgid "Tharal sent me and told me to tell you the password 'Glow of the Shadow'."
-msgstr "Poslal mne Tharal a řekl, abych se ti prokázal heslem 'Svit Přítmí'."
+msgstr "Poslal mne Tharal a řekl, abych se ti prokázal heslem „Svit Přítmí“."
 
 #: conversationlist_fallhaven_church.json:thoronir_shadow_1:2
 msgid "Sounds like nonsense to me."
@@ -1673,7 +1704,9 @@ msgstr "Tento kostel zde stojí stovky let a přestál všechny pokusy o vykrade
 
 #: conversationlist_fallhaven_church.json:thoronir_tharal_1
 msgid "Glow of the Shadow indeed my child. So my old friend Tharal in Crossglen village sent you?"
-msgstr "Svit Přítmí i tobě, mé dítě. Tedy můj davný přítel Tharal z Crossglenu tě posílá?"
+msgstr ""
+"Svit Přítmí i tobě, mé dítě. Tedy tě posílá můj starý přítel Tharal z "
+"Crossglenu?"
 
 #: conversationlist_fallhaven_church.json:thoronir_church_3
 msgid "The catacombs beneath the church house the remains of our passed leaders. Our great King Luthor is rumored to be buried there."
@@ -1706,7 +1739,10 @@ msgstr "Když ten zákaz vešel v platnost, netroufl jsem si nechat kostní mou�
 
 #: conversationlist_fallhaven_church.json:thoronir_tharal_4
 msgid "Do you think you could find me 5 skeletal bones that I can use for mixing a bonemeal potion? The bonemeal is very potent in healing old wounds."
-msgstr "Myslíš si, že bys mi mohl obstarat 5 kostí, abych je mohl použít na přípravu lektvaru z kostní moučky. Kostní moučka je velmi dobrá pro léčení starých zranění."
+msgstr ""
+"Myslíš, že bys mi mohl obstarat 5 kostí, abych je mohl použít na přípravu "
+"lektvaru z kostní moučky? Kostní moučka je velmi dobrá pro léčení starých "
+"zranění."
 
 #: conversationlist_fallhaven_church.json:thoronir_tharal_4:0
 msgid "Sure, I might be able to do that."
@@ -1718,7 +1754,10 @@ msgstr "Mám pro tebe ty kosti."
 
 #: conversationlist_fallhaven_church.json:thoronir_tharal_5
 msgid "Thank you, please come back soon. I heard there were some undead near an old abandoned house just north of Fallhaven. Maybe you can check for bones there?"
-msgstr "Děkuji, prosím přines je brzo. Na sever od Fallhavenu je opuštěný dům. Slyšel jsem, že nějací kostlivci byli právě u něj. Snad právě tam můžeš najít nějaké kosti?"
+msgstr ""
+"Děkuji, prosím přines je brzo. Na sever od Fallhavenu je opuštěný dům. "
+"Slyšel jsem, že u něj byli nějací nemrtví. Snad právě tam můžeš najít nějaké "
+"kosti?"
 
 #: conversationlist_fallhaven_church.json:thoronir_tharal_5:0
 msgid "OK, I'll go check there."
@@ -1742,7 +1781,9 @@ msgstr "Ukaž mi, jaké lektvary jsi stihl připravit."
 
 #: conversationlist_fallhaven_church.json:catacombguard
 msgid "Turn back while you still can, mortal. This is no place for you. Only death awaits you here."
-msgstr "Vrať se ven dokud můžeš, smrtelníku. Tohle místo není pro tebe. Zde bydlí smrt."
+msgstr ""
+"Vrať se dokud můžeš, smrtelníku. Tohle místo není pro tebe. Zde na tebe čeká "
+"jen smrt."
 
 #: conversationlist_fallhaven_church.json:catacombguard:0
 msgid "Very well. I will turn back."
@@ -1795,7 +1836,7 @@ msgstr "Ano, byl jsem v katakombách pod kostelem zde ve Fallhavenu."
 
 #: conversationlist_fallhaven_athamyr.json:athamyr_2
 msgid "But I'm the only one that both has the permission and the bravery to go down there."
-msgstr "Taky jsem jediný kdo má jak povolení, tak odvahu jít tam dolů."
+msgstr "Taky jsem jediný, kdo má jak povolení, tak odvahu jít tam dolů."
 
 #: conversationlist_fallhaven_athamyr.json:athamyr_2:0
 msgid "How can I get permission to go down there?"
@@ -1920,15 +1961,16 @@ msgstr "Tak jsem ji už asi vypil. Můžeš mi dát novou medovinu, co myslíš?
 msgid ""
 "Oh sweet drinks of joy. May the sssshadow be with you kid.\n"
 "[Makes big eyes]"
-msgstr "[REVIEW]Oh, sladký nápoj radosti. Nechť tě Přítmí požehná, dítě. *udělá velké oči*"
+msgstr ""
+"Oh, sladký nápoj radosti. Nechť tě Přítmí požehná, dítě.\n"
+"[udělá velké oči]"
 
 #: conversationlist_fallhaven_drunk.json:fallhaven_drunk_11
 msgid ""
 "[Takes a gulp of the mead]\n"
 "That's good stuff!"
 msgstr ""
-"[REVIEW]*mocně si lokne medoviny*\n"
-"\n"
+"[mocně si lokne medoviny]\n"
 "To je dobré pití!"
 
 #: conversationlist_fallhaven_drunk.json:fallhaven_drunk_12
@@ -1970,7 +2012,7 @@ msgstr "Výnos Lorda Geomyra dokonce zakazuje všem ve Fallhavenu používat moj
 
 #: conversationlist_fallhaven_nocmar.json:nocmar_trade_4
 msgid "So now I have to hide the few weapons I have left. I won't dare sell any of them anymore."
-msgstr "Teď musím zbraně, co mi zbyly ukrývat. Nikomu se neodvážím je prodat."
+msgstr "Teď musím zbraně, co mi zbyly, ukrývat. Nikomu se neodvážím je prodat."
 
 #: conversationlist_fallhaven_nocmar.json:nocmar_trade_4_1
 msgid "I haven't seen the heartsteel glow in several years now that Lord Geomyr has banned them."
@@ -1986,7 +2028,8 @@ msgstr "Poslal tě Unnmir? To musí být důležité."
 
 #: conversationlist_fallhaven_nocmar.json:nocmar_quest_1
 msgid "OK, these old weapons have lost their inner glow now that they haven't been used in a while."
-msgstr "Ok, tyto zbraně již ztratily svou vnitřní záři, když nebyly tak dlouho používany."
+msgstr ""
+"Ok, tyto zbraně již ztratily svou vnitřní záři, když se tak dlouho nepoužily."
 
 #: conversationlist_fallhaven_nocmar.json:nocmar_quest_2
 msgid "To make the heartsteel glow again, we will need a heartstone."
@@ -2039,7 +2082,7 @@ msgstr "Rychle. Oživme opět tyto staré zbraně z Živé oceli, aby jimi proud
 
 #: conversationlist_fallhaven_nocmar.json:nocmar_complete_4
 msgid "[Nocmar places the heartstone among the heartsteel weapons]"
-msgstr "[REVIEW]*Nocmar položí Živou ocel mezi zbraně z Živé oceli*"
+msgstr "[Nocmar položí Živou ocel mezi zbraně z Živé oceli]"
 
 #: conversationlist_fallhaven_nocmar.json:nocmar_complete_5
 msgid "Can you feel it? The heartsteel is glowing again."
@@ -2081,13 +2124,15 @@ msgstr "Nikdy nic neztratím! Někdo mi ji musel ukrást."
 
 #: conversationlist_fallhaven_oldman.json:fallhaven_oldman_5
 msgid "Would you please go look for my book? It's called 'Calomyran Secrets'."
-msgstr "Můžeš prosím najít mou knihu? Jmenuje se 'Tajemství Calomyran'."
+msgstr "Můžeš prosím najít mou knihu? Jmenuje se „Calomyranská Tajemství“."
 
 #: conversationlist_fallhaven_oldman.json:fallhaven_oldman_6
 msgid ""
 "I have no idea where it might be. You could go ask Arcir, he seems very fond of his books.\n"
 " [Points at the house to the south]"
-msgstr "[REVIEW]Netuším, kde by mohla být. Zkus se zeptat Arcira, je posedlý svými knihami. *ukazuje jižním směrem na dům *"
+msgstr ""
+"Netuším, kde by mohla být. Zkus se zeptat Arcira, je posedlý svými knihami.\n"
+"[Ukazuje na dům na jihu]"
 
 #: conversationlist_fallhaven_oldman.json:fallhaven_oldman_6:0
 msgid "OK, I'll go ask Arcir. Goodbye."
@@ -2095,7 +2140,9 @@ msgstr "Dobře, zeptám se Arcira. Na shledanou."
 
 #: conversationlist_fallhaven_oldman.json:fallhaven_oldman_continue
 msgid "How is the search for my book going? It's called 'Calomyran Secrets'. Have you found my book?"
-msgstr "Jak pokračuje hledání mé knihy? Jmenuje se 'Tajemství Calomyran'. Podařilo se ti najít mou knihu?"
+msgstr ""
+"Jak pokračuje hledání mé knihy? Jmenuje se „Calomyranská tajemství“. "
+"Podařilo se ti najít mou knihu?"
 
 #: conversationlist_fallhaven_oldman.json:fallhaven_oldman_continue:0
 msgid "Yes, I found it."
@@ -2131,7 +2178,7 @@ msgstr "Díky moc za nalezení mé knihy!"
 
 #: conversationlist_fallhaven_tavern.json:bela
 msgid "Welcome to Fallhaven Tavern. Have a seat anywhere."
-msgstr "Vítej v hospodě ve Fallhawu. Posaď se kdekoliv."
+msgstr "Vítej ve Fallhavenské hospodě. Posaď se kdekoliv."
 
 #: conversationlist_fallhaven_tavern.json:bela:0
 msgid "Let me see what food and drinks you have available."
@@ -2148,7 +2195,7 @@ msgstr "Pokoj tě bude stát jenom 10 zlaťáků."
 
 #: conversationlist_fallhaven_tavern.json:bela_room_1:0
 msgid "[Buy for 10 gold]"
-msgstr "[REVIEW]Kup [10 zlaťáků]"
+msgstr "[Koupit za 10 zlaťáků]"
 
 #: conversationlist_fallhaven_tavern.json:bela_room_2
 msgid "Thanks. Take the last room down at the end of the hall."
@@ -2182,7 +2229,9 @@ msgstr "Nemám na tebe čas, dítě. Zmiz."
 
 #: conversationlist_fallhaven_larcal.json:larcal:0
 msgid "I found a note with your name on it while looking for the book 'Calomyran Secrets'."
-msgstr "Při hledání knížky 'Tajemství Calomyranu', mi přišel do ruky vzkaz s tvým jménem."
+msgstr ""
+"Při hledání knížky „Calomyranská tajemství“ mi přišel do ruky vzkaz s tvým "
+"jménem."
 
 #: conversationlist_fallhaven_larcal.json:larcal_1
 msgid "Now now, what have we here? Are you implying that I have been down in Arcir's basement?"
@@ -2278,7 +2327,10 @@ msgstr "Hledám svého bratra."
 msgid ""
 "Yeah yeah, I get it. Your brother has probably run off to some dungeon, trying to go adventuring.\n"
 "[Rolls eyes]"
-msgstr "[REVIEW]Ano ano, už rozumím. Tvůj bratr zřejmě utekl, aby v nějaké jeskyni zažil pořádné dobrodružství. *koulí očima*"
+msgstr ""
+"Ano ano, už rozumím. Tvůj bratr zřejmě utekl, aby v nějaké jeskyni zažil "
+"pořádné dobrodružství.\n"
+"[oči v sloup]"
 
 #: conversationlist_fallhaven_unnmir.json:unnmir_8
 msgid "Or maybe he has gone to one of the bigger cities to the north."
@@ -2302,7 +2354,9 @@ msgstr "Skvělé. Dám ti radu, dítě. *hihňá se* Navštiv Nocmara v západn�
 
 #: conversationlist_fallhaven_unnmir.json:unnmir_12
 msgid "Smart move. Adventuring leads to a lot of scars. If you know what I mean."
-msgstr "Rozumný toť postoj. Dobrodružství vedou k velkému množství šrámů a jizev, pokud víš, co tím myslím."
+msgstr ""
+"Rozumný postoj. Dobrodružství vedou k velkému množství jizev, pokud víš, co "
+"tím myslím."
 
 #: conversationlist_fallhaven_unnmir.json:unnmir_13
 msgid "His house is just southwest of the tavern."
@@ -2470,7 +2524,9 @@ msgstr "Ano, tady jsou ty čtyři části, které vzali ti bandité."
 
 #: conversationlist_fallhaven_vacor.json:vacor_42
 msgid "Now I should be able to finish the rift spell and open up the Shadow rift ... erm I mean open up new possibilities. Yes, that's what I meant."
-msgstr "Teď bych měl být schopen dokončit kouzlo Rozštěpení a rozštěpit Přítmí.. erm myslím otevřít nové možnosti. Ano, to je to, co jsem myslel."
+msgstr ""
+"Teď bych měl být schopen dokončit kouzlo Rozštěpení a rozštěpit Přítmí ... "
+"erm myslím otevřít nové možnosti. Ano, to je to, co jsem myslel."
 
 #: conversationlist_fallhaven_vacor.json:vacor_43
 msgid "The only obstacle between me and continuing my rift spell research is that stupid Unzel fellow."
@@ -2498,7 +2554,9 @@ msgstr "Každopádně mám pocit, že ty bandity na mě poslal Unzel. Když ho n
 
 #: conversationlist_fallhaven_vacor.json:vacor_49
 msgid "I need you to find Unzel and kill him for me. He can probably be found somewhere southwest of Fallhaven."
-msgstr "Potřebuji od tebe následující: najít a zabít Unzela. Zřejmě kempuje někde na jihozápad od Fallhavenu."
+msgstr ""
+"Potřebuji od tebe následující: najít a zabít Unzela. Zřejmě bude někde na "
+"jihozápad od Fallhavenu."
 
 #: conversationlist_fallhaven_vacor.json:vacor_50
 msgid "Bring me his signet ring as proof when you have killed him."
@@ -2550,11 +2608,13 @@ msgstr "A teď už jdi. Musím ještě pracovat, než budu moci seslat kouzlo Ro
 
 #: conversationlist_fallhaven_vacor.json:vacor_return_complete
 msgid "Hello again, my assassin friend. I will soon have my rift spell ready."
-msgstr "Vítej zpět, dítě atentátů. Již brzy budu hotov se svým kouzlem Rozštěpení."
+msgstr ""
+"Vítej zpět, můj malý atentátníku. Již brzy budu hotov se svým kouzlem "
+"Rozštěpení."
 
 #: conversationlist_fallhaven_vacor.json:vacor_70
 msgid "What? He told you his story? You actually believed it?"
-msgstr "Cože? On ti řekl jeho verzi? A ty mu skutečně věříš?"
+msgstr "Cože? On ti řekl svou verzi? A ty mu skutečně věříš?"
 
 #: conversationlist_fallhaven_vacor.json:vacor_71
 msgid "I will give you one more chance. Either kill Unzel for me, and I will reward you handsomely, or you will have to fight me."
@@ -2570,7 +2630,9 @@ msgstr "Dobře, ještě jednou si to rozmyslím."
 
 #: conversationlist_fallhaven_vacor.json:vacor_72
 msgid "Bah, lowly creature. I knew I shouldn't have trusted you. Now you will die along with your precious Shadow."
-msgstr "Ba, ty podlý tvore. Věděl jsem, že ti nemůžu věřit. Teď zhyneš společně s tím tvým Přítmím."
+msgstr ""
+"Pcha, podlý tvore. Věděl jsem, že ti nemůžu věřit. Teď zhyneš společně s tím "
+"tvým Přítmím."
 
 #: conversationlist_fallhaven_vacor.json:vacor_72:0
 #: conversationlist_foamingflask_outsideguard.json:ff_outsideguard_shadow_4:1
@@ -2666,11 +2728,15 @@ msgstr "Ti bandité, které jsi poslal na Vacora, skonali v souboji se mnou."
 
 #: conversationlist_fallhaven_unzel.json:unzel_17
 msgid "What? You killed my four friends? Argh, I feel the rage coming."
-msgstr "Cože? Mý čtyři přátelé padli tvým přičiněním? Arrr, začíná se mě zmocňovat vztek."
+msgstr ""
+"Cože? Mí čtyři přátelé padli tvým přičiněním? Arrr, začíná se mě zmocňovat "
+"vztek."
 
 #: conversationlist_fallhaven_unzel.json:unzel_18
 msgid "However, I also realize that all this is the making of Vacor. I'll give you a choice now. Choose wisely."
-msgstr "Každopádně ale také vidím, že to jsou Vacorovi intriky. Dám ti na výběr, dobře poslouchej."
+msgstr ""
+"Každopádně ale také vidím, že to jsou Vacorovy intriky. Dám ti na výběr, "
+"dobře poslouchej."
 
 #: conversationlist_fallhaven_unzel.json:unzel_19
 msgid "Either you side with Vacor and his rift spell, or side with the Shadow, and help me get rid of him. Who will you help?"
@@ -2698,11 +2764,13 @@ msgstr "Vítej zpět. Už jste si s Vacorem popovídali o Přítmí?"
 
 #: conversationlist_fallhaven_unzel.json:unzel_return_1:0
 msgid "Yes, I have dealt with him."
-msgstr "Ano, je hotovo. Vacora jsem musel zabít."
+msgstr "Ano, už jsem ho vyřídil."
 
 #: conversationlist_fallhaven_unzel.json:unzel_30
 msgid "You killed him? You have my thanks friend. Now we are safe from Vacor's rift spell. Here, take these coins for your help."
-msgstr "Je mrtev? Máš mé díky. Nyní jsme v bezpečí před Vacorovým kouzlem Rozštěpení. Vem si tyto zlaťáky za tvou pomoc."
+msgstr ""
+"Zabil jsi ho? Máš mé díky. Nyní jsme v bezpečí před Vacorovým kouzlem "
+"Rozštěpení. Vem si tyto zlaťáky za tvou pomoc."
 
 #: conversationlist_fallhaven_unzel.json:unzel_30:1
 #: conversationlist_thievesguild_1.json:thievesguild_cook_9:0
@@ -2786,7 +2854,7 @@ msgstr "Na kolik si ceníš svůj život ty?"
 
 #: conversationlist_wilderness.json:bandit1_3
 msgid "About damn time. You are free to go."
-msgstr "Zatracený čas. Můžeš jít."
+msgstr "No konečně. Můžeš jít."
 
 #: conversationlist_wilderness.json:bandit1_4
 msgid "OK then, your life it is. Let's fight. I have been looking forward to a good fight!"
@@ -2847,11 +2915,13 @@ msgstr "Cože, zde je smrtelník, který není poznamenán mým dotykem?"
 
 #: conversationlist_flagstone.json:flagstone_guard2_2
 msgid "You seem delicious and soft, will you be part of the feast?"
-msgstr "Vypadáš měkce a chutně, budeš součást mých slavností?"
+msgstr "Vypadáš měkce a chutně, budeš součástí mé hostiny?"
 
 #: conversationlist_flagstone.json:flagstone_guard2_3
 msgid "Yes, I think you will. My undead army will spread far outside of Flagstone once I am done with you."
-msgstr "Ano, myslím, že budeš. Moje armáda nemrtvých se rozšíří ven z Flagstonu až s tebou skončím."
+msgstr ""
+"Ano, myslím, že budeš. Moje armáda nemrtvých se rozšíří ven z Flagstonu, "
+"jakmile s tebou skončím."
 
 #: conversationlist_flagstone.json:flagstone_guard2_3:0
 msgid "By the Shadow, you must be stopped!"
@@ -2895,7 +2965,7 @@ msgstr "Toť vše k historii. Mám za úkol hlídat cestu před nemrtvými, aby 
 
 #: conversationlist_flagstone.json:flagstone_sentry_11
 msgid "So, I would advise you to leave unless you want to be overrun by undead."
-msgstr "Tudíž ti doporučuji: zmiz odsud než tě nemrtví uštvou."
+msgstr "Tudíž ti doporučuji: zmiz odsud, než tě nemrtví uštvou."
 
 #: conversationlist_flagstone.json:flagstone_sentry_11:0
 msgid "Can I investigate the Flagstone ruins?"
@@ -2907,7 +2977,7 @@ msgstr "Ano, odcházím."
 
 #: conversationlist_flagstone.json:flagstone_sentry_12
 msgid "Are you really sure you want to head in there? Well, OK, fine by me."
-msgstr "Skutečně se tam chceš vydat? Dobrá, ok, za mě jdi."
+msgstr "Skutečně se tam chceš vydat? Dobrá, pro mě za mě."
 
 #: conversationlist_flagstone.json:flagstone_sentry_13
 msgid "I won't stop you, and I won't mourn you if you never return."
@@ -2931,7 +3001,9 @@ msgstr "Vítej zpátky. Jdeš z Flagstonu? Jsem překvapený, že jsi naživu."
 
 #: conversationlist_flagstone.json:flagstone_sentry_return1:1
 msgid "There is a guardian in the lower levels of Flagstone that cannot be approached and the former prisoners are undead now."
-msgstr "V podzemí Flahstonu je strážce, ke kterému se nelze přiblížit a bývalí vězni jsou nyní nemrtví."
+msgstr ""
+"V podzemí Flagstonu je strážce, ke kterému se nelze přiblížit, a bývalí "
+"vězni jsou nyní nemrtví."
 
 #: conversationlist_flagstone.json:flagstone_sentry_20
 msgid "A guardian and undead prisoners you say? This is troubling news, since it means there is some larger force behind all this."
@@ -2947,7 +3019,10 @@ msgstr "Ok, půjdu se podívat po bývalém správci."
 
 #: conversationlist_flagstone.json:flagstone_sentry_23
 msgid "Oh this looks most interesting. Let's take a look. Hmm. It has got some weird inscriptions on it that say 'Daylight Shadow'. Maybe you could try these words on the demon? So perhaps the warden did have something to do with the demon after all?"
-msgstr "Oh, tohle vypadá zajímavě. Podívejme se na to z blízka. Má to nějaký podivný nápis říkající 'Osviť Přítmí'. Tedy ... zkus použít tato slova na démona? Že by nakonec měl správce co do činění s tím démonem?"
+msgstr ""
+"Oh, tohle vypadá zajímavě. Podíváme se na to. Hmm. Je tam nějaký podivný "
+"nápis říkající „Osviť Přítmí“. Možná zkus použít tato slova na démona? Že by "
+"nakonec správce měl co do činění s tím démonem?"
 
 #: conversationlist_flagstone.json:flagstone_sentry_23:0
 msgid "That might work. Thank you."
@@ -2971,11 +3046,11 @@ msgstr "Říkáš náhrdelník? Dobře, ukaž mi ho."
 
 #: conversationlist_flagstone.json:flagstone_sentry_41
 msgid "Now, let's see here. Ah yes, it is as I thought. The necklace contains a password."
-msgstr "Dobrá a nyní se na to podívám. Oh ano, to jsem si myslel. Na náhrdelníku je heslo."
+msgstr "Dobrá, ukaž. Oh ano, to jsem si myslel. Na náhrdelníku je heslo."
 
 #: conversationlist_flagstone.json:flagstone_sentry_42
 msgid "'Daylight Shadow'. That must be it. You should try to approach the guardian with this password."
-msgstr "'Osviť Přítmí'. To musí být ono. Zkus se přiblížit ke strážci s tímto tajným heslem."
+msgstr "„Osviť Přítmí“. To musí být ono. Zkus strážce oslovit tímto heslem."
 
 #: conversationlist_flagstone.json:flagstone_sentry_return3
 msgid "Hello again. How is the investigation of the undead in Flagstone going?"
@@ -2991,11 +3066,16 @@ msgstr "Dobře, pátrej dál. A když budeš potřebovat, přijď si ke mně pro
 
 #: conversationlist_flagstone.json:flagstone_sentry_return4
 msgid "Hello again. It seems something happened inside Flagstone that made the undead weaker. I'm sure we have you to thank for it."
-msgstr "Vítej zpět. Zdá se, že uvnitř Flagstonu se něco stalo. Nemrtví jsou nyní slabší. Jsem si jistý, že bychom ti za to měli poděkovat."
+msgstr ""
+"Vítej zpět. Zdá se, že uvnitř Flagstonu se něco stalo. Nemrtví jsou nyní "
+"slabší. Jsem si jistý, že bychom za to měli poděkovat tobě."
 
 #: conversationlist_flagstone.json:flagstone_sentry_return4:0
 msgid "In the depths of Flagstone, I had to fight a winged demon and found a prisoner called Narael. He told me that he has been there for a very long time, and is too weak to leave."
-msgstr "V podzemí Flagstonu byl okřídlený démon. Po vítězném souboji mi řekl jeho vězeň, jistý Narael, že byl zavřený velmi dlouhou dobu a nyní je velmi slabý na to, aby vězení opustil."
+msgstr ""
+"V podzemí Flagstonu jsem musel bojovat s okřídleným démonem. Jeho vězeň, "
+"jistý Narael, mi řekl, že byl zavřený velmi dlouhou dobu a nyní je velmi "
+"slabý na to, aby vězení opustil."
 
 #: conversationlist_flagstone.json:narael
 msgid "Thank you, thank you for freeing me from that monster."
@@ -3003,7 +3083,7 @@ msgstr "Děkuji, děkuji ti za osvobození od toho monstra."
 
 #: conversationlist_flagstone.json:narael_1
 msgid "I have been a captive here for what seems to be an eternity."
-msgstr "Přijde mi, že jsem tu byl vězněn po dobu delší než věčnost."
+msgstr "Přijde mi, že jsem tu byl vězněn celou věčnost."
 
 #: conversationlist_flagstone.json:narael_2
 msgid "Oh, the things they did to me. Thank you so much for freeing me."
@@ -3011,15 +3091,19 @@ msgstr "Oh, co mi všechno udělali. Děkuji ti mockrát za osvobození."
 
 #: conversationlist_flagstone.json:narael_3
 msgid "I was once a citizen in Nor City, and worked on the excavation of Mount Galmore."
-msgstr "Kdysi jsem byl občanem Města Nor a pracoval jsem na výkopech základů pevnosti Mount Galmore."
+msgstr ""
+"Kdysi jsem byl občanem Města Nor a pracoval jsem na těžbě pod Mount Galmore."
 
 #: conversationlist_flagstone.json:narael_4
 msgid "After a while, the day came when I wanted to quit the assignment and return to my wife."
-msgstr "Jednoho dne nastal čas, kdy jsem chtěl ukončit pracovní kontakt a chtěl jsem se vrátit ke své ženě."
+msgstr ""
+"Jednoho dne nastal čas, kdy jsem tam chtěl skočit a vrátit se ke své ženě."
 
 #: conversationlist_flagstone.json:narael_5
 msgid "The officer in charge would not let me, and I was sent to Flagstone as a prisoner for disobeying orders."
-msgstr "Stavbyvedoucí mě ale nechtěl pustit a poslal mě do Flagstonu jako vězně. Za porušení příkazů."
+msgstr ""
+"Velitel mě ale nechtěl pustit a poslal mě do Flagstonu jako vězně za "
+"neuposlechnutí rozkazu."
 
 #: conversationlist_flagstone.json:narael_6
 msgid "If only I could see my wife once more. I have hardly any life left in me, and I don't even have enough strength to leave this place."
@@ -3039,11 +3123,11 @@ msgstr "Pokud v městě Nor City najdeš mou ženu Taurum, řekni jí, že jsem 
 
 #: conversationlist_flagstone.json:narael_9:0
 msgid "I will. Goodbye."
-msgstr "Vyřídím ji to. Na shledanou."
+msgstr "Vyřídím jí to. Na shledanou."
 
 #: conversationlist_flagstone.json:narael_9:1
 msgid "I will. Shadow be with you."
-msgstr "Vyřídím ji to. Přítmí s tebou."
+msgstr "Vyřídím jí to. Přítmí s tebou."
 
 #: conversationlist_fallhaven_south.json:fallhaven_lumberjack_1
 msgid "Hi, I'm Jakrar."
@@ -3059,7 +3143,7 @@ msgstr "Ano, jsem Fallhavenský dřevorubec. Potřebuješ výrobek z nejlepšíh
 
 #: conversationlist_fallhaven_south.json:fallhaven_lumberjack_2:0
 msgid "I'd like to talk with you about Fallhaven's passage to the Duleian Road."
-msgstr "Chtěl bych s tebou mluvit o průchodu z Fallhavenu na stezku zvanou Duleian Road."
+msgstr "Chtěl bych s tebou mluvit o průchodu z Fallhavenu na Dulejskou cestu."
 
 #: conversationlist_fallhaven_south.json:fallhaven_lumberjack_2:1
 #: conversationlist_fallhaven_south.json:fallhaven_lumberjack_15:2
@@ -3115,7 +3199,7 @@ msgstr "Tak to vypadá, že nikdo nemá zájem na znovuotevření té cesty. Vý
 
 #: conversationlist_fallhaven_south.json:fallhaven_lumberjack_4
 msgid "Hmm. Well if you would do me a great favor I would start to cut the trees away."
-msgstr "Hmm. Když mi uděláš laskavost, tak začnu kácet ty stromy."
+msgstr "Hmm. Když mi uděláš velkou laskavost, tak začnu kácet ty stromy."
 
 #: conversationlist_fallhaven_south.json:fallhaven_lumberjack_4:0
 msgid "Sure! What is it?"
@@ -3123,7 +3207,10 @@ msgstr "Jistě. O co jde?"
 
 #: conversationlist_fallhaven_south.json:fallhaven_lumberjack_5
 msgid "Let me tell you a story. Long ago, I was cutting in the woods to the north of Fallhaven. I used to cut the trees with great speed with my favorite axe. It was made of fine steel and probably worth more than my hut."
-msgstr "Poslechni si tento příběh. Kdysi dávno jsem kácel stromy severně od Fallhavenu. Práce mi šla rychle od ruky zejména díky mé oblíbené sekeře, která byla vyrobena z výtečné oceli a snad i byla dražší než moje obydlí."
+msgstr ""
+"Řeknu ti příběh. Kdysi dávno jsem kácel stromy severně od Fallhavenu. Práce "
+"mi šla rychle od ruky zejména díky mé oblíbené sekeře, která byla vyrobena z "
+"výtečné oceli a snad i byla dražší než moje obydlí."
 
 #: conversationlist_fallhaven_south.json:fallhaven_lumberjack_6
 msgid "But then, I got attacked by a pack of wolves and I had to flee immediately. I barely saved my life, but during the escape I lost my precious axe."
@@ -3131,15 +3218,21 @@ msgstr "Najednou mě napadla vlčí smečka a musel jsem rychle utéct. Stěží
 
 #: conversationlist_fallhaven_south.json:fallhaven_lumberjack_7
 msgid "I'm afraid of travelling to that place again because I'm not a trained fighter and the wolves, especially their leader, were really powerful."
-msgstr "Bojím se vrátit zpět na ono místo, protože nejsem trénovaný bojovník a ti vlci, zejména jejich velitel, byli velmi silní."
+msgstr ""
+"Bojím se vrátit zpět na ono místo, protože nejsem trénovaný bojovník a ti "
+"vlci, zejména jejich vůdce, byli velmi silní."
 
 #: conversationlist_fallhaven_south.json:fallhaven_lumberjack_7:0
 msgid "So I guess you want me to retrieve your axe?"
-msgstr "Hádám, že po mě chceš získat tu sekeru zpět?"
+msgstr "Hádám, že po mně chceš získat tu sekeru zpět?"
 
 #: conversationlist_fallhaven_south.json:fallhaven_lumberjack_8
 msgid "Yes exactly. If you would do me that favor I will gladly cut away the trees and receive payment afterwards. Just head north to the Crossroads guardhouse and then head eastwards down the Duleian Road. That's where I lost my axe. And look out for that wolf pack!"
-msgstr "Ano, přesně tak. Když mi tu sekeru přineseš, tak rád odstraním stromy blokující průchod s tím, že si nechám zaplatit až po práci. Jdi na sever ke Crossroad Guardhouse a pak na východ po Dulaian Road. Tam jsem ztratit svou sekeru. Hledej smečku vlků!"
+msgstr ""
+"Ano, přesně tak. Když mi tu sekeru přineseš, tak rád odstraním stromy "
+"blokující průchod s tím, že si nechám zaplatit až po práci. Jdi na sever ke "
+"strážnici na Rozcestí a pak na východ po Dulejské cestě. Tam jsem ztratil "
+"svou sekeru. Dej si pozor na tu smečku vlků!"
 
 #: conversationlist_fallhaven_south.json:fallhaven_lumberjack_8:0
 msgid "Sounds simple enough. On my way."
@@ -3164,7 +3257,7 @@ msgstr "Odstraníš tedy ty stromy, které blokují ten průchod?"
 
 #: conversationlist_fallhaven_south.json:fallhaven_lumberjack_11
 msgid "Sure! Already on my way! The work will be finished soon."
-msgstr "Jistě! Už jsem na cestě! Práce musí být brzy hotová."
+msgstr "Jistě! Už jsem na cestě! Bude to brzy hotovo."
 
 #: conversationlist_fallhaven_south.json:fallhaven_lumberjack_11:0
 msgid "That sounds great! Remember to ask the stupid warden for a decent payment."
@@ -3213,7 +3306,7 @@ msgstr "Ještě ji nemám, ale pracuji na tom."
 
 #: conversationlist_fallhaven_south.json:fallhaven_lumberjack_15
 msgid "Hello again my friend."
-msgstr "Vítej zpět."
+msgstr "Vítej zpět, příteli."
 
 #: conversationlist_fallhaven_south.json:fallhaven_lumberjack_15:0
 msgid "I cannot thank you enough for cutting away those trees! Finally I've got a shortcut!"
@@ -3229,7 +3322,9 @@ msgstr "Nejdřív bys měl promluvit s Mikhailem."
 
 #: conversationlist_signs_pre067.json:note_lodars
 msgid "On the ground, you find a piece of paper with a lot of strange symbols. You can barely make out the words 'meet me at Lodar's hideaway', but you are not sure what it means."
-msgstr "Na zemi vidíš kus papíru se spoustou zvláštních symbolů. S obtížemi rozeznáváš jednotlivá slova: 'potkáme se u Lodarovi skrýše', ale nevíš jistě, co to znamená."
+msgstr ""
+"Na zemi vidíš kus papíru se spoustou zvláštních symbolů. S obtížemi rozeznáš "
+"slova „potkáme se u Lodarovy skrýše“, ale nevíš jistě, co to znamená."
 
 #: conversationlist_signs_pre067.json:keyarea_crossglen_smith
 msgid "Audir shouts: Hey you, get away! You are not allowed back there."
@@ -3237,7 +3332,9 @@ msgstr "Audir křičí: Hej ty, zmiz! Tam nemáš co pohledávat."
 
 #: conversationlist_signs_pre067.json:sign_crossglen_cave
 msgid "The sign on the wall is cracked in several places. You cannot make out anything comprehensible from the writing."
-msgstr "Deska na zdi je na více místech popraskaná. Z nápisu se ti nedaří přečíst nic smysluplného."
+msgstr ""
+"Deska na zdi je na několika místech popraskaná. Z nápisu se ti nedaří "
+"přečíst nic smysluplného."
 
 #: conversationlist_signs_pre067.json:sign_wild1
 msgid ""
@@ -3269,15 +3366,17 @@ msgstr "Zde spočívá Gandir, který byl zabít rukou svého bývalého příte
 
 #: conversationlist_signs_pre067.json:sign_fallhaven1
 msgid "Welcome to Fallhaven. Watch out for pickpockets!"
-msgstr "Vítejte ve Fallhavenu. Pozor na zloděje!"
+msgstr "Vítejte ve Fallhavenu. Pozor na kapsáře!"
 
 #: conversationlist_signs_pre067.json:key_fallhavenchurch
 msgid "You are not allowed to enter the catacombs of Fallhaven Church without permission."
-msgstr "Bez povolení nemůžeš vstoupit do katakomb pod kostelem ve Fallhavenu."
+msgstr "Do katakomb pod kostelem ve Fallhavenu nemůžeš vstoupit bez povolení."
 
 #: conversationlist_signs_pre067.json:arcir_basement_tornpage
 msgid "You see a torn page from a book titled 'Calomyran Secrets'. Blood stains its edges, and someone has scribbled the words 'Larcal' with the blood."
-msgstr "Vidíš vytrženou stránku z knížky 'Tajemství Calomyranu'. Okraje jsou potřísněné krví a přes celou stránku někdo krví napsal slovo ' Larcal'."
+msgstr ""
+"Vidíš vytrženou stránku z knížky „Calomyranská tajemství“. Okraje jsou "
+"potřísněné krví a někdo krví napsal slovo „Larcal“."
 
 #: conversationlist_signs_pre067.json:arcir_basement_statue
 msgid "Elythara, mother of the light. Protect us from the curse of the Shadow."
@@ -3285,7 +3384,7 @@ msgstr "Elythara, matka světla. Ochraňuj nás před kletbou Přítmí."
 
 #: conversationlist_signs_pre067.json:fallhaven_tavern_room
 msgid "You are not allowed into the room unless you have rented it."
-msgstr "Nemůžeš vstoupit do pokoje, pokud ho nemáš pronajmutý."
+msgstr "Nemůžeš vstoupit do pokoje, pokud ho nemáš pronajatý."
 
 #: conversationlist_signs_pre067.json:fallhaven_derelict1
 msgid "Bucus shouts: Hey you, get away from there!"
@@ -3319,7 +3418,9 @@ msgstr ""
 
 #: conversationlist_signs_pre067.json:flagstone_key_demon
 msgid "The demon radiates a force that pushes you back, making it impossible for you to approach it."
-msgstr "Démon vyzařuje zvláštní sílu, která tě tlačí zpět. Je nemožné pokračovat vpřed."
+msgstr ""
+"Démon vyzařuje zvláštní sílu, která tě tlačí zpět, takže je nemožné "
+"přiblížit se k němu."
 
 #: conversationlist_signs_pre067.json:flagstone_brokensteps
 msgid "You notice that this tunnel seems to be dug out from below Flagstone. Probably the work of one of the former prisoners from Flagstone."
@@ -3333,7 +3434,7 @@ msgid ""
 msgstr ""
 "na sever: Fallhaven\n"
 "na východ: Vilegard\n"
-"na východ: Nor City"
+"na východ: Město Nor"
 
 #: conversationlist_thievesguild_1.json:thievesguild_thief_1
 msgid "Hello kid."
@@ -3362,7 +3463,7 @@ msgstr "Co je to za místo?"
 
 #: conversationlist_thievesguild_1.json:thievesguild_thief_2
 msgid "This is our guild hall. We are safe from the guards of Fallhaven in here."
-msgstr "To je sídlo našeho cechu. Jsme zde v bezpečí před strážemi."
+msgstr "Tohle je sídlo našeho cechu. Jsme zde v bezpečí před strážemi."
 
 #: conversationlist_thievesguild_1.json:thievesguild_thief_3
 msgid "We can do pretty much as we like here. As long as Umar allows it, that is."
@@ -3378,7 +3479,7 @@ msgstr "Kdo je Umar?"
 
 #: conversationlist_thievesguild_1.json:thievesguild_thief_4
 msgid "He is probably in his room over there [points]."
-msgstr "Nejspíš je v jeho pokoji, támhle [ukazuje]."
+msgstr "Nejspíš je ve svém pokoji, támhle [ukazuje]."
 
 #: conversationlist_thievesguild_1.json:thievesguild_thief_5
 msgid "Umar is our guild leader. He decides our rules and guides us in moral decisions."
@@ -3511,11 +3612,11 @@ msgstr "Proč?"
 
 #: conversationlist_thievesguild_1.json:thievesguild_pickpocket_3
 msgid "Well, I have a tendency to ... how shall I put this ... acquire certain things easily."
-msgstr "Nuže, mám sklony k ... jak to jen nazvat... ladnému nabývání věci."
+msgstr "Nuže, mám sklony k ... jak to jen nazvat... snadnému získávání věcí."
 
 #: conversationlist_thievesguild_1.json:thievesguild_pickpocket_4
 msgid "Things previously in the possession of other people."
-msgstr "Věcí, které dříve patřili někomu jinému."
+msgstr "Věcí, které dříve patřily někomu jinému."
 
 #: conversationlist_thievesguild_1.json:thievesguild_pickpocket_4:0
 msgid "Do you mean like stealing?"
@@ -3523,19 +3624,21 @@ msgstr "Myslíš kradení?"
 
 #: conversationlist_thievesguild_1.json:thievesguild_pickpocket_5
 msgid "No no. I wouldn't call it stealing. It's more of a transfer of ownership. To me, that is."
-msgstr "Ne ne. Nenadál bych to kradením. Je to spíš změna vlastníka. Abych byl přesný: já jsem nový vlastník."
+msgstr ""
+"Ne ne. Neříkal bych tomu kradení. Je to spíš změna vlastníka. Abych byl "
+"přesný: já jsem nový vlastník."
 
 #: conversationlist_thievesguild_1.json:thievesguild_pickpocket_5:0
 msgid "That sounds a lot like stealing to me."
-msgstr "Tomu se říká krádež."
+msgstr "Mně to jako krádež připadá."
 
 #: conversationlist_thievesguild_1.json:thievesguild_pickpocket_5:1
 msgid "That sounds like a good justification."
-msgstr "To je dobrá omluva."
+msgstr "To je dobré vysvětlení."
 
 #: conversationlist_thievesguild_1.json:thievesguild_pickpocket_6
 msgid "After all, we are the Thieves' Guild. What did you expect?"
-msgstr "Konec konců, jsme přece Zlodějský cech. Co myslíš?"
+msgstr "Koneckonců, jsme přece Zlodějský cech. Co jsi čekal?"
 
 #: conversationlist_thievesguild_1.json:thievesguild_troublemaker_1
 msgid "Hello. Don't I recognize you from somewhere?"
@@ -3574,16 +3677,16 @@ msgstr "Můžu se podívat, co máš k prodeji?"
 
 #: conversationlist_thievesguild_1.json:thievesguild_troublemaker_3
 msgid "No, I really recognize you."
-msgstr "Ne, opravdu tě nepoznávám."
+msgstr "Ne, určitě tě poznávám."
 
 #: conversationlist_thievesguild_1.json:thievesguild_troublemaker_3:0
 #: conversationlist_loneford_2.json:landa_5:0
 msgid "You must have me confused with someone else."
-msgstr "[REVIEW]Musel sis mě s někým splést."
+msgstr "Musíš si mě s někým plést."
 
 #: conversationlist_thievesguild_1.json:thievesguild_troublemaker_3:1
 msgid "Maybe you have me confused with my brother Andor."
-msgstr "[REVIEW]Možná sis mě popletl s mým bratrem Andorem."
+msgstr "Možná sis mě popletl s mým bratrem Andorem."
 
 #: conversationlist_thievesguild_1.json:thievesguild_troublemaker_4
 msgid "Yes, might be."
@@ -3615,13 +3718,15 @@ msgstr "Bhh, jsi k ničemu. Na shledanou."
 
 #: conversationlist_farrik.json:farrik_1
 msgid "Hello. I heard that you helped us find the key of Luthor. Good work, it will really come in handy."
-msgstr "Ahoj. Slyšel jsem, že máš prsty v nalezení klíče Luthora. Dobrá práce, budeme jej potřebovat."
+msgstr ""
+"Ahoj. Slyšel jsem, že jsi nám pomohl nalézt Luthorův klíč. Dobrá práce, "
+"budeme jej potřebovat."
 
 #: conversationlist_farrik.json:farrik_1:1
 #: conversationlist_farrik.json:farrik_2:1
 #: conversationlist_farrik.json:farrik_3:0
 msgid "What can you tell me about the Thieves' Guild?"
-msgstr "Co mi můžeš říct o Zlodějském Cechu?"
+msgstr "Co mi můžeš říct o Zlodějském cechu?"
 
 #: conversationlist_farrik.json:farrik_2
 msgid "I'm Farrik, Umar's brother."
@@ -3643,15 +3748,21 @@ msgstr "Co se aktuálně děje?"
 
 #: conversationlist_farrik.json:farrik_5
 msgid "Well, there was one thing a few weeks ago. One of our guild members got arrested for trespassing."
-msgstr "Tedy, před pár týdny se stala taková věc. Jeden náš člen byl zadržen za vloupání."
+msgstr ""
+"Tedy, před pár týdny se stala taková věc. Jeden náš člen byl zatčen za "
+"vloupání."
 
 #: conversationlist_farrik.json:farrik_6
 msgid "The Fallhaven guard has started to get really annoyed at us lately. Probably because we have been very successful in our recent missions."
-msgstr "Stáže Fallhavenu po nás poslední dobou jdou. Zřejmě protože jsme na posledních akcích byli velmi úspěšní."
+msgstr ""
+"Stráže ve Fallhavenu po nás poslední dobou jdou. Zřejmě protože jsme na "
+"posledních akcích byli velmi úspěšní."
 
 #: conversationlist_farrik.json:farrik_7
 msgid "The guards have increased their security lately, leading to them arresting one of our members."
-msgstr "Stáže v poslední době přijaly taková bezpečnostní opatření, že jednoho našeho člena zadržely."
+msgstr ""
+"Stráže v poslední době posílily bezpečnost, takže pak zatkly jednoho našeho "
+"člena."
 
 #: conversationlist_farrik.json:farrik_8
 msgid "He is currently held in the jail here in Fallhaven, pending transfer to Feygard."
@@ -3675,15 +3786,19 @@ msgstr "A proto myslím, že ti mohu svěřit jedno tajemství. Dnes v noci plá
 
 #: conversationlist_farrik.json:farrik_11:0
 msgid "Those guards really seem annoying."
-msgstr "Ty stráže jsou skutečně nepříjemné."
+msgstr "Ty stráže jsou skutečně otravné."
 
 #: conversationlist_farrik.json:farrik_11:1
 msgid "After all, if he wasn't allowed down there, then the guards are right to arrest him."
-msgstr "Co naplat, když neměl povolení pro vstup do katakomb, tak je správné, že jo stráže zatkly."
+msgstr ""
+"Co naplat, když neměl povolení pro vstup do katakomb, tak je správné, že ho "
+"stráže zatkly."
 
 #: conversationlist_farrik.json:farrik_12
 msgid "Yeah, I guess so. But for the guild's sake, we would rather have our friend freed than imprisoned."
-msgstr "Jo, asi ano. Ale pro náš cech by bylo lepší, kdyby byl náš přítel osvobozen než zavřen."
+msgstr ""
+"Jo, asi ano. Ale pro náš cech by bylo lepší, kdyby byl náš přítel na svobodě "
+"než ve vězení."
 
 #: conversationlist_farrik.json:farrik_12:0
 #: conversationlist_farrik.json:farrik_17:1
@@ -3700,7 +3815,9 @@ msgstr "[lhát] Bez obav, váš plán na jeho osvobození neprozradím."
 
 #: conversationlist_farrik.json:farrik_13
 msgid "Oh yes, they are. The people also dislike them in general, it's not just us in the Thieves' Guild."
-msgstr "No, to jsou. Lidi je obecně nemají rádi, ne jenom my ze Zlodějského Cechu."
+msgstr ""
+"No, to jsou. Rádi je nemají ani ostatní lidi, ne jenom my ze Zlodějského "
+"cechu."
 
 #: conversationlist_farrik.json:farrik_13:0
 msgid "Is there anything I can do to help you with those annoying guards?"
@@ -3712,11 +3829,13 @@ msgstr "Díky, teď prosím odejdi."
 
 #: conversationlist_farrik.json:farrik_15
 msgid "Whatever, they wouldn't believe you anyway."
-msgstr "Jak myslíš, stejně by ti nevěřily."
+msgstr "Jak myslíš, stejně by ti nevěřili."
 
 #: conversationlist_farrik.json:farrik_16
 msgid "Are you sure you want to annoy the guards? If they catch word of you being involved, you could get into a lot of trouble."
-msgstr "Skutečně nám chceš pomoct? Když tě chytí, můžeš z toho mít problémy."
+msgstr ""
+"Skutečně nám chceš pomoct? Když tě dozví, že jsi do toho zapleten, můžeš mít "
+"problémy."
 
 #: conversationlist_farrik.json:farrik_16:0
 msgid "No problem, I can handle myself!"
@@ -3747,11 +3866,14 @@ msgstr "Dobře."
 
 #: conversationlist_farrik.json:farrik_19
 msgid "OK, here is the plan. The guard captain has a bit of a drinking problem."
-msgstr "Dobře, zde je náš plán. Kapitán stráží má drobný problém s alkoholem, zejména má rád medovinu."
+msgstr "Dobře, zde je náš plán. Kapitán stráží má drobný problém s alkoholem."
 
 #: conversationlist_farrik.json:farrik_20
 msgid "If we were able to supply him with some mead that we have prepared, we might just be able to sneak our friend out during the night, when the captain is sleeping off the drunkenness."
-msgstr "Pokud se nám povede mu podstrčit naši speciální medovinu, tak máme šanci nepozorovaně našeho kamaráda vyvést z vězení zatímco kapitán bude v opici vyspávat."
+msgstr ""
+"Pokud se nám povede mu podstrčit naši speciální medovinu, tak máme šanci v "
+"noci nepozorovaně našeho kamaráda vyvést z vězení, zatímco bude kapitán "
+"vyspávat v opici."
 
 #: conversationlist_farrik.json:farrik_20a
 msgid "Our cook can prepare a special brew of mead for you that will knock him out."
@@ -3759,7 +3881,9 @@ msgstr "Náš kuchař umí připravit speciální medovinu, která mu přivodí 
 
 #: conversationlist_farrik.json:farrik_21
 msgid "He would probably need to be persuaded to drink on duty too. If that should fail, he could probably be bribed instead."
-msgstr "Nejspíš ho bude muset někdo přesvědčit, aby se během služby napil. Pokud to nepůjde, zřejmě ho půjde uplatit."
+msgstr ""
+"Nejspíš ho bude muset někdo přesvědčit, aby se napil během služby. Pokud to "
+"nepůjde, zřejmě ho půjde uplatit."
 
 #: conversationlist_farrik.json:farrik_22
 msgid "How does that sound to you? Do you think you are up to it?"
@@ -3804,11 +3928,13 @@ msgstr "Hotovo. V noci bude spát jako Šípková Růženka."
 
 #: conversationlist_farrik.json:farrik_24
 msgid "That is good news! Now we should be able to get our friend out from jail tonight."
-msgstr "To jsou dobré zprávy! Teď bychom měli osvobodit našeho kamaráda z vězení."
+msgstr ""
+"To jsou dobré zprávy! Dnes v noci bychom měli zvládnout osvobodit našeho "
+"kamaráda z vězení."
 
 #: conversationlist_farrik.json:farrik_25
 msgid "Thank you for your help my friend. Take these coins as a token of our appreciation."
-msgstr "Děkuji ti za tvou pomoc. Jako projev uznání si vem tyto peníze."
+msgstr "Děkuji ti za tvou pomoc. Jako projev uznání si vezmi tyto peníze."
 
 #: conversationlist_farrik.json:farrik_25:1
 msgid "Finally, some gold."
@@ -3836,7 +3962,7 @@ msgstr "Prý máš rád medovinu."
 
 #: conversationlist_fallhaven_warden.json:fallhaven_warden:2
 msgid "The thieves are planning an escape for their friend."
-msgstr "Zloději plánují útěk zatknutého kamaráda."
+msgstr "Zloději plánují útěk jejich zatčeného kamaráda."
 
 #: conversationlist_fallhaven_warden.json:fallhaven_warden:3
 #: conversationlist_fallhaven_warden.json:fallhaven_warden_11:1
@@ -3850,19 +3976,23 @@ msgstr "Ten zloděj? Byl chycen při činu. Chtěl se vloupat do katakomb pod ko
 
 #: conversationlist_fallhaven_warden.json:warden_prisoner_2
 msgid "Luckily, we caught him before he could get down there. Now he'll serve as an example to all other thieves."
-msgstr "Naštěstí jsme jej chytli dřív, než se tam dolů dostal. Teď poslouží ostatním zlodějům jako odstrašující příklad."
+msgstr ""
+"Naštěstí jsme jej chytli dřív, než se tam dolů dostal. Teď poslouží jako "
+"odstrašující příklad všem ostatním zlodějům."
 
 #: conversationlist_fallhaven_warden.json:warden_prisoner_3
 msgid "Damn thieves. There must be a nest of them around here somewhere. If only I could find where they hide."
-msgstr "Zlotřilí zloději. Někde poblíž tu musí mít hnízdo. Kéž by se mi povedlo zjistit, kde se skrývají."
+msgstr ""
+"Zatracení zloději. Někde poblíž tu musí mít hnízdo. Kéž by se mi povedlo "
+"zjistit, kde se skrývají."
 
 #: conversationlist_fallhaven_warden.json:fallhaven_warden_1
 msgid "Mead? Oh ... no, I don't do that anymore. Who told you that?"
-msgstr "Medovinu? An... ach ne, ne ne. Tu už nepiju. Kdo ti to řekl?"
+msgstr "Medovinu? Ach… ne, tu už nepiju. Kdo ti to řekl?"
 
 #: conversationlist_fallhaven_warden.json:fallhaven_warden_2
 msgid "I've stopped doing that years ago."
-msgstr "Už jsem s tím přestal před léty."
+msgstr "Už jsem s tím před léty přestal."
 
 #: conversationlist_fallhaven_warden.json:fallhaven_warden_2:0
 msgid "Sounds like a good approach. Good luck with keeping away from it."
@@ -3874,7 +4004,7 @@ msgstr "Ani trošku?"
 
 #: conversationlist_fallhaven_warden.json:fallhaven_warden_3
 msgid "Um. *clears throat* I really shouldn't."
-msgstr "Um. *říhne si* Opravdu bych neměl."
+msgstr "Um. *odkašle si* Opravdu bych neměl."
 
 #: conversationlist_fallhaven_warden.json:fallhaven_warden_3:0
 msgid "I brought some with me if you would like to have a sip."
@@ -3898,7 +4028,7 @@ msgstr "Mohl bych za popíjení ve službě dostat pokutu. Myslím, že teď si 
 
 #: conversationlist_fallhaven_warden.json:fallhaven_warden_6
 msgid "Thank you for the drink though, I will enjoy it when I get home later tomorrow."
-msgstr "Díky za ten nápoj, dám si ho později, až přijdu zítra domů."
+msgstr "Ale díky za ten nápoj, dám si ho později, až přijdu zítra domů."
 
 #: conversationlist_fallhaven_warden.json:fallhaven_warden_6:0
 #: conversationlist_prim_arghest.json:arghest_return_1:0
@@ -3908,11 +4038,14 @@ msgstr "Rádo se stalo. Na shledanou."
 
 #: conversationlist_fallhaven_warden.json:fallhaven_warden_6:1
 msgid "What if someone would pay you the amount of the fine?"
-msgstr "Co kdyby ti někdo zaplatil tu pokutu?"
+msgstr "Co kdyby ti někdo tu pokutu nahradil?"
 
 #: conversationlist_fallhaven_warden.json:fallhaven_warden_7
 msgid "Oh, that sounds a bit shady. I doubt anyone could afford the 450 gold around here. Anyway, I would need a bit more than that just to risk it."
-msgstr "Oh, to zní trošku podezřele. Nemyslím si, že by si tu někdo mohl dovolit těch 450 zlaťáků. Navíc bych potřeboval trošku víc, aby si to dovolil risknout."
+msgstr ""
+"Oh, to zní trošku podezřele. Nemyslím si, že by si tu někdo mohl dovolit "
+"těch 450 zlaťáků. Navíc bych potřeboval trošku víc, abych si to dovolil "
+"risknout."
 
 #: conversationlist_fallhaven_warden.json:fallhaven_warden_7:0
 msgid "I have 500 gold right here that you could have."
@@ -3932,7 +4065,9 @@ msgstr "Jistě. Teď když o tom tak mluvíš. Jistě by to bylo dobré."
 
 #: conversationlist_fallhaven_warden.json:fallhaven_warden_8:0
 msgid "So what if I pay you, say, 400 gold. Would that cover enough of your anxiety to enjoy the drink now?"
-msgstr "Co když ti dám, řekněme, 400 zlatých? Měl bys pak chuť se napít?"
+msgstr ""
+"Co když ti dám, řekněme, 400 zlatých? Otupilo by to tvé obavy dost na to, "
+"aby sis ten drink vychutnal?"
 
 #: conversationlist_fallhaven_warden.json:fallhaven_warden_8:1
 msgid "This is starting to sound too shady for me. I'll leave you to your duty, goodbye."
@@ -3976,11 +4111,15 @@ msgstr "Ne, to byl jenom vtip. Nic si z toho nedělej."
 
 #: conversationlist_fallhaven_warden.json:fallhaven_warden_20:2
 msgid "On second thought, I better not upset the Thieves' Guild. Never mind I said anything."
-msgstr "Když o tom znovu přemýšlím, tak raději nepůjdu proti Cechu Zlodějů. Zapomeň na to, co jsi ode mě slyšel."
+msgstr ""
+"Když o tom znovu přemýšlím, tak raději nepůjdu proti Cechu zlodějů. Zapomeň "
+"na to, co jsi ode mě slyšel."
 
 #: conversationlist_fallhaven_warden.json:fallhaven_warden_21
 msgid "Tonight? Thank you for this information. We will make sure to increase the security tonight then, but in such a way that they won't notice."
-msgstr "Dnes v noci? Děkuji za informaci. Zvýšíme na dnešní noc počet stáží, ale tak, aby si toho nevšimli."
+msgstr ""
+"Dnes v noci? Děkuji za informaci. Zvýšíme na dnešní noc počet stráží, ale "
+"tak, aby si toho nevšimli."
 
 #: conversationlist_fallhaven_warden.json:fallhaven_warden_22
 msgid "When they do decide to break him free, we will be prepared. Maybe we can arrest more of those filthy thieves."
@@ -3988,13 +4127,15 @@ msgstr "Pokud se rozhodnou jej dnes osvobodit, tak my budeme připraveni a možn
 
 #: conversationlist_fallhaven_warden.json:fallhaven_warden_23
 msgid "Thank you again for the information. While I'm not sure how you may know this, I really appreciate you telling me."
-msgstr "Děkuji za ty informace, dítě. Sice nevím, jak se k tobě dostaly, ale oceňuji, žes ses o ně s námi podělilo."
+msgstr ""
+"Ještě jednou děkuji za ty informace. Sice nevím, jak ses o tom dozvěděl, ale "
+"oceňuji, žes mi to řekl."
 
 #: conversationlist_fallhaven_warden.json:fallhaven_warden_24
 msgid "I want you to go one step further and tell them that we will have less security for tonight. But instead we will increase the security. That way we can really be ready for them."
 msgstr ""
-"Chci jít ale o krok dál. Řekni těm zloduchům, že dnes v noci bude ve věznici méně stráží. \n"
-"A abychom na ně byli připravení, bude ve skutečnosti stráží víc."
+"Chci jít ale o krok dál. Řekni těm zloduchům, že dnes v noci bude ve věznici "
+"méně stráží. A abychom na ně byli připravení, bude ve skutečnosti stráží víc."
 
 #: conversationlist_fallhaven_warden.json:fallhaven_warden_24:0
 msgid "Sure, I can do that."
@@ -4006,7 +4147,9 @@ msgstr "Dobře. Dej mi vědět, až jim to vyřídíš."
 
 #: conversationlist_fallhaven_warden.json:fallhaven_warden_30
 msgid "Hello again, my friend. Did you tell those thieves that we will lower our security tonight?"
-msgstr "Vítej zpět, dítě. Řeklo jsi těm zlodějům, že dnes v noci bude ve věznici méně stráží?"
+msgstr ""
+"Vítej zpět, příteli. Řekl jsi těm zlodějům, že dnes v noci bude ve věznici "
+"méně stráží?"
 
 #: conversationlist_fallhaven_warden.json:fallhaven_warden_30:0
 msgid "Yes, they won't expect a thing."
@@ -4047,7 +4190,7 @@ msgstr "A kde ho můžu najít?"
 
 #: conversationlist_fallhaven_warden.json:fallhaven_warden_pathway_3
 msgid "He lives in his hut, immediately south of my prison. Don't you bother me again!"
-msgstr "Žije v jeho chajdě, přesně na jih od vězení. Už mě neotravuj!"
+msgstr "Žije ve své chajdě, hned na jih od vězení. Už mě neotravuj!"
 
 #: conversationlist_fallhaven_warden.json:fallhaven_warden_pathway_3:0
 msgid "Easy. Easy. I'm already leaving."
@@ -4064,11 +4207,11 @@ msgstr "Ahoj znovu."
 #: conversationlist_umar.json:umar_return_1:1
 #: conversationlist_umar.json:umar_return_2:1
 msgid "Nice to meet you. Goodbye."
-msgstr "Je pěkné tě opět vidět. Na shledanou."
+msgstr "Rád jsem tě zase viděl. Na shledanou."
 
 #: conversationlist_umar.json:umar_return_2:0
 msgid "Can you repeat what you said about Andor?"
-msgstr "Můžeš mi prosím znovu říct, co jsi předtím říkal o Andorovi?"
+msgstr "Můžeš mi prosím zopakovat, co jsi předtím říkal o Andorovi?"
 
 #: conversationlist_umar.json:umar_novisit_1
 msgid "Hello. How did your search go?"
@@ -4080,7 +4223,7 @@ msgstr "Jaké pátrání?"
 
 #: conversationlist_umar.json:umar_2
 msgid "Last time we talked, you asked for the way to Lodar's Hideaway. Did you find it?"
-msgstr "Naposledy tě zajímalo, jak najít cestu k Lodarovi Skrýši. Už víš, kudy se tam dostaneš?"
+msgstr "Naposledy tě zajímalo, jak najít cestu k Lodarově skrýši. Našel jsi ji?"
 
 #: conversationlist_umar.json:umar_2:0
 msgid "We have never met."
@@ -4088,11 +4231,11 @@ msgstr "Nikdy jsme se nepotkali."
 
 #: conversationlist_umar.json:umar_2:1
 msgid "You must have me confused with my brother Andor. We look very much alike."
-msgstr "Musel sis mě splést s mým bratrem, Andorem. Vypadáme velmi podobně."
+msgstr "Musel sis mě splést s mým bratrem, Andorem. Jsme si velmi podobní."
 
 #: conversationlist_umar.json:umar_3
 msgid "Oh. I must have you confused with someone else."
-msgstr "[REVIEW]Och, musel sis mě s někým splést."
+msgstr "Och, musel jsem si tě s někým splést."
 
 #: conversationlist_umar.json:umar_3:0
 msgid "My brother Andor and I look very much alike."
@@ -4108,15 +4251,20 @@ msgstr "To znamená, že tu Andor byl. Co zde dělal?"
 
 #: conversationlist_umar.json:umar_5
 msgid "He came here a while ago, asking a lot of questions about what relation the Thieves' Guild has to the Shadow and to the royal guard in Feygard."
-msgstr "Přišel před nějakou dobou a měl spoustu otázek, zejména o vztahu Zlodějského Cechu k Přítmí a ke královským strážím Feygardu."
+msgstr ""
+"Přišel před nějakou dobou a měl spoustu otázek, zejména o vztahu Zlodějského "
+"cechu k Přítmí a ke královským strážím Feygardu."
 
 #: conversationlist_umar.json:umar_6
 msgid "We in the Thieves' Guild really don't care much for the Shadow. Nor do we care for the royal guard."
-msgstr "Nás, členy Zlodějského Cechu, Přítmí ani královské stráže nezajímají."
+msgstr ""
+"My ve Zlodějském cechu se o Přítmí moc nestaráme. Ani o královské stráže."
 
 #: conversationlist_umar.json:umar_7
 msgid "We try to be above their bickering and differences. They may fight as much as they want, but the Thieves' Guild will outlive them all."
-msgstr "Snažíme se být nad věcí ohledně jejich rozdílů a hašteřením. Ať si mezi sebou bojují, Zlodějský Cech je všechny předčí."
+msgstr ""
+"Snažíme se být nad věcí ohledně jejich rozdílů a hašteření. Ať si mezi sebou "
+"bojují, Zlodějský cech je přežije všechny."
 
 #: conversationlist_umar.json:umar_7:0
 msgid "What conflict?"
@@ -4136,15 +4284,19 @@ msgstr "Královská stráž vedená Lordem Geomyrem se snaží snížit v posled
 
 #: conversationlist_umar.json:umar_conflict_3
 msgid "The priests of the Shadow, mostly seated in Nor City, are opponents to the new restrictions, saying that they limit the ways that they can please the Shadow."
-msgstr "Kněží Přítmí, kteří sídlí především ve Městě Nor, jsou odpůrci těchto omezení. Říkají, že to omezuje možnosti života, jenž je v souladu s pravidly Přítmí."
+msgstr ""
+"Kněží Přítmí, kteří sídlí především ve Městě Nor, jsou odpůrci těchto "
+"omezení. Říkají, že je to omezuje v možnostech, jak potěšit Přítmí."
 
 #: conversationlist_umar.json:umar_conflict_4
 msgid "In turn, the rumor is that the priests of the Shadow are planning to overthrow Lord Geomyr and his forces."
-msgstr "Říká se, že kněží Přítmí plánují odvetu. Chtějí svrhnout Lorda Geomyra i jeho armádu."
+msgstr "Říká se, že kněží Přítmí plánují svržení Lorda Geomyra a jeho armády."
 
 #: conversationlist_umar.json:umar_conflict_5
 msgid "Also, the rumor is that the priests of the Shadow are still doing their rituals, despite the fact that most of the rituals have been banned."
-msgstr "A také se říká, že kněží Přítmí stále provádějí své rituály, i když už většina z těch rituálů je zakázaná."
+msgstr ""
+"A také se říká, že kněží Přítmí stále provádějí své rituály, i když už je "
+"většina z nich zakázaná."
 
 #: conversationlist_umar.json:umar_conflict_6
 msgid "Lord Geomyr and his royal guard on the other hand, are still trying their best to rule in a way that they feel is fair."
@@ -4152,7 +4304,9 @@ msgstr "Lord Geomyr a jeho královské stráže se proto snaží čím dál víc
 
 #: conversationlist_umar.json:umar_conflict_7
 msgid "We in the Thieves' Guild try not to get involved in the conflict. Our business is so far unaffected by all of this."
-msgstr "My ve Zlodějském Cechu se snažíme držet stranou. Naše věc je tím zatím nedotčena."
+msgstr ""
+"My ve Zlodějském cechu se snažíme držet stranou. Naše obchody nic z toho "
+"zatím nepostihuje."
 
 #: conversationlist_umar.json:umar_conflict_7:0
 #: conversationlist_buceth.json:buceth_story_10:1
@@ -4161,7 +4315,7 @@ msgstr "Díky, žes mi to všechno řekl."
 
 #: conversationlist_umar.json:umar_conflict_7:1
 msgid "Whatever, that doesn't concern me."
-msgstr "Ať se děje, co se děje, mě se to netýká."
+msgstr "To se mě netýká."
 
 #: conversationlist_umar.json:umar_andor_1
 msgid "He asked me for my support, and asked of how to find Lodar."
@@ -4173,11 +4327,16 @@ msgstr "Kdo je Lodar?"
 
 #: conversationlist_umar.json:umar_andor_2
 msgid "Lodar? He is one of the famous potion makers from the old days. The Thieves' Guild has requested his services many times before. He can make all sorts of strong sleeping potions, healing potions and cures."
-msgstr "Lodar? Lodar je jeden z nejslavnějších alchymistů že staré školy. Zlodějský Cech využil vícekrát jeho služeb. Umí připravit všechny druhy silných uspávacích elixírů, léčivých i uzdravujících lektvarů."
+msgstr ""
+"Lodar? Lodar je jeden z nejslavnějších alchymistů že staré školy. Zlodějský "
+"cech mnohokrát využil jeho služeb. Umí připravit všechny možné silné "
+"uspávací elixíry, léčivé i uzdravující lektvary."
 
 #: conversationlist_umar.json:umar_andor_3
 msgid "But his specialty is, of course, his poisons. His poison can harm even the largest of monsters."
-msgstr "Ale jeho specialitou jsou, samozřejmě, jeho jedy. Jeho jed umí poškodit dokonce i ty největší nestvůry."
+msgstr ""
+"Ale jeho specialitou jsou, samozřejmě, jeho jedy. Jeho jed umí ublížit i těm "
+"největším nestvůrám."
 
 #: conversationlist_umar.json:umar_andor_3:0
 msgid "What would Andor want with him?"
@@ -4193,7 +4352,9 @@ msgstr "Nuže, kde můžu najít tohoto Lodara?"
 
 #: conversationlist_umar.json:umar_lodar_1
 msgid "I really shouldn't tell you. How to get to him is one of our closely guarded secrets in the guild. His hideaway is only reachable by our members."
-msgstr "To bych to neměl říct. Jak se k němu dostat je jedno z našich nejstřeženějších tajemství. Jeho úkryt je dostupný pouze pro naše členy."
+msgstr ""
+"To bych ti neměl říkat. Jak se k němu dostat je jedno z našich "
+"nejstřeženějších tajemství. K jeho úkrytu se dostanou jenom naši členové."
 
 #: conversationlist_umar.json:umar_lodar_2
 msgid "However, I heard that you helped us find the key of Luthor. This is something we have been trying to get to for a long time."
@@ -4201,7 +4362,10 @@ msgstr "Nicméně jsem slyšel, že díky tobě máme Luthorův klíč. Ten jsme
 
 #: conversationlist_umar.json:umar_lodar_3
 msgid "OK, I'll tell you how to get to Lodar's Hideaway. But you have to promise to keep it a secret. Do not tell anyone. Not even those that appear to be members of the Thieves' Guild."
-msgstr "A proto to řeknu, jak se dostat k Lodarově úkrytu. Ale musíš mi slíbit, že si to tajemství necháš pro sebe. Nikomu to neříkej. Ani těm, kteří vypadají jako členové Zlodějského Cechu."
+msgstr ""
+"Dobře, řeknu ti, jak se dostat k Lodarově úkrytu. Ale musíš mi slíbit, že si "
+"to tajemství necháš pro sebe. Nikomu to neříkej. Ani těm, kteří vypadají "
+"jako členové Zlodějského cechu."
 
 #: conversationlist_umar.json:umar_lodar_3:0
 msgid "OK, I'll promise to keep it a secret."
@@ -4209,7 +4373,7 @@ msgstr "Dobře. Slibuji, že to nikomu neřeknu."
 
 #: conversationlist_umar.json:umar_lodar_3:1
 msgid "I can't give any guarantees, but I will try."
-msgstr "Nemohu to garantovat, ale pokusím se."
+msgstr "Nemohu to zaručit, ale pokusím se."
 
 #: conversationlist_umar.json:umar_lodar_4
 msgid "Good. The thing is, you not only need to find the place itself, but you also need to utter the correct words to be allowed entry by the guardian."
@@ -4217,11 +4381,13 @@ msgstr "Dobře. Zádrhel je v tom, že nestačí najít samotné místo skrýše
 
 #: conversationlist_umar.json:umar_lodar_5
 msgid "The only one that understands the language of the guardian is the old man Ogam in Vilegard."
-msgstr "Jediný kdo rozumí řeči strážce je starý Ogam z Vilegardu."
+msgstr "Jediný, kdo rozumí řeči strážce, je starý Ogam z Vilegardu."
 
 #: conversationlist_umar.json:umar_lodar_6
 msgid "You should travel to the town of Vilegard and find Ogam. He can help you get the right words to enter Lodar's Hideaway."
-msgstr "Najdi Ogama ve Vilegardu, který ti poradí, jak vstoupit do Lodarovi skrýše."
+msgstr ""
+"Zajeď do Vilegardu a najdi Ogama. Poradí ti, pomocí jakých slov se dostaneš "
+"do Lodarovy skrýše."
 
 #: conversationlist_umar.json:umar_lodar_6:0
 msgid "How do I get to Vilegard?"
@@ -4238,7 +4404,9 @@ msgstr "Děkuji, na shledanou."
 
 #: conversationlist_umar.json:umar_vilegard_1
 msgid "You travel southeast from Fallhaven. When you reach the main road and the Foaming Flask tavern, head south. It's not very far to the southeast from here."
-msgstr "Z Fallhavenu se vydej na jihovýchod. Až dorazíš na hlavní cestu a hospodu Pěnivá Čutora, vydej se na jih. Není to moc daleko z Fallhavenu."
+msgstr ""
+"Z Fallhavenu se vydej na jihovýchod. Až dorazíš na hlavní cestu a k hospodě "
+"Pěnivá čutora, vydej se na jih. Není to moc daleko z Fallhavenu."
 
 #: conversationlist_kaori.json:kaori_1
 msgid "You are not welcome here. Please leave now."
@@ -4249,7 +4417,7 @@ msgstr "Nejsi zde vítaný. Prosím odejdi."
 #: conversationlist_vilegard_villagers.json:vilegard_villager_2_0:0
 #: conversationlist_vilegard_villagers.json:vilegard_villager_5_0:0
 msgid "Why is everyone in Vilegard so afraid of outsiders?"
-msgstr "Proč se všichni ve Vilegardu straní přespolních?"
+msgstr "Proč se všichni ve Vilegardu straní cizinců?"
 
 #: conversationlist_kaori.json:kaori_1:1
 msgid "Jolnor asked me to talk to you."
@@ -4294,7 +4462,7 @@ msgstr "Hm. Možná ne, ale možná taky ano. Nejsem si jistá."
 #: conversationlist_kaori.json:kaori_bribe:0
 #: conversationlist_jolnor.json:jolnor_suspicious_3:0
 msgid "Is there anything I can do to gain your trust?"
-msgstr "Co mohu udělat pro získání tvé důvěry?"
+msgstr "Co mohu udělat, abych získal tvou důvěru?"
 
 #: conversationlist_kaori.json:kaori_5:1
 #: conversationlist_kaori.json:kaori_trust_1:1
@@ -4311,7 +4479,9 @@ msgstr "Snažíš se mě podplatit, dítě? To na mě neplatí. Co bych z těch 
 
 #: conversationlist_kaori.json:kaori_10
 msgid "If you really want to prove to me that you are not a spy from Feygard, there actually is something that you can do for me."
-msgstr "Pokud mi chceš skutečně prokázat, že nejsi špión z Feygardu, můžeš pro mě něco udělat."
+msgstr ""
+"Pokud mi chceš skutečně prokázat, že nejsi špión z Feygardu, je tu něco, co "
+"bys pro mě mohl udělat."
 
 #: conversationlist_kaori.json:kaori_11
 msgid "Up until recently, we have been using special potions made of ground bones for healing. These were very potent healing potions, and were used for several purposes."
@@ -4319,7 +4489,8 @@ msgstr "Až donedávna jsme byli zvyklí používat speciální elixíry z kostn
 
 #: conversationlist_kaori.json:kaori_12
 msgid "But now, they have been banned by Lord Geomyr, and most use of them has stopped."
-msgstr "Ale teď bylo jejich použití zakázáno Lordem Geonyrem a nikdo už je nepoužívá."
+msgstr ""
+"Ale teď jejich použití zakázal Lord Geonyr a skoro nikdo už je nepoužívá."
 
 #: conversationlist_kaori.json:kaori_13
 msgid "I would really like to have a few more of those. If you can bring me 10 bonemeal potions, I might consider trusting you a bit more."
@@ -4364,7 +4535,9 @@ msgstr "Dobře. Dej mi je."
 
 #: conversationlist_kaori.json:kaori_21
 msgid "Yes, these will do fine. Thank you a lot kid. Maybe you are OK after all. May the Shadow watch over you."
-msgstr "Ano, brzy je využiju. Vřele děkuji, dítě. Zřejmě se ti dá věřit. Nechť tě Přítmí ochraňuje."
+msgstr ""
+"Ano, ty vypadají dobře. Vřele děkuji, dítě. Zřejmě se ti dá věřit. Nechť tě "
+"Přítmí ochraňuje."
 
 #: conversationlist_kaori.json:kaori_default_1
 msgid "Was there something you wanted to talk about?"
@@ -4392,11 +4565,11 @@ msgstr "To není dobrý nápad."
 
 #: conversationlist_kaori.json:kaori_vilegard_3
 msgid "Anyway, that's why we are so suspicious of outsiders."
-msgstr "Každopádně právě proto nevěříme přespolním."
+msgstr "Každopádně právě proto nevěříme cizincům."
 
 #: conversationlist_kaori.json:kaori_vilegard_3:0
 msgid "I see."
-msgstr "Tomu rozumím."
+msgstr "Aha."
 
 #: conversationlist_vilegard_villagers.json:vilegard_villager_1_0
 msgid "Hello. Who are you? You are not welcome here in Vilegard."
@@ -4408,7 +4581,7 @@ msgstr "Viděl jsi tu mého bratra, Andora?"
 
 #: conversationlist_vilegard_villagers.json:vilegard_villager_1_2
 msgid "No, I have certainly not. Even if I had, why would I tell you?"
-msgstr "Ne, neviděl. I kdybych viděl, proč bych ti to měl říct?"
+msgstr "Ne, neviděl. I kdybych viděl, proč bych ti to měl říkat?"
 
 #: conversationlist_vilegard_villagers.json:vilegard_villager_2_0
 msgid "By the Shadow, you are an outsider. We don't like outsiders here."
@@ -4432,19 +4605,22 @@ msgstr "Nebudu dělat problémy."
 
 #: conversationlist_vilegard_villagers.json:vilegard_villager_4_0:2
 msgid "Oh yes, I am going to cause trouble all right."
-msgstr "Och ano, budu dělat problémy, to je jasné."
+msgstr "Och ano, to si piš, že budu dělat problémy."
 
 #: conversationlist_vilegard_villagers.json:vilegard_villager_4_2
 msgid "No, I am sure you are. Outsiders always do."
-msgstr "Ne, jsem si jistý, že budeš. Všichni cizinci dělaj."
+msgstr "Ne, jsem si jistý, že budeš. Jako všichni cizinci."
 
 #: conversationlist_vilegard_villagers.json:vilegard_villager_4_3
 msgid "Yes, I know. That's why we don't want your kind around here. You should leave Vilegard while you still can."
-msgstr "Ano, to vím. Proto tu takové jako ty nechceme. Radím ti, opusť Vilegard dokud můžeš."
+msgstr ""
+"Ano, to vím. Proto tu takové jako ty nechceme. Radím ti, opusť Vilegard, "
+"dokud můžeš."
 
 #: conversationlist_vilegard_villagers.json:vilegard_villager_5_0
 msgid "Hello there outsider. You look lost, that's good. Now leave Vilegard while you can."
-msgstr "Ahoj cizinče. Vypadáš ztraceně a to je dobře. Teď opusť Vilegard, dokud můžeš."
+msgstr ""
+"Ahoj cizinče. Vypadáš ztraceně, to je dobře. Teď opusť Vilegard, dokud můžeš."
 
 #: conversationlist_vilegard_villagers.json:vilegard_villager_5_1
 #: conversationlist_vilegard_shops.json:vilegard_shop_notrust_2
@@ -4453,7 +4629,9 @@ msgstr "Nevěřím ti. Jdi za Jolnorem v kostele, pokud chceš získat naše sym
 
 #: conversationlist_vilegard_villagers.json:vilegard_villager_friend
 msgid "Hello there. I heard you helped us common folk here in Vilegard. Please stay for as long as you like friend."
-msgstr "Ahoj. Prý mám obyčejným lidem ve Vilegardu pomáháš. Prosím zůstaň zde s námi tak dlouho, jak chceš."
+msgstr ""
+"Ahoj. Prý nám obyčejným lidem ve Vilegardu pomáháš. Prosím zůstaň zde s námi "
+"tak dlouho, jak chceš, příteli."
 
 #: conversationlist_vilegard_villagers.json:vilegard_villager_friend:0
 msgid "Thank you. Have you seen my brother Andor around here?"
@@ -4483,11 +4661,15 @@ msgstr "Proč se zde ve Vilegardu všichni bojí cizinců?"
 
 #: conversationlist_vilegard_erttu.json:erttu_distrust_1
 msgid "Most of us that live here in Vilegard have a history of trusting people too much. People that have hurt us in the end."
-msgstr "Většina z nás, co žijeme ve Vilegardu, jsme kdysi věřili cizincům příliš. Nakonec se nám vždy vymstilo."
+msgstr ""
+"Většina z nás, co žijeme ve Vilegardu, jsme kdysi příliš věřili všem. "
+"Nakonec se nám vždy vymstilo."
 
 #: conversationlist_vilegard_erttu.json:erttu_distrust_2
 msgid "Now we start by being suspicious, and ask that outsiders coming here gain our trust by helping us first."
-msgstr "Teď začínáme být podezřiví a nejdříve vyžadujeme, aby přespolní nejdřív získali naší důvěru tím, že nám pomůžou."
+msgstr ""
+"Teď začínáme tím, že jsme podezřívaví, a nejdříve vyžadujeme, aby přespolní "
+"nejdřív získali naší důvěru tím, že nám pomůžou."
 
 #: conversationlist_vilegard_erttu.json:erttu_distrust_3
 msgid "Also, other people generally look down upon us here in Vilegard for some reason. Especially those snobs from Feygard and the northern cities."
@@ -4495,15 +4677,19 @@ msgstr "Kromě toho se na nás ostatní koukají skrze prsty. Zejména ti snobi 
 
 #: conversationlist_vilegard_erttu.json:erttu_distrust_3:0
 msgid "What else can you tell me about Vilegard?"
-msgstr "Co mi můžeš říct o Vilegardu?"
+msgstr "Co dalšího mi můžeš říct o Vilegardu?"
 
 #: conversationlist_vilegard_erttu.json:erttu_vilegard_1
 msgid "We have almost everything we need here in Vilegard. Our center of the village is the chapel."
-msgstr "Máme zde ve Vilegardu všechno, co potřebujeme. Centrem naší vesnice je kostel."
+msgstr ""
+"Máme zde ve Vilegardu skoro všechno, co potřebujeme. Centrem naší vesnice je "
+"kostel."
 
 #: conversationlist_vilegard_erttu.json:erttu_vilegard_2
 msgid "The chapel serves as our place of worship for the Shadow, and also as our place to gather when discussing larger issues in our village."
-msgstr "Kostel slouží jako místo, kde uctíváme a modlíme se k Přítmí a taky jako místo, kde se scházíme, když řešíme větší problémy v naší vesnici."
+msgstr ""
+"Kostel slouží jako místo, kde uctíváme a modlíme se k Přítmí, a taky jako "
+"místo, kde se scházíme, když řešíme větší problémy v naší vesnici."
 
 #: conversationlist_vilegard_erttu.json:erttu_vilegard_3
 msgid "Apart from the chapel, we have a tavern, a smith and an armorer."
@@ -4535,7 +4721,7 @@ msgstr "Co mi můžeš říct sám o sobě?"
 
 #: conversationlist_vilegard_tavern.json:dunla_1
 msgid "Me? I am no one. You didn't even see me. You certainly did not talk to me."
-msgstr "O mně? Jsem nikdo. Ani nemůžeš vidět, natož se mnou mluvit."
+msgstr "O mně? Jsem nikdo. Ani jsi mě neviděl. A už vůbec jsi se mnou nemluvil."
 
 #: conversationlist_vilegard_tavern.json:tharwyn_1
 msgid "Hello there. I heard you helped Jolnor in the chapel. You have my thanks, friend."
@@ -4551,7 +4737,7 @@ msgstr "Ukaž mi, jaké jídlo nabízíš."
 
 #: conversationlist_vilegard_tavern.json:vilegard_tavern_drunk_1
 msgid "Oh look, a lost kid. Here, have some mead kid."
-msgstr "Och, podívej, ztracené dítě. Zde, dej si nějakou medovinu."
+msgstr "Och, podívej, ztracené dítě. Na, dej si trochu medoviny."
 
 #: conversationlist_vilegard_tavern.json:vilegard_tavern_drunk_1:1
 msgid "Watch your tongue, drunkard."
@@ -4564,7 +4750,9 @@ msgstr "Žij podle Přítmí, mé dítě."
 
 #: conversationlist_jolnor.json:jolnor_default:1
 msgid "I was told to talk to you about why everyone in Vilegard is suspicious of outsiders."
-msgstr "Mám si s tebou promluvit o tom, proč je každý ve Vilegardu tak podezřivý vůči cizincům."
+msgstr ""
+"Mám si s tebou promluvit o tom, proč je každý ve Vilegardu tak podezřívavý "
+"vůči cizincům."
 
 #: conversationlist_jolnor.json:jolnor_default_2:0
 #: conversationlist_jolnor.json:jolnor_default_3:0
@@ -4573,7 +4761,7 @@ msgstr "Můžeš mi ještě jednou říct, co je tohle za místo?"
 
 #: conversationlist_jolnor.json:jolnor_default_2:1
 msgid "Let's talk about those missions for gaining trust that you talked about earlier."
-msgstr "Promluvme si znovu o těch činech, kterými mužů získat důvěru místních."
+msgstr "Promluvme si znovu o těch činech, kterými můžu získat důvěru místních."
 
 #: conversationlist_jolnor.json:jolnor_default_2:2
 #: conversationlist_jolnor.json:jolnor_default_3:1
@@ -4583,11 +4771,13 @@ msgstr "Potřebuji se vyléčit. Můžu se podívat, jaké zboží nabízíš?"
 
 #: conversationlist_jolnor.json:jolnor_default_3
 msgid "Walk with the Shadow my friend."
-msgstr "Přítmí tě ochraňuj, mé milé dítě."
+msgstr "Žij podle Přítmí, mé milé dítě."
 
 #: conversationlist_jolnor.json:jolnor_chapel_1
 msgid "This is Vilegard's place of worship for the Shadow. We praise the Shadow in all its might and glory."
-msgstr "Toto je místo, kde my obyvatelé Vilegardu, uctíváme Přítmí. Ctíme Přítmí v celé jeho moci i slávě."
+msgstr ""
+"Toto je místo, kde my obyvatelé Vilegardu uctíváme Přítmí. Chválíme Přítmí v "
+"celé jeho moci i slávě."
 
 #: conversationlist_jolnor.json:jolnor_chapel_1:2
 msgid "Whatever. Just show me your goods."
@@ -4595,7 +4785,7 @@ msgstr "Na tom nesejde. Prostě mi ukaž, co nabízíš k prodeji."
 
 #: conversationlist_jolnor.json:jolnor_shop_2
 msgid "I don't trust you enough yet to feel comfortable trading with you."
-msgstr "Nevěřím ti natolik, abych s tebou mohl obchodovat."
+msgstr "Ještě ti nevěřím natolik, abych s tebou chtěl obchodovat."
 
 #: conversationlist_jolnor.json:jolnor_shop_2:0
 msgid "Why are you that suspicious?"
@@ -4612,23 +4802,27 @@ msgstr "Podezíravý? Ne, nenazval bych to podezíráním. V dnešní době bych
 
 #: conversationlist_jolnor.json:jolnor_suspicious_2
 msgid "In order to gain the trust of the village, an outsider must prove that they are not here to cause trouble."
-msgstr "Aby přespolní mohli získat důvěru naší vesnice a jejich lidí, musí prokázat, že přichází s dobrými úmysly."
+msgstr ""
+"Aby přespolní mohli získat důvěru naší vesnice, musí prokázat, že přichází s "
+"dobrými úmysly."
 
 #: conversationlist_jolnor.json:jolnor_suspicious_2:0
 msgid "Sounds like a good idea. There are a lot of selfish people out there."
-msgstr "To je dobrý přístup. Po světě chodí spoustu namyšlených lidí a sobců."
+msgstr "To je dobrý přístup. Po světě chodí spousta sobců."
 
 #: conversationlist_jolnor.json:jolnor_suspicious_2:1
 msgid "That sounds really unnecessary. Why not trust people in the first place?"
-msgstr "To je přehnané. Proč v první řadě nevěříte lidem?"
+msgstr "To je přehnané. Proč lidem nejdříve nedůvěřujete?"
 
 #: conversationlist_jolnor.json:jolnor_suspicious_3
 msgid "Yes, right. You seem to understand us well, I like that."
-msgstr "Ano, máš pravdu. Vypadáš jakože nám rozumíš a to se mi líbí."
+msgstr "Ano, máš pravdu. Vypadá to, že nám rozumíš, to se mi líbí."
 
 #: conversationlist_jolnor.json:jolnor_suspicious_4
 msgid "We have learned from history not to trust outsiders, and you are an outsider. Why should we trust you?"
-msgstr "Během let jsme pochopili, že nemůžeme věřit přespolním. A ty jsi přespolní. Proč bychom ti měli věřit?"
+msgstr ""
+"Během let jsme se naučili, že nemůžeme věřit cizincům. A ty jsi cizinec. "
+"Proč bychom ti měli věřit?"
 
 #: conversationlist_jolnor.json:jolnor_suspicious_4:0
 msgid "What can I do to gain your trust?"
@@ -4640,7 +4834,7 @@ msgstr "Máš pravdu. Asi bys mi neměl věřit."
 
 #: conversationlist_jolnor.json:jolnor_gaintrust_return_2
 msgid "With your help earlier, you have already gained our trust."
-msgstr "Teď už ti věříme, když nám pomáháš."
+msgstr "Tím, jak jsi nám pomohl, sis naši důvěru již získal."
 
 #: conversationlist_jolnor.json:jolnor_gaintrust_return
 msgid "As I said before, you have to help some people here in Vilegard to gain our trust."
@@ -4648,15 +4842,20 @@ msgstr "Jak už jsem jednou řekl, abys získal naší důvěru, musíš pomoci 
 
 #: conversationlist_jolnor.json:jolnor_gaintrust_1
 msgid "If you do us a favor, we might consider trusting you. There are three people I can think of that are influential here in Vilegard, that you should try to help."
-msgstr "Když nám prokážeš náklonnost službou, zhodnotíme, jestli ti můžeme věřit. Ve Vilegardu žijí tři lidi, kteří mají - myslím - vliv na mínění ostatních. Tedy tento třem se snaž pomoci."
+msgstr ""
+"Když nám prokážeš náklonnost službou, zvážíme, jestli ti můžeme věřit. "
+"Napadají mě tři lidi ve Vilegardu, kteří tu mají vliv a kterým bys měl "
+"zkusit pomoci."
 
 #: conversationlist_jolnor.json:jolnor_gaintrust_2
 msgid "First, there is Kaori. She lives up in the northern part of Vilegard. Ask her if she wants help with anything."
-msgstr "První je Kaori, která žije v severní části Vilegardu. Zeptej se jí, jestli nepotřebuje s něčím pomoci."
+msgstr ""
+"První je Kaori, která žije v severní části Vilegardu. Zeptej se jí, jestli s "
+"něčím nepotřebuje pomoci."
 
 #: conversationlist_jolnor.json:jolnor_gaintrust_2:0
 msgid "OK. Talk to Kaori. Got it."
-msgstr "Dobrá, promluvím s Kaori a pomůžu jí. Rozumím."
+msgstr "Dobře. Promluvit s Kaori. Rozumím."
 
 #: conversationlist_jolnor.json:jolnor_gaintrust_3
 msgid "Then there is Wrye. Wrye also lives up in the northern part of Vilegard. Many people here in Vilegard seek her advice on various things."
@@ -4668,7 +4867,7 @@ msgstr "Nedávno tragicky přišla o svého syna. Když získáš její důvěru
 
 #: conversationlist_jolnor.json:jolnor_gaintrust_4:0
 msgid "Talk to Wrye. Got it."
-msgstr "Rozumím. Pomůžu Wrye."
+msgstr "Promluvit si s Wrye. Chápu."
 
 #: conversationlist_jolnor.json:jolnor_gaintrust_5
 msgid "And last but not least, I have a favor to ask of you as well."
@@ -4680,15 +4879,19 @@ msgstr "O jakou laskavost jde?"
 
 #: conversationlist_jolnor.json:jolnor_gaintrust_6
 msgid "North of Vilegard is a tavern called the Foaming Flask. In my opinion, this tavern is a guard station in guise for Feygard."
-msgstr "Severně od Vilegardu je hospoda 'Pěnící čutora'. Myslím si, že ve skutečnosti je to skrytá základna stráží z Feygardu."
+msgstr ""
+"Severně od Vilegardu je hospoda Pěnící čutora. Myslím si, že ve skutečnosti "
+"je to skrytá základna stráží z Feygardu."
 
 #: conversationlist_jolnor.json:jolnor_gaintrust_7
 msgid "The tavern is almost always visited by the Feygard royal guard of Lord Geomyr."
-msgstr "Téměř vždy je v té hospodě Lordova Geomyrovw královská stráž Feygardu."
+msgstr "Téměř vždy je v té hospodě královská stráž Lorda Geomyra z Feygardu."
 
 #: conversationlist_jolnor.json:jolnor_gaintrust_8
 msgid "They are probably here to spy on us, since we are followers of the Shadow. Lord Geomyr's forces always try to make life difficult for us and the Shadow."
-msgstr "Nejspíš tam jsou, aby nás pozorovali, neboť vyznáváme Přítmí. Stáže Lorda Geomyra se vždy snaží znepříjemnit život nám i Přítmí."
+msgstr ""
+"Nejspíš tam jsou, aby nás pozorovali, neboť vyznáváme Přítmí. Stráže Lorda "
+"Geomyra se vždy snaží znepříjemnit život nám i Přítmí."
 
 #: conversationlist_jolnor.json:jolnor_gaintrust_8:0
 msgid "Yes, they seem like troublemakers all around."
@@ -4700,12 +4903,12 @@ msgstr "Jistě mají své důvody, proč to dělají."
 
 #: conversationlist_jolnor.json:jolnor_gaintrust_9
 msgid "Right. Troublemakers indeed."
-msgstr "Vpravdě, jsou zdrojem problémů."
+msgstr "Ano. Dělají problémy."
 
 #: conversationlist_jolnor.json:jolnor_gaintrust_9:0
 #: conversationlist_jolnor.json:jolnor_gaintrust_10:0
 msgid "What do you want me to do?"
-msgstr "Co myslíš, že mám udělat?"
+msgstr "Co chceš, abych udělal?"
 
 #: conversationlist_jolnor.json:jolnor_gaintrust_10
 msgid "Yes, their reason is to make life miserable for us, I am sure."
@@ -4721,7 +4924,9 @@ msgstr "Chci po tobě, aby ten strážce zmizel. Jak to provedeš, to nechám č
 
 #: conversationlist_jolnor.json:jolnor_gaintrust_12:0
 msgid "I am not sure I should upset the Feygard patrol guards. This could really get me into trouble."
-msgstr "Nevím, zda je dobrý nápad provokovat Feygardské královské stráže. Z toho koukají nepříjemnosti."
+msgstr ""
+"Nevím, zda je dobrý nápad provokovat Feygardské stráže. Mohl bych z toho mít "
+"nepříjemnosti."
 
 #: conversationlist_jolnor.json:jolnor_gaintrust_12:1
 msgid "For the Shadow, I will do as you ask."
@@ -4729,7 +4934,7 @@ msgstr "Při Přítmí, udělám, co žádáš."
 
 #: conversationlist_jolnor.json:jolnor_gaintrust_12:2
 msgid "OK, I hope this leads to some treasure in the end."
-msgstr "Dobrá, doufám, že pro tom najdu nějaký poklad."
+msgstr "Dobrá, doufám, že díky tomu získám nějaký poklad."
 
 #: conversationlist_jolnor.json:jolnor_gaintrust_13
 msgid "It's your choice. You can at least go check out the tavern and see if you find anything suspicious."
@@ -4747,11 +4952,13 @@ msgstr "Dobře. Dej mi vědět, až to uděláš."
 
 #: conversationlist_jolnor.json:jolnor_gaintrust_15
 msgid "So, in order to gain our trust here in Vilegard, I would suggest you help Kaori, Wrye and me."
-msgstr "Tedy, abychom ti mohli důvěřovat, očekáváme, že pomůžeš Kaori, Wrye a mě."
+msgstr ""
+"Tedy, pokud chceš, abychom ti tu důvěřovali, doporučoval bych, abys pomohl "
+"Kaori, Wrye a mně."
 
 #: conversationlist_jolnor.json:jolnor_gaintrust_15:0
 msgid "Thank you for the information. I will be back when I have something to report."
-msgstr "Děkuji za ty informace. Vrátím se zpět, až budu mít něco nového k nahlášení."
+msgstr "Děkuji za ty informace. Vrátím se zpět, až budu mít něco k nahlášení."
 
 #: conversationlist_jolnor.json:jolnor_quests_1
 msgid "I would suggest you help Kaori, Wrye and me to gain our trust."
@@ -4759,7 +4966,7 @@ msgstr "Naši důvěru získáš, když pomůžeš Kaori, Wrye a mě."
 
 #: conversationlist_jolnor.json:jolnor_quests_1:0
 msgid "About that guard outside the Foaming Flask tavern..."
-msgstr "Ohledně toho strážce před Pěnící Čutorou..."
+msgstr "Ohledně toho strážce před Pěnící čutorou..."
 
 #: conversationlist_jolnor.json:jolnor_quests_1:1
 msgid "About those tasks..."
@@ -4777,7 +4984,7 @@ msgstr "Ano, o co jde konkrétně?"
 
 #: conversationlist_jolnor.json:jolnor_quests_2:1
 msgid "I have done all the tasks you asked me to do."
-msgstr "Nyní mi důvěřují všichni důležití lidé ve Vilegardu, o kterých jsi mi řekl, že jim mám pomoct."
+msgstr "Udělal jsem všechno, o co jsi mě požádal."
 
 #: conversationlist_jolnor.json:jolnor_guard_1
 msgid "Yes, what about him. Have you removed him yet?"
@@ -4785,7 +4992,7 @@ msgstr "Ano, co je s ním? Už je pryč?"
 
 #: conversationlist_jolnor.json:jolnor_guard_1:0
 msgid "Yes, he will leave his post as soon as this shift is over."
-msgstr "Ano, opustí to místo ihned až skončí jeho šichta."
+msgstr "Ano, opustí to místo, jakmile skončí jeho šichta."
 
 #: conversationlist_jolnor.json:jolnor_guard_1:1
 msgid "Yes, he is removed."
@@ -4805,7 +5012,7 @@ msgstr "Velmi dobře. Děkuji za tvou pomoc."
 
 #: conversationlist_jolnor.json:jolnor_guard_2:0
 msgid "No problem. Let's get back to those other tasks we talked about."
-msgstr "Žádný problém. Vraťme se k úkolům, o kterých jsme se předtím bavili."
+msgstr "Žádný problém. Vraťme se k ostatním úkolům, o kterých jsme se bavili."
 
 #: conversationlist_jolnor.json:jolnor_quests_kaori_1
 msgid "You still need to help Kaori with her task."
@@ -4825,7 +5032,9 @@ msgstr "Myslím, že teď ti můžeme všichni důvěřovat."
 
 #: conversationlist_jolnor.json:jolnor_quests_completed_3
 msgid "You have our thanks, friend. You will always find shelter here in Vilegard. We welcome you into our village."
-msgstr "Máš naše díky a přátelství. Vždy tě ve Vilegardu rádi uvidíme a najdeš zde bezpečí. Vítám tě v naší vesnici."
+msgstr ""
+"Máš naše díky a přátelství. Vždy tě ve Vilegardu rádi uvidíme a najdeš zde "
+"bezpečí. Vítáme tě v naší vesnici."
 
 #: conversationlist_alynndir.json:alynndir_1
 msgid "Hello there. Welcome to my cabin."
@@ -4850,7 +5059,7 @@ msgstr "Na severu je jenom les. V poslední době se v něm ale dějí podivné 
 
 #: conversationlist_alynndir.json:alynndir_5
 msgid "I have heard terrible screams coming from the forest to the northwest."
-msgstr "Slyšela jsem hrozný řev, který vycházel or severozápadu z lesa."
+msgstr "Slyšela jsem hrozný řev, který vycházel od severozápadu z lesa."
 
 #: conversationlist_alynndir.json:alynndir_6
 msgid "I really wonder what is up there."
@@ -4882,12 +5091,14 @@ msgstr "Mám pro tebe zásilku předmětů patřících Feygardu."
 #: conversationlist_vilegard_shops.json:vilegard_smith_1:2
 #: conversationlist_vilegard_shops.json:vilegard_shop_notrust_smith:3
 msgid "On the body of something called the Hira'zinn, I found this peculiar sword. Do you know anything about it?"
-msgstr "V ostatcích čehosi, co mělo jméno Hira'zinn jsem našel tento meč. Víš o něm něco?"
+msgstr ""
+"V ostatcích čehosi, co mělo jméno Hira'zinn, jsem našel tento zvláštní meč. "
+"Víš o něm něco?"
 
 #: conversationlist_vilegard_shops.json:vilegard_shop_notrust
 #: conversationlist_vilegard_shops.json:vilegard_shop_notrust_smith
 msgid "You are an outsider. We don't like outsiders here in Vilegard. Please leave."
-msgstr "Jsi přespolní. My ve Vilegardu nemáme rádi přespolní. Prosím odejdi."
+msgstr "Jsi cizinec. My ve Vilegardu nemáme cizince rádi. Prosím odejdi."
 
 #: conversationlist_ogam.json:ogam_1
 msgid "Belief. Power. Struggle."
@@ -4954,7 +5165,7 @@ msgstr "Lodar? Čistý, hrozící, zraněný."
 
 #: conversationlist_ogam.json:ogam_6
 msgid "Yes. The true form. Behold."
-msgstr "Ano. Skutečná postava. Spatřit."
+msgstr "Ano. Skutečná podoba. Spatřit."
 
 #: conversationlist_ogam.json:ogam_7:0
 msgid "The Shadow?"
@@ -4986,7 +5197,7 @@ msgstr "Svit Přítmí? Jsou to slova, která nám říct strážci?"
 
 #: conversationlist_ogam.json:ogam_lodar_3:1
 msgid "'Glow of the Shadow'? I recognize that from somewhere."
-msgstr "'Svit Přítmí'? To od někud znám."
+msgstr "„Svit Přítmí“? To odněkud znám."
 
 #: conversationlist_ogam.json:ogam_lodar_4
 msgid "Turning. Twisting. Clear form."
@@ -5030,7 +5241,7 @@ msgstr "Ne, je mi líto. Nemám žádné jídlo na prodej. Pokud chceš něco k 
 
 #: conversationlist_foamingflask.json:torilo_1
 msgid "Welcome to the Foaming Flask tavern. We welcome all travelers in here."
-msgstr "Vítej v hospodě Pěnící Čutora. Všichni cestující jsou zde vítání."
+msgstr "Vítej v hospodě Pěnící čutora. Všichni pocestní jsou zde vítáni."
 
 #: conversationlist_foamingflask.json:torilo_1:0
 msgid "Thank you. Are you the innkeeper here?"
@@ -5041,11 +5252,11 @@ msgstr "Děkuji. Ty jsi zde hospodský?"
 #: conversationlist_foamingflask_guards.json:ff_guard_3:2
 #: conversationlist_foamingflask_guards.json:ff_captain_1:3
 msgid "Have you seen a boy called Rincel around here recently?"
-msgstr "Viděl jsi zde chlapce jménem Rincel v poslední době?"
+msgstr "Viděl jsi zde někdy nedávno chlapce jménem Rincel?"
 
 #: conversationlist_foamingflask.json:torilo_2
 msgid "I am Torilo, the proprietor of this establishment. Please have a seat anywhere you like."
-msgstr "Jsem Torilo, majitel tohoto zařízení. Prosím posaď kamkoli dle libosti."
+msgstr "Jsem Torilo, majitel tohoto podniku. Prosím posaď kamkoli dle libosti."
 
 #: conversationlist_foamingflask.json:torilo_2:0
 #: conversationlist_foamingflask.json:torilo_default:0
@@ -5054,7 +5265,7 @@ msgstr "Můžu se podívat, co máš k jídlu a pití?"
 
 #: conversationlist_foamingflask.json:torilo_2:1
 msgid "Do you have somewhere I can rest?"
-msgstr "Můžu si zde pronajmout pokoj?"
+msgstr "Mohl bych si zde někde odpočinout?"
 
 #: conversationlist_foamingflask.json:torilo_2:2
 #: conversationlist_foamingflask.json:torilo_default:1
@@ -5068,23 +5279,25 @@ msgstr "Chceš ještě něco jiného?"
 
 #: conversationlist_foamingflask.json:torilo_shop_1
 msgid "Absolutely. We have a wide selection of food and beverages."
-msgstr "V každém případě. Máme širokou nabídku jídla i občerstvení."
+msgstr "Určitě. Máme širokou nabídku jídla i občerstvení."
 
 #: conversationlist_foamingflask.json:torilo_rest_1
 msgid "Yes, you already rented the back room."
-msgstr "Ano, tu špeluňku už máš pronajmutou."
+msgstr "Ano, pokoj vzadu už sis pronajal."
 
 #: conversationlist_foamingflask.json:torilo_rest_2
 msgid "Please feel free to use it in any way you like. I hope you can get some sleep even with these guards yelling their songs."
-msgstr "Neboj se ji využívat pro jakýkoliv účel. Doufám, že se v ní aspoň trošku vyspíš,  když tu ti strážci takhle vyřvávají."
+msgstr ""
+"Klidně ji používej, jak budeš chtít. Doufám, že se v ní aspoň trošku vyspíš, "
+"i když tu ti strážci takhle vyřvávají."
 
 #: conversationlist_foamingflask.json:torilo_rest_3
 msgid "Oh yes. We have a very comfortable back room here in the Foaming Flask tavern."
-msgstr "Oh ano. Máme tu v Pěnící Čutoře velmi pohodlný pokojíček."
+msgstr "Oh ano. Máme tu v Pěnící čutoře velmi pohodlný pokojíček."
 
 #: conversationlist_foamingflask.json:torilo_rest_4
 msgid "Available for only 250 gold. Then you can use it as much as you like."
-msgstr "Dostupný za pouhých 250 zlaťáků. Pak to můžeš používat dle libosti."
+msgstr "Dostupný za pouhých 250 zlaťáků. Pak ho můžeš používat dle libosti."
 
 #: conversationlist_foamingflask.json:torilo_rest_4:0
 msgid "250 gold? Sure, that's nothing to me. Here you go."
@@ -5104,11 +5317,12 @@ msgstr "Dobře, je to tvá volba."
 
 #: conversationlist_foamingflask.json:torilo_rest_6
 msgid "Thank you. The room is now rented to you."
-msgstr "Děkuji. Nyní máš ten pokoj pronajmutý."
+msgstr "Děkuji. Nyní máš ten pokoj pronajatý."
 
 #: conversationlist_foamingflask.json:torilo_rincel_1
 msgid "Rincel? No, not that I can recall. Actually, we don't get many children in here. *chuckle*"
-msgstr "Rincel? Ne, to si nevybavuji. Navíc, my zde často nevídáme děti. *chichotá se*"
+msgstr ""
+"Rincel? Ne, to si nevybavuji. Vlastně, děti tady moc nevídáme. *chichotá se*"
 
 #: conversationlist_foamingflask.json:torilo_guards_1
 msgid "*Sigh* Yes. Those guards have been here for quite some time now."
@@ -5120,16 +5334,18 @@ msgstr "Vypadá to, že něco nebo někoho hledají, ale nevím koho či co."
 
 #: conversationlist_foamingflask.json:torilo_guards_3
 msgid "I hope the Shadow watches over us so that nothing bad happens to the Foaming Flask tavern because of them."
-msgstr "Doufám, že Přítmí nás chrání, aby se Pěnící Čutoře nic špatného kvůli nim nestalo."
+msgstr ""
+"Doufám, že nás Přítmí chrání, aby se Pěnící čutoře kvůli nim něco špatného "
+"nestalo."
 
 #: conversationlist_ambelie.json:ambelie_1
 msgid "Oh my, a commoner. Get away from me. I might catch something."
-msgstr "Oh ne, venkovan. Jdi ode mne pryč. Ještě se nakazím."
+msgstr "Oh ne, venkovan. Jdi ode mne pryč. Ještě něco chytím."
 
 #: conversationlist_ambelie.json:ambelie_1:1
 #: conversationlist_ambelie.json:ambelie_3:0
 msgid "What is a noble woman such as yourself doing in a place like this?"
-msgstr "Co dělá taková vznešená paní jako ty v místě jako je toto?"
+msgstr "Co dělá taková vznešená paní jako ty na takovém místě?"
 
 #: conversationlist_ambelie.json:ambelie_1:2
 msgid "I would be glad to get away from a snob like you."
@@ -5137,15 +5353,17 @@ msgstr "Bylo by mi potěšením, odejít od takové nafoukané paničky jako jsi
 
 #: conversationlist_ambelie.json:ambelie_2
 msgid "I am Ambelie of the house of Laumwill in Feygard. I am sure you must have heard of me and my house."
-msgstr "Jsem Ambelie z dynastie Laumwillů ve Feygardu. Jsem si jistá, že mě i mou dynastii už znáš."
+msgstr ""
+"Jsem Ambelie z rodu Laumwillů z Feygardu. Jsem si jistá, že jsi o mně i mém "
+"rodu už slyšel."
 
 #: conversationlist_ambelie.json:ambelie_2:0
 msgid "Oh yes ... um ... House of Laumwill in Feygard. Of course."
-msgstr "Oh ano ... tedy ... Dynastie Laumwillů ve Feygardu. Samozřejmě."
+msgstr "Oh ano ... tedy ... rod Laumwillů z Feygardu. Samozřejmě."
 
 #: conversationlist_ambelie.json:ambelie_2:1
 msgid "I have never heard of you or your house."
-msgstr "Tvou dynastii ani tebe neznám."
+msgstr "O tobě ani tvém rodu jsem v životě neslyšel."
 
 #: conversationlist_ambelie.json:ambelie_2:2
 msgid "Where is Feygard?"
@@ -5153,11 +5371,13 @@ msgstr "Kde je Feygard?"
 
 #: conversationlist_ambelie.json:ambelie_3
 msgid "Feygard, the great city of peace. Surely you must know of it. Northwest in our great land."
-msgstr "Feygard, velké město míru. Jistě ho znáš. Leží na severozápadě naší země."
+msgstr ""
+"Feygard, velké město míru. Jistě jsi o něm slyšel. Leží na severozápadě naší "
+"země."
 
 #: conversationlist_ambelie.json:ambelie_3:1
 msgid "No, I have never heard of it."
-msgstr "Ne, nikdo o něm nic neřekl."
+msgstr "Ne, nikdy jsem o něm neslyšel."
 
 #: conversationlist_ambelie.json:ambelie_4
 msgid "Pfft. That just proves everything I have heard of you savages here in the southern land. So uneducated."
@@ -5165,7 +5385,9 @@ msgstr "Pff. To přesně potvrzuje vše, co jsem o vás primitivech z jižních 
 
 #: conversationlist_ambelie.json:ambelie_5
 msgid "I, Ambelie, of the house of Laumwill in Feygard, am on an excursion to the southern Nor City."
-msgstr "Já, Ambelie z dynastie Laumwillů ve Feygardu, jsem na exkurzi do jižního Města Nor."
+msgstr ""
+"Já, Ambelie z rodu Laumwillů z Feygardu, jsem na exkurzi do jižního Města "
+"Nor."
 
 #: conversationlist_ambelie.json:ambelie_6
 msgid "An excursion to see if Nor City really is all that I have heard about it. If it really can compare itself to the glamour of the great city of Feygard."
@@ -5174,7 +5396,7 @@ msgstr "Na exkurzi, abych viděla, zda Město Nor je takové, jak jsem slyšela.
 #: conversationlist_ambelie.json:ambelie_6:0
 #: conversationlist_ambelie.json:ambelie_9:0
 msgid "Nor City, where is that?"
-msgstr "Město Nor, kde leží?"
+msgstr "Město Nor, kde to je?"
 
 #: conversationlist_ambelie.json:ambelie_6:1
 msgid "If you like it so much in Feygard, why would you even leave?"
@@ -5182,11 +5404,15 @@ msgstr "Pokud se ti tak líbí ve Feygardu, proč vlastně cestuješ?"
 
 #: conversationlist_ambelie.json:ambelie_7
 msgid "Don't you know of Nor City? I will take note that the savages here haven't even heard of the city."
-msgstr "Ty neznáš Město Nor? Poznamenám si do deníku, že zdejší primitivové o tom městě nikdy neslyšeli."
+msgstr ""
+"Ty neznáš Město Nor? Poznamenám si do deníku, že zdejší primitivové o tom "
+"městě ani neslyšeli."
 
 #: conversationlist_ambelie.json:ambelie_8
 msgid "I am beginning to be even more certain that Nor City will never, even in my wildest dreams, be comparable to the great city of Feygard."
-msgstr "Začínám si být navíc jistá, že Město Nor se nikdy nebude moci - ani v mých nejdivočejších snech - porovnávat se slavným Feygardem."
+msgstr ""
+"Začínám si být ještě jistější, že Město Nor se nikdy nebude moci – ani v "
+"mých nejdivočejších snech – porovnávat se slavným Feygardem."
 
 #: conversationlist_ambelie.json:ambelie_8:0
 #: conversationlist_ambelie.json:ambelie_9:1
@@ -5195,11 +5421,13 @@ msgstr "Hodně štěstí na tvé exkurzi."
 
 #: conversationlist_ambelie.json:ambelie_9
 msgid "All the noblewomen in Feygard keep talking about the mysterious Shadow in Nor City. I just have to see it myself."
-msgstr "Všechny čtené dámy ve Feygardu stále mluví o záhadném Přítmí ve Městě Nor. Musím to vidět na vlastní oči."
+msgstr ""
+"Všechny urozené dámy ve Feygardu stále mluví o záhadném Přítmí ve Městě Nor. "
+"Musím to vidět na vlastní oči."
 
 #: conversationlist_ambelie.json:ambelie_10
 msgid "Thank you. Now please leave before someone sees me talking to a commoner like you."
-msgstr "Děkuji ti. A teď prosím odejdi, než nás někdo uvidí spolu mluvit. Mě s venkovanem."
+msgstr "Děkuji ti. A teď prosím odejdi, než mě někdo uvidí mluvit s venkovanem."
 
 #: conversationlist_ambelie.json:ambelie_10:0
 msgid "Commoner? Are you trying to insult me? Goodbye."
@@ -5207,7 +5435,7 @@ msgstr "Venkovan? Snažíš se mě urazit? Na shledanou."
 
 #: conversationlist_ambelie.json:ambelie_10:1
 msgid "Whatever, you probably wouldn't even survive a forest wasp."
-msgstr "Ať už říkáš cokoli, pravděpodobně bys nepřežila setkání s lesní vosou."
+msgstr "Jak myslíš, pravděpodobně bys nepřežila ani setkání s lesní vosou."
 
 #: conversationlist_foamingflask_guards.json:ff_guard_1
 msgid "Ha ha, you tell him Garl! *burp*"
@@ -5215,7 +5443,7 @@ msgstr "Ha ha, ty mu říkáš holko! *škyt*"
 
 #: conversationlist_foamingflask_guards.json:ff_guard_2
 msgid "Sing, drink, fight! All who oppose Feygard will fall!"
-msgstr "Zpívat, pít, bojovat! Všichni kdo stojí proti Feygardu, padnou!"
+msgstr "Zpívat, pít, bojovat! Všichni nepřátelé Feygardu padnou!"
 
 #: conversationlist_foamingflask_guards.json:ff_guard_3
 msgid "We will stand tall. Feygard, city of peace!"
@@ -5241,7 +5469,7 @@ msgstr "Děkuji. Na shledanou."
 
 #: conversationlist_foamingflask_guards.json:ff_guard_rincel_1
 msgid "A boy?! Apart from you, there have been no children in here that I have seen."
-msgstr "Chlapce?! Kromě tebe tu žádné jiné děti nebyly, které bych viděl."
+msgstr "Chlapce?! Kromě tebe jsem tu žádné jiné děti neviděl."
 
 #: conversationlist_foamingflask_guards.json:ff_guard_rincel_2
 msgid "Check with the captain over there. He has been around here for longer than us."
@@ -5290,7 +5518,7 @@ msgstr "Velkolepé město Feygard je nejbáječnější pamětihodnost, kterou k
 
 #: conversationlist_foamingflask_guards.json:ff_captain_rincel_1
 msgid "There was a kid running around in here a while ago."
-msgstr "Před nějakou dobou tu nějaké dítě pobýhalo."
+msgstr "Před nějakou dobou tu nějaké dítě pobíhalo."
 
 #: conversationlist_foamingflask_guards.json:ff_captain_rincel_2
 msgid "I never talked to him though, so I don't know if he is the one you are looking for."
@@ -5298,11 +5526,11 @@ msgstr "Nikdy jsem s ním nemluvil, takže nevím, jestli je to to dítě, kter�
 
 #: conversationlist_foamingflask_guards.json:ff_captain_rincel_2:0
 msgid "OK, that might be something worth checking anyway."
-msgstr "Dobře, asi se vyplatí, to zkontrolovat."
+msgstr "Dobře, to by asi stálo za prozkoumání."
 
 #: conversationlist_foamingflask_guards.json:ff_captain_rincel_3
 msgid "I noticed he left to the west heading out of the Foaming Flask tavern."
-msgstr "Všiml jsem si, že od Pěnící Čutory odešlo směrem na západ."
+msgstr "Všiml jsem si, že od Pěnící čutory odešlo směrem na západ."
 
 #: conversationlist_foamingflask_guards.json:ff_captain_rincel_3:0
 msgid "West. Got it. Thanks for the information."
@@ -5318,7 +5546,8 @@ msgstr "Přítmí? Neříkej mi, že tomu věříš. Z vlastní zkušenosti vím
 
 #: conversationlist_foamingflask_outsideguard.json:ff_outsideguard_1
 msgid "Hello there. Should you be here? This is a tavern, you know. The Foaming Flask, to be precise."
-msgstr "Ahoj. Co tu děláš? Tohle je hospoda, víš. Pěnící Čutora, abych mluvil přesně."
+msgstr ""
+"Ahoj. Co tu děláš? Tohle je hospoda, víš. Pěnící čutora, abych mluvil přesně."
 
 #: conversationlist_foamingflask_outsideguard.json:ff_outsideguard_2
 msgid "I am a member of the royal guard patrol from Feygard."
@@ -5326,7 +5555,9 @@ msgstr "Jsem členem královské hlídky z Feygardu."
 
 #: conversationlist_foamingflask_outsideguard.json:ff_outsideguard_3
 msgid "Go talk to the captain inside if you want to talk. I must stay alert on my post."
-msgstr "Pokud chceš mluvit, zajdi dovnitř a promluv si s kapitánem. Já musím držet hlídku zde před hospodou."
+msgstr ""
+"Pokud si chceš povídat, zajdi dovnitř a promluv si s kapitánem. Já musím "
+"držet hlídku zde před hospodou."
 
 #: conversationlist_foamingflask_outsideguard.json:ff_outsideguard_3:0
 msgid "OK. Goodbye."
@@ -5357,83 +5588,96 @@ msgstr "Jaké problémy?"
 
 #: conversationlist_foamingflask_outsideguard.json:ff_outsideguard_trouble_2
 msgid "No really, the captain might see me. I must be aware on my post at all times. *sigh*"
-msgstr "Ne, skutečně. Mohl by mě vidět kapitán. Musím zde držet hlídku po celou dobu. *vzdychne*"
+msgstr ""
+"Ne, skutečně. Mohl by mě vidět kapitán. Musím zde pořád hlídat. *vzdychne*"
 
 #: conversationlist_foamingflask_outsideguard.json:ff_outsideguard_trouble_2:2
 msgid "Do you like your job here?"
-msgstr ""
+msgstr "A líbí se ti tahle tvoje práce?"
 
 #: conversationlist_foamingflask_outsideguard.json:ff_outsideguard_trouble_3
 msgid "My job? I guess the royal guard is OK. I mean, Feygard is a really nice place to live in."
 msgstr ""
+"Moje práce? Řekl bych, že královská stráž je v pohodě. Chci říct, že ve "
+"Feygardu se žije opravdu hezky."
 
 #: conversationlist_foamingflask_outsideguard.json:ff_outsideguard_trouble_4
 msgid "Standing guard on duty out here in the middle of nowhere is not really what I signed up for."
 msgstr ""
+"Ale stát jako hlídka tady uprostřed ničeho není úplně to, proč jsem se "
+"nechal naverbovat."
 
 #: conversationlist_foamingflask_outsideguard.json:ff_outsideguard_trouble_4:0
 msgid "I bet. This place is really boring."
-msgstr ""
+msgstr "To se vsadím. Tohle místo je skutečný nudný zapadákov."
 
 #: conversationlist_foamingflask_outsideguard.json:ff_outsideguard_trouble_4:1
 msgid "You must get tired of just standing here also."
-msgstr ""
+msgstr "Taky to musí být únavné tady jen tak stát."
 
 #: conversationlist_foamingflask_outsideguard.json:ff_outsideguard_trouble_5
 msgid "Yeah I know. I would rather be inside in the tavern drinking like the senior officers and the captain. How come I have to stand out here?"
 msgstr ""
+"Jo, vím. Raději bych byl vevnitř v hospodě a popíjel jako kapitán a "
+"důstojníci. Jak k tomu přijdu, že já musím stát venku?"
 
 #: conversationlist_foamingflask_outsideguard.json:ff_outsideguard_trouble_5:0
 msgid "At least the Shadow watches over you."
-msgstr ""
+msgstr "Alespoň tě ochraňuje Přítmí."
 
 #: conversationlist_foamingflask_outsideguard.json:ff_outsideguard_trouble_5:1
 msgid "Why not just leave if it's not what you want to do?"
-msgstr ""
+msgstr "Proč prostě neodejdeš, když tu práci nechceš dělat?"
 
 #: conversationlist_foamingflask_outsideguard.json:ff_outsideguard_trouble_5:2
 msgid "The greater cause of the royal guard, to keep the peace, is worth it in the long run."
-msgstr ""
+msgstr "Královská stráž má vyšší smysl, udržovat mír, a ten za to stojí."
 
 #: conversationlist_foamingflask_outsideguard.json:ff_outsideguard_trouble_6
 msgid "Yes, you are right of course. Our duty is to Feygard and to keep the peace from all that want to disrupt it."
 msgstr ""
+"Ano, máš samozřejmě pravdu. Jsme oddáni Feygardu a naším posláním je "
+"udržovat mír před všemi, kdo by jej chtěli narušit."
 
 #: conversationlist_foamingflask_outsideguard.json:ff_outsideguard_trouble_6:0
 msgid "Yes. The Shadow will not look favorably upon those that disrupt the peace."
-msgstr ""
+msgstr "Ano. Přítmí nebude shovívavé k těm, kteří chtějí narušit mír."
 
 #: conversationlist_foamingflask_outsideguard.json:ff_outsideguard_trouble_6:1
 msgid "Yes. The troublemakers should be punished."
-msgstr ""
+msgstr "Ano, výtržníci by měli být potrestáni."
 
 #: conversationlist_foamingflask_outsideguard.json:ff_outsideguard_trouble_7
 msgid "No, my loyalty is to Feygard. If I would leave, I would also leave my loyalty behind."
-msgstr ""
+msgstr "Ne, jsem věrný Feygardu. Kdybych odešel, porušil bych tím svou věrnost."
 
 #: conversationlist_foamingflask_outsideguard.json:ff_outsideguard_trouble_7:0
 msgid "What does that mean if you are not satisfied with what you do?"
-msgstr ""
+msgstr "Má to význam, když nejsi spokojený s tím, co děláš?"
 
 #: conversationlist_foamingflask_outsideguard.json:ff_outsideguard_trouble_7:1
 msgid "Yes, that sounds right. Feygard sounds like a nice place from what I have heard."
-msgstr ""
+msgstr "Ano, asi máš pravdu. Co jsem slyšel, je Feygard zřejmě krásné místo."
 
 #: conversationlist_foamingflask_outsideguard.json:ff_outsideguard_trouble_8
 msgid "Right. I like you, kid. Tell you what, I could put in a good word for you in the barracks when we get back to Feygard if you want."
 msgstr ""
+"Ano. Líbíš se mi, dítě. Víš co? Mohl bych se za tebe v kasárnách přimluvit, "
+"až se vrátíme do Feygardu, pokud chceš."
 
 #: conversationlist_foamingflask_outsideguard.json:ff_outsideguard_trouble_8:0
 msgid "Sure, that sounds good to me."
-msgstr ""
+msgstr "Ano, to zní dobře."
 
 #: conversationlist_foamingflask_outsideguard.json:ff_outsideguard_trouble_8:1
 msgid "No thanks. I have enough to do already."
-msgstr ""
+msgstr "Ne díky, už takhle mám práce dost."
 
 #: conversationlist_foamingflask_outsideguard.json:ff_outsideguard_trouble_9
 msgid "Well, I am convinced that we must follow the laws laid down by our rulers. If we don't obey the law, what are we left with?"
 msgstr ""
+"Inu, jsem přesvědčen, že musíme dodržovat zákony, které stanovili naši "
+"panovníci. Pokud se nebudou dodržovat zákony, co nám zůstane?"
 
 #: conversationlist_foamingflask_outsideguard.json:ff_outsideguard_trouble_10
 msgid ""
@@ -5441,155 +5685,167 @@ msgid ""
 "\n"
 "No, I prefer the lawful way of Feygard. My loyalty is firm."
 msgstr ""
+"Chaos. Zmatek.\n"
+"\n"
+"Ne, já preferuji zákonné způsoby podle Feygardu. Má věrnost je neochvějná."
 
 #: conversationlist_foamingflask_outsideguard.json:ff_outsideguard_trouble_10:0
 msgid "Sounds good to me. Laws are made to be followed."
-msgstr ""
+msgstr "To máš pravdu. Zákony jsou od toho, aby se dodržovaly."
 
 #: conversationlist_foamingflask_outsideguard.json:ff_outsideguard_trouble_10:1
 msgid "I do not agree. We should follow our heart, even if that goes against the rules."
 msgstr ""
+"Nesouhlasím. Měli bychom se řídit srdcem, i když jde občas proti pravidlům."
 
 #: conversationlist_foamingflask_outsideguard.json:ff_outsideguard_trouble_20:0
 msgid "I was wondering about why you stand guard here."
-msgstr ""
+msgstr "Přemýšlím, proč tu vlastně hlídáš."
 
 #: conversationlist_foamingflask_outsideguard.json:ff_outsideguard_trouble_12
 msgid "That troubles me. We might see each other again in the future. But then we might not be able to have this kind of civil discussion."
 msgstr ""
+"To mě znepokojuje. V budoucnu se možná opět setkáme, ale pak asi nebudeme "
+"moci vést takovou klidnou diskuzi."
 
 #: conversationlist_foamingflask_outsideguard.json:ff_outsideguard_trouble_21
 msgid "Right, we went over this before. As I said, I would rather be inside by the fire."
 msgstr ""
+"Pravda, o tom už jsme mluvili. Jak jsem říkal, raději bych byl vevnitř u "
+"ohně."
 
 #: conversationlist_foamingflask_outsideguard.json:ff_outsideguard_trouble_21:0
 msgid "I could spot for you if you want to go inside."
-msgstr ""
+msgstr "Mohl bych to za tebe vzít, jestli chceš jít dovnitř."
 
 #: conversationlist_foamingflask_outsideguard.json:ff_outsideguard_trouble_21:1
 msgid "Tough luck. I guess you are left out here, while your captain and buddies are inside."
 msgstr ""
+"To je pech. Asi tu zůstaneš venku sám, zatímco kapitán a tvoji kamarádi jsou "
+"vevnitř."
 
 #: conversationlist_foamingflask_outsideguard.json:ff_outsideguard_trouble_22
 msgid "Yeah, that's just my luck."
-msgstr ""
+msgstr "Ano, takovou mám smůlu."
 
 #: conversationlist_foamingflask_outsideguard.json:ff_outsideguard_trouble_23
 msgid "Really? Yes that would be great. Then I can at least get something to eat and a bit of warmth from the fire."
 msgstr ""
+"Opravdu? To by bylo skvělé. To bych se mohl konečně najíst a trochu zahřát."
 
 #: conversationlist_foamingflask_outsideguard.json:ff_outsideguard_trouble_24
 msgid "I will go inside in a minute. Will you stand watch while I go inside?"
-msgstr ""
+msgstr "Za minutu půjdu dovnitř. Budeš tu hlídkovat místo mě?"
 
 #: conversationlist_foamingflask_outsideguard.json:ff_outsideguard_trouble_24:0
 msgid "Sure, I will do that."
-msgstr ""
+msgstr "Jistě, budu."
 
 #: conversationlist_foamingflask_outsideguard.json:ff_outsideguard_trouble_24:1
 msgid "[Lie] Sure, I will do that."
-msgstr ""
+msgstr "[Lhát] Jistě, budu."
 
 #: conversationlist_foamingflask_outsideguard.json:ff_outsideguard_trouble_25
 msgid "Thanks a lot my friend."
-msgstr ""
+msgstr "Děkuji ti mnohokrát."
 
 #: conversationlist_foamingflask_outsideguard.json:ff_outsideguard_shadow_1
 msgid "Shadow? How curious that you would mention that. Explain yourself!"
-msgstr ""
+msgstr "Přítmí? Jak zvláštní, že to zmiňuješ. Vysvětli to!"
 
 #: conversationlist_foamingflask_outsideguard.json:ff_outsideguard_shadow_1:0
 msgid "I did not mean a thing by it. Never mind I said anything."
-msgstr ""
+msgstr "Nic jsem tím nemyslel. Zapomeň, že jsem to řekl."
 
 #: conversationlist_foamingflask_outsideguard.json:ff_outsideguard_shadow_1:1
 msgid "The Shadow watches over us when we sleep."
-msgstr ""
+msgstr "Přítmí nás ochraňuje, když spíme."
 
 #: conversationlist_foamingflask_outsideguard.json:ff_outsideguard_shadow_2
 msgid "Good. Now be gone before I will have to deal with you."
-msgstr ""
+msgstr "Dobře. Teď odejdi, než si to s tebou budu muset vyřídit."
 
 #: conversationlist_foamingflask_outsideguard.json:ff_outsideguard_shadow_3
 msgid "What? Are you one of those troublemakers sent here to sabotage our mission?"
 msgstr ""
+"Cože? Jsi jeden z těch buřičů, které sem poslali, aby sabotovali naši misi?"
 
 #: conversationlist_foamingflask_outsideguard.json:ff_outsideguard_shadow_3:0
 msgid "The Shadow protects us."
-msgstr ""
+msgstr "Přítmí nás ochraňuje."
 
 #: conversationlist_foamingflask_outsideguard.json:ff_outsideguard_shadow_3:1
 msgid "Fine. I better not start a fight with the royal guard."
-msgstr ""
+msgstr "No dobře. Raději nebudu začínat souboj s královskou stráží."
 
 #: conversationlist_foamingflask_outsideguard.json:ff_outsideguard_shadow_4
 msgid "That does it. You better fight or flee right now kid."
-msgstr ""
+msgstr "To stačí. Buďto bojuj nebo uteč."
 
 #: conversationlist_foamingflask_outsideguard.json:ff_outsideguard_shadow_4:0
 msgid "Good. I have been waiting for a fight!"
-msgstr ""
+msgstr "Dobře. Na souboj jsem se už těšil!"
 
 #: conversationlist_foamingflask_outsideguard.json:ff_outsideguard_shadow_4:2
 msgid "Never mind. I was just kidding with you."
-msgstr ""
+msgstr "Zapomeň na to. Jenom si z tebe dělám srandu."
 
 #: conversationlist_wrye.json:wrye_return_1
 msgid "Welcome back. Have you found out anything about my son, Rincel?"
-msgstr ""
+msgstr "Vítej zpět. Už víš něco o mém synovi Rincelovi?"
 
 #: conversationlist_wrye.json:wrye_return_1:0
 msgid "Can you tell me the story about what happened again?"
-msgstr ""
+msgstr "Můžeš mi zopakovat, co se stalo?"
 
 #: conversationlist_wrye.json:wrye_return_1:1
 msgid "No, I have not found anything yet."
-msgstr ""
+msgstr "Ne, zatím nic nevím."
 
 #: conversationlist_wrye.json:wrye_return_1:2
 msgid "Yes, I have found out the story about what happened to him."
-msgstr ""
+msgstr "Ano, už vím, co se mu stalo."
 
 #: conversationlist_wrye.json:wrye_return_2
 msgid "Welcome back. Thank you for your help in finding out what happened to my son."
-msgstr ""
+msgstr "Vítej zpět. Děkuji, žes mi pomohl zjistit, co se stalo mému synovi."
 
 #: conversationlist_wrye.json:wrye_return_2:1
 #: conversationlist_prim_guthbered.json:guthbered_sentbybwm_leave:0
 #: conversationlist_blackwater_harlenn.json:harlenn_sentbyprim_8:0
 msgid "You are welcome."
-msgstr ""
+msgstr "Rádo se stalo."
 
 #: conversationlist_wrye.json:wrye_mourn_1
 msgid "Shadow help me."
-msgstr ""
+msgstr "Pomáhej mi Přítmí."
 
 #: conversationlist_wrye.json:wrye_mourn_1:0
 #: conversationlist_bwm_agent_1.json:bwm_agent_1_start:0
 #: conversationlist_prim_outside.json:tonis_1:0
 msgid "What is the matter?"
-msgstr ""
+msgstr "Co se stalo?"
 
 #: conversationlist_wrye.json:wrye_mourn_2
 msgid "My son! My son is gone."
-msgstr ""
+msgstr "Můj syn! Můj syn zmizel."
 
 #: conversationlist_wrye.json:wrye_mourn_2:0
 #: conversationlist_wrye.json:wrye_mourn_3:1
 msgid "Jolnor said I should see you about your son."
-msgstr ""
+msgstr "Jolnor mě posílá ohledně tvého syna."
 
 #: conversationlist_wrye.json:wrye_mourn_2:1
 msgid "What about him?"
-msgstr ""
+msgstr "Co je s ním?"
 
 #: conversationlist_wrye.json:wrye_mourn_3
 msgid "I don't want to talk about it. Not with an outsider like you."
-msgstr ""
+msgstr "Nechci o tom mluvit. Ne s cizincem, jako jsi ty."
 
 #: conversationlist_wrye.json:wrye_mourn_3:0
 msgid "Outsider?"
-msgstr ""
+msgstr "Cizincem?"
 
 #: conversationlist_wrye.json:wrye_mourn_4
 msgid ""
@@ -5597,41 +5853,48 @@ msgid ""
 "\n"
 "Oh Shadow, watch over me."
 msgstr ""
+"Prosím, odejdi.\n"
+"\n"
+"Přítmí, ochraňuj mě."
 
 #: conversationlist_wrye.json:wrye_mourn_5
 msgid "My son is dead, I know it! And it's those damn guards fault. Those guards with their snobby Feygard attitude."
 msgstr ""
+"Můj syn je mrtvý, vím to. A je to chyba těch prokletých stráží. Těch strážců "
+"s tou jejich namyšlenou Feygardskou nadřazeností."
 
 #: conversationlist_wrye.json:wrye_mourn_6
 msgid "At first they come with promises of protection and power. But then you really start to see them for what they are."
 msgstr ""
+"Nejdřív přišli se sliby ochrany a síly. Ale pak je člověk prokoukne a "
+"zjistí, jací ve skutečnosti jsou."
 
 #: conversationlist_wrye.json:wrye_mourn_7
 msgid "I can feel it in me. The Shadow speaks to me. He is dead."
-msgstr ""
+msgstr "Cítím to uvnitř. Přítmí ke mě promlouvá. Je mrtvý."
 
 #: conversationlist_wrye.json:wrye_mourn_7:0
 msgid "Can you tell me what happened?"
-msgstr ""
+msgstr "Můžeš mi říct, co se stalo?"
 
 #: conversationlist_wrye.json:wrye_mourn_7:1
 #: conversationlist_duaina.json:duaina_2:0
 #: conversationlist_lodarfg4.json:lodar_fg4_5:2
 #: conversationlist_stoutford.json:tahalendor_erwyn_1
 msgid "What are you talking about?"
-msgstr ""
+msgstr "O čem to mluvíš?"
 
 #: conversationlist_wrye.json:wrye_mourn_8
 msgid "Thank you. Shadow watch over me."
-msgstr ""
+msgstr "Děkuji. Přítmí, ochraňuj mě."
 
 #: conversationlist_wrye.json:wrye_story_1
 msgid "It all started with those Feygard royal guards coming here."
-msgstr ""
+msgstr "Vše začalo příchodem Feygardské královské stráže."
 
 #: conversationlist_wrye.json:wrye_story_2
 msgid "They tried to pressure everyone in Vilegard into recruiting more soldiers."
-msgstr ""
+msgstr "Vyvíjeli tlak na každého, aby získali více vojáků do svých řad."
 
 #: conversationlist_wrye.json:wrye_story_3
 msgid "The guards would say they needed more support to help squelch the supposed uprising and sabotage."
@@ -5672,7 +5935,7 @@ msgstr ""
 #: conversationlist_maevalia.json:maevalia15:0
 #: conversationlist_stoutford.json:tahalendor2_10
 msgid "What now?"
-msgstr ""
+msgstr "Co teď?"
 
 #: conversationlist_wrye.json:wrye_story_9
 msgid "This was several weeks ago. Now I feel an emptiness inside. I know in me that something has happened to my son Rincel."
@@ -37865,51 +38128,70 @@ msgstr ""
 
 #: questlist_stoutford_combined.json:stoutford_castle
 msgid "Stoutford's old castle"
-msgstr ""
+msgstr "Starý stoutfordský hrad"
 
 #: questlist_stoutford_combined.json:stoutford_castle:5
 msgid "I tried to free this castle from the undead Lord Erwyn. But whenever I kill him, he reappears. I should seek help..."
 msgstr ""
+"Zkoušel jsem ten hrad osvobodit od nemrtvého Lorda Erwyna. Ale kdykoli ho "
+"zabiju, objeví se znovu. Měl bych vyhledat pomoc…"
 
 #: questlist_stoutford_combined.json:stoutford_castle:10
 msgid "I talked to Yolgen, the Shadow priest of Stoutford, and he told me that the mighty Lord Erwyn used to reside here, but Lord Erwyn and his army were crushed during a war, the castle was sacked and the house extinguished. But recently Erwyn's knights have risen from the dead. Yolgen asked me to rid Stoutford of these undead once and for all."
 msgstr ""
+"Mluvil jsem s Yolgenem, knězem Přítmí ve Stoutfordu, který mi řekl, že zde "
+"dřív sídlil mocný Lord Erwyn, ale byl se svou armádou poražen ve válce, hrad "
+"byl vypleněn a jeho rod zanikl. Ale nedávno Erwynovi rytíři povstali z "
+"mrtvých. Yolgen mě požádal, abych Stoutford těchto nemrtvých jednou provždy "
+"zbavil."
 
 #: questlist_stoutford_combined.json:stoutford_castle:12
 msgid "I should ask Tahalendor for some special artefact that I can use to defeat powerful undead."
 msgstr ""
+"Měl bych požádat Tahalendora o nějaký speciální artefakt, kterým bych mohl "
+"porazit mocné nemrtvé."
 
 #: questlist_stoutford_combined.json:stoutford_castle:14
 msgid "Tahalendor gave me a pair of special coins that I can use to defeat powerful undead."
 msgstr ""
+"Tahalendor mi dal dvojici zvláštních mincí, pomocí kterých mohu porazit "
+"mocné nemrtvé."
 
 #: questlist_stoutford_combined.json:stoutford_castle:16
 msgid "I slew Lord Erwyn himself and ensured that he remains dead now."
-msgstr ""
+msgstr "Zabil jsem samotného Lorda Erwyna a zajistil jsem, že už zůstane mrtvý."
 
 #: questlist_stoutford_combined.json:stoutford_castle:20
 msgid "I slew all the undead knights."
-msgstr ""
+msgstr "Zabil jsem všechny nemrtvé rytíře."
 
 #: questlist_stoutford_combined.json:stoutford_castle:30
 msgid "I slew Lord Erwyn's commander."
-msgstr ""
+msgstr "Zabil jsem Erwynova velitele."
 
 #: questlist_stoutford_combined.json:stoutford_castle:42
 msgid "Among his remains I found a strange ring. I should show it to Yolgen."
 msgstr ""
+"Mezi jeho ostatky jsem našel zvláštní prsten. Měl bych ho ukázat Yolgenovi."
 
 #: questlist_stoutford_combined.json:stoutford_castle:50
 msgid "Yolgen examined the ring thoroughly. He suspects it has somehow come from Mt. Galmore and reanimated the long dead soldiers. I should be wary of the evil grasp of Mt. Galmore and whatever lurks there..."
 msgstr ""
+"Yolgen prsten důkladně prozkoumal. Má podezření, že nějak pochází z Mount "
+"Galmore a znovuoživil dlouho mrtvé vojáky. Měl bych si dát pozor na zlé síly "
+"z Mount Galmore a cokoli, co se tam skrývá…"
 
 #: questlist_stoutford_combined.json:stoutford_castle:60
 msgid "I kept the ring for myself, which upset Yolgen. I should keep looking for its previous owner."
 msgstr ""
+"Nechal jsem si prsten pro sebe, což Yolgena naštvalo. Měl bych dál hledat "
+"jeho předchozího majitele."
 
 #: questlist_stoutford_combined.json:stoutford_castle:70
 msgid "I kept the ring for myself and didn't tell Yolgen about it. He was suspicious but couldn't do anything about it. I should keep looking for its previous owner."
 msgstr ""
+"Nechal jsem si prsten pro sebe, ale neřekl to Yolgenovi. Podezříval mě, ale "
+"nemohl nic dělat. Měl bych dál hledat předchozího majitele toho prstenu."
 
 #: worldmap.xml:world1:crossglen
 msgid "Crossglen"
@@ -37917,7 +38199,7 @@ msgstr ""
 
 #: worldmap.xml:world1:crossroads
 msgid "Crossroads Guardhouse"
-msgstr ""
+msgstr "Strážnice na křižovatce"
 
 #: worldmap.xml:world1:charwoodh
 msgid "Charwood"
@@ -37929,11 +38211,11 @@ msgstr ""
 
 #: worldmap.xml:world1:flagstone
 msgid "Flagstone Prison"
-msgstr ""
+msgstr "Věznice Flagstone"
 
 #: worldmap.xml:world1:fflask
 msgid "Foaming Flask Tavern"
-msgstr ""
+msgstr "Hospoda Pěnící čutora"
 
 #: worldmap.xml:world1:loneford
 msgid "Loneford"
@@ -37953,9 +38235,8 @@ msgstr ""
 
 #: worldmap.xml:world1:stoutford
 msgid "Stoutford"
-msgstr ""
+msgstr "Stoutford"
 
 #: worldmap.xml:world1:guynmart_area
 msgid "Guynmart Castle"
-msgstr ""
-
+msgstr "Hrad Guynmart"
