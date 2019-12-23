@@ -386,6 +386,11 @@ public final class SkillController {
 		if (itemType.effects_equip == null) return;
 		player.damagePotential.addToMax(getPercentage(itemType.effects_equip.stats.increaseMaxDamage, percentForPositiveValues, percentForNegativeValues));
 		player.damagePotential.add(getPercentage(itemType.effects_equip.stats.increaseMinDamage, percentForPositiveValues, percentForNegativeValues), false);
+
+		if (itemType.isWeapon()) {
+			player.weaponDamage.addToMax(getPercentage(itemType.effects_equip.stats.increaseMaxDamage, percentForPositiveValues, percentForNegativeValues));
+			player.weaponDamage.add(getPercentage(itemType.effects_equip.stats.increaseMinDamage, percentForPositiveValues, percentForNegativeValues), false);
+		}
 	}
 
 	private static void addPercentCriticalSkill(Player player, ItemType itemType, int percentForPositiveValues, int percentForNegativeValues) {

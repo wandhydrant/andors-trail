@@ -40,6 +40,7 @@ public final class Player extends Actor {
 	public int useItemCost;
 	public int reequipCost;
 	public int totalExperience;
+	public final Range weaponDamage = new Range();
 
 	private final HashMap<String, HashSet<Integer> > questProgress = new HashMap<String, HashSet<Integer> >();
 	private String spawnMap;
@@ -117,6 +118,7 @@ public final class Player extends Actor {
 		this.ap.set(baseTraits.maxAP, baseTraits.maxAP);
 		this.health.set(baseTraits.maxHP, baseTraits.maxHP);
 		this.conditions.clear();
+		this.weaponDamage.set(0, 0);
 
 		Loot startItems = new Loot();
 		dropLists.getDropList(DropListCollection.DROPLIST_STARTITEMS).createRandomLoot(startItems, this);
