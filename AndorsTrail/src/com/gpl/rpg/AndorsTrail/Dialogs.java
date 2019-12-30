@@ -4,13 +4,18 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
 
+import android.*;
+import android.Manifest;
+import android.annotation.TargetApi;
 import android.app.Activity;
 import android.app.Dialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.DialogInterface.OnDismissListener;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.net.Uri;
+import android.os.Build;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.View;
@@ -318,24 +323,45 @@ public final class Dialogs {
 		showDialogAndPause(d, controllerContext);
 	}
 
-	public static void showNewVersion(final Activity currentActivity) {
+	public static void showNewVersion(final Activity currentActivity, final OnDismissListener onDismiss) {
 		//		new AlertDialog.Builder(new ContextThemeWrapper(currentActivity, R.style.AndorsTrailStyle))
 		//		.setTitle(R.string.dialog_newversion_title)
 		//		.setMessage(R.string.dialog_newversion_message)
 		//		.setNeutralButton(android.R.string.ok, null)
 		//		.show();
 
+		String text = currentActivity.getResources().getString(R.string.dialog_newversion_message);
+
+		if (!hasPermissions(currentActivity)) {
+			text += currentActivity.getResources().getString(R.string.dialog_newversion_permission_information);
+		}
+
 		final Dialog d = CustomDialogFactory.createDialog(currentActivity, 
 				currentActivity.getResources().getString(R.string.dialog_newversion_title), 
 				null, 
-				currentActivity.getResources().getString(R.string.dialog_newversion_message), 
+				text,
 				null, 
 				true);
 
-
 		CustomDialogFactory.addDismissButton(d, android.R.string.ok);
-
+		CustomDialogFactory.setDismissListener(d, new OnDismissListener() {
+			@Override
+			public void onDismiss(DialogInterface arg0) {
+				if (onDismiss != null) onDismiss.onDismiss(arg0);
+			}
+		});
 		CustomDialogFactory.show(d);
+	}
+
+	@TargetApi(23)
+	private static boolean hasPermissions(final Activity activity) {
+		if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+			if (activity.getApplicationContext().checkSelfPermission(android.Manifest.permission.READ_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED
+					|| activity.getApplicationContext().checkSelfPermission(android.Manifest.permission.WRITE_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED) {
+				return false;
+			}
+		}
+		return true;
 	}
 
 	public static boolean showSave(final Activity mainActivity, final ControllerContext controllerContext, final WorldContext world) {
