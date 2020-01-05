@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: Andors Trail\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-11-10 11:48+0000\n"
-"PO-Revision-Date: 2019-09-23 01:27+0000\n"
+"PO-Revision-Date: 2020-01-05 20:21+0000\n"
 "Last-Translator: Daniel Stasiak <daniels.automatyk@gmail.com>\n"
 "Language-Team: Polish <https://hosted.weblate.org/projects/andors-trail/"
 "game-content/pl/>\n"
@@ -13,7 +13,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 3.9-dev\n"
+"X-Generator: Weblate 3.10\n"
 "X-Launchpad-Export-Date: 2015-11-02 12:27+0000\n"
 
 #: [none]
@@ -285,19 +285,19 @@ msgstr "Zamglony umysł"
 
 #: actorconditions_omicronrg9.json:guild03_restingAC
 msgid "Resting"
-msgstr ""
+msgstr "Wypoczynek"
 
 #: actorconditions_omicronrg9.json:g03_concentration
 msgid "Concentration"
-msgstr ""
+msgstr "Koncentracja"
 
 #: actorconditions_omicronrg9.json:g03_combo
 msgid "Combo"
-msgstr ""
+msgstr "Kombinacja"
 
 #: actorconditions_omicronrg9.json:carrying_ambelie
 msgid "Carrying Ambelie"
-msgstr ""
+msgstr "Przenoszenie Ambelie"
 
 #: conversationlist_mikhail.json:mikhail_gamestart
 msgid "Oh good, you are awake."
@@ -326,7 +326,7 @@ msgstr "Masz dla mnie jeszcze jakieś zadania?"
 #: conversationlist_mikhail.json:mikhail_default:3
 #: conversationlist_umar.json:umar_return_1:0
 msgid "Do you have any tasks for me?"
-msgstr "[REVIEW]Cześć."
+msgstr "Czy masz dla mnie jakieś zadania?"
 
 #: conversationlist_mikhail.json:mikhail_default:4
 msgid "Is there anything else you can tell me about Andor?"
@@ -592,7 +592,7 @@ msgstr ""
 #: conversationlist_guynmart2.json:guynmart_s_rob6b_10:1
 #: conversationlist_guynmart2_npc.json:guynmart_rob6_10:1
 msgid "No thanks."
-msgstr ""
+msgstr "Nie , dziękuję."
 
 #: conversationlist_crossglen.json:drunk1:1
 #: conversationlist_rothses.json:rothses_c2:2
@@ -948,7 +948,7 @@ msgstr "A co z twoim mężem Oromirem?"
 #: conversationlist_crossglen_leta.json:leta1:2
 #: conversationlist_crossglen_leta.json:leta1:3
 msgid "Umar sent me."
-msgstr ""
+msgstr "Przysyła mnie Umar."
 
 #: conversationlist_crossglen_leta.json:leta2
 msgid "Beat it kid, get out of my house!"
@@ -1007,11 +1007,13 @@ msgstr ""
 #: conversationlist_stoutford.json:kayla_1
 #: conversationlist_stoutford.json:glasforn_initial_0
 msgid "Hello."
-msgstr ""
+msgstr "Cześć."
 
 #: conversationlist_crossglen_leta.json:oromir2
 msgid "I'm hiding here from my wife Leta. She is always getting angry at me for not helping out on the farm. Please don't tell her that I'm here."
-msgstr "Chowam się tu przed moją żoną Letą. Zawsze ma mi za złe, że nie pomagam jej w pracy na farmie.  Proszę Cię, nie zdradź jej, że tu jestem."
+msgstr ""
+"Chowam się tu przed moją żoną Letą. Zawsze ma mi za złe, że nie pomagam jej "
+"w pracy na farmie. Proszę Cię, nie zdradź jej, że tu jestem."
 
 #: conversationlist_crossglen_leta.json:oromir2:0
 #: conversationlist_crossglen_odair.json:odair5:0
@@ -1631,11 +1633,14 @@ msgstr "O jakim zadaniu mówimy?"
 
 #: conversationlist_fallhaven_bucus.json:bucus_thieves_3:1
 msgid "As long as this leads to some treasure, I'm in!"
-msgstr "Tak długo jak prowadzi to do skarbu,  wchodzę w to!"
+msgstr "Tak długo jak prowadzi to do skarbu, wchodzę w to!"
 
 #: conversationlist_fallhaven_bucus.json:bucus_thieves_4
 msgid "Bring me the key of Luthor and we can talk more. I don't know anything about the key itself, but rumor has it that it is located somewhere in the catacombs beneath Fallhaven Church."
-msgstr "Przynieś mi klucz Luthora, a wtedy pogadamy więcej. Właściwie, to nic o nim nie wiem, ale plotka głosi, że jest w schowany gdzieś w katakumbach rozciągających się pod kościołem w Fallhaven."
+msgstr ""
+"Przynieś mi klucz Luthora, a wtedy powiem Ci więcej. Właściwie, to nic o nim "
+"nie wiem, ale plotka głosi, że jest w schowany gdzieś w katakumbach "
+"rozciągających się pod kościołem w Fallhaven."
 
 #: conversationlist_fallhaven_bucus.json:bucus_thieves_4:0
 msgid "OK, sounds easy enough."
@@ -1687,11 +1692,11 @@ msgstr "Czy mógłbyś powiedzieć mi coś więcej na temat tego kościoła?"
 
 #: conversationlist_fallhaven_church.json:thoronir_default:2
 msgid "Are the Bonemeal potions ready yet?"
-msgstr "Czy mikstury z mączki kostnej są już gotowe?"
+msgstr "Czy mikstury z Kostnego Prochu są już gotowe?"
 
 #: conversationlist_fallhaven_church.json:thoronir_default:3
 msgid "I really need your help!"
-msgstr ""
+msgstr "Naprawdę potrzebuję Twojej pomocy!"
 
 #: conversationlist_fallhaven_church.json:thoronir_shadow_1
 #: conversationlist_jolnor.json:jolnor_shadow_1
@@ -1700,7 +1705,7 @@ msgstr "Cień chroni nas przed niebezpieczeństwami nocy. Zapewnia nam bezpiecze
 
 #: conversationlist_fallhaven_church.json:thoronir_shadow_1:0
 msgid "Tharal sent me and told me to tell you the password 'Glow of the Shadow'."
-msgstr "Przysłał mnie Tharal. Kazał mi powiedzieć hasło  'Blask Cienia'."
+msgstr "Przysłał mnie Tharal. Kazał mi powiedzieć hasło 'Blask Cienia'."
 
 #: conversationlist_fallhaven_church.json:thoronir_shadow_1:2
 msgid "Sounds like nonsense to me."
@@ -1741,7 +1746,9 @@ msgstr "W porządku, postaram się z nim spotkać."
 
 #: conversationlist_fallhaven_church.json:thoronir_tharal_2
 msgid "Shhh, we shouldn't talk so loud about using bonemeal. As you know, Lord Geomyr issued a ban on all use of bonemeal."
-msgstr "Ciiii, nie powinniśmy tak głośno mówić o mączce kostnej. Jak zapewne wiesz, Lord Geomyr nałożył całkowity zakaz jego używania."
+msgstr ""
+"Ciiii, nie powinniśmy tak głośno mówić o Kostnym Prochu. Jak zapewne wiesz, "
+"Lord Geomyr nałożył całkowity zakaz jego używania."
 
 #: conversationlist_fallhaven_church.json:thoronir_tharal_3
 msgid "When the ban came, I did not dare keep any, so I threw my whole supply away. It was quite foolish now that I look back on it."
@@ -1749,7 +1756,10 @@ msgstr "Po tym jak zakaz wszedł w życie, nie odważyłem się zatrzymać żadn
 
 #: conversationlist_fallhaven_church.json:thoronir_tharal_4
 msgid "Do you think you could find me 5 skeletal bones that I can use for mixing a bonemeal potion? The bonemeal is very potent in healing old wounds."
-msgstr "Jak sądzisz, uda Ci się znaleźć dla mnie 5 kości, z których będę mógł sporządzić miksturę z mączki kostnej? Jest ona niezwykle skuteczna w leczeniu starych ran."
+msgstr ""
+"Jak sądzisz, uda Ci się znaleźć dla mnie 5 kości, z których będę mógł "
+"sporządzić miksturę z Kostnego Prochu? Jest ona niezwykle skuteczna w "
+"leczeniu starych ran."
 
 #: conversationlist_fallhaven_church.json:thoronir_tharal_4:0
 msgid "Sure, I might be able to do that."
@@ -1761,7 +1771,10 @@ msgstr "Proszę, oto kości o które prosiłeś."
 
 #: conversationlist_fallhaven_church.json:thoronir_tharal_5
 msgid "Thank you, please come back soon. I heard there were some undead near an old abandoned house just north of Fallhaven. Maybe you can check for bones there?"
-msgstr "Dziękuję, proszę wróć tu tak szybko jak tylko się da. Słyszałem, że ktoś widział  nieumarłych w opuszczonym domu na północ od Fallhaven. Może tam uda się zdobyć jakieś kości?"
+msgstr ""
+"Dziękuję, proszę wróć tu tak szybko jak tylko się da. Słyszałem, że ktoś "
+"widział nieumarłych w opuszczonym domu na północ od Fallhaven. Może tam uda "
+"się zdobyć jakieś kości?"
 
 #: conversationlist_fallhaven_church.json:thoronir_tharal_5:0
 msgid "OK, I'll go check there."
@@ -1769,11 +1782,15 @@ msgstr "W porządku, pójdę tam i sprawdzę."
 
 #: conversationlist_fallhaven_church.json:thoronir_tharal_complete
 msgid "Thank you, these bones will do fine. Now I can start creating some bonemeal healing potions for you."
-msgstr "Dziękuję, te kości będą jak znalazł. Teraz mogę rozpocząć tworzenie mikstur z mączki kostnej dla Ciebie."
+msgstr ""
+"Dziękuję, te kości będą jak znalazł. Teraz mogę rozpocząć tworzenie mikstur "
+"z Kostnego Prochu dla Ciebie."
 
 #: conversationlist_fallhaven_church.json:thoronir_complete_2
 msgid "Give me some time to mix the bonemeal potion. It is a very potent healing potion. Come back in a little while."
-msgstr "Daj mi trochę czasu, abym mógł sporządzić miksturę z mączki kostnej. To bardzo silny lek na rany. Wróć tu nieco później."
+msgstr ""
+"Daj mi trochę czasu, abym mógł sporządzić miksturę z Kostnego Prochuj. To "
+"bardzo silny lek na rany. Wróć tu nieco później."
 
 #: conversationlist_fallhaven_church.json:thoronir_trade_bonemeal
 msgid "Yes, the bonemeal potions are ready. Please use them with care, and don't let the guards see you. We are not actually allowed to use them anymore."
@@ -1801,7 +1818,7 @@ msgstr "Na potęgę Cienia, nie powstrzymasz mnie!"
 
 #: conversationlist_fallhaven_church.json:catacombguard1
 msgid "Nooo, you shall not pass!"
-msgstr "Nieee, nie powinieneś iść dalej!"
+msgstr "Nieee, nie przejdziesz!"
 
 #: conversationlist_fallhaven_church.json:catacombguard1:0
 msgid "OK. Let's fight."
@@ -1838,11 +1855,13 @@ msgstr "Tak, byłem w katakumbach rozciągających się pod kościołem w Fallha
 
 #: conversationlist_fallhaven_athamyr.json:athamyr_2
 msgid "But I'm the only one that both has the permission and the bravery to go down there."
-msgstr "Ale jestem jedyną osobą, która ma zarówno pozwolenie, jak i odwagę, by zejść tam na dół."
+msgstr ""
+"Ale jestem jedyną osobą, która ma zarówno pozwolenie, jak i odwagę, by tam "
+"zejść."
 
 #: conversationlist_fallhaven_athamyr.json:athamyr_2:0
 msgid "How can I get permission to go down there?"
-msgstr "Jak mogę zdobyć pozwolenie na zejście do katakumb?"
+msgstr "Jak mogę zdobyć pozwolenie na wejście do katakumb?"
 
 #: conversationlist_fallhaven_athamyr.json:athamyr_3
 msgid "You want to go down in the catacombs? Hmm, maybe we can make a deal."
@@ -2192,7 +2211,9 @@ msgstr "[REVIEW]Kup [10 sztuk złota]"
 
 #: conversationlist_fallhaven_tavern.json:bela_room_1:1
 msgid "I really need to rest but I don't have 10 gold. I will wash the dishes. [Wash the dishes]"
-msgstr "[REVIEW]Nie, dzięki."
+msgstr ""
+"Naprawdę muszę odpocząć, ale nie mam 10 sztuk złota. Umyję w zamian "
+"naczynia. [Zmywasz naczynia]"
 
 #: conversationlist_fallhaven_tavern.json:bela_room_2
 msgid "Thanks. Take the last room down at the end of the hall."
@@ -2928,7 +2949,10 @@ msgstr "Czy możesz mi opowiedzieć, co wydarzyło się w Flagstone?"
 
 #: conversationlist_flagstone.json:flagstone_sentry_4
 msgid "Flagstone Prison was built a few hundred years ago by house Gorland of Stoutford and used until the Noble Wars, when the house was vanquished. This dreadful place has been abandoned ever since."
-msgstr "Więzienie Flagstone zostało zbudowane kilkaset lat temu przez klan Gorland ze Stoutford. Było używane aż do Szlachetnej wojny, kiedy to klan został zniszczony. Od tego czasu to straszne miejsce jest opuszczone."
+msgstr ""
+"Więzienie Flagstone zostało zbudowane kilkaset lat temu przez ród Gorland ze "
+"Stoutford. Było używane aż do Wojny Rodowej, kiedy to ród ów został "
+"pokonany. Od tego czasu to straszne miejsce jest opuszczone."
 
 #: conversationlist_flagstone.json:flagstone_sentry_8
 msgid "For years, no one took notice of Flagstone, although there were occasional reports from travelers of terrible screams coming from the camp."
@@ -2984,7 +3008,9 @@ msgstr "[REVIEW]Na niższych poziomach Flagstone jest strażnik, do którego nie
 
 #: conversationlist_flagstone.json:flagstone_sentry_20
 msgid "A guardian and undead prisoners you say? This is troubling news, since it means there is some larger force behind all this."
-msgstr "[REVIEW]Strażnik i nieumarli  powiadasz? To niepokojące wieści, ponieważ to znaczy, że za tym wszystkim stoi jakaś większa siła."
+msgstr ""
+"Strażnik i nieumarli powiadasz? To niepokojące wieści, ponieważ to znaczy, "
+"że za tym wszystkim stoi jakaś większa siła."
 
 #: conversationlist_flagstone.json:flagstone_sentry_21
 msgid "You should look for the former warden. Maybe he has something to do with all of this. If you find him you should return here with any important news."
@@ -2992,11 +3018,14 @@ msgstr "Powinieneś poszukać byłego Zarządcy więzienia, może mieć z tym co
 
 #: conversationlist_flagstone.json:flagstone_sentry_21:0
 msgid "OK, I will go and look for the former warden."
-msgstr "W porządku, pójdę poszukać byłego Zarządcy Więzienia."
+msgstr "W porządku, pójdę poszukać byłego Naczelnika Więzienia."
 
 #: conversationlist_flagstone.json:flagstone_sentry_23
 msgid "Oh this looks most interesting. Let's take a look. Hmm. It has got some weird inscriptions on it that say 'Daylight Shadow'. Maybe you could try these words on the demon? So perhaps the warden did have something to do with the demon after all?"
-msgstr "O, to wygląda najciekawiej. Spójrzmy na niego. Hmm... Ma wyryty przedziwny napis który brzmi \"Cień Światła\". Może mógłbyś wypowiedzieć te słowa do demona? Czyżby Naczelnik  mógł mieć coś wspólnego z demonem?"
+msgstr ""
+"O, to wygląda najciekawiej. Spójrzmy na niego. Hmm... Ma wyryty przedziwny "
+"napis który brzmi \"Cień Światła\". Może mógłbyś spróbować wypowiedzieć te "
+"słowa do demona? A więc może Naczelnik mógł mieć jakiś związek z demonem?"
 
 #: conversationlist_flagstone.json:flagstone_sentry_23:0
 msgid "That might work. Thank you."
@@ -3008,7 +3037,8 @@ msgstr "Witaj ponownie. Znalazłeś już dawnego naczelnika Flagstone?"
 
 #: conversationlist_flagstone.json:flagstone_sentry_return2:0
 msgid "I slew the former warden and found a peculiar necklace among his remains."
-msgstr "Zabiłem byłego naczelnika i znalazłem osobliwy naszyjnik przy jego zwłokach."
+msgstr ""
+"Zabiłem byłego Naczelnika i znalazłem osobliwy naszyjnik przy jego zwłokach."
 
 #: conversationlist_flagstone.json:flagstone_sentry_return2:2
 msgid "Not yet. I have to keep looking."
@@ -3044,7 +3074,10 @@ msgstr "Witaj ponownie. Wydaje się, że w Flagstone stało się coś, co osłab
 
 #: conversationlist_flagstone.json:flagstone_sentry_return4:0
 msgid "In the depths of Flagstone, I had to fight a winged demon and found a prisoner called Narael. He told me that he has been there for a very long time, and is too weak to leave."
-msgstr "W podziemiach Flagstone walczyłem ze skrzydlatym demonem oraz odnalazłem więźnia o imieniu Narael. Powiedział mi, że przebywał tam od bardzo dawna i jest zbyt słaby, by opuścić to miejsce."
+msgstr ""
+"W podziemiach Flagstone walczyłem ze skrzydlatym demonem oraz odnalazłem "
+"więźnia o imieniu Narael. Powiedział mi, że przebywa tam od bardzo dawna i "
+"jest zbyt słaby, aby opuścić to miejsce."
 
 #: conversationlist_flagstone.json:narael
 msgid "Thank you, thank you for freeing me from that monster."
@@ -3238,7 +3271,10 @@ msgstr "Do widzenia."
 
 #: conversationlist_fallhaven_south.json:fallhaven_lumberjack_13
 msgid "You're welcome. But you're not the only one who is happy. There are more people resting for a night in Fallhaven, which helps our economy. Some even bought items at my store! By the way, I was surprised, but I even got paid well by the warden."
-msgstr "Bardzo proszę. Nie jesteś jednak jedynym zadowolonym tutaj. Dużo ludzi nocuje w Fallhaven i wspiera naszą gospodarkę. Niektórzy nawet kupili coś w moim sklepie! Swoją drogą jestem zaskoczony, gdyż nawet strażnicy mi zapłacili."
+msgstr ""
+"Bardzo proszę. Nie jesteś jednak jedynym zadowolonym tutaj. Dużo ludzi "
+"nocuje w Fallhaven i wydaje tu pieniądze. Niektórzy nawet kupili coś w moim "
+"sklepie! Swoją drogą jestem zaskoczony, gdyż nawet Naczelnik mi zapłacił."
 
 #: conversationlist_fallhaven_south.json:fallhaven_lumberjack_13:0
 msgid "Great. Now everything is much better than it was before!"
@@ -3616,7 +3652,7 @@ msgstr "Czy mogę rzucić okiem co masz na sprzedaż?"
 
 #: conversationlist_thievesguild_1.json:thievesguild_troublemaker_1:3
 msgid "Umar sent me to talk about my first job here."
-msgstr ""
+msgstr "Umar przysyła mnie, żebyś opowiedział mi o mojej pierwszej pracy tutaj."
 
 #: conversationlist_thievesguild_1.json:thievesguild_troublemaker_2
 msgid "I keep an eye on our supplies for the guild."
@@ -3741,11 +3777,13 @@ msgstr "Taaa, też tak myślę. Ale przez wzgląd na Gildię, wolelibyśmy widzi
 
 #: conversationlist_farrik.json:farrik_12:0
 msgid "Don't worry, your secret plan to free him is safe with me."
-msgstr ""
+msgstr "Nie martw się, Twój tajny plan uwolnienia go jest bezpieczny ze mną."
 
 #: conversationlist_farrik.json:farrik_12:1
 msgid "[Lie] Don't worry, your secret plan to free him is safe with me."
 msgstr ""
+"[Kłamstwo] Nie martw się, Twój tajny plan uwolnienia go jest bezpieczny ze "
+"mną."
 
 #: conversationlist_farrik.json:farrik_12:2
 #: conversationlist_farrik.json:farrik_17:1
@@ -3821,15 +3859,15 @@ msgstr "Co o tym sądzisz? Wchodzisz w to?"
 
 #: conversationlist_farrik.json:farrik_22:0
 msgid "No, this is really starting to sound like a bad idea."
-msgstr ""
+msgstr "Nie, to naprawdę brzmi jak głupi pomysł."
 
 #: conversationlist_farrik.json:farrik_22:1
 msgid "Sure, sounds easy!"
-msgstr "[REVIEW]Brzmi trochę niebezpiecznie, ale mimo to spróbuję."
+msgstr "Pewnie, to łatwizna!"
 
 #: conversationlist_farrik.json:farrik_22:2
 msgid "Sounds a bit dangerous, but I guess I'll try."
-msgstr "[REVIEW]Jasne, bułka z masłem!"
+msgstr "Brzmi trochę groźnie, ale myślę że podołam."
 
 #: conversationlist_farrik.json:farrik_23
 msgid "Good. Report back to me when you have gotten the guard captain to drink that special mead."
@@ -3870,19 +3908,22 @@ msgstr "Dzięki za pomoc w upiciu dowódcy straży."
 
 #: conversationlist_farrik.json:farrik_26
 msgid "That's very useful information. Well done. You have my thanks, friend."
-msgstr "[REVIEW]Udało Ci się? Dobra robota. Masz moje podziękowanie, przyjacielu."
+msgstr "To bardzo cenna informacja. Dobra robota. Dziękuję Ci, przyjacielu."
 
 #: conversationlist_farrik.json:farrik_return_3
 msgid "So did you tell the Warden about our plan then?"
-msgstr ""
+msgstr "A więc wtedy powiedziałeś Naczelnikowi o naszym planie?"
 
 #: conversationlist_farrik.json:farrik_return_3:0
 msgid "No, I haven't talked to him."
-msgstr ""
+msgstr "Nie, nie rozmawiałem z nim."
 
 #: conversationlist_farrik.json:farrik_return_3:1
 msgid "[Lie]. No. I went there, but I overheard the Warden saying there was no real threat, so they will lower security. So maybe you can carry out your mission without me being involved."
 msgstr ""
+"[Kłamstwo]. Nie. Poszedłem tam, ale podsłuchałem jak Naczelnik mówi, że "
+"ponieważ nie ma realnego zagrożenia, więc można zredukować straże. Możesz "
+"więc przeprowadzić swą akcję bez mojego udziału."
 
 #: conversationlist_fallhaven_warden.json:fallhaven_warden
 msgid "State your business."
@@ -4126,23 +4167,23 @@ msgstr "Witaj ponownie, przyjacielu."
 
 #: conversationlist_umar.json:umar_return_1:1
 msgid "Are you going to tell me about the key?"
-msgstr "[REVIEW]Miło było Cię spotkać. Do zobaczenia."
+msgstr "Czy masz zamiar opowiedzieć mi o kluczu?"
 
 #: conversationlist_umar.json:umar_return_1:2
 msgid "Crackshot is dead."
-msgstr ""
+msgstr "Celna Ręka jest martwy."
 
 #: conversationlist_umar.json:umar_return_1:3
 msgid "What am I supposed to do again?"
-msgstr ""
+msgstr "Czego się ode mnie oczekuje?"
 
 #: conversationlist_umar.json:umar_return_1:4
 msgid "What are your plans for the traitors?"
-msgstr ""
+msgstr "Jakie masz plany wobec zdrajców?"
 
 #: conversationlist_umar.json:umar_return_1:5
 msgid "Can you continue with what you were telling me about the traitors?"
-msgstr ""
+msgstr "Czy możesz kontynuować to, co mówiłeś mi o zdrajcach?"
 
 #: conversationlist_umar.json:umar_return_1:6
 msgid "We are supposed to talk about something."
@@ -21279,7 +21320,9 @@ msgstr "Dlaczego nie chce tego zrobić?"
 
 #: conversationlist_pathway_fallhaven.json:guard_pathway_2
 msgid "You're really curious boy... Well our superior, the warden, only wants to pay the woodcutter when he has done his work."
-msgstr "Jesteś naprawdę ciekawski chłopcem ... Cóż, nasz przełożony, naczelnik, chce zapłacić drwalowi dopiero wtedy, gdy ten wykona swoją pracę."
+msgstr ""
+"Jesteś naprawdę ciekawski chłopcem ... Cóż, nasz przełożony, Naczelnik, "
+"zapłaci drwalowi dopiero wtedy, gdy ten wykona swoją pracę."
 
 #: conversationlist_pathway_fallhaven.json:guard_pathway_2:0
 msgid "Maybe I could help?"
@@ -21303,7 +21346,10 @@ msgstr "I co z tego. Mogę pomóc!"
 
 #: conversationlist_pathway_fallhaven.json:guard_pathway_4
 msgid "OK, maybe you can be of use. Talk to the warden. Maybe you can convince him to pay the woodcutter first. But I have to warn you, he is a stubborn beast."
-msgstr "Dobrze może okażesz się przydatny Porozmawiaj z naczelnikiem. Może uda ci się go przekonać, aby zapłacił drwalowi. Ale muszę Cię ostrzec, że uparta z niego bestia."
+msgstr ""
+"Dobrze może okażesz się przydatny. Porozmawiaj z Naczelnikiem. Może uda Ci "
+"się go przekonać, aby zapłacił drwalowi. Ale muszę Cię ostrzec, że bardzo "
+"uparta z niego bestia."
 
 #: conversationlist_pathway_fallhaven.json:guard_pathway_4:0
 msgid "OK, thanks for your advice. I'm going to do that!"
@@ -27287,7 +27333,7 @@ msgstr "Zapomnij o tym. Zwłaszcza, że znasz tych ludzi, którzy wybudowali tę
 
 #: conversationlist_stoutford_combined.json:lakecave2_troll_60:0
 msgid "What is terrible about that statue?"
-msgstr "Co jest takiego okropnego w tej statui?"
+msgstr "Co jest okropnego w tym posągu?"
 
 #: conversationlist_stoutford_combined.json:lakecave2_troll_62
 msgid "It is a bane for all trolls. We avoid going past, or even near, her."
@@ -28529,7 +28575,10 @@ msgstr "Nienawidzę tego miejsca. Cały czas pada i nie mogę znieść strasznyc
 
 #: conversationlist_stoutford_combined.json:flagstone_sentry_45
 msgid "This is both good and bad news. I am truly grateful that you rid us of the warden and his thralls. Talk to Yolgen for a reward. We will make sure that we recover this prisoner."
-msgstr "To zarówno dobra jak i zła wiadomość. Jestem naprawdę wdzięczny, że pozbyłeś się naczelnika i jego niewolników. Porozmawiaj z Yolgenem o nagrodzie. Dopilnuję abyśmy uwolnili tego więźnia."
+msgstr ""
+"To zarówno dobra jak i zła wiadomość. Jestem naprawdę wdzięczny, że pozbyłeś "
+"się Naczelnika i jego niewolników. Porozmawiaj z Yolgenem o nagrodzie. "
+"Dopilnujemy, abyśmy uwolnili tego więźnia."
 
 #: conversationlist_stoutford_combined.json:yolgen_flagstone_0
 msgid "If you could help with Flagstone, it would take a big burden off us."
@@ -33095,7 +33144,7 @@ msgstr "Buty ataku Vacora"
 
 #: itemlist_quest.json:necklace_flagstone
 msgid "Flagstone Warden's necklace"
-msgstr "Naszyjnik naczelnika Flagstone"
+msgstr "Naszyjnik Naczelnika Flagstone"
 
 #: itemlist_quest.json:packhide
 msgid "Wolfpack's animal hide"
@@ -35015,7 +35064,7 @@ msgstr "Duch Luthora"
 
 #: monsterlist_fallhaven_npcs.json:warden
 msgid "Warden"
-msgstr "Wartownik"
+msgstr "Naczelnik"
 
 #: monsterlist_fallhaven_npcs.json:guard
 #: monsterlist_v0610_npcs1.json:crossroads_backguard
@@ -35216,7 +35265,7 @@ msgstr "Kościsty mistrz"
 
 #: monsterlist_wilderness.json:undead_warden
 msgid "Undead warden"
-msgstr "Nieumarły Opiekun"
+msgstr "Nieumarły Naczelnik"
 
 #: monsterlist_wilderness.json:cave_guardian
 msgid "Cave guardian"
@@ -37749,7 +37798,7 @@ msgstr ""
 
 #: monsterlist_omicronrg9.json:g03_thief_2
 msgid "Thief warden"
-msgstr ""
+msgstr "Herszt złodziei"
 
 #: monsterlist_omicronrg9.json:g03_thief_3
 msgid "Rebelled rogue"
@@ -38007,7 +38056,13 @@ msgstr "Yolgen poprosił mnie, abym sprawdził co jest nie tak z więzieniem Fla
 
 #: questlist.json:flagstone:10
 msgid "I met a guard from Stoutford on sentry duty outside a fortress called Flagstone. He told me that Flagstone used to serve as a prison for house Gorland of Stoutford, but it is now abandoned. Recently, undead have started pouring out of Flagstone. I should investigate the source of the undead monsters. The guard tells me to return to him if I need help."
-msgstr "[OUTDATED]Spotkałem strażnika stojącego na posterunku przed fortecą zwaną Flagstone. Powiedział mi, że twierdza pełniła niegdyś rolę więzienia dla zbiegów z góry Galmore. Ostatnio jednak zanotowano w jej pobliżu znaczną liczbę nieumarłych. Powinienem wejść do środka, aby wyjaśnić tego przyczyny. Strażnik powiedział, abym wrócił do niego jeśli będę potrzebował pomocy."
+msgstr ""
+"Spotkałem Strażnika ze Stoutford pełniącego służbę na posterunku przed "
+"fortecą zwaną Flagstone. Powiedział mi, że twierdza pełniła niegdyś rolę "
+"więzienia dla rodu Gorland ze Stoutford, ale teraz jest opuszczona. Ostatnio "
+"jednak nieumarli zaczęli opuszczać jej mury. Powinienem wyjaśnić skąd i "
+"dlaczego się tam biorą. Strażnik powiedział, abym wrócił do niego jeśli będę "
+"potrzebował pomocy."
 
 #: questlist.json:flagstone:20
 msgid "I found a dug out tunnel beneath Flagstone, that seems to lead to a larger cave. The cave is guarded by a demon that I am not even able to approach. Maybe the guard outside Flagstone knows more?"
@@ -38015,15 +38070,24 @@ msgstr "W podziemiach Flagstone znalazłem wydrążony tunel, najwyraźniej prow
 
 #: questlist.json:flagstone:30
 msgid "The guard suggested that the former warden may have something to do with this, and I should go and look for him. If I find him I should return to the guard with any important news."
-msgstr "Strażnik zasugerował, że poprzedni naczelnik może mieć coś wspólnego z tym, więc powinienem go poszukać. Jeśli go znajdę to powinienem wrócić do strażnika z jakimikolwiek ważnymi wiadomościami."
+msgstr ""
+"Strażnik zasugerował, że były Naczelnik więzienia może mieć coś wspólnego z "
+"całą tą sytuacją, więc powinienem go odszukać. Wtedy powinienem wrócić do "
+"niego i przekazać co odkryłem."
 
 #: questlist.json:flagstone:31
 msgid "I found the former warden of Flagstone on the upper level. Among his remains I found a necklace with some enscriptions. I should return to the guard now."
-msgstr "[REVIEW]Znalazłem byłego naczelnika Flagstone na górnym poziomie. Teraz powinienem wrócić do strażnika."
+msgstr ""
+"Na górnym poziomie Flagstone znalazłem byłego Naczelnika więzienia. Wśród "
+"jego szczątków był naszyjnik z jakimiś napisami. Teraz powinienem wrócić do "
+"strażnika."
 
 #: questlist.json:flagstone:40
 msgid "I have learned the words required to approach the demon beneath Flagstone. 'Daylight Shadow'. It seems like the warden has something to do with the monster invasion."
-msgstr "[REVIEW]Poznałem słowa, które umożliwią mi zbliżenie się do demona w podziemiach Flagstone. Brzmią one 'Świt Cienia'."
+msgstr ""
+"Poznałem słowa niezbędne do zbliżenia się do demona w podziemiach Flagstone. "
+"Brzmią one „Cień Światła”. Wygląda na to, że Naczelnik miał coś wspólnego z "
+"inwazją potworów."
 
 #: questlist.json:flagstone:50
 msgid "Deep beneath Flagstone, I found a powerful winged demon. It seems like the warden kept on running the prison and experimented with necromancy."
@@ -39871,7 +39935,10 @@ msgstr "Rozmawiałem ze strażnikiem na wschód od Fallhaven. Pilnuje on starego
 
 #: questlist_pathway_fallhaven.json:pathway_fallhaven:20
 msgid "I talked to the warden. I wasn't able to convince him, but he advised me to talk to the woodcutter Jakrar, who lives just south of Fallhaven's prison."
-msgstr "Rozmawiałem z naczelnikiem. Nie udało mi się go przekonać, ale poradził mi abym porozmawiał z drwalem Jakrarem, który mieszka na południe od więzienia w Fallhaven."
+msgstr ""
+"Rozmawiałem z Naczelnikiem. Nie udało mi się go przekonać, ale poradził mi "
+"abym porozmawiał z drwalem Jakrarem, który mieszka na południu, tuż obok "
+"więzienia w Fallhaven."
 
 #: questlist_pathway_fallhaven.json:pathway_fallhaven:30
 msgid "I talked to Jakrar the woodcutter. He will only clear the trees away if I do him a favor. I should search for his favorite axe east of the Crossroads Guardhouse, located to the north of Fallhaven. I should keep my eyes open for an evil wolf pack."
@@ -41024,4 +41091,3 @@ msgstr "Stoutford"
 #: worldmap.xml:world1:guynmart_area
 msgid "Guynmart Castle"
 msgstr "Zamek Guynmart"
-
