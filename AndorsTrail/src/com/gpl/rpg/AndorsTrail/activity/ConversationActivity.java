@@ -7,6 +7,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.res.Resources;
 import android.graphics.Color;
+import android.os.Build;
 import android.os.Bundle;
 import android.os.Parcel;
 import android.os.Parcelable;
@@ -75,6 +76,10 @@ public final class ConversationActivity
 		requestWindowFeature(Window.FEATURE_NO_TITLE);
 
 		setContentView(R.layout.conversation);
+
+		if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB) {
+			setFinishOnTouchOutside(false);
+		}
 
 		replyGroup = new RadioGroup(this);
 		replyGroup.setLayoutParams(new ListView.LayoutParams(ListView.LayoutParams.MATCH_PARENT, ListView.LayoutParams.WRAP_CONTENT));
