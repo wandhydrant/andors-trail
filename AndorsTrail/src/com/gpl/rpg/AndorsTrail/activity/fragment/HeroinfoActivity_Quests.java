@@ -122,11 +122,11 @@ public final class HeroinfoActivity_Quests extends Fragment {
 				boolean isCompleted = q.isCompleted(player);
 
 				int v = world.model.uiSelections.selectedQuestFilter;
-				if (v == 0) { // Hide completed quests
+				if (v == 0) { // Active quests
 					if (isCompleted) continue;
-				} else if (v == 1) { // Include completed quests
+				} else if (v == 1) { // All quests
 					// Always show.
-				} else if (v == 2) { // Only completed quests
+				} else if (v == 2) { // Completed quests
 					if (!isCompleted) continue;
 				}
 
