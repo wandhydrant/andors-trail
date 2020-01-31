@@ -25,6 +25,8 @@ import com.gpl.rpg.AndorsTrail.model.map.MonsterSpawnArea;
 import com.gpl.rpg.AndorsTrail.resource.VisualEffectCollection;
 import com.gpl.rpg.AndorsTrail.util.Coord;
 
+import static java.lang.Math.max;
+
 public final class CombatController implements VisualEffectCompletedCallback {
 	private final ControllerContext controllers;
 	private final WorldContext world;
@@ -485,12 +487,26 @@ public final class CombatController implements VisualEffectCompletedCallback {
 		return true;
 	}
 	private static float getAverageDamagePerHit(Actor attacker, Actor target) {
-		float result = (float) (getAttackHitChance(attacker, target)) * attacker.getDamagePotential().average() / 100;
-		if (hasCriticalAttack(attacker, target)) {
-			result += (float) attacker.getEffectiveCriticalChance() * result * attacker.getCriticalMultiplier() / 100;
+		int numPossibleOutcomes =  attacker.getDamagePotential().max - attacker.getDamagePotential().current + 1;
+		float avgNonCriticalDamage = 0;
+		for (int n=0; n<numPossibleOutcomes; n++) {
+			avgNonCriticalDamage += max(0, (float) n + attacker.getDamagePotential().current - target.getDamageResistance()) / numPossibleOutcomes;
 		}
-		result -= target.getDamageResistance();
-		return result;
+
+		float avgCriticalDamage = 0;
+		float effectiveCriticalChance = 0;
+		if (hasCriticalAttack(attacker, target)) {
+			effectiveCriticalChance = (float)attacker.getEffectiveCriticalChance();
+
+		}
+		if (effectiveCriticalChance > 0) {
+			for (int n=0; n<numPossibleOutcomes; n++) {
+				avgCriticalDamage += max(0, ((float) n + attacker.getDamagePotential().current)*attacker.getCriticalMultiplier() - target.getDamageResistance()) / numPossibleOutcomes;
+			}
+		}
+
+		float avgDamagePerSuccessfulStrike = (1-effectiveCriticalChance/100)*avgNonCriticalDamage + effectiveCriticalChance*avgCriticalDamage/100;
+		return (float)getAttackHitChance(attacker, target) * avgDamagePerSuccessfulStrike / 100;
 	}
 	private static float getAverageDamagePerTurn(Actor attacker, Actor target) {
 		return getAverageDamagePerHit(attacker, target) * attacker.getAttacksPerTurn();
