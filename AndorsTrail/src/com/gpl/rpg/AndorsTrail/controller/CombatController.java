@@ -486,26 +486,27 @@ public final class CombatController implements VisualEffectCompletedCallback {
 		if (target.isImmuneToCriticalHits()) return false;
 		return true;
 	}
-	private static float getAverageDamagePerHit(Actor attacker, Actor target) {
-		int numPossibleOutcomes =  attacker.getDamagePotential().max - attacker.getDamagePotential().current + 1;
+
+	// see this post for explenations about the calculation: https://andorstrail.com/viewtopic.php?f=3&t=6661
+	private static float getAverageDamagePerHit(final Actor attacker, final Actor target) {
+		final int numPossibleOutcomes =  attacker.getDamagePotential().max - attacker.getDamagePotential().current + 1;
 		float avgNonCriticalDamage = 0;
-		for (int n=0; n<numPossibleOutcomes; n++) {
+		for (int n = 0; n < numPossibleOutcomes; n++) {
 			avgNonCriticalDamage += max(0, (float) n + attacker.getDamagePotential().current - target.getDamageResistance()) / numPossibleOutcomes;
 		}
 
 		float avgCriticalDamage = 0;
 		float effectiveCriticalChance = 0;
 		if (hasCriticalAttack(attacker, target)) {
-			effectiveCriticalChance = (float)attacker.getEffectiveCriticalChance();
-
+			effectiveCriticalChance = attacker.getEffectiveCriticalChance();
 		}
 		if (effectiveCriticalChance > 0) {
-			for (int n=0; n<numPossibleOutcomes; n++) {
-				avgCriticalDamage += max(0, ((float) n + attacker.getDamagePotential().current)*attacker.getCriticalMultiplier() - target.getDamageResistance()) / numPossibleOutcomes;
+			for (int n = 0; n < numPossibleOutcomes; n++) {
+				avgCriticalDamage += max(0, (n + Math.floor(attacker.getDamagePotential().current) * attacker.getCriticalMultiplier()) - target.getDamageResistance()) / numPossibleOutcomes;
 			}
 		}
 
-		float avgDamagePerSuccessfulStrike = (1-effectiveCriticalChance/100)*avgNonCriticalDamage + effectiveCriticalChance*avgCriticalDamage/100;
+		float avgDamagePerSuccessfulStrike = (1 - effectiveCriticalChance / 100) * avgNonCriticalDamage + effectiveCriticalChance * avgCriticalDamage / 100;
 		return (float)getAttackHitChance(attacker, target) * avgDamagePerSuccessfulStrike / 100;
 	}
 	private static float getAverageDamagePerTurn(Actor attacker, Actor target) {
