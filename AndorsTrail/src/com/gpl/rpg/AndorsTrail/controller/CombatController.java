@@ -488,7 +488,7 @@ public final class CombatController implements VisualEffectCompletedCallback {
 	}
 
 	// see this post for explenations about the calculation: https://andorstrail.com/viewtopic.php?f=3&t=6661
-	private static float getAverageDamagePerHit(final Actor attacker, final Actor target) {
+	public static float getAverageDamagePerHit(final Actor attacker, final Actor target) {
 		final int numPossibleOutcomes =  attacker.getDamagePotential().max - attacker.getDamagePotential().current + 1;
 		float avgNonCriticalDamage = 0;
 		for (int n = 0; n < numPossibleOutcomes; n++) {
@@ -502,7 +502,7 @@ public final class CombatController implements VisualEffectCompletedCallback {
 		}
 		if (effectiveCriticalChance > 0) {
 			for (int n = 0; n < numPossibleOutcomes; n++) {
-				avgCriticalDamage += max(0, (n + Math.floor(attacker.getDamagePotential().current) * attacker.getCriticalMultiplier()) - target.getDamageResistance()) / numPossibleOutcomes;
+				avgCriticalDamage += max(0, Math.floor((n + attacker.getDamagePotential().current) * attacker.getCriticalMultiplier()) - target.getDamageResistance()) / numPossibleOutcomes;
 			}
 		}
 
