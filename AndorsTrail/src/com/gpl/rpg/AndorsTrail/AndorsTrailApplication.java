@@ -70,7 +70,6 @@ public final class AndorsTrailApplication extends Application {
 
 	private Pair<String, Locale> lastLocale = null;
 
-	@SuppressLint("NewApi")
 	public boolean setLocale(Activity context) {
 		Resources res = context.getResources();
 		Configuration conf = res.getConfiguration();
@@ -80,11 +79,7 @@ public final class AndorsTrailApplication extends Application {
 		if (lastLocale != null && lastLocale.first == preferences.language) {
 			targetLocale = lastLocale.second;
 		} else {
-			if (preferences.language.equalsIgnoreCase("default")) {
-				targetLocale = defaultLocale;
-			} else {
-				targetLocale = Locale.forLanguageTag(preferences.language);
-			}
+			targetLocale = localeForLanguageTag(preferences.language);
 			lastLocale = new Pair<String, Locale>(preferences.language, targetLocale);
 		}
 
@@ -98,7 +93,23 @@ public final class AndorsTrailApplication extends Application {
 		
 		return true;
 	}
-	
+
+	// Supports language or language_COUNTRY in short form e.g. "en" or "en_US"
+	private Locale localeForLanguageTag(String languageTag) {
+		Locale locale = null;
+		if (languageTag != null && !languageTag.equalsIgnoreCase("default")) {
+			final int pos = languageTag.indexOf('-');
+			if (pos == -1) {
+				locale = new Locale(languageTag);
+			}
+			else locale = new Locale(languageTag.substring(0, pos), languageTag.substring(pos+1));
+		}
+		if (locale == null) {
+			locale = defaultLocale;
+		}
+		return locale;
+	}
+
 	/**
 	 * Logging to text file system as found on https://stackoverflow.com/questions/19565685/saving-logcat-to-a-text-file-in-android-device
 	 */
