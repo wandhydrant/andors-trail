@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: andors-trail\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-11-10 11:48+0000\n"
-"PO-Revision-Date: 2020-02-20 12:33+0000\n"
+"PO-Revision-Date: 2020-02-21 11:10+0000\n"
 "Last-Translator: 김현수 <naturezikimi@naver.com>\n"
 "Language-Team: Korean <https://hosted.weblate.org/projects/andors-trail/"
 "game-content/ko/>\n"
@@ -29,7 +29,8 @@ msgstr ""
 "\n"
 "Individual contributors:\n"
 " KimTaeYang\n"
-" KimSeungEon"
+" KimSeungEon\n"
+" KimHyunSu on Weblate"
 
 #: actorconditions_v069.json:bless
 msgid "Bless"
@@ -45,11 +46,11 @@ msgstr "힘"
 
 #: actorconditions_v069.json:regen
 msgid "Shadow Regeneration"
-msgstr "섀도우의 회복"
+msgstr "'그림자'의 회복"
 
 #: actorconditions_v069_bwm.json:speed_minor
 msgid "Minor speed"
-msgstr "가벼운 속도증가"
+msgstr "가벼운 속도 증가"
 
 #: actorconditions_v069_bwm.json:fatigue_minor
 msgid "Minor fatigue"
@@ -455,19 +456,19 @@ msgstr "쥐 다 잡았어요."
 
 #: conversationlist_mikhail.json:mikhail_rats_start:1
 msgid "OK, I'll go check out in our garden."
-msgstr "그래, 뜰 좀 보고 오마."
+msgstr "네, 뜰 좀 보고 올게요."
 
 #: conversationlist_mikhail.json:mikhail_rats_start2
 msgid "If you get hurt by the rats, come back here and rest in your bed. That way you can regain your strength."
-msgstr "쥐한테 다치면, 집에 돌아와 침대에서 쉬거라. 다시 기운이 날거란다."
+msgstr "쥐한테 다치면, 집에 돌아와 침대에서 쉬거라. 다시 기운이 날 거란다."
 
 #: conversationlist_mikhail.json:mikhail_rats_start3
 msgid "Also, don't forget to check your inventory. You probably still have that old ring I gave you. Make sure you wear it."
-msgstr "그리고 물품 목록을 확인하는 것을 잊지 말거라. 내가 준 낡은 반지는 아마 아직 네가 갖고있을거다. 꼭 끼고 다니렴"
+msgstr "그리고 물품 목록을 확인하는 것을 잊지 말거라. 아마 내가 준 낡은 반지가 아직 있을 거다. 꼭 끼고 다니렴."
 
 #: conversationlist_mikhail.json:mikhail_rats_start3:0
 msgid "OK, I understand. I can rest here if I get hurt, and I should check my inventory for useful items."
-msgstr "네 알았어요. 다치면 집에서 쉬고, 쓸만한 게 있는지 물품 목록을 확인할게요."
+msgstr "네 알았어요. 다치면 집에서 쉬고, 쓸 만한 게 있는지 물품 목록을 확인할게요."
 
 #: conversationlist_mikhail.json:mikhail_rats_continue
 msgid "Did you kill those two rats in our garden?"
@@ -483,9 +484,9 @@ msgid ""
 "\n"
 "If you are hurt, use your bed over there to rest and regain your strength."
 msgstr ""
-"오 그렇니? 와, 정말 고맙구나!\n"
+"오 그래? 정말 고맙구나!\n"
 "\n"
-"다쳤으면 저기 있는 침대에서 쉬고 기운을 차리거라."
+"다쳤다면 저기 있는 침대에서 쉬고 기운을 차리거라."
 
 #: conversationlist_mikhail.json:mikhail_rats_complete2
 msgid ""
@@ -499,7 +500,9 @@ msgstr ""
 
 #: conversationlist_mikhail_foodpoison.json:mikhail_rats_start2a
 msgid "Another way to regain your strength is to eat some food. You can buy some for yourself from Mara at the town hall. But watch out - I hear that raw meat can sometimes give you food poisoning."
-msgstr "음식을 먹어도 체력을 회복할 수 있단다. 마을 회관의 마라한테서 음식을 살 수 있어. 하지만 조심하렴, 날고기를 먹다가 가끔 식중독에 걸릴 수 있으니까."
+msgstr ""
+"음식을 먹어도 체력을 회복할 수 있단다. 마을 회관의 마라한테서 음식을 살 수 있어. 하지만 조심하렴, 날고기를 먹다간 가끔 식중독에 "
+"걸릴 수도 있대."
 
 #: conversationlist_mikhail_foodpoison.json:mikhail_rats_start2b
 msgid "If that happens, perhaps the town priest can do something to help you.  Otherwise, just rest until you feel better."
@@ -601,7 +604,7 @@ msgid ""
 "Hey kid, wanna join us in our drinking game?"
 msgstr ""
 "마셔 마셔 마셔, 몇 잔 더 마셔\n"
-"마셔 마셔 마셔 ,바닥에 드러누울 때까지이~~\n"
+"마셔 마셔 마셔, 바닥에 드러누울 때까지이~~\n"
 "\n"
 "어이 꼬맹이, 우리 술 게임에 끼고싶구나?"
 
@@ -625,9 +628,9 @@ msgid ""
 "\n"
 "Want something to eat?"
 msgstr ""
-"저 술취한 친구들은 신경쓰지마, 항상 말썽을 일으키거든.\n"
+"저 술 취한 친구들은 신경쓰지 마, 항상 말썽을 일으키거든.\n"
 "\n"
-"먹고 싶은거 있니?"
+"먹고 싶은 것 있니?"
 
 #: conversationlist_crossglen.json:mara_thanks
 msgid "I heard you helped Odair clean out that old supply cave. Thanks a lot, we'll start using it soon."
@@ -1333,9 +1336,9 @@ msgid ""
 "\n"
 "Oh thank you so much for bringing me back Gandir's ring! Now I can have something to remember him by."
 msgstr ""
-"잠깐, 뭐라고? 네가 저기 내려갔다 다시 살아 돌아왔다는거냐? 어떻게 한거지? 엄청나군.. 난 저 동굴에 들어갔다 거의 죽을 뻔 했네.\n"
+"잠깐, 뭐라고? 너 진짜 저기 내려갔다가 살아 돌아왔다고? 어떻게 해낸 거지? 난 저 동굴에 들어갔다 거의 죽을 뻔했는데.\n"
 "\n"
-"간디르의 반지를 다시 저에게 가져다 주어서 정말 감사합니다! 이제 그를 기억할 수 있는 물건이 생겼군요."
+"Gandir의 반지를 되돌려줘서 정말 고마워! 이제 그를 기억할 수 있는 물건이 생겼어..."
 
 #: conversationlist_jan.json:jan_complete:0
 msgid "Glad that I could help. Goodbye."
@@ -1351,7 +1354,7 @@ msgstr "상관없어. 난 전리품을 받으려고 한 것 뿐이니까."
 
 #: conversationlist_jan.json:irogotu
 msgid "Well hello there. Another adventurer coming to steal my bounty. This is MY CAVE. The treasure will be MINE!"
-msgstr ""
+msgstr "오 안녕. 내 하사품을 훔치러 온 또 다른 모험가인가. 여긴 내 동굴이야. 보물은 내 거야!"
 
 #: conversationlist_jan.json:irogotu:0
 msgid "Did you kill Gandir?"
@@ -1359,35 +1362,36 @@ msgstr "네가 간디르를 죽였나?"
 
 #: conversationlist_jan.json:irogotu1
 msgid "That whelp Gandir? He was in my way. I merely used him as a tool to dig deeper into the cave."
-msgstr ""
+msgstr "그 버릇없는 놈? 그냥 쓴 거야. 동굴을 깊게 파는 도구로."
 
 #: conversationlist_jan.json:irogotu2
 msgid "Besides, I never really liked him anyway."
-msgstr "그리고, 난 그를 처음부터 그렇게 좋아하지도 않았어."
+msgstr "그리고 난 그를 처음부터 그렇게 좋아하지도 않았어."
 
 #: conversationlist_jan.json:irogotu2:0
 msgid "I guess he deserved to die. Did he have a ring on him?"
-msgstr "그가 죽을만한 짓을 했겠지. 혹시 그가 반지를 끼고 있었나?"
+msgstr "그가 죽을 만한 짓을 했겠지. 혹시 그가 반지를 끼고 있었나?"
 
 #: conversationlist_jan.json:irogotu2:1
 msgid "Jan mentioned something about a ring?"
-msgstr "잔느가 반지에 대한 것을 언급 했었나?"
+msgstr "잔느가 반지를 언급했었나?"
 
 #: conversationlist_jan.json:irogotu3
 msgid "NO! You cannot have it. It's mine! And who are you anyway kid, coming down here to disturb me?!"
-msgstr "안돼! 넌 이걸 가질 수 없다. 이건 내거야! 애초에 넌 누군데 여기까지 와서 날 방해하는거냐 꼬맹아?!"
+msgstr "안돼! 넌 이걸 가질 수 없다. 이건 내 거야! 애초에 넌 누군데 여기까지 와서 날 방해하는 거냐, 꼬맹아?!"
 
 #: conversationlist_jan.json:irogotu3:0
 msgid "I'm not a kid anymore! Now give me that ring!"
-msgstr "난 더이상 아이가 아니야! 그 반지 내놔!"
+msgstr "난 더 이상 아이가 아니야! 그 반지 내놔!"
 
 #: conversationlist_jan.json:irogotu3:1
 msgid "Give me that ring and we might both come out of here alive."
-msgstr "그 반지를 나에게 준다면 우리 둘 다 여기서 살아 나갈지도 모르지."
+msgstr "그 반지를 나에게 준다면 우리 둘 다 여기서 살아서 나갈지도 모르지."
 
 #: conversationlist_jan.json:irogotu4
 msgid "No. If you want it you will have to take it from me by force, and I should tell you that my powers are great. Besides, you probably wouldn't dare fight me anyway."
 msgstr ""
+"아니. 반지가 필요하면 강제로 가져가시고, 내 힘이 강하다는 건 알아두렴. 아마 함부로 싸움을 무릅쓰려 하지 않는 편이 좋을 거야."
 
 #: conversationlist_jan.json:irogotu4:0
 msgid "Very well, let's see who dies here."
@@ -1395,133 +1399,133 @@ msgstr "어쩔 수 없지. 누가 여기서 죽는지 보자고."
 
 #: conversationlist_jan.json:irogotu4:1
 msgid "By the Shadow, Gandir will be avenged."
-msgstr ""
+msgstr "Shadow의 권능 아래 간디르의 복수를 하겠다."
 
 #: conversationlist_fallhaven.json:fallhaven_citizen1
 msgid "Hello there. Nice weather ain't it?"
-msgstr ""
+msgstr "안녕하십니까. 좋은 날씨 아닌가요?"
 
 #: conversationlist_fallhaven.json:fallhaven_citizen2
 msgid "Hello. Anything you want from me?"
-msgstr ""
+msgstr "여보세오. 나한테 원하는 게 있어?"
 
 #: conversationlist_fallhaven.json:fallhaven_citizen3
 msgid "Hi. Can I help you?"
-msgstr ""
+msgstr "안녕. 필요한 거 있니?"
 
 #: conversationlist_fallhaven.json:fallhaven_citizen4
 msgid "You're that kid from Crossglen village right?"
-msgstr ""
+msgstr "너는 Crossglen 마을의 꼬마 맞지?"
 
 #: conversationlist_fallhaven.json:fallhaven_citizen5
 msgid "Out of the way, peasant."
-msgstr ""
+msgstr "비켜, 시골뜨기."
 
 #: conversationlist_fallhaven.json:fallhaven_citizen6
 msgid "Good day to you."
-msgstr ""
+msgstr "좋은 날이 되길."
 
 #: conversationlist_fallhaven.json:fallhaven_andor_1
 msgid "No, sorry. I haven't seen anyone by that description."
-msgstr ""
+msgstr "아니요, 미안해요. 그런 사람은 못 봤어요."
 
 #: conversationlist_fallhaven.json:fallhaven_andor_2
 msgid "Some other kid you say? Hmm, let me think."
-msgstr ""
+msgstr "다른 애 말야? 음, 생각해보자."
 
 #: conversationlist_fallhaven.json:fallhaven_andor_3
 msgid "Hmm, I might have seen someone matching that description a few days ago. Can't remember where though."
-msgstr ""
+msgstr "음, 며칠 전에 그런 사람을 본 것 같은데. 어디서 본 건지는 기억이 안 나."
 
 #: conversationlist_fallhaven.json:fallhaven_andor_4
 msgid "Oh yes, there was another kid from Crossglen village here a few days ago. Not sure he matched your description though."
-msgstr ""
+msgstr "오 맞아, 며칠 전에 Crossglen 마을에서 온 다른 꼬마가 있었어. 그가 네가 말한 그 꼬마인지는 확실하지 않지만."
 
 #: conversationlist_fallhaven.json:fallhaven_andor_4_1
 msgid "There were some shady looking people following him around. Didn't see any more than that."
-msgstr ""
+msgstr "수상해보이는 사람들이 그 꼬마를 따르더라. 그 이상은 못 봤어."
 
 #: conversationlist_fallhaven.json:fallhaven_andor_6
 msgid "Nope. Haven't seen him."
-msgstr ""
+msgstr "아니. 못 봤어."
 
 #: conversationlist_fallhaven.json:fallhaven_guard
 msgid "Keep out of trouble."
-msgstr ""
+msgstr "말썽피우지 마렴."
 
 #: conversationlist_fallhaven.json:fallhaven_priest:0
 #: conversationlist_jolnor.json:jolnor_chapel_1:0
 #: conversationlist_buceth.json:buceth_1:1
 msgid "Can you tell me more about the Shadow?"
-msgstr ""
+msgstr "'그림자'에 대해 더 이야기해주실 수 있나요?"
 
 #: conversationlist_fallhaven.json:priest_shadow_1
 msgid "The Shadow protects us. It keeps us safe and comforts us when we sleep."
-msgstr ""
+msgstr "'그림자'는 우리를 보호해주십니다. 우리를 안전하게 지켜주시고 우리가 편하게 잠잘 수 있게 해 주시지요."
 
 #: conversationlist_fallhaven.json:priest_shadow_2
 msgid "It follows us wherever we go. Go with the Shadow my child."
-msgstr ""
+msgstr "우리가 가는 곳 어디라도 함께합니다. '그림자'와 함께 가십시오, 어린 님."
 
 #: conversationlist_fallhaven.json:priest_shadow_2:1
 #: conversationlist_remgard_villagers1.json:atash:1
 msgid "Whatever, bye."
-msgstr ""
+msgstr "뭐든, 안녕."
 
 #: conversationlist_fallhaven.json:rigmor
 msgid "Well hello there! Aren't you a cute little fellow."
-msgstr ""
+msgstr "이런 안녕! 작고 귀여운 녀석이군."
 
 #: conversationlist_fallhaven.json:rigmor:1
 #: conversationlist_fallhaven.json:rigmor_1:0
 msgid "I really need to go."
-msgstr ""
+msgstr "진짜 가야 해요."
 
 #: conversationlist_fallhaven.json:rigmor_1
 msgid "Your brother, you say? His name is Andor? No. I don't recall meeting anyone like that."
-msgstr ""
+msgstr "형 말인가? 이름이 안돌이라고? 아니, 그런 사람은 기억이 안 나네."
 
 #: conversationlist_fallhaven.json:rigmor_thanks
 msgid "I heard you helped my old man find his book, thank you. He had been talking about that book for weeks. Poor thing, he tends to forget things."
-msgstr ""
+msgstr "우리 노친네 책 찾는 거 도와주셨다고 들었어요. 몇 주 동안 그 책 이야기를 하시더라고요. 안된 일이지만 자주 뭘 까먹으세요."
 
 #: conversationlist_fallhaven.json:rigmor_thanks:0
 msgid "It was my pleasure. Goodbye."
-msgstr ""
+msgstr "도와드려서 기쁩니다. 안녕히 계세요."
 
 #: conversationlist_fallhaven.json:rigmor_thanks:1
 msgid "You should keep an eye on him, or bad things might happen to him."
-msgstr ""
+msgstr "그 노인네를 계속 지켜보세요. 안 그러면 나쁜 일이 생길 수도 있어요."
 
 #: conversationlist_fallhaven.json:rigmor_thanks:2
 msgid "Whatever, I just did it for the gold."
-msgstr ""
+msgstr "뭐 어쨌든, 돈 때문에 한 거예요."
 
 #: conversationlist_fallhaven.json:fallhaven_clothes
 msgid "Welcome to my shop. Please browse my selection of fine clothing and jewelry."
-msgstr ""
+msgstr "환영합니다. 우수한 의류와 보석 셀렉션을 둘러보세요."
 
 #: conversationlist_fallhaven.json:fallhaven_clothes:0
 msgid "Let me see your wares."
-msgstr ""
+msgstr "봐도 될까요."
 
 #: conversationlist_fallhaven_arcir.json:arcir_start
 msgid "Hello. I'm Arcir."
-msgstr ""
+msgstr "안녕. 나는 Arcir야."
 
 #: conversationlist_fallhaven_arcir.json:arcir_start:0
 #: conversationlist_fallhaven_arcir.json:arcir_anythingelse:0
 msgid "I noticed your statue of Elythara downstairs."
-msgstr ""
+msgstr "아래층에 Elythara 상이 있던데요."
 
 #: conversationlist_fallhaven_arcir.json:arcir_start:1
 #: conversationlist_fallhaven_arcir.json:arcir_anythingelse:1
 msgid "You really seem to like your books."
-msgstr ""
+msgstr "갖고 계신 책을 정말 좋아하시는 것 같아요."
 
 #: conversationlist_fallhaven_arcir.json:arcir_anythingelse
 msgid "Anything else you wanted to ask?"
-msgstr ""
+msgstr "다른 질문이 있으신가요?"
 
 #: conversationlist_fallhaven_arcir.json:arcir_elythara_1
 msgid ""
@@ -1529,38 +1533,41 @@ msgid ""
 "\n"
 "Yes, Elythara is my protector."
 msgstr ""
+"아, 지하실에서 찾았어요?\n"
+"\n"
+"네, Elythara는 내 수호자예요."
 
 #: conversationlist_fallhaven_arcir.json:arcir_books_1
 msgid "I find great pleasure in my books. They contain the accumulated knowledge of past generations."
-msgstr ""
+msgstr "책에서 큰 기쁨을 찾죠. 책은 과거 세대들이 축적한 지식을 담고 있어요."
 
 #: conversationlist_fallhaven_arcir.json:arcir_books_1:0
 msgid "Do you have a book called 'Calomyran Secrets'?"
-msgstr ""
+msgstr "'Calomyran의 비결'이라는 책을 갖고 계신가요?"
 
 #: conversationlist_fallhaven_arcir.json:arcir_calomyran_1
 msgid "'Calomyran Secrets'? Hmm, yes I think I have one of those in my basement."
-msgstr ""
+msgstr "'Calomyran의 비결'? 음, 그것들 중 하나가 지하실에 있는 것 같아."
 
 #: conversationlist_fallhaven_arcir.json:arcir_calomyran_2
 msgid "Old man Benradas came by last week, wanting to sell me that book. Since it's not really my kind of book, I declined."
-msgstr ""
+msgstr "벤라다스라는 노인이 저번 주에 와서 그 책을 팔고 싶어했어. 내 취향이 아니어서 거절했지만."
 
 #: conversationlist_fallhaven_arcir.json:arcir_calomyran_3
 msgid "He seemed upset that I didn't like his book, and threw it at me while storming out of the house."
-msgstr ""
+msgstr "그랬더니 그 노인네가 화가 나서는 책을 던지는 거야. 집 밖으로 뛰쳐나가면서."
 
 #: conversationlist_fallhaven_arcir.json:arcir_calomyran_4
 msgid "Poor old man Benradas, he probably forgot that he left it here. He tends to forget things."
-msgstr ""
+msgstr "불쌍한 노친네, 여기 놓고 간 일은 아마 잊어먹었을걸. 자주 뭘 잊어버리는 양반이야."
 
 #: conversationlist_fallhaven_arcir.json:arcir_calomyran_5
 msgid "You looked downstairs but didn't find it? And a note you say? I guess there must have been someone in my house."
-msgstr ""
+msgstr "아래층에서도 못 찾았어? 그리고 메모라고? 내 집에 누가 들어왔었군."
 
 #: conversationlist_fallhaven_arcir.json:arcir_calomyran_complete
 msgid "I heard you found it and gave it back to old man Benradas. Thank you. He tends to forget things."
-msgstr ""
+msgstr "책을 발견하고 벤라다스에게 갖다줬다고 들었어요. 감사합니다. 벤라다스는 뭘 자주 잊어버려요."
 
 #: conversationlist_fallhaven_arcir.json:arcir_calomyran_6
 msgid ""
@@ -1571,23 +1578,23 @@ msgstr ""
 
 #: conversationlist_fallhaven_bucus.json:bucus_welcome
 msgid "Hi again, welcome back to the ... Oh wait, I thought you were someone else."
-msgstr ""
+msgstr "또 보네. 다시 온 걸 환영하... 오 잠깐, 다른 사람인 줄 알았어."
 
 #: conversationlist_fallhaven_bucus.json:bucus_welcome:1
 msgid "What do you know about the Thieves' Guild?"
-msgstr ""
+msgstr "도둑 길드에 대해 무엇을 알고 있습니까?"
 
 #: conversationlist_fallhaven_bucus.json:bucus_andor_no_1
 msgid "How interesting that you should ask. What if I had seen him? Why would I tell you?"
-msgstr ""
+msgstr "물어보는 모습이 재밌네. 내가 봤으면? 왜 말해줘야 하지?"
 
 #: conversationlist_fallhaven_bucus.json:bucus_andor_no_2
 msgid "No, I can't tell you. Now please leave."
-msgstr ""
+msgstr "못 말해줘. 이제 가라."
 
 #: conversationlist_fallhaven_bucus.json:bucus_thieves_no
 msgid "Wh, what? No, I don't know anything about that."
-msgstr ""
+msgstr "ㅁ, 뭐? 아냐, 아무 것도 몰라."
 
 #: conversationlist_fallhaven_bucus.json:bucus_umar_1
 msgid "OK kid. You've proven yourself to me. Yes, I saw some other kid by that description running around here a few days ago."
@@ -1599,7 +1606,7 @@ msgstr "걔가 무엇을 찾고 있는지는 모르지만 말야. 걘 계속 질
 
 #: conversationlist_fallhaven_bucus.json:bucus_umar_3
 msgid "Anyway, that's all I know. You should go talk to Umar, he probably knows more. Down that hatch over there."
-msgstr "그나저나, 그게 내가 아는 전부야. 너 우말에게 가서 말해봐. 아마 더 잘 알걸. 저 해치 밑으로 내려가봐."
+msgstr "어쨌든 그게 내가 아는 전부야. 너 우마에게 가서 말해봐. 아마 더 잘 알걸. 저 해치 밑으로 내려가봐."
 
 #: conversationlist_fallhaven_bucus.json:bucus_thieves_1
 msgid ""
@@ -1607,10 +1614,13 @@ msgid ""
 "\n"
 "OK so you found us. Now what?"
 msgstr ""
+"누가 그리 말하더냐? 아악.\n"
+"\n"
+"그래, 우리를 찾았네. 이제 뭐?"
 
 #: conversationlist_fallhaven_bucus.json:bucus_thieves_1:0
 msgid "Can I join the Thieves' Guild?"
-msgstr ""
+msgstr "도둑 길드에 가입할 수 있을까요?"
 
 #: conversationlist_fallhaven_bucus.json:bucus_thieves_2
 msgid ""
@@ -1618,18 +1628,21 @@ msgid ""
 "\n"
 "You're one funny kid."
 msgstr ""
+"하! 도둑 길드에 가입?! 네가?!\n"
+"\n"
+"너 재밌는 아이구나."
 
 #: conversationlist_fallhaven_bucus.json:bucus_thieves_2:0
 msgid "I'm serious."
-msgstr ""
+msgstr "진지한데요."
 
 #: conversationlist_fallhaven_bucus.json:bucus_thieves_2:1
 msgid "Yeah, pretty funny eh?"
-msgstr ""
+msgstr "그래, 꽤 웃기네 허?"
 
 #: conversationlist_fallhaven_bucus.json:bucus_thieves_3
 msgid "OK, tell you what kid. Do a task for me and maybe I'll consider giving you more info."
-msgstr ""
+msgstr "그래, 좋은 생각이 났다 얘야. 내 일 하나 해 주면 정보를 더 줄지 말지 생각해보지."
 
 #: conversationlist_fallhaven_bucus.json:bucus_thieves_3:0
 msgid "What kind of task are we talking about?"
