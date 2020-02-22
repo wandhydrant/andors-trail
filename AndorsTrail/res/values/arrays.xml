@@ -121,11 +121,13 @@
 	
 	
 	<string-array name="preferences_display_scaling_factor">
+        <item>@string/preferences_display_scaling_factor_50_percent</item>
 		<item>@string/preferences_display_scaling_factor_normal</item>
 		<item>@string/preferences_display_scaling_factor_50_percent_larger</item>
 		<item>@string/preferences_display_scaling_factor_double</item>
 	</string-array>
 	<string-array name="preferences_display_scaling_factor_values">
+        <item>0.5f</item>
 		<item>1.0f</item>
 		<item>1.5f</item>
 		<item>2.0f</item>
