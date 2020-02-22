@@ -488,6 +488,7 @@ public final class CombatController implements VisualEffectCompletedCallback {
 	}
 
 	// see this post for explenations about the calculation: https://andorstrail.com/viewtopic.php?f=3&t=6661
+	// if you change code here make sure to run the tests in CombatControllerTest.java
 	public static float getAverageDamagePerHit(final Actor attacker, final Actor target) {
 		final int numPossibleOutcomes =  attacker.getDamagePotential().max - attacker.getDamagePotential().current + 1;
 		float avgNonCriticalDamage = 0;
