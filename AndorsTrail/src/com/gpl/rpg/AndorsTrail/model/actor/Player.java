@@ -353,12 +353,7 @@ public final class Player extends Actor {
 		this.spawnPlace = src.readUTF();
 
 		if (fileversion > 13) {
-			// store directly in the member
-			LinkedHashMap<String, HashSet<Integer> > questProgress = this.questProgress;
-			if (fileversion < 51) {
-				// use a temporary map instead
-				questProgress = new LinkedHashMap<String, HashSet<Integer> >();
-			}
+			LinkedHashMap<String, HashSet<Integer> > questProgress = new LinkedHashMap<String, HashSet<Integer> >();
 			final int numQuests = src.readInt();
 			for(int i = 0; i < numQuests; ++i) {
 				final String questID = src.readUTF();
@@ -378,7 +373,10 @@ public final class Player extends Actor {
 						this.questProgress.put(q.questID, questSteps);
 					}
 				}
+			} else {
+				this.questProgress.putAll(questProgress);
 			}
+
 		}
 
 		this.availableSkillIncreases = 0;
