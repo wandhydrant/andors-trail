@@ -35,7 +35,7 @@ public final class ItemController {
 	public void dropItem(ItemType type, int quantity) {
 		if (world.model.player.inventory.getItemQuantity(type.id) < quantity) return;
 		world.model.player.inventory.removeItem(type.id, quantity);
-		world.model.currentMap.itemDropped(type, quantity, world.model.player.position);
+		world.model.currentMaps.map.itemDropped(type, quantity, world.model.player.position);
 	}
 
 	public void equipItem(ItemType type, Inventory.WearSlot slot) {
@@ -245,8 +245,8 @@ public final class ItemController {
 	public boolean removeLootBagIfEmpty(final Loot loot) {
 		if (loot.hasItemsOrGold()) return false;
 
-		world.model.currentMap.removeGroundLoot(loot);
-		controllers.mapController.mapLayoutListeners.onLootBagRemoved(world.model.currentMap, loot.position);
+		world.model.currentMaps.map.removeGroundLoot(loot);
+		controllers.mapController.mapLayoutListeners.onLootBagRemoved(world.model.currentMaps.map, loot.position);
 		return true; // The bag was removed.
 	}
 

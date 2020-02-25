@@ -43,6 +43,7 @@ import com.gpl.rpg.AndorsTrail.model.item.Loot;
 import com.gpl.rpg.AndorsTrail.model.quest.Quest;
 import com.gpl.rpg.AndorsTrail.model.quest.QuestLogEntry;
 import com.gpl.rpg.AndorsTrail.model.quest.QuestProgress;
+import com.gpl.rpg.AndorsTrail.resource.tiles.TileCollection;
 import com.gpl.rpg.AndorsTrail.resource.tiles.TileManager;
 import com.gpl.rpg.AndorsTrail.util.ThemeHelper;
 
@@ -85,7 +86,7 @@ public final class ConversationActivity
 		replyGroup.setLayoutParams(new ListView.LayoutParams(ListView.LayoutParams.MATCH_PARENT, ListView.LayoutParams.WRAP_CONTENT));
 		statementList = (ListView) findViewById(R.id.conversation_statements);
 		statementList.addFooterView(replyGroup);
-		listAdapter = new StatementContainerAdapter(this, conversationHistory, world.tileManager);
+		listAdapter = new StatementContainerAdapter(this, conversationHistory, world.tileManager, world.model.currentMaps.tiles);
 		statementList.setAdapter(listAdapter);
 
 		nextButton = (Button) findViewById(R.id.conversation_next);
@@ -349,10 +350,12 @@ public final class ConversationActivity
 	private static final class StatementContainerAdapter extends ArrayAdapter<ConversationStatement> {
 
 		private final TileManager tileManager;
+		private final TileCollection tiles;
 
-		public StatementContainerAdapter(Context context, ArrayList<ConversationStatement> items, TileManager tileManager) {
+		public StatementContainerAdapter(Context context, ArrayList<ConversationStatement> items, TileManager tileManager, TileCollection tiles) {
 			super(context, 0, items);
 			this.tileManager = tileManager;
+			this.tiles = tiles;
 		}
 
 		@Override
@@ -367,7 +370,7 @@ public final class ConversationActivity
 			if (statement.hasActor()) {
 				final Resources res = getContext().getResources();
 				if (statement.isPlayerActor) tileManager.setImageViewTileForPlayer(res, tv, statement.iconID);
-				else tileManager.setImageViewTileForMonster(res, tv, statement.iconID);
+				else tileManager.setImageViewTileForMonster(res, tv, statement.iconID, tiles);
 
 				tv.setText(statement.actorName + ": " + statement.text, BufferType.SPANNABLE);
 				Spannable sp = (Spannable) tv.getText();

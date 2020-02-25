@@ -361,7 +361,7 @@ public final class PredefinedMap {
 
 	public boolean shouldSaveMapData(WorldContext world) {
 		if (!hasResetTemporaryData()) return true;
-		if (this == world.model.currentMap) return true;
+		if (this == world.model.currentMaps.map) return true;
 		if (!groundBags.isEmpty()) return true;
 		for (MonsterSpawnArea a : spawnAreas) {
 			if (this.visited && a.isUnique) return true;
