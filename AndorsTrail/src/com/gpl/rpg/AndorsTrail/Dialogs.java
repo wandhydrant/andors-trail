@@ -111,7 +111,7 @@ public final class Dialogs {
 		if (!params.containsKey("x")) return null;
 		int x = params.getInt("x");
 		int y = params.getInt("y");
-		return world.model.currentMap.getMonsterAt(x, y);
+		return world.model.currentMaps.map.getMonsterAt(x, y);
 	}
 
 	public static void showMonsterEncounter(final MainActivity currentActivity, final ControllerContext context, final Monster monster) {
