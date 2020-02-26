@@ -27,6 +27,8 @@ Latest version of APK available from:
 
 ## Authors
 
+### Development team
+
 * **Oskar Wiksten** - *Creator* [Github Profile](https://github.com/oskarwiksten/)
 * **Kevin (Zukero)** - *Lead Developer* [Github Profile](https://github.com/Zukero/)
 * **Scott Devaney** - *Community Advocate* [Game Forums](https://andorstrail.com)
