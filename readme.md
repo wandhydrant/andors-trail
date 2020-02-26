@@ -6,7 +6,7 @@ Uncover the truths about your home village and the disappearance of your brother
 
 ## News/Updates
 
-[Latest project status](https://andorstrail.com/viewtopic.php?f=5&t=5506)
+[Latest project status](https://andorstrail.com/viewforum.php?f=5)
 
 ## Contributing
 
@@ -23,7 +23,7 @@ Latest version of APK available from:
 
 [F-Droid](https://f-droid.org/packages/com.gpl.rpg.AndorsTrail/)
 
-[Our Server](https://andorstrail.com/static/AndorsTrail_v0.7.1.apk)
+[Our Server](https://andorstrail.com/static/AndorsTrail_v0.7.8.apk)
 
 ## Authors
 
@@ -45,7 +45,7 @@ Andor's Trail gameplay content is copyright by their respective authors and has 
 The graphics licenses and contributions can be found [here](/gfxcontrib.md).
 
 ## Wiki
-Here is our slightly out of date [Wiki](https://www.andorstrail.com/wiki/doku.php?id=andors_trail_wiki).
+Here is our slightly out of date [Wiki](https://docs.andorstrail.com/).
 ## Acknowledgments
 Additional shout-outs.
 
