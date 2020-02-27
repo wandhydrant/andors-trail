@@ -33,7 +33,7 @@ Latest version of APK available from:
 * **Kevin (Zukero)** - *Lead Developer* [Github Profile](https://github.com/Zukero/)
 * **Scott Devaney** - *Community Advocate* [Game Forums](https://andorstrail.com)
 * **Richard Jackson** - *Lead Content Wrangler* 
-* **Ian Hasse** - *Lead Cartographer* 
+* **Ian Haase** - *Lead Cartographer* 
 * **Christian Berlage**
 * **Christian Zink**
 
