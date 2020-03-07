@@ -365,8 +365,8 @@ public final class Player extends Actor {
 				}
 			}
 
-			// questprogress is randomly sorted until 51 so sort it by quest order
-			if (fileversion < 51) {
+			// questprogress is randomly sorted until 52 so sort it by quest order
+			if (fileversion < 52) {
 				for (Quest q : world.quests.getAllQuests()) {
 					final HashSet<Integer> questSteps = questProgress.get(q.questID);
 					if (questSteps != null) {
