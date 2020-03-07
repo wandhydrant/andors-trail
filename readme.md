@@ -6,7 +6,7 @@ Uncover the truths about your home village and the disappearance of your brother
 
 ## News/Updates
 
-[Latest project status](https://andorstrail.com/viewtopic.php?f=5&t=5506)
+[Latest project status](https://andorstrail.com/viewforum.php?f=5)
 
 ## Contributing
 
@@ -23,15 +23,19 @@ Latest version of APK available from:
 
 [F-Droid](https://f-droid.org/packages/com.gpl.rpg.AndorsTrail/)
 
-[Our Server](https://andorstrail.com/static/AndorsTrail_v0.7.1.apk)
+[Our Server](https://andorstrail.com/static/AndorsTrail_v0.7.8.apk)
 
 ## Authors
 
-* **Oksar Wiksten** - *Creator* [Github Profile](https://github.com/oskarwiksten/)
+### Development team
+
+* **Oskar Wiksten** - *Creator* [Github Profile](https://github.com/oskarwiksten/)
 * **Kevin (Zukero)** - *Lead Developer* [Github Profile](https://github.com/Zukero/)
 * **Scott Devaney** - *Community Advocate* [Game Forums](https://andorstrail.com)
 * **Richard Jackson** - *Lead Content Wrangler* 
-*  **Ian Hasse** - *Lead Cartographer* 
+* **Ian Haase** - *Lead Cartographer* 
+* **Christian Berlage**
+* **Christian Zink**
 
 ### Contributors List
 Additional contributors to the project are listed [here](/contributors.md).
