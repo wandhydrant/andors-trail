@@ -147,7 +147,7 @@ public final class Player extends Actor {
 		return questProgress.containsKey(questID);
 	}
 	public Collection<String> getAllQuestProgressIDs() {
-		return new ArrayList<>(this.questProgress.keySet());
+		return new ArrayList<String>(this.questProgress.keySet());
 	}
 	public boolean isLatestQuestProgress(String questID, int progress) {
 		if (!questProgress.containsKey(questID)) return false;
