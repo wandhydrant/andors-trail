@@ -612,6 +612,7 @@
 	<string name="skill_title_fightstyle_dualwield">Fighting style: Dual wield</string>
 	<string name="skill_title_fightstyle_2hand">Fighting style: Two-handed weapon</string>
 	<string name="skill_title_fightstyle_weapon_shield">Fighting style: Weapon and shield</string>
+	<string name="skill_title_fightstyle_unarmed_unarmored">Fighting style: Way of the monk</string>
 	<string name="skill_title_specialization_dualwield">Specialization: Dual wield</string>
 	<string name="skill_title_specialization_2hand">Specialization: Two-handed weapon</string>
 	<string name="skill_title_specialization_weapon_shield">Specialization: Weapon and shield</string>
@@ -630,6 +631,7 @@
 	<string name="skill_shortdescription_fightstyle_dualwield">Wield two weapons at the same time</string>
 	<string name="skill_shortdescription_fightstyle_2hand">Make better use of weapons that require both hands</string>
 	<string name="skill_shortdescription_fightstyle_weapon_shield">Better at fighting with weapon and shield</string>
+	<string name="skill_shortdescription_fightstyle_unarmed_unarmored">Better at fighting unarmed/unarmored</string>
 	<string name="skill_shortdescription_specialization_dualwield">Expert at dual wielding</string>
 	<string name="skill_shortdescription_specialization_2hand">Expert at two-handed weapons</string>
 	<string name="skill_shortdescription_specialization_weapon_shield">Expert at fighting with weapon and shield</string>
@@ -658,6 +660,9 @@ Every skill level increases damage potential of two-handed weapons with %1$d %% 
 	<string name="skill_longdescription_fightstyle_weapon_shield">"Gives benefits when fighting with a weapon in the main hand and having a shield equipped in the off-hand.
 
 Every skill level increases the attack chance of weapons with %1$d %% of their original attack chances, and the block chance of shields by %2$d %% of their original block chances."</string>
+	<string name="skill_longdescription_fightstyle_unarmed_unarmored">"While fighting without having any piece of armor equipped and without using a weapon or shield, gain %1$d attack chance, %2$d block chance, %3$d damage resistance and increase the maximum damage by %4$d per skill level. The skill gives also a critical multiplier of 1 plus 0.%5$d per level.
+
+Items made of cloth are not considered as being armor." </string>
 	<string name="skill_longdescription_specialization_dualwield">Increases the attack chance of both wielded weapons by an additional %1$d %% of their original attack chances, in addition to the benefits given by the weapon style skill. The block chances of both wielded weapons are also increased by %2$d %% of their original block chances.</string>
 	<string name="skill_longdescription_specialization_2hand">Increases damage potential of two-handed weapons by an additional %1$d %% of the original damage potential, in addition to the benefits given by the weapon style skill. The attack chances of two-handed weapons are also increased by %2$d %% of their original attack chances.</string>
 	<string name="skill_longdescription_specialization_weapon_shield">Increases both attack chances and damage potential of weapons. The attack chance is increased by %1$d %% of the original attack chance, and the damage potential is increased by %2$d %% of the original damage potential.</string>
