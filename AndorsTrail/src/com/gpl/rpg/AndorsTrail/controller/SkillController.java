@@ -307,6 +307,30 @@ public final class SkillController {
 		ItemType mainHandItem = player.inventory.getItemTypeInWearSlot(Inventory.WearSlot.weapon);
 		ItemType offHandItem = player.inventory.getItemTypeInWearSlot(Inventory.WearSlot.shield);
 
+		final int skillLevelFightStyleUnarmedUnarmored = player.getSkillLevel(SkillID.fightstyleUnarmedUnarmored);
+		if (skillLevelFightStyleUnarmedUnarmored > 0) {
+            if (isUnarmored(player)) {
+                player.blockChance += SkillCollection.PER_SKILLPOINT_INCREASE_UNARMED_UNARMORED_BC * skillLevelFightStyleUnarmedUnarmored;
+                player.damageResistance += SkillCollection.PER_SKILLPOINT_INCREASE_UNARMED_UNARMORED_DR * skillLevelFightStyleUnarmedUnarmored;
+            }
+
+            int multiplier = 0;
+            if (mainHandItem == null) {
+                multiplier++;
+            }
+            if (offHandItem == null) {
+                multiplier++;
+            }
+            if (multiplier > 0) {
+                player.attackChance += SkillCollection.PER_SKILLPOINT_INCREASE_UNARMED_UNARMORED_AC * skillLevelFightStyleUnarmedUnarmored * multiplier;
+                player.damagePotential.addToMax(SkillCollection.PER_SKILLPOINT_INCREASE_UNARMED_UNARMORED_DMG_MAX * skillLevelFightStyleUnarmedUnarmored * multiplier);
+
+                if (multiplier == 2) {
+                    player.criticalMultiplier = 1 + ((float)SkillCollection.PER_SKILLPOINT_INCREASE_UNARMED_UNARMORED_CM_PERCENT / 100) * skillLevelFightStyleUnarmedUnarmored;
+                }
+            }
+        }
+
 		if (isWielding2HandItem(mainHandItem, offHandItem)) {
 			int skillLevelFightStyle = player.getSkillLevel(SkillID.fightstyle2hand);
 			int skillLevelSpecialization = player.getSkillLevel(SkillID.specialization2hand);
