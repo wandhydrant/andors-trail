@@ -312,7 +312,7 @@ public final class SkillController {
 			player.blockChance += SkillCollection.PER_SKILLPOINT_INCREASE_UNARMED_UNARMORED_BC * skillLevelFightStyleUnarmedUnarmored;
 			player.damageResistance += SkillCollection.PER_SKILLPOINT_INCREASE_UNARMED_UNARMORED_DR * skillLevelFightStyleUnarmedUnarmored;
 			player.attackChance += SkillCollection.PER_SKILLPOINT_INCREASE_UNARMED_UNARMORED_AC * skillLevelFightStyleUnarmedUnarmored;
-			player.damagePotential.addToMax(SkillCollection.PER_SKILLPOINT_INCREASE_UNARMED_UNARMORED_DMG_MAX * skillLevelFightStyleUnarmedUnarmored;
+			player.damagePotential.addToMax(SkillCollection.PER_SKILLPOINT_INCREASE_UNARMED_UNARMORED_DMG_MAX * skillLevelFightStyleUnarmedUnarmored);
 			player.criticalMultiplier = 1 + ((float)SkillCollection.PER_SKILLPOINT_INCREASE_UNARMED_UNARMORED_CM_PERCENT / 100) * skillLevelFightStyleUnarmedUnarmored;
         }
 
