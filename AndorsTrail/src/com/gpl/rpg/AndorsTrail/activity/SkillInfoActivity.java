@@ -200,9 +200,9 @@ public final class SkillInfoActivity extends AndorsTrailBaseActivity {
 		case fightstyle2hand: return res.getString(R.string.skill_longdescription_fightstyle_2hand, SkillCollection.PER_SKILLPOINT_INCREASE_FIGHTSTYLE_2HAND_DMG_PERCENT);
 		case fightstyleWeaponShield: return res.getString(R.string.skill_longdescription_fightstyle_weapon_shield, SkillCollection.PER_SKILLPOINT_INCREASE_FIGHTSTYLE_WEAPON_AC_PERCENT, SkillCollection.PER_SKILLPOINT_INCREASE_FIGHTSTYLE_SHIELD_BC_PERCENT);
 		case fightstyleUnarmedUnarmored: return res.getString(R.string.skill_longdescription_fightstyle_unarmed_unarmored,
+				SkillCollection.PER_SKILLPOINT_INCREASE_UNARMED_UNARMORED_AC,
 				SkillCollection.PER_SKILLPOINT_INCREASE_UNARMED_UNARMORED_BC,
 				SkillCollection.PER_SKILLPOINT_INCREASE_UNARMED_UNARMORED_DR,
-				SkillCollection.PER_SKILLPOINT_INCREASE_UNARMED_UNARMORED_AC,
 				SkillCollection.PER_SKILLPOINT_INCREASE_UNARMED_UNARMORED_DMG_MAX,
 				SkillCollection.PER_SKILLPOINT_INCREASE_UNARMED_UNARMORED_CM_PERCENT);
 		case specializationDualWield: return res.getString(R.string.skill_longdescription_specialization_dualwield, SkillCollection.PER_SKILLPOINT_INCREASE_SPECIALIZATION_DUALWIELD_AC_PERCENT, SkillCollection.PER_SKILLPOINT_INCREASE_SPECIALIZATION_DUALWIELD_BC_PERCENT);
