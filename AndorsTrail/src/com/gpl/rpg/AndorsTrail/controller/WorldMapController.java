@@ -44,14 +44,16 @@ public final class WorldMapController {
 	private static final int WORLDMAP_SCREENSHOT_TILESIZE = 8;
 	public static final int WORLDMAP_DISPLAY_TILESIZE = WORLDMAP_SCREENSHOT_TILESIZE;
 	private static List<MapUpdateTask> mapUpdatesInProgress = new LinkedList<MapUpdateTask>();
-
+	private static int updateCount = 0;
 
 	private static final class MapUpdateTask {
 		private AsyncTask<Void, Void, Void> mapUpdateTask;
 		private String mapName;
-		public MapUpdateTask(final AsyncTask<Void, Void, Void> mapUpdateTask, String mapName) {
+		private int updateCount;
+		public MapUpdateTask(final AsyncTask<Void, Void, Void> mapUpdateTask, String mapName, int updateCount) {
 			this.mapUpdateTask = mapUpdateTask;
 			this.mapName = mapName;
+			this.updateCount = updateCount;
 		}
 	}
 
@@ -70,6 +72,13 @@ public final class WorldMapController {
 
 		if (!shouldUpdateWorldMap(map, worldMapSegmentName, world.maps.worldMapRequiresUpdate)) return;
 
+		WorldMapController.updateCount++;
+		final int updateCount = WorldMapController.updateCount;
+
+		if (AndorsTrailApplication.DEVELOPMENT_DEBUGMESSAGES) {
+			L.log("WorldMapController: Triggered update " + updateCount + " of worldmap segment " + worldMapSegmentName + " for map " + map.name);
+		}
+
 		synchronized (mapUpdatesInProgress) {
 			ListIterator<MapUpdateTask> iterator = mapUpdatesInProgress.listIterator();
 			while (iterator.hasNext()) {
@@ -78,7 +87,7 @@ public final class WorldMapController {
 					task.mapUpdateTask.cancel(true);
 					iterator.remove();
 					if (AndorsTrailApplication.DEVELOPMENT_DEBUGMESSAGES) {
-						L.log("WorldMapController: Initialized cancelling update of worldmap segment " + worldMapSegmentName + " for map " + map.name);
+						L.log("WorldMapController: Initialized cancelling update " + task.updateCount + " of worldmap segment " + worldMapSegmentName + " for map " + map.name);
 					}
 				}
 			}
@@ -103,28 +112,34 @@ public final class WorldMapController {
 				try {
 					if (isCancelled()) {
 						if (AndorsTrailApplication.DEVELOPMENT_DEBUGMESSAGES) {
-							L.log("WorldMapController: Cancelling update of worldmap segment " + worldMapSegmentName + " for map " + map.name);
+							L.log("WorldMapController: Cancelling update " + updateCount + " of worldmap segment " + worldMapSegmentName + " for map " + map.name);
 						}
 						return null;
 					}
 
 					if (isCancelled()) {
 						if (AndorsTrailApplication.DEVELOPMENT_DEBUGMESSAGES) {
-							L.log("WorldMapController: Cancelling update of worldmap segment " + worldMapSegmentName + " for map " + map.name);
+							L.log("WorldMapController: Cancelling update " + updateCount + " of worldmap segment " + worldMapSegmentName + " for map " + map.name);
 						}
 						return null;
 					}
 					updateCachedBitmap(map, renderer);
 					if (isCancelled()) {
 						if (AndorsTrailApplication.DEVELOPMENT_DEBUGMESSAGES) {
-							L.log("WorldMapController: Cancelling update of worldmap segment " + worldMapSegmentName + " for map " + map.name);
+							L.log("WorldMapController: Cancelling update " + updateCount + " of worldmap segment " + worldMapSegmentName + " for map " + map.name);
 						}
 						return null;
 					}
 					updateWorldMapSegment(res, world, worldMapSegmentName);
 					world.maps.worldMapRequiresUpdate = false;
+					if (isCancelled()) {
+						if (AndorsTrailApplication.DEVELOPMENT_DEBUGMESSAGES) {
+							L.log("WorldMapController: Cancelling update received too late " + updateCount + " of worldmap segment " + worldMapSegmentName + " for map " + map.name);
+						}
+						return null;
+					}
 					if (AndorsTrailApplication.DEVELOPMENT_DEBUGMESSAGES) {
-						L.log("WorldMapController: Updated worldmap segment " + worldMapSegmentName + " for map " + map.name);
+						L.log("WorldMapController: Updated " + updateCount + " worldmap segment " + worldMapSegmentName + " for map " + map.name);
 					}
 				} catch (IOException e) {
 					L.log("Error creating worldmap file for map " + map.name + " : " + e.toString());
@@ -133,7 +148,7 @@ public final class WorldMapController {
 			}
 		};
 		synchronized (mapUpdatesInProgress) {
-			mapUpdatesInProgress.add(new MapUpdateTask(task, map.name));
+			mapUpdatesInProgress.add(new MapUpdateTask(task, map.name, updateCount));
 		}
 		task.execute();
 	}
