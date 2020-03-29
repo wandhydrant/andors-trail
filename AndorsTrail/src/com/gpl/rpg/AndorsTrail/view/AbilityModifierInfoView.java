@@ -92,8 +92,9 @@ public final class AbilityModifierInfoView extends LinearLayout {
 			abilitymodifierinfo_change_attack_damage.setVisibility(View.VISIBLE);
 		}
 
-		if (traits.setNonWeaponDamageModifier > 0 && traits.setNonWeaponDamageModifier != 100) {
-			abilitymodifierinfo_set_damage_modifier.setText(res.getString(R.string.iteminfo_effect_set_damage_modifier, traits.setNonWeaponDamageModifier));
+		if (isWeapon) {
+			final int nonWeaponDamageModifier = traits.setNonWeaponDamageModifier > 0 ? traits.setNonWeaponDamageModifier : 100;
+			abilitymodifierinfo_set_damage_modifier.setText(res.getString(R.string.iteminfo_effect_set_damage_modifier, nonWeaponDamageModifier));
 			abilitymodifierinfo_set_damage_modifier.setVisibility(View.VISIBLE);
 		}
 	}
