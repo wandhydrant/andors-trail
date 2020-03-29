@@ -4,7 +4,11 @@ import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.ListIterator;
 import java.util.Map;
 import java.util.Set;
 
@@ -39,6 +43,17 @@ public final class WorldMapController {
 
 	private static final int WORLDMAP_SCREENSHOT_TILESIZE = 8;
 	public static final int WORLDMAP_DISPLAY_TILESIZE = WORLDMAP_SCREENSHOT_TILESIZE;
+	private static List<MapUpdateTask> mapUpdatesInProgress = new LinkedList<MapUpdateTask>();
+
+
+	private static final class MapUpdateTask {
+		private AsyncTask<Void, Void, Void> mapUpdateTask;
+		private String mapName;
+		public MapUpdateTask(final AsyncTask<Void, Void, Void> mapUpdateTask, String mapName) {
+			this.mapUpdateTask = mapUpdateTask;
+			this.mapName = mapName;
+		}
+	}
 
 	public static void updateWorldMap(final WorldContext world, final Resources res) {
 		updateWorldMap(world, world.model.currentMaps.map, world.model.currentMaps.tileMap, world.model.currentMaps.tiles, res);
@@ -55,12 +70,57 @@ public final class WorldMapController {
 
 		if (!shouldUpdateWorldMap(map, worldMapSegmentName, world.maps.worldMapRequiresUpdate)) return;
 
-		(new AsyncTask<Void, Void, Void>() {
+		synchronized (mapUpdatesInProgress) {
+			ListIterator<MapUpdateTask> iterator = mapUpdatesInProgress.listIterator();
+			while (iterator.hasNext()) {
+				final MapUpdateTask task = iterator.next();
+				if (task.mapName.equalsIgnoreCase(map.name)) {
+					task.mapUpdateTask.cancel(true);
+					iterator.remove();
+					if (AndorsTrailApplication.DEVELOPMENT_DEBUGMESSAGES) {
+						L.log("WorldMapController: Initialized cancelling update of worldmap segment " + worldMapSegmentName + " for map " + map.name);
+					}
+				}
+			}
+		}
+
+		final AsyncTask<Void, Void, Void> task = new AsyncTask<Void, Void, Void>() {
+			@Override
+			protected void onPostExecute(Void result) {
+				synchronized (mapUpdatesInProgress) {
+					ListIterator<MapUpdateTask> iterator = mapUpdatesInProgress.listIterator();
+					while (iterator.hasNext()) {
+						if (this == iterator.next().mapUpdateTask) {
+							iterator.remove();
+						}
+					}
+				}
+			}
+
 			@Override
 			protected Void doInBackground(Void... arg0) {
 				final MapRenderer renderer = new MapRenderer(world, map, mapTiles, cachedTiles);
 				try {
+					if (isCancelled()) {
+						if (AndorsTrailApplication.DEVELOPMENT_DEBUGMESSAGES) {
+							L.log("WorldMapController: Cancelling update of worldmap segment " + worldMapSegmentName + " for map " + map.name);
+						}
+						return null;
+					}
+
+					if (isCancelled()) {
+						if (AndorsTrailApplication.DEVELOPMENT_DEBUGMESSAGES) {
+							L.log("WorldMapController: Cancelling update of worldmap segment " + worldMapSegmentName + " for map " + map.name);
+						}
+						return null;
+					}
 					updateCachedBitmap(map, renderer);
+					if (isCancelled()) {
+						if (AndorsTrailApplication.DEVELOPMENT_DEBUGMESSAGES) {
+							L.log("WorldMapController: Cancelling update of worldmap segment " + worldMapSegmentName + " for map " + map.name);
+						}
+						return null;
+					}
 					updateWorldMapSegment(res, world, worldMapSegmentName);
 					world.maps.worldMapRequiresUpdate = false;
 					if (AndorsTrailApplication.DEVELOPMENT_DEBUGMESSAGES) {
@@ -71,7 +131,11 @@ public final class WorldMapController {
 				}
 				return null;
 			}
-		}).execute();
+		};
+		synchronized (mapUpdatesInProgress) {
+			mapUpdatesInProgress.add(new MapUpdateTask(task, map.name));
+		}
+		task.execute();
 	}
 
 	private static boolean shouldUpdateWorldMap(PredefinedMap map, String worldMapSegmentName, boolean forceUpdate) {
