@@ -20,6 +20,7 @@ import android.graphics.Bitmap.Config;
 import android.graphics.Canvas;
 import android.graphics.Paint;
 import android.os.AsyncTask;
+import android.os.CancellationSignal;
 import android.os.Environment;
 import android.widget.Toast;
 
@@ -45,6 +46,23 @@ public final class WorldMapController {
 	public static final int WORLDMAP_DISPLAY_TILESIZE = WORLDMAP_SCREENSHOT_TILESIZE;
 	private static List<MapUpdateTask> mapUpdatesInProgress = new LinkedList<MapUpdateTask>();
 	private static int updateCount = 0;
+
+	private interface ICancellationToken {
+		boolean isCancelled();
+	}
+
+	private static final class CancelationToken implements ICancellationToken {
+		private AsyncTask<Void, Void, Void> task;
+
+		@Override
+		public boolean isCancelled() {
+			return task.isCancelled();
+		}
+
+		public CancelationToken(AsyncTask<Void, Void, Void> task) {
+			this.task = task;
+		}
+	}
 
 	private static final class MapUpdateTask {
 		private AsyncTask<Void, Void, Void> mapUpdateTask;
@@ -110,6 +128,9 @@ public final class WorldMapController {
 			protected Void doInBackground(Void... arg0) {
 				final MapRenderer renderer = new MapRenderer(world, map, mapTiles, cachedTiles);
 				try {
+					if (AndorsTrailApplication.DEVELOPMENT_DEBUGMESSAGES) {
+						L.log("WorldMapController: doInBackground " + updateCount + " of worldmap segment " + worldMapSegmentName + " for map " + map.name);
+					}
 					if (isCancelled()) {
 						if (AndorsTrailApplication.DEVELOPMENT_DEBUGMESSAGES) {
 							L.log("WorldMapController: Cancelling update " + updateCount + " of worldmap segment " + worldMapSegmentName + " for map " + map.name);
@@ -130,13 +151,23 @@ public final class WorldMapController {
 						}
 						return null;
 					}
-					updateWorldMapSegment(res, world, worldMapSegmentName);
+					if (AndorsTrailApplication.DEVELOPMENT_DEBUGMESSAGES) {
+						L.log("WorldMapController: Before updateWorldMapSegment " + updateCount + " of worldmap segment " + worldMapSegmentName + " for map " + map.name);
+					}
+					updateWorldMapSegment(res, world, worldMapSegmentName, new CancelationToken(this));
+					if (isCancelled()) {
+						if (AndorsTrailApplication.DEVELOPMENT_DEBUGMESSAGES) {
+							L.log("WorldMapController: Cancelling update received too late " + updateCount + " of worldmap segment " + worldMapSegmentName + " for map " + map.name)
+						}
+						return null;
+					}
+
+
 					world.maps.worldMapRequiresUpdate = false;
 					if (isCancelled()) {
 						if (AndorsTrailApplication.DEVELOPMENT_DEBUGMESSAGES) {
 							L.log("WorldMapController: Cancelling update received too late " + updateCount + " of worldmap segment " + worldMapSegmentName + " for map " + map.name);
 						}
-						return null;
 					}
 					if (AndorsTrailApplication.DEVELOPMENT_DEBUGMESSAGES) {
 						L.log("WorldMapController: Updated " + updateCount + " worldmap segment " + worldMapSegmentName + " for map " + map.name);
@@ -265,12 +296,16 @@ public final class WorldMapController {
 		return new File(getWorldmapDirectory(), Constants.FILENAME_WORLDMAP_HTMLFILE_PREFIX + segmentName + Constants.FILENAME_WORLDMAP_HTMLFILE_SUFFIX);
 	}
 
-	private static String getWorldMapSegmentAsHtml(Resources res, WorldContext world, String segmentName) {
+	private static String getWorldMapSegmentAsHtml(Resources res, WorldContext world, String segmentName, ICancellationToken cancellationToken) {
 		WorldMapSegment segment = world.maps.worldMapSegments.get(segmentName);
-
+		L.log("A1");
 		Map<String, File> displayedMapFilenamesPerMapName = new HashMap<String, File>(segment.maps.size());
 		Coord offsetWorldmapTo = new Coord(999999, 999999);
+		L.log("A11");
 		for (WorldMapSegmentMap map : segment.maps.values()) {
+			if (cancellationToken.isCancelled()) {
+				return "";
+			}
 			PredefinedMap predefinedMap = world.maps.findPredefinedMap(map.mapName);
 			if (predefinedMap == null) continue;
 			if (!predefinedMap.visited) continue;
@@ -280,8 +315,10 @@ public final class WorldMapController {
 
 			offsetWorldmapTo.x = Math.min(offsetWorldmapTo.x, map.worldPosition.x);
 			offsetWorldmapTo.y = Math.min(offsetWorldmapTo.y, map.worldPosition.y);
+			L.log("end");
 		}
 
+		L.log("A2");
 		Coord bottomRight = new Coord(0, 0);
 
 		StringBuilder mapsAsHtml = new StringBuilder(1000);
@@ -309,6 +346,7 @@ public final class WorldMapController {
 			bottomRight.x = Math.max(bottomRight.x, segmentMap.worldPosition.x + size.width);
 			bottomRight.y = Math.max(bottomRight.y, segmentMap.worldPosition.y + size.height);
 		}
+		L.log("A3");
 		Size worldmapSegmentSize = new Size(
 				(bottomRight.x - offsetWorldmapTo.x) * WorldMapController.WORLDMAP_DISPLAY_TILESIZE
 				,(bottomRight.y - offsetWorldmapTo.y) * WorldMapController.WORLDMAP_DISPLAY_TILESIZE
@@ -334,7 +372,7 @@ public final class WorldMapController {
 				.append("</span></div>");
 			if (AndorsTrailApplication.DEVELOPMENT_DEBUGMESSAGES) namedAreasAsHtml.append('\n');
 		}
-
+		L.log("A4");
 		return res.getString(R.string.worldmap_template)
 				.replace("{{maps}}", mapsAsHtml.toString())
 				.replace("{{areas}}", namedAreasAsHtml.toString())
@@ -373,12 +411,21 @@ public final class WorldMapController {
 		return new CoordRect(topLeft, new Size(bottomRight.x - topLeft.x, bottomRight.y - topLeft.y));
 	}
 
-	public static void updateWorldMapSegment(Resources res, WorldContext world, String segmentName) throws IOException {
-		String mapAsHtml = getWorldMapSegmentAsHtml(res, world, segmentName);
+	public static void updateWorldMapSegment(Resources res, WorldContext world, String segmentName, ICancellationToken cancellationToken) throws IOException {
+		L.log("A");
+		String mapAsHtml = getWorldMapSegmentAsHtml(res, world, segmentName, cancellationToken);
+		if (cancellationToken.isCancelled()) {
+			return;
+		}
+
+		L.log("B");
 		File outputFile = getCombinedWorldMapFile(segmentName);
 		PrintWriter pw = new PrintWriter(outputFile);
+		L.log("C");
 		pw.write(mapAsHtml);
+		L.log("D");
 		pw.close();
+		L.log("E");
 	}
 
 	public static boolean displayWorldMap(Context context, WorldContext world) {
