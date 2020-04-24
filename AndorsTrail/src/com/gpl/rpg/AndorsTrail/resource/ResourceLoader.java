@@ -405,6 +405,7 @@ public final class ResourceLoader {
 		loader.prepareTileset(R.drawable.map_shop_1, "map_shop_1", mapTileSize, sz1x1, mTileSize);
 		loader.prepareTileset(R.drawable.map_sign_ladder_1, "map_sign_ladder_1", mapTileSize, sz1x1, mTileSize);
 		loader.prepareTileset(R.drawable.map_table_1, "map_table_1", mapTileSize, sz1x1, mTileSize);
+		loader.prepareTileset(R.drawable.map_table_2, "map_table_2", new Size(14, 8), sz1x1, mTileSize);
 		loader.prepareTileset(R.drawable.map_trail_1, "map_trail_1", mapTileSize, sz1x1, mTileSize);
 		loader.prepareTileset(R.drawable.map_transition_1, "map_transition_1", mapTileSize, sz1x1, mTileSize);
 		loader.prepareTileset(R.drawable.map_transition_2, "map_transition_2", mapTileSize, sz1x1, mTileSize);
