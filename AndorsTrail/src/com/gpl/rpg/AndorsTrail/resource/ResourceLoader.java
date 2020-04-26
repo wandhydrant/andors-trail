@@ -325,7 +325,7 @@ public final class ResourceLoader {
 		loader.prepareTileset(R.drawable.monsters_man1, "monsters_man1", sz1x1, sz1x1, mTileSize);
 		loader.prepareTileset(R.drawable.monsters_men, "monsters_men", new Size(9, 1), sz1x1, mTileSize);
 		loader.prepareTileset(R.drawable.monsters_men2, "monsters_men2", new Size(10, 1), sz1x1, mTileSize);
-		loader.prepareTileset(R.drawable.monsters_misc, "monsters_misc", new Size(12, 1), sz1x1, mTileSize);
+		loader.prepareTileset(R.drawable.monsters_misc, "monsters_misc", new Size(13, 1), sz1x1, mTileSize);
 		loader.prepareTileset(R.drawable.monsters_rats, "monsters_rats", new Size(5, 1), sz1x1, mTileSize);
 		loader.prepareTileset(R.drawable.monsters_redshrike1, "monsters_redshrike1", sz7x1, sz1x1, mTileSize);
 		loader.prepareTileset(R.drawable.monsters_rltiles1, "monsters_rltiles1", new Size(20, 8), sz1x1, mTileSize);
