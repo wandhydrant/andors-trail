@@ -254,7 +254,7 @@
     <string name="iteminfo_effect_decrease_movecost">Diminuer le coût de mouvement de %1$d AP</string>
     <!-- La suite est ok -->
     <string name="preferences_display_scaling_factor_title">Facteur de zoom</string>
-    <string name="preferences_display_scaling_factor">Permet d\'agrandir toute la zone de jeu.</string>
+    <string name="preferences_display_scaling_factor">Permet d\'agrandir ou de diminuer toute la zone de jeu.</string>
     <string name="preferences_display_scaling_factor_normal">Taille normale</string>
     <string name="preferences_display_scaling_factor_50_percent_larger">Zoom de 150%</string>
     <string name="preferences_display_scaling_factor_double">Zoom de 200%</string>
@@ -594,4 +594,38 @@
     <string name="preferences_display_theme_charcoal">Obsidienne</string>
     <string name="change_theme_requires_restart">Changer le thème de couleurs nécessite un redémarrage. Sur les traces d\'Andor a été arrêté.</string>
     <string name="storage_permissions_mandatory">L\'accès au stockage est obligatoire pour Andor\'s Trail pour gérer les parties sauvegardées et la carte du monde. Fermeture d\'Andor\'s Trail.</string>
+    <string name="startscreen_attention_slot_gets_delete_on_load">Attention</string>
+    <string name="startscreen_error_loading_empty_slot">Impossible de charger une partie à partir d\'un emplacement vide.</string>
+    <string name="startscreen_error_loading_game">Erreur pendant le chargement du jeu</string>
+    <string name="startscreen_load_game_confirm">La partie en cours n\'est pas sauvegardée, vous allez perdre votre personnage.</string>
+    <string name="startscreen_load_game">Charger le jeu</string>
+    <string name="startscreen_game_mode">Mode</string>
+    <string name="heroinfo_one_life">Mort définitive (une seule vie)</string>
+    <string name="heroinfo_limited_lives">Vies (%1$d/%2$d restantes)</string>
+    <string name="heroinfo_unlimited_lives_and_saves">Classique
+\n(Vies et sauvegardes illimitées)</string>
+    <string name="heroinfo_mode">Mode</string>
+    <string name="rip_startscreen">(Repose en paix)</string>
+    <string name="dialog_game_over_text">Vous mourrez dans un dernier soupir.</string>
+    <string name="dialog_game_over_title">Vous avez perdu</string>
+    <string name="heroinfo_unlimited_lives">Nombre illimité de vies, une seule sauvegarde</string>
+    <string name="dialog_loading_failed_cheat">Andor\'s Trail n\'a pas pu charger ce fichier de sauvegarde. Ce fichier a déjà été continué.</string>
+    <string name="startscreen_mode_unlimited_saves_and_lives">Classique (Vies et sauvegardes illimitées)</string>
+    <string name="startscreen_attention_message_slot_gets_delete_on_load">Charger cette partie supprimera son emplacement de sauvegarde. Vous devrez à nouveau sauvegarder avant de changer de partie.</string>
+    <string name="startscreen_mode_1_life">Mort définitive (1 vie, 1 sauvegarde)</string>
+    <string name="startscreen_mode_3_lives">Extrême (3 vies, 1 sauvegarde)</string>
+    <string name="startscreen_mode_10_lives">Très difficile (10 vies, 1 sauvegarde)</string>
+    <string name="startscreen_mode_50_lives">Difficile (50 vies, 1 sauvegarde)</string>
+    <string name="startscreen_mode_unlimited_lives">Modéré (Nombre illimité de vie, 1 sauvegarde)</string>
+    <string name="preferences_display_scaling_factor_75_percent">Zoom à 75 %</string>
+    <string name="preferences_display_scaling_factor_50_percent">Zoom à 50 %</string>
+    <string name="preferences_language_description">Sélectionnez la langue. L\'anglais sera utilisé si la langue du système choisie n\'est pas disponible ou que son contenu n\'a pas encore été traduit. (Redémarrage nécessaire)</string>
+    <string name="preferences_language">Langue</string>
+    <string name="preferences_language_default">Langue du système</string>
+    <string name="menu_save_switch_character_title">Changer de personnage</string>
+    <string name="skill_shortdescription_weapon_prof_pole">Meilleur au combat à l\'arme blanche</string>
+    <string name="skill_title_weapon_prof_pole">Compétence à la hache d\'armes</string>
+    <string name="loadsave_empty_slot">%1$d.&lt;vide&gt;</string>
+    <string name="menu_save_switch_character">Sauvegarder vous permet de changer de personnage et de poursuivre la partie actuelle. Voulez-vous sauvegarder et quitter la session actuelle \?</string>
+    <string name="skill_longdescription_weapon_prof_pole">À chaque niveau de compétence, augmente la chance d\'attaque lors de l\'utilisation d\'une hache d\'armes de %1$d %% par rapport à celle de base, augmente les chances de parades de %2$d %% par rapport à celle de base et augmente la compétence cruciale de %3$d %% par rapport à celle de base de l\'objet.</string>
 </resources>
