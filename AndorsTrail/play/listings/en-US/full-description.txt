@@ -4,8 +4,6 @@ Battle monsters in turn-based combat, become stronger through level ups and skil
 
 You can currently visit up to 497 maps and complete up to 63 quests.
 
-Android Pie (9.0) users: if you experience crashes after battles, avoid the options using "Short notifications" in the "Display monster loot" preference. We'll work around this android bug soon.
-
 The game is completely free. There is no payment to install, no ads, no in-app purchases, and no DLCs. There is no internet access required, and it can run on all versions of Android from 1.6 (Eclair), so it should run on any device, even low-end oldies.
 
 Andor's Trail is open-source software, released under the GPL v2 license.
@@ -21,6 +19,52 @@ If you wish to participate, we have released a content editor called ATCS, downl
 Visit our forums on www.andorstrail.com for help, hints, tips and general discussion. We love our community's feedback!
 
 Changelog:
+
+v0.7.9
+For a better overview you can now reduce the view to 75% or 50%
+A certain person has found another, rather unfrequented tavern
+Fixed the Arulir crashes
+Fixed Ukrainian language crash and change language crash on older phones
+Updated translations
+
+v0.7.8
+A few new quests and several new maps.
+
+For new characters you can choose one of the new hardcore modes: No Saves, Limited Lives, or Permadeath.
+
+Up to now, languages have been limited to English or your local language, as determined by your device settings. Now you can choose between different languages that are translated to a significant extent.
+
+v0.7.7
+Content:
+ 	Fixed typos
+
+Translations:
+ 	Fixed issues with translations integration in 0.7.6
+ 	Fixed crashes for Greek players
+
+v0.7.6
+Content
+ 	Three quests with well known thieves.
+ 	Five new maps.
+
+Translations:
+ 	100% Italian, Polish, Russian, Spanish
+ 	99% German
+ 	87% Portuguese
+ 	84% Portuguese Brazil
+ 	65% Basque
+ 	64% French
+ 	48% Hungarian
+ 	20% Czech
+ 	20% Turkish
+
+v0.7.5
+Content
+- Fix for crash in guynmart after special exit
+- Fix for loading pl, ar, and pt_BR content translations
+Code
+- Workaround for failure to save on first start
+- Workaround for weird NPE in Taunt messages
 
 v0.7.4
 Translations
@@ -40,20 +84,3 @@ Content
 - Fixed issue with Feygard bridge guard on some old saves.
 - Three new places to visit.
 - Avoid monster stunning by "Robe of the Sublimate"
-
-v0.7.3
-Code
-- Fixed lack of permission request to write on external storage
-
-v0.7.2
-Content
-- Two new cities: Stoutford and Guynmart castle
-- Many new maps, and many reworked maps in existing areas
-- New quests in new and existing areas
-Code
-- New game engine capabilities for content scripting
-- New UI, with three themes to choose from.
-- Smooth movement and scrolling in-game
-- Worldmap can be zoomed out a lot more
-- Filtering and sorting in Skills and Inventory views
-- Bug fixes, and Android 9 compatibility.
