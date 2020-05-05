@@ -1,0 +1,59 @@
+Explore the world of Dhayavar looking for your brother Andor in this quest-driven fantasy RPG inspired by old-school classics like Ultima, Rogue and Legend of Zelda.
+
+Battle monsters in turn-based combat, become stronger through level ups and skills, choose from a wide range of equipment, interact with numerous NPCs, visit shops, inns and taverns, search for treasure, and solve quests to follow the trail of your brother and uncover the secrets of the powers at play in Dhayavar. With luck, you may even find a legendary item!
+
+You can currently visit up to 497 maps and complete up to 63 quests.
+
+Android Pie (9.0) users: if you experience crashes after battles, avoid the options using "Short notifications" in the "Display monster loot" preference. We'll work around this android bug soon.
+
+The game is completely free. There is no payment to install, no ads, no in-app purchases, and no DLCs. There is no internet access required, and it can run on all versions of Android from 1.6 (Eclair), so it should run on any device, even low-end oldies.
+
+Andor's Trail is open-source software, released under the GPL v2 license.
+You can get the sources from https://github.com/Zukero/andors-trail
+
+Game translation is crowd-sourced on https://hosted.weblate.org/translate/andors-trail
+
+Andor's Trail is a work in progress, and while there is a lot of content to play, the game isn't completed. You can participate in the development or give ideas on our forums too!
+
+If you wish to participate, we have released a content editor called ATCS, downloadable for free from www.andorstrail.com that makes it possible for anyone to create new material and expand the game, with no coding required! If you like the game, you can join others that have already created some of the content in the current release. You can see your own ideas come to life in a game that hundreds of thousands of people have played!
+*This requires a PC (Windows or Linux) or a Mac. See the forums for details regarding content creation.
+
+Visit our forums on www.andorstrail.com for help, hints, tips and general discussion. We love our community's feedback!
+
+Changelog:
+
+v0.7.4
+Translations
+- Russian & Belarusian 100%
+- German and Italian >99%
+- Polish, Portuguese and Brazilian Portuguese >70%
+- Basque and French >50%
+Code
+- Fixed causes of most occuring "Force Close" a.k.a. crashes.
+- Fixed worldmap bug on towwn names for non-latin scripts (like Cyrillic)
+- Fixed reporting of skills' effects on combat (Cleave, Fracture...).
+- Fixed disappearing red X on worldmap in Remgard.
+- Fixed movement animation sometimes missing after map change
+Content
+- Fixed minor visual issues on many maps.
+- Fixed a few quest bugs and typos
+- Fixed issue with Feygard bridge guard on some old saves.
+- Three new places to visit.
+- Avoid monster stunning by "Robe of the Sublimate"
+
+v0.7.3
+Code
+- Fixed lack of permission request to write on external storage
+
+v0.7.2
+Content
+- Two new cities: Stoutford and Guynmart castle
+- Many new maps, and many reworked maps in existing areas
+- New quests in new and existing areas
+Code
+- New game engine capabilities for content scripting
+- New UI, with three themes to choose from.
+- Smooth movement and scrolling in-game
+- Worldmap can be zoomed out a lot more
+- Filtering and sorting in Skills and Inventory views
+- Bug fixes, and Android 9 compatibility.
