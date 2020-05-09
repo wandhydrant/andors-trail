@@ -283,18 +283,16 @@
 ]]></string>
 
 	<string name="dialog_newversion_title">Welcome</string>
-	<string name="dialog_newversion_message">
-		Thank you for downloading Andor\'s Trail!\n\n
-		Please note that this version of Andor\'s Trail is a WORK IN PROGRESS, which means that all maps are not yet complete.\n
-		Please visit the project forums to discuss the game with other players or to help make the game even better (see "about").\n
-		\n
-		Thanks for all the feedback!
+	<string name="dialog_newversion_message">Thank you for downloading Andor\'s Trail!\n\nPlease note that this version of Andor\'s Trail is a WORK IN PROGRESS, which means that all maps are not yet complete.\nPlease visit the project forums to discuss the game with other players or to help make the game even better (see "about").\n\nThanks for all the feedback!
 	</string>
+	<string name="dialog_newversion_permission_information">\n\nIn order to save and load your games (and only for this purpose) Andor\'s Trail will ask you for permission to access your storage.</string>
+	<string name="dialog_permission_information_title">Loading and saving games</string>
+	<string name="dialog_permission_information">Andor\'s Trail writes saved games to user accessible storage on your device. This allows you to easily back up your saved games or transfer them to a new device. Please visit our forums for more information.\n\nAndor\'s Trail does not use access to your device for any other purpose and does not access the internet. Andor\'s Trail is open source; the sources can be found on github.</string>
 
 	<string name="questlog_includecompleted_prompt">Select quests to show</string>
-	<string name="questlog_includecompleted_hidecompleted">Hide completed quests</string>
-	<string name="questlog_includecompleted_includecompleted">Include completed quests</string>
-	<string name="questlog_includecompleted_onlycompleted">Only completed quests</string>
+	<string name="questlog_includecompleted_hidecompleted">Active quests</string>
+	<string name="questlog_includecompleted_includecompleted">All quests</string>
+	<string name="questlog_includecompleted_onlycompleted">Completed quests</string>
 	<string name="questlog_queststatus">Status: %1$s</string>
 	<string name="questlog_queststatus_inprogress">In progress</string>
 	<string name="questlog_queststatus_completed">Completed</string>
@@ -373,7 +371,7 @@
 
 	<string name="preferences_language_default">System language</string>
 	<string name="preferences_language">Language</string>
-	<string name="preferences_language_description">Select the language. English is used if the system language is not available or content has not ben translated. (Requires restart)</string>
+	<string name="preferences_language_description">Select the language. English is used if the system language is not available or content has not been translated. (Requires restart)</string>
 
 	<string name="inventory_assign">Assign quick slot</string>
 	<string name="inventory_selectitem">Select item to assign</string>
@@ -563,6 +561,7 @@
 	<string name="iteminfo_effect_weapon_attack_damage">Attack damage: %1$d</string>
 	<string name="iteminfo_effect_weapon_attack_damage_minmax">Attack damage: %1$d-%2$d</string>
 	<string name="iteminfo_effect_increase_attack_damage">Increases attack damage by %1$d</string>
+	<string name="iteminfo_effect_set_damage_modifier">Damage modifier: %1$d%%</string>
 	<string name="iteminfo_effect_increase_attack_damage_minmax">Increases attack damage by %1$d-%2$d</string>
 	<string name="iteminfo_effect_decrease_attack_damage">Lowers attack damage by %1$d</string>
 	<string name="iteminfo_effect_decrease_attack_damage_minmax">Lowers attack damage by %1$d-%2$d</string>
@@ -613,6 +612,7 @@
 	<string name="skill_title_fightstyle_dualwield">Fighting style: Dual wield</string>
 	<string name="skill_title_fightstyle_2hand">Fighting style: Two-handed weapon</string>
 	<string name="skill_title_fightstyle_weapon_shield">Fighting style: Weapon and shield</string>
+	<string name="skill_title_fightstyle_unarmed_unarmored">Fighting style: Way of the monk</string>
 	<string name="skill_title_specialization_dualwield">Specialization: Dual wield</string>
 	<string name="skill_title_specialization_2hand">Specialization: Two-handed weapon</string>
 	<string name="skill_title_specialization_weapon_shield">Specialization: Weapon and shield</string>
@@ -624,13 +624,14 @@
 	<string name="skill_shortdescription_weapon_prof_axe">Better at fighting with axes</string>
 	<string name="skill_shortdescription_weapon_prof_blunt">Better at fighting with bludgeoning weapons</string>
 	<string name="skill_shortdescription_weapon_prof_unarmed">Better at fighting without weapons</string>
-	<string name="skill_shortdescription_armor_prof_shield">Make better use of shields</string>
+	<string name="skill_shortdescription_armor_prof_shield">Make better use of shields and parrying weapons</string>
 	<string name="skill_shortdescription_armor_prof_unarmored">Better at fighting without armor</string>
 	<string name="skill_shortdescription_armor_prof_light">Make better use of light armor</string>
 	<string name="skill_shortdescription_armor_prof_heavy">Make better use of heavy armor</string>
 	<string name="skill_shortdescription_fightstyle_dualwield">Wield two weapons at the same time</string>
 	<string name="skill_shortdescription_fightstyle_2hand">Make better use of weapons that require both hands</string>
 	<string name="skill_shortdescription_fightstyle_weapon_shield">Better at fighting with weapon and shield</string>
+	<string name="skill_shortdescription_fightstyle_unarmed_unarmored">Better at fighting unarmed/unarmored</string>
 	<string name="skill_shortdescription_specialization_dualwield">Expert at dual wielding</string>
 	<string name="skill_shortdescription_specialization_2hand">Expert at two-handed weapons</string>
 	<string name="skill_shortdescription_specialization_weapon_shield">Expert at fighting with weapon and shield</string>
@@ -642,7 +643,7 @@
 	<string name="skill_longdescription_weapon_prof_axe">For each skill level, increases attack chance of axes and greataxes by %1$d %% of the item\'s base attack chance, increases block chance by %2$d %% of the item\'s base block chance, and increases critical skill by %3$d %% of the item\'s base critical skill.</string>
 	<string name="skill_longdescription_weapon_prof_blunt">For each skill level, increases attack chance of bludgeoning weapons by %1$d %% of the item\'s base attack chance, increases block chance by %2$d %% of the item\'s base block chance, and increases critical skill by %3$d %% of the item\'s base critical skill. This includes clubs, quarterstaves, maces, scepters, war hammers and giant hammers.</string>
 	<string name="skill_longdescription_weapon_prof_unarmed">When fighting without a weapon and shield, gain %1$d attack chance, %2$d damage potential and %3$d block chance per skill level.</string>
-	<string name="skill_longdescription_armor_prof_shield">Increase damage resistance by %1$d per skill level while having a shield equipped.</string>
+	<string name="skill_longdescription_armor_prof_shield">Increase damage resistance by %1$d per skill level while having a shield or parrying weapon equipped.</string>
 	<string name="skill_longdescription_armor_prof_unarmored">While fighting without having any piece of armor equipped, gain %1$d block chance per skill level. Items made of cloth are not considered as being armor.</string>
 	<string name="skill_longdescription_armor_prof_light">For every skill level, increases the block chance of every piece of light armor being worn by %1$d %% of their original block chances. Light armors include leather, light metal and hide armors.</string>
 	<string name="skill_longdescription_armor_prof_heavy">For every skill level, increases the block chance of every piece of heavy armor being worn by %1$d %% of their original block chances. Pieces of heavy armor have their movement penalties reduced by %2$d %% per skill level, and their attack speed penalties reduced by %3$d %% per skill level. Heavy armors include metal armors, chain mail and plate mail.</string>
@@ -656,12 +657,15 @@ With two levels of this skill, %4$d %% of the off-hand\'s weapon\'s qualities ma
 	<string name="skill_longdescription_fightstyle_2hand">"Gives benefits when using weapons that require both hands to wield, such as two-handed swords, greataxes or giant hammers.
 
 Every skill level increases damage potential of two-handed weapons with %1$d %% of the original damage potential."</string>
-	<string name="skill_longdescription_fightstyle_weapon_shield">"Gives benefits when fighting with a weapon in the main hand and having a shield equipped in the off-hand.
+	<string name="skill_longdescription_fightstyle_weapon_shield">"Gives benefits when fighting with a weapon in the main hand and having a shield or parrying weapon equipped in the off-hand.
 
-Every skill level increases the attack chance of weapons with %1$d %% of their original attack chances, and the block chance of shields by %2$d %% of their original block chances."</string>
+Every skill level increases the attack chance of weapons in the main hand with %1$d %% of their original attack chances, and the block chance of shields or parrying weapons by %2$d %% of their original block chances."</string>
+	<string name="skill_longdescription_fightstyle_unarmed_unarmored">"While fighting without having any piece of armor equipped and without using a weapon or shield, gain %1$d attack chance, %2$d block chance, %3$d damage resistance and increase the maximum damage by %4$d per skill level. The skill also gives a critical multiplier of 1 plus 0.%5$d per level.
+
+Items made of cloth are not considered as being armor." </string>
 	<string name="skill_longdescription_specialization_dualwield">Increases the attack chance of both wielded weapons by an additional %1$d %% of their original attack chances, in addition to the benefits given by the weapon style skill. The block chances of both wielded weapons are also increased by %2$d %% of their original block chances.</string>
 	<string name="skill_longdescription_specialization_2hand">Increases damage potential of two-handed weapons by an additional %1$d %% of the original damage potential, in addition to the benefits given by the weapon style skill. The attack chances of two-handed weapons are also increased by %2$d %% of their original attack chances.</string>
-	<string name="skill_longdescription_specialization_weapon_shield">Increases both attack chances and damage potential of weapons. The attack chance is increased by %1$d %% of the original attack chance, and the damage potential is increased by %2$d %% of the original damage potential.</string>
+	<string name="skill_longdescription_specialization_weapon_shield">Increases both attack chances and damage potential of weapons in the main hand. The attack chance is increased by %1$d %% of the original attack chance, and the damage potential is increased by %2$d %% of the original damage potential.</string>
 	<string name="skill_longdescription_weapon_prof_pole">For each skill level, increases attack chance when using pole weapons by %1$d %% of the item\'s base attack chance, increases block chance by %2$d %% of the item\'s base block chance, and increases critical skill by %3$d %% of the item\'s base critical skill.</string>
 
 	<string name="preferences_quickslots_placement">Quickslot position</string>
