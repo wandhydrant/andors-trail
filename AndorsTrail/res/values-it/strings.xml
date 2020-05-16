@@ -2,11 +2,11 @@
 <resources>
     <string name="app_name">Andor\'s Trail</string>
     <string name="exit_to_menu">Torna al menu</string>
-    <string name="menu_settings">Preferenze</string>
+    <string name="menu_settings">Impostazioni</string>
     <string name="menu_save">Salva</string>
     <string name="menu_save_gamesaved">Partita salvata nello slot %1$d</string>
     <string name="menu_save_failed">Impossibile salvare! La scheda SD è inserita e scrivibile\?</string>
-    <string name="loadsave_title_save">Salva il gioco</string>
+    <string name="loadsave_title_save">Salva la partita</string>
     <string name="loadsave_title_load">Carica salvataggio</string>
     <string name="loadsave_selectslot">Scegli Slot</string>
     <string name="savegame_currenthero_displayinfo">Livello %1$d, %2$d esp, %3$d oro</string>
@@ -17,7 +17,7 @@
 \n:( 
 \n 
 \nIl file può essere incompleto o danneggiato.</string>
-    <string name="dialog_loading_failed_incorrectversion">Andor\'s Trail non ha caricato il salvataggio. Il salvataggio è stato creato con una versione più recente rispetto a quella installata.</string>
+    <string name="dialog_loading_failed_incorrectversion">Andor\'s Trail non è riuscito a caricare il salvataggio. Il salvataggio è stato creato con una versione più recente rispetto a quella installata.</string>
     <string name="dialog_close">Chiudi</string>
     <string name="dialog_monsterencounter_title">Combattimento</string>
     <string name="dialog_monsterencounter_message">Vuoi attaccare\?
@@ -31,33 +31,33 @@
     <string name="heroinfo_skill">Abilità</string>
     <string name="heroinfo_levelup">Nuovo Livello</string>
     <string name="heroinfo_level">Livello</string>
-    <string name="heroinfo_totalexperience">Esperienza Totale</string>
+    <string name="heroinfo_totalexperience">Totale esperienza</string>
     <string name="heroinfo_wornequipment">Equipaggiamento indossato</string>
     <string name="heroinfo_inventory">Inventario</string>
     <string name="heroinfo_gold">Oro: %1$d</string>
     <string name="heroinfo_actionpoints">Punti azione (AP):</string>
     <string name="heroinfo_quests">Missioni</string>
-    <string name="combat_attack">Attacco (%1$d AP)</string>
-    <string name="combat_move">Movimento (%1$d AP)</string>
+    <string name="combat_attack">Attacca (%1$d AP)</string>
+    <string name="combat_move">Muoviti (%1$d AP)</string>
     <string name="combat_use">Usa oggetto</string>
     <string name="combat_endturn">Fine turno</string>
     <!-- <string name="combat_endcombat">End combat</string>-->
     <string name="combat_flee">Fuggi</string>
-    <string name="combat_begin_flee">Ora puoi fuggire dal combattimento selezionando la direzione in cui vuoi fuggire.</string>
+    <string name="combat_begin_flee">Ora puoi fuggire dal combattimento toccando nella direzione in cui vuoi andare.</string>
     <string name="combat_flee_failed">La tua fuga è fallita!</string>
     <string name="combat_status_ap">AP: %1$d</string>
     <string name="combat_monsterhealth">HP:</string>
     <string name="combat_monsteraction">%1$s sta attaccando.</string>
     <!-- <string name="combat_cannotexitcombat">You cannot exit combat since there are adjacent monsters. You first have to move by longclicking a place with no adjacent monster, before you may end the combat.</string> -->
     <string name="combat_result_monstermiss">%1$s ti manca!</string>
-    <string name="combat_result_monsterhit">%1$s ti colpisce per %2$d hp!</string>
-    <string name="combat_result_monsterhitcritical">%1$s effettua un colpo critico per %2$d hp!</string>
+    <string name="combat_result_monsterhit">%1$s ti colpisce per %2$d HP!</string>
+    <string name="combat_result_monsterhitcritical">%1$s effettua un colpo critico per %2$d HP!</string>
     <string name="combat_result_heromiss">Il tuo attacco è fallito.</string>
-    <string name="combat_result_herohit">Hai colpito %1$s per %2$d hp!</string>
-    <string name="combat_result_herohitcritical">Sferri un colpo critico su %1$s per %2$d hp!</string>
+    <string name="combat_result_herohit">Hai colpito %1$s per %2$d HP!</string>
+    <string name="combat_result_herohitcritical">Sferri un colpo critico su %1$s per %2$d HP!</string>
     <string name="combat_result_herokillsmonster">%1$s muore!</string>
-    <string name="combat_not_enough_ap">Rimasti insufficienti AP in questo turno.</string>
-    <string name="combat_hero_dies">Cadi svenuto ma fortunatamente ti risvegli vivo, frastornato e affaticato. Hai perso %1$d punti esperienza.</string>
+    <string name="combat_not_enough_ap">Non hai sufficienti AP in questo turno.</string>
+    <string name="combat_hero_dies">Cadi svenuto, ma fortunatamente ti risvegli vivo, frastornato e affaticato. Hai perso %1$d Punti esperienza (XP).</string>
     <string name="inventory_info">Info</string>
     <string name="inventory_equip">Equipaggia</string>
     <string name="inventory_unequip">Togli</string>
@@ -73,7 +73,7 @@
     <string name="dialog_groundloot_message">Hai trovato alcuni oggetti. </string>
     <string name="dialog_monsterloot_title">Vittoria</string>
     <string name="dialog_monsterloot_message">Sei sopravvissuto al combattimento.</string>
-    <string name="dialog_monsterloot_gainedexp">Hai ottenuto %1$d punti esperienza.</string>
+    <string name="dialog_monsterloot_gainedexp">Hai ottenuto %1$d Punti esperienza (XP).</string>
     <string name="monster_difficulty_veryeasy">Molto facile</string>
     <string name="monster_difficulty_easy">Facile</string>
     <string name="monster_difficulty_normal">Normale</string>
@@ -86,30 +86,30 @@
     <string name="actorinfo_attack">Attacco:</string>
     <string name="actorinfo_defense">Difesa:</string>
     <string name="actorinfo_movecost">Costo movimento (AP):</string>
-    <string name="actorinfo_basetraits">Statistiche combattimento base (senza equipaggiamento e abilità)</string>
-    <string name="actorinfo_currenttraits">Statistiche combattimento (attuali)</string>
+    <string name="actorinfo_basetraits">Statistiche di combattimento base (senza equipaggiamento e abilità)</string>
+    <string name="actorinfo_currenttraits">Statistiche di combattimento</string>
     <string name="traitsinfo_attack_cost">Costo attacco (AP):</string>
-    <string name="traitsinfo_attack_chance">Probabilità d\'attacco:</string>
-    <string name="traitsinfo_attack_damage">Danni d\'attacco:</string>
-    <string name="traitsinfo_criticalhit_skill">Abilità colpo critico:</string>
-    <string name="traitsinfo_criticalhit_multiplier">Moltiplicatore critico:</string>
-    <string name="traitsinfo_defense_chance">Probabilità di difesa:</string>
-    <string name="traitsinfo_defense_damageresist">Resistenza ai danni:</string>
+    <string name="traitsinfo_attack_chance">Probabilità di Attacco:</string>
+    <string name="traitsinfo_attack_damage">Danni d\'Attacco:</string>
+    <string name="traitsinfo_criticalhit_skill">Abilità Colpo Critico:</string>
+    <string name="traitsinfo_criticalhit_multiplier">Moltiplicatore Critico:</string>
+    <string name="traitsinfo_defense_chance">Probabilità di Difesa:</string>
+    <string name="traitsinfo_defense_damageresist">Resistenza ai Danni:</string>
     <!-- <string name="key_required">E\' richiesta una chiave specifica per passare.</string> -->
     <string name="iteminfo_category">Categoria: </string>
     <string name="iteminfo_action_use">Usa</string>
-    <string name="iteminfo_action_equip">Indossa</string>
+    <string name="iteminfo_action_equip">Equipaggia</string>
     <string name="iteminfo_action_unequip">Togli</string>
     <string name="iteminfo_action_use_ap">Usa (%1$d AP)</string>
-    <string name="iteminfo_action_equip_ap">Indossa (%1$d AP)</string>
+    <string name="iteminfo_action_equip_ap">Equipaggia (%1$d AP)</string>
     <string name="iteminfo_action_unequip_ap">Togli (%1$d AP)</string>
     <string name="startscreen_continue">Continua la partita in corso</string>
     <string name="startscreen_newgame">Nuova partita</string>
     <string name="startscreen_newgame_confirm">Perderai la partita attuale e il tuo personaggio, sei sicuro di voler iniziare una nuova partita\?</string>
     <string name="startscreen_about">Info/Aiuto</string>
-    <string name="startscreen_enterheroname">Nome dell\'eroe</string>
+    <string name="startscreen_enterheroname">Inserisci il nome dell\'eroe</string>
     <string name="startscreen_load">Carica</string>
-    <string name="conversation_rewardexp">[Hai guadagnato %1$d punti esperienza]</string>
+    <string name="conversation_rewardexp">[Hai guadagnato %1$d Punti esperienza (XP)]</string>
     <string name="conversation_rewardgold"> [Hai guadagnato %1$d oro]</string>
     <string name="conversation_lostgold"> [Hai perso %1$d oro]</string>
     <string name="conversation_rewarditem"> [Hai guadagnato un oggetto]</string>
@@ -127,13 +127,13 @@
     <string name="levelup_description">Benvenuto nel livello %1$d!</string>
     <string name="levelup_buttontext">Nuovo livello</string>
     <string name="levelup_add_health">Aumenta la salute (+%1$d HP)</string>
-    <string name="levelup_add_health_description">Aggiunge %1$d alla salute massima.</string>
-    <string name="levelup_add_attackchance">Aumenta la probabilità d\'attacco (+%1$d)</string>
-    <string name="levelup_add_attackchance_description">Aggiunge %1$d alla tua probabilità d\'attacco di base.</string>
-    <string name="levelup_add_attackdamage">Aumenta i danni d\'attacco (+%1$d)</string>
-    <string name="levelup_add_attackdamage_description">Aggiunge %1$d ai danni d\'attacco di base.</string>
-    <string name="levelup_add_blockchance">Aumenta la probabilità di difesa (+%1$d)</string>
-    <string name="levelup_add_blockchance_description">Aggiunge %1$d alla probabilità di difesa base.</string>
+    <string name="levelup_add_health_description">Aggiunge %1$d ai tuoi HP massimi.</string>
+    <string name="levelup_add_attackchance">Aumenta la Probabilità di Attacco (+%1$d)</string>
+    <string name="levelup_add_attackchance_description">Aggiunge %1$d alla tua Probabilità di Attacco di base.</string>
+    <string name="levelup_add_attackdamage">Aumenta i Danni d\'Attacco (+%1$d)</string>
+    <string name="levelup_add_attackdamage_description">Aggiunge %1$d ai tuoi Danni d\'Attacco di base.</string>
+    <string name="levelup_add_blockchance">Aumenta la Probabilità di Difesa (+%1$d)</string>
+    <string name="levelup_add_blockchance_description">Aggiunge %1$d alla tua Probabilità di Difesa di base.</string>
     <string name="dialog_rest_title">Riposa</string>
     <string name="dialog_rest_confirm_message">Vuoi riposare qui?</string>
     <string name="dialog_rest_message">Hai riposato e la tua salute è tornata al massimo.</string>
@@ -141,18 +141,18 @@
     <string name="about_button2">Autori</string>
     <string name="about_button3">Licenza</string>
     <string name="about_contents1">Benvenuto in Andor\'s Trail, un gioco open-source RPG roguelike per Android.&lt;br /&gt; &lt;br /&gt; &lt;a href=http://andorstrail.com/&gt;Forum del gioco su andorstrail.com per domande e discussioni riguardo il gameplay.&lt;/a&gt;&lt;br /&gt; &lt;br /&gt;&lt;a href=http://docs.andorstrail.com/&gt;Wiki per informazioni sul mondo di Andor\'s Trail e altre cose utili da sapere.&lt;/a&gt;&lt;br /&gt; &lt;br /&gt; &lt;a href=https://github.com/AndorsTrailRelease/andors-trail/&gt;Codice sorgente del progetto su github.it per gli sviluppatori.&lt;/a&gt;&lt;br /&gt; &lt;br /&gt; Visita il forum per confrontarti con gli altri giocatori.&lt;br /&gt;</string>
-    <string name="about_contents3">Questo programma è software libero; è possibile ridistribuirlo e/o modificarlo secondo i termini della GNU General Public License (pubblicata dalla Free Software Foundation) nella versione 2 della licenza o (a scelta) in una versione successiva.&lt;br /&gt; &lt;br /&gt; Questo programma è distribuito nella speranza che possa essere utile, ma SENZA ALCUNA GARANZIA, nemmeno la garanzia implicita di COMMERCIABILITÀ o IDONEITÀ PER UN PARTICOLARE SCOPO. Vedere la GNU General Public License per ulteriori dettagli.&lt;br /&gt; &lt;br /&gt; Dovresti aver ricevuto una copia della GNU General Public License insieme a questo programma; se non l\'hai ricevuta, vai a vedere &lt;a href=http://www.gnu.org/licenses&gt;http://www.gnu.org/licenses&lt;/a&gt;&lt;br /&gt; &lt;br /&gt; Per il codice sorgente e per proposte di nuove funzionalità, visita la pagina del progetto su &lt;a href=https://github.com/AndorsTrailRelease/andors-trail/&gt;https://github.com/AndorsTrailRelease/andors-trail/&lt;/a&gt;&lt;br /&gt;</string>
+    <string name="about_contents3">Questo programma è software libero; è possibile ridistribuirlo e/o modificarlo secondo i termini della GNU General Public License (pubblicata dalla Free Software Foundation) nella versione 2 della licenza o (a scelta) in una versione successiva.&lt;br /&gt; &lt;br /&gt; Questo programma è distribuito nella speranza che possa essere utile, ma SENZA ALCUNA GARANZIA, nemmeno la garanzia implicita di COMMERCIABILITÀ o IDONEITÀ PER UN PARTICOLARE SCOPO. Vedere la GNU General Public License per ulteriori dettagli.&lt;br /&gt; &lt;br /&gt; Dovresti aver ricevuto una copia della GNU General Public License insieme a questo programma; se non l\'hai ricevuta, vai a vedere &lt;a href=http://www.gnu.org/licenses&gt;http://www.gnu.org/licenses&lt;/a&gt;&lt;br /&gt; &lt;br /&gt; Per vedere il codice sorgente e per proporre nuove funzionalità, visita la pagina del progetto su &lt;a href=https://github.com/AndorsTrailRelease/andors-trail/&gt;https://github.com/AndorsTrailRelease/andors-trail/&lt;/a&gt;&lt;br /&gt;</string>
     <string name="dialog_newversion_title">Benvenuto</string>
     <string name="dialog_newversion_message">Grazie per aver scaricato Andor\'s Trail! 
 \n 
-\n Ti preghiamo di notare che questa versione di Andor\'s Trail è WORK IN PROGRESS, il che significa che non tutte le mappe sono complete. 
-\n Ti preghiamo di visitare il Forum del progetto per confrontarti con altri giocatori o per contribuire a rendere il gioco migliore (vedi Info/Aiuto). 
-\n 
-\n Grazie per tutti i Feedback!</string>
+\nNota che questa versione di Andor\'s Trail è un WORK IN PROGRESS, il che significa che la mappa del mondo non è ancora completa. 
+\nTi preghiamo di visitare il Forum del progetto per confrontarti con altri giocatori o per contribuire a rendere il gioco migliore (vedi sezione Info/Aiuto). 
+\n
+\nGrazie per i tuoi Feedback!</string>
     <string name="questlog_includecompleted_prompt">Seleziona le missioni da mostrare</string>
-    <string name="questlog_includecompleted_hidecompleted">Nascondi le missioni complete</string>
-    <string name="questlog_includecompleted_includecompleted">Includi le missioni complete</string>
-    <string name="questlog_includecompleted_onlycompleted">Solo missioni complete</string>
+    <string name="questlog_includecompleted_hidecompleted">Missioni attive</string>
+    <string name="questlog_includecompleted_includecompleted">Tutte le missioni</string>
+    <string name="questlog_includecompleted_onlycompleted">Missioni completate</string>
     <string name="questlog_queststatus">Stato: %1$s</string>
     <string name="questlog_queststatus_inprogress">In corso</string>
     <string name="questlog_queststatus_completed">Completato</string>
@@ -354,7 +354,7 @@
     <string name="skill_title_concussion">Trauma</string>
     <string name="skill_shortdescription_concussion">Possibilità di Trauma</string>
     <string name="skill_longdescription_concussion">Quando compi un attacco contro un bersaglio la cui probabilità di difesa (BC) è almeno %1$d più bassa rispetto alla tua probabilità d\'attacco (AC), c\'è una probabilità del %2$d %% che il colpo causi un trauma nel bersaglio. Il trauma diminuisce drasticamente le abilità offensive del bersaglio, facendo sì che il bersaglio sia meno abile nel mettere a segno un attacco.</string>
-    <string name="about_button4">Riguardo</string>
+    <string name="about_button4">Info</string>
     <string name="preferences_ui_category">Interfaccia</string>
     <string name="preferences_ui_enable_animations_title">Abilita animazioni</string>
     <string name="preferences_ui_enable_animations">Mostra animazioni per vari elementi dell\'interfaccia, come la barra del combattimento.</string>
@@ -496,10 +496,10 @@
     <string name="heroinfo_healthpoints">Punti salute (HP):</string>
     <string name="heroinfo_experiencepoints">Punti esperienza (XP):</string>
     <string name="combat_taunt_monster">Schernisci %1$s!</string>
-    <string name="combat_condition_player_apply">Sei colpito da %1$s.</string>
+    <string name="combat_condition_player_apply">Sei affetto da %1$s.</string>
     <string name="combat_condition_player_clear">Sei guarito da %1$s.</string>
     <string name="combat_condition_player_immune">Ora sei immune a %1$s.</string>
-    <string name="combat_condition_monster_apply">%1$s è colpito da %2$s.</string>
+    <string name="combat_condition_monster_apply">%1$s è affetto da %2$s.</string>
     <string name="combat_condition_monster_clear">%1$s è guarito da %2$s.</string>
     <string name="combat_condition_monster_immune">%1$s è ora immune a %2$s.</string>
     <string name="startscreen_newgame_start">Inizia la partita</string>
@@ -574,7 +574,7 @@
     <string name="startscreen_mode_1_life">Permadeath (una sola vita e un solo salvataggio a disposizione)</string>
     <string name="preferences_language_default">Lingua di sistema</string>
     <string name="preferences_language">Lingua</string>
-    <string name="dialog_loading_failed_cheat">Andor\'s Trail non ha caricato il salvataggio. Questo salvataggio è già stato continuato.</string>
+    <string name="dialog_loading_failed_cheat">Andor\'s Trail non è riuscito a caricare il salvataggio. Questo salvataggio è già stato continuato.</string>
     <string name="startscreen_attention_message_slot_gets_delete_on_load">Caricando questa partita, viene eliminato il rispettivo slot di salvataggio. Dovrai salvare di nuovo prima di passare ad un\'altra partita.</string>
     <string name="preferences_language_description">Seleziona la lingua. L\'inglese è utilizzato se la lingua di sistema scelta non è disponibile o se il contenuto non è stato tradotto. (Richiede il riavvio)</string>
     <string name="menu_save_switch_character_title">Cambia il personaggio</string>
@@ -585,4 +585,11 @@
     <string name="skill_title_weapon_prof_pole">Abilità con armi inastate</string>
     <string name="skill_shortdescription_weapon_prof_pole">Migliore nel combattere con armi inastate</string>
     <string name="skill_longdescription_weapon_prof_pole">Per ogni livello di abilità, incrementa la probabilità d\'attacco quando stai usando armi inastate del %1$d %% della probabilità d\'attacco di base dell\'oggetto, incrementa la probabilità di difesa del %2$d %% della possibilità di difesa di base dell\'oggetto e incrementa l\'abilità di colpo critico del %3$d %% dell\'abilità di colpo critico di base dell\'oggetto.</string>
+    <string name="dialog_permission_information">Andor\'s Trail salva i file di salvataggio delle partite nella memoria del tuo device accessibile all\'utente. Ciò ti permette di recuperare i salvataggi e di spostarli su un nuovo device in modo facile. Visita il nostro forum per maggiori informazioni.
+\n
+\nAndor\'s Trail non utilizza l\'accesso al tuo dispositivo per nessun altro scopo e non accede ad internet. Andor\'s Trail è open source; il codice sorgente è reperibile su github.</string>
+    <string name="dialog_permission_information_title">Salvare e caricare le partite</string>
+    <string name="dialog_newversion_permission_information">"
+\n
+\nPer salvare e caricare le tue partite (ed esclusivamente per questo scopo) Andor\'s Trail richiede il permesso di accedere alla memoria interna del device."</string>
 </resources>
