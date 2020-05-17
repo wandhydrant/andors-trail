@@ -146,7 +146,7 @@
     <string name="dialog_newversion_message">Grazie per aver scaricato Andor\'s Trail! 
 \n 
 \nNota che questa versione di Andor\'s Trail è un WORK IN PROGRESS, il che significa che la mappa del mondo non è ancora completa. 
-\nTi preghiamo di visitare il Forum del progetto per confrontarti con altri giocatori o per contribuire a rendere il gioco migliore (vedi sezione Info/Aiuto). 
+\nPuoi visitare il Forum del progetto per confrontarti con altri giocatori o per contribuire a rendere il gioco migliore (vedi sezione Info/Aiuto). 
 \n
 \nGrazie per i tuoi Feedback!</string>
     <string name="questlog_includecompleted_prompt">Seleziona le missioni da mostrare</string>
@@ -159,9 +159,9 @@
     <string name="preferences_display_category">Schermo</string>
     <string name="preferences_display_fullscreen_title">Schermo intero</string>
     <string name="preferences_display_fullscreen">Visualizza il gioco a schermo intero. (Richiede il riavvio del gioco)</string>
-    <string name="preferences_dialog_category">Conferme dialoghi</string>
+    <string name="preferences_dialog_category">Finestre di dialogo di conferma</string>
     <string name="preferences_dialog_confirmrest_title">Conferma riposo</string>
-    <string name="preferences_dialog_confirmrest">Richiesta di conferma prima di fermarti a riposare in un letto. Altrimenti, appena vai su di un letto riposerai automaticamente.</string>
+    <string name="preferences_dialog_confirmrest">Quando sali su un letto, si apre una finestra di dialogo che ti chiede se vuoi riposare o no. Altrimenti, riposerai automaticamente.</string>
     <string name="preferences_dialog_confirmattack_title">Conferma attacco</string>
     <string name="preferences_dialog_confirmattack">Abilita la richiesta \'Vuoi attaccare?\' quando ti avvicini ad un nemico.</string>
     <string name="preferences_dialog_monsterloot_title">Visualizza il bottino</string>
@@ -185,7 +185,7 @@
     <!-- Added in v0.6.9 -->
     <string name="actorinfo_currentconditions">Condizioni attive</string>
     <!-- Translated as: affliction / statuseffect / temporary effect -->
-    <string name="actorcondition_info_removes_all">Rimuovi tutte %1$s</string>
+    <string name="actorcondition_info_removes_all">Rimuove ogni %1$s</string>
     <string name="iteminfo_effect_chance_of">%1$s probabilità di %2$s</string>
     <string name="iteminfo_effect_duration">(%1$d turni)</string>
     <string name="iteminfo_effect_works_on_source">Sulla sorgente</string>
@@ -198,9 +198,9 @@
     <string name="iteminfo_effect_increase_current_hp">Ripristina %1$s HP</string>
     <string name="iteminfo_effect_decrease_current_ap">Prosciuga %1$s AP</string>
     <string name="iteminfo_effect_increase_current_ap">Ripristina %1$s AP</string>
-    <string name="iteminfo_effect_increase_max_hp">Aumenta gli HP max +%1$d</string>
+    <string name="iteminfo_effect_increase_max_hp">Aumenta gli HP max di +%1$d</string>
     <string name="iteminfo_effect_decrease_max_hp">Diminuisce gli HP max di %1$d</string>
-    <string name="iteminfo_effect_increase_max_ap">Aumenta gli AP max +%1$d</string>
+    <string name="iteminfo_effect_increase_max_ap">Aumenta gli AP max di +%1$d</string>
     <string name="iteminfo_effect_decrease_max_ap">Diminuisce gli AP max di %1$d</string>
     <string name="iteminfo_effect_increase_movecost">Il movimento è penalizzato di +%1$d AP</string>
     <string name="iteminfo_effect_decrease_movecost">Il movimento è migliorato di %1$d AP</string>
@@ -576,7 +576,7 @@
     <string name="preferences_language">Lingua</string>
     <string name="dialog_loading_failed_cheat">Andor\'s Trail non è riuscito a caricare il salvataggio. Questo salvataggio è già stato continuato.</string>
     <string name="startscreen_attention_message_slot_gets_delete_on_load">Caricando questa partita, viene eliminato il rispettivo slot di salvataggio. Dovrai salvare di nuovo prima di passare ad un\'altra partita.</string>
-    <string name="preferences_language_description">Seleziona la lingua. L\'inglese è utilizzato se la lingua di sistema scelta non è disponibile o se il contenuto non è stato tradotto. (Richiede il riavvio)</string>
+    <string name="preferences_language_description">Seleziona la lingua. L\'inglese è utilizzato se la lingua di sistema del tuo device non è disponibile o se il contenuto non è ancora stato tradotto. (Richiede il riavvio)</string>
     <string name="menu_save_switch_character_title">Cambia il personaggio</string>
     <string name="menu_save_switch_character">Il salvataggio ti permette di utilizzare un altro personaggio e, successivamente, continuare la partita attuale. Vuoi salvare la partita attuale e uscire\?</string>
     <string name="loadsave_empty_slot">%1$d.&lt;vuoto&gt;</string>
