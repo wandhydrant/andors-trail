@@ -16,7 +16,8 @@ do
 done
 
 mkdir -p "$HOME"/.android
-ls -l /usr/lib/android-sdk/build-tools
+dpkg -S /usr/lib/android-sdk/build-tools/27.0.1
+dpkg -l android-sdk-build-tools
 
 gradle assembleRelease --stacktrace
 
