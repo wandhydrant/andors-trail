@@ -198,7 +198,7 @@
 
 ]]></string>
     <string name="questlog_includecompleted_prompt">Sélectionner les quêtes à afficher</string>
-    <string name="questlog_includecompleted_hidecompleted">Quêtes actives</string>
+    <string name="questlog_includecompleted_hidecompleted">Quêtes en cours</string>
     <string name="questlog_includecompleted_includecompleted">Toutes les quêtes</string>
     <string name="questlog_includecompleted_onlycompleted">Quêtes terminées</string>
     <string name="questlog_queststatus">État : %1$s</string>
@@ -452,7 +452,7 @@
     <string name="skill_shortdescription_weapon_prof_axe">Meilleur au combat avec haches</string>
     <string name="skill_shortdescription_weapon_prof_blunt">Meilleur au combat avec gourdins</string>
     <string name="skill_shortdescription_weapon_prof_unarmed">Meilleur au combat sans armes</string>
-    <string name="skill_shortdescription_armor_prof_shield">Utilise mieux les boucliers</string>
+    <string name="skill_shortdescription_armor_prof_shield">Faire un meilleur usage des boucliers et des armes de parades</string>
     <string name="skill_shortdescription_armor_prof_unarmored">Meilleur au combat sans armures</string>
     <string name="skill_shortdescription_armor_prof_light">Utilise mieux les armures légères</string>
     <string name="skill_shortdescription_armor_prof_heavy">Utilise mieux les armures lourdes</string>
@@ -468,16 +468,18 @@
     <string name="skill_longdescription_weapon_prof_axe">Pour chaque niveau de compétence, augmente les chances d’attaque en utilisant des haches et des grandes haches de %1$d %% des chances d’attaque de base de l’objet, augmente les chances de parade de %2$d %% des chances de parade de base de l’objet, et augmente la compétence cruciale de %3$d %% de la compétence cruciale de base de l’objet.</string>
     <string name="skill_longdescription_weapon_prof_blunt">Pour chaque niveau de compétence, augmente les chances d’attaque en utilisant des armes contondantes de %1$d %% des chances d’attaque de base de l’objet, augmente les chances de parade de %2$d %% des chances de parade de base de l’objet, et augmente la compétence cruciale de %3$d %% de la compétence cruciale de base de l’objet. Cela inclut les gourdins, les bâtons de combat, les masses, les sceptres, les marteaux de guerre et les marteaux géants.</string>
     <string name="skill_longdescription_weapon_prof_unarmed">En combattant sans armes et boucliers, gagne %1$d chances d’attaque, %2$d de dégâts potentiels et %3$d de chances de parade par niveau de compétence.</string>
-    <string name="skill_longdescription_armor_prof_shield">Augmente la résistance aux dégâts de %1$d par niveau de compétence en ayant un bouclier équipé.</string>
+    <string name="skill_longdescription_armor_prof_shield">Augmente la résistance aux dégâts de %1$d par niveau de compétence en ayant un bouclier ou une arme de parade équipé.</string>
     <string name="skill_longdescription_armor_prof_unarmored">En combattant sans avoir une seule pièce d’armure équipée, gagne %1$d chances de parade par niveau de compétence. Les vêtements ne sont pas considérés comme étant des armures.</string>
     <string name="skill_longdescription_armor_prof_light">Pour chaque niveau de compétence, augmente les chances de parade de toute pièce d’armure légère portée de %1$d %% de leur chances de parade de base. Les armures légères incluent le cuir tanné, le métal léger et les armures en cuir.</string>
     <string name="skill_longdescription_armor_prof_heavy">Pour chaque niveau de compétence, augmente les chances de parade de chaque pièce d’armure lourde portée de %1$d %% de leurs chances de parade de base. Les pièces d’armures lourdes ont leurs pénalités de mouvement réduites de %2$d %% par niveau de compétence et leurs pénalités de vitesse d’attaque réduites de %3$d %% par niveau de compétence. Les armures lourdes incluent les armures métalliques, les cottes de mailles et les armures de plates.</string>
     <string name="skill_longdescription_fightstyle_dualwield">Donne des avantages en combattant avec deux armes en même temps, une dans la main dominante et une dans la main non dominante.\n\nSans cette compétence, seulement %1$d %% des qualités d’une arme pourront être utilisées quand elle équipée dans la main non dominante. Cela inclut les chances d’attaque, la compétence cruciale, les dégâts potentiels et les chances de parade. Sans cette compétence, la vitesse d’attaque (coût de PA) est la somme de vitesse d’attaque de l’arme principale et celle de l’arme utilisée dans la main non dominante.\n\nAvec 1 niveau dans cette compétence, %2$d %% des qualités de l’arme de la main non dominante peuvent être utilisées, et la vitesse d’attaque est la vitesse d’attaque de l’arme dans la main dominante plus %3$d %% de la vitesse d’attaque de l’arme dans la main non dominante.\n\nAvec 2 niveaux dans cette compétence, %4$d %% des qualités de l’arme de la main non dominante peuvent être utilisées, et la vitesse d’attaque égale la plus haute vitesse d’attaque des deux armes équipées.</string>
     <string name="skill_longdescription_fightstyle_2hand">Donne des avantages en combattant avec des armes nécessitant deux mains pour être maniées, comme les épées à deux mains, les grandes haches ou les marteaux géants.\n\nChaque niveau de compétence augmente les dégâts potentiels des armes à deux mains de %1$d %% des dégâts potentiels de base.</string>
-    <string name="skill_longdescription_fightstyle_weapon_shield">Donne des avantages en combattant avec une arme dans la main dominante et un bouclier dans la main non dominante.\n\nChaque niveau de compétence augmente les chances d’attaque des armes de %1$d %% de leurs chances d’attaque de base, et les chances de parade des boucliers de %2$d %% de leurs chances de parade de base.</string>
+    <string name="skill_longdescription_fightstyle_weapon_shield">Donne des avantages en combattant avec une arme dans la main dominante et un bouclier ou une arme de parade dans la main non dominante.
+\n
+\nChaque niveau de compétence augmente les chances d’attaque des armes dans la main dominante de %1$d %% de leurs chances d’attaque de base, et les chances de parade des boucliers ou des armes de parade de %2$d %% de leurs chances de parade de base.</string>
     <string name="skill_longdescription_specialization_dualwield">Augmente les chances d’attaque des deux armes maniées de %1$d %% de leurs chances d’attaque de base, en plus des avantages donnés par la compétence de style d’armes. Les chances de parade des deux armes maniées sont de même augmentées de %2$d %% de leurs chances de parade de base.</string>
     <string name="skill_longdescription_specialization_2hand">Augmente les dégâts potentiels des armes à deux mains de %1$d %% de leurs dégâts potentiels de base, en plus des avantages donnés par la compétence de style d’armes. Les chances d’attaque des armes à deux mains sont de même augmentées de %2$d %% de leurs chances d’attaque de base.</string>
-    <string name="skill_longdescription_specialization_weapon_shield">Augmente les chances d’attaque et les dégâts potentiels des armes. Les chances d’attaque sont augmentées de %1$d %% de leurs chances d’attaque de base, et les dégâts potentiels sont augmentées de %2$d %% de leurs dégâts potentiels de base.</string>
+    <string name="skill_longdescription_specialization_weapon_shield">Augmente les chances d’attaque et les dégâts potentiels des armes dans la main principale. Les chances d’attaque sont augmentées de %1$d %% de leurs chances d’attaque de base, et les dégâts potentiels sont augmentées de %2$d %% de leurs dégâts potentiels de base.</string>
     <string name="preferences_quickslots_placement">Position de l\'accès rapide</string>
     <string name="preferences_quickslots_placement_summary">Où placer les accès rapides</string>
     <string name="preferences_quickslots_placements_horizontal_center_bottom">Centre bas</string>
@@ -628,12 +630,16 @@
     <string name="loadsave_empty_slot">%1$d.&lt;vide&gt;</string>
     <string name="menu_save_switch_character">Sauvegarder vous permet de changer de personnage et de poursuivre la partie actuelle. Voulez-vous sauvegarder et quitter la session actuelle \?</string>
     <string name="skill_longdescription_weapon_prof_pole">À chaque niveau de compétence, augmente la chance d\'attaque lors de l\'utilisation d\'une hache d\'armes de %1$d %% par rapport à celle de base, augmente les chances de parades de %2$d %% par rapport à celle de base et augmente la compétence cruciale de %3$d %% par rapport à celle de base de l\'objet.</string>
-    <string name="iteminfo_effect_set_damage_modifier">Modificateur de dommages : %1$d%%</string>
-    <string name="dialog_permission_information">Sur les traces d\'Andor sauvegarde les jeux sur l\'espace accessible de votre appareil. Cela permet de conserver une trace ou de transférer les jeux vers un nouvel appareil. Plus d\'informations disponibles sur nos forums.
+    <string name="iteminfo_effect_set_damage_modifier">Modificateur de dégâts : %1$d%%</string>
+    <string name="dialog_permission_information">Sur les traces d\'Andor sauvegarde les jeux sur l\'espace de stockage disponible de votre appareil. Cela vous permet de facilement sauvegarder vos parties et de les transférer vers un nouvel appareil. Plus d\'informations disponibles sur nos forums.
 \n
-\nSur les traces d\'Andor n\'accède en aucun cas à votre appareil pour une autre raison. Il n\'accède pas non plus à internet. Sur les trace d\'Andor est un logiciel open source ; les sources sont disponibles sur github.</string>
+\nSur les traces d\'Andor n\'accède en aucun cas à votre appareil pour une autre raison. Il n\'accède pas non plus à internet. Sur les traces d\'Andor est un logiciel open source ; les sources sont disponibles sur github.</string>
     <string name="dialog_permission_information_title">Chargement et enregistrement des jeux</string>
     <string name="dialog_newversion_permission_information">"
 \n
-\nSur les traces d\'Andor va vous demander votre permission d\'accéder au support de stockage dans le but de sauvegarder ou charger vos jeux (et uniquement dans cet objectif)."</string>
+\nSur les traces d\'Andor va vous demander la permission d\'accéder à votre espace de stockage dans le but de sauvegarder ou charger vos parties (et uniquement dans cet objectif)."</string>
+    <string name="skill_longdescription_fightstyle_unarmed_unarmored">Lors de combats sans aucun élément d\'armure équipé et sans aucune arme ni bouclier, obtient %1$d chances d\'attaque, %2$d chances de parer, %3$d de résistance aux dégâts et une augmentation des dégâts maximum de %4$d par niveau de compétence. La compétence octroie en outre un multiplicateur de coups critiques de 1 plus 0.%5$d par niveau.
+\n
+\nLes objets faits de tissu ne sont pas considérés comme des armures.</string>
+    <string name="skill_title_fightstyle_unarmed_unarmored">Style de combat : la Voie du moine</string>
 </resources>
