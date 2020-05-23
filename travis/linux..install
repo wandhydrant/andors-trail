@@ -1,0 +1,9 @@
+#!/bin/sh
+sudo apt-get install -y \
+	android-sdk \
+	android-sdk-platform-23 \
+	apksigner \
+	default-jdk-headless \
+	gettext \
+	gradle \
+	libgradle-android-plugin-java
