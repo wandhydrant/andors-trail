@@ -15,7 +15,10 @@ do
 	msgfmt -o src/main/${po%.po}.mo $po
 done
 
-gradle assembleRelease
+mkdir -p "$HOME"/.android
+ls -l /usr/lib/android-sdk/build-tools
+
+gradle assembleRelease --stacktrace
 
 keytool -genkeypair -v -keystore keystore.p12 -storepass changeit \
 	-keypass changeit -storetype pkcs12 -alias self -keyalg RSA \
