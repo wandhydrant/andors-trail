@@ -1,8 +1,12 @@
 dist: bionic
 sudo: required
+cache:
+  directories:
+  - $HOME/pbuilder-bases
 matrix:
   include:
-  - env: TARGET_OS=
+#  - env: TARGET_OS=bionic
+  - env: TARGET_OS=stretch
 before_install:
 - "$TRAVIS_BUILD_DIR/travis/$TRAVIS_OS_NAME.$TARGET_OS.before_install"
 install:

@@ -1,0 +1,23 @@
+#!/usr/bin/make -f
+
+build-indep: build-indep-stamp
+build-indep-stamp:
+	[ -e debian/control ]
+	travis/support/script
+	touch $@
+
+build: build-indep
+
+clean:
+	[ -e debian/control ]
+	rm -f build-indep-stamp debian/files
+	cd AndorsTrail && rm -fr *.apk .gradle build build.gradle \
+		gradle.properties keystore.p12 local.properties src/main
+
+binary-indep: build-indep
+	[ -e debian/control ]
+	cp -a AndorsTrail/*.apk ..
+	dpkg-distaddfile $(shell basename AndorsTrail/*.apk) - -
+
+binary: binary-indep
+.PHONY: build-indep build clean binary-indep binary
