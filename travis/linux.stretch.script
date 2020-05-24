@@ -25,4 +25,4 @@ ln -s travis/support.stretch/debian
 DIR="$PWD"
 cd ..
 dpkg-source -b "$DIR"
-env -i sudo pbuilder --build --basetgz "$BASETGZ" *.dsc
+env -i TERM="$TERM" sudo pbuilder --build --basetgz "$BASETGZ" *.dsc
