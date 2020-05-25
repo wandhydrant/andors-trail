@@ -254,7 +254,7 @@
     <string name="iteminfo_effect_decrease_movecost">Diminuer le coût de mouvement de %1$d AP</string>
     <!-- La suite est ok -->
     <string name="preferences_display_scaling_factor_title">Facteur de zoom</string>
-    <string name="preferences_display_scaling_factor">Permet d\'agrandir ou de diminuer toute la zone de jeu.</string>
+    <string name="preferences_display_scaling_factor">Permet d\'agrandir ou rétrécir l\'affichage de la zone de jeu.</string>
     <string name="preferences_display_scaling_factor_normal">Taille normale</string>
     <string name="preferences_display_scaling_factor_50_percent_larger">Zoom de 150%</string>
     <string name="preferences_display_scaling_factor_double">Zoom de 200%</string>
@@ -522,7 +522,7 @@
     <string name="skill_shortdescription_crit2">Chance de fracture</string>
     <string name="skill_longdescription_crit1">Pour chaque coup critique porté, il y a %1$d %% chances que le coup causera des hémorragies internes à la cible, provoquant alors l’état « Hémorragie interne ». Hémorragie interne diminue sévèrement les capacités offensives de combat, réduisant l’aptitude de la cible à réussir ses attaques.</string>
     <string name="skill_longdescription_crit2">Pour chaque coup critique porté, il y a %1$d %% chances que le coup causera des fractures osseuses à la cible, provoquant alors l’état « Fracture ». Fracture diminue sévèrement les capacités défensives de combat, réduisant l’aptitude de la cible à se défendre contre les attaques ultérieures.</string>
-    <string name="skill_title_rejuvenation">Réjuvénation</string>
+    <string name="skill_title_rejuvenation">Rajeunissement</string>
     <string name="skill_shortdescription_rejuvenation">Risque de suppression de l’effet</string>
     <string name="skill_longdescription_rejuvenation">À chaque tour (6 secondes), il y a %1$d %% de chances que l’une des conditions négatives actives soit diminuée d’1 cran. Cela s’applique à tous les types d’effets temporaires affectant le corps : états mentaux comme Abasourdi, états physiques comme Fatigue et aussi maladies du sang comme Poison.</string>
     <string name="skill_title_taunt">Provocation</string>
@@ -608,10 +608,10 @@
 \n(Vies et sauvegardes illimitées)</string>
     <string name="heroinfo_mode">Mode</string>
     <string name="rip_startscreen">(Repose en paix)</string>
-    <string name="dialog_game_over_text">Vous mourrez dans un dernier soupir.</string>
+    <string name="dialog_game_over_text">Vous rendez votre dernier souffle.</string>
     <string name="dialog_game_over_title">Vous avez perdu</string>
-    <string name="heroinfo_unlimited_lives">Nombre illimité de vies, une seule sauvegarde</string>
-    <string name="dialog_loading_failed_cheat">Andor\'s Trail n\'a pas pu charger ce fichier de sauvegarde. Ce fichier a déjà été continué.</string>
+    <string name="heroinfo_unlimited_lives">Vies illimitées, une seule sauvegarde</string>
+    <string name="dialog_loading_failed_cheat">Impossible de charger la sauvegarde. Cette partie a déjà été continuée.</string>
     <string name="startscreen_mode_unlimited_saves_and_lives">Classique (Vies et sauvegardes illimitées)</string>
     <string name="startscreen_attention_message_slot_gets_delete_on_load">Charger cette partie supprimera son emplacement de sauvegarde. Vous devrez à nouveau sauvegarder avant de changer de partie.</string>
     <string name="startscreen_mode_1_life">Mort définitive (1 vie, 1 sauvegarde)</string>
@@ -625,11 +625,11 @@
     <string name="preferences_language">Langue</string>
     <string name="preferences_language_default">Langue du système</string>
     <string name="menu_save_switch_character_title">Changer de personnage</string>
-    <string name="skill_shortdescription_weapon_prof_pole">Meilleur au combat à l\'arme blanche</string>
-    <string name="skill_title_weapon_prof_pole">Compétence à la hache d\'armes</string>
+    <string name="skill_shortdescription_weapon_prof_pole">Meilleur au combat à l\'arme d\'hast</string>
+    <string name="skill_title_weapon_prof_pole">Compétence à l\'arme d\'hast</string>
     <string name="loadsave_empty_slot">%1$d.&lt;vide&gt;</string>
     <string name="menu_save_switch_character">Sauvegarder vous permet de changer de personnage et de poursuivre la partie actuelle. Voulez-vous sauvegarder et quitter la session actuelle \?</string>
-    <string name="skill_longdescription_weapon_prof_pole">À chaque niveau de compétence, augmente la chance d\'attaque lors de l\'utilisation d\'une hache d\'armes de %1$d %% par rapport à celle de base, augmente les chances de parades de %2$d %% par rapport à celle de base et augmente la compétence cruciale de %3$d %% par rapport à celle de base de l\'objet.</string>
+    <string name="skill_longdescription_weapon_prof_pole">À chaque niveau de compétence, augmente la chance d\'attaque lors de l\'utilisation d\'une arme d\'hast de %1$d %% par rapport à celle de base, augmente les chances de parades de %2$d %% par rapport à celle de base et augmente la compétence cruciale de %3$d %% par rapport à celle de base de l\'objet.</string>
     <string name="iteminfo_effect_set_damage_modifier">Modificateur de dégâts : %1$d%%</string>
     <string name="dialog_permission_information">Sur les traces d\'Andor sauvegarde les jeux sur l\'espace de stockage disponible de votre appareil. Cela vous permet de facilement sauvegarder vos parties et de les transférer vers un nouvel appareil. Plus d\'informations disponibles sur nos forums.
 \n
