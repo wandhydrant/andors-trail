@@ -452,7 +452,7 @@
     <string name="preferences_ui_show_quickslots_when_toolbox_is_visible_title">Raccourcis et boîte à outils</string>
     <string name="preferences_ui_show_quickslots_when_toolbox_is_visible">Afficher les raccourcis d\'objets dès que la boîte à outils est ouverte</string>
     <string name="startscreen_incompatible_savegames">Ceci est une version de développement de Sur les traces d\'Andor. Les sauvegardes de cette version sont incompatibles avec la version publiée.</string>
-    <string name="startscreen_non_release_version">Ceci est une préversion de Sur les traces d\'Andor Les sauvegardes de cette version ne seront peut-être pas compatibles avec la version publiée.</string>
+    <string name="startscreen_non_release_version">Ceci est une préversion de Sur les traces d\'Andor. Les sauvegardes de cette version ne seront peut-être pas compatibles avec la version finale.</string>
     <string name="heroinfo_gamestats">Statistiques de jeu</string>
     <string name="heroinfo_gamestats_quests">Quêtes accomplies</string>
     <string name="heroinfo_gamestats_deaths">Temps passé inconscient</string>
@@ -470,7 +470,7 @@
     <!-- Added in v0.7.1 -->
     <string name="preferences_ui_use_localized_resources_title">Activer la traduction</string>
     <string name="preferences_ui_use_localized_resources">Utiliser une traduction de l\'interface et du contenu, lorsque disponible. (nécessite un redémarrage)</string>
-    <string name="change_locale_requires_restart">Changer la localisation nécessite un redémarrage. Sur les traces d\'Andor a été arrêté.</string>
+    <string name="change_locale_requires_restart">Changer la langue nécessite un redémarrage. Sur les traces d\'Andor a été arrêté.</string>
     <string name="combat_miss_animation_message">RATE</string>
     <string name="about_button4">A propos</string>
     <string name="preferences_display_loot_dialog_on_items">Afficher la boîte de dialogue uniquement quand le butin contient des objets</string>
@@ -555,7 +555,7 @@
     <string name="preferences_display_theme_green">Malachite</string>
     <string name="preferences_display_theme_charcoal">Obsidienne</string>
     <string name="change_theme_requires_restart">Changer le thème de couleurs nécessite un redémarrage. Sur les traces d\'Andor a été arrêté.</string>
-    <string name="storage_permissions_mandatory">L\'accès au stockage est obligatoire pour Andor\'s Trail pour gérer les parties sauvegardées et la carte du monde. Fermeture d\'Andor\'s Trail.</string>
+    <string name="storage_permissions_mandatory">L\'accès au stockage est obligatoire afin de gérer les parties sauvegardées et la carte du monde. Fermeture du jeu.</string>
     <string name="startscreen_attention_slot_gets_delete_on_load">Attention</string>
     <string name="startscreen_error_loading_empty_slot">Impossible de charger une partie à partir d\'un emplacement vide.</string>
     <string name="startscreen_error_loading_game">Erreur pendant le chargement du jeu</string>
@@ -591,13 +591,13 @@
     <string name="menu_save_switch_character">Sauvegarder vous permet de changer de personnage et de poursuivre la partie actuelle. Voulez-vous sauvegarder et quitter la session actuelle \?</string>
     <string name="skill_longdescription_weapon_prof_pole">Chaque niveau de compétence augmente la chance d\'attaque avec une arme d\'hast de %1$d %% par rapport à celle de base de l\'objet, augmente les chances de parades de %2$d %% par rapport à celle de base de l\'objet, et augmente la compétence cruciale de %3$d %% par rapport à celle de base de l\'objet.</string>
     <string name="iteminfo_effect_set_damage_modifier">Modificateur de dégâts : %1$d%%</string>
-    <string name="dialog_permission_information">Sur les traces d\'Andor sauvegarde les jeux sur l\'espace de stockage disponible de votre appareil. Cela vous permet de facilement sauvegarder vos parties et de les transférer vers un nouvel appareil. Consultez nos forums pour plus d\'information.
+    <string name="dialog_permission_information">Le jeu sauvegarde les parties sur l\'espace de stockage disponible de votre appareil. Cela vous permet de facilement sauvegarder vos parties et de les transférer vers un nouvel appareil. Consultez nos forums pour plus d\'information.
 \n
-\nSur les traces d\'Andor n\'accède en aucun cas à votre appareil pour une autre raison. Il n\'accède pas non plus à internet. Sur les traces d\'Andor est un logiciel libre et open source ; les sources sont disponibles sur github.</string>
+\nLe jeu n\'accède en aucun cas à votre appareil pour une autre raison. Il n\'accède pas non plus à internet. Sur les traces d\'Andor est un logiciel libre et open source ; les sources sont disponibles sur github.</string>
     <string name="dialog_permission_information_title">Chargement et enregistrement des jeux</string>
     <string name="dialog_newversion_permission_information">"
 \n
-\nSur les traces d\'Andor va vous demander la permission d\'accéder à votre espace de stockage dans le but de sauvegarder ou charger vos parties (et uniquement dans cet objectif)."</string>
+\nLe jeu va vous demander la permission d\'accéder à votre espace de stockage dans le but de sauvegarder ou charger vos parties (et uniquement dans cet objectif)."</string>
     <string name="skill_longdescription_fightstyle_unarmed_unarmored">Lors de combats sans aucun armure ni arme ni bouclier, gagne %1$d de chances d\'attaque, %2$d de chances de parer, %3$d de résistance aux dégâts et une augmentation des dégâts maximum de %4$d par niveau de compétence. La compétence donne aussi un multiplicateur critique de 1 plus 0.%5$d par niveau.
 \n
 \nLes objets en tissu ne sont pas considérés comme des armures.</string>
