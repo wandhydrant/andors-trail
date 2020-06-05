@@ -198,9 +198,9 @@
 
 ]]></string>
     <string name="questlog_includecompleted_prompt">Sélectionner les quêtes à afficher</string>
-    <string name="questlog_includecompleted_hidecompleted">Cacher les quêtes terminées</string>
-    <string name="questlog_includecompleted_includecompleted">Inclure les quêtes terminées</string>
-    <string name="questlog_includecompleted_onlycompleted">N\'afficher que les quêtes terminées</string>
+    <string name="questlog_includecompleted_hidecompleted">Quêtes actives</string>
+    <string name="questlog_includecompleted_includecompleted">Toutes les quêtes</string>
+    <string name="questlog_includecompleted_onlycompleted">Quêtes terminées</string>
     <string name="questlog_queststatus">État : %1$s</string>
     <string name="questlog_queststatus_inprogress">En cours</string>
     <string name="questlog_queststatus_completed">Terminée</string>
@@ -628,4 +628,12 @@
     <string name="loadsave_empty_slot">%1$d.&lt;vide&gt;</string>
     <string name="menu_save_switch_character">Sauvegarder vous permet de changer de personnage et de poursuivre la partie actuelle. Voulez-vous sauvegarder et quitter la session actuelle \?</string>
     <string name="skill_longdescription_weapon_prof_pole">À chaque niveau de compétence, augmente la chance d\'attaque lors de l\'utilisation d\'une hache d\'armes de %1$d %% par rapport à celle de base, augmente les chances de parades de %2$d %% par rapport à celle de base et augmente la compétence cruciale de %3$d %% par rapport à celle de base de l\'objet.</string>
+    <string name="iteminfo_effect_set_damage_modifier">Modificateur de dommages : %1$d%%</string>
+    <string name="dialog_permission_information">Sur les traces d\'Andor sauvegarde les jeux sur l\'espace accessible de votre appareil. Cela permet de conserver une trace ou de transférer les jeux vers un nouvel appareil. Plus d\'informations disponibles sur nos forums.
+\n
+\nSur les traces d\'Andor n\'accède en aucun cas à votre appareil pour une autre raison. Il n\'accède pas non plus à internet. Sur les trace d\'Andor est un logiciel open source ; les sources sont disponibles sur github.</string>
+    <string name="dialog_permission_information_title">Chargement et enregistrement des jeux</string>
+    <string name="dialog_newversion_permission_information">"
+\n
+\nSur les traces d\'Andor va vous demander votre permission d\'accéder au support de stockage dans le but de sauvegarder ou charger vos jeux (et uniquement dans cet objectif)."</string>
 </resources>
