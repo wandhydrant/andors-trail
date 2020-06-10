@@ -1,7 +1,12 @@
 #!/usr/bin/make -f
 
+patch-stamp:
+	[ -e debian/control ]
+	patch -b -p1 -z .source-orig < $(wildcard debian/patches/*)
+	touch $@
+
 build-indep: build-indep-stamp
-build-indep-stamp:
+build-indep-stamp: patch-stamp
 	[ -e debian/control ]
 	travis/support/script
 	touch $@
@@ -12,9 +17,11 @@ build: build-indep
 
 clean:
 	[ -e debian/control ]
-	rm -f build-indep-stamp debian/files
+	rm -f build-indep-stamp debian/files patch-stamp
 	cd AndorsTrail && rm -fr *.apk .gradle build build.gradle \
 		gradle.properties keystore.p12 local.properties src/main
+	find -name "*.source-orig" \
+		-execdir sh -c 'mv $$0 $${0%.source-orig}' "{}" \;
 
 binary-indep: build-indep
 	[ -e debian/control ]
