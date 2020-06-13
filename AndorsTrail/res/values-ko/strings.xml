@@ -25,7 +25,7 @@
     <string name="heroinfo_experiencepoints">경험치 (XP):</string>
     <string name="heroinfo_quests">퀘스트</string>
     <string name="dialog_loading_message">리소스 불러오는 중…</string>
-    <string name="dialog_loading_failed_incorrectversion">앤더의 흔적이 게임 저장 파일을 불러올 수 없습니다. 이 파일은 현재 버전보다 최신 버전에서 저장된 파일입니다.</string>
+    <string name="dialog_loading_failed_incorrectversion">앤더의 흔적에서 게임 저장 파일을 불러올 수 없습니다. 이 저장 게임 파일은 현재 실행 중인 버전보다 최신 버전으로 생성됩니다.</string>
     <string name="dialog_recenter">현재 위치</string>
     <string name="app_name">안도르의 흔적</string>
     <string name="app_description">퀘스트 중심의 판타지 RPG</string>
@@ -70,7 +70,7 @@
     <string name="combat_miss_animation_message">빗나감</string>
     <string name="combat_taunt_monster">%1$s을(를) 도발했다!</string>
     <string name="combat_condition_player_apply">%1$s의 영향을 받았습니다.</string>
-    <string name="combat_condition_player_clear">%1$s이(가) 제거됐습니다.</string>
+    <string name="combat_condition_player_clear">%1$s이(가) 지워졌습니다.</string>
     <string name="combat_condition_player_immune">이제 %1$s에 면역됩니다.</string>
     <string name="combat_condition_monster_apply">%1$s은(는) %2$s의 영향을 받습니다.</string>
     <string name="combat_condition_monster_clear">%1$s은(는) %2$s이(가) 제거됐습니다.</string>
@@ -172,9 +172,9 @@
 \n 
 \n모든 피드백에 감사드립니다!</string>
     <string name="questlog_includecompleted_prompt">퀘스트 표시방식을 선택하세요</string>
-    <string name="questlog_includecompleted_hidecompleted">완료된 퀘스트 숨기기</string>
-    <string name="questlog_includecompleted_includecompleted">모든 퀘스트 보기</string>
-    <string name="questlog_includecompleted_onlycompleted">왼료된 퀘스트만 보기</string>
+    <string name="questlog_includecompleted_hidecompleted">활성 퀘스트</string>
+    <string name="questlog_includecompleted_includecompleted">모든 퀘스트</string>
+    <string name="questlog_includecompleted_onlycompleted">완료된 퀘스트</string>
     <string name="questlog_queststatus">진행도: %1$s</string>
     <string name="questlog_queststatus_inprogress">진행 중</string>
     <string name="questlog_queststatus_completed">완료</string>
@@ -228,7 +228,7 @@
     <string name="iteminfo_effect_increase_movecost">이동 비용 +%1$d AP</string>
     <string name="iteminfo_effect_decrease_movecost">이동 비용 -%1$d AP</string>
     <string name="preferences_display_scaling_factor_title">크기 조절</string>
-    <string name="preferences_display_scaling_factor">화면을 더 크게 조절할 수 있습니다.</string>
+    <string name="preferences_display_scaling_factor">게임 보기에서 모든 것을 더 크게 또는 더 작게 표시합니다.</string>
     <string name="preferences_display_scaling_factor_normal">보통</string>
     <string name="preferences_display_scaling_factor_50_percent_larger">1.5배</string>
     <string name="preferences_display_scaling_factor_double">두 배</string>
@@ -439,7 +439,7 @@
     <string name="skill_shortdescription_weapon_prof_axe">도끼 실력이 향상됩니다</string>
     <string name="skill_shortdescription_weapon_prof_blunt">곤봉 실력이 향상됩니다</string>
     <string name="skill_shortdescription_weapon_prof_unarmed">맨손 격투 실력이 향상됩니다</string>
-    <string name="skill_shortdescription_armor_prof_shield">방패에 능숙해집니다</string>
+    <string name="skill_shortdescription_armor_prof_shield">방패와 발사 무기를 더 잘 활용하십시오</string>
     <string name="skill_shortdescription_armor_prof_unarmored">맨몸 전투에 능숙해집니다</string>
     <string name="skill_shortdescription_armor_prof_light">경갑에 능숙해집니다</string>
     <string name="skill_shortdescription_armor_prof_heavy">중갑에 능숙해집니다</string>
@@ -543,4 +543,45 @@
     <string name="preferences_display_theme_charcoal">흑요석</string>
     <string name="change_theme_requires_restart">UI 테마를 변경하려면 다시 시작해야 합니다. 앤더의 흔적이 종료되었습니다.</string>
     <string name="storage_permissions_mandatory">게임을 저장하고 세계 지도를 확인하려면 앤더의 흔적이 저장소에 접근해야합니다. 앤더의 흔적을 닫습니다.</string>
+    <string name="skill_title_weapon_prof_pole">폴 무기 숙련도</string>
+    <string name="skill_title_fightstyle_unarmed_unarmored">격투 스타일: 수도사의 길</string>
+    <string name="loadsave_empty_slot">%1$d.&lt;비어 있음&gt;</string>
+    <string name="iteminfo_effect_set_damage_modifier">피해 수정자: %1$d%%</string>
+    <string name="menu_save_switch_character">저장하면 다른 캐릭터로 전환하고 나중에 현재 게임을 계속할 수 있습니다. 현재 게임을 저장하고 종료하시겠습니까\?</string>
+    <string name="menu_save_switch_character_title">캐릭터 전환</string>
+    <string name="preferences_language_description">언어를 선택하십시오. 시스템 언어를 사용할 수 없거나 내용이 번역되지 않은 경우 영어가 사용됩니다. (다시 시작해야 함)</string>
+    <string name="preferences_display_scaling_factor_50_percent">절반 크기</string>
+    <string name="dialog_permission_information">Andor \'s Trail은 저장된 게임을 장치의 사용자 액세스 가능한 저장소에 씁니다. 이를 통해 저장된 게임을 쉽게 백업하거나 새 장치로 전송할 수 있습니다. 자세한 내용은 포럼을 방문하십시오.
+\n
+\nAndor \'s Trail은 다른 목적으로 귀하의 장치에 대한 액세스를 사용하지 않으며 인터넷에 액세스하지 않습니다. Andor \'s Trail은 오픈 소스입니다. 소스는 github에서 찾을 수 있습니다.</string>
+    <string name="dialog_permission_information_title">게임 불러오기 중 및 저장 중</string>
+    <string name="dialog_newversion_permission_information">"
+\n
+\n게임을 저장하고 불러오기 위해 (그리고 이 목적을 위해서만) Andor\'s Trail은 당신의 저장 장치에 액세스 할 수있는 권한을 요청합니다."</string>
+    <string name="dialog_loading_failed_cheat">앤더의 흔적에서 저장게임 파일을 불러올 수 없습니다. 이 저장게임 파일은 이미 계속되고 있습니다.</string>
+    <string name="startscreen_mode_3_lives">극한 (생명 3개, 1번 저장)</string>
+    <string name="startscreen_mode_10_lives">매우 어려움 (생명 10개, 1번 저장)</string>
+    <string name="startscreen_mode_50_lives">어려움 (생명 50개, 1번 저장)</string>
+    <string name="startscreen_mode_unlimited_saves_and_lives">표준 (무한한 생명 및 저장)</string>
+    <string name="startscreen_mode_unlimited_lives">중간 (무한한 생명, 1번 저장)</string>
+    <string name="heroinfo_unlimited_lives">무한한 생명 , 1번 저장</string>
+    <string name="heroinfo_unlimited_lives_and_saves">표준
+\n(무한한 생명 및 저장)</string>
+    <string name="preferences_language">언어</string>
+    <string name="preferences_language_default">시스템 언어</string>
+    <string name="preferences_display_scaling_factor_75_percent">0.75배 크기</string>
+    <string name="startscreen_mode_1_life">영구적 죽음 (생명 1개, 저장 1개)</string>
+    <string name="startscreen_attention_message_slot_gets_delete_on_load">이 게임을 불러오면 저장 슬롯이 삭제됩니다. 다른 게임으로 전환하기 전에 다시 저장해야합니다.</string>
+    <string name="startscreen_attention_slot_gets_delete_on_load">알려 드립니다</string>
+    <string name="startscreen_error_loading_empty_slot">빈 슬롯에서 불러올 수 없습니다.</string>
+    <string name="startscreen_error_loading_game">게임 불러오는 중 오류</string>
+    <string name="startscreen_load_game_confirm">현재 게임이 저장되지 않아서 캐릭터를 잃게됩니다.</string>
+    <string name="startscreen_load_game">게임 불러오기</string>
+    <string name="startscreen_game_mode">모드</string>
+    <string name="heroinfo_one_life">영구적 죽음 (1 생명)</string>
+    <string name="heroinfo_limited_lives">제한된 생명 (%1$d/%2$d left)</string>
+    <string name="heroinfo_mode">모드</string>
+    <string name="rip_startscreen">(평화롭게 잠들다)</string>
+    <string name="dialog_game_over_text">당신은 마지막 숨을 쉬고 죽습니다.</string>
+    <string name="dialog_game_over_title">게임 종료</string>
 </resources>
