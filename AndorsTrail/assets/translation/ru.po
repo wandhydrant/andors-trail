@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: Andors Trail\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-11-10 11:48+0000\n"
-"PO-Revision-Date: 2020-06-16 08:44+0000\n"
+"PO-Revision-Date: 2020-06-17 18:41+0000\n"
 "Last-Translator: Mingun <Alexander_Sergey@mail.ru>\n"
 "Language-Team: Russian <https://hosted.weblate.org/projects/andors-trail/"
 "game-content/ru/>\n"
@@ -13,7 +13,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 4.1\n"
+"X-Generator: Weblate 4.1.1-dev\n"
 "X-Launchpad-Export-Date: 2015-11-02 12:27+0000\n"
 
 #: [none]
@@ -1173,11 +1173,13 @@ msgstr "Ладно."
 
 #: conversationlist_crossglen_odair.json:odair1
 msgid "Oh, it's you. You with that brother of yours. Always causing trouble."
-msgstr "О, это ты. Ты один из братьев. Всегда вас путал."
+msgstr "О, это ты. Да уж, ты и твой брат. Постоянно вас путаю."
 
 #: conversationlist_crossglen_odair.json:odair2
 msgid "Hmm, maybe you could be of use to me. Do you think you could help me with a small task?"
-msgstr "Хм, возможно, ты будешь мне полезен. Сможешь помочь мне с небольшим делом, как ты думаешь?"
+msgstr ""
+"Хм, возможно, ты будешь мне полезен. Как думаешь, сможешь помочь мне с "
+"небольшим дельцем?"
 
 #: conversationlist_crossglen_odair.json:odair2:0
 msgid "Tell me more about this task."
@@ -1185,33 +1187,42 @@ msgstr "Расскажите подробнее об этом деле."
 
 #: conversationlist_crossglen_odair.json:odair2:1
 msgid "Sure, if there is anything I can gain from it."
-msgstr "Конечно, если что-нибудь получу за это."
+msgstr "Конечно, если что-нибудь за это получу."
 
 #: conversationlist_crossglen_odair.json:odair3
 msgid "I recently went in to that cave over there [points west], to check on our supplies. But apparently, the cave has been infested with rats."
 msgstr ""
-"Недавно я зашёл в пещеру вон там [указывает на запад], чтобы проверить наши "
-"запасы. Но, судя по всему, пещера кишит крысами."
+"Недавно я зашёл вон в ту пещеру вон там [указывает на запад], чтобы "
+"проверить наши запасы. Но, судя по всему, пещеру наводнили крысы."
 
 #: conversationlist_crossglen_odair.json:odair4
 msgid "In particular, I saw one rat that was larger than the other rats. Do you think you have what it takes to help eliminate them?"
-msgstr "В частности, я видел одну крысу, что была больше других. Как ты думаешь, сможешь помочь мне уничтожить их?"
+msgstr ""
+"В частности, я видел одну крысу, которая была больше других. Как думаешь, "
+"сможешь помочь мне их извести?"
 
 #: conversationlist_crossglen_odair.json:odair4:0
 msgid "Sure, I'll help you so that Crossglen can use the supply cave again."
-msgstr "Конечно, я помогу, чтобы Кроссглен снова мог пользоваться пещерой для припасов."
+msgstr ""
+"Конечно, я тебе помогу, чтобы Кроссглен снова мог пользоваться пещерой для "
+"припасов."
 
 #: conversationlist_crossglen_odair.json:odair4:1
 msgid "Sure, I'll help you. But only because there might be some gain for me in this."
-msgstr "Конечно, я помогу. Но только в расчёте на то, что получу вознаграждение за это."
+msgstr ""
+"Конечно, я тебе помогу. Но только в расчёте на то, что получу за это "
+"определённое вознаграждение."
 
 #: conversationlist_crossglen_odair.json:odair5
 msgid "I need you to get into that cave and kill the large rat, that way maybe we can stop the rat infestation in the cave and start using it as our old supply cave again."
-msgstr "Ты должен пойти в эту пещеру и убить большую крысу, таким образом, возможно, мы сможем остановить распространение крыс в пещере и начать использовать её снова, как нашу пещеру для припасов."
+msgstr ""
+"Ты должен пойти в эту пещеру и убить большую крысу, таким образом мы, "
+"возможно, сможем остановить нашествие крыс на пещеру и снова начнём "
+"использовать её для хранения наших припасов."
 
 #: conversationlist_crossglen_odair.json:odair5:1
 msgid "On second thought, I don't think I will help you after all."
-msgstr "По зрелому размышлению, я не думаю, что хочу помогать вам."
+msgstr "По зрелому размышлению, я не думаю, что хочу вам помогать."
 
 #: conversationlist_crossglen_odair.json:odair_cowards
 msgid "I didn't think so either. You and that brother of yours always were cowards."
@@ -1266,7 +1277,9 @@ msgstr "Ещё раз, что я должен был сделать?"
 
 #: conversationlist_crossglen_odair.json:odair_complete
 msgid "Thanks a lot for your help kid! Maybe you and that brother of yours aren't as cowardly as I thought. Here, take these coins for your help."
-msgstr "Большое спасибо тебе за помощь, ребенок! Может быть, ты и твой брат не столь трусливы, как я думал. Вот, возьми эти монеты за твою помощь."
+msgstr ""
+"Большое тебе спасибо за помощь, парень! Может быть, ты и твой брат не столь "
+"трусливы, как я думал. Вот, возьми за твою помощь эти монеты."
 
 #: conversationlist_crossglen_odair.json:odair_complete:0
 #: conversationlist_thievesguild_1.json:thievesguild_thief_4:0
