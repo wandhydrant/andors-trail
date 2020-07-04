@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: andors-trail\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-11-10 11:48+0000\n"
-"PO-Revision-Date: 2020-06-15 21:41+0000\n"
+"PO-Revision-Date: 2020-07-05 22:41+0000\n"
 "Last-Translator: Gökhan Demirden <gkdemirden@gmail.com>\n"
 "Language-Team: Turkish <https://hosted.weblate.org/projects/andors-trail/"
 "game-content/tr/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.1\n"
+"X-Generator: Weblate 4.2-dev\n"
 "X-Launchpad-Export-Date: 2015-11-02 12:26+0000\n"
 
 #: [none]
@@ -282,11 +282,11 @@ msgstr "Zihin sisi"
 
 #: actorconditions_omicronrg9.json:guild03_restingAC
 msgid "Resting"
-msgstr ""
+msgstr "Dinlenme"
 
 #: actorconditions_omicronrg9.json:g03_concentration
 msgid "Concentration"
-msgstr ""
+msgstr "Konsantrasyon"
 
 #: actorconditions_omicronrg9.json:g03_combo
 msgid "Combo"
@@ -298,7 +298,7 @@ msgstr ""
 
 #: actorconditions_arulir_mountain.json:crushed
 msgid "Crushed"
-msgstr ""
+msgstr "Ezilmiş"
 
 #: actorconditions_arulir_mountain.json:head_wound
 msgid "Head wound"
@@ -306,7 +306,7 @@ msgstr ""
 
 #: actorconditions_arulir_mountain.json:mermaid_scale
 msgid "Mermaid curse"
-msgstr ""
+msgstr "Deniz kızı laneti"
 
 #: actorconditions_arulir_mountain.json:increased_defense
 msgid "Increased defense"
@@ -333,7 +333,7 @@ msgstr ""
 
 #: actorconditions_brimhaven.json:stoneskin
 msgid "Stone skin"
-msgstr ""
+msgstr "Taş deri"
 
 #: actorconditions_brimhaven.json:overeating
 msgid "Overeating"
@@ -341,7 +341,7 @@ msgstr ""
 
 #: actorconditions_brimhaven.json:venom
 msgid "Venom"
-msgstr ""
+msgstr "Zehir"
 
 #: conversationlist_mikhail.json:mikhail_gamestart
 msgid "Oh good, you are awake."
@@ -370,7 +370,7 @@ msgstr "Benim için daha fazla görevin var mı?"
 #: conversationlist_mikhail.json:mikhail_default:3
 #: conversationlist_umar.json:umar_return_1:0
 msgid "Do you have any tasks for me?"
-msgstr "[REVIEW]Merhaba."
+msgstr "Benim için görevin var mı?"
 
 #: conversationlist_mikhail.json:mikhail_default:4
 msgid "Is there anything else you can tell me about Andor?"
@@ -379,15 +379,17 @@ msgstr "Bana Andor hakkında anlatacağın daha başka bir şeyin var mı?"
 #: conversationlist_mikhail.json:mikhail_default:5
 #: conversationlist_mikhail.json:mikhail_default:6
 msgid "I have a present for you."
-msgstr ""
+msgstr "Sana hediyem var."
 
 #: conversationlist_mikhail.json:mikhail_default:7
 msgid "I was searching for Andor."
-msgstr ""
+msgstr "Andor'u arıyorum."
 
 #: conversationlist_mikhail.json:mikhail_tasks
 msgid "Oh yes, there were some things I need help with, bread and rats. Which one would you like to talk about?"
-msgstr "A evet, ekmek ve sıçanlar konusunda yardıma ihtiyacım olan bazı şeyler vardı. Hangi birinden konuşmak istersin?"
+msgstr ""
+"A evet, ekmek ve sıçanlar ile ilgili biraz yardıma ihtiyacım var. Hangi "
+"birinden konuşmak istersin?"
 
 #: conversationlist_mikhail.json:mikhail_tasks:0
 #: conversationlist_mikhail.json:mikhail_rats_done:0
@@ -46160,7 +46162,7 @@ msgstr ""
 
 #: questlist_graveyard1.json:waterwayacave:40
 msgid "I found the entrance to the cave."
-msgstr ""
+msgstr "Mağaranın girişini buldum."
 
 #: questlist_graveyard1.json:waterwayacave:45
 msgid "I reached the end of the cave system. The air became damper the deeper I went."
@@ -46184,7 +46186,7 @@ msgstr ""
 
 #: questlist_guynmart.json:guynmart
 msgid "Roses"
-msgstr ""
+msgstr "Güller"
 
 #: questlist_guynmart.json:guynmart:10
 msgid "On a farm I heard of Guynmart Castle nearby. The farmer Rhodita is worried about young Lady Hannah of Guynmart, who used to visit often but has not been seen for a week now. Rhodita asked me to check on her."
@@ -46193,11 +46195,11 @@ msgstr ""
 #: questlist_guynmart.json:guynmart:16
 #: questlist_guynmart.json:guynmart:18
 msgid "I got to the castle, but the main gate was shut."
-msgstr ""
+msgstr "Kaleye geldim ama ana kapı kapalıydı."
 
 #: questlist_guynmart.json:guynmart:20
 msgid "I found the way into the castle garden."
-msgstr ""
+msgstr "Kaleye girmenin bir yolunu buldum."
 
 #: questlist_guynmart.json:guynmart:30
 msgid "The guard at the back door is corrupt. He agreed to let me through for some gold."
@@ -46213,7 +46215,7 @@ msgstr ""
 
 #: questlist_guynmart.json:guynmart:45
 msgid "I met Lady Hannah's little brother, Rob."
-msgstr ""
+msgstr "Leydi Hannah'nın küçük kardeşi Rob ile tanıştım."
 
 #: questlist_guynmart.json:guynmart:50
 msgid "The maid told me that Hannah is missing her betrothed. I should talk to Hannah; she is on the tower top. To get to her, I should offer the cook to take Hannah her lunch."
@@ -46233,7 +46235,7 @@ msgstr ""
 
 #: questlist_guynmart.json:guynmart:64
 msgid "I should take lunch to Lady Hannah on the tower top."
-msgstr ""
+msgstr "Kulenin tepesindeki Leydi Hannah'ya öğle yemeğini vermeliyim."
 
 #: questlist_guynmart.json:guynmart:70
 msgid "Hannah is filled with grief, she cannot think clearly without the smell of a rose. Before she can tell me her whole story, she needs a fresh, fragrant rose."
@@ -46298,6 +46300,7 @@ msgstr ""
 #: questlist_guynmart.json:guynmart:162
 msgid "Unkorh appeared and killed Guynmart. Then he fled like a coward."
 msgstr ""
+"Birden Unkorh belirdi ve Guynmart'ı öldürdü. Sonra da bir korkak gibi kaçtı."
 
 #: questlist_guynmart.json:guynmart:163
 msgid "The guards let me through to the wall."
@@ -46305,7 +46308,7 @@ msgstr ""
 
 #: questlist_guynmart.json:guynmart:164
 msgid "I got the main gate open."
-msgstr ""
+msgstr "Ana kapıyı açtım."
 
 #: questlist_guynmart.json:guynmart:170
 msgid "I went to Rhodita the farmer and stayed there for the night."
@@ -46325,63 +46328,65 @@ msgstr ""
 
 #: questlist_guynmart.json:guynmart:200
 msgid "I was allowed to choose something from the treasury."
-msgstr ""
+msgstr "Hazineden bir şey seçme hakkım var."
 
 #: questlist_guynmart.json:guynmart:201
 msgid "I took the money."
-msgstr ""
+msgstr "Parayı aldım."
 
 #: questlist_guynmart.json:guynmart:202
 msgid "I took the scroll of wisdom."
-msgstr ""
+msgstr "Bilgelik parşomenini aldım."
 
 #: questlist_guynmart.json:guynmart:203
 msgid "I took the shield."
-msgstr ""
+msgstr "Kalkanı aldım."
 
 #: questlist_guynmart.json:guynmart:210
 msgid "Lovis prepared a surprise for me west of the castle."
-msgstr ""
+msgstr "Lovis kalenin batısına benim için bir sürpriz hazırlamış."
 
 #: questlist_guynmart.json:guynmart:211
 msgid "Then I took my leave of Unkorh."
-msgstr ""
+msgstr "Sonra Unkorh'un yanından uzaklaştım."
 
 #: questlist_guynmart.json:guynmart_marbles
 msgid "Marble hunting"
-msgstr ""
+msgstr "Bilye avı"
 
 #: questlist_guynmart.json:guynmart_marbles:10
 msgid "Little Stuephant was crying because he lost his marbles. You told him you would find them for him."
 msgstr ""
+"Küçük Stuephant ağlıyor çünkü bilyelerini kaybetmiş. Onun için bilyeleri "
+"bulacağını söyledin."
 
 #: questlist_guynmart.json:guynmart_marbles:21
 msgid "I found a green marble."
-msgstr ""
+msgstr "Yeşil bir bilye buldum."
 
 #: questlist_guynmart.json:guynmart_marbles:22
 msgid "I found a red marble."
-msgstr ""
+msgstr "Kırmızı bir bilye buldum."
 
 #: questlist_guynmart.json:guynmart_marbles:23
 msgid "I found a pink marble."
-msgstr ""
+msgstr "Pembe bir bilye buldum."
 
 #: questlist_guynmart.json:guynmart_marbles:24
 msgid "I found a golden marble."
-msgstr ""
+msgstr "Sarı bir bilye buldum."
 
 #: questlist_guynmart.json:guynmart_marbles:25
 msgid "I found a pearl white marble."
-msgstr ""
+msgstr "İnci beyazı bir bilye buldum."
 
 #: questlist_guynmart.json:guynmart_marbles:30
 msgid "That was all of them. I should give them to Stuephant now."
-msgstr ""
+msgstr "Hepsi bu kadar. Şimdi bunları  Stuephant'a vermeliyim."
 
 #: questlist_guynmart.json:guynmart_marbles:90
 msgid "Stuephant was happy again."
-msgstr ""
+msgstr "Stuephant tekrardan mutlu."
 
 #: questlist_guynmart.json:guynmart_wise
 msgid "Rare delicacies"
@@ -46390,10 +46395,12 @@ msgstr ""
 #: questlist_guynmart.json:guynmart_wise:10
 msgid "The old man on the hill top yearned for a meal of bread and cheese together with wine."
 msgstr ""
+"Tepenin üstündeki yaşlı adam yemek için ekmek ve peynir, yanına da şarap "
+"istedi."
 
 #: questlist_guynmart.json:guynmart_wise:20
 msgid "I brought him bread, cheese and wine. He is very happy."
-msgstr ""
+msgstr "Ona ekmek, peynir ve şarap getirdim. Çok sevindi."
 
 #: questlist_guynmart.json:guynmart_wise:30
 msgid ""
@@ -46431,7 +46438,7 @@ msgstr ""
 
 #: questlist_stoutford_combined.json:secret_garden
 msgid "A secret garden"
-msgstr ""
+msgstr "Gizli bir bahçe"
 
 #: questlist_stoutford_combined.json:secret_garden:10
 msgid ""
@@ -46525,7 +46532,7 @@ msgstr ""
 
 #: questlist_stoutford_combined.json:thorns_vengeance:76
 msgid "It's all my fault that Aryfora is crying now."
-msgstr ""
+msgstr "Hepsi benim hatam Aryfora şimdi ağlıyor."
 
 #: questlist_stoutford_combined.json:thorns_vengeance:80
 msgid "Blornvale confessed to killing Aryfora's father in the presence of Tahalendor."
@@ -46598,7 +46605,7 @@ msgstr ""
 
 #: questlist_stoutford_combined.json:stn_colonel:153
 msgid "I lost this last fight."
-msgstr ""
+msgstr "Son dövüşü kaybettim."
 
 #: questlist_stoutford_combined.json:stn_colonel:160
 msgid "I have finished all the fights. I should climb back up to Colonel Lutarc."
@@ -46832,7 +46839,7 @@ msgstr ""
 
 #: questlist_omicronrg9.json:Thieves02:55
 msgid "I left Ambelie in that ugly, dark, and cold place. I should go back."
-msgstr "Ambelie'i o çirkin, karanlık ve soğuk erde bıraktım. Geri dönmeliyim."
+msgstr "Ambelie'i o çirkin, karanlık ve soğuk yerde bıraktım. Geri dönmeliyim."
 
 #: questlist_omicronrg9.json:Thieves02:60
 msgid "Troublemaker gave me some bread for Ambelie. The guild doesn't want her to starve to death. Indeed, they want her to be as comfortable as possible. I must go to the brig again."
@@ -46864,11 +46871,11 @@ msgstr ""
 
 #: questlist_omicronrg9.json:Thieves03:2
 msgid "I really need to take a break ...."
-msgstr ""
+msgstr "Gerçekten dinlenmeye ihtiyacım var..."
 
 #: questlist_omicronrg9.json:Thieves03:3
 msgid "I am now fully rested, so I should go back to Umar."
-msgstr ""
+msgstr "Şimdi tamamen dinlendim, bu nedenle Umar'a geri gitmeliyim."
 
 #: questlist_omicronrg9.json:Thieves03:4
 msgid "Umar told me about a group of traitors led by a veteran of the Guild. It seems he stole the Key of Luthor."
@@ -46980,7 +46987,7 @@ msgstr ""
 
 #: questlist_arulir_mountain.json:mermaid_scale:90
 msgid "You decided not to help Tjure."
-msgstr ""
+msgstr "Tjure'a yardım etmeyi reddettin."
 
 #: questlist_arulir_mountain.json:mermaid_scale:100
 msgid "As soon as you held the scale in your hands, a great sluggishness and dispair came over you."
@@ -46996,7 +47003,7 @@ msgstr ""
 
 #: questlist_arulir_mountain.json:mermaid_scale:220
 msgid "You found a heavy bag of gold."
-msgstr ""
+msgstr "Altınla dolu ağır bir çanta buldun."
 
 #: questlist_burhczyd.json:quest_burhczyd
 msgid "Young merchant"
@@ -47167,6 +47174,8 @@ msgstr ""
 #: questlist_brimhaven.json:quick_glance:10
 msgid "I talked to Anakis. He told me that his sister, Juttarka, went into the cave and did not come out again."
 msgstr ""
+"Anakis ile konuştum. Kız kardeşi Juttarka'nın mağaraya girdiğini ve bir daha "
+"da gelmediğini söyledi."
 
 #: questlist_brimhaven.json:quick_glance:15
 msgid "I denied to help Anaksi to find his sister, Juttarka."
@@ -47186,7 +47195,7 @@ msgstr ""
 
 #: questlist_brimhaven.json:quick_glance:60
 msgid "Anakis asked me if I could avenge his sister."
-msgstr ""
+msgstr "Anakis kız kardeşinin intikamını alıp alamayacağımı sordu."
 
 #: questlist_brimhaven.json:quick_glance:70
 msgid "I agreed to avenge Anakis' sister, Juttarka, and kill the Basilisk."
@@ -47210,15 +47219,15 @@ msgstr ""
 
 #: questlist_brimhaven.json:quick_glance:80
 msgid "I killed the Basilisk."
-msgstr ""
+msgstr "Basiliski öldürdüm."
 
 #: questlist_brimhaven.json:quick_glance:85
 msgid "I saved the life of Anakis' sister Juttarka."
-msgstr ""
+msgstr "Anakis'in kız kardeşi Juttarka'nın hayatını kurtardım."
 
 #: questlist_brimhaven.json:quick_glance:90
 msgid "I told Anakis that I killed the Basilisk."
-msgstr ""
+msgstr "Anakis'e basiliski öldürdüğümü söyledim."
 
 #: questlist_brimhaven.json:brv_blackjack
 msgid "Fair play?"
@@ -47311,35 +47320,39 @@ msgstr ""
 
 #: questlist_brimhaven.json:brv_present
 msgid "Honor your parents"
-msgstr ""
+msgstr "Aileni onurlandır"
 
 #: questlist_brimhaven.json:brv_present:10
 msgid "You thought it would be a good idea to give a necklace to your father, in your family colors of red, green, and white. "
 msgstr ""
+"Babana kırmızı, yeşil ve beyaz renklerinde bir kolye vermenin iyi bir fikir "
+"olacağını düşündün. "
 
 #: questlist_brimhaven.json:brv_present:20
 msgid "You bought a necklace."
-msgstr ""
+msgstr "Bir kolye satın aldın."
 
 #: questlist_brimhaven.json:brv_present:30
 msgid "Your father didn't want to take the necklace. He was angry because you didn't focus on finding your brother Andor. "
 msgstr ""
+"Baban kolyeyi almak istemedi. Sana kızdı çünkü Andor'u bulmaya "
+"odaklanmıyorsun. "
 
 #: questlist_brimhaven.json:brv_present:40
 msgid "Your father didn't seem very happy with the cheap necklace."
-msgstr ""
+msgstr "Baban ucuz kolyeyle mutlu görünmüyordu."
 
 #: questlist_brimhaven.json:brv_present:50
 msgid "Your father was very happy with the nice necklace."
-msgstr ""
+msgstr "Baban güzel kolyeyle mutlu görünüyordu."
 
 #: questlist_brimhaven.json:brv_present:60
 msgid "Your father was disappointed with your pretentious necklace."
-msgstr ""
+msgstr "Baban gösterişli kolyeyi görünce hayal kırıklığına uğradı."
 
 #: questlist_brimhaven2.json:brv_school2
 msgid "Lessons learned"
-msgstr ""
+msgstr "Ders öğrenildi"
 
 #: questlist_brimhaven2.json:brv_school2:10
 msgid "You entered a classroom in Brimhaven's school. The teacher told you to sit down."
@@ -47351,7 +47364,7 @@ msgstr ""
 
 #: questlist_brimhaven2.json:brv_school2:20
 msgid "You found a free place next to Golin."
-msgstr ""
+msgstr "Golin'in yanında boş bir yer buldum."
 
 #: questlist_brimhaven2.json:brv_school2:30
 msgid "The teacher was droning endlessly about Brimhaven history."
@@ -47359,7 +47372,7 @@ msgstr ""
 
 #: questlist_brimhaven2.json:brv_school2:40
 msgid "Then a practice lesson started."
-msgstr ""
+msgstr "Sonra pratik dersi başladı."
 
 #: questlist_brimhaven2.json:brv_school2:50
 msgid "Everyone should take a set of practice weapons from the chest and sit down again."
@@ -47371,11 +47384,11 @@ msgstr ""
 
 #: questlist_brimhaven2.json:brv_school2:100
 msgid "You started a fight with Golin."
-msgstr ""
+msgstr "Golin'le dövüşmeye başladın."
 
 #: questlist_brimhaven2.json:brv_school2:102
 msgid "You started a fight with Golin and killed him."
-msgstr ""
+msgstr "Golin'le dövüştün ve onu öldürdün."
 
 #: questlist_brimhaven2.json:brv_school2:104
 msgid "You started a fight with Golin, but you broke off the duel. Very good."
@@ -47387,7 +47400,7 @@ msgstr ""
 
 #: questlist_brimhaven2.json:brv_school2:120
 msgid "You started a fight with the teacher."
-msgstr ""
+msgstr "Öğretmenle dövüştün."
 
 #: questlist_brimhaven2.json:brv_school2:122
 msgid "You started a fight with the teacher and killed her."
@@ -47407,7 +47420,7 @@ msgstr ""
 
 #: questlist_brimhaven2.json:brv_school2:152
 msgid "You killed the evil statue."
-msgstr ""
+msgstr "Şeytani heykeli öldürdün."
 
 #: questlist_brimhaven2.json:brv_school2:200
 msgid "The teacher thanked you for saving him. School is over for you. You could go to the general store and get a cake for good performance."
@@ -47431,55 +47444,57 @@ msgstr ""
 
 #: questlist_brimhaven2.json:brv_wh
 msgid "Inventory"
-msgstr ""
+msgstr "Envanter"
 
 #: questlist_brimhaven2.json:brv_wh:10
 msgid "Facutloni asked you to help him check the storage. You should check if there is a pair of every item."
 msgstr ""
+"Facutioni depoyu kontrol etmesine yardım etmenizi istedi. Her eşyanın eşini "
+"kontrol etmelisin."
 
 #: questlist_brimhaven2.json:brv_wh:100
 msgid "You have found a pair of crystal globes."
-msgstr ""
+msgstr "Kristal kürenin eşini buldum."
 
 #: questlist_brimhaven2.json:brv_wh:101
 msgid "You have found a pair of plush pillows."
-msgstr ""
+msgstr "Peluş yastıkların eşini buldum."
 
 #: questlist_brimhaven2.json:brv_wh:102
 msgid "You have found a pair of lyras."
-msgstr ""
+msgstr "Lirin eşini buldum."
 
 #: questlist_brimhaven2.json:brv_wh:103
 msgid "You have found a pair of boots."
-msgstr ""
+msgstr "Botların eşini buldum."
 
 #: questlist_brimhaven2.json:brv_wh:104
 msgid "You have found a pair of chandeliers."
-msgstr ""
+msgstr "Kandillerin eşini buldum."
 
 #: questlist_brimhaven2.json:brv_wh:105
 msgid "You have found a pair of mysterious green somethings."
-msgstr ""
+msgstr "Gizemli yeşil şeylerin eşini buldum."
 
 #: questlist_brimhaven2.json:brv_wh:106
 msgid "You have found a pair of old, worn capes."
-msgstr ""
+msgstr "Eski yıpranmış şapkaların eşini buldun."
 
 #: questlist_brimhaven2.json:brv_wh:107
 msgid "You have found a pair of pretty porcelain figures."
-msgstr ""
+msgstr "Porselen figürün eşini buldun."
 
 #: questlist_brimhaven2.json:brv_wh:108
 msgid "You have found a pair of striped hammers."
-msgstr ""
+msgstr "Çekicin eşini buldun."
 
 #: questlist_brimhaven2.json:brv_wh:109
 msgid "You have found a pair of dusty old books."
-msgstr ""
+msgstr "Tozlu eski kitabın eşini buldun."
 
 #: questlist_brimhaven2.json:brv_wh:900
 msgid "I found all the 10 pairs. Facutloni is very happy."
-msgstr ""
+msgstr "On eşyanın da eşini buldum. Facutloni çok sevindi."
 
 #: worldmap.xml:world1:crossglen
 msgid "Crossglen"
