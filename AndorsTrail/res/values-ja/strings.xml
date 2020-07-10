@@ -90,10 +90,10 @@
     <string name="traitsinfo_attack_damage">ダメージ:</string>
     <string name="traitsinfo_criticalhit_skill">クリティカルスキル:</string>
     <string name="traitsinfo_criticalhit_multiplier">クリティカル倍率:</string>
-    <string name="traitsinfo_defense_chance">回避率:</string>
+    <string name="traitsinfo_defense_chance">回避:</string>
     <string name="traitsinfo_defense_damageresist">ダメージ軽減:</string>
     <!-- <string name="key_required">A specific key is required to pass.</string> -->
-    <string name="iteminfo_category">カテゴリ: </string>
+    <string name="iteminfo_category">カテゴリー:</string>
     <string name="iteminfo_action_use">使う</string>
     <string name="iteminfo_action_equip">装備</string>
     <string name="iteminfo_action_unequip">はずす</string>
@@ -473,4 +473,28 @@
     <string name="dialog_recenter">現在地</string>
     <string name="dialog_more">その他</string>
     <string name="dialog_loading_failed_cheat">Andor\'s Trailはセーブ・ファイルをロードできませんでした。このセーブ・ファイルは既に使用中です。</string>
+    <string name="skill_longdescription_fightstyle_2hand">両手剣やグレートアックス、巨大ハンマーなど、両手を必要とする武器を使用する際に効果を発揮します。
+\n
+\nスキルレベルが上がるごとに、両手武器のダメージ性能が元の%1$d %%増加します。</string>
+    <string name="skill_longdescription_fightstyle_dualwield">メインハンドとオフハンドの2つの武器を同時に装備して戦う時に効果を発揮します。
+\n
+\nこのスキルがない場合、オフハンドで装備している武器はその性能の %1$d %% しか発揮できません。これには命中、クリティカルスキル、ダメージ性能、回避などが含まれます。このスキルがない場合、攻撃を行う際の攻撃コスト(APコスト)は、メイン武器の攻撃コストとオフハンドで使用する武器の攻撃コストの合計となります。
+\n
+\nスキルレベル1では、 オフハンドの武器性能の%2$d %%を発揮できます。攻撃コストは両方の武器の攻撃コストの高い側に、低い側の攻撃コストの%3$d %%を加えた値となります。
+\n
+\nスキルレベル2では、 オフハンドの武器性能の%4$d %%を発揮できます。攻撃コストは装備している2つの武器のうち攻撃コストの高い側と同じです。</string>
+    <string name="skill_title_specialization_weapon_shield">専門化: 武器と盾</string>
+    <string name="skill_title_specialization_2hand">専門化: 両手武器</string>
+    <string name="skill_title_specialization_dualwield">専門化: 二刀流</string>
+    <string name="skill_title_fightstyle_unarmed_unarmored">戦闘スタイル: モンクへの道</string>
+    <string name="skill_title_fightstyle_weapon_shield">戦闘スタイル: 武器と盾</string>
+    <string name="skill_title_fightstyle_2hand">戦闘スタイル: 両手武器</string>
+    <string name="skill_title_fightstyle_dualwield">戦闘スタイル: 二刀流</string>
+    <string name="conversation_reward_quest_updated">[クエスト更新: \"%1$s\"]</string>
+    <string name="conversation_reward_quest_finished">[クエスト完了: \"%1$s\"]</string>
+    <string name="combat_log_noentries">まだエントリーがありません。</string>
+    <string name="combat_log_title">戦闘ログ</string>
+    <string name="heroinfo_useitem_cost">アイテム使用コスト(AP):</string>
+    <string name="heroinfo_reequip_cost">再装備コスト(AP):</string>
+    <string name="preferences_dialog_overwrite_savegame">すでにセーブゲームが含まれているスロットにセーブする際に上書きするかどうかを指定します。</string>
 </resources>
