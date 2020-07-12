@@ -101,9 +101,9 @@
     <string name="iteminfo_action_equip_ap">装備 (%1$d AP)</string>
     <string name="iteminfo_action_unequip_ap">はずす (%1$d AP)</string>
     <string name="startscreen_continue">ゲームを再開する</string>
-    <string name="startscreen_newgame">New game</string>
+    <string name="startscreen_newgame">ニューゲーム</string>
     <string name="startscreen_newgame_confirm">セーブしていないゲームとキャラクターは消去されます。本当に新しいゲームを開始してよいですか?</string>
-    <string name="startscreen_about">About/help</string>
+    <string name="startscreen_about">ヘルプ</string>
     <string name="startscreen_enterheroname">名前</string>
     <string name="startscreen_load">ロード</string>
     <!-- <string name="conversation_title">%1$s says</string> -->
@@ -165,7 +165,7 @@
 		&lt;br /&gt;
 		For source code and feature requests, please visit the project page at &lt;a href="http://code.google.com/p/andors-trail/"&gt;http://code.google.com/p/andors-trail/&lt;/a&gt;&lt;br /&gt;
 	</string>
-    <string name="dialog_newversion_title">Welcome</string>
+    <string name="dialog_newversion_title">ようこそ</string>
     <string name="dialog_newversion_message">
 		Andor\'s Trailをダウンロードして下さりありがとうございます!\n\n
 		この Andor\'s Trail は、現在"製作中"であり、マップの全てが完成しているわけではありません。\n
@@ -318,7 +318,7 @@
     <string name="skill_longdescription_more_criticals">スキル1レベルにつき、装備によるクリティカルスキルを %1$d%% 増加させます。</string>
     <string name="skill_longdescription_better_criticals">スキル1レベルにつき、装備によるクリティカル倍率を %1$d%% 増加させます。</string>
     <string name="skill_longdescription_speed">スキル1レベルにつき、行動値(AP)の最大値を %1$d ずつ増加させます。</string>
-    <string name="skill_longdescription_coinfinder">スキル1レベルにつき、モンスターがgoldを落とす確率を %1$d%%, モンスターが落とすgoldの量を %2$d%% 増加させます。(そのモンスターが落とすgoldの上限額は増加しません。)</string>
+    <string name="skill_longdescription_coinfinder">スキル1レベルにつき、モンスターがgoldを落とす確率を %1$d%%、モンスターが落とすgoldの量を %2$d%% 増加させます。(そのモンスターが落とすgoldの上限額は増加しません。)</string>
     <string name="skill_longdescription_more_exp">スキル1レベルにつき、モンスターを倒すことで得る経験値を %1$d%% 増加させます。</string>
     <string name="skill_longdescription_cleave">敵を殺すたび、スキル1レベルにつき +%1$d ポイントの行動値(AP)が回復します。</string>
     <string name="skill_longdescription_eater">敵を殺すたび、スキル1レベルにつき +%1$d ポイントの体力(HP)が回復します。</string>
@@ -390,7 +390,7 @@
     <string name="preferences_display_loot_dialog_on_items_or_toast">アイテムのダイアログ、それ以外の場合は通知</string>
     <string name="preferences_display_loot_toast_on_items">アイテムを見つけるときにのみ通知を表示</string>
     <string name="preferences_ui_category">インターフェイス</string>
-    <string name="preferences_ui_enable_animations_title">アニメーションを有効にします。</string>
+    <string name="preferences_ui_enable_animations_title">アニメーションを有効にします</string>
     <string name="preferences_ui_enable_animations">戦闘のバーなどの各種のインターフェイス要素のアニメーションを表示します。</string>
     <string name="menu_button_worldmap">地図</string>
     <string name="menu_button_worldmap_failed">地図を表示できません。</string>
@@ -398,21 +398,21 @@
     <string name="display_worldmap_title">地図</string>
     <string name="inventory_equip_offhand">装備（ぶっきらぼう）</string>
     <string name="iteminfo_effect_weapon_attack_cost">攻撃コスト: %1$d AP</string>
-    <string name="iteminfo_effect_increase_attack_cost">%1$d AP 増加攻撃コスト</string>
-    <string name="iteminfo_effect_decrease_attack_cost">削減は、%1$d AP コストを攻撃します。</string>
-    <string name="iteminfo_effect_weapon_attack_chance">攻撃チャンス: %1$d</string>
-    <string name="iteminfo_effect_increase_attack_chance">%1$d 増加攻撃チャンス</string>
-    <string name="iteminfo_effect_decrease_attack_chance">%1$d 下げる攻撃チャンス</string>
+    <string name="iteminfo_effect_increase_attack_cost">%1$d APの攻撃コスト増加</string>
+    <string name="iteminfo_effect_decrease_attack_cost">%1$d AP の攻撃コスト低下</string>
+    <string name="iteminfo_effect_weapon_attack_chance">命中: %1$d</string>
+    <string name="iteminfo_effect_increase_attack_chance">%1$d命中を上げる</string>
+    <string name="iteminfo_effect_decrease_attack_chance">%1$d命中を下げる</string>
     <string name="iteminfo_effect_weapon_attack_damage">ダメージ: %1$d</string>
     <string name="iteminfo_effect_weapon_attack_damage_minmax">ダメージ: %1$d-%2$d</string>
-    <string name="iteminfo_effect_increase_attack_damage">増加が %1$d によって損害を攻撃します。</string>
-    <string name="iteminfo_effect_increase_attack_damage_minmax">%1$d-%2$d のによって攻撃ダメージを増加</string>
-    <string name="iteminfo_effect_decrease_attack_damage">削減は %1$d によって損傷を攻撃します。</string>
-    <string name="iteminfo_effect_decrease_attack_damage_minmax">削減は %1$d-%2$d によって損傷を攻撃します。</string>
-    <string name="iteminfo_effect_increase_critical_skill">%1$d クリティカルスキルを上げ</string>
-    <string name="iteminfo_effect_decrease_critical_skill">%1$d の重要なスキルを下げる</string>
+    <string name="iteminfo_effect_increase_attack_damage">攻撃ダメージを%1$d上げる</string>
+    <string name="iteminfo_effect_increase_attack_damage_minmax">攻撃ダメージを%1$d-%2$d 上げる</string>
+    <string name="iteminfo_effect_decrease_attack_damage">攻撃ダメージを %1$d 下げる</string>
+    <string name="iteminfo_effect_decrease_attack_damage_minmax">攻撃ダメージを %1$d-%2$d 下げる</string>
+    <string name="iteminfo_effect_increase_critical_skill">%1$d クリティカルスキルを上げる</string>
+    <string name="iteminfo_effect_decrease_critical_skill">%1$d クリティカルスキルを下げる</string>
     <string name="iteminfo_effect_critical_multiplier">x%1$.1f の乗数でクリティカル ヒットを有効に</string>
-    <string name="iteminfo_effect_increase_block_chance">ブロック率が %1$d 増加</string>
+    <string name="iteminfo_effect_increase_block_chance">回避が %1$d 増加</string>
     <string name="heroinfo_experiencepoints">経験値(XP):</string>
     <string name="preferences_dialog_overwrite_savegame_title">セーブゲームの上書きを確認</string>
     <string name="preferences_display_overwrite_savegame_entries_never_confirm">確認ダイアログボックスを表示しない</string>
@@ -425,7 +425,7 @@
     <string name="iteminfo_effect_increase_use_cost">戦闘中にアイテムを使用する際のAPコストが %1$d AP増加</string>
     <string name="iteminfo_effect_decrease_damage_resistance">ダメージ軽減を %1$d 低下</string>
     <string name="iteminfo_effect_increase_damage_resistance">ダメージ軽減を %1$d 上昇</string>
-    <string name="iteminfo_effect_decrease_block_chance">ブロック率が%1$d 低下</string>
+    <string name="iteminfo_effect_decrease_block_chance">回避が%1$d 低下</string>
     <string name="preferences_high_quality_filters">フィルタされたマップ（暗い洞窟など）でパフォーマンスの問題が発生する場合は、このオプションを無効にしてください。 このオプションを有効にすると、ゲームは単色のオーバーレイではなく、高度なカラーフィルタが使用されます。</string>
     <string name="preferences_high_quality_filters_title">高品質フィルタ</string>
     <string name="inventory_selectitem">割り当てるアイテムを選択する</string>
@@ -441,7 +441,7 @@
     <string name="dialog_permission_information_title">ゲームのロードとセーブ</string>
     <string name="dialog_newversion_permission_information">"
 \n
-\nゲームをセーブしてロードするために（この目的のためだけに）Andor\'s Trailはストレージへのアクセス許可を求めます。"</string>
+\nゲームをセーブしてロードするために（この目的のみのため）Andor\'s Trailはストレージへのアクセス許可を求めます。"</string>
     <string name="shop_item_sort">並び替え</string>
     <string name="startscreen_mode_1_life">パーマデス(1ライフ、1セーブ)</string>
     <string name="startscreen_mode_3_lives">エクストリーム(3ライフ、1セーブ)</string>
@@ -451,13 +451,13 @@
     <string name="startscreen_mode_unlimited_saves_and_lives">スタンダード(ライフとセーブ回数の制限なし)</string>
     <string name="startscreen_attention_message_slot_gets_delete_on_load">このゲームをロードするとセーブスロットが削除されます。別のゲームに切り替える前に、再度セーブをする必要があります。</string>
     <string name="startscreen_attention_slot_gets_delete_on_load">注意</string>
-    <string name="startscreen_error_loading_empty_slot">空のスロットからはロードできません。</string>
+    <string name="startscreen_error_loading_empty_slot">空のスロットはロードできません。</string>
     <string name="startscreen_error_loading_game">ゲームの読み込みエラー</string>
     <string name="startscreen_load_game_confirm">現在のゲームはセーブされていないので、キャラクターを失うことになります。</string>
     <string name="startscreen_selectherosprite">外見</string>
     <string name="heroinfo_inventory_categories">カテゴリー</string>
     <string name="heroinfo_skill_categories">カテゴリー</string>
-    <string name="combat_condition_monster_immune">1$sは現在、%2$sに対して免疫を持っている。</string>
+    <string name="combat_condition_monster_immune">1$sは%2$sに対して免疫を持っている。</string>
     <string name="combat_condition_player_immune">あなたは現在、%1$sに対して免疫を持っている。</string>
     <string name="combat_condition_monster_clear">%1$sは%2$sから回復した。</string>
     <string name="combat_condition_monster_apply">%1$sは%2$sの影響を受けている。</string>
@@ -473,7 +473,7 @@
     <string name="dialog_recenter">現在地</string>
     <string name="dialog_more">その他</string>
     <string name="dialog_loading_failed_cheat">Andor\'s Trailはセーブ・ファイルをロードできませんでした。このセーブ・ファイルは既に使用中です。</string>
-    <string name="skill_longdescription_fightstyle_2hand">両手剣やグレートアックス、巨大ハンマーなど、両手を必要とする武器を使用する際に効果を発揮します。
+    <string name="skill_longdescription_fightstyle_2hand">両手剣やグレートアックス、ジャイアントハンマーなど、両手を必要とする武器を使用する際に効果を発揮します。
 \n
 \nスキルレベルが上がるごとに、両手武器のダメージ性能が元の%1$d %%増加します。</string>
     <string name="skill_longdescription_fightstyle_dualwield">メインハンドとオフハンドの2つの武器を同時に装備して戦う時に効果を発揮します。
@@ -497,4 +497,47 @@
     <string name="heroinfo_useitem_cost">アイテム使用コスト(AP):</string>
     <string name="heroinfo_reequip_cost">再装備コスト(AP):</string>
     <string name="preferences_dialog_overwrite_savegame">すでにセーブゲームが含まれているスロットにセーブする際に上書きするかどうかを指定します。</string>
+    <string name="skill_longdescription_armor_prof_light">スキルレベルごとに、装備しているすべての軽装備の回避を元の回避の%1$d %%増やします。 軽装備には、革、軽金属、皮が含まれます。</string>
+    <string name="skill_longdescription_armor_prof_unarmored">防具を装備せずに戦っている時、スキルレベルごとに%1$dの回避を獲得します。 布製のアイテムは防具には該当しません。</string>
+    <string name="skill_longdescription_armor_prof_shield">盾やパリィ武器を装備している時、スキルレベルごとにダメージ軽減を%1$d増やします。</string>
+    <string name="skill_longdescription_weapon_prof_unarmed">武器と盾を持たずに戦っている時、スキルレベルごとに命中1$d、基礎ダメージ2$d、回避3$dを獲得します。</string>
+    <string name="skill_longdescription_weapon_prof_axe">スキルレベルごとに、アックスとグレートアックスを使用した時の命中をアイテムの基礎命中の%1$d %%、回避をアイテムの基礎回避の%2$d %%、クリティカルスキルをアイテムの基礎クリティカルスキルの%3$d %%それぞれ増やします。</string>
+    <string name="skill_longdescription_weapon_prof_blunt">スキルレベルごとに、鈍器を使用した時の命中をアイテムの基礎命中の%1$d %%、回避をアイテムの基礎回避の%2$d %%、クリティカルスキルをアイテムの基礎クリティカルスキルの%3$d %%それぞれ増やします。これには、クラブ、六尺棒、メイス、王笏、ウォーハンマー、ジャイアントハンマーが含まれます。</string>
+    <string name="skill_longdescription_weapon_prof_2hsword">スキルレベルごとに、両手剣を使用した時の命中をアイテムの基礎命中の%1$d %%、回避をアイテムの基礎回避の%2$d %%、クリティカルスキルをアイテムの基礎クリティカルスキルの%3$d %%それぞれ増やします。</string>
+    <string name="skill_longdescription_weapon_prof_1hsword">スキルレベルごとに、レイピア、ロングソード、ブロードソードを使用した時の命中をアイテムの基礎命中の%1$d %%、回避をアイテムの基礎回避の%2$d %%、クリティカルスキルをアイテムの基礎クリティカルスキルの%3$d %%それぞれ増やします。</string>
+    <string name="skill_longdescription_weapon_prof_dagger">スキルレベルごとに、短剣とショートソードを使用した時の命中をアイテムの基礎命中の%1$d %%、回避をアイテムの基礎回避の%2$d %%、クリティカルスキルをアイテムの基礎クリティカルスキルの%3$d %%それぞれ増やします。</string>
+    <string name="skill_shortdescription_weapon_prof_pole">棒武器での戦いが得意</string>
+    <string name="skill_shortdescription_specialization_weapon_shield">武器と盾での戦いの達人</string>
+    <string name="skill_shortdescription_specialization_2hand">両手武器の達人</string>
+    <string name="skill_shortdescription_specialization_dualwield">二刀流の達人</string>
+    <string name="skill_shortdescription_fightstyle_unarmed_unarmored">無手/非武装での戦いが得意</string>
+    <string name="skill_shortdescription_armor_prof_shield">盾とパリィ武器を使いこなす</string>
+    <string name="skill_shortdescription_fightstyle_weapon_shield">武器と盾での戦いが得意</string>
+    <string name="skill_shortdescription_fightstyle_2hand">両手武器を使いこなす</string>
+    <string name="skill_shortdescription_fightstyle_dualwield">2つの武器を同時に使う</string>
+    <string name="skill_shortdescription_armor_prof_heavy">重装備を使いこなす</string>
+    <string name="skill_shortdescription_armor_prof_light">軽装備を使いこなす</string>
+    <string name="skill_shortdescription_armor_prof_unarmored">非装備での戦いが得意</string>
+    <string name="skill_shortdescription_weapon_prof_unarmed">無手での戦いが得意</string>
+    <string name="skill_shortdescription_weapon_prof_blunt">鈍器での戦いが得意</string>
+    <string name="skill_shortdescription_weapon_prof_axe">斧での戦いが得意</string>
+    <string name="skill_shortdescription_weapon_prof_2hsword">両手剣での戦いが得意</string>
+    <string name="skill_shortdescription_weapon_prof_1hsword">片手剣での戦いが得意</string>
+    <string name="skill_title_weapon_prof_pole">棒武器習熟</string>
+    <string name="combat_result_monstermoved">%1$s が移動。</string>
+    <string name="skill_title_armor_prof_unarmored">非装備戦闘</string>
+    <string name="skill_shortdescription_weapon_prof_dagger">短剣での戦いが得意</string>
+    <string name="skill_title_armor_prof_heavy">重装備習熟</string>
+    <string name="skill_title_armor_prof_light">軽装備習熟</string>
+    <string name="skill_title_armor_prof_shield">盾習熟</string>
+    <string name="skill_title_weapon_prof_unarmed">無手戦闘</string>
+    <string name="skill_title_weapon_prof_blunt">鈍器習熟</string>
+    <string name="skill_title_weapon_prof_axe">斧習熟</string>
+    <string name="skill_title_weapon_prof_2hsword">両手剣習熟</string>
+    <string name="skill_title_weapon_prof_1hsword">片手剣習熟</string>
+    <string name="skill_title_weapon_prof_dagger">短剣習熟</string>
+    <string name="iteminfo_effect_set_damage_modifier">ダメージ修正: %1$d%%</string>
+    <string name="startscreen_load_game">ロード</string>
+    <string name="startscreen_game_mode">モード</string>
+    <string name="startscreen_newgame_start">始める</string>
 </resources>
