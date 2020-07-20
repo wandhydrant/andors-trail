@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: Andors Trail\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-11-10 11:48+0000\n"
-"PO-Revision-Date: 2020-07-18 04:40+0000\n"
+"PO-Revision-Date: 2020-07-21 08:41+0000\n"
 "Last-Translator: Mieru <sanna+hw@dismail.de>\n"
 "Language-Team: Japanese <https://hosted.weblate.org/projects/andors-trail/"
 "game-content/ja/>\n"
@@ -35,11 +35,11 @@ msgstr "力"
 
 #: actorconditions_v069.json:regen
 msgid "Shadow Regeneration"
-msgstr ""
+msgstr "シャドウの継続回復"
 
 #: actorconditions_v069_bwm.json:speed_minor
 msgid "Minor speed"
-msgstr "敏捷性(弱)"
+msgstr "速度(弱)"
 
 #: actorconditions_v069_bwm.json:fatigue_minor
 msgid "Minor fatigue"
@@ -91,15 +91,15 @@ msgstr "スタン"
 
 #: actorconditions_v0611.json:focus_dmg
 msgid "Focused damage"
-msgstr "焦点を当てたダメージ"
+msgstr "ダメージ重視"
 
 #: actorconditions_v0611.json:focus_ac
 msgid "Focused accuracy"
-msgstr "フォーカス精度"
+msgstr "命中重視"
 
 #: actorconditions_v0611.json:poison_irdegh
 msgid "Irdegh poison"
-msgstr "Irdegh 毒"
+msgstr "Irdegh毒"
 
 #: actorconditions_v0611_2.json:rotworm
 msgid "Kazaul rotworms"
@@ -111,11 +111,11 @@ msgstr "シャドウの力の祝福"
 
 #: actorconditions_v0611_2.json:shadowbless_heal
 msgid "Blessing of Shadow regeneration"
-msgstr "シャドウの再生の祝福"
+msgstr "シャドウの継続回復の祝福"
 
 #: actorconditions_v0611_2.json:shadowbless_acc
 msgid "Blessing of Shadow accuracy"
-msgstr "シャドウの精度の祝福"
+msgstr "シャドウの命中の祝福"
 
 #: actorconditions_v0611_2.json:shadowbless_guard
 msgid "Shadow guardian blessing"
@@ -175,15 +175,15 @@ msgstr "硬化"
 
 #: actorconditions_v070.json:shadow_acc
 msgid "Shadow's accuracy"
-msgstr ""
+msgstr "シャドウの命中"
 
 #: actorconditions_v070.json:shadow_prot
 msgid "Shadow's protection"
-msgstr ""
+msgstr "シャドウの守り"
 
 #: actorconditions_v070.json:shadow_dmg
 msgid "Shadow's strength"
-msgstr ""
+msgstr "シャドウの力"
 
 #: actorconditions_v070.json:haste
 msgid "Haste"
@@ -243,7 +243,7 @@ msgstr ""
 
 #: actorconditions_trader_teksin.json:poison_irdegh_weak
 msgid "Weak irdegh poison"
-msgstr ""
+msgstr "irdegh毒(弱)"
 
 #: actorconditions_trader_teksin.json:light_attack
 msgid "Lightning attack"
@@ -37498,7 +37498,7 @@ msgstr "ロングソード"
 
 #: itemcategories_1.json:2hsword
 msgid "Two-handed sword"
-msgstr "両手剣"
+msgstr "ツーハンドソード"
 
 #: itemcategories_1.json:bsword
 msgid "Broadsword"
@@ -37781,11 +37781,11 @@ msgstr "クロースシャツ"
 
 #: itemlist_armour.json:shirt2
 msgid "Fine shirt"
-msgstr "立派なシャツ"
+msgstr "高級シャツ"
 
 #: itemlist_armour.json:shirt_dmgresist
 msgid "Hardened leather shirt"
-msgstr "ハードレザーシャツ"
+msgstr "硬化レザーシャツ"
 
 #: itemlist_armour.json:armor1
 msgid "Leather armour"
@@ -37793,7 +37793,7 @@ msgstr "レザーアーマー"
 
 #: itemlist_armour.json:armor2
 msgid "Superior leather armor"
-msgstr "優れたレザーアーマー"
+msgstr "良質なレザーアーマー"
 
 #: itemlist_armour.json:armor3
 msgid "Hard leather armor"
@@ -37801,7 +37801,7 @@ msgstr "ハードレザーアーマー"
 
 #: itemlist_armour.json:armor4
 msgid "Superior hard leather armor"
-msgstr "優れたハードレザーアーマー"
+msgstr "良質なハードレザーアーマー"
 
 #: itemlist_armour.json:hat1
 msgid "Green hat"
@@ -37809,7 +37809,7 @@ msgstr "グリーンハット"
 
 #: itemlist_armour.json:hat2
 msgid "Fine green hat"
-msgstr "立派なグリーンハット"
+msgstr "高級グリーンハット"
 
 #: itemlist_armour.json:hat3
 msgid "Crude leather cap"
@@ -37825,7 +37825,7 @@ msgstr "レザーグローブ"
 
 #: itemlist_armour.json:gloves2
 msgid "Fine leather gloves"
-msgstr "立派なレザーグローブ"
+msgstr "高級レザーグローブ"
 
 #: itemlist_armour.json:gloves3
 msgid "Snakeskin gloves"
@@ -37833,7 +37833,7 @@ msgstr "スネークスキングローブ"
 
 #: itemlist_armour.json:gloves4
 msgid "Fine snakeskin gloves"
-msgstr "立派なスネークスキングローブ"
+msgstr "高級スネークスキングローブ"
 
 #: itemlist_armour.json:shield1
 msgid "Wooden buckler"
@@ -37857,7 +37857,7 @@ msgstr "レザーブーツ"
 
 #: itemlist_armour.json:boots2
 msgid "Superior leather boots"
-msgstr "優れたレザーブーツ"
+msgstr "良質なレザーブーツ"
 
 #: itemlist_armour.json:boots3
 msgid "Snakeskin boots"
@@ -37869,11 +37869,11 @@ msgstr "強化ブーツ"
 
 #: itemlist_armour.json:gloves_attack1
 msgid "Gloves of swift attack"
-msgstr "速攻のグローブ"
+msgstr "速攻グローブ"
 
 #: itemlist_armour.json:gloves_attack2
 msgid "Fine gloves of swift attack"
-msgstr "立派な速攻のグローブ"
+msgstr "高級速攻グローブ"
 
 #: itemlist_rings.json:ring_dmg1
 msgid "Ring of damage +1"
@@ -37901,7 +37901,7 @@ msgstr "磨かれたブロックリング"
 
 #: itemlist_rings.json:ring_atkch1
 msgid "Ring of surehit"
-msgstr "必中のリング"
+msgstr "必中リング"
 
 #: itemlist_rings.json:ring1
 msgid "Mundane ring"
@@ -38205,14 +38205,16 @@ msgstr "レッサーシャドウリング"
 #: itemlist_v068.json:ring_shadow0:description
 msgid "The glow of the Shadow guides my path. It follows me wherever I go, and aids me against the dangers that others might not see. I am Shadow, and Shadow is in me."
 msgstr ""
+"シャドウの輝きは我が道を導く。それはどこへ行くとも追蹤し、他の者には見えないであろう危険よりこの身を守ってくれる。 "
+"我はシャドウであり、シャドウは我が内にある。"
 
 #: itemlist_v069.json:rapier_lifesteal
 msgid "Rapier of lifesteal"
-msgstr ""
+msgstr "ライフスティールレイピア"
 
 #: itemlist_v069.json:dagger_barbed
 msgid "Barbed dagger"
-msgstr ""
+msgstr "バーブドダガー"
 
 #: itemlist_v069.json:elytharan_redeemer
 msgid "Elytharan redeemer"
@@ -38220,7 +38222,7 @@ msgstr ""
 
 #: itemlist_v069.json:clouded_rage
 msgid "Sword of Shadow's rage"
-msgstr ""
+msgstr "シャドウの怒りの剣"
 
 #: itemlist_v069.json:shadow_slayer
 msgid "Shadow of the slayer"
@@ -38228,75 +38230,75 @@ msgstr ""
 
 #: itemlist_v069.json:ring_shadow_embrace
 msgid "Ring of Shadow embrace"
-msgstr ""
+msgstr "シャドウの抱擁のリング"
 
 #: itemlist_v069.json:bwm_dagger
 msgid "Blackwater dagger"
-msgstr ""
+msgstr "Blackwaterダガー"
 
 #: itemlist_v069.json:bwm_dagger_venom
 msgid "Blackwater poisoned dagger"
-msgstr ""
+msgstr "Blackwaterポイズンダガー"
 
 #: itemlist_v069.json:bwm_ironsword
 msgid "Blackwater iron sword"
-msgstr ""
+msgstr "Blackwaterアイアンソード"
 
 #: itemlist_v069.json:bwm_leather_armour
 msgid "Blackwater leather armor"
-msgstr ""
+msgstr "Blackwaterレザーアーマー"
 
 #: itemlist_v069.json:bwm_leather_cap
 msgid "Blackwater leather cap"
-msgstr ""
+msgstr "Blackwaterレザーキャップ"
 
 #: itemlist_v069.json:bwm_combat_ring
 msgid "Blackwater ring of combat"
-msgstr ""
+msgstr "Blackwaterコンバットリング"
 
 #: itemlist_v069.json:bwm_brew
 msgid "Blackwater brew"
-msgstr ""
+msgstr "Blackwaterビール"
 
 #: itemlist_v069.json:woodcutter_hatchet
 msgid "Woodcutter's hatchet"
-msgstr ""
+msgstr "きこりの手斧"
 
 #: itemlist_v069.json:woodcutter_boots
 msgid "Woodcutter's boots"
-msgstr ""
+msgstr "きこりのブーツ"
 
 #: itemlist_v069.json:heavy_club
 msgid "Heavy club"
-msgstr ""
+msgstr "ヘビークラブ"
 
 #: itemlist_v069.json:pot_speed_1
 msgid "Minor potion of speed"
-msgstr ""
+msgstr "速度のマイナーポーション"
 
 #: itemlist_v069.json:pot_poison_weak
 msgid "Weak poison"
-msgstr ""
+msgstr "毒"
 
 #: itemlist_v069.json:pot_poison_weak_antidote
 msgid "Weak poison antidote"
-msgstr ""
+msgstr "毒の解毒薬"
 
 #: itemlist_v069.json:pot_bleeding_ointment
 msgid "Ointment of bleeding wounds"
-msgstr ""
+msgstr "出血の軟膏"
 
 #: itemlist_v069.json:pot_fatigue_restore
 msgid "Restore fatigue"
-msgstr ""
+msgstr "疲労回復"
 
 #: itemlist_v069.json:pot_blind_rage
 msgid "Potion of blind rage"
-msgstr ""
+msgstr "盲目の怒りのポーション"
 
 #: itemlist_v069_questitems.json:bwm_claws
 msgid "White wyrm claw"
-msgstr ""
+msgstr "ホワイトワームの爪"
 
 #: itemlist_v069_questitems.json:bwm_permit
 msgid "Forged papers for Blackwater"
@@ -38304,7 +38306,7 @@ msgstr ""
 
 #: itemlist_v069_questitems.json:bjorgur_dagger
 msgid "Bjorgur's family dagger"
-msgstr ""
+msgstr "Bjorgur家のダガー"
 
 #: itemlist_v069_questitems.json:q_kazaul_vial
 msgid "Vial of purifying spirit"
@@ -38312,175 +38314,175 @@ msgstr ""
 
 #: itemlist_v069_questitems.json:guthbered_id
 msgid "Guthbered's ring"
-msgstr ""
+msgstr "Guthberedのリング"
 
 #: itemlist_v069_questitems.json:harlenn_id
 msgid "Harlenn's ring"
-msgstr ""
+msgstr "Harlennのリング"
 
 #: itemlist_v069_2.json:rusted_iron_sword
 msgid "Rusted iron sword"
-msgstr ""
+msgstr "錆びたアイアンソード"
 
 #: itemlist_v069_2.json:broken_buckler
 msgid "Broken wooden buckler"
-msgstr ""
+msgstr "壊れたウッドバックラー"
 
 #: itemlist_v069_2.json:used_gloves
 msgid "Blood-stained gloves"
-msgstr ""
+msgstr "血塗れのグローブ"
 
 #: itemlist_v0610_1.json:gloves_critical
 msgid "Assassin's gloves"
-msgstr ""
+msgstr "アサシングローブ"
 
 #: itemlist_v0610_1.json:robe_protector
 msgid "Robe of the protector"
-msgstr ""
+msgstr "プロテクターローブ"
 
 #: itemlist_v0610_1.json:dagger_shadow_priests
 msgid "Dagger of the Shadow priests"
-msgstr ""
+msgstr "シャドウプリーストダガー"
 
 #: itemlist_v0610_1.json:sword_hard_iron
 msgid "Hardened iron sword"
-msgstr ""
+msgstr "硬化アイアンソード"
 
 #: itemlist_v0610_1.json:club_fine_wooden
 msgid "Fine wooden club"
-msgstr ""
+msgstr "高級ウッドクラブ"
 
 #: itemlist_v0610_1.json:axe_fine_iron
 msgid "Fine iron axe"
-msgstr ""
+msgstr "高級アイアンアックス"
 
 #: itemlist_v0610_1.json:longsword_hard_iron
 msgid "Hardened iron longsword"
-msgstr ""
+msgstr "硬化アイアンロングソード"
 
 #: itemlist_v0610_1.json:broadsword_fine_iron
 msgid "Fine iron broadsword"
-msgstr ""
+msgstr "高級アイアンブロードソード"
 
 #: itemlist_v0610_1.json:dagger_sharp_steel
 msgid "Sharp steel dagger"
-msgstr ""
+msgstr "シャープスチールダガー"
 
 #: itemlist_v0610_1.json:sword_balanced_steel
 msgid "Balanced steel sword"
-msgstr ""
+msgstr "バランスのとれたスチールソード"
 
 #: itemlist_v0610_1.json:broadsword_fine_steel
 msgid "Fine steel broadsword"
-msgstr ""
+msgstr "高級スチールブロードソード"
 
 #: itemlist_v0610_1.json:sword_defenders
 msgid "Defender's blade"
-msgstr ""
+msgstr "ディフェンダーブレード"
 
 #: itemlist_v0610_1.json:sword_villains
 msgid "Villain's blade"
-msgstr ""
+msgstr "ヴィランブレード"
 
 #: itemlist_v0610_1.json:sword_challengers
 msgid "Challenger's iron sword"
-msgstr ""
+msgstr "挑戦者のアイアンソード"
 
 #: itemlist_v0610_1.json:sword_fencing
 msgid "Fencing blade"
-msgstr ""
+msgstr "フェンシングブレード"
 
 #: itemlist_v0610_1.json:club_brutal
 msgid "Brutal club"
-msgstr ""
+msgstr "残忍なクラブ"
 
 #: itemlist_v0610_1.json:axe_gutsplitter
 msgid "Gutsplitter"
-msgstr ""
+msgstr "ガットスプリッター"
 
 #: itemlist_v0610_1.json:hammer_skullcrusher
 msgid "Skullcrusher"
-msgstr ""
+msgstr "スカルクラッシャー"
 
 #: itemlist_v0610_1.json:shield_crude_wooden
 msgid "Crude wooden buckler"
-msgstr ""
+msgstr "粗悪なウッドバックラー"
 
 #: itemlist_v0610_1.json:shield_cracked_wooden
 msgid "Cracked wooden buckler"
-msgstr ""
+msgstr "罅割れたウッドバックラー"
 
 #: itemlist_v0610_1.json:shield_wooden_buckler
 msgid "Second-hand wooden buckler"
-msgstr ""
+msgstr "中古のウッドバックラー"
 
 #: itemlist_v0610_1.json:shield_wooden
 msgid "Wooden shield"
-msgstr ""
+msgstr "ウッドシールド"
 
 #: itemlist_v0610_1.json:shield_wooden_defender
 msgid "Wooden defender"
-msgstr ""
+msgstr "ウッドディフェンダー"
 
 #: itemlist_v0610_1.json:hat_hard_leather
 msgid "Hardened leather cap"
-msgstr ""
+msgstr "硬化レザーキャップ"
 
 #: itemlist_v0610_1.json:hat_fine_leather
 msgid "Fine leather cap"
-msgstr ""
+msgstr "高級レザーキャップ"
 
 #: itemlist_v0610_1.json:hat_leather_vision
 msgid "Leather cap of reduced vision"
-msgstr ""
+msgstr "視力低下のレザーキャップ"
 
 #: itemlist_v0610_1.json:helm_crude_iron
 msgid "Crude iron helmet"
-msgstr ""
+msgstr "粗悪なアイアンヘルメット"
 
 #: itemlist_v0610_1.json:shirt_torn
 msgid "Torn shirt"
-msgstr ""
+msgstr "破れたシャツ"
 
 #: itemlist_v0610_1.json:shirt_weathered
 msgid "Weathered shirt"
-msgstr ""
+msgstr "風化シャツ"
 
 #: itemlist_v0610_1.json:shirt_patched_cloth
 msgid "Patched cloth shirt"
-msgstr ""
+msgstr "つぎはぎのクロースシャツ"
 
 #: itemlist_v0610_1.json:armour_crude_leather
 msgid "Crude leather armor"
-msgstr ""
+msgstr "粗悪なレザーアーマー"
 
 #: itemlist_v0610_1.json:armour_firm_leather
 msgid "Firm leather armor"
-msgstr ""
+msgstr "しっかりとしたレザーアーマー"
 
 #: itemlist_v0610_1.json:armour_rigid_leather
 msgid "Rigid leather armor"
-msgstr ""
+msgstr "硬質なレザーアーマー"
 
 #: itemlist_v0610_1.json:armour_rigid_chain
 msgid "Rigid chain mail"
-msgstr ""
+msgstr "硬質なチェインメイル"
 
 #: itemlist_v0610_1.json:armour_superior_chain
 msgid "Superior chain mail"
-msgstr ""
+msgstr "良質なチェインメイル"
 
 #: itemlist_v0610_1.json:armour_chain_champ
 msgid "Champion's chain mail"
-msgstr ""
+msgstr "チャンピオンチェインメイル"
 
 #: itemlist_v0610_1.json:armour_leather_villain
 msgid "Villain's leather armor"
-msgstr ""
+msgstr "ヴィランレザーアーマー"
 
 #: itemlist_v0610_1.json:armour_misfortune
 msgid "Leather shirt of misfortune"
-msgstr ""
+msgstr "不幸のレザーシャツ"
 
 #: itemlist_v0610_1.json:gloves_barbrawler
 msgid "Bar brawler's gloves"
@@ -38488,95 +38490,95 @@ msgstr ""
 
 #: itemlist_v0610_1.json:gloves_fumbling
 msgid "Gloves of fumbling"
-msgstr ""
+msgstr "ファンブルグローブ"
 
 #: itemlist_v0610_1.json:gloves_crude_cloth
 msgid "Crude cloth gloves"
-msgstr ""
+msgstr "粗悪なクロースグローブ"
 
 #: itemlist_v0610_1.json:gloves_crude_leather
 msgid "Crude leather gloves"
-msgstr ""
+msgstr "粗悪なレザーグローブ"
 
 #: itemlist_v0610_1.json:gloves_troublemaker
 msgid "Troublemaker's gloves"
-msgstr ""
+msgstr "トラブルメーカーグローブ"
 
 #: itemlist_v0610_1.json:gloves_troublemaker:description
 msgid "In Lower Fallhaven there is honor among thieves. Everyone else is a mark."
-msgstr ""
+msgstr "Lower Fallhavenでは、盗賊には名誉がある。他の人々は目印だ。"
 
 #: itemlist_v0610_1.json:gloves_guards
 msgid "Guard's gloves"
-msgstr ""
+msgstr "ガードグローブ"
 
 #: itemlist_v0610_1.json:gloves_leather_attack
 msgid "Leather gloves of attack"
-msgstr ""
+msgstr "アタックレザーグローブ"
 
 #: itemlist_v0610_1.json:gloves_woodcutter
 msgid "Woodcutter's gloves"
-msgstr ""
+msgstr "きこりのグローブ"
 
 #: itemlist_v0610_1.json:boots_crude_leather
 msgid "Crude leather boots"
-msgstr ""
+msgstr "粗悪なレザーブーツ"
 
 #: itemlist_v0610_1.json:boots_sewn
 msgid "Sewn footwear"
-msgstr ""
+msgstr "縫製履物"
 
 #: itemlist_v0610_1.json:boots_coward
 msgid "Coward's boots"
-msgstr ""
+msgstr "臆病者のブーツ"
 
 #: itemlist_v0610_1.json:boots_hard_leather
 msgid "Hardened leather boots"
-msgstr ""
+msgstr "硬化レザーブーツ"
 
 #: itemlist_v0610_1.json:boots_defender
 msgid "Defender's boots"
-msgstr ""
+msgstr "ディフェンダーブーツ"
 
 #: itemlist_v0610_1.json:necklace_shield_0
 msgid "Lesser shielding necklace"
-msgstr ""
+msgstr "レッサーシールドネックレス"
 
 #: itemlist_v0610_1.json:necklace_strike
 msgid "Necklace of strike"
-msgstr ""
+msgstr "ストライクネックレス"
 
 #: itemlist_v0610_1.json:necklace_defender_stone
 msgid "Defender's stone"
-msgstr ""
+msgstr "ディフェンダーストーン"
 
 #: itemlist_v0610_1.json:necklace_protector
 msgid "Necklace of the protector"
-msgstr ""
+msgstr "守りのネックレス"
 
 #: itemlist_v0610_1.json:ring_crude_combat
 msgid "Crude combat ring"
-msgstr ""
+msgstr "粗悪なコンバットリング"
 
 #: itemlist_v0610_1.json:ring_crude_surehit
 msgid "Crude ring of surehit"
-msgstr ""
+msgstr "粗悪な必中リング"
 
 #: itemlist_v0610_1.json:ring_crude_block
 msgid "Crude ring of block"
-msgstr ""
+msgstr "粗悪なブロックリング"
 
 #: itemlist_v0610_1.json:ring_rough_life
 msgid "Rough ring of life force"
-msgstr ""
+msgstr "粗い生命のリング"
 
 #: itemlist_v0610_1.json:ring_fumbling
 msgid "Ring of fumbling"
-msgstr ""
+msgstr "ファンブルリング"
 
 #: itemlist_v0610_1.json:ring_rough_damage
 msgid "Rough ring of damage"
-msgstr ""
+msgstr "粗いダメージリング"
 
 #: itemlist_v0610_1.json:ring_barbrawler
 msgid "Bar brawler's ring"
@@ -38584,11 +38586,11 @@ msgstr ""
 
 #: itemlist_v0610_1.json:ring_dmg_3
 msgid "Ring of damage +3"
-msgstr ""
+msgstr "ダメージリング+3"
 
 #: itemlist_v0610_1.json:ring_life
 msgid "Ring of life force"
-msgstr ""
+msgstr "生命のリング"
 
 #: itemlist_v0610_1.json:ring_taverbrawler
 msgid "Tavern brawler's ring"
@@ -38596,215 +38598,215 @@ msgstr ""
 
 #: itemlist_v0610_1.json:ring_defender
 msgid "Defender's ring"
-msgstr ""
+msgstr "ディフェンダーリング"
 
 #: itemlist_v0610_1.json:ring_challenger
 msgid "Challenger's ring"
-msgstr ""
+msgstr "挑戦者のリング"
 
 #: itemlist_v0610_1.json:ring_dmg_4
 msgid "Ring of damage +4"
-msgstr ""
+msgstr "ダメージリング+4"
 
 #: itemlist_v0610_1.json:ring_troublemaker
 msgid "Troublemaker's ring"
-msgstr ""
+msgstr "トラブルメーカーリング"
 
 #: itemlist_v0610_1.json:ring_guardian
 msgid "Ring of the guardian"
-msgstr ""
+msgstr "守護者のリング"
 
 #: itemlist_v0610_1.json:ring_block
 msgid "Ring of block"
-msgstr ""
+msgstr "ブロックリング"
 
 #: itemlist_v0610_1.json:ring_backstab
 msgid "Ring of backstabbing"
-msgstr ""
+msgstr "裏切りのリング"
 
 #: itemlist_v0610_1.json:ring_polished_combat
 msgid "Polished combat ring"
-msgstr ""
+msgstr "磨かれたコンバットリング"
 
 #: itemlist_v0610_1.json:ring_villain
 msgid "Villain's ring"
-msgstr ""
+msgstr "ヴィランリング"
 
 #: itemlist_v0610_1.json:ring_polished_backstab
 msgid "Polished ring of backstabbing"
-msgstr ""
+msgstr "磨かれた裏切りのリング"
 
 #: itemlist_v0610_1.json:ring_protector
 msgid "Ring of the protector"
-msgstr ""
+msgstr "守りのリング"
 
 #: itemlist_v0610_2.json:erinith_book
 msgid "Erinith's book"
-msgstr ""
+msgstr "Erinithの本"
 
 #: itemlist_v0610_2.json:hadracor_waspwing
 msgid "Giant wasp wing"
-msgstr ""
+msgstr "巨大雀蜂の翅"
 
 #: itemlist_v0610_2.json:tinlyn_bells
 msgid "Tinlyn's sheep bell"
-msgstr ""
+msgstr "Tinlynの羊の鈴"
 
 #: itemlist_v0610_2.json:tinlyn_sheep_meat
 msgid "Meat from Tinlyn's sheep"
-msgstr ""
+msgstr "Tinlynの羊の肉"
 
 #: itemlist_v0610_2.json:rogorn_qitem
 msgid "Piece of painting"
-msgstr ""
+msgstr "絵画のピース"
 
 #: itemlist_v0610_2.json:fg_ironsword
 msgid "Feygard iron sword"
-msgstr ""
+msgstr "Feygardアイアンソード"
 
 #: itemlist_v0610_2.json:fg_ironsword_d
 msgid "Degraded Feygard iron sword"
-msgstr ""
+msgstr "劣化したFeygardアイアンソード"
 
 #: itemlist_v0610_2.json:buceth_vial
 msgid "Buceth's vial of green liquid"
-msgstr ""
+msgstr "Bucethの緑の液体バイアル"
 
 #: itemlist_v0610_2.json:chaosreaper
 msgid "Chaosreaper"
-msgstr ""
+msgstr "カオスリーパー"
 
 #: itemlist_v0610_2.json:izthiel_claw
 msgid "Izthiel claw"
-msgstr ""
+msgstr "Izthielの爪"
 
 #: itemlist_v0610_2.json:iqhan_pendant
 msgid "Iqhan pendant"
-msgstr ""
+msgstr "Iqhanのペンダント"
 
 #: itemlist_v0610_2.json:shadowfang
 msgid "Shadowfang"
-msgstr ""
+msgstr "シャドウファング"
 
 #: itemlist_v0610_2.json:gloves_life
 msgid "Gloves of life force"
-msgstr ""
+msgstr "生命のグローブ"
 
 #: itemlist_v0611_1.json:pot_focus_dmg
 msgid "Potion of damage focus"
-msgstr ""
+msgstr "ダメージ重視のポーション"
 
 #: itemlist_v0611_1.json:pot_focus_dmg2
 msgid "Strong potion of damage focus"
-msgstr ""
+msgstr "強力なダメージ重視のポーション"
 
 #: itemlist_v0611_1.json:pot_focus_ac
 msgid "Potion of accuracy focus"
-msgstr ""
+msgstr "命中重視のポーション"
 
 #: itemlist_v0611_1.json:pot_focus_ac2
 msgid "Strong potion of accuracy focus"
-msgstr ""
+msgstr "強力な命中重視のポーション"
 
 #: itemlist_v0611_1.json:pot_scaradon
 msgid "Scaradon extract"
-msgstr ""
+msgstr "Scaradonエキス"
 
 #: itemlist_v0611_1.json:remgard_shield_1
 msgid "Remgard shield"
-msgstr ""
+msgstr "Remgardシールド"
 
 #: itemlist_v0611_1.json:remgard_shield_2
 msgid "Remgard combat shield"
-msgstr ""
+msgstr "Remgardコンバットリング"
 
 #: itemlist_v0611_1.json:helm_combat1
 msgid "Combat helm"
-msgstr ""
+msgstr "コンバットヘルム"
 
 #: itemlist_v0611_1.json:helm_combat2
 msgid "Enhanced combat helmet"
-msgstr ""
+msgstr "強化コンバットヘルム"
 
 #: itemlist_v0611_1.json:helm_combat3
 msgid "Remgard combat helmet"
-msgstr ""
+msgstr "Remgardコンバットヘルメット"
 
 #: itemlist_v0611_1.json:helm_redeye1
 msgid "Cap of red eyes"
-msgstr ""
+msgstr "レッドアイキャップ"
 
 #: itemlist_v0611_1.json:helm_redeye2
 msgid "Cap of bloody eyes"
-msgstr ""
+msgstr "ブラッドアイキャップ"
 
 #: itemlist_v0611_1.json:helm_defend1
 msgid "Defender's helmet"
-msgstr ""
+msgstr "ディフェンダーヘルメット"
 
 #: itemlist_v0611_1.json:helm_protector0
 msgid "Strange looking helmet"
-msgstr ""
+msgstr "奇妙なヘルメット"
 
 #: itemlist_v0611_1.json:helm_protector
 msgid "Dark protector"
-msgstr ""
+msgstr "ダークプロテクター"
 
 #: itemlist_v0611_1.json:armour_chain_remg
 msgid "Remgard chain mail"
-msgstr ""
+msgstr "Remgardチェインメイル"
 
 #: itemlist_v0611_1.json:armour_cvest1
 msgid "Combat vest"
-msgstr ""
+msgstr "コンバットベスト"
 
 #: itemlist_v0611_1.json:armour_cvest2
 msgid "Remgard combat vest"
-msgstr ""
+msgstr "Remgardコンバットベスト"
 
 #: itemlist_v0611_1.json:gloves_leather1
 msgid "Hardened leather gloves"
-msgstr ""
+msgstr "硬化レザーグローブ"
 
 #: itemlist_v0611_1.json:gloves_arulir
 msgid "Arulir skin gloves"
-msgstr ""
+msgstr "Arulirスキングローブ"
 
 #: itemlist_v0611_1.json:gloves_combat1
 msgid "Combat gloves"
-msgstr ""
+msgstr "コンバットグローブ"
 
 #: itemlist_v0611_1.json:gloves_combat2
 msgid "Enhanced combat gloves"
-msgstr ""
+msgstr "強化コンバットグローブ"
 
 #: itemlist_v0611_1.json:gloves_remgard1
 msgid "Remgard fighting gloves"
-msgstr ""
+msgstr "Remgard戦闘グローブ"
 
 #: itemlist_v0611_1.json:gloves_remgard2
 msgid "Enchanted Remgard gloves"
-msgstr ""
+msgstr "魅惑のRemgardグローブ"
 
 #: itemlist_v0611_1.json:gloves_guard1
 msgid "Gloves of the guardian"
-msgstr ""
+msgstr "守護者のグローブ"
 
 #: itemlist_v0611_1.json:boots_combat1
 msgid "Combat boots"
-msgstr ""
+msgstr "コンバットブーツ"
 
 #: itemlist_v0611_1.json:boots_combat2
 msgid "Enhanced combat boots"
-msgstr ""
+msgstr "強化コンバットブーツ"
 
 #: itemlist_v0611_1.json:boots_remgard1
 msgid "Remgard boots"
-msgstr ""
+msgstr "Remgardブーツ"
 
 #: itemlist_v0611_1.json:boots_guard1
 msgid "Boots of the guardian"
-msgstr ""
+msgstr "守護者のブーツ"
 
 #: itemlist_v0611_1.json:boots_brawler
 msgid "Bar brawler's boots"
@@ -38816,44 +38818,44 @@ msgstr ""
 
 #: itemlist_v0611_1.json:valugha_gown
 msgid "Silk robe of Valugha"
-msgstr ""
+msgstr "Valughaのシルクローブ"
 
 #: itemlist_v0611_1.json:valugha_hat
 msgid "Valugha's shimmering hat"
-msgstr ""
+msgstr "Valughaの煌めく帽子"
 
 #: itemlist_v0611_1.json:hat_crit
 msgid "Woodcutter's feathered hat"
-msgstr ""
+msgstr "きこりの羽帽子"
 
 #: itemlist_v0611_2.json:thorin_bone
 msgid "Chewed bone"
-msgstr ""
+msgstr "噛まれた骨"
 
 #: itemlist_v0611_2.json:spider
 msgid "Dead spider"
-msgstr ""
+msgstr "死んだ蜘蛛"
 
 #: itemlist_v0611_2.json:irdegh
 msgid "Irdegh poison gland"
-msgstr ""
+msgstr "Irdeghの毒腺"
 
 #: itemlist_v0611_2.json:arulir_skin
 msgid "Arulir skin"
-msgstr ""
+msgstr "Arulirの皮"
 
 #: itemlist_v0611_2.json:algangror_rat
 msgid "Strange looking rat tail"
-msgstr ""
+msgstr "奇妙なネズミの尾"
 
 #: itemlist_v0611_2.json:oegyth
 msgid "Oegyth crystal"
-msgstr ""
+msgstr "Oegythクリスタル"
 
 #: itemlist_v0611_2.json:toszylae_heart
 #: itemlist_stoutford.json:eliszylae_heart
 msgid "Demon heart"
-msgstr ""
+msgstr "デーモンハート"
 
 #: itemlist_v0611_2.json:potion_rotworm
 msgid "Kazaul rotworm"
@@ -38861,7 +38863,7 @@ msgstr ""
 
 #: itemlist_v0611_3.json:lyson_marrow
 msgid "Vial of Lyson marrow extract"
-msgstr ""
+msgstr "Lyson骨髄エキスのバイアル"
 
 #: itemlist_v0611_3.json:algangror_idol
 msgid "Small idol"
@@ -38869,7 +38871,7 @@ msgstr ""
 
 #: itemlist_v0611_3.json:algangror_ring
 msgid "Algangror's ring"
-msgstr ""
+msgstr "Algangrorのリング"
 
 #: itemlist_v0611_3.json:kaverin_message
 msgid "Kaverin's sealed message"
@@ -38877,135 +38879,135 @@ msgstr ""
 
 #: itemlist_v0611_3.json:vacor_map
 msgid "Map to Vacor's old hideout"
-msgstr ""
+msgstr "Vacorの古い隠れ家の地図"
 
 #: itemlist_v070.json:ltbdy_lthr
 msgid "Sturdy leather cuirass"
-msgstr ""
+msgstr "丈夫なレザーキュイラス"
 
 #: itemlist_v070.json:ltbdy_chmail
 msgid "Lightweight chainmail"
-msgstr ""
+msgstr "軽いチェインメイル"
 
 #: itemlist_v070.json:ltbdy_spmail
 msgid "Lightweight splint mail"
-msgstr ""
+msgstr "軽いスプリントメイル"
 
 #: itemlist_v070.json:haub_serp
 msgid "Serpent's hauberk"
-msgstr ""
+msgstr "蛇の鎖帷子"
 
 #: itemlist_v070.json:chmail2
 msgid "Worn chainmail"
-msgstr ""
+msgstr "使い古しのチェインメイル"
 
 #: itemlist_v070.json:hvbdy_rust
 msgid "Rusty heavy cuirass"
-msgstr ""
+msgstr "錆びたヘビーキュイラス"
 
 #: itemlist_v070.json:spmail2
 msgid "Worn splint mail"
-msgstr ""
+msgstr "使い古しのスプリントメイル"
 
 #: itemlist_v070.json:shdstlk
 msgid "Shadowstalker"
-msgstr ""
+msgstr "シャドウストーカー"
 
 #: itemlist_v070.json:hvhead_irn
 msgid "Heavy iron skullcap"
-msgstr ""
+msgstr "ヘビーアイアンスカルキャップ"
 
 #: itemlist_v070.json:hvhead_stl
 msgid "Heavy steel skullcap"
-msgstr ""
+msgstr "ヘビースチールスカルキャップ"
 
 #: itemlist_v070.json:hglv_plat1
 msgid "Worn plated gloves"
-msgstr ""
+msgstr "使い古しのプレートグローブ"
 
 #: itemlist_v070.json:hglv_irn
 msgid "Heavy iron gloves"
-msgstr ""
+msgstr "ヘビーアイアングローブ"
 
 #: itemlist_v070.json:hglv_chml
 msgid "Chainmail mittens"
-msgstr ""
+msgstr "チェインメイルミトン"
 
 #: itemlist_v070.json:hglv_stl
 msgid "Reinforced steel gloves"
-msgstr ""
+msgstr "強化スチールグローブ"
 
 #: itemlist_v070.json:hglv_plat2
 msgid "Heavy plated gloves"
-msgstr ""
+msgstr "ヘビープレートグローブ"
 
 #: itemlist_v070.json:hboot_wirn
 msgid "Worn iron boots"
-msgstr ""
+msgstr "使い古しのアイアンブーツ"
 
 #: itemlist_v070.json:hboot_irn
 msgid "Heavy iron boots"
-msgstr ""
+msgstr "ヘビーアイアンブーツ"
 
 #: itemlist_v070.json:hboot_plat
 msgid "Heavy plated boots"
-msgstr ""
+msgstr "ヘビープレートブーツ"
 
 #: itemlist_v070.json:clmr_dl
 msgid "Dull two-handed sword"
-msgstr ""
+msgstr "鈍らのツーハンドソード"
 
 #: itemlist_v070.json:clmr_rst
 msgid "Rusty claymore"
-msgstr ""
+msgstr "錆びたクレイモア"
 
 #: itemlist_v070.json:clmr_irn1
 msgid "Two-handed iron sword"
-msgstr ""
+msgstr "アイアンツーハンドソード"
 
 #: itemlist_v070.json:clmr_stl
 msgid "Two-handed steel sword"
-msgstr ""
+msgstr "スチールツーハンドソード"
 
 #: itemlist_v070.json:clmr_irn2
 msgid "Two-handed iron claymore"
-msgstr ""
+msgstr "アイアンツーハンドクレイモア"
 
 #: itemlist_v070.json:clmr_bers
 msgid "Claymore of the berserker"
-msgstr ""
+msgstr "狂戦士のクレイモア"
 
 #: itemlist_v070.json:clmr_msv
 msgid "Massive two-handed sword"
-msgstr ""
+msgstr "巨大なツーハンドソード"
 
 #: itemlist_v070.json:clmr_def1
 msgid "Defender's claymore"
-msgstr ""
+msgstr "ディフェンダークレイモア"
 
 #: itemlist_v070.json:clmr_def2
 msgid "Superior defender's claymore"
-msgstr ""
+msgstr "良質なディフェンダークレイモア"
 
 #: itemlist_v070.json:clmr_gnt
 msgid "Giant's claymore"
-msgstr ""
+msgstr "巨人のクレイモア"
 
 #: itemlist_v070.json:clmr_serp
 msgid "Serpent's fang"
-msgstr ""
+msgstr "蛇の牙"
 
 #: itemlist_v070.json:clmr_wrld
 msgid "Claymore of the warlord"
-msgstr ""
+msgstr "将軍のクレイモア"
 
 #: itemlist_v070.json:clmr_ruin
 msgid "Gleaming claymore of ruin"
-msgstr ""
+msgstr "破滅の煌めくクレイモア"
 
 #: itemlist_v070.json:clmr_wrmas
 msgid "Wraith's massive claymore"
-msgstr ""
+msgstr "死霊の巨大なクレイモア"
 
 #: itemlist_v070.json:xulviir
 msgid "Xul'viir"
@@ -39013,179 +39015,179 @@ msgstr ""
 
 #: itemlist_v070.json:club_bld
 msgid "Spiked club of bleeding"
-msgstr ""
+msgstr "出血のスパイククラブ"
 
 #: itemlist_v070.json:mace_iron
 msgid "Iron mace"
-msgstr ""
+msgstr "アイアンメイス"
 
 #: itemlist_v070.json:hmr_iron
 msgid "Iron war hammer"
-msgstr ""
+msgstr "アイアンウォーハンマー"
 
 #: itemlist_v070.json:scptr_runed
 msgid "Runed scepter"
-msgstr ""
+msgstr "ルーンセプター"
 
 #: itemlist_v070.json:hmr_olwyns
 msgid "Olwyn's curse"
-msgstr ""
+msgstr "Olwynの呪い"
 
 #: itemlist_v070.json:daggr_bloodlet
 msgid "Bloodletter"
-msgstr ""
+msgstr "ブラッドレター"
 
 #: itemlist_v070.json:daggr_curv
 msgid "Curved dagger"
-msgstr ""
+msgstr "湾曲したダガー"
 
 #: itemlist_v070.json:blade_defiler
 msgid "Blade of the defiler"
-msgstr ""
+msgstr "穢者のブレード"
 
 #: itemlist_v070.json:axe_black1
 msgid "Black axe"
-msgstr ""
+msgstr "ブラックアックス"
 
 #: itemlist_v070.json:graxe_fury
 msgid "Greataxe of fury"
-msgstr ""
+msgstr "怒りのグレートアックス"
 
 #: itemlist_v070.json:axe_black2
 msgid "Reinforced black axe"
-msgstr ""
+msgstr "強化ブラックアックス"
 
 #: itemlist_v070.json:axe_fear
 msgid "Axe of fear"
-msgstr ""
+msgstr "恐怖のアックス"
 
 #: itemlist_v070.json:graxe_black
 msgid "Black greataxe"
-msgstr ""
+msgstr "ブラックグレートアックス"
 
 #: itemlist_v070.json:graxe_massive
 msgid "Massive greataxe"
-msgstr ""
+msgstr "巨大なグレートアックス"
 
 #: itemlist_v070.json:hatchet_sharp
 msgid "Sharpened hatchet"
-msgstr ""
+msgstr "研がれた手斧"
 
 #: itemlist_v070.json:axe_whirl
 msgid "Axe of whirlwind"
-msgstr ""
+msgstr "旋風のアックス"
 
 #: itemlist_v070.json:axe_lightblack
 msgid "Light black axe"
-msgstr ""
+msgstr "ライトブラックアックス"
 
 #: itemlist_v070.json:graxe_exec
 msgid "Executioner's greataxe"
-msgstr ""
+msgstr "死刑人のグレートアックス"
 
 #: itemlist_v070.json:graxe_shatter
 msgid "Greataxe of shattered hope"
-msgstr ""
+msgstr "打ち砕かれた希望のグレートアックス"
 
 #: itemlist_v070.json:carrots
 msgid "Carrots"
-msgstr ""
+msgstr "ニンジン"
 
 #: itemlist_v070.json:cheese
 msgid "Cheese"
-msgstr ""
+msgstr "チーズ"
 
 #: itemlist_v070.json:charwood_cheddar
 msgid "Charwood cheddar"
-msgstr ""
+msgstr "Charwoodチェダー"
 
 #: itemlist_v070.json:rawperch
 msgid "Raw perch"
-msgstr ""
+msgstr "生魚"
 
 #: itemlist_v070.json:cookperch
 msgid "Cooked perch"
-msgstr ""
+msgstr "焼き魚"
 
 #: itemlist_v070.json:chkn_leg
 msgid "Cooked chicken leg"
-msgstr ""
+msgstr "鶏の唐揚げ"
 
 #: itemlist_v070.json:drink_applej
 msgid "Apple juice"
-msgstr ""
+msgstr "リンゴジュース"
 
 #: itemlist_v070.json:drink_prunej
 msgid "Prune juice"
-msgstr ""
+msgstr "スモモジュース"
 
 #: itemlist_v070.json:drink_charwood1
 msgid "Sap of the charwood tree"
-msgstr ""
+msgstr "Charwoodの木の樹液"
 
 #: itemlist_v070.json:drink_charwood2
 msgid "Concentrated charwood sap"
-msgstr ""
+msgstr "濃縮Charwood樹液"
 
 #: itemlist_v070.json:drink_lowyn1
 msgid "Lowyna's foul brew"
-msgstr ""
+msgstr "Lowyna謹製悪臭ビール"
 
 #: itemlist_v070.json:drink_lowyn2
 msgid "Lowyna's special brew"
-msgstr ""
+msgstr "Lowyna謹製スペシャルビール"
 
 #: itemlist_v070.json:drink_lowyn3
 msgid "Lowyna's rat poison"
-msgstr ""
+msgstr "Lowyna謹製ネズミの毒薬"
 
 #: itemlist_v070.json:pot_courage
 msgid "Liquid courage"
-msgstr ""
+msgstr "勇気の液"
 
 #: itemlist_v070.json:pot_aware
 msgid "Potion of vulnerabilities"
-msgstr ""
+msgstr "弱点看破のポーション"
 
 #: itemlist_v070.json:pot_senses
 msgid "Potion of heightened senses"
-msgstr ""
+msgstr "感覚強化のポーション"
 
 #: itemlist_v070.json:pot_bm_lodar
 msgid "Lodar's bonemeal potion"
-msgstr ""
+msgstr "Lodarの骨粉ポーション"
 
 #: itemlist_v070.json:pot_healthlodar
 msgid "Lodar's potion of health"
-msgstr ""
+msgstr "Lodarの体力のポーション"
 
 #: itemlist_v070.json:pot_regen1
 msgid "Potion of minor regeneration"
-msgstr ""
+msgstr "継続回復のマイナーポーション"
 
 #: itemlist_v070.json:pot_barkskin
 msgid "Potion of bark skin"
-msgstr ""
+msgstr "硬化のポーション"
 
 #: itemlist_v070.json:pot_haste
 msgid "Potion of haste"
-msgstr ""
+msgstr "加速のポーション"
 
 #: itemlist_v070.json:pot_shadowtear
 msgid "Tears of the Shadow"
-msgstr ""
+msgstr "シャドウの涙"
 
 #: itemlist_v070.json:pot_rnd
 msgid "Lodar's perilous concoction"
-msgstr ""
+msgstr "Lodarの危険調合薬"
 
 #: itemlist_v070.json:pot_def
 msgid "Potion of improved defense"
-msgstr ""
+msgstr "防御力向上ポーション"
 
 #: itemlist_v070.json:pot_str
 msgid "Minor potion of strength"
-msgstr ""
+msgstr "力のマイナーポーション"
 
 #: itemlist_v070.json:redfthair
 msgid "Redfoot beast hair"
@@ -39193,15 +39195,15 @@ msgstr ""
 
 #: itemlist_v070.json:junk_necklace0
 msgid "Mundane necklace"
-msgstr ""
+msgstr "ありきたりなネックレス"
 
 #: itemlist_v070.json:junk_necklace1
 msgid "Polished necklace"
-msgstr ""
+msgstr "磨かれたネックレス"
 
 #: itemlist_v070.json:bat_wing
 msgid "Bat wing"
-msgstr ""
+msgstr "コウモリの翼"
 
 #: itemlist_v070.json:mudfiend
 msgid "Mudfiend goo"
@@ -39213,7 +39215,7 @@ msgstr ""
 
 #: itemlist_v070.json:vscale_amul
 msgid "Venomscale amulet"
-msgstr ""
+msgstr "ベノムスケイルアミュレット"
 
 #: itemlist_v070.json:khakin
 msgid "Khakin eye"
@@ -39229,11 +39231,11 @@ msgstr ""
 
 #: itemlist_v070.json:antifoodp
 msgid "Antidote"
-msgstr ""
+msgstr "解毒薬"
 
 #: itemlist_v070_questitems.json:tiqui
 msgid "Tiqui's shield"
-msgstr ""
+msgstr "Tiquiのシールド"
 
 #: itemlist_v070_questitems.json:hornbeam
 msgid "Spotted Hornbeam fungus"
@@ -39241,15 +39243,15 @@ msgstr ""
 
 #: itemlist_v070_questitems.json:lleglaris
 msgid "Lleglaris' amulet"
-msgstr ""
+msgstr "Lleglarisのアミュレット"
 
 #: itemlist_v070_questitems.json:lodarstone
 msgid "Gatekeeper stone"
-msgstr ""
+msgstr "ゲートキーパーストーン"
 
 #: itemlist_v070_questitems.json:aulowenn
 msgid "Aulowenn's signet ring"
-msgstr ""
+msgstr "Aulowennのシグネットリング"
 
 #: itemlist_v070_questitems.json:hirazinn
 msgid "Heart of the Hira'zinn"
@@ -39257,19 +39259,19 @@ msgstr ""
 
 #: itemlist_v070_questitems.json:thukuzun
 msgid "Thukuzun bone"
-msgstr ""
+msgstr "Thukuzunの骨"
 
 #: itemlist_v070_questitems.json:xulviir0
 msgid "Broken sword"
-msgstr ""
+msgstr "折れた剣"
 
 #: itemlist_v070_questitems.json:lodar_letter
 msgid "Lodar's letter"
-msgstr ""
+msgstr "Lodarの手紙"
 
 #: itemlist_v070_questitems.json:lodar_letter:description
 msgid "Lodar's letter to Lady Lydalon in the Valanyr temple of the Shadow in Nor City."
-msgstr ""
+msgstr "Nor CityのシャドウのValanyr神殿にいるLydalon婦人に宛てたLodarの手紙。"
 
 #: itemlist_shortcut_lodar.json:vial_activation
 msgid "Lodar's activation vial"
@@ -39309,15 +39311,15 @@ msgstr ""
 
 #: itemlist_stoutford.json:handsewn_gloves2
 msgid "Handsewn leather gloves"
-msgstr ""
+msgstr "手縫いのレザーグローブ"
 
 #: itemlist_stoutford.json:handsewn_gloves4
 msgid "Handsewn snakeskin gloves"
-msgstr ""
+msgstr "手縫いのスネークスキングローブ"
 
 #: itemlist_stoutford.json:handsewn_boots2
 msgid "Handsewn leather boots"
-msgstr ""
+msgstr "手縫いのレザーブーツ"
 
 #: itemlist_stoutford.json:fancy_shirt
 msgid "Fancy shirt"
@@ -39465,7 +39467,7 @@ msgstr ""
 
 #: itemlist_trader_teksin.json:boots_combat3
 msgid "Superior combat boots"
-msgstr ""
+msgstr "良質なコンバットブーツ"
 
 #: itemlist_trader_teksin.json:ring_dexterity
 msgid "Ring of dexterity"
@@ -39531,7 +39533,7 @@ msgstr ""
 
 #: itemlist_stoutford_combined.json:scythe_rusty
 msgid "Rusty scythe"
-msgstr ""
+msgstr "錆びたサイズ"
 
 #: itemlist_stoutford_combined.json:cheese_blue
 msgid "Blue cheese"
@@ -39555,7 +39557,7 @@ msgstr ""
 
 #: itemlist_stoutford_combined.json:ring_dr2
 msgid "Polished ring of damage resistance"
-msgstr ""
+msgstr "磨かれたダメージ軽減リング"
 
 #: itemlist_stoutford_combined.json:necklace_lifesteal
 msgid "Necklace of lifesteal"
@@ -39563,15 +39565,15 @@ msgstr ""
 
 #: itemlist_stoutford_combined.json:necklace_protector2
 msgid "Superior necklace of the protector"
-msgstr ""
+msgstr "良質な守りのネックレス"
 
 #: itemlist_stoutford_combined.json:shield_leather
 msgid "Reinforced leather buckler"
-msgstr ""
+msgstr "強化レザーバックラー"
 
 #: itemlist_stoutford_combined.json:shield_iron1
 msgid "Crude iron shield"
-msgstr ""
+msgstr "粗悪なアイアンシールド"
 
 #: itemlist_stoutford_combined.json:shield_iron2
 msgid "Iron shield"
@@ -39579,7 +39581,7 @@ msgstr ""
 
 #: itemlist_stoutford_combined.json:shield_iron3
 msgid "Superior iron shield"
-msgstr ""
+msgstr "良質なアイアンシールド"
 
 #: itemlist_stoutford_combined.json:shield_blk_defender
 msgid "Black defender"
@@ -39603,7 +39605,7 @@ msgstr ""
 
 #: itemlist_stoutford_combined.json:necklace_stfrd_combat
 msgid "Stoutford combat amulet"
-msgstr ""
+msgstr "Stoutfordコンバットアミュレット"
 
 #: itemlist_stoutford_combined.json:tunic_snakeskin
 msgid "Snakeskin tunic"
@@ -39936,7 +39938,7 @@ msgstr ""
 
 #: itemlist_brimhaven.json:brimhaven_plate_mail2
 msgid "Brimhaven rigid plate mail"
-msgstr ""
+msgstr "しっかりとしたBrimhavenプレートメイル"
 
 #: itemlist_brimhaven.json:brimhaven_steel_helmet
 msgid "Brimhaven steel helmet"
@@ -40132,7 +40134,7 @@ msgstr ""
 
 #: itemlist_brimhaven.json:ring_dmg7
 msgid "Ring of damage +7"
-msgstr ""
+msgstr "ダメージリング+7"
 
 #: itemlist_brimhaven.json:necklace_for_father1
 msgid "Necklace for father (cheap)"
@@ -44143,207 +44145,226 @@ msgstr "夜の訪問"
 
 #: questlist_v068.json:farrik:10
 msgid "Farrik in the Fallhaven Thieves' Guild told me of a plan to help a fellow thief escape from the Fallhaven jail."
-msgstr ""
+msgstr "Fallhaven盗賊ギルドのFarrikは、仲間の盗賊がFallhaven刑務所から脱出するのを助ける計画について私に話してくれた。"
 
 #: questlist_v068.json:farrik:20
 msgid "Farrik in the Fallhaven Thieves' Guild told me the details of the plan, and I accepted the task of helping him. The guard captain apparently has a drinking problem. The plan is that I get a prepared mead from the cook in the Thieves' Guild that will knock out the guard captain in the jail. I might be required to bribe the guard captain."
 msgstr ""
+"Fallhaven盗賊ギルドのFarrikから計画の詳細を聞いて、私は彼を助ける仕事を引き受けた。警備隊長はどうやら飲酒問題を抱えているらしい。計画は、盗"
+"賊ギルドのコックから用意されたミードを手に入れて、刑務所の警備隊長を眠らせることだ。もしかしたら賄賂を要求されるかもしれない。"
 
 #: questlist_v068.json:farrik:25
 msgid "I got the prepared mead from the cook in the Thieves' Guild."
-msgstr ""
+msgstr "盗賊ギルドのコックからミードを受け取った。"
 
 #: questlist_v068.json:farrik:30
 msgid "I told Farrik that I don't fully agree with their plan. I might tell the guard captain about their shady plan."
-msgstr ""
+msgstr "Farrikには、彼らの計画に同意できないと言った。私は彼らの陰謀を警備隊長に伝えるかもしれない。"
 
 #: questlist_v068.json:farrik:32
 msgid "I have given the prepared mead to the guard captain."
-msgstr ""
+msgstr "用意したミードを警備隊長に渡した。"
 
 #: questlist_v068.json:farrik:40
 msgid "I have told the guard captain of the plan that the thieves have to release their friend."
-msgstr ""
+msgstr "警備隊長に、盗賊が仲間を解放しなければならない計画について伝えた。"
 
 #: questlist_v068.json:farrik:50
 msgid "The guard captain wants me to tell the thieves that the security will be lowered for tonight. We might be able to catch some of the thieves."
-msgstr ""
+msgstr "警備隊長は盗賊たちに今夜は警備を緩めることを伝えてほしいそうだ。何人かの盗賊を捕まえることができるかもしれない。"
 
 #: questlist_v068.json:farrik:60
 msgid "I managed to bribe the guard captain into drinking the prepared mead. He should be out during the night allowing the thieves to break their friend free."
-msgstr ""
+msgstr "警備隊長に賄賂を差し出すことで、用意したミードを飲ませることに成功した。今夜盗賊が仲間を解放している間、彼には席を外していてもらおう。"
 
 #: questlist_v068.json:farrik:70
 msgid "Farrik rewarded me for helping the Thieves' Guild."
-msgstr ""
+msgstr "Farrikは盗賊ギルドを助けてくれたお礼を言ってくれた。"
 
 #: questlist_v068.json:farrik:80
 msgid "I have told Farrik that the security will be lowered tonight."
-msgstr ""
+msgstr "Farrikに今夜警備が緩むことを伝えた。"
 
 #: questlist_v068.json:farrik:90
 msgid "The guard captain thanked me for helping him plan to catch the thieves. He said he will also tell other guards that I helped him."
-msgstr ""
+msgstr "警備隊長は盗賊を捕まえる計画を手伝ってくれたことに感謝した。他の警備員にも私が手伝ったことを伝えると言っていた。"
 
 #: questlist_v068.json:lodar
 msgid "A lost potion"
-msgstr ""
+msgstr "失われたポーション"
 
 #: questlist_v068.json:lodar:10
 msgid "I should find a potion maker called Lodar. Umar in the Fallhaven Thieves' Guild told me that I will need to know the right words to pass a guardian in order to reach Lodar's hideaway."
 msgstr ""
+"Lodarという薬師を探そう。 "
+"Fallhaven盗賊ギルドのUmarによると、Lodarの隠れ家に行くためにはガーディアンを通過するための正しい言葉を知る必要があるという。"
 
 #: questlist_v068.json:lodar:15
 msgid "Umar told me I should go see someone called Ogam in Vilegard. Ogam can supply me with the right words to reach Lodar's hideaway."
-msgstr ""
+msgstr "UmarはVilegardのOgamという人に会いに行くよう言った。OgamはLodarの隠れ家に行くための正しい言葉を与えてくれる。"
 
 #: questlist_v068.json:lodar:20
 msgid "I have visited Ogam in southwest Vilegard. He was talking in what seemed like riddles. I could barely make out some details when I asked about Lodar's hideaway. 'Halfway between the Shadow and the light. Rocky formations.' and the words 'Glow of the Shadow.' were among the things he said. I am not sure what they mean."
 msgstr ""
+"Vilegard南西部のOgamを訪ねた。彼はなぞなぞのように話していた。Lodarの隠れ家のことを聞いてもいまいち分からなかった。 "
+"'シャドウと光の中間。岩場。'と'Glow of the Shadow'という言葉が彼の言葉の中にあった。それが何を意味しているのかはよくわからない。"
 
 #: questlist_v068.json:lodar:30
 msgid "I have found a formation of rocks on the Duleian Road. It does not look like they were naturally placed, but rather that they are meant to symbolize something."
-msgstr ""
+msgstr "Duleian通りで岩場を見つけた。自然に置かれたものではなく、何かを象徴するもののようだ。"
 
 #: questlist_v068.json:lodar:31
 msgid "Could this be the 'rocky formation' that the old man Ogam mentioned? If that is the case, then this might be a clue as to where Andor went."
-msgstr ""
+msgstr "これがOgamが言っていた'岩場' なのだろうか? そうであれば、これはAndorがどこに行ったかの手がかりになるかもしれない。"
 
 #: questlist_v068.json:lodar:40
 msgid "In the woods close to the rocky formation, I encountered a creature blocking the way into the forest."
-msgstr ""
+msgstr "岩場に近い森の中で、森への道を塞いでいる生き物に遭遇した。"
 
 #: questlist_v068.json:lodar:45
 msgid "By speaking the words that Ogam had mentioned, the creature moved out of the way, and almost seemed to welcome me further into the forest."
-msgstr ""
+msgstr "Ogamが言った言葉を口にすると、その生き物は道を退き、森の中へと私を迎え入れてくれるようになった。"
 
 #: questlist_v068.json:lodar:50
 msgid "I encountered a guard from Feygard in the woods. He told me a tale of a madman that the guards from Feygard are searching for. The madman is wanted for a number of reasons that he would not disclose. He warned me both about the twisty mazes ahead, and about the madman. Apparently, several guards have gone missing after venturing forth, either by getting lost in the maze, or by something that the madman has done to them."
 msgstr ""
+"森の中でFeygardから来た衛兵に出くわした。彼はFeygardの衛兵が探している狂人について話してくれた。狂人はいくつかの理由で指名手配されているが、"
+"その理由までは明かさなかった。彼はこの先の曲がりくねった迷路と狂人について私に警告してくれた。どうやら何人かの衛兵が危険を冒して向かった後に、迷路で迷子に"
+"なったか狂人が何かしたかのどちらかで行方不明になったらしい。"
 
 #: questlist_v068.json:lodar:51
 msgid "Before leaving, the guard warned me both about the twisty mazes ahead, and about the madman. Apparently, several guards have gone missing after venturing forth, either by getting lost in the maze, or by something that the madman has done to them."
 msgstr ""
+"出発する前に、衛兵はこの先の曲がりくねった迷路と狂人について私に警告してくれた。どうやら何人かの衛兵が危険を冒して向かった後に、迷路で迷子になったか狂人が"
+"何かしたかのどちらかで行方不明になったらしい。"
 
 #: questlist_v068.json:lodar:60
 msgid "I found another rocky formation that looked out of place."
-msgstr ""
+msgstr "場違いに見える別の岩場を見つけた。"
 
 #: questlist_v068.json:lodar:71
 msgid "I encountered another guard from Feygard, disoriented and lost. The things he said did not make sense."
-msgstr ""
+msgstr "道に迷っているFeygardの別の衛兵と遭遇した。彼が話すことは意味をなしていなかった。"
 
 #: questlist_v068.json:lodar:72
 msgid "I encountered another guard from Feygard, that seemed to be affected by something. He attacked me without provocation."
-msgstr ""
+msgstr "何かの影響を受けているように見える別のFeygard衛兵に遭遇した。彼は一方的に私を攻撃してきた。"
 
 #: questlist_v068.json:lodar:73
 msgid "I encountered another guard from Feygard, that rambled of something that 'lurks underneath'. He attacked me without provocation."
-msgstr ""
+msgstr "'その下に何か潜んでいる'と、とりとめもないことを喋る別のFeygard衛兵と遭遇した。彼は一方的に私を攻撃してきた。"
 
 #: questlist_v068.json:lodar:80
 msgid "I found yet another rocky formation that looked out of place."
-msgstr ""
+msgstr "また場違いな別の岩場を見つけた。"
 
 #: questlist_v068.json:lodar:90
 msgid "In a well-hidden cave, I encountered yet another rocky formation that looked similar to the other ones that I've already seen. I must be getting close to whatever these formations lead to."
-msgstr ""
+msgstr "巧妙に隠された洞窟の中で、以前に見たものと似たような岩場にまた遭遇した。これらの岩場が導くものへと近づいているに違いない。"
 
 #: questlist_v068.json:lodar:100
 msgid "In the cave, I reached what looks like a tomb. I was unable to venture further into the tomb because of something that held me back."
-msgstr ""
+msgstr "洞窟の中で、墓のようなものにたどり着いた。 何かが私を引き止めていたので、墓の中に足を踏み入れることができなかった。"
 
 #: questlist_v068.json:lodar:110
 msgid "After navigating through the immense twisty green maze and the damp cave, I have reached a cabin in a clearing. The cabin is occupied by the potion-maker called Lodar."
-msgstr ""
+msgstr "巨大な曲がりくねった緑の迷路と湿った洞窟を通り抜けた後、空き地にある小屋にたどり着いた。小屋にはLodarという薬師が住んでいる。"
 
 #: questlist_v068.json:vilegard
 msgid "Trusting an outsider"
-msgstr ""
+msgstr "よそ者を信じる"
 
 #: questlist_v068.json:vilegard:10
 msgid "The people of Vilegard are very suspicious of outsiders. I was told to go see Jolnor in the Vilegard chapel if I want to gain their trust."
-msgstr ""
+msgstr "Vilegardの人々はよそ者に対してとても疑り深い。信頼を得たいならVilegard礼拝堂のJolnorに会うよう言われた。"
 
 #: questlist_v068.json:vilegard:20
 msgid "I have talked to Jolnor in the Vilegard chapel. He suggests I help three influential people in order to gain the trust of the people in Vilegard. I should help Kaori, Wrye and Jolnor in Vilegard."
 msgstr ""
+"Vilegard礼拝堂でJolnorと話した。彼はVilegardの人々の信頼を得るために3人の有力者を手助けすることを提案してくれた。Vilegardで"
+"Kaori、Wrye、Jolnorを助けよう。"
 
 #: questlist_v068.json:vilegard:30
 msgid "I have helped all three people in Vilegard that Jolnor suggested. Now the people of Vilegard should trust me more."
-msgstr ""
+msgstr "Jolnorが提案したVilegardの3人全員を助けてきた。これからはVilegardの人々はもっと私を信頼してくれることだろう。"
 
 #: questlist_v068.json:kaori
 msgid "Kaori's errands"
-msgstr ""
+msgstr "Kaoriの用事"
 
 #: questlist_v068.json:kaori:5
 msgid "Jolnor in Vilegard chapel wants me to talk to Kaori in northern Vilegard, to see if she wants any help."
-msgstr ""
+msgstr "Vilegard礼拝堂のJolnorは、Vilegard北部のKaoriと話をして何か助けが必要かどうか聞いてほしいと言っている。"
 
 #: questlist_v068.json:kaori:10
 msgid "Kaori in northern Vilegard wants me to bring her 10 bonemeal potions."
-msgstr ""
+msgstr "Vilegard北部のKaoriは、骨粉ポーション10個を持ってきてほしいと言っている。"
 
 #: questlist_v068.json:kaori:20
 msgid "I have brought 10 bonemeal potions to Kaori."
-msgstr ""
+msgstr "10個の骨粉ポーションをKaoriに持ってきた。"
 
 #: questlist_v068.json:wrye
 msgid "Uncertain cause"
-msgstr ""
+msgstr "原因不明"
 
 #: questlist_v068.json:wrye:10
 msgid "Jolnor in Vilegard chapel wants me to talk to Wrye in northern Vilegard. She has apparently lost her son recently."
-msgstr ""
+msgstr "Vilegard礼拝堂のJolnorは、Vilegard北部のWryeと話をしてほしいと言っている。彼女の息子が最近失踪したらしい。"
 
 #: questlist_v068.json:wrye:20
 msgid "Wrye in northern Vilegard tells me that her son Rincel has gone missing. She thinks that he has died or gotten critically hurt."
-msgstr ""
+msgstr "Vilegard北部のWryeから息子のRincelが行方不明になったと聞いた。息子は死んだか、重症を負ったのではないかと彼女は思っている。"
 
 #: questlist_v068.json:wrye:30
 msgid "Wrye tells me that she thinks the royal guard from Feygard are involved in his disappearance, and that they have recruited him."
-msgstr ""
+msgstr "WryeはFeygardの近衛兵が失踪に関与していると考えており、彼をスカウトしたのではないかと話している。"
 
 #: questlist_v068.json:wrye:40
 msgid "Wrye wants me to go search for clues as to what has happened to her son."
-msgstr ""
+msgstr "Wryeは息子に何があったのか手がかりを探してほしいと言っている。"
 
 #: questlist_v068.json:wrye:41
 msgid "I should go look in the Vilegard tavern and the Foaming Flask tavern north of Vilegard."
-msgstr ""
+msgstr "Vilegardの酒場とVilegardの北にあるFoaming Flask酒場を見てこよう。"
 
 #: questlist_v068.json:wrye:42
 msgid "I heard of a boy being in the Foaming Flask tavern a while ago. Apparently he left to the west of the tavern somewhere."
-msgstr ""
+msgstr "少し前にFoaming Flask酒場にいた少年の話を聞いた。酒場の西のどこかに出て行ったらしい。"
 
 #: questlist_v068.json:wrye:80
 msgid "To the northwest of Vilegard I found a man that had found Rincel fighting some monsters. Rincel had apparently left Vilegard by his own will to go see the city of Feygard. I should go tell Wrye in northern Vilegard what happened to her son."
 msgstr ""
+"Vilegardの北西でRincelがモンスターと戦っているのを見つけた男を発見した。どうやらRincelは自分の意志でVilegardを離れて、Feyg"
+"ardの町を見に行ったらしい。Vilegard北部のWryeに息子に何があったのかを話しにいこう。"
 
 #: questlist_v068.json:wrye:90
 msgid "I have told Wrye the truth about her son's disappearance."
-msgstr ""
+msgstr "息子の失踪についての真相をWryeに話した。"
 
 #: questlist_v068.json:jolnor
 msgid "Spies in the foam"
-msgstr ""
+msgstr "泡の中のスパイ"
 
 #: questlist_v068.json:jolnor:10
 msgid "Jolnor in Vilegard chapel tells me of a guard outside of the Foaming Flask tavern, that he thinks is a spy for the Feygard royal guard. He wants me to make the guard disappear, in any way that I see fit. The tavern should be just north of Vilegard."
 msgstr ""
+"Vilegard礼拝堂のJolnorはFoaming Flask酒場の外にいる衛兵について、 彼を近衛兵のスパイではないかと考えていることを話してくれた。"
+"彼はその衛兵を私の好きなやり方で消してほしいと言っている。酒場はVilegardのすぐ北にあるはずだ。"
 
 #: questlist_v068.json:jolnor:20
 msgid "I have convinced the guard outside the Foaming Flask tavern to leave after his shift ends."
-msgstr ""
+msgstr "Foaming Flask酒場の外にいる衛兵に、勤務時間が終わったら去るように説得した。"
 
 #: questlist_v068.json:jolnor:21
 msgid "I have started a fight with the guard outside the Foaming Flask tavern. I should bring his Feygard royal guard ring to Jolnor once he is dead to show Jolnor that he has disappeared."
 msgstr ""
+"Foaming Flask酒場の外にいる衛兵と戦闘を始めた。 死んだらFeygard近衛兵のリングをJolnorに渡し、 "
+"彼がもういなくなったことを示そう。"
 
 #: questlist_v068.json:jolnor:30
 msgid "I have told Jolnor that the guard is now gone."
-msgstr ""
+msgstr "Jolnorに衛兵がいなくなったことを伝えた。"
 
 #: questlist_v069.json:bwm_agent
 msgid "The agent and the beast"
@@ -44731,38 +44752,40 @@ msgstr ""
 
 #: questlist_v0610.json:tinlyn
 msgid "Lost sheep"
-msgstr ""
+msgstr "迷子の羊"
 
 #: questlist_v0610.json:tinlyn:10
 msgid "On the road to Feygard, near the Feygard bridge, I met a shepherd named Tinlyn. Tinlyn told me that four of his sheep have wandered away and that he won't dare leave the remaining sheep to go look for them."
 msgstr ""
+"Feygardへの道中、Feygard橋の近くでTinlynという羊飼いと出会った。Tinlynは4頭の羊が迷子になってしまったものの、残りの羊を放って探"
+"しに行く勇気がないと言っていた。"
 
 #: questlist_v0610.json:tinlyn:15
 msgid "I have agreed to help Tinlyn find his four lost sheep."
-msgstr ""
+msgstr "Tinlynが4頭の迷子の羊を探すのを手伝うことに同意した。"
 
 #: questlist_v0610.json:tinlyn:20
 #: questlist_v0610.json:tinlyn:21
 #: questlist_v0610.json:tinlyn:22
 #: questlist_v0610.json:tinlyn:23
 msgid "I have found one of Tinlyn's lost sheep."
-msgstr ""
+msgstr "Tinlynの迷子の羊を見つけた。"
 
 #: questlist_v0610.json:tinlyn:25
 msgid "I have found all four of Tinlyn's lost sheep."
-msgstr ""
+msgstr "Tinlynの迷子の羊4頭すべてを見つけた。"
 
 #: questlist_v0610.json:tinlyn:30
 msgid "Tinlyn thanked me for finding his lost sheep."
-msgstr ""
+msgstr "Tinlynは迷子の羊を見つけてくれたことに感謝した。"
 
 #: questlist_v0610.json:tinlyn:31
 msgid "Tinlyn thanked me for finding his lost sheep, but he had no reward to give me."
-msgstr ""
+msgstr "Tinlynは迷子の羊を見つけてくれたことに感謝してくれたが、何の報酬も与えてくれなかった。"
 
 #: questlist_v0610.json:tinlyn:60
 msgid "I have attacked at least one of Tinlyn's lost sheep and is therefore unable to return them all to Tinlyn."
-msgstr ""
+msgstr "私はTinlynの迷子の羊のうち少なくとも1頭を攻撃してしまったので、全ての羊をTinlynに返すことができない。"
 
 #: questlist_v0610.json:benbyr
 msgid "Cheap cuts"
@@ -44771,130 +44794,141 @@ msgstr ""
 #: questlist_v0610.json:benbyr:10
 msgid "I have met Benbyr outside the Crossroads guardhouse. He wants to get revenge on an old 'business partner' of his - Tinlyn. Benbyr wants me to kill all Tinlyn's sheep."
 msgstr ""
+"Crossroadsの衛兵所の外でBenbyrと出会った。彼は昔の'取引先'であるTinlynに復讐しようとしている。Benbyrは私にTinlynの羊全"
+"てを殺してほしいと言った。"
 
 #: questlist_v0610.json:benbyr:20
 msgid "I have agreed to help Benbyr find Tinlyn's sheep and kill all eight of them. I should go look for them in the fields northwest of the Crossroads guardhouse."
-msgstr ""
+msgstr "BenbyrがTinlynの羊を見つけて8頭全てを殺すのを手伝うことに同意した。Crossroads衛兵所の北西の野原で彼らを探そう。"
 
 #: questlist_v0610.json:benbyr:21
 msgid "I have started attacking the sheep. I should return to Benbyr once I have killed all eight of them."
-msgstr ""
+msgstr "羊への攻撃を始めた。8頭全てを殺したらBenbyrのところへ戻ろう。"
 
 #: questlist_v0610.json:benbyr:30
 msgid "Benbyr was thrilled to hear that all of Tinlyn's sheep are dead."
-msgstr ""
+msgstr "BenbyrはTinlynの羊が全て死んだと聞いて感激していた。"
 
 #: questlist_v0610.json:benbyr:60
 msgid "I declined to help Benbyr kill the sheep."
-msgstr ""
+msgstr "Benbyrが羊を殺すのを手伝うのを断った。"
 
 #: questlist_v0610.json:rogorn
 msgid "The path is clear to me"
-msgstr ""
+msgstr "道は明らか"
 
 #: questlist_v0610.json:rogorn:10
 msgid "Minarra up in the tower at the Crossroads guardhouse has seen a band of rogues heading west from the guardhouse, towards Carn Tower. Minarra was sure they matched the description of some men whose heads have a bounty on them from the Feygard patrol. If these are the men that Minarra thinks, they are supposedly led by particularly ruthless savage named Rogorn."
 msgstr ""
+"Crossroads衛兵所の塔の上のMinarraは、衛兵所から西に向かって、Carn Towerへと向かっている犯罪者の一味を見た。Minarraは、彼"
+"らがFeygardのパトロールからの懸賞金がかかっている何人かの男たちの特徴と一致していると確信した。Minarraが思っている者たちだとすれば、彼らはR"
+"ogornという冷酷な獰猛な人物に率いられていると思われる。"
 
 #: questlist_v0610.json:rogorn:20
 msgid "I am helping Minarra find the band of rogues. I should travel the road west from the Crossroads guardhouse towards Carn Tower and look for them. They have supposedly stolen three pieces of a valuable painting and are wanted dead for their crimes."
 msgstr ""
+"Minarraが犯罪者の一味を見つけるのを手伝っている。Crossroads衛兵所から西の道をCarn "
+"Towerに向かって探そう。彼らは貴重な絵を3枚盗んだとされ、その罪で指名手配されている。"
 
 #: questlist_v0610.json:rogorn:21
 msgid "Minarra also tells me that I should not trust anything I hear from them. In particular, anything from Rogorn should be viewed with great suspicion."
-msgstr ""
+msgstr "Minarraはまた、彼らから聞いたことは信用してはならないと言う。 特にRogornからのものは大いに疑ってかかるべきだ。"
 
 #: questlist_v0610.json:rogorn:30
 msgid "I have found the band of rogues on the road west towards Carn Tower, led by Rogorn."
-msgstr ""
+msgstr "Carn Towerに向かう西の道で、Rogornに率いられた犯罪者の一団を見つけた。"
 
 #: questlist_v0610.json:rogorn:35
 msgid "Rogorn tells me that they are wrongly accused of murder and theft in Feygard, while they themselves have never even been to Feygard."
-msgstr ""
+msgstr "Rogornによると、彼ら自身はFeygardに行ったことさえないのに、Feygardでは殺人や窃盗の罪で不当に訴えられていると語る。"
 
 #: questlist_v0610.json:rogorn:40
 msgid "I have decided to attack Rogorn and his band of rogues. I should return to Minarra with the three pieces of the painting once they are dead."
-msgstr ""
+msgstr "Rogornとその一味を攻撃することにした。彼らが死んだら、3枚の絵を持ってMinarraのもとへ戻ろう。"
 
 #: questlist_v0610.json:rogorn:45
 msgid "I have decided not to attack Rogorn and his band of rogues, but instead report back to Minarra that she must have mistaken the men she saw for someone else."
-msgstr ""
+msgstr "Rogornとその一味を攻撃するのではなく、Minarraが見た男たちを他の誰かと間違えたのではないかと報告することにした。"
 
 #: questlist_v0610.json:rogorn:50
 msgid "Minarra thanked me for dealing with the thieves, and told me that my services to Feygard will be appreciated."
-msgstr ""
+msgstr "Minarraは盗賊に対処してくれたことに感謝し、 Feygardへの私の奉仕は感謝されるだろうと言ってくれた。"
 
 #: questlist_v0610.json:rogorn:55
 msgid "After telling Minarra that she must have mistaken the men for someone else, she seemed a bit suspicious, but thanked me for helping her look into the matter."
-msgstr ""
+msgstr "男たちを他の誰かと間違えたのではないかと話した後、Minarraは少し怪訝そうな顔をしていたものの、調べてくれたことに感謝していた。"
 
 #: questlist_v0610.json:rogorn:60
 msgid "I have helped Minarra with her task."
-msgstr ""
+msgstr "Minarraの仕事を手伝ってきた。"
 
 #: questlist_v0610.json:feygard_shipment
 msgid "Feygard errands"
-msgstr ""
+msgstr "Feygardのお使い"
 
 #: questlist_v0610.json:feygard_shipment:10
 msgid "I met Gandoren, the guard captain at the Crossroads guardhouse. He told me about some trouble up in Loneford, that have forced the guards to be even more alert than usual. Because of this, they can't do their regular errands themselves but need help with some basic things."
 msgstr ""
+"Crossroads衛兵所の衛兵隊長Gandorenに会った。Lonefordでトラブルがあり、そのために衛兵はいつも以上に警戒せねばならないのだと彼は教"
+"えてくれた。そのため、普段の用事は自分たちではできないが、基本的なことは手伝ってもらう必要がある。"
 
 #: questlist_v0610.json:feygard_shipment:20
 msgid "Gandoren wants me to help him transport a shipment of 10 iron swords to another guard post to the south."
-msgstr ""
+msgstr "Gandorenは10本のアイアンロングソードを南の別の衛兵所に運ぶのを手伝って欲しいと言っている。"
 
 #: questlist_v0610.json:feygard_shipment:21
 msgid "I have agreed to help Gandoren transport the shipment, as a service for Feygard."
-msgstr ""
+msgstr "Feygardへの奉仕として、Gandorenの荷物運びを手伝うことに同意した。"
 
 #: questlist_v0610.json:feygard_shipment:22
 msgid "I have grudgingly agreed to help Gandoren transport the shipment."
-msgstr ""
+msgstr "私はしぶしぶ、Gandorenの荷物運びを手伝うことに同意した。"
 
 #: questlist_v0610.json:feygard_shipment:25
 msgid "I should deliver the shipment to the Feygard patrol captain stationed in the Foaming Flask tavern."
-msgstr ""
+msgstr "Foaming Flask酒場にいるFeygardの巡視隊長に荷物を届けよう。"
 
 #: questlist_v0610.json:feygard_shipment:26
 msgid "Gandoren tells me that Ailshara has expressed some interest in the Feygard shipments, and urges me to stay away from her."
-msgstr ""
+msgstr "Gandorenは、AilsharaがFeygardの荷物に関心を示していることを話し、彼女に近づかないようにと促した。"
 
 #: questlist_v0610.json:feygard_shipment:30
 msgid "Ailshara is indeed interested in the shipment, and wants me to help Nor City with the supplies instead."
-msgstr ""
+msgstr "Ailsharaは確かに荷物に興味を持っており、代わりにNor Cityへと荷物を送ってほしいと言っている。"
 
 #: questlist_v0610.json:feygard_shipment:35
 msgid "If I want to help Ailshara and Nor City, I should deliver the shipment to the smith in Vilegard instead."
-msgstr ""
+msgstr "AilsharaとNor Cityを助けたいのであれば、代わりにVilegardの鍛冶屋に荷物を届けよう。"
 
 #: questlist_v0610.json:feygard_shipment:50
 msgid "I have delivered the shipment to the Feygard patrol captain in the Foaming Flask tavern. I should go tell Gandoren in the Crossroads guardhouse that the shipment is delivered."
 msgstr ""
+"Foaming Flask酒場のFeygard巡視隊長に荷物を届けた。Crossroads衛兵所のGandorenに荷物を届けたことを伝えよう。"
 
 #: questlist_v0610.json:feygard_shipment:55
 msgid "I have delivered the shipment to the smith in Vilegard."
-msgstr ""
+msgstr "Vilegardの鍛冶屋に荷物を届けた。"
 
 #: questlist_v0610.json:feygard_shipment:56
 msgid "The Vilegard smith gave me a shipment of degraded items that I should deliver to the Feygard patrol captain in the Foaming Flask tavern instead of the normal ones."
-msgstr ""
+msgstr "Vilegardの鍛冶屋から、本来のものではなく、Foaming Flask酒場のFeygard巡視隊長に届けるための劣化品の荷物を渡された。"
 
 #: questlist_v0610.json:feygard_shipment:60
 msgid "I have delivered the shipment of degraded items to the Feygard patrol captain in the Foaming Flask tavern. I should go tell Gandoren in the Crossroads guardhouse that the shipment is delivered."
 msgstr ""
+"Foaming Flask酒場のFeygard巡視隊長に劣化品の荷物を届けた。Crossroads衛兵所のGandorenに荷物を届けたことを伝えよう。"
 
 #: questlist_v0610.json:feygard_shipment:80
 msgid "Gandoren thanked me for helping him deliver the shipment."
-msgstr ""
+msgstr "Gandorenは荷物運びを手伝ってくれたことに感謝した。"
 
 #: questlist_v0610.json:feygard_shipment:81
 msgid "Gandoren thanked me for helping him deliver the shipment. He never suspected anything. I should also report back to Ailshara."
-msgstr ""
+msgstr "Gandorenは荷物運びを手伝ってくれたことに感謝した。彼は何も疑っていなかった。Ailsharaにも報告しよう。"
 
 #: questlist_v0610.json:feygard_shipment:82
 msgid "I have reported back to Ailshara."
-msgstr ""
+msgstr "Ailsharaに報告した。"
 
 #: questlist_v0610.json:loneford
 msgid "Flows through the veins"
