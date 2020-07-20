@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Collection;
 
 import com.gpl.rpg.AndorsTrail.AndorsTrailPreferences;
+import com.gpl.rpg.AndorsTrail.R;
 import com.gpl.rpg.AndorsTrail.context.ControllerContext;
 import com.gpl.rpg.AndorsTrail.context.WorldContext;
 import com.gpl.rpg.AndorsTrail.controller.listeners.QuickSlotListeners;
@@ -92,11 +93,9 @@ public final class ItemController {
 
 		if (!player.inventory.removeItem(type.id, 1)) return;
 
+		world.model.combatLog.append(controllers.getResources().getString(R.string.inventory_item_used, type.getName(player)));
 		controllers.actorStatsController.applyUseEffect(player, null, type.effects_use);
 		world.model.statistics.addItemUsage(type);
-
-		//TODO: provide feedback that the item has been used.
-		//context.mainActivity.message(androidContext.getResources().getString(R.string.inventory_item_used, type.name));
 	}
 
 	public void playerSteppedOnLootBag(Loot loot) {
