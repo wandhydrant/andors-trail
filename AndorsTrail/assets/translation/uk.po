@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: andors-trail\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-11-10 11:48+0000\n"
-"PO-Revision-Date: 2020-02-03 21:16+0000\n"
+"PO-Revision-Date: 2020-07-26 09:48+0000\n"
 "Last-Translator: Anatoly Chub <anatolijuschub@gmail.com>\n"
 "Language-Team: Ukrainian <https://hosted.weblate.org/projects/andors-trail/"
 "game-content/uk/>\n"
@@ -16,9 +16,9 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<="
-"4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 3.11-dev\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 4.2-dev\n"
 "X-Launchpad-Export-Date: 2015-11-02 12:25+0000\n"
 
 #: [none]
@@ -282,7 +282,7 @@ msgstr "Захмарення розуму"
 
 #: actorconditions_omicronrg9.json:guild03_restingAC
 msgid "Resting"
-msgstr ""
+msgstr "Відпочинок"
 
 #: actorconditions_omicronrg9.json:g03_concentration
 msgid "Concentration"
@@ -317,31 +317,33 @@ msgid "Drowning"
 msgstr ""
 
 #: actorconditions_brimhaven.json:entanglement
+#, fuzzy
 msgid "Entanglement"
-msgstr ""
+msgstr "Заплутаний"
 
 #: actorconditions_brimhaven.json:fatigue1
 #: actorconditions_brimhaven.json:fatigue2
 #: actorconditions_brimhaven.json:fatigue3
 #: actorconditions_brimhaven.json:fatigue4
+#, fuzzy
 msgid "Fatigue"
-msgstr ""
+msgstr "Втомлений"
 
 #: actorconditions_brimhaven.json:turn_to_stone
 msgid "Turning to stone"
-msgstr ""
+msgstr "Перетворений на камінь"
 
 #: actorconditions_brimhaven.json:stoneskin
 msgid "Stone skin"
-msgstr ""
+msgstr "Кам'яна шкіра"
 
 #: actorconditions_brimhaven.json:overeating
 msgid "Overeating"
-msgstr ""
+msgstr "Переїв"
 
 #: actorconditions_brimhaven.json:venom
 msgid "Venom"
-msgstr ""
+msgstr "Отруєний"
 
 #: conversationlist_mikhail.json:mikhail_gamestart
 msgid "Oh good, you are awake."
@@ -379,11 +381,11 @@ msgstr "Ти можеш розповісти ще щось про Ендора?"
 #: conversationlist_mikhail.json:mikhail_default:5
 #: conversationlist_mikhail.json:mikhail_default:6
 msgid "I have a present for you."
-msgstr ""
+msgstr "Я маю для вас подарунок."
 
 #: conversationlist_mikhail.json:mikhail_default:7
 msgid "I was searching for Andor."
-msgstr ""
+msgstr "Я шукав Ендора."
 
 #: conversationlist_mikhail.json:mikhail_tasks
 msgid "Oh yes, there were some things I need help with, bread and rats. Which one would you like to talk about?"
@@ -47544,4 +47546,3 @@ msgstr ""
 #: worldmap.xml:world1:brimhaven_area
 msgid "Brimhaven"
 msgstr ""
-
