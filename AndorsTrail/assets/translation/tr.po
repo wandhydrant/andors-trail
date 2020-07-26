@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: andors-trail\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-11-10 11:48+0000\n"
-"PO-Revision-Date: 2020-07-26 09:48+0000\n"
+"PO-Revision-Date: 2020-07-26 22:24+0000\n"
 "Last-Translator: lanet <vaegirinlaneti@gmail.com>\n"
 "Language-Team: Turkish <https://hosted.weblate.org/projects/andors-trail/"
 "game-content/tr/>\n"
@@ -25,8 +25,7 @@ msgid "translator-credits"
 msgstr ""
 "İngilizce Aslından Çeviren;\n"
 "\n"
-"Samet Develioğlu\n"
-"Harita Ustası"
+"Samet Develioğlu"
 
 #: actorconditions_v069.json:bless
 msgid "Bless"
@@ -218,7 +217,7 @@ msgstr "Yaşayan Ölü'nün Laneti"
 
 #: actorconditions_graveyard1.json:contagion2
 msgid "Spore contagion"
-msgstr "Spor bulaşıcı"
+msgstr "Bulaşıcı Spor"
 
 #: actorconditions_graveyard1.json:petrification
 msgid "Petrification"
@@ -242,15 +241,15 @@ msgstr "Gölge Dejenerasyonu"
 
 #: actorconditions_guynmart.json:bone_fracture
 msgid "Bone fracture"
-msgstr "Kemik kırığı"
+msgstr "Kemik Kırığı"
 
 #: actorconditions_guynmart.json:shadow_awareness
 msgid "Shadow awareness"
-msgstr "Gölge farkındalığı"
+msgstr "Gölge Farkındalığı"
 
 #: actorconditions_trader_teksin.json:poison_irdegh_weak
 msgid "Weak irdegh poison"
-msgstr "Zayıf irdegh zehri"
+msgstr "Zayıf Irdegh Zehri"
 
 #: actorconditions_trader_teksin.json:light_attack
 msgid "Lightning attack"
@@ -294,7 +293,7 @@ msgstr "Kombo"
 
 #: actorconditions_omicronrg9.json:carrying_ambelie
 msgid "Carrying Ambelie"
-msgstr "Ambelie taşıma"
+msgstr "Ambelie Taşıma"
 
 #: actorconditions_arulir_mountain.json:crushed
 msgid "Crushed"
@@ -302,15 +301,15 @@ msgstr "Ezilmiş"
 
 #: actorconditions_arulir_mountain.json:head_wound
 msgid "Head wound"
-msgstr ""
+msgstr "Kafadan Yaralanma"
 
 #: actorconditions_arulir_mountain.json:mermaid_scale
 msgid "Mermaid curse"
-msgstr "Deniz kızı laneti"
+msgstr "Deniz Kızı Laneti"
 
 #: actorconditions_arulir_mountain.json:increased_defense
 msgid "Increased defense"
-msgstr "Artırılmış savunma"
+msgstr "Artırılmış Savunma"
 
 #: actorconditions_brimhaven.json:drowning
 msgid "Drowning"
@@ -329,15 +328,15 @@ msgstr "Bitkinlik"
 
 #: actorconditions_brimhaven.json:turn_to_stone
 msgid "Turning to stone"
-msgstr "Taşa dönüşme"
+msgstr "Taşa Dönüşme"
 
 #: actorconditions_brimhaven.json:stoneskin
 msgid "Stone skin"
-msgstr "Taş deri"
+msgstr "Taşlaşmış Deri"
 
 #: actorconditions_brimhaven.json:overeating
 msgid "Overeating"
-msgstr "Aşırı yeme"
+msgstr "Aşırı Yeme"
 
 #: actorconditions_brimhaven.json:venom
 msgid "Venom"
@@ -345,7 +344,7 @@ msgstr "Zehir"
 
 #: conversationlist_mikhail.json:mikhail_gamestart
 msgid "Oh good, you are awake."
-msgstr "Oh iyi, kalkmışsın."
+msgstr "Oh iyi, uyanmışsın."
 
 #: conversationlist_mikhail.json:mikhail_visited
 msgid "I can't seem to find your brother Andor anywhere. He hasn't been back since he left yesterday."
@@ -542,9 +541,9 @@ msgid ""
 "\n"
 "If you are hurt, use your bed over there to rest and regain your strength."
 msgstr ""
-"Oh yaptın mı? Vay, sana çok teşekkür ederim!\n"
+"Oh yaptın mı? Vay, çok teşekkür ederim!\n"
 "\n"
-"Eğer yaralandıysan, şurada yatağını kullan ve gücünü geri topla."
+"Eğer yaralandıysan, şurada yatıp dinlen ve gücünü geri topla."
 
 #: conversationlist_mikhail.json:mikhail_rats_complete2
 msgid ""
@@ -554,19 +553,24 @@ msgid ""
 msgstr ""
 "Sıçanlar konusunda yardımın için teşekkürler.\n"
 "\n"
-"Eğer yaralandıysan, şurada yatağını kullan ve gücünü geri topla."
+"Eğer yaralandıysan, şuradaki yatağını kullan ve gücünü geri topla."
 
 #: conversationlist_mikhail_foodpoison.json:mikhail_rats_start2a
 msgid "Another way to regain your strength is to eat some food. You can buy some for yourself from Mara at the town hall. But watch out - I hear that raw meat can sometimes give you food poisoning."
-msgstr "Gücünü geri kazanmanın başka bir yolu yemek yemektir. Kasaba binasında Mara'dan bir şeyler alabilirsin. Ama dikkat et - Şu çiğ etlerin bazen gıda zehirlenmesine yol açtığını duydum."
+msgstr ""
+"Gücünü geri kazanmanın başka bir yolu da yemek yemektir. Köy binasında "
+"Mara'dan bir şeyler alabilirsin. Ama dikkat et - Şu çiğ etlerin bazen gıda "
+"zehirlenmesine yol açtığını duydum."
 
 #: conversationlist_mikhail_foodpoison.json:mikhail_rats_start2b
 msgid "If that happens, perhaps the town priest can do something to help you.  Otherwise, just rest until you feel better."
-msgstr "Eğer bu olursa, belki kasaba rahibi sana bazen yardım eder. Aksi takdirde, sadece daha iyi hissedene kadar dinlen."
+msgstr ""
+"Eğer öyle bir şey olursa, kasaba rahibi sana yardım edebilir. Aksi takdirde, "
+"daha iyi hissedene kadar dinlenebilirsin."
 
 #: conversationlist_mikhail_foodpoison.json:mikhail_rats_start2c
 msgid "Me, I can't really afford the meat, so I just stick to my bread!"
-msgstr "Ben, eti gerçekten karşılayamam, o yüzden ekmeğime bağlı kalıyorum!"
+msgstr "Bense et alabilecek kadar zengin değilim, o yüzden ekmeğimle mutluyum!"
 
 #: conversationlist_crossglen.json:audir1
 msgid ""
@@ -663,7 +667,7 @@ msgstr ""
 "İç iç iç, biraz daha iç.\n"
 "İç iç iç, yere yapışana kadar iç. Hah ha!\n"
 "\n"
-"Hey evlat, içme oyunlarımızda bize katılmak ister misin?"
+"Hey evlat, içme oyunumuzda bize katılmak ister misin?"
 
 #: conversationlist_crossglen.json:drunk1:0
 #: conversationlist_crossglen_odair.json:odair4:2
@@ -761,7 +765,7 @@ msgstr "Hah pekala, seni azat edeceğim."
 
 #: conversationlist_crossglen.json:haunt:1
 msgid "You mean, by killing you?"
-msgstr "Yani, seni öldürerek mi?"
+msgstr "Yani, seni öldürerek mi demek istiyorsun?"
 
 #: conversationlist_crossglen_gruil.json:gruil1
 msgid ""
@@ -847,7 +851,9 @@ msgstr "Teşekkürler, gidip Gruil'le konuşacağım."
 
 #: conversationlist_crossglen_leonid.json:leonid_crossglen
 msgid "As you know, this is Crossglen village. Mostly a farming community."
-msgstr "Bildiğin gibi, burası Crossglen Köyü. Çoğunlukla tarım ve çiftçilik yapılır."
+msgstr ""
+"Bildiğin gibi, burası Crossglen Köyü. Buralarda çoğunlukla tarım ve "
+"çiftçilikle uğraşılır."
 
 #: conversationlist_crossglen_leonid.json:leonid_crossglen1
 msgid "We have Audir with his smithy to the southwest, Leta and her husband's cabin to the west, this town hall here and your father's cabin to the northwest."
@@ -1766,11 +1772,13 @@ msgstr "Ciddiyim."
 
 #: conversationlist_fallhaven_bucus.json:bucus_thieves_2:1
 msgid "Yeah, pretty funny eh?"
-msgstr "Evet, çok komik eh?"
+msgstr "Evet, çok komik di mi?"
 
 #: conversationlist_fallhaven_bucus.json:bucus_thieves_3
 msgid "OK, tell you what kid. Do a task for me and maybe I'll consider giving you more info."
 msgstr ""
+"Tamam bak sana ne diyeceğim. Benim için bir görevi yerine getirirsen, ben de "
+"sana birşeyler anlatmayı düşünürüm."
 
 #: conversationlist_fallhaven_bucus.json:bucus_thieves_3:0
 msgid "What kind of task are we talking about?"
@@ -1778,23 +1786,26 @@ msgstr "Ne tür bir görev hakkında konuşuyoruz?"
 
 #: conversationlist_fallhaven_bucus.json:bucus_thieves_3:1
 msgid "As long as this leads to some treasure, I'm in!"
-msgstr ""
+msgstr "Eğer ucunda altın olacaksa ben varım!"
 
 #: conversationlist_fallhaven_bucus.json:bucus_thieves_4
 msgid "Bring me the key of Luthor and we can talk more. I don't know anything about the key itself, but rumor has it that it is located somewhere in the catacombs beneath Fallhaven Church."
 msgstr ""
+"Bana Luthor'un anahtarını getirmen lazım. Sonra istediğini konuşuruz. "
+"Anahtar hakkında da çok bir bilgim yok, ama söylentilere göre Fallhaven "
+"Kilisesi'nin altındaki mezarlıktaymış."
 
 #: conversationlist_fallhaven_bucus.json:bucus_thieves_4:0
 msgid "OK, sounds easy enough."
-msgstr "Tamam, yeterince kolay geliyor."
+msgstr "Tamam, kulağa kolay geliyor."
 
 #: conversationlist_fallhaven_bucus.json:bucus_thieves_continue
 msgid "How is the search for the key of Luthor going?"
-msgstr ""
+msgstr "Luthor'un anahtarından ne haberler var bakalım?"
 
 #: conversationlist_fallhaven_bucus.json:bucus_thieves_continue:1
 msgid "Here, I have it. The key of Luthor."
-msgstr "Burada, o bende. Luthor'un anahtarı."
+msgstr "Getirdim, işte burada. Luthor'un anahtarı."
 
 #: conversationlist_fallhaven_bucus.json:bucus_thieves_continue:2
 msgid "I'm still looking for it. Bye."
@@ -1803,6 +1814,8 @@ msgstr "Hala arıyorum. Görüşürüz."
 #: conversationlist_fallhaven_bucus.json:bucus_thieves_complete_1
 msgid "Wow, you actually got the key of Luthor? I didn't think you would make it out of there."
 msgstr ""
+"Vaay, gerçekten alabilmişsin. Oradan canlı çıkabilmene pek ihtimal "
+"vermiyordum."
 
 #: conversationlist_fallhaven_bucus.json:bucus_thieves_complete_2
 msgid "Well done kid."
@@ -1822,11 +1835,11 @@ msgstr "Gölge, beni kucakla."
 
 #: conversationlist_fallhaven_church.json:thoronir_default
 msgid "Bask in the Shadow, my child."
-msgstr "Gölgede güneşlenmek, benim çocuğum."
+msgstr "Yüce Gölge'nin ışıltısı seninle olsun, çocuğum."
 
 #: conversationlist_fallhaven_church.json:thoronir_default:0
 msgid "What can you tell me about the Shadow?"
-msgstr "Bana gölge hakkında ne anlatabilirsin?"
+msgstr "Bana Gölge hakkında ne anlatabilirsin?"
 
 #: conversationlist_fallhaven_church.json:thoronir_default:1
 msgid "Can you tell me more about the church?"
@@ -1834,16 +1847,18 @@ msgstr "Bana kilise hakkında daha fazla bilgi verebilir misin?"
 
 #: conversationlist_fallhaven_church.json:thoronir_default:2
 msgid "Are the Bonemeal potions ready yet?"
-msgstr "Kemik tozu iksirleri hazır oldu mu?"
+msgstr "Kemik tozu iksirleri hazır mı?"
 
 #: conversationlist_fallhaven_church.json:thoronir_default:3
 msgid "I really need your help!"
-msgstr ""
+msgstr "Gerçekten yardımına ihtiyacım var!"
 
 #: conversationlist_fallhaven_church.json:thoronir_shadow_1
 #: conversationlist_jolnor.json:jolnor_shadow_1
 msgid "The Shadow protects us from the dangers of the night. It keeps us safe and comforts us when we sleep."
 msgstr ""
+"Gölge bizi gecenin tehlikelerinden korur. Bizi güvende tutar ve uykumuzda "
+"huzur bulmamızı sağlar."
 
 #: conversationlist_fallhaven_church.json:thoronir_shadow_1:0
 msgid "Tharal sent me and told me to tell you the password 'Glow of the Shadow'."
