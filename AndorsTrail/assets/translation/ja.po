@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: Andors Trail\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-11-10 11:48+0000\n"
-"PO-Revision-Date: 2020-07-31 03:54+0000\n"
+"PO-Revision-Date: 2020-08-01 11:12+0000\n"
 "Last-Translator: Mieru <sanna+hw@dismail.de>\n"
 "Language-Team: Japanese <https://hosted.weblate.org/projects/andors-trail/"
 "game-content/ja/>\n"
@@ -27,7 +27,7 @@ msgstr "祝福"
 
 #: actorconditions_v069.json:poison_weak
 msgid "Weak Poison"
-msgstr "毒"
+msgstr "ポイズン(弱)"
 
 #: actorconditions_v069.json:str
 msgid "Strength"
@@ -207,7 +207,7 @@ msgstr "鈍化"
 
 #: actorconditions_stoutford.json:curse_undead
 msgid "Curse of the Undead"
-msgstr "アンデッドの呪い"
+msgstr "不死の呪い"
 
 #: actorconditions_graveyard1.json:contagion2
 msgid "Spore contagion"
@@ -38318,11 +38318,11 @@ msgstr "速度のマイナーポーション"
 
 #: itemlist_v069.json:pot_poison_weak
 msgid "Weak poison"
-msgstr "毒"
+msgstr "ポイズン(弱)"
 
 #: itemlist_v069.json:pot_poison_weak_antidote
 msgid "Weak poison antidote"
-msgstr "毒の解毒薬"
+msgstr "ポイズン(弱)の解毒薬"
 
 #: itemlist_v069.json:pot_bleeding_ointment
 msgid "Ointment of bleeding wounds"
@@ -38907,7 +38907,7 @@ msgstr "Lyson骨髄エキスのバイアル"
 
 #: itemlist_v0611_3.json:algangror_idol
 msgid "Small idol"
-msgstr ""
+msgstr "小さな偶像"
 
 #: itemlist_v0611_3.json:algangror_ring
 msgid "Algangror's ring"
@@ -38915,7 +38915,7 @@ msgstr "Algangrorのリング"
 
 #: itemlist_v0611_3.json:kaverin_message
 msgid "Kaverin's sealed message"
-msgstr ""
+msgstr "Kaverinの封印されたメッセージ"
 
 #: itemlist_v0611_3.json:vacor_map
 msgid "Map to Vacor's old hideout"
@@ -39477,7 +39477,7 @@ msgstr "Stuephantのビー玉"
 
 #: itemlist_guynmart.json:guynmart_shield
 msgid "Guynmart shield"
-msgstr ""
+msgstr "Guynmartシールド"
 
 #: itemlist_guynmart.json:guynmart_scroll
 msgid "Scroll of wisdom"
@@ -39489,7 +39489,7 @@ msgstr "古いテディベア"
 
 #: itemlist_trader_teksin.json:pot_irdegh_poison_elixir
 msgid "Irdegh poison elixir"
-msgstr ""
+msgstr "Irdegh毒エリキシル"
 
 #: itemlist_trader_teksin.json:bwm_boots
 msgid "Blackwater boots"
@@ -39714,8 +39714,9 @@ msgid "Potion of sound mind"
 msgstr "健全な精神のポーション"
 
 #: itemlist_stoutford_combined.json:damerilias
+#, fuzzy
 msgid "Damerilias"
-msgstr ""
+msgstr "Damerilias"
 
 #: itemlist_stoutford_combined.json:damerilias:description
 msgid "Flowers that grow only in Remgard"
@@ -39768,7 +39769,7 @@ msgstr "スコーピオンスティング"
 
 #: itemlist_stoutford_combined.json:glade_key
 msgid "Key to the glade"
-msgstr "林間の空地の鍵"
+msgstr "空き地の鍵"
 
 #: itemlist_stoutford_combined.json:soap
 msgid "Soap"
@@ -39992,7 +39993,7 @@ msgstr "刻印入りスチールヘルメット"
 
 #: itemlist_brimhaven.json:boots_6
 msgid "Boots of Swiftness"
-msgstr ""
+msgstr "素早さのブーツ"
 
 #: itemlist_brimhaven.json:brv_boulder
 msgid "Boulder"
@@ -40020,11 +40021,11 @@ msgstr "トライデントダガー"
 
 #: itemlist_brimhaven.json:brv_brew
 msgid "Brimhaven brew"
-msgstr ""
+msgstr "Brimhavenビール"
 
 #: itemlist_brimhaven.json:card_deck
 msgid "Cards of luck"
-msgstr ""
+msgstr "幸運のカード"
 
 #: itemlist_brimhaven.json:eggs_duck
 msgid "Duck eggs"
@@ -43420,7 +43421,7 @@ msgstr ""
 #: monsterlist_stoutford_combined.json:stn_colonel
 #: questlist_stoutford_combined.json:stn_colonel
 msgid "Colonel Lutarc"
-msgstr ""
+msgstr "Lutarc大佐"
 
 #: monsterlist_stoutford_combined.json:stn_colonel_mons1
 #: monsterlist_stoutford_combined.json:stn_lizard
@@ -44493,7 +44494,7 @@ msgstr "Jolnorに衛兵がいなくなったことを伝えた。"
 
 #: questlist_v069.json:bwm_agent
 msgid "The agent and the beast"
-msgstr "エージェントと獣"
+msgstr "エージェントとビースト"
 
 #: questlist_v069.json:bwm_agent:1
 msgid "I met a man seeking help for his settlement, the 'Blackwater mountain'. Supposedly, his settlement is being attacked by monsters and bandits, and they need help from the outside."
@@ -45167,7 +45168,7 @@ msgstr ""
 
 #: questlist_v0611.json:thorin
 msgid "Bits and pieces"
-msgstr ""
+msgstr "小片と断片"
 
 #: questlist_v0611.json:thorin:20
 msgid "In a cave to the east, I found a man called Thorin, that wants me to help him find the remains of his former travelling companions. I should find the remains of all six of them and return them to him."
@@ -45188,35 +45189,37 @@ msgstr "Thorinは手助けしてくれたことに感謝した。お礼として
 
 #: questlist_v0611.json:algangror
 msgid "Of mice and men"
-msgstr ""
+msgstr "ネズミと人の"
 
 #: questlist_v0611.json:algangror:10
 msgid "In a lonely house on a peninsula at the northern shore of lake Laeroth up in the mountains to the north-east, I met a woman called Algangror."
-msgstr ""
+msgstr "北東の山中、Laeroth湖の北岸にある半島の人里離れた家で、Algangrorという女性に出会った。"
 
 #: questlist_v0611.json:algangror:11
 msgid "She has a rodent problem and needs help dealing with some of them that she has trapped in her basement."
-msgstr ""
+msgstr "彼女はげっ歯動物の問題を抱えており、彼女が地下室に閉じ込めたそれらのうちのいくつかを対処するための助けを必要としている。"
 
 #: questlist_v0611.json:algangror:15
 msgid "I have agreed to help Algangror deal with her rodent problem. I should return to her when I have killed all six rodents in her basement."
-msgstr ""
+msgstr "Algangrorのげっ歯動物問題の解決に協力することに同意した。地下室のげっ歯動物6匹を全て殺したら、彼女のところに戻ろう。"
 
 #: questlist_v0611.json:algangror:20
 msgid "Algangror thanked me for helping her with her problem."
-msgstr ""
+msgstr "Algangrorは問題に対処してくれたことに感謝した。"
 
 #: questlist_v0611.json:algangror:21
 msgid "She also told me not to talk to anyone in Remgard about her whereabouts. Apparently, they are looking for her for some reason that she would not say. Under no circumstances should I tell anyone where she is."
 msgstr ""
+"彼女には、Remgardの誰にも居場所を話さないようにとも言われた。何らかの理由で彼女を探しているようだが、彼女は話さなかった。どんなことがあっても、誰に"
+"も彼女の居場所を話してはいけない。"
 
 #: questlist_v0611.json:algangror:100
 msgid "I will not help Algangror with her task."
-msgstr ""
+msgstr "私はAlgangrorの仕事を手伝うつもりはない。"
 
 #: questlist_v0611.json:algangror:101
 msgid "Algangror won't talk to me, and I will be unable to help her with her task."
-msgstr ""
+msgstr "Algangrorは話しかけてこないし、彼女の仕事を手伝うこともできない。"
 
 #: questlist_v0611_2.json:toszylae
 msgid "An involuntary carrier"
@@ -45384,155 +45387,176 @@ msgstr ""
 
 #: questlist_v0611_2.json:sisterfight
 msgid "A difference of opinion"
-msgstr ""
+msgstr "見解の相違"
 
 #: questlist_v0611_2.json:sisterfight:10
 msgid "I heard a story about two squabbling sisters in Remgard, Elwel and Elwyl. Apparently they have kept people awake at night with the way they are shouting at each other. I should go visit them in their house on the southern shore of the city of Remgard."
 msgstr ""
+"Remgardで喧嘩しているElwelとElwylの二人の姉妹の話を聞いた。二人は怒鳴り合いで夜も眠れないようにしているらしい。Remgardの町の南岸に"
+"ある彼女たちの家に行ってみよう。"
 
 #: questlist_v0611_2.json:sisterfight:20
 msgid "I have talked to Elwyl, one of the Elwille sisters in Remgard. She is furious at her sister for not agreeing on even the most simple of facts. Apparently, they have had their disagreements with each other for several years."
 msgstr ""
+"RemgardのElwille姉妹のElwylと話した。彼女はごく単純な事実にさえも意見が合わない姉に激怒している。彼女らは数年前から意見が合わないようだ"
+"。"
 
 #: questlist_v0611_2.json:sisterfight:21
 msgid "Elwel will not speak to me."
-msgstr ""
+msgstr "Elwelは私と話さない。"
 
 #: questlist_v0611_2.json:sisterfight:30
 msgid "One matter that the sisters disagree on currently is the color of a certain potion that the town potion-maker Hjaldar used to make. Elwyl says that the potion of accuracy focus that Hjaldar used to make was a blue potion, but Elwel insists that the potion was a green substance."
 msgstr ""
+"現在、姉妹が意見の食い違いをしている問題は、町の薬師であるHjaldarが以前作っていたあるポーションの色のことだ。ElwylはHjaldarが作っていた"
+"命中重視のポーションは青色だと言っているが、Elwelは緑色だったと主張している。"
 
 #: questlist_v0611_2.json:sisterfight:31
 msgid "Elwyl wants me to get a potion of accuracy focus from Hjaldar here in Remgard so that she can finally prove to Elwel that she is wrong."
 msgstr ""
+"ElwylはElwelが間違っていることを証明するために、ここRemgardでHjaldarから命中重視のポーションを買ってきてほしいと言っている。"
 
 #: questlist_v0611_2.json:sisterfight:40
 msgid "I have talked to Hjaldar in Remgard. Hjaldar no longer makes potions since his supply of Lyson marrow extract has gone dry."
-msgstr ""
+msgstr "RemgardでHjaldarと話した。HjaldarはLyson骨髄エキスの供給が枯渇しまったので、もうポーションを作らなくなっていた。"
 
 #: questlist_v0611_2.json:sisterfight:41
 msgid "Apparently, Hjaldar's old friend Mazeg would surely have some Lyson marrow extract to sell. Unfortunately, he does not know where Mazeg currently lives. He only knows that Mazeg traveled far to the west last time they met."
 msgstr ""
+"Hjaldarの旧友のMazegなら Lyson骨髄エキスを売っているらしい。残念ながら、彼はMazegが現在どこに住んでいるか知らない。彼が知っているの"
+"は、最後に会った時にMazegがはるか西へと旅立ったことだけだ。"
 
 #: questlist_v0611_2.json:sisterfight:45
 msgid "I should find Mazeg and get some Lyson marrow extract so that Hjaldar can start making potions again."
-msgstr ""
+msgstr "Mazegを探し出してLyson骨髄エキスを手入し、Hjaldarが再びポーションを作り始めることができるようにしよう。"
 
 #: questlist_v0611_2.json:sisterfight:50
 msgid "I have talked to Mazeg in the Blackwater mountain settlement. Since I helped the people of the Blackwater mountain before, he is willing to sell me a vial of Lyson marrow extract for only 400 gold."
 msgstr ""
+"Blackwater山の集落でMazegと話した。以前にBlackwater山の人々を助けたことがあるので、400goldでLyson髄液エキスのバイアル"
+"を売ってくれるそうだ。"
 
 #: questlist_v0611_2.json:sisterfight:51
 msgid "I have talked to Mazeg in the Blackwater mountain settlement. He is willing to sell me Lyson marrow extract for 800 gold."
-msgstr ""
+msgstr "Blackwater山の集落にいるMazegと話した。800goldでLyson髄液エキスを売ってくれるそうだ。"
 
 #: questlist_v0611_2.json:sisterfight:55
 msgid "I have bought some Lyson marrow extract from Mazeg. I should return to Remgard and give it to Hjaldar."
-msgstr ""
+msgstr "MazegからLyson髄液エキスを買った。Remgardに戻ってHjaldarに渡そう。"
 
 #: questlist_v0611_2.json:sisterfight:60
 msgid "Hjaldar thanked me for bringing him the marrow extract."
-msgstr ""
+msgstr "Hjaldarは骨髄エキスを持ってきてくれたことに感謝した。"
 
 #: questlist_v0611_2.json:sisterfight:61
 msgid "Hjaldar can now create potions again, and is willing to trade with me. He even gave me some of the first potions that he made. I should go visit the Elwille sisters here in Remgard again, and show them a potion of accuracy focus."
 msgstr ""
+"Hjaldarは再びポーションを作れるようになった。私と取引したいとも言ってくれた。彼が最初に作ったポーションもくれた。RemgardにいるElwille"
+"姉妹をもう一度訪ねて、命中重視のポーションを見せよう。"
 
 #: questlist_v0611_2.json:sisterfight:70
 msgid "I have given a potion of accuracy focus to Elwyl."
-msgstr ""
+msgstr "Elwylに命中重視のポーションを渡した。"
 
 #: questlist_v0611_2.json:sisterfight:71
 msgid "Unfortunately, it did not cause their squabbling to diminish. On the contrary, they seem to be even more angry at each other now, since both of them had the color wrong."
-msgstr ""
+msgstr "残念ながら、それで彼女たちの口喧嘩が減ることはなかった。それどころか、二人とも色を間違えていたので、今はお互いにもっと怒っているようだ。"
 
 #: questlist_v0611_3.json:remgard
 msgid "Everything in order"
-msgstr ""
+msgstr "すべてが適切に"
 
 #: questlist_v0611_3.json:remgard:10
 msgid "I have reached the bridge to enter the town of Remgard. According to the bridge guard, the town is closed for outsiders to enter, and no-one is currently allowed to leave. They are investigating some disappearances of some of the townspeople."
 msgstr ""
+"Remgardの町に入るための橋に着いた。橋の衛兵によると、町は部外者の立ち入りが禁止されており、現在は誰も立ち入ることができない。何人かの町民の失踪を捜"
+"査しているのだそうだ。"
 
 #: questlist_v0611_3.json:remgard:15
 msgid "I have offered my assistance in helping the people of Remgard investigate what has happened to the townspeople that have disappeared."
-msgstr ""
+msgstr "Remgardの人々が、行方不明になった町の人々に何が起きたのかを調査するのに協力を申し出た。"
 
 #: questlist_v0611_3.json:remgard:20
 msgid "The bridge guard has asked me to investigate an abandoned house to the east along the northern shore of the lake. I should be wary of any inhabitants that may be there."
-msgstr ""
+msgstr "橋の衛兵は、湖の北岸に沿って東側にある廃屋を調査するよう頼んできた。そこにいるかもしれない住人に注意しよう。"
 
 #: questlist_v0611_3.json:remgard:30
 msgid "I have reported back to the bridge guard that I met Algangror in the abandoned house."
-msgstr ""
+msgstr "廃屋でAlgangrorに会ったことを橋の衛兵に報告した。"
 
 #: questlist_v0611_3.json:remgard:31
 msgid "I have reported back to the bridge guard that the abandoned house was empty."
-msgstr ""
+msgstr "廃屋は空き家だったと橋の衛兵に報告した。"
 
 #: questlist_v0611_3.json:remgard:35
 msgid "I have been granted entrance into Remgard. I should go visit Jhaeld, the town elder, to talk about what the next step should be. Jhaeld can probably be found in the tavern to the southeast."
 msgstr ""
+"Remgardへの入場を許可された。町の長老であるJhaeldを訪ねて、次に何をするべきかについて話そう。Jhaeldは南東の酒場にいるはずだ。"
 
 #: questlist_v0611_3.json:remgard:40
 msgid "Jhaeld was rather arrogant, but told me that they have had a problem with people disappearing for a while now. They have no clue what could be causing it."
 msgstr ""
+"Jhaeldはかなり横柄だったが、このところしばらく人々がいなくなる問題が発生していることを語してくれた。何が原因なのか手掛かりを掴めていない。"
 
 #: questlist_v0611_3.json:remgard:50
 msgid "I should visit four people in Remgard, and ask them about any clues on what might have happened to the missing people."
-msgstr ""
+msgstr "Remgardにいる4人を訪ねて、行方不明者に何が起きたのか手がかりがないか尋ねよう。"
 
 #: questlist_v0611_3.json:remgard:51
 msgid "First is Norath, whose wife Bethir has disappeared. Norath can be found in the south-westernmost farmhouse."
-msgstr ""
+msgstr "一人目は、妻のBethirが行方不明になったNorath。南西端の農家にいる。"
 
 #: questlist_v0611_3.json:remgard:52
 msgid "Second, I should go talk to the Knights of Elythom, here in the tavern."
-msgstr ""
+msgstr "二人目は、ここの酒場にいるElythomの騎士たちに話を聞こう。"
 
 #: questlist_v0611_3.json:remgard:53
 msgid "Third, I should go talk to the old woman Duaina in her house to the south."
-msgstr ""
+msgstr "三人目は、南の家にいる老婆のDuainaに話を聞こう。"
 
 #: questlist_v0611_3.json:remgard:54
 msgid "Lastly, I should talk to Rothses, the armorer. He lives on the west side of town."
-msgstr ""
+msgstr "最後に、防具屋のRothsesに話を聞こう。彼は町の西側に住んでいる。"
 
 #: questlist_v0611_3.json:remgard:59
 msgid "I tried to tell Jhaeld about Algangror, but he dismissed me as he had not heard me."
-msgstr ""
+msgstr "JhaeldにAlgangrorのことを伝えようとしたが、彼は私の話を聞いていなかったので私を退出させた。"
 
 #: questlist_v0611_3.json:remgard:61
 msgid "I have talked to Norath. He and his wife had been fighting recently, but he has no idea on what may have happened to her."
-msgstr ""
+msgstr "Norathと話した。彼と妻は最近喧嘩をしていたが、彼女に何が何があったのかは全く分からないという。"
 
 #: questlist_v0611_3.json:remgard:62
 msgid "The Knights of Elythom in the Remgard tavern have had one of their knights disappearing recently. No one noticed anything when she disappeared, however."
-msgstr ""
+msgstr "Remgardの酒場にいるElythom騎士団では、最近一人の騎士が失踪した。しかし彼女がいなくなった時、誰も何も気づかなかった。"
 
 #: questlist_v0611_3.json:remgard:63
 msgid "Duaina has seen me in her visions. I did not understand all that she spoke of, but the parts that were clear were that me and Andor were parts of a larger plot. I wonder what this means? She did not speak of any disappearing people however, not that I could understand anyway."
 msgstr ""
+"Duainaはビジョンの中で私を見た。彼女の言っていることの全ては理解できなかったが、はっきりとしているのは、私とAndorが大きな陰謀の一部であるという"
+"事だった。どういう意味だろう。だが彼女は行方不明者については何も話さず、とにかく私には理解できなかった。"
 
 #: questlist_v0611_3.json:remgard:64
 msgid "Rothses told me that Bethir visited him the night before she disappeared, to sell some equipment. He did not see where she went after that."
-msgstr ""
+msgstr "Rothsesによると、Bethirが姿を消す前夜に機材を売るために彼を訪ねたそうだ。その後彼女がどこに行ったのかは見ていないという。"
 
 #: questlist_v0611_3.json:remgard:70
 msgid "I have talked to all of the people that Jhaeld wanted me to talk to, but did not get any information from any of them about what may have happened to the missing people. I should go back to Jhaeld and ask what his plans are next."
 msgstr ""
+"Jhaeldが話を聞いてほしいと言った全員を訪ねたが、行方不明の人々に何があったのかという情報は何も得られなかった。Jhaeldのもとへ戻って次の計画を聞"
+"こう。"
 
 #: questlist_v0611_3.json:remgard:75
 msgid "Jhaeld was really upset that I did not find out anything from the people that I was sent to talk to."
-msgstr ""
+msgstr "Jhaeldは話を聞いてきた人たちから何も聞き出せなかったことに、酷く取り乱していた。"
 
 #: questlist_v0611_3.json:remgard:80
 msgid "If I still want to help Jhaeld and the people of Remgard, I should look for clues in other places."
-msgstr ""
+msgstr "それでもJhaeldとRemgardの人たちを助けたいのなら、他の場所で手がかりを探そう。"
 
 #: questlist_v0611_3.json:remgard:110
 msgid "Jhaeld does not want to talk to me. I will not help them find out what happened to the missing people of Remgard."
-msgstr ""
+msgstr "Jhaeldは私と話そうとしない。私はRemgardの行方不明者に何が起きたのかの調査を手伝うつもりはない。"
 
 #: questlist_v0611_3.json:remgard2
 msgid "What is that stench?"
@@ -45656,187 +45680,206 @@ msgstr ""
 
 #: questlist_v0611_3.json:kaverin
 msgid "Old friends?"
-msgstr ""
+msgstr "旧友?"
 
 #: questlist_v0611_3.json:kaverin:10
 msgid "I met Kaverin in Remgard, that apparently is an old acquaintance of Unzel, who lives outside of Fallhaven."
-msgstr ""
+msgstr "Remgardで出会ったKaverinは、Fallhaven郊外に住むUnzelの古い知り合いだそうだ。"
 
 #: questlist_v0611_3.json:kaverin:20
 msgid "Kaverin wants me to deliver a message to Unzel."
-msgstr ""
+msgstr "Kaverinは、Unzelにメッセージを届けてほしいと言っている。"
 
 #: questlist_v0611_3.json:kaverin:21
 msgid "I have declined to help Kaverin."
-msgstr ""
+msgstr "Kaverinの頼みを断った。"
 
 #: questlist_v0611_3.json:kaverin:22
 msgid "I have agreed to deliver the message."
-msgstr ""
+msgstr "メッセージを届けることを引き受けた。"
 
 #: questlist_v0611_3.json:kaverin:25
 msgid "Kaverin has given me the message that he wants me to deliver to Unzel."
-msgstr ""
+msgstr "Kaverinから、Unzelに届けてほしいというメッセージを預かった。"
 
 #: questlist_v0611_3.json:kaverin:30
 msgid "I have delivered the message to Unzel. I should return to Kaverin in Remgard."
-msgstr ""
+msgstr "Unzelにメッセージを届けた。RemgardのKaverinのところへ戻ろう。"
 
 #: questlist_v0611_3.json:kaverin:40
 msgid "Kaverin thanked me for delivering the message to Unzel."
-msgstr ""
+msgstr "KaverinはUnzelにメッセージを届けてくれたことに感謝した。"
 
 #: questlist_v0611_3.json:kaverin:45
 msgid "In return, Kaverin gave me an old map that he had acquired. Apparently, it leads to Vacor's old hideout."
-msgstr ""
+msgstr "お返しとして、Kaverinは入手した古い地図をくれた。Vacorの古い隠れ家に通じているそうだ。"
 
 #: questlist_v0611_3.json:kaverin:60
 msgid "Kaverin was furious over the fact that I killed Unzel, and that I helped Vacor. He started attacking me. I should return to Vacor once Kaverin is dead."
 msgstr ""
+"Kaverinは、私がUnzelを殺してVacorを助けたことに激怒した。彼は私に襲いかかってきた。Kaverinが死んだらVacorのところへ戻ろう。"
 
 #: questlist_v0611_3.json:kaverin:70
 msgid "Kaverin was carrying a sealed message. Vacor immediately recognized the seal, and seemed very interested in it."
-msgstr ""
+msgstr "Kaverinは封印されたメッセージを持っていた。Vacorはすぐにその封書に気付き、強い関心を抱いたようだった。"
 
 #: questlist_v0611_3.json:kaverin:75
 msgid "I have given Vacor the message that Kaverin was carrying. In return, Vacor gave me an old map, leading to his old hideout."
-msgstr ""
+msgstr "VacorにKaverinが持っていたメッセージを渡した。お返しとして、Vacorは古い隠れ家への地図をくれた。"
 
 #: questlist_v0611_3.json:kaverin:90
 msgid "I should try to find Vacor's old hideout, on the road to the west of the former prison of Flagstone, southwest of Fallhaven."
-msgstr ""
+msgstr "Fallhavenの南西、Flagstone旧刑務所の西の道で、Vacorの古い隠れ家を探そう。"
 
 #: questlist_v0611_3.json:kaverin:100
 msgid "I have found Vacor's old hideout."
-msgstr ""
+msgstr "Vacorの古い隠れ家を見つけた。"
 
 #: questlist_v070_charwood.json:charwood1
 msgid "Destined for great things"
-msgstr ""
+msgstr "大いなる運命"
 
 #: questlist_v070_charwood.json:charwood1:10
 msgid "I heard a rumor that some mining town in the Charwood forest, northwest of the Foaming Flask tavern, has had some troubles recently. I should try to find the Charwood cabin and find out what has happened."
 msgstr ""
+"Foaming Flask酒場の北西にあるCharwoodの森の鉱山町で最近、何かトラブルが発生しているという噂を聞いた。Charwoodの小屋を探して最"
+"近何が起きたのか調べよう。"
 
 #: questlist_v070_charwood.json:charwood1:11
 msgid "I heard someone mention that the mining town of Charwood heights has had some troubles recently. I should search for the Charwood cabin in the forest northwest of the Foaming Flask tavern."
 msgstr ""
+"鉱山の町Charwoodでは最近、トラブルが起きているという話を聞いた。Foaming Flask酒場の北西の森にあるCharwoodの小屋を探そう。"
 
 #: questlist_v070_charwood.json:charwood1:19
 msgid "I have found the Charwood cabin in the forest northwest of the Foaming Flask tavern."
-msgstr ""
+msgstr "Foaming Flask酒場の北西の森の中で、Charwoodの小屋を見つけた。"
 
 #: questlist_v070_charwood.json:charwood1:20
 msgid "Maevalia in the Charwood cabin told me a story about how their mining settlement was attacked by some monsters, forcing them to flee down the mountain. They are still missing several of their friends and relatives from the Charwood heights, either killed or captured by the monsters."
 msgstr ""
+"Charwoodの小屋のMaevaliaは、彼らの鉱山集落がモンスターたちの襲撃を受けて、山から逃げざるを得なくなったという話をしてくれた。彼らは、モンス"
+"ターに殺されたか捕らえられたかによって、Charwood高地に住む友人や親族たちを失っている。"
 
 #: questlist_v070_charwood.json:charwood1:21
 msgid "In particular, Maevalia mentions four people that are greatly missed; their former leader Morenavia, their weapons trainer Falothen, the healer Ayell and their armorer Fayvara."
 msgstr ""
+"特に、Maevaliaは4人の人々が非常に惜しまれていると言う。先代指導者のMorenavia、武器トレーナーのFalothen、治療者のAyell、防具"
+"師のFayvara。"
 
 #: questlist_v070_charwood.json:charwood1:30
 msgid "I have agreed to help the people of Charwood find their missing people."
-msgstr ""
+msgstr "Charwoodの人々が行方不明者を見つけるのを手伝うことに同意した。"
 
 #: questlist_v070_charwood.json:charwood1:35
 msgid "The guard outside the Charwood cabin allowed me to enter the hills ahead. I should keep to the east and then head north."
-msgstr ""
+msgstr "Charwoodの小屋の外の衛兵はこの先の丘に入るのを許可してくれた。東へ向かい、それから北へと進もう。"
 
 #: questlist_v070_charwood.json:charwood1:40
 msgid "I encountered one of the monsters that Maevalia spoke of. The monster spoke of someone or something called 'The Thukuzun'."
-msgstr ""
+msgstr "Maevaliaの話していたモンスターの一体と遭遇した。モンスターは'The Thukuzun'と呼ばれる何か、あるいは何者かについて語った。"
 
 #: questlist_v070_charwood.json:charwood1:41
 msgid "I have found Falothen, the weapons trainer of the Charwood heights, and freed him from the restraints that held him. He will try to make his way back to the Charwood cabin himself."
-msgstr ""
+msgstr "Charwood高地で武器トレーナーのFalothenを発見し、彼を拘束から解放した。彼は自力でCharwoodの小屋に戻るつもりだ。"
 
 #: questlist_v070_charwood.json:charwood1:42
 msgid "I have found some skeletal remains, containing a ring with the insignia 'Morenavia'. This must be the former leader of the Charwood hills."
-msgstr ""
+msgstr "'Morenavia'という印のついた指輪を含む、白骨化した遺体を発見した。Charwoodの丘の先代指導者のものに違いないだろう。"
 
 #: questlist_v070_charwood.json:charwood1:43
 msgid "I have found the armorer Fayvara, and freed her from the restraints that held her. She will try to make her way back to the Charwood cabin herself."
-msgstr ""
+msgstr "防具師のFayvaraを発見し、彼女を拘束から解放した。彼女は自力でCharwoodの小屋に戻るつもりだ。"
 
 #: questlist_v070_charwood.json:charwood1:44
 msgid "I have found some skeletal remains, containing a ring with the insignia 'Ayell'. This must be the remains of the Charwood hills healer that Maevalia mentioned."
 msgstr ""
+"'Ayell'という印のついた指輪を含む、白骨化した遺体を発見した。Maevaliaの話していた、Charwoodの丘の治癒者の遺体に違いないだろう。"
 
 #: questlist_v070_charwood.json:charwood1:50
 msgid "Maevalia thanked me for finding out what happened to the four people that she told me about, but was really sad to hear about the fate of Morenavia and Ayell. Both the weapons trainer Falothen and the armorer Fayvara made it back to the Charwood cabin safely."
 msgstr ""
+"Maevaliaは私に話した4人がどうなっていたのかを調べてくれたことに感謝したが、MorenaviaとAyellの不幸を聞いてとても悲しんでいた。武器ト"
+"レーナーのFalothenと防具師のFayvaraは、無事にCharwoodの小屋に戻ってきた。"
 
 #: questlist_v070_charwood.json:charwood1:60
 msgid "She told me that both Falothen and Fayvara are anxious to see me, in the basement of the Charwood cabin. I should go see them at once."
-msgstr ""
+msgstr "彼女はFalothenとFayvaraがCharwoodの小屋の地下室で私に会いたがっていると話した。すぐに会いに行こう。"
 
 #: questlist_v070_charwood.json:charwood1:65
 msgid "Falothen was happy to see me again, and in return offered to train me in better handling of one weapon type. He can teach me better handling of one or two handed swords, daggers, blunt weapons, axes, or unarmed combat. I'll have to chose my preference and let him know."
 msgstr ""
+"Falothenは私との再会を喜び、お礼として一種類の武器をより上手く扱えるよう教えてくれることを申し出た。片手剣、両手剣、短剣、鈍器、斧、無手戦闘のいず"
+"れかを教えてくれる。自分の好みを選んで彼に伝えよう。"
 
 #: questlist_v070_charwood.json:charwood1:70
 msgid "Falothen has taught me how to better handle one handed swords."
-msgstr ""
+msgstr "Falothenは片手剣の扱い方を教えてくれた。"
 
 #: questlist_v070_charwood.json:charwood1:71
 msgid "Falothen has taught me how to better handle two handed swords."
-msgstr ""
+msgstr "Falothenは両手剣の扱い方を教えてくれた。"
 
 #: questlist_v070_charwood.json:charwood1:72
 msgid "Falothen has taught me how to better handle daggers."
-msgstr ""
+msgstr "Falothenは短剣の扱い方を教えてくれた。"
 
 #: questlist_v070_charwood.json:charwood1:73
 msgid "Falothen has taught me how to better handle blunt weapons."
-msgstr ""
+msgstr "Falothenは鈍器の扱い方を教えてくれた。"
 
 #: questlist_v070_charwood.json:charwood1:74
 msgid "Falothen has taught me how to better handle axes."
-msgstr ""
+msgstr "Falothenは斧の扱い方を教えてくれた。"
 
 #: questlist_v070_charwood.json:charwood1:75
 msgid "Falothen has taught me how to be better at fighting unarmed, without weapons."
-msgstr ""
+msgstr "Falothenは武器を持たずに戦う方法を教えてくれた。"
 
 #: questlist_v070_charwood.json:charwood1:80
 msgid "Falothen offered me the chance to learn about the other weapon types, but to teach me, he needs 5000 gold and two Oegyth crystals for each skill that I want to get better at."
 msgstr ""
+"Falothenは他の種類の武器についても教えてくれると申し出てくれたが、教えてもらうには各スキルごとに5000goldとOegythクリスタル2個が必要"
+"だ。"
 
 #: questlist_v070_charwood.json:charwood1:90
 msgid "Fayvara thanked me for rescuing her, and in return offered to train me in better handling of one type of armor. She can teach me better handling of shields, light armor, heavy armor or or unarmored combat. I'll have to chose my preference and let her know."
 msgstr ""
+"Fayvaraは助けてくれたことに感謝し、お礼として一種類の防具をより上手く扱えるよう教えてくれることを申し出た。盾、軽装甲、重装甲、非装甲戦闘のいずれか"
+"を教えてくれる。自分の好みを選んで彼女に伝えよう。"
 
 #: questlist_v070_charwood.json:charwood1:91
 msgid "Fayvara has taught me how to better handle shields."
-msgstr ""
+msgstr "Fayvaraは盾の扱い方を教えてくれた。"
 
 #: questlist_v070_charwood.json:charwood1:92
 msgid "Fayvara has taught me how to better handle light armor."
-msgstr ""
+msgstr "Fayvaraは軽装甲の扱い方を教えてくれた。"
 
 #: questlist_v070_charwood.json:charwood1:93
 msgid "Fayvara has taught me how to better handle heavy armor."
-msgstr ""
+msgstr "Fayvaraは重装甲の扱い方を教えてくれた。"
 
 #: questlist_v070_charwood.json:charwood1:94
 msgid "Fayvara has taught me how to better fighting unarmored, without wearing any armor."
-msgstr ""
+msgstr "Fayvaraは防具を身につけずに戦う方法を教えてくれた。"
 
 #: questlist_v070_charwood.json:charwood1:100
 msgid "Fayvara offered me the chance to learn about the other armor types, but to teach me, she needs 6000 gold and two Oegyth crystals for each skill that I want to get better at."
 msgstr ""
+"Fayvaraは他の種類の防具についても教えてくれると申し出てくれたが、教えてもらうには各スキルごとに6000goldとOegythクリスタル2個が必要だ"
+"。"
 
 #: questlist_v070_charwood.json:charwood1:110
 msgid "I have been taught one weapon type skill and one armor type skill from Falothen and Fayvara. I should go see Maevalia again."
-msgstr ""
+msgstr "FalothenとFayvaraから武器スキルと防具スキルを一種類ずつ教えてもらった。またMaevaliaに会いに行こう。"
 
 #: questlist_v070_charwood.json:charwood1:115
 msgid "Maevalia thanked me for helping the people of Charwood."
-msgstr ""
+msgstr "MaevaliaはCharwoodの人々を助けてくれたことに感謝した。"
 
 #: questlist_v070_charwood.json:charwood2
 msgid "Trial by fire"
-msgstr ""
+msgstr "火の試練"
 
 #: questlist_v070_charwood.json:charwood2:10
 msgid "I've heard a story that the whole reason for the Charwood hills being invaded by the monsters in the first place was that something had been awoken deep in the Charwood mine. The people in the Charwood cabin say that the miners uncovered some sort of marking on the ground in a cave, with strange noises coming from below it. When they finally broke through the ground around the markings, all the troubles started. I should talk to Maevalia again."
@@ -46662,109 +46705,115 @@ msgstr ""
 
 #: questlist_stoutford_combined.json:roots_love
 msgid "The roots of love"
-msgstr ""
+msgstr "愛のルーツ"
 
 #: questlist_stoutford_combined.json:roots_love:10
 msgid "Aryfora, a woman grieving in Stoutford's graveyard asked me to bring her some damerilias from Remgard for the grave of Noraed, her husband."
 msgstr ""
+"Stoutfordの墓地で悲しんでいるAryforaという女性から、Remgardから夫のNoraedの墓のためにdameriliasを摘んで来てほしい頼"
+"まれた。"
 
 #: questlist_stoutford_combined.json:roots_love:20
 msgid "Noraed's sister, Caeda, gave me some damerilias. I should bring them back to Stoutford."
-msgstr ""
+msgstr "Noraedの姉であるCaedaが、dameriliasをくれた。Stoutfordに持って帰ろう。"
 
 #: questlist_stoutford_combined.json:roots_love:30
 msgid "I have brought the damerilias back to Aryfora. She thanked me with a potion she made."
-msgstr ""
+msgstr "Aryforaのもとへdameriliasを持って帰った。彼女は自作したポーションで感謝した。"
 
 #: questlist_stoutford_combined.json:roots_love:40
 msgid "I told her the flowers were from Noraed's sister, Caeda."
-msgstr ""
+msgstr "彼女に、花はNoraedの姉のCaedaからのものであると伝えた。"
 
 #: questlist_stoutford_combined.json:roots_love:45
 msgid "I told her I found the flowers around Remgard, in the wild."
-msgstr ""
+msgstr "Remgardの辺りで野生の花を見つけたと彼女に伝えた。"
 
 #: questlist_stoutford_combined.json:secret_garden
 msgid "A secret garden"
-msgstr ""
+msgstr "秘密の花園"
 
 #: questlist_stoutford_combined.json:secret_garden:10
 msgid ""
 "Caeda in Remgard told me I can find fresh damerilias in her family's glade, but the key was taken by monsters.\n"
 "If I can find the key in the cave north of Remgard, I can access that glade, but I have to return the key to Caeda."
 msgstr ""
+"RemgardのCaedaは、自身の一家の管理する空き地であれば新鮮なdameriliasが見つかると話したが、鍵はモンスターに奪われてしまった。\n"
+"Remgardの北の洞窟で鍵を見つけられたならその空き地にも入れるが、鍵はCaedaに返す必要がある。"
 
 #: questlist_stoutford_combined.json:secret_garden:20
 msgid "Finding the key was not worth the trouble. The wilted damerilias Caeda gave me will be just fine."
-msgstr ""
+msgstr "鍵を見つけるのは割に合わない。Caedaから受け取った枯れたdameriliasで十分だ。"
 
 #: questlist_stoutford_combined.json:secret_garden:30
 msgid "I killed some monsters and found the key to the glade."
-msgstr ""
+msgstr "何体かのモンスターを倒して空き地の鍵を発見した。"
 
 #: questlist_stoutford_combined.json:secret_garden:40
 msgid "I returned the key right away to Caeda."
-msgstr ""
+msgstr "すぐにCaedaに鍵を返した。"
 
 #: questlist_stoutford_combined.json:secret_garden:45
 msgid "I kept the key for a while, but finally returned it to Caeda."
-msgstr ""
+msgstr "しばらく鍵を保管していたが、最終的にはCaedaに返した。"
 
 #: questlist_stoutford_combined.json:secret_garden:50
 msgid "Caeda asked for my help to clear out the monsters in the caves so that she can go back there and attend to the flowers."
-msgstr ""
+msgstr "Caedaは、洞窟に戻って花の世話ができるように、洞窟内のモンスターを一掃する手伝いを頼んできた。"
 
 #: questlist_stoutford_combined.json:secret_garden:55
 msgid "Many monsters are dead now. The rest will no longer dare to approach the statue."
-msgstr ""
+msgstr "多くのモンスターが退治された。残りは像に近づくような勇気はないだろう。"
 
 #: questlist_stoutford_combined.json:secret_garden:60
 msgid "I told Caeda, so that she can attend to the glade."
-msgstr ""
+msgstr "空き地の世話ができるように、Caedaに伝えておいた。"
 
 #: questlist_stoutford_combined.json:thorns_vengeance
 msgid "The thorns of vengeance"
-msgstr ""
+msgstr "復讐の棘"
 
 #: questlist_stoutford_combined.json:thorns_vengeance:10
 msgid "Aryfora in Stoutford needs my help to prove her uncle, Blornvale, Stoutford's alchemist, killed her father."
 msgstr ""
+"StoutfordのAryforaは、Stoutfordの錬金術師である叔父のBlornvaleが彼女の父を殺したことを証明するために私の協力を求めている"
+"。"
 
 #: questlist_stoutford_combined.json:thorns_vengeance:20
 msgid "She needs me to purchase three potions of the brave from Blornvale and return to her."
-msgstr ""
+msgstr "Blornvaleから3つの勇敢のポーションを購入して、彼女のところへ戻ろう。"
 
 #: questlist_stoutford_combined.json:thorns_vengeance:30
 msgid "I have returned with the three potions, and gave them to her."
-msgstr ""
+msgstr "3つのポーションを持って帰って彼女に渡した。"
 
 #: questlist_stoutford_combined.json:thorns_vengeance:32
 msgid "I decided not to help Aryfora any further."
-msgstr ""
+msgstr "これ以上Aryforaを助けないことにした。"
 
 #: questlist_stoutford_combined.json:thorns_vengeance:40
 msgid "She gave me a potion of truth."
-msgstr ""
+msgstr "彼女から真実のポーションを預かった。"
 
 #: questlist_stoutford_combined.json:thorns_vengeance:50
 msgid "She wants me to give that potion to Blornvale, and make him confess his crimes. I should have Tahalendor as a witness."
-msgstr ""
+msgstr "彼女はそのポーションをBlornvaleに渡して、彼に罪を自白させたいと言っている。Tahalendorを証人にしよう。"
 
 #: questlist_stoutford_combined.json:thorns_vengeance:60
 msgid "I agreed to make Blornvale drink that potion."
-msgstr ""
+msgstr "Blornvaleにポーションを飲ませることに同意した。"
 
 #: questlist_stoutford_combined.json:thorns_vengeance:65
 msgid "Tahalendor agreed to go with me to the alchemist's house to hear Blornvale's confession."
-msgstr ""
+msgstr "Tahalendorは私と一緒に錬金術師の家に行き、Blornvaleの告白を聞くことに同意した。"
 
 #: questlist_stoutford_combined.json:thorns_vengeance:70
 msgid "Blornvale drank the potion."
-msgstr ""
+msgstr "Blornvaleはポーションを飲んだ。"
 
 #: questlist_stoutford_combined.json:thorns_vengeance:71
 msgid "Tahalendor came to hear Blornvale's confession."
-msgstr ""
+msgstr "TahalendorはBlornvaleの告白を聞きに来た。"
 
 #: questlist_stoutford_combined.json:thorns_vengeance:72
 msgid "Blornvale confessed to killing Aryfora's father. Unfortunately there is no witness."
@@ -47284,42 +47333,55 @@ msgstr "若き商人"
 #: questlist_burhczyd.json:quest_burhczyd:10
 msgid "You met Burhczyd afgz Dtaloumiye, a likable young man, in a tavern. He wanted to see the world and followed your advice to travel as a trader from city to city."
 msgstr ""
+"酒場でBurhczyd afgz "
+"Dtaloumiyeという好感の持てる青年と出会った。彼は世界を見てみたいと思っており、アドバイスに従って商人として町から町へと旅に出た。"
 
 #: questlist_burhczyd.json:quest_burhczyd:20
 msgid "In another tavern you met Burhczyd again. He never got any customers, because he had named his company 'Burhczyd afgz Dtaloumiye - Transports'. You told him to find an easier name."
 msgstr ""
+"別の酒場でBurhczydに再会した。彼は自分の会社に'Burhczyd afgz Dtaloumiye - "
+"Transports'と名付けていたため、顧客を獲得できなかった。彼にもっと簡単な名前を考えるよう助言した。"
 
 #: questlist_burhczyd.json:quest_burhczyd:30
 msgid "You saw Burhczyd in a tavern, but he still did not have any customers. You told him that 'B.A.D. Transports' was not a good idea either."
-msgstr ""
+msgstr "酒場でBurhczydと会ったがまだ顧客はいなかった。彼には、'B.A.D. Transports'も良くないことを伝えた。"
 
 #: questlist_burhczyd.json:quest_burhczyd:40
 msgid "Another place, another tavern, Burhczyd again sitting there. He did get a shipment from Remgard of almost fresh fish, but nobody wanted to buy it. You bought the entire cargo and got it disposed of."
 msgstr ""
+"別の場所の別の酒場、そこにまたBurhczydがいた。彼はRemgardでほぼ新鮮な魚の積荷を仕入れていたが、誰もそれを買おうとはしなかった。あなたは積荷"
+"を全て買い取った上で処分した。"
 
 #: questlist_burhczyd.json:quest_burhczyd:50
 msgid "What a surprise - you met Burhczyd again in a tavern. He told you that he finally sold something successfully - his cart. The fool, how will he earn money now?"
 msgstr ""
+"驚いたことに、Burhczydと酒場で再会した。彼はついに、あるものを売ることに成功したのだと語った……自分の荷車を。お馬鹿、彼は今後どうやってお金を稼ぐ"
+"つもりだろう?"
 
 #: questlist_burhczyd.json:quest_burhczyd:60
 msgid "In a tavern a bard sang in a high, shrill voice. It's an old acquaintance - Burhczyd. His singing was incredibly bad. Maybe he should just play his instrument without singing?"
 msgstr ""
+"酒場でとある吟遊詩人が甲高い声で歌っていた。古い知人のBurhczydだ。彼の歌は信じられないほど下手だった。歌わずに楽器を演奏したほうがいいのでは?"
 
 #: questlist_burhczyd.json:quest_burhczyd:70
 msgid "You found Burhczyd collapsed at a table in the tavern, his lute lying in front of him. The landlord forbade him to play his lovely music, because then all the guests forgot to drink."
 msgstr ""
+"酒場のテーブルで倒れ込んでいるBurhczydを見つけた。そのすぐ前には彼のリュートが横たわっていた。主人からは、彼が素敵な音楽を奏でることを禁じられてい"
+"た。というのも、客たちは皆お酒を飲むのを忘れてしまうためだった。"
 
 #: questlist_burhczyd.json:quest_burhczyd:80
 msgid "Again you met Burhczyd in a tavern. He told you that he had become a master thief."
-msgstr ""
+msgstr "酒場でBurhczydと再会した。彼はスリの達人になったのだと語った。"
 
 #: questlist_burhczyd.json:quest_burhczyd:90
 msgid "When you met Burhczyd again, he gave you some of your things back."
-msgstr ""
+msgstr "Burhczydと再会した時、彼はいくつかのあなたの私物を返してくれた。"
 
 #: questlist_burhczyd.json:quest_burhczyd:100
 msgid "You've talked with a Knight of Elythom who happened to be an old acquaintance - Burhczyd. He had to hide from the Elythom, because he had 'borrowed' something of value from their leader."
 msgstr ""
+"Elythomの騎士と話をしたが彼は旧知の相手だった。Burhczydだ。彼はElythomのリーダーから何か価値のあるものを「借りて」いたので、彼らから"
+"隠れなければならなかった。"
 
 #: questlist_burhczyd.json:quest_burhczyd:110
 msgid "You've met Burhczyd"
