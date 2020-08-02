@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: Andors Trail\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-11-10 11:48+0000\n"
-"PO-Revision-Date: 2020-08-02 04:10+0000\n"
+"PO-Revision-Date: 2020-08-02 13:20+0000\n"
 "Last-Translator: Mieru <sanna+hw@dismail.de>\n"
 "Language-Team: Japanese <https://hosted.weblate.org/projects/andors-trail/"
 "game-content/ja/>\n"
@@ -3361,7 +3361,7 @@ msgstr ""
 
 #: conversationlist_signs_pre067.json:sign_crossglen_cave
 msgid "The sign on the wall is cracked in several places. You cannot make out anything comprehensible from the writing."
-msgstr ""
+msgstr "壁の看板にいくつかひびが入っている。書かれた文章からは何も理解できない。"
 
 #: conversationlist_signs_pre067.json:sign_wild1
 msgid ""
@@ -3375,7 +3375,7 @@ msgstr ""
 
 #: conversationlist_signs_pre067.json:sign_notdone
 msgid "This map is not yet done. Please come back in a later version of the game."
-msgstr ""
+msgstr "このマップはまだできていません。ゲームの新しいバージョンでまたお越しください。"
 
 #: conversationlist_signs_pre067.json:sign_wild3
 msgid ""
@@ -3389,7 +3389,7 @@ msgstr ""
 
 #: conversationlist_signs_pre067.json:sign_pitcave2
 msgid "Gandir lies here, slain by the hand of his former friend Irogotu."
-msgstr ""
+msgstr "Gandirはここに眠る、かつての友Irogotuの手によって殺された。"
 
 #: conversationlist_signs_pre067.json:sign_fallhaven1
 msgid "Welcome to Fallhaven. Watch out for pickpockets!"
@@ -3397,19 +3397,19 @@ msgstr "Fallhavenへようこそ。スリに気をつけて!"
 
 #: conversationlist_signs_pre067.json:key_fallhavenchurch
 msgid "You are not allowed to enter the catacombs of Fallhaven Church without permission."
-msgstr ""
+msgstr "Fallhaven教会の地下墓地に許可なく立ち入ることはできません。"
 
 #: conversationlist_signs_pre067.json:arcir_basement_tornpage
 msgid "You see a torn page from a book titled 'Calomyran Secrets'. Blood stains its edges, and someone has scribbled the words 'Larcal' with the blood."
-msgstr ""
+msgstr "「Calomyranの神秘」という本の破れたページがある。本の端には血の染みがあり、誰かが血で「Larcal」と書きなぐっている。"
 
 #: conversationlist_signs_pre067.json:arcir_basement_statue
 msgid "Elythara, mother of the light. Protect us from the curse of the Shadow."
-msgstr ""
+msgstr "Elythara、光の母よ。シャドウの呪いよりお守りください。"
 
 #: conversationlist_signs_pre067.json:fallhaven_tavern_room
 msgid "You are not allowed into the room unless you have rented it."
-msgstr ""
+msgstr "部屋を借りるまでは入ることはできません。"
 
 #: conversationlist_signs_pre067.json:fallhaven_derelict1
 msgid "Bucus shouts: Hey you, get away from there!"
@@ -3443,11 +3443,11 @@ msgstr ""
 
 #: conversationlist_signs_pre067.json:flagstone_key_demon
 msgid "The demon radiates a force that pushes you back, making it impossible for you to approach it."
-msgstr ""
+msgstr "悪魔はあなたを押し戻すような力を放射しており、近づくことができない。"
 
 #: conversationlist_signs_pre067.json:flagstone_brokensteps
 msgid "You notice that this tunnel seems to be dug out from below Flagstone. Probably the work of one of the former prisoners from Flagstone."
-msgstr ""
+msgstr "このトンネルはFlagstoneの下から掘られているようだ。Flagstoneの元囚人の手によるものだろう。"
 
 #: conversationlist_signs_pre067.json:sign_wild12
 msgid ""
@@ -6199,17 +6199,19 @@ msgstr ""
 
 #: conversationlist_signs_v068.json:foaming_flask_tavern_room
 msgid "You must rent the room before you may enter it."
-msgstr ""
+msgstr "入室する前に部屋を借りなければいけません。"
 
 #: conversationlist_signs_v068.json:sign_vilegard_n
 msgid ""
 "The sign says:\n"
 "Welcome to Vilegard, the friendliest town around."
 msgstr ""
+"看板にはこう書いてある。\n"
+"周辺で一番友好的な町、Vilegardへようこそ。"
 
 #: conversationlist_signs_v068.json:sign_foamingflask
 msgid "Welcome to the Foaming Flask tavern!"
-msgstr ""
+msgstr "Foaming Flask酒場へようこそ!"
 
 #: conversationlist_signs_v068.json:sign_road1_nw
 msgid ""
@@ -6233,7 +6235,7 @@ msgstr ""
 
 #: conversationlist_signs_v068.json:sign_oluag
 msgid "You see a recently dug grave."
-msgstr ""
+msgstr "あなたは最近掘られたお墓を見た。"
 
 #: conversationlist_signs_v068.json:sign_road2
 msgid ""
@@ -7900,7 +7902,7 @@ msgstr ""
 
 #: conversationlist_blackwater_signs.json:sign_prim_n
 msgid "Notice to all citizens: No one is allowed to enter the mines at night! Furthermore, climbing the mountain side is strictly forbidden after the accident with Lorn."
-msgstr ""
+msgstr "全住民へのお知らせ。夜間の炭鉱への立ち入りは禁じられています! また、Lornとの事故以降、山側への登山は厳禁となっています。"
 
 #: conversationlist_blackwater_signs.json:sign_prim_s
 msgid ""
@@ -7909,78 +7911,96 @@ msgid ""
 " - Lorn\n"
 " - Kamelio"
 msgstr ""
+"行方不明者\n"
+" - Duala\n"
+" - Lorn\n"
+" - Kamelio"
 
 #: conversationlist_blackwater_signs.json:sign_blackwater13
 msgid ""
 "No entry allowed.\n"
 "Signed by Guthbered of Prim."
 msgstr ""
+"立ち入り禁止。\n"
+"PrimのGuthbered署名。"
 
 #: conversationlist_blackwater_signs.json:sign_blackwater30_qstarted
 msgid ""
 "You find a piece of paper partially frozen in the snow. You can barely make out the phrase 'Kazaul, defiler of the Elytharan Temple' from the wet paper.\n"
 "This must be the first half of the chant for the Kazaul ritual."
 msgstr ""
+"雪の中で部分的に凍っている一枚の紙を見つけた。ぬれた紙からは「Elytharan神殿の冒涜者、Kazaul」というフレーズがかろうじて読み取れる。\n"
+"これはKazaulの儀式の歌の前半部分に違いない。"
 
 #: conversationlist_blackwater_signs.json:sign_blackwater30_notstarted
 msgid "You find a piece of paper partially frozen in the snow. You can barely make out the phrase 'Kazaul, defiler of the Elytharan Temple' from the wet paper."
 msgstr ""
+"雪の中で部分的に凍っている一枚の紙を見つけた。ぬれた紙からは「Elytharan神殿の冒涜者、Kazaul」というフレーズがかろうじて読み取れる。"
 
 #: conversationlist_blackwater_signs.json:sign_blackwater32
 msgid "The sign is severely damaged from what looks as bite marks from something with really sharp teeth. You cannot make out any readable words."
-msgstr ""
+msgstr "鋭い歯を持った何かに噛まれた跡のように見えるものによって、看板はひどく傷んでいる。読み取れる文字はない。"
 
 #: conversationlist_blackwater_signs.json:sign_blackwater38_notstarted
 msgid "You find a piece of paper describing some form of ritual."
-msgstr ""
+msgstr "ある種の儀式を記述した紙を見つけた。"
 
 #: conversationlist_blackwater_signs.json:sign_blackwater38_1_qstarted
 msgid ""
 "You find a piece of paper describing the beginnings of some form of ritual.\n"
 "This must be the first part of the Kazaul ritual."
 msgstr ""
+"ある種の儀式の始まりを記した紙を見つけた。\n"
+"これはKazaulの儀式の最初の部分に違いない。"
 
 #: conversationlist_blackwater_signs.json:sign_blackwater38_2_qstarted
 msgid ""
 "You find a piece of paper describing the main part of the Kazaul ritual.\n"
 "This must be the second part of the Kazaul ritual."
 msgstr ""
+"Kazaulの儀式の主要部分を記した紙を見つけた。\n"
+"これはKazaulの儀式の第二の部分に違いない。"
 
 #: conversationlist_blackwater_signs.json:sign_blackwater38_3_qstarted
 msgid ""
 "You find a piece of paper describing the end of the Kazaul ritual.\n"
 "This must be the third part of the Kazaul ritual."
 msgstr ""
+"Kazaulの儀式の終わりを記した紙を見つけた。\n"
+"これはKazaulの儀式の第三の部分に違いない。"
 
 #: conversationlist_blackwater_signs.json:sign_blackwater16_qstarted
 msgid ""
 "You find a piece of torn paper stuck in the thick bush. You can barely make out the phrase 'Kazaul, destroyer of bright dreams' from the torn paper.\n"
 "This must be the second half of the chant for the Kazaul ritual."
 msgstr ""
+"生い茂った茂みの中にちぎれた紙が刺さっているのを見つけた。ちぎれた紙からは「輝かしき夢の破壊者、Kazaul」というフレーズがかろうじて読み取れる。\n"
+"これはKazaulの儀式の歌の後半部分に違いない。"
 
 #: conversationlist_blackwater_signs.json:sign_blackwater16_notstarted
 msgid "You find a piece of torn paper stuck in the thick bush. You can barely make out the phrase 'Kazaul, destroyer of bright dreams' from the torn paper."
 msgstr ""
+"生い茂った茂みの中にちぎれた紙が刺さっているのを見つけた。ちぎれた紙からは「輝かしき夢の破壊者、Kazaul」というフレーズがかろうじて読み取れる。"
 
 #: conversationlist_blackwater_signs.json:bwm_sleephall_1
 msgid "You are not allowed to rest here. Only Blackwater residents or close allies are allowed to rest here."
-msgstr ""
+msgstr "ここでは休憩できません。Blackwaterの住民か友好関係にある者だけが休むことを許されています。"
 
 #: conversationlist_blackwater_signs.json:keyarea_bwm_agent_60
 msgid "You must talk to the man before proceeding further."
-msgstr ""
+msgstr "先に進む前にその男と話をしなければいけません。"
 
 #: conversationlist_blackwater_signs.json:sign_blackwater50_left
 msgid "This leads out into the wilderness outside Prim."
-msgstr ""
+msgstr "これはPrimの外の荒野に通じています。"
 
 #: conversationlist_blackwater_signs.json:sign_blackwater50_right
 msgid "This leads back into the Blackwater mountain settlement."
-msgstr ""
+msgstr "これはBlackwater山の集落に戻ってきます。"
 
 #: conversationlist_blackwater_signs.json:sign_blackwater29_qstarted
 msgid "You try to be as sneaky as possible, to not gain any attention from the guards while searching through the stack of papers."
-msgstr ""
+msgstr "書類の山を探しているときに警備の注意を引かないよう、できるだけコソコソと隠れるようにしよう。"
 
 #: conversationlist_blackwater_signs.json:sign_blackwater29_notstarted
 msgid ""
@@ -7988,18 +8008,21 @@ msgid ""
 "\n"
 "Hey you! Get away from there!"
 msgstr ""
+"警備員があなたに向かって叫ぶ。\n"
+"\n"
+"おい! そこから離れろ!"
 
 #: conversationlist_blackwater_signs.json:sign_blackwater29_qstarted_1
 msgid "Among the papers, you find plans for recruiting mercenaries for Prim and training fighters for a larger attack on the Blackwater mountain settlement."
-msgstr ""
+msgstr "書類の中に、Primの傭兵募集とBlackwater山の集落への大規模な攻撃のための戦士の訓練についての計画がある。"
 
 #: conversationlist_blackwater_signs.json:sign_blackwater29_qstarted_2
 msgid "This must be the information that Harlenn wants."
-msgstr ""
+msgstr "これはHarlennが欲しがっている情報に違いない。"
 
 #: conversationlist_blackwater_signs.json:sign_blackwater45_qstarted
 msgid "You try to sneak as much as possible, to not gain any attention from the guard while searching through the stack of papers."
-msgstr ""
+msgstr "書類の山を探しているときに警備の注意を引かないよう、できるだけコソコソと隠れるようにしよう。"
 
 #: conversationlist_blackwater_signs.json:sign_blackwater45_notstarted
 msgid ""
@@ -8007,14 +8030,17 @@ msgid ""
 "\n"
 "Hey you! Get away from there!"
 msgstr ""
+"テーブルに近づくとすぐに警備員が叫ぶ。\n"
+"\n"
+"おい! そこから離れろ!"
 
 #: conversationlist_blackwater_signs.json:sign_blackwater45_qstarted_1
 msgid "Among the papers, you find what seems to be plans for training fighters, and plans for an attack on what looks like Prim."
-msgstr ""
+msgstr "書類の中には戦士の訓練計画や、Primへの攻撃計画と思われるものがある。"
 
 #: conversationlist_blackwater_signs.json:sign_blackwater45_qstarted_2
 msgid "This must be the information that Guthbered wants."
-msgstr ""
+msgstr "これはGuthberedが欲しがっている情報に違いない。"
 
 #: conversationlist_blackwater_harlenn.json:harlenn_1
 msgid "Welcome, traveller."
@@ -11243,7 +11269,7 @@ msgstr ""
 
 #: conversationlist_fields_1.json:sign_crossroadshouse
 msgid "Crossroads guardhouse, housing for allies of Feygard."
-msgstr ""
+msgstr "Crossroads衛兵所、Feygardの同盟者のための住居。"
 
 #: conversationlist_fields_1.json:sign_crossroads_s
 msgid ""
@@ -11276,13 +11302,15 @@ msgstr ""
 
 #: conversationlist_fields_1.json:crossroads_sleep
 msgid "The guard shouts at you: Hey! You cannot sleep here!"
-msgstr ""
+msgstr "衛兵があなたに叫ぶ: おい! そこで寝るな!"
 
 #: conversationlist_fields_1.json:sign_loneford2
 msgid ""
 "Welcome to peaceful Loneford.\n"
 "[The sign also contains a drawing of a bale of hay with what looks like a farmer sitting on top]"
 msgstr ""
+"平和なLonefordへようこそ。\n"
+"[看板には干し草の俵と、その上に座っている農家のような人の絵が描かれている]"
 
 #: conversationlist_loneford_1.json:loneford_farmer0
 msgid "What have we done to deserve this?"
@@ -12166,11 +12194,11 @@ msgid ""
 msgstr ""
 "南: Loneford\n"
 "東: Brimhaven.\n"
-"[西を指す矢印にも何か書かれているが、言葉がわからない]"
+"[西を指す矢印にも何か書かれているが、文字がわからない]"
 
 #: conversationlist_pwcave.json:sign_waterway3
 msgid "The sign contains writing in a language you cannot understand."
-msgstr ""
+msgstr "看板は理解できない言語で書かれている。"
 
 #: conversationlist_pwcave.json:gauward
 msgid "What... Oh, a visitor!"
@@ -16819,15 +16847,15 @@ msgstr ""
 
 #: conversationlist_remgard_idolsigns.json:jhaeld_bed_1
 msgid "You see a bed."
-msgstr ""
+msgstr "ベッドが見える。"
 
 #: conversationlist_remgard_idolsigns.json:jhaeld_bed_2
 msgid "You see a bed. The idol is still where you left it."
-msgstr ""
+msgstr "ベッドが見える。偶像はあなたが残したままの場所にある。"
 
 #: conversationlist_remgard_idolsigns.json:jhaeld_bed_3
 msgid "You see a bed, that you suppose must be Jhaeld's bed."
-msgstr ""
+msgstr "ベッドを見た。Jhaeldのベッドで間違いないと思われる。"
 
 #: conversationlist_remgard_idolsigns.json:jhaeld_bed_3:0
 #: conversationlist_remgard_idolsigns.json:larni_bed_3:0
@@ -16835,7 +16863,7 @@ msgstr ""
 #: conversationlist_remgard_idolsigns.json:emerei_bed_3:0
 #: conversationlist_remgard_idolsigns.json:carthe_bed_3:0
 msgid "Hide one of the idols under the bed."
-msgstr ""
+msgstr "ベッドの下に偶像の一つを隠す。"
 
 #: conversationlist_remgard_idolsigns.json:jhaeld_bed_3:1
 #: conversationlist_remgard_idolsigns.json:larni_bed_3:1
@@ -16843,7 +16871,7 @@ msgstr ""
 #: conversationlist_remgard_idolsigns.json:emerei_bed_3:1
 #: conversationlist_remgard_idolsigns.json:carthe_bed_3:1
 msgid "Leave the bed alone."
-msgstr ""
+msgstr "ベッドはそのままにしておく。"
 
 #: conversationlist_remgard_idolsigns.json:jhaeld_bed_4
 #: conversationlist_remgard_idolsigns.json:larni_bed_4
@@ -16851,41 +16879,41 @@ msgstr ""
 #: conversationlist_remgard_idolsigns.json:emerei_bed_4
 #: conversationlist_remgard_idolsigns.json:carthe_bed_4
 msgid "You hide the idol under the bed."
-msgstr ""
+msgstr "ベッドの下に偶像を隠した。"
 
 #: conversationlist_remgard_idolsigns.json:larni_bed_1
 #: conversationlist_remgard_idolsigns.json:arnal_bed_1
 #: conversationlist_remgard_idolsigns.json:emerei_bed_1
 #: conversationlist_remgard_idolsigns.json:carthe_bed_1
 msgid "You see a bed and nightstand."
-msgstr ""
+msgstr "ベッドとナイトスタンドが見える。"
 
 #: conversationlist_remgard_idolsigns.json:larni_bed_2
 #: conversationlist_remgard_idolsigns.json:arnal_bed_2
 #: conversationlist_remgard_idolsigns.json:emerei_bed_2
 #: conversationlist_remgard_idolsigns.json:carthe_bed_2
 msgid "You see a bed and nightstand. The idol is still where you left it."
-msgstr ""
+msgstr "ベッドとナイトスタンドが見える。偶像はあなたが残したままの場所にある。"
 
 #: conversationlist_remgard_idolsigns.json:larni_bed_3
 msgid "You see a bed and nightstand. This must be Larni's bed."
-msgstr ""
+msgstr "ベッドとナイトスタンドが見える。Larniのベッドで間違いない。"
 
 #: conversationlist_remgard_idolsigns.json:arnal_bed_3
 msgid "You see a bed and nightstand. This must be Arnal's bed."
-msgstr ""
+msgstr "ベッドとナイトスタンドが見える。Arnalのベッドで間違いない。"
 
 #: conversationlist_remgard_idolsigns.json:emerei_bed_3
 msgid "You see a bed and nightstand. This must be Emerei's bed."
-msgstr ""
+msgstr "ベッドとナイトスタンドが見える。Emereiのベッドで間違いない。"
 
 #: conversationlist_remgard_idolsigns.json:carthe_bed_3
 msgid "You see a bed and nightstand. This must be Carthe's bed."
-msgstr ""
+msgstr "ベッドとナイトスタンドが見える。Cartheのベッドで間違いない。"
 
 #: conversationlist_signs_v0611.json:remgard_tavern_room
 msgid "You are not allowed to enter this room until you have rented it."
-msgstr ""
+msgstr "借りるまではこの部屋には入室できません。"
 
 #: conversationlist_signs_v0611.json:sign_waterway6
 msgid ""
@@ -20748,11 +20776,11 @@ msgstr ""
 
 #: conversationlist_v070signs1.json:sign_rbfcr1_1
 msgid "You notice that these rocks seem out of place compared to the surroundings. Maybe they are meant to symbolize something?"
-msgstr ""
+msgstr "これらの岩は、周囲と見比べると場違いであることに気付く。何かを象徴しているのだろうか?"
 
 #: conversationlist_v070signs1.json:sign_rbfcr1_1:0
 msgid "[Examine the stones more closely]"
-msgstr ""
+msgstr "[石をもっと詳しく調べる]"
 
 #: conversationlist_v070signs1.json:sign_rbfcr1_r
 #: conversationlist_v070signs2.json:sign_lodar4_r
@@ -25997,13 +26025,15 @@ msgstr ""
 
 #: conversationlist_guynmart2.json:guynmart_s_dog
 msgid "Beware of the dog!"
-msgstr ""
+msgstr "犬に注意!"
 
 #: conversationlist_guynmart2.json:guynmart_s_roadClose_10
 msgid ""
 "The road is closed.\n"
 "Signed: Unkorh, Steward of Guynmart Castle"
 msgstr ""
+"この道は通行止めです。\n"
+"署名:Guynmart城の執事Unkorh"
 
 #: conversationlist_guynmart2.json:guynmart_s_wood12_castle
 msgid ""
@@ -40322,16 +40352,16 @@ msgstr ""
 "* Wormath Splathershed著書 * \n"
 "\n"
 "忘れられた王国の建国（2300年）\n"
-"強大な力を持ったArntukに率いられた最初の人類は、古代に南方からやってきて忘れられた王国を築いた。これらの人々はLethgarと呼ばれ、現在の大きな町"
-"や都市がある場所に入植地を建設した。Nor CityとSullengardが最初に設立された。\n"
+"偉大なArntukに率いられた最初の人類は、古代に南方からやってきて忘れられた王国を築いた。これらの人々はLethgarと呼ばれ、現在の大きな町や都市があ"
+"る場所に入植地を建設した。Nor CityとSullengardが最初に設立された。\n"
 "それからしばらくして、数人の探検家がDhayavarの最高峰であるGalmore山に登った。その標高の高さと眺めの良さのために、神官や魔道士が山頂近くに聖"
 "域を建て、魔導の研究や神々の信仰を行った。\n"
 "\n"
 "Kazaulの台頭（2177年）\n"
-"Valughaという強力な力を持つ狂った魔法使いは、別の次元へのポータルを作り出すという考えに取りつかれていた。仲間の魔法使いが反対したにもかかわらず、兄"
-"弟たちの強力な生命力と聖域に蓄えられたエネルギーを消費することによって、ポータルを作ることを可能とした。聖域は爆発で噴火し、大きな渓谷がGalmore山を"
-"分断した。その底にはポータルが開き、それはすぐに'裂け目'と呼ばれるようになり、その周辺の荒廃した地域は'Undertell'と呼ばれるようになった。山は"
-"また、傷口から血のような溶岩を噴出し今では常に煙で覆われている。\n"
+"Valughaという強力な力を持つ狂った魔法使いは、別の次元へのポータルを作り出すという考えに執着していた。仲間の魔法使いが反対したにもかかわらず、同朋た"
+"ちの強力な生命力と聖域に蓄えられたエネルギーを消費することによって、ポータルを作り出すことを実現した。聖域は爆発で噴火し、大きな渓谷がGalmore山を分"
+"断した。その底にはポータルが開き、それはすぐに'裂け目'と呼ばれるようになり、その周辺の荒廃した地域は'Undertell'と呼ばれるようになった。山はま"
+"た、傷口から血のような溶岩を噴出し今では常に煙で覆われている。\n"
 "あらゆる種類の悪魔やアンデッドが主人である'Kazaul'に率いられ、ポータルを通って世界に出現した。 Kazaulたち自身は、"
 "魔法と戦争に恐ろしいほど長けたEternal Mastersに率いられていた。やがてモンスターとその主人たちはDhayavar全土に広がっていった。しかし"
 "、しばらくするとポータルは不安定になり、数十年後にはついに崩壊した。だが、すでに何千ものモンスターがポータルを通って入り込んでいたため被害が出ていた。\n"
@@ -40339,21 +40369,21 @@ msgstr ""
 "た。 Kazaulは忘れられた王国に恐怖政治を強いた。その非人間的な強さのために、誰もKazaulに対抗することができないようだった。\n"
 "その後、Lethgarは圧制者のために地下墓地を建てねばならなかった。非活性化したポータルを中心に、Galmore山の下の天然の洞窟の中に大規模な都市が建"
 "設された。また、 Carn TowerやBlackwater山の聖域など、無数のKazaulの地下集落が建設された。\n"
-"ほとんどのLethgarは主人を軽蔑していたが、一部はKazaulの儀式や暗黒魔術に興味を示した。その結果、"
+"ほとんどのLethgarは主人を嫌悪していたが、一部はKazaulの儀式や暗黒魔術に興味を示した。その結果、"
 "人間のKazaulの弟子たちであるKha'zaan (Kazaul教団)は、師匠のもとへと集い、彼らから学んだ。彼らはしばしばKazaulの残忍な支配を強"
 "制するために利用された。Izthiels、Gornauds、Wyrmsなど現在のモンスターの多くは、この時代に行われた実験から進化した生物である。\n"
 "その頃には、戦争の前兆であるHira'zinnが力ない民衆を苦しめるようになっていた。\n"
 "\n"
 "夜明けの戦争とElytharaの台頭とElytharan同盟（1537年）\n"
 "ある日、北の海（涙の海）の岸辺にElytharanの教団がやってきた。彼らはElytharaのまばゆい光と清めの光を崇拝していた。\n"
-"Elytharanの魔道士と戦士たちは、彼らの武器に鍛え上げられたElytharaのまばゆい光の助けを受けて、KazaulとKha'"
+"Elytharanの魔道士と戦士たちは、鍛え上げられた武器であるElytharaのまばゆい光の助けを受けて、KazaulとKha'"
 "zaanを打ち破ることができた\n"
 "\n"
 "[... ここで何ページか破れている ...]\n"
 "\n"
-"…涙の海のほとりにFeygardの町を建設し始めた。 海へのアクセスの良さからすぐに王国の貿易の中心地となった。\n"
+"…涙の海のほとりにFeygardの町を建設し始めた。 海へのアクセスの良さからすぐに王国における貿易の中心地となった。\n"
 "Lonefordの町が設立され、その肥沃な畑と忘れられた王国の北部を養う健康的な野菜ですぐに有名となった。\n"
-"Blackwater山が探検され、その頂上には、夜明けと夕暮れ、太陽と星を研究し、忘れられた王国を見守るために、Elytharanの神官のための大きな聖域"
+"Blackwater山が探索され、その頂上には、夜明けと夕暮れ、太陽と星を研究し、忘れられた王国を見守るために、Elytharanの神官のための大きな聖域"
 "が建てられた。他の聖域にはFeygardとNor "
 "Cityのものがあり、各地の集落にも教会があった。また開拓者たちが山の下に鉄や石炭の豊富な資源を発見したことから、Primの鉱山植民地が設立された。\n"
 "Fallhavenの町は、Blackwater山、Stoutford、Nor City、Feygardの分岐点としての優れた立地条件から、貿易の中心地とし"
@@ -40363,14 +40393,14 @@ msgstr ""
 "貿易をさらに繁栄させるために、都市間で貿易協定が結ばれた。\n"
 "\n"
 "Aewatha王国建国（432年）\n"
-"最も重要なNor Cityの一族の当主であるHoudart家のGarthan1世が王を宣言し、Elytharan時代の終わりとシャドウの王国の始まりを告げ"
-"た。この時点で、政治と宗教双方の権力は密接に結び付いた。王国が繁栄するにつれて、シャドウとElytharaも繁栄し、\n"
+"Nor Cityの最も有力な一族の当主であるHoudart家のGarthan1世が王となることを宣言し、Elytharan時代の終わりとシャドウの王国の始"
+"まりを告げた。この時点で、政治と宗教双方の権力は密接に結び付いた。王国が繁栄するにつれて、シャドウも繁栄し、Elytharaは\n"
 "\n"
 "[... また何ページか破れていた ...]\n"
 "\n"
-"…採掘の奴隷として使われた。この時にFlagstone刑務所も建てられ、Galmore山から逃亡した労働者が投獄され腐るまで放置された。しかし、度重なるモ"
-"ンスターの襲撃や暗闇に潜む言葉では言い表せない恐怖のために、数年後には鉱山は閉鎖された。 \n"
-"Remgardは、RemgardのKorhaldによって設立され、Laerothの大きな島に建てられた。優れた鍛冶の腕によって有名となった。\n"
+"…採掘の奴隷として使われた。この時にFlagstone刑務所も建てられ、Galmore山から逃亡した労働者が投獄されて腐るまで放置された。しかし、度重なる"
+"モンスターの襲撃や暗闇に潜む言葉では言い表せない恐怖のために、数年後には鉱山は閉鎖された。 \n"
+"Remgardは、RemgardのKorhaldによって設立され、Laeroth湖の大きな島に建てられた。優れた鍛冶の腕によって有名となった。\n"
 "Crossglenの村が設立され、農民たちが定住した。\n"
 "Luthor王はOromir3世の直系の後継者として即位し、首都をNor CityからFallhavenへと移したが、崇拝の中心はNor Cityに残った"
 "。Luthor王は年をとるにつれて助言者の必要を感じたため、FeygardのGeomyr卿が王の手として指名された。彼は非常な執着心と努力によってその義務"
@@ -40379,14 +40409,14 @@ msgstr ""
 "ノーブル・ウォーズ（25年～14年）\n"
 "Luthor王が崩御したとき、彼は王位継承者がいないまま王国を去っていた。彼はFallhaven教会の地下墓地に埋葬された。その後のノーブル・ウォーズは、"
 "この国が目撃した中でも最も暗い時代の一つであった。\n"
-"4つの連合が形成され、それぞれが1つの強力な君主によって統治された。\n"
+"4つの連合が形成され、それぞれが1人の強力な君主によって統治された。\n"
 "西部はStoutfordとBlackwater山の入植地から成り、Erwyn卿が治めていた。\n"
 "北部はFeygard、Thalgard、Luthaven、Remgardから成り、Geomyr卿が治めていた。\n"
 "東部はNor City、Sullengard、Brightport、Brimhavenから成り、Emeric卿が治めていた。\n"
 "中央の首都圏は当初は中立のままで、Fallhaven、Vilegard、Loneford (以前はLuthor王が治めていた)から構成されていた。\n"
 "ノーブル・ウォーズは、誰が次代の正統な王に相応しいかについて領主たちが議論するところから始まった。\n"
 "最初の一石はStoutfordによって投じられた。Erwyn卿は他の諸侯が議論で忙殺されている最中に、その時間を利用して中心地域を攻撃しようとした。"
-"Nor Cityへの通商路を支配し、最大の影響力を得て、他の連合を分断するために、それらの占領を目論んだ。Fallhavenは一部破壊された。\n"
+"Nor Cityへの通商路を支配し、最大の影響力を得て、他の連合を撃破するために、それらの占領を目論んだ。Fallhavenは一部破壊された。\n"
 "東部連合の攻撃を受けたために、Erwynの成功は短いものであった。数年に渡って、中央地域の支配権を巡って数々の戦いと数え切れないほどの小競り合いが繰り広げ"
 "られた。両者が弱体化すると、Geomyr卿が攻撃を仕掛けて双方を降伏に追い込んだ。Fallhaven平和条約が締結され、Geomyr卿が国王に即位した。"
 "\n"
@@ -40394,13 +40424,13 @@ msgstr ""
 "\n"
 "Geomyr王の統治（14年）\n"
 "Geomyr国王は破壊された都市を修復し、長い戦争の痕跡を取り除くよう人々に促した。税制を復活させ、多くの村でFeygardの近衛兵を駐屯させた。Geom"
-"yrは権力をさらに高めるために縁故主義と腐敗を奨励した。\n"
+"yrは権力をさらに高めるために縁故主義と汚職を推し進めた。\n"
 "力なき人々にとってシャドウ教団はますます重要になった。民衆はノーブル・ウォーズの厳しい時期以降、救済の必要性を感じ、シャドウをより良い時代への道しるべとし"
 "て受け入れた。\n"
-"Geomyr卿は宗教の力を恐れて、Nor CityとFeygardの間で緊張が高まり始めた。そして、彼は教団に対していくつかの禁止を宣言した。もはや儀式を"
-"行うことは許されず、神官の何人かを拘留しようともした。\n"
-"そして彼は、自身を打ち倒すために使われることを恐れて、ハートスチールの武器の取引と使用を禁止した。多くの武器を破壊し、他も没収した。骨粉ポーションも禁止さ"
-"れ、民衆や神官の不評を買った。\n"
+"Geomyr卿は宗教の力を恐れて、Nor CityとFeygardの間で緊張が高まり始めた。そして、彼は教団に対していくつかの禁止を宣言した。儀式を行うこ"
+"とはもはや許されず、神官の何人かを拘留しようともした。\n"
+"また彼は、自身を打ち倒すために使われることを恐れて、ハートスチール製の武器の取引と使用を禁じた。多くの武器を破壊し、他も没収した。骨粉ポーションも禁止され"
+"、民衆や神官の不評を買った。\n"
 "\n"
 "[... ここで物語は終わる。まだページがあったかどうかは分からない ...]"
 
@@ -40461,16 +40491,16 @@ msgstr ""
 "* Wormath Splathershed著書 * \n"
 "\n"
 "忘れられた王国の建国（2300年）\n"
-"強大な力を持ったArntukに率いられた最初の人類は、古代に南方からやってきて忘れられた王国を築いた。これらの人々はLethgarと呼ばれ、現在の大きな町"
-"や都市がある場所に入植地を建設した。Nor CityとSullengardが最初に設立された。\n"
+"偉大なArntukに率いられた最初の人類は、古代に南方からやってきて忘れられた王国を築いた。これらの人々はLethgarと呼ばれ、現在の大きな町や都市があ"
+"る場所に入植地を建設した。Nor CityとSullengardが最初に設立された。\n"
 "それからしばらくして、数人の探検家がDhayavarの最高峰であるGalmore山に登った。その標高の高さと眺めの良さのために、神官や魔道士が山頂近くに聖"
 "域を建て、魔導の研究や神々の信仰を行った。 \n"
 "\n"
 "Kazaulの台頭（2177年）\n"
-"Valughaという強力な力を持つ狂った魔法使いは、別の次元へのポータルを作り出すという考えに取りつかれていた。仲間の魔法使いが反対したにもかかわらず、兄"
-"弟たちの強力な生命力と聖域に蓄えられたエネルギーを消費することによって、ポータルを作ることを可能とした。聖域は爆発で噴火し、大きな渓谷がGalmore山を"
-"分断した。その底にはポータルが開き、それはすぐに'裂け目'と呼ばれるようになり、その周辺の荒廃した地域は'Undertell'と呼ばれるようになった。山は"
-"また、傷口から血のような溶岩を噴出し今では常に煙で覆われている。\n"
+"Valughaという強力な力を持つ狂った魔法使いは、別の次元へのポータルを作り出すという考えに執着していた。仲間の魔法使いが反対したにもかかわらず、同朋た"
+"ちの強力な生命力と聖域に蓄えられたエネルギーを消費することによって、ポータルを作り出すことを実現した。聖域は爆発で噴火し、大きな渓谷がGalmore山を分"
+"断した。その底にはポータルが開き、それはすぐに'裂け目'と呼ばれるようになり、その周辺の荒廃した地域は'Undertell'と呼ばれるようになった。山はま"
+"た、傷口から血のような溶岩を噴出し今では常に煙で覆われている。\n"
 "あらゆる種類の悪魔やアンデッドが主人である'Kazaul'に率いられ、ポータルを通って世界に出現した。 Kazaulたち自身は、"
 "魔法と戦争に恐ろしいほど長けたEternal Mastersに率いられていた。やがてモンスターとその主人たちはDhayavar全土に広がっていった。しかし"
 "、しばらくするとポータルは不安定になり、数十年後にはついに崩壊した。だが、すでに何千ものモンスターがポータルを通って入り込んでいたため被害が出ていた。\n"
@@ -40478,28 +40508,28 @@ msgstr ""
 "た。 Kazaulは忘れられた王国に恐怖政治を強いた。その非人間的な強さのために、誰もKazaulに対抗することができないようだった。\n"
 "その後、Lethgarは圧制者のために地下墓地を建てねばならなかった。非活性化したポータルを中心に、Galmore山の下の天然の洞窟の中に大規模な都市が建"
 "設された。また、 Carn TowerやBlackwater山の聖域など、無数のKazaulの地下集落が建設された。\n"
-"ほとんどのLethgarは主人を軽蔑していたが、一部はKazaulの儀式や暗黒魔術に興味を示した。その結果、"
+"ほとんどのLethgarは主人を嫌悪していたが、一部はKazaulの儀式や暗黒魔術に興味を示した。その結果、"
 "人間のKazaulの弟子たちであるKha'zaan (Kazaul教団)は、師匠のもとへと集い、彼らから学んだ。彼らはしばしばKazaulの残忍な支配を強"
 "制するために利用された。Izthiels、Gornauds、Wyrmsなど現在のモンスターの多くは、この時代に行われた実験から進化した生物である。\n"
 "その頃には、戦争の前兆であるHira'zinnが力ない民衆を苦しめるようになっていた。\n"
 "\n"
 "夜明けの戦争とElytharaの台頭とElytharan同盟（1537年）\n"
 "ある日、北の海（涙の海）の岸辺にElytharanの教団がやってきた。彼らはElytharaのまばゆい光と清めの光を崇拝していた。\n"
-"Elytharanの魔道士と戦士たちは、彼らの武器に鍛え上げられたElytharaのまばゆい光の助けを受けて、KazaulとKha'zaanを打ち破ること"
-"ができた。KazaulはEternal Mastersが殺されてしまったので、ほとんど何もない状態となった。しかし、少数のKazaulとその信者たちがEl"
-"ytharan人に知られていない真っ暗闇の中、遠隔地へと身を潜めることに成功したためElytharaと教団は彼らを完全に滅ぼすことはできなかった。これは、"
-"Kazaulの暗黒呪文はElytharaのまばゆい光には無力であったが、Elytharaの力は完全な闇の中奥深くでは衰えるためだ。それでも何百年もの間、K"
-"azaulは暗闇の中で深い眠りについていた。\n"
-"彼女の力の見た目の美しさと平民に対する博愛の心から、人々は彼女を光の女神と呼ぶようになった。人々はKazaulが打ち倒されたことを喜んだ。Elythara"
+"Elytharanの魔道士と戦士たちは、鍛え上げられた武器であるElytharaのまばゆい光の助けを受けて、KazaulとKha'zaanを打ち破ることが"
+"できた。KazaulはEternal Mastersが殺されてしまったので、ほとんど何もない状態となった。しかし、少数のKazaulとその信者たちがEly"
+"tharan人に知られていない真っ暗闇の中、遠隔地へと身を潜めることに成功したためElytharaと教団は彼らを完全に滅ぼすことはできなかった。これは、K"
+"azaulの暗黒呪文はElytharaのまばゆい光には無力であったが、Elytharaの力は完全な闇の中奥深くでは衰えるためだ。それでも何百年もの間、Ka"
+"zaulは暗闇の中で深い眠りについていた。\n"
+"彼女の力の視覚的な美しさと平民に対する博愛の心から、人々は彼女を光の女神と呼ぶようになった。人々はKazaulが打ち倒されたことを喜んだ。Elythara"
 "n人は人々の生活の組織化を助け、女神のためにいくつかの町や都市を建設した。その頃には貴族の家がいくつかできた。各都市はElytharanの神官たちと密接に"
 "協力した1つか2つの家によって支配された。\n"
 "長い平和と繁栄の時代が続き、Elytharan同盟が創設され、Elytharaの言葉を全世界に広めた。貴族が都市を支配していたとしても、人々は主にElyt"
 "haranの神官から影響を受けていた。\n"
-"明らかにElytharaの下にある社会は完璧なものではなかったが、彼女の神官は人々にそう信じさせた。彼女の'光'は'正しい'道に従うことを拒否した者に示さ"
-"れ、一般的には盲目かそれ以上の状態となった…\n"
-"Elytharan人はすぐに涙の海のほとりにFeygardの町を建設し始めた。 海へのアクセスの良さからすぐに王国の貿易の中心地となった。\n"
+"明らかにElytharaの下にある社会は完璧なものではなかったが、神官たちは人々にそう信じさせた。彼女の'光'は'正しい'道に従うことを拒否した者に示され"
+"、一般的には盲目かそれ以下の状態となった…\n"
+"Elytharan人はすぐに涙の海のほとりにFeygardの町を建設し始めた。 海へのアクセスの良さからすぐに王国における貿易の中心地となった。\n"
 "Lonefordの町が設立され、その肥沃な畑と忘れられた王国の北部を養う健康的な野菜ですぐに有名となった。\n"
-"Blackwater山が探検され、その頂上には、夜明けと夕暮れ、太陽と星を研究し、忘れられた王国を見守るために、Elytharanの神官のための大きな聖域"
+"Blackwater山が探索され、その頂上には、夜明けと夕暮れ、太陽と星を研究し、忘れられた王国を見守るために、Elytharanの神官のための大きな聖域"
 "が建てられた。他の聖域にはFeygardとNor "
 "Cityのものがあり、各地の集落にも教会があった。また開拓者たちが山の下に鉄や石炭の豊富な資源を発見したことから、Primの鉱山植民地が設立された。\n"
 "Fallhavenの町は、Blackwater山、Stoutford、Nor City、Feygardの分岐点としての優れた立地条件から、貿易の中心地とし"
@@ -40509,15 +40539,15 @@ msgstr ""
 "貿易をさらに繁栄させるために、都市間で貿易協定が結ばれた。\n"
 "\n"
 "Aewatha王国建国（432年）\n"
-"最も重要なNor Cityの一族の当主であるHoudart家のGarthan1世が王を宣言し、Elytharan時代の終わりとシャドウの王国の始まりを告げ"
-"た。この時点で、政治と宗教双方の権力は密接に結び付いた。 "
-"王国が繁栄するにつれて、シャドウとElytharaも繁栄し、Elytharaはほんのひと世代程度の時間でほとんどの人から忘れ去られてしまった。"
+"Nor Cityの最も有力な一族の当主であるHoudart家のGarthan1世が王となることを宣言し、Elytharan時代の終わりとシャドウの王国の始"
+"まりを告げた。この時点で、政治と宗教双方の権力は密接に結び付いた。 "
+"王国が繁栄するにつれて、シャドウも繁栄し、Elytharaはほんのひと世代程度の時間でほとんどの人から忘れ去られてしまった。"
 "かつてElytharaの教会があったNor "
 "Cityの中心部には壮大な大聖堂を持つ大規模な神殿が建てられた。小さな教会も国中に建てられた。今では人々からシャドウが一般的に信じられるようになった。\n"
 "Garthan1世は恐るべきGalmore山の探索を命じ、数十年に渡って大規模な鉱山が拓かれ宝石や金が豊富に発見された。残っていたElytharanの信者"
-"たちは採掘の奴隷として使われた。この時にFlagstone刑務所も建てられ、Galmore山から逃亡した労働者が投獄され腐るまで放置された。しかし、度重な"
-"るモンスターの襲撃や暗闇に潜む言葉では言い表せない恐怖のために、数年後には鉱山は閉鎖された。\n"
-"Remgardは、RemgardのKorhaldによって設立され、Laerothの大きな島に建てられた。優れた鍛冶の腕によって有名となった。\n"
+"たちは採掘の奴隷として使われた。この時にFlagstone刑務所も建てられ、Galmore山から逃亡した労働者が投獄されて腐るまで放置された。しかし、度重"
+"なるモンスターの襲撃や暗闇に潜む言葉では言い表せない恐怖のために、数年後には鉱山は閉鎖された。\n"
+"Remgardは、RemgardのKorhaldによって設立され、Laeroth湖の大きな島に建てられた。優れた鍛冶の腕によって有名となった。\n"
 "Crossglenの村が設立され、農民たちが定住した。\n"
 "Luthor王はOromir3世の直系の後継者として即位し、首都をNor CityからFallhavenへと移したが、崇拝の中心はNor Cityに残った"
 "。Luthor王は年をとるにつれて助言者の必要を感じたため、FeygardのGeomyr卿が王の手として指名された。彼は非常な執着心と努力によってその義務"
@@ -40526,14 +40556,14 @@ msgstr ""
 "ノーブル・ウォーズ（25年～14年）\n"
 "Luthor王が崩御したとき、彼は王位継承者がいないまま王国を去っていた。彼はFallhaven教会の地下墓地に埋葬された。その後のノーブル・ウォーズは、"
 "この国が目撃した中でも最も暗い時代の一つであった。\n"
-"4つの連合が形成され、それぞれが1つの強力な君主によって統治された。\n"
+"4つの連合が形成され、それぞれが1人の強力な君主によって統治された。\n"
 "西部はStoutfordとBlackwater山の入植地から成り、Erwyn卿が治めていた。\n"
 "北部はFeygard、Thalgard、Luthaven、Remgardから成り、Geomyr卿が治めていた。\n"
 "東部はNor City、Sullengard、Brightport、Brimhavenから成り、Emeric卿が治めていた。\n"
 "中央の首都圏は当初は中立のままで、Fallhaven、Vilegard、Loneford (以前はLuthor王が治めていた)から構成されていた。\n"
 "ノーブル・ウォーズは、誰が次代の正統な王に相応しいかについて領主たちが議論するところから始まった。\n"
 "最初の一石はStoutfordによって投じられた。Erwyn卿は他の諸侯が議論で忙殺されている最中に、その時間を利用して中心地域を攻撃しようとした。"
-"Nor Cityへの通商路を支配し、最大の影響力を得て、他の連合を分断するために、それらの占領を目論んだ。Fallhavenは一部破壊された。\n"
+"Nor Cityへの通商路を支配し、最大の影響力を得て、他の連合を撃破するために、それらの占領を目論んだ。Fallhavenは一部破壊された。\n"
 "東部連合の攻撃を受けたために、Erwynの成功は短いものであった。数年に渡って、中央地域の支配権を巡って数々の戦いと数え切れないほどの小競り合いが繰り広げ"
 "られた。両者が弱体化すると、Geomyr卿が攻撃を仕掛けて双方を降伏に追い込んだ。Fallhaven平和条約が締結され、Geomyr卿が国王に即位した。"
 "\n"
@@ -40541,13 +40571,13 @@ msgstr ""
 "\n"
 "Geomyr王の統治（14年）\n"
 "Geomyr国王は破壊された都市を修復し、長い戦争の痕跡を取り除くよう人々に促した。税制を復活させ、多くの村でFeygardの近衛兵を駐屯させた。Geom"
-"yrは権力をさらに高めるために縁故主義と腐敗を奨励した。\n"
+"yrは権力をさらに高めるために縁故主義と汚職を推し進めた。\n"
 "力なき人々にとってシャドウ教団はますます重要になった。民衆はノーブル・ウォーズの厳しい時期以降、救済の必要性を感じ、シャドウをより良い時代への道しるべとし"
 "て受け入れた。\n"
-"Geomyr卿は宗教の力を恐れて、Nor CityとFeygardの間で緊張が高まり始めた。そして、彼は教団に対していくつかの禁止を宣言した。もはや儀式を"
-"行うことは許されず、神官の何人かを拘留しようともした。\n"
-"そして彼は、自身を打ち倒すために使われることを恐れて、ハートスチールの武器の取引と使用を禁止した。多くの武器を破壊し、他も没収した。骨粉ポーションも禁止さ"
-"れ、民衆や神官の不評を買った。"
+"Geomyr卿は宗教の力を恐れて、Nor CityとFeygardの間で緊張が高まり始めた。そして、彼は教団に対していくつかの禁止を宣言した。儀式を行うこ"
+"とはもはや許されず、神官の何人かを拘留しようともした。\n"
+"また彼は、自身を打ち倒すために使われることを恐れて、ハートスチール製の武器の取引と使用を禁じた。多くの武器を破壊し、他も没収した。骨粉ポーションも禁止され"
+"、民衆や神官の不評を買った。"
 
 #: itemlist_brimhaven2.json:cake
 msgid "Cake"
