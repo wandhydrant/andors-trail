@@ -106,7 +106,7 @@
     <string name="iteminfo_action_unequip_ap">はずす (%1$d AP)</string>
     <string name="startscreen_continue">ゲームを再開する</string>
     <string name="startscreen_newgame">新規</string>
-    <string name="startscreen_newgame_confirm">セーブしていないゲームとキャラクターは消去されます。本当に新しいゲームを開始しますか\?</string>
+    <string name="startscreen_newgame_confirm">セーブしていないゲームとキャラクターは消去されます。本当に新しいゲームを開始して良いですか\?</string>
     <string name="startscreen_about">ヘルプ</string>
     <string name="startscreen_enterheroname">名前</string>
     <string name="startscreen_load">ロード</string>
@@ -165,7 +165,7 @@
 \n Please visit the project forums to discuss the game with other players or to help make the game even better (see about).
 \n 
 \n Thanks for all the feedback!</string>
-    <string name="questlog_includecompleted_prompt">表示するクエスト:</string>
+    <string name="questlog_includecompleted_prompt">表示するクエスト</string>
     <string name="questlog_includecompleted_hidecompleted">進行中クエスト</string>
     <string name="questlog_includecompleted_includecompleted">全てのクエスト</string>
     <string name="questlog_includecompleted_onlycompleted">完了したクエスト</string>
@@ -313,9 +313,9 @@
     <string name="skill_longdescription_regeneration">毎ラウンド、スキル1レベルにつきHPを %1$d ずつ回復します。</string>
     <string name="skill_longdescription_lower_exploss">スキル1レベルにつき、死亡時に失う経験値の量を %1$d%% 減少させます。(現在失う量に対する割合で、パーセンテージ・ポイントではありません。) %2$d レベルに達すると、死亡時に経験値を失わなくなります。</string>
     <string name="skill_longdescription_magicfinder">スキル1レベルにつき、特別なアイテムを発見する確率が %1$d%% づつ増加します。</string>
-    <string name="skill_longdescription_resistance_mental">スキル1レベルにつき、精神に対する状態変化にかかる確率を %1$d%% 低下させます。最大で %2$d%% の低下までです。これには、DazedやWeapon Feeblenessといった、モンスターの攻撃が引き起こす状態変化が含まれます。</string>
-    <string name="skill_longdescription_resistance_physical_capacity">スキル1レベルにつき、身体能力に対する状態変化にかかる確率を %1$d%% 低下させます。最大で %2$d%% の低下までです。これには、Fatigueといった、モンスターの攻撃が引き起こす状態変化が含まれます。</string>
-    <string name="skill_longdescription_resistance_blood_disorder">スキル1レベルにつき、血液異常にかかる確率を %1$d%% 低下させます。最大で %2$d%% の低下までです。これには、Poisonやbleeding woundsといった、モンスターの攻撃が引き起こす状態変化が含まれます。</string>
+    <string name="skill_longdescription_resistance_mental">スキル1レベルにつき、精神に対する状態変化にかかる確率を %1$d%% 低下させます。最大で %2$d%% の低下までです。これには、めまい(Dazed)や武器弱体(Weapon Feebleness)といった、モンスターの攻撃が引き起こす状態変化が含まれます。</string>
+    <string name="skill_longdescription_resistance_physical_capacity">スキル1レベルにつき、身体能力に対する状態変化にかかる確率を %1$d%% 低下させます。最大で %2$d%% の低下までです。これには、疲労(Fatigue)といった、モンスターの攻撃が引き起こす状態変化が含まれます。</string>
+    <string name="skill_longdescription_resistance_blood_disorder">スキル1レベルにつき、血液異常にかかる確率を %1$d%% 低下させます。最大で %2$d%% の低下までです。これには、ポイズン(Poison)や出血(bleeding wounds)といった、モンスターの攻撃が引き起こす状態変化が含まれます。</string>
     <string name="skillinfo_action_levelup">レベルアップ</string>
     <string name="skill_current_level">現在のレベル: %1$d</string>
     <string name="skill_current_level_with_maximum">現在のレベル: %1$d / %2$d</string>
@@ -347,20 +347,20 @@
     <!-- Added in v0.6.11 -->
     <string name="skill_title_shadow_bless">シャドウの闇の祝福</string>
     <string name="skill_shortdescription_shadow_bless">すべての種類の状態変化に対する抵抗力</string>
-    <string name="skill_longdescription_shadow_bless">スキル1レベルにつき、あらゆる状態変化にかかる確率を %1$d%% 低下させます。これには、Poison、DazedやFatigueといった、モンスターの攻撃が引き起こすあらゆる状態変化が含まれます。</string>
+    <string name="skill_longdescription_shadow_bless">スキル1レベルにつき、あらゆる状態変化にかかる確率を %1$d%% 低下させます。これには、ポイズン、めまい、疲労といった、モンスターの攻撃が引き起こすあらゆる状態変化が含まれます。</string>
     <string name="inventory_movetop">一番上へ</string>
     <string name="inventory_movebottom">一番下へ</string>
     <string name="actorinfo_immune_criticals">クリティカルヒット無効</string>
     <string name="traitsinfo_criticalhit_effectivechance">クリティカル率:</string>
     <string name="skill_title_crit1">内部からの出血</string>
     <string name="skill_shortdescription_crit1">内出血攻撃の機会を得る</string>
-    <string name="skill_longdescription_crit1">クリティカルヒットを発生させるたび、その攻撃は %1$d%% の確率で対象に内出血を引き起こし、\'Internal bleeding\'の状態変化を対象に与えます。Internal bleedingは攻撃に関する戦闘能力を劇的に下げ、対象は有効な攻撃を当てることが難しくなります。</string>
+    <string name="skill_longdescription_crit1">クリティカルヒットを発生させるたび、その攻撃は %1$d%% の確率で対象に内出血を引き起こし、\'内出血(Internal bleeding)\'の状態変化を対象に与えます。内出血は攻撃に関する戦闘能力を劇的に下げ、対象は有効な攻撃を当てることが難しくなります。</string>
     <string name="skill_title_crit2">骨の粉砕</string>
     <string name="skill_shortdescription_crit2">骨折攻撃の機会を得る</string>
-    <string name="skill_longdescription_crit2">クリティカルヒットを発生させるたび、その攻撃は %1$d%% の確率で対象の骨を砕き、\'Fracture\'の状態変化を対象に与えます。Fractureは防御に関する戦闘能力を劇的に下げ、対象は次なる攻撃を防ぐことが難しくなります。</string>
+    <string name="skill_longdescription_crit2">クリティカルヒットを発生させるたび、その攻撃は %1$d%% の確率で対象の骨を砕き、\'破壊(Fracture)\'の状態変化を対象に与えます。破壊は防御に関する戦闘能力を劇的に下げ、対象は次なる攻撃を防ぐことが難しくなります。</string>
     <string name="skill_title_rejuvenation">復元</string>
     <string name="skill_shortdescription_rejuvenation">悪い効果を取り除く</string>
-    <string name="skill_longdescription_rejuvenation">1ラウンド(6秒)毎に、%1$d%% の確率で、現在受けている悪い効果の状態変化のうち1つを1段階だけ弱めます。Dazed、Fatigue、Poisonといった、身体能力・精神・血液異常のいずれの状態変化にも効果があります。</string>
+    <string name="skill_longdescription_rejuvenation">1ラウンド(6秒)毎に、%1$d%% の確率で、現在受けている悪い効果の状態変化のうち1つを1段階だけ弱めます。めまい(Dazed)、疲労(Fatigue)、ポイズン(Poison)といった、身体能力・精神・血液異常のいずれの状態変化にも効果があります。</string>
     <string name="skill_title_taunt">挑発</string>
     <string name="skill_shortdescription_taunt">攻撃を外した敵のAPを失わせる</string>
     <string name="skill_longdescription_taunt">敵の攻撃が外れたとき、%1$d%% の確率でその敵は行動値(AP)を %2$d 失います。あなたに対するあらゆる近接攻撃に効果があります。</string>
@@ -429,12 +429,12 @@
 \n
 \nゲームをセーブしてロードするために（この目的のみのため）Andor\'s Trailはストレージへのアクセス許可を求めます。"</string>
     <string name="shop_item_sort">並び替え</string>
-    <string name="startscreen_mode_1_life">パーマデス(1ライフ、1セーブ)</string>
-    <string name="startscreen_mode_3_lives">エクストリーム(3ライフ、1セーブ)</string>
-    <string name="startscreen_mode_10_lives">ベリーハード (10ライフ、1セーブ)</string>
-    <string name="startscreen_mode_50_lives">ハード(50ライフ、1セーブ)</string>
-    <string name="startscreen_mode_unlimited_lives">ミディアム(ライフ無制限、セーブ1回)</string>
-    <string name="startscreen_mode_unlimited_saves_and_lives">スタンダード(ライフとセーブ回数の制限なし)</string>
+    <string name="startscreen_mode_1_life">パーマデス(ライフ1、セーブ1)</string>
+    <string name="startscreen_mode_3_lives">エクストリーム(ライフ3、セーブ1)</string>
+    <string name="startscreen_mode_10_lives">ベリーハード (ライフ10、セーブ1)</string>
+    <string name="startscreen_mode_50_lives">ハード(ライフ50、セーブ1)</string>
+    <string name="startscreen_mode_unlimited_lives">ミディアム(ライフ制限なし、セーブ1)</string>
+    <string name="startscreen_mode_unlimited_saves_and_lives">スタンダード(ライフ、セーブ数の制限なし)</string>
     <string name="startscreen_attention_message_slot_gets_delete_on_load">このゲームをロードするとセーブスロットが削除されます。別のゲームに切り替える前に、再度セーブをする必要があります。</string>
     <string name="startscreen_attention_slot_gets_delete_on_load">注意</string>
     <string name="startscreen_error_loading_empty_slot">空のスロットはロードできません。</string>
@@ -443,8 +443,8 @@
     <string name="startscreen_selectherosprite">外見</string>
     <string name="heroinfo_inventory_categories">カテゴリー</string>
     <string name="heroinfo_skill_categories">カテゴリー</string>
-    <string name="combat_condition_monster_immune">1$sに%2$sは効果がない。</string>
-    <string name="combat_condition_player_immune">あなたに%1$sは効果がない。</string>
+    <string name="combat_condition_monster_immune">1$sは%2$sを無効にする。</string>
+    <string name="combat_condition_player_immune">あなたは%1$sを無効にする。</string>
     <string name="combat_condition_monster_clear">%1$sは%2$sから回復した。</string>
     <string name="combat_condition_monster_apply">%1$sは%2$sの影響を受けている。</string>
     <string name="combat_condition_player_clear">あなたは %1$s から回復した。</string>
@@ -454,7 +454,7 @@
     <string name="heroinfo_inventory_sort">並び替え:</string>
     <string name="heroinfo_skill_sort">並び替え</string>
     <string name="dialog_monsterencounter_conditions">状態</string>
-    <string name="dialog_game_over_text">あなたは息を引き取ってこの世を去る。</string>
+    <string name="dialog_game_over_text">あなたは息を引き取りこの世から去ってゆく。</string>
     <string name="dialog_game_over_title">ゲームオーバー</string>
     <string name="dialog_recenter">現在地</string>
     <string name="dialog_more">その他</string>
@@ -542,13 +542,13 @@
     <string name="iteminfo_effect_works_on_attacker">敵に</string>
     <string name="skill_category_immunity">抵抗力</string>
     <string name="actorcondition_info_immunity">%1$s無効</string>
-    <string name="heroinfo_one_life">パーマデス (1ライフ)</string>
-    <string name="heroinfo_limited_lives">制限ライフ (残り%1$d/%2$d)</string>
-    <string name="heroinfo_unlimited_lives">ライフ無制限、セーブ数1</string>
+    <string name="heroinfo_one_life">パーマデス (ライフ1)</string>
+    <string name="heroinfo_limited_lives">ライフ制限 (残り %1$d/%2$d)</string>
+    <string name="heroinfo_unlimited_lives">ライフ制限なし、セーブ数1</string>
     <string name="heroinfo_unlimited_lives_and_saves">スタンダード
-\n(ライフとセーブ回数の制限なし)</string>
+\n(ライフ、セーブ数制限なし)</string>
     <string name="heroinfo_mode">モード</string>
-    <string name="rip_startscreen">(RIP)</string>
+    <string name="rip_startscreen">(死去)</string>
     <string name="change_locale_requires_restart">ロケールの変更には再起動が必要です。Andor\'s Trailを終了しました。</string>
     <string name="storage_permissions_mandatory">セーブしたゲームやワールドマップを処理するには、Andor\'s Trailにストレージへのアクセスが必須です。Andor\'s Trailを閉じる。</string>
     <string name="change_theme_requires_restart">UIテーマの変更には再起動が必要です。 Andor\'s Trailを終了しました。</string>
