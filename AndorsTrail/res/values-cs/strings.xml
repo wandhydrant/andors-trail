@@ -62,7 +62,7 @@
     <string name="combat_result_monsterhit">%1$s tě zraňuje za %2$d HP!</string>
     <string name="combat_result_monsterhitcritical">%1$s zasahuje kritickým útokem za %2$d HP!</string>
     <string name="combat_result_heromiss">Tvůj útok je neúspěšný.</string>
-    <string name="combat_result_herohit">Trefuješ: %1$s ztrácí %2$d HP!</string>
+    <string name="combat_result_herohit">Trefuješ se. %1$s ztrácí %2$d HP!</string>
     <string name="combat_result_herohitcritical">Povedl se ti kritický zásah: %1$s ztrácí %2$d HP!</string>
     <string name="combat_result_herokillsmonster">%1$s umírá!</string>
     <string name="combat_not_enough_ap">V tomto kole už nemáš dostatečný počet AB.</string>
@@ -72,7 +72,7 @@
     <string name="combat_condition_player_apply">Působí na tebe: %1$s.</string>
     <string name="combat_condition_player_clear">Zbavuješ se: %1$s.</string>
     <string name="combat_condition_player_immune">Jsi nyní imunní vůči: %1$s.</string>
-    <string name="combat_condition_monster_apply">%1$s působí na: %2$s.</string>
+    <string name="combat_condition_monster_apply">%1$s je ovlivněn: %2$s.</string>
     <string name="combat_condition_monster_clear">%1$s se zbavuje: %2$s.</string>
     <string name="combat_condition_monster_immune">%1$s je nyní imunní vůči: %2$s.</string>
     <string name="inventory_info">Info</string>
@@ -117,7 +117,7 @@
     <string name="iteminfo_action_use">Použít</string>
     <string name="iteminfo_action_equip">Vzít na sebe</string>
     <string name="iteminfo_action_unequip">Sundat</string>
-    <string name="iteminfo_action_use_ap">Použít (%1$d AP)</string>
+    <string name="iteminfo_action_use_ap">Použít (%1$d AB)</string>
     <string name="iteminfo_action_equip_ap">Vzít na sebe (%1$d AB)</string>
     <string name="iteminfo_action_unequip_ap">Sundat (%1$d AB)</string>
     <string name="startscreen_continue">Pokračovat ve hře</string>
@@ -147,7 +147,7 @@
     <string name="levelup_title">Nová úroveň</string>
     <string name="levelup_description">Vítej na úrovni %1$d!</string>
     <string name="levelup_buttontext">Nová úroveň</string>
-    <string name="levelup_add_health">Zvýšit počet životů (+%1$d PŽ)</string>
+    <string name="levelup_add_health">Zvýšit počet životů (+%1$d HP)</string>
     <string name="levelup_add_health_description">Zvýší tvůj celkový počet životů o%1$d.</string>
     <string name="levelup_add_attackchance">Zvýšit šanci na zásah (+%1$d)</string>
     <string name="levelup_add_attackchance_description">Zvýší tvou základní šanci na zásah o %1$d.</string>
@@ -163,7 +163,7 @@
     <string name="levelup_add_blockchance">Zvýšit šanci odvrácení útoku (+%1$d)</string>
     <string name="levelup_add_blockchance_description">Zvýší šanci odvrácení útoku o %1$d.</string>
     <string name="about_contents3">Tento program je svobodný. Můžeš jej za splnění podmínek licence GNU General Public License (verze 2 nebo novější) vydanou Free Software Foundation dále šířit a/nebo upravovat.&lt;br /&gt; &lt;br /&gt; Tento program je distribuován s vírou, že je dobrý, ale BEZ JAKÉKOLIV ZÁRUKY JAKÉHOKOLI DRUHU, AŤ VÝSLOVNÉ NEBO VYPLÝVAJÍCÍ, VČETNĚ, ALE NIKOLI JEN, ZÁRUK OBCHODOVATELNOSTI A VHODNOSTI PRO URČITÝ ÚČEL. Detaily najdeš v GNU General Public License.&lt;br /&gt; &lt;br /&gt; Společně s touto kopií jsi obdržel/a jeden exemplář GNU General Public License. Pokud tomu tak není, navštiv:&lt;a href=http://www.gnu.org/licenses&gt;http://www.gnu.org/licenses&lt;/a&gt;&lt;br /&gt; &lt;br /&gt; Zdrojový kód a/nebo požadavky na vylepšení můžeš stáhnout/najít/zadat na této stránce:&lt;a href=http://github.com/AndorsTrailRelease/andors-trail/&gt;http://github.com/AndorsTrailRelease/andors-trail/&lt;/a&gt;&lt;br /&gt;</string>
-    <string name="about_interface">&lt;div&gt;&lt;b&gt;Nastavení&lt;/b&gt; lze změnit po stisknutí tlačítka \"Menu\" na tvém přístroji.&lt;/div&gt; &lt;p&gt;________________&lt;/p&gt; &lt;h1&gt;Herní ikony&lt;/h1&gt; &lt;div&gt;&lt;b&gt;Truhla&lt;/b&gt;&lt;img alt=chest src=chest.png /&gt;&lt;/div&gt; &lt;p&gt;Pozice okamžitého použití [Podržením prstu na vacích se zobrazí nabídka předmětů k okamžitému použití]&lt;/p&gt; &lt;div&gt;&lt;b&gt;Hrdina&lt;/b&gt;&lt;img alt=hero src=char_hero.png /&gt;&lt;/div&gt; &lt;p&gt;Menu [Přehled, Mise, Dovednosti a Inventář *]&lt;/p&gt; &lt;p&gt;* (Informace o předmětu zobrazíš tak, že v inventáři klikneš na daný předmět; podržením prstu na předmětu zobrazíš další možností)&lt;/p&gt; &lt;div&gt;&lt;b&gt;Nepřítel&lt;/b&gt;&lt;img alt=monster src=monster.png /&gt;&lt;/div&gt; &lt;p&gt;Informace [Pouze během boje]&lt;/p&gt; &lt;p&gt;________________&lt;/p&gt; &lt;h1&gt;Boj&lt;/h1&gt; &lt;p&gt;Akce vykonané v boji stojí akční body (AB)...&lt;/p&gt; &lt;div&gt;&lt;b&gt;Útok&lt;/b&gt; - [3AP] *&lt;/div&gt; &lt;img alt=attacking src=doubleattackexample.png /&gt; &lt;p&gt;* (Případná výstroj a výbava může změnit časovou náročnost provedení akce - útoku, použití předmětu apod.)&lt;/p&gt; &lt;div&gt;&lt;b&gt;Použití předmětu&lt;/b&gt; - [5AP]&lt;/div&gt; &lt;div&gt;&lt;b&gt;Útěk&lt;/b&gt; - [6AP]&lt;/div&gt; &lt;p&gt;________________&lt;/p&gt; &lt;h1&gt;Souboj detailněji&lt;/h1&gt; &lt;div&gt;Během souboje podrž prst na políčku vedle hrdiny...&lt;/div&gt; &lt;div&gt;&lt;b&gt;Pro útěk&lt;/b&gt;&lt;/div&gt; &lt;p&gt;(vybrané políčko se zvýrazní - tlačítko útoku se změní na tlačítko pohybu)&lt;/p&gt; &lt;img alt=flee src=flee_example.png /&gt; &lt;p&gt;[aktivován mód útěku - podrž prst na nepříteli pro návrat k boji]&lt;/p&gt; &lt;div&gt;&lt;b&gt;Pro změnu cíle útoku&lt;/b&gt;&lt;/div&gt; &lt;p&gt;(červené zvýraznění cíle útoku se přesune na nového nepřítele)&lt;/p&gt; &lt;p&gt;[cíl útoku byl změněn]&lt;/p&gt;</string>
+    <string name="about_interface">&lt;div&gt;&lt;b&gt;Nastavení&lt;/b&gt; lze změnit po stisknutí tlačítka \"Menu\" na tvém přístroji.&lt;/div&gt; &lt;p&gt;________________&lt;/p&gt; &lt;h1&gt;Herní ikony&lt;/h1&gt; &lt;div&gt;&lt;b&gt;Truhla&lt;/b&gt;&lt;img alt=chest src=chest.png /&gt;&lt;/div&gt; &lt;p&gt;Pozice okamžitého použití [Podržením prstu na vacích se zobrazí nabídka předmětů k okamžitému použití]&lt;/p&gt; &lt;div&gt;&lt;b&gt;Hrdina&lt;/b&gt;&lt;img alt=hero src=char_hero.png /&gt;&lt;/div&gt; &lt;p&gt;Menu [Přehled, Mise, Dovednosti a Inventář *]&lt;/p&gt; &lt;p&gt;* (Informace o předmětu zobrazíš tak, že v inventáři klikneš na daný předmět; podržením prstu na předmětu zobrazíš další možností)&lt;/p&gt; &lt;div&gt;&lt;b&gt;Nepřítel&lt;/b&gt;&lt;img alt=monster src=monster.png /&gt;&lt;/div&gt; &lt;p&gt;Informace [Pouze během boje]&lt;/p&gt; &lt;p&gt;________________&lt;/p&gt; &lt;h1&gt;Boj&lt;/h1&gt; &lt;p&gt;Akce vykonané v boji stojí akční body (AB)...&lt;/p&gt; &lt;div&gt;&lt;b&gt;Útok&lt;/b&gt; - [3 AB] *&lt;/div&gt; &lt;img alt=attacking src=doubleattackexample.png /&gt; &lt;p&gt;* (Případná výstroj a výbava může změnit časovou náročnost provedení akce - útoku, použití předmětu apod.)&lt;/p&gt; &lt;div&gt;&lt;b&gt;Použití předmětu&lt;/b&gt; - [5 AB]&lt;/div&gt; &lt;div&gt;&lt;b&gt;Útěk&lt;/b&gt; - [6 AB]&lt;/div&gt; &lt;p&gt;________________&lt;/p&gt; &lt;h1&gt;Souboj detailněji&lt;/h1&gt; &lt;div&gt;Během souboje podrž prst na políčku vedle hrdiny...&lt;/div&gt; &lt;div&gt;&lt;b&gt;Pro útěk&lt;/b&gt;&lt;/div&gt; &lt;p&gt;(vybrané políčko se zvýrazní - tlačítko útoku se změní na tlačítko pohybu)&lt;/p&gt; &lt;img alt=flee src=flee_example.png /&gt; &lt;p&gt;[aktivován mód útěku - podrž prst na nepříteli pro návrat k boji]&lt;/p&gt; &lt;div&gt;&lt;b&gt;Pro změnu cíle útoku&lt;/b&gt;&lt;/div&gt; &lt;p&gt;(červené zvýraznění cíle útoku se přesune na nového nepřítele)&lt;/p&gt; &lt;p&gt;[cíl útoku byl změněn]&lt;/p&gt;</string>
     <string name="dialog_newversion_title">Vítej</string>
     <string name="dialog_newversion_message">Děkujeme zs instalaci hry Andor\'s Trail! 
 \n 
@@ -302,10 +302,10 @@
     <string name="skill_shortdescription_resistance_mental">Odolnost vůči duševním podmínkám</string>
     <string name="skill_shortdescription_resistance_physical_capacity">Odolnost vůči fyzickým (tělesným) podmínkám</string>
     <string name="skill_shortdescription_resistance_blood_disorder">Odolnost vůči krevním potížím</string>
-    <string name="skill_longdescription_weapon_chance">Zvýší šanci na zásah o %1$d %% za každou úroveň osvojení dovednosti.</string>
+    <string name="skill_longdescription_weapon_chance">Zvýší šanci na zásah o %1$d bodů za každou úroveň osvojení dovednosti.</string>
     <string name="skill_longdescription_weapon_dmg">Zvýší zranění způsobená útokem o %1$d za každou úroveň osvojení dovednosti.</string>
     <string name="skill_longdescription_barter">Každá získaná úroveň osvojení dovednosti sníží nákupní i prodejní přirážku o %1$d procentní body.</string>
-    <string name="skill_longdescription_dodge">Zvýší šanci na odvrácení útoku o %1$d %% za každou úroveň osvojení dovednosti.</string>
+    <string name="skill_longdescription_dodge">Zvýší šanci na odvrácení útoku o %1$d bodů za každou úroveň osvojení dovednosti.</string>
     <string name="skill_longdescription_barkskin">Zvýší redukci zranění o %1$d za každou úroveň osvojení dovednosti.</string>
     <string name="skill_longdescription_more_criticals">Zvýší stávající úroveň kritického zásahu výstroje o %1$d %% za každou úroveň osvojení dovednosti.</string>
     <string name="skill_longdescription_better_criticals">Zvýší stávající násobitel kritického zásahu výstroje o %1$d %% za každou úroveň osvojení dovednosti.</string>
@@ -313,10 +313,10 @@
     <string name="skill_longdescription_coinfinder">Zvýší šanci na nález zlaťáků po zabití nepřítele o %1$d %% a zvýší počet nalezených zlaťáků o %2$d %% za každou úroveň osvojení dovednosti (až do maximální výše zlaťáků, které nepřítel může mít).</string>
     <string name="skill_longdescription_more_exp">Zvýší množství zkušeností získaných zabitím nepřítele o %1$d %% za každou úroveň osvojení dovednosti.</string>
     <string name="skill_longdescription_cleave">Za každého zabitého nepřítele obnoví +%1$d akční bod (AB) za každou úroveň osvojení dovednosti.</string>
-    <string name="skill_longdescription_eater">Za každého zabitého nepřítele obnoví +%1$d život (PŽ) za každou úroveň osvojení dovednosti.</string>
-    <string name="skill_longdescription_fortitude">Při každém zvýšení úrovně zvýší maximální počet životů (PŽ) o %1$d za každou úroveň osvojení dovednosti. Toto neplatí zpětně, ale pouze pro následující nové úrovně.</string>
+    <string name="skill_longdescription_eater">Za každého zabitého nepřítele obnoví +%1$d život (HP) za každou úroveň osvojení dovednosti.</string>
+    <string name="skill_longdescription_fortitude">Při každém zvýšení úrovně zvýší maximální počet životů (HP) o %1$d za každou úroveň osvojení dovednosti. Toto neplatí zpětně, ale pouze pro následující nové úrovně.</string>
     <string name="skill_longdescription_evasion">Každá úroveň osvojení dovednosti sníží jak šanci na neúspěch při útěku o %1$d %%, tak šanci, že nepřítel na sousedním políčku zaútočí o %2$d %%.</string>
-    <string name="skill_longdescription_regeneration">V případě, kdy na sousedním políčku není žádná nestvůra, obnoví každé kolo (cca 6 sekund) +%1$d život (PČ) za každou úroveň osvojení dovednosti.</string>
+    <string name="skill_longdescription_regeneration">V případě, kdy na sousedním políčku není žádná nestvůra, obnoví každé kolo (cca 6 sekund) +%1$d život (HP) za každou úroveň osvojení dovednosti.</string>
     <string name="skill_longdescription_lower_exploss">Každá úroveň osvojení dovednosti sníží množství ztracených zkušeností způsobené úmrtím o %1$d %% (procent ze současného množství ztracených zkušeností, ne procent celkově). %2$d úrovní osvojení dovednosti zcela zruší ztrátu zkušeností způsobenou úmrtím.</string>
     <string name="skill_longdescription_magicfinder">Zvýší šanci na nález výjimečných předmětů o %1$d %% za každou úroveň osvojení dovednosti.</string>
     <string name="skill_longdescription_resistance_mental">Sníží šanci na postižení duševním stavem o %1$d %% za každou úroveň osvojení dovednosti nad %2$d %%. To zahrnuje stavy způsobené útoky nepřátel jako např. Omámení nebo Oslabení zbraně.</string>
