@@ -35,7 +35,7 @@
     <string name="heroinfo_totalexperience">Experiência total</string>
     <string name="heroinfo_wornequipment">Equipamentos usados</string>
     <string name="heroinfo_inventory">Inventário</string>
-    <string name="heroinfo_gold">Moedas: %1$d</string>
+    <string name="heroinfo_gold">Ouro: %1$d</string>
     <string name="heroinfo_actionpoints">Ponto de Ação (AP):</string>
     <string name="heroinfo_quests">Missões</string>
     <string name="combat_attack">Atacar (%1$d AP)</string>
@@ -53,7 +53,7 @@
     <string name="combat_result_monstermiss">%1$s falha!</string>
     <string name="combat_result_monsterhit">%1$s acertou-lhe e causou perda de %2$d hp!</string>
     <string name="combat_result_monsterhitcritical">%1$s acertou-lhe com um golpe crítico e causou perda de %2$d hp!</string>
-    <string name="combat_result_heromiss">Seu ataque erra.</string>
+    <string name="combat_result_heromiss">Você erra seu ataque.</string>
     <string name="combat_result_herohit">Acertou %1$s causando perda de %2$d hp!</string>
     <string name="combat_result_herohitcritical">Acertou um golpe crítico em %1$s, causando perda de %2$d hp!</string>
     <string name="combat_result_herokillsmonster">%1$s morre!</string>
@@ -247,7 +247,7 @@
     <string name="bulkselection_totalcost_sell">Custo total: %1$d moedas</string>
     <string name="bulkselection_select_all">Tudo</string>
     <string name="bulkselection_sell_confirmation_title">Você tem certeza\?</string>
-    <string name="bulkselection_sell_confirmation">Tem certeza que quer vender %1$s? Este objeto é %2$s e poderá não conseguir recuperar depois.</string>
+    <string name="bulkselection_sell_confirmation">Tem certeza que quer vender %1$s\? Este item é %2$s e pode não conseguir recuperar depois.</string>
     <string name="skill_title_weapon_chance">Precisão de Arma</string>
     <string name="skill_title_weapon_dmg">Golpe Forte</string>
     <string name="skill_title_barter">Mercador</string>
@@ -415,7 +415,7 @@
     <string name="skill_title_weapon_prof_axe">Competência com machados</string>
     <string name="skill_title_weapon_prof_dagger">Competência com adagas</string>
     <string name="skill_title_armor_prof_shield">Competência com escudos</string>
-    <string name="skill_title_weapon_prof_unarmed">Luta desarmado</string>
+    <string name="skill_title_weapon_prof_unarmed">Lutando Desarmado</string>
     <string name="skill_title_armor_prof_light">Competência com armaduras leves</string>
     <string name="skill_title_armor_prof_heavy">Competência com armaduras pesadas</string>
     <string name="skill_title_fightstyle_dualwield">Estilo de combate: manuseio duplo</string>
@@ -469,7 +469,7 @@ Andor\'s Trail foi fechado.</string>
     <string name="heroinfo_gamestats">Estatísticas do jogo</string>
     <string name="heroinfo_gamestats_quests">Aventuras concluídas</string>
     <string name="heroinfo_gamestats_deaths">Vezes em que ficou inconsciente</string>
-    <string name="heroinfo_gamestats_spent_gold">Moedas gastas em lojas</string>
+    <string name="heroinfo_gamestats_spent_gold">Ouro gasto em lojas</string>
     <string name="heroinfo_gamestats_bonemeals">Poções de farinha óssea usadas</string>
     <string name="heroinfo_gamestats_num_used_items">Itens usados</string>
     <string name="heroinfo_gamestats_visited_maps">Lugares visitados</string>
@@ -557,14 +557,14 @@ Andor\'s Trail foi fechado.</string>
     <string name="skill_sort_unsorted">Desordenado</string>
     <string name="skill_sort_name">Nome</string>
     <string name="skill_sort_points">Pontos</string>
-    <string name="skill_sort_unlocked">Destravado</string>
+    <string name="skill_sort_unlocked">Desbloqueado</string>
     <string name="preferences_display_theme_title">Tema</string>
     <string name="preferences_display_theme">Escolha o tema da interface do usuário. (requer reinicialização)</string>
     <string name="preferences_display_theme_blue">Cobalto</string>
     <string name="preferences_display_theme_green">Malaquita</string>
     <string name="preferences_display_theme_charcoal">Obsidiana</string>
-    <string name="change_theme_requires_restart">Alterar o tema da interface do usuário requer reinicialização. O jogo \'Trilha de Andor\' foi fechado.</string>
-    <string name="storage_permissions_mandatory">O acesso ao armazenamento é obrigatório para o jogo \"Andor\'s Trail\" lidar com salvamento de jogos e com o mapa mundial. Fechando jogo \"Andor\'s Trail\".</string>
+    <string name="change_theme_requires_restart">Alterar o tema da interface do usuário requer reinicialização. O jogo foi finalizado.</string>
+    <string name="storage_permissions_mandatory">O acesso ao armazenamento é obrigatório para o jogo Trilha de Andor lidar com salvamento de jogos e com o mapa mundial. Finalizando Trilha de Andor.</string>
     <string name="startscreen_error_loading_game">Erro ao carregar o jogo</string>
     <string name="startscreen_load_game">Carregar jogo</string>
     <string name="startscreen_game_mode">Modo</string>
@@ -584,7 +584,7 @@ Andor\'s Trail foi fechado.</string>
     <string name="menu_save_switch_character_title">Trocar de personagem</string>
     <string name="preferences_language_description">Selecione a linguagem. Inglês será usado se o sistema de linguagem não estiver disponível ou se o conteúdo não foi traduzido. (Requer reinicialização)</string>
     <string name="preferences_language">Linguagem</string>
-    <string name="preferences_language_default">Sistema de linguagem</string>
+    <string name="preferences_language_default">Linguagem do Sistema</string>
     <string name="preferences_display_scaling_factor_75_percent">Tamanho 0,75x</string>
     <string name="preferences_display_scaling_factor_50_percent">Metade do tamanho</string>
     <string name="startscreen_attention_slot_gets_delete_on_load">Atenção</string>
