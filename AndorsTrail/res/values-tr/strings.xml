@@ -58,14 +58,14 @@
     <string name="inventory_item_used">%1$s kullandın.</string>
     <string name="inventory_item_dropped">%1$s düşürüldü.</string>
     <string name="dialog_loot_pickall">Hepsini al</string>
-    <string name="dialog_loot_foundgold">"%1$d altın buldun. "</string>
-    <string name="dialog_loot_pickedupitem">"Bir eşya aldın. "</string>
-    <string name="dialog_loot_pickedupitems">"%1$d eşya aldın. "</string>
+    <string name="dialog_loot_foundgold">%1$d altın buldun.</string>
+    <string name="dialog_loot_pickedupitem">Bir eşya aldın.</string>
+    <string name="dialog_loot_pickedupitems">%1$d eşya aldın.</string>
     <string name="dialog_groundloot_title">Eşyalar</string>
-    <string name="dialog_groundloot_message">"Bir şeyler buldun. "</string>
+    <string name="dialog_groundloot_message">Bir şeyler buldun.</string>
     <string name="dialog_monsterloot_title">Zafer</string>
-    <string name="dialog_monsterloot_message">"Karşılaşmadan sağ çıktın. "</string>
-    <string name="dialog_monsterloot_gainedexp">"%1$d deneyim kazandın. "</string>
+    <string name="dialog_monsterloot_message">Karşılaşmadan sağ çıktın.</string>
+    <string name="dialog_monsterloot_gainedexp">%1$d deneyim kazandın.</string>
     <string name="monster_difficulty_veryeasy">Çok kolay</string>
     <string name="monster_difficulty_easy">Kolay</string>
     <string name="monster_difficulty_normal">Normal</string>
@@ -87,7 +87,7 @@
     <string name="traitsinfo_criticalhit_multiplier">Kritik çarpanı:</string>
     <string name="traitsinfo_defense_chance">Blok şansı:</string>
     <string name="traitsinfo_defense_damageresist">Hasara direnç:</string>
-    <string name="iteminfo_category">"Kategori: "</string>
+    <string name="iteminfo_category">Kategori:</string>
     <string name="iteminfo_action_use">Kullan</string>
     <string name="iteminfo_action_equip">Giy</string>
     <string name="iteminfo_action_unequip">Çıkar</string>
@@ -100,11 +100,11 @@
     <string name="startscreen_about">Hakkında/yardım</string>
     <string name="startscreen_enterheroname">Kahraman adı gir</string>
     <string name="startscreen_load">Yükle</string>
-    <string name="conversation_rewardexp">" [%1$d deneyim kazandınız]"</string>
-    <string name="conversation_rewardgold">" [%1$d altın kazandınız]"</string>
-    <string name="conversation_lostgold">" [%1$d altın kaybettiniz]"</string>
-    <string name="conversation_rewarditem">" [Bir eşya kazandınız]"</string>
-    <string name="conversation_rewarditems">" [%1$d eşya kazandınız]"</string>
+    <string name="conversation_rewardexp">[%1$d deneyim kazandınız]</string>
+    <string name="conversation_rewardgold">[%1$d altın kazandınız]</string>
+    <string name="conversation_lostgold">[%1$d altın kaybettiniz]</string>
+    <string name="conversation_rewarditem">[Bir eşya kazandınız]</string>
+    <string name="conversation_rewarditems">[%1$d eşya kazandınız]</string>
     <string name="conversation_next">İleri</string>
     <string name="conversation_leave">Ayrıl</string>
     <string name="shop_buy">Satın al</string>
@@ -519,4 +519,10 @@
     <string name="preferences_quickslots_placements_horizontal_center_bottom">Orta alt</string>
     <string name="preferences_quickslots_placements_vertical_center_right">Orta sağ</string>
     <string name="preferences_quickslots_placements_vertical_center_left">Orta sol</string>
+    <string name="change_theme_requires_restart">Kullanıcı arayüzü temasını değiştirmek yeniden başlatma gerektirir. Andor\'un İzinde kapatıldı.</string>
+    <string name="shoplist_sort_quantity">Miktar</string>
+    <string name="inventory_sort_quantity">Miktar</string>
+    <string name="change_locale_requires_restart">Yerel ayarı değiştirmek yeniden başlatma gerektirir. Andor\'un İzinde kapatıldı.</string>
+    <string name="preferences_ui_use_localized_resources">Mümkünse arayüz ve içeriğin çevirisini kullan. (yeniden başlatma gerektirir)</string>
+    <string name="preferences_ui_use_localized_resources_title">Yerelleştirilmiş kaynakları kullan</string>
 </resources>
