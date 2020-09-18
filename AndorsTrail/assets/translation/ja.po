@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: Andors Trail\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-11-10 11:48+0000\n"
-"PO-Revision-Date: 2020-09-17 18:50+0000\n"
+"PO-Revision-Date: 2020-09-19 03:17+0000\n"
 "Last-Translator: Meiru <sanna+hw@dismail.de>\n"
 "Language-Team: Japanese <https://hosted.weblate.org/projects/andors-trail/"
 "game-content/ja/>\n"
@@ -3715,7 +3715,7 @@ msgstr "購入できるものを見せてもらえますか?"
 
 #: conversationlist_thievesguild_1.json:thievesguild_troublemaker_1:3
 msgid "Umar sent me to talk about my first job here."
-msgstr "Umarからここで初めての仕事の話をするように送られました。"
+msgstr "Umarから初めての仕事を教えてもらうよう送られました。"
 
 #: conversationlist_thievesguild_1.json:thievesguild_troublemaker_2
 msgid "I keep an eye on our supplies for the guild."
@@ -10150,7 +10150,8 @@ msgstr "ここは私の隠れ場よ! すぐ出ていって。"
 
 #: conversationlist_crossroads_1.json:fanamor_6:0
 msgid "Umar sent me with the words \"You are no one.No one knows you.No one has seen you.\" Now give me the journal please."
-msgstr "Umarから「あなたは誰でもない。誰もあなたを知らない。誰もあなたを見ていない」という言葉と一緒に送られました。そういうわけで日記をください。"
+msgstr ""
+"Umarから\"あなたは誰でもない。誰もあなたを知らない。誰もあなたを見ていない\"という言葉と一緒に送られました。そういうわけで日記をください。"
 
 #: conversationlist_crossroads_1.json:crossroads_guard_r_1
 msgid "Did you hear? Some thieves down in Fallhaven were planning an escape for one of the imprisoned thieves in the prison there."
@@ -30434,53 +30435,57 @@ msgstr "君の疑念は理解している。覚悟ができたら戻ってくる
 
 #: conversationlist_omicronrg9.json:troublemaker_guild_1
 msgid "Argh, another annoying apprentice ... I mean, sorry. I know you were the one who brought us the key."
-msgstr ""
+msgstr "はあ、こりゃまた困った見習いが…ああ、ごめんよ。あんたが鍵を持ってきてくれたって話なら知ってる。"
 
 #: conversationlist_omicronrg9.json:troublemaker_guild_2
 msgid "OK, now listen up! "
-msgstr ""
+msgstr "じゃあ聞いてくれ! "
 
 #: conversationlist_omicronrg9.json:troublemaker_guild_3
 msgid "As I expect you are aware, we're not welcome in many places. In fact, we're being pursued by Fallhaven patrols. That's why we are here. This place is safe."
 msgstr ""
+"知っての通り、オレたちは大抵の場所で歓迎されない。実際、Fallhavenのパトロールにも追われてる。だからここにいるんだ。ここなら安全だからね。"
 
 #: conversationlist_omicronrg9.json:troublemaker_guild_4
 msgid "But we need supplies to survive, and also to maintain the Guild's influence. We are not just common robbers."
-msgstr ""
+msgstr "だけど生き残るためには、ギルドの影響力を維持するには物資が必要だ。オレたちはそこらの強盗とは違う。"
 
 #: conversationlist_omicronrg9.json:troublemaker_guild_5
 msgid ""
 "We don't just steal gold or goods. We steal information. Secrets, shipment reports, strategic locations.\n"
 "Do you know what I mean?"
 msgstr ""
+"金品だけじゃない。情報を盗むんだ。機密、出荷記録、戦略拠点。\n"
+"オレの言ってること、分かる?"
 
 #: conversationlist_omicronrg9.json:troublemaker_guild_5:0
 msgid "Get to the point please."
-msgstr ""
+msgstr "要点を話して。"
 
 #: conversationlist_omicronrg9.json:troublemaker_guild_5:1
 msgid "Yes, I understand."
-msgstr ""
+msgstr "はい、分かります。"
 
 #: conversationlist_omicronrg9.json:troublemaker_guild_6
 msgid "We have spies and scouts in certain key locations, gathering information. These locations are places frequented by people from Feygard and also from Nor City."
 msgstr ""
+"オレたちは情報を収集するために特定の重要な場所にスパイやスカウトを配置してる。FeygardやNor Cityの人なんかが頻繁にやって来る場所だ。"
 
 #: conversationlist_omicronrg9.json:troublemaker_guild_7
 msgid "So you will be the intermediary this time, collecting our spies' journals and bringing them to me."
-msgstr ""
+msgstr "それで今回はあんたが仲介役としてスパイの日記を集めて、オレのところへ持ってきてほしい。"
 
 #: conversationlist_omicronrg9.json:troublemaker_guild_7:0
 msgid "Sounds easy, I'll do it."
-msgstr ""
+msgstr "簡単そう、やります。"
 
 #: conversationlist_omicronrg9.json:troublemaker_guild_7:1
 msgid "That's not my favourite kind of job, but I will bring them."
-msgstr ""
+msgstr "好みの仕事とは違うけど、持ってきます。"
 
 #: conversationlist_omicronrg9.json:troublemaker_guild_7:2
 msgid "No, I'm too strong to be just a mere broker."
-msgstr ""
+msgstr "嫌です、ただの仲介人になるには僕は強すぎるので。"
 
 #: conversationlist_omicronrg9.json:troublemaker_guild_8a
 msgid ""
@@ -30489,20 +30494,26 @@ msgid ""
 "One of our veteran spies, Dunla, is disguised as a vendor in Vilegard Tavern.\n"
 "And finally we have Fanamor, watching what is happening around Crossroads Guardhouse. Search for them in this order."
 msgstr ""
+"よし。任務には3人の人間がついてる。\n"
+"まずCrossglenのスパイであるLeta、彼女のことは知ってるよね。\n"
+"それからベテランスパイのDunla、Vilegardの酒場で売人を装ってる。\n"
+"最後にFanamor、Crossroads衛兵所の周辺で監視についてる。この順番で探してきてくれ。"
 
 #: conversationlist_omicronrg9.json:troublemaker_guild_8b
 msgid "Hmpf. Go kill some beetles with your strength!"
-msgstr ""
+msgstr "くふふ。じゃあその力でカブトムシでも退治してきてくれ!"
 
 #: conversationlist_omicronrg9.json:troublemaker_guild_9
 msgid ""
 "Ah! I almost forgot. You have to say the password if you want them to give you the journal.\n"
 "The password is \"You are no one. No one knows you. No one has seen you.\" Good luck."
 msgstr ""
+"ああ! 忘れるところだった。日記を受け取るには合言葉を言わなきゃいけないんだ。\n"
+"合言葉は\"あなたは誰でもない。誰もあなたを知らない。誰もあなたを見ていない\"。じゃあ頑張って。"
 
 #: conversationlist_omicronrg9.json:troublemaker_guild_9:0
 msgid "I will keep that in mind. Bye."
-msgstr ""
+msgstr "覚えておきます。では。"
 
 #: conversationlist_omicronrg9.json:dunla_guild_1
 msgid "What? I don't know what you are talking about."
@@ -47497,8 +47508,7 @@ msgstr ""
 
 #: questlist_omicronrg9.json:Thieves01:20
 msgid "I have to remember to tell them the password \"You are no one. No one knows you. No one has seen you.\""
-msgstr ""
-"次の合言葉を忘れずに伝えよう。\"You are no one. No one knows you. No one has seen you.\""
+msgstr "次の合言葉を忘れずに伝えよう。\"あなたは誰でもない。誰もあなたを知らない。誰もあなたを見ていない。\""
 
 #: questlist_omicronrg9.json:Thieves01:25
 msgid "Leta gave me her journal and advised me to not raise suspicion."
