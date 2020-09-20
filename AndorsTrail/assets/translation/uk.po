@@ -8,25 +8,25 @@ msgstr ""
 "Project-Id-Version: andors-trail\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-11-10 11:48+0000\n"
-"PO-Revision-Date: 2020-02-03 21:16+0000\n"
-"Last-Translator: Anatoly Chub <anatolijuschub@gmail.com>\n"
+"PO-Revision-Date: 2020-08-28 01:49+0000\n"
+"Last-Translator: Максим Якимчук <xpinovo@gmail.com>\n"
 "Language-Team: Ukrainian <https://hosted.weblate.org/projects/andors-trail/"
 "game-content/uk/>\n"
 "Language: uk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<="
-"4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 3.11-dev\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 4.2.1-dev\n"
 "X-Launchpad-Export-Date: 2015-11-02 12:25+0000\n"
 
 #: [none]
 msgid "translator-credits"
 msgstr ""
 "Launchpad Contributions:\n"
-"  Dmitry Grechka https://launchpad.net/~tarqinn-b\n"
-"  Volodymyr Fedyk https://launchpad.net/~volodymyr-fedyk"
+" Dmitry Grechka https://launchpad.net/~tarqinn-b\n"
+" Volodymyr Fedyk https://launchpad.net/~volodymyr-fedyk"
 
 #: actorconditions_v069.json:bless
 msgid "Bless"
@@ -282,7 +282,7 @@ msgstr "Захмарення розуму"
 
 #: actorconditions_omicronrg9.json:guild03_restingAC
 msgid "Resting"
-msgstr ""
+msgstr "Відпочинок"
 
 #: actorconditions_omicronrg9.json:g03_concentration
 msgid "Concentration"
@@ -294,7 +294,7 @@ msgstr "Комбо"
 
 #: actorconditions_omicronrg9.json:carrying_ambelie
 msgid "Carrying Ambelie"
-msgstr ""
+msgstr "Перенесення Ambelie"
 
 #: actorconditions_arulir_mountain.json:crushed
 msgid "Crushed"
@@ -314,34 +314,34 @@ msgstr "Збільшений захист"
 
 #: actorconditions_brimhaven.json:drowning
 msgid "Drowning"
-msgstr ""
+msgstr "Утоплення"
 
 #: actorconditions_brimhaven.json:entanglement
 msgid "Entanglement"
-msgstr ""
+msgstr "Заплутування"
 
 #: actorconditions_brimhaven.json:fatigue1
 #: actorconditions_brimhaven.json:fatigue2
 #: actorconditions_brimhaven.json:fatigue3
 #: actorconditions_brimhaven.json:fatigue4
 msgid "Fatigue"
-msgstr ""
+msgstr "Втома"
 
 #: actorconditions_brimhaven.json:turn_to_stone
 msgid "Turning to stone"
-msgstr ""
+msgstr "Перетворений на камінь"
 
 #: actorconditions_brimhaven.json:stoneskin
 msgid "Stone skin"
-msgstr ""
+msgstr "Кам'яна шкіра"
 
 #: actorconditions_brimhaven.json:overeating
 msgid "Overeating"
-msgstr ""
+msgstr "Переїв"
 
 #: actorconditions_brimhaven.json:venom
 msgid "Venom"
-msgstr ""
+msgstr "Отруєний"
 
 #: conversationlist_mikhail.json:mikhail_gamestart
 msgid "Oh good, you are awake."
@@ -370,7 +370,7 @@ msgstr "Ти маєш ще якісь завдання для мене?"
 #: conversationlist_mikhail.json:mikhail_default:3
 #: conversationlist_umar.json:umar_return_1:0
 msgid "Do you have any tasks for me?"
-msgstr "[REVIEW]Вітаю."
+msgstr "Ти маєш якісь завдання для мене?"
 
 #: conversationlist_mikhail.json:mikhail_default:4
 msgid "Is there anything else you can tell me about Andor?"
@@ -379,11 +379,11 @@ msgstr "Ти можеш розповісти ще щось про Ендора?"
 #: conversationlist_mikhail.json:mikhail_default:5
 #: conversationlist_mikhail.json:mikhail_default:6
 msgid "I have a present for you."
-msgstr ""
+msgstr "Я маю для вас подарунок."
 
 #: conversationlist_mikhail.json:mikhail_default:7
 msgid "I was searching for Andor."
-msgstr ""
+msgstr "Я шукав Ендора."
 
 #: conversationlist_mikhail.json:mikhail_tasks
 msgid "Oh yes, there were some things I need help with, bread and rats. Which one would you like to talk about?"
@@ -485,7 +485,9 @@ msgstr "Прошу."
 
 #: conversationlist_mikhail.json:mikhail_rats_start
 msgid "I saw some rats out back in our garden earlier. Could you please go kill any rats that you see out there."
-msgstr "Я бачив кілька щурів у нашому городі. Ти не міг би перебити усіх пацюків, яких зможеш там знайти?"
+msgstr ""
+"Я бачив кілька щурів у нашому саду. Ти не міг би, будь ласка, перебити усіх "
+"пацюків, яких зможеш там знайти?"
 
 #: conversationlist_mikhail.json:mikhail_rats_start:0
 msgid "I have already dealt with the rats."
@@ -870,7 +872,9 @@ msgstr ""
 msgid ""
 "On one hand, Lord Geomyr supports Crossglen with a lot of protection.\n"
 "[Points to the soldiers in the hall]"
-msgstr "З одного боку, Лорд Геомир підтримує Кросглен великою кількістю охорони. *показує на солдат в залі*"
+msgstr ""
+"З одного боку, Лорд Геомир підтримує Кросглен великою кількістю охорони.\n"
+"[Вказує на солдат в залі]"
 
 #: conversationlist_crossglen_leonid.json:leonid_crossglen7
 msgid "But on the other hand, the tax and the recent changes of what's allowed are really taking a toll on Crossglen."
@@ -937,7 +941,7 @@ msgstr "Кісткове борошно? Нам не варто про це го
 #: conversationlist_prim_arghest.json:arghest_6:1
 #: conversationlist_prim_arghest.json:arghest_7:0
 msgid "Please?"
-msgstr "Ну будь ласка..."
+msgstr "Будь ласка?"
 
 #: conversationlist_crossglen_tharal.json:tharal_bonemeal2_1
 msgid "No, we really shouldn't talk about that."
@@ -1866,7 +1870,7 @@ msgstr "Нііі, ти не пройдеш!"
 
 #: conversationlist_fallhaven_church.json:catacombguard1:0
 msgid "OK. Let's fight."
-msgstr "Добре. В бій!"
+msgstr "Добре. До бою."
 
 #: conversationlist_fallhaven_church.json:luthor
 msgid "*hissss* What mortal disturbs my sleep?"
@@ -1927,7 +1931,7 @@ msgstr "Я даю тобі дозвіл на спуск до катакомб п
 
 #: conversationlist_fallhaven_athamyr.json:athamyr_complete
 msgid "Thanks, this will do nicely."
-msgstr "Дякую. Саме те, що треба."
+msgstr "Дякую, це буде чудово."
 
 #: conversationlist_fallhaven_drunk.json:fallhaven_drunk
 msgid "No problem. No sireee! Not causing any more trouble now. I sits here outside now."
@@ -1973,7 +1977,7 @@ msgstr "Ну, добре. Клятий охоронець викинув мен�
 
 #: conversationlist_fallhaven_drunk.json:fallhaven_drunk_4
 msgid "Drink drink drink, drink some more. Drink, drink ... Uh how did it go again?"
-msgstr "Пий, пий, пий, випий ще. Пий, пий ... Ух, як, добре зайшло?"
+msgstr "Пий, пий, пий, випий ще. Пий, пий ... Еге, як же це там далі?"
 
 #: conversationlist_fallhaven_drunk.json:fallhaven_drunk_5
 msgid "Were you saying something? Where was I? Yes, so we were in this dungeon."
@@ -2259,7 +2263,9 @@ msgstr "[Купити за 10 золотих]"
 
 #: conversationlist_fallhaven_tavern.json:bela_room_1:1
 msgid "I really need to rest but I don't have 10 gold. I will wash the dishes. [Wash the dishes]"
-msgstr "[REVIEW]Ні, дякую."
+msgstr ""
+"Мені справді потрібно відпочити, але у мене немає 10 золотих. Я помию посуд. "
+"[Мити посуд]"
 
 #: conversationlist_fallhaven_tavern.json:bela_room_2
 msgid "Thanks. Take the last room down at the end of the hall."
@@ -3314,54 +3320,65 @@ msgstr "Бувайте."
 #: conversationlist_fallhaven_south.json:fallhaven_lumberjack_13
 msgid "You're welcome. But you're not the only one who is happy. There are more people resting for a night in Fallhaven, which helps our economy. Some even bought items at my store! By the way, I was surprised, but I even got paid well by the warden."
 msgstr ""
+"Ласкаво просимо. Але ти не єдиний, хто щасливий. Більше людей відпочиває "
+"вночі у Фолгевені, що допомагає нашій економіці. Деякі навіть купували "
+"предмети в моєму магазині! До речі, я був здивований, але навіть староста "
+"мені заплатив."
 
 #: conversationlist_fallhaven_south.json:fallhaven_lumberjack_13:0
 msgid "Great. Now everything is much better than it was before!"
-msgstr ""
+msgstr "Чудово. Зараз все набагато краще, ніж було раніше!"
 
 #: conversationlist_fallhaven_south.json:fallhaven_lumberjack_13:1
 msgid "I wanted to ask about something else."
-msgstr ""
+msgstr "Я хотів запитати про щось інше."
 
 #: conversationlist_fallhaven_south.json:fallhaven_lumberjack_14
 msgid "Have you made any progress in finding my precious axe?"
-msgstr ""
+msgstr "Ти досяг успіху в пошуку моєї дорогоцінної сокири?"
 
 #: conversationlist_fallhaven_south.json:fallhaven_lumberjack_14:0
 msgid "Hello again! I've finally found your axe!"
-msgstr ""
+msgstr "Привіт ще раз! Я нарешті знайшов твою сокиру!"
 
 #: conversationlist_fallhaven_south.json:fallhaven_lumberjack_14:1
 msgid "No I haven't. But I'm working on it."
-msgstr ""
+msgstr "Ні. Але я працюю над цим."
 
 #: conversationlist_fallhaven_south.json:fallhaven_lumberjack_15
 msgid "Hello again my friend."
-msgstr ""
+msgstr "Привіт ще раз, мій друже."
 
 #: conversationlist_fallhaven_south.json:fallhaven_lumberjack_15:0
 msgid "I cannot thank you enough for cutting away those trees! Finally I've got a shortcut!"
 msgstr ""
+"Я не знаю як віддячити вам за те, що вирубали ці дерева! Нарешті я отримав "
+"короткий шлях!"
 
 #: conversationlist_fallhaven_south.json:fallhaven_lumberjack_16
 msgid "Thank you for bringing me back my axe!"
-msgstr ""
+msgstr "Дякую, що повернув мені сокиру!"
 
 #: conversationlist_signs_pre067.json:keyarea_andor1
 msgid "You should talk to Mikhail first."
-msgstr ""
+msgstr "Спершу слід поговорити з Михайлом."
 
 #: conversationlist_signs_pre067.json:note_lodars
 msgid "On the ground, you find a piece of paper with a lot of strange symbols. You can barely make out the words 'meet me at Lodar's hideaway', but you are not sure what it means."
 msgstr ""
+"На землі ви знаходите аркуш паперу з безліччю дивних символів. Ви ледве "
+"можете зрозуміти слова \"зустрінемося біля сховища Лодару\", але ви не "
+"впевнені, що це означає."
 
 #: conversationlist_signs_pre067.json:keyarea_crossglen_smith
 msgid "Audir shouts: Hey you, get away! You are not allowed back there."
-msgstr ""
+msgstr "Одір кричить: Гей ти, відійди! Тобі не дозволяли туди."
 
 #: conversationlist_signs_pre067.json:sign_crossglen_cave
 msgid "The sign on the wall is cracked in several places. You cannot make out anything comprehensible from the writing."
 msgstr ""
+"Знак на стіні тріснув у декількох місцях. З написаного ви не можете нічого "
+"зрозуміти."
 
 #: conversationlist_signs_pre067.json:sign_wild1
 msgid ""
@@ -3369,10 +3386,14 @@ msgid ""
 "South: Fallhaven\n"
 "North: Feygard"
 msgstr ""
+"Захід: Кросглен\n"
+"Південь: Фолгевен\n"
+"Північ: Фейгард"
 
 #: conversationlist_signs_pre067.json:sign_notdone
 msgid "This map is not yet done. Please come back in a later version of the game."
 msgstr ""
+"Ця карта ще не зроблена. Будь ласка, поверніться в наступних версіях гри."
 
 #: conversationlist_signs_pre067.json:sign_wild3
 msgid ""
@@ -3380,34 +3401,39 @@ msgid ""
 "East: Fallhaven\n"
 "North: Feygard"
 msgstr ""
+"Захід: Кросглен\n"
+"Схід: Фолгевен\n"
+"Північ: Фейгард"
 
 #: conversationlist_signs_pre067.json:sign_pitcave2
 msgid "Gandir lies here, slain by the hand of his former friend Irogotu."
-msgstr ""
+msgstr "Тут лежить Гандір, убитий рукою свого колишнього друга Іроготу."
 
 #: conversationlist_signs_pre067.json:sign_fallhaven1
 msgid "Welcome to Fallhaven. Watch out for pickpockets!"
-msgstr ""
+msgstr "Ласкаво просимо до Фолгевена. Слідкуйте за кишенями!"
 
 #: conversationlist_signs_pre067.json:key_fallhavenchurch
 msgid "You are not allowed to enter the catacombs of Fallhaven Church without permission."
-msgstr ""
+msgstr "Вам заборонено входити до катакомб Церкви Фолгевен без дозволу."
 
 #: conversationlist_signs_pre067.json:arcir_basement_tornpage
 msgid "You see a torn page from a book titled 'Calomyran Secrets'. Blood stains its edges, and someone has scribbled the words 'Larcal' with the blood."
 msgstr ""
+"Ви бачите вирвану сторінку з книги під назвою «Секрети Каломирану». Кров "
+"заплямовує її краї, і хтось нашкрябав кров’ю слова «Ларкал»."
 
 #: conversationlist_signs_pre067.json:arcir_basement_statue
 msgid "Elythara, mother of the light. Protect us from the curse of the Shadow."
-msgstr ""
+msgstr "Елітара, мати світла. Захисти нас від прокляття Тіні."
 
 #: conversationlist_signs_pre067.json:fallhaven_tavern_room
 msgid "You are not allowed into the room unless you have rented it."
-msgstr ""
+msgstr "Ви не можете заходити в кімнату, допоки ви не орендували її."
 
 #: conversationlist_signs_pre067.json:fallhaven_derelict1
 msgid "Bucus shouts: Hey you, get away from there!"
-msgstr ""
+msgstr "Букус кричить: Гей ти, йди звідти!"
 
 #: conversationlist_signs_pre067.json:sign_wild6
 msgid ""
@@ -3415,26 +3441,37 @@ msgid ""
 "East: Fallhaven\n"
 "South: Stoutford"
 msgstr ""
+"Північ: Кросглен\n"
+"Схід: Фолгевен\n"
+"Південь: Стаутфорд"
 
 #: conversationlist_signs_pre067.json:sign_wild7
 msgid ""
 "West: Stoutford\n"
 "North: Fallhaven"
 msgstr ""
+"Захід: Стаутфорд\n"
+"Північ: Фолгевен"
 
 #: conversationlist_signs_pre067.json:sign_wild10
 msgid ""
 "North: Fallhaven\n"
 "West: Stoutford"
 msgstr ""
+"Північ: Фолгевен\n"
+"Захід: Стаутфорд"
 
 #: conversationlist_signs_pre067.json:flagstone_key_demon
 msgid "The demon radiates a force that pushes you back, making it impossible for you to approach it."
 msgstr ""
+"Демон випромінює силу, яка відштовхує вас назад, що робить неможливим "
+"наблизитись до нього."
 
 #: conversationlist_signs_pre067.json:flagstone_brokensteps
 msgid "You notice that this tunnel seems to be dug out from below Flagstone. Probably the work of one of the former prisoners from Flagstone."
 msgstr ""
+"Ви помічаєте, що цей тунель, здається, викопаний знизу Флагстоун. Напевно, "
+"робота одного з колишніх в’язнів із Флагстоуна."
 
 #: conversationlist_signs_pre067.json:sign_wild12
 msgid ""
@@ -3445,11 +3482,11 @@ msgstr ""
 
 #: conversationlist_thievesguild_1.json:thievesguild_thief_1
 msgid "Hello kid."
-msgstr ""
+msgstr "Привіт, хлопче."
 
 #: conversationlist_thievesguild_1.json:thievesguild_thief_1:0
 msgid "Hello. Do you know where I can find Umar?"
-msgstr ""
+msgstr "Привіт. Ти знаєш, де я можу знайти Умара?"
 
 #: conversationlist_thievesguild_1.json:thievesguild_thief_1:1
 #: conversationlist_thievesguild_1.json:thievesguild_pickpocket_1:1
@@ -3470,7 +3507,7 @@ msgstr "Що це за місце?"
 
 #: conversationlist_thievesguild_1.json:thievesguild_thief_2
 msgid "This is our guild hall. We are safe from the guards of Fallhaven in here."
-msgstr ""
+msgstr "Це зал нашої гільдії. Ми в безпеці від охоронців Фолгевена тут."
 
 #: conversationlist_thievesguild_1.json:thievesguild_thief_3
 msgid "We can do pretty much as we like here. As long as Umar allows it, that is."
@@ -3478,41 +3515,43 @@ msgstr ""
 
 #: conversationlist_thievesguild_1.json:thievesguild_thief_3:0
 msgid "Do you know where I can find Umar?"
-msgstr ""
+msgstr "Ти знаєш, де я можу знайти Умара?"
 
 #: conversationlist_thievesguild_1.json:thievesguild_thief_3:1
 msgid "Who is Umar?"
-msgstr ""
+msgstr "Хто такий Умар?"
 
 #: conversationlist_thievesguild_1.json:thievesguild_thief_4
 msgid "He is probably in his room over there [points]."
-msgstr ""
+msgstr "Він, ймовірно, у своїй кімнаті там [вказує]."
 
 #: conversationlist_thievesguild_1.json:thievesguild_thief_5
 msgid "Umar is our guild leader. He decides our rules and guides us in moral decisions."
 msgstr ""
+"Умар - наш лідер гільдії. Він визначає наші правила і направляє нас у "
+"моральних рішеннях."
 
 #: conversationlist_thievesguild_1.json:thievesguild_thief_5:0
 #: conversationlist_prim_outside.json:prim_commoner1_3:1
 msgid "Where can I find him?"
-msgstr ""
+msgstr "Де я можу його знайти?"
 
 #: conversationlist_thievesguild_1.json:thievesguild_cook_1
 msgid "Hello, did you want something?"
-msgstr ""
+msgstr "Привіт, ти щось хотів?"
 
 #: conversationlist_thievesguild_1.json:thievesguild_cook_1:0
 msgid "You look like the cook around here."
-msgstr ""
+msgstr "Ти схожий на кухаря тут."
 
 #: conversationlist_thievesguild_1.json:thievesguild_cook_1:1
 #: conversationlist_thievesguild_1.json:thievesguild_cook_4:0
 msgid "Can I see what food you have for sale?"
-msgstr ""
+msgstr "Чи можу я побачити, яка їжа є на продаж?"
 
 #: conversationlist_thievesguild_1.json:thievesguild_cook_1:2
 msgid "Farrik said you can prepare me a round of special mead."
-msgstr ""
+msgstr "Фаррік сказав, що ви можете підготувати мені спеціальний хліб."
 
 #: conversationlist_thievesguild_1.json:thievesguild_cook_2
 msgid "That's right. Someone has to keep these ruffians fed."
@@ -4381,7 +4420,7 @@ msgstr ""
 
 #: conversationlist_umar.json:umar_andor_4:0
 msgid "So, where can I find this Lodar?"
-msgstr ""
+msgstr "Так, де я можу знайти цього Лодара?"
 
 #: conversationlist_umar.json:umar_lodar_1
 msgid "I really shouldn't tell you. How to get to him is one of our closely guarded secrets in the guild. His hideaway is only reachable by our members."
@@ -8404,6 +8443,8 @@ msgstr "Спасибі, мій друже. Ось, візьми ці предм�
 #: conversationlist_blackwater_upper.json:blackwater_entranceguard
 msgid "Oh, a newcomer. Great. I hope you are here to help us with our problems."
 msgstr ""
+"О, новачок. Чудово. Я сподіваюся, що ви тут, щоб допомогти нам у вирішенні "
+"наших проблем."
 
 #: conversationlist_blackwater_upper.json:blackwater_guard1
 msgid "Stay out of trouble and trouble will stay away from you."
@@ -9052,7 +9093,7 @@ msgstr "Нащадків?"
 
 #: conversationlist_blackwater_throdna.json:throdna_6:1
 msgid "Let's go back to my other questions."
-msgstr "Повернемося до інших моїх питань."
+msgstr "Давай повернемось до інших моїх запитань."
 
 #: conversationlist_blackwater_throdna.json:throdna_7
 msgid "I am Throdna. One of the most learned persons around, if you ask me."
@@ -9161,7 +9202,7 @@ msgstr "Ви насправді знайшли всі п'ять штук? Я в�
 
 #: conversationlist_blackwater_throdna.json:throdna_check_fail
 msgid "It seems you have not found all five pieces yet."
-msgstr "Здається, ви ще не знайшли всіх п'яти частин."
+msgstr "Схоже, ти ще не знайшов усі п'ять частин."
 
 #: conversationlist_blackwater_throdna.json:throdna_return_4
 msgid "We have more pressing matters to focus on. As I briefly mentioned before, we believe that Kazaul will manifest in our presence soon."
@@ -9198,6 +9239,8 @@ msgstr ""
 #: conversationlist_blackwater_throdna.json:throdna_return_9
 msgid "However, all passageways to the shrine are 'clouded in Shadow' according to our scouts. I'm not sure what that means."
 msgstr ""
+"Однак, згідно з нашими розвідниками, всі проходи до святині «затуманені в "
+"Тіні». Я не впевнений, що це означає."
 
 #: conversationlist_blackwater_throdna.json:throdna_return_10
 msgid "Second, we need you to take a vial of purifying spirit and apply it to the shrine."
@@ -16499,7 +16542,7 @@ msgstr ""
 
 #: conversationlist_remgard_villagers1.json:morgisia:1
 msgid "But I was just..."
-msgstr ""
+msgstr "Але я всього лиш..."
 
 #: conversationlist_remgard_villagers1.json:morgisia:2
 msgid "Sorry, I thought..."
@@ -16628,7 +16671,7 @@ msgstr "Я знаю... купу всіляких різних речей."
 
 #: conversationlist_arghes.json:arghes_4
 msgid "$playername - yes, that is what they call you."
-msgstr "$playername - так, так вони звуть тебе."
+msgstr "$playername - так, саме так вони звуть тебе."
 
 #: conversationlist_arghes.json:arghes_4:0
 msgid "How do you know my name? Who are you?"
@@ -17501,7 +17544,9 @@ msgstr "Де я можу взяти такі ж чудові обладунки,
 msgid ""
 "Agthor. Talk to him.\n"
 "[Points at Agthor]"
-msgstr "[REVIEW]Агдор. Говори із ним. *вказує на Агдора*"
+msgstr ""
+"Агдор. Говори із ним.\n"
+"[Вказує на Агдора]"
 
 #: conversationlist_aulowenn.json:aulowenn_atk0
 msgid "For Feygard!"
@@ -47544,4 +47589,3 @@ msgstr ""
 #: worldmap.xml:world1:brimhaven_area
 msgid "Brimhaven"
 msgstr ""
-
