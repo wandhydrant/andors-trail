@@ -250,14 +250,14 @@
   </object>
   <object name="crossglen_fortune_teller" type="script" x="96" y="64" width="32" height="32"/>
  </objectgroup>
- <objectgroup name="Spawn" visible="0">
+ <objectgroup name="Spawn">
   <object name="crossglen_wasp" type="spawn" x="736" y="160" width="192" height="160">
    <properties>
     <property name="quantity" value="3"/>
     <property name="spawngroup" value="crossglen_wasp"/>
    </properties>
   </object>
-  <object name="trainingrat" type="spawn" x="352" y="96" width="192" height="128">
+  <object name="trainingrat" type="spawn" x="320" y="96" width="192" height="128">
    <properties>
     <property name="quantity" value="2"/>
     <property name="spawngroup" value="trainingrat"/>
@@ -297,6 +297,30 @@
   <object name="halvor" type="spawn" x="736" y="608" width="32" height="32">
    <properties>
     <property name="spawngroup" value="halvor"/>
+   </properties>
+  </object>
+  <object name="oromir_behind_inn_help" type="spawn" x="864" y="544" width="32" height="32">
+   <properties>
+    <property name="active" value="false"/>
+    <property name="spawngroup" value="oromir_behind_inn_help"/>
+   </properties>
+  </object>
+  <object name="oromir_behind_haystack_help" type="spawn" x="512" y="160" width="32" height="32">
+   <properties>
+    <property name="active" value="false"/>
+    <property name="spawngroup" value="oromir_behind_haystack_help"/>
+   </properties>
+  </object>
+  <object name="oromir_behind_inn" type="spawn" x="864" y="512" width="32" height="32">
+   <properties>
+    <property name="active" value="false"/>
+    <property name="spawngroup" value="oromir_behind_inn"/>
+   </properties>
+  </object>
+  <object name="oromir_behind_haystack" type="spawn" x="512" y="160" width="32" height="32">
+   <properties>
+    <property name="active" value="false"/>
+    <property name="spawngroup" value="oromir_behind_haystack"/>
    </properties>
   </object>
  </objectgroup>
