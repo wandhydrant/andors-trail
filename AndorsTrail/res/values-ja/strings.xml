@@ -13,12 +13,12 @@
     <string name="savegame_currenthero_displayinfo">レベル %1$d, %2$d exp, %3$d gold</string>
     <string name="dialog_loading_message">読み込み中…</string>
     <string name="dialog_loading_failed_title">読み込みに失敗しました</string>
-    <string name="dialog_loading_failed_message">Andor\'s Trail はセーブ・ファイルを読み込めませんでした。
+    <string name="dialog_loading_failed_message">Andor\'s Trailはセーブファイルを読み込めませんでした。
 \n
 \n:(
 \n
 \nこのファイルは壊れているか不完全です。</string>
-    <string name="dialog_loading_failed_incorrectversion">Andor\'s Trail はセーブ・ファイルを読み込めませんでした。このファイルは現在実行中のバージョンより新しいバージョンのセーブ・ファイルです。</string>
+    <string name="dialog_loading_failed_incorrectversion">Andor\'s Trailはセーブファイルを読み込めませんでした。このファイルは現在実行中のバージョンより新しいバージョンのセーブファイルです。</string>
     <string name="dialog_close">閉じる</string>
     <string name="dialog_monsterencounter_title">遭遇</string>
     <string name="dialog_monsterencounter_message">攻撃しますか?\n敵の強さ: %1$s</string>
@@ -34,7 +34,7 @@
     <string name="heroinfo_totalexperience">総経験値(exp)</string>
     <string name="heroinfo_wornequipment">装備</string>
     <string name="heroinfo_inventory">アイテム</string>
-    <string name="heroinfo_gold">gold: %1$d</string>
+    <string name="heroinfo_gold">Gold: %1$d</string>
     <string name="heroinfo_actionpoints">行動値 (AP):</string>
     <string name="heroinfo_quests">クエスト</string>
     <string name="combat_attack">攻撃 (%1$d AP)</string>
@@ -105,10 +105,10 @@
     <string name="iteminfo_action_equip_ap">装備 (%1$d AP)</string>
     <string name="iteminfo_action_unequip_ap">はずす (%1$d AP)</string>
     <string name="startscreen_continue">ゲームを再開する</string>
-    <string name="startscreen_newgame">新規</string>
+    <string name="startscreen_newgame">ニューゲーム</string>
     <string name="startscreen_newgame_confirm">セーブしていないゲームとキャラクターは消去されます。本当に新しいゲームを開始して良いですか\?</string>
     <string name="startscreen_about">ヘルプ</string>
-    <string name="startscreen_enterheroname">名前</string>
+    <string name="startscreen_enterheroname">主人公の名前を入力してください</string>
     <string name="startscreen_load">ロード</string>
     <!-- <string name="conversation_title">%1$s says</string> -->
     <string name="conversation_rewardexp">[%1$d の経験値を獲得]</string>
@@ -155,16 +155,9 @@
     <string name="dialog_newversion_message">Andor\'s Trailをダウンロードして下さりありがとうございます!
 \n
 \n現在のAndor\'s Trailはまだ製作中であり、マップの全てが完成しているわけではありません。
-\n フォーラムに参加して、他のプレイヤーと議論したり、より改善していく手助けをお願いします。(概要をご覧下さい)
-\n 
-\n あらゆるフィードバックに感謝します。
-\n ==========================
-\n Thank you for downloading Andor\'s Trail!
+\nフォーラムに参加して、他のプレイヤーと議論したり、より改善していく手助けをお願いします。(概要をご覧下さい)
 \n
-\n Please note that this version of Andor\'s Trail is a WORK IN PROGRESS, which means that all maps are not yet complete.
-\n Please visit the project forums to discuss the game with other players or to help make the game even better (see about).
-\n 
-\n Thanks for all the feedback!</string>
+\nあらゆるフィードバックに感謝します!</string>
     <string name="questlog_includecompleted_prompt">表示するクエスト</string>
     <string name="questlog_includecompleted_hidecompleted">進行中クエスト</string>
     <string name="questlog_includecompleted_includecompleted">全てのクエスト</string>
@@ -177,9 +170,9 @@
     <string name="preferences_display_fullscreen">ゲームをフルスクリーンで表示(再起動が必要)</string>
     <string name="preferences_dialog_category">確認ダイアログ</string>
     <string name="preferences_dialog_confirmrest_title">休憩の確認</string>
-    <string name="preferences_dialog_confirmrest">ベッドに入ったとき、休憩するかどうかを質問するようにします。OFFにすると、かならず休憩を行うようになります。</string>
+    <string name="preferences_dialog_confirmrest">ベッドに入ったとき、休憩するかどうかを質問するようにします。オフにすると、かならず休憩を行うようになります。</string>
     <string name="preferences_dialog_confirmattack_title">攻撃の確認</string>
-    <string name="preferences_dialog_confirmattack">モンスターに攻撃するとき、\'攻撃しますか?\'のダイアログボックスを表示します。</string>
+    <string name="preferences_dialog_confirmattack">モンスターに攻撃するとき「攻撃しますか\?」のダイアログボックスを表示します。</string>
     <string name="preferences_dialog_monsterloot_title">戦利品の表示</string>
     <string name="preferences_dialog_monsterloot">戦闘の結果(gold、経験値、アイテム)をどのように表示するか選択します。</string>
     <string name="preferences_combat_category">戦闘</string>
@@ -195,7 +188,7 @@
     <string name="preferences_movement_category">移動</string>
     <string name="preferences_movementmethod_title">移動方法</string>
     <string name="preferences_movementmethod">移動と障害物の扱い。</string>
-    <string name="preferences_movementmethods_straight">直進 (オリジナル)</string>
+    <string name="preferences_movementmethods_straight">直進 (そのまま)</string>
     <string name="preferences_movementmethods_avoid">障害物を回避する</string>
     <!-- =========================================== -->
     <!-- Added in v0.6.9 -->
@@ -372,9 +365,9 @@
     <!-- Added in v0.7.0 -->
     <string name="localize_resources_from_mo_filename">ja.mo</string>
     <string name="combat_miss_animation_message">ミス</string>
-    <string name="preferences_display_loot_dialog_on_items">アイテムを見つけたときに戦利品]ダイアログボックスを表示</string>
+    <string name="preferences_display_loot_dialog_on_items">アイテムを見つけたときにダイアログボックスを表示</string>
     <string name="preferences_display_loot_dialog_on_items_or_toast">アイテムのダイアログ、それ以外の場合は通知</string>
-    <string name="preferences_display_loot_toast_on_items">アイテムを見つけるときにのみ通知を表示</string>
+    <string name="preferences_display_loot_toast_on_items">アイテムを見つけたときにのみ通知を表示</string>
     <string name="preferences_ui_category">インターフェイス</string>
     <string name="preferences_ui_enable_animations_title">アニメーションを有効にします</string>
     <string name="preferences_ui_enable_animations">戦闘のバーなどの各種のインターフェイス要素のアニメーションを表示します。</string>
@@ -440,7 +433,7 @@
     <string name="startscreen_error_loading_empty_slot">空のスロットはロードできません。</string>
     <string name="startscreen_error_loading_game">読み込みエラー</string>
     <string name="startscreen_load_game_confirm">現在のゲームはセーブされていないため、キャラクターは失われます。</string>
-    <string name="startscreen_selectherosprite">外見</string>
+    <string name="startscreen_selectherosprite">主人公を選んでください</string>
     <string name="heroinfo_inventory_categories">カテゴリー</string>
     <string name="heroinfo_skill_categories">カテゴリー</string>
     <string name="combat_condition_monster_immune">1$sは%2$sを無効にする。</string>
@@ -451,14 +444,14 @@
     <string name="combat_condition_player_apply">あなたは%1$sの影響を受けている。</string>
     <string name="combat_taunt_monster">%1$s を挑発!</string>
     <string name="heroinfo_healthpoints">体力値(HP):</string>
-    <string name="heroinfo_inventory_sort">並び替え:</string>
+    <string name="heroinfo_inventory_sort">並び替え</string>
     <string name="heroinfo_skill_sort">並び替え</string>
     <string name="dialog_monsterencounter_conditions">状態</string>
     <string name="dialog_game_over_text">あなたは息を引き取りこの世から去ってゆく。</string>
     <string name="dialog_game_over_title">ゲームオーバー</string>
     <string name="dialog_recenter">現在地</string>
     <string name="dialog_more">その他</string>
-    <string name="dialog_loading_failed_cheat">Andor\'s Trailはセーブ・ファイルをロードできませんでした。このセーブ・ファイルは既に使用中です。</string>
+    <string name="dialog_loading_failed_cheat">Andor\'s Trailはセーブファイルをロードできませんでした。このセーブファイルは既に使用中です。</string>
     <string name="skill_longdescription_fightstyle_2hand">ツーハンドソードやグレートアックス、ジャイアントハンマーなど、両手を必要とする武器を使用する際に効果を発揮します。
 \n
 \nスキルレベルが上がるごとに、両手武器のダメージ性能が元の%1$d %%増加します。</string>
