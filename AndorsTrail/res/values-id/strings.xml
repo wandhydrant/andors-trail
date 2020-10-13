@@ -140,7 +140,7 @@
     <string name="questlog_includecompleted_prompt">Pilih misi untuk ditampilkan</string>
     <string name="questlog_includecompleted_hidecompleted">Misi aktif</string>
     <string name="questlog_includecompleted_includecompleted">Semua misi</string>
-    <string name="questlog_includecompleted_onlycompleted">Misi terselesaikan</string>
+    <string name="questlog_includecompleted_onlycompleted">Misi selesai</string>
     <string name="questlog_queststatus">Status: %1$s</string>
     <string name="questlog_queststatus_inprogress">Sedang berjalan</string>
     <string name="questlog_queststatus_completed">Telah selesai</string>
@@ -193,7 +193,7 @@
     <string name="iteminfo_effect_increase_movecost">Penalti poin untuk bergerak +%1$d AP</string>
     <string name="iteminfo_effect_decrease_movecost">Mengurangi poin untuk bergerak %1$d AP</string>
     <string name="preferences_display_scaling_factor_title">Perbesaran</string>
-    <string name="preferences_display_scaling_factor">Menjadikan tampilan layar permainan lebih besar atau lebih kecil.</string>
+    <string name="preferences_display_scaling_factor">Menampilkan layar permainan lebih besar atau lebih kecil.</string>
     <string name="preferences_display_scaling_factor_normal">Ukuran normal</string>
     <string name="preferences_display_scaling_factor_50_percent_larger">1.5x ukuran normal</string>
     <string name="preferences_display_scaling_factor_double">Dua kali ukuran normal</string>
@@ -511,7 +511,7 @@
     <string name="rip_startscreen">(MENINGGAL DUNIA)</string>
     <string name="dialog_game_over_title">Permainan berakhir</string>
     <string name="dialog_more">Lebih</string>
-    <string name="dialog_recenter">Memusatkan kembali</string>
+    <string name="dialog_recenter">Memusatkan</string>
     <string name="dialog_loading_failed_cheat">Andor\'s Trail tidak dapat memuat file save game. File savegame ini telah dilanjutkan.</string>
     <string name="actorcondition_info_immunity">Kekebalan terhadap %1$s</string>
     <string name="dialog_permission_information">Andor\'s Trail menulis game yang disimpan ke penyimpanan yang dapat diakses pengguna di perangkat Anda. Ini memungkinkan Anda untuk membuat cadangan game yang disimpan dengan mudah atau mentransfernya ke perangkat baru. Silakan kunjungi forum kami untuk informasi lebih lanjut.
@@ -531,8 +531,8 @@
     <string name="preferences_language_description">Pilih Bahasa. Inggris dipakai jika bahasa perangkat tak tersedia atau isi belum diterjemah. (Perlu restart)</string>
     <string name="preferences_language">Bahasa</string>
     <string name="preferences_language_default">Bahasa sesuai perangkat</string>
-    <string name="preferences_display_scaling_factor_75_percent">Ukuran 75%</string>
-    <string name="preferences_display_scaling_factor_50_percent">Ukuran setengah</string>
+    <string name="preferences_display_scaling_factor_75_percent">Ukuran 0.75x</string>
+    <string name="preferences_display_scaling_factor_50_percent">Setengah ukuran</string>
     <string name="iteminfo_effect_works_when_killed_by_attacker">Saat dibunuh penyerang</string>
     <string name="iteminfo_effect_works_when_hit_by_attacker">Saat terpukul penyerang</string>
     <string name="iteminfo_effect_works_on_attacker">Pada penyerang</string>
@@ -556,4 +556,24 @@
     <string name="skill_longdescription_fightstyle_unarmed_unarmored">Ketika bertarung tanpa memakai senjata, perisai, dan perlengkapan pelindung apa pun, peluang serangan bertambah %1$d, peluang menangkis %2$d, ketahanan terhadap cedera %3$d, dan menambahkan cedera maksimum sebanyak %4$d untuk setiap level keahlian. Keahlian ini juga memberikan 1x pengalian kritikal, ditambah 0.%5$d untuk setiap level.
 \n
 \nPerlengkapan yang terbuat dari kain tidak termasuk perlengkapan pelindung.</string>
+    <string name="skill_sort_name">Nama</string>
+    <string name="skill_sort_unsorted">Tak terurut</string>
+    <string name="skill_category_proficiency">Kecakapan</string>
+    <string name="skill_category_immunity">Imunitas</string>
+    <string name="skill_category_all">Semua</string>
+    <string name="shoplist_sort_type">Tipe</string>
+    <string name="shoplist_sort_rarity">Kelangkaan</string>
+    <string name="shoplist_sort_quantity">Jumlah</string>
+    <string name="shoplist_sort_price">Harga</string>
+    <string name="shoplist_sort_name">Nama</string>
+    <string name="shoplist_sort_custom">Tak terurut</string>
+    <string name="inventory_sort_type">Tipe</string>
+    <string name="inventory_sort_rarity">Kelangkaan</string>
+    <string name="inventory_sort_quantity">Jumlah</string>
+    <string name="inventory_sort_price">Harga</string>
+    <string name="inventory_sort_name">Nama</string>
+    <string name="inventory_sort_custom">Tak terurut</string>
+    <string name="inventory_category_other">Lain-lain</string>
+    <string name="inventory_category_quest">Barang misi</string>
+    <string name="inventory_category_usable">Konsumsi</string>
 </resources>
