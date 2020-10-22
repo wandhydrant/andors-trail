@@ -104,13 +104,13 @@
     <string name="inventory_use">使用</string>
     <string name="inventory_item_used">你使用了 %1$s.</string>
     <string name="dialog_loot_pickall">全部捡起</string>
-    <string name="inventory_item_dropped">%1$s 被丢弃。</string>
+    <string name="inventory_item_dropped">%1$s 被丢在地上。</string>
     <string name="inventory_drop">丢弃</string>
-    <string name="heroinfo_one_life">Permadeath（1生命）</string>
+    <string name="heroinfo_one_life">永久死亡（1生命）</string>
     <string name="heroinfo_limited_lives">有限的生命（还剩%1$d/%2$d）</string>
-    <string name="heroinfo_unlimited_lives">无限生命，保存1次</string>
+    <string name="heroinfo_unlimited_lives">无限生命，单个存档</string>
     <string name="heroinfo_unlimited_lives_and_saves">标准
-\n（无限的生命和保存）</string>
+\n（无限复活 无限存档）</string>
     <string name="heroinfo_mode">模式</string>
     <string name="rip_startscreen">(RIP)</string>
     <string name="dialog_game_over_text">你屏住呼吸死了。</string>
@@ -206,4 +206,6 @@
     <string name="iteminfo_action_equip">装备</string>
     <string name="iteminfo_action_use">使用</string>
     <string name="traitsinfo_attack_damage">攻击伤害:</string>
+    <string name="about_button3">自由开源许可证</string>
+    <string name="iteminfo_action_unequip_ap">卸下（消耗 %1$d AP)</string>
 </resources>
