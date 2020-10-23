@@ -423,7 +423,16 @@ public final class ItemController {
 		if (itemType != null && itemType.isWeapon()) modifier2 = itemType.effects_equip.stats.setNonWeaponDamageModifier;
 
 		int modifier = 100;
-		if (modifier1 >= 0 && modifier2 >= 0) modifier = Math.min(modifier1, modifier2);
+		if (modifier1 >= 0 && modifier2 >= 0) {
+			int skillLevelFightStyle = player.getSkillLevel(SkillCollection.SkillID.fightstyleDualWield);
+			if (skillLevelFightStyle == 2) {
+				modifier = Math.max(modifier1, modifier2);
+			} else if (skillLevelFightStyle == 1) {
+				modifier = (modifier1 + modifier2) / 2;
+			} else {
+				modifier = Math.min(modifier1, modifier2);
+			}
+		}
 		else if (modifier1 <= 0 && modifier2 >= 0) modifier = modifier2;
 		else if (modifier2 <= 0 && modifier1 >= 0) modifier = modifier1;
 

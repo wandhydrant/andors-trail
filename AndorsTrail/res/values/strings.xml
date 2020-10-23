@@ -651,11 +651,11 @@
 	<string name="skill_longdescription_armor_prof_heavy">For every skill level, increases the block chance of every piece of heavy armor being worn by %1$d %% of their original block chances. Pieces of heavy armor have their movement penalties reduced by %2$d %% per skill level, and their attack speed penalties reduced by %3$d %% per skill level. Heavy armors include metal armors, chain mail and plate mail.</string>
 	<string name="skill_longdescription_fightstyle_dualwield">"Gives benefits when fighting with two weapons at the same time, one in the main hand and one in the off-hand.
 
-Without this skill, only %1$d %% of a weapon\'s qualities may be used when equipped in the off-hand. This includes attack chance, critical skill, damage potential and block chance. Without this skill, attack cost (AP cost) of making an attack is the sum of the attack cost of the main weapon and that of the weapon used in the off-hand.
+Without this skill, only %1$d %% of a weapon\'s qualities may be used when equipped in the off-hand. This includes attack chance, critical skill, damage potential and block chance. Without this skill, attack cost (AP cost) of making an attack is the sum of the attack cost of the main weapon and that of the weapon used in the off-hand. The lower of both damage modifiers will be used.
 
-With one level of this skill, %2$d %% of the off-hand\'s weapon\'s qualities may be used, and the attack cost is the highest attack cost of both weapons plus %3$d %% of the lowest attack cost of both weapons.
+With one level of this skill, %2$d %% of the off-hand\'s weapon\'s qualities may be used, and the attack cost is the highest attack cost of both weapons plus %3$d %% of the lowest attack cost of both weapons. The average of both damage modifiers will be used.
 
-With two levels of this skill, %4$d %% of the off-hand\'s weapon\'s qualities may be used, and the attack cost equals the highest of the attack costs of the two equipped weapons."</string>
+With two levels of this skill, %4$d %% of the off-hand\'s weapon\'s qualities may be used, and the attack cost equals the highest of the attack costs of the two equipped weapons. The highest damage modifier will be used."</string>
 	<string name="skill_longdescription_fightstyle_2hand">"Gives benefits when using weapons that require both hands to wield, such as two-handed swords, greataxes or giant hammers.
 
 Every skill level increases damage potential of two-handed weapons with %1$d %% of the original damage potential."</string>
