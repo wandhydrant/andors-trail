@@ -35,7 +35,7 @@
     <string name="heroinfo_wornequipment">装備</string>
     <string name="heroinfo_inventory">アイテム</string>
     <string name="heroinfo_gold">Gold: %1$d</string>
-    <string name="heroinfo_actionpoints">行動値 (AP):</string>
+    <string name="heroinfo_actionpoints">行動値(AP):</string>
     <string name="heroinfo_quests">クエスト</string>
     <string name="combat_attack">攻撃 (%1$d AP)</string>
     <string name="combat_move">移動 (%1$d AP)</string>
@@ -340,7 +340,7 @@
     <!-- Added in v0.6.11 -->
     <string name="skill_title_shadow_bless">シャドウの闇の祝福</string>
     <string name="skill_shortdescription_shadow_bless">すべての種類の状態変化に対する抵抗力</string>
-    <string name="skill_longdescription_shadow_bless">スキル1レベルにつき、あらゆる状態変化にかかる確率を %1$d%% 低下させます。これには、ポイズン、めまい、疲労といった、モンスターの攻撃が引き起こすあらゆる状態変化が含まれます。</string>
+    <string name="skill_longdescription_shadow_bless">スキル1レベルにつき、あらゆる状態変化にかかる確率を %1$d%% 低下させます。これには、ポイズン(Poison)、めまい(Dazed)、疲労(Fatigue)といった、モンスターの攻撃が引き起こすあらゆる状態変化が含まれます。</string>
     <string name="inventory_movetop">一番上へ</string>
     <string name="inventory_movebottom">一番下へ</string>
     <string name="actorinfo_immune_criticals">クリティカルヒット無効</string>
@@ -439,10 +439,10 @@
     <string name="combat_condition_monster_immune">1$sは%2$sを無効にする。</string>
     <string name="combat_condition_player_immune">あなたは%1$sを無効にする。</string>
     <string name="combat_condition_monster_clear">%1$sは%2$sから回復した。</string>
-    <string name="combat_condition_monster_apply">%1$sは%2$sの影響を受けている。</string>
+    <string name="combat_condition_monster_apply">%1$sは%2$sにかかった。</string>
     <string name="combat_condition_player_clear">あなたは %1$s から回復した。</string>
-    <string name="combat_condition_player_apply">あなたは%1$sの影響を受けている。</string>
-    <string name="combat_taunt_monster">%1$s を挑発!</string>
+    <string name="combat_condition_player_apply">あなたは%1$sにかかった。</string>
+    <string name="combat_taunt_monster">あなたは %1$s を挑発!</string>
     <string name="heroinfo_healthpoints">体力値(HP):</string>
     <string name="heroinfo_inventory_sort">並び替え</string>
     <string name="heroinfo_skill_sort">並び替え</string>
