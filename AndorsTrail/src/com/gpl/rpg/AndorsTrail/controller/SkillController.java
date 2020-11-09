@@ -72,7 +72,7 @@ public final class SkillController {
 		if (player == null) return 0;
 		if (!ItemTypeCollection.isGoldItemType(item.itemType.id)) return 0;
 
-		return getRollBias(item, player, SkillID.coinfinder, SkillCollection.PER_SKILLPOINT_INCREASE_COINFINDER_QUANTITY_PERCENT);
+		return getRollBias(item.quantity, player, SkillID.coinfinder, SkillCollection.PER_SKILLPOINT_INCREASE_COINFINDER_QUANTITY_PERCENT);
 	}
 
 	private static int getRollBias(DropItem item, Player player, SkillID skill, int perSkillpointIncrease) {
@@ -82,7 +82,7 @@ public final class SkillController {
 	private static int getRollBias(ConstRange chance, Player player, SkillID skill, int perSkillpointIncrease) {
 		int skillLevel = player.getSkillLevel(skill);
 		if (skillLevel <= 0) return 0;
-		return chance.current * skillLevel * perSkillpointIncrease / 100;
+		return chance.current * skillLevel * perSkillpointIncrease;
 	}
 
 
