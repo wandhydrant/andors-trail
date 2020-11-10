@@ -51,7 +51,7 @@ public final class Constants {
 
 	public static final Random rnd = new Random();
 	public static int rollValue(final ConstRange r) { return rollValue(r.max, r.current); }
-	public static int rollValue(final ConstRange r, int bias) { return (int)Math.round(rollValue(r.max * 100, r.current * 100 + bias)/100.0); }
+	public static int rollValue(final ConstRange r, int bias) { return rollValue((r.max + 1) * 100 -1, r.current * 100 + bias)/100; }
 	public static int rollValue(final Range r) { return rollValue(r.max, r.current); }
 	private static int rollValue(final int max, final int min) {
 		if (max <= min) return max;
