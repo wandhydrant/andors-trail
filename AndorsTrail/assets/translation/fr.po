@@ -4,7 +4,7 @@ msgstr ""
 "Project-Id-Version: Andors Trail\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-11-10 11:48+0000\n"
-"PO-Revision-Date: 2020-11-15 02:36+0000\n"
+"PO-Revision-Date: 2020-11-16 11:28+0000\n"
 "Last-Translator: Jean-Pascal Rhir <jprichir@hotmail.com>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/andors-trail/"
 "game-content/fr/>\n"
@@ -374,7 +374,7 @@ msgstr "Avez-vous autre chose à me faire faire ?"
 #: conversationlist_mikhail.json:mikhail_default:3
 #: conversationlist_umar.json:umar_return_1:0
 msgid "Do you have any tasks for me?"
-msgstr "Avez-vous une tâche à faire pour moi ?"
+msgstr "Avez-vous une tâche à me faire faire ?"
 
 #: conversationlist_mikhail.json:mikhail_default:4
 msgid "Is there anything else you can tell me about Andor?"
@@ -396,12 +396,12 @@ msgstr "Ah oui, tu pourrais m'aider en t'occupant du pain et des rats. Par quoi 
 #: conversationlist_mikhail.json:mikhail_tasks:0
 #: conversationlist_mikhail.json:mikhail_rats_done:0
 msgid "What about the bread?"
-msgstr "Et le pain ?"
+msgstr "Que voulez-vous dire par \"m'occuper du pain\" ?"
 
 #: conversationlist_mikhail.json:mikhail_tasks:1
 #: conversationlist_mikhail.json:mikhail_bread_done:0
 msgid "What about the rats?"
-msgstr "Et les rats ?"
+msgstr "Que voulez-vous dire par \"m'occuper des rats\" ?"
 
 #: conversationlist_mikhail.json:mikhail_tasks:2
 #: conversationlist_mikhail.json:mikhail_bread_done:1
@@ -3424,11 +3424,14 @@ msgstr "Merci de m'avoir ramené ma hache !"
 
 #: conversationlist_signs_pre067.json:keyarea_andor1
 msgid "You should talk to Mikhail first."
-msgstr "Vous devriez d'abord parler à Mikhail."
+msgstr "Tu devrais d'abord parler à Mikhail."
 
 #: conversationlist_signs_pre067.json:note_lodars
 msgid "On the ground, you find a piece of paper with a lot of strange symbols. You can barely make out the words 'meet me at Lodar's hideaway', but you are not sure what it means."
-msgstr "Sur le sol, vous trouvez un morceau de papier avec beaucoup de symboles étranges. On devine à peine les mots \"rejoins-moi à la cachette de Lodar\", mais vous n’êtes pas sûr de ce que cela signifie."
+msgstr ""
+"Sur le sol, tu trouves un morceau de papier avec beaucoup de symboles "
+"étranges. Tu devines à peine les mots \"rejoins-moi à la cachette de Lodar\""
+", mais tu n'es pas sûr de ce que cela signifie."
 
 #: conversationlist_signs_pre067.json:keyarea_crossglen_smith
 msgid "Audir shouts: Hey you, get away! You are not allowed back there."
@@ -3436,7 +3439,9 @@ msgstr "Audir crie : Hé toi, va-t'en ! Tu n'es pas autorisé à venir ici."
 
 #: conversationlist_signs_pre067.json:sign_crossglen_cave
 msgid "The sign on the wall is cracked in several places. You cannot make out anything comprehensible from the writing."
-msgstr "Le panneau sur le mur est fissuré à plusieurs endroits. Vous ne pouvez rien distinguer de lisible des écritures."
+msgstr ""
+"Le panneau sur le mur est fissuré à plusieurs endroits. Tu ne peux rien "
+"distinguer de lisible des écritures."
 
 #: conversationlist_signs_pre067.json:sign_wild1
 msgid ""
@@ -19045,8 +19050,9 @@ msgstr "Je t'ai déjà appris cette compétence."
 #: conversationlist_falothen.json:falothen1_2nd_2hs1:0
 msgid "Sounds good. Teach me two-handed sword fighting. Here are two Oegyth crystals and 5000 gold as payment."
 msgstr ""
-"Ça m'a l'air bien. Apprends-moi le style de l'épée à deux mains. Voici deux "
-"cristaux d'Oegyth et 5000 pièces d'or comme moyen de paiement."
+"Ça m'a l'air bien. Apprenez-moi à mieux combattre avec une épée à deux "
+"mains. Voici deux cristaux d'Oegyth et 5000 pièces d'or comme moyen de "
+"paiement."
 
 #: conversationlist_falothen.json:falothen1_2nd_f1:0
 msgid "Sounds good. Teach me how to be better at unarmed fighting. Here are two Oegyth crystals and 5000 gold as payment."
@@ -22455,7 +22461,9 @@ msgstr "Malheureusement, non."
 
 #: conversationlist_pathway_fallhaven.json:guard_pathway_6:1
 msgid "I wasn't able to convince the warden but I'm going to talk to the woodcutter now."
-msgstr "Je n'ai pas réussi à convaincre le directeur, mais je vais parler au bûcheron, maintenant."
+msgstr ""
+"Je n'ai pas réussi à convaincre le directeur de la prison, je vais "
+"maintenant parler au bûcheron."
 
 #: conversationlist_pathway_fallhaven.json:guard_pathway_6:2
 msgid "The woodcutter is going to help me if I retrieve his axe!"
@@ -22475,7 +22483,7 @@ msgstr "Super ! Bonne chance !"
 
 #: conversationlist_halvor_surprise.json:halvor_crossglen_0
 msgid "Hello young fellow. Would you be so kind as to help a wandering traveller?"
-msgstr "Bonjour jeune homme. Auriez-vous la gentillesse d'aider un vagabond ?"
+msgstr "Bonjour jeune homme. Aurais-tu la gentillesse d'aider un vagabond ?"
 
 #: conversationlist_halvor_surprise.json:halvor_crossglen_0:0
 msgid "No. I don't have the time."
@@ -22487,7 +22495,9 @@ msgstr "Pourquoi pas ? De quoi avez-vous besoin ?"
 
 #: conversationlist_halvor_surprise.json:halvor_crossglen_1
 msgid "I'd like to surprise a friend back home, when I return from my travels. I would need 5 insect wings. Could you bring them to me?"
-msgstr "J'aimerais faire une surprise à un ami de chez moi, au retour de mes voyages. J'aurais besoin de 5 ailes d'insectes. Pourriez-vous me les apporter ?"
+msgstr ""
+"J'aimerais faire une surprise à une amie au retour de mes voyages. J'aurais "
+"besoin de 5 ailes d'insectes. Pourrais-tu me les apporter ?"
 
 #: conversationlist_halvor_surprise.json:halvor_crossglen_1:0
 msgid "No way! I hate insects!"
@@ -22499,21 +22509,23 @@ msgstr "Ça a l'air ennuyeux... mais je vais le faire."
 
 #: conversationlist_halvor_surprise.json:halvor_crossglen_1:2
 msgid "Sure. I'll do it."
-msgstr "Sûr. Je le ferai."
+msgstr "Ok, je vais faire ça."
 
 #: conversationlist_halvor_surprise.json:halvor_crossglen_1:3
 #: conversationlist_halvor_surprise.json:halvor_bwmine_11:3
 msgid "I have these with me. Take them."
-msgstr "Je les ai sur moi. Prends-les."
+msgstr "Je les ai sur moi. Prenez-les."
 
 #: conversationlist_halvor_surprise.json:halvor_crossglen_2
 #: conversationlist_halvor_surprise.json:halvor_chwood_3
 msgid "Thank you. I'll wait for you here."
-msgstr "Merci. Je vous attendrai ici."
+msgstr "Merci. Je t'attendrai ici."
 
 #: conversationlist_halvor_surprise.json:halvor_crossglen_4
 msgid "Great! Here, take this gold as a reward. Now I need some rat tails. Will you find them for me?"
-msgstr "Génial ! Voilà, prends cet or en guise de récompense. Maintenant, j'ai besoin de queues de rat. Peux-tu m'en trouver ?"
+msgstr ""
+"Génial ! Tiens, prends cet or en guise de récompense. Maintenant, j'ai "
+"besoin de queues de rat. Peux-tu m'en trouver ?"
 
 #: conversationlist_halvor_surprise.json:halvor_crossglen_4:0
 #: conversationlist_halvor_surprise.json:halvor_crossglen_6:0
@@ -22543,11 +22555,11 @@ msgstr "Non, pas encore. Je reviens."
 #: conversationlist_halvor_surprise.json:halvor_crossglen_3:1
 #: conversationlist_halvor_surprise.json:halvor_bwmine_3:0
 msgid "Yes. Here they are."
-msgstr "Oui, les voilà."
+msgstr "Oui, les voici."
 
 #: conversationlist_halvor_surprise.json:halvor_crossglen_5
 msgid "Thank you. Bring me 5 of them. I'll wait for you here."
-msgstr "Merci. Apporte moi en 5. Je t'attends ici."
+msgstr "Merci. Apporte m'en 5. Je t'attends ici."
 
 #: conversationlist_halvor_surprise.json:halvor_crossglen_5:0
 #: conversationlist_stoutford_combined.json:odirath_2_3:0
@@ -22572,11 +22584,13 @@ msgstr "Merci. Voici une petite compensation."
 
 #: conversationlist_halvor_surprise.json:halvor_crossglen_9
 msgid "Hmm ... they're not as good as I hoped. Can you get me 5 more?"
-msgstr "Hmm ... elles ne sont pas aussi bonnes que j’espérais. Tu peux m'en trouver 5 de plus ?"
+msgstr ""
+"Hmm ... elles ne sont pas aussi bonnes que j’espérais. Peux-tu m'en trouver "
+"5 de plus ?"
 
 #: conversationlist_halvor_surprise.json:halvor_crossglen_9:0
 msgid "Not good enough for you? I'm tired of dealing with you."
-msgstr "Pas assez bonnes pour vous ? Je suis fatigué de vos histoires."
+msgstr "Ça ne vous suffit pas ? Je suis fatigué de vos histoires."
 
 #: conversationlist_halvor_surprise.json:halvor_crossglen_9:1
 msgid "As long as you pay..."
@@ -34569,7 +34583,7 @@ msgstr "Salut, qui es-tu ? Je ne t'ai jamais vu ici."
 
 #: conversationlist_burhczyd.json:burhczydx_1a:0
 msgid "My name is $playername. I am from Crossglen."
-msgstr "je m'appelle $playername. Je viens de Crossglen."
+msgstr "Je m'appelle $playername. Je viens de Crossglen."
 
 #: conversationlist_burhczyd.json:burhczydx_1a:1
 msgid "My father always told me not to talk to strangers."
@@ -34696,7 +34710,8 @@ msgstr "C'est maintenant : \"TRANSPORTS B.O.F.S\" - ça en jette !"
 
 #: conversationlist_burhczyd.json:burhczydx_3a_4:0
 msgid "You can't be serious!  BAD TRANSPORTS? Tell me that's just a joke!"
-msgstr "Tu n'es pas sérieux ! TRANSPORTS BOFS ? Dis-moi que c'est une blague !"
+msgstr ""
+"Vous n'êtes pas sérieux ! TRANSPORTS BOFS ? Dites-moi que c'est une blague !"
 
 #: conversationlist_burhczyd.json:burhczydx_3a_5
 msgid "Oh no! Did I get it wrong again? Nothing I do ever works. (sob)"
@@ -34706,7 +34721,7 @@ msgstr ""
 
 #: conversationlist_burhczyd.json:burhczydx_3a_5:0
 msgid "Look, just call your company 'Easy Transports'. That will do."
-msgstr "Écoute, appelle ton entreprise \"Transports Faciles\". Ca ira."
+msgstr "Écoutez, appelez votre entreprise \"Transports Faciles\". Ca ira."
 
 #: conversationlist_burhczyd.json:burhczydx_3a_6
 msgid "OK, thank you. I'll try. Later. Tomorrow. Maybe. (sob)"
@@ -34722,7 +34737,7 @@ msgstr "Salut, quel-est-ton-nom ? Comment vas-tu ?"
 
 #: conversationlist_burhczyd.json:burhczydx_4a:0
 msgid "I am fine. And my name is $playername, as you should know by now."
-msgstr "Ca va. Et je m'appelle $playername, comme tu devrais le savoir maintenant."
+msgstr "Ca va. Et je m'appelle $playername, vous devriez le savoir maintenant."
 
 #: conversationlist_burhczyd.json:burhczydx_4a_2
 msgid "I am Burhczyd afgz Dtaloumiye, proud owner of Easy Transports."
@@ -34730,7 +34745,7 @@ msgstr "Je suis Burhczyd ofgz Ftaloumiye sako, fier propriétaire de Transports 
 
 #: conversationlist_burhczyd.json:burhczydx_4a_2:0
 msgid "The last time we saw each other, you did not have any transport orders yet."
-msgstr "La dernière fois qu'on s'est vus, tu n'avais pas encore de clients."
+msgstr "La dernière fois qu'on s'est vus, vous n'aviez pas encore de clients."
 
 #: conversationlist_burhczyd.json:burhczydx_4a_3
 msgid "Oh, that has completely changed. I am into big business now. "
@@ -34766,7 +34781,9 @@ msgstr "Rare oui, mais encore délicieux ?"
 
 #: conversationlist_burhczyd.json:burhczydx_4a_7:0
 msgid "Nothing. Because we have known each other for so long, I will suggest something."
-msgstr "Rien. Comme on se connait depuis longtemps, je vais te suggérer quelque chose."
+msgstr ""
+"Rien. Comme on se connait depuis longtemps, je vais vous suggérer quelque "
+"chose."
 
 #: conversationlist_burhczyd.json:burhczydx_4a_8
 msgid "Fire away. Your ideas are always good."
@@ -34774,19 +34791,19 @@ msgstr "Vas-y décoche. Tes idées sont toujours bonnes."
 
 #: conversationlist_burhczyd.json:burhczydx_4a_8:0
 msgid "I will buy your fish for, say, 1000 gold pieces."
-msgstr "J'achèterai ton poisson pour, disons, 1000 pièces d'or."
+msgstr "J'achèterai votre poisson pour, disons, 1000 pièces d'or."
 
 #: conversationlist_burhczyd.json:burhczydx_4a_8:1
 msgid "I will buy your fish for, say, 100 gold pieces."
-msgstr "J'achèterai ton poisson pour, disons, 100 pièces d'or."
+msgstr "J'achèterai votre poisson pour, disons, 100 pièces d'or."
 
 #: conversationlist_burhczyd.json:burhczydx_4a_8:2
 msgid "I will buy your fish for, say, 10 gold pieces."
-msgstr "J'achèterai ton poisson pour, disons, 10 pièces d'or."
+msgstr "J'achèterai votre poisson pour, disons, 10 pièces d'or."
 
 #: conversationlist_burhczyd.json:burhczydx_4a_8:3
 msgid "I will take your fish, but I can't give you any money."
-msgstr "Je prendrai ton poisson, mais je ne peux pas te donner d'argent."
+msgstr "Je prendrai votre poisson, mais je ne peux pas vous donner d'argent."
 
 #: conversationlist_burhczyd.json:burhczydx_4a_10
 msgid "Well. Take it."
@@ -34794,11 +34811,15 @@ msgstr "Bien. Prends-le."
 
 #: conversationlist_burhczyd.json:burhczydx_4a_10:0
 msgid "No, no! It is not for me. Unload the fish in the nearest forest and make a burnt offering."
-msgstr "Non, non ! Ce n'est pas pour moi. Décharge le poisson dans la forêt la plus proche et brûle-le en offrande."
+msgstr ""
+"Non, non ! Ce n'est pas pour moi. Déchargez le poisson dans la forêt la plus "
+"proche et brûlez-le en offrande."
 
 #: conversationlist_burhczyd.json:burhczydx_4a_11
 msgid "That is a great idea! The better the offering, the greater the help will be."
-msgstr "C'est une idée géniale ! Mieux est l'offrande, mieux sera l'aide en retour."
+msgstr ""
+"C'est une idée géniale ! Meilleure est l'offrande, meilleure sera l'aide en "
+"retour."
 
 #: conversationlist_burhczyd.json:burhczydx_4a_11:1
 msgid "I hope it doesn't work the other way around"
@@ -40179,7 +40200,7 @@ msgstr "Tu es trop dangereux pour te laisser en vie."
 msgid "I too am an adventurer.  I recently attempted to make my way through this here cave."
 msgstr ""
 "Moi aussi je suis un aventurier. J'ai récemment essayé de me frayer un "
-"chemin dans cette cave."
+"chemin dans cette grotte."
 
 #: conversationlist_brimhaven_2.json:inspiring_snake_master_50
 msgid "In the beginning it was relatively easy.  It wasn't until I ran into the Snake master's minions."
@@ -40195,7 +40216,7 @@ msgstr ""
 
 #: conversationlist_brimhaven_2.json:inspiring_snake_master_60:0
 msgid "I could retrieve the map for you."
-msgstr "Je pourrais retrouver votre carte."
+msgstr "Je pourrais vous rapporter votre carte."
 
 #: conversationlist_brimhaven_2.json:inspiring_snake_master_70
 msgid "Please do and hurry back to me."
@@ -40249,7 +40270,7 @@ msgstr ""
 
 #: conversationlist_brimhaven_2.json:oromir_basement_help_10
 msgid "Thank you for not telling my wife where I've been."
-msgstr "Merci de ne pas dire à ma femme où j'étais."
+msgstr "Merci de ne pas avoir dit à ma femme où j'étais."
 
 #: conversationlist_brimhaven_2.json:oromir_basement_help_10:0
 msgid "Why are you back in the house?"
@@ -40284,7 +40305,7 @@ msgstr ""
 
 #: conversationlist_brimhaven_2.json:falothan1_7_pa1:1
 msgid "Sounds good. Teach me how to fight with polearms."
-msgstr "Ca parait bien. Apprends-moi à me battre avec les armes d'hast."
+msgstr "Ca parait bien. Apprenez-moi à me battre avec les armes d'hast."
 
 #: conversationlist_brimhaven_2.json:falothen_1_pa2
 #: conversationlist_brimhaven_2.json:falothen1_2nd_pa3
@@ -40294,7 +40315,7 @@ msgstr "[Falothen t'apprend la compétence arme d'hast]"
 #: conversationlist_brimhaven_2.json:falothen1_2nd_pa1:0
 msgid "Sounds good. Teach me how to better fight with polearms. Here are two Oegyth crystals and 5000 gold as payment."
 msgstr ""
-"Ca semble bien. Apprends-moi à mieux me battre avec des armes d'hast. Voici "
+"Ca semble bien. Apprenez-moi à mieux me battre avec des armes d'hast. Voici "
 "deux cristaux d'Oegyth et 5000 pièces d'or."
 
 #: conversationlist_brimhaven_2.json:leta_oromir1_trees
