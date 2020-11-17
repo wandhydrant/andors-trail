@@ -5,7 +5,7 @@
     <string name="exit_to_menu">メニューに戻る</string>
     <string name="menu_settings">設定</string>
     <string name="menu_save">セーブ</string>
-    <string name="menu_save_gamesaved">スロット %1$d にセーブされました</string>
+    <string name="menu_save_gamesaved">スロット%1$dにセーブされました</string>
     <string name="menu_save_failed">セーブできません! SDカードはマウントされていますか\?</string>
     <string name="loadsave_title_save">セーブ</string>
     <string name="loadsave_title_load">ロード</string>
@@ -405,7 +405,7 @@
     <string name="iteminfo_effect_decrease_damage_resistance">ダメージ軽減を%1$d減少</string>
     <string name="iteminfo_effect_increase_damage_resistance">ダメージ軽減を%1$d増加</string>
     <string name="iteminfo_effect_decrease_block_chance">回避が%1$d減少</string>
-    <string name="preferences_high_quality_filters">フィルタされたマップ（暗い洞窟など）でパフォーマンスの問題が発生する場合、無効にしてください。このオプションを有効にすると、単色のオーバーレイではなく高度なカラーフィルタが使用されます。</string>
+    <string name="preferences_high_quality_filters">フィルタされたマップ(暗い洞窟など)でパフォーマンスの問題が発生する場合、無効にしてください。このオプションを有効にすると、単色のオーバーレイではなく高度なカラーフィルタが使用されます。</string>
     <string name="preferences_high_quality_filters_title">高品質フィルタ</string>
     <string name="inventory_selectitem">割り当てるアイテムを選択する</string>
     <string name="preferences_language_description">言語を選択します。システム言語が使用できない場合、またはコンテンツが翻訳されていない場合は英語が使用されます。(再起動が必要)</string>
@@ -414,9 +414,9 @@
     <string name="preferences_display_scaling_factor_75_percent">0.75x</string>
     <string name="preferences_display_scaling_factor_50_percent">0.5x</string>
     <string name="about_interface">&lt;div&gt;&lt;b&gt;ゲーム設定&lt;/b&gt;はデバイスのメニューボタンを押すと表示されます。&lt;/div&gt; &lt;p&gt;________________&lt;/p&gt; &lt;h1&gt;インターフェイスアイコン&lt;/h1&gt; &lt;div&gt;&lt;b&gt;チェスト&lt;/b&gt;&lt;img alt=chest src=chest.png /&gt;&lt;/div&gt; &lt;p&gt;クイックスロット[中のポーチを長押しして、すぐ使えるアイテムを割り当てます]&lt;/p&gt; &lt;div&gt;&lt;b&gt;主人公&lt;/b&gt;&lt;img alt=hero src=char_hero.png /&gt;&lt;/div&gt; &lt;p&gt;メニュー[概要、クエスト、スキル、インベントリ*]&lt;/p&gt; &lt;p&gt;* (インベントリでアイテムを押すと情報が表示され、長押しするとオプションが表示されます)&lt;/p&gt; &lt;div&gt;&lt;b&gt;敵&lt;/b&gt;&lt;img alt=monster src=monster.png /&gt;&lt;/div&gt; &lt;p&gt;情報[戦闘中に出現]&lt;/p&gt; &lt;p&gt;________________&lt;/p&gt; &lt;h1&gt;戦闘指南&lt;/h1&gt; &lt;p&gt;戦闘中の行動にはAPを消費します...&lt;/p&gt; &lt;div&gt;&lt;b&gt;攻撃&lt;/b&gt; - [3AP]*&lt;/div&gt; &lt;img alt=attacking src=doubleattackexample.png /&gt; &lt;p&gt;* (装備変更やアイテムの使用により、APや消費コストが変化する場合があります)&lt;/p&gt; &lt;div&gt;&lt;b&gt;アイテムの使用&lt;/b&gt; - [5AP]&lt;/div&gt; &lt;div&gt;&lt;b&gt;逃走&lt;/b&gt; - [6AP]&lt;/div&gt; &lt;p&gt;________________&lt;/p&gt; &lt;h1&gt;更なる戦闘指南&lt;/h1&gt; &lt;div&gt;戦闘中、主人公に隣接するタイルを長押しします…&lt;/div&gt; &lt;div&gt;&lt;b&gt;逃走するには&lt;/b&gt;&lt;/div&gt; &lt;p&gt;(選択したタイルがハイライト表示されます - 攻撃ボタンは移動に変わります)&lt;/p&gt; &lt;img alt=flee src=flee_example.png /&gt; &lt;p&gt;[逃走モードが有効 - 敵を長押しして再度戦闘に戻ります]&lt;/p&gt; &lt;div&gt;&lt;b&gt;ターゲットを変更するには&lt;/b&gt;&lt;/div&gt; &lt;p&gt;(赤色のターゲットハイライトが敵の間で移動します)&lt;/p&gt; &lt;p&gt;[ターゲットが変更されます]&lt;/p&gt;</string>
-    <string name="dialog_permission_information">Andor\'s Trailは、保存したゲームをデバイス上のユーザーアクセス可能なストレージに書き込みます。これにより、保存したゲームを簡単にバックアップしたり、新しいデバイスに転送したりできます。詳細については、フォーラムをご覧ください。
+    <string name="dialog_permission_information">Andor\'s Trailは、保存したゲームをデバイス上のユーザーアクセス可能なストレージに書き込みます。これにより、保存したゲームを簡単にバックアップしたり、新しいデバイスに転送できます。詳細についてはフォーラムをご覧ください。
 \n
-\nAndor\'s Trailは、他の目的でデバイスへのアクセスを使用せず、インターネットにもアクセスしません。Andor\'s Trailはオープンソースです。ソースはgithubにあります。</string>
+\nAndor\'s Trailは他の目的でデバイスへのアクセスを使用せず、インターネットにもアクセスしません。Andor\'s Trailはオープンソースです。ソースはgithubにあります。</string>
     <string name="dialog_permission_information_title">ゲームのロードとセーブ</string>
     <string name="dialog_newversion_permission_information">"
 \n
@@ -526,7 +526,7 @@
 \n布製のアイテムは防具には含まれません。</string>
     <string name="menu_save_switch_character">セーブすることで、別のキャラクターに切り替えて、後で現在のゲームを続けることができます。 セーブして現在のゲームを終了しますか\?</string>
     <string name="startscreen_non_release_version">これはAndor\'s Trailのプレリリース版です。 このバージョンで作成されたセーブは、リリース版とは互換性がない場合があります。</string>
-    <string name="startscreen_incompatible_savegames">これはAndor\'s Trailの開発版です。このバージョンで作成されたセーブは、リリースバージョンとは互換性がありません。</string>
+    <string name="startscreen_incompatible_savegames">これはAndor\'s Trailの開発版です。このバージョンで作成されたセーブは、リリース版とは互換性がありません。</string>
     <string name="loadsave_empty_slot">%1$d.&lt;empty&gt;</string>
     <string name="loadsave_save_overwrite_confirmation_slot">(スロット %1$d)</string>
     <string name="menu_save_switch_character_title">キャラクターの切り替え</string>
