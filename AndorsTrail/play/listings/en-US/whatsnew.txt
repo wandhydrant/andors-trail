@@ -27,7 +27,7 @@ Content:
 	3) A raid for a cookbook  (Start at Gison)
 	4) A giant snake (Start at Fallhaven tavern, later in the game)
 * Achievements
-    Technically listed as a quest, but the achievements are completely independant single steps, which are given as a reward for special things. (Talk to Mikhail)
+    Technically listed as a quest, but the achievements are completely independent single steps, which are given as a reward for special things. (Talk to Mikhail)
 	There are very few achievements yet, but more will be added in the next releases.
 * 29 new maps
 * Other changes
@@ -41,10 +41,10 @@ Code:
 * Fixed rounding issues regarding skills and also a fix for gold quantity
 * Made proceedToPhrase non recursive to allow longer chains of dialogues
 * Damage modifier when dual wielding now depends on the dual wield skill
-* Increased API level to 29 so we can update AT after november 2020
-* atsymboldot/no-tapping-out-of-loot
-* Queststeps in the quest log are now sorted in chronological order.
-* atsymboldot/combat-log-improvements
+* Increased API level to 29 so we can update AT after November 2020
+* Prevent stray taps from closing the loot dialog box after combat
+* Queststeps in the quest log are now sorted in chronological order
+* Show item drops, XP gains, and item consumption in the Combat Log
 * jasptravis/travis
 
 * Various small changes and bug fixes
