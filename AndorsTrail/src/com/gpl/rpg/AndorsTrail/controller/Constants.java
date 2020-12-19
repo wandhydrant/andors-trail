@@ -27,6 +27,7 @@ public final class Constants {
 	public static final int MAX_MAP_HEIGHT = 33;
 
 	public static final int MONSTER_MOVEMENT_TURN_DURATION_MS = 1200;
+	public static final int MONSTER_IMMOBILE_MOVE_COST = 999;
 
 	public static final int TICK_DELAY = 500;
 	private static final int ROUND_DURATION = 6000;
