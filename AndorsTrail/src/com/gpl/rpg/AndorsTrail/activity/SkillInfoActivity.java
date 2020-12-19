@@ -130,7 +130,6 @@ public final class SkillInfoActivity extends AndorsTrailBaseActivity {
 		case resistancePhysical: return R.string.skill_title_resistance_physical_capacity;
 		case resistanceBlood: return R.string.skill_title_resistance_blood_disorder;
 		case shadowBless: return R.string.skill_title_shadow_bless;
-		case sporeImmunity: return R.string.skill_title_spore_immunity;
 		case crit1: return R.string.skill_title_crit1;
 		case crit2: return R.string.skill_title_crit2;
 		case rejuvenation: return R.string.skill_title_rejuvenation;
@@ -154,6 +153,7 @@ public final class SkillInfoActivity extends AndorsTrailBaseActivity {
 		case specialization2hand: return R.string.skill_title_specialization_2hand;
 		case specializationWeaponShield: return R.string.skill_title_specialization_weapon_shield;
 		case weaponProficiencyPole: return R.string.skill_title_weapon_prof_pole;
+		case sporeImmunity: return R.string.skill_title_spore_immunity;
 		default:
 			return -1;
 		}

@@ -137,7 +137,6 @@ public final class SkillListAdapter extends ArrayAdapter<SkillInfo> {
 		case resistancePhysical: return R.string.skill_shortdescription_resistance_physical_capacity;
 		case resistanceBlood: return R.string.skill_shortdescription_resistance_blood_disorder;
 		case shadowBless: return R.string.skill_shortdescription_shadow_bless;
-		case sporeImmunity: return R.string.skill_shortdescription_spore_immunity;
 		case crit1: return R.string.skill_shortdescription_crit1;
 		case crit2: return R.string.skill_shortdescription_crit2;
 		case rejuvenation: return R.string.skill_shortdescription_rejuvenation;
@@ -161,6 +160,7 @@ public final class SkillListAdapter extends ArrayAdapter<SkillInfo> {
 		case specialization2hand: return R.string.skill_shortdescription_specialization_2hand;
 		case specializationWeaponShield: return R.string.skill_shortdescription_specialization_weapon_shield;
 		case weaponProficiencyPole: return R.string.skill_shortdescription_weapon_prof_pole;
+		case sporeImmunity: return R.string.skill_shortdescription_spore_immunity;
 		default:
 			return -1;
 		}
