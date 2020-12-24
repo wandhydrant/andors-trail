@@ -63,7 +63,7 @@
     <string name="combat_result_monsterhitcritical">%1$s 暴击！你损失了 %2$d 点血！</string>
     <string name="combat_result_heromiss">没有打到。</string>
     <string name="combat_result_herohit">中了！%1$s 失去 %2$d 点血。</string>
-    <string name="combat_result_herohitcritical">暴击！%1$s 失去 %2$d 点血！</string>
+    <string name="combat_result_herohitcritical">暴击！%1$s失去%2$d点血！</string>
     <string name="combat_result_herokillsmonster">%1$s 死了！</string>
     <string name="combat_not_enough_ap">这回合没有足够的行动点。</string>
     <string name="combat_hero_dies">你失去知觉，但幸运地醒了过来，不知所措，失去 %1$d 点经验值。</string>
@@ -75,7 +75,7 @@
     <string name="combat_condition_monster_apply">%1$s 受到了 %2$s 的影响。</string>
     <string name="combat_condition_monster_clear">%1$s 摆脱了 %2$s 的影响。</string>
     <string name="shop_buy">买</string>
-    <string name="shop_sell">卖</string>
+    <string name="shop_sell">卖出</string>
     <string name="about_button1">帮助</string>
     <string name="dialog_newversion_title">欢迎</string>
     <string name="questlog_queststatus_completed">做完了</string>
@@ -109,19 +109,19 @@
     <string name="heroinfo_limited_lives">有限的生命（还剩%1$d/%2$d）</string>
     <string name="heroinfo_unlimited_lives">无限生命，单个存档</string>
     <string name="heroinfo_unlimited_lives_and_saves">标准 
-\n（无限的生命和保存）</string>
+\n（无限生命和存档）</string>
     <string name="heroinfo_mode">模式</string>
     <string name="rip_startscreen">(RIP)</string>
     <string name="dialog_game_over_text">你屏住呼吸死了。</string>
     <string name="dialog_game_over_title">游戏结束</string>
     <string name="dialog_loading_failed_cheat">Andor\'s Trail无法加载游戏存档文件。此游戏存档文件已经继续。</string>
     <string name="traitsinfo_attack_cost">攻击消耗(体力值):</string>
-    <string name="actorinfo_currenttraits">战斗统计(当前)</string>
-    <string name="actorinfo_movecost">移动消耗(体力值)：</string>
-    <string name="actorinfo_basetraits">基础战斗统计(不计装备及技能)</string>
-    <string name="actorinfo_defense">防御力：</string>
-    <string name="actorinfo_attack">攻击力：</string>
-    <string name="actorinfo_health">生命值：</string>
+    <string name="actorinfo_currenttraits">战斗数据（当前）</string>
+    <string name="actorinfo_movecost">移动消耗（AP）：</string>
+    <string name="actorinfo_basetraits">基础战斗数据（不计装备及技能）</string>
+    <string name="actorinfo_defense">防御：</string>
+    <string name="actorinfo_attack">攻击：</string>
+    <string name="actorinfo_health">生命：</string>
     <string name="actorinfo_difficulty">难度：</string>
     <string name="actorinfo_class">职业：</string>
     <string name="monster_difficulty_impossible">大师</string>
@@ -129,9 +129,9 @@
     <string name="monster_difficulty_hard">困难</string>
     <string name="monster_difficulty_normal">正常</string>
     <string name="monster_difficulty_easy">简单</string>
-    <string name="monster_difficulty_veryeasy">新手难度</string>
+    <string name="monster_difficulty_veryeasy">很简单</string>
     <string name="dialog_monsterloot_gainedexp">你获得了 %1$d 经验值。</string>
-    <string name="dialog_monsterloot_message">你在遭遇战中幸存了下来。</string>
+    <string name="dialog_monsterloot_message">您幸免于难。</string>
     <string name="dialog_monsterloot_title">胜利</string>
     <string name="dialog_groundloot_message">你发现了一些物品。</string>
     <string name="dialog_loot_pickedupitems">你捡起了 %1$d 个物品。</string>
@@ -176,7 +176,7 @@
     <string name="shop_buyitem">买(%1$d gold)</string>
     <string name="conversation_rewarditems">[你获得了 %1$d 样物品]</string>
     <string name="conversation_rewarditem">[你获得了一样物品]</string>
-    <string name="conversation_lostgold">[你失去了 %1$d 金钱]</string>
+    <string name="conversation_lostgold">【你失去了%1$d金币】</string>
     <string name="conversation_rewardgold">[你获得了 %1$d 金钱]</string>
     <string name="conversation_rewardexp">[你获得了 %1$d 经验值]</string>
     <string name="startscreen_mode_1_life">永久死亡(1条生命,单一存档)</string>
@@ -205,11 +205,11 @@
     <string name="iteminfo_action_equip">装备</string>
     <string name="iteminfo_action_use">使用</string>
     <string name="traitsinfo_attack_damage">攻击伤害:</string>
-    <string name="about_button3">自由开源许可证</string>
+    <string name="about_button3">许可证</string>
     <string name="iteminfo_action_unequip_ap">卸下（消耗 %1$d AP)</string>
     <string name="storage_permissions_mandatory">Andor\'s Trail 必须具有存储访问权限，才能处理保存的游戏和世界地图。正在关闭 Andor\'s Trail。</string>
     <string name="change_theme_requires_restart">更改UI主题需要重新启动。 Andor\'s Trail 已被关闭。</string>
-    <string name="conversation_reward_quest_finished">【任务完成: \"%1$s\"】</string>
+    <string name="conversation_reward_quest_finished">【任务完成：\"%1$s\"】</string>
     <string name="combat_log_noentries">没有记录。</string>
     <string name="combat_log_title">战斗记录</string>
     <string name="combat_result_monstermoved">%1$s 移动。</string>
@@ -245,7 +245,7 @@
     <string name="bulkselection_totalcost_buy">总计需要：%1$d 金币</string>
     <string name="actorconditioninfo_effect_every_full_round">每完整回合</string>
     <string name="actorconditioninfo_effect_every_round">每回合</string>
-    <string name="actorconditioninfo_constant_effect">固定效果</string>
+    <string name="actorconditioninfo_constant_effect">持续效果</string>
     <string name="preferences_movement_dpad_positions_center_top">正上方</string>
     <string name="preferences_movement_dpad_positions_upper_right">右上方</string>
     <string name="preferences_movement_dpad_positions_upper_left">左上方</string>
@@ -296,9 +296,9 @@
     <string name="iteminfo_effect_works_on_source">对来源</string>
     <string name="iteminfo_effect_duration">(%1$d 回合)</string>
     <string name="iteminfo_effect_chance_of">%1$s 几率 %2$s</string>
-    <string name="actorcondition_info_immunity">免疫 %1$s</string>
-    <string name="actorcondition_info_removes_all">移除所有 %1$s</string>
-    <string name="actorinfo_currentconditions">活跃状态</string>
+    <string name="actorcondition_info_immunity">免疫%1$s</string>
+    <string name="actorcondition_info_removes_all">移除所有%1$s</string>
+    <string name="actorinfo_currentconditions">当前状态</string>
     <string name="preferences_movementmethods_avoid">避开障碍物</string>
     <string name="preferences_movementmethods_straight">直线（原始）</string>
     <string name="preferences_movementmethod">移动的模式和如何处理障碍物。</string>
@@ -324,7 +324,7 @@
     <string name="questlog_queststatus_inprogress">进行中</string>
     <string name="questlog_includecompleted_onlycompleted">完成的任务</string>
     <string name="questlog_includecompleted_hidecompleted">完成的任务</string>
-    <string name="about_contents1">欢迎来到Andor\'s Trail，一个Android上的开源的地牢型安卓RPG。&lt;br /&gt; &lt;br /&gt; &lt;a href=http://andorstrail.com/&gt;andorstrail.com上的游戏论坛，可以讨论关于游戏的问题。&lt;/a&gt;&lt;br /&gt; &lt;br /&gt; &lt;a href=http://docs.andorstrail.com/&gt;游戏的WIKI百科，可以查看Andor\'s Trail的世界设定，地图，任务等。&lt;/a&gt;&lt;br /&gt; &lt;br /&gt; &lt;a href=https://github.com/AndorsTrailRelease/andors-trail/&gt;为开发者们准备的github.com上的开源代码&lt;/a&gt;&lt;br /&gt; &lt;br /&gt; 请访问论坛与其他玩家一起讨论游戏。&lt;br /&gt;</string>
+    <string name="about_contents1">欢迎来到Andor\'s Trail，一个Android上的开源的地牢型安卓RPG。&lt;br /&gt; &lt;br /&gt; &lt;a href=http://andorstrail.com/&gt;andorstrail.com上的游戏论坛，可以讨论关于游戏的问题。&lt;/a&gt;&lt;br /&gt; &lt;br /&gt; &lt;a href=http://docs.andorstrail.com/&gt;游戏百科，可以查看关于Andor\'s Trail世界的信息等。&lt;/a&gt;&lt;br /&gt; &lt;br /&gt; &lt;a href=https://github.com/AndorsTrailRelease/andors-trail/&gt;为开发者准备的github.com上的开源代码&lt;/a&gt;&lt;br /&gt; &lt;br /&gt; 请访问论坛与其他玩家一起讨论游戏。&lt;br /&gt;</string>
     <string name="skill_longdescription_fightstyle_dualwield">当两个武器同时装备时，一个在主手，另一个副手。
 \n
 \n如果没有这个技能，只有%1$d %% 的武器品质可以在副手装备时使用。这包括命中率、暴击等级、伤害和格挡率。没有这个技能，攻击的攻击速度（AP消耗）就是主武器和副手武器的攻击速度之和。
@@ -485,8 +485,8 @@
     <string name="menu_save_saving_not_allowed_in_combat">无法在战斗中保存游戏。</string>
     <string name="traitsinfo_base_max_ap">AP上限：</string>
     <string name="traitsinfo_base_max_hp">HP上限：</string>
-    <string name="actorcondition_categories_blood">血液紊乱</string>
-    <string name="actorcondition_categories_physical">身体能力</string>
+    <string name="actorcondition_categories_blood">血液</string>
+    <string name="actorcondition_categories_physical">物理</string>
     <string name="actorcondition_categories_mental">心理</string>
     <string name="actorcondition_categories_spiritual">精神</string>
     <string name="actorconditioninfo_category">状态类别：%1$s</string>
@@ -550,7 +550,7 @@
     <string name="skill_title_magicfinder">魔法探测器</string>
     <string name="skill_title_lower_exploss">驾驭失败</string>
     <string name="skill_title_evasion">闪避</string>
-    <string name="about_interface">&lt;div&gt;&lt;b&gt;游戏设置&lt;/b&gt; 可按下设备的菜单按钮找到，&lt;/div&gt; &lt;p&gt;________________&lt;/p&gt; &lt;h1&gt;界面图标&lt;/h1&gt; &lt;div&gt;&lt;b&gt;宝箱&lt;/b&gt;&lt;img alt=chest src=chest.png /&gt;&lt;/div&gt; &lt;p&gt;快捷栏 [长按槽可分配快捷栏内容]&lt;/p&gt; &lt;div&gt;&lt;b&gt;勇者&lt;/b&gt;&lt;img alt=hero src=char_hero.png /&gt;&lt;/div&gt; &lt;p&gt;菜单 [总览，任务，技能 &amp;amp; 背包 *]&lt;/p&gt; &lt;p&gt;* (在背包界面，点击物品可以看到信息，长按有更多选项)&lt;/p&gt; &lt;div&gt;&lt;b&gt;敌人&lt;/b&gt;&lt;img alt=monster src=monster.png /&gt;&lt;/div&gt; &lt;p&gt;信息 [仅在战斗中出现]&lt;/p&gt; &lt;p&gt;________________&lt;/p&gt; &lt;h1&gt;战斗&lt;/h1&gt; &lt;p&gt;战斗时的操作会消耗 AP...&lt;/p&gt; &lt;div&gt;&lt;b&gt;攻击&lt;/b&gt; - [3AP] *&lt;/div&gt; &lt;img alt=attacking src=doubleattackexample.png /&gt; &lt;p&gt;* (装备或物品会影响AP总量或消耗的AP)&lt;/p&gt; &lt;div&gt;&lt;b&gt;使用物品&lt;/b&gt; - [5AP]&lt;/div&gt; &lt;div&gt;&lt;b&gt;逃跑&lt;/b&gt; - [6AP]&lt;/div&gt; &lt;p&gt;________________&lt;/p&gt; &lt;h1&gt;高级战斗&lt;/h1&gt; &lt;div&gt;在战斗中，长按勇者附近的方块...&lt;/div&gt; &lt;div&gt;&lt;b&gt;来逃跑&lt;/b&gt;&lt;/div&gt; &lt;p&gt;(选择的方块会被标记，攻击按钮变成移动)&lt;/p&gt; &lt;img alt=flee src=flee_example.png /&gt; &lt;p&gt;[逃跑模式启动- 长按敌人重新战斗]&lt;/p&gt; &lt;div&gt;&lt;b&gt;来改变目标&lt;/b&gt;&lt;/div&gt; &lt;p&gt;(红色高亮表示你选中的敌人)&lt;/p&gt; &lt;p&gt;[目标已改变]&lt;/p&gt;</string>
+    <string name="about_interface">&lt;div&gt;&lt;b&gt;游戏设置&lt;/b&gt;可通过按下设备的菜单按钮找到。&lt;/div&gt; &lt;p&gt;________________&lt;/p&gt; &lt;h1&gt;界面图标&lt;/h1&gt; &lt;div&gt;&lt;b&gt;宝箱&lt;/b&gt;&lt;img alt=chest src=chest.png /&gt;&lt;/div&gt; &lt;p&gt;快捷栏 【长按快捷栏槽可分配快捷栏内容】&lt;/p&gt; &lt;div&gt;&lt;b&gt;英雄&lt;/b&gt;&lt;img alt=hero src=char_hero.png /&gt;&lt;/div&gt; &lt;p&gt;菜单 【总览，任务，技能，背包 *】&lt;/p&gt; &lt;p&gt;* （在背包界面，点击物品可以看到信息，长按有更多选项）&lt;/p&gt; &lt;div&gt;&lt;b&gt;敌人&lt;/b&gt;&lt;img alt=monster src=monster.png /&gt;&lt;/div&gt; &lt;p&gt;信息 【仅在战斗中出现】&lt;/p&gt; &lt;p&gt;________________&lt;/p&gt; &lt;h1&gt;战斗&lt;/h1&gt; &lt;p&gt;战斗时进行操作会消耗 AP...&lt;/p&gt; &lt;div&gt;&lt;b&gt;攻击&lt;/b&gt; - 【3AP】 *&lt;/div&gt; &lt;img alt=attacking src=doubleattackexample.png /&gt; &lt;p&gt;* （装备或使用消耗品会影响AP上限或消耗的AP）&lt;/p&gt; &lt;div&gt;&lt;b&gt;使用物品&lt;/b&gt; - [5AP]&lt;/div&gt; &lt;div&gt;&lt;b&gt;逃跑&lt;/b&gt; - [6AP]&lt;/div&gt; &lt;p&gt;________________&lt;/p&gt; &lt;h1&gt;高级战斗&lt;/h1&gt; &lt;div&gt;在战斗中，长按英雄附近的方块...&lt;/div&gt; &lt;div&gt;&lt;b&gt;来逃跑&lt;/b&gt;&lt;/div&gt; &lt;p&gt;（选中的方块会高亮，攻击按钮会变成移动）&lt;/p&gt; &lt;img alt=flee src=flee_example.png /&gt; &lt;p&gt;【逃跑模式启动- 长按敌人重新进入战斗】&lt;/p&gt; &lt;div&gt;&lt;b&gt;来改变目标&lt;/b&gt;&lt;/div&gt; &lt;p&gt;（红色高亮表示你选中的敌人）&lt;/p&gt; &lt;p&gt;【目标已改变】&lt;/p&gt;</string>
     <string name="heroinfo_gamestats_bonemeals">骨粉药剂使用数</string>
     <string name="heroinfo_gamestats_spent_gold">商店消费的金币数</string>
     <string name="heroinfo_gamestats_deaths">失去知觉的次数</string>
@@ -588,6 +588,6 @@
     <string name="dialog_permission_information">Andor\'s Trail写入游戏存档到你设备上的用户可访问的存储。这可以让你很容易地备份你保存的游戏或转移到一个新的设备。请访问我们的论坛获取更多信息。
 \n
 \nAndor\'s Trail不使用访问您的设备用于任何其他目的，也不访问互联网。Andor’s Trail是开源的；源代码可以在github上找到。</string>
-    <string name="about_contents3">本程序为自由软件，在自由软件联盟发布的GNU通用公共许可协议的约束下，你可以对其进行再发布及修改。协议版本为第二版或（随你）更新的版本。&lt;br /&gt; &lt;br /&gt; 我们希望发布的这款程序有用，但不保证，甚至不保证它有经济价值和适合特定用途。详情参见GNU通用公共许可协议。&lt;br /&gt; &lt;br /&gt; 你理当已收到一份GNU通用公共许可协议的副本，如果没有，请见 &lt;a href=http://www.gnu.org/licenses&gt;http://www.gnu.org/licenses&lt;/a&gt;&lt;br /&gt; &lt;br /&gt; 有关源代码和功能请求，请访问项目页面 &lt;a href=https://github.com/AndorsTrailRelease/andors-trail/&gt;https://github.com/AndorsTrailRelease/andors-trail/&lt;/a&gt;&lt;br /&gt;</string>
+    <string name="about_contents3">本程序为自由软件，在自由软件联盟发布的GNU通用公共许可协议的约束下，你可以对其进行再发布及修改。协议版本为第二版或（随你）更新的版本。&lt;br /&gt; &lt;br /&gt; 我们希望发布的这款程序有用，但&lt;b&gt;不保证&lt;/b&gt;，甚至不保证它有&lt;b&gt;经济价值&lt;/b&gt;和&lt;b&gt;适合特定用途&lt;/b&gt;。详情参见GNU通用公共许可协议。&lt;br /&gt; &lt;br /&gt; 你理当已收到一份GNU通用公共许可协议的副本，如果没有，请见 &lt;a href=http://www.gnu.org/licenses&gt;http://www.gnu.org/licenses&lt;/a&gt;&lt;br /&gt; &lt;br /&gt; 有关源代码和功能请求，请访问项目页面 &lt;a href=https://github.com/AndorsTrailRelease/andors-trail/&gt;https://github.com/AndorsTrailRelease/andors-trail/&lt;/a&gt;&lt;br /&gt;</string>
     <string name="preferences_display_theme">主题（需要重新启动）</string>
 </resources>
