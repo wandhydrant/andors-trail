@@ -289,7 +289,7 @@
     <string name="skill_shortdescription_resistance_mental">精神に対する状態変化への抵抗力</string>
     <string name="skill_shortdescription_resistance_physical_capacity">身体能力に対する状態変化への抵抗力</string>
     <string name="skill_shortdescription_resistance_blood_disorder">血液異常への抵抗力</string>
-    <string name="skill_longdescription_weapon_chance">スキル1レベルにつき、命中を%1$d 向上させます。</string>
+    <string name="skill_longdescription_weapon_chance">スキル1レベルにつき、命中を%1$d向上させます。</string>
     <string name="skill_longdescription_weapon_dmg">スキル1レベルにつき、与えるダメージの最小値と最大値を%1$d増加させます。</string>
     <string name="skill_longdescription_barter">スキル1レベルごとに、店でアイテムを売り買いするときの比率を%1$d%%ずつ有利にします。</string>
     <string name="skill_longdescription_dodge">スキル1レベルにつき、回避を%1$d向上させます。</string>
@@ -359,7 +359,7 @@
     <string name="skill_longdescription_taunt">敵の攻撃が外れたとき、%1$d%%の確率でその敵は行動値(AP)を%2$d失います。あなたに対するあらゆる近接攻撃に効果があります。</string>
     <string name="skill_title_concussion">頭部への衝撃</string>
     <string name="skill_shortdescription_concussion">脳震盪攻撃の機会を得る</string>
-    <string name="skill_longdescription_concussion">あなたの命中より%1$d以上回避が低い敵に攻撃するたび、その攻撃は%2$d%%の確率で対象に脳震盪(concussion)を起こします。concussionは攻撃に関する戦闘能力を劇的に下げ、対象は有効な攻撃を当てることが難しくなります。</string>
+    <string name="skill_longdescription_concussion">あなたの命中より%1$d以上回避が低い敵に攻撃するたび、その攻撃は%2$d%%の確率で対象に脳震盪(concussion)を起こします。脳震盪は攻撃に関する戦闘能力を劇的に下げ、対象は有効な攻撃を当てることが難しくなります。</string>
     <string name="about_button4">概要</string>
     <!-- =========================================== -->
     <!-- Added in v0.7.0 -->
@@ -385,7 +385,7 @@
     <string name="iteminfo_effect_weapon_attack_damage">ダメージ: %1$d</string>
     <string name="iteminfo_effect_weapon_attack_damage_minmax">ダメージ: %1$d-%2$d</string>
     <string name="iteminfo_effect_increase_attack_damage">攻撃ダメージを%1$d上げる</string>
-    <string name="iteminfo_effect_increase_attack_damage_minmax">攻撃ダメージを%1$d-%2$d 上げる</string>
+    <string name="iteminfo_effect_increase_attack_damage_minmax">攻撃ダメージを%1$d-%2$d上げる</string>
     <string name="iteminfo_effect_decrease_attack_damage">攻撃ダメージを%1$d下げる</string>
     <string name="iteminfo_effect_decrease_attack_damage_minmax">攻撃ダメージを%1$d-%2$d下げる</string>
     <string name="iteminfo_effect_increase_critical_skill">%1$dクリティカルスキルを上げる</string>
@@ -605,9 +605,9 @@
     <string name="preferences_quickslots_placement_summary">クイックスロットの配置場所</string>
     <string name="preferences_quickslots_placement">クイックスロットの位置</string>
     <string name="skill_longdescription_weapon_prof_pole">スキルレベルごとに、ポールウェポンを使用した時の命中をアイテムの基礎命中の%1$d%%、回避をアイテムの基礎回避の%2$d%%、クリティカルスキルをアイテムの基礎クリティカルスキルの%3$d%%それぞれ増やします。</string>
-    <string name="skill_longdescription_specialization_weapon_shield">メインハンドの武器の命中とダメージポテンシャルの両方が増加します。 命中は元の命中の%1$d%%、ダメージポテンシャルは元のダメージポテンシャルの%2$d%%増加します。</string>
-    <string name="skill_longdescription_specialization_2hand">武器スタイルスキル効果に加えて、両手武器のダメージポテンシャルが元のダメージポテンシャルの%1$d%%増加します。 両手武器の命中も元の命中の%2$d%%増加します。</string>
-    <string name="skill_longdescription_specialization_dualwield">武器スタイルのスキル効果に加えて、両方の装備武器の命中が元の命中の %1$d%%増加します。 両方の装備武器の回避も元の回避の%2$d%%増加します。</string>
+    <string name="skill_longdescription_specialization_weapon_shield">メインハンドの武器の命中とダメージポテンシャルの両方が増加します。命中は元の命中の%1$d%%、ダメージポテンシャルは元のダメージポテンシャルの%2$d%%増加します。</string>
+    <string name="skill_longdescription_specialization_2hand">武器スタイルスキル効果に加えて、両手武器のダメージポテンシャルが元のダメージポテンシャルの%1$d%%増加します。両手武器の命中も元の命中の%2$d%%増加します。</string>
+    <string name="skill_longdescription_specialization_dualwield">武器スタイルのスキル効果に加えて、両方の装備武器の命中が元の命中の%1$d%%増加します。両方の装備武器の回避も元の回避の%2$d%%増加します。</string>
     <string name="skill_longdescription_fightstyle_weapon_shield">メインハンドに武器を装備し、オフハンドに盾やパリィ武器を装備して戦っている時に効果を発揮します。
 \n
 \nスキルレベルが上がるごとに、メインハンドに装備している武器の命中が元の命中の%1$d%%、盾やパリィ武器の回避が元の回避の%2$d%%増加します。</string>
