@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: Andors Trail\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-11-10 11:48+0000\n"
-"PO-Revision-Date: 2020-06-15 21:41+0000\n"
-"Last-Translator: Daniel Stasiak <daniels.automatyk@gmail.com>\n"
+"PO-Revision-Date: 2020-10-05 12:12+0000\n"
+"Last-Translator: Atrate <Atrate@protonmail.com>\n"
 "Language-Team: Polish <https://hosted.weblate.org/projects/andors-trail/"
 "game-content/pl/>\n"
 "Language: pl\n"
@@ -13,7 +13,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 4.1\n"
+"X-Generator: Weblate 4.3-dev\n"
 "X-Launchpad-Export-Date: 2015-11-02 12:27+0000\n"
 
 #: [none]
@@ -317,7 +317,7 @@ msgstr "Zwiększona obrona"
 
 #: actorconditions_brimhaven.json:drowning
 msgid "Drowning"
-msgstr ""
+msgstr "Tonięcie"
 
 #: actorconditions_brimhaven.json:entanglement
 msgid "Entanglement"
@@ -328,23 +328,25 @@ msgstr ""
 #: actorconditions_brimhaven.json:fatigue3
 #: actorconditions_brimhaven.json:fatigue4
 msgid "Fatigue"
-msgstr ""
+msgstr "Zmęczenie"
 
 #: actorconditions_brimhaven.json:turn_to_stone
 msgid "Turning to stone"
-msgstr ""
+msgstr "Zamiana w kamień"
 
 #: actorconditions_brimhaven.json:stoneskin
 msgid "Stone skin"
-msgstr ""
+msgstr "Kamienna skóra"
 
 #: actorconditions_brimhaven.json:overeating
+#, fuzzy
 msgid "Overeating"
-msgstr ""
+msgstr "Przejadanie się"
 
 #: actorconditions_brimhaven.json:venom
+#, fuzzy
 msgid "Venom"
-msgstr ""
+msgstr "Jad"
 
 #: conversationlist_mikhail.json:mikhail_gamestart
 msgid "Oh good, you are awake."
@@ -381,8 +383,9 @@ msgstr "Czy jest coś jeszcze, co mógłbyś mi powiedzieć na temat Andora?"
 
 #: conversationlist_mikhail.json:mikhail_default:5
 #: conversationlist_mikhail.json:mikhail_default:6
+#, fuzzy
 msgid "I have a present for you."
-msgstr ""
+msgstr "Mam dla ciebie prezent."
 
 #: conversationlist_mikhail.json:mikhail_default:7
 msgid "I was searching for Andor."
@@ -1044,12 +1047,13 @@ msgstr "Znalazłem go. Ukrywa się wśród drzew na wschód stąd."
 #: conversationlist_crossglen_leta.json:leta_oromir1:2
 #: conversationlist_crossglen_leta.json:leta_oromir1:3
 #: conversationlist_crossglen_leta.json:leta_oromir1:4
+#, fuzzy
 msgid "[Lie] I have no idea."
-msgstr ""
+msgstr "[Kłamstwo] Nie mam pojęcia."
 
 #: conversationlist_crossglen_leta.json:leta_oromir1:5
 msgid "He's found a new hiding spot."
-msgstr ""
+msgstr "Znalazł nową kryjówkę."
 
 #: conversationlist_crossglen_leta.json:leta_oromir1:6
 msgid "He's found another new hiding spot. Give him credit, he is great at avoiding work."
@@ -49469,4 +49473,3 @@ msgstr "Zamek Guynmart"
 #: worldmap.xml:world1:brimhaven_area
 msgid "Brimhaven"
 msgstr ""
-
