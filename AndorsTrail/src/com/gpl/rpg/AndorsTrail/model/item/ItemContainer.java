@@ -221,7 +221,7 @@ public class ItemContainer {
 
 	public int determineType(ItemEntry item) {
 		if (item.itemType.isEquippable()) {
-			switch (item.itemType.inventorySlot) {
+			switch (item.itemType.category.inventorySlot) {
 				case weapon:
 					if (item.itemType.isTwohandWeapon()) {
 						return 100;
