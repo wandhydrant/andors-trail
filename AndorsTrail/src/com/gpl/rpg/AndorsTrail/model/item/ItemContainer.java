@@ -239,7 +239,7 @@ public class ItemContainer {
 				default: return 270;
 			}
 		} else if (item.itemType.isUsable()) {
-			if ("pot".equals(item.itemType.id)) {
+			if ("pot".equals(item.itemType.category.id) || "healing".equals(item.itemType.category.id)) {
 				return 300;
 			} else {
 				return 310;
