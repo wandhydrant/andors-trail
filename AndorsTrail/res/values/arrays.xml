@@ -195,6 +195,21 @@
 		<item>8</item>
 	</string-array>
 
+	<string-array name="preferences_movement_dpad_transparencies">
+		<item>@string/preferences_movement_dpad_transparency_30_pct</item>
+		<item>@string/preferences_movement_dpad_transparency_40_pct</item>
+		<item>@string/preferences_movement_dpad_transparency_50_pct</item>
+		<item>@string/preferences_movement_dpad_transparency_60_pct</item>
+		<item>@string/preferences_movement_dpad_transparency_70_pct</item>
+	</string-array>
+	<string-array name="preferences_movement_dpad_transparencies_values">
+		<item>255</item>
+		<item>218</item>
+		<item>182</item>
+		<item>145</item>
+		<item>109</item>
+	</string-array>
+
 	<string-array name="preferences_display_overwrite_savegame_entries">
 		<item>@string/preferences_display_overwrite_savegame_entries_always_confirm</item>
 		<item>@string/preferences_display_overwrite_savegame_entries_confirm_overwrite</item>
