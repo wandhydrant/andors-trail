@@ -9,8 +9,8 @@ msgstr ""
 "Project-Id-Version: andors-trail\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-11-10 11:48+0000\n"
-"PO-Revision-Date: 2020-07-27 15:53+0000\n"
-"Last-Translator: roberto <roberto.premoli@tiscali.it>\n"
+"PO-Revision-Date: 2021-01-15 08:32+0000\n"
+"Last-Translator: Pol <pablo.diaz.chao@gmail.com>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/andors-trail/"
 "game-content/es/>\n"
 "Language: es\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.2-dev\n"
+"X-Generator: Weblate 4.5-dev\n"
 "X-Launchpad-Export-Date: 2015-11-02 12:26+0000\n"
 
 #: [none]
@@ -243,7 +243,7 @@ msgstr "Fractura de hueso"
 
 #: actorconditions_guynmart.json:shadow_awareness
 msgid "Shadow awareness"
-msgstr "La conciencia de la Sombra"
+msgstr "La consciencia de la Sombra"
 
 #: actorconditions_trader_teksin.json:poison_irdegh_weak
 msgid "Weak irdegh poison"
@@ -307,7 +307,7 @@ msgstr "Maldición de la sirena"
 
 #: actorconditions_arulir_mountain.json:increased_defense
 msgid "Increased defense"
-msgstr "Defensa incrementada"
+msgstr "Defensa aumentada"
 
 #: actorconditions_brimhaven.json:drowning
 msgid "Drowning"
@@ -334,11 +334,11 @@ msgstr "Piel de piedra"
 
 #: actorconditions_brimhaven.json:overeating
 msgid "Overeating"
-msgstr ""
+msgstr "Empacho"
 
 #: actorconditions_brimhaven.json:venom
 msgid "Venom"
-msgstr ""
+msgstr "Veneno"
 
 #: conversationlist_mikhail.json:mikhail_gamestart
 msgid "Oh good, you are awake."
@@ -376,11 +376,11 @@ msgstr "¿Hay algo más que puedas decirme sobre Andor?"
 #: conversationlist_mikhail.json:mikhail_default:5
 #: conversationlist_mikhail.json:mikhail_default:6
 msgid "I have a present for you."
-msgstr ""
+msgstr "Tengo un regalo para ti."
 
 #: conversationlist_mikhail.json:mikhail_default:7
 msgid "I was searching for Andor."
-msgstr ""
+msgstr "Estaba buscando a Andor."
 
 #: conversationlist_mikhail.json:mikhail_tasks
 msgid "Oh yes, there were some things I need help with, bread and rats. Which one would you like to talk about?"
@@ -425,7 +425,9 @@ msgstr "Tal vez entró otra vez en esa cueva de suministros y se atascó. O quiz
 
 #: conversationlist_mikhail.json:mikhail_bread_start
 msgid "Oh, I almost forgot. If you have time, please go see Mara at the town hall and buy me some more bread."
-msgstr "Oh casi lo olvido. Si tienes tiempo, ve a ver a Mara en el ayuntamiento y cómprame un poco más de pan."
+msgstr ""
+"Oh, casi lo olvido. Si tienes tiempo, ve a ver a Mara en el ayuntamiento y "
+"cómprame un poco más de pan."
 
 #: conversationlist_mikhail.json:mikhail_bread_continue
 msgid "Did you get my bread from Mara at the town hall yet?"
@@ -433,7 +435,7 @@ msgstr "¿Ya conseguiste mi pan de Mara en el ayuntamiento?"
 
 #: conversationlist_mikhail.json:mikhail_bread_continue:0
 msgid "Yes, here you go."
-msgstr "Si, aqui tienes."
+msgstr "Sí, aquí tienes."
 
 #: conversationlist_mikhail.json:mikhail_bread_continue:1
 #: conversationlist_mikhail.json:mikhail_rats_continue:1
@@ -467,7 +469,9 @@ msgstr "No, aún no."
 
 #: conversationlist_mikhail.json:mikhail_bread_complete
 msgid "Thanks a lot, now I can make my breakfast. Here, take these coins for your help."
-msgstr "Muchas gracias, ahora puedo hacer mi desayuno. Aquí, toma estas monedas por tu ayuda."
+msgstr ""
+"Muchas gracias; ahora puedo hacerme el desayuno. Ten, toma estas monedas por "
+"tu ayuda."
 
 #: conversationlist_mikhail.json:mikhail_bread_complete2
 msgid "Thanks for the bread earlier."
@@ -1037,19 +1041,21 @@ msgstr "Si, le encontré. Se esconde entre unos árboles al este."
 #: conversationlist_crossglen_leta.json:leta_oromir1:3
 #: conversationlist_crossglen_leta.json:leta_oromir1:4
 msgid "[Lie] I have no idea."
-msgstr ""
+msgstr "[Mentir] No tengo ni idea."
 
 #: conversationlist_crossglen_leta.json:leta_oromir1:5
 msgid "He's found a new hiding spot."
-msgstr ""
+msgstr "Él ha encontrado un nuevo escondite."
 
 #: conversationlist_crossglen_leta.json:leta_oromir1:6
 msgid "He's found another new hiding spot. Give him credit, he is great at avoiding work."
 msgstr ""
+"Él ha encontrado un nuevo escondite. Hay que reconocérselo: es hábil para "
+"evadir el trabajo."
 
 #: conversationlist_crossglen_leta.json:leta_oromir1:7
 msgid "He's in your basement."
-msgstr ""
+msgstr "Él está en tu sótano."
 
 #: conversationlist_crossglen_leta.json:leta_oromir2
 #: conversationlist_brimhaven_2.json:leta_oromir1_trees_help
@@ -1103,7 +1109,7 @@ msgstr "[Mientes] De acuerdo."
 
 #: conversationlist_crossglen_leta.json:oromir2:1
 msgid "Your secret is safe with me."
-msgstr ""
+msgstr "Tu secreto está seguro conmigo."
 
 #: conversationlist_crossglen_odair.json:odair1
 msgid "Oh, it's you. You with that brother of yours. Always causing trouble."
@@ -6532,7 +6538,7 @@ msgstr "En realidad, yo te dije que estaría negro como el carbón. Buen trabajo
 
 #: conversationlist_bwm_agent_3.json:bwm_agent_3_1
 msgid "Hello. You made it here, good."
-msgstr "Hola.  Lo hiciste aquí, bien."
+msgstr "Hola. Lo hiciste aquí, bien."
 
 #: conversationlist_bwm_agent_3.json:bwm_agent_3_1:0
 msgid "I talked to some people in the village Prim. They had some interesting things to say about Blackwater mountain."
@@ -7778,7 +7784,7 @@ msgstr "Lo eliminaré, pero trataré de conseguir una solución pacífica a todo
 #: conversationlist_prim_guthbered.json:guthbered_lookforsigns_10:1
 #: conversationlist_blackwater_harlenn.json:harlenn_lookforsigns_10:1
 msgid "Very well. He is as good as dead."
-msgstr "Muy bien.  Es como si estuviera muerto."
+msgstr "Muy bien. Es como si estuviera muerto."
 
 #: conversationlist_prim_guthbered.json:guthbered_workingforbwm_2
 msgid "My sources from inside the Blackwater mountain settlement tell me you are working for them."
@@ -9645,7 +9651,9 @@ msgstr "Avispas estúpidas..."
 
 #: conversationlist_hadracor.json:woodcutter_2
 msgid "Stay away from the road to the west, for it leads to Carn Tower. You most certainly do not want to go there."
-msgstr "Mantente alejado de la carretera hacia el oeste,  conduce a Carn Tower y te afirmo que no quieres ir allí."
+msgstr ""
+"Mantente alejado de la carretera hacia el oeste, conduce a Carn Tower y te "
+"afirmo que no quieres ir allí."
 
 #: conversationlist_hadracor.json:woodcutter_1
 msgid "When travelling, keep to the roads. Veer off course and you might find yourself in danger."
@@ -10302,7 +10310,9 @@ msgstr "Hoy solo he visto a algún animal de granja..."
 
 #: conversationlist_minarra.json:minarra_first_5
 msgid "I handle the equipment storage for us guards here in the Crossroads guardhouse, and I keep a lookout of the surrounding areas."
-msgstr "Yo me ocupo del almacenamiento de los equipos de los guardias aquí en el cuartel  de Crossroads, y vigilo las áreas circundantes."
+msgstr ""
+"Yo me ocupo del almacenamiento de los equipos de los guardias aquí en el "
+"cuartel de Crossroads, y vigilo las áreas circundantes."
 
 #: conversationlist_minarra.json:minarra_first_5:1
 msgid "Have you seen anything interesting lately?"
@@ -10406,7 +10416,7 @@ msgstr "Viajé hacia el oeste y encontré un grupo de hombres, pero no coincidí
 #: conversationlist_minarra.json:minarra_look_1:3
 #: conversationlist_gandoren.json:gandoren_deliver_1:5
 msgid "I'd rather talk about the troubles in Loneford that you had mentioned."
-msgstr ""
+msgstr "Prefiero hablar sobre los problemas en Loneford que has mencionado."
 
 #: conversationlist_minarra.json:minarra_look_2
 msgid "Good. Return to me as soon as you have anything to report. We would really like to recover those three pieces of the painting they stole."
@@ -10678,7 +10688,8 @@ msgstr "Gracias por escuchar nuestra versión de la historia."
 
 #: conversationlist_rogorn.json:rogorn_story_r_9:0
 msgid "What now? I was sent here to find you by some guards in the Crossroads guardhouse."
-msgstr "¿Y ahora qué? Me enviaron a buscarte unos guardias del cuartel  de Crossroads."
+msgstr ""
+"¿Y ahora qué? Me enviaron a buscarte unos guardias del cuartel de Crossroads."
 
 #: conversationlist_rogorn.json:rogorn_story_r_10
 msgid "You tell those guards that you searched for us, but did not find anyone."
@@ -12258,10 +12269,14 @@ msgstr "Este no es lugar para un chico como tú. Creo que es mejor que te vayas 
 #: conversationlist_loneford_4.json:loneford_tavern_patron:0
 msgid "I met a man named Forlin who recomended that I speak with you in regards to a possible murder investigation that I am conducting."
 msgstr ""
+"Conocí a un hombre llamado Forlin que me recomendó que hablara contigo sobre "
+"una posible investigación de asesinato que estoy llevando a cabo."
 
 #: conversationlist_loneford_4.json:loneford_tavern_patron:1
 msgid "I did as you suggested and found the scene of a murder and I found this glove."
 msgstr ""
+"Hice lo que sugeriste y encontré la escena de un asesinato y encontré este "
+"guante."
 
 #: conversationlist_pwcave.json:iqhan_greeter
 msgid "Get away! No! Turn back while you still can!"
@@ -12684,7 +12699,7 @@ msgstr "Algo huele mal aquí. Mejor no me involucro en esto."
 
 #: conversationlist_algangror.json:algangror_4
 msgid "You see, I have this slight problem with ... ahem ... vermin."
-msgstr "Verás, tengo un pequeño problema con.. umm..  unas sabandijas."
+msgstr "Verás, tengo un pequeño problema con... umm... unas sabandijas."
 
 #: conversationlist_algangror.json:algangror_5
 msgid "Always sneaking around, always trying to cause mischief."
@@ -12740,7 +12755,9 @@ msgstr "He decidido no ayudarte con tus roedores."
 
 #: conversationlist_algangror.json:algangror_return_2
 msgid "He he. I bet you sure showed them. Excellent. Thank you for ... ahem ... helping me."
-msgstr "Je, je.  Apuesto a que les diste una lección. Excelente. Gracias por .... ejem... ayudarme."
+msgstr ""
+"Je, je. Apuesto a que les diste una lección. Excelente. Gracias por .... "
+"ejem... ayudarme."
 
 #: conversationlist_algangror.json:algangror_return_3
 msgid "Those rodents have really been bothering me. Good thing I managed to catch some of them. He he."
@@ -14112,7 +14129,8 @@ msgstr "Klatam ur turum Kazaul'te"
 
 #: conversationlist_toszylae_guard.json:toszylae_guard_3_1:3
 msgid "Klaatu ... verata ... n ... nick... [hide the rest in a well-timed cough]."
-msgstr "Klaatu .... verata ... n...  nick.... [escondes el resto en una tos oportuna]."
+msgstr ""
+"Klaatu .... verata ... n... nick.... [escondes el resto en una tos oportuna]."
 
 #: conversationlist_toszylae_guard.json:toszylae_guard_4
 msgid "Kulum Kazaul."
@@ -18206,7 +18224,7 @@ msgstr "[REVIEW][REVIEW]Enseguida vuelvo."
 #: conversationlist_fayvara.json:fayvara1_6:4
 #: conversationlist_fayvara.json:fayvara1_14:4
 msgid "I'll be right back."
-msgstr ""
+msgstr "Vuelvo enseguida."
 
 #: conversationlist_falothen.json:falothen1_7_2hs
 #: conversationlist_falothen.json:falothen1_2nd_2hs0
@@ -18598,15 +18616,19 @@ msgstr "¿Qué tipo de armadura te interesa?"
 
 #: conversationlist_fayvara.json:fayvara1_14:0
 msgid "Tell me more about shields."
-msgstr ""
+msgstr "Cuéntame más sobre escudos."
 
 #: conversationlist_fayvara.json:fayvara1_2nd_s0
 msgid "Shields can be used in combination with your regular weapon, to block attacks from your opponent."
 msgstr ""
+"Los escudos se pueden usar en combinación con tu arma habitual para bloquear "
+"los ataques de tu oponente."
 
 #: conversationlist_fayvara.json:fayvara1_2nd_s1
 msgid "I can teach you to better withstand attacks using a shield, so that you don't take as much damage while using them."
 msgstr ""
+"Puedo enseñarte a resistir mejor los ataques usando un escudo, para que no "
+"sufras tanto daño mientras los usas."
 
 #: conversationlist_fayvara.json:fayvara1_2nd_s1:0
 msgid "Sounds good. Teach me about shields. Here are two Oegyth crystals and 6000 gold as payment."
@@ -19846,7 +19868,7 @@ msgstr "Teehee. Tienes un aspecto raro."
 
 #: conversationlist_lodar0g.json:lodar0_g1
 msgid "He he, but funny not enough to let you pass."
-msgstr "Je je,  pero no lo suficientemente gracioso como para dejarte pasar."
+msgstr "Je je, pero no lo suficientemente gracioso como para dejarte pasar."
 
 #: conversationlist_lodar0g.json:lodar0_g2
 msgid "Master says only ones with password can pass. You have password?"
@@ -21330,7 +21352,7 @@ msgstr "Me dijeron que puedes conseguirme algo de hongos Spotted Hornbeam."
 
 #: conversationlist_fallhaven_potions.json:fallhaven_potions:3
 msgid "Can you sell me a special crystal vial?"
-msgstr ""
+msgstr "¿Puedes venderme un vial de cristal especial?"
 
 #: conversationlist_fallhaven_potions.json:fallhaven_potions2
 msgid "Oh yes. Really disgusting smell, they have. But good for making potions."
@@ -21392,7 +21414,7 @@ msgstr "[REVIEW]Aquí, tengo suficientes ingredientes para diez pociones."
 
 #: conversationlist_fallhaven_potions.json:fallhaven_pot_antifoodp5:5
 msgid "Here, I have enough of those ingredients for ten potions."
-msgstr ""
+msgstr "Toma, tengo suficientes de esos ingredientes para diez pociones."
 
 #: conversationlist_fallhaven_potions.json:fallhaven_pot_antifoodp7
 msgid "Well, animal hair can probably be found on any beast here outside of Fallhaven. I heard some hunters found a pack of wolves a bit south of here."
@@ -24004,7 +24026,7 @@ msgstr "Dejarlo sin cambios"
 
 #: conversationlist_guynmart.json:guynmart_s_gate1_50
 msgid "This ... is ... hard ... work..."
-msgstr "Esto .... es...  un duro... trabajo...."
+msgstr "Esto .... es... un duro... trabajo...."
 
 #: conversationlist_guynmart.json:guynmart_s_gate1_52
 msgid "I should have asked a guard to do it."
@@ -24446,7 +24468,7 @@ msgstr "Nunca jugaría por dinero."
 #: conversationlist_guynmart_npc.json:guynmart_player_20:2
 #: conversationlist_brimhaven.json:blackjack_bet:4
 msgid "Please explain the rules to me."
-msgstr ""
+msgstr "Por favor, explícame las reglas."
 
 #: conversationlist_guynmart_npc.json:guynmart_player_30
 msgid "I will draw a card, and you have to guess whether it is Red or Black."
@@ -30200,7 +30222,7 @@ msgstr "No hables más. ¡Vete ahora mismo!"
 
 #: conversationlist_stoutford_combined.json:erwyn_skel_band
 msgid "Please don't disturb. We have to practice."
-msgstr ""
+msgstr "Por favor, no molestes. Tenemos que practicar."
 
 #: conversationlist_bugfix_0_7_4.json:mountainlake0_sign
 msgid "You can see no way to descend the cliffs from here."
@@ -30531,6 +30553,12 @@ msgid ""
 "One of our veteran spies, Dunla, is disguised as a vendor in Vilegard Tavern.\n"
 "And finally we have Fanamor, watching what is happening around Crossroads Guardhouse. Search for them in this order."
 msgstr ""
+"Bien. Tenemos a tres personas para el trabajo.\n"
+"La primera es una espía en Crossglen, Leta. Creo que la conoces.\n"
+"Uno de nuestros espías veteranos, Dunla, está camuflado como vendedor en la "
+"Taberna Vilegard.\n"
+"Y por último tenemos a Fanamor, vigilando lo que ocurre en el Cruce "
+"Guardhouse. Búscalos en ese orden."
 
 #: conversationlist_omicronrg9.json:troublemaker_guild_8b
 msgid "Hmpf. Go kill some beetles with your strength!"
@@ -30541,12 +30569,14 @@ msgid ""
 "Ah! I almost forgot. You have to say the password if you want them to give you the journal.\n"
 "The password is \"You are no one. No one knows you. No one has seen you.\" Good luck."
 msgstr ""
-"¡Ah! Casi lo olvido. Tienes que decir la contraseña si quieres que te den el diario.\n"
-"La contraseña es: \"No eres nadie. Nadie te conoce. Nadie te ha visto.\" Buena suerte."
+"¡Ah! Casi lo olvido. Tienes que decir la contraseña si quieres que te den el "
+"diario.\n"
+"La contraseña es: «No eres nadie. Nadie te conoce. Nadie te ha visto». Buena "
+"suerte."
 
 #: conversationlist_omicronrg9.json:troublemaker_guild_9:0
 msgid "I will keep that in mind. Bye."
-msgstr "Lo tendré en cuenta. Adios."
+msgstr "Lo tendré en cuenta. Adiós."
 
 #: conversationlist_omicronrg9.json:dunla_guild_1
 msgid "What? I don't know what you are talking about."
@@ -30567,15 +30597,15 @@ msgstr "Lo siento, no tengo más información para ti."
 
 #: conversationlist_omicronrg9.json:dunla_guild_2b:1
 msgid "Ok, bye."
-msgstr "Vale, adios."
+msgstr "Vale, adiós."
 
 #: conversationlist_omicronrg9.json:fanamor_guild_1
 msgid "Finally! I was getting tired of waiting here killing these beasts ..."
-msgstr "!Al fin! Ya estaba cansado de esperar matando bestias..."
+msgstr "¡Al fin! Ya me había cansado de esperar matando bestias..."
 
 #: conversationlist_omicronrg9.json:fanamor_guild_2
 msgid "Take this. All I've seen is written here ..."
-msgstr "Ten. Todo lo qu he visto está escrito aquí..."
+msgstr "Ten. Todo lo que he visto está escrito aquí..."
 
 #: conversationlist_omicronrg9.json:feygard_scout_1
 msgid "Halt! You have been caught!"
@@ -30609,7 +30639,7 @@ msgstr "¡No sin luchar!"
 
 #: conversationlist_omicronrg9.json:feygard_scout_3:1
 msgid "How dare you! Prepare to die, useless soldier!"
-msgstr "¡Cómo te atreves! Prepárate a morir, ¡soldado inútil!"
+msgstr "¡Cómo te atreves! ¡Prepárate a morir, soldado inútil!"
 
 #: conversationlist_omicronrg9.json:feygard_scout_3:2
 #: conversationlist_omicronrg9.json:rebthief2_g03_1:2
@@ -30644,7 +30674,9 @@ msgstr "Umar me envía para conseguir tu diario."
 
 #: conversationlist_omicronrg9.json:leta_guild_3
 msgid "Here. Make sure you don't raise any suspicion on your future jobs. Bye kid."
-msgstr "Aquí. Asegúrate de no levantar sospechas para futuros trabajos. Adios chaval."
+msgstr ""
+"Aquí. Asegúrate de no levantar sospechas para futuros trabajos. Adiós, "
+"chaval."
 
 #: conversationlist_omicronrg9.json:leta_guild_1b
 msgid "I gave you all the information I have gathered. Now leave me alone."
@@ -30652,7 +30684,7 @@ msgstr "Te he dado toda la información que he reunido. Ahora déjame."
 
 #: conversationlist_omicronrg9.json:fanamor_guild_5
 msgid "Wow, you ... you really got rid of him ...."
-msgstr "Oye, tú... pues si que te has librado de él..."
+msgstr "Oye, tú... pues sí que te has librado de él..."
 
 #: conversationlist_omicronrg9.json:fanamor_guild_5:0
 msgid "Did you doubt me?"
@@ -30661,94 +30693,103 @@ msgstr "¿Dudas de mí?"
 #: conversationlist_omicronrg9.json:fanamor_guild_5:1
 msgid "Yes, even though he was strong, as we can expect of Feygard soldiers ..."
 msgstr ""
+"Sí, a pesar de que era fuerte, como se puede esperar de los soldados Feygard "
+"..."
 
 #: conversationlist_omicronrg9.json:fanamor_guild_5a
 msgid "Watch out! Behind you!"
-msgstr ""
+msgstr "¡Cuidado! ¡Detrás de ti!"
 
 #: conversationlist_omicronrg9.json:fanamor_guild_5a:0
 msgid "What ...?"
-msgstr ""
+msgstr "¿Qué...?"
 
 #: conversationlist_omicronrg9.json:fanamor_guild_6
 msgid "Argh ... The Feygard Scout hit me badly. I have not much time ... I am bleeding very heavily."
 msgstr ""
+"Argh ... El Explorador Feygard me hirió gravemente. No tengo mucho tiempo "
+"... Estoy sangrando mucho."
 
 #: conversationlist_omicronrg9.json:fanamor_guild_6:0
 msgid "I don't think so."
-msgstr ""
+msgstr "No lo creo."
 
 #: conversationlist_omicronrg9.json:fanamor_guild_6:1
 msgid "Can I help?"
-msgstr ""
+msgstr "¿Puedo ayudar?"
 
 #: conversationlist_omicronrg9.json:fanamor_guild_7a
 msgid "Yes, I am. I have no time for jokes!"
-msgstr ""
+msgstr "Por supuesto. ¡No hay tiempo para chistes!"
 
 #: conversationlist_omicronrg9.json:fanamor_guild_7b
 msgid "I need a bandage quickly, or I will never return to the guild house."
-msgstr ""
+msgstr "Necesito un vendaje rápidamente, o nunca volveré a la casa del gremio."
 
 #: conversationlist_omicronrg9.json:fanamor_guild_7b:0
 msgid "Yeah, OK."
-msgstr ""
+msgstr "Sí, vale."
 
 #: conversationlist_omicronrg9.json:fanamor_guild_7b:1
 msgid "I will find a bandage for you, don't worry."
-msgstr ""
+msgstr "Te buscaré un vendaje; no te preocupes."
 
 #: conversationlist_omicronrg9.json:fanamor_guild_8
 msgid "Have you brought me that bandage?"
-msgstr ""
+msgstr "¿Me has conseguido el vendaje?"
 
 #: conversationlist_omicronrg9.json:fanamor_guild_8:0
 msgid "Yes, I have it!"
-msgstr ""
+msgstr "¡Sí, lo tengo!"
 
 #: conversationlist_omicronrg9.json:fanamor_guild_8:1
 msgid "I'm still searching."
-msgstr ""
+msgstr "Sigo buscándolo."
 
 #: conversationlist_omicronrg9.json:fanamor_guild_9b
 msgid "Hurry up! I do not have much time ..."
-msgstr ""
+msgstr "¡Deprisa! No me queda mucho tiempo..."
 
 #: conversationlist_omicronrg9.json:fanamor_guild_0
 msgid "(You look away when you see the corpse of Fanamor. Anklebiters probably had something to do with this horrible event.)"
 msgstr ""
+"(Miras a otro lado cuando ves el cadáver de Fanamor. Los \"mordedores de "
+"tobillos\" probablemente tuvieron algo que ver con este horrible suceso.)"
 
 #: conversationlist_omicronrg9.json:fanamor_guild_0:0
 msgid "[Bury the corpse.]"
-msgstr ""
+msgstr "[Entierras el cadáver.]"
 
 #: conversationlist_omicronrg9.json:thoronir_guild_1
 msgid "What's the matter, my child?"
-msgstr ""
+msgstr "¿Qué te pasa, hijo mío?"
 
 #: conversationlist_omicronrg9.json:thoronir_guild_1:0
 msgid "Ehm ... My father has cut himself with an axe, and we don't have any bandages!"
 msgstr ""
+"Esto... Mi padre se ha cortado con un hacha, ¡y no tenemos ningún vendaje!"
 
 #: conversationlist_omicronrg9.json:thoronir_guild_1:1
 msgid "Fanamor, a member of Thieves' Guild, is severely wounded. Please give me a bandage for her!"
 msgstr ""
+"Fanamor, un miembro del gremio de ladrones, está gravemente herida. ¡Por "
+"favor, dame una venda para ella!"
 
 #: conversationlist_omicronrg9.json:thoronir_guild_2a
 msgid "Let me see ..."
-msgstr ""
+msgstr "A ver..."
 
 #: conversationlist_omicronrg9.json:thoronir_guild_3
 msgid "This is what I have, take it. I expect this will be useful."
-msgstr ""
+msgstr "Tengo esto; llévatelo. Espero que sea útil."
 
 #: conversationlist_omicronrg9.json:thoronir_guild_3:0
 msgid "May the Shadow walk with you, my friend."
-msgstr ""
+msgstr "Que la Sombra te acompañe."
 
 #: conversationlist_omicronrg9.json:thoronir_guild_3:1
 msgid "Thank you, I won't forget this!"
-msgstr ""
+msgstr "¡Gracias! No lo olvidaré."
 
 #: conversationlist_omicronrg9.json:fanamor_guild_9a
 msgid ""
@@ -30756,42 +30797,50 @@ msgid ""
 "\n"
 "... I think I will be able ... to move in a few minutes. See you at the Guild. Thank you kid."
 msgstr ""
+"(Ayudas a Fanamor a poner el vendaje en la herida)\n"
+"\n"
+"... Creo que podré ... moverme en unos minutos. Nos vemos en el Gremio. "
+"Gracias niño."
 
 #: conversationlist_omicronrg9.json:fanamor_guild_9a:0
 msgid "I'm glad to hear that. Bye."
-msgstr ""
+msgstr "Me alegra escucharlo. Adiós."
 
 #: conversationlist_omicronrg9.json:fanamor_guild_9a:1
 msgid "Nothing for me."
-msgstr ""
+msgstr "Nada para mi."
 
 #: conversationlist_omicronrg9.json:troublemaker_guild_10
 msgid "How is the mission going?"
-msgstr ""
+msgstr "¿Cómo va la misión?"
 
 #: conversationlist_omicronrg9.json:troublemaker_guild_10:0
 msgid "I've brought all the journals."
-msgstr ""
+msgstr "He traído todos los diarios."
 
 #: conversationlist_omicronrg9.json:troublemaker_guild_10:1
 msgid "I have the journals, but one of your spies, Fanamor, was killed by a Feygard scout."
 msgstr ""
+"Tengo los diarios, pero uno de tus espías, Fanamor, fue asesinado por un "
+"explorador Feygard."
 
 #: conversationlist_omicronrg9.json:troublemaker_guild_10:2
 msgid "I gave you the journals, so where's my reward?"
-msgstr ""
+msgstr "Te di los diarios, así que, ¿dónde está mi recompensa?"
 
 #: conversationlist_omicronrg9.json:troublemaker_guild_10:3
 msgid "Almost done."
-msgstr ""
+msgstr "Casi hecho."
 
 #: conversationlist_omicronrg9.json:troublemaker_guild_10:4
 msgid "Well, but can I take a look at your supplies again?"
-msgstr ""
+msgstr "Bueno, pero ¿puedo echar un vistazo a vuestros suministros de nuevo?"
 
 #: conversationlist_omicronrg9.json:troublemaker_guild_11a
 msgid "Well done kid! You can now consider yourself skilled enough to be a part of this guild."
 msgstr ""
+"¡Bien hecho chico! Ahora puedes considerarte lo suficientemente hábil como "
+"para formar parte de este gremio."
 
 #: conversationlist_omicronrg9.json:troublemaker_guild_11a:0
 #: conversationlist_omicronrg9.json:umar_guild03_17a:0
@@ -30799,27 +30848,27 @@ msgstr ""
 #: conversationlist_brimhaven2.json:brv_teacher_124_20:0
 #: conversationlist_brimhaven2.json:brv_teacher_152_90:0
 msgid "Thank you!"
-msgstr ""
+msgstr "¡Gracias!"
 
 #: conversationlist_omicronrg9.json:troublemaker_guild_11a:1
 msgid "Yes .... So where is my reward?"
-msgstr ""
+msgstr "Sí .... Entonces, ¿dónde está mi recompensa?"
 
 #: conversationlist_omicronrg9.json:troublemaker_guild_11b
 msgid "Well, that is the price of being one of us. There's always risk."
-msgstr ""
+msgstr "Bueno, ese es el precio de ser uno de nosotros. Siempre hay riesgo."
 
 #: conversationlist_omicronrg9.json:troublemaker_guild_11c
 msgid "Return to me when you are done."
-msgstr ""
+msgstr "Vuelve a mí cuando hayas terminado."
 
 #: conversationlist_omicronrg9.json:troublemaker_guild_11c:0
 msgid "OK, I will."
-msgstr ""
+msgstr "Está bien, lo haré."
 
 #: conversationlist_omicronrg9.json:troublemaker_guild_11c:1
 msgid "Can you tell me again what I'm supposed to do?"
-msgstr ""
+msgstr "¿Puedes decirme de nuevo qué se supone que debo hacer?"
 
 #: conversationlist_omicronrg9.json:troublemaker_guild_12b
 msgid ""
@@ -30828,189 +30877,218 @@ msgid ""
 "One of our veteran spies, Dunla, is disguised as a vendor in Vilegard Tavern.\n"
 "And finally we have Fanamor, watching what is happening around Crossroads Guardhouse. Search for them in this order."
 msgstr ""
+"Tienes que recuperar la información de nuestros espías.\n"
+"El primero es un espía en Crossglen, Leta. Creo que la conoces.\n"
+"Una de nuestras espías veteranas, Dunla, está disfrazada de vendedora en la "
+"Taberna Vilegard.\n"
+"Y finalmente tenemos a Fanamor, vigilando lo que pasa alrededor del cuartel "
+"de Crossglen. Búscalos en ese orden."
 
 #: conversationlist_omicronrg9.json:troublemaker_guild_13b
 msgid "And don't forget the password: You are no one. No one knows you. No one has seen you."
 msgstr ""
+"Y no olvides la contraseña: No eres nadie. Nadie te conoce. Nadie te ha "
+"visto."
 
 #: conversationlist_omicronrg9.json:troublemaker_guild_13b:0
 msgid "Understood, bye."
-msgstr ""
+msgstr "Entendido; adiós."
 
 #: conversationlist_omicronrg9.json:troublemaker_guild_12a
 msgid "You should talk with Umar. Maybe he has another task ... one that's more in your line of work, you know."
 msgstr ""
+"Deberías hablar con Umar. Tal vez tenga otra tarea ... una que esté más en "
+"tu línea de trabajo, ya sabes."
 
 #: conversationlist_omicronrg9.json:troublemaker_guild_12a:0
 msgid "Sure, I will talk to him."
-msgstr ""
+msgstr "Seguro, hablaré con él."
 
 #: conversationlist_omicronrg9.json:troublemaker_guild_12a:1
 msgid "At least I got some gold. Bye!"
-msgstr ""
+msgstr "Al menos obtuve algo de oro. ¡Adiós!"
 
 #: conversationlist_omicronrg9.json:troublemaker_guild_13a
 msgid "Hi again, kid. What do you want?"
-msgstr ""
+msgstr "Hola de nuevo, chico. ¿Qué quieres?"
 
 #: conversationlist_omicronrg9.json:troublemaker_guild_13a:0
 msgid "OK ... It's done. She's alright, and probably eating some bread now."
 msgstr ""
+"De acuerdo... Está hecho. Ella está bien, y probablemente comiendo pan ahora."
 
 #: conversationlist_omicronrg9.json:troublemaker_guild_13a:1
 msgid "I've dealt with the lady."
-msgstr ""
+msgstr "Me he encargado de la chica."
 
 #: conversationlist_omicronrg9.json:troublemaker_guild_13a:2
 msgid "I still have to take our guest to her quarters."
-msgstr ""
+msgstr "Aún tengo que llevar a nuestra invitada a sus habitaciones."
 
 #: conversationlist_omicronrg9.json:troublemaker_guild_13a:3
 msgid "I have to ...(you look at Ambelie) find a better place for her."
-msgstr ""
+msgstr "Tengo que ... (miras a Ambelie) encontrar un lugar mejor para ella."
 
 #: conversationlist_omicronrg9.json:troublemaker_guild_13a:4
 msgid "Can I take a look at the Guild's current supplies?"
-msgstr ""
+msgstr "¿Puedo echar un vistazo a los suministros actuales del gremio?"
 
 #: conversationlist_omicronrg9.json:fanamor_guild_10
 msgid "Hello, friend! Thank you for all you've done for me."
-msgstr ""
+msgstr "¡Hola amigo! Gracias por todo lo que has hecho por mí."
 
 #: conversationlist_omicronrg9.json:fanamor_guild_10:0
 msgid "It was nothing. Bye."
-msgstr ""
+msgstr "No fue nada. Adiós."
 
 #: conversationlist_omicronrg9.json:fanamor_guild_10:1
 msgid "It's my job. Nice to see you survived those anklebiters ..."
 msgstr ""
+"Es mi trabajo. Es bueno ver que sobreviviste a esos mordedores de tobillos "
+"..."
 
 #: conversationlist_omicronrg9.json:umar_guild_4b
 msgid "What have you decided?"
-msgstr ""
+msgstr "¿Qué has decidido?"
 
 #: conversationlist_omicronrg9.json:umar_guild_4b:0
 msgid "I will take your opportunity!"
-msgstr ""
+msgstr "¡Aprovecharé tu oportunidad!"
 
 #: conversationlist_omicronrg9.json:umar_guild_4b:1
 msgid "I'm still confused, sorry."
-msgstr ""
+msgstr "Todavía estoy confundido, lo siento."
 
 #: conversationlist_omicronrg9.json:umar_guild02_1
 msgid "Excellent, young friend. Consider yourself a member of our Guild."
-msgstr ""
+msgstr "Excelente, joven amigo. Considérese miembro de nuestro gremio."
 
 #: conversationlist_omicronrg9.json:umar_guild02_1:0
 msgid "Meh, that was nothing special. Bye."
-msgstr ""
+msgstr "Bah, eso no fue nada especial. Adiós."
 
 #: conversationlist_omicronrg9.json:umar_guild02_1:1
 msgid "OK, nice to see you again."
-msgstr ""
+msgstr "Bien, me alegro de verte de nuevo."
 
 #: conversationlist_omicronrg9.json:umar_guild02_1:2
 msgid "Hah, what an honor! It has been so, so difficult ...."
-msgstr ""
+msgstr "¡Ja, qué honor! Ha sido tan, tan difícil ..."
 
 #: conversationlist_omicronrg9.json:umar_guild02_2
 msgid "I detect a certain sarcasm in your words."
-msgstr ""
+msgstr "Detecto cierto sarcasmo en tus palabras."
 
 #: conversationlist_omicronrg9.json:umar_guild02_2:0
 msgid "No, no .... Never mind, see you later."
-msgstr ""
+msgstr "No, no... No importa, nos vemos luego."
 
 #: conversationlist_omicronrg9.json:umar_guild02_2:1
 msgid "That's maybe because I am trying to be sarcastic ..."
-msgstr ""
+msgstr "Eso es quizás porque estoy tratando de ser sarcástico ..."
 
 #: conversationlist_omicronrg9.json:umar_guild02_3:0
 msgid "Just give me a high-risk job, please."
-msgstr ""
+msgstr "Solo dame un trabajo de alto riesgo, por favor."
 
 #: conversationlist_omicronrg9.json:umar_guild02_3:1
 msgid "I mean my last job was a piece of cake. I need something more exciting!"
 msgstr ""
+"Quiero decir que mi último trabajo fue pan comido. ¡Necesito algo más "
+"emocionante!"
 
 #: conversationlist_omicronrg9.json:umar_guild02_4
 msgid "If you want me to give you a more difficult task, then I am happy to do so."
 msgstr ""
+"Si quieres que te dé una tarea más difícil, entonces estoy encantado de "
+"hacerlo."
 
 #: conversationlist_omicronrg9.json:umar_guild02_4:0
 msgid "Well, so?"
-msgstr ""
+msgstr "¿Bueno, entonces?"
 
 #: conversationlist_omicronrg9.json:umar_guild02_4:1
 msgid "OK, in that case tell me what it is."
-msgstr ""
+msgstr "OK, en ese caso dime qué es."
 
 #: conversationlist_omicronrg9.json:umar_guild02_5a
 msgid "But first I have to clarify something. You need to be more careful not to give information to outsiders about the Thieves Guild."
 msgstr ""
+"Pero primero tengo que aclarar algo. Debes tener más cuidado de no dar "
+"información a forasteros sobre el gremio de ladrones."
 
 #: conversationlist_omicronrg9.json:umar_guild02_5a:0
 msgid "Did I?"
-msgstr ""
+msgstr "¿Lo hice?"
 
 #: conversationlist_omicronrg9.json:umar_guild02_5a:1
 #: conversationlist_omicronrg9.json:umar_guild02_5c:1
 msgid "You're right. It will not happen again."
-msgstr ""
+msgstr "Tienes razón. No volverá a pasar."
 
 #: conversationlist_omicronrg9.json:umar_guild02_5b
 msgid "Yes, you mentioned Fanamor's membership to Thoronir."
-msgstr ""
+msgstr "Sí, mencionaste la membresía de Fanamor en Thoronir."
 
 #: conversationlist_omicronrg9.json:umar_guild02_5c
 msgid "Fortunately, Thoronir will keep quiet, as he certainly does not want to give up our donations."
 msgstr ""
+"Afortunadamente, Thoronir guardará silencio, ya que ciertamente no quiere "
+"renunciar a nuestras donaciones."
 
 #: conversationlist_omicronrg9.json:umar_guild02_5d
 msgid "You still have many things to learn, young apprentice."
-msgstr ""
+msgstr "Aún te falta mucho por conocer, joven aprendiz."
 
 #: conversationlist_omicronrg9.json:umar_guild02_5z
 msgid "Well, before I can give you a very demanding job, I need you to do another ... retrieval task."
 msgstr ""
+"Bueno, antes de que pueda darte un trabajo muy exigente, necesito que hagas "
+"otra ... tarea de recuperación."
 
 #: conversationlist_omicronrg9.json:umar_guild02_5z:0
 msgid "Anything for the glory o... Oops, I mean OK"
-msgstr ""
+msgstr "Cualquier cosa por la gloria... Ups, quiero decir, OK"
 
 #: conversationlist_omicronrg9.json:umar_guild02_5z:1
 msgid "Sigh. If you insist ..."
-msgstr ""
+msgstr "Bah. Ya que insistes..."
 
 #: conversationlist_omicronrg9.json:umar_guild02_5z:2
 msgid "Hmm, sounds boring. I decline."
-msgstr ""
+msgstr "Umm, suena aburrido. Renuncio."
 
 #: conversationlist_omicronrg9.json:umar_guild02_6a
 msgid "Excellent. I warn you that this is not an ordinary retrieval. It's more like a ... kidnapping."
 msgstr ""
+"Excelente. Te advierto que esta no es una recogida ordinaria. Más bien es... "
+"un secuestro."
 
 #: conversationlist_omicronrg9.json:umar_guild02_6a:0
 msgid "Now that sounds more interesting."
-msgstr ""
+msgstr "Eso sí que suena interesante."
 
 #: conversationlist_omicronrg9.json:umar_guild02_6a:1
 msgid "Can you get to the point please?"
-msgstr ""
+msgstr "¿Podemos ir al grano, por favor?"
 
 #: conversationlist_omicronrg9.json:umar_guild02_6a:2
 msgid "Sounds too shady for me. I think I prefer to not do that task for now."
 msgstr ""
+"Suena demasiado turbio para mí. Creo que prefiero no hacer esa tarea por "
+"ahora."
 
 #: conversationlist_omicronrg9.json:umar_guild02_6b
 msgid "Just tell me when you want to do the job. Bye"
-msgstr ""
+msgstr "Sólo dime cuándo quieres hacer el trabajo. Adiós"
 
 #: conversationlist_omicronrg9.json:umar_guild_7
 msgid ""
 "OK, listen carefully.\n"
 "We have heard a noble woman has decided to travel outside Feygard."
 msgstr ""
+"OK, escucha con atención.\n"
+"Hemos escuchado que una mujer noble ha decidido viajar fuera de Feygard."
 
 #: conversationlist_omicronrg9.json:umar_guild02_8
 msgid ""
@@ -31018,196 +31096,238 @@ msgid ""
 "\n"
 "(You look around, trying to remember someone, but nothing comes to you)"
 msgstr ""
+"No es nada raro. Pero hemos descubierto que la mujer es la hija de Hertzsen "
+"Laumwill, patriarca de la familia Laumwill.\n"
+"\n"
+"(Miras alrededor, intentando recordar a alguien, pero no lo consigues)"
 
 #: conversationlist_omicronrg9.json:umar_guild02_9
 msgid "To help you understand, they are one of the richest Feygard families, very close to Lord Geomyr."
 msgstr ""
+"Para ayudarte a entender, son una de las familias Feygard más ricas, muy "
+"cercanas a Lord Geomyr."
 
 #: conversationlist_omicronrg9.json:umar_guild02_9:0
 msgid "OK, so what I have to do?"
-msgstr ""
+msgstr "Bien, ¿qué tengo que hacer?"
 
 #: conversationlist_omicronrg9.json:umar_guild02_9:1
 msgid "I ... understand. So what's my task?"
-msgstr ""
+msgstr "Yo... lo entiendo. Entonces, ¿cuál es mi tarea?"
 
 #: conversationlist_omicronrg9.json:umar_guild02_10
 msgid "I want you to bring the noble woman here, so that we can ask for a substantial ransom from her generous father."
 msgstr ""
+"Quiero que traigas a la mujer noble aquí, para que podamos pedir un "
+"sustancial rescate a su generoso padre."
 
 #: conversationlist_omicronrg9.json:umar_guild02_10:0
 msgid "Consider it done."
-msgstr ""
+msgstr "Considéralo hecho."
 
 #: conversationlist_omicronrg9.json:umar_guild02_10:1
 msgid "Where can I find this woman?"
-msgstr ""
+msgstr "¿Dónde encuentro a la mujer?"
 
 #: conversationlist_omicronrg9.json:umar_guild02_11a
 msgid "Great ... Before you go, I should tell you where she is."
-msgstr ""
+msgstr "Genial ... Antes de que te vayas, debería decirte dónde está."
 
 #: conversationlist_omicronrg9.json:umar_guild02_11b
 msgid "Scouts have seen the lady in the Foaming flask tavern. We do not want to be discovered, so act quietly. Guards are a problem though. It's up to you how you choose to solve the guards problem."
 msgstr ""
+"Los exploradores han visto a la dama en la taberna \"Foaming flask\" . No "
+"queremos que nos descubran, así que actúa con tranquilidad. Sin embargo, los "
+"guardias son un problema. Depende de tí cómo decides resolver el problema de "
+"los guardias."
 
 #: conversationlist_omicronrg9.json:umar_guild02_11b:0
 msgid "Yes. I understand."
-msgstr ""
+msgstr "Sí. Comprendo."
 
 #: conversationlist_omicronrg9.json:umar_guild02_11b:1
 msgid "Seems difficult, but whatever. I'll do it."
-msgstr ""
+msgstr "Parece difícil, pero da igual. Lo haré."
 
 #: conversationlist_omicronrg9.json:umar_guild02_12
 msgid "Good luck. Return to me when you're done."
-msgstr ""
+msgstr "Buena suerte. Regresa a mí cuando hayas terminado."
 
 #: conversationlist_omicronrg9.json:umar_guild02_12:0
 msgid "Wait, wait! How am I supposed to ..."
-msgstr ""
+msgstr "¡Espera! ¿Cómo se supone que voy a ..."
 
 #: conversationlist_omicronrg9.json:umar_guild02_12:1
 msgid "I will bring her, even if I have to eliminate Feygard's entire army!"
 msgstr ""
+"¡La traeré, incluso si tengo que eliminar a todo el ejército de Feygard!"
 
 #: conversationlist_omicronrg9.json:umar_guild02_13
 msgid "Use your tongue, young man. Sometimes it is more important than your sword skills."
 msgstr ""
+"Usa tu lengua, joven. A veces es más importante que tu habilidad con la "
+"espada."
 
 #: conversationlist_omicronrg9.json:umar_guild02_13:0
 msgid "Hah! I don't think so. But anyway, thank you for the advice."
-msgstr ""
+msgstr "¡Ah! No lo creo. Gracias por el consejo de todas formas."
 
 #: conversationlist_omicronrg9.json:umar_guild02_13:1
 msgid "I'll do that, thanks for the advice."
-msgstr ""
+msgstr "Lo haré, gracias por el consejo."
 
 #: conversationlist_omicronrg9.json:umar_guild02_14
 msgid "Remember that if you are discovered, you are no one. No one knows you. And of course, no one has seen you. You are now a member of the guild, so don't fail."
 msgstr ""
+"Recuerda que si te descubren, no eres nadie. Nadie te conoce. Y, por "
+"supuesto, nadie te ha visto. Ahora eres un miembro del gremio, así que no "
+"falles."
 
 #: conversationlist_omicronrg9.json:umar_guild02_14:0
 msgid "You still think I'm a novice, right? You're going to see that you're wrong!"
-msgstr ""
+msgstr "Todavía crees que soy un novato, ¿verdad? ¡Verás que te equivocas!"
 
 #: conversationlist_omicronrg9.json:umar_guild02_14:1
 msgid "Understood. Bye."
-msgstr ""
+msgstr "Entendido. Adiós."
 
 #: conversationlist_omicronrg9.json:umar_guild02_15
 msgid "No, I've told you all you need to know. Now leave me please, I've work to do."
 msgstr ""
+"No, ya te dije todo lo que necesitas saber. Ahora déjame, por favor, tengo "
+"trabajo que hacer."
 
 #: conversationlist_omicronrg9.json:ambelie_guild02_1
 msgid "Why? I don't know you, commoner. Why would I be willing to trust a savage looking kid?"
 msgstr ""
+"¿Por qué? No te conozco, plebeyo. ¿Por qué estaría dispuesto a creer a un "
+"niño con una pinta tan salvaje?"
 
 #: conversationlist_omicronrg9.json:ambelie_guild02_1:0
 msgid "But I'm not a commoner! I'm a ... Feygard spy. These clothes are my disguise!"
 msgstr ""
+"¡Pero que no soy un plebeyo! Soy un... espía de Feygard. ¡Esta ropa es "
+"porque voy de incógnito!"
 
 #: conversationlist_omicronrg9.json:ambelie_guild02_1:1
 msgid "I'm stronger than those smug guards."
-msgstr ""
+msgstr "Soy más fuerte que esos guardas engreídos."
 
 #: conversationlist_omicronrg9.json:ambelie_guild02_2
 msgid "Anyway, I prefer to stay in this place for now. Get away from me!"
-msgstr ""
+msgstr "De todas formas, prefiero estar aquí por ahora. ¡Aléjate de mí!"
 
 #: conversationlist_omicronrg9.json:ambelie_guild02_2:0
 msgid "Hmpf .... Goodbye"
-msgstr ""
+msgstr "Hmpf ... Adiós"
 
 #: conversationlist_omicronrg9.json:ff_captain_guild02_1
 msgid "What? I haven't been informed of that. Since you seem like an inexperienced kid, I don't believe you."
 msgstr ""
+"¿Qué? No me han informado de eso. Verás, pareces un chaval sin experiencia, "
+"así no te puedo creer."
 
 #: conversationlist_omicronrg9.json:ff_captain_guild02_1:0
 msgid "Ergh ... Mr Laumwill is grateful for your protection. However ... Ah! He has given this reward of 1000 gold for your efforts."
 msgstr ""
+"Ergh ... El Sr. Laumwill está agradecido por tu protección. Sin embargo ... "
+"ah! Te ha dado esta recompensa de 1000 de oro por tus esfuerzos."
 
 #: conversationlist_omicronrg9.json:ff_captain_guild02_1:1
 msgid "Trust me, I'm the one that delivered those swords from Gandoren to you!"
-msgstr ""
+msgstr "Créeme, ¡soy el que te entregó esas espadas de Gandoren!"
 
 #: conversationlist_omicronrg9.json:ff_captain_guild02_1:2
 msgid "(I would like to bribe the captain, but I need at least 1000 Gold) I will come back later."
 msgstr ""
+"(Me gustaría sobornar al capitán, pero al menos necesitaré 1000 de oro) "
+"Vendré más tarde."
 
 #: conversationlist_omicronrg9.json:ff_captain_guild02_2a
 msgid "Oh! What a considerable reward! OK, OK. Only Feygard people are so generous!"
 msgstr ""
+"¡Oh, qué recompensa tan valiosa! Sí, sí, ¡sólo la gente de Feygard es tan "
+"generosa!"
 
 #: conversationlist_omicronrg9.json:ff_captain_guild02_3
 msgid "I have to stay here to supervise my guards. They sometimes need educating about what to do. I assume you're able to escort her without problems?"
 msgstr ""
+"Tengo que quedarme aquí para supervisar a mis guardas. A veces necesitan que "
+"se les enseñe qué hacer. ¿Puedo asumir que la escoltarás sin problemas?"
 
 #: conversationlist_omicronrg9.json:ff_captain_guild02_3:0
 msgid "[Lie]For the glory of Feygard, I will!"
-msgstr ""
+msgstr "[Mientes] Por la gloria de Feygard, ¡lo haré!"
 
 #: conversationlist_omicronrg9.json:ff_captain_guild02_3:1
 msgid "[Lie]Don't worry, she's safe with me."
-msgstr ""
+msgstr "[Mientes] No te preocupes, estará a salvo conmigo."
 
 #: conversationlist_omicronrg9.json:ff_captain_guild02_2b
 msgid "Oh, I see. Maybe you're right."
-msgstr ""
+msgstr "Oh, ya veo. Tal vez tengas razón."
 
 #: conversationlist_omicronrg9.json:ambelie_guild02_3
 msgid "You again?!"
-msgstr ""
+msgstr "¡¿Tú otra vez?!"
 
 #: conversationlist_omicronrg9.json:ambelie_guild02_3:0
 msgid "[Lie] Sorry, but I have to take you back home!"
-msgstr ""
+msgstr "[Mientes] Lo siento, ¡pero debo llevarte de vuelta a casa!"
 
 #: conversationlist_omicronrg9.json:ambelie_guild02_3:1
 msgid "(Knock her out) Time to sleep!"
-msgstr ""
+msgstr "(La dejas insconciente) ¡Hora de dormir!"
 
 #: conversationlist_omicronrg9.json:ambelie_guild02_4a
 msgid "No! I won't go anywhere with you, commoner! Guards, guards!"
-msgstr ""
+msgstr "¡No!¡No iré a ningún lado contigo, plebeyo!¡Guardias, guardias!"
 
 #: conversationlist_omicronrg9.json:ff_captain_guild02_4
 msgid "Haha! Sorry lady, but your father wants you back home. I also believe this dirty tavern is no place for a woman like you, haha!"
 msgstr ""
+"¡Jaja! Lo siento señora, pero su padre le quiere de vuelta en casa. ¡Y "
+"también creo que esta sucia taberna no es lugar para una mujer como usted, "
+"jeje!"
 
 #: conversationlist_omicronrg9.json:ff_captain_guild02_4:0
 msgid "Yes, you have to come with me."
-msgstr ""
+msgstr "Sí, se tendrá que venir conmigo."
 
 #: conversationlist_omicronrg9.json:ambelie_guild02_5
 msgid "NO! I've said no! Don't bother me. Get away from me!"
-msgstr ""
+msgstr "¡NO!¡He dicho que no! No me molestes más. ¡Vete!"
 
 #: conversationlist_omicronrg9.json:ambelie_guild02_5:0
 msgid "Sorry about this (Knock her out)."
-msgstr ""
+msgstr "Perdón por esto (La dejas inconsciente)."
 
 #: conversationlist_omicronrg9.json:ambelie_guild02_5:1
 msgid "[Whispering] You fool! Be quiet. Listen to me if you want to save your life."
-msgstr ""
+msgstr "[Susurrando] !Tonto¡ Estate . Escúchame si quieres salvar tu vida."
 
 #: conversationlist_omicronrg9.json:ambelie_guild02_4b
 msgid "(You tap her on the back of the head with the handle of your weapon, and she falls unconsicious)"
 msgstr ""
+"(Le das un golpecito detrás de la cabeza con el mango de tu arma y pierde el "
+"conocimiento)"
 
 #: conversationlist_omicronrg9.json:ambelie_guild02_4b:0
 msgid "Fine ..."
-msgstr ""
+msgstr "Bien..."
 
 #: conversationlist_omicronrg9.json:Feygard_BG_guild02_1
 msgid ""
 "Halt! The road to Fallhaven is closed due to recent information about a dangerous criminal who has been seen not far from here.\n"
 "That criminal committed a murder only hours ago."
 msgstr ""
+"¡Alto! La carretera a Fallhaven está cerrada debido a información reciente "
+"sobre un criminal peligroso al que no se ha visto muy lejos de aquí. \n"
+"Ese criminal asesinó a una persona hace unas pocas horas."
 
 #: conversationlist_omicronrg9.json:Feygard_BG_guild02_1:0
 msgid "But I really need to pass!"
-msgstr ""
+msgstr "¡Pero de veras necesito pasar!"
 
 #: conversationlist_omicronrg9.json:Feygard_BG_guild02_2a
 msgid ""
@@ -31215,10 +31335,15 @@ msgid ""
 "\n"
 "(You take a look into your map. There seems to be another way to reach Fallhaven, heading up to the North)"
 msgstr ""
+"Lo siento, no se me permite decidir quién pasa. Esta barricada estará aquí "
+"hasta que capturemos o matemos al criminal. \n"
+"\n"
+"(Echas un vistazo al mapa. Parece que hay otra forma de llegar a Fallhaven, "
+"partiendo hacia el Norte)"
 
 #: conversationlist_omicronrg9.json:Feygard_BG_guild02_2a:0
 msgid "OK, thank you anyway."
-msgstr ""
+msgstr "OK, gracias de todas formas."
 
 #: conversationlist_omicronrg9.json:umar_guild02_16
 msgid ""
@@ -31226,161 +31351,190 @@ msgid ""
 "\n"
 "Oh! How how did you get here so fast? I've heard reports of a barricade blocking the way from the Duleian road to Fallhaven."
 msgstr ""
+"(Colocas a Ambelie, que todavía está inconsciente, en una silla al lado tuya)"
+"\n"
+"\n"
+"¡Oh! ¿Cómo llegaste tan pronto? Escuché que había una barricada bloqueando "
+"la vía de Duleian hasta Fallhaven."
 
 #: conversationlist_omicronrg9.json:umar_guild02_16:0
 msgid "Barricades, guards ... no big thing for me."
-msgstr ""
+msgstr "Barricadas, guardas... no son gran cosa para mí."
 
 #: conversationlist_omicronrg9.json:umar_guild02_16:1
 msgid "I found a shortcut."
-msgstr ""
+msgstr "He encontrado un atajo."
 
 #: conversationlist_omicronrg9.json:umar_guild02_17
 msgid "OK, well done. Now we will have to find a better place for our guest. Keeping this lady here could be dangerous for us."
 msgstr ""
+"Vale, bien hecho. Ahora tendremos que encontrar un mejor sitio para nuestro "
+"invitado. Mantener a esta señora aquí podría ser peligroso para nosotros."
 
 #: conversationlist_omicronrg9.json:umar_guild02_17:0
 msgid "I'm sure that's the case, but that's not my problem anymore. Right?"
 msgstr ""
+"Estoy seguro de que ese es el caso, pero ya no es mi problema. ¿De acuerdo?"
 
 #: conversationlist_omicronrg9.json:umar_guild02_17:1
 msgid "Do you have any ideas?"
-msgstr ""
+msgstr "¿Tienes alguna idea?"
 
 #: conversationlist_omicronrg9.json:umar_guild02_18a
 msgid "Yes it is."
-msgstr ""
+msgstr "Sí lo es."
 
 #: conversationlist_omicronrg9.json:umar_guild02_18a:0
 msgid "Well, I have no choice. What should I do?"
-msgstr ""
+msgstr "Bueno, no tengo opción. ¿Qué debería hacer?"
 
 #: conversationlist_omicronrg9.json:umar_guild02_18b
 msgid "Hmm, let me think about it ...."
-msgstr ""
+msgstr "Hmm, déjame pensarlo..."
 
 #: conversationlist_omicronrg9.json:umar_guild02_19
 msgid "We are supposed to have one room for receiving \"visitors\". However, I don't know if It's finished."
 msgstr ""
+"Se supone que tendríamos una habitación para recibir \"visitantes\". No "
+"obstante, no sé si está terminada."
 
 #: conversationlist_omicronrg9.json:umar_guild02_19:0
 msgid "Great, more boring \"moving\" tasks, right?"
-msgstr ""
+msgstr "Bien, más tareas aburridas de \"moverse\", ¿verdad?"
 
 #: conversationlist_omicronrg9.json:umar_guild02_19:1
 msgid "And so?"
-msgstr ""
+msgstr "¿Y?"
 
 #: conversationlist_omicronrg9.json:umar_guild02_20
 msgid "Hmm, I believe Troublemaker knows the actual state of that place. Ask him, and if it's possible leave our guest there."
 msgstr ""
+"Hmm, creo que Troublemaker conoce el estado real de ese lugar. Pregúntale, y "
+"si es posible, deja nuestro invitado allí."
 
 #: conversationlist_omicronrg9.json:umar_guild02_20:0
 msgid "OK, I will. (You lift Ambelie up and carry her on your shoulders)"
-msgstr ""
+msgstr "Ok, lo haré. (Levantas a Ambelie y la cargas sobre tus hombros)"
 
 #: conversationlist_omicronrg9.json:umar_guild02_20:1
 msgid "Hmpf ... Bye (You lift Ambelie up and carry her on your shoulders)"
-msgstr ""
+msgstr "Hmpf... adiós (Levantas a Ambelie y la cargas sobre tus hombros)"
 
 #: conversationlist_omicronrg9.json:troublemaker_guild02_1
 msgid "So do you want to kill her quietly?"
-msgstr ""
+msgstr "¿Así que pretendes matarla silenciosamente?"
 
 #: conversationlist_omicronrg9.json:troublemaker_guild02_1:0
 msgid "No, just I want a suitable place to leave her until ..."
-msgstr ""
+msgstr "No, solo busco un lugar adecuado donde dejarla hasta..."
 
 #: conversationlist_omicronrg9.json:troublemaker_guild02_1:1
 msgid "What? No, I am just asking you for a place for this type of job. Umar told me you knew of somewhere."
 msgstr ""
+"¿Qué? No, solo te preguntaba por un sitio para este tipo de trabajo. Umar me "
+"dijo que conocías algún lugar."
 
 #: conversationlist_omicronrg9.json:troublemaker_guild02_2a
 msgid "Yeah, the ransom. I'm a veteran kid, don't forget that."
-msgstr ""
+msgstr "Sí, el rescate. Soy un joven veterano, no lo olvides."
 
 #: conversationlist_omicronrg9.json:troublemaker_guild02_2b
 msgid "Hmpf, be more specific next time. I'm not a mind-reader!"
-msgstr ""
+msgstr "Hmpf, sé más específico la próxima vez. ¡No sé leer la mente!"
 
 #: conversationlist_omicronrg9.json:troublemaker_guild02_3
 msgid "Well, I understand. Yes I have a place, but there's a problem. That place is at the other end of the town, next to the graveyard."
 msgstr ""
+"Bueno, lo entiendo. Sí tengo un lugar, pero hay un problema. Ese lugar se "
+"está al otro lado del pueblo, al lado del cementerio."
 
 #: conversationlist_omicronrg9.json:troublemaker_guild02_3:0
 msgid "I don't think that will present a major problem for me."
-msgstr ""
+msgstr "No creo que me suponga mayor problema."
 
 #: conversationlist_omicronrg9.json:troublemaker_guild02_3:1
 msgid "I got here without any problem. Why I would have problems crossing through town?"
 msgstr ""
+"Llegué aquí sin problema. ¿Por qué crees que tendría problemas cruzando el "
+"pueblo?"
 
 #: conversationlist_omicronrg9.json:troublemaker_guild02_4
 msgid "Well, anyway, I'm building a way underground to reach it without being seen. It will be ready next time, I promise."
 msgstr ""
+"Bueno, igualmente, estoy construyendo una vía subterránea para alcanzarlo "
+"sin ser vistos. Estará listo la próxima vez, lo prometo."
 
 #: conversationlist_omicronrg9.json:troublemaker_guild02_4:0
 msgid "Whatever, anything more?"
-msgstr ""
+msgstr "Como digas, ¿algo más?"
 
 #: conversationlist_omicronrg9.json:troublemaker_guild02_4:1
 msgid "Thank you. I will go there."
-msgstr ""
+msgstr "Gracias. Iré."
 
 #: conversationlist_omicronrg9.json:troublemaker_guild02_5b
 msgid "OK. Make sure you're not seen doing suspicious things!"
-msgstr ""
+msgstr "Vale. ¡Asegúrate de que no te ven hacer nada sospechoso!"
 
 #: conversationlist_omicronrg9.json:troublemaker_guild02_5a
 msgid "Yes, there is something."
-msgstr ""
+msgstr "Sí, hay otra cosa."
 
 #: conversationlist_omicronrg9.json:troublemaker_guild02_6
 msgid "I almost forgot. Take this key. Make sure you put it in correctly to open the hatchway."
 msgstr ""
+"Casi me olvido. Toma esta llave. Asegúrate de pornerla correctamente para "
+"abrir la trampilla."
 
 #: conversationlist_omicronrg9.json:troublemaker_guild02_6:0
 msgid "You forget many things, right?"
-msgstr ""
+msgstr "Te olvidas de muchas cosas, ¿verdad?"
 
 #: conversationlist_omicronrg9.json:troublemaker_guild02_6:1
 msgid "Hmm, OK. I will keep that in mind."
-msgstr ""
+msgstr "Hmm, vale. Lo tendré en cuenta."
 
 #: conversationlist_omicronrg9.json:troublemaker_guild02_7
 msgid "I have better things to do than help an apprentice. Leave me. Hmpf."
-msgstr ""
+msgstr "Tengo mejores cosas que hacer que ayudar a un aprendiz. Déjame. Hmpf."
 
 #: conversationlist_omicronrg9.json:guild02_hatchlever_2b
 msgid "Looking around the room, you see an unusual mechanism. A crowbar with a locked chain that prevents a lever from being moved."
 msgstr ""
+"Mirando alrededor, ves un mecanismo inusual. Una barreta con una cadena "
+"bloqueada que evita que una palanca se mueva."
 
 #: conversationlist_omicronrg9.json:guild02_hatchlever_2b:0
 msgid "Try to break the chain."
-msgstr ""
+msgstr "Intenta romper la cadena."
 
 #: conversationlist_omicronrg9.json:guild02_hatchlever_2b:1
 #: conversationlist_omicronrg9.json:guild02_hatchlever_3b:1
 #: conversationlist_omicronrg9.json:ambelie_guild02_7b:0
 #: conversationlist_arulir_mountain.json:arulirmountain_brokenbridge:0
 msgid "Leave."
-msgstr ""
+msgstr "Vete."
 
 #: conversationlist_omicronrg9.json:guild02_hatchlever_3b
 msgid "You hit the chain, but all you get is a mark on your weapon and frustration, as the chain is still intact."
 msgstr ""
+"Golpeas la cadena, pero solo consigues hacer una mella en tu arma y "
+"frustrarte. La cadena se mantiene intacta."
 
 #: conversationlist_omicronrg9.json:guild02_hatchlever_3b:0
 msgid "Hit it again."
-msgstr ""
+msgstr "Golpearla de nuevo."
 
 #: conversationlist_omicronrg9.json:guild02_hatchlever_2a
 msgid "This is probably the place Troublemaker mentioned. You see a crowbar with a locked chain that surrounds the whole mechanism, stopping it from moving. The key seems to fit into the lock."
 msgstr ""
+"Este es probablemente el sitio que Troublemaker mencionó. Ves una barreta "
+"con una cadena bloqueada que rodea todo el mecanismo, evitando que se mueva. "
+"La llave parece encajar en el candado."
 
 #: conversationlist_omicronrg9.json:guild02_hatchlever_2a:0
 msgid "Put the key into the lock."
-msgstr ""
+msgstr "Meter la llave en el candado."
 
 #: conversationlist_omicronrg9.json:guild02_hatchlever_3a
 msgid ""
@@ -31388,202 +31542,236 @@ msgid ""
 "\n"
 "When you move the lever the floor starts trembling, and eventually a hatch appears that  leads downstairs."
 msgstr ""
+"Metes la llave en el candado. Mientras la giras, escuchas como hace sonidos "
+"extraños. Te esfuerzas un poco más y por fin consigues que la pesada cadena "
+"caiga en el suelo, liberando al mecanismo.\n"
+"\n"
+"Cuando mueves la palanca el suelo empieza a temblar, y finalmente una "
+"trampilla aparece que lleva hacia abajo."
 
 #: conversationlist_omicronrg9.json:guild02_door_1
 msgid "This cell looks like the right place for a hostage."
-msgstr ""
+msgstr "Esta celda parece el lugar adecuado para un rehén."
 
 #: conversationlist_omicronrg9.json:guild02_door_1:0
 msgid "Put Ambelie inside the room."
-msgstr ""
+msgstr "Mete a Ambelie dentro de la habitación."
 
 #: conversationlist_omicronrg9.json:guild02_door_2
 msgid "You leave Ambelie in the cell and close the door."
-msgstr ""
+msgstr "Dejas a Ambelie en la celda y cierras la puerta."
 
 #: conversationlist_omicronrg9.json:troublemaker_guild02_8
 msgid ""
 "Ah, yes ... that captive. Take this food and make sure she is comfortable enough. We don't want her starving right?\n"
 "(Troublemaker gives you some bread)"
 msgstr ""
+"Ah, sí ... esa prisionera. Toma esta comida y asegúrate de que está lo "
+"suficientemente cómoda. ¿Verdad que no queremos que esté hambrienta?\n"
+"(Troublemaker te da algo de pan)"
 
 #: conversationlist_omicronrg9.json:troublemaker_guild02_8:0
 msgid "Argh. OK. What a tedious job!"
-msgstr ""
+msgstr "Argh. Vale. ¡Qué trabajo tan tedioso!"
 
 #: conversationlist_omicronrg9.json:troublemaker_guild02_8:1
 #: conversationlist_omicronrg9.json:umar_guild02_21:1
 msgid "Understood."
-msgstr ""
+msgstr "Entendido."
 
 #: conversationlist_omicronrg9.json:ambelie_guild02_7b
 msgid "(Ambelie seems to be resting, dead to the world. The entire room is quiet. You really don't like this cold place)"
 msgstr ""
+"(Ambelie parece estar descansando, muerta para el mundo. La habitación está "
+"completamente en silencio. Realmente no te gusta este sitio tan frío)"
 
 #: conversationlist_omicronrg9.json:ambelie_guild02_7a
 msgid "(You take a look at the cell. Ambelie has awakened. When she looks at you, her face turns pale)"
 msgstr ""
+"(Echas un vistazo a la celda. Ambelie se ha despertado. Cuando te ve, se "
+"pone pálida)"
 
 #: conversationlist_omicronrg9.json:ambelie_guild02_7a:0
 msgid "Hello! I have food for you."
-msgstr ""
+msgstr "¡Hola! Te he traído comida."
 
 #: conversationlist_omicronrg9.json:ambelie_guild02_7a:1
 msgid "Hey, you! Take this food quickly, I have no time to waste!"
-msgstr ""
+msgstr "¡Eh, tú! Tómate esto pronto, ¡no tengo tiempo que perder!"
 
 #: conversationlist_omicronrg9.json:ambelie_guild02_8
 msgid "Wh..what do you want? What have you done to me? Where in the world am I? Answer me!"
 msgstr ""
+"Esto... ¿qué es lo que quieres?¿Qué me has hecho?¿En dónde estoy?¡Respóndeme!"
 
 #: conversationlist_omicronrg9.json:ambelie_guild02_8:0
 msgid "That does not concern you. Take this food please."
-msgstr ""
+msgstr "Eso no es de tu incumbencia. Por favor, tómate la comida."
 
 #: conversationlist_omicronrg9.json:ambelie_guild02_8:1
 msgid "Look, if you don't shut up I will silence you my own way, OK?"
-msgstr ""
+msgstr "Mira, si no te callas te callaré a mi manera, ¿ok?"
 
 #: conversationlist_omicronrg9.json:ambelie_guild02_9b
 msgid "Don't hurt me please! I will be quiet."
-msgstr ""
+msgstr "¡Por favor no me hagas daño! Me callaré."
 
 #: conversationlist_omicronrg9.json:ambelie_guild02_9b:0
 msgid "Now take this food ... Without complaining!"
-msgstr ""
+msgstr "Ahora tómate la comida... ¡sin quejas!"
 
 #: conversationlist_omicronrg9.json:ambelie_guild02_9a
 msgid "Food, you say? "
-msgstr ""
+msgstr "Comida, ¿decías? "
 
 #: conversationlist_omicronrg9.json:ambelie_guild02_9a:0
 msgid "Yes, that's what I said."
-msgstr ""
+msgstr "Sí, eso es lo que dije."
 
 #: conversationlist_omicronrg9.json:ambelie_guild02_9a:1
 msgid "Are you deaf or something? Take this bread and stop bothering me!"
-msgstr ""
+msgstr "¿Estás sorda o algo?¡Tómate el pan y deja de molestarme!"
 
 #: conversationlist_omicronrg9.json:ambelie_guild02_10
 msgid "Bread? That's not a worthy food for a noblewoman like me! Oh my, where am I?"
 msgstr ""
+"¿Pan?¡Eso no es comida para una noble como yo! Oh, Dios, ¿en dónde estoy?"
 
 #: conversationlist_omicronrg9.json:ambelie_guild02_10:0
 msgid "If you prefer going without food in this ugly cell for a long while then I don't care."
 msgstr ""
+"Si prefieres no tomar comida en esta horrible celda por un largo tiempo "
+"entonces no me importa."
 
 #: conversationlist_omicronrg9.json:ambelie_guild02_10:1
 msgid "Do you prefer to eat the floor, bad mannered woman?"
-msgstr ""
+msgstr "¿Prefieres comerte el suelo, mujer sin modales?"
 
 #: conversationlist_omicronrg9.json:ambelie_guild02_11
 msgid "S..sorry, please ... Yes I'm hungry ... Will you give me that? *sniffs*"
 msgstr ""
+"Pp... perdón, por favor... Sí, estoy hambrienta... ¿me la puedes dar? "
+"*resopla*"
 
 #: conversationlist_omicronrg9.json:ambelie_guild02_11:0
 msgid "[Give the Bread]"
-msgstr ""
+msgstr "[Darle el Pan]"
 
 #: conversationlist_omicronrg9.json:ambelie_guild02_12
 msgid "Th..thanks. Now, please tell me, where am I?"
-msgstr ""
+msgstr "Gra... gracias. Ahora, por favor dime, ¿en dónde estoy?"
 
 #: conversationlist_omicronrg9.json:ambelie_guild02_12:0
 msgid "Sorry, but I cannot reveal that to you right now. Bye."
 msgstr ""
+"Lo siento, pero no puedo desvelar en donde te encuentras ahora mismo. Adiós."
 
 #: conversationlist_omicronrg9.json:ambelie_guild02_12:1
 msgid "That doesn't matter! If you behave well maybe you will be out of here sooner rather than later."
 msgstr ""
+"¡Eso no importa! Si te comportas bien, tal vez salgas de aquí más pronto que "
+"tarde."
 
 #: conversationlist_omicronrg9.json:ambelie_guild02_13
 msgid "... Fine *sniffs*."
-msgstr ""
+msgstr "... Vale *resopla*."
 
 #: conversationlist_omicronrg9.json:ambelie_guild02_14
 msgid "(You look again through the bars. Ambelie is still there, alive, and gnawing on the bread you gave her earlier.)"
 msgstr ""
+"(Vuelves a mirar a la celda. Ambelie todavía está ahí, viva, masticando el "
+"pan que le diste antes.)"
 
 #: conversationlist_omicronrg9.json:troublemaker_guild02_9
 msgid "Excellent. From now on me and my fellows will take care of her."
-msgstr ""
+msgstr "Perfecto. Desde ahora yo y mis compañeros estaremos a cargo de ella."
 
 #: conversationlist_omicronrg9.json:troublemaker_guild02_9:0
 msgid "Very well. I will go and talk to Umar again. Bye."
-msgstr ""
+msgstr "Muy bien. Ahora iré a hablar con Umar otra vez. Adiós."
 
 #: conversationlist_omicronrg9.json:troublemaker_guild02_9:1
 msgid "But ..."
-msgstr ""
+msgstr "Pero..."
 
 #: conversationlist_omicronrg9.json:troublemaker_guild02_9_1
 msgid "Do that."
-msgstr ""
+msgstr "Hazlo."
 
 #: conversationlist_omicronrg9.json:troublemaker_guild02_10
 msgid "Hey, what are you waiting for? Leave me and go talk with Umar or something!"
 msgstr ""
+"Hey, ¿a qué estás esperando?¡Déjame y vete a hablar con Umar o haz algo!"
 
 #: conversationlist_omicronrg9.json:troublemaker_guild02_10:0
 msgid "You don't need to be rude! I will leave."
-msgstr ""
+msgstr "¡No es necesario que seas borde! Ya me voy."
 
 #: conversationlist_omicronrg9.json:troublemaker_guild02_10:1
 msgid "I'll talk to him. Bye."
-msgstr ""
+msgstr "Hablaré con él. Adiós."
 
 #: conversationlist_omicronrg9.json:umar_guild02_21
 msgid "Simple. Talk with Troublemaker about this job. He probably knows of some safe place to keep her. Then return to me."
 msgstr ""
+"Simple. Habla con Troublemaker sobre este trabajo. Seguramente conozca algún "
+"sitio para mantenerla. Luego vuelve a hablar conmigo."
 
 #: conversationlist_omicronrg9.json:umar_guild02_21:0
 msgid "OK, thanks."
-msgstr ""
+msgstr "OK, gracias."
 
 #: conversationlist_omicronrg9.json:umar_guild02_22
 msgid "Fine .... Although you look odd. What's the matter?"
-msgstr ""
+msgstr "Bien... aunque se te ve raro. ¿Qué ocurre?"
 
 #: conversationlist_omicronrg9.json:umar_guild02_22:0
 msgid "It's OK ... it's just that is not my kind of work."
-msgstr ""
+msgstr "Está bien... es solo que no es mi tipo favorito de trabajo."
 
 #: conversationlist_omicronrg9.json:umar_guild02_22:1
 msgid "Urgh ... I just need better tasks! Do you still think I'm not yet ready?"
 msgstr ""
+"Urgh... ¡Sólo necesito mejores tareas!¿Todavía crees que no estoy listo?"
 
 #: conversationlist_omicronrg9.json:umar_guild02_23a
 msgid "Sometimes people must do things that they don't like. Maybe you're still too young to understand that?"
 msgstr ""
+"A veces la gente debe hacer cosas que no les gusta. ¿Tal vez todavía eres "
+"demasiado joven para entenderlo?"
 
 #: conversationlist_omicronrg9.json:umar_guild02_23a:0
 msgid "Not at all."
-msgstr ""
+msgstr "Para nada."
 
 #: conversationlist_omicronrg9.json:umar_guild02_23b
 msgid "No, nothing of the kind! I was .... Well, let's talk."
-msgstr ""
+msgstr "¡No, nada de eso! Yo estaba... bueno, hablemos."
 
 #: conversationlist_omicronrg9.json:umar_guild02_24a
 msgid "Well .... Anyway, I promise we won't give you those kind of jobs for a while."
 msgstr ""
+"Bueno... de todas formas, prometo que no te daré ese tipo de trabajos "
+"durante un tiempo."
 
 #: conversationlist_omicronrg9.json:umar_guild02_24a:0
 #: conversationlist_omicronrg9.json:umar_guild03_19d
 msgid "Fine."
-msgstr ""
+msgstr "Bien."
 
 #: conversationlist_omicronrg9.json:umar_guild02_24a:1
 msgid "That is good news for me."
-msgstr ""
+msgstr "Eso me resulta una buena noticia."
 
 #: conversationlist_omicronrg9.json:umar_guild02_24b
 msgid "Great, so let's talk then."
-msgstr ""
+msgstr "Bien, entonces hablemos."
 
 #: conversationlist_omicronrg9.json:umar_guild02_25
 msgid "First of all, take this gold for a job well done. We have already sent people to ask for the ransom."
 msgstr ""
+"Antes de nada, toma el oro por trabajar tan duro. Ya hemos enviado a unos "
+"subordinados a pedir el rescate."
 
 #: conversationlist_omicronrg9.json:umar_guild02_26
 msgid ""
@@ -31592,364 +31780,436 @@ msgid ""
 "This is really not your line of work huh?\n"
 "I suggest you rest for a while before doing more. You look tired."
 msgstr ""
+"(Umar parece algo preocupado)\n"
+"\n"
+"Esto no es tu forma de trabajo, ¿eh?\n"
+"Te sugiero que descanses durante un tiempo antes de hacer nada más. Pareces "
+"cansado."
 
 #: conversationlist_omicronrg9.json:umar_guild02_26:0
 msgid "I'm not tired at all."
-msgstr ""
+msgstr "No estoy nada cansado."
 
 #: conversationlist_omicronrg9.json:umar_guild02_26:1
 msgid "Tired? I don't know what that means!"
-msgstr ""
+msgstr "¿Cansado?¡No sé lo que significa!"
 
 #: conversationlist_omicronrg9.json:umar_guild02_26:2
 msgid "Good idea."
-msgstr ""
+msgstr "Buena idea."
 
 #: conversationlist_omicronrg9.json:umar_guild02_27a
 msgid "I prefer that you are completely rested before talking about work."
-msgstr ""
+msgstr "Prefiero que estés completamente descansado antes de hablar de trabajo."
 
 #: conversationlist_omicronrg9.json:umar_guild02_27a:0
 msgid "Ugh ... OK."
-msgstr ""
+msgstr "Ugh... OK."
 
 #: conversationlist_omicronrg9.json:umar_guild02_27a:1
 msgid "I'm always rested!"
-msgstr ""
+msgstr "¡Siempre estoy descansado!"
 
 #: conversationlist_omicronrg9.json:umar_guild02_27b
 msgid "Don't be overconfident. Take my advice and rest. We'll talk tomorrow."
-msgstr ""
+msgstr "No te confíes demasiado. Toma mi consejo y descansa. Hablamos mañana."
 
 #: conversationlist_omicronrg9.json:umar_guild02_27b:0
 msgid "Tsch. All right, sir."
-msgstr ""
+msgstr "Tsss. De acuedo, señor."
 
 #: conversationlist_omicronrg9.json:umar_guild02_27c
 msgid ""
 "Come back to me when you're prepared. Bear in mind that your next task isn't going to be as easy as the ones you already did.\n"
 "We'll talk about that tomorrow."
 msgstr ""
+"Vueve cuando estés preparado. Ten en cuenta que tu próxima tarea no será tan "
+"fácil como las anteriores.\n"
+"Pero hablaremos de eso mañana."
 
 #: conversationlist_omicronrg9.json:umar_guild02_27c:0
 msgid "I expected that. See you tomorrow then."
-msgstr ""
+msgstr "Me lo esperaba. Entonces, hasta mañana."
 
 #: conversationlist_omicronrg9.json:umar_guild02_27c:1
 msgid "Easy? Argh, they've been so difficult! Good night."
-msgstr ""
+msgstr "¿Fácil? Argh, ¡han sido tan difíciles! Buenas noches."
 
 #: conversationlist_omicronrg9.json:guild03_rest1
 msgid "(You should go to the bed now. You take off your bag and grab the blanket. This bed is more comfortable than you thought, but maybe that's because you are really exhausted. Finally, you blow out the candle in the room.)"
 msgstr ""
+"(Deberías irte a la cama ahora. Te quitas la mochila y agarras la sábana. La "
+"cama es mucho más cómoda de lo que te pareció, pero tal vez sea porque estás "
+"muy cansado. Por último, apagas la última vela en la habitación.)"
 
 #: conversationlist_omicronrg9.json:guild03_rest2
 msgid "Umar was clear. Sleep, then return. I should do what he said and go to bed."
 msgstr ""
+"Umar lo dejó claro. Dormir, luego volver. Debería hacer lo que dijo e irme a "
+"la cama."
 
 #: conversationlist_omicronrg9.json:guild03_rest3
 msgid "(The night here is anything but quiet. You can hear wolves' howls, as they become more active during the night. Even people's conversations can be overheard. However, you couldn't care less about that right now. You finally fall asleep)"
 msgstr ""
+"(La noche es de todo menos tranquila. Se escuchan aullidos de lobos, ya que "
+"son más activos de noche. Incluse se pueden escuchar las conversaciones de "
+"la gente. Sin embargo, no te podrían importar menos en ese momento. Te "
+"quedas dormido.)"
 
 #: conversationlist_omicronrg9.json:guild03_rest4
 msgid "(The sun rises and you open your eyes. You feel fully rested and eager to talk with Umar. He's probably waiting for you.)"
 msgstr ""
+"(Amanece y abres los ojos. Te sientes descansado completamente y estás "
+"ansioso por hablar con Umar. Probablemente te esté esperando.)"
 
 #: conversationlist_omicronrg9.json:guild03_rest0a
 msgid "I should not leave the city now. Father told me once that monsters and beasts are more dangerous at night."
 msgstr ""
+"No debería irme ahora. Papá una vez me dijo que las bestias y los monstruos "
+"son más peligrosos de noche."
 
 #: conversationlist_omicronrg9.json:guild03_rest0b
 msgid "Why am I heading in this direction? The tavern isn't in this way!"
-msgstr ""
+msgstr "¿Por qué voy en este sentido?¡La taberna no está por aquí!"
 
 #: conversationlist_omicronrg9.json:guild03_rest0c
 msgid "It would be better to not bother people at this hour."
-msgstr ""
+msgstr "Sería mejor no molestar a nadie a esta hora."
 
 #: conversationlist_omicronrg9.json:umar_guild03_1
 msgid "I see you are better than yesterday."
-msgstr ""
+msgstr "Veo que estás mejor que ayer."
 
 #: conversationlist_omicronrg9.json:umar_guild03_1:0
 msgid "Indeed I am!"
-msgstr ""
+msgstr "¡Desde luego que sí!"
 
 #: conversationlist_omicronrg9.json:umar_guild03_1:1
 msgid "Yes ..."
-msgstr ""
+msgstr "Sí..."
 
 #: conversationlist_omicronrg9.json:umar_guild03_2
 msgid "Fine. Listen to me carefully."
-msgstr ""
+msgstr "Bien. Escúchame atentamente."
 
 #: conversationlist_omicronrg9.json:umar_guild03_2:0
 msgid "Sure, tell me what you have to say."
-msgstr ""
+msgstr "Por supuesto, dime lo que tengas que decir."
 
 #: conversationlist_omicronrg9.json:umar_guild03_3
 msgid "Here in the guild, as you know, members range from apprentices to veterans. The veterans are usually specialized in specific jobs."
 msgstr ""
+"Aquí en el gremio, como sabrás, los miembros son desde aprendices a "
+"veteranos. Los veteranos generalmente se especializan en tareas específicas."
 
 #: conversationlist_omicronrg9.json:umar_guild03_4
 msgid "Troublemaker is my right hand man. He's in charge of planning jobs that have some level of complexity."
 msgstr ""
+"Troublemaker es mi mano derecha. Está a cargo de planear trabajos que tienen "
+"cierto nivel de complejidad."
 
 #: conversationlist_omicronrg9.json:umar_guild03_5
 msgid "Pickpocket has developed his stealth skills to such an extreme that he's able to take your equipment, and you'll barely even feel it."
 msgstr ""
+"Pickpocket ha desarrollado su sigilo hasta tal extremo que sería capaz de "
+"quitarte el equipamiento y apenas lo podrías sentir."
 
 #: conversationlist_omicronrg9.json:umar_guild03_5:0
 msgid "Woah, how is that possible?"
-msgstr ""
+msgstr "Guau, ¿cómo puede ser posible?"
 
 #: conversationlist_omicronrg9.json:umar_guild03_5:1
 msgid "I don't believe you."
-msgstr ""
+msgstr "No te creo."
 
 #: conversationlist_omicronrg9.json:umar_guild03_6a
 msgid "Each person has their own way to reach the top."
-msgstr ""
+msgstr "Cada persona tiene su forma de alcanzar la cima."
 
 #: conversationlist_omicronrg9.json:umar_guild03_6b
 msgid "Believe me, I'm not lying."
-msgstr ""
+msgstr "Créeme, no te estoy mintiendo."
 
 #: conversationlist_omicronrg9.json:umar_guild03_7
 msgid "Anyway, the fact is that one of our veterans has betrayed us."
 msgstr ""
+"Igualmente, el hecho es que uno de nuestros veteranos nos ha traicionado."
 
 #: conversationlist_omicronrg9.json:umar_guild03_7:0
 msgid "Betrayed ... us?"
-msgstr ""
+msgstr "Traicionado... ¿a nosotros?"
 
 #: conversationlist_omicronrg9.json:umar_guild03_8
 msgid "Yes. He and his former comrades were sent to the Fallhaven catacombs."
 msgstr ""
+"Sí. Él y sus antiguos compañeros fueron enviados a las catacumbas de "
+"Fallhaven."
 
 #: conversationlist_omicronrg9.json:umar_guild03_8:0
 msgid "I thought the work there was done since I brought the key of Luthor to you."
 msgstr ""
+"Pensé que el trabajo allí ya había terminado ya que te traje la llave de "
+"Luthor."
 
 #: conversationlist_omicronrg9.json:umar_guild03_8:1
 msgid "And what happened then?"
-msgstr ""
+msgstr "¿Y entonces qué pasó?"
 
 #: conversationlist_omicronrg9.json:umar_guild03_9
 msgid "The key is just the first part. We need to decipher the runes in the key in order to reach the crypt."
 msgstr ""
+"La llave solo es la primera parte. Necesitamos descifrar las runas en la "
+"llave para poder conseguir la cripta."
 
 #: conversationlist_omicronrg9.json:umar_guild03_9:0
 msgid "What crypt? I've never heard of it."
-msgstr ""
+msgstr "¿Qué cripto? Nunca había escuchado nada de eso."
 
 #: conversationlist_omicronrg9.json:umar_guild03_9:1
 msgid "And what did they do?"
-msgstr ""
+msgstr "¿Y qué hicieron?"
 
 #: conversationlist_omicronrg9.json:umar_guild03_10b
 msgid "The team leader and others loyal to him killed the rest of the team and escaped with the key, before entering the church. They have probably deciphered the code and they want to sell the information to the highest bidder. That happened three nights ago."
 msgstr ""
+"El líder del equipo y otro leales a él mataron al resto y escaparon con la "
+"llave antes de entrar a la iglesia. Seguramente ya hayan descifrado el "
+"código y quieran vender la información al mejor postor. Eso debió pasar hace "
+"3 noches."
 
 #: conversationlist_omicronrg9.json:umar_guild03_10b:0
 msgid "Why did they do that?"
-msgstr ""
+msgstr "¿Por qué lo hicieron?"
 
 #: conversationlist_omicronrg9.json:umar_guild03_10b:1
 #: conversationlist_omicronrg9.json:umar_guild03_26a:0
 #: conversationlist_omicronrg9.json:umar_guild03_28c
 msgid "I see ...."
-msgstr ""
+msgstr "Ya veo..."
 
 #: conversationlist_omicronrg9.json:umar_guild03_10a
 msgid "Let's just say that's not important to you at this moment. What they did is more important now."
 msgstr ""
+"Digamos que eso ya no te es importante ahora. Lo que hicieron es lo "
+"importante."
 
 #: conversationlist_omicronrg9.json:umar_guild03_10a:0
 msgid "So, what did they do?"
-msgstr ""
+msgstr "Entonces, ¿qué fue lo que hicieron?"
 
 #: conversationlist_omicronrg9.json:umar_guild03_11a
 msgid "Honestly, I don't know for certain."
-msgstr ""
+msgstr "Honestamente, no lo sé con certeza."
 
 #: conversationlist_omicronrg9.json:umar_guild03_11b
 msgid "Apparently they decided the Guild wasn't the best option, so they turned greedy and betrayed us. That's more common than I would like to admit."
 msgstr ""
+"Aparentemente decidieron que el Gremio no era la mejor opción, así que la "
+"codicia les hizo traicionarnos. Es más comun de lo que me gustaría admitir."
 
 #: conversationlist_omicronrg9.json:umar_guild03_11b:0
 msgid "What filthy and disloyal people."
-msgstr ""
+msgstr "Qué gente tan sucia y desleal."
 
 #: conversationlist_omicronrg9.json:umar_guild03_11b:1
 msgid "They have signed their own death sentence."
-msgstr ""
+msgstr "Han firmado su propia sentencia de muerte."
 
 #: conversationlist_omicronrg9.json:umar_guild03_12
 msgid "There's more. Two days ago the southern route from here to the Duleian road was closed, because there was a murder. Soldiers are trying to prevent the murderer from escaping to the west."
 msgstr ""
+"Hay más. Hace dos días la vía al sur de aquí hacia la carretera de Duleian "
+"estaba cerrada porque hubo un asesinato. Los soldados intentan evitar que el "
+"asesino escape hacia el oeste."
 
 #: conversationlist_omicronrg9.json:umar_guild03_12:0
 msgid "And you think the traitors are involved in that?"
-msgstr ""
+msgstr "¿Y crees que los traidores están envueltos en eso?"
 
 #: conversationlist_omicronrg9.json:umar_guild03_13
 msgid "I'm pretty sure about it. The team leader is the one we call \"Crackshot\", as he is a master of murder, torture and the subjugation arts. He's really a dangerous man."
 msgstr ""
+"Estoy muy seguro de ello. El líder es el que llamamos \"Crackshot\", ya que "
+"es el maestro del asesinato, la tortura y el arte de la subyugación. Es un "
+"hombre muy peligroso."
 
 #: conversationlist_omicronrg9.json:umar_guild03_13:0
 msgid "So, do you have a plan?"
-msgstr ""
+msgstr "Entonces, ¿tienes un plan?"
 
 #: conversationlist_omicronrg9.json:umar_guild03_13:1
 msgid "What am I supposed to do?"
-msgstr ""
+msgstr "¿Qué se supone que haga?"
 
 #: conversationlist_omicronrg9.json:umar_guild03_14
 msgid "Hmm ... I think we have no choice. We'll have to deal with him and his henchmen ... forever."
 msgstr ""
+"Hmm... creo que no tenemos opción. Tendremos que lidiar con él y sus "
+"seguidores... para siempre."
 
 #: conversationlist_omicronrg9.json:umar_guild03_14:0
 msgid "OK, leave this to me. That's finally the kind of work I was searching for."
-msgstr ""
+msgstr "OK, déjame esto a mí. Ese es por fin el tipo de trabajo que buscaba."
 
 #: conversationlist_omicronrg9.json:umar_guild03_14:1
 msgid "I ... I prefer to not get involved into this. Sorry."
-msgstr ""
+msgstr "Yo... yo prefiero no entrometerme en esto. Lo siento."
 
 #: conversationlist_omicronrg9.json:umar_guild03_15a
 msgid "Are you completely sure? You will be alone against trained thieves and other criminals whose sole objective is to earn more and more gold."
 msgstr ""
+"¿Estás completamente seguro? Lucharás solo contra ladrones entrenados y "
+"otros criminales cuyo único objetivo es ganar más y más oro."
 
 #: conversationlist_omicronrg9.json:umar_guild03_15a:0
 msgid "I can deal with them with my bare hands!"
-msgstr ""
+msgstr "Puedo ocuparme de ellos, ¡incluso con mis manos desnudas!"
 
 #: conversationlist_omicronrg9.json:umar_guild03_15a:1
 msgid "Don't worry, I'll be careful."
-msgstr ""
+msgstr "No te preocupes, seré cuidadoso."
 
 #: conversationlist_omicronrg9.json:umar_guild03_15b
 msgid "Maybe it's not the best time. We must bring him down. Think about it. There are probably many lives at risk ..."
 msgstr ""
+"Tal vez no es el mejor momento. Debemos traerle abajo. Piénsalo. "
+"Probablemente hayan muchas vidas en peligro..."
 
 #: conversationlist_omicronrg9.json:umar_guild03_15b:0
 msgid "I will, I promise. Bye."
-msgstr ""
+msgstr "Lo haré, lo prometo. Adiós."
 
 #: conversationlist_omicronrg9.json:umar_guild03_16
 msgid "Whatever, I do believe you are capable. Regardless, be cautious with Crackshot. He's powerful, and his attacks can severely wound or kill you. Clear?"
 msgstr ""
+"Lo que sea, creo que estás capacitado. En cualquier caso, ten cautela con "
+"Crackshot. Es poderoso, y sus ataques pueden herirte severamente o incluso "
+"matarte. ¿Entendido?"
 
 #: conversationlist_omicronrg9.json:umar_guild03_16:0
 msgid "Bah, words are worth nothing now. It's going to be a nice fight."
-msgstr ""
+msgstr "Buah, las palabras no sirven de nada. Será una buena lucha."
 
 #: conversationlist_omicronrg9.json:umar_guild03_16:1
 msgid "Yes, understood!"
-msgstr ""
+msgstr "¡Sí, entendido!"
 
 #: conversationlist_omicronrg9.json:umar_guild03_17a
 msgid "If you say so. Your self-confidence is a good aspect of your personality."
 msgstr ""
+"Si tú lo dices. Que seas seguro en ti mismo es un buen aspecto de tu "
+"personalidad."
 
 #: conversationlist_omicronrg9.json:umar_guild03_17b
 msgid "However, there's still a problem. We're not completely sure about the location of Crackshot's new hideout."
 msgstr ""
+"Sin embargo, todavía hay un problema. No estoy completamente seguro de la "
+"ubicación del nuevo escondite de Crackshot."
 
 #: conversationlist_omicronrg9.json:umar_guild03_17b:0
 msgid "What? How I will find him then?"
-msgstr ""
+msgstr "¿Qué?¿Entonces como lo encuentro?"
 
 #: conversationlist_omicronrg9.json:umar_guild03_17b:1
 msgid "He will show up sooner or later ..."
-msgstr ""
+msgstr "Ya aparecerá tarde o temprano..."
 
 #: conversationlist_omicronrg9.json:umar_guild03_18a
 msgid "Probably people near the Duleian road guard tower know more. See if you can ask them for tips."
 msgstr ""
+"Probablemente la gente cercana a la torre de guardia de la carretera de "
+"Duleian saben más. Mira a ver si te pueden dar algún dato."
 
 #: conversationlist_omicronrg9.json:umar_guild03_18a:0
 msgid "Whatever. I'll find him."
-msgstr ""
+msgstr "Como sea. Le encontraré."
 
 #: conversationlist_omicronrg9.json:umar_guild03_18b
 msgid "Maybe, but it will be faster if you question people near the Duleian road guard tower. The Duleian road is the place where we think he was last seen."
 msgstr ""
+"Tal vez, pero sería más rápido si le preguntas a la gente cerca de la torre "
+"de guardia de la carretera de Duleian. Creemos que allí fue el último lugar "
+"en el que fue visto."
 
 #: conversationlist_omicronrg9.json:umar_guild03_18b:0
 msgid "OK, I will ask there."
-msgstr ""
+msgstr "Vale, preguntaré por allí."
 
 #: conversationlist_omicronrg9.json:umar_guild03_18b:1
 msgid "Argh, the Duleian road is big! "
-msgstr ""
+msgstr "Argh, ¡la carretera de Duleian es grande! "
 
 #: conversationlist_omicronrg9.json:umar_guild03_19a
 msgid "Sorry, I have no more information. If you need anything come back. Good luck."
-msgstr ""
+msgstr "Lo siento, no sé nada más. Si necesitas algo, vuelve. Buena suerte."
 
 #: conversationlist_omicronrg9.json:umar_guild03_19a:0
 msgid "This will be interesting. Bye!"
-msgstr ""
+msgstr "Esto será interesante. ¡Adiós!"
 
 #: conversationlist_omicronrg9.json:umar_guild03_19a:1
 msgid "Thank you. See you again."
-msgstr ""
+msgstr "Gracias. Hasta la vista."
 
 #: conversationlist_omicronrg9.json:umar_guild03_19b
 msgid "That's why you have to ask."
-msgstr ""
+msgstr "Es por eso que debes preguntar."
 
 #: conversationlist_omicronrg9.json:umar_guild03_19c
 msgid "Make sure you don't talk about the Guild and his relationship with us. Don't trust anyone."
 msgstr ""
+"Asegúrate de no hablar sobre el Gremio y la relación de Crackshot con "
+"nosotros. No confíes en nadie."
 
 #: conversationlist_omicronrg9.json:umar_guild03_19c:0
 msgid "Understood!"
-msgstr ""
+msgstr "¡Entendido!"
 
 #: conversationlist_omicronrg9.json:umar_guild03_19c:1
 msgid "I won't even trust my shadow."
-msgstr ""
+msgstr "No confiaré ni en mi sombra."
 
 #: conversationlist_omicronrg9.json:umar_guild03_20
 msgid "Remember, this is an important mission! Don't forget it again!"
-msgstr ""
+msgstr "Recuerda, ¡esta misión es muy importante!¡No lo vuelvas a olvidar!"
 
 #: conversationlist_omicronrg9.json:umar_guild03_21
 msgid "First, you must find Crackshot's hideout."
-msgstr ""
+msgstr "Primero, debes encontrar el escondite."
 
 #: conversationlist_omicronrg9.json:umar_guild03_22
 msgid "Then you will have to deal with him and his henchmen, and finally bring back the Key of Luthor to us."
 msgstr ""
+"Luego deberás lidiar con él y sus hombres, y finalmente traernos la Llave de "
+"Luthor."
 
 #: conversationlist_omicronrg9.json:umar_guild03_23
 msgid "Understood?"
-msgstr ""
+msgstr "¿Entendido?"
 
 #: conversationlist_omicronrg9.json:umar_guild03_23:0
 msgid "Yes!"
-msgstr ""
+msgstr "¡Sí!"
 
 #: conversationlist_omicronrg9.json:umar_guild03_23:1
 msgid "Understood ..."
-msgstr ""
+msgstr "Entendido..."
 
 #: conversationlist_omicronrg9.json:umar_guild03_23:2
 msgid "Can you explain it to me again?"
-msgstr ""
+msgstr "¿Me lo puedes volver a explicar?"
 
 #: conversationlist_omicronrg9.json:umar_guild03_24a
 msgid "Excellent. Good luck."
-msgstr ""
+msgstr "Perfecto. Buena suerte."
 
 #: conversationlist_omicronrg9.json:umar_guild03_24b
 msgid ""
 "Are you serious?\n"
 "Bah, I'll repeat it for you ..."
 msgstr ""
+"¿En serio?\n"
+"Bueno, te lo volveré a repetir..."
 
 #: conversationlist_omicronrg9.json:crossroads_guild03_1
 msgid "Aren't you a bit young to be travelling around here all by yourself?"
@@ -31957,95 +32217,111 @@ msgstr "¿No eres un poco joven para viajar por aquí solo?"
 
 #: conversationlist_omicronrg9.json:crossroads_guild03_1:0
 msgid "Sorry, have you heard anything about a murder?"
-msgstr ""
+msgstr "Perdone, ¿ha escuchado algo sobre un asesinato?"
 
 #: conversationlist_omicronrg9.json:crossroads_guild03_2
 msgid "Yeah, Feygard authorities have sent more patrols to the south. Apparently there is a group of criminals hiding in the forest"
 msgstr ""
+"Sí, las autoridades de Feygard han enviado más patrullas al sur. "
+"Aparentemente hay un grupo de criminales escondiéndose en el bosque."
 
 #: conversationlist_omicronrg9.json:crossroads_guild03_3
 msgid "Now go away kid, I'm working!"
-msgstr ""
+msgstr "Ahora vete, ¡estoy trabajando!"
 
 #: conversationlist_omicronrg9.json:benbyr_guild03_1
 msgid "(This man seems to be immersed in his thoughts)"
-msgstr ""
+msgstr "(Este hombre parece estar inmerso en su pensamiento)"
 
 #: conversationlist_omicronrg9.json:benbyr_guild03_1:0
 msgid "Hi. Have you heard about the murder not far from here?"
-msgstr ""
+msgstr "Hola. ¿Has escuchado sobre el asesinato no muy lejos de aquí?"
 
 #: conversationlist_omicronrg9.json:benbyr_guild03_2
 msgid ""
 "What? A murder?\n"
 "I don't know what you're talking about, sorry."
 msgstr ""
+"¿Qué?¿Un asesinato?\n"
+"No sé de qué estás hablando, lo siento."
 
 #: conversationlist_omicronrg9.json:benbyr_guild03_2:0
 msgid "Civilians! You never see anything. Bye."
-msgstr ""
+msgstr "¡Civiles! Nunca veis nada. Adiós."
 
 #: conversationlist_omicronrg9.json:benbyr_guild03_2:1
 msgid "OK, thank you anyway!"
-msgstr ""
+msgstr "OK, ¡igualmente gracias!"
 
 #: conversationlist_omicronrg9.json:Feygard_BG_guild03_1
 msgid "Sorry, kid! I'm unable to let you pass. Orders from above!"
-msgstr ""
+msgstr "¡Lo siento, chaval! No puedo dejarte pasar. ¡Órdenes de arriba!"
 
 #: conversationlist_omicronrg9.json:Feygard_BG_guild03_1:1
 msgid "Tsch, Bye!"
-msgstr ""
+msgstr "Tsch, ¡adiós!"
 
 #: conversationlist_omicronrg9.json:Feygard_BG_guild03_2
 msgid "Yes. He's not alone!"
-msgstr ""
+msgstr "Sí. ¡No está solo!"
 
 #: conversationlist_omicronrg9.json:Feygard_BG_guild03_3
 msgid "Yes! We have sent patrols to the north. There's a place infested by larval burrowers."
 msgstr ""
+"¡Sí! Hemos enviado patrullas al Norte. Allí hay una zona infectada por "
+"larvas cavantes."
 
 #: conversationlist_omicronrg9.json:Feygard_BG_guild03_4
 msgid "He and the other criminals are probably hiding there!"
-msgstr ""
+msgstr "¡Él y otros criminales seguramente se escondan allí!"
 
 #: conversationlist_omicronrg9.json:Feygard_BG_guild03_5
 msgid ""
 "Yes! Those crimin ...\n"
 "Wait, you don't have to know this information! Forget everything I've said!"
 msgstr ""
+"¡Sí! Esos crimin...\n"
+"Espera, ¡no deberías conocer esa información!¡Olvida todo lo que dije!"
 
 #: conversationlist_omicronrg9.json:Feygard_BG_guild03_5:0
 msgid "I will, bye!"
-msgstr ""
+msgstr "Lo haré, ¡adiós!"
 
 #: conversationlist_omicronrg9.json:Feygard_BG_guild03_5:1
 msgid "[Lie]I will!"
-msgstr ""
+msgstr "[Mientes] ¡Lo haré!"
 
 #: conversationlist_omicronrg9.json:Feygard_BG_guild03_0
 msgid "Halt! The road to Fallhaven is closed due to a murder committed three days ago."
 msgstr ""
+"¡Alto! La carretera a Fallhaven está cerrada debido a un asesinato cometido "
+"hace 3 días."
 
 #: conversationlist_omicronrg9.json:Feygard_BG_guild03_0:0
 msgid "Hey! I live in Crossglen. How do you expect me to get there?"
-msgstr ""
+msgstr "¡Hey! Vivo en Crossglen. ¿Cómo esperas que llegue hasta allí?"
 
 #: conversationlist_omicronrg9.json:guild03_blood_1a
 msgid "(You look at the floor. The blood hasn't coagulated yet. It seems there has been a recent fight between two or more people.)"
 msgstr ""
+"(Miras al suelo. La sangre todavía no ha coagulado. Parece que hubo una "
+"lucha reciente entre dos o más personas.)"
 
 #: conversationlist_omicronrg9.json:guild03_blood_1b
 msgid "(The same blood stains. They are coagulating more and more. Soon they will be just another mark on the floor.)"
 msgstr ""
+"(La mismas manchas de sangre. Están coagulando más y más. Pronto solo será "
+"otra marca en el suelo.)"
 
 #: conversationlist_omicronrg9.json:guild03_blood_2a
 msgid "(More blood. There's no doubt, there has been a fight here.)"
-msgstr ""
+msgstr "(Más sangre. No hay duda, hubo una pelea aquí.)"
 
 #: conversationlist_omicronrg9.json:guild03_blood_2b
 msgid "(Looking again at the same blood marks won't achieve anything except wasted time.)"
 msgstr ""
+"(Volviendo a mirar la misma sangre no vas a conseguir más que perder el "
+"tiempo.)"
 
 #: conversationlist_omicronrg9.json:guild03_sword_clashing
 msgid ""
@@ -32054,149 +32330,181 @@ msgid ""
 "Sergeant! Sergeant!\n"
 "... *laughter*"
 msgstr ""
+"ARGH!! *suenan espadas chocando*\n"
+"\n"
+"¡Sargento!¡Sargento!\n"
+"... *carcajadas*"
 
 #: conversationlist_omicronrg9.json:guild03_sword_clashing:0
 msgid "That sounds like fighting nearby. I should check into that."
-msgstr ""
+msgstr "Suena a que hay una lucha cerca. Debería revisarlo."
 
 #: conversationlist_omicronrg9.json:guild03_deadpatrol_1_1
 msgid "(You see, horrified, how this man is bleeding out rapidly. He has countless cuts and his face is mutilated. You can almost hear his gasps.)"
 msgstr ""
+"(Ves, horrorizado, como este hombre sangra rápidamente. Tiene innumerables "
+"cortes y su cara está mutilada. Casi puedes oirle jadear.)"
 
 #: conversationlist_omicronrg9.json:guild03_deadpatrol_1_1:0
+#, fuzzy
 msgid "Shadow, embrace him."
-msgstr ""
+msgstr "Shadow, acógele."
 
 #: conversationlist_omicronrg9.json:guild03_deadpatrol_1_1:1
 msgid "For the glory of Feygard, you will be avenged!"
-msgstr ""
+msgstr "¡Por la gloria de Feygard, serás vengado!"
 
 #: conversationlist_omicronrg9.json:guild03_deadpatrol_2_1
 msgid "Sar...gent. *gasps*."
-msgstr ""
+msgstr "Sar...gento. *jadea*"
 
 #: conversationlist_omicronrg9.json:guild03_deadpatrol_2_2
 msgid ""
 "Y..you kid ... Argh! *spits up blood*.\n"
 "That guy is not ... Argh."
 msgstr ""
+"T... tú, niño... ¡Argh! *escupe sangre*.\n"
+"Ese hombre no es... Argh."
 
 #: conversationlist_omicronrg9.json:guild03_deadpatrol_2_2:0
 #: conversationlist_omicronrg9.json:guild03_deadpatrol_2_2:1
 msgid "What guy?"
-msgstr ""
+msgstr "¿Qué hombre?"
 
 #: conversationlist_omicronrg9.json:guild03_deadpatrol_2_3
 msgid ""
 "No ... he's not .... Agggh!\n"
 "[He has stopped breathing. I cannot do anything for him. Better to move on.]"
 msgstr ""
+"No... él no es... Agggh!\n"
+"[Deja de respirar. No puedo hacer nada por él. Mejor continuar.]"
 
 #: conversationlist_omicronrg9.json:guild03_deadpatrol_2_3:0
 msgid "Shadow, embrace him ...."
-msgstr ""
+msgstr "Shadow, acógele."
 
 #: conversationlist_omicronrg9.json:guild03_deadpatrol_2_3:1
 msgid "I'll save your sergeant!"
-msgstr ""
+msgstr "¡Salvaré tu sargento!"
 
 #: conversationlist_omicronrg9.json:guild03_doorlock_2
 msgid "(The terrible smell of blood here is unbearable. However, I should check whether those men are alive.)"
 msgstr ""
+"(El fuerte olor a sangre es insoportable. Sin embargo, debería comprobar si "
+"esos hombres siguen vivos.)"
 
 #: conversationlist_omicronrg9.json:guild03_doorlock_3
 msgid "No way. There are countless cobwebs. I should go through the door."
-msgstr ""
+msgstr "Imposible. Hay innumerables telarañas. Debería ir por la puerta."
 
 #: conversationlist_omicronrg9.json:guild03_doorlock_1
 msgid "I think I should check those strange blood marks before going on ...."
 msgstr ""
+"Creo que primero debería comprobar esas marcas tan extrañas de sangre antes "
+"de continuar..."
 
 #: conversationlist_omicronrg9.json:rebthief_guild03_1
 msgid ""
 "Another idiot trying to pass through here, eh?\n"
 "Your life ends here!"
 msgstr ""
+"Otro idiota intentando pasar por aquí, ¿eh?\n"
+"¡Tu vida acabará aquí!"
 
 #: conversationlist_omicronrg9.json:rebthief_guild03_1:0
 msgid "The people you've killed will be avenged."
-msgstr ""
+msgstr "Los que mataste serán vengados."
 
 #: conversationlist_omicronrg9.json:FeygardSerg_guild03_1
 msgid ""
 "(Gives you a surprised look). How ...?\n"
 "Who are you kid?"
 msgstr ""
+"(Te mira sorprendido.) ¿Cómo...?\n"
+"¿Quién eres, niño?"
 
 #: conversationlist_omicronrg9.json:FeygardSerg_guild03_1:0
 msgid "Eh ... I am ..."
-msgstr ""
+msgstr "Eh... Soy..."
 
 #: conversationlist_omicronrg9.json:FeygardSerg_guild03_1:1
 msgid "That doesn't ..."
-msgstr ""
+msgstr "Eso no..."
 
 #: conversationlist_omicronrg9.json:FeygardSerg_guild03_2
 msgid ""
 "Wait! That's not actually important.\n"
 "Leave this dangerous place, right now!"
 msgstr ""
+"¡Espera! Eso no importa.\n"
+"Vete de este peligroso sitio, ¡ahora!"
 
 #: conversationlist_omicronrg9.json:FeygardSerg_guild03_2:0
 msgid "You are right. It would be better to leave."
-msgstr ""
+msgstr "Tienes razón. Sería mejor que me vaya."
 
 #: conversationlist_omicronrg9.json:FeygardSerg_guild03_2:1
 msgid "Hah! No way, I won't give up."
-msgstr ""
+msgstr "¡Hah! De ninguna forma, no voy a rendirme."
 
 #: conversationlist_omicronrg9.json:FeygardSerg_guild03_2:2
 msgid "I'm here because ... I'm here to help you!"
-msgstr ""
+msgstr "Estoy aquí porque... ¡estoy aquí para ayudarte!"
 
 #: conversationlist_omicronrg9.json:FeygardSerg_guild03_3
 msgid "My whole patrol is dead! Why do you think you have any chance of success?"
 msgstr ""
+"¡Todo mi escuadrón está muerto!¿Por qué crees que tienes alguna posibilidad "
+"de ganar?"
 
 #: conversationlist_omicronrg9.json:FeygardSerg_guild03_3:0
 msgid "I managed to reach this place. Is that not enough for you?"
-msgstr ""
+msgstr "He conseguido llegar hasta aquí. ¿No es suficiente para ti?"
 
 #: conversationlist_omicronrg9.json:FeygardSerg_guild03_3:1
 msgid "I'm not here to discuss that with you."
-msgstr ""
+msgstr "No estoy aquí para hablar de eso contigo."
 
 #: conversationlist_omicronrg9.json:FeygardSerg_guild03_4a
 msgid "It's your life, do whatever you want."
-msgstr ""
+msgstr "Es tu vida, haz lo que te plazca."
 
 #: conversationlist_omicronrg9.json:FeygardSerg_guild03_4a:0
 msgid "Please tell me what do you know about the current situation."
-msgstr ""
+msgstr "Por favor dime lo que sepas de la situación actual."
 
 #: conversationlist_omicronrg9.json:FeygardSerg_guild03_4b
 msgid "Indeed, I don't know why are you here!"
-msgstr ""
+msgstr "De hecho, ¡no sé por qué estás aquí!"
 
 #: conversationlist_omicronrg9.json:FeygardSerg_guild03_5
 msgid "I don't know much. Only that me and my patrol were sent here to arrest a murderer. But what we found was unexpected."
 msgstr ""
+"No sé mucho. Solo que mi escuadrón y yo fuimos enviados para arrestar a un "
+"asesino. Pero lo que nos encontramos fue inesperado."
 
 #: conversationlist_omicronrg9.json:FeygardSerg_guild03_5:0
 msgid "Unexpected?"
-msgstr ""
+msgstr "¿Inesperado?"
 
 #: conversationlist_omicronrg9.json:FeygardSerg_guild03_6
 msgid "We reached these passages via a forest cavern, and went through the beasts without any major problem. Suddenly, the suspect appeared with a group of men, probably his allies or subordinates ..."
 msgstr ""
+"Llegamos a estos caminos mediante una cueva en el bosque, y nos abrimos paso "
+"ante las bestias sin mayores problemas. De repente, el sospechoso apareció "
+"con un grupo de hombres, probablemente sus aliados o subordinados..."
 
 #: conversationlist_omicronrg9.json:FeygardSerg_guild03_7
 msgid "Those people were fast. Very fast and very dangerous. They killed them! My fellows, all of them defeated!"
 msgstr ""
+"Esa gente era veloz. Muy rápidos y peligrosos. ¡Los mataron!¡Mis compañeros, "
+"todos derrotados!"
 
 #: conversationlist_omicronrg9.json:FeygardSerg_guild03_8
 msgid "I managed to get rid of most of them, but I'm severely wounded and unable to continue ..."
 msgstr ""
+"Conseguí deshacerme de la mayoría, pero estoy gravemente herido e incapaz de "
+"avanzar..."
 
 #: conversationlist_omicronrg9.json:FeygardSerg_guild03_9a
 msgid ""
@@ -32204,243 +32512,273 @@ msgid ""
 "\n"
 "He's playing with us!"
 msgstr ""
+"¿Lo entiendes? Debes huir antes de que sea demasiado tarde.\n"
+"\n"
+"¡Está jugando con nosotros!"
 
 #: conversationlist_omicronrg9.json:FeygardSerg_guild03_9a:0
 msgid "You are right. I will leave."
-msgstr ""
+msgstr "Tienes razón. Me iré."
 
 #: conversationlist_omicronrg9.json:FeygardSerg_guild03_9a:1
 msgid "Take these supplies and leave. I'll avenge your mates."
-msgstr ""
+msgstr "Toma estas provisiones y vete. Vengaré a tus compañeros."
 
 #: conversationlist_omicronrg9.json:FeygardSerg_guild03_9a:2
 msgid "Don't worry. You must report this before it is too late. I'll go there instead of you."
 msgstr ""
+"No te preocupes. Debes informar de esto antes de que sea tarde. Yo iré en tu "
+"lugar."
 
 #: conversationlist_omicronrg9.json:FeygardSerg_guild03_10
 msgid "Agh, thank you. You are valiant, kid. I hope to see you when we are both out of here. I'll invite you for a drink!"
 msgstr ""
+"Agh, gracias. Niño, eres valiente. Espero verte cuando ambos salgamos de "
+"aquí. ¡Te invitaré a tomar algo!"
 
 #: conversationlist_omicronrg9.json:FeygardSerg_guild03_10:0
 msgid "OK, thank you. Now I have to run."
-msgstr ""
+msgstr "OK, gracias. Ahora debo irme."
 
 #: conversationlist_omicronrg9.json:FeygardSerg_guild03_10:1
 msgid "Yeah, sounds good. For the glory of Feygard I'll avenge your mates!"
-msgstr ""
+msgstr "Sí, suena bien. Por la gloria de Feygard, ¡vengaré a tus compañeros!"
 
 #: conversationlist_omicronrg9.json:guild03_Hentrance_1
 msgid "(You see a hole leading to a cave. Maybe this is a good place to start searching.)"
 msgstr ""
+"(Ves un agujero que lleva a una cueva. Tal vez es un buen sitio para empezar "
+"a buscar.)"
 
 #: conversationlist_omicronrg9.json:FeygardSerg_guild03_9b
 msgid "Kid, why are you still here? Leave me, I'm just resting a bit."
-msgstr ""
+msgstr "Niño, ¿por qué estás todavía aquí? Déjame, solo descanso un poco."
 
 #: conversationlist_omicronrg9.json:FeygardSerg_guild03_9b:0
 msgid "Don't be rude! I'm here to help you. Please leave and go to a safer place."
 msgstr ""
+"¡No seas maleducado! Estoy aquí para ayudarte. Por favor vete a un lugar más "
+"seguro."
 
 #: conversationlist_omicronrg9.json:FeygardSerg_guild03_9b:1
 msgid "Calm down. Take these supplies and call backup!"
-msgstr ""
+msgstr "Cálmate. ¡Toma estas provisiones y busca refuerzos!"
 
 #: conversationlist_omicronrg9.json:rebthief2_g03_1
 msgid "You couldn't be in a worse place to play hide and seek, kid. Die!"
 msgstr ""
+"Niño, no podrías estar en un peor sitio para jugar al escondite. ¡Muere!"
 
 #: conversationlist_omicronrg9.json:rebthief2_g03_1:0
 msgid "I'm not playing that!!"
-msgstr ""
+msgstr "¡¡No estoy jugando a eso!!"
 
 #: conversationlist_omicronrg9.json:rebthief2_g03_1:1
 msgid "Now your mates will play that with your corpse!"
-msgstr ""
+msgstr "¡Ahora tus compañeros jugarán con tu cadáver!"
 
 #: conversationlist_omicronrg9.json:guild03_crackshot_1
 msgid "Oh ho! Welcome to my base, kid."
-msgstr ""
+msgstr "¡Oh, no! Bienvenido a mi base, chaval."
 
 #: conversationlist_omicronrg9.json:guild03_crackshot_1:0
 msgid "Hmm .... This is not the place where I would choose to live."
-msgstr ""
+msgstr "Hmm... Este no es el sitio que escogería para vivir."
 
 #: conversationlist_omicronrg9.json:guild03_crackshot_1:1
 msgid "You are under arrest for the crimes you've committed against Feygard!"
-msgstr ""
+msgstr "¡Estás bajo arresto por lo crímenes que has cometido contra Feygard!"
 
 #: conversationlist_omicronrg9.json:guild03_crackshot_2a
 msgid "Haven't you realized yet? Your life is not going to be much longer."
-msgstr ""
+msgstr "¿Todavía no te has dado cuenta? No vivirás por mucho más."
 
 #: conversationlist_omicronrg9.json:guild03_crackshot_2a:0
 msgid "Hah! Let's see if you're as strong as Umar has said."
-msgstr ""
+msgstr "¡Hah! Veamos si eres tan fuerte como Umar dijo."
 
 #: conversationlist_omicronrg9.json:guild03_crackshot_2a:1
 msgid "Prepare to die!"
-msgstr ""
+msgstr "¡Prepárate para morir!"
 
 #: conversationlist_omicronrg9.json:guild03_crackshot_2b
 msgid "*laugh* Are you serious?"
-msgstr ""
+msgstr "*ríe* ¿Vas en serio?"
 
 #: conversationlist_omicronrg9.json:guild03_crackshot_3
 msgid "Do you really believe such words are worth anything here?"
-msgstr ""
+msgstr "¿Realmente crees que palabrería de esa sirve de algo aquí?"
 
 #: conversationlist_omicronrg9.json:guild03_crackshot_4
 msgid "Let's see if you can arrest me after I have finished with you!"
-msgstr ""
+msgstr "¡Veamos si puedes arrestarme después de que haya terminado contigo!"
 
 #: conversationlist_omicronrg9.json:guild03_crackshot_4:0
 msgid "The Feygard soldiers will be avenged!"
-msgstr ""
+msgstr "¡Los soldados de Feygard serán vengados!"
 
 #: conversationlist_omicronrg9.json:guild03_crackshot_4:1
 msgid "Your head will serve as proof!"
-msgstr ""
+msgstr "¡Tu cabeza servirá de prueba!"
 
 #: conversationlist_omicronrg9.json:guild03_hideout3_lock
 msgid "The lock seems to match with the key of Luthor."
-msgstr ""
+msgstr "El candado parece que combina con la Llave de Luthor."
 
 #: conversationlist_omicronrg9.json:guild03_hideout3_lock:0
 msgid "Insert the key of Luthor into the lock."
-msgstr ""
+msgstr "Meter la Llave de Luthor en el candado."
 
 #: conversationlist_omicronrg9.json:guild03_hideout3_lock:1
 msgid "Insert the blessed key of Luthor into the lock."
-msgstr ""
+msgstr "Meter la Bendita Llave de Luthor en el candado."
 
 #: conversationlist_omicronrg9.json:guild03_hideout3_exit_1
 msgid "W..wait ...."
-msgstr ""
+msgstr "Es... espera..."
 
 #: conversationlist_omicronrg9.json:guild03_hideout3_exit_2
 msgid ""
 "(The dying Crackshot is in agony. He looks at you despairingly)\n"
 "It is curs...sed."
 msgstr ""
+"(El moribundo Crackshot está agonizando. Te mira deseperado)\n"
+"Está mal...dita."
 
 #: conversationlist_omicronrg9.json:guild03_hideout3_exit_3
 msgid ""
 "The key is cursed .... She ... I am ... (Crackshot finally dies, emitting a soft bluish breath)\n"
 ""
 msgstr ""
+"La llave está maldita... Ella... Yo soy... (Finalmente Crackshot muere, "
+"echando un último aliento suavemente)\n"
 
 #: conversationlist_omicronrg9.json:guild03_hideout3_exit_3:0
 msgid "Bah .... Too many questions. I need to come back."
-msgstr ""
+msgstr "Buah... demasiadas preguntas. Debo volver."
 
 #: conversationlist_omicronrg9.json:umar_guild03_25
 msgid "Excellent. Did he have the key with him?"
-msgstr ""
+msgstr "Excelente. ¿Tenía la llave consigo?"
 
 #: conversationlist_omicronrg9.json:umar_guild03_25:0
 msgid "Yes ... [give key]. Why is this key so important to us?"
-msgstr ""
+msgstr "Sí... [dar la llave]. ¿Por qué esta llave nos resulta tan importante?"
 
 #: conversationlist_omicronrg9.json:umar_guild03_25:1
 msgid "Sure, here, take it. And maybe it's time to give me some more information."
-msgstr ""
+msgstr "Claro, aquí, tómala. Y tal vez sea momento de darme más información."
 
 #: conversationlist_omicronrg9.json:umar_guild03_25:2
 msgid "(Lie) No, I didn't find it."
-msgstr ""
+msgstr "(Mientes) No, no la encontré."
 
 #: conversationlist_omicronrg9.json:umar_guild03_25:3
 msgid "He had the key, but I don't have it with me."
-msgstr ""
+msgstr "Tenía la llave, pero no la traigo conmigo."
 
 #: conversationlist_omicronrg9.json:umar_guild03_25_1
 msgid "Don't try to fool me. I am Umar. I know you have it."
-msgstr ""
+msgstr "No intentes engañarme. Soy Umar. Sé que la tienes."
 
 #: conversationlist_omicronrg9.json:umar_guild03_25_1:0
 msgid "Oh. Yes, I remember now that I found the key. Here, take it."
-msgstr ""
+msgstr "Oh. Sí, ahora recuerdo que encontré la llave. Aquí, cógela."
 
 #: conversationlist_omicronrg9.json:umar_guild03_25_1:1
 msgid "Even if I have the key, I won't give it to you."
-msgstr ""
+msgstr "Incluso si la tuviese, no te la daría."
 
 #: conversationlist_omicronrg9.json:umar_guild03_25_3
 msgid "Why did it take so long? And do not look at me that way. I can not tell you anything about the key for now."
 msgstr ""
+"¿Por qué tardaste tanto? Y no me mires así. De momento no te puedo decir "
+"nada sobre la llave."
 
 #: conversationlist_omicronrg9.json:umar_guild03_25_1a
 msgid "Come back when you are sane again."
-msgstr ""
+msgstr "Vuelve cuando estés cuerdo de nuevo."
 
 #: conversationlist_omicronrg9.json:umar_guild03_25_2
 msgid "Then what you are waiting for? Go and get it!"
-msgstr ""
+msgstr "¿Entonces a qué esperas?¡Ve y cógela!"
 
 #: conversationlist_omicronrg9.json:umar_guild03_26a
 msgid "I'm sorry, but for now I can't say more."
-msgstr ""
+msgstr "Lo siento, pero de momento no puedo decir nada más."
 
 #: conversationlist_omicronrg9.json:umar_guild03_26a:1
 msgid "Tsch, OK."
-msgstr ""
+msgstr "Tsch, OK."
 
 #: conversationlist_omicronrg9.json:umar_guild03_26b
 msgid "Be patient, my friend. Everything will come in due time."
-msgstr ""
+msgstr "Ten paciencia, amigo. Todo llegará en el debido momento."
 
 #: conversationlist_omicronrg9.json:umar_guild03_26b:0
 msgid "I expect my patience will be rewarded."
-msgstr ""
+msgstr "Espero que mi paciencia sea recompensada."
 
 #: conversationlist_omicronrg9.json:umar_guild03_26b:1
 msgid "If you say so ..."
-msgstr ""
+msgstr "Si tú lo dices..."
 
 #: conversationlist_omicronrg9.json:umar_guild03_27a_1
 msgid "Anyway, you've done your work. My spies reported to me that you saved someone's life."
 msgstr ""
+"De todas formas, has hecho tu trabajo. Mis espías me informaron de que le "
+"salvaste la vida a alguien."
 
 #: conversationlist_omicronrg9.json:umar_guild03_27a_1:0
 #: conversationlist_omicronrg9.json:umar_guild03_27a_2:0
 msgid "If your spies help me, tasks would be easier."
-msgstr ""
+msgstr "Si tus espías ayudasen, las misiones serían más sencillas."
 
 #: conversationlist_omicronrg9.json:umar_guild03_27a_1:1
 msgid "It is true .... Nobody important."
-msgstr ""
+msgstr "Verdad... Nadie importante."
 
 #: conversationlist_omicronrg9.json:umar_guild03_27a_1:2
 msgid "Yeah. He was a Feygard officer ... a sergeant I think."
-msgstr ""
+msgstr "Así es. Un oficial de Feygard... un sargento si no recuerdo mal."
 
 #: conversationlist_omicronrg9.json:umar_guild03_27a_2
 msgid "Anyway, you've done your work. My spies reported to me you had saved someone's life."
 msgstr ""
+"De todas formas, has hecho tu trabajo. Mis espías me informaron de que le "
+"salvaste la vida a alguien."
 
 #: conversationlist_omicronrg9.json:umar_guild03_27a_2:1
 msgid "I tried to, unfortunately he didn't survive. But it was nobody important."
 msgstr ""
+"Lo intenté, desgraciadamente no sobrevivió. Pero no era nadie importante."
 
 #: conversationlist_omicronrg9.json:umar_guild03_27a_2:2
 msgid "No, he died at last. He was a Feygard officer ... a sergeant I think."
 msgstr ""
+"No, al final murió. Era un oficial de Feygard... un sargento si no recuerdo "
+"mal."
 
 #: conversationlist_omicronrg9.json:umar_guild03_27b
+#, fuzzy
 msgid "Trust me, it will."
-msgstr ""
+msgstr "Créeme, lo será."
 
 #: conversationlist_omicronrg9.json:umar_guild03_27c
 msgid "I've told you to have patience, my friend. Any thief is dead without patience."
 msgstr ""
+"Te dije que tuvieras pacienca, amigo mío. Cualquier ladrón está muerto sin "
+"paciencia."
 
 #: conversationlist_omicronrg9.json:umar_guild03_27c:1
 msgid "Understood ...."
-msgstr ""
+msgstr "Comprendo..."
 
 #: conversationlist_omicronrg9.json:umar_guild03_28b
 msgid "I mean this is not the time to tell you what you want to know, sorry."
 msgstr ""
+"Quiero decir que este no es el momento de contarte lo que quieres saber, lo "
+"siento."
 
 #: conversationlist_omicronrg9.json:umar_guild03_28b:0
 msgid "Tsch, whatever."
@@ -32448,15 +32786,17 @@ msgstr ""
 
 #: conversationlist_omicronrg9.json:umar_guild03_28b:1
 msgid "Yes, understood."
-msgstr ""
+msgstr "Si, entendido."
 
 #: conversationlist_omicronrg9.json:umar_guild03_28a
 msgid "Each of you have your own specific task. Spies must hide their identities, even to their allies."
 msgstr ""
+"Cada uno de vosotros tiene su tarea específica. Los espías deben ocultar su "
+"identidad incluso a sus aliados."
 
 #: conversationlist_omicronrg9.json:umar_guild03_28a:0
 msgid "That makes sense."
-msgstr ""
+msgstr "Eso tiene sentido."
 
 #: conversationlist_omicronrg9.json:umar_guild03_29
 msgid "Hmm! And now to business. Here's your reward for the good work."
@@ -32470,11 +32810,11 @@ msgstr ""
 
 #: conversationlist_omicronrg9.json:umar_guild03_30:0
 msgid "I'll be back soon."
-msgstr ""
+msgstr "Estaré de vuelta pronto."
 
 #: conversationlist_omicronrg9.json:umar_guild03_30:1
 msgid "Count me in for the next job."
-msgstr ""
+msgstr "Cuenta conmigo para el siguiente trabajo."
 
 #: conversationlist_omicronrg9.json:umar_guild03_31b
 msgid "I will, no doubt about it."
@@ -32491,22 +32831,24 @@ msgstr ""
 #: conversationlist_omicronrg9.json:umar_guild03_32
 msgid "However, the Feygard presence is still significant. Be cautious with with what you do."
 msgstr ""
+"De todas formas, la presencia de Feygard todavía es significativa. Ten "
+"cuidado con lo que haces."
 
 #: conversationlist_omicronrg9.json:umar_guild03_32:0
 msgid "I will, thank you for the advice."
-msgstr ""
+msgstr "Lo tendré, gracias por el consejo."
 
 #: conversationlist_omicronrg9.json:umar_guild03_32:1
 msgid "All is under control. Bye."
-msgstr ""
+msgstr "Todo está bajo control. Adiós."
 
 #: conversationlist_omicronrg9.json:umar_guild04_1b
 msgid "No jobs today my young friend. Maybe some other day."
-msgstr ""
+msgstr "No hay trabajos para hoy mi joven amigo. Quiza algún otro día."
 
 #: conversationlist_omicronrg9.json:umar_guild04_1b:0
 msgid "I see. Bye."
-msgstr ""
+msgstr "Ya veo. Adiós."
 
 #: conversationlist_omicronrg9.json:umar_guild04_1b:1
 msgid "That's a shame. Find more time for my skills then."
@@ -32514,7 +32856,7 @@ msgstr ""
 
 #: conversationlist_omicronrg9.json:umar_guild04_1a
 msgid "[Here, the story continues]"
-msgstr ""
+msgstr "[Aquí, la historia continúa]"
 
 #: conversationlist_omicronrg9.json:ambelie_guild02_4c
 msgid "Wha... what are you referring to?"
@@ -32915,7 +33257,7 @@ msgstr ""
 
 #: conversationlist_arulir_mountain.json:bernhar_12:1
 msgid "Ah. Interesting. Keep having fun with it. Bye."
-msgstr ""
+msgstr "Ah, interesante. Disfrutalo. Adiós."
 
 #: conversationlist_arulir_mountain.json:bernhar_16
 msgid "Oh - the wandering kid! You are still alive? How surprising!"
@@ -43604,7 +43946,7 @@ msgstr "Duaina"
 #: monsterlist_brimhaven.json:brv_villager14
 #: monsterlist_brimhaven.json:brv_villager15
 msgid "Commoner"
-msgstr ""
+msgstr "Plebeyo"
 
 #: monsterlist_v0611_npcs2.json:jhaeld
 msgid "Jhaeld"
@@ -44444,7 +44786,7 @@ msgstr "Ladrón silencioso"
 #: monsterlist_stoutford.json:stoutford_drinker_2
 #: monsterlist_brimhaven.json:brv_tavern1_guest
 msgid "Customer"
-msgstr ""
+msgstr "Cliente"
 
 #: monsterlist_stoutford.json:stoutford_smith
 msgid "Cornith"
@@ -46410,7 +46752,10 @@ msgstr "Cortes baratos"
 
 #: questlist_v0610.json:benbyr:10
 msgid "I have met Benbyr outside the Crossroads guardhouse. He wants to get revenge on an old 'business partner' of his - Tinlyn. Benbyr wants me to kill all Tinlyn's sheep."
-msgstr "Me he encontrado con Benbyr fuera del cuartel  de Crossroads. Quiere vengarse de un viejo 'socio' suyo, Tinlyn. Benbyr quiere que mate a todas las ovejas de Tinlyn."
+msgstr ""
+"Me he encontrado con Benbyr fuera del cuartel de Crossroads. Quiere vengarse "
+"de un viejo 'socio' suyo, Tinlyn. Benbyr quiere que mate a todas las ovejas "
+"de Tinlyn."
 
 #: questlist_v0610.json:benbyr:20
 msgid "I have agreed to help Benbyr find Tinlyn's sheep and kill all eight of them. I should go look for them in the fields northwest of the Crossroads guardhouse."
@@ -46550,7 +46895,10 @@ msgstr "Debería investigar qué pudo haber causado que la gente de Loneford se 
 
 #: questlist_v0610.json:loneford:21
 msgid "The guards in the Crossroads guardhouse are certain that the illness in Loneford is caused by some sabotage done by the priests or people from Nor City."
-msgstr "Los guardias del cuartel  de Crossroads están seguros de que la enfermedad en Loneford es causada por algún sabotaje hecho por los sacerdotes o la gente de Nor City."
+msgstr ""
+"Los guardias del cuartel de Crossroads están seguros de que la enfermedad en "
+"Loneford es causada por algún sabotaje hecho por los sacerdotes o la gente "
+"de Nor City."
 
 #: questlist_v0610.json:loneford:22
 msgid "Some villagers in Loneford believe that the illness is caused by the guards from Feygard, in some scheme to make the people suffer even more than they already have."
@@ -48907,7 +49255,7 @@ msgstr ""
 
 #: questlist_brimhaven.json:quick_glance:80
 msgid "I killed the Basilisk."
-msgstr ""
+msgstr "He matado al basilisco."
 
 #: questlist_brimhaven.json:quick_glance:85
 msgid "I saved the life of Anakis' sister Juttarka."
@@ -49009,18 +49357,20 @@ msgstr ""
 #: questlist_brimhaven.json:brv_dagger:110
 msgid "I've found a gravestone that told me that Lawellyn was related to Arlish. I should try to find her."
 msgstr ""
+"He hallado una lápida que indicaba que Lawellyn era pariente de Arlish. "
+"Debería encontrarla."
 
 #: questlist_brimhaven.json:brv_dagger:115
 msgid "Arlish couldn't tell me anything about the dagger because I no longer have it."
-msgstr ""
+msgstr "Arlish no me pudo contar nada sobre la daga porque ya no la tengo."
 
 #: questlist_brimhaven.json:brv_dagger:120
 msgid "I decided to not help Arlish by investigating Lawellyn's disappearance."
-msgstr ""
+msgstr "Decidí no ayudar a Arlish a investigar la desaparición de Lawellyn."
 
 #: questlist_brimhaven.json:brv_dagger:130
 msgid "I decided to help Arlish by investigating Lawellyn's disappearance."
-msgstr ""
+msgstr "Decidí ayudar a Arlish a investigar la desaparición de Lawellyn."
 
 #: questlist_brimhaven.json:brv_dagger:140
 msgid "In Brimhaven's western tavern, I met a man named Forlin who recommended that I speak to Kizzo in the Loneford tavern."
@@ -49032,7 +49382,7 @@ msgstr ""
 
 #: questlist_brimhaven.json:brv_dagger:160
 msgid "I should take the evidence to Kizzo."
-msgstr ""
+msgstr "Debo llevar la evidencia a Kizzo."
 
 #: questlist_brimhaven.json:brv_dagger:170
 msgid "Kizzo recommended that I ask Venanra in Brimhaven about the glove."
@@ -49040,27 +49390,30 @@ msgstr ""
 
 #: questlist_brimhaven.json:brv_dagger:180
 msgid "After speaking with Venanra, I learned that the glove belonged to Ogea."
-msgstr ""
+msgstr "Luego de hablar con Venanra, descubrí que el guante pertenecía a Ogea."
 
 #: questlist_brimhaven.json:brv_dagger:190
 msgid "I accepted Ogea's side of the story."
-msgstr ""
+msgstr "Acepté la versión de Ogea de la historia."
 
 #: questlist_brimhaven.json:brv_dagger:200
 msgid "I was not able to help Arlish find out more about the death of her father."
 msgstr ""
+"No pude ayudar a Arlish a averiguar más datos sobre la muerte de su padre."
 
 #: questlist_brimhaven.json:brv_dagger:210
 msgid "I decided that Ogea should be punished."
-msgstr ""
+msgstr "He decidido que Ogea reciba castigo."
 
 #: questlist_brimhaven.json:brv_dagger:220
 msgid "I informed the authorities of the results of my investigation."
-msgstr ""
+msgstr "He informado a las autoridades de los resultados de mi pesquisa."
 
 #: questlist_brimhaven.json:brv_dagger:230
 msgid "Arlish thanked me for finding her father's murderer, and gave me his dagger as a gift."
 msgstr ""
+"Arlish me agradeció por encontrar al asesino de su padre y me regaló su "
+"espada."
 
 #: questlist_brimhaven.json:brv_present
 msgid "Honor your parents"
@@ -49092,7 +49445,7 @@ msgstr ""
 
 #: questlist_brimhaven2.json:brv_school2
 msgid "Lessons learned"
-msgstr ""
+msgstr "Lecciones aprendidas"
 
 #: questlist_brimhaven2.json:brv_school2:10
 msgid "I entered a classroom in Brimhaven's school. The teacher told me to sit down."
@@ -49184,7 +49537,7 @@ msgstr ""
 
 #: questlist_brimhaven2.json:brv_wh
 msgid "Inventory"
-msgstr ""
+msgstr "Inventario"
 
 #: questlist_brimhaven2.json:brv_wh:10
 msgid "Facutloni asked me to help him check the storage. I should check if there is a pair of every item."
@@ -49232,11 +49585,11 @@ msgstr ""
 
 #: questlist_brimhaven2.json:brv_wh:900
 msgid "I found all the 10 pairs. Facutloni is very happy."
-msgstr ""
+msgstr "Encontré los 10 pares. Facutloni está muy feliz."
 
 #: questlist_brimhaven_2.json:new_snake_master
 msgid "Perception is not reality"
-msgstr ""
+msgstr "La percepción no es la realidad"
 
 #: questlist_brimhaven_2.json:new_snake_master:25
 msgid "I must stop Ewmondold from getting stronger."
@@ -49265,18 +49618,20 @@ msgstr ""
 #: questlist_brimhaven_2.json:cat_and_mouse:10
 msgid "I agreed to help Seviron trap the mouse that the cat cannot catch. I need to get some cheese, a large empty bottle, and three rocks."
 msgstr ""
+"Decidí ayudar a Seviron a atrapar el ratón que el gato no puede capturar. "
+"Debo conseguir queso, una botella grande vacía y tres rocas."
 
 #: questlist_brimhaven_2.json:cat_and_mouse:20
 msgid "I have given Seviron the rocks."
-msgstr ""
+msgstr "Entregué las rocas a Seviron."
 
 #: questlist_brimhaven_2.json:cat_and_mouse:30
 msgid "I have given Seviron the cheese."
-msgstr ""
+msgstr "Entregué el queso a Seviron."
 
 #: questlist_brimhaven_2.json:cat_and_mouse:40
 msgid "I obtained a suitable bottle from Arlish."
-msgstr ""
+msgstr "Arlish me dio una botella adecuada."
 
 #: questlist_brimhaven_2.json:cat_and_mouse:50
 msgid "I have given Seviron the bottle. Seviron will set the trap, but it may take some time to catch the mouse. I should come back later."
@@ -49285,22 +49640,26 @@ msgstr ""
 #: questlist_brimhaven_2.json:cat_and_mouse:60
 msgid "The mouse has been caught! Seviron gave it to me in the bottle. He said I can decide what to do with it."
 msgstr ""
+"¡El ratón fue capturado! Seviron me lo entregó en la botella. Me dijo que "
+"podía decidir qué hacer con él."
 
 #: questlist_brimhaven_2.json:cat_and_mouse:70
 msgid "I decided to give the mouse to the cat. The cat would have eventually killed it anyway."
-msgstr ""
+msgstr "Decidí dar el ratón al gato. Habría acabado matándolo de todos modos."
 
 #: questlist_brimhaven_2.json:cat_and_mouse:80
 msgid "I decided to release the mouse outside. Seviron told me to do that outside the town."
 msgstr ""
+"Decidí sacar al ratón y soltarlo. Seviron me dijo que saliera de la ciudad "
+"para hacerlo."
 
 #: questlist_brimhaven_2.json:cat_and_mouse:90
 msgid "I released the mouse."
-msgstr ""
+msgstr "Solté al ratón."
 
 #: questlist_brimhaven_2b.json:hettar_dog
 msgid "Where is Norry?"
-msgstr ""
+msgstr "¿Dónde está Norry?"
 
 #: questlist_brimhaven_2b.json:hettar_dog:10
 msgid "I found Hettar, a tough boy about my age, on top of Blackwater mountain. He kept calling for a certain Norry."
@@ -49312,7 +49671,7 @@ msgstr ""
 
 #: questlist_brimhaven_2b.json:hettar_dog:30
 msgid "Hettar has given me a piece of Norry's favourite food."
-msgstr ""
+msgstr "Hettar me ha dado un poco del alimento favorito de Norry."
 
 #: questlist_brimhaven_2b.json:hettar_dog:40
 msgid "I have offered Hettar's piece of Wyrm meat to Norry, who took it eagerly."
@@ -49320,15 +49679,16 @@ msgstr ""
 
 #: questlist_brimhaven_2b.json:hettar_dog:50
 msgid "Norry ran off to reunite with Hettar."
-msgstr ""
+msgstr "Norry corrió a reunirse con Hettar."
 
 #: questlist_brimhaven_2b.json:hettar_dog:80
 msgid "Hettar thanked me a thousand times for my help in finding Norry."
-msgstr ""
+msgstr "Hettar me agradeció mucho haber ayudado a encontrar a Norry."
 
 #: questlist_brimhaven_2b.json:hettar_dog:90
 msgid "I explained to Hettar that I killed Norry. Hettar broke down on the floor in agony."
 msgstr ""
+"Expliqué a Hettar que maté a Norry. Hettar cayó al suelo anegado de lágrimas."
 
 #: worldmap.xml:world1:crossglen
 msgid "Crossglen"
@@ -49381,4 +49741,3 @@ msgstr "Castillo de Guynmart"
 #: worldmap.xml:world1:brimhaven_area
 msgid "Brimhaven"
 msgstr ""
-
