@@ -457,11 +457,11 @@
 \nスキルレベルが上がるごとに、両手武器のダメージ性能が元の%1$d%%増加します。</string>
     <string name="skill_longdescription_fightstyle_dualwield">メインハンドとオフハンドの2つの武器を同時に装備して戦う時に効果を発揮します。
 \n
-\nこのスキルがない場合、オフハンドで装備している武器はその性能の%1$d%%しか発揮できません。これには命中、クリティカルスキル、ダメージ性能、回避などが含まれます。このスキルがない場合、攻撃を行う際の攻撃コスト（APコスト）は、メイン武器の攻撃コストとオフハンドで使用する武器の攻撃コストの合計となります。
+\nこのスキルがない場合、オフハンドで装備している武器はその性能の%1$d%%しか発揮できません。これには命中、クリティカルスキル、ダメージ性能、回避などが含まれます。このスキルがない場合、攻撃を行う際の攻撃コスト（APコスト）は、メイン武器の攻撃コストとオフハンドで使用する武器の攻撃コストの合計となります。ダメージ修正は両方のうち低いほうが適応されます。
 \n
-\nスキルレベル1では、 オフハンドの武器性能の%2$d%%を発揮できます。攻撃コストは両方の武器の攻撃コストの高い側に、低い側の攻撃コストの%3$d%%を加えた値となります。
+\nスキルレベル1では、 オフハンドの武器性能の%2$d%%を発揮できます。攻撃コストは両方の武器の攻撃コストの高い側に、低い側の攻撃コストの%3$d%%を加えた値となります。ダメージ修正は両方の平均が適応されます。
 \n
-\nスキルレベル2では、 オフハンドの武器性能の%4$d%%を発揮できます。攻撃コストは装備している2つの武器のうち攻撃コストの高い側と同じです。</string>
+\nスキルレベル2では、 オフハンドの武器性能の%4$d%%を発揮できます。攻撃コストは装備している2つの武器のうち攻撃コストの高い側と同じです。ダメージ修正は最大値が適応されます。</string>
     <string name="skill_title_specialization_weapon_shield">専門化: 武器と盾</string>
     <string name="skill_title_specialization_2hand">専門化: 両手武器</string>
     <string name="skill_title_specialization_dualwield">専門化: 二刀流</string>
@@ -611,4 +611,19 @@
     <string name="skill_longdescription_fightstyle_weapon_shield">メインハンドに武器を装備し、オフハンドに盾やパリィ武器を装備して戦っている時に効果を発揮します。
 \n
 \nスキルレベルが上がるごとに、メインハンドに装備している武器の命中が元の命中の%1$d%%、盾やパリィ武器の回避が元の回避の%2$d%%増加します。</string>
+    <string name="combat_log_item_plural">%1$d個のアイテムを獲得した:</string>
+    <string name="combat_log_item_single">アイテムを獲得した:</string>
+    <string name="preferences_movement_dpad_transparency_70_pct">70%</string>
+    <string name="preferences_movement_dpad_transparency_60_pct">60%</string>
+    <string name="preferences_movement_dpad_transparency_50_pct">50%</string>
+    <string name="preferences_movement_dpad_transparency_40_pct">40%</string>
+    <string name="preferences_movement_dpad_transparency_30_pct">30%</string>
+    <string name="preferences_movement_dpad_transparency">方向キーが有効の場合、この設定で透明度を決定します。</string>
+    <string name="preferences_movement_dpad_transparency_title">方向キーの透明度</string>
+    <string name="skill_longdescription_spore_immunity">モンスターの攻撃が引き起こす胞子毒の状態変化を永続的に防ぎます。</string>
+    <string name="skill_shortdescription_spore_immunity">胞子毒に対する完全な免疫</string>
+    <string name="skill_title_spore_immunity">胞子毒免疫</string>
+    <string name="inventory_category_food">食べ物</string>
+    <string name="inventory_category_potion">ポーション</string>
+    <string name="inventory_category_jewelry">宝飾品</string>
 </resources>
