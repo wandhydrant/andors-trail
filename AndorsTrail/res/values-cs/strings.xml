@@ -523,13 +523,13 @@
     <string name="preferences_display_theme_green">Malachit</string>
     <string name="preferences_display_theme_charcoal">Obsidián</string>
     <string name="change_theme_requires_restart">Změna motivu vyžaduje restart. Hra Andor\'s Trail byla zavřena.</string>
-    <string name="skill_longdescription_fightstyle_dualwield">Poskytne bojový bonus, když je útok veden dvěma zbraněmi současně, jedna je v pravé ruce a druhá je v levé ruce. 
-\n 
-\nBez osvojení této dovednosti se využije pouze %1$d %% z charakteristik zbraně vybavené v levé ruce. To obsahuje šanci na zásah, úroveň kritického zásahu, zranění způsobená útokem a šanci na odvrácení útoku. Bez znalosti této dovednosti je časová náročnost (počet AB) útoku rovna součtu časové náročnosti útoku obou zbraní. 
-\n 
-\nPři osvojení jedné úrovně této dovednosti se využije %2$d %% z charakteristik zbraně vybavené v levé ruce a časová náročnost útoku je rovna součtu časové náročnosti útoku zbraně s vyšší časovou náročností a %3$d %% časové náročnosti zbraně s menší časovou náročností. 
-\n 
-\nPři osvojení dvou úrovní této dovednosti se využije %4$d %% z charakteristik zbraně vybavené v levé ruce a časová náročnost útoku je rovna časové náročnosti útoku zbraně s vyšší časovou náročností.</string>
+    <string name="skill_longdescription_fightstyle_dualwield">Poskytne bojový bonus, když je útok veden dvěma zbraněmi současně, jedna je v pravé ruce a druhá je v levé ruce.
+\n
+\nBez osvojení této dovednosti se využije pouze %1$d %% z charakteristik zbraně vybavené v levé ruce. To obsahuje šanci na zásah, úroveň kritického zásahu, zranění způsobená útokem a šanci na odvrácení útoku. Bez znalosti této dovednosti je časová náročnost (počet AB) útoku rovna součtu časové náročnosti útoku obou zbraní. Použije se nižší z obou násobitelů zranění.
+\n
+\nPři osvojení jedné úrovně této dovednosti se využije %2$d %% z charakteristik zbraně vybavené v levé ruce a časová náročnost útoku je rovna součtu časové náročnosti útoku zbraně s vyšší časovou náročností a %3$d %% časové náročnosti zbraně s menší časovou náročností. Použije se průměr z obou násobitelů zranění.
+\n
+\nPři osvojení dvou úrovní této dovednosti se využije %4$d %% z charakteristik zbraně vybavené v levé ruce a časová náročnost útoku je rovna časové náročnosti útoku zbraně s vyšší časovou náročností. Použije se vyšší násobitel zranění.</string>
     <string name="skill_longdescription_fightstyle_2hand">Poskytne bojový bonus, když je útok veden obouruční zbraní jako je např. obouruční meč, válečná sekera, obří kladivo. 
 \n 
 \nKaždá úroveň osvojení dovednosti zvýší zbrani zranění způsobená útokem o %1$d %% základního zranění způsobeného útokem zbraně.</string>
@@ -590,4 +590,19 @@
     <string name="dialog_game_over_text">Naposledy se nadechuješ a umířáš.</string>
     <string name="dialog_game_over_title">Konec hry</string>
     <string name="dialog_loading_failed_cheat">Andor\'s Trail nebyl schopen načíst uloženou hru. Uložená hra byla opět rozehrána.</string>
+    <string name="preferences_movement_dpad_transparency_70_pct">70%</string>
+    <string name="preferences_movement_dpad_transparency_60_pct">60%</string>
+    <string name="preferences_movement_dpad_transparency_50_pct">50%</string>
+    <string name="preferences_movement_dpad_transparency_40_pct">40%</string>
+    <string name="preferences_movement_dpad_transparency_30_pct">30%</string>
+    <string name="preferences_movement_dpad_transparency">Pokud je virtuální D-pad zapnutý, toto nastavení určuje, jak průhledný bude.</string>
+    <string name="preferences_movement_dpad_transparency_title">Průhlednost D-padu</string>
+    <string name="skill_longdescription_spore_immunity">Trvale zabraňuje útokům monster způsobit efekt stavu otravy spór.</string>
+    <string name="skill_shortdescription_spore_immunity">Plná imunita vůči otravě spór</string>
+    <string name="skill_title_spore_immunity">Imunita vůči otravě spór</string>
+    <string name="inventory_category_food">Jídlo</string>
+    <string name="inventory_category_potion">Lektvar</string>
+    <string name="inventory_category_jewelry">Šperky</string>
+    <string name="combat_log_item_plural">Našel jsi %1$d ks předmětů:</string>
+    <string name="combat_log_item_single">Našel jsi předmět:</string>
 </resources>
