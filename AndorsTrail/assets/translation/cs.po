@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: andors-trail\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-11-10 11:48+0000\n"
-"PO-Revision-Date: 2020-12-26 02:29+0000\n"
+"PO-Revision-Date: 2021-01-26 23:26+0000\n"
 "Last-Translator: Jiri Zizkin Zizka <web@zizkin.com>\n"
 "Language-Team: Czech <https://hosted.weblate.org/projects/andors-trail/"
 "game-content/cs/>\n"
@@ -341,15 +341,17 @@ msgstr "Otrava"
 
 #: actorconditions_fungi_panic.json:spore_poison
 msgid "Spore poisoning"
-msgstr ""
+msgstr "Otrava spór"
 
 #: actorconditions_gison.json:reinvigorated
+#, fuzzy
 msgid "Reinvigorated"
-msgstr ""
+msgstr "Oživený"
 
 #: actorconditions_gison.json:sated
+#, fuzzy
 msgid "Sated"
-msgstr ""
+msgstr "Nasycený"
 
 #: conversationlist_mikhail.json:mikhail_gamestart
 msgid "Oh good, you are awake."
@@ -395,7 +397,7 @@ msgstr "Hledal jsem Andora."
 
 #: conversationlist_mikhail.json:mikhail_default:8
 msgid "What kind of book is it that you have in your hand?"
-msgstr ""
+msgstr "Co je to za knihu, kterou máš v ruce?"
 
 #: conversationlist_mikhail.json:mikhail_tasks
 msgid "Oh yes, there were some things I need help with, bread and rats. Which one would you like to talk about?"
@@ -558,31 +560,35 @@ msgstr ""
 #: conversationlist_mikhail.json:mikhail_achievements_10
 msgid "Just like my father once did, I want to give you a book to take with you on your way."
 msgstr ""
+"Stejně jako kdysi udělal můj otec, chci ti dát knihu, kterou si vezmeš na "
+"cestu."
 
 #: conversationlist_mikhail.json:mikhail_achievements_20
 msgid "This book is some kind of diary, in which you can record unusual experiences and achievements that you may have on your way."
 msgstr ""
+"Tato kniha je jakýmsi deníkem, do kterého si můžeš zaznamenávat neobvyklé "
+"zážitky a úspěchy, které docílíš na své cestě."
 
 #: conversationlist_mikhail.json:mikhail_achievements_30
 msgid "Would you like to have it?"
-msgstr ""
+msgstr "Chceš ji mít?"
 
 #: conversationlist_mikhail.json:mikhail_achievements_30:0
 msgid "Yes, sounds great."
-msgstr ""
+msgstr "Ano, to zní skvěle."
 
 #: conversationlist_mikhail.json:mikhail_achievements_30:1
 msgid "No, thanks."
-msgstr ""
+msgstr "Ne, děkuji."
 
 #: conversationlist_mikhail.json:mikhail_achievements_40
 msgid "No problem. I won't bother you with it again."
-msgstr ""
+msgstr "Žádný problém. Už tě tím nebudu obtěžovat."
 
 #: conversationlist_mikhail.json:mikhail_achievements_50
 #: conversationlist_stoutford_combined.json:stn_colonel_34
 msgid "Here you are."
-msgstr ""
+msgstr "Tady máš."
 
 #: conversationlist_mikhail_foodpoison.json:mikhail_rats_start2a
 msgid "Another way to regain your strength is to eat some food. You can buy some for yourself from Mara at the town hall. But watch out - I hear that raw meat can sometimes give you food poisoning."
@@ -743,7 +749,7 @@ msgstr "Prosím, nevyrušuj mě, mám spoustu práce, kterou musím udělat."
 #: conversationlist_stoutford.json:stoutford_gateguard_0:2
 #: conversationlist_stoutford.json:kayla_1:1
 msgid "Have you seen my brother Andor?"
-msgstr ""
+msgstr "Viděl jsi mého bratra Andora?"
 
 #: conversationlist_crossglen.json:farm2
 msgid "What?! Can't you see I'm busy? Go bother someone else."
@@ -1538,7 +1544,7 @@ msgstr "Čau. Můžu ti pomoct?"
 
 #: conversationlist_fallhaven.json:fallhaven_citizen3:0
 msgid "Have you seen my brother Andor? He looks a bit like me."
-msgstr "[REVIEW]Byl tu můj bratr Andor?"
+msgstr "Viděl jsi mého bratra Andora? Je mi dost podobný."
 
 #: conversationlist_fallhaven.json:fallhaven_citizen4
 msgid "You're that kid from Crossglen village right?"
@@ -2360,46 +2366,52 @@ msgstr "Zlodějský cech? Jak bych o něm něco mohl vědět? Vypadám snad jako
 
 #: conversationlist_fallhaven_tavern.json:bela_gsnake_1
 msgid "I'm glad you are still alive!"
-msgstr ""
+msgstr "Jsem rád, že jsi stále naživu!"
 
 #: conversationlist_fallhaven_tavern.json:bela_gsnake_1:0
 msgid "As you know I can handle myself."
-msgstr ""
+msgstr "Jak víš, dokážu se o sebe postarat."
 
 #: conversationlist_fallhaven_tavern.json:bela_gsnake_1:1
 msgid "Why? Has something happened?"
-msgstr ""
+msgstr "Proč? Stalo se něco?"
 
 #: conversationlist_fallhaven_tavern.json:bela_gsnake_2
 msgid "Did you not hear of the most dangerous snake ever seen? It has been spotted on Fallhaven's southern border."
 msgstr ""
+"Neslyšel jsi o tom nejnebezpečnějším hadovi, jakého kdo kdy viděl? Byl "
+"spatřen na jižní hranici Fallhavenu."
 
 #: conversationlist_fallhaven_tavern.json:bela_gsnake_2:0
 msgid "A snake?"
-msgstr ""
+msgstr "Had?"
 
 #: conversationlist_fallhaven_tavern.json:bela_gsnake_2:1
 msgid ""
 "No, I didn't hear, and I also don't want to.\n"
 "Please give me something to drink."
 msgstr ""
+"Ne, neslyšel jsem a také nechci.\n"
+"Prosím, dej mi něco k pití."
 
 #: conversationlist_fallhaven_tavern.json:bela_gsnake_3
 msgid "No normal snake. Huge as a house! Making noise like a hundred galloping horses!"
 msgstr ""
+"Žádný normální had. Obrovský jako dům! Dělá hluk jako stovka cválajících "
+"koní!"
 
 #: conversationlist_fallhaven_tavern.json:bela_gsnake_4
 msgid "Few people dare to walk outside of the city nowadays."
-msgstr ""
+msgstr "Jen málo lidí se dnes odváží vyjít z města."
 
 #: conversationlist_fallhaven_tavern.json:bela_gsnake_4:0
 #: conversationlist_fungi_panic.json:bela_trade_2:0
 msgid "Sounds interesting."
-msgstr ""
+msgstr "To zní zajímavě."
 
 #: conversationlist_fallhaven_tavern.json:bela_gsnake_4:1
 msgid "Thanks for the warning. I'll avoid that area."
-msgstr ""
+msgstr "Díky za varování. Vyhnu se té oblasti."
 
 #: conversationlist_fallhaven_tavern.json:bela_gsnake_5
 msgid "Good. Enough of such dark words - now go, have a seat anywhere."
@@ -44638,7 +44650,9 @@ msgstr "Podivně vypadající dýka"
 #: itemlist_brimhaven.json:strange_dagger:description
 #: itemlist_brimhaven.json:dagger_assassin:description
 msgid "The dagger has an inscription etched into the metal \"The Shadow shall bear no witness to the wielder of this blade\"."
-msgstr "[OUTDATED][OUTDATED]Je to ostré!"
+msgstr ""
+"Dýka má do kovu vyrytý nápis „Přítmí nebude svědčit proti nositeli této "
+"čepele“."
 
 #: itemlist_brimhaven.json:dagger_assassin
 msgid "Assassin's blade"
@@ -48581,7 +48595,7 @@ msgstr ""
 
 #: monsterlist_brimhaven2.json:brv_wh_item_43
 msgid "yellow boot"
-msgstr ""
+msgstr "žlutá bota"
 
 #: monsterlist_brimhaven2.json:brv_wh_item_04
 msgid "brv_wh_item_04"
@@ -53087,4 +53101,3 @@ msgstr "Hrad Guynmart"
 #: worldmap.xml:world1:brimhaven_area
 msgid "Brimhaven"
 msgstr "Brimhaven"
-
