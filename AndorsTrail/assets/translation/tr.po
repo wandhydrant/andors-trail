@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: andors-trail\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-11-10 11:48+0000\n"
-"PO-Revision-Date: 2021-01-26 23:26+0000\n"
-"Last-Translator: Oğuz Ersen <oguzersen@protonmail.com>\n"
+"PO-Revision-Date: 2021-01-29 19:42+0000\n"
+"Last-Translator: Ömer Faruk Çakmak <omerfarukckmk@protonmail.com>\n"
 "Language-Team: Turkish <https://hosted.weblate.org/projects/andors-trail/"
 "game-content/tr/>\n"
 "Language: tr\n"
@@ -26,7 +26,8 @@ msgstr ""
 "İngilizce Aslından Çevirenler:\n"
 "Mustafa KODAZ\n"
 "Samet Develioğlu\n"
-"Oğuz Ersen"
+"Oğuz Ersen\n"
+"Ömer Faruk ÇAKMAK"
 
 #: actorconditions_v069.json:bless
 msgid "Bless"
@@ -353,7 +354,7 @@ msgstr "Yeniden Canlanma"
 
 #: actorconditions_gison.json:sated
 msgid "Sated"
-msgstr "Doyma"
+msgstr "Tok"
 
 #: conversationlist_mikhail.json:mikhail_gamestart
 msgid "Oh good, you are awake."
@@ -3641,14 +3642,16 @@ msgstr "Tamam, lütfen sıcak olsun!"
 #: conversationlist_fallhaven_south.json:alaun_startquest_go
 msgid "You can find Gison and his wife Nimael south of here. Cross the path and head into the woods. You will find their house soon."
 msgstr ""
+"Gison ve karısı Nimael'i buranın güneyinde bulabilirsin. Yolu geçip ağaçlara "
+"yönel. Biraz sonra evlerini görürsün."
 
 #: conversationlist_fallhaven_south.json:alaun_startquest_go:0
 msgid "OK. See you later."
-msgstr ""
+msgstr "Tamam. Görüşürüz."
 
 #: conversationlist_fallhaven_south.json:alaun_return
 msgid "Aah, you are back. Wonderful. I will stop working for now and take a little break."
-msgstr ""
+msgstr "Hey, geri dönmüşsün. Harika. Çalışmayı bırakıp biraz ara vereyim."
 
 #: conversationlist_fallhaven_south.json:alaun_return10
 msgid ""
@@ -3658,12 +3661,17 @@ msgid ""
 "\n"
 "Next time I will buy Nimael's soup."
 msgstr ""
+"İşte sana vadettiğim para.\n"
+"\n"
+"Ödül olarak da sana biraz bu ekmeden vereceğim.\n"
+"\n"
+"Bir dahakine Nimael'in çorbasını alacağım."
 
 #: conversationlist_fallhaven_south.json:alaun_return10:0
 #: conversationlist_fallhaven_south.json:alaun_return15:0
 #: conversationlist_fallhaven_south.json:alaun_return20:0
 msgid "Nimael's soup?"
-msgstr ""
+msgstr "Nimael'in çorbası mı?"
 
 #: conversationlist_fallhaven_south.json:alaun_return15
 #: conversationlist_fallhaven_south.json:alaun_return20
@@ -3750,7 +3758,7 @@ msgstr ""
 
 #: conversationlist_fallhaven_south.json:alaun_return_fail:1
 msgid "Listen..."
-msgstr ""
+msgstr "Dinle..."
 
 #: conversationlist_signs_pre067.json:keyarea_andor1
 msgid "You should talk to Mikhail first."
@@ -5799,7 +5807,9 @@ msgstr "Hayır, hiç duymadım."
 
 #: conversationlist_ambelie.json:ambelie_4
 msgid "Pfft. That just proves everything I have heard of you savages here in the southern land. So uneducated."
-msgstr "Pfft. Bu burada güney topraklarındaki siz vahşi ve yabanıl halk hakkında duyduğum her şeyin doğruluğunu kanıtlıyor. Çok cahilce."
+msgstr ""
+"Püff. Bu burada güney topraklarındaki siz vahşi ve yabanıl halk hakkında "
+"duyduğum her şeyin doğruluğunu kanıtlıyor. Çok cahilce."
 
 #: conversationlist_ambelie.json:ambelie_5
 msgid "I, Ambelie, of the house of Laumwill in Feygard, am on an excursion to the southern Nor City."
@@ -5849,7 +5859,9 @@ msgstr "Köylü? Beni aşağılamaya mı çalışıyorsunuz? Güle güle."
 
 #: conversationlist_ambelie.json:ambelie_10:1
 msgid "Whatever, you probably wouldn't even survive a forest wasp."
-msgstr "Boşversene, yüksek ihtimalle basit bir orman eşek arısından bile sağ kurtulamazdın."
+msgstr ""
+"Boşversene, muhtemelen sıradan bir orman eşek arısından bile sağ "
+"kurtulamazdın."
 
 #: conversationlist_foamingflask_guards.json:ff_guard_1
 msgid "Ha ha, you tell him Garl! *burp*"
@@ -9905,11 +9917,11 @@ msgstr ""
 
 #: conversationlist_erinith.json:erinith_story_gold_2
 msgid "Make it quick."
-msgstr ""
+msgstr "Hızlıca hallet."
 
 #: conversationlist_erinith.json:erinith_needsbook_1
 msgid "Have you found that book yet?"
-msgstr ""
+msgstr "O kitabı daha bulamadın mı?"
 
 #: conversationlist_erinith.json:erinith_needsbook_1:0
 msgid "Not yet, I am still looking."
@@ -9917,7 +9929,7 @@ msgstr ""
 
 #: conversationlist_erinith.json:erinith_needsbook_1:1
 msgid "Yes, here is your book."
-msgstr ""
+msgstr "Evet, işte kitabın."
 
 #: conversationlist_erinith.json:erinith_needsbook_3_1
 msgid "You found it! Oh thank you so much. I was so worried that I had lost it."
@@ -11741,6 +11753,10 @@ msgid ""
 "East: Loneford\n"
 "South: Fallhaven"
 msgstr ""
+"Güneydoğu: Nor Şehri\n"
+"Kuzeybatı: Feygard\n"
+"Doğu: Loneford\n"
+"Güney:Fallhaven"
 
 #: conversationlist_fields_1.json:sign_crossroads_n
 #: conversationlist_fields_1.json:sign_fields1
@@ -11748,12 +11764,16 @@ msgid ""
 "Northwest: Feygard\n"
 "East: Loneford."
 msgstr ""
+"Kuzeybatı: Feygard\n"
+"Doğu: Loneford."
 
 #: conversationlist_fields_1.json:sign_fields6
 msgid ""
 "Northwest: Feygard\n"
 "South: Nor City."
 msgstr ""
+"Kuzeybatı: Feygard\n"
+"Güney: Nor Şehri."
 
 #: conversationlist_fields_1.json:crossroads_sleep
 msgid "The guard shouts at you: Hey! You cannot sleep here!"
@@ -12343,7 +12363,7 @@ msgstr "Tekrar hoş geldin, dostum. Gölge'nin ışıltısı seni aydınlatsın.
 #: conversationlist_talion.json:talion_0:0
 #: conversationlist_talion_2.json:talion_infect_30:5
 msgid "Do you know anything about the illness here in Loneford?"
-msgstr ""
+msgstr "Burada, Loneford'daki hastalık hakkında bir şey biliyor musun?"
 
 #: conversationlist_talion.json:talion_0:2
 #: conversationlist_talion_2.json:talion_cured_10:0
@@ -12372,15 +12392,18 @@ msgstr ""
 
 #: conversationlist_taevinn.json:taevinn
 msgid "Please, you must help us!"
-msgstr ""
+msgstr "Lütfen, bize yardım etmelisin!"
 
 #: conversationlist_taevinn.json:taevinn:0
 msgid "Do you know anything about the illness?"
-msgstr ""
+msgstr "Hastalık hakkında bir şey biliyor musun?"
 
 #: conversationlist_taevinn.json:taevinn_1
 msgid "I'll tell you what I know. We try to follow the law around here. Without rules and laws, how would we be any different from the savages that roam the southern lands?"
 msgstr ""
+"Bildiklerimi söyleyeceğim. Buradalarda yasaya uymaya çalışıyoruz. Kurallar "
+"ve yasalar olmadan, güneydeki topraklarda dolaşan vahşilerden ne farkımız "
+"olurdu?"
 
 #: conversationlist_taevinn.json:taevinn_2
 msgid "But even if we here in Loneford keep as peaceful as possible, there's always someone that has a desire to cause mischief."
@@ -12889,7 +12912,7 @@ msgstr ""
 #: conversationlist_thorin.json:thorin_trade_n:0
 #: conversationlist_elythom_1.json:krell_4:0
 msgid "What's that?"
-msgstr ""
+msgstr "Bu ne?"
 
 #: conversationlist_thorin.json:thorin_trade_y
 msgid "Oh yes. The upside of this cave is that it literally is crawling with dead bodies of those scaradon bugs."
@@ -12943,7 +12966,7 @@ msgstr ""
 #: conversationlist_thorinbone.json:remains_mcave_5b:0
 #: conversationlist_thorinbone.json:remains_mcave_6b:0
 msgid "Leave it alone."
-msgstr ""
+msgstr "Onu yalnız bırak."
 
 #: conversationlist_thorinbone.json:remains_mcave_1b:1
 #: conversationlist_thorinbone.json:remains_mcave_2b:1
@@ -14854,7 +14877,7 @@ msgstr ""
 #: conversationlist_talion_2.json:talion_bone_1
 #: conversationlist_talion_2.json:talion_hair_1
 msgid "Oh, good. Please, give them to me."
-msgstr ""
+msgstr "Ah, iyi. Lütfen onları bana ver."
 
 #: conversationlist_talion_2.json:talion_bone_1:1
 #: conversationlist_talion_2.json:talion_hair_1:1
@@ -14926,7 +14949,7 @@ msgstr ""
 
 #: conversationlist_talion_2.json:talion_cured_3:0
 msgid "For what?"
-msgstr ""
+msgstr "Niçin?"
 
 #: conversationlist_talion_2.json:talion_cured_3:1
 msgid "OK, I will hold on to it."
@@ -15207,6 +15230,8 @@ msgstr ""
 #: conversationlist_elwyl.json:elwyl_4
 msgid "She is the black sheep of the family. She never agrees to anything, and always complains. Just look at her."
 msgstr ""
+"O ailenin yüz karası. Hiçbir şeyi kabul etmez, her şeye karşı çıkar. Şuna "
+"bir baksana."
 
 #: conversationlist_elwyl.json:elwyl_5
 msgid "She even has the stomach to call ME the black sheep of the family, when it is clearly SHE that is causing all the trouble around here."
@@ -15222,7 +15247,7 @@ msgstr ""
 
 #: conversationlist_elwyl.json:elwyl_8
 msgid "Argh. I am so upset at her!"
-msgstr ""
+msgstr "Aah. Ona çok kızgınım!"
 
 #: conversationlist_elwyl.json:elwyl_8:0
 msgid "Good luck with that. I'll leave you to your fighting."
@@ -15317,7 +15342,7 @@ msgstr ""
 
 #: conversationlist_elwyl.json:elwyl_pot_1
 msgid "Oh, it's you again. What do you want?"
-msgstr ""
+msgstr "Ah, yine sen. Ne istiyorsun?"
 
 #: conversationlist_elwyl.json:elwyl_pot_1:0
 msgid "I have one of those potions of accuracy focus for you."
@@ -15333,7 +15358,7 @@ msgstr ""
 
 #: conversationlist_elwyl.json:elwyl_res_1
 msgid "Oh good. Give me that."
-msgstr ""
+msgstr "Ah iyi. Onu bana ver."
 
 #: conversationlist_elwyl.json:elwyl_res_2
 msgid "Huh, what's this? It's yellow ... I was sure that it used to be blue. Let me smell it to make sure that it's the right kind of potion."
@@ -16476,7 +16501,7 @@ msgstr ""
 
 #: conversationlist_elythom_1.json:krell_jhaeld1
 msgid "Shh, not so loud!"
-msgstr ""
+msgstr "Şş. çok ses yapmayın!"
 
 #: conversationlist_elythom_1.json:krell_jhaeld2
 msgid "Yes, we have heard the reports that people have gone missing here in Remgard. Most ... unfortunate."
@@ -16537,7 +16562,7 @@ msgstr ""
 
 #: conversationlist_elythom_1.json:elythom_knight2
 msgid "Hello. *cough*"
-msgstr ""
+msgstr "Merhaba. *öksürük*"
 
 #: conversationlist_duaina.json:duaina_0
 msgid "You! I have seen you."
@@ -17212,7 +17237,7 @@ msgstr ""
 #: conversationlist_ervelyn.json:ervelyn_d:1
 #: conversationlist_pathway_fallhaven.json:guard_pathway_0:2
 msgid "Never mind. Goodbye."
-msgstr ""
+msgstr "Boşver. Güle güle."
 
 #: conversationlist_ervelyn.json:ervelyn_give1
 msgid "It is you! I heard what you did, helping us with that witch Algangror. You have my thanks, friend!"
@@ -17382,7 +17407,7 @@ msgstr ""
 
 #: conversationlist_signs_v0611.json:remgard_tavern_room
 msgid "You are not allowed to enter this room until you have rented it."
-msgstr ""
+msgstr "Kiralamadan bu odaya girmeye iznin yok."
 
 #: conversationlist_signs_v0611.json:sign_waterway6
 msgid ""
@@ -17390,26 +17415,33 @@ msgid ""
 "West: Loneford\n"
 "East: Brightport, Lake Laeroth"
 msgstr ""
+"Güney: Brimhaven\n"
+"Batı: Loneford\n"
+"Doğu: Brightport, Laeroth Gölü"
 
 #: conversationlist_signs_v0611.json:sign_waterway9
 msgid ""
 "West: Loneford\n"
 "East: Brightport, Lake Laeroth"
 msgstr ""
+"Batı: Loneford\n"
+"Doğu: Brightport, Laeroth Gölü"
 
 #: conversationlist_signs_v0611.json:sign_waterway11
 msgid ""
 "West: Loneford\n"
 "South: Brightport"
 msgstr ""
+"Batı: Loneford\n"
+"Güney: Brightport"
 
 #: conversationlist_signs_v0611.json:sign_remgard0
 msgid "Welcome to Lake Laeroth and the city of Remgard!"
-msgstr ""
+msgstr "Laeroth Gölü'ne ve Remgard şehrine hoş geldin!"
 
 #: conversationlist_signs_v0611.json:wild16_cave
 msgid "The thicket is too dense for you to get through."
-msgstr ""
+msgstr "Çalılık geçmen için çok sıkı."
 
 #: conversationlist_signs_v0611.json:sign_wild16_r
 msgid "You squeeze through the narrow opening of the cave."
@@ -18284,7 +18316,7 @@ msgstr "Kayıp insanlarımızı bulduğun için çok teşekkürler!"
 
 #: conversationlist_charwood1.json:khorailla1:1
 msgid "Please sell me some of your famous Cheddar cheese."
-msgstr ""
+msgstr "Bana biraz ünlü çedar peynirinden satabilir misin?"
 
 #: conversationlist_charwood1.json:khorailla2
 msgid "It's not much, but I have some food if you'd like."
@@ -18312,11 +18344,11 @@ msgstr "Khoralla sana bağırıyor:Hey! Uzak dur oradan!"
 
 #: conversationlist_charwood1.json:khorailla_cheddar
 msgid "Ah, you really know what's good."
-msgstr ""
+msgstr "Ah, neyin iyi olduğunu gerçekten biliyorsun."
 
 #: conversationlist_charwood1.json:khorailla_cheddar:0
 msgid "I hope so. It was a long way to come."
-msgstr ""
+msgstr "Umarım. Gelmek çok uzun sürdü."
 
 #: conversationlist_charwood2.json:charwoodm
 msgid "Bow before the might of the Thukuzun!"
@@ -18414,7 +18446,7 @@ msgstr ""
 
 #: conversationlist_esfiume.json:esfiume1:0
 msgid "I didn't see anything."
-msgstr ""
+msgstr "Hiç bir şey görmedim."
 
 #: conversationlist_esfiume.json:esfiume2
 msgid "That's right you didn't."
@@ -18474,7 +18506,7 @@ msgstr ""
 
 #: conversationlist_esfiume.json:erethori5:0
 msgid "Charwood, where is that?"
-msgstr ""
+msgstr "Charwood mu, orası nerede?"
 
 #: conversationlist_esfiume.json:erethori6
 msgid "It's just north of here. Take the path west of our camp here, and head straight north. It's just around the bend there [points]."
@@ -18486,7 +18518,7 @@ msgstr ""
 
 #: conversationlist_esfiume.json:erethori6:1
 msgid "I have better things to do."
-msgstr ""
+msgstr "Yapacak daha önemli işlerim var."
 
 #: conversationlist_falothen.json:falothen1_1
 msgid "Hello again. Thank you for saving me from captivity up in the Charwood heights!"
@@ -18701,7 +18733,7 @@ msgstr ""
 #: conversationlist_falothen.json:falothen1_9:0
 #: conversationlist_fayvara.json:fayvara1_9:0
 msgid "What sort of payment?"
-msgstr ""
+msgstr "Ne tür bir ödeme?"
 
 #: conversationlist_falothen.json:falothen1_0
 msgid "Hello again, my friend. I hope you've been using what I taught you."
@@ -18788,7 +18820,7 @@ msgstr ""
 #: conversationlist_falothen.json:falothen1_15
 #: conversationlist_fayvara.json:fayvara1_15
 msgid "Well done! You learn quickly."
-msgstr ""
+msgstr "Aferin! Çabuk öğreniyorsun."
 
 #: conversationlist_fayvara.json:fayvara1_1
 msgid "There you are! I had hoped to see you again after you helped me up in the Charwood heights!"
@@ -20171,7 +20203,7 @@ msgstr ""
 
 #: conversationlist_lodar.json:shortcut_lodar_1:0
 msgid "Thanks, I'll try it. Danger is my specialty."
-msgstr ""
+msgstr "Teşekkürler, deneyeceğim. Tehlike benim uzmanlık alanımdır."
 
 #: conversationlist_lodar.json:shortcut_lodar_1:1
 msgid "I hope it will be OK."
@@ -21738,7 +21770,7 @@ msgstr ""
 
 #: conversationlist_fallhaven_potions.json:fallhaven_pot_antifoodp5:1
 msgid "Any ideas where I can find those ingredients?"
-msgstr ""
+msgstr "Bu malzemeleri nerede bulabileceğime dair bir fikrin var mı?"
 
 #: conversationlist_fallhaven_potions.json:fallhaven_pot_antifoodp5:2
 #: conversationlist_fallhaven_potions.json:fallhaven_pot_antifoodp5:3
@@ -21848,7 +21880,7 @@ msgstr ""
 #: conversationlist_fallhaven_potions.json:fungi_panic_potioner_28:0
 #: conversationlist_fungi_panic.json:gison_bottle_8_1:0
 msgid "Nice."
-msgstr ""
+msgstr "Güzel."
 
 #: conversationlist_fallhaven_potions.json:fungi_panic_potioner_28:1
 msgid "Enough. Just give me the cure, please."
@@ -39620,7 +39652,7 @@ msgstr ""
 
 #: conversationlist_fungi_panic.json:bogsten_52_12:0
 msgid "No?"
-msgstr ""
+msgstr "Hayır?"
 
 #: conversationlist_fungi_panic.json:bogsten_52_12:1
 msgid "You are right."
@@ -39861,7 +39893,7 @@ msgstr ""
 #: conversationlist_gison.json:gison_bottle_5_1:0
 #: conversationlist_gison.json:gison_bottle_6_1:0
 msgid "Great."
-msgstr ""
+msgstr "Büyük."
 
 #: conversationlist_fungi_panic.json:zuul_khan_34
 msgid "Great and strong, yes."
@@ -39869,7 +39901,7 @@ msgstr ""
 
 #: conversationlist_fungi_panic.json:zuul_khan_34:0
 msgid "Aha."
-msgstr ""
+msgstr "Aha."
 
 #: conversationlist_fungi_panic.json:zuul_khan_40
 msgid "You are the first human I've seen in such a long time."
@@ -39937,7 +39969,7 @@ msgstr ""
 
 #: conversationlist_fungi_panic.json:zuul_khan_60_140
 msgid "AHAHAHAHA!"
-msgstr ""
+msgstr "HAHAHAHAHA!"
 
 #: conversationlist_fungi_panic.json:zuul_khan_70
 msgid "I see that you have their family necklace. So you must die now."
@@ -40009,7 +40041,7 @@ msgstr ""
 
 #: conversationlist_fungi_panic.json:zuul_khan_70_44:0
 msgid "Generously."
-msgstr ""
+msgstr "Nazikçe."
 
 #: conversationlist_fungi_panic.json:zuul_khan_70_46
 msgid "And I'll provide you with a permanent immunity to the spore poison."
@@ -40119,7 +40151,7 @@ msgstr ""
 
 #: conversationlist_fungi_panic.json:zuul_khan2_20:0
 msgid "Attack?"
-msgstr ""
+msgstr "Saldır?"
 
 #: conversationlist_fungi_panic.json:zuul_khan3:0
 msgid "Coocoo! Trying to read again?"
@@ -40500,23 +40532,23 @@ msgstr ""
 
 #: conversationlist_fungi_panic.json:bogsten_gambler_18
 msgid "18"
-msgstr ""
+msgstr "18"
 
 #: conversationlist_fungi_panic.json:bogsten_gambler_20
 msgid "20"
-msgstr ""
+msgstr "20"
 
 #: conversationlist_fungi_panic.json:bogsten_gambler_22
 msgid "2"
-msgstr ""
+msgstr "2"
 
 #: conversationlist_fungi_panic.json:bogsten_gambler_23
 msgid "0"
-msgstr ""
+msgstr "0"
 
 #: conversationlist_fungi_panic.json:bogsten_gambler_24
 msgid "4"
-msgstr ""
+msgstr "4"
 
 #: conversationlist_fungi_panic.json:bogsten_gambler_24b
 msgid "Ah, good. I already thought you wanted to play Null."
@@ -40524,15 +40556,15 @@ msgstr ""
 
 #: conversationlist_fungi_panic.json:bogsten_gambler_27
 msgid "7"
-msgstr ""
+msgstr "7"
 
 #: conversationlist_fungi_panic.json:bogsten_gambler_30
 msgid "30"
-msgstr ""
+msgstr "30"
 
 #: conversationlist_fungi_panic.json:bogsten_gambler_33
 msgid "33"
-msgstr ""
+msgstr "33"
 
 #: conversationlist_fungi_panic.json:bogsten_gambler_33b
 msgid "Hey, you've forgotten 30!"
@@ -40544,7 +40576,7 @@ msgstr ""
 
 #: conversationlist_fungi_panic.json:bogsten_gambler_36
 msgid "36"
-msgstr ""
+msgstr "36"
 
 #: conversationlist_fungi_panic.json:bogsten_gambler_36b
 msgid "Don't you dare play clubs!"
@@ -40556,7 +40588,7 @@ msgstr ""
 
 #: conversationlist_fungi_panic.json:bogsten_gambler_40
 msgid "40"
-msgstr ""
+msgstr "40"
 
 #: conversationlist_fungi_panic.json:bogsten_gambler_40b
 msgid "You already said 30."
@@ -40576,11 +40608,11 @@ msgstr ""
 
 #: conversationlist_fungi_panic.json:bogsten_gambler_44
 msgid "44"
-msgstr ""
+msgstr "44"
 
 #: conversationlist_fungi_panic.json:bogsten_gambler_48
 msgid "48"
-msgstr ""
+msgstr "48"
 
 #: conversationlist_fungi_panic.json:bogsten_gambler_48b
 msgid ""
@@ -40610,7 +40642,7 @@ msgstr ""
 
 #: conversationlist_fungi_panic.json:bogsten_gambler_50
 msgid "50"
-msgstr ""
+msgstr "50"
 
 #: conversationlist_fungi_panic.json:bogsten_gambler_50b
 msgid "50 - still yes?? You must be cheating!"
@@ -40694,31 +40726,31 @@ msgstr ""
 
 #: conversationlist_fungi_panic.json:bogsten_tomb_pw_1:0
 msgid "A..."
-msgstr ""
+msgstr "A..."
 
 #: conversationlist_fungi_panic.json:bogsten_tomb_pw_1:1
 msgid "B..."
-msgstr ""
+msgstr "B..."
 
 #: conversationlist_fungi_panic.json:bogsten_tomb_pw_1:2
 msgid "F..."
-msgstr ""
+msgstr "F..."
 
 #: conversationlist_fungi_panic.json:bogsten_tomb_pw_1:3
 msgid "N..."
-msgstr ""
+msgstr "N..."
 
 #: conversationlist_fungi_panic.json:bogsten_tomb_pw_1:4
 msgid "P..."
-msgstr ""
+msgstr "P..."
 
 #: conversationlist_fungi_panic.json:bogsten_tomb_pw_1:5
 msgid "R..."
-msgstr ""
+msgstr "R..."
 
 #: conversationlist_fungi_panic.json:bogsten_tomb_pw_1:6
 msgid "S..."
-msgstr ""
+msgstr "S..."
 
 #: conversationlist_fungi_panic.json:bogsten_tomb_pw_2:0
 msgid ". D"
@@ -41003,7 +41035,7 @@ msgstr ""
 
 #: conversationlist_fungi_panic.json:bogsten_tomb_pw_x5:0
 msgid "Pleeease."
-msgstr ""
+msgstr "Lütfeeen."
 
 #: conversationlist_fungi_panic.json:bogsten_tomb_pw_x5_1:0
 msgid "Will you do it for me?"
@@ -41638,7 +41670,7 @@ msgstr ""
 
 #: conversationlist_gison.json:gison_p2_50_5
 msgid "Noo!"
-msgstr ""
+msgstr "Haayıır!"
 
 #: conversationlist_gison.json:gison_p2_62
 msgid "Well, you tried to help. Thank you."
@@ -41916,7 +41948,7 @@ msgstr ""
 
 #: conversationlist_gison.json:gison_thiefboss:0
 msgid "Hi!"
-msgstr ""
+msgstr "Merhaba!"
 
 #: conversationlist_gison.json:gison_thiefboss_10
 msgid "What ...? You again? How did you get in here?"
@@ -48676,11 +48708,11 @@ msgstr ""
 
 #: monsterlist_brimhaven_2.json:brv_churchcat
 msgid "Cat"
-msgstr ""
+msgstr "Kedi"
 
 #: monsterlist_brimhaven_2.json:brv_churchmouse
 msgid "Mouse"
-msgstr ""
+msgstr "Fare"
 
 #: monsterlist_brimhaven_2b.json:hettar
 msgid "Little Hettar"
@@ -48690,7 +48722,7 @@ msgstr ""
 #: monsterlist_brimhaven_2b.json:hettar_dog2
 #: monsterlist_brimhaven_2b.json:hettar_dog3
 msgid "Wolfhound"
-msgstr ""
+msgstr "Kurt Köpeği"
 
 #: monsterlist_fungi_panic.json:bogsten
 msgid "Bogsten"
