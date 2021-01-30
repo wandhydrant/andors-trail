@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: Andors Trail\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-11-10 11:48+0000\n"
-"PO-Revision-Date: 2020-10-05 12:12+0000\n"
-"Last-Translator: Atrate <Atrate@protonmail.com>\n"
+"PO-Revision-Date: 2021-01-31 23:50+0000\n"
+"Last-Translator: Mateusz Mendel <mendelm9@gmail.com>\n"
 "Language-Team: Polish <https://hosted.weblate.org/projects/andors-trail/"
 "game-content/pl/>\n"
 "Language: pl\n"
@@ -13,7 +13,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 4.3-dev\n"
+"X-Generator: Weblate 4.5-dev\n"
 "X-Launchpad-Export-Date: 2015-11-02 12:27+0000\n"
 
 #: [none]
@@ -347,16 +347,19 @@ msgid "Venom"
 msgstr "Jad"
 
 #: actorconditions_fungi_panic.json:spore_poison
+#, fuzzy
 msgid "Spore poisoning"
-msgstr ""
+msgstr "Zatrucie zarodnikami grzybów"
 
 #: actorconditions_gison.json:reinvigorated
+#, fuzzy
 msgid "Reinvigorated"
-msgstr ""
+msgstr "Ożywiony"
 
 #: actorconditions_gison.json:sated
+#, fuzzy
 msgid "Sated"
-msgstr ""
+msgstr "Nasycony"
 
 #: conversationlist_mikhail.json:mikhail_gamestart
 msgid "Oh good, you are awake."
@@ -397,12 +400,14 @@ msgid "I have a present for you."
 msgstr "Mam dla ciebie prezent."
 
 #: conversationlist_mikhail.json:mikhail_default:7
+#, fuzzy
 msgid "I was searching for Andor."
-msgstr ""
+msgstr "Szukałem Andora."
 
 #: conversationlist_mikhail.json:mikhail_default:8
+#, fuzzy
 msgid "What kind of book is it that you have in your hand?"
-msgstr ""
+msgstr "Jakiego rodzaju książkę trzymasz w ręce?"
 
 #: conversationlist_mikhail.json:mikhail_tasks
 msgid "Oh yes, there were some things I need help with, bread and rats. Which one would you like to talk about?"
@@ -563,28 +568,38 @@ msgstr ""
 "Jeśli jesteś ranny to wykorzystaj łóżko, aby odpocząć i odzyskać siły."
 
 #: conversationlist_mikhail.json:mikhail_achievements_10
+#, fuzzy
 msgid "Just like my father once did, I want to give you a book to take with you on your way."
 msgstr ""
+"Podobnie jak mój ojciec kiedyś, chcę Ci dać książkę, którą możesz zabrać ze "
+"sobą."
 
 #: conversationlist_mikhail.json:mikhail_achievements_20
+#, fuzzy
 msgid "This book is some kind of diary, in which you can record unusual experiences and achievements that you may have on your way."
 msgstr ""
+"Ta książka to pewien rodzaj dziennika, w którym możesz zapisywać niezwykłe "
+"doświadczenia oraz osiągnięcia podczas swojej podróży."
 
 #: conversationlist_mikhail.json:mikhail_achievements_30
+#, fuzzy
 msgid "Would you like to have it?"
-msgstr ""
+msgstr "Czy chciałbyś ją mieć?"
 
 #: conversationlist_mikhail.json:mikhail_achievements_30:0
+#, fuzzy
 msgid "Yes, sounds great."
-msgstr ""
+msgstr "Tak, brzmi nieźle."
 
 #: conversationlist_mikhail.json:mikhail_achievements_30:1
+#, fuzzy
 msgid "No, thanks."
-msgstr ""
+msgstr "Nie, dziękuję."
 
 #: conversationlist_mikhail.json:mikhail_achievements_40
+#, fuzzy
 msgid "No problem. I won't bother you with it again."
-msgstr ""
+msgstr "Nie ma sprawy. Nie będę Cię już nią więcej męczył."
 
 #: conversationlist_mikhail.json:mikhail_achievements_50
 #: conversationlist_stoutford_combined.json:stn_colonel_34
@@ -749,8 +764,9 @@ msgstr "Nie przeszkadzaj mi, jestem zajęty."
 #: conversationlist_fallhaven_bucus.json:bucus_welcome:0
 #: conversationlist_stoutford.json:stoutford_gateguard_0:2
 #: conversationlist_stoutford.json:kayla_1:1
+#, fuzzy
 msgid "Have you seen my brother Andor?"
-msgstr ""
+msgstr "Widziałeś mojego brata Andora?"
 
 #: conversationlist_crossglen.json:farm2
 msgid "What?! Can't you see I'm busy? Go bother someone else."
@@ -1105,8 +1121,9 @@ msgid "He's found another new hiding spot. Give him credit, he is great at avoid
 msgstr ""
 
 #: conversationlist_crossglen_leta.json:leta_oromir1:7
+#, fuzzy
 msgid "He's in your basement."
-msgstr ""
+msgstr "Jest w Twojej piwnicy."
 
 #: conversationlist_crossglen_leta.json:leta_oromir2
 #: conversationlist_brimhaven_2.json:leta_oromir1_trees_help
@@ -1159,8 +1176,9 @@ msgid "[Lie] OK."
 msgstr "[Kłamstwo] W porządku."
 
 #: conversationlist_crossglen_leta.json:oromir2:1
+#, fuzzy
 msgid "Your secret is safe with me."
-msgstr ""
+msgstr "Twoja tajemnica jest bezpieczna ze mną."
 
 #: conversationlist_crossglen_odair.json:odair1
 msgid "Oh, it's you. You with that brother of yours. Always causing trouble."
@@ -2366,79 +2384,106 @@ msgid "Thieves' Guild? How would I know? Do I look like a thief to you?! Hrmpf."
 msgstr "Gildii Złodziei? A skąd niby mam coś wiedzieć? Wyglądam Ci na złodzieja?! Hrmpf."
 
 #: conversationlist_fallhaven_tavern.json:bela_gsnake_1
+#, fuzzy
 msgid "I'm glad you are still alive!"
-msgstr ""
+msgstr "Cieszę się, że wciąż jesteś żywy!"
 
 #: conversationlist_fallhaven_tavern.json:bela_gsnake_1:0
+#, fuzzy
 msgid "As you know I can handle myself."
-msgstr ""
+msgstr "Jak wiesz, potrafię sobie poradzić."
 
 #: conversationlist_fallhaven_tavern.json:bela_gsnake_1:1
+#, fuzzy
 msgid "Why? Has something happened?"
-msgstr ""
+msgstr "Dlaczego? Coś się stało?"
 
 #: conversationlist_fallhaven_tavern.json:bela_gsnake_2
+#, fuzzy
 msgid "Did you not hear of the most dangerous snake ever seen? It has been spotted on Fallhaven's southern border."
 msgstr ""
+"Nie słyszałeś o najniebezpieczniejszym wężu jakiegokolwiek widziano? "
+"Dostrzeżono go na południowej granicy Fallhaven."
 
 #: conversationlist_fallhaven_tavern.json:bela_gsnake_2:0
+#, fuzzy
 msgid "A snake?"
-msgstr ""
+msgstr "Wężu?"
 
 #: conversationlist_fallhaven_tavern.json:bela_gsnake_2:1
+#, fuzzy
 msgid ""
 "No, I didn't hear, and I also don't want to.\n"
 "Please give me something to drink."
 msgstr ""
+"Nie, nie słyszałem i nie mam zamiaru.\n"
+"Proszę o coś do picia."
 
 #: conversationlist_fallhaven_tavern.json:bela_gsnake_3
+#, fuzzy
 msgid "No normal snake. Huge as a house! Making noise like a hundred galloping horses!"
 msgstr ""
+"Nienormalny wąż. Wielki jak dom! Hałasujący jak setka galopujących koni!"
 
 #: conversationlist_fallhaven_tavern.json:bela_gsnake_4
+#, fuzzy
 msgid "Few people dare to walk outside of the city nowadays."
-msgstr ""
+msgstr "Kilku ludzi nie boi się wychodzić poza miasto w dzisiejszych czasach."
 
 #: conversationlist_fallhaven_tavern.json:bela_gsnake_4:0
 #: conversationlist_fungi_panic.json:bela_trade_2:0
+#, fuzzy
 msgid "Sounds interesting."
-msgstr ""
+msgstr "Brzmi nieźle."
 
 #: conversationlist_fallhaven_tavern.json:bela_gsnake_4:1
+#, fuzzy
 msgid "Thanks for the warning. I'll avoid that area."
-msgstr ""
+msgstr "Dzięki za ostrzeżenie. Będę unikał tego terenu."
 
 #: conversationlist_fallhaven_tavern.json:bela_gsnake_5
+#, fuzzy
 msgid "Good. Enough of such dark words - now go, have a seat anywhere."
-msgstr ""
+msgstr "Dobrze. Dość mrocznych słów- idź, usiądź gdzie indziej."
 
 #: conversationlist_fallhaven_tavern.json:bela_gsnake_10
+#, fuzzy
 msgid "Oh no - what have I done? I shouldn't have talked of the giant snake. Promise me you won't go there!"
 msgstr ""
+"O nie- co ja zrobiłem? Nie powinienem był mówić o olbrzymim wężu. Obiecaj "
+"mi, że tam nie pójdziesz!"
 
 #: conversationlist_fallhaven_tavern.json:bela_gsnake_10:0
+#, fuzzy
 msgid "Well, if it makes you happy."
-msgstr ""
+msgstr "Dobrze, jeśli sprawi Ci to przyjemność."
 
 #: conversationlist_fallhaven_tavern.json:bela_gsnake_10:1
+#, fuzzy
 msgid "Of course I'll go there."
-msgstr ""
+msgstr "Oczywiście, że tam pójdę."
 
 #: conversationlist_fallhaven_tavern.json:bela_gsnake_11
+#, fuzzy
 msgid "What a waste of such a young, promising life! Well...don't forget to pay your tab before you leave my tavern."
 msgstr ""
+"Co za szkoda tak młodego, obiecującego życia! Dobrze... nie zapomnij "
+"zapłacić rachunku zanim wyjdziesz z mojej tawerny."
 
 #: conversationlist_fallhaven_tavern.json:bela_gsnake_20
+#, fuzzy
 msgid "You are back!"
-msgstr ""
+msgstr "Wróciłeś!"
 
 #: conversationlist_fallhaven_tavern.json:bela_gsnake_20:0
+#, fuzzy
 msgid "Sure. And your little snake monster is no more."
-msgstr ""
+msgstr "Oczywiście. A Twojego małego węża-potwora już nie ma."
 
 #: conversationlist_fallhaven_tavern.json:bela_gsnake_21
+#, fuzzy
 msgid "Incredible! Let's feast now! Everyone have a free drink!"
-msgstr ""
+msgstr "Niesamowite! Uczcijmy to! Darmowa kolejka dla każdego."
 
 #: conversationlist_fallhaven_larcal.json:larcal
 msgid "I don't have time for you, kid. Get lost."
@@ -3073,8 +3118,9 @@ msgid "OK then, your life it is. Let's fight. I have been looking forward to a g
 msgstr "W takim razie w porządku. To Twoje życie. Walczmy. Długo czekałem na takie wyzwanie!"
 
 #: conversationlist_wilderness.json:fct_bandit1_10
+#, fuzzy
 msgid "Now the area is clean of these nasty highwaymen at last."
-msgstr ""
+msgstr "Ten obszar jest już przynajmniej oczyszczony z bandytów."
 
 #: conversationlist_flagstone.json:zombie1
 msgid "Fresh flesh!"
@@ -3365,17 +3411,20 @@ msgid "Have you seen my brother Andor? He looks similar to me."
 msgstr "Widziałeś mojego brata? Nazywa się Andor i jest do mnie podobny."
 
 #: conversationlist_fallhaven_south.json:alaun:1
+#, fuzzy
 msgid "Do you have a job for me?"
-msgstr ""
+msgstr "Czy masz jakieś zadanie dla mnie?"
 
 #: conversationlist_fallhaven_south.json:alaun:2
 #: conversationlist_fallhaven_south.json:alaun:3
+#, fuzzy
 msgid "About the soup..."
-msgstr ""
+msgstr "Jeśli chodzi o zupę..."
 
 #: conversationlist_fallhaven_south.json:alaun:4
+#, fuzzy
 msgid "Gison gave me some of his soup."
-msgstr ""
+msgstr "Gison dał mi tę zupę."
 
 #: conversationlist_fallhaven_south.json:alaun_2
 msgid "You are looking for your brother you say? Looks like you? Hmm."
@@ -3524,12 +3573,16 @@ msgid "Thank you for bringing me back my axe!"
 msgstr "Dziękuję za zwrócenie mi mojej siekiery!"
 
 #: conversationlist_fallhaven_south.json:alaun_1
+#, fuzzy
 msgid "Oh, how surprising. How nice of you. Indeed there is something you could do for me."
 msgstr ""
+"Och, jakie to zaskakujące. Jak miło z Twojej strony. Rzeczywiście jest coś "
+"co mógłbyś dla mnie zrobić."
 
 #: conversationlist_fallhaven_south.json:alaun_1:0
+#, fuzzy
 msgid "Tell me what it is."
-msgstr ""
+msgstr "Powiedz mi co to jest."
 
 #: conversationlist_fallhaven_south.json:alaun_1:1
 #: conversationlist_halvor_surprise.json:halvor_chwood_1:0
@@ -3538,82 +3591,110 @@ msgid "Maybe later."
 msgstr "Może później."
 
 #: conversationlist_fallhaven_south.json:alaun_1:2
+#, fuzzy
 msgid "Let's talk about payment first."
-msgstr ""
+msgstr "Porozmawiajmy najpierw o wynagrodzeniu."
 
 #: conversationlist_fallhaven_south.json:alaun_4
+#, fuzzy
 msgid "Ahh, you are here to earn some money, okay."
-msgstr ""
+msgstr "Ach, jesteś tutaj tylko dla pieniędzy, w porządku."
 
 #: conversationlist_fallhaven_south.json:alaun_5
+#, fuzzy
 msgid "I'll give you 10 gold if you do this little job for me: Bring me some of that delicious soup which Gison cooks using mushrooms and wild herbs."
 msgstr ""
+"Dam Ci 10 sztuk złota jeśli wykonasz dla to małe zadanie: przynieś mi tę "
+"smaczną zupę z grzybami i dzikimi ziołami gotowaną przez Gisona."
 
 #: conversationlist_fallhaven_south.json:alaun_5:0
+#, fuzzy
 msgid "Sounds easy, I'll do it!"
-msgstr ""
+msgstr "Brzmi nieźle, zrobię to!"
 
 #: conversationlist_fallhaven_south.json:alaun_5:1
+#, fuzzy
 msgid "Give me 15 and I'll do it."
-msgstr ""
+msgstr "Daj mi 15 sztuk, a zrobię to."
 
 #: conversationlist_fallhaven_south.json:alaun_5:2
+#, fuzzy
 msgid "Give me 20 and I'll do it."
-msgstr ""
+msgstr "Daj mi 20, a zrobię to."
 
 #: conversationlist_fallhaven_south.json:alaun_5:3
+#, fuzzy
 msgid "No way, I'm not your gopher."
-msgstr ""
+msgstr "Nie ma mowy, nie jestem Twoim chłopcem na posyłki."
 
 #: conversationlist_fallhaven_south.json:alaun_startquest10
+#, fuzzy
 msgid "That's really nice of you."
-msgstr ""
+msgstr "To bardzo miło z Twojej strony."
 
 #: conversationlist_fallhaven_south.json:alaun_more1
+#, fuzzy
 msgid ""
 "15? Let me think...erm...\n"
 "\n"
 "OK, I'll give you 15."
 msgstr ""
+"15? Niech pomyślę...hmm...\n"
+"\n"
+"Ok, dam Ci 15."
 
 #: conversationlist_fallhaven_south.json:alaun_more1:0
 #: conversationlist_fallhaven_south.json:alaun_more2:0
+#, fuzzy
 msgid "Sounds good. I will do it."
-msgstr ""
+msgstr "Brzmi nieźle. Zrobię to."
 
 #: conversationlist_fallhaven_south.json:alaun_more1:1
 #: conversationlist_fallhaven_south.json:alaun_more2:1
+#, fuzzy
 msgid "I changed my mind."
-msgstr ""
+msgstr "Rozmyśliłem się."
 
 #: conversationlist_fallhaven_south.json:alaun_more2
+#, fuzzy
 msgid ""
 "20? Let me think...erm...\n"
 "\n"
 "OK. I'll give you 20. But please, bring it hot or I won't pay you."
 msgstr ""
+"20? Niech pomyślę...hmm...\n"
+"\n"
+"Ok. Dam Ci 20. Proszę przynieś gorącą albo Ci nie zapłacę."
 
 #: conversationlist_fallhaven_south.json:alaun_startquest15
+#, fuzzy
 msgid "That's nice of you."
-msgstr ""
+msgstr "To miło z Twojej strony."
 
 #: conversationlist_fallhaven_south.json:alaun_startquest20
+#, fuzzy
 msgid "OK, please bring it hot!"
-msgstr ""
+msgstr "Ok, proszę przynieś gorącą!"
 
 #: conversationlist_fallhaven_south.json:alaun_startquest_go
+#, fuzzy
 msgid "You can find Gison and his wife Nimael south of here. Cross the path and head into the woods. You will find their house soon."
 msgstr ""
+"Gison oraz jego żonę możesz spotkać na południe stąd. Przejdź scieżką i "
+"kieruj się w stronę lasu. Niedługo znajdziesz ich dom."
 
 #: conversationlist_fallhaven_south.json:alaun_startquest_go:0
+#, fuzzy
 msgid "OK. See you later."
-msgstr ""
+msgstr "Ok, zobaczymy się później."
 
 #: conversationlist_fallhaven_south.json:alaun_return
+#, fuzzy
 msgid "Aah, you are back. Wonderful. I will stop working for now and take a little break."
-msgstr ""
+msgstr "Aach, wróciłeś. Cudownie. Zrobię sobie teraz krótką przerwę od pracy."
 
 #: conversationlist_fallhaven_south.json:alaun_return10
+#, fuzzy
 msgid ""
 "Here is the money I promised you.\n"
 "\n"
@@ -3621,83 +3702,114 @@ msgid ""
 "\n"
 "Next time I will buy Nimael's soup."
 msgstr ""
+"Oto pieniądze, które Ci obiecałem.\n"
+"\n"
+"A jako bonus dam Ci trochę tego chleba.\n"
+"\n"
+"Następnym razem kupię zupę Nimael."
 
 #: conversationlist_fallhaven_south.json:alaun_return10:0
 #: conversationlist_fallhaven_south.json:alaun_return15:0
 #: conversationlist_fallhaven_south.json:alaun_return20:0
+#, fuzzy
 msgid "Nimael's soup?"
-msgstr ""
+msgstr "Zupę Nimael?"
 
 #: conversationlist_fallhaven_south.json:alaun_return15
 #: conversationlist_fallhaven_south.json:alaun_return20
+#, fuzzy
 msgid ""
 "Here is the money I promised you.\n"
 "\n"
 "Next time I will buy Nimael's soup."
 msgstr ""
+"Oto pieniądze, które Ci obiecałem.\n"
+"\n"
+"Następnym razem kupię zupę Nimael."
 
 #: conversationlist_fallhaven_south.json:alaun_return_end
+#, fuzzy
 msgid "Thanks again. And remember to take the bottle back to Gison. Now go please. I want to eat."
 msgstr ""
+"Jeszcze raz dziękuję. I pamiętaj weź tę butlę z powrotem do Gisona. Teraz "
+"idź proszę, bo chcę jeść."
 
 #: conversationlist_fallhaven_south.json:alaun_return_end:0
+#, fuzzy
 msgid "Enjoy your meal."
-msgstr ""
+msgstr "Smacznego."
 
 #: conversationlist_fallhaven_south.json:alaun_return_nosoup
+#, fuzzy
 msgid "Where is it?"
-msgstr ""
+msgstr "Gdzie to jest?"
 
 #: conversationlist_fallhaven_south.json:alaun_return_nosoup:0
+#, fuzzy
 msgid "Oops, I forgot that there is a hole in my bag."
-msgstr ""
+msgstr "Ups, zapomniałem, że moja torba jest dziurawa."
 
 #: conversationlist_fallhaven_south.json:alaun_return_nosoup:1
+#, fuzzy
 msgid "I ate it."
-msgstr ""
+msgstr "Zjadłem ją."
 
 #: conversationlist_fallhaven_south.json:alaun_return_nosoup_1
+#, fuzzy
 msgid "What are you waiting for? Go on, bring me some soup. Hurry, I'm hungry!"
 msgstr ""
+"Na co czekasz? Dalej, przynieś mi trochę zupy. Pośpiesz się, jestem głodny!"
 
 #: conversationlist_fallhaven_south.json:alaun_return_nosoup_1:0
+#, fuzzy
 msgid "Yes, I will return quickly."
-msgstr ""
+msgstr "Tak, szybko wrócę."
 
 #: conversationlist_fallhaven_south.json:alaun_return_blindstart
+#, fuzzy
 msgid "Yes. I asked you to bring me some of that delicious mushroom soup from Gison."
-msgstr ""
+msgstr "Tak. Prosiłem o przyniesienie mi tej smacznej zupy Gisona."
 
 #: conversationlist_fallhaven_south.json:alaun_return_blindstart:0
+#, fuzzy
 msgid "Can you explain the way again?"
-msgstr ""
+msgstr "Czy możesz mi jeszcze raz wytłumaczyć tę drogę?"
 
 #: conversationlist_fallhaven_south.json:alaun_return_blindstart:1
+#, fuzzy
 msgid "Yes, I'm on my way."
-msgstr ""
+msgstr "Tak, jestem już w drodze."
 
 #: conversationlist_fallhaven_south.json:alaun_return_blindstart:2
+#, fuzzy
 msgid "I was not able to bring you the soup."
-msgstr ""
+msgstr "Nie byłem w stanie przynieść Ci zupę."
 
 #: conversationlist_fallhaven_south.json:alaun_return_coldsoup
+#, fuzzy
 msgid "This soup is cold. Return to me with a hot soup!"
-msgstr ""
+msgstr "Ta zupa jest zimna. Wróć do mnie z gorącą zupą!"
 
 #: conversationlist_fallhaven_south.json:alaun_return_coldsoup:0
+#, fuzzy
 msgid "Sorry. I will try again."
-msgstr ""
+msgstr "Przepraszam. Spróbuję jeszcze raz."
 
 #: conversationlist_fallhaven_south.json:alaun_return_coldsoup:1
+#, fuzzy
 msgid "It still tastes..."
-msgstr ""
+msgstr "Wciąż smakuje..."
 
 #: conversationlist_fallhaven_south.json:alaun_return_fail
+#, fuzzy
 msgid ""
 "That can't be. Get out of here!\n"
 "\n"
 "[Alaun starts throwing things at you]"
 msgstr ""
+"Nie może być. Wyjdź stąd!\n"
+"\n"
+"[Alaun zaczyna rzucać w Ciebie rzeczami]"
 
 #: conversationlist_fallhaven_south.json:alaun_return_fail:0
 #: conversationlist_guynmart_npc.json:guynmart_steward3_24:0
@@ -3712,8 +3824,9 @@ msgid "But..."
 msgstr "Ale..."
 
 #: conversationlist_fallhaven_south.json:alaun_return_fail:1
+#, fuzzy
 msgid "Listen..."
-msgstr ""
+msgstr "Słuchaj..."
 
 #: conversationlist_signs_pre067.json:keyarea_andor1
 msgid "You should talk to Mikhail first."
@@ -53365,4 +53478,3 @@ msgstr "Zamek Guynmart"
 #: worldmap.xml:world1:brimhaven_area
 msgid "Brimhaven"
 msgstr ""
-
