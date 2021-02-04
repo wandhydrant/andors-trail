@@ -10,7 +10,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-11-10 11:48+0000\n"
 "PO-Revision-Date: 2021-02-04 19:54+0000\n"
-"Last-Translator: Manuel Bolivar <mbolivar94@gmail.com>\n"
+"Last-Translator: Jorge Luis Rico Víquez <darach.dearthair@gmail.com>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/andors-trail/"
 "game-content/es/>\n"
 "Language: es\n"
@@ -55,7 +55,7 @@ msgstr "Debilidad de arma menor"
 
 #: actorconditions_v069_bwm.json:bleeding_wound
 msgid "Bleeding wound"
-msgstr "Herida sangrando"
+msgstr "Herida sangrante"
 
 #: actorconditions_v069_bwm.json:rage_minor
 msgid "Minor berserker rage"
@@ -295,7 +295,7 @@ msgstr "Llevando a Ambelie"
 
 #: actorconditions_arulir_mountain.json:crushed
 msgid "Crushed"
-msgstr "crushed"
+msgstr "Aplastado"
 
 #: actorconditions_arulir_mountain.json:head_wound
 msgid "Head wound"
@@ -315,7 +315,7 @@ msgstr "Ahogamiento"
 
 #: actorconditions_brimhaven.json:entanglement
 msgid "Entanglement"
-msgstr ""
+msgstr "Entrelazamiento"
 
 #: actorconditions_brimhaven.json:fatigue1
 #: actorconditions_brimhaven.json:fatigue2
@@ -342,15 +342,15 @@ msgstr "Veneno"
 
 #: actorconditions_fungi_panic.json:spore_poison
 msgid "Spore poisoning"
-msgstr ""
+msgstr "Envenenamiento por esporas"
 
 #: actorconditions_gison.json:reinvigorated
 msgid "Reinvigorated"
-msgstr ""
+msgstr "Revitalizado"
 
 #: actorconditions_gison.json:sated
 msgid "Sated"
-msgstr ""
+msgstr "Harto"
 
 #: conversationlist_mikhail.json:mikhail_gamestart
 msgid "Oh good, you are awake."
@@ -396,7 +396,7 @@ msgstr "Estaba buscando a Andor."
 
 #: conversationlist_mikhail.json:mikhail_default:8
 msgid "What kind of book is it that you have in your hand?"
-msgstr ""
+msgstr "¿Qué clase de libro es el que tienes en la mano?"
 
 #: conversationlist_mikhail.json:mikhail_tasks
 msgid "Oh yes, there were some things I need help with, bread and rats. Which one would you like to talk about?"
@@ -559,26 +559,30 @@ msgstr ""
 #: conversationlist_mikhail.json:mikhail_achievements_10
 msgid "Just like my father once did, I want to give you a book to take with you on your way."
 msgstr ""
+"Así como lo hizo mi padre, quiero darte un libro para que lleves contigo en "
+"el camino."
 
 #: conversationlist_mikhail.json:mikhail_achievements_20
 msgid "This book is some kind of diary, in which you can record unusual experiences and achievements that you may have on your way."
 msgstr ""
+"Este libro es una especie de diario, en el que puedes registrar experiencias "
+"inusuales y logros que tengas durante el camino."
 
 #: conversationlist_mikhail.json:mikhail_achievements_30
 msgid "Would you like to have it?"
-msgstr ""
+msgstr "¿Te gustaría tenerlo?"
 
 #: conversationlist_mikhail.json:mikhail_achievements_30:0
 msgid "Yes, sounds great."
-msgstr ""
+msgstr "Si, suena genial."
 
 #: conversationlist_mikhail.json:mikhail_achievements_30:1
 msgid "No, thanks."
-msgstr ""
+msgstr "No, gracias."
 
 #: conversationlist_mikhail.json:mikhail_achievements_40
 msgid "No problem. I won't bother you with it again."
-msgstr ""
+msgstr "No hay problema. No te molestaré más con eso."
 
 #: conversationlist_mikhail.json:mikhail_achievements_50
 #: conversationlist_stoutford_combined.json:stn_colonel_34
@@ -618,6 +622,7 @@ msgid ""
 "Someone should do something about them."
 msgstr ""
 "Ay señor, ¿podré dormir algo con esos borrachos cantando así?\n"
+"\n"
 "Alguien debería hacer algo al respecto."
 
 #: conversationlist_crossglen.json:arambold1:0
@@ -715,6 +720,7 @@ msgid ""
 "Want something to eat?"
 msgstr ""
 "Pasa de esos borrachos, siempre están causando problemas.\n"
+"\n"
 "¿Quieres algo para comer?"
 
 #: conversationlist_crossglen.json:mara_thanks
@@ -1537,7 +1543,7 @@ msgstr "Hola. ¿Puedo ayudarte?"
 
 #: conversationlist_fallhaven.json:fallhaven_citizen3:0
 msgid "Have you seen my brother Andor? He looks a bit like me."
-msgstr "[REVIEW]¿Has visto a mi hermano Andor?"
+msgstr "¿Has visto a mi hermano Andor? Se parece un poco a mi."
 
 #: conversationlist_fallhaven.json:fallhaven_citizen4
 msgid "You're that kid from Crossglen village right?"
@@ -2359,7 +2365,7 @@ msgstr "¿El Gremio de Ladrones? ¿Cómo voy a saberlo? ¿Te parezco un ladrón?
 
 #: conversationlist_fallhaven_tavern.json:bela_gsnake_1
 msgid "I'm glad you are still alive!"
-msgstr ""
+msgstr "¡Me alegra que sigas vivo!"
 
 #: conversationlist_fallhaven_tavern.json:bela_gsnake_1:0
 msgid "As you know I can handle myself."
@@ -53064,118 +53070,149 @@ msgstr ""
 #: questlist_fungi_panic.json:fungi_panic:110
 msgid "The potion merchant said that these were very rare mushrooms. He prepared two \"Underground Fighter\" potions for me. He would sell me some more if I came back."
 msgstr ""
+"El mercader de pociones dijo que éstos eran hongos muy raros. Preparó dos "
+"pociones \"Luchador Oculto\" para mi. Él me vendería más si regresaba."
 
 #: questlist_fungi_panic.json:fungi_panic:115
 msgid "Zuul'khan's offer seemed interesting. I have to go kill Bogsten."
 msgstr ""
+"La oferta de Zuul'khan parece interesante. Tengo que ir a matar a Bogsten."
 
 #: questlist_fungi_panic.json:fungi_panic:135
 msgid "I decided to keep Bogsten's staff for myself, so I had to kill Zuul'khan."
 msgstr ""
+"Decidí quedarme el bastón de Bogsten para mi, así que tuve que matar a "
+"Zuul'khan."
 
 #: questlist_fungi_panic.json:fungi_panic:150
 msgid "I gave Bogsten's staff to Zuul'khan."
-msgstr ""
+msgstr "Le dí el bastón de Bogsten a Zuul'khan."
 
 #: questlist_fungi_panic.json:fungi_panic:155
 msgid "He rewarded me with permanent immunity to Spore Infection."
-msgstr ""
+msgstr "Él me recompensó con inmunidad permanente a la Infección por Esporas."
 
 #: questlist_fungi_panic.json:fungi_panic:161
 msgid "I got through the black fog."
-msgstr ""
+msgstr "Fui a través de la niebla oscura."
 
 #: questlist_fungi_panic.json:fungi_panic:162
 msgid "I got through the black fog again after a fight with Zuul'khan."
-msgstr ""
+msgstr "Fui a través de la niebla oscura otra vez para pelear con Zull'khan."
 
 #: questlist_fungi_panic.json:fungi_panic:163
 msgid "And a third time."
-msgstr ""
+msgstr "Y una tercera vez."
 
 #: questlist_fungi_panic.json:fungi_panic:164
 msgid "After another fight with Zuul'khan I got through the black fog again."
 msgstr ""
+"Después de otra batalla con Zuul'khan fui a través de la niebla oscura otra "
+"vez."
 
 #: questlist_fungi_panic.json:fungi_panic:169
 msgid "I overpowered Zuul'khan one more time, but this time the black fog wouldn't go away. Obviously I can't get past the fog that way."
 msgstr ""
+"Dominé a Zuul'khan una vez más, pero esta vez la niebla oscura no se fue. "
+"Obviamente no puedo pasar por ese camino por la niebla."
 
 #: questlist_fungi_panic.json:fungi_panic:170
 msgid "I defeated Zuul'khan one last time and the black fog was gone for good. I must find and destroy the fungi leader."
 msgstr ""
+"Derroté a Zull'khan una última vez y la niebla oscura desapareció para bien. "
+"Debo encontrar y destruir al líder fungico."
 
 #: questlist_fungi_panic.json:fungi_panic:200
 msgid "I defeated the giant mushroom, Zuul'khan's fungi leader."
-msgstr ""
+msgstr "Derroté al hongo gigante, líder fungico de Zuul'khan."
 
 #: questlist_fungi_panic.json:fungi_panic:210
 msgid "A young girl named Lediofa emerged after my battle with the mushroom. She told me how Zuul'khan captured her as food for the mushroom. She seemed to have been poisoned just like Bogsten, so I directed her to see the Fallhaven potioner."
 msgstr ""
+"Una joven llamada Lediofa apareció después de mi batalla con el hongo. Ella "
+"me dijo cómo Zuul'khan la capturó como comida para el hongo. Ella parecía "
+"estar envenenada al igual que Bogsten, así que le indiqué que fuera a ver al "
+"alquimista de Fallhaven."
 
 #: questlist_fungi_panic.json:fungi_panic:220
 msgid "I met Lediofa at the potions shop in Fallhaven. She couldn't afford to pay the potioner for a mushroom poison cure, so I gave her the gold she needed. In return, she offered her family's hospitality if I ever come to visit in Nor City."
 msgstr ""
+"Conocí a Ledioga en la tienda de pociones en Fallhaven. Ella no podía pagar "
+"al alquimista por una cura para envenenamiento por hongos, así que le dí el "
+"oro que necesitaba. A cambio, ella me ofreció la hospitalidad de su familia "
+"si alguna vez iba de visita a Nor City."
 
 #: questlist_fungi_panic.json:bela_gsnake
 msgid "A giant snake"
-msgstr ""
+msgstr "Una serpiente gigante"
 
 #: questlist_fungi_panic.json:bela_gsnake:10
 msgid "I heard rumours of a giant snake to the south of Fallhaven."
-msgstr ""
+msgstr "Escuche rumores sobre una serpiente gigante al sur de Fallhaven."
 
 #: questlist_fungi_panic.json:bela_gsnake:90
 msgid "Bela was happy that I freed Fallhaven from the threat of this monstrous snake."
 msgstr ""
+"Bela estaba feliz porque liberé a Fallhaven de la amenaza de esta monstruosa "
+"serpiente."
 
 #: questlist_fungi_panic.json:achievements
 msgid "Unusual experiences and achievements"
-msgstr ""
+msgstr "Experiencias inusuales y logros"
 
 #: questlist_fungi_panic.json:achievements:1
 msgid "Mikhail gave me a book in which I could put down my most unusual experiences and achievements."
 msgstr ""
+"Mikhail me dio un libro donde puedo escribir mis más inusuales experiencias "
+"y logros."
 
 #: questlist_fungi_panic.json:achievements:10
 msgid "On the road: My first glimpse of the great Duleian Road!"
-msgstr ""
+msgstr "En camino: ¡Mi primer vistazo al gran Camino Duleian!"
 
 #: questlist_fungi_panic.json:achievements:20
 msgid "Community cleanup: I killed 20 highwaymen."
-msgstr ""
+msgstr "Limpieza comunitaria: Maté 20 bandoleros."
 
 #: questlist_fungi_panic.json:achievements:30
 msgid "Prospector: I collected at least 100,000 gold."
-msgstr ""
+msgstr "Prospector: Recogí al menos 100,000 de oro."
 
 #: questlist_fungi_panic.json:achievements:40
 msgid "Birdwatching: I spotted a falcon high above the Lake Laeroth watchtower."
 msgstr ""
+"Ornotología: Vi un halcón por encima de la torre de vigilancia del Lago "
+"Laeroth."
 
 #: questlist_fungi_panic.json:achievements:50
 msgid "Lazy day: I spent a while watching a beetle fight."
-msgstr ""
+msgstr "Día de pereza: Pasé un rato mirando una pelea de escarabajos."
 
 #: questlist_fungi_panic.json:achievements:60
 msgid "The secret garden: Near Guynmart Castle, I found Rob's secret clearing."
 msgstr ""
+"El jardín secreto: Cerca del Castillo Guynmart, encontré el claro secreto de "
+"Rob."
 
 #: questlist_fungi_panic.json:achievements:70
 msgid "Hole in the wall: I discovered a secret room deep in a cave."
 msgstr ""
+"Agujero en la pared: Descubrí un cuarto secreto en lo profundo de la cueva."
 
 #: questlist_fungi_panic.json:achievements:80
 msgid "Tough luck: I must have fallen for every trap in the Arulir mountain. Ouch..."
 msgstr ""
+"Mala suerte: Debí haber caído en todas las trampas en la montaña Arulir. "
+"Ouch..."
 
 #: questlist_fungi_panic.json:achievements:100
 msgid "Swimming lessons: I swam along a raging river - and lived!"
 msgstr ""
+"Lecciones de natación: Nadé a lo largo de un río embravecido - ¡y sobreviví!"
 
 #: questlist_gison.json:gison_soup
 msgid "Delicious soup"
-msgstr ""
+msgstr "Sopa deliciosa"
 
 #: questlist_gison.json:gison_soup:10
 msgid ""
@@ -53183,82 +53220,102 @@ msgid ""
 "He asked me to bring him some of the delicious soup made by Gison with forest mushrooms.\n"
 "Gison's house lies to the south."
 msgstr ""
+"En una choza al suroeste de Fallhaven conocí a Alaun.\n"
+"Él me pidió que le llevara una deliciosa sopa hecha por Gison con hongos del "
+"bosque.\n"
+"La casa de Gison esta al sur."
 
 #: questlist_gison.json:gison_soup:20
 msgid "I found Gison's house and should deliver the soup to Alaun while it is hot."
 msgstr ""
+"Encontré la casa de Gison y debería entregar la sopa a Alaun mientras aún "
+"esta caliente."
 
 #: questlist_gison.json:gison_soup:22
 msgid "Gison gave me a new soup for 5 gold."
-msgstr ""
+msgstr "Gison me dio una sopa nueva por 5 de oro."
 
 #: questlist_gison.json:gison_soup:24
 msgid "Gison gave me a new soup for 50 gold."
-msgstr ""
+msgstr "Gison me dio una sopa nueva por 50 de oro."
 
 #: questlist_gison.json:gison_soup:26
 msgid "Gison gave me a new soup for 500 gold."
-msgstr ""
+msgstr "Gison me dio una nueva sopa por 500 de oro."
 
 #: questlist_gison.json:gison_soup:28
 msgid "Gison gave me a new soup for 5000 gold. I should really go to Alaun now."
 msgstr ""
+"Gison me dio una sopa nueva por 5000 de oro. Realmente debería is con Alaun "
+"ahora."
 
 #: questlist_gison.json:gison_soup:30
 msgid ""
 "Alaun received the soup.\n"
 "I should take the empty bottle back to Gison."
 msgstr ""
+"Alaun recibió la sopa.\n"
+"Debería llevarle la botella vacía de regreso a Gison."
 
 #: questlist_gison.json:gison_soup:35
 msgid "Alaun told me that Nimael also makes soup."
-msgstr ""
+msgstr "Alaun me dijo que Nimael también hace sopa."
 
 #: questlist_gison.json:gison_soup:40
 msgid "Gison thanked me for bringing the empty bottle back to him."
-msgstr ""
+msgstr "Gison me agradeció por traerle la botella vacía de regreso."
 
 #: questlist_gison.json:gison_soup:50
 msgid ""
 "I spent 5555 gold on buying mushroom soup! Am I crazy? \n"
 "There is no soup left for Alaun now."
 msgstr ""
+"¡Gasté 5555 de oro comprando sopa de hongos! ¿Estoy loco?\n"
+"Ahora no queda sopa para Alaun."
 
 #: questlist_gison.json:gison_soup:60
 msgid "Gison insisted his soup is better than Nimael's."
-msgstr ""
+msgstr "Gison insistió que su sopa es mejor que la de Nimael."
 
 #: questlist_gison.json:gison_soup:70
 msgid "Nimael insisted her soup is better than Gison's."
-msgstr ""
+msgstr "Nimael insistió que su sopa es mejor que la de Gison."
 
 #: questlist_gison.json:gison_soup:80
 msgid "Gison gave me a taste of both soups."
-msgstr ""
+msgstr "Gison me dio a probar ambas sopas."
 
 #: questlist_gison.json:gison_soup:90
 msgid "Nimael gave me a taste of both soups."
-msgstr ""
+msgstr "Nimael me dio a probar ambas sopas."
 
 #: questlist_gison.json:gison_soup:100
 msgid "Gison said he would talk to Nimael about selling both soups in Fallhaven."
 msgstr ""
+"Gison dijo que él hablaría con Nimael sobre vender ambas sopas en Fallhaven."
 
 #: questlist_gison.json:gison_soup:110
 msgid "Nimael said she would talk to Gison about selling both soups in Fallhaven."
 msgstr ""
+"Nimael dijo que ella hablaría con Gison sobre vender ambas sopas en "
+"Fallhaven."
 
 #: questlist_gison.json:gison_soup:120
 msgid "Nimael and Gison have been successful in selling more soup in Fallhaven by cooperating and creating more recipes."
 msgstr ""
+"Nimael y Gison han sido exitosos vendiendo más sopa en Fallhaven cooperando "
+"y creando más recetas."
 
 #: questlist_gison.json:gison_cookbook
 msgid "A raid for a cookbook"
-msgstr ""
+msgstr "Un allanamiento por un libro de cocina"
 
 #: questlist_gison.json:gison_cookbook:10
 msgid "Gison, the man with the mushroom soup in the forest south of Fallhaven, got raided. Only his cookbook was stolen and he asked me to bring it back to him."
 msgstr ""
+"Gison, el hombre de la sopa de hongos en el bosque al sur de Fallhaven, fue "
+"allanado. Solo se robaron su libro de cocina y el me pidió que se lo trajera "
+"de regreso."
 
 #: questlist_gison.json:gison_cookbook:15
 msgid "I agreed to help him."
@@ -53267,26 +53324,37 @@ msgstr ""
 #: questlist_gison.json:gison_cookbook:20
 msgid "Gison said the thieves came from the south. I should begin my search there."
 msgstr ""
+"Gison dijo que los ladrones vinieron del sur. Debería comenzar a buscar ahí."
 
 #: questlist_gison.json:gison_cookbook:30
 msgid "I discovered a hidden cave. The thieves may be hiding there."
-msgstr ""
+msgstr "Encontré una cueva oculta. Los ladrones pueden estar escondidos ahí."
 
 #: questlist_gison.json:gison_cookbook:40
 msgid "I found the thieves. Their leader was performing some kind of ritual when I came into the cave."
 msgstr ""
+"Encontré a los ladrones. Su líder estaba ejecutando alguna clase de ritual "
+"cuando entre en la cueva."
 
 #: questlist_gison.json:gison_cookbook:60
 msgid "I brought the cookbook back to Gison. The thieves were working for Zuul'khan, the fungi sorcerer. They made a second copy of the book without the strange writing, which Gison gladly accepted. Gison can now cook his mushroom soup again."
 msgstr ""
+"Le traje a Gison el libro de cocina de regreso. Los ladrones estaban "
+"trabajando para Zuul'khan, el hechicero de los hongos. Ellos hicieron una "
+"copia del libro sin la extraña escritura , que Gison aceptó con gusto. Gison "
+"puede cocinar su sopa de hongos de nuevo."
 
 #: questlist_gison.json:gison_cookbook:62
 msgid "I told Gison that I found the thieves, but that they had destroyed the cookbook."
 msgstr ""
+"Le dije a Gison que encontré a los ladrones, pero que ellos habían destruido "
+"el libro de cocina."
 
 #: questlist_gison.json:gison_cookbook:70
 msgid "Gison will give me mushroom soup in thanks if I bring him 50 gold, 2 of Bogsten's mushrooms and an empty bottle."
 msgstr ""
+"Gison me dará sopa de hongos en agradecimiento si le traigo 50 de oro, 2 "
+"hongos de Bogsten y una botella vacía."
 
 #: worldmap.xml:world1:crossglen
 msgid "Crossglen"
@@ -53338,4 +53406,4 @@ msgstr "Castillo de Guynmart"
 
 #: worldmap.xml:world1:brimhaven_area
 msgid "Brimhaven"
-msgstr ""
+msgstr "Brimhaven"
