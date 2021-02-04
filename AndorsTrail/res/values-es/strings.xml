@@ -448,11 +448,11 @@
     <string name="skill_longdescription_armor_prof_heavy">Cada nivel de habilidad aumenta la probabilidad de bloqueo (defensa) en un %1$d%% sobre el nivel base de cada pieza de armadura pesada que lleves puesta.Las penalizaciones de movimiento serán reducidas en un %2$d%% por nivel de habilidad, a demás de las penalizaciones de velocidad de ataque (reducidas en un %3$d%% por nivel).Las armaduras pesadas son metálicas, incluyendo cotas de mallas y armaduras de placas.</string>
     <string name="skill_longdescription_fightstyle_dualwield">Otorga beneficios al luchar con dos armas a la vez (una de ellas en la mano principal y otra en la secundaria).
 \n
-\nSin esta habilidad, solamente un %1$d%% de los atributos del arma serán usados al estar equipada en la mano secundaria. Esto incluye probabilidad de ataque, habilidad para asestar golpes críticos, potencial daño del arma e incluso defensa. Sin la habilidad, el coste de ataque (los PA necesarios para lanzar un ataque) serán la suma de los PA necesarios de cada arma (la principal y la de la mano secundaria).
+\nSin esta habilidad, solamente un %1$d%% de los atributos del arma serán usados al estar equipada en la mano secundaria. Esto incluye la probabilidad de ataque, la habilidad para asestar golpes críticos, la potencial de daño del arma e la incluso defensa. Sin la habilidad, el coste de ataque (los PA) necesarios para lanzar un ataque serán la suma de los PA necesarios de cada arma (la principal y la de la mano secundaria). Sera utilizado el modificador de daño mas bajo.
 \n
-\nCon el primer nivel de habilidad, será utilizado un %2$d%% de los atributos del arma secundaria, y el coste de ataque (los PA necesarios para lanzar un ataque) será el coste del arma con mayor PA de las dos armas más un %3$d%% del arma que tenga menor coste de ataque de ambas armas.
+\nCon el primer nivel de habilidad, será utilizado un %2$d%% de los atributos del arma secundaria, y el coste de ataque (los PA necesarios para lanzar un ataque) será el coste del arma con mayor PA de las dos armas más un %3$d%% del arma que tenga menor coste de ataque de ambas armas. Se utilizara el promedio de los dos modificadores de daño.
 \n
-\nCon el segundo nivel de habilidad, será utilizado un %4$d%% de los atributos del arma secundaria y los PA necesarios para lanzar un ataque serán los del arma con mayor coste.</string>
+\nCon el segundo nivel de habilidad, será utilizado un %4$d%% de los atributos del arma secundaria y los PA necesarios para lanzar un ataque serán los del arma con mayor coste. Se utilizara el modificador de daño más alto.</string>
     <string name="skill_longdescription_fightstyle_2hand">Da beneficios al usar armas de dos manos, como espadas de dos manos, hachas de guerra o martillos gigantes.
 \n
 \nCada nivel de habilidad aumenta el daño potencial del arma de dos manos un %1$d %% de su daño original.</string>
@@ -602,4 +602,19 @@
     <string name="startscreen_mode_10_lives">Muy duro (10 vidas, guardar 1 partida)</string>
     <string name="startscreen_mode_50_lives">Duro (50 vidas, guardar 1 partida)</string>
     <string name="startscreen_mode_unlimited_saves_and_lives">Normal (vidas infinitas y guardar partida ilimitado)</string>
+    <string name="skill_shortdescription_spore_immunity">inmunidad al envenenamiento por esporas</string>
+    <string name="skill_title_spore_immunity">Resistencia al envenenamiento por esporas</string>
+    <string name="preferences_movement_dpad_transparency_70_pct">70%</string>
+    <string name="preferences_movement_dpad_transparency_60_pct">60%</string>
+    <string name="preferences_movement_dpad_transparency_50_pct">50%</string>
+    <string name="preferences_movement_dpad_transparency_40_pct">40%</string>
+    <string name="preferences_movement_dpad_transparency_30_pct">30%</string>
+    <string name="preferences_movement_dpad_transparency">Si el D-pad virtual esta activado, esta opcion determinara la transparencia de este.</string>
+    <string name="preferences_movement_dpad_transparency_title">transparencia del D-pad</string>
+    <string name="skill_longdescription_spore_immunity">Evita permanentemente que los ataques de monstruos puedan dejar los efectos de envenenamiento por esporas.</string>
+    <string name="inventory_category_food">Comida</string>
+    <string name="inventory_category_potion">Poción</string>
+    <string name="inventory_category_jewelry">Joyas</string>
+    <string name="combat_log_item_plural">Has econtrado %1$d Objetos:</string>
+    <string name="combat_log_item_single">Has encontrado un objeto:</string>
 </resources>
