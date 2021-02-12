@@ -42,7 +42,7 @@
     <string name="menu_save_gamesaved">حفظ الملف للخانة %1$d</string>
     <string name="menu_save_failed">فشل حفظ اللعبة! هل ركبت بطاقة ذاكرة قابلة للكتابة؟</string>
     <string name="loadsave_title_load">فتح ملف الحفظ</string>
-    <string name="savegame_currenthero_displayinfo">"مستوى %1$d،  %2$d خبرة ، %3$d ذهب"</string>
+    <string name="savegame_currenthero_displayinfo">المستوى٪ 1 $ d ،٪ 2 $ d خبرة ،٪ 3 $ d ذهب</string>
     <string name="dialog_loading_message">جار التحميل…</string>
     <string name="dialog_loading_failed_message">عجزت اللعبة عن فتح ملف الحفظ.
 \n
@@ -58,4 +58,30 @@
     <string name="status_hp">صحة:</string>
     <string name="status_ap">فعل:</string>
     <string name="status_exp">خبرة:</string>
+    <string name="combat_attack">هجوم (%1$d )ن ه</string>
+    <string name="heroinfo_one_life">مميت (1حياة)</string>
+    <string name="heroinfo_unlimited_lives">لا حدود لعدد مرات إعادة اللعب، حفظ 1</string>
+    <string name="heroinfo_unlimited_lives_and_saves">اساسي
+\n(لا حدود لعدد مرات إعادة اللعب و حفظ اللعبة)</string>
+    <string name="heroinfo_quests">مهمة</string>
+    <string name="heroinfo_actionpoints">نقاط الحركة (ن ح):</string>
+    <string name="heroinfo_experiencepoints">نقاط الخبرة (ن خ):</string>
+    <string name="heroinfo_healthpoints">نقاط الصحة (نص):</string>
+    <string name="heroinfo_gold">ذهب: %1$d</string>
+    <string name="heroinfo_inventory_categories">فئة</string>
+    <string name="heroinfo_inventory">الخزانة</string>
+    <string name="heroinfo_wornequipment">المعدات البالية</string>
+    <string name="heroinfo_totalexperience">الخبرة الجملية</string>
+    <string name="heroinfo_mode">وضع</string>
+    <string name="heroinfo_level">مستوى</string>
+    <string name="heroinfo_levelup">رفع مستوى</string>
+    <string name="heroinfo_skill_sort">فرز</string>
+    <string name="heroinfo_skill_categories">فئة</string>
+    <string name="heroinfo_skill">مهارات</string>
+    <string name="heroinfo_inv">عناصر</string>
+    <string name="heroinfo_char">نظرة عامة</string>
+    <string name="rip_startscreen">(RIP)</string>
+    <string name="dialog_game_over_text">تأخذ أنفاسك الأخيرة و تموت.</string>
+    <string name="dialog_game_over_title">إنتهت اللعبة</string>
+    <string name="dialog_loading_failed_cheat">لم يتمكن التطبيق من تحميل ملف savegame. تم بالفعل متابعة ملف savegame هذا.</string>
 </resources>
