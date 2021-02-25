@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: andors-trail\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-11-10 11:48+0000\n"
-"PO-Revision-Date: 2021-02-24 14:17+0000\n"
+"PO-Revision-Date: 2021-02-28 15:51+0000\n"
 "Last-Translator: kty919 <kty919@naver.com>\n"
 "Language-Team: Korean <https://hosted.weblate.org/projects/andors-trail/"
 "game-content/ko/>\n"
@@ -357,11 +357,11 @@ msgstr "좋아, 일어났구나."
 
 #: conversationlist_mikhail.json:mikhail_visited
 msgid "I can't seem to find your brother Andor anywhere. He hasn't been back since he left yesterday."
-msgstr "네 형 안도르를 못 찾겠구나. 어제 나간 뒤로 돌아오지를 않았어."
+msgstr "네 형 안도르를 못 찾겠구나. 어제 나간 뒤로 아직도 집에 안왔다."
 
 #: conversationlist_mikhail.json:mikhail3
 msgid "Never mind, he will probably be back soon."
-msgstr "걱정 마라, 아마 곧 돌아오겠지."
+msgstr "신경 쓰지 마라, 아마 곧 돌아오겠지."
 
 #: conversationlist_mikhail.json:mikhail_default
 #: conversationlist_crossglen_leonid.json:leonid_continue
@@ -373,16 +373,16 @@ msgstr "뭐가 궁금하니?"
 #: conversationlist_mikhail.json:mikhail_default:1
 #: conversationlist_mikhail.json:mikhail_default:2
 msgid "Do you have any more tasks for me?"
-msgstr "제가 도와드릴 일이 더 있을까요?"
+msgstr "도와드릴 일이 더 있을까요?"
 
 #: conversationlist_mikhail.json:mikhail_default:3
 #: conversationlist_umar.json:umar_return_1:0
 msgid "Do you have any tasks for me?"
-msgstr "제가 해야 할 일이 있나요?"
+msgstr "해야 할 일이 있나요?"
 
 #: conversationlist_mikhail.json:mikhail_default:4
 msgid "Is there anything else you can tell me about Andor?"
-msgstr "형에 대해서 말해주실 게 더 있나요?"
+msgstr "형이 왜요?"
 
 #: conversationlist_mikhail.json:mikhail_default:5
 #: conversationlist_mikhail.json:mikhail_default:6
@@ -391,7 +391,7 @@ msgstr "널 위한 선물이 있단다."
 
 #: conversationlist_mikhail.json:mikhail_default:7
 msgid "I was searching for Andor."
-msgstr "안도르를 찾아볼게요."
+msgstr "형을 찾아볼게요."
 
 #: conversationlist_mikhail.json:mikhail_default:8
 msgid "What kind of book is it that you have in your hand?"
@@ -404,7 +404,7 @@ msgstr "그래, 도움이 필요했단다. 빵이랑 쥐 문제인데, 어떤 �
 #: conversationlist_mikhail.json:mikhail_tasks:0
 #: conversationlist_mikhail.json:mikhail_rats_done:0
 msgid "What about the bread?"
-msgstr "빵 문제는 뭔가요?"
+msgstr "빵은 뭔가요?"
 
 #: conversationlist_mikhail.json:mikhail_tasks:1
 #: conversationlist_mikhail.json:mikhail_bread_done:0
@@ -521,7 +521,7 @@ msgstr "쥐한테 다치면, 집에 돌아와 침대에서 쉬거라. 다시 기
 
 #: conversationlist_mikhail.json:mikhail_rats_start3
 msgid "Also, don't forget to check your inventory. You probably still have that old ring I gave you. Make sure you wear it."
-msgstr "그리고 물품 목록을 확인하는 것을 잊지 말거라. 아마 내가 준 낡은 반지가 아직 있을 거다. 꼭 끼고 다니렴."
+msgstr "그리고 물품 목록을 확인하는 것을 잊지 말거라. 내가 준 낡은 반지가 아직 있을 거다. 꼭 끼고 다니렴."
 
 #: conversationlist_mikhail.json:mikhail_rats_start3:0
 msgid "OK, I understand. I can rest here if I get hurt, and I should check my inventory for useful items."
@@ -541,7 +541,7 @@ msgid ""
 "\n"
 "If you are hurt, use your bed over there to rest and regain your strength."
 msgstr ""
-"아 그래? 정말 고맙구나!\n"
+"아 그래? 정말 도움이 많이 되었어! 안도르의 훈련용 방패를 가져가라. 네게 딱 어울리는구나.\n"
 "\n"
 "다쳤다면 저기 있는 침대에서 쉬고 기운을 차리거라."
 
@@ -586,7 +586,9 @@ msgstr "여기있다."
 
 #: conversationlist_mikhail_foodpoison.json:mikhail_rats_start2a
 msgid "Another way to regain your strength is to eat some food. You can buy some for yourself from Mara at the town hall. But watch out - I hear that raw meat can sometimes give you food poisoning."
-msgstr "음식을 먹어도 체력을 회복할 수 있단다. 마을 회관의 마라한테서 음식을 살 수 있어. 하지만 조심하렴, 날고기를 먹다간 가끔 식중독에 걸릴 수도 있대."
+msgstr ""
+"음식을 먹어도 체력을 회복할 수 있단다. 마을 회관의 마라한테서 음식을 살 수 있어. 하지만 조심하렴, 날고기를 먹다간 가끔 식중독에 "
+"걸릴 수도 있다."
 
 #: conversationlist_mikhail_foodpoison.json:mikhail_rats_start2b
 msgid "If that happens, perhaps the town priest can do something to help you.  Otherwise, just rest until you feel better."
@@ -594,7 +596,7 @@ msgstr "만약 식중독에 걸리면, 아마 마을의 사제에게 뭔가 도�
 
 #: conversationlist_mikhail_foodpoison.json:mikhail_rats_start2c
 msgid "Me, I can't really afford the meat, so I just stick to my bread!"
-msgstr "나, 나는 정말 고기를 못 살 만큼 가난해서, 빵만 먹는다!"
+msgstr "나, 정말 고기를 살 여유가 됬으면 좋겠다, 빵만 먹어야 한다니!"
 
 #: conversationlist_crossglen.json:audir1
 msgid ""
@@ -894,7 +896,7 @@ msgstr "다른거 얘기해요."
 
 #: conversationlist_crossglen_leonid.json:leonid_crossglen3
 msgid "There were some recent disturbances some weeks ago that you may have noticed. Some villagers got into a fight over the new decree from Lord Geomyr."
-msgstr "눈치 챘을지도 모르지만 몇 주 전에 소란이 있었지. 마을 사람 몇몇이 지미르 왕의 새 법령에 따지러 갔다."
+msgstr "눈치 챘을지도 모르지만 몇 주 전에 소란이 있었지. 마을 사람 몇몇이 지미르 왕의 새로운 법령에 따지러 갔다."
 
 #: conversationlist_crossglen_leonid.json:leonid_crossglen4
 msgid "Lord Geomyr issued a statement regarding the unlawful use of bonemeal as healing substance. Some villagers argued that we should oppose Lord Geomyr's word and still use it."
@@ -1570,11 +1572,11 @@ msgstr "음, 며칠 전에 그런 사람을 본 것 같은데. 어디서 본 건
 
 #: conversationlist_fallhaven.json:fallhaven_andor_4
 msgid "Oh yes, there was another kid from Crossglen village here a few days ago. Not sure he matched your description though."
-msgstr "오 맞아, 며칠 전에 십자협곡 마을에서 온 다른 꼬마가 있었어. 그가 네가 말한 그 꼬마인지는 확실하지 않지만."
+msgstr "오 맞아, 며칠 전에 십자협곡 마을에서 온 꼬마가 있었어. 네가 말한 사람인지는 모르지만."
 
 #: conversationlist_fallhaven.json:fallhaven_andor_4_1
 msgid "There were some shady looking people following him around. Didn't see any more than that."
-msgstr "수상해보이는 사람들이 그 꼬마를 쫒아가더라. 그 이상은 못 봤어."
+msgstr "수상해보이는 사람들이 걔를 뒤쫒더라. 그 이후에는 못 봤어."
 
 #: conversationlist_fallhaven.json:fallhaven_andor_6
 msgid "Nope. Haven't seen him."
@@ -1666,7 +1668,7 @@ msgid ""
 msgstr ""
 "아, 지하실에서 찾았어?\n"
 "\n"
-"그래, 엘리다라는 내 수호자야."
+"그래, 엘리다라는 내 보호자야."
 
 #: conversationlist_fallhaven_arcir.json:arcir_books_1
 msgid "I find great pleasure in my books. They contain the accumulated knowledge of past generations."
@@ -1712,19 +1714,19 @@ msgstr ""
 
 #: conversationlist_fallhaven_bucus.json:bucus_welcome
 msgid "Hi again, welcome back to the ... Oh wait, I thought you were someone else."
-msgstr "또 보는구나. 다시 온 걸 환영한... 어 잠깐, 다른 사람인 줄 알았는데."
+msgstr "안녕 또 보네. 어서와... 어 잠깐, 다른 사람인 줄 알았어."
 
 #: conversationlist_fallhaven_bucus.json:bucus_welcome:1
 msgid "What do you know about the Thieves' Guild?"
-msgstr "도둑 길드에 대해 무엇을 알고 있습니까?"
+msgstr "도둑 길드를 아시나요?"
 
 #: conversationlist_fallhaven_bucus.json:bucus_andor_no_1
 msgid "How interesting that you should ask. What if I had seen him? Why would I tell you?"
-msgstr "물어보는 모습이 재밌네. 내가 봤으면? 왜 말해줘야 하지?"
+msgstr "말하는게 웃기네. 내가 봤으면? 왜 말해줘야 하지?"
 
 #: conversationlist_fallhaven_bucus.json:bucus_andor_no_2
 msgid "No, I can't tell you. Now please leave."
-msgstr "못 말해줘. 이제 가라."
+msgstr "아니, 네게 말해줄 건 없다. 이제 가라."
 
 #: conversationlist_fallhaven_bucus.json:bucus_thieves_no
 msgid "Wh, what? No, I don't know anything about that."
@@ -1987,7 +1989,7 @@ msgstr "당신 지하 묘지에 내려 가고 싶군요? 흐음, 우리 거래�
 
 #: conversationlist_fallhaven_athamyr.json:athamyr_4
 msgid "Bring me some of that delicious cooked meat from the tavern and I will give you my permission to enter the catacombs of Fallhaven Church."
-msgstr "선술집에서 맛있게 구운 고기를 조금 가져 오시면, 가을안식처 교회의 지하 묘지에 들어갈 수 있도록 허락 해 드리겠습니다."
+msgstr "여관에서 맛있게 구운 고기를 조금 가져 오시면, 가을안식처 교회의 지하 묘지에 들어갈 수 있도록 허락 해 드리겠습니다."
 
 #: conversationlist_fallhaven_athamyr.json:athamyr_4:0
 msgid "Here, I have cooked meat for you."
@@ -2007,11 +2009,11 @@ msgstr "고마워요, 잘 될 거에요."
 
 #: conversationlist_fallhaven_drunk.json:fallhaven_drunk
 msgid "No problem. No sireee! Not causing any more trouble now. I sits here outside now."
-msgstr "괜찮아. 안 돼! 이제 더 이상 문제를 일으키지 마. 나 지금 밖에 앉아 있다."
+msgstr "괜차나요. 선생뉘이이임! 더 이솽 문제를 일으키지 않숩니다. 저 지금 밖에 앉아 이써요."
 
 #: conversationlist_fallhaven_drunk.json:fallhaven_drunk_2
 msgid "Wait, who are you again? Are you that guard?"
-msgstr ""
+msgstr "잠깐, 누구쇼? 경비요?"
 
 #: conversationlist_fallhaven_drunk.json:fallhaven_drunk_2:0
 #: conversationlist_fallhaven_drunk.json:fallhaven_drunk_8:0
@@ -2026,7 +2028,7 @@ msgstr ""
 #: conversationlist_brimhaven.json:brv_woodcraftsman_0:0
 #: conversationlist_brimhaven_2.json:brv_villager3_asd_80:0
 msgid "Yes"
-msgstr ""
+msgstr "네"
 
 #: conversationlist_fallhaven_drunk.json:fallhaven_drunk_2:1
 #: conversationlist_fallhaven_drunk.json:fallhaven_drunk_8:1
@@ -2038,31 +2040,31 @@ msgstr ""
 #: conversationlist_stoutford_combined.json:script_lakecave1_damerilia5_1:1
 #: conversationlist_brimhaven.json:blackjack_dealer_30:1
 msgid "No"
-msgstr ""
+msgstr "아니요"
 
 #: conversationlist_fallhaven_drunk.json:fallhaven_drunk_3_1
 msgid "Oh, sir. I'm not causing any trouble anymore, see? I sits outside now as you says, OK?"
-msgstr ""
+msgstr "아, 선생뉨. 제가 더는 문제없돠고 해잖아요, 봐요? 나 밖에 앉아이따고요 당신이 말한때료, 마쬬?"
 
 #: conversationlist_fallhaven_drunk.json:fallhaven_drunk_3_2
 msgid "Oh good. That guard threw me out of the tavern. If I see him again I'll show him one thing or another."
-msgstr ""
+msgstr "어 좋네. 경비가 날 여관 바끄로 던졌어. 다시 만나면 가만 안둘꺼야."
 
 #: conversationlist_fallhaven_drunk.json:fallhaven_drunk_4
 msgid "Drink drink drink, drink some more. Drink, drink ... Uh how did it go again?"
-msgstr ""
+msgstr "마셔 마셔 마셔, 더 마셔. 마셔, 마셔... 어, 또 어떻게 된거지?"
 
 #: conversationlist_fallhaven_drunk.json:fallhaven_drunk_5
 msgid "Were you saying something? Where was I? Yes, so we were in this dungeon."
-msgstr ""
+msgstr "당쉰 뭐라고 해써? 여긴 어디요? 맞아, 우리 던전에 와써찌."
 
 #: conversationlist_fallhaven_drunk.json:fallhaven_drunk_6
 msgid "Or was it a house? I can't remember."
-msgstr ""
+msgstr "아니면 집인가? 기언이 안나."
 
 #: conversationlist_fallhaven_drunk.json:fallhaven_drunk_7
 msgid "No no, it was outside! Now I remember."
-msgstr ""
+msgstr "아니 아니야, 여긴 밖이야! 이제 기억나."
 
 #: conversationlist_fallhaven_drunk.json:fallhaven_drunk_8
 msgid ""
@@ -2070,90 +2072,99 @@ msgid ""
 "\n"
 "Hey, where did my mead go? Did you take it from me?"
 msgstr ""
+"우리는 밖에 있는거야...\n"
+"\n"
+"선쇙님, 내 벌꿀 술 어디이써요? 니가 가져갔냐?"
 
 #: conversationlist_fallhaven_drunk.json:fallhaven_drunk_9_1
 msgid "Well then give it back! Or go buy me another mead."
-msgstr ""
+msgstr "당장 돌려줘! 아니면 새로 사오든가."
 
 #: conversationlist_fallhaven_drunk.json:fallhaven_drunk_9_1:0
 #: conversationlist_fallhaven_drunk.json:fallhaven_drunk_9_2:0
 msgid "Here, have some mead."
-msgstr ""
+msgstr "여기요, 벌꿀 술입니다."
 
 #: conversationlist_fallhaven_drunk.json:fallhaven_drunk_9_1:1
 #: conversationlist_fallhaven_drunk.json:fallhaven_drunk_9_2:1
 msgid "OK, I'll go buy some mead for you."
-msgstr ""
+msgstr "알겠어요, 술 사올께요."
 
 #: conversationlist_fallhaven_drunk.json:fallhaven_drunk_9_1:2
 #: conversationlist_fallhaven_drunk.json:fallhaven_drunk_9_2:2
 msgid "No. I don't think I should help you. Goodbye."
-msgstr ""
+msgstr "아뇨, 제가 왜 그래야하죠. 안녕히계세요."
 
 #: conversationlist_fallhaven_drunk.json:fallhaven_drunk_9_2
 msgid "I must have drunk it then. Could you get me a new mead do you think?"
-msgstr ""
+msgstr "그때 마셨나 보다. 술 좀 사주실래요?"
 
 #: conversationlist_fallhaven_drunk.json:fallhaven_drunk_10
 msgid ""
 "Oh sweet drinks of joy. May the sssshadow be with you kid.\n"
 "[Makes big eyes]"
 msgstr ""
+"아 즐겁고 달콤한 술. 애송이에게 그으으으림자가 함께 하기를.\n"
+"[눈을 크게 뜬다]"
 
 #: conversationlist_fallhaven_drunk.json:fallhaven_drunk_11
 msgid ""
 "[Takes a gulp of the mead]\n"
 "That's good stuff!"
 msgstr ""
+"[한 모금 꼴깍 삼킨다]\n"
+"정말 좋군!"
 
 #: conversationlist_fallhaven_drunk.json:fallhaven_drunk_12
 msgid "Yeah, me and Unnmir had good times. Go ask him yourself, he is usually in the barn to the east of here. I wonder *burps* where that treasure went."
 msgstr ""
+"이야, 나랑 운미르는 좋은 추억을 보냈는데 말야. 가서 직접 물어봐봐, 보통 여기서 동쪽에 있는 헛간에 있어. 궁금하네 *끄윽* 보물을 "
+"어디다 뒀는지."
 
 #: conversationlist_fallhaven_drunk.json:fallhaven_drunk_12:0
 msgid "Treasure? I'm in! I'll go look for Unnmir right away."
-msgstr ""
+msgstr "보물이요? 갈께요! 바로 운미르라는 분을 찾으러 갈께요."
 
 #: conversationlist_fallhaven_drunk.json:fallhaven_drunk_12:1
 #: conversationlist_oluag.json:oluag_grave_16:0
 msgid "Thank you for the story. Goodbye."
-msgstr ""
+msgstr "이야기 고마워요. 안녕히계세요."
 
 #: conversationlist_fallhaven_nocmar.json:nocmar
 msgid "Hello. I'm Nocmar."
-msgstr ""
+msgstr "안녕하세요. 낙머라고 합니다."
 
 #: conversationlist_fallhaven_nocmar.json:nocmar:0
 msgid "This place looks like a smithy. Do you have anything to trade?"
-msgstr "여긴 대장장이의 일터 같군요. 혹시 거래할 만한 게 있나요?"
+msgstr "여긴 대장간 같아요. 거래할 만한 게 있을까요?"
 
 #: conversationlist_fallhaven_nocmar.json:nocmar:1
 msgid "Unnmir sent me."
-msgstr ""
+msgstr "운미르가 보내서 왔습니다."
 
 #: conversationlist_fallhaven_nocmar.json:nocmar_trade_1
 msgid "I don't have any items for sale. I used to have a lot of things for sale, but nowadays I'm not allowed to sell anything."
-msgstr ""
+msgstr "팔만한 물건이 없습니다. 예전에는 많이 팔았는데 요즘은 아무것도 못 팔아요."
 
 #: conversationlist_fallhaven_nocmar.json:nocmar_trade_2
 msgid "I was once one of the greatest smiths in Fallhaven. Then that bastard Lord Geomyr banned my use of heartsteel."
-msgstr ""
+msgstr "저는 한때 가을안식처에서 가장 뛰어난 대장장이 중 한 명이었습니다. 그런데 개새끼 지미르 왕이 심강철을 금지했지요."
 
 #: conversationlist_fallhaven_nocmar.json:nocmar_trade_3
 msgid "By decree of Lord Geomyr, no one in Fallhaven is allowed to even use heartsteel weapons. Much less sell any."
-msgstr ""
+msgstr "지미르 왕의 법령에 따라, 가을안식처의 어느 누구도 심강철 무기를 사용할 수 없다. 판매해서도 안된다."
 
 #: conversationlist_fallhaven_nocmar.json:nocmar_trade_4
 msgid "So now I have to hide the few weapons I have left. I won't dare sell any of them anymore."
-msgstr ""
+msgstr "그래서 지금은 몇 개 남지 않은 무기도 숨겨야 합니다. 더 이상 팔 엄두도 못 내거든요."
 
 #: conversationlist_fallhaven_nocmar.json:nocmar_trade_4_1
 msgid "I haven't seen the heartsteel glow in several years now that Lord Geomyr has banned them."
-msgstr ""
+msgstr "몇 년 동안 심강철이 빛나는 것을 본 적이 없습니다. 지미르 왕이 금지했으니까요."
 
 #: conversationlist_fallhaven_nocmar.json:nocmar_trade_5
 msgid "So, unfortunately I can't sell you any of my weapons."
-msgstr ""
+msgstr "그러니, 불행하게도, 당신에게 제 무기를 팔지 못하는 거지요."
 
 #: conversationlist_fallhaven_nocmar.json:nocmar_quest
 msgid "Unnmir sent you huh? I guess it must be important then."
@@ -2306,44 +2317,44 @@ msgstr ""
 
 #: conversationlist_fallhaven_tavern.json:bela
 msgid "Welcome to Fallhaven Tavern. Have a seat anywhere."
-msgstr ""
+msgstr "가을안식처 여관에 온 것을 환영합니다. 편한데 앉으세요."
 
 #: conversationlist_fallhaven_tavern.json:bela:0
 #: conversationlist_fallhaven_tavern.json:bela_gsnake_5:0
 msgid "Let me see what food and drinks you have available."
-msgstr ""
+msgstr "먹을 게 뭐가 있는지 봐요."
 
 #: conversationlist_fallhaven_tavern.json:bela:1
 #: conversationlist_fallhaven_tavern.json:bela_gsnake_5:1
 #: conversationlist_kendelow.json:kendelow_d:2
 msgid "Are there any rooms available?"
-msgstr ""
+msgstr "객실이 있나요?"
 
 #: conversationlist_fallhaven_tavern.json:bela_room_1
 msgid "A room will cost you only 10 gold."
-msgstr ""
+msgstr "단돈 10금만 내시면 됩니다."
 
 #: conversationlist_fallhaven_tavern.json:bela_room_1:0
 msgid "[Buy for 10 gold]"
-msgstr ""
+msgstr "[10금을 지불한다]"
 
 #: conversationlist_fallhaven_tavern.json:bela_room_1:1
 msgid "I really need to rest but I don't have 10 gold. I will wash the dishes. [Wash the dishes]"
-msgstr "난 진짜 숙박하고 싶지지만 10금이 없어. 그래서 접시를 닦는거야. [접시를 닦는다]"
+msgstr "저 진짜 숙박하고 싶지만 10금이 없어요. 대신 접시를 닦을께요 [설거지를 한다]"
 
 #: conversationlist_fallhaven_tavern.json:bela_room_2
 msgid "OK. Take the last room down at the end of the hall."
-msgstr ""
+msgstr "네. 아래 복도 끝 마지막 방입니다."
 
 #: conversationlist_fallhaven_tavern.json:bela_room_2:0
 #: conversationlist_fallhaven_tavern.json:bela_room_3:0
 #: conversationlist_umar.json:umar_lodar_6:1
 msgid "Thank you. There was something else I wanted to talk about."
-msgstr "고마워요. 말하고 싶은 게 또 있었어요."
+msgstr "고마워요. 말할게 더 있는데요."
 
 #: conversationlist_fallhaven_tavern.json:bela_room_3
 msgid "I hope the room suits your needs. It's the last room down at the end of the hall."
-msgstr "당신한테 그 방이 잘 맞았으면 좋겠네요. 홀 끝에 마지막 방이에요."
+msgstr "객실이 맘에 쏙 들기를 빕니다. 아래 복도 끝 마지막 방입니다."
 
 #: conversationlist_fallhaven_tavern.json:ganos
 msgid "You seem familiar somehow."
@@ -3015,15 +3026,15 @@ msgstr ""
 
 #: conversationlist_wilderness.json:fallhaven_bandit
 msgid "Get lost kid. I don't have time for you."
-msgstr "길 잃은 꼬마로군. 네게 쓸 시간은 없다."
+msgstr "길 잃은 꼬마로군. 시간낭비하게 하지 마라."
 
 #: conversationlist_wilderness.json:fallhaven_bandit:0
 msgid "I'm looking for a piece of the Rift spell."
-msgstr ""
+msgstr "균열 주문의 조각을 찾고 있어요."
 
 #: conversationlist_wilderness.json:fallhaven_bandit_2
 msgid "No! Vacor will not gain the power of the rift spell!"
-msgstr ""
+msgstr "안되! 바코는 균열 주문의 힘을 얻어선 안된다!"
 
 #: conversationlist_wilderness.json:fallhaven_bandit_2:0
 #: conversationlist_wilderness.json:bandit1_4:0
@@ -3032,7 +3043,7 @@ msgstr ""
 #: conversationlist_rogorn.json:rogorn_attack_1:0
 #: conversationlist_brimhaven.json:brv_brothers_11:0
 msgid "Let's fight!"
-msgstr ""
+msgstr "덤벼요!"
 
 #: conversationlist_wilderness.json:bandit1
 msgid "What have we here? A lost wanderer?"
@@ -3378,7 +3389,7 @@ msgstr "아니, 그런 사람은 본 적 없다. 여기 서쪽에 십자협곡 �
 #: conversationlist_fallhaven_south.json:fallhaven_farmer1
 #: conversationlist_stoutford_combined.json:stoutford_farmer2
 msgid "Hello there. Please do not bother me, I have a lot of work to do."
-msgstr ""
+msgstr "안녕하세요. 말 걸지 말아주세요, 할 일이 많아서요."
 
 #: conversationlist_fallhaven_south.json:fallhaven_farmer2
 #: conversationlist_stoutford_combined.json:stoutford_farmer3
@@ -3387,7 +3398,7 @@ msgstr ""
 
 #: conversationlist_fallhaven_south.json:khorand
 msgid "Hey you, don't even think of touching any of the crates. I am watching you!"
-msgstr ""
+msgstr "이봐요, 어떤 화물도 만질 생각하지 마십시오. 지켜보고 있으니까!"
 
 #: conversationlist_fallhaven_south.json:fallhaven_lumberjack_3
 msgid "Oh no. Not again. I won't start cutting the trees unless I have received a payment beforehand. Go away!"
@@ -5617,7 +5628,7 @@ msgstr "미안, 내가 파는 음식은 없어. 요리된 음식이나 마실 �
 
 #: conversationlist_foamingflask.json:torilo_1
 msgid "Welcome to the Foaming Flask tavern. We welcome all travelers in here."
-msgstr "거품나는 선술집에 오신 것을 환영합니다. 여기 오신 모든 여행자들을 기꺼이 맞이하지요."
+msgstr "거품나는 여관에 오신 것을 환영합니다. 여기 오신 모든 여행자들을 기꺼이 맞이하지요."
 
 #: conversationlist_foamingflask.json:torilo_1:0
 msgid "Thank you. Are you the innkeeper here?"
@@ -5707,7 +5718,7 @@ msgstr "뭔가나 누굴 찾고 있는 것처럼 보이는데, 누굴 찾는지 
 
 #: conversationlist_foamingflask.json:torilo_guards_3
 msgid "I hope the Shadow watches over us so that nothing bad happens to the Foaming Flask tavern because of them."
-msgstr "저 분들이 선술집에 안 좋은 일을 일으키지 않도록 Shadow께서 굽어살펴주셨으면 해요."
+msgstr "저 분들이 여관에 안 좋은 일을 일으키지 않도록 Shadow께서 굽어살펴주셨으면 해요."
 
 #: conversationlist_ambelie.json:ambelie_1
 msgid "Oh my, a commoner. Get away from me. I might catch something."
@@ -6217,7 +6228,7 @@ msgstr ""
 #: conversationlist_omicronrg9.json:guild03_hideout3_exit_2:0
 #: conversationlist_burhczyd.json:burhczydx_1a_4
 msgid "What are you talking about?"
-msgstr ""
+msgstr "뭘 말하고 싶은건데?"
 
 #: conversationlist_wrye.json:wrye_mourn_8
 msgid "Thank you. Shadow watch over me."
@@ -6579,7 +6590,7 @@ msgstr ""
 
 #: conversationlist_signs_v068.json:sign_foamingflask
 msgid "Welcome to the Foaming Flask tavern!"
-msgstr "거품나는 선술집에 오신 것을 환영합니다!"
+msgstr "거품나는 여관에 오신 것을 환영합니다!"
 
 #: conversationlist_signs_v068.json:sign_road1_nw
 msgid ""
@@ -33489,43 +33500,45 @@ msgstr ""
 
 #: conversationlist_burhczyd.json:burhczydx_1a
 msgid "Hi, who are you? I have never seen you here."
-msgstr ""
+msgstr "안녕, 넌 누구냐? 처음보는 얼굴인데."
 
 #: conversationlist_burhczyd.json:burhczydx_1a:0
 msgid "My name is $playername. I am from Crossglen."
-msgstr ""
+msgstr "나는 $playername. 십자협곡 출신이야."
 
 #: conversationlist_burhczyd.json:burhczydx_1a:1
 msgid "My father always told me not to talk to strangers."
-msgstr ""
+msgstr "아빠가 낮선 사람이랑 얘기하지 말랬어요."
 
 #: conversationlist_burhczyd.json:burhczydx_1a_2
 msgid "Cool. I am Burhczyd afgz Dtaloumiye. Nice to meet you."
-msgstr ""
+msgstr "멋진데. 나는 버흐치드 아프즈 드탈루미예야. 만나서 반갑다."
 
 #: conversationlist_burhczyd.json:burhczydx_1a_2:0
 msgid "Burh... - eh, OK. Do you live here in this town?"
-msgstr ""
+msgstr "버흐... 에, 알았어. 너는 여기 살아?"
 
 #: conversationlist_burhczyd.json:burhczydx_1a_3
 msgid "Yes. At least until now. My parents gave me some money so that I could tour the world. This morning I set off, and I'm staying here in the inn. However, I will have to earn some more money, otherwise it will be a short trip."
 msgstr ""
+"응. 최소한 지금까지는 그래. 부모님이 세상을 여행해보라며 돈을 좀 주셨거든. 오늘 아침에 출발해서, 여관에 머무는 중이야. 근데, 돈을 "
+"더 벌지 않으면 여기서 여행이 끝날 거 같아."
 
 #: conversationlist_burhczyd.json:burhczydx_1a_3:0
 msgid "Yes, some gold always helps. Hmm, maybe you can kill two birds with one stone."
-msgstr ""
+msgstr "응, 돈은 항상 도움이 되지. 흐음, 둘 다 잡을 수 있겠는데."
 
 #: conversationlist_burhczyd.json:burhczydx_1a_4:0
 msgid "Take a cart and start a transport company. You can deliver goods to different cities and get some money."
-msgstr ""
+msgstr "수레를 가지고 운송회사를 차리는 거야. 상품을 다른 마을에 배달하고 돈도 버는거지."
 
 #: conversationlist_burhczyd.json:burhczydx_1a_5
 msgid "Wow, splendid idea! I will take my father's cart. Then all I need is a name for my company. Thanks for this tip."
-msgstr ""
+msgstr "와, 끝내주는 생각이야! 아빠의 수레를 빌려야겠어. 내 회사에 이름만 지으면 되겠다. 조언 고맙다."
 
 #: conversationlist_burhczyd.json:burhczydx_1a_5:0
 msgid "My pleasure."
-msgstr ""
+msgstr "별 말씀을."
 
 #: conversationlist_burhczyd.json:burhczydx_1e
 msgid "I am still thinking about what to call my company. As soon as I have a name, I'll start."
@@ -38564,11 +38577,11 @@ msgstr "나는 모험가이기도 해서, 최근에 여기 동굴을 통과하�
 
 #: conversationlist_brimhaven_2.json:inspiring_snake_master_50
 msgid "In the beginning it was relatively easy.  It wasn't until I ran into the Snake master's minions."
-msgstr "처음에는 좀 쉬웠어. 근데 뱀 조종 달인의 부하를 만난거야."
+msgstr "처음에는 비교적 쉬웠지만. 뱀의 주인의 부하를 만난 후에는 아니었네."
 
 #: conversationlist_brimhaven_2.json:inspiring_snake_master_60
 msgid "I was quickly ambushed and was forced to flee in order to save my life. But of course, during my attempt to flee, I dropped my map."
-msgstr "재빨리 숨어서 살려고 도망갈 수밖에 없었다. 게다가 도망치는 동안, 지도를 잃어버렸지."
+msgstr "재빨리 숨어서, 살려면 도망칠 수밖에 없었지. 거기다 도망칠 때 지도를 잃어버리고 말았어."
 
 #: conversationlist_brimhaven_2.json:inspiring_snake_master_60:0
 msgid "I could retrieve the map for you."
@@ -38576,7 +38589,7 @@ msgstr "제가 지도를 찾아올께요."
 
 #: conversationlist_brimhaven_2.json:inspiring_snake_master_70
 msgid "Please do and hurry back to me."
-msgstr "부탁하마 금방 돌아와주렴."
+msgstr "부탁하마 빨리 돌아오려무나."
 
 #: conversationlist_brimhaven_2.json:inspiring_snake_master_80
 msgid "Ah, my 'map'. Good!"
@@ -41013,11 +41026,11 @@ msgstr ""
 
 #: conversationlist_fungi_panic.json:bela_trade_1
 msgid "I have a variety of food and drinks."
-msgstr ""
+msgstr "다양한 음식과 음료가 있습니다."
 
 #: conversationlist_fungi_panic.json:bela_trade_1:0
 msgid "OK. Please show me."
-msgstr ""
+msgstr "네. 보여주세요."
 
 #: conversationlist_fungi_panic.json:bela_trade_2
 msgid "I have some new soup now, from Gison and Nimael. It's expensive, but worth the money."
@@ -42210,7 +42223,7 @@ msgstr "날카로운 철 단도"
 
 #: itemlist_weapons.json:dagger2
 msgid "Superior iron dagger"
-msgstr "고품질 철 단도"
+msgstr "우수한 철 단도"
 
 #: itemlist_weapons.json:shortsword1
 msgid "Iron shortsword"
@@ -42266,7 +42279,7 @@ msgstr "가죽 갑옷"
 
 #: itemlist_armour.json:armor2
 msgid "Superior leather armor"
-msgstr "고품질 가죽 갑옷"
+msgstr "우수한 가죽 갑옷"
 
 #: itemlist_armour.json:armor3
 msgid "Hard leather armor"
@@ -42274,7 +42287,7 @@ msgstr "단단한 가죽 갑옷"
 
 #: itemlist_armour.json:armor4
 msgid "Superior hard leather armor"
-msgstr "고품질 단단한 가죽 갑옷"
+msgstr "우수하고 단단한 가죽 갑옷"
 
 #: itemlist_armour.json:hat1
 msgid "Green hat"
@@ -42322,7 +42335,7 @@ msgstr "조잡한 나무 방패"
 
 #: itemlist_armour.json:shield5
 msgid "Superior wooden shield"
-msgstr "고품질 나무 방패"
+msgstr "우수한 나무 방패"
 
 #: itemlist_armour.json:boots1
 msgid "Leather boots"
@@ -42330,7 +42343,7 @@ msgstr "가죽 장화"
 
 #: itemlist_armour.json:boots2
 msgid "Superior leather boots"
-msgstr "뛰어난 가죽 장화"
+msgstr "우수한 가죽 장화"
 
 #: itemlist_armour.json:boots3
 msgid "Snakeskin boots"
@@ -42342,11 +42355,11 @@ msgstr "보강된 장화"
 
 #: itemlist_armour.json:gloves_attack1
 msgid "Gloves of swift attack"
-msgstr "신속 공격 장갑"
+msgstr "날랜 공격의 장갑"
 
 #: itemlist_armour.json:gloves_attack2
 msgid "Fine gloves of swift attack"
-msgstr "신속 공격 고급 장갑"
+msgstr "날랜 공격의 고급 장갑"
 
 #: itemlist_rings.json:ring_dmg1
 msgid "Ring of damage +1"
@@ -42398,7 +42411,7 @@ msgstr "수호자의 목걸이"
 
 #: itemlist_necklaces.json:necklace_shield2
 msgid "Shielding necklace"
-msgstr "보호의 목걸이"
+msgstr "보호막 목걸이"
 
 #: itemlist_junk.json:rock
 msgid "Small rock"
@@ -42581,7 +42594,7 @@ msgstr "칼로미란의 비결"
 
 #: itemlist_quest.json:heartstone
 msgid "Heartstone"
-msgstr "돌심장"
+msgstr "심석"
 
 #: itemlist_quest.json:vacor_spell
 msgid "Piece of Vacor's spell"
@@ -42805,11 +42818,11 @@ msgstr "피로 얼룩진 장갑"
 
 #: itemlist_v0610_1.json:gloves_critical
 msgid "Assassin's gloves"
-msgstr ""
+msgstr "암살자의 장갑"
 
 #: itemlist_v0610_1.json:robe_protector
 msgid "Robe of the protector"
-msgstr ""
+msgstr "보호자의 가운"
 
 #: itemlist_v0610_1.json:dagger_shadow_priests
 msgid "Dagger of the Shadow priests"
@@ -42837,7 +42850,7 @@ msgstr ""
 
 #: itemlist_v0610_1.json:dagger_sharp_steel
 msgid "Sharp steel dagger"
-msgstr ""
+msgstr "날카로운 강철 단도"
 
 #: itemlist_v0610_1.json:sword_balanced_steel
 msgid "Balanced steel sword"
@@ -42849,7 +42862,7 @@ msgstr ""
 
 #: itemlist_v0610_1.json:sword_defenders
 msgid "Defender's blade"
-msgstr ""
+msgstr "수비병의 칼"
 
 #: itemlist_v0610_1.json:sword_villains
 msgid "Villain's blade"
@@ -42893,7 +42906,7 @@ msgstr ""
 
 #: itemlist_v0610_1.json:shield_wooden_defender
 msgid "Wooden defender"
-msgstr ""
+msgstr "나무 수비병"
 
 #: itemlist_v0610_1.json:hat_hard_leather
 msgid "Hardened leather cap"
@@ -42941,7 +42954,7 @@ msgstr ""
 
 #: itemlist_v0610_1.json:armour_superior_chain
 msgid "Superior chain mail"
-msgstr ""
+msgstr "우수한 사슬 갑옷"
 
 #: itemlist_v0610_1.json:armour_chain_champ
 msgid "Champion's chain mail"
@@ -42957,11 +42970,11 @@ msgstr ""
 
 #: itemlist_v0610_1.json:gloves_barbrawler
 msgid "Bar brawler's gloves"
-msgstr "술집 싸움꾼 장갑"
+msgstr "술집 주먹패 장갑"
 
 #: itemlist_v0610_1.json:gloves_fumbling
 msgid "Gloves of fumbling"
-msgstr "잦은 실수 장갑"
+msgstr "어설픈 장갑"
 
 #: itemlist_v0610_1.json:gloves_crude_cloth
 msgid "Crude cloth gloves"
@@ -43009,23 +43022,23 @@ msgstr "단단한 가죽 장화"
 
 #: itemlist_v0610_1.json:boots_defender
 msgid "Defender's boots"
-msgstr "방어자의 장화"
+msgstr "수비병의 장화"
 
 #: itemlist_v0610_1.json:necklace_shield_0
 msgid "Lesser shielding necklace"
-msgstr "하급 보호의 목걸이"
+msgstr "하급 보호막 목걸이"
 
 #: itemlist_v0610_1.json:necklace_strike
 msgid "Necklace of strike"
-msgstr ""
+msgstr "정밀 타격의 목걸이"
 
 #: itemlist_v0610_1.json:necklace_defender_stone
 msgid "Defender's stone"
-msgstr ""
+msgstr "수비병의 돌"
 
 #: itemlist_v0610_1.json:necklace_protector
 msgid "Necklace of the protector"
-msgstr ""
+msgstr "보호자의 목걸이"
 
 #: itemlist_v0610_1.json:ring_crude_combat
 msgid "Crude combat ring"
@@ -43045,7 +43058,7 @@ msgstr "거친 활력의 반지"
 
 #: itemlist_v0610_1.json:ring_fumbling
 msgid "Ring of fumbling"
-msgstr "잦은 실수 반지"
+msgstr "어설픈 반지"
 
 #: itemlist_v0610_1.json:ring_rough_damage
 msgid "Rough ring of damage"
@@ -43053,7 +43066,7 @@ msgstr "거친 공격의 반지"
 
 #: itemlist_v0610_1.json:ring_barbrawler
 msgid "Bar brawler's ring"
-msgstr "술집 싸움꾼 반지"
+msgstr "술집 주먹패 반지"
 
 #: itemlist_v0610_1.json:ring_dmg_3
 msgid "Ring of damage +3"
@@ -43065,11 +43078,11 @@ msgstr "활력의 반지"
 
 #: itemlist_v0610_1.json:ring_taverbrawler
 msgid "Tavern brawler's ring"
-msgstr "선술집 싸움꾼의 반지"
+msgstr "여관 말썽꾼의 반지"
 
 #: itemlist_v0610_1.json:ring_defender
 msgid "Defender's ring"
-msgstr "방어자의 반지"
+msgstr "수비병의 반지"
 
 #: itemlist_v0610_1.json:ring_challenger
 msgid "Challenger's ring"
@@ -43109,7 +43122,7 @@ msgstr "완벽한 뒷통수용 반지"
 
 #: itemlist_v0610_1.json:ring_protector
 msgid "Ring of the protector"
-msgstr "보호의 반지"
+msgstr "보호자의 반지"
 
 #: itemlist_v0610_2.json:erinith_book
 msgid "Erinith's book"
@@ -43213,7 +43226,7 @@ msgstr ""
 
 #: itemlist_v0611_1.json:helm_defend1
 msgid "Defender's helmet"
-msgstr ""
+msgstr "수비병의 투구"
 
 #: itemlist_v0611_1.json:helm_protector0
 msgid "Strange looking helmet"
@@ -43221,7 +43234,7 @@ msgstr ""
 
 #: itemlist_v0611_1.json:helm_protector
 msgid "Dark protector"
-msgstr ""
+msgstr "어둠의 보호자"
 
 #: itemlist_v0611_1.json:armour_chain_remg
 msgid "Remgard chain mail"
@@ -43281,7 +43294,7 @@ msgstr "수호자의 장화"
 
 #: itemlist_v0611_1.json:boots_brawler
 msgid "Bar brawler's boots"
-msgstr "술집 싸움꾼의 장화"
+msgstr "술집 말썽꾼의 장화"
 
 #: itemlist_v0611_1.json:marrowtaint
 msgid "Marrowtaint"
@@ -43454,11 +43467,11 @@ msgstr ""
 
 #: itemlist_v070.json:clmr_def1
 msgid "Defender's claymore"
-msgstr ""
+msgstr "수비병의 클레이모어"
 
 #: itemlist_v070.json:clmr_def2
 msgid "Superior defender's claymore"
-msgstr ""
+msgstr "우수한 수비병의 클레이모어"
 
 #: itemlist_v070.json:clmr_gnt
 msgid "Giant's claymore"
@@ -43666,11 +43679,11 @@ msgstr ""
 
 #: itemlist_v070.json:junk_necklace0
 msgid "Mundane necklace"
-msgstr ""
+msgstr "평범한 목걸이"
 
 #: itemlist_v070.json:junk_necklace1
 msgid "Polished necklace"
-msgstr ""
+msgstr "세련된 목걸이"
 
 #: itemlist_v070.json:bat_wing
 msgid "Bat wing"
@@ -43754,11 +43767,11 @@ msgstr ""
 
 #: itemlist_stoutford.json:necklace_undead
 msgid "Necklace of the Undead"
-msgstr ""
+msgstr "불사자의 목걸이"
 
 #: itemlist_stoutford.json:necklace_undead:description
 msgid "This necklace calls for death, and yours will do."
-msgstr ""
+msgstr "이 목걸이는 죽음을 부르고 있다, 당신의 죽음을."
 
 #: itemlist_stoutford.json:globetrotter_boots
 msgid "Boots of the Globetrotter"
@@ -43938,7 +43951,7 @@ msgstr "번개 공격의 물약"
 
 #: itemlist_trader_teksin.json:boots_combat3
 msgid "Superior combat boots"
-msgstr "고품질 전투화"
+msgstr "우수한 전투화"
 
 #: itemlist_trader_teksin.json:ring_dexterity
 msgid "Ring of dexterity"
@@ -44032,11 +44045,11 @@ msgstr "완벽한 피해 저항의 반지"
 
 #: itemlist_stoutford_combined.json:necklace_lifesteal
 msgid "Necklace of lifesteal"
-msgstr ""
+msgstr "생명강탈의 목걸이"
 
 #: itemlist_stoutford_combined.json:necklace_protector2
 msgid "Superior necklace of the protector"
-msgstr ""
+msgstr "우수한 보호자의 목걸이"
 
 #: itemlist_stoutford_combined.json:shield_leather
 msgid "Reinforced leather buckler"
@@ -44052,7 +44065,7 @@ msgstr ""
 
 #: itemlist_stoutford_combined.json:shield_iron3
 msgid "Superior iron shield"
-msgstr ""
+msgstr "우수한 철 방패"
 
 #: itemlist_stoutford_combined.json:shield_blk_defender
 msgid "Black defender"
@@ -44289,7 +44302,7 @@ msgstr ""
 
 #: itemlist_omicronrg9.json:g02_ambelie
 msgid "Sapphire Necklace"
-msgstr ""
+msgstr "사파이어 목걸이"
 
 #: itemlist_omicronrg9.json:g02_ambelie:description
 msgid "The jewelry that Ambelie gave me in exchange for her life."
@@ -44401,7 +44414,7 @@ msgstr ""
 
 #: itemlist_brimhaven.json:necklace_dexterity
 msgid "Necklace of dexterity"
-msgstr ""
+msgstr "손재주의 목걸이"
 
 #: itemlist_brimhaven.json:brimhaven_plate_mail1
 msgid "Brimhaven plate mail"
@@ -44587,11 +44600,11 @@ msgstr ""
 
 #: itemlist_brimhaven.json:expensive_necklace
 msgid "Diamond Necklace"
-msgstr ""
+msgstr "다이아몬드 목걸이"
 
 #: itemlist_brimhaven.json:necklace_shield3
 msgid "Enhanced Shielding necklace"
-msgstr ""
+msgstr "강화된 보호막 목걸이"
 
 #: itemlist_brimhaven.json:ring_antipoison
 msgid "Ring of poison immunity"
@@ -44619,7 +44632,7 @@ msgstr ""
 
 #: itemlist_brimhaven.json:very_expensive_necklace
 msgid "Impressive Diamond Necklace"
-msgstr ""
+msgstr "인상깊은 다이아몬드 목걸이"
 
 #: itemlist_brimhaven2.json:brv_school_sword
 msgid "Wooden sword"
@@ -45001,7 +45014,7 @@ msgstr ""
 
 #: itemlist_fungi_panic.json:soup_forest:description
 msgid "A delicious soup."
-msgstr ""
+msgstr "맛있는 수프."
 
 #: itemlist_gison.json:gael_purse
 msgid "Snake leather purse"
@@ -45013,7 +45026,7 @@ msgstr ""
 
 #: itemlist_gison.json:gison_soup:description
 msgid "A delicious smelling soup."
-msgstr ""
+msgstr "맛있는 향이 나는 수프."
 
 #: itemlist_gison.json:bottle_empty
 msgid "Empty bottle"
@@ -45340,7 +45353,7 @@ msgstr ""
 
 #: monsterlist_fallhaven_npcs.json:warden
 msgid "Warden"
-msgstr ""
+msgstr "교도소장"
 
 #: monsterlist_fallhaven_npcs.json:guard
 #: monsterlist_v0610_npcs1.json:crossroads_backguard
@@ -45367,68 +45380,68 @@ msgstr ""
 
 #: monsterlist_fallhaven_npcs.json:bearded_citizen
 msgid "Bearded citizen"
-msgstr ""
+msgstr "수염 난 시민"
 
 #: monsterlist_fallhaven_npcs.json:old_citizen
 msgid "Old citizen"
-msgstr ""
+msgstr "노인"
 
 #: monsterlist_fallhaven_npcs.json:tired_citizen
 msgid "Tired citizen"
-msgstr ""
+msgstr "피곤한 시민"
 
 #: monsterlist_fallhaven_npcs.json:citizen
 msgid "Citizen"
-msgstr ""
+msgstr "시민"
 
 #: monsterlist_fallhaven_npcs.json:grumpy_citizen
 msgid "Grumpy citizen"
-msgstr ""
+msgstr "심술 궂은 시민"
 
 #: monsterlist_fallhaven_npcs.json:blond_citizen
 msgid "Blond citizen"
-msgstr ""
+msgstr "금발 시민"
 
 #: monsterlist_fallhaven_npcs.json:bucus
 msgid "Bucus"
-msgstr ""
+msgstr "부커스"
 
 #: monsterlist_fallhaven_npcs.json:drunkard
 msgid "Drunkard"
-msgstr ""
+msgstr "술고래"
 
 #: monsterlist_fallhaven_npcs.json:old_man
 #: monsterlist_guynmart.json:guynmart_wise
 msgid "Old man"
-msgstr ""
+msgstr "노인"
 
 #: monsterlist_fallhaven_npcs.json:nocmar
 msgid "Nocmar"
-msgstr ""
+msgstr "낙머"
 
 #: monsterlist_fallhaven_npcs.json:prisoner
 msgid "Prisoner"
-msgstr ""
+msgstr "죄수"
 
 #: monsterlist_fallhaven_npcs.json:ganos
 msgid "Ganos"
-msgstr ""
+msgstr "가노스"
 
 #: monsterlist_fallhaven_npcs.json:arcir
 msgid "Arcir"
-msgstr ""
+msgstr "아칠"
 
 #: monsterlist_fallhaven_npcs.json:athamyr
 msgid "Athamyr"
-msgstr ""
+msgstr "아타미르"
 
 #: monsterlist_fallhaven_npcs.json:thoronir
 msgid "Thoronir"
-msgstr ""
+msgstr "쏘로니르"
 
 #: monsterlist_fallhaven_npcs.json:chapelgoer
 msgid "Mourning woman"
-msgstr ""
+msgstr "애도하는 여자"
 
 #: monsterlist_fallhaven_npcs.json:potion_merchant
 msgid "Potion merchant"
@@ -45436,7 +45449,7 @@ msgstr "물약 상인"
 
 #: monsterlist_fallhaven_npcs.json:tailor
 msgid "Tailor"
-msgstr ""
+msgstr "테일러"
 
 #: monsterlist_fallhaven_npcs.json:bela
 #: monsterlist_fungi_panic.json:bela_2
@@ -45547,7 +45560,7 @@ msgstr ""
 
 #: monsterlist_wilderness.json:undead_warden
 msgid "Undead warden"
-msgstr ""
+msgstr "불사자 교도소장"
 
 #: monsterlist_wilderness.json:cave_guardian
 msgid "Cave guardian"
@@ -48037,7 +48050,7 @@ msgstr ""
 #: monsterlist_burhczyd.json:burhczyd11
 #: monsterlist_burhczyd.json:burhczyd12
 msgid "Burhczyd"
-msgstr ""
+msgstr "버흐치드"
 
 #: monsterlist_stoutford_combined.json:stn_gyra
 #: monsterlist_stoutford_combined.json:stn_gyra1
@@ -48959,15 +48972,15 @@ msgstr ""
 
 #: questlist.json:fallhavendrunk
 msgid "Drunken tale"
-msgstr ""
+msgstr "술냄새 나는 이야기"
 
 #: questlist.json:fallhavendrunk:10
 msgid "A drunk outside Fallhaven tavern began telling me his story, but wants me to bring him some mead. I don't know if his story will lead anywhere though."
-msgstr ""
+msgstr "가을안식처 여관 밖에 한 술주정뱅이가 자기 얘기를 하더만, 술을 사달라 한다. 끝이 어떻게 되려나."
 
 #: questlist.json:fallhavendrunk:100
 msgid "The drunk told me he used to travel with Unnmir. I should go talk to Unnmir."
-msgstr ""
+msgstr "술취한 아저씨는 운미르와 여행을 다녀오며 보물을 찾은 것 같다. 운미르에게 가서 물어보자."
 
 #: questlist.json:calomyran:10
 msgid "An old man standing outside in Fallhaven has lost his book 'Calomyran Secrets'. I should go look for it. Maybe in Arcir's house to the south?"
@@ -49820,7 +49833,7 @@ msgstr ""
 
 #: questlist_v0610.json:feygard_shipment:25
 msgid "I should deliver the shipment to the Feygard patrol captain stationed in the Foaming Flask tavern."
-msgstr "'거품나는 선술집'에 있는 Feygard시 순찰대장에게 화물을 갖다줘야 합니다."
+msgstr "'거품나는 여관'에 있는 Feygard시 순찰대장에게 화물을 갖다줘야 합니다."
 
 #: questlist_v0610.json:feygard_shipment:26
 msgid "Gandoren tells me that Ailshara has expressed some interest in the Feygard shipments, and urges me to stay away from her."
@@ -49836,7 +49849,9 @@ msgstr ""
 
 #: questlist_v0610.json:feygard_shipment:50
 msgid "I have delivered the shipment to the Feygard patrol captain in the Foaming Flask tavern. I should go tell Gandoren in the Crossroads guardhouse that the shipment is delivered."
-msgstr "'거품나는 선술집'에 있는 Feygard시 순찰대장에게 화물을 갖다줬습니다. [교차도로 유치장]에 있는 Gandoren에게 화물이 배달되었다고 알려야 합니다."
+msgstr ""
+"'거품나는 여관'에 있는 Feygard시 순찰대장에게 화물을 갖다줬습니다. [교차도로 유치장]에 있는 Gandoren에게 화물이 "
+"배달되었다고 알려야 합니다."
 
 #: questlist_v0610.json:feygard_shipment:55
 msgid "I have delivered the shipment to the smith in Vilegard."
@@ -52017,11 +52032,13 @@ msgstr ""
 
 #: questlist_burhczyd.json:quest_burhczyd
 msgid "Young merchant"
-msgstr ""
+msgstr "청년 상인"
 
 #: questlist_burhczyd.json:quest_burhczyd:10
 msgid "You met Burhczyd afgz Dtaloumiye, a likable young man, in a tavern. He wanted to see the world and followed your advice to travel as a trader from city to city."
 msgstr ""
+"나는 여관에서 호감가는 청년, 버흐치드 아프즈 드탈루미예를 만났다. 그는 세상을 보고 싶어했고, 마을에서 마을로 여행하는 상인이 되라는 "
+"나의 충고를 따랐다."
 
 #: questlist_burhczyd.json:quest_burhczyd:20
 msgid "In another tavern you met Burhczyd again. He never got any customers, because he had named his company 'Burhczyd afgz Dtaloumiye - Transports'. You told him to find an easier name."
@@ -52568,7 +52585,7 @@ msgstr ""
 
 #: questlist_brimhaven_2.json:new_snake_master:5
 msgid "A traveler named Ewmondold had asked me to venture into the Snake Cave to retrieve his map."
-msgstr ""
+msgstr "에먼달드라는 여행자는 뱀동굴에서 자기 지도를 찾아달라고 했다."
 
 #: questlist_brimhaven_2.json:new_snake_master:10
 msgid "Ewmondold had thanked me for killing the Snake master, and that his way to rule would be free. I should find him."
@@ -52833,7 +52850,7 @@ msgstr ""
 
 #: questlist_gison.json:gison_soup
 msgid "Delicious soup"
-msgstr ""
+msgstr "맛있는 수프"
 
 #: questlist_gison.json:gison_soup:10
 msgid ""
@@ -52841,6 +52858,9 @@ msgid ""
 "He asked me to bring him some of the delicious soup made by Gison with forest mushrooms.\n"
 "Gison's house lies to the south."
 msgstr ""
+"가을안식처 남서쪽 오두막에서 알룬을 만났다.\n"
+"그는 숲 버섯이 들어가는 기손의 맛있는 스프를 받아오길 바란다.\n"
+"기손의 집은 여기서 남쪽에 있다."
 
 #: questlist_gison.json:gison_soup:20
 msgid "I found Gison's house and should deliver the soup to Alaun while it is hot."
