@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: andors-trail\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-11-10 11:48+0000\n"
-"PO-Revision-Date: 2021-02-28 15:51+0000\n"
+"PO-Revision-Date: 2021-03-06 13:50+0000\n"
 "Last-Translator: kty919 <kty919@naver.com>\n"
 "Language-Team: Korean <https://hosted.weblate.org/projects/andors-trail/"
 "game-content/ko/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.5\n"
+"X-Generator: Weblate 4.5.1\n"
 "X-Launchpad-Export-Date: 2015-11-02 12:26+0000\n"
 
 #: [none]
@@ -1584,7 +1584,7 @@ msgstr "아니. 못 봤어."
 
 #: conversationlist_fallhaven.json:fallhaven_guard
 msgid "Keep out of trouble."
-msgstr "말썽피우지 마렴."
+msgstr "문제를 일으키지 마십시오."
 
 #: conversationlist_fallhaven.json:fallhaven_priest:0
 #: conversationlist_jolnor.json:jolnor_chapel_1:0
@@ -1696,7 +1696,7 @@ msgstr "불쌍한 노친네, 여기 놓고 간 일은 아마 잊어먹었을걸.
 
 #: conversationlist_fallhaven_arcir.json:arcir_calomyran_5
 msgid "You looked downstairs but didn't find it? And a note you say? I guess there must have been someone in my house."
-msgstr "아래층에서도 못 찾았어? 그리고 메모라고? 내 집에 누가 들어왔었군."
+msgstr "아래층에서도 못 찾았어? 그리고 쪽지라고? 내 집에 누가 들어왔었군."
 
 #: conversationlist_fallhaven_arcir.json:arcir_calomyran_complete
 msgid "I heard you found it and gave it back to old man Benradas. Thank you. He tends to forget things."
@@ -1708,7 +1708,7 @@ msgid ""
 "\n"
 "Larcal ... I know of him. Always causing trouble. He is usually in the barn to the east of here."
 msgstr ""
-"메모에 뭐라고 쓰여있어?\n"
+"쪽지에 뭐라고 쓰여있어?\n"
 "\n"
 "라칼 ... 그 사람 알지. 항상 문제만 일으켜. 평소엔 여기 동쪽의 헛간에서 살아."
 
@@ -2237,7 +2237,7 @@ msgstr ""
 
 #: conversationlist_fallhaven_oldman.json:fallhaven_oldman_1
 msgid "Would you help an old man please?"
-msgstr ""
+msgstr "노인네 좀 도와주겠니?"
 
 #: conversationlist_fallhaven_oldman.json:fallhaven_oldman_1:0
 #: conversationlist_fallhaven_vacor.json:vacor_3:0
@@ -2247,37 +2247,39 @@ msgstr "좋아요, 뭘 도와드리면 될까요?"
 
 #: conversationlist_fallhaven_oldman.json:fallhaven_oldman_1:1
 msgid "I might. Are we talking about some kind of reward?"
-msgstr ""
+msgstr "그러죠. 보상에 대해 말씀해주시겠어요?"
 
 #: conversationlist_fallhaven_oldman.json:fallhaven_oldman_1:2
 msgid "No, I won't help an old timer like you. Bye."
-msgstr ""
+msgstr "아니요, 당신 같은 늙은이는 돕지 않을 거예요. 안녕히 계세요."
 
 #: conversationlist_fallhaven_oldman.json:fallhaven_oldman_2
 msgid "I recently lost a very valuable book of mine."
-msgstr ""
+msgstr "방금 엄청 귀중한 책을 잃어버렸어."
 
 #: conversationlist_fallhaven_oldman.json:fallhaven_oldman_3
 msgid "I know I had it with me yesterday. Now I can't seem to find it."
-msgstr ""
+msgstr "어제는 가지고 있었는데. 지금은 찾을 수가 없네."
 
 #: conversationlist_fallhaven_oldman.json:fallhaven_oldman_4
 msgid "I never lose things! Someone must have stolen it, that's my guess."
-msgstr ""
+msgstr "나는 절때 잃어버리지 않어! 내 생각엔 말이여, 어떤놈이 훔쳐간게 틀림없어."
 
 #: conversationlist_fallhaven_oldman.json:fallhaven_oldman_5
 msgid "Would you please go look for my book? It's called 'Calomyran Secrets'."
-msgstr ""
+msgstr "내 책 좀 찾아봐 줄래? '칼로미란의 비결'이라 쓰여있다."
 
 #: conversationlist_fallhaven_oldman.json:fallhaven_oldman_6
 msgid ""
 "I have no idea where it might be. You could go ask Arcir, he seems very fond of his books.\n"
 " [Points at the house to the south]"
 msgstr ""
+"어딧는지 생각이 안나. 아칠에게 물어봐라, 걔가 책을 많이 좋아해.\n"
+"[남쪽 집을 가르키며]"
 
 #: conversationlist_fallhaven_oldman.json:fallhaven_oldman_6:0
 msgid "OK, I'll go ask Arcir. Goodbye."
-msgstr ""
+msgstr "알겠어요, 아칠에게 물어볼께요. 안녕히 계세요."
 
 #: conversationlist_fallhaven_oldman.json:fallhaven_oldman_continue
 msgid "How is the search for my book going? It's called 'Calomyran Secrets'. Have you found my book?"
@@ -2445,135 +2447,141 @@ msgstr ""
 
 #: conversationlist_fallhaven_larcal.json:larcal
 msgid "I don't have time for you, kid. Get lost."
-msgstr ""
+msgstr "네게 쓸 시간은 없다, 꼬마야. 저리 가."
 
 #: conversationlist_fallhaven_larcal.json:larcal:0
 msgid "I found a note with your name on it while looking for the book 'Calomyran Secrets'."
-msgstr ""
+msgstr "'칼로미란의 비결'이라는 책을 찾다가 아저씨의 이름이 적힌 쪽지를 발견했어요."
 
 #: conversationlist_fallhaven_larcal.json:larcal_1
 msgid "Now now, what have we here? Are you implying that I have been down in Arcir's basement?"
-msgstr ""
+msgstr "지금 지금, 우리가 어디에 있냐? 내가 아칠의 지하실에 있었다고 말하는 거냐?"
 
 #: conversationlist_fallhaven_larcal.json:larcal_2
 msgid "So, maybe I was. The book is mine anyway."
-msgstr ""
+msgstr "그래, 그랬을 수도 있지. 그 책은 어쨌건 내 거야."
 
 #: conversationlist_fallhaven_larcal.json:larcal_3
 msgid "Look, let's solve this peacefully. You walk away and forget about that book, and you might still live."
-msgstr ""
+msgstr "이봐, 평화롭게 해결하자고. 그 책에 대해서는 잊고 가버려, 그리고 계속 사는 거지."
 
 #: conversationlist_fallhaven_larcal.json:larcal_3:0
 msgid "Very well. Keep your book."
-msgstr ""
+msgstr "좋네요. 책을 가지세요."
 
 #: conversationlist_fallhaven_larcal.json:larcal_3:1
 msgid "No, you will give me that book."
-msgstr ""
+msgstr "싫어요, 책을 돌려주세요."
 
 #: conversationlist_fallhaven_larcal.json:larcal_4
 msgid "Good boy. Now run away."
-msgstr ""
+msgstr "착하구나. 이제 꺼져."
 
 #: conversationlist_fallhaven_larcal.json:larcal_5
 msgid "OK, now you're starting to annoy me, kid. Get lost while you still can."
-msgstr ""
+msgstr "좋아, 이제 날 짜증나게 하는 구나, 꼬마야. 도망갈 수 있을 때 갔어야지."
 
 #: conversationlist_fallhaven_larcal.json:larcal_5:0
 #: conversationlist_fallhaven_larcal.json:larcal_6:2
 msgid "Very well. I will leave."
-msgstr ""
+msgstr "알겠어요. 갈께요."
 
 #: conversationlist_fallhaven_larcal.json:larcal_5:1
 msgid "No, that book is not yours!"
-msgstr ""
+msgstr "아니요, 책은 아져씨께 아니에요!"
 
 #: conversationlist_fallhaven_larcal.json:larcal_6
 msgid "You are still here? OK then, if you want the book that bad, you will have to take it from me!"
-msgstr ""
+msgstr "아직도 여기 있엇냐? 그래 좋아, 그토록 책을 갖고 싶으면, 가져가봐!"
 
 #: conversationlist_fallhaven_larcal.json:larcal_6:0
 msgid "At last, a fight. I have been waiting for this!"
-msgstr ""
+msgstr "마침내, 싸움이다. 이것만 기다리고 있었지!"
 
 #: conversationlist_fallhaven_larcal.json:larcal_6:1
 msgid "I had hoped it wouldn't come to this."
-msgstr ""
+msgstr "이게 아닌데."
 
 #: conversationlist_fallhaven_unnmir.json:unnmir_r
 msgid "Hello again. You should go talk to Nocmar."
-msgstr ""
+msgstr "또 보네. 가서 낙머한테 얘기해 봐."
 
 #: conversationlist_fallhaven_unnmir.json:unnmir_0
 msgid "Hi there."
-msgstr ""
+msgstr "거기 안녕."
 
 #: conversationlist_fallhaven_unnmir.json:unnmir_0:0
 msgid "There was a drunk outside the tavern that told me a story about you two."
-msgstr ""
+msgstr "여관 밖에 주정뱅이가 두분에 대한 얘기를 해줬어요."
 
 #: conversationlist_fallhaven_unnmir.json:unnmir_1
 msgid "That old drunk over at the tavern told you his story did he?"
-msgstr ""
+msgstr "여관에 늙은 주정뱅이가 자기 얘기를 너에게 해줬다고?"
 
 #: conversationlist_fallhaven_unnmir.json:unnmir_2
 msgid "Same old story. We used to travel together a few years back."
-msgstr ""
+msgstr "옛날이야기야. 우리는 몇년전에 같이 여행을 다니곤 했어."
 
 #: conversationlist_fallhaven_unnmir.json:unnmir_3
 msgid "Real adventuring you know, swords and spells."
-msgstr ""
+msgstr "너도 아는 진짜 모험을 했어, 검도 있고 주문도 있었지."
 
 #: conversationlist_fallhaven_unnmir.json:unnmir_4
 msgid "Then, after a while, we stopped. I can't really say why, I guess we got tired of life on the road. We settled down here in Fallhaven."
 msgstr ""
+"그리고 얼마 후에, 그만 뒀어. 우리가 왜 그랬는지는 나도 잘 모르지만, 길 위의 삶에 싫증이 난 것 같아. 그 뒤엔 여기 가을안식처 "
+"마을에 정착했지."
 
 #: conversationlist_fallhaven_unnmir.json:unnmir_5
 msgid "Nice little town here. A lot of thieves around, but they don't bother me."
 msgstr ""
+"여기는 작고 괜찮은 마을이야. 주변에 도둑들이 득실대긴여기는 작고 괜찮은 마을이야. 주변에 도둑들이 득실대긴 하지만, 날 귀찮게 하진 "
+"않거든."
 
 #: conversationlist_fallhaven_unnmir.json:unnmir_6
 msgid "So what's your story, kid? How did you end up here in Fallhaven?"
-msgstr ""
+msgstr "그래, 네 이야기는 뭐니, 꼬마야. 어쩌다 여기 가을안식처에 오게 됐지?"
 
 #: conversationlist_fallhaven_unnmir.json:unnmir_6:0
 #: conversationlist_agthor.json:agthor_y2:1
 msgid "I'm looking for my brother."
-msgstr ""
+msgstr "형을 찾고 있어요."
 
 #: conversationlist_fallhaven_unnmir.json:unnmir_7
 msgid ""
 "Yeah yeah, I get it. Your brother has probably run off to some dungeon, trying to go adventuring.\n"
 "[Rolls eyes]"
 msgstr ""
+"그래 그래, 알았다. 네 형은 아마 모험을 하러 던전으로 떠났을 거야.\n"
+"[생각에 잠긴 듯, 눈을 굴린다]"
 
 #: conversationlist_fallhaven_unnmir.json:unnmir_8
 msgid "Or maybe he has gone to one of the bigger cities to the north."
-msgstr ""
+msgstr "아니면 북쪽에 있는 더 큰 도시들 중 하나로 갔을지도 모르지."
 
 #: conversationlist_fallhaven_unnmir.json:unnmir_9
 msgid "Can't say I blame him for wanting to see the world."
-msgstr ""
+msgstr "세상을 보고 싶어 하는 그를 탓할 수는 없어."
 
 #: conversationlist_fallhaven_unnmir.json:unnmir_10
 msgid "Hey, by the way, are you looking to be an adventurer?"
-msgstr ""
+msgstr "그나저나, 너 모험가가 될 생각이니?"
 
 #: conversationlist_fallhaven_unnmir.json:unnmir_10:1
 msgid "No, not really."
-msgstr ""
+msgstr "아뇨, 진짜 아녜요."
 
 #: conversationlist_fallhaven_unnmir.json:unnmir_11
 msgid "Nice. I'll give you a hint, kid. *snickering* Go see Nocmar over by the west side of town. Tell him I sent you."
-msgstr ""
+msgstr "좋아, 조언을 해주마, 꼬마야 *술을 마신다* 마을 서쪽에 있는 낙머에게 가봐. 내가 보냈다고 말해."
 
 #: conversationlist_fallhaven_unnmir.json:unnmir_12
 msgid "Smart move. Adventuring leads to a lot of scars. If you know what I mean."
-msgstr ""
+msgstr "현명한 처사야. 모험을 하다보면 많은 흉터가 생겨. 무슨 말인지 알지."
 
 #: conversationlist_fallhaven_unnmir.json:unnmir_13
 msgid "His house is just southwest of the tavern."
-msgstr ""
+msgstr "그의 집은 여관의 남서쪽에 있다."
 
 #: conversationlist_fallhaven_gaela.json:gaela_r
 msgid "Hello again. I hope you will find what you are looking for."
@@ -2581,15 +2589,15 @@ msgstr ""
 
 #: conversationlist_fallhaven_gaela.json:gaela_0
 msgid "Swift is my blade. Poisoned is my tongue. Or was it the other way around?"
-msgstr ""
+msgstr "날랜 내 칼날. 독은 내 혀. 잠만 반대인가?"
 
 #: conversationlist_fallhaven_gaela.json:gaela_0:0
 msgid "There seems to be a lot of thieves here in Fallhaven."
-msgstr ""
+msgstr "여기 가을안식처 마을에는 도둑들이 많아 보여요."
 
 #: conversationlist_fallhaven_gaela.json:gaela_1
 msgid "Yes, we thieves have a strong presence here."
-msgstr ""
+msgstr "그래, 우리 도둑들은 여기서 존재감이 강하지."
 
 #: conversationlist_fallhaven_gaela.json:gaela_1:0
 #: conversationlist_omicronrg9.json:umar_guild03_19d:0
@@ -3026,7 +3034,7 @@ msgstr ""
 
 #: conversationlist_wilderness.json:fallhaven_bandit
 msgid "Get lost kid. I don't have time for you."
-msgstr "길 잃은 꼬마로군. 시간낭비하게 하지 마라."
+msgstr "저리가라 꼬마야. 시간낭비하게 하지 마라."
 
 #: conversationlist_wilderness.json:fallhaven_bandit:0
 msgid "I'm looking for a piece of the Rift spell."
@@ -3777,11 +3785,11 @@ msgstr ""
 #: conversationlist_signs_pre067.json:arcir_basement_tornpage
 msgid "You see a torn page from a book titled 'Calomyran Secrets'. Blood stains its edges, and someone has scribbled the words 'Larcal' with the blood."
 msgstr ""
-"'칼로미란 시크릿'의 찢겨진 한 페이지가 있습니다. 가장자리에 피가 얼룩져있고, 누군가가 피로 '라칼'이란 글자를 갈겨놓았습니다."
+"'칼로미란의 비결'의 찢겨진 한 페이지가 있습니다. 가장자리에 피가 얼룩져있고, 누군가가 피로 '라칼'이란 글자를 갈겨놓았습니다."
 
 #: conversationlist_signs_pre067.json:arcir_basement_statue
 msgid "Elythara, mother of the light. Protect us from the curse of the Shadow."
-msgstr ""
+msgstr "엘리다라, 빛의 어머니. 그림자의 저주로부터 우리를 지켜주세요."
 
 #: conversationlist_signs_pre067.json:fallhaven_tavern_room
 msgid "You are not allowed into the room unless you have rented it."
@@ -4335,11 +4343,11 @@ msgstr ""
 
 #: conversationlist_fallhaven_warden.json:fallhaven_warden
 msgid "State your business."
-msgstr ""
+msgstr "무슨 일로 왔습니까."
 
 #: conversationlist_fallhaven_warden.json:fallhaven_warden:0
 msgid "Who is that prisoner?"
-msgstr ""
+msgstr "저 죄수는 누구인가요?"
 
 #: conversationlist_fallhaven_warden.json:fallhaven_warden:1
 msgid "I heard that you are fond of mead."
@@ -4357,15 +4365,15 @@ msgstr ""
 
 #: conversationlist_fallhaven_warden.json:warden_prisoner_1
 msgid "That thief? He was caught in the act. Trespassing he was. Trying to get down into the catacombs of Fallhaven church."
-msgstr ""
+msgstr "저 도둑놈이요? 현행범으로 잡혔습니다. 무단침입을 했거든요. 가을안식처 교회의 공동묘지로 침입하려 했습니다."
 
 #: conversationlist_fallhaven_warden.json:warden_prisoner_2
 msgid "Luckily, we caught him before he could get down there. Now he'll serve as an example to all other thieves."
-msgstr ""
+msgstr "다행히, 가기 직전에 잡았습니다. 이제 그는 다른 도둑놈들에게 본보기가 될겁니다."
 
 #: conversationlist_fallhaven_warden.json:warden_prisoner_3
 msgid "Damn thieves. There must be a nest of them around here somewhere. If only I could find where they hide."
-msgstr ""
+msgstr "빌어먹을 도둑놈들. 이 근처 어딘가에 그놈들의 소굴이 있을 겁니다. 그들이 숨은 곳만 찾을 수 있다면."
 
 #: conversationlist_fallhaven_warden.json:fallhaven_warden_1
 msgid "Mead? Oh ... no, I don't do that anymore. Who told you that?"
@@ -48985,6 +48993,7 @@ msgstr "술취한 아저씨는 운미르와 여행을 다녀오며 보물을 찾
 #: questlist.json:calomyran:10
 msgid "An old man standing outside in Fallhaven has lost his book 'Calomyran Secrets'. I should go look for it. Maybe in Arcir's house to the south?"
 msgstr ""
+"밖에 있는 한 노인이 그의 책 '칼로미란의 비밀'을 잃어버렸다고 한다. 찾으러 가야봐야겠다. 가을안식처 남쪽, 아칠의 집에 있을까?"
 
 #: questlist.json:calomyran:20
 msgid "I found a torn page of a book called 'Calomyran Secrets' with the name 'Larcal' written on it."
