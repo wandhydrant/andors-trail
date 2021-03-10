@@ -42,7 +42,7 @@
     <string name="menu_save_gamesaved">حفظ الملف للخانة %1$d</string>
     <string name="menu_save_failed">فشل حفظ اللعبة! هل ركبت بطاقة ذاكرة قابلة للكتابة؟</string>
     <string name="loadsave_title_load">فتح ملف الحفظ</string>
-    <string name="savegame_currenthero_displayinfo">المستوى٪ 1 $ d ،٪ 2 $ d خبرة ،٪ 3 $ d ذهب</string>
+    <string name="savegame_currenthero_displayinfo">المستوى %1$d، الخبرة %2$d، الذهب %3$d</string>
     <string name="dialog_loading_message">جار التحميل…</string>
     <string name="dialog_loading_failed_message">عجزت اللعبة عن فتح ملف الحفظ.
 \n
@@ -132,7 +132,7 @@
     <string name="startscreen_mode_50_lives">صعب (حياة 50 ، إنقاذ واحد)</string>
     <string name="startscreen_mode_unlimited_lives">متوسط (حياة غير محدودة ، 1 إنقاذ)</string>
     <string name="startscreen_mode_unlimited_saves_and_lives">قياسي (حياة وإنقاذ غير محدودة)</string>
-    <string name="startscreen_attention_message_slot_gets_delete_on_load">"تحميل هذه اللعبة يحذف فتحة الحفظ الخاصة بها.  سيكون عليك الحفظ مرة أخرى قبل التبديل إلى لعبة أخرى."</string>
+    <string name="startscreen_attention_message_slot_gets_delete_on_load">تحميل هذه اللعبة يحذف فتحة الحفظ الخاصة بها. سيكون عليك الحفظ مرة أخرى قبل التبديل إلى لعبة أخرى.</string>
     <string name="startscreen_attention_slot_gets_delete_on_load">انتباه</string>
     <string name="startscreen_error_loading_empty_slot">لا يمكن التحميل من فتحة فارغة.</string>
     <string name="startscreen_error_loading_game">خطأ في تحميل اللعبة</string>
@@ -172,4 +172,9 @@
     <string name="combat_begin_flee">يمكنك الآن الهروب من القتال بالظغط في الاتجاه الذي تريد الذهاب إليه.</string>
     <string name="combat_endturn">إنهاء جولة</string>
     <string name="combat_use">إستخدام عنصر</string>
+    <string name="preferences_movement_dpad_transparency_70_pct">70%</string>
+    <string name="preferences_movement_dpad_transparency_60_pct">60%</string>
+    <string name="preferences_movement_dpad_transparency_50_pct">50%</string>
+    <string name="preferences_movement_dpad_transparency_40_pct">40%</string>
+    <string name="preferences_movement_dpad_transparency_30_pct">30%</string>
 </resources>
