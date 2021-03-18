@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: Andors Trail\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-11-10 11:48+0000\n"
-"PO-Revision-Date: 2020-10-05 12:12+0000\n"
-"Last-Translator: Atrate <Atrate@protonmail.com>\n"
+"PO-Revision-Date: 2021-02-28 15:52+0000\n"
+"Last-Translator: Mateusz Mendel <mendelm9@gmail.com>\n"
 "Language-Team: Polish <https://hosted.weblate.org/projects/andors-trail/"
 "game-content/pl/>\n"
 "Language: pl\n"
@@ -13,7 +13,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 4.3-dev\n"
+"X-Generator: Weblate 4.5\n"
 "X-Launchpad-Export-Date: 2015-11-02 12:27+0000\n"
 
 #: [none]
@@ -348,15 +348,17 @@ msgstr "Jad"
 
 #: actorconditions_fungi_panic.json:spore_poison
 msgid "Spore poisoning"
-msgstr ""
+msgstr "Zatrucie zarodnikami"
 
 #: actorconditions_gison.json:reinvigorated
+#, fuzzy
 msgid "Reinvigorated"
-msgstr ""
+msgstr "Ożywiony"
 
 #: actorconditions_gison.json:sated
+#, fuzzy
 msgid "Sated"
-msgstr ""
+msgstr "Nasycony"
 
 #: conversationlist_mikhail.json:mikhail_gamestart
 msgid "Oh good, you are awake."
@@ -397,12 +399,14 @@ msgid "I have a present for you."
 msgstr "Mam dla ciebie prezent."
 
 #: conversationlist_mikhail.json:mikhail_default:7
+#, fuzzy
 msgid "I was searching for Andor."
-msgstr ""
+msgstr "Szukałem Andora."
 
 #: conversationlist_mikhail.json:mikhail_default:8
+#, fuzzy
 msgid "What kind of book is it that you have in your hand?"
-msgstr ""
+msgstr "Jakiego rodzaju książkę trzymasz w ręce?"
 
 #: conversationlist_mikhail.json:mikhail_tasks
 msgid "Oh yes, there were some things I need help with, bread and rats. Which one would you like to talk about?"
@@ -563,28 +567,38 @@ msgstr ""
 "Jeśli jesteś ranny to wykorzystaj łóżko, aby odpocząć i odzyskać siły."
 
 #: conversationlist_mikhail.json:mikhail_achievements_10
+#, fuzzy
 msgid "Just like my father once did, I want to give you a book to take with you on your way."
 msgstr ""
+"Podobnie jak mój ojciec kiedyś, chcę Ci dać książkę, którą możesz zabrać ze "
+"sobą."
 
 #: conversationlist_mikhail.json:mikhail_achievements_20
+#, fuzzy
 msgid "This book is some kind of diary, in which you can record unusual experiences and achievements that you may have on your way."
 msgstr ""
+"Ta książka to pewien rodzaj dziennika, w którym możesz zapisywać niezwykłe "
+"doświadczenia oraz osiągnięcia podczas swojej podróży."
 
 #: conversationlist_mikhail.json:mikhail_achievements_30
+#, fuzzy
 msgid "Would you like to have it?"
-msgstr ""
+msgstr "Czy chciałbyś ją mieć?"
 
 #: conversationlist_mikhail.json:mikhail_achievements_30:0
+#, fuzzy
 msgid "Yes, sounds great."
-msgstr ""
+msgstr "Tak, brzmi nieźle."
 
 #: conversationlist_mikhail.json:mikhail_achievements_30:1
+#, fuzzy
 msgid "No, thanks."
-msgstr ""
+msgstr "Nie, dziękuję."
 
 #: conversationlist_mikhail.json:mikhail_achievements_40
+#, fuzzy
 msgid "No problem. I won't bother you with it again."
-msgstr ""
+msgstr "Nie ma sprawy. Nie będę Cię już nią więcej męczył."
 
 #: conversationlist_mikhail.json:mikhail_achievements_50
 #: conversationlist_stoutford_combined.json:stn_colonel_34
@@ -750,7 +764,7 @@ msgstr "Nie przeszkadzaj mi, jestem zajęty."
 #: conversationlist_stoutford.json:stoutford_gateguard_0:2
 #: conversationlist_stoutford.json:kayla_1:1
 msgid "Have you seen my brother Andor?"
-msgstr ""
+msgstr "Czy widziałeś mojego brata Andora?"
 
 #: conversationlist_crossglen.json:farm2
 msgid "What?! Can't you see I'm busy? Go bother someone else."
@@ -1105,8 +1119,9 @@ msgid "He's found another new hiding spot. Give him credit, he is great at avoid
 msgstr ""
 
 #: conversationlist_crossglen_leta.json:leta_oromir1:7
+#, fuzzy
 msgid "He's in your basement."
-msgstr ""
+msgstr "Jest w Twojej piwnicy."
 
 #: conversationlist_crossglen_leta.json:leta_oromir2
 #: conversationlist_brimhaven_2.json:leta_oromir1_trees_help
@@ -1159,8 +1174,9 @@ msgid "[Lie] OK."
 msgstr "[Kłamstwo] W porządku."
 
 #: conversationlist_crossglen_leta.json:oromir2:1
+#, fuzzy
 msgid "Your secret is safe with me."
-msgstr ""
+msgstr "Twoja tajemnica jest bezpieczna ze mną."
 
 #: conversationlist_crossglen_odair.json:odair1
 msgid "Oh, it's you. You with that brother of yours. Always causing trouble."
@@ -2366,79 +2382,106 @@ msgid "Thieves' Guild? How would I know? Do I look like a thief to you?! Hrmpf."
 msgstr "Gildii Złodziei? A skąd niby mam coś wiedzieć? Wyglądam Ci na złodzieja?! Hrmpf."
 
 #: conversationlist_fallhaven_tavern.json:bela_gsnake_1
+#, fuzzy
 msgid "I'm glad you are still alive!"
-msgstr ""
+msgstr "Cieszę się, że wciąż jesteś żywy!"
 
 #: conversationlist_fallhaven_tavern.json:bela_gsnake_1:0
+#, fuzzy
 msgid "As you know I can handle myself."
-msgstr ""
+msgstr "Jak wiesz, potrafię sobie poradzić."
 
 #: conversationlist_fallhaven_tavern.json:bela_gsnake_1:1
+#, fuzzy
 msgid "Why? Has something happened?"
-msgstr ""
+msgstr "Dlaczego? Coś się stało?"
 
 #: conversationlist_fallhaven_tavern.json:bela_gsnake_2
+#, fuzzy
 msgid "Did you not hear of the most dangerous snake ever seen? It has been spotted on Fallhaven's southern border."
 msgstr ""
+"Nie słyszałeś o najniebezpieczniejszym wężu jakiegokolwiek widziano? "
+"Dostrzeżono go na południowej granicy Fallhaven."
 
 #: conversationlist_fallhaven_tavern.json:bela_gsnake_2:0
+#, fuzzy
 msgid "A snake?"
-msgstr ""
+msgstr "Wężu?"
 
 #: conversationlist_fallhaven_tavern.json:bela_gsnake_2:1
+#, fuzzy
 msgid ""
 "No, I didn't hear, and I also don't want to.\n"
 "Please give me something to drink."
 msgstr ""
+"Nie, nie słyszałem i nie mam zamiaru.\n"
+"Proszę o coś do picia."
 
 #: conversationlist_fallhaven_tavern.json:bela_gsnake_3
+#, fuzzy
 msgid "No normal snake. Huge as a house! Making noise like a hundred galloping horses!"
 msgstr ""
+"Nienormalny wąż. Wielki jak dom! Hałasujący jak setka galopujących koni!"
 
 #: conversationlist_fallhaven_tavern.json:bela_gsnake_4
+#, fuzzy
 msgid "Few people dare to walk outside of the city nowadays."
-msgstr ""
+msgstr "Kilku ludzi nie boi się wychodzić poza miasto w dzisiejszych czasach."
 
 #: conversationlist_fallhaven_tavern.json:bela_gsnake_4:0
 #: conversationlist_fungi_panic.json:bela_trade_2:0
+#, fuzzy
 msgid "Sounds interesting."
-msgstr ""
+msgstr "Brzmi nieźle."
 
 #: conversationlist_fallhaven_tavern.json:bela_gsnake_4:1
+#, fuzzy
 msgid "Thanks for the warning. I'll avoid that area."
-msgstr ""
+msgstr "Dzięki za ostrzeżenie. Będę unikał tego terenu."
 
 #: conversationlist_fallhaven_tavern.json:bela_gsnake_5
+#, fuzzy
 msgid "Good. Enough of such dark words - now go, have a seat anywhere."
-msgstr ""
+msgstr "Dobrze. Dość mrocznych słów- idź, usiądź gdzie indziej."
 
 #: conversationlist_fallhaven_tavern.json:bela_gsnake_10
+#, fuzzy
 msgid "Oh no - what have I done? I shouldn't have talked of the giant snake. Promise me you won't go there!"
 msgstr ""
+"O nie- co ja zrobiłem? Nie powinienem był mówić o olbrzymim wężu. Obiecaj "
+"mi, że tam nie pójdziesz!"
 
 #: conversationlist_fallhaven_tavern.json:bela_gsnake_10:0
+#, fuzzy
 msgid "Well, if it makes you happy."
-msgstr ""
+msgstr "Dobrze, jeśli sprawi Ci to przyjemność."
 
 #: conversationlist_fallhaven_tavern.json:bela_gsnake_10:1
+#, fuzzy
 msgid "Of course I'll go there."
-msgstr ""
+msgstr "Oczywiście, że tam pójdę."
 
 #: conversationlist_fallhaven_tavern.json:bela_gsnake_11
+#, fuzzy
 msgid "What a waste of such a young, promising life! Well...don't forget to pay your tab before you leave my tavern."
 msgstr ""
+"Co za szkoda tak młodego, obiecującego życia! Dobrze... nie zapomnij "
+"zapłacić rachunku zanim wyjdziesz z mojej tawerny."
 
 #: conversationlist_fallhaven_tavern.json:bela_gsnake_20
+#, fuzzy
 msgid "You are back!"
-msgstr ""
+msgstr "Wróciłeś!"
 
 #: conversationlist_fallhaven_tavern.json:bela_gsnake_20:0
+#, fuzzy
 msgid "Sure. And your little snake monster is no more."
-msgstr ""
+msgstr "Oczywiście. A Twojego małego węża-potwora już nie ma."
 
 #: conversationlist_fallhaven_tavern.json:bela_gsnake_21
+#, fuzzy
 msgid "Incredible! Let's feast now! Everyone have a free drink!"
-msgstr ""
+msgstr "Niesamowite! Uczcijmy to! Darmowa kolejka dla każdego!"
 
 #: conversationlist_fallhaven_larcal.json:larcal
 msgid "I don't have time for you, kid. Get lost."
@@ -3073,8 +3116,9 @@ msgid "OK then, your life it is. Let's fight. I have been looking forward to a g
 msgstr "W takim razie w porządku. To Twoje życie. Walczmy. Długo czekałem na takie wyzwanie!"
 
 #: conversationlist_wilderness.json:fct_bandit1_10
+#, fuzzy
 msgid "Now the area is clean of these nasty highwaymen at last."
-msgstr ""
+msgstr "Ten obszar jest już przynajmniej oczyszczony z bandytów."
 
 #: conversationlist_flagstone.json:zombie1
 msgid "Fresh flesh!"
@@ -3365,17 +3409,20 @@ msgid "Have you seen my brother Andor? He looks similar to me."
 msgstr "Widziałeś mojego brata? Nazywa się Andor i jest do mnie podobny."
 
 #: conversationlist_fallhaven_south.json:alaun:1
+#, fuzzy
 msgid "Do you have a job for me?"
-msgstr ""
+msgstr "Czy masz jakieś zadanie dla mnie?"
 
 #: conversationlist_fallhaven_south.json:alaun:2
 #: conversationlist_fallhaven_south.json:alaun:3
+#, fuzzy
 msgid "About the soup..."
-msgstr ""
+msgstr "Jeśli chodzi o zupę..."
 
 #: conversationlist_fallhaven_south.json:alaun:4
+#, fuzzy
 msgid "Gison gave me some of his soup."
-msgstr ""
+msgstr "Gison dał mi tę zupę."
 
 #: conversationlist_fallhaven_south.json:alaun_2
 msgid "You are looking for your brother you say? Looks like you? Hmm."
@@ -3524,12 +3571,16 @@ msgid "Thank you for bringing me back my axe!"
 msgstr "Dziękuję za zwrócenie mi mojej siekiery!"
 
 #: conversationlist_fallhaven_south.json:alaun_1
+#, fuzzy
 msgid "Oh, how surprising. How nice of you. Indeed there is something you could do for me."
 msgstr ""
+"Och, jakie to zaskakujące. Jak miło z Twojej strony. Rzeczywiście jest coś "
+"co mógłbyś dla mnie zrobić."
 
 #: conversationlist_fallhaven_south.json:alaun_1:0
+#, fuzzy
 msgid "Tell me what it is."
-msgstr ""
+msgstr "Powiedz mi co to jest."
 
 #: conversationlist_fallhaven_south.json:alaun_1:1
 #: conversationlist_halvor_surprise.json:halvor_chwood_1:0
@@ -3538,82 +3589,110 @@ msgid "Maybe later."
 msgstr "Może później."
 
 #: conversationlist_fallhaven_south.json:alaun_1:2
+#, fuzzy
 msgid "Let's talk about payment first."
-msgstr ""
+msgstr "Porozmawiajmy najpierw o wynagrodzeniu."
 
 #: conversationlist_fallhaven_south.json:alaun_4
+#, fuzzy
 msgid "Ahh, you are here to earn some money, okay."
-msgstr ""
+msgstr "Ach, jesteś tutaj tylko dla pieniędzy, w porządku."
 
 #: conversationlist_fallhaven_south.json:alaun_5
+#, fuzzy
 msgid "I'll give you 10 gold if you do this little job for me: Bring me some of that delicious soup which Gison cooks using mushrooms and wild herbs."
 msgstr ""
+"Dam Ci 10 sztuk złota jeśli wykonasz dla to małe zadanie: przynieś mi tę "
+"smaczną zupę z grzybami i dzikimi ziołami gotowaną przez Gisona."
 
 #: conversationlist_fallhaven_south.json:alaun_5:0
+#, fuzzy
 msgid "Sounds easy, I'll do it!"
-msgstr ""
+msgstr "Brzmi nieźle, zrobię to!"
 
 #: conversationlist_fallhaven_south.json:alaun_5:1
+#, fuzzy
 msgid "Give me 15 and I'll do it."
-msgstr ""
+msgstr "Daj mi 15 sztuk, a zrobię to."
 
 #: conversationlist_fallhaven_south.json:alaun_5:2
+#, fuzzy
 msgid "Give me 20 and I'll do it."
-msgstr ""
+msgstr "Daj mi 20, a zrobię to."
 
 #: conversationlist_fallhaven_south.json:alaun_5:3
+#, fuzzy
 msgid "No way, I'm not your gopher."
-msgstr ""
+msgstr "Nie ma mowy, nie jestem Twoim chłopcem na posyłki."
 
 #: conversationlist_fallhaven_south.json:alaun_startquest10
+#, fuzzy
 msgid "That's really nice of you."
-msgstr ""
+msgstr "To bardzo miło z Twojej strony."
 
 #: conversationlist_fallhaven_south.json:alaun_more1
+#, fuzzy
 msgid ""
 "15? Let me think...erm...\n"
 "\n"
 "OK, I'll give you 15."
 msgstr ""
+"15? Niech pomyślę...hmm...\n"
+"\n"
+"Ok, dam Ci 15."
 
 #: conversationlist_fallhaven_south.json:alaun_more1:0
 #: conversationlist_fallhaven_south.json:alaun_more2:0
+#, fuzzy
 msgid "Sounds good. I will do it."
-msgstr ""
+msgstr "Brzmi nieźle. Zrobię to."
 
 #: conversationlist_fallhaven_south.json:alaun_more1:1
 #: conversationlist_fallhaven_south.json:alaun_more2:1
+#, fuzzy
 msgid "I changed my mind."
-msgstr ""
+msgstr "Rozmyśliłem się."
 
 #: conversationlist_fallhaven_south.json:alaun_more2
+#, fuzzy
 msgid ""
 "20? Let me think...erm...\n"
 "\n"
 "OK. I'll give you 20. But please, bring it hot or I won't pay you."
 msgstr ""
+"20? Niech pomyślę...hmm...\n"
+"\n"
+"Ok. Dam Ci 20. Proszę przynieś gorącą albo Ci nie zapłacę."
 
 #: conversationlist_fallhaven_south.json:alaun_startquest15
+#, fuzzy
 msgid "That's nice of you."
-msgstr ""
+msgstr "To miło z Twojej strony."
 
 #: conversationlist_fallhaven_south.json:alaun_startquest20
+#, fuzzy
 msgid "OK, please bring it hot!"
-msgstr ""
+msgstr "Ok, proszę przynieś gorącą!"
 
 #: conversationlist_fallhaven_south.json:alaun_startquest_go
+#, fuzzy
 msgid "You can find Gison and his wife Nimael south of here. Cross the path and head into the woods. You will find their house soon."
 msgstr ""
+"Gison oraz jego żonę możesz spotkać na południe stąd. Przejdź scieżką i "
+"kieruj się w stronę lasu. Niedługo znajdziesz ich dom."
 
 #: conversationlist_fallhaven_south.json:alaun_startquest_go:0
+#, fuzzy
 msgid "OK. See you later."
-msgstr ""
+msgstr "Ok, zobaczymy się później."
 
 #: conversationlist_fallhaven_south.json:alaun_return
+#, fuzzy
 msgid "Aah, you are back. Wonderful. I will stop working for now and take a little break."
-msgstr ""
+msgstr "Aach, wróciłeś. Cudownie. Zrobię sobie teraz krótką przerwę od pracy."
 
 #: conversationlist_fallhaven_south.json:alaun_return10
+#, fuzzy
 msgid ""
 "Here is the money I promised you.\n"
 "\n"
@@ -3621,83 +3700,114 @@ msgid ""
 "\n"
 "Next time I will buy Nimael's soup."
 msgstr ""
+"Oto pieniądze, które Ci obiecałem.\n"
+"\n"
+"A jako bonus dam Ci trochę tego chleba.\n"
+"\n"
+"Następnym razem kupię zupę Nimael."
 
 #: conversationlist_fallhaven_south.json:alaun_return10:0
 #: conversationlist_fallhaven_south.json:alaun_return15:0
 #: conversationlist_fallhaven_south.json:alaun_return20:0
+#, fuzzy
 msgid "Nimael's soup?"
-msgstr ""
+msgstr "Zupę Nimael?"
 
 #: conversationlist_fallhaven_south.json:alaun_return15
 #: conversationlist_fallhaven_south.json:alaun_return20
+#, fuzzy
 msgid ""
 "Here is the money I promised you.\n"
 "\n"
 "Next time I will buy Nimael's soup."
 msgstr ""
+"Oto pieniądze, które Ci obiecałem.\n"
+"\n"
+"Następnym razem kupię zupę Nimael."
 
 #: conversationlist_fallhaven_south.json:alaun_return_end
+#, fuzzy
 msgid "Thanks again. And remember to take the bottle back to Gison. Now go please. I want to eat."
 msgstr ""
+"Jeszcze raz dziękuję. I pamiętaj weź tę butlę z powrotem do Gisona. Teraz "
+"idź proszę, bo chcę jeść."
 
 #: conversationlist_fallhaven_south.json:alaun_return_end:0
+#, fuzzy
 msgid "Enjoy your meal."
-msgstr ""
+msgstr "Smacznego."
 
 #: conversationlist_fallhaven_south.json:alaun_return_nosoup
+#, fuzzy
 msgid "Where is it?"
-msgstr ""
+msgstr "Gdzie to jest?"
 
 #: conversationlist_fallhaven_south.json:alaun_return_nosoup:0
+#, fuzzy
 msgid "Oops, I forgot that there is a hole in my bag."
-msgstr ""
+msgstr "Ups, zapomniałem, że moja torba jest dziurawa."
 
 #: conversationlist_fallhaven_south.json:alaun_return_nosoup:1
+#, fuzzy
 msgid "I ate it."
-msgstr ""
+msgstr "Zjadłem ją."
 
 #: conversationlist_fallhaven_south.json:alaun_return_nosoup_1
+#, fuzzy
 msgid "What are you waiting for? Go on, bring me some soup. Hurry, I'm hungry!"
 msgstr ""
+"Na co czekasz? Dalej, przynieś mi trochę zupy. Pośpiesz się, jestem głodny!"
 
 #: conversationlist_fallhaven_south.json:alaun_return_nosoup_1:0
+#, fuzzy
 msgid "Yes, I will return quickly."
-msgstr ""
+msgstr "Tak, szybko wrócę."
 
 #: conversationlist_fallhaven_south.json:alaun_return_blindstart
+#, fuzzy
 msgid "Yes. I asked you to bring me some of that delicious mushroom soup from Gison."
-msgstr ""
+msgstr "Tak. Prosiłem o przyniesienie mi tej smacznej zupy Gisona."
 
 #: conversationlist_fallhaven_south.json:alaun_return_blindstart:0
+#, fuzzy
 msgid "Can you explain the way again?"
-msgstr ""
+msgstr "Czy możesz mi jeszcze raz wytłumaczyć tę drogę?"
 
 #: conversationlist_fallhaven_south.json:alaun_return_blindstart:1
+#, fuzzy
 msgid "Yes, I'm on my way."
-msgstr ""
+msgstr "Tak, jestem już w drodze."
 
 #: conversationlist_fallhaven_south.json:alaun_return_blindstart:2
+#, fuzzy
 msgid "I was not able to bring you the soup."
-msgstr ""
+msgstr "Nie byłem w stanie przynieść Ci zupę."
 
 #: conversationlist_fallhaven_south.json:alaun_return_coldsoup
+#, fuzzy
 msgid "This soup is cold. Return to me with a hot soup!"
-msgstr ""
+msgstr "Ta zupa jest zimna. Wróć do mnie z gorącą zupą!"
 
 #: conversationlist_fallhaven_south.json:alaun_return_coldsoup:0
+#, fuzzy
 msgid "Sorry. I will try again."
-msgstr ""
+msgstr "Przepraszam. Spróbuję jeszcze raz."
 
 #: conversationlist_fallhaven_south.json:alaun_return_coldsoup:1
+#, fuzzy
 msgid "It still tastes..."
-msgstr ""
+msgstr "Wciąż smakuje..."
 
 #: conversationlist_fallhaven_south.json:alaun_return_fail
+#, fuzzy
 msgid ""
 "That can't be. Get out of here!\n"
 "\n"
 "[Alaun starts throwing things at you]"
 msgstr ""
+"Nie może być. Wyjdź stąd!\n"
+"\n"
+"[Alaun zaczyna rzucać w Ciebie rzeczami]"
 
 #: conversationlist_fallhaven_south.json:alaun_return_fail:0
 #: conversationlist_guynmart_npc.json:guynmart_steward3_24:0
@@ -3712,8 +3822,9 @@ msgid "But..."
 msgstr "Ale..."
 
 #: conversationlist_fallhaven_south.json:alaun_return_fail:1
+#, fuzzy
 msgid "Listen..."
-msgstr ""
+msgstr "Słuchaj..."
 
 #: conversationlist_signs_pre067.json:keyarea_andor1
 msgid "You should talk to Mikhail first."
@@ -10761,8 +10872,10 @@ msgstr "Udałem się na zachód i napotkałem grupę mężczyzn, ale nie pasowal
 
 #: conversationlist_minarra.json:minarra_look_1:3
 #: conversationlist_gandoren.json:gandoren_deliver_1:5
+#, fuzzy
 msgid "I'd rather talk about the troubles in Loneford that you had mentioned."
 msgstr ""
+"Wolałbym porozmawiać o kłopotach w Loneford o których wcześniej wspomniałeś."
 
 #: conversationlist_minarra.json:minarra_look_2
 msgid "Good. Return to me as soon as you have anything to report. We would really like to recover those three pieces of the painting they stole."
@@ -12247,8 +12360,9 @@ msgid "They were sending a boy to do some business here, and I was assigned to m
 msgstr "Wysłali chłopca do załatwienia pewnej sprawy tutaj, a ja miałem upewnić się, że jego misja zakończy się sukcesem."
 
 #: conversationlist_buceth.json:buceth_story_7:0
+#, fuzzy
 msgid "Do you know where he went after he left Loneford?"
-msgstr ""
+msgstr "Czy wiesz gdzie poszedł po tym jak opuścił Loneford?"
 
 #: conversationlist_buceth.json:buceth_story_8
 msgid "I was tasked with gathering samples from the water in the well and from the ground around the well. Also, I was given some vials whose contents should be poured into the well."
@@ -12618,12 +12732,17 @@ msgid "This is no place for a kid like you. I think you had better leave now."
 msgstr "To nie jest miejsce dla takiego dzieciaka jak Ty. Myślę, że powinieneś stąd wyjść."
 
 #: conversationlist_loneford_4.json:loneford_tavern_patron:0
+#, fuzzy
 msgid "I met a man named Forlin who recommended that I speak with you in regards to a possible murder investigation that I am conducting."
 msgstr ""
+"Spotkałem mężczyznę o imieniu Forlin, który polecił abym porozmawiał z Tobą "
+"w związku z potencjalnym śledztwem, które prowadzę w sprawie morderstwa."
 
 #: conversationlist_loneford_4.json:loneford_tavern_patron:1
+#, fuzzy
 msgid "I did as you suggested and found the scene of a murder and I found this glove."
 msgstr ""
+"Zrobiłem jak zasugerowałeś i znalazłem miejsce zbrodni oraz tę rękawiczkę."
 
 #: conversationlist_pwcave.json:iqhan_greeter
 msgid "Get away! No! Turn back while you still can!"
@@ -18575,8 +18694,9 @@ msgstr "[REVIEW][REVIEW]Wrócę niebawem."
 #: conversationlist_falothen.json:falothen1_14:7
 #: conversationlist_fayvara.json:fayvara1_6:4
 #: conversationlist_fayvara.json:fayvara1_14:4
+#, fuzzy
 msgid "I'll be right back."
-msgstr ""
+msgstr "Zaraz wracam."
 
 #: conversationlist_falothen.json:falothen1_7_2hs
 #: conversationlist_falothen.json:falothen1_2nd_2hs0
@@ -18967,16 +19087,23 @@ msgid "Which type of armor are you interested in?"
 msgstr "Jakim rodzajem pancerza jesteś zainteresowany?"
 
 #: conversationlist_fayvara.json:fayvara1_14:0
+#, fuzzy
 msgid "Tell me more about shields."
-msgstr ""
+msgstr "Opowiedz mi więcej na temat tarcz."
 
 #: conversationlist_fayvara.json:fayvara1_2nd_s0
+#, fuzzy
 msgid "Shields can be used in combination with your regular weapon, to block attacks from your opponent."
 msgstr ""
+"Tarcze mogą być używane razem ze zwykłą bronią, aby blokować ataki "
+"przeciwnika."
 
 #: conversationlist_fayvara.json:fayvara1_2nd_s1
+#, fuzzy
 msgid "I can teach you to better withstand attacks using a shield, so that you don't take as much damage while using them."
 msgstr ""
+"Mogę Cię nauczyć jak lepiej znosić ataki używając tarczy, więc nie będziesz "
+"przyjmował tak wielu obrażeń używając ich."
 
 #: conversationlist_fayvara.json:fayvara1_2nd_s1:0
 msgid "Sounds good. Teach me about shields. Here are two Oegyth crystals and 6000 gold as payment."
@@ -20277,8 +20404,9 @@ msgstr "[Istota odsuwa się na bok wykonując równocześnie rękami gest, jakby
 #: conversationlist_lodar0g.json:lodar0_g0a
 #: conversationlist_halvor_surprise.json:halvor_bwmine_0:1
 #: conversationlist_brimhaven_blackjack.json:brv_zimsko_5
+#, fuzzy
 msgid "You again?"
-msgstr ""
+msgstr "To znowu Ty?"
 
 #: conversationlist_lodarfg.json:lodar_fg1_1
 msgid "You there! What are you doing here?"
@@ -21701,24 +21829,31 @@ msgid "I was told that I can get some Spotted Hornbeam fungus from you."
 msgstr "Powiedziano mi, że mogę od Ciebie dostać grzyb z Cętkowanego Grabu."
 
 #: conversationlist_fallhaven_potions.json:fallhaven_potions:3
+#, fuzzy
 msgid "Can you sell me a special crystal vial?"
-msgstr ""
+msgstr "Możesz mi sprzedać specjalną kryształową fiolkę?"
 
 #: conversationlist_fallhaven_potions.json:fallhaven_potions:4
+#, fuzzy
 msgid "Bogsten is sick after encountering a giant mushroom. He asked me to get a cure for him."
 msgstr ""
+"Bogsten zachorował po starciu z olbrzymim grzybem. Poprosił mnie, aby zdobyć "
+"dla niego lekarstwo."
 
 #: conversationlist_fallhaven_potions.json:fallhaven_potions:5
+#, fuzzy
 msgid "Here are four samples of mushroom spores. Can you help Bogsten now?"
-msgstr ""
+msgstr "Oto cztery próbki zarodników grzyba. Czy możesz teraz pomóc Bogstenowi?"
 
 #: conversationlist_fallhaven_potions.json:fallhaven_potions:6
+#, fuzzy
 msgid "Here's a sample of the mushroom spores. Can you help Bogsten now?"
-msgstr ""
+msgstr "Oto próbka zarodników grzyba. Czy możesz teraz pomóc Bogstenowi?"
 
 #: conversationlist_fallhaven_potions.json:fallhaven_potions:7
+#, fuzzy
 msgid "Here are some of Bogsten's mushrooms."
-msgstr ""
+msgstr "Oto kilka grzybów Bogstena."
 
 #: conversationlist_fallhaven_potions.json:fallhaven_potions2
 msgid "Oh yes. Really disgusting smell, they have. But good for making potions."
@@ -21823,93 +21958,127 @@ msgid "I sure hope this mixture of your works."
 msgstr "Jestem pewny, że ta mikstura zadziała."
 
 #: conversationlist_fallhaven_potions.json:fungi_panic_potioner_10
+#, fuzzy
 msgid "Bogsten? I haven't heard from that old boy in a long time now. I was starting to wonder if he was still alive."
 msgstr ""
+"Bogsten? Dawno nie słyszałem o tym starym chłopaku. Zacząłem się zastanawiać "
+"czy jeszcze żyje."
 
 #: conversationlist_fallhaven_potions.json:fungi_panic_potioner_10:0
+#, fuzzy
 msgid "He is alive, but only barely. He didn't even make it to Fallhaven to ask for help."
-msgstr ""
+msgstr "Żyje, ale ledwo. Nawet nie dotarł do Fallhaven aby prosić o pomoc."
 
 #: conversationlist_fallhaven_potions.json:fungi_panic_potioner_10:1
+#, fuzzy
 msgid "Stop talking. Just give me the cure."
-msgstr ""
+msgstr "Przestań gadać. Tylko daj mi lekarstwo."
 
 #: conversationlist_fallhaven_potions.json:fungi_panic_potioner_12
+#, fuzzy
 msgid "[muttering] ... grumble ... cheeky kids, grumble ..."
-msgstr ""
+msgstr "[mamrotanie] ... gderanie ... bezczelne dzieciaki, gderanie ..."
 
 #: conversationlist_fallhaven_potions.json:fungi_panic_potioner_20
+#, fuzzy
 msgid "And now I have to rescue him again. Well, what did he do to himself this time?"
-msgstr ""
+msgstr "A teraz znów muszę go ratować. Świetnie, co znów sobie zrobił?"
 
 #: conversationlist_fallhaven_potions.json:fungi_panic_potioner_20:0
+#, fuzzy
 msgid "A giant mushroom attacked him."
-msgstr ""
+msgstr "Olbrzymi grzyb go zaatakował."
 
 #: conversationlist_fallhaven_potions.json:fungi_panic_potioner_20:1
+#, fuzzy
 msgid "This time? Did he ask for help before?"
-msgstr ""
+msgstr "Tym razem? Poprosił Cię o pomoc?"
 
 #: conversationlist_fallhaven_potions.json:fungi_panic_potioner_22
+#, fuzzy
 msgid "Several times, indeed. Let me think..."
-msgstr ""
+msgstr "Kilka razy, w rzeczy samej. Niech pomyślę..."
 
 #: conversationlist_fallhaven_potions.json:fungi_panic_potioner_24
+#, fuzzy
 msgid "He was my first customer. Needed an antidote against snake poison. His pet snake bit him."
 msgstr ""
+"Był moim pierwszym klientem. Potrzebował antidotum na truciznę węża. Został "
+"ugryziony przez swojego pupila węża."
 
 #: conversationlist_fallhaven_potions.json:fungi_panic_potioner_24:0
+#, fuzzy
 msgid "Pet snake?!"
-msgstr ""
+msgstr "Pupila węża?!"
 
 #: conversationlist_fallhaven_potions.json:fungi_panic_potioner_24:1
+#, fuzzy
 msgid "I heard enough. Just give me the cure, please."
-msgstr ""
+msgstr "Dość już słyszałem. Proszę, daj mi te lekarstwo."
 
 #: conversationlist_fallhaven_potions.json:fungi_panic_potioner_26
+#, fuzzy
 msgid "Next time he ate something interesting. I always had told him not to try all these red and white mushrooms."
 msgstr ""
+"Następnym razem zjadł coś interesującego. Zawsze mówiłem mu by nigdy nie "
+"próbował tych czerwonych oraz białych grzybów."
 
 #: conversationlist_fallhaven_potions.json:fungi_panic_potioner_28
+#, fuzzy
 msgid "Then he wanted some drink for an annoying 'friend' who always came and disturbed him."
 msgstr ""
+"Potem chciał jakiegoś napoju dla denerwującego 'przyjaciela' który zawsze "
+"przychodził i mu przeszkadzał."
 
 #: conversationlist_fallhaven_potions.json:fungi_panic_potioner_28:0
 #: conversationlist_fungi_panic.json:gison_bottle_8_1:0
+#, fuzzy
 msgid "Nice."
-msgstr ""
+msgstr "Nieźle."
 
 #: conversationlist_fallhaven_potions.json:fungi_panic_potioner_28:1
+#, fuzzy
 msgid "Enough. Just give me the cure, please."
-msgstr ""
+msgstr "Dość. Daj mi to lekarstwo, proszę."
 
 #: conversationlist_fallhaven_potions.json:fungi_panic_potioner_30
+#, fuzzy
 msgid "He came regularly for the snake antidote. Trying to tame snakes wasn't successful obviously..."
 msgstr ""
+"Regularnie przychodzi po antidotum węża. Próba oswajania węży nie była "
+"oczywiście zbyt udana..."
 
 #: conversationlist_fallhaven_potions.json:fungi_panic_potioner_30:0
+#, fuzzy
 msgid "I can imagine."
-msgstr ""
+msgstr "Mogę sobie wyobrazić."
 
 #: conversationlist_fallhaven_potions.json:fungi_panic_potioner_32
+#, fuzzy
 msgid "He even tried to get my recipe for this antidote. But of course I couldn't reveal it to him."
 msgstr ""
+"Próbował nawet zdobyć moją recepturę na to antidotum. Ale oczywiście nie "
+"mogłem mu jej wyjawić."
 
 #: conversationlist_fallhaven_potions.json:fungi_panic_potioner_32:0
+#, fuzzy
 msgid "Yes, such things should be done by learned potion makers."
-msgstr ""
+msgstr "Tak, takie rzeczy powinni znać jedynie alchemicy."
 
 #: conversationlist_fallhaven_potions.json:fungi_panic_potioner_34
+#, fuzzy
 msgid "Nonsense. He was my best customer. I want to keep it like this."
-msgstr ""
+msgstr "Bzdura. To mój najlepszy klient. Niech zostanie tak jak było."
 
 #: conversationlist_fallhaven_potions.json:fungi_panic_potioner_34:0
+#, fuzzy
 msgid "Oh. Sure."
-msgstr ""
+msgstr "Och, Pewnie."
 
 #: conversationlist_fallhaven_potions.json:fungi_panic_potioner_40
+#, fuzzy
 msgid "So you need a cure against giant mushrooms."
-msgstr ""
+msgstr "Potrzebujesz więc lekarstwa przeciw olbrzymim grzybom."
 
 #: conversationlist_fallhaven_potions.json:fungi_panic_potioner_40:0
 #: conversationlist_graveyard1.json:graveyardtraveler_10:0
@@ -21927,67 +22096,95 @@ msgid "Yes."
 msgstr "Tak."
 
 #: conversationlist_fallhaven_potions.json:fungi_panic_potioner_40:1
+#, fuzzy
 msgid "Yes. Here are some samples of the mushroom spores."
-msgstr ""
+msgstr "Tak. Tutaj jest kilka próbek zarodników grzybów."
 
 #: conversationlist_fallhaven_potions.json:fungi_panic_potioner_42
+#, fuzzy
 msgid "There are lots of different mushrooms. A spore infection can be nasty, deadly even. Unfortunately the cure for one kind kills you, when you are afflicted by another kind."
 msgstr ""
+"Istnieje wiele różnych grzybów. Zatrucie grzybami może być paskudne albo "
+"nawet śmiertelne. Niestety lekarstwo na jeden z rodzajów zabije Cię, jeśli "
+"jesteś zatruty jeszcze innym."
 
 #: conversationlist_fallhaven_potions.json:fungi_panic_potioner_42:0
+#, fuzzy
 msgid "Oh dear. So Bogsten can't be helped?"
-msgstr ""
+msgstr "O rany. Więc Bogstenowi nie można pomóc?"
 
 #: conversationlist_fallhaven_potions.json:fungi_panic_potioner_44
+#, fuzzy
 msgid "No need to despair. To make a cure, I will need a sample of these spores. Can you get some?"
 msgstr ""
+"Nie trzeba tracić nadziei. Aby stworzyć lekarstwo potrzebuję kilka próbek "
+"zarodników. Czy możesz je zdobyć?"
 
 #: conversationlist_fallhaven_potions.json:fungi_panic_potioner_44:0
+#, fuzzy
 msgid "I could try."
-msgstr ""
+msgstr "Mógłbym spróbować."
 
 #: conversationlist_fallhaven_potions.json:fungi_panic_potioner_46
+#, fuzzy
 msgid "Good. Bring me four sample spores of the mushroom, then I will be able to choose the right antidote."
 msgstr ""
+"Dobrze. Przynieś mi 4 próbki zarodników, a później będę mógł wybrać właściwe "
+"antidotum."
 
 #: conversationlist_fallhaven_potions.json:fungi_panic_potioner_46:0
+#, fuzzy
 msgid "I will be back with the spores in an instant."
-msgstr ""
+msgstr "Wrócę natychmiast z zarodnikami grzybów."
 
 #: conversationlist_fallhaven_potions.json:fungi_panic_potioner_46:1
+#, fuzzy
 msgid "Here are four samples of the mushroom spores."
-msgstr ""
+msgstr "Oto cztery próbki zarodników grzybów."
 
 #: conversationlist_fallhaven_potions.json:fungi_panic_potioner_50
+#, fuzzy
 msgid "Let me see... Ah, yes. A fungus maximus, also known as 'Giant mushroom'. Its wounds are deadly if not cured properly."
 msgstr ""
+"Zobaczmy... Ach, tak. Fungus maximus, znany również jako 'Olbrzymi grzyb'. "
+"Jego rany są śmiertelne, jeśli nie będą leczone prawidłowo."
 
 #: conversationlist_fallhaven_potions.json:fungi_panic_potioner_50a
+#, fuzzy
 msgid "A sample? This won't do. I'll need at least four samples for my work."
 msgstr ""
+"Próbka? To nie wystarczy. Potrzebuję co najmniej czterech próbek do mojej "
+"pracy."
 
 #: conversationlist_fallhaven_potions.json:fungi_panic_potioner_50a:0
+#, fuzzy
 msgid "I see. I'll be back with more in just a moment."
-msgstr ""
+msgstr "Rozumiem. Za momencik wrócę z większą ilością."
 
 #: conversationlist_fallhaven_potions.json:fungi_panic_potioner_52
+#, fuzzy
 msgid "I'm glad that I have the right potion for it. You can have it for only 150 gold coins."
 msgstr ""
+"Cieszę się, że masz na to odpowiednią miksturę. Możesz ją mieć za jedyne 150 "
+"sztuk złota."
 
 #: conversationlist_fallhaven_potions.json:fungi_panic_potioner_52:0
+#, fuzzy
 msgid "That much!"
-msgstr ""
+msgstr "Tak dużo!"
 
 #: conversationlist_fallhaven_potions.json:fungi_panic_potioner_52:1
 #: conversationlist_fallhaven_potions.json:fungi_panic_potioner_54:1
 #: conversationlist_fallhaven_potions.json:fungi_panic_potioner_56:1
 #: conversationlist_fallhaven_potions.json:fungi_panic_potioner_58:1
+#, fuzzy
 msgid "OK, here you are."
-msgstr ""
+msgstr "Ok, proszę bardzo."
 
 #: conversationlist_fallhaven_potions.json:fungi_panic_potioner_54
+#, fuzzy
 msgid "Take it or leave it. Poor Bogsten ..."
-msgstr ""
+msgstr "Weź to lub zostaw. Biedny Bogsten ..."
 
 #: conversationlist_fallhaven_potions.json:fungi_panic_potioner_54:0
 #: conversationlist_arulir_mountain.json:tjure_30_90:1
@@ -21995,59 +22192,74 @@ msgid "Forget it."
 msgstr "Zapomnij o tym."
 
 #: conversationlist_fallhaven_potions.json:fungi_panic_potioner_56
+#, fuzzy
 msgid "I had always liked him ..."
-msgstr ""
+msgstr "Zawsze go lubiłem ..."
 
 #: conversationlist_fallhaven_potions.json:fungi_panic_potioner_58
 #: conversationlist_brimhaven2.json:brv_school_history_30:0
 #: conversationlist_fungi_panic.json:zuul_khan3_blocker:1
 #: conversationlist_fungi_panic.json:zuul_khan4_blocker:1
+#, fuzzy
 msgid "Sigh."
-msgstr ""
+msgstr "Westchnięcie."
 
 #: conversationlist_fallhaven_potions.json:fungi_panic_potioner_58:0
+#, fuzzy
 msgid "I said no."
-msgstr ""
+msgstr "Powiedziałem nie."
 
 #: conversationlist_fallhaven_potions.json:fungi_panic_potioner_60
+#, fuzzy
 msgid "And here's the cure."
-msgstr ""
+msgstr "A oto lekarstwo."
 
 #: conversationlist_fallhaven_potions.json:fungi_panic_potioner_100
+#, fuzzy
 msgid "Oh. Thank you."
-msgstr ""
+msgstr "Och. Dziękuję Ci."
 
 #: conversationlist_fallhaven_potions.json:fungi_panic_potioner_100:0
+#, fuzzy
 msgid "Hey! Aren't you going to give me something interesting for it?"
-msgstr ""
+msgstr "Hey! Nie dasz mi za to czegoś interesującego?"
 
 #: conversationlist_fallhaven_potions.json:fungi_panic_potioner_110
+#, fuzzy
 msgid "I could, yes. But I won't."
-msgstr ""
+msgstr "Mógłbym, tak, ale nie dam."
 
 #: conversationlist_fallhaven_potions.json:fungi_panic_potioner_110:0
+#, fuzzy
 msgid "That's robbery! I won't let you get away with it!"
-msgstr ""
+msgstr "To rozbój! Nie ujdzie Ci to na sucho!"
 
 #: conversationlist_fallhaven_potions.json:fungi_panic_potioner_112
+#, fuzzy
 msgid "Now leave my shop, unless you have some other business. I have work to do."
 msgstr ""
+"Teraz opuść mój sklep, chyba że masz inną sprawę do załatwienia. Mam coś do "
+"roboty."
 
 #: conversationlist_fallhaven_potions.json:fungi_panic_potioner_112:0
+#, fuzzy
 msgid "Forget it, let's talk about something else."
-msgstr ""
+msgstr "Zapomnij o tym, porozmawiajmy o czymś innym."
 
 #: conversationlist_fallhaven_potions.json:fungi_panic_potioner_112:1
+#, fuzzy
 msgid "You can't do that to me! I'll get the guards!"
-msgstr ""
+msgstr "Nie możesz mi tego zrobić! Wezwę straże!"
 
 #: conversationlist_fallhaven_potions.json:fungi_panic_potioner_120
+#, fuzzy
 msgid "Calm down. Shall I sell a sedative to you?"
-msgstr ""
+msgstr "Uspokój się. Może powinienem Ci sprzedać środek uspokajający?"
 
 #: conversationlist_fallhaven_potions.json:fungi_panic_potioner_120:0
+#, fuzzy
 msgid "NO! I DON'T NEED ANY SEDATIVE!!"
-msgstr ""
+msgstr "NIE! NIE POTRZEBUJĘ ŻADNEGO ŚRODKA!"
 
 #: conversationlist_shortcut_lodar.json:sign_lodar_shortcut_1
 msgid "I see a weird stone formation in front of me. As I try approaching the rocks, I'm stopped by a powerful magical force."
@@ -24388,8 +24600,9 @@ msgid "Yes, we will!"
 msgstr "Tak, zobaczymy!"
 
 #: conversationlist_graveyard1.json:waterwaycavex_3
+#, fuzzy
 msgid "You decide to record this discovery in your father's book of achievements."
-msgstr ""
+msgstr "Decydujesz się zapisać się to odkrycie w książce osiągnięć ojca."
 
 #: conversationlist_guynmart.json:guynmart_haystack
 msgid "This is a haystack."
@@ -25052,7 +25265,7 @@ msgstr "Nigdy nie zagram za pieniądze."
 #: conversationlist_guynmart_npc.json:guynmart_player_20:2
 #: conversationlist_brimhaven.json:blackjack_bet:4
 msgid "Please explain the rules to me."
-msgstr ""
+msgstr "Wytłumacz mi zasady."
 
 #: conversationlist_guynmart_npc.json:guynmart_player_30
 msgid "I will draw a card, and you have to guess whether it is Red or Black."
@@ -30995,8 +31208,9 @@ msgid "Now you have got a headache. You really should give up trying to sleep."
 msgstr "Teraz boli Cię głowa. Naprawdę powinieneś przestać prób snu."
 
 #: conversationlist_bugfix_0_7_4.json:lookout_up_6
+#, fuzzy
 msgid "You decide to write about this wondrous sight in your father's book of achievements."
-msgstr ""
+msgstr "Decydujesz się napisać o tym cudownym widoku w książce osiągnięć ojca."
 
 #: conversationlist_omicronrg9.json:umar_guild_1
 msgid "I see .... So you want to get involved in our Guild?"
@@ -33847,8 +34061,9 @@ msgid "Maybe the current will wash you ashore somewhere?"
 msgstr "Może prąd wyrzuci Cię gdzieś na brzeg?"
 
 #: conversationlist_arulir_mountain.json:arulircave_trap101
+#, fuzzy
 msgid "The ground over there is very slippery. You don't want to fall into the water again."
-msgstr ""
+msgstr "Ziemia pod Tobą jest bardzo śliska. Nie chciałbyś znowu wpaść do wody."
 
 #: conversationlist_burhczyd.json:burhczydx_1a
 msgid "Hi, who are you? I have never seen you here."
@@ -34520,526 +34735,709 @@ msgid "Before I leave, I have some business to do here."
 msgstr "Zanim stąd odejdę, mam tu jeszcze coś do załatwienia."
 
 #: conversationlist_burhczyd.json:burhczydx_10a
+#, fuzzy
 msgid "Who art thou that disturbeth the peace of an Elythom knight?"
-msgstr ""
+msgstr "Kimże jesteś Ty, który ośmielasz się zakłócać spokój rycerzy Elythomu?"
 
 #: conversationlist_burhczyd.json:burhczydx_10a:0
+#, fuzzy
 msgid "Oh, sorry. I'm already gone again."
-msgstr ""
+msgstr "Och, przepraszam. Właśnie odszedłem."
 
 #: conversationlist_burhczyd.json:burhczydx_10a:1
+#, fuzzy
 msgid "I am looking for my brother Andor. Do you have seen him? He looks a bit like me."
-msgstr ""
+msgstr "Szukam mojego brata Andora. Czy widziałeś go? Przypomina mnie."
 
 #: conversationlist_burhczyd.json:burhczydx_10a_2
+#, fuzzy
 msgid "No, $playername. I have not seen Andor lately."
-msgstr ""
+msgstr "Nie, $nazwagracza. Nie widziałem Andora ostatnio."
 
 #: conversationlist_burhczyd.json:burhczydx_10a_2:0
+#, fuzzy
 msgid "How do you know my name?"
-msgstr ""
+msgstr "Skąd wiesz jak mam na imię?"
 
 #: conversationlist_burhczyd.json:burhczydx_10a_3
+#, fuzzy
 msgid "Oops. Eh, well, we Elythom knights know many things."
-msgstr ""
+msgstr "Ups. Ech, dobrze, my rycerze Elythomu wiemy wiele rzeczy."
 
 #: conversationlist_burhczyd.json:burhczydx_10a_3:0
+#, fuzzy
 msgid "That's not the whole truth. Now?"
-msgstr ""
+msgstr "To nie do końca prawda. Teraz?"
 
 #: conversationlist_burhczyd.json:burhczydx_10a_4
+#, fuzzy
 msgid "All right, $playername. Of course I know you well. I am Burhczyd afgz Dtaloumiye."
 msgstr ""
+"W porządku, $playername. Oczywiście, że dobrze Cię znam. Jestem Burhczyd "
+"afgz Dtaloumiye."
 
 #: conversationlist_burhczyd.json:burhczydx_10a_4:0
+#, fuzzy
 msgid "Burhczyd? You - a knight of the Elythom?"
-msgstr ""
+msgstr "Burhczyd? Ty- rycerz Elythomu?"
 
 #: conversationlist_burhczyd.json:burhczydx_10a_5
+#, fuzzy
 msgid "One should have that impression. But not everything is as it seems."
 msgstr ""
+"Takie można odnieść wrażenie. Jednak nie wszystko jest takie jak się wydaje."
 
 #: conversationlist_burhczyd.json:burhczydx_10a_6
+#, fuzzy
 msgid "You know, once I feasted with the Lord Commander of the Elythom. A very pleasant man."
 msgstr ""
+"Wiesz, kiedyś ucztowałem z Lordem dowódcą Elythomu. Całkiem miły człowiek."
 
 #: conversationlist_burhczyd.json:burhczydx_10a_6a
+#, fuzzy
 msgid "We got merry, and in high spirits I 'borrowed' a few little things from him."
-msgstr ""
+msgstr "Było na wesoło i w dobrym nastroju 'pożyczyłem' od niego kilka rzeczy."
 
 #: conversationlist_burhczyd.json:burhczydx_10a_7
+#, fuzzy
 msgid "Now the whole order is looking for the thief. So I thought it wise to disguise myself."
 msgstr ""
+"Teraz cały zakon szuka złodzieja. Pomyślałem więc, że mądrze będzie mieć "
+"jakieś przebranie."
 
 #: conversationlist_burhczyd.json:burhczydx_10a_7:0
+#, fuzzy
 msgid "As a knight!?"
-msgstr ""
+msgstr "Jako rycerz!?"
 
 #: conversationlist_burhczyd.json:burhczydx_10a_7a
+#, fuzzy
 msgid "Indeed. They'd never suspect this. I already talked with some knights and asked about their progress."
 msgstr ""
+"W rzeczy samej. Nigdy by się nie domyślili. Rozmawiałem już z kilkoma "
+"rycerzami na temat postępu poszukiwań."
 
 #: conversationlist_burhczyd.json:burhczydx_10a_7b
+#, fuzzy
 msgid "It was really hard to hold back my laughter."
-msgstr ""
+msgstr "Bardzo trudno mi było powstrzymać się od śmiechu."
 
 #: conversationlist_burhczyd.json:burhczydx_10a_8
+#, fuzzy
 msgid "But now you should leave. Otherwise we may arouse suspicion."
 msgstr ""
+"Ale teraz powinieneś odejść. W przeciwnym razie możemy wzbudzić podejrzenia."
 
 #: conversationlist_burhczyd.json:burhczydx_10a_8:0
+#, fuzzy
 msgid "You are right. We'll surely meet another time."
-msgstr ""
+msgstr "Masz rację. Z pewnością spotkamy się innym razem."
 
 #: conversationlist_burhczyd.json:burhczydx_10e
+#, fuzzy
 msgid "We'd better not be seen together anymore."
-msgstr ""
+msgstr "Lepiej żeby nas więcej nie widziano razem."
 
 #: conversationlist_burhczyd.json:burhczydx_11a
 #: conversationlist_burhczyd.json:burhczydx_12a
+#, fuzzy
 msgid "Sorry, I have to leave."
-msgstr ""
+msgstr "Przepraszam, ale muszę iść."
 
 #: conversationlist_burhczyd.json:burhczydx_11a:0
 #: conversationlist_burhczyd.json:burhczydx_12a:0
+#, fuzzy
 msgid "Burhczyd, is it really you? Wait, don't run away ..."
-msgstr ""
+msgstr "Burhczyd, to naprawdę Ty? Czekaj, nie uciekaj ..."
 
 #: conversationlist_burhczyd.json:burhczydx_11e
 #: conversationlist_burhczyd.json:burhczydx_12e
+#, fuzzy
 msgid "As soon as ...todo..., I will go."
-msgstr ""
+msgstr "Jak tylko ... zrobię..., pójdę sobie."
 
 #: conversationlist_brimhaven.json:brv_employee_01
+#, fuzzy
 msgid "Ooh. Oooooh!"
-msgstr ""
+msgstr "Ooch. Oooooch!"
 
 #: conversationlist_brimhaven.json:brv_employee_01:0
+#, fuzzy
 msgid "Hey, what's the matter with you?"
-msgstr ""
+msgstr "Hej, co się z Tobą dzieje?"
 
 #: conversationlist_brimhaven.json:brv_employee_02
+#, fuzzy
 msgid "I feel so bad."
-msgstr ""
+msgstr "Źle się czuję."
 
 #: conversationlist_brimhaven.json:brv_employee_02:0
+#, fuzzy
 msgid "Looks like a bit of a fever. Just stay in bed for a few days."
-msgstr ""
+msgstr "Wygląda mi to na jakąś gorączkę. Zostań w łóżku przez kilka dni."
 
 #: conversationlist_brimhaven.json:brv_employee_03
+#, fuzzy
 msgid "But I can't! I mustn't! Gnossath would kill me."
-msgstr ""
+msgstr "Ale nie mogę! Nie wolno mi! Gnossath mógłby mnie zabić."
 
 #: conversationlist_brimhaven.json:brv_employee_03:0
+#, fuzzy
 msgid "Gnossath would kill you? Why?"
-msgstr ""
+msgstr "Gnossath zabiłby Cię? Dlaczego?"
 
 #: conversationlist_brimhaven.json:brv_employee_04
+#, fuzzy
 msgid "I am working for him."
-msgstr ""
+msgstr "Pracuję dla niego."
 
 #: conversationlist_brimhaven.json:brv_employee_05
+#, fuzzy
 msgid "He lent me money, so that I could afford this house. But no work - no money. I fear that if I can't pay my debts, Gnossath will take my house."
 msgstr ""
+"Pożyczył mi pieniądze, abym mógł kupić ten dom. Nie ma pracy- nie ma "
+"pieniędzy. Obawiam się, że jeśli nie spłacę długów, Gnossath zabierze mi dom."
 
 #: conversationlist_brimhaven.json:brv_employee_05:0
+#, fuzzy
 msgid "Maybe I could help you? I could do your work."
-msgstr ""
+msgstr "Może mógłbym pomóc? Mógłbym wykonać Twoją pracę."
 
 #: conversationlist_brimhaven.json:brv_employee_05:1
+#, fuzzy
 msgid "That's the way it goes, man. Have a nice day."
-msgstr ""
+msgstr "Tak to już jest, człowieku. Miłego dnia."
 
 #: conversationlist_brimhaven.json:brv_employee_06
+#, fuzzy
 msgid "You would do that? Oh, thank you! Thank you!"
-msgstr ""
+msgstr "Zrobiłbyś to? Och, dziękuję! Dziękuję!"
 
 #: conversationlist_brimhaven.json:brv_employee_06:0
+#, fuzzy
 msgid "And you - get healthy again!"
-msgstr ""
+msgstr "A Ty- bądź zdrów!"
 
 #: conversationlist_brimhaven.json:brv_employee_06:1
+#, fuzzy
 msgid "I have too good a heart."
-msgstr ""
+msgstr "Mam zbyt dobre serce."
 
 #: conversationlist_brimhaven.json:brv_employee_10
 #: conversationlist_brimhaven.json:brv_employee_30
+#, fuzzy
 msgid "Did you talk to Gnossath?"
-msgstr ""
+msgstr "Rozmawiałeś z Gnossathem?"
 
 #: conversationlist_brimhaven.json:brv_employee_30:0
+#, fuzzy
 msgid "Yes. He wants me to carry heavy boulders."
-msgstr ""
+msgstr "Tak. Wymaga ode mnie przenoszenia ciężkich głazów."
 
 #: conversationlist_brimhaven.json:brv_employee_40
+#, fuzzy
 msgid "Did you start working already?"
-msgstr ""
+msgstr "Czy już zacząłeś pracować?"
 
 #: conversationlist_brimhaven.json:brv_employee_40:0
+#, fuzzy
 msgid "Yes. It is hard work, really."
-msgstr ""
+msgstr "Tak. To ciężka praca, naprawdę."
 
 #: conversationlist_brimhaven.json:brv_employee_90
+#, fuzzy
 msgid "Thank you for your help!"
-msgstr ""
+msgstr "Dziękuję za pomoc!"
 
 #: conversationlist_brimhaven.json:brv_employee_90:0
+#, fuzzy
 msgid "Was a pleasure."
-msgstr ""
+msgstr "To była przyjemność."
 
 #: conversationlist_brimhaven.json:brv_employee2
 #: conversationlist_brimhaven.json:brv_employee_wife2
+#, fuzzy
 msgid "Hey kid! Come and have a drink with me!"
-msgstr ""
+msgstr "Hej dzieciaku! Chodź i napij się ze mną!"
 
 #: conversationlist_brimhaven.json:brv_employee2:1
+#, fuzzy
 msgid "I thought you were ill?"
-msgstr ""
+msgstr "Myślałem, że byłeś chory?"
 
 #: conversationlist_brimhaven.json:brv_employee2_10
+#, fuzzy
 msgid "I am still ill - just taking my medicine here."
-msgstr ""
+msgstr "Wciąż jestem chory- tylko biorę tutaj swoje leki."
 
 #: conversationlist_brimhaven.json:brv_employee_wife
+#, fuzzy
 msgid "Who are you? Stebbarik, my husband, is not at home."
-msgstr ""
+msgstr "Kim jesteś? Stebbarika, mojego męża, nie ma w domu."
 
 #: conversationlist_brimhaven.json:brv_employee_wife_10
+#, fuzzy
 msgid "Not at home, no. He never is."
-msgstr ""
+msgstr "Nie ma w domu, nie. Nigdy go nie ma."
 
 #: conversationlist_brimhaven.json:brv_employer_0
+#, fuzzy
 msgid "Ahoy kid! I am Gnossath, warden of the great dam."
-msgstr ""
+msgstr "Ahoj dzieciaku! Jestem Gnossath, nadzorca wielkiej tamy."
 
 #: conversationlist_brimhaven.json:brv_employer_01
+#, fuzzy
 msgid "I am waiting for Stebbarik. Have you seen him?"
-msgstr ""
+msgstr "Czekam na Stebbarika. Widziałeś go?"
 
 #: conversationlist_brimhaven.json:brv_employer_01:0
+#, fuzzy
 msgid "No. What do you want of him?"
-msgstr ""
+msgstr "Nie. Czego chcesz od niego?"
 
 #: conversationlist_brimhaven.json:brv_employer_02
+#, fuzzy
 msgid "He has to work for me. I hope for his sake that he will appear soon."
 msgstr ""
+"Musi pracować dla mnie. Mam nadzieję, że dla własnego dobra wkrótce się "
+"pojawi."
 
 #: conversationlist_brimhaven.json:brv_employer_04
+#, fuzzy
 msgid "You could do me a favor, if you'd find him for me."
-msgstr ""
+msgstr "Mógłbyś mi wyświadczyć przysługę, jeśli go znajdziesz dla mnie."
 
 #: conversationlist_brimhaven.json:brv_employer_10
+#, fuzzy
 msgid "Have you seen the lazybones, Stebbarik?"
-msgstr ""
+msgstr "Czy widziałeś tego leniucha, Stebbarika?"
 
 #: conversationlist_brimhaven.json:brv_employer_10:0
+#, fuzzy
 msgid "Stebbarik is ill at home. He is very anxious that you might get angry."
 msgstr ""
+"Stebbarik leży chory w domu. Jest bardzo niespokojny, że możesz się "
+"zdenerwować."
 
 #: conversationlist_brimhaven.json:brv_employer_10_10
+#, fuzzy
 msgid "Ill? Rats! Who will repair the dam now? It must be done soon."
-msgstr ""
+msgstr "Chory? Szczury! Kto teraz naprawi tamę? Musi być niedługo ukończona."
 
 #: conversationlist_brimhaven.json:brv_employer_10_10:0
+#, fuzzy
 msgid "If it is so important, maybe I can help?"
-msgstr ""
+msgstr "Jeśli to ważne, może w czymś pomogę?"
 
 #: conversationlist_brimhaven.json:brv_employer_10_20
+#, fuzzy
 msgid "You? This work requires a lot of heavy lifting. You being a kid and all, I'm not sure you are up to it."
 msgstr ""
+"Ty? Ta praca wymaga wiele dźwigania ciężarów. Jesteś dzieckiem i w ogóle, "
+"nie mam pewności czy temu podołasz."
 
 #: conversationlist_brimhaven.json:brv_employer_10_22
+#, fuzzy
 msgid "We need 25 big boulders carried from the stock to the dam here."
 msgstr ""
+"Potrzebujemy przenieść 25 wielkich głazów ze sterty aż do tutejszej tamy."
 
 #: conversationlist_brimhaven.json:brv_employer_10_22:0
+#, fuzzy
 msgid "Sounds easy. Let me try it."
-msgstr ""
+msgstr "Brzmi nieźle. Pozwólcie, że spróbuję."
 
 #: conversationlist_brimhaven.json:brv_employer_10_22:1
+#, fuzzy
 msgid "You are right. This is no work for me."
-msgstr ""
+msgstr "Masz rację. To nie zadanie dla mnie."
 
 #: conversationlist_brimhaven.json:brv_employer_10_30
+#, fuzzy
 msgid "OK. Try, if you want. The pile of boulders is just next to the wooden logs over there."
-msgstr ""
+msgstr "Ok, spróbuj, jeśli chcesz. Sterta głazów leży obok kłód drewna tam."
 
 #: conversationlist_brimhaven.json:brv_employer_10_40
+#, fuzzy
 msgid "But beware, they are really heavy."
-msgstr ""
+msgstr "Uważaj, są one naprawdę ciężkie."
 
 #: conversationlist_brimhaven.json:brv_employer_30
+#, fuzzy
 msgid "Where are the boulders? I knew they would be too heavy for you."
-msgstr ""
+msgstr "Gdzie są te głazy? Wiedziałem, że będą zbyt ciężkie dla Ciebie."
 
 #: conversationlist_brimhaven.json:brv_employer_30:0
+#, fuzzy
 msgid "Just you wait."
-msgstr ""
+msgstr "Poczekaj."
 
 #: conversationlist_brimhaven.json:brv_employer_40
+#, fuzzy
 msgid "You have carried some boulders already - good. Just do the rest too."
-msgstr ""
+msgstr "Przeniosłeś już kilka głazów- w porządku. Przenieś też resztę."
 
 #: conversationlist_brimhaven.json:brv_employer_90
+#, fuzzy
 msgid "Thanks again for your good work. Are you sure you don't want a job?"
-msgstr ""
+msgstr "Jeszcz raz dziękuę za dobrą robotę. Jesteś pewien, że nie chcesz pracy?"
 
 #: conversationlist_brimhaven.json:brv_employer_90:0
+#, fuzzy
 msgid "Certainly not. I am on a mission for Mikhail."
-msgstr ""
+msgstr "Oczywiście, że nie. Jestem na misji od Mikhaila."
 
 #: conversationlist_brimhaven.json:brv_employer_carry_boulder_9
+#, fuzzy
 msgid "Breathing heavily under the big load, you collapse, losing all the boulders."
-msgstr ""
+msgstr "Dysząc ciężko pod wielkim obciążeniem, upadasz, tracąc wszystkie głazy."
 
 #: conversationlist_brimhaven.json:brv_employer_check_boulder
+#, fuzzy
 msgid "You can't carry so many boulders."
-msgstr ""
+msgstr "Nie możesz nieść tak wielu głazów."
 
 #: conversationlist_brimhaven.json:brv_employer_check_boulder_2
+#, fuzzy
 msgid "Hey, where are you going? Bring the boulders to the dam!"
-msgstr ""
+msgstr "Hej, gdzie się wybierasz? Przynieś głazy do tamy!"
 
 #: conversationlist_brimhaven.json:brv_employer_get_boulder_02
+#, fuzzy
 msgid "Hands off! These boulders are needed for the dam!"
-msgstr ""
+msgstr "Ręce precz! Te głazy są potrzebne dla tamy!"
 
 #: conversationlist_brimhaven.json:brv_employer_get_boulder_04
+#, fuzzy
 msgid "A huge pile of boulders."
-msgstr ""
+msgstr "Ogromna sterta głazów."
 
 #: conversationlist_brimhaven.json:brv_employer_get_boulder_10
+#, fuzzy
 msgid "Take a boulder?"
-msgstr ""
+msgstr "Wziąć głaz?"
 
 #: conversationlist_brimhaven.json:brv_employer_get_boulder_10:0
+#, fuzzy
 msgid "Ah, no. This would be too much."
-msgstr ""
+msgstr "Ach, nie. To będzie zbyt wiele."
 
 #: conversationlist_brimhaven.json:brv_employer_get_boulder_20
+#, fuzzy
 msgid "Oof, that's heavy!"
-msgstr ""
+msgstr "Uff, to zbyt ciężkie!"
 
 #: conversationlist_brimhaven.json:brv_employer_get_boulder_20:0
+#, fuzzy
 msgid "Take another one."
-msgstr ""
+msgstr "Weź jeszcze jeden."
 
 #: conversationlist_brimhaven.json:brv_employer_get_boulder_20:1
+#, fuzzy
 msgid "And now to the dam."
-msgstr ""
+msgstr "A teraz do tamy."
 
 #: conversationlist_brimhaven.json:brv_employer_put_boulder_1
+#, fuzzy
 msgid "You throw the boulder into the water, just in front of the dam."
-msgstr ""
+msgstr "Rzuć głaz do wody tuż przed tamą."
 
 #: conversationlist_brimhaven.json:brv_employer_put_boulder_2
+#, fuzzy
 msgid "You throw 2 boulders into the water, just in front of the dam."
-msgstr ""
+msgstr "Wrzucasz 2 głazy do wody, tuż przed tamą."
 
 #: conversationlist_brimhaven.json:brv_employer_put_boulder_3
+#, fuzzy
 msgid "You throw 3 boulders into the water, just in front of the dam."
-msgstr ""
+msgstr "Wrzucasz 3 głazy do wody, tuż przed tamą."
 
 #: conversationlist_brimhaven.json:brv_employer_put_boulder_3:0
+#, fuzzy
 msgid "Uff."
-msgstr ""
+msgstr "Uff."
 
 #: conversationlist_brimhaven.json:brv_employer_put_boulder_4
+#, fuzzy
 msgid "You throw 4 boulders into the water, just in front of the dam."
-msgstr ""
+msgstr "Wrzucasz 4 głazy do wody, tuż przed tamą."
 
 #: conversationlist_brimhaven.json:brv_employer_put_boulder_4:0
+#, fuzzy
 msgid "Uff. They somehow seem to get heavier and heavier."
-msgstr ""
+msgstr "Uff. Jakimś cudem stają się cięższe i cięższe."
 
 #: conversationlist_brimhaven.json:brv_employer_put_boulder_21
+#, fuzzy
 msgid "You have brought already more than 5 boulders."
-msgstr ""
+msgstr "Przyniosłeś już więcej niż 5 głazów."
 
 #: conversationlist_brimhaven.json:brv_employer_put_boulder_22
+#, fuzzy
 msgid "Over 10 boulders."
-msgstr ""
+msgstr "Więcej niż 10 głazów."
 
 #: conversationlist_brimhaven.json:brv_employer_put_boulder_23
+#, fuzzy
 msgid "At least 15 boulders now."
-msgstr ""
+msgstr "Conajmniej 15 głazów."
 
 #: conversationlist_brimhaven.json:brv_employer_put_boulder_24
+#, fuzzy
 msgid "Only a few boulders left."
-msgstr ""
+msgstr "Już tylko kilka głazów zostało."
 
 #: conversationlist_brimhaven.json:brv_employer_put_boulder_90
+#, fuzzy
 msgid "Wow, you got it."
-msgstr ""
+msgstr "Łał, udało Ci się."
 
 #: conversationlist_brimhaven.json:brv_employer_put_boulder_90:0
+#, fuzzy
 msgid "My arms are longer now..."
-msgstr ""
+msgstr "Moje ramiona są teraz dłuższe..."
 
 #: conversationlist_brimhaven.json:brv_employer_put_boulder_92
+#, fuzzy
 msgid "I am really impressed. You have done four times as much as Stebbarik. So tell him, that he can stay home this week and get cured again."
 msgstr ""
+"Jestem pod ogromnym wrażeniem. Zrobiłeś cztery razy więcej niż Stebbarrik. "
+"Powiedz mu więc, że może zostać ten tydzień w domu i dalej się leczyć."
 
 #: conversationlist_brimhaven.json:brv_employer_put_boulder_92:0
+#, fuzzy
 msgid "He will be very relieved."
-msgstr ""
+msgstr "Bardzo mu to ulży."
 
 #: conversationlist_brimhaven.json:brv_flood_key
+#, fuzzy
 msgid "I can't swim."
-msgstr ""
+msgstr "Nie umiem pływać."
 
 #: conversationlist_brimhaven.json:brv_flood_0_10
+#, fuzzy
 msgid "Water comes pouring through the hole in the dam. A lot of water!"
-msgstr ""
+msgstr "Woda wnika przez dziury w tamie. Bardzo dużo wody!"
 
 #: conversationlist_brimhaven.json:brv_flood_2_warning_10
+#, fuzzy
 msgid "I have never learned to swim - I really should run back!"
-msgstr ""
+msgstr "Nigdy nie nauczyłem się pływać- naprawdę powinienem zawrócić!"
 
 #: conversationlist_brimhaven.json:brv_fisher
+#, fuzzy
 msgid "Hush! You are scaring the fish away!"
-msgstr ""
+msgstr "Cicho! Płoszysz ryby!"
 
 #: conversationlist_brimhaven.json:brv_tavern1_guest
+#, fuzzy
 msgid "I'm drinking because I hate myself..."
-msgstr ""
+msgstr "Piję, ponieważ nienawidzę siebie..."
 
 #: conversationlist_brimhaven.json:brv_tavern1_guest2
+#, fuzzy
 msgid "I'm drinking because my wife left me and took my beagle with her.  Now how am I supposed to hunt?"
 msgstr ""
+"Piję, ponieważ żona mnie opuściła i zabrała ze sobą mojego psa rasy beagle. "
+"Jak mam teraz polować?"
 
 #: conversationlist_brimhaven.json:brv_tavern1_guest2:0
+#, fuzzy
 msgid "I'm so sorry to hear about your problems.  I love dogs too."
-msgstr ""
+msgstr "Tak mi przykro słyszeć o Twoich problemach. Też uwielbiam psy."
 
 #: conversationlist_brimhaven.json:brv_tavern1_guest2:1
+#, fuzzy
 msgid "Hey, speaking of killing, I'm wondering if you know anything about Lawellyn's death?"
 msgstr ""
+"Hej, skoro mowa o zabójstwie, zastanawiam się czy wiesz coś o śmierci "
+"Lawellyn?"
 
 #: conversationlist_brimhaven.json:brv_tavern1_landlord
+#, fuzzy
 msgid "I'm coming, just a second..."
-msgstr ""
+msgstr "Chwileczkę, już idę..."
 
 #: conversationlist_brimhaven.json:anakis_meet_2nd_time
+#, fuzzy
 msgid "Hello again. Can you please help me to find my sister Juttarka?"
-msgstr ""
+msgstr "Witaj raz jeszcze. Czy możesz mi pomóc znaleźć moją siostrę Juttarkę?"
 
 #: conversationlist_brimhaven.json:anakis_meet_2nd_time:0
+#, fuzzy
 msgid "I found a statue looking almost like a real woman. [Describe the statue to Anakis]"
 msgstr ""
+"Znalazłem statuę wyglądającą jak prawdziwa kobieta. [Opisz statuę Anakisowi]"
 
 #: conversationlist_brimhaven.json:anakis_meet_2nd_time:1
 #: conversationlist_brimhaven.json:anakis_help_find_sister:1
+#, fuzzy
 msgid "Yes, I will search for your sister."
-msgstr ""
+msgstr "Tak, poszukam Twojej siostry."
 
 #: conversationlist_brimhaven.json:anakis_meet_2nd_time:2
 #: conversationlist_brimhaven.json:anakis_help_find_sister:2
+#, fuzzy
 msgid "No, that's none of my business."
-msgstr ""
+msgstr "Nie, to nie moja sprawa."
 
 #: conversationlist_brimhaven.json:anakis_help_find_sister
+#, fuzzy
 msgid ""
 "Hello my name is Anakis. I hope you can you help me. \n"
 "\n"
 "Yesterday my sister Juttarka left the city to go up to this hill. She did not come home and now I am searching for her. I fear she went into that cave."
 msgstr ""
+"Cześć, nazywam się Anakis. Mam nadzieję, że mi pomożesz.\n"
+"\n"
+"Wczoraj moja siostra Juttarka opuściła miasto i poszła na to wzgórze. Nie "
+"wróciła do domu i teraz szukam jej. Obawiam się, że weszła do tej jaskini."
 
 #: conversationlist_brimhaven.json:anakis_help_find_sister:0
+#, fuzzy
 msgid "I found a statue that looks almost like a real woman. [Describe the statue to Anakis]"
 msgstr ""
+"Znalazłem statuę, która wygląda prawie jak prawdziwa kobieta. [Opisz statuę "
+"Anakisowi]"
 
 #: conversationlist_brimhaven.json:anakis_agreed_find_sister
+#, fuzzy
 msgid ""
 "Thank you. My sister has long hair and is wearing a long skirt.\n"
 "\n"
 "Please take care. Fangwurm the priest in western Brimhaven told us about a Basilisk in the cave that will turn you to stone when you go near him and your eyes meet its eyes."
 msgstr ""
+"Dziękuję. Moja siostra ma długie włosy i nosi długą spódniczkę.\n"
+"\n"
+"Trzymaj się. Fangwurm kapłan w zachodnim Brimhaven powiedział nam o "
+"bazyliszku w jaskini, który zamieni Cię w kamień, jeśli podejdziesz do niego "
+"i Twoje spojrzenie spotka się z jego spojrzeniem."
 
 #: conversationlist_brimhaven.json:anakis_did_you_find_my_sister
+#, fuzzy
 msgid "Did you find my sister?"
-msgstr ""
+msgstr "Znalazłeś moją siostrę?"
 
 #: conversationlist_brimhaven.json:anakis_did_you_find_my_sister:1
+#, fuzzy
 msgid "I only found a stone statue that looks almost like a real woman. [Describe the statue to Anakis]"
 msgstr ""
+"Znalazłem tylko kamienną statuę, która wygląda prawie jak rzeczywista "
+"kobieta. [Opisz statuę Anakisowi]"
 
 #: conversationlist_brimhaven.json:anakis_thank_finding_sister
+#, fuzzy
 msgid ""
 "Oh no, that's her! Thank you for helping me to find out what happened to her. \n"
 "\n"
 "I think it was the Basilisk who did that to her."
 msgstr ""
+"Och nie, to ona! Dziękuję za pomoc w ustaleniu co się z nią stało.\n"
+"\n"
+"Myślę, że bazyliszek jej to zrobił."
 
 #: conversationlist_brimhaven.json:anakis_can_you_take_revenge
+#, fuzzy
 msgid "Can you find the Basilisk and kill it? And maybe there is a way to help my sister. But take care that the same fate that happened to my sister does not befall you."
 msgstr ""
+"Czy możesz znaleźć bazyliszka i zabić go? Może jest jakiś sposób by pomóc "
+"mojej siostrze. Uważaj by spotkał Cię ten sam los co moją siostrę."
 
 #: conversationlist_brimhaven.json:anakis_can_you_take_revenge:0
+#, fuzzy
 msgid "I already found the Basilisk and killed it."
-msgstr ""
+msgstr "Już znalazłem bazyliszka i zabiłem go."
 
 #: conversationlist_brimhaven.json:anakis_can_you_take_revenge:1
+#, fuzzy
 msgid "I will take revenge, but first tell me how I might help your sister."
-msgstr ""
+msgstr "Pomszczę ją, ale najpierw powiedz mi jak mogę pomóc Twojej siostrze."
 
 #: conversationlist_brimhaven.json:anakis_can_you_take_revenge:2
+#, fuzzy
 msgid "I can't imagine how to help your sister but I will take revenge for her and find a way to kill that Basilisk."
 msgstr ""
+"Nie wyobrażam sobie, że to pomoże Twojej siostrze, ale pomszczę ją i znajdę "
+"sposób by zabić tego bazyliszka."
 
 #: conversationlist_brimhaven.json:anakis_can_you_take_revenge:3
+#, fuzzy
 msgid "No, that's too dangerous for me."
-msgstr ""
+msgstr "Nie, to zbyt niebezpieczne dla mnie."
 
 #: conversationlist_brimhaven.json:anakis_did_you_take_revenge
+#, fuzzy
 msgid "Did you kill the Basilisk?"
-msgstr ""
+msgstr "Zabiłeś bazyliszka?"
 
 #: conversationlist_brimhaven.json:anakis_did_you_take_revenge:0
+#, fuzzy
 msgid "I found the Basilisk and killed it, but I decided to take the blood for myself."
 msgstr ""
+"Znalazłem bazyliszka i zabiłem go, ale zdecydowałem się zachować krew dla "
+"siebie."
 
 #: conversationlist_brimhaven.json:anakis_did_you_take_revenge:1
+#, fuzzy
 msgid "I found the Basilisk and killed it."
-msgstr ""
+msgstr "Znalazłem bazyliszka i zabiłem go."
 
 #: conversationlist_brimhaven.json:anakis_did_you_take_revenge:2
+#, fuzzy
 msgid "I found no way to help your sister, but I took revenge and killed the Basilisk."
 msgstr ""
+"Nie znalazłem sposobu by pomóc Twojej siostrze, ale pomściłem ją i zabiłem "
+"bazyliszka."
 
 #: conversationlist_brimhaven.json:anakis_did_you_take_revenge:4
+#, fuzzy
 msgid "I will take revenge, but let me first think if it is possible to help your sister."
 msgstr ""
+"Pomszczę ją, ale pozwól mi najpierw przemyśleć czy to możliwe, aby pomóc "
+"Twojej siostrze."
 
 #: conversationlist_brimhaven.json:anakis_thank_taking_revenge
+#, fuzzy
 msgid "Thank you for taking revenge for Juttarka. I will go now and mourn for my sister."
 msgstr ""
+"Dziękuję za pomszczenie Juttarki. Pójdę już i będę opłakiwał moją siostrę."
 
 #: conversationlist_brimhaven.json:anakis_thank_healing_sister
+#, fuzzy
 msgid "Thank you so much for rescuing my sister Juttarka. She just came out of the cave and told me what you did for her. I will now go home, too."
 msgstr ""
+"Dziękuję bardzo za uratowanie mojej siostry Juttarki. Wyszła z jaskini i "
+"powiedziała mi co zrobiłeś dla niej. Pójdę teraz też do domu."
 
 #: conversationlist_brimhaven.json:anakis_sad_blood_not_use_for_sister
+#, fuzzy
 msgid "Oh no. Why did you not even try to help her? Now i will go and mourn for my sister."
 msgstr ""
+"Och nie. Dlaczego nawet nie próbowałeś jej pomóc? Pójdę już i będę opłakiwał "
+"moją siostrę."
 
 #: conversationlist_brimhaven.json:sister_statue
+#, fuzzy
 msgid "This stone statue looks almost like a real woman."
-msgstr ""
+msgstr "Ta statua wygląda prawie jak rzeczywista kobieta."
 
 #: conversationlist_brimhaven.json:basiliskcave2_ask_heal_sister
+#, fuzzy
 msgid "You killed the Basilisk and the blood flows out of its wounds."
-msgstr ""
+msgstr "Zabiłeś bazyliszka, a krew wypływa z jego ran."
 
 #: conversationlist_brimhaven.json:basiliskcave2_ask_heal_sister:0
+#, fuzzy
 msgid "I use the crystal vial and pour the blood over the stone statue."
-msgstr ""
+msgstr "Używam kryształowej fiolki i rozlewam krew nad kamienną statuą."
 
 #: conversationlist_brimhaven.json:basiliskcave2_ask_heal_sister:1
+#, fuzzy
 msgid "I keep the blood for myself using the empty crystal vial."
-msgstr ""
+msgstr "Zachowuję krew dla siebie używając pustej kryształowej fiolki."
 
 #: conversationlist_brimhaven.json:basiliskcave2_decided_to_heal
+#, fuzzy
 msgid ""
 "Slowly the stone statue gets colorful and starts to move. You healed the woman!\n"
 "\n"
@@ -35047,345 +35445,492 @@ msgid ""
 "\n"
 "She will leave the cave now and meet her waiting brother."
 msgstr ""
+"Kamienna statua powoli staje się kolorowa i zaczyna się ruszać. Uzdrowiłeś "
+"kobietę!\n"
+"\n"
+"Po tym jak powraca do życia, dziękuje Ci i mówi, że nazywa się Juttarka "
+"siostra Anakisa.\n"
+"\n"
+"Opuści teraz jaskinię i spotka czekającego na nią brata."
 
 #: conversationlist_brimhaven.json:basiliskcave2_dried_blood
+#, fuzzy
 msgid "There is only some dried-up blood on the ground left."
-msgstr ""
+msgstr "Na podłodze pozostała jedynie wysuszona krew."
 
 #: conversationlist_brimhaven.json:juttarka_thank
+#, fuzzy
 msgid "Thank you for saving my life. Please come back and visit me sometime in the future when you are older."
 msgstr ""
+"Dziękuję za uratowanie mi życia. Proszę wróć i odwiedź mnie kiedyś w "
+"przyszłości gdy będziesz starszy."
 
 #: conversationlist_brimhaven.json:juttarka_thank:0
+#, fuzzy
 msgid "No problem, the pleasure was mine. Maybe sometime soon I could introduce you to my older brother Andor."
 msgstr ""
+"Nie ma problemu, cała przyjemność po mojej stronie. Może za jakiś czas "
+"przedstawię mojego starszego brata Andora."
 
 #: conversationlist_brimhaven.json:anakis_at_home_morning
+#, fuzzy
 msgid "Thank you for trying to help my sister. I am so sad."
-msgstr ""
+msgstr "Dziękuję za próbę uratowania mojej siostry. Jestem taki smutny."
 
 #: conversationlist_brimhaven.json:anakis_at_home_thanks
+#, fuzzy
 msgid "Thank you so much for helping my sister Juttarka. We are all very happy."
 msgstr ""
+"Dziękuję Ci bardzo za pomoc mojej siostrze Juttarce. Wszyscy jesteśmy teraz "
+"bardzo szczęśliwi."
 
 #: conversationlist_brimhaven.json:anakis_at_home_angry
+#, fuzzy
 msgid "Go away. I don't want to talk to people like you."
-msgstr ""
+msgstr "Idź sobie. Nie chcę rozmawiać z ludźmi takimi jak Ty."
 
 #: conversationlist_brimhaven.json:fallhaven_potions_offer_crystal_vial
+#, fuzzy
 msgid "Yes, I have some crystal vials. I can sell you one for 50 gold pieces."
 msgstr ""
+"Tak, mam kilka kryształowych fiolek. Sprzedam Ci jedną za 50 sztuk złota."
 
 #: conversationlist_brimhaven.json:fallhaven_potions_offer_crystal_vial:0
 #: conversationlist_brimhaven.json:brv_fortune_50:1
+#, fuzzy
 msgid "That is too expensive for me."
-msgstr ""
+msgstr "To zbyt drogie dla mnie."
 
 #: conversationlist_brimhaven.json:fallhaven_potions_offer_crystal_vial:1
+#, fuzzy
 msgid "I'll take one."
-msgstr ""
+msgstr "Wezmę jeden."
 
 #: conversationlist_brimhaven.json:fallhaven_potions_buy_crystal_vial
+#, fuzzy
 msgid "Here is your crystal vial. Thanks for the 50 gold pieces."
-msgstr ""
+msgstr "Oto twoja kryształowa fiolka. Dziękuję za 50 sztuk złota."
 
 #: conversationlist_brimhaven.json:fangwurm_info_about_blood
+#, fuzzy
 msgid ""
 "The Basilisk's blood has special properties. It can protect against damage if applied to the skin. Fresh, warm, Basilisks blood might even heal a person that has been turned to stone.\n"
 "But how can you kill a Basilisk if you can't even look at it? It has a very strong defense."
 msgstr ""
+"Krew bazyliszka ma specjalne właściwości. Zaaplikowana na skórę chroni przed "
+"uszkodzeniami. Świeża, ciepła krew bazyliszka może nawet uleczyć osobę "
+"zmienioną w kamień.\n"
+"Ale jak chcesz zabić bazyliszka, skoro nie możesz nawet na niego spojrzeć? "
+"On ma bardzo silną obronę."
 
 #: conversationlist_brimhaven.json:fangwurm_info_about_blood:0
+#, fuzzy
 msgid "I already killed the Basilisk."
-msgstr ""
+msgstr "Już zabiłem bazyliszka."
 
 #: conversationlist_brimhaven.json:fangwurm_info_about_blood:1
+#, fuzzy
 msgid "You are right, it will not be possible to kill the Basilisk."
-msgstr ""
+msgstr "Masz rację, nie będzie można zabić bazyliszka."
 
 #: conversationlist_brimhaven.json:fangwurm_info_about_blood:2
+#, fuzzy
 msgid "I will find a way to kill the Basilisk."
-msgstr ""
+msgstr "Znajdę sposób by zabić bazyliszka."
 
 #: conversationlist_brimhaven.json:anakis_talk_to_priest
+#, fuzzy
 msgid "I have no idea how to help her. But maybe Fangwurm the priest in western Brimhaven has some information."
 msgstr ""
+"Nie mam pojęcia jak jej pomóc. Ale może Fangwurm kapłan w zachodnim "
+"Brimhaven ma jakieś informacje."
 
 #: conversationlist_brimhaven.json:fangwurm_thank_rescuing_sister
+#, fuzzy
 msgid "Juttarka told me that you saved her life. Thank you. May the Shadow always be with you."
 msgstr ""
+"Juttarka powiedziała mi, że ocaliłeś jej życie. Dziękuję. Niech Cień zawsze "
+"będzie z Tobą."
 
 #: conversationlist_brimhaven.json:fangwurm_angry
+#, fuzzy
 msgid "I am sad that you took the blood for yourself instead of trying to help Anakis' sister. Please leave now."
 msgstr ""
+"Przykro mi, że wziąłeś krew dla siebie zamiast spróbować pomóc siostrze "
+"Anakisa. Proszę wyjdź teraz."
 
 #: conversationlist_brimhaven.json:fangwurm_thank_killing_basilisk
+#, fuzzy
 msgid "Thank you for killing the Basilisk, but it would be better if you had talked to me before killing it, because its magical blood is now dried up and wasted. May the Shadow always be with you."
 msgstr ""
+"Dziękuję za zabicie bazyliszka, ale byłoby lepiej gdybyś wcześniej "
+"porozmawiał ze mną zanim go zabiłeś, ponieważ teraz jego magiczna krew jest "
+"zaschnięta i zmarnowana. Niech Cień zawsze będzie z Tobą."
 
 #: conversationlist_brimhaven.json:fangwurm_talking
+#, fuzzy
 msgid "May the Shadow be with you."
-msgstr ""
+msgstr "Niech Cień będzie z Tobą."
 
 #: conversationlist_brimhaven.json:fangwurm_talking:0
+#, fuzzy
 msgid "I killed the Basilisk and took the blood for myself."
-msgstr ""
+msgstr "Zabiłem bazyliszka i zabrałem krew dla siebie."
 
 #: conversationlist_brimhaven.json:fangwurm_talking:1
+#, fuzzy
 msgid "I killed the Basilisk in the cave."
-msgstr ""
+msgstr "Zabiłem bazyliszka w jaskini."
 
 #: conversationlist_brimhaven.json:fangwurm_talking:2
+#, fuzzy
 msgid "Can you please tell me again, what you know about the Basilisk's blood? "
-msgstr ""
+msgstr "Możesz mi jeszcze raz powiedzieć co wiesz na temat krwi bazyliszka? "
 
 #: conversationlist_brimhaven.json:fangwurm_talking:3
+#, fuzzy
 msgid "I believe that Anakis' sister was turned to stone by the Basilisk in the cave. Do you have any idea if I could help her?"
 msgstr ""
+"Wierzę, że siostra Anakisa została zmieniona w kamień przez bazyliszka w "
+"jaskini. Czy masz pomysł jak mógłbym jej pomóc?"
 
 #: conversationlist_brimhaven.json:fangwurm_talking:4
+#, fuzzy
 msgid "Anakis' sister is missing. Can you tell me more about the Basilisk in the cave?"
 msgstr ""
+"Siostra Anakisa zaginęła. Czy możesz mi coś więcej powiedzieć na temat "
+"bazyliszka w jaskini?"
 
 #: conversationlist_brimhaven.json:fangwurm_talking:5
 #: conversationlist_brimhaven.json:brv_woodcraftsman_0:2
 #: conversationlist_brimhaven.json:brv_laundry_boss_0:3
 #: conversationlist_brimhaven_blackjack.json:brv_tavern_west_waitress_10:2
+#, fuzzy
 msgid "I am looking for my brother, Andor. He looks a bit like me."
-msgstr ""
+msgstr "Szukam mojego brata Andora. Jest trochę podobny do mnie."
 
 #: conversationlist_brimhaven.json:fangwurm_info_vial
+#, fuzzy
 msgid ""
 "You would need a special crystal vial that is resistant to the Basilisk's blood to handle it. The potion maker in Fallhaven might sell them. \n"
 "May the Shadow be with you."
 msgstr ""
+"Potrzebowałbyś specjalnej kryształowej fiolki odpornej na krew bazyliszka, "
+"aby sobie z nią poradzić. Twórca eliksirów w Fallhaven może je sprzedawać. \n"
+"Niech Cień będzie z Tobą."
 
 #: conversationlist_brimhaven.json:fangwurm_info_basilisk
+#, fuzzy
 msgid "The Basilisk will turn you to stone when you go near him and your eyes meet its eyes. You should not look at it. Come back to me if you know what happened to Anakis' sister."
 msgstr ""
+"Bazyliszek zamieni Cię w kamień, gdy będziesz w jego pobliżu i Twoje oczy "
+"spotkają się z jego oczami. Nie powinienieś na niego patrzeć. Wróć do mnie "
+"jeśli się dowiesz co się stało ze siostrą Anakisa."
 
 #: conversationlist_brimhaven.json:fangwurm_angry_2
+#, fuzzy
 msgid "Anakis told me that you took the blood for yourself instead of trying to help his sister. Please leave now."
 msgstr ""
+"Anakis powiedział mi, że wziąłeś krew dla siebie zamiast spróbować pomóc "
+"jego siostrze. Proszę wyjdź teraz."
 
 #: conversationlist_brimhaven.json:fangwurm_thank_killing_basilisk_2
+#, fuzzy
 msgid "Anakis told me that you killed the Basilisk. Thank you, but it would be better if you had talked to me before killing it, because its magical blood is now dried up and wasted. May the Shadow always be with you."
 msgstr ""
+"Anakis powiedział mi, że zabiłeś bazyliszka. Dziękuję Ci, ale byłoby lepiej "
+"gdybyś najpierw porozmawiał ze mną zanim go zabiłeś, ponieważ jego magiczna "
+"krew jest teraz zaschnięta i zmarnowana. Niech Cień zawsze będzie z Tobą."
 
 #: conversationlist_brimhaven.json:basiliskcave2_warn
+#, fuzzy
 msgid "You see an old Basilisk at the end of the room that glances at you. With a feeling of deadly danger your movements get slower the nearer you go."
 msgstr ""
+"Na końcu pokoju widzisz starego bazyliszka, który spogląda na Ciebie. W "
+"poczuciu śmiertelnego zagrożenia Twoje ruchy stają się coraz wolniejsze, im "
+"bardziej się zbliżasz."
 
 #: conversationlist_brimhaven.json:brimhaven_church_guard
+#, fuzzy
 msgid "Stop! You are not allowed to go any further."
-msgstr ""
+msgstr "Stój! Nie masz pozwolenia, aby iść dalej."
 
 #: conversationlist_brimhaven.json:brimhaven_church_guard:0
+#, fuzzy
 msgid "I'm on a mission."
-msgstr ""
+msgstr "Mam misję."
 
 #: conversationlist_brimhaven.json:brimhaven_church_guard:2
+#, fuzzy
 msgid "OK. I'll leave [lie]."
-msgstr ""
+msgstr "Ok. Odejdę [kłamstwo]."
 
 #: conversationlist_brimhaven.json:arlish_0
+#, fuzzy
 msgid "Hello. I'm Arlish, the proprietor. This is a general store, so I sell some of this, some of that, and a little bit of the other. Would you like to see what I have?"
 msgstr ""
+"Cześć. Jestem Arlish, właściciel. To sklep ogólnospożywczy, sprzedaję więc "
+"trochę tego, trochę tamtego i trochę jeszcze innego. Chciałbyś zobaczyć co "
+"mam na stanie?"
 
 #: conversationlist_brimhaven.json:arlish_0:0
+#, fuzzy
 msgid "Yes, please show me."
-msgstr ""
+msgstr "Tak, pokaż mi proszę."
 
 #: conversationlist_brimhaven.json:arlish_0:2
 #: conversationlist_brimhaven.json:arlish_0:3
+#, fuzzy
 msgid "The teacher said that you would give me a cake."
-msgstr ""
+msgstr "Nauczyciel powiedział, że dałbyś mi ciasto."
 
 #: conversationlist_brimhaven.json:arlish_0:4
+#, fuzzy
 msgid "What can you tell me about Lawellyn's dagger?"
-msgstr ""
+msgstr "Co możesz mi powiedzieć o sztylecie Lawellyna?"
 
 #: conversationlist_brimhaven.json:arlish_0:5
+#, fuzzy
 msgid "I want to talk about the investigation."
-msgstr ""
+msgstr "Chcę porozmawiać na temat śledztwa."
 
 #: conversationlist_brimhaven.json:arlish_0:6
+#, fuzzy
 msgid "I need to find a large empty bottle. Do you have one?"
-msgstr ""
+msgstr "Muszę znaleźć dużą pustą butelkę. Czy masz taką?"
 
 #: conversationlist_brimhaven.json:arlish_10
+#, fuzzy
 msgid "Sure. You must have done something very good. Wait a second..."
-msgstr ""
+msgstr "Pewnie. Musiałeś zrobić coś bardzo dobrego. Czekaj chwilę..."
 
 #: conversationlist_brimhaven.json:arlish_12
+#, fuzzy
 msgid "Shall I cut it for you?"
-msgstr ""
+msgstr "Powinienem Ci je pociąć?"
 
 #: conversationlist_brimhaven.json:arlish_12:0
+#, fuzzy
 msgid "Yes, please."
-msgstr ""
+msgstr "Tak, proszę."
 
 #: conversationlist_brimhaven.json:arlish_12:1
+#, fuzzy
 msgid "No, thank you. I prefer the cake as a whole."
-msgstr ""
+msgstr "Nie, dziękuję. Wole ciasto jako całość."
 
 #: conversationlist_brimhaven.json:arlish_14
+#, fuzzy
 msgid "I'm afraid you'll get a stomachache if you eat the whole cake at once. But well - here you have it."
 msgstr ""
+"Obawiam się, że dostaniesz bólu brzucha jeśli zjesz całe ciasto naraz. W "
+"porządku - proszę bardzo."
 
 #: conversationlist_brimhaven.json:arlish_16
+#, fuzzy
 msgid "Well, I'm cutting the cake into 8 large pieces. I hope they taste good to you!"
 msgstr ""
+"Dobrze, tnę ciasto na 8 dużych kawałków. Mam nadzieję, że dobrze Ci smakują!"
 
 #: conversationlist_brimhaven.json:arlish_20
+#, fuzzy
 msgid "Yes, but only one."
-msgstr ""
+msgstr "Tak, ale tylko jeden."
 
 #: conversationlist_brimhaven.json:arlish_20:0
+#, fuzzy
 msgid "One could try..."
-msgstr ""
+msgstr "Można by spróbować..."
 
 #: conversationlist_brimhaven.json:truric_0
+#, fuzzy
 msgid "Hello. I am Truric. Welcome to my store."
-msgstr ""
+msgstr "Cześć. Nazywam się Truric. Witam w moim sklepie."
 
 #: conversationlist_brimhaven.json:truric_0:0
+#, fuzzy
 msgid "Thanks, but I need to go. This isn't what I was looking for."
-msgstr ""
+msgstr "Dzięki, ale muszę iść. To nie jest to czego szukałem."
 
 #: conversationlist_brimhaven.json:truric_0:1
+#, fuzzy
 msgid "What do you sell?"
-msgstr ""
+msgstr "Co sprzedajesz?"
 
 #: conversationlist_brimhaven.json:truric_0:2
+#, fuzzy
 msgid "I am looking for my brother, Andor. He looks a bit like me. Have you seen anyone like that recently?"
 msgstr ""
+"Szukam mojego brata, Andora. Trochę mnie przypomina. Widziałeś ostatnio "
+"kogoś takiego?"
 
 #: conversationlist_brimhaven.json:blackjack_gambler1
+#, fuzzy
 msgid "What a bad day. I was losing all the time."
-msgstr ""
+msgstr "Co za kiepski dzień. Cały czas przegrywałem."
 
 #: conversationlist_brimhaven.json:blackjack_gambler2
+#, fuzzy
 msgid "I already made a fortune. Want to join us? Then take a seat in the empty chair and talk to the dealer."
 msgstr ""
+"Już zbiłem majątek. Chcesz do nas dołączyć? W takim razie usiądź na pustym "
+"krześle i porozmawiaj z krupierem."
 
 #: conversationlist_brimhaven.json:blackjack_gambler2:0
+#, fuzzy
 msgid "Excuse me sir, but you look like someone that may be able to help me."
-msgstr ""
+msgstr "Przepraszam pana, ale wygląda pan na kogoś, kto może mi pomóc."
 
 #: conversationlist_brimhaven.json:blackjack_dealer_40_2
+#, fuzzy
 msgid "Let us start the tavern brawl!"
-msgstr ""
+msgstr "Rozpocznijmy bójkę w tawernie!"
 
 #: conversationlist_brimhaven.json:brv_tavern_west_guard_10
+#, fuzzy
 msgid ""
 "[You hear noises from the back room...]\n"
 "Stop! Tell me the password, if you want to enter."
 msgstr ""
+"[Słyszysz głosy z tyłu pomieszczenia...]\n"
+"Zatrzymaj się! Podaj hasło, jeśli chcesz wejść."
 
 #: conversationlist_brimhaven.json:brv_tavern_west_guard_10:0
+#, fuzzy
 msgid "I don't know the password."
-msgstr ""
+msgstr "Nie znam hasła."
 
 #: conversationlist_brimhaven.json:brv_tavern_west_guard_10:1
+#, fuzzy
 msgid "[Tell him the password]"
-msgstr ""
+msgstr "[Podaj hasło]"
 
 #: conversationlist_brimhaven.json:brv_tavern_west_guard_20
+#, fuzzy
 msgid "I wish you good luck. [Laughs]"
-msgstr ""
+msgstr "Życzę powodzenia. [Śmieje się]"
 
 #: conversationlist_brimhaven.json:brv_tavern_west_guard_100
+#, fuzzy
 msgid "You are not welcome anymore."
-msgstr ""
+msgstr "Nie jesteś już mile widziany."
 
 #: conversationlist_brimhaven.json:brv_tavern_west_guard_90
+#, fuzzy
 msgid ""
 "I heard you fighting in there. Lucky for you that no one got killed. \n"
 "You are not welcome anymore."
 msgstr ""
+"Słyszałem, że walczyłeś tutaj. Całe szczęście nikt nie zginął.\n"
+"Nie jesteś tu już mile widziany."
 
 #: conversationlist_brimhaven.json:blackjack_dealer_20
+#, fuzzy
 msgid "Take a seat on the empty chair if you want to play a round."
-msgstr ""
+msgstr "Usiądź na pustym krześle, jeśli chcesz zagrać partyjkę."
 
 #: conversationlist_brimhaven.json:blackjack_dealer_30
+#, fuzzy
 msgid "Do you want to play a round?"
-msgstr ""
+msgstr "Chcesz zagrać partyjkę?"
 
 #: conversationlist_brimhaven.json:blackjack_dealer_40
+#, fuzzy
 msgid "Do you want to play another round?"
-msgstr ""
+msgstr "Czy chcesz jeszcze zagrać partyjkę?"
 
 #: conversationlist_brimhaven.json:blackjack_dealer_40:0
+#, fuzzy
 msgid "Let's go on."
-msgstr ""
+msgstr "Kontynuujmy."
 
 #: conversationlist_brimhaven.json:blackjack_dealer_40:1
+#, fuzzy
 msgid "I have had enough."
-msgstr ""
+msgstr "Mam dość."
 
 #: conversationlist_brimhaven.json:blackjack_dealer_40:2
+#, fuzzy
 msgid "You are cheating. Give me my money back."
-msgstr ""
+msgstr "Oszukujesz. Zwróć mi pieniądze."
 
 #: conversationlist_brimhaven.json:blackjack_dealer_40_1
+#, fuzzy
 msgid "Who do you think you are, calling me a cheater? Shut up or I will shut your mouth with my fist."
 msgstr ""
+"Za kogo Ty się uważasz by nazywać mnie oszustem? Zamknij się albo zamknę Ci "
+"usta pięścią."
 
 #: conversationlist_brimhaven.json:blackjack_dealer_40_1:0
+#, fuzzy
 msgid "OK, I am sorry."
-msgstr ""
+msgstr "OK, przepraszam."
 
 #: conversationlist_brimhaven.json:blackjack_dealer_40_1:1
+#, fuzzy
 msgid "Let's fight it out. [Killing him in town is a bad idea. I will try to only knock him out.]"
 msgstr ""
+"Walczmy o to. [Zabicie go w mieście to zły pomysł. Spróbuję go tylko "
+"ogłuszyć.]"
 
 #: conversationlist_brimhaven.json:brv_tavern_west_guest
+#, fuzzy
 msgid "Go away and let me eat."
-msgstr ""
+msgstr "Idź stąd i pozwól mi jeść."
 
 #: conversationlist_brimhaven.json:brv_tavern_west_guest:0
 #: conversationlist_brimhaven.json:brv_farmer_girl_1:2
 #: conversationlist_brimhaven.json:brv_villager1:0
 #: conversationlist_brimhaven2.json:guard_advent_2:2
 #: conversationlist_brimhaven_2.json:blackjack_gambler2_asd_20:0
+#, fuzzy
 msgid "I'm wondering, do you know anything about Lawellyn's death?"
-msgstr ""
+msgstr "Zastanawiam się czy wiesz coś na temat śmierci Lawellyn?"
 
 #: conversationlist_brimhaven.json:brv_laundry_worker_0
+#, fuzzy
 msgid "Hello, how can I help you?"
-msgstr ""
+msgstr "Cześć, w czym mogę służyć?"
 
 #: conversationlist_brimhaven.json:brv_laundry_worker_0:0
+#, fuzzy
 msgid "What are you working on?"
-msgstr ""
+msgstr "Nad czym pracujesz?"
 
 #: conversationlist_brimhaven.json:brv_laundry_worker_0:1
 #: conversationlist_brimhaven.json:brv_laundry_worker_2:0
 #: conversationlist_brimhaven.json:brv_laundry_boss_0:0
+#, fuzzy
 msgid "Can you sell me something?"
-msgstr ""
+msgstr "Czy możesz mi coś sprzedać?"
 
 #: conversationlist_brimhaven.json:brv_laundry_worker_2
+#, fuzzy
 msgid "Currently I am coloring some cloth, but we do everything related to cloth, like repairing, custom tailoring, or enhancing. We also do some work with leather."
 msgstr ""
+"W tej chwili farbuję jakiś materiał, ale zajmujemy się wszystkim co się "
+"tyczy materiałów, jak na przykład naprawa, szycie na miarę albo ulepszanie. "
+"Wykonujemy też prace związane ze skórą."
 
 #: conversationlist_brimhaven.json:brv_laundry_worker_1
+#, fuzzy
 msgid "I only work here. Please go to my boss over there, she runs the business."
-msgstr ""
+msgstr "Tylko tu pracuję. Proszę idź do mojej szefowej tam, ona prowadzi firmę."
 
 #: conversationlist_brimhaven.json:brv_woodcutter_0
+#, fuzzy
 msgid "[Cutting wood]"
-msgstr ""
+msgstr "[Cięcie drewna]"
 
 #: conversationlist_brimhaven.json:brv_woodcutter_0:0
 #: conversationlist_brimhaven.json:brv_farmer_girl_0:0
 #: conversationlist_brimhaven.json:brv_villager1
+#, fuzzy
 msgid "Hello"
-msgstr ""
+msgstr "Cześć"
 
 #: conversationlist_brimhaven.json:brv_woodcutter_1
+#, fuzzy
 msgid ""
 "[Stops cutting wood] \n"
 "\n"
@@ -35393,132 +35938,182 @@ msgid ""
 "\n"
 "[Continues cutting wood]"
 msgstr ""
+"[Przestaje ciąć drewno]\n"
+"\n"
+"Jeśli chcesz kupić trochę narzędzi do cięcia drewna albo drewnianych wyrobów "
+"to wejdź do środka.\n"
+"\n"
+"[Dalej tnie drewno]"
 
 #: conversationlist_brimhaven.json:brv_woodcutter_1:0
+#, fuzzy
 msgid "Bye"
-msgstr ""
+msgstr "Cześć"
 
 #: conversationlist_brimhaven.json:brv_woodcraftsman_0
+#, fuzzy
 msgid "Hello, we sell the finest wood products and tools. Do you want to buy some?"
 msgstr ""
+"Hej, sprzedajemy najlepsze drewniane wyroby oraz narzędzia. Czy chcesz kupić "
+"jakieś?"
 
 #: conversationlist_brimhaven.json:brv_woodcraftsman_0:1
+#, fuzzy
 msgid "No, I just want to look around."
-msgstr ""
+msgstr "Nie, chcę się tylko rozejrzeć."
 
 #: conversationlist_brimhaven.json:brv_old_farmer_0
+#, fuzzy
 msgid "What are you doing in my house?"
-msgstr ""
+msgstr "Co robisz w moim domu?"
 
 #: conversationlist_brimhaven.json:brv_old_farmer_0:0
+#, fuzzy
 msgid "Nothing, sorry I will leave."
-msgstr ""
+msgstr "Nic, przepraszam, ale pójdę już."
 
 #: conversationlist_brimhaven.json:brv_old_farmer_0:1
+#, fuzzy
 msgid "I am just looking around."
-msgstr ""
+msgstr "Tylko się rozglądam."
 
 #: conversationlist_brimhaven.json:brv_old_farmer_0:2
 #: conversationlist_brimhaven.json:brv_old_farmer_1:0
+#, fuzzy
 msgid "Can I buy some of your food?"
-msgstr ""
+msgstr "Czy mogę kupić trochę Twojego jedzenia?"
 
 #: conversationlist_brimhaven.json:brv_old_farmer_1
+#, fuzzy
 msgid "Please leave my house."
-msgstr ""
+msgstr "Wyjdź z mojego domu."
 
 #: conversationlist_brimhaven.json:brv_old_farmer_2
+#, fuzzy
 msgid "Normally we sell to the market. But OK, let's trade."
-msgstr ""
+msgstr "Normalnie sprzedajemy na targu. Ale OK, handlujmy."
 
 #: conversationlist_brimhaven.json:brv_old_farmer_2:0
+#, fuzzy
 msgid "Thanks"
-msgstr ""
+msgstr "Dziękuję"
 
 #: conversationlist_brimhaven.json:brv_farmer
+#, fuzzy
 msgid "It is really warm today. Please let me finish my work before it gets too hot."
 msgstr ""
+"Dziś jest naprawdę ciepło. Proszę pozwól mi skończyć moją pracę zanim będzie "
+"zbyt gorąco."
 
 #: conversationlist_brimhaven.json:brv_farmer_girl_0
+#, fuzzy
 msgid "[Working and singing]"
-msgstr ""
+msgstr "[Pracuje i śpiewa]"
 
 #: conversationlist_brimhaven.json:brv_farmer_girl_1
+#, fuzzy
 msgid ""
 "What a wonderful warm day.\n"
 "\n"
 "[Continues working and singing]"
 msgstr ""
+"Co za cudowny ciepły dzień.\n"
+"\n"
+"[Dalej pracuje i śpiewa]"
 
 #: conversationlist_brimhaven.json:brv_farmer_girl_1:0
+#, fuzzy
 msgid "[Join her singing]"
-msgstr ""
+msgstr "[Dołącz do jej śpiewu]"
 
 #: conversationlist_brimhaven.json:brv_farmer_girl_1:1
+#, fuzzy
 msgid "I have to go."
-msgstr ""
+msgstr "Muszę już iść."
 
 #: conversationlist_brimhaven.json:brv_farmer_girl_2
+#, fuzzy
 msgid ""
 "You are a funny person.\n"
 "\n"
 "[Laughs and continues working and singing]"
 msgstr ""
+"Jesteś zabawny.\n"
+"\n"
+"[Śmieje się nadal pracując i śpiewając]"
 
 #: conversationlist_brimhaven.json:brv_laundry_boss_0
+#, fuzzy
 msgid "Hello, what can I do for you?"
-msgstr ""
+msgstr "Cześć, co mogę dla Ciebie zrobić?"
 
 #: conversationlist_brimhaven.json:brv_laundry_boss_0:1
 #: conversationlist_brimhaven.json:brv_laundry_boss_1:0
+#, fuzzy
 msgid "I want to buy the dresses."
-msgstr ""
+msgstr "Chcę kupić suknie."
 
 #: conversationlist_brimhaven.json:brv_laundry_boss_0:2
 #: conversationlist_brimhaven.json:brv_laundry_boss_2:0
+#, fuzzy
 msgid "I want you to improve some of my clothes."
-msgstr ""
+msgstr "Chcę ulepszyć niektóre z moich ubrań."
 
 #: conversationlist_brimhaven.json:brv_laundry_boss_0:4
+#, fuzzy
 msgid "Have you ever seen a glove like this? [Shows Venanra the glove.]"
-msgstr ""
+msgstr "Czy widziałaś taką rękawiczkę jak ta? [Pokaż Venanrze rękawiczkę.]"
 
 #: conversationlist_brimhaven.json:brv_laundry_boss_1
+#, fuzzy
 msgid "We are working on some nice green dresses. We can also repair and improve your clothes."
 msgstr ""
+"Pracujemy nad paroma ładnymi zielonymi sukniami. Możemy też naprawić bądź "
+"ulepszyć Twoje ubrania."
 
 #: conversationlist_brimhaven.json:brv_laundry_boss_1:1
+#, fuzzy
 msgid "What clothes can be improved and how much does it cost?"
-msgstr ""
+msgstr "Jakie ubrania mogą być ulepszone i ile to kosztuje?"
 
 #: conversationlist_brimhaven.json:brv_laundry_boss_4
+#, fuzzy
 msgid "Improving a fine green hat costs 1,397 gold, fine snakeskin gloves costs 640 gold, and improving superior leather boots costs 432 gold."
 msgstr ""
+"Ulepszenie dobrego zielonego kapelusza kosztuje 1,397 sztuk złota, dobrych "
+"rękawiczek z wężowej skóry kosztuje 640 sztuki złota, a ulepszenie "
+"najlepszych skórzanych butów kosztuje 432 sztuki złota."
 
 #: conversationlist_brimhaven.json:brv_laundry_boss_4:0
+#, fuzzy
 msgid "I don't have any of this equipment. Can you sell me something else?"
-msgstr ""
+msgstr "Nie mam żadnej z tych rzeczy. Czy możesz mi sprzedać coś innego?"
 
 #: conversationlist_brimhaven.json:brv_laundry_boss_4:1
 #: conversationlist_brimhaven.json:brv_laundry_boss_4:2
+#, fuzzy
 msgid "Please improve my fine green hat."
-msgstr ""
+msgstr "Proszę ulepsz mój dobry zielony kapelusz."
 
 #: conversationlist_brimhaven.json:brv_laundry_boss_4:3
 #: conversationlist_brimhaven.json:brv_laundry_boss_4:4
+#, fuzzy
 msgid "Please improve my fine snakeskin gloves."
-msgstr ""
+msgstr "Proszę ulepsz moje dobre rękawiczki z wężowej skóry."
 
 #: conversationlist_brimhaven.json:brv_laundry_boss_4:5
 #: conversationlist_brimhaven.json:brv_laundry_boss_4:6
+#, fuzzy
 msgid "Please improve my superior leather boots."
-msgstr ""
+msgstr "Proszę ulepsz moje najlepsze skórzane buty."
 
 #: conversationlist_brimhaven.json:brv_laundry_boss_4:7
+#, fuzzy
 msgid "Can you sell me something else?"
-msgstr ""
+msgstr "Czy możesz mi sprzedać coś innego?"
 
 #: conversationlist_brimhaven.json:brv_laundry_boss_5
+#, fuzzy
 msgid ""
 "I will immediatelly give it to my worker. Please wait until he is finished. \n"
 "\n"
@@ -35526,16 +36121,24 @@ msgid ""
 "\n"
 "Here is your enhanced hat."
 msgstr ""
+"Zaraz przekaże to mojemu pracownikowi. Proszę czekać aż skończy.\n"
+"\n"
+"[Czekasz trochę czasu.]\n"
+"\n"
+"Oto Twój ulepszony kapelusz."
 
 #: conversationlist_brimhaven.json:brv_laundry_boss_2
+#, fuzzy
 msgid "What else can I do for you?"
-msgstr ""
+msgstr "Co mogę jeszcze dla Ciebie zrobić?"
 
 #: conversationlist_brimhaven.json:brv_laundry_boss_2:1
+#, fuzzy
 msgid "Can you sell something to me?"
-msgstr ""
+msgstr "Czy możesz mi coś sprzedać?"
 
 #: conversationlist_brimhaven.json:brv_laundry_boss_6
+#, fuzzy
 msgid ""
 "I will immediatelly give it to my worker. Please wait until he is finished. \n"
 "\n"
@@ -35543,8 +36146,14 @@ msgid ""
 "\n"
 "Here are your enhanced gloves."
 msgstr ""
+"Natychmiast dam to mojemu pracownikowi. Proszę czekać aż skończy.\n"
+"\n"
+"[Czekasz trochę czasu.]\n"
+"\n"
+"Oto Twoje ulepszone rękawiczki."
 
 #: conversationlist_brimhaven.json:brv_laundry_boss_7
+#, fuzzy
 msgid ""
 "I will immediatelly give it to my worker. Please wait until he is finished. \n"
 "\n"
@@ -35552,73 +36161,111 @@ msgid ""
 "\n"
 "Here are your enhanced boots."
 msgstr ""
+"Natychmiast dam je mojemu pracownikowi. Proszę czekać aż skończy.\n"
+"\n"
+"[Czekasz trochę czasu.]\n"
+"\n"
+"Oto Twoje ulepszone buty."
 
 #: conversationlist_brimhaven.json:thelry_0
+#, fuzzy
 msgid "Hi kid. I'm Thelry, the local armorer. You are too young to need armor though. If you need armor, then you are doing something which could get you hurt. Kids should stay at home, where it's safe."
 msgstr ""
+"Cześć dzieciaku. Jestem Thelry, lokalny zbrojmistrz. Jesteś zbyt młody by "
+"potrzebować zbroi. Jeśli potrzebujesz zbroi, to w takim razie robisz coś co "
+"może Cię zranić. Dzieciaki powinny pozostać w domu, gdzie jest bezpiecznie."
 
 #: conversationlist_brimhaven.json:thelry_0:0
+#, fuzzy
 msgid "I can handle myself. I'm from Crossglen, and I made it here OK. Please show me your wares."
 msgstr ""
+"Poradzę sobie. Jestem z Crossglen i dotarłem w całości aż tutaj. Proszę "
+"pokaż mi swoje towary."
 
 #: conversationlist_brimhaven.json:thelry_0:1
+#, fuzzy
 msgid "My father sent me out to look for by brother, Andor. He looks a bit like me. Have you seen him?"
 msgstr ""
+"Mój ojciec wysłał mnie na poszukiwanie brata Andora. Trochę mnie przypomina. "
+"Widziałeś go?"
 
 #: conversationlist_brimhaven.json:thelry_0:2
+#, fuzzy
 msgid "If that's what you think then I won't buy anything from you."
-msgstr ""
+msgstr "Jeśli tak myślisz, to nic od Ciebie nie kupię."
 
 #: conversationlist_brimhaven.json:brv_brother1_watchdog
+#, fuzzy
 msgid "Grrr.... Woof."
-msgstr ""
+msgstr "Grrr.... Hau."
 
 #: conversationlist_brimhaven.json:brv_brother2_door1:0
+#, fuzzy
 msgid "I try to use the key that I found in the house nearby to open the door."
-msgstr ""
+msgstr "Spróbuję użyć klucza znalezionego w pobliskim domu, aby otworzyć drzwi."
 
 #: conversationlist_brimhaven.json:brv_brother2_door2
+#, fuzzy
 msgid "The key opens the door."
-msgstr ""
+msgstr "Klucz otwiera drzwi."
 
 #: conversationlist_brimhaven.json:brv_brothers_0
+#, fuzzy
 msgid ""
 "\n"
 "[You eavesdrop on the middle of the conversation. ]\n"
 "\n"
 "... have to make sure no one finds out what we are going to do."
 msgstr ""
+"\n"
+"[Podsłuchujesz w środku rozmowy. ]\n"
+"\n"
+"...musisz być pewien, że nikt nie dowie się co mamy zamiar zrobić."
 
 #: conversationlist_brimhaven.json:brv_brothers_1
+#, fuzzy
 msgid "Some people will be really sad, but we will be rich, my brother!"
-msgstr ""
+msgstr "Niektórzy będą naprawdę zasmuceni, ale się wzbogacimy, bracie!"
 
 #: conversationlist_brimhaven.json:brv_brothers_2
 msgid "A UH HUH HUH"
 msgstr ""
 
 #: conversationlist_brimhaven.json:brv_brothers_3
+#, fuzzy
 msgid "HEH HEH. Yeah!"
-msgstr ""
+msgstr "HEH HEH. Taak!"
 
 #: conversationlist_brimhaven.json:brv_brothers_4
+#, fuzzy
 msgid ""
 "\n"
 "[This spiteful laughter fits those simple-minded looking guys. They continue talking more quietly and you can't understand them anymore.]"
 msgstr ""
+"\n"
+"[Ten złośliwy śmiech pasuje tym prostodusznie wyglądającym facetom. Dalej "
+"rozmawiają jeszcze ciszej, ale już nie możesz ich zrozumieć.]"
 
 #: conversationlist_brimhaven.json:brv_brothers_6
+#, fuzzy
 msgid ""
 "[It seems they still have not seen you, because they have their backs turned to you.] \n"
 "\n"
 "Your way of destroying the dam will not work. Better that we use my idea."
 msgstr ""
+"[Wygląda na to, że wciąż Cię nie widzą, ponieważ są odwróceni do Ciebie "
+"plecami.]\n"
+"\n"
+"Twój sposób na zniszczenie tamy nie zadziała. Lepiej, żebyśmy zrealizowali "
+"mój pomysł.]"
 
 #: conversationlist_brimhaven.json:brv_brothers_7
+#, fuzzy
 msgid "Your idea to destroy the great Brimhaven dam? Are you kidding?"
-msgstr ""
+msgstr "Twój pomysł na zniszczenie wielkiej tamy Brimhaven? Chyba żartujesz?"
 
 #: conversationlist_brimhaven.json:brv_brothers_8
+#, fuzzy
 msgid ""
 "[You accidently make a noise and they turn their heads towards you]\n"
 "\n"
@@ -35626,100 +36273,147 @@ msgid ""
 "\n"
 "No matter, we have to shut his mouth."
 msgstr ""
+"[Przypadkowo hałasujesz, a oni zwracają się w Twoją stronę]\n"
+"\n"
+"Hej, co Ty tutaj robisz?\n"
+"\n"
+"Nie ważne, musimy go uciszyć."
 
 #: conversationlist_brimhaven.json:brv_brothers_10
+#, fuzzy
 msgid "Would you assist us in destroying the dam?"
-msgstr ""
+msgstr "Czy mógłbyś pomóc nam w zniszczeniu tamy?"
 
 #: conversationlist_brimhaven.json:brv_brothers_10:0
+#, fuzzy
 msgid "OK, I would like to help you destroy the dam."
-msgstr ""
+msgstr "OK, chciałbym pomóc wam zniszczyć tamę."
 
 #: conversationlist_brimhaven.json:brv_brothers_10:1
+#, fuzzy
 msgid "No, I will never do that!"
-msgstr ""
+msgstr "Nie, nigdy tego nie zrobię!"
 
 #: conversationlist_brimhaven.json:brv_brothers_11
+#, fuzzy
 msgid "Then we have to shut you up and do it ourselves."
-msgstr ""
+msgstr "W takim razie będziemy musieli Cię uciszyć i zrobić to sami."
 
 #: conversationlist_brimhaven.json:brv_brothers_12
+#, fuzzy
 msgid "To not attract attention the best way to destroy the dam would be to take this small axe. Use it at the weak point of the dam in the dry river bed."
 msgstr ""
+"Aby nie zwracać na siebie uwagi najlepszym sposobem na zniszczenie tamy "
+"byłoby wzięcie tej małej siekiery. Użyj jej w słabym punkcie tamy w suchym "
+"korycie rzeki."
 
 #: conversationlist_brimhaven.json:brv_brother1_locked
+#, fuzzy
 msgid "The hatch seems to be blocked and does not open."
-msgstr ""
+msgstr "Właz wydaje się być zablokowany i nie otwiera się."
 
 #: conversationlist_brimhaven.json:brv_brothers_13
+#, fuzzy
 msgid "Go and destroy the dam."
-msgstr ""
+msgstr "Idź i zniszcz tamę."
 
 #: conversationlist_brimhaven.json:brv_brothers_9
+#, fuzzy
 msgid "Since he is already here, we could ask him if he will help us for saving his life."
 msgstr ""
+"Skoro już tu jest, moglibyśmy spytać go czy pomoże nam za uratowanie mu "
+"życia."
 
 #: conversationlist_brimhaven.json:brv_flood_0_5
+#, fuzzy
 msgid "This seems to be the weak spot of the dam the brothers were talking about."
-msgstr ""
+msgstr "To wygląda na ten słaby punkt tamy o którym mówili bracia."
 
 #: conversationlist_brimhaven.json:brv_flood_0_5:0
+#, fuzzy
 msgid "Start hacking on the wood."
-msgstr ""
+msgstr "Rozpocznij ścinanie drzewa."
 
 #: conversationlist_brimhaven.json:brv_exit_forbidden_10
+#, fuzzy
 msgid "Stop! All foreigners have to stay in town until we have investigated who destroyed the great dam."
 msgstr ""
+"Stać! Wszyscy przybysze muszą zostać w mieście dopóki nie zbadamy kto "
+"zniszczył tę wielką tamę."
 
 #: conversationlist_brimhaven.json:brv_exit_forbidden_10:0
+#, fuzzy
 msgid "Who gave this order?"
-msgstr ""
+msgstr "Kto wydał ten rozkaz?"
 
 #: conversationlist_brimhaven.json:brv_flood_20_10
+#, fuzzy
 msgid "Water comes pouring through a hole in the dam. A lot of water! If not the brothers, then someone else destroyed the dam."
 msgstr ""
+"Woda wydostaje się przez dziurę w tamie. Dużo wody! Jeśli to nie bracia, w "
+"takim razie ktoś inny zniszczył tamę."
 
 #: conversationlist_brimhaven.json:brv_exit_forbidden_20
+#, fuzzy
 msgid "Mustura, the captain of the guard, gave the order. Usually you can find her in front of the warehouse in the center of the town, north of the church."
 msgstr ""
+"Mustura, kapitan straży, wydała rozkaz. Zwykle może znaleźć ją przed "
+"magazynem, w centrum miasta, na północ od kościoła."
 
 #: conversationlist_brimhaven.json:brv_guard_captain_20
+#, fuzzy
 msgid "Do you know anything about the destruction of the dam?"
-msgstr ""
+msgstr "Czy wiesz coś na temat zniszczenia tamy?"
 
 #: conversationlist_brimhaven.json:brv_guard_captain_20:0
+#, fuzzy
 msgid "[Lie] I have no idea, but I will try to help you."
-msgstr ""
+msgstr "[Skłam] Nie mam pojęcia, ale spróbuję Ci pomóc."
 
 #: conversationlist_brimhaven.json:brv_guard_captain_20:1
 #: conversationlist_brimhaven.json:brv_guard_captain_25:1
+#, fuzzy
 msgid "[Lie] The two brothers living in the north part of the eastern town destroyed the dam."
 msgstr ""
+"[Skłam] Dwaj bracia mieszkający w północnej części wschodniego miasta "
+"zniszczyli tamę."
 
 #: conversationlist_brimhaven.json:brv_guard_captain_20:2
 #: conversationlist_brimhaven.json:brv_guard_captain_25:2
+#, fuzzy
 msgid "Alkapoan was behind it. Here are letters proving his guilt. He is waiting at his home for you to arrest him."
 msgstr ""
+"Alkapoan stał za tym. Oto listy wskazujące jego winę. Czeka na Ciebie w "
+"domu, abyś go aresztował."
 
 #: conversationlist_brimhaven.json:brv_guard_captain_40
+#, fuzzy
 msgid "Thank you. But be aware that you are not allowed to leave the town until we have found out how the dam was destroyed."
 msgstr ""
+"Dziękuję. Ale pamiętaj, że nie wolno Ci opuszczać miasta zanim nie dowiemy "
+"się jak zniszczono tamę."
 
 #: conversationlist_brimhaven.json:brv_guard_captain_30
+#, fuzzy
 msgid "We will check this and if it is true then you can leave the town."
-msgstr ""
+msgstr "Sprawdzimy to i jeśli to prawda możesz opuścić miasto."
 
 #: conversationlist_brimhaven.json:brv_brothers_14
+#, fuzzy
 msgid "It's great how you destroyed the dam!"
-msgstr ""
+msgstr "To wspaniale jak zniszczyłeś tamę!"
 
 #: conversationlist_brimhaven.json:brv_brothers_14:0
+#, fuzzy
 msgid "Can you tell me who is your boss?"
-msgstr ""
+msgstr "Czy możesz mi powiedzieć kto jest Twoim szefem?"
 
 #: conversationlist_brimhaven.json:brv_brothers_15
+#, fuzzy
 msgid "We don't know him by name. He looked very rich and I think he lives in the western town alone in a big house."
 msgstr ""
+"Nie znam jego imienia. Wyglądał na bardzo bogatego i myślę, że mieszka sam w "
+"dużym domu w zachodnim mieście."
 
 #: conversationlist_brimhaven.json:brv_richman_10
 msgid "I... I.... know nothing. Really, it is the truth!"
@@ -35727,19 +36421,27 @@ msgstr ""
 
 #: conversationlist_brimhaven.json:brv_richman_10:0
 #: conversationlist_brimhaven.json:brv_richman_15:0
+#, fuzzy
 msgid "I don't believe a word you say. [Half-lie] The two brothers told me that you paid them for destroying the dam."
 msgstr ""
+"Nie wierzę w ani jedno Twoje słowo. [Pół-kłamstwo] Dwóch braci powiedziało "
+"mi, że zapłaciłeś im za zniszczenie tamy."
 
 #: conversationlist_brimhaven.json:brv_richman_10:1
 #: conversationlist_brimhaven.json:brv_richman_15:1
+#, fuzzy
 msgid "Maybe you are right, sorry."
-msgstr ""
+msgstr "Może masz rację, przykro mi."
 
 #: conversationlist_brimhaven.json:brv_richman_10:2
+#, fuzzy
 msgid "I found your coin bags, and you paid the brothers to destroy the dam. [Show the coin bags]"
 msgstr ""
+"Znalazłem Twoje sakwy z monetami i to Ty zapłaciłeś braciom za zniszczenie "
+"tamy. [Pokaż sakwy]"
 
 #: conversationlist_brimhaven.json:brv_richman_20
+#, fuzzy
 msgid ""
 "[Breaks down]\n"
 "\n"
@@ -35747,896 +36449,1275 @@ msgid ""
 "\n"
 "[The handwriting looks like that of my brother.]"
 msgstr ""
+"[Łamie się]\n"
+"\n"
+"Ludzie z Loneford przekupili mnie, aby sabotować tamę. Oto kilka listów, "
+"które z nimi wymieniałem, by potwierdzić co zrobiłem.\n"
+"\n"
+"[Pismo wygląda jak mojego brata.]"
 
 #: conversationlist_brimhaven.json:brv_richman_20:0
+#, fuzzy
 msgid "You were honest to me so I will not kill you, but I will tell the guard captain. (And you can't escape from Brimhaven without me seeing you.)"
 msgstr ""
+"Byłeś szczery, więc Cię nie zabiję, ale powiadomię kapitan straży. (Nie "
+"wyjdziesz z Brimhaven dopóki Cię nie zobaczę.)"
 
 #: conversationlist_brimhaven.json:brv_richman_20:1
+#, fuzzy
 msgid "I stopped the two brothers from destroying the dam. Who else could have done it?"
 msgstr ""
+"Powstrzymałem dwóch braci przed zniszczeniem tamy. Któż inny mógł to zrobić?"
 
 #: conversationlist_brimhaven.json:brv_flood_0_7
+#, fuzzy
 msgid "This seems to be the weak spot of the dam the brothers were talking about. But with your currently equipped gear you can't hack apart the wood effectively without drawing too much attention."
 msgstr ""
+"To wygląda na ten słaby punkt tamy o którym mówili bracia. Ale z Twoim "
+"obecnym wyposażeniem nie możesz efektywnie ściąć drzewa bez zwracania na "
+"siebie zbyt wielkiej uwagi."
 
 #: conversationlist_brimhaven.json:brv_richman_05
+#, fuzzy
 msgid "It is very sad that the dam was destroyed. But I don't know anything."
-msgstr ""
+msgstr "To bardzo smutne, że tama została zniszczona. Ale nic o tym nie wiem."
 
 #: conversationlist_brimhaven.json:brv_richman_05:0
+#, fuzzy
 msgid "OK, thank you."
-msgstr ""
+msgstr "OK, dziękuję."
 
 #: conversationlist_brimhaven.json:brv_richman_05:1
 #: conversationlist_brimhaven.json:brv_richman_05:2
 #: conversationlist_brimhaven_2.json:brv_laundry_boss_30:0
+#, fuzzy
 msgid "Are you sure?"
-msgstr ""
+msgstr "Czy jesteś pewien?"
 
 #: conversationlist_brimhaven.json:brv_richman_15
+#, fuzzy
 msgid "You again. I already told you that I know nothing about the destruction of the dam."
-msgstr ""
+msgstr "Znowu Ty. Już powiedziałem, że nic nie wiem o zniszczeniu tamy."
 
 #: conversationlist_brimhaven.json:brv_richman_15:2
+#, fuzzy
 msgid "I found your coin bags, and you paid the brothers for destroying the dam. [Hand him the coin bags]"
 msgstr ""
+"Znalazłem Twoje sakwy z monetami, a Ty zapłaciłeś braciom za zniszczenie "
+"tamy. [Oddaj mu sakwy]"
 
 #: conversationlist_brimhaven.json:brv_richman_25
+#, fuzzy
 msgid "Leave me alone. I will wait here for the guards to arrest me."
 msgstr ""
+"Zostaw mnie w spokoju. Zaczekam tutaj na strażników by mnie aresztowali."
 
 #: conversationlist_brimhaven.json:brv_richman_01
+#, fuzzy
 msgid "I do not remember inviting you to my house."
-msgstr ""
+msgstr "Nie przypominam sobie bym zapraszał Cię do mojego domu."
 
 #: conversationlist_brimhaven.json:brv_richman_01:0
+#, fuzzy
 msgid "What do you know about the destruction of the dam?"
-msgstr ""
+msgstr "Co wiesz o zniszczeniu tamy?"
 
 #: conversationlist_brimhaven.json:brv_richman_01:1
+#, fuzzy
 msgid "I am sorry and will leave."
-msgstr ""
+msgstr "Przepraszam i wychodzę."
 
 #: conversationlist_brimhaven.json:brv_guard_captain_15
+#, fuzzy
 msgid "Always stay on the right side of the law."
-msgstr ""
+msgstr "Zawsze stój po właściwej stronie prawa."
 
 #: conversationlist_brimhaven.json:brv_guard_captain_22
+#, fuzzy
 msgid "You are accusing poor but honest people. Do you have any proof?"
-msgstr ""
+msgstr "Oskarżasz biednych, ale uczciwych ludzi. Czy masz jakieś dowody?"
 
 #: conversationlist_brimhaven.json:brv_guard_captain_22:0
+#, fuzzy
 msgid "No, not yet, but I will try to help you."
-msgstr ""
+msgstr "Nie, jeszcze nie, ale spróbuję Ci pomóc."
 
 #: conversationlist_brimhaven.json:brv_guard_captain_23
+#, fuzzy
 msgid "Come back when you have a proof, and until then stop accusing people. In the meantime, you are not allowed to leave the city."
 msgstr ""
+"Wróć kiedy będziesz miał dowody, a do tego czasu przestań oskarżać ludzi. W "
+"międzyczasie, nie wolno Ci opuszczać miasta."
 
 #: conversationlist_brimhaven.json:brv_guard_captain_25
+#, fuzzy
 msgid "Hello again. Did you find out who destroyed the dam?"
-msgstr ""
+msgstr "Witaj ponownie. Czy wiesz kto zniszczył tamę?"
 
 #: conversationlist_brimhaven.json:brv_guard_captain_and_rich_man_10
+#, fuzzy
 msgid "[Laughs] You again. Welcome back, foolish child."
-msgstr ""
+msgstr "[Śmieje się] Znowu Ty. Witaj z powrotem, głupi dzieciaku."
 
 #: conversationlist_brimhaven.json:brv_guard_captain_and_rich_man_10:0
+#, fuzzy
 msgid "Laugh while you can. The captain is here and now you will get your deserved punishment!"
 msgstr ""
+"Śmiej się ile chcesz. Kapitan jest tutaj i dostaniesz teraz zasłużoną karę!"
 
 #: conversationlist_brimhaven.json:brv_guard_captain_and_rich_man_20
+#, fuzzy
 msgid "Well..."
-msgstr ""
+msgstr "Dobrze..."
 
 #: conversationlist_brimhaven.json:brv_guard_captain_and_rich_man_30
+#, fuzzy
 msgid "Let's see who is laughing in the end. The captain came to talk, not arrest me. Now she owns a new horse and I will be earning a lot of money with the necessary repairing of the dam and later the food harvesting. I call this a win-win."
 msgstr ""
+"Zobaczymy kto będzie się śmiał ostatni. Kapitan przyszła porozmawiać, a nie "
+"mnie aresztować. Ma teraz nowego konia i sporo zarobi przy niezbędnej\n"
+"naprawie tamy, a później przy zbiorach żywności. Według mnie to sytuacja "
+"korzystna dla obu stron."
 
 #: conversationlist_brimhaven.json:brv_guard_captain_and_rich_man_40
+#, fuzzy
 msgid "It seems Alkapoan's letters accidentally fell into a fire and I am sure some unknown evil spies from Loneford destroyed the dam. You better disappear soon, or I might find some evidence that you are the evil spy from Loneford."
 msgstr ""
+"Wygląda na to, że listy Alkapoana przypadkowo wpadły do ognia i jest pewien, "
+"że nieznani źli szpiedzy z Loneford zniszczyli tamę. Lepiej byś niedługo "
+"stąd zniknął, albo znajdą się jakieś dowody, że jesteś złym szpiegiem z "
+"Loneford."
 
 #: conversationlist_brimhaven.json:brv_guard_captain_and_rich_man_50
+#, fuzzy
 msgid "You better disappear soon, or I might find some evidence that you are the evil spy from Loneford."
 msgstr ""
+"Lepiej byś niedługo stąd zniknął albo znajdą się dowody, że jesteś złym "
+"szpiegiem z Loneford."
 
 #: conversationlist_brimhaven.json:brv_prison_guard_20
+#, fuzzy
 msgid "Are you looking for the captain? She has been gone for a while now, arresting the person that destroyed the dam."
 msgstr ""
+"Szukasz pani kapitan? Nie ma jej już od jakiegoś czasu, aresztowała osobę, "
+"która zniszczyła tamę."
 
 #: conversationlist_brimhaven.json:brv_prison_guard_10
+#, fuzzy
 msgid "The prison is currently vacant and I hope you don't give me a reason to change this."
 msgstr ""
+"Więzienie jest w tej chwili puste i mam nadzieję, że nie dasz mi powodu, aby "
+"to zmienić."
 
 #: conversationlist_brimhaven.json:brv2_grave_1
+#, fuzzy
 msgid "Here lie Berri and his wife Dalyve."
-msgstr ""
+msgstr "Tutaj leży Berri i jego żona Dalyve."
 
 #: conversationlist_brimhaven.json:brv2_grave_2
 msgid "RIP Boots. Died the thirteenth day of the twelveth month of ... [You can't read the year, because it's covered in moss] "
 msgstr ""
 
 #: conversationlist_brimhaven.json:brv2_grave_3
+#, fuzzy
 msgid "Here lies my wife. I bid her goodbye. She rests in peace, and now so do I."
 msgstr ""
+"Tu leży moja żona. Żegnam się z nią. Spoczywa w pokoju, a teraz również ja."
 
 #: conversationlist_brimhaven.json:brv2_grave_4
+#, fuzzy
 msgid "The gravestone is old and worn. You can't make out what it says."
 msgstr ""
+"Nagrobek jest stary i zniszczony. Nie możesz odczytać co jest na nim "
+"napisane."
 
 #: conversationlist_brimhaven.json:brv2_grave_5
+#, fuzzy
 msgid "Here lies a stranger, who came to Brimhaven after being attacked. Alas, we could not save him."
 msgstr ""
+"Tu leży obcy, który przyszedł do Brimhaven po tym jak go zaatakowano. "
+"Niestety nie mogliśmy go uratować."
 
 #: conversationlist_brimhaven.json:brv2_grave_6
+#, fuzzy
 msgid "The epitaph is in a language you can't read."
-msgstr ""
+msgstr "Epitafium jest w języku, którego nie potrafisz przeczytać."
 
 #: conversationlist_brimhaven.json:brv2_grave_7
+#, fuzzy
 msgid "Zhyont. He never killed anyone that did not need killing."
-msgstr ""
+msgstr "Zhyont. Nigdy nie zabił nikogo, jeśli nie trzeba było."
 
 #: conversationlist_brimhaven.json:brv2_grave_8
+#, fuzzy
 msgid "Here lies Captain Fhoric. He died to protect our town, for which we will be forever grateful."
 msgstr ""
+"Tu leży kapitan Fhoric. Zginął chroniąc nasze miasto, za co będziemy "
+"dozgonnie wdzięczni."
 
 #: conversationlist_brimhaven.json:brv2_grave_10
+#, fuzzy
 msgid "Here lies Fredd. A big rock fell on his head. "
-msgstr ""
+msgstr "Tu leży Fredd. Ogromny głaz spadł mu na łeb. "
 
 #: conversationlist_brimhaven.json:brv2_grave_11
+#, fuzzy
 msgid "Unknown. Found outside of town, close to the road. RIP."
 msgstr ""
+"Nieznany. Znaleziony poza miastem, w pobliżu drogi. Niech spoczywa w pokoju."
 
 #: conversationlist_brimhaven.json:brv2_grave_12
+#, fuzzy
 msgid "Here lies Reptt, the money lender, who never did collect his debt."
-msgstr ""
+msgstr "Tu leży Reptt, pożyczkodawca, który nigdy nie odzyskał swojego długu."
 
 #: conversationlist_brimhaven.json:brv_laundry_boss_7b
+#, fuzzy
 msgid "You don't have the required 432 gold to improve your superior leather boots."
 msgstr ""
+"Nie masz wymaganych 432 sztuk złota, aby ulepszyć swoje doskonałe skórzane "
+"buty."
 
 #: conversationlist_brimhaven.json:brv_laundry_boss_6b
+#, fuzzy
 msgid "You don't have the required 640 gold to improve your fine snakeskin gloves."
 msgstr ""
+"Nie masz wymaganych 640 sztuk złota, aby ulepszyć swoje dobre rękawiczki z "
+"wężowej skóry."
 
 #: conversationlist_brimhaven.json:brv_laundry_boss_5b
+#, fuzzy
 msgid "You don't have the required 1,397 gold to improve your fine green hat."
 msgstr ""
+"Nie masz wymaganych 1,397 sztuk złota, aby ulepszyć swój dobry zielony "
+"kapelusz."
 
 #: conversationlist_brimhaven.json:brv_tavern_west_waitress_11
+#, fuzzy
 msgid "Let me think... "
-msgstr ""
+msgstr "Niech się zastanowię... "
 
 #: conversationlist_brimhaven.json:brv_tavern_west_waitress_11b
+#, fuzzy
 msgid "No, I am sorry."
-msgstr ""
+msgstr "Nie, przykro mi."
 
 #: conversationlist_brimhaven.json:fangwurm_talking_1a
+#, fuzzy
 msgid "Yes, I know someone who looks almost like you, but he and his parents are from this town."
 msgstr ""
+"Tak, znam kogoś kto wygląda prawie tak samo jak Ty, ale on i jego rodzice "
+"pochodzą z tego miasta."
 
 #: conversationlist_brimhaven.json:brv_woodcraftsman_1
+#, fuzzy
 msgid "I only know a goblin that looks like you. [Laughs]"
-msgstr ""
+msgstr "Znam tylko goblina, który wygląda tak jak ty. [Śmieje się]"
 
 #: conversationlist_brimhaven.json:melona_0a
+#, fuzzy
 msgid "What can I help you with?"
-msgstr ""
+msgstr "W czym mogę Ci pomóc?"
 
 #: conversationlist_brimhaven.json:melona_0a:0
+#, fuzzy
 msgid "I'm hungry. Do you have any food to sell?"
-msgstr ""
+msgstr "Jestem głodny. Czy sprzedajesz jakieś jedzenie?"
 
 #: conversationlist_brimhaven.json:melona_0a:1
+#, fuzzy
 msgid "I need somewhere to sleep. Do you have a bed available?"
-msgstr ""
+msgstr "Muszę się gdzieś przespać. Czy masz jakieś łóżko wolne?"
 
 #: conversationlist_brimhaven.json:melona_1
+#, fuzzy
 msgid "Certainly. Please take a look at what I can offer."
-msgstr ""
+msgstr "Oczywiście. Zapraszam do sprawdzenia mojej oferty."
 
 #: conversationlist_brimhaven.json:melona_2
+#, fuzzy
 msgid "Yes. It's 90 gold. That may seem like a lot, but it's a one-time payment. As long as a bed is free, in the future you can use it any time you want."
 msgstr ""
+"Tak. 90 sztuk złota. Może się wydawać dużo, ale to jednorazowa opłata. "
+"Dopóki łóżko jest wolne, w przyszłości możesz z niego korzystać kiedy chcesz."
 
 #: conversationlist_brimhaven.json:melona_2:0
+#, fuzzy
 msgid "That's too expensive. Let's talk about something else."
-msgstr ""
+msgstr "To za drogo. Porozmawiajmy o czymś innym."
 
 #: conversationlist_brimhaven.json:melona_2:1
+#, fuzzy
 msgid "I'll take it."
-msgstr ""
+msgstr "Wezmę to."
 
 #: conversationlist_brimhaven.json:melona_0
+#, fuzzy
 msgid "Hello. I'm Melona, and I run this fine establishment."
-msgstr ""
+msgstr "Cześć. Nazywam się Melona i prowadzę to niewielkie przedsiębiorstwo."
 
 #: conversationlist_brimhaven.json:melona_3
+#, fuzzy
 msgid "Sorry, I haven't seen anyone that looks like you."
-msgstr ""
+msgstr "Przepraszam, ale nie widziałem nikogo podobnego do Ciebie."
 
 #: conversationlist_brimhaven.json:melona_3:0
+#, fuzzy
 msgid "OK. Let's talk about something else."
-msgstr ""
+msgstr "OK. Porozmawiajmy o czymś innym."
 
 #: conversationlist_brimhaven.json:melona_2a
+#, fuzzy
 msgid "Thank you for your patronage. You can use any available bed."
 msgstr ""
+"Dziękujemy za współpracę. Możesz korzystać z jakiegokolwiek dostępnego łóżka."
 
 #: conversationlist_brimhaven.json:brv_butcher
 msgid "... chop chop chop ..."
 msgstr ""
 
 #: conversationlist_brimhaven.json:brv_cleaning_10
+#, fuzzy
 msgid "Wipe your feet!"
-msgstr ""
+msgstr "Wytrzyj buty!"
 
 #: conversationlist_brimhaven.json:brv_cleaning_20
+#, fuzzy
 msgid "[Muttering] Someday I will kill her ..."
-msgstr ""
+msgstr "[Mamrotając] Kiedyś ją zabiję..."
 
 #: conversationlist_brimhaven.json:brv_cleaning_20:0
+#, fuzzy
 msgid "Whom do you want to kill?"
-msgstr ""
+msgstr "Kogo chcesz zabić?"
 
 #: conversationlist_brimhaven.json:brv_cleaning_22
+#, fuzzy
 msgid "Oh, nothing - nothing at all."
-msgstr ""
+msgstr "Och, nikogo- zupełnie nikogo."
 
 #: conversationlist_brimhaven.json:brv_cleaning_30
+#, fuzzy
 msgid "Go away, I have work to do!"
-msgstr ""
+msgstr "Idź stąd, mam robotę do wykonania!"
 
 #: conversationlist_brimhaven.json:brv_cleaning_40
+#, fuzzy
 msgid "All these guests are so very untidy!"
-msgstr ""
+msgstr "Wszyscy ci goście są bardzo niechlujni!"
 
 #: conversationlist_brimhaven.json:brv_cleaning_50
+#, fuzzy
 msgid "Only one more bed ..."
-msgstr ""
+msgstr "Tylko jedno łóżko ..."
 
 #: conversationlist_brimhaven.json:brv_inn_guest_0
+#, fuzzy
 msgid "Do you mind not bumping into me, kid. I've had a long day, and I don't need rude little children bumping into me."
 msgstr ""
+"Byłbyś łaskaw nie wpadać na mnie dzieciaku. To był ciężki dzień i nie "
+"potrzebuję niegrzecznych małych dzieci wpadających na mnie."
 
 #: conversationlist_brimhaven.json:brv_inn_guest_0:0
 #: conversationlist_brimhaven2.json:brv_school_history_32:0
+#, fuzzy
 msgid "Sorry."
-msgstr ""
+msgstr "Przepraszam."
 
 #: conversationlist_brimhaven.json:brv_inn_guest_0:1
+#, fuzzy
 msgid "Maybe it was you that bumped into me!"
-msgstr ""
+msgstr "Może to ty wpadłeś na mnie!"
 
 #: conversationlist_brimhaven.json:brv_inn_guest_0:2
+#, fuzzy
 msgid "I'm a heavily armed little child, so maybe it's you that should not be rude to me!"
 msgstr ""
+"Jestem ciężko uzbrojonym małym dzieckiem, więc może nie powinieneś być dla "
+"mnie niemiły!"
 
 #: conversationlist_brimhaven.json:brv_bed
+#, fuzzy
 msgid "The beds are not free!"
-msgstr ""
+msgstr "Łóżka nie są za darmo!"
 
 #: conversationlist_brimhaven.json:edrin_0
+#, fuzzy
 msgid "I'm Edrin, the Brimhaven metalsmith."
-msgstr ""
+msgstr "Jestem Edrin, metalurg Brimhaven."
 
 #: conversationlist_brimhaven.json:edrin_0:0
+#, fuzzy
 msgid "What does a metalsmith do? Is that the same as a blacksmith?"
-msgstr ""
+msgstr "Czym się zajmuje metalurg? Tym samym co kowal?"
 
 #: conversationlist_brimhaven.json:edrin_0:1
+#, fuzzy
 msgid "I don't think that's what I'm looking for. Thanks anyway."
-msgstr ""
+msgstr "Nie sądzę, że tego właśnie szukałem. W każdym razie dziękuję."
 
 #: conversationlist_brimhaven.json:edrin_1
 msgid "As a metalsmith I'm sort of like a blacksmith, but there is a difference. A blacksmith works with iron and steel, but a metalsmith works with many metals. I do work with iron and steel, but only for smaller, high quality objects. I also work with other metals, including precious metals, and even do fine inlay work, and finely jeweled metal items."
 msgstr ""
 
 #: conversationlist_brimhaven.json:edrin_1:0
+#, fuzzy
 msgid "If you have those skills I would like you to look at two items I purchased locally. A strange-looking dagger and a strange-looking gem."
 msgstr ""
+"Jeśli masz takie umiejętności to chciałbym, abyś spojrzał na dwie rzeczy, "
+"które kupiłem na miejscu. Dziwnie wyglądający sztylet oraz klejnot."
 
 #: conversationlist_brimhaven.json:edrin_1:1
+#, fuzzy
 msgid "If you have those skills I would like you to look at something I purchased locally. A strange-looking dagger."
 msgstr ""
+"Jeśli masz takie umiejętności to chciałbym abyś spojrzał na coś co kupiłem "
+"lokalnie. Dziwnie wyglądający sztylet."
 
 #: conversationlist_brimhaven.json:edrin_1:2
+#, fuzzy
 msgid "If you have those skills I would like you to look at something I purchased locally. A strange-looking gem."
 msgstr ""
+"Jeśli masz takie umiejętności to chciałbym, abyś spojrzał na coś co kupiłem "
+"lokalnie. Dziwnie wyglądający klejnot."
 
 #: conversationlist_brimhaven.json:edrin_1:3
+#, fuzzy
 msgid "That's Interesting, but let's talk about something else."
-msgstr ""
+msgstr "To interesujące, ale porozmawiajmy o czymś innym."
 
 #: conversationlist_brimhaven.json:edrin_1:4
+#, fuzzy
 msgid "I don't think I need the services of a metalsmith right now."
-msgstr ""
+msgstr "Nie wydaje mi się, że będę teraz potrzebował usług metalurga."
 
 #: conversationlist_brimhaven.json:edrin_1a
+#, fuzzy
 msgid "Well, yes, there was someone. He came to me to get a sword sharpened. I can't tell you any more than that though. "
 msgstr ""
+"Dobrze, tak, był ktoś. Przyszedł do mnie naostrzyć miecz. Nie mogę ci więcej "
+"powiedzieć. "
 
 #: conversationlist_brimhaven.json:edrin_1a:0
+#, fuzzy
 msgid "OK. Thanks. What type of services and products do you supply?"
-msgstr ""
+msgstr "OK. Dzięki. Jakie usługi i towary dostarczasz?"
 
 #: conversationlist_brimhaven.json:brv_villager2
+#, fuzzy
 msgid "If you want to make some money. Go to the tavern."
-msgstr ""
+msgstr "Jeśli chcesz trochę zarobić to idź do tawerny."
 
 #: conversationlist_brimhaven.json:brv_villager3
+#, fuzzy
 msgid "You are not from Brimhaven, are you? If you need a place to stay, visit the inn in the eastern part of the town. There are beds available for rent. But it is a bit untidy there."
 msgstr ""
+"Nie jesteś z Brimhaven, tak? Jeśli szukasz miejsca by się zatrzymać to "
+"odwiedź karczmę we wschodniej części miasta. Są tam łózka do wynajęcia. Ale "
+"jest tam trochę nieposprzątane."
 
 #: conversationlist_brimhaven.json:brv_villager3:0
+#, fuzzy
 msgid "I suspect that you killed Lawellyn or that you were at the very least at the scene of the murder at the time of his death."
 msgstr ""
+"Podejrzewam, że zabiłeś Lawellyn albo, że byłeś chociaż na miejscu zbrodni w "
+"czasie jej śmierci."
 
 #: conversationlist_brimhaven.json:brv_villager3:1
+#, fuzzy
 msgid "No need to pretend we've never met. I do believe you are innocent."
 msgstr ""
+"Nie trzeba udawać, że się nigdy nie spotkaliśmy. Wierzę, że jesteś niewinny."
 
 #: conversationlist_brimhaven.json:brv_villager3:2
+#, fuzzy
 msgid "Don't pretend we've never met. Soon you will be in jail."
-msgstr ""
+msgstr "Nie udawaj, że się nigdy nie spotkaliśmy. Wkrótce będziesz w więzieniu."
 
 #: conversationlist_brimhaven.json:brv_villager6
+#, fuzzy
 msgid "Don't get in my way. Are you one of those guys from the east side of the town, without manners?"
 msgstr ""
+"Nie wchodź mi w drogę. Czy jesteś jednym z tych facetów bez manier ze "
+"wschodniej części miasta?"
 
 #: conversationlist_brimhaven.json:brv_villager7
+#, fuzzy
 msgid "I don't recognize you. Are you one of those people from the east part of the town, who send their children wearing cheap clothes to our school?"
 msgstr ""
+"Nie poznaję Cię. Czy jesteś jednym z tych ludzi ze wschodniej części miasta, "
+"którzy posyłają do szkół dzieci ubrane w tanie ciuchy?"
 
 #: conversationlist_brimhaven.json:brv_villager8
+#, fuzzy
 msgid "You look a bit old for a pupil."
-msgstr ""
+msgstr "Wyglądasz na trochę za staro jak na ucznia."
 
 #: conversationlist_brimhaven.json:brv_villager9
+#, fuzzy
 msgid "Hello. Great dam. Isn't it? We people from the west side of the town paid for the dam because the people from the east side can't afford it. "
 msgstr ""
+"Cześć. Wielka tama, czyż nie? My mieszkańcy zachodniej strony miasta "
+"zapłaciliśmy za tamę, ponieważ mieszkańców wschodniej części miasta nie było "
+"na to stać. "
 
 #: conversationlist_brimhaven.json:brv_villager10
+#, fuzzy
 msgid "Taking our good water? Go to the east side of the town. Oh, I forgot... you can't afford a well of your own."
 msgstr ""
+"Zabierasz naszą dobrą wodę? Idź do wschodniej części miasta. Och, "
+"zapomniałem... nie stać Cię na własną studnię."
 
 #: conversationlist_brimhaven.json:quiet_thief_1_0
+#, fuzzy
 msgid "Psst! Hey kid, you want to buy some nice stuff?"
-msgstr ""
+msgstr "Psst! Hej dzieciaku, chcesz kupić jakieś fajne rzeczy?"
 
 #: conversationlist_brimhaven.json:quiet_thief_1_0:0
+#, fuzzy
 msgid "Maybe. Show me what you have."
-msgstr ""
+msgstr "Może. Pokaż mi co masz."
 
 #: conversationlist_brimhaven.json:quiet_thief_1_0:1
+#, fuzzy
 msgid "No thanks. I think maybe you don't actually own what you are selling."
-msgstr ""
+msgstr "Nie dziękuję. Sądzę, że wcale nie posiadasz tego co sprzedajesz."
 
 #: conversationlist_brimhaven.json:quiet_thief_2_0
 #: conversationlist_brimhaven.json:quiet_thief_3_0
 #: conversationlist_brimhaven.json:quiet_thief_0_0
+#, fuzzy
 msgid "Hello again kid. Want another look at what I have to sell?"
 msgstr ""
+"Witaj ponownie dzieciaku. Czy chcesz jeszcze raz sprawdzić co mam do "
+"sprzedania?"
 
 #: conversationlist_brimhaven.json:quiet_thief_2_0:0
+#, fuzzy
 msgid "Was the gem I purchased originally mounted in the pommel of the dagger you have?"
 msgstr ""
+"Czy ten kupiony przez mnie klejnot był wcześniej umieszczony w rękojeści "
+"sztyletu, który posiadasz?"
 
 #: conversationlist_brimhaven.json:quiet_thief_2_0:1
 #: conversationlist_brimhaven.json:quiet_thief_3_0:1
+#, fuzzy
 msgid "Yes, I would like to take another look."
-msgstr ""
+msgstr "Tak, chciałbym jeszcze raz na to spojrzeć."
 
 #: conversationlist_brimhaven.json:quiet_thief_3_0:0
+#, fuzzy
 msgid "Was the gem you have originally in the pommel of the dagger I purchased?"
 msgstr ""
+"Ten klejnot, który masz był pierwotnie w rękojeści sztyletu kupionego przez "
+"mnie?"
 
 #: conversationlist_brimhaven.json:quiet_thief_0_0:0
+#, fuzzy
 msgid "Yes. Show me what you have."
-msgstr ""
+msgstr "Tak. Pokaż mi co masz."
 
 #: conversationlist_brimhaven.json:quiet_thief_1_1
+#, fuzzy
 msgid "Keep your voice down! We don't want to attract any attention!"
-msgstr ""
+msgstr "Nie podnoś głosu! Nie chcemy zwracać na siebie uwagi!"
 
 #: conversationlist_brimhaven.json:quiet_thief_1_1:0
+#, fuzzy
 msgid "OK. Don't worry. I can keep a secret."
-msgstr ""
+msgstr "OK. Nie martw się. Potrafię dochować tajemnicy."
 
 #: conversationlist_brimhaven.json:quiet_thief_1_1:1
+#, fuzzy
 msgid "It sounds like you want to do something illegal. I don't want trouble."
-msgstr ""
+msgstr "Wygląda na to, że chcesz sprzedać coś nielegalnego. Nie chcę kłopotów."
 
 #: conversationlist_brimhaven.json:brv_villager11
+#, fuzzy
 msgid "The people from the west side of town forced us to support the dam, but we don't get any benefit from it and they took all the good land."
 msgstr ""
+"Mieszkańcy zachodniej części miasta zmusili nas do wspierania tamy, ale nie "
+"czerpiemy z tego żadnych korzyści, a oni zabrali całą żyzną ziemię."
 
 #: conversationlist_brimhaven.json:brv_villager13
+#, fuzzy
 msgid "Mama!"
-msgstr ""
+msgstr "Mama!"
 
 #: conversationlist_brimhaven.json:brv_villager12b
+#, fuzzy
 msgid "Stop talking to my daughter!"
-msgstr ""
+msgstr "Przestań rozmawiać z moją córką!"
 
 #: conversationlist_brimhaven.json:brv_villager12b:0
 #: conversationlist_brimhaven.json:brv_playing_children:0
+#, fuzzy
 msgid "I am sorry."
-msgstr ""
+msgstr "Przepraszam."
 
 #: conversationlist_brimhaven.json:brv_villager_12a
+#, fuzzy
 msgid "I have to take my daughter to school. I can't let her cross this dangerous area on her own, and those people from the west side of town don't care at all."
 msgstr ""
+"Muszę zabrać swoją córkę do szkoły. Nie mogę jej pozwolić by sama przeszła "
+"przez ten niebezpieczny teren, a ci ludzie z zachodniej części miasta wcale "
+"się tym nie przejmują."
 
 #: conversationlist_brimhaven.json:brv_villager14
+#, fuzzy
 msgid "Get out of my way. Do you think you are better than me just because you are one of those rich guys from the western part of the town?"
 msgstr ""
+"Zejdź mi z drogi. Uważasz się za lepszego ode mnie tylko dlatego, że jesteś "
+"jednym z tych bogaczy z zachodniej części miasta?"
 
 #: conversationlist_brimhaven.json:brv_villager15
+#, fuzzy
 msgid "If you need a place to sleep, visit the inn. There are beds available for rent."
 msgstr ""
+"Jeśli potrzebujesz miejsca do spania, to wstąp do zajazdu. Są tam łóżka "
+"dostępne do wynajęcia."
 
 #: conversationlist_brimhaven.json:churrie
+#, fuzzy
 msgid "Attention, kid! This is a dangerous place."
-msgstr ""
+msgstr "Uważaj dzieciaku! To niebezpieczne miejsce."
 
 #: conversationlist_brimhaven.json:churrie:0
+#, fuzzy
 msgid "Why? It looks lovely here."
-msgstr ""
+msgstr "Dlaczego? Wygląda to pięknie."
 
 #: conversationlist_brimhaven.json:churrie_10
+#, fuzzy
 msgid "There are dangerous creatures in the hole down there. I fear that they'll come out again."
 msgstr ""
+"W tej dziurze na dole czają się niebezpieczne stworzenia. Obawiam się, że "
+"znów wyjdą na powierzchnię."
 
 #: conversationlist_brimhaven.json:churrie_10:0
+#, fuzzy
 msgid "Then I wish the dry lake was full of water again. It would keep the monsters from coming out."
 msgstr ""
+"W takim razie chciałbym, aby ta wysuszona rzeka była znów pełna wody. "
+"Powstrzymywało by to potwory przed wychodzeniem na powierzchnię."
 
 #: conversationlist_brimhaven.json:churrie_20
+#, fuzzy
 msgid "Indeed. I would see to it, if I had enough money."
 msgstr ""
+"W rzeczy samej. Zapłaciłbym za to gdybym miał wystarczającą ilość pieniędzy."
 
 #: conversationlist_brimhaven.json:churrie_20:0
+#, fuzzy
 msgid "What has money to do with it? I better go."
-msgstr ""
+msgstr "Co pieniądze mają z tym wspólnego? Lepiej pójdę."
 
 #: conversationlist_brimhaven.json:churrie_20:1
 #: conversationlist_brimhaven.json:tamarukh_20:1
+#, fuzzy
 msgid "It should not fail because of a lack of money. Here you have 2500 gold."
 msgstr ""
+"To nie powinno się nie udać z powodu braku pieniędzy. Oto 2500 sztuk złota."
 
 #: conversationlist_brimhaven.json:churrie_30
+#, fuzzy
 msgid "Oh, wow! I will take care of it. So much money! Probably tonight ..."
 msgstr ""
+"Och, wow! Zajmę się tym. Tak dużo pieniędzy! Prawdopodobnie dziś wieczorem "
+"..."
 
 #: conversationlist_brimhaven.json:tamarukh
+#, fuzzy
 msgid "Isn't it a pity to see all that fertile land wasted?"
-msgstr ""
+msgstr "Nie szkoda patrzeć jak ta cała żyzna ziemia się marnuje?"
 
 #: conversationlist_brimhaven.json:tamarukh:0
+#, fuzzy
 msgid "Do you mean the lake?"
-msgstr ""
+msgstr "Masz na myśli jezioro?"
 
 #: conversationlist_brimhaven.json:tamarukh_10
+#, fuzzy
 msgid "Sure. We had built this dam in Brimhaven to get more space for arable land, but someone must have sabotaged it."
 msgstr ""
+"Pewnie. Wybudowaliśmy tę tamę w Brimhaven, aby mieć więcej miejsca na grunty "
+"orne, ale ktoś musiał to sabotować."
 
 #: conversationlist_brimhaven.json:tamarukh_10:0
+#, fuzzy
 msgid "Would you like to repair the dam again?"
-msgstr ""
+msgstr "Chciałbyś znów naprawić tę tamę?"
 
 #: conversationlist_brimhaven.json:tamarukh_20
+#, fuzzy
 msgid "Yes, I would see to it, if I had enough money."
-msgstr ""
+msgstr "Tak, chciałbym, gdybym miał wystarczającą ilość pieniędzy."
 
 #: conversationlist_brimhaven.json:tamarukh_20:0
+#, fuzzy
 msgid "Everyone wants my money. I better go."
-msgstr ""
+msgstr "Każdy chce moich pieniędzy. Lepiej pójdę."
 
 #: conversationlist_brimhaven.json:tamarukh_30
+#, fuzzy
 msgid "That is very noble of you. I will take care of it."
-msgstr ""
+msgstr "To bardzo szlachetne z Twojej strony. Zajmę się tym."
 
 #: conversationlist_brimhaven.json:quiet_thief_2_1
+#, fuzzy
 msgid "Maybe. Why? Anyway, the dagger is no longer available, except perhaps at a special price."
 msgstr ""
+"Może.Dlaczego? W każdym razie, sztylet nie jest już dostępny, no może za "
+"specjalną ceną."
 
 #: conversationlist_brimhaven.json:quiet_thief_3_1
+#, fuzzy
 msgid "Maybe. Why? Anyway, the gem is no longer available, except perhaps at a special price."
 msgstr ""
+"Może. Dlaczego? W każdym razie, klejnot nie jest już dostępny, no może poza "
+"specjalną ceną."
 
 #: conversationlist_brimhaven.json:quiet_thief_2_2
+#, fuzzy
 msgid "Since you have the gem, and you have asked about the dagger, I assume you want it. But when you want something enough, you are willing to pay more, right?"
 msgstr ""
+"Skoro masz już klejnot i spytałeś o sztylet to zakładam, że chcesz go. Ale "
+"skoro tak bardzo czegoś chcesz, to jesteś skłonny zapłacić więcej, tak?"
 
 #: conversationlist_brimhaven.json:quiet_thief_2_2:0
 #: conversationlist_brimhaven.json:quiet_thief_3_2:0
+#, fuzzy
 msgid "No, I don't think so."
-msgstr ""
+msgstr "Nie, nie sądzę."
 
 #: conversationlist_brimhaven.json:quiet_thief_2_2:1
 #: conversationlist_brimhaven.json:quiet_thief_3_2:1
+#, fuzzy
 msgid "How much are you asking?"
-msgstr ""
+msgstr "Ile chcesz?"
 
 #: conversationlist_brimhaven.json:quiet_thief_2_2:2
 #: conversationlist_brimhaven.json:quiet_thief_3_2:2
+#, fuzzy
 msgid "Can I see what else you have to sell."
-msgstr ""
+msgstr "Mogę zobaczyć co innego masz na sprzedaż."
 
 #: conversationlist_brimhaven.json:quiet_thief_2_3
+#, fuzzy
 msgid "I think 1000 gold would be fair. Is that acceptable?"
-msgstr ""
+msgstr "Myślę, że 1000 sztuk złota byłoby sprawiedliwe. Czy to do przyjęcia?"
 
 #: conversationlist_brimhaven.json:quiet_thief_2_3:0
+#, fuzzy
 msgid "No. That's too much for me."
-msgstr ""
+msgstr "Nie, to zbyt wiele dla mnie."
 
 #: conversationlist_brimhaven.json:quiet_thief_2_3:1
 #: conversationlist_brimhaven.json:quiet_thief_3_3:1
+#, fuzzy
 msgid "I don't think it's fair, but I'll pay it."
-msgstr ""
+msgstr "Nie sądzę, żeby to było sprawiedliwe, ale zapłacę."
 
 #: conversationlist_brimhaven.json:quiet_thief_2_4
+#, fuzzy
 msgid "Here you go kid."
-msgstr ""
+msgstr "Proszę bardzo dzieciaku."
 
 #: conversationlist_brimhaven.json:quiet_thief_3_2
+#, fuzzy
 msgid "Since you have the dagger, and you have asked about the gem, I assume you want it. But when you want something enough, you are willing to pay more, right?"
 msgstr ""
+"Skoro masz już sztylet i pytałeś o klejnot, to zakładam, że go chcesz. Ale "
+"jeśli czegoś bardzo potrzebujesz to jesteś skłonny zapłacić więcej, tak?"
 
 #: conversationlist_brimhaven.json:quiet_thief_3_3
+#, fuzzy
 msgid "I think 1500 gold would be fair. Is that acceptable?"
-msgstr ""
+msgstr "Myślę, że 1500 sztuk złota będzie sprawiedliwe. Czy to do przyjęcia?"
 
 #: conversationlist_brimhaven.json:quiet_thief_3_3:0
+#, fuzzy
 msgid "No, that's too much for me."
-msgstr ""
+msgstr "Nie, to zbyt dużo dla mnie."
 
 #: conversationlist_brimhaven.json:quiet_thief_3_4
+#, fuzzy
 msgid "Here you go kid"
-msgstr ""
+msgstr "Proszę bardzo dzieciaku"
 
 #: conversationlist_brimhaven.json:edrin_2_1
+#, fuzzy
 msgid "I recognize this. I made it, many years ago, for a man called Lawellyn. Alas, I hear he is now dead. See this recess in the pommel? There used to be an unusual gem in that. It gave the dagger some special properties. If you can find the gem, I can repair it for you."
 msgstr ""
+"Poznaję to. Stworzyłem go, wiele lat temu, dla mężczyzny o imieniu Lawellyn. "
+"Słyszałem niestety, że już nie żyje. Widzisz to zagłębienie w rękojeści? "
+"Kiedyś był w nim niezwykły klejnot. Nadawał ostrzu specjalnych właściwości. "
+"Jeśli znajdziesz klejnot, to mogę Ci go naprawić."
 
 #: conversationlist_brimhaven.json:edrin_2_1:0
+#, fuzzy
 msgid "I think I know where to find that. I'll go and get it."
-msgstr ""
+msgstr "Myślę, że wiem gdzie go znaleźć. Pójdę i zdobędę go."
 
 #: conversationlist_brimhaven.json:edrin_2_1:1
+#, fuzzy
 msgid "OK. Thanks for the information. "
-msgstr ""
+msgstr "OK. Dzięki za informacje. "
 
 #: conversationlist_brimhaven.json:edrin_2_1:2
+#, fuzzy
 msgid "Let's talk about something else."
-msgstr ""
+msgstr "Porozmawiajmy o czymś innym."
 
 #: conversationlist_brimhaven.json:edrin_3_1
+#, fuzzy
 msgid "I recognize this. It was used in something I made, many years ago. It was set into the pommel of a dagger I made for a man called Lawellyn. Alas, I hear he is now dead. It gave the dagger some special properties. If you can find the dagger, I can repair it for you."
 msgstr ""
+"Rozpoznaję to. Zostało użyte w czymś co stworzyłem wiele lat temu. Był "
+"osadzony w rękojeści sztyletu zrobionego dla mężczyzny o imieniu Lawellyn. "
+"Niestety słyszę, że on już nie żyje. Nadawał sztyletowi specjalnych "
+"właściwości. Jeśli znajdziesz sztylet, to mogę Ci go naprawić."
 
 #: conversationlist_brimhaven.json:edrin_3_1:0
+#, fuzzy
 msgid "I think I know where to find that. I'll be right back."
-msgstr ""
+msgstr "Myślę, że wiem gdzie go znaleźć. Zaraz wracam."
 
 #: conversationlist_brimhaven.json:edrin_3_1:1
+#, fuzzy
 msgid "Maybe if I find the time I'll look for it. Let's talk about something else."
 msgstr ""
+"Może jeśli znajdę czas to się zanim rozejrzę. Porozmawiajmy o czymś innym."
 
 #: conversationlist_brimhaven.json:edrin_3_1:2
+#, fuzzy
 msgid "OK. Thanks for the information."
-msgstr ""
+msgstr "OK. Dziękuję za informacje."
 
 #: conversationlist_brimhaven.json:edrin_4_1
+#, fuzzy
 msgid "I recognize these. I made the dagger, many years ago, for a man called Lawellyn. Alas, I hear he is now dead. See this recess in the pommel? The gem you have fits in that. It gave the dagger some special properties. If you wish, I can repair it for you."
 msgstr ""
+"Rozpoznaję je. Stworzyłem sztylet wiele lat temu, dla mężczyzny o imieniu "
+"Lawellyn. Słyszę niestety, że już nie żyje. Widzisz to wgłębienie w "
+"rękojeści? Ten klejnot, który masz pasuje do niego. Nadawał sztyletowi "
+"specjalnych właściwości. Jeśli chcesz to naprawię Ci go."
 
 #: conversationlist_brimhaven.json:edrin_4_1:0
 #: conversationlist_brimhaven.json:edrin_5_0:0
 #: conversationlist_brimhaven.json:edrin_6_0:0
+#, fuzzy
 msgid "How much will that cost?"
-msgstr ""
+msgstr "Ile to będzie kosztowało?"
 
 #: conversationlist_brimhaven.json:edrin_4_1:1
 #: conversationlist_brimhaven.json:edrin_5_0:1
+#, fuzzy
 msgid "I'll think about it."
-msgstr ""
+msgstr "Zastanowię się nad tym."
 
 #: conversationlist_brimhaven.json:edrin_0_0:0
+#, fuzzy
 msgid "Have you repaired the dagger? "
-msgstr ""
+msgstr "Naprawiłeś sztylet? "
 
 #: conversationlist_brimhaven.json:edrin_0_0:1
+#, fuzzy
 msgid "I have a gem. I think it's the right one for the dagger we discussed."
 msgstr ""
+"Mam klejnot. Myślę, że jest odpowiedni do sztyletu o którym rozmawialiśmy."
 
 #: conversationlist_brimhaven.json:edrin_0_0:2
+#, fuzzy
 msgid "I have a dagger. I think it's the one that matches the gem we discussed. "
-msgstr ""
+msgstr "Mam sztylet. Myślę, że pasuje do klejnotu o którym rozmawialiśmy. "
 
 #: conversationlist_brimhaven.json:edrin_0_0:4
+#, fuzzy
 msgid "I'm looking for my brother, Andor. Have you seen anyone around town that looks a bit like me?"
-msgstr ""
+msgstr "Szukam brata, Andora. Widział pan w okolicy kogoś podobnego do mnie?"
 
 #: conversationlist_brimhaven.json:edrin_5_0
+#, fuzzy
 msgid "Yes, that's the one that matches the dagger! Now that I have both pieces, I can repair the dagger for you if you wish."
 msgstr ""
+"Tak, to ten odpowiedni dla sztyletu! Teraz gdy mam obie części mogę Ci "
+"naprawić ten sztylet, jeśli chcesz."
 
 #: conversationlist_brimhaven.json:edrin_6_0
+#, fuzzy
 msgid "Yes, that's the one that matches the gem! Now that I have both pieces, I can repair the dagger for you if you wish."
 msgstr ""
+"Tak, to ten, który pasuje do klejnotu! Teraz, gdy mam obie części mogę "
+"naprawić sztylet, jeśli chcesz."
 
 #: conversationlist_brimhaven.json:edrin_6_0:1
+#, fuzzy
 msgid "I'll think about it"
-msgstr ""
+msgstr "Zastanowię się nad tym"
 
 #: conversationlist_brimhaven.json:edrin_4_2
 #: conversationlist_brimhaven.json:edrin_5_1
 #: conversationlist_brimhaven.json:edrin_6_1
+#, fuzzy
 msgid "The best I can offer is 800 gold. The repair is quite delicate, and if done incorrectly it will just be a dagger with a gem in the pommel, and no more."
 msgstr ""
+"Jedyne co mogę zaoferować to 800 sztuk złota. Naprawa jest dość precyzyjna, "
+"a jeśli zostanie przeprowadzona nieprawidłowo, to będzie jedynie sztylet z "
+"klejnotem i nic więcej."
 
 #: conversationlist_brimhaven.json:edrin_4_2:0
 #: conversationlist_brimhaven.json:edrin_5_1:0
 #: conversationlist_brimhaven.json:edrin_6_1:0
+#, fuzzy
 msgid "That's expensive. I'll think about it."
-msgstr ""
+msgstr "To drogo. Zastanowię się nad tym."
 
 #: conversationlist_brimhaven.json:edrin_4_2:1
 #: conversationlist_brimhaven.json:edrin_5_1:1
 #: conversationlist_brimhaven.json:edrin_6_1:1
+#, fuzzy
 msgid "That's too expensive. I'll keep the dagger and the gem I have."
-msgstr ""
+msgstr "To zbyt drogo. Zatrzymam sztylet oraz klejnot, który mam."
 
 #: conversationlist_brimhaven.json:edrin_4_2:2
 #: conversationlist_brimhaven.json:edrin_5_1:2
 #: conversationlist_brimhaven.json:edrin_6_1:2
+#, fuzzy
 msgid "OK. I agree. Here are the dagger and the gem."
-msgstr ""
+msgstr "OK. Zgadzam się. Oto sztylet i klejnot."
 
 #: conversationlist_brimhaven.json:edrin_4_3a
 #: conversationlist_brimhaven.json:edrin_5_2a
 #: conversationlist_brimhaven.json:edrin_6_2a
+#, fuzzy
 msgid "That is up to you, although I think you have made a mistake."
-msgstr ""
+msgstr "To zależy od Ciebie, myślę jednak, że popełniłeś błąd."
 
 #: conversationlist_brimhaven.json:edrin_4_3b
 #: conversationlist_brimhaven.json:edrin_5_2b
+#, fuzzy
 msgid "This will take me some time. Please come back later to collect the repaired dagger. "
 msgstr ""
+"To zajmie mi trochę czasu. Przyjdź później by odebrać naprawiony sztylet. "
 
 #: conversationlist_brimhaven.json:edrin_7_1a
 #: conversationlist_brimhaven.json:edrin_7_1b
+#, fuzzy
 msgid "Yes, it is done. Here is the repaired dagger.  It's nice to see Lawellyn's dagger brought back to its original glory. There is some mystery about his death. I don't know anything about it though. Maybe someone else in town can tell you more."
 msgstr ""
+"Tak, zrobione. Oto naprawiony sztylet. Miło widzieć, że przywrócono dawno "
+"świetność sztyletowi Lawellyna. Jest pewna tajemnica dotycząca jego śmierci. "
+"Jednak nic o tym nie wiem. Może ktoś inny w mieście będzie mógł Ci "
+"powiedzieć więcej."
 
 #: conversationlist_brimhaven.json:edrin_7_1c
+#, fuzzy
 msgid "No, not yet. You must have patience. I told you this is a difficult repair."
 msgstr ""
+"Nie, jeszcze nie. Musisz mieć cierpliwość. Mówiłem Ci, że trudno to naprawić."
 
 #: conversationlist_brimhaven.json:edrin_4_3c
 #: conversationlist_brimhaven.json:edrin_5_2c
 #: conversationlist_brimhaven.json:edrin_6_2c
+#, fuzzy
 msgid "Feel free to come back when you decide."
-msgstr ""
+msgstr "Jeśli masz ochotę wróć do nas, gdy się zdecydujesz."
 
 #: conversationlist_brimhaven.json:edrin_6_2b
+#, fuzzy
 msgid "This will take me some time. Please come back later to collect the repaired dagger."
-msgstr ""
+msgstr "To zajmie trochę czasu. Przyjdź później, by odebrać naprawiony sztylet."
 
 #: conversationlist_brimhaven.json:brv_shop_owner_1
+#, fuzzy
 msgid "May I help you? [He looks down on you.]"
-msgstr ""
+msgstr "Mogę Ci pomóc? [Patrzy na Ciebie z góry.]"
 
 #: conversationlist_brimhaven.json:brv_shop_owner_1:0
+#, fuzzy
 msgid "I am just checking things out."
-msgstr ""
+msgstr "Tylko się rozglądam."
 
 #: conversationlist_brimhaven.json:brv_shop_owner_2
+#, fuzzy
 msgid "Are you looking for something in particular?"
-msgstr ""
+msgstr "Szukasz czegoś szczególnego?"
 
 #: conversationlist_brimhaven.json:brv_shop_owner_2:0
+#, fuzzy
 msgid "[You point to a very expensive looking necklace] How much is this?"
-msgstr ""
+msgstr "[Wskazujesz na bardzo drogi naszyjnik] Ile to kosztuje?"
 
 #: conversationlist_brimhaven.json:brv_shop_owner_3
+#, fuzzy
 msgid "I don't think this would fit you."
-msgstr ""
+msgstr "Nie sądzę by Ci to pasowało."
 
 #: conversationlist_brimhaven.json:brv_shop_owner_3:0
+#, fuzzy
 msgid "Well, I didn't ask if it would fit. I asked how much it was."
 msgstr ""
+"W porządku, nie pytałem czy pasowałoby mi. Pytałem ile by to kosztowało."
 
 #: conversationlist_brimhaven.json:brv_shop_owner_4
+#, fuzzy
 msgid "It is very expensive. I don't think we have anything for you. You are obviously in the wrong place. Please leave."
 msgstr ""
+"To bardzo drogie. Nic tu nie mam dla Ciebie. Najwyraźniej jesteś w złym "
+"miejscu. Odejdź."
 
 #: conversationlist_brimhaven.json:brv_shop_owner_4:0
+#, fuzzy
 msgid "[You slowly pull out your coin bag and show him your gold.]"
-msgstr ""
+msgstr "[Powoli wyjmujesz swą sakwę i pokazujesz mu złoto.]"
 
 #: conversationlist_brimhaven.json:brv_shop_guard_20
+#, fuzzy
 msgid "Hello again, Sir."
-msgstr ""
+msgstr "Witam ponownie, panie."
 
 #: conversationlist_brimhaven.json:brv_shop_guard_10
+#, fuzzy
 msgid "I will keep an eye on you."
-msgstr ""
+msgstr "Będę Cię pilnował."
 
 #: conversationlist_brimhaven.json:brv_shop_owner_20
+#, fuzzy
 msgid "How can I serve you, Sir?"
-msgstr ""
+msgstr "W czym mogę służyć, panie?"
 
 #: conversationlist_brimhaven.json:brv_shop_owner_20:0
+#, fuzzy
 msgid "Show me your wares."
-msgstr ""
+msgstr "Pokaż mi swoje towary."
 
 #: conversationlist_brimhaven.json:brv_shop_owner_20:1
+#, fuzzy
 msgid "I am looking for a necklace in our family colors of red, green and white, that I would like to give as a present to my father."
 msgstr ""
+"Szukam naszyjnika w naszych rodzinnych barwach, czerwieni, zieleni i bieli, "
+"który mógłbym dać ojcu jako prezent."
 
 #: conversationlist_brimhaven.json:brv_shop_owner_10
+#, fuzzy
 msgid ""
 "[His eyes widen.] Oh\n"
 "I was just kidding, child... I mean... Sir!"
 msgstr ""
+"[Jego oczy rozszerzają się.] Och\n"
+"Tylko żartowałem, dzieciaku... Miałem na myśli... Panie!"
 
 #: conversationlist_brimhaven.json:brv_shop_owner_10:0
+#, fuzzy
 msgid "Show me your wares, you worm."
-msgstr ""
+msgstr "Pokaż mi swoje towary, ty gnido."
 
 #: conversationlist_brimhaven.json:brv_shop_owner_30
+#, fuzzy
 msgid "No problem, Sir. I can arrange one for you. Just tell me how much you want to spend."
 msgstr ""
+"Nie ma problemu, panie. Mogę Ci jeden załatwić. Powiedz mi ile chcesz wydać."
 
 #: conversationlist_brimhaven.json:brv_shop_owner_30:1
+#, fuzzy
 msgid "Give me a necklace for 5 gold coins."
-msgstr ""
+msgstr "Daj mi naszyjnik za 5 sztuk złota."
 
 #: conversationlist_brimhaven.json:brv_shop_owner_30:2
+#, fuzzy
 msgid "Give me a necklace for 500 gold coins."
-msgstr ""
+msgstr "Daj mi naszyjnik za 500 sztuk złota."
 
 #: conversationlist_brimhaven.json:brv_shop_owner_30:3
+#, fuzzy
 msgid "Give me a necklace for 50,000 gold coins."
-msgstr ""
+msgstr "Daj mi naszyjnik za 50,000 sztuk złota."
 
 #: conversationlist_brimhaven.json:brv_shop_owner_40_3
+#, fuzzy
 msgid "Take this wonderful necklace. Your father will be very happy."
-msgstr ""
+msgstr "Weź ten cudowny naszyjnik. Twój ojciec będzie bardzo szczęśliwy."
 
 #: conversationlist_brimhaven.json:brv_shop_owner_40_2
+#, fuzzy
 msgid "Here is the necklace."
-msgstr ""
+msgstr "Oto naszyjnik."
 
 #: conversationlist_brimhaven.json:brv_shop_owner_40_1
+#, fuzzy
 msgid "Take this... valuable necklace. Your father will be proud to wear it."
-msgstr ""
+msgstr "Weź ten... wartościowy naszyjnik. Twój ojciec będzie dumny, że go nosi."
 
 #: conversationlist_brimhaven.json:mikhail_present_10
+#, fuzzy
 msgid "I asked you to search for your brother Andor and you did not find out anything and instead you are bringing me a necklace? Go and search for your brother!"
 msgstr ""
+"Prosiłem byś odszukał brata Andora, a nie Ty nic nie znalazłeś, zamiast tego "
+"przyniosłeś mi naszyjnik? Idź szukać brata!"
 
 #: conversationlist_brimhaven.json:mikhail_present_10:0
+#, fuzzy
 msgid "Sorry father. I will go and search for Andor."
-msgstr ""
+msgstr "Przykro mi tato. Pójdę i poszukam Andora."
 
 #: conversationlist_brimhaven.json:mikhail_present_20
+#, fuzzy
 msgid "Oh, you are such a nice child."
-msgstr ""
+msgstr "Och, jesteś tak miłym dzieckiem."
 
 #: conversationlist_brimhaven.json:mikhail_present_20:0
+#, fuzzy
 msgid "[Give him the cheap necklace]"
-msgstr ""
+msgstr "[Daj mu tani naszyjnik]"
 
 #: conversationlist_brimhaven.json:mikhail_present_20:1
+#, fuzzy
 msgid "[Give him the necklace]"
-msgstr ""
+msgstr "[Daj mu naszyjnik]"
 
 #: conversationlist_brimhaven.json:mikhail_present_20:2
+#, fuzzy
 msgid "[Give him the expensive necklace]"
-msgstr ""
+msgstr "[Daj mu drogi naszyjnik]"
 
 #: conversationlist_brimhaven.json:mikhail_present_20:3
+#, fuzzy
 msgid "Maybe I promised too much."
-msgstr ""
+msgstr "Może zbyt dużo naobiecywałem."
 
 #: conversationlist_brimhaven.json:mikhail_present_20_3
+#, fuzzy
 msgid "Oh, where did you get the money to buy this? Maybe I don't want to know..."
-msgstr ""
+msgstr "Och, skąd wziąłeś pieniądze by to kupić? Może nie chcę wiedzieć..."
 
 #: conversationlist_brimhaven.json:mikhail_present_20_2
+#, fuzzy
 msgid "Thank you my child for this wonderful necklace. Oh and it is in our family colors!"
 msgstr ""
+"Dziękuję dziecko za ten cudowny naszyjnik. Och i jest w naszych rodzinnych "
+"kolorach!"
 
 #: conversationlist_brimhaven.json:mikhail_present_20_1
+#, fuzzy
 msgid "Hm, thank you. Looks like you spent all your pocket money for this."
-msgstr ""
+msgstr "Hmm, dziękuję. Wygląda na to, że wydałeś całe kieszonkowe."
 
 #: conversationlist_brimhaven.json:mikhail_news_10
+#, fuzzy
 msgid "Did you find out something?"
-msgstr ""
+msgstr "Znalazłeś coś?"
 
 #: conversationlist_brimhaven.json:mikhail_news_10:0
+#, fuzzy
 msgid "I asked around in Crossglen and they sent me to Fallhaven."
-msgstr ""
+msgstr "Wypytywałem w Crossglen i wysłali mnie do Fallhaven."
 
 #: conversationlist_brimhaven.json:mikhail_news_10:1
+#, fuzzy
 msgid "Someone in Fallhaven told me that he met Andor and that he was searching for a man called Lodar."
 msgstr ""
+"Ktoś w Fallahaven powiedział mi, że spotkał Andora, a ten poszukiwał "
+"mężczyzny o imieniu Lodar."
 
 #: conversationlist_brimhaven.json:mikhail_news_10:2
+#, fuzzy
 msgid "I met a man called Lodar and he told me that Andor probably went to Nor City."
 msgstr ""
+"Spotkałem mężczyznę zwanego Lodar i powiedział mi, że Andor prawdopodobnie "
+"wybrał się do Nor City."
 
 #: conversationlist_brimhaven.json:mikhail_news_10:3
+#, fuzzy
 msgid "No I did not find out anything yet."
-msgstr ""
+msgstr "Nie, jeszcze niczego się nie dowiedziałem."
 
 #: conversationlist_brimhaven.json:mikhail_news_40
+#, fuzzy
 msgid "Did you go to Nor City?"
-msgstr ""
+msgstr "Poszedłeś do Nor City?"
 
 #: conversationlist_brimhaven.json:mikhail_news_30
+#, fuzzy
 msgid "Did you find this Lodar?"
-msgstr ""
+msgstr "Znalazłeś Lodara?"
 
 #: conversationlist_brimhaven.json:mikhail_news_30:0
+#, fuzzy
 msgid "Yes, and he told me that Andor probably went to Nor City."
-msgstr ""
+msgstr "Tak, powiedział mi, że Andor prawdopodobnie poszedł do Nor City."
 
 #: conversationlist_brimhaven.json:mikhail_news_50
+#, fuzzy
 msgid "Thank you my child. Keep on searching for Andor."
-msgstr ""
+msgstr "Dziękuję moje dziecko. Szukaj dalej Andora."
 
 #: conversationlist_brimhaven.json:mikhail_news_20
+#, fuzzy
 msgid "Did you go the dangerous way to Fallhaven?"
-msgstr ""
+msgstr "Poszedłeś niebezpieczną drogą do Fallhaven?"
 
 #: conversationlist_brimhaven.json:mikhail_news_20:0
+#, fuzzy
 msgid "Yes and someone in Fallhaven told me that he met Andor and that he was searching for a man called Lodar."
 msgstr ""
+"Tak i ktoś w Fallhaven powiedział mi, że spotkał Andora, a on szukał "
+"mężczyzny o imieniu Lodar."
 
 #: conversationlist_brimhaven.json:mikhail_news_20:1
+#, fuzzy
 msgid "Then I met a man called Lodar and he told me that Andor probably went to Nor City."
 msgstr ""
+"Wtedy spotkałem mężczyznę zwanego Lodar i powiedział mi, że Andor "
+"prawdopodobnie poszedł do Nor City."
 
 #: conversationlist_brimhaven.json:brv_wait_patrol
+#, fuzzy
 msgid "[I better wait and talk to the soldiers about what they did with my belongings]"
 msgstr ""
+"[Lepiej poczekam i porozmawiam z żołnierzami o tym co zrobili z moimi "
+"rzeczami]"
 
 #: conversationlist_brimhaven.json:brv_patrol_stop_hero
+#, fuzzy
 msgid ""
 "Stop in the name of Feygard!\n"
 "\n"
 "[The soldiers approach and search your belongings]"
 msgstr ""
+"Stój w imieniu Feygardu!\n"
+"\n"
+"[Żołnierze podchodzą i przeszukują Twoje rzeczy]"
 
 #: conversationlist_brimhaven.json:brv_patrol_roaming_10
+#, fuzzy
 msgid ""
 "You are carrying a lot of gear. Any disallowed substances?\n"
 "\n"
 "You have to wait while I check your belongings."
 msgstr ""
+"Nosisz ze sobą dużo sprzętu. Jakieś niedozwolone substancje?\n"
+"\n"
+"Musisz poczekać zanim sprawdzę Twoje rzeczy."
 
 #: conversationlist_brimhaven.json:brv_patrol_roaming_20
+#, fuzzy
 msgid ""
 "You again. \n"
 "\n"
 "You have to wait while I check your belongings."
 msgstr ""
+"To znowu Ty.\n"
+"\n"
+"Musisz poczekać zanim sprawdzę Twoje rzeczy."
 
 #: conversationlist_brimhaven.json:brv_patrol_roaming_100
+#, fuzzy
 msgid "Everything is OK. Stay clean."
-msgstr ""
+msgstr "Wszystko w porządku. Zachowaj ostrożność."
 
 #: conversationlist_brimhaven.json:brv_patrol_bonemeals_removed
+#, fuzzy
 msgid ""
 "What's this? Smells like Bonemeal!\n"
 "\n"
@@ -36645,394 +37726,570 @@ msgid ""
 "\n"
 "Keep away from illegal stuff. Now go on your way."
 msgstr ""
+"Co to jest? Śmierdzi jak mączka kostna!\n"
+"\n"
+"Mączka jest nielegalne i zakazane przez prawo Feygardu. Musimy ją "
+"skonfiskować.\n"
+"[Oddaje Ci wszystkie Twoje rzeczy, ale zatrzymuje mączki kostne]\n"
+"\n"
+"Trzymaj się z dala od nielegalnych rzeczy. Teraz idź sobie."
 
 #: conversationlist_brimhaven.json:truric_1_0
+#, fuzzy
 msgid "I am a weaponsmith. I have a good selection at the moment. Would you like to take a look?"
 msgstr ""
+"Jestem kowalem wytwarzającym broń. W tej chwili mam niezłą kolekcję. Czy "
+"chcesz ją zobaczyć?"
 
 #: conversationlist_brimhaven.json:truric_1_0:1
+#, fuzzy
 msgid "No thanks. I need to move on."
-msgstr ""
+msgstr "Nie dzięki. Muszę iść dalej."
 
 #: conversationlist_brimhaven.json:truric_1_0:2
+#, fuzzy
 msgid "Not now. I wanted to ask you about something else. I am looking for my brother Andor. He looks a bit like me. Have you seen him?"
 msgstr ""
+"Nie teraz. Chciałem spytać o coś innego. Szukam brata Andora. Trochę mnie "
+"przypomina. Czy go widziałeś?"
 
 #: conversationlist_brimhaven.json:truric_2_0
+#, fuzzy
 msgid "No, sorry, but I haven't. I spend most of my time indoors working on my trade though. He could have passed though town without me noticing. "
 msgstr ""
+"Nie, przykro mi, ale nie widziałem. Spędzam większość czasu wewnątrz "
+"zajmując się swoim fachem. Mógł przejść przez miasto nie zauważony przeze "
+"mnie. "
 
 #: conversationlist_brimhaven.json:truric_2_0:0
+#, fuzzy
 msgid "Do you get many travelers here?"
-msgstr ""
+msgstr "Przechodzi tutaj wielu podróżników?"
 
 #: conversationlist_brimhaven.json:truric_2_1
+#, fuzzy
 msgid "We get quite a few, yes. We are not on the main road, but many paths pass through Brimhaven. "
 msgstr ""
+"Całkiem sporo, tak. To nie jest główna droga, ale wiele ścieżek przechodzi "
+"przez Brimhaven. "
 
 #: conversationlist_brimhaven.json:truric_2_2
+#, fuzzy
 msgid "Few stay here though. We only have a few beds available at the inn on the east side of town. "
 msgstr ""
+"Nieliczni jednak zostają tutaj. Mamy kilka łóżek dostępnych w zajeździe we "
+"wschodniej części miasta. "
 
 #: conversationlist_brimhaven.json:truric_2_2:0
+#, fuzzy
 msgid "OK. Thanks for the information. I need to go."
-msgstr ""
+msgstr "OK. Dzięki za informacje. Muszę iść."
 
 #: conversationlist_brimhaven.json:truric_2_2:1
+#, fuzzy
 msgid "OK. Thanks for the information. What do you sell?"
-msgstr ""
+msgstr "OK. Dzięki za informacje. Co masz na sprzedaż?"
 
 #: conversationlist_brimhaven.json:brv_eagle
+#, fuzzy
 msgid "Rrrrrraaaaaaa"
-msgstr ""
+msgstr "Rrrrrraaaaaaa"
 
 #: conversationlist_brimhaven.json:brv_fortune_stop_talking_eagle
+#, fuzzy
 msgid "Stop annoying my pet!"
-msgstr ""
+msgstr "Przestań drażnić mojego zwierzaka!"
 
 #: conversationlist_brimhaven.json:brv_fortune_choice
+#, fuzzy
 msgid "Anything more I can help you with?"
-msgstr ""
+msgstr "Jest coś w czym jeszcze mogę pomóc?"
 
 #: conversationlist_brimhaven.json:brv_fortune_choice:0
+#, fuzzy
 msgid "Please tell me something that you can see about me or my brother Andor. [Give him 100 gold]"
 msgstr ""
+"Powiedz mi co widzisz na temat mojej przyszłości oraz mojego brata. [Daj mu "
+"100 sztuk złota]"
 
 #: conversationlist_brimhaven.json:brv_fortune_choice:1
+#, fuzzy
 msgid "I don't have 100 gold to pay you."
-msgstr ""
+msgstr "Nie mam 100 sztuk złota, by Ci zapłacić."
 
 #: conversationlist_brimhaven.json:brv_fortune_choice:2
+#, fuzzy
 msgid "Maybe I can help you."
-msgstr ""
+msgstr "Może w czymś pomóc."
 
 #: conversationlist_brimhaven.json:brv_fortune_andor_10
+#, fuzzy
 msgid "I see you talking to your brother, somewhere far from here in a big city. Feygard or Nor City, I think."
 msgstr ""
+"Widzę, że rozmawiasz z bratem, gdzieś daleko stąd, w jakimś wielkim mieście. "
+"Feygard albo Nor City, myślę."
 
 #: conversationlist_brimhaven.json:brv_fortune_andor_20
+#, fuzzy
 msgid "I see your brother bound by dark forces."
-msgstr ""
+msgstr "Widzę, że Twój brat jest powiązany z mrocznymi siłami."
 
 #: conversationlist_brimhaven.json:brv_fortune_andor_30
+#, fuzzy
 msgid "Your brother is in league with dark forces."
-msgstr ""
+msgstr "Twój brat jest w zmowie z ciemnymi siłami."
 
 #: conversationlist_brimhaven.json:brv_fortune_andor_31
+#, fuzzy
 msgid "He needs your help. Something horrible ... argh."
-msgstr ""
+msgstr "Potrzebuje Twojej pomocy. Coś okropnego ... argh."
 
 #: conversationlist_brimhaven.json:brv_fortune_andor_35
+#, fuzzy
 msgid "I can't see more. My view seems to be blocked."
-msgstr ""
+msgstr "Nie widzę nic więcej. Moja wizja wydaje się być zablokowana."
 
 #: conversationlist_brimhaven.json:brv_fortune_hero_10
+#, fuzzy
 msgid "I see you walking up a path on a mountain. Beware! There is something wating for you ahead. I see you being attacked by monsters and they kill you."
 msgstr ""
+"Widzę, że idziesz górską ścieżką. Strzeż się! Coś się czai za rogiem. Widzę, "
+"że jesteś atakowany przez potwory i zabijają Cię."
 
 #: conversationlist_brimhaven.json:brv_fortune_hero_20
+#, fuzzy
 msgid "I see you frozen to stone on a pedestal admist many flowers. Or is it a statue with your looks?"
 msgstr ""
+"Widzę, że zamieniłeś się w kamień na piedestale pośród wielu kwiatów. Albo "
+"to rzeźba, która wygląda jak Ty?"
 
 #: conversationlist_brimhaven.json:brv_fortune_hero_30
+#, fuzzy
 msgid "I see a thief. He will take something from you."
-msgstr ""
+msgstr "Widzę złodzieja. Coś Ci ukradnie."
 
 #: conversationlist_brimhaven.json:brv_fortune_hero_40
+#, fuzzy
 msgid "I can see you in a prison cell but I cannot be sure where it is."
-msgstr ""
+msgstr "Widzę, że jesteś w więzieniu, ale nie jestem pewien gdzie."
 
 #: conversationlist_brimhaven.json:brv_fortune_hero_50
+#, fuzzy
 msgid "I can see you talking to some nobles in a big city. Feygard or Nor City, I think."
 msgstr ""
+"Widzę, że rozmawiasz z jakimiś szlachcicami w wielkim mieście. Feygard lub "
+"Nor City, myślę."
 
 #: conversationlist_brimhaven.json:brv_fortune_hero_70
+#, fuzzy
 msgid "I see you picking up a lot of coins from a hole in the ground. Can it be behind your father's house?"
 msgstr ""
+"Widzę, że zbierasz sporo monet z dziury w ziemi. Czy to może być za domem "
+"twojego ojca?"
 
 #: conversationlist_brimhaven.json:brv_fortune_hero_130
+#, fuzzy
 msgid "I see a man pacing up and down in a little house. He seems to be waiting for someone."
 msgstr ""
+"Widzę mężczyznę poruszającego się w tę i z powrotem w małym domu. Wydaje się "
+"czekać na kogoś."
 
 #: conversationlist_brimhaven.json:brv_fortune_hero_130:0
+#, fuzzy
 msgid "That must be my father Mikhail, he is waiting for me and my brother!"
-msgstr ""
+msgstr "To musi być mój ojciec Mikhail, czeka na mnie i brata!"
 
 #: conversationlist_brimhaven.json:brv_fortune_hero_131
+#, fuzzy
 msgid "Then go and get your brother and go home to him."
-msgstr ""
+msgstr "W takim razie idź zabierz brata i wróćcie do niego."
 
 #: conversationlist_brimhaven.json:brv_playing_children
+#, fuzzy
 msgid "Don't disturb our game. Go away!"
-msgstr ""
+msgstr "Nie przerywaj gry. Idź stąd!"
 
 #: conversationlist_brimhaven.json:brv_playing_children:1
+#, fuzzy
 msgid "What are you playing?"
-msgstr ""
+msgstr "W co gracie?"
 
 #: conversationlist_brimhaven.json:brv_playing_children_10
+#, fuzzy
 msgid ""
 "We are practicing 'Ba game'.\n"
 "\n"
 "Once a year the west and the east parts of the town play against each other. It can be very competitive."
 msgstr ""
+"Trenujemy \"Grę Ba\".\n"
+"\n"
+"Raz w roku zachodnia oraz wschodnia część miasta gra przeciwko sobie. To "
+"może być bardzo wymagające."
 
 #: conversationlist_brimhaven.json:brv_ball
+#, fuzzy
 msgid "[This looks like a ball made of leather]"
-msgstr ""
+msgstr "[Wygląda to na skórzaną piłkę]"
 
 #: conversationlist_brimhaven.json:brv_ball:0
+#, fuzzy
 msgid "[Kick the ball as hard as possible]"
-msgstr ""
+msgstr "[Kopnij piłkę tak mocno jak potrafisz]"
 
 #: conversationlist_brimhaven.json:brv_ball_10
+#, fuzzy
 msgid "[You miss the ball and fall on your back]"
-msgstr ""
+msgstr "[Nie trafiasz w piłkę i upadasz na plecy]"
 
 #: conversationlist_brimhaven.json:brv_fortune_end_10
+#, fuzzy
 msgid "Then goodbye. I know you will return some time in the future."
-msgstr ""
+msgstr "W takim razie żegnaj. Wiem, że kiedyś wrócisz w przyszłości."
 
 #: conversationlist_brimhaven.json:brv_fortune_300
+#, fuzzy
 msgid "Yes, that would be good. I already have an idea. But not now. Please come back later and ask me again."
 msgstr ""
+"Tak, to byłoby dobre. Mam już nawet pomysł. Jeszcze nie teraz. Wróć później "
+"i spytaj mnie ponownie."
 
 #: conversationlist_brimhaven.json:brv_fortune_back
+#, fuzzy
 msgid "Welcome back."
-msgstr ""
+msgstr "Witaj ponownie."
 
 #: conversationlist_brimhaven.json:brv_fortune
+#, fuzzy
 msgid "Welcome to my house. Please come in."
-msgstr ""
+msgstr "Witaj w moim domu. Proszę wejdź."
 
 #: conversationlist_brimhaven.json:brv_fortune_20
+#, fuzzy
 msgid "I can see what others can't see."
-msgstr ""
+msgstr "Widzę to czego nie widzą inni."
 
 #: conversationlist_brimhaven.json:brv_fortune_20:0
+#, fuzzy
 msgid "Really? I am searching..."
-msgstr ""
+msgstr "Naprawdę? Szukam..."
 
 #: conversationlist_brimhaven.json:brv_fortune_30
+#, fuzzy
 msgid "Wait"
-msgstr ""
+msgstr "Czekaj"
 
 #: conversationlist_brimhaven.json:brv_fortune_40
+#, fuzzy
 msgid "I feel that you are on a search... at the beginning of a long and dangerous search for a relative of yours."
 msgstr ""
+"Czuję, że jesteś w trakcie poszukiwań... na początku długich i "
+"niebezpiecznych poszukiwań Twojego krewnego."
 
 #: conversationlist_brimhaven.json:brv_fortune_40:0
+#, fuzzy
 msgid "I am impressed. Can you tell me more about my brother Andor or me?"
 msgstr ""
+"Jestem pod wrażeniem. Może mi powiedzieć coś więcej o mnie i moim bracie "
+"Andorze?"
 
 #: conversationlist_brimhaven.json:brv_fortune_40:1
+#, fuzzy
 msgid "That doesn't impress me."
-msgstr ""
+msgstr "Nie robi to na mnie wrażenia."
 
 #: conversationlist_brimhaven.json:brv_fortune_10
+#, fuzzy
 msgid "What has brought you to me? It looks like you might need my help."
 msgstr ""
+"Co Cię do mnie sprowadziło? Wygląda na to, że możesz potrzebować mojej "
+"pomocy."
 
 #: conversationlist_brimhaven.json:brv_fortune_10:0
+#, fuzzy
 msgid "What help can you offer?"
-msgstr ""
+msgstr "Jakiej pomocy możesz mi udzielić?"
 
 #: conversationlist_brimhaven.json:brv_fortune_10:1
+#, fuzzy
 msgid "I am searching..."
-msgstr ""
+msgstr "Szukam..."
 
 #: conversationlist_brimhaven.json:brv_fortune_50
+#, fuzzy
 msgid "It will cost you 100 gold."
-msgstr ""
+msgstr "Będzie Cię to kosztowało 100 sztuk złota."
 
 #: conversationlist_brimhaven.json:brv_fortune_50:0
+#, fuzzy
 msgid "[Give him 100 gold]"
-msgstr ""
+msgstr "[Daj mu 100 sztuk złota]"
 
 #: conversationlist_brimhaven.json:crossglen_fortune_teller
+#, fuzzy
 msgid "This looks like an undisturbed place."
-msgstr ""
+msgstr "Wygląda to na niezakłócone miejsce."
 
 #: conversationlist_brimhaven.json:crossglen_fortune_teller:0
 msgid "[Let's have a pee]"
 msgstr ""
 
 #: conversationlist_brimhaven.json:crossglen_fortune_teller:1
+#, fuzzy
 msgid "Could this be the place? [Start digging with my hands]"
-msgstr ""
+msgstr "Czy to może być to miejsce? [Zacznij kopać rękami]"
 
 #: conversationlist_brimhaven.json:crossglen_fortune_teller_10
+#, fuzzy
 msgid "After digging for some time you find a lot of gold coins! You take them and then close the hole."
 msgstr ""
+"Po kopaniu przez jakiś czas znajdujesz wiele złotych monet! Bierzesz je i "
+"zamykasz otwór."
 
 #: conversationlist_brimhaven.json:brv_fortune_come_back_later
+#, fuzzy
 msgid "I am tired and can't see anything new now. If you come back in a little while maybe I can tell you more. "
 msgstr ""
+"Jestem zmęczony i nie widzę już nic nowego. Może będę mógł Ci więcej "
+"powiedzieć jeśli wrócisz za jakiś czas. "
 
 #: conversationlist_brimhaven.json:brv_fortune_come_back_much_later
+#, fuzzy
 msgid "I told you all I can see for now. But you can come back to me in a few months when you have had new experiences."
 msgstr ""
+"Powiedziałem Ci wszystko co widzę. Ale możesz wrócić do mnie za kilka "
+"miesięcy kiedy zdobędziesz nowe doświadczenia."
 
 #: conversationlist_brimhaven.json:blackjack_play_higher_amounts
+#, fuzzy
 msgid "Now let's stop this child's game and play for higher amounts."
-msgstr ""
+msgstr "Skończmy teraz z tą dziecinadą i zagrajmy o wyższe kwoty."
 
 #: conversationlist_brimhaven.json:blackjack_bet
 msgid "What is your 17+4 bet?"
 msgstr ""
 
 #: conversationlist_brimhaven.json:blackjack_bet:0
+#, fuzzy
 msgid "1 Gold"
-msgstr ""
+msgstr "1 sztuka złota"
 
 #: conversationlist_brimhaven.json:blackjack_bet:1
+#, fuzzy
 msgid "2 Gold"
-msgstr ""
+msgstr "2 sztuki złota"
 
 #: conversationlist_brimhaven.json:blackjack_bet:2
+#, fuzzy
 msgid "5 Gold"
-msgstr ""
+msgstr "5 sztuk złota"
 
 #: conversationlist_brimhaven.json:blackjack_bet:3
+#, fuzzy
 msgid "10 Gold"
-msgstr ""
+msgstr "10 sztuk złota"
 
 #: conversationlist_brimhaven.json:stoutford_grave_1
+#, fuzzy
 msgid "Here lies Adegil, the tree cutter, killed by a falling branch."
-msgstr ""
+msgstr "Tu leży Adegil, ścinający drzewa, zabity przez spadającą gałąź."
 
 #: conversationlist_brimhaven.json:stoutford_grave_2
+#, fuzzy
 msgid "Here lies Cadwait. One day, he picked the wrong pocket."
-msgstr ""
+msgstr "Tu leży Cadwait. Kiedyś okradł niewłaściwą osobę."
 
 #: conversationlist_brimhaven.json:stoutford_grave_3
+#, fuzzy
 msgid "Here lies Rumpt. His skin was so orange that many thought he was a monster."
 msgstr ""
+"Tu leży Rumpt. Jego skóra była zbyt pomarańczowa i wielu myślało, że jest "
+"potworem."
 
 #: conversationlist_brimhaven.json:stoutford_grave_4
+#, fuzzy
 msgid "Here lies Orocho, the master cook, who died of food poisoning."
 msgstr ""
+"Tu leży Orocho, mistrz kucharski, który zmarł z powodu zatrucia pokarmowego."
 
 #: conversationlist_brimhaven.json:stoutford_grave_5
+#, fuzzy
 msgid "Here lies Rurog, the master builder who fell through his own roof."
 msgstr ""
+"Tu leży Rurog, mistrz budowniczy, który spadł z spadł przez własnych dach."
 
 #: conversationlist_brimhaven.json:brv_ball_11
+#, fuzzy
 msgid "You kick like a baby. Ha, ha."
-msgstr ""
+msgstr "Kopiesz jak dziecko. Ha, ha."
 
 #: conversationlist_brimhaven.json:sign_brimhaven1
+#, fuzzy
 msgid "Welcome to Brimhaven"
-msgstr ""
+msgstr "Witamy w Brimhaven"
 
 #: conversationlist_brimhaven.json:brv_temple_entrance_guard
+#, fuzzy
 msgid "No one is allowed in our sacred temple at this time."
-msgstr ""
+msgstr "W tym czasie nikt nie może przebywać w naszej świętej świątyni."
 
 #: conversationlist_brimhaven.json:thelry_1
+#, fuzzy
 msgid "No, sorry, I haven't seen anyone like that."
-msgstr ""
+msgstr "Nie, przykro mi, nikogo takiego nie widziałem."
 
 #: conversationlist_brimhaven.json:thelry_1:0
+#, fuzzy
 msgid "OK. Thanks. What do you have to sell?"
-msgstr ""
+msgstr "OK. Dzięki. Co masz na sprzedaż?"
 
 #: conversationlist_brimhaven.json:fallhaven_potions_offer_crystal_vial_too_expensive
+#, fuzzy
 msgid "Well, that's the price."
-msgstr ""
+msgstr "Świetnie, to dopiero cena."
 
 #: conversationlist_brimhaven.json:anakis_deny_help
+#, fuzzy
 msgid "Oh, thats's sad."
-msgstr ""
+msgstr "Och, to smutne."
 
 #: conversationlist_brimhaven.json:basiliskcave2_warn_hint
+#, fuzzy
 msgid ""
 "You see an old Basilisk at the end of the room that glances at you. With a feeling of deadly danger your movements get slower the nearer you go.\n"
 "\n"
 "(Maybe I could find something to protect myself from its glance?)"
 msgstr ""
+"Na końcu pokoju widzisz starego bazyliszka, które spogląda na Ciebie. W "
+"poczuciu śmiertelnego niebezpieczeństwa Twoje ruchy są coraz wolniejsze, im "
+"bardziej się zbliżasz.\n"
+"\n"
+"(Może mógłbym znaleźć coś by ochroniło mnie przed jego spojrzeniem?)"
 
 #: conversationlist_brimhaven.json:basiliskcave2_blocked_10
+#, fuzzy
 msgid "You can't go nearer to the Basilisk while your eyes meet the Basilisk's eyes."
 msgstr ""
+"Nie możesz zbliżyć się do bazyliszka gdy Twoje oczy spotykają się z jego "
+"oczami."
 
 #: conversationlist_brimhaven.json:basiliskcave2_blocked_20
+#, fuzzy
 msgid "(What am I doing here. I should go and find Juttarka before I come back here.)"
-msgstr ""
+msgstr "(Co ja tutaj robię. Powinienem iść i odnaleźć Juttarkę zanim tu wrócę.)"
 
 #: conversationlist_brimhaven.json:basiliskcave2_blocked_30
+#, fuzzy
 msgid "(What am I doing here. I should go and talk to Anakis about the statue I found before I come back here.)"
 msgstr ""
+"(Co ja tutaj robię. Powinienem iść i porozmawiać z Anakisem o posągu, który "
+"znalazłem zanim tu wrócę.)"
 
 #: conversationlist_brimhaven.json:basiliskcave2_blocked_40
+#, fuzzy
 msgid "(Maybe I should try to find a mirror down here that I could wear to protect me from the glance so I could go nearer to the Basilisk.)"
 msgstr ""
+"(Może powinienem tu na dole znaleźć lustro, które chroniłoby mnie przed "
+"spojrzeniem, abym mógł podejść bliżej bazyliszka.)"
 
 #: conversationlist_brimhaven.json:basiliskcave2_blocked_50
+#, fuzzy
 msgid "(I better leave the Basilisk.)"
-msgstr ""
+msgstr "(Lepiej zostawię bazyliszka.)"
 
 #: conversationlist_brimhaven.json:brv_flood_key_set3_20
+#, fuzzy
 msgid "You have made it!"
-msgstr ""
+msgstr "Udało Ci się!"
 
 #: conversationlist_brimhaven.json:brv_flood_key_set3_20:0
+#, fuzzy
 msgid "Phew, I thought that would be my end!"
-msgstr ""
+msgstr "Uff, myślałem, że to będzie mój koniec!"
 
 #: conversationlist_brimhaven.json:brv_brothers_another_axe_10
+#, fuzzy
 msgid "So lucky! Another small hand axe lies here."
-msgstr ""
+msgstr "Tak bardzo szczęśliwy! Kolejna siekierka leży tutaj."
 
 #: conversationlist_brimhaven2.json:brv_school_check_duel_14a
+#, fuzzy
 msgid "When the other students see how you killed Golin, a panic breaks out. Screaming, they all run out of the building."
 msgstr ""
+"Gdy inni studenci widzą jak zabiłeś Golina wybucha panika. Wszyscy wybiegają "
+"z budynku krzycząc."
 
 #: conversationlist_brimhaven2.json:brv_school_check_duel_20
+#, fuzzy
 msgid "When the little students see how you killed their teacher, a panic breaks out. Screaming, they all run out of the building. Just Golin remains."
 msgstr ""
+"Gdy inni studenci widzą jak zabiłeś ich nauczyciela, wybucha panika. Wszyscy "
+"wybiegają z budynku krzycząc. Tylko Golin pozostaje."
 
 #: conversationlist_brimhaven2.json:brv_school_check_duel_38
+#, fuzzy
 msgid "A panic breaks out. Screaming, all the little students run out of the building. Just Golin remains."
 msgstr ""
+"Wybucha panika. Wszyscy studenci wybiegają z budynku krzycząc. Tylko Golin "
+"pozostaje."
 
 #: conversationlist_brimhaven2.json:brv_school_emptyseat
+#, fuzzy
 msgid "No. That is not acceptable. You can't be late to school and then sit in the last bench."
 msgstr ""
+"Nie, to niedopuszczalne. Nie możesz się spóźniać do szkoły, a potem siadać w "
+"ostatniej ławce."
 
 #: conversationlist_brimhaven2.json:brv_school_enter_10
+#, fuzzy
 msgid "Who do we have here? A new kid? You are late for class. Sit down now, and be punctual next time."
 msgstr ""
+"Kogo my tu mamy? Nowy dzieciak? Spóźniłeś się na zajęcia. Usiądź, a "
+"następnym razem bądź punktualnie."
 
 #: conversationlist_brimhaven2.json:brv_school_enter_20
+#, fuzzy
 msgid "No walking around in my lessons! Please sit down."
-msgstr ""
+msgstr "Żadnego chodzenia na moich lekcjach! Proszę siadać."
 
 #: conversationlist_brimhaven2.json:brv_school_enter_90
 #: conversationlist_brimhaven2.json:brv_school_seated_14
 #: conversationlist_brimhaven2.json:brv_school_seated_22
+#, fuzzy
 msgid "No talking, please."
-msgstr ""
+msgstr "Proszę nie gadać."
 
 #: conversationlist_brimhaven2.json:brv_school_history_10
+#, fuzzy
 msgid "In the glorious days of year 2177, the enslavement of men ended."
-msgstr ""
+msgstr "W chwalebnych dniach roku 2177, skończyło się zniewolenie ludzkości."
 
 #: conversationlist_brimhaven2.json:brv_school_history_12
+#, fuzzy
 msgid "The world was formed new."
-msgstr ""
+msgstr "Świat został stworzony na nowo."
 
 #: conversationlist_brimhaven2.json:brv_school_history_20
+#, fuzzy
 msgid "Our redeemers fought a bloody war to make the world worthy for us again. In exchange and out of deepest respect, men helped to build up vast cities and many underground places."
 msgstr ""
+"Nasi odkupiciele toczyli krwawą wojnę, aby znów uczynić świat godnym nas. W "
+"zamian i z najgłębszego szacunku, ludzie pomogli zbudować ogromne miasta i "
+"wiele podziemnych miejsc."
 
 #: conversationlist_brimhaven2.json:brv_school_history_22
+#, fuzzy
 msgid "Little has been preserved from this period. Nor City is the only large city that has survived from this period. Their bright and magnificent flags were visible from afar in the surrounding area."
 msgstr ""
+"Niewiele się zachowało z tamtego okresu. Nor City to jedyne większe miasto, "
+"które przetrwało. Ich jasne i wspaniałe flagi były widoczne z daleka w "
+"najbliższej okolicy."
 
 #: conversationlist_brimhaven2.json:brv_school_history_30
+#, fuzzy
 msgid "Just imagine all those mighty churches and splendid palaces! It was a merry time, down under Mt. Galmore, the highest mountain in whole of Dhayavar."
 msgstr ""
+"Wyobraź sobie te wszystkie potężne kościoły oraz wspaniałe pałace! To był "
+"wesoły czas, pod górą Galmore, najwyższym szczytem w całym Dhayavar."
 
 #: conversationlist_brimhaven2.json:brv_school_history_30:1
 #: conversationlist_brimhaven2.json:brv_school_history_50_1:0
@@ -37042,462 +38299,657 @@ msgstr ""
 #: conversationlist_brimhaven2.json:brv_school_history_90:1
 #: conversationlist_brimhaven2.json:brv_school_history_100:1
 #: conversationlist_brimhaven2.json:brv_school_seated_14:1
+#, fuzzy
 msgid "[keep silent]"
-msgstr ""
+msgstr "[pozostań cicho]"
 
 #: conversationlist_brimhaven2.json:brv_school_history_32
+#, fuzzy
 msgid "What...? Don't interrupt me. Now I don't know where I was. I have to start from the beginning."
 msgstr ""
+"Co...? Nie przerywaj mi. Teraz nie wiem na czym skończyłem. Muszę zacząć od "
+"początku."
 
 #: conversationlist_brimhaven2.json:brv_school_history_40
+#, fuzzy
 msgid "People were living happily and all was well. There was plenty of food and music everywhere."
 msgstr ""
+"Ludzie żyli szczęśliwie i wszystko było w porządku. Wszędzie było mnóstwo "
+"jedzenia i muzyki."
 
 #: conversationlist_brimhaven2.json:brv_school_history_42
+#, fuzzy
 msgid "I hope you will live to see it one day."
-msgstr ""
+msgstr "Mam nadzieję, że kiedyś tego dożyjesz i to zobaczysz."
 
 #: conversationlist_brimhaven2.json:brv_school_history_43
+#, fuzzy
 msgid "But one dark day, this treacherous liar, Elythara, appeared. Many men were betrayed by her blinding light."
 msgstr ""
+"Ale pewnego mrocznego dnia, ta zdradziecka kłamczucha Elythara pojawiła się. "
+"Wielu ludzi zostało zdradzonych jej oślepiającym światłem."
 
 #: conversationlist_brimhaven2.json:brv_school_history_44
+#, fuzzy
 msgid "They believed in her false promises and were misled."
-msgstr ""
+msgstr "Wierzyli w fałszywe obietnice i zostali zwiedzeni na manowce."
 
 #: conversationlist_brimhaven2.json:brv_school_history_45
+#, fuzzy
 msgid "Then Elytharan cultists arrived on the shore of the northern sea, which is also known as the Sea of Tears."
 msgstr ""
+"Potem kultyści Elythary przybyli na wybrzeże morza północnego, które znane "
+"jest również pod nazwą Morza Łez."
 
 #: conversationlist_brimhaven2.json:brv_school_history_46
+#, fuzzy
 msgid "The cultists worshipped the blinding and cleansing light of Elythara. Clever and sneaky as they were, they gained people's trust."
 msgstr ""
+"Kultyści czcili oślepiające i oczyszczające światło Elythary. Będąc "
+"sprytnymi i przebiegłymi zyskali zaufanie ludzi."
 
 #: conversationlist_brimhaven2.json:brv_school_history_47
+#, fuzzy
 msgid "Partly with gold, partly with cunning and violence, they attracted more and more people to their side. Those who still wanted to walk the old ways often found their house burning."
 msgstr ""
+"Częściowo za pomocą złota, częściowo za pomocą sprytu i przemocy przyciągali "
+"do siebie coraz więcej ludzi. Ci, którzy wciąż chcieli podążać starymi "
+"ścieżkami często zastawali swoje domy w płomieniach."
 
 #: conversationlist_brimhaven2.json:brv_school_history_48
+#, fuzzy
 msgid "A general distrust began, and it didn't take long until weapons were drawn. Brothers fought each other - the horrible War of Dawn began!"
 msgstr ""
+"Nastąpiła ogólna nieufność, nie minęło zbyt wiele czasu nim sięgnięto po "
+"broń. Bracia walczyli przeciwko sobie - okropna Wojna Świtu się rozpoczęła!"
 
 #: conversationlist_brimhaven2.json:brv_school_history_50_1
+#, fuzzy
 msgid "Psst..."
-msgstr ""
+msgstr "Psst..."
 
 #: conversationlist_brimhaven2.json:brv_school_history_50_1:1
+#, fuzzy
 msgid "[whispering] What's up?"
-msgstr ""
+msgstr "[szepcząc] Co jest?"
 
 #: conversationlist_brimhaven2.json:brv_school_history_52
+#, fuzzy
 msgid "Be quiet, please. How can I concentrate if you are talking all the time? Where was I? I had better start anew."
 msgstr ""
+"Cicho bądź. Jak mogę się skoncentrować skoro cały czas do mnie gadasz? Na "
+"czym skończyłem? Chyba lepiej zacznę od początku."
 
 #: conversationlist_brimhaven2.json:brv_school_history_52:0
+#, fuzzy
 msgid "Yes, sorry."
-msgstr ""
+msgstr "Tak, przepraszam."
 
 #: conversationlist_brimhaven2.json:brv_school_history_60
+#, fuzzy
 msgid "However Elythara and her cultists failed to completely annihilate the old ways. Many true men managed to hide in remote places in the total darkness, unknown to the Elytharans. Also, Elythara's power is diminished underground."
 msgstr ""
+"Jednakże Elytharze i jej kultystom nie udało się całkowicie unicestwić "
+"starych ścieżek. Wielu prawdziwych mężczyzn zdołało schować się w odległych "
+"miejscach w całkowitej ciemności, nieznanych Elytharanom. Również moc "
+"Elythary jest słabsza pod ziemią."
 
 #: conversationlist_brimhaven2.json:brv_school_history_60:0
+#, fuzzy
 msgid "[whispering to Golin] What's up?"
-msgstr ""
+msgstr "[szepcząc do Golina] Co jest?"
 
 #: conversationlist_brimhaven2.json:brv_school_history_70
+#, fuzzy
 msgid "Each city was ruled by one or two houses who closely collaborated with the Elytharan priests. People were mainly influenced by the Elytharan priests."
 msgstr ""
+"Każde miasto było rządzone przez jeden lub dwa domy, które ściśle "
+"współpracowały z kapłanami Elythary. Ludzie byli głównie pod wpływem "
+"kapłanów Elythary."
 
 #: conversationlist_brimhaven2.json:brv_school_history_71
+#, fuzzy
 msgid "The Elytharans built several towns and cities, dedicated to their goddess. Several aristocratic houses were formed at that time."
 msgstr ""
+"Elytharanie zbudowali kilka miast i miasteczek poświęconych ich bogini. "
+"Kilka arystokratycznych domów powstało w tamtym czasie."
 
 #: conversationlist_brimhaven2.json:brv_school_history_72
+#, fuzzy
 msgid "First the Elytharans erected the city of Feygard on the shore of the Sea of Tears. It became a center of trade for the realm due to its access to the sea."
 msgstr ""
+"Początkowo Elytharanie wnieśli miasto Feygard na brzegu Morza Łez. Stało się "
+"ono centrum handlu dla królestwa ze względu na dostęp do morza."
 
 #: conversationlist_brimhaven2.json:brv_school_history_73
+#, fuzzy
 msgid "The town of Loneford was founded and it soon became famous for its fertile fields and healthy vegetables which fed the northern parts of the Forgotten Kingdom."
 msgstr ""
+"Miasto Loneford zostało założone i szybko zasłynęło z żyzne pola oraz "
+"zdrowych warzywa, którymi żywiła się północna część zapomnianego królestwa."
 
 #: conversationlist_brimhaven2.json:brv_school_history_74
+#, fuzzy
 msgid "Blackwater Mountain was explored, and on its summit a large sanctuary for the Elytharan priests was erected."
 msgstr ""
+"Góra Blackwater została odkryta, a na jej szczycie wzniesiono duże "
+"sanktuarium kapłanów Elythary."
 
 #: conversationlist_brimhaven2.json:brv_school_history_75
+#, fuzzy
 msgid "The mining colony of Prim was also founded after pioneers found rich sources of iron and coal under the mountain."
 msgstr ""
+"Kolonia górnicza Prim została również założona po tym jak pionierzy znaleźli "
+"pod górą złoża węgla i żelaza."
 
 #: conversationlist_brimhaven2.json:brv_school_history_76
+#, fuzzy
 msgid "The city of Fallhaven became a prospering center of trade due to its excellent location as a junction between the sanctuary of Blackwater Mountain, Stoutford, Nor City and Feygard."
 msgstr ""
+"Miasto Fallhaven stało się prosperującym centrum handlu ze względu na "
+"doskonałe położenie na skrzyżowaniu między sanktuarium góry Blackwater, "
+"Stoutfod, Nor City oraz Feygardu."
 
 #: conversationlist_brimhaven2.json:brv_school_history_77
+#, fuzzy
 msgid "Big storehouses were built to safely store shipments."
-msgstr ""
+msgstr "Budowano wielkie magazyny, aby bezpiecznie przechowywać przesyłki."
 
 #: conversationlist_brimhaven2.json:brv_school_history_82
+#, fuzzy
 msgid "However, bands of thieves ..."
-msgstr ""
+msgstr "Jednakże, bandy złodziei..."
 
 #: conversationlist_brimhaven2.json:brv_school_history_82:0
+#, fuzzy
 msgid "Thieves?!"
-msgstr ""
+msgstr "Złodziei?!"
 
 #: conversationlist_brimhaven2.json:brv_school_history_84
+#, fuzzy
 msgid "Yes thieves. Dishonorable men who cut cheeky children's neck for a few pennies. But ... where was I?"
 msgstr ""
+"Tak złodziei. Niehonorowych ludzi, którzy za kilka pensów podrzynają gardła "
+"bezczelnym dzieciom. Ale ... na czym skończyłem?"
 
 #: conversationlist_brimhaven2.json:brv_school_history_84:0
+#, fuzzy
 msgid "You said 'However, bands of thieves'"
-msgstr ""
+msgstr "Powiedziałeś \"Jednakże, bandy złodziei\""
 
 #: conversationlist_brimhaven2.json:brv_school_history_85
+#, fuzzy
 msgid "You don't know what I just said? Then I had better start anew."
 msgstr ""
+"Nie wiesz co przed chwilą powiedziałem? Lepiej, więc zacznę od początku."
 
 #: conversationlist_brimhaven2.json:brv_school_history_86
+#, fuzzy
 msgid "... were soon attracted by the growing wealth and united under one big organization, the Thieves' Guild, whose guild halls were secretly placed in Fallhaven, Feygard, and Nor City, those being the richest cities at that time."
 msgstr ""
+"... wkrótce zostały przyciągnięte przez rosnące bogactwo oraz zjednoczyły "
+"się w jedną wielką organizację, gildię złodziei, której siedziby były "
+"potajemnie rozmieszczone w Fallhaven, Feygard i Nor City, najbogatszych "
+"miastach tego okresu."
 
 #: conversationlist_brimhaven2.json:brv_school_history_88
+#, fuzzy
 msgid "However, bands of thieves were soon attracted by the growing wealth and united under one big organization, the Thieves' Guild, whose guild halls were secretly placed in Fallhaven, Feygard, and Nor City, those being the richest cities at that time."
 msgstr ""
+"Jednakże, bandy złodziei wkrótce zostały przyciągnięte przez rosnące "
+"bogactwo oraz zjednoczyły się w wielką organizację, gildię złodziei, której "
+"siedziby były potajemnie rozmieszczone w Fallhaven, Feygard oraz Nor City, "
+"najbogatszych miastach tego okresu."
 
 #: conversationlist_brimhaven2.json:brv_school_history_90
+#, fuzzy
 msgid "At last many other towns, including our Brimhaven and Brightport were also founded around this time."
 msgstr ""
+"W końcu wiele innych miast, włączając w to nasze Brimhaven oraz Brightport "
+"zostało również założonych w tym czasie."
 
 #: conversationlist_brimhaven2.json:brv_school_history_90:0
+#, fuzzy
 msgid "[Sigh] 'At last' sounds good."
-msgstr ""
+msgstr "[Wzdycha] 'W końcu' brzmi nieźle."
 
 #: conversationlist_brimhaven2.json:brv_school_history_92
+#, fuzzy
 msgid "Brimhaven has become an emerging, thriving city. Our importance will increase - you have it in your hands!"
 msgstr ""
+"Brimhaven stało się wschodzącym prężnie rozwijającym się miastem. Nasze "
+"znaczenie wzrośnie - macie to w garści!"
 
 #: conversationlist_brimhaven2.json:brv_school_history_94
+#, fuzzy
 msgid "So study hard and beware of the lies of false leaders!"
-msgstr ""
+msgstr "Więc uczcie się pilnie i strzeżcie się kłamstw fałszywych przywódców!"
 
 #: conversationlist_brimhaven2.json:brv_school_history_96
+#, fuzzy
 msgid "[Waiting silently]"
-msgstr ""
+msgstr "[Czekając cicho]"
 
 #: conversationlist_brimhaven2.json:brv_school_history_100
+#, fuzzy
 msgid "OK now. Does anybody have a question?"
-msgstr ""
+msgstr "Dobrze. Macie jakieś pytania?"
 
 #: conversationlist_brimhaven2.json:brv_school_history_100:0
+#, fuzzy
 msgid "Yes, please. Who was Elythara?"
-msgstr ""
+msgstr "Tak, proszę. Kim była Elythara?"
 
 #: conversationlist_brimhaven2.json:brv_school_history_110
+#, fuzzy
 msgid "Oh dear. Didn't you listen? Well, because you are new, I will tell you again."
 msgstr ""
+"Ojej. Nie słuchałeś? Dobrze, ponieważ jesteś nowy, opowiem Ci jeszcze raz."
 
 #: conversationlist_brimhaven2.json:brv_school_history_200
+#, fuzzy
 msgid "And now we will do something completely different. Let's practice fighting, so that you learn how to defend yourselves."
 msgstr ""
+"A teraz zrobimy coś zupełnie innego. Poćwiczmy walkę, żebyście wiedzieli jak "
+"się bronić."
 
 #: conversationlist_brimhaven2.json:brv_school_history_200:0
+#, fuzzy
 msgid "Finally. I thought her talking would never cease."
-msgstr ""
+msgstr "W końcu. Myślałem, że nigdy nie skończy gadać."
 
 #: conversationlist_brimhaven2.json:brv_school_practice_10
+#, fuzzy
 msgid "Everybody get your practice gear out of the chest over there. Each of you take one wooden sword and one paper shield, please. Then sit down again."
 msgstr ""
+"Zabierzcie swój sprzęt treningowy z tamtej skrzyni. Niech każdy z was weźmie "
+"drewniany miecz i papierową tarczę. Później znów usiądźcie."
 
 #: conversationlist_brimhaven2.json:brv_school_practice_10:1
+#, fuzzy
 msgid "Wooden weapons? Honestly?"
-msgstr ""
+msgstr "Drewniane bronie? Serio?"
 
 #: conversationlist_brimhaven2.json:brv_school_practice_10:2
+#, fuzzy
 msgid "May I use my own weapons?"
-msgstr ""
+msgstr "Mogę korzystać z własnej broni?"
 
 #: conversationlist_brimhaven2.json:brv_school_practice_12
+#, fuzzy
 msgid "Of course. You mustn't hurt yourself."
-msgstr ""
+msgstr "Oczywiście. Tylko się nie skalecz."
 
 #: conversationlist_brimhaven2.json:brv_school_practice_14
+#, fuzzy
 msgid "Of course not."
-msgstr ""
+msgstr "Oczywiście, że nie."
 
 #: conversationlist_brimhaven2.json:brv_school_practice_16
+#, fuzzy
 msgid "Where is your weapon and shield?"
-msgstr ""
+msgstr "Gdzie twoja broń i tarcza?"
 
 #: conversationlist_brimhaven2.json:brv_school_practice_16:0
+#, fuzzy
 msgid "I still have to get it."
-msgstr ""
+msgstr "Muszę jeszcze ją zdobyć."
 
 #: conversationlist_brimhaven2.json:brv_school_practice_18
+#, fuzzy
 msgid "Hurry now."
-msgstr ""
+msgstr "Pośpiesz się."
 
 #: conversationlist_brimhaven2.json:brv_school_practice_20
+#, fuzzy
 msgid "You all have your gear? OK."
-msgstr ""
+msgstr "Wszyscy macie swój sprzęt? OK."
 
 #: conversationlist_brimhaven2.json:brv_school_practice_22
+#, fuzzy
 msgid "Listen everybody: Use the sword and shield of the school set. We duel in pairs, the new kid first."
 msgstr ""
+"Słuchajcie: użyjcie miecza oraz tarczy ze szkolnego zestawu. Walczymy w "
+"parach, nowy zaczyna."
 
 #: conversationlist_brimhaven2.json:brv_school_practice_24
+#, fuzzy
 msgid "Run now, seek ye an opponent!"
-msgstr ""
+msgstr "Biegnij, poszukaj sobie przeciwnika!"
 
 #: conversationlist_brimhaven2.json:brv_school_practice_24:0
+#, fuzzy
 msgid "Anybody?"
-msgstr ""
+msgstr "Ktoś?"
 
 #: conversationlist_brimhaven2.json:brv_school_practice_30
+#, fuzzy
 msgid "Just go ahead. But don't forget: You must use the school weapon and shield."
-msgstr ""
+msgstr "Kontynuuj. Ale nie zapominaj: musisz używać szkolnej broni oraz tarczy."
 
 #: conversationlist_brimhaven2.json:brv_school_pupil_10
+#, fuzzy
 msgid "Hello, big one."
-msgstr ""
+msgstr "Cześć, wielkoludzie."
 
 #: conversationlist_brimhaven2.json:brv_school_pupil_60_10
+#, fuzzy
 msgid "As you approach the little student, horror spreads on his face."
 msgstr ""
+"Jak tylko podchodzisz do małego studenta, przerażenie pojawia się na jego "
+"twarzy."
 
 #: conversationlist_brimhaven2.json:brv_school_pupil_60_10:0
+#, fuzzy
 msgid "Don't panic. I'll go away again."
-msgstr ""
+msgstr "Nie panikuj. Odejdę raz jeszcze."
 
 #: conversationlist_brimhaven2.json:brv_school_pupil_60_10:1
+#, fuzzy
 msgid "Wait, I'll show you..."
-msgstr ""
+msgstr "Czekaj, pokażę Ci..."
 
 #: conversationlist_brimhaven2.json:brv_school_pupil_60_20
+#, fuzzy
 msgid "[He jumps up and runs screaming out of the room. The other little students follow in panic.]"
 msgstr ""
+"[Wyskakuje i wybiega z pokoju krzycząc. Inni mali uczniowie podążają w "
+"panice.]"
 
 #: conversationlist_brimhaven2.json:brv_school_seated_10
+#, fuzzy
 msgid "[You sit next to a smug-looking child that is about your age.]"
 msgstr ""
+"[Siadasz obok zadowolonego z siebie dziecka, które jest twoim rówieśnikiem.]"
 
 #: conversationlist_brimhaven2.json:brv_school_seated_12
+#, fuzzy
 msgid "Hi kid. I am Golin."
-msgstr ""
+msgstr "Cześć dzieciaku. Jestem Golin."
 
 #: conversationlist_brimhaven2.json:brv_school_seated_12:0
+#, fuzzy
 msgid "Thanks, it's a pleasure."
-msgstr ""
+msgstr "Dzięki, to przyjemność."
 
 #: conversationlist_brimhaven2.json:brv_school_seated_12:1
 #: conversationlist_brimhaven2.json:brv_school_seated_20:1
 #: conversationlist_brimhaven2.json:brv_school_seated_22:1
+#, fuzzy
 msgid "[nod silently]"
-msgstr ""
+msgstr "[cicho skina głową]"
 
 #: conversationlist_brimhaven2.json:brv_school_seated_20
+#, fuzzy
 msgid "Very well, you have found a place after all. Now let us proceed with our history lesson."
 msgstr ""
+"Bardzo dobrze, w końcu znalazłeś miejsce. Pozwól, że kontynuujemy naszą "
+"lekcję historii."
 
 #: conversationlist_brimhaven2.json:brv_school_seated_30
+#, fuzzy
 msgid "I will start from the beginning again, because it is so important. You can't listen to it often enough."
 msgstr ""
+"Zacznę znów od początku, ponieważ to bardzo ważne. Nie usłyszysz tego "
+"wystarczająco często."
 
 #: conversationlist_brimhaven2.json:brv_school_statue_10
+#, fuzzy
 msgid "Who on earth puts such an ugly, hideous thing in a school?"
-msgstr ""
+msgstr "Kto u licha stawia tak brzydką, odrażającą rzecz w szkole?"
 
 #: conversationlist_brimhaven2.json:brv_school_statue_10:0
+#, fuzzy
 msgid "Hey, I saw that! Your eyes sparkled!"
-msgstr ""
+msgstr "Hej, widziałem to! Twoje oczy błyszczały!"
 
 #: conversationlist_brimhaven2.json:brv_school_statue_10:1
+#, fuzzy
 msgid "Am I mistaken or does the statue seem to be grinning?"
-msgstr ""
+msgstr "Mylę się, czy ten posąg zdaje się uśmiechać?"
 
 #: conversationlist_brimhaven2.json:brv_school_statue_10:2
+#, fuzzy
 msgid "I had better leave it alone."
-msgstr ""
+msgstr "Lepiej zostawię to w spokoju."
 
 #: conversationlist_brimhaven2.json:brv_school_statue_12
+#, fuzzy
 msgid "The statue shows no signs of movement."
-msgstr ""
+msgstr "Statua nie wykazuje żadnych oznak ruchu."
 
 #: conversationlist_brimhaven2.json:brv_school_statue_12:0
+#, fuzzy
 msgid "I will keep an eye on you!"
-msgstr ""
+msgstr "Będę Cię pilnował!"
 
 #: conversationlist_brimhaven2.json:brv_school_statue_12:1
+#, fuzzy
 msgid "[Poke your finger in the belly of the statue]"
-msgstr ""
+msgstr "[Pogrzeb palcem w brzuchu posągu]"
 
 #: conversationlist_brimhaven2.json:brv_school_statue_20
+#, fuzzy
 msgid "Leave me alone! What do you want of me?"
-msgstr ""
+msgstr "Zostaw mnie w spokoju! Czego chcesz ode mnie?"
 
 #: conversationlist_brimhaven2.json:brv_school_statue_20:0
+#, fuzzy
 msgid "Oh, you can talk?"
-msgstr ""
+msgstr "Och, umiesz rozmawiać?"
 
 #: conversationlist_brimhaven2.json:brv_school_statue_30
+#, fuzzy
 msgid "Of course I can talk. Why should I not? I am at school after all."
-msgstr ""
+msgstr "Oczywiście, że tak. Dlaczego nie? Przecież jestem w szkole."
 
 #: conversationlist_brimhaven2.json:brv_school_statue_30:0
+#, fuzzy
 msgid "I have no time for you now. I have to find a partner for dueling. Bye"
-msgstr ""
+msgstr "Nie mam czasu dla Ciebie. Muszę znaleźć partnera do pojedynku. Cześć"
 
 #: conversationlist_brimhaven2.json:brv_school_statue_30:1
+#, fuzzy
 msgid "What can you tell me about this school?"
-msgstr ""
+msgstr "Co możesz mi opowiedzieć o tej szkole?"
 
 #: conversationlist_brimhaven2.json:brv_school_statue_40
+#, fuzzy
 msgid "I like it here. It is warm and the students love me. I am their mascot."
 msgstr ""
+"Podoba mi się tu. Jest ciepło, a uczniowie mnie uwielbiają. Jestem ich "
+"maskotką."
 
 #: conversationlist_brimhaven2.json:brv_school_statue_42
+#, fuzzy
 msgid "I learn much about the Shadow, all very exciting."
-msgstr ""
+msgstr "Sporo się uczę o Cieniu, wszystko jest takie ekscytujące."
 
 #: conversationlist_brimhaven2.json:brv_school_statue_50
+#, fuzzy
 msgid "But you heard the teacher: You must go now and fight your duel."
-msgstr ""
+msgstr "Ale słyszałeś nauczyciela: musisz już iść i walczyć w pojedynku."
 
 #: conversationlist_brimhaven2.json:brv_school_statue_50:0
+#, fuzzy
 msgid "You are right. Bye."
-msgstr ""
+msgstr "Masz rację. Cześć."
 
 #: conversationlist_brimhaven2.json:brv_school_statue_50:1
+#, fuzzy
 msgid "Which dueling partner would you recommend?"
-msgstr ""
+msgstr "Jakiego partnera do pojedynku mógłbyś polecić?"
 
 #: conversationlist_brimhaven2.json:brv_school_statue_52
+#, fuzzy
 msgid "Take that cheeky boy in the front row. The others would be no match for you."
 msgstr ""
+"Weź tego bezczelnego chłopca do pierwszego rzędu. Inni nie mogliby się z "
+"Tobą równać."
 
 #: conversationlist_brimhaven2.json:brv_school_statue_52:0
+#, fuzzy
 msgid "OK, it is Golin then."
-msgstr ""
+msgstr "OK, niech będzie Golin."
 
 #: conversationlist_brimhaven2.json:brv_school_statue_52:1
+#, fuzzy
 msgid "Why not an easy prey? I will take one of the little ones."
-msgstr ""
+msgstr "Dlaczego nie łatwa ofiara? Wezmę jednego z tych mniejszych."
 
 #: conversationlist_brimhaven2.json:brv_school_statue_52:2
+#, fuzzy
 msgid "Maybe I should try the teacher?"
-msgstr ""
+msgstr "Może powinienem spróbować z nauczycielem?"
 
 #: conversationlist_brimhaven2.json:brv_school_statue_60
+#, fuzzy
 msgid "Me?? NO! That'd be unfair! I have done no harm! You're nasty! [The statue begins to weep]"
 msgstr ""
+"Ja?? NIE! Byłoby to nie w porządku! Nikogo nie skrzywdziłem! Jesteś "
+"paskudny! [Statua zaczyna płakać]"
 
 #: conversationlist_brimhaven2.json:brv_school_statue_60:0
+#, fuzzy
 msgid "OK, OK, I was only joking."
-msgstr ""
+msgstr "OK, OK, tylko żartowałem."
 
 #: conversationlist_brimhaven2.json:brv_school_statue_60:1
+#, fuzzy
 msgid "Um, yes. Let's try, and see how long you might be able to defend yourself."
-msgstr ""
+msgstr "Uhm, tak. Spróbujmy i zobaczmy jak długo będziesz się w stanie obronić."
 
 #: conversationlist_brimhaven2.json:brv_school_statue_60:2
+#, fuzzy
 msgid "I'll take Golin. Shadow be with you!"
-msgstr ""
+msgstr "Wezmę Golina. Niech Cień będzie z Tobą!"
 
 #: conversationlist_brimhaven2.json:brv_school_statue_62
+#, fuzzy
 msgid ""
 "Do not scare me like that again! \n"
 " *sob*"
 msgstr ""
+"Nigdy więcej mnie tak nie strasz!\n"
+"*szloch*"
 
 #: conversationlist_brimhaven2.json:brv_school_statue_62:0
+#, fuzzy
 msgid "Well, I had better go now."
-msgstr ""
+msgstr "Dobrze, lepiej już pójdę."
 
 #: conversationlist_brimhaven2.json:brv_school_statue_62:1
+#, fuzzy
 msgid "You are much too sensitive. That was just fun."
-msgstr ""
+msgstr "Jesteś zbyt wrażliwy. To była tylko zabawa."
 
 #: conversationlist_brimhaven2.json:brv_school_statue_62:2
+#, fuzzy
 msgid "Maybe I should go and try the teacher?"
-msgstr ""
+msgstr "Może powinienem iść spróbować nauczyciela?"
 
 #: conversationlist_brimhaven2.json:brv_school_statue_70
+#, fuzzy
 msgid "YOU! I HAVE HAD ENOUGH NOW!"
-msgstr ""
+msgstr "TY! MAM JUŻ DOŚĆ!"
 
 #: conversationlist_brimhaven2.json:brv_school_statue_80
+#, fuzzy
 msgid "Suddenly the small ugly figure begins to grow! Bigger and bigger, until it seems to almost fill the whole room."
 msgstr ""
+"Nagle mała brzydka figura zaczyna rosnąć! Coraz większa aż wydaje się prawie "
+"wypełniać cały pokój."
 
 #: conversationlist_brimhaven2.json:brv_school_statue_80:0
+#, fuzzy
 msgid "Oops, what's that?"
-msgstr ""
+msgstr "Ups, co to?"
 
 #: conversationlist_brimhaven2.json:brv_school_statue_82
+#, fuzzy
 msgid "YOU FILTHY WORM! KNEEL IN THE DUST BEFORE YOUR MASTER!"
-msgstr ""
+msgstr "TY BRUDNY ROBAKU! NA KOLANA PRZED SWOIM PANEM KLĘKNIJ W PROCHU!"
 
 #: conversationlist_brimhaven2.json:brv_school_statue_82:0
+#, fuzzy
 msgid "Now that's a worthy dueling partner at last!"
-msgstr ""
+msgstr "To wreszcie godny partner do pojedynków!"
 
 #: conversationlist_brimhaven2.json:brv_school_statue_82:1
+#, fuzzy
 msgid "Eh, it was nice to have met you. I have to leave now... Bye."
-msgstr ""
+msgstr "Ech, miło było Cię poznać. Muszę już iść... Cześć."
 
 #: conversationlist_brimhaven2.json:brv_school_weapons
+#, fuzzy
 msgid "Keep your hands off that box until I tell you."
-msgstr ""
+msgstr "Trzymaj ręce z dala od tego pudełka dopóki Ci nie powiem."
 
 #: conversationlist_brimhaven2.json:brv_sign_school
+#, fuzzy
 msgid "Brimhaven School"
-msgstr ""
+msgstr "Szkoła Brimhaven"
 
 #: conversationlist_brimhaven2.json:brv_teacher_12
+#, fuzzy
 msgid "You noticed our beautiful mascot? I just love it."
-msgstr ""
+msgstr "Widziałeś naszą piękną maskotkę? Po prostu ją kocham."
 
 #: conversationlist_brimhaven2.json:brv_teacher_12:0
+#, fuzzy
 msgid "Eh, really?"
-msgstr ""
+msgstr "Ech, naprawdę?"
 
 #: conversationlist_brimhaven2.json:brv_teacher_12_10
+#, fuzzy
 msgid "Now hurry, take a seat!"
-msgstr ""
+msgstr "Teraz śpiesz się, zajmij miejsce!"
 
 #: conversationlist_brimhaven2.json:brv_teacher_30
+#, fuzzy
 msgid "I won't have you running around during my history lesson! Back to your seat!"
-msgstr ""
+msgstr "Nie pozwolę Ci biegać podczas mojej lekcji historii! Wracaj na miejsce!"
 
 #: conversationlist_brimhaven2.json:brv_teacher_40
+#, fuzzy
 msgid "Back to your seat, while I explain the rules!"
-msgstr ""
+msgstr "Wracaj na miejsce, podczas gdy wyjaśnię zasady!"
 
 #: conversationlist_brimhaven2.json:brv_teacher_60
+#, fuzzy
 msgid "Do you have a question?"
-msgstr ""
+msgstr "Masz jakieś pytanie?"
 
 #: conversationlist_brimhaven2.json:brv_teacher_60:0
+#, fuzzy
 msgid "I'd like to duel with you."
-msgstr ""
+msgstr "Chciałbym pojedynkować się z Tobą."
 
 #: conversationlist_brimhaven2.json:brv_teacher_60:1
+#, fuzzy
 msgid "No, madam."
-msgstr ""
+msgstr "Nie, pani."
 
 #: conversationlist_brimhaven2.json:brv_teacher_60_10
+#, fuzzy
 msgid "What an interesting idea! Nobody ever asked me. Well, I shouldn't do it, I might hurt you. But it is tempting."
 msgstr ""
+"Co za cudowny pomysł! Nikt nigdy mnie nie spytał. W porządku, nie powinienem "
+"tego robić, bo mogę Cię zranić. Ale to kuszące."
 
 #: conversationlist_brimhaven2.json:brv_teacher_60_10:0
+#, fuzzy
 msgid "Could we begin?"
-msgstr ""
+msgstr "Moglibyśmy zacząć?"
 
 #: conversationlist_brimhaven2.json:brv_teacher_60_22
+#, fuzzy
 msgid ""
 "But of course you have to use the school weapon set first.\n"
 "Come back when you are properly equipped."
 msgstr ""
+"Ale oczywiście musisz używać szkolnego zestawu broni.\n"
+"Wróć jak będziesz odpowiednio wyposażony."
 
 #: conversationlist_brimhaven2.json:brv_teacher_60_24
 msgid "Let's see what you are able to do!"
@@ -53365,4 +54817,3 @@ msgstr "Zamek Guynmart"
 #: worldmap.xml:world1:brimhaven_area
 msgid "Brimhaven"
 msgstr ""
-

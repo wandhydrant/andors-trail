@@ -506,7 +506,7 @@
     <string name="skill_shortdescription_weapon_prof_1hsword">Tek elli kılıçlarla daha iyi dövüşme</string>
     <string name="skill_shortdescription_weapon_prof_dagger">Hançerlerle daha iyi dövüşme</string>
     <string name="heroinfo_one_life">Fani (1 yaşam hakkı)</string>
-    <string name="heroinfo_limited_lives">Sınırlı Yaşam Hakkı</string>
+    <string name="heroinfo_limited_lives">Sınırlı can (%1$d/%2$d kaldı)</string>
     <string name="heroinfo_unlimited_lives_and_saves">Standart
 \n(Sınırsız can ve kayıt)</string>
     <string name="heroinfo_unlimited_lives">Sınırsız can, 1 kayıt</string>
@@ -584,9 +584,24 @@
     <string name="skill_category_proficiency">Yeterlilik</string>
     <string name="skill_longdescription_fightstyle_dualwield">Biri ana elde ve biri diğer elde olmak üzere aynı anda iki silahla savaşırken fayda sağlar.
 \n
-\nBu beceri olmadan, diğer elde kuşanıldığında bir silahın niteliklerinden sadece %% %1$d\'i kullanılabilir. Buna saldırı şansı, kritik beceri, hasar potansiyeli ve blok şansı dahildir. Bu beceri olmadan, bir saldırı yapmanın saldırı maliyeti (AP maliyeti), ana silahın ve diğer eldeki silahın saldırı maliyetinin toplamıdır.
+\nBu beceri olmadan, diğer elde kuşanıldığında bir silahın niteliklerinden sadece %% %1$d\'i kullanılabilir. Buna saldırı şansı, kritik beceri, hasar potansiyeli ve blok şansı dahildir. Bu beceri olmadan, bir saldırı yapmanın saldırı maliyeti (AP maliyeti), ana silahın ve diğer eldeki silahın saldırı maliyetinin toplamıdır. Her iki hasar değiştiriciden daha düşük olanı kullanılacaktır.
 \n
-\nBu becerinin bir seviyesi ile, diğer eldeki silahların niteliklerinin %% %2$d\'i kadarı kullanılabilir ve saldırı maliyeti, ikisi arasındaki en yüksek saldırı maliyeti ile en düşük saldırı maliyetinin %% %3$d\'inin toplamı kadardır.
+\nBu becerinin bir seviyesi ile, diğer eldeki silahların niteliklerinin %% %2$d\'i kadarı kullanılabilir ve saldırı maliyeti, ikisi arasındaki en yüksek saldırı maliyeti ile en düşük saldırı maliyetinin %% %3$d\'inin toplamı kadardır. Her iki hasar değiştiricinin ortalaması kullanılacaktır.
 \n
-\nBu becerinin iki seviyesi ile, diğer eldeki silahların niteliklerinin %% %4$d\'i kadarı kullanılabilir ve saldırı maliyeti, ikisi arasındaki en yüksek saldırı maliyeti kadardır.</string>
+\nBu becerinin iki seviyesi ile, diğer eldeki silahların niteliklerinin %% %4$d\'i kadarı kullanılabilir ve saldırı maliyeti, ikisi arasındaki en yüksek saldırı maliyeti kadardır. En yüksek hasar değiştirici kullanılacaktır.</string>
+    <string name="preferences_movement_dpad_transparency_70_pct">%70</string>
+    <string name="preferences_movement_dpad_transparency_60_pct">%60</string>
+    <string name="preferences_movement_dpad_transparency_50_pct">%50</string>
+    <string name="preferences_movement_dpad_transparency_40_pct">%40</string>
+    <string name="preferences_movement_dpad_transparency_30_pct">%30</string>
+    <string name="preferences_movement_dpad_transparency">Sanal yön tuşları etkinleştirilirse, bu ayar onların ne kadar şeffaf olması gerektiğini belirler.</string>
+    <string name="preferences_movement_dpad_transparency_title">Yön tuşları şeffaflığı</string>
+    <string name="skill_longdescription_spore_immunity">Canavar saldırılarının, Spor zehirlenmesi durumu etkisine neden olmasını kalıcı olarak engeller.</string>
+    <string name="skill_shortdescription_spore_immunity">Spor zehirine karşı tam bağışıklık</string>
+    <string name="skill_title_spore_immunity">Spor zehiri bağışıklığı</string>
+    <string name="inventory_category_food">Yiyecek</string>
+    <string name="inventory_category_potion">İksir</string>
+    <string name="inventory_category_jewelry">Mücevher</string>
+    <string name="combat_log_item_plural">%1$d eşya buldun:</string>
+    <string name="combat_log_item_single">Bir eşya buldun:</string>
 </resources>
