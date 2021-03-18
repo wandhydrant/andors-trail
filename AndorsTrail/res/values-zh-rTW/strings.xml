@@ -323,9 +323,9 @@
     <string name="startscreen_load_game_confirm">當前遊戲進度尚未儲存，你即將失去你的角色。</string>
     <string name="startscreen_attention_slot_gets_delete_on_load">注意</string>
     <string name="preferences_display_theme_green">Malachite</string>
-    <string name="skill_longdescription_fightstyle_unarmed_unarmored">當沒有裝備任何護甲和任何武器戰鬥時，增加從每件裝備 %1$d % 的攻擊機率、%2$d % 的格檔機率、%3$d % 的傷害減免和增加最大傷害 %4$d，每技能等級。這個技能也會給予爆擊倍率 1 + 0.%5$d 每個技能等級。
+    <string name="skill_longdescription_fightstyle_unarmed_unarmored">"當沒有裝備任何護甲和任何武器戰鬥時，增加從每件裝備 %1$d  的攻擊機率、%2$d  的格檔機率、%3$d  的傷害減免和增加最大傷害 %4$d，每技能等級。這個技能也會給予爆擊倍率 1 + 0.%5$d 每個技能等級。
 \n
-\n布做的裝備不屬於護甲。</string>
+\n布做的裝備不屬於護甲。"</string>
     <string name="preferences_movement_dpad_transparency_70_pct">70%</string>
     <string name="preferences_movement_dpad_transparency_60_pct">60%</string>
     <string name="preferences_movement_dpad_transparency_50_pct">50%</string>
@@ -403,36 +403,36 @@
     <string name="preferences_quickslots_placements_horizontal_center_bottom">中間，下方</string>
     <string name="preferences_quickslots_placement_summary">快捷欄位置</string>
     <string name="preferences_quickslots_placement">快捷欄位置</string>
-    <string name="skill_longdescription_weapon_prof_pole">每一技能等級，裝備長柄武器時，增加從裝備 %1$d % 的命中機率、增加從裝備 %2$d % 的格檔機率，和增加從裝備 %3$d % 的爆擊技能。</string>
-    <string name="skill_longdescription_specialization_weapon_shield">增加從劍的命中機率 %1$d %，和傷害 %2$d % ，每技能等級。
+    <string name="skill_longdescription_weapon_prof_pole">每一技能等級，裝備長柄武器時，增加從裝備 %1$d %% 的命中機率、增加從裝備 %2$d %% 的格檔機率，和增加從裝備 %3$d %% 的爆擊技能。</string>
+    <string name="skill_longdescription_specialization_weapon_shield">增加從劍的命中機率 %1$d %%，和傷害 %2$d %% ，每技能等級。
 \n該效益可與戰鬥風格疊加。</string>
-    <string name="skill_longdescription_specialization_2hand">增加從雙手武器的傷害 %1$d %，和命中機率 %2$d % ，每技能等級。
+    <string name="skill_longdescription_specialization_2hand">增加從雙手武器的傷害 %1$d %%，和命中機率 %2$d %% ，每技能等級。
 \n該效益可與戰鬥風格疊加。</string>
-    <string name="skill_longdescription_specialization_dualwield">增加從雙持武器的命中機率 %1$d %，和格檔機率 %2$d %，每技能等級。
+    <string name="skill_longdescription_specialization_dualwield">增加從雙持武器的命中機率 %1$d %%，和格檔機率 %2$d %%，每技能等級。
 \n該效益可與戰鬥風格疊加。</string>
     <string name="skill_longdescription_fightstyle_weapon_shield">當主手裝備武器且副手裝備盾牌戰鬥時獲得好處。
 \n
-\n增加從武器 %1$d % 命中機率，和從盾牌 %2$d % 格檔機率，每技能等級。</string>
+\n增加從武器 %1$d %% 命中機率，和從盾牌 %2$d %% 格檔機率，每技能等級。</string>
     <string name="skill_longdescription_fightstyle_2hand">當裝備需要使用雙手的武器戰鬥時獲得好處，例如雙手劍、巨斧或巨鎚。
 \n
-\n增加從雙手武器 %1$d % 傷害，每技能等級。</string>
+\n增加從雙手武器 %1$d %% 傷害，每技能等級。</string>
     <string name="skill_longdescription_fightstyle_dualwield">當一次持有兩把武器戰鬥時獲得好處，一把在主手，一把在副手。
 \n
-\n沒有此技能，副手的武器只被計算 %1$d %。這包含了命中機率、爆擊等級、傷害和格檔機率。沒有此技能，攻擊的速度（AP消耗）為主手和副手武器消耗的總和。
+\n沒有此技能，副手的武器只被計算 %1$d %%。這包含了命中機率、爆擊等級、傷害和格檔機率。沒有此技能，攻擊的速度（AP消耗）為主手和副手武器消耗的總和。
 \n
-\n技能 1 等，副手的武器會被計算 %2$d %。而攻擊速度（AP消耗）為主手和副手的最高武器消耗，加上最低武器消耗的 %3$d %。
+\n技能 1 等，副手的武器會被計算 %2$d %%。而攻擊速度（AP消耗）為主手和副手的最高武器消耗，加上最低武器消耗的 %3$d %%。
 \n
 \n技能 2 等，副手的武器會被計算 %4$d %%。而攻擊速度（AP消耗）為主手和副手的最高武器消耗。</string>
-    <string name="skill_longdescription_armor_prof_heavy">當裝備重型護甲戰鬥時，增加從每件裝備 %1$d % 的格檔機率、減少從裝備 %2$d % 的移動消耗和減少從裝備 %3$d % 的攻擊速度降低，每技能等級。重型裝甲包含金屬甲、鏈甲和板甲。</string>
+    <string name="skill_longdescription_armor_prof_heavy">當裝備重型護甲戰鬥時，增加從每件裝備 %1$d %% 的格檔機率、減少從裝備 %2$d %% 的移動消耗和減少從裝備 %3$d %% 的攻擊速度降低，每技能等級。重型裝甲包含金屬甲、鏈甲和板甲。</string>
     <string name="skill_longdescription_armor_prof_light">當裝備輕型護甲戰鬥時，增加從每件裝備 %1$d 的格檔機率，每技能等級。輕型裝甲包含皮革、輕金屬和獸皮。</string>
     <string name="skill_longdescription_armor_prof_unarmored">當不裝備任何護甲戰鬥時，獲得 %1$d 格黨機率。用布製成的裝備不被視為護甲。</string>
     <string name="skill_longdescription_armor_prof_shield">當裝備盾牌時，增加傷害減免 %1$d，每技能等級。</string>
     <string name="skill_longdescription_weapon_prof_unarmed">當不裝備武器和盾牌戰鬥時，獲得 %1$d 命中機率、%2$d 傷害和 %3$d 格檔機率，每技能等級。</string>
-    <string name="skill_longdescription_weapon_prof_blunt">每一技能等級，裝備鈍器時，增加從裝備 %1$d % 的命中機率、增加從裝備 %2$d % 的格檔機率，和增加從裝備 %3$d % 的爆擊技能。包含棍、棒、鎚、權杖、戰鎚和巨鎚。</string>
-    <string name="skill_longdescription_weapon_prof_axe">每一技能等級，裝備斧頭或巨斧時，增加從裝備 %1$d % 的命中機率、增加從裝備 %2$d % 的格檔機率，和增加從裝備 %3$d % 的爆擊技能。</string>
-    <string name="skill_longdescription_weapon_prof_2hsword">每一技能等級，裝備雙手劍時，增加從裝備 %1$d % 的命中機率、增加從裝備 %2$d % 的格檔機率，和增加從裝備 %3$d % 的爆擊技能。</string>
-    <string name="skill_longdescription_weapon_prof_1hsword">每一技能等級，裝備細劍、長劍或闊劍時，增加從裝備 %1$d % 的命中機率、增加從裝備 %2$d % 的格檔機率，和增加從裝備 %3$d % 的爆擊技能。</string>
-    <string name="skill_longdescription_weapon_prof_dagger">每一技能等級，裝備匕首或短劍時，增加從裝備 %1$d % 的命中機率、增加從裝備 %2$d % 的格檔機率，和增加從裝備 %3$d % 的爆擊技能。</string>
+    <string name="skill_longdescription_weapon_prof_blunt">每一技能等級，裝備鈍器時，增加從裝備 %1$d %% 的命中機率、增加從裝備 %2$d %% 的格檔機率，和增加從裝備 %3$d %% 的爆擊技能。包含棍、棒、鎚、權杖、戰鎚和巨鎚。</string>
+    <string name="skill_longdescription_weapon_prof_axe">每一技能等級，裝備斧頭或巨斧時，增加從裝備 %1$d %% 的命中機率、增加從裝備 %2$d %% 的格檔機率，和增加從裝備 %3$d %% 的爆擊技能。</string>
+    <string name="skill_longdescription_weapon_prof_2hsword">每一技能等級，裝備雙手劍時，增加從裝備 %1$d %% 的命中機率、增加從裝備 %2$d %% 的格檔機率，和增加從裝備 %3$d %% 的爆擊技能。</string>
+    <string name="skill_longdescription_weapon_prof_1hsword">每一技能等級，裝備細劍、長劍或闊劍時，增加從裝備 %1$d %% 的命中機率、增加從裝備 %2$d %% 的格檔機率，和增加從裝備 %3$d %% 的爆擊技能。</string>
+    <string name="skill_longdescription_weapon_prof_dagger">每一技能等級，裝備匕首或短劍時，增加從裝備 %1$d %% 的命中機率、增加從裝備 %2$d %% 的格檔機率，和增加從裝備 %3$d %% 的爆擊技能。</string>
     <string name="skill_shortdescription_weapon_prof_pole">精通長柄武器</string>
     <string name="skill_shortdescription_specialization_weapon_shield">專精劍與盾</string>
     <string name="skill_shortdescription_specialization_2hand">專精雙手武器</string>
@@ -498,7 +498,7 @@
     <string name="iteminfo_effect_decrease_attack_damage_minmax">減少攻擊傷害 %1$d-%2$d</string>
     <string name="iteminfo_effect_decrease_attack_damage">減少攻擊傷害 %1$d</string>
     <string name="iteminfo_effect_increase_attack_damage_minmax">增加攻擊傷害 %1$d-%2$d</string>
-    <string name="iteminfo_effect_set_damage_modifier">傷害修正：%1$d %</string>
+    <string name="iteminfo_effect_set_damage_modifier">傷害修正：%1$d %%</string>
     <string name="iteminfo_effect_increase_attack_damage">增加攻擊傷害 %1$d</string>
     <string name="iteminfo_effect_weapon_attack_damage_minmax">攻擊傷害：%1$d-%2$d</string>
     <string name="iteminfo_effect_weapon_attack_damage">攻擊傷害：%1$d</string>
@@ -517,26 +517,26 @@
     <string name="preferences_ui_enable_animations_title">啟用動畫</string>
     <string name="preferences_ui_category">介面</string>
     <string name="about_button4">關於</string>
-    <string name="skill_longdescription_concussion">對於格檔機率至少比你的攻擊機率少 %1$d 時，有 %2$d % 機率對目標造成腦震盪狀態。腦震盪會嚴重降低目標進攻能力，造成目標難以使出攻擊。</string>
+    <string name="skill_longdescription_concussion">對於格檔機率至少比你的攻擊機率少 %1$d 時，有 %2$d %% 機率對目標造成腦震盪狀態。腦震盪會嚴重降低目標進攻能力，造成目標難以使出攻擊。</string>
     <string name="skill_shortdescription_concussion">機率造成腦震盪</string>
     <string name="skill_title_concussion">腦震盪</string>
-    <string name="skill_longdescription_taunt">當攻擊者攻擊未命中時，有 %1$d % 機率使攻擊者損失 %2$d AP。這適用於對你造成攻擊的所有武器種類。</string>
+    <string name="skill_longdescription_taunt">當攻擊者攻擊未命中時，有 %1$d %% 機率使攻擊者損失 %2$d AP。這適用於對你造成攻擊的所有武器種類。</string>
     <string name="skill_shortdescription_taunt">攻擊未命中時，攻擊者損失 AP</string>
     <string name="skill_title_taunt">嘲諷</string>
-    <string name="skill_longdescription_rejuvenation">每回合（6 秒），有 %1$d % 機率將一個活躍的負面狀態降低一個等級。這適用於所有臨時效果類型：精神狀況如失憶、身體狀況如疲勞以及血液疾病如中毒。</string>
+    <string name="skill_longdescription_rejuvenation">每回合（6 秒），有 %1$d %% 機率將一個活躍的負面狀態降低一個等級。這適用於所有臨時效果類型：精神狀況如失憶、身體狀況如疲勞以及血液疾病如中毒。</string>
     <string name="skill_shortdescription_rejuvenation">機率移除負面效果</string>
     <string name="skill_title_rejuvenation">回春</string>
-    <string name="skill_longdescription_crit2">每次造成爆擊，有 %1$d % 機率折斷目標的骨頭，對目標造成骨折狀態，骨折會嚴重降低目標的防禦能力，造成目標難以使出防禦。</string>
+    <string name="skill_longdescription_crit2">每次造成爆擊，有 %1$d %% 機率折斷目標的骨頭，對目標造成骨折狀態，骨折會嚴重降低目標的防禦能力，造成目標難以使出防禦。</string>
     <string name="skill_shortdescription_crit2">機率造成骨折</string>
     <string name="skill_title_crit2">骨折</string>
-    <string name="skill_longdescription_crit1">每次造成爆擊，有 %1$d % 機率對目標造成內出血狀態，內出血會嚴重降低目標進攻能力，造成目標難以使出攻擊。</string>
+    <string name="skill_longdescription_crit1">每次造成爆擊，有 %1$d %% 機率對目標造成內出血狀態，內出血會嚴重降低目標進攻能力，造成目標難以使出攻擊。</string>
     <string name="skill_shortdescription_crit1">機率造成內出血</string>
     <string name="skill_title_crit1">內出血</string>
     <string name="traitsinfo_criticalhit_effectivechance">有效的爆擊機率：</string>
     <string name="actorinfo_immune_criticals">爆擊免疫</string>
     <string name="inventory_movebottom">移到最下方</string>
     <string name="inventory_movetop">移到最上方</string>
-    <string name="skill_longdescription_shadow_bless">降低被所有負面狀態影響的機率 %1$d %。包含怪物攻擊造成的負面狀態，如：中毒、失憶或疲勞。</string>
+    <string name="skill_longdescription_shadow_bless">降低被所有負面狀態影響的機率 %1$d %%。包含怪物攻擊造成的負面狀態，如：中毒、失憶或疲勞。</string>
     <string name="skill_shortdescription_shadow_bless">抵抗所有種類的狀態</string>
     <string name="skill_title_shadow_bless">暗影祝福</string>
     <string name="preferences_high_quality_filters">如果你在地圖上遇到性能問題（例如黑色圖塊），請停用此選項。啟用此選項將使遊戲使用高級濾色鏡，而不是單純的顏色濾鏡。</string>
@@ -570,26 +570,26 @@
     <string name="skill_current_level_with_maximum">目前等級：%1$d / %2$d</string>
     <string name="skill_current_level">目前等級：%1$d</string>
     <string name="skillinfo_action_levelup">等級上升</string>
-    <string name="skill_longdescription_resistance_blood_disorder">降低被 HP 流失負面狀態影響的機率 %1$d %，每一技能等級，最大上升到 %2$d %。包含怪物攻擊造成的負面狀態，如：中毒、流血。</string>
-    <string name="skill_longdescription_resistance_physical_capacity">降低被物理負面狀態影響的機率 %1$d %，每一技能等級，最大上升到 %2$d %。包含怪物攻擊造成的負面狀態，如：疲勞。</string>
-    <string name="skill_longdescription_resistance_mental">降低被精神負面狀態影響的機率 %1$d %，每一技能等級，最大上升到 %2$d %。包含怪物攻擊造成的負面狀態，如：失憶或武器損傷。</string>
-    <string name="skill_longdescription_magicfinder">增加找到非普通物品的機率 %1$d %，每一技能等級。</string>
-    <string name="skill_longdescription_lower_exploss">減少死亡損失的經驗值 %1$d %（損失經驗值的總比例）。等級 %2$d 會移除死亡的經驗值損失。</string>
+    <string name="skill_longdescription_resistance_blood_disorder">降低被 HP 流失負面狀態影響的機率 %1$d %%，每一技能等級，最大上升到 %2$d %%。包含怪物攻擊造成的負面狀態，如：中毒、流血。</string>
+    <string name="skill_longdescription_resistance_physical_capacity">降低被物理負面狀態影響的機率 %1$d %%，每一技能等級，最大上升到 %2$d %%。包含怪物攻擊造成的負面狀態，如：疲勞。</string>
+    <string name="skill_longdescription_resistance_mental">降低被精神負面狀態影響的機率 %1$d %%，每一技能等級，最大上升到 %2$d %%。包含怪物攻擊造成的負面狀態，如：失憶或武器損傷。</string>
+    <string name="skill_longdescription_magicfinder">增加找到非普通物品的機率 %1$d %%，每一技能等級。</string>
+    <string name="skill_longdescription_lower_exploss">減少死亡損失的經驗值 %1$d %%（損失經驗值的總比例）。等級 %2$d 會移除死亡的經驗值損失。</string>
     <string name="skill_longdescription_regeneration">每一回合回復 %1$d HP，每一技能等級，當沒有怪物在旁邊。</string>
-    <string name="skill_longdescription_evasion">減少逃跑失敗機率 %1$d %，和附近怪物攻擊機綠 %2$d %，每一技能等級。</string>
+    <string name="skill_longdescription_evasion">減少逃跑失敗機率 %1$d %%，和附近怪物攻擊機綠 %2$d %%，每一技能等級。</string>
     <string name="skill_longdescription_fortitude">後續每次升等，最大 HP 上升 %1$d，每一技能等級。不會遞迴增加，只有增加技能後的等級上升才會套用。</string>
     <string name="skill_longdescription_eater">每一擊殺獲得 %1$d HP，每一技能等級。</string>
     <string name="skill_longdescription_cleave">每一擊殺獲得 %1$d AP，每一技能等級。</string>
-    <string name="skill_longdescription_more_exp">增加擊敗怪物獲取的經驗值 %1$d %，每一技能等級。</string>
-    <string name="skill_longdescription_coinfinder">提高怪物掉落金幣機率 %1$d %，並提高掉落金幣量 %2$d %，每一技能等級（最高上升到提高掉落 100% 金幣量）。</string>
+    <string name="skill_longdescription_more_exp">增加擊敗怪物獲取的經驗值 %1$d %%，每一技能等級。</string>
+    <string name="skill_longdescription_coinfinder">提高怪物掉落金幣機率 %1$d %%，並提高掉落金幣量 %2$d %%，每一技能等級（最高上升到提高掉落 100%% 金幣量）。</string>
     <string name="skill_longdescription_speed">增加最大 AP %1$d，每一技能等級。</string>
-    <string name="skill_longdescription_better_criticals">增加從裝備獲得的報擊倍率 %1$d %，每一技能等級。</string>
+    <string name="skill_longdescription_better_criticals">增加從裝備獲得的報擊倍率 %1$d %%，每一技能等級。</string>
     <string name="skill_longdescription_more_criticals">增加裝備給予的爆擊技能 %1$d，每一技能等級。</string>
     <string name="skill_longdescription_barkskin">增加傷害減免 %1$d，每一技能等級。</string>
     <string name="skill_longdescription_dodge">增加格檔機率 %1$d %%，每一技能等級。</string>
-    <string name="skill_longdescription_barter">減少購買和增加賣出 %1$d % 金幣，每一技能等級。</string>
+    <string name="skill_longdescription_barter">減少購買和增加賣出 %1$d %% 金幣，每一技能等級。</string>
     <string name="skill_longdescription_weapon_dmg">增加武器最大傷害 %1$d，每一技能等級。</string>
-    <string name="skill_longdescription_weapon_chance">增加命中機率 %1$d %，每一技能等級。</string>
+    <string name="skill_longdescription_weapon_chance">增加命中機率 %1$d %%，每一技能等級。</string>
     <string name="skill_shortdescription_resistance_blood_disorder">抵抗流血狀態</string>
     <string name="skill_shortdescription_resistance_physical_capacity">抵抗物理負面狀態</string>
     <string name="skill_shortdescription_resistance_mental">抵抗精神負面狀態</string>
