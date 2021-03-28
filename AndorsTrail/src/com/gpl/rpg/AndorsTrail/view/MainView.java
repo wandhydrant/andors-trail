@@ -393,15 +393,16 @@ public final class MainView extends SurfaceView
 			applyAlternateFilter(canvas, area);
 		}
 	}
-	
+
 	private void doDrawRect_Ground(Canvas canvas, CoordRect area) {
 		if (AndorsTrailApplication.DEVELOPMENT_INCOMPATIBLE_SAVEGAMES) {
 			drawUnderLayer(canvas, area);
 		}
+		tryDrawMapLayer(canvas, area, currentTileMap.currentLayout.layerBase);
 		drawMapLayer(canvas, area, currentTileMap.currentLayout.layerGround);
 		tryDrawMapLayer(canvas, area, currentTileMap.currentLayout.layerObjects);
 	}
-	
+
 	private void doDrawRect_Objects(Canvas canvas, CoordRect area) {
 //		if (!tryDrawMapBitmap(canvas, area, objectsBitmap)) {
 //			tryDrawMapLayer(canvas, area, currentTileMap.currentLayout.layerObjects);
