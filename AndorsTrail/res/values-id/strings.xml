@@ -422,11 +422,11 @@
     <string name="skill_longdescription_armor_prof_heavy">Untuk tiap level keahlian, meningkatkan kesempatan menangkis untuk tiap pelindung berat yang digunakan sebanyak %1$d %% dari basis kesempatan menangkis pelindung tersebut. Pelindung berat memiliki penalti pergerakan sebesar %2$d %% per level keahlian, dan penalti kecepatan menyerang sebesar %3$d %% per level keahlian. Pelindung berat termasuk pelindung dari logam, pelindung dari rantai, dan pelindung dari pelat.</string>
     <string name="skill_longdescription_fightstyle_dualwield">Memberikan keuntungan ketika bertarung dengan dua senjata dalam waktu bersamaan, satu di tangan dominan dan lainnya di tangan non-dominan.
 \n
-\nTanpa keahlian ini, hanya %1$d %% dari kualitas senjata yang akan digunakan ketika memakainya di tangan non-dominan. Termasuk juga peluang menyerang, keahlian serangan critical, potensial cedera dan peluang menangkis. Tanpa keahlian ini, kecepatan menyerang (AP yang dibutuhkan) untuk melakukan serangan adalah jumlah dari kecepatan menyerang senjata utama dan senjata yang digunakan di tangan non-dominan.
+\nTanpa keahlian ini, hanya %1$d %% dari kualitas senjata yang akan digunakan ketika memakainya di tangan non-dominan. Termasuk juga peluang menyerang, keahlian serangan kritis, potensial cedera dan peluang menangkis. Tanpa keahlian ini, kecepatan menyerang (AP yang dibutuhkan) untuk melakukan serangan adalah jumlah dari kecepatan menyerang senjata utama dan senjata yang digunakan di tangan non-dominan. Pengubah angka cedera yang digunakan adalah yang lebih rendah.
 \n
-\nDengan satu level dari keahlian ini, %2$d %% dari kualitas senjata tambahan akan digunakan, dan kecepatan menyerang dari kecepatan menyerang senjata utama ditambahkan %3$d %% dari kecepatan menyerang senjata tambahan.
+\nDengan satu level dari keahlian ini, %2$d %% dari kualitas senjata tambahan akan digunakan, dan kecepatan menyerang dari kecepatan menyerang senjata utama ditambahkan %3$d %% dari kecepatan menyerang senjata tambahan. Pengubah angka cederanya adalah rata-rata dari keduanya.
 \n
-\nDengan dua level dari keahlian ini, %4$d %% dari kualitas senjata tambahan akan digunakan, dan kecepatan menyerang sebanding dengan kecepatan tercepat dari dua senjata yang digunakan.</string>
+\nDengan dua level dari keahlian ini, %4$d %% dari kualitas senjata tambahan akan digunakan, dan kecepatan menyerang sebanding dengan kecepatan tercepat dari dua senjata yang digunakan. Pengubah angka cedera yang digunakan adalah yang lebih tinggi.</string>
     <string name="skill_longdescription_fightstyle_2hand">Memberi keuntungan ketika menggunakan senjata yang memerlukan dua tangan dalam penggunaannya, seperti pedang dua-tangan, kapak besar, atau palu raksasa.
 \n
 \nTiap level keahlian menambah daya rusak dari senjata dua-tangan sebanyak %1$d %% dari daya rusak aslinya.</string>
@@ -585,12 +585,12 @@
     <string name="preferences_movement_dpad_transparency">Pengaturan ini menentukan seberapa transparan virtual D-pad.</string>
     <string name="skill_category_speciality">Keahlian khusus</string>
     <string name="skill_category_utility">Kegunaan</string>
-    <string name="skill_category_criticals">Critical</string>
+    <string name="skill_category_criticals">Kritis</string>
     <string name="preferences_movement_dpad_transparency_title">transparansi D-pad</string>
     <string name="skill_longdescription_spore_immunity">Secara permanen mencegah serangan monster menimbulkan efek status keracunan spora.</string>
     <string name="skill_shortdescription_spore_immunity">Kekebalan penuh terhadap racun spora</string>
     <string name="skill_title_spore_immunity">Kekebalan racun spora</string>
-    <string name="storage_permissions_mandatory">Akses penyimpanan diperlukan untuk menyimpan game dan worldmap. Menutup Andor\'s Trail.</string>
+    <string name="storage_permissions_mandatory">Akses ke penyimpanan diperlukan bagi Andor\'s Trail untuk menangani game dan peta dunia yang disimpan. Menutup Andor\'s Trail.</string>
     <string name="change_theme_requires_restart">Mengubah tema UI membutuhkan restart. Andor\'s Trail telah ditutup.</string>
     <string name="preferences_display_theme_charcoal">Obsidian</string>
     <string name="preferences_display_theme_green">Perunggu</string>
@@ -600,4 +600,9 @@
     <string name="skill_sort_unlocked">Terbuka</string>
     <string name="skill_sort_points">Poin</string>
     <string name="skill_category_offense">Serangan</string>
+    <string name="preferences_movement_dpad_transparency_70_pct">70%</string>
+    <string name="preferences_movement_dpad_transparency_60_pct">60%</string>
+    <string name="preferences_movement_dpad_transparency_50_pct">50%</string>
+    <string name="preferences_movement_dpad_transparency_40_pct">40%</string>
+    <string name="preferences_movement_dpad_transparency_30_pct">30%</string>
 </resources>
