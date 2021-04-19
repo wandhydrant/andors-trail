@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: andors-trail\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-11-10 11:48+0000\n"
-"PO-Revision-Date: 2021-04-19 08:00+0000\n"
+"PO-Revision-Date: 2021-04-20 21:59+0000\n"
 "Last-Translator: Jiri Zizkin Zizka <web@zizkin.com>\n"
 "Language-Team: Czech <https://hosted.weblate.org/projects/andors-trail/"
 "game-content/cs/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Weblate 4.6\n"
+"X-Generator: Weblate 4.7-dev\n"
 "X-Launchpad-Export-Date: 2015-11-02 12:25+0000\n"
 
 #: [none]
@@ -15432,19 +15432,19 @@ msgstr ""
 
 #: conversationlist_talion_2.json:talion_bless_1:0
 msgid "I'm interested in the blessing of Shadow strength."
-msgstr "Zajímá mě požehnání síly Přítmí."
+msgstr "Zajímá mě požehnání Síly Přítmí."
 
 #: conversationlist_talion_2.json:talion_bless_1:1
 msgid "I'm interested in the blessing of Shadow regeneration."
-msgstr "Zajímá mě požehnání regenerace Přítmí."
+msgstr "Zajímá mě požehnání Regenerace Přítmí."
 
 #: conversationlist_talion_2.json:talion_bless_1:2
 msgid "I'm interested in the blessing of Shadow accuracy."
-msgstr "Zajímá mě požehnání přesnosti Přítmí."
+msgstr "Zajímá mě požehnání Přesnosti Přítmí."
 
 #: conversationlist_talion_2.json:talion_bless_1:3
 msgid "I'm interested in the Shadow guardian blessing."
-msgstr "Zajímá mě požehnání strážce Přítmí."
+msgstr "Zajímá mě požehnání Strážce Přítmí."
 
 #: conversationlist_talion_2.json:talion_bless_1:4
 #: conversationlist_lleglaris.json:lleglaris2:7
@@ -15454,99 +15454,109 @@ msgstr "Zapomeň na to."
 #: conversationlist_talion_2.json:talion_bless_str_1
 msgid "The blessing of Shadow strength grants you more strength while attacking, thus increasing the amount of damage you do on each hit. I can give you the blessing for 300 gold."
 msgstr ""
+"Požehnání Síly Přítmí ti dává větší sílu při útoku, čímž se zvyšuje zranění, "
+"které způsobíš při každém zásahu. Požehnání ti mohu dát za 300 zlatých."
 
 #: conversationlist_talion_2.json:talion_bless_str_1:0
 msgid "OK, I'll take it for 300 gold."
-msgstr ""
+msgstr "Dobře, beru to za 300 zlatých."
 
 #: conversationlist_talion_2.json:talion_bless_str_1:1
 #: conversationlist_talion_2.json:talion_bless_heal_1:1
 #: conversationlist_talion_2.json:talion_bless_acc_1:1
 #: conversationlist_talion_2.json:talion_bless_guard_1:1
 msgid "Never mind, let's go back to those other blessings."
-msgstr ""
+msgstr "Nu což, vraťme se k těm dalším požehnáním."
 
 #: conversationlist_talion_2.json:talion_bless_heal_1
 msgid "The blessing of Shadow regeneration will slowly heal you back if you get hurt. I can give you the blessing for 250 gold."
 msgstr ""
+"Požehnání Regenerace Přítmí tě pomalu uzdraví, když jsi zraněný. Požehnání "
+"ti mohu dát za 250 zlatých."
 
 #: conversationlist_talion_2.json:talion_bless_heal_1:0
 #: conversationlist_talion_2.json:talion_bless_acc_1:0
 msgid "OK, I'll take it for 250 gold."
-msgstr ""
+msgstr "Dobře, beru to za 250 zlatých."
 
 #: conversationlist_talion_2.json:talion_bless_acc_1
 msgid "The blessing of Shadow accuracy grants you a keen sense of where best to strike your opponent, thus increasing the chance of a successful hit while fighting. I can give you the blessing for 250 gold."
 msgstr ""
+"Požehnání Přesnosti Přítmí ti dává cit vidět, kam nejlépe zasáhnout "
+"protivníka, a zvyšuje tak šanci na úspěšný zásah v boji. Požehnání ti mohu "
+"dát za 250 zlatých."
 
 #: conversationlist_talion_2.json:talion_bless_guard_1
 msgid "Ah yes, the blessing of the Shadow guardian. The Shadow protects you in dark places, and keeps you safe where others might not see. I can give you the blessing for 400 gold."
 msgstr ""
+"Ach ano, požehnání Strážce Přítmí. Přítmí tě chrání v tmavých místech a "
+"udržuje tě v bezpečí tam, kde ostatní nevidí. Požehnání ti mohu dát za 400 "
+"zlatých."
 
 #: conversationlist_talion_2.json:talion_bless_guard_1:0
 msgid "OK, I'll take it for 400 gold."
-msgstr ""
+msgstr "Dobře, beru to za 400 zlatých."
 
 #: conversationlist_talion_2.json:talion_bless_str_2
 #: conversationlist_talion_2.json:talion_bless_heal_2
 #: conversationlist_talion_2.json:talion_bless_acc_2
 #: conversationlist_talion_2.json:talion_bless_guard_2
 msgid "Very well. *starts chanting*"
-msgstr ""
+msgstr "Velmi dobře. *začíná zpívat*"
 
 #: conversationlist_talion_2.json:talion_bless_2
 msgid "There. I hope you will find it useful on your travels."
-msgstr ""
+msgstr "Tak. Doufám, že ti to bude na tvých cestách užitečné."
 
 #: conversationlist_talion_2.json:talion_bless_2:1
 msgid "How about some of those other blessings?"
-msgstr ""
+msgstr "A co některá další požehnání?"
 
 #: conversationlist_gylew.json:gylew
 msgid "Beat it, kid. You shouldn't be out here."
-msgstr ""
+msgstr "Vypadni, chlapče. Neměl bys tu být."
 
 #: conversationlist_gylew.json:gylew_henchman
 msgid "Hey, I'm trying to admire the view here. Get out of my way."
-msgstr ""
+msgstr "Hej, snažím se tu obdivovat výhledy. Jdi mi z cesty."
 
 #: conversationlist_ingus.json:ingus_1
 msgid "Hello there. I don't think I have seen you here in Remgard before."
-msgstr ""
+msgstr "Ahoj. Myslím, že jsem tě tady v Remgardu ještě neviděl."
 
 #: conversationlist_ingus.json:ingus_r1
 msgid "Hello again. I hope you enjoy your stay in Remgard."
-msgstr ""
+msgstr "Ještě jednou ahoj. Doufám, že si pobyt v Remgardu užiješ."
 
 #: conversationlist_ingus.json:ingus_speak1:0
 #: conversationlist_kendelow.json:kendelow_d:0
 msgid "What is there to do around here?"
-msgstr ""
+msgstr "Co se tu dá dělat?"
 
 #: conversationlist_ingus.json:ingus_speak1:1
 #: conversationlist_ingus.json:ingus_4b:1
 msgid "Is there a shop in town?"
-msgstr ""
+msgstr "Je ve městě nějaký obchod?"
 
 #: conversationlist_ingus.json:ingus_speak1:2
 msgid "What is happening around town?"
-msgstr ""
+msgstr "Co se děje ve městě?"
 
 #: conversationlist_ingus.json:ingus_2
 msgid "Oh, there's not much happening around here. We try to keep the town as peaceful as possible."
-msgstr ""
+msgstr "Tady se toho moc neděje. Snažíme se, aby město bylo co nejklidnější."
 
 #: conversationlist_ingus.json:ingus_3
 msgid "We don't get many visitors up here in the mountains."
-msgstr ""
+msgstr "Tady v horách nemáme moc návštěvníků."
 
 #: conversationlist_ingus.json:ingus_4a
 msgid "However, lately there has been some trouble here in town."
-msgstr ""
+msgstr "V poslední době se však ve městě objevily problémy."
 
 #: conversationlist_ingus.json:ingus_4a:1
 msgid "Never mind that, is there a shop in town?"
-msgstr ""
+msgstr "To je jedno, je ve městě nějaký obchod?"
 
 #: conversationlist_ingus.json:ingus_4b
 msgid "Hopefully, we'll get a few more visitors now that you've helped us with figuring out what happened to the people that went missing."
@@ -47327,7 +47337,7 @@ msgstr "Algangror"
 
 #: monsterlist_v0611_npcs1.json:remgard_bridge
 msgid "Bridge lookout"
-msgstr "Rozhledna na mostě"
+msgstr "Hlídka na mostě"
 
 #: monsterlist_v0611_npcs2.json:ingus
 msgid "Ingus"
