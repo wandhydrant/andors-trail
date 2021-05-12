@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: andors-trail\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-11-10 11:48+0000\n"
-"PO-Revision-Date: 2020-06-12 06:10+0000\n"
-"Last-Translator: Huberto Kusters <huberto.kusters@gmail.com>\n"
+"PO-Revision-Date: 2021-05-13 10:24+0000\n"
+"Last-Translator: Nicolas Cosson <nicolas.cosson@gmail.com>\n"
 "Language-Team: Dutch <https://hosted.weblate.org/projects/andors-trail/"
 "game-content/nl/>\n"
 "Language: nl\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.1-dev\n"
+"X-Generator: Weblate 4.7-dev\n"
 "X-Launchpad-Export-Date: 2015-11-02 12:26+0000\n"
 
 #: [none]
@@ -341,15 +341,15 @@ msgstr "Gif"
 
 #: actorconditions_fungi_panic.json:spore_poison
 msgid "Spore poisoning"
-msgstr ""
+msgstr "Spore vergiftiging"
 
 #: actorconditions_gison.json:reinvigorated
 msgid "Reinvigorated"
-msgstr ""
+msgstr "Versterkt"
 
 #: actorconditions_gison.json:sated
 msgid "Sated"
-msgstr ""
+msgstr "Verzadigd"
 
 #: conversationlist_mikhail.json:mikhail_gamestart
 msgid "Oh good, you are awake."
@@ -395,7 +395,7 @@ msgstr "Ik zocht voor Andor."
 
 #: conversationlist_mikhail.json:mikhail_default:8
 msgid "What kind of book is it that you have in your hand?"
-msgstr ""
+msgstr "Wat voor een boek heb je daar in je hand?"
 
 #: conversationlist_mikhail.json:mikhail_tasks
 msgid "Oh yes, there were some things I need help with, bread and rats. Which one would you like to talk about?"
@@ -557,31 +557,34 @@ msgstr ""
 #: conversationlist_mikhail.json:mikhail_achievements_10
 msgid "Just like my father once did, I want to give you a book to take with you on your way."
 msgstr ""
+"Net zoals mijn vader ooit deed, wil ik je een boek meegeven voor op je route."
 
 #: conversationlist_mikhail.json:mikhail_achievements_20
 msgid "This book is some kind of diary, in which you can record unusual experiences and achievements that you may have on your way."
 msgstr ""
+"Dit boek is een soort dagboek, waarin je vreemde ervaringen en "
+"verwezenlijkingen die je onderweg kan vinden."
 
 #: conversationlist_mikhail.json:mikhail_achievements_30
 msgid "Would you like to have it?"
-msgstr ""
+msgstr "Zou je het willen hebben?"
 
 #: conversationlist_mikhail.json:mikhail_achievements_30:0
 msgid "Yes, sounds great."
-msgstr ""
+msgstr "Ja, klinkt geweldig."
 
 #: conversationlist_mikhail.json:mikhail_achievements_30:1
 msgid "No, thanks."
-msgstr ""
+msgstr "Nee bedankt."
 
 #: conversationlist_mikhail.json:mikhail_achievements_40
 msgid "No problem. I won't bother you with it again."
-msgstr ""
+msgstr "Geen probleem. Ik zal je er niet meer mee storen."
 
 #: conversationlist_mikhail.json:mikhail_achievements_50
 #: conversationlist_stoutford_combined.json:stn_colonel_34
 msgid "Here you are."
-msgstr ""
+msgstr "Alsjeblieft."
 
 #: conversationlist_mikhail_foodpoison.json:mikhail_rats_start2a
 msgid "Another way to regain your strength is to eat some food. You can buy some for yourself from Mara at the town hall. But watch out - I hear that raw meat can sometimes give you food poisoning."
@@ -700,7 +703,7 @@ msgstr ""
 #: conversationlist_guynmart2_npc.json:guynmart_rob6_10:1
 #: conversationlist_brimhaven.json:arlish_0:1
 msgid "No thanks."
-msgstr ""
+msgstr "Nee dank je."
 
 #: conversationlist_crossglen.json:drunk1:1
 #: conversationlist_rothses.json:rothses_c2:2
@@ -742,7 +745,7 @@ msgstr "Stoort u mij alstublieft niet, ik heb werk te doen."
 #: conversationlist_stoutford.json:stoutford_gateguard_0:2
 #: conversationlist_stoutford.json:kayla_1:1
 msgid "Have you seen my brother Andor?"
-msgstr ""
+msgstr "Heb je mijn broer Andor gezien?"
 
 #: conversationlist_crossglen.json:farm2
 msgid "What?! Can't you see I'm busy? Go bother someone else."
@@ -838,6 +841,8 @@ msgstr "Hij leek echt van streek over iets en vertrok gehaast. Iets over de Diev
 #: conversationlist_crossglen_gruil.json:gruil_andor3
 msgid "That's all I know. Maybe you should ask around in Fallhaven. Look for my friend Gaela, he probably knows more."
 msgstr ""
+"Dat is alles dat ik weet. Misschien kan je het vragen in Fallhaven. Zoek "
+"mijn vriend Gaela, hij weet waarschijnlijk meer."
 
 #: conversationlist_crossglen_leonid.json:leonid1
 msgid ""
@@ -845,60 +850,78 @@ msgid ""
 "\n"
 "I'm Leonid, steward of Crossglen village."
 msgstr ""
+"Hey kind. Jij bent Mikhail's zoon, nietwaar? Met die broer van jou.\n"
+"\n"
+"Ik ben Leonid, steward van Crossglen dorp."
 
 #: conversationlist_crossglen_leonid.json:leonid1:1
 #: conversationlist_crossglen_leonid.json:leonid_continue:1
 msgid "What can you tell me about Crossglen?"
-msgstr ""
+msgstr "Wat kan je me vertellen over Crossglen?"
 
 #: conversationlist_crossglen_leonid.json:leonid1:2
 #: conversationlist_crossglen_leonid.json:leonid_continue:2
 msgid "Never mind, see you later."
-msgstr ""
+msgstr "Laat maar, tot ziens."
 
 #: conversationlist_crossglen_leonid.json:leonid_andor
 msgid "Your brother? No, I haven't seen him here today. I think I saw him in here yesterday talking to Gruil. Maybe he knows more?"
 msgstr ""
+"Je broer? Nee, heb ik vandaag niet gezien. Ik denk dat ik hem gisteren zag "
+"praten met Gruil. Misschien weet hij meer?"
 
 #: conversationlist_crossglen_leonid.json:leonid_andor:0
 msgid "Thanks, I'll go talk to Gruil. There was something more I wanted to talk about."
 msgstr ""
+"Dank je, ik zal met Gruil gaan praten. Er was nog iets dat ik met jou wilde "
+"bespreken."
 
 #: conversationlist_crossglen_leonid.json:leonid_andor:1
 msgid "Thanks, I'll go talk to Gruil."
-msgstr ""
+msgstr "Dankje, ik zal met Gruil gaan praten."
 
 #: conversationlist_crossglen_leonid.json:leonid_crossglen
 msgid "As you know, this is Crossglen village. Mostly a farming community."
-msgstr ""
+msgstr "Zoals je weet, is dit Crossglen dorp. Vooral een boerengemeenschap."
 
 #: conversationlist_crossglen_leonid.json:leonid_crossglen1
 msgid "We have Audir with his smithy to the southwest, Leta and her husband's cabin to the west, this town hall here and your father's cabin to the northwest."
 msgstr ""
+"We hebben Audir de smidse in het zuidwesten, de hut van Leta en haar "
+"echtgenoot in het westen, het gemeentehuis hier en je vaders' hut in het "
+"noordwesten."
 
 #: conversationlist_crossglen_leonid.json:leonid_crossglen2
 msgid "That's pretty much it. We try to live a peaceful life."
-msgstr ""
+msgstr "Dat is het zo'n beetje. We proberen een vreedzaam leven te leiden."
 
 #: conversationlist_crossglen_leonid.json:leonid_crossglen2:0
 msgid "Has there been any recent activity in the village?"
-msgstr ""
+msgstr "Is er recent iets gebeurd in het dorp?"
 
 #: conversationlist_crossglen_leonid.json:leonid_crossglen2:1
 msgid "Let's go back to the other things we talked about."
-msgstr ""
+msgstr "Laten we terug over de vorige dingen praten."
 
 #: conversationlist_crossglen_leonid.json:leonid_crossglen3
 msgid "There were some recent disturbances some weeks ago that you may have noticed. Some villagers got into a fight over the new decree from Lord Geomyr."
 msgstr ""
+"Er waren recent wat onrusten een aantal weken geleden die je misschien "
+"opmerkte. Sommige dorpelingen waren het oneens over het nieuwe decreet van "
+"Lord Geomyr."
 
 #: conversationlist_crossglen_leonid.json:leonid_crossglen4
 msgid "Lord Geomyr issued a statement regarding the unlawful use of bonemeal as healing substance. Some villagers argued that we should oppose Lord Geomyr's word and still use it."
 msgstr ""
+"Lord Geomyr heeft meegedeeld dat het gebruik van beenmerg als helende stof "
+"onwettig is. Sommige dorpelingen beargumenteren dat we tegen Lord Geomyr in "
+"moeten gaan en het toch nog gebruiken."
 
 #: conversationlist_crossglen_leonid.json:leonid_crossglen4_1
 msgid "Tharal, our priest, was particularly upset and suggested we do something about Lord Geomyr."
 msgstr ""
+"Tharal, onze priester, was bijzonder overstuur en stelde voor dat we iets "
+"doen aan Lord Geomyr."
 
 #: conversationlist_crossglen_leonid.json:leonid_crossglen5
 msgid ""
@@ -906,33 +929,45 @@ msgid ""
 "\n"
 "Personally, I haven't decided what my thoughts are."
 msgstr ""
+"Andere dorpelingen vonden dat we het decreet van Lord Geomyr moeten "
+"gehoorzamen.\n"
+"\n"
+"Persoonlijk heb ik nog niet beslist wat ik er van denk."
 
 #: conversationlist_crossglen_leonid.json:leonid_crossglen6
 msgid ""
 "On one hand, Lord Geomyr supports Crossglen with a lot of protection.\n"
 "[Points to the soldiers in the hall]"
 msgstr ""
+"Aan de ene kant, Lord Geomyr beschermt Crossglen.\n"
+"(Wijst naar de soldaten in de hal)"
 
 #: conversationlist_crossglen_leonid.json:leonid_crossglen7
 msgid "But on the other hand, the tax and the recent changes of what's allowed are really taking a toll on Crossglen."
 msgstr ""
+"Maar aan de andere zijde, de belasting en de recente wijziging van wat "
+"toegelaten is vraagt echt een tol van Crossglen."
 
 #: conversationlist_crossglen_leonid.json:leonid_crossglen8
 msgid "Someone should go to Castle Geomyr and talk to the steward about our situation here in Crossglen."
 msgstr ""
+"Iemand zou naar kasteel Geomyr moeten gaan en praten met de steward over "
+"onze situatie hier in Crossglen."
 
 #: conversationlist_crossglen_leonid.json:leonid_crossglen9
 msgid "In the meantime, we've banned all use of bonemeal as a healing substance."
 msgstr ""
+"In tussentijd, hebben we het gebruik van beenmerg als helende stof verbannen."
 
 #: conversationlist_crossglen_leonid.json:leonid_crossglen9:0
 msgid "Thank you for the information. There was something more I wanted to ask you."
 msgstr ""
+"Dankjewel voor de informatie. Er is nog iets anders dat ik je wil vragen."
 
 #: conversationlist_crossglen_leonid.json:leonid_crossglen9:1
 #: conversationlist_omicronrg9.json:umar_guild03_31a:1
 msgid "Thank you for the information. Bye."
-msgstr ""
+msgstr "Dankjewel voor de informatie, Tot ziens."
 
 #: conversationlist_crossglen_leonid.json:leonid_bye
 #: conversationlist_crossglen_leonid.json:leonid_bye:0
@@ -954,141 +989,161 @@ msgstr ""
 #: conversationlist_stoutford_combined.json:stoutford_widow_roots30_2:1
 #: conversationlist_omicronrg9.json:leta_guild_1b:1
 msgid "Shadow be with you."
-msgstr ""
+msgstr "Schaduw is met u."
 
 #: conversationlist_crossglen_tharal.json:tharal1
 msgid "Walk in the glow of the Shadow, my child."
-msgstr ""
+msgstr "Wandel in de gloed van de Schaduw, mijn kind."
 
 #: conversationlist_crossglen_tharal.json:tharal1:1
 #: conversationlist_fallhaven_church.json:thoronir_tharal_1:0
 msgid "What can you tell me about bonemeal?"
-msgstr ""
+msgstr "Wat kan je met vertellen over beenmerg?"
 
 #: conversationlist_crossglen_tharal.json:tharal1:2
 #: conversationlist_fallhaven_potions.json:fallhaven_potions:1
 msgid "Do you have anything to help against food-poisoning?"
-msgstr ""
+msgstr "Heb je iets dat helpt tegen voedselvergiftiging?"
 
 #: conversationlist_crossglen_tharal.json:tharal_bonemeal1
 msgid "Bonemeal? We shouldn't talk about that. Lord Geomyr issued a decree. It's not allowed anymore."
 msgstr ""
+"Beenmerg? Daar zouden we beter niet over praten. Volgens het decreet van "
+"Lord Geomyr is dat niet meer toegestaan."
 
 #: conversationlist_crossglen_tharal.json:tharal_bonemeal1:0
 #: conversationlist_prim_arghest.json:arghest_6:1
 #: conversationlist_prim_arghest.json:arghest_7:0
 msgid "Please?"
-msgstr ""
+msgstr "Alsjeblieft?"
 
 #: conversationlist_crossglen_tharal.json:tharal_bonemeal2_1
 msgid "No, we really shouldn't talk about that."
-msgstr ""
+msgstr "Nee, we zouden daar echt niet over mogen praten."
 
 #: conversationlist_crossglen_tharal.json:tharal_bonemeal2_1:0
 msgid "Oh come on."
-msgstr ""
+msgstr "Ach, komaan."
 
 #: conversationlist_crossglen_tharal.json:tharal_bonemeal2
 msgid "Well if you really are that persistent. Bring me 5 insect wings that I can use for making potions and maybe we can talk more."
 msgstr ""
+"Wel, als je zo volhardend bent. Breng me 5 insectenvleugels die ik kan "
+"gebruiken om drankjes te maken en dan kunnen we misschien verder praten."
 
 #: conversationlist_crossglen_tharal.json:tharal_bonemeal2:0
 msgid "Here, I have the insect wings."
-msgstr ""
+msgstr "Hier, ik heb de insectenvleugels."
 
 #: conversationlist_crossglen_tharal.json:tharal_bonemeal2:1
 msgid "OK, I'll bring them."
-msgstr ""
+msgstr "Ok, ik zal ze brengen."
 
 #: conversationlist_crossglen_tharal.json:tharal_bonemeal3
 msgid "Thanks kid. I knew I could count on you."
-msgstr ""
+msgstr "Dankjewel kind, Ik wist dat ik op je kon rekenen."
 
 #: conversationlist_crossglen_tharal.json:tharal_bonemeal4
 msgid "Oh yes, bonemeal. Mixed with the right components it can be one of the most effective healing agents around."
 msgstr ""
+"Oh ja, beenmerg. Gemengd met de juiste ingrediënten kan het een van de meest "
+"effectieve genezingsstoffen worden."
 
 #: conversationlist_crossglen_tharal.json:tharal_bonemeal5
 msgid "We used to use it extensively before. But now that bastard Lord Geomyr has banned all use of it."
 msgstr ""
+"We gebruikten het heel veel. Maar nu heeft die bastaard Lord Geomyr elk "
+"gebruik ervan verboden."
 
 #: conversationlist_crossglen_tharal.json:tharal_bonemeal6
 msgid "How am I supposed to heal people now? Using regular healing potions? Bah, they're so ineffective."
 msgstr ""
+"Hoe moet ik nu mensen genezen? Met gewone drankjes? Bah, ze werken zo slecht."
 
 #: conversationlist_crossglen_tharal.json:tharal_bonemeal7
 msgid "I know someone that still has a supply of bonemeal if you are interested. Go talk to Thoronir, a fellow priest in Fallhaven. Tell him my password 'Glow of the Shadow'."
 msgstr ""
+"I ken iemand die nog een voorraad beenmerg heeft als je interesse hebt. Ga "
+"praten met Thoronir, een collega-priester in Fallhaven. Zeg hem mijn "
+"paswoord: 'Gloed van de Schaduw'."
 
 #: conversationlist_crossglen_tharal.json:tharal_antifoodp1
 msgid "No, sorry. I hear that the potion-maker in Fallhaven can create something to help against that though."
 msgstr ""
+"Nee, sorry. Ik vernam dat de drankjesmaker in Fallhaven iets kan maken dat "
+"daar tegen helpt."
 
 #: conversationlist_crossglen_tharal.json:tharal_antifoodp2
 msgid "You should go see him and ask if he has anything to help against that. He can probably help you."
 msgstr ""
+"Je zou hem moeten opzoeken en vragen of hij iets heeft dat daar bij helpt. "
+"Hij kan je waarschijnlijk helpen."
 
 #: conversationlist_crossglen_tharal.json:tharal_antifoodp2:0
 #: conversationlist_fallhaven_unnmir.json:unnmir_13:0
 msgid "Thanks, I'll go see him."
-msgstr ""
+msgstr "Bedankt, ik zal hem zoeken."
 
 #: conversationlist_crossglen_leta.json:leta1
 msgid "Hey, this is my house, get out of here!"
-msgstr ""
+msgstr "Hé, dit is mijn huis, ga naar buiten!"
 
 #: conversationlist_crossglen_leta.json:leta1:0
 msgid "But I was just ..."
-msgstr ""
+msgstr "Maar ik was gewoon..."
 
 #: conversationlist_crossglen_leta.json:leta1:1
 #: conversationlist_crossglen_leta.json:leta2:0
 msgid "What about your husband Oromir?"
-msgstr ""
+msgstr "Wat met je echtgenoot Oromir?"
 
 #: conversationlist_crossglen_leta.json:leta1:2
 #: conversationlist_crossglen_leta.json:leta1:3
 #: conversationlist_fallhaven_tavern.json:bela_room_1:2
 msgid "Umar sent me."
-msgstr ""
+msgstr "Umar stuurde me."
 
 #: conversationlist_crossglen_leta.json:leta2
 msgid "Beat it kid, get out of my house!"
-msgstr ""
+msgstr "Hoepel op, kind, ga mijn huis uit!"
 
 #: conversationlist_crossglen_leta.json:leta_oromir1
 msgid ""
 "Do you know anything about my husband? He should be here helping me with the farm today, but he seems to be missing as usual.\n"
 "Sigh."
 msgstr ""
+"Weet jij iets over mijn echtgenoot? Hij zou me hier op de boerderij helpen "
+"vandaag, maar hij lijkt verdwenen zoals gewoonlijk."
 
 #: conversationlist_crossglen_leta.json:leta_oromir1:0
 #: conversationlist_rogorn.json:rogorn_story_6:3
 #: conversationlist_rogorn.json:rogorn_story_7:4
 msgid "I have no idea."
-msgstr ""
+msgstr "Geen idee."
 
 #: conversationlist_crossglen_leta.json:leta_oromir1:1
 msgid "Yes, I found him. He is hiding among some trees to the east."
-msgstr ""
+msgstr "Ja, ik heb hem gevonden. Hij schuilt tussen de bomen in het oosten."
 
 #: conversationlist_crossglen_leta.json:leta_oromir1:2
 #: conversationlist_crossglen_leta.json:leta_oromir1:3
 #: conversationlist_crossglen_leta.json:leta_oromir1:4
 msgid "[Lie] I have no idea."
-msgstr ""
+msgstr "[Liegen] Ik heb er geen idee van."
 
 #: conversationlist_crossglen_leta.json:leta_oromir1:5
 msgid "He's found a new hiding spot."
-msgstr ""
+msgstr "Hij heeft een nieuwe schuilplaats gevonden."
 
 #: conversationlist_crossglen_leta.json:leta_oromir1:6
 msgid "He's found another new hiding spot. Give him credit, he is great at avoiding work."
 msgstr ""
+"Hij heeft een nieuwe schuilplaats gevonden. Je moet het hem nageven, hij is "
+"goed in het ontlopen van werk."
 
 #: conversationlist_crossglen_leta.json:leta_oromir1:7
 msgid "He's in your basement."
-msgstr ""
+msgstr "Hij is in je kelder."
 
 #: conversationlist_crossglen_leta.json:leta_oromir2
 #: conversationlist_brimhaven_2.json:leta_oromir1_trees_help
@@ -1098,22 +1153,31 @@ msgid ""
 "If you see him, tell him to hurry back here and help me with the housework.\n"
 "Now get out of here!"
 msgstr ""
+"Als je hem ziet, vertel hem dat hij zich terug naar hier haast en mij helpt "
+"met mijn werk in huis.\n"
+"Ga nu weg!"
 
 #: conversationlist_crossglen_leta.json:leta_oromir_complete
 msgid ""
 "Hiding is he? That's not surprising. I'll go let him know who's the boss around here.\n"
 "Thanks for letting me know though."
 msgstr ""
+"Zich verbergen? Dat is geen verrassing. Ik zal hem laten weten wie hier de "
+"baas is.\n"
+"Dankjewel dat je het me laat weten."
 
 #: conversationlist_crossglen_leta.json:leta_oromir_complete2
 msgid "Thanks for telling me about Oromir earlier. I will go get him in just a minute."
 msgstr ""
+"Dankjewel om me eerder over Oromir te vertellen. Ik ga hem meteen halen."
 
 #: conversationlist_crossglen_leta.json:oromir1
 msgid ""
 "Oh you startled me.\n"
 "Hello."
 msgstr ""
+"Oh, je liet me schrikken.\n"
+"Hallo."
 
 #: conversationlist_crossglen_leta.json:oromir1:0
 #: conversationlist_fallhaven_vacor.json:vacor_begin
@@ -1123,11 +1187,13 @@ msgstr ""
 #: conversationlist_stoutford.json:glasforn_initial_0
 #: conversationlist_brimhaven.json:edrin_0_0
 msgid "Hello."
-msgstr ""
+msgstr "Hallo."
 
 #: conversationlist_crossglen_leta.json:oromir2
 msgid "I'm hiding here from my wife Leta. She is always getting angry at me for not helping out on the farm. Please don't tell her that I'm here."
 msgstr ""
+"Ik verberg met hier voor mijn vrouw Leta. Ze wordt altijd kwaad op me omdat "
+"ik niet help op de boerderij. Vertel haar alsjeblieft niet dat ik hier ben."
 
 #: conversationlist_crossglen_leta.json:oromir2:0
 #: conversationlist_algangror.json:algangror_remgard_5:1
@@ -1136,43 +1202,55 @@ msgstr "[Lieg] OK."
 
 #: conversationlist_crossglen_leta.json:oromir2:1
 msgid "Your secret is safe with me."
-msgstr ""
+msgstr "Je geheim is veilig bij mij."
 
 #: conversationlist_crossglen_odair.json:odair1
 msgid "Oh, it's you. You with that brother of yours. Always causing trouble."
 msgstr ""
+"Oh, jij bent het. Jij met die broer van jouw. Altijd overlast veroorzaken."
 
 #: conversationlist_crossglen_odair.json:odair2
 msgid "Hmm, maybe you could be of use to me. Do you think you could help me with a small task?"
 msgstr ""
+"Hmm, misschien kan je nuttig zijn voor mij. Denk je dat je met kan helpen "
+"met een kleine taak?"
 
 #: conversationlist_crossglen_odair.json:odair2:0
 msgid "Tell me more about this task."
-msgstr ""
+msgstr "Vertel me meer over deze taak."
 
 #: conversationlist_crossglen_odair.json:odair2:1
 msgid "Sure, if there is anything I can gain from it."
-msgstr ""
+msgstr "Zeker, als ik er iets bij te winnen heb."
 
 #: conversationlist_crossglen_odair.json:odair3
 msgid "I recently went in to that cave over there [points west], to check on our supplies. But apparently, the cave has been infested with rats."
 msgstr ""
+"Ik ging onlangs die grot in [wijst naar het westen], om onze voorraad na te "
+"kijken. Maar blijkbaar zit de grot nu vol ratten."
 
 #: conversationlist_crossglen_odair.json:odair4
 msgid "In particular, I saw one rat that was larger than the other rats. Do you think you have what it takes to help eliminate them?"
 msgstr ""
+"In het bijzonder, zag ik één rat dit groter was dan de andere ratten. Denk "
+"je dat je hem kan uitschakelen?"
 
 #: conversationlist_crossglen_odair.json:odair4:0
 msgid "Sure, I'll help you so that Crossglen can use the supply cave again."
 msgstr ""
+"Zeker, ik zal je helpen zodat Crossglen de voorraadgrot weer kan gebruiken."
 
 #: conversationlist_crossglen_odair.json:odair4:1
 msgid "Sure, I'll help you. But only because there might be some gain for me in this."
 msgstr ""
+"Zeker, ik zal je helpen. Maar enkel omdat ik er zelf misschien iets bij kan "
+"winnen."
 
 #: conversationlist_crossglen_odair.json:odair5
 msgid "I need you to get into that cave and kill the large rat, that way maybe we can stop the rat infestation in the cave and start using it as our old supply cave again."
 msgstr ""
+"Je moet de grot in gaan en de grote rat doden, op die manier kunnen we het "
+"rattenprobleem stoppen en de grot terug als voorraadgrot gebruiken."
 
 #: conversationlist_crossglen_odair.json:odair5:0
 #: conversationlist_fallhaven_arcir.json:arcir_elythara_1:0
@@ -1194,15 +1272,16 @@ msgstr ""
 #: conversationlist_brimhaven2.json:brv_school_enter_20:0
 #: conversationlist_gison.json:gison_p2_70_10:0
 msgid "OK."
-msgstr ""
+msgstr "Ok."
 
 #: conversationlist_crossglen_odair.json:odair5:1
 msgid "On second thought, I don't think I will help you after all."
-msgstr ""
+msgstr "Bij nader inzien, ik denk niet dat ik je zal helpen."
 
 #: conversationlist_crossglen_odair.json:odair_cowards
 msgid "I didn't think so either. You and that brother of yours always were cowards."
 msgstr ""
+"Dat denk ik ook niet. Jij en die broer van jou waren altijd al lafaards."
 
 #: conversationlist_crossglen_odair.json:odair_cowards:0
 #: conversationlist_crossglen_odair.json:odair_complete2:0
@@ -1218,15 +1297,15 @@ msgstr ""
 #: conversationlist_omicronrg9.json:umar_guild_5b:0
 #: conversationlist_omicronrg9.json:umar_guild02_6b:0
 msgid "Bye."
-msgstr ""
+msgstr "Daag."
 
 #: conversationlist_crossglen_odair.json:odair_continue
 msgid "Did you kill that large rat in the cave west of here?"
-msgstr ""
+msgstr "Heb je de grote rat gedood in de grot ten westen van hier?"
 
 #: conversationlist_crossglen_odair.json:odair_continue:0
 msgid "Yes, I have killed the large rat."
-msgstr ""
+msgstr "Ja, ik heb de grote rat gedood."
 
 #: conversationlist_crossglen_odair.json:odair_continue:1
 #: conversationlist_fallhaven_bucus.json:bucus_thieves_continue:0
@@ -1249,11 +1328,13 @@ msgstr ""
 #: conversationlist_lodar.json:lodar_find0:0
 #: conversationlist_maevalia.json:maevalia_r1:1
 msgid "What was I supposed to do again?"
-msgstr ""
+msgstr "Wat moest ik ook al weer doen?"
 
 #: conversationlist_crossglen_odair.json:odair_complete
 msgid "Thanks a lot for your help kid! Maybe you and that brother of yours aren't as cowardly as I thought. Here, take these coins for your help."
 msgstr ""
+"Erg bedankt voor je hulp knul! Misschien dat jij en die broer van jou niet "
+"zo'n lafaards zijn als ik dacht. Hier, neem deze munten voor je hulp."
 
 #: conversationlist_crossglen_odair.json:odair_complete:0
 #: conversationlist_thievesguild_1.json:thievesguild_thief_4:0
@@ -1267,23 +1348,25 @@ msgstr ""
 #: conversationlist_brimhaven_2.json:brv_guard_deputy_asd_30:0
 #: conversationlist_gison.json:gison_p1_20_warmup_1:0
 msgid "Thanks."
-msgstr ""
+msgstr "Bedankt."
 
 #: conversationlist_crossglen_odair.json:odair_complete2
 msgid "Thanks a lot for your help earlier. Now we might start using that cave as our old supply cave again."
 msgstr ""
+"Bedankt voor je hulp eerder. Nu kunnen we de grot weer gaan gebruiken als "
+"voorraadgrot."
 
 #: conversationlist_jan.json:jan_default
 msgid "Hello kid. Please leave me to my mourning."
-msgstr ""
+msgstr "Hallo kind. Laat me alsjeblieft alleen rouwen."
 
 #: conversationlist_jan.json:jan_default:0
 msgid "What is the problem?"
-msgstr ""
+msgstr "Wat is het probleem?"
 
 #: conversationlist_jan.json:jan_default:1
 msgid "Do you want to talk about it?"
-msgstr ""
+msgstr "Wil je er over praten?"
 
 #: conversationlist_jan.json:jan_default:2
 #: conversationlist_jan.json:jan_default2:1
@@ -1295,11 +1378,11 @@ msgstr ""
 #: conversationlist_omicronrg9.json:leta_guild_1b:0
 #: conversationlist_omicronrg9.json:umar_guild03_30:2
 msgid "OK, bye."
-msgstr ""
+msgstr "Ok, daag."
 
 #: conversationlist_jan.json:jan_default2
 msgid "Oh, it's so sad. I really don't want to talk about it."
-msgstr ""
+msgstr "Oh, dat is droevig. I wil er echt niet over praten."
 
 #: conversationlist_jan.json:jan_default2:0
 #: conversationlist_algangror.json:algangror_story:0
@@ -1310,14 +1393,20 @@ msgstr "Graag."
 #: conversationlist_jan.json:jan_default3
 msgid "Well, I guess it's OK to tell you. You seem to be a nice enough kid."
 msgstr ""
+"Wel, ik vermoed dat het ok is om het aan jou te vertellen. Je lijkt aardig "
+"genoeg."
 
 #: conversationlist_jan.json:jan_default4
 msgid "My friend Gandir, his friend Irogotu, and I were down here digging this hole. We had heard there was a hidden treasure down here."
 msgstr ""
+"Mijn vriend Gandir, zijn vriend Irogotu, en ik waren hier deze put aan het "
+"graven. We hoorden dat er daar beneden een schat was."
 
 #: conversationlist_jan.json:jan_default5
 msgid "We started digging and finally broke through to the cave system below. That's when we discovered them. The critters and bugs."
 msgstr ""
+"We begonnen te graven en uiteindelijk kwamen we in het grottensysteem. Toen "
+"ontdekten we hen. De beestjes en insecten."
 
 #: conversationlist_jan.json:jan_default6
 msgid ""
@@ -1325,79 +1414,99 @@ msgid ""
 "\n"
 "Gandir and I told Irogotu that we should stop the digging and leave while we still could."
 msgstr ""
+"Oh, die beestjes. Verdomde bastaards. Ze doodden me bijna.\n"
+"\n"
+"Gandir en ik vertelden Irogotu dat we zouden stoppen met graven en de grot "
+"verlaten terwijl we nog konden."
 
 #: conversationlist_jan.json:jan_default7
 msgid "But Irogotu wanted to continue deeper into the dungeon. He and Gandir got into an argument and started fighting."
 msgstr ""
+"Maar Irogotu wilde dieper in de kerker blijven gaan. Hij en Gandir begonnen "
+"te vechten."
 
 #: conversationlist_jan.json:jan_default8
 msgid "That's when it happened. *sob* Oh what have we done?"
-msgstr ""
+msgstr "Dat is wat er gebeurde. *treurt* Oh wat hebben we gedaan?"
 
 #: conversationlist_jan.json:jan_default8:0
 #: conversationlist_ogam.json:ogam_2:1
 #: conversationlist_brimhaven_2.json:arlish_asd_40:0
 msgid "Please go on."
-msgstr ""
+msgstr "Ga door alsjeblieft."
 
 #: conversationlist_jan.json:jan_default9
 msgid "Irogotu killed Gandir with his bare hands. You could see the fire in his eyes. He almost seemed to enjoy it."
 msgstr ""
+"Irogotu vermoordde Gandir met de blote hand. Je kon het vuur in zijn ogen "
+"zien. Hij leek er bijna van te genieten."
 
 #: conversationlist_jan.json:jan_default10
 msgid "I fled and haven't dared go back down there because of the critters and Irogotu himself."
 msgstr ""
+"Ik vluchtte en durfde niet terug naar beneden te gaan door de beestjes en "
+"door Irogotu."
 
 #: conversationlist_jan.json:jan_default11
 msgid "Oh that damn Irogotu. If only I could get to him. I'd show him one thing and another."
 msgstr ""
+"Oh die verdomde Irogotu. Als ik hem maar zou kunnen krijgen. Ik zou hem het "
+"een-en-ander tonen."
 
 #: conversationlist_jan.json:jan_default11:0
 msgid "Do you think I could help?"
-msgstr ""
+msgstr "Denk je dat ik kan helpen?"
 
 #: conversationlist_jan.json:jan_default11_1
 msgid "Do you think you could help me?"
-msgstr ""
+msgstr "Denk je dat je me zou kunnen helpen?"
 
 #: conversationlist_jan.json:jan_default11_1:0
 msgid "Sure, there may be some treasure in this for me."
-msgstr ""
+msgstr "Zeker, er zit misschien een schat in voor mij."
 
 #: conversationlist_jan.json:jan_default11_1:1
 msgid "Sure. Irogotu should pay for what he did."
-msgstr ""
+msgstr "Zeker, Irogotu moet boeten voor wat hij deed."
 
 #: conversationlist_jan.json:jan_default11_1:2
 msgid "No thanks, I would rather not be involved in this. It sounds dangerous."
 msgstr ""
+"Nee dankje, ik zou hier liever niet in betrokken raken. Het klinkt "
+"gevaarlijk."
 
 #: conversationlist_jan.json:jan_default12
 msgid "Really? You think you could help? Hmm, maybe you could. Beware of those bugs though, they're really tough bastards."
 msgstr ""
+"Echt? Denk je dat je kan helpen? Hmm, misschien wel. Wees voorzichtig met de "
+"beestjes, ze zijn echt taaie bastaards."
 
 #: conversationlist_jan.json:jan_default13
 msgid "If you really want to help, go find Irogotu down in the cave, and get me back Gandir's ring."
 msgstr ""
+"Als je echt wil helpen, ga op zoek naar Irogotu in de grot, en breng me "
+"Gandir's ring terug."
 
 #: conversationlist_jan.json:jan_default13:0
 msgid "Sure, I'll help."
-msgstr ""
+msgstr "Zeker, ik zal helpen."
 
 #: conversationlist_jan.json:jan_default13:1
 #: conversationlist_flagstone.json:flagstone_sentry_return1:0
 #: conversationlist_flagstone.json:flagstone_sentry_return2:1
 msgid "Can you tell me the story again?"
-msgstr ""
+msgstr "Kan je met het verhaal opnieuw vertellen?"
 
 #: conversationlist_jan.json:jan_default13:2
 #: conversationlist_prim_tavern.json:birgil_4:1
 msgid "Never mind, goodbye."
-msgstr ""
+msgstr "Laat maar, tot ziens."
 
 #: conversationlist_jan.json:jan_default14
 msgid "Return to me when you are done. Bring me Gandir's ring from Irogotu down in the cave."
 msgstr ""
+"Kom bij me terug wanneer je klaar bent. Breng me Gandir's ring van Irogotu "
+"beneden in de grot."
 
 #: conversationlist_jan.json:jan_return
 msgid "Hello again kid. Did you find Irogotu down in the cave?"
@@ -52925,4 +53034,3 @@ msgstr ""
 #: worldmap.xml:world1:brimhaven_area
 msgid "Brimhaven"
 msgstr ""
-
