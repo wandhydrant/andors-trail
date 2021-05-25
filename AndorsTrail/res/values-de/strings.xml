@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Andors Pfad</string>
-    <string name="app_description">Questbasiertes Fantasy-Rollenspiel</string>
+    <string name="app_description">Aufgabenbasiertes Phantasie-Rollenspiel</string>
     <string name="exit_to_menu">Zum Menü</string>
     <string name="menu_settings">Einstellungen</string>
     <string name="menu_save">Speichern</string>
@@ -10,7 +10,7 @@
     <string name="loadsave_title_save">Spielstand speichern</string>
     <string name="loadsave_title_load">Spielstand laden</string>
     <string name="loadsave_selectslot">Speicherplatz wählen</string>
-    <string name="savegame_currenthero_displayinfo">Level %1$d, %2$d Erfahrung, %3$d Goldmünzen</string>
+    <string name="savegame_currenthero_displayinfo">Stufe %1$d, %2$d Erfahrung, %3$d Goldmünzen</string>
     <string name="dialog_loading_message">Lade Ressourcen…</string>
     <string name="dialog_loading_failed_title">Laden fehlgeschlagen</string>
     <string name="dialog_loading_failed_message">Der Spielstand konnte nicht geladen werden.\n\n:(\n\nDie Datei könnte beschädigt oder unvollständig sein.</string>
@@ -26,8 +26,8 @@
     <string name="heroinfo_char">Übersicht</string>
     <string name="heroinfo_inv">Inventar</string>
     <string name="heroinfo_skill">Fähigkeiten</string>
-    <string name="heroinfo_levelup">Level aufgestiegen</string>
-    <string name="heroinfo_level">Level</string>
+    <string name="heroinfo_levelup">Stufe aufgestiegen</string>
+    <string name="heroinfo_level">Stufe</string>
     <string name="heroinfo_totalexperience">Erfahrung</string>
     <string name="heroinfo_wornequipment">Ausrüstung</string>
     <string name="heroinfo_inventory">Inventar</string>
@@ -36,11 +36,11 @@
     <string name="heroinfo_quests">Aufgaben</string>
     <string name="combat_attack">Angriff (%1$d AP)</string>
     <string name="combat_move">Bewegung (%1$d AP)</string>
-    <string name="combat_use">Benutzen</string>
+    <string name="combat_use">Gegenstand benutzen</string>
     <string name="combat_endturn">Runde beenden</string>
     <!-- <string name="combat_endcombat">Kampf beenden</string>-->
     <string name="combat_flee">Fliehen</string>
-    <string name="combat_begin_flee">Du kannst nun aus dem Kampf flüchten indem du in die gewünschte Fluchtrichtung klickst.</string>
+    <string name="combat_begin_flee">Du kannst nun aus dem Kampf flüchten, indem du in die gewünschte Fluchtrichtung klickst.</string>
     <string name="combat_flee_failed">Die Flucht ist misslungen!</string>
     <string name="combat_status_ap">AP: %1$d</string>
     <string name="combat_monsterhealth">LP:</string>
@@ -55,7 +55,7 @@
     <string name="combat_result_herokillsmonster">%1$s ist besiegt!</string>
     <string name="combat_not_enough_ap">Es sind nicht mehr genug AP in dieser Runde übrig.</string>
     <string name="combat_hero_dies">Du wirst bewusstlos, wachst aber glücklicherweise wieder lebendig, benommen und entkräftet auf. Du verlierst %1$d Erfahrungspunkte.</string>
-    <string name="inventory_info">Info</string>
+    <string name="inventory_info">Auskunft</string>
     <string name="inventory_equip">Anlegen</string>
     <string name="inventory_unequip">Ablegen</string>
     <string name="inventory_use">Benutzen</string>
@@ -71,7 +71,7 @@
     <string name="dialog_groundloot_message">Du hast ein paar Gegenstände gefunden.</string>
     <string name="dialog_monsterloot_title">Sieg</string>
     <string name="dialog_monsterloot_message">Du hast den Kampf überlebt. </string>
-    <string name="dialog_monsterloot_gainedexp">Du erhältst %1$d Erfahrung. </string>
+    <string name="dialog_monsterloot_gainedexp">Du erhältst %1$d Erfahrungspunkte.</string>
     <string name="monster_difficulty_veryeasy">Sehr leicht</string>
     <string name="monster_difficulty_easy">Leicht</string>
     <string name="monster_difficulty_normal">Normal</string>
@@ -84,8 +84,8 @@
     <string name="actorinfo_attack">Angriff:</string>
     <string name="actorinfo_defense">Abwehr:</string>
     <string name="actorinfo_movecost">Bewegungskosten (AP):</string>
-    <string name="actorinfo_basetraits">Basiskampfeigenschaften (ohne Ausrüstung und Skills)</string>
-    <string name="actorinfo_currenttraits">Kampfeigenschaften (aktuell)</string>
+    <string name="actorinfo_basetraits">Grundkampfeigenschaften (ohne Ausrüstung und Fähigkeiten)</string>
+    <string name="actorinfo_currenttraits">Kampfeigenschaften (gegenwärtig)</string>
     <string name="traitsinfo_attack_cost">Angriffskosten (AP):</string>
     <string name="traitsinfo_attack_chance">Angriffschance:</string>
     <string name="traitsinfo_attack_damage">Schaden:</string>
@@ -103,12 +103,12 @@
     <string name="iteminfo_action_unequip_ap">Ablegen (%1$d AP)</string>
     <string name="startscreen_continue">Aktuelles Spiel fortsetzen</string>
     <string name="startscreen_newgame">Neues Spiel</string>
-    <string name="startscreen_newgame_confirm">Das aktuelle Spiel wird verworfen. Sind sie sicher, dass sie ein neues Spiel starten wollen?</string>
+    <string name="startscreen_newgame_confirm">Das aktuelle Spiel wird verworfen. Bist du sicher, dass du ein neues Spiel starten willst\?</string>
     <string name="startscreen_about">Über/Hilfe</string>
     <string name="startscreen_enterheroname">Heldennamen eingeben</string>
     <string name="startscreen_load">Laden</string>
     <!-- <string name="conversation_title">%1$s sagt</string> -->
-    <string name="conversation_rewardexp"> [Du erhältst %1$d Erfahrung]</string>
+    <string name="conversation_rewardexp">[Du erhältst %1$d Erfahrungspunkte]</string>
     <string name="conversation_rewardgold"> [Du erhältst %1$d Goldmünzen]</string>
     <string name="conversation_lostgold"> [Du verlierst %1$d Goldmünzen]</string>
     <string name="conversation_rewarditem"> [Du erhältst einen Gegenstand]</string>
@@ -117,7 +117,7 @@
     <string name="conversation_leave">Verlassen</string>
     <string name="shop_buy">Kaufen</string>
     <string name="shop_sell">Verkaufen</string>
-    <string name="shop_infoitem">Info</string>
+    <string name="shop_infoitem">Auskunft</string>
     <string name="shop_buyitem">Kaufen (%1$d Gold)</string>
     <string name="shop_sellitem">Verkaufen (%1$d Gold)</string>
     <string name="shop_yourgold">Deine Goldmünzen: %1$d</string>
@@ -554,7 +554,7 @@ Jeder Level des Skills erhöht das Schadenspotential von zweihändigen Waffen um
     <string name="combat_condition_monster_apply">%1$s ist betroffen von %2$s.</string>
     <string name="combat_condition_monster_immune">%1$s ist jetzt immun gegen %2$s.</string>
     <string name="startscreen_newgame_start">Spiel starten</string>
-    <string name="shop_item_sort">Sortieren</string>
+    <string name="shop_item_sort">Ordnen</string>
     <string name="actorcondition_info_immunity">Immun gegen %1$s</string>
     <string name="iteminfo_effect_works_when_hit_by_attacker">Wenn vom Angreifer getroffen</string>
     <string name="iteminfo_effect_works_when_killed_by_attacker">Wenn von Angreifer getötet</string>
@@ -563,7 +563,7 @@ Jeder Level des Skills erhöht das Schadenspotential von zweihändigen Waffen um
     <string name="inventory_category_weapons">Waffen</string>
     <string name="inventory_category_armor">Rüstung</string>
     <string name="inventory_category_usable">Verbrauchsgüter</string>
-    <string name="inventory_category_quest">Questgegenstände</string>
+    <string name="inventory_category_quest">Gegenstand für Aufgabe</string>
     <string name="inventory_category_other">Andere</string>
     <string name="inventory_sort_custom">Unsortiert</string>
     <string name="inventory_sort_name">Name</string>
@@ -609,29 +609,29 @@ Jeder Level des Skills erhöht das Schadenspotential von zweihändigen Waffen um
     <string name="preferences_display_theme">Oberflächendesign auswählen (Neustart notwendig)</string>
     <string name="combat_taunt_monster">Du verhöhnst %1$s!</string>
     <string name="storage_permissions_mandatory">Der Zugriff auf den Datenspeicher ist zwingend notwendig, um Spielstände zu laden und zu speichern. Andor\'s Trail wird daher geschlossen.</string>
-    <string name="dialog_loading_failed_cheat">Andor\'s Trail konnte die Savegame-Datei nicht laden. Diese Savegame-Datei wurde bereits fortgesetzt.</string>
+    <string name="dialog_loading_failed_cheat">Andor\'s Trail konnte die Datei mit dem Spielstand nicht laden. Diese Datei wurde bereits fortgesetzt.</string>
     <string name="dialog_game_over_title">Spiel ist vorbei</string>
     <string name="dialog_game_over_text">Du nimmst deinen letzten Atemzug und stirbst.</string>
-    <string name="rip_startscreen">(RIP)</string>
+    <string name="rip_startscreen">(Ruhe in Frieden)</string>
     <string name="heroinfo_mode">Modus</string>
     <string name="heroinfo_unlimited_lives_and_saves">Standard
 \n(Unbegrenzte Leben und Speichern)</string>
     <string name="heroinfo_unlimited_lives">Unbegrenzte Leben, 1 mal speichern</string>
     <string name="heroinfo_limited_lives">Begrenzte Leben (%1$d/%2$d übrig)</string>
-    <string name="heroinfo_one_life">Permadeath (1 Leben)</string>
-    <string name="startscreen_game_mode">Modus</string>
+    <string name="heroinfo_one_life">Sofort-Tod (1 Leben)</string>
+    <string name="startscreen_game_mode">Art und Weise</string>
     <string name="startscreen_load_game">Spiel laden</string>
     <string name="startscreen_load_game_confirm">Das aktuelle Spiel ist nicht gespeichert und du wirst deinen Charakter verlieren.</string>
     <string name="startscreen_error_loading_game">Fehler beim Laden des Spiels</string>
     <string name="startscreen_error_loading_empty_slot">Von einem leeren Speicherplatz kann nicht geladen werden.</string>
     <string name="startscreen_attention_slot_gets_delete_on_load">Achtung</string>
-    <string name="startscreen_attention_message_slot_gets_delete_on_load">Das Laden dieses Spiels löscht seinen Speicherplatz. Sie müssen erneut speichern, bevor Sie zu einem anderen Spiel wechseln.</string>
-    <string name="startscreen_mode_unlimited_saves_and_lives">Standard (Unbegrenzte Leben und Speichern)</string>
-    <string name="startscreen_mode_unlimited_lives">Medium (Unbegrenzte Leben, 1 Speicherplatz)</string>
-    <string name="startscreen_mode_50_lives">Hart (50 Leben, 1 Speicherplatz)</string>
-    <string name="startscreen_mode_10_lives">Sehr hart (10 Leben, 1 Speicherplatz)</string>
-    <string name="startscreen_mode_3_lives">Extrem (3 Leben, 1 Speicherplatz)</string>
-    <string name="startscreen_mode_1_life">Permadeath (1 Leben, 1 Speicherplatz)</string>
+    <string name="startscreen_attention_message_slot_gets_delete_on_load">Das Laden dieses Spiels löscht seinen Speicherplatz. Du musst erneut speichern, bevor du zu einem anderen Spiel wechselst.</string>
+    <string name="startscreen_mode_unlimited_saves_and_lives">Normal (Unbegrenzte Leben und Speichern)</string>
+    <string name="startscreen_mode_unlimited_lives">Mittel (Unbegrenzte Leben, 1 Speicherplatz)</string>
+    <string name="startscreen_mode_50_lives">Schwer (50 Leben, 1 Speicherplatz)</string>
+    <string name="startscreen_mode_10_lives">Sehr schwer (10 Leben, 1 Speicherplatz)</string>
+    <string name="startscreen_mode_3_lives">Äußerst schwer (3 Leben, 1 Speicherplatz)</string>
+    <string name="startscreen_mode_1_life">Sofort-Tod (1 Leben, 1 Speicherplatz)</string>
     <string name="preferences_language_default">Systemsprache</string>
     <string name="preferences_language">Sprache</string>
     <string name="preferences_language_description">Wähle die Sprache aus. Englisch wird verwendet, wenn die Systemsprache nicht verfügbar ist oder Inhalte nicht übersetzt wurden. (Neustart erforderlich)</string>
@@ -664,7 +664,7 @@ Jeder Level des Skills erhöht das Schadenspotential von zweihändigen Waffen um
     <string name="skill_title_spore_immunity">Immunität gegen Sporenvergiftung</string>
     <string name="inventory_category_food">Nahrung</string>
     <string name="inventory_category_potion">Trank</string>
-    <string name="skill_longdescription_fightstyle_unarmed_unarmored">Im Kampf ohne Rüstung, Waffe und Schild, erlange %1$d Angriffschance, %2$d Abwehrchance, %3$d Schadensresistenz und erhöhe den maximalen Schaden um %4$d pro Skill Level. Der Skill erhöht außerdem die kritische Fertigkeit um 1 plus 0.%5$d pro level.
+    <string name="skill_longdescription_fightstyle_unarmed_unarmored">Im Kampf ohne Rüstung, Waffe und Schild, erlange %1$d Angriffschance, %2$d Abwehrchance, %3$d Schadensresistenz und erhöhe den maximalen Schaden um %4$d pro Fähigkeitsstufe. Die Fähigkeit erhöht außerdem die kritische Fertigkeit um 1 plus 0.%5$d pro level.
 \n
 \nGegenstände aus Stoff werden nicht als Rüstung betrachtet.</string>
     <string name="combat_log_item_plural">Du hast %1$d Gegenstände gefunden:</string>
