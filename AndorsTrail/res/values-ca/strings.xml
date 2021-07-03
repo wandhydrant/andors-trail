@@ -553,4 +553,102 @@
     <string name="combat_taunt_monster">Et mofes de %1$s!</string>
     <string name="rip_startscreen">(DEP)</string>
     <string name="dialog_game_over_title">Fi de la partida</string>
+    <string name="heroinfo_gamestats_bonemeals">Pocions de farina d\'os utilitzades</string>
+    <string name="skill_longdescription_weapon_prof_pole">Per cada nivell d\'habilitat, incrementa les probabilitats d\'atac quan utilitzis armes d\'asta (piques, llances, ...) un %1$d %% del seu valor original, incrementant també la probabilitat de bloqueig un %2$d %% del seu valor original i l\'habilitat de crítics un %3$d %% del seu valor original.</string>
+    <string name="skill_longdescription_specialization_weapon_shield">Incrementa tan les probabilitats d\'atac com el mal causat per les armes a la mà principal. La probabilitat d\'atac augmenta un %1$d %% del valor original, i el mal causat un %2$d del valor original.</string>
+    <string name="skill_longdescription_specialization_2hand">Incrementa el mal causat per armes a dues mans en un %1$d %% del mal original, a més dels beneficis donats per l\'habilitat d\'estil de l\'arma. Les probabilitats d\'atac d\'armes a dues mans també s\'incrementen un %2$d %% del valor original.</string>
+    <string name="skill_longdescription_specialization_dualwield">Incrementa la probabilitat d\'atac d\'ambdues armes amb un %1$d %% addicional dels seus valors originals, a més dels beneficis que dóni la pròpia habilitat d\'estil de l\'arma. Les probabilitats de bloqueig d\'ambdues armes també s\'incrementen un %2$d dels seus valors originals.</string>
+    <string name="skill_longdescription_fightstyle_unarmed_unarmored">Quan lluitis sense cap peça d\'armadura, arma ni escut, guanya %1$d de probabilitat d\'atac, %2$d de probabilitat de bloqueig, %3$d de resistència al mal i incrementa el màxim de mal causat en %4$d per cada nivell de l\'habilitat. Aquesta habilitat també et dóna un multiplicador crític d\'1 més 0.%5$d per cada nivell.
+\n
+\nEls objectes fets de roba no es consideren armadura.</string>
+    <string name="skill_longdescription_fightstyle_weapon_shield">Et beneficia quan lluites amb una arma a la mà principal i tens un escut o arma defensiva a la mà secundària.
+\n
+\nCada nivell d\'habilitat augmenta la probabilitat d\'atac de l\'arma principal en un %1$d %% de la original, i la probabilitat de bloqueig de l\'escut o arma defensiva en un %2$d %% de la original.</string>
+    <string name="skill_longdescription_fightstyle_2hand">Et beneficia quan es fan servir armes a dues mans, com espases a dues mans, destrals de guerra o martells gegants.
+\n
+\nCada nivell de l\'habilitat incrementa el modificador de mal de l\'arma de dues mans un %1$d %% del mal original.</string>
+    <string name="preferences_movement_dpad_transparency_70_pct">70%</string>
+    <string name="preferences_movement_dpad_transparency_60_pct">60%</string>
+    <string name="preferences_movement_dpad_transparency_50_pct">50%</string>
+    <string name="preferences_movement_dpad_transparency_40_pct">40%</string>
+    <string name="preferences_movement_dpad_transparency_30_pct">30%</string>
+    <string name="preferences_movement_dpad_transparency">Si s\'activa el D-pad virtual, aquesta opció en determina la transparència.</string>
+    <string name="preferences_movement_dpad_transparency_title">Transparència de D-pad</string>
+    <string name="skill_longdescription_spore_immunity">Evita permanentment que els atacs de monstres infligeixin l\'efecte de verí d\'espores.</string>
+    <string name="skill_title_spore_immunity">Resistència al verí d\'espores</string>
+    <string name="skill_shortdescription_spore_immunity">Immunitat completa al verí d\'espores</string>
+    <string name="storage_permissions_mandatory">L\'accés d\'emmagatzematge és obligatori perquè Andor\'s Trail pugui gestionar partides guardades i el mapa del món. Andor\'s Trail es tancarà.</string>
+    <string name="change_theme_requires_restart">Per canviar el patró (theme) de la interfície cal reiniciar. S\'ha tancat Andor\'s Trail.</string>
+    <string name="preferences_display_theme_charcoal">Obsidiana</string>
+    <string name="preferences_display_theme_green">Malaquita</string>
+    <string name="preferences_display_theme_blue">Cobalt</string>
+    <string name="preferences_display_theme_title">Patró (theme)</string>
+    <string name="preferences_display_theme">Escull el patró (theme) de la interfície. (requereix reiniciar)</string>
+    <string name="skill_sort_unlocked">Desbloquejat</string>
+    <string name="skill_sort_points">Punts</string>
+    <string name="skill_sort_name">Nom</string>
+    <string name="skill_sort_unsorted">Sense ordenar</string>
+    <string name="skill_category_proficiency">Destresa</string>
+    <string name="skill_category_speciality">Especialitat</string>
+    <string name="skill_category_utility">Utilitat</string>
+    <string name="skill_category_immunity">Immunitat</string>
+    <string name="skill_category_criticals">Crítics</string>
+    <string name="skill_category_defense">Defensa</string>
+    <string name="skill_category_offense">Atac</string>
+    <string name="skill_category_all">Tot</string>
+    <string name="shoplist_sort_type">Tipus</string>
+    <string name="shoplist_sort_rarity">Raresa</string>
+    <string name="shoplist_sort_quantity">Quantitat</string>
+    <string name="shoplist_sort_price">Preu</string>
+    <string name="shoplist_sort_name">Nom</string>
+    <string name="shoplist_sort_custom">Sense ordenar</string>
+    <string name="inventory_sort_type">Tipus</string>
+    <string name="inventory_sort_rarity">Raresa</string>
+    <string name="inventory_sort_quantity">Quantitat</string>
+    <string name="inventory_sort_price">Preu</string>
+    <string name="inventory_sort_name">Nom</string>
+    <string name="inventory_sort_custom">Sense classificar</string>
+    <string name="inventory_category_other">Altres</string>
+    <string name="inventory_category_quest">Objectes de missió</string>
+    <string name="inventory_category_food">Menjar</string>
+    <string name="inventory_category_potion">Pocions</string>
+    <string name="inventory_category_jewelry">Joies</string>
+    <string name="inventory_category_armor">Armadura</string>
+    <string name="inventory_category_weapons">Armes</string>
+    <string name="inventory_category_favorites">Preferits</string>
+    <string name="inventory_category_all">Tot</string>
+    <string name="change_locale_requires_restart">El canvi de recursos locals i de llengua requereix reiniciar. S\'ha tancat Andor\'s Trail.</string>
+    <string name="preferences_ui_use_localized_resources">Utilitza traducció d\'interfície i contingut, on es pugui. (Cal reiniciar)</string>
+    <string name="preferences_ui_use_localized_resources_title">Utilitza recursos localitzats</string>
+    <string name="heroinfo_gamestats_name_and_qty">%1$s (%2$d)</string>
+    <string name="heroinfo_gamestats_fav_monsters">Monstres que mates més sovint</string>
+    <string name="heroinfo_gamestats_top_boss">Monstre més poderós que has matat</string>
+    <string name="heroinfo_gamestats_num_killed_monsters">Monstres que has matat</string>
+    <string name="heroinfo_gamestats_fav_item">Objecte més utilitzat</string>
+    <string name="heroinfo_gamestats_visited_maps">Llocs on has estat</string>
+    <string name="heroinfo_gamestats_num_used_items">Objectes utilitzats</string>
+    <string name="heroinfo_gamestats_spent_gold">Or gastat a les botigues</string>
+    <string name="heroinfo_gamestats_deaths">Vegades que t\'has quedat inconscient</string>
+    <string name="heroinfo_gamestats_quests">Missions complertes</string>
+    <string name="heroinfo_gamestats">Estadístiques de la partida</string>
+    <string name="startscreen_non_release_version">Aquesta és una versió de pre-llançament d\'Andor\'s Trail. És possible que les partides guardades en aquesta versió no siguin compatibles amb les de la vesió oficial de llançament.</string>
+    <string name="startscreen_incompatible_savegames">Aquesta és una versió de desenvolupament d\'Andor\'s Trail. Les partides guardades per aquesta versió són incompatibles amb la versió oficial de llançament.</string>
+    <string name="preferences_ui_show_quickslots_when_toolbox_is_visible">Fa que els botons d\'accés ràpid es mostrin així que s\'obre la caixa d\'eines</string>
+    <string name="preferences_ui_show_quickslots_when_toolbox_is_visible_title">Mostra els accessos ràpids quan s\'obri la caixa d\'eines</string>
+    <string name="preferences_quickslots_placements_vertical_bottom_right">A baix a la dreta, al llarg de la vora dreta</string>
+    <string name="preferences_quickslots_placements_horizontal_bottom_right">A baix a la dreta, al llarg de la vora inferior</string>
+    <string name="preferences_quickslots_placements_horizontal_bottom_left">A sota a l\'esquerra, al llarg de la vora inferior</string>
+    <string name="preferences_quickslots_placements_vertical_bottom_left">A sota a l\'esquerra, al llarg de la vora esquerra</string>
+    <string name="preferences_quickslots_placements_vertical_center_right">A la dreta, a mitja alçada</string>
+    <string name="preferences_quickslots_placements_vertical_center_left">A l\'esquerra, a mitja alçada</string>
+    <string name="preferences_quickslots_placements_horizontal_center_bottom">A sota i al centre</string>
+    <string name="preferences_quickslots_placement_summary">On posar els accessos ràpids</string>
+    <string name="preferences_quickslots_placement">Posició ràpida</string>
+    <string name="skill_longdescription_fightstyle_dualwield">Et beneficia quan lluites amb dues armes alhora, una a la mà principal i una a la mà secundària.
+\n
+\nSense aquesta habilitat, sols un %1$d %% de les qualitats de l\'arma secundària s\'aprofiten. Això inclou probabilitat d\'atac, habilitat de cops crítics, modificador al mal causat i probabilitat de bloqueig. Sense aquesta habilitat, el cost en punts (PA) de cada atac és la suma dels costos d\'atac de les dues armes (principal i secundària). S\'utilitza el menor dels modificadors al mal per ferir.
+\n
+\nAmb un nivell d\'aquesta habilitat, %2$d %% de les qualitats de l\'arma secundària s\'aprofiten, i el cost d\'atac és el de l\'arma amb cost més alt, més un %3$d %% del cost de l\'altra. Es fa servir la mitjana dels modificadors al mal per ferir.
+\n
+\nAmb dos nivells d\'aquesta habilitat, %4$d %% de les qualitats de l\'arme secundària s\'aprofiten, i el cost d\'atac és el de l\'arma amb cost més alt. S\'utilitza el major dels modificadors de mal per ferir.</string>
 </resources>
