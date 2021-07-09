@@ -125,7 +125,8 @@ public final class WorldMapController {
 			canvas.scale(scale, scale);
 
 			synchronized (cachedTiles) {
-				drawMapLayer(canvas, mapTiles.currentLayout.layerGround);
+				tryDrawMapLayer(canvas, mapTiles.currentLayout.layerBase);
+				tryDrawMapLayer(canvas, mapTiles.currentLayout.layerGround);
 				tryDrawMapLayer(canvas, mapTiles.currentLayout.layerObjects);
 				tryDrawMapLayer(canvas, mapTiles.currentLayout.layerAbove);
 				tryDrawMapLayer(canvas, mapTiles.currentLayout.layerTop);
