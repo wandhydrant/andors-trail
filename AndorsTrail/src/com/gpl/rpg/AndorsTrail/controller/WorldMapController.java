@@ -16,7 +16,6 @@ import android.graphics.Bitmap.Config;
 import android.graphics.Canvas;
 import android.graphics.Paint;
 import android.os.AsyncTask;
-import android.os.Environment;
 import android.widget.Toast;
 
 import com.gpl.rpg.AndorsTrail.AndorsTrailApplication;
@@ -31,6 +30,7 @@ import com.gpl.rpg.AndorsTrail.model.map.WorldMapSegment.NamedWorldMapArea;
 import com.gpl.rpg.AndorsTrail.model.map.WorldMapSegment.WorldMapSegmentMap;
 import com.gpl.rpg.AndorsTrail.resource.tiles.TileCollection;
 import com.gpl.rpg.AndorsTrail.savegames.Savegames;
+import com.gpl.rpg.AndorsTrail.util.AndroidStorage;
 import com.gpl.rpg.AndorsTrail.util.Coord;
 import com.gpl.rpg.AndorsTrail.util.CoordRect;
 import com.gpl.rpg.AndorsTrail.util.L;
@@ -152,7 +152,7 @@ public final class WorldMapController {
 	}
 
 	private static void ensureWorldmapDirectoryExists(Context context) throws IOException {
-		File dir = Savegames.getExternalDirectory(context, Constants.FILENAME_SAVEGAME_DIRECTORY);
+		File dir = AndroidStorage.GetStorageDirectory(context, Constants.FILENAME_SAVEGAME_DIRECTORY);
 		if (!dir.exists()) dir.mkdir();
 		dir = new File(dir, Constants.FILENAME_WORLDMAP_DIRECTORY);
 		if (!dir.exists()) dir.mkdir();
@@ -178,7 +178,7 @@ public final class WorldMapController {
 		return new File(getWorldmapDirectory(context), fileName + ".png");
 	}
 	private static File getWorldmapDirectory(Context context) {
-		File dir = Savegames.getExternalDirectory(context, Constants.FILENAME_SAVEGAME_DIRECTORY);
+		File dir = AndroidStorage.GetStorageDirectory(context, Constants.FILENAME_SAVEGAME_DIRECTORY);
 		return new File(dir, Constants.FILENAME_WORLDMAP_DIRECTORY);
 	}
 	public static File getCombinedWorldMapFile(Context context, String segmentName) {

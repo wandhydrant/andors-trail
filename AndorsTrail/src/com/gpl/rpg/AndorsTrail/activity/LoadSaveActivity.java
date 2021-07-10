@@ -72,7 +72,7 @@ public final class LoadSaveActivity extends AndorsTrailBaseActivity implements O
 
 		addSavegameSlotButtons(slotList, params, Savegames.getUsedSavegameSlots(this));
 
-		// checkAndRequestPermissions();
+		checkAndRequestPermissions();
 		
 		if (!isLoading) {
 			createNewSlot.setTag(SLOT_NUMBER_CREATE_NEW_SLOT);
@@ -88,7 +88,7 @@ public final class LoadSaveActivity extends AndorsTrailBaseActivity implements O
 	
 	@TargetApi(23)
 	private void checkAndRequestPermissions() {
-		if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+		if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M && Build.VERSION.SDK_INT <= Build.VERSION_CODES.Q) {
 			if (getApplicationContext().checkSelfPermission(Manifest.permission.READ_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED) {
 				this.requestPermissions(new String[] {Manifest.permission.READ_EXTERNAL_STORAGE}, READ_EXTERNAL_STORAGE_REQUEST);
 			}

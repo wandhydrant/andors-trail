@@ -332,18 +332,8 @@ public final class Dialogs {
 		//		.show();
 
 		String text = currentActivity.getResources().getString(R.string.dialog_newversion_message);
-
-		if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {
-			if (hasPermissions(currentActivity)) {
-				// TODO: Unterscheiden, ob Quell- und/oder
-				if (Savegames.getUsedSavegameSlots(currentActivity).size() == 0) {
-					text += "";
-				} else {
-					text += "";
-				}
-			}
-		}
-		else if (!hasPermissions(currentActivity)) {
+		
+		if (!hasPermissions(currentActivity) && Build.VERSION.SDK_INT < Build.VERSION_CODES.Q) {
 			text += currentActivity.getResources().getString(R.string.dialog_newversion_permission_information);
 		}
 

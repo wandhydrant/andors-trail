@@ -10,6 +10,7 @@ import com.gpl.rpg.AndorsTrail.controller.WorldMapController;
 import com.gpl.rpg.AndorsTrail.model.map.PredefinedMap;
 import com.gpl.rpg.AndorsTrail.model.map.WorldMapSegment;
 import com.gpl.rpg.AndorsTrail.model.map.WorldMapSegment.WorldMapSegmentMap;
+import com.gpl.rpg.AndorsTrail.util.AndroidStorage;
 import com.gpl.rpg.AndorsTrail.util.Coord;
 import com.gpl.rpg.AndorsTrail.util.L;
 import com.gpl.rpg.AndorsTrail.util.ThemeHelper;
@@ -112,10 +113,8 @@ public final class DisplayWorldMapActivity extends AndorsTrailBaseActivity {
 			offsetWorldmapTo.x = Math.min(offsetWorldmapTo.x, map.worldPosition.x);
 			offsetWorldmapTo.y = Math.min(offsetWorldmapTo.y, map.worldPosition.y);
 		}
-	//	String url = "content://com.gpl.rpg.AndorsTrail.fileprovider/worldmap" + worldmap.getAbsolutePath() + '?'
-	// FileProvider.getUri
-		Uri uri = FileProvider.getUriForFile(this, "com.gpl.rpg.AndorsTrail.fileprovider", worldmap);
-		String url = uri.toString() + '?'
+
+		String url = AndroidStorage.getUrlForFile(this, worldmap) + '?'
 				+ (world.model.player.position.x + map.worldPosition.x) * WorldMapController.WORLDMAP_DISPLAY_TILESIZE
 				+ ','
 				+ (world.model.player.position.y + map.worldPosition.y-1) * WorldMapController.WORLDMAP_DISPLAY_TILESIZE;

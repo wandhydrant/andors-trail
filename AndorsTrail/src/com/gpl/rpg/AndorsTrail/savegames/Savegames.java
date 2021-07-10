@@ -5,7 +5,6 @@ import java.io.DataInputStream;
 import java.io.DataOutputStream;
 import java.io.File;
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.FilenameFilter;
 import java.io.IOException;
@@ -19,11 +18,8 @@ import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import android.content.ContentProvider;
 import android.content.Context;
 import android.content.res.Resources;
-import android.os.Build;
-import android.os.Environment;
 import android.os.SystemClock;
 
 import com.gpl.rpg.AndorsTrail.AndorsTrailApplication;
@@ -33,6 +29,7 @@ import com.gpl.rpg.AndorsTrail.context.WorldContext;
 import com.gpl.rpg.AndorsTrail.controller.Constants;
 import com.gpl.rpg.AndorsTrail.model.ModelContainer;
 import com.gpl.rpg.AndorsTrail.resource.tiles.TileManager;
+import com.gpl.rpg.AndorsTrail.util.AndroidStorage;
 import com.gpl.rpg.AndorsTrail.util.L;
 
 public final class Savegames {
@@ -41,58 +38,7 @@ public final class Savegames {
 
 	private static long lastBackup = 0;
 
-	public static void MigrateData(Context context) {
-		try {
-			copy(new File(Environment.getExternalStorageDirectory(), Constants.CHEAT_DETECTION_FOLDER),
-					getExternalDirectory(context, Constants.CHEAT_DETECTION_FOLDER));
-			copy(new File(Environment.getExternalStorageDirectory(), Constants.FILENAME_SAVEGAME_DIRECTORY),
-					getExternalDirectory(context, Constants.FILENAME_SAVEGAME_DIRECTORY));
-		} catch (IOException e) {
-			L.log("Error migrating data: " + e.toString());
-		}
-	}
 
-	private static void copy(File sourceLocation, File targetLocation) throws IOException {
-		if (!sourceLocation.exists()) {
-			return;
-		}
-		if (sourceLocation.isDirectory()) {
-			copyDirectory(sourceLocation, targetLocation);
-		} else {
-			copyFile(sourceLocation, targetLocation);
-		}
-	}
-
-	private static void copyDirectory(File source, File target) throws IOException {
-		if (!target.exists()) {
-			target.mkdir();
-		}
-
-		for (String f : source.list()) {
-			copy(new File(source, f), new File(target, f));
-		}
-	}
-
-	private static void copyFile(File source, File target) throws IOException {
-		InputStream in = null;
-		OutputStream out = null;
-		try {
-			in = new FileInputStream(source);
-			out = new FileOutputStream(target);
-			byte[] buf = new byte[1024];
-			int length;
-			while ((length = in.read(buf)) > 0) {
-				out.write(buf, 0, length);
-			}
-		} finally {
-			if (in != null) {
-				in.close();
-			}
-			if (out != null) {
-				out.close();
-			}
-		}
-	}
 
 	public static enum LoadSavegameResult {
 		success
@@ -139,7 +85,7 @@ public final class Savegames {
 	}
 
 	private static void writeBackup(Context androidContext, byte[] savegame, String playerId) throws IOException {
-		File cheatDetectionFolder = getExternalDirectory(androidContext, Constants.CHEAT_DETECTION_FOLDER);
+		File cheatDetectionFolder = AndroidStorage.GetStorageDirectory(androidContext, Constants.CHEAT_DETECTION_FOLDER);
 		if (!cheatDetectionFolder.exists()) cheatDetectionFolder.mkdir();
 		File backupFile = new File(cheatDetectionFolder, playerId + "X");
 		FileOutputStream fileOutputStream = new FileOutputStream(backupFile);
@@ -183,7 +129,7 @@ public final class Savegames {
 
 	private static boolean triedToCheat(Context androidContext, FileHeader fh) throws IOException {
 		long savedVersionToCheck = 0;
-		File cheatDetectionFolder = getExternalDirectory(androidContext, Constants.CHEAT_DETECTION_FOLDER);
+		File cheatDetectionFolder = AndroidStorage.GetStorageDirectory(androidContext, Constants.CHEAT_DETECTION_FOLDER);
 		if (!cheatDetectionFolder.exists()) cheatDetectionFolder.mkdir();
 		File cheatDetectionFile = new File(cheatDetectionFolder, fh.playerId);
 		if (cheatDetectionFile.exists()) {
@@ -230,7 +176,7 @@ public final class Savegames {
 		}
 	}
 	private static void ensureSavegameDirectoryExists(Context context) {
-		File dir = getExternalDirectory(context, Constants.FILENAME_SAVEGAME_DIRECTORY);
+		File dir = AndroidStorage.GetStorageDirectory(context, Constants.FILENAME_SAVEGAME_DIRECTORY);
 		if (!dir.exists()) dir.mkdir();
 	}
 	private static FileInputStream getInputFile(Context androidContext, int slot) throws IOException {
@@ -242,19 +188,11 @@ public final class Savegames {
 	}
 
 	public static File getSlotFile(int slot, Context context) {
-		File root = getExternalDirectory(context, Constants.FILENAME_SAVEGAME_DIRECTORY);
+		File root = AndroidStorage.GetStorageDirectory(context, Constants.FILENAME_SAVEGAME_DIRECTORY);
 		return new File(root, Constants.FILENAME_SAVEGAME_FILENAME_PREFIX + slot);
 	}
 
-	public static File getExternalDirectory(Context context, String name) {
-		if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.FROYO) {
-			return context.getExternalFilesDir(name);
-		}
-		else {
-			File root = Environment.getExternalStorageDirectory();
-			return new File(root, name);
-		}
-	}
+
 
 	public static void saveWorld(WorldContext world, OutputStream outStream, String displayInfo) throws IOException {
 		DataOutputStream dest = new DataOutputStream(outStream);
@@ -312,7 +250,7 @@ public final class Savegames {
 	}
 
 	private static void writeCheatCheck(Context androidContext, long savedVersion, String playerId) throws IOException {
-		File cheatDetectionFolder = getExternalDirectory(androidContext, Constants.CHEAT_DETECTION_FOLDER);
+		File cheatDetectionFolder = AndroidStorage.GetStorageDirectory(androidContext, Constants.CHEAT_DETECTION_FOLDER);
 		if (!cheatDetectionFolder.exists()) cheatDetectionFolder.mkdir();
 		File cheatDetectionFile = new File(cheatDetectionFolder, playerId);
 		FileOutputStream fileOutputStream = new FileOutputStream(cheatDetectionFile);
@@ -333,7 +271,7 @@ public final class Savegames {
 	public static List<Integer> getUsedSavegameSlots(Context context) {
 		try {
 			final List<Integer> result = new ArrayList<Integer>();
-			getExternalDirectory(context, Constants.FILENAME_SAVEGAME_DIRECTORY).listFiles(new FilenameFilter() {
+			AndroidStorage.GetStorageDirectory(context, Constants.FILENAME_SAVEGAME_DIRECTORY).listFiles(new FilenameFilter() {
 				@Override
 				public boolean accept(File f, String filename) {
 					Matcher m = savegameFilenamePattern.matcher(filename);

@@ -31,6 +31,7 @@
 		android:description="@string/app_description"
         android:allowBackup="true"
         android:theme="@style/AndorsTrailTheme_Blue"
+		android:requestLegacyExternalStorage="true
 		android:hasFragileUserData="true"
 		android:preserveLegacyExternalStorage="true"
 		>
