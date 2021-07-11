@@ -85,7 +85,7 @@ public final class Savegames {
 	}
 
 	private static void writeBackup(Context androidContext, byte[] savegame, String playerId) throws IOException {
-		File cheatDetectionFolder = AndroidStorage.GetStorageDirectory(androidContext, Constants.CHEAT_DETECTION_FOLDER);
+		File cheatDetectionFolder = AndroidStorage.getStorageDirectory(androidContext, Constants.CHEAT_DETECTION_FOLDER);
 		if (!cheatDetectionFolder.exists()) cheatDetectionFolder.mkdir();
 		File backupFile = new File(cheatDetectionFolder, playerId + "X");
 		FileOutputStream fileOutputStream = new FileOutputStream(backupFile);
@@ -129,7 +129,7 @@ public final class Savegames {
 
 	private static boolean triedToCheat(Context androidContext, FileHeader fh) throws IOException {
 		long savedVersionToCheck = 0;
-		File cheatDetectionFolder = AndroidStorage.GetStorageDirectory(androidContext, Constants.CHEAT_DETECTION_FOLDER);
+		File cheatDetectionFolder = AndroidStorage.getStorageDirectory(androidContext, Constants.CHEAT_DETECTION_FOLDER);
 		if (!cheatDetectionFolder.exists()) cheatDetectionFolder.mkdir();
 		File cheatDetectionFile = new File(cheatDetectionFolder, fh.playerId);
 		if (cheatDetectionFile.exists()) {
@@ -176,7 +176,7 @@ public final class Savegames {
 		}
 	}
 	private static void ensureSavegameDirectoryExists(Context context) {
-		File dir = AndroidStorage.GetStorageDirectory(context, Constants.FILENAME_SAVEGAME_DIRECTORY);
+		File dir = AndroidStorage.getStorageDirectory(context, Constants.FILENAME_SAVEGAME_DIRECTORY);
 		if (!dir.exists()) dir.mkdir();
 	}
 	private static FileInputStream getInputFile(Context androidContext, int slot) throws IOException {
@@ -188,7 +188,7 @@ public final class Savegames {
 	}
 
 	public static File getSlotFile(int slot, Context context) {
-		File root = AndroidStorage.GetStorageDirectory(context, Constants.FILENAME_SAVEGAME_DIRECTORY);
+		File root = AndroidStorage.getStorageDirectory(context, Constants.FILENAME_SAVEGAME_DIRECTORY);
 		return new File(root, Constants.FILENAME_SAVEGAME_FILENAME_PREFIX + slot);
 	}
 
@@ -250,7 +250,7 @@ public final class Savegames {
 	}
 
 	private static void writeCheatCheck(Context androidContext, long savedVersion, String playerId) throws IOException {
-		File cheatDetectionFolder = AndroidStorage.GetStorageDirectory(androidContext, Constants.CHEAT_DETECTION_FOLDER);
+		File cheatDetectionFolder = AndroidStorage.getStorageDirectory(androidContext, Constants.CHEAT_DETECTION_FOLDER);
 		if (!cheatDetectionFolder.exists()) cheatDetectionFolder.mkdir();
 		File cheatDetectionFile = new File(cheatDetectionFolder, playerId);
 		FileOutputStream fileOutputStream = new FileOutputStream(cheatDetectionFile);
@@ -271,7 +271,7 @@ public final class Savegames {
 	public static List<Integer> getUsedSavegameSlots(Context context) {
 		try {
 			final List<Integer> result = new ArrayList<Integer>();
-			AndroidStorage.GetStorageDirectory(context, Constants.FILENAME_SAVEGAME_DIRECTORY).listFiles(new FilenameFilter() {
+			AndroidStorage.getStorageDirectory(context, Constants.FILENAME_SAVEGAME_DIRECTORY).listFiles(new FilenameFilter() {
 				@Override
 				public boolean accept(File f, String filename) {
 					Matcher m = savegameFilenamePattern.matcher(filename);

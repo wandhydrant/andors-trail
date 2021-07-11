@@ -16,7 +16,7 @@ import java.io.InputStream;
 import java.io.OutputStream;
 
 public final class AndroidStorage {
-    public static File GetStorageDirectory(Context context, String name) {
+    public static File getStorageDirectory(Context context, String name) {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.FROYO && Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
             return context.getExternalFilesDir(name);
         }
@@ -25,29 +25,29 @@ public final class AndroidStorage {
             return new File(root, name);
         }
     }
-    public static boolean ShouldMigrateToInternalStorage(Context context) {
+    public static boolean shouldMigrateToInternalStorage(Context context) {
         boolean ret = false;
         File externalSaveGameDirectory = new File(Environment.getExternalStorageDirectory(), Constants.FILENAME_SAVEGAME_DIRECTORY);
-        File internalSaveGameDirectory = GetStorageDirectory(context, Constants.FILENAME_SAVEGAME_DIRECTORY);
+        File internalSaveGameDirectory = getStorageDirectory(context, Constants.FILENAME_SAVEGAME_DIRECTORY);
 
         if (externalSaveGameDirectory.exists()
                 && externalSaveGameDirectory.isDirectory()
                 && externalSaveGameDirectory.listFiles().length > 0
                 && (
                 !internalSaveGameDirectory.exists()
-                        || internalSaveGameDirectory.isDirectory() && internalSaveGameDirectory.listFiles().length == 0)
+                        || internalSaveGameDirectory.isDirectory() && internalSaveGameDirectory.listFiles().length < 2)
                 ) {
             ret = true;
         }
         return ret;
     }
 
-    public static boolean MigrateToInternalStorage(Context context) {
+    public static boolean migrateToInternalStorage(Context context) {
         try {
             copy(new File(Environment.getExternalStorageDirectory(), Constants.CHEAT_DETECTION_FOLDER),
-                    GetStorageDirectory(context, Constants.CHEAT_DETECTION_FOLDER));
+                    getStorageDirectory(context, Constants.CHEAT_DETECTION_FOLDER));
             copy(new File(Environment.getExternalStorageDirectory(), Constants.FILENAME_SAVEGAME_DIRECTORY),
-                    GetStorageDirectory(context, Constants.FILENAME_SAVEGAME_DIRECTORY));
+                    getStorageDirectory(context, Constants.FILENAME_SAVEGAME_DIRECTORY));
         } catch (IOException e) {
             L.log("Error migrating data: " + e.toString());
             return false;

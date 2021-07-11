@@ -7,7 +7,7 @@ import java.util.Locale;
 import com.gpl.rpg.AndorsTrail.context.ControllerContext;
 import com.gpl.rpg.AndorsTrail.context.WorldContext;
 import com.gpl.rpg.AndorsTrail.controller.Constants;
-import com.gpl.rpg.AndorsTrail.savegames.Savegames;
+import com.gpl.rpg.AndorsTrail.util.AndroidStorage;
 import com.gpl.rpg.AndorsTrail.util.Pair;
 
 import android.app.Activity;
@@ -118,7 +118,7 @@ public final class AndorsTrailApplication extends Application {
 		super.onCreate();
 
 		if ( DEVELOPMENT_DEBUGMESSAGES && isExternalStorageWritable() ) {
-			File appDirectory = Savegames.getStorageDirectory(getApplicationContext(), Constants.FILENAME_SAVEGAME_DIRECTORY);
+			File appDirectory = AndroidStorage.getStorageDirectory(getApplicationContext(), Constants.FILENAME_SAVEGAME_DIRECTORY);
 			File logDirectory = new File( appDirectory, "log" );
 			File logFile = new File( logDirectory, "logcat" + System.currentTimeMillis() + ".txt" );
 

@@ -203,7 +203,7 @@ public class StartScreenActivity_MainMenu extends Fragment {
 	public void migrateDataOnDemand(final Activity activity) {
 		if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
 			if (activity.getApplicationContext().checkSelfPermission(Manifest.permission.READ_EXTERNAL_STORAGE) == PackageManager.PERMISSION_GRANTED) {
-				if (AndroidStorage.ShouldMigrateToInternalStorage(activity.getApplicationContext())) {
+				if (AndroidStorage.shouldMigrateToInternalStorage(activity.getApplicationContext())) {
 					final Dialog d = CustomDialogFactory.createDialog(activity,
 							getString(R.string.startscreen_migration_title),
 							activity.getResources().getDrawable(android.R.drawable.ic_dialog_alert),
@@ -219,7 +219,7 @@ public class StartScreenActivity_MainMenu extends Fragment {
 						}
 					});
 					CustomDialogFactory.show(d);
-					if (!AndroidStorage.MigrateToInternalStorage(activity.getApplicationContext())) {
+					if (!AndroidStorage.migrateToInternalStorage(activity.getApplicationContext())) {
 						final Dialog errorDlg = CustomDialogFactory.createDialog(activity,
 								getString(R.string.startscreen_migration_title),
 								activity.getResources().getDrawable(android.R.drawable.ic_dialog_alert),
