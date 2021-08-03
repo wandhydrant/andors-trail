@@ -53,6 +53,7 @@ public final class DisplayWorldMapActivity extends AndorsTrailBaseActivity {
 		displayworldmap_webview.getSettings().setUseWideViewPort(true);
 		displayworldmap_webview.setVerticalScrollBarEnabled(true);
 		displayworldmap_webview.setHorizontalScrollBarEnabled(true);
+		displayworldmap_webview.getSettings().setAllowFileAccess(true);
 		enableJavascript();
 
 		Button b = (Button) findViewById(R.id.displayworldmap_close);
