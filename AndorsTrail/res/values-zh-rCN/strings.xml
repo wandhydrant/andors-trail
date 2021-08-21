@@ -327,11 +327,11 @@
     <string name="about_contents1">欢迎来到 Andor\'s Trail，一个开源的、Android的地牢型RPG。 &lt;br /&gt; &lt;br /&gt; &lt;a href=http://andorstrail.com/&gt;你可以到我们的游戏论坛 andorstrail.com，提出问题和游玩的意见。 &lt;/a&gt;&lt;br /&gt; &lt;br /&gt;&lt;a href=http://andorstrail.com/wiki&gt;我们也有 wiki，提供你有关 Andor\'s Trail 的世界、任务、地图...等资讯。 &lt;/a&gt;&lt;br /&gt;&lt;br /&gt; &lt;a href=https://github.com/Zukero/andors-trail/&gt;若你是开发者，可到 github.com 上查看专案的代原码。 &lt;/a&gt;&lt;br /&gt; &lt;br /&gt;欢迎你到论坛上和其他玩家共同讨论。 &lt;br /&gt;</string>
     <string name="skill_longdescription_fightstyle_dualwield">当两个武器同时装备，一个在主手，另一个副手时，获得额外增益。
 \n
-\n如果没有这个技能，当武器装备在副手时，只有%1$d%%的数据可以使用。数据包括命中、暴击技能、伤害和格挡。没有这个技能，攻击时AP消耗就是主手武器和副手武器的AP消耗之和。
+\n如果没有这个技能，当武器装备在副手时，只有%1$d%%的数据可以使用。数据包括命中、暴击技能、伤害和格挡。没有这个技能，攻击时AP消耗就是主手武器和副手武器的AP消耗之和。伤害则是两者的较低值。
 \n
-\n技能等级1时，可使用%2$d%%副手武器的数据，攻击时AP消耗是装备的两个武器中的较高值加上%3$d%%的较低值。
+\n技能等级1时，可使用%2$d%%副手武器的数据，攻击时AP消耗是装备的两个武器中的较高值加上%3$d%%的较低值。伤害是两者的平均值。
 \n
-\n技能等级2时，可使用%4$d%%副手武器的数据，攻击时AP消耗等于两个武器中的最高值。</string>
+\n技能等级2时，可使用%4$d%%副手武器的数据，攻击时AP消耗等于两个武器中的最高值。伤害是两者的较高值。</string>
     <string name="skill_longdescription_armor_prof_heavy">每个技能等级，增加重甲的格挡%1$d%%，减少重甲的移动惩罚%2$d%%，减少重甲的攻击速度惩罚%3$d%%。重甲包括金属盔甲、链甲和板甲。</string>
     <string name="preferences_display_theme_charcoal">黑曜石</string>
     <string name="preferences_display_theme_green">孔雀石</string>
@@ -590,4 +590,19 @@
 \nAndor\'s Trail不使用访问您的设备用于任何其他目的，也不访问互联网。Andor’s Trail是开源的；源代码可以在github上找到。</string>
     <string name="about_contents3">本程序为自由软件，在自由软件联盟发布的GNU通用公共许可协议的约束下，你可以对其进行再发布及修改。协议版本为第二版或（随你）更新的版本。&lt;br /&gt; &lt;br /&gt; 我们希望发布的这款程序有用，但&lt;b&gt;不保证&lt;/b&gt;，甚至不保证它有&lt;b&gt;经济价值&lt;/b&gt;和&lt;b&gt;适合特定用途&lt;/b&gt;。详情参见GNU通用公共许可协议。&lt;br /&gt; &lt;br /&gt; 你理当已收到一份GNU通用公共许可协议的副本，如果没有，请见 &lt;a href=http://www.gnu.org/licenses&gt;http://www.gnu.org/licenses&lt;/a&gt;&lt;br /&gt; &lt;br /&gt; 有关源代码和功能请求，请访问项目页面 &lt;a href=https://github.com/AndorsTrailRelease/andors-trail/&gt;https://github.com/AndorsTrailRelease/andors-trail/&lt;/a&gt;&lt;br /&gt;</string>
     <string name="preferences_display_theme">主题（需要重启游戏）</string>
+    <string name="preferences_movement_dpad_transparency_70_pct">70%</string>
+    <string name="preferences_movement_dpad_transparency_60_pct">60%</string>
+    <string name="preferences_movement_dpad_transparency_50_pct">50%</string>
+    <string name="preferences_movement_dpad_transparency_40_pct">40%</string>
+    <string name="preferences_movement_dpad_transparency_30_pct">30%</string>
+    <string name="preferences_movement_dpad_transparency">如果启用虚拟 d-pad，则这个选项会决定其透明度。</string>
+    <string name="preferences_movement_dpad_transparency_title">D-pad 透明度</string>
+    <string name="skill_longdescription_spore_immunity">永久免疫怪物攻击造成的孢子中毒状态。</string>
+    <string name="skill_shortdescription_spore_immunity">完全免疫孢子中毒</string>
+    <string name="skill_title_spore_immunity">孢子中毒免疫</string>
+    <string name="inventory_category_food">食物</string>
+    <string name="inventory_category_potion">药剂</string>
+    <string name="inventory_category_jewelry">饰品</string>
+    <string name="combat_log_item_plural">你找到了%1$d个物品：</string>
+    <string name="combat_log_item_single">你找到了一个物品：</string>
 </resources>
