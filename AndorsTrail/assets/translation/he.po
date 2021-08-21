@@ -1,458 +1,454 @@
-# Chinese (Traditional) translation for andors-trail
-# Copyright (c) 2015 Rosetta Contributors and Canonical Ltd 2015
-# This file is distributed under the same license as the andors-trail package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2015.
-#
 msgid ""
 msgstr ""
-"Project-Id-Version: andors-trail\n"
+"Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-11-10 11:48+0000\n"
-"PO-Revision-Date: 2021-05-14 16:30+0000\n"
-"Last-Translator: SmallDragon Chen <teacher144123@gmail.com>\n"
-"Language-Team: Chinese (Traditional) <https://hosted.weblate.org/projects/"
-"andors-trail/game-content/zh_Hant/>\n"
-"Language: zh_TW\n"
+"POT-Creation-Date: 2021-05-11 13:44+0200\n"
+"PO-Revision-Date: 2021-06-27 22:16+0000\n"
+"Last-Translator: Ido Shdaimah <ishdaimah@gmail.com>\n"
+"Language-Team: Hebrew <https://hosted.weblate.org/projects/andors-trail/"
+"game-content/he/>\n"
+"Language: he\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.7-dev\n"
-"X-Launchpad-Export-Date: 2015-11-02 12:24+0000\n"
-
-#: [none]
-msgid "translator-credits"
-msgstr ""
-"Launchpad Contributions:\n"
-"Jackson Chen https://launchpad.net/~teacher144123"
+"Plural-Forms: nplurals=4; plural=(n == 1) ? 0 : ((n == 2) ? 1 : ((n > 10 && "
+"n % 10 == 0) ? 2 : 3));\n"
+"X-Generator: Weblate 4.7.1-dev\n"
 
 #: actorconditions_v069.json:bless
 msgid "Bless"
-msgstr "祝福"
+msgstr "ברך"
 
 #: actorconditions_v069.json:poison_weak
 msgid "Weak Poison"
-msgstr "虛弱藥劑"
+msgstr "רעל חלש"
 
 #: actorconditions_v069.json:str
 msgid "Strength"
-msgstr "力量"
+msgstr "חוזק"
 
 #: actorconditions_v069.json:regen
 msgid "Shadow Regeneration"
-msgstr "暗影再生"
+msgstr "חידוש צל"
 
 #: actorconditions_v069_bwm.json:speed_minor
 msgid "Minor speed"
-msgstr "初級加速"
+msgstr "מהירות נמוכה"
 
 #: actorconditions_v069_bwm.json:fatigue_minor
 msgid "Minor fatigue"
-msgstr "輕微疲勞"
+msgstr "עייפות קלה"
 
 #: actorconditions_v069_bwm.json:feebleness_minor
 msgid "Minor weapon feebleness"
-msgstr "輕微武器損傷"
+msgstr "חולשת נשק קלה"
 
 #: actorconditions_v069_bwm.json:bleeding_wound
 msgid "Bleeding wound"
-msgstr "流血"
+msgstr "פצע מדמם"
 
 #: actorconditions_v069_bwm.json:rage_minor
 msgid "Minor berserker rage"
-msgstr "初級狂暴之怒"
+msgstr "כעס בזרקר קל"
 
 #: actorconditions_v069_bwm.json:blackwater_misery
 msgid "Blackwater misery"
-msgstr "黑水之慟"
+msgstr "אומללות בלאקווטר"
 
 #: actorconditions_v069_bwm.json:intoxicated
 msgid "Intoxicated"
-msgstr "酒醉"
+msgstr "שיכור"
 
 #: actorconditions_v069_bwm.json:dazed
 msgid "Dazed"
-msgstr "眩暈"
+msgstr "מופתע"
 
 #: actorconditions_v0610.json:chaotic_grip
 msgid "Chaotic grip"
-msgstr "混亂擁抱"
+msgstr "אחיזה כאוטית"
 
 #: actorconditions_v0610.json:chaotic_curse
 msgid "Chaotic curse"
-msgstr "混亂詛咒"
+msgstr "קללה כאוטית"
 
 #: actorconditions_v0611.json:contagion
 msgid "Insect contagion"
-msgstr "昆蟲病毒"
+msgstr "זיהום בחרקים"
 
 #: actorconditions_v0611.json:blister
 msgid "Blistering skin"
-msgstr "皮膚起泡"
+msgstr "עור נגוע בשלפוחיות"
 
 #: actorconditions_v0611.json:stunned
 msgid "Stunned"
-msgstr "驚愕"
+msgstr "המום"
 
 #: actorconditions_v0611.json:focus_dmg
 msgid "Focused damage"
-msgstr "專注攻擊"
+msgstr "נזק ממוקד"
 
 #: actorconditions_v0611.json:focus_ac
 msgid "Focused accuracy"
-msgstr "專注準確"
+msgstr "דיוק ממוקד"
 
 #: actorconditions_v0611.json:poison_irdegh
 msgid "Irdegh poison"
-msgstr "爾德克藥劑"
+msgstr "רעל אירדג"
 
 #: actorconditions_v0611_2.json:rotworm
 msgid "Kazaul rotworms"
-msgstr "卡兆爾蠕蟲"
+msgstr "תולעי קזאול"
 
 #: actorconditions_v0611_2.json:shadowbless_str
 msgid "Blessing of Shadow strength"
-msgstr "暗影力量之祝福"
+msgstr "ברכת עוצמת צל"
 
 #: actorconditions_v0611_2.json:shadowbless_heal
 msgid "Blessing of Shadow regeneration"
-msgstr "暗影再生之祝福"
+msgstr "ברכת חידוש צל"
 
 #: actorconditions_v0611_2.json:shadowbless_acc
 msgid "Blessing of Shadow accuracy"
-msgstr "暗影準確之祝福"
+msgstr "ברכת דיוק צל"
 
 #: actorconditions_v0611_2.json:shadowbless_guard
 msgid "Shadow guardian blessing"
-msgstr "暗影守護之祝福"
+msgstr "ברכת שומר צללים"
 
 #: actorconditions_v0611_2.json:crit1
 msgid "Internal bleeding"
-msgstr "內出血"
+msgstr "דימום פנימי"
 
 #: actorconditions_v0611_2.json:crit2
 msgid "Fracture"
-msgstr "骨折"
+msgstr "שבר"
 
 #: actorconditions_v0611_2.json:concussion
 msgid "Concussion"
-msgstr "恐慌"
+msgstr "זעזוע מוח"
 
 #: actorconditions_v0612_2.json:food
 msgid "Sustenance"
-msgstr "營養"
+msgstr "מִחיָה"
 
 #: actorconditions_v0612_2.json:foodp
 msgid "Food-poisoning"
-msgstr "食物中毒"
+msgstr "הרעלת מזון"
 
 #: actorconditions_v070.json:slime
 msgid "Corrosive slime"
-msgstr "酸蝕溶液"
+msgstr "ריר מאכל"
 
 #: actorconditions_v070.json:sense_1
 msgid "Heightened senses"
-msgstr "感官提升"
+msgstr "חושים מחודדים"
 
 #: actorconditions_v070.json:courage
 msgid "Courage"
-msgstr "勇氣"
+msgstr "אומץ"
 
 #: actorconditions_v070.json:fear
 msgid "Fear"
-msgstr "恐懼"
+msgstr "פחד"
 
 #: actorconditions_v070.json:def
 msgid "Fortified defense"
-msgstr "強化防禦"
+msgstr "הגנה מועצמת"
 
 #: actorconditions_v070.json:crit_aware
 msgid "Vulnerability awareness"
-msgstr "意識模糊"
+msgstr "מודעות לנקודות פגיעות"
 
 #: actorconditions_v070.json:regen2
 msgid "Regeneration"
-msgstr "再生"
+msgstr "התחדשות"
 
 #: actorconditions_v070.json:barkskin
 msgid "Bark skin"
-msgstr "皮膚硬化"
+msgstr "עור קליפה"
 
 #: actorconditions_v070.json:shadow_acc
 msgid "Shadow's accuracy"
-msgstr "暗影精準"
+msgstr "דיוק הצל"
 
 #: actorconditions_v070.json:shadow_prot
 msgid "Shadow's protection"
-msgstr "暗影守護"
+msgstr "הגנת הצל"
 
 #: actorconditions_v070.json:shadow_dmg
 msgid "Shadow's strength"
-msgstr "暗影力量"
+msgstr "עוצמת הצל"
 
 #: actorconditions_v070.json:haste
 msgid "Haste"
-msgstr "倉促"
+msgstr "חיפזון"
 
 #: actorconditions_v070.json:fire
 msgid "Ablaze"
-msgstr "熾盛"
+msgstr "עולה באש"
 
 #: actorconditions_v070.json:sting_minor
 msgid "Minor sting"
-msgstr "輕微刺痛"
+msgstr "עוקץ קל"
 
 #: actorconditions_stoutford.json:confusion
 msgid "Confusion"
-msgstr "混亂"
+msgstr "בלבול"
 
 #: actorconditions_stoutford.json:clumsiness
 msgid "Clumsiness"
-msgstr "遲鈍"
+msgstr "גמלוניות"
 
 #: actorconditions_stoutford.json:curse_undead
 msgid "Curse of the Undead"
-msgstr "亡者的詛咒"
+msgstr "קללת המתים"
 
 #: actorconditions_graveyard1.json:contagion2
 msgid "Spore contagion"
-msgstr "孢子感染"
+msgstr "זיהום נבגים"
 
 #: actorconditions_graveyard1.json:petrification
 msgid "Petrification"
-msgstr "石化"
+msgstr "התאבנות"
 
 #: actorconditions_graveyard1.json:vulnerability
 msgid "Vulnerability"
-msgstr "弱點"
+msgstr "פגיעות"
 
 #: actorconditions_graveyard1.json:flesh_rot
 msgid "Flesh rot"
-msgstr "腐肉"
+msgstr "ריקבון בשר"
 
 #: actorconditions_graveyard1.json:putrefaction
 msgid "Putrefaction"
-msgstr "腐壞"
+msgstr "ריקבון"
 
 #: actorconditions_guynmart.json:regenNeg
 msgid "Shadow Degeneration"
-msgstr "暗影退化"
+msgstr "ניוון צל"
 
 #: actorconditions_guynmart.json:bone_fracture
 msgid "Bone fracture"
-msgstr "骨折"
+msgstr "שבר בעצם"
 
 #: actorconditions_guynmart.json:shadow_awareness
 msgid "Shadow awareness"
-msgstr "暗影知覺"
+msgstr "מודעות לצל"
 
 #: actorconditions_trader_teksin.json:poison_irdegh_weak
 msgid "Weak irdegh poison"
-msgstr "弱爾德克毒藥"
+msgstr "רעל אירדג חלש"
 
 #: actorconditions_trader_teksin.json:light_attack
 msgid "Lightning attack"
-msgstr "雷霆一擊"
+msgstr "תקיפת ברק"
 
 #: actorconditions_stoutford_combined.json:nausea
 msgid "Nausea"
-msgstr "噁心"
+msgstr "בחילה"
 
 #: actorconditions_stoutford_combined.json:poison_blood
 msgid "Blood poisoning"
-msgstr "血液中毒"
+msgstr "הרעלת דם"
 
 #: actorconditions_stoutford_combined.json:deftness
 msgid "Deftness"
-msgstr "靈活度"
+msgstr "זריזות"
 
 #: actorconditions_stoutford_combined.json:tight_grip
 msgid "Tight grip"
-msgstr "緊握"
+msgstr "אחיזה הדוקה"
 
 #: actorconditions_stoutford_combined.json:clairvoyance
 msgid "Clairvoyance"
-msgstr "預知"
+msgstr "תפישה על-חושית"
 
 #: actorconditions_stoutford_combined.json:mind_fog
 msgid "Mind fog"
-msgstr "心靈迷霧"
+msgstr "ערפל תודעתי"
 
 #: actorconditions_omicronrg9.json:guild03_restingAC
 msgid "Resting"
-msgstr "休息"
+msgstr "נח"
 
 #: actorconditions_omicronrg9.json:g03_concentration
 msgid "Concentration"
-msgstr "專注"
+msgstr "ריכוז"
 
 #: actorconditions_omicronrg9.json:g03_combo
 msgid "Combo"
-msgstr "連擊"
+msgstr "קומבו"
 
 #: actorconditions_omicronrg9.json:carrying_ambelie
-#, fuzzy
 msgid "Carrying Ambelie"
-msgstr "攜帶安貝莉"
+msgstr "נושה את אמבלי"
 
 #: actorconditions_arulir_mountain.json:crushed
 msgid "Crushed"
-msgstr "已被摧毀"
+msgstr "כתוש"
 
 #: actorconditions_arulir_mountain.json:head_wound
 msgid "Head wound"
-msgstr "頭部受傷"
+msgstr "פציעת ראש"
 
 #: actorconditions_arulir_mountain.json:mermaid_scale
 msgid "Mermaid curse"
-msgstr "美人魚的詛咒"
+msgstr "קללת בת הים"
 
 #: actorconditions_arulir_mountain.json:increased_defense
 msgid "Increased defense"
-msgstr "防禦增強"
+msgstr "הגנה מוגברת"
 
 #: actorconditions_brimhaven.json:drowning
 msgid "Drowning"
-msgstr "溺水中"
+msgstr "טביעה"
 
 #: actorconditions_brimhaven.json:entanglement
 msgid "Entanglement"
-msgstr "糾纏"
+msgstr "הסתבכות"
 
 #: actorconditions_brimhaven.json:fatigue1
 #: actorconditions_brimhaven.json:fatigue2
 #: actorconditions_brimhaven.json:fatigue3
 #: actorconditions_brimhaven.json:fatigue4
 msgid "Fatigue"
-msgstr "疲勞"
+msgstr "עייפות"
 
 #: actorconditions_brimhaven.json:turn_to_stone
-#, fuzzy
 msgid "Turning to stone"
-msgstr "變成石頭"
+msgstr "הופך לאבן"
 
 #: actorconditions_brimhaven.json:stoneskin
 msgid "Stone skin"
-msgstr "石化皮膚"
+msgstr "עור אבן"
 
 #: actorconditions_brimhaven.json:overeating
 msgid "Overeating"
-msgstr "暴飲暴食"
+msgstr "אכילת יתר"
 
 #: actorconditions_brimhaven.json:venom
 msgid "Venom"
-msgstr "毒液"
+msgstr "ארס"
 
 #: actorconditions_fungi_panic.json:spore_poison
 msgid "Spore poisoning"
-msgstr "孢子中毒"
+msgstr "הרעלת נבגים"
 
 #: actorconditions_gison.json:reinvigorated
 msgid "Reinvigorated"
-msgstr "活力換發"
+msgstr "מרוענן"
 
 #: actorconditions_gison.json:sated
 msgid "Sated"
-msgstr "滿足"
+msgstr "מולעט"
 
 #: conversationlist_mikhail.json:mikhail_gamestart
 msgid "Oh good, you are awake."
-msgstr "太好了，你醒了。"
+msgstr "יופי, אתה ער."
 
 #: conversationlist_mikhail.json:mikhail_visited
 msgid "I can't seem to find your brother Andor anywhere. He hasn't been back since he left yesterday."
-msgstr "我似乎到處都找不到你的哥哥安道爾，他昨天離開之後就一直沒有回來。"
+msgstr "אני לא מוצא את אחיך אנדור בשום מקום. הוא לא חזר מאז שעזב אתמול."
 
 #: conversationlist_mikhail.json:mikhail3
 msgid "Never mind, he will probably be back soon."
-msgstr "別在意，他可能很快就回來了。"
+msgstr "לא משנה, הוא בטח יחזור בקרוב."
 
 #: conversationlist_mikhail.json:mikhail_default
 #: conversationlist_crossglen_leonid.json:leonid_continue
 #: conversationlist_umar.json:umar_return_2
 msgid "Anything else I can help you with?"
-msgstr "還有什麼我幫得上忙的嗎?"
+msgstr "יש עוד משהו שאני יכול לעזור לך איתו?"
 
 #: conversationlist_mikhail.json:mikhail_default:0
 #: conversationlist_mikhail.json:mikhail_default:1
 #: conversationlist_mikhail.json:mikhail_default:2
 msgid "Do you have any more tasks for me?"
-msgstr "你還有什麼工作可以交給我的嗎?"
+msgstr "יש לך משימות נוספות בשבילי?"
 
 #: conversationlist_mikhail.json:mikhail_default:3
 #: conversationlist_umar.json:umar_return_1:0
 msgid "Do you have any tasks for me?"
-msgstr "你有什麼任務可以給我嗎?"
+msgstr "יש לך משימות בשבילי?"
 
 #: conversationlist_mikhail.json:mikhail_default:4
 msgid "Is there anything else you can tell me about Andor?"
-msgstr "還有什麼其他有關安道爾的消息可以跟我說的嗎?"
+msgstr "מה עוד אתה יכול לספר לי על אנדור?"
 
 #: conversationlist_mikhail.json:mikhail_default:5
 #: conversationlist_mikhail.json:mikhail_default:6
 msgid "I have a present for you."
-msgstr "我有個禮物給你。"
+msgstr "יש לי מתנה בשבילך."
 
 #: conversationlist_mikhail.json:mikhail_default:7
 msgid "I was searching for Andor."
-msgstr "我正在找安道爾。"
+msgstr "חיפשתי את אנדור."
 
 #: conversationlist_mikhail.json:mikhail_default:8
 msgid "What kind of book is it that you have in your hand?"
-msgstr "你手上的那本書是什麼？"
+msgstr "מה זה הספר הזה שאתה מחזיק ביד?"
 
 #: conversationlist_mikhail.json:mikhail_tasks
 msgid "Oh yes, there were some things I need help with, bread and rats. Which one would you like to talk about?"
-msgstr "哦，對，有些事情我需要協助，麵包跟老鼠，你哪個有興趣?"
+msgstr ""
+"בטח, יש כמה דברים שאני צריך ממכך עזרה בהם: לחם וחולדות. על איזה אתה רוצה "
+"לדון?"
 
 #: conversationlist_mikhail.json:mikhail_tasks:0
 #: conversationlist_mikhail.json:mikhail_rats_done:0
+#, fuzzy
 msgid "What about the bread?"
-msgstr "麵包是怎麼回事?"
+msgstr "מה עם הלחם?"
 
 #: conversationlist_mikhail.json:mikhail_tasks:1
 #: conversationlist_mikhail.json:mikhail_bread_done:0
+#, fuzzy
 msgid "What about the rats?"
-msgstr "老鼠是怎麼回事?"
+msgstr "מה עם החולדות?"
 
 #: conversationlist_mikhail.json:mikhail_tasks:2
 #: conversationlist_mikhail.json:mikhail_bread_done:1
 #: conversationlist_mikhail.json:mikhail_rats_done:1
 #: conversationlist_mikhail.json:mikhail_all_tasks_done:0
 msgid "Never mind, let's talk about the other things."
-msgstr "算了，我們換個話題。"
+msgstr "לא משנה, בוא נדבר על הדברים האחרים."
 
 #: conversationlist_mikhail.json:mikhail_bread_done
 msgid "Thanks for getting me the bread. There are still the rats."
-msgstr "謝謝你給我弄了麵包來，剩老鼠的問題。"
+msgstr "תודה שהבאת לי את הלחם. אני עדיין צריך עזרה עם החולדות."
 
 #: conversationlist_mikhail.json:mikhail_rats_done
 msgid "Thanks for taking care of the rats. I'd still love some bread."
-msgstr "謝謝你幫我解決了老鼠，我仍然還需要麵包。"
+msgstr "תודה שנפטרת מהחולדות. אני עדיין צריך עזרה עם הלחם."
 
 #: conversationlist_mikhail.json:mikhail_all_tasks_done
 msgid "Not for now. Thanks for taking care of the bread and rats."
-msgstr "沒事了，謝謝你幫我解決了老鼠與麵包的問題。"
+msgstr "ל כרגע. תודה על העזרה עם הלחם והחולדות."
 
 #: conversationlist_mikhail.json:mikhail_andor1
 msgid "As I said, Andor went out and hasn't been back since. I worry about him. Please go look for your brother. He said he would only be out for a short while."
-msgstr "就像我說的，安道爾出去了就沒再回來過。我很擔心他。拜託你去找找你哥哥，他說過他只出去一下子的。"
+msgstr ""
+"כמו שאמרתי, אנדור יצא ולא חזר. אני דואג לו. בבקשה תלך לחפש אחריו. הוא אמר "
+"שהוא הולך לזמן קצר."
 
 #: conversationlist_mikhail.json:mikhail_andor2
 msgid "Maybe he went into that supply cave again and got stuck. Or maybe he's in Leta's basement training with that wooden sword again. Please go look for him in town."
-msgstr "也許他進去那個補給品的洞穴卡住了。或者他去蕾塔的地下室練習木劍去了。拜託到城內找他一下。"
+msgstr ""
+"אולי הוא שוב פעם נכנס למערת האספקה ונתקע. או שאולי הוא שוב פעם מתאמן במרתף "
+"של לטה עם חרב העץ הזאת. בבקשה לך לחפש אותו בעיר."
 
 #: conversationlist_mikhail.json:mikhail_bread_start
 msgid "Oh, I almost forgot. If you have time, please go see Mara at the town hall and buy me some more bread."
-msgstr "哦，我差點忘了。如果你有時間的話，拜託到市政廳瑪拉那邊幫我買些麵包。"
+msgstr ""
+"אה! כמעת שכחתי. עם יש לך זמן, לך תדבר עם מארה בבית העירייה ותקנה מי עוד לחם."
 
 #: conversationlist_mikhail.json:mikhail_bread_continue
 msgid "Did you get my bread from Mara at the town hall yet?"
-msgstr "你去市政廳瑪拉那邊幫我買麵包了嗎?"
+msgstr "נו, הבאת את הלחם ממארה?"
 
 #: conversationlist_mikhail.json:mikhail_bread_continue:0
 msgid "Yes, here you go."
-msgstr "嗯，在這裡。"
+msgstr "כן, הנה."
 
 #: conversationlist_mikhail.json:mikhail_bread_continue:1
 #: conversationlist_mikhail.json:mikhail_rats_continue:1
@@ -487,15 +483,16 @@ msgstr "嗯，在這裡。"
 #: conversationlist_fungi_panic.json:zuul_khan_70_10:0
 #: conversationlist_fungi_panic.json:zuul_khan_115:0
 msgid "No, not yet."
-msgstr "還沒。"
+msgstr "עדיין לא."
 
 #: conversationlist_mikhail.json:mikhail_bread_complete
 msgid "Thanks a lot, now I can make my breakfast. Here, take these coins for your help."
-msgstr "非常感謝，我終於可以來弄我的早餐了。來，這是你跑腿的獎勵。"
+msgstr ""
+"תודה רבה, עכשיו אני יכול להכין ארוחת בוקר. הנה, קח כמה פרוטות בשביל המאמץ."
 
 #: conversationlist_mikhail.json:mikhail_bread_complete2
 msgid "Thanks for the bread earlier."
-msgstr "謝謝你剛才的麵包。"
+msgstr "תודה על הלחם מקודם."
 
 #: conversationlist_mikhail.json:mikhail_bread_complete2:0
 #: conversationlist_charwood1.json:khorailla1:2
@@ -505,39 +502,45 @@ msgstr "謝謝你剛才的麵包。"
 #: conversationlist_stoutford_combined.json:stoutford_widow_roots30_2:0
 #: conversationlist_brimhaven_2.json:oromir_basement_help_10:1
 msgid "You're welcome."
-msgstr "不客氣。"
+msgstr "בבקשה."
 
 #: conversationlist_mikhail.json:mikhail_rats_start
 msgid "I saw some rats out back in our garden earlier. Could you please go kill any rats that you see out there."
-msgstr "我早上在外面的後花園看到了一些老鼠，你能夠幫我殺掉你看的到的每隻老鼠吧。"
+msgstr "ראיתי קודם כמה חולדות בגינה. אתה יכול ללכת לחסל אותם?"
 
 #: conversationlist_mikhail.json:mikhail_rats_start:0
 msgid "I have already dealt with the rats."
-msgstr "我已經把那些老鼠處理掉了。"
+msgstr "כבר נפטרתי מהחולדות."
 
 #: conversationlist_mikhail.json:mikhail_rats_start:1
 msgid "OK, I'll go check out in our garden."
-msgstr "好，我會檢查一下我們的花園。"
+msgstr "בסדר, אני אלך לבדוק בגינה."
 
 #: conversationlist_mikhail.json:mikhail_rats_start2
 msgid "If you get hurt by the rats, come back here and rest in your bed. That way you can regain your strength."
-msgstr "如果你被老鼠傷到，可以來這張床上休息、回復體力。"
+msgstr ""
+"אם החולדות פוצעות אותך, אתה יכול לחזור הנה ולנוח במיטה. ככה אתה יכול להתחזק "
+"מחדש."
 
 #: conversationlist_mikhail.json:mikhail_rats_start3
 msgid "Also, don't forget to check your inventory. You probably still have that old ring I gave you. Make sure you wear it."
-msgstr "而且，別忘了檢查你的背包。你應該還有我給你的那個舊戒指吧，記得戴上它。"
+msgstr ""
+"אה, דרך אגב, אל תשכח לבדוק בתרמיל שלך. בטח יש לך עדיין את הטבעת הישנה שנתתי "
+"לך. תדאג ללבוש אותה."
 
 #: conversationlist_mikhail.json:mikhail_rats_start3:0
 msgid "OK, I understand. I can rest here if I get hurt, and I should check my inventory for useful items."
-msgstr "好，我懂了。受傷了可以在這裡休息，而且我應該檢查包包裡有用的東西。"
+msgstr ""
+"בסדר, מבין. אני אנוח כאן אם אני נפצע, ואבדוק בתרמיל שלי אם יש לי חפצים "
+"שימושיים."
 
 #: conversationlist_mikhail.json:mikhail_rats_continue
 msgid "Did you kill those two rats in our garden?"
-msgstr "你把花園裡的那兩隻老鼠殺了嗎？"
+msgstr "נו, הרגת את שני החולדות האלה בגינה?"
 
 #: conversationlist_mikhail.json:mikhail_rats_continue:0
 msgid "Yes, I have dealt with the rats now."
-msgstr "是的，我已經把老鼠處理了。"
+msgstr "כן, הסתדרתי עם החולדות."
 
 #: conversationlist_mikhail.json:mikhail_rats_complete
 msgid ""
@@ -545,9 +548,9 @@ msgid ""
 "\n"
 "If you are hurt, use your bed over there to rest and regain your strength."
 msgstr ""
-"是嗎？哇，非常感謝你的幫忙！來拿著安道爾訓練用的盾牌—你會需要他的。\n"
+"וואלה? תודה רבה! קח את מגן האימונים של אנדור - אתה תצטרך אותו.\n"
 "\n"
-"如果你受傷了，可以用你的那張床來回復體力。"
+"אם נפצעת, בבקשה לך תנוח במיטה שם בשביל להבריא."
 
 #: conversationlist_mikhail.json:mikhail_rats_complete2
 msgid ""
@@ -555,50 +558,52 @@ msgid ""
 "\n"
 "If you are hurt, use your bed over there to rest and regain your strength."
 msgstr ""
-"感謝你剛剛幫的忙。\n"
+"תודה על העזרה עם החולדות מקודם.\n"
 "\n"
-"如果你受傷了，可以用你的那張床來回復體力。"
+"אם נפצעת, לך תנוח במיטה שלך שם."
 
 #: conversationlist_mikhail.json:mikhail_achievements_10
 msgid "Just like my father once did, I want to give you a book to take with you on your way."
-msgstr "就像是我父親曾經做的，我想給你一本書讓你隨身攜帶。"
+msgstr "בדיוק כמו שאבא שלי פעם עשה, אני רוצה לתת לך ספר לקחת איתך לדרך."
 
 #: conversationlist_mikhail.json:mikhail_achievements_20
 msgid "This book is some kind of diary, in which you can record unusual experiences and achievements that you may have on your way."
-msgstr "這本書是一本日記，你可以在其中記錄可能會遇到的不尋常的經歷和成就。"
+msgstr "זה סוג של יומן בשביל שתוכל לכתוב את החוויות וההשגים שהיו לך בדרך."
 
 #: conversationlist_mikhail.json:mikhail_achievements_30
 msgid "Would you like to have it?"
-msgstr "你想擁有它嗎？"
+msgstr "אתה רוצה אותו?"
 
 #: conversationlist_mikhail.json:mikhail_achievements_30:0
 msgid "Yes, sounds great."
-msgstr "是的，聽起來不錯。"
+msgstr "כן, בטח."
 
 #: conversationlist_mikhail.json:mikhail_achievements_30:1
 msgid "No, thanks."
-msgstr "不，謝謝。"
+msgstr "לא תודה."
 
 #: conversationlist_mikhail.json:mikhail_achievements_40
 msgid "No problem. I won't bother you with it again."
-msgstr "沒問題，我不會再打擾你了。"
+msgstr "אין בעיה. אני לא אציק לך עם זה שוב."
 
 #: conversationlist_mikhail.json:mikhail_achievements_50
 #: conversationlist_stoutford_combined.json:stn_colonel_34
 msgid "Here you are."
-msgstr "給你。"
+msgstr "הנה, כך."
 
 #: conversationlist_mikhail_foodpoison.json:mikhail_rats_start2a
 msgid "Another way to regain your strength is to eat some food. You can buy some for yourself from Mara at the town hall. But watch out - I hear that raw meat can sometimes give you food poisoning."
-msgstr "另一種恢復體力的方法是吃點食物，你可以從鎮中心的瑪拉那為自己買一些食物。但是記得—我聽說生肉有時候會讓你食物中毒。"
+msgstr ""
+"עוד דרך לאסוף את כוחותיך היא לאכול משהו. אתה יכול לקנות אוכל ממארה בעירייה. "
+"אבל תיזהר - בשר נא יכול לתת לך הרעלת מזון."
 
 #: conversationlist_mikhail_foodpoison.json:mikhail_rats_start2b
 msgid "If that happens, perhaps the town priest can do something to help you.  Otherwise, just rest until you feel better."
-msgstr "如果發生了，也許鎮上的牧師可以幫到你。否則，請休息直到你感覺好一些。"
+msgstr "אם זה יקרה, אולי הכומר בעיר יכול לעזור לך.  אחרת, פשוט תנוח עד שתבריא."
 
 #: conversationlist_mikhail_foodpoison.json:mikhail_rats_start2c
 msgid "Me, I can't really afford the meat, so I just stick to my bread!"
-msgstr "我，真的買不起肉，所以我只堅持吃我的麵包！"
+msgstr "אני לא יכול להרשות לעצמי לקנות בשר, אז אני מסתפק בלחם!"
 
 #: conversationlist_crossglen.json:audir1
 msgid ""
@@ -606,13 +611,13 @@ msgid ""
 "\n"
 "Please browse my selection of fine wares."
 msgstr ""
-"歡迎來到我的商店！\n"
+"ברוך הבא לחנות!\n"
 "\n"
-"請盡情瀏覽我的挑選的精品。"
+"תרגיש חופשי לעיין במבחר המשובח שלי."
 
 #: conversationlist_crossglen.json:audir1:0
 msgid "Please show me your wares."
-msgstr "請讓我看看你的商品。"
+msgstr "תראה לי מה אתה מוכר."
 
 #: conversationlist_crossglen.json:arambold1
 msgid ""
@@ -620,9 +625,9 @@ msgid ""
 "\n"
 "Someone should do something about them."
 msgstr ""
-"哦我的，那些醉漢唱歌唱成那樣我還有辦法睡嗎？\n"
+"אוי ואבוי, איך אני אשן שהשיכורים האלה שרים ככה?\n"
 "\n"
-"應該要有人對他們做些什麼。"
+"מישהו צריך לטפל בהם."
 
 #: conversationlist_crossglen.json:arambold1:0
 #: conversationlist_lodar.json:lodar_d1:9
@@ -630,7 +635,7 @@ msgstr ""
 #: conversationlist_maevalia.json:maevalia_h2:0
 #: conversationlist_maevalia.json:maevalia_d1:0
 msgid "Can I rest here?"
-msgstr "我能在這裡休息嗎？"
+msgstr "אני יכול לנוח כאן?"
 
 #: conversationlist_crossglen.json:arambold1:1
 #: conversationlist_crossglen.json:mara_default:0
@@ -662,7 +667,7 @@ msgstr "我能在這裡休息嗎？"
 #: conversationlist_omicronrg9.json:dunla_guild_2b:0
 #: conversationlist_brimhaven.json:edrin_0_0:5
 msgid "Do you have anything to trade?"
-msgstr "你有任何東西能夠和我交易嗎?"
+msgstr "יש לך משהו לסחור?"
 
 #: conversationlist_crossglen.json:arambold2
 msgid ""
@@ -670,9 +675,9 @@ msgid ""
 "\n"
 "Pick any bed you want."
 msgstr ""
-"當然，還子，你可以在這休息。\n"
+"בטח, אתה יכול לנוח כאן.\n"
 "\n"
-"挑一張你想要的床。"
+"בחר איזה מיטה שאתה רוצה."
 
 #: conversationlist_crossglen.json:arambold2:0
 #: conversationlist_crossglen_gruil.json:gruil_andor3:0
@@ -683,7 +688,7 @@ msgstr ""
 #: conversationlist_flagstone.json:flagstone_sentry_42:0
 #: conversationlist_vilegard_villagers.json:vilegard_villager_friend_1:0
 msgid "Thanks, bye."
-msgstr "謝謝，再見。"
+msgstr "תודה, ביי."
 
 #: conversationlist_crossglen.json:drunk1
 msgid ""
@@ -692,10 +697,10 @@ msgid ""
 "\n"
 "Hey kid, wanna join us in our drinking game?"
 msgstr ""
-"喝 喝 喝，喝再多一點點。\n"
-"喝 喝 喝，直到躺在地面。\n"
+"שתה שתה שתה עוד ועוד,\n"
+"שתה שתה שתה עד דלא ידע.\n"
 "\n"
-"嘿孩子，想要參加我們的喝酒遊戲嗎？"
+"ילד, אתה רוצה להצטרף למשחק שלנו?"
 
 #: conversationlist_crossglen.json:drunk1:0
 #: conversationlist_crossglen_odair.json:odair4:2
@@ -705,12 +710,12 @@ msgstr ""
 #: conversationlist_guynmart2_npc.json:guynmart_rob6_10:1
 #: conversationlist_brimhaven.json:arlish_0:1
 msgid "No thanks."
-msgstr "不，謝謝。"
+msgstr "לא תודה."
 
 #: conversationlist_crossglen.json:drunk1:1
 #: conversationlist_rothses.json:rothses_c2:2
 msgid "Maybe some other time."
-msgstr "也許下次吧。"
+msgstr "אולי בפעם אחרת."
 
 #: conversationlist_crossglen.json:mara_default
 msgid ""
@@ -718,21 +723,24 @@ msgid ""
 "\n"
 "Want something to eat?"
 msgstr ""
-"別管那些醉漢，他們總是造成麻煩。\n"
+"אל תתייחס לשתיינים האלה. כל הזמן עושים צרות.\n"
 "\n"
-"想要吃點東西嗎？"
+"רוצה לאכול משהו?"
 
 #: conversationlist_crossglen.json:mara_thanks
 msgid "I heard you helped Odair clean out that old supply cave. Thanks a lot, we'll start using it soon."
-msgstr "我聽說你幫歐戴爾清理了那個舊的儲藏洞。非常感謝，我們很快可以開始使用它了。"
+msgstr ""
+"שמעתי שעזרת לאודייר לנקות את מערת האספקה הישנה. תודה רבה, נתחיל לחזור להשתמש "
+"בה בקרוב."
 
 #: conversationlist_crossglen.json:mara_thanks:0
+#, fuzzy
 msgid "It was my pleasure."
-msgstr "這是我的榮幸。"
+msgstr "התענוג כולו שלי."
 
 #: conversationlist_crossglen.json:farm1
 msgid "Please do not disturb me, I have work to do."
-msgstr "請不要打擾我，我有工作要做。"
+msgstr "בבקשה לא להפריע, יש לי עבודה לעשות."
 
 #: conversationlist_crossglen.json:farm1:0
 #: conversationlist_crossglen.json:farm2:0
@@ -747,15 +755,15 @@ msgstr "請不要打擾我，我有工作要做。"
 #: conversationlist_stoutford.json:stoutford_gateguard_0:2
 #: conversationlist_stoutford.json:kayla_1:1
 msgid "Have you seen my brother Andor?"
-msgstr "你有見過我的哥哥安道爾嗎？"
+msgstr "ראית את אחי אנדור?"
 
 #: conversationlist_crossglen.json:farm2
 msgid "What?! Can't you see I'm busy? Go bother someone else."
-msgstr "什麼！？你沒有看到我很忙嗎？去煩其他人吧。"
+msgstr "מה?! אתה לא רואה שאני עסוק? לך תטריד מישהו אחר."
 
 #: conversationlist_crossglen.json:farm_andor
 msgid "Andor? No, I haven't seen him around lately."
-msgstr "安道爾？沒有，我最近沒有看到他。"
+msgstr "אנדור? לא ראיתי אותו לאחרונה."
 
 #: conversationlist_crossglen.json:snakemaster
 msgid ""
@@ -763,36 +771,37 @@ msgid ""
 "\n"
 "Now prepare to die, puny creature."
 msgstr ""
-"看看，誰來啦？一個訪客，真好。你能從我的手下中走到這裡，真令我印象深刻。\n"
+"תראו תראו, מה יש לנו כאן? מבקר. נחמד. מרשים שהגעת עד הלום דרך כל הפיונים שלי."
 "\n"
-"現在準備好去死吧，可憐的生物。"
+"\n"
+"תתכונן למות, יצור עלוב."
 
 #: conversationlist_crossglen.json:snakemaster:0
 msgid "Great, I have been waiting for a fight!"
-msgstr "很好，我一直在等著幹一架！"
+msgstr "מצויין, אני כבר מחכה לקרב!"
 
 #: conversationlist_crossglen.json:snakemaster:1
 msgid "Let's see who dies here."
-msgstr "讓我們看看誰會死在這。"
+msgstr "נראה מי ימות כאן."
 
 #: conversationlist_crossglen.json:snakemaster:2
 #: conversationlist_maelveon.json:maelveon_5:2
 #: conversationlist_loneford_2.json:landa_6
 #: conversationlist_lodarfg4.json:lodar_fg4_7:1
 msgid "Please don't hurt me!"
-msgstr "拜託別傷害我！"
+msgstr "אנא ממך, אני מתחנן, אל תפגע בי!"
 
 #: conversationlist_crossglen.json:haunt
 msgid "Oh mortal, free me from this cursed world!"
-msgstr "噢凡人哪，將我從這被詛咒的世界中解放吧！"
+msgstr "בן תמותה, שחרר אותי מהקיום הארור הזה!"
 
 #: conversationlist_crossglen.json:haunt:0
 msgid "Oh, I'll free you from it alright."
-msgstr "哦，我會馬上幫你解脫的。"
+msgstr ""
 
 #: conversationlist_crossglen.json:haunt:1
 msgid "You mean, by killing you?"
-msgstr "你是指，殺了你？"
+msgstr "אתה מתכוון על ידי הריגתך?"
 
 #: conversationlist_crossglen_gruil.json:gruil1
 msgid ""
@@ -800,49 +809,55 @@ msgid ""
 "\n"
 "Wanna trade?"
 msgstr ""
-"咻，嘿。\n"
+"פססט, היי.\n"
 "\n"
-"想要交易一下嗎？"
+"רוצה לסחור?"
 
 #: conversationlist_crossglen_gruil.json:gruil1:0
 msgid "Sure, let's trade."
-msgstr "當然，來吧。"
+msgstr "יאללה, בוא נעשה עסקים."
 
 #: conversationlist_crossglen_gruil.json:gruil1:1
 msgid "I heard that you talked to my brother a while ago."
-msgstr "我聽說你之前和我哥哥說過話。"
+msgstr "שמעתי שדיברת עם אח שלי לפני כמה זמן."
 
 #: conversationlist_crossglen_gruil.json:gruil2
 msgid "Your brother? Oh you mean Andor? I might know something, but that information will cost you. Bring me a poison gland from one of those poisonous snakes and maybe I'll tell you."
-msgstr "你哥哥？哦你是說安道爾？我也許知道一些狀況，但是得到情報是需要代價的。從那些毒蛇身上帶個毒腺給我，我可能就會告訴你。"
+msgstr ""
+"אח שלך? אתה מתכוון לאנדור? אני אולי יודע משהו, אבל המידע הזה יעלה לך. תביא "
+"לי בלוטת רעל מאחד הנחשים הארסיים האלה ואולי אני אספר לך."
 
 #: conversationlist_crossglen_gruil.json:gruil2:0
 msgid "Here, I have a poison gland for you."
-msgstr "來，我有個毒腺給你。"
+msgstr "הנה, יש לי בלוטת רעל בשבילך."
 
 #: conversationlist_crossglen_gruil.json:gruil2:1
 msgid "OK, I'll bring one."
-msgstr "好的，我會帶一個過來。"
+msgstr "בסדר, אביא אחת."
 
 #: conversationlist_crossglen_gruil.json:gruil_complete
 msgid "Thanks a lot kid. This will do just fine."
-msgstr "非常感謝，孩子。這樣就可以了。"
+msgstr "תודה רבה, ילד. היא תספיק."
 
 #: conversationlist_crossglen_gruil.json:gruil_return
 msgid "Look kid, I already told you."
-msgstr "聽著孩子，我已經告訴你了。"
+msgstr "תראה, ילד, כבר אמרתי לך."
 
 #: conversationlist_crossglen_gruil.json:gruil_andor1
 msgid "I talked to him yesterday. He asked if I knew someone called Umar or something like that. I have no idea who he was talking about."
-msgstr "我昨天和他說過話。他問我認不認識一個人叫...悠馬爾或什麼的。我完全不知道他在說誰。"
+msgstr ""
+"דיברתי איתו אתמול. הוא שאל אותי אם אני מכיר מישהו בשם עוּמָר או משהו. אין לי "
+"מושג על מי הוא דיבר."
 
 #: conversationlist_crossglen_gruil.json:gruil_andor2
 msgid "He seemed really upset about something and left in a hurry. Something about the Thieves' Guild in Fallhaven."
-msgstr "他好像對什麼事感到不安，而且離開的非常匆忙。一些有關墜風港的盜賊行會。"
+msgstr "הוא נראה ממש נסער ממשהו ועזב בחיפזון. משהו על גילדת הגנבים בפולהייבן."
 
 #: conversationlist_crossglen_gruil.json:gruil_andor3
 msgid "That's all I know. Maybe you should ask around in Fallhaven. Look for my friend Gaela, he probably knows more."
-msgstr "我只知道這些。也許你應該去墜風港問問。你可以去找我的朋友加艾拉，他可能知道得更多。"
+msgstr ""
+"זה כל מה שאני יודע. כדאי שתשאל בפאלהייבן. חפש את החבר שלי גיילה, הוא בטח "
+"יודע יותר."
 
 #: conversationlist_crossglen_leonid.json:leonid1
 msgid ""
@@ -850,63 +865,67 @@ msgid ""
 "\n"
 "I'm Leonid, steward of Crossglen village."
 msgstr ""
-"你好，孩子。你不是米哈爾的兒子嗎？你還有個哥哥呢。\n"
+"שלום, ילד. אתה הבן של מיכאל, לא? עם האח הזה שלך.\n"
 "\n"
-"我是雷奧尼德，橫格蘭的管理者。"
+"אני לאוניד, הגיזבר הכפר של קרוסגלן."
 
 #: conversationlist_crossglen_leonid.json:leonid1:1
 #: conversationlist_crossglen_leonid.json:leonid_continue:1
 msgid "What can you tell me about Crossglen?"
-msgstr "關於橫格蘭你能告訴我什麼？"
+msgstr "מה אתה יכול לספר לי על קרוסגלן?"
 
 #: conversationlist_crossglen_leonid.json:leonid1:2
 #: conversationlist_crossglen_leonid.json:leonid_continue:2
 msgid "Never mind, see you later."
-msgstr "沒事，等會見。"
+msgstr "לא משנה, נתראה אחר כך."
 
 #: conversationlist_crossglen_leonid.json:leonid_andor
 msgid "Your brother? No, I haven't seen him here today. I think I saw him in here yesterday talking to Gruil. Maybe he knows more?"
-msgstr "你哥？沒有喔，我今天還沒在這見過他。我想我昨天有看到他和古瑞爾在講話。說不定他知道些什麼？"
+msgstr ""
+"את אחיך? לא ראיתי אותו כאן היום. אני חושב שראיתי אותו כאן אתמול מדבר עם "
+"גרואיל. אולי הוא יודע עוד?"
 
 #: conversationlist_crossglen_leonid.json:leonid_andor:0
 msgid "Thanks, I'll go talk to Gruil. There was something more I wanted to talk about."
-msgstr "謝了，我會去和古魯爾談談。我還有別的事想聊聊。"
+msgstr "תודה, אני אלך לדבר עם גרואיל. אבל יש עוד משהו שרציתי לדבר איתך עליו."
 
 #: conversationlist_crossglen_leonid.json:leonid_andor:1
 msgid "Thanks, I'll go talk to Gruil."
-msgstr "謝了，我去和古魯爾談談。"
+msgstr "תודה, אני אלך לדבר עם גרואיל."
 
 #: conversationlist_crossglen_leonid.json:leonid_crossglen
 msgid "As you know, this is Crossglen village. Mostly a farming community."
-msgstr "你知道的，這裡是橫谷村。大致上是個農業村莊。"
+msgstr "כפי שאתה יודע, אנחנו בקרוסגלן, שהוא כפר חקלאי בעיקרו."
 
 #: conversationlist_crossglen_leonid.json:leonid_crossglen1
 msgid "We have Audir with his smithy to the southwest, Leta and her husband's cabin to the west, this town hall here and your father's cabin to the northwest."
-msgstr "我們村裡有歐迪爾在西南方開的鐵匠鋪，蕾塔和她先生在西方的房子，還有這兒村公所和你父親西北方的房子。"
+msgstr ""
+"אתה יכול למצוא כאן את הנפחיה של אודיר לכיוון דרום מערב, הבקטה של לטה ובעלה "
+"במערב, העירייה כאן, והבקטה של אביך מצפון מערב."
 
 #: conversationlist_crossglen_leonid.json:leonid_crossglen2
 msgid "That's pretty much it. We try to live a peaceful life."
-msgstr "差不多就這樣子。我們努力地過著平和的生活。"
+msgstr "זה הכל. אנחנו מנסים לחיות כאן חיים שלווים."
 
 #: conversationlist_crossglen_leonid.json:leonid_crossglen2:0
 msgid "Has there been any recent activity in the village?"
-msgstr "最近村子裡有什麼動靜嗎？"
+msgstr ""
 
 #: conversationlist_crossglen_leonid.json:leonid_crossglen2:1
 msgid "Let's go back to the other things we talked about."
-msgstr "讓我們把話題帶回要討論的其他事情上。"
+msgstr ""
 
 #: conversationlist_crossglen_leonid.json:leonid_crossglen3
 msgid "There were some recent disturbances some weeks ago that you may have noticed. Some villagers got into a fight over the new decree from Lord Geomyr."
-msgstr "或許你可能已經注意到一些最近的騷動了。幾週前才有些村民為了領主鳩米爾的新法令而大打出手。"
+msgstr ""
 
 #: conversationlist_crossglen_leonid.json:leonid_crossglen4
 msgid "Lord Geomyr issued a statement regarding the unlawful use of bonemeal as healing substance. Some villagers argued that we should oppose Lord Geomyr's word and still use it."
-msgstr "領主鳩米爾發表了一份關於骨粉做為藥物治療之行為違反法令的聲明。某些村民認為我們應當要反對領主鳩米爾的意見並照舊使用。"
+msgstr ""
 
 #: conversationlist_crossglen_leonid.json:leonid_crossglen4_1
 msgid "Tharal, our priest, was particularly upset and suggested we do something about Lord Geomyr."
-msgstr "我們的牧師撒勒爾特別的不高興，並且建議我們對領主鳩米爾做些什麼。"
+msgstr ""
 
 #: conversationlist_crossglen_leonid.json:leonid_crossglen5
 msgid ""
@@ -914,38 +933,33 @@ msgid ""
 "\n"
 "Personally, I haven't decided what my thoughts are."
 msgstr ""
-"其他村民爭論著說我們應該遵從領主鳩米爾的命令。\n"
-"\n"
-"以我個人而言，我還沒決定好我的想法。"
 
 #: conversationlist_crossglen_leonid.json:leonid_crossglen6
 msgid ""
 "On one hand, Lord Geomyr supports Crossglen with a lot of protection.\n"
 "[Points to the soldiers in the hall]"
 msgstr ""
-"一方面來說，領主鳩米爾為橫谷這裡提供了很多的保護。\n"
-"[指向大廳的士兵們]"
 
 #: conversationlist_crossglen_leonid.json:leonid_crossglen7
 msgid "But on the other hand, the tax and the recent changes of what's allowed are really taking a toll on Crossglen."
-msgstr "但另一方面來說，稅務以及最近政令的變動也確實的對橫谷造成影響。"
+msgstr ""
 
 #: conversationlist_crossglen_leonid.json:leonid_crossglen8
 msgid "Someone should go to Castle Geomyr and talk to the steward about our situation here in Crossglen."
-msgstr "需要有什麼人去一趟鳩米爾堡並向管理者談談我們橫谷這邊的處境。"
+msgstr ""
 
 #: conversationlist_crossglen_leonid.json:leonid_crossglen9
 msgid "In the meantime, we've banned all use of bonemeal as a healing substance."
-msgstr "同時，我們已經禁止骨粉做為治療藥物的所有使用方式。"
+msgstr ""
 
 #: conversationlist_crossglen_leonid.json:leonid_crossglen9:0
 msgid "Thank you for the information. There was something more I wanted to ask you."
-msgstr "感謝你提供的情報。我還有其他想問的事情。"
+msgstr ""
 
 #: conversationlist_crossglen_leonid.json:leonid_crossglen9:1
 #: conversationlist_omicronrg9.json:umar_guild03_31a:1
 msgid "Thank you for the information. Bye."
-msgstr "感謝你提供的情報。再見。"
+msgstr ""
 
 #: conversationlist_crossglen_leonid.json:leonid_bye
 #: conversationlist_crossglen_leonid.json:leonid_bye:0
@@ -967,143 +981,141 @@ msgstr "感謝你提供的情報。再見。"
 #: conversationlist_stoutford_combined.json:stoutford_widow_roots30_2:1
 #: conversationlist_omicronrg9.json:leta_guild_1b:1
 msgid "Shadow be with you."
-msgstr "暗影與你同在。"
+msgstr ""
 
 #: conversationlist_crossglen_tharal.json:tharal1
 msgid "Walk in the glow of the Shadow, my child."
-msgstr "隨暗影的光輝而行，我的孩子。"
+msgstr ""
 
 #: conversationlist_crossglen_tharal.json:tharal1:1
 #: conversationlist_fallhaven_church.json:thoronir_tharal_1:0
 msgid "What can you tell me about bonemeal?"
-msgstr "你能告訴我與骨粉有關的事嗎？"
+msgstr ""
 
 #: conversationlist_crossglen_tharal.json:tharal1:2
 #: conversationlist_fallhaven_potions.json:fallhaven_potions:1
 msgid "Do you have anything to help against food-poisoning?"
-msgstr "你知道任何能幫忙處理食物中毒的事物嗎？"
+msgstr ""
 
 #: conversationlist_crossglen_tharal.json:tharal_bonemeal1
 msgid "Bonemeal? We shouldn't talk about that. Lord Geomyr issued a decree. It's not allowed anymore."
-msgstr "骨粉？我們不該談那個。領主鳩米爾頒布了法令。它已經被禁止使用。"
+msgstr ""
 
 #: conversationlist_crossglen_tharal.json:tharal_bonemeal1:0
 #: conversationlist_prim_arghest.json:arghest_6:1
 #: conversationlist_prim_arghest.json:arghest_7:0
 msgid "Please?"
-msgstr "請？"
+msgstr ""
 
 #: conversationlist_crossglen_tharal.json:tharal_bonemeal2_1
 msgid "No, we really shouldn't talk about that."
-msgstr "不，我們真的不該討論那個。"
+msgstr ""
 
 #: conversationlist_crossglen_tharal.json:tharal_bonemeal2_1:0
 msgid "Oh come on."
-msgstr "噢拜託。"
+msgstr ""
 
 #: conversationlist_crossglen_tharal.json:tharal_bonemeal2
 msgid "Well if you really are that persistent. Bring me 5 insect wings that I can use for making potions and maybe we can talk more."
-msgstr "好吧如果你真的這麼堅持的話。帶5個昆蟲翅膀過來讓我製作藥水的話，或許我們可以談更多。"
+msgstr ""
 
 #: conversationlist_crossglen_tharal.json:tharal_bonemeal2:0
 msgid "Here, I have the insect wings."
-msgstr "看，我有昆蟲翅膀。"
+msgstr ""
 
 #: conversationlist_crossglen_tharal.json:tharal_bonemeal2:1
 msgid "OK, I'll bring them."
-msgstr "好，我會帶它們過來。"
+msgstr ""
 
 #: conversationlist_crossglen_tharal.json:tharal_bonemeal3
 msgid "Thanks kid. I knew I could count on you."
-msgstr "謝了孩子。我就知道我能信任你。"
+msgstr ""
 
 #: conversationlist_crossglen_tharal.json:tharal_bonemeal4
 msgid "Oh yes, bonemeal. Mixed with the right components it can be one of the most effective healing agents around."
-msgstr "噢是的，骨粉。和正確的原料混合在一塊，它就能變成最有效的治療成分之一。"
+msgstr ""
 
 #: conversationlist_crossglen_tharal.json:tharal_bonemeal5
 msgid "We used to use it extensively before. But now that bastard Lord Geomyr has banned all use of it."
-msgstr "我們以前很廣泛的運用它。但現在那個混帳領主鳩米爾已經把它的所有使用方式都禁止了。"
+msgstr ""
 
 #: conversationlist_crossglen_tharal.json:tharal_bonemeal6
 msgid "How am I supposed to heal people now? Using regular healing potions? Bah, they're so ineffective."
-msgstr "我現在該怎麼醫治病人啊？使用常規治療藥劑嗎？呸，它們有什麼屁用。"
+msgstr ""
 
 #: conversationlist_crossglen_tharal.json:tharal_bonemeal7
 msgid "I know someone that still has a supply of bonemeal if you are interested. Go talk to Thoronir, a fellow priest in Fallhaven. Tell him my password 'Glow of the Shadow'."
-msgstr "如果你有興趣的話，我知道有個人還有些骨粉的存貨。去和梭羅尼爾談談吧，他是墜風港一位牧師的朋友。和他說說我的暗語「暗影的光輝」。"
+msgstr ""
 
 #: conversationlist_crossglen_tharal.json:tharal_antifoodp1
 msgid "No, sorry. I hear that the potion-maker in Fallhaven can create something to help against that though."
-msgstr "不，抱歉。我聽說在墜風港的製藥者可以調製些什麼抵禦這種效果。"
+msgstr ""
 
 #: conversationlist_crossglen_tharal.json:tharal_antifoodp2
 msgid "You should go see him and ask if he has anything to help against that. He can probably help you."
-msgstr "你應該去見見他，問他有沒有什麼方法幫忙處理這個。他大概可能會幫你。"
+msgstr ""
 
 #: conversationlist_crossglen_tharal.json:tharal_antifoodp2:0
 #: conversationlist_fallhaven_unnmir.json:unnmir_13:0
 msgid "Thanks, I'll go see him."
-msgstr "謝了，我會去見他。"
+msgstr ""
 
 #: conversationlist_crossglen_leta.json:leta1
 msgid "Hey, this is my house, get out of here!"
-msgstr "嘿，這是我的房子，滾出這裡！"
+msgstr ""
 
 #: conversationlist_crossglen_leta.json:leta1:0
 msgid "But I was just ..."
-msgstr "可是我只是..."
+msgstr ""
 
 #: conversationlist_crossglen_leta.json:leta1:1
 #: conversationlist_crossglen_leta.json:leta2:0
 msgid "What about your husband Oromir?"
-msgstr "那妳先生歐羅米爾呢？"
+msgstr ""
 
 #: conversationlist_crossglen_leta.json:leta1:2
 #: conversationlist_crossglen_leta.json:leta1:3
 #: conversationlist_fallhaven_tavern.json:bela_room_1:2
 msgid "Umar sent me."
-msgstr "悠馬爾派我過來的。"
+msgstr ""
 
 #: conversationlist_crossglen_leta.json:leta2
 msgid "Beat it kid, get out of my house!"
-msgstr "滾吧小孩，滾出我的房子！"
+msgstr ""
 
 #: conversationlist_crossglen_leta.json:leta_oromir1
 msgid ""
 "Do you know anything about my husband? He should be here helping me with the farm today, but he seems to be missing as usual.\n"
 "Sigh."
 msgstr ""
-"你知道我先生的事情嗎？今天他應該要在這幫我做點農務的，但他好像和平常一樣的不見人影。\n"
-"唉。"
 
 #: conversationlist_crossglen_leta.json:leta_oromir1:0
 #: conversationlist_rogorn.json:rogorn_story_6:3
 #: conversationlist_rogorn.json:rogorn_story_7:4
 msgid "I have no idea."
-msgstr "我不清楚。"
+msgstr ""
 
 #: conversationlist_crossglen_leta.json:leta_oromir1:1
 msgid "Yes, I found him. He is hiding among some trees to the east."
-msgstr "是的，我找到他了。他躲在東方的樹叢裡。"
+msgstr ""
 
 #: conversationlist_crossglen_leta.json:leta_oromir1:2
 #: conversationlist_crossglen_leta.json:leta_oromir1:3
 #: conversationlist_crossglen_leta.json:leta_oromir1:4
 msgid "[Lie] I have no idea."
-msgstr "[謊話]我不清楚。"
+msgstr ""
 
 #: conversationlist_crossglen_leta.json:leta_oromir1:5
 msgid "He's found a new hiding spot."
-msgstr "他找到新的躲藏點了。"
+msgstr ""
 
 #: conversationlist_crossglen_leta.json:leta_oromir1:6
 msgid "He's found another new hiding spot. Give him credit, he is great at avoiding work."
-msgstr "他又找到另一個躲藏點了。厲害，他真的很會躲。"
+msgstr ""
 
 #: conversationlist_crossglen_leta.json:leta_oromir1:7
 msgid "He's in your basement."
-msgstr "他在你家地下室啦。"
+msgstr ""
 
 #: conversationlist_crossglen_leta.json:leta_oromir2
 #: conversationlist_brimhaven_2.json:leta_oromir1_trees_help
@@ -1113,28 +1125,22 @@ msgid ""
 "If you see him, tell him to hurry back here and help me with the housework.\n"
 "Now get out of here!"
 msgstr ""
-"如果你有看到他，叫他給老娘滾回來幫忙做家事。\n"
-"現在給我滾出去！"
 
 #: conversationlist_crossglen_leta.json:leta_oromir_complete
 msgid ""
 "Hiding is he? That's not surprising. I'll go let him know who's the boss around here.\n"
 "Thanks for letting me know though."
 msgstr ""
-"他躲著了？這沒什麼好驚訝的。我會過去讓他知道誰才是老大。\n"
-"謝謝你讓我知道這些。"
 
 #: conversationlist_crossglen_leta.json:leta_oromir_complete2
 msgid "Thanks for telling me about Oromir earlier. I will go get him in just a minute."
-msgstr "謝謝你稍早告訴我關於歐羅米爾的事情。我馬上叫他進來。"
+msgstr ""
 
 #: conversationlist_crossglen_leta.json:oromir1
 msgid ""
 "Oh you startled me.\n"
 "Hello."
 msgstr ""
-"噢你嚇到我了。\n"
-"哈囉。"
 
 #: conversationlist_crossglen_leta.json:oromir1:0
 #: conversationlist_fallhaven_vacor.json:vacor_begin
@@ -1144,56 +1150,56 @@ msgstr ""
 #: conversationlist_stoutford.json:glasforn_initial_0
 #: conversationlist_brimhaven.json:edrin_0_0
 msgid "Hello."
-msgstr "你好。"
+msgstr ""
 
 #: conversationlist_crossglen_leta.json:oromir2
 msgid "I'm hiding here from my wife Leta. She is always getting angry at me for not helping out on the farm. Please don't tell her that I'm here."
-msgstr "我在這裡躲我太太，蕾塔。她總是對於我不在農地幫忙的事情而生氣。拜託別和她說我在這。"
+msgstr ""
 
 #: conversationlist_crossglen_leta.json:oromir2:0
 #: conversationlist_algangror.json:algangror_remgard_5:1
 msgid "[Lie] OK."
-msgstr "[REVIEW](騙他)好."
+msgstr ""
 
 #: conversationlist_crossglen_leta.json:oromir2:1
 msgid "Your secret is safe with me."
-msgstr "你的秘密我會守護好的。"
+msgstr ""
 
 #: conversationlist_crossglen_odair.json:odair1
 msgid "Oh, it's you. You with that brother of yours. Always causing trouble."
-msgstr "噢，是你啊。你總是和你哥一起。總是製造麻煩。"
+msgstr ""
 
 #: conversationlist_crossglen_odair.json:odair2
 msgid "Hmm, maybe you could be of use to me. Do you think you could help me with a small task?"
-msgstr "嗯，也許你對我而言會有點用處。你覺得你能夠幫我點小忙嗎？"
+msgstr ""
 
 #: conversationlist_crossglen_odair.json:odair2:0
 msgid "Tell me more about this task."
-msgstr "告訴我更多關於這件任務的情報。"
+msgstr ""
 
 #: conversationlist_crossglen_odair.json:odair2:1
 msgid "Sure, if there is anything I can gain from it."
-msgstr "當然，如果這之中我有什麼賺頭的話。"
+msgstr ""
 
 #: conversationlist_crossglen_odair.json:odair3
 msgid "I recently went in to that cave over there [points west], to check on our supplies. But apparently, the cave has been infested with rats."
-msgstr "我最近去那裏的洞穴[向西邊指過去]，檢查我們的補給。但顯然的，這洞穴裡塞滿了老鼠。"
+msgstr ""
 
 #: conversationlist_crossglen_odair.json:odair4
 msgid "In particular, I saw one rat that was larger than the other rats. Do you think you have what it takes to help eliminate them?"
-msgstr "特別的是，我看到有隻老鼠比其他隻都還大。你覺得你能夠消滅牠們嗎？"
+msgstr ""
 
 #: conversationlist_crossglen_odair.json:odair4:0
 msgid "Sure, I'll help you so that Crossglen can use the supply cave again."
-msgstr "當然，我會幫忙的，這樣橫谷的大家才能再使用這個補給洞穴。"
+msgstr ""
 
 #: conversationlist_crossglen_odair.json:odair4:1
 msgid "Sure, I'll help you. But only because there might be some gain for me in this."
-msgstr "當然，我會幫忙的。但這只是因為我可能從中得到些許賺頭。"
+msgstr ""
 
 #: conversationlist_crossglen_odair.json:odair5
 msgid "I need you to get into that cave and kill the large rat, that way maybe we can stop the rat infestation in the cave and start using it as our old supply cave again."
-msgstr "我需要你進去那個洞穴裡面然後殺掉那隻大老鼠，這樣或許我們就能阻止老鼠繼續霸占洞穴，並且重新啟用它作為我們的舊補給洞穴了。"
+msgstr ""
 
 #: conversationlist_crossglen_odair.json:odair5:0
 #: conversationlist_fallhaven_arcir.json:arcir_elythara_1:0
@@ -1215,15 +1221,15 @@ msgstr "我需要你進去那個洞穴裡面然後殺掉那隻大老鼠，這樣
 #: conversationlist_brimhaven2.json:brv_school_enter_20:0
 #: conversationlist_gison.json:gison_p2_70_10:0
 msgid "OK."
-msgstr "好的。"
+msgstr ""
 
 #: conversationlist_crossglen_odair.json:odair5:1
 msgid "On second thought, I don't think I will help you after all."
-msgstr "多想了一下，我不覺得我能幫上你。"
+msgstr ""
 
 #: conversationlist_crossglen_odair.json:odair_cowards
 msgid "I didn't think so either. You and that brother of yours always were cowards."
-msgstr "我也這麼覺得。你和你那個哥哥一直都是膽小鬼。"
+msgstr ""
 
 #: conversationlist_crossglen_odair.json:odair_cowards:0
 #: conversationlist_crossglen_odair.json:odair_complete2:0
@@ -1239,15 +1245,15 @@ msgstr "我也這麼覺得。你和你那個哥哥一直都是膽小鬼。"
 #: conversationlist_omicronrg9.json:umar_guild_5b:0
 #: conversationlist_omicronrg9.json:umar_guild02_6b:0
 msgid "Bye."
-msgstr "再見。"
+msgstr ""
 
 #: conversationlist_crossglen_odair.json:odair_continue
 msgid "Did you kill that large rat in the cave west of here?"
-msgstr "你把西方的洞穴裡那隻大老鼠殺掉了嗎？"
+msgstr ""
 
 #: conversationlist_crossglen_odair.json:odair_continue:0
 msgid "Yes, I have killed the large rat."
-msgstr "是的，我已經宰了那隻大老鼠。"
+msgstr ""
 
 #: conversationlist_crossglen_odair.json:odair_continue:1
 #: conversationlist_fallhaven_bucus.json:bucus_thieves_continue:0
@@ -1270,11 +1276,11 @@ msgstr "是的，我已經宰了那隻大老鼠。"
 #: conversationlist_lodar.json:lodar_find0:0
 #: conversationlist_maevalia.json:maevalia_r1:1
 msgid "What was I supposed to do again?"
-msgstr "再說一次我該做什麼？"
+msgstr ""
 
 #: conversationlist_crossglen_odair.json:odair_complete
 msgid "Thanks a lot for your help kid! Maybe you and that brother of yours aren't as cowardly as I thought. Here, take these coins for your help."
-msgstr "非常感謝你的幫忙，孩子！也許你和你哥哥不像我原先想的那麼沒用。來，這是你幫忙的酬勞。"
+msgstr ""
 
 #: conversationlist_crossglen_odair.json:odair_complete:0
 #: conversationlist_thievesguild_1.json:thievesguild_thief_4:0
@@ -1288,23 +1294,23 @@ msgstr "非常感謝你的幫忙，孩子！也許你和你哥哥不像我原先
 #: conversationlist_brimhaven_2.json:brv_guard_deputy_asd_30:0
 #: conversationlist_gison.json:gison_p1_20_warmup_1:0
 msgid "Thanks."
-msgstr "謝了。"
+msgstr ""
 
 #: conversationlist_crossglen_odair.json:odair_complete2
 msgid "Thanks a lot for your help earlier. Now we might start using that cave as our old supply cave again."
-msgstr "非常感謝你稍早時的幫忙。現在我們可以重新啟用它作為我們的舊補給洞穴了。"
+msgstr ""
 
 #: conversationlist_jan.json:jan_default
 msgid "Hello kid. Please leave me to my mourning."
-msgstr "你好孩子。請讓我靜靜地哀悼。"
+msgstr ""
 
 #: conversationlist_jan.json:jan_default:0
 msgid "What is the problem?"
-msgstr "有什麼問題？"
+msgstr ""
 
 #: conversationlist_jan.json:jan_default:1
 msgid "Do you want to talk about it?"
-msgstr "你想談談那個嗎？"
+msgstr ""
 
 #: conversationlist_jan.json:jan_default:2
 #: conversationlist_jan.json:jan_default2:1
@@ -1316,29 +1322,29 @@ msgstr "你想談談那個嗎？"
 #: conversationlist_omicronrg9.json:leta_guild_1b:0
 #: conversationlist_omicronrg9.json:umar_guild03_30:2
 msgid "OK, bye."
-msgstr "好，掰囉。"
+msgstr ""
 
 #: conversationlist_jan.json:jan_default2
 msgid "Oh, it's so sad. I really don't want to talk about it."
-msgstr "噢，那太悲傷了。我真的不太想談那個。"
+msgstr ""
 
 #: conversationlist_jan.json:jan_default2:0
 #: conversationlist_algangror.json:algangror_story:0
 #: conversationlist_brimhaven2.json:brv_school_seated_20:0
 msgid "Please do."
-msgstr "請繼續."
+msgstr ""
 
 #: conversationlist_jan.json:jan_default3
 msgid "Well, I guess it's OK to tell you. You seem to be a nice enough kid."
-msgstr "好吧，應該可以跟你說。你好像是個好孩子。"
+msgstr ""
 
 #: conversationlist_jan.json:jan_default4
 msgid "My friend Gandir, his friend Irogotu, and I were down here digging this hole. We had heard there was a hidden treasure down here."
-msgstr "我的朋友甘德爾和他朋友伊羅格圖，還有我之前在挖這個洞。我們聽說這裡有一個寶藏。"
+msgstr ""
 
 #: conversationlist_jan.json:jan_default5
 msgid "We started digging and finally broke through to the cave system below. That's when we discovered them. The critters and bugs."
-msgstr "我們開始挖之後終於打到了下面的洞窟。當我們試著探索的時候，通通都是小動物和蟲子。"
+msgstr ""
 
 #: conversationlist_jan.json:jan_default6
 msgid ""
@@ -2506,7 +2512,7 @@ msgstr ""
 #: conversationlist_fallhaven_unnmir.json:unnmir_6:0
 #: conversationlist_agthor.json:agthor_y2:1
 msgid "I'm looking for my brother."
-msgstr "我在找我的哥哥."
+msgstr ""
 
 #: conversationlist_fallhaven_unnmir.json:unnmir_7
 msgid ""
@@ -3951,7 +3957,7 @@ msgstr ""
 #: conversationlist_fungi_panic.json:zuul_khan_20:0
 #: conversationlist_fungi_panic.json:fungi_rescued:0
 msgid "Who are you?"
-msgstr "你是誰?"
+msgstr ""
 
 #: conversationlist_thievesguild_1.json:thievesguild_pickpocket_2
 msgid "My real name is unimportant. People mostly call me Quickfingers."
@@ -4011,7 +4017,7 @@ msgstr ""
 #: conversationlist_esfiume.json:esfiume1:1
 #: conversationlist_esfiume.json:esfiume2:0
 msgid "What do you do around here?"
-msgstr "你在這裡做什麼？"
+msgstr ""
 
 #: conversationlist_thievesguild_1.json:thievesguild_troublemaker_1:2
 msgid "Can I take a look at what supplies you have available?"
@@ -5366,32 +5372,32 @@ msgstr ""
 
 #: conversationlist_alynndir.json:alynndir_1
 msgid "Hello there. Welcome to my cabin."
-msgstr "你好. 歡迎來到我的房間."
+msgstr ""
 
 #: conversationlist_alynndir.json:alynndir_1:1
 #: conversationlist_alynndir.json:alynndir_2:1
 msgid "What can you tell me about the surroundings here?"
-msgstr "你能和我說說這裡的環境嗎?"
+msgstr ""
 
 #: conversationlist_alynndir.json:alynndir_2
 msgid "Mostly, I trade with travelers on the main road on the way to Nor City."
-msgstr "大多數時後,我和從這條通往諾爾市的路上的旅人做交易."
+msgstr ""
 
 #: conversationlist_alynndir.json:alynndir_3
 msgid "Oh, there is not much around here. Vilegard to the west and Brightport to the east."
-msgstr "哦，這附近沒有多少東西。西邊是維萊加德，東邊是光明港。"
+msgstr ""
 
 #: conversationlist_alynndir.json:alynndir_4
 msgid "Up north is just forest. But there are some strange things happening there."
-msgstr "北邊就是森林. 但那裡發生了一些奇怪的事情."
+msgstr ""
 
 #: conversationlist_alynndir.json:alynndir_5
 msgid "I have heard terrible screams coming from the forest to the northwest."
-msgstr "我曾經聽到西北方的森林傳出慘叫."
+msgstr ""
 
 #: conversationlist_alynndir.json:alynndir_6
 msgid "I really wonder what is up there."
-msgstr "我真的不知道那裡發生了什麼事."
+msgstr ""
 
 #: conversationlist_vilegard_shops.json:vilegard_armorer_1
 msgid "Hello there. Please browse my selection of fine armors and protection."
@@ -5676,16 +5682,16 @@ msgstr ""
 
 #: conversationlist_ambelie.json:ambelie_1
 msgid "Oh my, a commoner. Get away from me. I might catch something."
-msgstr "噢我的天啊，你這個平民，離我遠一點。也許我抓到了甚麼東西。"
+msgstr ""
 
 #: conversationlist_ambelie.json:ambelie_1:1
 #: conversationlist_ambelie.json:ambelie_3:0
 msgid "What is a noble woman such as yourself doing in a place like this?"
-msgstr "像你這樣的貴婦出現在這種地方做什麼?"
+msgstr ""
 
 #: conversationlist_ambelie.json:ambelie_1:2
 msgid "I would be glad to get away from a snob like you."
-msgstr "離開像你這種勢力鬼我會很開心。"
+msgstr ""
 
 #: conversationlist_ambelie.json:ambelie_2
 msgid "I am Ambelie of the house of Laumwill in Feygard. I am sure you must have heard of me and my house."
@@ -5697,7 +5703,7 @@ msgstr ""
 
 #: conversationlist_ambelie.json:ambelie_2:1
 msgid "I have never heard of you or your house."
-msgstr "我從來沒聽過你或你的房子。"
+msgstr ""
 
 #: conversationlist_ambelie.json:ambelie_2:2
 msgid "Where is Feygard?"
@@ -5709,7 +5715,7 @@ msgstr ""
 
 #: conversationlist_ambelie.json:ambelie_3:1
 msgid "No, I have never heard of it."
-msgstr "沒有，我從來沒聽過這件事。"
+msgstr ""
 
 #: conversationlist_ambelie.json:ambelie_4
 msgid "Pfft. That just proves everything I have heard of you savages here in the southern land. So uneducated."
@@ -5747,7 +5753,7 @@ msgstr ""
 #: conversationlist_ambelie.json:ambelie_8:0
 #: conversationlist_ambelie.json:ambelie_9:1
 msgid "Good luck on your excursion."
-msgstr "祝你旅途好運。"
+msgstr ""
 
 #: conversationlist_ambelie.json:ambelie_9
 msgid "All the noblewomen in Feygard keep talking about the mysterious Shadow in Nor City. I just have to see it myself."
@@ -5755,15 +5761,15 @@ msgstr ""
 
 #: conversationlist_ambelie.json:ambelie_10
 msgid "Thank you. Now please leave before someone sees me talking to a commoner like you."
-msgstr "謝謝你。在還沒有被人看到我正在跟你這樣的平民說話時趕快離開我。"
+msgstr ""
 
 #: conversationlist_ambelie.json:ambelie_10:0
 msgid "Commoner? Are you trying to insult me? Goodbye."
-msgstr "平民?你在侮辱我嗎?再見。"
+msgstr ""
 
 #: conversationlist_ambelie.json:ambelie_10:1
 msgid "Whatever, you probably wouldn't even survive a forest wasp."
-msgstr "隨便你，反正你可能連隻黃蜂的攻擊都成受不了。"
+msgstr ""
 
 #: conversationlist_foamingflask_guards.json:ff_guard_1
 msgid "Ha ha, you tell him Garl! *burp*"
@@ -6235,7 +6241,7 @@ msgstr ""
 #: conversationlist_maevalia.json:maevalia15:0
 #: conversationlist_stoutford.json:tahalendor2_10
 msgid "What now?"
-msgstr "現在怎麼辦?"
+msgstr ""
 
 #: conversationlist_wrye.json:wrye_story_9
 msgid "This was several weeks ago. Now I feel an emptiness inside. I know in me that something has happened to my son Rincel."
@@ -6872,7 +6878,7 @@ msgstr ""
 #: conversationlist_brimhaven2.json:golin_100:0
 #: conversationlist_gison.json:gael_1:0
 msgid "Sure."
-msgstr "當然."
+msgstr ""
 
 #: conversationlist_bwm_agent_3.json:bwm_agent_3_6:1
 msgid "I'm keeping my eye on you. But I'll agree to your terms for now."
@@ -8154,7 +8160,7 @@ msgstr ""
 #: conversationlist_prim_guthbered.json:guthbered_killharl_1:0
 #: conversationlist_ailshara.json:ailshara_deliver_1:3
 msgid "Can you tell me again what I was supposed to do?"
-msgstr "你可以再告訴我什我該怎麼做嗎?"
+msgstr ""
 
 #: conversationlist_prim_guthbered.json:guthbered_killharl_1:1
 msgid "Not yet. I am still working on it."
@@ -9561,7 +9567,7 @@ msgstr ""
 #: conversationlist_ailshara.json:ailshara_deliver_1:0
 #: conversationlist_ulirfendor.json:ulirfendor_findparts_10:3
 msgid "Yes, it is done."
-msgstr "是的,結束了."
+msgstr ""
 
 #: conversationlist_blackwater_throdna.json:throdna_purify_2
 msgid "Then hurry and go take the vial to the shrine! What are you standing around here for?"
@@ -10059,7 +10065,7 @@ msgstr ""
 #: conversationlist_hadracor.json:hadracor_complete_3:1
 #: conversationlist_ailshara.json:ailshara_2:0
 msgid "OK, let me see what you have."
-msgstr "好,讓我看看你有什麼."
+msgstr ""
 
 #: conversationlist_tinlyn.json:tinlyn_killedsheep_1
 msgid "You attacked my sheep! Get away from me you filthy murderer!"
@@ -11183,145 +11189,145 @@ msgstr ""
 
 #: conversationlist_ailshara.json:ailshara_completed_y_1
 msgid "Hello again my Shadow friend. How may I help you?"
-msgstr "你好我來自暗影的朋友. 也許我能幫你什麼?"
+msgstr ""
 
 #: conversationlist_ailshara.json:ailshara_completed_y_1:0
 #: conversationlist_ailshara.json:ailshara_completed_n_1:0
 #: conversationlist_arghes.json:arghes_6:0
 #: conversationlist_ervelyn.json:ervelyn_d:0
 msgid "Let me see what you have to trade."
-msgstr "讓我看看你有什麼可以交易."
+msgstr ""
 
 #: conversationlist_ailshara.json:ailshara_completed_n_1
 msgid "Sigh, it's you. What do you want?"
-msgstr "唉,如果是你. 你會怎麼想?"
+msgstr ""
 
 #: conversationlist_ailshara.json:ailshara_1
 msgid "Psst, hey. Interested in doing some trading? I am always looking for acquiring ... well, items of others..."
-msgstr "噓,嘿嘿. 有沒有興趣做一些交易?我一直在我要的東西...恩,和一些其他的."
+msgstr ""
 
 #: conversationlist_ailshara.json:ailshara_1:0
 #: conversationlist_charwood1.json:khorailla2:0
 msgid "Sure, let me see what you have."
-msgstr "當然,讓我看看你有什麼."
+msgstr ""
 
 #: conversationlist_ailshara.json:ailshara_1:1
 msgid "Items of others?"
-msgstr "其他的東西?"
+msgstr ""
 
 #: conversationlist_ailshara.json:ailshara_2
 msgid "Oh yes. You see, these Feygard patrol guards carry some really interesting things. They don't seem to care much if some of their shipments ... well, disappear."
-msgstr "喔是的. 你看,這些費格爾的警衛他們身上有些有趣的事情. 他們似乎不在乎出貨量有多少... 好吧,好像沒有."
+msgstr ""
 
 #: conversationlist_ailshara.json:ailshara_2:1
 msgid "I should really not get involved in this. Goodbye."
-msgstr "我不應該介入這其中的,再見."
+msgstr ""
 
 #: conversationlist_ailshara.json:ailshara_interested_1
 msgid "Psst, hey you! I saw you talking to Gandoren over there, and I happened to notice that you exchanged some items. Anything interesting?"
-msgstr "噓,嘿嘿! 我剛看見你跟甘德倫在那邊說話,我碰巧注意到你和他做了一些交易. 能不能告訴我?"
+msgstr ""
 
 #: conversationlist_ailshara.json:ailshara_interested_1:0
 #: conversationlist_ailshara.json:ailshara_deliver_1:1
 msgid "Never mind that, let me see what you have to trade."
-msgstr "沒關係,讓我看看你有什麼東西可以交易."
+msgstr ""
 
 #: conversationlist_ailshara.json:ailshara_interested_1:1
 msgid "I better not talk about it."
-msgstr "我最好別討論這件事."
+msgstr ""
 
 #: conversationlist_ailshara.json:ailshara_interested_1:2
 msgid "Gandoren specifically asked me not to talk to you about it."
-msgstr "甘德倫特別要我別跟你說這件事."
+msgstr ""
 
 #: conversationlist_ailshara.json:ailshara_interested_1:3
 msgid "Yes, Gandoren wants me to deliver some equipment for Feygard. Do you want a part of the deal?"
-msgstr "對,甘德倫要我送一些裝備給費格爾. 你也想做些交易嗎?"
+msgstr ""
 
 #: conversationlist_ailshara.json:ailshara_interested_2
 msgid "Hah, of course. Gandoren would not like it if I were to get a glimpse into his business. I assume you are helping him deliver those items somewhere. Tell me this, what did he promise you in return? Gold? Honor? No?"
-msgstr "哈,當然. 甘德倫不會喜歡我插手他的交易. 我假設你要幫他送一些東西到某個地方. 那告訴我,你想得到什麼?酬勞?榮譽?沒有?"
+msgstr ""
 
 #: conversationlist_ailshara.json:ailshara_interested_2:0
 msgid "Now that you mention it, he didn't actually say there would be a reward."
-msgstr "既然你提到這件事,其實他沒說會有獎賞."
+msgstr ""
 
 #: conversationlist_ailshara.json:ailshara_interested_2:1
 msgid "I am doing this for the glory of Feygard."
-msgstr "我是為了費格爾的榮譽!"
+msgstr ""
 
 #: conversationlist_ailshara.json:ailshara_interested_2:2
 msgid "Helping Feygard seems like the right thing to do."
-msgstr "幫助費格爾似乎是件正確的事."
+msgstr ""
 
 #: conversationlist_ailshara.json:ailshara_interested_2:3
 msgid "What would you propose instead?"
-msgstr "你會怎麼建議?"
+msgstr ""
 
 #: conversationlist_ailshara.json:ailshara_interested_3
 msgid "As usual, Feygard keeps all its riches to itself. What if I were to tell you there was a way for you to gain from all this as well?"
-msgstr "費格爾人總是留下最好的給他們自己. 如果我告訴你有一種方法可以從這件事中獲得獎賞呢?"
+msgstr ""
 
 #: conversationlist_ailshara.json:ailshara_interested_3:0
 msgid "Sounds interesting, please go on."
-msgstr "聽起來很有趣,請繼續."
+msgstr ""
 
 #: conversationlist_ailshara.json:ailshara_interested_3:1
 msgid "I have no problem helping Feygard without any personal gain."
-msgstr "我沒有問題,我可以不拿報酬幫助費格爾."
+msgstr ""
 
 #: conversationlist_ailshara.json:ailshara_interested_3:2
 msgid "I better not get involved in this, goodbye."
-msgstr "我最好不要介入其中,再見."
+msgstr ""
 
 #: conversationlist_ailshara.json:ailshara_fg_1
 msgid "By the Shadow, you sound like one of those deceptive snobs from Feygard."
-msgstr "你聽起來像來自費格爾,那些騙人而且勢利的小人之一."
+msgstr ""
 
 #: conversationlist_ailshara.json:ailshara_fg_2
 msgid "Shadow help you, child. You should question yourself whether you really are making the right choice here."
-msgstr "暗影之神會幫助你,孩子. 你應該問你自己是否做出了正確的選擇."
+msgstr ""
 
 #: conversationlist_ailshara.json:ailshara_interested_4
 msgid "Let me tell you my plan. As you might know, everyone believes there will be some coming conflict between the deceptive snobs of Feygard and the glorious people of Nor City."
-msgstr "讓我跟你說我的計畫. 你可能知道,每個人都認為勢利的費格爾人和諾爾市的人民容易發生衝突."
+msgstr ""
 
 #: conversationlist_ailshara.json:ailshara_interested_5
 msgid "Any help we can bring to Nor City in this matter is welcome. These items that Gandoren gave you would be useful to our people in the southern lands."
-msgstr "這件事是我們能帶給諾爾市的見面禮. 這批甘德倫給你的貨物能夠給我們南邊的朋友很大的幫助."
+msgstr ""
 
 #: conversationlist_ailshara.json:ailshara_interested_6
 msgid "These items, if you were to deliver them to our allies down in Vilegard, then the Shadow would look favorably upon you."
-msgstr "這批貨物,如果你把它們交給我們在費艾爾村的同伴,那麼暗影將會非常歡迎你."
+msgstr ""
 
 #: conversationlist_ailshara.json:ailshara_interested_7
 msgid "This way, the people could get back some piece of the riches that Feygard has stolen from all of us."
-msgstr "用這種方法,人們可以討回一些費格爾從我們所有的人偷走的財富."
+msgstr ""
 
 #: conversationlist_ailshara.json:ailshara_interested_8
 msgid "If you indeed are walking in the Shadow, then deliver these items to the smith in Vilegard. He will be able to make good use of them. He might also have some other task for you."
-msgstr "如果你真的支持暗影,然後把這些貨物交給費格爾的鐵匠. 他可以好好地利用它們. 恩,他可能還有一些任務給你."
+msgstr ""
 
 #: conversationlist_ailshara.json:ailshara_interested_8:0
 msgid "I will see what I can do."
-msgstr "我會看看我能做些什麼."
+msgstr ""
 
 #: conversationlist_ailshara.json:ailshara_interested_8:1
 #: conversationlist_ailshara.json:ailshara_deliver_1:2
 msgid "No. I will help Feygard instead."
-msgstr "不,我會幫助費格爾."
+msgstr ""
 
 #: conversationlist_ailshara.json:ailshara_interested_8:2
 msgid "Whatever, I choose my own path."
-msgstr "無論如何,我選擇走我自己的路."
+msgstr ""
 
 #: conversationlist_ailshara.json:ailshara_interested_9
 msgid "Shadow be with you. May the Shadow guide you on the clouded paths that you walk."
-msgstr "願暗影與你同在. 也許暗影之神會在漆黑的道路上指引你."
+msgstr ""
 
 #: conversationlist_ailshara.json:ailshara_deliver_1
 msgid "Hello again. Did you deliver those items to the smith in Vilegard?"
-msgstr "你好. 你把那些東西交給費艾爾村的鐵匠了嗎?"
+msgstr ""
 
 #: conversationlist_ailshara.json:ailshara_deliver_1:4
 #: conversationlist_halvor_surprise.json:halvor_chwood_4:0
@@ -11331,19 +11337,19 @@ msgstr "你好. 你把那些東西交給費艾爾村的鐵匠了嗎?"
 #: conversationlist_brimhaven.json:mikhail_news_20:2
 #: conversationlist_gison.json:gison_p2_50:2
 msgid "Not yet."
-msgstr "還沒."
+msgstr ""
 
 #: conversationlist_ailshara.json:ailshara_deliver_2
 msgid "Good. You should also try to convince Gandoren into thinking that you helped him."
-msgstr "不錯. 你也應該試著說服甘德倫你能幫他忙."
+msgstr ""
 
 #: conversationlist_ailshara.json:ailshara_deliver_3
 msgid "Excellent! You do indeed walk with the Shadow my friend. I am glad to hear that there are at least a few decent folk still around."
-msgstr "太棒了! 你得到了暗影的認同,我的朋友. 我很高興能聽到至少還有幾個不錯的外人."
+msgstr ""
 
 #: conversationlist_ailshara.json:ailshara_delivered_1
 msgid "Your help will be most appreciated by the people of Nor City, and you will be welcome among us."
-msgstr "你的幫忙將會讓諾爾市的人們感激你,而且你會在他們之前受到歡迎!"
+msgstr ""
 
 #: conversationlist_vilegard_v0610.json:vilegard_smith_fg_1
 msgid "Oh, this is most unexpected but very welcome. I will not question how you acquired these items, but instead express my gratitude for bringing them to me."
@@ -11414,7 +11420,7 @@ msgstr ""
 #: conversationlist_crossroads_2.json:gallain_trade_1:0
 #: conversationlist_agthor.json:agthor_y4:0
 msgid "Trade"
-msgstr "交易"
+msgstr ""
 
 #: conversationlist_crossroads_2.json:gallain_rest_1
 msgid "The guards have set up some beds downstairs. Go check with them."
@@ -12184,7 +12190,7 @@ msgstr ""
 #: conversationlist_lodarmobs.json:zortakb:0
 #: conversationlist_lodarmobs.json:lbridge:0
 msgid "Fight!"
-msgstr "戰鬥!"
+msgstr ""
 
 #: conversationlist_buceth.json:buceth_story_14
 msgid "Thank you, my friend."
@@ -12619,7 +12625,7 @@ msgstr ""
 #: conversationlist_arulir_mountain.json:bernhar_10:1
 #: conversationlist_gison.json:gison_p1_10_0:0
 msgid "What are you doing here?"
-msgstr "你在做什麼?"
+msgstr ""
 
 #: conversationlist_thorin.json:thorin_2:2
 #: conversationlist_thorin.json:thorin_search_1:2
@@ -12831,23 +12837,23 @@ msgstr ""
 
 #: conversationlist_algangror.json:algangror_1
 msgid "Oh my, a child. He he, how nice. Tell me, what brings you here?"
-msgstr "喔...喔我的..孩子. 他..他現在很好. 告訴我是什麼讓你來到這裡?"
+msgstr ""
 
 #: conversationlist_algangror.json:algangror_1:0
 msgid "I am looking for my brother."
-msgstr "我正在找我的哥哥."
+msgstr ""
 
 #: conversationlist_algangror.json:algangror_1:1
 msgid "I just entered to see if there's any loot to be found here."
-msgstr "我剛進來,來找這有沒有被掠奪的痕跡."
+msgstr ""
 
 #: conversationlist_algangror.json:algangror_1:2
 msgid "I'm an adventurer, looking to help anyone in need of help."
-msgstr "我是個冒險者,尋找每個需要被幫助的人們."
+msgstr ""
 
 #: conversationlist_algangror.json:algangror_1:3
 msgid "I'd rather not tell."
-msgstr "我寧願不知道."
+msgstr ""
 
 #: conversationlist_algangror.json:algangror_1:4
 #: conversationlist_algangror.json:algangror_return_1:4
@@ -12856,589 +12862,589 @@ msgstr ""
 
 #: conversationlist_algangror.json:algangror_2a
 msgid "Run away, has he? He he."
-msgstr "跑掉了,對吧? 哈哈."
+msgstr ""
 
 #: conversationlist_algangror.json:algangror_2b
 msgid "Oh sure, you think you can just pick up anything and claim it as yours?"
-msgstr "哦,當然! 你以為你可以撿起每個東西,然後宣稱這些是你的嗎?"
+msgstr ""
 
 #: conversationlist_algangror.json:algangror_2c
 msgid "How noble. Maybe you can be of use to me."
-msgstr "多麼地高尚啊! 也許你能替我做些事."
+msgstr ""
 
 #: conversationlist_algangror.json:algangror_2d
 msgid "Clever. I like that."
-msgstr "聰明. 我喜歡."
+msgstr ""
 
 #: conversationlist_algangror.json:algangror_3
 msgid "Tell me, now that you have entered this house, would you be willing to help me with a small ... problem?"
-msgstr "你已經進來這棟房子了,現在告訴我,你會介意幫我們一個小小的...麻煩嗎?"
+msgstr ""
 
 #: conversationlist_algangror.json:algangror_3:0
 msgid "Sure, what's the problem?"
-msgstr "當然好,什麼麻煩?"
+msgstr ""
 
 #: conversationlist_algangror.json:algangror_3:1
 msgid "Maybe, it depends on what the problem is."
-msgstr "也許,要看是什麼麻煩."
+msgstr ""
 
 #: conversationlist_algangror.json:algangror_3:2
 msgid "Maybe, it depends on what type of reward we are talking about."
-msgstr "也許,要看你給什麼獎勵."
+msgstr ""
 
 #: conversationlist_algangror.json:algangror_3:3
 msgid "No way. You are acting way too creepy for me."
-msgstr "不可能. 你的行為實在是令我毛骨悚然."
+msgstr ""
 
 #: conversationlist_algangror.json:algangror_3c
 msgid "Reward? No, no, I don't have anything to give you, unfortunately."
-msgstr "獎勵? 喔,不,我沒有什麼給你,很遺憾."
+msgstr ""
 
 #: conversationlist_algangror.json:algangror_3c:0
 msgid "I guess you won't get any help either then."
-msgstr "我猜你不會得到任何的幫助."
+msgstr ""
 
 #: conversationlist_algangror.json:algangror_3c:1
 msgid "Fine, what's the problem you want help with?"
-msgstr "好吧,你想要幫忙解決哪個問題?"
+msgstr ""
 
 #: conversationlist_algangror.json:algangror_3c:2
 #: conversationlist_algangror.json:algangror_8:2
 msgid "Something feels wrong here. I better not get involved in this."
-msgstr "有點不太對勁. 我不要介入這件事比較好."
+msgstr ""
 
 #: conversationlist_algangror.json:algangror_4
 msgid "You see, I have this slight problem with ... ahem ... vermin."
-msgstr "你看,我這裡有一些小問題.....咳....是害蟲。"
+msgstr ""
 
 #: conversationlist_algangror.json:algangror_5
 msgid "Always sneaking around, always trying to cause mischief."
-msgstr "總是偷偷摸摸,總是試圖製造混亂."
+msgstr ""
 
 #: conversationlist_algangror.json:algangror_6
 msgid "Fortunately, I managed to capture some of them, and locked them in my basement."
-msgstr "很幸運的,我捕捉到牠們的一份子,而且把牠們鎖在我的地下室裡."
+msgstr ""
 
 #: conversationlist_algangror.json:algangror_7
 msgid "Now, I can't handle them myself because of certain ... issues."
-msgstr "現在,我不能自己控制住牠們因為....某些問題."
+msgstr ""
 
 #: conversationlist_algangror.json:algangror_8
 msgid "That's where you come in. Would you be willing to ... ahem ... handle those rodents for me?"
-msgstr "這就為啥我需要你,你是否能...啊哈...幫我處理這些老鼠?"
+msgstr ""
 
 #: conversationlist_algangror.json:algangror_8:0
 msgid "Sure, some rodents, I can handle that."
-msgstr "當然,只是一些老鼠而已. 我可以搞定."
+msgstr ""
 
 #: conversationlist_algangror.json:algangror_8:1
 msgid "No problem, I'll be right back once I have killed them."
-msgstr "沒問題,只要我殺了牠們,我馬上回來."
+msgstr ""
 
 #: conversationlist_algangror.json:algangror_decline_1
 msgid "Ah yes. After all, you are just a child and I can understand such a task would be too much for you. He he."
-msgstr "是啊. 畢竟你只是個孩子,我能理解這樣的任務對你來說太難了,呵呵."
+msgstr ""
 
 #: conversationlist_algangror.json:algangror_9
 msgid "Splendid. Return to me with some proof that they have been dealt with."
-msgstr "幹的好. 有些證據已經告訴我你把這件事處理完了."
+msgstr ""
 
 #: conversationlist_algangror.json:algangror_return_1
 msgid "You return. Did you handle all those ... ahem ... rodents in my basement?"
-msgstr "你回來了. 你解決掉所有那些...恩...在我地下室裡的囓齒類動物了嗎?"
+msgstr ""
 
 #: conversationlist_algangror.json:algangror_return_1:0
 msgid "Yes, they are all dead."
-msgstr "是的,牠們都死了."
+msgstr ""
 
 #: conversationlist_algangror.json:algangror_return_1:1
 msgid "I am still working on it. Goodbye."
-msgstr "我還在試著處理這件事. 再見."
+msgstr ""
 
 #: conversationlist_algangror.json:algangror_return_1:2
 msgid "I won't do your stupid task, count me out."
-msgstr "我不會做你的愚蠢任務,我不幹了."
+msgstr ""
 
 #: conversationlist_algangror.json:algangror_return_1:3
 msgid "I have decided not to help you with your rodents."
-msgstr "我決定不幫你和你的老鼠們."
+msgstr ""
 
 #: conversationlist_algangror.json:algangror_return_2
 msgid "He he. I bet you sure showed them. Excellent. Thank you for ... ahem ... helping me."
-msgstr "呵呵. 我敢打賭你確實地把他們處理掉了. 非常好. 感謝你...咳...幫我的忙."
+msgstr ""
 
 #: conversationlist_algangror.json:algangror_return_3
 msgid "Those rodents have really been bothering me. Good thing I managed to catch some of them. He he."
-msgstr "那些囓齒類動物真的一直困擾著我. 還好我設法抓住其中一部分,呵呵."
+msgstr ""
 
 #: conversationlist_algangror.json:algangror_return_4
 msgid "Now, there was something else I wanted to talk to you about. Have you been to the city of Remgard in your travels?"
-msgstr "現在,還有別的事我想和你談談. 你在旅行中有到過萊曼格市嗎?"
+msgstr ""
 
 #: conversationlist_algangror.json:algangror_return_4:0
 msgid "Yes, I have been there."
-msgstr "是的,我曾經到過那裏。"
+msgstr ""
 
 #: conversationlist_algangror.json:algangror_return_4:1
 msgid "No, where is that?"
-msgstr "不,那是哪裡?"
+msgstr ""
 
 #: conversationlist_algangror.json:algangror_return_c1
 msgid "You return. Thank you for helping me with my ... ahem ... rodent problem earlier."
-msgstr "你回來了. 感謝你早早地幫我解決...咳...老鼠的問題."
+msgstr ""
 
 #: conversationlist_algangror.json:algangror_return_c3
 msgid "I hope that will teach those *other* rats."
-msgstr "我希望這能給那些老鼠一個教訓."
+msgstr ""
 
 #: conversationlist_algangror.json:algangror_return_c4
 msgid "Say, you seem like a resourceful person. Would you be interested in helping me with yet another ... task?"
-msgstr "你看你來像是很聰明的人. 不知道你有沒有興趣幫我做...另一個任務?"
+msgstr ""
 
 #: conversationlist_algangror.json:algangror_return_c4:0
 msgid "Depends on the task."
-msgstr "要看是什麼任務."
+msgstr ""
 
 #: conversationlist_algangror.json:algangror_return_c4:2
 #: conversationlist_brimhaven.json:quiet_thief_1_0:2
 #: conversationlist_brimhaven.json:quiet_thief_0_0:1
 msgid "Not right now."
-msgstr "我現在沒空."
+msgstr ""
 
 #: conversationlist_algangror.json:algangror_remgard_1
 msgid "Oh, it's not far from here. Doesn't matter really."
-msgstr "哦,這離那裏不遠. 我真的無所謂."
+msgstr ""
 
 #: conversationlist_algangror.json:algangror_remgard_2
 msgid "You see, I used to live there. To make a long story short, there were some ... ahem ... misunderstandings."
-msgstr "你看,我曾經住在那裏. 為了長話短說,所以以前有一些...咳...誤解."
+msgstr ""
 
 #: conversationlist_algangror.json:algangror_remgard_3
 msgid "These days, I think they are looking for me, for some reason. Can't think of any reason why really. But I believe they are."
-msgstr "這些日子以來,我覺得他們在找我,為了某些原因,但我真的想不到. 但我相信他們正在找我."
+msgstr ""
 
 #: conversationlist_algangror.json:algangror_remgard_4
 msgid "Because of our previous ... misunderstanding, I think it's best they don't find out that I'm here."
-msgstr "因為以前的一些誤會,我想,別讓他們發現我在這裡是最好的."
+msgstr ""
 
 #: conversationlist_algangror.json:algangror_remgard_5
 msgid "Therefore, I ask of you not to reveal my whereabouts to them."
-msgstr "因此,請你別把我的我的行踪透露給他們."
+msgstr ""
 
 #: conversationlist_algangror.json:algangror_remgard_6
 msgid "Thank you. Under no circumstances should you tell them where I am. They will most likely try to persuade you into revealing my location."
-msgstr "謝謝. 無論在任何情況下,都別告訴他們. 他們很可能會試著說服你說出我在哪裡."
+msgstr ""
 
 #: conversationlist_algangror.json:algangror_remgard_7
 msgid "Under no circumstances."
-msgstr "無論任何狀況下."
+msgstr ""
 
 #: conversationlist_algangror.json:algangror_return_d1
 #: conversationlist_lodarfg.json:lodar_fg1_r1
 #: conversationlist_lodarfg.json:lodar_fg1_r2
 msgid "Oh, it's you again."
-msgstr "噢,又是你."
+msgstr ""
 
 #: conversationlist_algangror.json:algangror_return_d2
 msgid "You should probably leave before you tip something over that might ... ahem ... break. He he."
-msgstr "你應該盡速離開,在你翻倒某些東西...咳...或者弄壞某些東西之前. 呵呵."
+msgstr ""
 
 #: conversationlist_algangror.json:algangror_return_d2:0
 msgid "I was sent by Jhaeld to end whatever it is you are doing to the people of Remgard."
-msgstr "我被傑爾送到這來結束這一切,不管你是否是萊曼格的人."
+msgstr ""
 
 #: conversationlist_algangror.json:algangror_return_d2:1
 msgid "Watch your tongue, witch."
-msgstr "看好你的舌頭."
+msgstr ""
 
 #: conversationlist_algangror.json:algangror_return_d2:2
 msgid "You are right, I had better leave."
-msgstr "你說的對,我最好離開這裡."
+msgstr ""
 
 #: conversationlist_algangror.json:algangror_fight_3
 msgid "Jhaeld, the fool. He hides behind his guards and his stone walls. Such a pitiful man he is. Yes, I made those people disappear, but they were all worth it. I will have my revenge!"
-msgstr "傑爾那個傻瓜. 他躲在他的衛兵和他的石牆後面. 多麼可憐的一個人啊. 是啊,我讓那些人永遠消失了,但他們都要為我的復仇付出代價!"
+msgstr ""
 
 #: conversationlist_algangror.json:algangror_fight_4
 msgid "And you, what are you trying to accomplish by running his errands? How fortunate that you entered my house. He he."
-msgstr "而你,你想我成哪個跑腿任務? 你很幸運到了我的房子裡. 哈哈."
+msgstr ""
 
 #: conversationlist_algangror.json:algangror_fight_5
 msgid "Do you really think you can defeat *me*? Ha ha, this will be fun!"
-msgstr "你真的認為你能打敗我? 哈哈,聽起來真可笑!"
+msgstr ""
 
 #: conversationlist_algangror.json:algangror_told_2
 msgid "Say, despite my previous urging to you to keep my location a secret to the people of Remgard, I have this feeling that this trust has been broken. Please tell me it isn't so."
-msgstr "儘管我以前有請你不要透露我的位置給萊曼格,但我覺得這種信任應該已經被破壞了. 跟我說事情是不是我想的那樣."
+msgstr ""
 
 #: conversationlist_algangror.json:algangror_told_2:0
 msgid "Yes, I have told Jhaeld where you are."
-msgstr "是的,我已經跟傑爾說了你在這裡."
+msgstr ""
 
 #: conversationlist_algangror.json:algangror_told_2:1
 msgid "[Lie] No, I have not told anyone."
-msgstr "[REVIEW](騙他)不,我沒跟任何人說."
+msgstr ""
 
 #: conversationlist_algangror.json:algangror_told_3
 msgid "I can feel it in me."
-msgstr "我能感受到他."
+msgstr ""
 
 #: conversationlist_algangror.json:algangror_task2_d
 msgid "Very well, return to me once you are ready."
-msgstr "很好,完成任務之後回來告訴我."
+msgstr ""
 
 #: conversationlist_algangror.json:algangror_task2_1
 msgid "Now, I can't tell you what task I have in mind before I am confident that you will actually help me. Granted, you have already shown some level of respect for my need of discretion."
-msgstr "在我相信你能幫我之前,我不會告訴你任務的內容. 當然,你已經贏得我一部份的認同."
+msgstr ""
 
 #: conversationlist_algangror.json:algangror_task2_2
 msgid "Nor can I describe my reasoning behind this task before you are done with it."
-msgstr "在你完成任務之前,我不能告訴你為什麼我要這麼做."
+msgstr ""
 
 #: conversationlist_algangror.json:algangror_task2_3
 msgid "Rest assured, you will be sufficiently rewarded by helping me. In fact, you see this necklace here? It has some peculiar powers that many people seek."
-msgstr "放心吧! 我會給你很豐厚的回報. 事實上你有看見這條項鍊嗎? 它擁有一種很多人渴求的神秘力量."
+msgstr ""
 
 #: conversationlist_algangror.json:algangror_task2_4
 msgid "The world around you seems to move a bit slower when you wear it."
-msgstr "當你戴著它世界會走得比較慢."
+msgstr ""
 
 #: conversationlist_algangror.json:algangror_task2_4:0
 msgid "OK. I will help you with your task."
-msgstr "好吧. 我會幫你完成這項任務."
+msgstr ""
 
 #: conversationlist_algangror.json:algangror_task2_4:1
 #: conversationlist_algangror.json:algangror_task2_5:1
 msgid "OK, I'll help. I'm always interested in new items."
-msgstr "好,我來幫你. 我對新的事物很有興趣."
+msgstr ""
 
 #: conversationlist_algangror.json:algangror_task2_4:2
 msgid "It all depends on what you want me to do."
-msgstr "這取決於你想要我做什麼?"
+msgstr ""
 
 #: conversationlist_algangror.json:algangror_task2_4:3
 msgid "Something feels wrong here. I don't think I should help you."
-msgstr "這件事有點奇怪. 我不該幫你的忙."
+msgstr ""
 
 #: conversationlist_algangror.json:algangror_task2_5
 msgid "As I said, I cannot tell you what task I have in mind, or my reasoning behind it until you are done. I would need your total ... cooperation with this."
-msgstr "像我所說,我不能告訴你我腦海中的任務和我的原因直到你完成它. 我需要你全心全意的...配合我."
+msgstr ""
 
 #: conversationlist_algangror.json:algangror_task2_5:0
 msgid "OK. I will agree to help you with your task."
-msgstr "好吧. 我可以幫你和你的任務."
+msgstr ""
 
 #: conversationlist_algangror.json:algangror_task2_5:2
 msgid "No. I will not help you unless you tell me what you want me to do."
-msgstr "不. 除非你告訴我你想要我做什麼,不然我不會幫你的忙."
+msgstr ""
 
 #: conversationlist_algangror.json:algangror_task2_5:3
 msgid "No, I would never help someone like you."
-msgstr "不,我從不幫像你這樣的人的忙。"
+msgstr ""
 
 #: conversationlist_algangror.json:algangror_task2_n
 msgid "Ah yes. After all, you are just a child and I can understand that all of this must be too much for you. Hee hee."
-msgstr "恩好. 畢竟你只是個孩子而且這對你來說一定不能接受. 嘿嘿."
+msgstr ""
 
 #: conversationlist_algangror.json:algangror_task2_n2
 msgid "Can I at least urge you not to disclose my location to the people of Remgard?"
-msgstr "我能不能拜託你不要跟萊曼格的人說我的位置?"
+msgstr ""
 
 #: conversationlist_algangror.json:algangror_task2_n2:0
 msgid "I will keep your location secret. Goodbye."
-msgstr "我會守口如瓶的. 再見."
+msgstr ""
 
 #: conversationlist_algangror.json:algangror_task2_n2:1
 msgid "We'll see. Goodbye."
-msgstr "讓我們拭目以待. 再見."
+msgstr ""
 
 #: conversationlist_algangror.json:algangror_task2_n2:2
 msgid "Don't tell me what to do! Goodbye."
-msgstr "不用告訴我該怎麼做! 再見."
+msgstr ""
 
 #: conversationlist_algangror.json:algangror_task2_6
 msgid "Good, good."
-msgstr "很好,很好."
+msgstr ""
 
 #: conversationlist_algangror.json:algangror_task2_7
 msgid "You will tell no one of this task that I am about to give you, and you must be as discreet as possible."
-msgstr "你必須答應我不能跟任何人說這個任務,而且你一定要非常謹慎."
+msgstr ""
 
 #: conversationlist_algangror.json:algangror_task2_8
 msgid "I have in my possession five idols. Five idols with very unique ... qualities. What I want you to do is ... deliver these idols to various people in the town of Remgard."
-msgstr "我這裡有五個娃娃,他們有一些神奇的功能... 我希望你能把這些娃娃放在萊曼格一些人身上."
+msgstr ""
 
 #: conversationlist_algangror.json:algangror_task2_9
 msgid "You will place them by the beds of five particular persons, and you must hide it well so that the person does not find the idol itself."
-msgstr "你要將他們放在五個特定的人的床邊,而且要把他們藏好以免他們被發現."
+msgstr ""
 
 #: conversationlist_algangror.json:algangror_task2_10
 msgid "Remember, it is of utmost importance that you be as discreet as possible about this. The idols must not be found once you have placed them, and no one must notice that you place the idols."
-msgstr "記住這很重要,對於這件事你必須非常謹慎. 如果你對那個人下手,應該沒有人會注意到."
+msgstr ""
 
 #: conversationlist_algangror.json:algangror_task2_10:0
 #: conversationlist_stoutford.json:yolgen_rumblings10_2:1
 msgid "Go on."
-msgstr "繼續."
+msgstr ""
 
 #: conversationlist_algangror.json:algangror_task2_11
 msgid "So, the first person that I want you to visit is Jhaeld. I hear that he spends most of his time in the Remgard tavern these days."
-msgstr "首先,我希望你能去拜訪傑爾. 我聽說他在萊曼格住了一段時間."
+msgstr ""
 
 #: conversationlist_algangror.json:algangror_task2_12
 msgid "Secondly, I want you to visit one of the farmers named Larni. He lives with his wife Caeda here in Remgard in one of the northern cabins."
-msgstr "再來,我希望你能拜訪一位農夫,他叫做\"萊寧\". 他和他的妻子凱達住在萊曼格北方的小木屋裡."
+msgstr ""
 
 #: conversationlist_algangror.json:algangror_task2_13
 #: questlist_v0611_3.json:fiveidols:33
 msgid "The third person is Arnal the weapon-smith, that lives in the northwest of Remgard."
-msgstr "第三位是鐵匠阿爾諾,他住在萊曼格的西北方."
+msgstr ""
 
 #: conversationlist_algangror.json:algangror_task2_14
 msgid "Fourth is Emerei, that can probably be found in his house to the southeast of Remgard."
-msgstr "第四位是艾瑪瑞,也許在萊曼格的東南方能找到他的家."
+msgstr ""
 
 #: conversationlist_algangror.json:algangror_task2_15
 msgid "The fifth person is the farmer Carthe. Carthe lives on the eastern shore of Remgard, near the tavern."
-msgstr "最後一位是農夫卡爾斯. 卡爾斯住在萊曼格東岸,離酒館很近."
+msgstr ""
 
 #: conversationlist_algangror.json:algangror_task2_16
 msgid "Once you have placed these five idols by the beds of these five people, return to me as soon as possible."
-msgstr "一旦你在這五個的床上放上這五個娃娃,立刻回來找我."
+msgstr ""
 
 #: conversationlist_algangror.json:algangror_task2_17
 msgid "Again, I cannot stress this enough - you must not tell anyone about these idols, and you must not be seen while placing them."
-msgstr "我再強調一次,這很重要. 你不能跟別人說娃娃的事,而且你再放置娃娃的時候不能被任何人看到."
+msgstr ""
 
 #: conversationlist_algangror.json:algangror_task2_17:0
 #: conversationlist_stoutford_combined.json:stoutford_widow_roots4045_3:1
 msgid "I understand."
-msgstr "我懂了."
+msgstr ""
 
 #: conversationlist_algangror.json:algangror_task2_18
 msgid "Here are the idols."
-msgstr "這些是娃娃."
+msgstr ""
 
 #: conversationlist_algangror.json:algangror_task2_18:0
 msgid "I will be back shortly."
-msgstr "我很快就回來."
+msgstr ""
 
 #: conversationlist_algangror.json:algangror_task2_18:1
 msgid "This should be easy."
-msgstr "這應該不難."
+msgstr ""
 
 #: conversationlist_algangror.json:algangror_task2_19
 msgid "Now go, and please hurry, we might not have much time."
-msgstr "現在你可以出發了,我們沒有太多時間."
+msgstr ""
 
 #: conversationlist_algangror.json:algangror_task2_ret1
 msgid "Tell me, how goes the task of placing the idols?"
-msgstr "告訴我,你放娃娃的任務做得如何了?"
+msgstr ""
 
 #: conversationlist_algangror.json:algangror_task2_ret1:0
 msgid "Can you repeat what you wanted me to do?"
-msgstr "你能夠再說一次我該怎麼做嗎?"
+msgstr ""
 
 #: conversationlist_algangror.json:algangror_task2_ret1:1
 msgid "I am still trying to find everyone."
-msgstr "我試著找到每個人."
+msgstr ""
 
 #: conversationlist_algangror.json:algangror_task2_ret1:2
 msgid "It is done."
-msgstr "結束了."
+msgstr ""
 
 #: conversationlist_algangror.json:algangror_task2_ret1:3
 msgid "I won't do your stupid task."
-msgstr "我才不會做你的愚蠢任務."
+msgstr ""
 
 #: conversationlist_algangror.json:algangror_task2_ret1:4
 msgid "I will not help you with your task."
-msgstr "我不會幫你完成這項任務的."
+msgstr ""
 
 #: conversationlist_algangror.json:algangror_task2_ret2
 msgid "Please hurry, we might not have much time."
-msgstr "請盡快,我們的時間可能不太夠."
+msgstr ""
 
 #: conversationlist_algangror.json:algangror_task2_done1
 msgid "Excellent. Maybe, now I can rest easily. Thank you so much for helping me."
-msgstr "很好. 現在我能好好地休息了. 太感謝你的幫忙了!"
+msgstr ""
 
 #: conversationlist_algangror.json:algangror_task2_done2
 msgid "Did anyone see you or where you placed the idols?"
-msgstr "有沒有任何人看到你或是你在那裡放了娃娃?"
+msgstr ""
 
 #: conversationlist_algangror.json:algangror_task2_done2:0
 msgid "No, I hid the idols as you instructed."
-msgstr "沒有,我按照你的指示把娃娃藏好了."
+msgstr ""
 
 #: conversationlist_algangror.json:algangror_task2_done3
 msgid "Good. Thank you again for helping me."
-msgstr "很好. 再次感謝你的幫忙."
+msgstr ""
 
 #: conversationlist_algangror.json:algangror_story
 msgid "Let me tell you my story."
-msgstr "讓我跟你說說我的故事."
+msgstr ""
 
 #: conversationlist_algangror.json:algangror_story:1
 msgid "Can we just skip to the end?"
-msgstr "我們能跳過這個結局嗎?"
+msgstr ""
 
 #: conversationlist_algangror.json:algangror_story1
 msgid "You see, I used to live in the city of Remgard. The times were good, and the city prospered."
-msgstr "我曾經住在萊曼格市. 那段時光非常棒,那裏非常的熱鬧."
+msgstr ""
 
 #: conversationlist_algangror.json:algangror_story2
 msgid "Our crops grew well, and some people had very fortunate trading agreements with other cities, making the life for most of us living in Remgard very easy."
-msgstr "我們的農作物長得很好,有些人很幸運能和其他村莊做一些交易. 在萊曼格的人生活都非常輕鬆."
+msgstr ""
 
 #: conversationlist_algangror.json:algangror_story3
 msgid "I even sold some of the baskets that I used to make to a wealthy merchant that visited us from Nor City."
-msgstr "我甚至賣了一些我曾經用過的籃子給從諾爾市來的商人."
+msgstr ""
 
 #: conversationlist_algangror.json:algangror_story4
 msgid "However, even the easy life gets boring after a while. I believe it is in our nature to strive for new and better things, to free us from the boredom of day-to-day life."
-msgstr "但是,單純的生活變得越來越無聊. 我相信不斷追求更新事物是我們的天性,它可以把我們從日復一日的單調生活中解放出來."
+msgstr ""
 
 #: conversationlist_algangror.json:algangror_story5
 msgid "I wanted to learn more of things that I knew nothing about, and wanted to explore things I had only read of in books before."
-msgstr "我想要學更多我不知道的事情,而且想要印證我以前在書本上所學到的東西."
+msgstr ""
 
 #: conversationlist_algangror.json:algangror_story6
 msgid "So I went to Nor City myself, and visited many ... interesting people and ... dark corners."
-msgstr "所以我自己到了諾爾市,拜訪了很多...有趣的人們和一些...黑暗的角落."
+msgstr ""
 
 #: conversationlist_algangror.json:algangror_story7
 msgid "Naturally, I was thrilled of the knowledge I gained from the experience, and from what I learned while there."
-msgstr "當然,我很高興我從許多經驗中得到了新的知識,還有我在那裡所學到的教訓."
+msgstr ""
 
 #: conversationlist_algangror.json:algangror_story7:0
 #: conversationlist_algangror.json:algangror_story11:0
 msgid "What then?"
-msgstr "後來呢?"
+msgstr ""
 
 #: conversationlist_algangror.json:algangror_story8
 msgid "As I got back home, I wanted to continue practicing what I had observed and learned while in Nor City."
-msgstr "當我回到家,我想要繼續練習我在諾爾市所觀察到和學習到的東西."
+msgstr ""
 
 #: conversationlist_algangror.json:algangror_story9
 msgid "You could say I got obsessed with learning more. I guess the others living in Remgard did not ... share my enthusiasm. Some of them even questioned the fact that I wanted to learn more."
-msgstr "你也許會說我太過癡迷於學習. 我猜萊曼格市的人們不可能了解我的追求. 他們甚至會質疑為何我想學習更多."
+msgstr ""
 
 #: conversationlist_algangror.json:algangror_story10
 msgid "So I told myself that others would not hinder me in my curiosity to better myself."
-msgstr "所以我告訴自己,別人不會妨礙我把我自己變得更強來滿足我自己的好奇."
+msgstr ""
 
 #: conversationlist_algangror.json:algangror_story11
 msgid "Those books that I bought from the Blackmarrow residence in Nor City - I must have read them all perhaps five times over. This was something completely new to me, and at the same time very exciting."
-msgstr "我從黑梅洛居住的諾爾市買了那些書. 而且我把他們全都讀了五遍以上. 那時我非常興奮. 對我而言,那是一個全新的領域."
+msgstr ""
 
 #: conversationlist_algangror.json:algangror_story12
 msgid "For some reason, the others in Remgard started giving me strange looks, and I could hear the whispers behind my back."
-msgstr "因為某些原因,萊曼格的人們開始用異樣的眼光看我,並在我的背後竊竊私語."
+msgstr ""
 
 #: conversationlist_algangror.json:algangror_story13
 msgid "I was even barred from the tavern. 'People come here for a good time, and we don't want people like you here ruining that' they said. What fools they are."
-msgstr "那時我被酒館禁止進入. 他們說:\"人們來這裡是為了找樂子,他們不希望像你這樣的人來破壞這一切\". 你看他們多麼愚蠢啊."
+msgstr ""
 
 #: conversationlist_algangror.json:algangror_story14
 msgid "I heard one woman whispering to her boy, 'Don't look at her, she'll turn you to stone!'. Others just turned the other way when they met me."
-msgstr "我聽到一個女人跟他的小孩說:\"別看她,她會把你變成石頭!\". 其他村民遇到我也都不歡迎我."
+msgstr ""
 
 #: conversationlist_algangror.json:algangror_story15
 msgid "What fools they are."
-msgstr "他們是多麼的愚蠢啊."
+msgstr ""
 
 #: conversationlist_algangror.json:algangror_story15:0
 msgid "So what happened?"
-msgstr "所以後來發生了什麼?"
+msgstr ""
 
 #: conversationlist_algangror.json:algangror_story16
 msgid "One day, Jhaeld showed up at my doorstep with a group of guards."
-msgstr "有一天. 傑爾帶著一群衛兵出現在我家門前."
+msgstr ""
 
 #: conversationlist_algangror.json:algangror_story17
 msgid "The people of Remgard had decided that I could not stay there anymore, he said. The things I did were causing other people harm, he said."
-msgstr "萊曼格的人民決定不讓我繼續住在那裡. 捷爾說我確實帶給了居民們不安."
+msgstr ""
 
 #: conversationlist_algangror.json:algangror_story18
 msgid "What had I done, I asked myself? I had never hurt anyone, much less affected anyone with my ... experiments. Am I not allowed to do what I wish?"
-msgstr "我問我自己,我做過什麼事. 我從未傷害過任何人,更沒有因為我的...實驗影響到其他人. 難道我不被允許做我想做的事嗎?"
+msgstr ""
 
 #: conversationlist_algangror.json:algangror_story19
 msgid "I had little chance to argue, however. The guards led me out of the city. They did not even let me gather my things. All my books, all my notes and all my findings - gone. I lost everything."
-msgstr "不過,我沒有機會爭辯. 衛兵馬上把我帶出城,甚至沒有讓我收拾我的東西. 我全部的書.筆記和我的發現全部都沒了. 我失去了所有東西."
+msgstr ""
 
 #: conversationlist_algangror.json:algangror_story20
 msgid "All this happened several seasons ago. I knew I had to get revenge for what they did to me."
-msgstr "幾個月之前,我決定報仇. 為了那些居民對我所做的事."
+msgstr ""
 
 #: conversationlist_algangror.json:algangror_story21
 msgid "Oh, how I despise them all. The people that gave me those looks, the people that whispered behind my back, and most of all that fool Jhaeld."
-msgstr "喔,我討厭他們所有人. 那些在背後討論我和用異樣眼光看我的人,尤其是那個捷爾."
+msgstr ""
 
 #: conversationlist_algangror.json:algangror_story22
 msgid "So, I decided to extend my ... experiments ... to larger things. To people, to living things. This is the perfect opportunity to learn even more than what is in the books."
-msgstr "所以我決定擴大我的實驗...為了更遠大的計畫. 為了人們.為了生存,這是一個很好的機會來學習書本中學不到的東西."
+msgstr ""
 
 #: conversationlist_algangror.json:algangror_story23
 msgid "To think that I could do it while at the same time get revenge on those despicable people - it's an excellent plan, if I may say so myself. He he."
-msgstr "我認為我可以做到這件事,並同時向那些卑鄙的小人報復. 這是一個很好的計畫,如果要我形容它. 哈哈哈哈哈."
+msgstr ""
 
 #: conversationlist_algangror.json:algangror_story23:0
 msgid "So, what happened to all those people that have gone missing?"
-msgstr "所以,那些失蹤的人們發生了什麼事?"
+msgstr ""
 
 #: conversationlist_algangror.json:algangror_story24
 msgid "I lured them here. Once I managed to trap them, I placed a curse on them that, in theory, should have only made them unable to speak."
-msgstr "我把他們引誘來這裡. 把他們全部抓起來並下了詛咒. 理論上,詛咒應該只會讓們不能說話."
+msgstr ""
 
 #: conversationlist_algangror.json:algangror_story25
 msgid "Maybe I haven't understood everything correctly from the books that I have read, since instead of making them unable to speak, they were all turned into rats instead."
-msgstr "也許我沒有真正讀懂那本書. 我施了不能說話的詛咒但是他們卻通通變成了老鼠."
+msgstr ""
 
 #: conversationlist_algangror.json:algangror_story26
 msgid "Practice makes perfect, I suppose. Ha ha."
-msgstr "熟能生巧吧,我想. 哈哈哈哈哈."
+msgstr ""
 
 #: conversationlist_algangror.json:algangror_story26:0
 msgid "Wait, does this mean that those rats I killed for you were..."
-msgstr "等等,這是不是代表那些我殺的老鼠是......"
+msgstr ""
 
 #: conversationlist_algangror.json:algangror_story27
 msgid "Oh yes. With your help, they are now one less problem to deal with, so to speak. He he."
-msgstr "喔,是啊. 你幫了他們一個大忙,他們現在比以前更輕鬆了,可以這麼說. 呵呵."
+msgstr ""
 
 #: conversationlist_algangror.json:algangror_story28
 msgid "So, that's my story. Thank you for listening to it."
-msgstr "所以,這是我的故事. 感謝你願意聆聽."
+msgstr ""
 
 #: conversationlist_algangror.json:algangror_story28:0
 msgid "I understand, and I agree with your actions."
-msgstr "我懂. 我同意你採取行動."
+msgstr ""
 
 #: conversationlist_algangror.json:algangror_story28:1
 msgid "I do not fully agree with your actions."
-msgstr "我沒有允許你採取行動!"
+msgstr ""
 
 #: conversationlist_algangror.json:algangror_story28:2
 msgid "What you did could never be justified!"
-msgstr "你不該那樣做!"
+msgstr ""
 
 #: conversationlist_algangror.json:algangror_story29a
 msgid "Thank you. It is good to know there are more people interested in learning more."
-msgstr "感謝你. 知道這裡有更多的人民想學習,這真的很棒."
+msgstr ""
 
 #: conversationlist_algangror.json:algangror_story29b
 msgid "I never expected you to understand it. No one else seems to understand me either. Oh well, your loss, I guess."
-msgstr "我從未奢望你了解這一切. 沒有人能夠了解我. 喔,我猜那是他們的損失."
+msgstr ""
 
 #: conversationlist_algangror.json:algangror_cmp1
 msgid "So, for helping me with the idols, I believe I promised you my enchanted necklace, 'Marrowtaint'."
-msgstr "因此,只要你幫我的忙,我會給你我心愛的項鍊,\"馬羅坦特\"."
+msgstr ""
 
 #: conversationlist_algangror.json:algangror_cmp2
 msgid "Wear it well, my friend. Do not let others get hold of the power that Marrowtaint provides."
-msgstr "戴好它,我的朋友. 不要讓別人得到馬羅坦特提供的力量."
+msgstr ""
 
 #: conversationlist_algangror.json:algangror_cmp3
 #: conversationlist_talion_2.json:talion_bone_1:0
@@ -13447,19 +13453,19 @@ msgstr "戴好它,我的朋友. 不要讓別人得到馬羅坦特提供的力量
 #: conversationlist_halvor_surprise.json:halvor_crossglen_7:1
 #: conversationlist_gison.json:gison_p1_20_warmup_1
 msgid "Here you go."
-msgstr "幹的好."
+msgstr ""
 
 #: conversationlist_algangror.json:algangror_cmp3:1
 msgid "That's all? One lousy necklace for all this trouble I went through?"
-msgstr "就這樣? 我經歷了許多麻煩,卻只得到一個破爛項鍊?"
+msgstr ""
 
 #: conversationlist_algangror.json:algangror_cmp4
 msgid "Do not underestimate it, my friend."
-msgstr "不要小看它,我的朋友."
+msgstr ""
 
 #: conversationlist_algangror.json:algangror_cmp5
 msgid "Again, thank you for helping me. You will always be welcome here, friend."
-msgstr "再次感謝你對我的幫助. 你永遠會受這裡歡迎,朋友."
+msgstr ""
 
 #: conversationlist_remgard_bridgeguard.json:remgardb_1
 msgid "Halt! No one is allowed to enter or exit Remgard."
@@ -16960,7 +16966,7 @@ msgstr ""
 
 #: conversationlist_arghes.json:arghes_1
 msgid "You will find no business here, child."
-msgstr "你在這裡找不到生意的，孩子。"
+msgstr ""
 
 #: conversationlist_arghes.json:arghes_2
 msgid "How interesting. The child from Fallhaven, here in Remgard?"
@@ -16972,7 +16978,7 @@ msgstr ""
 
 #: conversationlist_arghes.json:arghes_2:2
 msgid "How do you know where I am from?"
-msgstr "你怎麼知道我是從哪裡來的。"
+msgstr ""
 
 #: conversationlist_arghes.json:arghes_3a
 msgid "Is that so? Hmm, most interesting. It does not change anything, however."
@@ -17826,45 +17832,45 @@ msgstr ""
 
 #: conversationlist_agthor.json:agthor0
 msgid "Hello there. Please move along. These things are property of Feygard, and you have no business here."
-msgstr "你好,請別亂動. 這些東西都是費格爾的財產,你在這裡沒有生意可以做."
+msgstr ""
 
 #: conversationlist_agthor.json:agthor_y1
 msgid "Hey, you're that kid! That kid that we've been hearing about. It's great to finally get a face on the stories we've heard."
-msgstr "嘿,你是那個小子! 我們已經聽到有關你的消息. 知道故事的真相真得很棒."
+msgstr ""
 
 #: conversationlist_agthor.json:agthor_y2
 msgid "Please, anything I can help you with?"
-msgstr "拜託,有沒有任何事我可以幫你?"
+msgstr ""
 
 #: conversationlist_agthor.json:agthor_y2:0
 msgid "Care to trade some items?"
-msgstr "介意做一點交易嗎?"
+msgstr ""
 
 #: conversationlist_agthor.json:agthor_y3
 msgid "Sorry, can't help you there. You're the only kid I've seen running along here in a long time."
-msgstr "對不起,這裡幫不了你. 你是這麼久以來我第一個看見自己找到這裡的孩子."
+msgstr ""
 
 #: conversationlist_agthor.json:agthor_y4
 msgid "Sure thing. Here's what I've got."
-msgstr "當然,這是我得到的."
+msgstr ""
 
 #: conversationlist_agthor.json:agthor_guard0
 msgid "Talk to Agthor."
-msgstr "告訴艾德爾."
+msgstr ""
 
 #: conversationlist_agthor.json:agthor_guard0:2
 msgid "Are you from Feygard?"
-msgstr "你是從費格爾來的?"
+msgstr ""
 
 #: conversationlist_agthor.json:agthor_guard0:3
 msgid "Where can I get some of that nice armor that you're wearing?"
-msgstr "我可以從哪裡得到像你身上穿的一樣那麼棒的鎧甲?"
+msgstr ""
 
 #: conversationlist_agthor.json:agthor_guard0_1
 msgid ""
 "Agthor. Talk to him.\n"
 "[Points at Agthor]"
-msgstr "[REVIEW]去跟艾德爾說. (指著艾德爾)"
+msgstr ""
 
 #: conversationlist_aulowenn.json:aulowenn_atk0
 msgid "For Feygard!"
@@ -45205,7 +45211,7 @@ msgstr ""
 
 #: monsterlist_crossglen_npcs.json:leonid
 msgid "Leonid"
-msgstr "雷奧尼德"
+msgstr ""
 
 #: monsterlist_crossglen_npcs.json:farmer
 #: monsterlist_v0610_npcs1.json:loneford_farmer0
@@ -45669,7 +45675,7 @@ msgstr ""
 
 #: monsterlist_v068_npcs.json:ambelie
 msgid "Ambelie"
-msgstr "安貝莉"
+msgstr ""
 
 #: monsterlist_v068_npcs.json:feygard_patrol
 msgid "Feygard patrol"
@@ -50782,7 +50788,7 @@ msgstr ""
 
 #: questlist_v070_misc.json:antifoodp:40
 msgid "I can bring him more ingredients if I want him to create more antidote potions in the future."
-msgstr "如果以後我需要他製作更多的解毒劑的話我會給他更多的素材。"
+msgstr ""
 
 #: questlist_shortcut_lodar.json:shortcut_lodar
 msgid "The way out is through"
@@ -52897,7 +52903,7 @@ msgstr ""
 
 #: worldmap.xml:world1:crossglen
 msgid "Crossglen"
-msgstr "橫谷"
+msgstr ""
 
 #: worldmap.xml:world1:crossroads
 msgid "Crossroads Guardhouse"
