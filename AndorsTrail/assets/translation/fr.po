@@ -4,8 +4,8 @@ msgstr ""
 "Project-Id-Version: Andors Trail\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-11-10 11:48+0000\n"
-"PO-Revision-Date: 2021-08-12 16:37+0000\n"
-"Last-Translator: Alexandre Jigue <alexjge.aj@gmail.com>\n"
+"PO-Revision-Date: 2021-09-27 09:33+0000\n"
+"Last-Translator: Rhenaud Dubois <rhen33390@gmail.com>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/andors-trail/"
 "game-content/fr/>\n"
 "Language: fr\n"
@@ -13,7 +13,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.8-dev\n"
+"X-Generator: Weblate 4.9-dev\n"
 "X-Launchpad-Export-Date: 2015-11-02 12:28+0000\n"
 
 #: [none]
@@ -3657,7 +3657,6 @@ msgstr ""
 "prendre une petite pause."
 
 #: conversationlist_fallhaven_south.json:alaun_return10
-#, fuzzy
 msgid ""
 "Here is the money I promised you.\n"
 "\n"
@@ -3667,7 +3666,7 @@ msgid ""
 msgstr ""
 "Voilà l'argent que je t'ai promis.\n"
 "\n"
-"Et en bonus, je vais te donner de ce pain.\n"
+"Et en bonus, je vais te donner un morceau de ce pain.\n"
 "\n"
 "La prochaine fois, j'achèterai la soupe de Nimael."
 
@@ -21887,17 +21886,15 @@ msgstr ""
 "m'a demandé de lui trouver un remède."
 
 #: conversationlist_fallhaven_potions.json:fallhaven_potions:5
-#, fuzzy
 msgid "Here are four samples of mushroom spores. Can you help Bogsten now?"
 msgstr ""
-"Il y a ici 4 échantillons de spore de champignon. Peux-tu aider Bogsten "
+"Il y a ici 4 échantillons de spores de champignon. Peux-tu aider Bogsten "
 "maintenant ?"
 
 #: conversationlist_fallhaven_potions.json:fallhaven_potions:6
-#, fuzzy
 msgid "Here's a sample of the mushroom spores. Can you help Bogsten now?"
 msgstr ""
-"Voici un échantillon de spore de champignon. Peux-tu aider Bogsten "
+"Voici un échantillon de spores de champignon. Peux-tu aider Bogsten "
 "maintenant ?"
 
 #: conversationlist_fallhaven_potions.json:fallhaven_potions:7
@@ -22023,9 +22020,8 @@ msgid "Stop talking. Just give me the cure."
 msgstr "Arrête de parler. Donne-moi juste le remède."
 
 #: conversationlist_fallhaven_potions.json:fungi_panic_potioner_12
-#, fuzzy
 msgid "[muttering] ... grumble ... cheeky kids, grumble ..."
-msgstr "[marmonne]… *grogne*… gamins effrontés…, * grogne*…"
+msgstr "[marmonne]… *grogne*… gamins effrontés, *grogne*…"
 
 #: conversationlist_fallhaven_potions.json:fungi_panic_potioner_20
 msgid "And now I have to rescue him again. Well, what did he do to himself this time?"
@@ -22062,23 +22058,29 @@ msgstr "J'en ai assez entendu… Donne moi juste le remède, s'il te plaît."
 #: conversationlist_fallhaven_potions.json:fungi_panic_potioner_26
 msgid "Next time he ate something interesting. I always had told him not to try all these red and white mushrooms."
 msgstr ""
+"La prochaine fois il a mangé quelque chose d'intéressant. Je lui ai toujours "
+"dit de ne pas essayer tous ces champignons rouges et blancs."
 
 #: conversationlist_fallhaven_potions.json:fungi_panic_potioner_28
 msgid "Then he wanted some drink for an annoying 'friend' who always came and disturbed him."
 msgstr ""
+"Ensuite il voulait une boisson pour un 'ami' ennuyeux qui venait toujours et "
+"qui le dérangeait."
 
 #: conversationlist_fallhaven_potions.json:fungi_panic_potioner_28:0
 #: conversationlist_fungi_panic.json:gison_bottle_8_1:0
 msgid "Nice."
-msgstr ""
+msgstr "Bien."
 
 #: conversationlist_fallhaven_potions.json:fungi_panic_potioner_28:1
 msgid "Enough. Just give me the cure, please."
-msgstr ""
+msgstr "Ça suffit. Donne-moi simplement le remède, s'il te plaît."
 
 #: conversationlist_fallhaven_potions.json:fungi_panic_potioner_30
 msgid "He came regularly for the snake antidote. Trying to tame snakes wasn't successful obviously..."
 msgstr ""
+"Il venait souvent pour le remède de serpent. Il faut croire que le dressage "
+"de serpent ne marchait pas trop..."
 
 #: conversationlist_fallhaven_potions.json:fungi_panic_potioner_30:0
 msgid "I can imagine."
@@ -22087,14 +22089,18 @@ msgstr ""
 #: conversationlist_fallhaven_potions.json:fungi_panic_potioner_32
 msgid "He even tried to get my recipe for this antidote. But of course I couldn't reveal it to him."
 msgstr ""
+"Il a même essayé de récupérer ma recette pour cet antidote. Mais bien sûr je "
+"ne pouvais pas lui révéler."
 
 #: conversationlist_fallhaven_potions.json:fungi_panic_potioner_32:0
 msgid "Yes, such things should be done by learned potion makers."
 msgstr ""
+"Oui, ce genre de choses doit être fait par des créateurs de potion instruits."
 
 #: conversationlist_fallhaven_potions.json:fungi_panic_potioner_34
 msgid "Nonsense. He was my best customer. I want to keep it like this."
 msgstr ""
+"N'importe quoi. C'était mon meilleur client. Je veux que ça reste le cas."
 
 #: conversationlist_fallhaven_potions.json:fungi_panic_potioner_34:0
 msgid "Oh. Sure."
@@ -22102,7 +22108,7 @@ msgstr ""
 
 #: conversationlist_fallhaven_potions.json:fungi_panic_potioner_40
 msgid "So you need a cure against giant mushrooms."
-msgstr ""
+msgstr "Donc vous avez besoin d'un remède contre les champignons géants."
 
 #: conversationlist_fallhaven_potions.json:fungi_panic_potioner_40:0
 #: conversationlist_graveyard1.json:graveyardtraveler_10:0
@@ -22121,11 +22127,14 @@ msgstr "Oui."
 
 #: conversationlist_fallhaven_potions.json:fungi_panic_potioner_40:1
 msgid "Yes. Here are some samples of the mushroom spores."
-msgstr ""
+msgstr "Oui. Voici quelques échantillons de spores de champignon."
 
 #: conversationlist_fallhaven_potions.json:fungi_panic_potioner_42
 msgid "There are lots of different mushrooms. A spore infection can be nasty, deadly even. Unfortunately the cure for one kind kills you, when you are afflicted by another kind."
 msgstr ""
+"Il y a beaucoup de champignons différents. Une infection de spore peut être "
+"grave, même mortelle. Cependant un remède pour un type vous tue, si vous "
+"êtes affecté par un autre type."
 
 #: conversationlist_fallhaven_potions.json:fungi_panic_potioner_42:0
 msgid "Oh dear. So Bogsten can't be helped?"
@@ -22134,6 +22143,8 @@ msgstr ""
 #: conversationlist_fallhaven_potions.json:fungi_panic_potioner_44
 msgid "No need to despair. To make a cure, I will need a sample of these spores. Can you get some?"
 msgstr ""
+"Pas besoin de désespérer. Pour créer un remède, je vais avoir besoin d'un "
+"échantillon de ces spores. Pouvez-vous en récupérer quelques-uns ?"
 
 #: conversationlist_fallhaven_potions.json:fungi_panic_potioner_44:0
 msgid "I could try."
@@ -22142,30 +22153,39 @@ msgstr ""
 #: conversationlist_fallhaven_potions.json:fungi_panic_potioner_46
 msgid "Good. Bring me four sample spores of the mushroom, then I will be able to choose the right antidote."
 msgstr ""
+"Bien. Apportez-moi quatre échantillons du champignon, et je serais capable "
+"de choisir le bon antidote."
 
 #: conversationlist_fallhaven_potions.json:fungi_panic_potioner_46:0
 msgid "I will be back with the spores in an instant."
-msgstr ""
+msgstr "Je serais de retour avec les spores dans un instant."
 
 #: conversationlist_fallhaven_potions.json:fungi_panic_potioner_46:1
 msgid "Here are four samples of the mushroom spores."
-msgstr ""
+msgstr "Voici quatre échantillons de spores de champignon."
 
 #: conversationlist_fallhaven_potions.json:fungi_panic_potioner_50
 msgid "Let me see... Ah, yes. A fungus maximus, also known as 'Giant mushroom'. Its wounds are deadly if not cured properly."
 msgstr ""
+"Laissez-moi voir ça... Ah, oui. Un fongus maximus, aussi appelé 'Champignon "
+"géant'. Ses blessures sont mortelles si elles ne sont pas traitées "
+"correctement."
 
 #: conversationlist_fallhaven_potions.json:fungi_panic_potioner_50a
 msgid "A sample? This won't do. I'll need at least four samples for my work."
 msgstr ""
+"Un échantillon ? Ce n'est pas bon. Je vais avoir besoin d'au moins quatre "
+"échantillons pour mon travail."
 
 #: conversationlist_fallhaven_potions.json:fungi_panic_potioner_50a:0
 msgid "I see. I'll be back with more in just a moment."
-msgstr ""
+msgstr "Je vois. Je vais revenir avec plus dans un moment."
 
 #: conversationlist_fallhaven_potions.json:fungi_panic_potioner_52
 msgid "I'm glad that I have the right potion for it. You can have it for only 150 gold coins."
 msgstr ""
+"Je suis soulagé d'avoir la bonne potion pour ça. Vous pouvez l'avoir pour "
+"seulement 150 pièces d'or."
 
 #: conversationlist_fallhaven_potions.json:fungi_panic_potioner_52:0
 msgid "That much!"
@@ -22180,7 +22200,7 @@ msgstr ""
 
 #: conversationlist_fallhaven_potions.json:fungi_panic_potioner_54
 msgid "Take it or leave it. Poor Bogsten ..."
-msgstr ""
+msgstr "À prendre ou à laisser. Pauvre Bogsten..."
 
 #: conversationlist_fallhaven_potions.json:fungi_panic_potioner_54:0
 #: conversationlist_arulir_mountain.json:tjure_30_90:1
@@ -22189,7 +22209,7 @@ msgstr "Laissez tomber."
 
 #: conversationlist_fallhaven_potions.json:fungi_panic_potioner_56
 msgid "I had always liked him ..."
-msgstr ""
+msgstr "Je l'ai toujours apprécié..."
 
 #: conversationlist_fallhaven_potions.json:fungi_panic_potioner_58
 #: conversationlist_brimhaven2.json:brv_school_history_30:0
@@ -22212,31 +22232,33 @@ msgstr ""
 
 #: conversationlist_fallhaven_potions.json:fungi_panic_potioner_100:0
 msgid "Hey! Aren't you going to give me something interesting for it?"
-msgstr ""
+msgstr "Hé ! Tu vas pas me donner quelque chose d'intéressant pour ça ?"
 
 #: conversationlist_fallhaven_potions.json:fungi_panic_potioner_110
 msgid "I could, yes. But I won't."
-msgstr ""
+msgstr "Je pourrais faire ça, oui. Mais je ne vais pas le faire."
 
 #: conversationlist_fallhaven_potions.json:fungi_panic_potioner_110:0
 msgid "That's robbery! I won't let you get away with it!"
-msgstr ""
+msgstr "C'est du vol ! Je ne vais pas te laisser t'enfuir en tout impunité !"
 
 #: conversationlist_fallhaven_potions.json:fungi_panic_potioner_112
 msgid "Now leave my shop, unless you have some other business. I have work to do."
 msgstr ""
+"Maintenant veuillez quitter ma boutique, à moins d'avoir d'autres affaires. "
+"J'ai du travail à faire."
 
 #: conversationlist_fallhaven_potions.json:fungi_panic_potioner_112:0
 msgid "Forget it, let's talk about something else."
-msgstr ""
+msgstr "Oubliez cela, parlons d'autre chose."
 
 #: conversationlist_fallhaven_potions.json:fungi_panic_potioner_112:1
 msgid "You can't do that to me! I'll get the guards!"
-msgstr ""
+msgstr "Vous ne pouvez pas me faire ça ! Je vais appeler les gardes !"
 
 #: conversationlist_fallhaven_potions.json:fungi_panic_potioner_120
 msgid "Calm down. Shall I sell a sedative to you?"
-msgstr ""
+msgstr "Calmez-vous. Puis-je vous suggérer un sédatif ?"
 
 #: conversationlist_fallhaven_potions.json:fungi_panic_potioner_120:0
 msgid "NO! I DON'T NEED ANY SEDATIVE!!"
@@ -24587,6 +24609,8 @@ msgstr "Oui !"
 #: conversationlist_graveyard1.json:waterwaycavex_3
 msgid "You decide to record this discovery in your father's book of achievements."
 msgstr ""
+"Vous décidez d'enregistrer cette découverte dans le livre d'exploits de "
+"votre père."
 
 #: conversationlist_guynmart.json:guynmart_haystack
 msgid "This is a haystack."
@@ -31194,6 +31218,8 @@ msgstr "Maintenant tu as mal à la tête. Tu devrais vraiment arrêter d'essayer
 #: conversationlist_bugfix_0_7_4.json:lookout_up_6
 msgid "You decide to write about this wondrous sight in your father's book of achievements."
 msgstr ""
+"Vous décidez d'écrire à propos de cette vue extraordinaire dans le livre "
+"d'exploits de votre père."
 
 #: conversationlist_omicronrg9.json:umar_guild_1
 msgid "I see .... So you want to get involved in our Guild?"
@@ -36024,6 +36050,8 @@ msgstr "Vous avez été honnête avec moi donc je ne vous tuerai pas, mais je va
 #: conversationlist_brimhaven.json:brv_richman_20:1
 msgid "I stopped the two brothers from destroying the dam. Who else could have done it?"
 msgstr ""
+"J'ai empêché les deux frères de détruire le barrage. Qui d'autre aurait pu "
+"le faire ?"
 
 #: conversationlist_brimhaven.json:brv_flood_0_7
 msgid "This seems to be the weak spot of the dam the brothers were talking about. But with your currently equipped gear you can't hack apart the wood effectively without drawing too much attention."
@@ -37270,11 +37298,11 @@ msgstr "(Je ferais mieux de laisser ce Basilic.)"
 
 #: conversationlist_brimhaven.json:brv_flood_key_set3_20
 msgid "You have made it!"
-msgstr ""
+msgstr "Vous l'avez fait !"
 
 #: conversationlist_brimhaven.json:brv_flood_key_set3_20:0
 msgid "Phew, I thought that would be my end!"
-msgstr ""
+msgstr "Ouf, je pensais que ce serait ma fin !"
 
 #: conversationlist_brimhaven.json:brv_brothers_another_axe_10
 msgid "So lucky! Another small hand axe lies here."
