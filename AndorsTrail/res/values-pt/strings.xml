@@ -21,7 +21,7 @@
     <string name="dialog_loading_failed_incorrectversion">O Andor\'s Trail não conseguiu carregar o ficheiro do jogo guardado. Este ficheiro do jogo foi criado com uma versão mais recente do que a que está a ser atualmnete usada.</string>
     <string name="dialog_close">Fechar</string>
     <string name="dialog_monsterencounter_title">Combate</string>
-    <string name="dialog_monsterencounter_message">Quer atacar\?
+    <string name="dialog_monsterencounter_message">Queres atacar\?
 \nDificuldade: %1$s</string>
     <string name="dialog_monsterencounter_info">Informação</string>
     <string name="status_hp">Vida:</string>
@@ -173,7 +173,7 @@
     <string name="preferences_dialog_confirmrest_title">Confirmar descansar</string>
     <string name="preferences_dialog_confirmrest">Pergunta se queres descansar quando chegas a uma cama. Caso contrário, descansas automaticamente mal te aproximes de uma cama.</string>
     <string name="preferences_dialog_confirmattack_title">Confirmar um ataque</string>
-    <string name="preferences_dialog_confirmattack">Pergunta se \'Queres atacar\?\' antes de atacar um monstro.</string>
+    <string name="preferences_dialog_confirmattack">Pergunta \'Queres atacar\?\' ao chegar perto de um monstro.</string>
     <string name="preferences_dialog_monsterloot_title">Como mostrar despojos</string>
     <string name="preferences_dialog_monsterloot">Escolhe como queres ver o resultado de um combate (moedas, experiência, itens).</string>
     <string name="preferences_combat_category">Combate</string>
@@ -377,7 +377,7 @@
     <string name="skill_title_crit2">Fratura</string>
     <string name="skill_shortdescription_crit2">Probabilidade de fraturar ossos ao inimigo</string>
     <string name="skill_longdescription_crit2">Para cada ataque crítico feito, existe uma probabilidade de %1$d %% que o golpe cause a condição de \'fratura\' no alvo. As fraturas afetam muito as habilidades defensivas do inimigo, tornando mais difíceis as defesas subsequentes.</string>
-    <string name="skill_title_rejuvenation">Remoção de efeitos</string>
+    <string name="skill_title_rejuvenation">Rejuvenescimento</string>
     <string name="skill_shortdescription_rejuvenation">Probabilidade de anular efeitos</string>
     <string name="skill_longdescription_rejuvenation">A cada turno (6 segundos), existe uma probabilidade de %1$d %% que uma condição ativa com efeito negativo tenha a sua intensidade reduzida. Isto aplica-se a todos os tipos de efeitos que afetam o corpo: condições mentais como atordoamento, condições físicas como fadiga e também os distúrbios sanguíneos, como envenenamento.</string>
     <string name="skill_title_taunt">Provocação</string>
@@ -454,20 +454,20 @@
     <string name="skill_shortdescription_weapon_prof_axe">Melhor na luta com machados</string>
     <string name="skill_shortdescription_weapon_prof_blunt">Melhor na luta com armas brancas</string>
     <string name="skill_shortdescription_weapon_prof_unarmed">Melhor na luta sem armas</string>
-    <string name="skill_shortdescription_armor_prof_shield">Faça um melhor uso de escudos e aparar armas</string>
+    <string name="skill_shortdescription_armor_prof_shield">Melhorar o uso de escudos e armas em segunda mão</string>
     <string name="skill_shortdescription_armor_prof_unarmored">Melhor na luta sem armadura</string>
-    <string name="skill_shortdescription_armor_prof_light">Faça um melhor uso de armaduras leves</string>
-    <string name="skill_shortdescription_armor_prof_heavy">Faça um melhor uso de armaduras pesadas</string>
+    <string name="skill_shortdescription_armor_prof_light">Melhorar o uso de armaduras leves</string>
+    <string name="skill_shortdescription_armor_prof_heavy">Melhorar o uso de armaduras pesadas</string>
     <string name="skill_shortdescription_fightstyle_dualwield">Manuseie duas armas ao mesmo tempo</string>
-    <string name="skill_shortdescription_fightstyle_2hand">Faça um melhor uso de armas que requerem ambas as mãos</string>
+    <string name="skill_shortdescription_fightstyle_2hand">Melhorar o uso de armas que requerem ambas as mãos</string>
     <string name="skill_shortdescription_fightstyle_weapon_shield">Melhor na luta com arma e escudo</string>
     <string name="skill_shortdescription_specialization_dualwield">Especialista em manuseio duplo</string>
     <string name="skill_shortdescription_specialization_2hand">Especialista em armas de duas mãos</string>
     <string name="skill_shortdescription_specialization_weapon_shield">Especialista na luta com arma e escudo</string>
-    <string name="skill_longdescription_weapon_prof_dagger">Para cada nível desta habilidade, aumenta sua chance de ataque utilizando adagas e espadas curtas em %1$d%% da chance de ataque base do item, aumenta sua chance de bloqueio em %2$d%% da chance de bloqueio base do item, e aumenta sua habilidade de crítico em %3$d%% da habilidade de crítico base do item.</string>
-    <string name="skill_longdescription_weapon_prof_1hsword">Para cada nível de habilidade, aumenta a chance de ataque de Espadas Roperas, Espadas longas e Espadas largas em %1$d %% da chance de ataque base do item, aumenta a chance de bloqueio em %2$d %% da chance de bloqueio base do item, e aumenta a habilidade de ataques críticos em %3$d %% da habilidade base de ataques críticos do item.</string>
-    <string name="skill_longdescription_weapon_prof_2hsword">Para cada nível de habilidade, aumenta a chance de ataque de Espadas de duas mãos em %1$d %% da chance de ataque base do item, aumenta a chance de bloqueio em %2$d %% da chance de bloqueio base do item, e aumenta a habilidade de ataques críticos em %3$d %% da habilidade de ataques críticos base do item.</string>
-    <string name="skill_longdescription_weapon_prof_axe">Para cada nível de habilidade, aumenta a chance de ataque de Machados e Machados Grandes em %1$d %% da chance de ataque base do item, aumenta a chance de bloqueio em %2$d %% da chance de bloqueio base do item, e aumenta a habilidade de ataques críticos em %3$d %% da habilidade de ataques críticos base do item.</string>
+    <string name="skill_longdescription_weapon_prof_dagger">Para cada nível desta habilidade, aumenta a tua chance de ataque utilizando adagas e espadas curtas em %1$d%% da chance de ataque base do item, aumenta a tua chance de bloqueio em %2$d%% da chance de bloqueio base do item e aumenta a tua habilidade de ataque crítico em %3$d%% da habilidade de ataque crítico base do item.</string>
+    <string name="skill_longdescription_weapon_prof_1hsword">Para cada nível de habilidade, aumenta a chance de ataque de espadins, espadas longas e espadas largas em %1$d %% da chance de ataque base do item, aumenta a chance de bloqueio em %2$d %% da chance de bloqueio base do item e aumenta a habilidade de ataques críticos em %3$d %% da habilidade base de ataques críticos do item.</string>
+    <string name="skill_longdescription_weapon_prof_2hsword">Para cada nível de habilidade, aumenta a chance de ataque de espadas de duas mãos em %1$d %% da chance de ataque base do item, aumenta a chance de bloqueio em %2$d %% da chance de bloqueio base do item e aumenta a habilidade de ataques críticos em %3$d %% da habilidade de ataques críticos base do item.</string>
+    <string name="skill_longdescription_weapon_prof_axe">Para cada nível de habilidade, aumenta a chance de ataque de machados e machados grandes em %1$d %% da chance de ataque base do item, aumenta a chance de bloqueio em %2$d %% da chance de bloqueio base do item e aumenta a habilidade de ataques críticos em %3$d %% da habilidade de ataques críticos base do item.</string>
     <string name="skill_longdescription_weapon_prof_blunt">Para cada nível de habilidade, aumenta a chance de ataque de armas brancas em %1$d %% da chance de ataque base do item, aumenta a chance de bloqueio em %2$d %% da chance de bloqueio base do item e aumenta a habilidade de ataques críticos em %3$d %% da habilidade de ataques críticos base do item. Isto inclui Porretes, Bastões, Clavas, Centros, Chicotes Martelos de Guerra e Martelos Gigantes.</string>
     <string name="skill_longdescription_weapon_prof_unarmed">Quando lutar sem arma e escudo, ganha %1$d de chance de ataque, %2$d de potencial de dano e %3$d de chance de bloqueio por nível da habilidade.</string>
     <string name="skill_longdescription_armor_prof_shield">Aumente a resistência a danos em %1$d por nível de habilidade enquanto tiver um escudo ou armas de segunda mão equipados.</string>
@@ -563,8 +563,8 @@
     <string name="dialog_loading_failed_cheat">O Andor\'s Trail não conseguiu carregar o ficheiro savegame. Este ficheiro savegame já foi continuado.</string>
     <string name="skill_title_weapon_prof_pole">Proficiência em armas</string>
     <string name="skill_title_fightstyle_unarmed_unarmored">Estilo de luta: Caminho do monge</string>
-    <string name="menu_save_switch_character">Salvar permite mudar para outro personagem e depois continuar o jogo atual. Deseja salvar e sair do jogo atual\?</string>
-    <string name="menu_save_switch_character_title">Escolha o personagem</string>
+    <string name="menu_save_switch_character">Guardar permite mudar para outro personagem e depois continuar o jogo atual. Queres guardar e sair do jogo atual\?</string>
+    <string name="menu_save_switch_character_title">Escolhe o personagem</string>
     <string name="preferences_language_description">Seleciona o idioma. É usado o inglês se o idioma do sistema não estiver disponível nas traduções do Andor\'s Trail ou o conteúdo da mensagem na interface não tiver sido traduzido (necessário reiniciar).</string>
     <string name="preferences_language">Idioma</string>
     <string name="preferences_language_default">Idioma do sistema</string>
@@ -573,7 +573,7 @@
     <string name="dialog_permission_information">O Andor\'s Trail guarda os jogos no armazenamento acessível ao utilizador no teu aparelho. Isto permite que faças uma cópia de segurança facilmente dos teus jogos guardados ou transferires para um novo aparelho. Visita os nossos fóruns para mais informações.
 \n
 \nO Andor\'s Trail não usa o acesso ao teu aparelho para nenhuma outra finalidade e não acede à Internet. O Andor\'s Trail tem o código-fonte aberto; podes encontrá-lo no Github.</string>
-    <string name="dialog_permission_information_title">Carregando e salvando jogos</string>
+    <string name="dialog_permission_information_title">Carregando e guardado jogos</string>
     <string name="dialog_newversion_permission_information">"
 \n
 \nPara guardar e carregar os teus jogos (e apenas para este fim), o Andor\'s Trail vai pedir-te permissão para aceder ao teu armazenamento."</string>
@@ -591,7 +591,7 @@
     <string name="startscreen_load_game_confirm">O jogo atual não está guardado e perderás o teu personagem.</string>
     <string name="startscreen_load_game">Carregar jogo</string>
     <string name="startscreen_game_mode">Modo</string>
-    <string name="heroinfo_one_life">Permadeath (1 vida)</string>
+    <string name="heroinfo_one_life">Morte permanente (1 vida)</string>
     <string name="heroinfo_unlimited_lives">Vidas ilimitadas, só 1 guardar</string>
     <string name="heroinfo_unlimited_lives_and_saves">Padrão
 \n(vidas e guardar ilimitados)</string>
@@ -617,7 +617,7 @@
     <string name="skill_longdescription_spore_immunity">Impede permanentemente que ataques de monstros lhe Inflijam envenenamento por Esporo.</string>
     <string name="skill_shortdescription_spore_immunity">Total imunidade ao veneno de esporos</string>
     <string name="skill_title_spore_immunity">Imunidade a veneno de esporo</string>
-    <string name="inventory_category_food">comida</string>
+    <string name="inventory_category_food">Comida</string>
     <string name="inventory_category_potion">Poção</string>
     <string name="inventory_category_jewelry">Joalheria</string>
     <string name="combat_log_item_plural">Encontraste %1$d itens:</string>
