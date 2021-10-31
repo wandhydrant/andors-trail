@@ -67,7 +67,7 @@
     <string name="inventory_item_dropped">%1$s lades ner.</string>
     <string name="inventory_item_equipped">Du utrustade dig med %1$s.</string>
     <string name="dialog_loot_pickall">Plocka upp allt</string>
-    <string name="dialog_loot_foundgold">"Du hittade %1$d guld. "</string>
+    <string name="dialog_loot_foundgold">Du hittade %1$d guld.</string>
     <string name="dialog_loot_pickedupitem">Du tog upp ett föremål.</string>
     <string name="dialog_loot_pickedupitems">Du tog upp %1$d föremål.</string>
     <string name="dialog_groundloot_title">Saker</string>
@@ -97,8 +97,8 @@
     <string name="startscreen_enterheroname">Skriv hjältens namn</string>
     <string name="startscreen_load">Ladda</string>
     <string name="conversation_rewardexp">[Din erfarenhet ökade med %1$d]</string>
-    <string name="conversation_rewardgold">" [Du fick %1$d guld]"</string>
-    <string name="conversation_lostgold">" [Du förlorade %1$d guld]"</string>
+    <string name="conversation_rewardgold">[Du fick %1$d guld]</string>
+    <string name="conversation_lostgold">[Du förlorade %1$d guld]</string>
     <string name="conversation_rewarditem">[Du fick ett föremål]</string>
     <string name="conversation_rewarditems">[Du fick %1$d föremål]</string>
     <string name="conversation_next">Nästa</string>
@@ -231,7 +231,7 @@
     <string name="skill_title_specialization_weapon_shield">Specialisering: Vapen och sköld</string>
     <string name="skill_shortdescription_weapon_prof_dagger">Bättre på att kämpa med dolkar</string>
     <string name="skill_shortdescription_weapon_prof_axe">Bättre på att kämpa med yxor</string>
-    <string name="skill_shortdescription_weapon_prof_blunt">Bättre på att kämpa med klubbor och liknande vapen</string>
+    <string name="skill_shortdescription_weapon_prof_blunt">Bättre på att slåss med trubbiga vapen</string>
     <string name="skill_shortdescription_weapon_prof_unarmed">Bättre på att kämpa utan vapen</string>
     <string name="skill_shortdescription_armor_prof_shield">Bättre på att utnyttja sköldar och parerande vapen</string>
     <string name="skill_shortdescription_armor_prof_unarmored">Bättre på att kämpa utan rustning</string>
@@ -387,9 +387,9 @@
     <string name="preferences_ui_category">Gränssnitt</string>
     <string name="preferences_language_description">Välj språk. Engelska kommer användas om systemspråket saknas eller om innehållet inte är översatt. (Kräver omstart)</string>
     <string name="preferences_language">Språk</string>
-    <string name="about_contents1">Välkommen till Andors resa, en roguelike RPG för Android med öppen källkod.&lt;br /&gt; &lt;br /&gt; &lt;a href=http://andorstrail.com/&gt;För frågor och diskussioner kring spelet besök spelforumet på andorstrail.com&lt;/a&gt;&lt;br /&gt; &lt;br /&gt; &lt;a href=http://docs.andorstrail.com/&gt;För information (wiki) om Andors resa med mera.&lt;/a&gt;&lt;br /&gt; &lt;br /&gt; &lt;a href=https://github.com/AndorsTrailRelease/andors-trail/&gt;
-\nProjektets öppna källkod finns tillgänglig för spelutveckling på github.com&lt;/a&gt;&lt;br /&gt; &lt;br /&gt; 
-\nBesök gärna forumen för att diskutera spelet med andra spelare&lt;br /&gt;</string>
+    <string name="about_contents1">Välkommen till Andors stig, ett roguelikt RPG för Android med öppen källkod.&lt;br /&gt; &lt;br /&gt; &lt;a href=http://andorstrail.com/&gt;För frågor och diskussioner kring spelet, besök forumen på andorstrail.com.&lt;/a&gt;&lt;br /&gt; &lt;br /&gt; &lt;a href=http://docs.andorstrail.com/&gt;För information (wiki) om Andors stig med mera.&lt;/a&gt;&lt;br /&gt; &lt;br /&gt; &lt;a href=https://github.com/AndorsTrailRelease/andors-trail/&gt;
+\nProjektets öppna källkod finns tillgänglig för utvecklare på github.com&lt;/a&gt;&lt;br /&gt; &lt;br /&gt; 
+\nBesök gärna forumen för att diskutera spelet med andra spelare.&lt;br /&gt;</string>
     <string name="inventory_sort_name">Namn</string>
     <string name="shoplist_sort_name">Namn</string>
     <string name="shoplist_sort_price">Pris</string>
@@ -412,4 +412,5 @@
     <string name="heroinfo_gamestats_deaths">Antal gånger medvetslös</string>
     <string name="heroinfo_gamestats_num_used_items">Använda föremål</string>
     <string name="heroinfo_gamestats_num_killed_monsters">Dödade monster</string>
+    <string name="heroinfo_gamestats_spent_gold">Guld spenderat i butiker</string>
 </resources>
