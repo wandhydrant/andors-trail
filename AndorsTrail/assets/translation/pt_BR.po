@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: Andors Trail\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-11-10 11:48+0000\n"
-"PO-Revision-Date: 2021-11-03 23:42+0000\n"
+"PO-Revision-Date: 2021-11-05 10:56+0000\n"
 "Last-Translator: SC <lalocas@protonmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/"
 "andors-trail/game-content/pt_BR/>\n"
@@ -3817,7 +3817,7 @@ msgid ""
 "North: Feygard"
 msgstr ""
 "Oeste(←): Crossglen\n"
-"Este(→): Fallhaven\n"
+"Leste(→): Fallhaven\n"
 "Norte(↑): Feygard"
 
 #: conversationlist_signs_pre067.json:sign_pitcave2
@@ -3857,7 +3857,7 @@ msgid ""
 "South: Stoutford"
 msgstr ""
 "Norte(↑): Crossglen\n"
-"Este(→): Fallhaven\n"
+"Leste(→): Fallhaven\n"
 "Sul(↓): Stoutford"
 
 #: conversationlist_signs_pre067.json:sign_wild7
@@ -3891,8 +3891,8 @@ msgid ""
 "East: Nor City"
 msgstr ""
 "Norte(↑): Fallhaven\n"
-"Este(→): Vilegard\n"
-"Este(→): Nor-City"
+"Leste(→): Vilegard\n"
+"Leste(→): Nor-City"
 
 #: conversationlist_thievesguild_1.json:thievesguild_thief_1
 #: conversationlist_gison.json:nimael
@@ -6691,9 +6691,9 @@ msgid ""
 "East: Nor City\n"
 "West: Fallhaven"
 msgstr ""
-"Norte: Loneford\n"
-"Leste: Nor City\n"
-"Oeste: Fallhaven"
+"Norte(↑): Loneford\n"
+"Leste(→): Nor-City\n"
+"Oeste(←): Fallhaven"
 
 #: conversationlist_signs_v068.json:sign_road1_s
 msgid ""
@@ -6701,9 +6701,9 @@ msgid ""
 "East: Nor City\n"
 "South: Vilegard"
 msgstr ""
-"Norte: Loneford\n"
-"Leste: Nor City\n"
-"Sul: Vilegard"
+"Norte(↑): Loneford\n"
+"Leste(→): Nor-City\n"
+"Sul(↓): Vilegard"
 
 #: conversationlist_signs_v068.json:sign_oluag
 msgid "You see a recently dug grave."
@@ -6714,8 +6714,8 @@ msgid ""
 "East: Nor City\n"
 "West: Vilegard"
 msgstr ""
-"Leste: Nor City\n"
-"Oeste: Vilegard"
+"Leste(→): Nor-City\n"
+"Oeste(←): Vilegard"
 
 #: conversationlist_maelveon.json:maelveon
 msgid "[You feel a tingling sensation in your body as the frightening figure begins to speak]"
@@ -7172,7 +7172,10 @@ msgstr "No passado usamos muito a mina aqui. Mas isso foi antes de os ataques co
 
 #: conversationlist_prim_arghest.json:arghest_4
 msgid "The attacks on Prim by the beasts, the bandits and the disappearances really reduced our numbers. Now we cannot keep up the mining activity any longer."
-msgstr "[REVIEW]Os ataques em Prim por os animais e os bandidos realmente dizimaram-nos. Agora, não podemos manter a mineração por mais tempo."
+msgstr ""
+"Os ataques a Prim pelas feras, os bandidos e os desaparecimentos realmente "
+"reduziram nosso número. Agora não podemos mais manter a atividade de "
+"mineração."
 
 #: conversationlist_prim_arghest.json:arghest_5
 msgid "I am Arghest. I guard the entrance here to make sure no one enters the old mine."
@@ -8408,9 +8411,9 @@ msgid ""
 "Southwest: Stoutford\n"
 "Northwest: Blackwater mountain"
 msgstr ""
-"Leste: Fallhaven\n"
-"Sudoeste: Stoutford\n"
-"Nordeste: Montanha das Águas Negras"
+"Leste (→): Fallhaven\n"
+"Sudoeste (↙): Stoutford\n"
+"Nordeste (↖): Montanha das Águas Negras"
 
 #: conversationlist_blackwater_signs.json:sign_prim_n
 msgid "Notice to all citizens: No one is allowed to enter the mines at night! Furthermore, climbing the mountain side is strictly forbidden after the accident with Lorn."
@@ -9819,7 +9822,9 @@ msgstr "… Kazaul... Sombra..."
 
 #: conversationlist_blackwater_throdna.json:throdna_purify_7
 msgid "[Throdna continues to mumble on about Kazaul, but you cannot make out any other words]"
-msgstr "(Throdna continua a resmungar sobre Kazaul, mas você não pode fazer quaisquer outras palavras)"
+msgstr ""
+"(Throdna continua a murmurar sobre Kazaul, mas você não pode fazer quaisquer "
+"outras palavras)"
 
 #: conversationlist_blackwater_throdna.json:throdna_guard
 msgid "Keep your voice down while in the inner chamber."
