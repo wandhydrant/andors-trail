@@ -451,11 +451,11 @@
     <string name="skill_longdescription_armor_prof_heavy">Z każdym poziomem tej umiejętności,o %1$d %% zwiększa się szansa bloku za każdy element ekwipunku należący do kategorii zbroi ciężkich (w odniesieniu do wartości bazowej szansy bloku używanego ekwiunku). Ponadto reducji ulegają kary naliczane za używanie tychże elementów ekwipunku: kara dla ruchu o %2$d %% na poziom umiejętności oraz kara dla kosztu ataku o %3$d %% na poziom umiejętności. Kategoria ciężkie zbroje obejmuje pancerze metalowe, kolczugi i zbroje płytowe.</string>
     <string name="skill_longdescription_fightstyle_dualwield">Daje korzyści w przypadku walki dwoma broniami równocześnie (gdy w każdej ręce znajduje się broń).
 \n
-\nBez tej umiejętności, tylko %1$d %% wartości cech broni jest wykorzystywane, gdy broń znajduje się w lewej ręce. Dotyczy to szansy trafienia, szansy trafienia krytycznego, zadawanych obrażeń oraz szansy bloku. Ponadto, koszt ataku (liczony w PA) jest sumą kosztów ataku obu broni znajdujących się w rękach bohatera. 
+\nBez tej umiejętności, tylko %1$d %% wartości cech broni jest wykorzystywane, gdy broń znajduje się w lewej ręce. Dotyczy to szansy trafienia, szansy trafienia krytycznego, zadawanych obrażeń oraz szansy bloku. Ponadto, koszt ataku (liczony w PA) jest sumą kosztów ataku obu broni znajdujących się w rękach bohatera. Zostanie użyta niższa wartość modyfikatorów obrażeń obu broni.
 \n
-\nNa pierwszym poziomie umiejętności, %2$d %% wartości cech broni jest wykorzystywane, gdy broń znajduje się w lewej ręce. Ponadto koszt ataku (liczony w PA) jest sumą: kosztu ataku broni w prawej ręce plus %3$d %% kosztu ataku broni w lewej ręce. 
+\nNa pierwszym poziomie umiejętności, %2$d %% wartości cech broni jest wykorzystywane, gdy broń znajduje się w lewej ręce. Ponadto koszt ataku (liczony w PA) jest sumą: kosztu ataku broni w prawej ręce plus %3$d %% kosztu ataku broni w lewej ręce. Zostanie użyta średnia wartość modyfikatorów obrażeń obu broni.
 \n
-\nNa drugim poziomie umiejętności, %4$d %% wartości cech broni jest wykorzystywane, gdy broń znajduje się w lewej ręce. Jako prędkość ataku (koszt ataku liczony w PA) przyjmuje się wyższą wartość spośród wartości ataku używanych broni.</string>
+\nNa drugim poziomie umiejętności, %4$d %% wartości cech broni jest wykorzystywane, gdy broń znajduje się w lewej ręce. Jako prędkość ataku (koszt ataku liczony w PA) przyjmuje się wyższą wartość spośród wartości ataku używanych broni. Zostanie użyta wyższa wartość modyfikatorów obrażeń obu broni.</string>
     <string name="skill_longdescription_fightstyle_2hand">"Daje korzyści z używania broni wymagających użycia obu rąk, jak na przykład miecze dwuręczne, wielkie topory czy też olbrzymie młoty.
 
 Każdy poziom umiejętności podnosi obrażenia zadawane każdą broń dwuręczną o %1$d %% (licząc z wartości bazowej obrażeń zadawanych przez daną broń)."</string>
@@ -622,5 +622,5 @@ Każdy poziom umiejętności podnosi obrażenia zadawane każdą broń dwuręczn
     <string name="inventory_category_potion">Mikstura</string>
     <string name="inventory_category_jewelry">Biżuteria</string>
     <string name="combat_log_item_plural">Znalazłeś%1$d przedmioty/ów:</string>
-    <string name="combat_log_item_single">Znalazłeś przedmiot:</string>
+    <string name="combat_log_item_single">Znalazłeś przedmioty:</string>
 </resources>
