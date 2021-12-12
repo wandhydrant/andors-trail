@@ -987,7 +987,7 @@
                 "nextPhraseID":"ehrenfest_2a"
             },
             {
-                "text":"I have information related to the recent disappearances.",
+                "text":"I have information related to recent disappearances.",
                 "nextPhraseID":"ehrenfest_2b"
             },
             {
@@ -2117,7 +2117,7 @@
     },
     {
         "id":"ehrenfest_4",
-        "message":"*looks nervious*  I told you. Something big is about to happen. I believe it is somehow related to what you've seen up in the mountain.",
+        "message":"*looks nervous*  I told you. Something big is about to happen. I believe it is somehow related to what you've seen up in the mountain.",
         "switchToNPC":"ehrenfest",
         "replies":[
             {
@@ -3784,12 +3784,6 @@
     {
         "id":"bwm_wellspring_2a",
         "message":"You fill the bottle with water.",
-        "replies":[
-            {
-                "text":"Pick up another bottle.",
-                "nextPhraseID":"bwm_wellspring_2b"
-            }
-        ],
         "rewards":[
             {
                 "rewardType":"questProgress",
@@ -4231,7 +4225,7 @@
                 "nextPhraseID":"X"
             },
             {
-                "text":"Things need to be cleared out. Bye.",
+                "text":"Things need to be cleared up. Bye.",
                 "nextPhraseID":"X"
             }
         ]
@@ -6293,28 +6287,6 @@
                 "text":"N",
                 "nextPhraseID":"fms_3"
             }
-        ],
-        "rewards":[
-            {
-                "rewardType":"removeSpawnArea",
-                "rewardID":"ortholion_guard3",
-                "mapName":"blackwater_mountain10"
-            },
-            {
-                "rewardType":"removeSpawnArea",
-                "rewardID":"ortholion_guard3a",
-                "mapName":"blackwater_mountain10"
-            },
-            {
-                "rewardType":"removeSpawnArea",
-                "rewardID":"ortholion_guard5",
-                "mapName":"blackwater_mountain10"
-            },
-            {
-                "rewardType":"removeSpawnArea",
-                "rewardID":"ortholion_guard6",
-                "mapName":"blackwater_mountain10"
-            }
         ]
     },
     {
@@ -6339,6 +6311,26 @@
                 "rewardType":"questProgress",
                 "rewardID":"Omi2_bwm1",
                 "value":47
+            },
+            {
+                "rewardType":"removeSpawnArea",
+                "rewardID":"ortholion_guard3",
+                "mapName":"blackwater_mountain10"
+            },
+            {
+                "rewardType":"removeSpawnArea",
+                "rewardID":"ortholion_guard3a",
+                "mapName":"blackwater_mountain10"
+            },
+            {
+                "rewardType":"removeSpawnArea",
+                "rewardID":"ortholion_guard5",
+                "mapName":"blackwater_mountain10"
+            },
+            {
+                "rewardType":"removeSpawnArea",
+                "rewardID":"ortholion_guard6",
+                "mapName":"blackwater_mountain10"
             }
         ]
     },
@@ -9086,7 +9078,7 @@
                 "nextPhraseID":"ortholion_16a"
             },
             {
-                "text":"You owe me a favour then.",
+                "text":"You owe me a favor then.",
                 "nextPhraseID":"ortholion_16b"
             }
         ]
@@ -9118,7 +9110,7 @@
                 "nextPhraseID":"X"
             },
             {
-                "text":"But at least, you owe me a favour. Where's your honour?",
+                "text":"But at least, you owe me a favor. Where's your honor?",
                 "nextPhraseID":"ortholion_16b"
             }
         ]
@@ -9537,6 +9529,68 @@
             {
                 "text":"That sounds kind of true. You are a very persuasive speaker.",
                 "nextPhraseID":"X"
+            }
+        ]
+    },
+    {
+        "id":"omi2_fix_ortholion_guard5",
+        "replies":[
+            {
+                "nextPhraseID":"omi2_fix_ortholion_guard5_10",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"Omi2_bwm1",
+                        "value":46
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"Omi2_bwm1",
+                        "value":47,
+                        "negate":true
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id":"omi2_fix_ortholion_guard5_10",
+        "rewards":[
+            {
+                "rewardType":"spawnAll",
+                "rewardID":"ortholion_guard5",
+                "mapName":"blackwater_mountain10"
+            }
+        ]
+    },
+    {
+        "id":"omi2_fix_ortholion_bwm43",
+        "replies":[
+            {
+                "nextPhraseID":"omi2_fix_ortholion_bwm43_10",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"Omi2_bwm1",
+                        "value":46
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"Omi2_bwm1",
+                        "value":47,
+                        "negate":true
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id":"omi2_fix_ortholion_bwm43_10",
+        "rewards":[
+            {
+                "rewardType":"removeSpawnArea",
+                "rewardID":"ortholion",
+                "mapName":"blackwater_mountain43"
             }
         ]
     }

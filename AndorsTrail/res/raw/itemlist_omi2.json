@@ -16,7 +16,7 @@
         "hasManualPrice":1,
         "baseMarketCost":22,
         "category":"animal_e",
-        "description":"When threatened, these fishes secret a dense black substance that darkens the surrounding water, allowing them to escape.",
+        "description":"When threatened, these fish secrete a dense black substance that darkens the surrounding water, allowing them to escape.",
         "useEffect":{
             "increaseCurrentHP":{
                 "min":0,
@@ -201,7 +201,7 @@
             "increaseAttackChance":16,
             "increaseCriticalSkill":10,
             "increaseBlockChance":-2,
-            "setCriticalMultiplier":1.75,
+            "setCriticalMultiplier":1.8,
             "setNonWeaponDamageModifier":107
         },
         "hitEffect":{
@@ -836,7 +836,7 @@
         "name":"Kazarite cloak",
         "displaytype":"extraordinary",
         "category":"bdy_hide",
-        "description":"This cloak is gelid to the touch and unbearable during long periods of time.",
+        "description":"This cloak is icy to the touch and unbearable for long periods of time.",
         "equipEffect":{
             "increaseAttackDamage":{
                 "min":3,
