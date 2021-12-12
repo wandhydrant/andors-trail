@@ -22,11 +22,11 @@
     <string name="dialog_recenter">现在位置</string>
     <string name="dialog_close">关闭</string>
     <string name="dialog_more">更多</string>
-    <string name="app_name">Andor\'s Trail</string>
+    <string name="app_name">安道尔的踪迹</string>
     <string name="status_hp">HP：</string>
     <string name="heroinfo_char">总览</string>
     <string name="heroinfo_skill">技能</string>
-    <string name="heroinfo_levelup">等级提升</string>
+    <string name="heroinfo_levelup">升级</string>
     <string name="heroinfo_level">等级</string>
     <string name="heroinfo_totalexperience">总计经验</string>
     <string name="dialog_monsterencounter_title">遭遇</string>
@@ -53,7 +53,7 @@
     <string name="combat_use">使用物品</string>
     <string name="combat_endturn">结束回合</string>
     <string name="combat_flee">逃跑</string>
-    <string name="combat_begin_flee">请点击你想要移动的方向来逃跑。</string>
+    <string name="combat_begin_flee">请点击你想要逃跑的方向。</string>
     <string name="combat_flee_failed">逃跑失败！</string>
     <string name="combat_status_ap">AP：%1$d</string>
     <string name="combat_monsterhealth">生命值：</string>
@@ -65,7 +65,7 @@
     <string name="combat_result_herohit">%1$s失去%2$d点生命值！</string>
     <string name="combat_result_herohitcritical">暴击！%1$s失去%2$d点生命值！</string>
     <string name="combat_result_herokillsmonster">%1$s被击败！</string>
-    <string name="combat_not_enough_ap">本回合剩余AP值不足。</string>
+    <string name="combat_not_enough_ap">剩余AP值不足。</string>
     <string name="combat_hero_dies">你昏迷不醒，但幸运的是还活着。你茫然无措，疲惫不堪。失去了%1$d经验值。</string>
     <string name="combat_miss_animation_message">未命中</string>
     <string name="combat_taunt_monster">你嘲讽了%1$s！</string>
@@ -90,7 +90,7 @@
     <string name="dialog_rest_title">休息</string>
     <string name="dialog_rest_confirm_message">你想在这里休息吗？</string>
     <string name="inventory_item_equipped">%1$s已装备。</string>
-    <string name="levelup_title">升级</string>
+    <string name="levelup_title">等级提升</string>
     <string name="levelup_buttontext">等级提升</string>
     <string name="skill_title_regeneration">再生</string>
     <string name="skillinfo_action_levelup">等级提升</string>
@@ -154,7 +154,7 @@
     <string name="traitsinfo_defense_chance">格挡率：</string>
     <string name="dialog_rest_message">你已经休息，并恢复了生命值。</string>
     <string name="iteminfo_category">分类：</string>
-    <string name="traitsinfo_criticalhit_skill">暴击等级：</string>
+    <string name="traitsinfo_criticalhit_skill">暴击率：</string>
     <string name="levelup_add_blockchance_description">增加基础格挡率%1$d。</string>
     <string name="levelup_add_blockchance">增加格挡率（+%1$d）</string>
     <string name="levelup_add_attackdamage_description">增加基础攻击伤害%1$d。</string>
@@ -196,7 +196,7 @@
     <string name="startscreen_enterheroname">输入英雄的名字</string>
     <string name="startscreen_selectherosprite">选择英雄</string>
     <string name="startscreen_about">关于/帮助</string>
-    <string name="startscreen_newgame_confirm">你将失去当前游戏进度与角色，确认要新建游戏吗？</string>
+    <string name="startscreen_newgame_confirm">你将失去当前角色与游戏进度，确认要新建游戏吗？</string>
     <string name="startscreen_newgame_start">开始游戏</string>
     <string name="startscreen_newgame">新游戏</string>
     <string name="startscreen_continue">继续当前游戏</string>
@@ -605,4 +605,7 @@
     <string name="inventory_category_jewelry">饰品</string>
     <string name="combat_log_item_plural">你找到了%1$d个物品：</string>
     <string name="combat_log_item_single">你找到了一个物品：</string>
+    <string name="startscreen_migration_title">数据转移</string>
+    <string name="startscreen_migration_text">转移savegame数据.</string>
+    <string name="startscreen_migration_failure">转移savegame数据失败.</string>
 </resources>
