@@ -6433,6 +6433,13 @@
                 "text":"[muttering] I hope so. The potion was expensive enough!",
                 "nextPhraseID":"arghest_alert_9"
             }
+        ],
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"bwm72_beginning",
+                "value":22
+            }
         ]
     },
     {
@@ -6450,13 +6457,6 @@
             {
                 "text":"Don't worry, I won't cause too much trouble.",
                 "nextPhraseID":"X"
-            }
-        ],
-        "rewards":[
-            {
-                "rewardType":"questProgress",
-                "rewardID":"bwm72_beginning",
-                "value":22
             }
         ]
     },
@@ -9573,12 +9573,16 @@
                         "requireType":"questProgress",
                         "requireID":"Omi2_bwm1",
                         "value":46
-                    },
+                    }
+                ]
+            },
+            {
+                "nextPhraseID":"omi2_fix_ortholion_bwm43_10",
+                "requires":[
                     {
                         "requireType":"questProgress",
                         "requireID":"Omi2_bwm1",
-                        "value":47,
-                        "negate":true
+                        "value":47
                     }
                 ]
             }
