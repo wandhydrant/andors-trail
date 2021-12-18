@@ -784,6 +784,16 @@
         "id":"ehrenfest_selector_2",
         "replies":[
             {
+                "nextPhraseID":"omi2_fix_ehrenfest_53",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"Omi2_bwm1",
+                        "value":53
+                    }
+                ]
+            },
+            {
                 "nextPhraseID":"ehrenfest_49",
                 "requires":[
                     {
@@ -6433,6 +6443,13 @@
                 "text":"[muttering] I hope so. The potion was expensive enough!",
                 "nextPhraseID":"arghest_alert_9"
             }
+        ],
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"bwm72_beginning",
+                "value":22
+            }
         ]
     },
     {
@@ -6450,13 +6467,6 @@
             {
                 "text":"Don't worry, I won't cause too much trouble.",
                 "nextPhraseID":"X"
-            }
-        ],
-        "rewards":[
-            {
-                "rewardType":"questProgress",
-                "rewardID":"bwm72_beginning",
-                "value":22
             }
         ]
     },
@@ -8291,9 +8301,14 @@
                 "mapName":"elm5f_2"
             },
             {
-                "rewardType":"deactivateSpawnArea",
+                "rewardType":"removeSpawnArea",
                 "rewardID":"ehrenfest",
-                "mapName":"elm5f_2"
+                "mapName":"blackwater_mountain43"
+            },
+            {
+                "rewardType":"removeSpawnArea",
+                "rewardID":"ortholion",
+                "mapName":"blackwater_mountain43"
             },
             {
                 "rewardType":"questProgress",
@@ -9573,12 +9588,16 @@
                         "requireType":"questProgress",
                         "requireID":"Omi2_bwm1",
                         "value":46
-                    },
+                    }
+                ]
+            },
+            {
+                "nextPhraseID":"omi2_fix_ortholion_bwm43_10",
+                "requires":[
                     {
                         "requireType":"questProgress",
                         "requireID":"Omi2_bwm1",
-                        "value":47,
-                        "negate":true
+                        "value":47
                     }
                 ]
             }
@@ -9590,6 +9609,27 @@
             {
                 "rewardType":"removeSpawnArea",
                 "rewardID":"ortholion",
+                "mapName":"blackwater_mountain43"
+            },
+            {
+                "rewardType":"removeSpawnArea",
+                "rewardID":"ehrenfest",
+                "mapName":"blackwater_mountain43"
+            }
+        ]
+    },
+    {
+        "id":"omi2_fix_ehrenfest_53",
+        "message":"You are wrong. I'm not here, just an illusion.",
+        "rewards":[
+            {
+                "rewardType":"removeSpawnArea",
+                "rewardID":"ortholion",
+                "mapName":"blackwater_mountain43"
+            },
+            {
+                "rewardType":"removeSpawnArea",
+                "rewardID":"ehrenfest",
                 "mapName":"blackwater_mountain43"
             }
         ]
