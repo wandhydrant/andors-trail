@@ -303,13 +303,13 @@
     <string name="skill_longdescription_cleave">敵を殺すたび、スキル1レベルにつき+%1$dポイントの行動値（AP）が回復します。</string>
     <string name="skill_longdescription_eater">敵を殺すたび、スキル1レベルにつき+%1$dポイントの体力（HP）が回復します。</string>
     <string name="skill_longdescription_fortitude">これ以降のレベルアップのたび、体力（HP）の最大値がスキル1レベルにつき%1$dポイント増加します。過去のレベルアップにさかのぼって適用されることはなく、将来のレベルアップにのみ影響します。</string>
-    <string name="skill_longdescription_evasion">スキル1レベルにつき、逃走に失敗する確率を%1$d%%、隣接するモンスターから攻撃される確率を%2$d%%ずつ下げる。</string>
+    <string name="skill_longdescription_evasion">スキル1レベルにつき、逃走に失敗する確率を%1$d%%、隣接するモンスターから攻撃される確率を%2$d%%ずつ下げます。</string>
     <string name="skill_longdescription_regeneration">毎ラウンド、スキル1レベルにつきHPを%1$dずつ回復します。</string>
     <string name="skill_longdescription_lower_exploss">スキル1レベルにつき、死亡時に失う経験値の量を%1$d%%減少させます（現在失う量に対する割合で、パーセンテージ・ポイントではありません）。%2$dレベルに達すると、死亡時に経験値を失わなくなります。</string>
     <string name="skill_longdescription_magicfinder">スキル1レベルにつき、特別なアイテムを発見する確率が%1$d%%づつ増加します。</string>
-    <string name="skill_longdescription_resistance_mental">スキル1レベルにつき、精神に対する状態変化にかかる確率を%1$d%%低下させます。最大で%2$d%%の低下までです。これには、めまい（Dazed）や武器弱体（Weapon Feebleness）といった、モンスターの攻撃が引き起こす状態変化が含まれます。</string>
-    <string name="skill_longdescription_resistance_physical_capacity">スキル1レベルにつき、身体能力に対する状態変化にかかる確率を%1$d%%低下させます。最大で%2$d%%の低下までです。これには、疲労（Fatigue）といった、モンスターの攻撃が引き起こす状態変化が含まれます。</string>
-    <string name="skill_longdescription_resistance_blood_disorder">スキル1レベルにつき、血液異常にかかる確率を%1$d%%低下させます。最大で%2$d%%の低下までです。これには、ポイズン（Poison）や出血（bleeding wounds）といった、モンスターの攻撃が引き起こす状態変化が含まれます。</string>
+    <string name="skill_longdescription_resistance_mental">スキル1レベルにつき、精神に対する状態変化にかかる確率を%1$d%%低下させます。最大で%2$d%%の低下までです。これには、めまいや武器弱体といった、モンスターの攻撃が引き起こす状態変化が含まれます。</string>
+    <string name="skill_longdescription_resistance_physical_capacity">スキル1レベルにつき、身体能力に対する状態変化にかかる確率を%1$d%%低下させます。最大で%2$d%%の低下までです。これには、疲労といった、モンスターの攻撃が引き起こす状態変化が含まれます。</string>
+    <string name="skill_longdescription_resistance_blood_disorder">スキル1レベルにつき、血液異常にかかる確率を%1$d%%低下させます。最大で%2$d%%の低下までです。これには、ポイズンや出血といった、モンスターの攻撃が引き起こす状態変化が含まれます。</string>
     <string name="skillinfo_action_levelup">レベルアップ</string>
     <string name="skill_current_level">現在のレベル: %1$d</string>
     <string name="skill_current_level_with_maximum">現在のレベル: %1$d / %2$d</string>
@@ -341,26 +341,26 @@
     <!-- Added in v0.6.11 -->
     <string name="skill_title_shadow_bless">シャドウの闇の祝福</string>
     <string name="skill_shortdescription_shadow_bless">すべての種類の状態変化に対する抵抗力</string>
-    <string name="skill_longdescription_shadow_bless">スキル1レベルにつき、あらゆる状態変化にかかる確率を%1$d%%低下させます。これには、ポイズン（Poison）、めまい（Dazed）、疲労（Fatigue）といった、モンスターの攻撃が引き起こすあらゆる状態変化が含まれます。</string>
+    <string name="skill_longdescription_shadow_bless">スキル1レベルにつき、あらゆる状態変化にかかる確率を%1$d%%低下させます。これには、ポイズン、めまい、疲労といった、モンスターの攻撃が引き起こすあらゆる状態変化が含まれます。</string>
     <string name="inventory_movetop">一番上へ</string>
     <string name="inventory_movebottom">一番下へ</string>
     <string name="actorinfo_immune_criticals">クリティカルヒット無効</string>
     <string name="traitsinfo_criticalhit_effectivechance">クリティカル率:</string>
     <string name="skill_title_crit1">内部からの出血</string>
     <string name="skill_shortdescription_crit1">内出血攻撃の機会を得る</string>
-    <string name="skill_longdescription_crit1">クリティカルヒットを発生させるたび、その攻撃は%1$d%%の確率で対象に内出血を引き起こし、内出血（Internal bleeding）の状態変化を対象に与えます。内出血は攻撃に関する戦闘能力を劇的に下げ、対象は有効な攻撃を当てることが難しくなります。</string>
+    <string name="skill_longdescription_crit1">クリティカルヒットを発生させるたび、その攻撃は%1$d%%の確率で対象に内出血を引き起こし、内出血の状態変化を対象に与えます。内出血は攻撃に関する戦闘能力を劇的に下げ、対象は有効な攻撃を当てることが難しくなります。</string>
     <string name="skill_title_crit2">骨の粉砕</string>
     <string name="skill_shortdescription_crit2">骨折攻撃の機会を得る</string>
-    <string name="skill_longdescription_crit2">クリティカルヒットを発生させるたび、その攻撃は%1$d%%の確率で対象の骨を砕き、破壊（Fracture）の状態変化を対象に与えます。破壊は防御に関する戦闘能力を劇的に下げ、対象は次なる攻撃を防ぐことが難しくなります。</string>
+    <string name="skill_longdescription_crit2">クリティカルヒットを発生させるたび、その攻撃は%1$d%%の確率で対象の骨を砕き、破壊の状態変化を対象に与えます。破壊は防御に関する戦闘能力を劇的に下げ、対象は次なる攻撃を防ぐことが難しくなります。</string>
     <string name="skill_title_rejuvenation">復元</string>
     <string name="skill_shortdescription_rejuvenation">悪い効果を取り除く</string>
-    <string name="skill_longdescription_rejuvenation">1ラウンド（6秒）毎に、%1$d%%の確率で、現在受けている悪い効果の状態変化のうち1つを1段階だけ弱めます。めまい（Dazed）、疲労（Fatigue）、ポイズン（Poison）といった、身体能力・精神・血液異常のいずれの状態変化にも効果があります。</string>
+    <string name="skill_longdescription_rejuvenation">1ラウンド（6秒）毎に、%1$d%%の確率で、現在受けている悪い効果の状態変化のうち1つを1段階だけ弱めます。めまい、疲労、ポイズンといった、身体能力・精神・血液異常のいずれの状態変化にも効果があります。</string>
     <string name="skill_title_taunt">挑発</string>
     <string name="skill_shortdescription_taunt">攻撃を外した敵のAPを失わせる</string>
     <string name="skill_longdescription_taunt">敵の攻撃が外れたとき、%1$d%%の確率でその敵は行動値（AP）を%2$d失います。あなたに対するあらゆる近接攻撃に効果があります。</string>
     <string name="skill_title_concussion">頭部への衝撃</string>
     <string name="skill_shortdescription_concussion">脳震盪攻撃の機会を得る</string>
-    <string name="skill_longdescription_concussion">あなたの命中より%1$d以上回避が低い敵に攻撃するたび、その攻撃は%2$d%%の確率で対象に脳震盪（concussion）を起こします。脳震盪は攻撃に関する戦闘能力を劇的に下げ、対象は有効な攻撃を当てることが難しくなります。</string>
+    <string name="skill_longdescription_concussion">あなたの命中より%1$d以上回避が低い敵に攻撃するたび、その攻撃は%2$d%%の確率で対象に脳震盪を起こします。脳震盪は攻撃に関する戦闘能力を劇的に下げ、対象は有効な攻撃を当てることが難しくなります。</string>
     <string name="about_button4">概要</string>
     <!-- =========================================== -->
     <!-- Added in v0.7.0 -->
@@ -406,7 +406,7 @@
     <string name="iteminfo_effect_decrease_damage_resistance">ダメージ軽減を%1$d減少</string>
     <string name="iteminfo_effect_increase_damage_resistance">ダメージ軽減を%1$d増加</string>
     <string name="iteminfo_effect_decrease_block_chance">回避が%1$d減少</string>
-    <string name="preferences_high_quality_filters">フィルタされたマップ（暗い洞窟など）でパフォーマンスの問題が生じる場合、無効にしてください。このオプションを有効にすると、単色のオーバーレイではなく高度なカラーフィルタが使用されます。</string>
+    <string name="preferences_high_quality_filters">フィルタされたマップ（暗い洞窟など）でパフォーマンスの問題が生じる場合、無効にしてください。オプションを有効にすると、単色のオーバーレイではなく高度なカラーフィルタが使用されます。</string>
     <string name="preferences_high_quality_filters_title">高品質フィルタ</string>
     <string name="inventory_selectitem">割り当てるアイテムを選択する</string>
     <string name="preferences_language_description">言語を選択します。システム言語が使用できない場合、またはコンテンツが翻訳されていない場合は英語が使用されます。（再起動が必要）</string>
@@ -606,8 +606,8 @@
     <string name="preferences_quickslots_placement_summary">クイックスロットの配置場所</string>
     <string name="preferences_quickslots_placement">クイックスロットの位置</string>
     <string name="skill_longdescription_weapon_prof_pole">スキルレベルごとに、ポールウェポンを使用した時の命中をアイテムの基礎命中の%1$d%%、回避をアイテムの基礎回避の%2$d%%、クリティカルスキルをアイテムの基礎クリティカルスキルの%3$d%%それぞれ増やします。</string>
-    <string name="skill_longdescription_specialization_weapon_shield">メインハンドの武器の命中とダメージポテンシャルの両方が増加します。命中は元の命中の%1$d%%、ダメージポテンシャルは元のダメージポテンシャルの%2$d%%増加します。</string>
-    <string name="skill_longdescription_specialization_2hand">武器スタイルのスキル効果に加えて、両手武器のダメージポテンシャルが元のダメージポテンシャルの%1$d%%増加します。両手武器の命中も元の命中の%2$d%%増加します。</string>
+    <string name="skill_longdescription_specialization_weapon_shield">メインハンドの武器の命中とダメージ性能の両方が増加します。命中は元の命中の%1$d%%、ダメージ性能は元のダメージ性能の%2$d%%増加します。</string>
+    <string name="skill_longdescription_specialization_2hand">武器スタイルのスキル効果に加えて、両手武器のダメージ性能が元のダメージ性能の%1$d%%増加します。両手武器の命中も元の命中の%2$d%%増加します。</string>
     <string name="skill_longdescription_specialization_dualwield">武器スタイルのスキル効果に加えて、両方の装備武器の命中が元の命中の%1$d%%増加します。両方の装備武器の回避も元の回避の%2$d%%増加します。</string>
     <string name="skill_longdescription_fightstyle_weapon_shield">メインハンドに武器を装備し、オフハンドに盾やパリィ武器を装備して戦っている時に効果を発揮します。
 \n
