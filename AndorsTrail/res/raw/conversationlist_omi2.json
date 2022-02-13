@@ -8723,6 +8723,22 @@
         "id":"elm5f_kamelio_entrance",
         "replies":[
             {
+                "nextPhraseID":"ortholion_c3_fix1",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"bwm72_beginning",
+                        "value":39
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"Omi2_bwm1",
+                        "value":54,
+                        "negate":true
+                    }
+                ]
+            },
+            {
                 "nextPhraseID":"elm5f_kamelio_e1",
                 "requires":[
                     {
@@ -9631,6 +9647,26 @@
                 "rewardType":"removeSpawnArea",
                 "rewardID":"ehrenfest",
                 "mapName":"blackwater_mountain43"
+            }
+        ]
+    },
+    {
+        "id":"ortholion_c3_fix1",
+        "rewards":[
+            {
+                "rewardType":"deactivateMapObjectGroup",
+                "rewardID":"Keys",
+                "mapName":"elm5f_2"
+            }
+        ]
+    },
+    {
+        "id":"ortholion_c3_fix2",
+        "rewards":[
+            {
+                "rewardType":"activateMapObjectGroup",
+                "rewardID":"Keys",
+                "mapName":"elm5f_2"
             }
         ]
     }
