@@ -416,6 +416,10 @@ msgstr "アンドールを捜してきました。"
 msgid "What kind of book is it that you have in your hand?"
 msgstr "その手にしている本は何ですか？"
 
+#: conversationlist_mikhail.json:mikhail_default:9
+msgid "Yes, I'm here to deliver the order for a 'Plush Pillow'. But what for?"
+msgstr ""
+
 #: conversationlist_mikhail.json:mikhail_tasks
 msgid "Oh yes, there were some things I need help with, bread and rats. Which one would you like to talk about?"
 msgstr "ああ、いくつかやってほしいことがあったな。パンの事とネズミの事があるが、どれから聞きたいかな？"
@@ -519,6 +523,7 @@ msgstr "パンは持ってきてくれていたな。ありがとう。"
 #: conversationlist_guynmart2_npc.json:guynmart_child_90:0
 #: conversationlist_stoutford_combined.json:stoutford_widow_roots30_2:0
 #: conversationlist_brimhaven_2.json:oromir_basement_help_10:1
+#: conversationlist_delivery.json:brv_wh_delivery_arghes:0
 msgid "You're welcome."
 msgstr "どういたしまして。"
 
@@ -1272,6 +1277,7 @@ msgstr "予想はしてたよ。おまえら兄弟は、あんまり勇敢じゃ
 #: conversationlist_brimhaven.json:remgard_prison_thief_200:0
 #: conversationlist_omi2.json:prim_guard5_3a:0
 #: conversationlist_omi2.json:ehrenfest_7a:0
+#: conversationlist_delivery.json:brv_wh_delivery_arghes:1
 msgid "Bye."
 msgstr "じゃあね。"
 
@@ -1321,6 +1327,7 @@ msgstr "いいね、やるじゃん！　おまえら兄弟は、思ってたほ
 #: conversationlist_brimhaven.json:melona_1:0
 #: conversationlist_brimhaven_2.json:brv_guard_deputy_asd_30:0
 #: conversationlist_gison.json:gison_p1_20_warmup_1:0
+#: conversationlist_delivery.json:brv_wh_delivery_boss_reward:0
 msgid "Thanks."
 msgstr "ありがとう。"
 
@@ -1354,6 +1361,7 @@ msgstr "何があったのか話してくれませんか？"
 #: conversationlist_omi2.json:moyra_12:1
 #: conversationlist_omi2.json:prim_tavern_guest4_17c:1
 #: conversationlist_omi2.json:capvjern_22:0
+#: conversationlist_delivery.json:brv_wh_delivery_mikhail2:0
 msgid "OK, bye."
 msgstr "ええ、それでは。"
 
@@ -1694,6 +1702,10 @@ msgstr "地下にエリサラの像がありましたね。"
 #: conversationlist_fallhaven_arcir.json:arcir_anythingelse:1
 msgid "You really seem to like your books."
 msgstr "本がお好きなんですね。"
+
+#: conversationlist_fallhaven_arcir.json:arcir_start:2
+msgid "And I'm your delivery kid. Did you order a 'Dusty old book'?"
+msgstr ""
 
 #: conversationlist_fallhaven_arcir.json:arcir_anythingelse
 msgid "Anything else you wanted to ask?"
@@ -2780,8 +2792,7 @@ msgstr "うむ、これは盗賊が奪っていったものだな。"
 
 #: conversationlist_fallhaven_vacor.json:vacor_42
 msgid "Now I should be able to finish the rift spell and open up the Shadow rift ... erm I mean open up new possibilities. Yes, that's what I meant."
-msgstr ""
-"これでようやく裂け目の呪文を完成させ、シャドウの裂け目を開くことが…ああっと、新たな可能性を切り開けるという意味じゃぞ。うむ、そういう意味じゃ。"
+msgstr "これでようやく裂け目の呪文を完成させ、シャドウの裂け目を開くことが…ああっと、新たな可能性を切り開けるという意味じゃぞ。うむ、そういう意味じゃ。"
 
 #: conversationlist_fallhaven_vacor.json:vacor_43
 msgid "The only obstacle between me and continuing my rift spell research is that stupid Unzel fellow."
@@ -3057,6 +3068,13 @@ msgstr "殺したのか？　感謝するよ。これでヴァコールの裂け
 #: conversationlist_gison.json:gison_catchsoup_new:0
 #: conversationlist_gorwath.json:gorwath_love_2:0
 #: conversationlist_omi2.json:ehrenfest_31b:0
+#: conversationlist_delivery.json:brv_wh_delivery_arcir:0
+#: conversationlist_delivery.json:brv_wh_delivery_edrin:0
+#: conversationlist_delivery.json:brv_wh_delivery_odirath:0
+#: conversationlist_delivery.json:brv_wh_delivery_venanra:0
+#: conversationlist_delivery.json:brv_wh_delivery_tjure:0
+#: conversationlist_delivery.json:brv_wh_delivery_servant:0
+#: conversationlist_delivery.json:brv_wh_delivery_boss_scrooge:0
 msgid "Thank you."
 msgstr "ありがとう。"
 
@@ -3534,9 +3552,7 @@ msgstr "さようなら。"
 
 #: conversationlist_fallhaven_south.json:fallhaven_lumberjack_13
 msgid "You're welcome. But you're not the only one who is happy. There are more people resting for a night in Fallhaven, which helps our economy. Some even bought items at my store! By the way, I was surprised, but I even got paid well by the guard captain."
-msgstr ""
-"どういたしまして。だが、幸せなのはお前さんだけじゃあない。フォールヘブンで泊まっていく人が増えて、経済的にも助かってる。中にはうちの店で商品を買っていった"
-"人もいたんだ！　そういや驚いたんだがな、衛兵隊長からも結構な報酬が支払われたぞ。"
+msgstr "どういたしまして。だが、幸せなのはお前さんだけじゃあない。フォールヘブンで泊まっていく人が増えて、経済的にも助かってる。中にはうちの店で商品を買っていった人もいたんだ！　そういや驚いたんだがな、衛兵隊長からも結構な報酬が支払われたぞ。"
 
 #: conversationlist_fallhaven_south.json:fallhaven_lumberjack_13:0
 msgid "Great. Now everything is much better than it was before!"
@@ -4401,9 +4417,7 @@ msgstr "いえ、話してません。"
 
 #: conversationlist_farrik.json:farrik_return_3:1
 msgid "[Lie]. No. I went there, but I overheard the guard captain saying there was no real threat, so they will lower security. So maybe you can carry out your mission without me being involved."
-msgstr ""
-"（嘘）いえ、行ってきたけど、衛兵隊長が実際の脅威はないと話してるのを耳にしました。だから、彼らは警備を緩めるつもりでいます。なので僕が関与しなくても任務を"
-"遂行できるかもしれません。"
+msgstr "（嘘）いえ、行ってきたけど、衛兵隊長が実際の脅威はないと話してるのを耳にしました。だから、彼らは警備を緩めるつもりでいます。なので僕が関与しなくても任務を遂行できるかもしれません。"
 
 #: conversationlist_fallhaven_warden.json:fallhaven_warden
 msgid "State your business."
@@ -4496,9 +4510,7 @@ msgstr "誰かが罰金を払ってくれるとしたら？"
 
 #: conversationlist_fallhaven_warden.json:fallhaven_warden_7
 msgid "Oh, that sounds a bit shady. I doubt anyone could afford the 450 gold around here. Anyway, I would need a bit more than that just to risk it."
-msgstr ""
-"あー、それならちょっと怪しいかもな。どのみち450ゴールドを立て替えてくれる人がいるとも思えんが。いずれにせよ、リスクを冒すのならそれ以上の金額が必要だろ"
-"う。"
+msgstr "あー、それならちょっと怪しいかもな。どのみち450ゴールドを立て替えてくれる人がいるとも思えんが。いずれにせよ、リスクを冒すのならそれ以上の金額が必要だろう。"
 
 #: conversationlist_fallhaven_warden.json:fallhaven_warden_7:0
 msgid "I have 500 gold right here that you could have."
@@ -4616,9 +4628,7 @@ msgstr "フォールヘブンでの君の協力については他の衛兵たち
 
 #: conversationlist_fallhaven_warden.json:fallhaven_warden_pathway_1
 msgid "Hah! Jakrar? I should pay Jakrar before he has done his work? No way! Either he does his woodcutting job before I pay him or the passage stays blocked! That's how I always do it. It's the only way to get the job done well."
-msgstr ""
-"ハッ！　ジャクラルのことか？　仕事を終える前にジャクラルに支払うべきだと？　ありえん！　"
-"支払う前にやつが木を切るか、このまま通路を塞がれたままにするかのどちらかだ！　いつもそうしている。仕事を無事にやり遂げるためにはそれが唯一の方法なのだ。"
+msgstr "ハッ！　ジャクラルのことか？　仕事を終える前にジャクラルに支払うべきだと？　ありえん！　支払う前にやつが木を切るか、このまま通路を塞がれたままにするかのどちらかだ！　いつもそうしている。仕事を無事にやり遂げるためにはそれが唯一の方法なのだ。"
 
 #: conversationlist_fallhaven_warden.json:fallhaven_warden_pathway_1:0
 msgid "Would anything change your mind?"
@@ -5308,9 +5318,7 @@ msgstr "以前にもお話したように、ヴィルガードで信頼を得る
 
 #: conversationlist_jolnor.json:jolnor_gaintrust_1
 msgid "If you do us a favor, we might consider trusting you. There are three people I can think of that are influential here in Vilegard, that you should try to help."
-msgstr ""
-"もし、私たちの願いを叶えてくれるのであれば、あなたを信用してもいいかもしれません。ヴィルガードには影響力のある3人の人物がいます。あなたにはその方々に力を"
-"貸してもらいたい。"
+msgstr "もし、私たちの願いを叶えてくれるのであれば、あなたを信用してもいいかもしれません。ヴィルガードには影響力のある3人の人物がいます。あなたにはその方々に力を貸してもらいたい。"
 
 #: conversationlist_jolnor.json:jolnor_gaintrust_2
 msgid "First, there is Kaori. She lives up in the northern part of Vilegard. Ask her if she wants help with anything."
@@ -6242,6 +6250,10 @@ msgstr "いいえ、まだ何も分かってません。"
 msgid "Yes, I have found out the story about what happened to him."
 msgstr "はい、彼の身に何が起きたのかがわかりました。"
 
+#: conversationlist_wrye.json:wrye_return_1:3
+msgid "Not yet, but your order has finally arrived."
+msgstr ""
+
 #: conversationlist_wrye.json:wrye_return_2
 msgid "Welcome back. Thank you for your help in finding out what happened to my son."
 msgstr "お帰りなさい。息子に何があったのか、調べていただきありがとうございました。"
@@ -6252,6 +6264,10 @@ msgstr "お帰りなさい。息子に何があったのか、調べていただ
 msgid "You are welcome."
 msgstr "どういたしまして。"
 
+#: conversationlist_wrye.json:wrye_return_2:2
+msgid "Yes, I came back to deliver your order of a 'Lyre'. You must be good at playing it?"
+msgstr ""
+
 #: conversationlist_wrye.json:wrye_mourn_1
 msgid "Shadow help me."
 msgstr "シャドウよお助けください。"
@@ -6261,6 +6277,10 @@ msgstr "シャドウよお助けください。"
 #: conversationlist_prim_outside.json:tonis_1:0
 msgid "What is the matter?"
 msgstr "どうしたんです？"
+
+#: conversationlist_wrye.json:wrye_mourn_1:1
+msgid "Excuse me, I'm here to deliver your order for a 'Lyre'."
+msgstr ""
 
 #: conversationlist_wrye.json:wrye_mourn_2
 msgid "My son! My son is gone."
@@ -6275,6 +6295,10 @@ msgstr "ジョルナーからあなたの息子のことで会ってほしいと
 #: conversationlist_brimhaven_2.json:leta_oromir_complete2_helped_oromir
 msgid "What about him?"
 msgstr "彼がどうしたの？"
+
+#: conversationlist_wrye.json:wrye_mourn_2:2
+msgid "Maybe your order here will comfort you?"
+msgstr ""
 
 #: conversationlist_wrye.json:wrye_mourn_3
 msgid "I don't want to talk about it. Not with an outsider like you."
@@ -9203,8 +9227,7 @@ msgstr "おかえり！　良い知らせだぞ。さっき持ってきてくれ
 
 #: conversationlist_blackwater_herec.json:herec_q4
 msgid "Now I am able to create effective potions that contain some essence of the white wyrms. These potions will be very useful in future dealings with these monsters."
-msgstr ""
-"これでホワイトウィルムのエッセンスを含んだ、効果的なポーションを作れるようになった。モンスターを相手取るのにこのポーションが大いに役立ってくれると思う。"
+msgstr "これでホワイトウィルムのエッセンスを含んだ、効果的なポーションを作れるようになった。モンスターを相手取るのにこのポーションが大いに役立ってくれると思う。"
 
 #: conversationlist_blackwater_herec.json:herec_q5
 msgid "Would you like to trade for some potions?"
@@ -10508,8 +10531,7 @@ msgstr "しばらく前、ティンリンという男とともに、ここクロ
 
 #: conversationlist_benbyr.json:benbyr_story_5
 msgid "As to the nature of our business, I can't really tell you. Let's just say that our business was of the kind that was mutually beneficial and the guards did not know about it."
-msgstr ""
-"事業の性質については、あまり申し上げられません。我々のビジネスは相互に利益をもたらすものであり、衛兵はそれを知らなかったとだけ言っておきましょうか。"
+msgstr "事業の性質については、あまり申し上げられません。我々のビジネスは相互に利益をもたらすものであり、衛兵はそれを知らなかったとだけ言っておきましょうか。"
 
 #: conversationlist_benbyr.json:benbyr_story_6
 msgid "We were ready to finish the big deal, me and Tinlyn. That's when he decided to turn on me."
@@ -10809,9 +10831,7 @@ msgstr "リーダーのロゴーンは、私が読んだフェイガードから
 
 #: conversationlist_minarra.json:minarra_story_5
 msgid "Now, usually, we would go out searching for them, to verify that the men I saw were indeed these men. However, now with the trouble up in Loneford, we cannot afford to spare any guards other than to guarding Loneford."
-msgstr ""
-"さて、通常であればヤツらを探しに出向き、確認した男たちが本当にヤツらであるかを確かめるところだ。しかし、現在はローンフォードで発生した問題によりローンフォ"
-"ードの警備以外に衛兵を割く余裕がない。"
+msgstr "さて、通常であればヤツらを探しに出向き、確認した男たちが本当にヤツらであるかを確かめるところだ。しかし、現在はローンフォードで発生した問題によりローンフォードの警備以外に衛兵を割く余裕がない。"
 
 #: conversationlist_minarra.json:minarra_story_6
 msgid "I am sure that those were the men. If we were to catch and kill them, the people of Feygard would be much safer."
@@ -10840,9 +10860,7 @@ msgstr "さておき、ここから西の道を進んでいるのを確認した
 
 #: conversationlist_minarra.json:minarra_story_10
 msgid "They have stolen three pieces of a very valuable painting from Feygard, from the report that I have read. For their crimes and the savageness of their way, they are wanted dead by the Feygard patrol."
-msgstr ""
-"読んだ報告書によると、ヤツらはフェイガードから貴重な3枚の絵画を盗んでいる。その犯罪と手口の獰猛さのために、フェイガードのパトロールより殺害での指名手配が"
-"されている。"
+msgstr "読んだ報告書によると、ヤツらはフェイガードから貴重な3枚の絵画を盗んでいる。その犯罪と手口の獰猛さのために、フェイガードのパトロールより殺害での指名手配がされている。"
 
 #: conversationlist_minarra.json:minarra_story_10:0
 msgid "I will be back once they are dead. Anything else?"
@@ -11065,9 +11083,7 @@ msgstr "僕に意見はない、あの人たちの活動には関わらないよ
 
 #: conversationlist_rogorn.json:rogorn_story_7
 msgid "Interesting. But now that you are part of their business by coming here to look for me on their behalf, how does that fit into your unwillingness to take sides?"
-msgstr ""
-"面白い。だが、お前さんがヤツらのためにここまでオレを探しに来たことは、お前さんが連中の活動の一部となったと言える。そいつは、気乗りしない側につくこととどう"
-"関係している？"
+msgstr "面白い。だが、お前さんがヤツらのためにここまでオレを探しに来たことは、お前さんが連中の活動の一部となったと言える。そいつは、気乗りしない側につくこととどう関係している？"
 
 #: conversationlist_rogorn.json:rogorn_story_7:1
 msgid "I was told that you have stolen from Feygard, which is not acceptable."
@@ -11240,8 +11256,7 @@ msgstr "そうだな、我々は通常、民間人を雇ってはいない。我
 
 #: conversationlist_gandoren.json:gandoren_7
 msgid "But I guess the recent situation really leaves us no choice. We need to keep the guards in Loneford, and we also need to deliver this shipment. At the moment, we cannot do both."
-msgstr ""
-"だが最近の情勢では、とてもではないが選択の余地などない。衛兵をローンフォードに残しつつ、この荷物を届ける必要がある。現状では、両立することはできない。"
+msgstr "だが最近の情勢では、とてもではないが選択の余地などない。衛兵をローンフォードに残しつつ、この荷物を届ける必要がある。現状では、両立することはできない。"
 
 #: conversationlist_gandoren.json:gandoren_8
 msgid "Tell you what, you might be able to help us after all if you are willing to work."
@@ -11565,6 +11580,7 @@ msgstr "久しぶり。ヴィルガードの鍛冶屋にアイテムを届けて
 #: conversationlist_brimhaven.json:brv_employee_10:0
 #: conversationlist_brimhaven.json:mikhail_news_20:2
 #: conversationlist_gison.json:gison_p2_50:2
+#: conversationlist_delivery.json:brv_wh_delivery_boss_10_10:1
 msgid "Not yet."
 msgstr "まだです。"
 
@@ -11956,8 +11972,7 @@ msgstr "参ったな、もう1人酔っ払いと話をしないといけない�
 
 #: conversationlist_loneford_2.json:loneford_guard0
 msgid "We keep the order around here. I wonder what the people of Loneford would do without us guards from Feygard. Poor things."
-msgstr ""
-"この周辺での治安維持を行っている。フェイガードから我々が警備を担当しに来ていなければ、今頃ローンフォードの者たちはどうなっていたことだか。かわいそうに。"
+msgstr "この周辺での治安維持を行っている。フェイガードから我々が警備を担当しに来ていなければ、今頃ローンフォードの者たちはどうなっていたことだか。かわいそうに。"
 
 #: conversationlist_loneford_2.json:loneford_villager0
 msgid "*cough* Please help us, soon there won't be many left of us!"
@@ -12053,9 +12068,7 @@ msgstr "次の日の夜だ、オレは少年がやってたことの痕跡を探
 
 #: conversationlist_loneford_2.json:landa_14
 msgid "I peeked out the window to see if there was anyone that might see me. Instead, I saw someone skulking around the well, filling up several vials with both dirt around the well, and water from the well itself."
-msgstr ""
-"誰かに見られるかもしれないから、窓の外を覗いたんだ。代わりに、誰かが井戸の周りをうろついていて、バイアルのいくつかを井戸の周りの土と井戸の水の両方で満たし"
-"ているのが見えた。"
+msgstr "誰かに見られるかもしれないから、窓の外を覗いたんだ。代わりに、誰かが井戸の周りをうろついていて、バイアルのいくつかを井戸の周りの土と井戸の水の両方で満たしているのが見えた。"
 
 #: conversationlist_loneford_2.json:landa_15
 msgid "I am sure it was Buceth, from the chapel. I have a good eye for people, and a good memory. Yes, I am sure it was Buceth."
@@ -12501,21 +12514,15 @@ msgstr "とはいえ自分たちがローンフォードでできる限りの平
 
 #: conversationlist_taevinn.json:taevinn_3
 msgid "Have you seen him? That fool Sienn. Him and his 'pet' are always trying to cause some trouble. We can't have that around here in our friendly village. Especially not in times like these when we are trying to show our good side to those magnificent guards from Feygard that are here."
-msgstr ""
-"あのバカなシエンですよ。会ったことは？　あの男とそのペットはいつもトラブルを起こそうとする。友好的なこの村でそんなことできるわけがない。特に今みたいに、フ"
-"ェイガードから来てくださった立派な衛兵に自分たちの良さをアピールしたいときになどとんでもない。"
+msgstr "あのバカなシエンですよ。会ったことは？　あの男とそのペットはいつもトラブルを起こそうとする。友好的なこの村でそんなことできるわけがない。特に今みたいに、フェイガードから来てくださった立派な衛兵に自分たちの良さをアピールしたいときになどとんでもない。"
 
 #: conversationlist_taevinn.json:taevinn_4
 msgid "Did you know I tried to talk to him on several occasions about his so called 'pet'? I couldn't really make out what he was trying to tell me, but that thing of his nearly tried to kill me, it did!"
-msgstr ""
-"何度か彼に、彼がペットと呼んでるものについて話しをしようとしたのですけどご存知で？　"
-"何を言いたいのかいまいちよく分かりませんでしたがね。ですが、彼の側にいたアレが私を殺そうとしたんです！　死ぬかと思いましたよ！"
+msgstr "何度か彼に、彼がペットと呼んでるものについて話しをしようとしたのですけどご存知で？　何を言いたいのかいまいちよく分かりませんでしたがね。ですが、彼の側にいたアレが私を殺そうとしたんです！　死ぬかと思いましたよ！"
 
 #: conversationlist_taevinn.json:taevinn_5
 msgid "I tell you, there's mischief all around him and that thing he keeps around. I am sure they are up to something. They probably caused this illness somehow. Maybe we caught something contagious from that thing of his that he keeps around?"
-msgstr ""
-"言っておきますがね、あの男の周りにはいたずらが蔓延していますし、中には手元に置いてあるものもあるんです。何か企んでいるに違いありませんよ。やつらが病気を引"
-"き起こしたのでしょう。もしかしたら、持ち物から何か伝染するものでも見つかるかもしれませんよ？"
+msgstr "言っておきますがね、あの男の周りにはいたずらが蔓延していますし、中には手元に置いてあるものもあるんです。何か企んでいるに違いありませんよ。やつらが病気を引き起こしたのでしょう。もしかしたら、持ち物から何か伝染するものでも見つかるかもしれませんよ？"
 
 #: conversationlist_loneford_kuldan.json:kuldan_1
 msgid "Please report any suspicious behavior you might see."
@@ -12571,15 +12578,11 @@ msgstr "少なくとも我々の主張を裏付ける証拠が得られたこと
 
 #: conversationlist_loneford_kuldan.json:kuldan_bc_7
 msgid "As for Loneford, I guess we will have to start bringing in water from Feygard to help the people here. Good thing they have us around, what would they do otherwise?"
-msgstr ""
-"ローンフォードに関しては、人々を助けるためにフェイガードから水を運び込まねばならないだろう。我々が来ていてよかったよ、さもなければ彼らはどうなっていたのだ"
-"ろうか？"
+msgstr "ローンフォードに関しては、人々を助けるためにフェイガードから水を運び込まねばならないだろう。我々が来ていてよかったよ、さもなければ彼らはどうなっていたのだろうか？"
 
 #: conversationlist_loneford_kuldan.json:kuldan_bc_8
 msgid "And you, my friend - you should of course be sufficiently rewarded for your assistance in this matter. You should travel to the glorious city of Feygard to the northwest and report to the castle steward there for further instructions."
-msgstr ""
-"そして君は、もちろんこの件での協力には十分に報われるべきだ。北西にある栄光の都市フェイガードに向かいなさい、そこの城の執事に報告しさらなる指示を仰いでくれ"
-"。"
+msgstr "そして君は、もちろんこの件での協力には十分に報われるべきだ。北西にある栄光の都市フェイガードに向かいなさい、そこの城の執事に報告しさらなる指示を仰いでくれ。"
 
 #: conversationlist_loneford_kuldan.json:kuldan_bc_9
 msgid "I happen to know the castle steward personally, and I will send word to him about your help here."
@@ -12747,9 +12750,7 @@ msgstr "フェイガードが助けてくれてワシらは本当に助かって
 
 #: conversationlist_loneford_4.json:telund
 msgid "Who are you? Have you seen my father Selgan? They all tell me he will be back shortly, but they are all lying! I know it, I know it! He wasn't home yesterday, and he isn't home today."
-msgstr ""
-"あなたはだれ？　セルガンパパを見なかった？　みんなすぐに戻ってくるっていってるけど、みんなウソつきだ！　知ってるもん！　"
-"きのうは家にいなかったよ、きょうだって家にいない。"
+msgstr "あなたはだれ？　セルガンパパを見なかった？　みんなすぐに戻ってくるっていってるけど、みんなウソつきだ！　知ってるもん！　きのうは家にいなかったよ、きょうだって家にいない。"
 
 #: conversationlist_loneford_4.json:loneford_tavern_patron
 msgid "This is no place for a kid like you. I think you had better leave now."
@@ -13805,9 +13806,7 @@ msgstr "ここから少し東、ロレス湖の北岸に当たる半島に廃屋
 
 #: conversationlist_remgard_bridgeguard.json:remgardb_help_3
 msgid "We have reason to believe that this cabin is inhabited by someone, since we have seen candlelight coming from there during the night across the lake. We are not certain though, it could just be the moonlight on the water."
-msgstr ""
-"我々には、この小屋に誰かが住んでいるかもしれないと考える理由がある。夜に湖の向こう側からろうそくの明かりが見えたのだ。確かとは言い難い、ただの水面の月明か"
-"りだったかもしれんしな。"
+msgstr "我々には、この小屋に誰かが住んでいるかもしれないと考える理由がある。夜に湖の向こう側からろうそくの明かりが見えたのだ。確かとは言い難い、ただの水面の月明かりだったかもしれんしな。"
 
 #: conversationlist_remgard_bridgeguard.json:remgardb_help_4
 msgid "That's where you come in, and might be able to help us."
@@ -14240,9 +14239,7 @@ msgstr "カザウルロットワームは、卵が孵化する前に餌となる
 #: conversationlist_ulirfendor.json:ulirfendor_infected_14
 #: conversationlist_ulirfendor.json:ulirfendor_infected_16
 msgid "The ritual proceeds with the carrier being eaten from the inside by the rotworms and their eggs, in effect, giving birth to the creatures within. Also, the process can have ... shall we say ... unusual effects on the carrier before that."
-msgstr ""
-"儀式は宿主が内側からロットワームとその卵に食われながら進行し、体内で生き物を産み出すこととなります。またその過程で…宿主に異常な影響を及ぼす、とでも言いま"
-"しょうか。"
+msgstr "儀式は宿主が内側からロットワームとその卵に食われながら進行し、体内で生き物を産み出すこととなります。またその過程で…宿主に異常な影響を及ぼす、とでも言いましょうか。"
 
 #: conversationlist_ulirfendor.json:ulirfendor_infected_15
 msgid "Needless to say, you are in great danger, and you should seek help immediately."
@@ -15044,9 +15041,7 @@ msgstr "ポーションを飲む。"
 
 #: conversationlist_talion_2.json:talion_cure_7
 msgid "[The potion smells rancid, but you manage to drink it all down. The pain from the stomach decreases, and you feel one of the rotworms crawling up into your mouth. You quickly spit the worm out into the now empty vial.]"
-msgstr ""
-"（ポーションはいやな臭いがするが、あなたはなんとか飲み干す。胃の痛みが和らぎ、口の中のロットワームが這い上がってくるのを感じる。すぐさま空になったバイアル"
-"にワームを吐き出す）"
+msgstr "（ポーションはいやな臭いがするが、あなたはなんとか飲み干す。胃の痛みが和らぎ、口の中のロットワームが這い上がってくるのを感じる。すぐさま空になったバイアルにワームを吐き出す）"
 
 #: conversationlist_talion_2.json:talion_cured_1
 msgid "Ah, that seems to have worked. Frankly, I was a little worried that it might not have worked, but seeing you spit out that worm really confirms it. Ha ha."
@@ -15395,8 +15390,7 @@ msgstr "あぁ、うちの姉ったらホントに頑固者！　昨日の夜の
 
 #: conversationlist_elwyl.json:elwyl_13
 msgid "So, I was talking to her about those potions of accuracy focus and how I always thought their blue liquid seemed so odd, since there were no blue things that he used while making them."
-msgstr ""
-"それで話してたのは命中重視のポーションのことで、使ってるものに青色のものがないのに液体が青色なのは変だなって、私がいつも思ってたって話だったんだけど。"
+msgstr "それで話してたのは命中重視のポーションのことで、使ってるものに青色のものがないのに液体が青色なのは変だなって、私がいつも思ってたって話だったんだけど。"
 
 #: conversationlist_elwyl.json:elwyl_14
 msgid "Then all of a sudden, she started arguing with me about how I have things completely wrong. She insists that the potions were green."
@@ -16637,9 +16631,7 @@ msgstr "うちの騎士の1人も行方をくらましていてな。さて、�
 
 #: conversationlist_elythom_1.json:krell_jhaeld4
 msgid "You see, usually it is us knights that find ... missing people. Now, we have had one of our own disappear. This has never happened before, and we are really unsure about what to do about it."
-msgstr ""
-"当然、普通なら行方不明者を見つけ出すのは…騎士なのだ。それが、仲間の1人が行方不明となってしまった。こんなことは前例がない、こちらとしてもどうしたものか本"
-"当に困っている。"
+msgstr "当然、普通なら行方不明者を見つけ出すのは…騎士なのだ。それが、仲間の1人が行方不明となってしまった。こんなことは前例がない、こちらとしてもどうしたものか本当に困っている。"
 
 #: conversationlist_elythom_1.json:krell_jhaeld5
 msgid "Granted, people in our order have succumbed in combat to greater foes, but to just ... disappear without a trace, that's unheard of."
@@ -17182,6 +17174,7 @@ msgstr "うちの酒場へようこそお越しくださいました。ごゆっ
 
 #: conversationlist_kendelow.json:kendelow_d
 #: conversationlist_ervelyn.json:ervelyn_d
+#: conversationlist_delivery.json:brv_wh_delivery_boss_10:0
 msgid "How may I be of service?"
 msgstr "どのようなご用件でしょうか？"
 
@@ -17266,12 +17259,16 @@ msgid "How interesting. The child from Fallhaven, here in Remgard?"
 msgstr "こりゃ面白い。フォールヘブンのガキが、このレムガードに？"
 
 #: conversationlist_arghes.json:arghes_2:0
-msgid "I'm not from Fallhaven, I am from Crossglen, west of Fallhaven."
+msgid "I'm not from Fallhaven, I'm from Crossglen, west of Fallhaven."
 msgstr "僕はフォールヘブンじゃなくて、フォールヘブンから西にあるクロスグレンの出身です。"
 
 #: conversationlist_arghes.json:arghes_2:2
 msgid "How do you know where I am from?"
 msgstr "どうして僕がどこから来たのかわかるのですか？"
+
+#: conversationlist_arghes.json:arghes_2:3
+msgid "And how interesting that you ordered a pair of 'Yellow boots'. Did you really order this?"
+msgstr ""
 
 #: conversationlist_arghes.json:arghes_3a
 msgid "Is that so? Hmm, most interesting. It does not change anything, however."
@@ -18240,9 +18237,7 @@ msgstr "彼らの身に何が起こったと思いますか？"
 
 #: conversationlist_aulowenn.json:aulowenn10
 msgid "I have two theories. My first thought is that some of the local creatures that we've been having problems with here might have captured them, or even killed them. I know for a fact that some were killed by the creatures, since we even buried some of my men to the east of here, but I am not certain of the others."
-msgstr ""
-"2つ仮説がある。最初に考えたのは、悩みの種となっているこの地の怪物によって捕らえられたか、殺されでもしたのではというものだ。ここの東の方で部下を埋葬したの"
-"で、何人かは怪物に殺されたことはわかっている。ただ他については確信が持てない。"
+msgstr "2つ仮説がある。最初に考えたのは、悩みの種となっているこの地の怪物によって捕らえられたか、殺されでもしたのではというものだ。ここの東の方で部下を埋葬したので、何人かは怪物に殺されたことはわかっている。ただ他については確信が持てない。"
 
 #: conversationlist_aulowenn.json:aulowenn11
 msgid "The creatures in these woods are intelligible, but fierce. Luckily, we've been able to kill them off before they've been able to spew their foul lies. There are still a few of them around though."
@@ -19976,9 +19971,7 @@ msgstr "ほれ。調合薬10本じゃ。"
 
 #: conversationlist_lodar.json:lodar_spo2_0
 msgid "I have discovered that if you mix some ground up claws from a beast called the white wyrm, together with a slight sprinkle of the center of a ruby gem, it can have a most interesting effect on you. Two of those claws and one gem would do."
-msgstr ""
-"ホワイトウィルムと呼ばれる獣の爪をすりつぶしたものを、ルビーの宝石の中心に少し散らすと、とても興味深い効果があることを発見した。その爪を2本と宝石1つがあ"
-"れば十分じゃ。"
+msgstr "ホワイトウィルムと呼ばれる獣の爪をすりつぶしたものを、ルビーの宝石の中心に少し散らすと、とても興味深い効果があることを発見した。その爪を2本と宝石1つがあれば十分じゃ。"
 
 #: conversationlist_lodar.json:lodar_spo3_0
 msgid "Up in the north, I have heard tales of beast called the arulir. Their skin is thick as bark due to the interesting oily substance that they produce. I have learned that if you extract some of that thick oily substance, and mix it with an infectious claw from some monster, you can make a potion that makes your skin almost as tough as theirs. I will require two of those skins for it to be effective, and I believe you can find the type of claws that I require on monsters that dwell underground and in caves somewhere outside Fallhaven."
@@ -21485,9 +21478,7 @@ msgstr "クルリックはここに眠る。いつも飲み過ぎるのだと話
 
 #: conversationlist_v070signs1.json:sign_rbfcr6_grave1
 msgid "The text on the cross says: Here lies another Nor City savage bandit that roamed the Duleian road, easily slain by the glorious Feygard patrol."
-msgstr ""
-"十字架にはこう文章が書かれている: "
-"デュリアン街道を彷徨いていたものの栄光あるフェイガードパトロール隊に容易く殺された、野蛮なノアシティ盗賊がここに眠っている。"
+msgstr "十字架にはこう文章が書かれている: デュリアン街道を彷徨いていたものの栄光あるフェイガードパトロール隊に容易く殺された、野蛮なノアシティ盗賊がここに眠っている。"
 
 #: conversationlist_v070signs1.json:sign_wlostmine2
 msgid "Welcome to beautiful Charwood heights!"
@@ -22280,8 +22271,7 @@ msgstr "だから何ですか。手伝えます！"
 
 #: conversationlist_pathway_fallhaven.json:guard_pathway_4
 msgid "OK, maybe you can be of use. Talk to the guard captainn. Maybe you can convince him to pay the woodcutter first. But I have to warn you, he is a stubborn beast."
-msgstr ""
-"いいだろう、君は頼りになるかもしれないな。衛兵隊長と話してくれるか。きこりに先払いするよう説得できるかもしれん。ただ忠告しておくがな、あの人は頑固だぞ。"
+msgstr "いいだろう、君は頼りになるかもしれないな。衛兵隊長と話してくれるか。きこりに先払いするよう説得できるかもしれん。ただ忠告しておくがな、あの人は頑固だぞ。"
 
 #: conversationlist_pathway_fallhaven.json:guard_pathway_4:0
 msgid "OK, thanks for your advice. I'm going to do that!"
@@ -23725,9 +23715,7 @@ msgstr "へぇ？　そいつがどうかしたか？　…ゲプッ…知りた
 
 #: conversationlist_graveyard1.json:algore_20
 msgid "I heard rumors about an unguarded treasure chest. I heard that the key that opened it, hung around the neck of an undead roaming the cemetery south of the chest. I also heard that the entrance to the cemetery was sealed by magic."
-msgstr ""
-"放置されている宝箱の噂を耳にした。ソイツを開ける鍵は、宝箱の南の墓地を徘徊しているアンデッドの首にぶら下がっているらしい。墓地の入り口は魔法で封印されてい"
-"るとも聞いた。"
+msgstr "放置されている宝箱の噂を耳にした。ソイツを開ける鍵は、宝箱の南の墓地を徘徊しているアンデッドの首にぶら下がっているらしい。墓地の入り口は魔法で封印されているとも聞いた。"
 
 #: conversationlist_graveyard1.json:algore_30
 msgid ""
@@ -23749,9 +23737,7 @@ msgstr ""
 
 #: conversationlist_graveyard1.json:algore_50
 msgid "Still, I did not give up. I thought that if I opened the chest and gave its treasure as a gift to Lord Geomyr, I could plead with him to lift the bonemeal ban in time to save my daughter. It sounds stupid but I was desperate."
-msgstr ""
-"それでも、私は諦めなかった。あの箱を開いて財宝をジオミア卿に贈れば、娘を救う間だけでも骨粉の禁止令を解いてもらえるよう懇願できると考えたんだ。バカみたいに"
-"聞こえるだろうが、必死だった。"
+msgstr "それでも、私は諦めなかった。あの箱を開いて財宝をジオミア卿に贈れば、娘を救う間だけでも骨粉の禁止令を解いてもらえるよう懇願できると考えたんだ。バカみたいに聞こえるだろうが、必死だった。"
 
 #: conversationlist_graveyard1.json:algore_60
 msgid "A few days later, I tracked the bandits down. I begged and pleaded but they would not volunteer any information. They were obviously after the chest themselves, and they attacked me."
@@ -23892,15 +23878,11 @@ msgstr "文書には、強力なアンデッドがうろついている魔法で
 
 #: conversationlist_graveyard1.json:algore_85
 msgid "The ground began to tremble and darkness filled the sky. This was followed by a cracking sound, the loudest sound my ears ever heard, making a gust of cold air rush past me. Then, corpses began to claw their way to the surface. The odor ... it was putrid."
-msgstr ""
-"地面が揺れ始める、空は闇に包まれる。それに続いて、聞いたこともないような大きなひび割れた音がして、冷たい突風が私を追い越していく。そして、死体が地面から這"
-"い上がり始める。悪臭…腐敗していた。"
+msgstr "地面が揺れ始める、空は闇に包まれる。それに続いて、聞いたこともないような大きなひび割れた音がして、冷たい突風が私を追い越していく。そして、死体が地面から這い上がり始める。悪臭…腐敗していた。"
 
 #: conversationlist_graveyard1.json:algore_86
 msgid "Suddenly, a horde of undead attacked me. I fought them off as best I could but there were just too many. I barely escaped with my life and I never went back."
-msgstr ""
-"突如、アンデッドが群れで襲いかかってきた。全力で撃退したはいいが、あまりにも数が多すぎる。結局私は命からがら逃げ延びるはめになった。そうして二度と舞い戻っ"
-"てくることはなかった。"
+msgstr "突如、アンデッドが群れで襲いかかってきた。全力で撃退したはいいが、あまりにも数が多すぎる。結局私は命からがら逃げ延びるはめになった。そうして二度と舞い戻ってくることはなかった。"
 
 #: conversationlist_graveyard1.json:algore_87
 msgid ""
@@ -23920,9 +23902,7 @@ msgstr "頑張ってくれ。"
 
 #: conversationlist_graveyard1.json:algore_86b
 msgid "My daughter passed away shortly after I returned. I failed my wife and my daughter. I lost everything. I buried my family in Loneford, gave up my trade, and came here. Now, I drink Lowyna's special brew all day ... it helps me forget."
-msgstr ""
-"娘が亡くなったのは帰ってきて間もなくのことだった。私は妻と娘を裏切ってしまったんだ。そうして私はすべてを失った。家族をローンフォードへと埋葬して、商売を諦"
-"めここにやって来た。今ではローウィナのスペシャルビールを1日中飲んでいるよ…これだけが忘れさせてくれるんだ。"
+msgstr "娘が亡くなったのは帰ってきて間もなくのことだった。私は妻と娘を裏切ってしまったんだ。そうして私はすべてを失った。家族をローンフォードへと埋葬して、商売を諦めここにやって来た。今ではローウィナのスペシャルビールを1日中飲んでいるよ…これだけが忘れさせてくれるんだ。"
 
 #: conversationlist_graveyard1.json:algore_86b:0
 msgid "I'm sorry for your losses. You have suffered a lot. I want to finish what you started. Do you still have that text?"
@@ -24077,8 +24057,7 @@ msgstr ""
 
 #: conversationlist_graveyard1.json:algore_31
 msgid "That was until I had to travel to Remgard to purchase some new inventory. I normally make the trip alone. This time however, my wife and daughter decided to accompany me to Remgard."
-msgstr ""
-"ある時、在庫を仕入れにレムガードまで出かけることになった。いつもなら自分1人で旅に出るところだ。とはいえこのときは妻と娘が同行することになった。"
+msgstr "ある時、在庫を仕入れにレムガードまで出かけることになった。いつもなら自分1人で旅に出るところだ。とはいえこのときは妻と娘が同行することになった。"
 
 #: conversationlist_graveyard1.json:cithurn_61
 msgid "Well done! A thousand thanks young adventurer. I am in your debt. However, I would still like my talisman back. I need it to keep me safe."
@@ -24108,17 +24087,14 @@ msgstr ""
 
 #: conversationlist_graveyard1.json:algore_33
 msgid "My daughter was afflicted by a nasty form of blistering skin. I rushed her back to Loneford. I thought with rest, good food, and water she could pull through ... but although the blisters were gradually healing, my daughter's health continued to decline."
-msgstr ""
-"娘は酷い水ぶくれに悩まされることになった。私たちは急いでローンフォードに引き返した。安静にして、おいしい食事と水を飲めば治るだろうと思っていたんだが…水ぶ"
-"くれは徐々に治まったが、娘の体調は衰えていった。"
+msgstr "娘は酷い水ぶくれに悩まされることになった。私たちは急いでローンフォードに引き返した。安静にして、おいしい食事と水を飲めば治るだろうと思っていたんだが…水ぶくれは徐々に治まったが、娘の体調は衰えていった。"
 
 #: conversationlist_graveyard1.json:algore_41
 msgid ""
 "I had to do something. I went to Fallhaven and begged Thoronir to make me a bonemeal potion. Although it would have cured my daughter completely, he refused because Lord Geomyr banned all use of bonemeal as a healing substance!\n"
 "[Hagale takes another long swig from the bottle of Lowyna's special brew and finishes it. He proceeds to open the second the bottle.]"
 msgstr ""
-"何かをしなければならなかった。フォールヘブンまで行って、骨粉ポーションを作ってもらうようソロニールに頼んだんだ。それさえあれば娘は治るはずだった。だが断ら"
-"れたよ、ジオミア卿が骨粉の治療薬としての使用を禁じたからだ！\n"
+"何かをしなければならなかった。フォールヘブンまで行って、骨粉ポーションを作ってもらうようソロニールに頼んだんだ。それさえあれば娘は治るはずだった。だが断られたよ、ジオミア卿が骨粉の治療薬としての使用を禁じたからだ！\n"
 "（ハガレはローウィナのスペシャルビールのボトルからもう1杯飲み干し空にした。2本目のボトルを開ける）"
 
 #: conversationlist_graveyard1.json:algore_51
@@ -24127,9 +24103,7 @@ msgstr "箱と墓地の場所についての情報を探し求めた。その過
 
 #: conversationlist_graveyard1.json:algore_61
 msgid "I may be a trader, but traders have to learn how to protect themselves. The first few went down easily, but the leader was an experienced fighter. We fought for over an hour, but eventually I managed to kill him. I searched the body and found an ancient text."
-msgstr ""
-"私は商人かもしれないが、商人は自分の身を守る方法を学ばなくてはならないんだ。最初の数人は簡単に倒せたが、リーダーは経験豊富な戦士だった。1時間以上も戦って"
-"やっと殺すことができたよ。その遺体を調べてみたところ、古文書を発見した。"
+msgstr "私は商人かもしれないが、商人は自分の身を守る方法を学ばなくてはならないんだ。最初の数人は簡単に倒せたが、リーダーは経験豊富な戦士だった。1時間以上も戦ってやっと殺すことができたよ。その遺体を調べてみたところ、古文書を発見した。"
 
 #: conversationlist_graveyard1.json:algore_x81
 msgid "The magical barrier at the cemetery could only be penetrated by someone carrying the text, which contained several magical inscriptions."
@@ -24137,9 +24111,7 @@ msgstr "墓地の魔法の障壁は、魔法の碑文を含む文書を持って
 
 #: conversationlist_graveyard1.json:algore_x82
 msgid "I took the best weapons and armor from the bandits, and made my way to the cemetery. Carrying the ancient text in my front pouch, I approached the entrance to the cemetery. I was only a few feet away when the text began to glow."
-msgstr ""
-"盗賊から一番良い武器と鎧とを奪って、私は墓地へと向かった。古文書をポーチに収めたまま、墓地の入り口へと近づいたんだ。すると、ほんの数フィート離れた辺りで文"
-"書が光り始めた。"
+msgstr "盗賊から一番良い武器と鎧とを奪って、私は墓地へと向かった。古文書をポーチに収めたまま、墓地の入り口へと近づいたんだ。すると、ほんの数フィート離れた辺りで文書が光り始めた。"
 
 #: conversationlist_graveyard1.json:graveyardtraveler_60
 msgid "Maybe he knows more. You should give him a visit."
@@ -24753,9 +24725,7 @@ msgstr "キャンセル"
 
 #: conversationlist_guynmart.json:guynmart_s_tower_rest_20
 msgid "You close your eyes and almost immediately see people starving, with rats everywhere, chewing on the faces of the dead, and demons throwing their shackled human slaves into giant cauldrons of a boiling, foul smelling brew..."
-msgstr ""
-"目を閉じるとすぐさま、飢えた人々、死者の顔の至るところをかじっているネズミ、悪魔が拘束した人間の奴隷を悪臭を放つ沸騰した巨大な大釜へと投げ込んでいるのが見"
-"える…"
+msgstr "目を閉じるとすぐさま、飢えた人々、死者の顔の至るところをかじっているネズミ、悪魔が拘束した人間の奴隷を悪臭を放つ沸騰した巨大な大釜へと投げ込んでいるのが見える…"
 
 #: conversationlist_guynmart.json:guynmart_s_tower_rest_30
 msgid "We have come to get you! We are hungry!"
@@ -25635,6 +25605,10 @@ msgstr "わが主人の部屋でなにをしているので？"
 #: conversationlist_guynmart_npc.json:guynmart_servant_10:0
 msgid "You are lying around in bed in broad daylight?"
 msgstr "真っ昼間からベッドで寝転がってるの？"
+
+#: conversationlist_guynmart_npc.json:guynmart_servant_10:1
+msgid "I'm here to give you your ordered item. You don't want it?"
+msgstr ""
 
 #: conversationlist_guynmart_npc.json:guynmart_servant_20
 msgid "I am checking that the bed of young Robalyrius is still in order."
@@ -28633,9 +28607,7 @@ msgstr "続きを。"
 
 #: conversationlist_stoutford_combined.json:stoutford_widow_roots4045_5
 msgid "My father was the alchemist of this town. He was very talented, and inspired. He experimented with all sorts of ingredients from all over Dhayavar. Whatever he could get from the travellers stopping at Stoutford."
-msgstr ""
-"私の父はこの町の錬金術師でした。才能とやる気に満ちあふれていた方でした。ダヤヴァル中からあらゆる素材を集めて実験をしてました。スタウトフォードに立ち寄る旅"
-"人からも色々と手に入れていましたね。"
+msgstr "私の父はこの町の錬金術師でした。才能とやる気に満ちあふれていた方でした。ダヤヴァル中からあらゆる素材を集めて実験をしてました。スタウトフォードに立ち寄る旅人からも色々と手に入れていましたね。"
 
 #: conversationlist_stoutford_combined.json:stoutford_widow_roots4045_6
 msgid "He created unique potions, and no other alchemist that I have heard of managed to reproduce his recipes."
@@ -29034,9 +29006,7 @@ msgstr "自分のことは自分でできる、証明しましょうか？"
 
 #: conversationlist_stoutford_combined.json:blornvale_s1_3:2
 msgid "It is not for me of course. My father and his men are fighting in Flagstone right now. They urgently need some useful potions, not soap! I think three potions of the brave would do it, if you happen to have them. And possibly more, if it is good stuff."
-msgstr ""
-"もちろん自分のためじゃない。父とその部下がフラッグストーンで戦ってます。石鹸じゃなくて、役に立つポーションが至急必要なんだ！　"
-"勇敢のポーションが3本もあれば十分だと思います。良いものならもっと欲しいかも。"
+msgstr "もちろん自分のためじゃない。父とその部下がフラッグストーンで戦ってます。石鹸じゃなくて、役に立つポーションが至急必要なんだ！　勇敢のポーションが3本もあれば十分だと思います。良いものならもっと欲しいかも。"
 
 #: conversationlist_stoutford_combined.json:blornvale_s1_4
 msgid "Ah. Oh. That changes everything. Wait a second."
@@ -29194,15 +29164,11 @@ msgstr "監獄？"
 
 #: conversationlist_stoutford_combined.json:cornith_1_3
 msgid "Flagstone prison. We never liked it being so close. Who would? But recently something happened, and it was overrun by monsters."
-msgstr ""
-"フラッグストーン監獄ですよ。元々こんなすぐそばにあることは嫌だったんです。誰だってそうでしょう？　"
-"ところが最近何かがあったらしくて、あそこでモンスターが溢れ出したのです。"
+msgstr "フラッグストーン監獄ですよ。元々こんなすぐそばにあることは嫌だったんです。誰だってそうでしょう？　ところが最近何かがあったらしくて、あそこでモンスターが溢れ出したのです。"
 
 #: conversationlist_stoutford_combined.json:cornith_1_4
 msgid " There's a guard that protects the path, but without a good reason to come this way most people choose not to risk it. And then of course, there are the monsters coming from the south."
-msgstr ""
-" "
-"街道を守る衛兵こそいますが、特に通る理由もなければ大抵の人はリスクを冒さない方を選ぶものです。それからもちろん、南からやってくるモンスターもいるわけです。"
+msgstr " 街道を守る衛兵こそいますが、特に通る理由もなければ大抵の人はリスクを冒さない方を選ぶものです。それからもちろん、南からやってくるモンスターもいるわけです。"
 
 #: conversationlist_stoutford_combined.json:cornith_1_4:0
 msgid "Monsters from the south?"
@@ -29288,6 +29254,10 @@ msgstr "少し心配そうですね。"
 msgid "You look happy again."
 msgstr "嬉しそうですね。"
 
+#: conversationlist_stoutford_combined.json:odirath_0:5
+msgid "Did you really order such an ugly porcelain figure? Oops, sorry I didn't mean to offend you"
+msgstr ""
+
 #: conversationlist_stoutford_combined.json:odirath_1
 msgid "I did see someone that might have been your brother. He was with a rather dubious looking person. They didn't stay around here very long though. Sorry, but that's all I can tell you. You should ask around town. Other townsfolk may know more."
 msgstr "お兄さんだったかもしれない方を見かけました。怪しげな人と一緒でしたね。ただ長くは滞在しなかったです。すみませんが、私が話せるのはこのくらいです。町中で聞いてみてください。他の人ならもっと知っているかもしれませんよ。"
@@ -29303,14 +29273,11 @@ msgstr "わかりました。スタウトフォードについて教えてくれ
 
 #: conversationlist_stoutford_combined.json:odirath_1_1
 msgid "Stoutford is a small town, and life used to be easy here. A lot of traders stayed in Stoutford on their way to and from Blackwater mountain, and spent money that boosted the economy of the whole town. Those days are gone though."
-msgstr ""
-"スタウトフォードは小さな町で、以前はここでの生活は楽なものでした。多くの商人がブラックウォーター山への行き帰りでスタウトフォードに留まり、お金を使って町全"
-"体の経済を活性化してくれました。ですがそんな日々は終わった。"
+msgstr "スタウトフォードは小さな町で、以前はここでの生活は楽なものでした。多くの商人がブラックウォーター山への行き帰りでスタウトフォードに留まり、お金を使って町全体の経済を活性化してくれました。ですがそんな日々は終わった。"
 
 #: conversationlist_stoutford_combined.json:odirath_1_2
 msgid "The path to Blackwater mountain was cut off by a rock fall. That stopped most of the traders from coming here. The attacks by the monsters stopped the rest."
-msgstr ""
-"ブラックウォーター山への道が落石で断たれました。ほとんどの商人がここに来ることを止めてしまいましたよ。残りもモンスターの襲撃によって止めました。"
+msgstr "ブラックウォーター山への道が落石で断たれました。ほとんどの商人がここに来ることを止めてしまいましたよ。残りもモンスターの襲撃によって止めました。"
 
 #: conversationlist_stoutford_combined.json:odirath_1_2:0
 #: conversationlist_stoutford_combined.json:odirath_1_4:3
@@ -29561,8 +29528,7 @@ msgstr "地元の言い伝えによると、モンスターの来襲から身を
 
 #: conversationlist_stoutford_combined.json:yolgen_surroundings_2b
 msgid "But their success didn't last long. It is said that after a few years unspeakable horrors overwhelmed the knights and miners of the King, and the mine has been abandoned ever since."
-msgstr ""
-"ですが、成功は長くは続きませんでした。数十年後には言いようのない恐怖に王の騎士と鉱夫たちは打ちのめされたそうです、それ以来鉱山は放棄されています。"
+msgstr "ですが、成功は長くは続きませんでした。数十年後には言いようのない恐怖に王の騎士と鉱夫たちは打ちのめされたそうです、それ以来鉱山は放棄されています。"
 
 #: conversationlist_stoutford_combined.json:yolgen_surroundings_2c
 msgid "However, recently more and more of the most foul monsters are coming from the mountain and we have to fend them off. With the rise of undead knights in the castle and Lord Erwyn's demise we struggle more and more."
@@ -29615,9 +29581,7 @@ msgstr "ここは嫌いだ。雨ばかり降るし、不気味なアンデッド
 
 #: conversationlist_stoutford_combined.json:flagstone_sentry_45
 msgid "This is both good and bad news. I am truly grateful that you rid us of the warden and his thralls. Talk to Yolgen for a reward. We will make sure that we recover this prisoner."
-msgstr ""
-"これは朗報だが、悪い知らせでもあるな。所長と囚われていた者たちを取り除いてくれたことには強く感謝している。報酬についてはヨルゲンと話してくれ。囚人に関して"
-"は、我々が必ず回復させよう。"
+msgstr "これは朗報だが、悪い知らせでもあるな。所長と囚われていた者たちを取り除いてくれたことには強く感謝している。報酬についてはヨルゲンと話してくれ。囚人に関しては、我々が必ず回復させよう。"
 
 #: conversationlist_stoutford_combined.json:yolgen_flagstone_0
 msgid "If you could help with Flagstone, it would take a big burden off us."
@@ -29797,8 +29761,7 @@ msgstr "終止符を打つ方法があるはずだ。"
 
 #: conversationlist_stoutford_combined.json:yolgen_castle_1_1b
 msgid "Let me see... You already killed some of Erwyn's undead knights and soldiers - if killed is the correct word for undead. But there are some still around."
-msgstr ""
-"どれどれ…エルウィンのアンデッド騎士と兵士を殺害していますね、殺害という言葉がアンデッドに適切であるなら、ですが。しかしまだ何人か残っています。"
+msgstr "どれどれ…エルウィンのアンデッド騎士と兵士を殺害していますね、殺害という言葉がアンデッドに適切であるなら、ですが。しかしまだ何人か残っています。"
 
 #: conversationlist_stoutford_combined.json:yolgen_castle_1_1b:0
 msgid "OK, I will go and look for the rest."
@@ -30046,15 +30009,11 @@ msgstr "あの男性はかなり裕福そうですね。誰ですか？"
 
 #: conversationlist_stoutford_combined.json:stoutford_old_woman_22
 msgid "That is Lord Bourbon ... - I mean Lord Berbane of Stoutford. His name invites a nasty pun, but honestly, he does not do much to show a different character."
-msgstr ""
-"あれはバーボン卿…スタウトフォードのバーベイン卿のことだよ。命名は意地の悪いダジャレにかけてるんだけどね、でも実際、悪い面ばかりが表れてロクに何もしようと"
-"しないのさ。"
+msgstr "あれはバーボン卿…スタウトフォードのバーベイン卿のことだよ。命名は意地の悪いダジャレにかけてるんだけどね、でも実際、悪い面ばかりが表れてロクに何もしようとしないのさ。"
 
 #: conversationlist_stoutford_combined.json:stoutford_old_woman_30
 msgid "Lord Bourbon sits there every evening, drinking or telling fairy tales. Or he plays his lute and sings to it. I must admit he has a reasonable voice."
-msgstr ""
-"バーボン卿は毎晩そこに座って酒を飲んだり、おとぎ話を話したりしてる。もしくはリュートを弾いて歌っているか。あの発声ばかりは大したものだと認めざるを得ないわ"
-"ね。"
+msgstr "バーボン卿は毎晩そこに座って酒を飲んだり、おとぎ話を話したりしてる。もしくはリュートを弾いて歌っているか。あの発声ばかりは大したものだと認めざるを得ないわね。"
 
 #: conversationlist_stoutford_combined.json:stoutford_old_woman_30:0
 msgid "He is the heir to Stoutford Castle?"
@@ -30847,6 +30806,7 @@ msgid "Now to your next opponent."
 msgstr "では次の対戦相手に移ろう。"
 
 #: conversationlist_stoutford_combined.json:stn_colonel_140:0
+#: conversationlist_delivery.json:brv_wh_delivery_boss_10:1
 msgid "What is it this time?"
 msgstr "今度は何ですか？"
 
@@ -31364,8 +31324,7 @@ msgstr "じゃあ聞いてくれ！ "
 
 #: conversationlist_omicronrg9.json:troublemaker_guild_3
 msgid "As I expect you are aware, we're not welcome in many places. In fact, we're being pursued by Fallhaven patrols. That's why we are here. This place is safe."
-msgstr ""
-"知っての通り、オレたちはどこに行っても嫌われ者だ。実際、フォールヘブンのパトロールからも追われてる。だからここにいるんだ。ここなら安全だからね。"
+msgstr "知っての通り、オレたちはどこに行っても嫌われ者だ。実際、フォールヘブンのパトロールからも追われてる。だからここにいるんだ。ここなら安全だからね。"
 
 #: conversationlist_omicronrg9.json:troublemaker_guild_4
 msgid "But we need supplies to survive, and also to maintain the Guild's influence. We are not just common robbers."
@@ -32031,8 +31990,7 @@ msgstr "何？　そんな知らせは聞いてないぞ。ただの子供にし
 
 #: conversationlist_omicronrg9.json:ff_captain_guild02_1:0
 msgid "Ergh ... Mr Laumwill is grateful for your protection. However ... Ah! He has given this reward of 1000 gold for your efforts."
-msgstr ""
-"えー…ラウムウィル様はあなたの保護に感謝しておられます。ですが…ええ！　その尽力への報奨として、こちらの1000ゴールドを授けてくださいました。"
+msgstr "えー…ラウムウィル様はあなたの保護に感謝しておられます。ですが…ええ！　その尽力への報奨として、こちらの1000ゴールドを授けてくださいました。"
 
 #: conversationlist_omicronrg9.json:ff_captain_guild02_1:1
 msgid "Trust me, I'm the one that delivered those swords from Gandoren to you!"
@@ -32304,8 +32262,7 @@ msgstr "もう一度やる。"
 
 #: conversationlist_omicronrg9.json:guild02_hatchlever_2a
 msgid "This is probably the place Troublemaker mentioned. You see a crowbar with a locked chain that surrounds the whole mechanism, stopping it from moving. The key seems to fit into the lock."
-msgstr ""
-"ここがおそらくトラブルメーカーの言っていた場所だ。錠前の付いたチェーンに機構全体を覆われ固定されているバールが見える。鍵が鍵穴に合っているようだ。"
+msgstr "ここがおそらくトラブルメーカーの言っていた場所だ。錠前の付いたチェーンに機構全体を覆われ固定されているバールが見える。鍵が鍵穴に合っているようだ。"
 
 #: conversationlist_omicronrg9.json:guild02_hatchlever_2a:0
 msgid "Put the key into the lock."
@@ -32732,8 +32689,7 @@ msgstr "それに裏切り者が関与してると思うのですか？"
 
 #: conversationlist_omicronrg9.json:umar_guild03_13
 msgid "I'm pretty sure about it. The team leader is the one we call \"Crackshot\", as he is a master of murder, torture and the subjugation arts. He's really a dangerous man."
-msgstr ""
-"それについては確信がある。チームリーダーは殺人、拷問、そして支配の達人であることから我々が\"クラックショット\"と呼ぶ人物でね。本当に危険な男だ。"
+msgstr "それについては確信がある。チームリーダーは殺人、拷問、そして支配の達人であることから我々が\"クラックショット\"と呼ぶ人物でね。本当に危険な男だ。"
 
 #: conversationlist_omicronrg9.json:umar_guild03_13:0
 msgid "So, do you have a plan?"
@@ -32777,9 +32733,7 @@ msgstr "そうします、約束するよ。それでは。"
 
 #: conversationlist_omicronrg9.json:umar_guild03_16
 msgid "Whatever, I do believe you are capable. Regardless, be cautious with Crackshot. He's powerful, and his attacks can severely wound or kill you. Clear?"
-msgstr ""
-"何はともあれ、君が有能であることを信じているよ。いずれにせよ、クラックショットには注意することだ。あの男は強敵であり、やつの攻撃で重傷あるいは死に至ること"
-"もあり得る。いいか？"
+msgstr "何はともあれ、君が有能であることを信じているよ。いずれにせよ、クラックショットには注意することだ。あの男は強敵であり、やつの攻撃で重傷あるいは死に至ることもあり得る。いいか？"
 
 #: conversationlist_omicronrg9.json:umar_guild03_16:0
 msgid "Bah, words are worth nothing now. It's going to be a nice fight."
@@ -33148,9 +33102,7 @@ msgstr "予想外？"
 
 #: conversationlist_omicronrg9.json:FeygardSerg_guild03_6
 msgid "We reached these passages via a forest cavern, and went through the beasts without any major problem. Suddenly, the suspect appeared with a group of men, probably his allies or subordinates ..."
-msgstr ""
-"森の洞窟を通ってここまでたどり着いた、獣に関しても大した障害もなく通り過ぎることができた。すると突然、容疑者らしき人物が仲間か部下らしき一団を引き連れて現"
-"れたのだ…"
+msgstr "森の洞窟を通ってここまでたどり着いた、獣に関しても大した障害もなく通り過ぎることができた。すると突然、容疑者らしき人物が仲間か部下らしき一団を引き連れて現れたのだ…"
 
 #: conversationlist_omicronrg9.json:FeygardSerg_guild03_7
 msgid "Those people were fast. Very fast and very dangerous. They killed them! My fellows, all of them defeated!"
@@ -33991,6 +33943,10 @@ msgstr "こんな寂しい場所で何をしているのですか？"
 msgid "Eh, sorry to disturb you."
 msgstr "ええと、お邪魔してすみません。"
 
+#: conversationlist_arulir_mountain.json:tjure_0:3
+msgid "I'm surprised to see you here as well. Did you order 'Mysterious green something'?"
+msgstr ""
+
 #: conversationlist_arulir_mountain.json:tjure_0_10
 msgid "I am Tjure of Brimhaven. I am ... was ... a successful merchant. But my luck has run out."
 msgstr "私はブリムヘブンのトジャー。成功した商人…でした。ですがその運も尽きてしまいました。"
@@ -34104,12 +34060,34 @@ msgid "(For a second you feel very dizzy. At least you manage not to faint. As f
 msgstr "（一瞬、強いめまいを感じる。少なくとも気を失うことはない。遠くから声が聞こえてくる）"
 
 #: conversationlist_arulir_mountain.json:tjure_90
+#: conversationlist_delivery.json:tjure_wh_delivery_90
 msgid "*Sigh* You were my last hope. Leave me now."
 msgstr "（ため息）あなたが最後の希望だったのに。私のことは置いていってください。"
+
+#: conversationlist_arulir_mountain.json:tjure_90:0
+msgid "Hope you learned from it."
+msgstr ""
+
+#: conversationlist_arulir_mountain.json:tjure_90:1
+msgid "OK. One question before I go: did you order a 'Mysterious green something'?"
+msgstr ""
+
+#: conversationlist_arulir_mountain.json:tjure_100:0
+#: conversationlist_arulir_mountain.json:tjure_200:0
+msgid "It was an interesting experience."
+msgstr ""
+
+#: conversationlist_arulir_mountain.json:tjure_100:1
+msgid "No problem. By the way, did you order a 'Mysterious green something'?"
+msgstr ""
 
 #: conversationlist_arulir_mountain.json:tjure_200
 msgid "Oh, you look better than the last time we met. Thank you for your help."
 msgstr "おお、前にお会いしたときよりも元気そうですね。助けてくれてありがとうございました。"
+
+#: conversationlist_arulir_mountain.json:tjure_200:1
+msgid "Indeed. By the way, did you order a 'Mysterious green something'?"
+msgstr ""
 
 #: conversationlist_arulir_mountain.json:watermark_script_100
 msgid "This seems to be a very strange place. Maybe even dangerous."
@@ -35498,9 +35476,7 @@ msgstr "アナキスから話は聞きましたよ。あなたは妹君を助け
 
 #: conversationlist_brimhaven.json:fangwurm_thank_killing_basilisk_2
 msgid "Anakis told me that you killed the Basilisk. Thank you, but it would be better if you had talked to me before killing it, because its magical blood is now dried up and wasted. May the Shadow always be with you."
-msgstr ""
-"アナキスからあなたがバジリスクを殺したと聞きましたよ。ありがとうございます。ですが、せめて殺す前に私に話してくだされば良かったのに。魔法の血が乾いてムダと"
-"なってしまいました。シャドウがいつでもあなたと共にありますように。"
+msgstr "アナキスからあなたがバジリスクを殺したと聞きましたよ。ありがとうございます。ですが、せめて殺す前に私に話してくだされば良かったのに。魔法の血が乾いてムダとなってしまいました。シャドウがいつでもあなたと共にありますように。"
 
 #: conversationlist_brimhaven.json:basiliskcave2_warn
 msgid "You see an old Basilisk at the end of the room that glances at you. With a feeling of deadly danger your movements get slower the nearer you go."
@@ -35827,6 +35803,10 @@ msgstr "服を改良してほしいです。"
 #: conversationlist_brimhaven.json:brv_laundry_boss_0:4
 msgid "Have you ever seen a glove like this? [Shows Venanra the glove.]"
 msgstr "この手袋を見たことがありますか？（ヴェナンラにグローブを見せる）"
+
+#: conversationlist_brimhaven.json:brv_laundry_boss_0:5
+msgid "Did you order an 'Old, worn cape'?"
+msgstr ""
 
 #: conversationlist_brimhaven.json:brv_laundry_boss_1
 msgid "We are working on some nice green dresses. We can also repair and improve your clothes."
@@ -36215,9 +36195,7 @@ msgstr "ああ…"
 
 #: conversationlist_brimhaven.json:brv_guard_captain_and_rich_man_30
 msgid "Let's see who is laughing in the end. The captain came to talk, not arrest me. Now she owns a new horse and I will be earning a lot of money with the necessary repairing of the dam and later the food harvesting. I call this a win-win."
-msgstr ""
-"最後に誰が笑っていられるか見せてもらおうではないか。隊長はワシと話をしに来たのだ、逮捕しに来たのではない。この者は新しい馬を得た、ワシは必要なダムの修理と"
-"その後の食料収穫で金を稼ぐつもりだ。このようなものをウィンウィンの関係と呼んでおる。"
+msgstr "最後に誰が笑っていられるか見せてもらおうではないか。隊長はワシと話をしに来たのだ、逮捕しに来たのではない。この者は新しい馬を得た、ワシは必要なダムの修理とその後の食料収穫で金を稼ぐつもりだ。このようなものをウィンウィンの関係と呼んでおる。"
 
 #: conversationlist_brimhaven.json:brv_guard_captain_and_rich_man_40
 msgid "It seems Alkapoan's letters accidentally fell into a fire and I am sure some unknown evil spies from Loneford destroyed the dam. You better disappear soon, or I might find some evidence that you are the evil spy from Loneford."
@@ -36748,6 +36726,10 @@ msgstr "ダガーを持ってます。話にあった宝石に合うものだと
 msgid "I'm looking for my brother, Andor. Have you seen anyone around town that looks a bit like me?"
 msgstr "僕の兄のアンドールを探しています。町で僕に似た人を見かけたことはありますか？"
 
+#: conversationlist_brimhaven.json:edrin_0_0:6
+msgid "Hello, did you order a 'Striped Hammer'?"
+msgstr ""
+
 #: conversationlist_brimhaven.json:edrin_5_0
 msgid "Yes, that's the one that matches the dagger! Now that I have both pieces, I can repair the dagger for you if you wish."
 msgstr "そうだ、それがダガーに合うものだ！　両方が揃ったので、よければダガーを修理しよう。"
@@ -36798,9 +36780,7 @@ msgstr "これには少し時間がかかる。修理したダガーを取りに
 #: conversationlist_brimhaven.json:edrin_7_1a
 #: conversationlist_brimhaven.json:edrin_7_1b
 msgid "Yes, it is done. Here is the repaired dagger.  It's nice to see Lawellyn's dagger brought back to its original glory. There is some mystery about his death. I don't know anything about it though. Maybe someone else in town can tell you more."
-msgstr ""
-"ああ、終わったよ。これが修理したダガーだ。ローリンのダガーが元の性能を取り戻してくれてよかった。彼の死には謎があるんだ。私はそれについては何も知らないが。"
-"町の誰かがもっと詳しく教えてくれるかもな。"
+msgstr "ああ、終わったよ。これが修理したダガーだ。ローリンのダガーが元の性能を取り戻してくれてよかった。彼の死には謎があるんだ。私はそれについては何も知らないが。町の誰かがもっと詳しく教えてくれるかもな。"
 
 #: conversationlist_brimhaven.json:edrin_7_1c
 msgid "No, not yet. You must have patience. I told you this is a difficult repair."
@@ -37115,6 +37095,10 @@ msgstr "支払いの100ゴールドがありません。"
 msgid "Maybe I can help you."
 msgstr "あなたの力になれるかも。"
 
+#: conversationlist_brimhaven.json:brv_fortune_choice:3
+msgid "Are you the one who ordered a 'Crystal Globe'?"
+msgstr ""
+
 #: conversationlist_brimhaven.json:brv_fortune_andor_10
 msgid "I see you talking to your brother, somewhere far from here in a big city. Feygard or Nor City, I think."
 msgstr "あなたがお兄さんと話しているのが見えます、ここより遠く離れた大都市ですね。フェイガードかノアシティでしょう。"
@@ -37246,12 +37230,18 @@ msgid "What has brought you to me? It looks like you might need my help."
 msgstr "どうして私のところに？　助けが必要なようですね。"
 
 #: conversationlist_brimhaven.json:brv_fortune_10:0
+#: conversationlist_delivery.json:brv_wh_delivery_brv_fortune_10:0
 msgid "What help can you offer?"
 msgstr "どういった支援をしてくれるのですか？"
 
 #: conversationlist_brimhaven.json:brv_fortune_10:1
+#: conversationlist_delivery.json:brv_wh_delivery_brv_fortune_10:1
 msgid "I am searching..."
 msgstr "探しているのは…"
+
+#: conversationlist_brimhaven.json:brv_fortune_10:2
+msgid "So you are the one who ordered a 'Crystal Globe'?"
+msgstr ""
 
 #: conversationlist_brimhaven.json:brv_fortune_50
 msgid "It will cost you 100 gold."
@@ -37553,8 +37543,7 @@ msgstr "え？　どうやって出るの？"
 
 #: conversationlist_brimhaven.json:remgard_prison_thief_112
 msgid "Oh, that is easy. Check the back wall - it is fake. We had it exchanged secretly, and those stupid guards haven't found out yet."
-msgstr ""
-"ああ、そりゃカンタンさ。奥の壁をチェックしてみな、こいつは偽物なんだ。こっそり取り替えてみたんだが、バカな衛兵のやつらはいまだに気づいちゃいない。"
+msgstr "ああ、そりゃカンタンさ。奥の壁をチェックしてみな、こいつは偽物なんだ。こっそり取り替えてみたんだが、バカな衛兵のやつらはいまだに気づいちゃいない。"
 
 #: conversationlist_brimhaven.json:remgard_prison_thief_112:0
 msgid "Oh really?"
@@ -37608,9 +37597,7 @@ msgstr "私たちの救世主は世界を再び価値あるものとするため
 
 #: conversationlist_brimhaven2.json:brv_school_history_22
 msgid "Little has been preserved from this period. Nor City is the only large city that has survived from this period. Their bright and magnificent flags were visible from afar in the surrounding area."
-msgstr ""
-"この時代のもので残っているものはほとんどありません。ノアシティはこの時代から生き残っている唯一の大都市です。その明るく壮麗な旗は、周辺地域の遠くからでもよ"
-"く見えました。"
+msgstr "この時代のもので残っているものはほとんどありません。ノアシティはこの時代から生き残っている唯一の大都市です。その明るく壮麗な旗は、周辺地域の遠くからでもよく見えました。"
 
 #: conversationlist_brimhaven2.json:brv_school_history_30
 msgid "Just imagine all those mighty churches and splendid palaces! It was a merry time, down under Mt. Galmore, the highest mountain in whole of Dhayavar."
@@ -37657,9 +37644,7 @@ msgstr "教団の者はエリサラのまばゆい清めの光を崇拝してい
 
 #: conversationlist_brimhaven2.json:brv_school_history_47
 msgid "Partly with gold, partly with cunning and violence, they attracted more and more people to their side. Those who still wanted to walk the old ways often found their house burning."
-msgstr ""
-"一部は金で、一部は狡猾さと暴力で、ますます多くの人々を味方に引きつけます。それでも旧来の道を歩もうとする者は、しばしば家が燃え落ちる様を目の当たりにさせら"
-"れました。"
+msgstr "一部は金で、一部は狡猾さと暴力で、ますます多くの人々を味方に引きつけます。それでも旧来の道を歩もうとする者は、しばしば家が燃え落ちる様を目の当たりにさせられました。"
 
 #: conversationlist_brimhaven2.json:brv_school_history_48
 msgid "A general distrust began, and it didn't take long until weapons were drawn. Brothers fought each other - the horrible War of Dawn began!"
@@ -38216,8 +38201,7 @@ msgstr "いまだに信じられません。どうしてあんな恐ろしいマ
 
 #: conversationlist_brimhaven2.json:brv_teacher_152_90
 msgid "We all owe our lives to you! As a reward, you can get yourself a cake from Arlish at the general store. Tell her I sent you."
-msgstr ""
-"私たちがこうして生きていられるのもあなたのおかげです！　ご褒美に、アーリッシュの雑貨屋さんのケーキを差し上げましょう。私が送ったと彼女に伝えてください。"
+msgstr "私たちがこうして生きていられるのもあなたのおかげです！　ご褒美に、アーリッシュの雑貨屋さんのケーキを差し上げましょう。私が送ったと彼女に伝えてください。"
 
 #: conversationlist_brimhaven2.json:brv_teacher_200
 msgid "Thank you again for saving me and my class. You are always welcome here!"
@@ -39229,9 +39213,7 @@ msgstr "これは父ローリンの特に大切な持ち物だったんです、
 
 #: conversationlist_brimhaven_2.json:arlish_asd_50
 msgid "Then one night, father did not come to my place for dinner as was the custom.  I quickly became worried that something terrible had happened to him. So I went to Mustura for help, but she quickly pushed it off as 'Lawellyn simply went on a trip'."
-msgstr ""
-"ある晩、その日の父はいつものようにうちへと夕食には来ませんでした。私は父に何か恐ろしい事が起きたのではないかとすぐに心配になりました。それでムストゥーラに"
-"助けを求めたのですけど、\"ローリンは旅に出ただけだろう\"、とすぐに押しのけられてしまいました。"
+msgstr "ある晩、その日の父はいつものようにうちへと夕食には来ませんでした。私は父に何か恐ろしい事が起きたのではないかとすぐに心配になりました。それでムストゥーラに助けを求めたのですけど、\"ローリンは旅に出ただけだろう\"、とすぐに押しのけられてしまいました。"
 
 #: conversationlist_brimhaven_2.json:arlish_asd_70
 msgid "Indeed it does.  In fact, I fear he was murdered. Will you help?"
@@ -39295,9 +39277,7 @@ msgstr "ああ、そうだな。今から数年前、それまで見覚えもな
 
 #: conversationlist_brimhaven_2.json:kizzo_asd_20
 msgid "He begins to tell me that he just witnessed two men in the woods between here and Brimhaven embroiled in a violent altercation and fears that one killed the other."
-msgstr ""
-"ソイツはこことブリムヘブンの間にある森で2人の男が口論になったのを目撃したそうで、その片方がもう１人のことを殺してしまったんじゃないかと恐ろしい、なんて話"
-"し始めた。"
+msgstr "ソイツはこことブリムヘブンの間にある森で2人の男が口論になったのを目撃したそうで、その片方がもう１人のことを殺してしまったんじゃないかと恐ろしい、なんて話し始めた。"
 
 #: conversationlist_brimhaven_2.json:kizzo_asd_30
 msgid "That's all I know.  Maybe you could find out more if you can find the scene of the murder?"
@@ -39397,9 +39377,7 @@ msgstr "そこで土地所有権利者だったローリンに話を持ちかけ
 
 #: conversationlist_brimhaven_2.json:brv_villager3_asd_70
 msgid "I thought that that land was too large for just one house, but Lawellyn said 'no'.  We argued about it for many months, until one day our paths crossed just outside of town."
-msgstr ""
-"そこの土地は1軒の家には広すぎるとボクは思ったんだけど、ローリンの言葉は\"ノー\"だったよ"
-"。それから何ヶ月も議論を積み重ねたある日、町を出てすぐのところでお互い出くわした。"
+msgstr "そこの土地は1軒の家には広すぎるとボクは思ったんだけど、ローリンの言葉は\"ノー\"だったよ。それから何ヶ月も議論を積み重ねたある日、町を出てすぐのところでお互い出くわした。"
 
 #: conversationlist_brimhaven_2.json:brv_villager3_asd_70:0
 msgid "Get to the point where you killed the man and left his daughter without a father."
@@ -39407,9 +39385,7 @@ msgstr "そこでその男を殺した、娘は父親を失ったと。"
 
 #: conversationlist_brimhaven_2.json:brv_villager3_asd_80
 msgid "In another attempt to change Lawellyn's mind on giving me land to build my house, things got real ugly real fast.  I don't know why he reached for his dagger, but I saw this and drew my weapon in self-defense.  I had no intention of killing him!  I was trying to defend myself.  Do you believe me?"
-msgstr ""
-"家を建てる土地を手に入れようとローリンの考えを変えさせるつもりだったんだけど、事態は急速に悪化していった。どうしてダガーに手を伸ばしたのかはわからないけど"
-"、それを見て正当防衛で武器を抜いたんだ。殺すつもりなんてなかった！　あくまで自分の身を守ろうとしただけなんだ。信じてくれないか？"
+msgstr "家を建てる土地を手に入れようとローリンの考えを変えさせるつもりだったんだけど、事態は急速に悪化していった。どうしてダガーに手を伸ばしたのかはわからないけど、それを見て正当防衛で武器を抜いたんだ。殺すつもりなんてなかった！　あくまで自分の身を守ろうとしただけなんだ。信じてくれないか？"
 
 #: conversationlist_brimhaven_2.json:brv_villager3_asd_80:1
 msgid "No.  In fact, I want to know more.  Like, what did you do with Lawellyn's dagger?"
@@ -39630,8 +39606,7 @@ msgstr "掃除をしていたら、君のお兄さんのブーツが見つかっ
 #: conversationlist_brimhaven_2.json:falothen1_7_pa
 #: conversationlist_brimhaven_2.json:falothen1_2nd_pa0
 msgid "Polearms are a spike or a blade, or both, on the end of a long pole. Wielding one with one hand is not practical, but they make up for that with their defensive capabilities. "
-msgstr ""
-"長柄武器とは長い棒の先についているスパイクや刃、またはその両方のことです。片手で振るうのは現実的ではありませんが、それを防御力で補っています。 "
+msgstr "長柄武器とは長い棒の先についているスパイクや刃、またはその両方のことです。片手で振るうのは現実的ではありませんが、それを防御力で補っています。 "
 
 #: conversationlist_brimhaven_2.json:falothan1_7_pa1
 #: conversationlist_brimhaven_2.json:falothen1_2nd_pa1
@@ -39932,9 +39907,7 @@ msgstr "わかりました。ありがとう。僕の兄のアンドールを探
 
 #: conversationlist_brimhaven_2.json:brv_churchman_04a
 msgid "Quasi is the grave digger. He is usually in the basement. Sometimes he is trouble, but mostly he is useful. Anyway, he has nowhere else to go, so he lives in the church."
-msgstr ""
-"クアシは墓掘りです。基本的に地下室にいますよ。問題を起こすときもありますが、たいていは役に立っています。ひとまず、他に行き場もありませんから教会に住んでい"
-"ます。"
+msgstr "クアシは墓掘りです。基本的に地下室にいますよ。問題を起こすときもありますが、たいていは役に立っています。ひとまず、他に行き場もありませんから教会に住んでいます。"
 
 #: conversationlist_brimhaven_2.json:brv_churchman_04b
 msgid ""
@@ -40400,8 +40373,7 @@ msgstr "先月、ノアシティに出来の良かったものを売りに出掛
 
 #: conversationlist_fungi_panic.json:bogsten_start_4
 msgid "You see, my son is studying across the country to become a Shadow priest, and he is currently in the Valanyr temple of the Shadow. I had not seen him for so long, so I decided to visit him."
-msgstr ""
-"息子はシャドウ神官になるために国中のあちこちで勉強をしていてな、この頃はシャドウヴァラニル神殿にいたのだ。久しく会っておらなんだから、訪ねることにした。"
+msgstr "息子はシャドウ神官になるために国中のあちこちで勉強をしていてな、この頃はシャドウヴァラニル神殿にいたのだ。久しく会っておらなんだから、訪ねることにした。"
 
 #: conversationlist_fungi_panic.json:bogsten_start_5
 msgid "Anyway, when I came back here, I felt something strange had happened. I couldn't tell what, but I knew evil was around as soon as I touched the door knob."
@@ -40838,8 +40810,7 @@ msgstr "子供？"
 
 #: conversationlist_fungi_panic.json:zuul_khan_60_120
 msgid "Indeed he had a son. But that lazybones didn't come as regularly as needed. The spell wore off, and I could move again."
-msgstr ""
-"アレには確かに息子がいた。だが、あの怠け者は必要にも関わらず定期的にやって来ることがなかった。そうして呪文が解け、またこうして動けるようになったのだよ。"
+msgstr "アレには確かに息子がいた。だが、あの怠け者は必要にも関わらず定期的にやって来ることがなかった。そうして呪文が解け、またこうして動けるようになったのだよ。"
 
 #: conversationlist_fungi_panic.json:zuul_khan_60_140
 msgid "AHAHAHAHA!"
@@ -42195,8 +42166,7 @@ msgid ""
 " If you would like to know more about mushrooms, I suggest you go to Bogsten, east of here. He grows the best mushrooms you ever ate! But well, I don't want to give away any more secrets of my soup."
 msgstr ""
 "ハーブに動物、そして何よりもキノコ。\n"
-"キノコについてもっと知りたければ、ここから東のボグステンのもとへ行くとよろしいでしょう。彼は最高のキノコを育てておりますぞ！　"
-"ですがまあ、私のスープの秘密をこれ以上漏らすわけにはいきませんな。"
+"キノコについてもっと知りたければ、ここから東のボグステンのもとへ行くとよろしいでしょう。彼は最高のキノコを育てておりますぞ！　ですがまあ、私のスープの秘密をこれ以上漏らすわけにはいきませんな。"
 
 #: conversationlist_gison.json:gison_talk_2
 msgid "Next to my passion for mushrooms, we build here and there on our house and try to keep the wild animals out."
@@ -43437,8 +43407,7 @@ msgstr "これ以上、ここで時間を無駄にするべきではない。も
 
 #: conversationlist_omi2.json:bwm74_waterfall
 msgid "The path along the water's edge narrows here. Peering down the tunnel, it appears the stream ends abruptly in what seems to be a waterfall. After that, there's just darkness."
-msgstr ""
-"水際に沿った道はここで狭くなっている。トンネルを覗いてみると、滝らしきものがあるところで流れが急に終わっている。その先は、ただ闇が広がるばかりだ。"
+msgstr "水際に沿った道はここで狭くなっている。トンネルを覗いてみると、滝らしきものがあるところで流れが急に終わっている。その先は、ただ闇が広がるばかりだ。"
 
 #: conversationlist_omi2.json:bwm74_waterfall_2
 msgid "It is definitely not a good idea to keep going this way without any reason."
@@ -43610,9 +43579,7 @@ msgstr "お言葉ですが、将軍、ここでの問題はブラックウォー
 
 #: conversationlist_omi2.json:ortholion_conversation_6
 msgid "Yes...The mines are closed due to lack of workers. We are scarce of resources and isolated from the rest of the world because of the collapsed tunnels. Moreover, monster attacks are increasing in frequency and proximity to the village."
-msgstr ""
-"そうです…鉱山は人手不足により閉鎖されました。物資も乏しく、トンネルが崩壊したために外の世界からも孤立しています。その上、モンスターの襲撃は頻度を増してお"
-"り、村の近くまで迫っています。"
+msgstr "そうです…鉱山は人手不足により閉鎖されました。物資も乏しく、トンネルが崩壊したために外の世界からも孤立しています。その上、モンスターの襲撃は頻度を増しており、村の近くまで迫っています。"
 
 #: conversationlist_omi2.json:ortholion_conversation_7
 msgid "Yeah, yeah. I'm aware of the current situation."
@@ -43648,8 +43615,7 @@ msgstr "落ち着きなさい、諸君。栄光あるフェイガードの兵士
 
 #: conversationlist_omi2.json:ortholion_conversation_13
 msgid "I am leaving now. You have a few days to think about it, but I'm afraid this is the best solution. Feygard will also take charge of rebuilding and cleaning the mines if you accept."
-msgstr ""
-"私はもう出発する。数日ほど考える時間はあるが、私はこれが最善の解決策であると思う。諸君らが受け入れた場合、鉱山の再建と清掃もフェイガードが担当しよう。"
+msgstr "私はもう出発する。数日ほど考える時間はあるが、私はこれが最善の解決策であると思う。諸君らが受け入れた場合、鉱山の再建と清掃もフェイガードが担当しよう。"
 
 #: conversationlist_omi2.json:ortholion_conversation_14
 msgid "[The guard seems to be barely surpressing his anger.] We will truly consider your proposal. Best of luck in your travels, general."
@@ -43765,8 +43731,7 @@ msgstr "わあ！　ありがとう。お仕事頑張ってください。"
 
 #: conversationlist_omi2.json:ortholion_guard_2c_cheese
 msgid "Cheese! It is rare to taste cheese out of home. In exchange, take these strawberries I gathered near Stoutford. They are fresh, but I don't like the taste."
-msgstr ""
-"チーズか！　外でチーズを味わうのは珍しいな。代わりに、スタウトフォードの近くで採れたイチゴを持っていってくれ。新鮮なんだが、味が好みに合わなくてな。"
+msgstr "チーズか！　外でチーズを味わうのは珍しいな。代わりに、スタウトフォードの近くで採れたイチゴを持っていってくれ。新鮮なんだが、味が好みに合わなくてな。"
 
 #: conversationlist_omi2.json:ortholion_guard_2c_cheese:0
 msgid "So you already had food? I traveled a long to get that cheese. Hmpf."
@@ -43791,9 +43756,7 @@ msgstr "僕にとって50ゴールドは些細なものなんだ。お構いな�
 
 #: conversationlist_omi2.json:ortholion_guard_2c_meat
 msgid "Hear, hear! I won't be in shape for much longer if you keep bringing me such feasts. Take a couple of these \"Izthiel\" claws. They might keep you alive in case of exterme neccessity."
-msgstr ""
-"聞きなさい！　こんなごちそうを持ってきてくれたのならずっと元気でいられるだろう。この\"イズシエル\"の爪を持っていきなさい"
-"。いざという時に役立つかもしれないぞ。"
+msgstr "聞きなさい！　こんなごちそうを持ってきてくれたのならずっと元気でいられるだろう。この\"イズシエル\"の爪を持っていきなさい。いざという時に役立つかもしれないぞ。"
 
 #: conversationlist_omi2.json:ortholion_guard_2c_meat:0
 msgid "I am grateful, sir. Have a nice day."
@@ -43838,9 +43801,7 @@ msgstr "そうします。パトロールはどうですか？"
 
 #: conversationlist_omi2.json:ortholion_guard_1d2
 msgid "The Shadow? Probably your parents inculcated those ideas in you. Let me tell you, they are wrong. Followers of the Shadow only promote chaos and anarchy."
-msgstr ""
-"シャドウだと？　"
-"きっと君の両親がそのような思想を吹き込んだのだろう。言っておくが、それは間違いだ。シャドウの信者どもは混沌と無秩序を助長する存在でしかない。"
+msgstr "シャドウだと？　きっと君の両親がそのような思想を吹き込んだのだろう。言っておくが、それは間違いだ。シャドウの信者どもは混沌と無秩序を助長する存在でしかない。"
 
 #: conversationlist_omi2.json:ortholion_guard_1d2:0
 msgid "Chaos and anarchy? Have you ever met a priest of the Shadow?"
@@ -43852,8 +43813,7 @@ msgstr "うーん、きっとあなたの両親がそういう思想を吹き込
 
 #: conversationlist_omi2.json:ortholion_guard_2d
 msgid "Oh yes. Good speakers with poison in their tongues. They conspire with the savages of the South against our righteous lord, just for restoring order in the wake of the chaos left after the war."
-msgstr ""
-"ああ、あるとも。あれは口の上手い毒舌家だよ。南の野蛮な連中どもと共謀して、戦後の混乱から秩序を回復しようと努めている我らが正義の君主に反抗しているんだ。"
+msgstr "ああ、あるとも。あれは口の上手い毒舌家だよ。南の野蛮な連中どもと共謀して、戦後の混乱から秩序を回復しようと努めている我らが正義の君主に反抗しているんだ。"
 
 #: conversationlist_omi2.json:ortholion_guard_2d:0
 msgid "Hmm, I never saw it that way."
@@ -44033,9 +43993,7 @@ msgstr "我々フェイガード兵はオルトリオン将軍直々の命によ
 
 #: conversationlist_omi2.json:ehrenfest_3b
 msgid "This is not a good place to talk about this. But trust me, there is much at stake and Prim's situation is only going to get worse. Let me introduce myself. My name is Ehrenfest, and..."
-msgstr ""
-"話をするにはここでは場所が悪い。だが信じてくれ、これはあまりにも危機的であり、プリムを取り巻く状況は悪化していく一方なのだ。自己紹介をしようか。私の名前は"
-"エーレンフェスト、そして…"
+msgstr "話をするにはここでは場所が悪い。だが信じてくれ、これはあまりにも危機的であり、プリムを取り巻く状況は悪化していく一方なのだ。自己紹介をしようか。私の名前はエーレンフェスト、そして…"
 
 #: conversationlist_omi2.json:ehrenfest_conversation_1
 msgid "OUT OF THE WAY, COMMONERS!"
@@ -44043,18 +44001,15 @@ msgstr "邪魔だ、平民！"
 
 #: conversationlist_omi2.json:ehrenfest_conversation_1a
 msgid "You and Ehrenfest are startled, and step aside. Three men with Feygard insignia leave the hall. You remain silent as they pass."
-msgstr ""
-"あなたとエーレンフェストは驚いて、脇へと寄る。フェイガードの記章をつけた3人の男が広間から出て行く。彼らが通り過ぎる間、あなたはじっと黙っている。"
+msgstr "あなたとエーレンフェストは驚いて、脇へと寄る。フェイガードの記章をつけた3人の男が広間から出て行く。彼らが通り過ぎる間、あなたはじっと黙っている。"
 
 #: conversationlist_omi2.json:ehrenfest_conversation_2
 msgid "I will say it only once. No taverns, no exploring, no drama with those untrained Prim guards. And for the glory of our homeland, don't pursue any injured monster."
-msgstr ""
-"一度しか言わん。酒場も、探索も、碌な訓練を積んでいないプリム衛兵どもとの揉め事も全て禁ずる。そして我らが本土の栄光のために、傷ついたモンスターは追うな。"
+msgstr "一度しか言わん。酒場も、探索も、碌な訓練を積んでいないプリム衛兵どもとの揉め事も全て禁ずる。そして我らが本土の栄光のために、傷ついたモンスターは追うな。"
 
 #: conversationlist_omi2.json:ehrenfest_conversation_3
 msgid "I have a bad feeling about all this. These villagers might be hiding something. Tell the mountain scouts to wait for me at the tunnel entrance. They will escort me up to Blackwater Settlement."
-msgstr ""
-"嫌な予感がする。ここの村人は何かを隠しているかもしれん。トンネルの入り口で私を待つよう、山岳斥候に伝えろ。ブラックウォーター集落までの護衛をさせる。"
+msgstr "嫌な予感がする。ここの村人は何かを隠しているかもしれん。トンネルの入り口で私を待つよう、山岳斥候に伝えろ。ブラックウォーター集落までの護衛をさせる。"
 
 #: conversationlist_omi2.json:ehrenfest_conversation_4
 msgid "Yes, my general."
@@ -44214,9 +44169,7 @@ msgstr "単刀直入に言ってくれ。"
 
 #: conversationlist_omi2.json:ehrenfest_13a
 msgid "I arrived here several weeks ago for no particularly interesting reason. I am part of a family of explorers and travelers, and the story of a ruined tunnel infested by dangerous beasts was something I wanted to see with my own eyes."
-msgstr ""
-"数週間前に、特に面白みもない理由で私はここにやって来たんだ。私は探索家と旅人の家系でね、危険な獣がはびこるという荒れ果てたトンネルの話を、自分の目で確かめ"
-"てみたかった。"
+msgstr "数週間前に、特に面白みもない理由で私はここにやって来たんだ。私は探索家と旅人の家系でね、危険な獣がはびこるという荒れ果てたトンネルの話を、自分の目で確かめてみたかった。"
 
 #: conversationlist_omi2.json:ehrenfest_14
 msgid "The rumors were true. Those gornauds are not natural creatures. They gave me a really hard time at first."
@@ -44224,9 +44177,7 @@ msgstr "噂は本当だったよ。ゴルノーは自然に発生した生き物
 
 #: conversationlist_omi2.json:ehrenfest_15
 msgid "I managed to reach the other entrance of the tunnel, but with no potions or fresh food I thought it was the end. Luckily, a guy called Lorn rescued me and brought me here."
-msgstr ""
-"なんとかトンネル反対側の入り口まではたどり着けたものの、ポーションも食料も切らしてもう駄目かと思った。幸運にもロルンという人が助けてくれて、ここまで連れて"
-"きてくれたがね。"
+msgstr "なんとかトンネル反対側の入り口まではたどり着けたものの、ポーションも食料も切らしてもう駄目かと思った。幸運にもロルンという人が助けてくれて、ここまで連れてきてくれたがね。"
 
 #: conversationlist_omi2.json:ehrenfest_15:0
 msgid "That name seems familiar to me, somehow."
@@ -44238,9 +44189,7 @@ msgstr "要点をお願いします。"
 
 #: conversationlist_omi2.json:ehrenfest_16
 msgid "Due to my exhaustion, I rested in bed for days. I could hear the constant noise of the workers chatting, toasting with their mead jugs..."
-msgstr ""
-"くたびれ果てていたことから、それから私は何日もの間ベッドで休むことになった。労働者たちの雑談に、ミードのジョッキで乾杯する音が絶え間なく聞こえてきたものだ"
-"…"
+msgstr "くたびれ果てていたことから、それから私は何日もの間ベッドで休むことになった。労働者たちの雑談に、ミードのジョッキで乾杯する音が絶え間なく聞こえてきたものだ…"
 
 #: conversationlist_omi2.json:ehrenfest_16:0
 msgid "Have you finished?"
@@ -44252,9 +44201,7 @@ msgstr "あなたには明らかに休息が必要だった。"
 
 #: conversationlist_omi2.json:ehrenfest_17
 msgid "But the day I got up, completely recovered, the first thing I noticed was precisely the absence of those noises. The rooms next to me were dirty and empty. No one was in the dining room. The mine entrance was closed."
-msgstr ""
-"だが完全に回復して起き上がった日、最初に気づいたのはまさにそうした騒音が無くなっていたことだった。すぐ隣の部屋など汚れて空き部屋となっていた。食堂には誰も"
-"いなかった。坑道は閉鎖されていた。"
+msgstr "だが完全に回復して起き上がった日、最初に気づいたのはまさにそうした騒音が無くなっていたことだった。すぐ隣の部屋など汚れて空き部屋となっていた。食堂には誰もいなかった。坑道は閉鎖されていた。"
 
 #: conversationlist_omi2.json:ehrenfest_17a
 msgid "[He seems to be completely absorbed by his own monologue]"
@@ -45016,9 +44963,7 @@ msgstr "あなたは大きなボトルに入れる。"
 
 #: conversationlist_omi2.json:prim_tavern_guest4_18b
 msgid "The muscular guy looks at the water you brought to him. His eyes open widely. He starts to drink the water straight off and finishes it in the blink of an eye, taking a deep breath just after putting the empty glass on the table."
-msgstr ""
-"筋肉質な男は、あなたが持ってきた水を見ている。彼は大きく目を見開く。すぐに水を飲み始め、瞬く間に飲み干す。空になったグラスをテーブルへと置いた直後に深呼吸"
-"をした。"
+msgstr "筋肉質な男は、あなたが持ってきた水を見ている。彼は大きく目を見開く。すぐに水を飲み始め、瞬く間に飲み干す。空になったグラスをテーブルへと置いた直後に深呼吸をした。"
 
 #: conversationlist_omi2.json:prim_tavern_guest4_18b:0
 msgid "How was it?"
@@ -45090,20 +45035,15 @@ msgstr "いや、あの人たちはもっと強力なモンスターの包囲に
 
 #: conversationlist_omi2.json:prim_tavern_guest4_24a
 msgid "I know! We faced white wyrms on the mountain heights. I'm afraid the political problems are something leaders of each place must deal with. We at least tried to keep Prim safe from monster attacks."
-msgstr ""
-"わかってる！　山の高いところではホワイトウィルムと直面した。政治的な問題は、各地のリーダーが対処せにゃならんと思う。少なくとも俺たちは、モンスターの襲撃か"
-"らプリムを守ろうとしていた。"
+msgstr "わかってる！　山の高いところではホワイトウィルムと直面した。政治的な問題は、各地のリーダーが対処せにゃならんと思う。少なくとも俺たちは、モンスターの襲撃からプリムを守ろうとしていた。"
 
 #: conversationlist_omi2.json:prim_tavern_guest4_24b
 msgid "And that is not true. Why would they send monsters to their own dominion? Of course they wouldn't. There are monsters up there in the mountain heights too, possibly even more dangerous than gornauds."
-msgstr ""
-"そりゃ違う。どうして自分たちの土地にモンスターを送り込むってんだ？　"
-"当然そんなことはしない。山の上の方にもモンスターが居やがるんだ。ありゃあ、ゴルノーよりヤバいかもしれん。"
+msgstr "そりゃ違う。どうして自分たちの土地にモンスターを送り込むってんだ？　当然そんなことはしない。山の上の方にもモンスターが居やがるんだ。ありゃあ、ゴルノーよりヤバいかもしれん。"
 
 #: conversationlist_omi2.json:prim_tavern_guest4_25b
 msgid "We tried to keep the threat in the mountains, but gornauds invaded the mountain wolves' homes and forced them to establish in the small fir forest around Prim."
-msgstr ""
-"俺たちはその脅威を山に留めおこうとした。だがマウンテンウルフの生息地までゴルノーが侵入してきて、プリム周辺にある小さなモミの木の森に定着しちまった。"
+msgstr "俺たちはその脅威を山に留めおこうとした。だがマウンテンウルフの生息地までゴルノーが侵入してきて、プリム周辺にある小さなモミの木の森に定着しちまった。"
 
 #: conversationlist_omi2.json:prim_tavern_guest4_25a
 msgid "But since the gornauds invaded the mountainsides, wolves went down to the fir forest and the path between Prim and the Elm mine became more and more unsafe."
@@ -45115,14 +45055,11 @@ msgstr "オオカミの襲撃が頻発するようになった。俺たちがゴ
 
 #: conversationlist_omi2.json:prim_tavern_guest4_26a
 msgid "Several miners were killed by the wolves, so the mine eventually closed. Furthermore, the main mining tunnel between Elm mine and Stoutford collapsed and the relations with Blackwater Settlement tensed up."
-msgstr ""
-"鉱夫の何人かがオオカミに殺されてしまって、結局鉱山は閉鎖された。しかも、エルム鉱山とスタウトフォードを結ぶ主要な鉱山トンネルが崩落して、ブラックウォーター"
-"集落との関係が緊迫化した。"
+msgstr "鉱夫の何人かがオオカミに殺されてしまって、結局鉱山は閉鎖された。しかも、エルム鉱山とスタウトフォードを結ぶ主要な鉱山トンネルが崩落して、ブラックウォーター集落との関係が緊迫化した。"
 
 #: conversationlist_omi2.json:prim_tavern_guest4_27b
 msgid "Obviously, the mine had to close. Days after that, the tunnel that lead to Stoutford through the mountain collapsed and people from Blackwater Settlement blamed Prim."
-msgstr ""
-"当然、鉱山は閉鎖せざるを得なかった。その数日後、山を通ってスタウトフォードに通じるトンネルが崩落して、ブラックウォーター集落のヤツらはプリムを責めた。"
+msgstr "当然、鉱山は閉鎖せざるを得なかった。その数日後、山を通ってスタウトフォードに通じるトンネルが崩落して、ブラックウォーター集落のヤツらはプリムを責めた。"
 
 #: conversationlist_omi2.json:prim_tavern_guest4_28
 msgid "Finally, as if a mastermind were behind all of this, a coordinated group of gornauds moved towards Prim from the east."
@@ -45158,8 +45095,7 @@ msgstr "黒幕がいるって言ってたじゃないですか。"
 
 #: conversationlist_omi2.json:prim_tavern_guest4_33a
 msgid "Lorn must have discovered something. Just a week or two ago we were right here bantering and chatting, trying to forget that horrible scene of Kirg's death."
-msgstr ""
-"ロルンは何かを知っちまったんだろう。たった1、2週前まで、ここで雑談や冗談を言い合ったりして、カーグが死んだあの恐ろしい光景を忘れようとしてたってのに。"
+msgstr "ロルンは何かを知っちまったんだろう。たった1、2週前まで、ここで雑談や冗談を言い合ったりして、カーグが死んだあの恐ろしい光景を忘れようとしてたってのに。"
 
 #: conversationlist_omi2.json:prim_tavern_guest4_33a:0
 msgid "Why didn't you go along with them?"
@@ -45417,9 +45353,7 @@ msgstr "これは話半分に聞いておいた方がいいな。"
 
 #: conversationlist_omi2.json:ehrenfest_43
 msgid "Put it this way. A weakened Prim will be easier to control. Although Lord Geomyr theoretically reigns over the whole land, his influence has its limits, as I'm sure you know well. Isolated regions like Prim have considerable independence."
-msgstr ""
-"言い方を変えようか。弱ったプリムの方がコントロールしやすくなる。ジオミア卿は名目の上ではこの国全土を支配しているが、その影響力には限界があるのはわかるだろ"
-"う。プリムのような孤立した地域では、かなりの独立性を保っている。"
+msgstr "言い方を変えようか。弱ったプリムの方がコントロールしやすくなる。ジオミア卿は名目の上ではこの国全土を支配しているが、その影響力には限界があるのはわかるだろう。プリムのような孤立した地域では、かなりの独立性を保っている。"
 
 #: conversationlist_omi2.json:ehrenfest_44
 msgid "It is well known there is an ancient chamber dedicated to worship of the Shadow, which is probably Lord Geomyr's most powerful threat."
@@ -45539,9 +45473,7 @@ msgstr "気にしないで、どうしたのですか？"
 
 #: conversationlist_omi2.json:ortholion_gw_2b
 msgid "We were on the way to Blackwater Settlement, when we *cough*, *cough*, were attacked by a group of white wyrms. I got, uh, somewhat injured... So my general decided I should wait right here, safe from the monsters."
-msgstr ""
-"ブラックウォーター集落に向かう途中でコホッ、コホッ、ホワイトウィルムの集団に襲われたんだ。そこで私が、えっと、少し怪我をしてしまってな…それでモンスターか"
-"ら安全なここで待機しているよう将軍がお命じになったんだ。"
+msgstr "ブラックウォーター集落に向かう途中でコホッ、コホッ、ホワイトウィルムの集団に襲われたんだ。そこで私が、えっと、少し怪我をしてしまってな…それでモンスターから安全なここで待機しているよう将軍がお命じになったんだ。"
 
 #: conversationlist_omi2.json:ortholion_gw_2b:0
 msgid "Hope you get better. I must leave."
@@ -45709,7 +45641,9 @@ msgstr "ロルンの仕事について何か覚えてませんか？"
 msgid ""
 "Good! I am eager to crush some meatheads!\n"
 ""
-msgstr "よし！　あのバカどもを叩きのめしたくて仕方なかったんだ！\n"
+msgstr ""
+"よし！　あのバカどもを叩きのめしたくて仕方なかったんだ！\n"
+""
 
 #: conversationlist_omi2.json:prim_tavern_guest4_40a:0
 msgid "Hey, not so fast!"
@@ -45953,9 +45887,7 @@ msgstr "よくもやってくれたな！　覚悟しろ、フェイガードの
 
 #: conversationlist_omi2.json:ortholion_subdued_3
 msgid "A slim girl stands in front of you. Her armor seems to be made from leather, but it seems to rigid, like frozen, just like her face. The Feygard coat of arms gleams in her suit, but it's overshadowed by her eyes, nailed in you."
-msgstr ""
-"目の前に細身の少女が立っている。鎧は革で出来ているようだが、まるで彼女の顔色と同様に、凍ったように硬いらしい。スーツではフェイガードの紋章が煌めいているも"
-"のの、あなたへと釘付けになっている彼女の視線によりあまり印象に残らない。"
+msgstr "目の前に細身の少女が立っている。鎧は革で出来ているようだが、まるで彼女の顔色と同様に、凍ったように硬いらしい。スーツではフェイガードの紋章が煌めいているものの、あなたへと釘付けになっている彼女の視線によりあまり印象に残らない。"
 
 #: conversationlist_omi2.json:ortholion_conversation2_1
 msgid "Ehrenfest, you have come this far just to get rid of me..."
@@ -46164,8 +46096,7 @@ msgstr "お役に立てることはありますか？"
 
 #: conversationlist_omi2.json:ortholion_4b
 msgid "*laughs quietly* Only simple minds would see things as black or white. Whether I believe or not, people do, and we in Feygard keep that in mind."
-msgstr ""
-"（静かに笑う）物事を白か黒かで判断するのは、単純な心に過ぎん。私が信じようがいまいが、人々は信じるだろう。我々フェイガードはそのことを肝に銘じている。"
+msgstr "（静かに笑う）物事を白か黒かで判断するのは、単純な心に過ぎん。私が信じようがいまいが、人々は信じるだろう。我々フェイガードはそのことを肝に銘じている。"
 
 #: conversationlist_omi2.json:ortholion_4b:0
 msgid "OK. Now that you're aware of the situation, I'd better leave."
@@ -46463,15 +46394,15 @@ msgstr "この穴の匂いは独特だ。たくさんのオルムの幼生がい
 
 #: conversationlist_omi2.json:venomfang_warning_1
 msgid "The passage in front of you isn't dark enough to not notice the constant dripping of the walls, which are weak and deformed. For some reason, animals don't get closer to you as you get closer to the tunnel, which is surprising and worrying at the same time."
-msgstr ""
-"目の前の通路は、脆くなって形が崩れた壁から絶え間なく水滴が滴っているのに気づかないほど暗くはない。何故か、トンネルが近づくほど動物が寄ってこなくなるので、"
-"驚きと同時に不安になる。"
+msgstr "目の前の通路は、脆くなって形が崩れた壁から絶え間なく水滴が滴っているのに気づかないほど暗くはない。何故か、トンネルが近づくほど動物が寄ってこなくなるので、驚きと同時に不安になる。"
 
 #: conversationlist_omi2.json:shadowfang_1
 msgid ""
 "Sssssh...\n"
 ""
-msgstr "シュウウウ…\n"
+msgstr ""
+"シュウウウ…\n"
+""
 
 #: conversationlist_omi2.json:shadowfang_1:0
 msgid "What the...?"
@@ -46671,9 +46602,7 @@ msgstr "鉱石を取る。"
 
 #: conversationlist_omi2.json:elm5_ore_glued
 msgid "When you get your fingers closer to the moss, it somehow turns to dust. Your finger gets stuck to the seemingly solid ore, but you rapidly pull it off. It's not a serious injury, but you feel like that ore has taken away part of your life essence."
-msgstr ""
-"苔に指を近づけると、どういうわけか塵に変わってしまう。硬そうな鉱石に指を引っ掛けてしまうが、すぐに引き離した。大した怪我ではないものの、この鉱石が自分の生"
-"命力の一部を奪っていったような感じがする。"
+msgstr "苔に指を近づけると、どういうわけか塵に変わってしまう。硬そうな鉱石に指を引っ掛けてしまうが、すぐに引き離した。大した怪我ではないものの、この鉱石が自分の生命力の一部を奪っていったような感じがする。"
 
 #: conversationlist_omi2.json:elm5_ore_glued:0
 msgid "Uff, I need some rest."
@@ -46733,9 +46662,7 @@ msgstr "略奪。"
 
 #: conversationlist_omi2.json:ortholion_guard8_plunder
 msgid "You try to put off the armor first but you soon discover both the man and the armor itself are covered by that glowing ore. You instantly stop grabbing it. The glowing ore is somehow growing."
-msgstr ""
-"まずは鎧を脱がせようとするが、男と鎧が光る鉱石で覆われていることにすぐ気が付く。あなたは即座にそれに手を伸ばすことを止めた。どういうわけか、光る鉱石は大き"
-"くなっている。"
+msgstr "まずは鎧を脱がせようとするが、男と鎧が光る鉱石で覆われていることにすぐ気が付く。あなたは即座にそれに手を伸ばすことを止めた。どういうわけか、光る鉱石は大きくなっている。"
 
 #: conversationlist_omi2.json:ortholion_guard8_consumed
 msgid "Of the soldier you met inside here, only dust remains."
@@ -46793,9 +46720,7 @@ msgstr "板を横に置く。"
 
 #: conversationlist_omi2.json:elm2f_passage_1
 msgid "Once you pull off the wooden board a cold breeze leaks out from the dark corridor. A few seconds later, you hear multiple cracks on the ceiling. More of that glowing ore is growing in front of you...And it's getting closer!"
-msgstr ""
-"木の版を取り外すと、暗い廊下から冷たい風が漏れ出る。数秒後、天井にいくつものひびが入っていくのが聞こえる。あなたの目の前で輝く鉱石が成長している…そして、"
-"近寄って来る！"
+msgstr "木の版を取り外すと、暗い廊下から冷たい風が漏れ出る。数秒後、天井にいくつものひびが入っていくのが聞こえる。あなたの目の前で輝く鉱石が成長している…そして、近寄って来る！"
 
 #: conversationlist_omi2.json:elm2f_passage_1:0
 msgid "Argh! I'm getting tired of this glowing thing."
@@ -47037,8 +46962,7 @@ msgstr "この水たまりは遠くから見るよりも深い。あなたは泳
 
 #: conversationlist_omi2.json:elm5f_final
 msgid "The battle has already started. Iluminated by the orangish glow of the crystals, Ortholion steps towards Ehrenfest, slowly making him retreat to the border of the hill. "
-msgstr ""
-"戦いはすでに始まっている。クリスタルのオレンジがかった輝きに照らされて、オルトリオンはエーレンフェストに向かって歩み、ゆっくりと丘の端まで後退させる。 "
+msgstr "戦いはすでに始まっている。クリスタルのオレンジがかった輝きに照らされて、オルトリオンはエーレンフェストに向かって歩み、ゆっくりと丘の端まで後退させる。 "
 
 #: conversationlist_omi2.json:ehrenvorth_1
 msgid "This is the end, evil being! Surrender now!"
@@ -47086,11 +47010,9 @@ msgid ""
 "\n"
 "Desperately, Ortholion tries to get his hand free, but It's Ehrenfest who stops grabbing and takes advantage of the moment to land a tremendous kick on the general's chest, unbelievably denting his armor and bouncing him against the wall. The sword falls to the ground, and Ehrenfest takes it."
 msgstr ""
-"瞬く間にオルトリオンはエーレンフェストに接近し、2本目の剣を抜く。将軍が素早くエーレンフェストの首を断ち切ろうとすると、彼はオルトリオンの手を掴んで反応す"
-"る。\n"
+"瞬く間にオルトリオンはエーレンフェストに接近し、2本目の剣を抜く。将軍が素早くエーレンフェストの首を断ち切ろうとすると、彼はオルトリオンの手を掴んで反応する。\n"
 "\n"
-"オルトリオンは必死に手を振り払おうとする。しかしエーレンフェストは手を離すと、その隙に強烈な蹴りを将軍の胸へと加え、信じがたい事に鎧をへこませつつ壁へと叩"
-"きつける。剣は地面に落ち、エーレンフェストはそれを手に取る。"
+"オルトリオンは必死に手を振り払おうとする。しかしエーレンフェストは手を離すと、その隙に強烈な蹴りを将軍の胸へと加え、信じがたい事に鎧をへこませつつ壁へと叩きつける。剣は地面に落ち、エーレンフェストはそれを手に取る。"
 
 #: conversationlist_omi2.json:ehrenvorth_9
 msgid ""
@@ -47132,16 +47054,13 @@ msgid ""
 "\n"
 "You know, we're tired of you asking questions here and there, *cough* *cough*."
 msgstr ""
-"お前がもっと強ければ…我らの側に加わるように説得もできたかもしれないが。コホッ。しかし私の計画が、オルトリオンの死の罪をお前に着せるものであったことは認め"
-"ねばならないだろう。\n"
+"お前がもっと強ければ…我らの側に加わるように説得もできたかもしれないが。コホッ。しかし私の計画が、オルトリオンの死の罪をお前に着せるものであったことは認めねばならないだろう。\n"
 "\n"
 "我々はな、あちこちで質問して回っているお前にうんざりしているんだよ。コホッコホッ。"
 
 #: conversationlist_omi2.json:ehrenfest_50b
 msgid "Lodar, right. He sins of double morality! His poisons killed hundreds, but he prefers to hide in that dirty forest and escape any responsibility like a retired farmer."
-msgstr ""
-"ロダーか。あの男は道徳上の罪を二重にも犯している！　"
-"アレの毒は何百もの人を殺した。だがヤツはあの薄汚い森に隠れて、まるで引退した農夫とでも言いたげにあらゆる責任から逃れようとしている。"
+msgstr "ロダーか。あの男は道徳上の罪を二重にも犯している！　アレの毒は何百もの人を殺した。だがヤツはあの薄汚い森に隠れて、まるで引退した農夫とでも言いたげにあらゆる責任から逃れようとしている。"
 
 #: conversationlist_omi2.json:ehrenfest_50c
 msgid ""
@@ -47268,8 +47187,7 @@ msgid ""
 "\n"
 "All my injuries were cured, and my mind was set free. Now I know the truth, and what I must do."
 msgstr ""
-"逃げた？　拷問した者が戻ってくると、あの男はこれまでとはまるで違う行動を取り始めたんだ。私達を解放して、食料と回復薬を持ってきてくれた。それ以来、生まれ変"
-"わったような心地だよ！\n"
+"逃げた？　拷問した者が戻ってくると、あの男はこれまでとはまるで違う行動を取り始めたんだ。私達を解放して、食料と回復薬を持ってきてくれた。それ以来、生まれ変わったような心地だよ！\n"
 "\n"
 "傷はすっかり治ったし、心は自由になれた。今の私は真理と共にしなければならないことを知っている。"
 
@@ -47287,8 +47205,7 @@ msgid ""
 "\n"
 "Now my body is reborn and my mind is set free. I know what's wrong and what's right, and I know what I must do."
 msgstr ""
-"あの男はただ古い霊廟の場所を知りたいだけだった。そして私は彼のすべてを許そう。戻って来た彼はドゥアラと私を解放した。そして食料と、彼が\"回復薬"
-"\"と呼んでいた素晴らしい霊薬を与えてくれたんだ。\n"
+"あの男はただ古い霊廟の場所を知りたいだけだった。そして私は彼のすべてを許そう。戻って来た彼はドゥアラと私を解放した。そして食料と、彼が\"回復薬\"と呼んでいた素晴らしい霊薬を与えてくれたんだ。\n"
 "\n"
 "こうして私の体は生まれ変わり、心は自由になれた。何が間違いで何が正しいのかが分かるし、自分がしなければならないことも知っている。"
 
@@ -47446,8 +47363,7 @@ msgstr "ありがとうございます。"
 
 #: conversationlist_omi2.json:ortholion_guard3_6a
 msgid "What do you mean kid?! We had to... guard this place right here. We were sure our mighty general Ortholion was handling the problem!"
-msgstr ""
-"どういう意味だ小僧？！　我々はここを…この場所を守らねばならなかったんだ。偉大なるオルトリオン将軍が問題を片付けて下さることを確信していたのだ！"
+msgstr "どういう意味だ小僧？！　我々はここを…この場所を守らねばならなかったんだ。偉大なるオルトリオン将軍が問題を片付けて下さることを確信していたのだ！"
 
 #: conversationlist_omi2.json:ortholion_guard3_6a:0
 msgid "I will report your inefficiency."
@@ -47610,9 +47526,7 @@ msgstr "それはやめにする、報酬をくれ！"
 
 #: conversationlist_omi2.json:ortholion_18b
 msgid "Well, yes. Every old and tired adventurer's dream I guess, but I somewhat expected more of you. Take this and don't bother me anymore. *shows you a medium-sized bag of gold and jewels*"
-msgstr ""
-"ほう、そうか。歳を重ねくたびれた冒険家にとっての夢といえばそうなのだろうが、私はもっとお前に期待していたよ。持っていきなさい、もう私の邪魔はするな。（ゴー"
-"ルドと宝石の入った中型のバッグを示している）"
+msgstr "ほう、そうか。歳を重ねくたびれた冒険家にとっての夢といえばそうなのだろうが、私はもっとお前に期待していたよ。持っていきなさい、もう私の邪魔はするな。（ゴールドと宝石の入った中型のバッグを示している）"
 
 #: conversationlist_omi2.json:ortholion_18b:0
 msgid "[Take the gold]"
@@ -47712,9 +47626,7 @@ msgstr "誰かの命を救ったことでのお金なんて受け取れません
 
 #: conversationlist_omi2.json:ortholion_19c
 msgid "Should I be surprised? That shows how valuable your word currently is. Come back in a few days and I may change my opinion if you're willing to help me."
-msgstr ""
-"驚いた方がいいのか？　"
-"今のお前の言葉の価値は、それが示しているぞ。何日かしたらまた来るように。お前が協力してくれるというなら、私も評価を変えることがあるかもしれない。"
+msgstr "驚いた方がいいのか？　今のお前の言葉の価値は、それが示しているぞ。何日かしたらまた来るように。お前が協力してくれるというなら、私も評価を変えることがあるかもしれない。"
 
 #: conversationlist_omi2.json:ortholion_19c:0
 msgid "You liar...! Hmpf."
@@ -47730,8 +47642,7 @@ msgid ""
 "\n"
 "We'll talk later. Now we all need some rest."
 msgstr ""
-"（お金の入った袋を持った手を引っ込めて頷く）よしよし。その選択を受け入れよう。金は受け取らないと言ったのだ、だからこれを私からの感謝の印として受け取りなさ"
-"い。\n"
+"（お金の入った袋を持った手を引っ込めて頷く）よしよし。その選択を受け入れよう。金は受け取らないと言ったのだ、だからこれを私からの感謝の印として受け取りなさい。\n"
 "\n"
 "また後で話そう。我々には少し休息が必要だ。"
 
@@ -47749,9 +47660,7 @@ msgstr "大切な宝物として大事にします。（嘘）"
 
 #: conversationlist_omi2.json:ortholion_18d
 msgid "I would say that is a ... very ignorant reply, but I will not judge you today. Go back home and spend some time with your people and your family; then come back. I will need people like you in a few days."
-msgstr ""
-"それは…無知極まる返答だと言いたいところだが、今日のところは判断を保留としておく。家に帰って、知人や家族と時間を過ごしてきなさい。そして戻ってこい。数日後"
-"にはお前のような者が必要になる。"
+msgstr "それは…無知極まる返答だと言いたいところだが、今日のところは判断を保留としておく。家に帰って、知人や家族と時間を過ごしてきなさい。そして戻ってこい。数日後にはお前のような者が必要になる。"
 
 #: conversationlist_omi2.json:ortholion_18d:0
 msgid "So no reward...hmph, bye."
@@ -47775,9 +47684,7 @@ msgstr "あなたは僕に一発も当てられなかっただろう！"
 
 #: conversationlist_omi2.json:ortholion_19e
 msgid "Look, this is simple. The Shadow is the past. We, Feygard, are the future. Fanaticism is never a good companion, but you are still young, you will need time to fully understand my words."
-msgstr ""
-"単純なことだ。シャドウは過去のものだ。我々フェイガードは未来である。狂信は決して良き友とは言えんが、お前はまだ若い。私の言葉を完全に理解するには時間が必要"
-"だろう。"
+msgstr "単純なことだ。シャドウは過去のものだ。我々フェイガードは未来である。狂信は決して良き友とは言えんが、お前はまだ若い。私の言葉を完全に理解するには時間が必要だろう。"
 
 #: conversationlist_omi2.json:ortholion_19e:0
 msgid "You forbid the use of Bonemeal!"
@@ -47793,13 +47700,219 @@ msgstr "全てが白か黒かではない。この偉大な王国で平和と街
 
 #: conversationlist_omi2.json:ortholion_20c
 msgid "Would you like your bones be used in some sort of ritual to make those potions? Because in winter, when big mammals, erumen lizards, and other beasts hibernate, there's only one kind of bones useful for that: ours."
-msgstr ""
-"お前は自分の骨をポーションの材料として使われたいのか？　"
-"冬には大型の哺乳類やエルメンリザードといった動物が冬眠に入る、すると使える骨は1種類しかない。我々の骨だ。"
+msgstr "お前は自分の骨をポーションの材料として使われたいのか？　冬には大型の哺乳類やエルメンリザードといった動物が冬眠に入る、すると使える骨は1種類しかない。我々の骨だ。"
 
 #: conversationlist_omi2.json:ortholion_20c:0
 msgid "That sounds kind of true. You are a very persuasive speaker."
 msgstr "そうかもしれない。あなたはとても口のうまい話し手ですね。"
+
+#: conversationlist_omi2.json:omi2_fix_ehrenfest_53
+msgid "You are wrong. I'm not here, just an illusion."
+msgstr ""
+
+#: conversationlist_delivery.json:brv_wh_delivery_boss_10
+msgid "Ah! You have finally returned, my new worker."
+msgstr ""
+
+#: conversationlist_delivery.json:brv_wh_delivery_boss_10:2
+msgid "Ah! You are still insolent."
+msgstr ""
+
+#: conversationlist_delivery.json:brv_wh_delivery_boss_20
+msgid "I need someone to deliver all of the items that are in storage."
+msgstr ""
+
+#: conversationlist_delivery.json:brv_wh_delivery_boss_30
+msgid "Come back to me when you have delivered all of the items. The order is not important. Here is the list of customers."
+msgstr ""
+
+#: conversationlist_delivery.json:brv_wh_delivery_boss_30:0
+msgid "It will be done."
+msgstr ""
+
+#: conversationlist_delivery.json:brv_wh_delivery_boss_30:1
+msgid "You want me to deliver these items to your customers?"
+msgstr ""
+
+#: conversationlist_delivery.json:brv_wh_delivery_boss_40
+msgid "Yes yes, hurry now. I have work to do here."
+msgstr ""
+
+#: conversationlist_delivery.json:brv_wh_delivery_boss_40:0
+msgid "I'm going now."
+msgstr ""
+
+#: conversationlist_delivery.json:brv_wh_delivery_boss_40:1
+msgid "Hope I get paid better this time."
+msgstr ""
+
+#: conversationlist_delivery.json:brv_wh_delivery_arcir
+msgid "Yes, an old but useful book, but you should have wiped it off first. Anyway, here's my delivery fee."
+msgstr ""
+
+#: conversationlist_delivery.json:brv_wh_delivery_edrin
+msgid "Ah, yes, a striped hammer. Don't look so impatient. Here's my delivery charge, and now you can leave!"
+msgstr ""
+
+#: conversationlist_delivery.json:brv_wh_delivery_odirath
+msgid "Yes, indeed. A gift for my beautiful daughter... but why did it take so long? Sigh, here's my delivery fee."
+msgstr ""
+
+#: conversationlist_delivery.json:brv_wh_delivery_venanra
+msgid "Yes I did, kid. Incredibly, it has become the latest fashion to buy new capes with holes. Here's my delivery fee."
+msgstr ""
+
+#: conversationlist_delivery.json:brv_wh_delivery_tjure
+msgid "What?! My lucky clover...but why now? Anyway, I'll no longer run out of luck. Here's my delivery fee."
+msgstr ""
+
+#: conversationlist_delivery.json:brv_wh_delivery_servant
+msgid "Finally, I'm no longer afraid of that room every time my lord turns off the lights to scare me. Here's my delivery fee."
+msgstr ""
+
+#: conversationlist_delivery.json:brv_wh_delivery_arghes
+msgid "Yes kid, thank you. Here, take this gold for them."
+msgstr ""
+
+#: conversationlist_delivery.json:brv_wh_delivery_wyre_negative
+msgid "That's not what I'm waiting for! Go out and find out what happened to my son, please!"
+msgstr ""
+
+#: conversationlist_delivery.json:brv_wh_delivery_wyre
+msgid "Yes, I'm longing for it just like how I'm longing for my son. But now I can mourn as I play his favorite song until I die."
+msgstr ""
+
+#: conversationlist_delivery.json:brv_wh_delivery_wyre:0
+msgid "My sincere condolence for the loss of your beloved son."
+msgstr ""
+
+#: conversationlist_delivery.json:brv_wh_delivery_mikhail
+msgid "Oh wow! Finally, your brother's gift has arrived and we only have to wait for his arrival."
+msgstr ""
+
+#: conversationlist_delivery.json:brv_wh_delivery_mikhail:0
+msgid "Sigh. I hope so."
+msgstr ""
+
+#: conversationlist_delivery.json:brv_wh_delivery_mikhail:1
+msgid "What?! Where's my gift?"
+msgstr ""
+
+#: conversationlist_delivery.json:brv_wh_delivery_mikhail3
+msgid "I already gave you his shield."
+msgstr ""
+
+#: conversationlist_delivery.json:brv_wh_delivery_mikhail2
+msgid "Anyway, it's been a very long time so please go look for your brother."
+msgstr ""
+
+#: conversationlist_delivery.json:brv_wh_delivery_mikhail2:1
+msgid "I'm still looking for him."
+msgstr ""
+
+#: conversationlist_delivery.json:brv_wh_delivery_mikhail2:2
+msgid "Eh, you have to pay for it..."
+msgstr ""
+
+#: conversationlist_delivery.json:brv_wh_delivery_mikhail4
+msgid "Ah, yes, I almost forgot. Here you are."
+msgstr ""
+
+#: conversationlist_delivery.json:brv_wh_delivery_mikhail4:0
+msgid "Thanks. I'm on my way again, bye."
+msgstr ""
+
+#: conversationlist_delivery.json:brv_wh_delivery_mikhail4:1
+msgid "Hmm... Bye"
+msgstr ""
+
+#: conversationlist_delivery.json:brv_wh_delivery_brv_fortune
+msgid ""
+"Ah yes, I need a new one. My current crystal globe has become a bit cloudy - otherwise I would of course have seen that you would bring me a new globe.\n"
+"Here is the gold for it."
+msgstr ""
+
+#: conversationlist_delivery.json:brv_wh_delivery_brv_fortune:0
+msgid "Do you want to try the crystal ball with me to see if it works?"
+msgstr ""
+
+#: conversationlist_delivery.json:brv_wh_delivery_brv_fortune:1
+msgid "Thanks for choosing Facutloni's delivery."
+msgstr ""
+
+#: conversationlist_delivery.json:brv_wh_delivery_brv_fortune_10
+msgid "You say you want me to help you?"
+msgstr ""
+
+#: conversationlist_delivery.json:brv_wh_delivery_boss_10_10
+msgid "You are back. Did you deliver all of the items?"
+msgstr ""
+
+#: conversationlist_delivery.json:brv_wh_delivery_boss_10_10:0
+msgid "Yes. I delivered everything."
+msgstr ""
+
+#: conversationlist_delivery.json:brv_wh_delivery_boss_10_10_no
+msgid "Then what are you standing there for?! Get out and deliver everything!"
+msgstr ""
+
+#: conversationlist_delivery.json:brv_wh_delivery_boss_10_10_no:0
+#: conversationlist_delivery.json:brv_wh_delivery_boss_10_10_yes_1:0
+msgid "[Run]"
+msgstr ""
+
+#: conversationlist_delivery.json:brv_wh_delivery_boss_10_10_no:1
+#: conversationlist_delivery.json:brv_wh_delivery_boss_10_10_yes_1:1
+msgid "Yes boss."
+msgstr ""
+
+#: conversationlist_delivery.json:brv_wh_delivery_boss_10_10_yes
+msgid "That's nice to hear. Then you can now give me the... eh...330 gold pieces that you should have received from the sales."
+msgstr ""
+
+#: conversationlist_delivery.json:brv_wh_delivery_boss_10_10_yes:0
+msgid "Sure. Here you are."
+msgstr ""
+
+#: conversationlist_delivery.json:brv_wh_delivery_boss_10_10_yes:1
+msgid "Uh, I had expenses along the way and I don't have all the gold anymore."
+msgstr ""
+
+#: conversationlist_delivery.json:brv_wh_delivery_boss_10_10_yes_1
+msgid "And then you walk into my sight? Go get my gold!"
+msgstr ""
+
+#: conversationlist_delivery.json:brv_wh_delivery_boss_10_10_yes_1:2
+msgid "Oh, I just found the 330 gold pieces in my pocket. Please take it."
+msgstr ""
+
+#: conversationlist_delivery.json:brv_wh_delivery_boss_10_10_yes_10
+msgid "Good job! I am glad that you work responsibly."
+msgstr ""
+
+#: conversationlist_delivery.json:brv_wh_delivery_boss_10_10_yes_10:0
+msgid "And seriously."
+msgstr ""
+
+#: conversationlist_delivery.json:brv_wh_delivery_boss_10_10_yes_10:1
+msgid "I travelled far and wide."
+msgstr ""
+
+#: conversationlist_delivery.json:brv_wh_delivery_boss_reward
+msgid "That is serious. And here you have your well-deserved reward: 100 gold."
+msgstr ""
+
+#: conversationlist_delivery.json:brv_wh_delivery_boss_reward:1
+msgid "What the?"
+msgstr ""
+
+#: conversationlist_delivery.json:brv_wh_delivery_boss_scrooge
+msgid "Pardon?"
+msgstr ""
+
+#: conversationlist_delivery.json:tjure_wh_delivery_90:0
+msgid "Not until I have delivered this to you. Are you the one who ordered a 'Mysterious green something'?"
+msgstr ""
 
 #: itemcategories_1.json:dagger
 msgid "Dagger"
@@ -50614,26 +50727,15 @@ msgstr ""
 "ウォーマス・スプラザーシェド著書\n"
 "\n"
 "忘れられた王国の建国（2300年）\n"
-"アルントク大王に率いられた最初の人類は、古代に南方より現れて忘れられた王国を築いた。これらの人々はレトガルと呼ばれる。現在の大きな町や都市がある場所に入植"
-"地を建設していった。ノアシティとサレンガードが最初に設立された。\n"
-"それからしばらく経ち、少数の探検家がダヤヴァルの最高峰であるガルモア山へと登頂。その標高の高さと眺めの良さのために、神官と魔法使いたちは山頂近くに聖域を建"
-"てる。そこで魔導の研究や神々への信仰を行った。\n"
+"アルントク大王に率いられた最初の人類は、古代に南方より現れて忘れられた王国を築いた。これらの人々はレトガルと呼ばれる。現在の大きな町や都市がある場所に入植地を建設していった。ノアシティとサレンガードが最初に設立された。\n"
+"それからしばらく経ち、少数の探検家がダヤヴァルの最高峰であるガルモア山へと登頂。その標高の高さと眺めの良さのために、神官と魔法使いたちは山頂近くに聖域を建てる。そこで魔導の研究や神々への信仰を行った。\n"
 "\n"
 "カザウルの台頭（2177年）\n"
-"ヴァルガという強力な力を持つ狂った魔術師は、別の次元へのポータルを生み出すという考えに執着した。仲間の魔法使いが反対したにもかかわらず、同朋たちの強力な生"
-"命力と聖域に蓄えられたエネルギーを消費することによって、ポータルの創造を実現。聖域は爆発で噴火、さらには大きな渓谷がガルモア山を分断する。その底にはポータ"
-"ルが開いた。それはすぐに\"裂け目\"と、またその周辺の荒廃した地域は\"アンダーテル\"と呼ばれるようになる"
-"。山はまた、傷口から血のような溶岩を噴出し現在では常に煙で覆われている。\n"
-"マスターである\"カザウル\"に率いられ、ありとあらゆる種類の悪魔やアンデッドがポータルを通って世に出現した。そんなカザウルたち自身は、魔法と戦争に恐ろし"
-"いほど長けたエターナルマスターに率いられた。モンスターとそのマスターたちは、やがてはダヤヴァル全土へと広がっていった。ところが、しばらくするとポータルは不"
-"安定となり、数十年後にはついに崩壊する。だが、すでに何千ものモンスターがポータルを通って入り込んでいたために被害が出た。\n"
-"短くも残酷な戦争が行われる。ほとんどすべての魔法使いを失ってしまったレトガルはモンスターの侵略に対して無力となり、すぐにカザウルによって征服され奴隷とされ"
-"た。忘れられた王国においてカザウルは恐怖政治を強いた。その非人間的な強さのために、誰もカザウルに対抗することができなかったようだ。\n"
-"その後、レトガルは圧制者のために地下アジトを建てねばならなくなった。非活性化したポータルを中心に、ガルモア山の下、その天然の洞窟の中に大規模な都市が建設さ"
-"れた。また、カーンタワーやブラックウォーター山の聖域など、無数のカザウルの地下集落が建設されていった。\n"
-"ほとんどのレトガルはマスターを嫌悪していたものの、一部はカザウルの儀式や暗黒魔術に興味を示す。その結果、人間のカザウルの弟子たちであるカザーン（カザウル教"
-"団）は、師匠のもとへと集い、彼らから学ぶ。この者たちはしばしばカザウルによる残忍な支配の強制のために利用された。イズシエル、ゴルノー、ウィルムなど現在のモ"
-"ンスターの多くは、この時代に行われた実験から進化した生物である。\n"
+"ヴァルガという強力な力を持つ狂った魔術師は、別の次元へのポータルを生み出すという考えに執着した。仲間の魔法使いが反対したにもかかわらず、同朋たちの強力な生命力と聖域に蓄えられたエネルギーを消費することによって、ポータルの創造を実現。聖域は爆発で噴火、さらには大きな渓谷がガルモア山を分断する。その底にはポータルが開いた。それはすぐに\"裂け目\"と、またその周辺の荒廃した地域は\"アンダーテル\"と呼ばれるようになる。山はまた、傷口から血のような溶岩を噴出し現在では常に煙で覆われている。\n"
+"マスターである\"カザウル\"に率いられ、ありとあらゆる種類の悪魔やアンデッドがポータルを通って世に出現した。そんなカザウルたち自身は、魔法と戦争に恐ろしいほど長けたエターナルマスターに率いられた。モンスターとそのマスターたちは、やがてはダヤヴァル全土へと広がっていった。ところが、しばらくするとポータルは不安定となり、数十年後にはついに崩壊する。だが、すでに何千ものモンスターがポータルを通って入り込んでいたために被害が出た。\n"
+"短くも残酷な戦争が行われる。ほとんどすべての魔法使いを失ってしまったレトガルはモンスターの侵略に対して無力となり、すぐにカザウルによって征服され奴隷とされた。忘れられた王国においてカザウルは恐怖政治を強いた。その非人間的な強さのために、誰もカザウルに対抗することができなかったようだ。\n"
+"その後、レトガルは圧制者のために地下アジトを建てねばならなくなった。非活性化したポータルを中心に、ガルモア山の下、その天然の洞窟の中に大規模な都市が建設された。また、カーンタワーやブラックウォーター山の聖域など、無数のカザウルの地下集落が建設されていった。\n"
+"ほとんどのレトガルはマスターを嫌悪していたものの、一部はカザウルの儀式や暗黒魔術に興味を示す。その結果、人間のカザウルの弟子たちであるカザーン（カザウル教団）は、師匠のもとへと集い、彼らから学ぶ。この者たちはしばしばカザウルによる残忍な支配の強制のために利用された。イズシエル、ゴルノー、ウィルムなど現在のモンスターの多くは、この時代に行われた実験から進化した生物である。\n"
 "この頃には、戦争の前兆であるヒラジンが力ない民衆を苦しめるようになった。\n"
 "\n"
 "夜明けの戦争とエリサラの台頭とエリザラン同盟（1537年）\n"
@@ -50644,53 +50746,38 @@ msgstr ""
 "\n"
 "…涙の海のほとりにフェイガードの街の建設を始めた。海へのアクセスの良さからすぐに王国における貿易の中心地となる。\n"
 "ローンフォードの町が設立され、その肥沃な畑と忘れられた王国の北部を養う健康的な野菜ですぐに有名となった。\n"
-"ブラックウォーター山が探索され、その頂上には、夜明けと夕暮れ、太陽と星を研究し、忘れられた王国を見守るために、エリザラン神官のための大きな聖域が建てられた"
-"。他の聖域にはフェイガードとノアシティのものがあり、各地の集落にも教会があった。また開拓者たちが山の下に鉄や石炭の豊富な資源を発見したことから、プリム鉱山"
-"集落が設立された。\n"
-"フォールヘブンの街は、ブラックウォーター山聖域、スタウトフォード、ノアシティ、フェイガードの分岐点としての優れた立地条件から、貿易の中心地として繁栄した。"
-"貨物を安全に保管するために大きな倉庫が建てられる。しかし、盗賊の一団はすぐにもその富の増大に惹かれ1つの大組織である盗賊ギルドの下に団結。当時最も裕福な都"
-"市であったフォールヘブン、フェイガード、ノアシティにはギルドホールが密かに設置された。\n"
+"ブラックウォーター山が探索され、その頂上には、夜明けと夕暮れ、太陽と星を研究し、忘れられた王国を見守るために、エリザラン神官のための大きな聖域が建てられた。他の聖域にはフェイガードとノアシティのものがあり、各地の集落にも教会があった。また開拓者たちが山の下に鉄や石炭の豊富な資源を発見したことから、プリム鉱山集落が設立された。\n"
+"フォールヘブンの街は、ブラックウォーター山聖域、スタウトフォード、ノアシティ、フェイガードの分岐点としての優れた立地条件から、貿易の中心地として繁栄した。貨物を安全に保管するために大きな倉庫が建てられる。しかし、盗賊の一団はすぐにもその富の増大に惹かれ1つの大組織である盗賊ギルドの下に団結。当時最も裕福な都市であったフォールヘブン、フェイガード、ノアシティにはギルドホールが密かに設置された。\n"
 "この頃にはブリムヘブンやブライトポートなど他の多くの町も設立され、チャーウッド鉱山が開業。\n"
 "貿易をさらに繁栄させるために、都市間では貿易協定が結ばれた。\n"
 "\n"
 "アイワタ王国建国（432年）\n"
-"ノアシティにおいて最も有力な一族の当主であるハウダート家のガルサン1世が王となることを宣言し、エリザラン時代の終わりとシャドウの王国の始まりを告げる。この"
-"時点で、政治と宗教双方の権力は密接に結び付く。王国が繁栄するにつれて、シャドウも繁栄し、エリサラは\n"
+"ノアシティにおいて最も有力な一族の当主であるハウダート家のガルサン1世が王となることを宣言し、エリザラン時代の終わりとシャドウの王国の始まりを告げる。この時点で、政治と宗教双方の権力は密接に結び付く。王国が繁栄するにつれて、シャドウも繁栄し、エリサラは\n"
 "\n"
 "（…また何ページか破れていた…）\n"
 "\n"
-"…採掘の奴隷として使われている。この時にフラッグストーン監獄も建てられ、ガルモア山から逃亡した労働者が投獄され腐るまで放置される。ただし、度重なるモンスタ"
-"ーの襲撃や暗闇に潜む言葉では言い表せない恐怖のために、しばらくの年月の後に鉱山は閉鎖された。 \n"
+"…採掘の奴隷として使われている。この時にフラッグストーン監獄も建てられ、ガルモア山から逃亡した労働者が投獄され腐るまで放置される。ただし、度重なるモンスターの襲撃や暗闇に潜む言葉では言い表せない恐怖のために、しばらくの年月の後に鉱山は閉鎖された。 \n"
 "レムガードは、レムガードのコラルドによって設立され、ロレス湖の大きな島に建てられた。優れた鍛冶の腕によって有名となる。\n"
 "クロスグレン村が設立され、農民たちが定住する。\n"
-"ルーサー王はオロミア3世の直系の後継者として即位。首都をノアシティからフォールヘブンへと移転するも、信仰の中心はノアシティへと残る。ルーサー王は年をとるに"
-"つれて助言者の必要を感じ、そのためにフェイガードのジオミア卿が王の手として指名された。非常な執着心と努力によって彼はその義務を果たした。\n"
+"ルーサー王はオロミア3世の直系の後継者として即位。首都をノアシティからフォールヘブンへと移転するも、信仰の中心はノアシティへと残る。ルーサー王は年をとるにつれて助言者の必要を感じ、そのためにフェイガードのジオミア卿が王の手として指名された。非常な執着心と努力によって彼はその義務を果たした。\n"
 "\n"
 "ノーブル・ウォーズ（25年～14年）\n"
-"ルーサー王が崩御し、王位継承者無きままに王国を去った。フォールヘブン教会の地下墓地へと埋葬される。その後のノーブル・ウォーズは、この国が目撃した中でも最も"
-"暗い時代のひとつである。\n"
+"ルーサー王が崩御し、王位継承者無きままに王国を去った。フォールヘブン教会の地下墓地へと埋葬される。その後のノーブル・ウォーズは、この国が目撃した中でも最も暗い時代のひとつである。\n"
 "4つの連合が形成され、それぞれが1人の強力な君主によって統治された。\n"
 "西部はスタウトフォードとブラックウォーター山の集落地から成り、エルウィン卿が治めた。\n"
 "北部はフェイガード、タルガード、ルトヘブン、レムガードから成り、ジオミア卿が治めた。\n"
 "東部はノアシティ、サレンガード、ブライトポート、ブリムヘブンから成り、エメリック卿が治めた。\n"
 "中央の首都圏は当初は中立のままで、フォールヘブン、ヴィルガード、ローンフォード（以前はルーサー王が統治）から構成された。\n"
 "ノーブル・ウォーズは、誰が次代の正統な王に相応しいかについて領主たちが議論するところから始まる。\n"
-"最初の一石はスタウトフォードによって投じられた。諸侯が議論で忙殺されている最中、エルウィン卿はその時間を利用して中央地域を攻撃しようとする。ノアシティへの"
-"通商路を支配し、最大の影響力を得て、他の連合を撃破しようと占領を目論んだ。フォールヘブンでは一部が破壊された。\n"
-"東部連合の攻撃を受けたことで、エルウィンの成功は短いものと終わる。そして数年に渡って、中央地域の支配権を巡り数々の戦いと数え切れないほどの小競り合いが繰り"
-"広げられる。そうして両者が弱体化すると、そこへジオミア卿が攻撃を仕掛け双方を降伏へと追い込んだ。フォールヘブン平和条約が締結される。ジオミア卿が国王として"
-"即位した。\n"
+"最初の一石はスタウトフォードによって投じられた。諸侯が議論で忙殺されている最中、エルウィン卿はその時間を利用して中央地域を攻撃しようとする。ノアシティへの通商路を支配し、最大の影響力を得て、他の連合を撃破しようと占領を目論んだ。フォールヘブンでは一部が破壊された。\n"
+"東部連合の攻撃を受けたことで、エルウィンの成功は短いものと終わる。そして数年に渡って、中央地域の支配権を巡り数々の戦いと数え切れないほどの小競り合いが繰り広げられる。そうして両者が弱体化すると、そこへジオミア卿が攻撃を仕掛け双方を降伏へと追い込んだ。フォールヘブン平和条約が締結される。ジオミア卿が国王として即位した。\n"
 "この戦争の期間中、ヒラジンは再びこの地に姿を現している。\n"
 "\n"
 "ジオミア王の統治（14年）\n"
-"ジオミア国王は破壊された都市を修復し、長い戦争の爪痕を取り除くよう人々へと促した。税制を復活させ、各地の村でフェイガード近衛兵を駐屯させる。より一層権力を"
-"高めるため、ジオミアは縁故主義に汚職とを推し進める。\n"
-"力なき人々にとってシャドウ教団はますます重要となった。ノーブル・ウォーズの厳しい時期を経て以降、民衆は救済の必要性を感じ、シャドウをより良い時代への道しる"
-"べとして受け入れるようになった。\n"
-"ジオミア卿はそんな宗教の力を恐れるようになり、ノアシティとフェイガードの間で緊張が高まり始める。そして教団に対してのいくつかの禁止を宣言。儀式を行うことは"
-"許されなくなり、神官の幾人かを拘留しようとした。\n"
-"また彼は、自身の打倒へと使用されることを恐れ、ハートスチール製の武器の取引と使用も禁じる。多くの武器を処分し、他も没収した。骨粉ポーションも禁止され、民衆"
-"や神官たちから不評を買っている。\n"
+"ジオミア国王は破壊された都市を修復し、長い戦争の爪痕を取り除くよう人々へと促した。税制を復活させ、各地の村でフェイガード近衛兵を駐屯させる。より一層権力を高めるため、ジオミアは縁故主義に汚職とを推し進める。\n"
+"力なき人々にとってシャドウ教団はますます重要となった。ノーブル・ウォーズの厳しい時期を経て以降、民衆は救済の必要性を感じ、シャドウをより良い時代への道しるべとして受け入れるようになった。\n"
+"ジオミア卿はそんな宗教の力を恐れるようになり、ノアシティとフェイガードの間で緊張が高まり始める。そして教団に対してのいくつかの禁止を宣言。儀式を行うことは許されなくなり、神官の幾人かを拘留しようとした。\n"
+"また彼は、自身の打倒へと使用されることを恐れ、ハートスチール製の武器の取引と使用も禁じる。多くの武器を処分し、他も没収した。骨粉ポーションも禁止され、民衆や神官たちから不評を買っている。\n"
 "\n"
 "（…ここで物語は終わる。まだページがあったかどうかは分からない…）"
 
@@ -50751,90 +50838,54 @@ msgstr ""
 "ウォーマス・スプラザーシェド著書\n"
 "\n"
 "忘れられた王国の建国（2300年）\n"
-"アルントク大王に率いられた最初の人類は、古代に南方より現れて忘れられた王国を築いた。これらの人々はレトガルと呼ばれる。現在の大きな町や都市がある場所に入植"
-"地を建設していった。ノアシティとサレンガードが最初に設立された。\n"
-"それからしばらく経ち、少数の探検家がダヤヴァルの最高峰であるガルモア山へと登頂。その標高の高さと眺めの良さのために、神官と魔法使いたちは山頂近くに聖域を建"
-"てる。そこで魔導の研究や神々への信仰を行った。\n"
+"アルントク大王に率いられた最初の人類は、古代に南方より現れて忘れられた王国を築いた。これらの人々はレトガルと呼ばれる。現在の大きな町や都市がある場所に入植地を建設していった。ノアシティとサレンガードが最初に設立された。\n"
+"それからしばらく経ち、少数の探検家がダヤヴァルの最高峰であるガルモア山へと登頂。その標高の高さと眺めの良さのために、神官と魔法使いたちは山頂近くに聖域を建てる。そこで魔導の研究や神々への信仰を行った。\n"
 "\n"
 "カザウルの台頭（2177年）\n"
-"ヴァルガという強力な力を持つ狂った魔術師は、別の次元へのポータルを生み出すという考えに執着した。仲間の魔法使いが反対したにもかかわらず、同朋たちの強力な生"
-"命力と聖域に蓄えられたエネルギーを消費することによって、ポータルの創造を実現。聖域は爆発で噴火、さらには大きな渓谷がガルモア山を分断する。その底にはポータ"
-"ルが開いた。それはすぐに\"裂け目\"と、またその周辺の荒廃した地域は\"アンダーテル\"と呼ばれるようになる"
-"。山はまた、傷口から血のような溶岩を噴出し現在では常に煙で覆われている。\n"
-"マスターである\"カザウル\"に率いられ、ありとあらゆる種類の悪魔やアンデッドがポータルを通って世に出現した。そんなカザウルたち自身は、魔法と戦争に恐ろし"
-"いほど長けたエターナルマスターに率いられた。モンスターとそのマスターたちは、やがてはダヤヴァル全土へと広がっていった。ところが、しばらくするとポータルは不"
-"安定となり、数十年後にはついに崩壊する。だが、すでに何千ものモンスターがポータルを通って入り込んでいたために被害が出た。\n"
-"短くも残酷な戦争が行われる。ほとんどすべての魔法使いを失ってしまったレトガルはモンスターの侵略に対して無力となり、すぐにカザウルによって征服され奴隷とされ"
-"た。忘れられた王国においてカザウルは恐怖政治を強いた。その非人間的な強さのために、誰もカザウルに対抗することができなかったようだ。\n"
-"その後、レトガルは圧制者のために地下アジトを建てねばならなくなった。非活性化したポータルを中心に、ガルモア山の下、その天然の洞窟の中に大規模な都市が建設さ"
-"れた。また、カーンタワーやブラックウォーター山の聖域など、無数のカザウルの地下集落が建設されていった。\n"
-"ほとんどのレトガルはマスターを嫌悪していたものの、一部はカザウルの儀式や暗黒魔術に興味を示す。その結果、人間のカザウルの弟子たちであるカザーン（カザウル教"
-"団）は、師匠のもとへと集い、彼らから学ぶ。この者たちはしばしばカザウルによる残忍な支配の強制のために利用された。イズシエル、ゴルノー、ウィルムなど現在のモ"
-"ンスターの多くは、この時代に行われた実験から進化した生物である。\n"
+"ヴァルガという強力な力を持つ狂った魔術師は、別の次元へのポータルを生み出すという考えに執着した。仲間の魔法使いが反対したにもかかわらず、同朋たちの強力な生命力と聖域に蓄えられたエネルギーを消費することによって、ポータルの創造を実現。聖域は爆発で噴火、さらには大きな渓谷がガルモア山を分断する。その底にはポータルが開いた。それはすぐに\"裂け目\"と、またその周辺の荒廃した地域は\"アンダーテル\"と呼ばれるようになる。山はまた、傷口から血のような溶岩を噴出し現在では常に煙で覆われている。\n"
+"マスターである\"カザウル\"に率いられ、ありとあらゆる種類の悪魔やアンデッドがポータルを通って世に出現した。そんなカザウルたち自身は、魔法と戦争に恐ろしいほど長けたエターナルマスターに率いられた。モンスターとそのマスターたちは、やがてはダヤヴァル全土へと広がっていった。ところが、しばらくするとポータルは不安定となり、数十年後にはついに崩壊する。だが、すでに何千ものモンスターがポータルを通って入り込んでいたために被害が出た。\n"
+"短くも残酷な戦争が行われる。ほとんどすべての魔法使いを失ってしまったレトガルはモンスターの侵略に対して無力となり、すぐにカザウルによって征服され奴隷とされた。忘れられた王国においてカザウルは恐怖政治を強いた。その非人間的な強さのために、誰もカザウルに対抗することができなかったようだ。\n"
+"その後、レトガルは圧制者のために地下アジトを建てねばならなくなった。非活性化したポータルを中心に、ガルモア山の下、その天然の洞窟の中に大規模な都市が建設された。また、カーンタワーやブラックウォーター山の聖域など、無数のカザウルの地下集落が建設されていった。\n"
+"ほとんどのレトガルはマスターを嫌悪していたものの、一部はカザウルの儀式や暗黒魔術に興味を示す。その結果、人間のカザウルの弟子たちであるカザーン（カザウル教団）は、師匠のもとへと集い、彼らから学ぶ。この者たちはしばしばカザウルによる残忍な支配の強制のために利用された。イズシエル、ゴルノー、ウィルムなど現在のモンスターの多くは、この時代に行われた実験から進化した生物である。\n"
 "この頃には、戦争の前兆であるヒラジンが力ない民衆を苦しめるようになった。\n"
 "\n"
 "夜明けの戦争とエリサラの台頭とエリザラン同盟（1537年）\n"
 "ある日、北の海（涙の海）の岸辺にエリザラン教団がやってくる。彼らはエリサラのまばゆい清めの光を崇拝していた。\n"
-"エリザランの魔法使いと戦士たちは、鍛え上げられた武器であるエリサラのまばゆい光の助けを受けて、カザウルとカザーンを打ち破ることに成功した。エターナルマスタ"
-"ーが殺されてしまったことによって、カザウルはほとんど何もない状態となった。しかし、少数のカザウルとその信者たちがエリザラン人に知られていない真っ暗闇の中、"
-"遠隔地へと身を潜めることに成功。そのためエリサラと教団は彼らを完全に滅ぼすことができなくなった。これは、カザウルの暗黒呪文はエリサラのまばゆい光には無力で"
-"あったものの、エリサラの力は完全な闇の中奥深くでは衰えるためだ。それでも何百年もの間、カザウルは暗闇の中で深い眠りへとつく。\n"
-"彼女の力の視覚的な美しさと平民に対する博愛の心から、人々は彼女を光の女神と呼ぶようになる。人々はカザウルの打倒を歓迎した。エリザラン人は人々の生活の組織化"
-"を助け、女神のために町や都市を建設していった。この頃には貴族の家がいくつかできる。各都市はエリザラン神官たちと密接に協力した1つか2つの家によって支配され"
-"た。\n"
-"長い平和と繁栄の時代が続き、エリザラン同盟が創設され、エリサラの言葉を世に広めていった。貴族が都市を支配していたとしても、人々は主にエリザラン神官から影響"
-"を受けた。\n"
-"明らかにエリサラの下にある社会は完璧なものではなかったものの、神官たちは人々にそう信じさせた。彼女の\"光\"は\"正しい"
-"\"道に従うことを拒否した者に示され、多くの人々は盲目かそれ以下の状態となっていった…\n"
+"エリザランの魔法使いと戦士たちは、鍛え上げられた武器であるエリサラのまばゆい光の助けを受けて、カザウルとカザーンを打ち破ることに成功した。エターナルマスターが殺されてしまったことによって、カザウルはほとんど何もない状態となった。しかし、少数のカザウルとその信者たちがエリザラン人に知られていない真っ暗闇の中、遠隔地へと身を潜めることに成功。そのためエリサラと教団は彼らを完全に滅ぼすことができなくなった。これは、カザウルの暗黒呪文はエリサラのまばゆい光には無力であったものの、エリサラの力は完全な闇の中奥深くでは衰えるためだ。それでも何百年もの間、カザウルは暗闇の中で深い眠りへとつく。\n"
+"彼女の力の視覚的な美しさと平民に対する博愛の心から、人々は彼女を光の女神と呼ぶようになる。人々はカザウルの打倒を歓迎した。エリザラン人は人々の生活の組織化を助け、女神のために町や都市を建設していった。この頃には貴族の家がいくつかできる。各都市はエリザラン神官たちと密接に協力した1つか2つの家によって支配された。\n"
+"長い平和と繁栄の時代が続き、エリザラン同盟が創設され、エリサラの言葉を世に広めていった。貴族が都市を支配していたとしても、人々は主にエリザラン神官から影響を受けた。\n"
+"明らかにエリサラの下にある社会は完璧なものではなかったものの、神官たちは人々にそう信じさせた。彼女の\"光\"は\"正しい\"道に従うことを拒否した者に示され、多くの人々は盲目かそれ以下の状態となっていった…\n"
 "エリザラン人はすぐさま涙の海のほとりにフェイガードの街の建設を始めた。海へのアクセスの良さからすぐに王国における貿易の中心地となる。\n"
 "ローンフォードの町が設立され、その肥沃な畑と忘れられた王国の北部を養う健康的な野菜ですぐに有名となった。\n"
-"ブラックウォーター山が探索され、その頂上には、夜明けと夕暮れ、太陽と星を研究し、忘れられた王国を見守るために、エリザラン神官のための大きな聖域が建てられた"
-"。他の聖域にはフェイガードとノアシティのものがあり、各地の集落にも教会があった。また開拓者たちが山の下に鉄や石炭の豊富な資源を発見したことから、プリム鉱山"
-"集落が設立された。\n"
-"フォールヘブンの街は、ブラックウォーター山聖域、スタウトフォード、ノアシティ、フェイガードの分岐点としての優れた立地条件から、貿易の中心地として繁栄した。"
-"貨物を安全に保管するために大きな倉庫が建てられる。しかし、盗賊の一団はすぐにもその富の増大に惹かれ1つの大組織である盗賊ギルドの下に団結。当時最も裕福な都"
-"市であったフォールヘブン、フェイガード、ノアシティにはギルドホールが密かに設置された。\n"
+"ブラックウォーター山が探索され、その頂上には、夜明けと夕暮れ、太陽と星を研究し、忘れられた王国を見守るために、エリザラン神官のための大きな聖域が建てられた。他の聖域にはフェイガードとノアシティのものがあり、各地の集落にも教会があった。また開拓者たちが山の下に鉄や石炭の豊富な資源を発見したことから、プリム鉱山集落が設立された。\n"
+"フォールヘブンの街は、ブラックウォーター山聖域、スタウトフォード、ノアシティ、フェイガードの分岐点としての優れた立地条件から、貿易の中心地として繁栄した。貨物を安全に保管するために大きな倉庫が建てられる。しかし、盗賊の一団はすぐにもその富の増大に惹かれ1つの大組織である盗賊ギルドの下に団結。当時最も裕福な都市であったフォールヘブン、フェイガード、ノアシティにはギルドホールが密かに設置された。\n"
 "この頃にはブリムヘブンやブライトポートなど他の多くの町も設立され、チャーウッド鉱山が開業。\n"
 "貿易をさらに繁栄させるために、都市間では貿易協定が結ばれた。\n"
 "\n"
 "アイワタ王国建国（432年）\n"
-"ノアシティにおいて最も有力な一族の当主であるハウダート家のガルサン1世が王となることを宣言し、エリザラン時代の終わりとシャドウの王国の始まりを告げる。この"
-"時点で、政治と宗教双方の権力は密接に結び付く。王国が繁栄するにつれて、シャドウも繁栄し、エリサラはほんのひと世代程度の時間でほとんどの人から忘れ去られてし"
-"まう。かつてエリサラの教会があったノアシティの中心部には壮大な大聖堂を持つ大規模な神殿が建てられた。小さな教会も国中に建てられた。現在ではシャドウが一般的"
-"に人々から信じられるようになっている。\n"
-"ガルサン1世は恐るべきガルモア山の探索を命じる。数十年に渡って大規模な鉱山が拓かれ宝石に金が豊富に発見された。残っていたエリザラン信者たちが採掘の奴隷とし"
-"て使われている。この時にフラッグストーン監獄も建てられ、ガルモア山から逃亡した労働者が投獄され腐るまで放置される。ただし、度重なるモンスターの襲撃や暗闇に"
-"潜む言葉では言い表せない恐怖のために、しばらくの年月の後に鉱山は閉鎖された。\n"
+"ノアシティにおいて最も有力な一族の当主であるハウダート家のガルサン1世が王となることを宣言し、エリザラン時代の終わりとシャドウの王国の始まりを告げる。この時点で、政治と宗教双方の権力は密接に結び付く。王国が繁栄するにつれて、シャドウも繁栄し、エリサラはほんのひと世代程度の時間でほとんどの人から忘れ去られてしまう。かつてエリサラの教会があったノアシティの中心部には壮大な大聖堂を持つ大規模な神殿が建てられた。小さな教会も国中に建てられた。現在ではシャドウが一般的に人々から信じられるようになっている。\n"
+"ガルサン1世は恐るべきガルモア山の探索を命じる。数十年に渡って大規模な鉱山が拓かれ宝石に金が豊富に発見された。残っていたエリザラン信者たちが採掘の奴隷として使われている。この時にフラッグストーン監獄も建てられ、ガルモア山から逃亡した労働者が投獄され腐るまで放置される。ただし、度重なるモンスターの襲撃や暗闇に潜む言葉では言い表せない恐怖のために、しばらくの年月の後に鉱山は閉鎖された。\n"
 "レムガードは、レムガードのコラルドによって設立され、ロレス湖の大きな島に建てられた。優れた鍛冶の腕によって有名となる。\n"
 "クロスグレン村が設立され、農民たちが定住する。\n"
-"ルーサー王はオロミア3世の直系の後継者として即位。首都をノアシティからフォールヘブンへと移転するも、信仰の中心はノアシティへと残る。ルーサー王は年をとるに"
-"つれて助言者の必要を感じ、そのためにフェイガードのジオミア卿が王の手として指名された。非常な執着心と努力によって彼はその義務を果たした。 \n"
+"ルーサー王はオロミア3世の直系の後継者として即位。首都をノアシティからフォールヘブンへと移転するも、信仰の中心はノアシティへと残る。ルーサー王は年をとるにつれて助言者の必要を感じ、そのためにフェイガードのジオミア卿が王の手として指名された。非常な執着心と努力によって彼はその義務を果たした。 \n"
 "\n"
 "ノーブル・ウォーズ（25年～14年）\n"
-"ルーサー王が崩御し、王位継承者無きままに王国を去った。フォールヘブン教会の地下墓地へと埋葬される。その後のノーブル・ウォーズは、この国が目撃した中でも最も"
-"暗い時代のひとつである。\n"
+"ルーサー王が崩御し、王位継承者無きままに王国を去った。フォールヘブン教会の地下墓地へと埋葬される。その後のノーブル・ウォーズは、この国が目撃した中でも最も暗い時代のひとつである。\n"
 "4つの連合が形成され、それぞれが1人の強力な君主によって統治された。\n"
 "西部はスタウトフォードとブラックウォーター山の集落地から成り、エルウィン卿が治めた。\n"
 "北部はフェイガード、タルガード、ルトヘブン、レムガードから成り、ジオミア卿が治めた。\n"
 "東部はノアシティ、サレンガード、ブライトポート、ブリムヘブンから成り、エメリック卿が治めた。\n"
 "中央の首都圏は当初は中立のままで、フォールヘブン、ヴィルガード、ローンフォード（以前はルーサー王が統治）から構成された。\n"
 "ノーブル・ウォーズは、誰が次代の正統な王に相応しいかについて領主たちが議論するところから始まる。\n"
-"最初の一石はスタウトフォードによって投じられた。諸侯が議論で忙殺されている最中、エルウィン卿はその時間を利用して中央地域を攻撃しようとする。ノアシティへの"
-"通商路を支配し、最大の影響力を得て、他の連合を撃破しようと占領を目論んだ。フォールヘブンでは一部が破壊された。\n"
-"東部連合の攻撃を受けたことで、エルウィンの成功は短いものと終わる。そして数年に渡って、中央地域の支配権を巡り数々の戦いと数え切れないほどの小競り合いが繰り"
-"広げられる。そうして両者が弱体化すると、そこへジオミア卿が攻撃を仕掛け双方を降伏へと追い込んだ。フォールヘブン平和条約が締結される。ジオミア卿が国王として"
-"即位した。\n"
+"最初の一石はスタウトフォードによって投じられた。諸侯が議論で忙殺されている最中、エルウィン卿はその時間を利用して中央地域を攻撃しようとする。ノアシティへの通商路を支配し、最大の影響力を得て、他の連合を撃破しようと占領を目論んだ。フォールヘブンでは一部が破壊された。\n"
+"東部連合の攻撃を受けたことで、エルウィンの成功は短いものと終わる。そして数年に渡って、中央地域の支配権を巡り数々の戦いと数え切れないほどの小競り合いが繰り広げられる。そうして両者が弱体化すると、そこへジオミア卿が攻撃を仕掛け双方を降伏へと追い込んだ。フォールヘブン平和条約が締結される。ジオミア卿が国王として即位した。\n"
 "この戦争の期間中、ヒラジンは再びこの地に姿を現している。\n"
 "\n"
 "ジオミア王の統治（14年）\n"
-"ジオミア国王は破壊された都市を修復し、長い戦争の爪痕を取り除くよう人々へと促した。税制を復活させ、各地の村でフェイガード近衛兵を駐屯させる。より一層権力を"
-"高めるため、ジオミアは縁故主義に汚職とを推し進める。\n"
-"力なき人々にとってシャドウ教団はますます重要となった。ノーブル・ウォーズの厳しい時期を経て以降、民衆は救済の必要性を感じ、シャドウをより良い時代への道しる"
-"べとして受け入れるようになった。\n"
-"ジオミア卿はそんな宗教の力を恐れるようになり、ノアシティとフェイガードの間で緊張が高まり始める。そして教団に対してのいくつかの禁止を宣言。儀式を行うことは"
-"許されなくなり、神官の幾人かを拘留しようとした。\n"
-"また彼は、自身の打倒へと使用されることを恐れ、ハートスチール製の武器の取引と使用も禁じる。多くの武器を処分し、他も没収した。骨粉ポーションも禁止され、民衆"
-"や神官たちから不評を買っている。"
+"ジオミア国王は破壊された都市を修復し、長い戦争の爪痕を取り除くよう人々へと促した。税制を復活させ、各地の村でフェイガード近衛兵を駐屯させる。より一層権力を高めるため、ジオミアは縁故主義に汚職とを推し進める。\n"
+"力なき人々にとってシャドウ教団はますます重要となった。ノーブル・ウォーズの厳しい時期を経て以降、民衆は救済の必要性を感じ、シャドウをより良い時代への道しるべとして受け入れるようになった。\n"
+"ジオミア卿はそんな宗教の力を恐れるようになり、ノアシティとフェイガードの間で緊張が高まり始める。そして教団に対してのいくつかの禁止を宣言。儀式を行うことは許されなくなり、神官の幾人かを拘留しようとした。\n"
+"また彼は、自身の打倒へと使用されることを恐れ、ハートスチール製の武器の取引と使用も禁じる。多くの武器を処分し、他も没収した。骨粉ポーションも禁止され、民衆や神官たちから不評を買っている。"
 
 #: itemlist_brimhaven2.json:cake
 msgid "Cake"
@@ -51362,7 +51413,7 @@ msgid "Unknown gem (extracted from the Elm mine)"
 msgstr "未知の宝石 （エルム鉱山から抽出）"
 
 #: itemlist_omi2.json:elm_gem_u:description
-msgid "It is very cold and very sticky to the touch. It gives a feel of dizziness when you stare at it."
+msgid "It is very cold and very sticky to the touch. It gives a feeling of dizziness when you stare at it."
 msgstr "とても冷たく、触ると酷くベタつく。じっと見つめているとめまいがする。"
 
 #: itemlist_omi2.json:bwm_fish2
@@ -51446,7 +51497,7 @@ msgid "Cave fern"
 msgstr "洞窟シダ"
 
 #: itemlist_omi2.json:elm_fern:description
-msgid "A fern inside a cave is something out of normal, not seen everyday."
+msgid "A fern inside a cave is something unusual, not seen every day."
 msgstr "洞窟の中のシダとは通常、日常的に見られるものではない。"
 
 #: itemlist_omi2.json:yczorah
@@ -51492,6 +51543,14 @@ msgstr "オルトリオンのタリスマン"
 #: itemlist_omi2.json:ortholion_reward:description
 msgid "You feel a warm and comfortable feeling when holding it."
 msgstr "持っていると温かみがあり心地よい感覚を覚える。"
+
+#: itemlist_delivery.json:facutloni_docket
+msgid "Facutloni's Docket"
+msgstr ""
+
+#: itemlist_delivery.json:facutloni_docket:description
+msgid "A document listing the contents of a delivery   Arcir the book-lover from Fallhaven ordered a 'Dusty Old Book'.   Edrin the metalsmith from Brimhaven ordered a 'Striped Hammer'.   Odirath the armorer from Stoutford ordered a 'Pretty Porcelain Figure'.   Venanra the laundress from Brimhaven ordered an 'Old, worn cape'.   Tjure the unlucky merchant ordered a 'Mysterious green something'.   Servant the servant from Guynmart Castle ordered a 'Chandelier'.   Arghes from Remgard tavern ordered 'Yellow Boots'.   Wyre the mournful woman from Vilegard ordered a 'Lyre'.   Mikhail from Crossglen ordered a 'Plush Pillow'.   Pangitain the fortune teller from Brimhaven ordered a 'Crystal Globe'. "
+msgstr ""
 
 #: monsterlist_crossglen_animals.json:tiny_rat
 msgid "Tiny rat"
@@ -54050,7 +54109,6 @@ msgstr "墓地の死体"
 
 #: monsterlist_graveyard1.json:graveyard_corpse2
 #: monsterlist_graveyard1.json:graveyard_corpse3
-#: monsterlist_graveyard1.json:graveyard_corpse3
 msgid "Angry graveyard corpse"
 msgstr "怒れる墓地の死体"
 
@@ -55342,9 +55400,7 @@ msgstr "アンドールとその同行者が去って間もなく、ロダーの
 
 #: questlist.json:andor:72
 msgid "Since I helped Lodar defeat the Hira'zinn, he promised to help me in return. He gave me a piece of paper that should allow me to enter the Valanyr temple of the Shadow in Nor City. He told me to seek out lady Lydalon in the temple for further assistance."
-msgstr ""
-"ヒラジンを倒すのを手伝ったことで、ロダーはお返しにあなたを助けると約束してくれた。彼はノアシティにあるシャドウヴァラニル神殿に入るのを許可する紙をくれた。"
-"また、神殿のレディ・リダロンを探してさらなる援助を求めるように話した。"
+msgstr "ヒラジンを倒すのを手伝ったことで、ロダーはお返しにあなたを助けると約束してくれた。彼はノアシティにあるシャドウヴァラニル神殿に入るのを許可する紙をくれた。また、神殿のレディ・リダロンを探してさらなる援助を求めるように話した。"
 
 #: questlist.json:andor:80
 msgid "All clues so far as to where Andor went point to Nor City. I should travel to Nor City by following the Duleian road to the southeast and look for more clues there."
@@ -55604,9 +55660,7 @@ msgstr "フラッグストーン地下深くで強大なるウイングデーモ
 
 #: questlist.json:flagstone:60
 msgid "I found one prisoner, Narael, alive deep beneath Flagstone. Narael was once a citizen of Nor City. He is too weak to walk by himself, but if I can find his wife in Nor City, I would be handsomely rewarded."
-msgstr ""
-"ナラエルという囚人が生き残っているのをフラッグストーン地下深くで発見した。ナラエルはかつてノアシティの市民だった。彼はとても弱っていて1人では歩くこともで"
-"きないが、もし彼の妻をノアシティで見つけることができたなら、あなたは十分に報われるだろう。"
+msgstr "ナラエルという囚人が生き残っているのをフラッグストーン地下深くで発見した。ナラエルはかつてノアシティの市民だった。彼はとても弱っていて1人では歩くこともできないが、もし彼の妻をノアシティで見つけることができたなら、あなたは十分に報われるだろう。"
 
 #: questlist.json:flagstone:70
 msgid "I approached the sentry again and he was happy to hear the source of the undead is gone. I should talk to Yolgen, the priest of Stoutford, for a reward."
@@ -55758,10 +55812,7 @@ msgstr "オガムが言った言葉を口にすると、その生き物は道を
 
 #: questlist_v068.json:lodar:50
 msgid "I encountered a guard from Feygard in the woods. He told me a tale of a madman that the guards from Feygard are searching for. The madman is wanted for a number of reasons that he would not disclose. He warned me both about the twisty mazes ahead, and about the madman. Apparently, several guards have gone missing after venturing forth, either by getting lost in the maze, or by something that the madman has done to them."
-msgstr ""
-"森の中でフェイガードの衛兵に出くわした。彼はフェイガード衛兵が探している狂人について話してくれた。狂人はいくつかの理由で指名手配されているが、その理由まで"
-"は明かさなかった。彼はこの先の曲がりくねった迷路と狂人について警告してくれた。どうやら何人かの衛兵が危険を冒して向かった後に、迷路で迷子になったか狂人が何"
-"かしたかのどちらかで行方不明になったらしい。"
+msgstr "森の中でフェイガードの衛兵に出くわした。彼はフェイガード衛兵が探している狂人について話してくれた。狂人はいくつかの理由で指名手配されているが、その理由までは明かさなかった。彼はこの先の曲がりくねった迷路と狂人について警告してくれた。どうやら何人かの衛兵が危険を冒して向かった後に、迷路で迷子になったか狂人が何かしたかのどちらかで行方不明になったらしい。"
 
 #: questlist_v068.json:lodar:51
 msgid "Before leaving, the guard warned me both about the twisty mazes ahead, and about the madman. Apparently, several guards have gone missing after venturing forth, either by getting lost in the maze, or by something that the madman has done to them."
@@ -55929,9 +55980,7 @@ msgstr "ブラックウォーター山集落に到着した。戦闘司令官の
 
 #: questlist_v069.json:bwm_agent:65
 msgid "I have spoken to Harlenn in the Blackwater mountain settlement. Apparently, the settlement is under attack by a number of monsters, the aulaeth and white wyrms. On top of that, they are being attacked by the people of Prim."
-msgstr ""
-"ブラックウォーター山集落のハーレンと話をした。どうやら集落は多くのモンスターに襲われているようだ。アウレウスにホワイトウィルム。それに加えて、プリムの人々"
-"にも襲われているという。"
+msgstr "ブラックウォーター山集落のハーレンと話をした。どうやら集落は多くのモンスターに襲われているようだ。アウレウスにホワイトウィルム。それに加えて、プリムの人々にも襲われているという。"
 
 #: questlist_v069.json:bwm_agent:66
 msgid "Harlenn thinks the people of Prim are behind the monster attacks somehow."
@@ -56003,9 +56052,7 @@ msgstr "ブラックウォーター山の麓のプリムでコックの人と話
 
 #: questlist_v069.json:prim_innquest:20
 msgid "I talked to Arghest about the back room at the inn. He is still interested in having it as an option to rest at. But he told me he could probably be persuaded to let me use it if I compensate him sufficiently."
-msgstr ""
-"宿の奥の部屋のことをアーゲストに相談した。彼はまだそこを休憩場所として使いたいと思っている。ただし十分な埋め合わせがあれば、使わせてもらえるかもしれないと"
-"いう。"
+msgstr "宿の奥の部屋のことをアーゲストに相談した。彼はまだそこを休憩場所として使いたいと思っている。ただし十分な埋め合わせがあれば、使わせてもらえるかもしれないという。"
 
 #: questlist_v069.json:prim_innquest:30
 msgid "Arghest wants me to bring him 5 bottles of milk. I can probably find some milk in any of the larger villages."
@@ -56169,9 +56216,7 @@ msgstr "欠点無し"
 
 #: questlist_v069.json:bwm_wyrms:10
 msgid "Herec on the second level of the Blackwater mountain settlement is researching the white wyrms outside the settlement. He wants me to bring him 5 white wyrm claws so that he can continue his research. Apparently, only some of the wyrms have these claws. I will have to kill some to find them."
-msgstr ""
-"ブラックウォーター山集落の2階にいるヘレクは、集落の外にいるホワイトウィルムについての研究をしている。研究を継続するためにホワイトウィルムの爪5個を持って"
-"きてほしいとのこと。どうやらこの爪を持っているのは一部のホワイトウィルムだけらしい。何匹か殺さないと見つけられないだろう。"
+msgstr "ブラックウォーター山集落の2階にいるヘレクは、集落の外にいるホワイトウィルムについての研究をしている。研究を継続するためにホワイトウィルムの爪5個を持ってきてほしいとのこと。どうやらこの爪を持っているのは一部のホワイトウィルムだけらしい。何匹か殺さないと見つけられないだろう。"
 
 #: questlist_v069.json:bwm_wyrms:20
 msgid "I have given the 5 white wyrm claws to Herec."
@@ -56703,9 +56748,7 @@ msgstr "ウリフェンドルはあるシャドウ神官があなたを救うこ
 
 #: questlist_v0611_2.json:maggots:30
 msgid "Talion in Loneford told me that in order to be cured of my affliction, I will need to bring four parts to him. The parts that I will need are five bones, two pieces of animal hair, one irdegh poison gland and one empty vial. Bones and fur can probably be found on some animal in the wilderness, and the poison gland can be found on one of the irdeghs that have been spotted to the east."
-msgstr ""
-"ローンフォードのタリオンは、苦痛の原因を取り除くには4種類の素材を用意する必要があると語った。必要なものは、骨が5つ、獣毛が2本、アーデグ毒腺が1つ、空の"
-"バイアルが1本。おそらく骨と獣毛は荒野の動物から、毒腺は東の方で目撃されたアーデグの一種から見つかる。"
+msgstr "ローンフォードのタリオンは、苦痛の原因を取り除くには4種類の素材を用意する必要があると語った。必要なものは、骨が5つ、獣毛が2本、アーデグ毒腺が1つ、空のバイアルが1本。おそらく骨と獣毛は荒野の動物から、毒腺は東の方で目撃されたアーデグの一種から見つかる。"
 
 #: questlist_v0611_2.json:maggots:40
 msgid "I have brought the five bones to Talion."
@@ -56865,9 +56908,7 @@ msgstr "レムガードの酒場にいるエリソム騎士団では、最近1�
 
 #: questlist_v0611_3.json:remgard:63
 msgid "Duaina has seen me in her visions. I did not understand all that she spoke of, but the parts that were clear were that me and Andor were parts of a larger plot. I wonder what this means? She did not speak of any disappearing people however, not that I could understand anyway."
-msgstr ""
-"デュエイナはあなたのことを幻視した。彼女の話すことの全ては理解できなかったが、はっきりとしているのは、あなたとアンドールが大きな陰謀の一端となっている事だ"
-"。どういう意味だろう？　しかし彼女は行方不明者については何も話さず、とにかくあなたには理解できなかった。"
+msgstr "デュエイナはあなたのことを幻視した。彼女の話すことの全ては理解できなかったが、はっきりとしているのは、あなたとアンドールが大きな陰謀の一端となっている事だ。どういう意味だろう？　しかし彼女は行方不明者については何も話さず、とにかくあなたには理解できなかった。"
 
 #: questlist_v0611_3.json:remgard:64
 msgid "Rothses told me that Bethir visited him the night before she disappeared, to sell some equipment. He did not see where she went after that."
@@ -57459,9 +57500,7 @@ msgstr "デュリアン街道への道"
 
 #: questlist_pathway_fallhaven.json:pathway_fallhaven:10
 msgid "I talked to a guard in the east of Fallhaven. He watches over the old passage to the Duleian Road, which is now blocked by fallen trees. If I want to help opening the path I should talk to his superior, the guard captain in the Fallhaven prison."
-msgstr ""
-"フォールヘブン東部の衛兵と話した。倒木で塞がれているデュリアン街道への古い通路を見張っている。道を開く協力をしたいのであれば、フォールヘブン刑務所の衛兵隊"
-"長である彼の上司に話を聞こう。"
+msgstr "フォールヘブン東部の衛兵と話した。倒木で塞がれているデュリアン街道への古い通路を見張っている。道を開く協力をしたいのであれば、フォールヘブン刑務所の衛兵隊長である彼の上司に話を聞こう。"
 
 #: questlist_pathway_fallhaven.json:pathway_fallhaven:20
 msgid "I talked to the guard captain. I wasn't able to convince him, but he advised me to talk to the woodcutter Jakrar, who lives just south of Fallhaven's prison."
@@ -57760,7 +57799,7 @@ msgid "Cithurn did not remember if the forest invasion began before the events i
 msgstr "シサーンは森の侵略の始まりがチャーウッドでの出来事よりも前か後だったかを覚えていなかった。しかしチャーウッドでのあなたの経験から、シサーンはこの両者には関連性があると考えている。"
 
 #: questlist_graveyard1.json:waterwayacave:35
-msgid "I promised Cithurn I would investigate the source of the monster invasion in the forest. I will have to pass through the forest to access an entrance to a cave northeast of Cithurn's home."
+msgid "I promised Cithurn I would investigate the source of the monster invasion in the forest. I will have to pass through the forest to access an entrance to a cave east of Cithurn's home."
 msgstr "森のモンスターの侵入源を調査することをシサーンに約束した。シサーンの家の北東にある洞窟の入口に向かうために、森を通ろう。"
 
 #: questlist_graveyard1.json:waterwayacave:40
@@ -58637,8 +58676,7 @@ msgstr "驚いた。ブルチェドと酒場で再会した。ついに、ある
 
 #: questlist_burhczyd.json:quest_burhczyd:60
 msgid "In a tavern a bard sang in a high, shrill voice. It's an old acquaintance - Burhczyd. His singing was incredibly bad. Maybe he should just play his instrument without singing?"
-msgstr ""
-"酒場でとある吟遊詩人が甲高い声で歌っていた。昔馴染みのブルチェドだ。信じられないほど下手な歌だった。歌わずにただ楽器だけ演奏したほうがいいのでは？"
+msgstr "酒場でとある吟遊詩人が甲高い声で歌っていた。昔馴染みのブルチェドだ。信じられないほど下手な歌だった。歌わずにただ楽器だけ演奏したほうがいいのでは？"
 
 #: questlist_burhczyd.json:quest_burhczyd:70
 msgid "You found Burhczyd collapsed at a table in the tavern, his lute lying in front of him. The landlord forbade him to play his lovely music, because then all the guests forgot to drink."
@@ -59582,9 +59620,7 @@ msgstr "登山禁止"
 
 #: questlist_omi2.json:Omi2_bwm1:5
 msgid "Down in a hole, in the mountain side near Prim, I found signs of a heinous torture. At least three corpses were there. I felt the urge to get out of there as fast as I could and immediately report what I found to someone in the village."
-msgstr ""
-"プリム近くの山の中腹にある穴の中で、凶悪な拷問の痕跡を見つけた。少なくとも3人分の死体があった。少しでも早くそこを出て、発見したことをすぐに村の誰かに通報"
-"したいという衝動に駆られた。"
+msgstr "プリム近くの山の中腹にある穴の中で、凶悪な拷問の痕跡を見つけた。少なくとも3人分の死体があった。少しでも早くそこを出て、発見したことをすぐに村の誰かに通報したいという衝動に駆られた。"
 
 #: questlist_omi2.json:Omi2_bwm1:6
 msgid "A mysterious looking guy suddenly appeared in my way when I was headed to report to the guards. He has recommended that I should not tell them anything."
@@ -59628,15 +59664,11 @@ msgstr "ロルンは酒場の常連だったようだ。そこで聞いてみよ
 
 #: questlist_omi2.json:Omi2_bwm1:22
 msgid "One of the tavern regulars, possibly Lorn's old partner Jern, does not believe that Lorn's death was an accident, maintaining Lorn had been climbing the mountains for longer he could remember. However, he does not feel comfortable to continue the conversation."
-msgstr ""
-"酒場の常連の1人でおそらくかつてロルンの仲間だったジャーンは、ロルンの死が事故だとは思っていないようだ。物心ついた頃からずっとロルンは山に登っていたという"
-"。しかしながら、彼はこれ以上話を続けるには体調がよろしくない。"
+msgstr "酒場の常連の1人でおそらくかつてロルンの仲間だったジャーンは、ロルンの死が事故だとは思っていないようだ。物心ついた頃からずっとロルンは山に登っていたという。しかしながら、彼はこれ以上話を続けるには体調がよろしくない。"
 
 #: questlist_omi2.json:Omi2_bwm1:23
 msgid "Lorn's old partner asked me to bring a large bottle of cool water from the streams that are down the hole East of Prim. I bet it is the same hole I've been down earlier."
-msgstr ""
-"ロルンの昔の仲間は、プリムの東にある穴で流れている小川の、冷たい水の入った大きなボトルを持って来るようあなたに頼んだ。さっきまで降りていたあの穴と同じだろ"
-"う。"
+msgstr "ロルンの昔の仲間は、プリムの東にある穴で流れている小川の、冷たい水の入った大きなボトルを持って来るようあなたに頼んだ。さっきまで降りていたあの穴と同じだろう。"
 
 #: questlist_omi2.json:Omi2_bwm1:24
 msgid "I've collected enough water. Time to leave this dark place."
@@ -59648,9 +59680,7 @@ msgstr "ロルンの昔の仲間に冷たい水を持ってきた。すっかり
 
 #: questlist_omi2.json:Omi2_bwm1:30
 msgid "Jern doesn't know anything about a missing couple. How can a member of Lorn's crew ignore the mission of his group? Again, something does not fit. I should visit Ehrenfest again."
-msgstr ""
-"ジャーンは行方不明の夫婦について何も知らない。ロルンの仲間がどうして任務を見て見ぬふりできるのだろう？　"
-"やはり何かがしっくりこない。もう一度エーレンフェストを訪ねてみよう。"
+msgstr "ジャーンは行方不明の夫婦について何も知らない。ロルンの仲間がどうして任務を見て見ぬふりできるのだろう？　やはり何かがしっくりこない。もう一度エーレンフェストを訪ねてみよう。"
 
 #: questlist_omi2.json:Omi2_bwm1:31
 msgid "I decided to solve this situation myself, as Ehrenfest proved not to be trustworthy enough."
@@ -59666,9 +59696,7 @@ msgstr "結論が出た。エーレンフェストとあなたはブラックウ
 
 #: questlist_omi2.json:Omi2_bwm1:34
 msgid "I've found a severely wounded woman inside a mountain cabin. She claims to have been suddenly attacked by a group of wyrms. Ortholion and the other scout left her resting and departed to Blackwater Settlement."
-msgstr ""
-"山小屋で重傷を負った女性を発見した。彼女は突然、ウィルムの一団に襲われたと言っている。オルトリオンと他の斥候は、彼女を休ませてブラックウォーター集落へと出"
-"発して行った。"
+msgstr "山小屋で重傷を負った女性を発見した。彼女は突然、ウィルムの一団に襲われたと言っている。オルトリオンと他の斥候は、彼女を休ませてブラックウォーター集落へと出発して行った。"
 
 #: questlist_omi2.json:Omi2_bwm1:35
 msgid "I killed the mountain scout that was taking refuge in the old cabin up in the mountain."
@@ -59680,9 +59708,7 @@ msgstr "またジャーンと話した。あなたの代わりに彼が会話を
 
 #: questlist_omi2.json:Omi2_bwm1:40
 msgid "It seems Ehrenfest lied to me more than once. He's probably connected with the missing people and Lorn's death. I must find General Ortholion and warn him about Ehrenfest."
-msgstr ""
-"エーレンフェストはあなたに何度も嘘をついたようだ。おそらく行方不明者やロルンの死に、彼が関係している。オルトリオン将軍を見つけて、エーレンフェストのことを"
-"警告しよう。"
+msgstr "エーレンフェストはあなたに何度も嘘をついたようだ。おそらく行方不明者やロルンの死に、彼が関係している。オルトリオン将軍を見つけて、エーレンフェストのことを警告しよう。"
 
 #: questlist_omi2.json:Omi2_bwm1:41
 msgid "One of the general's henchmen attacked me without provocation. There was something wrong with her. Better hurry up and meet with the Feygard general."
@@ -59694,9 +59720,7 @@ msgstr "エーレンフェストは真意を明かしたものの、取り囲ま
 
 #: questlist_omi2.json:Omi2_bwm1:46
 msgid "After a brief conversation with the general, he left Blackwater settlement in a rush to reach Elm mine. He seemed really worried about the mine, so he asked me to warn his soldiers, settled south of Prim."
-msgstr ""
-"将軍との短い会話の後、彼はエルム鉱山へと駆けつけるためにブラックウォーター集落を去った。鉱山のことをとても心配しているようで、プリムの南にいる兵士たちに警"
-"告するようあなたに頼んできた。"
+msgstr "将軍との短い会話の後、彼はエルム鉱山へと駆けつけるためにブラックウォーター集落を去った。鉱山のことをとても心配しているようで、プリムの南にいる兵士たちに警告するようあなたに頼んできた。"
 
 #: questlist_omi2.json:Omi2_bwm1:47
 msgid "I reported to the general's henchmen about his plans. Now, I should hurry to the Elm mine."
@@ -59704,27 +59728,19 @@ msgstr "将軍の部下に彼の計画を伝えた。さて、エルム鉱山に
 
 #: questlist_omi2.json:Omi2_bwm1:48
 msgid "Once in the mine I saw corpses and collapsed tunnels. I tried to go another way and reached some more tunnels. Fortunately, they were not collapsed, but there was something strange there that scared even the venomfangs. Something evil."
-msgstr ""
-"鉱山に入ると、死体や崩壊したトンネルが見えた。別の道を進むことを試みると、また別のトンネルへとたどり着いた。幸いにも崩壊はしていなかったが、そこにはベノム"
-"ファングも怯えるような奇妙な何かがあった。邪悪なものだ。"
+msgstr "鉱山に入ると、死体や崩壊したトンネルが見えた。別の道を進むことを試みると、また別のトンネルへとたどり着いた。幸いにも崩壊はしていなかったが、そこにはベノムファングも怯えるような奇妙な何かがあった。邪悪なものだ。"
 
 #: questlist_omi2.json:Omi2_bwm1:49
 msgid "One of the unexploited areas of the mine had a walled up passage and lots of those strange glowing gems. They seem to consume living beings to grow and bring life to inanimated things or corpses. I must be very careful."
-msgstr ""
-"鉱山の未開拓エリアの1つに壁に囲まれた通路があり、奇妙な光を放つ宝石がたくさんあった。生きているものを食らって成長し、生気のない者や死者に命を吹き込むよう"
-"だ。気をつけよう。"
+msgstr "鉱山の未開拓エリアの1つに壁に囲まれた通路があり、奇妙な光を放つ宝石がたくさんあった。生きているものを食らって成長し、生気のない者や死者に命を吹き込むようだ。気をつけよう。"
 
 #: questlist_omi2.json:Omi2_bwm1:50
 msgid "It was true! That strange glowing material is alive. I should be extremely cautious; it seems to be able to engulf living beings. I found the last of Ortholion's henchman alive. He has gone back to search for reinforcements. I hope they are better than those who dared to enter here."
-msgstr ""
-"本当だった！　奇妙なあの光る物体は生きている。生き物を飲み込むことが出来るようだ、細心の注意を払おう。オルトリオンの部下の最後の1人が生き残っているのを発"
-"見した。援軍を求めて彼は引き返して行った。ここへ立ち入る勇気を持っていた者たちより優秀だといいのだけど。"
+msgstr "本当だった！　奇妙なあの光る物体は生きている。生き物を飲み込むことが出来るようだ、細心の注意を払おう。オルトリオンの部下の最後の1人が生き残っているのを発見した。援軍を求めて彼は引き返して行った。ここへ立ち入る勇気を持っていた者たちより優秀だといいのだけど。"
 
 #: questlist_omi2.json:Omi2_bwm1:51
 msgid "I ended up trapped on a one-way path deep in a cavern below the Elm mine. General Ortholion is blocking the only way to escape for Ehrenfest. This is his end."
-msgstr ""
-"エルム鉱山の地下の洞窟奥深くで、一方通行の道に閉じ込められてしまった。オルトリオン将軍はエーレンフェストにとっての唯一の脱出路を塞いでいる。これで彼は終わ"
-"りだ。"
+msgstr "エルム鉱山の地下の洞窟奥深くで、一方通行の道に閉じ込められてしまった。オルトリオン将軍はエーレンフェストにとっての唯一の脱出路を塞いでいる。これで彼は終わりだ。"
 
 #: questlist_omi2.json:Omi2_bwm1:52
 msgid "Ehrenfest reversed the situation using some kind of magic, seemingly unknown even to himself."
@@ -59752,8 +59768,7 @@ msgstr "あなたの勇敢さに対して、オルトリオン将軍は多額の
 
 #: questlist_omi2.json:Omi2_bwm1:60
 msgid "For my bravery (and my greediness), General Ortholion rewarded me with a lot of...junk. He might pay me better next time if I meet him in some days."
-msgstr ""
-"あなたの勇敢さ（と強欲さ）に対して、オルトリオン将軍はたくさんの…ガラクタを報酬として与えた。数日後に会えば、今度はもっといい報酬をくれるかもしれない。"
+msgstr "あなたの勇敢さ（と強欲さ）に対して、オルトリオン将軍はたくさんの…ガラクタを報酬として与えた。数日後に会えば、今度はもっといい報酬をくれるかもしれない。"
 
 #: questlist_omi2.json:Omi2_bwm1:61
 msgid "For my bravery (and my lack of honor), General Ortholion rewarded me with a small bag of gold. He may have some news for me in a couple of days."
@@ -59761,13 +59776,67 @@ msgstr "あなたの勇敢さ（と名誉の欠如）に対して、オルトリ
 
 #: questlist_omi2.json:Omi2_bwm1:62
 msgid "For my bravery and sense of honor, General Ortholion gave me a beautiful necklace, a symbol of his gratitude towards me. He also told me to come back in a few days, when I should ask him about all the events that have happened."
-msgstr ""
-"あなたの勇敢さと名誉を重んじる心に対して、オルトリオン将軍は感謝の印として美しいネックレスをくれた。また彼は数日後に戻ってくるようにとも話した。その際に、"
-"起きていたことの全貌を彼に尋ねよう。"
+msgstr "あなたの勇敢さと名誉を重んじる心に対して、オルトリオン将軍は感謝の印として美しいネックレスをくれた。また彼は数日後に戻ってくるようにとも話した。その際に、起きていたことの全貌を彼に尋ねよう。"
 
 #: questlist_omi2.json:Omi2_bwm1:63
 msgid "For my bravery and... ignorance?, General Ortholion gave me a few days to rest and urged me to come back soon after that."
 msgstr "あなたの勇敢さと…無知？に対して、オルトリオン将軍は数日の休息を与え、その後すぐに戻ってくるように言ってきた。"
+
+#: questlist_delivery.json:brv_wh_delivery
+msgid "Delivery"
+msgstr ""
+
+#: questlist_delivery.json:brv_wh_delivery:10
+msgid "Facutloni asked me to help him deliver all of the items ordered by his customers a long time ago. He even gave me an old document with the names and items written on it."
+msgstr ""
+
+#: questlist_delivery.json:brv_wh_delivery:20
+msgid "Arcir the Fallhaven book-lover ordered a 'Dusty Old book'."
+msgstr ""
+
+#: questlist_delivery.json:brv_wh_delivery:30
+msgid "Edrin the Brimhaven metalsmith ordered a 'Striped Hammer'."
+msgstr ""
+
+#: questlist_delivery.json:brv_wh_delivery:40
+msgid "Odirath the Stoutford armorer ordered a 'Pretty Porcelain Figure'."
+msgstr ""
+
+#: questlist_delivery.json:brv_wh_delivery:50
+msgid "Venanra the Brimhaven laundress ordered an 'Old, worn cape'."
+msgstr ""
+
+#: questlist_delivery.json:brv_wh_delivery:60
+msgid "Tjure the unlucky Brimhaven merchant ordered a 'Mysterious green something'."
+msgstr ""
+
+#: questlist_delivery.json:brv_wh_delivery:70
+msgid "Servant the Guynmart servant ordered a 'Chandelier'."
+msgstr ""
+
+#: questlist_delivery.json:brv_wh_delivery:80
+msgid "Arghes at Remgard tavern ordered 'Yellow boots'."
+msgstr ""
+
+#: questlist_delivery.json:brv_wh_delivery:90
+msgid "Wyre the mournful Vilegard woman ordered a 'Lyre'."
+msgstr ""
+
+#: questlist_delivery.json:brv_wh_delivery:100
+msgid "Mikhail ordered a 'Plush Pillow'."
+msgstr ""
+
+#: questlist_delivery.json:brv_wh_delivery:110
+msgid "Pangitain the Brimhaven fortune teller ordered a 'Crystal Globe'."
+msgstr ""
+
+#: questlist_delivery.json:brv_wh_delivery:120
+msgid "Facutloni wants me to report back after the deliveries are complete."
+msgstr ""
+
+#: questlist_delivery.json:brv_wh_delivery:130
+msgid "I reported back to Facutloni. He is very happy."
+msgstr ""
 
 #: worldmap.xml:world1:crossglen
 msgid "Crossglen"
@@ -59820,3 +59889,4 @@ msgstr "グインマート城"
 #: worldmap.xml:world1:brimhaven_area
 msgid "Brimhaven"
 msgstr "ブリムヘブン"
+
