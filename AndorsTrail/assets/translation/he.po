@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-05-11 13:44+0200\n"
-"PO-Revision-Date: 2021-06-27 22:16+0000\n"
+"PO-Revision-Date: 2022-03-19 22:35+0000\n"
 "Last-Translator: Ido Shdaimah <ishdaimah@gmail.com>\n"
 "Language-Team: Hebrew <https://hosted.weblate.org/projects/andors-trail/"
 "game-content/he/>\n"
@@ -13,7 +13,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n == 1) ? 0 : ((n == 2) ? 1 : ((n > 10 && "
 "n % 10 == 0) ? 2 : 3));\n"
-"X-Generator: Weblate 4.7.1-dev\n"
+"X-Generator: Weblate 4.12-dev\n"
 
 #: actorconditions_v069.json:bless
 msgid "Bless"
@@ -344,11 +344,11 @@ msgstr "מולעט"
 
 #: actorconditions_omi2.json:panic
 msgid "Panic"
-msgstr ""
+msgstr "פניקה"
 
 #: actorconditions_omi2.json:satiety
 msgid "Satiety"
-msgstr ""
+msgstr "שובע"
 
 #: actorconditions_omi2.json:frozen1
 msgid "Minor freeze"
@@ -356,7 +356,7 @@ msgstr ""
 
 #: actorconditions_omi2.json:frozen2
 msgid "Icy wounds"
-msgstr ""
+msgstr "פצעים קפואים"
 
 #: actorconditions_omi2.json:relax
 msgid "Requiescence"
@@ -364,7 +364,7 @@ msgstr ""
 
 #: actorconditions_omi2.json:kazarite_misery
 msgid "Kazaul possession"
-msgstr ""
+msgstr "דיבוק קזאול"
 
 #: conversationlist_mikhail.json:mikhail_gamestart
 msgid "Oh good, you are awake."
@@ -424,7 +424,7 @@ msgstr "מה עם הלחם?"
 #: conversationlist_mikhail.json:mikhail_tasks:1
 #: conversationlist_mikhail.json:mikhail_bread_done:0
 msgid "What about the rats?"
-msgstr "מה עם החולדות?"
+msgstr "מה לגבי החולדות?"
 
 #: conversationlist_mikhail.json:mikhail_tasks:2
 #: conversationlist_mikhail.json:mikhail_bread_done:1
@@ -803,7 +803,7 @@ msgstr "בן תמותה, שחרר אותי מהקיום הארור הזה!"
 
 #: conversationlist_crossglen.json:haunt:0
 msgid "Oh, I'll free you from it alright."
-msgstr ""
+msgstr "אני אשחרר ועוד איך."
 
 #: conversationlist_crossglen.json:haunt:1
 msgid "You mean, by killing you?"
@@ -905,7 +905,7 @@ msgstr "זה הכל. אנחנו מנסים לחיות כאן חיים שלווי
 
 #: conversationlist_crossglen_leonid.json:leonid_crossglen2:0
 msgid "Has there been any recent activity in the village?"
-msgstr ""
+msgstr "האם הייתה לאחרונה פעילות בכפר?"
 
 #: conversationlist_crossglen_leonid.json:leonid_crossglen2:1
 msgid "Let's go back to the other things we talked about."
@@ -918,10 +918,12 @@ msgstr ""
 #: conversationlist_crossglen_leonid.json:leonid_crossglen4
 msgid "Lord Geomyr issued a statement regarding the unlawful use of bonemeal as healing substance. Some villagers argued that we should oppose Lord Geomyr's word and still use it."
 msgstr ""
+"האדון גאומיר הוציא הצהרה על השימוש הלא-חוקי בעצמות טחונות כתרופה. חלק מאנשי "
+"הכפר טוענים שצריך להתנגד להצהרה ולהמשיך להשתמש בהם."
 
 #: conversationlist_crossglen_leonid.json:leonid_crossglen4_1
 msgid "Tharal, our priest, was particularly upset and suggested we do something about Lord Geomyr."
-msgstr ""
+msgstr "ת׳אראל, הכוהן שלנו, היה נסער והציע שנעשה משהו לגבי לורד גאומיר."
 
 #: conversationlist_crossglen_leonid.json:leonid_crossglen5
 msgid ""
@@ -929,33 +931,38 @@ msgid ""
 "\n"
 "Personally, I haven't decided what my thoughts are."
 msgstr ""
+"כפריים אחרים אמרו שאנחנו צריכים לכבד את הצו של לורד גאומיר.\n"
+"\n"
+"אני עדיין לא יודע מה דעתי על העניין."
 
 #: conversationlist_crossglen_leonid.json:leonid_crossglen6
 msgid ""
 "On one hand, Lord Geomyr supports Crossglen with a lot of protection.\n"
 "[Points to the soldiers in the hall]"
 msgstr ""
+"מצד אחד, לורד גאומיר מגן על קרוסגלן.\n"
+"[הוא מצביע על החיילים שעל הגבעה]"
 
 #: conversationlist_crossglen_leonid.json:leonid_crossglen7
 msgid "But on the other hand, the tax and the recent changes of what's allowed are really taking a toll on Crossglen."
-msgstr ""
+msgstr "אבל מצד שני, המס והצוים החדשים לגבי מה מותר ומה אסור מכבידים על הכפר."
 
 #: conversationlist_crossglen_leonid.json:leonid_crossglen8
 msgid "Someone should go to Castle Geomyr and talk to the steward about our situation here in Crossglen."
-msgstr ""
+msgstr "מישהו צריך ללכת לטירת גאומיר ולדבר עם הגזבר לגבי מצבינו כאן בקרוסגלן."
 
 #: conversationlist_crossglen_leonid.json:leonid_crossglen9
 msgid "In the meantime, we've banned all use of bonemeal as a healing substance."
-msgstr ""
+msgstr "בינתיים אסרנו על השימוש בעצמות כתושות כחומר רפואי."
 
 #: conversationlist_crossglen_leonid.json:leonid_crossglen9:0
 msgid "Thank you for the information. There was something more I wanted to ask you."
-msgstr ""
+msgstr "תודה על המידע. רציתי לשאול אותך עוד משהו."
 
 #: conversationlist_crossglen_leonid.json:leonid_crossglen9:1
 #: conversationlist_omicronrg9.json:umar_guild03_31a:1
 msgid "Thank you for the information. Bye."
-msgstr ""
+msgstr "תודה על המידע. להתראות."
 
 #: conversationlist_crossglen_leonid.json:leonid_bye
 #: conversationlist_crossglen_leonid.json:leonid_bye:0
@@ -986,63 +993,70 @@ msgstr ""
 #: conversationlist_omi2.json:ehrenfest_39a:1
 #: conversationlist_omi2.json:capvjern_22:1
 msgid "Shadow be with you."
-msgstr ""
+msgstr "שהצל יהיה עימך."
 
 #: conversationlist_crossglen_tharal.json:tharal1
 msgid "Walk in the glow of the Shadow, my child."
-msgstr ""
+msgstr "תתהלך בזוהר הצל, בני."
 
 #: conversationlist_crossglen_tharal.json:tharal1:1
 #: conversationlist_fallhaven_church.json:thoronir_tharal_1:0
 msgid "What can you tell me about bonemeal?"
-msgstr ""
+msgstr "מה אתה יכול לומר לי על עצמות כתושות?"
 
 #: conversationlist_crossglen_tharal.json:tharal1:2
 #: conversationlist_fallhaven_potions.json:fallhaven_potions:1
 msgid "Do you have anything to help against food-poisoning?"
-msgstr ""
+msgstr "יש לך משהו נגד הרעלת מזון?"
 
 #: conversationlist_crossglen_tharal.json:tharal_bonemeal1
 msgid "Bonemeal? We shouldn't talk about that. Lord Geomyr issued a decree. It's not allowed anymore."
 msgstr ""
+"עצמות כתושות? אסור לנו לדבר על זה. לורד גאומיר הוציא צו. השימוש בהם אסור."
 
 #: conversationlist_crossglen_tharal.json:tharal_bonemeal1:0
 #: conversationlist_prim_arghest.json:arghest_6:1
 #: conversationlist_prim_arghest.json:arghest_7:0
 msgid "Please?"
-msgstr ""
+msgstr "בבקשה?"
 
 #: conversationlist_crossglen_tharal.json:tharal_bonemeal2_1
 msgid "No, we really shouldn't talk about that."
-msgstr ""
+msgstr "לא, אסור באופן מוחלט לדבר על זה."
 
 #: conversationlist_crossglen_tharal.json:tharal_bonemeal2_1:0
 msgid "Oh come on."
-msgstr ""
+msgstr "נו, בחייאת."
 
 #: conversationlist_crossglen_tharal.json:tharal_bonemeal2
 msgid "Well if you really are that persistent. Bring me 5 insect wings that I can use for making potions and maybe we can talk more."
 msgstr ""
+"טוב, אם אתה ממש רוצה. תביא לי חמש כנפיים של חרקים שאני יכול להשתמש הייצור "
+"שיקויים ואז אולי נוכל לדבר עוד."
 
 #: conversationlist_crossglen_tharal.json:tharal_bonemeal2:0
 msgid "Here, I have the insect wings."
-msgstr ""
+msgstr "הנה, הבאתי את הכנפיים שביקשת."
 
 #: conversationlist_crossglen_tharal.json:tharal_bonemeal2:1
 msgid "OK, I'll bring them."
-msgstr ""
+msgstr "אוקי, אני אביא אותם."
 
 #: conversationlist_crossglen_tharal.json:tharal_bonemeal3
 msgid "Thanks kid. I knew I could count on you."
-msgstr ""
+msgstr "תודה, ילד. ידעתי שאפשר לסמוך עליך."
 
 #: conversationlist_crossglen_tharal.json:tharal_bonemeal4
 msgid "Oh yes, bonemeal. Mixed with the right components it can be one of the most effective healing agents around."
 msgstr ""
+"אה כן, עצמות טחונות. אם מערבבים אותן עם המרכיבים הנכונים, הן יכולות להיות "
+"אחד מחומרי הריפוי הכי יעלים."
 
 #: conversationlist_crossglen_tharal.json:tharal_bonemeal5
 msgid "We used to use it extensively before. But now that bastard Lord Geomyr has banned all use of it."
 msgstr ""
+"בעבר השתמשנו בהן באופן נרחב, אבל כיום הממזר הזה לורד גאומיר הוציא את השימוש "
+"בהן מחוץ לחוק."
 
 #: conversationlist_crossglen_tharal.json:tharal_bonemeal6
 msgid "How am I supposed to heal people now? Using regular healing potions? Bah, they're so ineffective."
@@ -50424,7 +50438,7 @@ msgstr ""
 
 #: monsterlist_crossglen_npcs.json:arambold
 msgid "Arambold"
-msgstr ""
+msgstr "ארמבולד"
 
 #: monsterlist_crossglen_npcs.json:tharal
 msgid "Tharal"
@@ -50593,7 +50607,7 @@ msgstr ""
 
 #: monsterlist_fallhaven_npcs.json:bucus
 msgid "Bucus"
-msgstr ""
+msgstr "בוקוס"
 
 #: monsterlist_fallhaven_npcs.json:drunkard
 msgid "Drunkard"
@@ -50622,7 +50636,7 @@ msgstr ""
 
 #: monsterlist_fallhaven_npcs.json:athamyr
 msgid "Athamyr"
-msgstr ""
+msgstr "את׳אמיר"
 
 #: monsterlist_fallhaven_npcs.json:thoronir
 msgid "Thoronir"
@@ -50880,7 +50894,7 @@ msgstr ""
 
 #: monsterlist_v068_npcs.json:jolnor
 msgid "Jolnor"
-msgstr ""
+msgstr "ג׳וֹלְנוֹר"
 
 #: monsterlist_v068_npcs.json:alynndir
 msgid "Alynndir"
@@ -51147,7 +51161,7 @@ msgstr ""
 
 #: monsterlist_v069_npcs.json:bjorgur
 msgid "Bjorgur"
-msgstr ""
+msgstr "ביורגור"
 
 #: monsterlist_v069_npcs.json:prim_prisoner
 msgid "Prim prisoner"
@@ -51155,7 +51169,7 @@ msgstr ""
 
 #: monsterlist_v069_npcs.json:fulus
 msgid "Fulus"
-msgstr ""
+msgstr "פולוס"
 
 #: monsterlist_v069_npcs.json:guthbered
 msgid "Guthbered"
@@ -51252,7 +51266,7 @@ msgstr ""
 
 #: monsterlist_v069_npcs.json:herec
 msgid "Herec"
-msgstr ""
+msgstr "הרק"
 
 #: monsterlist_v069_npcs.json:iducus
 msgid "Iducus"
@@ -51413,7 +51427,7 @@ msgstr ""
 
 #: monsterlist_v0610_npcs1.json:benbyr
 msgid "Benbyr"
-msgstr ""
+msgstr "בנביר"
 
 #: monsterlist_v0610_npcs1.json:celdar
 msgid "Celdar"
@@ -51429,7 +51443,7 @@ msgstr ""
 
 #: monsterlist_v0610_npcs1.json:erinith
 msgid "Erinith"
-msgstr ""
+msgstr "ארינית׳"
 
 #: monsterlist_v0610_npcs1.json:fanamor
 msgid "Fanamor"
@@ -51445,7 +51459,7 @@ msgstr ""
 
 #: monsterlist_v0610_npcs1.json:gandoren
 msgid "Gandoren"
-msgstr ""
+msgstr "גנדורן"
 
 #: monsterlist_v0610_npcs1.json:grimion
 msgid "Grimion"
@@ -53873,7 +53887,7 @@ msgstr ""
 
 #: monsterlist_fungi_panic.json:bogsten_gambler1
 msgid "Bogal"
-msgstr ""
+msgstr "בוגאל"
 
 #: monsterlist_fungi_panic.json:bogsten_gambler2
 msgid "Botisto"
@@ -53889,7 +53903,7 @@ msgstr ""
 
 #: monsterlist_gison.json:gison
 msgid "Gison"
-msgstr ""
+msgstr "גיסון"
 
 #: monsterlist_gison.json:nimael
 msgid "Nimael"
@@ -53897,7 +53911,7 @@ msgstr ""
 
 #: monsterlist_gison.json:gael
 msgid "Gael"
-msgstr ""
+msgstr "גאל"
 
 #: monsterlist_gison.json:small_stone_worm
 msgid "Small stone worm"
@@ -53927,11 +53941,11 @@ msgstr ""
 
 #: monsterlist_gorwath.json:gorwath
 msgid "Gorwath"
-msgstr ""
+msgstr "גוֹרְווַאת׳"
 
 #: monsterlist_gorwath.json:arensia
 msgid "Arensia"
-msgstr ""
+msgstr "ארנסיה"
 
 #: monsterlist_omi2.json:mountain_wolf_2
 msgid "Trained mountain wolf"
@@ -53967,7 +53981,7 @@ msgstr ""
 
 #: monsterlist_omi2.json:ehrenfest
 msgid "Ehrenfest"
-msgstr ""
+msgstr "ארנפסט"
 
 #: monsterlist_omi2.json:ortholion
 #: monsterlist_omi2.json:ortholion_hidden
@@ -58551,4 +58565,3 @@ msgstr ""
 #: worldmap.xml:world1:brimhaven_area
 msgid "Brimhaven"
 msgstr ""
-
