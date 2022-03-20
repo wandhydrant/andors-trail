@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: Andors Trail\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-11-10 11:48+0000\n"
-"PO-Revision-Date: 2022-01-28 07:47+0000\n"
-"Last-Translator: Nicia <kantasitulku@gmail.com>\n"
+"PO-Revision-Date: 2022-03-21 23:01+0000\n"
+"Last-Translator: Oleg <oleg.invisibleman@protonmail.com>\n"
 "Language-Team: Russian <https://hosted.weblate.org/projects/andors-trail/"
 "game-content/ru/>\n"
 "Language: ru\n"
@@ -13,7 +13,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 4.11-dev\n"
+"X-Generator: Weblate 4.12-dev\n"
 "X-Launchpad-Export-Date: 2015-11-02 12:27+0000\n"
 
 #: [none]
@@ -27708,7 +27708,7 @@ msgstr "Бутылка красного вина с ним, конечно. Оо
 
 #: conversationlist_guynmart2_npc.json:guynmart_wise_814:0
 msgid "I'm beginning to find your requests outrageous. I have to leave now."
-msgstr ""
+msgstr "Я нахожу ваши просьбы возмутительными. Я должен сейчас уйти."
 
 #: conversationlist_guynmart2_npc.json:guynmart_wise_814:1
 msgid "OK, OK, I understand."
@@ -27724,11 +27724,11 @@ msgstr "Забудь. До свидания."
 
 #: conversationlist_guynmart2_npc.json:guynmart_wise_820:1
 msgid "OK. Bread, cheese and vine - that's it?"
-msgstr ""
+msgstr "Хорошо. Хлеб, сыр и вино - и это все?"
 
 #: conversationlist_guynmart2_npc.json:guynmart_wise_830
 msgid "Great! It's settled then, I'll wait for you here."
-msgstr ""
+msgstr "Отлично! Тогда договорились, я буду ждать тебя здесь."
 
 #: conversationlist_guynmart2_npc.json:guynmart_wise_830:0
 msgid "I'll hurry now. See you soon."
@@ -27736,15 +27736,15 @@ msgstr "Я потороплюсь. Скоро увидимся."
 
 #: conversationlist_guynmart2_npc.json:guynmart_wise_840
 msgid "Ah - bread ..."
-msgstr ""
+msgstr "Ах - хлеб..."
 
 #: conversationlist_guynmart2_npc.json:guynmart_wise_842
 msgid "And cheese ..."
-msgstr ""
+msgstr "И сыр..."
 
 #: conversationlist_guynmart2_npc.json:guynmart_wise_844
 msgid "Vine ..."
-msgstr ""
+msgstr "Вино..."
 
 #: conversationlist_trader_teksin.json:teksin11:0
 #: conversationlist_trader_teksin.json:teksin50:2
@@ -37315,10 +37315,17 @@ msgid ""
 "\n"
 "And we have to arrest you of course. Report to prison! Now!"
 msgstr ""
+"Что это? Пахнет костной мукой!\n"
+"\n"
+"Костная мука незаконна и запрещена законом Фейгарда. Мне придется "
+"конфисковать её. \n"
+"[Патруль возвращает тебе все твои вещи, но оставляет себе костную муку]\n"
+"\n"
+"И мы, конечно, должны вас арестовать. Идём в тюрьму! Сейчас же!"
 
 #: conversationlist_brimhaven.json:remgard_prison_talk
 msgid "You rattle at the iron bars."
-msgstr ""
+msgstr "Ты стучишь по железным прутьям."
 
 #: conversationlist_brimhaven.json:remgard_prison_talk:0
 msgid "Hey, I'm starving!"
@@ -37326,7 +37333,7 @@ msgstr "Эй! Я умираю с голоду!"
 
 #: conversationlist_brimhaven.json:remgard_prison_talk:1
 msgid "Room service!"
-msgstr ""
+msgstr "Обслуживание номеров!"
 
 #: conversationlist_brimhaven.json:remgard_prison_talk:2
 msgid "Anybody there? I want to talk to my lawyer!"
@@ -37339,14 +37346,15 @@ msgstr "Я невиновен!"
 #: conversationlist_brimhaven.json:remgard_prison_talk:4
 msgid "Hey! Has anybody seen my brother Andor? I am looking for him everywhere, even in prisons."
 msgstr ""
+"Эй! Кто-нибудь видел моего брата Эндора? Я ищу его повсюду, даже в тюрьмах."
 
 #: conversationlist_brimhaven.json:remgard_prison_talk_1
 msgid "No reaction."
-msgstr ""
+msgstr "Нет, реакции."
 
 #: conversationlist_brimhaven.json:remgard_prison_thief
 msgid "Hi $playername. Got comfortable already?"
-msgstr ""
+msgstr "Привет, $playername. Устроились уже?"
 
 #: conversationlist_brimhaven.json:remgard_prison_thief:0
 msgid "What the ..."
@@ -37354,11 +37362,11 @@ msgstr "Какого..."
 
 #: conversationlist_brimhaven.json:remgard_prison_thief_10
 msgid "Don't look startled. You should have expected this from us thieves."
-msgstr ""
+msgstr "Не смотрите так. Вы должны были ожидать этого от нас, воров."
 
 #: conversationlist_brimhaven.json:remgard_prison_thief_12
 msgid "Especially when you have carried such a lot of bonemeal potions with you."
-msgstr ""
+msgstr "Особенно, когда у тебя с собой столько зелий из костной муки."
 
 #: conversationlist_brimhaven.json:remgard_prison_thief_12:0
 msgid "Hey, what do you know about it?"
@@ -37374,11 +37382,12 @@ msgstr "Ну да, очевидно."
 
 #: conversationlist_brimhaven.json:remgard_prison_thief_20
 msgid "We are thankful for your potions, and we are always grateful."
-msgstr ""
+msgstr "Мы благодарны за ваши зелья."
 
 #: conversationlist_brimhaven.json:remgard_prison_thief_22
 msgid "So we offer you half of your stock. And your freedom. Deal?"
 msgstr ""
+"Поэтому мы предлагаем вам половину твоего запаса. И ты свободен. По рукам?"
 
 #: conversationlist_brimhaven.json:remgard_prison_thief_22:0
 msgid "Do I have a choice?"
@@ -37386,67 +37395,70 @@ msgstr "А у меня есть выбор?"
 
 #: conversationlist_brimhaven.json:remgard_prison_thief_30
 msgid "Sure you do. You could get nothing and stay here to starve."
-msgstr ""
+msgstr "Конечно, да. Ты можешь ничего не получить и остаться здесь голодать."
 
 #: conversationlist_brimhaven.json:remgard_prison_thief_30:0
 msgid "Ah no. Let's have the first offer."
-msgstr ""
+msgstr "Ах нет. Давай первое предложение."
 
 #: conversationlist_brimhaven.json:remgard_prison_thief_52
 msgid "Here we go. I will count out loud, so you can check that I don't cheat."
 msgstr ""
+"Начнем. Я буду считать вслух, чтобы вы могли проверить, что я не жульничаю."
 
 #: conversationlist_brimhaven.json:remgard_prison_thief_52:0
 msgid "[muttering] Cheat - with my own potions ..."
-msgstr ""
+msgstr "[бормочет] Жульничаю - с помощью моих собственных зелий ..."
 
 #: conversationlist_brimhaven.json:remgard_prison_thief_54
 msgid "You already have your share. You do not try to cheat, do you? In that case I would be very disappointed."
 msgstr ""
+"Ты уже получили свою долю. Ты ведь не жульничал? В таком случае я был бы "
+"очень разочарован."
 
 #: conversationlist_brimhaven.json:remgard_prison_thief_54:0
 msgid "No, no. Everything is awful."
-msgstr ""
+msgstr "Нет, нет. Это ужасно."
 
 #: conversationlist_brimhaven.json:remgard_prison_getback_1000
 msgid "1000 bonemeal potions."
-msgstr ""
+msgstr "1000 зелий из костной муки."
 
 #: conversationlist_brimhaven.json:remgard_prison_getback_100
 msgid "100 bonemeal potions."
-msgstr ""
+msgstr "100 зелий из костной муки."
 
 #: conversationlist_brimhaven.json:remgard_prison_getback_10
 msgid "10 bonemeal potions."
-msgstr ""
+msgstr "10 зелий из костной муки."
 
 #: conversationlist_brimhaven.json:remgard_prison_getback_1
 msgid "1 bonemeal potion."
-msgstr ""
+msgstr "1 зелье из костной муки."
 
 #: conversationlist_brimhaven.json:remgard_prison_getback2_1000
 msgid "1000 exotic bonemeal potions."
-msgstr ""
+msgstr "1000 необычных зелий из костной муки."
 
 #: conversationlist_brimhaven.json:remgard_prison_getback2_100
 msgid "100 exotic bonemeal potions."
-msgstr ""
+msgstr "100 необычных зелий из костной муки."
 
 #: conversationlist_brimhaven.json:remgard_prison_getback2_10
 msgid "10 exotic bonemeal potions."
-msgstr ""
+msgstr "10 необычных зелий из костной муки."
 
 #: conversationlist_brimhaven.json:remgard_prison_getback2_1
 msgid "1 exotic bonemeal potion."
-msgstr ""
+msgstr "1 необычное зелье из костной муки."
 
 #: conversationlist_brimhaven.json:remgard_prison_thief_100
 msgid "Ha ha ha! That was fun, wasn't it?"
-msgstr ""
+msgstr "Ха-ха-ха! Это было весело, не правда ли?"
 
 #: conversationlist_brimhaven.json:remgard_prison_thief_110
 msgid "Now it's all settled. We may leave now."
-msgstr ""
+msgstr "Теперь все улажено. Мы можем идти."
 
 #: conversationlist_brimhaven.json:remgard_prison_thief_110:0
 msgid "What? How can we leave?"
@@ -37455,6 +37467,8 @@ msgstr "Что? Как мы можем уйти?"
 #: conversationlist_brimhaven.json:remgard_prison_thief_112
 msgid "Oh, that is easy. Check the back wall - it is fake. We had it exchanged secretly, and those stupid guards haven't found out yet."
 msgstr ""
+"О, это просто. Проверь заднюю стену - она фальшивая. Мы тайно изменили её, и "
+"эти глупые охранники еще не узнали об этом."
 
 #: conversationlist_brimhaven.json:remgard_prison_thief_112:0
 msgid "Oh really?"
@@ -37462,7 +37476,7 @@ msgstr "Правда?"
 
 #: conversationlist_brimhaven.json:remgard_prison_thief_200
 msgid "Bye now. I will keep an eye on you."
-msgstr ""
+msgstr "Пока. Я буду присматривать за тобой."
 
 #: conversationlist_brimhaven2.json:brv_school_check_duel_14a
 msgid "When the other students see how you killed Golin, a panic breaks out. Screaming, they all run out of the building."
@@ -42902,39 +42916,45 @@ msgstr "Мне правда нужна твоя помощь!"
 
 #: conversationlist_gorwath.json:gorwath_letter
 msgid "Hey, Andor!"
-msgstr ""
+msgstr "Привет, Эндор!"
 
 #: conversationlist_gorwath.json:gorwath_letter:0
 msgid "I am not Andor. What do you want from him?"
-msgstr ""
+msgstr "Я не Эндор. Что ты хочешь от него?"
 
 #: conversationlist_gorwath.json:gorwath_letter_1
 msgid "Oh, Andor promised to meet me here. Who are you?"
-msgstr ""
+msgstr "Эндор обещал встретиться со мной здесь. Кто ты?"
 
 #: conversationlist_gorwath.json:gorwath_letter_1:0
 msgid "My name is $playername. I'm looking for my brother too, he has been away for a while now."
 msgstr ""
+"Меня зовут $playername. Я тоже ищу своего брата, его давно не было дома."
 
 #: conversationlist_gorwath.json:gorwath_letter_1:1
 msgid "My name is none of your business. Get out of our property now!"
-msgstr ""
+msgstr "Мое имя, тебя не касается. Убирайтесь, сейчас же!"
 
 #: conversationlist_gorwath.json:gorwath_letter_2
 msgid "Oh dear, oh dear. This is a very personal matter. I don't want everyone to know about it."
 msgstr ""
+"О боже, боже. Это очень личное дело. Я не хочу, чтобы все об этом знали."
 
 #: conversationlist_gorwath.json:gorwath_letter_2:0
 msgid "I want to help you since my brother did not. Please tell me what's on your mind."
 msgstr ""
+"Я хочу помочь вам, так как мой брат не сделал это. Пожалуйста, расскажите "
+"мне, что у вас на уме."
 
 #: conversationlist_gorwath.json:gorwath_letter_3
 msgid "Really? That's very kind of you."
-msgstr ""
+msgstr "Правда? Это очень мило с твоей стороны."
 
 #: conversationlist_gorwath.json:gorwath_letter_10
 msgid "You probably don't know me. I am Gorwath. I only recently moved to Crossglen to live with my aunt."
 msgstr ""
+"Вы, вероятно, меня не знаете. Меня зовут Горват. Я совсем недавно переехал в "
+"Кроссглен, чтобы жить с моей тетей."
 
 #: conversationlist_gorwath.json:gorwath_letter_10:0
 msgid "With Leta?"
@@ -42943,10 +42963,14 @@ msgstr "С Летой?"
 #: conversationlist_gorwath.json:gorwath_letter_11
 msgid "Yes. You know her? Then you will also know how strict she can be. Sigh."
 msgstr ""
+"Да. Ты знаешь её? Тогда ты также знаешь, какой строгой она может быть. "
+"[Вздох]"
 
 #: conversationlist_gorwath.json:gorwath_letter_12
 msgid "I met someone at the last weekly market and I want to send them something."
 msgstr ""
+"Я встретил кое-кого на прошлой неделе, на рынке и я хочу им кое-что "
+"отправить."
 
 #: conversationlist_gorwath.json:gorwath_letter_12:0
 msgid "Who is he?"
@@ -42954,23 +42978,25 @@ msgstr "Кто он?"
 
 #: conversationlist_gorwath.json:gorwath_letter_13
 msgid "To be precise, I have a letter ... for ... a lovely girl."
-msgstr ""
+msgstr "Если быть точным, у меня есть письмо... для... прекрасной девушки."
 
 #: conversationlist_gorwath.json:gorwath_letter_13:0
 msgid "Huh?"
-msgstr ""
+msgstr "А?"
 
 #: conversationlist_gorwath.json:gorwath_letter_14
 msgid "Yes, she is the most beautiful girl in the world! Her name is Arensia."
-msgstr ""
+msgstr "Да, она самая красивая девушка в мире! Ее зовут Аренсия."
 
 #: conversationlist_gorwath.json:gorwath_letter_14:0
 msgid "Hm, I don't know anyone here by that name."
-msgstr ""
+msgstr "Хм, я не знаю здесь никого с таким именем."
 
 #: conversationlist_gorwath.json:gorwath_letter_15
 msgid "Unfortunately she lives in Fallhaven. My aunt would never allow me to go there."
 msgstr ""
+"К сожалению, она живет в Фоллхейвене. Моя тетя никогда не разрешит мне туда "
+"поехать."
 
 #: conversationlist_gorwath.json:gorwath_letter_15:0
 msgid "And how could I help you?"
@@ -42978,117 +43004,129 @@ msgstr "А как я могу тебе помочь?"
 
 #: conversationlist_gorwath.json:gorwath_letter_16
 msgid "Andor promised to take the letter to her. Maybe you could ..."
-msgstr ""
+msgstr "Эндор обещал отнести ей письмо. Может быть, вы могли бы..."
 
 #: conversationlist_gorwath.json:gorwath_letter_16:0
 msgid "I could what?"
-msgstr ""
+msgstr "Что я могу?"
 
 #: conversationlist_gorwath.json:gorwath_letter_20
+#, fuzzy
 msgid "Would you be so kind to give her my letter?"
-msgstr ""
+msgstr "Не будете ли вы так добры передать ей мое письмо?"
 
 #: conversationlist_gorwath.json:gorwath_letter_20:0
 msgid "Yeah sure, why not?"
-msgstr ""
+msgstr "Да, конечно."
 
 #: conversationlist_gorwath.json:gorwath_letter_20:1
 msgid "No I'm busy. Good bye."
-msgstr ""
+msgstr "Нет, я занят. До свидания."
 
 #: conversationlist_gorwath.json:gorwath_letter_22
 msgid "You really don't want to help me? Then I have no more hope."
-msgstr ""
+msgstr "Вы действительно не хотите мне помочь? Тогда у меня больше нет надежды."
 
 #: conversationlist_gorwath.json:gorwath_letter_22:0
 msgid "Now, now. Give me your precious letter, I'll do it."
-msgstr ""
+msgstr "Конечно, я сделаю это. Дай мне свое драгоценное письмо."
 
 #: conversationlist_gorwath.json:gorwath_letter_22:1
 msgid "Sorry, but I have no time. I have to find my brother now."
-msgstr ""
+msgstr "Прости, но у меня нет времени. Я должен искать своего брата ."
 
 #: conversationlist_gorwath.json:gorwath_letter_22:2
 msgid "Grow up and solve your problems yourself. I'm not a postman!"
-msgstr ""
+msgstr "Повзрослей и решай свои проблемы сам. Я вам не сова!"
 
 #: conversationlist_gorwath.json:gorwath_letter_24
 msgid ""
 "Good by then. I will not disturb you anymore.\n"
 "* Sob *"
 msgstr ""
+"Хорошо. Я больше не буду Вас беспокоить. \n"
+"[Плачет]"
 
 #: conversationlist_gorwath.json:gorwath_letter_50
 msgid "Thanks a lot. Here's the letter. Go to Fallhaven and look for Arensia."
-msgstr ""
+msgstr "Большое спасибо. Вот письмо. Идите в Фоллхейвен и найдите Аренсию."
 
 #: conversationlist_gorwath.json:gorwath_letter_50:0
 msgid "Fallhaven is a big city. How shall I find her?"
-msgstr ""
+msgstr "Фоллхейвен - большой город. Как мне ее найти?"
 
 #: conversationlist_gorwath.json:gorwath_letter_52
 msgid "She is the daughter of Jakrar the woodcutter, so she will surely live there."
-msgstr ""
+msgstr "Она - дочь дровосека Джакрара, поэтому, она будет жить там."
 
 #: conversationlist_gorwath.json:gorwath_love
 msgid "You are back! Did you find Arensia?"
 msgstr "Ты вернулся! Ты нашел Аренсию?"
 
 #: conversationlist_gorwath.json:gorwath_love:0
+#, fuzzy
 msgid "Yes. I gave her the letter and she asked me to tell you that she loves you too."
 msgstr ""
+"Да. Я отдал ей письмо, и она просила передать тебе, что тоже любит тебя."
 
 #: conversationlist_gorwath.json:gorwath_love_1
 msgid "That's great! I'm so excited!"
-msgstr ""
+msgstr "Это здорово! Я так взволнован!"
 
 #: conversationlist_gorwath.json:gorwath_love_2
+#, fuzzy
 msgid "You have truly earned these gold pieces."
-msgstr ""
+msgstr "Вы действительно заслужили эти золотые монеты."
 
 #: conversationlist_gorwath.json:gorwath_exit
 msgid "I will go now and prepare a present for lovely Arensia."
-msgstr ""
+msgstr "Я сейчас пойду и приготовлю подарок для милой Аренсии."
 
 #: conversationlist_gorwath.json:gorwath_exit_1
 msgid "And when we get married, you will of course be invited."
-msgstr ""
+msgstr "И когда мы поженимся, ты, конечно, будешь приглашен."
 
 #: conversationlist_gorwath.json:gorwath_tmp
+#, fuzzy
 msgid "Did you give her the letter yet?"
-msgstr ""
+msgstr "Ты уже передал ей письмо?"
 
 #: conversationlist_gorwath.json:gorwath_tmp:0
+#, fuzzy
 msgid "Eh ... no. I thought, it wasn't that important."
-msgstr ""
+msgstr "Э... нет. Я думал, это не так важно."
 
 #: conversationlist_gorwath.json:gorwath_tmp2
+#, fuzzy
 msgid "Not that important?? I can barely breathe if I don't get her answer! Hurry now! Please, do."
 msgstr ""
+"Не так важно??? Я едва смогу дышать, если не получу ее ответ! Поторопись! "
+"Пожалуйста, сделайте это."
 
 #: conversationlist_gorwath.json:gorwath_done
 msgid "Thanks again for your great help!"
-msgstr ""
+msgstr "Еще раз спасибо за вашу помощь!"
 
 #: conversationlist_gorwath.json:arensia_1:1
 msgid "I have a letter for you."
-msgstr ""
+msgstr "У меня для Вас письмо."
 
 #: conversationlist_gorwath.json:arensia_done
+#, fuzzy
 msgid "What a beautiful day, isn't it?"
-msgstr ""
+msgstr "Какой прекрасный день, не правда ли?"
 
 #: conversationlist_gorwath.json:arensia_letter
 msgid "A letter? From whom?"
-msgstr ""
+msgstr "Письмо? От кого?"
 
 #: conversationlist_gorwath.json:arensia_letter:0
 msgid "It is from Gorwath, of Crossgl..."
-msgstr ""
+msgstr "Это от Горвата, из Кроссгл..."
 
 #: conversationlist_gorwath.json:arensia_letter_10
 msgid "Oh really? Give it to me - quickly!"
-msgstr ""
+msgstr "Правда? Давай сюда - быстро!"
 
 #: conversationlist_gorwath.json:arensia_letter_20
 msgid ""
@@ -43096,78 +43134,104 @@ msgid ""
 "\n"
 "Oh that's cute. Tell Gorwath I love him too."
 msgstr ""
+"[Читает].\n"
+"\n"
+"О, это мило. Передай Горвату, что я тоже его люблю."
 
 #: conversationlist_gorwath.json:arensia_letter_20:0
 msgid "I'll be happy to tell him that."
-msgstr ""
+msgstr "Я с удовольствием передам ему это."
 
 #: conversationlist_omi2.json:bwm17_worker
 msgid "Hello child, if you came to climb the mountain here, then I have to disappoint you."
 msgstr ""
+"Привет, дитя, если ты пришел сюда, чтобы подняться на гору, то я должен тебя "
+"разочаровать."
 
 #: conversationlist_omi2.json:bwm17_worker_1
 msgid "The ladder was in danger of collapsing. I'm fixing it right now. Come again later."
 msgstr ""
+"Лестница оказалась под угрозой обрушения. Я ремонтирую её сейчас. Приходи "
+"позже."
 
 #: conversationlist_omi2.json:bwm17_questenabled
 msgid "The ladder is under construction."
-msgstr ""
+msgstr "Лестница находится в стадии строительства."
 
 #: conversationlist_omi2.json:bwm17_vine_1
 msgid "There are some flies teeming on the basket. Apart from some rotten meat and vegetables, there does not seem to be anything valuable inside it."
 msgstr ""
+"В корзине кишат мухи. Кроме гнилого мяса и овощей, в ней, похоже, нет ничего "
+"ценного."
 
 #: conversationlist_omi2.json:bwm17_vine_1:0
 #: conversationlist_omi2.json:bwm17_vine_3:0
 #: conversationlist_omi2.json:bwm72_corpse1_1:1
 msgid "Leave it be."
-msgstr ""
+msgstr "Оставить корзину в покое."
 
 #: conversationlist_omi2.json:bwm17_vine_1:1
 msgid "Take a better look."
-msgstr ""
+msgstr "Взглянуть получше."
 
 #: conversationlist_omi2.json:bwm17_vine_2
 msgid "Under all the rotten food, there is a long vine all rolled up. It might be useful, so you decide to take it."
 msgstr ""
+"Под всей этой гнилой едой лежит свернутая длинная виноградная лоза.. Она "
+"может оказаться полезной, поэтому вы решаете взять ее."
 
 #: conversationlist_omi2.json:bwm17_vine_3
 msgid "You have already plundered the basket."
-msgstr ""
+msgstr "Ты уже осмотрел корзину."
 
 #: conversationlist_omi2.json:bwm17_vine2_1
 msgid "You find a hole next to a large rock which seems well attached to the ground."
 msgstr ""
+"Вы находите дыру рядом с большим камнем, который кажется крепко лежит нак "
+"земле."
 
 #: conversationlist_omi2.json:bwm17_vine2_1:0
 msgid "Maybe I should look around here or a little further up the mountain?"
-msgstr ""
+msgstr "Может быть, мне стоит осмотреться здесь или чуть дальше вверх по горе?"
 
 #: conversationlist_omi2.json:bwm17_vine2_1:1
 msgid "Tie the vine to the rock."
-msgstr ""
+msgstr "Привязать виноградную лозу к камню."
 
 #: conversationlist_omi2.json:bwm17_vine2_1:2
 msgid ""
 "Haha. This rock looks like my brother Andor. \n"
 "I think I've been on the trail too long... I'm going crazy."
 msgstr ""
+"Ха-ха. Этот камень похож на моего брата Эндора.\n"
+"Кажется, я слишком долго шел по тропе... Я схожу с ума."
 
 #: conversationlist_omi2.json:bwm17_vine2_1a
 msgid "If I could find something like a rope, I could use it to lower myself into that hole."
 msgstr ""
+"Если бы мне удалось найти что-то вроде веревки, я мог бы с ее помощью "
+"спуститься в эту дыру."
 
 #: conversationlist_omi2.json:bwm17_vine2_2
 msgid "Once tied, you give the improvised rope a couple of firm tugs. It seems stable enough to help you climb down the hole."
 msgstr ""
+"После того, как вы связали импровизированную веревку, вы несколько раз резко "
+"дернули ее. Она кажется достаточно устойчивым, чтобы помочь вам спуститься в "
+"яму."
 
 #: conversationlist_omi2.json:bwm70_sign
 msgid "Attention villagers: Climbing the mountain has been prohibited due to the recent tragic events. All mountain patrol crews have been disbanded until further notice."
 msgstr ""
+"Внимание: Восхождение на гору было запрещено в связи с недавними "
+"трагическими событиями. Все экипажи горных патрулей распущены до дальнейшего "
+"уведомления."
 
 #: conversationlist_omi2.json:bwm70_corpse
 msgid "This must be the remains of some imprudent villager who ventured into the mountain despite the warnings. There are signs of a former camp down the mountain."
 msgstr ""
+"Это, должно быть, останки какого-то неосторожного жителя деревни, который "
+"решился пойти в гору, несмотря на предупреждения. Внизу горы есть следы "
+"бывшего лагеря."
 
 #: conversationlist_omi2.json:bwm70_corpse:0
 msgid "I'd better be cautious."
@@ -43183,11 +43247,13 @@ msgstr "Ты уже посмотрел на этот труп."
 
 #: conversationlist_omi2.json:bwm72_corpse_s_2
 msgid "There's certainly nothing but rotten flesh and bones here."
-msgstr ""
+msgstr "Здесь нет ничего, кроме гнили и костей."
 
 #: conversationlist_omi2.json:bwm72_corpse1_1
 msgid "You see a corpse, much more decomposed than the one you saw on the hillside, and wrapped up in cobwebs. What kind of spider would be able to do such a thing?"
 msgstr ""
+"Вы видите труп, гораздо более разложившийся, чем тот, который вы видели на "
+"склоне холма, и обмотанный паутиной. Какой паук способен на такое?"
 
 #: conversationlist_omi2.json:bwm72_corpse1_1:0
 msgid "It's plundering time!"
@@ -43196,136 +43262,174 @@ msgstr "Пора грабить!"
 #: conversationlist_omi2.json:bwm72_corpse1_2
 msgid "A second after you break the cobweb, a bunch of small spiders emerge from the corpse. Some of them climb up your arm and bite you before you shake them off."
 msgstr ""
+"Через секунду после того, как вы разорвали паутину, из трупа появляется куча "
+"маленьких пауков. Некоторые из них взбираются по вашей руке и кусают вас, "
+"прежде чем вы и успеваете их стряхнуть."
 
 #: conversationlist_omi2.json:bwm72_corpse1_2:0
 msgid "Ugh, great. This one had nothing but ugly spiders."
-msgstr ""
+msgstr "Ух, великолепно. Здесь были только уродливые пауки."
 
 #: conversationlist_omi2.json:bwm72_corpse1_2:1
 msgid "*looking at the corpse*. Poor man, no match for a couple of arachnids... Rest in peace."
 msgstr ""
+"[смотрит на труп]. Бедняга, не сравнится с парой арахнидов... Покойся с "
+"миром."
 
 #: conversationlist_omi2.json:bwm72_corpse2_1
+#, fuzzy
 msgid "Yet another corpse in the same state as the previous one. One of its legs seems violently fractured."
 msgstr ""
+"Еще один труп в том же состоянии, что и предыдущий. Одна из ног, похоже, "
+"сильно переломана."
 
 #: conversationlist_omi2.json:bwm72_corpse2_1:0
 msgid "Take a closer look."
-msgstr ""
+msgstr "Взгляни поближе."
 
 #: conversationlist_omi2.json:bwm72_corpse2_2
+#, fuzzy
 msgid "That is certainly not a wound one of these spiders would cause. There's something strange about all this."
 msgstr ""
+"Это определенно не рана, которую мог бы нанести один из этих пауков. Во всем "
+"этом есть что-то странное."
 
 #: conversationlist_omi2.json:bwm72_corpse3_1
+#, fuzzy
 msgid "This one is the most decayed of all corpses you saw here. Who are these people?"
 msgstr ""
+"Этот - самый разложившийся из всех трупов, которые вы здесь видели. Кто эти "
+"люди?"
 
 #: conversationlist_omi2.json:bwm72_corpse3_1:0
 msgid "Rest in peace, whoever you were. (Leave it be)"
-msgstr ""
+msgstr "Покойся с миром, кем бы ты ни был. (Оставить все как есть)"
 
 #: conversationlist_omi2.json:bwm72_corpse3_1:1
 msgid "*looking at the dead body* Well, I don't think you need your belongings anymore, right? (Plunder the corpse)"
 msgstr ""
+"[смотрим на труп] Ну, я не думаю, что тебе больше нужны твои вещи, верно? ("
+"Изъятие вещей у трупа)"
 
 #: conversationlist_omi2.json:bwm72_corpse3_2
 msgid "YOU! We will pursue you for your crimes!"
-msgstr ""
+msgstr "ТЫ! Мы будем преследовать тебя за твои преступления!"
 
 #: conversationlist_omi2.json:bwm72_corpse3_3
 msgid "There's nothing but rotten flesh and bones here."
-msgstr ""
+msgstr "Здесь нет ничего, кроме гнили и костей."
 
 #: conversationlist_omi2.json:bwm72_torture_0
 msgid "You don't feel good in this room. Something is utterly wrong here."
-msgstr ""
+msgstr "Тебе не хорошо в этой комнате. Что-то здесь совсем не так."
 
 #: conversationlist_omi2.json:bwm72_torture_0a
 msgid "Keep looking around."
-msgstr ""
+msgstr "Продолжить осматриваться."
 
 #: conversationlist_omi2.json:bwm72_torture_3
 msgid "You throw another quick glance at the blood-stained chair. What a horrible scene."
 msgstr ""
+"Ты еще раз бросаешь быстрый взгляд на окровавленный стул. Какая ужасная "
+"сцена."
 
 #: conversationlist_omi2.json:bwm72_torture_1
+#, fuzzy
 msgid "One of the chairs is moved apart from the rest. There are dried blood stains all over it. A blood-stained rope rests next to the chair."
 msgstr ""
+"Один из стульев отодвинут от остальных. На нем видны пятна засохшей крови. "
+"Рядом со стулом лежит окровавленная веревка."
 
 #: conversationlist_omi2.json:bwm72_torture_1a
 msgid "Someone has been tortured here, no doubt about it."
-msgstr ""
+msgstr "Здесь кого-то пытали, в этом нет сомнений."
 
 #: conversationlist_omi2.json:bwm72_torture_1a:0
 msgid "Examine the scene."
-msgstr ""
+msgstr "Осмотреть место."
 
 #: conversationlist_omi2.json:bwm72_torture_2
 msgid "After several minutes of careful but fruitless search, you decide to take one of the ropes as evidence of the torture."
 msgstr ""
+"После нескольких минут тщательных, но бесплодных поисков, вы решаете взять "
+"одну из веревок в качестве доказательства пыток."
 
 #: conversationlist_omi2.json:bwm74_h_warning_1
 msgid "The very few rays of light that barely illuminate this small tunnel get lost in the inmense darkness of this hole."
 msgstr ""
+"Те немногие лучи света, что едва освещают этот маленький туннель, теряются в "
+"беспросветной тьме этой дыры."
 
 #: conversationlist_omi2.json:bwm74_h_warning_1a
 msgid "There's neither ropes nor vines that could help you to go down. Furthermore, you can not figure out how far away the floor is."
 msgstr ""
+"Здесь нет ни веревок, ни лиан, которые могли бы помочь вам спуститься вниз. "
+"Кроме того, вы не можете понять, как глубока дыра."
 
 #: conversationlist_omi2.json:bwm74_h_warning_1a:0
 msgid "Drop a pebble down the hole."
-msgstr ""
+msgstr "Бросить камешек в дыру."
 
 #: conversationlist_omi2.json:bwm74_h_warning_1a:1
 msgid "Shout: Heeeellooo!"
 msgstr ""
+"Крик: Аууу! \n"
+"[эхо: Ау-У-У-У]"
 
 #: conversationlist_omi2.json:bwm74_h_warning_1a:2
 msgid "Jump down."
-msgstr ""
+msgstr "Спрыгнуть."
 
 #: conversationlist_omi2.json:bwm74_h_warning_1a:3
 msgid "Wait and listen."
-msgstr ""
+msgstr "Подождать и послушать."
 
 #: conversationlist_omi2.json:bwm74_h_warning_1a:4
 msgid "Try to find another way down."
-msgstr ""
+msgstr "Попробовать найти другой путь."
 
 #: conversationlist_omi2.json:bwm74_h_warning_1b
 msgid "Nothing happens."
-msgstr ""
+msgstr "Ничего не происходит."
 
 #: conversationlist_omi2.json:bwm74_h_warning_1c
 msgid "Maybe not a good idea. You don't jump."
-msgstr ""
+msgstr "Возможно, это не очень хорошая идея. Ты не прыгаешь."
 
 #: conversationlist_omi2.json:bwm74_h_warning_2
 msgid "Certain of not being prepared to explore whatever would be down there, you decide to avoid the hole and continue your way to the other shore."
 msgstr ""
+"Уверенный в том, что вы не готовы исследовать то, что может быть там, внизу, "
+"вы решаете обойти дыру и продолжить свой путь к другому берегу."
 
 #: conversationlist_omi2.json:bwm74_h_warning_3
 msgid "You should not waste any more time here. There are more urgent things to do."
-msgstr ""
+msgstr "Тебе не следует тратить здесь время. Есть более срочные дела."
 
 #: conversationlist_omi2.json:bwm74_waterfall
 msgid "The path along the water's edge narrows here. Peering down the tunnel, it appears the stream ends abruptly in what seems to be a waterfall. After that, there's just darkness."
 msgstr ""
+"Тропинка вдоль кромки воды здесь сужается. Заглядывая в туннель, кажется, "
+"что ручей резко обрывается чем-то похожим на водопад. После этого остается "
+"только тьма."
 
 #: conversationlist_omi2.json:bwm74_waterfall_2
 msgid "It is definitely not a good idea to keep going this way without any reason."
 msgstr ""
+"Продолжать идти таким путем без всякой причины - определенно не лучшая идея."
 
 #: conversationlist_omi2.json:bwm75_sign
 msgid ""
 "There's nothing written here anymore. The wood is rotten, dried, and cracked, the borders of the sign are eroded and a dense layer of grime covers its top. \n"
 "It must have been ages since someone put it here."
 msgstr ""
+"Здесь уже ничего не написано. Дерево сгнило, высохло и потрескалось, границы "
+"знака размыты, а сверху его покрывает плотный слой грязи.\n"
+"Должно быть, прошла целая вечность с тех пор, как кто-то поставил его здесь."
 
 #: conversationlist_omi2.json:ehrenfest_0
 msgid "Damn it, kid! Watch your step. You almost knocked me over!"
-msgstr ""
+msgstr "Черт возьми, парень! Смотри под ноги. Ты чуть не сбил меня!"
 
 #: conversationlist_omi2.json:ehrenfest_0:0
 msgid "Sorry, I am in a hurry."
@@ -43333,291 +43437,332 @@ msgstr "Извините, я спешу."
 
 #: conversationlist_omi2.json:ehrenfest_0:1
 msgid "Watch my step? You'd better watch your tongue!"
-msgstr ""
+msgstr "Следишь за мной? Тебе лучше следить за своим языком!"
 
 #: conversationlist_omi2.json:ehrenfest_1a
 msgid "Umm, what's the matter?"
-msgstr ""
+msgstr "Эмм, в чем дело?"
 
 #: conversationlist_omi2.json:ehrenfest_1a:0
+#, fuzzy
 msgid "As I said, I don't have time to talk. I need to report something important."
 msgstr ""
+"Как я уже сказал, у меня нет времени на разговоры. Мне нужно сообщить кое-"
+"что важное."
 
 #: conversationlist_omi2.json:ehrenfest_1a:1
 msgid "Nothing of your concern. I must go inside."
-msgstr ""
+msgstr "Тебя это не касается. Я должен зайти внутрь."
 
 #: conversationlist_omi2.json:ehrenfest_1a:2
 msgid "I have discovered something suspicious inside the mountain."
-msgstr ""
+msgstr "Я обнаружил кое-что подозрительное внутри горы."
 
 #: conversationlist_omi2.json:ehrenfest_1b
 msgid "Not only blind but bad-mannered too! You remind me of myself when I was younger. I was not blind, though, ha ha ha!"
 msgstr ""
+"Не только слепой, но и плохо воспитанный! Ты напоминаешь мне меня самого, "
+"когда я был моложе. Хотя я не был слепым. Ха-ха-ха!"
 
 #: conversationlist_omi2.json:ehrenfest_1b2
+#, fuzzy
 msgid "I'll let it go. But tell me, what is it that you find so urgent?"
-msgstr ""
+msgstr "Я оставлю это в покое. Но скажи мне, что ты находишь таким срочным?"
 
 #: conversationlist_omi2.json:ehrenfest_1b2:0
 msgid "I don't trust you with something this important, so nothing."
-msgstr ""
+msgstr "Я не доверяю тебе что-то настолько важное, так что ничего."
 
 #: conversationlist_omi2.json:ehrenfest_1b2:1
 msgid "I have information related to recent disappearances."
-msgstr ""
+msgstr "У меня есть информация, связанная с недавними исчезновениями."
 
 #: conversationlist_omi2.json:ehrenfest_1b2:2
 msgid "Sorry, it's important, so I must go."
-msgstr ""
+msgstr "Извините, это важно, поэтому я должен идти."
 
 #: conversationlist_omi2.json:ehrenfest_2a
 msgid "I see. But keep in mind that no one inside there will pay attention to you, whatever you say."
 msgstr ""
+"Ясно. Но имейте в виду, что никто внутри там не обратит на тебя внимания, "
+"что бы ты ни говорил."
 
 #: conversationlist_omi2.json:ehrenfest_2a:1
 msgid "You never know..."
-msgstr ""
+msgstr "Ты не когда не узнаешь..."
 
 #: conversationlist_omi2.json:ehrenfest_2a:2
 msgid "Whatever, I will try anyway."
-msgstr ""
+msgstr "Неважно, я все равно попробую."
 
 #: conversationlist_omi2.json:ehrenfest_2b
 msgid "Have you? *He gets closer*"
-msgstr ""
+msgstr "Ты? [Он подходит ближе]"
 
 #: conversationlist_omi2.json:ehrenfest_2b2
 msgid "Look, I personally don't think that telling the guards is a good choice."
 msgstr ""
+"Послушайте, я не думаю, что рассказывать охранникам — это хороший выбор."
 
 #: conversationlist_omi2.json:ehrenfest_2b2:0
 msgid "Care to explain?"
-msgstr ""
+msgstr "Не хочешь объяснить?"
 
 #: conversationlist_omi2.json:ehrenfest_2b2:1
 msgid "I will try anyway, thanks."
-msgstr ""
+msgstr "Я все равно попробую, спасибо."
 
 #: conversationlist_omi2.json:ehrenfest_3a
 msgid "OK, kid. Do it, and I'll wait here for your return, heh. By the way, my name is Ehrenfest."
 msgstr ""
+"Ладно, парень. Сделай это, а я буду ждать твоего возвращения здесь, хех. "
+"Кстати, меня зовут Эренфест."
 
 #: conversationlist_omi2.json:ehrenfest_3a:0
 msgid "Do whatever you want, bye."
-msgstr ""
+msgstr "Делай что хочешь, пока."
 
 #: conversationlist_omi2.json:prim_guard5_1
 msgid "This is no place for kids."
-msgstr ""
+msgstr "Это не место для детей."
 
 #: conversationlist_omi2.json:prim_guard5_1:0
 msgid "I will report your bad manners to your chief."
-msgstr ""
+msgstr "Я доложу о ваших плохих манерах вашему начальнику."
 
 #: conversationlist_omi2.json:prim_guard5_1:1
 msgid "I might have some information about the recent disappearances."
-msgstr ""
+msgstr "Возможно, у меня есть информация о недавних исчезновениях."
 
 #: conversationlist_omi2.json:prim_guard5_2
 msgid "Yeah, we already know about the gornauds."
-msgstr ""
+msgstr "Да, мы уже знаем о gornauds."
 
 #: conversationlist_omi2.json:prim_guard5_2:0
 msgid "No, I did not mean..."
-msgstr ""
+msgstr "Нет, я не имел в виду..."
 
 #: conversationlist_omi2.json:prim_guard5_2:1
 msgid "The gornauds?"
-msgstr ""
+msgstr "Горнауд?"
 
 #: conversationlist_omi2.json:prim_guard5_3a
 msgid "Look, I have more important things to do than babysitting a kid, OK?"
-msgstr ""
+msgstr "Слушай, у меня есть дела поважнее, чем нянчиться с ребенком, хорошо?"
 
 #: conversationlist_omi2.json:prim_guard5_3a:1
+#, fuzzy
 msgid "Hmpf, when the gornauds get the village surrounded I'll be the one babysitting all of you."
-msgstr ""
+msgstr "Хмпф, когда горнауды окружат деревню, я буду нянькой для всех вас."
 
 #: conversationlist_omi2.json:prim_guard5_3b
+#, fuzzy
 msgid "Yes. They seem to be learning from every attack and their numbers are increasing."
-msgstr ""
+msgstr "Да. Похоже, они учатся на каждом нападении, и их число растет."
 
 #: conversationlist_omi2.json:prim_guard5_3b:1
 msgid "Will you hear what I have to say then?"
-msgstr ""
+msgstr "Выслушаете ли вы тогда, что я скажу?"
 
 #: conversationlist_omi2.json:prim_guard5_4
 msgid "Of course you can. Go back home and let me and the rest do our job. Understood?"
 msgstr ""
+"Конечно, можешь. Возвращайся домой и позволь мне и остальным делать свою "
+"работу. Понятно?"
 
 #: conversationlist_omi2.json:prim_guard5_4:0
 msgid "But I have important information!"
-msgstr ""
+msgstr "Но у меня есть важная информация!"
 
 #: conversationlist_omi2.json:prim_guard5_4:1
 msgid "Whatever, you won't stand up after a Gornaud blow."
-msgstr ""
+msgstr "В любом случае, после того, как тебя избил Горнауд, ты не встанешь."
 
 #: conversationlist_omi2.json:prim_guard6_1
 msgid "The guard is mumbling something to himself and seems to be ignoring you completely."
-msgstr ""
+msgstr "Охранник что-то бормочет про себя и, кажется, полностью игнорирует вас."
 
 #: conversationlist_omi2.json:ortholion_conversation_1
+#, fuzzy
 msgid "In front of you, some guys seem to be hearing carefully or rather gingerly a charismatic voice."
 msgstr ""
+"Перед вами несколько парней, которые, кажется, внимательно или скорее робко "
+"слушают харизматичный голос."
 
 #: conversationlist_omi2.json:ortholion_conversation_2
 msgid "I am a very reasonable man, but the problems between this village and Blackwater settlement have delayed the tax collection of this region."
 msgstr ""
+"Я очень разумный человек, но проблемы между этой деревней и поселением "
+"Чёрноводной горы задержали сбор налогов в этом регионе."
 
 #: conversationlist_omi2.json:ortholion_conversation_3
 msgid "Taxes are the solid pillar that maintain our and your lands. Other villages will rightly complain if we continue to allow this without repercussions."
 msgstr ""
+"Налоги - это прочная опора, поддерживающая наши и ваши земли. Другие деревни "
+"будут жаловаться, если мы оставим это без внимания."
 
 #: conversationlist_omi2.json:ortholion_conversation_5
 msgid "With all due respect, general, our problems here are wider and more complex than a simple disagreement with the people of Blackwater Settlement."
 msgstr ""
+"При всем уважении, генерал, наши проблемы здесь шире и сложнее, чем простое "
+"разногласие с жителями поселения Чёрноводной горы."
 
 #: conversationlist_omi2.json:ortholion_conversation_6
 msgid "Yes...The mines are closed due to lack of workers. We are scarce of resources and isolated from the rest of the world because of the collapsed tunnels. Moreover, monster attacks are increasing in frequency and proximity to the village."
 msgstr ""
+"Да... Шахты закрыты из-за нехватки рабочих. Мы испытываем нехватку ресурсов "
+"и изолированы от остального мира из-за обрушившихся туннелей. Кроме того, "
+"нападения монстров происходят все чаще и все ближе к деревне."
 
 #: conversationlist_omi2.json:ortholion_conversation_7
 msgid "Yeah, yeah. I'm aware of the current situation."
-msgstr ""
+msgstr "Да, да. Я в курсе текущей ситуации."
 
 #: conversationlist_omi2.json:ortholion_conversation_7a
 msgid "So, first of all, I will leave some of my men here to reinforce the village. They are reliable ... Most of them at least."
 msgstr ""
+"Итак, я оставлю здесь несколько своих людей, чтобы укрепить деревню. Они "
+"надежны... По крайней мере, большинство из них."
 
 #: conversationlist_omi2.json:ortholion_conversation_8
 msgid "Then I will travel to Blackwater Settlement. In the meanwhile, you must think about this offer:"
 msgstr ""
+"Затем я отправлюсь в поселение Чёрноводной горы. А пока вы должны подумать "
+"над этим предложением:"
 
 #: conversationlist_omi2.json:ortholion_conversation_9
 msgid "Feygard will consider that the villagers of Prim will have fulfilled and exceeded their duties to the kingdom if - and only if - Prim leaves the full management of the mines to the capital."
 msgstr ""
+"Фейгард будет считать, что жители Прима выполнили и перевыполнили свои "
+"обязанности перед королевством, если - и только если - Прим оставит полное "
+"управление рудниками столице."
 
 #: conversationlist_omi2.json:ortholion_conversation_10
 msgid "What?! You can't...!"
-msgstr ""
+msgstr "Что?! Ты не можешь...!"
 
 #: conversationlist_omi2.json:ortholion_conversation_11
 msgid "HOW DARE YOU INTERRUPT THE GENERAL?!"
-msgstr ""
+msgstr "КАК ВЫ СМЕЕТЕ ПЕРЕБИВАТЬ ГЕНЕРАЛА?!"
 
 #: conversationlist_omi2.json:ortholion_conversation_11a
 msgid "A palpable tension falls over the room as the guards begin to shout."
-msgstr ""
+msgstr "В комнате нарастает напряжение, когда охранники начинают кричать."
 
 #: conversationlist_omi2.json:ortholion_conversation_12
 msgid "Calm down, all of you. Where is your temperance, soldiers of the glorious Feygard?"
-msgstr ""
+msgstr "Вы все, успокойтесь! Где ваше самообладание, воины славного Фейгарда?"
 
 #: conversationlist_omi2.json:ortholion_conversation_13
 msgid "I am leaving now. You have a few days to think about it, but I'm afraid this is the best solution. Feygard will also take charge of rebuilding and cleaning the mines if you accept."
 msgstr ""
+"Я ухожу. У вас есть несколько дней на размышление, но боюсь, что это лучшее "
+"решение. Фейгард также займется восстановлением и очисткой шахт, если вы "
+"согласитесь."
 
 #: conversationlist_omi2.json:ortholion_conversation_14
 msgid "[The guard seems to be barely surpressing his anger.] We will truly consider your proposal. Best of luck in your travels, general."
 msgstr ""
+"[Кажется, охранник едва сдерживает свой гнев.] Мы серьезно обдумаем ваше "
+"предложение. Желаем удачи в ваших путешествиях, генерал."
 
 #: conversationlist_omi2.json:ortholion_guard_0a
 msgid "I'm on duty, youngster. Go play somewhere else."
-msgstr ""
+msgstr "Я на дежурстве, юноша. Иди играй в другом месте."
 
 #: conversationlist_omi2.json:ortholion_guard_0a:0
 msgid "Hah! Good one. Go buy a better sword, rookie."
-msgstr ""
+msgstr "Ха! Неплохо. Иди и купи меч получше, новичок."
 
 #: conversationlist_omi2.json:ortholion_guard_0a:1
 msgid "Sorry, bye."
-msgstr ""
+msgstr "Извини, пока."
 
 #: conversationlist_omi2.json:ortholion_guard_0a:2
 msgid "How does it feel that a kid killed more gornauds than you?"
-msgstr ""
+msgstr "Каково это, когда ребенок убил больше горнаудов, чем ты?"
 
 #: conversationlist_omi2.json:ortholion_guard_1a
 msgid "Bah! I said I AM ON DUTY!"
-msgstr ""
+msgstr "Ваа! Я сказал, что Я НА ДЕЖУРСТВЕ!"
 
 #: conversationlist_omi2.json:ortholion_guard_1a:0
 msgid "OK, OK. How boring..."
-msgstr ""
+msgstr "Хорошо, хорошо. Как скучно..."
 
 #: conversationlist_omi2.json:ortholion_guard_1a:1
 msgid "Sorry. Goodbye."
-msgstr ""
+msgstr "Прости. До свидания."
 
 #: conversationlist_omi2.json:ortholion_guard_0b
 msgid "Beware kid, it's dangerous out there."
-msgstr ""
+msgstr "Осторожно, мелкий, там опасно."
 
 #: conversationlist_omi2.json:ortholion_guard_0b:0
 msgid "I'm well prepared, thanks."
-msgstr ""
+msgstr "Я хорошо подготовился, спасибо."
 
 #: conversationlist_omi2.json:ortholion_guard_0b:1
 msgid "Of course it is. I am sometimes out there."
-msgstr ""
+msgstr "Конечно. Я иногда бываю там."
 
 #: conversationlist_omi2.json:ortholion_guard_1b
 msgid "Ha ha! Hilarious, but seriously be careful out there."
-msgstr ""
+msgstr "Ха-ха! Смешно, но серьезно, будьте осторожны там."
 
 #: conversationlist_omi2.json:ortholion_guard_1b:0
 msgid "No promises!"
-msgstr ""
+msgstr "Не обещаю!"
 
 #: conversationlist_omi2.json:ortholion_guard_1b:1
 msgid "OK, sir. Thank you for the advice."
-msgstr ""
+msgstr "Хорошо, сэр. Спасибо за совет."
 
 #: conversationlist_omi2.json:ortholion_guard_0c
 msgid "Hey kid! Can you do me a favor?"
-msgstr ""
+msgstr "Эй пацан! Можешь оказать мне услугу?"
 
 #: conversationlist_omi2.json:ortholion_guard_0c:1
 msgid "No, sorry. Bye."
-msgstr ""
+msgstr "Извините, но нет. Пока."
 
 #: conversationlist_omi2.json:ortholion_guard_1c
 msgid "Yes, can you... Eh? Your brother? No idea. Is he from this village?"
-msgstr ""
+msgstr "Да, ты можешь... А? Твой брат? Без понятия. Он из этой деревни?"
 
 #: conversationlist_omi2.json:ortholion_guard_1c:1
 msgid "No, he is not. But thanks anyway."
-msgstr ""
+msgstr "Нет. Но все равно спасибо."
 
 #: conversationlist_omi2.json:ortholion_guard_1c:2
 msgid "No...But tell me about the favor you were asking before."
-msgstr ""
+msgstr "Нет... Но расскажи мне об услуге, о которой ты просил раньше."
 
 #: conversationlist_omi2.json:ortholion_guard_2c
 msgid "Well. Do you mind bringing me some food? I have not eaten anything decent since we arrived in this village."
 msgstr ""
+"Ну. Не могли бы вы принести мне немного еды? Я не ел ничего приличного с тех "
+"пор, как мы прибыли в эту деревню."
 
 #: conversationlist_omi2.json:ortholion_guard_2c:0
 msgid "Go buy your own food."
-msgstr ""
+msgstr "Иди и купи себе еду сам."
 
 #: conversationlist_omi2.json:ortholion_guard_2c:1
 msgid "Here's a pork pie."
-msgstr ""
+msgstr "Вот пирог со свининой."
 
 #: conversationlist_omi2.json:ortholion_guard_2c:2
 msgid "Here's some cheese."
-msgstr ""
+msgstr "Вот немного сыра."
 
 #: conversationlist_omi2.json:ortholion_guard_2c:3
 msgid "I don't have food, but here's 50 gold."
-msgstr ""
+msgstr "У меня нет еды, но вот 50 золотых монет."
 
 #: conversationlist_omi2.json:ortholion_guard_2c:4
 msgid "How about some cooked meat?"
-msgstr ""
+msgstr "Как насчет мяса?"
 
 #: conversationlist_omi2.json:ortholion_guard_2c_pork
 msgid "Oh, looks good! Thank you, kid. Here's something shiny I've found."
