@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: andors-trail\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-11-10 11:48+0000\n"
-"PO-Revision-Date: 2021-05-14 16:30+0000\n"
-"Last-Translator: SmallDragon Chen <teacher144123@gmail.com>\n"
+"PO-Revision-Date: 2022-01-05 10:55+0000\n"
+"Last-Translator: DragonChen TW <teacher144123@gmail.com>\n"
 "Language-Team: Chinese (Traditional) <https://hosted.weblate.org/projects/"
 "andors-trail/game-content/zh_Hant/>\n"
 "Language: zh_TW\n"
@@ -17,14 +17,17 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.7-dev\n"
+"X-Generator: Weblate 4.10.1\n"
 "X-Launchpad-Export-Date: 2015-11-02 12:24+0000\n"
 
 #: [none]
 msgid "translator-credits"
 msgstr ""
 "Launchpad Contributions:\n"
-"Jackson Chen https://launchpad.net/~teacher144123"
+"DragonChen https://launchpad.net/~teacher144123\n"
+"\n"
+"Weblate Contributions:\n"
+"..."
 
 #: actorconditions_v069.json:bless
 msgid "Bless"
@@ -355,27 +358,27 @@ msgstr "滿足"
 
 #: actorconditions_omi2.json:panic
 msgid "Panic"
-msgstr ""
+msgstr "狂亂"
 
 #: actorconditions_omi2.json:satiety
 msgid "Satiety"
-msgstr ""
+msgstr "飽足"
 
 #: actorconditions_omi2.json:frozen1
 msgid "Minor freeze"
-msgstr ""
+msgstr "凍結（弱）"
 
 #: actorconditions_omi2.json:frozen2
 msgid "Icy wounds"
-msgstr ""
+msgstr "凍傷"
 
 #: actorconditions_omi2.json:relax
 msgid "Requiescence"
-msgstr ""
+msgstr "要求"
 
 #: actorconditions_omi2.json:kazarite_misery
 msgid "Kazaul possession"
-msgstr ""
+msgstr "卡兆爾財產"
 
 #: conversationlist_mikhail.json:mikhail_gamestart
 msgid "Oh good, you are awake."
@@ -393,22 +396,22 @@ msgstr "別在意，他可能很快就回來了。"
 #: conversationlist_crossglen_leonid.json:leonid_continue
 #: conversationlist_umar.json:umar_return_2
 msgid "Anything else I can help you with?"
-msgstr "還有什麼我幫得上忙的嗎?"
+msgstr "還有什麼我幫得上忙的嗎？"
 
 #: conversationlist_mikhail.json:mikhail_default:0
 #: conversationlist_mikhail.json:mikhail_default:1
 #: conversationlist_mikhail.json:mikhail_default:2
 msgid "Do you have any more tasks for me?"
-msgstr "你還有什麼工作可以交給我的嗎?"
+msgstr "你還有什麼工作可以交給我的嗎？"
 
 #: conversationlist_mikhail.json:mikhail_default:3
 #: conversationlist_umar.json:umar_return_1:0
 msgid "Do you have any tasks for me?"
-msgstr "你有什麼任務可以給我嗎?"
+msgstr "你有什麼任務可以給我嗎？"
 
 #: conversationlist_mikhail.json:mikhail_default:4
 msgid "Is there anything else you can tell me about Andor?"
-msgstr "還有什麼其他有關安道爾的消息可以跟我說的嗎?"
+msgstr "還有任何有關安道爾的消息嗎？"
 
 #: conversationlist_mikhail.json:mikhail_default:5
 #: conversationlist_mikhail.json:mikhail_default:6
@@ -423,19 +426,23 @@ msgstr "我正在找安道爾。"
 msgid "What kind of book is it that you have in your hand?"
 msgstr "你手上的那本書是什麼？"
 
+#: conversationlist_mikhail.json:mikhail_default:9
+msgid "Yes, I'm here to deliver the order for a 'Plush Pillow'. But what for?"
+msgstr ""
+
 #: conversationlist_mikhail.json:mikhail_tasks
 msgid "Oh yes, there were some things I need help with, bread and rats. Which one would you like to talk about?"
-msgstr "哦，對，有些事情我需要協助，麵包跟老鼠，你哪個有興趣?"
+msgstr "哦對，有些事情我需要協助，麵包跟老鼠，你對哪個有興趣？"
 
 #: conversationlist_mikhail.json:mikhail_tasks:0
 #: conversationlist_mikhail.json:mikhail_rats_done:0
 msgid "What about the bread?"
-msgstr "麵包是怎麼回事?"
+msgstr "麵包？"
 
 #: conversationlist_mikhail.json:mikhail_tasks:1
 #: conversationlist_mikhail.json:mikhail_bread_done:0
 msgid "What about the rats?"
-msgstr "老鼠是怎麼回事?"
+msgstr "老鼠？"
 
 #: conversationlist_mikhail.json:mikhail_tasks:2
 #: conversationlist_mikhail.json:mikhail_bread_done:1
@@ -458,7 +465,7 @@ msgstr "沒事了，謝謝你幫我解決了老鼠與麵包的問題。"
 
 #: conversationlist_mikhail.json:mikhail_andor1
 msgid "As I said, Andor went out and hasn't been back since. I worry about him. Please go look for your brother. He said he would only be out for a short while."
-msgstr "就像我說的，安道爾出去了就沒再回來過。我很擔心他。拜託你去找找你哥哥，他說過他只出去一下子的。"
+msgstr "就像我說的，安道爾出去了就沒再回來過。我很擔心他。拜託你去找找你哥，他說過他只出去一下子的。"
 
 #: conversationlist_mikhail.json:mikhail_andor2
 msgid "Maybe he went into that supply cave again and got stuck. Or maybe he's in Leta's basement training with that wooden sword again. Please go look for him in town."
@@ -470,7 +477,7 @@ msgstr "哦，我差點忘了。如果你有時間的話，拜託到市政廳瑪
 
 #: conversationlist_mikhail.json:mikhail_bread_continue
 msgid "Did you get my bread from Mara at the town hall yet?"
-msgstr "你去市政廳瑪拉那邊幫我買麵包了嗎?"
+msgstr "你去市政廳瑪拉那邊幫我買麵包了嗎？"
 
 #: conversationlist_mikhail.json:mikhail_bread_continue:0
 msgid "Yes, here you go."
@@ -526,12 +533,13 @@ msgstr "謝謝你剛才的麵包。"
 #: conversationlist_guynmart2_npc.json:guynmart_child_90:0
 #: conversationlist_stoutford_combined.json:stoutford_widow_roots30_2:0
 #: conversationlist_brimhaven_2.json:oromir_basement_help_10:1
+#: conversationlist_delivery.json:brv_wh_delivery_arghes:0
 msgid "You're welcome."
 msgstr "不客氣。"
 
 #: conversationlist_mikhail.json:mikhail_rats_start
 msgid "I saw some rats out back in our garden earlier. Could you please go kill any rats that you see out there."
-msgstr "我早上在外面的後花園看到了一些老鼠，你能夠幫我殺掉你看的到的每隻老鼠吧。"
+msgstr "我早上在外面的後花園看到了一些老鼠，你能夠幫我殺掉你看的到的每隻老鼠嗎？"
 
 #: conversationlist_mikhail.json:mikhail_rats_start:0
 msgid "I have already dealt with the rats."
@@ -620,7 +628,7 @@ msgstr "如果發生了，也許鎮上的牧師可以幫到你。否則，請休
 
 #: conversationlist_mikhail_foodpoison.json:mikhail_rats_start2c
 msgid "Me, I can't really afford the meat, so I just stick to my bread!"
-msgstr "我，真的買不起肉，所以我只堅持吃我的麵包！"
+msgstr "我真的買不起肉，所以我只堅持吃我的麵包！"
 
 #: conversationlist_crossglen.json:audir1
 msgid ""
@@ -686,7 +694,7 @@ msgstr "我能在這裡休息嗎？"
 #: conversationlist_omi2.json:ehrenfest_31b:1
 #: conversationlist_omi2.json:ortholion_guard3_5:2
 msgid "Do you have anything to trade?"
-msgstr "你有任何東西能夠和我交易嗎?"
+msgstr "你有任何東西能夠交易嗎？"
 
 #: conversationlist_crossglen.json:arambold2
 msgid ""
@@ -860,7 +868,7 @@ msgstr "聽著孩子，我已經告訴你了。"
 
 #: conversationlist_crossglen_gruil.json:gruil_andor1
 msgid "I talked to him yesterday. He asked if I knew someone called Umar or something like that. I have no idea who he was talking about."
-msgstr "我昨天和他說過話。他問我認不認識一個人叫...悠馬爾或什麼的。我完全不知道他在說誰。"
+msgstr "我昨天和他說過話。他問我認不認識一個人叫…悠馬爾或什麼的。我完全不知道他在說誰。"
 
 #: conversationlist_crossglen_gruil.json:gruil_andor2
 msgid "He seemed really upset about something and left in a hurry. Something about the Thieves' Guild in Fallhaven."
@@ -1087,7 +1095,7 @@ msgstr "嘿，這是我的房子，滾出這裡！"
 
 #: conversationlist_crossglen_leta.json:leta1:0
 msgid "But I was just ..."
-msgstr "可是我只是..."
+msgstr "可是我只是…"
 
 #: conversationlist_crossglen_leta.json:leta1:1
 #: conversationlist_crossglen_leta.json:leta2:0
@@ -1279,6 +1287,7 @@ msgstr "我也這麼覺得。你和你那個哥哥一直都是膽小鬼。"
 #: conversationlist_brimhaven.json:remgard_prison_thief_200:0
 #: conversationlist_omi2.json:prim_guard5_3a:0
 #: conversationlist_omi2.json:ehrenfest_7a:0
+#: conversationlist_delivery.json:brv_wh_delivery_arghes:1
 msgid "Bye."
 msgstr "再見。"
 
@@ -1328,6 +1337,7 @@ msgstr "非常感謝你的幫忙，孩子！也許你和你哥哥不像我原先
 #: conversationlist_brimhaven.json:melona_1:0
 #: conversationlist_brimhaven_2.json:brv_guard_deputy_asd_30:0
 #: conversationlist_gison.json:gison_p1_20_warmup_1:0
+#: conversationlist_delivery.json:brv_wh_delivery_boss_reward:0
 msgid "Thanks."
 msgstr "謝了。"
 
@@ -1361,6 +1371,7 @@ msgstr "你想談談那個嗎？"
 #: conversationlist_omi2.json:moyra_12:1
 #: conversationlist_omi2.json:prim_tavern_guest4_17c:1
 #: conversationlist_omi2.json:capvjern_22:0
+#: conversationlist_delivery.json:brv_wh_delivery_mikhail2:0
 msgid "OK, bye."
 msgstr "好，掰囉。"
 
@@ -1392,115 +1403,118 @@ msgid ""
 "\n"
 "Gandir and I told Irogotu that we should stop the digging and leave while we still could."
 msgstr ""
+"哦那些小動物、 該死的混蛋，他們差點殺了我。\n"
+"\n"
+"甘德爾和我告訴伊羅格圖，我們應該停止挖掘，趁還可以離開的時候離開。"
 
 #: conversationlist_jan.json:jan_default7
 msgid "But Irogotu wanted to continue deeper into the dungeon. He and Gandir got into an argument and started fighting."
-msgstr ""
+msgstr "但伊羅格圖想繼續深入地牢，他和甘德爾起了爭持而且打了起來。"
 
 #: conversationlist_jan.json:jan_default8
 msgid "That's when it happened. *sob* Oh what have we done?"
-msgstr ""
+msgstr "這就是事情的經過，（抽泣）不，我們到底做了什麼？"
 
 #: conversationlist_jan.json:jan_default8:0
 #: conversationlist_ogam.json:ogam_2:1
 #: conversationlist_brimhaven_2.json:arlish_asd_40:0
 #: conversationlist_omi2.json:ehrenfest_14:0
 msgid "Please go on."
-msgstr ""
+msgstr "請繼續。"
 
 #: conversationlist_jan.json:jan_default9
 msgid "Irogotu killed Gandir with his bare hands. You could see the fire in his eyes. He almost seemed to enjoy it."
-msgstr ""
+msgstr "伊羅格圖徒手殺了甘德爾。你可以看到他眼中的火焰，他似乎很享受。"
 
 #: conversationlist_jan.json:jan_default10
 msgid "I fled and haven't dared go back down there because of the critters and Irogotu himself."
-msgstr ""
+msgstr "我逃了出來，不敢再回去，因為那些怪物和伊羅格圖。"
 
 #: conversationlist_jan.json:jan_default11
 msgid "Oh that damn Irogotu. If only I could get to him. I'd show him one thing and another."
-msgstr ""
+msgstr "哦，該死的伊羅格圖，要是我能找到他，我會讓他付出代價。"
 
 #: conversationlist_jan.json:jan_default11:0
 msgid "Do you think I could help?"
-msgstr ""
+msgstr "你覺得我可以幫上忙嗎？"
 
 #: conversationlist_jan.json:jan_default11_1
 msgid "Do you think you could help me?"
-msgstr ""
+msgstr "你覺得你能幫我忙？"
 
 #: conversationlist_jan.json:jan_default11_1:0
 msgid "Sure, there may be some treasure in this for me."
-msgstr ""
+msgstr "當然，這裡可能有一些給我的寶藏。"
 
 #: conversationlist_jan.json:jan_default11_1:1
 msgid "Sure. Irogotu should pay for what he did."
-msgstr ""
+msgstr "當然，伊羅格圖應該替他的所作所為付出代價。"
 
 #: conversationlist_jan.json:jan_default11_1:2
 msgid "No thanks, I would rather not be involved in this. It sounds dangerous."
-msgstr ""
+msgstr "不，謝謝，我不想牽扯其中。聽起來很危險。"
 
 #: conversationlist_jan.json:jan_default12
 msgid "Really? You think you could help? Hmm, maybe you could. Beware of those bugs though, they're really tough bastards."
-msgstr ""
+msgstr "真的？你覺得你能幫忙？恩，也許你可以。不過要小心那些蟲子，那些混蛋真的很難對付。"
 
 #: conversationlist_jan.json:jan_default13
 msgid "If you really want to help, go find Irogotu down in the cave, and get me back Gandir's ring."
-msgstr ""
+msgstr "如果你真的想幫忙，去找出洞窟下的伊羅格圖，然後幫我把甘德爾的戒指拿回來。"
 
 #: conversationlist_jan.json:jan_default13:0
 msgid "Sure, I'll help."
-msgstr ""
+msgstr "當然，我能幫忙。"
 
 #: conversationlist_jan.json:jan_default13:1
 #: conversationlist_flagstone.json:flagstone_sentry_return1:0
 #: conversationlist_flagstone.json:flagstone_sentry_return2:1
 msgid "Can you tell me the story again?"
-msgstr ""
+msgstr "你能再跟我說一次那個故事嗎？"
 
 #: conversationlist_jan.json:jan_default13:2
 #: conversationlist_prim_tavern.json:birgil_4:1
 msgid "Never mind, goodbye."
-msgstr ""
+msgstr "沒關係，再見。"
 
 #: conversationlist_jan.json:jan_default14
 msgid "Return to me when you are done. Bring me Gandir's ring from Irogotu down in the cave."
-msgstr ""
+msgstr "結束的時候回來找我。把甘德爾的戒指從洞窟下的伊羅格圖那裡拿過來。"
 
 #: conversationlist_jan.json:jan_return
 msgid "Hello again kid. Did you find Irogotu down in the cave?"
-msgstr ""
+msgstr "你好，孩子。你有在洞窟下找到伊羅格圖嗎？"
 
 #: conversationlist_jan.json:jan_return:1
 #: conversationlist_benbyr.json:benbyr_mission_1:0
 #: conversationlist_lleglaris.json:lleglaris_r1:0
 #: conversationlist_tiqui.json:tiqui_r0:1
 msgid "Can you tell me your story again?"
-msgstr ""
+msgstr "你能再跟我說一次那個故事嗎？"
 
 #: conversationlist_jan.json:jan_return:2
 msgid "Yes, I have killed Irogotu."
-msgstr ""
+msgstr "是的，我殺了伊羅格圖。"
 
 #: conversationlist_jan.json:jan_background
 msgid "Didn't you listen the first time I told you the story? Do I really have to tell you the story one more time?"
-msgstr ""
+msgstr "我第一次講故事的時候你沒在聽嗎？我真的需要再說一遍這個故事嗎？"
 
 #: conversationlist_jan.json:jan_background:0
 msgid "Yes, please tell me the story again."
-msgstr ""
+msgstr "是的，請再跟我說一次那個故事。"
 
 #: conversationlist_jan.json:jan_background:1
 msgid "I wasn't listening that much the first time you told it. What was that about a treasure?"
-msgstr ""
+msgstr "你第一次說的時候我沒注意，那是什麼寶藏？"
 
 #: conversationlist_jan.json:jan_background:2
 msgid "No, never mind. I remember it now."
-msgstr ""
+msgstr "不，沒關係，我現在想起來了。"
 
 #: conversationlist_jan.json:jan_complete2
 msgid "Thanks for dealing with Irogotu earlier! I am forever in debt to you."
-msgstr ""
+msgstr "感謝你處理了伊羅格圖！我永遠欠你一個人情。"
 
 #: conversationlist_jan.json:jan_complete
 msgid ""
@@ -1508,18 +1522,21 @@ msgid ""
 "\n"
 "Oh thank you so much for bringing me back Gandir's ring! Now I can have something to remember him by."
 msgstr ""
+"等等，什麼？你真的下去那裡而且活著回來了？你怎麼做到的？哇，我差點死在那個山洞裡。\n"
+"\n"
+"哦，非常感謝你把甘德爾的戒指帶回來！現在我可以用這個來紀念他了。"
 
 #: conversationlist_jan.json:jan_complete:0
 msgid "Glad that I could help. Goodbye."
-msgstr ""
+msgstr "很高興我能幫上忙，再見。"
 
 #: conversationlist_jan.json:jan_complete:1
 msgid "Shadow be with you. Goodbye."
-msgstr ""
+msgstr "暗影與你同在，再見。"
 
 #: conversationlist_jan.json:jan_complete:2
 msgid "Whatever. I only did it for the loot."
-msgstr ""
+msgstr "隨便，我只是為了戰利品才這麼做的。"
 
 #: conversationlist_jan.json:irogotu
 msgid "Well hello there. Another adventurer coming to steal my bounty. This is MY CAVE. The treasure will be MINE!"
@@ -1694,6 +1711,10 @@ msgstr ""
 #: conversationlist_fallhaven_arcir.json:arcir_start:1
 #: conversationlist_fallhaven_arcir.json:arcir_anythingelse:1
 msgid "You really seem to like your books."
+msgstr ""
+
+#: conversationlist_fallhaven_arcir.json:arcir_start:2
+msgid "And I'm your delivery kid. Did you order a 'Dusty old book'?"
 msgstr ""
 
 #: conversationlist_fallhaven_arcir.json:arcir_anythingelse
@@ -3032,6 +3053,13 @@ msgstr ""
 #: conversationlist_gison.json:gison_catchsoup_new:0
 #: conversationlist_gorwath.json:gorwath_love_2:0
 #: conversationlist_omi2.json:ehrenfest_31b:0
+#: conversationlist_delivery.json:brv_wh_delivery_arcir:0
+#: conversationlist_delivery.json:brv_wh_delivery_edrin:0
+#: conversationlist_delivery.json:brv_wh_delivery_odirath:0
+#: conversationlist_delivery.json:brv_wh_delivery_venanra:0
+#: conversationlist_delivery.json:brv_wh_delivery_tjure:0
+#: conversationlist_delivery.json:brv_wh_delivery_servant:0
+#: conversationlist_delivery.json:brv_wh_delivery_boss_scrooge:0
 msgid "Thank you."
 msgstr ""
 
@@ -4006,7 +4034,7 @@ msgstr ""
 #: conversationlist_fungi_panic.json:zuul_khan_20:0
 #: conversationlist_fungi_panic.json:fungi_rescued:0
 msgid "Who are you?"
-msgstr ""
+msgstr "你是誰？"
 
 #: conversationlist_thievesguild_1.json:thievesguild_pickpocket_2
 msgid "My real name is unimportant. People mostly call me Quickfingers."
@@ -5428,7 +5456,7 @@ msgstr "你好. 歡迎來到我的房間."
 #: conversationlist_alynndir.json:alynndir_1:1
 #: conversationlist_alynndir.json:alynndir_2:1
 msgid "What can you tell me about the surroundings here?"
-msgstr "你能和我說說這裡的環境嗎?"
+msgstr "你能和我說說這裡的環境嗎？"
 
 #: conversationlist_alynndir.json:alynndir_2
 msgid "Mostly, I trade with travelers on the main road on the way to Nor City."
@@ -5740,7 +5768,7 @@ msgstr "噢我的天啊，你這個平民，離我遠一點。也許我抓到了
 #: conversationlist_ambelie.json:ambelie_1:1
 #: conversationlist_ambelie.json:ambelie_3:0
 msgid "What is a noble woman such as yourself doing in a place like this?"
-msgstr "像你這樣的貴婦出現在這種地方做什麼?"
+msgstr "像妳這樣的貴婦出現在這種地方做什麼？"
 
 #: conversationlist_ambelie.json:ambelie_1:2
 msgid "I would be glad to get away from a snob like you."
@@ -5818,7 +5846,7 @@ msgstr "謝謝你。在還沒有被人看到我正在跟你這樣的平民說話
 
 #: conversationlist_ambelie.json:ambelie_10:0
 msgid "Commoner? Are you trying to insult me? Goodbye."
-msgstr "平民?你在侮辱我嗎?再見。"
+msgstr "平民？你在侮辱我嗎？再見。"
 
 #: conversationlist_ambelie.json:ambelie_10:1
 msgid "Whatever, you probably wouldn't even survive a forest wasp."
@@ -6171,6 +6199,10 @@ msgstr ""
 msgid "Yes, I have found out the story about what happened to him."
 msgstr ""
 
+#: conversationlist_wrye.json:wrye_return_1:3
+msgid "Not yet, but your order has finally arrived."
+msgstr ""
+
 #: conversationlist_wrye.json:wrye_return_2
 msgid "Welcome back. Thank you for your help in finding out what happened to my son."
 msgstr ""
@@ -6181,6 +6213,10 @@ msgstr ""
 msgid "You are welcome."
 msgstr ""
 
+#: conversationlist_wrye.json:wrye_return_2:2
+msgid "Yes, I came back to deliver your order of a 'Lyre'. You must be good at playing it?"
+msgstr ""
+
 #: conversationlist_wrye.json:wrye_mourn_1
 msgid "Shadow help me."
 msgstr ""
@@ -6189,6 +6225,10 @@ msgstr ""
 #: conversationlist_bwm_agent_1.json:bwm_agent_1_start:0
 #: conversationlist_prim_outside.json:tonis_1:0
 msgid "What is the matter?"
+msgstr ""
+
+#: conversationlist_wrye.json:wrye_mourn_1:1
+msgid "Excuse me, I'm here to deliver your order for a 'Lyre'."
 msgstr ""
 
 #: conversationlist_wrye.json:wrye_mourn_2
@@ -6203,6 +6243,10 @@ msgstr ""
 #: conversationlist_wrye.json:wrye_mourn_2:1
 #: conversationlist_brimhaven_2.json:leta_oromir_complete2_helped_oromir
 msgid "What about him?"
+msgstr ""
+
+#: conversationlist_wrye.json:wrye_mourn_2:2
+msgid "Maybe your order here will comfort you?"
 msgstr ""
 
 #: conversationlist_wrye.json:wrye_mourn_3
@@ -6296,7 +6340,7 @@ msgstr ""
 #: conversationlist_maevalia.json:maevalia15:0
 #: conversationlist_stoutford.json:tahalendor2_10
 msgid "What now?"
-msgstr "現在怎麼辦?"
+msgstr "現在怎麼辦？"
 
 #: conversationlist_wrye.json:wrye_story_9
 msgid "This was several weeks ago. Now I feel an emptiness inside. I know in me that something has happened to my son Rincel."
@@ -8240,7 +8284,7 @@ msgstr ""
 #: conversationlist_prim_guthbered.json:guthbered_killharl_1:0
 #: conversationlist_ailshara.json:ailshara_deliver_1:3
 msgid "Can you tell me again what I was supposed to do?"
-msgstr "你可以再告訴我什我該怎麼做嗎?"
+msgstr "你可以再說一次我該怎麼做嗎？"
 
 #: conversationlist_prim_guthbered.json:guthbered_killharl_1:1
 msgid "Not yet. I am still working on it."
@@ -11276,7 +11320,7 @@ msgstr ""
 
 #: conversationlist_ailshara.json:ailshara_completed_y_1
 msgid "Hello again my Shadow friend. How may I help you?"
-msgstr "你好我來自暗影的朋友. 也許我能幫你什麼?"
+msgstr "你好我來自暗影的朋友。也許我能幫你什麼？"
 
 #: conversationlist_ailshara.json:ailshara_completed_y_1:0
 #: conversationlist_ailshara.json:ailshara_completed_n_1:0
@@ -11287,11 +11331,11 @@ msgstr "讓我看看你有什麼可以交易."
 
 #: conversationlist_ailshara.json:ailshara_completed_n_1
 msgid "Sigh, it's you. What do you want?"
-msgstr "唉,如果是你. 你會怎麼想?"
+msgstr "唉，如果是你，你會怎麼想？"
 
 #: conversationlist_ailshara.json:ailshara_1
 msgid "Psst, hey. Interested in doing some trading? I am always looking for acquiring ... well, items of others..."
-msgstr "噓,嘿嘿. 有沒有興趣做一些交易?我一直在我要的東西...恩,和一些其他的."
+msgstr "噓，嘿嘿。有沒有興趣做一些交易？我一直在我要的東西…恩，別人的東西。"
 
 #: conversationlist_ailshara.json:ailshara_1:0
 #: conversationlist_charwood1.json:khorailla2:0
@@ -11300,11 +11344,11 @@ msgstr "當然,讓我看看你有什麼."
 
 #: conversationlist_ailshara.json:ailshara_1:1
 msgid "Items of others?"
-msgstr "其他的東西?"
+msgstr "別人的東西？"
 
 #: conversationlist_ailshara.json:ailshara_2
 msgid "Oh yes. You see, these Feygard patrol guards carry some really interesting things. They don't seem to care much if some of their shipments ... well, disappear."
-msgstr "喔是的. 你看,這些費格爾的警衛他們身上有些有趣的事情. 他們似乎不在乎出貨量有多少... 好吧,好像沒有."
+msgstr "喔是的. 你看,這些費格爾的警衛他們身上有些有趣的事情. 他們似乎不在乎出貨量有多少…好吧,好像沒有."
 
 #: conversationlist_ailshara.json:ailshara_2:1
 msgid "I should really not get involved in this. Goodbye."
@@ -11312,7 +11356,7 @@ msgstr "我不應該介入這其中的,再見."
 
 #: conversationlist_ailshara.json:ailshara_interested_1
 msgid "Psst, hey you! I saw you talking to Gandoren over there, and I happened to notice that you exchanged some items. Anything interesting?"
-msgstr "噓,嘿嘿! 我剛看見你跟甘德倫在那邊說話,我碰巧注意到你和他做了一些交易. 能不能告訴我?"
+msgstr "噓…嘿！我剛看見你跟甘德倫在那邊說話，我注意到你和他做了一些交易，有什麼有趣的東西嗎？"
 
 #: conversationlist_ailshara.json:ailshara_interested_1:0
 #: conversationlist_ailshara.json:ailshara_deliver_1:1
@@ -11329,11 +11373,11 @@ msgstr "甘德倫特別要我別跟你說這件事."
 
 #: conversationlist_ailshara.json:ailshara_interested_1:3
 msgid "Yes, Gandoren wants me to deliver some equipment for Feygard. Do you want a part of the deal?"
-msgstr "對,甘德倫要我送一些裝備給費格爾. 你也想做些交易嗎?"
+msgstr "對，甘德倫要我送一些裝備給費格爾。你也想做些交易嗎？"
 
 #: conversationlist_ailshara.json:ailshara_interested_2
 msgid "Hah, of course. Gandoren would not like it if I were to get a glimpse into his business. I assume you are helping him deliver those items somewhere. Tell me this, what did he promise you in return? Gold? Honor? No?"
-msgstr "哈,當然. 甘德倫不會喜歡我插手他的交易. 我假設你要幫他送一些東西到某個地方. 那告訴我,你想得到什麼?酬勞?榮譽?沒有?"
+msgstr "哈，當然。甘德倫不會喜歡我插手他的交易。你正在幫他送東西到某個地方，告訴我，他答應給你什麼？錢？榮譽？沒有？"
 
 #: conversationlist_ailshara.json:ailshara_interested_2:0
 msgid "Now that you mention it, he didn't actually say there would be a reward."
@@ -11349,11 +11393,11 @@ msgstr "幫助費格爾似乎是件正確的事."
 
 #: conversationlist_ailshara.json:ailshara_interested_2:3
 msgid "What would you propose instead?"
-msgstr "你會怎麼建議?"
+msgstr "那你有什麼其他的建議嗎？"
 
 #: conversationlist_ailshara.json:ailshara_interested_3
 msgid "As usual, Feygard keeps all its riches to itself. What if I were to tell you there was a way for you to gain from all this as well?"
-msgstr "費格爾人總是留下最好的給他們自己. 如果我告訴你有一種方法可以從這件事中獲得獎賞呢?"
+msgstr "費格爾人總是留下最好的給他們自己。如果我告訴你有一種方法可以從這件事中獲得獎賞呢？"
 
 #: conversationlist_ailshara.json:ailshara_interested_3:0
 msgid "Sounds interesting, please go on."
@@ -11414,7 +11458,7 @@ msgstr "願暗影與你同在. 也許暗影之神會在漆黑的道路上指引�
 
 #: conversationlist_ailshara.json:ailshara_deliver_1
 msgid "Hello again. Did you deliver those items to the smith in Vilegard?"
-msgstr "你好. 你把那些東西交給費艾爾村的鐵匠了嗎?"
+msgstr "你好，你把那些東西交給維爾加村的鐵匠了嗎？"
 
 #: conversationlist_ailshara.json:ailshara_deliver_1:4
 #: conversationlist_halvor_surprise.json:halvor_chwood_4:0
@@ -11423,6 +11467,7 @@ msgstr "你好. 你把那些東西交給費艾爾村的鐵匠了嗎?"
 #: conversationlist_brimhaven.json:brv_employee_10:0
 #: conversationlist_brimhaven.json:mikhail_news_20:2
 #: conversationlist_gison.json:gison_p2_50:2
+#: conversationlist_delivery.json:brv_wh_delivery_boss_10_10:1
 msgid "Not yet."
 msgstr "還沒."
 
@@ -12713,7 +12758,7 @@ msgstr ""
 #: conversationlist_arulir_mountain.json:bernhar_10:1
 #: conversationlist_gison.json:gison_p1_10_0:0
 msgid "What are you doing here?"
-msgstr "你在做什麼?"
+msgstr "你在做什麼？"
 
 #: conversationlist_thorin.json:thorin_2:2
 #: conversationlist_thorin.json:thorin_search_1:2
@@ -12925,7 +12970,7 @@ msgstr ""
 
 #: conversationlist_algangror.json:algangror_1
 msgid "Oh my, a child. He he, how nice. Tell me, what brings you here?"
-msgstr "喔...喔我的..孩子. 他..他現在很好. 告訴我是什麼讓你來到這裡?"
+msgstr "喔，一個孩子，哈哈，很好，告訴我是什麼讓你來到這裡？"
 
 #: conversationlist_algangror.json:algangror_1:0
 msgid "I am looking for my brother."
@@ -12950,11 +12995,11 @@ msgstr ""
 
 #: conversationlist_algangror.json:algangror_2a
 msgid "Run away, has he? He he."
-msgstr "跑掉了,對吧? 哈哈."
+msgstr "他跑掉了，對吧？哈哈。"
 
 #: conversationlist_algangror.json:algangror_2b
 msgid "Oh sure, you think you can just pick up anything and claim it as yours?"
-msgstr "哦,當然! 你以為你可以撿起每個東西,然後宣稱這些是你的嗎?"
+msgstr "哦，當然！你以為你可以撿起每個東西，然後說它們都是是你的嗎?"
 
 #: conversationlist_algangror.json:algangror_2c
 msgid "How noble. Maybe you can be of use to me."
@@ -12966,7 +13011,7 @@ msgstr "聰明. 我喜歡."
 
 #: conversationlist_algangror.json:algangror_3
 msgid "Tell me, now that you have entered this house, would you be willing to help me with a small ... problem?"
-msgstr "你已經進來這棟房子了,現在告訴我,你會介意幫我們一個小小的...麻煩嗎?"
+msgstr "告訴我，既然你已經進了這間房子，你願意幫我解決一個小…問題嗎？"
 
 #: conversationlist_algangror.json:algangror_3:0
 msgid "Sure, what's the problem?"
@@ -13003,7 +13048,7 @@ msgstr "有點不太對勁. 我不要介入這件事比較好."
 
 #: conversationlist_algangror.json:algangror_4
 msgid "You see, I have this slight problem with ... ahem ... vermin."
-msgstr "你看,我這裡有一些小問題.....咳....是害蟲。"
+msgstr "你看，我這裡有一些小問題…咳…害蟲。"
 
 #: conversationlist_algangror.json:algangror_5
 msgid "Always sneaking around, always trying to cause mischief."
@@ -13015,11 +13060,11 @@ msgstr "很幸運的,我捕捉到牠們的一份子,而且把牠們鎖在我的�
 
 #: conversationlist_algangror.json:algangror_7
 msgid "Now, I can't handle them myself because of certain ... issues."
-msgstr "現在,我不能自己控制住牠們因為....某些問題."
+msgstr "現在，我不能自己控制住牠們因為…某些問題。"
 
 #: conversationlist_algangror.json:algangror_8
 msgid "That's where you come in. Would you be willing to ... ahem ... handle those rodents for me?"
-msgstr "這就為啥我需要你,你是否能...啊哈...幫我處理這些老鼠?"
+msgstr "這就是為啥我需要你，你是否能…啊哈…幫我處理這些老鼠？"
 
 #: conversationlist_algangror.json:algangror_8:0
 msgid "Sure, some rodents, I can handle that."
@@ -13039,7 +13084,7 @@ msgstr "幹的好. 有些證據已經告訴我你把這件事處理完了."
 
 #: conversationlist_algangror.json:algangror_return_1
 msgid "You return. Did you handle all those ... ahem ... rodents in my basement?"
-msgstr "你回來了. 你解決掉所有那些...恩...在我地下室裡的囓齒類動物了嗎?"
+msgstr "你回來了。你解決掉所有那些…恩…在我地下室裡的囓齒類動物了嗎？"
 
 #: conversationlist_algangror.json:algangror_return_1:0
 msgid "Yes, they are all dead."
@@ -13059,7 +13104,7 @@ msgstr "我決定不幫你和你的老鼠們."
 
 #: conversationlist_algangror.json:algangror_return_2
 msgid "He he. I bet you sure showed them. Excellent. Thank you for ... ahem ... helping me."
-msgstr "呵呵. 我敢打賭你確實地把他們處理掉了. 非常好. 感謝你...咳...幫我的忙."
+msgstr "呵呵。我敢打賭你確實地把他們處理掉了。非常好，感謝你…咳…幫我的忙。"
 
 #: conversationlist_algangror.json:algangror_return_3
 msgid "Those rodents have really been bothering me. Good thing I managed to catch some of them. He he."
@@ -13079,7 +13124,7 @@ msgstr "不,那是哪裡?"
 
 #: conversationlist_algangror.json:algangror_return_c1
 msgid "You return. Thank you for helping me with my ... ahem ... rodent problem earlier."
-msgstr "你回來了. 感謝你早早地幫我解決...咳...老鼠的問題."
+msgstr "你回來了，感謝你早早地幫我解決…咳…老鼠的問題。"
 
 #: conversationlist_algangror.json:algangror_return_c3
 msgid "I hope that will teach those *other* rats."
@@ -13087,7 +13132,7 @@ msgstr "我希望這能給那些老鼠一個教訓."
 
 #: conversationlist_algangror.json:algangror_return_c4
 msgid "Say, you seem like a resourceful person. Would you be interested in helping me with yet another ... task?"
-msgstr "你看你來像是很聰明的人. 不知道你有沒有興趣幫我做...另一個任務?"
+msgstr "你看起來像是個聰明人。不知道你有沒有興趣幫我做另一個…任務？"
 
 #: conversationlist_algangror.json:algangror_return_c4:0
 msgid "Depends on the task."
@@ -13105,7 +13150,7 @@ msgstr "哦,這離那裏不遠. 我真的無所謂."
 
 #: conversationlist_algangror.json:algangror_remgard_2
 msgid "You see, I used to live there. To make a long story short, there were some ... ahem ... misunderstandings."
-msgstr "你看,我曾經住在那裏. 為了長話短說,所以以前有一些...咳...誤解."
+msgstr "你看，我曾經住在那裏。為了長話短說，以前有一些…咳…誤解。"
 
 #: conversationlist_algangror.json:algangror_remgard_3
 msgid "These days, I think they are looking for me, for some reason. Can't think of any reason why really. But I believe they are."
@@ -13135,7 +13180,7 @@ msgstr "噢,又是你."
 
 #: conversationlist_algangror.json:algangror_return_d2
 msgid "You should probably leave before you tip something over that might ... ahem ... break. He he."
-msgstr "你應該盡速離開,在你翻倒某些東西...咳...或者弄壞某些東西之前. 呵呵."
+msgstr "你應該盡速離開，在你翻倒某些東西…咳…或者弄壞某些東西之前。呵呵。"
 
 #: conversationlist_algangror.json:algangror_return_d2:0
 msgid "I was sent by Jhaeld to end whatever it is you are doing to the people of Remgard."
@@ -13216,7 +13261,7 @@ msgstr "這件事有點奇怪. 我不該幫你的忙."
 
 #: conversationlist_algangror.json:algangror_task2_5
 msgid "As I said, I cannot tell you what task I have in mind, or my reasoning behind it until you are done. I would need your total ... cooperation with this."
-msgstr "像我所說,我不能告訴你我腦海中的任務和我的原因直到你完成它. 我需要你全心全意的...配合我."
+msgstr "像我所說,我不能告訴你我腦海中的任務和我的原因直到你完成它. 我需要你全心全意的…配合我."
 
 #: conversationlist_algangror.json:algangror_task2_5:0
 msgid "OK. I will agree to help you with your task."
@@ -13260,7 +13305,7 @@ msgstr "你必須答應我不能跟任何人說這個任務,而且你一定要�
 
 #: conversationlist_algangror.json:algangror_task2_8
 msgid "I have in my possession five idols. Five idols with very unique ... qualities. What I want you to do is ... deliver these idols to various people in the town of Remgard."
-msgstr "我這裡有五個娃娃,他們有一些神奇的功能... 我希望你能把這些娃娃放在萊曼格一些人身上."
+msgstr "我這裡有五個娃娃,他們有一些神奇的功能…我希望你能把這些娃娃放在萊曼格一些人身上."
 
 #: conversationlist_algangror.json:algangror_task2_9
 msgid "You will place them by the beds of five particular persons, and you must hide it well so that the person does not find the idol itself."
@@ -13399,7 +13444,7 @@ msgstr "我想要學更多我不知道的事情,而且想要印證我以前在�
 
 #: conversationlist_algangror.json:algangror_story6
 msgid "So I went to Nor City myself, and visited many ... interesting people and ... dark corners."
-msgstr "所以我自己到了諾爾市,拜訪了很多...有趣的人們和一些...黑暗的角落."
+msgstr "所以我自己到了諾爾市，拜訪了很多…有趣的人們和一些...黑暗的角落."
 
 #: conversationlist_algangror.json:algangror_story7
 msgid "Naturally, I was thrilled of the knowledge I gained from the experience, and from what I learned while there."
@@ -13456,7 +13501,7 @@ msgstr "萊曼格的人民決定不讓我繼續住在那裡. 捷爾說我確實�
 
 #: conversationlist_algangror.json:algangror_story18
 msgid "What had I done, I asked myself? I had never hurt anyone, much less affected anyone with my ... experiments. Am I not allowed to do what I wish?"
-msgstr "我問我自己,我做過什麼事. 我從未傷害過任何人,更沒有因為我的...實驗影響到其他人. 難道我不被允許做我想做的事嗎?"
+msgstr "我問我自己,我做過什麼事. 我從未傷害過任何人,更沒有因為我的…實驗影響到其他人. 難道我不被允許做我想做的事嗎?"
 
 #: conversationlist_algangror.json:algangror_story19
 msgid "I had little chance to argue, however. The guards led me out of the city. They did not even let me gather my things. All my books, all my notes and all my findings - gone. I lost everything."
@@ -13472,7 +13517,7 @@ msgstr "喔,我討厭他們所有人. 那些在背後討論我和用異樣眼光
 
 #: conversationlist_algangror.json:algangror_story22
 msgid "So, I decided to extend my ... experiments ... to larger things. To people, to living things. This is the perfect opportunity to learn even more than what is in the books."
-msgstr "所以我決定擴大我的實驗...為了更遠大的計畫. 為了人們.為了生存,這是一個很好的機會來學習書本中學不到的東西."
+msgstr "所以我決定擴大我的實驗…為了更遠大的計畫. 為了人們.為了生存,這是一個很好的機會來學習書本中學不到的東西."
 
 #: conversationlist_algangror.json:algangror_story23
 msgid "To think that I could do it while at the same time get revenge on those despicable people - it's an excellent plan, if I may say so myself. He he."
@@ -13496,7 +13541,7 @@ msgstr "熟能生巧吧,我想. 哈哈哈哈哈."
 
 #: conversationlist_algangror.json:algangror_story26:0
 msgid "Wait, does this mean that those rats I killed for you were..."
-msgstr "等等,這是不是代表那些我殺的老鼠是......"
+msgstr "等等,這是不是代表那些我殺的老鼠是……"
 
 #: conversationlist_algangror.json:algangror_story27
 msgid "Oh yes. With your help, they are now one less problem to deal with, so to speak. He he."
@@ -16977,6 +17022,7 @@ msgstr ""
 
 #: conversationlist_kendelow.json:kendelow_d
 #: conversationlist_ervelyn.json:ervelyn_d
+#: conversationlist_delivery.json:brv_wh_delivery_boss_10:0
 msgid "How may I be of service?"
 msgstr ""
 
@@ -17061,12 +17107,16 @@ msgid "How interesting. The child from Fallhaven, here in Remgard?"
 msgstr ""
 
 #: conversationlist_arghes.json:arghes_2:0
-msgid "I'm not from Fallhaven, I am from Crossglen, west of Fallhaven."
+msgid "I'm not from Fallhaven, I'm from Crossglen, west of Fallhaven."
 msgstr ""
 
 #: conversationlist_arghes.json:arghes_2:2
 msgid "How do you know where I am from?"
 msgstr "你怎麼知道我是從哪裡來的。"
+
+#: conversationlist_arghes.json:arghes_2:3
+msgid "And how interesting that you ordered a pair of 'Yellow boots'. Did you really order this?"
+msgstr ""
 
 #: conversationlist_arghes.json:arghes_3a
 msgid "Is that so? Hmm, most interesting. It does not change anything, however."
@@ -25323,6 +25373,10 @@ msgstr ""
 msgid "You are lying around in bed in broad daylight?"
 msgstr ""
 
+#: conversationlist_guynmart_npc.json:guynmart_servant_10:1
+msgid "I'm here to give you your ordered item. You don't want it?"
+msgstr ""
+
 #: conversationlist_guynmart_npc.json:guynmart_servant_20
 msgid "I am checking that the bed of young Robalyrius is still in order."
 msgstr ""
@@ -28901,6 +28955,10 @@ msgstr ""
 msgid "You look happy again."
 msgstr ""
 
+#: conversationlist_stoutford_combined.json:odirath_0:5
+msgid "Did you really order such an ugly porcelain figure? Oops, sorry I didn't mean to offend you"
+msgstr ""
+
 #: conversationlist_stoutford_combined.json:odirath_1
 msgid "I did see someone that might have been your brother. He was with a rather dubious looking person. They didn't stay around here very long though. Sorry, but that's all I can tell you. You should ask around town. Other townsfolk may know more."
 msgstr ""
@@ -30438,6 +30496,7 @@ msgid "Now to your next opponent."
 msgstr ""
 
 #: conversationlist_stoutford_combined.json:stn_colonel_140:0
+#: conversationlist_delivery.json:brv_wh_delivery_boss_10:1
 msgid "What is it this time?"
 msgstr ""
 
@@ -33484,6 +33543,10 @@ msgstr ""
 msgid "Eh, sorry to disturb you."
 msgstr ""
 
+#: conversationlist_arulir_mountain.json:tjure_0:3
+msgid "I'm surprised to see you here as well. Did you order 'Mysterious green something'?"
+msgstr ""
+
 #: conversationlist_arulir_mountain.json:tjure_0_10
 msgid "I am Tjure of Brimhaven. I am ... was ... a successful merchant. But my luck has run out."
 msgstr ""
@@ -33597,11 +33660,33 @@ msgid "(For a second you feel very dizzy. At least you manage not to faint. As f
 msgstr ""
 
 #: conversationlist_arulir_mountain.json:tjure_90
+#: conversationlist_delivery.json:tjure_wh_delivery_90
 msgid "*Sigh* You were my last hope. Leave me now."
+msgstr ""
+
+#: conversationlist_arulir_mountain.json:tjure_90:0
+msgid "Hope you learned from it."
+msgstr ""
+
+#: conversationlist_arulir_mountain.json:tjure_90:1
+msgid "OK. One question before I go: did you order a 'Mysterious green something'?"
+msgstr ""
+
+#: conversationlist_arulir_mountain.json:tjure_100:0
+#: conversationlist_arulir_mountain.json:tjure_200:0
+msgid "It was an interesting experience."
+msgstr ""
+
+#: conversationlist_arulir_mountain.json:tjure_100:1
+msgid "No problem. By the way, did you order a 'Mysterious green something'?"
 msgstr ""
 
 #: conversationlist_arulir_mountain.json:tjure_200
 msgid "Oh, you look better than the last time we met. Thank you for your help."
+msgstr ""
+
+#: conversationlist_arulir_mountain.json:tjure_200:1
+msgid "Indeed. By the way, did you order a 'Mysterious green something'?"
 msgstr ""
 
 #: conversationlist_arulir_mountain.json:watermark_script_100
@@ -35286,6 +35371,10 @@ msgstr ""
 msgid "Have you ever seen a glove like this? [Shows Venanra the glove.]"
 msgstr ""
 
+#: conversationlist_brimhaven.json:brv_laundry_boss_0:5
+msgid "Did you order an 'Old, worn cape'?"
+msgstr ""
+
 #: conversationlist_brimhaven.json:brv_laundry_boss_1
 msgid "We are working on some nice green dresses. We can also repair and improve your clothes."
 msgstr ""
@@ -36170,6 +36259,10 @@ msgstr ""
 msgid "I'm looking for my brother, Andor. Have you seen anyone around town that looks a bit like me?"
 msgstr ""
 
+#: conversationlist_brimhaven.json:edrin_0_0:6
+msgid "Hello, did you order a 'Striped Hammer'?"
+msgstr ""
+
 #: conversationlist_brimhaven.json:edrin_5_0
 msgid "Yes, that's the one that matches the dagger! Now that I have both pieces, I can repair the dagger for you if you wish."
 msgstr ""
@@ -36368,7 +36461,7 @@ msgstr ""
 
 #: conversationlist_brimhaven.json:mikhail_news_10
 msgid "Did you find out something?"
-msgstr ""
+msgstr "你有找到什麼嗎？"
 
 #: conversationlist_brimhaven.json:mikhail_news_10:0
 msgid "I asked around in Crossglen and they sent me to Fallhaven."
@@ -36518,6 +36611,10 @@ msgstr ""
 msgid "Maybe I can help you."
 msgstr ""
 
+#: conversationlist_brimhaven.json:brv_fortune_choice:3
+msgid "Are you the one who ordered a 'Crystal Globe'?"
+msgstr ""
+
 #: conversationlist_brimhaven.json:brv_fortune_andor_10
 msgid "I see you talking to your brother, somewhere far from here in a big city. Feygard or Nor City, I think."
 msgstr ""
@@ -36646,11 +36743,17 @@ msgid "What has brought you to me? It looks like you might need my help."
 msgstr ""
 
 #: conversationlist_brimhaven.json:brv_fortune_10:0
+#: conversationlist_delivery.json:brv_wh_delivery_brv_fortune_10:0
 msgid "What help can you offer?"
 msgstr ""
 
 #: conversationlist_brimhaven.json:brv_fortune_10:1
+#: conversationlist_delivery.json:brv_wh_delivery_brv_fortune_10:1
 msgid "I am searching..."
+msgstr ""
+
+#: conversationlist_brimhaven.json:brv_fortune_10:2
+msgid "So you are the one who ordered a 'Crystal Globe'?"
 msgstr ""
 
 #: conversationlist_brimhaven.json:brv_fortune_50
@@ -46850,6 +46953,214 @@ msgstr ""
 msgid "That sounds kind of true. You are a very persuasive speaker."
 msgstr ""
 
+#: conversationlist_omi2.json:omi2_fix_ehrenfest_53
+msgid "You are wrong. I'm not here, just an illusion."
+msgstr ""
+
+#: conversationlist_delivery.json:brv_wh_delivery_boss_10
+msgid "Ah! You have finally returned, my new worker."
+msgstr ""
+
+#: conversationlist_delivery.json:brv_wh_delivery_boss_10:2
+msgid "Ah! You are still insolent."
+msgstr ""
+
+#: conversationlist_delivery.json:brv_wh_delivery_boss_20
+msgid "I need someone to deliver all of the items that are in storage."
+msgstr ""
+
+#: conversationlist_delivery.json:brv_wh_delivery_boss_30
+msgid "Come back to me when you have delivered all of the items. The order is not important. Here is the list of customers."
+msgstr ""
+
+#: conversationlist_delivery.json:brv_wh_delivery_boss_30:0
+msgid "It will be done."
+msgstr ""
+
+#: conversationlist_delivery.json:brv_wh_delivery_boss_30:1
+msgid "You want me to deliver these items to your customers?"
+msgstr ""
+
+#: conversationlist_delivery.json:brv_wh_delivery_boss_40
+msgid "Yes yes, hurry now. I have work to do here."
+msgstr ""
+
+#: conversationlist_delivery.json:brv_wh_delivery_boss_40:0
+msgid "I'm going now."
+msgstr ""
+
+#: conversationlist_delivery.json:brv_wh_delivery_boss_40:1
+msgid "Hope I get paid better this time."
+msgstr ""
+
+#: conversationlist_delivery.json:brv_wh_delivery_arcir
+msgid "Yes, an old but useful book, but you should have wiped it off first. Anyway, here's my delivery fee."
+msgstr ""
+
+#: conversationlist_delivery.json:brv_wh_delivery_edrin
+msgid "Ah, yes, a striped hammer. Don't look so impatient. Here's my delivery charge, and now you can leave!"
+msgstr ""
+
+#: conversationlist_delivery.json:brv_wh_delivery_odirath
+msgid "Yes, indeed. A gift for my beautiful daughter... but why did it take so long? Sigh, here's my delivery fee."
+msgstr ""
+
+#: conversationlist_delivery.json:brv_wh_delivery_venanra
+msgid "Yes I did, kid. Incredibly, it has become the latest fashion to buy new capes with holes. Here's my delivery fee."
+msgstr ""
+
+#: conversationlist_delivery.json:brv_wh_delivery_tjure
+msgid "What?! My lucky clover...but why now? Anyway, I'll no longer run out of luck. Here's my delivery fee."
+msgstr ""
+
+#: conversationlist_delivery.json:brv_wh_delivery_servant
+msgid "Finally, I'm no longer afraid of that room every time my lord turns off the lights to scare me. Here's my delivery fee."
+msgstr ""
+
+#: conversationlist_delivery.json:brv_wh_delivery_arghes
+msgid "Yes kid, thank you. Here, take this gold for them."
+msgstr ""
+
+#: conversationlist_delivery.json:brv_wh_delivery_wyre_negative
+msgid "That's not what I'm waiting for! Go out and find out what happened to my son, please!"
+msgstr ""
+
+#: conversationlist_delivery.json:brv_wh_delivery_wyre
+msgid "Yes, I'm longing for it just like how I'm longing for my son. But now I can mourn as I play his favorite song until I die."
+msgstr ""
+
+#: conversationlist_delivery.json:brv_wh_delivery_wyre:0
+msgid "My sincere condolence for the loss of your beloved son."
+msgstr ""
+
+#: conversationlist_delivery.json:brv_wh_delivery_mikhail
+msgid "Oh wow! Finally, your brother's gift has arrived and we only have to wait for his arrival."
+msgstr ""
+
+#: conversationlist_delivery.json:brv_wh_delivery_mikhail:0
+msgid "Sigh. I hope so."
+msgstr ""
+
+#: conversationlist_delivery.json:brv_wh_delivery_mikhail:1
+msgid "What?! Where's my gift?"
+msgstr ""
+
+#: conversationlist_delivery.json:brv_wh_delivery_mikhail3
+msgid "I already gave you his shield."
+msgstr ""
+
+#: conversationlist_delivery.json:brv_wh_delivery_mikhail2
+msgid "Anyway, it's been a very long time so please go look for your brother."
+msgstr ""
+
+#: conversationlist_delivery.json:brv_wh_delivery_mikhail2:1
+msgid "I'm still looking for him."
+msgstr ""
+
+#: conversationlist_delivery.json:brv_wh_delivery_mikhail2:2
+msgid "Eh, you have to pay for it..."
+msgstr ""
+
+#: conversationlist_delivery.json:brv_wh_delivery_mikhail4
+msgid "Ah, yes, I almost forgot. Here you are."
+msgstr ""
+
+#: conversationlist_delivery.json:brv_wh_delivery_mikhail4:0
+msgid "Thanks. I'm on my way again, bye."
+msgstr ""
+
+#: conversationlist_delivery.json:brv_wh_delivery_mikhail4:1
+msgid "Hmm... Bye"
+msgstr ""
+
+#: conversationlist_delivery.json:brv_wh_delivery_brv_fortune
+msgid ""
+"Ah yes, I need a new one. My current crystal globe has become a bit cloudy - otherwise I would of course have seen that you would bring me a new globe.\n"
+"Here is the gold for it."
+msgstr ""
+
+#: conversationlist_delivery.json:brv_wh_delivery_brv_fortune:0
+msgid "Do you want to try the crystal ball with me to see if it works?"
+msgstr ""
+
+#: conversationlist_delivery.json:brv_wh_delivery_brv_fortune:1
+msgid "Thanks for choosing Facutloni's delivery."
+msgstr ""
+
+#: conversationlist_delivery.json:brv_wh_delivery_brv_fortune_10
+msgid "You say you want me to help you?"
+msgstr ""
+
+#: conversationlist_delivery.json:brv_wh_delivery_boss_10_10
+msgid "You are back. Did you deliver all of the items?"
+msgstr ""
+
+#: conversationlist_delivery.json:brv_wh_delivery_boss_10_10:0
+msgid "Yes. I delivered everything."
+msgstr ""
+
+#: conversationlist_delivery.json:brv_wh_delivery_boss_10_10_no
+msgid "Then what are you standing there for?! Get out and deliver everything!"
+msgstr ""
+
+#: conversationlist_delivery.json:brv_wh_delivery_boss_10_10_no:0
+#: conversationlist_delivery.json:brv_wh_delivery_boss_10_10_yes_1:0
+msgid "[Run]"
+msgstr ""
+
+#: conversationlist_delivery.json:brv_wh_delivery_boss_10_10_no:1
+#: conversationlist_delivery.json:brv_wh_delivery_boss_10_10_yes_1:1
+msgid "Yes boss."
+msgstr ""
+
+#: conversationlist_delivery.json:brv_wh_delivery_boss_10_10_yes
+msgid "That's nice to hear. Then you can now give me the... eh...330 gold pieces that you should have received from the sales."
+msgstr ""
+
+#: conversationlist_delivery.json:brv_wh_delivery_boss_10_10_yes:0
+msgid "Sure. Here you are."
+msgstr ""
+
+#: conversationlist_delivery.json:brv_wh_delivery_boss_10_10_yes:1
+msgid "Uh, I had expenses along the way and I don't have all the gold anymore."
+msgstr ""
+
+#: conversationlist_delivery.json:brv_wh_delivery_boss_10_10_yes_1
+msgid "And then you walk into my sight? Go get my gold!"
+msgstr ""
+
+#: conversationlist_delivery.json:brv_wh_delivery_boss_10_10_yes_1:2
+msgid "Oh, I just found the 330 gold pieces in my pocket. Please take it."
+msgstr ""
+
+#: conversationlist_delivery.json:brv_wh_delivery_boss_10_10_yes_10
+msgid "Good job! I am glad that you work responsibly."
+msgstr ""
+
+#: conversationlist_delivery.json:brv_wh_delivery_boss_10_10_yes_10:0
+msgid "And seriously."
+msgstr ""
+
+#: conversationlist_delivery.json:brv_wh_delivery_boss_10_10_yes_10:1
+msgid "I travelled far and wide."
+msgstr ""
+
+#: conversationlist_delivery.json:brv_wh_delivery_boss_reward
+msgid "That is serious. And here you have your well-deserved reward: 100 gold."
+msgstr ""
+
+#: conversationlist_delivery.json:brv_wh_delivery_boss_reward:1
+msgid "What the?"
+msgstr ""
+
+#: conversationlist_delivery.json:brv_wh_delivery_boss_scrooge
+msgid "Pardon?"
+msgstr ""
+
+#: conversationlist_delivery.json:tjure_wh_delivery_90:0
+msgid "Not until I have delivered this to you. Are you the one who ordered a 'Mysterious green something'?"
+msgstr ""
+
 #: itemcategories_1.json:dagger
 msgid "Dagger"
 msgstr ""
@@ -50190,7 +50501,7 @@ msgid "Unknown gem (extracted from the Elm mine)"
 msgstr ""
 
 #: itemlist_omi2.json:elm_gem_u:description
-msgid "It is very cold and very sticky to the touch. It gives a feel of dizziness when you stare at it."
+msgid "It is very cold and very sticky to the touch. It gives a feeling of dizziness when you stare at it."
 msgstr ""
 
 #: itemlist_omi2.json:bwm_fish2
@@ -50274,7 +50585,7 @@ msgid "Cave fern"
 msgstr ""
 
 #: itemlist_omi2.json:elm_fern:description
-msgid "A fern inside a cave is something out of normal, not seen everyday."
+msgid "A fern inside a cave is something unusual, not seen every day."
 msgstr ""
 
 #: itemlist_omi2.json:yczorah
@@ -50319,6 +50630,14 @@ msgstr ""
 
 #: itemlist_omi2.json:ortholion_reward:description
 msgid "You feel a warm and comfortable feeling when holding it."
+msgstr ""
+
+#: itemlist_delivery.json:facutloni_docket
+msgid "Facutloni's Docket"
+msgstr ""
+
+#: itemlist_delivery.json:facutloni_docket:description
+msgid "A document listing the contents of a delivery   Arcir the book-lover from Fallhaven ordered a 'Dusty Old Book'.   Edrin the metalsmith from Brimhaven ordered a 'Striped Hammer'.   Odirath the armorer from Stoutford ordered a 'Pretty Porcelain Figure'.   Venanra the laundress from Brimhaven ordered an 'Old, worn cape'.   Tjure the unlucky merchant ordered a 'Mysterious green something'.   Servant the servant from Guynmart Castle ordered a 'Chandelier'.   Arghes from Remgard tavern ordered 'Yellow Boots'.   Wyre the mournful woman from Vilegard ordered a 'Lyre'.   Mikhail from Crossglen ordered a 'Plush Pillow'.   Pangitain the fortune teller from Brimhaven ordered a 'Crystal Globe'. "
 msgstr ""
 
 #: monsterlist_crossglen_animals.json:tiny_rat
@@ -50448,7 +50767,7 @@ msgstr ""
 
 #: monsterlist_crossglen_npcs.json:arambold
 msgid "Arambold"
-msgstr ""
+msgstr "阿蘭博德"
 
 #: monsterlist_crossglen_npcs.json:tharal
 msgid "Tharal"
@@ -50617,7 +50936,7 @@ msgstr ""
 
 #: monsterlist_fallhaven_npcs.json:bucus
 msgid "Bucus"
-msgstr ""
+msgstr "布克斯"
 
 #: monsterlist_fallhaven_npcs.json:drunkard
 msgid "Drunkard"
@@ -50646,7 +50965,7 @@ msgstr ""
 
 #: monsterlist_fallhaven_npcs.json:athamyr
 msgid "Athamyr"
-msgstr ""
+msgstr "阿瑟米爾"
 
 #: monsterlist_fallhaven_npcs.json:thoronir
 msgid "Thoronir"
@@ -50671,7 +50990,7 @@ msgstr ""
 
 #: monsterlist_fallhaven_npcs.json:larcal
 msgid "Larcal"
-msgstr ""
+msgstr "拉爾索"
 
 #: monsterlist_fallhaven_npcs.json:gaela
 msgid "Gaela"
@@ -50904,7 +51223,7 @@ msgstr ""
 
 #: monsterlist_v068_npcs.json:jolnor
 msgid "Jolnor"
-msgstr ""
+msgstr "喬諾"
 
 #: monsterlist_v068_npcs.json:alynndir
 msgid "Alynndir"
@@ -51171,7 +51490,7 @@ msgstr ""
 
 #: monsterlist_v069_npcs.json:bjorgur
 msgid "Bjorgur"
-msgstr ""
+msgstr "比約格爾"
 
 #: monsterlist_v069_npcs.json:prim_prisoner
 msgid "Prim prisoner"
@@ -51179,7 +51498,7 @@ msgstr ""
 
 #: monsterlist_v069_npcs.json:fulus
 msgid "Fulus"
-msgstr ""
+msgstr "富盧斯"
 
 #: monsterlist_v069_npcs.json:guthbered
 msgid "Guthbered"
@@ -51276,7 +51595,7 @@ msgstr ""
 
 #: monsterlist_v069_npcs.json:herec
 msgid "Herec"
-msgstr ""
+msgstr "赫雷克"
 
 #: monsterlist_v069_npcs.json:iducus
 msgid "Iducus"
@@ -51437,7 +51756,7 @@ msgstr ""
 
 #: monsterlist_v0610_npcs1.json:benbyr
 msgid "Benbyr"
-msgstr ""
+msgstr "班伯爾"
 
 #: monsterlist_v0610_npcs1.json:celdar
 msgid "Celdar"
@@ -51453,7 +51772,7 @@ msgstr ""
 
 #: monsterlist_v0610_npcs1.json:erinith
 msgid "Erinith"
-msgstr ""
+msgstr "埃里尼"
 
 #: monsterlist_v0610_npcs1.json:fanamor
 msgid "Fanamor"
@@ -51469,7 +51788,7 @@ msgstr ""
 
 #: monsterlist_v0610_npcs1.json:gandoren
 msgid "Gandoren"
-msgstr ""
+msgstr "甘德倫"
 
 #: monsterlist_v0610_npcs1.json:grimion
 msgid "Grimion"
@@ -51513,7 +51832,7 @@ msgstr ""
 
 #: monsterlist_v0610_npcs1.json:minarra
 msgid "Minarra"
-msgstr ""
+msgstr "米娜拉"
 
 #: monsterlist_v0610_npcs1.json:puny_warehouserat
 msgid "Warehouse rat"
@@ -52878,7 +53197,6 @@ msgstr ""
 
 #: monsterlist_graveyard1.json:graveyard_corpse2
 #: monsterlist_graveyard1.json:graveyard_corpse3
-#: monsterlist_graveyard1.json:graveyard_corpse3
 msgid "Angry graveyard corpse"
 msgstr ""
 
@@ -53377,7 +53695,7 @@ msgstr ""
 
 #: monsterlist_omicronrg9.json:g03_crackshot
 msgid "Crackshot"
-msgstr ""
+msgstr "瘋狂打靶"
 
 #: monsterlist_omicronrg9.json:g03_crackshot_dying
 msgid "Dying Crackshot"
@@ -53897,7 +54215,7 @@ msgstr ""
 
 #: monsterlist_fungi_panic.json:bogsten_gambler1
 msgid "Bogal"
-msgstr ""
+msgstr "博格爾"
 
 #: monsterlist_fungi_panic.json:bogsten_gambler2
 msgid "Botisto"
@@ -53913,7 +54231,7 @@ msgstr ""
 
 #: monsterlist_gison.json:gison
 msgid "Gison"
-msgstr ""
+msgstr "吉森"
 
 #: monsterlist_gison.json:nimael
 msgid "Nimael"
@@ -53921,7 +54239,7 @@ msgstr ""
 
 #: monsterlist_gison.json:gael
 msgid "Gael"
-msgstr ""
+msgstr "蓋爾"
 
 #: monsterlist_gison.json:small_stone_worm
 msgid "Small stone worm"
@@ -53951,11 +54269,11 @@ msgstr ""
 
 #: monsterlist_gorwath.json:gorwath
 msgid "Gorwath"
-msgstr ""
+msgstr "戈瓦斯"
 
 #: monsterlist_gorwath.json:arensia
 msgid "Arensia"
-msgstr ""
+msgstr "阿倫西亞"
 
 #: monsterlist_omi2.json:mountain_wolf_2
 msgid "Trained mountain wolf"
@@ -53991,7 +54309,7 @@ msgstr ""
 
 #: monsterlist_omi2.json:ehrenfest
 msgid "Ehrenfest"
-msgstr ""
+msgstr "艾倫費斯特"
 
 #: monsterlist_omi2.json:ortholion
 #: monsterlist_omi2.json:ortholion_hidden
@@ -54098,7 +54416,7 @@ msgstr ""
 
 #: monsterlist_omi2.json:kamelio
 msgid "Kamelio"
-msgstr ""
+msgstr "卡梅力歐"
 
 #: monsterlist_omi2.json:kamelio2
 msgid "Undead Kamelio"
@@ -56558,7 +56876,7 @@ msgid "Cithurn did not remember if the forest invasion began before the events i
 msgstr ""
 
 #: questlist_graveyard1.json:waterwayacave:35
-msgid "I promised Cithurn I would investigate the source of the monster invasion in the forest. I will have to pass through the forest to access an entrance to a cave northeast of Cithurn's home."
+msgid "I promised Cithurn I would investigate the source of the monster invasion in the forest. I will have to pass through the forest to access an entrance to a cave east of Cithurn's home."
 msgstr ""
 
 #: questlist_graveyard1.json:waterwayacave:40
@@ -58522,6 +58840,62 @@ msgstr ""
 
 #: questlist_omi2.json:Omi2_bwm1:63
 msgid "For my bravery and... ignorance?, General Ortholion gave me a few days to rest and urged me to come back soon after that."
+msgstr ""
+
+#: questlist_delivery.json:brv_wh_delivery
+msgid "Delivery"
+msgstr ""
+
+#: questlist_delivery.json:brv_wh_delivery:10
+msgid "Facutloni asked me to help him deliver all of the items ordered by his customers a long time ago. He even gave me an old document with the names and items written on it."
+msgstr ""
+
+#: questlist_delivery.json:brv_wh_delivery:20
+msgid "Arcir the Fallhaven book-lover ordered a 'Dusty Old book'."
+msgstr ""
+
+#: questlist_delivery.json:brv_wh_delivery:30
+msgid "Edrin the Brimhaven metalsmith ordered a 'Striped Hammer'."
+msgstr ""
+
+#: questlist_delivery.json:brv_wh_delivery:40
+msgid "Odirath the Stoutford armorer ordered a 'Pretty Porcelain Figure'."
+msgstr ""
+
+#: questlist_delivery.json:brv_wh_delivery:50
+msgid "Venanra the Brimhaven laundress ordered an 'Old, worn cape'."
+msgstr ""
+
+#: questlist_delivery.json:brv_wh_delivery:60
+msgid "Tjure the unlucky Brimhaven merchant ordered a 'Mysterious green something'."
+msgstr ""
+
+#: questlist_delivery.json:brv_wh_delivery:70
+msgid "Servant the Guynmart servant ordered a 'Chandelier'."
+msgstr ""
+
+#: questlist_delivery.json:brv_wh_delivery:80
+msgid "Arghes at Remgard tavern ordered 'Yellow boots'."
+msgstr ""
+
+#: questlist_delivery.json:brv_wh_delivery:90
+msgid "Wyre the mournful Vilegard woman ordered a 'Lyre'."
+msgstr ""
+
+#: questlist_delivery.json:brv_wh_delivery:100
+msgid "Mikhail ordered a 'Plush Pillow'."
+msgstr ""
+
+#: questlist_delivery.json:brv_wh_delivery:110
+msgid "Pangitain the Brimhaven fortune teller ordered a 'Crystal Globe'."
+msgstr ""
+
+#: questlist_delivery.json:brv_wh_delivery:120
+msgid "Facutloni wants me to report back after the deliveries are complete."
+msgstr ""
+
+#: questlist_delivery.json:brv_wh_delivery:130
+msgid "I reported back to Facutloni. He is very happy."
 msgstr ""
 
 #: worldmap.xml:world1:crossglen
