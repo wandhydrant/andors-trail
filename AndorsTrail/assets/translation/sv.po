@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: andors-trail\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-11-10 11:48+0000\n"
-"PO-Revision-Date: 2022-02-02 22:30+0000\n"
-"Last-Translator: Joel A <joeax910@student.liu.se>\n"
+"PO-Revision-Date: 2022-04-03 11:14+0000\n"
+"Last-Translator: Kristoffer Grundström <swedishsailfishosuser@tutanota.com>\n"
 "Language-Team: Swedish <https://hosted.weblate.org/projects/andors-trail/"
 "game-content/sv/>\n"
 "Language: sv\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.11-dev\n"
+"X-Generator: Weblate 4.12-dev\n"
 "X-Launchpad-Export-Date: 2015-11-02 12:24+0000\n"
 
 #: [none]
@@ -350,8 +350,9 @@ msgid "Reinvigorated"
 msgstr "Återupplivad"
 
 #: actorconditions_gison.json:sated
+#, fuzzy
 msgid "Sated"
-msgstr ""
+msgstr "Mättad"
 
 #: actorconditions_omi2.json:panic
 msgid "Panic"
@@ -363,7 +364,7 @@ msgstr "Mättnad"
 
 #: actorconditions_omi2.json:frozen1
 msgid "Minor freeze"
-msgstr ""
+msgstr "Mindre frysning"
 
 #: actorconditions_omi2.json:frozen2
 msgid "Icy wounds"
@@ -552,10 +553,15 @@ msgstr "Om råttorna skadar dig, kom tillbaka hit och vila i din säng. På så 
 #: conversationlist_mikhail.json:mikhail_rats_start3
 msgid "Also, don't forget to check your inventory. You probably still have that old ring I gave you. Make sure you wear it."
 msgstr ""
+"Glöm inte också att kolla ditt lager. Du har fortfarande den där gamla "
+"ringen som jag gav till dig. Se till att du bär den."
 
 #: conversationlist_mikhail.json:mikhail_rats_start3:0
+#, fuzzy
 msgid "OK, I understand. I can rest here if I get hurt, and I should check my inventory for useful items."
 msgstr ""
+"OK, jag förstår. Jag kan vila här om jag blir skadad och jag borde kolla "
+"mitt lager för användbara saker."
 
 #: conversationlist_mikhail.json:mikhail_rats_continue
 msgid "Did you kill those two rats in our garden?"
