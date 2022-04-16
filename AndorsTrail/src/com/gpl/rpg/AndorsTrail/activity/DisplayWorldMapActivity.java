@@ -1,7 +1,6 @@
 package com.gpl.rpg.AndorsTrail.activity;
 
 import java.io.File;
-import java.io.FileNotFoundException;
 
 import com.gpl.rpg.AndorsTrail.AndorsTrailApplication;
 import com.gpl.rpg.AndorsTrail.R;
@@ -16,10 +15,7 @@ import com.gpl.rpg.AndorsTrail.util.L;
 import com.gpl.rpg.AndorsTrail.util.ThemeHelper;
 
 import android.annotation.SuppressLint;
-import android.app.Activity;
-import android.net.Uri;
 import android.os.Bundle;
-import android.support.v4.content.FileProvider;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.ViewGroup;

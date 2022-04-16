@@ -12,8 +12,6 @@ import android.graphics.Bitmap;
 import android.util.SparseArray;
 import android.util.SparseIntArray;
 
-import com.gpl.rpg.AndorsTrail.AndorsTrailApplication;
-import com.gpl.rpg.AndorsTrail.util.L;
 import com.gpl.rpg.AndorsTrail.util.LruCache;
 
 public final class TileCache {

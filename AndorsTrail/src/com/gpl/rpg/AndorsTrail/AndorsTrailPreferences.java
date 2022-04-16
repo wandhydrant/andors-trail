@@ -1,7 +1,5 @@
 package com.gpl.rpg.AndorsTrail;
 
-import com.gpl.rpg.AndorsTrail.util.ThemeHelper;
-
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.preference.PreferenceManager;

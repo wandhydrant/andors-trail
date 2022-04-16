@@ -1,9 +1,7 @@
 package com.gpl.rpg.AndorsTrail.activity;
 
-import android.content.res.Configuration;
 import android.content.res.Resources;
 import android.os.Bundle;
-import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentTabHost;
 import android.view.LayoutInflater;
 import android.view.ViewGroup;

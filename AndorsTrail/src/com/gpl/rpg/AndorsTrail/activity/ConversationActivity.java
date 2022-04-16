@@ -2,7 +2,6 @@ package com.gpl.rpg.AndorsTrail.activity;
 
 import java.util.ArrayList;
 
-import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.content.res.Resources;

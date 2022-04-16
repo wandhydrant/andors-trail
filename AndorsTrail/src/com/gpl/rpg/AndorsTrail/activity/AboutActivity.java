@@ -1,6 +1,5 @@
 package com.gpl.rpg.AndorsTrail.activity;
 
-import android.app.Activity;
 import android.content.res.Resources;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;

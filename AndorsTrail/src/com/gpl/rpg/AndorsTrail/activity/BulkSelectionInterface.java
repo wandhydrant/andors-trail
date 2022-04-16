@@ -1,6 +1,5 @@
 package com.gpl.rpg.AndorsTrail.activity;
 
-import android.app.Activity;
 import android.app.Dialog;
 import android.content.Intent;
 import android.content.res.Resources;
