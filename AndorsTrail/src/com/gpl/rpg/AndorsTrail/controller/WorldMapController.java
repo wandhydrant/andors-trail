@@ -45,7 +45,7 @@ public final class WorldMapController {
 	}
 
 	private static void updateWorldMap(
-			Context context, final WorldContext world,
+			final Context context, final WorldContext world,
 			final PredefinedMap map,
 			final LayeredTileMap mapTiles,
 			final TileCollection cachedTiles,
